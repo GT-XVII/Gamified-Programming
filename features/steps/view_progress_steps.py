@@ -1,8 +1,5 @@
 from behave import given, when, then
 
-@given('the user is logged into the system')
-def step_impl(context):
-    pass
 
 @when('the user navigates to the progress dashboard')
 def step_impl(context):
