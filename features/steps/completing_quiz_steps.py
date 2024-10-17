@@ -1,7 +1,5 @@
 from behave import given, when, then
 
-
-
 @given('the user has opened a Python topic')
 def step_impl(context):
     context.topic_opened = True
@@ -100,10 +98,11 @@ def step_impl(context):
 def step_impl(context):
     print("User is returned to the topic page.")
 
-@when('a system error occurs (e.g., loss of network connection)')
+@when('a system error occurs')
 def step_impl(context):
     context.system_error = True
     print("A system error occurred.")
+
 
 @then('the system displays an error message')
 def step_impl(context):

@@ -29,6 +29,7 @@ Feature: Completing a Quiz
   Scenario: System error occurs during the quiz
     Given the user is logged into the system
     And the user has started a quiz
-    When a system error occurs (e.g., loss of network connection)
+    When a system error occurs
     Then the system displays an error message
     And the user can retry submission or exit the quiz
+    
