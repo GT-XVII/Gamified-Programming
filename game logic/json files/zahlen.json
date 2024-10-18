@@ -1,0 +1,258 @@
+{
+    "type": "document",
+    "title": "Zahlen",
+    "content": [
+        {
+            "type": "img",
+            "src": "https://cdn.sanity.io/images/kk486dy9/production/38a819dcb4e4b361b1475dce4c6c929070469658-841x634.svg"
+        },
+        {
+            "type": "span",
+            "content": "In Python können Zahlen auf verschiedene Arten dargestellt werden, darunter Ganzzahlen (Integer) und Gleitkommazahlen (Floats). In diesem Kapitel werden wir uns mit den verschiedenen Arten von Zahlen in Python befassen und wie sie verwendet werden können."
+        },
+        {
+            "type": "break"
+        },
+        {
+            "type": "h3",
+            "content": "Inhalt"
+        },
+        {
+            "type": "ul",
+            "elements": [
+                {
+                    "type": "link",
+                    "content": "Ganzzahlen (Integer)",
+                    "url": "#ganzzahlen"
+                },
+                {
+                    "type": "link",
+                    "content": "Gleitkommazahlen (Floats)",
+                    "url": "#gleitkommazahlen"
+                },
+                {
+                    "type": "link",
+                    "content": "Arithmetische Operationen",
+                    "url": "#arithmetische-operationen"
+                },
+                {
+                    "type": "link",
+                    "content": "Konvertierung zwischen Datentypen",
+                    "url": "#konvertierung"
+                }
+            ]
+        },
+        {
+            "type": "break"
+        },
+        {
+            "type": "anchor",
+            "id": "ganzzahlen",
+            "content": {
+                "type": "h3",
+                "content": "Ganzzahlen (Integer)"
+            }
+        },
+        {
+            "type": "span",
+            "content": [
+                {
+                    "type": "span",
+                    "content": "Ganzzahlen sind positive oder negative ganze Zahlen ohne Dezimalstellen. Sie werden in Python als "
+                },
+                {
+                    "type": "inline-code",
+                    "content": "int"
+                },
+                {
+                    "type": "span",
+                    "content": "-Typen dargestellt. Hier sind einige Beispiele für Ganzzahlen:"
+                }
+            ]
+        },
+        {
+            "type": "code",
+            "content": "alter = 25\nanzahl_stunden = -10"
+        },
+        {
+            "type": "span",
+            "content": "Du kannst Ganzzahlen für grundlegende mathematische Operationen verwenden, wie z.B. Addition, Subtraktion, Multiplikation und Division."
+        },
+        {
+            "type": "break"
+        },
+        {
+            "type": "anchor",
+            "id": "gleitkommazahlen",
+            "content": {
+                "type": "h3",
+                "content": "Gleitkommazahlen (Floats)"
+            }
+        },
+        {
+            "type": "span",
+            "content": [
+                {
+                    "type": "span",
+                    "content": "Gleitkommazahlen repräsentieren Zahlen mit Dezimalstellen. Sie werden in Python als "
+                },
+                {
+                    "type": "inline-code",
+                    "content": "float"
+                },
+                {
+                    "type": "span",
+                    "content": "-Typen dargestellt. Hier sind einige Beispiele für Gleitkommazahlen:"
+                }
+            ]
+        },
+        {
+            "type": "code",
+            "content": "groesse = 1.75\npi = 3.14159"
+        },
+        {
+            "type": "span",
+            "content": "Gleitkommazahlen können auch für mathematische Operationen verwendet werden, und sie ermöglichen eine höhere Genauigkeit für Berechnungen, die Dezimalstellen erfordern."
+        },
+        {
+            "type": "break"
+        },
+        {
+            "type": "anchor",
+            "id": "arithmetische-operationen",
+            "content": {
+                "type": "h3",
+                "content": "Arithmetische Operationen"
+            }
+        },
+        {
+            "type": "span",
+            "content": "Python unterstützt eine Vielzahl von arithmetischen Operationen auf Zahlen, darunter:"
+        },
+        {
+            "type": "ul",
+            "elements": [
+                {
+                    "type": "span",
+                    "content": "Addition (+)"
+                },
+                {
+                    "type": "span",
+                    "content": "Subtraktion (-)"
+                },
+                {
+                    "type": "span",
+                    "content": "Multiplikation (*)"
+                },
+                {
+                    "type": "span",
+                    "content": "Division (/)"
+                },
+                {
+                    "type": "span",
+                    "content": "Ganzzahldivision (//)"
+                },
+                {
+                    "type": "span",
+                    "content": "Potenzierung (**)"
+                },
+                {
+                    "type": "span",
+                    "content": "Modulo (Restwert nach Division) (%)"
+                }
+            ]
+        },
+        {
+            "type": "code",
+            "content": "a = 10\nb = 3\nprint(a + b) # Ausgabe: 13\nprint(a - b) # Ausgabe: 7\nprint(a * b) # Ausgabe: 30\nprint(a / b) # Ausgabe: 3.3333333333333335\nprint(a // b) # Ausgabe: 3\nprint(a ** b) # Ausgabe: 1000\nprint(a % b) # Ausgabe: 1 (Restwert von 10 / 3)"
+        },
+        {
+            "type": "break"
+        },
+        {
+            "type": "anchor",
+            "id": "konvertierung",
+            "content": {
+                "type": "h3",
+                "content": "Konvertierung zwischen Datentypen"
+            }
+        },
+        {
+            "type": "span",
+            "content": [
+                {
+                    "type": "span",
+                    "content": "Manchmal musst du möglicherweise zwischen verschiedenen numerischen Datentypen konvertieren, z.B. von Ganzzahlen zu Gleitkommazahlen und umgekehrt. Du kannst dies mit den Funktionen "
+                },
+                {
+                    "type": "inline-code",
+                    "content": "int()"
+                },
+                {
+                    "type": "span",
+                    "content": " und "
+                },
+                {
+                    "type": "inline-code",
+                    "content": "float()"
+                },
+                {
+                    "type": "span",
+                    "content": "tun:"
+                }
+            ]
+        },
+        {
+            "type": "code",
+            "content": "a = 10b = float(a) # Konvertierung von Ganzzahl zu Gleitkommazahl\nc = int(3.14) # Konvertierung von Gleitkommazahl zu Ganzzahl"
+        },
+        {
+            "type": "break"
+        },
+        {
+            "type": "h3",
+            "content": "Zusammenfassung"
+        },
+        {
+            "type": "span",
+            "content": "Zahlen sind ein wesentlicher Bestandteil der Programmierung, und Python bietet verschiedene Datentypen, um sie darzustellen und zu verarbeiten. In diesem Kapitel haben wir die beiden grundlegenden numerischen Datentypen in Python behandelt: Ganzzahlen (Integer) und Gleitkommazahlen (Floats). Wir haben auch gelernt, wie man arithmetische Operationen durchführt und zwischen verschiedenen numerischen Datentypen konvertiert. Ein Verständnis dieser Konzepte ist entscheidend für die Entwicklung effektiver Programme in Python."
+        }
+    ],
+    "tasks": [
+        {
+            "description": "Gegeben sind zwei Variablen a und b vom Typ int. Gib das Produkt der beiden Zahlen aus.",
+            "difficulty": "easy",
+            "quiz": {
+                "type": "coding-quiz",
+                "solution": "print(a*b)"
+            }
+        },
+        {
+            "description": "Gegeben sind zwei Variablen a und b vom Typ int. Gib das Produkt der beiden Zahlen aus.",
+            "difficulty": "easy",
+            "quiz": {
+                "type": "fillout-quiz",
+                "template": "§§§§§(10)",
+                "solutions": [
+                    "float"
+                ]
+            }
+        },
+        {
+            "description": "Gegeben sind zwei Variablen a und b vom Typ int. Gib das Produkt der beiden Zahlen aus.",
+            "difficulty": "easy",
+            "quiz": {
+                "type": "coding-quiz",
+                "solution": "print(3*(radius**2))"
+            }
+        },
+        {
+            "description": "Gegeben sind zwei Variablen a und b vom Typ int. Gib das Produkt der beiden Zahlen aus.",
+            "difficulty": "easy",
+            "quiz": {
+                "type": "coding-quiz",
+                "solution": "print(verbrauch*(strecke/100))"
+            }
+        }
+    ]
+}

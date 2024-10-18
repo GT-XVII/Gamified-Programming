@@ -1,0 +1,557 @@
+{
+    "type": "document",
+    "title": "Listen",
+    "content": [
+        {
+            "type": "img",
+            "src": "https://cdn.sanity.io/images/kk486dy9/production/e08e7081722db94485aa094c59829d49173ceb86-886x652.svg"
+        },
+        {
+            "type": "span",
+            "content": "In diesem Kapitel dreht sich alles um Listen in Python. Eine Liste ist eine der vielseitigsten Datentypen in Python und ermöglicht es dir, mehrere Elemente in einer einzigen Variablen zu speichern. Sie kann Daten verschiedener Typen enthalten, einschließlich anderer Listen. Wie bereits erläutert sind auch Strings nicht mehr als eine Liste von Zeichen."
+        },
+        {
+            "type": "break"
+        },
+        {
+            "type": "h3",
+            "content": "Inhalt"
+        },
+        {
+            "type": "ul",
+            "elements": [
+                {
+                    "type": "link",
+                    "content": "Erstellen von Listen",
+                    "url": "#erstellen-von-listen"
+                },
+                {
+                    "type": "link",
+                    "content": "Listenmanipulation",
+                    "url": "#listenmanipulation"
+                },
+                {
+                    "type": "link",
+                    "content": "Listenoperationen und -methoden",
+                    "url": "#listenoperationen-und-methoden"
+                },
+                {
+                    "type": "link",
+                    "content": "Slicing",
+                    "url": "#slicing"
+                },
+                {
+                    "type": "link",
+                    "content": "Matrizen",
+                    "url": "#matrizen"
+                }
+            ]
+        },
+        {
+            "type": "break"
+        },
+        {
+            "type": "anchor",
+            "id": "erstellen-von-listen",
+            "content": {
+                "type": "h3",
+                "content": "Erstellen von Listen"
+            }
+        },
+        {
+            "type": "span",
+            "content": "Um eine Liste zu erstellen, schreibst du die Elemente, getrennt durch Kommata, zwischen eckige Klammern:"
+        },
+        {
+            "type": "code",
+            "content": "freunde = [\"Tim\", \"Oleg\", \"Emely\", \"Niklas\"]\nzahlen = [1, 2, 3.32, 4, 5.0]\ngemischte_liste = [\"Apfel\", 3.14159, True, \"D\"]\nleere_liste = []"
+        },
+        {
+            "type": "span",
+            "content": "Wie man sieht können Listen jede Kombination von Datentypen enthalten und auch leer sein, also keine Elemente enthalten."
+        },
+        {
+            "type": "important-block",
+            "content": [
+                {
+                    "type": "span",
+                    "content": "Wie nun bereits öfter angedeutet sind Strings nichts anderes als Listen von Zeichen. Das heißt alle Operationen und Methoden, die wir auf Strings anwenden können, können wir auch auf Listen anwenden und vice versa. Trotzdem werden hier alle wichtigen Operationen und Methoden nochmals durchgegangen."
+                }
+            ]
+        },
+        {
+            "type": "break"
+        },
+        {
+            "type": "h4",
+            "content": "Zugriff auf Listenelemente"
+        },
+        {
+            "type": "span",
+            "content": [
+                {
+                    "type": "span",
+                    "content": "Du kannst auf einzelne Elemente in der Liste zugreifen, indem du den Index des Elements verwendest. Beachte, dass die Indizierung in Python bei "
+                },
+                {
+                    "type": "inline-code",
+                    "content": "0"
+                },
+                {
+                    "type": "span",
+                    "content": " beginnt:"
+                }
+            ]
+        },
+        {
+            "type": "code",
+            "content": "tiere = [\"Hase\", \"Pferd\", \"Hund\"]\nprint(tiere[1])  # Ausgabe: Pferd"
+        },
+        {
+            "type": "span",
+            "content": [
+                {
+                    "type": "span",
+                    "content": "Du kannst auch negative Indizes verwenden, um auf die Elemente von hinten nach vorn zuzugreifen (Hier fängt man bei "
+                },
+                {
+                    "type": "inline-code",
+                    "content": "-1"
+                },
+                {
+                    "type": "span",
+                    "content": " zu zählen an, da "
+                },
+                {
+                    "type": "inline-code",
+                    "content": "-0 = +0"
+                },
+                {
+                    "type": "span",
+                    "content": "):"
+                }
+            ]
+        },
+        {
+            "type": "code",
+            "content": "print(tiere[-1]) # Ausgabe: Hund"
+        },
+        {
+            "type": "break"
+        },
+        {
+            "type": "anchor",
+            "id": "listenmanipulation",
+            "content": {
+                "type": "h3",
+                "content": "Listenmanipulation"
+            }
+        },
+        {
+            "type": "span",
+            "content": "Listen sind veränderbare (mutierbare) Datentypen, d.h., du kannst ihre Elemente nach der Erstellung ändern. Dabei gibt es drei verschiedene Operation."
+        },
+        {
+            "type": "h4",
+            "content": "Elemente hinzufügen"
+        },
+        {
+            "type": "span",
+            "content": [
+                {
+                    "type": "span",
+                    "content": "Verwende "
+                },
+                {
+                    "type": "inline-code",
+                    "content": "append()"
+                },
+                {
+                    "type": "span",
+                    "content": " zum Hinzufügen am Ende der Liste oder "
+                },
+                {
+                    "type": "inline-code",
+                    "content": "insert()"
+                },
+                {
+                    "type": "span",
+                    "content": " zum Einfügen an einer bestimmten Position:"
+                }
+            ]
+        },
+        {
+            "type": "code",
+            "content": "lieblings_essen = ['Kuchen']\nlieblings_essen.append('Äpfel')\nlieblings_essen.insert(0, 'Amerikaner mit Zuckerguss')\n\nprint(lieblings_essen) # Ausgabe: ['Amerikaner mit Zuckerguss', 'Kuchen', 'Äpfel']"
+        },
+        {
+            "type": "break"
+        },
+        {
+            "type": "h4",
+            "content": "Elemente entfernen"
+        },
+        {
+            "type": "span",
+            "content": [
+                {
+                    "type": "span",
+                    "content": "Verwende "
+                },
+                {
+                    "type": "inline-code",
+                    "content": "remove()"
+                },
+                {
+                    "type": "span",
+                    "content": " zum Entfernen eines spezifischen Elements oder "
+                },
+                {
+                    "type": "inline-code",
+                    "content": "pop()"
+                },
+                {
+                    "type": "span",
+                    "content": " zum Entfernen an einer bestimmten Indexposition:"
+                }
+            ]
+        },
+        {
+            "type": "code",
+            "content": "leblings_essen.remove(\"Äpfel\")\nleblings_essen.pop(0)  # Entfernt das erste Element\n\nprint(leblings_essen) # Ausgabe: ['Kuchen']"
+        },
+        {
+            "type": "break"
+        },
+        {
+            "type": "h4",
+            "content": "Elemente verändern"
+        },
+        {
+            "type": "span",
+            "content": "Mit Hilfe des Indexierungsoperators und des Zuweisungsoperators können bestimmte Indizes gezielt verändert werden:"
+        },
+        {
+            "type": "code",
+            "content": "obst = ['Apfel', 'Kartoffel', 'Banane']\nobst[2] = 'Ananas'\n\nprint(obst) # Ausgabe: ['Apfel', 'Ananas', 'Banane']"
+        },
+        {
+            "type": "break"
+        },
+        {
+            "type": "span",
+            "content": "Diese Operationen sind die Quintessenz vieler Algorithmen und werden auch eine große Rolle in deiner Programmierlaufbahn spielen. Merke sie dir also gut!"
+        },
+        {
+            "type": "example-block",
+            "title": "Nächstes Element der Fibonacci-Folge",
+            "content": [
+                {
+                    "type": "code",
+                    "content": "fib = [0, 1, 1, 2, 3, 5, 8]\nfib.append(fib[-1] + fib[-2])\nprint(fib)"
+                }
+            ],
+            "output": "[0, 1, 1, 2, 3, 5, 8, 13]"
+        },
+        {
+            "type": "break"
+        },
+        {
+            "type": "anchor",
+            "id": "listenoperationen-und-methoden",
+            "content": {
+                "type": "h3",
+                "content": "Listenoperationen und -methoden"
+            }
+        },
+        {
+            "type": "span",
+            "content": "Listen in Python unterstützen eine Vielzahl von Operationen und Funktionen, die es einfach machen, mit ihnen zu arbeiten, wie beispielweise:"
+        },
+        {
+            "type": "ul",
+            "elements": [
+                {
+                    "type": "span",
+                    "content": [
+                        {
+                            "type": "span",
+                            "content": "Verkettung: Du kannst Listen mit dem "
+                        },
+                        {
+                            "type": "inline-code",
+                            "content": "+"
+                        },
+                        {
+                            "type": "span",
+                            "content": " Operator kombinieren."
+                        }
+                    ]
+                },
+                {
+                    "type": "span",
+                    "content": [
+                        {
+                            "type": "span",
+                            "content": "Multiplikation: Multipliziere eine Liste mit einer Ganzzahl, um die Liste zu wiederholen. ("
+                        },
+                        {
+                            "type": "inline-code",
+                            "content": "[1,'a']*3 -> [1,'a',1,'a',1,'a']"
+                        },
+                        {
+                            "type": "span",
+                            "content": ")."
+                        }
+                    ]
+                },
+                {
+                    "type": "span",
+                    "content": [
+                        {
+                            "type": "span",
+                            "content": "Länge: Verwende "
+                        },
+                        {
+                            "type": "inline-code",
+                            "content": "len()"
+                        },
+                        {
+                            "type": "span",
+                            "content": " um die Anzahl der Elemente in einer Liste zu erhalten."
+                        }
+                    ]
+                },
+                {
+                    "type": "span",
+                    "content": [
+                        {
+                            "type": "span",
+                            "content": "Sortieren: Verwende "
+                        },
+                        {
+                            "type": "inline-code",
+                            "content": "sort()"
+                        },
+                        {
+                            "type": "span",
+                            "content": " um die Elemente der Liste zu sortieren."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "example-block",
+            "title": "Median bestimmen",
+            "content": [
+                {
+                    "type": "code",
+                    "content": "liste = [3,6,1,0,4,2,8,4,6,9,1,8,4]\nlaenge = len(liste)\nliste.sort() # Sortiert die Liste\n\nif laenge % 2 == 0:\n    print((liste[int(laenge/2)]+liste[int(laenge/2 - 1)]) / 2)\nelse:\n    print(liste[int(laenge/2)])"
+                }
+            ],
+            "output": "4"
+        },
+        {
+            "type": "break"
+        },
+        {
+            "type": "h4",
+            "content": "Das in-Keyword"
+        },
+        {
+            "type": "span",
+            "content": [
+                {
+                    "type": "span",
+                    "content": "Ein besonderes Keyword, das es im Zusammenhang mit Listen gibt ist "
+                },
+                {
+                    "type": "inline-code",
+                    "content": "in"
+                },
+                {
+                    "type": "span",
+                    "content": ". Mit Hilfe von "
+                },
+                {
+                    "type": "inline-code",
+                    "content": "element in liste"
+                },
+                {
+                    "type": "span",
+                    "content": " kann man überprüfen, ob der Wert von "
+                },
+                {
+                    "type": "inline-code",
+                    "content": "element"
+                },
+                {
+                    "type": "span",
+                    "content": " in der Liste enthalten ist:"
+                }
+            ]
+        },
+        {
+            "type": "code",
+            "content": "liste = [1, \"H\", 0.45]\nprint(2 in liste) # Ausgabe: False\nprint(\"H\" in liste) # Ausgabe: True"
+        },
+        {
+            "type": "break"
+        },
+        {
+            "type": "anchor",
+            "id": "slicing",
+            "content": {
+                "type": "h3",
+                "content": "Slicing"
+            }
+        },
+        {
+            "type": "span",
+            "content": "Du kannst Teilbereiche aus einer Liste extrahieren, indem du das Slicing verwendest. Das funktioniert durch Angabe eines Start- und eines Endindex, getrennt durch einen Doppelpunkt:"
+        },
+        {
+            "type": "code",
+            "content": "zahlen = [1,2,3,4,5,6]\nprint(zahlen[2:4]) # Ausgabe: [3,4]"
+        },
+        {
+            "type": "span",
+            "content": "Durch hinzufügen eines dritten Parameters kannst du die Schrittweite beim Slicing angeben. Hier sind einige Anwendungsbeispiele:"
+        },
+        {
+            "type": "code",
+            "content": "zahlen = [1,2,3,4,5,6]\nprint(zahlen[2:5:2]) # Ausgabe: [3,5]\nprint(zahlen[:4:2]) # Ausgabe: [1,3]\nprint(zahlen[1::3]) # Ausgabe: [2,5]\nprint(zahlen[3:]) # Ausgabe: [4,5,6]\nprint(zahlen[:4]) # Ausgabe: [1,2,3,4]\nprint(zahlen[::2]) # Ausgabe: [1,3,5]\nprint(zahlen[::-1]) # Ausgabe: [6,5,4,3,2,1]\nprint(zahlen[::]) # Ausgabe: [1,2,3,4,5,6]"
+        },
+        {
+            "type": "span",
+            "content": "Wie man sehen kann sind alle drei Parameter optional und können in beliebiger Kombination genutzt werden."
+        },
+        {
+            "type": "break"
+        },
+        {
+            "type": "anchor",
+            "id": "matrizen",
+            "content": {
+                "type": "h3",
+                "content": "Matrizen"
+            }
+        },
+        {
+            "type": "span",
+            "content": "Listen können auch andere Listen enthalten und somit Matrizen mit beliebiger Dimension darstellen. Diese Listen nennt man auch mehrdimensional:"
+        },
+        {
+            "type": "code",
+            "content": "matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]"
+        },
+        {
+            "type": "break"
+        },
+        {
+            "type": "h3",
+            "content": "Zusammenfassung"
+        },
+        {
+            "type": "span",
+            "content": "Listen sind eine zentrale Datenstruktur in Python, die durch ihre Flexibilität und mächtigen Funktionen für eine Vielzahl von Anwendungen geeignet sind. Dieses Kapitel hat dir einen umfassenden Überblick über das Erstellen, Zugreifen, Manipulieren und Nutzen von Listen gegeben. Durch die Beherrschung von Listen wirst du in der Lage sein, komplexe Datenstrukturen effektiv in deinen Python-Programmen zu verwenden."
+        },
+        {
+            "type": "span",
+            "content": "Listen schaffen die Basis für Schleifen, welche wir uns im nächsten Kapitel anschauen werden. Schleifen sind eine weitere essentielle Kontrollstruktur, die deine Programme erst wirklich zum Leben erwecken. Es bleibt also weiter spannend!"
+        }
+    ],
+    "tasks": [
+        {
+            "description": "Das Programm soll die Liste ausgeben.",
+            "difficulty": "easy",
+            "quiz": {
+                "type": "fillout-quiz",
+                "template": "liste = §\"Hallo\", 123§\nprint(liste)",
+                "solutions": [
+                    "[",
+                    "]"
+                ]
+            }
+        },
+        {
+            "description": "Gib eine Liste aus, das die folgenden Elemente in angegebener Reihenfogle enthält: True, 0.45 ,\"Gabriel\"",
+            "difficulty": "easy",
+            "quiz": {
+                "type": "coding-quiz",
+                "solution": "print([True, 0.45, \"Gabriel\"])"
+            }
+        },
+        {
+            "description": "Gegeben ist eine Liste liste. Das Programm soll das letzte Element der Liste ausgeben.",
+            "difficulty": "easy",
+            "quiz": {
+                "type": "fillout-quiz",
+                "template": "print(liste[§§])",
+                "solutions": [
+                    "-1"
+                ]
+            }
+        },
+        {
+            "description": "Das Programm soll eine Liste ausgeben, die vier mal die 1 als Element hat.",
+            "difficulty": "easy",
+            "quiz": {
+                "type": "fillout-quiz",
+                "template": "print([1,1]§§)",
+                "solutions": [
+                    "*2"
+                ]
+            }
+        },
+        {
+            "description": "Gegeben sind zwei Listen l1 und l2. Füge l2 l1 an und gib das Resultat aus.",
+            "difficulty": "easy",
+            "quiz": {
+                "type": "coding-quiz",
+                "solution": "print(l1+l2)"
+            }
+        },
+        {
+            "description": "Gegeben ist eine Liste liste. Gib Die Liste in umgedrehter Reihenfolge aus.",
+            "difficulty": "medium",
+            "quiz": {
+                "type": "coding-quiz",
+                "solution": "print(liste[::-1])"
+            }
+        },
+        {
+            "description": "Gegeben ist eine Liste liste und eine Zahl n. Gib True aus, falls n in liste vorkommt, andernfalls False.",
+            "difficulty": "medium",
+            "quiz": {
+                "type": "coding-quiz",
+                "solution": "print(n in liste)"
+            }
+        },
+        {
+            "description": "Gegeben ist eine Liste liste und ein String s. Entferne das erste Element von liste und füge als letztes Element s an. Gib schließlich liste aus.",
+            "difficulty": "medium",
+            "quiz": {
+                "type": "coding-quiz",
+                "solution": "liste.pop(0)\nliste.append(s)\nprint(liste)"
+            }
+        },
+        {
+            "description": "Gegeben ist eine Liste zahlen. Gib die Summe des Minimums und des Maximums von zahlen aus.",
+            "difficulty": "medium",
+            "quiz": {
+                "type": "coding-quiz",
+                "solution": "zahlen.sort()\nprint(zahlen[0] + zahlen[-1])"
+            }
+        },
+        {
+            "description": "Gegeben sind zwei Integer-Listen l1 und l2. Gib die sortierte Konkatenation der beiden Listen aus.",
+            "difficulty": "medium",
+            "quiz": {
+                "type": "coding-quiz",
+                "solution": "l = l1+l2\nl.sort()\nprint(l)"
+            }
+        }
+    ]
+}
