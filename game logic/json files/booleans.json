@@ -1,0 +1,501 @@
+{
+    "type": "document",
+    "title": "Booleans",
+    "content": [
+        {
+            "type": "img",
+            "src": "https://cdn.sanity.io/images/kk486dy9/production/4a82ed39a730fe847ae813ac74c0d6d886bb66f5-523x336.svg"
+        },
+        {
+            "type": "span",
+            "content": [
+                {
+                    "type": "span",
+                    "content": "In diesem Kapitel geht es um Booleans in Python. Booleans sind ein Datentyp, der entweder wahr ("
+                },
+                {
+                    "type": "inline-code",
+                    "content": "True"
+                },
+                {
+                    "type": "span",
+                    "content": ") oder falsch ("
+                },
+                {
+                    "type": "inline-code",
+                    "content": "False"
+                },
+                {
+                    "type": "span",
+                    "content": ") sein kann und stellt somit die Elementaren Bit-Werte "
+                },
+                {
+                    "type": "inline-code",
+                    "content": "0"
+                },
+                {
+                    "type": "span",
+                    "content": " und "
+                },
+                {
+                    "type": "inline-code",
+                    "content": "1"
+                },
+                {
+                    "type": "span",
+                    "content": ", die oft mit der Informatik in Verbindung gebracht werden dar. Sie werden oft verwendet, um Bedingungen in Programmen auszudrücken und die Steuerung des Programmflusses zu ermöglichen."
+                }
+            ]
+        },
+        {
+            "type": "break"
+        },
+        {
+            "type": "h3",
+            "content": "Inhalt"
+        },
+        {
+            "type": "ul",
+            "elements": [
+                {
+                    "type": "link",
+                    "content": "Erstellen von Booleans",
+                    "url": "#erstellen-von-strings"
+                },
+                {
+                    "type": "link",
+                    "content": "Logische Operationen",
+                    "url": "#logische-operationen"
+                },
+                {
+                    "type": "link",
+                    "content": "Vergleichsoperatoren",
+                    "url": "#vergleichsoperatoren"
+                }
+            ]
+        },
+        {
+            "type": "break"
+        },
+        {
+            "type": "anchor",
+            "id": "erstellen-von-booleans",
+            "content": {
+                "type": "h3",
+                "content": "Erstellen von Booleans"
+            }
+        },
+        {
+            "type": "span",
+            "content": "Wie gewohnt können Variable die verschiedenen Werte einfach zugewiesen werden:"
+        },
+        {
+            "type": "code",
+            "content": "ist_sonnig = True\nist_regnerisch = False"
+        },
+        {
+            "type": "span",
+            "content": [
+                {
+                    "type": "span",
+                    "content": "Sie können aber auch das Ergebnis eines Vergleiches sein (in diesem Fall größer-gleich "
+                },
+                {
+                    "type": "inline-code",
+                    "content": ">="
+                },
+                {
+                    "type": "span",
+                    "content": ". Weitere Vergleichsoperationen werden in zwei Abschnitten gezeigt):"
+                }
+            ]
+        },
+        {
+            "type": "example-block",
+            "title": "Altersüberprüfung",
+            "content": [
+                {
+                    "type": "code",
+                    "content": "alter = 25\nist_erwachsen = alter >= 18\nprint(ist_erwachsen)"
+                }
+            ],
+            "output": "True"
+        },
+        {
+            "type": "span",
+            "content": [
+                {
+                    "type": "span",
+                    "content": "Boolean ist mitunter der wichtigste Datentyp in Python, da man durch die Vergleichsergebnisse "
+                },
+                {
+                    "type": "inline-code",
+                    "content": "True"
+                },
+                {
+                    "type": "span",
+                    "content": " und "
+                },
+                {
+                    "type": "inline-code",
+                    "content": "False"
+                },
+                {
+                    "type": "span",
+                    "content": " Entscheidungen auf Basis von Eigenschaften anderer Werte treffen kann. Dies ermöglicht den Programmablauf in Zweige aufzuteilen."
+                }
+            ]
+        },
+        {
+            "type": "break"
+        },
+        {
+            "type": "anchor",
+            "id": "logische-operationen",
+            "content": {
+                "type": "h3",
+                "content": "Logische Operationen"
+            }
+        },
+        {
+            "type": "span",
+            "content": "Python bietet logische Operatoren, um Booleans zu kombinieren, wodurch boolsche Funkionen und Ausdrücke formuliert werden können:"
+        },
+        {
+            "type": "ul",
+            "elements": [
+                {
+                    "type": "span",
+                    "content": [
+                        {
+                            "type": "inline-code",
+                            "content": "and"
+                        },
+                        {
+                            "type": "span",
+                            "content": " (logisches Und): Gibt True zurück, wenn beide Ausdrücke wahr sind ("
+                        },
+                        {
+                            "type": "inline-code",
+                            "content": "True and False -> False"
+                        },
+                        {
+                            "type": "span",
+                            "content": ")."
+                        }
+                    ]
+                },
+                {
+                    "type": "span",
+                    "content": [
+                        {
+                            "type": "inline-code",
+                            "content": "or"
+                        },
+                        {
+                            "type": "span",
+                            "content": " (logisches Oder): Gibt True zurück, wenn mindestens einer der Ausdrücke wahr ist ("
+                        },
+                        {
+                            "type": "inline-code",
+                            "content": "True or False -> True"
+                        },
+                        {
+                            "type": "span",
+                            "content": ")."
+                        }
+                    ]
+                },
+                {
+                    "type": "span",
+                    "content": [
+                        {
+                            "type": "inline-code",
+                            "content": "not"
+                        },
+                        {
+                            "type": "span",
+                            "content": " (logisches Nicht): Gibt den negierten Wert des Ausdrucks zurück ("
+                        },
+                        {
+                            "type": "inline-code",
+                            "content": "not True -> False"
+                        },
+                        {
+                            "type": "span",
+                            "content": ")."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "example-block",
+            "title": "Wettervorhersage",
+            "content": [
+                {
+                    "type": "code",
+                    "content": "ist_warm = True\nist_sonnig = True\nist_schoen = ist_warm and ist_sonnig\nprint(ist_schoen)"
+                }
+            ],
+            "output": "True"
+        },
+        {
+            "type": "anchor",
+            "id": "vergleichsoperatoren",
+            "content": {
+                "type": "h3",
+                "content": "Vergleichsoperatoren"
+            }
+        },
+        {
+            "type": "span",
+            "content": "Du kannst Vergleichsoperatoren verwenden, um Booleans basierend auf dem Vergleich von Werten zu erstellen:"
+        },
+        {
+            "type": "ul",
+            "elements": [
+                {
+                    "type": "span",
+                    "content": [
+                        {
+                            "type": "inline-code",
+                            "content": "=="
+                        },
+                        {
+                            "type": "span",
+                            "content": ": Gibt "
+                        },
+                        {
+                            "type": "inline-code",
+                            "content": "True"
+                        },
+                        {
+                            "type": "span",
+                            "content": " zurück, wenn die beiden Werte gleich sind."
+                        }
+                    ]
+                },
+                {
+                    "type": "span",
+                    "content": [
+                        {
+                            "type": "inline-code",
+                            "content": "!="
+                        },
+                        {
+                            "type": "span",
+                            "content": ": Gibt "
+                        },
+                        {
+                            "type": "inline-code",
+                            "content": "True"
+                        },
+                        {
+                            "type": "span",
+                            "content": " zurück, wenn die beiden Werte ungleich sind."
+                        }
+                    ]
+                },
+                {
+                    "type": "span",
+                    "content": [
+                        {
+                            "type": "inline-code",
+                            "content": ">"
+                        },
+                        {
+                            "type": "span",
+                            "content": ": Gibt "
+                        },
+                        {
+                            "type": "inline-code",
+                            "content": "True"
+                        },
+                        {
+                            "type": "span",
+                            "content": " zurück, wenn der linke Wert größer ist als der rechte Wert."
+                        }
+                    ]
+                },
+                {
+                    "type": "span",
+                    "content": [
+                        {
+                            "type": "inline-code",
+                            "content": "<"
+                        },
+                        {
+                            "type": "span",
+                            "content": ": Gibt "
+                        },
+                        {
+                            "type": "inline-code",
+                            "content": "True"
+                        },
+                        {
+                            "type": "span",
+                            "content": " zurück, wenn der linke Wert kleiner ist als der rechte Wert."
+                        }
+                    ]
+                },
+                {
+                    "type": "span",
+                    "content": [
+                        {
+                            "type": "inline-code",
+                            "content": ">="
+                        },
+                        {
+                            "type": "span",
+                            "content": ": Gibt "
+                        },
+                        {
+                            "type": "inline-code",
+                            "content": "True"
+                        },
+                        {
+                            "type": "span",
+                            "content": " zurück, wenn der linke Wert größer gleich dem rechten Wert ist."
+                        }
+                    ]
+                },
+                {
+                    "type": "span",
+                    "content": [
+                        {
+                            "type": "inline-code",
+                            "content": ">="
+                        },
+                        {
+                            "type": "span",
+                            "content": ": Gibt "
+                        },
+                        {
+                            "type": "inline-code",
+                            "content": "True"
+                        },
+                        {
+                            "type": "span",
+                            "content": " zurück, wenn der linke Wert kleiner gleich dem rechten Wert ist."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "example-block",
+            "title": "Einfache Validierung von Registrierungsdaten",
+            "content": [
+                {
+                    "type": "code",
+                    "content": "username = \"Supelir\"\nemail = \"supelir@mail.com\"\nalter = 21\npassword = \"Passwort123.\"\npasswordRepeat = \"Passwort123.\"\n\nist_valider_username = len(username) > 3 and len(username) <= 16\nist_valide_email = \"@\" in email #Überprüft ob ein @ in email enthalten ist\nist_valides_alter = alter >= 18\nist_valides_password = password == passwordRepeat and len(password) > 5\nprint(ist_valider_username and ist_valide_email and ist_valides_alter and ist_valides_password)"
+                }
+            ],
+            "output": "True"
+        },
+        {
+            "type": "important-block",
+            "content": [
+                {
+                    "type": "span",
+                    "content": [
+                        {
+                            "type": "span",
+                            "content": "Anfangs werden die Operatoren "
+                        },
+                        {
+                            "type": "inline-code",
+                            "content": "="
+                        },
+                        {
+                            "type": "span",
+                            "content": " und "
+                        },
+                        {
+                            "type": "inline-code",
+                            "content": "=="
+                        },
+                        {
+                            "type": "span",
+                            "content": " gerne mal verwechselt. Es ist jedoch essentiell deren Unterschied zu kennen, da deren Funktionsweise grundsätzlich verschieden ist. "
+                        },
+                        {
+                            "type": "inline-code",
+                            "content": "="
+                        },
+                        {
+                            "type": "span",
+                            "content": " ist der Zuweisungsoperator, mit dem man Variablen einen Wert geben kann. "
+                        },
+                        {
+                            "type": "inline-code",
+                            "content": "=="
+                        },
+                        {
+                            "type": "span",
+                            "content": " ist ein Vergleichsoperator, der die Äquivalenz zweier Werte überprüft."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "break"
+        },
+        {
+            "type": "h3",
+            "content": "Zusammenfassung"
+        },
+        {
+            "type": "span",
+            "content": "Booleans sind ein wichtiger Bestandteil der Programmierung in Python und werden verwendet, um Bedingungen auszudrücken und die Steuerung des Programmflusses zu ermöglichen. In diesem Kapitel haben wir gelernt, wie man Booleans erstellt, logische Operatoren verwendet, Vergleiche durchführt und Booleans in bedingten Anweisungen verwendet. Diese Konzepte sind entscheidend, um deine Programme dynamischer und reaktionsschneller zu gestalten."
+        },
+        {
+            "type": "span",
+            "content": "Im nächsten Kapitel lernen wir die wahre Macht von Booleans kennen und fangen langsam an coolere Programme mit mehr Funktionalitäten zu erstellen."
+        }
+    ],
+    "tasks": [
+        {
+            "description": "Gegeben sind zwei Zahlen a und b. Das Programm soll True ausgeben, falls a kleiner gleich b gilt, ansonsten False.",
+            "difficulty": "easy",
+            "quiz": {
+                "type": "fillout-quiz",
+                "template": "print(a§§b)",
+                "solutions": [
+                    "<="
+                ]
+            }
+        },
+        {
+            "description": "Gegeben sind zwei Booleans a und b. Das Programm soll True ausgeben, falls a True und b False ist, ansonsten False.",
+            "difficulty": "easy",
+            "quiz": {
+                "type": "coding-quiz",
+                "solution": "print(a and not b)"
+            }
+        },
+        {
+            "description": "Gegeben sind zwei Booleans a und b. Gib das Ergebnis von a XOR b aus. (a XOR b ist True, falls entweder a oder b True ist. Jedoch nicht beide)",
+            "difficulty": "medium",
+            "quiz": {
+                "type": "coding-quiz",
+                "solution": "print((a and not b) or (not a and b))"
+            }
+        },
+        {
+            "description": "Ersetze die Lücken so, dass die Ausgabe immer True ist.",
+            "difficulty": "medium",
+            "quiz": {
+                "type": "fillout-quiz",
+                "template": "print((not (a and b)) == (§§§ a §§ §§§ b))",
+                "solutions": [
+                    "not",
+                    "or",
+                    "not"
+                ]
+            }
+        }
+    ]
+}

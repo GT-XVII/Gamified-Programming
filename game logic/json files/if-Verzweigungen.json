@@ -1,0 +1,425 @@
+{
+    "type": "document",
+    "title": "Verweigungen mit if",
+    "content": [
+        {
+            "type": "img",
+            "src": "https://cdn.sanity.io/images/kk486dy9/production/91b28eaf587003304c383e803f09c8226b78ece0-757x473.svg"
+        },
+        {
+            "type": "span",
+            "content": [
+                {
+                    "type": "span",
+                    "content": "In diesem Kapitel werden wir uns mit "
+                },
+                {
+                    "type": "inline-code",
+                    "content": "if"
+                },
+                {
+                    "type": "span",
+                    "content": ")-Bedingungen in Python befassen. "
+                },
+                {
+                    "type": "inline-code",
+                    "content": "if"
+                },
+                {
+                    "type": "span",
+                    "content": "-Bedingungen ermöglichen es dir, Code auszuführen, basierend auf einer Bedingung oder einem Satz von Bedingungen, die schließlich einen boolsches Wert, also "
+                },
+                {
+                    "type": "inline-code",
+                    "content": "True"
+                },
+                {
+                    "type": "span",
+                    "content": " oder "
+                },
+                {
+                    "type": "inline-code",
+                    "content": "False"
+                },
+                {
+                    "type": "span",
+                    "content": " ergeben. Sie sind ein grundlegendes Konzept in der Programmierung und ermöglichen es den Ablauf deines Codes zu steuern."
+                }
+            ]
+        },
+        {
+            "type": "break"
+        },
+        {
+            "type": "h3",
+            "content": "Inhalt"
+        },
+        {
+            "type": "ul",
+            "elements": [
+                {
+                    "type": "link",
+                    "content": "Einfache if-Bedingung",
+                    "url": "#einfache-if-bedingung"
+                },
+                {
+                    "type": "link",
+                    "content": "Blöcke",
+                    "url": "#bloecke"
+                },
+                {
+                    "type": "link",
+                    "content": "if-else-Bedingung",
+                    "url": "#if-else-bedingung"
+                },
+                {
+                    "type": "link",
+                    "content": "if-elif-else-Bedingung",
+                    "url": "#if-elif-else-Bedingung"
+                },
+                {
+                    "type": "link",
+                    "content": "Verschachtelte if-Bedingungen",
+                    "url": "#verschachtelte-if-bedingungen"
+                }
+            ]
+        },
+        {
+            "type": "break"
+        },
+        {
+            "type": "anchor",
+            "id": "einfache-if-bedingung",
+            "content": {
+                "type": "h3",
+                "content": "Einfache if-Bedingung"
+            }
+        },
+        {
+            "type": "span",
+            "content": "Die einfachste Form einer if-Bedingung hat die folgende Syntax:"
+        },
+        {
+            "type": "code",
+            "content": "#bedingung sei ein beliebiger logischer Ausdruck\nif bedingung:\n    # Führe diesen Codeblock aus, wenn die Bedingung wahr ist\n    print(\"Die Bedingung ist wahr!\")"
+        },
+        {
+            "type": "span",
+            "content": "Gedanklich kann man sich das Konstrukt wie eine Falls-Dann-Aussage vorstellen (Falls bedingung war ist, dann tue folgendes...)"
+        },
+        {
+            "type": "example-block",
+            "title": "Wettervorhersage mit Sätzen",
+            "content": [
+                {
+                    "type": "code",
+                    "content": "temperatur_celcius = 25\nist_sonnig = True\nif temperatur_celcius >= 20 and ist_sonnig:\n  print(\"Das Wetter ist wunderbar!\")"
+                }
+            ],
+            "output": "Das Wetter ist wunderbar!"
+        },
+        {
+            "type": "break"
+        },
+        {
+            "type": "anchor",
+            "id": "bloecke",
+            "content": {
+                "type": "h3",
+                "content": "Blöcke"
+            }
+        },
+        {
+            "type": "span",
+            "content": [
+                {
+                    "type": "span",
+                    "content": "Ein Block ist eine Gruppe zusammengehöriger Befehle und erkennbar an der Tiefe der Einrückung. Wie du im obigen Beispiel siehst, werden die Befehle innerhalb des "
+                },
+                {
+                    "type": "inline-code",
+                    "content": "if"
+                },
+                {
+                    "type": "span",
+                    "content": "- und "
+                },
+                {
+                    "type": "inline-code",
+                    "content": "else"
+                },
+                {
+                    "type": "span",
+                    "content": "-Block mit einem Tabulator eingerückt. So wird festgelegt, wo ein Block anfängt und wo er aufhört."
+                }
+            ]
+        },
+        {
+            "type": "important-block",
+            "content": [
+                {
+                    "type": "span",
+                    "content": [
+                        {
+                            "type": "span",
+                            "content": "Es ist wichtig, dass du das Konzept von Blöcken richtig verstanden hast, da sie nicht nur bei "
+                        },
+                        {
+                            "type": "inline-code",
+                            "content": "if"
+                        },
+                        {
+                            "type": "span",
+                            "content": "-Bedinungen, sondern auch bei Funktionen, Schleifen, Klassen und weiteren Strukturen, die wir noch kennenlernen essentiell sind. Hier nochmal der Aufruf an dich auch selbst mit Python in deiner IDE herumzuspielen, um ein besseres Gefühl für das Gelernte zu erhalten. Übung macht den Meister!"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "break"
+        },
+        {
+            "type": "anchor",
+            "id": "if-else-bedingung",
+            "content": {
+                "type": "h3",
+                "content": "if-else-Bedingung"
+            }
+        },
+        {
+            "type": "span",
+            "content": "Meistens möchte man einen Codeabschnitt nicht nur ausführen, wenn der Fall eintritt, sondern man möchte auch einen anderen Codeabschnitt ausführen, sollte der Fall nicht eintreten."
+        },
+        {
+            "type": "span",
+            "content": [
+                {
+                    "type": "span",
+                    "content": "In einem solchen Fall wird die "
+                },
+                {
+                    "type": "inline-code",
+                    "content": "if-else"
+                },
+                {
+                    "type": "span",
+                    "content": "-Syntax angewendet"
+                }
+            ]
+        },
+        {
+            "type": "code",
+            "content": "if bedingung:\n    # Führe diesen Codeblock aus, wenn die Bedingung wahr ist\n    print(\"Die Bedingung ist wahr!\")\nelse:\n    # Führe diesen Codeblock aus, wenn die Bedingung falsch ist\n    print(\"Die Bedingung ist falsch!\")"
+        },
+        {
+            "type": "example-block",
+            "title": "Validierung mit Ausgabe",
+            "content": [
+                {
+                    "type": "code",
+                    "content": "password = \"Test.\"\npassword_repeat = \"Test.\"\n\nif password == password_repeat:\n  print(\"Passwörter stimmen überein!\")\nelse:\n  print(\"Passwörter stimmen nicht überein!\")\n  \nif len(password) > 6:\n  print(\"Passwort hat ausreichende Länge!\")\nelse:\n  print(\"Passwort zu kurz\")"
+                }
+            ],
+            "output": "Passwörter stimmen überein!Passwort zu kurz!"
+        },
+        {
+            "type": "break"
+        },
+        {
+            "type": "anchor",
+            "id": "if-elif-else-bedingung",
+            "content": {
+                "type": "h3",
+                "content": "if-elif-else-Bedingung"
+            }
+        },
+        {
+            "type": "span",
+            "content": "Auch Verzweigungen mit mehr als einer Abzweigung sind möglich, wenn man sich die Frage stellt \"Falls bedingung1, dann tue ..., falls sonst bedingung2, dann tue ..., ansonsten tue...\""
+        },
+        {
+            "type": "span",
+            "content": [
+                {
+                    "type": "span",
+                    "content": "In einem solchen Fall wird die "
+                },
+                {
+                    "type": "inline-code",
+                    "content": "if-elif-else"
+                },
+                {
+                    "type": "span",
+                    "content": "-Syntax angewendet"
+                }
+            ]
+        },
+        {
+            "type": "code",
+            "content": "if bedingung1:\n    # Führe diesen Codeblock aus, wenn Bedingung1 wahr ist\n    print(\"Bedingung1 ist wahr!\")\nelif bedingung2:\n    # Führe diesen Codeblock aus, wenn Bedingung2 wahr ist\n    print(\"Bedingung2 ist wahr!\")\nelse:\n    # Führe diesen Codeblock aus, wenn keine der Bedingungen wahr ist\n    print(\"Keine der Bedingungen ist wahr!\")"
+        },
+        {
+            "type": "example-block",
+            "title": "Notengebung",
+            "content": [
+                {
+                    "type": "code",
+                    "content": "punkte = 29\nif punkte >= 40:\n print(\"Sehr gut!\")\nelif punkte >= 30:\n print(\"Gut!\")\nelif punkte >= 20:\n print(\"Befriedigend!\")\nelse:\n print(\"Unausreichend!\")"
+                }
+            ],
+            "output": "Befriedigend!"
+        },
+        {
+            "type": "important-block",
+            "content": [
+                {
+                    "type": "span",
+                    "content": [
+                        {
+                            "type": "span",
+                            "content": "Das "
+                        },
+                        {
+                            "type": "inline-code",
+                            "content": "else"
+                        },
+                        {
+                            "type": "span",
+                            "content": " ist in einer "
+                        },
+                        {
+                            "type": "inline-code",
+                            "content": "if-elif-else"
+                        },
+                        {
+                            "type": "span",
+                            "content": "-Struktur keine Pflicht! Falls du keinen Basisfall benötigst, also nichts tun möchtest, falls keine der Bedingungen zutrifft, kannst du darauf verzichten."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "break"
+        },
+        {
+            "type": "anchor",
+            "id": "verschachtelte-if-bedingungen",
+            "content": {
+                "type": "h3",
+                "content": "Verschachtelte if-Bedingungen"
+            }
+        },
+        {
+            "type": "span",
+            "content": [
+                {
+                    "type": "span",
+                    "content": "Oft möchte man auch Verzweigungen in sich selbst nochmal Verzweigen. Dafür platziert man einfach eine weitere "
+                },
+                {
+                    "type": "inline-code",
+                    "content": "if"
+                },
+                {
+                    "type": "span",
+                    "content": "-Bedingung in die bereits bestehende "
+                },
+                {
+                    "type": "inline-code",
+                    "content": "if"
+                },
+                {
+                    "type": "span",
+                    "content": "-Bedingung. Die Anzahl der verschachtelungen nennt man auch Tiefe."
+                }
+            ]
+        },
+        {
+            "type": "example-block",
+            "title": "Präzise Wettervorhersage",
+            "content": [
+                {
+                    "type": "code",
+                    "content": "ist_sonnig = True\ntemperatur_celcius = 12\nif ist_sonnig:\n    if temperatur_celcius >= 20:\n        print(\"Wunderbares Wetter!\")\n    else:\n        print(\"Sonnig aber etwas kühl!\")\nelse:\n    if temperatur_celcius >= 20:\n        print(\"Da bahnt sich was an!\")\n    else:\n        print(\"Kein schönes Wetter!\")"
+                }
+            ],
+            "output": "Sonnig aber etwas kühl!"
+        },
+        {
+            "type": "break"
+        },
+        {
+            "type": "h3",
+            "content": "Zusammenfassung"
+        },
+        {
+            "type": "span",
+            "content": [
+                {
+                    "type": "inline-code",
+                    "content": "if"
+                },
+                {
+                    "type": "span",
+                    "content": "-Bedingungen sind ein grundlegendes Konzept in Python, das es ermöglicht, Code basierend auf Bedingungen auszuführen oder zu überspringen. In diesem Kapitel haben wir gelernt, wie man einfache "
+                },
+                {
+                    "type": "inline-code",
+                    "content": "if"
+                },
+                {
+                    "type": "span",
+                    "content": "-Bedingungen, "
+                },
+                {
+                    "type": "inline-code",
+                    "content": "if-else"
+                },
+                {
+                    "type": "span",
+                    "content": "-Bedingungen, "
+                },
+                {
+                    "type": "inline-code",
+                    "content": "if-elif-else"
+                },
+                {
+                    "type": "span",
+                    "content": "-Bedingungen und verschachtelte if-Bedingungen verwendet. Diese Konzepte sind entscheidend, um die Logik und den Ablauf deines Codes zu steuern und verschiedene Szenarien abzudecken."
+                }
+            ]
+        }
+    ],
+    "tasks": [
+        {
+            "description": "Das Programm soll \"Gerade\" ausgeben, falls die Zahl a gerade ist, ansonsten \"Ungerade\".",
+            "difficulty": "easy",
+            "quiz": {
+                "type": "fillout-quiz",
+                "template": "a = 3\n$$ a % 2 == 0:\n    print(\"Gerade\")\n§§§§:\n    print(\"Ungerade\")",
+                "solutions": [
+                    "if",
+                    "else"
+                ]
+            }
+        },
+        {
+            "description": "Gegeben ist ein String passwort. Gib \"Zu kurz\" aus, falls dieser weniger als 4 Zeichen enthält, \"Genau richtig\", falls er 4 bis 10 (inklusiv) Zeichen lang ist und ansonsten \"Zu lang\".",
+            "difficulty": "easy",
+            "quiz": {
+                "type": "coding-quiz",
+                "solution": "if len(passwort) < 4:\n    print(\"Zu kurz\")\nelif len(passwort) <= 10:\n    print(\"Genau richtig\")\nelse:\n    print(\"Zu lang\")"
+            }
+        },
+        {
+            "description": "Gegeben seien zwei Zahlen alter1 und alter2. Gib die Differenz beider Zahlen aus.",
+            "difficulty": "medium",
+            "quiz": {
+                "type": "coding-quiz",
+                "solution": "if alter1 > alter2:\n    print(alter1 - alter2)\nelse:\n    print(alter2 - alter1)"
+            }
+        }
+    ]
+}

@@ -1,0 +1,554 @@
+{
+    "type": "document",
+    "title": "Strings",
+    "content": [
+        {
+            "type": "img",
+            "src": "https://demo.supertut.com/images/background.png"
+        },
+        {
+            "type": "span",
+            "content": "In diesem Kapitel wirst du die faszinierende Welt der Strings in Python erkunden. Strings sind Sequenzen von Zeichen, die in einfachen oder doppelten Anführungszeichen eingeschlossen sind. Sie werden verwendet, um Text in Python zu repräsentieren und zu manipulieren."
+        },
+        {
+            "type": "break"
+        },
+        {
+            "type": "h3",
+            "content": "Inhalt"
+        },
+        {
+            "type": "ul",
+            "elements": [
+                {
+                    "type": "link",
+                    "content": "Erstellen von Strings",
+                    "url": "#erstellen-von-strings"
+                },
+                {
+                    "type": "link",
+                    "content": "Strings verketten",
+                    "url": "#strings-verketten"
+                },
+                {
+                    "type": "link",
+                    "content": "Zahlen zu Strings",
+                    "url": "#zahlen-zu-strings"
+                },
+                {
+                    "type": "link",
+                    "content": "Länge von Strings",
+                    "url": "#laenge-von-strings"
+                },
+                {
+                    "type": "link",
+                    "content": "Indexierung",
+                    "url": "#indexierung"
+                },
+                {
+                    "type": "link",
+                    "content": "String-Methoden",
+                    "url": "#string-methoden"
+                }
+            ]
+        },
+        {
+            "type": "break"
+        },
+        {
+            "type": "anchor",
+            "id": "erstellen-von-strings",
+            "content": {
+                "type": "h3",
+                "content": "Erstellen von Strings"
+            }
+        },
+        {
+            "type": "span",
+            "content": "Um einen String in Python zu erstellen, verwendest du Anführungszeichen um den Text herum:"
+        },
+        {
+            "type": "code",
+            "content": "name = \"Max Mustermann\""
+        },
+        {
+            "type": "span",
+            "content": [
+                {
+                    "type": "span",
+                    "content": "Du kannst sowohl einfache ("
+                },
+                {
+                    "type": "inline-code",
+                    "content": "'"
+                },
+                {
+                    "type": "span",
+                    "content": ") als auch doppelte ("
+                },
+                {
+                    "type": "inline-code",
+                    "content": "\""
+                },
+                {
+                    "type": "span",
+                    "content": ") Anführungszeichen verwenden, je nach deinen Vorlieben."
+                }
+            ]
+        },
+        {
+            "type": "break"
+        },
+        {
+            "type": "anchor",
+            "id": "strings-verketten",
+            "content": {
+                "type": "h3",
+                "content": "Strings verketten"
+            }
+        },
+        {
+            "type": "span",
+            "content": [
+                {
+                    "type": "span",
+                    "content": "Strings unterstützen eine Vielzahl von Operationen, die es dir ermöglichen, sie zu verändern und zu formatieren. Du kannst Strings beispielsweise mit dem "
+                },
+                {
+                    "type": "inline-code",
+                    "content": "+"
+                },
+                {
+                    "type": "span",
+                    "content": "-Operator verketten:"
+                }
+            ]
+        },
+        {
+            "type": "break"
+        },
+        {
+            "type": "anchor",
+            "id": "zahlen-zu-strings",
+            "content": {
+                "type": "h3",
+                "content": "Zahlen zu Strings"
+            }
+        },
+        {
+            "type": "span",
+            "content": [
+                {
+                    "type": "span",
+                    "content": "Oft möchte man auch Zahlen als Strings darstellen, um beispielweise deren Menge an Stellen herauszufinden oder um Strings und Zahlen zu einem String zu verketten. Verkettet man einen String und die Zahl ohne weitere Vorkehrungen durch den "
+                },
+                {
+                    "type": "inline-code",
+                    "content": "+"
+                },
+                {
+                    "type": "span",
+                    "content": "-Operator, so gibt der Interpreter bei der Ausführung eine Fehlermeldung aus:"
+                }
+            ]
+        },
+        {
+            "type": "code",
+            "content": "alter = 21\nprint(\"Tim ist \" + alter + \" Jahre alt\") #Fehler: can only concatenate str (not \"int\") to str"
+        },
+        {
+            "type": "span",
+            "content": [
+                {
+                    "type": "span",
+                    "content": "Stattdessen muss man mit Hilfe der "
+                },
+                {
+                    "type": "inline-code",
+                    "content": "str"
+                },
+                {
+                    "type": "span",
+                    "content": "-Funktion die Zahl zuerst zu einem String umwandeln, um dann wie gewohnt mit diesem arbeiten zu können:"
+                }
+            ]
+        },
+        {
+            "type": "code",
+            "content": "alter = 21\nprint(\"Tim ist \" + str(alter) + \" Jahre alt\") #Fehler: can only concatenate str (not \"int\") to str"
+        },
+        {
+            "type": "important-block",
+            "content": [
+                {
+                    "type": "span",
+                    "content": [
+                        {
+                            "type": "span",
+                            "content": "Python ist mit dem "
+                        },
+                        {
+                            "type": "inline-code",
+                            "content": "+"
+                        },
+                        {
+                            "type": "span",
+                            "content": "-Operator ausschließlich in der Lage mehrere Zahlen zu addieren oder mehrere Strings zu verknüpfen. Deshalb muss man bei einer Verknüpfung von Strings und Nicht-Strings IMMER alle Nicht-Strings zuerst mit der "
+                        },
+                        {
+                            "type": "inline-code",
+                            "content": "str()"
+                        },
+                        {
+                            "type": "span",
+                            "content": "-Funktion zu deren Stringrepräsentation umwandeln. Das zu vergessen führt häufig zu Leichtsinnsfehlern!"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "span",
+            "content": "Diese Prozedur ist gleich für andere Datentypen, die wir noch kennenlernen. Durch Anwendung derstr-Funktion bekommst du auch deren String-Repräsentation."
+        },
+        {
+            "type": "break"
+        },
+        {
+            "type": "anchor",
+            "id": "laenge-von-strings",
+            "content": {
+                "type": "h3",
+                "content": "Länge von Strings"
+            }
+        },
+        {
+            "type": "span",
+            "content": "Oftmals ist es von Interesse die Länge eines Strings zu ermitteln, um beispielsweise bei der Indexierung eines Strings der Länge 5 nicht auf das sechste Element zuzugreifen, oder um bei einer Eingabe (bspw. Passworteingabe) die Länge der Eingabe zu validieren."
+        },
+        {
+            "type": "span",
+            "content": [
+                {
+                    "type": "span",
+                    "content": "Die Länge eines Strings erhältst du durch Anwendung der "
+                },
+                {
+                    "type": "inline-code",
+                    "content": "len"
+                },
+                {
+                    "type": "span",
+                    "content": "-Funktion:"
+                }
+            ]
+        },
+        {
+            "type": "example-block",
+            "title": "Ermitteln der Länge eines Namen",
+            "content": [
+                {
+                    "type": "code",
+                    "content": "name = \"Günther\"\nprint(\"Hallo \" + name + \", dein Name ist \" + str(len(name)) + \" Zeichen lang!\")"
+                }
+            ],
+            "output": "Hallo Günther, dein Name ist 7 Zeichen lang!"
+        },
+        {
+            "type": "break"
+        },
+        {
+            "type": "anchor",
+            "id": "indexierung",
+            "content": {
+                "type": "h3",
+                "content": "Indexierung"
+            }
+        },
+        {
+            "type": "span",
+            "content": "Strings sind in ihrer Natur nichts anderes als Listen von Zeichen. Das heißt du kannst alle Operationen und Funktionen, die auf Listen anwendbar sind (über welche du mehr im Kapitel über Listen erfahren wirst) auch auf Strings anwenden."
+        },
+        {
+            "type": "span",
+            "content": [
+                {
+                    "type": "span",
+                    "content": "In diesem Fall ist allerdings besonders die Indexierung, also das Zugreifen auf eine bestimmte Stelle des Strings interessant für uns. "
+                },
+                {
+                    "type": "inline-code",
+                    "content": "string[i]"
+                },
+                {
+                    "type": "span",
+                    "content": " liefert dabei die i-te Stelle des Strings string zurück."
+                }
+            ]
+        },
+        {
+            "type": "code",
+            "content": "name = \"Oleg\"\nprint(name[0]) #Ausgabe: O\nprint(name[2]) #Ausgabe: e"
+        },
+        {
+            "type": "important-block",
+            "content": [
+                {
+                    "type": "span",
+                    "content": [
+                        {
+                            "type": "span",
+                            "content": "Die Indexierung aller Listen und listenartigen Datentypen (inklusive Strings) in Python beginnt bei "
+                        },
+                        {
+                            "type": "inline-code",
+                            "content": "0"
+                        },
+                        {
+                            "type": "span",
+                            "content": "! Das heißt das erste Zeichen des Strings string befindet sich am Index "
+                        },
+                        {
+                            "type": "inline-code",
+                            "content": "0"
+                        },
+                        {
+                            "type": "span",
+                            "content": " und das Letzte am Index "
+                        },
+                        {
+                            "type": "inline-code",
+                            "content": "len(string)-1"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "span",
+            "content": [
+                {
+                    "type": "span",
+                    "content": "Versucht man auf einen Index der größer als "
+                },
+                {
+                    "type": "inline-code",
+                    "content": "len(string)-1"
+                },
+                {
+                    "type": "span",
+                    "content": " ist zuzugreifen erhält man den Fehler "
+                },
+                {
+                    "type": "inline-code",
+                    "content": "IndexError: string index out of range"
+                },
+                {
+                    "type": "span",
+                    "content": "."
+                }
+            ]
+        },
+        {
+            "type": "example-block",
+            "title": "Datenzensur",
+            "content": [
+                {
+                    "type": "code",
+                    "content": "name = \"Max Mustermann\"\nprint(\"Hallo Herr \" + name[0] + \"********\" + name[len(name) - 1])"
+                }
+            ],
+            "output": "Hallo Herr M********n"
+        },
+        {
+            "type": "break"
+        },
+        {
+            "type": "anchor",
+            "id": "string-methoden",
+            "content": {
+                "type": "h3",
+                "content": "String-Methoden"
+            }
+        },
+        {
+            "type": "addition-block",
+            "content": [
+                {
+                    "type": "span",
+                    "content": "Methoden sind eine besondere Art von Funktionen, die wir noch im Kapitel \"Funktionen\" ausführlich kennenlernen. Für dich ist derzeit wichtig zu wissen, dass Methoden nichts anderes als eine Ansammlung an Befehlen sind, die du nutzen kannst, um somit diese Operationen nicht jedes Mal selbst ausführen zu müssen."
+                },
+                {
+                    "type": "span",
+                    "content": [
+                        {
+                            "type": "span",
+                            "content": "Eine Methode rufst du auf, indem du den Wert oder die Variable angibst, auf der du die Methode aufrufen möchtest und dann mit "
+                        },
+                        {
+                            "type": "inline-code",
+                            "content": "."
+                        },
+                        {
+                            "type": "span",
+                            "content": " den Methodennamen angibst! Probiere selbst in deiner IDE mit verschiedenen Methoden herum, von denen du auch noch mehr im Link unten findest."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "span",
+            "content": [
+                {
+                    "type": "span",
+                    "content": "Python stellt von sich aus bereits einige Funktionen bereit, die dir das Arbeiten mit Strings erleichtern. Eine vollstädinge Liste und Dokumentation aller Methoden findest du unter "
+                },
+                {
+                    "type": "link",
+                    "content": "https://docs.python.org/3/library/stdtypes.html#string-methods",
+                    "url": "https://docs.python.org/3/library/stdtypes.html#string-methods"
+                }
+            ]
+        },
+        {
+            "type": "span",
+            "content": "Im Folgenden wird lediglich die Anwendung einer Hand voll wichtiger Methoden gezeigt:"
+        },
+        {
+            "type": "h4",
+            "content": "reverse"
+        },
+        {
+            "type": "span",
+            "content": [
+                {
+                    "type": "span",
+                    "content": "Die "
+                },
+                {
+                    "type": "inline-code",
+                    "content": "reverse()"
+                },
+                {
+                    "type": "span",
+                    "content": "-Funktion dreht den gegebenen String um:"
+                }
+            ]
+        },
+        {
+            "type": "code",
+            "content": "print(\"Hallo\".reverse()) #Ausgabe: ollaH"
+        },
+        {
+            "type": "h4",
+            "content": "upper"
+        },
+        {
+            "type": "span",
+            "content": [
+                {
+                    "type": "span",
+                    "content": "Die "
+                },
+                {
+                    "type": "inline-code",
+                    "content": "upper()"
+                },
+                {
+                    "type": "span",
+                    "content": "-Funktion wandelt alle Zeichen in Großbuchstaben um:"
+                }
+            ]
+        },
+        {
+            "type": "code",
+            "content": "print(\"Hallo\".upper()) #Ausgabe: HALLO"
+        },
+        {
+            "type": "h4",
+            "content": "replace"
+        },
+        {
+            "type": "span",
+            "content": [
+                {
+                    "type": "span",
+                    "content": "Die "
+                },
+                {
+                    "type": "inline-code",
+                    "content": "replace(a, b)"
+                },
+                {
+                    "type": "span",
+                    "content": "-Funktion nimmt zwei Argumente entgegen. Dabei werden alle Vorkommen von a durch b ersetzt:"
+                }
+            ]
+        },
+        {
+            "type": "code",
+            "content": "print(\"Hallo\".replace(\"al\", \"opp\")) #Ausgabe: Hopplo"
+        },
+        {
+            "type": "break"
+        },
+        {
+            "type": "h3",
+            "content": "Zusammenfassung"
+        },
+        {
+            "type": "span",
+            "content": "Strings sind ein wichtiger Bestandteil der Python-Programmierung und werden verwendet, um Textinformationen zu repräsentieren und zu verändern. In diesem Kapitel hast du gelernt, wie man Strings erstellt, Operationen auf Strings durchführt, auf Zeichen in einem String zugreift und Teile eines Strings extrahiert. Wenn du diese Konzepte verstehst, kannst du effektiv mit Textdaten in deinen Python-Programmen umgehen."
+        },
+        {
+            "type": "span",
+            "content": "Im nächsten Kapitel schauen wir uns Listen an und werden mehr über die Familarität von Strings und Listen erfragen."
+        }
+    ],
+    "tasks": [
+        {
+            "description": "Gegeben sind zwei Strings a und b. Gib die Verkettung von a und b aus, wobei a an vorderer Stelle sein soll.",
+            "difficulty": "easy",
+            "quiz": {
+                "type": "coding-quiz",
+                "solution": "print(a+b)"
+            }
+        },
+        {
+            "description": "Das Programm soll die Länge des angegeben Strings ausgeben.",
+            "difficulty": "easy",
+            "quiz": {
+                "type": "fillout-quiz",
+                "template": "print(§§§(\"Supelir\"))",
+                "solutions": [
+                    "len"
+                ]
+            }
+        },
+        {
+            "description": "Gegeben sei ein String name. Das Programm soll in der Konsole folgenden Satz ausgeben: \"Der Name hat x Zeichen\", wobei x die Anzahl der Zeichen von name ist.",
+            "difficulty": "medium",
+            "quiz": {
+                "type": "coding-quiz",
+                "solution": "print(\"Der Name hat \" + str(len(name)) + \" Zeichen\")"
+            }
+        },
+        {
+            "description": "Gegeben sei der String s mit len(s) > 2. Gib das vorletzte Zeichen von s aus.",
+            "difficulty": "medium",
+            "quiz": {
+                "type": "coding-quiz",
+                "solution": "print(s[len(s) - 2])"
+            }
+        },
+        {
+            "description": "Gegeben sei ein String s und ein Buchstabe a . Gib aus, wie oft a in s enthalten ist. ",
+            "difficulty": "hard",
+            "quiz": {
+                "type": "coding-quiz",
+                "solution": "print(len(s)-len(s.replace(a,\"\")))"
+            }
+        }
+    ]
+}
