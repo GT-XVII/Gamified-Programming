@@ -143,3 +143,4 @@ This component is used to highlight something additional, something that's good 
 #### Properties
 
 - content: An array of components. Every component is allowed except Special Blocks.
+
