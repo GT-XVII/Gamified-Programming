@@ -1,0 +1,88 @@
+\chapter{Documentation}
+\hypertarget{md_doc}{}\label{md_doc}\index{Documentation@{Documentation}}
+\label{md_doc_autotoc_md0}%
+\Hypertarget{md_doc_autotoc_md0}%
+\hypertarget{md_doc_autotoc_md1}{}\doxysection{\texorpdfstring{Components}{Components}}\label{md_doc_autotoc_md1}
+There are different components present in the database that have different functionalities and properties. Here is an overview\+:\hypertarget{md_doc_autotoc_md2}{}\doxysubsection{\texorpdfstring{$<$font color="{}\#ff8f1f"{}$>$document$<$/font$>$}{$<$font color="{}\#ff8f1f"{}$>$document$<$/font$>$}}\label{md_doc_autotoc_md2}
+\hypertarget{md_doc_autotoc_md3}{}\doxysubsubsection{\texorpdfstring{Description}{Description}}\label{md_doc_autotoc_md3}
+This component is the root element of each chapter.\hypertarget{md_doc_autotoc_md4}{}\doxysubsubsection{\texorpdfstring{Properties}{Properties}}\label{md_doc_autotoc_md4}
+
+\begin{DoxyItemize}
+\item title\+: A string containing the title of the chapter.
+\item content\+: A list of Text Components
+\item tasks\+: A list of Task Components
+\end{DoxyItemize}\hypertarget{md_doc_autotoc_md5}{}\doxysubsection{\texorpdfstring{$<$font color="{}\#ff8f1f"{}$>$break$<$/font$>$}{$<$font color="{}\#ff8f1f"{}$>$break$<$/font$>$}}\label{md_doc_autotoc_md5}
+\hypertarget{md_doc_autotoc_md6}{}\doxysubsubsection{\texorpdfstring{Description}{Description}}\label{md_doc_autotoc_md6}
+This component symbolises a simple line-\/break.\hypertarget{md_doc_autotoc_md7}{}\doxysubsubsection{\texorpdfstring{Properties}{Properties}}\label{md_doc_autotoc_md7}
+This component has no extra properties\hypertarget{md_doc_autotoc_md8}{}\doxysubsection{\texorpdfstring{$<$font color="{}\#ff8f1f"{}$>$span$<$/font$>$}{$<$font color="{}\#ff8f1f"{}$>$span$<$/font$>$}}\label{md_doc_autotoc_md8}
+\hypertarget{md_doc_autotoc_md9}{}\doxysubsubsection{\texorpdfstring{Description}{Description}}\label{md_doc_autotoc_md9}
+This component symbolises a simple text block.\hypertarget{md_doc_autotoc_md10}{}\doxysubsubsection{\texorpdfstring{Properties}{Properties}}\label{md_doc_autotoc_md10}
+
+\begin{DoxyItemize}
+\item content\+: A string representing the text or and array of {\itshape span} and/or {\itshape inline-\/code} components.
+\end{DoxyItemize}\hypertarget{md_doc_autotoc_md11}{}\doxysubsection{\texorpdfstring{$<$font color="{}\#ff8f1f"{}$>$inline-\/code$<$/font$>$}{$<$font color="{}\#ff8f1f"{}$>$inline-\/code$<$/font$>$}}\label{md_doc_autotoc_md11}
+\hypertarget{md_doc_autotoc_md12}{}\doxysubsubsection{\texorpdfstring{Description}{Description}}\label{md_doc_autotoc_md12}
+This component symbolises a code snippet that should be displayed inline and considerably be highlighted.\hypertarget{md_doc_autotoc_md13}{}\doxysubsubsection{\texorpdfstring{Properties}{Properties}}\label{md_doc_autotoc_md13}
+
+\begin{DoxyItemize}
+\item content\+: A string containing the code to be highlighted.
+\end{DoxyItemize}\hypertarget{md_doc_autotoc_md14}{}\doxysubsection{\texorpdfstring{$<$font color="{}\#ff8f1f"{}$>$link$<$/font$>$}{$<$font color="{}\#ff8f1f"{}$>$link$<$/font$>$}}\label{md_doc_autotoc_md14}
+\hypertarget{md_doc_autotoc_md15}{}\doxysubsubsection{\texorpdfstring{Description}{Description}}\label{md_doc_autotoc_md15}
+This component symbolises a link that redirects to another URL.\hypertarget{md_doc_autotoc_md16}{}\doxysubsubsection{\texorpdfstring{Properties}{Properties}}\label{md_doc_autotoc_md16}
+
+\begin{DoxyItemize}
+\item content\+: A string containing the text to be displayed.
+\item url\+: A string containing the URL to which the link should lead.
+\end{DoxyItemize}\hypertarget{md_doc_autotoc_md17}{}\doxysubsection{\texorpdfstring{$<$font color="{}\#ff8f1f"{}$>$h\mbox{[}n\mbox{]}$<$/font$>$}{$<$font color="{}\#ff8f1f"{}$>$h\mbox{[}n\mbox{]}$<$/font$>$}}\label{md_doc_autotoc_md17}
+\hypertarget{md_doc_autotoc_md18}{}\doxysubsubsection{\texorpdfstring{Description}{Description}}\label{md_doc_autotoc_md18}
+This component represents a header where the number n is its level.\hypertarget{md_doc_autotoc_md19}{}\doxysubsubsection{\texorpdfstring{Properties}{Properties}}\label{md_doc_autotoc_md19}
+
+\begin{DoxyItemize}
+\item content\+: A String containing the header text.
+\end{DoxyItemize}\hypertarget{md_doc_autotoc_md20}{}\doxysubsection{\texorpdfstring{$<$font color="{}\#ff8f1f"{}$>$ul$<$/font$>$}{$<$font color="{}\#ff8f1f"{}$>$ul$<$/font$>$}}\label{md_doc_autotoc_md20}
+\hypertarget{md_doc_autotoc_md21}{}\doxysubsubsection{\texorpdfstring{Description}{Description}}\label{md_doc_autotoc_md21}
+This component represents an unordered list.\hypertarget{md_doc_autotoc_md22}{}\doxysubsubsection{\texorpdfstring{Properties}{Properties}}\label{md_doc_autotoc_md22}
+
+\begin{DoxyItemize}
+\item elements\+: An array of Text Components.
+\end{DoxyItemize}\hypertarget{md_doc_autotoc_md23}{}\doxysubsection{\texorpdfstring{$<$font color="{}\#ff8f1f"{}$>$img$<$/font$>$}{$<$font color="{}\#ff8f1f"{}$>$img$<$/font$>$}}\label{md_doc_autotoc_md23}
+\hypertarget{md_doc_autotoc_md24}{}\doxysubsubsection{\texorpdfstring{Description}{Description}}\label{md_doc_autotoc_md24}
+This component represents an image.\hypertarget{md_doc_autotoc_md25}{}\doxysubsubsection{\texorpdfstring{Properties}{Properties}}\label{md_doc_autotoc_md25}
+
+\begin{DoxyItemize}
+\item src\+: A string containing the URL of the image.
+\end{DoxyItemize}\hypertarget{md_doc_autotoc_md26}{}\doxysubsection{\texorpdfstring{$<$font color="{}\#ff8f1f"{}$>$anchor$<$/font$>$}{$<$font color="{}\#ff8f1f"{}$>$anchor$<$/font$>$}}\label{md_doc_autotoc_md26}
+\hypertarget{md_doc_autotoc_md27}{}\doxysubsubsection{\texorpdfstring{Description}{Description}}\label{md_doc_autotoc_md27}
+This component represents an anchor tag. They are often used to allow better navigation on the site itself.\hypertarget{md_doc_autotoc_md28}{}\doxysubsubsection{\texorpdfstring{Properties}{Properties}}\label{md_doc_autotoc_md28}
+
+\begin{DoxyItemize}
+\item id\+: The anchor\textquotesingle{}s id.
+\item content\+: A {\itshape span} or {\itshape h\mbox{[}n\mbox{]}} component.
+\end{DoxyItemize}\hypertarget{md_doc_autotoc_md29}{}\doxysubsection{\texorpdfstring{$<$font color="{}\#ff8f1f"{}$>$code$<$/font$>$}{$<$font color="{}\#ff8f1f"{}$>$code$<$/font$>$}}\label{md_doc_autotoc_md29}
+\hypertarget{md_doc_autotoc_md30}{}\doxysubsubsection{\texorpdfstring{Description}{Description}}\label{md_doc_autotoc_md30}
+This component represents a code block. The difference to the {\itshape inline-\/code} component is that this one can contain multiple lines and should not be displayed inline!\hypertarget{md_doc_autotoc_md31}{}\doxysubsubsection{\texorpdfstring{Properties}{Properties}}\label{md_doc_autotoc_md31}
+
+\begin{DoxyItemize}
+\item content\+: A string containing the code.
+\end{DoxyItemize}\hypertarget{md_doc_autotoc_md32}{}\doxysection{\texorpdfstring{Special Blocks}{Special Blocks}}\label{md_doc_autotoc_md32}
+\hypertarget{md_doc_autotoc_md33}{}\doxysubsection{\texorpdfstring{$<$font color="{}\#ff8f1f"{}$>$example-\/block$<$/font$>$}{$<$font color="{}\#ff8f1f"{}$>$example-\/block$<$/font$>$}}\label{md_doc_autotoc_md33}
+\hypertarget{md_doc_autotoc_md34}{}\doxysubsubsection{\texorpdfstring{Description}{Description}}\label{md_doc_autotoc_md34}
+This component is used to make examples.\hypertarget{md_doc_autotoc_md35}{}\doxysubsubsection{\texorpdfstring{Properties}{Properties}}\label{md_doc_autotoc_md35}
+
+\begin{DoxyItemize}
+\item title\+: A string containing the example\textquotesingle{}s title as in what the example is made about.
+\item content\+: An array of components. Every component is allowed except Special Blocks.
+\item output\+: A string containing the output the example generates.
+\end{DoxyItemize}\hypertarget{md_doc_autotoc_md36}{}\doxysubsection{\texorpdfstring{$<$font color="{}\#ff8f1f"{}$>$import-\/block$<$/font$>$}{$<$font color="{}\#ff8f1f"{}$>$import-\/block$<$/font$>$}}\label{md_doc_autotoc_md36}
+\hypertarget{md_doc_autotoc_md37}{}\doxysubsubsection{\texorpdfstring{Description}{Description}}\label{md_doc_autotoc_md37}
+This component is used to highlight something important.\hypertarget{md_doc_autotoc_md38}{}\doxysubsubsection{\texorpdfstring{Properties}{Properties}}\label{md_doc_autotoc_md38}
+
+\begin{DoxyItemize}
+\item content\+: An array of components. Every component is allowed except Special Blocks.
+\end{DoxyItemize}\hypertarget{md_doc_autotoc_md39}{}\doxysubsection{\texorpdfstring{$<$font color="{}\#ff8f1f"{}$>$addition-\/block$<$/font$>$}{$<$font color="{}\#ff8f1f"{}$>$addition-\/block$<$/font$>$}}\label{md_doc_autotoc_md39}
+\hypertarget{md_doc_autotoc_md40}{}\doxysubsubsection{\texorpdfstring{Description}{Description}}\label{md_doc_autotoc_md40}
+This component is used to highlight something additional, something that\textquotesingle{}s good to know but no show breaker.\hypertarget{md_doc_autotoc_md41}{}\doxysubsubsection{\texorpdfstring{Properties}{Properties}}\label{md_doc_autotoc_md41}
+
+\begin{DoxyItemize}
+\item content\+: An array of components. Every component is allowed except Special Blocks. 
+\end{DoxyItemize}
