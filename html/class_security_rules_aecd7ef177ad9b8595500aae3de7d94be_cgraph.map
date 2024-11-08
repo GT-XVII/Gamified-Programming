@@ -1,0 +1,14 @@
+<map id="SecurityRules::releaseStorageRulesetFromSource" name="SecurityRules::releaseStorageRulesetFromSource">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,84,204,125"/>
+<area shape="rect" id="Node000002" href="$class_security_rules.html#afd629b62eefe2769da2dc054d2063514" title=" " alt="" coords="255,5,447,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="150,82,251,41,276,33,278,38,253,46,152,87"/>
+<area shape="rect" id="Node000003" href="$class_security_rules.html#a16e2a50b9f3cf60adf2e0f725e369c2e" title=" " alt="" coords="260,55,442,96"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="204,90,244,85,245,91,205,96"/>
+<area shape="rect" id="Node000004" href="$class_security_rules.html#ab424b522cbca92363cce3491e9af56c1" title=" " alt="" coords="498,124,703,150"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="204,109,483,127,482,132,204,114"/>
+<area shape="rect" id="Node000005" href="$class_security_rules.html#a48b3db7524106369d1f689c6e117de62" title=" " alt="" coords="252,170,450,210"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="166,123,276,162,275,167,165,128"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="449,167,521,151,523,156,450,172"/>
+<area shape="rect" id="Node000006" href="$class_security_rules.html#a72b59d7d47ecd7707262e75bd866f75c" title=" " alt="" coords="502,177,700,203"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="451,188,486,188,486,193,451,193"/>
+</map>

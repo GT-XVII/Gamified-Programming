@@ -1,0 +1,121 @@
+\doxysection{backend/node\+\_\+modules/node-\/forge/lib/pem.js File Reference}
+\hypertarget{pem_8js}{}\label{pem_8js}\index{backend/node\_modules/node-\/forge/lib/pem.js@{backend/node\_modules/node-\/forge/lib/pem.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{pem_8js_ab9705562e0f46a52c8b2bc87f3d50e51}{fold\+Header}} (header)
+\item 
+function \mbox{\hyperlink{pem_8js_a0f23d749bb69f882ea3689a10b38ce46}{ltrim}} (\mbox{\hyperlink{json-bigint_2lib_2stringify_8js_abd4075a8f329b0ccafd81359c952a9df}{str}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{pem_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./forge\textquotesingle{})
+\item 
+var \mbox{\hyperlink{pem_8js_a524de6b057fd414473c56000d92a5601}{pem}} = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{module.\+exports}} = forge.\+pem = forge.\+pem \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} \{\}
+\item 
+\mbox{\hyperlink{pem_8js_a524de6b057fd414473c56000d92a5601}{pem}} \mbox{\hyperlink{pem_8js_ae19b50788d5e053d7052c711fc809d2d}{encode}}
+\item 
+\mbox{\hyperlink{pem_8js_a524de6b057fd414473c56000d92a5601}{pem}} \mbox{\hyperlink{pem_8js_ae7de324d2aacaa20f4f5ef045d4b714f}{decode}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{pem_8js_ab9705562e0f46a52c8b2bc87f3d50e51}\index{pem.js@{pem.js}!foldHeader@{foldHeader}}
+\index{foldHeader@{foldHeader}!pem.js@{pem.js}}
+\doxysubsubsection{\texorpdfstring{foldHeader()}{foldHeader()}}
+{\footnotesize\ttfamily \label{pem_8js_ab9705562e0f46a52c8b2bc87f3d50e51} 
+function fold\+Header (\begin{DoxyParamCaption}\item[{}]{header}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}, \mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a7fdcf4c82c9946bf2b0b80829a7ab230}{length}}, \mbox{\hyperlink{layer_8js_aee433120cbb9ab29eb32064146e11ef5}{match}}, \mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}, \mbox{\hyperlink{uuid_8min_8js_aaa5fef39529cdffdfa257202bb4fda9f}{r}}, \mbox{\hyperlink{ordered-map_8min_8js_ace93fde0b0c98b9d4b9c0bf2627a1374}{S}}, and \mbox{\hyperlink{__base_sample_8js_a133e745a7002d95c39d29cc180b56327}{values}}.
+
+\Hypertarget{pem_8js_a0f23d749bb69f882ea3689a10b38ce46}\index{pem.js@{pem.js}!ltrim@{ltrim}}
+\index{ltrim@{ltrim}!pem.js@{pem.js}}
+\doxysubsubsection{\texorpdfstring{ltrim()}{ltrim()}}
+{\footnotesize\ttfamily \label{pem_8js_a0f23d749bb69f882ea3689a10b38ce46} 
+function ltrim (\begin{DoxyParamCaption}\item[{}]{str}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{ordered-map_8min_8js_ad9a7d92cb87932d25187fdec3ba1b621}{s}}, and \mbox{\hyperlink{json-bigint_2lib_2stringify_8js_abd4075a8f329b0ccafd81359c952a9df}{str()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{pem_8js_a0f23d749bb69f882ea3689a10b38ce46_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{pem_8js_ae7de324d2aacaa20f4f5ef045d4b714f}\index{pem.js@{pem.js}!decode@{decode}}
+\index{decode@{decode}!pem.js@{pem.js}}
+\doxysubsubsection{\texorpdfstring{decode}{decode}}
+{\footnotesize\ttfamily \label{pem_8js_ae7de324d2aacaa20f4f5ef045d4b714f} 
+\mbox{\hyperlink{pem_8js_a524de6b057fd414473c56000d92a5601}{pem}} decode}
+
+Decodes (deserializes) all PEM messages found in the given string.
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & the PEM-\/formatted string to decode.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the PEM message objects in an array. 
+\end{DoxyReturn}
+\Hypertarget{pem_8js_ae19b50788d5e053d7052c711fc809d2d}\index{pem.js@{pem.js}!encode@{encode}}
+\index{encode@{encode}!pem.js@{pem.js}}
+\doxysubsubsection{\texorpdfstring{encode}{encode}}
+{\footnotesize\ttfamily \label{pem_8js_ae19b50788d5e053d7052c711fc809d2d} 
+\mbox{\hyperlink{pem_8js_a524de6b057fd414473c56000d92a5601}{pem}} encode}
+
+Encodes (serializes) the given PEM object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & the PEM message object to encode. \\
+\hline
+{\em options} & the options to use\+: maxline the maximum characters per line for the body, (default\+: 64).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the PEM-\/formatted string. 
+\end{DoxyReturn}
+\Hypertarget{pem_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}\index{pem.js@{pem.js}!forge@{forge}}
+\index{forge@{forge}!pem.js@{pem.js}}
+\doxysubsubsection{\texorpdfstring{forge}{forge}}
+{\footnotesize\ttfamily \label{pem_8js_ab4dbef01e35b8e6d06087c0542ba9e2c} 
+var forge = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./forge\textquotesingle{})}
+
+Javascript implementation of basic PEM (Privacy Enhanced Mail) algorithms.
+
+See\+: RFC 1421.
+
+\begin{DoxyAuthor}{Author}
+Dave Longley
+\end{DoxyAuthor}
+Copyright (c) 2013-\/2014 Digital Bazaar, Inc.
+
+\doxylink{class_a}{A} Forge PEM object has the following fields\+:
+
+type\+: identifies the type of message (eg\+: "{}\+RSA PRIVATE KEY"{}).
+
+proc\+Type\+: identifies the type of processing performed on the message, it has two subfields\+: version and type, eg\+: 4,ENCRYPTED.
+
+content\+Domain\+: identifies the type of content in the message, typically only uses the value\+: "{}\+RFC822"{}.
+
+dek\+Info\+: identifies the message encryption algorithm and mode and includes any parameters for the algorithm, it has two subfields\+: algorithm and parameters, eg\+: DES-\/\+CBC,F8143\+EDE5960\+C597.
+
+headers\+: contains all other PEM encapsulated headers -- where order is significant (for pairing data like recipient ID + key info).
+
+body\+: the binary-\/encoded body. \Hypertarget{pem_8js_a524de6b057fd414473c56000d92a5601}\index{pem.js@{pem.js}!pem@{pem}}
+\index{pem@{pem}!pem.js@{pem.js}}
+\doxysubsubsection{\texorpdfstring{pem}{pem}}
+{\footnotesize\ttfamily \label{pem_8js_a524de6b057fd414473c56000d92a5601} 
+var pem = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{module.\+exports}} = forge.\+pem = forge.\+pem \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} \{\}}
+

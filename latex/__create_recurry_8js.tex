@@ -1,0 +1,134 @@
+\doxysection{backend/node\+\_\+modules/lodash/\+\_\+create\+Recurry.js File Reference}
+\hypertarget{__create_recurry_8js}{}\label{__create_recurry_8js}\index{backend/node\_modules/lodash/\_createRecurry.js@{backend/node\_modules/lodash/\_createRecurry.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{__create_recurry_8js_ac4bed960bed3284da29f7671f17f14e9}{create\+Recurry}} (\mbox{\hyperlink{fp_2add_8js_a1ba8e806628b2f512d93819d64d86db9}{func}}, bitmask, wrap\+Func, \mbox{\hyperlink{bind_8js_a0b8a1bbd1466ff8c0c8b0d002592a14c}{placeholder}}, this\+Arg, partials, holders, arg\+Pos, \mbox{\hyperlink{unary_8js_a3c39f59b8b5a7b2453788db43316a502}{ary}}, arity)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{__create_recurry_8js_a47d6ef6088f095652f8f675d8d096a89}{is\+Laziable}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\+\_\+is\+Laziable\textquotesingle{})
+\item 
+var \mbox{\hyperlink{__create_recurry_8js_a700127a21edd23b60a6a65c7d8823795}{set\+Data}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\+\_\+set\+Data\textquotesingle{})
+\item 
+var \mbox{\hyperlink{__create_recurry_8js_a652bcb5c1f5a356a5fd09cf53d2e4b38}{set\+Wrap\+To\+String}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\+\_\+set\+Wrap\+To\+String\textquotesingle{})
+\item 
+var \mbox{\hyperlink{__create_recurry_8js_ab98eb5e7eed254945468646b5f58dd7b}{WRAP\+\_\+\+BIND\+\_\+\+FLAG}} = 1
+\item 
+var \mbox{\hyperlink{__create_recurry_8js_a259833d85de00fb18f81f28827ad5805}{WRAP\+\_\+\+BIND\+\_\+\+KEY\+\_\+\+FLAG}} = 2
+\item 
+var \mbox{\hyperlink{__create_recurry_8js_aa70bca8f2f48efd63a063fb786e041f5}{WRAP\+\_\+\+CURRY\+\_\+\+BOUND\+\_\+\+FLAG}} = 4
+\item 
+var \mbox{\hyperlink{__create_recurry_8js_a350fa23c4209353fbb29a8377a4c864b}{WRAP\+\_\+\+CURRY\+\_\+\+FLAG}} = 8
+\item 
+var \mbox{\hyperlink{__create_recurry_8js_a6c86b60203640e1b4c8a678ce6ab6d5c}{WRAP\+\_\+\+PARTIAL\+\_\+\+FLAG}} = 32
+\item 
+var \mbox{\hyperlink{__create_recurry_8js_aee953a3ff9c04ce2b1ebba4060551599}{WRAP\+\_\+\+PARTIAL\+\_\+\+RIGHT\+\_\+\+FLAG}} = 64
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{__create_recurry_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} = \mbox{\hyperlink{__create_curry_8js_a8cc4300c6906f7ea099b0a583cf3e1c6}{create\+Recurry}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{__create_recurry_8js_ac4bed960bed3284da29f7671f17f14e9}\index{\_createRecurry.js@{\_createRecurry.js}!createRecurry@{createRecurry}}
+\index{createRecurry@{createRecurry}!\_createRecurry.js@{\_createRecurry.js}}
+\doxysubsubsection{\texorpdfstring{createRecurry()}{createRecurry()}}
+{\footnotesize\ttfamily \label{__create_recurry_8js_ac4bed960bed3284da29f7671f17f14e9} 
+function create\+Recurry (\begin{DoxyParamCaption}\item[{}]{func}{, }\item[{}]{bitmask}{, }\item[{}]{wrap\+Func}{, }\item[{}]{placeholder}{, }\item[{}]{this\+Arg}{, }\item[{}]{partials}{, }\item[{}]{holders}{, }\item[{}]{arg\+Pos}{, }\item[{}]{ary}{, }\item[{}]{arity}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Creates a function that wraps {\ttfamily func} to continue currying.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Function\}} & func The function to wrap. \\
+\hline
+{\em \{number\}} & bitmask The bitmask flags. See {\ttfamily create\+Wrap} for more details. \\
+\hline
+{\em \{\+Function\}} & wrap\+Func The function to create the {\ttfamily func} wrapper. \\
+\hline
+{\em \{\texorpdfstring{$\ast$}{*}\}} & placeholder The placeholder value. \\
+\hline
+{\em \{\texorpdfstring{$\ast$}{*}\}} & \mbox{[}this\+Arg\mbox{]} The {\ttfamily this} binding of {\ttfamily func}. \\
+\hline
+{\em \{\+Array\}} & \mbox{[}partials\mbox{]} The arguments to prepend to those provided to the new function. \\
+\hline
+{\em \{\+Array\}} & \mbox{[}holders\mbox{]} The {\ttfamily partials} placeholder indexes. \\
+\hline
+{\em \{\+Array\}} & \mbox{[}arg\+Pos\mbox{]} The argument positions of the new function. \\
+\hline
+{\em \{number\}} & \mbox{[}ary\mbox{]} The arity cap of {\ttfamily func}. \\
+\hline
+{\em \{number\}} & \mbox{[}arity\mbox{]} The arity of {\ttfamily func}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Function\} Returns the new wrapped function. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{unary_8js_a3c39f59b8b5a7b2453788db43316a502}{ary}}, \mbox{\hyperlink{fp_2add_8js_a1ba8e806628b2f512d93819d64d86db9}{func}}, \mbox{\hyperlink{__create_recurry_8js_a47d6ef6088f095652f8f675d8d096a89}{is\+Laziable}}, \mbox{\hyperlink{bind_8js_a0b8a1bbd1466ff8c0c8b0d002592a14c}{placeholder}}, \mbox{\hyperlink{lodash_2core_8js_a348c112a244660a2f280cda892658c24}{result}}, \mbox{\hyperlink{__create_recurry_8js_a700127a21edd23b60a6a65c7d8823795}{set\+Data}}, \mbox{\hyperlink{__create_recurry_8js_a652bcb5c1f5a356a5fd09cf53d2e4b38}{set\+Wrap\+To\+String}}, \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}, \mbox{\hyperlink{__create_recurry_8js_ab98eb5e7eed254945468646b5f58dd7b}{WRAP\+\_\+\+BIND\+\_\+\+FLAG}}, \mbox{\hyperlink{__create_recurry_8js_a259833d85de00fb18f81f28827ad5805}{WRAP\+\_\+\+BIND\+\_\+\+KEY\+\_\+\+FLAG}}, \mbox{\hyperlink{__create_recurry_8js_aa70bca8f2f48efd63a063fb786e041f5}{WRAP\+\_\+\+CURRY\+\_\+\+BOUND\+\_\+\+FLAG}}, \mbox{\hyperlink{__create_recurry_8js_a350fa23c4209353fbb29a8377a4c864b}{WRAP\+\_\+\+CURRY\+\_\+\+FLAG}}, \mbox{\hyperlink{__create_recurry_8js_a6c86b60203640e1b4c8a678ce6ab6d5c}{WRAP\+\_\+\+PARTIAL\+\_\+\+FLAG}}, and \mbox{\hyperlink{__create_recurry_8js_aee953a3ff9c04ce2b1ebba4060551599}{WRAP\+\_\+\+PARTIAL\+\_\+\+RIGHT\+\_\+\+FLAG}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{__create_recurry_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\index{\_createRecurry.js@{\_createRecurry.js}!exports@{exports}}
+\index{exports@{exports}!\_createRecurry.js@{\_createRecurry.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \label{__create_recurry_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports = \mbox{\hyperlink{__create_curry_8js_a8cc4300c6906f7ea099b0a583cf3e1c6}{create\+Recurry}}}
+
+\Hypertarget{__create_recurry_8js_a47d6ef6088f095652f8f675d8d096a89}\index{\_createRecurry.js@{\_createRecurry.js}!isLaziable@{isLaziable}}
+\index{isLaziable@{isLaziable}!\_createRecurry.js@{\_createRecurry.js}}
+\doxysubsubsection{\texorpdfstring{isLaziable}{isLaziable}}
+{\footnotesize\ttfamily \label{__create_recurry_8js_a47d6ef6088f095652f8f675d8d096a89} 
+var is\+Laziable = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\+\_\+is\+Laziable\textquotesingle{})}
+
+\Hypertarget{__create_recurry_8js_a700127a21edd23b60a6a65c7d8823795}\index{\_createRecurry.js@{\_createRecurry.js}!setData@{setData}}
+\index{setData@{setData}!\_createRecurry.js@{\_createRecurry.js}}
+\doxysubsubsection{\texorpdfstring{setData}{setData}}
+{\footnotesize\ttfamily \label{__create_recurry_8js_a700127a21edd23b60a6a65c7d8823795} 
+var set\+Data = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\+\_\+set\+Data\textquotesingle{})}
+
+\Hypertarget{__create_recurry_8js_a652bcb5c1f5a356a5fd09cf53d2e4b38}\index{\_createRecurry.js@{\_createRecurry.js}!setWrapToString@{setWrapToString}}
+\index{setWrapToString@{setWrapToString}!\_createRecurry.js@{\_createRecurry.js}}
+\doxysubsubsection{\texorpdfstring{setWrapToString}{setWrapToString}}
+{\footnotesize\ttfamily \label{__create_recurry_8js_a652bcb5c1f5a356a5fd09cf53d2e4b38} 
+var set\+Wrap\+To\+String = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\+\_\+set\+Wrap\+To\+String\textquotesingle{})}
+
+\Hypertarget{__create_recurry_8js_ab98eb5e7eed254945468646b5f58dd7b}\index{\_createRecurry.js@{\_createRecurry.js}!WRAP\_BIND\_FLAG@{WRAP\_BIND\_FLAG}}
+\index{WRAP\_BIND\_FLAG@{WRAP\_BIND\_FLAG}!\_createRecurry.js@{\_createRecurry.js}}
+\doxysubsubsection{\texorpdfstring{WRAP\_BIND\_FLAG}{WRAP\_BIND\_FLAG}}
+{\footnotesize\ttfamily \label{__create_recurry_8js_ab98eb5e7eed254945468646b5f58dd7b} 
+var WRAP\+\_\+\+BIND\+\_\+\+FLAG = 1}
+
+Used to compose bitmasks for function metadata. \Hypertarget{__create_recurry_8js_a259833d85de00fb18f81f28827ad5805}\index{\_createRecurry.js@{\_createRecurry.js}!WRAP\_BIND\_KEY\_FLAG@{WRAP\_BIND\_KEY\_FLAG}}
+\index{WRAP\_BIND\_KEY\_FLAG@{WRAP\_BIND\_KEY\_FLAG}!\_createRecurry.js@{\_createRecurry.js}}
+\doxysubsubsection{\texorpdfstring{WRAP\_BIND\_KEY\_FLAG}{WRAP\_BIND\_KEY\_FLAG}}
+{\footnotesize\ttfamily \label{__create_recurry_8js_a259833d85de00fb18f81f28827ad5805} 
+var WRAP\+\_\+\+BIND\+\_\+\+KEY\+\_\+\+FLAG = 2}
+
+\Hypertarget{__create_recurry_8js_aa70bca8f2f48efd63a063fb786e041f5}\index{\_createRecurry.js@{\_createRecurry.js}!WRAP\_CURRY\_BOUND\_FLAG@{WRAP\_CURRY\_BOUND\_FLAG}}
+\index{WRAP\_CURRY\_BOUND\_FLAG@{WRAP\_CURRY\_BOUND\_FLAG}!\_createRecurry.js@{\_createRecurry.js}}
+\doxysubsubsection{\texorpdfstring{WRAP\_CURRY\_BOUND\_FLAG}{WRAP\_CURRY\_BOUND\_FLAG}}
+{\footnotesize\ttfamily \label{__create_recurry_8js_aa70bca8f2f48efd63a063fb786e041f5} 
+var WRAP\+\_\+\+CURRY\+\_\+\+BOUND\+\_\+\+FLAG = 4}
+
+\Hypertarget{__create_recurry_8js_a350fa23c4209353fbb29a8377a4c864b}\index{\_createRecurry.js@{\_createRecurry.js}!WRAP\_CURRY\_FLAG@{WRAP\_CURRY\_FLAG}}
+\index{WRAP\_CURRY\_FLAG@{WRAP\_CURRY\_FLAG}!\_createRecurry.js@{\_createRecurry.js}}
+\doxysubsubsection{\texorpdfstring{WRAP\_CURRY\_FLAG}{WRAP\_CURRY\_FLAG}}
+{\footnotesize\ttfamily \label{__create_recurry_8js_a350fa23c4209353fbb29a8377a4c864b} 
+var WRAP\+\_\+\+CURRY\+\_\+\+FLAG = 8}
+
+\Hypertarget{__create_recurry_8js_a6c86b60203640e1b4c8a678ce6ab6d5c}\index{\_createRecurry.js@{\_createRecurry.js}!WRAP\_PARTIAL\_FLAG@{WRAP\_PARTIAL\_FLAG}}
+\index{WRAP\_PARTIAL\_FLAG@{WRAP\_PARTIAL\_FLAG}!\_createRecurry.js@{\_createRecurry.js}}
+\doxysubsubsection{\texorpdfstring{WRAP\_PARTIAL\_FLAG}{WRAP\_PARTIAL\_FLAG}}
+{\footnotesize\ttfamily \label{__create_recurry_8js_a6c86b60203640e1b4c8a678ce6ab6d5c} 
+var WRAP\+\_\+\+PARTIAL\+\_\+\+FLAG = 32}
+
+\Hypertarget{__create_recurry_8js_aee953a3ff9c04ce2b1ebba4060551599}\index{\_createRecurry.js@{\_createRecurry.js}!WRAP\_PARTIAL\_RIGHT\_FLAG@{WRAP\_PARTIAL\_RIGHT\_FLAG}}
+\index{WRAP\_PARTIAL\_RIGHT\_FLAG@{WRAP\_PARTIAL\_RIGHT\_FLAG}!\_createRecurry.js@{\_createRecurry.js}}
+\doxysubsubsection{\texorpdfstring{WRAP\_PARTIAL\_RIGHT\_FLAG}{WRAP\_PARTIAL\_RIGHT\_FLAG}}
+{\footnotesize\ttfamily \label{__create_recurry_8js_aee953a3ff9c04ce2b1ebba4060551599} 
+var WRAP\+\_\+\+PARTIAL\+\_\+\+RIGHT\+\_\+\+FLAG = 64}
+

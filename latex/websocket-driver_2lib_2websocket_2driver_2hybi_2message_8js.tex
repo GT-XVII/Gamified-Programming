@@ -1,0 +1,80 @@
+\doxysection{backend/node\+\_\+modules/websocket-\/driver/lib/websocket/driver/hybi/message.js File Reference}
+\hypertarget{websocket-driver_2lib_2websocket_2driver_2hybi_2message_8js}{}\label{websocket-driver_2lib_2websocket_2driver_2hybi_2message_8js}\index{backend/node\_modules/websocket-\/driver/lib/websocket/driver/hybi/message.js@{backend/node\_modules/websocket-\/driver/lib/websocket/driver/hybi/message.js}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{websocket-driver_2lib_2websocket_2driver_2hybi_2message_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+var \mbox{\hyperlink{websocket-driver_2lib_2websocket_2driver_2hybi_2message_8js_a6e9de2d16b02dc274208bfcc1914d7f4}{Buffer}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}safe-\/\mbox{\hyperlink{cjs_2internal_2operators_2buffer_8js_a838d54b935df11eff7928ba8da636891}{buffer}}\textquotesingle{}).Buffer
+\item 
+var \mbox{\hyperlink{websocket-driver_2lib_2websocket_2driver_2hybi_2message_8js_a2b999b964c05992f7c4361df3fcb3017}{Message}}
+\item 
+var \mbox{\hyperlink{websocket-driver_2lib_2websocket_2driver_2hybi_2message_8js_a243c7aa6c47d450837986091ed54a347}{instance}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{websocket-driver_2lib_2websocket_2driver_2hybi_2message_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2b999b964c05992f7c4361df3fcb3017}{Message}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{websocket-driver_2lib_2websocket_2driver_2hybi_2message_8js_a6e9de2d16b02dc274208bfcc1914d7f4}\index{message.js@{message.js}!Buffer@{Buffer}}
+\index{Buffer@{Buffer}!message.js@{message.js}}
+\doxysubsubsection{\texorpdfstring{Buffer}{Buffer}}
+{\footnotesize\ttfamily \label{websocket-driver_2lib_2websocket_2driver_2hybi_2message_8js_a6e9de2d16b02dc274208bfcc1914d7f4} 
+var Buffer = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}safe-\/\mbox{\hyperlink{cjs_2internal_2operators_2buffer_8js_a838d54b935df11eff7928ba8da636891}{buffer}}\textquotesingle{}).Buffer}
+
+\Hypertarget{websocket-driver_2lib_2websocket_2driver_2hybi_2message_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\index{message.js@{message.js}!exports@{exports}}
+\index{exports@{exports}!message.js@{message.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \label{websocket-driver_2lib_2websocket_2driver_2hybi_2message_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2b999b964c05992f7c4361df3fcb3017}{Message}}}
+
+\Hypertarget{websocket-driver_2lib_2websocket_2driver_2hybi_2message_8js_a243c7aa6c47d450837986091ed54a347}\index{message.js@{message.js}!instance@{instance}}
+\index{instance@{instance}!message.js@{message.js}}
+\doxysubsubsection{\texorpdfstring{instance}{instance}}
+{\footnotesize\ttfamily \label{websocket-driver_2lib_2websocket_2driver_2hybi_2message_8js_a243c7aa6c47d450837986091ed54a347} 
+var instance}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a99dd3b4c246dbde846b5228e734d9341}{read}}:\ \textcolor{keyword}{function}()\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}\ =\ this.\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}\ ||\ \mbox{\hyperlink{interface_buffer}{Buffer}}.concat(this.\_chunks,\ this.\mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a7fdcf4c82c9946bf2b0b80829a7ab230}{length}});}
+\DoxyCodeLine{\ \ \},}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ pushFrame:\ \textcolor{keyword}{function}(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a94e011a39c19820bf962b007fc5ac00b}{frame}})\ \{}
+\DoxyCodeLine{\ \ \ \ this.rsv1\ =\ this.rsv1\ ||\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a94e011a39c19820bf962b007fc5ac00b}{frame}}.rsv1;}
+\DoxyCodeLine{\ \ \ \ this.\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a641c353ce90e009775e2a2819ae3319d}{rsv2}}\ =\ this.\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a641c353ce90e009775e2a2819ae3319d}{rsv2}}\ ||\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a94e011a39c19820bf962b007fc5ac00b}{frame}}.rsv2;}
+\DoxyCodeLine{\ \ \ \ this.\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7890ac8c11cea2fc902643933add79f0}{rsv3}}\ =\ this.\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7890ac8c11cea2fc902643933add79f0}{rsv3}}\ ||\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a94e011a39c19820bf962b007fc5ac00b}{frame}}.rsv3;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (this.opcode\ ===\ \textcolor{keyword}{null})\ this.opcode\ =\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a94e011a39c19820bf962b007fc5ac00b}{frame}}.opcode;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ this.\_chunks.push(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a94e011a39c19820bf962b007fc5ac00b}{frame}}.payload);}
+\DoxyCodeLine{\ \ \ \ this.\mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a7fdcf4c82c9946bf2b0b80829a7ab230}{length}}\ +=\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a94e011a39c19820bf962b007fc5ac00b}{frame}}.length;}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{websocket-driver_2lib_2websocket_2driver_2hybi_2message_8js_a2b999b964c05992f7c4361df3fcb3017}\index{message.js@{message.js}!Message@{Message}}
+\index{Message@{Message}!message.js@{message.js}}
+\doxysubsubsection{\texorpdfstring{Message}{Message}}
+{\footnotesize\ttfamily \label{websocket-driver_2lib_2websocket_2driver_2hybi_2message_8js_a2b999b964c05992f7c4361df3fcb3017} 
+var Message}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}()\ \{}
+\DoxyCodeLine{\ \ this.rsv1\ \ \ \ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\ \ this.\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a641c353ce90e009775e2a2819ae3319d}{rsv2}}\ \ \ \ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\ \ this.\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7890ac8c11cea2fc902643933add79f0}{rsv3}}\ \ \ \ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\ \ this.opcode\ \ =\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\ \ this.\mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a7fdcf4c82c9946bf2b0b80829a7ab230}{length}}\ \ =\ 0;}
+\DoxyCodeLine{\ \ this.\_chunks\ =\ [];}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{websocket-driver_2lib_2websocket_2driver_2hybi_2message_8js_ae2475e10618961c050dcba04e8c42331}\index{message.js@{message.js}!strict@{strict}}
+\index{strict@{strict}!message.js@{message.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{websocket-driver_2lib_2websocket_2driver_2hybi_2message_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+

@@ -1,0 +1,27 @@
+\doxysection{/\+Users/nicoletiokhin/\+Desktop/\+Software Semester 3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/lodash/key\+By.\+js}
+\hypertarget{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_2b575dc22d2aced7a891c9251770131c}{}\label{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_2b575dc22d2aced7a891c9251770131c}Creates an object composed of keys generated from the results of running each element of {\ttfamily collection} thru {\ttfamily iteratee}. The corresponding value of each key is the last element responsible for generating the key. The iteratee is invoked with one argument\+: (value).
+
+@member\+Of \+\_\+ \begin{DoxySince}{Since}
+4.\+0.\+0
+\end{DoxySince}
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Array\texorpdfstring{$\vert$}{|}\+Object\}} & collection The collection to iterate over. \\
+\hline
+{\em \{\+Function\}} & \mbox{[}iteratee=\+\_\+.\+identity\mbox{]} The iteratee to transform keys. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Object\} Returns the composed aggregate object.
+\end{DoxyReturn}
+var array = \mbox{[} \{ \textquotesingle{}dir\textquotesingle{}\+: \textquotesingle{}left\textquotesingle{}, \textquotesingle{}code\textquotesingle{}\+: 97 \}, \{ \textquotesingle{}dir\textquotesingle{}\+: \textquotesingle{}right\textquotesingle{}, \textquotesingle{}code\textquotesingle{}\+: 100 \} \mbox{]};
+
+\+\_\+.\+key\+By(array, function(o) \{ return String.\+from\+Char\+Code(o.\+code); \}); // =\texorpdfstring{$>$}{>} \{ \textquotesingle{}a\textquotesingle{}\+: \{ \textquotesingle{}dir\textquotesingle{}\+: \textquotesingle{}left\textquotesingle{}, \textquotesingle{}code\textquotesingle{}\+: 97 \}, \textquotesingle{}d\textquotesingle{}\+: \{ \textquotesingle{}dir\textquotesingle{}\+: \textquotesingle{}right\textquotesingle{}, \textquotesingle{}code\textquotesingle{}\+: 100 \} \}
+
+\+\_\+.\+key\+By(array, \textquotesingle{}dir\textquotesingle{}); // =\texorpdfstring{$>$}{>} \{ \textquotesingle{}left\textquotesingle{}\+: \{ \textquotesingle{}dir\textquotesingle{}\+: \textquotesingle{}left\textquotesingle{}, \textquotesingle{}code\textquotesingle{}\+: 97 \}, \textquotesingle{}right\textquotesingle{}\+: \{ \textquotesingle{}dir\textquotesingle{}\+: \textquotesingle{}right\textquotesingle{}, \textquotesingle{}code\textquotesingle{}\+: 100 \} \}
+
+
+\begin{DoxyCodeInclude}{0}
+
+\end{DoxyCodeInclude}
+ Semester \doxylink{key_by_8js}{3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/lodash/key\+By.\+js} 

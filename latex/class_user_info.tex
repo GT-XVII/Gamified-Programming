@@ -1,0 +1,56 @@
+\doxysection{User\+Info Class Reference}
+\hypertarget{class_user_info}{}\label{class_user_info}\index{UserInfo@{UserInfo}}
+
+
+Collaboration diagram for User\+Info\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=153pt]{class_user_info__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_user_info_a69700cbd18e39238e730cad3990c2a03}{constructor}} (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ac70ac40ef8199c59316b35022dd21914}{response}})
+\item 
+\mbox{\hyperlink{class_user_info_a90819b56daab395666df402c3059bcad}{to\+JSON}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a user\textquotesingle{}s info from a third-\/party identity provider such as Google or Facebook. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_user_info_a69700cbd18e39238e730cad3990c2a03}\index{UserInfo@{UserInfo}!constructor@{constructor}}
+\index{constructor@{constructor}!UserInfo@{UserInfo}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_user_info_a69700cbd18e39238e730cad3990c2a03} 
+User\+Info\+::constructor (\begin{DoxyParamCaption}\item[{}]{response}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em response} & -\/ The server side response returned from the {\ttfamily get\+Account\+Info} endpoint. @constructor \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{user-record_8js_af1a99a3ff1a35c114bdd06cc7252beb6}{error\+\_\+1}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ac70ac40ef8199c59316b35022dd21914}{response}}, and \mbox{\hyperlink{user-record_8js_a022e926a40defc4294368e708a7e2372}{utils}}.
+
+\Hypertarget{class_user_info_a90819b56daab395666df402c3059bcad}\index{UserInfo@{UserInfo}!toJSON@{toJSON}}
+\index{toJSON@{toJSON}!UserInfo@{UserInfo}}
+\doxysubsubsection{\texorpdfstring{toJSON()}{toJSON()}}
+{\footnotesize\ttfamily \label{class_user_info_a90819b56daab395666df402c3059bcad} 
+User\+Info\+::to\+JSON (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a JSON-\/serializable representation of this object.
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_a}{A} JSON-\/serializable representation of this object. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/firebase-\/admin/lib/auth/\mbox{\hyperlink{user-record_8js}{user-\/record.\+js}}\end{DoxyCompactItemize}

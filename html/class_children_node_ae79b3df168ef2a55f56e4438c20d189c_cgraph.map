@@ -1,0 +1,18 @@
+<map id="ChildrenNode::getReverseIterator" name="ChildrenNode::getReverseIterator">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,71,181,112"/>
+<area shape="rect" id="Node000002" href="$class_children_node.html#a20b4c461d5fefd1152711b212d3d6fbf" title=" " alt="" coords="229,71,404,112"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,89,213,89,213,94,181,94"/>
+<area shape="rect" id="Node000003" href="$protobufjs_2dist_2protobuf_8js.html#adc8497f1b8fa9c7bee4a53c25c244a66" title=" " alt="" coords="524,29,570,55"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="404,70,508,48,509,53,405,75"/>
+<area shape="rect" id="Node000007" href="$class_children_node.html#a9601f9b7b951df246d69e5b780cf3ead" title=" " alt="" coords="452,79,641,104"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="404,89,436,89,436,94,404,94"/>
+<area shape="rect" id="Node000008" href="$class_named_node.html#aa2cb8f459865816baa337e251770803b" title=" " alt="" coords="480,128,613,154"/>
+<area shape="poly" id="edge8_Node000002_Node000008" title=" " alt="" coords="405,108,469,122,468,127,404,113"/>
+<area shape="rect" id="Node000004" href="$protobufjs_2dist_2protobuf_8js.html#a74d7fa31d45064974a0c297422d3c0c5" title=" " alt="" coords="924,5,1027,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="570,38,908,19,908,25,570,44"/>
+<area shape="rect" id="Node000005" href="$protobufjs_2dist_2protobuf_8js.html#afd366b4e60dba7acb371422d6dddcc64" title=" " alt="" coords="689,55,876,80"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="571,42,674,53,674,59,570,47"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="835,51,908,33,909,38,836,57"/>
+<area shape="rect" id="Node000006" href="$_doc_type_reader_8js.html#a14b5fcc27a4889161d94c35f6a630cea" title=" " alt="" coords="931,55,1020,80"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="876,65,916,65,916,70,876,70"/>
+</map>

@@ -1,0 +1,26 @@
+\doxysection{/\+Users/nicoletiokhin/\+Desktop/\+Software Semester 3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/@google-\/cloud/firestore/build/src/reference/vector-\/query-\/snapshot.\+js}
+\hypertarget{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_70488b1677f72ca18913bb3f798c4315}{}\label{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_70488b1677f72ca18913bb3f798c4315}The {\ttfamily \doxylink{class_vector_query}{Vector\+Query}} on which you called \doxylink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get()} in order to get this {\ttfamily \doxylink{class_vector_query_snapshot}{Vector\+Query\+Snapshot}}.
+
+@readonly
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{let\ \mbox{\hyperlink{application_8js_a3934419f0f9a2068c705a0013b77fab3}{query}}\ =\ \mbox{\hyperlink{firestore-namespace_8js_a6c18541a3018cee632d7e797bb983f36}{firestore}}.collection(\textcolor{stringliteral}{'col'}).where(\textcolor{stringliteral}{'foo'},\ \textcolor{stringliteral}{'=='},\ \textcolor{stringliteral}{'bar'});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\mbox{\hyperlink{application_8js_a3934419f0f9a2068c705a0013b77fab3}{query}}.findNearest(\textcolor{stringliteral}{"{}embedding"{}},\ [0,\ 0],\ \{\mbox{\hyperlink{esm_2src_2bucket_8js_a855d9d33127d4a1b6d60693ff91e7f8b}{limit}}:\ 10,\ distanceMeasure:\ \textcolor{stringliteral}{"{}EUCLIDEAN"{}}\})}
+\DoxyCodeLine{\ \ .\textcolor{keyword}{get}().then(querySnapshot\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ console.log(\`{}Returned\ \mbox{\hyperlink{lodash_2core_8js_abd5bd02fb8d1063856d3085c821f7c12}{first}}\ batch\ \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}\ results\`{});}
+\DoxyCodeLine{\ \ \ \ let\ \mbox{\hyperlink{application_8js_a3934419f0f9a2068c705a0013b77fab3}{query}}\ =\ querySnapshot.query;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{application_8js_a3934419f0f9a2068c705a0013b77fab3}{query}}.offset(10).get();}
+\DoxyCodeLine{\ \ \}).\mbox{\hyperlink{pledge_8js_a492a4eb4b80e71a1bb4761df42875565}{then}}(()\ =>\ \{}
+\DoxyCodeLine{\ \ console.log(\`{}Returned\ second\ batch\ \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}\ results\`{});}
+\DoxyCodeLine{\ \ \});}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyCodeInclude}{0}
+
+\end{DoxyCodeInclude}
+ Semester 3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/@google\doxylink{vector-query-snapshot_8js}{-\/cloud/firestore/build/src/reference/vector-\/query-\/snapshot.\+js} 

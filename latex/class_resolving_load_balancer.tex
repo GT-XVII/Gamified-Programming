@@ -1,0 +1,188 @@
+\doxysection{Resolving\+Load\+Balancer Class Reference}
+\hypertarget{class_resolving_load_balancer}{}\label{class_resolving_load_balancer}\index{ResolvingLoadBalancer@{ResolvingLoadBalancer}}
+
+
+Collaboration diagram for Resolving\+Load\+Balancer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{class_resolving_load_balancer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_resolving_load_balancer_a0c40677e8254a2620d9f4926b7f1f731}{constructor}} (target, channel\+Control\+Helper, \mbox{\hyperlink{_0dgrpc_2grpc-js_2build_2src_2index_8js_a88f1ca34064fef6dc1e29d7d1cf5cfcf}{credentials}}, channel\+Options, on\+Successful\+Resolution, on\+Failed\+Resolution)
+\item 
+\mbox{\hyperlink{class_resolving_load_balancer_aa9fdc143760115cc5d0b3e7cc2a6b2fb}{update\+Resolution}} ()
+\item 
+\mbox{\hyperlink{class_resolving_load_balancer_ae1528adc5bf77efedbde830392003b0c}{update\+State}} (connectivity\+State, picker)
+\item 
+\mbox{\hyperlink{class_resolving_load_balancer_a1cdd56a7a7a3a947ec81438159ddd965}{handle\+Resolution\+Failure}} (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}})
+\item 
+\mbox{\hyperlink{class_resolving_load_balancer_a64f3dea755868b19d9cfc5305164113a}{exit\+Idle}} ()
+\item 
+\mbox{\hyperlink{class_resolving_load_balancer_a02a5b513eed625cec413521c4dbe0b5c}{update\+Address\+List}} (endpoint\+List, lb\+Config)
+\item 
+\mbox{\hyperlink{class_resolving_load_balancer_a86ca2bfba8733e1448d8d64862e6aa11}{reset\+Backoff}} ()
+\item 
+\mbox{\hyperlink{class_resolving_load_balancer_a6df9a62750dfb7da48c6a26f6833a019}{destroy}} ()
+\item 
+\mbox{\hyperlink{class_resolving_load_balancer_a16a3871f0279f05da880788e61ae3192}{get\+Type\+Name}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_resolving_load_balancer_a0c40677e8254a2620d9f4926b7f1f731}\index{ResolvingLoadBalancer@{ResolvingLoadBalancer}!constructor@{constructor}}
+\index{constructor@{constructor}!ResolvingLoadBalancer@{ResolvingLoadBalancer}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_resolving_load_balancer_a0c40677e8254a2620d9f4926b7f1f731} 
+Resolving\+Load\+Balancer\+::constructor (\begin{DoxyParamCaption}\item[{}]{target}{, }\item[{}]{channel\+Control\+Helper}{, }\item[{}]{credentials}{, }\item[{}]{channel\+Options}{, }\item[{}]{on\+Successful\+Resolution}{, }\item[{}]{on\+Failed\+Resolution}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Wrapper class that behaves like a {\ttfamily Load\+Balancer} and also handles name resolution internally. 
+\begin{DoxyParams}{Parameters}
+{\em target} & The address of the backend to connect to. \\
+\hline
+{\em channel\+Control\+Helper} & {\ttfamily Channel\+Control\+Helper} instance provided by this load balancer\textquotesingle{}s owner. \\
+\hline
+{\em default\+Service\+Config} & The default service configuration to be used if none is provided by the name resolver. \doxylink{class_a}{A} {\ttfamily null} value indicates that the default behavior should be the default unconfigured behavior. In practice, that means using the "{}pick first"{} load balancer implmentation \\
+\hline
+\end{DoxyParams}
+This resolving load balancer\textquotesingle{}s current connectivity state.
+
+The service config object from the last successful resolution, if available. \doxylink{class_a}{A} value of null indicates that we have not yet received a valid service config from the resolver.
+
+Indicates whether we should attempt to resolve again after the backoff timer runs out.
+
+References \mbox{\hyperlink{logger_2dist_2esm_2index_8esm5_8js_a0adf123df8967a14b5bdd9ff3bbe2d0c}{\+\_\+a}}, \mbox{\hyperlink{resolving-load-balancer_8js_ac6ee4d06458738135616d807a5a13342}{backoff\+\_\+timeout\+\_\+1}}, \mbox{\hyperlink{resolving-load-balancer_8js_a66e6c9aea487cf1c4498cf2b1aa0f621}{connectivity\+\_\+state\+\_\+1}}, \mbox{\hyperlink{resolving-load-balancer_8js_ad33cb6840349d3bc93f4fe9de15a6f8f}{constants\+\_\+1}}, \mbox{\hyperlink{_0dgrpc_2grpc-js_2build_2src_2index_8js_a88f1ca34064fef6dc1e29d7d1cf5cfcf}{credentials}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}}, \mbox{\hyperlink{resolving-load-balancer_8js_a4f9b3d1c3ab895b70c5a533f03d452fb}{get\+Default\+Config\+Selector()}}, \mbox{\hyperlink{class_resolving_load_balancer_a1cdd56a7a7a3a947ec81438159ddd965}{handle\+Resolution\+Failure()}}, \mbox{\hyperlink{json-bigint_2lib_2stringify_8js_aec316efdeb7b2e5358b7d50869858da1}{JSON}}, \mbox{\hyperlink{resolving-load-balancer_8js_a5136c4ad4dd2c82202031f18efa1c007}{load\+\_\+balancer\+\_\+1}}, \mbox{\hyperlink{resolving-load-balancer_8js_a5cacadc8f4bc88c45b7d4f0d57a799f6}{load\+\_\+balancer\+\_\+child\+\_\+handler\+\_\+1}}, \mbox{\hyperlink{resolving-load-balancer_8js_a7ccaf64b99eed08557e09f7f79748878}{metadata\+\_\+1}}, \mbox{\hyperlink{resolving-load-balancer_8js_a81c59cca4f80962eae892ca3d4f2e839}{picker\+\_\+1}}, \mbox{\hyperlink{resolving-load-balancer_8js_a8b789798d76e3ffb33244839d1ffa9e0}{resolver\+\_\+1}}, \mbox{\hyperlink{resolving-load-balancer_8js_afcdc66db811e8a5938db603aec38b37a}{service\+\_\+config\+\_\+1}}, \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2index_8js_a586d19d7ed905643c6ba0d589d8df6f8}{service\+Config}}, \mbox{\hyperlink{logging_8js_acb1634453d1705af9683695efa3847e6}{trace}}, \mbox{\hyperlink{class_resolving_load_balancer_aa9fdc143760115cc5d0b3e7cc2a6b2fb}{update\+Resolution()}}, and \mbox{\hyperlink{class_resolving_load_balancer_ae1528adc5bf77efedbde830392003b0c}{update\+State()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_resolving_load_balancer_a0c40677e8254a2620d9f4926b7f1f731_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_resolving_load_balancer_a6df9a62750dfb7da48c6a26f6833a019}\index{ResolvingLoadBalancer@{ResolvingLoadBalancer}!destroy@{destroy}}
+\index{destroy@{destroy}!ResolvingLoadBalancer@{ResolvingLoadBalancer}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily \label{class_resolving_load_balancer_a6df9a62750dfb7da48c6a26f6833a019} 
+Resolving\+Load\+Balancer\+::destroy (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{resolving-load-balancer_8js_a66e6c9aea487cf1c4498cf2b1aa0f621}{connectivity\+\_\+state\+\_\+1}}, and \mbox{\hyperlink{resolving-load-balancer_8js_a81c59cca4f80962eae892ca3d4f2e839}{picker\+\_\+1}}.
+
+\Hypertarget{class_resolving_load_balancer_a64f3dea755868b19d9cfc5305164113a}\index{ResolvingLoadBalancer@{ResolvingLoadBalancer}!exitIdle@{exitIdle}}
+\index{exitIdle@{exitIdle}!ResolvingLoadBalancer@{ResolvingLoadBalancer}}
+\doxysubsubsection{\texorpdfstring{exitIdle()}{exitIdle()}}
+{\footnotesize\ttfamily \label{class_resolving_load_balancer_a64f3dea755868b19d9cfc5305164113a} 
+Resolving\+Load\+Balancer\+::exit\+Idle (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{resolving-load-balancer_8js_a66e6c9aea487cf1c4498cf2b1aa0f621}{connectivity\+\_\+state\+\_\+1}}, and \mbox{\hyperlink{class_resolving_load_balancer_aa9fdc143760115cc5d0b3e7cc2a6b2fb}{update\+Resolution()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_resolving_load_balancer_a64f3dea755868b19d9cfc5305164113a_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_resolving_load_balancer_a16a3871f0279f05da880788e61ae3192}\index{ResolvingLoadBalancer@{ResolvingLoadBalancer}!getTypeName@{getTypeName}}
+\index{getTypeName@{getTypeName}!ResolvingLoadBalancer@{ResolvingLoadBalancer}}
+\doxysubsubsection{\texorpdfstring{getTypeName()}{getTypeName()}}
+{\footnotesize\ttfamily \label{class_resolving_load_balancer_a16a3871f0279f05da880788e61ae3192} 
+Resolving\+Load\+Balancer\+::get\+Type\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_resolving_load_balancer_a1cdd56a7a7a3a947ec81438159ddd965}\index{ResolvingLoadBalancer@{ResolvingLoadBalancer}!handleResolutionFailure@{handleResolutionFailure}}
+\index{handleResolutionFailure@{handleResolutionFailure}!ResolvingLoadBalancer@{ResolvingLoadBalancer}}
+\doxysubsubsection{\texorpdfstring{handleResolutionFailure()}{handleResolutionFailure()}}
+{\footnotesize\ttfamily \label{class_resolving_load_balancer_a1cdd56a7a7a3a947ec81438159ddd965} 
+Resolving\+Load\+Balancer\+::handle\+Resolution\+Failure (\begin{DoxyParamCaption}\item[{}]{error}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{resolving-load-balancer_8js_a66e6c9aea487cf1c4498cf2b1aa0f621}{connectivity\+\_\+state\+\_\+1}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}}, \mbox{\hyperlink{resolving-load-balancer_8js_a81c59cca4f80962eae892ca3d4f2e839}{picker\+\_\+1}}, and \mbox{\hyperlink{class_resolving_load_balancer_ae1528adc5bf77efedbde830392003b0c}{update\+State()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_resolving_load_balancer_a1cdd56a7a7a3a947ec81438159ddd965_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_resolving_load_balancer_a1cdd56a7a7a3a947ec81438159ddd965_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_resolving_load_balancer_a86ca2bfba8733e1448d8d64862e6aa11}\index{ResolvingLoadBalancer@{ResolvingLoadBalancer}!resetBackoff@{resetBackoff}}
+\index{resetBackoff@{resetBackoff}!ResolvingLoadBalancer@{ResolvingLoadBalancer}}
+\doxysubsubsection{\texorpdfstring{resetBackoff()}{resetBackoff()}}
+{\footnotesize\ttfamily \label{class_resolving_load_balancer_a86ca2bfba8733e1448d8d64862e6aa11} 
+Resolving\+Load\+Balancer\+::reset\+Backoff (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_resolving_load_balancer_a02a5b513eed625cec413521c4dbe0b5c}\index{ResolvingLoadBalancer@{ResolvingLoadBalancer}!updateAddressList@{updateAddressList}}
+\index{updateAddressList@{updateAddressList}!ResolvingLoadBalancer@{ResolvingLoadBalancer}}
+\doxysubsubsection{\texorpdfstring{updateAddressList()}{updateAddressList()}}
+{\footnotesize\ttfamily \label{class_resolving_load_balancer_a02a5b513eed625cec413521c4dbe0b5c} 
+Resolving\+Load\+Balancer\+::update\+Address\+List (\begin{DoxyParamCaption}\item[{}]{endpoint\+List}{, }\item[{}]{lb\+Config}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_resolving_load_balancer_aa9fdc143760115cc5d0b3e7cc2a6b2fb}\index{ResolvingLoadBalancer@{ResolvingLoadBalancer}!updateResolution@{updateResolution}}
+\index{updateResolution@{updateResolution}!ResolvingLoadBalancer@{ResolvingLoadBalancer}}
+\doxysubsubsection{\texorpdfstring{updateResolution()}{updateResolution()}}
+{\footnotesize\ttfamily \label{class_resolving_load_balancer_aa9fdc143760115cc5d0b3e7cc2a6b2fb} 
+Resolving\+Load\+Balancer\+::update\+Resolution (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{resolving-load-balancer_8js_a66e6c9aea487cf1c4498cf2b1aa0f621}{connectivity\+\_\+state\+\_\+1}}, and \mbox{\hyperlink{class_resolving_load_balancer_ae1528adc5bf77efedbde830392003b0c}{update\+State()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_resolving_load_balancer_aa9fdc143760115cc5d0b3e7cc2a6b2fb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_resolving_load_balancer_aa9fdc143760115cc5d0b3e7cc2a6b2fb_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_resolving_load_balancer_ae1528adc5bf77efedbde830392003b0c}\index{ResolvingLoadBalancer@{ResolvingLoadBalancer}!updateState@{updateState}}
+\index{updateState@{updateState}!ResolvingLoadBalancer@{ResolvingLoadBalancer}}
+\doxysubsubsection{\texorpdfstring{updateState()}{updateState()}}
+{\footnotesize\ttfamily \label{class_resolving_load_balancer_ae1528adc5bf77efedbde830392003b0c} 
+Resolving\+Load\+Balancer\+::update\+State (\begin{DoxyParamCaption}\item[{}]{connectivity\+State}{, }\item[{}]{picker}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{resolving-load-balancer_8js_a66e6c9aea487cf1c4498cf2b1aa0f621}{connectivity\+\_\+state\+\_\+1}}, \mbox{\hyperlink{resolving-load-balancer_8js_a81c59cca4f80962eae892ca3d4f2e839}{picker\+\_\+1}}, \mbox{\hyperlink{logging_8js_acb1634453d1705af9683695efa3847e6}{trace}}, and \mbox{\hyperlink{resolving-load-balancer_8js_a5a0788f0fd3744f268bfd27b3acc9857}{uri\+\_\+parser\+\_\+1}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_resolving_load_balancer_ae1528adc5bf77efedbde830392003b0c_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/@grpc/grpc-\/js/build/src/\mbox{\hyperlink{resolving-load-balancer_8js}{resolving-\/load-\/balancer.\+js}}\end{DoxyCompactItemize}

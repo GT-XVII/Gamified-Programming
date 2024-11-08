@@ -1,0 +1,135 @@
+\doxysection{backend/node\+\_\+modules/firebase-\/admin/lib/auth/base-\/auth.js File Reference}
+\hypertarget{base-auth_8js}{}\label{base-auth_8js}\index{backend/node\_modules/firebase-\/admin/lib/auth/base-\/auth.js@{backend/node\_modules/firebase-\/admin/lib/auth/base-\/auth.js}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_base_auth}{Base\+Auth}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{base-auth_8js_adf8c930f68959dca1747a68cc394330d}{create\+Firebase\+Token\+Generator}} (\mbox{\hyperlink{database_2dist_2index_8cjs_8js_a7b225fcb720e4d5ed2bbf60e28a25e6d}{app}}, tenant\+Id)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{base-auth_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{base-auth_8js_aeb44eed5d80158331332d8f767a05346}{Base\+Auth}} = \mbox{\hyperlink{base-auth_8js_a4e0b0bab9a0efbae4259c5c655528e74}{exports.\+create\+Firebase\+Token\+Generator}} = void 0
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{base-auth_8js_af1a99a3ff1a35c114bdd06cc7252beb6}{error\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/error"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{base-auth_8js_a3c878464c635c5cd2043d7e066bb187b}{deep\+\_\+copy\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/deep-\/copy"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{base-auth_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/validator"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{base-auth_8js_ac7589a803bd4e053198614715963a7ff}{auth\+\_\+api\+\_\+request\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./auth-\/\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}}-\/request"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{base-auth_8js_ab25c7655f3c10a7d29252908fefeb810}{token\+\_\+generator\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./token-\/generator"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{base-auth_8js_acb62b4ad4d99507aaaba62a26f5127db}{token\+\_\+verifier\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./token-\/verifier"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{base-auth_8js_a6c5d80272703a3b8334ada4da14b59e4}{auth\+\_\+config\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./auth-\/config"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{base-auth_8js_a5c1cf673a068559c216f215c8648e609}{user\+\_\+record\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./user-\/record"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{base-auth_8js_a76b274a6ad10b5a033096fa0962ec469}{identifier\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./identifier"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{base-auth_8js_a07bbca050c948e04caf3a3a1c3164b33}{crypto\+\_\+signer\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a3eca37c9aac9a17870baa116339724e3}{crypto}}-\/signer"{})
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{base-auth_8js_a4e0b0bab9a0efbae4259c5c655528e74}{create\+Firebase\+Token\+Generator}} = create\+Firebase\+Token\+Generator
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{base-auth_8js_adf8c930f68959dca1747a68cc394330d}\index{base-\/auth.js@{base-\/auth.js}!createFirebaseTokenGenerator@{createFirebaseTokenGenerator}}
+\index{createFirebaseTokenGenerator@{createFirebaseTokenGenerator}!base-\/auth.js@{base-\/auth.js}}
+\doxysubsubsection{\texorpdfstring{createFirebaseTokenGenerator()}{createFirebaseTokenGenerator()}}
+{\footnotesize\ttfamily \label{base-auth_8js_adf8c930f68959dca1747a68cc394330d} 
+function create\+Firebase\+Token\+Generator (\begin{DoxyParamCaption}\item[{}]{app}{, }\item[{}]{tenant\+Id}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{database_2dist_2index_8cjs_8js_a7b225fcb720e4d5ed2bbf60e28a25e6d}{app}}, \mbox{\hyperlink{base-auth_8js_ac7589a803bd4e053198614715963a7ff}{auth\+\_\+api\+\_\+request\+\_\+1}}, \mbox{\hyperlink{base-auth_8js_a07bbca050c948e04caf3a3a1c3164b33}{crypto\+\_\+signer\+\_\+1}}, and \mbox{\hyperlink{base-auth_8js_ab25c7655f3c10a7d29252908fefeb810}{token\+\_\+generator\+\_\+1}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{base-auth_8js_ac7589a803bd4e053198614715963a7ff}\index{base-\/auth.js@{base-\/auth.js}!auth\_api\_request\_1@{auth\_api\_request\_1}}
+\index{auth\_api\_request\_1@{auth\_api\_request\_1}!base-\/auth.js@{base-\/auth.js}}
+\doxysubsubsection{\texorpdfstring{auth\_api\_request\_1}{auth\_api\_request\_1}}
+{\footnotesize\ttfamily \label{base-auth_8js_ac7589a803bd4e053198614715963a7ff} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} auth\+\_\+api\+\_\+request\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./auth-\/\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}}-\/request"{})}
+
+\Hypertarget{base-auth_8js_a6c5d80272703a3b8334ada4da14b59e4}\index{base-\/auth.js@{base-\/auth.js}!auth\_config\_1@{auth\_config\_1}}
+\index{auth\_config\_1@{auth\_config\_1}!base-\/auth.js@{base-\/auth.js}}
+\doxysubsubsection{\texorpdfstring{auth\_config\_1}{auth\_config\_1}}
+{\footnotesize\ttfamily \label{base-auth_8js_a6c5d80272703a3b8334ada4da14b59e4} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} auth\+\_\+config\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./auth-\/config"{})}
+
+\Hypertarget{base-auth_8js_aeb44eed5d80158331332d8f767a05346}\index{base-\/auth.js@{base-\/auth.js}!BaseAuth@{BaseAuth}}
+\index{BaseAuth@{BaseAuth}!base-\/auth.js@{base-\/auth.js}}
+\doxysubsubsection{\texorpdfstring{BaseAuth}{BaseAuth}}
+{\footnotesize\ttfamily \label{base-auth_8js_aeb44eed5d80158331332d8f767a05346} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} Base\+Auth = \mbox{\hyperlink{base-auth_8js_a4e0b0bab9a0efbae4259c5c655528e74}{exports.\+create\+Firebase\+Token\+Generator}} = void 0}
+
+\Hypertarget{base-auth_8js_a4e0b0bab9a0efbae4259c5c655528e74}\index{base-\/auth.js@{base-\/auth.js}!createFirebaseTokenGenerator@{createFirebaseTokenGenerator}}
+\index{createFirebaseTokenGenerator@{createFirebaseTokenGenerator}!base-\/auth.js@{base-\/auth.js}}
+\doxysubsubsection{\texorpdfstring{createFirebaseTokenGenerator}{createFirebaseTokenGenerator}}
+{\footnotesize\ttfamily \label{base-auth_8js_a4e0b0bab9a0efbae4259c5c655528e74} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} create\+Firebase\+Token\+Generator = create\+Firebase\+Token\+Generator}
+
+\Hypertarget{base-auth_8js_a07bbca050c948e04caf3a3a1c3164b33}\index{base-\/auth.js@{base-\/auth.js}!crypto\_signer\_1@{crypto\_signer\_1}}
+\index{crypto\_signer\_1@{crypto\_signer\_1}!base-\/auth.js@{base-\/auth.js}}
+\doxysubsubsection{\texorpdfstring{crypto\_signer\_1}{crypto\_signer\_1}}
+{\footnotesize\ttfamily \label{base-auth_8js_a07bbca050c948e04caf3a3a1c3164b33} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} crypto\+\_\+signer\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a3eca37c9aac9a17870baa116339724e3}{crypto}}-\/signer"{})}
+
+\Hypertarget{base-auth_8js_a3c878464c635c5cd2043d7e066bb187b}\index{base-\/auth.js@{base-\/auth.js}!deep\_copy\_1@{deep\_copy\_1}}
+\index{deep\_copy\_1@{deep\_copy\_1}!base-\/auth.js@{base-\/auth.js}}
+\doxysubsubsection{\texorpdfstring{deep\_copy\_1}{deep\_copy\_1}}
+{\footnotesize\ttfamily \label{base-auth_8js_a3c878464c635c5cd2043d7e066bb187b} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} deep\+\_\+copy\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/deep-\/copy"{})}
+
+\Hypertarget{base-auth_8js_af1a99a3ff1a35c114bdd06cc7252beb6}\index{base-\/auth.js@{base-\/auth.js}!error\_1@{error\_1}}
+\index{error\_1@{error\_1}!base-\/auth.js@{base-\/auth.js}}
+\doxysubsubsection{\texorpdfstring{error\_1}{error\_1}}
+{\footnotesize\ttfamily \label{base-auth_8js_af1a99a3ff1a35c114bdd06cc7252beb6} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} error\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/error"{})}
+
+\Hypertarget{base-auth_8js_a76b274a6ad10b5a033096fa0962ec469}\index{base-\/auth.js@{base-\/auth.js}!identifier\_1@{identifier\_1}}
+\index{identifier\_1@{identifier\_1}!base-\/auth.js@{base-\/auth.js}}
+\doxysubsubsection{\texorpdfstring{identifier\_1}{identifier\_1}}
+{\footnotesize\ttfamily \label{base-auth_8js_a76b274a6ad10b5a033096fa0962ec469} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} identifier\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./identifier"{})}
+
+\Hypertarget{base-auth_8js_ae2475e10618961c050dcba04e8c42331}\index{base-\/auth.js@{base-\/auth.js}!strict@{strict}}
+\index{strict@{strict}!base-\/auth.js@{base-\/auth.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{base-auth_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+
+firebase-\/admin v12.\+7.\+0 \Hypertarget{base-auth_8js_ab25c7655f3c10a7d29252908fefeb810}\index{base-\/auth.js@{base-\/auth.js}!token\_generator\_1@{token\_generator\_1}}
+\index{token\_generator\_1@{token\_generator\_1}!base-\/auth.js@{base-\/auth.js}}
+\doxysubsubsection{\texorpdfstring{token\_generator\_1}{token\_generator\_1}}
+{\footnotesize\ttfamily \label{base-auth_8js_ab25c7655f3c10a7d29252908fefeb810} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} token\+\_\+generator\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./token-\/generator"{})}
+
+\Hypertarget{base-auth_8js_acb62b4ad4d99507aaaba62a26f5127db}\index{base-\/auth.js@{base-\/auth.js}!token\_verifier\_1@{token\_verifier\_1}}
+\index{token\_verifier\_1@{token\_verifier\_1}!base-\/auth.js@{base-\/auth.js}}
+\doxysubsubsection{\texorpdfstring{token\_verifier\_1}{token\_verifier\_1}}
+{\footnotesize\ttfamily \label{base-auth_8js_acb62b4ad4d99507aaaba62a26f5127db} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} token\+\_\+verifier\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./token-\/verifier"{})}
+
+\Hypertarget{base-auth_8js_a5c1cf673a068559c216f215c8648e609}\index{base-\/auth.js@{base-\/auth.js}!user\_record\_1@{user\_record\_1}}
+\index{user\_record\_1@{user\_record\_1}!base-\/auth.js@{base-\/auth.js}}
+\doxysubsubsection{\texorpdfstring{user\_record\_1}{user\_record\_1}}
+{\footnotesize\ttfamily \label{base-auth_8js_a5c1cf673a068559c216f215c8648e609} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} user\+\_\+record\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./user-\/record"{})}
+
+\Hypertarget{base-auth_8js_add6dc10e852e313f07c0d59bcf288b6a}\index{base-\/auth.js@{base-\/auth.js}!validator@{validator}}
+\index{validator@{validator}!base-\/auth.js@{base-\/auth.js}}
+\doxysubsubsection{\texorpdfstring{validator}{validator}}
+{\footnotesize\ttfamily \label{base-auth_8js_add6dc10e852e313f07c0d59bcf288b6a} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} validator = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/validator"{})}
+

@@ -1,0 +1,48 @@
+\doxysection{backend/node\+\_\+modules/json-\/bigint/lib/parse.js File Reference}
+\hypertarget{json-bigint_2lib_2parse_8js}{}\label{json-bigint_2lib_2parse_8js}\index{backend/node\_modules/json-\/bigint/lib/parse.js@{backend/node\_modules/json-\/bigint/lib/parse.js}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{json-bigint_2lib_2parse_8js_a967198d96b427ac5e231399f1642fa01}{Big\+Number}} = null
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{json-bigint_2lib_2parse_8js_a66223b606736d9d09fd26f8f5d008d19}{suspect\+Proto\+Rx}} = /(?\+:\mbox{\hyperlink{fp_8js_a6e69a5af94d7d53886e51f89fb3bd6b4}{\+\_\+}}\texorpdfstring{$\vert$}{|}\textbackslash{}\textbackslash{}u005\mbox{[}Ff\mbox{]})(?\+:\mbox{\hyperlink{fp_8js_a6e69a5af94d7d53886e51f89fb3bd6b4}{\+\_\+}}\texorpdfstring{$\vert$}{|}\textbackslash{}\textbackslash{}u005\mbox{[}Ff\mbox{]})(?\+:\mbox{\hyperlink{ordered-map_8min_8js_ab2752257551c1a01e010ceba5d7ec200}{p}}\texorpdfstring{$\vert$}{|}\textbackslash{}\textbackslash{}u0070)(?\+:\mbox{\hyperlink{uuid_8min_8js_aaa5fef39529cdffdfa257202bb4fda9f}{r}}\texorpdfstring{$\vert$}{|}\textbackslash{}\textbackslash{}u0072)(?\+:\mbox{\hyperlink{uuid_8min_8js_a400dc8109620963da8314d4bdfa14f83}{o}}\texorpdfstring{$\vert$}{|}\textbackslash{}\textbackslash{}u006\mbox{[}Ff\mbox{]})(?\+:\mbox{\hyperlink{uuidv4_8min_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}}\texorpdfstring{$\vert$}{|}\textbackslash{}\textbackslash{}u0074)(?\+:\mbox{\hyperlink{uuid_8min_8js_a400dc8109620963da8314d4bdfa14f83}{o}}\texorpdfstring{$\vert$}{|}\textbackslash{}\textbackslash{}u006\mbox{[}Ff\mbox{]})(?\+:\mbox{\hyperlink{fp_8js_a6e69a5af94d7d53886e51f89fb3bd6b4}{\+\_\+}}\texorpdfstring{$\vert$}{|}\textbackslash{}\textbackslash{}u005\mbox{[}Ff\mbox{]})(?\+:\mbox{\hyperlink{fp_8js_a6e69a5af94d7d53886e51f89fb3bd6b4}{\+\_\+}}\texorpdfstring{$\vert$}{|}\textbackslash{}\textbackslash{}u005\mbox{[}Ff\mbox{]})/
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{json-bigint_2lib_2parse_8js_ada285ebb48c66d157a69e1aab56b076c}{suspect\+Constructor\+Rx}} = /(?\+:\mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}\texorpdfstring{$\vert$}{|}\textbackslash{}\textbackslash{}u0063)(?\+:\mbox{\hyperlink{uuid_8min_8js_a400dc8109620963da8314d4bdfa14f83}{o}}\texorpdfstring{$\vert$}{|}\textbackslash{}\textbackslash{}u006\mbox{[}Ff\mbox{]})(?\+:\mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}\texorpdfstring{$\vert$}{|}\textbackslash{}\textbackslash{}u006\mbox{[}Ee\mbox{]})(?\+:\mbox{\hyperlink{ordered-map_8min_8js_ad9a7d92cb87932d25187fdec3ba1b621}{s}}\texorpdfstring{$\vert$}{|}\textbackslash{}\textbackslash{}u0073)(?\+:\mbox{\hyperlink{uuidv4_8min_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}}\texorpdfstring{$\vert$}{|}\textbackslash{}\textbackslash{}u0074)(?\+:\mbox{\hyperlink{uuid_8min_8js_aaa5fef39529cdffdfa257202bb4fda9f}{r}}\texorpdfstring{$\vert$}{|}\textbackslash{}\textbackslash{}u0072)(?\+:\mbox{\hyperlink{uuidv5_8min_8js_a36cbe5f9ac6b49b08930abff15443ab0}{u}}\texorpdfstring{$\vert$}{|}\textbackslash{}\textbackslash{}u0075)(?\+:\mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}\texorpdfstring{$\vert$}{|}\textbackslash{}\textbackslash{}u0063)(?\+:\mbox{\hyperlink{uuidv4_8min_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}}\texorpdfstring{$\vert$}{|}\textbackslash{}\textbackslash{}u0074)(?\+:\mbox{\hyperlink{uuid_8min_8js_a400dc8109620963da8314d4bdfa14f83}{o}}\texorpdfstring{$\vert$}{|}\textbackslash{}\textbackslash{}u006\mbox{[}Ff\mbox{]})(?\+:\mbox{\hyperlink{uuid_8min_8js_aaa5fef39529cdffdfa257202bb4fda9f}{r}}\texorpdfstring{$\vert$}{|}\textbackslash{}\textbackslash{}u0072)/
+\item 
+var \mbox{\hyperlink{json-bigint_2lib_2parse_8js_a27719bbcb518bafae61d93e2ded3a936}{json\+\_\+parse}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{json-bigint_2lib_2parse_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} = \mbox{\hyperlink{json-bigint_2index_8js_a27719bbcb518bafae61d93e2ded3a936}{json\+\_\+parse}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{json-bigint_2lib_2parse_8js_a967198d96b427ac5e231399f1642fa01}\index{parse.js@{parse.js}!BigNumber@{BigNumber}}
+\index{BigNumber@{BigNumber}!parse.js@{parse.js}}
+\doxysubsubsection{\texorpdfstring{BigNumber}{BigNumber}}
+{\footnotesize\ttfamily \label{json-bigint_2lib_2parse_8js_a967198d96b427ac5e231399f1642fa01} 
+var Big\+Number = null}
+
+\Hypertarget{json-bigint_2lib_2parse_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\index{parse.js@{parse.js}!exports@{exports}}
+\index{exports@{exports}!parse.js@{parse.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \label{json-bigint_2lib_2parse_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports = \mbox{\hyperlink{json-bigint_2index_8js_a27719bbcb518bafae61d93e2ded3a936}{json\+\_\+parse}}}
+
+\Hypertarget{json-bigint_2lib_2parse_8js_a27719bbcb518bafae61d93e2ded3a936}\index{parse.js@{parse.js}!json\_parse@{json\_parse}}
+\index{json\_parse@{json\_parse}!parse.js@{parse.js}}
+\doxysubsubsection{\texorpdfstring{json\_parse}{json\_parse}}
+{\footnotesize\ttfamily \label{json-bigint_2lib_2parse_8js_a27719bbcb518bafae61d93e2ded3a936} 
+var json\+\_\+parse}
+
+\Hypertarget{json-bigint_2lib_2parse_8js_ada285ebb48c66d157a69e1aab56b076c}\index{parse.js@{parse.js}!suspectConstructorRx@{suspectConstructorRx}}
+\index{suspectConstructorRx@{suspectConstructorRx}!parse.js@{parse.js}}
+\doxysubsubsection{\texorpdfstring{suspectConstructorRx}{suspectConstructorRx}}
+{\footnotesize\ttfamily \label{json-bigint_2lib_2parse_8js_ada285ebb48c66d157a69e1aab56b076c} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} suspect\+Constructor\+Rx = /(?\+:\mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}\texorpdfstring{$\vert$}{|}\textbackslash{}\textbackslash{}u0063)(?\+:\mbox{\hyperlink{uuid_8min_8js_a400dc8109620963da8314d4bdfa14f83}{o}}\texorpdfstring{$\vert$}{|}\textbackslash{}\textbackslash{}u006\mbox{[}Ff\mbox{]})(?\+:\mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}\texorpdfstring{$\vert$}{|}\textbackslash{}\textbackslash{}u006\mbox{[}Ee\mbox{]})(?\+:\mbox{\hyperlink{ordered-map_8min_8js_ad9a7d92cb87932d25187fdec3ba1b621}{s}}\texorpdfstring{$\vert$}{|}\textbackslash{}\textbackslash{}u0073)(?\+:\mbox{\hyperlink{uuidv4_8min_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}}\texorpdfstring{$\vert$}{|}\textbackslash{}\textbackslash{}u0074)(?\+:\mbox{\hyperlink{uuid_8min_8js_aaa5fef39529cdffdfa257202bb4fda9f}{r}}\texorpdfstring{$\vert$}{|}\textbackslash{}\textbackslash{}u0072)(?\+:\mbox{\hyperlink{uuidv5_8min_8js_a36cbe5f9ac6b49b08930abff15443ab0}{u}}\texorpdfstring{$\vert$}{|}\textbackslash{}\textbackslash{}u0075)(?\+:\mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}\texorpdfstring{$\vert$}{|}\textbackslash{}\textbackslash{}u0063)(?\+:\mbox{\hyperlink{uuidv4_8min_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}}\texorpdfstring{$\vert$}{|}\textbackslash{}\textbackslash{}u0074)(?\+:\mbox{\hyperlink{uuid_8min_8js_a400dc8109620963da8314d4bdfa14f83}{o}}\texorpdfstring{$\vert$}{|}\textbackslash{}\textbackslash{}u006\mbox{[}Ff\mbox{]})(?\+:\mbox{\hyperlink{uuid_8min_8js_aaa5fef39529cdffdfa257202bb4fda9f}{r}}\texorpdfstring{$\vert$}{|}\textbackslash{}\textbackslash{}u0072)/}
+
+\Hypertarget{json-bigint_2lib_2parse_8js_a66223b606736d9d09fd26f8f5d008d19}\index{parse.js@{parse.js}!suspectProtoRx@{suspectProtoRx}}
+\index{suspectProtoRx@{suspectProtoRx}!parse.js@{parse.js}}
+\doxysubsubsection{\texorpdfstring{suspectProtoRx}{suspectProtoRx}}
+{\footnotesize\ttfamily \label{json-bigint_2lib_2parse_8js_a66223b606736d9d09fd26f8f5d008d19} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} suspect\+Proto\+Rx = /(?\+:\mbox{\hyperlink{fp_8js_a6e69a5af94d7d53886e51f89fb3bd6b4}{\+\_\+}}\texorpdfstring{$\vert$}{|}\textbackslash{}\textbackslash{}u005\mbox{[}Ff\mbox{]})(?\+:\mbox{\hyperlink{fp_8js_a6e69a5af94d7d53886e51f89fb3bd6b4}{\+\_\+}}\texorpdfstring{$\vert$}{|}\textbackslash{}\textbackslash{}u005\mbox{[}Ff\mbox{]})(?\+:\mbox{\hyperlink{ordered-map_8min_8js_ab2752257551c1a01e010ceba5d7ec200}{p}}\texorpdfstring{$\vert$}{|}\textbackslash{}\textbackslash{}u0070)(?\+:\mbox{\hyperlink{uuid_8min_8js_aaa5fef39529cdffdfa257202bb4fda9f}{r}}\texorpdfstring{$\vert$}{|}\textbackslash{}\textbackslash{}u0072)(?\+:\mbox{\hyperlink{uuid_8min_8js_a400dc8109620963da8314d4bdfa14f83}{o}}\texorpdfstring{$\vert$}{|}\textbackslash{}\textbackslash{}u006\mbox{[}Ff\mbox{]})(?\+:\mbox{\hyperlink{uuidv4_8min_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}}\texorpdfstring{$\vert$}{|}\textbackslash{}\textbackslash{}u0074)(?\+:\mbox{\hyperlink{uuid_8min_8js_a400dc8109620963da8314d4bdfa14f83}{o}}\texorpdfstring{$\vert$}{|}\textbackslash{}\textbackslash{}u006\mbox{[}Ff\mbox{]})(?\+:\mbox{\hyperlink{fp_8js_a6e69a5af94d7d53886e51f89fb3bd6b4}{\+\_\+}}\texorpdfstring{$\vert$}{|}\textbackslash{}\textbackslash{}u005\mbox{[}Ff\mbox{]})(?\+:\mbox{\hyperlink{fp_8js_a6e69a5af94d7d53886e51f89fb3bd6b4}{\+\_\+}}\texorpdfstring{$\vert$}{|}\textbackslash{}\textbackslash{}u005\mbox{[}Ff\mbox{]})/}
+

@@ -1,0 +1,15 @@
+<map id="createECDSASigner" name="createECDSASigner">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,147,80"/>
+<area shape="rect" id="Node000002" href="$jsonwebtoken_2node__modules_2jwa_2index_8js.html#a85ef30c87a598da8d0b89f876a473326" title=" " alt="" coords="195,55,312,80"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,65,180,65,180,70,147,70"/>
+<area shape="rect" id="Node000003" href="$jsonwebtoken_2node__modules_2jwa_2index_8js.html#a085c32c0a2225244e6347429dc10ca65" title=" " alt="" coords="360,5,491,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="300,51,363,33,364,38,302,57"/>
+<area shape="rect" id="Node000005" href="$jsonwebtoken_2node__modules_2jwa_2index_8js.html#a58d193e4c3d0c88ce783cf40c8f46d9b" title=" " alt="" coords="380,55,471,80"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="313,65,365,65,365,70,313,70"/>
+<area shape="rect" id="Node000006" href="$jsonwebtoken_2node__modules_2jwa_2index_8js.html#a9a946954a6ea9374d040decf53ff28fe" title=" " alt="" coords="372,104,479,130"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="302,78,364,97,363,102,300,84"/>
+<area shape="rect" id="Node000004" href="$jsonwebtoken_2node__modules_2jwa_2index_8js.html#a1402aa229decd4fc897df431713b9aea" title=" " alt="" coords="553,5,628,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="492,16,538,16,538,21,492,21"/>
+<area shape="rect" id="Node000007" href="$jsonwebtoken_2node__modules_2jwa_2index_8js.html#af1d9314c7af636bebe164507536029e9" title=" " alt="" coords="539,104,642,130"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="479,114,524,114,524,120,479,120"/>
+</map>

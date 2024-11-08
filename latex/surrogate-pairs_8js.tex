@@ -1,0 +1,48 @@
+\doxysection{backend/node\+\_\+modules/html-\/entities/lib/surrogate-\/pairs.js File Reference}
+\hypertarget{surrogate-pairs_8js}{}\label{surrogate-pairs_8js}\index{backend/node\_modules/html-\/entities/lib/surrogate-\/pairs.js@{backend/node\_modules/html-\/entities/lib/surrogate-\/pairs.js}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{surrogate-pairs_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{surrogate-pairs_8js_ae80657ad2fc80e885865182e58d13193}{from\+Code\+Point}} =String.\+from\+Code\+Point\texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|}function(astral\+Code\+Point)\{\mbox{\hyperlink{uuid_n_i_l_8min_8js_a58bb107e2e36e8f85abe04406f37ea96}{return}} String.\+from\+Char\+Code(\mbox{\hyperlink{floor_8js_a87888e6ebaeda48ea98b35e3ef693726}{Math.\+floor}}((astral\+Code\+Point-\/65536)/1024)+55296,(astral\+Code\+Point-\/65536)\%1024+56320)\}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{surrogate-pairs_8js_a260a8416e23f35fd8f76758126438265}{get\+Code\+Point}} =String.\+prototype.\+code\+Point\+At?function(input,position)\{\mbox{\hyperlink{uuid_n_i_l_8min_8js_a58bb107e2e36e8f85abe04406f37ea96}{return}} input.\+code\+Point\+At(position)\}\+:function(input,position)\{\mbox{\hyperlink{uuid_n_i_l_8min_8js_a58bb107e2e36e8f85abe04406f37ea96}{return}}(\mbox{\hyperlink{longbits_8js_ab461155ec48c76bb68d2872b8da726c1}{input.\+char\+Code\+At}}(position)-\/55296)\texorpdfstring{$\ast$}{*}1024+\mbox{\hyperlink{longbits_8js_ab461155ec48c76bb68d2872b8da726c1}{input.\+char\+Code\+At}}(position+1)-\/56320+65536\}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{surrogate-pairs_8js_a97277128422592520ea2cd1202ba39da}{high\+Surrogate\+From}} =55296
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{surrogate-pairs_8js_af904a88a3a8784fdc372d3b725164da9}{high\+Surrogate\+To}} =56319
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{surrogate-pairs_8js_ae80657ad2fc80e885865182e58d13193}\index{surrogate-\/pairs.js@{surrogate-\/pairs.js}!fromCodePoint@{fromCodePoint}}
+\index{fromCodePoint@{fromCodePoint}!surrogate-\/pairs.js@{surrogate-\/pairs.js}}
+\doxysubsubsection{\texorpdfstring{fromCodePoint}{fromCodePoint}}
+{\footnotesize\ttfamily \label{surrogate-pairs_8js_ae80657ad2fc80e885865182e58d13193} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} from\+Code\+Point =String.\+from\+Code\+Point\texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|}function(astral\+Code\+Point)\{\mbox{\hyperlink{uuid_n_i_l_8min_8js_a58bb107e2e36e8f85abe04406f37ea96}{return}} String.\+from\+Char\+Code(\mbox{\hyperlink{floor_8js_a87888e6ebaeda48ea98b35e3ef693726}{Math.\+floor}}((astral\+Code\+Point-\/65536)/1024)+55296,(astral\+Code\+Point-\/65536)\%1024+56320)\}}
+
+\Hypertarget{surrogate-pairs_8js_a260a8416e23f35fd8f76758126438265}\index{surrogate-\/pairs.js@{surrogate-\/pairs.js}!getCodePoint@{getCodePoint}}
+\index{getCodePoint@{getCodePoint}!surrogate-\/pairs.js@{surrogate-\/pairs.js}}
+\doxysubsubsection{\texorpdfstring{getCodePoint}{getCodePoint}}
+{\footnotesize\ttfamily \label{surrogate-pairs_8js_a260a8416e23f35fd8f76758126438265} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} get\+Code\+Point =String.\+prototype.\+code\+Point\+At?function(input,position)\{\mbox{\hyperlink{uuid_n_i_l_8min_8js_a58bb107e2e36e8f85abe04406f37ea96}{return}} input.\+code\+Point\+At(position)\}\+:function(input,position)\{\mbox{\hyperlink{uuid_n_i_l_8min_8js_a58bb107e2e36e8f85abe04406f37ea96}{return}}(\mbox{\hyperlink{longbits_8js_ab461155ec48c76bb68d2872b8da726c1}{input.\+char\+Code\+At}}(position)-\/55296)\texorpdfstring{$\ast$}{*}1024+\mbox{\hyperlink{longbits_8js_ab461155ec48c76bb68d2872b8da726c1}{input.\+char\+Code\+At}}(position+1)-\/56320+65536\}}
+
+\Hypertarget{surrogate-pairs_8js_a97277128422592520ea2cd1202ba39da}\index{surrogate-\/pairs.js@{surrogate-\/pairs.js}!highSurrogateFrom@{highSurrogateFrom}}
+\index{highSurrogateFrom@{highSurrogateFrom}!surrogate-\/pairs.js@{surrogate-\/pairs.js}}
+\doxysubsubsection{\texorpdfstring{highSurrogateFrom}{highSurrogateFrom}}
+{\footnotesize\ttfamily \label{surrogate-pairs_8js_a97277128422592520ea2cd1202ba39da} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} high\+Surrogate\+From =55296}
+
+\Hypertarget{surrogate-pairs_8js_af904a88a3a8784fdc372d3b725164da9}\index{surrogate-\/pairs.js@{surrogate-\/pairs.js}!highSurrogateTo@{highSurrogateTo}}
+\index{highSurrogateTo@{highSurrogateTo}!surrogate-\/pairs.js@{surrogate-\/pairs.js}}
+\doxysubsubsection{\texorpdfstring{highSurrogateTo}{highSurrogateTo}}
+{\footnotesize\ttfamily \label{surrogate-pairs_8js_af904a88a3a8784fdc372d3b725164da9} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} high\+Surrogate\+To =56319}
+
+\Hypertarget{surrogate-pairs_8js_ae2475e10618961c050dcba04e8c42331}\index{surrogate-\/pairs.js@{surrogate-\/pairs.js}!strict@{strict}}
+\index{strict@{strict}!surrogate-\/pairs.js@{surrogate-\/pairs.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{surrogate-pairs_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+

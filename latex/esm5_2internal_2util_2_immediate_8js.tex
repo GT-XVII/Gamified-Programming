@@ -1,0 +1,93 @@
+\doxysection{backend/node\+\_\+modules/rxjs/dist/esm5/internal/util/\+Immediate.js File Reference}
+\hypertarget{esm5_2internal_2util_2_immediate_8js}{}\label{esm5_2internal_2util_2_immediate_8js}\index{backend/node\_modules/rxjs/dist/esm5/internal/util/Immediate.js@{backend/node\_modules/rxjs/dist/esm5/internal/util/Immediate.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{esm5_2internal_2util_2_immediate_8js_a897a40d92509b0fa36e1db6d8afcadd6}{find\+And\+Clear\+Handle}} (\mbox{\hyperlink{application_8js_a9f88a167a461dc8dbd869fe1e6d81b98}{handle}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{esm5_2internal_2util_2_immediate_8js_a0c1af89edcd5e03ab5648b9f5fe84c5d}{next\+Handle}} = 1
+\item 
+var \mbox{\hyperlink{esm5_2internal_2util_2_immediate_8js_a64942ec91d03108645271b561686dbeb}{resolved}}
+\item 
+var \mbox{\hyperlink{esm5_2internal_2util_2_immediate_8js_ad46d8b6d15395b50ad4a9bc991c755f1}{active\+Handles}} = \{\}
+\item 
+var export \mbox{\hyperlink{esm5_2internal_2util_2_immediate_8js_a2f208796ed2d147255e436e3b3394e4b}{Immediate}}
+\item 
+var export \mbox{\hyperlink{esm5_2internal_2util_2_immediate_8js_a8f44be008d61aeccbf1e5ce6d3ae3edd}{Test\+Tools}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{esm5_2internal_2util_2_immediate_8js_a897a40d92509b0fa36e1db6d8afcadd6}\index{Immediate.js@{Immediate.js}!findAndClearHandle@{findAndClearHandle}}
+\index{findAndClearHandle@{findAndClearHandle}!Immediate.js@{Immediate.js}}
+\doxysubsubsection{\texorpdfstring{findAndClearHandle()}{findAndClearHandle()}}
+{\footnotesize\ttfamily \label{esm5_2internal_2util_2_immediate_8js_a897a40d92509b0fa36e1db6d8afcadd6} 
+function find\+And\+Clear\+Handle (\begin{DoxyParamCaption}\item[{}]{handle}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{cjs_2internal_2util_2_immediate_8js_ad46d8b6d15395b50ad4a9bc991c755f1}{active\+Handles}}, and \mbox{\hyperlink{application_8js_a9f88a167a461dc8dbd869fe1e6d81b98}{handle}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{esm5_2internal_2util_2_immediate_8js_ad46d8b6d15395b50ad4a9bc991c755f1}\index{Immediate.js@{Immediate.js}!activeHandles@{activeHandles}}
+\index{activeHandles@{activeHandles}!Immediate.js@{Immediate.js}}
+\doxysubsubsection{\texorpdfstring{activeHandles}{activeHandles}}
+{\footnotesize\ttfamily \label{esm5_2internal_2util_2_immediate_8js_ad46d8b6d15395b50ad4a9bc991c755f1} 
+var active\+Handles = \{\}}
+
+\Hypertarget{esm5_2internal_2util_2_immediate_8js_a2f208796ed2d147255e436e3b3394e4b}\index{Immediate.js@{Immediate.js}!Immediate@{Immediate}}
+\index{Immediate@{Immediate}!Immediate.js@{Immediate.js}}
+\doxysubsubsection{\texorpdfstring{Immediate}{Immediate}}
+{\footnotesize\ttfamily \label{esm5_2internal_2util_2_immediate_8js_a2f208796ed2d147255e436e3b3394e4b} 
+var export Immediate}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{rxjs_8umd_8js_a5008ba0c81d22f889926a449c993ac53}{setImmediate}}:\ \textcolor{keyword}{function}\ (cb)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ var\ \mbox{\hyperlink{application_8js_a9f88a167a461dc8dbd869fe1e6d81b98}{handle}}\ =\ \mbox{\hyperlink{cjs_2internal_2util_2_immediate_8js_a0c1af89edcd5e03ab5648b9f5fe84c5d}{nextHandle}}++;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{cjs_2internal_2util_2_immediate_8js_ad46d8b6d15395b50ad4a9bc991c755f1}{activeHandles}}[\mbox{\hyperlink{application_8js_a9f88a167a461dc8dbd869fe1e6d81b98}{handle}}]\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{cjs_2internal_2util_2_immediate_8js_a64942ec91d03108645271b561686dbeb}{resolved}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{cjs_2internal_2util_2_immediate_8js_a64942ec91d03108645271b561686dbeb}{resolved}}\ =\ \mbox{\hyperlink{__get_tag_8js_abace523389c17bce1848e3a427871700}{Promise}}.resolve();}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{cjs_2internal_2util_2_immediate_8js_a64942ec91d03108645271b561686dbeb}{resolved}}.then(\textcolor{keyword}{function}\ ()\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{cjs_2internal_2util_2_immediate_8js_a897a40d92509b0fa36e1db6d8afcadd6}{findAndClearHandle}}(\mbox{\hyperlink{application_8js_a9f88a167a461dc8dbd869fe1e6d81b98}{handle}})\ \&\&\ cb();\ \});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{application_8js_a9f88a167a461dc8dbd869fe1e6d81b98}{handle}};}
+\DoxyCodeLine{\ \ \ \ \},}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{rxjs_8umd_8js_ae2c2c6e1a48e103e177a88bd229778f9}{clearImmediate}}:\ \textcolor{keyword}{function}\ (\mbox{\hyperlink{application_8js_a9f88a167a461dc8dbd869fe1e6d81b98}{handle}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{cjs_2internal_2util_2_immediate_8js_a897a40d92509b0fa36e1db6d8afcadd6}{findAndClearHandle}}(\mbox{\hyperlink{application_8js_a9f88a167a461dc8dbd869fe1e6d81b98}{handle}});}
+\DoxyCodeLine{\ \ \ \ \},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{esm5_2internal_2util_2_immediate_8js_a0c1af89edcd5e03ab5648b9f5fe84c5d}\index{Immediate.js@{Immediate.js}!nextHandle@{nextHandle}}
+\index{nextHandle@{nextHandle}!Immediate.js@{Immediate.js}}
+\doxysubsubsection{\texorpdfstring{nextHandle}{nextHandle}}
+{\footnotesize\ttfamily \label{esm5_2internal_2util_2_immediate_8js_a0c1af89edcd5e03ab5648b9f5fe84c5d} 
+var next\+Handle = 1}
+
+\Hypertarget{esm5_2internal_2util_2_immediate_8js_a64942ec91d03108645271b561686dbeb}\index{Immediate.js@{Immediate.js}!resolved@{resolved}}
+\index{resolved@{resolved}!Immediate.js@{Immediate.js}}
+\doxysubsubsection{\texorpdfstring{resolved}{resolved}}
+{\footnotesize\ttfamily \label{esm5_2internal_2util_2_immediate_8js_a64942ec91d03108645271b561686dbeb} 
+var resolved}
+
+\Hypertarget{esm5_2internal_2util_2_immediate_8js_a8f44be008d61aeccbf1e5ce6d3ae3edd}\index{Immediate.js@{Immediate.js}!TestTools@{TestTools}}
+\index{TestTools@{TestTools}!Immediate.js@{Immediate.js}}
+\doxysubsubsection{\texorpdfstring{TestTools}{TestTools}}
+{\footnotesize\ttfamily \label{esm5_2internal_2util_2_immediate_8js_a8f44be008d61aeccbf1e5ce6d3ae3edd} 
+var export Test\+Tools}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{cell_8js_a8204c614417ed48354f778f7121b0ab2}{pending}}:\ \textcolor{keyword}{function}\ ()\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ Object.keys(\mbox{\hyperlink{cjs_2internal_2util_2_immediate_8js_ad46d8b6d15395b50ad4a9bc991c755f1}{activeHandles}}).length;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}

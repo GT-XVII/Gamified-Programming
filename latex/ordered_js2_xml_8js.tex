@@ -1,0 +1,176 @@
+\doxysection{backend/node\+\_\+modules/fast-\/xml-\/parser/src/xmlbuilder/ordered\+Js2\+Xml.js File Reference}
+\hypertarget{ordered_js2_xml_8js}{}\label{ordered_js2_xml_8js}\index{backend/node\_modules/fast-\/xml-\/parser/src/xmlbuilder/orderedJs2Xml.js@{backend/node\_modules/fast-\/xml-\/parser/src/xmlbuilder/orderedJs2Xml.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{ordered_js2_xml_8js_a183a5b18d06d1316d985a040795586ee}{to\+Xml}} (j\+Array, options)
+\item 
+function \mbox{\hyperlink{ordered_js2_xml_8js_a428f3c050d6dfe065c9c91b8a4f5e688}{arr\+To\+Str}} (arr, options, j\+Path, indentation)
+\item 
+function \mbox{\hyperlink{ordered_js2_xml_8js_a05ea9320adb81802fde9cb7ea4cbf834}{prop\+Name}} (\mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}})
+\item 
+function \mbox{\hyperlink{ordered_js2_xml_8js_ae6ca161d8778c9e07c08c97e6395e148}{attr\+\_\+to\+\_\+str}} (attr\+Map, options)
+\item 
+function \mbox{\hyperlink{ordered_js2_xml_8js_ae155f6d2242f849879a955d7839abdc1}{is\+Stop\+Node}} (j\+Path, options)
+\item 
+function \mbox{\hyperlink{ordered_js2_xml_8js_a1a07006a1f3230c1912d6bd75cfe7e8d}{replace\+Entities\+Value}} (text\+Value, options)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{ordered_js2_xml_8js_a0603d6ece8c5d37b4b7db697db053a4b}{EOL}} = "{}\textbackslash{}n"{}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{ordered_js2_xml_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} = \mbox{\hyperlink{ordered_js2_xml_8js_a183a5b18d06d1316d985a040795586ee}{to\+Xml}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{ordered_js2_xml_8js_a428f3c050d6dfe065c9c91b8a4f5e688}\index{orderedJs2Xml.js@{orderedJs2Xml.js}!arrToStr@{arrToStr}}
+\index{arrToStr@{arrToStr}!orderedJs2Xml.js@{orderedJs2Xml.js}}
+\doxysubsubsection{\texorpdfstring{arrToStr()}{arrToStr()}}
+{\footnotesize\ttfamily \label{ordered_js2_xml_8js_a428f3c050d6dfe065c9c91b8a4f5e688} 
+function arr\+To\+Str (\begin{DoxyParamCaption}\item[{}]{arr}{, }\item[{}]{options}{, }\item[{}]{j\+Path}{, }\item[{}]{indentation}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{ordered_js2_xml_8js_a428f3c050d6dfe065c9c91b8a4f5e688}{arr\+To\+Str()}}, \mbox{\hyperlink{ordered_js2_xml_8js_ae6ca161d8778c9e07c08c97e6395e148}{attr\+\_\+to\+\_\+str()}}, \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}, \mbox{\hyperlink{ordered_js2_xml_8js_ae155f6d2242f849879a955d7839abdc1}{is\+Stop\+Node()}}, \mbox{\hyperlink{ordered_js2_xml_8js_a05ea9320adb81802fde9cb7ea4cbf834}{prop\+Name()}}, \mbox{\hyperlink{ordered_js2_xml_8js_a1a07006a1f3230c1912d6bd75cfe7e8d}{replace\+Entities\+Value()}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ordered_js2_xml_8js_a428f3c050d6dfe065c9c91b8a4f5e688_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{ordered_js2_xml_8js_a428f3c050d6dfe065c9c91b8a4f5e688_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{ordered_js2_xml_8js_ae6ca161d8778c9e07c08c97e6395e148}\index{orderedJs2Xml.js@{orderedJs2Xml.js}!attr\_to\_str@{attr\_to\_str}}
+\index{attr\_to\_str@{attr\_to\_str}!orderedJs2Xml.js@{orderedJs2Xml.js}}
+\doxysubsubsection{\texorpdfstring{attr\_to\_str()}{attr\_to\_str()}}
+{\footnotesize\ttfamily \label{ordered_js2_xml_8js_ae6ca161d8778c9e07c08c97e6395e148} 
+function attr\+\_\+to\+\_\+str (\begin{DoxyParamCaption}\item[{}]{attr\+Map}{, }\item[{}]{options}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, and \mbox{\hyperlink{ordered_js2_xml_8js_a1a07006a1f3230c1912d6bd75cfe7e8d}{replace\+Entities\+Value()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=281pt]{ordered_js2_xml_8js_ae6ca161d8778c9e07c08c97e6395e148_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{ordered_js2_xml_8js_ae6ca161d8778c9e07c08c97e6395e148_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{ordered_js2_xml_8js_ae155f6d2242f849879a955d7839abdc1}\index{orderedJs2Xml.js@{orderedJs2Xml.js}!isStopNode@{isStopNode}}
+\index{isStopNode@{isStopNode}!orderedJs2Xml.js@{orderedJs2Xml.js}}
+\doxysubsubsection{\texorpdfstring{isStopNode()}{isStopNode()}}
+{\footnotesize\ttfamily \label{ordered_js2_xml_8js_ae155f6d2242f849879a955d7839abdc1} 
+function is\+Stop\+Node (\begin{DoxyParamCaption}\item[{}]{j\+Path}{, }\item[{}]{options}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{cookie_2index_8js_a0ac000318c33f03e412baff8df5b2513}{index}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ordered_js2_xml_8js_ae155f6d2242f849879a955d7839abdc1_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{ordered_js2_xml_8js_a05ea9320adb81802fde9cb7ea4cbf834}\index{orderedJs2Xml.js@{orderedJs2Xml.js}!propName@{propName}}
+\index{propName@{propName}!orderedJs2Xml.js@{orderedJs2Xml.js}}
+\doxysubsubsection{\texorpdfstring{propName()}{propName()}}
+{\footnotesize\ttfamily \label{ordered_js2_xml_8js_a05ea9320adb81802fde9cb7ea4cbf834} 
+function prop\+Name (\begin{DoxyParamCaption}\item[{}]{obj}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}, \mbox{\hyperlink{__base_assign_8js_a87dd2006b34e1d50c301938be11fd6fa}{keys}}, and \mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=305pt]{ordered_js2_xml_8js_a05ea9320adb81802fde9cb7ea4cbf834_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{ordered_js2_xml_8js_a1a07006a1f3230c1912d6bd75cfe7e8d}\index{orderedJs2Xml.js@{orderedJs2Xml.js}!replaceEntitiesValue@{replaceEntitiesValue}}
+\index{replaceEntitiesValue@{replaceEntitiesValue}!orderedJs2Xml.js@{orderedJs2Xml.js}}
+\doxysubsubsection{\texorpdfstring{replaceEntitiesValue()}{replaceEntitiesValue()}}
+{\footnotesize\ttfamily \label{ordered_js2_xml_8js_a1a07006a1f3230c1912d6bd75cfe7e8d} 
+function replace\+Entities\+Value (\begin{DoxyParamCaption}\item[{}]{text\+Value}{, }\item[{}]{options}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ordered_js2_xml_8js_a1a07006a1f3230c1912d6bd75cfe7e8d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{ordered_js2_xml_8js_a183a5b18d06d1316d985a040795586ee}\index{orderedJs2Xml.js@{orderedJs2Xml.js}!toXml@{toXml}}
+\index{toXml@{toXml}!orderedJs2Xml.js@{orderedJs2Xml.js}}
+\doxysubsubsection{\texorpdfstring{toXml()}{toXml()}}
+{\footnotesize\ttfamily \label{ordered_js2_xml_8js_a183a5b18d06d1316d985a040795586ee} 
+function to\+Xml (\begin{DoxyParamCaption}\item[{}]{j\+Array}{, }\item[{}]{options}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{array\}} & j\+Array \\
+\hline
+{\em \{any\}} & options \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{ordered_js2_xml_8js_a428f3c050d6dfe065c9c91b8a4f5e688}{arr\+To\+Str()}}, and \mbox{\hyperlink{ordered_js2_xml_8js_a0603d6ece8c5d37b4b7db697db053a4b}{EOL}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ordered_js2_xml_8js_a183a5b18d06d1316d985a040795586ee_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{ordered_js2_xml_8js_a0603d6ece8c5d37b4b7db697db053a4b}\index{orderedJs2Xml.js@{orderedJs2Xml.js}!EOL@{EOL}}
+\index{EOL@{EOL}!orderedJs2Xml.js@{orderedJs2Xml.js}}
+\doxysubsubsection{\texorpdfstring{EOL}{EOL}}
+{\footnotesize\ttfamily \label{ordered_js2_xml_8js_a0603d6ece8c5d37b4b7db697db053a4b} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} EOL = "{}\textbackslash{}n"{}}
+
+\Hypertarget{ordered_js2_xml_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\index{orderedJs2Xml.js@{orderedJs2Xml.js}!exports@{exports}}
+\index{exports@{exports}!orderedJs2Xml.js@{orderedJs2Xml.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \label{ordered_js2_xml_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports = \mbox{\hyperlink{ordered_js2_xml_8js_a183a5b18d06d1316d985a040795586ee}{to\+Xml}}}
+

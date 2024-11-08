@@ -1,0 +1,8 @@
+<map id="readFixed32_end" name="readFixed32_end">
+<area shape="rect" id="Node000001" title=" " alt="" coords="257,5,377,31"/>
+<area shape="rect" id="Node000002" href="$protobufjs_2dist_2minimal_2protobuf_8js.html#ad8544724c289e628d9b1b4b5d59f1c38" title=" " alt="" coords="5,5,69,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="242,21,69,21,69,16,242,16"/>
+<area shape="rect" id="Node000003" href="$reader_8js.html#a6dee9074310e2c6510bbb57e61f858a9" title=" " alt="" coords="117,31,209,56"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="242,33,210,39,209,33,241,28"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="101,34,69,27,70,22,102,29"/>
+</map>

@@ -1,0 +1,123 @@
+\doxysection{Https\+Proxy\+Agent Class Reference}
+\hypertarget{class_https_proxy_agent}{}\label{class_https_proxy_agent}\index{HttpsProxyAgent@{HttpsProxyAgent}}
+
+
+Inheritance diagram for Https\+Proxy\+Agent\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{class_https_proxy_agent__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Https\+Proxy\+Agent\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{class_https_proxy_agent__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_https_proxy_agent_a41fd5babb3e7f09d704b48ca4745dad4}{constructor}} (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_acc29a98f9072a7cabbfef0b654723faf}{proxy}}, opts)
+\item 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{class_https_proxy_agent_a54c24ae9f77e44819e41de38dbe55bbe}{connect}} (\mbox{\hyperlink{agent-base_2dist_2helpers_8js_a960c3c3c7bce40c2aa54b029b3dbb9c8}{req}}, opts)
+\item 
+\mbox{\hyperlink{class_https_proxy_agent_a992305a9465e0c05b5d816ece4164355}{constructor}} (\+\_\+opts)
+\item 
+\mbox{\hyperlink{class_https_proxy_agent_a4e9130de9e6feaaba06c7185748aa642}{callback}} (\mbox{\hyperlink{agent-base_2dist_2helpers_8js_a960c3c3c7bce40c2aa54b029b3dbb9c8}{req}}, opts)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The {\ttfamily \doxylink{class_https_proxy_agent}{Https\+Proxy\+Agent}} implements an HTTP \doxylink{class_agent}{Agent} subclass that connects to the specified "{}\+HTTP(s) proxy server"{} in order to proxy HTTPS requests.
+
+Outgoing HTTP requests are first tunneled through the proxy server using the {\ttfamily CONNECT} HTTP request method to establish a connection to the proxy server, and then the proxy server connects to the destination target and issues the HTTP request from the proxy server.
+
+{\ttfamily https\+:} requests have their socket connection upgraded to TLS once the connection to the proxy server has been established.
+
+The {\ttfamily \doxylink{class_https_proxy_agent}{Https\+Proxy\+Agent}} implements an HTTP \doxylink{class_agent}{Agent} subclass that connects to the specified "{}\+HTTP(s) proxy server"{} in order to proxy HTTPS requests.
+
+Outgoing HTTP requests are first tunneled through the proxy server using the {\ttfamily CONNECT} HTTP request method to establish a connection to the proxy server, and then the proxy server connects to the destination target and issues the HTTP request from the proxy server.
+
+{\ttfamily https\+:} requests have their socket connection upgraded to TLS once the connection to the proxy server has been established.
+
+@api public 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_https_proxy_agent_a4e9130de9e6feaaba06c7185748aa642}\index{HttpsProxyAgent@{HttpsProxyAgent}!callback@{callback}}
+\index{callback@{callback}!HttpsProxyAgent@{HttpsProxyAgent}}
+\doxysubsubsection{\texorpdfstring{callback()}{callback()}}
+{\footnotesize\ttfamily \label{class_https_proxy_agent_a4e9130de9e6feaaba06c7185748aa642} 
+Https\+Proxy\+Agent\+::callback (\begin{DoxyParamCaption}\item[{}]{req}{, }\item[{}]{opts}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Called when the node-\/core HTTP client library is creating a new HTTP request.
+
+@api protected 
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{teeny-request_2node__modules_2https-proxy-agent_2dist_2agent_8js_a9010a5ba1e0664f677e88772a797c4c9}{\+\_\+\+\_\+awaiter}}, \mbox{\hyperlink{teeny-request_2node__modules_2https-proxy-agent_2dist_2agent_8js_ad9535cd8fb66673f53cea356b63e94c1}{assert\+\_\+1}}, \mbox{\hyperlink{teeny-request_2node__modules_2https-proxy-agent_2dist_2agent_8js_a80334e67dc9b36930e9f0cd3d5f434cc}{debug}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7f2cb2fcdd79bf72cefd29b7bc2d10fa}{headers}}, \mbox{\hyperlink{teeny-request_2node__modules_2https-proxy-agent_2dist_2agent_8js_a7b16653a07bed067a2f4c5adcc6bd5c4}{is\+Default\+Port()}}, \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}, \mbox{\hyperlink{teeny-request_2node__modules_2https-proxy-agent_2dist_2agent_8js_a15ed9b791bc1d5f63e4dc8a56c848361}{net\+\_\+1}}, \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}, \mbox{\hyperlink{omit_8js_a1c1408b80a5d98fe930b564f963d7be0}{omit}}, \mbox{\hyperlink{teeny-request_2node__modules_2https-proxy-agent_2dist_2agent_8js_a7af344783b1a3dc40a0509298af06aab}{parse\+\_\+proxy\+\_\+response\+\_\+1}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_acc29a98f9072a7cabbfef0b654723faf}{proxy}}, \mbox{\hyperlink{agent-base_2dist_2helpers_8js_a960c3c3c7bce40c2aa54b029b3dbb9c8}{req}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a1096ae4f1f2d9f895396bef1be5b4af5}{resume}}, \mbox{\hyperlink{ordered-map_8min_8js_ad9a7d92cb87932d25187fdec3ba1b621}{s}}, \mbox{\hyperlink{teeny-request_2node__modules_2https-proxy-agent_2dist_2agent_8js_a037604658479dd4d1553c23d93e54b3d}{tls\+\_\+1}}, and \mbox{\hyperlink{is-stream_2index_8js_ac8dca21fa013a97d16bb9a1a8a41de0b}{writable}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{class_https_proxy_agent_a4e9130de9e6feaaba06c7185748aa642_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_https_proxy_agent_a54c24ae9f77e44819e41de38dbe55bbe}\index{HttpsProxyAgent@{HttpsProxyAgent}!connect@{connect}}
+\index{connect@{connect}!HttpsProxyAgent@{HttpsProxyAgent}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily \label{class_https_proxy_agent_a54c24ae9f77e44819e41de38dbe55bbe} 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} Https\+Proxy\+Agent\+::connect (\begin{DoxyParamCaption}\item[{}]{req}{, }\item[{}]{opts}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Called when the node-\/core HTTP client library is creating a new HTTP request. 
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{teeny-request_2node__modules_2https-proxy-agent_2dist_2agent_8js_ad9535cd8fb66673f53cea356b63e94c1}{assert\+\_\+1}}, \mbox{\hyperlink{google-auth-library_2build_2src_2index_8js_ad26b69249342cfd7b4d6e0352d739857}{auth}}, \mbox{\hyperlink{cjs_2internal_2operators_2connect_8js_ac090844dde4bb03e7cb30b907e52ce18}{connect}}, \mbox{\hyperlink{teeny-request_2node__modules_2https-proxy-agent_2dist_2agent_8js_a80334e67dc9b36930e9f0cd3d5f434cc}{debug}}, \mbox{\hyperlink{_0dprotobufjs_2eventemitter_2index_8js_a16439605b9cd7bd34fdbf935bef49de6}{emit}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7f2cb2fcdd79bf72cefd29b7bc2d10fa}{headers}}, \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a24df1ebe2aee23540b4159c6087afdf1}{net}}, \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}, \mbox{\hyperlink{teeny-request_2node__modules_2https-proxy-agent_2dist_2agent_8js_a7af344783b1a3dc40a0509298af06aab}{parse\+\_\+proxy\+\_\+response\+\_\+1}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_acc29a98f9072a7cabbfef0b654723faf}{proxy}}, \mbox{\hyperlink{agent-base_2dist_2helpers_8js_a960c3c3c7bce40c2aa54b029b3dbb9c8}{req}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a1096ae4f1f2d9f895396bef1be5b4af5}{resume}}, \mbox{\hyperlink{ordered-map_8min_8js_ad9a7d92cb87932d25187fdec3ba1b621}{s}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}}, and \mbox{\hyperlink{is-stream_2index_8js_ac8dca21fa013a97d16bb9a1a8a41de0b}{writable}}.
+
+\Hypertarget{class_https_proxy_agent_a992305a9465e0c05b5d816ece4164355}\index{HttpsProxyAgent@{HttpsProxyAgent}!constructor@{constructor}}
+\index{constructor@{constructor}!HttpsProxyAgent@{HttpsProxyAgent}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_https_proxy_agent_a992305a9465e0c05b5d816ece4164355} 
+Https\+Proxy\+Agent\+::constructor (\begin{DoxyParamCaption}\item[{}]{\+\_\+opts}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{teeny-request_2node__modules_2https-proxy-agent_2dist_2agent_8js_a80334e67dc9b36930e9f0cd3d5f434cc}{debug}}, \mbox{\hyperlink{teeny-request_2node__modules_2https-proxy-agent_2dist_2agent_8js_ade33e3015c2efdc6423d11b49139313b}{is\+HTTPS()}}, \mbox{\hyperlink{parse_int_8js_a04ee837a5f7721fcb0ea2d152162ef92}{parse\+Int()}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_acc29a98f9072a7cabbfef0b654723faf}{proxy}}, and \mbox{\hyperlink{teeny-request_2node__modules_2https-proxy-agent_2dist_2agent_8js_a4cc4c2baaaea0bc0cb659dcd6a889aad}{url\+\_\+1}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{class_https_proxy_agent_a992305a9465e0c05b5d816ece4164355_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_https_proxy_agent_a41fd5babb3e7f09d704b48ca4745dad4}\index{HttpsProxyAgent@{HttpsProxyAgent}!constructor@{constructor}}
+\index{constructor@{constructor}!HttpsProxyAgent@{HttpsProxyAgent}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_https_proxy_agent_a41fd5babb3e7f09d704b48ca4745dad4} 
+Https\+Proxy\+Agent\+::constructor (\begin{DoxyParamCaption}\item[{}]{proxy}{, }\item[{}]{opts}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{teeny-request_2node__modules_2https-proxy-agent_2dist_2agent_8js_a80334e67dc9b36930e9f0cd3d5f434cc}{debug}}, \mbox{\hyperlink{ordered-map_8min_8js_a103df269476e78897c9c4c6cb8f4eb06}{g}}, \mbox{\hyperlink{omit_8js_a1c1408b80a5d98fe930b564f963d7be0}{omit}}, \mbox{\hyperlink{parse_int_8js_a04ee837a5f7721fcb0ea2d152162ef92}{parse\+Int()}}, \mbox{\hyperlink{cjs_2src_2bucket_8js_a1fdc7709faf62dce60620fb3f9d3453c}{path}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_acc29a98f9072a7cabbfef0b654723faf}{proxy}}, \mbox{\hyperlink{formats_8js_afd83a7a4c1a27011426e0e517bddbfbc}{replace}}, \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}, and \mbox{\hyperlink{teeny-request_2node__modules_2https-proxy-agent_2dist_2agent_8js_a4cc4c2baaaea0bc0cb659dcd6a889aad}{url\+\_\+1}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{class_https_proxy_agent_a41fd5babb3e7f09d704b48ca4745dad4_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/https-\/proxy-\/agent/dist/\mbox{\hyperlink{https-proxy-agent_2dist_2index_8js}{index.\+js}}\item 
+backend/node\+\_\+modules/teeny-\/request/node\+\_\+modules/https-\/proxy-\/agent/dist/\mbox{\hyperlink{teeny-request_2node__modules_2https-proxy-agent_2dist_2agent_8js}{agent.\+js}}\end{DoxyCompactItemize}

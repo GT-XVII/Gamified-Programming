@@ -1,0 +1,169 @@
+\doxysection{Bundle\+Executor Class Reference}
+\hypertarget{class_bundle_executor}{}\label{class_bundle_executor}\index{BundleExecutor@{BundleExecutor}}
+
+
+Collaboration diagram for Bundle\+Executor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{class_bundle_executor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_bundle_executor_af6a34367c12a1b7a174c2c5c307ca592}{constructor}} (bundle\+Options, bundle\+Descriptor)
+\item 
+\mbox{\hyperlink{class_bundle_executor_a16329cbc1c180de70dbea0d6f98f0ba8}{schedule}} (api\+Call, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a622460feeccdab6d8f307936fc6b36fb}{callback}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_bundle_executor_a8529ee92baa5fd426b09298b4ade0dca}{\+\_\+maybe\+Clear\+Timeout}} (bundle\+Id)
+\item 
+\mbox{\hyperlink{class_bundle_executor_addff060cf3a9244fb519b62f4624e0a4}{\+\_\+cancel}} (id)
+\item 
+\mbox{\hyperlink{class_bundle_executor_aacb1228795448eac85c83a0707b03aed}{\+\_\+run\+Now}} (bundle\+Id)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_bundle_executor}{Bundle\+Executor} stores several timers for each bundle (calls are bundled based on the options passed, each bundle has unique ID that is calculated based on field values). Each timer fires and sends a call after certain amount of time, and if a new request comes to the same bundle, the timer can be restarted. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_bundle_executor_addff060cf3a9244fb519b62f4624e0a4}\index{BundleExecutor@{BundleExecutor}!\_cancel@{\_cancel}}
+\index{\_cancel@{\_cancel}!BundleExecutor@{BundleExecutor}}
+\doxysubsubsection{\texorpdfstring{\_cancel()}{\_cancel()}}
+{\footnotesize\ttfamily \label{class_bundle_executor_addff060cf3a9244fb519b62f4624e0a4} 
+Bundle\+Executor\+::\+\_\+cancel (\begin{DoxyParamCaption}\item[{}]{id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Cancels an event.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+String\}} & id -\/ The id for the event in the task. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{class_bundle_executor_a8529ee92baa5fd426b09298b4ade0dca}{\+\_\+maybe\+Clear\+Timeout()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_bundle_executor_addff060cf3a9244fb519b62f4624e0a4_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_bundle_executor_a8529ee92baa5fd426b09298b4ade0dca}\index{BundleExecutor@{BundleExecutor}!\_maybeClearTimeout@{\_maybeClearTimeout}}
+\index{\_maybeClearTimeout@{\_maybeClearTimeout}!BundleExecutor@{BundleExecutor}}
+\doxysubsubsection{\texorpdfstring{\_maybeClearTimeout()}{\_maybeClearTimeout()}}
+{\footnotesize\ttfamily \label{class_bundle_executor_a8529ee92baa5fd426b09298b4ade0dca} 
+Bundle\+Executor\+::\+\_\+maybe\+Clear\+Timeout (\begin{DoxyParamCaption}\item[{}]{bundle\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Clears scheduled timeout if it exists.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+String\}} & bundle\+Id -\/ the id for the task whose timeout needs to be cleared. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_bundle_executor_a8529ee92baa5fd426b09298b4ade0dca_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_bundle_executor_aacb1228795448eac85c83a0707b03aed}\index{BundleExecutor@{BundleExecutor}!\_runNow@{\_runNow}}
+\index{\_runNow@{\_runNow}!BundleExecutor@{BundleExecutor}}
+\doxysubsubsection{\texorpdfstring{\_runNow()}{\_runNow()}}
+{\footnotesize\ttfamily \label{class_bundle_executor_aacb1228795448eac85c83a0707b03aed} 
+Bundle\+Executor\+::\+\_\+run\+Now (\begin{DoxyParamCaption}\item[{}]{bundle\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Invokes a task.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+String\}} & bundle\+Id -\/ The id for the task. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{class_bundle_executor_a8529ee92baa5fd426b09298b4ade0dca}{\+\_\+maybe\+Clear\+Timeout()}}, and \mbox{\hyperlink{bundle_executor_8js_a2e262cff771e5ba3a685861bdb134310}{warnings\+\_\+1}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_bundle_executor_aacb1228795448eac85c83a0707b03aed_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_bundle_executor_aacb1228795448eac85c83a0707b03aed_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_bundle_executor_af6a34367c12a1b7a174c2c5c307ca592}\index{BundleExecutor@{BundleExecutor}!constructor@{constructor}}
+\index{constructor@{constructor}!BundleExecutor@{BundleExecutor}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_bundle_executor_af6a34367c12a1b7a174c2c5c307ca592} 
+Bundle\+Executor\+::constructor (\begin{DoxyParamCaption}\item[{}]{bundle\+Options}{, }\item[{}]{bundle\+Descriptor}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Organizes requests for an api service that requires to bundle them.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Bundle\+Options\}} & bundle\+Options -\/ configures strategy this instance uses when executing bundled functions. \\
+\hline
+{\em \{\+Bundle\+Descriptor\}} & bundle\+Descriptor -\/ the description of the bundling. @constructor \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{express_2lib_2router_2route_8js_a6d3af37c53447908498ec53885a92a16}{\+\_\+options}}.
+
+\Hypertarget{class_bundle_executor_a16329cbc1c180de70dbea0d6f98f0ba8}\index{BundleExecutor@{BundleExecutor}!schedule@{schedule}}
+\index{schedule@{schedule}!BundleExecutor@{BundleExecutor}}
+\doxysubsubsection{\texorpdfstring{schedule()}{schedule()}}
+{\footnotesize\ttfamily \label{class_bundle_executor_a16329cbc1c180de70dbea0d6f98f0ba8} 
+Bundle\+Executor\+::schedule (\begin{DoxyParamCaption}\item[{}]{api\+Call}{, }\item[{}]{request}{, }\item[{}]{callback}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Schedule a method call.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{function\}} & api\+Call -\/ the function for an API call. \\
+\hline
+{\em \{\+Object\}} & request -\/ the request object to be bundled with others. \\
+\hline
+{\em \{\+APICallback\}} & callback -\/ the callback to be called when the method finished. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{function()\} -\/ the function to cancel the scheduled invocation. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{express_2lib_2router_2route_8js_a6d3af37c53447908498ec53885a92a16}{\+\_\+options}}, \mbox{\hyperlink{class_bundle_executor_aacb1228795448eac85c83a0707b03aed}{\+\_\+run\+Now()}}, \mbox{\hyperlink{bundle_executor_8js_ab92cff175bf37c832fa555d62066173d}{bundling\+Utils\+\_\+1}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a622460feeccdab6d8f307936fc6b36fb}{callback}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}}, \mbox{\hyperlink{bundle_executor_8js_af543d951cd813de4cca338839a98ab32}{google\+Error\+\_\+1}}, \mbox{\hyperlink{json-bigint_2lib_2stringify_8js_aec316efdeb7b2e5358b7d50869858da1}{JSON}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}, \mbox{\hyperlink{bundle_executor_8js_a7988acb4c69d8bb23c6d54b7850f3c64}{noop()}}, \mbox{\hyperlink{long_2index_8js_ad7dc44f0ebdb746f4a5b0612ae9315cb}{not}}, \mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}, \mbox{\hyperlink{node-fetch_2browser_8js_acbc8d14b1ba35224ead2803e5daf43da}{Request}}, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}}, \mbox{\hyperlink{bundle_executor_8js_a74c7370f714eaf560437567361a88f5b}{status\+\_\+1}}, \mbox{\hyperlink{bundle_executor_8js_a3df48d7036e98b4208e4c389b3580cd4}{task\+\_\+1}}, \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}, and \mbox{\hyperlink{bundle_executor_8js_a2e262cff771e5ba3a685861bdb134310}{warnings\+\_\+1}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_bundle_executor_a16329cbc1c180de70dbea0d6f98f0ba8_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/google-\/gax/build/src/bundling\+Calls/\mbox{\hyperlink{bundle_executor_8js}{bundle\+Executor.\+js}}\end{DoxyCompactItemize}

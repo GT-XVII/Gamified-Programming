@@ -1,0 +1,17 @@
+<map id="OAuth2Client::processAndValidateRefreshHandler" name="OAuth2Client::processAndValidateRefreshHandler">
+<area shape="rect" id="Node000001" title=" " alt="" coords="708,72,885,113"/>
+<area shape="rect" id="Node000002" href="$class_o_auth2_client.html#a9b24f92c14ffea2fcac5aefde74659a4" title=" " alt="" coords="456,5,660,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="706,70,633,49,634,44,707,65"/>
+<area shape="rect" id="Node000004" href="$class_o_auth2_client.html#a8bdbdb7e92734f2c3717f52eb01876c9" title=" " alt="" coords="471,72,645,113"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="692,95,646,95,646,90,692,90"/>
+<area shape="rect" id="Node000006" href="$class_o_auth2_client.html#a4b55da9ec28752793bd033a4a28df5e8" title=" " alt="" coords="212,149,400,174"/>
+<area shape="poly" id="edge8_Node000001_Node000006" title=" " alt="" coords="700,119,661,127,524,146,400,158,400,152,524,141,660,122,699,114"/>
+<area shape="rect" id="Node000003" href="$class_o_auth2_client.html#a57a1377d029a47933dbac4ccd39422cb" title=" " alt="" coords="204,10,408,36"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="441,27,408,27,409,21,441,22"/>
+<area shape="rect" id="Node000005" href="$class_o_auth2_client.html#a1d9cfd092b724868c44c4e3b66b8a438" title=" " alt="" coords="219,60,393,101"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="456,90,393,87,394,82,456,85"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="467,120,356,151,355,146,466,115"/>
+<area shape="poly" id="edge7_Node000006_Node000006" title=" " alt="" coords="345,136,332,130,306,127,282,130,269,134,266,140,273,147,268,150,261,140,265,130,281,124,306,122,333,125,347,132"/>
+<area shape="rect" id="Node000007" href="$class_o_auth2_client.html#a551319e790ecdea1a743f7a4513155f4" title=" " alt="" coords="5,149,156,174"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="197,164,156,164,156,159,197,159"/>
+</map>

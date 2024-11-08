@@ -1,0 +1,15 @@
+<map id="BaseExternalAccountClient::refreshAccessTokenAsync" name="BaseExternalAccountClient::refreshAccessTokenAsync">
+<area shape="rect" id="Node000001" title=" " alt="" coords="923,67,1108,107"/>
+<area shape="rect" id="Node000002" href="$class_base_external_account_client.html#ad0804062ac1325329b9f76ac603ac74c" title=" " alt="" coords="693,37,875,78"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="907,76,875,72,876,67,908,71"/>
+<area shape="rect" id="Node000005" href="$class_base_external_account_client.html#a9050d118276189d24a16ce5928a28335" title=" " alt="" coords="235,95,416,135"/>
+<area shape="poly" id="edge7_Node000001_Node000005" title=" " alt="" coords="907,94,417,114,416,109,907,89"/>
+<area shape="rect" id="Node000003" href="$class_base_external_account_client.html#a8caad074ecc8066c195db462a1632828" title=" " alt="" coords="464,37,645,78"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="678,60,646,60,646,55,678,55"/>
+<area shape="rect" id="Node000004" href="$class_base_external_account_client.html#a0e5c9c1ea4ac4463c04a9bdeb9e3fc41" title=" " alt="" coords="235,5,416,46"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="448,46,416,41,417,36,449,40"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="457,85,410,97,409,91,455,80"/>
+<area shape="poly" id="edge6_Node000005_Node000005" title=" " alt="" coords="363,82,349,76,325,73,303,75,290,80,285,86,287,93,282,95,280,85,287,76,302,70,325,68,350,70,365,77"/>
+<area shape="rect" id="Node000006" href="$class_base_external_account_client.html#ab381dadac9ad3b6e8c34f194714c9cc3" title=" " alt="" coords="5,95,187,135"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="219,118,187,118,187,112,219,112"/>
+</map>

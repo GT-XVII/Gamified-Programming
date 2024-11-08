@@ -1,0 +1,543 @@
+\doxysection{backend/node\+\_\+modules/node-\/forge/lib/aes.js File Reference}
+\hypertarget{aes_8js}{}\label{aes_8js}\index{backend/node\_modules/node-\/forge/lib/aes.js@{backend/node\_modules/node-\/forge/lib/aes.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{aes_8js_a554d628d0dfcac9e9466b759e4d2bcf6}{register\+Algorithm}} (\mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}, mode)
+\item 
+function \mbox{\hyperlink{aes_8js_ad45ee46287cb93b857debe99c182e412}{\+\_\+expand\+Key}} (key, \mbox{\hyperlink{browser_2runtime_2decrypt_8js_afaaeea0da230d94865a0b9c048831b1e}{decrypt}})
+\item 
+function \mbox{\hyperlink{aes_8js_a05e6dd950f906486929eabe7e49b95b0}{\+\_\+update\+Block}} (\mbox{\hyperlink{ordered-map_8min_8js_a9721a992655f700bdc2e91ba68b71e26}{w}}, input, output, \mbox{\hyperlink{browser_2runtime_2decrypt_8js_afaaeea0da230d94865a0b9c048831b1e}{decrypt}})
+\item 
+function \mbox{\hyperlink{aes_8js_ace8349a27b75e38bc0e08d3c7ec40eb9}{\+\_\+create\+Cipher}} (options)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{aes_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./forge\textquotesingle{})
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{aes_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} = forge.\+aes = forge.\+aes \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} \{\}
+\item 
+\mbox{\hyperlink{aes_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} aes \mbox{\hyperlink{aes_8js_a7bf768892b2f5716a264d78fdd2f6253}{start\+Encrypting}}
+\item 
+\mbox{\hyperlink{aes_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} aes \mbox{\hyperlink{aes_8js_a921a67fb42e158e536e17f8f330ddb51}{create\+Encryption\+Cipher}}
+\item 
+\mbox{\hyperlink{aes_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} aes \mbox{\hyperlink{aes_8js_a30bd63bf709fe3422fa853cbde8cbbd4}{start\+Decrypting}}
+\item 
+\mbox{\hyperlink{aes_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} aes \mbox{\hyperlink{aes_8js_a07780be0c6e270da370a473a708aee09}{create\+Decryption\+Cipher}}
+\item 
+\mbox{\hyperlink{aes_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} aes \mbox{\hyperlink{aes_8js_a567f0853c4910ea353eb7e4dbcaee652}{Algorithm}}
+\item 
+\mbox{\hyperlink{aes_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} aes \mbox{\hyperlink{aes_8js_a567f0853c4910ea353eb7e4dbcaee652}{Algorithm}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{aes_8js_a375e96e6ce3100a785c103bc397e6640}{initialize}}
+\item 
+\mbox{\hyperlink{aes_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} aes \mbox{\hyperlink{aes_8js_a788f5306fb21e0215cf31c3e07281147}{\+\_\+expand\+Key}}
+\item 
+\mbox{\hyperlink{aes_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} aes \mbox{\hyperlink{aes_8js_a6b713558ea7911f84460d05a7567cfbf}{\+\_\+update\+Block}} = \+\_\+update\+Block
+\item 
+var \mbox{\hyperlink{aes_8js_a8925a317299daf39d8500f1e56e5216b}{init}} = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a5df37b7f02e5cdc7d9412b7f872b8e01}{false}}
+\item 
+var \mbox{\hyperlink{aes_8js_a7066ef88be56e2c5f3ce8b88b6acc75a}{Nb}} = 4
+\item 
+var \mbox{\hyperlink{aes_8js_a2ac28354099d6472155e8ee79d9ed9ab}{sbox}}
+\item 
+var \mbox{\hyperlink{aes_8js_af57d6ce0ee92420358d5a777d35b497d}{isbox}}
+\item 
+var \mbox{\hyperlink{aes_8js_a42d5f111013b9f55489b1843403498df}{rcon}}
+\item 
+var \mbox{\hyperlink{aes_8js_a14cc1a38326c1358a764e77650f6db35}{mix}}
+\item 
+var \mbox{\hyperlink{aes_8js_afe5b02210768e6a30686fee8ef47433b}{imix}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{aes_8js_ace8349a27b75e38bc0e08d3c7ec40eb9}\index{aes.js@{aes.js}!\_createCipher@{\_createCipher}}
+\index{\_createCipher@{\_createCipher}!aes.js@{aes.js}}
+\doxysubsubsection{\texorpdfstring{\_createCipher()}{\_createCipher()}}
+{\footnotesize\ttfamily \label{aes_8js_ace8349a27b75e38bc0e08d3c7ec40eb9} 
+function \+\_\+create\+Cipher (\begin{DoxyParamCaption}\item[{}]{options}{}\end{DoxyParamCaption})}
+
+Deprecated. Instead, use\+:
+
+forge.\+cipher.\+create\+Cipher(\textquotesingle{}AES-\/$<$mode$>$\textquotesingle{}, key); forge.\+cipher.\+create\+Decipher(\textquotesingle{}AES-\/$<$mode$>$\textquotesingle{}, key);
+
+Creates a deprecated AES cipher object. This object\textquotesingle{}s mode will default to CBC (cipher-\/block-\/chaining).
+
+The key and iv may be given as a string of bytes, an array of bytes, a byte buffer, or an array of 32-\/bit words.
+
+
+\begin{DoxyParams}{Parameters}
+{\em options} & the options to use. key the symmetric key to use. output the buffer to write to. decrypt true for decryption, false for encryption. mode the cipher mode to use (default\+: \textquotesingle{}CBC\textquotesingle{}).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the cipher. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{cipher_modes_8js_ad3529e6b62fffcc9799ee186212e4b5a}{cipher}}, \mbox{\hyperlink{aes_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}, and \mbox{\hyperlink{cipher_8js_a1960adf42cbf8c24067b45da3a2f0aaf}{start}}.
+
+\Hypertarget{aes_8js_ad45ee46287cb93b857debe99c182e412}\index{aes.js@{aes.js}!\_expandKey@{\_expandKey}}
+\index{\_expandKey@{\_expandKey}!aes.js@{aes.js}}
+\doxysubsubsection{\texorpdfstring{\_expandKey()}{\_expandKey()}}
+{\footnotesize\ttfamily \label{aes_8js_ad45ee46287cb93b857debe99c182e412} 
+function \+\_\+expand\+Key (\begin{DoxyParamCaption}\item[{}]{key}{, }\item[{}]{decrypt}{}\end{DoxyParamCaption})}
+
+Generates a key schedule using the AES key expansion algorithm.
+
+The AES algorithm takes the Cipher Key, K, and performs a Key Expansion routine to generate a key schedule. The Key Expansion generates a total of Nb\texorpdfstring{$\ast$}{*}(Nr + 1) words\+: the algorithm requires an initial set of Nb words, and each of the Nr rounds requires Nb words of key data. The resulting key schedule consists of a linear array of 4-\/byte words, denoted \mbox{[}wi \mbox{]}, with i in the range 0 \texorpdfstring{$<$}{<}= i \texorpdfstring{$<$}{<} Nb(Nr + 1).
+
+Key\+Expansion(byte key\mbox{[}4\texorpdfstring{$\ast$}{*}\+Nk\mbox{]}, word w\mbox{[}Nb\texorpdfstring{$\ast$}{*}(Nr+1)\mbox{]}, Nk) AES-\/128 (Nb=4, Nk=4, Nr=10) AES-\/192 (Nb=4, Nk=6, Nr=12) AES-\/256 (Nb=4, Nk=8, Nr=14) Note\+: Nr=Nk+6.
+
+Nb is the number of columns (32-\/bit words) comprising the State (or number of bytes in a block). For AES, Nb=4.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & the key to schedule (as an array of 32-\/bit words). \\
+\hline
+{\em decrypt} & true to modify the key schedule to decrypt, false not to.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the generated key schedule. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{browser_2runtime_2decrypt_8js_afaaeea0da230d94865a0b9c048831b1e}{decrypt}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2eb0ae9087079e95bc67981f6c61288b}{end}}, \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}, \mbox{\hyperlink{aes_8js_afe5b02210768e6a30686fee8ef47433b}{imix}}, \mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}, \mbox{\hyperlink{aes_8js_a7066ef88be56e2c5f3ce8b88b6acc75a}{Nb}}, \mbox{\hyperlink{aes_8js_a42d5f111013b9f55489b1843403498df}{rcon}}, \mbox{\hyperlink{aes_8js_a2ac28354099d6472155e8ee79d9ed9ab}{sbox}}, and \mbox{\hyperlink{ordered-map_8min_8js_a9721a992655f700bdc2e91ba68b71e26}{w}}.
+
+\Hypertarget{aes_8js_a05e6dd950f906486929eabe7e49b95b0}\index{aes.js@{aes.js}!\_updateBlock@{\_updateBlock}}
+\index{\_updateBlock@{\_updateBlock}!aes.js@{aes.js}}
+\doxysubsubsection{\texorpdfstring{\_updateBlock()}{\_updateBlock()}}
+{\footnotesize\ttfamily \label{aes_8js_a05e6dd950f906486929eabe7e49b95b0} 
+function \+\_\+update\+Block (\begin{DoxyParamCaption}\item[{}]{w}{, }\item[{}]{input}{, }\item[{}]{output}{, }\item[{}]{decrypt}{}\end{DoxyParamCaption})}
+
+Updates a single block (16 bytes) using AES. The update will either encrypt or decrypt the block.
+
+
+\begin{DoxyParams}{Parameters}
+{\em w} & the key schedule. \\
+\hline
+{\em input} & the input block (an array of 32-\/bit words). \\
+\hline
+{\em output} & the updated output block. \\
+\hline
+{\em decrypt} & true to decrypt the block, false to encrypt it. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}, \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}, \mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}, \mbox{\hyperlink{uuid_8min_8js_aeb337d295abaddb5ec3cb34cc2e2bbc9}{d}}, \mbox{\hyperlink{browser_2runtime_2decrypt_8js_afaaeea0da230d94865a0b9c048831b1e}{decrypt}}, \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}, \mbox{\hyperlink{aes_8js_afe5b02210768e6a30686fee8ef47433b}{imix}}, \mbox{\hyperlink{aes_8js_af57d6ce0ee92420358d5a777d35b497d}{isbox}}, \mbox{\hyperlink{aes_8js_a14cc1a38326c1358a764e77650f6db35}{mix}}, \mbox{\hyperlink{round_8js_abcf15bd0ceed587926978d51b71f3c85}{round}}, \mbox{\hyperlink{aes_8js_a2ac28354099d6472155e8ee79d9ed9ab}{sbox}}, \mbox{\hyperlink{long_2index_8js_aa57d3d0484d1c8baeb1acf8a6a773b39}{sub}}, and \mbox{\hyperlink{ordered-map_8min_8js_a9721a992655f700bdc2e91ba68b71e26}{w}}.
+
+\Hypertarget{aes_8js_a554d628d0dfcac9e9466b759e4d2bcf6}\index{aes.js@{aes.js}!registerAlgorithm@{registerAlgorithm}}
+\index{registerAlgorithm@{registerAlgorithm}!aes.js@{aes.js}}
+\doxysubsubsection{\texorpdfstring{registerAlgorithm()}{registerAlgorithm()}}
+{\footnotesize\ttfamily \label{aes_8js_a554d628d0dfcac9e9466b759e4d2bcf6} 
+function register\+Algorithm (\begin{DoxyParamCaption}\item[{}]{name}{, }\item[{}]{mode}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{ordered-map_8js_abf075bdbe59fd2c3336ed052c9c72b31}{factory}}, \mbox{\hyperlink{aes_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}, and \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{aes_8js_a788f5306fb21e0215cf31c3e07281147}\index{aes.js@{aes.js}!\_expandKey@{\_expandKey}}
+\index{\_expandKey@{\_expandKey}!aes.js@{aes.js}}
+\doxysubsubsection{\texorpdfstring{\_expandKey}{\_expandKey}}
+{\footnotesize\ttfamily \label{aes_8js_a788f5306fb21e0215cf31c3e07281147} 
+\mbox{\hyperlink{aes_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} aes \+\_\+expand\+Key}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(key,\ \mbox{\hyperlink{browser_2runtime_2decrypt_8js_afaaeea0da230d94865a0b9c048831b1e}{decrypt}})\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}(!\mbox{\hyperlink{aes_8js_a8925a317299daf39d8500f1e56e5216b}{init}})\ \{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{aes_8js_a375e96e6ce3100a785c103bc397e6640}{initialize}}();}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{aes_8js_a788f5306fb21e0215cf31c3e07281147}{\_expandKey}}(key,\ \mbox{\hyperlink{browser_2runtime_2decrypt_8js_afaaeea0da230d94865a0b9c048831b1e}{decrypt}});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Expands a key. Typically only used for testing.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & the symmetric key to expand, as an array of 32-\/bit words. \\
+\hline
+{\em decrypt} & true to expand for decryption, false for encryption.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the expanded key. 
+\end{DoxyReturn}
+\Hypertarget{aes_8js_a6b713558ea7911f84460d05a7567cfbf}\index{aes.js@{aes.js}!\_updateBlock@{\_updateBlock}}
+\index{\_updateBlock@{\_updateBlock}!aes.js@{aes.js}}
+\doxysubsubsection{\texorpdfstring{\_updateBlock}{\_updateBlock}}
+{\footnotesize\ttfamily \label{aes_8js_a6b713558ea7911f84460d05a7567cfbf} 
+\mbox{\hyperlink{aes_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} aes \+\_\+update\+Block = \+\_\+update\+Block}
+
+Updates a single block. Typically only used for testing.
+
+
+\begin{DoxyParams}{Parameters}
+{\em w} & the expanded key to use. \\
+\hline
+{\em input} & an array of block-\/size 32-\/bit words. \\
+\hline
+{\em output} & an array of block-\/size 32-\/bit words. \\
+\hline
+{\em decrypt} & true to decrypt, false to encrypt. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{aes_8js_a567f0853c4910ea353eb7e4dbcaee652}\index{aes.js@{aes.js}!Algorithm@{Algorithm}}
+\index{Algorithm@{Algorithm}!aes.js@{aes.js}}
+\doxysubsubsection{\texorpdfstring{Algorithm}{Algorithm}}
+{\footnotesize\ttfamily \label{aes_8js_a567f0853c4910ea353eb7e4dbcaee652} 
+\mbox{\hyperlink{aes_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} aes Algorithm}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}},\ mode)\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}(!\mbox{\hyperlink{aes_8js_a8925a317299daf39d8500f1e56e5216b}{init}})\ \{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{aes_8js_a375e96e6ce3100a785c103bc397e6640}{initialize}}();}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\ \ var\ \textcolor{keyword}{self}\ =\ \textcolor{keyword}{this};}
+\DoxyCodeLine{\ \ \textcolor{keyword}{self}.name\ =\ \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}};}
+\DoxyCodeLine{\ \ \textcolor{keyword}{self}.mode\ =\ \textcolor{keyword}{new}\ mode(\{}
+\DoxyCodeLine{\ \ \ \ blockSize:\ 16,}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{cipher_modes_8js_ad3529e6b62fffcc9799ee186212e4b5a}{cipher}}:\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \mbox{\hyperlink{browser_2runtime_2encrypt_8js_a8a5b0f8d49c3788eacd40a0116fcfc23}{encrypt}}:\ \textcolor{keyword}{function}(inBlock,\ outBlock)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{aes_8js_a6b713558ea7911f84460d05a7567cfbf}{\_updateBlock}}(\textcolor{keyword}{self}.\_w,\ inBlock,\ outBlock,\ \textcolor{keyword}{false});}
+\DoxyCodeLine{\ \ \ \ \ \ \},}
+\DoxyCodeLine{\ \ \ \ \ \ \mbox{\hyperlink{browser_2runtime_2decrypt_8js_afaaeea0da230d94865a0b9c048831b1e}{decrypt}}:\ \textcolor{keyword}{function}(inBlock,\ outBlock)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{aes_8js_a6b713558ea7911f84460d05a7567cfbf}{\_updateBlock}}(\textcolor{keyword}{self}.\_w,\ inBlock,\ outBlock,\ \textcolor{keyword}{true});}
+\DoxyCodeLine{\ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \});}
+\DoxyCodeLine{\ \ \textcolor{keyword}{self}.\_init\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Creates a new AES cipher algorithm object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the name of the algorithm. \\
+\hline
+{\em mode} & the mode factory function.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the AES algorithm object. 
+\end{DoxyReturn}
+\Hypertarget{aes_8js_a07780be0c6e270da370a473a708aee09}\index{aes.js@{aes.js}!createDecryptionCipher@{createDecryptionCipher}}
+\index{createDecryptionCipher@{createDecryptionCipher}!aes.js@{aes.js}}
+\doxysubsubsection{\texorpdfstring{createDecryptionCipher}{createDecryptionCipher}}
+{\footnotesize\ttfamily \label{aes_8js_a07780be0c6e270da370a473a708aee09} 
+\mbox{\hyperlink{aes_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} aes create\+Decryption\+Cipher}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(key,\ mode)\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{aes_8js_ace8349a27b75e38bc0e08d3c7ec40eb9}{\_createCipher}}(\{}
+\DoxyCodeLine{\ \ \ \ key:\ key,}
+\DoxyCodeLine{\ \ \ \ output:\ \textcolor{keyword}{null},}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{browser_2runtime_2decrypt_8js_afaaeea0da230d94865a0b9c048831b1e}{decrypt}}:\ \textcolor{keyword}{true},}
+\DoxyCodeLine{\ \ \ \ mode:\ mode}
+\DoxyCodeLine{\ \ \});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Deprecated. Instead, use\+:
+
+var decipher = forge.\+cipher.\+create\+Decipher(\textquotesingle{}AES-\/$<$mode$>$\textquotesingle{}, key);
+
+Creates an AES cipher object to decrypt data using the given symmetric key.
+
+The key may be given as a string of bytes, an array of bytes, a byte buffer, or an array of 32-\/bit words.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & the symmetric key to use. \\
+\hline
+{\em mode} & the cipher mode to use (default\+: \textquotesingle{}CBC\textquotesingle{}).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the cipher. 
+\end{DoxyReturn}
+\Hypertarget{aes_8js_a921a67fb42e158e536e17f8f330ddb51}\index{aes.js@{aes.js}!createEncryptionCipher@{createEncryptionCipher}}
+\index{createEncryptionCipher@{createEncryptionCipher}!aes.js@{aes.js}}
+\doxysubsubsection{\texorpdfstring{createEncryptionCipher}{createEncryptionCipher}}
+{\footnotesize\ttfamily \label{aes_8js_a921a67fb42e158e536e17f8f330ddb51} 
+\mbox{\hyperlink{aes_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} aes create\+Encryption\+Cipher}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(key,\ mode)\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{aes_8js_ace8349a27b75e38bc0e08d3c7ec40eb9}{\_createCipher}}(\{}
+\DoxyCodeLine{\ \ \ \ key:\ key,}
+\DoxyCodeLine{\ \ \ \ output:\ \textcolor{keyword}{null},}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{browser_2runtime_2decrypt_8js_afaaeea0da230d94865a0b9c048831b1e}{decrypt}}:\ \textcolor{keyword}{false},}
+\DoxyCodeLine{\ \ \ \ mode:\ mode}
+\DoxyCodeLine{\ \ \});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Deprecated. Instead, use\+:
+
+var cipher = forge.\+cipher.\+create\+Cipher(\textquotesingle{}AES-\/$<$mode$>$\textquotesingle{}, key);
+
+Creates an AES cipher object to encrypt data using the given symmetric key.
+
+The key may be given as a string of bytes, an array of bytes, a byte buffer, or an array of 32-\/bit words.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & the symmetric key to use. \\
+\hline
+{\em mode} & the cipher mode to use (default\+: \textquotesingle{}CBC\textquotesingle{}).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the cipher. 
+\end{DoxyReturn}
+\Hypertarget{aes_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\index{aes.js@{aes.js}!exports@{exports}}
+\index{exports@{exports}!aes.js@{aes.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \label{aes_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports = forge.\+aes = forge.\+aes \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} \{\}}
+
+\Hypertarget{aes_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}\index{aes.js@{aes.js}!forge@{forge}}
+\index{forge@{forge}!aes.js@{aes.js}}
+\doxysubsubsection{\texorpdfstring{forge}{forge}}
+{\footnotesize\ttfamily \label{aes_8js_ab4dbef01e35b8e6d06087c0542ba9e2c} 
+var forge = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./forge\textquotesingle{})}
+
+Advanced Encryption Standard (AES) implementation.
+
+This implementation is based on the public domain library \textquotesingle{}jscrypto\textquotesingle{} which was written by\+:
+
+Emily Stark (\href{mailto:estark@stanford.edu}{\texttt{ estark@stanford.\+edu}}) Mike Hamburg (\href{mailto:mhamburg@stanford.edu}{\texttt{ mhamburg@stanford.\+edu}}) Dan Boneh (\href{mailto:dabo@cs.stanford.edu}{\texttt{ dabo@cs.\+stanford.\+edu}})
+
+Parts of this code are based on the Open\+SSL implementation of AES\+: \href{http://www.openssl.org}{\texttt{ http\+://www.\+openssl.\+org}}
+
+\begin{DoxyAuthor}{Author}
+Dave Longley
+\end{DoxyAuthor}
+Copyright (c) 2010-\/2014 Digital Bazaar, Inc. \Hypertarget{aes_8js_afe5b02210768e6a30686fee8ef47433b}\index{aes.js@{aes.js}!imix@{imix}}
+\index{imix@{imix}!aes.js@{aes.js}}
+\doxysubsubsection{\texorpdfstring{imix}{imix}}
+{\footnotesize\ttfamily \label{aes_8js_afe5b02210768e6a30686fee8ef47433b} 
+var imix}
+
+\Hypertarget{aes_8js_a8925a317299daf39d8500f1e56e5216b}\index{aes.js@{aes.js}!init@{init}}
+\index{init@{init}!aes.js@{aes.js}}
+\doxysubsubsection{\texorpdfstring{init}{init}}
+{\footnotesize\ttfamily \label{aes_8js_a8925a317299daf39d8500f1e56e5216b} 
+var init = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a5df37b7f02e5cdc7d9412b7f872b8e01}{false}}}
+
+AES implementation \Hypertarget{aes_8js_a375e96e6ce3100a785c103bc397e6640}\index{aes.js@{aes.js}!initialize@{initialize}}
+\index{initialize@{initialize}!aes.js@{aes.js}}
+\doxysubsubsection{\texorpdfstring{initialize}{initialize}}
+{\footnotesize\ttfamily \label{aes_8js_a375e96e6ce3100a785c103bc397e6640} 
+\mbox{\hyperlink{aes_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} aes \mbox{\hyperlink{aes_8js_a567f0853c4910ea353eb7e4dbcaee652}{Algorithm}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} initialize}
+
+Initializes this AES algorithm by expanding its key.
+
+
+\begin{DoxyParams}{Parameters}
+{\em options} & the options to use. key the key to use with this algorithm. decrypt true if the algorithm should be initialized for decryption, false for encryption.\\
+\hline
+\end{DoxyParams}
+Performs initialization, ie\+: precomputes tables to optimize for speed.
+
+One way to understand how AES works is to imagine that \textquotesingle{}addition\textquotesingle{} and \textquotesingle{}multiplication\textquotesingle{} are interfaces that require certain mathematical properties to hold true (ie\+: they are associative) but they might have different implementations and produce different kinds of results ... provided that their mathematical properties remain true. AES defines its own methods of addition and multiplication but keeps some important properties the same, ie\+: associativity and distributivity. The explanation below tries to shed some light on how AES defines addition and multiplication of bytes and 32-\/bit words in order to perform its encryption and decryption algorithms.
+
+The basics\+:
+
+The AES algorithm views bytes as binary representations of polynomials that have either 1 or 0 as the coefficients. It defines the addition or subtraction of two bytes as the XOR operation. It also defines the multiplication of two bytes as a finite field referred to as GF(2\texorpdfstring{$^\wedge$}{\string^}8) (Note\+: \textquotesingle{}GF\textquotesingle{} means "{}\+Galois Field"{} which is a field that contains a finite number of elements so GF(2\texorpdfstring{$^\wedge$}{\string^}8) has 256 elements).
+
+This means that any two bytes can be represented as binary polynomials; when they multiplied together and modularly reduced by an irreducible polynomial of the 8th degree, the results are the field GF(2\texorpdfstring{$^\wedge$}{\string^}8). The specific irreducible polynomial that AES uses in hexadecimal is 0x11b. This multiplication is associative with 0x01 as the identity\+:
+
+(b \texorpdfstring{$\ast$}{*} 0x01 = GF(b, 0x01) = b).
+
+The operation GF(b, 0x02) can be performed at the byte level by left shifting b once and then XOR\textquotesingle{}ing it (to perform the modular reduction) with 0x11b if b is \texorpdfstring{$>$}{>}= 128. Repeated application of the multiplication of 0x02 can be used to implement the multiplication of any two bytes.
+
+For instance, multiplying 0x57 and 0x13, denoted as GF(0x57, 0x13), can be performed by factoring 0x13 into 0x01, 0x02, and 0x10. Then these factors can each be multiplied by 0x57 and then added together. To do the multiplication, values for 0x57 multiplied by each of these 3 factors can be precomputed and stored in a table. To add them, the values from the table are XOR\textquotesingle{}d together.
+
+AES also defines addition and multiplication of words, that is 4-\/byte numbers represented as polynomials of 3 degrees where the coefficients are the values of the bytes.
+
+The word \mbox{[}a0, a1, a2, a3\mbox{]} is a polynomial a3x\texorpdfstring{$^\wedge$}{\string^}3 + a2x\texorpdfstring{$^\wedge$}{\string^}2 + a1x + a0.
+
+Addition is performed by XOR\textquotesingle{}ing like powers of x. Multiplication is performed in two steps, the first is an algebriac expansion as you would do normally (where addition is XOR). But the result is a polynomial larger than 3 degrees and thus it cannot fit in a word. So next the result is modularly reduced by an AES-\/specific polynomial of degree 4 which will always produce a polynomial of less than 4 degrees such that it will fit in a word. In AES, this polynomial is x\texorpdfstring{$^\wedge$}{\string^}4 + 1.
+
+The modular product of two polynomials \textquotesingle{}a\textquotesingle{} and \textquotesingle{}b\textquotesingle{} is thus\+:
+
+\doxylink{uuid_8min_8js_aeb337d295abaddb5ec3cb34cc2e2bbc9}{d(x)} = d3x\texorpdfstring{$^\wedge$}{\string^}3 + d2x\texorpdfstring{$^\wedge$}{\string^}2 + d1x + d0 with d0 = GF(a0, b0) \texorpdfstring{$^\wedge$}{\string^} GF(a3, b1) \texorpdfstring{$^\wedge$}{\string^} GF(a2, b2) \texorpdfstring{$^\wedge$}{\string^} GF(a1, b3) d1 = GF(a1, b0) \texorpdfstring{$^\wedge$}{\string^} GF(a0, b1) \texorpdfstring{$^\wedge$}{\string^} GF(a3, b2) \texorpdfstring{$^\wedge$}{\string^} GF(a2, b3) d2 = GF(a2, b0) \texorpdfstring{$^\wedge$}{\string^} GF(a1, b1) \texorpdfstring{$^\wedge$}{\string^} GF(a0, b2) \texorpdfstring{$^\wedge$}{\string^} GF(a3, b3) d3 = GF(a3, b0) \texorpdfstring{$^\wedge$}{\string^} GF(a2, b1) \texorpdfstring{$^\wedge$}{\string^} GF(a1, b2) \texorpdfstring{$^\wedge$}{\string^} GF(a0, b3)
+
+As a matrix\+:
+
+\mbox{[}d0\mbox{]} = \mbox{[}a0 a3 a2 a1\mbox{]}\mbox{[}b0\mbox{]} \mbox{[}d1\mbox{]} \mbox{[}a1 a0 a3 a2\mbox{]}\mbox{[}b1\mbox{]} \mbox{[}d2\mbox{]} \mbox{[}a2 a1 a0 a3\mbox{]}\mbox{[}b2\mbox{]} \mbox{[}d3\mbox{]} \mbox{[}a3 a2 a1 a0\mbox{]}\mbox{[}b3\mbox{]}
+
+Special polynomials defined by AES (0x02 == \{02\})\+: \doxylink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a(x)} = \{03\}x\texorpdfstring{$^\wedge$}{\string^}3 + \{01\}x\texorpdfstring{$^\wedge$}{\string^}2 + \{01\}x + \{02\} a\texorpdfstring{$^\wedge$}{\string^}-\/1(x) = \{0b\}x\texorpdfstring{$^\wedge$}{\string^}3 + \{0d\}x\texorpdfstring{$^\wedge$}{\string^}2 + \{09\}x + \{0e\}.
+
+These polynomials are used in the Mix\+Columns() and Inverse\+Mix\+Columns() operations, respectively, to cause each element in the state to affect the output (referred to as diffusing).
+
+Rot\+Word() uses\+: a0 = a1 = a2 = \{00\} and a3 = \{01\}, which is the polynomial x3.
+
+The Shift\+Rows() method modifies the last 3 rows in the state (where the state is 4 words with 4 bytes per word) by shifting bytes cyclically. The 1st byte in the second row is moved to the end of the row. The 1st and 2nd bytes in the third row are moved to the end of the row. The 1st, 2nd, and 3rd bytes are moved in the fourth row.
+
+More details on how AES arithmetic works\+:
+
+In the polynomial representation of binary numbers, XOR performs addition and subtraction and multiplication in GF(2\texorpdfstring{$^\wedge$}{\string^}8) denoted as GF(a, b) corresponds with the multiplication of polynomials modulo an irreducible polynomial of degree 8. In other words, for AES, GF(a, b) will multiply polynomial \textquotesingle{}a\textquotesingle{} with polynomial \textquotesingle{}b\textquotesingle{} and then do a modular reduction by an AES-\/specific irreducible polynomial of degree 8.
+
+\doxylink{class_a}{A} polynomial is irreducible if its only divisors are one and itself. For the AES algorithm, this irreducible polynomial is\+:
+
+\doxylink{agent-base_2node__modules_2ms_2index_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m(x)} = x\texorpdfstring{$^\wedge$}{\string^}8 + x\texorpdfstring{$^\wedge$}{\string^}4 + x\texorpdfstring{$^\wedge$}{\string^}3 + x + 1,
+
+or \{01\}\{1b\} in hexadecimal notation, where each coefficient is a bit\+: 100011011 = 283 = 0x11b.
+
+For example, GF(0x57, 0x83) = 0xc1 because
+
+0x57 = 87 = 01010111 = x\texorpdfstring{$^\wedge$}{\string^}6 + x\texorpdfstring{$^\wedge$}{\string^}4 + x\texorpdfstring{$^\wedge$}{\string^}2 + x + 1 0x85 = 131 = 10000101 = x\texorpdfstring{$^\wedge$}{\string^}7 + x + 1
+
+(x\texorpdfstring{$^\wedge$}{\string^}6 + x\texorpdfstring{$^\wedge$}{\string^}4 + x\texorpdfstring{$^\wedge$}{\string^}2 + x + 1) \texorpdfstring{$\ast$}{*} (x\texorpdfstring{$^\wedge$}{\string^}7 + x + 1) = x\texorpdfstring{$^\wedge$}{\string^}13 + x\texorpdfstring{$^\wedge$}{\string^}11 + x\texorpdfstring{$^\wedge$}{\string^}9 + x\texorpdfstring{$^\wedge$}{\string^}8 + x\texorpdfstring{$^\wedge$}{\string^}7 + x\texorpdfstring{$^\wedge$}{\string^}7 + x\texorpdfstring{$^\wedge$}{\string^}5 + x\texorpdfstring{$^\wedge$}{\string^}3 + x\texorpdfstring{$^\wedge$}{\string^}2 + x + x\texorpdfstring{$^\wedge$}{\string^}6 + x\texorpdfstring{$^\wedge$}{\string^}4 + x\texorpdfstring{$^\wedge$}{\string^}2 + x + 1 = x\texorpdfstring{$^\wedge$}{\string^}13 + x\texorpdfstring{$^\wedge$}{\string^}11 + x\texorpdfstring{$^\wedge$}{\string^}9 + x\texorpdfstring{$^\wedge$}{\string^}8 + x\texorpdfstring{$^\wedge$}{\string^}6 + x\texorpdfstring{$^\wedge$}{\string^}5 + x\texorpdfstring{$^\wedge$}{\string^}4 + x\texorpdfstring{$^\wedge$}{\string^}3 + 1 = y y modulo (x\texorpdfstring{$^\wedge$}{\string^}8 + x\texorpdfstring{$^\wedge$}{\string^}4 + x\texorpdfstring{$^\wedge$}{\string^}3 + x + 1) = x\texorpdfstring{$^\wedge$}{\string^}7 + x\texorpdfstring{$^\wedge$}{\string^}6 + 1.
+
+The modular reduction by \doxylink{agent-base_2node__modules_2ms_2index_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m(x)} guarantees the result will be a binary polynomial of less than degree 8, so that it can fit in a byte.
+
+The operation to multiply a binary polynomial b with x (the polynomial x in binary representation is 00000010) is\+:
+
+b\+\_\+7x\texorpdfstring{$^\wedge$}{\string^}8 + b\+\_\+6x\texorpdfstring{$^\wedge$}{\string^}7 + b\+\_\+5x\texorpdfstring{$^\wedge$}{\string^}6 + b\+\_\+4x\texorpdfstring{$^\wedge$}{\string^}5 + b\+\_\+3x\texorpdfstring{$^\wedge$}{\string^}4 + b\+\_\+2x\texorpdfstring{$^\wedge$}{\string^}3 + b\+\_\+1x\texorpdfstring{$^\wedge$}{\string^}2 + b\+\_\+0x\texorpdfstring{$^\wedge$}{\string^}1
+
+To get GF(b, x) we must reduce that by \doxylink{agent-base_2node__modules_2ms_2index_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m(x)}. If b\+\_\+7 is 0 (that is the most significant bit is 0 in b) then the result is already reduced. If it is 1, then we can reduce it by subtracting \doxylink{agent-base_2node__modules_2ms_2index_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m(x)} via an XOR.
+
+It follows that multiplication by x (00000010 or 0x02) can be implemented by performing a left shift followed by a conditional bitwise XOR with 0x1b. This operation on bytes is denoted by xtime(). Multiplication by higher powers of x can be implemented by repeated application of xtime().
+
+By adding intermediate results, multiplication by any constant can be implemented. For instance\+:
+
+GF(0x57, 0x13) = 0xfe because\+:
+
+xtime(b) = (b \& 128) ? (b \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 1 \texorpdfstring{$^\wedge$}{\string^} 0x11b) \+: (b \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 1)
+
+Note\+: We XOR with 0x11b instead of 0x1b because in javascript our datatype for b can be larger than 1 byte, so a left shift will not automatically eliminate bits that overflow a byte ... by XOR\textquotesingle{}ing the overflow bit with 1 (the extra one from 0x11b) we zero it out.
+
+GF(0x57, 0x02) = xtime(0x57) = 0xae GF(0x57, 0x04) = xtime(0xae) = 0x47 GF(0x57, 0x08) = xtime(0x47) = 0x8e GF(0x57, 0x10) = xtime(0x8e) = 0x07
+
+GF(0x57, 0x13) = GF(0x57, (0x01 \texorpdfstring{$^\wedge$}{\string^} 0x02 \texorpdfstring{$^\wedge$}{\string^} 0x10))
+
+And by the distributive property (since XOR is addition and GF() is multiplication)\+:
+
+= GF(0x57, 0x01) \texorpdfstring{$^\wedge$}{\string^} GF(0x57, 0x02) \texorpdfstring{$^\wedge$}{\string^} GF(0x57, 0x10) = 0x57 \texorpdfstring{$^\wedge$}{\string^} 0xae \texorpdfstring{$^\wedge$}{\string^} 0x07 = 0xfe. \Hypertarget{aes_8js_af57d6ce0ee92420358d5a777d35b497d}\index{aes.js@{aes.js}!isbox@{isbox}}
+\index{isbox@{isbox}!aes.js@{aes.js}}
+\doxysubsubsection{\texorpdfstring{isbox}{isbox}}
+{\footnotesize\ttfamily \label{aes_8js_af57d6ce0ee92420358d5a777d35b497d} 
+var isbox}
+
+\Hypertarget{aes_8js_a14cc1a38326c1358a764e77650f6db35}\index{aes.js@{aes.js}!mix@{mix}}
+\index{mix@{mix}!aes.js@{aes.js}}
+\doxysubsubsection{\texorpdfstring{mix}{mix}}
+{\footnotesize\ttfamily \label{aes_8js_a14cc1a38326c1358a764e77650f6db35} 
+var mix}
+
+\Hypertarget{aes_8js_a7066ef88be56e2c5f3ce8b88b6acc75a}\index{aes.js@{aes.js}!Nb@{Nb}}
+\index{Nb@{Nb}!aes.js@{aes.js}}
+\doxysubsubsection{\texorpdfstring{Nb}{Nb}}
+{\footnotesize\ttfamily \label{aes_8js_a7066ef88be56e2c5f3ce8b88b6acc75a} 
+var Nb = 4}
+
+\Hypertarget{aes_8js_a42d5f111013b9f55489b1843403498df}\index{aes.js@{aes.js}!rcon@{rcon}}
+\index{rcon@{rcon}!aes.js@{aes.js}}
+\doxysubsubsection{\texorpdfstring{rcon}{rcon}}
+{\footnotesize\ttfamily \label{aes_8js_a42d5f111013b9f55489b1843403498df} 
+var rcon}
+
+\Hypertarget{aes_8js_a2ac28354099d6472155e8ee79d9ed9ab}\index{aes.js@{aes.js}!sbox@{sbox}}
+\index{sbox@{sbox}!aes.js@{aes.js}}
+\doxysubsubsection{\texorpdfstring{sbox}{sbox}}
+{\footnotesize\ttfamily \label{aes_8js_a2ac28354099d6472155e8ee79d9ed9ab} 
+var sbox}
+
+\Hypertarget{aes_8js_a30bd63bf709fe3422fa853cbde8cbbd4}\index{aes.js@{aes.js}!startDecrypting@{startDecrypting}}
+\index{startDecrypting@{startDecrypting}!aes.js@{aes.js}}
+\doxysubsubsection{\texorpdfstring{startDecrypting}{startDecrypting}}
+{\footnotesize\ttfamily \label{aes_8js_a30bd63bf709fe3422fa853cbde8cbbd4} 
+\mbox{\hyperlink{aes_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} aes start\+Decrypting}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(key,\ iv,\ output,\ mode)\ \{}
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{cipher_modes_8js_ad3529e6b62fffcc9799ee186212e4b5a}{cipher}}\ =\ \mbox{\hyperlink{aes_8js_ace8349a27b75e38bc0e08d3c7ec40eb9}{\_createCipher}}(\{}
+\DoxyCodeLine{\ \ \ \ key:\ key,}
+\DoxyCodeLine{\ \ \ \ output:\ output,}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{browser_2runtime_2decrypt_8js_afaaeea0da230d94865a0b9c048831b1e}{decrypt}}:\ \textcolor{keyword}{true},}
+\DoxyCodeLine{\ \ \ \ mode:\ mode}
+\DoxyCodeLine{\ \ \});}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{cipher_modes_8js_ad3529e6b62fffcc9799ee186212e4b5a}{cipher}}.start(iv);}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{cipher_modes_8js_ad3529e6b62fffcc9799ee186212e4b5a}{cipher}};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Deprecated. Instead, use\+:
+
+var decipher = forge.\+cipher.\+create\+Decipher(\textquotesingle{}AES-\/$<$mode$>$\textquotesingle{}, key); decipher.\+start(\{iv\+: iv\});
+
+Creates an AES cipher object to decrypt data using the given symmetric key. The output will be stored in the \textquotesingle{}output\textquotesingle{} member of the returned cipher.
+
+The key and iv may be given as a string of bytes, an array of bytes, a byte buffer, or an array of 32-\/bit words.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & the symmetric key to use. \\
+\hline
+{\em iv} & the initialization vector to use. \\
+\hline
+{\em output} & the buffer to write to, null to create one. \\
+\hline
+{\em mode} & the cipher mode to use (default\+: \textquotesingle{}CBC\textquotesingle{}).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the cipher. 
+\end{DoxyReturn}
+\Hypertarget{aes_8js_a7bf768892b2f5716a264d78fdd2f6253}\index{aes.js@{aes.js}!startEncrypting@{startEncrypting}}
+\index{startEncrypting@{startEncrypting}!aes.js@{aes.js}}
+\doxysubsubsection{\texorpdfstring{startEncrypting}{startEncrypting}}
+{\footnotesize\ttfamily \label{aes_8js_a7bf768892b2f5716a264d78fdd2f6253} 
+\mbox{\hyperlink{aes_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} aes start\+Encrypting}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(key,\ iv,\ output,\ mode)\ \{}
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{cipher_modes_8js_ad3529e6b62fffcc9799ee186212e4b5a}{cipher}}\ =\ \mbox{\hyperlink{aes_8js_ace8349a27b75e38bc0e08d3c7ec40eb9}{\_createCipher}}(\{}
+\DoxyCodeLine{\ \ \ \ key:\ key,}
+\DoxyCodeLine{\ \ \ \ output:\ output,}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{browser_2runtime_2decrypt_8js_afaaeea0da230d94865a0b9c048831b1e}{decrypt}}:\ \textcolor{keyword}{false},}
+\DoxyCodeLine{\ \ \ \ mode:\ mode}
+\DoxyCodeLine{\ \ \});}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{cipher_modes_8js_ad3529e6b62fffcc9799ee186212e4b5a}{cipher}}.start(iv);}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{cipher_modes_8js_ad3529e6b62fffcc9799ee186212e4b5a}{cipher}};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Deprecated. Instead, use\+:
+
+var cipher = forge.\+cipher.\+create\+Cipher(\textquotesingle{}AES-\/$<$mode$>$\textquotesingle{}, key); cipher.\+start(\{iv\+: iv\});
+
+Creates an AES cipher object to encrypt data using the given symmetric key. The output will be stored in the \textquotesingle{}output\textquotesingle{} member of the returned cipher.
+
+The key and iv may be given as a string of bytes, an array of bytes, a byte buffer, or an array of 32-\/bit words.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & the symmetric key to use. \\
+\hline
+{\em iv} & the initialization vector to use. \\
+\hline
+{\em output} & the buffer to write to, null to create one. \\
+\hline
+{\em mode} & the cipher mode to use (default\+: \textquotesingle{}CBC\textquotesingle{}).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the cipher. 
+\end{DoxyReturn}

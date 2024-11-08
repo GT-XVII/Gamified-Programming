@@ -1,0 +1,46 @@
+\doxysection{backend/node\+\_\+modules/jose/dist/node/cjs/lib/validate\+\_\+algorithms.js File Reference}
+\hypertarget{node_2cjs_2lib_2validate__algorithms_8js}{}\label{node_2cjs_2lib_2validate__algorithms_8js}\index{backend/node\_modules/jose/dist/node/cjs/lib/validate\_algorithms.js@{backend/node\_modules/jose/dist/node/cjs/lib/validate\_algorithms.js}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{node_2cjs_2lib_2validate__algorithms_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{node_2cjs_2lib_2validate__algorithms_8js_a75e2624540c91bec05528f6004a44562}{validate\+Algorithms}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{node_2cjs_2lib_2validate__algorithms_8js_a48acd3189d40b017f47c93b673b8b8f6}{default}} = \mbox{\hyperlink{browser_2lib_2validate__algorithms_8js_a858892d0dd6231ace053384140ea5f3d}{validate\+Algorithms}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{node_2cjs_2lib_2validate__algorithms_8js_a48acd3189d40b017f47c93b673b8b8f6}\index{validate\_algorithms.js@{validate\_algorithms.js}!default@{default}}
+\index{default@{default}!validate\_algorithms.js@{validate\_algorithms.js}}
+\doxysubsubsection{\texorpdfstring{default}{default}}
+{\footnotesize\ttfamily \label{node_2cjs_2lib_2validate__algorithms_8js_a48acd3189d40b017f47c93b673b8b8f6} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} default = \mbox{\hyperlink{browser_2lib_2validate__algorithms_8js_a858892d0dd6231ace053384140ea5f3d}{validate\+Algorithms}}}
+
+\Hypertarget{node_2cjs_2lib_2validate__algorithms_8js_ae2475e10618961c050dcba04e8c42331}\index{validate\_algorithms.js@{validate\_algorithms.js}!strict@{strict}}
+\index{strict@{strict}!validate\_algorithms.js@{validate\_algorithms.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{node_2cjs_2lib_2validate__algorithms_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+
+\Hypertarget{node_2cjs_2lib_2validate__algorithms_8js_a75e2624540c91bec05528f6004a44562}\index{validate\_algorithms.js@{validate\_algorithms.js}!validateAlgorithms@{validateAlgorithms}}
+\index{validateAlgorithms@{validateAlgorithms}!validate\_algorithms.js@{validate\_algorithms.js}}
+\doxysubsubsection{\texorpdfstring{validateAlgorithms}{validateAlgorithms}}
+{\footnotesize\ttfamily \label{node_2cjs_2lib_2validate__algorithms_8js_a75e2624540c91bec05528f6004a44562} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} validate\+Algorithms}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ (option,\ \mbox{\hyperlink{cipher_8js_a92f800b4fe48ec339baf687c1acf8ec6}{algorithms}})\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{cipher_8js_a92f800b4fe48ec339baf687c1acf8ec6}{algorithms}}\ !==\ \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}\ \&\&}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ (!\mbox{\hyperlink{src_2util_2minimal_8js_a325c4e317c38d8497130ebce7670be2f}{Array}}.isArray(\mbox{\hyperlink{cipher_8js_a92f800b4fe48ec339baf687c1acf8ec6}{algorithms}})\ ||\ \mbox{\hyperlink{cipher_8js_a92f800b4fe48ec339baf687c1acf8ec6}{algorithms}}.some((\mbox{\hyperlink{ordered-map_8min_8js_ad9a7d92cb87932d25187fdec3ba1b621}{s}})\ =>\ typeof\ \mbox{\hyperlink{ordered-map_8min_8js_ad9a7d92cb87932d25187fdec3ba1b621}{s}}\ !==\ \textcolor{stringliteral}{'string'})))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ TypeError(\`{}\textcolor{stringliteral}{"{}\$\{option\}"{}}\ option\ must\ be\ \mbox{\hyperlink{core_8min_8js_a46d2d1e8780c9b3b6a642760bb148e61}{an}}\ array\ \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}\ \mbox{\hyperlink{_0dprotobufjs_2base64_2tests_2index_8js_a016175be4adc32f124f4523e1e43b8c2}{strings}}\`{});}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{cipher_8js_a92f800b4fe48ec339baf687c1acf8ec6}{algorithms}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}};}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{__create_set_8js_ab9f46b8207185d305162498bea0d1c26}{Set}}(\mbox{\hyperlink{cipher_8js_a92f800b4fe48ec339baf687c1acf8ec6}{algorithms}});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}

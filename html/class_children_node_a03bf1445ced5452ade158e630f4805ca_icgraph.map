@@ -1,0 +1,16 @@
+<map id="ChildrenNode::getPriority" name="ChildrenNode::getPriority">
+<area shape="rect" id="Node000001" title=" " alt="" coords="466,92,633,118"/>
+<area shape="rect" id="Node000002" href="$class_children_node.html#a867bbeeea669d00379729e9313a594c5" title=" " alt="" coords="251,5,398,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="509,87,417,46,380,34,382,29,419,41,511,82"/>
+<area shape="rect" id="Node000003" href="$class_children_node.html#ace413f1a4ad5de0a69625f52e4213e19" title=" " alt="" coords="231,55,418,96"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="450,95,418,90,419,85,451,89"/>
+<area shape="rect" id="Node000006" href="$class_children_node.html#a8117628eff38c83e7869d666db8ad4d0" title=" " alt="" coords="26,143,162,168"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="451,118,163,151,162,145,450,113"/>
+<area shape="rect" id="Node000007" href="$class_children_node.html#ae69714f264e37557cd05f8155ec3b550" title=" " alt="" coords="262,171,387,196"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="498,126,419,154,366,173,364,168,417,149,496,121"/>
+<area shape="rect" id="Node000004" href="$class_children_node.html#a6e3c099c3985759df4b22cbc4998c6b1" title=" " alt="" coords="16,40,172,66"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="215,67,172,63,173,58,216,62"/>
+<area shape="rect" id="Node000005" href="$class_children_node.html#aade445e7c61eae6f41cdaff381cf360d" title=" " alt="" coords="5,89,183,115"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="216,91,183,95,183,89,215,85"/>
+<area shape="poly" id="edge7_Node000007_Node000006" title=" " alt="" coords="246,177,162,166,163,161,247,171"/>
+</map>

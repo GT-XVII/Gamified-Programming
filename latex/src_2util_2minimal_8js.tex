@@ -1,0 +1,599 @@
+\doxysection{backend/node\+\_\+modules/protobufjs/src/util/minimal.js File Reference}
+\hypertarget{src_2util_2minimal_8js}{}\label{src_2util_2minimal_8js}\index{backend/node\_modules/protobufjs/src/util/minimal.js@{backend/node\_modules/protobufjs/src/util/minimal.js}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{src_2util_2minimal_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+var \mbox{\hyperlink{src_2util_2minimal_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}} = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{src_2util_2minimal_8js_acad74cf820ade2653cf620d41d490beb}{as\+Promise}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}@protobufjs/aspromise"{})
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{src_2util_2minimal_8js_aa26bca6302d13459c54fd6a830690c3c}{base64}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}@protobufjs/base64"{})
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{src_2util_2minimal_8js_a996edf3ee1c82bb666bc0bb5f650d38a}{Event\+Emitter}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}@protobufjs/eventemitter"{})
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{src_2util_2minimal_8js_a934f7869cdd502f5d86fc82a36c66524}{float}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}@protobufjs/float"{})
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{src_2util_2minimal_8js_a92df34503dfdda3c2605668ebc2b3e5c}{inquire}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}@protobufjs/inquire"{})
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{src_2util_2minimal_8js_ab876ddef56cd51e80430bccc427e2e94}{utf8}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}@protobufjs/utf8"{})
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{src_2util_2minimal_8js_adcd223e77b30bac31f61bccdb50486ec}{pool}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}@protobufjs/pool"{})
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{src_2util_2minimal_8js_abdc227b1547f28869f8fd3fa92edd591}{Long\+Bits}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./longbits"{})
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{src_2util_2minimal_8js_a01d464d543a9eca589e249de3ed538a9}{is\+Node}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{src_2util_2minimal_8js_ac039218b9e11c7e8d7e6bf82f4bf39d3}{global}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{src_2util_2minimal_8js_a5c300877136bf2748ddf3651b7a24103}{empty\+Array}} = Object.\+freeze ? Object.\+freeze(\mbox{[}$\,$\mbox{]}) \+: \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{src_2util_2minimal_8js_a8e32ed4d6d278de188a8454a1c0987e7}{empty\+Object}} = Object.\+freeze ? Object.\+freeze(\{\}) \+: \{\}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{src_2util_2minimal_8js_ada20d36a5f0171ebdc186644afa10fec}{is\+Integer}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{src_2util_2minimal_8js_a19409ec62a3ace1b9137696b95adcf0c}{is\+String}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{src_2util_2minimal_8js_a728f5241dba4ed79398d9049ea02d449}{is\+Object}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{src_2util_2minimal_8js_a727c296f059f42377832c5db0e372342}{isset}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{src_2util_2minimal_8js_abd02b762380138c6012931327beb53fa}{Buffer}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{src_2util_2minimal_8js_a3a050bbc8b1c335cdfeb500b59187eae}{\+\_\+\+Buffer\+\_\+from}} = null
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{src_2util_2minimal_8js_a8400e706682eb6a824d2241810896a70}{\+\_\+\+Buffer\+\_\+alloc\+Unsafe}} = null
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{src_2util_2minimal_8js_a17ecc7b01ee397b7a1e2025c5969c429}{new\+Buffer}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{src_2util_2minimal_8js_af995c57b5c96b76285759ad7afaebc5b}{Long}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{src_2util_2minimal_8js_a207c4e998a5355f91db3bca7f88950a1}{key2\+Re}} = /\texorpdfstring{$^\wedge$}{\string^}true\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a5df37b7f02e5cdc7d9412b7f872b8e01}{false}}\texorpdfstring{$\vert$}{|}0\texorpdfstring{$\vert$}{|}1\$/
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{src_2util_2minimal_8js_a41aff64a57a3e4a54a32d3e54eddb46b}{key32\+Re}} = /\texorpdfstring{$^\wedge$}{\string^}-\/?(?\+:0\texorpdfstring{$\vert$}{|}\mbox{[}1-\/9\mbox{]}\mbox{[}0-\/9\mbox{]}\texorpdfstring{$\ast$}{*})\$/
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{src_2util_2minimal_8js_a38d45ec268068431f0dc0940ef9a10c5}{key64\+Re}} = /\texorpdfstring{$^\wedge$}{\string^}(?\+:\mbox{[}\textbackslash{}\textbackslash{}x00-\/\textbackslash{}\textbackslash{}xff\mbox{]}\{8\}\texorpdfstring{$\vert$}{|}-\/?(?\+:0\texorpdfstring{$\vert$}{|}\mbox{[}1-\/9\mbox{]}\mbox{[}0-\/9\mbox{]}\texorpdfstring{$\ast$}{*}))\$/
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{src_2util_2minimal_8js_aa2f3f00cb117b08f799b47db42224004}{long\+To\+Hash}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{src_2util_2minimal_8js_ad9cf8661ad2eb1aa27f0b26c1faa7bc5}{long\+From\+Hash}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{src_2util_2minimal_8js_a71ad43c875f2d6d7f7e461dc835e6a35}{merge}} = merge
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{src_2util_2minimal_8js_a75228064e94b0a72cc3b0c87e013024b}{lc\+First}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{src_2util_2minimal_8js_aa3317850982dbc974f6f2272837e911a}{new\+Error}} = new\+Error
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{src_2util_2minimal_8js_a01232d36d3adc5c5462e15bdaefd51a7}{Protocol\+Error}} = \mbox{\hyperlink{src_2util_2minimal_8js_aa3317850982dbc974f6f2272837e911a}{new\+Error}}("{}Protocol\+Error"{})
+\end{DoxyCompactItemize}
+\begin{Indent}\textbf{ Type\#ctor}\par
+{\em @type \{Constructor\texorpdfstring{$<$}{<}\{\}\texorpdfstring{$>$}{>}\} }\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{src_2util_2minimal_8js_a325c4e317c38d8497130ebce7670be2f}{Array}} = typeof \mbox{\hyperlink{__clone_array_buffer_8js_a23efaf497399fa716c3e05b817cb7d0c}{Uint8\+Array}} !== "{}undefined"{} ? \mbox{\hyperlink{__clone_array_buffer_8js_a23efaf497399fa716c3e05b817cb7d0c}{Uint8\+Array}} \+: Array
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ util.\+Protocol\+Error\#instance}\par
+{\em So far decoded message instance.
+
+@type \{Message$<$\+T$>$\} }\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{src_2util_2minimal_8js_a48968b3a46827e066e96776fab38ee52}{one\+Of\+Getter}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{src_2util_2minimal_8js_ab203882159dd9506cb26569a43f1030a}{one\+Of\+Setter}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{src_2util_2minimal_8js_a9c95bf7f2e7eae95ada4df19e651ed87}{to\+JSONOptions}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{src_2util_2minimal_8js_a13d33d5cd16039447857027b5072351d}{\+\_\+configure}}
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{src_2util_2minimal_8js_a8400e706682eb6a824d2241810896a70}\index{minimal.js@{minimal.js}!\_Buffer\_allocUnsafe@{\_Buffer\_allocUnsafe}}
+\index{\_Buffer\_allocUnsafe@{\_Buffer\_allocUnsafe}!minimal.js@{minimal.js}}
+\doxysubsubsection{\texorpdfstring{\_Buffer\_allocUnsafe}{\_Buffer\_allocUnsafe}}
+{\footnotesize\ttfamily \label{src_2util_2minimal_8js_a8400e706682eb6a824d2241810896a70} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \+\_\+\+Buffer\+\_\+alloc\+Unsafe = null}
+
+\Hypertarget{src_2util_2minimal_8js_a3a050bbc8b1c335cdfeb500b59187eae}\index{minimal.js@{minimal.js}!\_Buffer\_from@{\_Buffer\_from}}
+\index{\_Buffer\_from@{\_Buffer\_from}!minimal.js@{minimal.js}}
+\doxysubsubsection{\texorpdfstring{\_Buffer\_from}{\_Buffer\_from}}
+{\footnotesize\ttfamily \label{src_2util_2minimal_8js_a3a050bbc8b1c335cdfeb500b59187eae} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \+\_\+\+Buffer\+\_\+from = null}
+
+\Hypertarget{src_2util_2minimal_8js_a13d33d5cd16039447857027b5072351d}\index{minimal.js@{minimal.js}!\_configure@{\_configure}}
+\index{\_configure@{\_configure}!minimal.js@{minimal.js}}
+\doxysubsubsection{\texorpdfstring{\_configure}{\_configure}}
+{\footnotesize\ttfamily \label{src_2util_2minimal_8js_a13d33d5cd16039447857027b5072351d} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \+\_\+configure}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}()\ \{}
+\DoxyCodeLine{\ \ \ \ var\ \mbox{\hyperlink{interface_buffer}{Buffer}}\ =\ \mbox{\hyperlink{src_2util_2minimal_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}}.Buffer;}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{interface_buffer}{Buffer}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{src_2util_2minimal_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}}.\_Buffer\_from\ =\ \mbox{\hyperlink{src_2util_2minimal_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}}.\_Buffer\_allocUnsafe\ =\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{src_2util_2minimal_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}}.\_Buffer\_from\ =\ \mbox{\hyperlink{interface_buffer}{Buffer}}.from\ !==\ Uint8Array.from\ \&\&\ \mbox{\hyperlink{interface_buffer}{Buffer}}.from\ ||}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keyword}{function}\ Buffer\_from(\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}},\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aace6cbf6b92481670f8b8421548f7584}{encoding}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{src_2util_2minimal_8js_abd02b762380138c6012931327beb53fa}{Buffer}}(\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}},\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aace6cbf6b92481670f8b8421548f7584}{encoding}});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{src_2util_2minimal_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}}.\_Buffer\_allocUnsafe\ =\ \mbox{\hyperlink{interface_buffer}{Buffer}}.allocUnsafe\ ||}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keyword}{function}\ Buffer\_allocUnsafe(\mbox{\hyperlink{ordered-map_8min_8js_aa4a39500e3f754a8f2e1fd50b9ae523c}{size}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{src_2util_2minimal_8js_abd02b762380138c6012931327beb53fa}{Buffer}}(\mbox{\hyperlink{ordered-map_8min_8js_aa4a39500e3f754a8f2e1fd50b9ae523c}{size}});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{src_2util_2minimal_8js_a325c4e317c38d8497130ebce7670be2f}\index{minimal.js@{minimal.js}!Array@{Array}}
+\index{Array@{Array}!minimal.js@{minimal.js}}
+\doxysubsubsection{\texorpdfstring{Array}{Array}}
+{\footnotesize\ttfamily \label{src_2util_2minimal_8js_a325c4e317c38d8497130ebce7670be2f} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} Array = typeof \mbox{\hyperlink{__clone_array_buffer_8js_a23efaf497399fa716c3e05b817cb7d0c}{Uint8\+Array}} !== "{}undefined"{} ? \mbox{\hyperlink{__clone_array_buffer_8js_a23efaf497399fa716c3e05b817cb7d0c}{Uint8\+Array}} \+: Array}
+
+Array implementation used in the browser. {\ttfamily Uint8\+Array} if supported, otherwise {\ttfamily Array}. @type \{Constructor$<$\+Uint8\+Array$>$\} \Hypertarget{src_2util_2minimal_8js_acad74cf820ade2653cf620d41d490beb}\index{minimal.js@{minimal.js}!asPromise@{asPromise}}
+\index{asPromise@{asPromise}!minimal.js@{minimal.js}}
+\doxysubsubsection{\texorpdfstring{asPromise}{asPromise}}
+{\footnotesize\ttfamily \label{src_2util_2minimal_8js_acad74cf820ade2653cf620d41d490beb} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} as\+Promise = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}@protobufjs/aspromise"{})}
+
+\Hypertarget{src_2util_2minimal_8js_aa26bca6302d13459c54fd6a830690c3c}\index{minimal.js@{minimal.js}!base64@{base64}}
+\index{base64@{base64}!minimal.js@{minimal.js}}
+\doxysubsubsection{\texorpdfstring{base64}{base64}}
+{\footnotesize\ttfamily \label{src_2util_2minimal_8js_aa26bca6302d13459c54fd6a830690c3c} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} base64 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}@protobufjs/base64"{})}
+
+\Hypertarget{src_2util_2minimal_8js_abd02b762380138c6012931327beb53fa}\index{minimal.js@{minimal.js}!Buffer@{Buffer}}
+\index{Buffer@{Buffer}!minimal.js@{minimal.js}}
+\doxysubsubsection{\texorpdfstring{Buffer}{Buffer}}
+{\footnotesize\ttfamily \label{src_2util_2minimal_8js_abd02b762380138c6012931327beb53fa} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} Buffer}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ (\textcolor{keyword}{function}()\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ var\ \mbox{\hyperlink{interface_buffer}{Buffer}}\ =\ \mbox{\hyperlink{src_2util_2minimal_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}}.inquire(\textcolor{stringliteral}{"{}buffer"{}}).Buffer;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{interface_buffer}{Buffer}}.prototype.utf8Write\ ?\ \mbox{\hyperlink{src_2util_2minimal_8js_abd02b762380138c6012931327beb53fa}{Buffer}}\ :\ \ \textcolor{keyword}{null};}
+\DoxyCodeLine{\ \ \ \ \}\ \textcolor{keywordflow}{catch}\ (\mbox{\hyperlink{firestore__admin__v1__proto__api_8js_a08a4415e9d594ff960030b921d42b91e}{e}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\})()}
+
+\end{DoxyCode}
+\doxylink{class_node}{Node}\textquotesingle{}s \doxylink{interface_buffer}{Buffer} class if available. @type \{Constructor$<$\+Buffer$>$\} \Hypertarget{src_2util_2minimal_8js_a5c300877136bf2748ddf3651b7a24103}\index{minimal.js@{minimal.js}!emptyArray@{emptyArray}}
+\index{emptyArray@{emptyArray}!minimal.js@{minimal.js}}
+\doxysubsubsection{\texorpdfstring{emptyArray}{emptyArray}}
+{\footnotesize\ttfamily \label{src_2util_2minimal_8js_a5c300877136bf2748ddf3651b7a24103} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} empty\+Array = Object.\+freeze ? Object.\+freeze(\mbox{[}$\,$\mbox{]}) \+: \mbox{[}$\,$\mbox{]}}
+
+An immuable empty array.
+
+@type \{Array.\texorpdfstring{$<$}{<}\texorpdfstring{$\ast$}{*}\texorpdfstring{$>$}{>}\} @const \Hypertarget{src_2util_2minimal_8js_a8e32ed4d6d278de188a8454a1c0987e7}\index{minimal.js@{minimal.js}!emptyObject@{emptyObject}}
+\index{emptyObject@{emptyObject}!minimal.js@{minimal.js}}
+\doxysubsubsection{\texorpdfstring{emptyObject}{emptyObject}}
+{\footnotesize\ttfamily \label{src_2util_2minimal_8js_a8e32ed4d6d278de188a8454a1c0987e7} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} empty\+Object = Object.\+freeze ? Object.\+freeze(\{\}) \+: \{\}}
+
+An immutable empty object. @type \{Object\} @const \Hypertarget{src_2util_2minimal_8js_a996edf3ee1c82bb666bc0bb5f650d38a}\index{minimal.js@{minimal.js}!EventEmitter@{EventEmitter}}
+\index{EventEmitter@{EventEmitter}!minimal.js@{minimal.js}}
+\doxysubsubsection{\texorpdfstring{EventEmitter}{EventEmitter}}
+{\footnotesize\ttfamily \label{src_2util_2minimal_8js_a996edf3ee1c82bb666bc0bb5f650d38a} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} Event\+Emitter = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}@protobufjs/eventemitter"{})}
+
+\Hypertarget{src_2util_2minimal_8js_a934f7869cdd502f5d86fc82a36c66524}\index{minimal.js@{minimal.js}!float@{float}}
+\index{float@{float}!minimal.js@{minimal.js}}
+\doxysubsubsection{\texorpdfstring{float}{float}}
+{\footnotesize\ttfamily \label{src_2util_2minimal_8js_a934f7869cdd502f5d86fc82a36c66524} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} float = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}@protobufjs/float"{})}
+
+\Hypertarget{src_2util_2minimal_8js_ac039218b9e11c7e8d7e6bf82f4bf39d3}\index{minimal.js@{minimal.js}!global@{global}}
+\index{global@{global}!minimal.js@{minimal.js}}
+\doxysubsubsection{\texorpdfstring{global}{global}}
+{\footnotesize\ttfamily \label{src_2util_2minimal_8js_ac039218b9e11c7e8d7e6bf82f4bf39d3} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} global}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \mbox{\hyperlink{src_2util_2minimal_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}}.isNode\ \&\&\ \mbox{\hyperlink{src_2util_2minimal_8js_ac039218b9e11c7e8d7e6bf82f4bf39d3}{global}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ ||\ typeof\ \mbox{\hyperlink{forge_8all_8min_8js_a77335ab2a82353d4a02f9ba062031c46}{window}}\ !==\ \textcolor{stringliteral}{"{}undefined"{}}\ \&\&\ \mbox{\hyperlink{forge_8all_8min_8js_a77335ab2a82353d4a02f9ba062031c46}{window}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ ||\ typeof\ \textcolor{keyword}{self}\ \ \ !==\ \textcolor{stringliteral}{"{}undefined"{}}\ \&\&\ \textcolor{keyword}{self}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ ||\ \textcolor{keyword}{this}}
+
+\end{DoxyCode}
+Global object reference.
+
+@type \{Object\} \Hypertarget{src_2util_2minimal_8js_a92df34503dfdda3c2605668ebc2b3e5c}\index{minimal.js@{minimal.js}!inquire@{inquire}}
+\index{inquire@{inquire}!minimal.js@{minimal.js}}
+\doxysubsubsection{\texorpdfstring{inquire}{inquire}}
+{\footnotesize\ttfamily \label{src_2util_2minimal_8js_a92df34503dfdda3c2605668ebc2b3e5c} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} inquire = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}@protobufjs/inquire"{})}
+
+\Hypertarget{src_2util_2minimal_8js_ada20d36a5f0171ebdc186644afa10fec}\index{minimal.js@{minimal.js}!isInteger@{isInteger}}
+\index{isInteger@{isInteger}!minimal.js@{minimal.js}}
+\doxysubsubsection{\texorpdfstring{isInteger}{isInteger}}
+{\footnotesize\ttfamily \label{src_2util_2minimal_8js_ada20d36a5f0171ebdc186644afa10fec} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} is\+Integer}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ Number.isInteger\ ||\ \ \textcolor{keyword}{function}\ \mbox{\hyperlink{src_2util_2minimal_8js_ada20d36a5f0171ebdc186644afa10fec}{isInteger}}(\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}})\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ typeof\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}\ ===\ \textcolor{stringliteral}{"{}number"{}}\ \&\&\ \mbox{\hyperlink{lodash_2core_8js_accdd04dda3cbd01457c3d5342c97db1a}{isFinite}}(\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}})\ \&\&\ Math.floor(\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}})\ ===\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Tests if the specified value is an integer. @function 
+\begin{DoxyParams}{Parameters}
+{\em \{\texorpdfstring{$\ast$}{*}\}} & value Value to test \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{boolean\} {\ttfamily true} if the value is an integer 
+\end{DoxyReturn}
+\Hypertarget{src_2util_2minimal_8js_a01d464d543a9eca589e249de3ed538a9}\index{minimal.js@{minimal.js}!isNode@{isNode}}
+\index{isNode@{isNode}!minimal.js@{minimal.js}}
+\doxysubsubsection{\texorpdfstring{isNode}{isNode}}
+{\footnotesize\ttfamily \label{src_2util_2minimal_8js_a01d464d543a9eca589e249de3ed538a9} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} is\+Node}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ Boolean(typeof\ \mbox{\hyperlink{src_2util_2minimal_8js_ac039218b9e11c7e8d7e6bf82f4bf39d3}{global}}\ !==\ \textcolor{stringliteral}{"{}undefined"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \&\&\ \mbox{\hyperlink{src_2util_2minimal_8js_ac039218b9e11c7e8d7e6bf82f4bf39d3}{global}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \&\&\ \mbox{\hyperlink{src_2util_2minimal_8js_ac039218b9e11c7e8d7e6bf82f4bf39d3}{global}}.process}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \&\&\ \mbox{\hyperlink{src_2util_2minimal_8js_ac039218b9e11c7e8d7e6bf82f4bf39d3}{global}}.process.versions}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \&\&\ \mbox{\hyperlink{src_2util_2minimal_8js_ac039218b9e11c7e8d7e6bf82f4bf39d3}{global}}.process.versions.node)}
+
+\end{DoxyCode}
+Whether running within node or not.
+
+@type \{boolean\} \Hypertarget{src_2util_2minimal_8js_a728f5241dba4ed79398d9049ea02d449}\index{minimal.js@{minimal.js}!isObject@{isObject}}
+\index{isObject@{isObject}!minimal.js@{minimal.js}}
+\doxysubsubsection{\texorpdfstring{isObject}{isObject}}
+{\footnotesize\ttfamily \label{src_2util_2minimal_8js_a728f5241dba4ed79398d9049ea02d449} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} is\+Object}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{src_2util_2minimal_8js_a728f5241dba4ed79398d9049ea02d449}{isObject}}(\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}})\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}\ \&\&\ typeof\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}\ ===\ \textcolor{stringliteral}{"{}object"{}};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Tests if the specified value is a non-\/null object. 
+\begin{DoxyParams}{Parameters}
+{\em \{\texorpdfstring{$\ast$}{*}\}} & value Value to test \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{boolean\} {\ttfamily true} if the value is a non-\/null object 
+\end{DoxyReturn}
+\Hypertarget{src_2util_2minimal_8js_a727c296f059f42377832c5db0e372342}\index{minimal.js@{minimal.js}!isset@{isset}}
+\index{isset@{isset}!minimal.js@{minimal.js}}
+\doxysubsubsection{\texorpdfstring{isset}{isset}}
+{\footnotesize\ttfamily \label{src_2util_2minimal_8js_a727c296f059f42377832c5db0e372342} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} isset}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{\mbox{\hyperlink{src_2util_2minimal_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}}.isSet\ =\ \textcolor{keyword}{function}\ \mbox{\hyperlink{__base_clone_8js_a63726189a491412ee794f240ca459ca2}{isSet}}(\mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}},\ \mbox{\hyperlink{protobufjs_2src_2util_8js_a1ac3cdcaad4dbc4ad940f9e47c185bc2}{prop}})\ \{}
+\DoxyCodeLine{\ \ \ \ var\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}\ =\ \mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}[\mbox{\hyperlink{protobufjs_2src_2util_8js_a1ac3cdcaad4dbc4ad940f9e47c185bc2}{prop}}];}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}\ !=\ \textcolor{keyword}{null}\ \&\&\ \mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}.hasOwnProperty(\mbox{\hyperlink{protobufjs_2src_2util_8js_a1ac3cdcaad4dbc4ad940f9e47c185bc2}{prop}}))\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ typeof\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}\ !==\ \textcolor{stringliteral}{"{}object"{}}\ ||\ (\mbox{\hyperlink{src_2util_2minimal_8js_a325c4e317c38d8497130ebce7670be2f}{Array}}.isArray(\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}})\ ?\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.length\ :\ Object.keys(\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}).length)\ >\ 0;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Checks if a property on a message is considered to be present. This is an alias of {\ttfamily \doxylink{}{util.\+is\+Set}}. @function 
+\begin{DoxyParams}{Parameters}
+{\em \{\+Object\}} & obj Plain object or message instance \\
+\hline
+{\em \{string\}} & prop Property name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{boolean\} {\ttfamily true} if considered to be present, otherwise {\ttfamily false} 
+\end{DoxyReturn}
+\Hypertarget{src_2util_2minimal_8js_a19409ec62a3ace1b9137696b95adcf0c}\index{minimal.js@{minimal.js}!isString@{isString}}
+\index{isString@{isString}!minimal.js@{minimal.js}}
+\doxysubsubsection{\texorpdfstring{isString}{isString}}
+{\footnotesize\ttfamily \label{src_2util_2minimal_8js_a19409ec62a3ace1b9137696b95adcf0c} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} is\+String}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{src_2util_2minimal_8js_a19409ec62a3ace1b9137696b95adcf0c}{isString}}(\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}})\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ typeof\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}\ ===\ \textcolor{stringliteral}{"{}string"{}}\ ||\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}\ instanceof\ String;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Tests if the specified value is a string. 
+\begin{DoxyParams}{Parameters}
+{\em \{\texorpdfstring{$\ast$}{*}\}} & value Value to test \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{boolean\} {\ttfamily true} if the value is a string 
+\end{DoxyReturn}
+\Hypertarget{src_2util_2minimal_8js_a207c4e998a5355f91db3bca7f88950a1}\index{minimal.js@{minimal.js}!key2Re@{key2Re}}
+\index{key2Re@{key2Re}!minimal.js@{minimal.js}}
+\doxysubsubsection{\texorpdfstring{key2Re}{key2Re}}
+{\footnotesize\ttfamily \label{src_2util_2minimal_8js_a207c4e998a5355f91db3bca7f88950a1} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} key2\+Re = /\texorpdfstring{$^\wedge$}{\string^}true\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a5df37b7f02e5cdc7d9412b7f872b8e01}{false}}\texorpdfstring{$\vert$}{|}0\texorpdfstring{$\vert$}{|}1\$/}
+
+Regular expression used to verify 2 bit ({\ttfamily bool}) map keys. @type \{Reg\+Exp\} @const \Hypertarget{src_2util_2minimal_8js_a41aff64a57a3e4a54a32d3e54eddb46b}\index{minimal.js@{minimal.js}!key32Re@{key32Re}}
+\index{key32Re@{key32Re}!minimal.js@{minimal.js}}
+\doxysubsubsection{\texorpdfstring{key32Re}{key32Re}}
+{\footnotesize\ttfamily \label{src_2util_2minimal_8js_a41aff64a57a3e4a54a32d3e54eddb46b} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} key32\+Re = /\texorpdfstring{$^\wedge$}{\string^}-\/?(?\+:0\texorpdfstring{$\vert$}{|}\mbox{[}1-\/9\mbox{]}\mbox{[}0-\/9\mbox{]}\texorpdfstring{$\ast$}{*})\$/}
+
+Regular expression used to verify 32 bit ({\ttfamily int32} etc.) map keys. @type \{Reg\+Exp\} @const \Hypertarget{src_2util_2minimal_8js_a38d45ec268068431f0dc0940ef9a10c5}\index{minimal.js@{minimal.js}!key64Re@{key64Re}}
+\index{key64Re@{key64Re}!minimal.js@{minimal.js}}
+\doxysubsubsection{\texorpdfstring{key64Re}{key64Re}}
+{\footnotesize\ttfamily \label{src_2util_2minimal_8js_a38d45ec268068431f0dc0940ef9a10c5} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} key64\+Re = /\texorpdfstring{$^\wedge$}{\string^}(?\+:\mbox{[}\textbackslash{}\textbackslash{}x00-\/\textbackslash{}\textbackslash{}xff\mbox{]}\{8\}\texorpdfstring{$\vert$}{|}-\/?(?\+:0\texorpdfstring{$\vert$}{|}\mbox{[}1-\/9\mbox{]}\mbox{[}0-\/9\mbox{]}\texorpdfstring{$\ast$}{*}))\$/}
+
+Regular expression used to verify 64 bit ({\ttfamily int64} etc.) map keys. @type \{Reg\+Exp\} @const \Hypertarget{src_2util_2minimal_8js_a75228064e94b0a72cc3b0c87e013024b}\index{minimal.js@{minimal.js}!lcFirst@{lcFirst}}
+\index{lcFirst@{lcFirst}!minimal.js@{minimal.js}}
+\doxysubsubsection{\texorpdfstring{lcFirst}{lcFirst}}
+{\footnotesize\ttfamily \label{src_2util_2minimal_8js_a75228064e94b0a72cc3b0c87e013024b} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} lc\+First}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{src_2util_2minimal_8js_a75228064e94b0a72cc3b0c87e013024b}{lcFirst}}(\mbox{\hyperlink{json-bigint_2lib_2stringify_8js_abd4075a8f329b0ccafd81359c952a9df}{str}})\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{json-bigint_2lib_2stringify_8js_abd4075a8f329b0ccafd81359c952a9df}{str}}.charAt(0).toLowerCase()\ +\ \mbox{\hyperlink{json-bigint_2lib_2stringify_8js_abd4075a8f329b0ccafd81359c952a9df}{str}}.substring(1);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Converts the first character of a string to lower case. 
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & str String to convert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{string\} Converted string 
+\end{DoxyReturn}
+\Hypertarget{src_2util_2minimal_8js_af995c57b5c96b76285759ad7afaebc5b}\index{minimal.js@{minimal.js}!Long@{Long}}
+\index{Long@{Long}!minimal.js@{minimal.js}}
+\doxysubsubsection{\texorpdfstring{Long}{Long}}
+{\footnotesize\ttfamily \label{src_2util_2minimal_8js_af995c57b5c96b76285759ad7afaebc5b} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} Long}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \mbox{\hyperlink{src_2util_2minimal_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}}.global.dcodeIO\ \&\&\ \ \mbox{\hyperlink{src_2util_2minimal_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}}.global.dcodeIO.Long}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ ||\ \ \mbox{\hyperlink{src_2util_2minimal_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}}.global.Long}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ ||\ \mbox{\hyperlink{src_2util_2minimal_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}}.inquire(\textcolor{stringliteral}{"{}long"{}})}
+
+\end{DoxyCode}
+Long.\+js\textquotesingle{}s \doxylink{interface_long}{Long} class if available. @type \{Constructor$<$\+Long$>$\} \Hypertarget{src_2util_2minimal_8js_abdc227b1547f28869f8fd3fa92edd591}\index{minimal.js@{minimal.js}!LongBits@{LongBits}}
+\index{LongBits@{LongBits}!minimal.js@{minimal.js}}
+\doxysubsubsection{\texorpdfstring{LongBits}{LongBits}}
+{\footnotesize\ttfamily \label{src_2util_2minimal_8js_abdc227b1547f28869f8fd3fa92edd591} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} Long\+Bits = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./longbits"{})}
+
+\Hypertarget{src_2util_2minimal_8js_ad9cf8661ad2eb1aa27f0b26c1faa7bc5}\index{minimal.js@{minimal.js}!longFromHash@{longFromHash}}
+\index{longFromHash@{longFromHash}!minimal.js@{minimal.js}}
+\doxysubsubsection{\texorpdfstring{longFromHash}{longFromHash}}
+{\footnotesize\ttfamily \label{src_2util_2minimal_8js_ad9cf8661ad2eb1aa27f0b26c1faa7bc5} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} long\+From\+Hash}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{src_2util_2minimal_8js_ad9cf8661ad2eb1aa27f0b26c1faa7bc5}{longFromHash}}(\mbox{\hyperlink{pbe_8js_a4e8eeb941272ccb92c8911eb60686dd3}{hash}},\ \textcolor{keywordtype}{unsigned})\ \{}
+\DoxyCodeLine{\ \ \ \ var\ bits\ =\ \mbox{\hyperlink{src_2util_2minimal_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}}.LongBits.fromHash(\mbox{\hyperlink{pbe_8js_a4e8eeb941272ccb92c8911eb60686dd3}{hash}});}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{src_2util_2minimal_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}}.Long)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{src_2util_2minimal_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}}.Long.fromBits(bits.lo,\ bits.hi,\ \textcolor{keywordtype}{unsigned});}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ bits.toNumber(Boolean(\textcolor{keywordtype}{unsigned}));}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Converts an 8 characters long hash string to a long or number. 
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & hash Hash \\
+\hline
+{\em \{boolean\}} & \mbox{[}unsigned=false\mbox{]} Whether unsigned or not \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Long\texorpdfstring{$\vert$}{|}number\} Original value 
+\end{DoxyReturn}
+\Hypertarget{src_2util_2minimal_8js_aa2f3f00cb117b08f799b47db42224004}\index{minimal.js@{minimal.js}!longToHash@{longToHash}}
+\index{longToHash@{longToHash}!minimal.js@{minimal.js}}
+\doxysubsubsection{\texorpdfstring{longToHash}{longToHash}}
+{\footnotesize\ttfamily \label{src_2util_2minimal_8js_aa2f3f00cb117b08f799b47db42224004} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} long\+To\+Hash}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{src_2util_2minimal_8js_aa2f3f00cb117b08f799b47db42224004}{longToHash}}(\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}})\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ?\ \mbox{\hyperlink{src_2util_2minimal_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}}.LongBits.from(\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}).toHash()}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{src_2util_2minimal_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}}.LongBits.zeroHash;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Converts a number or long to an 8 characters long hash string. 
+\begin{DoxyParams}{Parameters}
+{\em \{\+Long\texorpdfstring{$\vert$}{|}number\}} & value Value to convert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{string\} Hash 
+\end{DoxyReturn}
+\Hypertarget{src_2util_2minimal_8js_a71ad43c875f2d6d7f7e461dc835e6a35}\index{minimal.js@{minimal.js}!merge@{merge}}
+\index{merge@{merge}!minimal.js@{minimal.js}}
+\doxysubsubsection{\texorpdfstring{merge}{merge}}
+{\footnotesize\ttfamily \label{src_2util_2minimal_8js_a71ad43c875f2d6d7f7e461dc835e6a35} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} merge = merge}
+
+\Hypertarget{src_2util_2minimal_8js_a17ecc7b01ee397b7a1e2025c5969c429}\index{minimal.js@{minimal.js}!newBuffer@{newBuffer}}
+\index{newBuffer@{newBuffer}!minimal.js@{minimal.js}}
+\doxysubsubsection{\texorpdfstring{newBuffer}{newBuffer}}
+{\footnotesize\ttfamily \label{src_2util_2minimal_8js_a17ecc7b01ee397b7a1e2025c5969c429} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} new\+Buffer}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{src_2util_2minimal_8js_a17ecc7b01ee397b7a1e2025c5969c429}{newBuffer}}(sizeOrArray)\ \{}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ typeof\ sizeOrArray\ ===\ \textcolor{stringliteral}{"{}number"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ?\ \mbox{\hyperlink{src_2util_2minimal_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}}.Buffer}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ ?\ \mbox{\hyperlink{src_2util_2minimal_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}}.\_Buffer\_allocUnsafe(sizeOrArray)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ :\ \textcolor{keyword}{new}\ \mbox{\hyperlink{src_2util_2minimal_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}}.Array(sizeOrArray)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{src_2util_2minimal_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}}.Buffer}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ ?\ \mbox{\hyperlink{src_2util_2minimal_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}}.\_Buffer\_from(sizeOrArray)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ :\ typeof\ Uint8Array\ ===\ \textcolor{stringliteral}{"{}undefined"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ?\ sizeOrArray}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ :\ \textcolor{keyword}{new}\ \mbox{\hyperlink{__clone_array_buffer_8js_a23efaf497399fa716c3e05b817cb7d0c}{Uint8Array}}(sizeOrArray);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Creates a new buffer of whatever type supported by the environment. 
+\begin{DoxyParams}{Parameters}
+{\em \{number\texorpdfstring{$\vert$}{|}number\mbox{[}$\,$\mbox{]}\}} & \mbox{[}size\+Or\+Array=0\mbox{]} \doxylink{interface_buffer}{Buffer} size or number array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Uint8\+Array\texorpdfstring{$\vert$}{|}\+Buffer\} \doxylink{interface_buffer}{Buffer} 
+\end{DoxyReturn}
+\Hypertarget{src_2util_2minimal_8js_aa3317850982dbc974f6f2272837e911a}\index{minimal.js@{minimal.js}!newError@{newError}}
+\index{newError@{newError}!minimal.js@{minimal.js}}
+\doxysubsubsection{\texorpdfstring{newError}{newError}}
+{\footnotesize\ttfamily \label{src_2util_2minimal_8js_aa3317850982dbc974f6f2272837e911a} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} new\+Error = new\+Error}
+
+\Hypertarget{src_2util_2minimal_8js_a48968b3a46827e066e96776fab38ee52}\index{minimal.js@{minimal.js}!oneOfGetter@{oneOfGetter}}
+\index{oneOfGetter@{oneOfGetter}!minimal.js@{minimal.js}}
+\doxysubsubsection{\texorpdfstring{oneOfGetter}{oneOfGetter}}
+{\footnotesize\ttfamily \label{src_2util_2minimal_8js_a48968b3a46827e066e96776fab38ee52} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} one\+Of\+Getter}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ getOneOf(fieldNames)\ \{}
+\DoxyCodeLine{\ \ \ \ var\ fieldMap\ =\ \{\};}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{for}\ (var\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ =\ 0;\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ <\ fieldNames.length;\ ++\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}})}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ fieldMap[fieldNames[\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}]]\ =\ 1;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{function}()\ \{\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (var\ \mbox{\hyperlink{__base_assign_8js_a87dd2006b34e1d50c301938be11fd6fa}{keys}}\ =\ Object.keys(\textcolor{keyword}{this}),\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ =\ \mbox{\hyperlink{__base_assign_8js_a87dd2006b34e1d50c301938be11fd6fa}{keys}}.length\ -\/\ 1;\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ >\ -\/1;\ -\/-\/\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}})}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (fieldMap[\mbox{\hyperlink{__base_assign_8js_a87dd2006b34e1d50c301938be11fd6fa}{keys}}[\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}]]\ ===\ 1\ \&\&\ \textcolor{keyword}{this}[\mbox{\hyperlink{__base_assign_8js_a87dd2006b34e1d50c301938be11fd6fa}{keys}}[\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}]]\ !==\ \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}\ \&\&\ \textcolor{keyword}{this}[\mbox{\hyperlink{__base_assign_8js_a87dd2006b34e1d50c301938be11fd6fa}{keys}}[\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}]]\ !==\ \textcolor{keyword}{null})}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{__base_assign_8js_a87dd2006b34e1d50c301938be11fd6fa}{keys}}[\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}];}
+\DoxyCodeLine{\ \ \ \ \};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Builds a getter for a oneof\textquotesingle{}s present field name. 
+\begin{DoxyParams}{Parameters}
+{\em \{string\mbox{[}$\,$\mbox{]}\}} & field\+Names Field names \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{One\+Of\+Getter\} Unbound getter 
+\end{DoxyReturn}
+\Hypertarget{src_2util_2minimal_8js_ab203882159dd9506cb26569a43f1030a}\index{minimal.js@{minimal.js}!oneOfSetter@{oneOfSetter}}
+\index{oneOfSetter@{oneOfSetter}!minimal.js@{minimal.js}}
+\doxysubsubsection{\texorpdfstring{oneOfSetter}{oneOfSetter}}
+{\footnotesize\ttfamily \label{src_2util_2minimal_8js_ab203882159dd9506cb26569a43f1030a} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} one\+Of\+Setter}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ setOneOf(fieldNames)\ \{}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{function}(\mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (var\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ =\ 0;\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ <\ fieldNames.length;\ ++\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}})}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (fieldNames[\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}]\ !==\ \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}})}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ \textcolor{keyword}{this}[fieldNames[\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}]];}
+\DoxyCodeLine{\ \ \ \ \};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Builds a setter for a oneof\textquotesingle{}s present field name. 
+\begin{DoxyParams}{Parameters}
+{\em \{string\mbox{[}$\,$\mbox{]}\}} & field\+Names Field names \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{One\+Of\+Setter\} Unbound setter 
+\end{DoxyReturn}
+\Hypertarget{src_2util_2minimal_8js_adcd223e77b30bac31f61bccdb50486ec}\index{minimal.js@{minimal.js}!pool@{pool}}
+\index{pool@{pool}!minimal.js@{minimal.js}}
+\doxysubsubsection{\texorpdfstring{pool}{pool}}
+{\footnotesize\ttfamily \label{src_2util_2minimal_8js_adcd223e77b30bac31f61bccdb50486ec} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} pool = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}@protobufjs/pool"{})}
+
+\Hypertarget{src_2util_2minimal_8js_a01232d36d3adc5c5462e15bdaefd51a7}\index{minimal.js@{minimal.js}!ProtocolError@{ProtocolError}}
+\index{ProtocolError@{ProtocolError}!minimal.js@{minimal.js}}
+\doxysubsubsection{\texorpdfstring{ProtocolError}{ProtocolError}}
+{\footnotesize\ttfamily \label{src_2util_2minimal_8js_a01232d36d3adc5c5462e15bdaefd51a7} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} Protocol\+Error = \mbox{\hyperlink{src_2util_2minimal_8js_aa3317850982dbc974f6f2272837e911a}{new\+Error}}("{}Protocol\+Error"{})}
+
+\Hypertarget{src_2util_2minimal_8js_ae2475e10618961c050dcba04e8c42331}\index{minimal.js@{minimal.js}!strict@{strict}}
+\index{strict@{strict}!minimal.js@{minimal.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{src_2util_2minimal_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+
+\Hypertarget{src_2util_2minimal_8js_a9c95bf7f2e7eae95ada4df19e651ed87}\index{minimal.js@{minimal.js}!toJSONOptions@{toJSONOptions}}
+\index{toJSONOptions@{toJSONOptions}!minimal.js@{minimal.js}}
+\doxysubsubsection{\texorpdfstring{toJSONOptions}{toJSONOptions}}
+{\footnotesize\ttfamily \label{src_2util_2minimal_8js_a9c95bf7f2e7eae95ada4df19e651ed87} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} to\+JSONOptions}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \ \ longs:\ String,}
+\DoxyCodeLine{\ \ \ \ enums:\ String,}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}}:\ String,}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{agent-base_2dist_2helpers_8js_ac6fdc7f7005e375dc7d7dce4bc785ab4}{json}}:\ \textcolor{keyword}{true}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Default conversion options used for {\ttfamily \doxylink{}{Message\#to\+JSON}} implementations.
+
+These options are close to proto3\textquotesingle{}s JSON mapping with the exception that internal types like Any are handled just like messages. More precisely\+:
+
+
+\begin{DoxyItemize}
+\item Longs become strings
+\item Enums become string keys
+\item Bytes become base64 encoded strings
+\item (Sub-\/)Messages become plain objects
+\item Maps become plain objects with all string keys
+\item Repeated fields become arrays
+\item NaN and Infinity for float and double fields become strings
+\end{DoxyItemize}
+
+@type \{\doxylink{interface_i_conversion_options}{IConversion\+Options}\} \begin{DoxySeeAlso}{See also}
+\href{https://developers.google.com/protocol-buffers/docs/proto3?hl=en\#json}{\texttt{ https\+://developers.\+google.\+com/protocol-\/buffers/docs/proto3?hl=en\#json}} 
+\end{DoxySeeAlso}
+\Hypertarget{src_2util_2minimal_8js_ab876ddef56cd51e80430bccc427e2e94}\index{minimal.js@{minimal.js}!utf8@{utf8}}
+\index{utf8@{utf8}!minimal.js@{minimal.js}}
+\doxysubsubsection{\texorpdfstring{utf8}{utf8}}
+{\footnotesize\ttfamily \label{src_2util_2minimal_8js_ab876ddef56cd51e80430bccc427e2e94} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} utf8 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}@protobufjs/utf8"{})}
+
+\Hypertarget{src_2util_2minimal_8js_a8f5b2e09d5197e9d28f6032dff542d44}\index{minimal.js@{minimal.js}!util@{util}}
+\index{util@{util}!minimal.js@{minimal.js}}
+\doxysubsubsection{\texorpdfstring{util}{util}}
+{\footnotesize\ttfamily \label{src_2util_2minimal_8js_a8f5b2e09d5197e9d28f6032dff542d44} 
+var util = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}}}
+

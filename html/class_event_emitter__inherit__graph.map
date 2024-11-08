@@ -1,0 +1,21 @@
+<map id="EventEmitter" name="EventEmitter">
+<area shape="rect" id="Node000001" title=" " alt="" coords="257,5,403,356"/>
+<area shape="rect" id="Node000002" href="$class_online_monitor.html" title=" " alt="" coords="103,404,222,694"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="253,318,213,406,208,404,248,316"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="253,356,224,420,219,418,249,353"/>
+<area shape="poly" id="edge3_Node000001_Node000002" title=" " alt="" coords="264,371,224,454,219,452,260,369"/>
+<area shape="rect" id="Node000003" href="$class_service_object.html" title=" " alt="" coords="246,414,414,684"/>
+<area shape="poly" id="edge4_Node000001_Node000003" title=" " alt="" coords="333,371,333,415,328,415,328,371"/>
+<area shape="rect" id="Node000008" href="$class_visibility_monitor.html" title=" " alt="" coords="438,435,553,664"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="399,369,441,455,436,457,395,371"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="412,356,447,434,442,436,407,359"/>
+<area shape="poly" id="edge11_Node000001_Node000008" title=" " alt="" coords="412,318,464,434,459,436,407,320"/>
+<area shape="rect" id="Node000004" href="$class_bucket.html" title=" " alt="" coords="5,742,196,1093"/>
+<area shape="poly" id="edge5_Node000003_Node000004" title=" " alt="" coords="241,697,211,744,198,764,194,761,207,741,236,694"/>
+<area shape="rect" id="Node000005" href="$class_channel.html" title=" " alt="" coords="220,814,317,1022"/>
+<area shape="poly" id="edge6_Node000003_Node000005" title=" " alt="" coords="308,699,289,814,283,813,303,698"/>
+<area shape="rect" id="Node000006" href="$class_hmac_key.html" title=" " alt="" coords="341,874,445,961"/>
+<area shape="poly" id="edge7_Node000003_Node000006" title=" " alt="" coords="358,698,388,874,383,875,353,699"/>
+<area shape="rect" id="Node000007" href="$class_notification.html" title=" " alt="" coords="470,814,594,1022"/>
+<area shape="poly" id="edge8_Node000003_Node000007" title=" " alt="" coords="425,688,459,741,493,813,489,815,455,744,420,691"/>
+</map>

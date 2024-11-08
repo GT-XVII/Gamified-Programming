@@ -1,0 +1,73 @@
+\doxysection{Aws\+Request\+Signer Class Reference}
+\hypertarget{class_aws_request_signer}{}\label{class_aws_request_signer}\index{AwsRequestSigner@{AwsRequestSigner}}
+
+
+Collaboration diagram for Aws\+Request\+Signer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{class_aws_request_signer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_aws_request_signer_a759ae224d25558b68370cff2a4e94a1e}{constructor}} (get\+Credentials, region)
+\item 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{class_aws_request_signer_a9a048cc824883a34358b010e77efb011}{get\+Request\+Options}} (amz\+Options)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implements an AWS API request signer based on the AWS Signature Version 4 signing process. \href{https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html}{\texttt{ https\+://docs.\+aws.\+amazon.\+com/general/latest/gr/signature-\/version-\/4.\+html}} 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_aws_request_signer_a759ae224d25558b68370cff2a4e94a1e}\index{AwsRequestSigner@{AwsRequestSigner}!constructor@{constructor}}
+\index{constructor@{constructor}!AwsRequestSigner@{AwsRequestSigner}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_aws_request_signer_a759ae224d25558b68370cff2a4e94a1e} 
+Aws\+Request\+Signer\+::constructor (\begin{DoxyParamCaption}\item[{}]{get\+Credentials}{, }\item[{}]{region}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Instantiates an AWS API request signer used to send authenticated signed requests to AWS APIs based on the AWS Signature Version 4 signing process. This also provides a mechanism to generate the signed request without sending it. 
+\begin{DoxyParams}{Parameters}
+{\em get\+Credentials} & \doxylink{class_a}{A} mechanism to retrieve AWS security credentials when needed. \\
+\hline
+{\em region} & The AWS region to use. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a3eca37c9aac9a17870baa116339724e3}{crypto}}, and \mbox{\hyperlink{awsrequestsigner_8js_a76fa7e3bd69ca107520d99475fa60fe7}{crypto\+\_\+1}}.
+
+\Hypertarget{class_aws_request_signer_a9a048cc824883a34358b010e77efb011}\index{AwsRequestSigner@{AwsRequestSigner}!getRequestOptions@{getRequestOptions}}
+\index{getRequestOptions@{getRequestOptions}!AwsRequestSigner@{AwsRequestSigner}}
+\doxysubsubsection{\texorpdfstring{getRequestOptions()}{getRequestOptions()}}
+{\footnotesize\ttfamily \label{class_aws_request_signer_a9a048cc824883a34358b010e77efb011} 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} Aws\+Request\+Signer\+::get\+Request\+Options (\begin{DoxyParamCaption}\item[{}]{amz\+Options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Generates the signed request for the provided HTTP request for calling an AWS API. This follows the steps described at\+: \href{https://docs.aws.amazon.com/general/latest/gr/sigv4_signing.html}{\texttt{ https\+://docs.\+aws.\+amazon.\+com/general/latest/gr/sigv4\+\_\+signing.\+html}} 
+\begin{DoxyParams}{Parameters}
+{\em amz\+Options} & The AWS request options that need to be signed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_a}{A} promise that resolves with the Gaxios\+Options containing the signed HTTP request parameters. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a3eca37c9aac9a17870baa116339724e3}{crypto}}, \mbox{\hyperlink{awsrequestsigner_8js_ab6e736999cac37cea882dd4952e13976}{generate\+Authentication\+Header\+Map()}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7f2cb2fcdd79bf72cefd29b7bc2d10fa}{headers}}, \mbox{\hyperlink{json-bigint_2lib_2stringify_8js_aec316efdeb7b2e5358b7d50869858da1}{JSON}}, \mbox{\hyperlink{lodash_2method_8js_a2f565198b0a61cb8648a01f0d9617cd7}{method}}, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2uuid_2dist_2esm-browser_2v35_8js_a2a5fb34fada8ceb9b494ec16878c09dc}{URL}}, and \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_acf0a8b41f00a22e21672c8b3768a0618}{url}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_aws_request_signer_a9a048cc824883a34358b010e77efb011_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/google-\/auth-\/library/build/src/auth/\mbox{\hyperlink{awsrequestsigner_8js}{awsrequestsigner.\+js}}\end{DoxyCompactItemize}

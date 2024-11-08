@@ -1,0 +1,71 @@
+\doxysection{backend/node\+\_\+modules/jose/dist/browser/jwk/thumbprint.js File Reference}
+\hypertarget{browser_2jwk_2thumbprint_8js}{}\label{browser_2jwk_2thumbprint_8js}\index{backend/node\_modules/jose/dist/browser/jwk/thumbprint.js@{backend/node\_modules/jose/dist/browser/jwk/thumbprint.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{browser_2jwk_2thumbprint_8js_ab9cf52bb0f003286bb75329b16b7b67a}{calculate\+Jwk\+Thumbprint}} (jwk, digest\+Algorithm)
+\item 
+function \mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{browser_2jwk_2thumbprint_8js_a1b7b8557690d0984959945f0483876b0}{calculate\+Jwk\+Thumbprint\+Uri}} (jwk, digest\+Algorithm)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{component_2dist_2esm_2index_8esm2017_8js_a953be46b94f595d839e88a6d3d270309}{import}} \mbox{\hyperlink{browser_2runtime_2digest_8js_a54d3c9201937d07375b3cdef4258dc37}{digest}} from runtime \mbox{\hyperlink{browser_2runtime_2digest_8js_a54d3c9201937d07375b3cdef4258dc37}{digest}} \mbox{\hyperlink{browser_2jwk_2thumbprint_8js_a0e52dadfb9a7f37f2c4f6e971f0f3d43}{js}}
+\item 
+\mbox{\hyperlink{browser_2jwk_2thumbprint_8js_a59be084da8908b7d77ff34b25cd84488}{import}} \{ \mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a3444f884a621942de98c573e3fb30621}{encode}} as \mbox{\hyperlink{jose_2dist_2browser_2index_8js_aca17f042e0909acd28ea29497c3011e5}{base64url}} \} from \textquotesingle{}../runtime/\mbox{\hyperlink{esm_2src_2file_8js_a73ffb0a3b9f028910adc01ac31153d46}{base64url.\+js}}\textquotesingle{}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{browser_2jwk_2thumbprint_8js_a7071face050ac33195784823e7573358}{check}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{browser_2jwk_2thumbprint_8js_ab9cf52bb0f003286bb75329b16b7b67a}\index{thumbprint.js@{thumbprint.js}!calculateJwkThumbprint@{calculateJwkThumbprint}}
+\index{calculateJwkThumbprint@{calculateJwkThumbprint}!thumbprint.js@{thumbprint.js}}
+\doxysubsubsection{\texorpdfstring{calculateJwkThumbprint()}{calculateJwkThumbprint()}}
+{\footnotesize\ttfamily \label{browser_2jwk_2thumbprint_8js_ab9cf52bb0f003286bb75329b16b7b67a} 
+function \mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} calculate\+Jwk\+Thumbprint (\begin{DoxyParamCaption}\item[{}]{jwk}{, }\item[{}]{digest\+Algorithm}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{jose_2dist_2browser_2index_8js_aca17f042e0909acd28ea29497c3011e5}{base64url}}, \mbox{\hyperlink{browser_2jwk_2thumbprint_8js_a7071face050ac33195784823e7573358}{check}}, \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}, \mbox{\hyperlink{browser_2runtime_2digest_8js_a54d3c9201937d07375b3cdef4258dc37}{digest}}, \mbox{\hyperlink{firestore__admin__v1__proto__api_8js_a08a4415e9d594ff960030b921d42b91e}{e}}, \mbox{\hyperlink{dbcs-codec_8js_a2e3d2e577cc69881c4ec00c7b8005e35}{encoder}}, \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2util_8js_abf86e241701120aea6dfd247bfc055cd}{is\+Object}}, \mbox{\hyperlink{jose_2dist_2node_2cjs_2util_2errors_8js_a0be60ea572dd147f9eca4a1e3ddfb8b7}{JOSENot\+Supported}}, \mbox{\hyperlink{json-bigint_2lib_2stringify_8js_aec316efdeb7b2e5358b7d50869858da1}{JSON}}, \mbox{\hyperlink{ordered-map_8min_8js_aee3ae2d5bdb3d18f52a8134a79a88d14}{k}}, \mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}, and \mbox{\hyperlink{agent-base_2node__modules_2ms_2index_8js_a0b31909b1cae9ed1db6ff042057fce60}{y}}.
+
+\Hypertarget{browser_2jwk_2thumbprint_8js_a1b7b8557690d0984959945f0483876b0}\index{thumbprint.js@{thumbprint.js}!calculateJwkThumbprintUri@{calculateJwkThumbprintUri}}
+\index{calculateJwkThumbprintUri@{calculateJwkThumbprintUri}!thumbprint.js@{thumbprint.js}}
+\doxysubsubsection{\texorpdfstring{calculateJwkThumbprintUri()}{calculateJwkThumbprintUri()}}
+{\footnotesize\ttfamily \label{browser_2jwk_2thumbprint_8js_a1b7b8557690d0984959945f0483876b0} 
+function \mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} calculate\+Jwk\+Thumbprint\+Uri (\begin{DoxyParamCaption}\item[{}]{jwk}{, }\item[{}]{digest\+Algorithm}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, and \mbox{\hyperlink{jose_2dist_2browser_2index_8js_a340e0d510cf89f97edde33580a7fbf33}{calculate\+Jwk\+Thumbprint}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{browser_2jwk_2thumbprint_8js_a7071face050ac33195784823e7573358}\index{thumbprint.js@{thumbprint.js}!check@{check}}
+\index{check@{check}!thumbprint.js@{thumbprint.js}}
+\doxysubsubsection{\texorpdfstring{check}{check}}
+{\footnotesize\ttfamily \label{browser_2jwk_2thumbprint_8js_a7071face050ac33195784823e7573358} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} check}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ (\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}},\ description)\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (typeof\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}\ !==\ \textcolor{stringliteral}{'string'}\ ||\ !\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{jose_2dist_2node_2cjs_2util_2errors_8js_a01cfbe7214c5339414b50ed21892c75c}{JWKInvalid}}(\`{}\mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}\{description\}\ \mbox{\hyperlink{protobufjs_2src_2decoder_8js_abc17e2435a94ec16b4786a30066e2b00}{missing}}\ \mbox{\hyperlink{long_2index_8js_a88083640992a53a144223e2bd602d47d}{or}}\ \mbox{\hyperlink{verifier_8js_a499da133dea4d1a4ef64e31667ec221a}{invalid}}\`{});}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{browser_2jwk_2thumbprint_8js_a59be084da8908b7d77ff34b25cd84488}\index{thumbprint.js@{thumbprint.js}!import@{import}}
+\index{import@{import}!thumbprint.js@{thumbprint.js}}
+\doxysubsubsection{\texorpdfstring{import}{import}}
+{\footnotesize\ttfamily \label{browser_2jwk_2thumbprint_8js_a59be084da8908b7d77ff34b25cd84488} 
+import \{ \mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a3444f884a621942de98c573e3fb30621}{encode}} as \mbox{\hyperlink{jose_2dist_2browser_2index_8js_aca17f042e0909acd28ea29497c3011e5}{base64url}} \} from \textquotesingle{}../runtime/\mbox{\hyperlink{esm_2src_2file_8js_a73ffb0a3b9f028910adc01ac31153d46}{base64url.\+js}}\textquotesingle{}}
+
+\Hypertarget{browser_2jwk_2thumbprint_8js_a0e52dadfb9a7f37f2c4f6e971f0f3d43}\index{thumbprint.js@{thumbprint.js}!js@{js}}
+\index{js@{js}!thumbprint.js@{thumbprint.js}}
+\doxysubsubsection{\texorpdfstring{js}{js}}
+{\footnotesize\ttfamily \label{browser_2jwk_2thumbprint_8js_a0e52dadfb9a7f37f2c4f6e971f0f3d43} 
+\mbox{\hyperlink{component_2dist_2esm_2index_8esm2017_8js_a953be46b94f595d839e88a6d3d270309}{import}} \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2util_8js_abf86e241701120aea6dfd247bfc055cd}{is\+Object}} from lib is\+\_\+object js}
+

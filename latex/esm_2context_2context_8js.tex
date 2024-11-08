@@ -1,0 +1,67 @@
+\doxysection{backend/node\+\_\+modules/@opentelemetry/api/build/esm/context/context.js File Reference}
+\hypertarget{esm_2context_2context_8js}{}\label{esm_2context_2context_8js}\index{backend/node\_modules/"@opentelemetry/api/build/esm/context/context.js@{backend/node\_modules/"@opentelemetry/api/build/esm/context/context.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function export \mbox{\hyperlink{esm_2context_2context_8js_a102ed3dacb62301ec22ab623ed52f9c6}{create\+Context\+Key}} (description)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{esm_2context_2context_8js_a8bc59e963737e304774cd13ab61e34d1}{Base\+Context}}
+\item 
+var export \mbox{\hyperlink{esm_2context_2context_8js_afcb1f8e81ea3ffeef5781335009d36cc}{ROOT\+\_\+\+CONTEXT}} = new \mbox{\hyperlink{class_base_context}{Base\+Context}}()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{esm_2context_2context_8js_a102ed3dacb62301ec22ab623ed52f9c6}\index{context.js@{context.js}!createContextKey@{createContextKey}}
+\index{createContextKey@{createContextKey}!context.js@{context.js}}
+\doxysubsubsection{\texorpdfstring{createContextKey()}{createContextKey()}}
+{\footnotesize\ttfamily \label{esm_2context_2context_8js_a102ed3dacb62301ec22ab623ed52f9c6} 
+function export create\+Context\+Key (\begin{DoxyParamCaption}\item[{}]{description}{}\end{DoxyParamCaption})}
+
+Get a key to uniquely identify a context value 
+
+References \mbox{\hyperlink{__base_get_tag_8js_a9223501a4f1d046befc3fb8f0bf5c1e4}{Symbol}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{esm_2context_2context_8js_a8bc59e963737e304774cd13ab61e34d1}\index{context.js@{context.js}!BaseContext@{BaseContext}}
+\index{BaseContext@{BaseContext}!context.js@{context.js}}
+\doxysubsubsection{\texorpdfstring{BaseContext}{BaseContext}}
+{\footnotesize\ttfamily \label{esm_2context_2context_8js_a8bc59e963737e304774cd13ab61e34d1} 
+var Base\+Context}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ (\textcolor{keyword}{function}\ ()\ \{}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{function}\ \mbox{\hyperlink{esm_2context_2context_8js_a8bc59e963737e304774cd13ab61e34d1}{BaseContext}}(parentContext)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ var\ \textcolor{keyword}{self}\ =\ \textcolor{keyword}{this};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keyword}{self}.\_currentContext\ =\ parentContext\ ?\ \textcolor{keyword}{new}\ \mbox{\hyperlink{__get_tag_8js_aa38772edcc6ff00766e19b36ce8073a8}{Map}}(parentContext)\ :\ new\ \mbox{\hyperlink{__get_tag_8js_aa38772edcc6ff00766e19b36ce8073a8}{Map}}();}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keyword}{self}.getValue\ =\ \textcolor{keyword}{function}\ (key)\ \{\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{self}.\_currentContext.get(key);\ \};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keyword}{self}.setValue\ =\ \textcolor{keyword}{function}\ (key,\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ var\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{esm_2context_2context_8js_a8bc59e963737e304774cd13ab61e34d1}{BaseContext}}(\textcolor{keyword}{self}.\_currentContext);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}}.\_currentContext.set(key,\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keyword}{self}.deleteValue\ =\ \textcolor{keyword}{function}\ (key)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ var\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{esm_2context_2context_8js_a8bc59e963737e304774cd13ab61e34d1}{BaseContext}}(\textcolor{keyword}{self}.\_currentContext);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}}.\_currentContext.delete(key);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{esm_2context_2context_8js_a8bc59e963737e304774cd13ab61e34d1}{BaseContext}};}
+\DoxyCodeLine{\}())}
+
+\end{DoxyCode}
+\Hypertarget{esm_2context_2context_8js_afcb1f8e81ea3ffeef5781335009d36cc}\index{context.js@{context.js}!ROOT\_CONTEXT@{ROOT\_CONTEXT}}
+\index{ROOT\_CONTEXT@{ROOT\_CONTEXT}!context.js@{context.js}}
+\doxysubsubsection{\texorpdfstring{ROOT\_CONTEXT}{ROOT\_CONTEXT}}
+{\footnotesize\ttfamily \label{esm_2context_2context_8js_afcb1f8e81ea3ffeef5781335009d36cc} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} ROOT\+\_\+\+CONTEXT = new \mbox{\hyperlink{class_base_context}{Base\+Context}}()}
+
+The root context is used as the default parent context when there is no active context 

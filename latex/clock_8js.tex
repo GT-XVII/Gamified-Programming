@@ -1,0 +1,33 @@
+\doxysection{backend/node\+\_\+modules/limiter/lib/clock.js File Reference}
+\hypertarget{clock_8js}{}\label{clock_8js}\index{backend/node\_modules/limiter/lib/clock.js@{backend/node\_modules/limiter/lib/clock.js}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{clock_8js_a5c72434b6b3245580c5c74962ab40ede}{get\+Milliseconds}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{clock_8js_a5c72434b6b3245580c5c74962ab40ede}\index{clock.js@{clock.js}!getMilliseconds@{getMilliseconds}}
+\index{getMilliseconds@{getMilliseconds}!clock.js@{clock.js}}
+\doxysubsubsection{\texorpdfstring{getMilliseconds}{getMilliseconds}}
+{\footnotesize\ttfamily \label{clock_8js_a5c72434b6b3245580c5c74962ab40ede} 
+var get\+Milliseconds}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}()\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (typeof\ \mbox{\hyperlink{ipaddr_8min_8js_abcedab16429ea0641c6596f556f2e102}{process}}\ !==\ \textcolor{stringliteral}{'undefined'}\ \&\&\ \mbox{\hyperlink{ipaddr_8min_8js_abcedab16429ea0641c6596f556f2e102}{process}}.hrtime)\ \{}
+\DoxyCodeLine{\ \ \ \ var\ hrtime\ =\ \mbox{\hyperlink{ipaddr_8min_8js_abcedab16429ea0641c6596f556f2e102}{process}}.hrtime();}
+\DoxyCodeLine{\ \ \ \ var\ seconds\ =\ hrtime[0];}
+\DoxyCodeLine{\ \ \ \ var\ nanoseconds\ =\ hrtime[1];}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ seconds\ *\ 1e3\ +\ \ Math.floor(nanoseconds\ /\ 1e6);}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ Date().getTime();}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}}.exports\ =\ \mbox{\hyperlink{clock_8js_a5c72434b6b3245580c5c74962ab40ede}{getMilliseconds}}}
+
+\end{DoxyCode}

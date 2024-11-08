@@ -1,0 +1,27 @@
+<map id="FirestoreClient::constructor" name="FirestoreClient::constructor">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,234,185,260"/>
+<area shape="rect" id="Node000002" href="$class_firestore_client.html#a966915d4f1f9aa54c7d624d89b96179a" title=" " alt="" coords="253,5,420,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,233,117,197,146,150,184,99,231,56,238,51,241,56,234,60,188,103,150,153,122,200,105,235"/>
+<area shape="rect" id="Node000004" href="$class_firestore_client.html#af1cd595916bb9338dfcfee85892cce7f" title=" " alt="" coords="233,70,440,96"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="103,232,152,170,189,135,231,105,241,100,244,104,234,109,193,139,156,174,107,235"/>
+<area shape="rect" id="Node000005" href="$class_firestore_client.html#a9dee8151593fa392d4b1443271d9027c" title=" " alt="" coords="237,120,436,145"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="111,232,163,194,232,155,252,148,254,153,234,160,166,198,114,236"/>
+<area shape="rect" id="Node000006" href="$class_firestore_client.html#afc1d57a960a8bf6e95cec44c004c73a1" title=" " alt="" coords="256,169,416,210"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="152,231,241,210,242,215,153,236"/>
+<area shape="rect" id="Node000007" href="$class_firestore_client.html#abd5dc03ffe20dd1f1beca2af35af3aac" title=" " alt="" coords="268,234,404,260"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="185,244,253,244,253,250,185,250"/>
+<area shape="rect" id="Node000008" href="$__stream__duplex_8js.html#a472985ef50ed84466f5fce48a490c29b" title=" " alt="" coords="306,284,366,309"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="162,258,291,285,290,290,161,263"/>
+<area shape="rect" id="Node000009" href="$rest_8js.html#ae0096cf48f005bc73dd8f04b4fe3c52f" title=" " alt="" coords="315,333,358,358"/>
+<area shape="poly" id="edge11_Node000001_Node000009" title=" " alt="" coords="118,258,169,289,234,319,300,337,299,342,232,324,167,293,115,263"/>
+<area shape="rect" id="Node000010" href="$class_firestore_client.html#a960aa39b837ea99a729da8522b7ed766" title=" " alt="" coords="253,382,420,408"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="109,258,159,312,194,343,234,369,246,374,243,379,231,373,191,347,155,316,105,262"/>
+<area shape="rect" id="Node000011" href="$class_firestore_client.html#acc975553e49f3c894c44aff35c8a1532" title=" " alt="" coords="245,432,428,457"/>
+<area shape="poly" id="edge14_Node000001_Node000011" title=" " alt="" coords="105,259,123,292,151,335,189,380,234,418,242,422,239,427,231,423,185,384,147,339,119,295,100,262"/>
+<area shape="rect" id="Node000003" href="$class_firestore_client.html#a2121a210e61a7013fbff644a79f0eacd" title=" " alt="" coords="488,120,649,145"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="413,44,441,55,492,81,536,108,534,113,489,86,439,60,411,49"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="401,94,490,113,489,118,400,99"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="436,130,472,130,472,135,436,135"/>
+<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="416,167,498,147,499,152,417,173"/>
+<area shape="poly" id="edge13_Node000010_Node000003" title=" " alt="" coords="419,380,438,369,463,347,485,321,519,263,543,206,558,160,563,161,548,208,524,265,489,324,467,350,442,373,422,385"/>
+</map>

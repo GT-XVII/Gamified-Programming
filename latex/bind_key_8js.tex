@@ -1,0 +1,100 @@
+\doxysection{backend/node\+\_\+modules/lodash/bind\+Key.js File Reference}
+\hypertarget{bind_key_8js}{}\label{bind_key_8js}\index{backend/node\_modules/lodash/bindKey.js@{backend/node\_modules/lodash/bindKey.js}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{bind_key_8js_a034d72bc1d85dd2ca403ea375b9cb718}{base\+Rest}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\+\_\+base\+Rest\textquotesingle{})
+\item 
+var \mbox{\hyperlink{bind_key_8js_a426499ebb28d1bd28c90f3901e650d0b}{create\+Wrap}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\+\_\+create\+Wrap\textquotesingle{})
+\item 
+var \mbox{\hyperlink{bind_key_8js_aa36e2be00f5864861f313bc8e96f4899}{get\+Holder}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\+\_\+get\+Holder\textquotesingle{})
+\item 
+var \mbox{\hyperlink{bind_key_8js_aa38f94a8d897185ab7cee46830152053}{replace\+Holders}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\+\_\+replace\+Holders\textquotesingle{})
+\item 
+var \mbox{\hyperlink{bind_key_8js_ab98eb5e7eed254945468646b5f58dd7b}{WRAP\+\_\+\+BIND\+\_\+\+FLAG}} = 1
+\item 
+var \mbox{\hyperlink{bind_key_8js_a259833d85de00fb18f81f28827ad5805}{WRAP\+\_\+\+BIND\+\_\+\+KEY\+\_\+\+FLAG}} = 2
+\item 
+var \mbox{\hyperlink{bind_key_8js_a6c86b60203640e1b4c8a678ce6ab6d5c}{WRAP\+\_\+\+PARTIAL\+\_\+\+FLAG}} = 32
+\item 
+var \mbox{\hyperlink{bind_key_8js_a77f1f81d7efaa5bc470772eb0cba413c}{bind\+Key}}
+\item 
+\mbox{\hyperlink{bind_key_8js_a77f1f81d7efaa5bc470772eb0cba413c}{bind\+Key}} \mbox{\hyperlink{bind_key_8js_ab4a4b1e822127b4dd3a46d7976966ddc}{placeholder}} = \{\}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{bind_key_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} = \mbox{\hyperlink{bind_key_8js_a77f1f81d7efaa5bc470772eb0cba413c}{bind\+Key}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{bind_key_8js_a034d72bc1d85dd2ca403ea375b9cb718}\index{bindKey.js@{bindKey.js}!baseRest@{baseRest}}
+\index{baseRest@{baseRest}!bindKey.js@{bindKey.js}}
+\doxysubsubsection{\texorpdfstring{baseRest}{baseRest}}
+{\footnotesize\ttfamily \label{bind_key_8js_a034d72bc1d85dd2ca403ea375b9cb718} 
+var base\+Rest = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\+\_\+base\+Rest\textquotesingle{})}
+
+\Hypertarget{bind_key_8js_a77f1f81d7efaa5bc470772eb0cba413c}\index{bindKey.js@{bindKey.js}!bindKey@{bindKey}}
+\index{bindKey@{bindKey}!bindKey.js@{bindKey.js}}
+\doxysubsubsection{\texorpdfstring{bindKey}{bindKey}}
+{\footnotesize\ttfamily \label{bind_key_8js_a77f1f81d7efaa5bc470772eb0cba413c} 
+var bind\+Key}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \mbox{\hyperlink{bind_key_8js_a034d72bc1d85dd2ca403ea375b9cb718}{baseRest}}(\textcolor{keyword}{function}(\textcolor{keywordtype}{object},\ key,\ partials)\ \{}
+\DoxyCodeLine{\ \ var\ bitmask\ =\ \mbox{\hyperlink{bind_key_8js_ab98eb5e7eed254945468646b5f58dd7b}{WRAP\_BIND\_FLAG}}\ |\ \mbox{\hyperlink{bind_key_8js_a259833d85de00fb18f81f28827ad5805}{WRAP\_BIND\_KEY\_FLAG}};}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (partials.length)\ \{}
+\DoxyCodeLine{\ \ \ \ var\ holders\ =\ \mbox{\hyperlink{bind_key_8js_aa38f94a8d897185ab7cee46830152053}{replaceHolders}}(partials,\ \mbox{\hyperlink{bind_key_8js_aa36e2be00f5864861f313bc8e96f4899}{getHolder}}(\mbox{\hyperlink{bind_key_8js_a77f1f81d7efaa5bc470772eb0cba413c}{bindKey}}));}
+\DoxyCodeLine{\ \ \ \ bitmask\ |=\ \mbox{\hyperlink{bind_key_8js_a6c86b60203640e1b4c8a678ce6ab6d5c}{WRAP\_PARTIAL\_FLAG}};}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{bind_key_8js_a426499ebb28d1bd28c90f3901e650d0b}{createWrap}}(key,\ bitmask,\ \textcolor{keywordtype}{object},\ partials,\ holders);}
+\DoxyCodeLine{\})}
+
+\end{DoxyCode}
+\Hypertarget{bind_key_8js_a426499ebb28d1bd28c90f3901e650d0b}\index{bindKey.js@{bindKey.js}!createWrap@{createWrap}}
+\index{createWrap@{createWrap}!bindKey.js@{bindKey.js}}
+\doxysubsubsection{\texorpdfstring{createWrap}{createWrap}}
+{\footnotesize\ttfamily \label{bind_key_8js_a426499ebb28d1bd28c90f3901e650d0b} 
+var create\+Wrap = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\+\_\+create\+Wrap\textquotesingle{})}
+
+\Hypertarget{bind_key_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\index{bindKey.js@{bindKey.js}!exports@{exports}}
+\index{exports@{exports}!bindKey.js@{bindKey.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \label{bind_key_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports = \mbox{\hyperlink{bind_key_8js_a77f1f81d7efaa5bc470772eb0cba413c}{bind\+Key}}}
+
+\Hypertarget{bind_key_8js_aa36e2be00f5864861f313bc8e96f4899}\index{bindKey.js@{bindKey.js}!getHolder@{getHolder}}
+\index{getHolder@{getHolder}!bindKey.js@{bindKey.js}}
+\doxysubsubsection{\texorpdfstring{getHolder}{getHolder}}
+{\footnotesize\ttfamily \label{bind_key_8js_aa36e2be00f5864861f313bc8e96f4899} 
+var get\+Holder = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\+\_\+get\+Holder\textquotesingle{})}
+
+\Hypertarget{bind_key_8js_ab4a4b1e822127b4dd3a46d7976966ddc}\index{bindKey.js@{bindKey.js}!placeholder@{placeholder}}
+\index{placeholder@{placeholder}!bindKey.js@{bindKey.js}}
+\doxysubsubsection{\texorpdfstring{placeholder}{placeholder}}
+{\footnotesize\ttfamily \label{bind_key_8js_ab4a4b1e822127b4dd3a46d7976966ddc} 
+\mbox{\hyperlink{bind_key_8js_a77f1f81d7efaa5bc470772eb0cba413c}{bind\+Key}} placeholder = \{\}}
+
+\Hypertarget{bind_key_8js_aa38f94a8d897185ab7cee46830152053}\index{bindKey.js@{bindKey.js}!replaceHolders@{replaceHolders}}
+\index{replaceHolders@{replaceHolders}!bindKey.js@{bindKey.js}}
+\doxysubsubsection{\texorpdfstring{replaceHolders}{replaceHolders}}
+{\footnotesize\ttfamily \label{bind_key_8js_aa38f94a8d897185ab7cee46830152053} 
+var replace\+Holders = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\+\_\+replace\+Holders\textquotesingle{})}
+
+\Hypertarget{bind_key_8js_ab98eb5e7eed254945468646b5f58dd7b}\index{bindKey.js@{bindKey.js}!WRAP\_BIND\_FLAG@{WRAP\_BIND\_FLAG}}
+\index{WRAP\_BIND\_FLAG@{WRAP\_BIND\_FLAG}!bindKey.js@{bindKey.js}}
+\doxysubsubsection{\texorpdfstring{WRAP\_BIND\_FLAG}{WRAP\_BIND\_FLAG}}
+{\footnotesize\ttfamily \label{bind_key_8js_ab98eb5e7eed254945468646b5f58dd7b} 
+var WRAP\+\_\+\+BIND\+\_\+\+FLAG = 1}
+
+Used to compose bitmasks for function metadata. \Hypertarget{bind_key_8js_a259833d85de00fb18f81f28827ad5805}\index{bindKey.js@{bindKey.js}!WRAP\_BIND\_KEY\_FLAG@{WRAP\_BIND\_KEY\_FLAG}}
+\index{WRAP\_BIND\_KEY\_FLAG@{WRAP\_BIND\_KEY\_FLAG}!bindKey.js@{bindKey.js}}
+\doxysubsubsection{\texorpdfstring{WRAP\_BIND\_KEY\_FLAG}{WRAP\_BIND\_KEY\_FLAG}}
+{\footnotesize\ttfamily \label{bind_key_8js_a259833d85de00fb18f81f28827ad5805} 
+var WRAP\+\_\+\+BIND\+\_\+\+KEY\+\_\+\+FLAG = 2}
+
+\Hypertarget{bind_key_8js_a6c86b60203640e1b4c8a678ce6ab6d5c}\index{bindKey.js@{bindKey.js}!WRAP\_PARTIAL\_FLAG@{WRAP\_PARTIAL\_FLAG}}
+\index{WRAP\_PARTIAL\_FLAG@{WRAP\_PARTIAL\_FLAG}!bindKey.js@{bindKey.js}}
+\doxysubsubsection{\texorpdfstring{WRAP\_PARTIAL\_FLAG}{WRAP\_PARTIAL\_FLAG}}
+{\footnotesize\ttfamily \label{bind_key_8js_a6c86b60203640e1b4c8a678ce6ab6d5c} 
+var WRAP\+\_\+\+PARTIAL\+\_\+\+FLAG = 32}
+

@@ -1,0 +1,109 @@
+\doxysection{backend/node\+\_\+modules/websocket-\/extensions/lib/pipeline/functor.js File Reference}
+\hypertarget{functor_8js}{}\label{functor_8js}\index{backend/node\_modules/websocket-\/extensions/lib/pipeline/functor.js@{backend/node\_modules/websocket-\/extensions/lib/pipeline/functor.js}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{functor_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+var \mbox{\hyperlink{functor_8js_aa94c20db16fddb6041167acd8d295e79}{Ring\+Buffer}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./ring\+\_\+buffer\textquotesingle{})
+\item 
+var \mbox{\hyperlink{functor_8js_aae8035c33376407bac0bb6eedc88da4d}{Functor}}
+\item 
+\mbox{\hyperlink{cell_8js_aae8035c33376407bac0bb6eedc88da4d}{Functor}} \mbox{\hyperlink{functor_8js_a49d2708fa6d1074bc2c59b33c4f737a0}{QUEUE\+\_\+\+SIZE}} = 8
+\item 
+\mbox{\hyperlink{cell_8js_aae8035c33376407bac0bb6eedc88da4d}{Functor}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{functor_8js_ae7aeb3fa6da2d400772eac793a52c1d3}{call}}
+\item 
+\mbox{\hyperlink{cell_8js_aae8035c33376407bac0bb6eedc88da4d}{Functor}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{functor_8js_a97ee3059a81e5500ef0384d2c09f4fa5}{\+\_\+stop}}
+\item 
+\mbox{\hyperlink{cell_8js_aae8035c33376407bac0bb6eedc88da4d}{Functor}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{functor_8js_afb7d06bc330d0b0b0a8b6046cc15c275}{\+\_\+flush\+Queue}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{functor_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} = \mbox{\hyperlink{cell_8js_aae8035c33376407bac0bb6eedc88da4d}{Functor}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{functor_8js_afb7d06bc330d0b0b0a8b6046cc15c275}\index{functor.js@{functor.js}!\_flushQueue@{\_flushQueue}}
+\index{\_flushQueue@{\_flushQueue}!functor.js@{functor.js}}
+\doxysubsubsection{\texorpdfstring{\_flushQueue}{\_flushQueue}}
+{\footnotesize\ttfamily \label{functor_8js_afb7d06bc330d0b0b0a8b6046cc15c275} 
+\mbox{\hyperlink{cell_8js_aae8035c33376407bac0bb6eedc88da4d}{Functor}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \+\_\+flush\+Queue}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}()\ \{}
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{tls_8js_a9f7d745f5c6457c1e0017fff889abac0}{queue}}\ =\ this.\_queue,\ record;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{while}\ (\mbox{\hyperlink{tls_8js_a9f7d745f5c6457c1e0017fff889abac0}{queue}}.length\ >\ 0\ \&\&\ \mbox{\hyperlink{tls_8js_a9f7d745f5c6457c1e0017fff889abac0}{queue}}.peek().done)\ \{}
+\DoxyCodeLine{\ \ \ \ record\ =\ \mbox{\hyperlink{tls_8js_a9f7d745f5c6457c1e0017fff889abac0}{queue}}.shift();}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (record.error)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ this.\mbox{\hyperlink{cell_8js_a8204c614417ed48354f778f7121b0ab2}{pending}}\ =\ 0;}
+\DoxyCodeLine{\ \ \ \ \ \ queue.clear();}
+\DoxyCodeLine{\ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ this.\mbox{\hyperlink{cell_8js_a8204c614417ed48354f778f7121b0ab2}{pending}}\ -\/=\ 1;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ record.callback.call(record.context,\ record.error,\ record.message);}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{functor_8js_a97ee3059a81e5500ef0384d2c09f4fa5}\index{functor.js@{functor.js}!\_stop@{\_stop}}
+\index{\_stop@{\_stop}!functor.js@{functor.js}}
+\doxysubsubsection{\texorpdfstring{\_stop}{\_stop}}
+{\footnotesize\ttfamily \label{functor_8js_a97ee3059a81e5500ef0384d2c09f4fa5} 
+\mbox{\hyperlink{cell_8js_aae8035c33376407bac0bb6eedc88da4d}{Functor}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \+\_\+stop}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}()\ \{}
+\DoxyCodeLine{\ \ this.\mbox{\hyperlink{cell_8js_a8204c614417ed48354f778f7121b0ab2}{pending}}\ \ =\ this.\_queue.length;}
+\DoxyCodeLine{\ \ this.\_stopped\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{functor_8js_ae7aeb3fa6da2d400772eac793a52c1d3}\index{functor.js@{functor.js}!call@{call}}
+\index{call@{call}!functor.js@{functor.js}}
+\doxysubsubsection{\texorpdfstring{call}{call}}
+{\footnotesize\ttfamily \label{functor_8js_ae7aeb3fa6da2d400772eac793a52c1d3} 
+\mbox{\hyperlink{cell_8js_aae8035c33376407bac0bb6eedc88da4d}{Functor}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} call}
+
+\Hypertarget{functor_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\index{functor.js@{functor.js}!exports@{exports}}
+\index{exports@{exports}!functor.js@{functor.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \label{functor_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports = \mbox{\hyperlink{cell_8js_aae8035c33376407bac0bb6eedc88da4d}{Functor}}}
+
+\Hypertarget{functor_8js_aae8035c33376407bac0bb6eedc88da4d}\index{functor.js@{functor.js}!Functor@{Functor}}
+\index{Functor@{Functor}!functor.js@{functor.js}}
+\doxysubsubsection{\texorpdfstring{Functor}{Functor}}
+{\footnotesize\ttfamily \label{functor_8js_aae8035c33376407bac0bb6eedc88da4d} 
+var Functor}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a3bb9e2b145c6085298a45027f885f0d3}{session}},\ \mbox{\hyperlink{lodash_2method_8js_a2f565198b0a61cb8648a01f0d9617cd7}{method}})\ \{}
+\DoxyCodeLine{\ \ this.\_session\ =\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a3bb9e2b145c6085298a45027f885f0d3}{session}};}
+\DoxyCodeLine{\ \ this.\_method\ \ =\ \mbox{\hyperlink{lodash_2method_8js_a2f565198b0a61cb8648a01f0d9617cd7}{method}};}
+\DoxyCodeLine{\ \ this.\_queue\ \ \ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{functor_8js_aa94c20db16fddb6041167acd8d295e79}{RingBuffer}}(\mbox{\hyperlink{functor_8js_aae8035c33376407bac0bb6eedc88da4d}{Functor}}.QUEUE\_SIZE);}
+\DoxyCodeLine{\ \ this.\_stopped\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\ \ this.\mbox{\hyperlink{cell_8js_a8204c614417ed48354f778f7121b0ab2}{pending}}\ \ =\ 0;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{functor_8js_a49d2708fa6d1074bc2c59b33c4f737a0}\index{functor.js@{functor.js}!QUEUE\_SIZE@{QUEUE\_SIZE}}
+\index{QUEUE\_SIZE@{QUEUE\_SIZE}!functor.js@{functor.js}}
+\doxysubsubsection{\texorpdfstring{QUEUE\_SIZE}{QUEUE\_SIZE}}
+{\footnotesize\ttfamily \label{functor_8js_a49d2708fa6d1074bc2c59b33c4f737a0} 
+\mbox{\hyperlink{cell_8js_aae8035c33376407bac0bb6eedc88da4d}{Functor}} QUEUE\+\_\+\+SIZE = 8}
+
+\Hypertarget{functor_8js_aa94c20db16fddb6041167acd8d295e79}\index{functor.js@{functor.js}!RingBuffer@{RingBuffer}}
+\index{RingBuffer@{RingBuffer}!functor.js@{functor.js}}
+\doxysubsubsection{\texorpdfstring{RingBuffer}{RingBuffer}}
+{\footnotesize\ttfamily \label{functor_8js_aa94c20db16fddb6041167acd8d295e79} 
+var Ring\+Buffer = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./ring\+\_\+buffer\textquotesingle{})}
+
+\Hypertarget{functor_8js_ae2475e10618961c050dcba04e8c42331}\index{functor.js@{functor.js}!strict@{strict}}
+\index{strict@{strict}!functor.js@{functor.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{functor_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+

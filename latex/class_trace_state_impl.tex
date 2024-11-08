@@ -1,0 +1,281 @@
+\doxysection{Trace\+State\+Impl Class Reference}
+\hypertarget{class_trace_state_impl}{}\label{class_trace_state_impl}\index{TraceStateImpl@{TraceStateImpl}}
+
+
+Collaboration diagram for Trace\+State\+Impl\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=156pt]{class_trace_state_impl__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_trace_state_impl_ac262f827e528a8c6ffe6a79af58a9b7e}{constructor}} (raw\+Trace\+State)
+\item 
+\mbox{\hyperlink{class_trace_state_impl_a4052102c24fead78c06dbbf3e07541ff}{set}} (key, \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}})
+\item 
+\mbox{\hyperlink{class_trace_state_impl_a6ae6f7fdd425f41ebc6a6b0c0e0ee32c}{unset}} (key)
+\item 
+\mbox{\hyperlink{class_trace_state_impl_a9886f0f21f49c1dcef3ca57db6268135}{get}} (key)
+\item 
+\mbox{\hyperlink{class_trace_state_impl_a2a9f191315cb1d0cf4a51f5ad817ce20}{serialize}} ()
+\item 
+\mbox{\hyperlink{class_trace_state_impl_aad56460bd300768a8a322cf0f6511f9c}{\+\_\+parse}} (raw\+Trace\+State)
+\item 
+\mbox{\hyperlink{class_trace_state_impl_aff28e4d5725a6c2f06c09f1eb7ee6ced}{\+\_\+keys}} ()
+\item 
+\mbox{\hyperlink{class_trace_state_impl_afe1dfaada06f6860db3bf3c67acf5dec}{\+\_\+clone}} ()
+\item 
+\mbox{\hyperlink{class_trace_state_impl_ac262f827e528a8c6ffe6a79af58a9b7e}{constructor}} (raw\+Trace\+State)
+\item 
+\mbox{\hyperlink{class_trace_state_impl_a4052102c24fead78c06dbbf3e07541ff}{set}} (key, \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}})
+\item 
+\mbox{\hyperlink{class_trace_state_impl_a6ae6f7fdd425f41ebc6a6b0c0e0ee32c}{unset}} (key)
+\item 
+\mbox{\hyperlink{class_trace_state_impl_a9886f0f21f49c1dcef3ca57db6268135}{get}} (key)
+\item 
+\mbox{\hyperlink{class_trace_state_impl_a2a9f191315cb1d0cf4a51f5ad817ce20}{serialize}} ()
+\item 
+\mbox{\hyperlink{class_trace_state_impl_aad56460bd300768a8a322cf0f6511f9c}{\+\_\+parse}} (raw\+Trace\+State)
+\item 
+\mbox{\hyperlink{class_trace_state_impl_aff28e4d5725a6c2f06c09f1eb7ee6ced}{\+\_\+keys}} ()
+\item 
+\mbox{\hyperlink{class_trace_state_impl_afe1dfaada06f6860db3bf3c67acf5dec}{\+\_\+clone}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Trace\+State must be a class and not a simple object type because of the spec requirement (\href{https://www.w3.org/TR/trace-context/\#tracestate-field}{\texttt{ https\+://www.\+w3.\+org/\+TR/trace-\/context/\#tracestate-\/field}}).
+
+Here is the list of allowed mutations\+:
+\begin{DoxyItemize}
+\item New key-\/value pair should be added into the beginning of the list
+\item The value of any key can be updated. Modified keys MUST be moved to the beginning of the list. 
+\end{DoxyItemize}
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_trace_state_impl_afe1dfaada06f6860db3bf3c67acf5dec}\index{TraceStateImpl@{TraceStateImpl}!\_clone@{\_clone}}
+\index{\_clone@{\_clone}!TraceStateImpl@{TraceStateImpl}}
+\doxysubsubsection{\texorpdfstring{\_clone()}{\_clone()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_trace_state_impl_afe1dfaada06f6860db3bf3c67acf5dec} 
+Trace\+State\+Impl\+::\+\_\+clone (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{__get_tag_8js_aa38772edcc6ff00766e19b36ce8073a8}{Map}}, and \mbox{\hyperlink{src_2trace_2internal_2tracestate-impl_8js_a22a0ccd6f5db98852e849e965eac06b9}{Trace\+State\+Impl}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{class_trace_state_impl_afe1dfaada06f6860db3bf3c67acf5dec_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_trace_state_impl_afe1dfaada06f6860db3bf3c67acf5dec}\index{TraceStateImpl@{TraceStateImpl}!\_clone@{\_clone}}
+\index{\_clone@{\_clone}!TraceStateImpl@{TraceStateImpl}}
+\doxysubsubsection{\texorpdfstring{\_clone()}{\_clone()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_trace_state_impl_afe1dfaada06f6860db3bf3c67acf5dec} 
+Trace\+State\+Impl\+::\+\_\+clone (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{__get_tag_8js_aa38772edcc6ff00766e19b36ce8073a8}{Map}}, and \mbox{\hyperlink{src_2trace_2internal_2tracestate-impl_8js_a22a0ccd6f5db98852e849e965eac06b9}{Trace\+State\+Impl}}.
+
+\Hypertarget{class_trace_state_impl_aff28e4d5725a6c2f06c09f1eb7ee6ced}\index{TraceStateImpl@{TraceStateImpl}!\_keys@{\_keys}}
+\index{\_keys@{\_keys}!TraceStateImpl@{TraceStateImpl}}
+\doxysubsubsection{\texorpdfstring{\_keys()}{\_keys()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_trace_state_impl_aff28e4d5725a6c2f06c09f1eb7ee6ced} 
+Trace\+State\+Impl\+::\+\_\+keys (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{src_2util_2minimal_8js_a325c4e317c38d8497130ebce7670be2f}{Array}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_trace_state_impl_aff28e4d5725a6c2f06c09f1eb7ee6ced_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_trace_state_impl_aff28e4d5725a6c2f06c09f1eb7ee6ced}\index{TraceStateImpl@{TraceStateImpl}!\_keys@{\_keys}}
+\index{\_keys@{\_keys}!TraceStateImpl@{TraceStateImpl}}
+\doxysubsubsection{\texorpdfstring{\_keys()}{\_keys()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_trace_state_impl_aff28e4d5725a6c2f06c09f1eb7ee6ced} 
+Trace\+State\+Impl\+::\+\_\+keys (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{src_2util_2minimal_8js_a325c4e317c38d8497130ebce7670be2f}{Array}}.
+
+\Hypertarget{class_trace_state_impl_aad56460bd300768a8a322cf0f6511f9c}\index{TraceStateImpl@{TraceStateImpl}!\_parse@{\_parse}}
+\index{\_parse@{\_parse}!TraceStateImpl@{TraceStateImpl}}
+\doxysubsubsection{\texorpdfstring{\_parse()}{\_parse()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_trace_state_impl_aad56460bd300768a8a322cf0f6511f9c} 
+Trace\+State\+Impl\+::\+\_\+parse (\begin{DoxyParamCaption}\item[{}]{raw\+Trace\+State}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{src_2util_2minimal_8js_a325c4e317c38d8497130ebce7670be2f}{Array}}, \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}, \mbox{\hyperlink{src_2trace_2internal_2tracestate-impl_8js_aa5c0f3a98c17fdeebeba9775094185b7}{LIST\+\_\+\+MEMBER\+\_\+\+KEY\+\_\+\+VALUE\+\_\+\+SPLITTER}}, \mbox{\hyperlink{src_2trace_2internal_2tracestate-impl_8js_a01b91e72e8a74739561bf86f38dceac3}{LIST\+\_\+\+MEMBERS\+\_\+\+SEPARATOR}}, \mbox{\hyperlink{__get_tag_8js_aa38772edcc6ff00766e19b36ce8073a8}{Map}}, \mbox{\hyperlink{src_2trace_2internal_2tracestate-impl_8js_a027e19ea5b9186e44a848e94e4c9b350}{MAX\+\_\+\+TRACE\+\_\+\+STATE\+\_\+\+ITEMS}}, \mbox{\hyperlink{src_2trace_2internal_2tracestate-impl_8js_a2bc88303c186addc2f60d4c3d9134f26}{MAX\+\_\+\+TRACE\+\_\+\+STATE\+\_\+\+LEN}}, \mbox{\hyperlink{src_2trace_2internal_2tracestate-validators_8js_a9f752680f2a62008a00a87ed8adc843a}{validate\+Key}}, \mbox{\hyperlink{src_2trace_2internal_2tracestate-validators_8js_ae9731ec67e39855d003b9766e3b8e546}{validate\+Value}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.
+
+\Hypertarget{class_trace_state_impl_aad56460bd300768a8a322cf0f6511f9c}\index{TraceStateImpl@{TraceStateImpl}!\_parse@{\_parse}}
+\index{\_parse@{\_parse}!TraceStateImpl@{TraceStateImpl}}
+\doxysubsubsection{\texorpdfstring{\_parse()}{\_parse()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_trace_state_impl_aad56460bd300768a8a322cf0f6511f9c} 
+Trace\+State\+Impl\+::\+\_\+parse (\begin{DoxyParamCaption}\item[{}]{raw\+Trace\+State}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{src_2util_2minimal_8js_a325c4e317c38d8497130ebce7670be2f}{Array}}, \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}, \mbox{\hyperlink{src_2trace_2internal_2tracestate-impl_8js_aa5c0f3a98c17fdeebeba9775094185b7}{LIST\+\_\+\+MEMBER\+\_\+\+KEY\+\_\+\+VALUE\+\_\+\+SPLITTER}}, \mbox{\hyperlink{src_2trace_2internal_2tracestate-impl_8js_a01b91e72e8a74739561bf86f38dceac3}{LIST\+\_\+\+MEMBERS\+\_\+\+SEPARATOR}}, \mbox{\hyperlink{__get_tag_8js_aa38772edcc6ff00766e19b36ce8073a8}{Map}}, \mbox{\hyperlink{src_2trace_2internal_2tracestate-impl_8js_a027e19ea5b9186e44a848e94e4c9b350}{MAX\+\_\+\+TRACE\+\_\+\+STATE\+\_\+\+ITEMS}}, \mbox{\hyperlink{src_2trace_2internal_2tracestate-impl_8js_a2bc88303c186addc2f60d4c3d9134f26}{MAX\+\_\+\+TRACE\+\_\+\+STATE\+\_\+\+LEN}}, \mbox{\hyperlink{src_2trace_2internal_2tracestate-impl_8js_a1bf1cfd166f178af9c7d1defdc3b5438}{tracestate\+\_\+validators\+\_\+1}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.
+
+\Hypertarget{class_trace_state_impl_ac262f827e528a8c6ffe6a79af58a9b7e}\index{TraceStateImpl@{TraceStateImpl}!constructor@{constructor}}
+\index{constructor@{constructor}!TraceStateImpl@{TraceStateImpl}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_trace_state_impl_ac262f827e528a8c6ffe6a79af58a9b7e} 
+Trace\+State\+Impl\+::constructor (\begin{DoxyParamCaption}\item[{}]{raw\+Trace\+State}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2uuid_2dist_2index_8js_adbf7b6dab129de3a1a66c98525ecec4f}{\+\_\+parse}}, and \mbox{\hyperlink{__get_tag_8js_aa38772edcc6ff00766e19b36ce8073a8}{Map}}.
+
+\Hypertarget{class_trace_state_impl_ac262f827e528a8c6ffe6a79af58a9b7e}\index{TraceStateImpl@{TraceStateImpl}!constructor@{constructor}}
+\index{constructor@{constructor}!TraceStateImpl@{TraceStateImpl}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_trace_state_impl_ac262f827e528a8c6ffe6a79af58a9b7e} 
+Trace\+State\+Impl\+::constructor (\begin{DoxyParamCaption}\item[{}]{raw\+Trace\+State}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2uuid_2dist_2index_8js_adbf7b6dab129de3a1a66c98525ecec4f}{\+\_\+parse}}, and \mbox{\hyperlink{__get_tag_8js_aa38772edcc6ff00766e19b36ce8073a8}{Map}}.
+
+\Hypertarget{class_trace_state_impl_a9886f0f21f49c1dcef3ca57db6268135}\index{TraceStateImpl@{TraceStateImpl}!get@{get}}
+\index{get@{get}!TraceStateImpl@{TraceStateImpl}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_trace_state_impl_a9886f0f21f49c1dcef3ca57db6268135} 
+Trace\+State\+Impl\+::get (\begin{DoxyParamCaption}\item[{}]{key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_trace_state_impl_a9886f0f21f49c1dcef3ca57db6268135}\index{TraceStateImpl@{TraceStateImpl}!get@{get}}
+\index{get@{get}!TraceStateImpl@{TraceStateImpl}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_trace_state_impl_a9886f0f21f49c1dcef3ca57db6268135} 
+Trace\+State\+Impl\+::get (\begin{DoxyParamCaption}\item[{}]{key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_trace_state_impl_a2a9f191315cb1d0cf4a51f5ad817ce20}\index{TraceStateImpl@{TraceStateImpl}!serialize@{serialize}}
+\index{serialize@{serialize}!TraceStateImpl@{TraceStateImpl}}
+\doxysubsubsection{\texorpdfstring{serialize()}{serialize()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_trace_state_impl_a2a9f191315cb1d0cf4a51f5ad817ce20} 
+Trace\+State\+Impl\+::serialize (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{class_trace_state_impl_aff28e4d5725a6c2f06c09f1eb7ee6ced}{\+\_\+keys()}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a500bc97a63b7c35b84493a7f90ef44d6}{join}}, \mbox{\hyperlink{src_2trace_2internal_2tracestate-impl_8js_aa5c0f3a98c17fdeebeba9775094185b7}{LIST\+\_\+\+MEMBER\+\_\+\+KEY\+\_\+\+VALUE\+\_\+\+SPLITTER}}, and \mbox{\hyperlink{src_2trace_2internal_2tracestate-impl_8js_a01b91e72e8a74739561bf86f38dceac3}{LIST\+\_\+\+MEMBERS\+\_\+\+SEPARATOR}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_trace_state_impl_a2a9f191315cb1d0cf4a51f5ad817ce20_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_trace_state_impl_a2a9f191315cb1d0cf4a51f5ad817ce20}\index{TraceStateImpl@{TraceStateImpl}!serialize@{serialize}}
+\index{serialize@{serialize}!TraceStateImpl@{TraceStateImpl}}
+\doxysubsubsection{\texorpdfstring{serialize()}{serialize()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_trace_state_impl_a2a9f191315cb1d0cf4a51f5ad817ce20} 
+Trace\+State\+Impl\+::serialize (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{class_trace_state_impl_aff28e4d5725a6c2f06c09f1eb7ee6ced}{\+\_\+keys()}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a500bc97a63b7c35b84493a7f90ef44d6}{join}}, \mbox{\hyperlink{src_2trace_2internal_2tracestate-impl_8js_aa5c0f3a98c17fdeebeba9775094185b7}{LIST\+\_\+\+MEMBER\+\_\+\+KEY\+\_\+\+VALUE\+\_\+\+SPLITTER}}, and \mbox{\hyperlink{src_2trace_2internal_2tracestate-impl_8js_a01b91e72e8a74739561bf86f38dceac3}{LIST\+\_\+\+MEMBERS\+\_\+\+SEPARATOR}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_trace_state_impl_a2a9f191315cb1d0cf4a51f5ad817ce20_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_trace_state_impl_a4052102c24fead78c06dbbf3e07541ff}\index{TraceStateImpl@{TraceStateImpl}!set@{set}}
+\index{set@{set}!TraceStateImpl@{TraceStateImpl}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_trace_state_impl_a4052102c24fead78c06dbbf3e07541ff} 
+Trace\+State\+Impl\+::set (\begin{DoxyParamCaption}\item[{}]{key}{, }\item[{}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{class_trace_state_impl_afe1dfaada06f6860db3bf3c67acf5dec}{\+\_\+clone()}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{class_trace_state_impl_a4052102c24fead78c06dbbf3e07541ff_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_trace_state_impl_a4052102c24fead78c06dbbf3e07541ff}\index{TraceStateImpl@{TraceStateImpl}!set@{set}}
+\index{set@{set}!TraceStateImpl@{TraceStateImpl}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_trace_state_impl_a4052102c24fead78c06dbbf3e07541ff} 
+Trace\+State\+Impl\+::set (\begin{DoxyParamCaption}\item[{}]{key}{, }\item[{}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{class_trace_state_impl_afe1dfaada06f6860db3bf3c67acf5dec}{\+\_\+clone()}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{class_trace_state_impl_a4052102c24fead78c06dbbf3e07541ff_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_trace_state_impl_a6ae6f7fdd425f41ebc6a6b0c0e0ee32c}\index{TraceStateImpl@{TraceStateImpl}!unset@{unset}}
+\index{unset@{unset}!TraceStateImpl@{TraceStateImpl}}
+\doxysubsubsection{\texorpdfstring{unset()}{unset()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_trace_state_impl_a6ae6f7fdd425f41ebc6a6b0c0e0ee32c} 
+Trace\+State\+Impl\+::unset (\begin{DoxyParamCaption}\item[{}]{key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{class_trace_state_impl_afe1dfaada06f6860db3bf3c67acf5dec}{\+\_\+clone()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{class_trace_state_impl_a6ae6f7fdd425f41ebc6a6b0c0e0ee32c_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_trace_state_impl_a6ae6f7fdd425f41ebc6a6b0c0e0ee32c}\index{TraceStateImpl@{TraceStateImpl}!unset@{unset}}
+\index{unset@{unset}!TraceStateImpl@{TraceStateImpl}}
+\doxysubsubsection{\texorpdfstring{unset()}{unset()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_trace_state_impl_a6ae6f7fdd425f41ebc6a6b0c0e0ee32c} 
+Trace\+State\+Impl\+::unset (\begin{DoxyParamCaption}\item[{}]{key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{class_trace_state_impl_afe1dfaada06f6860db3bf3c67acf5dec}{\+\_\+clone()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{class_trace_state_impl_a6ae6f7fdd425f41ebc6a6b0c0e0ee32c_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/@opentelemetry/api/build/esnext/trace/internal/\mbox{\hyperlink{esnext_2trace_2internal_2tracestate-impl_8js}{tracestate-\/impl.\+js}}\item 
+backend/node\+\_\+modules/@opentelemetry/api/build/src/trace/internal/\mbox{\hyperlink{src_2trace_2internal_2tracestate-impl_8js}{tracestate-\/impl.\+js}}\end{DoxyCompactItemize}

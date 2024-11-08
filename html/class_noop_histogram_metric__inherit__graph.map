@@ -1,0 +1,6 @@
+<map id="NoopHistogramMetric" name="NoopHistogramMetric">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,120,143,206"/>
+<area shape="rect" id="Node000002" href="$class_noop_metric.html" title=" " alt="" coords="35,5,113,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="68,86,68,120,63,120,63,86"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="86,86,85,120,80,120,80,86"/>
+</map>

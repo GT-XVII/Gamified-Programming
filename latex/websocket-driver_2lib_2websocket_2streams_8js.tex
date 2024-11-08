@@ -1,0 +1,180 @@
+\doxysection{backend/node\+\_\+modules/websocket-\/driver/lib/websocket/streams.js File Reference}
+\hypertarget{websocket-driver_2lib_2websocket_2streams_8js}{}\label{websocket-driver_2lib_2websocket_2streams_8js}\index{backend/node\_modules/websocket-\/driver/lib/websocket/streams.js@{backend/node\_modules/websocket-\/driver/lib/websocket/streams.js}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{websocket-driver_2lib_2websocket_2streams_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+var \mbox{\hyperlink{websocket-driver_2lib_2websocket_2streams_8js_a2ad0cbec59ce1e4920545b10498bf9f5}{Stream}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}\mbox{\hyperlink{debug_2src_2node_8js_a822bf74d422c61e6caa292f739dc4786}{stream}}\textquotesingle{}).Stream
+\item 
+var \mbox{\hyperlink{websocket-driver_2lib_2websocket_2streams_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}util\textquotesingle{})
+\item 
+var \mbox{\hyperlink{websocket-driver_2lib_2websocket_2streams_8js_a6104e9036597cd5d6f06da543641ae4f}{IO}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a6104e9036597cd5d6f06da543641ae4f}{IO}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{websocket-driver_2lib_2websocket_2streams_8js_ae6a1eb421b73e4127993b6fce5471a3a}{pause}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a6104e9036597cd5d6f06da543641ae4f}{IO}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{websocket-driver_2lib_2websocket_2streams_8js_a1096ae4f1f2d9f895396bef1be5b4af5}{resume}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a6104e9036597cd5d6f06da543641ae4f}{IO}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{websocket-driver_2lib_2websocket_2streams_8js_a355f75ff9c8abb4bda3db7af40f2ee4a}{write}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a6104e9036597cd5d6f06da543641ae4f}{IO}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{websocket-driver_2lib_2websocket_2streams_8js_a2eb0ae9087079e95bc67981f6c61288b}{end}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a6104e9036597cd5d6f06da543641ae4f}{IO}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{websocket-driver_2lib_2websocket_2streams_8js_aba5b999c47e4d3a05e88da901bda2133}{destroy}}
+\item 
+var \mbox{\hyperlink{websocket-driver_2lib_2websocket_2streams_8js_a826c5f53f864165362c5806b1614093e}{Messages}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{websocket-driver_2lib_2websocket_2streams_8js_aba5b999c47e4d3a05e88da901bda2133}\index{streams.js@{streams.js}!destroy@{destroy}}
+\index{destroy@{destroy}!streams.js@{streams.js}}
+\doxysubsubsection{\texorpdfstring{destroy}{destroy}}
+{\footnotesize\ttfamily \label{websocket-driver_2lib_2websocket_2streams_8js_aba5b999c47e4d3a05e88da901bda2133} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a826c5f53f864165362c5806b1614093e}{Messages}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} destroy}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}()\ \{}
+\DoxyCodeLine{\ \ this.\mbox{\hyperlink{websocket-driver_2lib_2websocket_2streams_8js_a2eb0ae9087079e95bc67981f6c61288b}{end}}();}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{websocket-driver_2lib_2websocket_2streams_8js_a2eb0ae9087079e95bc67981f6c61288b}\index{streams.js@{streams.js}!end@{end}}
+\index{end@{end}!streams.js@{streams.js}}
+\doxysubsubsection{\texorpdfstring{end}{end}}
+{\footnotesize\ttfamily \label{websocket-driver_2lib_2websocket_2streams_8js_a2eb0ae9087079e95bc67981f6c61288b} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a826c5f53f864165362c5806b1614093e}{Messages}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} end}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{chunk_8js_a49c71f4b8e247d1267a25b3f04caef18}{chunk}})\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (!this.\mbox{\hyperlink{is-stream_2index_8js_ac8dca21fa013a97d16bb9a1a8a41de0b}{writable}})\ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{chunk_8js_a49c71f4b8e247d1267a25b3f04caef18}{chunk}}\ !==\ \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}})\ this.\mbox{\hyperlink{websocket-driver_2lib_2websocket_2streams_8js_a355f75ff9c8abb4bda3db7af40f2ee4a}{write}}(\mbox{\hyperlink{chunk_8js_a49c71f4b8e247d1267a25b3f04caef18}{chunk}});}
+\DoxyCodeLine{\ \ this.\mbox{\hyperlink{is-stream_2index_8js_ac8dca21fa013a97d16bb9a1a8a41de0b}{writable}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ var\ messages\ =\ this.\_driver.messages;}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (messages.readable)\ \{}
+\DoxyCodeLine{\ \ \ \ messages.readable\ =\ messages.writable\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\ \ \ \ messages.emit(\textcolor{stringliteral}{'end'});}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{websocket-driver_2lib_2websocket_2streams_8js_a6104e9036597cd5d6f06da543641ae4f}\index{streams.js@{streams.js}!IO@{IO}}
+\index{IO@{IO}!streams.js@{streams.js}}
+\doxysubsubsection{\texorpdfstring{IO}{IO}}
+{\footnotesize\ttfamily \label{websocket-driver_2lib_2websocket_2streams_8js_a6104e9036597cd5d6f06da543641ae4f} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} IO}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afc5eb79d13a9fadda86da2384dff2d66}{driver}})\ \{}
+\DoxyCodeLine{\ \ this.\mbox{\hyperlink{is-stream_2index_8js_a126b1e28219c4d2abaa73fbe41cb676a}{readable}}\ =\ this.\mbox{\hyperlink{is-stream_2index_8js_ac8dca21fa013a97d16bb9a1a8a41de0b}{writable}}\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\ \ this.\_paused\ \ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\ \ this.\_driver\ \ =\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afc5eb79d13a9fadda86da2384dff2d66}{driver}};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{websocket-driver_2lib_2websocket_2streams_8js_a826c5f53f864165362c5806b1614093e}\index{streams.js@{streams.js}!Messages@{Messages}}
+\index{Messages@{Messages}!streams.js@{streams.js}}
+\doxysubsubsection{\texorpdfstring{Messages}{Messages}}
+{\footnotesize\ttfamily \label{websocket-driver_2lib_2websocket_2streams_8js_a826c5f53f864165362c5806b1614093e} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} Messages}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afc5eb79d13a9fadda86da2384dff2d66}{driver}})\ \{}
+\DoxyCodeLine{\ \ this.\mbox{\hyperlink{is-stream_2index_8js_a126b1e28219c4d2abaa73fbe41cb676a}{readable}}\ =\ this.\mbox{\hyperlink{is-stream_2index_8js_ac8dca21fa013a97d16bb9a1a8a41de0b}{writable}}\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\ \ this.\_paused\ \ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\ \ this.\_driver\ \ =\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afc5eb79d13a9fadda86da2384dff2d66}{driver}};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{websocket-driver_2lib_2websocket_2streams_8js_ae6a1eb421b73e4127993b6fce5471a3a}\index{streams.js@{streams.js}!pause@{pause}}
+\index{pause@{pause}!streams.js@{streams.js}}
+\doxysubsubsection{\texorpdfstring{pause}{pause}}
+{\footnotesize\ttfamily \label{websocket-driver_2lib_2websocket_2streams_8js_ae6a1eb421b73e4127993b6fce5471a3a} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a826c5f53f864165362c5806b1614093e}{Messages}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} pause}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}()\ \{}
+\DoxyCodeLine{\ \ this.\_paused\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\ \ this.\_driver.messages.\_paused\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{websocket-driver_2lib_2websocket_2streams_8js_a1096ae4f1f2d9f895396bef1be5b4af5}\index{streams.js@{streams.js}!resume@{resume}}
+\index{resume@{resume}!streams.js@{streams.js}}
+\doxysubsubsection{\texorpdfstring{resume}{resume}}
+{\footnotesize\ttfamily \label{websocket-driver_2lib_2websocket_2streams_8js_a1096ae4f1f2d9f895396bef1be5b4af5} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a826c5f53f864165362c5806b1614093e}{Messages}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} resume}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}()\ \{}
+\DoxyCodeLine{\ \ this.\_paused\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\ \ this.\mbox{\hyperlink{_0dprotobufjs_2eventemitter_2index_8js_a16439605b9cd7bd34fdbf935bef49de6}{emit}}(\textcolor{stringliteral}{'drain'});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ var\ messages\ =\ this.\_driver.messages;}
+\DoxyCodeLine{\ \ messages.\_paused\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\ \ messages.emit(\textcolor{stringliteral}{'drain'});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{websocket-driver_2lib_2websocket_2streams_8js_a2ad0cbec59ce1e4920545b10498bf9f5}\index{streams.js@{streams.js}!Stream@{Stream}}
+\index{Stream@{Stream}!streams.js@{streams.js}}
+\doxysubsubsection{\texorpdfstring{Stream}{Stream}}
+{\footnotesize\ttfamily \label{websocket-driver_2lib_2websocket_2streams_8js_a2ad0cbec59ce1e4920545b10498bf9f5} 
+var Stream = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}\mbox{\hyperlink{debug_2src_2node_8js_a822bf74d422c61e6caa292f739dc4786}{stream}}\textquotesingle{}).Stream}
+
+\hypertarget{websocket-driver_2lib_2websocket_2streams_8js_autotoc_md1}{}\doxysubsubsection{\texorpdfstring{Streams in a Web\+Socket connection}{Streams in a Web\+Socket connection}}\label{websocket-driver_2lib_2websocket_2streams_8js_autotoc_md1}
+We model a Web\+Socket as two duplex streams\+: one stream is for the wire protocol over an I/O socket, and the other is for incoming/outgoing messages.
+
+\begin{DoxyVerb}                    +----------+      +---------+      +----------+
+[1] write(chunk) -->| ~~~~~~~~ +----->| parse() +----->| ~~~~~~~~ +--> emit('data') [2]
+                    |          |      +----+----+      |          |
+                    |          |           |           |          |
+                    |    IO    |           | [5]       | Messages |
+                    |          |           V           |          |
+                    |          |      +---------+      |          |
+[4] emit('data') <--+ ~~~~~~~~ |<-----+ frame() |<-----+ ~~~~~~~~ |<-- write(chunk) [3]
+                    +----------+      +---------+      +----------+
+\end{DoxyVerb}
+
+
+Message transfer in each direction is simple\+: IO receives a byte stream \mbox{[}1\mbox{]} and sends this stream for parsing. The parser will periodically emit a complete message text on the Messages stream \mbox{[}2\mbox{]}. Similarly, when messages are written to the Messages stream \mbox{[}3\mbox{]}, they are framed using the Web\+Socket wire format and emitted via IO \mbox{[}4\mbox{]}.
+
+There is a feedback loop via \mbox{[}5\mbox{]} since some input from \mbox{[}1\mbox{]} will be things like ping, pong and close frames. In these cases the protocol responds by emitting responses directly back to \mbox{[}4\mbox{]} rather than emitting messages via \mbox{[}2\mbox{]}.
+
+For the purposes of flow control, we consider the sources of each Readable stream to be as follows\+:
+
+\mbox{[}2\mbox{]} receives input from \mbox{[}1\mbox{]} \mbox{[}4\mbox{]} receives input from \mbox{[}1\mbox{]} and \mbox{[}3\mbox{]}
+
+The classes below express the relationships described above without prescribing anything about how \doxylink{database-compat_2dist_2index_8standalone_8js_aa96c2329bbb4c535fae1093499f4ad49}{parse()} and \doxylink{database-compat_2dist_2index_8standalone_8js_a94e011a39c19820bf962b007fc5ac00b}{frame()} work, other than assuming they emit \textquotesingle{}data\textquotesingle{} events to the IO and Messages streams. They will work with any protocol driver having these two methods. \Hypertarget{websocket-driver_2lib_2websocket_2streams_8js_ae2475e10618961c050dcba04e8c42331}\index{streams.js@{streams.js}!strict@{strict}}
+\index{strict@{strict}!streams.js@{streams.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{websocket-driver_2lib_2websocket_2streams_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+
+\Hypertarget{websocket-driver_2lib_2websocket_2streams_8js_a8f5b2e09d5197e9d28f6032dff542d44}\index{streams.js@{streams.js}!util@{util}}
+\index{util@{util}!streams.js@{streams.js}}
+\doxysubsubsection{\texorpdfstring{util}{util}}
+{\footnotesize\ttfamily \label{websocket-driver_2lib_2websocket_2streams_8js_a8f5b2e09d5197e9d28f6032dff542d44} 
+var util = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}util\textquotesingle{})}
+
+\Hypertarget{websocket-driver_2lib_2websocket_2streams_8js_a355f75ff9c8abb4bda3db7af40f2ee4a}\index{streams.js@{streams.js}!write@{write}}
+\index{write@{write}!streams.js@{streams.js}}
+\doxysubsubsection{\texorpdfstring{write}{write}}
+{\footnotesize\ttfamily \label{websocket-driver_2lib_2websocket_2streams_8js_a355f75ff9c8abb4bda3db7af40f2ee4a} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a826c5f53f864165362c5806b1614093e}{Messages}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} write}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{chunk_8js_a49c71f4b8e247d1267a25b3f04caef18}{chunk}})\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (!this.\mbox{\hyperlink{is-stream_2index_8js_ac8dca21fa013a97d16bb9a1a8a41de0b}{writable}})\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\ \ this.\_driver.parse(\mbox{\hyperlink{chunk_8js_a49c71f4b8e247d1267a25b3f04caef18}{chunk}});}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ !this.\_paused;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}

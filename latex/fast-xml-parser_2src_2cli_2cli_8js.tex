@@ -1,0 +1,175 @@
+\doxysection{backend/node\+\_\+modules/fast-\/xml-\/parser/src/cli/cli.js File Reference}
+\hypertarget{fast-xml-parser_2src_2cli_2cli_8js}{}\label{fast-xml-parser_2src_2cli_2cli_8js}\index{backend/node\_modules/fast-\/xml-\/parser/src/cli/cli.js@{backend/node\_modules/fast-\/xml-\/parser/src/cli/cli.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{fast-xml-parser_2src_2cli_2cli_8js_a59a921d10635bf7f8657176b11732f3c}{if}} (process.\+argv\mbox{[}2\mbox{]}===\textquotesingle{}-\/-\/help\textquotesingle{}\texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|}process.\+argv\mbox{[}2\mbox{]}===\textquotesingle{}-\/\mbox{\hyperlink{ordered-map_8min_8js_a79fe0eb780a2a4b5543b4dddf8b6188a}{h}}\textquotesingle{})
+\item 
+\mbox{\hyperlink{fast-xml-parser_2src_2cli_2cli_8js_aa4f8131a583929107a153336d667576c}{for}} (let \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}=2;\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}$<$ \mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a7fdcf4c82c9946bf2b0b80829a7ab230}{process.\+argv.\+length}};\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}++)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{fast-xml-parser_2src_2cli_2cli_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{fast-xml-parser_2src_2cli_2cli_8js_a2e47e1f004220675d0fa39b8255bd78f}{fs}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}fs\textquotesingle{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{fast-xml-parser_2src_2cli_2cli_8js_a1fdc7709faf62dce60620fb3f9d3453c}{path}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}path\textquotesingle{})
+\item 
+\mbox{\hyperlink{fast-xml-parser_2src_2cli_2cli_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \{\mbox{\hyperlink{class_x_m_l_parser}{XMLParser}}, XMLValidator\} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../fxp"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{fast-xml-parser_2src_2cli_2cli_8js_a98ccf050f54335074244f4dba8f3d1eb}{read\+To\+End}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a99dd3b4c246dbde846b5228e734d9341}{read}}\textquotesingle{}).read\+To\+End
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{fast-xml-parser_2src_2cli_2cli_8js_a265a39dcf2f0b7c6b96574362aa01ad9}{version}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./../../package.\+json\textquotesingle{}).version
+\item 
+\mbox{\hyperlink{fast-xml-parser_2src_2cli_2cli_8js_a0544c3fe466e421738dae463968b70ba}{else}}
+\item 
+let \mbox{\hyperlink{fast-xml-parser_2src_2cli_2cli_8js_a9cbb53856a08d61515603f478f2d8bc1}{file\+Name}} = \textquotesingle{}\textquotesingle{}
+\item 
+let \mbox{\hyperlink{fast-xml-parser_2src_2cli_2cli_8js_ad9b1fc70129fffcf9b9384c02a79a52c}{output\+File\+Name}}
+\item 
+let \mbox{\hyperlink{fast-xml-parser_2src_2cli_2cli_8js_a1375600fd94dadc959f1a69d4e9b7e93}{validate}} = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a5df37b7f02e5cdc7d9412b7f872b8e01}{false}}
+\item 
+let \mbox{\hyperlink{fast-xml-parser_2src_2cli_2cli_8js_a6a4509e21a86ab45aa30d6cf21ffb169}{validate\+Only}} = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a5df37b7f02e5cdc7d9412b7f872b8e01}{false}}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{fast-xml-parser_2src_2cli_2cli_8js_ac37e102b48f4c25363df9bffe28f1a1c}{callback}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{fast-xml-parser_2src_2cli_2cli_8js_aa4f8131a583929107a153336d667576c}\index{cli.js@{cli.js}!for@{for}}
+\index{for@{for}!cli.js@{cli.js}}
+\doxysubsubsection{\texorpdfstring{for()}{for()}}
+{\footnotesize\ttfamily \label{fast-xml-parser_2src_2cli_2cli_8js_aa4f8131a583929107a153336d667576c} 
+for (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{fast-xml-parser_2src_2cli_2cli_8js_a9cbb53856a08d61515603f478f2d8bc1}{file\+Name}}, \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}, \mbox{\hyperlink{fast-xml-parser_2src_2cli_2cli_8js_ad9b1fc70129fffcf9b9384c02a79a52c}{output\+File\+Name}}, \mbox{\hyperlink{ipaddr_8min_8js_abcedab16429ea0641c6596f556f2e102}{process}}, \mbox{\hyperlink{fast-xml-parser_2src_2cli_2cli_8js_a1375600fd94dadc959f1a69d4e9b7e93}{validate}}, and \mbox{\hyperlink{fast-xml-parser_2src_2cli_2cli_8js_a6a4509e21a86ab45aa30d6cf21ffb169}{validate\+Only}}.
+
+\Hypertarget{fast-xml-parser_2src_2cli_2cli_8js_a59a921d10635bf7f8657176b11732f3c}\index{cli.js@{cli.js}!if@{if}}
+\index{if@{if}!cli.js@{cli.js}}
+\doxysubsubsection{\texorpdfstring{if()}{if()}}
+{\footnotesize\ttfamily \label{fast-xml-parser_2src_2cli_2cli_8js_a59a921d10635bf7f8657176b11732f3c} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a0544c3fe466e421738dae463968b70ba}{else}} if (\begin{DoxyParamCaption}\item[{process.}]{argv}{\mbox{[}2\mbox{]} = {\ttfamily ==~\textquotesingle{}-\/-\/help\textquotesingle{}~\texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|}~process.argv\mbox{[}2\mbox{]}~===~\textquotesingle{}-\/\mbox{\hyperlink{ordered-map_8min_8js_a79fe0eb780a2a4b5543b4dddf8b6188a}{h}}\textquotesingle{}}}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{fast-xml-parser_2src_2cli_2cli_8js_a59a921d10635bf7f8657176b11732f3c_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{fast-xml-parser_2src_2cli_2cli_8js_ac37e102b48f4c25363df9bffe28f1a1c}\index{cli.js@{cli.js}!callback@{callback}}
+\index{callback@{callback}!cli.js@{cli.js}}
+\doxysubsubsection{\texorpdfstring{callback}{callback}}
+{\footnotesize\ttfamily \label{fast-xml-parser_2src_2cli_2cli_8js_ac37e102b48f4c25363df9bffe28f1a1c} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} callback}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(xmlData)\ \{}
+\DoxyCodeLine{\ \ \ \ let\ output\ =\ \textcolor{stringliteral}{''};}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{fast-xml-parser_2src_2cli_2cli_8js_a1375600fd94dadc959f1a69d4e9b7e93}{validate}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{ipaddr_8min_8js_a04bd013037bcf380d2d5e88fcd9a2ebf}{parser}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{fxp_8js_a0faadc81efb98e95a3e35fd896ce5004}{XMLParser}}(options);}
+\DoxyCodeLine{\ \ \ \ \ \ output\ =\ \mbox{\hyperlink{ipaddr_8min_8js_a04bd013037bcf380d2d5e88fcd9a2ebf}{parser}}.parse(xmlData,\mbox{\hyperlink{fast-xml-parser_2src_2cli_2cli_8js_a1375600fd94dadc959f1a69d4e9b7e93}{validate}});}
+\DoxyCodeLine{\ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{fast-xml-parser_2src_2cli_2cli_8js_a6a4509e21a86ab45aa30d6cf21ffb169}{validateOnly}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ output\ =\ XMLValidator.validate(xmlData);}
+\DoxyCodeLine{\ \ \ \ \ \ \mbox{\hyperlink{ipaddr_8min_8js_abcedab16429ea0641c6596f556f2e102}{process}}.exitCode\ =\ output\ ===\ \textcolor{keyword}{true}\ ?\ 0\ :\ 1;}
+\DoxyCodeLine{\ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{ipaddr_8min_8js_a04bd013037bcf380d2d5e88fcd9a2ebf}{parser}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{fxp_8js_a0faadc81efb98e95a3e35fd896ce5004}{XMLParser}}(options);}
+\DoxyCodeLine{\ \ \ \ \ \ output\ =\ \mbox{\hyperlink{json-bigint_2lib_2stringify_8js_aec316efdeb7b2e5358b7d50869858da1}{JSON}}.stringify(\mbox{\hyperlink{ipaddr_8min_8js_a04bd013037bcf380d2d5e88fcd9a2ebf}{parser}}.parse(xmlData,\mbox{\hyperlink{fast-xml-parser_2src_2cli_2cli_8js_a1375600fd94dadc959f1a69d4e9b7e93}{validate}}),\ \textcolor{keyword}{null},\ 4);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{fast-xml-parser_2src_2cli_2cli_8js_ad9b1fc70129fffcf9b9384c02a79a52c}{outputFileName}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ writeToFile(\mbox{\hyperlink{fast-xml-parser_2src_2cli_2cli_8js_ad9b1fc70129fffcf9b9384c02a79a52c}{outputFileName}},\ output);}
+\DoxyCodeLine{\ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ console.log(output);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{fast-xml-parser_2src_2cli_2cli_8js_a92b303b76a3f942ea819498907d5e83c}\index{cli.js@{cli.js}!const@{const}}
+\index{const@{const}!cli.js@{cli.js}}
+\doxysubsubsection{\texorpdfstring{const}{const}}
+{\footnotesize\ttfamily \label{fast-xml-parser_2src_2cli_2cli_8js_a92b303b76a3f942ea819498907d5e83c} 
+const \{\mbox{\hyperlink{class_x_m_l_parser}{XMLParser}}, XMLValidator\} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../fxp"{})}
+
+\Hypertarget{fast-xml-parser_2src_2cli_2cli_8js_a0544c3fe466e421738dae463968b70ba}\index{cli.js@{cli.js}!else@{else}}
+\index{else@{else}!cli.js@{cli.js}}
+\doxysubsubsection{\texorpdfstring{else}{else}}
+{\footnotesize\ttfamily \label{fast-xml-parser_2src_2cli_2cli_8js_a0544c3fe466e421738dae463968b70ba} 
+else}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \textcolor{keyword}{const}\ options\ =\ \{}
+\DoxyCodeLine{\ \ \ \ removeNSPrefix:\ \textcolor{keyword}{true},}
+\DoxyCodeLine{\ \ \ \ ignoreAttributes:\ \textcolor{keyword}{false},}
+\DoxyCodeLine{\ \ \ \ parseTagValue:\ \textcolor{keyword}{true},}
+\DoxyCodeLine{\ \ \ \ parseAttributeValue:\ \textcolor{keyword}{true},}
+\DoxyCodeLine{\ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{fast-xml-parser_2src_2cli_2cli_8js_a9cbb53856a08d61515603f478f2d8bc1}\index{cli.js@{cli.js}!fileName@{fileName}}
+\index{fileName@{fileName}!cli.js@{cli.js}}
+\doxysubsubsection{\texorpdfstring{fileName}{fileName}}
+{\footnotesize\ttfamily \label{fast-xml-parser_2src_2cli_2cli_8js_a9cbb53856a08d61515603f478f2d8bc1} 
+let file\+Name = \textquotesingle{}\textquotesingle{}}
+
+\Hypertarget{fast-xml-parser_2src_2cli_2cli_8js_a2e47e1f004220675d0fa39b8255bd78f}\index{cli.js@{cli.js}!fs@{fs}}
+\index{fs@{fs}!cli.js@{cli.js}}
+\doxysubsubsection{\texorpdfstring{fs}{fs}}
+{\footnotesize\ttfamily \label{fast-xml-parser_2src_2cli_2cli_8js_a2e47e1f004220675d0fa39b8255bd78f} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} fs = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}fs\textquotesingle{})}
+
+\Hypertarget{fast-xml-parser_2src_2cli_2cli_8js_ad9b1fc70129fffcf9b9384c02a79a52c}\index{cli.js@{cli.js}!outputFileName@{outputFileName}}
+\index{outputFileName@{outputFileName}!cli.js@{cli.js}}
+\doxysubsubsection{\texorpdfstring{outputFileName}{outputFileName}}
+{\footnotesize\ttfamily \label{fast-xml-parser_2src_2cli_2cli_8js_ad9b1fc70129fffcf9b9384c02a79a52c} 
+let output\+File\+Name}
+
+\Hypertarget{fast-xml-parser_2src_2cli_2cli_8js_a1fdc7709faf62dce60620fb3f9d3453c}\index{cli.js@{cli.js}!path@{path}}
+\index{path@{path}!cli.js@{cli.js}}
+\doxysubsubsection{\texorpdfstring{path}{path}}
+{\footnotesize\ttfamily \label{fast-xml-parser_2src_2cli_2cli_8js_a1fdc7709faf62dce60620fb3f9d3453c} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} path = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}path\textquotesingle{})}
+
+\Hypertarget{fast-xml-parser_2src_2cli_2cli_8js_a98ccf050f54335074244f4dba8f3d1eb}\index{cli.js@{cli.js}!readToEnd@{readToEnd}}
+\index{readToEnd@{readToEnd}!cli.js@{cli.js}}
+\doxysubsubsection{\texorpdfstring{readToEnd}{readToEnd}}
+{\footnotesize\ttfamily \label{fast-xml-parser_2src_2cli_2cli_8js_a98ccf050f54335074244f4dba8f3d1eb} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} read\+To\+End = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a99dd3b4c246dbde846b5228e734d9341}{read}}\textquotesingle{}).read\+To\+End}
+
+\Hypertarget{fast-xml-parser_2src_2cli_2cli_8js_ae2475e10618961c050dcba04e8c42331}\index{cli.js@{cli.js}!strict@{strict}}
+\index{strict@{strict}!cli.js@{cli.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{fast-xml-parser_2src_2cli_2cli_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+
+\Hypertarget{fast-xml-parser_2src_2cli_2cli_8js_a1375600fd94dadc959f1a69d4e9b7e93}\index{cli.js@{cli.js}!validate@{validate}}
+\index{validate@{validate}!cli.js@{cli.js}}
+\doxysubsubsection{\texorpdfstring{validate}{validate}}
+{\footnotesize\ttfamily \label{fast-xml-parser_2src_2cli_2cli_8js_a1375600fd94dadc959f1a69d4e9b7e93} 
+let validate = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a5df37b7f02e5cdc7d9412b7f872b8e01}{false}}}
+
+\Hypertarget{fast-xml-parser_2src_2cli_2cli_8js_a6a4509e21a86ab45aa30d6cf21ffb169}\index{cli.js@{cli.js}!validateOnly@{validateOnly}}
+\index{validateOnly@{validateOnly}!cli.js@{cli.js}}
+\doxysubsubsection{\texorpdfstring{validateOnly}{validateOnly}}
+{\footnotesize\ttfamily \label{fast-xml-parser_2src_2cli_2cli_8js_a6a4509e21a86ab45aa30d6cf21ffb169} 
+let validate\+Only = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a5df37b7f02e5cdc7d9412b7f872b8e01}{false}}}
+
+\Hypertarget{fast-xml-parser_2src_2cli_2cli_8js_a265a39dcf2f0b7c6b96574362aa01ad9}\index{cli.js@{cli.js}!version@{version}}
+\index{version@{version}!cli.js@{cli.js}}
+\doxysubsubsection{\texorpdfstring{version}{version}}
+{\footnotesize\ttfamily \label{fast-xml-parser_2src_2cli_2cli_8js_a265a39dcf2f0b7c6b96574362aa01ad9} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} version = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./../../package.\+json\textquotesingle{}).version}
+

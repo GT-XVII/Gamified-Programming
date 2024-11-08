@@ -1,0 +1,33 @@
+\doxysection{/\+Users/nicoletiokhin/\+Desktop/\+Software Semester 3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/lodash/find\+Index.\+js}
+\hypertarget{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_22fc30dc1d2186e8f27c582896dbbd69}{}\label{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_22fc30dc1d2186e8f27c582896dbbd69}This method is like {\ttfamily \+\_\+.\+find} except that it returns the index of the first element {\ttfamily predicate} returns truthy for instead of the element itself.
+
+@member\+Of \+\_\+ \begin{DoxySince}{Since}
+1.\+1.\+0
+\end{DoxySince}
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Array\}} & array The array to inspect. \\
+\hline
+{\em \{\+Function\}} & \mbox{[}predicate=\+\_\+.\+identity\mbox{]} The function invoked per iteration. \\
+\hline
+{\em \{number\}} & \mbox{[}from\+Index=0\mbox{]} The index to search from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{number\} Returns the index of the found element, else {\ttfamily -\/1}.
+\end{DoxyReturn}
+var users = \mbox{[} \{ \textquotesingle{}user\textquotesingle{}\+: \textquotesingle{}barney\textquotesingle{}, \textquotesingle{}active\textquotesingle{}\+: false \}, \{ \textquotesingle{}user\textquotesingle{}\+: \textquotesingle{}fred\textquotesingle{}, \textquotesingle{}active\textquotesingle{}\+: false \}, \{ \textquotesingle{}user\textquotesingle{}\+: \textquotesingle{}pebbles\textquotesingle{}, \textquotesingle{}active\textquotesingle{}\+: true \} \mbox{]};
+
+\+\_\+.\+find\+Index(users, function(o) \{ return o.\+user == \textquotesingle{}barney\textquotesingle{}; \}); // =\texorpdfstring{$>$}{>} 0
+
+// The {\ttfamily \+\_\+.\+matches} iteratee shorthand. \+\_\+.\+find\+Index(users, \{ \textquotesingle{}user\textquotesingle{}\+: \textquotesingle{}fred\textquotesingle{}, \textquotesingle{}active\textquotesingle{}\+: false \}); // =\texorpdfstring{$>$}{>} 1
+
+// The {\ttfamily \+\_\+.\+matches\+Property} iteratee shorthand. \+\_\+.\+find\+Index(users, \mbox{[}\textquotesingle{}active\textquotesingle{}, false\mbox{]}); // =\texorpdfstring{$>$}{>} 0
+
+// The {\ttfamily \+\_\+.\+property} iteratee shorthand. \+\_\+.\+find\+Index(users, \textquotesingle{}active\textquotesingle{}); // =\texorpdfstring{$>$}{>} 2
+
+
+\begin{DoxyCodeInclude}{0}
+
+\end{DoxyCodeInclude}
+ Semester \doxylink{lodash_2find_index_8js}{3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/lodash/find\+Index.\+js} 

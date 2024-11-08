@@ -1,0 +1,205 @@
+\doxysection{backend/node\+\_\+modules/jose/dist/node/cjs/runtime/encrypt.js File Reference}
+\hypertarget{node_2cjs_2runtime_2encrypt_8js}{}\label{node_2cjs_2runtime_2encrypt_8js}\index{backend/node\_modules/jose/dist/node/cjs/runtime/encrypt.js@{backend/node\_modules/jose/dist/node/cjs/runtime/encrypt.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{node_2cjs_2runtime_2encrypt_8js_ac59e4ddb75e032340659e6642a4cbcec}{cbc\+Encrypt}} (enc, plaintext, cek, iv, aad)
+\item 
+function \mbox{\hyperlink{node_2cjs_2runtime_2encrypt_8js_a60e3f11a9cd8b3c366d5a6c86139d8d6}{gcm\+Encrypt}} (enc, plaintext, cek, iv, aad)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{node_2cjs_2runtime_2encrypt_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{node_2cjs_2runtime_2encrypt_8js_a76fa7e3bd69ca107520d99475fa60fe7}{crypto\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}crypto"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{node_2cjs_2runtime_2encrypt_8js_ae142d0070f3b91c4f5b1e4d78a92e135}{check\+\_\+iv\+\_\+length\+\_\+js\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../lib/check\+\_\+iv\+\_\+length.\+js"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{node_2cjs_2runtime_2encrypt_8js_aeb8b0617872bb799fd67ac68e5897d24}{check\+\_\+cek\+\_\+length\+\_\+js\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./check\+\_\+cek\+\_\+length.\+js"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{node_2cjs_2runtime_2encrypt_8js_aa6950734ec05ac96ae4e199bbf64b4b9}{buffer\+\_\+utils\+\_\+js\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../lib/buffer\+\_\+utils.\+js"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{node_2cjs_2runtime_2encrypt_8js_a0a194a27e2961a3d4c110c01c89015b5}{cbc\+\_\+tag\+\_\+js\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./cbc\+\_\+tag.\+js"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{node_2cjs_2runtime_2encrypt_8js_aaa137b78b56d4a232d5fce65511d82d5}{webcrypto\+\_\+js\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./webcrypto.\+js"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{node_2cjs_2runtime_2encrypt_8js_adbcdc65ccb2e925404b2d8ca9540fb5b}{crypto\+\_\+key\+\_\+js\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../lib/crypto\+\_\+key.\+js"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{node_2cjs_2runtime_2encrypt_8js_ae76a12cea6461b500a9489acaee34504}{is\+\_\+key\+\_\+object\+\_\+js\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./is\+\_\+key\+\_\+object.\+js"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{node_2cjs_2runtime_2encrypt_8js_a090f2d7ffded4553d2ba280656d82d0f}{invalid\+\_\+key\+\_\+input\+\_\+js\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../lib/invalid\+\_\+key\+\_\+input.\+js"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{node_2cjs_2runtime_2encrypt_8js_a285fbd72467b60dd40c49c8c9166b064}{errors\+\_\+js\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../util/errors.\+js"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{node_2cjs_2runtime_2encrypt_8js_a7165c0918e8172d7d1b0b9f2e66db59f}{ciphers\+\_\+js\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./ciphers.\+js"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{node_2cjs_2runtime_2encrypt_8js_aa6df49a25715bcc2c2030bc3778d295d}{is\+\_\+key\+\_\+like\+\_\+js\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./is\+\_\+key\+\_\+like.\+js"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{node_2cjs_2runtime_2encrypt_8js_a9cc36504b3f35737567086ed10020d18}{encrypt}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{node_2cjs_2runtime_2encrypt_8js_a48acd3189d40b017f47c93b673b8b8f6}{default}} = \mbox{\hyperlink{browser_2runtime_2encrypt_8js_a8a5b0f8d49c3788eacd40a0116fcfc23}{encrypt}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{node_2cjs_2runtime_2encrypt_8js_ac59e4ddb75e032340659e6642a4cbcec}\index{encrypt.js@{encrypt.js}!cbcEncrypt@{cbcEncrypt}}
+\index{cbcEncrypt@{cbcEncrypt}!encrypt.js@{encrypt.js}}
+\doxysubsubsection{\texorpdfstring{cbcEncrypt()}{cbcEncrypt()}}
+{\footnotesize\ttfamily \label{node_2cjs_2runtime_2encrypt_8js_ac59e4ddb75e032340659e6642a4cbcec} 
+function cbc\+Encrypt (\begin{DoxyParamCaption}\item[{}]{enc}{, }\item[{}]{plaintext}{, }\item[{}]{cek}{, }\item[{}]{iv}{, }\item[{}]{aad}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{node_2cjs_2jwe_2flattened_2encrypt_8js_aa6950734ec05ac96ae4e199bbf64b4b9}{buffer\+\_\+utils\+\_\+js\+\_\+1}}, \mbox{\hyperlink{cipher_modes_8js_a59f970df5f32c55e944f3e781fcffebb}{cbc}}, \mbox{\hyperlink{node_2cjs_2runtime_2encrypt_8js_a0a194a27e2961a3d4c110c01c89015b5}{cbc\+\_\+tag\+\_\+js\+\_\+1}}, \mbox{\hyperlink{cipher_modes_8js_ad3529e6b62fffcc9799ee186212e4b5a}{cipher}}, \mbox{\hyperlink{node_2cjs_2runtime_2encrypt_8js_a7165c0918e8172d7d1b0b9f2e66db59f}{ciphers\+\_\+js\+\_\+1}}, \mbox{\hyperlink{node_2cjs_2runtime_2encrypt_8js_a76fa7e3bd69ca107520d99475fa60fe7}{crypto\+\_\+1}}, \mbox{\hyperlink{node_2cjs_2jwe_2flattened_2encrypt_8js_a285fbd72467b60dd40c49c8c9166b064}{errors\+\_\+js\+\_\+1}}, \mbox{\hyperlink{express_2lib_2request_8js_a5e3afd97276cc403924d1a449a83ea84}{is}}, \mbox{\hyperlink{node_2cjs_2runtime_2encrypt_8js_ae76a12cea6461b500a9489acaee34504}{is\+\_\+key\+\_\+object\+\_\+js\+\_\+1}}, \mbox{\hyperlink{long_2index_8js_ad7dc44f0ebdb746f4a5b0612ae9315cb}{not}}, and \mbox{\hyperlink{parse_int_8js_a04ee837a5f7721fcb0ea2d152162ef92}{parse\+Int()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=233pt]{node_2cjs_2runtime_2encrypt_8js_ac59e4ddb75e032340659e6642a4cbcec_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{node_2cjs_2runtime_2encrypt_8js_a60e3f11a9cd8b3c366d5a6c86139d8d6}\index{encrypt.js@{encrypt.js}!gcmEncrypt@{gcmEncrypt}}
+\index{gcmEncrypt@{gcmEncrypt}!encrypt.js@{encrypt.js}}
+\doxysubsubsection{\texorpdfstring{gcmEncrypt()}{gcmEncrypt()}}
+{\footnotesize\ttfamily \label{node_2cjs_2runtime_2encrypt_8js_a60e3f11a9cd8b3c366d5a6c86139d8d6} 
+function gcm\+Encrypt (\begin{DoxyParamCaption}\item[{}]{enc}{, }\item[{}]{plaintext}{, }\item[{}]{cek}{, }\item[{}]{iv}{, }\item[{}]{aad}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{cipher_modes_8js_ad3529e6b62fffcc9799ee186212e4b5a}{cipher}}, \mbox{\hyperlink{node_2cjs_2runtime_2encrypt_8js_a7165c0918e8172d7d1b0b9f2e66db59f}{ciphers\+\_\+js\+\_\+1}}, \mbox{\hyperlink{node_2cjs_2runtime_2encrypt_8js_a76fa7e3bd69ca107520d99475fa60fe7}{crypto\+\_\+1}}, \mbox{\hyperlink{node_2cjs_2jwe_2flattened_2encrypt_8js_a285fbd72467b60dd40c49c8c9166b064}{errors\+\_\+js\+\_\+1}}, \mbox{\hyperlink{cipher_modes_8js_a8976a34c4910066ec0336840711c80c9}{gcm}}, \mbox{\hyperlink{express_2lib_2request_8js_a5e3afd97276cc403924d1a449a83ea84}{is}}, \mbox{\hyperlink{long_2index_8js_ad7dc44f0ebdb746f4a5b0612ae9315cb}{not}}, and \mbox{\hyperlink{parse_int_8js_a04ee837a5f7721fcb0ea2d152162ef92}{parse\+Int()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{node_2cjs_2runtime_2encrypt_8js_a60e3f11a9cd8b3c366d5a6c86139d8d6_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{node_2cjs_2runtime_2encrypt_8js_aa6950734ec05ac96ae4e199bbf64b4b9}\index{encrypt.js@{encrypt.js}!buffer\_utils\_js\_1@{buffer\_utils\_js\_1}}
+\index{buffer\_utils\_js\_1@{buffer\_utils\_js\_1}!encrypt.js@{encrypt.js}}
+\doxysubsubsection{\texorpdfstring{buffer\_utils\_js\_1}{buffer\_utils\_js\_1}}
+{\footnotesize\ttfamily \label{node_2cjs_2runtime_2encrypt_8js_aa6950734ec05ac96ae4e199bbf64b4b9} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} buffer\+\_\+utils\+\_\+js\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../lib/buffer\+\_\+utils.\+js"{})}
+
+\Hypertarget{node_2cjs_2runtime_2encrypt_8js_a0a194a27e2961a3d4c110c01c89015b5}\index{encrypt.js@{encrypt.js}!cbc\_tag\_js\_1@{cbc\_tag\_js\_1}}
+\index{cbc\_tag\_js\_1@{cbc\_tag\_js\_1}!encrypt.js@{encrypt.js}}
+\doxysubsubsection{\texorpdfstring{cbc\_tag\_js\_1}{cbc\_tag\_js\_1}}
+{\footnotesize\ttfamily \label{node_2cjs_2runtime_2encrypt_8js_a0a194a27e2961a3d4c110c01c89015b5} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} cbc\+\_\+tag\+\_\+js\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./cbc\+\_\+tag.\+js"{})}
+
+\Hypertarget{node_2cjs_2runtime_2encrypt_8js_aeb8b0617872bb799fd67ac68e5897d24}\index{encrypt.js@{encrypt.js}!check\_cek\_length\_js\_1@{check\_cek\_length\_js\_1}}
+\index{check\_cek\_length\_js\_1@{check\_cek\_length\_js\_1}!encrypt.js@{encrypt.js}}
+\doxysubsubsection{\texorpdfstring{check\_cek\_length\_js\_1}{check\_cek\_length\_js\_1}}
+{\footnotesize\ttfamily \label{node_2cjs_2runtime_2encrypt_8js_aeb8b0617872bb799fd67ac68e5897d24} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} check\+\_\+cek\+\_\+length\+\_\+js\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./check\+\_\+cek\+\_\+length.\+js"{})}
+
+\Hypertarget{node_2cjs_2runtime_2encrypt_8js_ae142d0070f3b91c4f5b1e4d78a92e135}\index{encrypt.js@{encrypt.js}!check\_iv\_length\_js\_1@{check\_iv\_length\_js\_1}}
+\index{check\_iv\_length\_js\_1@{check\_iv\_length\_js\_1}!encrypt.js@{encrypt.js}}
+\doxysubsubsection{\texorpdfstring{check\_iv\_length\_js\_1}{check\_iv\_length\_js\_1}}
+{\footnotesize\ttfamily \label{node_2cjs_2runtime_2encrypt_8js_ae142d0070f3b91c4f5b1e4d78a92e135} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} check\+\_\+iv\+\_\+length\+\_\+js\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../lib/check\+\_\+iv\+\_\+length.\+js"{})}
+
+\Hypertarget{node_2cjs_2runtime_2encrypt_8js_a7165c0918e8172d7d1b0b9f2e66db59f}\index{encrypt.js@{encrypt.js}!ciphers\_js\_1@{ciphers\_js\_1}}
+\index{ciphers\_js\_1@{ciphers\_js\_1}!encrypt.js@{encrypt.js}}
+\doxysubsubsection{\texorpdfstring{ciphers\_js\_1}{ciphers\_js\_1}}
+{\footnotesize\ttfamily \label{node_2cjs_2runtime_2encrypt_8js_a7165c0918e8172d7d1b0b9f2e66db59f} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} ciphers\+\_\+js\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./ciphers.\+js"{})}
+
+\Hypertarget{node_2cjs_2runtime_2encrypt_8js_a76fa7e3bd69ca107520d99475fa60fe7}\index{encrypt.js@{encrypt.js}!crypto\_1@{crypto\_1}}
+\index{crypto\_1@{crypto\_1}!encrypt.js@{encrypt.js}}
+\doxysubsubsection{\texorpdfstring{crypto\_1}{crypto\_1}}
+{\footnotesize\ttfamily \label{node_2cjs_2runtime_2encrypt_8js_a76fa7e3bd69ca107520d99475fa60fe7} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} crypto\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}crypto"{})}
+
+\Hypertarget{node_2cjs_2runtime_2encrypt_8js_adbcdc65ccb2e925404b2d8ca9540fb5b}\index{encrypt.js@{encrypt.js}!crypto\_key\_js\_1@{crypto\_key\_js\_1}}
+\index{crypto\_key\_js\_1@{crypto\_key\_js\_1}!encrypt.js@{encrypt.js}}
+\doxysubsubsection{\texorpdfstring{crypto\_key\_js\_1}{crypto\_key\_js\_1}}
+{\footnotesize\ttfamily \label{node_2cjs_2runtime_2encrypt_8js_adbcdc65ccb2e925404b2d8ca9540fb5b} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} crypto\+\_\+key\+\_\+js\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../lib/crypto\+\_\+key.\+js"{})}
+
+\Hypertarget{node_2cjs_2runtime_2encrypt_8js_a48acd3189d40b017f47c93b673b8b8f6}\index{encrypt.js@{encrypt.js}!default@{default}}
+\index{default@{default}!encrypt.js@{encrypt.js}}
+\doxysubsubsection{\texorpdfstring{default}{default}}
+{\footnotesize\ttfamily \label{node_2cjs_2runtime_2encrypt_8js_a48acd3189d40b017f47c93b673b8b8f6} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} default = \mbox{\hyperlink{browser_2runtime_2encrypt_8js_a8a5b0f8d49c3788eacd40a0116fcfc23}{encrypt}}}
+
+\Hypertarget{node_2cjs_2runtime_2encrypt_8js_a9cc36504b3f35737567086ed10020d18}\index{encrypt.js@{encrypt.js}!encrypt@{encrypt}}
+\index{encrypt@{encrypt}!encrypt.js@{encrypt.js}}
+\doxysubsubsection{\texorpdfstring{encrypt}{encrypt}}
+{\footnotesize\ttfamily \label{node_2cjs_2runtime_2encrypt_8js_a9cc36504b3f35737567086ed10020d18} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} encrypt}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ (enc,\ plaintext,\ cek,\ iv,\ aad)\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ let\ key;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ ((0,\ \mbox{\hyperlink{node_2cjs_2runtime_2encrypt_8js_aaa137b78b56d4a232d5fce65511d82d5}{webcrypto\_js\_1}}.isCryptoKey)(cek))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ (0,\ \mbox{\hyperlink{node_2cjs_2runtime_2encrypt_8js_adbcdc65ccb2e925404b2d8ca9540fb5b}{crypto\_key\_js\_1}}.checkEncCryptoKey)(cek,\ enc,\ \textcolor{stringliteral}{'encrypt'});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ key\ =\ \mbox{\hyperlink{node_2cjs_2runtime_2encrypt_8js_a76fa7e3bd69ca107520d99475fa60fe7}{crypto\_1}}.KeyObject.from(cek);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (cek\ instanceof\ Uint8Array\ ||\ (0,\ \mbox{\hyperlink{node_2cjs_2runtime_2encrypt_8js_ae76a12cea6461b500a9489acaee34504}{is\_key\_object\_js\_1}}.default)(cek))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ key\ =\ cek;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ TypeError((0,\ \mbox{\hyperlink{node_2cjs_2runtime_2encrypt_8js_a090f2d7ffded4553d2ba280656d82d0f}{invalid\_key\_input\_js\_1}}.default)(cek,\ ...is\_key\_like\_js\_1.types,\ \textcolor{stringliteral}{'Uint8Array'}));}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ (0,\ \mbox{\hyperlink{node_2cjs_2runtime_2encrypt_8js_aeb8b0617872bb799fd67ac68e5897d24}{check\_cek\_length\_js\_1}}.default)(enc,\ key);}
+\DoxyCodeLine{\ \ \ \ (0,\ \mbox{\hyperlink{node_2cjs_2runtime_2encrypt_8js_ae142d0070f3b91c4f5b1e4d78a92e135}{check\_iv\_length\_js\_1}}.default)(enc,\ iv);}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{switch}\ (enc)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'A128CBC-\/HS256'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'A192CBC-\/HS384'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'A256CBC-\/HS512'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{browser_2runtime_2encrypt_8js_a38f8db9fa79fa92f71f229a187d58939}{cbcEncrypt}}(enc,\ plaintext,\ key,\ iv,\ aad);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'A128GCM'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'A192GCM'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'A256GCM'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{browser_2runtime_2encrypt_8js_a8cc8806747f3cef92634e0900e4f6a72}{gcmEncrypt}}(enc,\ plaintext,\ key,\ iv,\ aad);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{node_2cjs_2jwe_2flattened_2encrypt_8js_a285fbd72467b60dd40c49c8c9166b064}{errors\_js\_1}}.JOSENotSupported(\textcolor{stringliteral}{'Unsupported\ JWE\ Content\ Encryption\ Algorithm'});}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{node_2cjs_2runtime_2encrypt_8js_a285fbd72467b60dd40c49c8c9166b064}\index{encrypt.js@{encrypt.js}!errors\_js\_1@{errors\_js\_1}}
+\index{errors\_js\_1@{errors\_js\_1}!encrypt.js@{encrypt.js}}
+\doxysubsubsection{\texorpdfstring{errors\_js\_1}{errors\_js\_1}}
+{\footnotesize\ttfamily \label{node_2cjs_2runtime_2encrypt_8js_a285fbd72467b60dd40c49c8c9166b064} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} errors\+\_\+js\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../util/errors.\+js"{})}
+
+\Hypertarget{node_2cjs_2runtime_2encrypt_8js_a090f2d7ffded4553d2ba280656d82d0f}\index{encrypt.js@{encrypt.js}!invalid\_key\_input\_js\_1@{invalid\_key\_input\_js\_1}}
+\index{invalid\_key\_input\_js\_1@{invalid\_key\_input\_js\_1}!encrypt.js@{encrypt.js}}
+\doxysubsubsection{\texorpdfstring{invalid\_key\_input\_js\_1}{invalid\_key\_input\_js\_1}}
+{\footnotesize\ttfamily \label{node_2cjs_2runtime_2encrypt_8js_a090f2d7ffded4553d2ba280656d82d0f} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} invalid\+\_\+key\+\_\+input\+\_\+js\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../lib/invalid\+\_\+key\+\_\+input.\+js"{})}
+
+\Hypertarget{node_2cjs_2runtime_2encrypt_8js_aa6df49a25715bcc2c2030bc3778d295d}\index{encrypt.js@{encrypt.js}!is\_key\_like\_js\_1@{is\_key\_like\_js\_1}}
+\index{is\_key\_like\_js\_1@{is\_key\_like\_js\_1}!encrypt.js@{encrypt.js}}
+\doxysubsubsection{\texorpdfstring{is\_key\_like\_js\_1}{is\_key\_like\_js\_1}}
+{\footnotesize\ttfamily \label{node_2cjs_2runtime_2encrypt_8js_aa6df49a25715bcc2c2030bc3778d295d} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} is\+\_\+key\+\_\+like\+\_\+js\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./is\+\_\+key\+\_\+like.\+js"{})}
+
+\Hypertarget{node_2cjs_2runtime_2encrypt_8js_ae76a12cea6461b500a9489acaee34504}\index{encrypt.js@{encrypt.js}!is\_key\_object\_js\_1@{is\_key\_object\_js\_1}}
+\index{is\_key\_object\_js\_1@{is\_key\_object\_js\_1}!encrypt.js@{encrypt.js}}
+\doxysubsubsection{\texorpdfstring{is\_key\_object\_js\_1}{is\_key\_object\_js\_1}}
+{\footnotesize\ttfamily \label{node_2cjs_2runtime_2encrypt_8js_ae76a12cea6461b500a9489acaee34504} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} is\+\_\+key\+\_\+object\+\_\+js\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./is\+\_\+key\+\_\+object.\+js"{})}
+
+\Hypertarget{node_2cjs_2runtime_2encrypt_8js_ae2475e10618961c050dcba04e8c42331}\index{encrypt.js@{encrypt.js}!strict@{strict}}
+\index{strict@{strict}!encrypt.js@{encrypt.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{node_2cjs_2runtime_2encrypt_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+
+\Hypertarget{node_2cjs_2runtime_2encrypt_8js_aaa137b78b56d4a232d5fce65511d82d5}\index{encrypt.js@{encrypt.js}!webcrypto\_js\_1@{webcrypto\_js\_1}}
+\index{webcrypto\_js\_1@{webcrypto\_js\_1}!encrypt.js@{encrypt.js}}
+\doxysubsubsection{\texorpdfstring{webcrypto\_js\_1}{webcrypto\_js\_1}}
+{\footnotesize\ttfamily \label{node_2cjs_2runtime_2encrypt_8js_aaa137b78b56d4a232d5fce65511d82d5} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} webcrypto\+\_\+js\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./webcrypto.\+js"{})}
+

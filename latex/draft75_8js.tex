@@ -1,0 +1,78 @@
+\doxysection{backend/node\+\_\+modules/websocket-\/driver/lib/websocket/driver/draft75.js File Reference}
+\hypertarget{draft75_8js}{}\label{draft75_8js}\index{backend/node\_modules/websocket-\/driver/lib/websocket/driver/draft75.js@{backend/node\_modules/websocket-\/driver/lib/websocket/driver/draft75.js}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{draft75_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+var \mbox{\hyperlink{draft75_8js_a6e9de2d16b02dc274208bfcc1914d7f4}{Buffer}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}safe-\/\mbox{\hyperlink{cjs_2internal_2operators_2buffer_8js_a838d54b935df11eff7928ba8da636891}{buffer}}\textquotesingle{}).Buffer
+\item 
+var \mbox{\hyperlink{draft75_8js_a9e9b777c6c201cee9f04395483bb677d}{Base}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a633f76c2f6070be182949e8d86a51bc6}{base}}\textquotesingle{})
+\item 
+var \mbox{\hyperlink{draft75_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}util\textquotesingle{})
+\item 
+var \mbox{\hyperlink{draft75_8js_af81ab4c0520febbbe8ce5f600199c157}{Draft75}}
+\item 
+var \mbox{\hyperlink{draft75_8js_a243c7aa6c47d450837986091ed54a347}{instance}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{draft75_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af81ab4c0520febbbe8ce5f600199c157}{Draft75}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{draft75_8js_a9e9b777c6c201cee9f04395483bb677d}\index{draft75.js@{draft75.js}!Base@{Base}}
+\index{Base@{Base}!draft75.js@{draft75.js}}
+\doxysubsubsection{\texorpdfstring{Base}{Base}}
+{\footnotesize\ttfamily \label{draft75_8js_a9e9b777c6c201cee9f04395483bb677d} 
+var Base = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a633f76c2f6070be182949e8d86a51bc6}{base}}\textquotesingle{})}
+
+\Hypertarget{draft75_8js_a6e9de2d16b02dc274208bfcc1914d7f4}\index{draft75.js@{draft75.js}!Buffer@{Buffer}}
+\index{Buffer@{Buffer}!draft75.js@{draft75.js}}
+\doxysubsubsection{\texorpdfstring{Buffer}{Buffer}}
+{\footnotesize\ttfamily \label{draft75_8js_a6e9de2d16b02dc274208bfcc1914d7f4} 
+var Buffer = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}safe-\/\mbox{\hyperlink{cjs_2internal_2operators_2buffer_8js_a838d54b935df11eff7928ba8da636891}{buffer}}\textquotesingle{}).Buffer}
+
+\Hypertarget{draft75_8js_af81ab4c0520febbbe8ce5f600199c157}\index{draft75.js@{draft75.js}!Draft75@{Draft75}}
+\index{Draft75@{Draft75}!draft75.js@{draft75.js}}
+\doxysubsubsection{\texorpdfstring{Draft75}{Draft75}}
+{\footnotesize\ttfamily \label{draft75_8js_af81ab4c0520febbbe8ce5f600199c157} 
+var Draft75}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}},\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_acf0a8b41f00a22e21672c8b3768a0618}{url}},\ options)\ \{}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{class_base}{Base}}.apply(\textcolor{keyword}{this},\ arguments);}
+\DoxyCodeLine{\ \ this.\_stage\ \ =\ 0;}
+\DoxyCodeLine{\ \ this.\mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a265a39dcf2f0b7c6b96574362aa01ad9}{version}}\ =\ \textcolor{stringliteral}{'hixie-\/75'};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ this.\_headers.set(\textcolor{stringliteral}{'Upgrade'},\ \textcolor{stringliteral}{'WebSocket'});}
+\DoxyCodeLine{\ \ this.\_headers.set(\textcolor{stringliteral}{'Connection'},\ \textcolor{stringliteral}{'Upgrade'});}
+\DoxyCodeLine{\ \ this.\_headers.set(\textcolor{stringliteral}{'WebSocket-\/Origin'},\ this.\_request.headers.origin);}
+\DoxyCodeLine{\ \ this.\_headers.set(\textcolor{stringliteral}{'WebSocket-\/Location'},\ this.\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_acf0a8b41f00a22e21672c8b3768a0618}{url}});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{draft75_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\index{draft75.js@{draft75.js}!exports@{exports}}
+\index{exports@{exports}!draft75.js@{draft75.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \label{draft75_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af81ab4c0520febbbe8ce5f600199c157}{Draft75}}}
+
+\Hypertarget{draft75_8js_a243c7aa6c47d450837986091ed54a347}\index{draft75.js@{draft75.js}!instance@{instance}}
+\index{instance@{instance}!draft75.js@{draft75.js}}
+\doxysubsubsection{\texorpdfstring{instance}{instance}}
+{\footnotesize\ttfamily \label{draft75_8js_a243c7aa6c47d450837986091ed54a347} 
+var instance}
+
+\Hypertarget{draft75_8js_ae2475e10618961c050dcba04e8c42331}\index{draft75.js@{draft75.js}!strict@{strict}}
+\index{strict@{strict}!draft75.js@{draft75.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{draft75_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+
+\Hypertarget{draft75_8js_a8f5b2e09d5197e9d28f6032dff542d44}\index{draft75.js@{draft75.js}!util@{util}}
+\index{util@{util}!draft75.js@{draft75.js}}
+\doxysubsubsection{\texorpdfstring{util}{util}}
+{\footnotesize\ttfamily \label{draft75_8js_a8f5b2e09d5197e9d28f6032dff542d44} 
+var util = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}util\textquotesingle{})}
+

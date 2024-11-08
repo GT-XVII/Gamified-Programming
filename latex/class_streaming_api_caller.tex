@@ -1,0 +1,105 @@
+\doxysection{Streaming\+Api\+Caller Class Reference}
+\hypertarget{class_streaming_api_caller}{}\label{class_streaming_api_caller}\index{StreamingApiCaller@{StreamingApiCaller}}
+
+
+Collaboration diagram for Streaming\+Api\+Caller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{class_streaming_api_caller__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_streaming_api_caller_a3081d3a0e09b4d8c79ea744e1624c165}{init}} (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a622460feeccdab6d8f307936fc6b36fb}{callback}})
+\item 
+\mbox{\hyperlink{class_streaming_api_caller_af684aa8423a73810d60eb98e259077d1}{wrap}} (\mbox{\hyperlink{fp_2add_8js_a1ba8e806628b2f512d93819d64d86db9}{func}})
+\item 
+\mbox{\hyperlink{class_streaming_api_caller_ae39540ea7ad5d9691b2c3a751499301c}{call}} (api\+Call, argument, settings, \mbox{\hyperlink{debug_2src_2node_8js_a822bf74d422c61e6caa292f739dc4786}{stream}})
+\item 
+\mbox{\hyperlink{class_streaming_api_caller_acc6ad2daa46f4098206dc70cc7974a9d}{fail}} (\mbox{\hyperlink{debug_2src_2node_8js_a822bf74d422c61e6caa292f739dc4786}{stream}}, err)
+\item 
+\mbox{\hyperlink{class_streaming_api_caller_adb1ed26edbec6207b97a140deb920c7d}{result}} (\mbox{\hyperlink{debug_2src_2node_8js_a822bf74d422c61e6caa292f739dc4786}{stream}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_streaming_api_caller_a2810bc893cf381e978a469c37abb1ba2}{constructor}} (\mbox{\hyperlink{_0dgrpc_2proto-loader_2build_2src_2index_8js_aa6b9cda1f610adf9d21a9408b3583d51}{descriptor}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_streaming_api_caller_ae39540ea7ad5d9691b2c3a751499301c}\index{StreamingApiCaller@{StreamingApiCaller}!call@{call}}
+\index{call@{call}!StreamingApiCaller@{StreamingApiCaller}}
+\doxysubsubsection{\texorpdfstring{call()}{call()}}
+{\footnotesize\ttfamily \label{class_streaming_api_caller_ae39540ea7ad5d9691b2c3a751499301c} 
+Streaming\+Api\+Caller\+::call (\begin{DoxyParamCaption}\item[{}]{api\+Call}{, }\item[{}]{argument}{, }\item[{}]{settings}{, }\item[{}]{stream}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{debug_2src_2node_8js_a822bf74d422c61e6caa292f739dc4786}{stream}}.
+
+\Hypertarget{class_streaming_api_caller_a2810bc893cf381e978a469c37abb1ba2}\index{StreamingApiCaller@{StreamingApiCaller}!constructor@{constructor}}
+\index{constructor@{constructor}!StreamingApiCaller@{StreamingApiCaller}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_streaming_api_caller_a2810bc893cf381e978a469c37abb1ba2} 
+Streaming\+Api\+Caller\+::constructor (\begin{DoxyParamCaption}\item[{}]{descriptor}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+An API caller for methods of g\+RPC streaming.
+
+@constructor 
+\begin{DoxyParams}{Parameters}
+{\em \{\+Stream\+Descriptor\}} & descriptor -\/ the descriptor of the method structure. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{_0dgrpc_2proto-loader_2build_2src_2index_8js_aa6b9cda1f610adf9d21a9408b3583d51}{descriptor}}.
+
+\Hypertarget{class_streaming_api_caller_acc6ad2daa46f4098206dc70cc7974a9d}\index{StreamingApiCaller@{StreamingApiCaller}!fail@{fail}}
+\index{fail@{fail}!StreamingApiCaller@{StreamingApiCaller}}
+\doxysubsubsection{\texorpdfstring{fail()}{fail()}}
+{\footnotesize\ttfamily \label{class_streaming_api_caller_acc6ad2daa46f4098206dc70cc7974a9d} 
+Streaming\+Api\+Caller\+::fail (\begin{DoxyParamCaption}\item[{}]{stream}{, }\item[{}]{err}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{debug_2src_2node_8js_a822bf74d422c61e6caa292f739dc4786}{stream}}.
+
+\Hypertarget{class_streaming_api_caller_a3081d3a0e09b4d8c79ea744e1624c165}\index{StreamingApiCaller@{StreamingApiCaller}!init@{init}}
+\index{init@{init}!StreamingApiCaller@{StreamingApiCaller}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily \label{class_streaming_api_caller_a3081d3a0e09b4d8c79ea744e1624c165} 
+Streaming\+Api\+Caller\+::init (\begin{DoxyParamCaption}\item[{}]{callback}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a622460feeccdab6d8f307936fc6b36fb}{callback}}, \mbox{\hyperlink{_0dgrpc_2proto-loader_2build_2src_2index_8js_aa6b9cda1f610adf9d21a9408b3583d51}{descriptor}}, and \mbox{\hyperlink{streaming_api_caller_8js_a5adde15a6837df415b95e9c39ec2162f}{streaming\+\_\+1}}.
+
+\Hypertarget{class_streaming_api_caller_adb1ed26edbec6207b97a140deb920c7d}\index{StreamingApiCaller@{StreamingApiCaller}!result@{result}}
+\index{result@{result}!StreamingApiCaller@{StreamingApiCaller}}
+\doxysubsubsection{\texorpdfstring{result()}{result()}}
+{\footnotesize\ttfamily \label{class_streaming_api_caller_adb1ed26edbec6207b97a140deb920c7d} 
+Streaming\+Api\+Caller\+::result (\begin{DoxyParamCaption}\item[{}]{stream}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{debug_2src_2node_8js_a822bf74d422c61e6caa292f739dc4786}{stream}}.
+
+\Hypertarget{class_streaming_api_caller_af684aa8423a73810d60eb98e259077d1}\index{StreamingApiCaller@{StreamingApiCaller}!wrap@{wrap}}
+\index{wrap@{wrap}!StreamingApiCaller@{StreamingApiCaller}}
+\doxysubsubsection{\texorpdfstring{wrap()}{wrap()}}
+{\footnotesize\ttfamily \label{class_streaming_api_caller_af684aa8423a73810d60eb98e259077d1} 
+Streaming\+Api\+Caller\+::wrap (\begin{DoxyParamCaption}\item[{}]{func}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a622460feeccdab6d8f307936fc6b36fb}{callback}}, \mbox{\hyperlink{_0dgrpc_2proto-loader_2build_2src_2index_8js_aa6b9cda1f610adf9d21a9408b3583d51}{descriptor}}, \mbox{\hyperlink{fp_2add_8js_a1ba8e806628b2f512d93819d64d86db9}{func}}, \mbox{\hyperlink{debug_2src_2node_8js_a822bf74d422c61e6caa292f739dc4786}{stream}}, \mbox{\hyperlink{streaming_api_caller_8js_a5adde15a6837df415b95e9c39ec2162f}{streaming\+\_\+1}}, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type}}, and \mbox{\hyperlink{streaming_api_caller_8js_a2e262cff771e5ba3a685861bdb134310}{warnings\+\_\+1}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/google-\/gax/build/src/streaming\+Calls/\mbox{\hyperlink{streaming_api_caller_8js}{streaming\+Api\+Caller.\+js}}\end{DoxyCompactItemize}

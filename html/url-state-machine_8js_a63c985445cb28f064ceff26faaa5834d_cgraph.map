@@ -1,0 +1,15 @@
+<map id="parseOpaqueHost" name="parseOpaqueHost">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,70,132,96"/>
+<area shape="rect" id="Node000002" href="$url-state-machine_8js.html#a166392e3050f7f4cc0329f01cbb459b3" title=" " alt="" coords="180,5,366,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,67,182,48,184,53,118,72"/>
+<area shape="rect" id="Node000003" href="$url-state-machine_8js.html#afbdd8f627f74485604fff88b6c513bb9" title=" " alt="" coords="183,70,362,96"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="132,80,168,80,168,86,132,86"/>
+<area shape="rect" id="Node000004" href="$url-state-machine_8js.html#a8d76a4c975a7626bc1d52773f073f2d3" title=" " alt="" coords="205,120,341,145"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="126,94,202,113,201,118,124,99"/>
+<area shape="rect" id="Node000005" href="$url-state-machine_8js.html#af22d4e838f0edcd2fd795b6134370db3" title=" " alt="" coords="414,120,546,145"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="341,130,398,130,398,135,341,135"/>
+<area shape="rect" id="Node000006" href="$url-state-machine_8js.html#a8e0093ec3cd57c1087ad6efb03d913e4" title=" " alt="" coords="594,94,703,120"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="547,120,578,115,579,120,547,125"/>
+<area shape="rect" id="Node000007" href="$json-bigint_2lib_2stringify_8js.html#abd4075a8f329b0ccafd81359c952a9df" title=" " alt="" coords="629,144,668,169"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="547,139,615,149,614,154,547,144"/>
+</map>

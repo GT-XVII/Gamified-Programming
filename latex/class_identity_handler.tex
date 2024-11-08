@@ -1,0 +1,89 @@
+\doxysection{Identity\+Handler Class Reference}
+\hypertarget{class_identity_handler}{}\label{class_identity_handler}\index{IdentityHandler@{IdentityHandler}}
+
+
+Inheritance diagram for Identity\+Handler\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{class_identity_handler__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Identity\+Handler\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{class_identity_handler__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{class_identity_handler_aa0ee4b621ca24455270f45114ac0cd2f}{compress\+Message}} (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}})
+\item 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{class_identity_handler_acf23988ac0f7d5f24fc3eb54bb3fa423}{write\+Message}} (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}, \mbox{\hyperlink{node2json_8js_acd97ec39370eb7c8149d807099b0bd68}{compress}})
+\item 
+\mbox{\hyperlink{class_identity_handler_ae53a9a7f4603b6d863ec41a56f1e2afc}{decompress\+Message}} (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}})
+\item 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{class_compression_handler_a09f19ce90784219488f35bb354931ee9}{read\+Message}} (\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_identity_handler_aa0ee4b621ca24455270f45114ac0cd2f}\index{IdentityHandler@{IdentityHandler}!compressMessage@{compressMessage}}
+\index{compressMessage@{compressMessage}!IdentityHandler@{IdentityHandler}}
+\doxysubsubsection{\texorpdfstring{compressMessage()}{compressMessage()}}
+{\footnotesize\ttfamily \label{class_identity_handler_aa0ee4b621ca24455270f45114ac0cd2f} 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} Identity\+Handler\+::compress\+Message (\begin{DoxyParamCaption}\item[{}]{message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}.
+
+\Hypertarget{class_identity_handler_ae53a9a7f4603b6d863ec41a56f1e2afc}\index{IdentityHandler@{IdentityHandler}!decompressMessage@{decompressMessage}}
+\index{decompressMessage@{decompressMessage}!IdentityHandler@{IdentityHandler}}
+\doxysubsubsection{\texorpdfstring{decompressMessage()}{decompressMessage()}}
+{\footnotesize\ttfamily \label{class_identity_handler_ae53a9a7f4603b6d863ec41a56f1e2afc} 
+Identity\+Handler\+::decompress\+Message (\begin{DoxyParamCaption}\item[{}]{message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{__get_tag_8js_abace523389c17bce1848e3a427871700}{Promise}}.
+
+\Hypertarget{class_compression_handler_a09f19ce90784219488f35bb354931ee9}\index{IdentityHandler@{IdentityHandler}!readMessage@{readMessage}}
+\index{readMessage@{readMessage}!IdentityHandler@{IdentityHandler}}
+\doxysubsubsection{\texorpdfstring{readMessage()}{readMessage()}}
+{\footnotesize\ttfamily \label{class_compression_handler_a09f19ce90784219488f35bb354931ee9} 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} Compression\+Handler\+::read\+Message (\begin{DoxyParamCaption}\item[{}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Framed message, possibly compressed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Uncompressed message 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}.
+
+\Hypertarget{class_identity_handler_acf23988ac0f7d5f24fc3eb54bb3fa423}\index{IdentityHandler@{IdentityHandler}!writeMessage@{writeMessage}}
+\index{writeMessage@{writeMessage}!IdentityHandler@{IdentityHandler}}
+\doxysubsubsection{\texorpdfstring{writeMessage()}{writeMessage()}}
+{\footnotesize\ttfamily \label{class_identity_handler_acf23988ac0f7d5f24fc3eb54bb3fa423} 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} Identity\+Handler\+::write\+Message (\begin{DoxyParamCaption}\item[{}]{message}{, }\item[{}]{compress}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/@grpc/grpc-\/js/build/src/\mbox{\hyperlink{compression-filter_8js}{compression-\/filter.\+js}}\end{DoxyCompactItemize}

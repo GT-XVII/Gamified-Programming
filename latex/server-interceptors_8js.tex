@@ -1,0 +1,350 @@
+\doxysection{backend/node\+\_\+modules/@grpc/grpc-\/js/build/src/server-\/interceptors.js File Reference}
+\hypertarget{server-interceptors_8js}{}\label{server-interceptors_8js}\index{backend/node\_modules/"@grpc/grpc-\/js/build/src/server-\/interceptors.js@{backend/node\_modules/"@grpc/grpc-\/js/build/src/server-\/interceptors.js}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_server_listener_builder}{Server\+Listener\+Builder}}
+\item 
+class \mbox{\hyperlink{class_intercepting_server_listener_impl}{Intercepting\+Server\+Listener\+Impl}}
+\item 
+class \mbox{\hyperlink{class_responder_builder}{Responder\+Builder}}
+\item 
+class \mbox{\hyperlink{class_server_intercepting_call}{Server\+Intercepting\+Call}}
+\item 
+class \mbox{\hyperlink{class_base_server_intercepting_call}{Base\+Server\+Intercepting\+Call}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{server-interceptors_8js_ada041a6e07968cb36abb81fb6d535760}{trace}} (\mbox{\hyperlink{node-forge_2lib_2util_8js_ab492f69e70933f85fe6b3a8808d19852}{text}})
+\item 
+function \mbox{\hyperlink{server-interceptors_8js_a95643a7532f48106266184279e7b0094}{is\+Intercepting\+Server\+Listener}} (listener)
+\item 
+function \mbox{\hyperlink{server-interceptors_8js_afc859d1b27b12f9c90a79413c1c2d59d}{get\+Server\+Intercepting\+Call}} (interceptors, \mbox{\hyperlink{debug_2src_2node_8js_a822bf74d422c61e6caa292f739dc4786}{stream}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7f2cb2fcdd79bf72cefd29b7bc2d10fa}{headers}}, call\+Event\+Tracker, handler, options)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{server-interceptors_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{server-interceptors_8js_a7241411e3eada38e9b12f56f3ed816eb}{get\+Server\+Intercepting\+Call}} = exports.\+Base\+Server\+Intercepting\+Call = exports.\+Server\+Intercepting\+Call = exports.\+Responder\+Builder = \mbox{\hyperlink{server-interceptors_8js_ab1a2f89e1f1185509acd932638f4f83d}{exports.\+is\+Intercepting\+Server\+Listener}} = exports.\+Server\+Listener\+Builder = void 0
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{server-interceptors_8js_a7ccaf64b99eed08557e09f7f79748878}{metadata\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./metadata"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{server-interceptors_8js_ad33cb6840349d3bc93f4fe9de15a6f8f}{constants\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./constants"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{server-interceptors_8js_a41a25b54de72b0be6fc52792a59af64c}{http2}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}http2"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{server-interceptors_8js_af1a99a3ff1a35c114bdd06cc7252beb6}{error\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./error"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{server-interceptors_8js_a27ccbb53720cd053c6ced7d851a6992e}{zlib}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}zlib"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{server-interceptors_8js_a75183069d786e5fe57ab0fd5206813ce}{stream\+\_\+decoder\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./stream-\/decoder"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{server-interceptors_8js_ab53afa7b9c9aef77e950713c8b54c98c}{logging}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./logging"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{server-interceptors_8js_a4d771a845df73d12433ddcb6b91f8b9a}{TRACER\+\_\+\+NAME}} = \textquotesingle{}server\+\_\+call\textquotesingle{}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{server-interceptors_8js_a260f5bd148e6f6d55f76302963fd7ed0}{Server\+Listener\+Builder}} = Server\+Listener\+Builder
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{server-interceptors_8js_ab1a2f89e1f1185509acd932638f4f83d}{is\+Intercepting\+Server\+Listener}} = is\+Intercepting\+Server\+Listener
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{server-interceptors_8js_a79bcb71e1ebf83c5ff2c3dc95ce1a1bf}{Responder\+Builder}} = Responder\+Builder
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{server-interceptors_8js_a1379a89f32fd619319cecf64a7633b73}{default\+Server\+Listener}}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{server-interceptors_8js_abfcf92c58234691fbb63592f991d91e5}{default\+Responder}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{server-interceptors_8js_a87fd74f6e74d394cc8617a1f549f399a}{Server\+Intercepting\+Call}} = Server\+Intercepting\+Call
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{server-interceptors_8js_add8a54165c4a04cd0943ab4187fdfd26}{GRPC\+\_\+\+ACCEPT\+\_\+\+ENCODING\+\_\+\+HEADER}} = \textquotesingle{}\mbox{\hyperlink{grpc_8js_a42e9afda263e8798e687bf032e968ff4}{grpc}}-\/accept-\/\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aace6cbf6b92481670f8b8421548f7584}{encoding}}\textquotesingle{}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{server-interceptors_8js_a8fbbb4c5ce9f1eee5ef03568b2f696ca}{GRPC\+\_\+\+ENCODING\+\_\+\+HEADER}} = \textquotesingle{}\mbox{\hyperlink{grpc_8js_a42e9afda263e8798e687bf032e968ff4}{grpc}}-\/\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aace6cbf6b92481670f8b8421548f7584}{encoding}}\textquotesingle{}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{server-interceptors_8js_a66f61659e776674a219352e70d5cfcff}{GRPC\+\_\+\+MESSAGE\+\_\+\+HEADER}} = \textquotesingle{}\mbox{\hyperlink{grpc_8js_a42e9afda263e8798e687bf032e968ff4}{grpc}}-\/\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}\textquotesingle{}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{server-interceptors_8js_a79f7d4b707cb72e4325a69ea386c9f5a}{GRPC\+\_\+\+STATUS\+\_\+\+HEADER}} = \textquotesingle{}\mbox{\hyperlink{grpc_8js_a42e9afda263e8798e687bf032e968ff4}{grpc}}-\/\mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2index_8js_aac9dfada3e10bfb087ebb0a95f284488}{status}}\textquotesingle{}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{server-interceptors_8js_a0b0637cf0d9f4bd87a36e3b743e38647}{GRPC\+\_\+\+TIMEOUT\+\_\+\+HEADER}} = \textquotesingle{}\mbox{\hyperlink{grpc_8js_a42e9afda263e8798e687bf032e968ff4}{grpc}}-\/\mbox{\hyperlink{rxjs_2dist_2cjs_2internal_2operators_2timeout_8js_a56cd1f2498714e800f2da45ee2fd56b7}{timeout}}\textquotesingle{}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{server-interceptors_8js_a96310186432737a8bdf04a6656afb1fd}{DEADLINE\+\_\+\+REGEX}} = /(\textbackslash{}\mbox{\hyperlink{uuid_8min_8js_aeb337d295abaddb5ec3cb34cc2e2bbc9}{d}}\{1,8\})\textbackslash{}\mbox{\hyperlink{ordered-map_8min_8js_ad9a7d92cb87932d25187fdec3ba1b621}{s}}\texorpdfstring{$\ast$}{*}(\mbox{[}HMSmun\mbox{]})/
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{server-interceptors_8js_a9642c575912c9b4b2463ae49b02912b6}{deadline\+Units\+To\+Ms}}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{server-interceptors_8js_a83f5dd405b97cd6f46d2894bb7c355c6}{default\+Compression\+Headers}}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{server-interceptors_8js_a0f819a9684f2c988f8f96107d3333588}{default\+Response\+Headers}}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{server-interceptors_8js_a629d7651966b01e69de7a1872ebc028d}{default\+Response\+Options}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{server-interceptors_8js_ab7934c4b3e634a783c227bddea496403}{Base\+Server\+Intercepting\+Call}} = Base\+Server\+Intercepting\+Call
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{server-interceptors_8js_afc859d1b27b12f9c90a79413c1c2d59d}\index{server-\/interceptors.js@{server-\/interceptors.js}!getServerInterceptingCall@{getServerInterceptingCall}}
+\index{getServerInterceptingCall@{getServerInterceptingCall}!server-\/interceptors.js@{server-\/interceptors.js}}
+\doxysubsubsection{\texorpdfstring{getServerInterceptingCall()}{getServerInterceptingCall()}}
+{\footnotesize\ttfamily \label{server-interceptors_8js_afc859d1b27b12f9c90a79413c1c2d59d} 
+function get\+Server\+Intercepting\+Call (\begin{DoxyParamCaption}\item[{}]{interceptors}{, }\item[{}]{stream}{, }\item[{}]{headers}{, }\item[{}]{call\+Event\+Tracker}{, }\item[{}]{handler}{, }\item[{}]{options}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{server-interceptors_8js_ab7934c4b3e634a783c227bddea496403}{Base\+Server\+Intercepting\+Call}}, \mbox{\hyperlink{hasown_2index_8js_af41b23e59e21fbbca9175e1dbd07b54e}{call}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7f2cb2fcdd79bf72cefd29b7bc2d10fa}{headers}}, \mbox{\hyperlink{cjs_2src_2bucket_8js_a1fdc7709faf62dce60620fb3f9d3453c}{path}}, and \mbox{\hyperlink{debug_2src_2node_8js_a822bf74d422c61e6caa292f739dc4786}{stream}}.
+
+\Hypertarget{server-interceptors_8js_a95643a7532f48106266184279e7b0094}\index{server-\/interceptors.js@{server-\/interceptors.js}!isInterceptingServerListener@{isInterceptingServerListener}}
+\index{isInterceptingServerListener@{isInterceptingServerListener}!server-\/interceptors.js@{server-\/interceptors.js}}
+\doxysubsubsection{\texorpdfstring{isInterceptingServerListener()}{isInterceptingServerListener()}}
+{\footnotesize\ttfamily \label{server-interceptors_8js_a95643a7532f48106266184279e7b0094} 
+function is\+Intercepting\+Server\+Listener (\begin{DoxyParamCaption}\item[{}]{listener}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}.
+
+\Hypertarget{server-interceptors_8js_ada041a6e07968cb36abb81fb6d535760}\index{server-\/interceptors.js@{server-\/interceptors.js}!trace@{trace}}
+\index{trace@{trace}!server-\/interceptors.js@{server-\/interceptors.js}}
+\doxysubsubsection{\texorpdfstring{trace()}{trace()}}
+{\footnotesize\ttfamily \label{server-interceptors_8js_ada041a6e07968cb36abb81fb6d535760} 
+function trace (\begin{DoxyParamCaption}\item[{}]{text}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{server-interceptors_8js_ad33cb6840349d3bc93f4fe9de15a6f8f}{constants\+\_\+1}}, \mbox{\hyperlink{server-interceptors_8js_ab53afa7b9c9aef77e950713c8b54c98c}{logging}}, \mbox{\hyperlink{node-forge_2lib_2util_8js_ab492f69e70933f85fe6b3a8808d19852}{text}}, and \mbox{\hyperlink{server-interceptors_8js_a4d771a845df73d12433ddcb6b91f8b9a}{TRACER\+\_\+\+NAME}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{server-interceptors_8js_ab7934c4b3e634a783c227bddea496403}\index{server-\/interceptors.js@{server-\/interceptors.js}!BaseServerInterceptingCall@{BaseServerInterceptingCall}}
+\index{BaseServerInterceptingCall@{BaseServerInterceptingCall}!server-\/interceptors.js@{server-\/interceptors.js}}
+\doxysubsubsection{\texorpdfstring{BaseServerInterceptingCall}{BaseServerInterceptingCall}}
+{\footnotesize\ttfamily \label{server-interceptors_8js_ab7934c4b3e634a783c227bddea496403} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} Base\+Server\+Intercepting\+Call = Base\+Server\+Intercepting\+Call}
+
+\Hypertarget{server-interceptors_8js_ad33cb6840349d3bc93f4fe9de15a6f8f}\index{server-\/interceptors.js@{server-\/interceptors.js}!constants\_1@{constants\_1}}
+\index{constants\_1@{constants\_1}!server-\/interceptors.js@{server-\/interceptors.js}}
+\doxysubsubsection{\texorpdfstring{constants\_1}{constants\_1}}
+{\footnotesize\ttfamily \label{server-interceptors_8js_ad33cb6840349d3bc93f4fe9de15a6f8f} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} constants\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./constants"{})}
+
+\Hypertarget{server-interceptors_8js_a96310186432737a8bdf04a6656afb1fd}\index{server-\/interceptors.js@{server-\/interceptors.js}!DEADLINE\_REGEX@{DEADLINE\_REGEX}}
+\index{DEADLINE\_REGEX@{DEADLINE\_REGEX}!server-\/interceptors.js@{server-\/interceptors.js}}
+\doxysubsubsection{\texorpdfstring{DEADLINE\_REGEX}{DEADLINE\_REGEX}}
+{\footnotesize\ttfamily \label{server-interceptors_8js_a96310186432737a8bdf04a6656afb1fd} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} DEADLINE\+\_\+\+REGEX = /(\textbackslash{}\mbox{\hyperlink{uuid_8min_8js_aeb337d295abaddb5ec3cb34cc2e2bbc9}{d}}\{1,8\})\textbackslash{}\mbox{\hyperlink{ordered-map_8min_8js_ad9a7d92cb87932d25187fdec3ba1b621}{s}}\texorpdfstring{$\ast$}{*}(\mbox{[}HMSmun\mbox{]})/}
+
+\Hypertarget{server-interceptors_8js_a9642c575912c9b4b2463ae49b02912b6}\index{server-\/interceptors.js@{server-\/interceptors.js}!deadlineUnitsToMs@{deadlineUnitsToMs}}
+\index{deadlineUnitsToMs@{deadlineUnitsToMs}!server-\/interceptors.js@{server-\/interceptors.js}}
+\doxysubsubsection{\texorpdfstring{deadlineUnitsToMs}{deadlineUnitsToMs}}
+{\footnotesize\ttfamily \label{server-interceptors_8js_a9642c575912c9b4b2463ae49b02912b6} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} deadline\+Units\+To\+Ms}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \ \ H:\ 3600000,}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{ordered-map_8min_8js_af33e4fb80081524297d84c89540aeaca}{M}}:\ 60000,}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{ordered-map_8min_8js_ace93fde0b0c98b9d4b9c0bf2627a1374}{S}}:\ 1000,}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{agent-base_2node__modules_2ms_2index_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m}}:\ 1,}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{uuidv5_8min_8js_a36cbe5f9ac6b49b08930abff15443ab0}{u}}:\ 0.001,}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}:\ 0.000001,}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{server-interceptors_8js_a83f5dd405b97cd6f46d2894bb7c355c6}\index{server-\/interceptors.js@{server-\/interceptors.js}!defaultCompressionHeaders@{defaultCompressionHeaders}}
+\index{defaultCompressionHeaders@{defaultCompressionHeaders}!server-\/interceptors.js@{server-\/interceptors.js}}
+\doxysubsubsection{\texorpdfstring{defaultCompressionHeaders}{defaultCompressionHeaders}}
+{\footnotesize\ttfamily \label{server-interceptors_8js_a83f5dd405b97cd6f46d2894bb7c355c6} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} default\+Compression\+Headers}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ [\mbox{\hyperlink{server-interceptors_8js_add8a54165c4a04cd0943ab4187fdfd26}{GRPC\_ACCEPT\_ENCODING\_HEADER}}]:\ \textcolor{stringliteral}{'identity,deflate,gzip'},}
+\DoxyCodeLine{\ \ \ \ [\mbox{\hyperlink{server-interceptors_8js_a8fbbb4c5ce9f1eee5ef03568b2f696ca}{GRPC\_ENCODING\_HEADER}}]:\ \textcolor{stringliteral}{'identity'},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{server-interceptors_8js_abfcf92c58234691fbb63592f991d91e5}\index{server-\/interceptors.js@{server-\/interceptors.js}!defaultResponder@{defaultResponder}}
+\index{defaultResponder@{defaultResponder}!server-\/interceptors.js@{server-\/interceptors.js}}
+\doxysubsubsection{\texorpdfstring{defaultResponder}{defaultResponder}}
+{\footnotesize\ttfamily \label{server-interceptors_8js_abfcf92c58234691fbb63592f991d91e5} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} default\+Responder}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{cipher_8js_a1960adf42cbf8c24067b45da3a2f0aaf}{start}}:\ \mbox{\hyperlink{protobufjs_2dist_2protobuf_8js_adc8497f1b8fa9c7bee4a53c25c244a66}{next}}\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{protobufjs_2dist_2protobuf_8js_adc8497f1b8fa9c7bee4a53c25c244a66}{next}}();}
+\DoxyCodeLine{\ \ \ \ \},}
+\DoxyCodeLine{\ \ \ \ sendMetadata:\ (metadata,\ \mbox{\hyperlink{protobufjs_2dist_2protobuf_8js_adc8497f1b8fa9c7bee4a53c25c244a66}{next}})\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{protobufjs_2dist_2protobuf_8js_adc8497f1b8fa9c7bee4a53c25c244a66}{next}}(metadata);}
+\DoxyCodeLine{\ \ \ \ \},}
+\DoxyCodeLine{\ \ \ \ sendMessage:\ (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}},\ \mbox{\hyperlink{protobufjs_2dist_2protobuf_8js_adc8497f1b8fa9c7bee4a53c25c244a66}{next}})\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{protobufjs_2dist_2protobuf_8js_adc8497f1b8fa9c7bee4a53c25c244a66}{next}}(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}});}
+\DoxyCodeLine{\ \ \ \ \},}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{response_8js_a48eb47c20281112f798efcf6dd189e9e}{sendStatus}}:\ (\mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2index_8js_aac9dfada3e10bfb087ebb0a95f284488}{status}},\ \mbox{\hyperlink{protobufjs_2dist_2protobuf_8js_adc8497f1b8fa9c7bee4a53c25c244a66}{next}})\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{protobufjs_2dist_2protobuf_8js_adc8497f1b8fa9c7bee4a53c25c244a66}{next}}(\mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2index_8js_aac9dfada3e10bfb087ebb0a95f284488}{status}});}
+\DoxyCodeLine{\ \ \ \ \},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{server-interceptors_8js_a0f819a9684f2c988f8f96107d3333588}\index{server-\/interceptors.js@{server-\/interceptors.js}!defaultResponseHeaders@{defaultResponseHeaders}}
+\index{defaultResponseHeaders@{defaultResponseHeaders}!server-\/interceptors.js@{server-\/interceptors.js}}
+\doxysubsubsection{\texorpdfstring{defaultResponseHeaders}{defaultResponseHeaders}}
+{\footnotesize\ttfamily \label{server-interceptors_8js_a0f819a9684f2c988f8f96107d3333588} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} default\+Response\+Headers}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \ \ [\mbox{\hyperlink{server-interceptors_8js_a41a25b54de72b0be6fc52792a59af64c}{http2}}.constants.HTTP2\_HEADER\_STATUS]:\ \mbox{\hyperlink{server-interceptors_8js_a41a25b54de72b0be6fc52792a59af64c}{http2}}.constants.HTTP\_STATUS\_OK,}
+\DoxyCodeLine{\ \ \ \ [\mbox{\hyperlink{server-interceptors_8js_a41a25b54de72b0be6fc52792a59af64c}{http2}}.constants.HTTP2\_HEADER\_CONTENT\_TYPE]:\ \textcolor{stringliteral}{'application/grpc+proto'},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{server-interceptors_8js_a629d7651966b01e69de7a1872ebc028d}\index{server-\/interceptors.js@{server-\/interceptors.js}!defaultResponseOptions@{defaultResponseOptions}}
+\index{defaultResponseOptions@{defaultResponseOptions}!server-\/interceptors.js@{server-\/interceptors.js}}
+\doxysubsubsection{\texorpdfstring{defaultResponseOptions}{defaultResponseOptions}}
+{\footnotesize\ttfamily \label{server-interceptors_8js_a629d7651966b01e69de7a1872ebc028d} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} default\+Response\+Options}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \ \ waitForTrailers:\ \textcolor{keyword}{true},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{server-interceptors_8js_a1379a89f32fd619319cecf64a7633b73}\index{server-\/interceptors.js@{server-\/interceptors.js}!defaultServerListener@{defaultServerListener}}
+\index{defaultServerListener@{defaultServerListener}!server-\/interceptors.js@{server-\/interceptors.js}}
+\doxysubsubsection{\texorpdfstring{defaultServerListener}{defaultServerListener}}
+{\footnotesize\ttfamily \label{server-interceptors_8js_a1379a89f32fd619319cecf64a7633b73} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} default\+Server\+Listener}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \ \ onReceiveMetadata:\ (metadata,\ \mbox{\hyperlink{protobufjs_2dist_2protobuf_8js_adc8497f1b8fa9c7bee4a53c25c244a66}{next}})\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{protobufjs_2dist_2protobuf_8js_adc8497f1b8fa9c7bee4a53c25c244a66}{next}}(metadata);}
+\DoxyCodeLine{\ \ \ \ \},}
+\DoxyCodeLine{\ \ \ \ onReceiveMessage:\ (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}},\ \mbox{\hyperlink{protobufjs_2dist_2protobuf_8js_adc8497f1b8fa9c7bee4a53c25c244a66}{next}})\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{protobufjs_2dist_2protobuf_8js_adc8497f1b8fa9c7bee4a53c25c244a66}{next}}(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}});}
+\DoxyCodeLine{\ \ \ \ \},}
+\DoxyCodeLine{\ \ \ \ onReceiveHalfClose:\ \mbox{\hyperlink{protobufjs_2dist_2protobuf_8js_adc8497f1b8fa9c7bee4a53c25c244a66}{next}}\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{protobufjs_2dist_2protobuf_8js_adc8497f1b8fa9c7bee4a53c25c244a66}{next}}();}
+\DoxyCodeLine{\ \ \ \ \},}
+\DoxyCodeLine{\ \ \ \ onCancel:\ ()\ =>\ \{\ \},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{server-interceptors_8js_af1a99a3ff1a35c114bdd06cc7252beb6}\index{server-\/interceptors.js@{server-\/interceptors.js}!error\_1@{error\_1}}
+\index{error\_1@{error\_1}!server-\/interceptors.js@{server-\/interceptors.js}}
+\doxysubsubsection{\texorpdfstring{error\_1}{error\_1}}
+{\footnotesize\ttfamily \label{server-interceptors_8js_af1a99a3ff1a35c114bdd06cc7252beb6} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} error\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./error"{})}
+
+\Hypertarget{server-interceptors_8js_a7241411e3eada38e9b12f56f3ed816eb}\index{server-\/interceptors.js@{server-\/interceptors.js}!getServerInterceptingCall@{getServerInterceptingCall}}
+\index{getServerInterceptingCall@{getServerInterceptingCall}!server-\/interceptors.js@{server-\/interceptors.js}}
+\doxysubsubsection{\texorpdfstring{getServerInterceptingCall}{getServerInterceptingCall}}
+{\footnotesize\ttfamily \label{server-interceptors_8js_a7241411e3eada38e9b12f56f3ed816eb} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} get\+Server\+Intercepting\+Call = exports.\+Base\+Server\+Intercepting\+Call = exports.\+Server\+Intercepting\+Call = exports.\+Responder\+Builder = \mbox{\hyperlink{server-interceptors_8js_ab1a2f89e1f1185509acd932638f4f83d}{exports.\+is\+Intercepting\+Server\+Listener}} = exports.\+Server\+Listener\+Builder = void 0}
+
+\Hypertarget{server-interceptors_8js_add8a54165c4a04cd0943ab4187fdfd26}\index{server-\/interceptors.js@{server-\/interceptors.js}!GRPC\_ACCEPT\_ENCODING\_HEADER@{GRPC\_ACCEPT\_ENCODING\_HEADER}}
+\index{GRPC\_ACCEPT\_ENCODING\_HEADER@{GRPC\_ACCEPT\_ENCODING\_HEADER}!server-\/interceptors.js@{server-\/interceptors.js}}
+\doxysubsubsection{\texorpdfstring{GRPC\_ACCEPT\_ENCODING\_HEADER}{GRPC\_ACCEPT\_ENCODING\_HEADER}}
+{\footnotesize\ttfamily \label{server-interceptors_8js_add8a54165c4a04cd0943ab4187fdfd26} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} GRPC\+\_\+\+ACCEPT\+\_\+\+ENCODING\+\_\+\+HEADER = \textquotesingle{}\mbox{\hyperlink{grpc_8js_a42e9afda263e8798e687bf032e968ff4}{grpc}}-\/accept-\/\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aace6cbf6b92481670f8b8421548f7584}{encoding}}\textquotesingle{}}
+
+\Hypertarget{server-interceptors_8js_a8fbbb4c5ce9f1eee5ef03568b2f696ca}\index{server-\/interceptors.js@{server-\/interceptors.js}!GRPC\_ENCODING\_HEADER@{GRPC\_ENCODING\_HEADER}}
+\index{GRPC\_ENCODING\_HEADER@{GRPC\_ENCODING\_HEADER}!server-\/interceptors.js@{server-\/interceptors.js}}
+\doxysubsubsection{\texorpdfstring{GRPC\_ENCODING\_HEADER}{GRPC\_ENCODING\_HEADER}}
+{\footnotesize\ttfamily \label{server-interceptors_8js_a8fbbb4c5ce9f1eee5ef03568b2f696ca} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} GRPC\+\_\+\+ENCODING\+\_\+\+HEADER = \textquotesingle{}\mbox{\hyperlink{grpc_8js_a42e9afda263e8798e687bf032e968ff4}{grpc}}-\/\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aace6cbf6b92481670f8b8421548f7584}{encoding}}\textquotesingle{}}
+
+\Hypertarget{server-interceptors_8js_a66f61659e776674a219352e70d5cfcff}\index{server-\/interceptors.js@{server-\/interceptors.js}!GRPC\_MESSAGE\_HEADER@{GRPC\_MESSAGE\_HEADER}}
+\index{GRPC\_MESSAGE\_HEADER@{GRPC\_MESSAGE\_HEADER}!server-\/interceptors.js@{server-\/interceptors.js}}
+\doxysubsubsection{\texorpdfstring{GRPC\_MESSAGE\_HEADER}{GRPC\_MESSAGE\_HEADER}}
+{\footnotesize\ttfamily \label{server-interceptors_8js_a66f61659e776674a219352e70d5cfcff} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} GRPC\+\_\+\+MESSAGE\+\_\+\+HEADER = \textquotesingle{}\mbox{\hyperlink{grpc_8js_a42e9afda263e8798e687bf032e968ff4}{grpc}}-\/\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}\textquotesingle{}}
+
+\Hypertarget{server-interceptors_8js_a79f7d4b707cb72e4325a69ea386c9f5a}\index{server-\/interceptors.js@{server-\/interceptors.js}!GRPC\_STATUS\_HEADER@{GRPC\_STATUS\_HEADER}}
+\index{GRPC\_STATUS\_HEADER@{GRPC\_STATUS\_HEADER}!server-\/interceptors.js@{server-\/interceptors.js}}
+\doxysubsubsection{\texorpdfstring{GRPC\_STATUS\_HEADER}{GRPC\_STATUS\_HEADER}}
+{\footnotesize\ttfamily \label{server-interceptors_8js_a79f7d4b707cb72e4325a69ea386c9f5a} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} GRPC\+\_\+\+STATUS\+\_\+\+HEADER = \textquotesingle{}\mbox{\hyperlink{grpc_8js_a42e9afda263e8798e687bf032e968ff4}{grpc}}-\/\mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2index_8js_aac9dfada3e10bfb087ebb0a95f284488}{status}}\textquotesingle{}}
+
+\Hypertarget{server-interceptors_8js_a0b0637cf0d9f4bd87a36e3b743e38647}\index{server-\/interceptors.js@{server-\/interceptors.js}!GRPC\_TIMEOUT\_HEADER@{GRPC\_TIMEOUT\_HEADER}}
+\index{GRPC\_TIMEOUT\_HEADER@{GRPC\_TIMEOUT\_HEADER}!server-\/interceptors.js@{server-\/interceptors.js}}
+\doxysubsubsection{\texorpdfstring{GRPC\_TIMEOUT\_HEADER}{GRPC\_TIMEOUT\_HEADER}}
+{\footnotesize\ttfamily \label{server-interceptors_8js_a0b0637cf0d9f4bd87a36e3b743e38647} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} GRPC\+\_\+\+TIMEOUT\+\_\+\+HEADER = \textquotesingle{}\mbox{\hyperlink{grpc_8js_a42e9afda263e8798e687bf032e968ff4}{grpc}}-\/\mbox{\hyperlink{rxjs_2dist_2cjs_2internal_2operators_2timeout_8js_a56cd1f2498714e800f2da45ee2fd56b7}{timeout}}\textquotesingle{}}
+
+\Hypertarget{server-interceptors_8js_a41a25b54de72b0be6fc52792a59af64c}\index{server-\/interceptors.js@{server-\/interceptors.js}!http2@{http2}}
+\index{http2@{http2}!server-\/interceptors.js@{server-\/interceptors.js}}
+\doxysubsubsection{\texorpdfstring{http2}{http2}}
+{\footnotesize\ttfamily \label{server-interceptors_8js_a41a25b54de72b0be6fc52792a59af64c} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} http2 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}http2"{})}
+
+\Hypertarget{server-interceptors_8js_ab1a2f89e1f1185509acd932638f4f83d}\index{server-\/interceptors.js@{server-\/interceptors.js}!isInterceptingServerListener@{isInterceptingServerListener}}
+\index{isInterceptingServerListener@{isInterceptingServerListener}!server-\/interceptors.js@{server-\/interceptors.js}}
+\doxysubsubsection{\texorpdfstring{isInterceptingServerListener}{isInterceptingServerListener}}
+{\footnotesize\ttfamily \label{server-interceptors_8js_ab1a2f89e1f1185509acd932638f4f83d} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} is\+Intercepting\+Server\+Listener = is\+Intercepting\+Server\+Listener}
+
+\Hypertarget{server-interceptors_8js_ab53afa7b9c9aef77e950713c8b54c98c}\index{server-\/interceptors.js@{server-\/interceptors.js}!logging@{logging}}
+\index{logging@{logging}!server-\/interceptors.js@{server-\/interceptors.js}}
+\doxysubsubsection{\texorpdfstring{logging}{logging}}
+{\footnotesize\ttfamily \label{server-interceptors_8js_ab53afa7b9c9aef77e950713c8b54c98c} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} logging = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./logging"{})}
+
+\Hypertarget{server-interceptors_8js_a7ccaf64b99eed08557e09f7f79748878}\index{server-\/interceptors.js@{server-\/interceptors.js}!metadata\_1@{metadata\_1}}
+\index{metadata\_1@{metadata\_1}!server-\/interceptors.js@{server-\/interceptors.js}}
+\doxysubsubsection{\texorpdfstring{metadata\_1}{metadata\_1}}
+{\footnotesize\ttfamily \label{server-interceptors_8js_a7ccaf64b99eed08557e09f7f79748878} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} metadata\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./metadata"{})}
+
+\Hypertarget{server-interceptors_8js_a79bcb71e1ebf83c5ff2c3dc95ce1a1bf}\index{server-\/interceptors.js@{server-\/interceptors.js}!ResponderBuilder@{ResponderBuilder}}
+\index{ResponderBuilder@{ResponderBuilder}!server-\/interceptors.js@{server-\/interceptors.js}}
+\doxysubsubsection{\texorpdfstring{ResponderBuilder}{ResponderBuilder}}
+{\footnotesize\ttfamily \label{server-interceptors_8js_a79bcb71e1ebf83c5ff2c3dc95ce1a1bf} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} Responder\+Builder = Responder\+Builder}
+
+\Hypertarget{server-interceptors_8js_a87fd74f6e74d394cc8617a1f549f399a}\index{server-\/interceptors.js@{server-\/interceptors.js}!ServerInterceptingCall@{ServerInterceptingCall}}
+\index{ServerInterceptingCall@{ServerInterceptingCall}!server-\/interceptors.js@{server-\/interceptors.js}}
+\doxysubsubsection{\texorpdfstring{ServerInterceptingCall}{ServerInterceptingCall}}
+{\footnotesize\ttfamily \label{server-interceptors_8js_a87fd74f6e74d394cc8617a1f549f399a} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} Server\+Intercepting\+Call = Server\+Intercepting\+Call}
+
+\Hypertarget{server-interceptors_8js_a260f5bd148e6f6d55f76302963fd7ed0}\index{server-\/interceptors.js@{server-\/interceptors.js}!ServerListenerBuilder@{ServerListenerBuilder}}
+\index{ServerListenerBuilder@{ServerListenerBuilder}!server-\/interceptors.js@{server-\/interceptors.js}}
+\doxysubsubsection{\texorpdfstring{ServerListenerBuilder}{ServerListenerBuilder}}
+{\footnotesize\ttfamily \label{server-interceptors_8js_a260f5bd148e6f6d55f76302963fd7ed0} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} Server\+Listener\+Builder = Server\+Listener\+Builder}
+
+\Hypertarget{server-interceptors_8js_a75183069d786e5fe57ab0fd5206813ce}\index{server-\/interceptors.js@{server-\/interceptors.js}!stream\_decoder\_1@{stream\_decoder\_1}}
+\index{stream\_decoder\_1@{stream\_decoder\_1}!server-\/interceptors.js@{server-\/interceptors.js}}
+\doxysubsubsection{\texorpdfstring{stream\_decoder\_1}{stream\_decoder\_1}}
+{\footnotesize\ttfamily \label{server-interceptors_8js_a75183069d786e5fe57ab0fd5206813ce} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} stream\+\_\+decoder\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./stream-\/decoder"{})}
+
+\Hypertarget{server-interceptors_8js_ae2475e10618961c050dcba04e8c42331}\index{server-\/interceptors.js@{server-\/interceptors.js}!strict@{strict}}
+\index{strict@{strict}!server-\/interceptors.js@{server-\/interceptors.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{server-interceptors_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+
+\Hypertarget{server-interceptors_8js_a4d771a845df73d12433ddcb6b91f8b9a}\index{server-\/interceptors.js@{server-\/interceptors.js}!TRACER\_NAME@{TRACER\_NAME}}
+\index{TRACER\_NAME@{TRACER\_NAME}!server-\/interceptors.js@{server-\/interceptors.js}}
+\doxysubsubsection{\texorpdfstring{TRACER\_NAME}{TRACER\_NAME}}
+{\footnotesize\ttfamily \label{server-interceptors_8js_a4d771a845df73d12433ddcb6b91f8b9a} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} TRACER\+\_\+\+NAME = \textquotesingle{}server\+\_\+call\textquotesingle{}}
+
+\Hypertarget{server-interceptors_8js_a27ccbb53720cd053c6ced7d851a6992e}\index{server-\/interceptors.js@{server-\/interceptors.js}!zlib@{zlib}}
+\index{zlib@{zlib}!server-\/interceptors.js@{server-\/interceptors.js}}
+\doxysubsubsection{\texorpdfstring{zlib}{zlib}}
+{\footnotesize\ttfamily \label{server-interceptors_8js_a27ccbb53720cd053c6ced7d851a6992e} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} zlib = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}zlib"{})}
+

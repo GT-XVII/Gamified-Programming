@@ -1,0 +1,31 @@
+\doxysection{/\+Users/nicoletiokhin/\+Desktop/\+Software Semester 3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/lodash/is\+Match\+With.\+js}
+\hypertarget{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_e65ffb4ea4f9a9858b2dfee4f0ccd38b}{}\label{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_e65ffb4ea4f9a9858b2dfee4f0ccd38b}This method is like {\ttfamily \+\_\+.\+is\+Match} except that it accepts {\ttfamily customizer} which is invoked to compare values. If {\ttfamily customizer} returns {\ttfamily undefined}, comparisons are handled by the method instead. The {\ttfamily customizer} is invoked with five arguments\+: (obj\+Value, src\+Value, index\texorpdfstring{$\vert$}{|}key, object, source).
+
+@member\+Of \+\_\+ \begin{DoxySince}{Since}
+4.\+0.\+0
+\end{DoxySince}
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Object\}} & object The object to inspect. \\
+\hline
+{\em \{\+Object\}} & source The object of property values to match. \\
+\hline
+{\em \{\+Function\}} & \mbox{[}customizer\mbox{]} The function to customize comparisons. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{boolean\} Returns {\ttfamily true} if {\ttfamily object} is a match, else {\ttfamily false}.
+\end{DoxyReturn}
+function is\+Greeting(value) \{ return /\texorpdfstring{$^\wedge$}{\string^}h(?\+:i\texorpdfstring{$\vert$}{|}ello)\$/.\doxylink{_0dprotobufjs_2base64_2index_8js_a1bb461d3256d1734f13dd702ef79aa31}{test(value)}; \}
+
+function customizer(obj\+Value, src\+Value) \{ if (is\+Greeting(obj\+Value) \&\& is\+Greeting(src\+Value)) \{ return true; \} \}
+
+var object = \{ \textquotesingle{}greeting\textquotesingle{}\+: \textquotesingle{}hello\textquotesingle{} \}; var source = \{ \textquotesingle{}greeting\textquotesingle{}\+: \textquotesingle{}hi\textquotesingle{} \};
+
+\+\_\+.\+is\+Match\+With(object, source, customizer); // =\texorpdfstring{$>$}{>} true
+
+
+\begin{DoxyCodeInclude}{0}
+
+\end{DoxyCodeInclude}
+ Semester \doxylink{is_match_with_8js}{3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/lodash/is\+Match\+With.\+js} 

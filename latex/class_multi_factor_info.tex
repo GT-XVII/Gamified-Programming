@@ -1,0 +1,133 @@
+\doxysection{Multi\+Factor\+Info Class Reference}
+\hypertarget{class_multi_factor_info}{}\label{class_multi_factor_info}\index{MultiFactorInfo@{MultiFactorInfo}}
+
+
+Inheritance diagram for Multi\+Factor\+Info\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{class_multi_factor_info__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Multi\+Factor\+Info\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{class_multi_factor_info__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_multi_factor_info_aa0bf918ac7e60698ce162c834236ce4f}{constructor}} (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ac70ac40ef8199c59316b35022dd21914}{response}})
+\item 
+\mbox{\hyperlink{class_multi_factor_info_abd1dc4fe8ce3fa8e9ce41c397d00b5fc}{to\+JSON}} ()
+\item 
+\mbox{\hyperlink{class_multi_factor_info_aff6accdb471022bb215d27a3336e1dc6}{init\+From\+Server\+Response}} (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ac70ac40ef8199c59316b35022dd21914}{response}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_multi_factor_info_a2d94dfef32be59b8e75de79aa38d4972}{init\+Multi\+Factor\+Info}} (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ac70ac40ef8199c59316b35022dd21914}{response}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface representing the common properties of a user-\/enrolled second factor. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_multi_factor_info_aa0bf918ac7e60698ce162c834236ce4f}\index{MultiFactorInfo@{MultiFactorInfo}!constructor@{constructor}}
+\index{constructor@{constructor}!MultiFactorInfo@{MultiFactorInfo}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_multi_factor_info_aa0bf918ac7e60698ce162c834236ce4f} 
+Multi\+Factor\+Info\+::constructor (\begin{DoxyParamCaption}\item[{}]{response}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Initializes the \doxylink{class_multi_factor_info}{Multi\+Factor\+Info} object using the server side response.
+
+
+\begin{DoxyParams}{Parameters}
+{\em response} & -\/ The server side response. @constructor \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{class_multi_factor_info_aff6accdb471022bb215d27a3336e1dc6}{init\+From\+Server\+Response()}}, and \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ac70ac40ef8199c59316b35022dd21914}{response}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_multi_factor_info_aa0bf918ac7e60698ce162c834236ce4f_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_multi_factor_info_aff6accdb471022bb215d27a3336e1dc6}\index{MultiFactorInfo@{MultiFactorInfo}!initFromServerResponse@{initFromServerResponse}}
+\index{initFromServerResponse@{initFromServerResponse}!MultiFactorInfo@{MultiFactorInfo}}
+\doxysubsubsection{\texorpdfstring{initFromServerResponse()}{initFromServerResponse()}}
+{\footnotesize\ttfamily \label{class_multi_factor_info_aff6accdb471022bb215d27a3336e1dc6} 
+Multi\+Factor\+Info\+::init\+From\+Server\+Response (\begin{DoxyParamCaption}\item[{}]{response}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Initializes the \doxylink{class_multi_factor_info}{Multi\+Factor\+Info} object using the provided server response.
+
+
+\begin{DoxyParams}{Parameters}
+{\em response} & -\/ The server side response. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{user-record_8js_af1a99a3ff1a35c114bdd06cc7252beb6}{error\+\_\+1}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ac70ac40ef8199c59316b35022dd21914}{response}}, and \mbox{\hyperlink{user-record_8js_a022e926a40defc4294368e708a7e2372}{utils}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_multi_factor_info_aff6accdb471022bb215d27a3336e1dc6_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_multi_factor_info_a2d94dfef32be59b8e75de79aa38d4972}\index{MultiFactorInfo@{MultiFactorInfo}!initMultiFactorInfo@{initMultiFactorInfo}}
+\index{initMultiFactorInfo@{initMultiFactorInfo}!MultiFactorInfo@{MultiFactorInfo}}
+\doxysubsubsection{\texorpdfstring{initMultiFactorInfo()}{initMultiFactorInfo()}}
+{\footnotesize\ttfamily \label{class_multi_factor_info_a2d94dfef32be59b8e75de79aa38d4972} 
+static Multi\+Factor\+Info\+::init\+Multi\+Factor\+Info (\begin{DoxyParamCaption}\item[{}]{response}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Initializes the \doxylink{class_multi_factor_info}{Multi\+Factor\+Info} associated subclass using the server side. If no \doxylink{class_multi_factor_info}{Multi\+Factor\+Info} is associated with the response, null is returned.
+
+
+\begin{DoxyParams}{Parameters}
+{\em response} & -\/ The server side response. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{firestore__admin__v1__proto__api_8js_a08a4415e9d594ff960030b921d42b91e}{e}}, \mbox{\hyperlink{user-record_8js_aceb83adc2b266288acb433ebaaab4b49}{Phone\+Multi\+Factor\+Info}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ac70ac40ef8199c59316b35022dd21914}{response}}, \mbox{\hyperlink{user-record_8js_ac2e59ad90859e9887f34ae94d7490a61}{Totp\+Multi\+Factor\+Info}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{class_multi_factor_info_a2d94dfef32be59b8e75de79aa38d4972_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_multi_factor_info_abd1dc4fe8ce3fa8e9ce41c397d00b5fc}\index{MultiFactorInfo@{MultiFactorInfo}!toJSON@{toJSON}}
+\index{toJSON@{toJSON}!MultiFactorInfo@{MultiFactorInfo}}
+\doxysubsubsection{\texorpdfstring{toJSON()}{toJSON()}}
+{\footnotesize\ttfamily \label{class_multi_factor_info_abd1dc4fe8ce3fa8e9ce41c397d00b5fc} 
+Multi\+Factor\+Info\+::to\+JSON (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a JSON-\/serializable representation of this object.
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_a}{A} JSON-\/serializable representation of this object. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/firebase-\/admin/lib/auth/\mbox{\hyperlink{user-record_8js}{user-\/record.\+js}}\end{DoxyCompactItemize}

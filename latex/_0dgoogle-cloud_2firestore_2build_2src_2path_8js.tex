@@ -1,0 +1,177 @@
+\doxysection{backend/node\+\_\+modules/@google-\/cloud/firestore/build/src/path.js File Reference}
+\hypertarget{_0dgoogle-cloud_2firestore_2build_2src_2path_8js}{}\label{_0dgoogle-cloud_2firestore_2build_2src_2path_8js}\index{backend/node\_modules/"@google-\/cloud/firestore/build/src/path.js@{backend/node\_modules/"@google-\/cloud/firestore/build/src/path.js}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_path}{Path}}
+\item 
+class \mbox{\hyperlink{class_resource_path}{Resource\+Path}}
+\item 
+class \mbox{\hyperlink{class_qualified_resource_path}{Qualified\+Resource\+Path}}
+\item 
+class \mbox{\hyperlink{class_field_path}{Field\+Path}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2path_8js_a5449d20dae35a29627a769ff2995d3c8}{validate\+Resource\+Path}} (arg, resource\+Path)
+\item 
+function \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2path_8js_a9144e0f54f2113679baf6a9253d2cc52}{validate\+Field\+Path}} (arg, field\+Path)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2path_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2path_8js_ad893056bb306a76a3a563f5344a0fac0}{Field\+Path}} = exports.\+Qualified\+Resource\+Path = exports.\+Resource\+Path = \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2path_8js_a4c7996752eb5e5cea4dbc8308a2341c4}{exports.\+DEFAULT\+\_\+\+DATABASE\+\_\+\+ID}} = void 0
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2path_8js_a1315589712c25720e77d153ab7b69762}{validate\+Resource\+Path}} = validate\+Resource\+Path
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2path_8js_a83e13ee50063efb049461460bd9c3482}{validate\+Field\+Path}} = validate\+Field\+Path
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2path_8js_a6af3fa6e24c6a46faf4552f3a2ad8783}{util\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./util"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2path_8js_aa37716c5385ffbe958d12dba0dab85f8}{validate\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./validate"{})
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2path_8js_a4c7996752eb5e5cea4dbc8308a2341c4}{DEFAULT\+\_\+\+DATABASE\+\_\+\+ID}} = \textquotesingle{}(\mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2index_8js_a48acd3189d40b017f47c93b673b8b8f6}{default}})\textquotesingle{}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2path_8js_a2f31c992b4b7b4994903f76b29313c3a}{RESOURCE\+\_\+\+PATH\+\_\+\+RE}}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2path_8js_a5b049752da8a7aa1005cfdc37638c084}{UNESCAPED\+\_\+\+FIELD\+\_\+\+NAME\+\_\+\+RE}} = /\texorpdfstring{$^\wedge$}{\string^}\mbox{[}\mbox{\hyperlink{logger_2dist_2esm_2index_8esm5_8js_a0adf123df8967a14b5bdd9ff3bbe2d0c}{\+\_\+a}}-\/zA-\/\mbox{\hyperlink{ed25519_8js_a91b180d4aa37a81e516896ad77d1837c}{Z}}\mbox{]}\mbox{[}\mbox{\hyperlink{logger_2dist_2esm_2index_8esm5_8js_a0adf123df8967a14b5bdd9ff3bbe2d0c}{\+\_\+a}}-\/zA-\/Z0-\/9\mbox{]}\texorpdfstring{$\ast$}{*}\$/
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2path_8js_a574ecf4bbe6c08af3ab48101b654001d}{FIELD\+\_\+\+PATH\+\_\+\+RE}} = /\texorpdfstring{$^\wedge$}{\string^}\mbox{[}\texorpdfstring{$^\wedge$}{\string^}\texorpdfstring{$\ast$}{*}\texorpdfstring{$\sim$}{\string~}/\mbox{[}\textbackslash{}\mbox{]}\mbox{]}+\$/
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2path_8js_a30f41c6f3dc25df09438d8dc96ce6de6}{Resource\+Path}} = Resource\+Path
+\item 
+\mbox{\hyperlink{class_resource_path}{Resource\+Path}} \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2path_8js_a81772a97b48682ca62e6352138e109af}{EMPTY}} = new \mbox{\hyperlink{class_resource_path}{Resource\+Path}}()
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2path_8js_afd0bb5cbf69ebfd101296cc9a8f11cfb}{Qualified\+Resource\+Path}} = Qualified\+Resource\+Path
+\item 
+\mbox{\hyperlink{class_field_path}{Field\+Path}} \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2path_8js_acbd14e051a7b551cb0877db4a82c8c31}{\+\_\+\+DOCUMENT\+\_\+\+ID}} = new \mbox{\hyperlink{class_field_path}{Field\+Path}}(\textquotesingle{}\+\_\+\+\_\+name\+\_\+\+\_\+\textquotesingle{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_0dgoogle-cloud_2firestore_2build_2src_2path_8js_a9144e0f54f2113679baf6a9253d2cc52}\index{path.js@{path.js}!validateFieldPath@{validateFieldPath}}
+\index{validateFieldPath@{validateFieldPath}!path.js@{path.js}}
+\doxysubsubsection{\texorpdfstring{validateFieldPath()}{validateFieldPath()}}
+{\footnotesize\ttfamily \label{_0dgoogle-cloud_2firestore_2build_2src_2path_8js_a9144e0f54f2113679baf6a9253d2cc52} 
+function validate\+Field\+Path (\begin{DoxyParamCaption}\item[{}]{arg}{, }\item[{}]{field\+Path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Validates that the provided value can be used as a field path argument. 
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2eb0ae9087079e95bc67981f6c61288b}{end}}, \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2path_8js_a574ecf4bbe6c08af3ab48101b654001d}{FIELD\+\_\+\+PATH\+\_\+\+RE}}, \mbox{\hyperlink{long_2index_8js_ad7dc44f0ebdb746f4a5b0612ae9315cb}{not}}, \mbox{\hyperlink{long_2index_8js_a88083640992a53a144223e2bd602d47d}{or}}, \mbox{\hyperlink{cipher_8js_a1960adf42cbf8c24067b45da3a2f0aaf}{start}}, \mbox{\hyperlink{_0dprotobufjs_2base64_2tests_2index_8js_a016175be4adc32f124f4523e1e43b8c2}{strings}}, \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}, \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2path_8js_a6af3fa6e24c6a46faf4552f3a2ad8783}{util\+\_\+1}}, and \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2path_8js_aa37716c5385ffbe958d12dba0dab85f8}{validate\+\_\+1}}.
+
+\Hypertarget{_0dgoogle-cloud_2firestore_2build_2src_2path_8js_a5449d20dae35a29627a769ff2995d3c8}\index{path.js@{path.js}!validateResourcePath@{validateResourcePath}}
+\index{validateResourcePath@{validateResourcePath}!path.js@{path.js}}
+\doxysubsubsection{\texorpdfstring{validateResourcePath()}{validateResourcePath()}}
+{\footnotesize\ttfamily \label{_0dgoogle-cloud_2firestore_2build_2src_2path_8js_a5449d20dae35a29627a769ff2995d3c8} 
+function validate\+Resource\+Path (\begin{DoxyParamCaption}\item[{}]{arg}{, }\item[{}]{resource\+Path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Validates that the given string can be used as a relative or absolute resource path. 
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}, \mbox{\hyperlink{ordered-map_8min_8js_a4bdf3e530f52a4f5162d818b2a88378b}{empty}}, \mbox{\hyperlink{long_2index_8js_ad7dc44f0ebdb746f4a5b0612ae9315cb}{not}}, and \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2path_8js_aa37716c5385ffbe958d12dba0dab85f8}{validate\+\_\+1}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{_0dgoogle-cloud_2firestore_2build_2src_2path_8js_acbd14e051a7b551cb0877db4a82c8c31}\index{path.js@{path.js}!\_DOCUMENT\_ID@{\_DOCUMENT\_ID}}
+\index{\_DOCUMENT\_ID@{\_DOCUMENT\_ID}!path.js@{path.js}}
+\doxysubsubsection{\texorpdfstring{\_DOCUMENT\_ID}{\_DOCUMENT\_ID}}
+{\footnotesize\ttfamily \label{_0dgoogle-cloud_2firestore_2build_2src_2path_8js_acbd14e051a7b551cb0877db4a82c8c31} 
+\mbox{\hyperlink{class_field_path}{Field\+Path}} \+\_\+\+DOCUMENT\+\_\+\+ID = new \mbox{\hyperlink{class_field_path}{Field\+Path}}(\textquotesingle{}\+\_\+\+\_\+name\+\_\+\+\_\+\textquotesingle{})\hspace{0.3cm}{\ttfamily [private]}}
+
+\doxylink{class_a}{A} special sentinel value to refer to the ID of a document. \Hypertarget{_0dgoogle-cloud_2firestore_2build_2src_2path_8js_a4c7996752eb5e5cea4dbc8308a2341c4}\index{path.js@{path.js}!DEFAULT\_DATABASE\_ID@{DEFAULT\_DATABASE\_ID}}
+\index{DEFAULT\_DATABASE\_ID@{DEFAULT\_DATABASE\_ID}!path.js@{path.js}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_DATABASE\_ID}{DEFAULT\_DATABASE\_ID}}
+{\footnotesize\ttfamily \label{_0dgoogle-cloud_2firestore_2build_2src_2path_8js_a4c7996752eb5e5cea4dbc8308a2341c4} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} DEFAULT\+\_\+\+DATABASE\+\_\+\+ID = \textquotesingle{}(\mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2index_8js_a48acd3189d40b017f47c93b673b8b8f6}{default}})\textquotesingle{}}
+
+The default database ID for this \doxylink{class_firestore}{Firestore} client. We do not yet expose the ability to use different databases. \Hypertarget{_0dgoogle-cloud_2firestore_2build_2src_2path_8js_a81772a97b48682ca62e6352138e109af}\index{path.js@{path.js}!EMPTY@{EMPTY}}
+\index{EMPTY@{EMPTY}!path.js@{path.js}}
+\doxysubsubsection{\texorpdfstring{EMPTY}{EMPTY}}
+{\footnotesize\ttfamily \label{_0dgoogle-cloud_2firestore_2build_2src_2path_8js_a81772a97b48682ca62e6352138e109af} 
+\mbox{\hyperlink{class_resource_path}{Resource\+Path}} EMPTY = new \mbox{\hyperlink{class_resource_path}{Resource\+Path}}()\hspace{0.3cm}{\ttfamily [private]}}
+
+\doxylink{class_a}{A} default instance pointing to the root collection. \Hypertarget{_0dgoogle-cloud_2firestore_2build_2src_2path_8js_a574ecf4bbe6c08af3ab48101b654001d}\index{path.js@{path.js}!FIELD\_PATH\_RE@{FIELD\_PATH\_RE}}
+\index{FIELD\_PATH\_RE@{FIELD\_PATH\_RE}!path.js@{path.js}}
+\doxysubsubsection{\texorpdfstring{FIELD\_PATH\_RE}{FIELD\_PATH\_RE}}
+{\footnotesize\ttfamily \label{_0dgoogle-cloud_2firestore_2build_2src_2path_8js_a574ecf4bbe6c08af3ab48101b654001d} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} FIELD\+\_\+\+PATH\+\_\+\+RE = /\texorpdfstring{$^\wedge$}{\string^}\mbox{[}\texorpdfstring{$^\wedge$}{\string^}\texorpdfstring{$\ast$}{*}\texorpdfstring{$\sim$}{\string~}/\mbox{[}\textbackslash{}\mbox{]}\mbox{]}+\$/}
+
+\doxylink{class_a}{A} regular expression to verify field paths that are passed to the API as strings. Field paths that do not match this expression have to be provided as a \mbox{[}\doxylink{class_field_path}{Field\+Path}\mbox{]}{\ttfamily \doxylink{class_field_path}{Field\+Path}} object.
+
+@type \{Reg\+Exp\} \Hypertarget{_0dgoogle-cloud_2firestore_2build_2src_2path_8js_ad893056bb306a76a3a563f5344a0fac0}\index{path.js@{path.js}!FieldPath@{FieldPath}}
+\index{FieldPath@{FieldPath}!path.js@{path.js}}
+\doxysubsubsection{\texorpdfstring{FieldPath}{FieldPath}}
+{\footnotesize\ttfamily \label{_0dgoogle-cloud_2firestore_2build_2src_2path_8js_ad893056bb306a76a3a563f5344a0fac0} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} Field\+Path = exports.\+Qualified\+Resource\+Path = exports.\+Resource\+Path = \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2path_8js_a4c7996752eb5e5cea4dbc8308a2341c4}{exports.\+DEFAULT\+\_\+\+DATABASE\+\_\+\+ID}} = void 0}
+
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_f21b8df37bd372c255bdc069eb95fcd3}{/\+Users/nicoletiokhin/\+Desktop/\+Software Semester 3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/@google-\/cloud/firestore/build/src/path.\+js}}.\end{Desc}
+\Hypertarget{_0dgoogle-cloud_2firestore_2build_2src_2path_8js_afd0bb5cbf69ebfd101296cc9a8f11cfb}\index{path.js@{path.js}!QualifiedResourcePath@{QualifiedResourcePath}}
+\index{QualifiedResourcePath@{QualifiedResourcePath}!path.js@{path.js}}
+\doxysubsubsection{\texorpdfstring{QualifiedResourcePath}{QualifiedResourcePath}}
+{\footnotesize\ttfamily \label{_0dgoogle-cloud_2firestore_2build_2src_2path_8js_afd0bb5cbf69ebfd101296cc9a8f11cfb} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} Qualified\+Resource\+Path = Qualified\+Resource\+Path}
+
+\Hypertarget{_0dgoogle-cloud_2firestore_2build_2src_2path_8js_a2f31c992b4b7b4994903f76b29313c3a}\index{path.js@{path.js}!RESOURCE\_PATH\_RE@{RESOURCE\_PATH\_RE}}
+\index{RESOURCE\_PATH\_RE@{RESOURCE\_PATH\_RE}!path.js@{path.js}}
+\doxysubsubsection{\texorpdfstring{RESOURCE\_PATH\_RE}{RESOURCE\_PATH\_RE}}
+{\footnotesize\ttfamily \label{_0dgoogle-cloud_2firestore_2build_2src_2path_8js_a2f31c992b4b7b4994903f76b29313c3a} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} RESOURCE\+\_\+\+PATH\+\_\+\+RE}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ }
+\DoxyCodeLine{}
+\DoxyCodeLine{/\string^projects\(\backslash\)/([\string^/]*)\(\backslash\)/databases\(\backslash\)/([\string^/]*)(?:\(\backslash\)/documents\(\backslash\)/)?([\(\backslash\)\mbox{\hyperlink{ordered-map_8min_8js_ad9a7d92cb87932d25187fdec3ba1b621}{s}}\(\backslash\)\mbox{\hyperlink{ordered-map_8min_8js_ace93fde0b0c98b9d4b9c0bf2627a1374}{S}}]*)\mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}/}
+
+\end{DoxyCode}
+\doxylink{class_a}{A} regular expression to verify an absolute Resource \doxylink{class_path}{Path} in \doxylink{class_firestore}{Firestore}. It extracts the project ID, the database name and the relative resource path if available.
+
+@type \{Reg\+Exp\} \Hypertarget{_0dgoogle-cloud_2firestore_2build_2src_2path_8js_a30f41c6f3dc25df09438d8dc96ce6de6}\index{path.js@{path.js}!ResourcePath@{ResourcePath}}
+\index{ResourcePath@{ResourcePath}!path.js@{path.js}}
+\doxysubsubsection{\texorpdfstring{ResourcePath}{ResourcePath}}
+{\footnotesize\ttfamily \label{_0dgoogle-cloud_2firestore_2build_2src_2path_8js_a30f41c6f3dc25df09438d8dc96ce6de6} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} Resource\+Path = Resource\+Path}
+
+\Hypertarget{_0dgoogle-cloud_2firestore_2build_2src_2path_8js_ae2475e10618961c050dcba04e8c42331}\index{path.js@{path.js}!strict@{strict}}
+\index{strict@{strict}!path.js@{path.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{_0dgoogle-cloud_2firestore_2build_2src_2path_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+
+\Hypertarget{_0dgoogle-cloud_2firestore_2build_2src_2path_8js_a5b049752da8a7aa1005cfdc37638c084}\index{path.js@{path.js}!UNESCAPED\_FIELD\_NAME\_RE@{UNESCAPED\_FIELD\_NAME\_RE}}
+\index{UNESCAPED\_FIELD\_NAME\_RE@{UNESCAPED\_FIELD\_NAME\_RE}!path.js@{path.js}}
+\doxysubsubsection{\texorpdfstring{UNESCAPED\_FIELD\_NAME\_RE}{UNESCAPED\_FIELD\_NAME\_RE}}
+{\footnotesize\ttfamily \label{_0dgoogle-cloud_2firestore_2build_2src_2path_8js_a5b049752da8a7aa1005cfdc37638c084} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} UNESCAPED\+\_\+\+FIELD\+\_\+\+NAME\+\_\+\+RE = /\texorpdfstring{$^\wedge$}{\string^}\mbox{[}\mbox{\hyperlink{logger_2dist_2esm_2index_8esm5_8js_a0adf123df8967a14b5bdd9ff3bbe2d0c}{\+\_\+a}}-\/zA-\/\mbox{\hyperlink{ed25519_8js_a91b180d4aa37a81e516896ad77d1837c}{Z}}\mbox{]}\mbox{[}\mbox{\hyperlink{logger_2dist_2esm_2index_8esm5_8js_a0adf123df8967a14b5bdd9ff3bbe2d0c}{\+\_\+a}}-\/zA-\/Z0-\/9\mbox{]}\texorpdfstring{$\ast$}{*}\$/}
+
+\doxylink{class_a}{A} regular expression to verify whether a field name can be passed to the backend without escaping.
+
+@type \{Reg\+Exp\} \Hypertarget{_0dgoogle-cloud_2firestore_2build_2src_2path_8js_a6af3fa6e24c6a46faf4552f3a2ad8783}\index{path.js@{path.js}!util\_1@{util\_1}}
+\index{util\_1@{util\_1}!path.js@{path.js}}
+\doxysubsubsection{\texorpdfstring{util\_1}{util\_1}}
+{\footnotesize\ttfamily \label{_0dgoogle-cloud_2firestore_2build_2src_2path_8js_a6af3fa6e24c6a46faf4552f3a2ad8783} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} util\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./util"{})}
+
+\Hypertarget{_0dgoogle-cloud_2firestore_2build_2src_2path_8js_aa37716c5385ffbe958d12dba0dab85f8}\index{path.js@{path.js}!validate\_1@{validate\_1}}
+\index{validate\_1@{validate\_1}!path.js@{path.js}}
+\doxysubsubsection{\texorpdfstring{validate\_1}{validate\_1}}
+{\footnotesize\ttfamily \label{_0dgoogle-cloud_2firestore_2build_2src_2path_8js_aa37716c5385ffbe958d12dba0dab85f8} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} validate\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./validate"{})}
+
+\Hypertarget{_0dgoogle-cloud_2firestore_2build_2src_2path_8js_a83e13ee50063efb049461460bd9c3482}\index{path.js@{path.js}!validateFieldPath@{validateFieldPath}}
+\index{validateFieldPath@{validateFieldPath}!path.js@{path.js}}
+\doxysubsubsection{\texorpdfstring{validateFieldPath}{validateFieldPath}}
+{\footnotesize\ttfamily \label{_0dgoogle-cloud_2firestore_2build_2src_2path_8js_a83e13ee50063efb049461460bd9c3482} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} validate\+Field\+Path = validate\+Field\+Path}
+
+\Hypertarget{_0dgoogle-cloud_2firestore_2build_2src_2path_8js_a1315589712c25720e77d153ab7b69762}\index{path.js@{path.js}!validateResourcePath@{validateResourcePath}}
+\index{validateResourcePath@{validateResourcePath}!path.js@{path.js}}
+\doxysubsubsection{\texorpdfstring{validateResourcePath}{validateResourcePath}}
+{\footnotesize\ttfamily \label{_0dgoogle-cloud_2firestore_2build_2src_2path_8js_a1315589712c25720e77d153ab7b69762} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} validate\+Resource\+Path = validate\+Resource\+Path}
+

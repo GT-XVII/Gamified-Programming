@@ -1,0 +1,11 @@
+<map id="SecurityRules::releaseFirestoreRulesetFromSource" name="SecurityRules::releaseFirestoreRulesetFromSource">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,210,96"/>
+<area shape="rect" id="Node000002" href="$class_security_rules.html#afd629b62eefe2769da2dc054d2063514" title=" " alt="" coords="264,5,456,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="199,52,284,32,286,38,201,57"/>
+<area shape="rect" id="Node000003" href="$class_security_rules.html#a16e2a50b9f3cf60adf2e0f725e369c2e" title=" " alt="" coords="269,55,450,96"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="210,73,254,73,254,78,210,78"/>
+<area shape="rect" id="Node000004" href="$class_security_rules.html#ad09180f2aac20b5992139df98e57d74b" title=" " alt="" coords="258,120,462,161"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="190,94,264,113,263,119,188,99"/>
+<area shape="rect" id="Node000005" href="$class_security_rules.html#a72b59d7d47ecd7707262e75bd866f75c" title=" " alt="" coords="510,128,708,154"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="463,138,495,138,495,144,463,144"/>
+</map>

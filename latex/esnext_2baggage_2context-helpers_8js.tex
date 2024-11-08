@@ -1,0 +1,117 @@
+\doxysection{backend/node\+\_\+modules/@opentelemetry/api/build/esnext/baggage/context-\/helpers.js File Reference}
+\hypertarget{esnext_2baggage_2context-helpers_8js}{}\label{esnext_2baggage_2context-helpers_8js}\index{backend/node\_modules/"@opentelemetry/api/build/esnext/baggage/context-\/helpers.js@{backend/node\_modules/"@opentelemetry/api/build/esnext/baggage/context-\/helpers.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function export \mbox{\hyperlink{esnext_2baggage_2context-helpers_8js_a69913c2a4aab128c02b3af0f56592849}{get\+Baggage}} (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}})
+\item 
+function export \mbox{\hyperlink{esnext_2baggage_2context-helpers_8js_a14f758c0186886e11ce809c61ea5a16c}{get\+Active\+Baggage}} ()
+\item 
+function export \mbox{\hyperlink{esnext_2baggage_2context-helpers_8js_ab357f7b9967f764bc7e919356a6c8f26}{set\+Baggage}} (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}}, baggage)
+\item 
+function export \mbox{\hyperlink{esnext_2baggage_2context-helpers_8js_ac1b1f5c8151246021e6d70686512d3d9}{delete\+Baggage}} (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{esnext_2baggage_2context-helpers_8js_a59be084da8908b7d77ff34b25cd84488}{import}} \{ \mbox{\hyperlink{class_context_a_p_i}{Context\+API}} \} from \textquotesingle{}../\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}}/\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}}\textquotesingle{}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{esnext_2baggage_2context-helpers_8js_a01492bb1abf8bafaa637867ee8788ae8}{BAGGAGE\+\_\+\+KEY}} = \mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2index_8js_a148528b1b092ddb249ae8cc4a59b10b3}{create\+Context\+Key}}(\textquotesingle{}Open\+Telemetry Baggage Key\textquotesingle{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{esnext_2baggage_2context-helpers_8js_ac1b1f5c8151246021e6d70686512d3d9}\index{context-\/helpers.js@{context-\/helpers.js}!deleteBaggage@{deleteBaggage}}
+\index{deleteBaggage@{deleteBaggage}!context-\/helpers.js@{context-\/helpers.js}}
+\doxysubsubsection{\texorpdfstring{deleteBaggage()}{deleteBaggage()}}
+{\footnotesize\ttfamily \label{esnext_2baggage_2context-helpers_8js_ac1b1f5c8151246021e6d70686512d3d9} 
+function export delete\+Baggage (\begin{DoxyParamCaption}\item[{}]{context}{}\end{DoxyParamCaption})}
+
+Delete the baggage stored in the given context
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Context\}} & Context that manage all context values \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{esm_2baggage_2context-helpers_8js_a2ef5fe88d5738120481b332b20c50a62}{BAGGAGE\+\_\+\+KEY}}, and \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}}.
+
+\Hypertarget{esnext_2baggage_2context-helpers_8js_a14f758c0186886e11ce809c61ea5a16c}\index{context-\/helpers.js@{context-\/helpers.js}!getActiveBaggage@{getActiveBaggage}}
+\index{getActiveBaggage@{getActiveBaggage}!context-\/helpers.js@{context-\/helpers.js}}
+\doxysubsubsection{\texorpdfstring{getActiveBaggage()}{getActiveBaggage()}}
+{\footnotesize\ttfamily \label{esnext_2baggage_2context-helpers_8js_a14f758c0186886e11ce809c61ea5a16c} 
+function export get\+Active\+Baggage (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Retrieve the current baggage from the active/current context
+
+\begin{DoxyReturn}{Returns}
+\{Baggage\} Extracted baggage from the context 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{src_2baggage_2context-helpers_8js_a42fe4552453dbe09bd4cbc6bf7b6708c}{get\+Baggage}}, and \mbox{\hyperlink{class_context_a_p_i_a8136f648f3e26cd636c9c1eb3e65fe6b}{Context\+API\+::get\+Instance()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{esnext_2baggage_2context-helpers_8js_a14f758c0186886e11ce809c61ea5a16c_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{esnext_2baggage_2context-helpers_8js_a69913c2a4aab128c02b3af0f56592849}\index{context-\/helpers.js@{context-\/helpers.js}!getBaggage@{getBaggage}}
+\index{getBaggage@{getBaggage}!context-\/helpers.js@{context-\/helpers.js}}
+\doxysubsubsection{\texorpdfstring{getBaggage()}{getBaggage()}}
+{\footnotesize\ttfamily \label{esnext_2baggage_2context-helpers_8js_a69913c2a4aab128c02b3af0f56592849} 
+function export get\+Baggage (\begin{DoxyParamCaption}\item[{}]{context}{}\end{DoxyParamCaption})}
+
+Retrieve the current baggage from the given context
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Context\}} & Context that manage all context values \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Baggage\} Extracted baggage from the context 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{esm_2baggage_2context-helpers_8js_a2ef5fe88d5738120481b332b20c50a62}{BAGGAGE\+\_\+\+KEY}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}.
+
+\Hypertarget{esnext_2baggage_2context-helpers_8js_ab357f7b9967f764bc7e919356a6c8f26}\index{context-\/helpers.js@{context-\/helpers.js}!setBaggage@{setBaggage}}
+\index{setBaggage@{setBaggage}!context-\/helpers.js@{context-\/helpers.js}}
+\doxysubsubsection{\texorpdfstring{setBaggage()}{setBaggage()}}
+{\footnotesize\ttfamily \label{esnext_2baggage_2context-helpers_8js_ab357f7b9967f764bc7e919356a6c8f26} 
+function export set\+Baggage (\begin{DoxyParamCaption}\item[{}]{context}{, }\item[{}]{baggage}{}\end{DoxyParamCaption})}
+
+Store a baggage in the given context
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Context\}} & Context that manage all context values \\
+\hline
+{\em \{\+Baggage\}} & baggage that will be set in the actual context \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{esm_2baggage_2context-helpers_8js_a2ef5fe88d5738120481b332b20c50a62}{BAGGAGE\+\_\+\+KEY}}, and \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{esnext_2baggage_2context-helpers_8js_a01492bb1abf8bafaa637867ee8788ae8}\index{context-\/helpers.js@{context-\/helpers.js}!BAGGAGE\_KEY@{BAGGAGE\_KEY}}
+\index{BAGGAGE\_KEY@{BAGGAGE\_KEY}!context-\/helpers.js@{context-\/helpers.js}}
+\doxysubsubsection{\texorpdfstring{BAGGAGE\_KEY}{BAGGAGE\_KEY}}
+{\footnotesize\ttfamily \label{esnext_2baggage_2context-helpers_8js_a01492bb1abf8bafaa637867ee8788ae8} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} BAGGAGE\+\_\+\+KEY = \mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2index_8js_a148528b1b092ddb249ae8cc4a59b10b3}{create\+Context\+Key}}(\textquotesingle{}Open\+Telemetry Baggage Key\textquotesingle{})}
+
+Baggage key \Hypertarget{esnext_2baggage_2context-helpers_8js_a59be084da8908b7d77ff34b25cd84488}\index{context-\/helpers.js@{context-\/helpers.js}!import@{import}}
+\index{import@{import}!context-\/helpers.js@{context-\/helpers.js}}
+\doxysubsubsection{\texorpdfstring{import}{import}}
+{\footnotesize\ttfamily \label{esnext_2baggage_2context-helpers_8js_a59be084da8908b7d77ff34b25cd84488} 
+import \{ \mbox{\hyperlink{class_context_a_p_i}{Context\+API}} \} from \textquotesingle{}../\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}}/\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}}\textquotesingle{}}
+

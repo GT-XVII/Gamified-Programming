@@ -1,0 +1,17 @@
+\doxysection{/\+Users/nicoletiokhin/\+Desktop/\+Software Semester 3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/protobufjs/src/util/minimal.\+js}
+\hypertarget{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_ed91d615c1a3619ba6fdfd425d98da57}{}\label{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_ed91d615c1a3619ba6fdfd425d98da57}Constructs a new protocol error. @classdesc Error subclass indicating a protocol specifc error.
+
+@template T extends Message$<$\+T$>$ @constructor 
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & message Error message \\
+\hline
+{\em \{\+Object.$<$string,\texorpdfstring{$\ast$}{*}$>$\}} & \mbox{[}properties\mbox{]} Additional properties\\
+\hline
+\end{DoxyParams}
+try \{ My\+Message.\+decode(some\+Buffer); // throws if required fields are missing \} catch (e) \{ if (e instanceof Protocol\+Error \&\& e.\+instance) console.\+log("{}decoded so far\+: "{} + JSON.\+stringify(e.\+instance)); \}
+
+
+\begin{DoxyCodeInclude}{0}
+
+\end{DoxyCodeInclude}
+ Semester \doxylink{src_2util_2minimal_8js}{3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/protobufjs/src/util/minimal.\+js} 

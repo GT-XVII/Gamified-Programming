@@ -1,0 +1,35 @@
+\doxysection{/\+Users/nicoletiokhin/\+Desktop/\+Software Semester 3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/lodash/bind.\+js}
+\hypertarget{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_dfafdc1f6e1877d1612f24190e4f143f}{}\label{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_dfafdc1f6e1877d1612f24190e4f143f}Creates a function that invokes {\ttfamily func} with the {\ttfamily this} binding of {\ttfamily this\+Arg} and {\ttfamily partials} prepended to the arguments it receives.
+
+The {\ttfamily \+\_\+.\+bind.\+placeholder} value, which defaults to {\ttfamily \+\_\+} in monolithic builds, may be used as a placeholder for partially applied arguments.
+
+{\bfseries{Note\+:}} Unlike native {\ttfamily Function\#bind}, this method doesn\textquotesingle{}t set the "{}length"{} property of bound functions.
+
+@member\+Of \+\_\+ \begin{DoxySince}{Since}
+0.\+1.\+0
+\end{DoxySince}
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Function\}} & func The function to bind. \\
+\hline
+{\em \{\texorpdfstring{$\ast$}{*}\}} & this\+Arg The {\ttfamily this} binding of {\ttfamily func}. \\
+\hline
+{\em \{...\texorpdfstring{$\ast$}{*}\}} & \mbox{[}partials\mbox{]} The arguments to be partially applied. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Function\} Returns the new bound function.
+\end{DoxyReturn}
+function greet(greeting, punctuation) \{ return greeting + \textquotesingle{} \textquotesingle{} + this.\+user + punctuation; \}
+
+var object = \{ \textquotesingle{}user\textquotesingle{}\+: \textquotesingle{}fred\textquotesingle{} \};
+
+var bound = \+\_\+.\+bind(greet, object, \textquotesingle{}hi\textquotesingle{}); bound(\textquotesingle{}!\textquotesingle{}); // =\texorpdfstring{$>$}{>} \textquotesingle{}hi fred!\textquotesingle{}
+
+// Bound with placeholders. var bound = \+\_\+.\+bind(greet, object, \+\_\+, \textquotesingle{}!\textquotesingle{}); bound(\textquotesingle{}hi\textquotesingle{}); // =\texorpdfstring{$>$}{>} \textquotesingle{}hi fred!\textquotesingle{}
+
+
+\begin{DoxyCodeInclude}{0}
+
+\end{DoxyCodeInclude}
+ Semester \doxylink{bind_8js}{3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/lodash/bind.\+js} 

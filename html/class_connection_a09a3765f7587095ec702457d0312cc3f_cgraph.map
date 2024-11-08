@@ -1,0 +1,15 @@
+<map id="Connection::onSecondaryMessageReceived_" name="Connection::onSecondaryMessageReceived_">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,27,230,68"/>
+<area shape="rect" id="Node000002" href="$class_connection.html#a83eab629606d528d3261584f765a6a4b" title=" " alt="" coords="278,35,498,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="230,45,262,45,262,50,230,50"/>
+<area shape="rect" id="Node000003" href="$class_connection.html#ae6b64fd2a4364f4e72221c50139392ee" title=" " alt="" coords="588,5,715,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="498,33,573,24,573,29,499,38"/>
+<area shape="rect" id="Node000005" href="$class_connection.html#aef97dc3328b88ecb422096e523b01b35" title=" " alt="" coords="546,55,757,96"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="499,57,531,60,530,65,498,62"/>
+<area shape="rect" id="Node000004" href="$class_connection.html#ac7ecc4496de98a6d47fe45d0ff7e25fb" title=" " alt="" coords="814,5,1021,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="715,16,799,16,799,21,715,21"/>
+<area shape="rect" id="Node000006" href="$class_connection.html#a013221e649f93c47a80de83bebb5252a" title=" " alt="" coords="805,63,1030,88"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="758,73,790,73,790,78,758,78"/>
+<area shape="rect" id="Node000007" href="$class_connection.html#a9efceeb8f530550405c3aa92278a638e" title=" " alt="" coords="1078,63,1302,88"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1030,73,1062,73,1062,78,1030,78"/>
+</map>

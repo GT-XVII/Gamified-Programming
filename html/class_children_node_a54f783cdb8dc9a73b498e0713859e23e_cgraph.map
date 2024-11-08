@@ -1,0 +1,12 @@
+<map id="ChildrenNode::updateImmediateChild" name="ChildrenNode::updateImmediateChild">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,47,214,88"/>
+<area shape="rect" id="Node000002" href="$class_children_node.html#ae4ed5fccb2b80a1d1ae4cadb23e50f7b" title=" " alt="" coords="262,29,462,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="214,54,246,51,247,56,214,60"/>
+<area shape="rect" id="Node000005" href="$class_children_node.html#a058431b8a0d280eaa0d69786621b7d87" title=" " alt="" coords="268,79,456,104"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="214,75,252,78,252,84,214,80"/>
+<area shape="poly" id="edge3_Node000002_Node000002" title=" " alt="" coords="324,31,317,21,321,11,336,5,362,3,390,5,404,12,402,17,388,10,362,8,338,10,325,15,322,20,328,27"/>
+<area shape="rect" id="Node000003" href="$class_index_map.html#a288519f4b1eddf8921ff1d4209316aa2" title=" " alt="" coords="526,5,654,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="462,29,510,24,511,29,462,34"/>
+<area shape="rect" id="Node000004" href="$database_2dist_2node-esm_2index_8node_8esm_8js.html#a0c24c9674356e810a202fd0cf4bd4ff7" title=" " alt="" coords="510,55,670,80"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="462,51,495,54,494,60,462,56"/>
+</map>

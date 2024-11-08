@@ -1,0 +1,11 @@
+<map id="Connection::tryStartUpgrade_" name="Connection::tryStartUpgrade_">
+<area shape="rect" id="Node000001" title=" " alt="" coords="928,13,1122,38"/>
+<area shape="rect" id="Node000002" href="$class_connection.html#ab10e7ac29b4427a85e2cb21f7f5dabc4" title=" " alt="" coords="697,13,880,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="912,28,880,28,880,23,912,23"/>
+<area shape="rect" id="Node000003" href="$class_connection.html#a45442c96920d96ea88c3c941b937f16c" title=" " alt="" coords="491,13,649,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="682,28,650,28,650,23,682,23"/>
+<area shape="rect" id="Node000004" href="$class_connection.html#aa5c3762aae09c375df8d64110c19ef37" title=" " alt="" coords="236,5,443,46"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="476,28,444,28,444,23,476,23"/>
+<area shape="rect" id="Node000005" href="$class_connection.html#ab636a3d51c375d83c899a2652d11df36" title=" " alt="" coords="5,13,188,38"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="220,28,188,28,188,23,220,23"/>
+</map>

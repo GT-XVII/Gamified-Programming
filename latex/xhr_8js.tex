@@ -1,0 +1,393 @@
+\doxysection{backend/node\+\_\+modules/node-\/forge/lib/xhr.js File Reference}
+\hypertarget{xhr_8js}{}\label{xhr_8js}\index{backend/node\_modules/node-\/forge/lib/xhr.js@{backend/node\_modules/node-\/forge/lib/xhr.js}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{xhr_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./forge\textquotesingle{})
+\item 
+var \mbox{\hyperlink{xhr_8js_a92977f19b7f345f1aacbe093dfca8f98}{xhr\+Api}} = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{module.\+exports}} = \mbox{\hyperlink{_0dprotobufjs_2fetch_2index_8js_aed3454687db87107ad9304f19c09e60b}{forge.\+xhr}} = \mbox{\hyperlink{_0dprotobufjs_2fetch_2index_8js_aed3454687db87107ad9304f19c09e60b}{forge.\+xhr}} \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} \{\}
+\item 
+function \mbox{\hyperlink{xhr_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}
+\item 
+var \mbox{\hyperlink{xhr_8js_ac114f841a3001869620b8b795e11bf2b}{UNSENT}} = 0
+\item 
+var \mbox{\hyperlink{xhr_8js_a75b3dd0eac5f18f8a5cc216bb5b5f336}{OPENED}} = 1
+\item 
+var \mbox{\hyperlink{xhr_8js_aa0440b2dc601e14f0340200fa47b8c4a}{HEADERS\+\_\+\+RECEIVED}} = 2
+\item 
+var \mbox{\hyperlink{xhr_8js_adac71a555c74519935e6b6c0e692580e}{LOADING}} = 3
+\item 
+var \mbox{\hyperlink{xhr_8js_a7ac1dc7939115534d144f6ed13721b2f}{DONE}} = 4
+\item 
+var \mbox{\hyperlink{xhr_8js_a44901f22f5330d1bba966c0a5ed8a372}{INVALID\+\_\+\+STATE\+\_\+\+ERR}} = 11
+\item 
+var \mbox{\hyperlink{xhr_8js_a35ce2fb71325da20e33278fcf54e5186}{SYNTAX\+\_\+\+ERR}} = 12
+\item 
+var \mbox{\hyperlink{xhr_8js_ad3f87356b9e80666edb5f0aecf00a696}{SECURITY\+\_\+\+ERR}} = 18
+\item 
+var \mbox{\hyperlink{xhr_8js_a49046c8aacc03437f23b109fd04c54ca}{NETWORK\+\_\+\+ERR}} = 19
+\item 
+var \mbox{\hyperlink{xhr_8js_ab2fb4760d0b8a1a1d79251879ac74bcc}{ABORT\+\_\+\+ERR}} = 20
+\item 
+var \mbox{\hyperlink{xhr_8js_a1548f4063a3ec92cd0912fb3c3b1c613}{\+\_\+sp}} = null
+\item 
+var \mbox{\hyperlink{xhr_8js_a78d8b197df8de6df98772b46edbe9b76}{\+\_\+policy\+Port}} = 0
+\item 
+var \mbox{\hyperlink{xhr_8js_a520c221bbce7139fe7c00472c795f3f6}{\+\_\+policy\+Url}} = null
+\item 
+var \mbox{\hyperlink{xhr_8js_ae32dafd80ac36ab463a43bfc29e1fb48}{\+\_\+client}} = null
+\item 
+var \mbox{\hyperlink{xhr_8js_aff9ee544d15bca1a2e1438ebfde1d126}{\+\_\+clients}} = \{\}
+\item 
+var \mbox{\hyperlink{xhr_8js_a99dd7fa2d9f2de60a874bc9c2090ee7c}{\+\_\+max\+Connections}} = 10
+\item 
+var \mbox{\hyperlink{xhr_8js_a24df1ebe2aee23540b4159c6087afdf1}{net}} = forge.\+net
+\item 
+var \mbox{\hyperlink{xhr_8js_a55f22d498ca401fddca364855629d1d3}{http}} = forge.\+http
+\item 
+\mbox{\hyperlink{xhr_8js_a92977f19b7f345f1aacbe093dfca8f98}{xhr\+Api}} \mbox{\hyperlink{xhr_8js_a7500e88ce873028b344c82653b5b2b92}{init}}
+\item 
+\mbox{\hyperlink{xhr_8js_a92977f19b7f345f1aacbe093dfca8f98}{xhr\+Api}} \mbox{\hyperlink{xhr_8js_a72b81ec0fab0bfeb419da39e4a653976}{cleanup}}
+\item 
+\mbox{\hyperlink{xhr_8js_a92977f19b7f345f1aacbe093dfca8f98}{xhr\+Api}} \mbox{\hyperlink{xhr_8js_a84bd64ad9fadc1f894aa54ae15069d7e}{set\+Cookie}}
+\item 
+\mbox{\hyperlink{xhr_8js_a92977f19b7f345f1aacbe093dfca8f98}{xhr\+Api}} \mbox{\hyperlink{xhr_8js_aa39741e20540a0da0f22472d2660b6bb}{get\+Cookie}}
+\item 
+\mbox{\hyperlink{xhr_8js_a92977f19b7f345f1aacbe093dfca8f98}{xhr\+Api}} \mbox{\hyperlink{xhr_8js_a17bd7104ea88af785fd5a72f478cc592}{remove\+Cookie}}
+\item 
+\mbox{\hyperlink{xhr_8js_a92977f19b7f345f1aacbe093dfca8f98}{xhr\+Api}} \mbox{\hyperlink{xhr_8js_aba2005a682df6091a90a16f8bea24312}{create}}
+\item 
+\mbox{\hyperlink{xhr_8js_a2b1d6f9c448e3ce72f4e1865d6e38d2c}{j\+Query}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{xhr_8js_ab63a7754967c678e14c9ece9cf96be37}\index{xhr.js@{xhr.js}!\$@{\$}}
+\index{\$@{\$}!xhr.js@{xhr.js}}
+\doxysubsubsection{\texorpdfstring{\$}{\$}}
+{\footnotesize\ttfamily \label{xhr_8js_ab63a7754967c678e14c9ece9cf96be37} 
+function \$}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{var\ \mbox{\hyperlink{node-forge_2lib_2http_8js_a4fc8e6f7e226c4eb47d6ee2b90efee11}{cat}}\ =\ \textcolor{stringliteral}{'forge.xhr'}}
+
+\end{DoxyCode}
+\Hypertarget{xhr_8js_ae32dafd80ac36ab463a43bfc29e1fb48}\index{xhr.js@{xhr.js}!\_client@{\_client}}
+\index{\_client@{\_client}!xhr.js@{xhr.js}}
+\doxysubsubsection{\texorpdfstring{\_client}{\_client}}
+{\footnotesize\ttfamily \label{xhr_8js_ae32dafd80ac36ab463a43bfc29e1fb48} 
+var \+\_\+client = null}
+
+\Hypertarget{xhr_8js_aff9ee544d15bca1a2e1438ebfde1d126}\index{xhr.js@{xhr.js}!\_clients@{\_clients}}
+\index{\_clients@{\_clients}!xhr.js@{xhr.js}}
+\doxysubsubsection{\texorpdfstring{\_clients}{\_clients}}
+{\footnotesize\ttfamily \label{xhr_8js_aff9ee544d15bca1a2e1438ebfde1d126} 
+var \+\_\+clients = \{\}}
+
+\Hypertarget{xhr_8js_a99dd7fa2d9f2de60a874bc9c2090ee7c}\index{xhr.js@{xhr.js}!\_maxConnections@{\_maxConnections}}
+\index{\_maxConnections@{\_maxConnections}!xhr.js@{xhr.js}}
+\doxysubsubsection{\texorpdfstring{\_maxConnections}{\_maxConnections}}
+{\footnotesize\ttfamily \label{xhr_8js_a99dd7fa2d9f2de60a874bc9c2090ee7c} 
+var \+\_\+max\+Connections = 10}
+
+\Hypertarget{xhr_8js_a78d8b197df8de6df98772b46edbe9b76}\index{xhr.js@{xhr.js}!\_policyPort@{\_policyPort}}
+\index{\_policyPort@{\_policyPort}!xhr.js@{xhr.js}}
+\doxysubsubsection{\texorpdfstring{\_policyPort}{\_policyPort}}
+{\footnotesize\ttfamily \label{xhr_8js_a78d8b197df8de6df98772b46edbe9b76} 
+var \+\_\+policy\+Port = 0}
+
+\Hypertarget{xhr_8js_a520c221bbce7139fe7c00472c795f3f6}\index{xhr.js@{xhr.js}!\_policyUrl@{\_policyUrl}}
+\index{\_policyUrl@{\_policyUrl}!xhr.js@{xhr.js}}
+\doxysubsubsection{\texorpdfstring{\_policyUrl}{\_policyUrl}}
+{\footnotesize\ttfamily \label{xhr_8js_a520c221bbce7139fe7c00472c795f3f6} 
+var \+\_\+policy\+Url = null}
+
+\Hypertarget{xhr_8js_a1548f4063a3ec92cd0912fb3c3b1c613}\index{xhr.js@{xhr.js}!\_sp@{\_sp}}
+\index{\_sp@{\_sp}!xhr.js@{xhr.js}}
+\doxysubsubsection{\texorpdfstring{\_sp}{\_sp}}
+{\footnotesize\ttfamily \label{xhr_8js_a1548f4063a3ec92cd0912fb3c3b1c613} 
+var \+\_\+sp = null}
+
+\Hypertarget{xhr_8js_ab2fb4760d0b8a1a1d79251879ac74bcc}\index{xhr.js@{xhr.js}!ABORT\_ERR@{ABORT\_ERR}}
+\index{ABORT\_ERR@{ABORT\_ERR}!xhr.js@{xhr.js}}
+\doxysubsubsection{\texorpdfstring{ABORT\_ERR}{ABORT\_ERR}}
+{\footnotesize\ttfamily \label{xhr_8js_ab2fb4760d0b8a1a1d79251879ac74bcc} 
+var ABORT\+\_\+\+ERR = 20}
+
+\Hypertarget{xhr_8js_a72b81ec0fab0bfeb419da39e4a653976}\index{xhr.js@{xhr.js}!cleanup@{cleanup}}
+\index{cleanup@{cleanup}!xhr.js@{xhr.js}}
+\doxysubsubsection{\texorpdfstring{cleanup}{cleanup}}
+{\footnotesize\ttfamily \label{xhr_8js_a72b81ec0fab0bfeb419da39e4a653976} 
+\mbox{\hyperlink{xhr_8js_a92977f19b7f345f1aacbe093dfca8f98}{xhr\+Api}} cleanup}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}()\ \{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{for}(var\ key\ in\ \mbox{\hyperlink{xhr_8js_aff9ee544d15bca1a2e1438ebfde1d126}{\_clients}})\ \{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{xhr_8js_aff9ee544d15bca1a2e1438ebfde1d126}{\_clients}}[key].destroy();}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{xhr_8js_aff9ee544d15bca1a2e1438ebfde1d126}{\_clients}}\ =\ \{\};}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{xhr_8js_ae32dafd80ac36ab463a43bfc29e1fb48}{\_client}}\ =\ \textcolor{keyword}{null};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ \mbox{\hyperlink{xhr_8js_a1548f4063a3ec92cd0912fb3c3b1c613}{\_sp}}.destroy();}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{xhr_8js_a1548f4063a3ec92cd0912fb3c3b1c613}{\_sp}}\ =\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Called to clean up the clients and socket pool. \Hypertarget{xhr_8js_aba2005a682df6091a90a16f8bea24312}\index{xhr.js@{xhr.js}!create@{create}}
+\index{create@{create}!xhr.js@{xhr.js}}
+\doxysubsubsection{\texorpdfstring{create}{create}}
+{\footnotesize\ttfamily \label{xhr_8js_aba2005a682df6091a90a16f8bea24312} 
+\mbox{\hyperlink{xhr_8js_a92977f19b7f345f1aacbe093dfca8f98}{xhr\+Api}} create}
+
+Creates a new Xml\+Http\+Request. By default the base URL, flash policy port, etc, will be used. However, an XHR can be created to point at another cross-\/domain URL.
+
+
+\begin{DoxyParams}{Parameters}
+{\em options} & log\+Warning\+On\+Error\+: If true and an HTTP error status code is received then log a warning, otherwise log a verbose message. verbose\+: If true be very verbose in the output including the response event and response body, otherwise only include status, timing, and data size. log\+Error\+: a multi-\/var log function for warnings that takes the log category as the first var. log\+Warning\+: a multi-\/var log function for warnings that takes the log category as the first var. log\+Debug\+: a multi-\/var log function for warnings that takes the log category as the first var. log\+Verbose\+: a multi-\/var log function for warnings that takes the log category as the first var. url\+: the default base URL to connect to if xhr URLs are relative, eg\+: \href{https://myserver.com}{\texttt{ https\+://myserver.\+com}}, and note that the following options will be ignored if the URL is absent or the same as the default base URL. policy\+Port\+: the port that provides the server\textquotesingle{}s flash policy, 0 to use the flash default. policy\+Url\+: the policy file URL to use instead of a policy port. connections\+: the maximum number of concurrent connections. ca\+Certs\+: a list of PEM-\/formatted certificates to trust. cipher\+Suites\+: an optional array of cipher suites to use, see forge.\+tls.\+Cipher\+Suites. verify\+: optional TLS certificate verify callback to use (see forge.\+tls for details). get\+Certificate\+: an optional callback used to get a client-\/side certificate. get\+Private\+Key\+: an optional callback used to get a client-\/side private key. get\+Signature\+: an optional callback used to get a client-\/side signature. persist\+Cookies\+: true to use persistent cookies via flash local storage, false to only keep cookies in javascript. prime\+Tls\+Sockets\+: true to immediately connect TLS sockets on their creation so that they will cache TLS sessions for reuse.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the Xml\+Http\+Request. 
+\end{DoxyReturn}
+\Hypertarget{xhr_8js_a7ac1dc7939115534d144f6ed13721b2f}\index{xhr.js@{xhr.js}!DONE@{DONE}}
+\index{DONE@{DONE}!xhr.js@{xhr.js}}
+\doxysubsubsection{\texorpdfstring{DONE}{DONE}}
+{\footnotesize\ttfamily \label{xhr_8js_a7ac1dc7939115534d144f6ed13721b2f} 
+var DONE = 4}
+
+\Hypertarget{xhr_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}\index{xhr.js@{xhr.js}!forge@{forge}}
+\index{forge@{forge}!xhr.js@{xhr.js}}
+\doxysubsubsection{\texorpdfstring{forge}{forge}}
+{\footnotesize\ttfamily \label{xhr_8js_ab4dbef01e35b8e6d06087c0542ba9e2c} 
+var forge = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./forge\textquotesingle{})}
+
+Xml\+Http\+Request implementation that uses TLS and flash Socket\+Pool.
+
+\begin{DoxyAuthor}{Author}
+Dave Longley
+\end{DoxyAuthor}
+Copyright (c) 2010-\/2013 Digital Bazaar, Inc. \Hypertarget{xhr_8js_aa39741e20540a0da0f22472d2660b6bb}\index{xhr.js@{xhr.js}!getCookie@{getCookie}}
+\index{getCookie@{getCookie}!xhr.js@{xhr.js}}
+\doxysubsubsection{\texorpdfstring{getCookie}{getCookie}}
+{\footnotesize\ttfamily \label{xhr_8js_aa39741e20540a0da0f22472d2660b6bb} 
+\mbox{\hyperlink{xhr_8js_a92977f19b7f345f1aacbe093dfca8f98}{xhr\+Api}} get\+Cookie}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}},\ \mbox{\hyperlink{cjs_2src_2bucket_8js_a1fdc7709faf62dce60620fb3f9d3453c}{path}},\ domain)\ \{}
+\DoxyCodeLine{\ \ var\ rval\ =\ \textcolor{keyword}{null};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}(domain)\ \{}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{for}(var\ key\ in\ \mbox{\hyperlink{xhr_8js_aff9ee544d15bca1a2e1438ebfde1d126}{\_clients}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ var\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af46081dcabb4da1ee7ca00228506bcb7}{client}}\ =\ \mbox{\hyperlink{xhr_8js_aff9ee544d15bca1a2e1438ebfde1d126}{\_clients}}[key];}
+\DoxyCodeLine{\ \ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{xhr_8js_a55f22d498ca401fddca364855629d1d3}{http}}.withinCookieDomain(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af46081dcabb4da1ee7ca00228506bcb7}{client}}.url,\ domain))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ var\ \mbox{\hyperlink{response_8js_a22c904eff955fbe7731d6d0e4fedcf54}{cookie}}\ =\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af46081dcabb4da1ee7ca00228506bcb7}{client}}.getCookie(\mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}},\ \mbox{\hyperlink{cjs_2src_2bucket_8js_a1fdc7709faf62dce60620fb3f9d3453c}{path}});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{response_8js_a22c904eff955fbe7731d6d0e4fedcf54}{cookie}}\ !==\ \textcolor{keyword}{null})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(rval\ ===\ \textcolor{keyword}{null})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ rval\ =\ \mbox{\hyperlink{response_8js_a22c904eff955fbe7731d6d0e4fedcf54}{cookie}};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}(!\mbox{\hyperlink{xhr_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.util.isArray(rval))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ rval\ =\ [rval,\ \mbox{\hyperlink{response_8js_a22c904eff955fbe7731d6d0e4fedcf54}{cookie}}];}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ rval.push(\mbox{\hyperlink{response_8js_a22c904eff955fbe7731d6d0e4fedcf54}{cookie}});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ rval\ =\ \mbox{\hyperlink{xhr_8js_ae32dafd80ac36ab463a43bfc29e1fb48}{\_client}}.getCookie(\mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}},\ \mbox{\hyperlink{cjs_2src_2bucket_8js_a1fdc7709faf62dce60620fb3f9d3453c}{path}});}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ rval;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Gets a cookie.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the name of the cookie. \\
+\hline
+{\em path} & an optional path for the cookie (if there are multiple cookies with the same name but different paths). \\
+\hline
+{\em domain} & an optional domain for the cookie (if not using the default domain).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the cookie, cookies (if multiple matches), or null if not found. 
+\end{DoxyReturn}
+\Hypertarget{xhr_8js_aa0440b2dc601e14f0340200fa47b8c4a}\index{xhr.js@{xhr.js}!HEADERS\_RECEIVED@{HEADERS\_RECEIVED}}
+\index{HEADERS\_RECEIVED@{HEADERS\_RECEIVED}!xhr.js@{xhr.js}}
+\doxysubsubsection{\texorpdfstring{HEADERS\_RECEIVED}{HEADERS\_RECEIVED}}
+{\footnotesize\ttfamily \label{xhr_8js_aa0440b2dc601e14f0340200fa47b8c4a} 
+var HEADERS\+\_\+\+RECEIVED = 2}
+
+\Hypertarget{xhr_8js_a55f22d498ca401fddca364855629d1d3}\index{xhr.js@{xhr.js}!http@{http}}
+\index{http@{http}!xhr.js@{xhr.js}}
+\doxysubsubsection{\texorpdfstring{http}{http}}
+{\footnotesize\ttfamily \label{xhr_8js_a55f22d498ca401fddca364855629d1d3} 
+var http = forge.\+http}
+
+\Hypertarget{xhr_8js_a7500e88ce873028b344c82653b5b2b92}\index{xhr.js@{xhr.js}!init@{init}}
+\index{init@{init}!xhr.js@{xhr.js}}
+\doxysubsubsection{\texorpdfstring{init}{init}}
+{\footnotesize\ttfamily \label{xhr_8js_a7500e88ce873028b344c82653b5b2b92} 
+\mbox{\hyperlink{xhr_8js_a92977f19b7f345f1aacbe093dfca8f98}{xhr\+Api}} init}
+
+Initializes flash XHR support.
+
+
+\begin{DoxyParams}{Parameters}
+{\em options} & url\+: the default base URL to connect to if xhr URLs are relative, ie\+: \href{https://myserver.com}{\texttt{ https\+://myserver.\+com}}. flash\+Id\+: the dom ID of the flash Socket\+Pool. policy\+Port\+: the port that provides the server\textquotesingle{}s flash policy, 0 to use the flash default. policy\+Url\+: the policy file URL to use instead of a policy port. msie\+: true if browser is internet explorer, false if not. connections\+: the maximum number of concurrent connections. ca\+Certs\+: a list of PEM-\/formatted certificates to trust. cipher\+Suites\+: an optional array of cipher suites to use, see forge.\+tls.\+Cipher\+Suites. verify\+: optional TLS certificate verify callback to use (see forge.\+tls for details). get\+Certificate\+: an optional callback used to get a client-\/side certificate (see forge.\+tls for details). get\+Private\+Key\+: an optional callback used to get a client-\/side private key (see forge.\+tls for details). get\+Signature\+: an optional callback used to get a client-\/side signature (see forge.\+tls for details). persist\+Cookies\+: true to use persistent cookies via flash local storage, false to only keep cookies in javascript. prime\+Tls\+Sockets\+: true to immediately connect TLS sockets on their creation so that they will cache TLS sessions for reuse. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{xhr_8js_a44901f22f5330d1bba966c0a5ed8a372}\index{xhr.js@{xhr.js}!INVALID\_STATE\_ERR@{INVALID\_STATE\_ERR}}
+\index{INVALID\_STATE\_ERR@{INVALID\_STATE\_ERR}!xhr.js@{xhr.js}}
+\doxysubsubsection{\texorpdfstring{INVALID\_STATE\_ERR}{INVALID\_STATE\_ERR}}
+{\footnotesize\ttfamily \label{xhr_8js_a44901f22f5330d1bba966c0a5ed8a372} 
+var INVALID\+\_\+\+STATE\+\_\+\+ERR = 11}
+
+\Hypertarget{xhr_8js_a2b1d6f9c448e3ce72f4e1865d6e38d2c}\index{xhr.js@{xhr.js}!jQuery@{jQuery}}
+\index{jQuery@{jQuery}!xhr.js@{xhr.js}}
+\doxysubsubsection{\texorpdfstring{jQuery}{jQuery}}
+{\footnotesize\ttfamily \label{xhr_8js_a2b1d6f9c448e3ce72f4e1865d6e38d2c} 
+j\+Query}
+
+\Hypertarget{xhr_8js_adac71a555c74519935e6b6c0e692580e}\index{xhr.js@{xhr.js}!LOADING@{LOADING}}
+\index{LOADING@{LOADING}!xhr.js@{xhr.js}}
+\doxysubsubsection{\texorpdfstring{LOADING}{LOADING}}
+{\footnotesize\ttfamily \label{xhr_8js_adac71a555c74519935e6b6c0e692580e} 
+var LOADING = 3}
+
+\Hypertarget{xhr_8js_a24df1ebe2aee23540b4159c6087afdf1}\index{xhr.js@{xhr.js}!net@{net}}
+\index{net@{net}!xhr.js@{xhr.js}}
+\doxysubsubsection{\texorpdfstring{net}{net}}
+{\footnotesize\ttfamily \label{xhr_8js_a24df1ebe2aee23540b4159c6087afdf1} 
+var net = forge.\+net}
+
+\Hypertarget{xhr_8js_a49046c8aacc03437f23b109fd04c54ca}\index{xhr.js@{xhr.js}!NETWORK\_ERR@{NETWORK\_ERR}}
+\index{NETWORK\_ERR@{NETWORK\_ERR}!xhr.js@{xhr.js}}
+\doxysubsubsection{\texorpdfstring{NETWORK\_ERR}{NETWORK\_ERR}}
+{\footnotesize\ttfamily \label{xhr_8js_a49046c8aacc03437f23b109fd04c54ca} 
+var NETWORK\+\_\+\+ERR = 19}
+
+\Hypertarget{xhr_8js_a75b3dd0eac5f18f8a5cc216bb5b5f336}\index{xhr.js@{xhr.js}!OPENED@{OPENED}}
+\index{OPENED@{OPENED}!xhr.js@{xhr.js}}
+\doxysubsubsection{\texorpdfstring{OPENED}{OPENED}}
+{\footnotesize\ttfamily \label{xhr_8js_a75b3dd0eac5f18f8a5cc216bb5b5f336} 
+var OPENED = 1}
+
+\Hypertarget{xhr_8js_a17bd7104ea88af785fd5a72f478cc592}\index{xhr.js@{xhr.js}!removeCookie@{removeCookie}}
+\index{removeCookie@{removeCookie}!xhr.js@{xhr.js}}
+\doxysubsubsection{\texorpdfstring{removeCookie}{removeCookie}}
+{\footnotesize\ttfamily \label{xhr_8js_a17bd7104ea88af785fd5a72f478cc592} 
+\mbox{\hyperlink{xhr_8js_a92977f19b7f345f1aacbe093dfca8f98}{xhr\+Api}} remove\+Cookie}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}},\ \mbox{\hyperlink{cjs_2src_2bucket_8js_a1fdc7709faf62dce60620fb3f9d3453c}{path}},\ domain)\ \{}
+\DoxyCodeLine{\ \ var\ rval\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}(domain)\ \{}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{for}(var\ key\ in\ \mbox{\hyperlink{xhr_8js_aff9ee544d15bca1a2e1438ebfde1d126}{\_clients}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ var\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af46081dcabb4da1ee7ca00228506bcb7}{client}}\ =\ \mbox{\hyperlink{xhr_8js_aff9ee544d15bca1a2e1438ebfde1d126}{\_clients}}[key];}
+\DoxyCodeLine{\ \ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{xhr_8js_a55f22d498ca401fddca364855629d1d3}{http}}.withinCookieDomain(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af46081dcabb4da1ee7ca00228506bcb7}{client}}.url,\ domain))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af46081dcabb4da1ee7ca00228506bcb7}{client}}.removeCookie(\mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}},\ \mbox{\hyperlink{cjs_2src_2bucket_8js_a1fdc7709faf62dce60620fb3f9d3453c}{path}}))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ rval\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ rval\ =\ \mbox{\hyperlink{xhr_8js_ae32dafd80ac36ab463a43bfc29e1fb48}{\_client}}.removeCookie(\mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}},\ \mbox{\hyperlink{cjs_2src_2bucket_8js_a1fdc7709faf62dce60620fb3f9d3453c}{path}});}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ rval;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Removes a cookie.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the name of the cookie. \\
+\hline
+{\em path} & an optional path for the cookie (if there are multiple cookies with the same name but different paths). \\
+\hline
+{\em domain} & an optional domain for the cookie (if not using the default domain).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if a cookie was removed, false if not. 
+\end{DoxyReturn}
+\Hypertarget{xhr_8js_ad3f87356b9e80666edb5f0aecf00a696}\index{xhr.js@{xhr.js}!SECURITY\_ERR@{SECURITY\_ERR}}
+\index{SECURITY\_ERR@{SECURITY\_ERR}!xhr.js@{xhr.js}}
+\doxysubsubsection{\texorpdfstring{SECURITY\_ERR}{SECURITY\_ERR}}
+{\footnotesize\ttfamily \label{xhr_8js_ad3f87356b9e80666edb5f0aecf00a696} 
+var SECURITY\+\_\+\+ERR = 18}
+
+\Hypertarget{xhr_8js_a84bd64ad9fadc1f894aa54ae15069d7e}\index{xhr.js@{xhr.js}!setCookie@{setCookie}}
+\index{setCookie@{setCookie}!xhr.js@{xhr.js}}
+\doxysubsubsection{\texorpdfstring{setCookie}{setCookie}}
+{\footnotesize\ttfamily \label{xhr_8js_a84bd64ad9fadc1f894aa54ae15069d7e} 
+\mbox{\hyperlink{xhr_8js_a92977f19b7f345f1aacbe093dfca8f98}{xhr\+Api}} set\+Cookie}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{response_8js_a22c904eff955fbe7731d6d0e4fedcf54}{cookie}})\ \{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ \mbox{\hyperlink{response_8js_a22c904eff955fbe7731d6d0e4fedcf54}{cookie}}.maxAge\ =\ \mbox{\hyperlink{response_8js_a22c904eff955fbe7731d6d0e4fedcf54}{cookie}}.maxAge\ ||\ -\/1;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{response_8js_a22c904eff955fbe7731d6d0e4fedcf54}{cookie}}.domain)\ \{}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{for}(var\ key\ in\ \mbox{\hyperlink{xhr_8js_aff9ee544d15bca1a2e1438ebfde1d126}{\_clients}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ var\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af46081dcabb4da1ee7ca00228506bcb7}{client}}\ =\ \mbox{\hyperlink{xhr_8js_aff9ee544d15bca1a2e1438ebfde1d126}{\_clients}}[key];}
+\DoxyCodeLine{\ \ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{xhr_8js_a55f22d498ca401fddca364855629d1d3}{http}}.withinCookieDomain(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af46081dcabb4da1ee7ca00228506bcb7}{client}}.url,\ \mbox{\hyperlink{response_8js_a22c904eff955fbe7731d6d0e4fedcf54}{cookie}})\ \&\&}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af46081dcabb4da1ee7ca00228506bcb7}{client}}.secure\ ===\ \mbox{\hyperlink{response_8js_a22c904eff955fbe7731d6d0e4fedcf54}{cookie}}.secure)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af46081dcabb4da1ee7ca00228506bcb7}{client}}.setCookie(\mbox{\hyperlink{response_8js_a22c904eff955fbe7731d6d0e4fedcf54}{cookie}});}
+\DoxyCodeLine{\ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{xhr_8js_ae32dafd80ac36ab463a43bfc29e1fb48}{\_client}}.setCookie(\mbox{\hyperlink{response_8js_a22c904eff955fbe7731d6d0e4fedcf54}{cookie}});}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Sets a cookie.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cookie} & the cookie with parameters\+: name\+: the name of the cookie. value\+: the value of the cookie. comment\+: an optional comment string. max\+Age\+: the age of the cookie in seconds relative to created time. secure\+: true if the cookie must be sent over a secure protocol. http\+Only\+: true to restrict access to the cookie from javascript (inaffective since the cookies are stored in javascript). path\+: the path for the cookie. domain\+: optional domain the cookie belongs to (must start with dot). version\+: optional version of the cookie. created\+: creation time, in UTC seconds, of the cookie. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{xhr_8js_a35ce2fb71325da20e33278fcf54e5186}\index{xhr.js@{xhr.js}!SYNTAX\_ERR@{SYNTAX\_ERR}}
+\index{SYNTAX\_ERR@{SYNTAX\_ERR}!xhr.js@{xhr.js}}
+\doxysubsubsection{\texorpdfstring{SYNTAX\_ERR}{SYNTAX\_ERR}}
+{\footnotesize\ttfamily \label{xhr_8js_a35ce2fb71325da20e33278fcf54e5186} 
+var SYNTAX\+\_\+\+ERR = 12}
+
+\Hypertarget{xhr_8js_ac114f841a3001869620b8b795e11bf2b}\index{xhr.js@{xhr.js}!UNSENT@{UNSENT}}
+\index{UNSENT@{UNSENT}!xhr.js@{xhr.js}}
+\doxysubsubsection{\texorpdfstring{UNSENT}{UNSENT}}
+{\footnotesize\ttfamily \label{xhr_8js_ac114f841a3001869620b8b795e11bf2b} 
+var UNSENT = 0}
+
+\Hypertarget{xhr_8js_a92977f19b7f345f1aacbe093dfca8f98}\index{xhr.js@{xhr.js}!xhrApi@{xhrApi}}
+\index{xhrApi@{xhrApi}!xhr.js@{xhr.js}}
+\doxysubsubsection{\texorpdfstring{xhrApi}{xhrApi}}
+{\footnotesize\ttfamily \label{xhr_8js_a92977f19b7f345f1aacbe093dfca8f98} 
+var xhr\+Api = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{module.\+exports}} = \mbox{\hyperlink{_0dprotobufjs_2fetch_2index_8js_aed3454687db87107ad9304f19c09e60b}{forge.\+xhr}} = \mbox{\hyperlink{_0dprotobufjs_2fetch_2index_8js_aed3454687db87107ad9304f19c09e60b}{forge.\+xhr}} \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} \{\}}
+

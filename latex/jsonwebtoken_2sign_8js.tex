@@ -1,0 +1,253 @@
+\doxysection{backend/node\+\_\+modules/jsonwebtoken/sign.js File Reference}
+\hypertarget{jsonwebtoken_2sign_8js}{}\label{jsonwebtoken_2sign_8js}\index{backend/node\_modules/jsonwebtoken/sign.js@{backend/node\_modules/jsonwebtoken/sign.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{jsonwebtoken_2sign_8js_a6e1e4c35f6812504ad53063f53fea52c}{if}} (\mbox{\hyperlink{jsonwebtoken_2sign_8js_ab10141d65f9b06713f84dbfc3231336b}{PS\+\_\+\+SUPPORTED}})
+\item 
+function \mbox{\hyperlink{jsonwebtoken_2sign_8js_aeaec940b757beb563a3fcd4fca274597}{validate}} (schema, allow\+Unknown, \mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}}, parameter\+Name)
+\item 
+function \mbox{\hyperlink{jsonwebtoken_2sign_8js_a94177ce20c345193a89cf41b08effaaa}{validate\+Options}} (options)
+\item 
+function \mbox{\hyperlink{jsonwebtoken_2sign_8js_a0264a2d01373bf82a2cbfeb38077fda9}{validate\+Payload}} (payload)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{jsonwebtoken_2sign_8js_ad4f6a24f46fae2f67547f3e54bddf39a}{timespan}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./lib/timespan\textquotesingle{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{jsonwebtoken_2sign_8js_ab10141d65f9b06713f84dbfc3231336b}{PS\+\_\+\+SUPPORTED}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./lib/ps\+Supported\textquotesingle{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{jsonwebtoken_2sign_8js_af879b69040e73671a9d4cc24a103e176}{validate\+Asymmetric\+Key}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./lib/validate\+Asymmetric\+Key\textquotesingle{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{jsonwebtoken_2sign_8js_a3877814942bfa89ef869ee7db0482845}{jws}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}jws\textquotesingle{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{jsonwebtoken_2sign_8js_a7c30c4ff968dab1e67c416aa51085785}{includes}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}lodash.\+includes\textquotesingle{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{jsonwebtoken_2sign_8js_acaec72991e0e967f91894817fe1d3477}{is\+Boolean}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}lodash.\+isboolean\textquotesingle{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{jsonwebtoken_2sign_8js_a5b942944a316fc709d6d6c7f9523e4fc}{is\+Integer}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}lodash.\+isinteger\textquotesingle{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{jsonwebtoken_2sign_8js_a959e8eb1d81a79a4f6cedf8555054a5b}{is\+Number}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}lodash.\+isnumber\textquotesingle{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{jsonwebtoken_2sign_8js_aa01f98873cf9efbfa66989e3f77e19e5}{is\+Plain\+Object}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}lodash.\+isplainobject\textquotesingle{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{jsonwebtoken_2sign_8js_a8c3c58bf877a9f403957f429002acbe3}{is\+String}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}lodash.\+isstring\textquotesingle{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{jsonwebtoken_2sign_8js_a57be338e5a0421086e090f5cac111590}{once}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}lodash.\+once\textquotesingle{})
+\item 
+\mbox{\hyperlink{jsonwebtoken_2sign_8js_a92b303b76a3f942ea819498907d5e83c}{const}}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{jsonwebtoken_2sign_8js_af4c0d8a705829a840d06026cc7170ba7}{sign\+\_\+options\+\_\+schema}}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{jsonwebtoken_2sign_8js_ac862b956a1057c47faa78eb5cdcc6e4c}{registered\+\_\+claims\+\_\+schema}}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{jsonwebtoken_2sign_8js_a1f354b4478c54b508e96a3234033c773}{options\+\_\+to\+\_\+payload}}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{jsonwebtoken_2sign_8js_acd385379a3d3621de3852f7c37232551}{options\+\_\+for\+\_\+objects}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{jsonwebtoken_2sign_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{jsonwebtoken_2sign_8js_a6e1e4c35f6812504ad53063f53fea52c}\index{sign.js@{sign.js}!if@{if}}
+\index{if@{if}!sign.js@{sign.js}}
+\doxysubsubsection{\texorpdfstring{if()}{if()}}
+{\footnotesize\ttfamily \label{jsonwebtoken_2sign_8js_a6e1e4c35f6812504ad53063f53fea52c} 
+if (\begin{DoxyParamCaption}\item[{}]{PS\+\_\+\+SUPPORTED}{}\end{DoxyParamCaption})}
+
+\Hypertarget{jsonwebtoken_2sign_8js_aeaec940b757beb563a3fcd4fca274597}\index{sign.js@{sign.js}!validate@{validate}}
+\index{validate@{validate}!sign.js@{sign.js}}
+\doxysubsubsection{\texorpdfstring{validate()}{validate()}}
+{\footnotesize\ttfamily \label{jsonwebtoken_2sign_8js_aeaec940b757beb563a3fcd4fca274597} 
+function validate (\begin{DoxyParamCaption}\item[{}]{schema}{, }\item[{}]{allow\+Unknown}{, }\item[{}]{object}{, }\item[{}]{parameter\+Name}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{jsonwebtoken_2sign_8js_aa01f98873cf9efbfa66989e3f77e19e5}{is\+Plain\+Object}}, and \mbox{\hyperlink{fxp_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}}.
+
+\Hypertarget{jsonwebtoken_2sign_8js_a94177ce20c345193a89cf41b08effaaa}\index{sign.js@{sign.js}!validateOptions@{validateOptions}}
+\index{validateOptions@{validateOptions}!sign.js@{sign.js}}
+\doxysubsubsection{\texorpdfstring{validateOptions()}{validateOptions()}}
+{\footnotesize\ttfamily \label{jsonwebtoken_2sign_8js_a94177ce20c345193a89cf41b08effaaa} 
+function validate\+Options (\begin{DoxyParamCaption}\item[{}]{options}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{jsonwebtoken_2sign_8js_af4c0d8a705829a840d06026cc7170ba7}{sign\+\_\+options\+\_\+schema}}, and \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2uuid_2dist_2esm-browser_2validate_8js_a0e032d36ce373150820a75269842f789}{validate}}.
+
+\Hypertarget{jsonwebtoken_2sign_8js_a0264a2d01373bf82a2cbfeb38077fda9}\index{sign.js@{sign.js}!validatePayload@{validatePayload}}
+\index{validatePayload@{validatePayload}!sign.js@{sign.js}}
+\doxysubsubsection{\texorpdfstring{validatePayload()}{validatePayload()}}
+{\footnotesize\ttfamily \label{jsonwebtoken_2sign_8js_a0264a2d01373bf82a2cbfeb38077fda9} 
+function validate\+Payload (\begin{DoxyParamCaption}\item[{}]{payload}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{jsonwebtoken_2sign_8js_ac862b956a1057c47faa78eb5cdcc6e4c}{registered\+\_\+claims\+\_\+schema}}, and \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2uuid_2dist_2esm-browser_2validate_8js_a0e032d36ce373150820a75269842f789}{validate}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{jsonwebtoken_2sign_8js_a92b303b76a3f942ea819498907d5e83c}\index{sign.js@{sign.js}!const@{const}}
+\index{const@{const}!sign.js@{sign.js}}
+\doxysubsubsection{\texorpdfstring{const}{const}}
+{\footnotesize\ttfamily \label{jsonwebtoken_2sign_8js_a92b303b76a3f942ea819498907d5e83c} 
+const}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{\ KeyObject,\ createSecretKey,\ createPrivateKey\ \}\ =\ \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textcolor{stringliteral}{'crypto'})}
+\DoxyCodeLine{}
+\DoxyCodeLine{\mbox{\hyperlink{jsonwebtoken_2sign_8js_a92b303b76a3f942ea819498907d5e83c}{const}}\ SUPPORTED\_ALGS\ =\ ['\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a611146efec37f46ceb4d2b76ad2c0cd4}{RS256}}',\ '\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a866098745a27157958f30422631a3688}{RS384}}',\ '\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_ae3d5792e3a0169e48491a3f409785f5f}{RS512}}',\ '\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_aa80be98f5ebe9e6bec49ec43b6ebcad4}{ES256}}',\ '\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a5848304995124d0114f41a1c1fd81613}{ES384}}',\ 'ES512',\ 'HS256',\ '\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a964afa0d2f174f452236f1474bea2459}{HS384}}',\ '\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a5f6a510e0c5d259782da8100338e7fe1}{HS512}}',\ 'none']}
+
+\end{DoxyCode}
+\Hypertarget{jsonwebtoken_2sign_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\index{sign.js@{sign.js}!exports@{exports}}
+\index{exports@{exports}!sign.js@{sign.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \label{jsonwebtoken_2sign_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports}
+
+\Hypertarget{jsonwebtoken_2sign_8js_a7c30c4ff968dab1e67c416aa51085785}\index{sign.js@{sign.js}!includes@{includes}}
+\index{includes@{includes}!sign.js@{sign.js}}
+\doxysubsubsection{\texorpdfstring{includes}{includes}}
+{\footnotesize\ttfamily \label{jsonwebtoken_2sign_8js_a7c30c4ff968dab1e67c416aa51085785} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} includes = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}lodash.\+includes\textquotesingle{})}
+
+\Hypertarget{jsonwebtoken_2sign_8js_acaec72991e0e967f91894817fe1d3477}\index{sign.js@{sign.js}!isBoolean@{isBoolean}}
+\index{isBoolean@{isBoolean}!sign.js@{sign.js}}
+\doxysubsubsection{\texorpdfstring{isBoolean}{isBoolean}}
+{\footnotesize\ttfamily \label{jsonwebtoken_2sign_8js_acaec72991e0e967f91894817fe1d3477} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} is\+Boolean = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}lodash.\+isboolean\textquotesingle{})}
+
+\Hypertarget{jsonwebtoken_2sign_8js_a5b942944a316fc709d6d6c7f9523e4fc}\index{sign.js@{sign.js}!isInteger@{isInteger}}
+\index{isInteger@{isInteger}!sign.js@{sign.js}}
+\doxysubsubsection{\texorpdfstring{isInteger}{isInteger}}
+{\footnotesize\ttfamily \label{jsonwebtoken_2sign_8js_a5b942944a316fc709d6d6c7f9523e4fc} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} is\+Integer = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}lodash.\+isinteger\textquotesingle{})}
+
+\Hypertarget{jsonwebtoken_2sign_8js_a959e8eb1d81a79a4f6cedf8555054a5b}\index{sign.js@{sign.js}!isNumber@{isNumber}}
+\index{isNumber@{isNumber}!sign.js@{sign.js}}
+\doxysubsubsection{\texorpdfstring{isNumber}{isNumber}}
+{\footnotesize\ttfamily \label{jsonwebtoken_2sign_8js_a959e8eb1d81a79a4f6cedf8555054a5b} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} is\+Number = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}lodash.\+isnumber\textquotesingle{})}
+
+\Hypertarget{jsonwebtoken_2sign_8js_aa01f98873cf9efbfa66989e3f77e19e5}\index{sign.js@{sign.js}!isPlainObject@{isPlainObject}}
+\index{isPlainObject@{isPlainObject}!sign.js@{sign.js}}
+\doxysubsubsection{\texorpdfstring{isPlainObject}{isPlainObject}}
+{\footnotesize\ttfamily \label{jsonwebtoken_2sign_8js_aa01f98873cf9efbfa66989e3f77e19e5} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} is\+Plain\+Object = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}lodash.\+isplainobject\textquotesingle{})}
+
+\Hypertarget{jsonwebtoken_2sign_8js_a8c3c58bf877a9f403957f429002acbe3}\index{sign.js@{sign.js}!isString@{isString}}
+\index{isString@{isString}!sign.js@{sign.js}}
+\doxysubsubsection{\texorpdfstring{isString}{isString}}
+{\footnotesize\ttfamily \label{jsonwebtoken_2sign_8js_a8c3c58bf877a9f403957f429002acbe3} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} is\+String = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}lodash.\+isstring\textquotesingle{})}
+
+\Hypertarget{jsonwebtoken_2sign_8js_a3877814942bfa89ef869ee7db0482845}\index{sign.js@{sign.js}!jws@{jws}}
+\index{jws@{jws}!sign.js@{sign.js}}
+\doxysubsubsection{\texorpdfstring{jws}{jws}}
+{\footnotesize\ttfamily \label{jsonwebtoken_2sign_8js_a3877814942bfa89ef869ee7db0482845} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} jws = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}jws\textquotesingle{})}
+
+\Hypertarget{jsonwebtoken_2sign_8js_a57be338e5a0421086e090f5cac111590}\index{sign.js@{sign.js}!once@{once}}
+\index{once@{once}!sign.js@{sign.js}}
+\doxysubsubsection{\texorpdfstring{once}{once}}
+{\footnotesize\ttfamily \label{jsonwebtoken_2sign_8js_a57be338e5a0421086e090f5cac111590} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} once = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}lodash.\+once\textquotesingle{})}
+
+\Hypertarget{jsonwebtoken_2sign_8js_acd385379a3d3621de3852f7c37232551}\index{sign.js@{sign.js}!options\_for\_objects@{options\_for\_objects}}
+\index{options\_for\_objects@{options\_for\_objects}!sign.js@{sign.js}}
+\doxysubsubsection{\texorpdfstring{options\_for\_objects}{options\_for\_objects}}
+{\footnotesize\ttfamily \label{jsonwebtoken_2sign_8js_acd385379a3d3621de3852f7c37232551} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} options\+\_\+for\+\_\+objects}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \textcolor{stringliteral}{'expiresIn'},}
+\DoxyCodeLine{\ \ \textcolor{stringliteral}{'notBefore'},}
+\DoxyCodeLine{\ \ \textcolor{stringliteral}{'noTimestamp'},}
+\DoxyCodeLine{\ \ \textcolor{stringliteral}{'audience'},}
+\DoxyCodeLine{\ \ \textcolor{stringliteral}{'issuer'},}
+\DoxyCodeLine{\ \ \textcolor{stringliteral}{'subject'},}
+\DoxyCodeLine{\ \ \textcolor{stringliteral}{'jwtid'},}
+\DoxyCodeLine{]}
+
+\end{DoxyCode}
+\Hypertarget{jsonwebtoken_2sign_8js_a1f354b4478c54b508e96a3234033c773}\index{sign.js@{sign.js}!options\_to\_payload@{options\_to\_payload}}
+\index{options\_to\_payload@{options\_to\_payload}!sign.js@{sign.js}}
+\doxysubsubsection{\texorpdfstring{options\_to\_payload}{options\_to\_payload}}
+{\footnotesize\ttfamily \label{jsonwebtoken_2sign_8js_a1f354b4478c54b508e96a3234033c773} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} options\+\_\+to\+\_\+payload}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \textcolor{stringliteral}{'audience'}:\ \textcolor{stringliteral}{'aud'},}
+\DoxyCodeLine{\ \ \textcolor{stringliteral}{'issuer'}:\ \textcolor{stringliteral}{'iss'},}
+\DoxyCodeLine{\ \ \textcolor{stringliteral}{'subject'}:\ \textcolor{stringliteral}{'sub'},}
+\DoxyCodeLine{\ \ \textcolor{stringliteral}{'jwtid'}:\ \textcolor{stringliteral}{'jti'}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{jsonwebtoken_2sign_8js_ab10141d65f9b06713f84dbfc3231336b}\index{sign.js@{sign.js}!PS\_SUPPORTED@{PS\_SUPPORTED}}
+\index{PS\_SUPPORTED@{PS\_SUPPORTED}!sign.js@{sign.js}}
+\doxysubsubsection{\texorpdfstring{PS\_SUPPORTED}{PS\_SUPPORTED}}
+{\footnotesize\ttfamily \label{jsonwebtoken_2sign_8js_ab10141d65f9b06713f84dbfc3231336b} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} PS\+\_\+\+SUPPORTED = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./lib/ps\+Supported\textquotesingle{})}
+
+\Hypertarget{jsonwebtoken_2sign_8js_ac862b956a1057c47faa78eb5cdcc6e4c}\index{sign.js@{sign.js}!registered\_claims\_schema@{registered\_claims\_schema}}
+\index{registered\_claims\_schema@{registered\_claims\_schema}!sign.js@{sign.js}}
+\doxysubsubsection{\texorpdfstring{registered\_claims\_schema}{registered\_claims\_schema}}
+{\footnotesize\ttfamily \label{jsonwebtoken_2sign_8js_ac862b956a1057c47faa78eb5cdcc6e4c} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} registered\+\_\+claims\+\_\+schema}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ iat:\ \{\ \mbox{\hyperlink{ipaddr_8min_8js_a4ad57df698d2e4efcd4f4a0522aac4ec}{isValid}}:\ \mbox{\hyperlink{jsonwebtoken_2sign_8js_a959e8eb1d81a79a4f6cedf8555054a5b}{isNumber}},\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}:\ \textcolor{stringliteral}{'"{}iat"{}\ should\ be\ a\ number\ of\ seconds'}\ \},}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{prime_8worker_8min_8js_a8593eae3c208f00c7bcb61ff51ff8ac7}{exp}}:\ \{\ \mbox{\hyperlink{ipaddr_8min_8js_a4ad57df698d2e4efcd4f4a0522aac4ec}{isValid}}:\ \mbox{\hyperlink{jsonwebtoken_2sign_8js_a959e8eb1d81a79a4f6cedf8555054a5b}{isNumber}},\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}:\ \textcolor{stringliteral}{'"{}exp"{}\ should\ be\ a\ number\ of\ seconds'}\ \},}
+\DoxyCodeLine{\ \ nbf:\ \{\ \mbox{\hyperlink{ipaddr_8min_8js_a4ad57df698d2e4efcd4f4a0522aac4ec}{isValid}}:\ \mbox{\hyperlink{jsonwebtoken_2sign_8js_a959e8eb1d81a79a4f6cedf8555054a5b}{isNumber}},\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}:\ \textcolor{stringliteral}{'"{}nbf"{}\ should\ be\ a\ number\ of\ seconds'}\ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{jsonwebtoken_2sign_8js_af4c0d8a705829a840d06026cc7170ba7}\index{sign.js@{sign.js}!sign\_options\_schema@{sign\_options\_schema}}
+\index{sign\_options\_schema@{sign\_options\_schema}!sign.js@{sign.js}}
+\doxysubsubsection{\texorpdfstring{sign\_options\_schema}{sign\_options\_schema}}
+{\footnotesize\ttfamily \label{jsonwebtoken_2sign_8js_af4c0d8a705829a840d06026cc7170ba7} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} sign\+\_\+options\+\_\+schema}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ expiresIn:\ \{\ \mbox{\hyperlink{ipaddr_8min_8js_a4ad57df698d2e4efcd4f4a0522aac4ec}{isValid}}:\ \textcolor{keyword}{function}(\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}})\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{jsonwebtoken_2sign_8js_a5b942944a316fc709d6d6c7f9523e4fc}{isInteger}}(\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}})\ ||\ (\mbox{\hyperlink{jsonwebtoken_2sign_8js_a8c3c58bf877a9f403957f429002acbe3}{isString}}(\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}})\ \&\&\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}});\ \},\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}:\ \textcolor{stringliteral}{'"{}expiresIn"{}\ should\ be\ a\ number\ of\ seconds\ or\ string\ representing\ a\ timespan'}\ \},}
+\DoxyCodeLine{\ \ notBefore:\ \{\ \mbox{\hyperlink{ipaddr_8min_8js_a4ad57df698d2e4efcd4f4a0522aac4ec}{isValid}}:\ \textcolor{keyword}{function}(\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}})\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{jsonwebtoken_2sign_8js_a5b942944a316fc709d6d6c7f9523e4fc}{isInteger}}(\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}})\ ||\ (\mbox{\hyperlink{jsonwebtoken_2sign_8js_a8c3c58bf877a9f403957f429002acbe3}{isString}}(\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}})\ \&\&\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}});\ \},\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}:\ \textcolor{stringliteral}{'"{}notBefore"{}\ should\ be\ a\ number\ of\ seconds\ or\ string\ representing\ a\ timespan'}\ \},}
+\DoxyCodeLine{\ \ audience:\ \{\ \mbox{\hyperlink{ipaddr_8min_8js_a4ad57df698d2e4efcd4f4a0522aac4ec}{isValid}}:\ \textcolor{keyword}{function}(\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}})\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{jsonwebtoken_2sign_8js_a8c3c58bf877a9f403957f429002acbe3}{isString}}(\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}})\ ||\ \mbox{\hyperlink{src_2util_2minimal_8js_a325c4e317c38d8497130ebce7670be2f}{Array}}.isArray(\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}});\ \},\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}:\ \textcolor{stringliteral}{'"{}audience"{}\ must\ be\ a\ string\ or\ array'}\ \},}
+\DoxyCodeLine{\ \ algorithm:\ \{\ \mbox{\hyperlink{ipaddr_8min_8js_a4ad57df698d2e4efcd4f4a0522aac4ec}{isValid}}:\ \mbox{\hyperlink{jsonwebtoken_2sign_8js_a7c30c4ff968dab1e67c416aa51085785}{includes}}.bind(\textcolor{keyword}{null},\ SUPPORTED\_ALGS),\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}:\ \textcolor{stringliteral}{'"{}algorithm"{}\ must\ be\ a\ valid\ string\ enum\ value'}\ \},}
+\DoxyCodeLine{\ \ header:\ \{\ \mbox{\hyperlink{ipaddr_8min_8js_a4ad57df698d2e4efcd4f4a0522aac4ec}{isValid}}:\ \mbox{\hyperlink{jsonwebtoken_2sign_8js_aa01f98873cf9efbfa66989e3f77e19e5}{isPlainObject}},\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}:\ \textcolor{stringliteral}{'"{}header"{}\ must\ be\ an\ object'}\ \},}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aace6cbf6b92481670f8b8421548f7584}{encoding}}:\ \{\ \mbox{\hyperlink{ipaddr_8min_8js_a4ad57df698d2e4efcd4f4a0522aac4ec}{isValid}}:\ \mbox{\hyperlink{jsonwebtoken_2sign_8js_a8c3c58bf877a9f403957f429002acbe3}{isString}},\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}:\ \textcolor{stringliteral}{'"{}encoding"{}\ must\ be\ a\ string'}\ \},}
+\DoxyCodeLine{\ \ issuer:\ \{\ \mbox{\hyperlink{ipaddr_8min_8js_a4ad57df698d2e4efcd4f4a0522aac4ec}{isValid}}:\ \mbox{\hyperlink{jsonwebtoken_2sign_8js_a8c3c58bf877a9f403957f429002acbe3}{isString}},\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}:\ \textcolor{stringliteral}{'"{}issuer"{}\ must\ be\ a\ string'}\ \},}
+\DoxyCodeLine{\ \ subject:\ \{\ \mbox{\hyperlink{ipaddr_8min_8js_a4ad57df698d2e4efcd4f4a0522aac4ec}{isValid}}:\ \mbox{\hyperlink{jsonwebtoken_2sign_8js_a8c3c58bf877a9f403957f429002acbe3}{isString}},\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}:\ \textcolor{stringliteral}{'"{}subject"{}\ must\ be\ a\ string'}\ \},}
+\DoxyCodeLine{\ \ jwtid:\ \{\ \mbox{\hyperlink{ipaddr_8min_8js_a4ad57df698d2e4efcd4f4a0522aac4ec}{isValid}}:\ \mbox{\hyperlink{jsonwebtoken_2sign_8js_a8c3c58bf877a9f403957f429002acbe3}{isString}},\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}:\ \textcolor{stringliteral}{'"{}jwtid"{}\ must\ be\ a\ string'}\ \},}
+\DoxyCodeLine{\ \ noTimestamp:\ \{\ \mbox{\hyperlink{ipaddr_8min_8js_a4ad57df698d2e4efcd4f4a0522aac4ec}{isValid}}:\ \mbox{\hyperlink{jsonwebtoken_2sign_8js_acaec72991e0e967f91894817fe1d3477}{isBoolean}},\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}:\ \textcolor{stringliteral}{'"{}noTimestamp"{}\ must\ be\ a\ boolean'}\ \},}
+\DoxyCodeLine{\ \ keyid:\ \{\ \mbox{\hyperlink{ipaddr_8min_8js_a4ad57df698d2e4efcd4f4a0522aac4ec}{isValid}}:\ \mbox{\hyperlink{jsonwebtoken_2sign_8js_a8c3c58bf877a9f403957f429002acbe3}{isString}},\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}:\ \textcolor{stringliteral}{'"{}keyid"{}\ must\ be\ a\ string'}\ \},}
+\DoxyCodeLine{\ \ mutatePayload:\ \{\ \mbox{\hyperlink{ipaddr_8min_8js_a4ad57df698d2e4efcd4f4a0522aac4ec}{isValid}}:\ \mbox{\hyperlink{jsonwebtoken_2sign_8js_acaec72991e0e967f91894817fe1d3477}{isBoolean}},\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}:\ \textcolor{stringliteral}{'"{}mutatePayload"{}\ must\ be\ a\ boolean'}\ \},}
+\DoxyCodeLine{\ \ allowInsecureKeySizes:\ \{\ \mbox{\hyperlink{ipaddr_8min_8js_a4ad57df698d2e4efcd4f4a0522aac4ec}{isValid}}:\ \mbox{\hyperlink{jsonwebtoken_2sign_8js_acaec72991e0e967f91894817fe1d3477}{isBoolean}},\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}:\ \textcolor{stringliteral}{'"{}allowInsecureKeySizes"{}\ must\ be\ a\ boolean'}\},}
+\DoxyCodeLine{\ \ allowInvalidAsymmetricKeyTypes:\ \{\ \mbox{\hyperlink{ipaddr_8min_8js_a4ad57df698d2e4efcd4f4a0522aac4ec}{isValid}}:\ \mbox{\hyperlink{jsonwebtoken_2sign_8js_acaec72991e0e967f91894817fe1d3477}{isBoolean}},\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}:\ \textcolor{stringliteral}{'"{}allowInvalidAsymmetricKeyTypes"{}\ must\ be\ a\ boolean'}\}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{jsonwebtoken_2sign_8js_ad4f6a24f46fae2f67547f3e54bddf39a}\index{sign.js@{sign.js}!timespan@{timespan}}
+\index{timespan@{timespan}!sign.js@{sign.js}}
+\doxysubsubsection{\texorpdfstring{timespan}{timespan}}
+{\footnotesize\ttfamily \label{jsonwebtoken_2sign_8js_ad4f6a24f46fae2f67547f3e54bddf39a} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} timespan = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./lib/timespan\textquotesingle{})}
+
+\Hypertarget{jsonwebtoken_2sign_8js_af879b69040e73671a9d4cc24a103e176}\index{sign.js@{sign.js}!validateAsymmetricKey@{validateAsymmetricKey}}
+\index{validateAsymmetricKey@{validateAsymmetricKey}!sign.js@{sign.js}}
+\doxysubsubsection{\texorpdfstring{validateAsymmetricKey}{validateAsymmetricKey}}
+{\footnotesize\ttfamily \label{jsonwebtoken_2sign_8js_af879b69040e73671a9d4cc24a103e176} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} validate\+Asymmetric\+Key = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./lib/validate\+Asymmetric\+Key\textquotesingle{})}
+

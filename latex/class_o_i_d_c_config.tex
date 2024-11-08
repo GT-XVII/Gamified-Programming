@@ -1,0 +1,182 @@
+\doxysection{OIDCConfig Class Reference}
+\hypertarget{class_o_i_d_c_config}{}\label{class_o_i_d_c_config}\index{OIDCConfig@{OIDCConfig}}
+
+
+Collaboration diagram for OIDCConfig\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{class_o_i_d_c_config__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_o_i_d_c_config_a7930bb6ce8f66b938a500e56687b0852}{constructor}} (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ac70ac40ef8199c59316b35022dd21914}{response}})
+\item 
+\mbox{\hyperlink{class_o_i_d_c_config_a9f93f714c277b5c2b59099272ea4845c}{to\+JSON}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_o_i_d_c_config_afee7c79e08fe82f04a1349d1e10c3062}{build\+Server\+Request}} (options, ignore\+Missing\+Fields=\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a5df37b7f02e5cdc7d9412b7f872b8e01}{false}})
+\item 
+static \mbox{\hyperlink{class_o_i_d_c_config_ad1b49b5bda0fc1945c5dde44e20c7216}{get\+Provider\+Id\+From\+Resource\+Name}} (resource\+Name)
+\item 
+static \mbox{\hyperlink{class_o_i_d_c_config_a0f2b8556e65530c8843b52de96510285}{is\+Provider\+Id}} (provider\+Id)
+\item 
+static \mbox{\hyperlink{class_o_i_d_c_config_a32eaf5bdbb9286130abbfeca5d73453c}{validate}} (options, ignore\+Missing\+Fields=\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a5df37b7f02e5cdc7d9412b7f872b8e01}{false}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Defines the \doxylink{class_o_i_d_c_config}{OIDCConfig} class used to convert a client side configuration to its server side representation. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_o_i_d_c_config_afee7c79e08fe82f04a1349d1e10c3062}\index{OIDCConfig@{OIDCConfig}!buildServerRequest@{buildServerRequest}}
+\index{buildServerRequest@{buildServerRequest}!OIDCConfig@{OIDCConfig}}
+\doxysubsubsection{\texorpdfstring{buildServerRequest()}{buildServerRequest()}}
+{\footnotesize\ttfamily \label{class_o_i_d_c_config_afee7c79e08fe82f04a1349d1e10c3062} 
+static OIDCConfig\+::build\+Server\+Request (\begin{DoxyParamCaption}\item[{}]{options}{, }\item[{}]{ignore\+Missing\+Fields}{ = {\ttfamily \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a5df37b7f02e5cdc7d9412b7f872b8e01}{false}}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Converts a client side request to a OIDCConfig\+Server\+Request which is the format accepted by the backend server. Throws an error if validation fails. If the request is not a \doxylink{class_o_i_d_c_config}{OIDCConfig} request, returns null.
+
+
+\begin{DoxyParams}{Parameters}
+{\em options} & -\/ The options object to convert to a server request. \\
+\hline
+{\em ignore\+Missing\+Fields} & -\/ Whether to ignore missing fields. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The resulting server request or null if not valid. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}}, \mbox{\hyperlink{class_o_i_d_c_config_a32eaf5bdbb9286130abbfeca5d73453c}{validate()}}, and \mbox{\hyperlink{auth-config_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_o_i_d_c_config_afee7c79e08fe82f04a1349d1e10c3062_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_o_i_d_c_config_a7930bb6ce8f66b938a500e56687b0852}\index{OIDCConfig@{OIDCConfig}!constructor@{constructor}}
+\index{constructor@{constructor}!OIDCConfig@{OIDCConfig}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_o_i_d_c_config_a7930bb6ce8f66b938a500e56687b0852} 
+OIDCConfig\+::constructor (\begin{DoxyParamCaption}\item[{}]{response}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+The \doxylink{class_o_i_d_c_config}{OIDCConfig} constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em response} & -\/ The server side response used to initialize the \doxylink{class_o_i_d_c_config}{OIDCConfig} object. @constructor \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{debug_2src_2debug_8js_af2904d770a67b3b7593a990075e6541a}{enabled}}, \mbox{\hyperlink{auth-config_8js_af1a99a3ff1a35c114bdd06cc7252beb6}{error\+\_\+1}}, \mbox{\hyperlink{class_o_i_d_c_config_ad1b49b5bda0fc1945c5dde44e20c7216}{get\+Provider\+Id\+From\+Resource\+Name()}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ac70ac40ef8199c59316b35022dd21914}{response}}, and \mbox{\hyperlink{auth-config_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_o_i_d_c_config_a7930bb6ce8f66b938a500e56687b0852_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_o_i_d_c_config_ad1b49b5bda0fc1945c5dde44e20c7216}\index{OIDCConfig@{OIDCConfig}!getProviderIdFromResourceName@{getProviderIdFromResourceName}}
+\index{getProviderIdFromResourceName@{getProviderIdFromResourceName}!OIDCConfig@{OIDCConfig}}
+\doxysubsubsection{\texorpdfstring{getProviderIdFromResourceName()}{getProviderIdFromResourceName()}}
+{\footnotesize\ttfamily \label{class_o_i_d_c_config_ad1b49b5bda0fc1945c5dde44e20c7216} 
+static OIDCConfig\+::get\+Provider\+Id\+From\+Resource\+Name (\begin{DoxyParamCaption}\item[{}]{resource\+Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Returns the provider ID corresponding to the resource name if available.
+
+
+\begin{DoxyParams}{Parameters}
+{\em resource\+Name} & -\/ The server side resource name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The provider ID corresponding to the resource, null otherwise. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_o_i_d_c_config_ad1b49b5bda0fc1945c5dde44e20c7216_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_o_i_d_c_config_a0f2b8556e65530c8843b52de96510285}\index{OIDCConfig@{OIDCConfig}!isProviderId@{isProviderId}}
+\index{isProviderId@{isProviderId}!OIDCConfig@{OIDCConfig}}
+\doxysubsubsection{\texorpdfstring{isProviderId()}{isProviderId()}}
+{\footnotesize\ttfamily \label{class_o_i_d_c_config_a0f2b8556e65530c8843b52de96510285} 
+static OIDCConfig\+::is\+Provider\+Id (\begin{DoxyParamCaption}\item[{}]{provider\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em provider\+Id} & -\/ The provider ID to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether the provider ID corresponds to an OIDC provider. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{auth-config_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}}.
+
+\Hypertarget{class_o_i_d_c_config_a9f93f714c277b5c2b59099272ea4845c}\index{OIDCConfig@{OIDCConfig}!toJSON@{toJSON}}
+\index{toJSON@{toJSON}!OIDCConfig@{OIDCConfig}}
+\doxysubsubsection{\texorpdfstring{toJSON()}{toJSON()}}
+{\footnotesize\ttfamily \label{class_o_i_d_c_config_a9f93f714c277b5c2b59099272ea4845c} 
+OIDCConfig\+::to\+JSON (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+The plain object representation of the \doxylink{class_o_i_d_c_config}{OIDCConfig}. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{auth-config_8js_a3c878464c635c5cd2043d7e066bb187b}{deep\+\_\+copy\+\_\+1}}, and \mbox{\hyperlink{debug_2src_2debug_8js_af2904d770a67b3b7593a990075e6541a}{enabled}}.
+
+\Hypertarget{class_o_i_d_c_config_a32eaf5bdbb9286130abbfeca5d73453c}\index{OIDCConfig@{OIDCConfig}!validate@{validate}}
+\index{validate@{validate}!OIDCConfig@{OIDCConfig}}
+\doxysubsubsection{\texorpdfstring{validate()}{validate()}}
+{\footnotesize\ttfamily \label{class_o_i_d_c_config_a32eaf5bdbb9286130abbfeca5d73453c} 
+static OIDCConfig\+::validate (\begin{DoxyParamCaption}\item[{}]{options}{, }\item[{}]{ignore\+Missing\+Fields}{ = {\ttfamily \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a5df37b7f02e5cdc7d9412b7f872b8e01}{false}}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Validates the \doxylink{class_o_i_d_c_config}{OIDCConfig} options object. Throws an error on failure.
+
+
+\begin{DoxyParams}{Parameters}
+{\em options} & -\/ The options object to validate. \\
+\hline
+{\em ignore\+Missing\+Fields} & -\/ Whether to ignore missing fields. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}, \mbox{\hyperlink{rxjs_8umd_8js_a729ec4717f914fce241d4dccc9a03066}{config}}, \mbox{\hyperlink{debug_2src_2debug_8js_af2904d770a67b3b7593a990075e6541a}{enabled}}, \mbox{\hyperlink{auth-config_8js_af1a99a3ff1a35c114bdd06cc7252beb6}{error\+\_\+1}}, \mbox{\hyperlink{express_2lib_2request_8js_a5e3afd97276cc403924d1a449a83ea84}{is}}, \mbox{\hyperlink{long_2index_8js_ad7dc44f0ebdb746f4a5b0612ae9315cb}{not}}, and \mbox{\hyperlink{auth-config_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_o_i_d_c_config_a32eaf5bdbb9286130abbfeca5d73453c_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/firebase-\/admin/lib/auth/\mbox{\hyperlink{auth-config_8js}{auth-\/config.\+js}}\end{DoxyCompactItemize}

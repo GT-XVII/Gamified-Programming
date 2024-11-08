@@ -1,0 +1,7 @@
+<map id="GeoPoint::longitude" name="GeoPoint::longitude">
+<area shape="rect" id="Node000001" title=" " alt="" coords="202,31,337,56"/>
+<area shape="rect" id="Node000002" href="$class_geo_point.html#a1a69220bf8c31551fcb207dddf8feee7" title=" " alt="" coords="5,5,154,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="186,35,154,31,154,25,187,30"/>
+<area shape="rect" id="Node000003" href="$class_geo_point.html#a003e93b6fad362160f051d5414065d8f" title=" " alt="" coords="17,55,142,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="187,57,143,62,142,57,186,51"/>
+</map>

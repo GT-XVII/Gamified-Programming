@@ -1,0 +1,119 @@
+\doxysection{App\+Check Class Reference}
+\hypertarget{class_app_check}{}\label{class_app_check}\index{AppCheck@{AppCheck}}
+
+
+Collaboration diagram for App\+Check\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{class_app_check__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_app_check_a88ecb13f88dd62333ea70ced04acf67c}{constructor}} (\mbox{\hyperlink{database_2dist_2index_8cjs_8js_a7b225fcb720e4d5ed2bbf60e28a25e6d}{app}})
+\item 
+\mbox{\hyperlink{class_app_check_a28c22d43c65ee8e9b64a50f69e8c7ba4}{create\+Token}} (app\+Id, options)
+\item 
+\mbox{\hyperlink{class_app_check_ae39ff7cdd8a3dcf98c29a49a5c1dc5aa}{verify\+Token}} (app\+Check\+Token, options)
+\item 
+\mbox{\hyperlink{class_app_check_a91050f359217638c22d2e80b71532d23}{validate\+Verify\+App\+Check\+Token\+Options}} (options)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The Firebase {\ttfamily \doxylink{class_app_check}{App\+Check}} service interface. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_app_check_a88ecb13f88dd62333ea70ced04acf67c}\index{AppCheck@{AppCheck}!constructor@{constructor}}
+\index{constructor@{constructor}!AppCheck@{AppCheck}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_app_check_a88ecb13f88dd62333ea70ced04acf67c} 
+App\+Check\+::constructor (\begin{DoxyParamCaption}\item[{}]{app}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em app} & -\/ The app for this \doxylink{class_app_check}{App\+Check} service. @constructor \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{database_2dist_2index_8cjs_8js_a7b225fcb720e4d5ed2bbf60e28a25e6d}{app}}, \mbox{\hyperlink{app-check_8js_ac58e5405a5d8f4026dcb42c9ab8c2505}{app\+\_\+check\+\_\+api\+\_\+client\+\_\+internal\+\_\+1}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af46081dcabb4da1ee7ca00228506bcb7}{client}}, \mbox{\hyperlink{app-check_8js_a07bbca050c948e04caf3a3a1c3164b33}{crypto\+\_\+signer\+\_\+1}}, \mbox{\hyperlink{app-check_8js_ab25c7655f3c10a7d29252908fefeb810}{token\+\_\+generator\+\_\+1}}, and \mbox{\hyperlink{app-check_8js_acb62b4ad4d99507aaaba62a26f5127db}{token\+\_\+verifier\+\_\+1}}.
+
+\Hypertarget{class_app_check_a28c22d43c65ee8e9b64a50f69e8c7ba4}\index{AppCheck@{AppCheck}!createToken@{createToken}}
+\index{createToken@{createToken}!AppCheck@{AppCheck}}
+\doxysubsubsection{\texorpdfstring{createToken()}{createToken()}}
+{\footnotesize\ttfamily \label{class_app_check_a28c22d43c65ee8e9b64a50f69e8c7ba4} 
+App\+Check\+::create\+Token (\begin{DoxyParamCaption}\item[{}]{app\+Id}{, }\item[{}]{options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Creates a new {\ttfamily \doxylink{}{App\+Check\+Token}} that can be sent back to a client.
+
+
+\begin{DoxyParams}{Parameters}
+{\em app\+Id} & -\/ The app ID to use as the \doxylink{class_j_w_t}{JWT} app\+\_\+id. \\
+\hline
+{\em options} & -\/ Optional options object when creating a new App Check Token.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_a}{A} promise that fulfills with a {\ttfamily App\+Check\+Token}. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af46081dcabb4da1ee7ca00228506bcb7}{client}}.
+
+\Hypertarget{class_app_check_a91050f359217638c22d2e80b71532d23}\index{AppCheck@{AppCheck}!validateVerifyAppCheckTokenOptions@{validateVerifyAppCheckTokenOptions}}
+\index{validateVerifyAppCheckTokenOptions@{validateVerifyAppCheckTokenOptions}!AppCheck@{AppCheck}}
+\doxysubsubsection{\texorpdfstring{validateVerifyAppCheckTokenOptions()}{validateVerifyAppCheckTokenOptions()}}
+{\footnotesize\ttfamily \label{class_app_check_a91050f359217638c22d2e80b71532d23} 
+App\+Check\+::validate\+Verify\+App\+Check\+Token\+Options (\begin{DoxyParamCaption}\item[{}]{options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{app-check_8js_ac58e5405a5d8f4026dcb42c9ab8c2505}{app\+\_\+check\+\_\+api\+\_\+client\+\_\+internal\+\_\+1}}, and \mbox{\hyperlink{app-check_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_app_check_a91050f359217638c22d2e80b71532d23_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_app_check_ae39ff7cdd8a3dcf98c29a49a5c1dc5aa}\index{AppCheck@{AppCheck}!verifyToken@{verifyToken}}
+\index{verifyToken@{verifyToken}!AppCheck@{AppCheck}}
+\doxysubsubsection{\texorpdfstring{verifyToken()}{verifyToken()}}
+{\footnotesize\ttfamily \label{class_app_check_ae39ff7cdd8a3dcf98c29a49a5c1dc5aa} 
+App\+Check\+::verify\+Token (\begin{DoxyParamCaption}\item[{}]{app\+Check\+Token}{, }\item[{}]{options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Verifies a Firebase App Check token (\doxylink{class_j_w_t}{JWT}). If the token is valid, the promise is fulfilled with the token\textquotesingle{}s decoded claims; otherwise, the promise is rejected.
+
+
+\begin{DoxyParams}{Parameters}
+{\em app\+Check\+Token} & -\/ The App Check token to verify. \\
+\hline
+{\em options} & -\/ Optional {\ttfamily \doxylink{}{Verify\+App\+Check\+Token\+Options}} object when verifying an App Check Token.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_a}{A} promise fulfilled with the token\textquotesingle{}s decoded claims if the App Check token is valid; otherwise, a rejected promise. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af46081dcabb4da1ee7ca00228506bcb7}{client}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ac715f092c1be8b85e569d107bd5ddcf3}{consume}}, \mbox{\hyperlink{util_2dist_2index_8cjs_8js_a87da3d8264af1c9427605148f20dd9c4}{token}}, and \mbox{\hyperlink{class_app_check_a91050f359217638c22d2e80b71532d23}{validate\+Verify\+App\+Check\+Token\+Options()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_app_check_ae39ff7cdd8a3dcf98c29a49a5c1dc5aa_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/firebase-\/admin/lib/app-\/check/\mbox{\hyperlink{app-check_8js}{app-\/check.\+js}}\end{DoxyCompactItemize}

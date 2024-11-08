@@ -1,0 +1,234 @@
+\doxysection{Dns\+Resolver Class Reference}
+\hypertarget{class_dns_resolver}{}\label{class_dns_resolver}\index{DnsResolver@{DnsResolver}}
+
+
+Collaboration diagram for Dns\+Resolver\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{class_dns_resolver__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_dns_resolver_aa46bebfa9f241e7f56b231a5fe3ec932}{constructor}} (target, listener, channel\+Options)
+\item 
+\mbox{\hyperlink{class_dns_resolver_ab15eefc46e89c4d5c9e166138378b92f}{start\+Resolution}} ()
+\item 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{class_dns_resolver_a3c28e0f03357dbc03d52ea8243a400ca}{lookup}} (hostname)
+\item 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{class_dns_resolver_a4d737ad085850fa9daa5f3577e841e59}{resolve\+Txt}} (hostname)
+\item 
+\mbox{\hyperlink{class_dns_resolver_a79c550c60295a2d673e2e27b6cd0ee57}{start\+Next\+Resolution\+Timer}} ()
+\item 
+\mbox{\hyperlink{class_dns_resolver_a016b3122b08d68ffb784c50d8be49593}{stop\+Next\+Resolution\+Timer}} ()
+\item 
+\mbox{\hyperlink{class_dns_resolver_ad286e3ee09a4c446704e78f777fabf12}{start\+Resolution\+With\+Backoff}} ()
+\item 
+\mbox{\hyperlink{class_dns_resolver_ae042b689ff639eeb1e3c5282ca3f4e36}{update\+Resolution}} ()
+\item 
+\mbox{\hyperlink{class_dns_resolver_a83944ddd81780f21dbffa773cd054c1f}{destroy}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_dns_resolver_a110dc84dcd8e98de12885276b75aec89}{get\+Default\+Authority}} (target)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Resolver implementation that handles DNS names and IP addresses. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_dns_resolver_aa46bebfa9f241e7f56b231a5fe3ec932}\index{DnsResolver@{DnsResolver}!constructor@{constructor}}
+\index{constructor@{constructor}!DnsResolver@{DnsResolver}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_dns_resolver_aa46bebfa9f241e7f56b231a5fe3ec932} 
+Dns\+Resolver\+::constructor (\begin{DoxyParamCaption}\item[{}]{target}{, }\item[{}]{listener}{, }\item[{}]{channel\+Options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{logger_2dist_2esm_2index_8esm5_8js_a0adf123df8967a14b5bdd9ff3bbe2d0c}{\+\_\+a}}, \mbox{\hyperlink{logging_8js_a53284eb14d953f3ba58806fc49cd4f7c}{\+\_\+b}}, \mbox{\hyperlink{logging_8js_aa9188bfce96541e3026ad83bee2ab87c}{\+\_\+c}}, \mbox{\hyperlink{resolver-dns_8js_ac6ee4d06458738135616d807a5a13342}{backoff\+\_\+timeout\+\_\+1}}, \mbox{\hyperlink{resolver-dns_8js_ad33cb6840349d3bc93f4fe9de15a6f8f}{constants\+\_\+1}}, \mbox{\hyperlink{resolver-dns_8js_a7feb272489cfa3a94398509c8cdfbbc6}{DEFAULT\+\_\+\+MIN\+\_\+\+TIME\+\_\+\+BETWEEN\+\_\+\+RESOLUTIONS\+\_\+\+MS}}, \mbox{\hyperlink{resolver-dns_8js_abf5978b6e5fc7968138ce4812b4aa8fd}{dns\+\_\+1}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}}, \mbox{\hyperlink{resolver-dns_8js_a7ccaf64b99eed08557e09f7f79748878}{metadata\+\_\+1}}, \mbox{\hyperlink{resolver-dns_8js_a15ed9b791bc1d5f63e4dc8a56c848361}{net\+\_\+1}}, \mbox{\hyperlink{class_dns_resolver_ad286e3ee09a4c446704e78f777fabf12}{start\+Resolution\+With\+Backoff()}}, \mbox{\hyperlink{logging_8js_acb1634453d1705af9683695efa3847e6}{trace}}, and \mbox{\hyperlink{resolver-dns_8js_a5a0788f0fd3744f268bfd27b3acc9857}{uri\+\_\+parser\+\_\+1}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dns_resolver_aa46bebfa9f241e7f56b231a5fe3ec932_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_dns_resolver_a83944ddd81780f21dbffa773cd054c1f}\index{DnsResolver@{DnsResolver}!destroy@{destroy}}
+\index{destroy@{destroy}!DnsResolver@{DnsResolver}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily \label{class_dns_resolver_a83944ddd81780f21dbffa773cd054c1f} 
+Dns\+Resolver\+::destroy (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Reset the resolver to the same state it had when it was created. In-\/flight DNS requests cannot be cancelled, but they are discarded and their results will be ignored. 
+
+References \mbox{\hyperlink{class_dns_resolver_a016b3122b08d68ffb784c50d8be49593}{stop\+Next\+Resolution\+Timer()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dns_resolver_a83944ddd81780f21dbffa773cd054c1f_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_dns_resolver_a110dc84dcd8e98de12885276b75aec89}\index{DnsResolver@{DnsResolver}!getDefaultAuthority@{getDefaultAuthority}}
+\index{getDefaultAuthority@{getDefaultAuthority}!DnsResolver@{DnsResolver}}
+\doxysubsubsection{\texorpdfstring{getDefaultAuthority()}{getDefaultAuthority()}}
+{\footnotesize\ttfamily \label{class_dns_resolver_a110dc84dcd8e98de12885276b75aec89} 
+static Dns\+Resolver\+::get\+Default\+Authority (\begin{DoxyParamCaption}\item[{}]{target}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Get the default authority for the given target. For IP targets, that is the IP address. For DNS targets, it is the hostname. 
+\begin{DoxyParams}{Parameters}
+{\em target} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dns_resolver_a3c28e0f03357dbc03d52ea8243a400ca}\index{DnsResolver@{DnsResolver}!lookup@{lookup}}
+\index{lookup@{lookup}!DnsResolver@{DnsResolver}}
+\doxysubsubsection{\texorpdfstring{lookup()}{lookup()}}
+{\footnotesize\ttfamily \label{class_dns_resolver_a3c28e0f03357dbc03d52ea8243a400ca} 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} Dns\+Resolver\+::lookup (\begin{DoxyParamCaption}\item[{}]{hostname}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{application_8js_adb8f173cc9d0f47e38ae05e7bb965c99}{all}}, \mbox{\hyperlink{resolver-dns_8js_abf5978b6e5fc7968138ce4812b4aa8fd}{dns\+\_\+1}}, \mbox{\hyperlink{resolver-dns_8js_a52705d22452f341a81f064015a62733e}{environment\+\_\+1}}, \mbox{\hyperlink{util_2dist_2index_8cjs_8js_af0ed083046515bb220ecbeab418ed9d4}{map}}, \mbox{\hyperlink{__get_tag_8js_abace523389c17bce1848e3a427871700}{Promise}}, \mbox{\hyperlink{cjs_2internal_2observable_2dom_2_web_socket_subject_8js_ae1a6322b130a00a3357599cfec0feebe}{reason}}, \mbox{\hyperlink{lodash_2core_8js_a348c112a244660a2f280cda892658c24}{result}}, and \mbox{\hyperlink{logging_8js_acb1634453d1705af9683695efa3847e6}{trace}}.
+
+\Hypertarget{class_dns_resolver_a4d737ad085850fa9daa5f3577e841e59}\index{DnsResolver@{DnsResolver}!resolveTxt@{resolveTxt}}
+\index{resolveTxt@{resolveTxt}!DnsResolver@{DnsResolver}}
+\doxysubsubsection{\texorpdfstring{resolveTxt()}{resolveTxt()}}
+{\footnotesize\ttfamily \label{class_dns_resolver_a4d737ad085850fa9daa5f3577e841e59} 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} Dns\+Resolver\+::resolve\+Txt (\begin{DoxyParamCaption}\item[{}]{hostname}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{resolver-dns_8js_abf5978b6e5fc7968138ce4812b4aa8fd}{dns\+\_\+1}}, \mbox{\hyperlink{resolver-dns_8js_a52705d22452f341a81f064015a62733e}{environment\+\_\+1}}, and \mbox{\hyperlink{logging_8js_acb1634453d1705af9683695efa3847e6}{trace}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dns_resolver_a4d737ad085850fa9daa5f3577e841e59_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_dns_resolver_a79c550c60295a2d673e2e27b6cd0ee57}\index{DnsResolver@{DnsResolver}!startNextResolutionTimer@{startNextResolutionTimer}}
+\index{startNextResolutionTimer@{startNextResolutionTimer}!DnsResolver@{DnsResolver}}
+\doxysubsubsection{\texorpdfstring{startNextResolutionTimer()}{startNextResolutionTimer()}}
+{\footnotesize\ttfamily \label{class_dns_resolver_a79c550c60295a2d673e2e27b6cd0ee57} 
+Dns\+Resolver\+::start\+Next\+Resolution\+Timer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{logger_2dist_2esm_2index_8esm5_8js_a0adf123df8967a14b5bdd9ff3bbe2d0c}{\+\_\+a}}, \mbox{\hyperlink{logging_8js_a53284eb14d953f3ba58806fc49cd4f7c}{\+\_\+b}}, \mbox{\hyperlink{class_dns_resolver_ad286e3ee09a4c446704e78f777fabf12}{start\+Resolution\+With\+Backoff()}}, and \mbox{\hyperlink{class_dns_resolver_a016b3122b08d68ffb784c50d8be49593}{stop\+Next\+Resolution\+Timer()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dns_resolver_a79c550c60295a2d673e2e27b6cd0ee57_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dns_resolver_a79c550c60295a2d673e2e27b6cd0ee57_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_dns_resolver_ab15eefc46e89c4d5c9e166138378b92f}\index{DnsResolver@{DnsResolver}!startResolution@{startResolution}}
+\index{startResolution@{startResolution}!DnsResolver@{DnsResolver}}
+\doxysubsubsection{\texorpdfstring{startResolution()}{startResolution()}}
+{\footnotesize\ttfamily \label{class_dns_resolver_ab15eefc46e89c4d5c9e166138378b92f} 
+Dns\+Resolver\+::start\+Resolution (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+If the target is an IP address, just provide that address as a result. Otherwise, initiate \doxylink{class_a}{A}, AAAA, and TXT lookups 
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{rxjs_8umd_8js_a729ec4717f914fce241d4dccc9a03066}{config}}, \mbox{\hyperlink{resolver-dns_8js_ad33cb6840349d3bc93f4fe9de15a6f8f}{constants\+\_\+1}}, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2uuid_2dist_2esm-browser_2v35_8js_af86d4099b861117a1d0bf696dbd14abc}{DNS}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}}, \mbox{\hyperlink{view_8js_add32cc28be0ad0eb75631e8fd7276dc0}{lookup}}, \mbox{\hyperlink{resolver-dns_8js_a7ccaf64b99eed08557e09f7f79748878}{metadata\+\_\+1}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa96c2329bbb4c535fae1093499f4ad49}{parse}}, \mbox{\hyperlink{class_dns_resolver_a4d737ad085850fa9daa5f3577e841e59}{resolve\+Txt()}}, \mbox{\hyperlink{resolver-dns_8js_afcdc66db811e8a5938db603aec38b37a}{service\+\_\+config\+\_\+1}}, \mbox{\hyperlink{rxjs_8umd_8js_a5008ba0c81d22f889926a449c993ac53}{set\+Immediate}}, \mbox{\hyperlink{class_dns_resolver_a016b3122b08d68ffb784c50d8be49593}{stop\+Next\+Resolution\+Timer()}}, \mbox{\hyperlink{logging_8js_acb1634453d1705af9683695efa3847e6}{trace}}, and \mbox{\hyperlink{resolver-dns_8js_a5a0788f0fd3744f268bfd27b3acc9857}{uri\+\_\+parser\+\_\+1}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dns_resolver_ab15eefc46e89c4d5c9e166138378b92f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dns_resolver_ab15eefc46e89c4d5c9e166138378b92f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_dns_resolver_ad286e3ee09a4c446704e78f777fabf12}\index{DnsResolver@{DnsResolver}!startResolutionWithBackoff@{startResolutionWithBackoff}}
+\index{startResolutionWithBackoff@{startResolutionWithBackoff}!DnsResolver@{DnsResolver}}
+\doxysubsubsection{\texorpdfstring{startResolutionWithBackoff()}{startResolutionWithBackoff()}}
+{\footnotesize\ttfamily \label{class_dns_resolver_ad286e3ee09a4c446704e78f777fabf12} 
+Dns\+Resolver\+::start\+Resolution\+With\+Backoff (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{class_dns_resolver_a79c550c60295a2d673e2e27b6cd0ee57}{start\+Next\+Resolution\+Timer()}}, and \mbox{\hyperlink{class_dns_resolver_ab15eefc46e89c4d5c9e166138378b92f}{start\+Resolution()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dns_resolver_ad286e3ee09a4c446704e78f777fabf12_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dns_resolver_ad286e3ee09a4c446704e78f777fabf12_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_dns_resolver_a016b3122b08d68ffb784c50d8be49593}\index{DnsResolver@{DnsResolver}!stopNextResolutionTimer@{stopNextResolutionTimer}}
+\index{stopNextResolutionTimer@{stopNextResolutionTimer}!DnsResolver@{DnsResolver}}
+\doxysubsubsection{\texorpdfstring{stopNextResolutionTimer()}{stopNextResolutionTimer()}}
+{\footnotesize\ttfamily \label{class_dns_resolver_a016b3122b08d68ffb784c50d8be49593} 
+Dns\+Resolver\+::stop\+Next\+Resolution\+Timer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dns_resolver_a016b3122b08d68ffb784c50d8be49593_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_dns_resolver_ae042b689ff639eeb1e3c5282ca3f4e36}\index{DnsResolver@{DnsResolver}!updateResolution@{updateResolution}}
+\index{updateResolution@{updateResolution}!DnsResolver@{DnsResolver}}
+\doxysubsubsection{\texorpdfstring{updateResolution()}{updateResolution()}}
+{\footnotesize\ttfamily \label{class_dns_resolver_ae042b689ff639eeb1e3c5282ca3f4e36} 
+Dns\+Resolver\+::update\+Resolution (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{class_dns_resolver_ad286e3ee09a4c446704e78f777fabf12}{start\+Resolution\+With\+Backoff()}}, and \mbox{\hyperlink{logging_8js_acb1634453d1705af9683695efa3847e6}{trace}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dns_resolver_ae042b689ff639eeb1e3c5282ca3f4e36_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/@grpc/grpc-\/js/build/src/\mbox{\hyperlink{resolver-dns_8js}{resolver-\/dns.\+js}}\end{DoxyCompactItemize}

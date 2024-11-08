@@ -1,0 +1,126 @@
+\doxysection{Field\+Filter\+Internal Class Reference}
+\hypertarget{class_field_filter_internal}{}\label{class_field_filter_internal}\index{FieldFilterInternal@{FieldFilterInternal}}
+
+
+Inheritance diagram for Field\+Filter\+Internal\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=185pt]{class_field_filter_internal__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Field\+Filter\+Internal\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=185pt]{class_field_filter_internal__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_field_filter_internal_a996a6a2ab43c320003cad33f04a91970}{get\+Flattened\+Filters}} ()
+\item 
+\mbox{\hyperlink{class_field_filter_internal_ad2455f2f6e1108370907fb9964070c8a}{get\+Filters}} ()
+\item 
+\mbox{\hyperlink{class_field_filter_internal_ad1c5cafb4f940341b7cb122d5e609547}{constructor}} (\mbox{\hyperlink{fallback_rest_8js_ac64cda4812d2b01353a2e43c605d772b}{serializer}}, field, op, \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}})
+\item 
+\mbox{\hyperlink{class_field_filter_internal_a774ce47e854977a8f215b109650ddb69}{is\+Equal}} (other)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_field_filter_internal_a4fa05a85146b2e3e38a5023d5f210619}{is\+Inequality\+Filter}} ()
+\item 
+\mbox{\hyperlink{class_field_filter_internal_ac5dc1b2245ed45de829ce066d4c28ef5}{to\+Proto}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_a}{A} field constraint for a \doxylink{class_query}{Query} where clause. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_field_filter_internal_ad1c5cafb4f940341b7cb122d5e609547}\index{FieldFilterInternal@{FieldFilterInternal}!constructor@{constructor}}
+\index{constructor@{constructor}!FieldFilterInternal@{FieldFilterInternal}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_field_filter_internal_ad1c5cafb4f940341b7cb122d5e609547} 
+Field\+Filter\+Internal\+::constructor (\begin{DoxyParamCaption}\item[{}]{serializer}{, }\item[{}]{field}{, }\item[{}]{op}{, }\item[{}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em serializer} & The \doxylink{class_firestore}{Firestore} serializer \\
+\hline
+{\em field} & The path of the property value to compare. \\
+\hline
+{\em op} & \doxylink{class_a}{A} comparison operation. \\
+\hline
+{\em value} & The value to which to compare the field for inclusion in a query. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{fallback_rest_8js_ac64cda4812d2b01353a2e43c605d772b}{serializer}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.
+
+\Hypertarget{class_field_filter_internal_ad2455f2f6e1108370907fb9964070c8a}\index{FieldFilterInternal@{FieldFilterInternal}!getFilters@{getFilters}}
+\index{getFilters@{getFilters}!FieldFilterInternal@{FieldFilterInternal}}
+\doxysubsubsection{\texorpdfstring{getFilters()}{getFilters()}}
+{\footnotesize\ttfamily \label{class_field_filter_internal_ad2455f2f6e1108370907fb9964070c8a} 
+Field\+Filter\+Internal\+::get\+Filters (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_field_filter_internal_a996a6a2ab43c320003cad33f04a91970}\index{FieldFilterInternal@{FieldFilterInternal}!getFlattenedFilters@{getFlattenedFilters}}
+\index{getFlattenedFilters@{getFlattenedFilters}!FieldFilterInternal@{FieldFilterInternal}}
+\doxysubsubsection{\texorpdfstring{getFlattenedFilters()}{getFlattenedFilters()}}
+{\footnotesize\ttfamily \label{class_field_filter_internal_a996a6a2ab43c320003cad33f04a91970} 
+Field\+Filter\+Internal\+::get\+Flattened\+Filters (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_field_filter_internal_a774ce47e854977a8f215b109650ddb69}\index{FieldFilterInternal@{FieldFilterInternal}!isEqual@{isEqual}}
+\index{isEqual@{isEqual}!FieldFilterInternal@{FieldFilterInternal}}
+\doxysubsubsection{\texorpdfstring{isEqual()}{isEqual()}}
+{\footnotesize\ttfamily \label{class_field_filter_internal_a774ce47e854977a8f215b109650ddb69} 
+Field\+Filter\+Internal\+::is\+Equal (\begin{DoxyParamCaption}\item[{}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{field-filter-internal_8js_aec0b793d5926a7a59d7c0772c78ba5fa}{deep\+Equal}}, \mbox{\hyperlink{class_field_filter_internal_a774ce47e854977a8f215b109650ddb69}{is\+Equal()}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=171pt]{class_field_filter_internal_a774ce47e854977a8f215b109650ddb69_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=171pt]{class_field_filter_internal_a774ce47e854977a8f215b109650ddb69_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_field_filter_internal_a4fa05a85146b2e3e38a5023d5f210619}\index{FieldFilterInternal@{FieldFilterInternal}!isInequalityFilter@{isInequalityFilter}}
+\index{isInequalityFilter@{isInequalityFilter}!FieldFilterInternal@{FieldFilterInternal}}
+\doxysubsubsection{\texorpdfstring{isInequalityFilter()}{isInequalityFilter()}}
+{\footnotesize\ttfamily \label{class_field_filter_internal_a4fa05a85146b2e3e38a5023d5f210619} 
+Field\+Filter\+Internal\+::is\+Inequality\+Filter (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Returns whether this Field\+Filter uses an equals comparison. \Hypertarget{class_field_filter_internal_ac5dc1b2245ed45de829ce066d4c28ef5}\index{FieldFilterInternal@{FieldFilterInternal}!toProto@{toProto}}
+\index{toProto@{toProto}!FieldFilterInternal@{FieldFilterInternal}}
+\doxysubsubsection{\texorpdfstring{toProto()}{toProto()}}
+{\footnotesize\ttfamily \label{class_field_filter_internal_ac5dc1b2245ed45de829ce066d4c28ef5} 
+Field\+Filter\+Internal\+::to\+Proto (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Generates the proto representation for this field filter. 
+
+References \mbox{\hyperlink{lodash_2core_8js_ae2c7b9b535f93c96826bdbe1da681ceb}{is\+NaN}}, \mbox{\hyperlink{fallback_rest_8js_ac64cda4812d2b01353a2e43c605d772b}{serializer}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/@google-\/cloud/firestore/build/src/reference/\mbox{\hyperlink{field-filter-internal_8js}{field-\/filter-\/internal.\+js}}\end{DoxyCompactItemize}

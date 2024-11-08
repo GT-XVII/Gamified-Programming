@@ -1,0 +1,169 @@
+\doxysection{Teeny\+Statistics Class Reference}
+\hypertarget{class_teeny_statistics}{}\label{class_teeny_statistics}\index{TeenyStatistics@{TeenyStatistics}}
+
+
+Collaboration diagram for Teeny\+Statistics\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{class_teeny_statistics__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_teeny_statistics_a1434be88ec91c170726417c38c1760f0}{get\+Options}} ()
+\item 
+\mbox{\hyperlink{class_teeny_statistics_a36ecd827108ca1dba7a302f6fff10d4e}{set\+Options}} (opts)
+\item 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} \mbox{\hyperlink{class_teeny_statistics_a9a0f90f700f12844bfff842bd583a55c}{counters}} ()
+\item 
+\mbox{\hyperlink{class_teeny_statistics_a26bbc70f0ac2685250a5cb431b91b2c4}{request\+Starting}} ()
+\item 
+\mbox{\hyperlink{class_teeny_statistics_a99dfe3381aab81eb32ad02a7ff5c9ed3}{request\+Finished}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_teeny_statistics_afa8ae868d47094aedcb7832a3a4d9d63}{constructor}} (opts)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_teeny_statistics_a8a810cf7cc8029386b4a0c39247d85df}{\+\_\+prepare\+Options}} (\{ concurrent\+Requests\+:di\+Concurrent\+Requests, \}=\{\})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+@description Maintain various statistics internal to teeny-\/request. Tracking is not automatic and must be instrumented within teeny-\/request. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_teeny_statistics_a8a810cf7cc8029386b4a0c39247d85df}\index{TeenyStatistics@{TeenyStatistics}!\_prepareOptions@{\_prepareOptions}}
+\index{\_prepareOptions@{\_prepareOptions}!TeenyStatistics@{TeenyStatistics}}
+\doxysubsubsection{\texorpdfstring{\_prepareOptions()}{\_prepareOptions()}}
+{\footnotesize\ttfamily \label{class_teeny_statistics_a8a810cf7cc8029386b4a0c39247d85df} 
+static Teeny\+Statistics\+::\+\_\+prepare\+Options (\begin{DoxyParamCaption}\item[{}]{\{ concurrent\+Requests\+:di\+Concurrent\+Requests, \}}{ = {\ttfamily \{\}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+Configuration Precedence\+:
+\begin{DoxyEnumerate}
+\item Dependency inversion via defined option.
+\item Global numeric environment variable.
+\item Built-\/in default. This will not preserve unspecified options previously specified. 
+\begin{DoxyParams}{Parameters}
+{\em \{\+Teeny\+Statistics\+Options\}} & \mbox{[}opts\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Teeny\+Statistics\+Options\} 
+\end{DoxyReturn}
+
+\end{DoxyEnumerate}Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_teeny_statistics_a8a810cf7cc8029386b4a0c39247d85df_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_teeny_statistics_afa8ae868d47094aedcb7832a3a4d9d63}\index{TeenyStatistics@{TeenyStatistics}!constructor@{constructor}}
+\index{constructor@{constructor}!TeenyStatistics@{TeenyStatistics}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_teeny_statistics_afa8ae868d47094aedcb7832a3a4d9d63} 
+Teeny\+Statistics\+::constructor (\begin{DoxyParamCaption}\item[{}]{opts}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Teeny\+Statistics\+Options\}} & \mbox{[}opts\mbox{]} \\
+\hline
+\end{DoxyParams}
+@type \{number\}
+
+@default 0
+
+@type \{boolean\}
+
+@default false
+
+References \mbox{\hyperlink{express_2lib_2router_2route_8js_a6d3af37c53447908498ec53885a92a16}{\+\_\+options}}, and \mbox{\hyperlink{class_teeny_statistics_a8a810cf7cc8029386b4a0c39247d85df}{\+\_\+prepare\+Options()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_teeny_statistics_afa8ae868d47094aedcb7832a3a4d9d63_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_teeny_statistics_a9a0f90f700f12844bfff842bd583a55c}\index{TeenyStatistics@{TeenyStatistics}!counters@{counters}}
+\index{counters@{counters}!TeenyStatistics@{TeenyStatistics}}
+\doxysubsubsection{\texorpdfstring{counters()}{counters()}}
+{\footnotesize\ttfamily \label{class_teeny_statistics_a9a0f90f700f12844bfff842bd583a55c} 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} Teeny\+Statistics\+::counters (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+@readonly \begin{DoxyReturn}{Returns}
+\{Teeny\+Statistics\+Counters\} 
+\end{DoxyReturn}
+\Hypertarget{class_teeny_statistics_a1434be88ec91c170726417c38c1760f0}\index{TeenyStatistics@{TeenyStatistics}!getOptions@{getOptions}}
+\index{getOptions@{getOptions}!TeenyStatistics@{TeenyStatistics}}
+\doxysubsubsection{\texorpdfstring{getOptions()}{getOptions()}}
+{\footnotesize\ttfamily \label{class_teeny_statistics_a1434be88ec91c170726417c38c1760f0} 
+Teeny\+Statistics\+::get\+Options (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a copy of the current options. \begin{DoxyReturn}{Returns}
+\{Teeny\+Statistics\+Options\} 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{express_2lib_2router_2route_8js_a6d3af37c53447908498ec53885a92a16}{\+\_\+options}}.
+
+\Hypertarget{class_teeny_statistics_a99dfe3381aab81eb32ad02a7ff5c9ed3}\index{TeenyStatistics@{TeenyStatistics}!requestFinished@{requestFinished}}
+\index{requestFinished@{requestFinished}!TeenyStatistics@{TeenyStatistics}}
+\doxysubsubsection{\texorpdfstring{requestFinished()}{requestFinished()}}
+{\footnotesize\ttfamily \label{class_teeny_statistics_a99dfe3381aab81eb32ad02a7ff5c9ed3} 
+Teeny\+Statistics\+::request\+Finished (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+@description When using {\ttfamily request\+Starting}, call this after the request has finished. \Hypertarget{class_teeny_statistics_a26bbc70f0ac2685250a5cb431b91b2c4}\index{TeenyStatistics@{TeenyStatistics}!requestStarting@{requestStarting}}
+\index{requestStarting@{requestStarting}!TeenyStatistics@{TeenyStatistics}}
+\doxysubsubsection{\texorpdfstring{requestStarting()}{requestStarting()}}
+{\footnotesize\ttfamily \label{class_teeny_statistics_a26bbc70f0ac2685250a5cb431b91b2c4} 
+Teeny\+Statistics\+::request\+Starting (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+@description Should call this right before making a request. 
+
+References \mbox{\hyperlink{express_2lib_2router_2route_8js_a6d3af37c53447908498ec53885a92a16}{\+\_\+options}}, \mbox{\hyperlink{ipaddr_8min_8js_abcedab16429ea0641c6596f556f2e102}{process}}, and \mbox{\hyperlink{_teeny_statistics_8js_ab8be426e1f93b07a8d4933456b9c46bb}{Teeny\+Statistics\+Warning}}.
+
+\Hypertarget{class_teeny_statistics_a36ecd827108ca1dba7a302f6fff10d4e}\index{TeenyStatistics@{TeenyStatistics}!setOptions@{setOptions}}
+\index{setOptions@{setOptions}!TeenyStatistics@{TeenyStatistics}}
+\doxysubsubsection{\texorpdfstring{setOptions()}{setOptions()}}
+{\footnotesize\ttfamily \label{class_teeny_statistics_a36ecd827108ca1dba7a302f6fff10d4e} 
+Teeny\+Statistics\+::set\+Options (\begin{DoxyParamCaption}\item[{}]{opts}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Change configured statistics options. This will not preserve unspecified options that were previously specified, i.\+e. this is a reset of options. 
+\begin{DoxyParams}{Parameters}
+{\em \{\+Teeny\+Statistics\+Options\}} & \mbox{[}opts\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Teeny\+Statistics\+Config\} The previous options. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\doxylink{class_teeny_statistics_a8a810cf7cc8029386b4a0c39247d85df}{\+\_\+prepare\+Options} 
+\end{DoxySeeAlso}
+
+
+References \mbox{\hyperlink{express_2lib_2router_2route_8js_a6d3af37c53447908498ec53885a92a16}{\+\_\+options}}, and \mbox{\hyperlink{class_teeny_statistics_a8a810cf7cc8029386b4a0c39247d85df}{\+\_\+prepare\+Options()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_teeny_statistics_a36ecd827108ca1dba7a302f6fff10d4e_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/teeny-\/request/build/src/\mbox{\hyperlink{_teeny_statistics_8js}{Teeny\+Statistics.\+js}}\end{DoxyCompactItemize}

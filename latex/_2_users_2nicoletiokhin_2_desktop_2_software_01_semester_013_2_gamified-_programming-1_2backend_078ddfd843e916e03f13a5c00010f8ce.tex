@@ -1,0 +1,33 @@
+\doxysection{/\+Users/nicoletiokhin/\+Desktop/\+Software Semester 3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/lodash/random.\+js}
+\hypertarget{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_078ddfd843e916e03f13a5c00010f8ce}{}\label{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_078ddfd843e916e03f13a5c00010f8ce}Produces a random number between the inclusive {\ttfamily lower} and {\ttfamily upper} bounds. If only one argument is provided a number between {\ttfamily 0} and the given number is returned. If {\ttfamily floating} is {\ttfamily true}, or either {\ttfamily lower} or {\ttfamily upper} are floats, a floating-\/point number is returned instead of an integer.
+
+{\bfseries{Note\+:}} Java\+Script follows the IEEE-\/754 standard for resolving floating-\/point values which can produce unexpected results.
+
+@member\+Of \+\_\+ \begin{DoxySince}{Since}
+0.\+7.\+0
+\end{DoxySince}
+
+\begin{DoxyParams}{Parameters}
+{\em \{number\}} & \mbox{[}lower=0\mbox{]} The lower bound. \\
+\hline
+{\em \{number\}} & \mbox{[}upper=1\mbox{]} The upper bound. \\
+\hline
+{\em \{boolean\}} & \mbox{[}floating\mbox{]} Specify returning a floating-\/point number. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{number\} Returns the random number.
+\end{DoxyReturn}
+\+\_\+.\+random(0, 5); // =\texorpdfstring{$>$}{>} an integer between 0 and 5
+
+\+\_\+.\+random(5); // =\texorpdfstring{$>$}{>} also an integer between 0 and 5
+
+\+\_\+.\+random(5, true); // =\texorpdfstring{$>$}{>} a floating-\/point number between 0 and 5
+
+\+\_\+.\+random(1.\+2, 5.\+2); // =\texorpdfstring{$>$}{>} a floating-\/point number between 1.\+2 and 5.\+2
+
+
+\begin{DoxyCodeInclude}{0}
+
+\end{DoxyCodeInclude}
+ Semester \doxylink{lodash_2random_8js}{3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/lodash/random.\+js} 

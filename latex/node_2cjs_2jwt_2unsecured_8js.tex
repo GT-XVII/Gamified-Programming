@@ -1,0 +1,69 @@
+\doxysection{backend/node\+\_\+modules/jose/dist/node/cjs/jwt/unsecured.js File Reference}
+\hypertarget{node_2cjs_2jwt_2unsecured_8js}{}\label{node_2cjs_2jwt_2unsecured_8js}\index{backend/node\_modules/jose/dist/node/cjs/jwt/unsecured.js@{backend/node\_modules/jose/dist/node/cjs/jwt/unsecured.js}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_unsecured_j_w_t}{Unsecured\+JWT}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{node_2cjs_2jwt_2unsecured_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{node_2cjs_2jwt_2unsecured_8js_a5ff4e9ff7bc7577427431ce1de6726ea}{Unsecured\+JWT}} = void 0
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{node_2cjs_2jwt_2unsecured_8js_a11156ea3be63ebd808bc1a8b9d42bb51}{base64url}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../runtime/base64url.\+js"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{node_2cjs_2jwt_2unsecured_8js_aa6950734ec05ac96ae4e199bbf64b4b9}{buffer\+\_\+utils\+\_\+js\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../lib/buffer\+\_\+utils.\+js"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{node_2cjs_2jwt_2unsecured_8js_a285fbd72467b60dd40c49c8c9166b064}{errors\+\_\+js\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../util/errors.\+js"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{node_2cjs_2jwt_2unsecured_8js_afcd00100398249e4ecf310efda721c99}{jwt\+\_\+claims\+\_\+set\+\_\+js\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../lib/jwt\+\_\+claims\+\_\+set.\+js"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{node_2cjs_2jwt_2unsecured_8js_a73f8acdf07b3dfff50bbd535509ed1b3}{produce\+\_\+js\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./produce.\+js"{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{node_2cjs_2jwt_2unsecured_8js_a11156ea3be63ebd808bc1a8b9d42bb51}\index{unsecured.js@{unsecured.js}!base64url@{base64url}}
+\index{base64url@{base64url}!unsecured.js@{unsecured.js}}
+\doxysubsubsection{\texorpdfstring{base64url}{base64url}}
+{\footnotesize\ttfamily \label{node_2cjs_2jwt_2unsecured_8js_a11156ea3be63ebd808bc1a8b9d42bb51} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} base64url = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../runtime/base64url.\+js"{})}
+
+\Hypertarget{node_2cjs_2jwt_2unsecured_8js_aa6950734ec05ac96ae4e199bbf64b4b9}\index{unsecured.js@{unsecured.js}!buffer\_utils\_js\_1@{buffer\_utils\_js\_1}}
+\index{buffer\_utils\_js\_1@{buffer\_utils\_js\_1}!unsecured.js@{unsecured.js}}
+\doxysubsubsection{\texorpdfstring{buffer\_utils\_js\_1}{buffer\_utils\_js\_1}}
+{\footnotesize\ttfamily \label{node_2cjs_2jwt_2unsecured_8js_aa6950734ec05ac96ae4e199bbf64b4b9} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} buffer\+\_\+utils\+\_\+js\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../lib/buffer\+\_\+utils.\+js"{})}
+
+\Hypertarget{node_2cjs_2jwt_2unsecured_8js_a285fbd72467b60dd40c49c8c9166b064}\index{unsecured.js@{unsecured.js}!errors\_js\_1@{errors\_js\_1}}
+\index{errors\_js\_1@{errors\_js\_1}!unsecured.js@{unsecured.js}}
+\doxysubsubsection{\texorpdfstring{errors\_js\_1}{errors\_js\_1}}
+{\footnotesize\ttfamily \label{node_2cjs_2jwt_2unsecured_8js_a285fbd72467b60dd40c49c8c9166b064} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} errors\+\_\+js\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../util/errors.\+js"{})}
+
+\Hypertarget{node_2cjs_2jwt_2unsecured_8js_afcd00100398249e4ecf310efda721c99}\index{unsecured.js@{unsecured.js}!jwt\_claims\_set\_js\_1@{jwt\_claims\_set\_js\_1}}
+\index{jwt\_claims\_set\_js\_1@{jwt\_claims\_set\_js\_1}!unsecured.js@{unsecured.js}}
+\doxysubsubsection{\texorpdfstring{jwt\_claims\_set\_js\_1}{jwt\_claims\_set\_js\_1}}
+{\footnotesize\ttfamily \label{node_2cjs_2jwt_2unsecured_8js_afcd00100398249e4ecf310efda721c99} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} jwt\+\_\+claims\+\_\+set\+\_\+js\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../lib/jwt\+\_\+claims\+\_\+set.\+js"{})}
+
+\Hypertarget{node_2cjs_2jwt_2unsecured_8js_a73f8acdf07b3dfff50bbd535509ed1b3}\index{unsecured.js@{unsecured.js}!produce\_js\_1@{produce\_js\_1}}
+\index{produce\_js\_1@{produce\_js\_1}!unsecured.js@{unsecured.js}}
+\doxysubsubsection{\texorpdfstring{produce\_js\_1}{produce\_js\_1}}
+{\footnotesize\ttfamily \label{node_2cjs_2jwt_2unsecured_8js_a73f8acdf07b3dfff50bbd535509ed1b3} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} produce\+\_\+js\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./produce.\+js"{})}
+
+\Hypertarget{node_2cjs_2jwt_2unsecured_8js_ae2475e10618961c050dcba04e8c42331}\index{unsecured.js@{unsecured.js}!strict@{strict}}
+\index{strict@{strict}!unsecured.js@{unsecured.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{node_2cjs_2jwt_2unsecured_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+
+\Hypertarget{node_2cjs_2jwt_2unsecured_8js_a5ff4e9ff7bc7577427431ce1de6726ea}\index{unsecured.js@{unsecured.js}!UnsecuredJWT@{UnsecuredJWT}}
+\index{UnsecuredJWT@{UnsecuredJWT}!unsecured.js@{unsecured.js}}
+\doxysubsubsection{\texorpdfstring{UnsecuredJWT}{UnsecuredJWT}}
+{\footnotesize\ttfamily \label{node_2cjs_2jwt_2unsecured_8js_a5ff4e9ff7bc7577427431ce1de6726ea} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} Unsecured\+JWT = void 0}
+

@@ -1,0 +1,26 @@
+\doxysection{/\+Users/nicoletiokhin/\+Desktop/\+Software Semester 3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/@google-\/cloud/firestore/build/src/collection-\/group.\+js}
+\hypertarget{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_25a988a347e5c8b3826bb1dda3548fd4}{}\label{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_25a988a347e5c8b3826bb1dda3548fd4}Partitions a query by returning partition cursors that can be used to run the query in parallel. The returned cursors are split points that can be used as starting and end points for individual query invocations.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{const}\ \mbox{\hyperlink{application_8js_a3934419f0f9a2068c705a0013b77fab3}{query}}\ =\ \mbox{\hyperlink{firestore-namespace_8js_a6c18541a3018cee632d7e797bb983f36}{firestore}}.collectionGroup(\textcolor{stringliteral}{'collectionId'});}
+\DoxyCodeLine{\textcolor{keywordflow}{for}\ await\ (\textcolor{keyword}{const}\ \mbox{\hyperlink{lodash_2partition_8js_a35a2cf7134f774102a087b9c4bce20f0}{partition}}\ \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}\ \mbox{\hyperlink{application_8js_a3934419f0f9a2068c705a0013b77fab3}{query}}.getPartitions(42))\ \{}
+\DoxyCodeLine{\ \ \textcolor{keyword}{const}\ partitionedQuery\ =\ \mbox{\hyperlink{lodash_2partition_8js_a35a2cf7134f774102a087b9c4bce20f0}{partition}}.toQuery();}
+\DoxyCodeLine{\ \ \textcolor{keyword}{const}\ querySnapshot\ =\ await\ partitionedQuery.get();}
+\DoxyCodeLine{\ \ console.log(\`{}Partition\ contained\ \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}\{querySnapshot.length\}\ documents\`{});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ 
+\begin{DoxyParams}{Parameters}
+{\em \{number\}} & desired\+Partition\+Count The desired maximum number of partition points. The number must be strictly positive. The actual number of partitions returned may be fewer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Async\+Iterable$<$\+Query\+Partition$>$\} An Async\+Iterable of {\ttfamily \doxylink{class_query_partition}{Query\+Partition}}s.
+\end{DoxyReturn}
+
+\begin{DoxyCodeInclude}{0}
+
+\end{DoxyCodeInclude}
+ Semester 3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/@google\doxylink{collection-group_8js}{-\/cloud/firestore/build/src/collection-\/group.\+js} 

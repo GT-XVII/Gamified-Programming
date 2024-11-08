@@ -1,0 +1,7 @@
+<map id="RateLimiter::refillTokens" name="RateLimiter::refillTokens">
+<area shape="rect" id="Node000001" title=" " alt="" coords="246,42,408,68"/>
+<area shape="rect" id="Node000002" href="$class_rate_limiter.html#ae5af8f905edf8d5db3679ac0be9166b7" title=" " alt="" coords="6,5,197,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="230,45,197,41,198,35,230,40"/>
+<area shape="rect" id="Node000003" href="$class_rate_limiter.html#a90b056073ac6c2201cf77b73463df4aa" title=" " alt="" coords="5,70,198,96"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="230,70,199,74,198,68,230,64"/>
+</map>

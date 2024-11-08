@@ -1,0 +1,8 @@
+<map id="validateFieldType" name="validateFieldType">
+<area shape="rect" id="Node000001" title=" " alt="" coords="434,13,556,38"/>
+<area shape="rect" id="Node000002" href="$class_outlier_detection_load_balancing_config.html#add7a9f78c93265d36f20d14988566934" title=" " alt="" coords="5,5,206,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="418,28,206,28,206,23,418,23"/>
+<area shape="rect" id="Node000003" href="$load-balancer-outlier-detection_8js.html#af046dce0b2e03e2092cc52d55d5798d4" title=" " alt="" coords="254,38,386,64"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="419,39,387,44,386,39,418,34"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="238,44,206,40,206,35,239,39"/>
+</map>

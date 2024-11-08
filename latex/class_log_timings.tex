@@ -1,0 +1,139 @@
+\doxysection{Log\+Timings Class Reference}
+\hypertarget{class_log_timings}{}\label{class_log_timings}\index{LogTimings@{LogTimings}}
+
+
+Collaboration diagram for Log\+Timings\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{class_log_timings__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_log_timings_a6afeac2688da9dc9536b6ce39796a056}{constructor}} (\{ \mbox{\hyperlink{class_log_timings_aed853439b677377b94b3c9db36b19d0d}{logger}}, \mbox{\hyperlink{concurrently_2dist_2src_2defaults_8js_acea392dd8bb43dd01fca2623ec54c6dc}{timestamp\+Format}}=defaults.\+timestamp\+Format, \})
+\item 
+\mbox{\hyperlink{class_log_timings_a9efc1c462de22d064e2f08676836ca09}{print\+Exit\+Info\+Timing\+Table}} (exit\+Infos)
+\item 
+\mbox{\hyperlink{class_log_timings_ae704d20e6fd36a16d3f0f8784c78186d}{handle}} (\mbox{\hyperlink{bin_2concurrently_8js_ab9427a0fd7fe157c6ce200c3667e6fc5}{commands}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_log_timings_a07d57b42588c6c351fef0931f9ef9b07}{map\+Close\+Event\+To\+Timing\+Info}} (\{ \mbox{\hyperlink{yargs_2build_2lib_2command_8js_a375077f2439e51b3d30f204271589efb}{command}}, \mbox{\hyperlink{concurrently_2dist_2src_2defaults_8js_ac07f18173d35b224fb4541e2723b7239}{timings}}, killed, exit\+Code, \})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_log_timings_aed853439b677377b94b3c9db36b19d0d}{logger}}
+\item 
+\mbox{\hyperlink{class_log_timings_a209f1cba73ad391a40f4c504994181df}{date\+Formatter}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Logs timing information about commands as they start/stop and then a summary when all commands finish. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_log_timings_a6afeac2688da9dc9536b6ce39796a056}\index{LogTimings@{LogTimings}!constructor@{constructor}}
+\index{constructor@{constructor}!LogTimings@{LogTimings}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_log_timings_a6afeac2688da9dc9536b6ce39796a056} 
+Log\+Timings\+::constructor (\begin{DoxyParamCaption}\item[{}]{\{ logger, timestamp\+Format=defaults.\+timestamp\+Format, \}}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{log-timings_8js_a0961a9082a3c29a502cfedfa440ec325}{defaults}}, \mbox{\hyperlink{class_log_timings_aed853439b677377b94b3c9db36b19d0d}{logger}}, and \mbox{\hyperlink{concurrently_2dist_2src_2defaults_8js_acea392dd8bb43dd01fca2623ec54c6dc}{timestamp\+Format}}.
+
+\Hypertarget{class_log_timings_ae704d20e6fd36a16d3f0f8784c78186d}\index{LogTimings@{LogTimings}!handle@{handle}}
+\index{handle@{handle}!LogTimings@{LogTimings}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily \label{class_log_timings_ae704d20e6fd36a16d3f0f8784c78186d} 
+Log\+Timings\+::handle (\begin{DoxyParamCaption}\item[{}]{commands}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{after_8js_af2ab2a2839e4f09255953c1a4212e149}{after()}}, \mbox{\hyperlink{at_8js_a78af5f3fbaccaa8a16d6bea9d7a5e9f4}{at}}, \mbox{\hyperlink{yargs_2build_2lib_2command_8js_a375077f2439e51b3d30f204271589efb}{command()}}, \mbox{\hyperlink{bin_2concurrently_8js_ab9427a0fd7fe157c6ce200c3667e6fc5}{commands}}, \mbox{\hyperlink{class_log_timings_a209f1cba73ad391a40f4c504994181df}{date\+Formatter}}, \mbox{\hyperlink{async__iterator_8js_a8243cbb48762858d9ac3b1e3830f27f6}{finished}}, \mbox{\hyperlink{class_log_timings_aed853439b677377b94b3c9db36b19d0d}{logger}}, \mbox{\hyperlink{timespan_8js_a4bd9500f2db802231165a0f18e843906}{ms}}, \mbox{\hyperlink{log-timings_8js_a3777df4cce88b3e893a2c58ef89ddd50}{operators\+\_\+1}}, \mbox{\hyperlink{class_log_timings_a9efc1c462de22d064e2f08676836ca09}{print\+Exit\+Info\+Timing\+Table()}}, and \mbox{\hyperlink{log-timings_8js_a21215470202fdbefb13b095b029b1cf5}{Rx}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_log_timings_ae704d20e6fd36a16d3f0f8784c78186d_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_log_timings_a07d57b42588c6c351fef0931f9ef9b07}\index{LogTimings@{LogTimings}!mapCloseEventToTimingInfo@{mapCloseEventToTimingInfo}}
+\index{mapCloseEventToTimingInfo@{mapCloseEventToTimingInfo}!LogTimings@{LogTimings}}
+\doxysubsubsection{\texorpdfstring{mapCloseEventToTimingInfo()}{mapCloseEventToTimingInfo()}}
+{\footnotesize\ttfamily \label{class_log_timings_a07d57b42588c6c351fef0931f9ef9b07} 
+static Log\+Timings\+::map\+Close\+Event\+To\+Timing\+Info (\begin{DoxyParamCaption}\item[{}]{\{ command, timings, killed, exit\+Code, \}}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+References \mbox{\hyperlink{yargs_2build_2lib_2command_8js_a375077f2439e51b3d30f204271589efb}{command()}}, and \mbox{\hyperlink{concurrently_2dist_2src_2defaults_8js_ac07f18173d35b224fb4541e2723b7239}{timings}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_log_timings_a07d57b42588c6c351fef0931f9ef9b07_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_log_timings_a07d57b42588c6c351fef0931f9ef9b07_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_log_timings_a9efc1c462de22d064e2f08676836ca09}\index{LogTimings@{LogTimings}!printExitInfoTimingTable@{printExitInfoTimingTable}}
+\index{printExitInfoTimingTable@{printExitInfoTimingTable}!LogTimings@{LogTimings}}
+\doxysubsubsection{\texorpdfstring{printExitInfoTimingTable()}{printExitInfoTimingTable()}}
+{\footnotesize\ttfamily \label{class_log_timings_a9efc1c462de22d064e2f08676836ca09} 
+Log\+Timings\+::print\+Exit\+Info\+Timing\+Table (\begin{DoxyParamCaption}\item[{}]{exit\+Infos}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{log-timings_8js_a0a4d6a89916a48f4ba0e696e93dfc003}{assert}}, \mbox{\hyperlink{log-timings_8js_a67fbe76cfa378a3a8ef3746d4f3d2cb8}{lodash\+\_\+1}}, \mbox{\hyperlink{class_log_timings_aed853439b677377b94b3c9db36b19d0d}{logger}}, \mbox{\hyperlink{class_log_timings_a07d57b42588c6c351fef0931f9ef9b07}{map\+Close\+Event\+To\+Timing\+Info()}}, \mbox{\hyperlink{wrapper_reverse_8js_a6dca3361564132d25573b43069a4b84b}{reverse}}, and \mbox{\hyperlink{concurrently_2dist_2src_2defaults_8js_ac07f18173d35b224fb4541e2723b7239}{timings}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_log_timings_a9efc1c462de22d064e2f08676836ca09_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{class_log_timings_a9efc1c462de22d064e2f08676836ca09_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_log_timings_a209f1cba73ad391a40f4c504994181df}\index{LogTimings@{LogTimings}!dateFormatter@{dateFormatter}}
+\index{dateFormatter@{dateFormatter}!LogTimings@{LogTimings}}
+\doxysubsubsection{\texorpdfstring{dateFormatter}{dateFormatter}}
+{\footnotesize\ttfamily \label{class_log_timings_a209f1cba73ad391a40f4c504994181df} 
+Log\+Timings\+::date\+Formatter}
+
+\Hypertarget{class_log_timings_aed853439b677377b94b3c9db36b19d0d}\index{LogTimings@{LogTimings}!logger@{logger}}
+\index{logger@{logger}!LogTimings@{LogTimings}}
+\doxysubsubsection{\texorpdfstring{logger}{logger}}
+{\footnotesize\ttfamily \label{class_log_timings_aed853439b677377b94b3c9db36b19d0d} 
+Log\+Timings\+::logger}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/concurrently/dist/src/flow-\/control/\mbox{\hyperlink{log-timings_8js}{log-\/timings.\+js}}\end{DoxyCompactItemize}

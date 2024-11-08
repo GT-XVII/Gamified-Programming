@@ -1,0 +1,47 @@
+\doxysection{backend/node\+\_\+modules/rxjs/dist/esm/internal/scheduler/immediate\+Provider.js File Reference}
+\hypertarget{esm_2internal_2scheduler_2immediate_provider_8js}{}\label{esm_2internal_2scheduler_2immediate_provider_8js}\index{backend/node\_modules/rxjs/dist/esm/internal/scheduler/immediateProvider.js@{backend/node\_modules/rxjs/dist/esm/internal/scheduler/immediateProvider.js}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{esm_2internal_2scheduler_2immediate_provider_8js_a59be084da8908b7d77ff34b25cd84488}{import}} \{ \mbox{\hyperlink{rxjs_8umd_8js_aa24dec8da1906077e4e18910e53b60d1}{Immediate}} \} from \textquotesingle{}../\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}}/\mbox{\hyperlink{rxjs_8umd_8js_aa24dec8da1906077e4e18910e53b60d1}{Immediate}}\textquotesingle{}
+\item 
+\mbox{\hyperlink{esm_2internal_2scheduler_2immediate_provider_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \{ \mbox{\hyperlink{rxjs_8umd_8js_a5008ba0c81d22f889926a449c993ac53}{set\+Immediate}}, \mbox{\hyperlink{rxjs_8umd_8js_ae2c2c6e1a48e103e177a88bd229778f9}{clear\+Immediate}} \} = \mbox{\hyperlink{rxjs_8umd_8js_aa24dec8da1906077e4e18910e53b60d1}{Immediate}}
+\item 
+export \mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{esm_2internal_2scheduler_2immediate_provider_8js_ab1029b4332d6ff2385eb7670645684df}{immediate\+Provider}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{esm_2internal_2scheduler_2immediate_provider_8js_a92b303b76a3f942ea819498907d5e83c}\index{immediateProvider.js@{immediateProvider.js}!const@{const}}
+\index{const@{const}!immediateProvider.js@{immediateProvider.js}}
+\doxysubsubsection{\texorpdfstring{const}{const}}
+{\footnotesize\ttfamily \label{esm_2internal_2scheduler_2immediate_provider_8js_a92b303b76a3f942ea819498907d5e83c} 
+const \{ \mbox{\hyperlink{rxjs_8umd_8js_a5008ba0c81d22f889926a449c993ac53}{set\+Immediate}}, \mbox{\hyperlink{rxjs_8umd_8js_ae2c2c6e1a48e103e177a88bd229778f9}{clear\+Immediate}} \} = \mbox{\hyperlink{rxjs_8umd_8js_aa24dec8da1906077e4e18910e53b60d1}{Immediate}}}
+
+\Hypertarget{esm_2internal_2scheduler_2immediate_provider_8js_ab1029b4332d6ff2385eb7670645684df}\index{immediateProvider.js@{immediateProvider.js}!immediateProvider@{immediateProvider}}
+\index{immediateProvider@{immediateProvider}!immediateProvider.js@{immediateProvider.js}}
+\doxysubsubsection{\texorpdfstring{immediateProvider}{immediateProvider}}
+{\footnotesize\ttfamily \label{esm_2internal_2scheduler_2immediate_provider_8js_ab1029b4332d6ff2385eb7670645684df} 
+export \mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} immediate\+Provider}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{cjs_2internal_2scheduler_2immediate_provider_8js_a5008ba0c81d22f889926a449c993ac53}{setImmediate}}(...\mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_aeda6958b2fc8494c5a17f91600065eb9}{args}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \{\ delegate\ \}\ =\ \mbox{\hyperlink{esm_2internal_2scheduler_2immediate_provider_8js_ab1029b4332d6ff2385eb7670645684df}{immediateProvider}};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ ((delegate\ ===\ \textcolor{keyword}{null}\ ||\ delegate\ ===\ \textcolor{keywordtype}{void}\ 0\ ?\ \textcolor{keywordtype}{void}\ 0\ :\ delegate.setImmediate)\ ||\ \mbox{\hyperlink{cjs_2internal_2scheduler_2immediate_provider_8js_a5008ba0c81d22f889926a449c993ac53}{setImmediate}})(...args);}
+\DoxyCodeLine{\ \ \ \ \},}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{cjs_2internal_2scheduler_2immediate_provider_8js_ae2c2c6e1a48e103e177a88bd229778f9}{clearImmediate}}(\mbox{\hyperlink{application_8js_a9f88a167a461dc8dbd869fe1e6d81b98}{handle}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \{\ delegate\ \}\ =\ \mbox{\hyperlink{esm_2internal_2scheduler_2immediate_provider_8js_ab1029b4332d6ff2385eb7670645684df}{immediateProvider}};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ ((delegate\ ===\ \textcolor{keyword}{null}\ ||\ delegate\ ===\ \textcolor{keywordtype}{void}\ 0\ ?\ \textcolor{keywordtype}{void}\ 0\ :\ delegate.clearImmediate)\ ||\ \mbox{\hyperlink{cjs_2internal_2scheduler_2immediate_provider_8js_ae2c2c6e1a48e103e177a88bd229778f9}{clearImmediate}})(\mbox{\hyperlink{application_8js_a9f88a167a461dc8dbd869fe1e6d81b98}{handle}});}
+\DoxyCodeLine{\ \ \ \ \},}
+\DoxyCodeLine{\ \ \ \ delegate:\ \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{esm_2internal_2scheduler_2immediate_provider_8js_a59be084da8908b7d77ff34b25cd84488}\index{immediateProvider.js@{immediateProvider.js}!import@{import}}
+\index{import@{import}!immediateProvider.js@{immediateProvider.js}}
+\doxysubsubsection{\texorpdfstring{import}{import}}
+{\footnotesize\ttfamily \label{esm_2internal_2scheduler_2immediate_provider_8js_a59be084da8908b7d77ff34b25cd84488} 
+import \{ \mbox{\hyperlink{rxjs_8umd_8js_aa24dec8da1906077e4e18910e53b60d1}{Immediate}} \} from \textquotesingle{}../\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}}/\mbox{\hyperlink{rxjs_8umd_8js_aa24dec8da1906077e4e18910e53b60d1}{Immediate}}\textquotesingle{}}
+

@@ -1,0 +1,2375 @@
+\doxysection{backend/node\+\_\+modules/node-\/forge/lib/tls.js File Reference}
+\hypertarget{tls_8js}{}\label{tls_8js}\index{backend/node\_modules/node-\/forge/lib/tls.js@{backend/node\_modules/node-\/forge/lib/tls.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{tls_8js_af389b9003440a800f2856ce44c76c3fc}{for}} (var key in \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{tls_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./forge\textquotesingle{})
+\item 
+var \mbox{\hyperlink{tls_8js_a99acb52a5841948236d3b27e5e7f0eed}{prf\+\_\+\+TLS1}}
+\item 
+var \mbox{\hyperlink{tls_8js_a0bedc43bee5fb299cd38e6e12947a437}{prf\+\_\+sha256}}
+\item 
+var \mbox{\hyperlink{tls_8js_a2760e10cf5ecc757906b40aafd064bf6}{hmac\+\_\+sha1}}
+\item 
+var \mbox{\hyperlink{tls_8js_a988c9c8edc23d10a9d8bb46b2977e4ea}{deflate}}
+\item 
+var \mbox{\hyperlink{tls_8js_a9d8abf83f9df01de52757a4b624d300e}{inflate}}
+\item 
+var \mbox{\hyperlink{tls_8js_a316c99dab4654657bf75f92b301a6454}{read\+Vector}}
+\item 
+var \mbox{\hyperlink{tls_8js_aae5bd7305f1b514b4e7b2b745445841b}{write\+Vector}}
+\item 
+var \mbox{\hyperlink{tls_8js_a47139662462fb0125c5a417df00a7c88}{tls}} = \{\}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} \mbox{\hyperlink{tls_8js_af21586f370dee717e4d2b223a4d1ee8c}{Versions}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} \mbox{\hyperlink{tls_8js_a34095f1ebe5a027bff66a078e547b03a}{Supported\+Versions}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} \mbox{\hyperlink{tls_8js_a7d6373cb18cdb0a47adabb3527c5571f}{Version}} = \mbox{\hyperlink{tls_8js_a34095f1ebe5a027bff66a078e547b03a}{tls.\+Supported\+Versions}}\mbox{[}0\mbox{]}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} \mbox{\hyperlink{tls_8js_ada005636c1f681616e82a42caf4f142d}{Max\+Fragment}} = 16384 -\/ 1024
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} \mbox{\hyperlink{tls_8js_a6dbb251527fff0507d59dcb04f57f6fc}{Connection\+End}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} \mbox{\hyperlink{tls_8js_aa2b45fc7f89b2efdedcda5bb52cfd3a6}{PRFAlgorithm}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} \mbox{\hyperlink{tls_8js_ac5cc5477588098c436d1a8d62b0e74af}{Bulk\+Cipher\+Algorithm}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} \mbox{\hyperlink{tls_8js_ac6e4b744878ee1724ffeaaf5462433d1}{Cipher\+Type}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} \mbox{\hyperlink{tls_8js_a7b49d41da4fcf394c8a7cff9af337cd2}{MACAlgorithm}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} \mbox{\hyperlink{tls_8js_aa74ab138f1dfb676b1031ff894eb4d54}{Compression\+Method}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} \mbox{\hyperlink{tls_8js_a1c2571c0f5a08dfb97dd6ff716ff25e0}{Content\+Type}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} \mbox{\hyperlink{tls_8js_a6da25907eb2604ea701c2d4195262db3}{Handshake\+Type}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} \mbox{\hyperlink{tls_8js_a7eff9c05557ef9b8285f81a3fcbdf2b0}{Alert}} = \{\}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} \mbox{\hyperlink{tls_8js_a7eff9c05557ef9b8285f81a3fcbdf2b0}{Alert}} \mbox{\hyperlink{tls_8js_a17b935ea1fbca09d5e4fb61733884fd8}{Level}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} \mbox{\hyperlink{tls_8js_a7eff9c05557ef9b8285f81a3fcbdf2b0}{Alert}} \mbox{\hyperlink{tls_8js_a17f54e4f93bee75f7d19325ebe8cb3ea}{Description}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} \mbox{\hyperlink{tls_8js_ae8769abacba7ab182eacb0ef65185eb6}{Heartbeat\+Message\+Type}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} \mbox{\hyperlink{tls_8js_ad39b8376d4f994ecd060e413ae8813a8}{Cipher\+Suites}} = \{\}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} \mbox{\hyperlink{tls_8js_af4ba9c9d5deb82084fdc12d07ad72fba}{get\+Cipher\+Suite}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} \mbox{\hyperlink{tls_8js_a38b53f9ef83570d0e0582790c227e88b}{handle\+Unexpected}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} \mbox{\hyperlink{tls_8js_ad2d17a7b04069f34eb45ef0b8c1f53e9}{handle\+Hello\+Request}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} \mbox{\hyperlink{tls_8js_a7960203105be4c3bac2269437ae9d915}{parse\+Hello\+Message}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} \mbox{\hyperlink{tls_8js_ac9fc0f7f5f7523a137179d73a33f38e9}{create\+Security\+Parameters}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} \mbox{\hyperlink{tls_8js_a5f3ab3ad580213d5c0327817ebe946b6}{handle\+Server\+Hello}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} \mbox{\hyperlink{tls_8js_ac0a3170a1987586ae391058209854e17}{handle\+Client\+Hello}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} \mbox{\hyperlink{tls_8js_a5e5a4123dc16f04833e1b84056f7f5a4}{handle\+Certificate}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} \mbox{\hyperlink{tls_8js_a67438f05b4f263dd7efbce137fcf8c48}{handle\+Server\+Key\+Exchange}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} \mbox{\hyperlink{tls_8js_a288c596560414b905ab48d988f71d05a}{handle\+Client\+Key\+Exchange}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} \mbox{\hyperlink{tls_8js_a85932aaf792b9d333fad18fa529f0ebb}{handle\+Certificate\+Request}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} \mbox{\hyperlink{tls_8js_a1c6d33ecc386694ce5b1cb81772968a2}{handle\+Certificate\+Verify}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} \mbox{\hyperlink{tls_8js_a79b5128bb7bf33ddb78930a7ff2de1be}{handle\+Server\+Hello\+Done}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} \mbox{\hyperlink{tls_8js_a856817d1a2296c11c838ffe319b40c3e}{handle\+Change\+Cipher\+Spec}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} \mbox{\hyperlink{tls_8js_acacc93b2b48da8ad5c597244ac2ef797}{handle\+Finished}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} \mbox{\hyperlink{tls_8js_aa5a431a1cc7f881fe6bee59980b49279}{handle\+Alert}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} \mbox{\hyperlink{tls_8js_abb825225d8be568b0e4315c9a9acf45c}{handle\+Handshake}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} \mbox{\hyperlink{tls_8js_a2dbc7156311755d4935d6834f33ca68f}{handle\+Application\+Data}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} \mbox{\hyperlink{tls_8js_a535f2fe01341f31b2719ef212611cfdf}{handle\+Heartbeat}}
+\item 
+var \mbox{\hyperlink{tls_8js_a5d527bedf6d33fc98d71e2cea70a74df}{SHE}} = 0
+\item 
+var \mbox{\hyperlink{tls_8js_a240389b303df0932a189512b885d23e3}{SCE}} = 1
+\item 
+var \mbox{\hyperlink{tls_8js_a0e13179950a8db2d85bfa0acb367a506}{SKE}} = 2
+\item 
+var \mbox{\hyperlink{tls_8js_a933e0d96ac50821a3904fc3d9a010389}{SCR}} = 3
+\item 
+var \mbox{\hyperlink{tls_8js_ab3d10e46592425ffa37c58ea70a8f4ab}{SHD}} = 4
+\item 
+var \mbox{\hyperlink{tls_8js_a3962adc033a3c0ad280ad833c1e1d3ca}{SCC}} = 5
+\item 
+var \mbox{\hyperlink{tls_8js_a226b40d1678b1f70cb24b6000b28b8e1}{SFI}} = 6
+\item 
+var \mbox{\hyperlink{tls_8js_a6aab489a2245ab89ff49b5f0b7b76f51}{SAD}} = 7
+\item 
+var \mbox{\hyperlink{tls_8js_ac870bb355f75e61a35f14790393f135e}{SER}} = 8
+\item 
+var \mbox{\hyperlink{tls_8js_ac6574158837841ce3b4e9dc7d43dd4f6}{CHE}} = 0
+\item 
+var \mbox{\hyperlink{tls_8js_afe9b2f5b3e9227b1d5d6485d2729592d}{CCE}} = 1
+\item 
+var \mbox{\hyperlink{tls_8js_a3e32215db2af1237511de11a6f3762a6}{CKE}} = 2
+\item 
+var \mbox{\hyperlink{tls_8js_a90fc10cf346eb2f87f94062eff1561a4}{CCV}} = 3
+\item 
+var \mbox{\hyperlink{tls_8js_a8abd23d741e2e38915bd49dc67baf931}{CCC}} = 4
+\item 
+var \mbox{\hyperlink{tls_8js_a36e9fbd4f9fe20af0c92799926540e63}{CFI}} = 5
+\item 
+var \mbox{\hyperlink{tls_8js_a890d8841648aaa74b106a0b7fe1b378f}{CAD}} = 6
+\item 
+var \mbox{\hyperlink{tls_8js_a681bf7530e9c4fcf9ec58b3f773eef06}{CER}} = 7
+\item 
+var \mbox{\hyperlink{tls_8js_ac1fbe2830b29835dd7fbf894fc78c5dc}{\+\_\+\+\_\+}} = \mbox{\hyperlink{tls_8js_a38b53f9ef83570d0e0582790c227e88b}{tls.\+handle\+Unexpected}}
+\item 
+var \mbox{\hyperlink{tls_8js_a7cdb2df63e16af50367778c26d9497ec}{R0}} = \mbox{\hyperlink{tls_8js_a856817d1a2296c11c838ffe319b40c3e}{tls.\+handle\+Change\+Cipher\+Spec}}
+\item 
+var \mbox{\hyperlink{tls_8js_a638673f631fc1ef9f08fc45adc50c649}{R1}} = \mbox{\hyperlink{tls_8js_aa5a431a1cc7f881fe6bee59980b49279}{tls.\+handle\+Alert}}
+\item 
+var \mbox{\hyperlink{tls_8js_a2ae6c5c28b9200261801daa246bffdb4}{R2}} = \mbox{\hyperlink{tls_8js_abb825225d8be568b0e4315c9a9acf45c}{tls.\+handle\+Handshake}}
+\item 
+var \mbox{\hyperlink{tls_8js_aaf90671eb13b49b0533e6b65896e323d}{R3}} = \mbox{\hyperlink{tls_8js_a2dbc7156311755d4935d6834f33ca68f}{tls.\+handle\+Application\+Data}}
+\item 
+var \mbox{\hyperlink{tls_8js_a8b79e366cff31e451064a0c6bfb20785}{R4}} = \mbox{\hyperlink{tls_8js_a535f2fe01341f31b2719ef212611cfdf}{tls.\+handle\+Heartbeat}}
+\item 
+var \mbox{\hyperlink{tls_8js_a96642386341e2de58d776cb46f56cc6a}{ct\+Table}} = \mbox{[}$\,$\mbox{]}
+\item 
+var \mbox{\hyperlink{tls_8js_a49279039fb239c7a354491779a4bdb43}{H0}} = \mbox{\hyperlink{tls_8js_ad2d17a7b04069f34eb45ef0b8c1f53e9}{tls.\+handle\+Hello\+Request}}
+\item 
+var \mbox{\hyperlink{tls_8js_a903268f27bdfce60e48b30b56caca9e3}{H1}} = \mbox{\hyperlink{tls_8js_a5f3ab3ad580213d5c0327817ebe946b6}{tls.\+handle\+Server\+Hello}}
+\item 
+var \mbox{\hyperlink{tls_8js_a371528aa9f77ece8ef1a170bed0360b0}{H2}} = \mbox{\hyperlink{tls_8js_a5e5a4123dc16f04833e1b84056f7f5a4}{tls.\+handle\+Certificate}}
+\item 
+var \mbox{\hyperlink{tls_8js_af306fffa340174105cf436d02a3346a1}{H3}} = \mbox{\hyperlink{tls_8js_a67438f05b4f263dd7efbce137fcf8c48}{tls.\+handle\+Server\+Key\+Exchange}}
+\item 
+var \mbox{\hyperlink{tls_8js_a5f431005161ec235f6a959393a08e997}{H4}} = \mbox{\hyperlink{tls_8js_a85932aaf792b9d333fad18fa529f0ebb}{tls.\+handle\+Certificate\+Request}}
+\item 
+var \mbox{\hyperlink{tls_8js_a2bc6fb936b1a84c61f16733601bb2689}{H5}} = \mbox{\hyperlink{tls_8js_a79b5128bb7bf33ddb78930a7ff2de1be}{tls.\+handle\+Server\+Hello\+Done}}
+\item 
+var \mbox{\hyperlink{tls_8js_a8b0f15ef5bbacbcbdc3f5edafc28cdcf}{H6}} = \mbox{\hyperlink{tls_8js_acacc93b2b48da8ad5c597244ac2ef797}{tls.\+handle\+Finished}}
+\item 
+var \mbox{\hyperlink{tls_8js_a57ede9e24932598cd723121b21cd61a1}{hs\+Table}} = \mbox{[}$\,$\mbox{]}
+\item 
+var \mbox{\hyperlink{tls_8js_ab57fec50558d211388eecbd7f70caebe}{H7}} = \mbox{\hyperlink{tls_8js_ac0a3170a1987586ae391058209854e17}{tls.\+handle\+Client\+Hello}}
+\item 
+var \mbox{\hyperlink{tls_8js_ad096f5212710f5c3e77d24755916f08f}{H8}} = \mbox{\hyperlink{tls_8js_a288c596560414b905ab48d988f71d05a}{tls.\+handle\+Client\+Key\+Exchange}}
+\item 
+var \mbox{\hyperlink{tls_8js_aee355311012ba5d7d47462fe2e9f4d30}{H9}} = \mbox{\hyperlink{tls_8js_a1c6d33ecc386694ce5b1cb81772968a2}{tls.\+handle\+Certificate\+Verify}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} \mbox{\hyperlink{tls_8js_a5821fae777c0b741c5e4c22d84419216}{generate\+Keys}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} \mbox{\hyperlink{tls_8js_a0c5102fd43d055ec0c383ce983af32d1}{create\+Connection\+State}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} \mbox{\hyperlink{tls_8js_a4435063ccfcee8e460b32d713f666adf}{create\+Random}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} \mbox{\hyperlink{tls_8js_a3c590c70efd66ae9434cc84045a2abdf}{create\+Record}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} \mbox{\hyperlink{tls_8js_abd2e6d3741565674f3192dea1e62d192}{create\+Alert}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} \mbox{\hyperlink{tls_8js_ac36d9714cdb8e966c41a65c66addc145}{create\+Client\+Hello}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} \mbox{\hyperlink{tls_8js_aa498ce8c807b689843ee7e1c0ec70566}{create\+Server\+Hello}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} \mbox{\hyperlink{tls_8js_a50c1dc32ad93d5dbd0275fdea491adb8}{create\+Certificate}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} \mbox{\hyperlink{tls_8js_a04b213f6e9d0e4c345f9c7d92e32c18e}{create\+Client\+Key\+Exchange}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} \mbox{\hyperlink{tls_8js_ab3ba7159538280e4891f4a7787ed6511}{create\+Server\+Key\+Exchange}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} \mbox{\hyperlink{tls_8js_a8e1877ba81c195fad4e034af89d232e1}{get\+Client\+Signature}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} \mbox{\hyperlink{tls_8js_a6e758ec174a91a501298254bd349c14a}{create\+Certificate\+Verify}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} \mbox{\hyperlink{tls_8js_ac553b99c2c23860e4abe6f26e8741706}{create\+Certificate\+Request}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} \mbox{\hyperlink{tls_8js_a4c76bd2fd9eae97dcdfbd58f2bb35dc4}{create\+Server\+Hello\+Done}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} \mbox{\hyperlink{tls_8js_a6323b82b6ed3756e1ce8a3a98edabaa3}{create\+Change\+Cipher\+Spec}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} \mbox{\hyperlink{tls_8js_adf4dd9170d15495ed3a0b3898309dce6}{create\+Finished}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} \mbox{\hyperlink{tls_8js_ab0e26b23af2258004d6c57f501e43739}{create\+Heartbeat}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} \mbox{\hyperlink{tls_8js_a9f7d745f5c6457c1e0017fff889abac0}{queue}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} \mbox{\hyperlink{tls_8js_a0663808fd266d31d0b0065a5224860eb}{flush}}
+\item 
+var \mbox{\hyperlink{tls_8js_a5b63e19f206ea7ee062e06a63088557f}{\+\_\+cert\+Error\+To\+Alert\+Desc}}
+\item 
+var \mbox{\hyperlink{tls_8js_ae93d7d91cd42ab429fccb0956e3ac602}{\+\_\+alert\+Desc\+To\+Cert\+Error}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} \mbox{\hyperlink{tls_8js_a8355784516ace1ffe321dba1e800f53b}{verify\+Certificate\+Chain}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} \mbox{\hyperlink{tls_8js_ab4daa2e60570449f2eb9d0f2dd8a9752}{create\+Session\+Cache}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} \mbox{\hyperlink{tls_8js_a6e4a7d646097c8ddafa0877a5ef83363}{create\+Connection}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{tls_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{forge.\+tls}} = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{forge.\+tls}} \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} \{\}
+\item 
+\mbox{\hyperlink{aes_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} \mbox{\hyperlink{tls_8js_a35de87433238277f8a5aba7716aa57a9}{prf\+\_\+tls1}} = \mbox{\hyperlink{tls_8js_a99acb52a5841948236d3b27e5e7f0eed}{prf\+\_\+\+TLS1}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{tls_8js_af389b9003440a800f2856ce44c76c3fc}\index{tls.js@{tls.js}!for@{for}}
+\index{for@{for}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{for()}{for()}}
+{\footnotesize\ttfamily \label{tls_8js_af389b9003440a800f2856ce44c76c3fc} 
+for (\begin{DoxyParamCaption}\item[{var key in}]{tls}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{tls_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}, and \mbox{\hyperlink{tls_8js_a47139662462fb0125c5a417df00a7c88}{tls}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{tls_8js_ac1fbe2830b29835dd7fbf894fc78c5dc}\index{tls.js@{tls.js}!\_\_@{\_\_}}
+\index{\_\_@{\_\_}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{\_\_}{\_\_}}
+{\footnotesize\ttfamily \label{tls_8js_ac1fbe2830b29835dd7fbf894fc78c5dc} 
+var \+\_\+\+\_\+ = \mbox{\hyperlink{tls_8js_a38b53f9ef83570d0e0582790c227e88b}{tls.\+handle\+Unexpected}}}
+
+\Hypertarget{tls_8js_ae93d7d91cd42ab429fccb0956e3ac602}\index{tls.js@{tls.js}!\_alertDescToCertError@{\_alertDescToCertError}}
+\index{\_alertDescToCertError@{\_alertDescToCertError}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{\_alertDescToCertError}{\_alertDescToCertError}}
+{\footnotesize\ttfamily \label{tls_8js_ae93d7d91cd42ab429fccb0956e3ac602} 
+var \+\_\+alert\+Desc\+To\+Cert\+Error}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(desc)\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{switch}(desc)\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{case}\ \textcolor{keyword}{true}:}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{tls_8js_a47139662462fb0125c5a417df00a7c88}{tls}}.Alert.Description.bad\_certificate:}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{tls_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.pki.certificateError.bad\_certificate;}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{tls_8js_a47139662462fb0125c5a417df00a7c88}{tls}}.Alert.Description.unsupported\_certificate:}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{tls_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.pki.certificateError.unsupported\_certificate;}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{tls_8js_a47139662462fb0125c5a417df00a7c88}{tls}}.Alert.Description.certificate\_revoked:}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{tls_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.pki.certificateError.certificate\_revoked;}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{tls_8js_a47139662462fb0125c5a417df00a7c88}{tls}}.Alert.Description.certificate\_expired:}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{tls_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.pki.certificateError.certificate\_expired;}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{tls_8js_a47139662462fb0125c5a417df00a7c88}{tls}}.Alert.Description.certificate\_unknown:}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{tls_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.pki.certificateError.certificate\_unknown;}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{tls_8js_a47139662462fb0125c5a417df00a7c88}{tls}}.Alert.Description.unknown\_ca:}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{tls_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.pki.certificateError.unknown\_ca;}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{tls_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.pki.certificateError.bad\_certificate;}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Maps a tls.\+Alert.\+Description to a pki.\+certificate\+Error.
+
+
+\begin{DoxyParams}{Parameters}
+{\em desc} & the alert description.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the certificate error. 
+\end{DoxyReturn}
+\Hypertarget{tls_8js_a5b63e19f206ea7ee062e06a63088557f}\index{tls.js@{tls.js}!\_certErrorToAlertDesc@{\_certErrorToAlertDesc}}
+\index{\_certErrorToAlertDesc@{\_certErrorToAlertDesc}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{\_certErrorToAlertDesc}{\_certErrorToAlertDesc}}
+{\footnotesize\ttfamily \label{tls_8js_a5b63e19f206ea7ee062e06a63088557f} 
+var \+\_\+cert\+Error\+To\+Alert\+Desc}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}})\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{switch}(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}})\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{case}\ \textcolor{keyword}{true}:}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{tls_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.pki.certificateError.bad\_certificate:}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{tls_8js_a47139662462fb0125c5a417df00a7c88}{tls}}.Alert.Description.bad\_certificate;}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{tls_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.pki.certificateError.unsupported\_certificate:}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{tls_8js_a47139662462fb0125c5a417df00a7c88}{tls}}.Alert.Description.unsupported\_certificate;}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{tls_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.pki.certificateError.certificate\_revoked:}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{tls_8js_a47139662462fb0125c5a417df00a7c88}{tls}}.Alert.Description.certificate\_revoked;}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{tls_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.pki.certificateError.certificate\_expired:}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{tls_8js_a47139662462fb0125c5a417df00a7c88}{tls}}.Alert.Description.certificate\_expired;}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{tls_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.pki.certificateError.certificate\_unknown:}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{tls_8js_a47139662462fb0125c5a417df00a7c88}{tls}}.Alert.Description.certificate\_unknown;}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{tls_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.pki.certificateError.unknown\_ca:}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{tls_8js_a47139662462fb0125c5a417df00a7c88}{tls}}.Alert.Description.unknown\_ca;}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{tls_8js_a47139662462fb0125c5a417df00a7c88}{tls}}.Alert.Description.bad\_certificate;}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Maps a pki.\+certificate\+Error to a tls.\+Alert.\+Description.
+
+
+\begin{DoxyParams}{Parameters}
+{\em error} & the error to map.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the alert description. 
+\end{DoxyReturn}
+\Hypertarget{tls_8js_a7eff9c05557ef9b8285f81a3fcbdf2b0}\index{tls.js@{tls.js}!Alert@{Alert}}
+\index{Alert@{Alert}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{Alert}{Alert}}
+{\footnotesize\ttfamily \label{tls_8js_a7eff9c05557ef9b8285f81a3fcbdf2b0} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} Alert = \{\}}
+
+TLS Alert Protocol.
+
+enum \{ warning(1), \doxylink{database-compat_2dist_2index_8standalone_8js_acc3b191bb2652b439f122d17aa70b612}{fatal(2)}, (255) \} Alert\+Level;
+
+enum \{ close\+\_\+notify(0), unexpected\+\_\+message(10), bad\+\_\+record\+\_\+mac(20), decryption\+\_\+failed(21), record\+\_\+overflow(22), decompression\+\_\+failure(30), handshake\+\_\+failure(40), bad\+\_\+certificate(42), unsupported\+\_\+certificate(43), certificate\+\_\+revoked(44), certificate\+\_\+expired(45), certificate\+\_\+unknown(46), illegal\+\_\+parameter(47), unknown\+\_\+ca(48), access\+\_\+denied(49), decode\+\_\+error(50), decrypt\+\_\+error(51), export\+\_\+restriction(60), protocol\+\_\+version(70), insufficient\+\_\+security(71), internal\+\_\+error(80), user\+\_\+canceled(90), no\+\_\+renegotiation(100), (255) \} Alert\+Description;
+
+struct \{ Alert\+Level level; Alert\+Description description; \} Alert; \Hypertarget{tls_8js_ac5cc5477588098c436d1a8d62b0e74af}\index{tls.js@{tls.js}!BulkCipherAlgorithm@{BulkCipherAlgorithm}}
+\index{BulkCipherAlgorithm@{BulkCipherAlgorithm}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{BulkCipherAlgorithm}{BulkCipherAlgorithm}}
+{\footnotesize\ttfamily \label{tls_8js_ac5cc5477588098c436d1a8d62b0e74af} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} Bulk\+Cipher\+Algorithm}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ none:\ \textcolor{keyword}{null},}
+\DoxyCodeLine{\ \ rc4:\ 0,}
+\DoxyCodeLine{\ \ des3:\ 1,}
+\DoxyCodeLine{\ \ aes:\ 2}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Bulk encryption algorithms. enum \{ null, rc4, des3, aes \} Bulk\+Cipher\+Algorithm; \Hypertarget{tls_8js_a890d8841648aaa74b106a0b7fe1b378f}\index{tls.js@{tls.js}!CAD@{CAD}}
+\index{CAD@{CAD}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{CAD}{CAD}}
+{\footnotesize\ttfamily \label{tls_8js_a890d8841648aaa74b106a0b7fe1b378f} 
+var CAD = 6}
+
+\Hypertarget{tls_8js_a8abd23d741e2e38915bd49dc67baf931}\index{tls.js@{tls.js}!CCC@{CCC}}
+\index{CCC@{CCC}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{CCC}{CCC}}
+{\footnotesize\ttfamily \label{tls_8js_a8abd23d741e2e38915bd49dc67baf931} 
+var CCC = 4}
+
+\Hypertarget{tls_8js_afe9b2f5b3e9227b1d5d6485d2729592d}\index{tls.js@{tls.js}!CCE@{CCE}}
+\index{CCE@{CCE}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{CCE}{CCE}}
+{\footnotesize\ttfamily \label{tls_8js_afe9b2f5b3e9227b1d5d6485d2729592d} 
+var CCE = 1}
+
+\Hypertarget{tls_8js_a90fc10cf346eb2f87f94062eff1561a4}\index{tls.js@{tls.js}!CCV@{CCV}}
+\index{CCV@{CCV}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{CCV}{CCV}}
+{\footnotesize\ttfamily \label{tls_8js_a90fc10cf346eb2f87f94062eff1561a4} 
+var CCV = 3}
+
+\Hypertarget{tls_8js_a681bf7530e9c4fcf9ec58b3f773eef06}\index{tls.js@{tls.js}!CER@{CER}}
+\index{CER@{CER}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{CER}{CER}}
+{\footnotesize\ttfamily \label{tls_8js_a681bf7530e9c4fcf9ec58b3f773eef06} 
+var CER = 7}
+
+\Hypertarget{tls_8js_a36e9fbd4f9fe20af0c92799926540e63}\index{tls.js@{tls.js}!CFI@{CFI}}
+\index{CFI@{CFI}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{CFI}{CFI}}
+{\footnotesize\ttfamily \label{tls_8js_a36e9fbd4f9fe20af0c92799926540e63} 
+var CFI = 5}
+
+\Hypertarget{tls_8js_ac6574158837841ce3b4e9dc7d43dd4f6}\index{tls.js@{tls.js}!CHE@{CHE}}
+\index{CHE@{CHE}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{CHE}{CHE}}
+{\footnotesize\ttfamily \label{tls_8js_ac6574158837841ce3b4e9dc7d43dd4f6} 
+var CHE = 0}
+
+\Hypertarget{tls_8js_ad39b8376d4f994ecd060e413ae8813a8}\index{tls.js@{tls.js}!CipherSuites@{CipherSuites}}
+\index{CipherSuites@{CipherSuites}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{CipherSuites}{CipherSuites}}
+{\footnotesize\ttfamily \label{tls_8js_ad39b8376d4f994ecd060e413ae8813a8} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} Cipher\+Suites = \{\}}
+
+Supported cipher suites. \Hypertarget{tls_8js_ac6e4b744878ee1724ffeaaf5462433d1}\index{tls.js@{tls.js}!CipherType@{CipherType}}
+\index{CipherType@{CipherType}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{CipherType}{CipherType}}
+{\footnotesize\ttfamily \label{tls_8js_ac6e4b744878ee1724ffeaaf5462433d1} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} Cipher\+Type}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{debug_2src_2node_8js_a822bf74d422c61e6caa292f739dc4786}{stream}}:\ 0,}
+\DoxyCodeLine{\ \ block:\ 1,}
+\DoxyCodeLine{\ \ aead:\ 2}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Cipher types. enum \{ stream, block, aead \} Cipher\+Type; \Hypertarget{tls_8js_a3e32215db2af1237511de11a6f3762a6}\index{tls.js@{tls.js}!CKE@{CKE}}
+\index{CKE@{CKE}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{CKE}{CKE}}
+{\footnotesize\ttfamily \label{tls_8js_a3e32215db2af1237511de11a6f3762a6} 
+var CKE = 2}
+
+\Hypertarget{tls_8js_aa74ab138f1dfb676b1031ff894eb4d54}\index{tls.js@{tls.js}!CompressionMethod@{CompressionMethod}}
+\index{CompressionMethod@{CompressionMethod}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{CompressionMethod}{CompressionMethod}}
+{\footnotesize\ttfamily \label{tls_8js_aa74ab138f1dfb676b1031ff894eb4d54} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} Compression\+Method}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ none:\ 0,}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{tls_8js_a988c9c8edc23d10a9d8bb46b2977e4ea}{deflate}}:\ 1}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Compression algorithms. enum \{ null(0), \doxylink{tls_8js_a988c9c8edc23d10a9d8bb46b2977e4ea}{deflate(1)}, (255) \} Compression\+Method; \Hypertarget{tls_8js_a6dbb251527fff0507d59dcb04f57f6fc}\index{tls.js@{tls.js}!ConnectionEnd@{ConnectionEnd}}
+\index{ConnectionEnd@{ConnectionEnd}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{ConnectionEnd}{ConnectionEnd}}
+{\footnotesize\ttfamily \label{tls_8js_a6dbb251527fff0507d59dcb04f57f6fc} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} Connection\+End}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a207259f7e3cfd9800ed8f7d7224c7a68}{server}}:\ 0,}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af46081dcabb4da1ee7ca00228506bcb7}{client}}:\ 1}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Whether this entity is considered the "{}client"{} or "{}server"{}. enum \{ server, client \} Connection\+End; \Hypertarget{tls_8js_a1c2571c0f5a08dfb97dd6ff716ff25e0}\index{tls.js@{tls.js}!ContentType@{ContentType}}
+\index{ContentType@{ContentType}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{ContentType}{ContentType}}
+{\footnotesize\ttfamily \label{tls_8js_a1c2571c0f5a08dfb97dd6ff716ff25e0} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} Content\+Type}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ change\_cipher\_spec:\ 20,}
+\DoxyCodeLine{\ \ alert:\ 21,}
+\DoxyCodeLine{\ \ handshake:\ 22,}
+\DoxyCodeLine{\ \ application\_data:\ 23,}
+\DoxyCodeLine{\ \ heartbeat:\ 24}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+TLS record content types. enum \{ change\+\_\+cipher\+\_\+spec(20), alert(21), handshake(22), application\+\_\+data(23), (255) \} Content\+Type; \Hypertarget{tls_8js_abd2e6d3741565674f3192dea1e62d192}\index{tls.js@{tls.js}!createAlert@{createAlert}}
+\index{createAlert@{createAlert}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{createAlert}{createAlert}}
+{\footnotesize\ttfamily \label{tls_8js_abd2e6d3741565674f3192dea1e62d192} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} create\+Alert}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}},\ alert)\ \{}
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}\ =\ \mbox{\hyperlink{tls_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.util.createBuffer();}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}.putByte(alert.level);}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}.putByte(alert.description);}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{tls_8js_a47139662462fb0125c5a417df00a7c88}{tls}}.createRecord(\mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}},\ \{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type}}:\ \mbox{\hyperlink{tls_8js_a47139662462fb0125c5a417df00a7c88}{tls}}.ContentType.alert,}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}:\ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}}
+\DoxyCodeLine{\ \ \});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Creates a TLS alert record.
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & the connection. \\
+\hline
+{\em alert} & level\+: the TLS alert level. description\+: the TLS alert description.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the created alert record. 
+\end{DoxyReturn}
+\Hypertarget{tls_8js_a50c1dc32ad93d5dbd0275fdea491adb8}\index{tls.js@{tls.js}!createCertificate@{createCertificate}}
+\index{createCertificate@{createCertificate}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{createCertificate}{createCertificate}}
+{\footnotesize\ttfamily \label{tls_8js_a50c1dc32ad93d5dbd0275fdea491adb8} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} create\+Certificate}
+
+Creates a Certificate message.
+
+When this message will be sent\+: This is the first message the client can send after receiving a server hello done message and the first message the server can send after sending a Server\+Hello. This client message is only sent if the server requests a certificate. If no suitable certificate is available, the client should send a certificate message containing no certificates. If client authentication is required by the server for the handshake to continue, it may respond with a fatal handshake failure alert.
+
+opaque ASN.\+1\+Cert\texorpdfstring{$<$}{<}1..2\texorpdfstring{$^\wedge$}{\string^}24-\/1\texorpdfstring{$>$}{>};
+
+struct \{ ASN.\+1\+Cert certificate\+\_\+list\texorpdfstring{$<$}{<}0..2\texorpdfstring{$^\wedge$}{\string^}24-\/1\texorpdfstring{$>$}{>}; \} Certificate;
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & the connection.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the Certificate byte buffer. 
+\end{DoxyReturn}
+\Hypertarget{tls_8js_ac553b99c2c23860e4abe6f26e8741706}\index{tls.js@{tls.js}!createCertificateRequest@{createCertificateRequest}}
+\index{createCertificateRequest@{createCertificateRequest}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{createCertificateRequest}{createCertificateRequest}}
+{\footnotesize\ttfamily \label{tls_8js_ac553b99c2c23860e4abe6f26e8741706} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} create\+Certificate\+Request}
+
+Creates a Certificate\+Request message.
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & the connection.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the Certificate\+Request byte buffer. 
+\end{DoxyReturn}
+\Hypertarget{tls_8js_a6e758ec174a91a501298254bd349c14a}\index{tls.js@{tls.js}!createCertificateVerify@{createCertificateVerify}}
+\index{createCertificateVerify@{createCertificateVerify}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{createCertificateVerify}{createCertificateVerify}}
+{\footnotesize\ttfamily \label{tls_8js_a6e758ec174a91a501298254bd349c14a} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} create\+Certificate\+Verify}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}},\ \mbox{\hyperlink{util_2dist_2index_8cjs_8js_a49c27936a5413e9cfe35de3e98a0d4d7}{signature}})\ \{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a7fdcf4c82c9946bf2b0b80829a7ab230}{length}}\ =\ \mbox{\hyperlink{util_2dist_2index_8cjs_8js_a49c27936a5413e9cfe35de3e98a0d4d7}{signature}}.length\ +\ 2;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ var\ rval\ =\ \mbox{\hyperlink{tls_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.util.createBuffer();}
+\DoxyCodeLine{\ \ rval.putByte(\mbox{\hyperlink{tls_8js_a47139662462fb0125c5a417df00a7c88}{tls}}.HandshakeType.certificate\_verify);}
+\DoxyCodeLine{\ \ rval.putInt24(\mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a7fdcf4c82c9946bf2b0b80829a7ab230}{length}});}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ rval.putInt16(\mbox{\hyperlink{util_2dist_2index_8cjs_8js_a49c27936a5413e9cfe35de3e98a0d4d7}{signature}}.length);}
+\DoxyCodeLine{\ \ rval.putBytes(\mbox{\hyperlink{util_2dist_2index_8cjs_8js_a49c27936a5413e9cfe35de3e98a0d4d7}{signature}});}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ rval;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Creates a Certificate\+Verify message.
+
+Meaning of this message\+: This structure conveys the client\textquotesingle{}s Diffie-\/\+Hellman public value (Yc) if it was not already included in the client\textquotesingle{}s certificate. The encoding used for Yc is determined by the enumerated Public\+Value\+Encoding. This structure is a variant of the client key exchange message, not a message in itself.
+
+When this message will be sent\+: This message is used to provide explicit verification of a client certificate. This message is only sent following a client certificate that has signing capability (i.\+e. all certificates except those containing fixed Diffie-\/\+Hellman parameters). When sent, it will immediately follow the client key exchange message.
+
+struct \{ Signature signature; \} Certificate\+Verify;
+
+Certificate\+Verify.\+signature.\+md5\+\_\+hash \doxylink{object-hash_2index_8js_ab91a467c56b6f82aba34303dcdf3bf81}{MD5(handshake\+\_\+messages)};
+
+Certificate.\+signature.\+sha\+\_\+hash SHA(handshake\+\_\+messages);
+
+Here handshake\+\_\+messages refers to all handshake messages sent or received starting at client hello up to but not including this message, including the type and length fields of the handshake messages.
+
+select(\+Signature\+Algorithm) \{ case anonymous\+: struct \{ \}; case rsa\+: digitally-\/signed struct \{ opaque md5\+\_\+hash\mbox{[}16\mbox{]}; opaque sha\+\_\+hash\mbox{[}20\mbox{]}; \}; case dsa\+: digitally-\/signed struct \{ opaque sha\+\_\+hash\mbox{[}20\mbox{]}; \}; \} Signature;
+
+In digital signing, one-\/way hash functions are used as input for a signing algorithm. \doxylink{class_a}{A} digitally-\/signed element is encoded as an opaque vector \texorpdfstring{$<$}{<}0..2\texorpdfstring{$^\wedge$}{\string^}16-\/1\texorpdfstring{$>$}{>}, where the length is specified by the signing algorithm and key.
+
+In RSA signing, a 36-\/byte structure of two hashes (one SHA and one MD5) is signed (encrypted with the private key). It is encoded with PKCS \#1 block type 0 or type 1 as described in \mbox{[}PKCS1\mbox{]}.
+
+In DSS, the 20 bytes of the SHA hash are run directly through the Digital Signing Algorithm with no additional hashing.
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & the connection. \\
+\hline
+{\em signature} & the signature to include in the message.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the Certificate\+Verify byte buffer. 
+\end{DoxyReturn}
+\Hypertarget{tls_8js_a6323b82b6ed3756e1ce8a3a98edabaa3}\index{tls.js@{tls.js}!createChangeCipherSpec@{createChangeCipherSpec}}
+\index{createChangeCipherSpec@{createChangeCipherSpec}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{createChangeCipherSpec}{createChangeCipherSpec}}
+{\footnotesize\ttfamily \label{tls_8js_a6323b82b6ed3756e1ce8a3a98edabaa3} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} create\+Change\+Cipher\+Spec}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}()\ \{}
+\DoxyCodeLine{\ \ var\ rval\ =\ \mbox{\hyperlink{tls_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.util.createBuffer();}
+\DoxyCodeLine{\ \ rval.putByte(0x01);}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ rval;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Creates a Change\+Cipher\+Spec message.
+
+The change cipher spec protocol exists to signal transitions in ciphering strategies. The protocol consists of a single message, which is encrypted and compressed under the current (not the pending) connection state. The message consists of a single byte of value 1.
+
+struct \{ enum \{ change\+\_\+cipher\+\_\+spec(1), (255) \} type; \} Change\+Cipher\+Spec;
+
+\begin{DoxyReturn}{Returns}
+the Change\+Cipher\+Spec byte buffer. 
+\end{DoxyReturn}
+\Hypertarget{tls_8js_ac36d9714cdb8e966c41a65c66addc145}\index{tls.js@{tls.js}!createClientHello@{createClientHello}}
+\index{createClientHello@{createClientHello}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{createClientHello}{createClientHello}}
+{\footnotesize\ttfamily \label{tls_8js_ac36d9714cdb8e966c41a65c66addc145} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} create\+Client\+Hello}
+
+Creates a Client\+Hello message.
+
+opaque Session\+ID$<$0..\+32$>$; enum \{ null(0), \doxylink{tls_8js_a988c9c8edc23d10a9d8bb46b2977e4ea}{deflate(1)}, (255) \} Compression\+Method; uint8 Cipher\+Suite\mbox{[}2\mbox{]};
+
+struct \{ Protocol\+Version client\+\_\+version; Random random; Session\+ID session\+\_\+id; Cipher\+Suite cipher\+\_\+suites\texorpdfstring{$<$}{<}2..2\texorpdfstring{$^\wedge$}{\string^}16-\/2\texorpdfstring{$>$}{>}; Compression\+Method compression\+\_\+methods\texorpdfstring{$<$}{<}1..2\texorpdfstring{$^\wedge$}{\string^}8-\/1\texorpdfstring{$>$}{>}; select(extensions\+\_\+present) \{ case false\+: struct \{\}; case true\+: Extension extensions\texorpdfstring{$<$}{<}0..2\texorpdfstring{$^\wedge$}{\string^}16-\/1\texorpdfstring{$>$}{>}; \}; \} Client\+Hello;
+
+The extension format for extended client hellos and server hellos is\+:
+
+struct \{ Extension\+Type extension\+\_\+type; opaque extension\+\_\+data\texorpdfstring{$<$}{<}0..2\texorpdfstring{$^\wedge$}{\string^}16-\/1\texorpdfstring{$>$}{>}; \} Extension;
+
+Here\+:
+
+
+\begin{DoxyItemize}
+\item "{}extension\+\_\+type"{} identifies the particular extension type.
+\item "{}extension\+\_\+data"{} contains information specific to the particular extension type.
+\end{DoxyItemize}
+
+The extension types defined in this document are\+:
+
+enum \{ server\+\_\+name(0), max\+\_\+fragment\+\_\+length(1), client\+\_\+certificate\+\_\+url(2), trusted\+\_\+ca\+\_\+keys(3), truncated\+\_\+hmac(4), status\+\_\+request(5), (65535) \} Extension\+Type;
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & the connection.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the Client\+Hello byte buffer. 
+\end{DoxyReturn}
+\Hypertarget{tls_8js_a04b213f6e9d0e4c345f9c7d92e32c18e}\index{tls.js@{tls.js}!createClientKeyExchange@{createClientKeyExchange}}
+\index{createClientKeyExchange@{createClientKeyExchange}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{createClientKeyExchange}{createClientKeyExchange}}
+{\footnotesize\ttfamily \label{tls_8js_a04b213f6e9d0e4c345f9c7d92e32c18e} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} create\+Client\+Key\+Exchange}
+
+Creates a Client\+Key\+Exchange message.
+
+When this message will be sent\+: This message is always sent by the client. It will immediately follow the client certificate message, if it is sent. Otherwise it will be the first message sent by the client after it receives the server hello done message.
+
+Meaning of this message\+: With this message, the premaster secret is set, either though direct transmission of the RSA-\/encrypted secret, or by the transmission of Diffie-\/\+Hellman parameters which will allow each side to agree upon the same premaster secret. When the key exchange method is DH\+\_\+\+RSA or DH\+\_\+\+DSS, client certification has been requested, and the client was able to respond with a certificate which contained a Diffie-\/\+Hellman public key whose parameters (group and generator) matched those specified by the server in its certificate, this message will not contain any data.
+
+Meaning of this message\+: If RSA is being used for key agreement and authentication, the client generates a 48-\/byte premaster secret, encrypts it using the public key from the server\textquotesingle{}s certificate or the temporary RSA key provided in a server key exchange message, and sends the result in an encrypted premaster secret message. This structure is a variant of the client key exchange message, not a message in itself.
+
+struct \{ select(\+Key\+Exchange\+Algorithm) \{ case rsa\+: Encrypted\+Pre\+Master\+Secret; case diffie\+\_\+hellman\+: Client\+Diffie\+Hellman\+Public; \} exchange\+\_\+keys; \} Client\+Key\+Exchange;
+
+struct \{ Protocol\+Version client\+\_\+version; opaque random\mbox{[}46\mbox{]}; \} Pre\+Master\+Secret;
+
+struct \{ public-\/key-\/encrypted Pre\+Master\+Secret pre\+\_\+master\+\_\+secret; \} Encrypted\+Pre\+Master\+Secret;
+
+\doxylink{class_a}{A} public-\/key-\/encrypted element is encoded as a vector \texorpdfstring{$<$}{<}0..2\texorpdfstring{$^\wedge$}{\string^}16-\/1\texorpdfstring{$>$}{>}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & the connection.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the Client\+Key\+Exchange byte buffer. 
+\end{DoxyReturn}
+\Hypertarget{tls_8js_a6e4a7d646097c8ddafa0877a5ef83363}\index{tls.js@{tls.js}!createConnection@{createConnection}}
+\index{createConnection@{createConnection}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{createConnection}{createConnection}}
+{\footnotesize\ttfamily \label{tls_8js_a6e4a7d646097c8ddafa0877a5ef83363} 
+\mbox{\hyperlink{aes_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} create\+Connection}
+
+Creates a new TLS connection.
+
+See public \doxylink{tls_8js_a6e4a7d646097c8ddafa0877a5ef83363}{create\+Connection()} docs for more details.
+
+
+\begin{DoxyParams}{Parameters}
+{\em options} & the options for this connection.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the new TLS connection.
+\end{DoxyReturn}
+Creates a new TLS connection. This does not make any assumptions about the transport layer that TLS is working on top of, ie\+: it does not assume there is a TCP/\+IP connection or establish one. \doxylink{class_a}{A} TLS connection is totally abstracted away from the layer is runs on top of, it merely establishes a secure channel between a client"{} and a "{}server"{}.
+
+\doxylink{class_a}{A} TLS connection contains 4 connection states\+: pending read and write, and current read and write.
+
+At initialization, the current read and write states will be null. Only once the security parameters have been set and the keys have been generated can the pending states be converted into current states. Current states will be updated for each record processed.
+
+\doxylink{class_a}{A} custom certificate verify callback may be provided to check information like the common name on the server\textquotesingle{}s certificate. It will be called for every certificate in the chain. It has the following signature\+:
+
+variable \doxylink{fp_2add_8js_a1ba8e806628b2f512d93819d64d86db9}{func(c, certs, index, pre\+Verify)} Where\+: c The TLS connection verified Set to true if certificate was verified, otherwise the alert tls.\+Alert.\+Description for why the certificate failed. depth The current index in the chain, where 0 is the server\textquotesingle{}s cert. certs The certificate chain, {\itshape NOTE} if the server was anonymous then the chain will be empty.
+
+The function returns true on success and on failure either the appropriate tls.\+Alert.\+Description or an object with \textquotesingle{}alert\textquotesingle{} set to the appropriate tls.\+Alert.\+Description and \textquotesingle{}message\textquotesingle{} set to a custom error message. If true is not returned then the connection will abort using, in order of availability, first the returned alert description, second the pre\+Verify alert description, and lastly the default \textquotesingle{}bad\+\_\+certificate\textquotesingle{}.
+
+There are three callbacks that can be used to make use of client-\/side certificates where each takes the TLS connection as the first parameter\+:
+
+get\+Certificate(conn, hint) The second parameter is a hint as to which certificate should be returned. If the connection entity is a client, then the hint will be the Certificate\+Request message from the server that is part of the TLS protocol. If the connection entity is a server, then it will be the servername list provided via an SNI extension the Client\+Hello, if one was provided (empty array if not). The hint can be examined to determine which certificate to use (advanced). Most implementations will just return a certificate. The return value must be a PEM-\/formatted certificate or an array of PEM-\/formatted certificates that constitute a certificate chain, with the first in the array/chain being the client\textquotesingle{}s certificate. get\+Private\+Key(conn, certificate) The second parameter is an forge.\+pki X.\+509 certificate object that is associated with the requested private key. The return value must be a PEM-\/formatted private key. get\+Signature(conn, bytes, callback) This callback can be used instead of get\+Private\+Key if the private key is not directly accessible in javascript or should not be. For instance, a secure external web service could provide the signature in exchange for appropriate credentials. The second parameter is a string of bytes to be signed that are part of the TLS protocol. These bytes are used to verify that the private key for the previously provided client-\/side certificate is accessible to the client. The callback is a function that takes 2 parameters, the TLS connection and the RSA encrypted (signed) bytes as a string. This callback must be called once the signature is ready.
+
+
+\begin{DoxyParams}{Parameters}
+{\em options} & the options for this connection\+: server\+: true if the connection is server-\/side, false for client. session\+Id\+: a session ID to reuse, null for a new connection. ca\+Store\+: an array of certificates to trust. session\+Cache\+: a session cache to use. cipher\+Suites\+: an optional array of cipher suites to use, see tls.\+Cipher\+Suites. connected\+: function(conn) called when the first handshake completes. virtual\+Host\+: the virtual server name to use in a TLS SNI extension. verify\+Client\+: true to require a client certificate in server mode, \textquotesingle{}optional\textquotesingle{} to request one, false not to (default\+: false). verify\+: a handler used to custom verify certificates in the chain. verify\+Options\+: an object with options for the certificate chain validation. See documentation of pki.\+verify\+Certificate\+Chain for possible options. verify\+Options.\+verify is ignored. If you wish to specify a verify handler use the verify key. get\+Certificate\+: an optional callback used to get a certificate or a chain of certificates (as an array). get\+Private\+Key\+: an optional callback used to get a private key. get\+Signature\+: an optional callback used to get a signature. tls\+Data\+Ready\+: function(conn) called when TLS protocol data has been prepared and is ready to be used (typically sent over a socket connection to its destination), read from conn.\+tls\+Data buffer. data\+Ready\+: function(conn) called when application data has been parsed from a TLS record and should be consumed by the application, read from conn.\+data buffer. closed\+: function(conn) called when the connection has been closed. error\+: function(conn, error) called when there was an error. deflate\+: function(in\+Bytes) if provided, will deflate TLS records using the deflate algorithm if the server supports it. inflate\+: function(in\+Bytes) if provided, will inflate TLS records using the deflate algorithm if the server supports it.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the new TLS connection. 
+\end{DoxyReturn}
+\Hypertarget{tls_8js_a0c5102fd43d055ec0c383ce983af32d1}\index{tls.js@{tls.js}!createConnectionState@{createConnectionState}}
+\index{createConnectionState@{createConnectionState}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{createConnectionState}{createConnectionState}}
+{\footnotesize\ttfamily \label{tls_8js_a0c5102fd43d055ec0c383ce983af32d1} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} create\+Connection\+State}
+
+Creates a new initialized TLS connection state. \doxylink{class_a}{A} connection state has a read mode and a write mode.
+
+compression state\+: The current state of the compression algorithm.
+
+cipher state\+: The current state of the encryption algorithm. This will consist of the scheduled key for that connection. For stream ciphers, this will also contain whatever state information is necessary to allow the stream to continue to encrypt or decrypt data.
+
+MAC key\+: The MAC key for the connection.
+
+sequence number\+: Each connection state contains a sequence number, which is maintained separately for read and write states. The sequence number MUST be set to zero whenever a connection state is made the active state. Sequence numbers are of type uint64 and may not exceed 2\texorpdfstring{$^\wedge$}{\string^}64-\/1. Sequence numbers do not wrap. If a TLS implementation would need to wrap a sequence number, it must renegotiate instead. \doxylink{class_a}{A} sequence number is incremented after each record\+: specifically, the first record transmitted under a particular connection state MUST use sequence number 0.
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & the connection.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the new initialized TLS connection state. 
+\end{DoxyReturn}
+\Hypertarget{tls_8js_adf4dd9170d15495ed3a0b3898309dce6}\index{tls.js@{tls.js}!createFinished@{createFinished}}
+\index{createFinished@{createFinished}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{createFinished}{createFinished}}
+{\footnotesize\ttfamily \label{tls_8js_adf4dd9170d15495ed3a0b3898309dce6} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} create\+Finished}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}})\ \{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}\ =\ \mbox{\hyperlink{tls_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.util.createBuffer();}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}.putBuffer(\mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}.session.md5.digest());}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}.putBuffer(\mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}.session.sha1.digest());}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af46081dcabb4da1ee7ca00228506bcb7}{client}}\ =\ (\mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}.entity\ ===\ \mbox{\hyperlink{tls_8js_a47139662462fb0125c5a417df00a7c88}{tls}}.ConnectionEnd.client);}
+\DoxyCodeLine{\ \ var\ sp\ =\ \mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}.session.sp;}
+\DoxyCodeLine{\ \ var\ vdl\ =\ 12;}
+\DoxyCodeLine{\ \ var\ prf\ =\ \mbox{\hyperlink{tls_8js_a99acb52a5841948236d3b27e5e7f0eed}{prf\_TLS1}};}
+\DoxyCodeLine{\ \ var\ label\ =\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af46081dcabb4da1ee7ca00228506bcb7}{client}}\ ?\ \textcolor{stringliteral}{'client\ finished'}\ :\ \textcolor{stringliteral}{'server\ finished'};}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}\ =\ prf(sp.master\_secret,\ label,\ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}.getBytes(),\ vdl);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ var\ rval\ =\ \mbox{\hyperlink{tls_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.util.createBuffer();}
+\DoxyCodeLine{\ \ rval.putByte(\mbox{\hyperlink{tls_8js_a47139662462fb0125c5a417df00a7c88}{tls}}.HandshakeType.finished);}
+\DoxyCodeLine{\ \ rval.putInt24(\mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}.length());}
+\DoxyCodeLine{\ \ rval.putBuffer(\mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}});}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ rval;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Creates a Finished message.
+
+struct \{ opaque verify\+\_\+data\mbox{[}12\mbox{]}; \} Finished;
+
+verify\+\_\+data PRF(master\+\_\+secret, finished\+\_\+label, \doxylink{object-hash_2index_8js_ab91a467c56b6f82aba34303dcdf3bf81}{MD5(handshake\+\_\+messages)} + SHA-\/1(handshake\+\_\+messages)) \mbox{[}0..11\mbox{]};
+
+finished\+\_\+label For Finished messages sent by the client, the string "{}client   finished"{}. For Finished messages sent by the server, the string "{}server finished"{}.
+
+handshake\+\_\+messages All of the data from all handshake messages up to but not including this message. This is only data visible at the handshake layer and does not include record layer headers. This is the concatenation of all the Handshake structures as defined in 7.\+4 exchanged thus far.
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & the connection.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the Finished byte buffer. 
+\end{DoxyReturn}
+\Hypertarget{tls_8js_ab0e26b23af2258004d6c57f501e43739}\index{tls.js@{tls.js}!createHeartbeat@{createHeartbeat}}
+\index{createHeartbeat@{createHeartbeat}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{createHeartbeat}{createHeartbeat}}
+{\footnotesize\ttfamily \label{tls_8js_ab0e26b23af2258004d6c57f501e43739} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} create\+Heartbeat}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type}},\ payload,\ payloadLength)\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}(typeof\ payloadLength\ ===\ \textcolor{stringliteral}{'undefined'})\ \{}
+\DoxyCodeLine{\ \ \ \ payloadLength\ =\ payload.length;}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ var\ rval\ =\ \mbox{\hyperlink{tls_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.util.createBuffer();}
+\DoxyCodeLine{\ \ rval.putByte(\mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type}});\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ rval.putInt16(payloadLength);\ \ \ \ \ }
+\DoxyCodeLine{\ \ rval.putBytes(payload);\ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ var\ plaintextLength\ =\ rval.length();}
+\DoxyCodeLine{\ \ var\ paddingLength\ =\ Math.max(16,\ plaintextLength\ -\/\ payloadLength\ -\/\ 3);}
+\DoxyCodeLine{\ \ rval.putBytes(\mbox{\hyperlink{tls_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.random.getBytes(paddingLength));}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ rval;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Creates a Heartbeat\+Message (See RFC 6520).
+
+struct \{ Heartbeat\+Message\+Type type; uint16 payload\+\_\+length; opaque payload\mbox{[}Heartbeat\+Message.\+payload\+\_\+length\mbox{]}; opaque padding\mbox{[}padding\+\_\+length\mbox{]}; \} Heartbeat\+Message;
+
+The total length of a Heartbeat\+Message MUST NOT exceed 2\texorpdfstring{$^\wedge$}{\string^}14 or max\+\_\+fragment\+\_\+length when negotiated as defined in \mbox{[}RFC6066\mbox{]}.
+
+type\+: The message type, either heartbeat\+\_\+request or heartbeat\+\_\+response.
+
+payload\+\_\+length\+: The length of the payload.
+
+payload\+: The payload consists of arbitrary content.
+
+padding\+: The padding is random content that MUST be ignored by the receiver. The length of a Heartbeat\+Message is TLSPlaintext.\+length for TLS and DTLSPlaintext.\+length for DTLS. Furthermore, the length of the type field is 1 byte, and the length of the payload\+\_\+length is 2. Therefore, the padding\+\_\+length is TLSPlaintext.\+length -\/ payload\+\_\+length -\/ 3 for TLS and DTLSPlaintext.\+length -\/ payload\+\_\+length -\/ 3 for DTLS. The padding\+\_\+length MUST be at least 16.
+
+The sender of a Heartbeat\+Message MUST use a random padding of at least 16 bytes. The padding of a received Heartbeat\+Message message MUST be ignored.
+
+If the payload\+\_\+length of a received Heartbeat\+Message is too large, the received Heartbeat\+Message MUST be discarded silently.
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & the connection. \\
+\hline
+{\em type} & the tls.\+Heartbeat\+Message\+Type. \\
+\hline
+{\em payload} & the heartbeat data to send as the payload. \\
+\hline
+{\em \mbox{[}payload\+Length\mbox{]}} & the payload length to use, defaults to the actual payload length.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the Heartbeat\+Request byte buffer. 
+\end{DoxyReturn}
+\Hypertarget{tls_8js_a4435063ccfcee8e460b32d713f666adf}\index{tls.js@{tls.js}!createRandom@{createRandom}}
+\index{createRandom@{createRandom}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{createRandom}{createRandom}}
+{\footnotesize\ttfamily \label{tls_8js_a4435063ccfcee8e460b32d713f666adf} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} create\+Random}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}()\ \{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{uuid_8min_8js_aeb337d295abaddb5ec3cb34cc2e2bbc9}{d}}\ =\ \textcolor{keyword}{new}\ Date();}
+\DoxyCodeLine{\ \ var\ utc\ =\ +\mbox{\hyperlink{uuid_8min_8js_aeb337d295abaddb5ec3cb34cc2e2bbc9}{d}}\ +\ \mbox{\hyperlink{uuid_8min_8js_aeb337d295abaddb5ec3cb34cc2e2bbc9}{d}}.getTimezoneOffset()\ *\ 60000;}
+\DoxyCodeLine{\ \ var\ rval\ =\ \mbox{\hyperlink{tls_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.util.createBuffer();}
+\DoxyCodeLine{\ \ rval.putInt32(utc);}
+\DoxyCodeLine{\ \ rval.putBytes(\mbox{\hyperlink{tls_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.random.getBytes(28));}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ rval;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Creates a Random structure.
+
+struct \{ uint32 gmt\+\_\+unix\+\_\+time; opaque random\+\_\+bytes\mbox{[}28\mbox{]}; \} Random;
+
+gmt\+\_\+unix\+\_\+time\+: The current time and date in standard UNIX 32-\/bit format (seconds since the midnight starting Jan 1, 1970, UTC, ignoring leap seconds) according to the sender\textquotesingle{}s internal clock. Clocks are not required to be set correctly by the basic TLS protocol; higher-\/level or application protocols may define additional requirements. Note that, for historical reasons, the data element is named using GMT, the predecessor of the current worldwide time base, UTC. random\+\_\+bytes\+: 28 bytes generated by a secure random number generator.
+
+\begin{DoxyReturn}{Returns}
+the Random structure as a byte array. 
+\end{DoxyReturn}
+\Hypertarget{tls_8js_a3c590c70efd66ae9434cc84045a2abdf}\index{tls.js@{tls.js}!createRecord@{createRecord}}
+\index{createRecord@{createRecord}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{createRecord}{createRecord}}
+{\footnotesize\ttfamily \label{tls_8js_a3c590c70efd66ae9434cc84045a2abdf} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} create\+Record}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}},\ options)\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}(!options.data)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\ \ var\ record\ =\ \{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type}}:\ options.type,}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a265a39dcf2f0b7c6b96574362aa01ad9}{version}}:\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \mbox{\hyperlink{esm_2internal_2global-utils_8js_ad40d045e16bdf717eaacf5e60d4164a2}{major}}:\ \mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}.version.major,}
+\DoxyCodeLine{\ \ \ \ \ \ minor:\ \mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}.version.minor}
+\DoxyCodeLine{\ \ \ \ \},}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a7fdcf4c82c9946bf2b0b80829a7ab230}{length}}:\ options.data.length(),}
+\DoxyCodeLine{\ \ \ \ fragment:\ options.data}
+\DoxyCodeLine{\ \ \};}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ record;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Creates a TLS record with the given type and data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & the connection. \\
+\hline
+{\em options} & type\+: the record type. data\+: the plain text data in a byte buffer.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the created record. 
+\end{DoxyReturn}
+\Hypertarget{tls_8js_ac9fc0f7f5f7523a137179d73a33f38e9}\index{tls.js@{tls.js}!createSecurityParameters@{createSecurityParameters}}
+\index{createSecurityParameters@{createSecurityParameters}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{createSecurityParameters}{createSecurityParameters}}
+{\footnotesize\ttfamily \label{tls_8js_ac9fc0f7f5f7523a137179d73a33f38e9} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} create\+Security\+Parameters}
+
+Creates security parameters for the given connection based on the given hello message.
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & the TLS connection. \\
+\hline
+{\em msg} & the hello message. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{tls_8js_aa498ce8c807b689843ee7e1c0ec70566}\index{tls.js@{tls.js}!createServerHello@{createServerHello}}
+\index{createServerHello@{createServerHello}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{createServerHello}{createServerHello}}
+{\footnotesize\ttfamily \label{tls_8js_aa498ce8c807b689843ee7e1c0ec70566} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} create\+Server\+Hello}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}})\ \{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ var\ sessionId\ =\ \mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}.session.id;}
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a7fdcf4c82c9946bf2b0b80829a7ab230}{length}}\ =}
+\DoxyCodeLine{\ \ \ \ sessionId.length\ +\ 1\ +\ }
+\DoxyCodeLine{\ \ \ \ 2\ +\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ 4\ +\ 28\ +\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ 2\ +\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ 1;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ var\ rval\ =\ \mbox{\hyperlink{tls_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.util.createBuffer();}
+\DoxyCodeLine{\ \ rval.putByte(\mbox{\hyperlink{tls_8js_a47139662462fb0125c5a417df00a7c88}{tls}}.HandshakeType.server\_hello);}
+\DoxyCodeLine{\ \ rval.putInt24(\mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a7fdcf4c82c9946bf2b0b80829a7ab230}{length}});\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ rval.putByte(\mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}.version.major);\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ rval.putByte(\mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}.version.minor);\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ rval.putBytes(\mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}.session.sp.server\_random);\ }
+\DoxyCodeLine{\ \ \mbox{\hyperlink{tls_8js_aae5bd7305f1b514b4e7b2b745445841b}{writeVector}}(rval,\ 1,\ \mbox{\hyperlink{tls_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.util.createBuffer(sessionId));}
+\DoxyCodeLine{\ \ rval.putByte(\mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}.session.cipherSuite.id[0]);}
+\DoxyCodeLine{\ \ rval.putByte(\mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}.session.cipherSuite.id[1]);}
+\DoxyCodeLine{\ \ rval.putByte(\mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}.session.compressionMethod);}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ rval;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Creates a Server\+Hello message.
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & the connection.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the Server\+Hello byte buffer. 
+\end{DoxyReturn}
+\Hypertarget{tls_8js_a4c76bd2fd9eae97dcdfbd58f2bb35dc4}\index{tls.js@{tls.js}!createServerHelloDone@{createServerHelloDone}}
+\index{createServerHelloDone@{createServerHelloDone}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{createServerHelloDone}{createServerHelloDone}}
+{\footnotesize\ttfamily \label{tls_8js_a4c76bd2fd9eae97dcdfbd58f2bb35dc4} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} create\+Server\+Hello\+Done}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}})\ \{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ var\ rval\ =\ \mbox{\hyperlink{tls_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.util.createBuffer();}
+\DoxyCodeLine{\ \ rval.putByte(\mbox{\hyperlink{tls_8js_a47139662462fb0125c5a417df00a7c88}{tls}}.HandshakeType.server\_hello\_done);}
+\DoxyCodeLine{\ \ rval.putInt24(0);}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ rval;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Creates a Server\+Hello\+Done message.
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & the connection.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the Server\+Hello\+Done byte buffer. 
+\end{DoxyReturn}
+\Hypertarget{tls_8js_ab3ba7159538280e4891f4a7787ed6511}\index{tls.js@{tls.js}!createServerKeyExchange@{createServerKeyExchange}}
+\index{createServerKeyExchange@{createServerKeyExchange}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{createServerKeyExchange}{createServerKeyExchange}}
+{\footnotesize\ttfamily \label{tls_8js_ab3ba7159538280e4891f4a7787ed6511} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} create\+Server\+Key\+Exchange}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}})\ \{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a7fdcf4c82c9946bf2b0b80829a7ab230}{length}}\ =\ 0;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ var\ rval\ =\ \mbox{\hyperlink{tls_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.util.createBuffer();}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a7fdcf4c82c9946bf2b0b80829a7ab230}{length}}\ >\ 0)\ \{}
+\DoxyCodeLine{\ \ \ \ rval.putByte(\mbox{\hyperlink{tls_8js_a47139662462fb0125c5a417df00a7c88}{tls}}.HandshakeType.server\_key\_exchange);}
+\DoxyCodeLine{\ \ \ \ rval.putInt24(\mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a7fdcf4c82c9946bf2b0b80829a7ab230}{length}});}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ rval;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Creates a Server\+Key\+Exchange message.
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & the connection.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the Server\+Key\+Exchange byte buffer. 
+\end{DoxyReturn}
+\Hypertarget{tls_8js_ab4daa2e60570449f2eb9d0f2dd8a9752}\index{tls.js@{tls.js}!createSessionCache@{createSessionCache}}
+\index{createSessionCache@{createSessionCache}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{createSessionCache}{createSessionCache}}
+{\footnotesize\ttfamily \label{tls_8js_ab4daa2e60570449f2eb9d0f2dd8a9752} 
+\mbox{\hyperlink{aes_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} create\+Session\+Cache}
+
+Creates a new TLS session cache.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cache} & optional map of session ID to cached session. \\
+\hline
+{\em capacity} & the maximum size for the cache (default\+: 100).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the new TLS session cache. 
+\end{DoxyReturn}
+\Hypertarget{tls_8js_a96642386341e2de58d776cb46f56cc6a}\index{tls.js@{tls.js}!ctTable@{ctTable}}
+\index{ctTable@{ctTable}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{ctTable}{ctTable}}
+{\footnotesize\ttfamily \label{tls_8js_a96642386341e2de58d776cb46f56cc6a} 
+ct\+Table\mbox{[}\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a207259f7e3cfd9800ed8f7d7224c7a68}{tls.\+Connection\+End.\+server}}\mbox{]} = \mbox{[}$\,$\mbox{]}}
+
+\Hypertarget{tls_8js_a988c9c8edc23d10a9d8bb46b2977e4ea}\index{tls.js@{tls.js}!deflate@{deflate}}
+\index{deflate@{deflate}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{deflate}{deflate}}
+{\footnotesize\ttfamily \label{tls_8js_a988c9c8edc23d10a9d8bb46b2977e4ea} 
+var deflate}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}},\ record,\ \mbox{\hyperlink{ordered-map_8min_8js_ad9a7d92cb87932d25187fdec3ba1b621}{s}})\ \{}
+\DoxyCodeLine{\ \ var\ rval\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{\ \ \ \ var\ \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}}\ =\ \mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}.deflate(record.fragment.getBytes());}
+\DoxyCodeLine{\ \ \ \ record.fragment\ =\ \mbox{\hyperlink{tls_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.util.createBuffer(\mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}});}
+\DoxyCodeLine{\ \ \ \ record.length\ =\ \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}}.length;}
+\DoxyCodeLine{\ \ \ \ rval\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\ \ \}\ \textcolor{keywordflow}{catch}(ex)\ \{}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ rval;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Compresses the TLSPlaintext record into a TLSCompressed record using the deflate algorithm.
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & the TLS connection. \\
+\hline
+{\em record} & the TLSPlaintext record to compress. \\
+\hline
+{\em s} & the Connection\+State to use.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true on success, false on failure. 
+\end{DoxyReturn}
+\Hypertarget{tls_8js_a17f54e4f93bee75f7d19325ebe8cb3ea}\index{tls.js@{tls.js}!Description@{Description}}
+\index{Description@{Description}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{Description}{Description}}
+{\footnotesize\ttfamily \label{tls_8js_a17f54e4f93bee75f7d19325ebe8cb3ea} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} \mbox{\hyperlink{tls_8js_a7eff9c05557ef9b8285f81a3fcbdf2b0}{Alert}} Description}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ close\_notify:\ 0,}
+\DoxyCodeLine{\ \ unexpected\_message:\ 10,}
+\DoxyCodeLine{\ \ bad\_record\_mac:\ 20,}
+\DoxyCodeLine{\ \ decryption\_failed:\ 21,}
+\DoxyCodeLine{\ \ record\_overflow:\ 22,}
+\DoxyCodeLine{\ \ decompression\_failure:\ 30,}
+\DoxyCodeLine{\ \ handshake\_failure:\ 40,}
+\DoxyCodeLine{\ \ bad\_certificate:\ 42,}
+\DoxyCodeLine{\ \ unsupported\_certificate:\ 43,}
+\DoxyCodeLine{\ \ certificate\_revoked:\ 44,}
+\DoxyCodeLine{\ \ certificate\_expired:\ 45,}
+\DoxyCodeLine{\ \ certificate\_unknown:\ 46,}
+\DoxyCodeLine{\ \ illegal\_parameter:\ 47,}
+\DoxyCodeLine{\ \ unknown\_ca:\ 48,}
+\DoxyCodeLine{\ \ access\_denied:\ 49,}
+\DoxyCodeLine{\ \ decode\_error:\ 50,}
+\DoxyCodeLine{\ \ decrypt\_error:\ 51,}
+\DoxyCodeLine{\ \ export\_restriction:\ 60,}
+\DoxyCodeLine{\ \ protocol\_version:\ 70,}
+\DoxyCodeLine{\ \ insufficient\_security:\ 71,}
+\DoxyCodeLine{\ \ internal\_error:\ 80,}
+\DoxyCodeLine{\ \ user\_canceled:\ 90,}
+\DoxyCodeLine{\ \ no\_renegotiation:\ 100}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{tls_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\index{tls.js@{tls.js}!exports@{exports}}
+\index{exports@{exports}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \label{tls_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{forge.\+tls}} = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{forge.\+tls}} \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} \{\}}
+
+\Hypertarget{tls_8js_a0663808fd266d31d0b0065a5224860eb}\index{tls.js@{tls.js}!flush@{flush}}
+\index{flush@{flush}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{flush}{flush}}
+{\footnotesize\ttfamily \label{tls_8js_a0663808fd266d31d0b0065a5224860eb} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} flush}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}})\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{for}(var\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ =\ 0;\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ <\ \mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}.records.length;\ ++\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}})\ \{}
+\DoxyCodeLine{\ \ \ \ var\ record\ =\ \mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}.records[\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}];}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}.tlsData.putByte(record.type);}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}.tlsData.putByte(record.version.major);}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}.tlsData.putByte(record.version.minor);}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}.tlsData.putInt16(record.fragment.length());}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}.tlsData.putBuffer(\mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}.records[\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}].fragment);}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}.records\ =\ [];}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}.tlsDataReady(\mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Flushes all queued records to the output buffer and calls the tls\+Data\+Ready() handler on the given connection.
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & the connection.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true on success, false on failure. 
+\end{DoxyReturn}
+\Hypertarget{tls_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}\index{tls.js@{tls.js}!forge@{forge}}
+\index{forge@{forge}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{forge}{forge}}
+{\footnotesize\ttfamily \label{tls_8js_ab4dbef01e35b8e6d06087c0542ba9e2c} 
+var forge = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./forge\textquotesingle{})}
+
+\doxylink{class_a}{A} Javascript implementation of Transport Layer Security (TLS).
+
+\begin{DoxyAuthor}{Author}
+Dave Longley
+\end{DoxyAuthor}
+Copyright (c) 2009-\/2014 Digital Bazaar, Inc.
+
+The TLS Handshake Protocol involves the following steps\+:
+
+
+\begin{DoxyItemize}
+\item Exchange hello messages to agree on algorithms, exchange random values, and check for session resumption.
+\item Exchange the necessary cryptographic parameters to allow the client and server to agree on a premaster secret.
+\item Exchange certificates and cryptographic information to allow the client and server to authenticate themselves.
+\item Generate a master secret from the premaster secret and exchanged random values.
+\item Provide security parameters to the record layer.
+\item Allow the client and server to verify that their peer has calculated the same security parameters and that the handshake occurred without tampering by an attacker.
+\end{DoxyItemize}
+
+Up to 4 different messages may be sent during a key exchange. The server certificate, the server key exchange, the client certificate, and the client key exchange.
+
+\doxylink{class_a}{A} typical handshake (from the client\textquotesingle{}s perspective).
+
+
+\begin{DoxyEnumerate}
+\item \doxylink{class_client}{Client} sends Client\+Hello.
+\item \doxylink{class_client}{Client} receives Server\+Hello.
+\item \doxylink{class_client}{Client} receives optional Certificate.
+\item \doxylink{class_client}{Client} receives optional Server\+Key\+Exchange.
+\item \doxylink{class_client}{Client} receives Server\+Hello\+Done.
+\item \doxylink{class_client}{Client} sends optional Certificate.
+\item \doxylink{class_client}{Client} sends Client\+Key\+Exchange.
+\item \doxylink{class_client}{Client} sends optional Certificate\+Verify.
+\item \doxylink{class_client}{Client} sends Change\+Cipher\+Spec.
+\item \doxylink{class_client}{Client} sends Finished.
+\item \doxylink{class_client}{Client} receives Change\+Cipher\+Spec.
+\item \doxylink{class_client}{Client} receives Finished.
+\item \doxylink{class_client}{Client} sends/receives application data.
+\end{DoxyEnumerate}
+
+To reuse an existing session\+:
+
+
+\begin{DoxyEnumerate}
+\item \doxylink{class_client}{Client} sends Client\+Hello with session ID for reuse.
+\item \doxylink{class_client}{Client} receives Server\+Hello with same session ID if reusing.
+\item \doxylink{class_client}{Client} receives Change\+Cipher\+Spec message if reusing.
+\item \doxylink{class_client}{Client} receives Finished.
+\item \doxylink{class_client}{Client} sends Change\+Cipher\+Spec.
+\item \doxylink{class_client}{Client} sends Finished.
+\end{DoxyEnumerate}
+
+Note\+: \doxylink{class_client}{Client} ignores Hello\+Request if in the middle of a handshake.
+
+Record Layer\+:
+
+The record layer fragments information blocks into TLSPlaintext records carrying data in chunks of 2\texorpdfstring{$^\wedge$}{\string^}14 bytes or less. \doxylink{class_client}{Client} message boundaries are not preserved in the record layer (i.\+e., multiple client messages of the same Content\+Type MAY be coalesced into a single TLSPlaintext record, or a single message MAY be fragmented across several records).
+
+struct \{ uint8 major; uint8 minor; \} Protocol\+Version;
+
+struct \{ Content\+Type type; Protocol\+Version version; uint16 length; opaque fragment\mbox{[}TLSPlaintext.\+length\mbox{]}; \} TLSPlaintext;
+
+type\+: The higher-\/level protocol used to process the enclosed fragment.
+
+version\+: The version of the protocol being employed. TLS Version 1.\+2 uses version \{3, 3\}. TLS Version 1.\+0 uses version \{3, 1\}. Note that a client that supports multiple versions of TLS may not know what version will be employed before it receives the Server\+Hello.
+
+length\+: The length (in bytes) of the following TLSPlaintext.\+fragment. The length MUST NOT exceed 2\texorpdfstring{$^\wedge$}{\string^}14 = 16384 bytes.
+
+fragment\+: The application data. This data is transparent and treated as an independent block to be dealt with by the higher-\/level protocol specified by the type field.
+
+Implementations MUST NOT send zero-\/length fragments of Handshake, Alert, or Change\+Cipher\+Spec content types. Zero-\/length fragments of Application data MAY be sent as they are potentially useful as a traffic analysis countermeasure.
+
+Note\+: Data of different TLS record layer content types MAY be interleaved. Application data is generally of lower precedence for transmission than other content types. However, records MUST be delivered to the network in the same order as they are protected by the record layer. Recipients MUST receive and process interleaved application layer traffic during handshakes subsequent to the first one on a connection.
+
+struct \{ Content\+Type type; // same as TLSPlaintext.\+type Protocol\+Version version;// same as TLSPlaintext.\+version uint16 length; opaque fragment\mbox{[}TLSCompressed.\+length\mbox{]}; \} TLSCompressed;
+
+length\+: The length (in bytes) of the following TLSCompressed.\+fragment. The length MUST NOT exceed 2\texorpdfstring{$^\wedge$}{\string^}14 + 1024.
+
+fragment\+: The compressed form of TLSPlaintext.\+fragment.
+
+Note\+: \doxylink{class_a}{A} Compression\+Method.\+null operation is an identity operation; no fields are altered. In this implementation, since no compression is supported, uncompressed records are always the same as compressed records.
+
+Encryption Information\+:
+
+The encryption and MAC functions translate a TLSCompressed structure into a TLSCiphertext. The decryption functions reverse the process. The MAC of the record also includes a sequence number so that missing, extra, or repeated messages are detectable.
+
+struct \{ Content\+Type type; Protocol\+Version version; uint16 length; select (Security\+Parameters.\+cipher\+\_\+type) \{ case stream\+: Generic\+Stream\+Cipher; case block\+: Generic\+Block\+Cipher; case aead\+: Generic\+AEADCipher; \} fragment; \} TLSCiphertext;
+
+type\+: The type field is identical to TLSCompressed.\+type.
+
+version\+: The version field is identical to TLSCompressed.\+version.
+
+length\+: The length (in bytes) of the following TLSCiphertext.\+fragment. The length MUST NOT exceed 2\texorpdfstring{$^\wedge$}{\string^}14 + 2048.
+
+fragment\+: The encrypted form of TLSCompressed.\+fragment, with the MAC.
+
+Note\+: Only CBC Block Ciphers are supported by this implementation.
+
+The TLSCompressed.\+fragment structures are converted to/from block TLSCiphertext.\+fragment structures.
+
+struct \{ opaque IV\mbox{[}Security\+Parameters.\+record\+\_\+iv\+\_\+length\mbox{]}; block-\/ciphered struct \{ opaque content\mbox{[}TLSCompressed.\+length\mbox{]}; opaque MAC\mbox{[}Security\+Parameters.\+mac\+\_\+length\mbox{]}; uint8 padding\mbox{[}Generic\+Block\+Cipher.\+padding\+\_\+length\mbox{]}; uint8 padding\+\_\+length; \}; \} Generic\+Block\+Cipher;
+
+The MAC is generated as described in Section 6.\+2.\+3.\+1.
+
+IV\+: The Initialization Vector (IV) SHOULD be chosen at random, and MUST be unpredictable. Note that in versions of TLS prior to 1.\+1, there was no IV field, and the last ciphertext block of the previous record (the "{}\+CBC   residue"{}) was used as the IV. This was changed to prevent the attacks described in \mbox{[}CBCATT\mbox{]}. For block ciphers, the IV length is of length Security\+Parameters.\+record\+\_\+iv\+\_\+length, which is equal to the Security\+Parameters.\+block\+\_\+size.
+
+padding\+: Padding that is added to force the length of the plaintext to be an integral multiple of the block cipher\textquotesingle{}s block length. The padding MAY be any length up to 255 bytes, as long as it results in the TLSCiphertext.\+length being an integral multiple of the block length. Lengths longer than necessary might be desirable to frustrate attacks on a protocol that are based on analysis of the lengths of exchanged messages. Each uint8 in the padding data vector MUST be filled with the padding length value. The receiver MUST check this padding and MUST use the bad\+\_\+record\+\_\+mac alert to indicate padding errors.
+
+padding\+\_\+length\+: The padding length MUST be such that the total size of the Generic\+Block\+Cipher structure is a multiple of the cipher\textquotesingle{}s block length. Legal values range from zero to 255, inclusive. This length specifies the length of the padding field exclusive of the padding\+\_\+length field itself.
+
+The encrypted data length (TLSCiphertext.\+length) is one more than the sum of Security\+Parameters.\+block\+\_\+length, TLSCompressed.\+length, Security\+Parameters.\+mac\+\_\+length, and padding\+\_\+length.
+
+Example\+: If the block length is 8 bytes, the content length (TLSCompressed.\+length) is 61 bytes, and the MAC length is 20 bytes, then the length before padding is 82 bytes (this does not include the IV. Thus, the padding length modulo 8 must be equal to 6 in order to make the total length an even multiple of 8 bytes (the block length). The padding length can be 6, 14, 22, and so on, through 254. If the padding length were the minimum necessary, 6, the padding would be 6 bytes, each containing the value 6. Thus, the last 8 octets of the Generic\+Block\+Cipher before block encryption would be xx 06 06 06 06 06 06 06, where xx is the last octet of the MAC.
+
+Note\+: With block ciphers in CBC mode (Cipher Block Chaining), it is critical that the entire plaintext of the record be known before any ciphertext is transmitted. Otherwise, it is possible for the attacker to mount the attack described in \mbox{[}CBCATT\mbox{]}.
+
+Implementation note\+: Canvel et al. \mbox{[}CBCTIME\mbox{]} have demonstrated a timing attack on CBC padding based on the time required to compute the MAC. In order to defend against this attack, implementations MUST ensure that record processing time is essentially the same whether or not the padding is correct. In general, the best way to do this is to compute the MAC even if the padding is incorrect, and only then reject the packet. For instance, if the pad appears to be incorrect, the implementation might assume a zero-\/length pad and then compute the MAC. This leaves a small timing channel, since MAC performance depends, to some extent, on the size of the data fragment, but it is not believed to be large enough to be exploitable, due to the large block size of existing MACs and the small size of the timing signal. \Hypertarget{tls_8js_a5821fae777c0b741c5e4c22d84419216}\index{tls.js@{tls.js}!generateKeys@{generateKeys}}
+\index{generateKeys@{generateKeys}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{generateKeys}{generateKeys}}
+{\footnotesize\ttfamily \label{tls_8js_a5821fae777c0b741c5e4c22d84419216} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} generate\+Keys}
+
+Generates the master\+\_\+secret and keys using the given security parameters.
+
+The security parameters for a TLS connection state are defined as such\+:
+
+struct \{ Connection\+End entity; PRFAlgorithm prf\+\_\+algorithm; Bulk\+Cipher\+Algorithm bulk\+\_\+cipher\+\_\+algorithm; Cipher\+Type cipher\+\_\+type; uint8 enc\+\_\+key\+\_\+length; uint8 block\+\_\+length; uint8 fixed\+\_\+iv\+\_\+length; uint8 record\+\_\+iv\+\_\+length; MACAlgorithm mac\+\_\+algorithm; uint8 mac\+\_\+length; uint8 mac\+\_\+key\+\_\+length; Compression\+Method compression\+\_\+algorithm; opaque master\+\_\+secret\mbox{[}48\mbox{]}; opaque client\+\_\+random\mbox{[}32\mbox{]}; opaque server\+\_\+random\mbox{[}32\mbox{]}; \} Security\+Parameters;
+
+Note that this definition is from TLS 1.\+2. In TLS 1.\+0 some of these parameters are ignored because, for instance, the PRFAlgorithm is a builtin-\/fixed algorithm combining iterations of MD5 and SHA-\/1 in TLS 1.\+0.
+
+The Record Protocol requires an algorithm to generate keys required by the current connection state.
+
+The master secret is expanded into a sequence of secure bytes, which is then split to a client write MAC key, a server write MAC key, a client write encryption key, and a server write encryption key. In TLS 1.\+0 a client write IV and server write IV are also generated. Each of these is generated from the byte sequence in that order. Unused values are empty. In TLS 1.\+2, some AEAD ciphers may additionally require a client write IV and a server write IV (see Section 6.\+2.\+3.\+3).
+
+When keys, MAC keys, and IVs are generated, the master secret is used as an entropy source.
+
+To generate the key material, compute\+:
+
+master\+\_\+secret = PRF(pre\+\_\+master\+\_\+secret, "{}master secret"{}, Client\+Hello.\+random + Server\+Hello.\+random)
+
+key\+\_\+block = PRF(Security\+Parameters.\+master\+\_\+secret, "{}key expansion"{}, Security\+Parameters.\+server\+\_\+random + Security\+Parameters.\+client\+\_\+random);
+
+until enough output has been generated. Then, the key\+\_\+block is partitioned as follows\+:
+
+client\+\_\+write\+\_\+\+MAC\+\_\+key\mbox{[}Security\+Parameters.\+mac\+\_\+key\+\_\+length\mbox{]} server\+\_\+write\+\_\+\+MAC\+\_\+key\mbox{[}Security\+Parameters.\+mac\+\_\+key\+\_\+length\mbox{]} client\+\_\+write\+\_\+key\mbox{[}Security\+Parameters.\+enc\+\_\+key\+\_\+length\mbox{]} server\+\_\+write\+\_\+key\mbox{[}Security\+Parameters.\+enc\+\_\+key\+\_\+length\mbox{]} client\+\_\+write\+\_\+\+IV\mbox{[}Security\+Parameters.\+fixed\+\_\+iv\+\_\+length\mbox{]} server\+\_\+write\+\_\+\+IV\mbox{[}Security\+Parameters.\+fixed\+\_\+iv\+\_\+length\mbox{]}
+
+In TLS 1.\+2, the client\+\_\+write\+\_\+\+IV and server\+\_\+write\+\_\+\+IV are only generated for implicit nonce techniques as described in Section 3.\+2.\+1 of \mbox{[}AEAD\mbox{]}. This implementation uses TLS 1.\+0 so IVs are generated.
+
+Implementation note\+: The currently defined cipher suite which requires the most material is AES\+\_\+256\+\_\+\+CBC\+\_\+\+SHA256. It requires 2 x 32 byte keys and 2 x 32 byte MAC keys, for a total 128 bytes of key material. In TLS 1.\+0 it also requires 2 x 16 byte IVs, so it actually takes 160 bytes of key material.
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & the connection. \\
+\hline
+{\em sp} & the security parameters to use.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the security keys. 
+\end{DoxyReturn}
+\Hypertarget{tls_8js_af4ba9c9d5deb82084fdc12d07ad72fba}\index{tls.js@{tls.js}!getCipherSuite@{getCipherSuite}}
+\index{getCipherSuite@{getCipherSuite}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{getCipherSuite}{getCipherSuite}}
+{\footnotesize\ttfamily \label{tls_8js_af4ba9c9d5deb82084fdc12d07ad72fba} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} get\+Cipher\+Suite}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(twoBytes)\ \{}
+\DoxyCodeLine{\ \ var\ rval\ =\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{for}(var\ key\ in\ \mbox{\hyperlink{tls_8js_a47139662462fb0125c5a417df00a7c88}{tls}}.CipherSuites)\ \{}
+\DoxyCodeLine{\ \ \ \ var\ cs\ =\ \mbox{\hyperlink{tls_8js_a47139662462fb0125c5a417df00a7c88}{tls}}.CipherSuites[key];}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}(cs.id[0]\ ===\ twoBytes.charCodeAt(0)\ \&\&}
+\DoxyCodeLine{\ \ \ \ \ \ cs.id[1]\ ===\ twoBytes.charCodeAt(1))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ rval\ =\ cs;}
+\DoxyCodeLine{\ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ rval;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Gets a supported cipher suite from its 2 byte ID.
+
+
+\begin{DoxyParams}{Parameters}
+{\em two\+Bytes} & two bytes in a string.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the matching supported cipher suite or null. 
+\end{DoxyReturn}
+\Hypertarget{tls_8js_a8e1877ba81c195fad4e034af89d232e1}\index{tls.js@{tls.js}!getClientSignature@{getClientSignature}}
+\index{getClientSignature@{getClientSignature}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{getClientSignature}{getClientSignature}}
+{\footnotesize\ttfamily \label{tls_8js_a8e1877ba81c195fad4e034af89d232e1} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} get\+Client\+Signature}
+
+Gets the signed data used to verify a client-\/side certificate. See tls.\+create\+Certificate\+Verify() for details.
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & the connection. \\
+\hline
+{\em callback} & the callback to call once the signed data is ready. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{tls_8js_a49279039fb239c7a354491779a4bdb43}\index{tls.js@{tls.js}!H0@{H0}}
+\index{H0@{H0}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{H0}{H0}}
+{\footnotesize\ttfamily \label{tls_8js_a49279039fb239c7a354491779a4bdb43} 
+var H0 = \mbox{\hyperlink{tls_8js_ad2d17a7b04069f34eb45ef0b8c1f53e9}{tls.\+handle\+Hello\+Request}}}
+
+\Hypertarget{tls_8js_a903268f27bdfce60e48b30b56caca9e3}\index{tls.js@{tls.js}!H1@{H1}}
+\index{H1@{H1}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{H1}{H1}}
+{\footnotesize\ttfamily \label{tls_8js_a903268f27bdfce60e48b30b56caca9e3} 
+var H1 = \mbox{\hyperlink{tls_8js_a5f3ab3ad580213d5c0327817ebe946b6}{tls.\+handle\+Server\+Hello}}}
+
+\Hypertarget{tls_8js_a371528aa9f77ece8ef1a170bed0360b0}\index{tls.js@{tls.js}!H2@{H2}}
+\index{H2@{H2}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{H2}{H2}}
+{\footnotesize\ttfamily \label{tls_8js_a371528aa9f77ece8ef1a170bed0360b0} 
+var H2 = \mbox{\hyperlink{tls_8js_a5e5a4123dc16f04833e1b84056f7f5a4}{tls.\+handle\+Certificate}}}
+
+\Hypertarget{tls_8js_af306fffa340174105cf436d02a3346a1}\index{tls.js@{tls.js}!H3@{H3}}
+\index{H3@{H3}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{H3}{H3}}
+{\footnotesize\ttfamily \label{tls_8js_af306fffa340174105cf436d02a3346a1} 
+var H3 = \mbox{\hyperlink{tls_8js_a67438f05b4f263dd7efbce137fcf8c48}{tls.\+handle\+Server\+Key\+Exchange}}}
+
+\Hypertarget{tls_8js_a5f431005161ec235f6a959393a08e997}\index{tls.js@{tls.js}!H4@{H4}}
+\index{H4@{H4}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{H4}{H4}}
+{\footnotesize\ttfamily \label{tls_8js_a5f431005161ec235f6a959393a08e997} 
+var H4 = \mbox{\hyperlink{tls_8js_a85932aaf792b9d333fad18fa529f0ebb}{tls.\+handle\+Certificate\+Request}}}
+
+\Hypertarget{tls_8js_a2bc6fb936b1a84c61f16733601bb2689}\index{tls.js@{tls.js}!H5@{H5}}
+\index{H5@{H5}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{H5}{H5}}
+{\footnotesize\ttfamily \label{tls_8js_a2bc6fb936b1a84c61f16733601bb2689} 
+var H5 = \mbox{\hyperlink{tls_8js_a79b5128bb7bf33ddb78930a7ff2de1be}{tls.\+handle\+Server\+Hello\+Done}}}
+
+\Hypertarget{tls_8js_a8b0f15ef5bbacbcbdc3f5edafc28cdcf}\index{tls.js@{tls.js}!H6@{H6}}
+\index{H6@{H6}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{H6}{H6}}
+{\footnotesize\ttfamily \label{tls_8js_a8b0f15ef5bbacbcbdc3f5edafc28cdcf} 
+var H6 = \mbox{\hyperlink{tls_8js_acacc93b2b48da8ad5c597244ac2ef797}{tls.\+handle\+Finished}}}
+
+\Hypertarget{tls_8js_ab57fec50558d211388eecbd7f70caebe}\index{tls.js@{tls.js}!H7@{H7}}
+\index{H7@{H7}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{H7}{H7}}
+{\footnotesize\ttfamily \label{tls_8js_ab57fec50558d211388eecbd7f70caebe} 
+var H7 = \mbox{\hyperlink{tls_8js_ac0a3170a1987586ae391058209854e17}{tls.\+handle\+Client\+Hello}}}
+
+\Hypertarget{tls_8js_ad096f5212710f5c3e77d24755916f08f}\index{tls.js@{tls.js}!H8@{H8}}
+\index{H8@{H8}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{H8}{H8}}
+{\footnotesize\ttfamily \label{tls_8js_ad096f5212710f5c3e77d24755916f08f} 
+var H8 = \mbox{\hyperlink{tls_8js_a288c596560414b905ab48d988f71d05a}{tls.\+handle\+Client\+Key\+Exchange}}}
+
+\Hypertarget{tls_8js_aee355311012ba5d7d47462fe2e9f4d30}\index{tls.js@{tls.js}!H9@{H9}}
+\index{H9@{H9}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{H9}{H9}}
+{\footnotesize\ttfamily \label{tls_8js_aee355311012ba5d7d47462fe2e9f4d30} 
+var H9 = \mbox{\hyperlink{tls_8js_a1c6d33ecc386694ce5b1cb81772968a2}{tls.\+handle\+Certificate\+Verify}}}
+
+\Hypertarget{tls_8js_aa5a431a1cc7f881fe6bee59980b49279}\index{tls.js@{tls.js}!handleAlert@{handleAlert}}
+\index{handleAlert@{handleAlert}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{handleAlert}{handleAlert}}
+{\footnotesize\ttfamily \label{tls_8js_aa5a431a1cc7f881fe6bee59980b49279} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} handle\+Alert}
+
+Called when an Alert record is received.
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & the connection. \\
+\hline
+{\em record} & the record. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{tls_8js_a2dbc7156311755d4935d6834f33ca68f}\index{tls.js@{tls.js}!handleApplicationData@{handleApplicationData}}
+\index{handleApplicationData@{handleApplicationData}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{handleApplicationData}{handleApplicationData}}
+{\footnotesize\ttfamily \label{tls_8js_a2dbc7156311755d4935d6834f33ca68f} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} handle\+Application\+Data}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}},\ record)\ \{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ \mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}.data.putBuffer(record.fragment);}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}.dataReady(\mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ \mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}.process();}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Called when an Application\+Data record is received.
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & the connection. \\
+\hline
+{\em record} & the record. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{tls_8js_a5e5a4123dc16f04833e1b84056f7f5a4}\index{tls.js@{tls.js}!handleCertificate@{handleCertificate}}
+\index{handleCertificate@{handleCertificate}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{handleCertificate}{handleCertificate}}
+{\footnotesize\ttfamily \label{tls_8js_a5e5a4123dc16f04833e1b84056f7f5a4} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} handle\+Certificate}
+
+Called when a client receives a Certificate record.
+
+When this message will be sent\+: The server must send a certificate whenever the agreed-\/upon key exchange method is not an anonymous one. This message will always immediately follow the server hello message.
+
+Meaning of this message\+: The certificate type must be appropriate for the selected cipher suite\textquotesingle{}s key exchange algorithm, and is generally an X.\+509v3 certificate. It must contain a key which matches the key exchange method, as follows. Unless otherwise specified, the signing algorithm for the certificate must be the same as the algorithm for the certificate key. Unless otherwise specified, the public key may be of any length.
+
+opaque ASN.\+1\+Cert\texorpdfstring{$<$}{<}1..2\texorpdfstring{$^\wedge$}{\string^}24-\/1\texorpdfstring{$>$}{>}; struct \{ ASN.\+1\+Cert certificate\+\_\+list\texorpdfstring{$<$}{<}1..2\texorpdfstring{$^\wedge$}{\string^}24-\/1\texorpdfstring{$>$}{>}; \} Certificate;
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & the connection. \\
+\hline
+{\em record} & the record. \\
+\hline
+{\em length} & the length of the handshake message. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{tls_8js_a85932aaf792b9d333fad18fa529f0ebb}\index{tls.js@{tls.js}!handleCertificateRequest@{handleCertificateRequest}}
+\index{handleCertificateRequest@{handleCertificateRequest}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{handleCertificateRequest}{handleCertificateRequest}}
+{\footnotesize\ttfamily \label{tls_8js_a85932aaf792b9d333fad18fa529f0ebb} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} handle\+Certificate\+Request}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}},\ record,\ \mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a7fdcf4c82c9946bf2b0b80829a7ab230}{length}})\ \{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a7fdcf4c82c9946bf2b0b80829a7ab230}{length}}\ <\ 3)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}.error(\mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}},\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}:\ \textcolor{stringliteral}{'Invalid\ CertificateRequest.\ Message\ too\ short.'},}
+\DoxyCodeLine{\ \ \ \ \ \ \mbox{\hyperlink{response_8js_a88d7310f8a18b3e16f4020168641b86a}{send}}:\ \textcolor{keyword}{true},}
+\DoxyCodeLine{\ \ \ \ \ \ alert:\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ level:\ \mbox{\hyperlink{tls_8js_a47139662462fb0125c5a417df00a7c88}{tls}}.Alert.Level.fatal,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ description:\ \mbox{\hyperlink{tls_8js_a47139662462fb0125c5a417df00a7c88}{tls}}.Alert.Description.illegal\_parameter}
+\DoxyCodeLine{\ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \});}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}\ =\ record.fragment;}
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{protobufjs_2ext_2descriptor_2test_8js_aa2e57ff47bd491f47d9b13a694aa0aeb}{msg}}\ =\ \{}
+\DoxyCodeLine{\ \ \ \ certificate\_types:\ \mbox{\hyperlink{tls_8js_a316c99dab4654657bf75f92b301a6454}{readVector}}(\mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}},\ 1),}
+\DoxyCodeLine{\ \ \ \ certificate\_authorities:\ \mbox{\hyperlink{tls_8js_a316c99dab4654657bf75f92b301a6454}{readVector}}(\mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}},\ 2)}
+\DoxyCodeLine{\ \ \};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ \mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}.session.certificateRequest\ =\ \mbox{\hyperlink{protobufjs_2ext_2descriptor_2test_8js_aa2e57ff47bd491f47d9b13a694aa0aeb}{msg}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ \mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}.expect\ =\ \mbox{\hyperlink{tls_8js_ab3d10e46592425ffa37c58ea70a8f4ab}{SHD}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ \mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}.process();}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Called when a client receives a Certificate\+Request record.
+
+When this message will be sent\+: \doxylink{class_a}{A} non-\/anonymous server can optionally request a certificate from the client, if appropriate for the selected cipher suite. This message, if sent, will immediately follow the Server Key Exchange message (if it is sent; otherwise, the Server Certificate message).
+
+enum \{ rsa\+\_\+sign(1), dss\+\_\+sign(2), rsa\+\_\+fixed\+\_\+dh(3), dss\+\_\+fixed\+\_\+dh(4), rsa\+\_\+ephemeral\+\_\+dh\+\_\+\+RESERVED(5), dss\+\_\+ephemeral\+\_\+dh\+\_\+\+RESERVED(6), fortezza\+\_\+dms\+\_\+\+RESERVED(20), (255) \} Client\+Certificate\+Type;
+
+opaque Distinguished\+Name\texorpdfstring{$<$}{<}1..2\texorpdfstring{$^\wedge$}{\string^}16-\/1\texorpdfstring{$>$}{>};
+
+struct \{ Client\+Certificate\+Type certificate\+\_\+types\texorpdfstring{$<$}{<}1..2\texorpdfstring{$^\wedge$}{\string^}8-\/1\texorpdfstring{$>$}{>}; Signature\+And\+Hash\+Algorithm supported\+\_\+signature\+\_\+algorithms\texorpdfstring{$<$}{<}2\texorpdfstring{$^\wedge$}{\string^}16-\/1\texorpdfstring{$>$}{>}; Distinguished\+Name certificate\+\_\+authorities\texorpdfstring{$<$}{<}0..2\texorpdfstring{$^\wedge$}{\string^}16-\/1\texorpdfstring{$>$}{>}; \} Certificate\+Request;
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & the connection. \\
+\hline
+{\em record} & the record. \\
+\hline
+{\em length} & the length of the handshake message. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{tls_8js_a1c6d33ecc386694ce5b1cb81772968a2}\index{tls.js@{tls.js}!handleCertificateVerify@{handleCertificateVerify}}
+\index{handleCertificateVerify@{handleCertificateVerify}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{handleCertificateVerify}{handleCertificateVerify}}
+{\footnotesize\ttfamily \label{tls_8js_a1c6d33ecc386694ce5b1cb81772968a2} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} handle\+Certificate\+Verify}
+
+Called when a server receives a Certificate\+Verify record.
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & the connection. \\
+\hline
+{\em record} & the record. \\
+\hline
+{\em length} & the length of the handshake message. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{tls_8js_a856817d1a2296c11c838ffe319b40c3e}\index{tls.js@{tls.js}!handleChangeCipherSpec@{handleChangeCipherSpec}}
+\index{handleChangeCipherSpec@{handleChangeCipherSpec}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{handleChangeCipherSpec}{handleChangeCipherSpec}}
+{\footnotesize\ttfamily \label{tls_8js_a856817d1a2296c11c838ffe319b40c3e} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} handle\+Change\+Cipher\+Spec}
+
+Called when a Change\+Cipher\+Spec record is received.
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & the connection. \\
+\hline
+{\em record} & the record. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{tls_8js_ac0a3170a1987586ae391058209854e17}\index{tls.js@{tls.js}!handleClientHello@{handleClientHello}}
+\index{handleClientHello@{handleClientHello}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{handleClientHello}{handleClientHello}}
+{\footnotesize\ttfamily \label{tls_8js_ac0a3170a1987586ae391058209854e17} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} handle\+Client\+Hello}
+
+Called when a server receives a Client\+Hello record.
+
+When a Client\+Hello message will be sent\+: When a client first connects to a server it is required to send the client hello as its first message. The client can also send a client hello in response to a hello request or on its own initiative in order to renegotiate the security parameters in an existing connection.
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & the connection. \\
+\hline
+{\em record} & the record. \\
+\hline
+{\em length} & the length of the handshake message. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{tls_8js_a288c596560414b905ab48d988f71d05a}\index{tls.js@{tls.js}!handleClientKeyExchange@{handleClientKeyExchange}}
+\index{handleClientKeyExchange@{handleClientKeyExchange}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{handleClientKeyExchange}{handleClientKeyExchange}}
+{\footnotesize\ttfamily \label{tls_8js_a288c596560414b905ab48d988f71d05a} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} handle\+Client\+Key\+Exchange}
+
+Called when a client receives a Client\+Key\+Exchange record.
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & the connection. \\
+\hline
+{\em record} & the record. \\
+\hline
+{\em length} & the length of the handshake message. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{tls_8js_acacc93b2b48da8ad5c597244ac2ef797}\index{tls.js@{tls.js}!handleFinished@{handleFinished}}
+\index{handleFinished@{handleFinished}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{handleFinished}{handleFinished}}
+{\footnotesize\ttfamily \label{tls_8js_acacc93b2b48da8ad5c597244ac2ef797} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} handle\+Finished}
+
+Called when a Finished record is received.
+
+When this message will be sent\+: \doxylink{class_a}{A} finished message is always sent immediately after a change cipher spec message to verify that the key exchange and authentication processes were successful. It is essential that a change cipher spec message be received between the other handshake messages and the Finished message.
+
+Meaning of this message\+: The finished message is the first protected with the just-\/ negotiated algorithms, keys, and secrets. Recipients of finished messages must verify that the contents are correct. Once a side has sent its Finished message and received and validated the Finished message from its peer, it may begin to send and receive application data over the connection.
+
+struct \{ opaque verify\+\_\+data\mbox{[}verify\+\_\+data\+\_\+length\mbox{]}; \} Finished;
+
+verify\+\_\+data PRF(master\+\_\+secret, finished\+\_\+label, Hash(handshake\+\_\+messages)) \mbox{[}0..verify\+\_\+data\+\_\+length-\/1\mbox{]};
+
+finished\+\_\+label For Finished messages sent by the client, the string "{}client finished"{}. For Finished messages sent by the server, the string "{}server finished"{}.
+
+verify\+\_\+data\+\_\+length depends on the cipher suite. If it is not specified by the cipher suite, then it is 12. Versions of TLS \texorpdfstring{$<$}{<} 1.\+2 always used 12 bytes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & the connection. \\
+\hline
+{\em record} & the record. \\
+\hline
+{\em length} & the length of the handshake message. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{tls_8js_abb825225d8be568b0e4315c9a9acf45c}\index{tls.js@{tls.js}!handleHandshake@{handleHandshake}}
+\index{handleHandshake@{handleHandshake}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{handleHandshake}{handleHandshake}}
+{\footnotesize\ttfamily \label{tls_8js_abb825225d8be568b0e4315c9a9acf45c} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} handle\+Handshake}
+
+Called when a Handshake record is received.
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & the connection. \\
+\hline
+{\em record} & the record. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{tls_8js_a535f2fe01341f31b2719ef212611cfdf}\index{tls.js@{tls.js}!handleHeartbeat@{handleHeartbeat}}
+\index{handleHeartbeat@{handleHeartbeat}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{handleHeartbeat}{handleHeartbeat}}
+{\footnotesize\ttfamily \label{tls_8js_a535f2fe01341f31b2719ef212611cfdf} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} handle\+Heartbeat}
+
+Called when a Heartbeat record is received.
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & the connection. \\
+\hline
+{\em record} & the record. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{tls_8js_ad2d17a7b04069f34eb45ef0b8c1f53e9}\index{tls.js@{tls.js}!handleHelloRequest@{handleHelloRequest}}
+\index{handleHelloRequest@{handleHelloRequest}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{handleHelloRequest}{handleHelloRequest}}
+{\footnotesize\ttfamily \label{tls_8js_ad2d17a7b04069f34eb45ef0b8c1f53e9} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} handle\+Hello\+Request}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}},\ record,\ \mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a7fdcf4c82c9946bf2b0b80829a7ab230}{length}})\ \{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}(!\mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}.handshaking\ \&\&\ \mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}.handshakes\ >\ 0)\ \{}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{tls_8js_a47139662462fb0125c5a417df00a7c88}{tls}}.queue(\mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}},\ \mbox{\hyperlink{tls_8js_a47139662462fb0125c5a417df00a7c88}{tls}}.createAlert(\mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}},\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ level:\ tls.Alert.Level.warning,}
+\DoxyCodeLine{\ \ \ \ \ \ \ description:\ tls.Alert.Description.no\_renegotiation}
+\DoxyCodeLine{\ \ \ \ \}));}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{tls_8js_a47139662462fb0125c5a417df00a7c88}{tls}}.flush(\mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}});}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ \mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}.process();}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Called when a client receives a Hello\+Request record.
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & the connection. \\
+\hline
+{\em record} & the record. \\
+\hline
+{\em length} & the length of the handshake message. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{tls_8js_a5f3ab3ad580213d5c0327817ebe946b6}\index{tls.js@{tls.js}!handleServerHello@{handleServerHello}}
+\index{handleServerHello@{handleServerHello}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{handleServerHello}{handleServerHello}}
+{\footnotesize\ttfamily \label{tls_8js_a5f3ab3ad580213d5c0327817ebe946b6} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} handle\+Server\+Hello}
+
+Called when a client receives a Server\+Hello record.
+
+When a Server\+Hello message will be sent\+: The server will send this message in response to a client hello message when it was able to find an acceptable set of algorithms. If it cannot find such a match, it will respond with a handshake failure alert.
+
+uint24 length; struct \{ Protocol\+Version server\+\_\+version; Random random; Session\+ID session\+\_\+id; Cipher\+Suite cipher\+\_\+suite; Compression\+Method compression\+\_\+method; select(extensions\+\_\+present) \{ case false\+: struct \{\}; case true\+: Extension extensions\texorpdfstring{$<$}{<}0..2\texorpdfstring{$^\wedge$}{\string^}16-\/1\texorpdfstring{$>$}{>}; \}; \} Server\+Hello;
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & the connection. \\
+\hline
+{\em record} & the record. \\
+\hline
+{\em length} & the length of the handshake message. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{tls_8js_a79b5128bb7bf33ddb78930a7ff2de1be}\index{tls.js@{tls.js}!handleServerHelloDone@{handleServerHelloDone}}
+\index{handleServerHelloDone@{handleServerHelloDone}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{handleServerHelloDone}{handleServerHelloDone}}
+{\footnotesize\ttfamily \label{tls_8js_a79b5128bb7bf33ddb78930a7ff2de1be} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} handle\+Server\+Hello\+Done}
+
+Called when a client receives a Server\+Hello\+Done record.
+
+When this message will be sent\+: The server hello done message is sent by the server to indicate the end of the server hello and associated messages. After sending this message the server will wait for a client response.
+
+Meaning of this message\+: This message means that the server is done sending messages to support the key exchange, and the client can proceed with its phase of the key exchange.
+
+Upon receipt of the server hello done message the client should verify that the server provided a valid certificate if required and check that the server hello parameters are acceptable.
+
+struct \{\} Server\+Hello\+Done;
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & the connection. \\
+\hline
+{\em record} & the record. \\
+\hline
+{\em length} & the length of the handshake message. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{tls_8js_a67438f05b4f263dd7efbce137fcf8c48}\index{tls.js@{tls.js}!handleServerKeyExchange@{handleServerKeyExchange}}
+\index{handleServerKeyExchange@{handleServerKeyExchange}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{handleServerKeyExchange}{handleServerKeyExchange}}
+{\footnotesize\ttfamily \label{tls_8js_a67438f05b4f263dd7efbce137fcf8c48} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} handle\+Server\+Key\+Exchange}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}},\ record,\ \mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a7fdcf4c82c9946bf2b0b80829a7ab230}{length}})\ \{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a7fdcf4c82c9946bf2b0b80829a7ab230}{length}}\ >\ 0)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}.error(\mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}},\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}:\ \textcolor{stringliteral}{'Invalid\ key\ parameters.\ Only\ RSA\ is\ supported.'},}
+\DoxyCodeLine{\ \ \ \ \ \ \mbox{\hyperlink{response_8js_a88d7310f8a18b3e16f4020168641b86a}{send}}:\ \textcolor{keyword}{true},}
+\DoxyCodeLine{\ \ \ \ \ \ alert:\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ level:\ \mbox{\hyperlink{tls_8js_a47139662462fb0125c5a417df00a7c88}{tls}}.Alert.Level.fatal,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ description:\ \mbox{\hyperlink{tls_8js_a47139662462fb0125c5a417df00a7c88}{tls}}.Alert.Description.unsupported\_certificate}
+\DoxyCodeLine{\ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \});}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ \mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}.expect\ =\ \mbox{\hyperlink{tls_8js_a933e0d96ac50821a3904fc3d9a010389}{SCR}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ \mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}.process();}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Called when a client receives a Server\+Key\+Exchange record.
+
+When this message will be sent\+: This message will be sent immediately after the server certificate message (or the server hello message, if this is an anonymous negotiation).
+
+The server key exchange message is sent by the server only when the server certificate message (if sent) does not contain enough data to allow the client to exchange a premaster secret.
+
+Meaning of this message\+: This message conveys cryptographic information to allow the client to communicate the premaster secret\+: either an RSA public key to encrypt the premaster secret with, or a Diffie-\/\+Hellman public key with which the client can complete a key exchange (with the result being the premaster secret.)
+
+enum \{ dhe\+\_\+dss, dhe\+\_\+rsa, dh\+\_\+anon, rsa, dh\+\_\+dss, dh\+\_\+rsa \} Key\+Exchange\+Algorithm;
+
+struct \{ opaque dh\+\_\+p\texorpdfstring{$<$}{<}1..2\texorpdfstring{$^\wedge$}{\string^}16-\/1\texorpdfstring{$>$}{>}; opaque dh\+\_\+g\texorpdfstring{$<$}{<}1..2\texorpdfstring{$^\wedge$}{\string^}16-\/1\texorpdfstring{$>$}{>}; opaque dh\+\_\+\+Ys\texorpdfstring{$<$}{<}1..2\texorpdfstring{$^\wedge$}{\string^}16-\/1\texorpdfstring{$>$}{>}; \} Server\+DHParams;
+
+struct \{ select(\+Key\+Exchange\+Algorithm) \{ case dh\+\_\+anon\+: Server\+DHParams params; case dhe\+\_\+dss\+: case dhe\+\_\+rsa\+: Server\+DHParams params; digitally-\/signed struct \{ opaque client\+\_\+random\mbox{[}32\mbox{]}; opaque server\+\_\+random\mbox{[}32\mbox{]}; Server\+DHParams params; \} signed\+\_\+params; case rsa\+: case dh\+\_\+dss\+: case dh\+\_\+rsa\+: struct \{\}; \}; \} Server\+Key\+Exchange;
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & the connection. \\
+\hline
+{\em record} & the record. \\
+\hline
+{\em length} & the length of the handshake message. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{tls_8js_a38b53f9ef83570d0e0582790c227e88b}\index{tls.js@{tls.js}!handleUnexpected@{handleUnexpected}}
+\index{handleUnexpected@{handleUnexpected}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{handleUnexpected}{handleUnexpected}}
+{\footnotesize\ttfamily \label{tls_8js_a38b53f9ef83570d0e0582790c227e88b} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} handle\+Unexpected}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}},\ record)\ \{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ var\ ignore\ =\ (!\mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}.open\ \&\&\ \mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}.entity\ ===\ \mbox{\hyperlink{tls_8js_a47139662462fb0125c5a417df00a7c88}{tls}}.ConnectionEnd.client);}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}(!ignore)\ \{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}.error(\mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}},\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}:\ \textcolor{stringliteral}{'Unexpected\ message.\ Received\ TLS\ record\ out\ of\ order.'},}
+\DoxyCodeLine{\ \ \ \ \ \ \mbox{\hyperlink{response_8js_a88d7310f8a18b3e16f4020168641b86a}{send}}:\ \textcolor{keyword}{true},}
+\DoxyCodeLine{\ \ \ \ \ \ alert:\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ level:\ \mbox{\hyperlink{tls_8js_a47139662462fb0125c5a417df00a7c88}{tls}}.Alert.Level.fatal,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ description:\ \mbox{\hyperlink{tls_8js_a47139662462fb0125c5a417df00a7c88}{tls}}.Alert.Description.unexpected\_message}
+\DoxyCodeLine{\ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \});}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Called when an unexpected record is encountered.
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & the connection. \\
+\hline
+{\em record} & the record. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{tls_8js_a6da25907eb2604ea701c2d4195262db3}\index{tls.js@{tls.js}!HandshakeType@{HandshakeType}}
+\index{HandshakeType@{HandshakeType}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{HandshakeType}{HandshakeType}}
+{\footnotesize\ttfamily \label{tls_8js_a6da25907eb2604ea701c2d4195262db3} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} Handshake\+Type}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ hello\_request:\ 0,}
+\DoxyCodeLine{\ \ client\_hello:\ 1,}
+\DoxyCodeLine{\ \ server\_hello:\ 2,}
+\DoxyCodeLine{\ \ certificate:\ 11,}
+\DoxyCodeLine{\ \ server\_key\_exchange:\ 12,}
+\DoxyCodeLine{\ \ certificate\_request:\ 13,}
+\DoxyCodeLine{\ \ server\_hello\_done:\ 14,}
+\DoxyCodeLine{\ \ certificate\_verify:\ 15,}
+\DoxyCodeLine{\ \ client\_key\_exchange:\ 16,}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{async__iterator_8js_a8243cbb48762858d9ac3b1e3830f27f6}{finished}}:\ 20}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+TLS handshake types. enum \{ hello\+\_\+request(0), client\+\_\+hello(1), server\+\_\+hello(2), certificate(11), server\+\_\+key\+\_\+exchange (12), certificate\+\_\+request(13), server\+\_\+hello\+\_\+done(14), certificate\+\_\+verify(15), client\+\_\+key\+\_\+exchange(16), \doxylink{async__iterator_8js_a8243cbb48762858d9ac3b1e3830f27f6}{finished(20)}, (255) \} Handshake\+Type; \Hypertarget{tls_8js_ae8769abacba7ab182eacb0ef65185eb6}\index{tls.js@{tls.js}!HeartbeatMessageType@{HeartbeatMessageType}}
+\index{HeartbeatMessageType@{HeartbeatMessageType}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{HeartbeatMessageType}{HeartbeatMessageType}}
+{\footnotesize\ttfamily \label{tls_8js_ae8769abacba7ab182eacb0ef65185eb6} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} Heartbeat\+Message\+Type}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ heartbeat\_request:\ 1,}
+\DoxyCodeLine{\ \ heartbeat\_response:\ 2}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+TLS Heartbeat Message types. enum \{ heartbeat\+\_\+request(1), heartbeat\+\_\+response(2), (255) \} Heartbeat\+Message\+Type; \Hypertarget{tls_8js_a2760e10cf5ecc757906b40aafd064bf6}\index{tls.js@{tls.js}!hmac\_sha1@{hmac\_sha1}}
+\index{hmac\_sha1@{hmac\_sha1}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{hmac\_sha1}{hmac\_sha1}}
+{\footnotesize\ttfamily \label{tls_8js_a2760e10cf5ecc757906b40aafd064bf6} 
+\mbox{\hyperlink{aes_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} hmac\+\_\+sha1}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(key,\ seqNum,\ record)\ \{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{hmac_8js_a01268bca9c8ec878cbb5712204e3533e}{hmac}}\ =\ \mbox{\hyperlink{tls_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.hmac.create();}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{hmac_8js_a01268bca9c8ec878cbb5712204e3533e}{hmac}}.start(\textcolor{stringliteral}{'SHA1'},\ key);}
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}\ =\ \mbox{\hyperlink{tls_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.util.createBuffer();}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}.putInt32(seqNum[0]);}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}.putInt32(seqNum[1]);}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}.putByte(record.type);}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}.putByte(record.version.major);}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}.putByte(record.version.minor);}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}.putInt16(record.length);}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}.putBytes(record.fragment.bytes());}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{hmac_8js_a01268bca9c8ec878cbb5712204e3533e}{hmac}}.update(\mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}.getBytes());}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{hmac_8js_a01268bca9c8ec878cbb5712204e3533e}{hmac}}.digest().getBytes();}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Gets a MAC for a record using the SHA-\/1 hash algorithm.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & the mac key. \\
+\hline
+{\em state} & the sequence number (array of two 32-\/bit integers). \\
+\hline
+{\em record} & the record.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the sha-\/1 hash (20 bytes) for the given record. 
+\end{DoxyReturn}
+\Hypertarget{tls_8js_a57ede9e24932598cd723121b21cd61a1}\index{tls.js@{tls.js}!hsTable@{hsTable}}
+\index{hsTable@{hsTable}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{hsTable}{hsTable}}
+{\footnotesize\ttfamily \label{tls_8js_a57ede9e24932598cd723121b21cd61a1} 
+hs\+Table\mbox{[}\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a207259f7e3cfd9800ed8f7d7224c7a68}{tls.\+Connection\+End.\+server}}\mbox{]} = \mbox{[}$\,$\mbox{]}}
+
+\Hypertarget{tls_8js_a9d8abf83f9df01de52757a4b624d300e}\index{tls.js@{tls.js}!inflate@{inflate}}
+\index{inflate@{inflate}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{inflate}{inflate}}
+{\footnotesize\ttfamily \label{tls_8js_a9d8abf83f9df01de52757a4b624d300e} 
+var inflate}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}},\ record,\ \mbox{\hyperlink{ordered-map_8min_8js_ad9a7d92cb87932d25187fdec3ba1b621}{s}})\ \{}
+\DoxyCodeLine{\ \ var\ rval\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{\ \ \ \ var\ \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}}\ =\ \mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}.inflate(record.fragment.getBytes());}
+\DoxyCodeLine{\ \ \ \ record.fragment\ =\ \mbox{\hyperlink{tls_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.util.createBuffer(\mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}});}
+\DoxyCodeLine{\ \ \ \ record.length\ =\ \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}}.length;}
+\DoxyCodeLine{\ \ \ \ rval\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\ \ \}\ \textcolor{keywordflow}{catch}(ex)\ \{}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ rval;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Decompresses the TLSCompressed record into a TLSPlaintext record using the deflate algorithm.
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & the TLS connection. \\
+\hline
+{\em record} & the TLSCompressed record to decompress. \\
+\hline
+{\em s} & the Connection\+State to use.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true on success, false on failure. 
+\end{DoxyReturn}
+\Hypertarget{tls_8js_a17b935ea1fbca09d5e4fb61733884fd8}\index{tls.js@{tls.js}!Level@{Level}}
+\index{Level@{Level}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{Level}{Level}}
+{\footnotesize\ttfamily \label{tls_8js_a17b935ea1fbca09d5e4fb61733884fd8} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} \mbox{\hyperlink{tls_8js_a7eff9c05557ef9b8285f81a3fcbdf2b0}{Alert}} Level}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ warning:\ 1,}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_acc3b191bb2652b439f122d17aa70b612}{fatal}}:\ 2}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{tls_8js_a7b49d41da4fcf394c8a7cff9af337cd2}\index{tls.js@{tls.js}!MACAlgorithm@{MACAlgorithm}}
+\index{MACAlgorithm@{MACAlgorithm}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{MACAlgorithm}{MACAlgorithm}}
+{\footnotesize\ttfamily \label{tls_8js_a7b49d41da4fcf394c8a7cff9af337cd2} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} MACAlgorithm}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ none:\ \textcolor{keyword}{null},}
+\DoxyCodeLine{\ \ hmac\_md5:\ 0,}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{tls_8js_a2760e10cf5ecc757906b40aafd064bf6}{hmac\_sha1}}:\ 1,}
+\DoxyCodeLine{\ \ hmac\_sha256:\ 2,}
+\DoxyCodeLine{\ \ hmac\_sha384:\ 3,}
+\DoxyCodeLine{\ \ hmac\_sha512:\ 4}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+MAC (Message Authentication Code) algorithms. enum \{ null, hmac\+\_\+md5, hmac\+\_\+sha1, hmac\+\_\+sha256, hmac\+\_\+sha384, hmac\+\_\+sha512\} MACAlgorithm; \Hypertarget{tls_8js_ada005636c1f681616e82a42caf4f142d}\index{tls.js@{tls.js}!MaxFragment@{MaxFragment}}
+\index{MaxFragment@{MaxFragment}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{MaxFragment}{MaxFragment}}
+{\footnotesize\ttfamily \label{tls_8js_ada005636c1f681616e82a42caf4f142d} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} Max\+Fragment = 16384 -\/ 1024}
+
+Maximum fragment size. True maximum is 16384, but we fragment before that to allow for unusual small increases during compression. \Hypertarget{tls_8js_a7960203105be4c3bac2269437ae9d915}\index{tls.js@{tls.js}!parseHelloMessage@{parseHelloMessage}}
+\index{parseHelloMessage@{parseHelloMessage}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{parseHelloMessage}{parseHelloMessage}}
+{\footnotesize\ttfamily \label{tls_8js_a7960203105be4c3bac2269437ae9d915} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} parse\+Hello\+Message}
+
+Parses a hello message from a Client\+Hello or Server\+Hello record.
+
+
+\begin{DoxyParams}{Parameters}
+{\em record} & the record to parse.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the parsed message. 
+\end{DoxyReturn}
+\Hypertarget{tls_8js_a0bedc43bee5fb299cd38e6e12947a437}\index{tls.js@{tls.js}!prf\_sha256@{prf\_sha256}}
+\index{prf\_sha256@{prf\_sha256}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{prf\_sha256}{prf\_sha256}}
+{\footnotesize\ttfamily \label{tls_8js_a0bedc43bee5fb299cd38e6e12947a437} 
+var prf\+\_\+sha256}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(secret,\ label,\ seed,\ \mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a7fdcf4c82c9946bf2b0b80829a7ab230}{length}})\ \{}
+\DoxyCodeLine{\ \ \ }
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Generates pseudo random bytes using a SHA256 algorithm. For TLS 1.\+2.
+
+
+\begin{DoxyParams}{Parameters}
+{\em secret} & the secret to use. \\
+\hline
+{\em label} & the label to use. \\
+\hline
+{\em seed} & the seed value to use. \\
+\hline
+{\em length} & the number of bytes to generate.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the pseudo random bytes in a byte buffer. 
+\end{DoxyReturn}
+\Hypertarget{tls_8js_a99acb52a5841948236d3b27e5e7f0eed}\index{tls.js@{tls.js}!prf\_TLS1@{prf\_TLS1}}
+\index{prf\_TLS1@{prf\_TLS1}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{prf\_TLS1}{prf\_TLS1}}
+{\footnotesize\ttfamily \label{tls_8js_a99acb52a5841948236d3b27e5e7f0eed} 
+var prf\+\_\+\+TLS1}
+
+Generates pseudo random bytes by mixing the result of two hash functions, MD5 and SHA-\/1.
+
+\doxylink{tls_8js_a99acb52a5841948236d3b27e5e7f0eed}{prf\+\_\+\+TLS1(secret, label, seed)} = P\+\_\+\+MD5(S1, label + seed) XOR P\+\_\+\+SHA-\/1(S2, label + seed);
+
+Each P\+\_\+hash function functions as follows\+:
+
+P\+\_\+hash(secret, seed) = HMAC\+\_\+hash(secret, \doxylink{class_a}{A(1)} + seed) + HMAC\+\_\+hash(secret, \doxylink{class_a}{A(2)} + seed) + HMAC\+\_\+hash(secret, \doxylink{class_a}{A(3)} + seed) + ... \doxylink{uuid_8min_8js_a8e885e73c42d61d2687450cadf7f22fb}{A()} is defined as\+: \doxylink{class_a}{A(0)} = seed \doxylink{class_a}{A(i)} = HMAC\+\_\+hash(secret, \doxylink{class_a}{A}(i-\/1))
+
+The \textquotesingle{}+\textquotesingle{} operator denotes concatenation.
+
+As many iterations \doxylink{class_a}{A(\+N)} as are needed are performed to generate enough pseudo random byte output. If an iteration creates more data than is necessary, then it is truncated.
+
+Therefore\+: \doxylink{class_a}{A(1)} = HMAC\+\_\+hash(secret, A(0)) = HMAC\+\_\+hash(secret, seed) \doxylink{class_a}{A(2)} = HMAC\+\_\+hash(secret, A(1)) = HMAC\+\_\+hash(secret, HMAC\+\_\+hash(secret, seed))
+
+Therefore\+: P\+\_\+hash(secret, seed) = HMAC\+\_\+hash(secret, HMAC\+\_\+hash(secret, A(0)) + seed) + HMAC\+\_\+hash(secret, HMAC\+\_\+hash(secret, A(1)) + seed) + ...
+
+Therefore\+: P\+\_\+hash(secret, seed) = HMAC\+\_\+hash(secret, HMAC\+\_\+hash(secret, seed) + seed) + HMAC\+\_\+hash(secret, HMAC\+\_\+hash(secret, HMAC\+\_\+hash(secret, seed)) + seed) + ...
+
+
+\begin{DoxyParams}{Parameters}
+{\em secret} & the secret to use. \\
+\hline
+{\em label} & the label to use. \\
+\hline
+{\em seed} & the seed value to use. \\
+\hline
+{\em length} & the number of bytes to generate.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the pseudo random bytes in a byte buffer. 
+\end{DoxyReturn}
+\Hypertarget{tls_8js_a35de87433238277f8a5aba7716aa57a9}\index{tls.js@{tls.js}!prf\_tls1@{prf\_tls1}}
+\index{prf\_tls1@{prf\_tls1}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{prf\_tls1}{prf\_tls1}}
+{\footnotesize\ttfamily \label{tls_8js_a35de87433238277f8a5aba7716aa57a9} 
+\mbox{\hyperlink{aes_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} prf\+\_\+tls1 = \mbox{\hyperlink{tls_8js_a99acb52a5841948236d3b27e5e7f0eed}{prf\+\_\+\+TLS1}}}
+
+\Hypertarget{tls_8js_aa2b45fc7f89b2efdedcda5bb52cfd3a6}\index{tls.js@{tls.js}!PRFAlgorithm@{PRFAlgorithm}}
+\index{PRFAlgorithm@{PRFAlgorithm}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{PRFAlgorithm}{PRFAlgorithm}}
+{\footnotesize\ttfamily \label{tls_8js_aa2b45fc7f89b2efdedcda5bb52cfd3a6} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} PRFAlgorithm}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ tls\_prf\_sha256:\ 0}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Pseudo-\/random function algorithm used to generate keys from the master secret. enum \{ tls\+\_\+prf\+\_\+sha256 \} PRFAlgorithm; \Hypertarget{tls_8js_a9f7d745f5c6457c1e0017fff889abac0}\index{tls.js@{tls.js}!queue@{queue}}
+\index{queue@{queue}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{queue}{queue}}
+{\footnotesize\ttfamily \label{tls_8js_a9f7d745f5c6457c1e0017fff889abac0} 
+\mbox{\hyperlink{rxjs_8umd_8js_a1ce0c7952ebec6971889c6259a6a958e}{queue\+Scheduler}} from scheduler queue}
+
+Fragments, compresses, encrypts, and queues a record for delivery.
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & the connection. \\
+\hline
+{\em record} & the record to queue. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{tls_8js_a7cdb2df63e16af50367778c26d9497ec}\index{tls.js@{tls.js}!R0@{R0}}
+\index{R0@{R0}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{R0}{R0}}
+{\footnotesize\ttfamily \label{tls_8js_a7cdb2df63e16af50367778c26d9497ec} 
+var R0 = \mbox{\hyperlink{tls_8js_a856817d1a2296c11c838ffe319b40c3e}{tls.\+handle\+Change\+Cipher\+Spec}}}
+
+\Hypertarget{tls_8js_a638673f631fc1ef9f08fc45adc50c649}\index{tls.js@{tls.js}!R1@{R1}}
+\index{R1@{R1}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{R1}{R1}}
+{\footnotesize\ttfamily \label{tls_8js_a638673f631fc1ef9f08fc45adc50c649} 
+var R1 = \mbox{\hyperlink{tls_8js_aa5a431a1cc7f881fe6bee59980b49279}{tls.\+handle\+Alert}}}
+
+\Hypertarget{tls_8js_a2ae6c5c28b9200261801daa246bffdb4}\index{tls.js@{tls.js}!R2@{R2}}
+\index{R2@{R2}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{R2}{R2}}
+{\footnotesize\ttfamily \label{tls_8js_a2ae6c5c28b9200261801daa246bffdb4} 
+var R2 = \mbox{\hyperlink{tls_8js_abb825225d8be568b0e4315c9a9acf45c}{tls.\+handle\+Handshake}}}
+
+\Hypertarget{tls_8js_aaf90671eb13b49b0533e6b65896e323d}\index{tls.js@{tls.js}!R3@{R3}}
+\index{R3@{R3}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{R3}{R3}}
+{\footnotesize\ttfamily \label{tls_8js_aaf90671eb13b49b0533e6b65896e323d} 
+var R3 = \mbox{\hyperlink{tls_8js_a2dbc7156311755d4935d6834f33ca68f}{tls.\+handle\+Application\+Data}}}
+
+\Hypertarget{tls_8js_a8b79e366cff31e451064a0c6bfb20785}\index{tls.js@{tls.js}!R4@{R4}}
+\index{R4@{R4}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{R4}{R4}}
+{\footnotesize\ttfamily \label{tls_8js_a8b79e366cff31e451064a0c6bfb20785} 
+var R4 = \mbox{\hyperlink{tls_8js_a535f2fe01341f31b2719ef212611cfdf}{tls.\+handle\+Heartbeat}}}
+
+\Hypertarget{tls_8js_a316c99dab4654657bf75f92b301a6454}\index{tls.js@{tls.js}!readVector@{readVector}}
+\index{readVector@{readVector}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{readVector}{readVector}}
+{\footnotesize\ttfamily \label{tls_8js_a316c99dab4654657bf75f92b301a6454} 
+var read\+Vector}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}},\ lenBytes)\ \{}
+\DoxyCodeLine{\ \ var\ len\ =\ 0;}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{switch}(lenBytes)\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{case}\ 1:}
+\DoxyCodeLine{\ \ \ \ len\ =\ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}.getByte();}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{case}\ 2:}
+\DoxyCodeLine{\ \ \ \ len\ =\ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}.getInt16();}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{case}\ 3:}
+\DoxyCodeLine{\ \ \ \ len\ =\ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}.getInt24();}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{case}\ 4:}
+\DoxyCodeLine{\ \ \ \ len\ =\ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}.getInt32();}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{tls_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.util.createBuffer(\mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}.getBytes(len));}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Reads a TLS variable-\/length vector from a byte buffer.
+
+Variable-\/length vectors are defined by specifying a subrange of legal lengths, inclusively, using the notation \texorpdfstring{$<$}{<}floor..ceiling\texorpdfstring{$>$}{>}. When these are encoded, the actual length precedes the vector\textquotesingle{}s contents in the byte stream. The length will be in the form of a number consuming as many bytes as required to hold the vector\textquotesingle{}s specified maximum (ceiling) length. \doxylink{class_a}{A} variable-\/length vector with an actual length field of zero is referred to as an empty vector.
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & the byte buffer. \\
+\hline
+{\em len\+Bytes} & the number of bytes required to store the length.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the resulting byte buffer. 
+\end{DoxyReturn}
+\Hypertarget{tls_8js_a6aab489a2245ab89ff49b5f0b7b76f51}\index{tls.js@{tls.js}!SAD@{SAD}}
+\index{SAD@{SAD}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{SAD}{SAD}}
+{\footnotesize\ttfamily \label{tls_8js_a6aab489a2245ab89ff49b5f0b7b76f51} 
+var SAD = 7}
+
+\Hypertarget{tls_8js_a3962adc033a3c0ad280ad833c1e1d3ca}\index{tls.js@{tls.js}!SCC@{SCC}}
+\index{SCC@{SCC}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{SCC}{SCC}}
+{\footnotesize\ttfamily \label{tls_8js_a3962adc033a3c0ad280ad833c1e1d3ca} 
+var SCC = 5}
+
+\Hypertarget{tls_8js_a240389b303df0932a189512b885d23e3}\index{tls.js@{tls.js}!SCE@{SCE}}
+\index{SCE@{SCE}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{SCE}{SCE}}
+{\footnotesize\ttfamily \label{tls_8js_a240389b303df0932a189512b885d23e3} 
+var SCE = 1}
+
+\Hypertarget{tls_8js_a933e0d96ac50821a3904fc3d9a010389}\index{tls.js@{tls.js}!SCR@{SCR}}
+\index{SCR@{SCR}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{SCR}{SCR}}
+{\footnotesize\ttfamily \label{tls_8js_a933e0d96ac50821a3904fc3d9a010389} 
+var SCR = 3}
+
+\Hypertarget{tls_8js_ac870bb355f75e61a35f14790393f135e}\index{tls.js@{tls.js}!SER@{SER}}
+\index{SER@{SER}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{SER}{SER}}
+{\footnotesize\ttfamily \label{tls_8js_ac870bb355f75e61a35f14790393f135e} 
+var SER = 8}
+
+\Hypertarget{tls_8js_a226b40d1678b1f70cb24b6000b28b8e1}\index{tls.js@{tls.js}!SFI@{SFI}}
+\index{SFI@{SFI}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{SFI}{SFI}}
+{\footnotesize\ttfamily \label{tls_8js_a226b40d1678b1f70cb24b6000b28b8e1} 
+var SFI = 6}
+
+\Hypertarget{tls_8js_ab3d10e46592425ffa37c58ea70a8f4ab}\index{tls.js@{tls.js}!SHD@{SHD}}
+\index{SHD@{SHD}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{SHD}{SHD}}
+{\footnotesize\ttfamily \label{tls_8js_ab3d10e46592425ffa37c58ea70a8f4ab} 
+var SHD = 4}
+
+\Hypertarget{tls_8js_a5d527bedf6d33fc98d71e2cea70a74df}\index{tls.js@{tls.js}!SHE@{SHE}}
+\index{SHE@{SHE}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{SHE}{SHE}}
+{\footnotesize\ttfamily \label{tls_8js_a5d527bedf6d33fc98d71e2cea70a74df} 
+var SHE = 0}
+
+The transistional state tables for receiving TLS records. It maps the current TLS engine state and a received record to a function to handle the record and update the state.
+
+For instance, if the current state is SHE, then the TLS engine is expecting a Server\+Hello record. Once a record is received, the handler function is looked up using the state SHE and the record\textquotesingle{}s content type.
+
+The resulting function will either be an error handler or a record handler. The function will take whatever action is appropriate and update the state for the next record.
+
+The states are all based on possible server record types. Note that the client will never specifically expect to receive a Hello\+Request or an alert from the server so there is no state that reflects this. These messages may occur at any time.
+
+There are two tables for mapping states because there is a second tier of types for handshake messages. Once a record with a content type of handshake is received, the handshake record handler will look up the handshake type in the secondary map to get its appropriate handler.
+
+Valid message orders are as follows\+:
+
+=======================FULL HANDSHAKE====================== \doxylink{class_client}{Client} Server
+
+Client\+Hello -\/-\/-\/-\/-\/-\/-\/-\/\texorpdfstring{$>$}{>} Server\+Hello Certificate\texorpdfstring{$\ast$}{*} Server\+Key\+Exchange\texorpdfstring{$\ast$}{*} Certificate\+Request\texorpdfstring{$\ast$}{*} \texorpdfstring{$<$}{<}-\/-\/-\/-\/-\/--- Server\+Hello\+Done Certificate\texorpdfstring{$\ast$}{*} Client\+Key\+Exchange Certificate\+Verify\texorpdfstring{$\ast$}{*} \mbox{[}Change\+Cipher\+Spec\mbox{]} Finished -\/-\/-\/-\/-\/-\/-\/-\/\texorpdfstring{$>$}{>} \mbox{[}Change\+Cipher\+Spec\mbox{]} \texorpdfstring{$<$}{<}-\/-\/-\/-\/-\/--- Finished Application Data \texorpdfstring{$<$}{<}-\/-\/-\/-\/-\/-\/-\/\texorpdfstring{$>$}{>} Application Data
+
+=====================SESSION RESUMPTION===================== \doxylink{class_client}{Client} Server
+
+Client\+Hello -\/-\/-\/-\/-\/-\/-\/-\/\texorpdfstring{$>$}{>} Server\+Hello \mbox{[}Change\+Cipher\+Spec\mbox{]} \texorpdfstring{$<$}{<}-\/-\/-\/-\/-\/--- Finished \mbox{[}Change\+Cipher\+Spec\mbox{]} Finished -\/-\/-\/-\/-\/-\/-\/-\/\texorpdfstring{$>$}{>} Application Data \texorpdfstring{$<$}{<}-\/-\/-\/-\/-\/-\/-\/\texorpdfstring{$>$}{>} Application Data \Hypertarget{tls_8js_a0e13179950a8db2d85bfa0acb367a506}\index{tls.js@{tls.js}!SKE@{SKE}}
+\index{SKE@{SKE}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{SKE}{SKE}}
+{\footnotesize\ttfamily \label{tls_8js_a0e13179950a8db2d85bfa0acb367a506} 
+var SKE = 2}
+
+\Hypertarget{tls_8js_a34095f1ebe5a027bff66a078e547b03a}\index{tls.js@{tls.js}!SupportedVersions@{SupportedVersions}}
+\index{SupportedVersions@{SupportedVersions}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{SupportedVersions}{SupportedVersions}}
+{\footnotesize\ttfamily \label{tls_8js_a34095f1ebe5a027bff66a078e547b03a} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} Supported\+Versions}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{tls_8js_a47139662462fb0125c5a417df00a7c88}{tls}}.Versions.TLS\_1\_1,}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{tls_8js_a47139662462fb0125c5a417df00a7c88}{tls}}.Versions.TLS\_1\_0}
+\DoxyCodeLine{]}
+
+\end{DoxyCode}
+\Hypertarget{tls_8js_a47139662462fb0125c5a417df00a7c88}\index{tls.js@{tls.js}!tls@{tls}}
+\index{tls@{tls}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{tls}{tls}}
+{\footnotesize\ttfamily \label{tls_8js_a47139662462fb0125c5a417df00a7c88} 
+var tls = \{\}}
+
+The tls implementation. \Hypertarget{tls_8js_a8355784516ace1ffe321dba1e800f53b}\index{tls.js@{tls.js}!verifyCertificateChain@{verifyCertificateChain}}
+\index{verifyCertificateChain@{verifyCertificateChain}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{verifyCertificateChain}{verifyCertificateChain}}
+{\footnotesize\ttfamily \label{tls_8js_a8355784516ace1ffe321dba1e800f53b} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} verify\+Certificate\+Chain}
+
+Verifies a certificate chain against the given connection\textquotesingle{}s Certificate Authority store.
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & the TLS connection. \\
+\hline
+{\em chain} & the certificate chain to verify, with the root or highest authority at the end.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if successful, false if not. 
+\end{DoxyReturn}
+\Hypertarget{tls_8js_a7d6373cb18cdb0a47adabb3527c5571f}\index{tls.js@{tls.js}!Version@{Version}}
+\index{Version@{Version}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{Version}{Version}}
+{\footnotesize\ttfamily \label{tls_8js_a7d6373cb18cdb0a47adabb3527c5571f} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} Version = \mbox{\hyperlink{tls_8js_a34095f1ebe5a027bff66a078e547b03a}{tls.\+Supported\+Versions}}\mbox{[}0\mbox{]}}
+
+\Hypertarget{tls_8js_af21586f370dee717e4d2b223a4d1ee8c}\index{tls.js@{tls.js}!Versions@{Versions}}
+\index{Versions@{Versions}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{Versions}{Versions}}
+{\footnotesize\ttfamily \label{tls_8js_af21586f370dee717e4d2b223a4d1ee8c} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} Versions}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ TLS\_1\_0:\ \{\mbox{\hyperlink{esm_2internal_2global-utils_8js_ad40d045e16bdf717eaacf5e60d4164a2}{major}}:\ 3,\ minor:\ 1\},}
+\DoxyCodeLine{\ \ TLS\_1\_1:\ \{\mbox{\hyperlink{esm_2internal_2global-utils_8js_ad40d045e16bdf717eaacf5e60d4164a2}{major}}:\ 3,\ minor:\ 2\},}
+\DoxyCodeLine{\ \ TLS\_1\_2:\ \{\mbox{\hyperlink{esm_2internal_2global-utils_8js_ad40d045e16bdf717eaacf5e60d4164a2}{major}}:\ 3,\ minor:\ 3\}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Version\+: TLS 1.\+2 = 3.\+3, TLS 1.\+1 = 3.\+2, TLS 1.\+0 = 3.\+1. Both TLS 1.\+1 and TLS 1.\+2 were still too new (ie\+: open\+SSL didn\textquotesingle{}t implement them) at the time of this implementation so TLS 1.\+0 was implemented instead. \Hypertarget{tls_8js_aae5bd7305f1b514b4e7b2b745445841b}\index{tls.js@{tls.js}!writeVector@{writeVector}}
+\index{writeVector@{writeVector}!tls.js@{tls.js}}
+\doxysubsubsection{\texorpdfstring{writeVector}{writeVector}}
+{\footnotesize\ttfamily \label{tls_8js_aae5bd7305f1b514b4e7b2b745445841b} 
+var write\+Vector}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}},\ lenBytes,\ \mbox{\hyperlink{ordered-map_8min_8js_a207400f40ed647015069564fa40946e1}{v}})\ \{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}.putInt(\mbox{\hyperlink{ordered-map_8min_8js_a207400f40ed647015069564fa40946e1}{v}}.length(),\ lenBytes\ <<\ 3);}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}.putBuffer(\mbox{\hyperlink{ordered-map_8min_8js_a207400f40ed647015069564fa40946e1}{v}});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Writes a TLS variable-\/length vector to a byte buffer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & the byte buffer. \\
+\hline
+{\em len\+Bytes} & the number of bytes required to store the length. \\
+\hline
+{\em v} & the byte buffer vector. \\
+\hline
+\end{DoxyParams}

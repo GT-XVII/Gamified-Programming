@@ -1,0 +1,409 @@
+\doxysection{Machine\+Learning\+Api\+Client Class Reference}
+\hypertarget{class_machine_learning_api_client}{}\label{class_machine_learning_api_client}\index{MachineLearningApiClient@{MachineLearningApiClient}}
+
+
+Collaboration diagram for Machine\+Learning\+Api\+Client\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{class_machine_learning_api_client__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_machine_learning_api_client_a6c4869d294350d0b6e78ca216f254e09}{constructor}} (\mbox{\hyperlink{database_2dist_2index_8cjs_8js_a7b225fcb720e4d5ed2bbf60e28a25e6d}{app}})
+\item 
+\mbox{\hyperlink{class_machine_learning_api_client_afd1a29ebf018878119348b2d8f1e19f5}{create\+Model}} (model)
+\item 
+\mbox{\hyperlink{class_machine_learning_api_client_adf183b7ddff04992482a4518af2c077a}{update\+Model}} (model\+Id, model, update\+Mask)
+\item 
+\mbox{\hyperlink{class_machine_learning_api_client_a3b08a8666c86c8e8f17dbdf339bceb83}{get\+Model}} (model\+Id)
+\item 
+\mbox{\hyperlink{class_machine_learning_api_client_ab557ca28cb904064deae22d7c32ce55a}{get\+Operation}} (operation\+Name)
+\item 
+\mbox{\hyperlink{class_machine_learning_api_client_a498a5a2477ba839eab611faeb78db7bd}{list\+Models}} (options=\{\})
+\item 
+\mbox{\hyperlink{class_machine_learning_api_client_a16529e0fe0a748a3b922995f1dc15309}{delete\+Model}} (model\+Id)
+\item 
+\mbox{\hyperlink{class_machine_learning_api_client_a87881d03662b428ba56bea99b01ac133}{handle\+Operation}} (op, options)
+\item 
+\mbox{\hyperlink{class_machine_learning_api_client_a431f166ab7ace36c1681647b3f3711b2}{poll\+Operation\+With\+Exponential\+Backoff}} (op\+Name, options)
+\item 
+\mbox{\hyperlink{class_machine_learning_api_client_a84f9cc90838b1913ec924c35f3f14cb7}{get\+Resource\+With\+Short\+Name}} (\mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}})
+\item 
+\mbox{\hyperlink{class_machine_learning_api_client_a56a642ca36ef710227128c891b756d92}{get\+Resource\+With\+Full\+Name}} (full\+Name)
+\item 
+\mbox{\hyperlink{class_machine_learning_api_client_a6a3f0fee728a9997ca1e5537757f7cf2}{send\+Request}} (\mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}})
+\item 
+\mbox{\hyperlink{class_machine_learning_api_client_a17e0a35d634870a4d24b3290bce1a5a2}{to\+Firebase\+Error}} (err)
+\item 
+\mbox{\hyperlink{class_machine_learning_api_client_a98c1a290f05759d9ca664d5cef5f3281}{get\+Project\+Url}} ()
+\item 
+\mbox{\hyperlink{class_machine_learning_api_client_a58710e4482e6d6b5c77a3a1d5ac2f75f}{get\+Project\+Id\+Prefix}} ()
+\item 
+\mbox{\hyperlink{class_machine_learning_api_client_aa46bbffe7fe1145b29ec70f4fc6421e2}{get\+Model\+Name}} (model\+Id)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class that facilitates sending requests to the Firebase ML backend API. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_machine_learning_api_client_a6c4869d294350d0b6e78ca216f254e09}\index{MachineLearningApiClient@{MachineLearningApiClient}!constructor@{constructor}}
+\index{constructor@{constructor}!MachineLearningApiClient@{MachineLearningApiClient}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_machine_learning_api_client_a6c4869d294350d0b6e78ca216f254e09} 
+Machine\+Learning\+Api\+Client\+::constructor (\begin{DoxyParamCaption}\item[{}]{app}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{machine-learning-api-client_8js_a73dd1e6f0bc0a0234576ddef2bbe0452}{api\+\_\+request\+\_\+1}}, \mbox{\hyperlink{database_2dist_2index_8cjs_8js_a7b225fcb720e4d5ed2bbf60e28a25e6d}{app}}, \mbox{\hyperlink{machine-learning-api-client_8js_a9314bb8aeda048fcdc6756d89fe1709b}{machine\+\_\+learning\+\_\+utils\+\_\+1}}, and \mbox{\hyperlink{machine-learning-api-client_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}}.
+
+\Hypertarget{class_machine_learning_api_client_afd1a29ebf018878119348b2d8f1e19f5}\index{MachineLearningApiClient@{MachineLearningApiClient}!createModel@{createModel}}
+\index{createModel@{createModel}!MachineLearningApiClient@{MachineLearningApiClient}}
+\doxysubsubsection{\texorpdfstring{createModel()}{createModel()}}
+{\footnotesize\ttfamily \label{class_machine_learning_api_client_afd1a29ebf018878119348b2d8f1e19f5} 
+Machine\+Learning\+Api\+Client\+::create\+Model (\begin{DoxyParamCaption}\item[{}]{model}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}, \mbox{\hyperlink{class_machine_learning_api_client_a98c1a290f05759d9ca664d5cef5f3281}{get\+Project\+Url()}}, \mbox{\hyperlink{machine-learning-api-client_8js_a9314bb8aeda048fcdc6756d89fe1709b}{machine\+\_\+learning\+\_\+utils\+\_\+1}}, \mbox{\hyperlink{lodash_2method_8js_a2f565198b0a61cb8648a01f0d9617cd7}{method}}, \mbox{\hyperlink{color-convert_2index_8js_a1d4bbf1fe71efcb0ec78bf5aa4acd6b0}{models}}, \mbox{\hyperlink{__get_tag_8js_abace523389c17bce1848e3a427871700}{Promise}}, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}}, \mbox{\hyperlink{class_machine_learning_api_client_a6a3f0fee728a9997ca1e5537757f7cf2}{send\+Request()}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_acf0a8b41f00a22e21672c8b3768a0618}{url}}, and \mbox{\hyperlink{machine-learning-api-client_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_machine_learning_api_client_afd1a29ebf018878119348b2d8f1e19f5_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_machine_learning_api_client_a16529e0fe0a748a3b922995f1dc15309}\index{MachineLearningApiClient@{MachineLearningApiClient}!deleteModel@{deleteModel}}
+\index{deleteModel@{deleteModel}!MachineLearningApiClient@{MachineLearningApiClient}}
+\doxysubsubsection{\texorpdfstring{deleteModel()}{deleteModel()}}
+{\footnotesize\ttfamily \label{class_machine_learning_api_client_a16529e0fe0a748a3b922995f1dc15309} 
+Machine\+Learning\+Api\+Client\+::delete\+Model (\begin{DoxyParamCaption}\item[{}]{model\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{class_machine_learning_api_client_aa46bbffe7fe1145b29ec70f4fc6421e2}{get\+Model\+Name()}}, \mbox{\hyperlink{class_machine_learning_api_client_a98c1a290f05759d9ca664d5cef5f3281}{get\+Project\+Url()}}, \mbox{\hyperlink{lodash_2method_8js_a2f565198b0a61cb8648a01f0d9617cd7}{method}}, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}}, \mbox{\hyperlink{class_machine_learning_api_client_a6a3f0fee728a9997ca1e5537757f7cf2}{send\+Request()}}, and \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_acf0a8b41f00a22e21672c8b3768a0618}{url}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_machine_learning_api_client_a16529e0fe0a748a3b922995f1dc15309_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_machine_learning_api_client_a3b08a8666c86c8e8f17dbdf339bceb83}\index{MachineLearningApiClient@{MachineLearningApiClient}!getModel@{getModel}}
+\index{getModel@{getModel}!MachineLearningApiClient@{MachineLearningApiClient}}
+\doxysubsubsection{\texorpdfstring{getModel()}{getModel()}}
+{\footnotesize\ttfamily \label{class_machine_learning_api_client_a3b08a8666c86c8e8f17dbdf339bceb83} 
+Machine\+Learning\+Api\+Client\+::get\+Model (\begin{DoxyParamCaption}\item[{}]{model\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{class_machine_learning_api_client_aa46bbffe7fe1145b29ec70f4fc6421e2}{get\+Model\+Name()}}, \mbox{\hyperlink{class_machine_learning_api_client_a84f9cc90838b1913ec924c35f3f14cb7}{get\+Resource\+With\+Short\+Name()}}, \mbox{\hyperlink{__get_tag_8js_abace523389c17bce1848e3a427871700}{Promise}}, and \mbox{\hyperlink{pledge_8js_a492a4eb4b80e71a1bb4761df42875565}{then}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_machine_learning_api_client_a3b08a8666c86c8e8f17dbdf339bceb83_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_machine_learning_api_client_a3b08a8666c86c8e8f17dbdf339bceb83_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_machine_learning_api_client_aa46bbffe7fe1145b29ec70f4fc6421e2}\index{MachineLearningApiClient@{MachineLearningApiClient}!getModelName@{getModelName}}
+\index{getModelName@{getModelName}!MachineLearningApiClient@{MachineLearningApiClient}}
+\doxysubsubsection{\texorpdfstring{getModelName()}{getModelName()}}
+{\footnotesize\ttfamily \label{class_machine_learning_api_client_aa46bbffe7fe1145b29ec70f4fc6421e2} 
+Machine\+Learning\+Api\+Client\+::get\+Model\+Name (\begin{DoxyParamCaption}\item[{}]{model\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{machine-learning-api-client_8js_a9314bb8aeda048fcdc6756d89fe1709b}{machine\+\_\+learning\+\_\+utils\+\_\+1}}, \mbox{\hyperlink{color-convert_2index_8js_a1d4bbf1fe71efcb0ec78bf5aa4acd6b0}{models}}, and \mbox{\hyperlink{machine-learning-api-client_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_machine_learning_api_client_aa46bbffe7fe1145b29ec70f4fc6421e2_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_machine_learning_api_client_ab557ca28cb904064deae22d7c32ce55a}\index{MachineLearningApiClient@{MachineLearningApiClient}!getOperation@{getOperation}}
+\index{getOperation@{getOperation}!MachineLearningApiClient@{MachineLearningApiClient}}
+\doxysubsubsection{\texorpdfstring{getOperation()}{getOperation()}}
+{\footnotesize\ttfamily \label{class_machine_learning_api_client_ab557ca28cb904064deae22d7c32ce55a} 
+Machine\+Learning\+Api\+Client\+::get\+Operation (\begin{DoxyParamCaption}\item[{}]{operation\+Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{class_machine_learning_api_client_a56a642ca36ef710227128c891b756d92}{get\+Resource\+With\+Full\+Name()}}, and \mbox{\hyperlink{__get_tag_8js_abace523389c17bce1848e3a427871700}{Promise}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_machine_learning_api_client_ab557ca28cb904064deae22d7c32ce55a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_machine_learning_api_client_ab557ca28cb904064deae22d7c32ce55a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_machine_learning_api_client_a58710e4482e6d6b5c77a3a1d5ac2f75f}\index{MachineLearningApiClient@{MachineLearningApiClient}!getProjectIdPrefix@{getProjectIdPrefix}}
+\index{getProjectIdPrefix@{getProjectIdPrefix}!MachineLearningApiClient@{MachineLearningApiClient}}
+\doxysubsubsection{\texorpdfstring{getProjectIdPrefix()}{getProjectIdPrefix()}}
+{\footnotesize\ttfamily \label{class_machine_learning_api_client_a58710e4482e6d6b5c77a3a1d5ac2f75f} 
+Machine\+Learning\+Api\+Client\+::get\+Project\+Id\+Prefix (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{database_2dist_2index_8cjs_8js_a7b225fcb720e4d5ed2bbf60e28a25e6d}{app}}, \mbox{\hyperlink{machine-learning-api-client_8js_a9314bb8aeda048fcdc6756d89fe1709b}{machine\+\_\+learning\+\_\+utils\+\_\+1}}, \mbox{\hyperlink{__get_tag_8js_abace523389c17bce1848e3a427871700}{Promise}}, \mbox{\hyperlink{machine-learning-api-client_8js_a022e926a40defc4294368e708a7e2372}{utils}}, and \mbox{\hyperlink{machine-learning-api-client_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_machine_learning_api_client_a58710e4482e6d6b5c77a3a1d5ac2f75f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_machine_learning_api_client_a98c1a290f05759d9ca664d5cef5f3281}\index{MachineLearningApiClient@{MachineLearningApiClient}!getProjectUrl@{getProjectUrl}}
+\index{getProjectUrl@{getProjectUrl}!MachineLearningApiClient@{MachineLearningApiClient}}
+\doxysubsubsection{\texorpdfstring{getProjectUrl()}{getProjectUrl()}}
+{\footnotesize\ttfamily \label{class_machine_learning_api_client_a98c1a290f05759d9ca664d5cef5f3281} 
+Machine\+Learning\+Api\+Client\+::get\+Project\+Url (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{class_machine_learning_api_client_a58710e4482e6d6b5c77a3a1d5ac2f75f}{get\+Project\+Id\+Prefix()}}, and \mbox{\hyperlink{machine-learning-api-client_8js_aa28f9a28df29f6306e1befd6ad36574a}{ML\+\_\+\+V1\+BETA2\+\_\+\+API}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_machine_learning_api_client_a98c1a290f05759d9ca664d5cef5f3281_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_machine_learning_api_client_a98c1a290f05759d9ca664d5cef5f3281_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_machine_learning_api_client_a56a642ca36ef710227128c891b756d92}\index{MachineLearningApiClient@{MachineLearningApiClient}!getResourceWithFullName@{getResourceWithFullName}}
+\index{getResourceWithFullName@{getResourceWithFullName}!MachineLearningApiClient@{MachineLearningApiClient}}
+\doxysubsubsection{\texorpdfstring{getResourceWithFullName()}{getResourceWithFullName()}}
+{\footnotesize\ttfamily \label{class_machine_learning_api_client_a56a642ca36ef710227128c891b756d92} 
+Machine\+Learning\+Api\+Client\+::get\+Resource\+With\+Full\+Name (\begin{DoxyParamCaption}\item[{}]{full\+Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the specified resource from the ML API. Resource names must be the full names including project number prefix. 
+\begin{DoxyParams}{Parameters}
+{\em full\+Name} & -\/ Full resource name of the resource to get. e.\+g. projects/123465/operations/987654 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Promise$<$\+T$>$\} \doxylink{class_a}{A} promise that fulfulls with the resource. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{lodash_2method_8js_a2f565198b0a61cb8648a01f0d9617cd7}{method}}, \mbox{\hyperlink{machine-learning-api-client_8js_aa28f9a28df29f6306e1befd6ad36574a}{ML\+\_\+\+V1\+BETA2\+\_\+\+API}}, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}}, \mbox{\hyperlink{class_machine_learning_api_client_a6a3f0fee728a9997ca1e5537757f7cf2}{send\+Request()}}, and \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_acf0a8b41f00a22e21672c8b3768a0618}{url}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_machine_learning_api_client_a56a642ca36ef710227128c891b756d92_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_machine_learning_api_client_a56a642ca36ef710227128c891b756d92_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_machine_learning_api_client_a84f9cc90838b1913ec924c35f3f14cb7}\index{MachineLearningApiClient@{MachineLearningApiClient}!getResourceWithShortName@{getResourceWithShortName}}
+\index{getResourceWithShortName@{getResourceWithShortName}!MachineLearningApiClient@{MachineLearningApiClient}}
+\doxysubsubsection{\texorpdfstring{getResourceWithShortName()}{getResourceWithShortName()}}
+{\footnotesize\ttfamily \label{class_machine_learning_api_client_a84f9cc90838b1913ec924c35f3f14cb7} 
+Machine\+Learning\+Api\+Client\+::get\+Resource\+With\+Short\+Name (\begin{DoxyParamCaption}\item[{}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the specified resource from the ML API. Resource names must be the short names without project ID prefix (e.\+g. {\ttfamily models/123456789}).
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & name Short name of the resource to get. e.\+g. \textquotesingle{}models/12345\textquotesingle{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Promise$<$\+T$>$\} \doxylink{class_a}{A} promise that fulfills with the resource. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{class_machine_learning_api_client_a98c1a290f05759d9ca664d5cef5f3281}{get\+Project\+Url()}}, \mbox{\hyperlink{lodash_2method_8js_a2f565198b0a61cb8648a01f0d9617cd7}{method}}, \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}}, \mbox{\hyperlink{class_machine_learning_api_client_a6a3f0fee728a9997ca1e5537757f7cf2}{send\+Request()}}, and \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_acf0a8b41f00a22e21672c8b3768a0618}{url}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_machine_learning_api_client_a84f9cc90838b1913ec924c35f3f14cb7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_machine_learning_api_client_a84f9cc90838b1913ec924c35f3f14cb7_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_machine_learning_api_client_a87881d03662b428ba56bea99b01ac133}\index{MachineLearningApiClient@{MachineLearningApiClient}!handleOperation@{handleOperation}}
+\index{handleOperation@{handleOperation}!MachineLearningApiClient@{MachineLearningApiClient}}
+\doxysubsubsection{\texorpdfstring{handleOperation()}{handleOperation()}}
+{\footnotesize\ttfamily \label{class_machine_learning_api_client_a87881d03662b428ba56bea99b01ac133} 
+Machine\+Learning\+Api\+Client\+::handle\+Operation (\begin{DoxyParamCaption}\item[{}]{op}{, }\item[{}]{options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Handles a \doxylink{interface_long}{Long} Running \doxylink{class_operation}{Operation} coming back from the server.
+
+
+\begin{DoxyParams}{Parameters}
+{\em op} & -\/ The operation to handle \\
+\hline
+{\em options} & -\/ The options for polling \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{machine-learning-api-client_8js_a23a148af6d5fae18f2280df5acdb85ad}{extract\+Model\+Id()}}, \mbox{\hyperlink{class_machine_learning_api_client_a3b08a8666c86c8e8f17dbdf339bceb83}{get\+Model()}}, \mbox{\hyperlink{json-bigint_2lib_2stringify_8js_aec316efdeb7b2e5358b7d50869858da1}{JSON}}, \mbox{\hyperlink{machine-learning-api-client_8js_a9314bb8aeda048fcdc6756d89fe1709b}{machine\+\_\+learning\+\_\+utils\+\_\+1}}, \mbox{\hyperlink{class_machine_learning_api_client_a431f166ab7ace36c1681647b3f3711b2}{poll\+Operation\+With\+Exponential\+Backoff()}}, \mbox{\hyperlink{__get_tag_8js_abace523389c17bce1848e3a427871700}{Promise}}, and \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_machine_learning_api_client_a87881d03662b428ba56bea99b01ac133_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_machine_learning_api_client_a498a5a2477ba839eab611faeb78db7bd}\index{MachineLearningApiClient@{MachineLearningApiClient}!listModels@{listModels}}
+\index{listModels@{listModels}!MachineLearningApiClient@{MachineLearningApiClient}}
+\doxysubsubsection{\texorpdfstring{listModels()}{listModels()}}
+{\footnotesize\ttfamily \label{class_machine_learning_api_client_a498a5a2477ba839eab611faeb78db7bd} 
+Machine\+Learning\+Api\+Client\+::list\+Models (\begin{DoxyParamCaption}\item[{}]{options}{ = {\ttfamily \{\}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_machine_learning_api_client_a431f166ab7ace36c1681647b3f3711b2}\index{MachineLearningApiClient@{MachineLearningApiClient}!pollOperationWithExponentialBackoff@{pollOperationWithExponentialBackoff}}
+\index{pollOperationWithExponentialBackoff@{pollOperationWithExponentialBackoff}!MachineLearningApiClient@{MachineLearningApiClient}}
+\doxysubsubsection{\texorpdfstring{pollOperationWithExponentialBackoff()}{pollOperationWithExponentialBackoff()}}
+{\footnotesize\ttfamily \label{class_machine_learning_api_client_a431f166ab7ace36c1681647b3f3711b2} 
+Machine\+Learning\+Api\+Client\+::poll\+Operation\+With\+Exponential\+Backoff (\begin{DoxyParamCaption}\item[{}]{op\+Name}{, }\item[{}]{options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{machine-learning-api-client_8js_a73dd1e6f0bc0a0234576ddef2bbe0452}{api\+\_\+request\+\_\+1}}, \mbox{\hyperlink{class_machine_learning_api_client_ab557ca28cb904064deae22d7c32ce55a}{get\+Operation()}}, \mbox{\hyperlink{machine-learning-api-client_8js_a9314bb8aeda048fcdc6756d89fe1709b}{machine\+\_\+learning\+\_\+utils\+\_\+1}}, \mbox{\hyperlink{machine-learning-api-client_8js_a4493c528340ef269fd218adf5d637c16}{POLL\+\_\+\+BASE\+\_\+\+WAIT\+\_\+\+TIME\+\_\+\+MILLISECONDS}}, \mbox{\hyperlink{machine-learning-api-client_8js_a2c2b368f4b66412e8a53c61c24d6b877}{POLL\+\_\+\+DEFAULT\+\_\+\+MAX\+\_\+\+TIME\+\_\+\+MILLISECONDS}}, and \mbox{\hyperlink{machine-learning-api-client_8js_aaf39ac52c389eff55635ca6d5bc8b852}{POLL\+\_\+\+MAX\+\_\+\+WAIT\+\_\+\+TIME\+\_\+\+MILLISECONDS}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_machine_learning_api_client_a431f166ab7ace36c1681647b3f3711b2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_machine_learning_api_client_a431f166ab7ace36c1681647b3f3711b2_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_machine_learning_api_client_a6a3f0fee728a9997ca1e5537757f7cf2}\index{MachineLearningApiClient@{MachineLearningApiClient}!sendRequest@{sendRequest}}
+\index{sendRequest@{sendRequest}!MachineLearningApiClient@{MachineLearningApiClient}}
+\doxysubsubsection{\texorpdfstring{sendRequest()}{sendRequest()}}
+{\footnotesize\ttfamily \label{class_machine_learning_api_client_a6a3f0fee728a9997ca1e5537757f7cf2} 
+Machine\+Learning\+Api\+Client\+::send\+Request (\begin{DoxyParamCaption}\item[{}]{request}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}}, and \mbox{\hyperlink{class_machine_learning_api_client_a17e0a35d634870a4d24b3290bce1a5a2}{to\+Firebase\+Error()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_machine_learning_api_client_a6a3f0fee728a9997ca1e5537757f7cf2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_machine_learning_api_client_a6a3f0fee728a9997ca1e5537757f7cf2_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_machine_learning_api_client_a17e0a35d634870a4d24b3290bce1a5a2}\index{MachineLearningApiClient@{MachineLearningApiClient}!toFirebaseError@{toFirebaseError}}
+\index{toFirebaseError@{toFirebaseError}!MachineLearningApiClient@{MachineLearningApiClient}}
+\doxysubsubsection{\texorpdfstring{toFirebaseError()}{toFirebaseError()}}
+{\footnotesize\ttfamily \label{class_machine_learning_api_client_a17e0a35d634870a4d24b3290bce1a5a2} 
+Machine\+Learning\+Api\+Client\+::to\+Firebase\+Error (\begin{DoxyParamCaption}\item[{}]{err}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{long_2index_8js_af6ba5df101e5630835a0a5d778844922}{and}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}}, \mbox{\hyperlink{machine-learning-api-client_8js_af1a99a3ff1a35c114bdd06cc7252beb6}{error\+\_\+1}}, \mbox{\hyperlink{machine-learning-api-client_8js_ac23834702346874fb5b4d9fca8ebc93b}{ERROR\+\_\+\+CODE\+\_\+\+MAPPING}}, \mbox{\hyperlink{machine-learning-api-client_8js_a9314bb8aeda048fcdc6756d89fe1709b}{machine\+\_\+learning\+\_\+utils\+\_\+1}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ac70ac40ef8199c59316b35022dd21914}{response}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a207259f7e3cfd9800ed8f7d7224c7a68}{server}}, and \mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2index_8js_aac9dfada3e10bfb087ebb0a95f284488}{status}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_machine_learning_api_client_a17e0a35d634870a4d24b3290bce1a5a2_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_machine_learning_api_client_adf183b7ddff04992482a4518af2c077a}\index{MachineLearningApiClient@{MachineLearningApiClient}!updateModel@{updateModel}}
+\index{updateModel@{updateModel}!MachineLearningApiClient@{MachineLearningApiClient}}
+\doxysubsubsection{\texorpdfstring{updateModel()}{updateModel()}}
+{\footnotesize\ttfamily \label{class_machine_learning_api_client_adf183b7ddff04992482a4518af2c077a} 
+Machine\+Learning\+Api\+Client\+::update\+Model (\begin{DoxyParamCaption}\item[{}]{model\+Id}{, }\item[{}]{model}{, }\item[{}]{update\+Mask}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}, \mbox{\hyperlink{class_machine_learning_api_client_a98c1a290f05759d9ca664d5cef5f3281}{get\+Project\+Url()}}, \mbox{\hyperlink{machine-learning-api-client_8js_a9314bb8aeda048fcdc6756d89fe1709b}{machine\+\_\+learning\+\_\+utils\+\_\+1}}, \mbox{\hyperlink{lodash_2method_8js_a2f565198b0a61cb8648a01f0d9617cd7}{method}}, \mbox{\hyperlink{color-convert_2index_8js_a1d4bbf1fe71efcb0ec78bf5aa4acd6b0}{models}}, \mbox{\hyperlink{__get_tag_8js_abace523389c17bce1848e3a427871700}{Promise}}, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}}, \mbox{\hyperlink{class_machine_learning_api_client_a6a3f0fee728a9997ca1e5537757f7cf2}{send\+Request()}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_acf0a8b41f00a22e21672c8b3768a0618}{url}}, and \mbox{\hyperlink{machine-learning-api-client_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_machine_learning_api_client_adf183b7ddff04992482a4518af2c077a_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/firebase-\/admin/lib/machine-\/learning/\mbox{\hyperlink{machine-learning-api-client_8js}{machine-\/learning-\/api-\/client.\+js}}\end{DoxyCompactItemize}

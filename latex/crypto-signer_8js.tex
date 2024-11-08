@@ -1,0 +1,159 @@
+\doxysection{backend/node\+\_\+modules/firebase-\/admin/lib/utils/crypto-\/signer.js File Reference}
+\hypertarget{crypto-signer_8js}{}\label{crypto-signer_8js}\index{backend/node\_modules/firebase-\/admin/lib/utils/crypto-\/signer.js@{backend/node\_modules/firebase-\/admin/lib/utils/crypto-\/signer.js}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_service_account_signer}{Service\+Account\+Signer}}
+\item 
+class \mbox{\hyperlink{class_i_a_m_signer}{IAMSigner}}
+\item 
+class \mbox{\hyperlink{class_crypto_signer_error}{Crypto\+Signer\+Error}}
+\item 
+class \mbox{\hyperlink{class_crypto_signer_error_code}{Crypto\+Signer\+Error\+Code}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{crypto-signer_8js_a9a89425dad8052b4750d5324455db841}{crypto\+Signer\+From\+App}} (\mbox{\hyperlink{database_2dist_2index_8cjs_8js_a7b225fcb720e4d5ed2bbf60e28a25e6d}{app}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{crypto-signer_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{crypto-signer_8js_a5e17eb24f95c3e9826d1172794ab83bd}{Crypto\+Signer\+Error\+Code}} = exports.\+Crypto\+Signer\+Error = \mbox{\hyperlink{crypto-signer_8js_a5f4811c2f4b2f609a297ac7bd6fb2ce7}{exports.\+crypto\+Signer\+From\+App}} = exports.\+IAMSigner = exports.\+Service\+Account\+Signer = void 0
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{crypto-signer_8js_a942c275c9eb51472dccb1e1fc76db6ac}{credential\+\_\+internal\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../app/\mbox{\hyperlink{firebase-admin_2lib_2credential_2index_8js_aee5dce8f0575eecdffdfa59b49b319e1}{credential}}-\/internal"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{crypto-signer_8js_a73dd1e6f0bc0a0234576ddef2bbe0452}{api\+\_\+request\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./api-\/request"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{crypto-signer_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/validator"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{crypto-signer_8js_ac719140f3f33fa2a1a9f6e8facc11650}{ALGORITHM\+\_\+\+RS256}} = \textquotesingle{}\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a611146efec37f46ceb4d2b76ad2c0cd4}{RS256}}\textquotesingle{}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{crypto-signer_8js_afb0a1e80fa328824ece07835ad084a17}{Service\+Account\+Signer}} = Service\+Account\+Signer
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{crypto-signer_8js_a9013b3f50dbf06df3b7019d9255b7d5b}{IAMSigner}} = IAMSigner
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{crypto-signer_8js_a5f4811c2f4b2f609a297ac7bd6fb2ce7}{crypto\+Signer\+From\+App}} = crypto\+Signer\+From\+App
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{crypto-signer_8js_a392a12529ec3a63493063d5709656bb9}{Crypto\+Signer\+Error}} = Crypto\+Signer\+Error
+\item 
+\mbox{\hyperlink{class_crypto_signer_error_code}{Crypto\+Signer\+Error\+Code}} \mbox{\hyperlink{crypto-signer_8js_a70c18fba00c4d8391e61dfadbe44ed94}{INVALID\+\_\+\+ARGUMENT}} = \textquotesingle{}\mbox{\hyperlink{verifier_8js_a499da133dea4d1a4ef64e31667ec221a}{invalid}}-\/argument\textquotesingle{}
+\item 
+\mbox{\hyperlink{class_crypto_signer_error_code}{Crypto\+Signer\+Error\+Code}} \mbox{\hyperlink{crypto-signer_8js_adc962b190fdbd94394fa1dfcae29ee66}{INTERNAL\+\_\+\+ERROR}} = \textquotesingle{}internal-\/\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}}\textquotesingle{}
+\item 
+\mbox{\hyperlink{class_crypto_signer_error_code}{Crypto\+Signer\+Error\+Code}} \mbox{\hyperlink{crypto-signer_8js_a6a6df17225b223be87c38bf798a74a4b}{INVALID\+\_\+\+CREDENTIAL}} = \textquotesingle{}\mbox{\hyperlink{verifier_8js_a499da133dea4d1a4ef64e31667ec221a}{invalid}}-\/\mbox{\hyperlink{firebase-admin_2lib_2credential_2index_8js_aee5dce8f0575eecdffdfa59b49b319e1}{credential}}\textquotesingle{}
+\item 
+\mbox{\hyperlink{class_crypto_signer_error_code}{Crypto\+Signer\+Error\+Code}} \mbox{\hyperlink{crypto-signer_8js_a69e2983dd6ad2b25584785b9e6d1b58f}{SERVER\+\_\+\+ERROR}} = \textquotesingle{}\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a207259f7e3cfd9800ed8f7d7224c7a68}{server}}-\/\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}}\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{crypto-signer_8js_a9a89425dad8052b4750d5324455db841}\index{crypto-\/signer.js@{crypto-\/signer.js}!cryptoSignerFromApp@{cryptoSignerFromApp}}
+\index{cryptoSignerFromApp@{cryptoSignerFromApp}!crypto-\/signer.js@{crypto-\/signer.js}}
+\doxysubsubsection{\texorpdfstring{cryptoSignerFromApp()}{cryptoSignerFromApp()}}
+{\footnotesize\ttfamily \label{crypto-signer_8js_a9a89425dad8052b4750d5324455db841} 
+function crypto\+Signer\+From\+App (\begin{DoxyParamCaption}\item[{}]{app}{}\end{DoxyParamCaption})}
+
+Creates a new Crypto\+Signer instance for the given app. If the app has been initialized with a service account credential, creates a \doxylink{class_service_account_signer}{Service\+Account\+Signer}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em app} & -\/ \doxylink{class_a}{A} \doxylink{class_firebase_app}{Firebase\+App} instance. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_a}{A} Crypto\+Signer instance. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{crypto-signer_8js_a73dd1e6f0bc0a0234576ddef2bbe0452}{api\+\_\+request\+\_\+1}}, \mbox{\hyperlink{database_2dist_2index_8cjs_8js_a7b225fcb720e4d5ed2bbf60e28a25e6d}{app}}, \mbox{\hyperlink{firebase-admin_2lib_2credential_2index_8js_aee5dce8f0575eecdffdfa59b49b319e1}{credential}}, \mbox{\hyperlink{crypto-signer_8js_a942c275c9eb51472dccb1e1fc76db6ac}{credential\+\_\+internal\+\_\+1}}, \mbox{\hyperlink{crypto-signer_8js_a9013b3f50dbf06df3b7019d9255b7d5b}{IAMSigner}}, and \mbox{\hyperlink{crypto-signer_8js_afb0a1e80fa328824ece07835ad084a17}{Service\+Account\+Signer}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{crypto-signer_8js_ac719140f3f33fa2a1a9f6e8facc11650}\index{crypto-\/signer.js@{crypto-\/signer.js}!ALGORITHM\_RS256@{ALGORITHM\_RS256}}
+\index{ALGORITHM\_RS256@{ALGORITHM\_RS256}!crypto-\/signer.js@{crypto-\/signer.js}}
+\doxysubsubsection{\texorpdfstring{ALGORITHM\_RS256}{ALGORITHM\_RS256}}
+{\footnotesize\ttfamily \label{crypto-signer_8js_ac719140f3f33fa2a1a9f6e8facc11650} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} ALGORITHM\+\_\+\+RS256 = \textquotesingle{}\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a611146efec37f46ceb4d2b76ad2c0cd4}{RS256}}\textquotesingle{}}
+
+\Hypertarget{crypto-signer_8js_a73dd1e6f0bc0a0234576ddef2bbe0452}\index{crypto-\/signer.js@{crypto-\/signer.js}!api\_request\_1@{api\_request\_1}}
+\index{api\_request\_1@{api\_request\_1}!crypto-\/signer.js@{crypto-\/signer.js}}
+\doxysubsubsection{\texorpdfstring{api\_request\_1}{api\_request\_1}}
+{\footnotesize\ttfamily \label{crypto-signer_8js_a73dd1e6f0bc0a0234576ddef2bbe0452} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} api\+\_\+request\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./api-\/request"{})}
+
+\Hypertarget{crypto-signer_8js_a942c275c9eb51472dccb1e1fc76db6ac}\index{crypto-\/signer.js@{crypto-\/signer.js}!credential\_internal\_1@{credential\_internal\_1}}
+\index{credential\_internal\_1@{credential\_internal\_1}!crypto-\/signer.js@{crypto-\/signer.js}}
+\doxysubsubsection{\texorpdfstring{credential\_internal\_1}{credential\_internal\_1}}
+{\footnotesize\ttfamily \label{crypto-signer_8js_a942c275c9eb51472dccb1e1fc76db6ac} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} credential\+\_\+internal\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../app/\mbox{\hyperlink{firebase-admin_2lib_2credential_2index_8js_aee5dce8f0575eecdffdfa59b49b319e1}{credential}}-\/internal"{})}
+
+\Hypertarget{crypto-signer_8js_a392a12529ec3a63493063d5709656bb9}\index{crypto-\/signer.js@{crypto-\/signer.js}!CryptoSignerError@{CryptoSignerError}}
+\index{CryptoSignerError@{CryptoSignerError}!crypto-\/signer.js@{crypto-\/signer.js}}
+\doxysubsubsection{\texorpdfstring{CryptoSignerError}{CryptoSignerError}}
+{\footnotesize\ttfamily \label{crypto-signer_8js_a392a12529ec3a63493063d5709656bb9} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} Crypto\+Signer\+Error = Crypto\+Signer\+Error}
+
+\Hypertarget{crypto-signer_8js_a5e17eb24f95c3e9826d1172794ab83bd}\index{crypto-\/signer.js@{crypto-\/signer.js}!CryptoSignerErrorCode@{CryptoSignerErrorCode}}
+\index{CryptoSignerErrorCode@{CryptoSignerErrorCode}!crypto-\/signer.js@{crypto-\/signer.js}}
+\doxysubsubsection{\texorpdfstring{CryptoSignerErrorCode}{CryptoSignerErrorCode}}
+{\footnotesize\ttfamily \label{crypto-signer_8js_a5e17eb24f95c3e9826d1172794ab83bd} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} Crypto\+Signer\+Error\+Code = exports.\+Crypto\+Signer\+Error = \mbox{\hyperlink{crypto-signer_8js_a5f4811c2f4b2f609a297ac7bd6fb2ce7}{exports.\+crypto\+Signer\+From\+App}} = exports.\+IAMSigner = exports.\+Service\+Account\+Signer = void 0}
+
+\Hypertarget{crypto-signer_8js_a5f4811c2f4b2f609a297ac7bd6fb2ce7}\index{crypto-\/signer.js@{crypto-\/signer.js}!cryptoSignerFromApp@{cryptoSignerFromApp}}
+\index{cryptoSignerFromApp@{cryptoSignerFromApp}!crypto-\/signer.js@{crypto-\/signer.js}}
+\doxysubsubsection{\texorpdfstring{cryptoSignerFromApp}{cryptoSignerFromApp}}
+{\footnotesize\ttfamily \label{crypto-signer_8js_a5f4811c2f4b2f609a297ac7bd6fb2ce7} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} crypto\+Signer\+From\+App = crypto\+Signer\+From\+App}
+
+\Hypertarget{crypto-signer_8js_a9013b3f50dbf06df3b7019d9255b7d5b}\index{crypto-\/signer.js@{crypto-\/signer.js}!IAMSigner@{IAMSigner}}
+\index{IAMSigner@{IAMSigner}!crypto-\/signer.js@{crypto-\/signer.js}}
+\doxysubsubsection{\texorpdfstring{IAMSigner}{IAMSigner}}
+{\footnotesize\ttfamily \label{crypto-signer_8js_a9013b3f50dbf06df3b7019d9255b7d5b} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} IAMSigner = IAMSigner}
+
+\Hypertarget{crypto-signer_8js_adc962b190fdbd94394fa1dfcae29ee66}\index{crypto-\/signer.js@{crypto-\/signer.js}!INTERNAL\_ERROR@{INTERNAL\_ERROR}}
+\index{INTERNAL\_ERROR@{INTERNAL\_ERROR}!crypto-\/signer.js@{crypto-\/signer.js}}
+\doxysubsubsection{\texorpdfstring{INTERNAL\_ERROR}{INTERNAL\_ERROR}}
+{\footnotesize\ttfamily \label{crypto-signer_8js_adc962b190fdbd94394fa1dfcae29ee66} 
+\mbox{\hyperlink{class_messaging_client_error_code}{Messaging\+Client\+Error\+Code}} INTERNAL\+\_\+\+ERROR = \textquotesingle{}internal-\/\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}}\textquotesingle{}}
+
+\Hypertarget{crypto-signer_8js_a70c18fba00c4d8391e61dfadbe44ed94}\index{crypto-\/signer.js@{crypto-\/signer.js}!INVALID\_ARGUMENT@{INVALID\_ARGUMENT}}
+\index{INVALID\_ARGUMENT@{INVALID\_ARGUMENT}!crypto-\/signer.js@{crypto-\/signer.js}}
+\doxysubsubsection{\texorpdfstring{INVALID\_ARGUMENT}{INVALID\_ARGUMENT}}
+{\footnotesize\ttfamily \label{crypto-signer_8js_a70c18fba00c4d8391e61dfadbe44ed94} 
+\mbox{\hyperlink{class_installations_client_error_code}{Installations\+Client\+Error\+Code}} INVALID\+\_\+\+ARGUMENT = \textquotesingle{}\mbox{\hyperlink{verifier_8js_a499da133dea4d1a4ef64e31667ec221a}{invalid}}-\/argument\textquotesingle{}}
+
+\Hypertarget{crypto-signer_8js_a6a6df17225b223be87c38bf798a74a4b}\index{crypto-\/signer.js@{crypto-\/signer.js}!INVALID\_CREDENTIAL@{INVALID\_CREDENTIAL}}
+\index{INVALID\_CREDENTIAL@{INVALID\_CREDENTIAL}!crypto-\/signer.js@{crypto-\/signer.js}}
+\doxysubsubsection{\texorpdfstring{INVALID\_CREDENTIAL}{INVALID\_CREDENTIAL}}
+{\footnotesize\ttfamily \label{crypto-signer_8js_a6a6df17225b223be87c38bf798a74a4b} 
+\mbox{\hyperlink{class_auth_client_error_code}{Auth\+Client\+Error\+Code}} INVALID\+\_\+\+CREDENTIAL = \textquotesingle{}\mbox{\hyperlink{verifier_8js_a499da133dea4d1a4ef64e31667ec221a}{invalid}}-\/\mbox{\hyperlink{firebase-admin_2lib_2credential_2index_8js_aee5dce8f0575eecdffdfa59b49b319e1}{credential}}\textquotesingle{}}
+
+\Hypertarget{crypto-signer_8js_a69e2983dd6ad2b25584785b9e6d1b58f}\index{crypto-\/signer.js@{crypto-\/signer.js}!SERVER\_ERROR@{SERVER\_ERROR}}
+\index{SERVER\_ERROR@{SERVER\_ERROR}!crypto-\/signer.js@{crypto-\/signer.js}}
+\doxysubsubsection{\texorpdfstring{SERVER\_ERROR}{SERVER\_ERROR}}
+{\footnotesize\ttfamily \label{crypto-signer_8js_a69e2983dd6ad2b25584785b9e6d1b58f} 
+\mbox{\hyperlink{class_crypto_signer_error_code}{Crypto\+Signer\+Error\+Code}} SERVER\+\_\+\+ERROR = \textquotesingle{}\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a207259f7e3cfd9800ed8f7d7224c7a68}{server}}-\/\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}}\textquotesingle{}}
+
+\Hypertarget{crypto-signer_8js_afb0a1e80fa328824ece07835ad084a17}\index{crypto-\/signer.js@{crypto-\/signer.js}!ServiceAccountSigner@{ServiceAccountSigner}}
+\index{ServiceAccountSigner@{ServiceAccountSigner}!crypto-\/signer.js@{crypto-\/signer.js}}
+\doxysubsubsection{\texorpdfstring{ServiceAccountSigner}{ServiceAccountSigner}}
+{\footnotesize\ttfamily \label{crypto-signer_8js_afb0a1e80fa328824ece07835ad084a17} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} Service\+Account\+Signer = Service\+Account\+Signer}
+
+\Hypertarget{crypto-signer_8js_ae2475e10618961c050dcba04e8c42331}\index{crypto-\/signer.js@{crypto-\/signer.js}!strict@{strict}}
+\index{strict@{strict}!crypto-\/signer.js@{crypto-\/signer.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{crypto-signer_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+
+firebase-\/admin v12.\+7.\+0 \Hypertarget{crypto-signer_8js_add6dc10e852e313f07c0d59bcf288b6a}\index{crypto-\/signer.js@{crypto-\/signer.js}!validator@{validator}}
+\index{validator@{validator}!crypto-\/signer.js@{crypto-\/signer.js}}
+\doxysubsubsection{\texorpdfstring{validator}{validator}}
+{\footnotesize\ttfamily \label{crypto-signer_8js_add6dc10e852e313f07c0d59bcf288b6a} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} validator = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/validator"{})}
+

@@ -1,0 +1,193 @@
+\doxysection{Document\+Mask Class Reference}
+\hypertarget{class_document_mask}{}\label{class_document_mask}\index{DocumentMask@{DocumentMask}}
+
+
+Collaboration diagram for Document\+Mask\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{class_document_mask__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_document_mask_a377019623d967a913ae0359f9662fcd1}{constructor}} (field\+Paths)
+\item 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} \mbox{\hyperlink{class_document_mask_abac764f3778120c11e053eea2ddc0736}{is\+Empty}} ()
+\item 
+\mbox{\hyperlink{class_document_mask_a25f2bc9731d416e71640fe4f302f34a6}{remove\+Fields}} (field\+Paths)
+\item 
+\mbox{\hyperlink{class_document_mask_a4e4b7e0e404e77f681d74eabe2b79050}{contains}} (field\+Path)
+\item 
+\mbox{\hyperlink{class_document_mask_a92e1b5f6999536c56edc16cdd838dbea}{apply\+To}} (\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}})
+\item 
+\mbox{\hyperlink{class_document_mask_a5df5944d18b4cf3a1751e20eb82ac4e0}{to\+Proto}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_document_mask_aefd44b3e9cc6c5135e4a8e28e68d58c6}{from\+Update\+Map}} (\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}})
+\item 
+static \mbox{\hyperlink{class_document_mask_a8c3dc26bda466bf004b1483e1c66f9b3}{from\+Field\+Mask}} (field\+Mask)
+\item 
+static \mbox{\hyperlink{class_document_mask_af859cb94c1073f920a886266c7c18b32}{from\+Object}} (\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}})
+\item 
+static \mbox{\hyperlink{class_document_mask_ae47ef8c8d610f395580e1caab51811a8}{remove\+From\+Sorted\+Array}} (input, \mbox{\hyperlink{__base_sample_8js_a133e745a7002d95c39d29cc180b56327}{values}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_a}{A} \doxylink{class_firestore}{Firestore} Document Mask contains the field paths affected by an update. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_document_mask_a92e1b5f6999536c56edc16cdd838dbea}\index{DocumentMask@{DocumentMask}!applyTo@{applyTo}}
+\index{applyTo@{applyTo}!DocumentMask@{DocumentMask}}
+\doxysubsubsection{\texorpdfstring{applyTo()}{applyTo()}}
+{\footnotesize\ttfamily \label{class_document_mask_a92e1b5f6999536c56edc16cdd838dbea} 
+Document\+Mask\+::apply\+To (\begin{DoxyParamCaption}\item[{}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Removes all properties from \textquotesingle{}data\textquotesingle{} that are not contained in this document mask. Applies this \doxylink{class_document_mask}{Document\+Mask} to \textquotesingle{}data\textquotesingle{} and computes the list of field paths that were specified in the mask but are not present in \textquotesingle{}data\textquotesingle{}.
+
+References \mbox{\hyperlink{util_2dist_2index_8cjs_8js_a8687458b735f9c0fd241b3bd27d0ac50}{contains}}, \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}, \mbox{\hyperlink{express_2lib_2request_8js_a5e3afd97276cc403924d1a449a83ea84}{is}}, \mbox{\hyperlink{protobufjs_2src_2decoder_8js_abc17e2435a94ec16b4786a30066e2b00}{missing()}}, \mbox{\hyperlink{document_8js_a705fe9bf53f002be551bde47cc3a6069}{path\+\_\+1}}, \mbox{\hyperlink{class_document_mask_ae47ef8c8d610f395580e1caab51811a8}{remove\+From\+Sorted\+Array()}}, \mbox{\hyperlink{lodash_2core_8js_a348c112a244660a2f280cda892658c24}{result}}, and \mbox{\hyperlink{document_8js_a6af3fa6e24c6a46faf4552f3a2ad8783}{util\+\_\+1}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_document_mask_a92e1b5f6999536c56edc16cdd838dbea_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_document_mask_a377019623d967a913ae0359f9662fcd1}\index{DocumentMask@{DocumentMask}!constructor@{constructor}}
+\index{constructor@{constructor}!DocumentMask@{DocumentMask}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_document_mask_a377019623d967a913ae0359f9662fcd1} 
+Document\+Mask\+::constructor (\begin{DoxyParamCaption}\item[{}]{field\+Paths}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+References \mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}, and \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}.
+
+\Hypertarget{class_document_mask_a4e4b7e0e404e77f681d74eabe2b79050}\index{DocumentMask@{DocumentMask}!contains@{contains}}
+\index{contains@{contains}!DocumentMask@{DocumentMask}}
+\doxysubsubsection{\texorpdfstring{contains()}{contains()}}
+{\footnotesize\ttfamily \label{class_document_mask_a4e4b7e0e404e77f681d74eabe2b79050} 
+Document\+Mask\+::contains (\begin{DoxyParamCaption}\item[{}]{field\+Path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Returns whether this document mask contains \textquotesingle{}field\+Path\textquotesingle{}. 
+
+References \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}.
+
+\Hypertarget{class_document_mask_a8c3dc26bda466bf004b1483e1c66f9b3}\index{DocumentMask@{DocumentMask}!fromFieldMask@{fromFieldMask}}
+\index{fromFieldMask@{fromFieldMask}!DocumentMask@{DocumentMask}}
+\doxysubsubsection{\texorpdfstring{fromFieldMask()}{fromFieldMask()}}
+{\footnotesize\ttfamily \label{class_document_mask_a8c3dc26bda466bf004b1483e1c66f9b3} 
+static Document\+Mask\+::from\+Field\+Mask (\begin{DoxyParamCaption}\item[{}]{field\+Mask}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+Creates a document mask from an array of field paths. 
+
+References \mbox{\hyperlink{document_8js_a29e9059b524e90841eb7287bd20e5ba0}{Document\+Mask}}, \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}, and \mbox{\hyperlink{document_8js_a705fe9bf53f002be551bde47cc3a6069}{path\+\_\+1}}.
+
+\Hypertarget{class_document_mask_af859cb94c1073f920a886266c7c18b32}\index{DocumentMask@{DocumentMask}!fromObject@{fromObject}}
+\index{fromObject@{fromObject}!DocumentMask@{DocumentMask}}
+\doxysubsubsection{\texorpdfstring{fromObject()}{fromObject()}}
+{\footnotesize\ttfamily \label{class_document_mask_af859cb94c1073f920a886266c7c18b32} 
+static Document\+Mask\+::from\+Object (\begin{DoxyParamCaption}\item[{}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+Creates a document mask with the field names of a document. 
+
+References \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}, \mbox{\hyperlink{document_8js_a29e9059b524e90841eb7287bd20e5ba0}{Document\+Mask}}, \mbox{\hyperlink{document_8js_abb5837ddeb6cdc50bf1ab149418463a5}{field\+\_\+value\+\_\+1}}, \mbox{\hyperlink{class_document_mask_abac764f3778120c11e053eea2ddc0736}{is\+Empty()}}, \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}, \mbox{\hyperlink{document_8js_a705fe9bf53f002be551bde47cc3a6069}{path\+\_\+1}}, \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}, \mbox{\hyperlink{document_8js_a6af3fa6e24c6a46faf4552f3a2ad8783}{util\+\_\+1}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_document_mask_af859cb94c1073f920a886266c7c18b32_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_document_mask_aefd44b3e9cc6c5135e4a8e28e68d58c6}\index{DocumentMask@{DocumentMask}!fromUpdateMap@{fromUpdateMap}}
+\index{fromUpdateMap@{fromUpdateMap}!DocumentMask@{DocumentMask}}
+\doxysubsubsection{\texorpdfstring{fromUpdateMap()}{fromUpdateMap()}}
+{\footnotesize\ttfamily \label{class_document_mask_aefd44b3e9cc6c5135e4a8e28e68d58c6} 
+static Document\+Mask\+::from\+Update\+Map (\begin{DoxyParamCaption}\item[{}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+Creates a document mask with the field paths of a document. 
+
+References \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}, \mbox{\hyperlink{document_8js_a29e9059b524e90841eb7287bd20e5ba0}{Document\+Mask}}, \mbox{\hyperlink{document_8js_abb5837ddeb6cdc50bf1ab149418463a5}{field\+\_\+value\+\_\+1}}, \mbox{\hyperlink{document_8js_a705fe9bf53f002be551bde47cc3a6069}{path\+\_\+1}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.
+
+\Hypertarget{class_document_mask_abac764f3778120c11e053eea2ddc0736}\index{DocumentMask@{DocumentMask}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!DocumentMask@{DocumentMask}}
+\doxysubsubsection{\texorpdfstring{isEmpty()}{isEmpty()}}
+{\footnotesize\ttfamily \label{class_document_mask_abac764f3778120c11e053eea2ddc0736} 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} Document\+Mask\+::is\+Empty (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Returns true if this document mask contains no fields. Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_document_mask_abac764f3778120c11e053eea2ddc0736_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_document_mask_a25f2bc9731d416e71640fe4f302f34a6}\index{DocumentMask@{DocumentMask}!removeFields@{removeFields}}
+\index{removeFields@{removeFields}!DocumentMask@{DocumentMask}}
+\doxysubsubsection{\texorpdfstring{removeFields()}{removeFields()}}
+{\footnotesize\ttfamily \label{class_document_mask_a25f2bc9731d416e71640fe4f302f34a6} 
+Document\+Mask\+::remove\+Fields (\begin{DoxyParamCaption}\item[{}]{field\+Paths}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Removes the field path specified in \textquotesingle{}field\+Paths\textquotesingle{} from this document mask. 
+
+References \mbox{\hyperlink{class_document_mask_ae47ef8c8d610f395580e1caab51811a8}{remove\+From\+Sorted\+Array()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_document_mask_a25f2bc9731d416e71640fe4f302f34a6_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_document_mask_ae47ef8c8d610f395580e1caab51811a8}\index{DocumentMask@{DocumentMask}!removeFromSortedArray@{removeFromSortedArray}}
+\index{removeFromSortedArray@{removeFromSortedArray}!DocumentMask@{DocumentMask}}
+\doxysubsubsection{\texorpdfstring{removeFromSortedArray()}{removeFromSortedArray()}}
+{\footnotesize\ttfamily \label{class_document_mask_ae47ef8c8d610f395580e1caab51811a8} 
+static Document\+Mask\+::remove\+From\+Sorted\+Array (\begin{DoxyParamCaption}\item[{}]{input}{, }\item[{}]{values}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+Removes the specified values from a sorted field path array. 
+
+References \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}, \mbox{\hyperlink{lodash_2core_8js_a99dfa795800fd35295be3a737f8e0ffa}{is\+Equal}}, \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}, and \mbox{\hyperlink{__base_sample_8js_a133e745a7002d95c39d29cc180b56327}{values}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_document_mask_ae47ef8c8d610f395580e1caab51811a8_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_document_mask_a5df5944d18b4cf3a1751e20eb82ac4e0}\index{DocumentMask@{DocumentMask}!toProto@{toProto}}
+\index{toProto@{toProto}!DocumentMask@{DocumentMask}}
+\doxysubsubsection{\texorpdfstring{toProto()}{toProto()}}
+{\footnotesize\ttfamily \label{class_document_mask_a5df5944d18b4cf3a1751e20eb82ac4e0} 
+Document\+Mask\+::to\+Proto (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Converts a document mask to the \doxylink{class_firestore}{Firestore} \textquotesingle{}\doxylink{class_document_mask}{Document\+Mask}\textquotesingle{} Proto. 
+
+References \mbox{\hyperlink{class_document_mask_abac764f3778120c11e053eea2ddc0736}{is\+Empty()}}, and \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_document_mask_a5df5944d18b4cf3a1751e20eb82ac4e0_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/@google-\/cloud/firestore/build/src/\mbox{\hyperlink{document_8js}{document.\+js}}\end{DoxyCompactItemize}

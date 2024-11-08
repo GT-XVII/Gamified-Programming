@@ -1,0 +1,46 @@
+\doxysection{backend/node\+\_\+modules/@google-\/cloud/firestore/build/src/types.js File Reference}
+\hypertarget{_0dgoogle-cloud_2firestore_2build_2src_2types_8js}{}\label{_0dgoogle-cloud_2firestore_2build_2src_2types_8js}\index{backend/node\_modules/"@google-\/cloud/firestore/build/src/types.js@{backend/node\_modules/"@google-\/cloud/firestore/build/src/types.js}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2types_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2types_8js_ad43588338d6ee52f95454a8c32d10364}{default\+Converter}} = default\+Converter
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2types_8js_a4dafb2ada334cba7bdf4ca4ee5789049}{default\+Converter\+Obj}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{_0dgoogle-cloud_2firestore_2build_2src_2types_8js_ad43588338d6ee52f95454a8c32d10364}\index{types.js@{types.js}!defaultConverter@{defaultConverter}}
+\index{defaultConverter@{defaultConverter}!types.js@{types.js}}
+\doxysubsubsection{\texorpdfstring{defaultConverter}{defaultConverter}}
+{\footnotesize\ttfamily \label{_0dgoogle-cloud_2firestore_2build_2src_2types_8js_ad43588338d6ee52f95454a8c32d10364} 
+function default\+Converter (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) = default\+Converter}
+
+\doxylink{class_a}{A} default converter to use when none is provided. \Hypertarget{_0dgoogle-cloud_2firestore_2build_2src_2types_8js_a4dafb2ada334cba7bdf4ca4ee5789049}\index{types.js@{types.js}!defaultConverterObj@{defaultConverterObj}}
+\index{defaultConverterObj@{defaultConverterObj}!types.js@{types.js}}
+\doxysubsubsection{\texorpdfstring{defaultConverterObj}{defaultConverterObj}}
+{\footnotesize\ttfamily \label{_0dgoogle-cloud_2firestore_2build_2src_2types_8js_a4dafb2ada334cba7bdf4ca4ee5789049} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} default\+Converter\+Obj\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \ \ toFirestore(modelObject)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ modelObject;}
+\DoxyCodeLine{\ \ \ \ \},}
+\DoxyCodeLine{\ \ \ \ fromFirestore(snapshot)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ snapshot.data();}
+\DoxyCodeLine{\ \ \ \ \},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\doxylink{class_a}{A} default converter to use when none is provided.
+
+By declaring the converter as a variable instead of creating the object inside \doxylink{_0dgoogle-cloud_2firestore_2build_2src_2types_8js_ad43588338d6ee52f95454a8c32d10364}{default\+Converter()}, object equality when comparing default converters is preserved. \Hypertarget{_0dgoogle-cloud_2firestore_2build_2src_2types_8js_ae2475e10618961c050dcba04e8c42331}\index{types.js@{types.js}!strict@{strict}}
+\index{strict@{strict}!types.js@{types.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{_0dgoogle-cloud_2firestore_2build_2src_2types_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+

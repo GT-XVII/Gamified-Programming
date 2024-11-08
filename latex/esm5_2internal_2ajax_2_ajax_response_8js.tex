@@ -1,0 +1,54 @@
+\doxysection{backend/node\+\_\+modules/rxjs/dist/esm5/internal/ajax/\+Ajax\+Response.js File Reference}
+\hypertarget{esm5_2internal_2ajax_2_ajax_response_8js}{}\label{esm5_2internal_2ajax_2_ajax_response_8js}\index{backend/node\_modules/rxjs/dist/esm5/internal/ajax/AjaxResponse.js@{backend/node\_modules/rxjs/dist/esm5/internal/ajax/AjaxResponse.js}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{esm5_2internal_2ajax_2_ajax_response_8js_a59be084da8908b7d77ff34b25cd84488}{import}} \{ \mbox{\hyperlink{cjs_2internal_2ajax_2get_x_h_r_response_8js_a0190b5121dc5e300a42910f610147065}{get\+XHRResponse}} \} from \textquotesingle{}./\mbox{\hyperlink{cjs_2internal_2ajax_2get_x_h_r_response_8js_a0190b5121dc5e300a42910f610147065}{get\+XHRResponse}}\textquotesingle{}
+\item 
+var \mbox{\hyperlink{esm5_2internal_2ajax_2_ajax_response_8js_a42a6ba12810ac7fc2a8d8cf38c03223f}{Ajax\+Response}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{esm5_2internal_2ajax_2_ajax_response_8js_a42a6ba12810ac7fc2a8d8cf38c03223f}\index{AjaxResponse.js@{AjaxResponse.js}!AjaxResponse@{AjaxResponse}}
+\index{AjaxResponse@{AjaxResponse}!AjaxResponse.js@{AjaxResponse.js}}
+\doxysubsubsection{\texorpdfstring{AjaxResponse}{AjaxResponse}}
+{\footnotesize\ttfamily \label{esm5_2internal_2ajax_2_ajax_response_8js_a42a6ba12810ac7fc2a8d8cf38c03223f} 
+Ajax\+Response}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ (\textcolor{keyword}{function}\ ()\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{function}\ \mbox{\hyperlink{cjs_2internal_2ajax_2_ajax_response_8js_a4da28939b9618226b0688ae248541119}{AjaxResponse}}(originalEvent,\ \mbox{\hyperlink{_0dprotobufjs_2fetch_2index_8js_aed3454687db87107ad9304f19c09e60b}{xhr}},\ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}},\ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type}}\ ===\ \textcolor{keywordtype}{void}\ 0)\ \{\ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type}}\ =\ \textcolor{stringliteral}{'download\_load'};\ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ this.originalEvent\ =\ originalEvent;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ this.\mbox{\hyperlink{_0dprotobufjs_2fetch_2index_8js_aed3454687db87107ad9304f19c09e60b}{xhr}}\ =\ \mbox{\hyperlink{_0dprotobufjs_2fetch_2index_8js_aed3454687db87107ad9304f19c09e60b}{xhr}};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ this.\mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}}\ =\ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ this.\mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type}}\ =\ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type}};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ var\ \mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2index_8js_aac9dfada3e10bfb087ebb0a95f284488}{status}}\ =\ \mbox{\hyperlink{_0dprotobufjs_2fetch_2index_8js_aed3454687db87107ad9304f19c09e60b}{xhr}}.status,\ responseType\ =\ \mbox{\hyperlink{_0dprotobufjs_2fetch_2index_8js_aed3454687db87107ad9304f19c09e60b}{xhr}}.responseType;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ this.status\ =\ \mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2index_8js_aac9dfada3e10bfb087ebb0a95f284488}{status}}\ !==\ \textcolor{keyword}{null}\ \&\&\ \mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2index_8js_aac9dfada3e10bfb087ebb0a95f284488}{status}}\ !==\ \textcolor{keywordtype}{void}\ 0\ ?\ \mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2index_8js_aac9dfada3e10bfb087ebb0a95f284488}{status}}\ :\ 0;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ this.responseType\ =\ responseType\ !==\ \textcolor{keyword}{null}\ \&\&\ responseType\ !==\ \textcolor{keywordtype}{void}\ 0\ ?\ responseType\ :\ \textcolor{stringliteral}{''};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ var\ allHeaders\ =\ \mbox{\hyperlink{_0dprotobufjs_2fetch_2index_8js_aed3454687db87107ad9304f19c09e60b}{xhr}}.getAllResponseHeaders();}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ this.responseHeaders\ =\ allHeaders}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ ?}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ allHeaders.split(\textcolor{charliteral}{'\(\backslash\)n'}).reduce(\textcolor{keyword}{function}\ (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7f2cb2fcdd79bf72cefd29b7bc2d10fa}{headers}},\ line)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ var\ \mbox{\hyperlink{cookie_2index_8js_a0ac000318c33f03e412baff8df5b2513}{index}}\ =\ line.indexOf(\textcolor{stringliteral}{':\ '});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7f2cb2fcdd79bf72cefd29b7bc2d10fa}{headers}}[line.slice(0,\ \mbox{\hyperlink{cookie_2index_8js_a0ac000318c33f03e412baff8df5b2513}{index}})]\ =\ line.slice(\mbox{\hyperlink{cookie_2index_8js_a0ac000318c33f03e412baff8df5b2513}{index}}\ +\ 2);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7f2cb2fcdd79bf72cefd29b7bc2d10fa}{headers}};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \},\ \{\})}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ :\ \{\};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ this.\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ac70ac40ef8199c59316b35022dd21914}{response}}\ =\ \mbox{\hyperlink{cjs_2internal_2ajax_2get_x_h_r_response_8js_a0190b5121dc5e300a42910f610147065}{getXHRResponse}}(\mbox{\hyperlink{_0dprotobufjs_2fetch_2index_8js_aed3454687db87107ad9304f19c09e60b}{xhr}});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ var\ loaded\ =\ originalEvent.loaded,\ total\ =\ originalEvent.total;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ this.loaded\ =\ loaded;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ this.total\ =\ total;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{cjs_2internal_2ajax_2_ajax_response_8js_a4da28939b9618226b0688ae248541119}{AjaxResponse}};}
+\DoxyCodeLine{\}())}
+
+\end{DoxyCode}
+\Hypertarget{esm5_2internal_2ajax_2_ajax_response_8js_a59be084da8908b7d77ff34b25cd84488}\index{AjaxResponse.js@{AjaxResponse.js}!import@{import}}
+\index{import@{import}!AjaxResponse.js@{AjaxResponse.js}}
+\doxysubsubsection{\texorpdfstring{import}{import}}
+{\footnotesize\ttfamily \label{esm5_2internal_2ajax_2_ajax_response_8js_a59be084da8908b7d77ff34b25cd84488} 
+import \{ \mbox{\hyperlink{cjs_2internal_2ajax_2get_x_h_r_response_8js_a0190b5121dc5e300a42910f610147065}{get\+XHRResponse}} \} from \textquotesingle{}./\mbox{\hyperlink{cjs_2internal_2ajax_2get_x_h_r_response_8js_a0190b5121dc5e300a42910f610147065}{get\+XHRResponse}}\textquotesingle{}}
+

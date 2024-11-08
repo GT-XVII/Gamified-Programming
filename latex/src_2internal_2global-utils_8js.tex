@@ -1,0 +1,130 @@
+\doxysection{backend/node\+\_\+modules/@opentelemetry/api/build/src/internal/global-\/utils.js File Reference}
+\hypertarget{src_2internal_2global-utils_8js}{}\label{src_2internal_2global-utils_8js}\index{backend/node\_modules/"@opentelemetry/api/build/src/internal/global-\/utils.js@{backend/node\_modules/"@opentelemetry/api/build/src/internal/global-\/utils.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{src_2internal_2global-utils_8js_ad9e85b23d109f398c33b8a990e9f6abe}{register\+Global}} (\mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a1706a36c7994cbe3b35abe2169e75422}{instance}}, \mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2baggage_2utils_8js_a33a2fa12737e4357178a3ebcd0309a4e}{diag}}, allow\+Override=\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a5df37b7f02e5cdc7d9412b7f872b8e01}{false}})
+\item 
+function \mbox{\hyperlink{src_2internal_2global-utils_8js_a167d12a8025ec7c090a9764b4789a1c7}{get\+Global}} (\mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type}})
+\item 
+function \mbox{\hyperlink{src_2internal_2global-utils_8js_a1293ed05e09502f19e1003945c42f3b9}{unregister\+Global}} (\mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type}}, \mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2baggage_2utils_8js_a33a2fa12737e4357178a3ebcd0309a4e}{diag}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{src_2internal_2global-utils_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{src_2internal_2global-utils_8js_a6368da6f243d0501a097a918986441e6}{unregister\+Global}} = \mbox{\hyperlink{util_2dist_2index_8cjs_8js_a41e1faccec3c54a4856e9462cca8c81c}{exports.\+get\+Global}} = \mbox{\hyperlink{src_2internal_2global-utils_8js_a19d881e29a7a8f7e7342e2c7aa28fa74}{exports.\+register\+Global}} = void 0
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{src_2internal_2global-utils_8js_ac7e1292771905a9d5632ad830bd3155c}{platform\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../platform"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{src_2internal_2global-utils_8js_a90a989e6a53bea69dbe06d07efdd62fc}{version\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../version"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{src_2internal_2global-utils_8js_a110ea33953eef0eaf99dd17ecb683e01}{semver\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./semver"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{src_2internal_2global-utils_8js_a0d29006eece0ca18416674311ec1d2e2}{major}} = \mbox{\hyperlink{split_8js_afeb1a7ef0d383073a030166165cd4b99}{version\+\_\+1.\+VERSION.\+split}}(\textquotesingle{}.\textquotesingle{})\mbox{[}0\mbox{]}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{src_2internal_2global-utils_8js_a4805e5f0b0bacef229aee04727bc6acc}{GLOBAL\+\_\+\+OPENTELEMETRY\+\_\+\+API\+\_\+\+KEY}} = \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2uuid_2dist_2esm-browser_2stringify_8js_adbcbd46c1ee4745c23a2274bf70afe77}{Symbol.\+for}}(\`{}\mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{opentelemetry.\+js.\+api.\$}}\{\mbox{\hyperlink{esm_2internal_2global-utils_8js_ad40d045e16bdf717eaacf5e60d4164a2}{major}}\}\`{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{src_2internal_2global-utils_8js_a510aaef0a1c6d7367c225019f4f1bd49}{\+\_\+global}} = \mbox{\hyperlink{esm_2platform_2browser_2global_this_8js_aaec05d3706bcd742d974a6ab0fa11a99}{platform\+\_\+1.\+\_\+global\+This}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{src_2internal_2global-utils_8js_a19d881e29a7a8f7e7342e2c7aa28fa74}{register\+Global}} = register\+Global
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{src_2internal_2global-utils_8js_ac706e84e2c706f27621b8ebc39cee78d}{get\+Global}} = get\+Global
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{src_2internal_2global-utils_8js_a167d12a8025ec7c090a9764b4789a1c7}\index{global-\/utils.js@{global-\/utils.js}!getGlobal@{getGlobal}}
+\index{getGlobal@{getGlobal}!global-\/utils.js@{global-\/utils.js}}
+\doxysubsubsection{\texorpdfstring{getGlobal()}{getGlobal()}}
+{\footnotesize\ttfamily \label{src_2internal_2global-utils_8js_a167d12a8025ec7c090a9764b4789a1c7} 
+function get\+Global (\begin{DoxyParamCaption}\item[{}]{type}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{logger_2dist_2esm_2index_8esm5_8js_a0adf123df8967a14b5bdd9ff3bbe2d0c}{\+\_\+a}}, \mbox{\hyperlink{logging_8js_a53284eb14d953f3ba58806fc49cd4f7c}{\+\_\+b}}, \mbox{\hyperlink{esm_2internal_2global-utils_8js_a39b83d0cf42784735da3910f1f0ebb08}{\+\_\+global}}, \mbox{\hyperlink{esm_2internal_2global-utils_8js_ac0616666f59198ae86d8cac3eb9c7df8}{GLOBAL\+\_\+\+OPENTELEMETRY\+\_\+\+API\+\_\+\+KEY}}, \mbox{\hyperlink{src_2internal_2global-utils_8js_a110ea33953eef0eaf99dd17ecb683e01}{semver\+\_\+1}}, and \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type}}.
+
+\Hypertarget{src_2internal_2global-utils_8js_ad9e85b23d109f398c33b8a990e9f6abe}\index{global-\/utils.js@{global-\/utils.js}!registerGlobal@{registerGlobal}}
+\index{registerGlobal@{registerGlobal}!global-\/utils.js@{global-\/utils.js}}
+\doxysubsubsection{\texorpdfstring{registerGlobal()}{registerGlobal()}}
+{\footnotesize\ttfamily \label{src_2internal_2global-utils_8js_ad9e85b23d109f398c33b8a990e9f6abe} 
+function register\+Global (\begin{DoxyParamCaption}\item[{}]{type}{, }\item[{}]{instance}{, }\item[{}]{diag}{, }\item[{}]{allow\+Override}{ = {\ttfamily \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a5df37b7f02e5cdc7d9412b7f872b8e01}{false}}}}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{logger_2dist_2esm_2index_8esm5_8js_a0adf123df8967a14b5bdd9ff3bbe2d0c}{\+\_\+a}}, \mbox{\hyperlink{esm_2internal_2global-utils_8js_a39b83d0cf42784735da3910f1f0ebb08}{\+\_\+global}}, \mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7ce49b0ed1ec129ec0f7546796853cc9}{API}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}}, \mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2baggage_2utils_8js_a33a2fa12737e4357178a3ebcd0309a4e}{diag}}, \mbox{\hyperlink{ordered-map_8js_a57efe929cc6b44042891d05e15cec785}{global}}, \mbox{\hyperlink{esm_2internal_2global-utils_8js_ac0616666f59198ae86d8cac3eb9c7df8}{GLOBAL\+\_\+\+OPENTELEMETRY\+\_\+\+API\+\_\+\+KEY}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a1706a36c7994cbe3b35abe2169e75422}{instance}}, \mbox{\hyperlink{layer_8js_aee433120cbb9ab29eb32064146e11ef5}{match}}, \mbox{\hyperlink{long_2index_8js_ad7dc44f0ebdb746f4a5b0612ae9315cb}{not}}, \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type}}, \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a265a39dcf2f0b7c6b96574362aa01ad9}{version}}, and \mbox{\hyperlink{src_2internal_2global-utils_8js_a90a989e6a53bea69dbe06d07efdd62fc}{version\+\_\+1}}.
+
+\Hypertarget{src_2internal_2global-utils_8js_a1293ed05e09502f19e1003945c42f3b9}\index{global-\/utils.js@{global-\/utils.js}!unregisterGlobal@{unregisterGlobal}}
+\index{unregisterGlobal@{unregisterGlobal}!global-\/utils.js@{global-\/utils.js}}
+\doxysubsubsection{\texorpdfstring{unregisterGlobal()}{unregisterGlobal()}}
+{\footnotesize\ttfamily \label{src_2internal_2global-utils_8js_a1293ed05e09502f19e1003945c42f3b9} 
+function unregister\+Global (\begin{DoxyParamCaption}\item[{}]{type}{, }\item[{}]{diag}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{esm_2internal_2global-utils_8js_a39b83d0cf42784735da3910f1f0ebb08}{\+\_\+global}}, \mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}}, \mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2baggage_2utils_8js_a33a2fa12737e4357178a3ebcd0309a4e}{diag}}, \mbox{\hyperlink{ordered-map_8js_a57efe929cc6b44042891d05e15cec785}{global}}, \mbox{\hyperlink{esm_2internal_2global-utils_8js_ac0616666f59198ae86d8cac3eb9c7df8}{GLOBAL\+\_\+\+OPENTELEMETRY\+\_\+\+API\+\_\+\+KEY}}, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type}}, and \mbox{\hyperlink{src_2internal_2global-utils_8js_a90a989e6a53bea69dbe06d07efdd62fc}{version\+\_\+1}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{src_2internal_2global-utils_8js_a510aaef0a1c6d7367c225019f4f1bd49}\index{global-\/utils.js@{global-\/utils.js}!\_global@{\_global}}
+\index{\_global@{\_global}!global-\/utils.js@{global-\/utils.js}}
+\doxysubsubsection{\texorpdfstring{\_global}{\_global}}
+{\footnotesize\ttfamily \label{src_2internal_2global-utils_8js_a510aaef0a1c6d7367c225019f4f1bd49} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \+\_\+global = \mbox{\hyperlink{esm_2platform_2browser_2global_this_8js_aaec05d3706bcd742d974a6ab0fa11a99}{platform\+\_\+1.\+\_\+global\+This}}}
+
+\Hypertarget{src_2internal_2global-utils_8js_ac706e84e2c706f27621b8ebc39cee78d}\index{global-\/utils.js@{global-\/utils.js}!getGlobal@{getGlobal}}
+\index{getGlobal@{getGlobal}!global-\/utils.js@{global-\/utils.js}}
+\doxysubsubsection{\texorpdfstring{getGlobal}{getGlobal}}
+{\footnotesize\ttfamily \label{src_2internal_2global-utils_8js_ac706e84e2c706f27621b8ebc39cee78d} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} get\+Global = get\+Global}
+
+\Hypertarget{src_2internal_2global-utils_8js_a4805e5f0b0bacef229aee04727bc6acc}\index{global-\/utils.js@{global-\/utils.js}!GLOBAL\_OPENTELEMETRY\_API\_KEY@{GLOBAL\_OPENTELEMETRY\_API\_KEY}}
+\index{GLOBAL\_OPENTELEMETRY\_API\_KEY@{GLOBAL\_OPENTELEMETRY\_API\_KEY}!global-\/utils.js@{global-\/utils.js}}
+\doxysubsubsection{\texorpdfstring{GLOBAL\_OPENTELEMETRY\_API\_KEY}{GLOBAL\_OPENTELEMETRY\_API\_KEY}}
+{\footnotesize\ttfamily \label{src_2internal_2global-utils_8js_a4805e5f0b0bacef229aee04727bc6acc} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} GLOBAL\+\_\+\+OPENTELEMETRY\+\_\+\+API\+\_\+\+KEY = \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2uuid_2dist_2esm-browser_2stringify_8js_adbcbd46c1ee4745c23a2274bf70afe77}{Symbol.\+for}}(\`{}\mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{opentelemetry.\+js.\+api.\$}}\{\mbox{\hyperlink{esm_2internal_2global-utils_8js_ad40d045e16bdf717eaacf5e60d4164a2}{major}}\}\`{})}
+
+\Hypertarget{src_2internal_2global-utils_8js_a0d29006eece0ca18416674311ec1d2e2}\index{global-\/utils.js@{global-\/utils.js}!major@{major}}
+\index{major@{major}!global-\/utils.js@{global-\/utils.js}}
+\doxysubsubsection{\texorpdfstring{major}{major}}
+{\footnotesize\ttfamily \label{src_2internal_2global-utils_8js_a0d29006eece0ca18416674311ec1d2e2} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} major = \mbox{\hyperlink{split_8js_afeb1a7ef0d383073a030166165cd4b99}{version\+\_\+1.\+VERSION.\+split}}(\textquotesingle{}.\textquotesingle{})\mbox{[}0\mbox{]}}
+
+\Hypertarget{src_2internal_2global-utils_8js_ac7e1292771905a9d5632ad830bd3155c}\index{global-\/utils.js@{global-\/utils.js}!platform\_1@{platform\_1}}
+\index{platform\_1@{platform\_1}!global-\/utils.js@{global-\/utils.js}}
+\doxysubsubsection{\texorpdfstring{platform\_1}{platform\_1}}
+{\footnotesize\ttfamily \label{src_2internal_2global-utils_8js_ac7e1292771905a9d5632ad830bd3155c} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} platform\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../platform"{})}
+
+\Hypertarget{src_2internal_2global-utils_8js_a19d881e29a7a8f7e7342e2c7aa28fa74}\index{global-\/utils.js@{global-\/utils.js}!registerGlobal@{registerGlobal}}
+\index{registerGlobal@{registerGlobal}!global-\/utils.js@{global-\/utils.js}}
+\doxysubsubsection{\texorpdfstring{registerGlobal}{registerGlobal}}
+{\footnotesize\ttfamily \label{src_2internal_2global-utils_8js_a19d881e29a7a8f7e7342e2c7aa28fa74} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} register\+Global = register\+Global}
+
+\Hypertarget{src_2internal_2global-utils_8js_a110ea33953eef0eaf99dd17ecb683e01}\index{global-\/utils.js@{global-\/utils.js}!semver\_1@{semver\_1}}
+\index{semver\_1@{semver\_1}!global-\/utils.js@{global-\/utils.js}}
+\doxysubsubsection{\texorpdfstring{semver\_1}{semver\_1}}
+{\footnotesize\ttfamily \label{src_2internal_2global-utils_8js_a110ea33953eef0eaf99dd17ecb683e01} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} semver\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./semver"{})}
+
+\Hypertarget{src_2internal_2global-utils_8js_ae2475e10618961c050dcba04e8c42331}\index{global-\/utils.js@{global-\/utils.js}!strict@{strict}}
+\index{strict@{strict}!global-\/utils.js@{global-\/utils.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{src_2internal_2global-utils_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+
+\Hypertarget{src_2internal_2global-utils_8js_a6368da6f243d0501a097a918986441e6}\index{global-\/utils.js@{global-\/utils.js}!unregisterGlobal@{unregisterGlobal}}
+\index{unregisterGlobal@{unregisterGlobal}!global-\/utils.js@{global-\/utils.js}}
+\doxysubsubsection{\texorpdfstring{unregisterGlobal}{unregisterGlobal}}
+{\footnotesize\ttfamily \label{src_2internal_2global-utils_8js_a6368da6f243d0501a097a918986441e6} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} unregister\+Global = \mbox{\hyperlink{util_2dist_2index_8cjs_8js_a41e1faccec3c54a4856e9462cca8c81c}{exports.\+get\+Global}} = \mbox{\hyperlink{src_2internal_2global-utils_8js_a19d881e29a7a8f7e7342e2c7aa28fa74}{exports.\+register\+Global}} = void 0}
+
+\Hypertarget{src_2internal_2global-utils_8js_a90a989e6a53bea69dbe06d07efdd62fc}\index{global-\/utils.js@{global-\/utils.js}!version\_1@{version\_1}}
+\index{version\_1@{version\_1}!global-\/utils.js@{global-\/utils.js}}
+\doxysubsubsection{\texorpdfstring{version\_1}{version\_1}}
+{\footnotesize\ttfamily \label{src_2internal_2global-utils_8js_a90a989e6a53bea69dbe06d07efdd62fc} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} version\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../version"{})}
+

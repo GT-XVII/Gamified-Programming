@@ -1,0 +1,12 @@
+<map id="WebSocketConnection::resetKeepAlive" name="WebSocketConnection::resetKeepAlive">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,35,160,75"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="44,35,42,25,48,16,62,10,83,8,105,10,118,17,115,21,103,16,82,13,63,15,52,20,47,26,49,33"/>
+<area shape="rect" id="Node000002" href="$class_web_socket_connection.html#a5d36454d99b15f8034cbb574047e9435" title=" " alt="" coords="208,35,362,75"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="160,52,192,52,192,58,160,58"/>
+<area shape="rect" id="Node000003" href="$class_web_socket_connection.html#aaa37fd8e73255a8a42e9196f6936275f" title=" " alt="" coords="410,5,564,46"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="362,41,395,36,396,42,363,46"/>
+<area shape="rect" id="Node000005" href="$json-bigint_2lib_2stringify_8js.html#abd4075a8f329b0ccafd81359c952a9df" title=" " alt="" coords="468,70,506,96"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="363,63,453,76,452,81,362,68"/>
+<area shape="rect" id="Node000004" href="$class_web_socket_connection.html#a7433a0d2e3d80add10e960b95a748827" title=" " alt="" coords="612,5,767,46"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="565,23,597,23,597,28,565,28"/>
+</map>

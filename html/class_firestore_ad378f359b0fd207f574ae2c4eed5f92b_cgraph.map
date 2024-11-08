@@ -1,0 +1,9 @@
+<map id="Firestore::settings" name="Firestore::settings">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,132,55"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="35,31,28,21,32,11,46,5,69,3,93,5,106,12,103,17,92,10,68,8,47,10,36,15,33,20,39,27"/>
+<area shape="rect" id="Node000002" href="$class_firestore.html#a6a2189e6b58c9abbe91643fe3f742cf2" title=" " alt="" coords="180,22,361,62"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="132,48,164,48,164,54,132,53"/>
+<area shape="poly" id="edge4_Node000002_Node000001" title=" " alt="" coords="179,36,148,36,148,31,179,31"/>
+<area shape="rect" id="Node000003" href="$database-compat_2dist_2index_8standalone_8js.html#ad061d61e10918d5b27e272593239c0e7" title=" " alt="" coords="409,29,447,55"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="361,40,394,40,394,45,361,45"/>
+</map>

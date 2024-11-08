@@ -1,0 +1,111 @@
+\doxysection{backend/node\+\_\+modules/node-\/forge/lib/socket.js File Reference}
+\hypertarget{node-forge_2lib_2socket_8js}{}\label{node-forge_2lib_2socket_8js}\index{backend/node\_modules/node-\/forge/lib/socket.js@{backend/node\_modules/node-\/forge/lib/socket.js}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{node-forge_2lib_2socket_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./forge\textquotesingle{})
+\item 
+var \mbox{\hyperlink{node-forge_2lib_2socket_8js_a24df1ebe2aee23540b4159c6087afdf1}{net}} = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{module.\+exports}} = forge.\+net = forge.\+net \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} \{\}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a24df1ebe2aee23540b4159c6087afdf1}{net}} \mbox{\hyperlink{node-forge_2lib_2socket_8js_a16607201a6118b9fc9fae69d8c8f2a8c}{socket\+Pools}} = \{\}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a24df1ebe2aee23540b4159c6087afdf1}{net}} \mbox{\hyperlink{node-forge_2lib_2socket_8js_a6c9ee78bd2940cc2eff4ad7e7cccbd2a}{create\+Socket\+Pool}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a24df1ebe2aee23540b4159c6087afdf1}{net}} \mbox{\hyperlink{node-forge_2lib_2socket_8js_a98d132803165b6f9e79ee9c320819d43}{destroy\+Socket\+Pool}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a24df1ebe2aee23540b4159c6087afdf1}{net}} \mbox{\hyperlink{node-forge_2lib_2socket_8js_a7b62b90f61abb200ad4b56773e1afc5c}{create\+Socket}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{node-forge_2lib_2socket_8js_a7b62b90f61abb200ad4b56773e1afc5c}\index{socket.js@{socket.js}!createSocket@{createSocket}}
+\index{createSocket@{createSocket}!socket.js@{socket.js}}
+\doxysubsubsection{\texorpdfstring{createSocket}{createSocket}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2socket_8js_a7b62b90f61abb200ad4b56773e1afc5c} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a24df1ebe2aee23540b4159c6087afdf1}{net}} create\+Socket}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(options)\ \{}
+\DoxyCodeLine{\ \ var\ socket\ =\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}(options.flashId\ in\ \mbox{\hyperlink{node-forge_2lib_2socket_8js_a24df1ebe2aee23540b4159c6087afdf1}{net}}.socketPools)\ \{}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ var\ sp\ =\ \mbox{\hyperlink{node-forge_2lib_2socket_8js_a24df1ebe2aee23540b4159c6087afdf1}{net}}.socketPools[options.flashId];}
+\DoxyCodeLine{\ \ \ \ socket\ =\ sp.createSocket(options);}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ socket;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Creates a new socket.
+
+
+\begin{DoxyParams}{Parameters}
+{\em options} & flash\+Id\+: the dom ID for the flash object element. connected\+: function(event) called when the socket connects. closed\+: function(event) called when the socket closes. data\+: function(event) called when socket data has arrived, it can be read from the socket using receive(). error\+: function(event) called when a socket error occurs.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the created socket. 
+\end{DoxyReturn}
+\Hypertarget{node-forge_2lib_2socket_8js_a6c9ee78bd2940cc2eff4ad7e7cccbd2a}\index{socket.js@{socket.js}!createSocketPool@{createSocketPool}}
+\index{createSocketPool@{createSocketPool}!socket.js@{socket.js}}
+\doxysubsubsection{\texorpdfstring{createSocketPool}{createSocketPool}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2socket_8js_a6c9ee78bd2940cc2eff4ad7e7cccbd2a} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a24df1ebe2aee23540b4159c6087afdf1}{net}} create\+Socket\+Pool}
+
+Creates a flash socket pool.
+
+
+\begin{DoxyParams}{Parameters}
+{\em options} & flash\+Id\+: the dom ID for the flash object element. policy\+Port\+: the default policy port for sockets, 0 to use the flash default. policy\+Url\+: the default policy file URL for sockets (if provided used instead of a policy port). msie\+: true if the browser is msie, false if not.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the created socket pool. 
+\end{DoxyReturn}
+\Hypertarget{node-forge_2lib_2socket_8js_a98d132803165b6f9e79ee9c320819d43}\index{socket.js@{socket.js}!destroySocketPool@{destroySocketPool}}
+\index{destroySocketPool@{destroySocketPool}!socket.js@{socket.js}}
+\doxysubsubsection{\texorpdfstring{destroySocketPool}{destroySocketPool}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2socket_8js_a98d132803165b6f9e79ee9c320819d43} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a24df1ebe2aee23540b4159c6087afdf1}{net}} destroy\+Socket\+Pool}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(options)\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}(options.flashId\ in\ \mbox{\hyperlink{node-forge_2lib_2socket_8js_a24df1ebe2aee23540b4159c6087afdf1}{net}}.socketPools)\ \{}
+\DoxyCodeLine{\ \ \ \ var\ sp\ =\ \mbox{\hyperlink{node-forge_2lib_2socket_8js_a24df1ebe2aee23540b4159c6087afdf1}{net}}.socketPools[options.flashId];}
+\DoxyCodeLine{\ \ \ \ sp.destroy();}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Destroys a flash socket pool.
+
+
+\begin{DoxyParams}{Parameters}
+{\em options} & flash\+Id\+: the dom ID for the flash object element. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{node-forge_2lib_2socket_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}\index{socket.js@{socket.js}!forge@{forge}}
+\index{forge@{forge}!socket.js@{socket.js}}
+\doxysubsubsection{\texorpdfstring{forge}{forge}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2socket_8js_ab4dbef01e35b8e6d06087c0542ba9e2c} 
+var forge = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./forge\textquotesingle{})}
+
+Socket implementation that uses flash Socket\+Pool class as a backend.
+
+\begin{DoxyAuthor}{Author}
+Dave Longley
+\end{DoxyAuthor}
+Copyright (c) 2010-\/2013 Digital Bazaar, Inc. \Hypertarget{node-forge_2lib_2socket_8js_a24df1ebe2aee23540b4159c6087afdf1}\index{socket.js@{socket.js}!net@{net}}
+\index{net@{net}!socket.js@{socket.js}}
+\doxysubsubsection{\texorpdfstring{net}{net}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2socket_8js_a24df1ebe2aee23540b4159c6087afdf1} 
+var net = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{module.\+exports}} = forge.\+net = forge.\+net \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} \{\}}
+
+\Hypertarget{node-forge_2lib_2socket_8js_a16607201a6118b9fc9fae69d8c8f2a8c}\index{socket.js@{socket.js}!socketPools@{socketPools}}
+\index{socketPools@{socketPools}!socket.js@{socket.js}}
+\doxysubsubsection{\texorpdfstring{socketPools}{socketPools}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2socket_8js_a16607201a6118b9fc9fae69d8c8f2a8c} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a24df1ebe2aee23540b4159c6087afdf1}{net}} socket\+Pools = \{\}}
+

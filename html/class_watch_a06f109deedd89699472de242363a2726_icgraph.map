@@ -1,0 +1,20 @@
+<map id="Watch::closeStream" name="Watch::closeStream">
+<area shape="rect" id="Node000001" title=" " alt="" coords="630,93,770,119"/>
+<area shape="rect" id="Node000002" href="$class_watch.html#a444d1b684995b48c0fa178ab7fa79ca3" title=" " alt="" coords="457,93,582,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="615,109,583,109,583,104,615,104"/>
+<area shape="rect" id="Node000003" href="$class_watch.html#a47047c5c983dd47cc9b7875b18dba55d" title=" " alt="" coords="217,5,409,31"/>
+<area shape="poly" id="edge10_Node000001_Node000003" title=" " alt="" coords="625,92,372,34,374,29,626,87"/>
+<area shape="rect" id="Node000007" href="$class_watch.html#a5ff70affbd79cef883681b2d9a9a8e6c" title=" " alt="" coords="33,207,141,232"/>
+<area shape="poly" id="edge11_Node000001_Node000007" title=" " alt="" coords="664,130,554,186,483,214,410,234,337,243,265,244,197,239,141,232,142,227,198,234,265,239,337,238,408,229,481,208,551,181,662,125"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="469,88,408,57,336,34,338,29,410,52,472,83"/>
+<area shape="rect" id="Node000005" href="$class_watch.html#a502cddf27d20bae18e6b7d49d0aee5b6" title=" " alt="" coords="245,55,380,80"/>
+<area shape="poly" id="edge6_Node000002_Node000005" title=" " alt="" coords="441,94,381,83,382,78,442,89"/>
+<area shape="rect" id="Node000006" href="$class_watch.html#a8550a3e7706176102c2f303551f10f4f" title=" " alt="" coords="244,156,382,182"/>
+<area shape="poly" id="edge7_Node000002_Node000006" title=" " alt="" coords="461,127,359,158,357,153,459,121"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="425,34,475,63,511,91,508,95,472,67,422,39"/>
+<area shape="rect" id="Node000004" href="$class_watch.html#a18fb83c5b256846e262feb349400adfb" title=" " alt="" coords="5,56,169,82"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="238,38,148,58,147,53,237,32"/>
+<area shape="poly" id="edge5_Node000004_Node000002" title=" " alt="" coords="166,82,217,90,345,100,457,103,457,109,345,105,216,95,165,88"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="238,188,142,210,141,205,237,183"/>
+<area shape="poly" id="edge9_Node000007_Node000002" title=" " alt="" coords="157,223,212,224,277,221,344,211,408,192,438,176,465,156,505,118,509,121,468,160,441,181,410,197,345,216,277,226,213,229,156,228"/>
+</map>

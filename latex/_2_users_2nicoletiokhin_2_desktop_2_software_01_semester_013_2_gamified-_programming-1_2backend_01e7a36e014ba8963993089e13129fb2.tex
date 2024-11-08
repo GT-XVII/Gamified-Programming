@@ -1,0 +1,31 @@
+\doxysection{/\+Users/nicoletiokhin/\+Desktop/\+Software Semester 3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/lodash/spread.\+js}
+\hypertarget{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_01e7a36e014ba8963993089e13129fb2}{}\label{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_01e7a36e014ba8963993089e13129fb2}Creates a function that invokes {\ttfamily func} with the {\ttfamily this} binding of the create function and an array of arguments much like \href{http://www.ecma-international.org/ecma-262/7.0/\#sec-function.prototype.apply}{\texttt{ {\ttfamily Function\#apply}}}.
+
+{\bfseries{Note\+:}} This method is based on the \href{https://mdn.io/spread_operator}{\texttt{ spread operator}}.
+
+@member\+Of \+\_\+ \begin{DoxySince}{Since}
+3.\+2.\+0
+\end{DoxySince}
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Function\}} & func The function to spread arguments over. \\
+\hline
+{\em \{number\}} & \mbox{[}start=0\mbox{]} The start position of the spread. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Function\} Returns the new function.
+\end{DoxyReturn}
+var say = \+\_\+.\+spread(function(who, what) \{ return who + \textquotesingle{} says \textquotesingle{} + what; \});
+
+say(\mbox{[}\textquotesingle{}fred\textquotesingle{}, \textquotesingle{}hello\textquotesingle{}\mbox{]}); // =\texorpdfstring{$>$}{>} \textquotesingle{}fred says hello\textquotesingle{}
+
+var numbers = Promise.\+all(\mbox{[} Promise.\+resolve(40), Promise.\+resolve(36) \mbox{]});
+
+numbers.\+then(\+\_\+.\+spread(function(x, y) \{ return x + y; \})); // =\texorpdfstring{$>$}{>} a Promise of 76
+
+
+\begin{DoxyCodeInclude}{0}
+
+\end{DoxyCodeInclude}
+ Semester \doxylink{spread_8js}{3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/lodash/spread.\+js} 

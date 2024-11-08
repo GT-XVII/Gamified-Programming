@@ -1,0 +1,123 @@
+\doxysection{backend/node\+\_\+modules/firebase-\/admin/lib/firestore/firestore-\/internal.js File Reference}
+\hypertarget{firestore-internal_8js}{}\label{firestore-internal_8js}\index{backend/node\_modules/firebase-\/admin/lib/firestore/firestore-\/internal.js@{backend/node\_modules/firebase-\/admin/lib/firestore/firestore-\/internal.js}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_firestore_service}{Firestore\+Service}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{firestore-internal_8js_aeaad9fbb41595d22b22d7028723d52d5}{get\+Firestore\+Options}} (\mbox{\hyperlink{database_2dist_2index_8cjs_8js_a7b225fcb720e4d5ed2bbf60e28a25e6d}{app}}, firestore\+Settings)
+\item 
+function \mbox{\hyperlink{firestore-internal_8js_a1d5834579d54e01e4ad329b1e955501f}{init\+Firestore}} (\mbox{\hyperlink{database_2dist_2index_8cjs_8js_a7b225fcb720e4d5ed2bbf60e28a25e6d}{app}}, database\+Id, firestore\+Settings)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{firestore-internal_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{firestore-internal_8js_a3690f2dd1175f847cfa8502a122ad59d}{get\+Firestore\+Options}} = exports.\+Firestore\+Service = void 0
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{firestore-internal_8js_af1a99a3ff1a35c114bdd06cc7252beb6}{error\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/error"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{firestore-internal_8js_a942c275c9eb51472dccb1e1fc76db6ac}{credential\+\_\+internal\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../app/\mbox{\hyperlink{firebase-admin_2lib_2credential_2index_8js_aee5dce8f0575eecdffdfa59b49b319e1}{credential}}-\/internal"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{firestore-internal_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/validator"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{firestore-internal_8js_a022e926a40defc4294368e708a7e2372}{utils}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/index"{})
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{firestore-internal_8js_abc20dc8d3132488b75dd529f42e7ba98}{Firestore\+Service}} = Firestore\+Service
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{firestore-internal_8js_aeaad9fbb41595d22b22d7028723d52d5}\index{firestore-\/internal.js@{firestore-\/internal.js}!getFirestoreOptions@{getFirestoreOptions}}
+\index{getFirestoreOptions@{getFirestoreOptions}!firestore-\/internal.js@{firestore-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{getFirestoreOptions()}{getFirestoreOptions()}}
+{\footnotesize\ttfamily \label{firestore-internal_8js_aeaad9fbb41595d22b22d7028723d52d5} 
+function get\+Firestore\+Options (\begin{DoxyParamCaption}\item[{}]{app}{, }\item[{}]{firestore\+Settings}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{database_2dist_2index_8cjs_8js_a7b225fcb720e4d5ed2bbf60e28a25e6d}{app}}, \mbox{\hyperlink{firebase-admin_2lib_2credential_2index_8js_aee5dce8f0575eecdffdfa59b49b319e1}{credential}}, \mbox{\hyperlink{firestore-internal_8js_a942c275c9eb51472dccb1e1fc76db6ac}{credential\+\_\+internal\+\_\+1}}, \mbox{\hyperlink{_0dgrpc_2grpc-js_2build_2src_2index_8js_a88f1ca34064fef6dc1e29d7d1cf5cfcf}{credentials}}, \mbox{\hyperlink{firestore-internal_8js_af1a99a3ff1a35c114bdd06cc7252beb6}{error\+\_\+1}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}, \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require()}}, \mbox{\hyperlink{firestore-internal_8js_a022e926a40defc4294368e708a7e2372}{utils}}, \mbox{\hyperlink{firestore-internal_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}}, and \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a265a39dcf2f0b7c6b96574362aa01ad9}{version}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=263pt]{firestore-internal_8js_aeaad9fbb41595d22b22d7028723d52d5_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{firestore-internal_8js_a1d5834579d54e01e4ad329b1e955501f}\index{firestore-\/internal.js@{firestore-\/internal.js}!initFirestore@{initFirestore}}
+\index{initFirestore@{initFirestore}!firestore-\/internal.js@{firestore-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{initFirestore()}{initFirestore()}}
+{\footnotesize\ttfamily \label{firestore-internal_8js_a1d5834579d54e01e4ad329b1e955501f} 
+function init\+Firestore (\begin{DoxyParamCaption}\item[{}]{app}{, }\item[{}]{database\+Id}{, }\item[{}]{firestore\+Settings}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{database_2dist_2index_8cjs_8js_a7b225fcb720e4d5ed2bbf60e28a25e6d}{app}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}}, \mbox{\hyperlink{firestore-internal_8js_af1a99a3ff1a35c114bdd06cc7252beb6}{error\+\_\+1}}, \mbox{\hyperlink{firestore-internal_8js_a3690f2dd1175f847cfa8502a122ad59d}{get\+Firestore\+Options}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}, and \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{firestore-internal_8js_a1d5834579d54e01e4ad329b1e955501f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{firestore-internal_8js_a1d5834579d54e01e4ad329b1e955501f_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{firestore-internal_8js_a942c275c9eb51472dccb1e1fc76db6ac}\index{firestore-\/internal.js@{firestore-\/internal.js}!credential\_internal\_1@{credential\_internal\_1}}
+\index{credential\_internal\_1@{credential\_internal\_1}!firestore-\/internal.js@{firestore-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{credential\_internal\_1}{credential\_internal\_1}}
+{\footnotesize\ttfamily \label{firestore-internal_8js_a942c275c9eb51472dccb1e1fc76db6ac} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} credential\+\_\+internal\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../app/\mbox{\hyperlink{firebase-admin_2lib_2credential_2index_8js_aee5dce8f0575eecdffdfa59b49b319e1}{credential}}-\/internal"{})}
+
+\Hypertarget{firestore-internal_8js_af1a99a3ff1a35c114bdd06cc7252beb6}\index{firestore-\/internal.js@{firestore-\/internal.js}!error\_1@{error\_1}}
+\index{error\_1@{error\_1}!firestore-\/internal.js@{firestore-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{error\_1}{error\_1}}
+{\footnotesize\ttfamily \label{firestore-internal_8js_af1a99a3ff1a35c114bdd06cc7252beb6} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} error\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/error"{})}
+
+\Hypertarget{firestore-internal_8js_abc20dc8d3132488b75dd529f42e7ba98}\index{firestore-\/internal.js@{firestore-\/internal.js}!FirestoreService@{FirestoreService}}
+\index{FirestoreService@{FirestoreService}!firestore-\/internal.js@{firestore-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{FirestoreService}{FirestoreService}}
+{\footnotesize\ttfamily \label{firestore-internal_8js_abc20dc8d3132488b75dd529f42e7ba98} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} Firestore\+Service = Firestore\+Service}
+
+\Hypertarget{firestore-internal_8js_a3690f2dd1175f847cfa8502a122ad59d}\index{firestore-\/internal.js@{firestore-\/internal.js}!getFirestoreOptions@{getFirestoreOptions}}
+\index{getFirestoreOptions@{getFirestoreOptions}!firestore-\/internal.js@{firestore-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{getFirestoreOptions}{getFirestoreOptions}}
+{\footnotesize\ttfamily \label{firestore-internal_8js_a3690f2dd1175f847cfa8502a122ad59d} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} get\+Firestore\+Options = exports.\+Firestore\+Service = void 0}
+
+\Hypertarget{firestore-internal_8js_ae2475e10618961c050dcba04e8c42331}\index{firestore-\/internal.js@{firestore-\/internal.js}!strict@{strict}}
+\index{strict@{strict}!firestore-\/internal.js@{firestore-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{firestore-internal_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+
+firebase-\/admin v12.\+7.\+0 \Hypertarget{firestore-internal_8js_a022e926a40defc4294368e708a7e2372}\index{firestore-\/internal.js@{firestore-\/internal.js}!utils@{utils}}
+\index{utils@{utils}!firestore-\/internal.js@{firestore-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{utils}{utils}}
+{\footnotesize\ttfamily \label{firestore-internal_8js_a022e926a40defc4294368e708a7e2372} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} utils = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/index"{})}
+
+\Hypertarget{firestore-internal_8js_add6dc10e852e313f07c0d59bcf288b6a}\index{firestore-\/internal.js@{firestore-\/internal.js}!validator@{validator}}
+\index{validator@{validator}!firestore-\/internal.js@{firestore-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{validator}{validator}}
+{\footnotesize\ttfamily \label{firestore-internal_8js_add6dc10e852e313f07c0d59bcf288b6a} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} validator = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/validator"{})}
+

@@ -1,0 +1,110 @@
+\doxysection{backend/node\+\_\+modules/firebase-\/admin/lib/app-\/check/app-\/check-\/api-\/client-\/internal.js File Reference}
+\hypertarget{app-check-api-client-internal_8js}{}\label{app-check-api-client-internal_8js}\index{backend/node\_modules/firebase-\/admin/lib/app-\/check/app-\/check-\/api-\/client-\/internal.js@{backend/node\_modules/firebase-\/admin/lib/app-\/check/app-\/check-\/api-\/client-\/internal.js}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_app_check_api_client}{App\+Check\+Api\+Client}}
+\item 
+class \mbox{\hyperlink{class_firebase_app_check_error}{Firebase\+App\+Check\+Error}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{app-check-api-client-internal_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{app-check-api-client-internal_8js_ace997017f03b79b88da2cef83d87302c}{Firebase\+App\+Check\+Error}} = \mbox{\hyperlink{app-check-api-client-internal_8js_ae9a138686553c8bd8ae85c4f8a0af29e}{exports.\+APP\+\_\+\+CHECK\+\_\+\+ERROR\+\_\+\+CODE\+\_\+\+MAPPING}} = exports.\+App\+Check\+Api\+Client = void 0
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{app-check-api-client-internal_8js_a73dd1e6f0bc0a0234576ddef2bbe0452}{api\+\_\+request\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}}-\/request"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{app-check-api-client-internal_8js_af1a99a3ff1a35c114bdd06cc7252beb6}{error\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/error"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{app-check-api-client-internal_8js_a022e926a40defc4294368e708a7e2372}{utils}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/index"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{app-check-api-client-internal_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/validator"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{app-check-api-client-internal_8js_a9486b3ea7ef67cad9bdf7cebf30293f7}{FIREBASE\+\_\+\+APP\+\_\+\+CHECK\+\_\+\+V1\+\_\+\+API\+\_\+\+URL\+\_\+\+FORMAT}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{app-check-api-client-internal_8js_a98c12b4a6f421f2ae45c057d53672e59}{App\+Check\+Api\+Client}} = App\+Check\+Api\+Client
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{app-check-api-client-internal_8js_ae9a138686553c8bd8ae85c4f8a0af29e}{APP\+\_\+\+CHECK\+\_\+\+ERROR\+\_\+\+CODE\+\_\+\+MAPPING}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{app-check-api-client-internal_8js_a73dd1e6f0bc0a0234576ddef2bbe0452}\index{app-\/check-\/api-\/client-\/internal.js@{app-\/check-\/api-\/client-\/internal.js}!api\_request\_1@{api\_request\_1}}
+\index{api\_request\_1@{api\_request\_1}!app-\/check-\/api-\/client-\/internal.js@{app-\/check-\/api-\/client-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{api\_request\_1}{api\_request\_1}}
+{\footnotesize\ttfamily \label{app-check-api-client-internal_8js_a73dd1e6f0bc0a0234576ddef2bbe0452} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} api\+\_\+request\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}}-\/request"{})}
+
+\Hypertarget{app-check-api-client-internal_8js_ae9a138686553c8bd8ae85c4f8a0af29e}\index{app-\/check-\/api-\/client-\/internal.js@{app-\/check-\/api-\/client-\/internal.js}!APP\_CHECK\_ERROR\_CODE\_MAPPING@{APP\_CHECK\_ERROR\_CODE\_MAPPING}}
+\index{APP\_CHECK\_ERROR\_CODE\_MAPPING@{APP\_CHECK\_ERROR\_CODE\_MAPPING}!app-\/check-\/api-\/client-\/internal.js@{app-\/check-\/api-\/client-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{APP\_CHECK\_ERROR\_CODE\_MAPPING}{APP\_CHECK\_ERROR\_CODE\_MAPPING}}
+{\footnotesize\ttfamily \label{app-check-api-client-internal_8js_ae9a138686553c8bd8ae85c4f8a0af29e} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} APP\+\_\+\+CHECK\+\_\+\+ERROR\+\_\+\+CODE\+\_\+\+MAPPING}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \ \ ABORTED:\ \textcolor{stringliteral}{'aborted'},}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{crypto-signer_8js_a70c18fba00c4d8391e61dfadbe44ed94}{INVALID\_ARGUMENT}}:\ \textcolor{stringliteral}{'invalid-\/argument'},}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{crypto-signer_8js_a6a6df17225b223be87c38bf798a74a4b}{INVALID\_CREDENTIAL}}:\ \textcolor{stringliteral}{'invalid-\/credential'},}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a9ffa956335fc503879e7740f1543e56e}{INTERNAL}}:\ \textcolor{stringliteral}{'internal-\/error'},}
+\DoxyCodeLine{\ \ \ \ PERMISSION\_DENIED:\ \textcolor{stringliteral}{'permission-\/denied'},}
+\DoxyCodeLine{\ \ \ \ UNAUTHENTICATED:\ \textcolor{stringliteral}{'unauthenticated'},}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{firebase-admin_2lib_2utils_2error_8js_ad4740058d98e7c8fbf0d3ea0633b6b3a}{NOT\_FOUND}}:\ \textcolor{stringliteral}{'not-\/found'},}
+\DoxyCodeLine{\ \ \ \ UNKNOWN:\ \textcolor{stringliteral}{'unknown-\/error'},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{app-check-api-client-internal_8js_a98c12b4a6f421f2ae45c057d53672e59}\index{app-\/check-\/api-\/client-\/internal.js@{app-\/check-\/api-\/client-\/internal.js}!AppCheckApiClient@{AppCheckApiClient}}
+\index{AppCheckApiClient@{AppCheckApiClient}!app-\/check-\/api-\/client-\/internal.js@{app-\/check-\/api-\/client-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{AppCheckApiClient}{AppCheckApiClient}}
+{\footnotesize\ttfamily \label{app-check-api-client-internal_8js_a98c12b4a6f421f2ae45c057d53672e59} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} App\+Check\+Api\+Client = App\+Check\+Api\+Client}
+
+\Hypertarget{app-check-api-client-internal_8js_af1a99a3ff1a35c114bdd06cc7252beb6}\index{app-\/check-\/api-\/client-\/internal.js@{app-\/check-\/api-\/client-\/internal.js}!error\_1@{error\_1}}
+\index{error\_1@{error\_1}!app-\/check-\/api-\/client-\/internal.js@{app-\/check-\/api-\/client-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{error\_1}{error\_1}}
+{\footnotesize\ttfamily \label{app-check-api-client-internal_8js_af1a99a3ff1a35c114bdd06cc7252beb6} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} error\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/error"{})}
+
+\Hypertarget{app-check-api-client-internal_8js_a9486b3ea7ef67cad9bdf7cebf30293f7}\index{app-\/check-\/api-\/client-\/internal.js@{app-\/check-\/api-\/client-\/internal.js}!FIREBASE\_APP\_CHECK\_V1\_API\_URL\_FORMAT@{FIREBASE\_APP\_CHECK\_V1\_API\_URL\_FORMAT}}
+\index{FIREBASE\_APP\_CHECK\_V1\_API\_URL\_FORMAT@{FIREBASE\_APP\_CHECK\_V1\_API\_URL\_FORMAT}!app-\/check-\/api-\/client-\/internal.js@{app-\/check-\/api-\/client-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{FIREBASE\_APP\_CHECK\_V1\_API\_URL\_FORMAT}{FIREBASE\_APP\_CHECK\_V1\_API\_URL\_FORMAT}}
+{\footnotesize\ttfamily \label{app-check-api-client-internal_8js_a9486b3ea7ef67cad9bdf7cebf30293f7} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} FIREBASE\+\_\+\+APP\+\_\+\+CHECK\+\_\+\+V1\+\_\+\+API\+\_\+\+URL\+\_\+\+FORMAT}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{stringliteral}{'https:}}
+\DoxyCodeLine{\textcolor{stringliteral}{const\ ONE\_TIME\_USE\_TOKEN\_VERIFICATION\_URL\_FORMAT\ =\ '}\mbox{\hyperlink{agent-base_2dist_2helpers_8js_ab3093f9d8507c035b404b9d49bdb40f7}{https}}:}
+\DoxyCodeLine{\textcolor{keyword}{const}\ FIREBASE\_APP\_CHECK\_CONFIG\_HEADERS\ =\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{'X-\/Firebase-\/Client'}:\ \`{}fire-\/admin-\/\mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2platform_2index_8js_a74c72f849f998803d0f301e524445c36}{node}}/\mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}\{\mbox{\hyperlink{app-check-api-client-internal_8js_a022e926a40defc4294368e708a7e2372}{utils}}.getSdkVersion()\}\`{}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{app-check-api-client-internal_8js_ace997017f03b79b88da2cef83d87302c}\index{app-\/check-\/api-\/client-\/internal.js@{app-\/check-\/api-\/client-\/internal.js}!FirebaseAppCheckError@{FirebaseAppCheckError}}
+\index{FirebaseAppCheckError@{FirebaseAppCheckError}!app-\/check-\/api-\/client-\/internal.js@{app-\/check-\/api-\/client-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{FirebaseAppCheckError}{FirebaseAppCheckError}}
+{\footnotesize\ttfamily \label{app-check-api-client-internal_8js_ace997017f03b79b88da2cef83d87302c} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} Firebase\+App\+Check\+Error = \mbox{\hyperlink{app-check-api-client-internal_8js_ae9a138686553c8bd8ae85c4f8a0af29e}{exports.\+APP\+\_\+\+CHECK\+\_\+\+ERROR\+\_\+\+CODE\+\_\+\+MAPPING}} = exports.\+App\+Check\+Api\+Client = void 0}
+
+\Hypertarget{app-check-api-client-internal_8js_ae2475e10618961c050dcba04e8c42331}\index{app-\/check-\/api-\/client-\/internal.js@{app-\/check-\/api-\/client-\/internal.js}!strict@{strict}}
+\index{strict@{strict}!app-\/check-\/api-\/client-\/internal.js@{app-\/check-\/api-\/client-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{app-check-api-client-internal_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+
+firebase-\/admin v12.\+7.\+0 \Hypertarget{app-check-api-client-internal_8js_a022e926a40defc4294368e708a7e2372}\index{app-\/check-\/api-\/client-\/internal.js@{app-\/check-\/api-\/client-\/internal.js}!utils@{utils}}
+\index{utils@{utils}!app-\/check-\/api-\/client-\/internal.js@{app-\/check-\/api-\/client-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{utils}{utils}}
+{\footnotesize\ttfamily \label{app-check-api-client-internal_8js_a022e926a40defc4294368e708a7e2372} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} utils = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/index"{})}
+
+\Hypertarget{app-check-api-client-internal_8js_add6dc10e852e313f07c0d59bcf288b6a}\index{app-\/check-\/api-\/client-\/internal.js@{app-\/check-\/api-\/client-\/internal.js}!validator@{validator}}
+\index{validator@{validator}!app-\/check-\/api-\/client-\/internal.js@{app-\/check-\/api-\/client-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{validator}{validator}}
+{\footnotesize\ttfamily \label{app-check-api-client-internal_8js_add6dc10e852e313f07c0d59bcf288b6a} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} validator = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/validator"{})}
+

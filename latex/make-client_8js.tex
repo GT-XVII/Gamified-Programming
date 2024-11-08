@@ -1,0 +1,177 @@
+\doxysection{backend/node\+\_\+modules/@grpc/grpc-\/js/build/src/make-\/client.js File Reference}
+\hypertarget{make-client_8js}{}\label{make-client_8js}\index{backend/node\_modules/"@grpc/grpc-\/js/build/src/make-\/client.js@{backend/node\_modules/"@grpc/grpc-\/js/build/src/make-\/client.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{make-client_8js_ae919e29bea09fe83b1e7f418fbfb3a63}{is\+Prototype\+Polluted}} (key)
+\item 
+function \mbox{\hyperlink{make-client_8js_a96532a37e7f5e10d1cc7419ec1f4b2ce}{make\+Client\+Constructor}} (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a04d30fa6e159a438c5fe8d248cb41845}{methods}}, service\+Name, class\+Options)
+\item 
+function \mbox{\hyperlink{make-client_8js_aff3627331d819857410bbfabf0cd371b}{partial}} (\mbox{\hyperlink{writer_8js_a10238cf619a9073c096c996342cd720a}{fn}}, \mbox{\hyperlink{cjs_2src_2bucket_8js_a1fdc7709faf62dce60620fb3f9d3453c}{path}}, \mbox{\hyperlink{cookie_2index_8js_a72453e6e469378a513d2fd26e1f55365}{serialize}}, deserialize)
+\item 
+function \mbox{\hyperlink{make-client_8js_a93aaeab43f40510c064805e31a07e6cd}{is\+Protobuf\+Type\+Definition}} (\mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}})
+\item 
+function \mbox{\hyperlink{make-client_8js_ac2c3d18c707eb8d5727b33f14ac555bf}{load\+Package\+Definition}} (package\+Def)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{make-client_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{make-client_8js_ac2d7c929808c2a2294074cd1ee3f63d2}{load\+Package\+Definition}} = \mbox{\hyperlink{make-client_8js_af0b1b8d48157f2032b6547ce3f989367}{exports.\+make\+Client\+Constructor}} = void 0
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{make-client_8js_a3df0f8ecf55e1d2c65b490702ed96d13}{client\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./client"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{make-client_8js_af27a50d7b651c9159026a0fed1f09250}{requester\+Funcs}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{make-client_8js_af0b1b8d48157f2032b6547ce3f989367}{make\+Client\+Constructor}} = make\+Client\+Constructor
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{make-client_8js_a93aaeab43f40510c064805e31a07e6cd}\index{make-\/client.js@{make-\/client.js}!isProtobufTypeDefinition@{isProtobufTypeDefinition}}
+\index{isProtobufTypeDefinition@{isProtobufTypeDefinition}!make-\/client.js@{make-\/client.js}}
+\doxysubsubsection{\texorpdfstring{isProtobufTypeDefinition()}{isProtobufTypeDefinition()}}
+{\footnotesize\ttfamily \label{make-client_8js_a93aaeab43f40510c064805e31a07e6cd} 
+function is\+Protobuf\+Type\+Definition (\begin{DoxyParamCaption}\item[{}]{obj}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{make-client_8js_a93aaeab43f40510c064805e31a07e6cd_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{make-client_8js_ae919e29bea09fe83b1e7f418fbfb3a63}\index{make-\/client.js@{make-\/client.js}!isPrototypePolluted@{isPrototypePolluted}}
+\index{isPrototypePolluted@{isPrototypePolluted}!make-\/client.js@{make-\/client.js}}
+\doxysubsubsection{\texorpdfstring{isPrototypePolluted()}{isPrototypePolluted()}}
+{\footnotesize\ttfamily \label{make-client_8js_ae919e29bea09fe83b1e7f418fbfb3a63} 
+function is\+Prototype\+Polluted (\begin{DoxyParamCaption}\item[{}]{key}{}\end{DoxyParamCaption})}
+
+Returns true, if given key is included in the blacklisted keys. 
+\begin{DoxyParams}{Parameters}
+{\em key} & key for check, string. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{make-client_8js_ae919e29bea09fe83b1e7f418fbfb3a63_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{make-client_8js_ac2c3d18c707eb8d5727b33f14ac555bf}\index{make-\/client.js@{make-\/client.js}!loadPackageDefinition@{loadPackageDefinition}}
+\index{loadPackageDefinition@{loadPackageDefinition}!make-\/client.js@{make-\/client.js}}
+\doxysubsubsection{\texorpdfstring{loadPackageDefinition()}{loadPackageDefinition()}}
+{\footnotesize\ttfamily \label{make-client_8js_ac2c3d18c707eb8d5727b33f14ac555bf} 
+function load\+Package\+Definition (\begin{DoxyParamCaption}\item[{}]{package\+Def}{}\end{DoxyParamCaption})}
+
+Load a g\+RPC package definition as a g\+RPC object hierarchy. 
+\begin{DoxyParams}{Parameters}
+{\em package\+Def} & The package definition object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The resulting g\+RPC object. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{long_2index_8js_a33e3b5296f866a66acae6bd74f2b2316}{comp}}, \mbox{\hyperlink{make-client_8js_a93aaeab43f40510c064805e31a07e6cd}{is\+Protobuf\+Type\+Definition()}}, \mbox{\hyperlink{make-client_8js_ae919e29bea09fe83b1e7f418fbfb3a63}{is\+Prototype\+Polluted()}}, \mbox{\hyperlink{make-client_8js_af0b1b8d48157f2032b6547ce3f989367}{make\+Client\+Constructor}}, \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}, and \mbox{\hyperlink{lodash_2core_8js_a348c112a244660a2f280cda892658c24}{result}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{make-client_8js_ac2c3d18c707eb8d5727b33f14ac555bf_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{make-client_8js_a96532a37e7f5e10d1cc7419ec1f4b2ce}\index{make-\/client.js@{make-\/client.js}!makeClientConstructor@{makeClientConstructor}}
+\index{makeClientConstructor@{makeClientConstructor}!make-\/client.js@{make-\/client.js}}
+\doxysubsubsection{\texorpdfstring{makeClientConstructor()}{makeClientConstructor()}}
+{\footnotesize\ttfamily \label{make-client_8js_a96532a37e7f5e10d1cc7419ec1f4b2ce} 
+function make\+Client\+Constructor (\begin{DoxyParamCaption}\item[{}]{methods}{, }\item[{}]{service\+Name}{, }\item[{}]{class\+Options}{}\end{DoxyParamCaption})}
+
+Creates a constructor for a client with the given methods, as specified in the methods argument. The resulting class will have an instance method for each method in the service, which is a partial application of one of the \mbox{[}\doxylink{class_client}{Client}\mbox{]}{\ttfamily \doxylink{}{grpc.\+Client}} request methods, depending on {\ttfamily request\+Serialize} and {\ttfamily response\+Serialize}, with the {\ttfamily method}, {\ttfamily serialize}, and {\ttfamily deserialize} arguments predefined. 
+\begin{DoxyParams}{Parameters}
+{\em methods} & An object mapping method names to method attributes \\
+\hline
+{\em service\+Name} & The fully qualified name of the service \\
+\hline
+{\em class\+Options} & An options object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+New client constructor, which is a subclass of {\ttfamily \doxylink{}{grpc.\+Client}}, and has the same arguments as that constructor. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{make-client_8js_a3df0f8ecf55e1d2c65b490702ed96d13}{client\+\_\+1}}, \mbox{\hyperlink{make-client_8js_ae919e29bea09fe83b1e7f418fbfb3a63}{is\+Prototype\+Polluted()}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a04d30fa6e159a438c5fe8d248cb41845}{methods}}, \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}, \mbox{\hyperlink{__mapping_8js_ab3886336d51a271776fd12c1320f3fcd}{partial}}, \mbox{\hyperlink{make-client_8js_af27a50d7b651c9159026a0fed1f09250}{requester\+Funcs}}, and \mbox{\hyperlink{cookie_2index_8js_a72453e6e469378a513d2fd26e1f55365}{serialize}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{make-client_8js_a96532a37e7f5e10d1cc7419ec1f4b2ce_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{make-client_8js_aff3627331d819857410bbfabf0cd371b}\index{make-\/client.js@{make-\/client.js}!partial@{partial}}
+\index{partial@{partial}!make-\/client.js@{make-\/client.js}}
+\doxysubsubsection{\texorpdfstring{partial()}{partial()}}
+{\footnotesize\ttfamily \label{make-client_8js_aff3627331d819857410bbfabf0cd371b} 
+function partial (\begin{DoxyParamCaption}\item[{}]{fn}{, }\item[{}]{path}{, }\item[{}]{serialize}{, }\item[{}]{deserialize}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_aeda6958b2fc8494c5a17f91600065eb9}{args}}, \mbox{\hyperlink{writer_8js_a10238cf619a9073c096c996342cd720a}{fn}}, \mbox{\hyperlink{cjs_2src_2bucket_8js_a1fdc7709faf62dce60620fb3f9d3453c}{path}}, and \mbox{\hyperlink{cookie_2index_8js_a72453e6e469378a513d2fd26e1f55365}{serialize}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{make-client_8js_a3df0f8ecf55e1d2c65b490702ed96d13}\index{make-\/client.js@{make-\/client.js}!client\_1@{client\_1}}
+\index{client\_1@{client\_1}!make-\/client.js@{make-\/client.js}}
+\doxysubsubsection{\texorpdfstring{client\_1}{client\_1}}
+{\footnotesize\ttfamily \label{make-client_8js_a3df0f8ecf55e1d2c65b490702ed96d13} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} client\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./client"{})}
+
+\Hypertarget{make-client_8js_ac2d7c929808c2a2294074cd1ee3f63d2}\index{make-\/client.js@{make-\/client.js}!loadPackageDefinition@{loadPackageDefinition}}
+\index{loadPackageDefinition@{loadPackageDefinition}!make-\/client.js@{make-\/client.js}}
+\doxysubsubsection{\texorpdfstring{loadPackageDefinition}{loadPackageDefinition}}
+{\footnotesize\ttfamily \label{make-client_8js_ac2d7c929808c2a2294074cd1ee3f63d2} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} load\+Package\+Definition = \mbox{\hyperlink{make-client_8js_af0b1b8d48157f2032b6547ce3f989367}{exports.\+make\+Client\+Constructor}} = void 0}
+
+\Hypertarget{make-client_8js_af0b1b8d48157f2032b6547ce3f989367}\index{make-\/client.js@{make-\/client.js}!makeClientConstructor@{makeClientConstructor}}
+\index{makeClientConstructor@{makeClientConstructor}!make-\/client.js@{make-\/client.js}}
+\doxysubsubsection{\texorpdfstring{makeClientConstructor}{makeClientConstructor}}
+{\footnotesize\ttfamily \label{make-client_8js_af0b1b8d48157f2032b6547ce3f989367} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} make\+Client\+Constructor = make\+Client\+Constructor}
+
+\Hypertarget{make-client_8js_af27a50d7b651c9159026a0fed1f09250}\index{make-\/client.js@{make-\/client.js}!requesterFuncs@{requesterFuncs}}
+\index{requesterFuncs@{requesterFuncs}!make-\/client.js@{make-\/client.js}}
+\doxysubsubsection{\texorpdfstring{requesterFuncs}{requesterFuncs}}
+{\footnotesize\ttfamily \label{make-client_8js_af27a50d7b651c9159026a0fed1f09250} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} requester\+Funcs\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{unary_8js_a89bc8976a26320e7a20cf9d83d137768}{unary}}:\ \mbox{\hyperlink{make-client_8js_a3df0f8ecf55e1d2c65b490702ed96d13}{client\_1}}.Client.prototype.makeUnaryRequest,}
+\DoxyCodeLine{\ \ \ \ server\_stream:\ \mbox{\hyperlink{make-client_8js_a3df0f8ecf55e1d2c65b490702ed96d13}{client\_1}}.Client.prototype.makeServerStreamRequest,}
+\DoxyCodeLine{\ \ \ \ client\_stream:\ \mbox{\hyperlink{make-client_8js_a3df0f8ecf55e1d2c65b490702ed96d13}{client\_1}}.Client.prototype.makeClientStreamRequest,}
+\DoxyCodeLine{\ \ \ \ bidi:\ \mbox{\hyperlink{make-client_8js_a3df0f8ecf55e1d2c65b490702ed96d13}{client\_1}}.Client.prototype.makeBidiStreamRequest,}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Map with short names for each of the requester maker functions. Used in make\+Client\+Constructor \Hypertarget{make-client_8js_ae2475e10618961c050dcba04e8c42331}\index{make-\/client.js@{make-\/client.js}!strict@{strict}}
+\index{strict@{strict}!make-\/client.js@{make-\/client.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{make-client_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+

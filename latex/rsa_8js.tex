@@ -1,0 +1,872 @@
+\doxysection{backend/node\+\_\+modules/node-\/forge/lib/rsa.js File Reference}
+\hypertarget{rsa_8js}{}\label{rsa_8js}\index{backend/node\_modules/node-\/forge/lib/rsa.js@{backend/node\_modules/node-\/forge/lib/rsa.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{rsa_8js_a229fb956225e0ff7b21b52f1dbcffada}{if}} (typeof \mbox{\hyperlink{prime_8worker_8min_8js_aadd7f6bee64caef46a8c559f79d8f832}{Big\+Integer}}===\textquotesingle{}\mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}\textquotesingle{})
+\item 
+function \mbox{\hyperlink{rsa_8js_a163855fc645452feedf6189af8f3e8c4}{\+\_\+encode\+Pkcs1\+\_\+v1\+\_\+5}} (\mbox{\hyperlink{agent-base_2node__modules_2ms_2index_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m}}, key, \mbox{\hyperlink{lodash_8min_8js_a386d3a312ad935cf840c6321b9db68cf}{bt}})
+\item 
+function \mbox{\hyperlink{rsa_8js_a34e89fe3bcdbba5e525f35e1da3c547c}{\+\_\+decode\+Pkcs1\+\_\+v1\+\_\+5}} (em, key, pub, ml)
+\item 
+function \mbox{\hyperlink{rsa_8js_a4a8c982bb859e1df5a32b7459a21c3df}{\+\_\+generate\+Key\+Pair}} (\mbox{\hyperlink{asynckit_2lib_2state_8js_a7e1b0ba367facd663d59372bd204ea01}{state}}, options, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a622460feeccdab6d8f307936fc6b36fb}{callback}})
+\item 
+function \mbox{\hyperlink{rsa_8js_af84de8f86b5641864799fd615ecbb9d7}{\+\_\+bn\+To\+Bytes}} (\mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}})
+\item 
+function \mbox{\hyperlink{rsa_8js_a40b234d5eec9c10c7230a04cc6157154}{\+\_\+get\+Miller\+Rabin\+Tests}} (bits)
+\item 
+function \mbox{\hyperlink{rsa_8js_abbc4b306d343e2e383e785c71f0f86d4}{\+\_\+detect\+Node\+Crypto}} (\mbox{\hyperlink{writer_8js_a10238cf619a9073c096c996342cd720a}{fn}})
+\item 
+function \mbox{\hyperlink{rsa_8js_af292fa77d67144714d8e3eda48d23941}{\+\_\+detect\+Subtle\+Crypto}} (\mbox{\hyperlink{writer_8js_a10238cf619a9073c096c996342cd720a}{fn}})
+\item 
+function \mbox{\hyperlink{rsa_8js_a45af654141987071066579bd4aa00ddf}{\+\_\+detect\+Subtle\+Ms\+Crypto}} (\mbox{\hyperlink{writer_8js_a10238cf619a9073c096c996342cd720a}{fn}})
+\item 
+function \mbox{\hyperlink{rsa_8js_a17f2b1569ead36f0711b9872f68598ae}{\+\_\+int\+To\+Uint8\+Array}} (x)
+\item 
+function \mbox{\hyperlink{rsa_8js_ad06e22883b5a222d807eba495d8bc658}{\+\_\+private\+Key\+From\+Jwk}} (jwk)
+\item 
+function \mbox{\hyperlink{rsa_8js_aa1df1c2868a0724fa421200f39a6c527}{\+\_\+public\+Key\+From\+Jwk}} (jwk)
+\item 
+function \mbox{\hyperlink{rsa_8js_a1367985664ce4c908856c00845d09b26}{\+\_\+base64\+To\+Big\+Int}} (\mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a8de07c85b339a37a7668929dac4342a7}{b64}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{rsa_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./forge\textquotesingle{})
+\item 
+var \mbox{\hyperlink{rsa_8js_a64c9823b6989c7255ad46e120b932f84}{\+\_\+crypto}} = \mbox{\hyperlink{node-forge_2lib_2util_8js_a9453d121c87bf2ffe934862ee1c9733a}{forge.\+util.\+is\+Nodejs}} ? \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a3eca37c9aac9a17870baa116339724e3}{crypto}}\textquotesingle{}) \+: null
+\item 
+var \mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}} = forge.\+asn1
+\item 
+var \mbox{\hyperlink{rsa_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}} = forge.\+util
+\item 
+\mbox{\hyperlink{aes_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} \mbox{\hyperlink{rsa_8js_a09f30a96df6dedfab363359fcbd6ed8b}{pki}} = forge.\+pki \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} \{\}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{rsa_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} = \mbox{\hyperlink{kem_8js_a539167b1bd69eeea1deb53b7116fe05e}{forge.\+pki.\+rsa}} = \mbox{\hyperlink{kem_8js_a539167b1bd69eeea1deb53b7116fe05e}{forge.\+rsa}} = \mbox{\hyperlink{kem_8js_a539167b1bd69eeea1deb53b7116fe05e}{forge.\+rsa}} \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} \{\}
+\item 
+var \mbox{\hyperlink{rsa_8js_ab0fe8055be9f4315d2bb1d2cdecf1d16}{GCD\+\_\+30\+\_\+\+DELTA}} = \mbox{[}6, 4, 2, 4, 2, 4, 6, 2\mbox{]}
+\item 
+var \mbox{\hyperlink{rsa_8js_a4b3420499db04a7d84d0e27799bdec82}{private\+Key\+Validator}}
+\item 
+var \mbox{\hyperlink{rsa_8js_ab922118d15d076c865b57bb6dd0afed5}{rsa\+Private\+Key\+Validator}}
+\item 
+var \mbox{\hyperlink{rsa_8js_a57c450ae8cc8e5552c7edcb49f3900d4}{rsa\+Public\+Key\+Validator}}
+\item 
+var \mbox{\hyperlink{rsa_8js_a7689d173acf30fa1be06d0f41394bc85}{public\+Key\+Validator}}
+\item 
+var \mbox{\hyperlink{rsa_8js_a0412e2755e24354cb9186d5116a24398}{digest\+Info\+Validator}}
+\item 
+var \mbox{\hyperlink{rsa_8js_a80c9eb4be70eedf97e71b914fc0eecc3}{emsa\+Pkcs1v15encode}}
+\item 
+var \mbox{\hyperlink{rsa_8js_a378670fc2670a5e5d13f803685896d75}{\+\_\+mod\+Pow}}
+\item 
+\mbox{\hyperlink{ed25519_8js_a09f30a96df6dedfab363359fcbd6ed8b}{pki}} \mbox{\hyperlink{kem_8js_a539167b1bd69eeea1deb53b7116fe05e}{rsa}} \mbox{\hyperlink{rsa_8js_a3091daf0ed6b07319f329adcf28f3ad6}{encrypt}}
+\item 
+\mbox{\hyperlink{ed25519_8js_a09f30a96df6dedfab363359fcbd6ed8b}{pki}} \mbox{\hyperlink{kem_8js_a539167b1bd69eeea1deb53b7116fe05e}{rsa}} \mbox{\hyperlink{rsa_8js_aa219015c096650e81826a3578d0ac444}{decrypt}}
+\item 
+\mbox{\hyperlink{ed25519_8js_a09f30a96df6dedfab363359fcbd6ed8b}{pki}} \mbox{\hyperlink{kem_8js_a539167b1bd69eeea1deb53b7116fe05e}{rsa}} \mbox{\hyperlink{rsa_8js_a0e05c8c89164b14aa927f1ac877de4ef}{create\+Key\+Pair\+Generation\+State}}
+\item 
+\mbox{\hyperlink{ed25519_8js_a09f30a96df6dedfab363359fcbd6ed8b}{pki}} \mbox{\hyperlink{kem_8js_a539167b1bd69eeea1deb53b7116fe05e}{rsa}} \mbox{\hyperlink{rsa_8js_aad1bd49b29bf4207a4c123fa31352838}{step\+Key\+Pair\+Generation\+State}}
+\item 
+\mbox{\hyperlink{ed25519_8js_a09f30a96df6dedfab363359fcbd6ed8b}{pki}} \mbox{\hyperlink{kem_8js_a539167b1bd69eeea1deb53b7116fe05e}{rsa}} \mbox{\hyperlink{rsa_8js_a8d5753633b876e5d19868fdcb9af9244}{generate\+Key\+Pair}}
+\item 
+\mbox{\hyperlink{ed25519_8js_a09f30a96df6dedfab363359fcbd6ed8b}{pki}} \mbox{\hyperlink{rsa_8js_a19f8a81cdde2ca5863f4b8d7a3dd63af}{set\+Rsa\+Public\+Key}}
+\item 
+\mbox{\hyperlink{ed25519_8js_a09f30a96df6dedfab363359fcbd6ed8b}{pki}} \mbox{\hyperlink{rsa_8js_aed285307419bb7e2b425fb69df8770b8}{set\+Rsa\+Private\+Key}}
+\item 
+\mbox{\hyperlink{ed25519_8js_a09f30a96df6dedfab363359fcbd6ed8b}{pki}} \mbox{\hyperlink{rsa_8js_a6f2e7a3b90a2401153b31e53248a07cc}{wrap\+Rsa\+Private\+Key}}
+\item 
+\mbox{\hyperlink{ed25519_8js_a09f30a96df6dedfab363359fcbd6ed8b}{pki}} \mbox{\hyperlink{rsa_8js_af9e5c05921b91891795db2a203b4c8f9}{private\+Key\+From\+Asn1}}
+\item 
+\mbox{\hyperlink{ed25519_8js_a09f30a96df6dedfab363359fcbd6ed8b}{pki}} \mbox{\hyperlink{rsa_8js_a9bd4188bc5b964092e947bfdf2fef1c9}{private\+Key\+To\+Asn1}}
+\item 
+\mbox{\hyperlink{ed25519_8js_a09f30a96df6dedfab363359fcbd6ed8b}{pki}} \mbox{\hyperlink{rsa_8js_a30d27ed70cc2dd26aaf9f6de0f8678c3}{public\+Key\+From\+Asn1}}
+\item 
+\mbox{\hyperlink{ed25519_8js_a09f30a96df6dedfab363359fcbd6ed8b}{pki}} \mbox{\hyperlink{rsa_8js_aa14bde0b2c0f8314bb8ff0b487d74f3b}{public\+Key\+To\+Asn1}}
+\item 
+\mbox{\hyperlink{ed25519_8js_a09f30a96df6dedfab363359fcbd6ed8b}{pki}} \mbox{\hyperlink{rsa_8js_a033190028c1e8400850e088a4389b4e6}{public\+Key\+To\+RSAPublic\+Key}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{rsa_8js_a1367985664ce4c908856c00845d09b26}\index{rsa.js@{rsa.js}!\_base64ToBigInt@{\_base64ToBigInt}}
+\index{\_base64ToBigInt@{\_base64ToBigInt}!rsa.js@{rsa.js}}
+\doxysubsubsection{\texorpdfstring{\_base64ToBigInt()}{\_base64ToBigInt()}}
+{\footnotesize\ttfamily \label{rsa_8js_a1367985664ce4c908856c00845d09b26} 
+function \+\_\+base64\+To\+Big\+Int (\begin{DoxyParamCaption}\item[{}]{b64}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a8de07c85b339a37a7668929dac4342a7}{b64}}, \mbox{\hyperlink{prime_8worker_8min_8js_aadd7f6bee64caef46a8c559f79d8f832}{Big\+Integer}}, and \mbox{\hyperlink{rsa_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{rsa_8js_a1367985664ce4c908856c00845d09b26_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rsa_8js_af84de8f86b5641864799fd615ecbb9d7}\index{rsa.js@{rsa.js}!\_bnToBytes@{\_bnToBytes}}
+\index{\_bnToBytes@{\_bnToBytes}!rsa.js@{rsa.js}}
+\doxysubsubsection{\texorpdfstring{\_bnToBytes()}{\_bnToBytes()}}
+{\footnotesize\ttfamily \label{rsa_8js_af84de8f86b5641864799fd615ecbb9d7} 
+function \+\_\+bn\+To\+Bytes (\begin{DoxyParamCaption}\item[{}]{b}{}\end{DoxyParamCaption})}
+
+Converts a positive Big\+Integer into 2\textquotesingle{}s-\/complement big-\/endian bytes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & the big integer to convert.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the bytes. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}, \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}}, \mbox{\hyperlink{rsa_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}, and \mbox{\hyperlink{conversions_8js_ad69b853a65b1b99def2b5b90d9bd63e9}{hex}}.
+
+\Hypertarget{rsa_8js_a34e89fe3bcdbba5e525f35e1da3c547c}\index{rsa.js@{rsa.js}!\_decodePkcs1\_v1\_5@{\_decodePkcs1\_v1\_5}}
+\index{\_decodePkcs1\_v1\_5@{\_decodePkcs1\_v1\_5}!rsa.js@{rsa.js}}
+\doxysubsubsection{\texorpdfstring{\_decodePkcs1\_v1\_5()}{\_decodePkcs1\_v1\_5()}}
+{\footnotesize\ttfamily \label{rsa_8js_a34e89fe3bcdbba5e525f35e1da3c547c} 
+function \+\_\+decode\+Pkcs1\+\_\+v1\+\_\+5 (\begin{DoxyParamCaption}\item[{}]{em}{, }\item[{}]{key}{, }\item[{}]{pub}{, }\item[{}]{ml}{}\end{DoxyParamCaption})}
+
+Decodes a message using PKCS\#1 v1.\+5 padding.
+
+
+\begin{DoxyParams}{Parameters}
+{\em em} & the message to decode. \\
+\hline
+{\em key} & the RSA key to use. \\
+\hline
+{\em pub} & true if the key is a public key, false if it is private. \\
+\hline
+{\em ml} & the message length, if specified.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the decoded bytes. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{lodash_8min_8js_a386d3a312ad935cf840c6321b9db68cf}{bt}}, \mbox{\hyperlink{lodash_2core_8js_abd5bd02fb8d1063856d3085c821f7c12}{first}}, \mbox{\hyperlink{rsa_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}, \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}, \mbox{\hyperlink{ordered-map_8min_8js_aee3ae2d5bdb3d18f52a8134a79a88d14}{k}}, and \mbox{\hyperlink{longbits_8js_a0707beb1f42f9e4f667118eda3195ccd}{zero}}.
+
+\Hypertarget{rsa_8js_abbc4b306d343e2e383e785c71f0f86d4}\index{rsa.js@{rsa.js}!\_detectNodeCrypto@{\_detectNodeCrypto}}
+\index{\_detectNodeCrypto@{\_detectNodeCrypto}!rsa.js@{rsa.js}}
+\doxysubsubsection{\texorpdfstring{\_detectNodeCrypto()}{\_detectNodeCrypto()}}
+{\footnotesize\ttfamily \label{rsa_8js_abbc4b306d343e2e383e785c71f0f86d4} 
+function \+\_\+detect\+Node\+Crypto (\begin{DoxyParamCaption}\item[{}]{fn}{}\end{DoxyParamCaption})}
+
+Performs feature detection on the \doxylink{class_node}{Node} crypto interface.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fn} & the feature (function) to detect.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if detected, false if not. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{rsa_8js_a64c9823b6989c7255ad46e120b932f84}{\+\_\+crypto}}, \mbox{\hyperlink{writer_8js_a10238cf619a9073c096c996342cd720a}{fn}}, and \mbox{\hyperlink{rsa_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.
+
+\Hypertarget{rsa_8js_af292fa77d67144714d8e3eda48d23941}\index{rsa.js@{rsa.js}!\_detectSubtleCrypto@{\_detectSubtleCrypto}}
+\index{\_detectSubtleCrypto@{\_detectSubtleCrypto}!rsa.js@{rsa.js}}
+\doxysubsubsection{\texorpdfstring{\_detectSubtleCrypto()}{\_detectSubtleCrypto()}}
+{\footnotesize\ttfamily \label{rsa_8js_af292fa77d67144714d8e3eda48d23941} 
+function \+\_\+detect\+Subtle\+Crypto (\begin{DoxyParamCaption}\item[{}]{fn}{}\end{DoxyParamCaption})}
+
+Performs feature detection on the Subtle\+Crypto interface.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fn} & the feature (function) to detect.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if detected, false if not. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{writer_8js_a10238cf619a9073c096c996342cd720a}{fn}}, and \mbox{\hyperlink{rsa_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}}.
+
+\Hypertarget{rsa_8js_a45af654141987071066579bd4aa00ddf}\index{rsa.js@{rsa.js}!\_detectSubtleMsCrypto@{\_detectSubtleMsCrypto}}
+\index{\_detectSubtleMsCrypto@{\_detectSubtleMsCrypto}!rsa.js@{rsa.js}}
+\doxysubsubsection{\texorpdfstring{\_detectSubtleMsCrypto()}{\_detectSubtleMsCrypto()}}
+{\footnotesize\ttfamily \label{rsa_8js_a45af654141987071066579bd4aa00ddf} 
+function \+\_\+detect\+Subtle\+Ms\+Crypto (\begin{DoxyParamCaption}\item[{}]{fn}{}\end{DoxyParamCaption})}
+
+Performs feature detection on the deprecated Microsoft Internet Explorer outdated Subtle\+Crypto interface. This function should only be used after checking for the modern, standard Subtle\+Crypto interface.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fn} & the feature (function) to detect.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if detected, false if not. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{writer_8js_a10238cf619a9073c096c996342cd720a}{fn}}, and \mbox{\hyperlink{rsa_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}}.
+
+\Hypertarget{rsa_8js_a163855fc645452feedf6189af8f3e8c4}\index{rsa.js@{rsa.js}!\_encodePkcs1\_v1\_5@{\_encodePkcs1\_v1\_5}}
+\index{\_encodePkcs1\_v1\_5@{\_encodePkcs1\_v1\_5}!rsa.js@{rsa.js}}
+\doxysubsubsection{\texorpdfstring{\_encodePkcs1\_v1\_5()}{\_encodePkcs1\_v1\_5()}}
+{\footnotesize\ttfamily \label{rsa_8js_a163855fc645452feedf6189af8f3e8c4} 
+function \+\_\+encode\+Pkcs1\+\_\+v1\+\_\+5 (\begin{DoxyParamCaption}\item[{}]{m}{, }\item[{}]{key}{, }\item[{}]{bt}{}\end{DoxyParamCaption})}
+
+Encodes a message using PKCS\#1 v1.\+5 padding.
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & the message to encode. \\
+\hline
+{\em key} & the RSA key to use. \\
+\hline
+{\em bt} & the block type to use, i.\+e. either 0x01 (for signing) or 0x02 (for encryption).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the padded byte buffer. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{lodash_8min_8js_a386d3a312ad935cf840c6321b9db68cf}{bt}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}}, \mbox{\hyperlink{rsa_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}, \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}, \mbox{\hyperlink{ordered-map_8min_8js_aee3ae2d5bdb3d18f52a8134a79a88d14}{k}}, and \mbox{\hyperlink{agent-base_2node__modules_2ms_2index_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m}}.
+
+\Hypertarget{rsa_8js_a4a8c982bb859e1df5a32b7459a21c3df}\index{rsa.js@{rsa.js}!\_generateKeyPair@{\_generateKeyPair}}
+\index{\_generateKeyPair@{\_generateKeyPair}!rsa.js@{rsa.js}}
+\doxysubsubsection{\texorpdfstring{\_generateKeyPair()}{\_generateKeyPair()}}
+{\footnotesize\ttfamily \label{rsa_8js_a4a8c982bb859e1df5a32b7459a21c3df} 
+function \+\_\+generate\+Key\+Pair (\begin{DoxyParamCaption}\item[{}]{state}{, }\item[{}]{options}{, }\item[{}]{callback}{}\end{DoxyParamCaption})}
+
+Runs the key-\/generation algorithm asynchronously, either in the background via Web Workers, or using the main thread and set\+Immediate.
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & the key-\/pair generation state. \\
+\hline
+{\em \mbox{[}options\mbox{]}} & options for key-\/pair generation\+: worker\+Script the worker script URL. workers the number of web workers (if supported) to use, (default\+: 2, -\/1 to use estimated cores minus one). work\+Load the size of the work load, ie\+: number of possible prime numbers for each web worker to check per work assignment, (default\+: 100). \\
+\hline
+{\em \doxylink{database-compat_2dist_2index_8standalone_8js_a622460feeccdab6d8f307936fc6b36fb}{callback(err},keypair)} & called once the operation completes. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a622460feeccdab6d8f307936fc6b36fb}{callback}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7204a05867d40eea581f90e884991720}{finish}}, \mbox{\hyperlink{jose_2dist_2node_2cjs_2runtime_2generate_8js_ab274324e8887635f67efdf6dd2b0183f}{generate}}, \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}, and \mbox{\hyperlink{asynckit_2lib_2state_8js_a7e1b0ba367facd663d59372bd204ea01}{state()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{rsa_8js_a4a8c982bb859e1df5a32b7459a21c3df_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rsa_8js_a40b234d5eec9c10c7230a04cc6157154}\index{rsa.js@{rsa.js}!\_getMillerRabinTests@{\_getMillerRabinTests}}
+\index{\_getMillerRabinTests@{\_getMillerRabinTests}!rsa.js@{rsa.js}}
+\doxysubsubsection{\texorpdfstring{\_getMillerRabinTests()}{\_getMillerRabinTests()}}
+{\footnotesize\ttfamily \label{rsa_8js_a40b234d5eec9c10c7230a04cc6157154} 
+function \+\_\+get\+Miller\+Rabin\+Tests (\begin{DoxyParamCaption}\item[{}]{bits}{}\end{DoxyParamCaption})}
+
+Returns the required number of Miller-\/\+Rabin tests to generate a prime with an error probability of (1/2)\texorpdfstring{$^\wedge$}{\string^}80.
+
+See Handbook of Applied Cryptography Chapter 4, Table 4.\+4.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bits} & the bit size.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the required number of iterations. 
+\end{DoxyReturn}
+\Hypertarget{rsa_8js_a17f2b1569ead36f0711b9872f68598ae}\index{rsa.js@{rsa.js}!\_intToUint8Array@{\_intToUint8Array}}
+\index{\_intToUint8Array@{\_intToUint8Array}!rsa.js@{rsa.js}}
+\doxysubsubsection{\texorpdfstring{\_intToUint8Array()}{\_intToUint8Array()}}
+{\footnotesize\ttfamily \label{rsa_8js_a17f2b1569ead36f0711b9872f68598ae} 
+function \+\_\+int\+To\+Uint8\+Array (\begin{DoxyParamCaption}\item[{}]{x}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{cjs_2internal_2operators_2buffer_8js_a838d54b935df11eff7928ba8da636891}{buffer}}, \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}}, \mbox{\hyperlink{rsa_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}, \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}, and \mbox{\hyperlink{__clone_array_buffer_8js_a23efaf497399fa716c3e05b817cb7d0c}{Uint8\+Array}}.
+
+\Hypertarget{rsa_8js_ad06e22883b5a222d807eba495d8bc658}\index{rsa.js@{rsa.js}!\_privateKeyFromJwk@{\_privateKeyFromJwk}}
+\index{\_privateKeyFromJwk@{\_privateKeyFromJwk}!rsa.js@{rsa.js}}
+\doxysubsubsection{\texorpdfstring{\_privateKeyFromJwk()}{\_privateKeyFromJwk()}}
+{\footnotesize\ttfamily \label{rsa_8js_ad06e22883b5a222d807eba495d8bc658} 
+function \+\_\+private\+Key\+From\+Jwk (\begin{DoxyParamCaption}\item[{}]{jwk}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{rsa_8js_a1367985664ce4c908856c00845d09b26}{\+\_\+base64\+To\+Big\+Int()}}, and \mbox{\hyperlink{rsa_8js_a09f30a96df6dedfab363359fcbd6ed8b}{pki}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{rsa_8js_ad06e22883b5a222d807eba495d8bc658_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rsa_8js_aa1df1c2868a0724fa421200f39a6c527}\index{rsa.js@{rsa.js}!\_publicKeyFromJwk@{\_publicKeyFromJwk}}
+\index{\_publicKeyFromJwk@{\_publicKeyFromJwk}!rsa.js@{rsa.js}}
+\doxysubsubsection{\texorpdfstring{\_publicKeyFromJwk()}{\_publicKeyFromJwk()}}
+{\footnotesize\ttfamily \label{rsa_8js_aa1df1c2868a0724fa421200f39a6c527} 
+function \+\_\+public\+Key\+From\+Jwk (\begin{DoxyParamCaption}\item[{}]{jwk}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{rsa_8js_a1367985664ce4c908856c00845d09b26}{\+\_\+base64\+To\+Big\+Int()}}, and \mbox{\hyperlink{rsa_8js_a09f30a96df6dedfab363359fcbd6ed8b}{pki}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{rsa_8js_aa1df1c2868a0724fa421200f39a6c527_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{rsa_8js_a229fb956225e0ff7b21b52f1dbcffada}\index{rsa.js@{rsa.js}!if@{if}}
+\index{if@{if}!rsa.js@{rsa.js}}
+\doxysubsubsection{\texorpdfstring{if()}{if()}}
+{\footnotesize\ttfamily \label{rsa_8js_a229fb956225e0ff7b21b52f1dbcffada} 
+if (\begin{DoxyParamCaption}\item[{typeof}]{Big\+Integer}{ = {\ttfamily ==~\textquotesingle{}\mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}\textquotesingle{}}}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{prime_8worker_8min_8js_aadd7f6bee64caef46a8c559f79d8f832}{Big\+Integer}}, and \mbox{\hyperlink{rsa_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{rsa_8js_a64c9823b6989c7255ad46e120b932f84}\index{rsa.js@{rsa.js}!\_crypto@{\_crypto}}
+\index{\_crypto@{\_crypto}!rsa.js@{rsa.js}}
+\doxysubsubsection{\texorpdfstring{\_crypto}{\_crypto}}
+{\footnotesize\ttfamily \label{rsa_8js_a64c9823b6989c7255ad46e120b932f84} 
+var \+\_\+crypto = \mbox{\hyperlink{node-forge_2lib_2util_8js_a9453d121c87bf2ffe934862ee1c9733a}{forge.\+util.\+is\+Nodejs}} ? \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a3eca37c9aac9a17870baa116339724e3}{crypto}}\textquotesingle{}) \+: null}
+
+\Hypertarget{rsa_8js_a378670fc2670a5e5d13f803685896d75}\index{rsa.js@{rsa.js}!\_modPow@{\_modPow}}
+\index{\_modPow@{\_modPow}!rsa.js@{rsa.js}}
+\doxysubsubsection{\texorpdfstring{\_modPow}{\_modPow}}
+{\footnotesize\ttfamily \label{rsa_8js_a378670fc2670a5e5d13f803685896d75} 
+var \+\_\+mod\+Pow}
+
+Performs x\texorpdfstring{$^\wedge$}{\string^}c mod n (RSA encryption or decryption operation).
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the number to raise and mod. \\
+\hline
+{\em key} & the key to use. \\
+\hline
+{\em pub} & true if the key is public, false if private.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the result of x\texorpdfstring{$^\wedge$}{\string^}c mod n. 
+\end{DoxyReturn}
+\Hypertarget{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}\index{rsa.js@{rsa.js}!asn1@{asn1}}
+\index{asn1@{asn1}!rsa.js@{rsa.js}}
+\doxysubsubsection{\texorpdfstring{asn1}{asn1}}
+{\footnotesize\ttfamily \label{rsa_8js_a9c78fc6dc234df01559c22bf320e9785} 
+var asn1 = forge.\+asn1}
+
+\Hypertarget{rsa_8js_a0e05c8c89164b14aa927f1ac877de4ef}\index{rsa.js@{rsa.js}!createKeyPairGenerationState@{createKeyPairGenerationState}}
+\index{createKeyPairGenerationState@{createKeyPairGenerationState}!rsa.js@{rsa.js}}
+\doxysubsubsection{\texorpdfstring{createKeyPairGenerationState}{createKeyPairGenerationState}}
+{\footnotesize\ttfamily \label{rsa_8js_a0e05c8c89164b14aa927f1ac877de4ef} 
+\mbox{\hyperlink{ed25519_8js_a09f30a96df6dedfab363359fcbd6ed8b}{pki}} \mbox{\hyperlink{kem_8js_a539167b1bd69eeea1deb53b7116fe05e}{rsa}} create\+Key\+Pair\+Generation\+State}
+
+Creates an RSA key-\/pair generation state object. It is used to allow key-\/generation to be performed in steps. It also allows for a \doxylink{class_u_i}{UI} to display progress updates.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bits} & the size for the private key in bits, defaults to 2048. \\
+\hline
+{\em e} & the public exponent to use, defaults to 65537 (0x10001). \\
+\hline
+{\em \mbox{[}options\mbox{]}} & the options to use. prng a custom crypto-\/secure pseudo-\/random number generator to use, that must define "{}get\+Bytes\+Sync"{}. algorithm the algorithm to use (default\+: \textquotesingle{}PRIMEINC\textquotesingle{}).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the state object to use to generate the key-\/pair. 
+\end{DoxyReturn}
+\Hypertarget{rsa_8js_aa219015c096650e81826a3578d0ac444}\index{rsa.js@{rsa.js}!decrypt@{decrypt}}
+\index{decrypt@{decrypt}!rsa.js@{rsa.js}}
+\doxysubsubsection{\texorpdfstring{decrypt}{decrypt}}
+{\footnotesize\ttfamily \label{rsa_8js_aa219015c096650e81826a3578d0ac444} 
+\mbox{\hyperlink{ed25519_8js_a09f30a96df6dedfab363359fcbd6ed8b}{pki}} \mbox{\hyperlink{kem_8js_a539167b1bd69eeea1deb53b7116fe05e}{rsa}} decrypt}
+
+NOTE\+: THIS METHOD IS DEPRECATED, use \textquotesingle{}decrypt\textquotesingle{} on a private key object or \textquotesingle{}verify\textquotesingle{} on a public key object instead.
+
+Performs RSA decryption.
+
+The parameter ml controls whether to apply PKCS\#1 v1.\+5 padding or not. Set ml = false to disable padding removal completely (in order to handle e.\+g. EMSA-\/\+PSS later on) and simply pass back the RSA encryption block.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ed} & the encrypted data to decrypt in as a byte string. \\
+\hline
+{\em key} & the RSA key to use. \\
+\hline
+{\em pub} & true for a public key operation, false for private. \\
+\hline
+{\em ml} & the message length, if known, false to disable padding.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the decrypted message as a byte string. 
+\end{DoxyReturn}
+\Hypertarget{rsa_8js_a0412e2755e24354cb9186d5116a24398}\index{rsa.js@{rsa.js}!digestInfoValidator@{digestInfoValidator}}
+\index{digestInfoValidator@{digestInfoValidator}!rsa.js@{rsa.js}}
+\doxysubsubsection{\texorpdfstring{digestInfoValidator}{digestInfoValidator}}
+{\footnotesize\ttfamily \label{rsa_8js_a0412e2755e24354cb9186d5116a24398} 
+var digest\+Info\+Validator}
+
+\Hypertarget{rsa_8js_a80c9eb4be70eedf97e71b914fc0eecc3}\index{rsa.js@{rsa.js}!emsaPkcs1v15encode@{emsaPkcs1v15encode}}
+\index{emsaPkcs1v15encode@{emsaPkcs1v15encode}!rsa.js@{rsa.js}}
+\doxysubsubsection{\texorpdfstring{emsaPkcs1v15encode}{emsaPkcs1v15encode}}
+{\footnotesize\ttfamily \label{rsa_8js_a80c9eb4be70eedf97e71b914fc0eecc3} 
+var emsa\+Pkcs1v15encode}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{sha512_8js_a4a0380eac0cebce3ad3d5fb0f14d6dae}{md}})\ \{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ var\ oid;}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{sha512_8js_a4a0380eac0cebce3ad3d5fb0f14d6dae}{md}}.algorithm\ in\ \mbox{\hyperlink{rsa_8js_a09f30a96df6dedfab363359fcbd6ed8b}{pki}}.oids)\ \{}
+\DoxyCodeLine{\ \ \ \ oid\ =\ \mbox{\hyperlink{rsa_8js_a09f30a96df6dedfab363359fcbd6ed8b}{pki}}.oids[\mbox{\hyperlink{sha512_8js_a4a0380eac0cebce3ad3d5fb0f14d6dae}{md}}.algorithm];}
+\DoxyCodeLine{\ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\ \ \ \ var\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}}\ =\ \textcolor{keyword}{new}\ Error(\textcolor{stringliteral}{'Unknown\ message\ digest\ algorithm.'});}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}}.algorithm\ =\ \mbox{\hyperlink{sha512_8js_a4a0380eac0cebce3ad3d5fb0f14d6dae}{md}}.algorithm;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{throw}\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}};}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\ \ var\ oidBytes\ =\ \mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.oidToDer(oid).getBytes();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ var\ digestInfo\ =\ \mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.create(}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Class.UNIVERSAL,\ \mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Type.SEQUENCE,\ \textcolor{keyword}{true},\ []);}
+\DoxyCodeLine{\ \ var\ digestAlgorithm\ =\ \mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.create(}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Class.UNIVERSAL,\ \mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Type.SEQUENCE,\ \textcolor{keyword}{true},\ []);}
+\DoxyCodeLine{\ \ digestAlgorithm.value.push(\mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.create(}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Class.UNIVERSAL,\ \mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Type.OID,\ \textcolor{keyword}{false},\ oidBytes));}
+\DoxyCodeLine{\ \ digestAlgorithm.value.push(\mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.create(}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Class.UNIVERSAL,\ \mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Type.NULL,\ \textcolor{keyword}{false},\ \textcolor{stringliteral}{''}));}
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{browser_2runtime_2digest_8js_a54d3c9201937d07375b3cdef4258dc37}{digest}}\ =\ \mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.create(}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Class.UNIVERSAL,\ \mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Type.OCTETSTRING,}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{false},\ \mbox{\hyperlink{sha512_8js_a4a0380eac0cebce3ad3d5fb0f14d6dae}{md}}.digest().getBytes());}
+\DoxyCodeLine{\ \ digestInfo.value.push(digestAlgorithm);}
+\DoxyCodeLine{\ \ digestInfo.value.push(\mbox{\hyperlink{browser_2runtime_2digest_8js_a54d3c9201937d07375b3cdef4258dc37}{digest}});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.toDer(digestInfo).getBytes();}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Wrap digest in Digest\+Info object.
+
+This function implements EMSA-\/\+PKCS1-\/v1\+\_\+5-\/\+ENCODE as per RFC 3447.
+
+Digest\+Info \+::= SEQUENCE \{ digest\+Algorithm Digest\+Algorithm\+Identifier, digest Digest \}
+
+Digest\+Algorithm\+Identifier \+::= Algorithm\+Identifier Digest \+::= OCTET STRING
+
+
+\begin{DoxyParams}{Parameters}
+{\em md} & the message digest object with the hash to sign.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the encoded message (ready for RSA encrytion) 
+\end{DoxyReturn}
+\Hypertarget{rsa_8js_a3091daf0ed6b07319f329adcf28f3ad6}\index{rsa.js@{rsa.js}!encrypt@{encrypt}}
+\index{encrypt@{encrypt}!rsa.js@{rsa.js}}
+\doxysubsubsection{\texorpdfstring{encrypt}{encrypt}}
+{\footnotesize\ttfamily \label{rsa_8js_a3091daf0ed6b07319f329adcf28f3ad6} 
+\mbox{\hyperlink{ed25519_8js_a09f30a96df6dedfab363359fcbd6ed8b}{pki}} \mbox{\hyperlink{kem_8js_a539167b1bd69eeea1deb53b7116fe05e}{rsa}} encrypt}
+
+NOTE\+: THIS METHOD IS DEPRECATED, use \textquotesingle{}sign\textquotesingle{} on a private key object or \textquotesingle{}encrypt\textquotesingle{} on a public key object instead.
+
+Performs RSA encryption.
+
+The parameter bt controls whether to put padding bytes before the message passed in. Set bt to either true or false to disable padding completely (in order to handle e.\+g. EMSA-\/\+PSS encoding seperately before), signaling whether the encryption operation is a public key operation (i.\+e. encrypting data) or not, i.\+e. private key operation (data signing).
+
+For PKCS\#1 v1.\+5 padding pass in the block type to use, i.\+e. either 0x01 (for signing) or 0x02 (for encryption). The key operation mode (private or public) is derived from this flag in that case).
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & the message to encrypt as a byte string. \\
+\hline
+{\em key} & the RSA key to use. \\
+\hline
+{\em bt} & for PKCS\#1 v1.\+5 padding, the block type to use (0x01 for private key, 0x02 for public), to disable padding\+: true = public key, false = private key.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the encrypted bytes as a string. 
+\end{DoxyReturn}
+\Hypertarget{rsa_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\index{rsa.js@{rsa.js}!exports@{exports}}
+\index{exports@{exports}!rsa.js@{rsa.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \label{rsa_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports = \mbox{\hyperlink{kem_8js_a539167b1bd69eeea1deb53b7116fe05e}{forge.\+pki.\+rsa}} = \mbox{\hyperlink{kem_8js_a539167b1bd69eeea1deb53b7116fe05e}{forge.\+rsa}} = \mbox{\hyperlink{kem_8js_a539167b1bd69eeea1deb53b7116fe05e}{forge.\+rsa}} \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} \{\}}
+
+\Hypertarget{rsa_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}\index{rsa.js@{rsa.js}!forge@{forge}}
+\index{forge@{forge}!rsa.js@{rsa.js}}
+\doxysubsubsection{\texorpdfstring{forge}{forge}}
+{\footnotesize\ttfamily \label{rsa_8js_ab4dbef01e35b8e6d06087c0542ba9e2c} 
+var forge = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./forge\textquotesingle{})}
+
+Javascript implementation of basic RSA algorithms.
+
+\begin{DoxyAuthor}{Author}
+Dave Longley
+\end{DoxyAuthor}
+Copyright (c) 2010-\/2014 Digital Bazaar, Inc.
+
+The only algorithm currently supported for PKI is RSA.
+
+An RSA key is often stored in ASN.\+1 DER format. The Subject\+Public\+Key\+Info ASN.\+1 structure is composed of an algorithm of type Algorithm\+Identifier and a subject\+Public\+Key of type bit string.
+
+The Algorithm\+Identifier contains an Object Identifier (OID) and parameters for the algorithm, if any. In the case of RSA, there aren\textquotesingle{}t any.
+
+Subject\+Public\+Key\+Info \+::= SEQUENCE \{ algorithm Algorithm\+Identifier, subject\+Public\+Key BIT STRING \}
+
+Algorithm\+Identifer \+::= SEQUENCE \{ algorithm OBJECT IDENTIFIER, parameters ANY DEFINED BY algorithm OPTIONAL \}
+
+For an RSA public key, the subject\+Public\+Key is\+:
+
+RSAPublic\+Key \+::= SEQUENCE \{ modulus INTEGER, -- n public\+Exponent INTEGER -- e \}
+
+Private\+Key\+Info \+::= SEQUENCE \{ version Version, private\+Key\+Algorithm Private\+Key\+Algorithm\+Identifier, private\+Key Private\+Key, attributes \mbox{[}0\mbox{]} IMPLICIT Attributes OPTIONAL \}
+
+Version \+::= INTEGER Private\+Key\+Algorithm\+Identifier \+::= Algorithm\+Identifier Private\+Key \+::= OCTET STRING Attributes \+::= SET OF Attribute
+
+An RSA private key as the following structure\+:
+
+RSAPrivate\+Key \+::= SEQUENCE \{ version Version, modulus INTEGER, -- n public\+Exponent INTEGER, -- e private\+Exponent INTEGER, -- d prime1 INTEGER, -- p prime2 INTEGER, -- q exponent1 INTEGER, -- d mod (p-\/1) exponent2 INTEGER, -- d mod (q-\/1) coefficient INTEGER -- (inverse of q) mod p \}
+
+Version \+::= INTEGER
+
+The OID for the RSA key algorithm is\+: 1.\+2.\+840.\+113549.\+1.\+1.\+1 \Hypertarget{rsa_8js_ab0fe8055be9f4315d2bb1d2cdecf1d16}\index{rsa.js@{rsa.js}!GCD\_30\_DELTA@{GCD\_30\_DELTA}}
+\index{GCD\_30\_DELTA@{GCD\_30\_DELTA}!rsa.js@{rsa.js}}
+\doxysubsubsection{\texorpdfstring{GCD\_30\_DELTA}{GCD\_30\_DELTA}}
+{\footnotesize\ttfamily \label{rsa_8js_ab0fe8055be9f4315d2bb1d2cdecf1d16} 
+var GCD\+\_\+30\+\_\+\+DELTA = \mbox{[}6, 4, 2, 4, 2, 4, 6, 2\mbox{]}}
+
+\Hypertarget{rsa_8js_a8d5753633b876e5d19868fdcb9af9244}\index{rsa.js@{rsa.js}!generateKeyPair@{generateKeyPair}}
+\index{generateKeyPair@{generateKeyPair}!rsa.js@{rsa.js}}
+\doxysubsubsection{\texorpdfstring{generateKeyPair}{generateKeyPair}}
+{\footnotesize\ttfamily \label{rsa_8js_a8d5753633b876e5d19868fdcb9af9244} 
+\mbox{\hyperlink{ed25519_8js_a09f30a96df6dedfab363359fcbd6ed8b}{pki}} \mbox{\hyperlink{kem_8js_a539167b1bd69eeea1deb53b7116fe05e}{rsa}} generate\+Key\+Pair}
+
+Generates an RSA public-\/private key pair in a single call.
+
+To generate a key-\/pair in steps (to allow for progress updates and to prevent blocking or warnings in slow browsers) then use the key-\/pair generation state functions.
+
+To generate a key-\/pair asynchronously (either through web-\/workers, if available, or by breaking up the work on the main thread), pass a callback function.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}bits\mbox{]}} & the size for the private key in bits, defaults to 2048. \\
+\hline
+{\em \mbox{[}e\mbox{]}} & the public exponent to use, defaults to 65537. \\
+\hline
+{\em \mbox{[}options\mbox{]}} & options for key-\/pair generation, if given then \textquotesingle{}bits\textquotesingle{} and \textquotesingle{}e\textquotesingle{} must {\itshape not} be given\+: bits the size for the private key in bits, (default\+: 2048). e the public exponent to use, (default\+: 65537 (0x10001)). worker\+Script the worker script URL. workers the number of web workers (if supported) to use, (default\+: 2). work\+Load the size of the work load, ie\+: number of possible prime numbers for each web worker to check per work assignment, (default\+: 100). prng a custom crypto-\/secure pseudo-\/random number generator to use, that must define "{}get\+Bytes\+Sync"{}. Disables use of native APIs. algorithm the algorithm to use (default\+: \textquotesingle{}PRIMEINC\textquotesingle{}). \\
+\hline
+{\em \mbox{[}callback(err,keypair)\mbox{]}} & called once the operation completes.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an object with private\+Key and public\+Key properties. 
+\end{DoxyReturn}
+\Hypertarget{rsa_8js_a09f30a96df6dedfab363359fcbd6ed8b}\index{rsa.js@{rsa.js}!pki@{pki}}
+\index{pki@{pki}!rsa.js@{rsa.js}}
+\doxysubsubsection{\texorpdfstring{pki}{pki}}
+{\footnotesize\ttfamily \label{rsa_8js_a09f30a96df6dedfab363359fcbd6ed8b} 
+var pki = forge.\+pki \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} \{\}}
+
+\Hypertarget{rsa_8js_af9e5c05921b91891795db2a203b4c8f9}\index{rsa.js@{rsa.js}!privateKeyFromAsn1@{privateKeyFromAsn1}}
+\index{privateKeyFromAsn1@{privateKeyFromAsn1}!rsa.js@{rsa.js}}
+\doxysubsubsection{\texorpdfstring{privateKeyFromAsn1}{privateKeyFromAsn1}}
+{\footnotesize\ttfamily \label{rsa_8js_af9e5c05921b91891795db2a203b4c8f9} 
+\mbox{\hyperlink{ed25519_8js_a09f30a96df6dedfab363359fcbd6ed8b}{pki}} private\+Key\+From\+Asn1}
+
+Converts a private key from an ASN.\+1 object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & the ASN.\+1 representation of a Private\+Key\+Info containing an RSAPrivate\+Key or an RSAPrivate\+Key.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the private key. 
+\end{DoxyReturn}
+\Hypertarget{rsa_8js_a9bd4188bc5b964092e947bfdf2fef1c9}\index{rsa.js@{rsa.js}!privateKeyToAsn1@{privateKeyToAsn1}}
+\index{privateKeyToAsn1@{privateKeyToAsn1}!rsa.js@{rsa.js}}
+\doxysubsubsection{\texorpdfstring{privateKeyToAsn1}{privateKeyToAsn1}}
+{\footnotesize\ttfamily \label{rsa_8js_a9bd4188bc5b964092e947bfdf2fef1c9} 
+\mbox{\hyperlink{ed25519_8js_a09f30a96df6dedfab363359fcbd6ed8b}{pki}} private\+Key\+To\+Asn1}
+
+Converts a private key to an ASN.\+1 RSAPrivate\+Key.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & the private key.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the ASN.\+1 representation of an RSAPrivate\+Key. 
+\end{DoxyReturn}
+\Hypertarget{rsa_8js_a4b3420499db04a7d84d0e27799bdec82}\index{rsa.js@{rsa.js}!privateKeyValidator@{privateKeyValidator}}
+\index{privateKeyValidator@{privateKeyValidator}!rsa.js@{rsa.js}}
+\doxysubsubsection{\texorpdfstring{privateKeyValidator}{privateKeyValidator}}
+{\footnotesize\ttfamily \label{rsa_8js_a4b3420499db04a7d84d0e27799bdec82} 
+var private\+Key\+Validator}
+
+\Hypertarget{rsa_8js_a30d27ed70cc2dd26aaf9f6de0f8678c3}\index{rsa.js@{rsa.js}!publicKeyFromAsn1@{publicKeyFromAsn1}}
+\index{publicKeyFromAsn1@{publicKeyFromAsn1}!rsa.js@{rsa.js}}
+\doxysubsubsection{\texorpdfstring{publicKeyFromAsn1}{publicKeyFromAsn1}}
+{\footnotesize\ttfamily \label{rsa_8js_a30d27ed70cc2dd26aaf9f6de0f8678c3} 
+\mbox{\hyperlink{ed25519_8js_a09f30a96df6dedfab363359fcbd6ed8b}{pki}} public\+Key\+From\+Asn1}
+
+Converts a public key from an ASN.\+1 Subject\+Public\+Key\+Info or RSAPublic\+Key.
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & the asn1 representation of a Subject\+Public\+Key\+Info or RSAPublic\+Key.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the public key. 
+\end{DoxyReturn}
+\Hypertarget{rsa_8js_aa14bde0b2c0f8314bb8ff0b487d74f3b}\index{rsa.js@{rsa.js}!publicKeyToAsn1@{publicKeyToAsn1}}
+\index{publicKeyToAsn1@{publicKeyToAsn1}!rsa.js@{rsa.js}}
+\doxysubsubsection{\texorpdfstring{publicKeyToAsn1}{publicKeyToAsn1}}
+{\footnotesize\ttfamily \label{rsa_8js_aa14bde0b2c0f8314bb8ff0b487d74f3b} 
+\mbox{\hyperlink{ed25519_8js_a09f30a96df6dedfab363359fcbd6ed8b}{pki}} public\+Key\+To\+Asn1}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \mbox{\hyperlink{rsa_8js_a09f30a96df6dedfab363359fcbd6ed8b}{pki}}.publicKeyToSubjectPublicKeyInfo\ =\ \textcolor{keyword}{function}(key)\ \{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.create(\mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Class.UNIVERSAL,\ \mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Type.SEQUENCE,\ \textcolor{keyword}{true},\ [}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.create(\mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Class.UNIVERSAL,\ \mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Type.SEQUENCE,\ \textcolor{keyword}{true},\ [}
+\DoxyCodeLine{\ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.create(\mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Class.UNIVERSAL,\ \mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Type.OID,\ \textcolor{keyword}{false},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.oidToDer(\mbox{\hyperlink{rsa_8js_a09f30a96df6dedfab363359fcbd6ed8b}{pki}}.oids.rsaEncryption).getBytes()),}
+\DoxyCodeLine{\ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.create(\mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Class.UNIVERSAL,\ \mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Type.NULL,\ \textcolor{keyword}{false},\ \textcolor{stringliteral}{''})}
+\DoxyCodeLine{\ \ \ \ ]),}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.create(\mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Class.UNIVERSAL,\ \mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Type.BITSTRING,\ \textcolor{keyword}{false},\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \mbox{\hyperlink{rsa_8js_a09f30a96df6dedfab363359fcbd6ed8b}{pki}}.publicKeyToRSAPublicKey(key)}
+\DoxyCodeLine{\ \ \ \ ])}
+\DoxyCodeLine{\ \ ]);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Converts a public key to an ASN.\+1 Subject\+Public\+Key\+Info.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & the public key.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the asn1 representation of a Subject\+Public\+Key\+Info. 
+\end{DoxyReturn}
+\Hypertarget{rsa_8js_a033190028c1e8400850e088a4389b4e6}\index{rsa.js@{rsa.js}!publicKeyToRSAPublicKey@{publicKeyToRSAPublicKey}}
+\index{publicKeyToRSAPublicKey@{publicKeyToRSAPublicKey}!rsa.js@{rsa.js}}
+\doxysubsubsection{\texorpdfstring{publicKeyToRSAPublicKey}{publicKeyToRSAPublicKey}}
+{\footnotesize\ttfamily \label{rsa_8js_a033190028c1e8400850e088a4389b4e6} 
+\mbox{\hyperlink{ed25519_8js_a09f30a96df6dedfab363359fcbd6ed8b}{pki}} public\+Key\+To\+RSAPublic\+Key}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(key)\ \{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.create(\mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Class.UNIVERSAL,\ \mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Type.SEQUENCE,\ \textcolor{keyword}{true},\ [}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.create(\mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Class.UNIVERSAL,\ \mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Type.INTEGER,\ \textcolor{keyword}{false},}
+\DoxyCodeLine{\ \ \ \ \ \ \mbox{\hyperlink{rsa_8js_af84de8f86b5641864799fd615ecbb9d7}{\_bnToBytes}}(key.n)),}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.create(\mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Class.UNIVERSAL,\ \mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Type.INTEGER,\ \textcolor{keyword}{false},}
+\DoxyCodeLine{\ \ \ \ \ \ \mbox{\hyperlink{rsa_8js_af84de8f86b5641864799fd615ecbb9d7}{\_bnToBytes}}(key.e))}
+\DoxyCodeLine{\ \ ]);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Converts a public key to an ASN.\+1 RSAPublic\+Key.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & the public key.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the asn1 representation of a RSAPublic\+Key. 
+\end{DoxyReturn}
+\Hypertarget{rsa_8js_a7689d173acf30fa1be06d0f41394bc85}\index{rsa.js@{rsa.js}!publicKeyValidator@{publicKeyValidator}}
+\index{publicKeyValidator@{publicKeyValidator}!rsa.js@{rsa.js}}
+\doxysubsubsection{\texorpdfstring{publicKeyValidator}{publicKeyValidator}}
+{\footnotesize\ttfamily \label{rsa_8js_a7689d173acf30fa1be06d0f41394bc85} 
+var public\+Key\+Validator}
+
+\Hypertarget{rsa_8js_ab922118d15d076c865b57bb6dd0afed5}\index{rsa.js@{rsa.js}!rsaPrivateKeyValidator@{rsaPrivateKeyValidator}}
+\index{rsaPrivateKeyValidator@{rsaPrivateKeyValidator}!rsa.js@{rsa.js}}
+\doxysubsubsection{\texorpdfstring{rsaPrivateKeyValidator}{rsaPrivateKeyValidator}}
+{\footnotesize\ttfamily \label{rsa_8js_ab922118d15d076c865b57bb6dd0afed5} 
+var rsa\+Private\+Key\+Validator}
+
+\Hypertarget{rsa_8js_a57c450ae8cc8e5552c7edcb49f3900d4}\index{rsa.js@{rsa.js}!rsaPublicKeyValidator@{rsaPublicKeyValidator}}
+\index{rsaPublicKeyValidator@{rsaPublicKeyValidator}!rsa.js@{rsa.js}}
+\doxysubsubsection{\texorpdfstring{rsaPublicKeyValidator}{rsaPublicKeyValidator}}
+{\footnotesize\ttfamily \label{rsa_8js_a57c450ae8cc8e5552c7edcb49f3900d4} 
+var rsa\+Public\+Key\+Validator}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}:\ \textcolor{stringliteral}{'RSAPublicKey'},}
+\DoxyCodeLine{\ \ tagClass:\ \mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Class.UNIVERSAL,}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type}}:\ \mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Type.SEQUENCE,}
+\DoxyCodeLine{\ \ constructed:\ \textcolor{keyword}{true},}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}:\ [\{}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}:\ \textcolor{stringliteral}{'RSAPublicKey.modulus'},}
+\DoxyCodeLine{\ \ \ \ tagClass:\ \mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Class.UNIVERSAL,}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type}}:\ \mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Type.INTEGER,}
+\DoxyCodeLine{\ \ \ \ constructed:\ \textcolor{keyword}{false},}
+\DoxyCodeLine{\ \ \ \ capture:\ \textcolor{stringliteral}{'publicKeyModulus'}}
+\DoxyCodeLine{\ \ \},\ \{}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}:\ \textcolor{stringliteral}{'RSAPublicKey.exponent'},}
+\DoxyCodeLine{\ \ \ \ tagClass:\ \mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Class.UNIVERSAL,}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type}}:\ \mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Type.INTEGER,}
+\DoxyCodeLine{\ \ \ \ constructed:\ \textcolor{keyword}{false},}
+\DoxyCodeLine{\ \ \ \ capture:\ \textcolor{stringliteral}{'publicKeyExponent'}}
+\DoxyCodeLine{\ \ \}]}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{rsa_8js_aed285307419bb7e2b425fb69df8770b8}\index{rsa.js@{rsa.js}!setRsaPrivateKey@{setRsaPrivateKey}}
+\index{setRsaPrivateKey@{setRsaPrivateKey}!rsa.js@{rsa.js}}
+\doxysubsubsection{\texorpdfstring{setRsaPrivateKey}{setRsaPrivateKey}}
+{\footnotesize\ttfamily \label{rsa_8js_aed285307419bb7e2b425fb69df8770b8} 
+\mbox{\hyperlink{ed25519_8js_a09f30a96df6dedfab363359fcbd6ed8b}{pki}} set\+Rsa\+Private\+Key}
+
+Sets an RSA private key from Big\+Integers modulus, exponent, primes, prime exponents, and modular multiplicative inverse.
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & the modulus. \\
+\hline
+{\em e} & the public exponent. \\
+\hline
+{\em d} & the private exponent ((inverse of e) mod n). \\
+\hline
+{\em p} & the first prime. \\
+\hline
+{\em q} & the second prime. \\
+\hline
+{\em dP} & exponent1 (d mod (p-\/1)). \\
+\hline
+{\em dQ} & exponent2 (d mod (q-\/1)). \\
+\hline
+{\em q\+Inv} & ((inverse of q) mod p)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the private key. 
+\end{DoxyReturn}
+\Hypertarget{rsa_8js_a19f8a81cdde2ca5863f4b8d7a3dd63af}\index{rsa.js@{rsa.js}!setRsaPublicKey@{setRsaPublicKey}}
+\index{setRsaPublicKey@{setRsaPublicKey}!rsa.js@{rsa.js}}
+\doxysubsubsection{\texorpdfstring{setRsaPublicKey}{setRsaPublicKey}}
+{\footnotesize\ttfamily \label{rsa_8js_a19f8a81cdde2ca5863f4b8d7a3dd63af} 
+\mbox{\hyperlink{ed25519_8js_a09f30a96df6dedfab363359fcbd6ed8b}{pki}} set\+Rsa\+Public\+Key}
+
+Sets an RSA public key from Big\+Integers modulus and exponent.
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & the modulus. \\
+\hline
+{\em e} & the exponent.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the public key. 
+\end{DoxyReturn}
+\Hypertarget{rsa_8js_aad1bd49b29bf4207a4c123fa31352838}\index{rsa.js@{rsa.js}!stepKeyPairGenerationState@{stepKeyPairGenerationState}}
+\index{stepKeyPairGenerationState@{stepKeyPairGenerationState}!rsa.js@{rsa.js}}
+\doxysubsubsection{\texorpdfstring{stepKeyPairGenerationState}{stepKeyPairGenerationState}}
+{\footnotesize\ttfamily \label{rsa_8js_aad1bd49b29bf4207a4c123fa31352838} 
+\mbox{\hyperlink{ed25519_8js_a09f30a96df6dedfab363359fcbd6ed8b}{pki}} \mbox{\hyperlink{kem_8js_a539167b1bd69eeea1deb53b7116fe05e}{rsa}} step\+Key\+Pair\+Generation\+State}
+
+Attempts to runs the key-\/generation algorithm for at most n seconds (approximately) using the given state. When key-\/generation has completed, the keys will be stored in state.\+keys.
+
+To use this function to update a \doxylink{class_u_i}{UI} while generating a key or to prevent causing browser lockups/warnings, set "{}n"{} to a value other than 0. \doxylink{class_a}{A} simple pattern for generating a key and showing a progress indicator is\+:
+
+var state = pki.\+rsa.\+create\+Key\+Pair\+Generation\+State(2048); var step = function() \{ // step key-\/generation, run algorithm for 100 ms, repeat if(!forge.pki.\+rsa.\+step\+Key\+Pair\+Generation\+State(state, 100)) \{ set\+Timeout(step, 1); \} else \{ // key-\/generation complete // TODO\+: turn off progress indicator here // TODO\+: use the generated key-\/pair in "{}state.\+keys"{} \} \}; // TODO\+: turn on progress indicator here set\+Timeout(step, 0);
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & the state to use. \\
+\hline
+{\em n} & the maximum number of milliseconds to run the algorithm for, 0 to run the algorithm to completion.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the key-\/generation completed, false if not. 
+\end{DoxyReturn}
+\Hypertarget{rsa_8js_a8f5b2e09d5197e9d28f6032dff542d44}\index{rsa.js@{rsa.js}!util@{util}}
+\index{util@{util}!rsa.js@{rsa.js}}
+\doxysubsubsection{\texorpdfstring{util}{util}}
+{\footnotesize\ttfamily \label{rsa_8js_a8f5b2e09d5197e9d28f6032dff542d44} 
+var util = forge.\+util}
+
+\Hypertarget{rsa_8js_a6f2e7a3b90a2401153b31e53248a07cc}\index{rsa.js@{rsa.js}!wrapRsaPrivateKey@{wrapRsaPrivateKey}}
+\index{wrapRsaPrivateKey@{wrapRsaPrivateKey}!rsa.js@{rsa.js}}
+\doxysubsubsection{\texorpdfstring{wrapRsaPrivateKey}{wrapRsaPrivateKey}}
+{\footnotesize\ttfamily \label{rsa_8js_a6f2e7a3b90a2401153b31e53248a07cc} 
+\mbox{\hyperlink{ed25519_8js_a09f30a96df6dedfab363359fcbd6ed8b}{pki}} wrap\+Rsa\+Private\+Key}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(rsaKey)\ \{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.create(\mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Class.UNIVERSAL,\ \mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Type.SEQUENCE,\ \textcolor{keyword}{true},\ [}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.create(\mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Class.UNIVERSAL,\ \mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Type.INTEGER,\ \textcolor{keyword}{false},}
+\DoxyCodeLine{\ \ \ \ \ \ \mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.integerToDer(0).getBytes()),}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.create(\mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Class.UNIVERSAL,\ \mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Type.SEQUENCE,\ \textcolor{keyword}{true},\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.create(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Class.UNIVERSAL,\ \mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Type.OID,\ \textcolor{keyword}{false},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.oidToDer(\mbox{\hyperlink{rsa_8js_a09f30a96df6dedfab363359fcbd6ed8b}{pki}}.oids.rsaEncryption).getBytes()),}
+\DoxyCodeLine{\ \ \ \ \ \ \mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.create(\mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Class.UNIVERSAL,\ \mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Type.NULL,\ \textcolor{keyword}{false},\ \textcolor{stringliteral}{''})}
+\DoxyCodeLine{\ \ \ \ ]),}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.create(\mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Class.UNIVERSAL,\ \mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Type.OCTETSTRING,\ \textcolor{keyword}{false},}
+\DoxyCodeLine{\ \ \ \ \ \ \mbox{\hyperlink{rsa_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.toDer(rsaKey).getBytes())}
+\DoxyCodeLine{\ \ ]);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Wraps an RSAPrivate\+Key ASN.\+1 object in an ASN.\+1 Private\+Key\+Info object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em rsa\+Key} & the ASN.\+1 RSAPrivate\+Key.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the ASN.\+1 Private\+Key\+Info. 
+\end{DoxyReturn}

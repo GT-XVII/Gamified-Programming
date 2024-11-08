@@ -1,0 +1,108 @@
+\doxysection{Output\+Writer Class Reference}
+\hypertarget{class_output_writer}{}\label{class_output_writer}\index{OutputWriter@{OutputWriter}}
+
+
+Collaboration diagram for Output\+Writer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{class_output_writer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_output_writer_a7ee72ade765c67b559c1061081a76997}{constructor}} (\{ \mbox{\hyperlink{class_output_writer_ae2df86d84aec147ad5e8a34fda3824b0}{output\+Stream}}, \mbox{\hyperlink{class_output_writer_af53f1b1d572433b26e4ea8fcf5f7d4d6}{group}}, \mbox{\hyperlink{bin_2concurrently_8js_ab9427a0fd7fe157c6ce200c3667e6fc5}{commands}}, \})
+\item 
+\mbox{\hyperlink{class_output_writer_ad73e92bf6813b82f53332c653920628e}{write}} (\mbox{\hyperlink{yargs_2build_2lib_2command_8js_a375077f2439e51b3d30f204271589efb}{command}}, \mbox{\hyperlink{node-forge_2lib_2util_8js_ab492f69e70933f85fe6b3a8808d19852}{text}})
+\item 
+\mbox{\hyperlink{class_output_writer_a737aad2bb5721c8af550e78fd23bddc1}{flush\+Buffer}} (\mbox{\hyperlink{cookie_2index_8js_a0ac000318c33f03e412baff8df5b2513}{index}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_output_writer_ae2df86d84aec147ad5e8a34fda3824b0}{output\+Stream}}
+\item 
+\mbox{\hyperlink{class_output_writer_af53f1b1d572433b26e4ea8fcf5f7d4d6}{group}}
+\item 
+\mbox{\hyperlink{class_output_writer_a510fc5a08802eec29cf589baa6241d53}{buffers}}
+\item 
+\mbox{\hyperlink{class_output_writer_ad4576e3eb2cd395372d67bf1f0d3543c}{active\+Command\+Index}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class responsible for actually writing output onto a writable stream. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_output_writer_a7ee72ade765c67b559c1061081a76997}\index{OutputWriter@{OutputWriter}!constructor@{constructor}}
+\index{constructor@{constructor}!OutputWriter@{OutputWriter}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_output_writer_a7ee72ade765c67b559c1061081a76997} 
+Output\+Writer\+::constructor (\begin{DoxyParamCaption}\item[{}]{\{ output\+Stream, group, commands, \}}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{bin_2concurrently_8js_ab9427a0fd7fe157c6ce200c3667e6fc5}{commands}}, \mbox{\hyperlink{class_output_writer_af53f1b1d572433b26e4ea8fcf5f7d4d6}{group}}, and \mbox{\hyperlink{class_output_writer_ae2df86d84aec147ad5e8a34fda3824b0}{output\+Stream}}.
+
+\Hypertarget{class_output_writer_a737aad2bb5721c8af550e78fd23bddc1}\index{OutputWriter@{OutputWriter}!flushBuffer@{flushBuffer}}
+\index{flushBuffer@{flushBuffer}!OutputWriter@{OutputWriter}}
+\doxysubsubsection{\texorpdfstring{flushBuffer()}{flushBuffer()}}
+{\footnotesize\ttfamily \label{class_output_writer_a737aad2bb5721c8af550e78fd23bddc1} 
+Output\+Writer\+::flush\+Buffer (\begin{DoxyParamCaption}\item[{}]{index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{class_output_writer_a510fc5a08802eec29cf589baa6241d53}{buffers}}, \mbox{\hyperlink{cookie_2index_8js_a0ac000318c33f03e412baff8df5b2513}{index}}, \mbox{\hyperlink{class_output_writer_ae2df86d84aec147ad5e8a34fda3824b0}{output\+Stream}}, and \mbox{\hyperlink{uuidv4_8min_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}}.
+
+\Hypertarget{class_output_writer_ad73e92bf6813b82f53332c653920628e}\index{OutputWriter@{OutputWriter}!write@{write}}
+\index{write@{write}!OutputWriter@{OutputWriter}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily \label{class_output_writer_ad73e92bf6813b82f53332c653920628e} 
+Output\+Writer\+::write (\begin{DoxyParamCaption}\item[{}]{command}{, }\item[{}]{text}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{class_output_writer_a510fc5a08802eec29cf589baa6241d53}{buffers}}, \mbox{\hyperlink{yargs_2build_2lib_2command_8js_a375077f2439e51b3d30f204271589efb}{command()}}, \mbox{\hyperlink{class_output_writer_af53f1b1d572433b26e4ea8fcf5f7d4d6}{group}}, \mbox{\hyperlink{class_output_writer_ae2df86d84aec147ad5e8a34fda3824b0}{output\+Stream}}, and \mbox{\hyperlink{node-forge_2lib_2util_8js_ab492f69e70933f85fe6b3a8808d19852}{text}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_output_writer_ad73e92bf6813b82f53332c653920628e_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_output_writer_ad4576e3eb2cd395372d67bf1f0d3543c}\index{OutputWriter@{OutputWriter}!activeCommandIndex@{activeCommandIndex}}
+\index{activeCommandIndex@{activeCommandIndex}!OutputWriter@{OutputWriter}}
+\doxysubsubsection{\texorpdfstring{activeCommandIndex}{activeCommandIndex}}
+{\footnotesize\ttfamily \label{class_output_writer_ad4576e3eb2cd395372d67bf1f0d3543c} 
+Output\+Writer\+::active\+Command\+Index = 0}
+
+\Hypertarget{class_output_writer_a510fc5a08802eec29cf589baa6241d53}\index{OutputWriter@{OutputWriter}!buffers@{buffers}}
+\index{buffers@{buffers}!OutputWriter@{OutputWriter}}
+\doxysubsubsection{\texorpdfstring{buffers}{buffers}}
+{\footnotesize\ttfamily \label{class_output_writer_a510fc5a08802eec29cf589baa6241d53} 
+Output\+Writer\+::buffers}
+
+\Hypertarget{class_output_writer_af53f1b1d572433b26e4ea8fcf5f7d4d6}\index{OutputWriter@{OutputWriter}!group@{group}}
+\index{group@{group}!OutputWriter@{OutputWriter}}
+\doxysubsubsection{\texorpdfstring{group}{group}}
+{\footnotesize\ttfamily \label{class_output_writer_af53f1b1d572433b26e4ea8fcf5f7d4d6} 
+Output\+Writer\+::group}
+
+\Hypertarget{class_output_writer_ae2df86d84aec147ad5e8a34fda3824b0}\index{OutputWriter@{OutputWriter}!outputStream@{outputStream}}
+\index{outputStream@{outputStream}!OutputWriter@{OutputWriter}}
+\doxysubsubsection{\texorpdfstring{outputStream}{outputStream}}
+{\footnotesize\ttfamily \label{class_output_writer_ae2df86d84aec147ad5e8a34fda3824b0} 
+Output\+Writer\+::output\+Stream}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/concurrently/dist/src/\mbox{\hyperlink{output-writer_8js}{output-\/writer.\+js}}\end{DoxyCompactItemize}

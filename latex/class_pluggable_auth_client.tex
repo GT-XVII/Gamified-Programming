@@ -1,0 +1,125 @@
+\doxysection{Pluggable\+Auth\+Client Class Reference}
+\hypertarget{class_pluggable_auth_client}{}\label{class_pluggable_auth_client}\index{PluggableAuthClient@{PluggableAuthClient}}
+
+
+Inheritance diagram for Pluggable\+Auth\+Client\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{class_pluggable_auth_client__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Pluggable\+Auth\+Client\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{class_pluggable_auth_client__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pluggable_auth_client_a3717af56c17d41730e504d0a0c43524e}{constructor}} (options, additional\+Options)
+\item 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{class_pluggable_auth_client_acd99dad74ccc3ccbe74fbba7e4e92cdb}{retrieve\+Subject\+Token}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_pluggable_auth_client}{Pluggable\+Auth\+Client} enables the exchange of workload identity pool external credentials for Google access tokens by retrieving 3rd party tokens through a user supplied executable. These scripts/executables are completely independent of the Google Cloud \doxylink{class_auth}{Auth} libraries. These credentials plug into ADC and will call the specified executable to retrieve the 3rd party token to be exchanged for a Google access token.
+
+To use these credentials, the GOOGLE\+\_\+\+EXTERNAL\+\_\+\+ACCOUNT\+\_\+\+ALLOW\+\_\+\+EXECUTABLES environment variable must be set to \textquotesingle{}1\textquotesingle{}. This is for security reasons.
+
+Both OIDC and SAML are supported. The executable must adhere to a specific response format defined below.
+
+The executable must print out the 3rd party token to STDOUT in JSON format. When an output\+\_\+file is specified in the credential configuration, the executable must also handle writing the JSON response to this file.
+
+
+\begin{DoxyPre}
+OIDC response sample:
+\{
+  "{}version"{}: 1,
+  "{}success"{}: true,
+  "{}token\_type"{}: "{}urn:ietf:params:oauth:token-\/type:id\_token"{},
+  "{}id\_token"{}: "{}HEADER.PAYLOAD.SIGNATURE"{},
+  "{}expiration\_time"{}: 1620433341
+\}
+
+SAML2 response sample:
+\{
+  "{}version"{}: 1,
+  "{}success"{}: true,
+  "{}token\_type"{}: "{}urn:ietf:params:oauth:token-\/type:saml2"{},
+  "{}saml\_response"{}: "{}..."{},
+  "{}expiration\_time"{}: 1620433341
+\}
+
+Error response sample:
+\{
+  "{}version"{}: 1,
+  "{}success"{}: false,
+  "{}code"{}: "{}401"{},
+  "{}message"{}: "{}Error message."{}
+\}
+\end{DoxyPre}
+
+
+The "{}expiration\+\_\+time"{} field in the JSON response is only required for successful responses when an output file was specified in the credential configuration
+
+The auth libraries will populate certain environment variables that will be accessible by the executable, such as\+: GOOGLE\+\_\+\+EXTERNAL\+\_\+\+ACCOUNT\+\_\+\+AUDIENCE, GOOGLE\+\_\+\+EXTERNAL\+\_\+\+ACCOUNT\+\_\+\+TOKEN\+\_\+\+TYPE, GOOGLE\+\_\+\+EXTERNAL\+\_\+\+ACCOUNT\+\_\+\+INTERACTIVE, GOOGLE\+\_\+\+EXTERNAL\+\_\+\+ACCOUNT\+\_\+\+IMPERSONATED\+\_\+\+EMAIL, and GOOGLE\+\_\+\+EXTERNAL\+\_\+\+ACCOUNT\+\_\+\+OUTPUT\+\_\+\+FILE.
+
+Please see this repositories README for a complete executable request/response specification. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_pluggable_auth_client_a3717af56c17d41730e504d0a0c43524e}\index{PluggableAuthClient@{PluggableAuthClient}!constructor@{constructor}}
+\index{constructor@{constructor}!PluggableAuthClient@{PluggableAuthClient}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_pluggable_auth_client_a3717af56c17d41730e504d0a0c43524e} 
+Pluggable\+Auth\+Client\+::constructor (\begin{DoxyParamCaption}\item[{}]{options}{, }\item[{}]{additional\+Options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Instantiates a \doxylink{class_pluggable_auth_client}{Pluggable\+Auth\+Client} instance using the provided JSON object loaded from an external account credentials file. An error is thrown if the credential is not a valid pluggable auth credential. 
+\begin{DoxyParams}{Parameters}
+{\em options} & The external account options object typically loaded from the external account JSON credential file. \\
+\hline
+{\em additional\+Options} & {\bfseries{DEPRECATED, all options are available in the {\ttfamily options} parameter.}} Optional additional behavior customization options. These currently customize expiration threshold time and whether to retry on 401/403 API request errors. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{long_2index_8js_af6ba5df101e5630835a0a5d778844922}{and}}, \mbox{\hyperlink{yargs_2build_2lib_2command_8js_a375077f2439e51b3d30f204271589efb}{command()}}, \mbox{\hyperlink{pluggable-auth-client_8js_a257f93be66725dfb106b0144c1957b7a}{DEFAULT\+\_\+\+EXECUTABLE\+\_\+\+TIMEOUT\+\_\+\+MILLIS}}, \mbox{\hyperlink{pluggable-auth-client_8js_a49cb07fd8c893ee17314642c824b793f}{MAXIMUM\+\_\+\+EXECUTABLE\+\_\+\+TIMEOUT\+\_\+\+MILLIS}}, \mbox{\hyperlink{pluggable-auth-client_8js_ae56e2dc9c1d7545b46de470549f4308a}{MINIMUM\+\_\+\+EXECUTABLE\+\_\+\+TIMEOUT\+\_\+\+MILLIS}}, \mbox{\hyperlink{pluggable-auth-client_8js_ae9f4fc876f4040900f7641f79f5d9435}{pluggable\+\_\+auth\+\_\+handler\+\_\+1}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_pluggable_auth_client_a3717af56c17d41730e504d0a0c43524e_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_pluggable_auth_client_acd99dad74ccc3ccbe74fbba7e4e92cdb}\index{PluggableAuthClient@{PluggableAuthClient}!retrieveSubjectToken@{retrieveSubjectToken}}
+\index{retrieveSubjectToken@{retrieveSubjectToken}!PluggableAuthClient@{PluggableAuthClient}}
+\doxysubsubsection{\texorpdfstring{retrieveSubjectToken()}{retrieveSubjectToken()}}
+{\footnotesize\ttfamily \label{class_pluggable_auth_client_acd99dad74ccc3ccbe74fbba7e4e92cdb} 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} Pluggable\+Auth\+Client\+::retrieve\+Subject\+Token (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Triggered when an external subject token is needed to be exchanged for a GCP access token via GCP STS endpoint. This uses the {\ttfamily options.\+credential\+\_\+source} object to figure out how to retrieve the token using the current environment. In this case, this calls a user provided executable which returns the subject token. The logic is summarized as\+:
+\begin{DoxyEnumerate}
+\item Validated that the executable is allowed to run. The GOOGLE\+\_\+\+EXTERNAL\+\_\+\+ACCOUNT\+\_\+\+ALLOW\+\_\+\+EXECUTABLES environment must be set to 1 for security reasons.
+\item If an output file is specified by the user, check the file location for a response. If the file exists and contains a valid response, return the subject token from the file.
+\item Call the provided executable and return response. \begin{DoxyReturn}{Returns}
+\doxylink{class_a}{A} promise that resolves with the external subject token. 
+\end{DoxyReturn}
+
+\end{DoxyEnumerate}
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{pluggable-auth-client_8js_af6038e8f5fc75e21bdf13e594865d699}{executable\+\_\+response\+\_\+1}}, \mbox{\hyperlink{pluggable-auth-client_8js_a30d96a53177315b88a34ad01fb6e9382}{Executable\+Error}}, \mbox{\hyperlink{pluggable-auth-client_8js_a9b633cffc93078e21e3686dbfee6ea8c}{GOOGLE\+\_\+\+EXTERNAL\+\_\+\+ACCOUNT\+\_\+\+ALLOW\+\_\+\+EXECUTABLES}}, \mbox{\hyperlink{express_2lib_2request_8js_a5e3afd97276cc403924d1a449a83ea84}{is}}, \mbox{\hyperlink{__get_tag_8js_aa38772edcc6ff00766e19b36ce8073a8}{Map}}, \mbox{\hyperlink{pluggable-auth-client_8js_a080bf7529b3373d6511c00fa2724922d}{MAXIMUM\+\_\+\+EXECUTABLE\+\_\+\+VERSION}}, \mbox{\hyperlink{long_2index_8js_ad7dc44f0ebdb746f4a5b0612ae9315cb}{not}}, \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}, \mbox{\hyperlink{ipaddr_8min_8js_abcedab16429ea0641c6596f556f2e102}{process}}, \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}, \mbox{\hyperlink{tls_8js_a7d6373cb18cdb0a47adabb3527c5571f}{Version}}, and \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a265a39dcf2f0b7c6b96574362aa01ad9}{version}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/google-\/auth-\/library/build/src/auth/\mbox{\hyperlink{pluggable-auth-client_8js}{pluggable-\/auth-\/client.\+js}}\end{DoxyCompactItemize}

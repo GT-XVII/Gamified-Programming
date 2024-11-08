@@ -1,0 +1,10 @@
+<map id="compoundWriteRemoveWrite" name="compoundWriteRemoveWrite">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,196,56"/>
+<area shape="rect" id="Node000002" href="$class_compound_write.html#abbce8975c273c15b3f6a8a0cdc668b0f" title=" " alt="" coords="393,5,551,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="163,27,243,16,377,12,377,17,244,21,164,33"/>
+<area shape="rect" id="Node000003" href="$database_2dist_2index_8cjs_8js.html#a43414a334079e9b1d3f0f72536d276de" title=" " alt="" coords="244,31,345,56"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="196,41,228,41,228,46,196,46"/>
+<area shape="rect" id="Node000004" href="$database_2dist_2index_8cjs_8js.html#a13685d947fd1cec360a07a75e0be533c" title=" " alt="" coords="247,80,342,106"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="155,54,232,74,231,80,153,60"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="345,34,377,29,378,34,346,39"/>
+</map>

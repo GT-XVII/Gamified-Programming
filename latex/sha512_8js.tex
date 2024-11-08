@@ -1,0 +1,187 @@
+\doxysection{backend/node\+\_\+modules/node-\/forge/lib/sha512.js File Reference}
+\hypertarget{sha512_8js}{}\label{sha512_8js}\index{backend/node\_modules/node-\/forge/lib/sha512.js@{backend/node\_modules/node-\/forge/lib/sha512.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{sha512_8js_a4e3debd0edcb1c7db91fbf44bbc177df}{\+\_\+init}} ()
+\item 
+function \mbox{\hyperlink{sha512_8js_ac4c90659855a280e3f8217530c0857e3}{\+\_\+update}} (\mbox{\hyperlink{ordered-map_8min_8js_ad9a7d92cb87932d25187fdec3ba1b621}{s}}, \mbox{\hyperlink{ordered-map_8min_8js_a9721a992655f700bdc2e91ba68b71e26}{w}}, \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{sha512_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./forge\textquotesingle{})
+\item 
+var \mbox{\hyperlink{sha512_8js_a2b2843e87457d65a4e21c34e962e92bd}{sha512}} = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{module.\+exports}} = forge.\+sha512 = forge.\+sha512 \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} \{\}
+\item 
+var \mbox{\hyperlink{sha512_8js_ac4f6cb75dfd24e120ba5367e7d8d3512}{sha384}} = forge.\+sha384 = forge.\+sha512.\+sha384 = forge.\+sha512.\+sha384 \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} \{\}
+\item 
+\mbox{\hyperlink{sha512_8js_ac4f6cb75dfd24e120ba5367e7d8d3512}{sha384}} \mbox{\hyperlink{sha512_8js_aabf899d361ca489a009b093ae9a449b6}{create}}
+\item 
+\mbox{\hyperlink{aes_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} \mbox{\hyperlink{sha512_8js_a2b2843e87457d65a4e21c34e962e92bd}{sha512}} \mbox{\hyperlink{sha512_8js_ab0c07feded9404c1501dee8a554d0e3b}{sha256}}
+\item 
+\mbox{\hyperlink{aes_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} \mbox{\hyperlink{sha512_8js_a4a0380eac0cebce3ad3d5fb0f14d6dae}{md}} \mbox{[}\textquotesingle{}\mbox{\hyperlink{sha512_8js_a2b2843e87457d65a4e21c34e962e92bd}{sha512}}/256\textquotesingle{}\mbox{]}
+\item 
+\mbox{\hyperlink{aes_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} \mbox{\hyperlink{sha512_8js_a2b2843e87457d65a4e21c34e962e92bd}{sha512}} \mbox{\hyperlink{sha512_8js_a58feb1f63247af3b0ca79467fe9d8174}{sha224}}
+\item 
+var \mbox{\hyperlink{sha512_8js_a409d4de023883e2f1bb7288619b2b555}{\+\_\+padding}} = null
+\item 
+var \mbox{\hyperlink{sha512_8js_a873a4d26693c49f635eeefcd1769b23c}{\+\_\+initialized}} = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a5df37b7f02e5cdc7d9412b7f872b8e01}{false}}
+\item 
+var \mbox{\hyperlink{sha512_8js_a1c96261ce1294c813060c5ab0c08a3ed}{\+\_\+k}} = null
+\item 
+var \mbox{\hyperlink{sha512_8js_a1d7e25b072ae45c9dca5416f1bae2873}{\+\_\+states}} = null
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{sha512_8js_a4e3debd0edcb1c7db91fbf44bbc177df}\index{sha512.js@{sha512.js}!\_init@{\_init}}
+\index{\_init@{\_init}!sha512.js@{sha512.js}}
+\doxysubsubsection{\texorpdfstring{\_init()}{\_init()}}
+{\footnotesize\ttfamily \label{sha512_8js_a4e3debd0edcb1c7db91fbf44bbc177df} 
+function \+\_\+init (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Initializes the constant tables. 
+
+References \mbox{\hyperlink{sha512_8js_a873a4d26693c49f635eeefcd1769b23c}{\+\_\+initialized}}, \mbox{\hyperlink{sha512_8js_a1c96261ce1294c813060c5ab0c08a3ed}{\+\_\+k}}, \mbox{\hyperlink{sha512_8js_a409d4de023883e2f1bb7288619b2b555}{\+\_\+padding}}, \mbox{\hyperlink{sha512_8js_a1d7e25b072ae45c9dca5416f1bae2873}{\+\_\+states}}, and \mbox{\hyperlink{sha512_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.
+
+\Hypertarget{sha512_8js_ac4c90659855a280e3f8217530c0857e3}\index{sha512.js@{sha512.js}!\_update@{\_update}}
+\index{\_update@{\_update}!sha512.js@{sha512.js}}
+\doxysubsubsection{\texorpdfstring{\_update()}{\_update()}}
+{\footnotesize\ttfamily \label{sha512_8js_ac4c90659855a280e3f8217530c0857e3} 
+function \+\_\+update (\begin{DoxyParamCaption}\item[{}]{s}{, }\item[{}]{w}{, }\item[{}]{bytes}{}\end{DoxyParamCaption})}
+
+Updates a SHA-\/512 state with the given byte buffer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & the SHA-\/512 state to update. \\
+\hline
+{\em w} & the array to use to store words. \\
+\hline
+{\em bytes} & the byte buffer to update with. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{sha512_8js_a1c96261ce1294c813060c5ab0c08a3ed}{\+\_\+k}}, \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}}, \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}, \mbox{\hyperlink{ordered-map_8min_8js_ad9a7d92cb87932d25187fdec3ba1b621}{s}}, and \mbox{\hyperlink{ordered-map_8min_8js_a9721a992655f700bdc2e91ba68b71e26}{w}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{sha512_8js_a873a4d26693c49f635eeefcd1769b23c}\index{sha512.js@{sha512.js}!\_initialized@{\_initialized}}
+\index{\_initialized@{\_initialized}!sha512.js@{sha512.js}}
+\doxysubsubsection{\texorpdfstring{\_initialized}{\_initialized}}
+{\footnotesize\ttfamily \label{sha512_8js_a873a4d26693c49f635eeefcd1769b23c} 
+var \+\_\+initialized = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a5df37b7f02e5cdc7d9412b7f872b8e01}{false}}}
+
+\Hypertarget{sha512_8js_a1c96261ce1294c813060c5ab0c08a3ed}\index{sha512.js@{sha512.js}!\_k@{\_k}}
+\index{\_k@{\_k}!sha512.js@{sha512.js}}
+\doxysubsubsection{\texorpdfstring{\_k}{\_k}}
+{\footnotesize\ttfamily \label{sha512_8js_a1c96261ce1294c813060c5ab0c08a3ed} 
+var \+\_\+k = null}
+
+\Hypertarget{sha512_8js_a409d4de023883e2f1bb7288619b2b555}\index{sha512.js@{sha512.js}!\_padding@{\_padding}}
+\index{\_padding@{\_padding}!sha512.js@{sha512.js}}
+\doxysubsubsection{\texorpdfstring{\_padding}{\_padding}}
+{\footnotesize\ttfamily \label{sha512_8js_a409d4de023883e2f1bb7288619b2b555} 
+var \+\_\+padding = null}
+
+\Hypertarget{sha512_8js_a1d7e25b072ae45c9dca5416f1bae2873}\index{sha512.js@{sha512.js}!\_states@{\_states}}
+\index{\_states@{\_states}!sha512.js@{sha512.js}}
+\doxysubsubsection{\texorpdfstring{\_states}{\_states}}
+{\footnotesize\ttfamily \label{sha512_8js_a1d7e25b072ae45c9dca5416f1bae2873} 
+var \+\_\+states = null}
+
+\Hypertarget{sha512_8js_aabf899d361ca489a009b093ae9a449b6}\index{sha512.js@{sha512.js}!create@{create}}
+\index{create@{create}!sha512.js@{sha512.js}}
+\doxysubsubsection{\texorpdfstring{create}{create}}
+{\footnotesize\ttfamily \label{sha512_8js_aabf899d361ca489a009b093ae9a449b6} 
+\mbox{\hyperlink{sha512_8js_a2b2843e87457d65a4e21c34e962e92bd}{sha512}} create}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}()\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{sha512_8js_a2b2843e87457d65a4e21c34e962e92bd}{sha512}}.create(\textcolor{stringliteral}{'SHA-\/384'});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Creates a SHA-\/2 message digest object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em algorithm} & the algorithm to use (SHA-\/512, SHA-\/384, SHA-\/512/224, SHA-\/512/256).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a message digest object. 
+\end{DoxyReturn}
+\Hypertarget{sha512_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}\index{sha512.js@{sha512.js}!forge@{forge}}
+\index{forge@{forge}!sha512.js@{sha512.js}}
+\doxysubsubsection{\texorpdfstring{forge}{forge}}
+{\footnotesize\ttfamily \label{sha512_8js_ab4dbef01e35b8e6d06087c0542ba9e2c} 
+var forge = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./forge\textquotesingle{})}
+
+Secure Hash Algorithm with a 1024-\/bit block size implementation.
+
+This includes\+: SHA-\/512, SHA-\/384, SHA-\/512/224, and SHA-\/512/256. For SHA-\/256 (block size 512 bits), see \doxylink{sha256_8js}{sha256.\+js}.
+
+See FIPS 180-\/4 for details.
+
+\begin{DoxyAuthor}{Author}
+Dave Longley
+\end{DoxyAuthor}
+Copyright (c) 2014-\/2015 Digital Bazaar, Inc. \Hypertarget{sha512_8js_a4a0380eac0cebce3ad3d5fb0f14d6dae}\index{sha512.js@{sha512.js}!md@{md}}
+\index{md@{md}!sha512.js@{sha512.js}}
+\doxysubsubsection{\texorpdfstring{md}{md}}
+{\footnotesize\ttfamily \label{sha512_8js_a4a0380eac0cebce3ad3d5fb0f14d6dae} 
+\mbox{\hyperlink{aes_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} md}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \mbox{\hyperlink{sha512_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.md.algorithms[\textcolor{stringliteral}{'sha512/256'}]\ =}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{sha512_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.sha512.sha256}
+
+\end{DoxyCode}
+\Hypertarget{sha512_8js_a58feb1f63247af3b0ca79467fe9d8174}\index{sha512.js@{sha512.js}!sha224@{sha224}}
+\index{sha224@{sha224}!sha512.js@{sha512.js}}
+\doxysubsubsection{\texorpdfstring{sha224}{sha224}}
+{\footnotesize\ttfamily \label{sha512_8js_a58feb1f63247af3b0ca79467fe9d8174} 
+\mbox{\hyperlink{aes_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} \mbox{\hyperlink{sha512_8js_a2b2843e87457d65a4e21c34e962e92bd}{sha512}} sha224}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \mbox{\hyperlink{sha512_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.sha512.sha224\ ||\ \{}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{sha512_8js_aabf899d361ca489a009b093ae9a449b6}{create}}:\ \textcolor{keyword}{function}()\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{sha512_8js_a2b2843e87457d65a4e21c34e962e92bd}{sha512}}.create(\textcolor{stringliteral}{'SHA-\/512/224'});}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{sha512_8js_ab0c07feded9404c1501dee8a554d0e3b}\index{sha512.js@{sha512.js}!sha256@{sha256}}
+\index{sha256@{sha256}!sha512.js@{sha512.js}}
+\doxysubsubsection{\texorpdfstring{sha256}{sha256}}
+{\footnotesize\ttfamily \label{sha512_8js_ab0c07feded9404c1501dee8a554d0e3b} 
+\mbox{\hyperlink{aes_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} \mbox{\hyperlink{sha512_8js_a2b2843e87457d65a4e21c34e962e92bd}{sha512}} sha256}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \mbox{\hyperlink{sha512_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.sha512.sha256\ ||\ \{}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{sha512_8js_aabf899d361ca489a009b093ae9a449b6}{create}}:\ \textcolor{keyword}{function}()\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{sha512_8js_a2b2843e87457d65a4e21c34e962e92bd}{sha512}}.create(\textcolor{stringliteral}{'SHA-\/512/256'});}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{sha512_8js_ac4f6cb75dfd24e120ba5367e7d8d3512}\index{sha512.js@{sha512.js}!sha384@{sha384}}
+\index{sha384@{sha384}!sha512.js@{sha512.js}}
+\doxysubsubsection{\texorpdfstring{sha384}{sha384}}
+{\footnotesize\ttfamily \label{sha512_8js_ac4f6cb75dfd24e120ba5367e7d8d3512} 
+\mbox{\hyperlink{aes_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} \mbox{\hyperlink{sha512_8js_a4a0380eac0cebce3ad3d5fb0f14d6dae}{md}} sha384 = forge.\+sha384 = forge.\+sha512.\+sha384 = forge.\+sha512.\+sha384 \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} \{\}}
+
+\Hypertarget{sha512_8js_a2b2843e87457d65a4e21c34e962e92bd}\index{sha512.js@{sha512.js}!sha512@{sha512}}
+\index{sha512@{sha512}!sha512.js@{sha512.js}}
+\doxysubsubsection{\texorpdfstring{sha512}{sha512}}
+{\footnotesize\ttfamily \label{sha512_8js_a2b2843e87457d65a4e21c34e962e92bd} 
+\mbox{\hyperlink{aes_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} \mbox{\hyperlink{sha512_8js_a4a0380eac0cebce3ad3d5fb0f14d6dae}{md}} sha512 = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{module.\+exports}} = forge.\+sha512 = forge.\+sha512 \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} \{\}}
+

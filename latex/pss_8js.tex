@@ -1,0 +1,56 @@
+\doxysection{backend/node\+\_\+modules/node-\/forge/lib/pss.js File Reference}
+\hypertarget{pss_8js}{}\label{pss_8js}\index{backend/node\_modules/node-\/forge/lib/pss.js@{backend/node\_modules/node-\/forge/lib/pss.js}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{pss_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./forge\textquotesingle{})
+\item 
+var \mbox{\hyperlink{pss_8js_a7f662015a42f9cce02297d822ce5f6c6}{pss}} = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{module.\+exports}} = forge.\+pss = forge.\+pss \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} \{\}
+\item 
+\mbox{\hyperlink{pss_8js_a7f662015a42f9cce02297d822ce5f6c6}{pss}} \mbox{\hyperlink{pss_8js_a93c135edb7eb7d36e7bbbcfd89b9ee64}{create}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{pss_8js_a93c135edb7eb7d36e7bbbcfd89b9ee64}\index{pss.js@{pss.js}!create@{create}}
+\index{create@{create}!pss.js@{pss.js}}
+\doxysubsubsection{\texorpdfstring{create}{create}}
+{\footnotesize\ttfamily \label{pss_8js_a93c135edb7eb7d36e7bbbcfd89b9ee64} 
+\mbox{\hyperlink{pss_8js_a7f662015a42f9cce02297d822ce5f6c6}{pss}} create}
+
+Creates a PSS signature scheme object.
+
+There are several ways to provide a salt for encoding\+:
+
+
+\begin{DoxyEnumerate}
+\item Specify the salt\+Length only and the built-\/in PRNG will generate it.
+\item Specify the salt\+Length and a custom PRNG with \textquotesingle{}get\+Bytes\+Sync\textquotesingle{} defined that will be used.
+\item Specify the salt itself as a forge.\+util.\+Byte\+Buffer.
+\end{DoxyEnumerate}
+
+
+\begin{DoxyParams}{Parameters}
+{\em options} & the options to use\+: md the message digest object to use, a forge md instance. mgf the mask generation function to use, a forge mgf instance. \mbox{[}salt\+Length\mbox{]} the length of the salt in octets. \mbox{[}prng\mbox{]} the pseudo-\/random number generator to use to produce a salt. \mbox{[}salt\mbox{]} the salt to use when encoding.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a signature scheme object. 
+\end{DoxyReturn}
+\Hypertarget{pss_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}\index{pss.js@{pss.js}!forge@{forge}}
+\index{forge@{forge}!pss.js@{pss.js}}
+\doxysubsubsection{\texorpdfstring{forge}{forge}}
+{\footnotesize\ttfamily \label{pss_8js_ab4dbef01e35b8e6d06087c0542ba9e2c} 
+var forge = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./forge\textquotesingle{})}
+
+Javascript implementation of PKCS\#1 PSS signature padding.
+
+\begin{DoxyAuthor}{Author}
+Stefan Siegl
+\end{DoxyAuthor}
+Copyright (c) 2012 Stefan Siegl \href{mailto:stesie@brokenpipe.de}{\texttt{ stesie@brokenpipe.\+de}} \Hypertarget{pss_8js_a7f662015a42f9cce02297d822ce5f6c6}\index{pss.js@{pss.js}!pss@{pss}}
+\index{pss@{pss}!pss.js@{pss.js}}
+\doxysubsubsection{\texorpdfstring{pss}{pss}}
+{\footnotesize\ttfamily \label{pss_8js_a7f662015a42f9cce02297d822ce5f6c6} 
+var pss = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{module.\+exports}} = forge.\+pss = forge.\+pss \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} \{\}}
+

@@ -1,0 +1,108 @@
+\doxysection{Auth Class Reference}
+\hypertarget{class_auth}{}\label{class_auth}\index{Auth@{Auth}}
+
+
+Inheritance diagram for Auth\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{class_auth__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Auth\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{class_auth__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_auth_aa071e63d5dbb791b42fb63e384eaa243}{constructor}} (\mbox{\hyperlink{class_auth_af83aaef1596cefdeb4b54acce1352e4b}{app}})
+\item 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} \mbox{\hyperlink{class_auth_af83aaef1596cefdeb4b54acce1352e4b}{app}} ()
+\item 
+\mbox{\hyperlink{class_auth_a03c65c5c5eb7163a42a24f5ec51b3db0}{tenant\+Manager}} ()
+\item 
+\mbox{\hyperlink{class_auth_a7a0d9b73f6971167c4fdb96796f579e1}{project\+Config\+Manager}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_auth}{Auth} service bound to the provided app. An \doxylink{class_auth}{Auth} instance can have multiple tenants. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_auth_af83aaef1596cefdeb4b54acce1352e4b}\index{Auth@{Auth}!app@{app}}
+\index{app@{app}!Auth@{Auth}}
+\doxysubsubsection{\texorpdfstring{app()}{app()}}
+{\footnotesize\ttfamily \label{class_auth_af83aaef1596cefdeb4b54acce1352e4b} 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} Auth\+::app (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the app associated with this \doxylink{class_auth}{Auth} instance.
+
+\begin{DoxyReturn}{Returns}
+The app associated with this \doxylink{class_auth}{Auth} instance. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=265pt]{class_auth_af83aaef1596cefdeb4b54acce1352e4b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_auth_aa071e63d5dbb791b42fb63e384eaa243}\index{Auth@{Auth}!constructor@{constructor}}
+\index{constructor@{constructor}!Auth@{Auth}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_auth_aa071e63d5dbb791b42fb63e384eaa243} 
+Auth\+::constructor (\begin{DoxyParamCaption}\item[{}]{app}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em app} & -\/ The app for this \doxylink{class_auth}{Auth} service. @constructor \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{class_auth_af83aaef1596cefdeb4b54acce1352e4b}{app()}}, \mbox{\hyperlink{auth_8js_ac7589a803bd4e053198614715963a7ff}{auth\+\_\+api\+\_\+request\+\_\+1}}, \mbox{\hyperlink{auth_8js_aac8d6e9a2d2d9b700a1a19dc43c8aa04}{project\+\_\+config\+\_\+manager\+\_\+1}}, and \mbox{\hyperlink{auth_8js_aae4bca4f45f796ae319197d64c912828}{tenant\+\_\+manager\+\_\+1}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=265pt]{class_auth_aa071e63d5dbb791b42fb63e384eaa243_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_auth_a7a0d9b73f6971167c4fdb96796f579e1}\index{Auth@{Auth}!projectConfigManager@{projectConfigManager}}
+\index{projectConfigManager@{projectConfigManager}!Auth@{Auth}}
+\doxysubsubsection{\texorpdfstring{projectConfigManager()}{projectConfigManager()}}
+{\footnotesize\ttfamily \label{class_auth_a7a0d9b73f6971167c4fdb96796f579e1} 
+Auth\+::project\+Config\+Manager (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the project config manager instance associated with the current project.
+
+\begin{DoxyReturn}{Returns}
+The project config manager instance associated with the current project. 
+\end{DoxyReturn}
+\Hypertarget{class_auth_a03c65c5c5eb7163a42a24f5ec51b3db0}\index{Auth@{Auth}!tenantManager@{tenantManager}}
+\index{tenantManager@{tenantManager}!Auth@{Auth}}
+\doxysubsubsection{\texorpdfstring{tenantManager()}{tenantManager()}}
+{\footnotesize\ttfamily \label{class_auth_a03c65c5c5eb7163a42a24f5ec51b3db0} 
+Auth\+::tenant\+Manager (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the tenant manager instance associated with the current project.
+
+\begin{DoxyReturn}{Returns}
+The tenant manager instance associated with the current project. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/firebase-\/admin/lib/auth/\mbox{\hyperlink{auth_8js}{auth.\+js}}\end{DoxyCompactItemize}

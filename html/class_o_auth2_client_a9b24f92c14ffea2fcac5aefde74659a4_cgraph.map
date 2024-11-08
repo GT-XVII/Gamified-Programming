@@ -1,0 +1,9 @@
+<map id="OAuth2Client::getAccessTokenAsync" name="OAuth2Client::getAccessTokenAsync">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,210,96"/>
+<area shape="rect" id="Node000002" href="$class_o_auth2_client.html#a2416db20c6177f4adcb0c9b9a844ea51" title=" " alt="" coords="258,5,457,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="199,52,283,32,284,38,200,57"/>
+<area shape="rect" id="Node000003" href="$class_o_auth2_client.html#ad72b68fda32ddfcc94c9e72dcb8cc949" title=" " alt="" coords="269,55,446,96"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="210,73,253,73,253,78,210,78"/>
+<area shape="rect" id="Node000004" href="$class_o_auth2_client.html#a65069f5a830341525b75cd946103fd07" title=" " alt="" coords="262,120,453,161"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="189,94,263,113,262,119,187,99"/>
+</map>

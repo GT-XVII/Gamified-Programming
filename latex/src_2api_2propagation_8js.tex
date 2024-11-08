@@ -1,0 +1,93 @@
+\doxysection{backend/node\+\_\+modules/@opentelemetry/api/build/src/api/propagation.js File Reference}
+\hypertarget{src_2api_2propagation_8js}{}\label{src_2api_2propagation_8js}\index{backend/node\_modules/"@opentelemetry/api/build/src/api/propagation.js@{backend/node\_modules/"@opentelemetry/api/build/src/api/propagation.js}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_propagation_a_p_i}{Propagation\+API}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{src_2api_2propagation_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{src_2api_2propagation_8js_a0fb891df7c0f3e79ac3f16a11a0650b2}{Propagation\+API}} = void 0
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{src_2api_2propagation_8js_a760c4a2617fe556524fc8bef66a49270}{global\+\_\+utils\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../internal/\mbox{\hyperlink{ordered-map_8js_a57efe929cc6b44042891d05e15cec785}{global}}-\/utils"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{src_2api_2propagation_8js_ae29c1843e9ed2d8f8b167a9696d2e562}{Noop\+Text\+Map\+Propagator\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../propagation/Noop\+Text\+Map\+Propagator"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{src_2api_2propagation_8js_ab93d9b09c38b1a1290887c0cfc27d00f}{Text\+Map\+Propagator\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../propagation/Text\+Map\+Propagator"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{src_2api_2propagation_8js_ab5168286fa56ccfc96f113b376f69538}{context\+\_\+helpers\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../baggage/\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}}-\/helpers"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{src_2api_2propagation_8js_a197519d1fe9437f29d052af72196fe25}{utils\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../baggage/utils"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{src_2api_2propagation_8js_a462bd97e17d7968c0e8eb0881fd4d4d7}{diag\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./diag"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{src_2api_2propagation_8js_a10612327dfed89a9985e240d874444b6}{API\+\_\+\+NAME}} = \textquotesingle{}\mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2index_8js_a347ecd407c470e18f0c9c7082e7fafd4}{propagation}}\textquotesingle{}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{src_2api_2propagation_8js_a14f48a8c63de3b90d900bc5e4427565f}{NOOP\+\_\+\+TEXT\+\_\+\+MAP\+\_\+\+PROPAGATOR}} = new Noop\+Text\+Map\+Propagator\+\_\+1.\+Noop\+Text\+Map\+Propagator()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{src_2api_2propagation_8js_a10612327dfed89a9985e240d874444b6}\index{propagation.js@{propagation.js}!API\_NAME@{API\_NAME}}
+\index{API\_NAME@{API\_NAME}!propagation.js@{propagation.js}}
+\doxysubsubsection{\texorpdfstring{API\_NAME}{API\_NAME}}
+{\footnotesize\ttfamily \label{src_2api_2propagation_8js_a10612327dfed89a9985e240d874444b6} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} API\+\_\+\+NAME = \textquotesingle{}\mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2index_8js_a347ecd407c470e18f0c9c7082e7fafd4}{propagation}}\textquotesingle{}}
+
+\Hypertarget{src_2api_2propagation_8js_ab5168286fa56ccfc96f113b376f69538}\index{propagation.js@{propagation.js}!context\_helpers\_1@{context\_helpers\_1}}
+\index{context\_helpers\_1@{context\_helpers\_1}!propagation.js@{propagation.js}}
+\doxysubsubsection{\texorpdfstring{context\_helpers\_1}{context\_helpers\_1}}
+{\footnotesize\ttfamily \label{src_2api_2propagation_8js_ab5168286fa56ccfc96f113b376f69538} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} context\+\_\+helpers\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../baggage/\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}}-\/helpers"{})}
+
+\Hypertarget{src_2api_2propagation_8js_a462bd97e17d7968c0e8eb0881fd4d4d7}\index{propagation.js@{propagation.js}!diag\_1@{diag\_1}}
+\index{diag\_1@{diag\_1}!propagation.js@{propagation.js}}
+\doxysubsubsection{\texorpdfstring{diag\_1}{diag\_1}}
+{\footnotesize\ttfamily \label{src_2api_2propagation_8js_a462bd97e17d7968c0e8eb0881fd4d4d7} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} diag\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./diag"{})}
+
+\Hypertarget{src_2api_2propagation_8js_a760c4a2617fe556524fc8bef66a49270}\index{propagation.js@{propagation.js}!global\_utils\_1@{global\_utils\_1}}
+\index{global\_utils\_1@{global\_utils\_1}!propagation.js@{propagation.js}}
+\doxysubsubsection{\texorpdfstring{global\_utils\_1}{global\_utils\_1}}
+{\footnotesize\ttfamily \label{src_2api_2propagation_8js_a760c4a2617fe556524fc8bef66a49270} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} global\+\_\+utils\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../internal/\mbox{\hyperlink{ordered-map_8js_a57efe929cc6b44042891d05e15cec785}{global}}-\/utils"{})}
+
+\Hypertarget{src_2api_2propagation_8js_a14f48a8c63de3b90d900bc5e4427565f}\index{propagation.js@{propagation.js}!NOOP\_TEXT\_MAP\_PROPAGATOR@{NOOP\_TEXT\_MAP\_PROPAGATOR}}
+\index{NOOP\_TEXT\_MAP\_PROPAGATOR@{NOOP\_TEXT\_MAP\_PROPAGATOR}!propagation.js@{propagation.js}}
+\doxysubsubsection{\texorpdfstring{NOOP\_TEXT\_MAP\_PROPAGATOR}{NOOP\_TEXT\_MAP\_PROPAGATOR}}
+{\footnotesize\ttfamily \label{src_2api_2propagation_8js_a14f48a8c63de3b90d900bc5e4427565f} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} NOOP\+\_\+\+TEXT\+\_\+\+MAP\+\_\+\+PROPAGATOR = new Noop\+Text\+Map\+Propagator\+\_\+1.\+Noop\+Text\+Map\+Propagator()}
+
+\Hypertarget{src_2api_2propagation_8js_ae29c1843e9ed2d8f8b167a9696d2e562}\index{propagation.js@{propagation.js}!NoopTextMapPropagator\_1@{NoopTextMapPropagator\_1}}
+\index{NoopTextMapPropagator\_1@{NoopTextMapPropagator\_1}!propagation.js@{propagation.js}}
+\doxysubsubsection{\texorpdfstring{NoopTextMapPropagator\_1}{NoopTextMapPropagator\_1}}
+{\footnotesize\ttfamily \label{src_2api_2propagation_8js_ae29c1843e9ed2d8f8b167a9696d2e562} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} Noop\+Text\+Map\+Propagator\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../propagation/Noop\+Text\+Map\+Propagator"{})}
+
+\Hypertarget{src_2api_2propagation_8js_a0fb891df7c0f3e79ac3f16a11a0650b2}\index{propagation.js@{propagation.js}!PropagationAPI@{PropagationAPI}}
+\index{PropagationAPI@{PropagationAPI}!propagation.js@{propagation.js}}
+\doxysubsubsection{\texorpdfstring{PropagationAPI}{PropagationAPI}}
+{\footnotesize\ttfamily \label{src_2api_2propagation_8js_a0fb891df7c0f3e79ac3f16a11a0650b2} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} Propagation\+API = void 0}
+
+\Hypertarget{src_2api_2propagation_8js_ae2475e10618961c050dcba04e8c42331}\index{propagation.js@{propagation.js}!strict@{strict}}
+\index{strict@{strict}!propagation.js@{propagation.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{src_2api_2propagation_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+
+\Hypertarget{src_2api_2propagation_8js_ab93d9b09c38b1a1290887c0cfc27d00f}\index{propagation.js@{propagation.js}!TextMapPropagator\_1@{TextMapPropagator\_1}}
+\index{TextMapPropagator\_1@{TextMapPropagator\_1}!propagation.js@{propagation.js}}
+\doxysubsubsection{\texorpdfstring{TextMapPropagator\_1}{TextMapPropagator\_1}}
+{\footnotesize\ttfamily \label{src_2api_2propagation_8js_ab93d9b09c38b1a1290887c0cfc27d00f} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} Text\+Map\+Propagator\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../propagation/Text\+Map\+Propagator"{})}
+
+\Hypertarget{src_2api_2propagation_8js_a197519d1fe9437f29d052af72196fe25}\index{propagation.js@{propagation.js}!utils\_1@{utils\_1}}
+\index{utils\_1@{utils\_1}!propagation.js@{propagation.js}}
+\doxysubsubsection{\texorpdfstring{utils\_1}{utils\_1}}
+{\footnotesize\ttfamily \label{src_2api_2propagation_8js_a197519d1fe9437f29d052af72196fe25} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} utils\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../baggage/utils"{})}
+

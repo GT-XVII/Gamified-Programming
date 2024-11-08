@@ -1,0 +1,7 @@
+<map id="ResolvingLoadBalancer::updateResolution" name="ResolvingLoadBalancer::updateResolution">
+<area shape="rect" id="Node000001" title=" " alt="" coords="212,39,370,79"/>
+<area shape="rect" id="Node000002" href="$class_resolving_load_balancer.html#a0c40677e8254a2620d9f4926b7f1f731" title=" " alt="" coords="5,5,164,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="196,46,164,41,165,36,197,41"/>
+<area shape="rect" id="Node000003" href="$class_resolving_load_balancer.html#a64f3dea755868b19d9cfc5305164113a" title=" " alt="" coords="5,71,164,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="197,76,165,81,164,76,196,71"/>
+</map>

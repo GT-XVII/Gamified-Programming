@@ -1,0 +1,147 @@
+\doxysection{Api\+Settings Class Reference}
+\hypertarget{class_api_settings}{}\label{class_api_settings}\index{ApiSettings@{ApiSettings}}
+
+
+Collaboration diagram for Api\+Settings\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{class_api_settings__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_api_settings_ae980b7bf63f31f66bcaeb06f7257661f}{constructor}} (endpoint, http\+Method=\textquotesingle{}POST\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_api_settings_a49035a0298ee56b67a2c00fdaa46f215}{get\+Endpoint}} ()
+\item 
+\mbox{\hyperlink{class_api_settings_a43d4b572969e06494b692bf3bda149f0}{get\+Http\+Method}} ()
+\item 
+\mbox{\hyperlink{class_api_settings_a4a05214f8d59568f29f72e5ec3ce4ad4}{set\+Request\+Validator}} (request\+Validator)
+\item 
+\mbox{\hyperlink{class_api_settings_a4fb346533278373f3fb5938ef18f0c46}{get\+Request\+Validator}} ()
+\item 
+\mbox{\hyperlink{class_api_settings_a41a84c127b28de029b2f7d983e65cee8}{set\+Response\+Validator}} (response\+Validator)
+\item 
+\mbox{\hyperlink{class_api_settings_adf6f92a589c9afe4f2eb9b8e74ffe31d}{get\+Response\+Validator}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class that defines all the settings for the backend API endpoint.
+
+
+\begin{DoxyParams}{Parameters}
+{\em endpoint} & -\/ The Firebase \doxylink{class_auth}{Auth} backend endpoint. \\
+\hline
+{\em http\+Method} & -\/ The HTTP method for that endpoint. @constructor \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_api_settings_ae980b7bf63f31f66bcaeb06f7257661f}\index{ApiSettings@{ApiSettings}!constructor@{constructor}}
+\index{constructor@{constructor}!ApiSettings@{ApiSettings}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_api_settings_ae980b7bf63f31f66bcaeb06f7257661f} 
+Api\+Settings\+::constructor (\begin{DoxyParamCaption}\item[{}]{endpoint}{, }\item[{}]{http\+Method}{ = {\ttfamily \textquotesingle{}POST\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{class_api_settings_a4a05214f8d59568f29f72e5ec3ce4ad4}{set\+Request\+Validator()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_api_settings_ae980b7bf63f31f66bcaeb06f7257661f_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_api_settings_a49035a0298ee56b67a2c00fdaa46f215}\index{ApiSettings@{ApiSettings}!getEndpoint@{getEndpoint}}
+\index{getEndpoint@{getEndpoint}!ApiSettings@{ApiSettings}}
+\doxysubsubsection{\texorpdfstring{getEndpoint()}{getEndpoint()}}
+{\footnotesize\ttfamily \label{class_api_settings_a49035a0298ee56b67a2c00fdaa46f215} 
+Api\+Settings\+::get\+Endpoint (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+The backend API endpoint. 
+\end{DoxyReturn}
+\Hypertarget{class_api_settings_a43d4b572969e06494b692bf3bda149f0}\index{ApiSettings@{ApiSettings}!getHttpMethod@{getHttpMethod}}
+\index{getHttpMethod@{getHttpMethod}!ApiSettings@{ApiSettings}}
+\doxysubsubsection{\texorpdfstring{getHttpMethod()}{getHttpMethod()}}
+{\footnotesize\ttfamily \label{class_api_settings_a43d4b572969e06494b692bf3bda149f0} 
+Api\+Settings\+::get\+Http\+Method (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+The request HTTP method. 
+\end{DoxyReturn}
+\Hypertarget{class_api_settings_a4fb346533278373f3fb5938ef18f0c46}\index{ApiSettings@{ApiSettings}!getRequestValidator@{getRequestValidator}}
+\index{getRequestValidator@{getRequestValidator}!ApiSettings@{ApiSettings}}
+\doxysubsubsection{\texorpdfstring{getRequestValidator()}{getRequestValidator()}}
+{\footnotesize\ttfamily \label{class_api_settings_a4fb346533278373f3fb5938ef18f0c46} 
+Api\+Settings\+::get\+Request\+Validator (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+The request validator. 
+\end{DoxyReturn}
+\Hypertarget{class_api_settings_adf6f92a589c9afe4f2eb9b8e74ffe31d}\index{ApiSettings@{ApiSettings}!getResponseValidator@{getResponseValidator}}
+\index{getResponseValidator@{getResponseValidator}!ApiSettings@{ApiSettings}}
+\doxysubsubsection{\texorpdfstring{getResponseValidator()}{getResponseValidator()}}
+{\footnotesize\ttfamily \label{class_api_settings_adf6f92a589c9afe4f2eb9b8e74ffe31d} 
+Api\+Settings\+::get\+Response\+Validator (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+The response validator. 
+\end{DoxyReturn}
+\Hypertarget{class_api_settings_a4a05214f8d59568f29f72e5ec3ce4ad4}\index{ApiSettings@{ApiSettings}!setRequestValidator@{setRequestValidator}}
+\index{setRequestValidator@{setRequestValidator}!ApiSettings@{ApiSettings}}
+\doxysubsubsection{\texorpdfstring{setRequestValidator()}{setRequestValidator()}}
+{\footnotesize\ttfamily \label{class_api_settings_a4a05214f8d59568f29f72e5ec3ce4ad4} 
+Api\+Settings\+::set\+Request\+Validator (\begin{DoxyParamCaption}\item[{}]{request\+Validator}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em request\+Validator} & -\/ The request validator. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The current API settings instance. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_api_settings_a4a05214f8d59568f29f72e5ec3ce4ad4_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_api_settings_a41a84c127b28de029b2f7d983e65cee8}\index{ApiSettings@{ApiSettings}!setResponseValidator@{setResponseValidator}}
+\index{setResponseValidator@{setResponseValidator}!ApiSettings@{ApiSettings}}
+\doxysubsubsection{\texorpdfstring{setResponseValidator()}{setResponseValidator()}}
+{\footnotesize\ttfamily \label{class_api_settings_a41a84c127b28de029b2f7d983e65cee8} 
+Api\+Settings\+::set\+Response\+Validator (\begin{DoxyParamCaption}\item[{}]{response\+Validator}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em response\+Validator} & -\/ The response validator. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The current API settings instance. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/firebase-\/admin/lib/utils/\mbox{\hyperlink{api-request_8js}{api-\/request.\+js}}\end{DoxyCompactItemize}

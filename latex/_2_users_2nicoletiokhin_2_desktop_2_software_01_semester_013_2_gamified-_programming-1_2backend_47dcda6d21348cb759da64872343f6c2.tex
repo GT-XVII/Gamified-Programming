@@ -1,0 +1,25 @@
+\doxysection{/\+Users/nicoletiokhin/\+Desktop/\+Software Semester 3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/lodash/intersection\+With.\+js}
+\hypertarget{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_47dcda6d21348cb759da64872343f6c2}{}\label{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_47dcda6d21348cb759da64872343f6c2}This method is like {\ttfamily \+\_\+.\+intersection} except that it accepts {\ttfamily comparator} which is invoked to compare elements of {\ttfamily arrays}. The order and references of result values are determined by the first array. The comparator is invoked with two arguments\+: (arr\+Val, oth\+Val).
+
+@member\+Of \+\_\+ \begin{DoxySince}{Since}
+4.\+0.\+0
+\end{DoxySince}
+
+\begin{DoxyParams}{Parameters}
+{\em \{...\+Array\}} & \mbox{[}arrays\mbox{]} The arrays to inspect. \\
+\hline
+{\em \{\+Function\}} & \mbox{[}comparator\mbox{]} The comparator invoked per element. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Array\} Returns the new array of intersecting values.
+\end{DoxyReturn}
+var objects = \mbox{[}\{ \textquotesingle{}x\textquotesingle{}\+: 1, \textquotesingle{}y\textquotesingle{}\+: 2 \}, \{ \textquotesingle{}x\textquotesingle{}\+: 2, \textquotesingle{}y\textquotesingle{}\+: 1 \}\mbox{]}; var others = \mbox{[}\{ \textquotesingle{}x\textquotesingle{}\+: 1, \textquotesingle{}y\textquotesingle{}\+: 1 \}, \{ \textquotesingle{}x\textquotesingle{}\+: 1, \textquotesingle{}y\textquotesingle{}\+: 2 \}\mbox{]};
+
+\+\_\+.\+intersection\+With(objects, others, \+\_\+.\+is\+Equal); // =\texorpdfstring{$>$}{>} \mbox{[}\{ \textquotesingle{}x\textquotesingle{}\+: 1, \textquotesingle{}y\textquotesingle{}\+: 2 \}\mbox{]}
+
+
+\begin{DoxyCodeInclude}{0}
+
+\end{DoxyCodeInclude}
+ Semester \doxylink{intersection_with_8js}{3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/lodash/intersection\+With.\+js} 

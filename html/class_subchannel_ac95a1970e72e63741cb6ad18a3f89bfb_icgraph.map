@@ -1,0 +1,9 @@
+<map id="Subchannel::refTrace" name="Subchannel::refTrace">
+<area shape="rect" id="Node000001" title=" " alt="" coords="407,31,552,56"/>
+<area shape="rect" id="Node000002" href="$class_subchannel.html#a8bad34746bbbb85c368309a4152eec84" title=" " alt="" coords="240,5,352,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="391,34,352,29,353,23,392,29"/>
+<area shape="rect" id="Node000003" href="$class_subchannel.html#a605dc8a7db8463adbb391c0395c00426" title=" " alt="" coords="233,55,359,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="392,58,360,62,359,57,391,52"/>
+<area shape="rect" id="Node000004" href="$class_subchannel.html#a45f3f1220da24d4862facab27ad18cf7" title=" " alt="" coords="5,55,185,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="217,70,185,70,185,65,217,65"/>
+</map>

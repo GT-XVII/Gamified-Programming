@@ -1,0 +1,7 @@
+<map id="extractContentType" name="extractContentType">
+<area shape="rect" id="Node000001" title=" " alt="" coords="207,31,342,56"/>
+<area shape="rect" id="Node000002" href="$class_request.html#ae91c395613eedfbb58059d3106ed875a" title=" " alt="" coords="10,5,154,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="191,35,154,30,154,25,192,30"/>
+<area shape="rect" id="Node000003" href="$class_response.html#a36f64fd6405972e065716b560ee79cfe" title=" " alt="" coords="5,55,159,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="191,57,160,61,159,55,191,51"/>
+</map>

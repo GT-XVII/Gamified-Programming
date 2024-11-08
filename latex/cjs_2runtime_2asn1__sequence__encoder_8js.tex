@@ -1,0 +1,127 @@
+\doxysection{backend/node\+\_\+modules/jose/dist/node/cjs/runtime/asn1\+\_\+sequence\+\_\+encoder.js File Reference}
+\hypertarget{cjs_2runtime_2asn1__sequence__encoder_8js}{}\label{cjs_2runtime_2asn1__sequence__encoder_8js}\index{backend/node\_modules/jose/dist/node/cjs/runtime/asn1\_sequence\_encoder.js@{backend/node\_modules/jose/dist/node/cjs/runtime/asn1\_sequence\_encoder.js}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{cjs_2runtime_2asn1__sequence__encoder_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{cjs_2runtime_2asn1__sequence__encoder_8js_a2df8f20dcb48e17a6d5ade191aa33b39}{buffer\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}buffer"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{cjs_2runtime_2asn1__sequence__encoder_8js_a285fbd72467b60dd40c49c8c9166b064}{errors\+\_\+js\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../util/errors.\+js"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{cjs_2runtime_2asn1__sequence__encoder_8js_a7ffc6165fdf0f061e70192effff7ad80}{tag\+Integer}} = 0x02
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{cjs_2runtime_2asn1__sequence__encoder_8js_acc3ae81b1f6d5d6ad7a6d1b2cfd22992}{tag\+Bit\+Str}} = 0x03
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{cjs_2runtime_2asn1__sequence__encoder_8js_a9e6cabef4ae2fafbec73ebcd1796e29f}{tag\+Oct\+Str}} = 0x04
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{cjs_2runtime_2asn1__sequence__encoder_8js_a3b5e635699c65f21cac58589eb25fe58}{tag\+Sequence}} = 0x30
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{cjs_2runtime_2asn1__sequence__encoder_8js_a01ebd075a76d34d24ed9576b6c1cde7d}{b\+Zero}} = buffer\+\_\+1.\+Buffer.\+from(\mbox{[}0x00\mbox{]})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{cjs_2runtime_2asn1__sequence__encoder_8js_af4ad5216844df6aee08dd213de4ed718}{b\+Tag\+Integer}} = buffer\+\_\+1.\+Buffer.\+from(\mbox{[}\mbox{\hyperlink{cjs_2runtime_2asn1__sequence__decoder_8js_a7ffc6165fdf0f061e70192effff7ad80}{tag\+Integer}}\mbox{]})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{cjs_2runtime_2asn1__sequence__encoder_8js_ae7195b38784241033390764e0c2611b9}{b\+Tag\+Bit\+Str}} = buffer\+\_\+1.\+Buffer.\+from(\mbox{[}\mbox{\hyperlink{cjs_2runtime_2asn1__sequence__encoder_8js_acc3ae81b1f6d5d6ad7a6d1b2cfd22992}{tag\+Bit\+Str}}\mbox{]})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{cjs_2runtime_2asn1__sequence__encoder_8js_ab78e2253f2b3caf3622dc83413d075dd}{b\+Tag\+Sequence}} = buffer\+\_\+1.\+Buffer.\+from(\mbox{[}\mbox{\hyperlink{cjs_2runtime_2asn1__sequence__decoder_8js_a3b5e635699c65f21cac58589eb25fe58}{tag\+Sequence}}\mbox{]})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{cjs_2runtime_2asn1__sequence__encoder_8js_a95eef457bf7c4fc0362dc4094209894c}{b\+Tag\+Oct\+Str}} = buffer\+\_\+1.\+Buffer.\+from(\mbox{[}\mbox{\hyperlink{cjs_2runtime_2asn1__sequence__encoder_8js_a9e6cabef4ae2fafbec73ebcd1796e29f}{tag\+Oct\+Str}}\mbox{]})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{cjs_2runtime_2asn1__sequence__encoder_8js_a2c6cd203bf0456e97dbdf0fd06c09e1d}{encode\+Length}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{cjs_2runtime_2asn1__sequence__encoder_8js_ae7195b38784241033390764e0c2611b9}\index{asn1\_sequence\_encoder.js@{asn1\_sequence\_encoder.js}!bTagBitStr@{bTagBitStr}}
+\index{bTagBitStr@{bTagBitStr}!asn1\_sequence\_encoder.js@{asn1\_sequence\_encoder.js}}
+\doxysubsubsection{\texorpdfstring{bTagBitStr}{bTagBitStr}}
+{\footnotesize\ttfamily \label{cjs_2runtime_2asn1__sequence__encoder_8js_ae7195b38784241033390764e0c2611b9} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} b\+Tag\+Bit\+Str = buffer\+\_\+1.\+Buffer.\+from(\mbox{[}\mbox{\hyperlink{cjs_2runtime_2asn1__sequence__encoder_8js_acc3ae81b1f6d5d6ad7a6d1b2cfd22992}{tag\+Bit\+Str}}\mbox{]})}
+
+\Hypertarget{cjs_2runtime_2asn1__sequence__encoder_8js_af4ad5216844df6aee08dd213de4ed718}\index{asn1\_sequence\_encoder.js@{asn1\_sequence\_encoder.js}!bTagInteger@{bTagInteger}}
+\index{bTagInteger@{bTagInteger}!asn1\_sequence\_encoder.js@{asn1\_sequence\_encoder.js}}
+\doxysubsubsection{\texorpdfstring{bTagInteger}{bTagInteger}}
+{\footnotesize\ttfamily \label{cjs_2runtime_2asn1__sequence__encoder_8js_af4ad5216844df6aee08dd213de4ed718} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} b\+Tag\+Integer = buffer\+\_\+1.\+Buffer.\+from(\mbox{[}\mbox{\hyperlink{cjs_2runtime_2asn1__sequence__decoder_8js_a7ffc6165fdf0f061e70192effff7ad80}{tag\+Integer}}\mbox{]})}
+
+\Hypertarget{cjs_2runtime_2asn1__sequence__encoder_8js_a95eef457bf7c4fc0362dc4094209894c}\index{asn1\_sequence\_encoder.js@{asn1\_sequence\_encoder.js}!bTagOctStr@{bTagOctStr}}
+\index{bTagOctStr@{bTagOctStr}!asn1\_sequence\_encoder.js@{asn1\_sequence\_encoder.js}}
+\doxysubsubsection{\texorpdfstring{bTagOctStr}{bTagOctStr}}
+{\footnotesize\ttfamily \label{cjs_2runtime_2asn1__sequence__encoder_8js_a95eef457bf7c4fc0362dc4094209894c} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} b\+Tag\+Oct\+Str = buffer\+\_\+1.\+Buffer.\+from(\mbox{[}\mbox{\hyperlink{cjs_2runtime_2asn1__sequence__encoder_8js_a9e6cabef4ae2fafbec73ebcd1796e29f}{tag\+Oct\+Str}}\mbox{]})}
+
+\Hypertarget{cjs_2runtime_2asn1__sequence__encoder_8js_ab78e2253f2b3caf3622dc83413d075dd}\index{asn1\_sequence\_encoder.js@{asn1\_sequence\_encoder.js}!bTagSequence@{bTagSequence}}
+\index{bTagSequence@{bTagSequence}!asn1\_sequence\_encoder.js@{asn1\_sequence\_encoder.js}}
+\doxysubsubsection{\texorpdfstring{bTagSequence}{bTagSequence}}
+{\footnotesize\ttfamily \label{cjs_2runtime_2asn1__sequence__encoder_8js_ab78e2253f2b3caf3622dc83413d075dd} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} b\+Tag\+Sequence = buffer\+\_\+1.\+Buffer.\+from(\mbox{[}\mbox{\hyperlink{cjs_2runtime_2asn1__sequence__decoder_8js_a3b5e635699c65f21cac58589eb25fe58}{tag\+Sequence}}\mbox{]})}
+
+\Hypertarget{cjs_2runtime_2asn1__sequence__encoder_8js_a2df8f20dcb48e17a6d5ade191aa33b39}\index{asn1\_sequence\_encoder.js@{asn1\_sequence\_encoder.js}!buffer\_1@{buffer\_1}}
+\index{buffer\_1@{buffer\_1}!asn1\_sequence\_encoder.js@{asn1\_sequence\_encoder.js}}
+\doxysubsubsection{\texorpdfstring{buffer\_1}{buffer\_1}}
+{\footnotesize\ttfamily \label{cjs_2runtime_2asn1__sequence__encoder_8js_a2df8f20dcb48e17a6d5ade191aa33b39} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} buffer\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}buffer"{})}
+
+\Hypertarget{cjs_2runtime_2asn1__sequence__encoder_8js_a01ebd075a76d34d24ed9576b6c1cde7d}\index{asn1\_sequence\_encoder.js@{asn1\_sequence\_encoder.js}!bZero@{bZero}}
+\index{bZero@{bZero}!asn1\_sequence\_encoder.js@{asn1\_sequence\_encoder.js}}
+\doxysubsubsection{\texorpdfstring{bZero}{bZero}}
+{\footnotesize\ttfamily \label{cjs_2runtime_2asn1__sequence__encoder_8js_a01ebd075a76d34d24ed9576b6c1cde7d} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} b\+Zero = buffer\+\_\+1.\+Buffer.\+from(\mbox{[}0x00\mbox{]})}
+
+\Hypertarget{cjs_2runtime_2asn1__sequence__encoder_8js_a2c6cd203bf0456e97dbdf0fd06c09e1d}\index{asn1\_sequence\_encoder.js@{asn1\_sequence\_encoder.js}!encodeLength@{encodeLength}}
+\index{encodeLength@{encodeLength}!asn1\_sequence\_encoder.js@{asn1\_sequence\_encoder.js}}
+\doxysubsubsection{\texorpdfstring{encodeLength}{encodeLength}}
+{\footnotesize\ttfamily \label{cjs_2runtime_2asn1__sequence__encoder_8js_a2c6cd203bf0456e97dbdf0fd06c09e1d} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} encode\+Length}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ (len)\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (len\ <\ 128)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{cjs_2runtime_2asn1__sequence__encoder_8js_a2df8f20dcb48e17a6d5ade191aa33b39}{buffer\_1}}.Buffer.from([len]);}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{cjs_2internal_2operators_2buffer_8js_a838d54b935df11eff7928ba8da636891}{buffer}}\ =\ \mbox{\hyperlink{cjs_2runtime_2asn1__sequence__encoder_8js_a2df8f20dcb48e17a6d5ade191aa33b39}{buffer\_1}}.Buffer.alloc(5);}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{cjs_2internal_2operators_2buffer_8js_a838d54b935df11eff7928ba8da636891}{buffer}}.writeUInt32BE(len,\ 1);}
+\DoxyCodeLine{\ \ \ \ let\ offset\ =\ 1;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{while}\ (\mbox{\hyperlink{cjs_2internal_2operators_2buffer_8js_a838d54b935df11eff7928ba8da636891}{buffer}}[offset]\ ===\ 0)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ offset++;}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{cjs_2internal_2operators_2buffer_8js_a838d54b935df11eff7928ba8da636891}{buffer}}[offset\ -\/\ 1]\ =\ 0x80\ |\ (5\ -\/\ offset);}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{cjs_2internal_2operators_2buffer_8js_a838d54b935df11eff7928ba8da636891}{buffer}}.slice(offset\ -\/\ 1);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{cjs_2runtime_2asn1__sequence__encoder_8js_a285fbd72467b60dd40c49c8c9166b064}\index{asn1\_sequence\_encoder.js@{asn1\_sequence\_encoder.js}!errors\_js\_1@{errors\_js\_1}}
+\index{errors\_js\_1@{errors\_js\_1}!asn1\_sequence\_encoder.js@{asn1\_sequence\_encoder.js}}
+\doxysubsubsection{\texorpdfstring{errors\_js\_1}{errors\_js\_1}}
+{\footnotesize\ttfamily \label{cjs_2runtime_2asn1__sequence__encoder_8js_a285fbd72467b60dd40c49c8c9166b064} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} errors\+\_\+js\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../util/errors.\+js"{})}
+
+\Hypertarget{cjs_2runtime_2asn1__sequence__encoder_8js_ae2475e10618961c050dcba04e8c42331}\index{asn1\_sequence\_encoder.js@{asn1\_sequence\_encoder.js}!strict@{strict}}
+\index{strict@{strict}!asn1\_sequence\_encoder.js@{asn1\_sequence\_encoder.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{cjs_2runtime_2asn1__sequence__encoder_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+
+\Hypertarget{cjs_2runtime_2asn1__sequence__encoder_8js_acc3ae81b1f6d5d6ad7a6d1b2cfd22992}\index{asn1\_sequence\_encoder.js@{asn1\_sequence\_encoder.js}!tagBitStr@{tagBitStr}}
+\index{tagBitStr@{tagBitStr}!asn1\_sequence\_encoder.js@{asn1\_sequence\_encoder.js}}
+\doxysubsubsection{\texorpdfstring{tagBitStr}{tagBitStr}}
+{\footnotesize\ttfamily \label{cjs_2runtime_2asn1__sequence__encoder_8js_acc3ae81b1f6d5d6ad7a6d1b2cfd22992} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} tag\+Bit\+Str = 0x03}
+
+\Hypertarget{cjs_2runtime_2asn1__sequence__encoder_8js_a7ffc6165fdf0f061e70192effff7ad80}\index{asn1\_sequence\_encoder.js@{asn1\_sequence\_encoder.js}!tagInteger@{tagInteger}}
+\index{tagInteger@{tagInteger}!asn1\_sequence\_encoder.js@{asn1\_sequence\_encoder.js}}
+\doxysubsubsection{\texorpdfstring{tagInteger}{tagInteger}}
+{\footnotesize\ttfamily \label{cjs_2runtime_2asn1__sequence__encoder_8js_a7ffc6165fdf0f061e70192effff7ad80} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} tag\+Integer = 0x02}
+
+\Hypertarget{cjs_2runtime_2asn1__sequence__encoder_8js_a9e6cabef4ae2fafbec73ebcd1796e29f}\index{asn1\_sequence\_encoder.js@{asn1\_sequence\_encoder.js}!tagOctStr@{tagOctStr}}
+\index{tagOctStr@{tagOctStr}!asn1\_sequence\_encoder.js@{asn1\_sequence\_encoder.js}}
+\doxysubsubsection{\texorpdfstring{tagOctStr}{tagOctStr}}
+{\footnotesize\ttfamily \label{cjs_2runtime_2asn1__sequence__encoder_8js_a9e6cabef4ae2fafbec73ebcd1796e29f} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} tag\+Oct\+Str = 0x04}
+
+\Hypertarget{cjs_2runtime_2asn1__sequence__encoder_8js_a3b5e635699c65f21cac58589eb25fe58}\index{asn1\_sequence\_encoder.js@{asn1\_sequence\_encoder.js}!tagSequence@{tagSequence}}
+\index{tagSequence@{tagSequence}!asn1\_sequence\_encoder.js@{asn1\_sequence\_encoder.js}}
+\doxysubsubsection{\texorpdfstring{tagSequence}{tagSequence}}
+{\footnotesize\ttfamily \label{cjs_2runtime_2asn1__sequence__encoder_8js_a3b5e635699c65f21cac58589eb25fe58} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} tag\+Sequence = 0x30}
+

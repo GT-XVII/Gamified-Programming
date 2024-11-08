@@ -1,0 +1,9 @@
+<map id="getImportPath" name="getImportPath">
+<area shape="rect" id="Node000001" title=" " alt="" coords="353,29,456,55"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="434,16,424,10,405,8,386,10,377,15,375,20,379,28,375,30,369,21,373,11,385,5,405,3,426,5,437,12"/>
+<area shape="rect" id="Node000002" href="$proto-loader-gen-types_8js.html#a9528546dbc161447ab6921596117da01" title=" " alt="" coords="5,29,106,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="338,45,106,45,106,40,338,40"/>
+<area shape="rect" id="Node000003" href="$proto-loader-gen-types_8js.html#a9d1a34be2fb733ccacdf998450c109eb" title=" " alt="" coords="154,55,305,80"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="338,54,306,59,305,54,337,49"/>
+<area shape="poly" id="edge4_Node000003_Node000002" title=" " alt="" coords="138,57,106,52,106,47,139,52"/>
+</map>

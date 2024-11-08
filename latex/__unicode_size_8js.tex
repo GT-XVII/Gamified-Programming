@@ -1,0 +1,204 @@
+\doxysection{backend/node\+\_\+modules/lodash/\+\_\+unicode\+Size.js File Reference}
+\hypertarget{__unicode_size_8js}{}\label{__unicode_size_8js}\index{backend/node\_modules/lodash/\_unicodeSize.js@{backend/node\_modules/lodash/\_unicodeSize.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{__unicode_size_8js_a5d726b35bff99ef0562069bb0d3f70e6}{unicode\+Size}} (\mbox{\hyperlink{reader_8js_a5c10456fb38514f2fe2b2da9323924ac}{string}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{__unicode_size_8js_aac2496148c2bae8f025a68dc5a0b9417}{rs\+Astral\+Range}} = \textquotesingle{}\textbackslash{}\textbackslash{}ud800-\/\textbackslash{}\textbackslash{}udfff\textquotesingle{}
+\item 
+var \mbox{\hyperlink{__unicode_size_8js_a885aad772f5897d96e5f8767bcec88ed}{rs\+Combo\+Marks\+Range}} = \textquotesingle{}\textbackslash{}\textbackslash{}u0300-\/\textbackslash{}\textbackslash{}u036f\textquotesingle{}
+\item 
+var \mbox{\hyperlink{__unicode_size_8js_a94a4d252925472afd4f6b143853c19a0}{re\+Combo\+Half\+Marks\+Range}} = \textquotesingle{}\textbackslash{}\textbackslash{}ufe20-\/\textbackslash{}\textbackslash{}ufe2f\textquotesingle{}
+\item 
+var \mbox{\hyperlink{__unicode_size_8js_a515a0cb5a96082753fd36385bf86693e}{rs\+Combo\+Symbols\+Range}} = \textquotesingle{}\textbackslash{}\textbackslash{}u20d0-\/\textbackslash{}\textbackslash{}u20ff\textquotesingle{}
+\item 
+var \mbox{\hyperlink{__unicode_size_8js_a4a1eee3e8813830dd2fbd32b29b9247a}{rs\+Combo\+Range}} = \mbox{\hyperlink{lodash_8camelcase_2index_8js_a885aad772f5897d96e5f8767bcec88ed}{rs\+Combo\+Marks\+Range}} + \mbox{\hyperlink{__has_unicode_8js_a94a4d252925472afd4f6b143853c19a0}{re\+Combo\+Half\+Marks\+Range}} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_a515a0cb5a96082753fd36385bf86693e}{rs\+Combo\+Symbols\+Range}}
+\item 
+var \mbox{\hyperlink{__unicode_size_8js_a368fad66a39831fdfcf197df7a8e36de}{rs\+Var\+Range}} = \textquotesingle{}\textbackslash{}\textbackslash{}ufe0e\textbackslash{}\textbackslash{}ufe0f\textquotesingle{}
+\item 
+var \mbox{\hyperlink{__unicode_size_8js_ad44cc6223ee38fdd0fc775b63c495a1b}{rs\+Astral}} = \textquotesingle{}\mbox{[}\textquotesingle{} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_aac2496148c2bae8f025a68dc5a0b9417}{rs\+Astral\+Range}} + \textquotesingle{}\mbox{]}\textquotesingle{}
+\item 
+var \mbox{\hyperlink{__unicode_size_8js_a3ad6c09dbc4945188e86cf6189da745c}{rs\+Combo}} = \textquotesingle{}\mbox{[}\textquotesingle{} + \mbox{\hyperlink{__has_unicode_8js_a4a1eee3e8813830dd2fbd32b29b9247a}{rs\+Combo\+Range}} + \textquotesingle{}\mbox{]}\textquotesingle{}
+\item 
+var \mbox{\hyperlink{__unicode_size_8js_a5752905f28b8221061c838df8b4e271c}{rs\+Fitz}} = \textquotesingle{}\textbackslash{}\textbackslash{}ud83c\mbox{[}\textbackslash{}\textbackslash{}udffb-\/\textbackslash{}\textbackslash{}udfff\mbox{]}\textquotesingle{}
+\item 
+var \mbox{\hyperlink{__unicode_size_8js_a32c0ab361a1436f17a33dfadcad1f131}{rs\+Modifier}} = \textquotesingle{}(?\+:\textquotesingle{} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_a3ad6c09dbc4945188e86cf6189da745c}{rs\+Combo}} + \textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_a5752905f28b8221061c838df8b4e271c}{rs\+Fitz}} + \textquotesingle{})\textquotesingle{}
+\item 
+var \mbox{\hyperlink{__unicode_size_8js_a33d475bbbeb29386a38e402e3e087181}{rs\+Non\+Astral}} = \textquotesingle{}\mbox{[}\texorpdfstring{$^\wedge$}{\string^}\textquotesingle{} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_aac2496148c2bae8f025a68dc5a0b9417}{rs\+Astral\+Range}} + \textquotesingle{}\mbox{]}\textquotesingle{}
+\item 
+var \mbox{\hyperlink{__unicode_size_8js_a8ba6c51af61fd0f87b05f10dec2142b6}{rs\+Regional}} = \textquotesingle{}(?\+:\textbackslash{}\textbackslash{}ud83c\mbox{[}\textbackslash{}\textbackslash{}udde6-\/\textbackslash{}\textbackslash{}uddff\mbox{]})\{2\}\textquotesingle{}
+\item 
+var \mbox{\hyperlink{__unicode_size_8js_ab897b030c09495e606b5ebb6ee7332a3}{rs\+Surr\+Pair}} = \textquotesingle{}\mbox{[}\textbackslash{}\textbackslash{}ud800-\/\textbackslash{}\textbackslash{}udbff\mbox{]}\mbox{[}\textbackslash{}\textbackslash{}udc00-\/\textbackslash{}\textbackslash{}udfff\mbox{]}\textquotesingle{}
+\item 
+var \mbox{\hyperlink{__unicode_size_8js_acfd4af6a55c6291ade760cc82e35f69c}{rs\+ZWJ}} = \textquotesingle{}\textbackslash{}\textbackslash{}u200d\textquotesingle{}
+\item 
+var \mbox{\hyperlink{__unicode_size_8js_a854e7397b94c138b6b335ca16caa8532}{re\+Opt\+Mod}} = \mbox{\hyperlink{lodash_8camelcase_2index_8js_a32c0ab361a1436f17a33dfadcad1f131}{rs\+Modifier}} + \textquotesingle{}?\textquotesingle{}
+\item 
+var \mbox{\hyperlink{__unicode_size_8js_a0a4ad92f19582b6a98cf8f341081b602}{rs\+Opt\+Var}} = \textquotesingle{}\mbox{[}\textquotesingle{} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_a368fad66a39831fdfcf197df7a8e36de}{rs\+Var\+Range}} + \textquotesingle{}\mbox{]}?\textquotesingle{}
+\item 
+var \mbox{\hyperlink{__unicode_size_8js_aad4335ccc826c6471c34ad93eccd55c6}{rs\+Opt\+Join}} = \textquotesingle{}(?\+:\textquotesingle{} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_acfd4af6a55c6291ade760cc82e35f69c}{rs\+ZWJ}} + \textquotesingle{}(?\+:\textquotesingle{} + \mbox{[}\mbox{\hyperlink{lodash_8camelcase_2index_8js_a33d475bbbeb29386a38e402e3e087181}{rs\+Non\+Astral}}, \mbox{\hyperlink{lodash_8camelcase_2index_8js_a8ba6c51af61fd0f87b05f10dec2142b6}{rs\+Regional}}, \mbox{\hyperlink{lodash_8camelcase_2index_8js_ab897b030c09495e606b5ebb6ee7332a3}{rs\+Surr\+Pair}}\mbox{]}.\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a500bc97a63b7c35b84493a7f90ef44d6}{join}}(\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}) + \textquotesingle{})\textquotesingle{} + \mbox{\hyperlink{__unicode_size_8js_a0a4ad92f19582b6a98cf8f341081b602}{rs\+Opt\+Var}} + \mbox{\hyperlink{__unicode_size_8js_a854e7397b94c138b6b335ca16caa8532}{re\+Opt\+Mod}} + \textquotesingle{})\texorpdfstring{$\ast$}{*}\textquotesingle{}
+\item 
+var \mbox{\hyperlink{__unicode_size_8js_a58244c418931ab391338275779f45c0b}{rs\+Seq}} = \mbox{\hyperlink{__unicode_size_8js_a0a4ad92f19582b6a98cf8f341081b602}{rs\+Opt\+Var}} + \mbox{\hyperlink{__unicode_size_8js_a854e7397b94c138b6b335ca16caa8532}{re\+Opt\+Mod}} + \mbox{\hyperlink{__unicode_size_8js_aad4335ccc826c6471c34ad93eccd55c6}{rs\+Opt\+Join}}
+\item 
+var \mbox{\hyperlink{__unicode_size_8js_a964a27997131caaceb6fcdca696101f7}{rs\+Symbol}} = \textquotesingle{}(?\+:\textquotesingle{} + \mbox{[}\mbox{\hyperlink{lodash_8camelcase_2index_8js_a33d475bbbeb29386a38e402e3e087181}{rs\+Non\+Astral}} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_a3ad6c09dbc4945188e86cf6189da745c}{rs\+Combo}} + \textquotesingle{}?\textquotesingle{}, \mbox{\hyperlink{lodash_8camelcase_2index_8js_a3ad6c09dbc4945188e86cf6189da745c}{rs\+Combo}}, \mbox{\hyperlink{lodash_8camelcase_2index_8js_a8ba6c51af61fd0f87b05f10dec2142b6}{rs\+Regional}}, \mbox{\hyperlink{lodash_8camelcase_2index_8js_ab897b030c09495e606b5ebb6ee7332a3}{rs\+Surr\+Pair}}, \mbox{\hyperlink{lodash_8camelcase_2index_8js_ad44cc6223ee38fdd0fc775b63c495a1b}{rs\+Astral}}\mbox{]}.\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a500bc97a63b7c35b84493a7f90ef44d6}{join}}(\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}) + \textquotesingle{})\textquotesingle{}
+\item 
+var \mbox{\hyperlink{__unicode_size_8js_a2e8c82349f5b5f0b3d19fccc6696624c}{re\+Unicode}} = Reg\+Exp(\mbox{\hyperlink{lodash_8camelcase_2index_8js_a5752905f28b8221061c838df8b4e271c}{rs\+Fitz}} + \textquotesingle{}(?=\textquotesingle{} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_a5752905f28b8221061c838df8b4e271c}{rs\+Fitz}} + \textquotesingle{})\texorpdfstring{$\vert$}{|}\textquotesingle{} + \mbox{\hyperlink{__unicode_size_8js_a964a27997131caaceb6fcdca696101f7}{rs\+Symbol}} + \mbox{\hyperlink{__unicode_size_8js_a58244c418931ab391338275779f45c0b}{rs\+Seq}}, \textquotesingle{}\mbox{\hyperlink{ordered-map_8min_8js_a103df269476e78897c9c4c6cb8f4eb06}{g}}\textquotesingle{})
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{__unicode_size_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} = \mbox{\hyperlink{__string_size_8js_a43ed3fd0a465dbb4f605464503e78532}{unicode\+Size}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{__unicode_size_8js_a5d726b35bff99ef0562069bb0d3f70e6}\index{\_unicodeSize.js@{\_unicodeSize.js}!unicodeSize@{unicodeSize}}
+\index{unicodeSize@{unicodeSize}!\_unicodeSize.js@{\_unicodeSize.js}}
+\doxysubsubsection{\texorpdfstring{unicodeSize()}{unicodeSize()}}
+{\footnotesize\ttfamily \label{__unicode_size_8js_a5d726b35bff99ef0562069bb0d3f70e6} 
+function unicode\+Size (\begin{DoxyParamCaption}\item[{}]{string}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Gets the size of a Unicode {\ttfamily string}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & string The string inspect. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{number\} Returns the string size. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{lodash_2core_8js_a348c112a244660a2f280cda892658c24}{result}}, and \mbox{\hyperlink{__unicode_size_8js_a2e8c82349f5b5f0b3d19fccc6696624c}{re\+Unicode}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{__unicode_size_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\index{\_unicodeSize.js@{\_unicodeSize.js}!exports@{exports}}
+\index{exports@{exports}!\_unicodeSize.js@{\_unicodeSize.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \label{__unicode_size_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports = \mbox{\hyperlink{__string_size_8js_a43ed3fd0a465dbb4f605464503e78532}{unicode\+Size}}}
+
+\Hypertarget{__unicode_size_8js_a94a4d252925472afd4f6b143853c19a0}\index{\_unicodeSize.js@{\_unicodeSize.js}!reComboHalfMarksRange@{reComboHalfMarksRange}}
+\index{reComboHalfMarksRange@{reComboHalfMarksRange}!\_unicodeSize.js@{\_unicodeSize.js}}
+\doxysubsubsection{\texorpdfstring{reComboHalfMarksRange}{reComboHalfMarksRange}}
+{\footnotesize\ttfamily \label{__unicode_size_8js_a94a4d252925472afd4f6b143853c19a0} 
+var re\+Combo\+Half\+Marks\+Range = \textquotesingle{}\textbackslash{}\textbackslash{}ufe20-\/\textbackslash{}\textbackslash{}ufe2f\textquotesingle{}}
+
+\Hypertarget{__unicode_size_8js_a854e7397b94c138b6b335ca16caa8532}\index{\_unicodeSize.js@{\_unicodeSize.js}!reOptMod@{reOptMod}}
+\index{reOptMod@{reOptMod}!\_unicodeSize.js@{\_unicodeSize.js}}
+\doxysubsubsection{\texorpdfstring{reOptMod}{reOptMod}}
+{\footnotesize\ttfamily \label{__unicode_size_8js_a854e7397b94c138b6b335ca16caa8532} 
+var re\+Opt\+Mod = \mbox{\hyperlink{lodash_8camelcase_2index_8js_a32c0ab361a1436f17a33dfadcad1f131}{rs\+Modifier}} + \textquotesingle{}?\textquotesingle{}}
+
+Used to compose unicode regexes. \Hypertarget{__unicode_size_8js_a2e8c82349f5b5f0b3d19fccc6696624c}\index{\_unicodeSize.js@{\_unicodeSize.js}!reUnicode@{reUnicode}}
+\index{reUnicode@{reUnicode}!\_unicodeSize.js@{\_unicodeSize.js}}
+\doxysubsubsection{\texorpdfstring{reUnicode}{reUnicode}}
+{\footnotesize\ttfamily \label{__unicode_size_8js_a2e8c82349f5b5f0b3d19fccc6696624c} 
+var re\+Unicode = Reg\+Exp(\mbox{\hyperlink{lodash_8camelcase_2index_8js_a5752905f28b8221061c838df8b4e271c}{rs\+Fitz}} + \textquotesingle{}(?=\textquotesingle{} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_a5752905f28b8221061c838df8b4e271c}{rs\+Fitz}} + \textquotesingle{})\texorpdfstring{$\vert$}{|}\textquotesingle{} + \mbox{\hyperlink{__unicode_size_8js_a964a27997131caaceb6fcdca696101f7}{rs\+Symbol}} + \mbox{\hyperlink{__unicode_size_8js_a58244c418931ab391338275779f45c0b}{rs\+Seq}}, \textquotesingle{}\mbox{\hyperlink{ordered-map_8min_8js_a103df269476e78897c9c4c6cb8f4eb06}{g}}\textquotesingle{})}
+
+Used to match \href{https://mathiasbynens.be/notes/javascript-unicode}{\texttt{ string symbols}}. \Hypertarget{__unicode_size_8js_ad44cc6223ee38fdd0fc775b63c495a1b}\index{\_unicodeSize.js@{\_unicodeSize.js}!rsAstral@{rsAstral}}
+\index{rsAstral@{rsAstral}!\_unicodeSize.js@{\_unicodeSize.js}}
+\doxysubsubsection{\texorpdfstring{rsAstral}{rsAstral}}
+{\footnotesize\ttfamily \label{__unicode_size_8js_ad44cc6223ee38fdd0fc775b63c495a1b} 
+var rs\+Astral = \textquotesingle{}\mbox{[}\textquotesingle{} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_aac2496148c2bae8f025a68dc5a0b9417}{rs\+Astral\+Range}} + \textquotesingle{}\mbox{]}\textquotesingle{}}
+
+Used to compose unicode capture groups. \Hypertarget{__unicode_size_8js_aac2496148c2bae8f025a68dc5a0b9417}\index{\_unicodeSize.js@{\_unicodeSize.js}!rsAstralRange@{rsAstralRange}}
+\index{rsAstralRange@{rsAstralRange}!\_unicodeSize.js@{\_unicodeSize.js}}
+\doxysubsubsection{\texorpdfstring{rsAstralRange}{rsAstralRange}}
+{\footnotesize\ttfamily \label{__unicode_size_8js_aac2496148c2bae8f025a68dc5a0b9417} 
+var rs\+Astral\+Range = \textquotesingle{}\textbackslash{}\textbackslash{}ud800-\/\textbackslash{}\textbackslash{}udfff\textquotesingle{}}
+
+Used to compose unicode character classes. \Hypertarget{__unicode_size_8js_a3ad6c09dbc4945188e86cf6189da745c}\index{\_unicodeSize.js@{\_unicodeSize.js}!rsCombo@{rsCombo}}
+\index{rsCombo@{rsCombo}!\_unicodeSize.js@{\_unicodeSize.js}}
+\doxysubsubsection{\texorpdfstring{rsCombo}{rsCombo}}
+{\footnotesize\ttfamily \label{__unicode_size_8js_a3ad6c09dbc4945188e86cf6189da745c} 
+var rs\+Combo = \textquotesingle{}\mbox{[}\textquotesingle{} + \mbox{\hyperlink{__has_unicode_8js_a4a1eee3e8813830dd2fbd32b29b9247a}{rs\+Combo\+Range}} + \textquotesingle{}\mbox{]}\textquotesingle{}}
+
+\Hypertarget{__unicode_size_8js_a885aad772f5897d96e5f8767bcec88ed}\index{\_unicodeSize.js@{\_unicodeSize.js}!rsComboMarksRange@{rsComboMarksRange}}
+\index{rsComboMarksRange@{rsComboMarksRange}!\_unicodeSize.js@{\_unicodeSize.js}}
+\doxysubsubsection{\texorpdfstring{rsComboMarksRange}{rsComboMarksRange}}
+{\footnotesize\ttfamily \label{__unicode_size_8js_a885aad772f5897d96e5f8767bcec88ed} 
+var rs\+Combo\+Marks\+Range = \textquotesingle{}\textbackslash{}\textbackslash{}u0300-\/\textbackslash{}\textbackslash{}u036f\textquotesingle{}}
+
+\Hypertarget{__unicode_size_8js_a4a1eee3e8813830dd2fbd32b29b9247a}\index{\_unicodeSize.js@{\_unicodeSize.js}!rsComboRange@{rsComboRange}}
+\index{rsComboRange@{rsComboRange}!\_unicodeSize.js@{\_unicodeSize.js}}
+\doxysubsubsection{\texorpdfstring{rsComboRange}{rsComboRange}}
+{\footnotesize\ttfamily \label{__unicode_size_8js_a4a1eee3e8813830dd2fbd32b29b9247a} 
+var rs\+Combo\+Range = \mbox{\hyperlink{lodash_8camelcase_2index_8js_a885aad772f5897d96e5f8767bcec88ed}{rs\+Combo\+Marks\+Range}} + \mbox{\hyperlink{__has_unicode_8js_a94a4d252925472afd4f6b143853c19a0}{re\+Combo\+Half\+Marks\+Range}} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_a515a0cb5a96082753fd36385bf86693e}{rs\+Combo\+Symbols\+Range}}}
+
+\Hypertarget{__unicode_size_8js_a515a0cb5a96082753fd36385bf86693e}\index{\_unicodeSize.js@{\_unicodeSize.js}!rsComboSymbolsRange@{rsComboSymbolsRange}}
+\index{rsComboSymbolsRange@{rsComboSymbolsRange}!\_unicodeSize.js@{\_unicodeSize.js}}
+\doxysubsubsection{\texorpdfstring{rsComboSymbolsRange}{rsComboSymbolsRange}}
+{\footnotesize\ttfamily \label{__unicode_size_8js_a515a0cb5a96082753fd36385bf86693e} 
+var rs\+Combo\+Symbols\+Range = \textquotesingle{}\textbackslash{}\textbackslash{}u20d0-\/\textbackslash{}\textbackslash{}u20ff\textquotesingle{}}
+
+\Hypertarget{__unicode_size_8js_a5752905f28b8221061c838df8b4e271c}\index{\_unicodeSize.js@{\_unicodeSize.js}!rsFitz@{rsFitz}}
+\index{rsFitz@{rsFitz}!\_unicodeSize.js@{\_unicodeSize.js}}
+\doxysubsubsection{\texorpdfstring{rsFitz}{rsFitz}}
+{\footnotesize\ttfamily \label{__unicode_size_8js_a5752905f28b8221061c838df8b4e271c} 
+var rs\+Fitz = \textquotesingle{}\textbackslash{}\textbackslash{}ud83c\mbox{[}\textbackslash{}\textbackslash{}udffb-\/\textbackslash{}\textbackslash{}udfff\mbox{]}\textquotesingle{}}
+
+\Hypertarget{__unicode_size_8js_a32c0ab361a1436f17a33dfadcad1f131}\index{\_unicodeSize.js@{\_unicodeSize.js}!rsModifier@{rsModifier}}
+\index{rsModifier@{rsModifier}!\_unicodeSize.js@{\_unicodeSize.js}}
+\doxysubsubsection{\texorpdfstring{rsModifier}{rsModifier}}
+{\footnotesize\ttfamily \label{__unicode_size_8js_a32c0ab361a1436f17a33dfadcad1f131} 
+var rs\+Modifier = \textquotesingle{}(?\+:\textquotesingle{} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_a3ad6c09dbc4945188e86cf6189da745c}{rs\+Combo}} + \textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_a5752905f28b8221061c838df8b4e271c}{rs\+Fitz}} + \textquotesingle{})\textquotesingle{}}
+
+\Hypertarget{__unicode_size_8js_a33d475bbbeb29386a38e402e3e087181}\index{\_unicodeSize.js@{\_unicodeSize.js}!rsNonAstral@{rsNonAstral}}
+\index{rsNonAstral@{rsNonAstral}!\_unicodeSize.js@{\_unicodeSize.js}}
+\doxysubsubsection{\texorpdfstring{rsNonAstral}{rsNonAstral}}
+{\footnotesize\ttfamily \label{__unicode_size_8js_a33d475bbbeb29386a38e402e3e087181} 
+var rs\+Non\+Astral = \textquotesingle{}\mbox{[}\texorpdfstring{$^\wedge$}{\string^}\textquotesingle{} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_aac2496148c2bae8f025a68dc5a0b9417}{rs\+Astral\+Range}} + \textquotesingle{}\mbox{]}\textquotesingle{}}
+
+\Hypertarget{__unicode_size_8js_aad4335ccc826c6471c34ad93eccd55c6}\index{\_unicodeSize.js@{\_unicodeSize.js}!rsOptJoin@{rsOptJoin}}
+\index{rsOptJoin@{rsOptJoin}!\_unicodeSize.js@{\_unicodeSize.js}}
+\doxysubsubsection{\texorpdfstring{rsOptJoin}{rsOptJoin}}
+{\footnotesize\ttfamily \label{__unicode_size_8js_aad4335ccc826c6471c34ad93eccd55c6} 
+var rs\+Opt\+Join = \textquotesingle{}(?\+:\textquotesingle{} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_acfd4af6a55c6291ade760cc82e35f69c}{rs\+ZWJ}} + \textquotesingle{}(?\+:\textquotesingle{} + \mbox{[}\mbox{\hyperlink{lodash_8camelcase_2index_8js_a33d475bbbeb29386a38e402e3e087181}{rs\+Non\+Astral}}, \mbox{\hyperlink{lodash_8camelcase_2index_8js_a8ba6c51af61fd0f87b05f10dec2142b6}{rs\+Regional}}, \mbox{\hyperlink{lodash_8camelcase_2index_8js_ab897b030c09495e606b5ebb6ee7332a3}{rs\+Surr\+Pair}}\mbox{]}.\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a500bc97a63b7c35b84493a7f90ef44d6}{join}}(\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}) + \textquotesingle{})\textquotesingle{} + \mbox{\hyperlink{__unicode_size_8js_a0a4ad92f19582b6a98cf8f341081b602}{rs\+Opt\+Var}} + \mbox{\hyperlink{__unicode_size_8js_a854e7397b94c138b6b335ca16caa8532}{re\+Opt\+Mod}} + \textquotesingle{})\texorpdfstring{$\ast$}{*}\textquotesingle{}}
+
+\Hypertarget{__unicode_size_8js_a0a4ad92f19582b6a98cf8f341081b602}\index{\_unicodeSize.js@{\_unicodeSize.js}!rsOptVar@{rsOptVar}}
+\index{rsOptVar@{rsOptVar}!\_unicodeSize.js@{\_unicodeSize.js}}
+\doxysubsubsection{\texorpdfstring{rsOptVar}{rsOptVar}}
+{\footnotesize\ttfamily \label{__unicode_size_8js_a0a4ad92f19582b6a98cf8f341081b602} 
+var rs\+Opt\+Var = \textquotesingle{}\mbox{[}\textquotesingle{} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_a368fad66a39831fdfcf197df7a8e36de}{rs\+Var\+Range}} + \textquotesingle{}\mbox{]}?\textquotesingle{}}
+
+\Hypertarget{__unicode_size_8js_a8ba6c51af61fd0f87b05f10dec2142b6}\index{\_unicodeSize.js@{\_unicodeSize.js}!rsRegional@{rsRegional}}
+\index{rsRegional@{rsRegional}!\_unicodeSize.js@{\_unicodeSize.js}}
+\doxysubsubsection{\texorpdfstring{rsRegional}{rsRegional}}
+{\footnotesize\ttfamily \label{__unicode_size_8js_a8ba6c51af61fd0f87b05f10dec2142b6} 
+var rs\+Regional = \textquotesingle{}(?\+:\textbackslash{}\textbackslash{}ud83c\mbox{[}\textbackslash{}\textbackslash{}udde6-\/\textbackslash{}\textbackslash{}uddff\mbox{]})\{2\}\textquotesingle{}}
+
+\Hypertarget{__unicode_size_8js_a58244c418931ab391338275779f45c0b}\index{\_unicodeSize.js@{\_unicodeSize.js}!rsSeq@{rsSeq}}
+\index{rsSeq@{rsSeq}!\_unicodeSize.js@{\_unicodeSize.js}}
+\doxysubsubsection{\texorpdfstring{rsSeq}{rsSeq}}
+{\footnotesize\ttfamily \label{__unicode_size_8js_a58244c418931ab391338275779f45c0b} 
+var rs\+Seq = \mbox{\hyperlink{__unicode_size_8js_a0a4ad92f19582b6a98cf8f341081b602}{rs\+Opt\+Var}} + \mbox{\hyperlink{__unicode_size_8js_a854e7397b94c138b6b335ca16caa8532}{re\+Opt\+Mod}} + \mbox{\hyperlink{__unicode_size_8js_aad4335ccc826c6471c34ad93eccd55c6}{rs\+Opt\+Join}}}
+
+\Hypertarget{__unicode_size_8js_ab897b030c09495e606b5ebb6ee7332a3}\index{\_unicodeSize.js@{\_unicodeSize.js}!rsSurrPair@{rsSurrPair}}
+\index{rsSurrPair@{rsSurrPair}!\_unicodeSize.js@{\_unicodeSize.js}}
+\doxysubsubsection{\texorpdfstring{rsSurrPair}{rsSurrPair}}
+{\footnotesize\ttfamily \label{__unicode_size_8js_ab897b030c09495e606b5ebb6ee7332a3} 
+var rs\+Surr\+Pair = \textquotesingle{}\mbox{[}\textbackslash{}\textbackslash{}ud800-\/\textbackslash{}\textbackslash{}udbff\mbox{]}\mbox{[}\textbackslash{}\textbackslash{}udc00-\/\textbackslash{}\textbackslash{}udfff\mbox{]}\textquotesingle{}}
+
+\Hypertarget{__unicode_size_8js_a964a27997131caaceb6fcdca696101f7}\index{\_unicodeSize.js@{\_unicodeSize.js}!rsSymbol@{rsSymbol}}
+\index{rsSymbol@{rsSymbol}!\_unicodeSize.js@{\_unicodeSize.js}}
+\doxysubsubsection{\texorpdfstring{rsSymbol}{rsSymbol}}
+{\footnotesize\ttfamily \label{__unicode_size_8js_a964a27997131caaceb6fcdca696101f7} 
+var rs\+Symbol = \textquotesingle{}(?\+:\textquotesingle{} + \mbox{[}\mbox{\hyperlink{lodash_8camelcase_2index_8js_a33d475bbbeb29386a38e402e3e087181}{rs\+Non\+Astral}} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_a3ad6c09dbc4945188e86cf6189da745c}{rs\+Combo}} + \textquotesingle{}?\textquotesingle{}, \mbox{\hyperlink{lodash_8camelcase_2index_8js_a3ad6c09dbc4945188e86cf6189da745c}{rs\+Combo}}, \mbox{\hyperlink{lodash_8camelcase_2index_8js_a8ba6c51af61fd0f87b05f10dec2142b6}{rs\+Regional}}, \mbox{\hyperlink{lodash_8camelcase_2index_8js_ab897b030c09495e606b5ebb6ee7332a3}{rs\+Surr\+Pair}}, \mbox{\hyperlink{lodash_8camelcase_2index_8js_ad44cc6223ee38fdd0fc775b63c495a1b}{rs\+Astral}}\mbox{]}.\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a500bc97a63b7c35b84493a7f90ef44d6}{join}}(\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}) + \textquotesingle{})\textquotesingle{}}
+
+\Hypertarget{__unicode_size_8js_a368fad66a39831fdfcf197df7a8e36de}\index{\_unicodeSize.js@{\_unicodeSize.js}!rsVarRange@{rsVarRange}}
+\index{rsVarRange@{rsVarRange}!\_unicodeSize.js@{\_unicodeSize.js}}
+\doxysubsubsection{\texorpdfstring{rsVarRange}{rsVarRange}}
+{\footnotesize\ttfamily \label{__unicode_size_8js_a368fad66a39831fdfcf197df7a8e36de} 
+var rs\+Var\+Range = \textquotesingle{}\textbackslash{}\textbackslash{}ufe0e\textbackslash{}\textbackslash{}ufe0f\textquotesingle{}}
+
+\Hypertarget{__unicode_size_8js_acfd4af6a55c6291ade760cc82e35f69c}\index{\_unicodeSize.js@{\_unicodeSize.js}!rsZWJ@{rsZWJ}}
+\index{rsZWJ@{rsZWJ}!\_unicodeSize.js@{\_unicodeSize.js}}
+\doxysubsubsection{\texorpdfstring{rsZWJ}{rsZWJ}}
+{\footnotesize\ttfamily \label{__unicode_size_8js_acfd4af6a55c6291ade760cc82e35f69c} 
+var rs\+ZWJ = \textquotesingle{}\textbackslash{}\textbackslash{}u200d\textquotesingle{}}
+

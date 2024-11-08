@@ -1,0 +1,71 @@
+\doxysection{backend/node\+\_\+modules/@google-\/cloud/firestore/build/src/timestamp.js File Reference}
+\hypertarget{_0dgoogle-cloud_2firestore_2build_2src_2timestamp_8js}{}\label{_0dgoogle-cloud_2firestore_2build_2src_2timestamp_8js}\index{backend/node\_modules/"@google-\/cloud/firestore/build/src/timestamp.js@{backend/node\_modules/"@google-\/cloud/firestore/build/src/timestamp.js}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_timestamp}{Timestamp}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2timestamp_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2timestamp_8js_abf6b4c53c4942b00e883191002c701bc}{Timestamp}} = void 0
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2timestamp_8js_aa37716c5385ffbe958d12dba0dab85f8}{validate\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./validate"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2timestamp_8js_a54edc55e78f5d26c70f26291fa2b916c}{MS\+\_\+\+TO\+\_\+\+NANOS}} = 1000000
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2timestamp_8js_adbd38b29b85ea49e02e081bc5ab76cce}{MIN\+\_\+\+SECONDS}} = -\/62135596800
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2timestamp_8js_acea4e949150f4db8610f712ea759cec6}{MAX\+\_\+\+SECONDS}} = 253402300799
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{_0dgoogle-cloud_2firestore_2build_2src_2timestamp_8js_acea4e949150f4db8610f712ea759cec6}\index{timestamp.js@{timestamp.js}!MAX\_SECONDS@{MAX\_SECONDS}}
+\index{MAX\_SECONDS@{MAX\_SECONDS}!timestamp.js@{timestamp.js}}
+\doxysubsubsection{\texorpdfstring{MAX\_SECONDS}{MAX\_SECONDS}}
+{\footnotesize\ttfamily \label{_0dgoogle-cloud_2firestore_2build_2src_2timestamp_8js_acea4e949150f4db8610f712ea759cec6} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} MAX\+\_\+\+SECONDS = 253402300799}
+
+The maximum legal value for the "{}seconds"{} property of a \doxylink{class_timestamp}{Timestamp} object.
+
+This value corresponds to 9999-\/12-\/31T23\+:59\+:59.\+999999999Z.
+
+@type \{number\} \Hypertarget{_0dgoogle-cloud_2firestore_2build_2src_2timestamp_8js_adbd38b29b85ea49e02e081bc5ab76cce}\index{timestamp.js@{timestamp.js}!MIN\_SECONDS@{MIN\_SECONDS}}
+\index{MIN\_SECONDS@{MIN\_SECONDS}!timestamp.js@{timestamp.js}}
+\doxysubsubsection{\texorpdfstring{MIN\_SECONDS}{MIN\_SECONDS}}
+{\footnotesize\ttfamily \label{_0dgoogle-cloud_2firestore_2build_2src_2timestamp_8js_adbd38b29b85ea49e02e081bc5ab76cce} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} MIN\+\_\+\+SECONDS = -\/62135596800}
+
+The minimum legal value for the "{}seconds"{} property of a \doxylink{class_timestamp}{Timestamp} object.
+
+This value corresponds to 0001-\/01-\/01T00\+:00\+:00Z.
+
+@type \{number\} \Hypertarget{_0dgoogle-cloud_2firestore_2build_2src_2timestamp_8js_a54edc55e78f5d26c70f26291fa2b916c}\index{timestamp.js@{timestamp.js}!MS\_TO\_NANOS@{MS\_TO\_NANOS}}
+\index{MS\_TO\_NANOS@{MS\_TO\_NANOS}!timestamp.js@{timestamp.js}}
+\doxysubsubsection{\texorpdfstring{MS\_TO\_NANOS}{MS\_TO\_NANOS}}
+{\footnotesize\ttfamily \label{_0dgoogle-cloud_2firestore_2build_2src_2timestamp_8js_a54edc55e78f5d26c70f26291fa2b916c} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} MS\+\_\+\+TO\+\_\+\+NANOS = 1000000}
+
+Number of nanoseconds in a millisecond.
+
+@type \{number\} \Hypertarget{_0dgoogle-cloud_2firestore_2build_2src_2timestamp_8js_ae2475e10618961c050dcba04e8c42331}\index{timestamp.js@{timestamp.js}!strict@{strict}}
+\index{strict@{strict}!timestamp.js@{timestamp.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{_0dgoogle-cloud_2firestore_2build_2src_2timestamp_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+
+\Hypertarget{_0dgoogle-cloud_2firestore_2build_2src_2timestamp_8js_abf6b4c53c4942b00e883191002c701bc}\index{timestamp.js@{timestamp.js}!Timestamp@{Timestamp}}
+\index{Timestamp@{Timestamp}!timestamp.js@{timestamp.js}}
+\doxysubsubsection{\texorpdfstring{Timestamp}{Timestamp}}
+{\footnotesize\ttfamily \label{_0dgoogle-cloud_2firestore_2build_2src_2timestamp_8js_abf6b4c53c4942b00e883191002c701bc} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} Timestamp = void 0}
+
+\Hypertarget{_0dgoogle-cloud_2firestore_2build_2src_2timestamp_8js_aa37716c5385ffbe958d12dba0dab85f8}\index{timestamp.js@{timestamp.js}!validate\_1@{validate\_1}}
+\index{validate\_1@{validate\_1}!timestamp.js@{timestamp.js}}
+\doxysubsubsection{\texorpdfstring{validate\_1}{validate\_1}}
+{\footnotesize\ttfamily \label{_0dgoogle-cloud_2firestore_2build_2src_2timestamp_8js_aa37716c5385ffbe958d12dba0dab85f8} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} validate\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./validate"{})}
+

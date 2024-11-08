@@ -1,0 +1,34 @@
+\doxysection{/\+Users/nicoletiokhin/\+Desktop/\+Software Semester 3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/lodash/reduce.\+js}
+\hypertarget{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_53b87de4948c751e902ab28d07bc348e}{}\label{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_53b87de4948c751e902ab28d07bc348e}Reduces {\ttfamily collection} to a value which is the accumulated result of running each element in {\ttfamily collection} thru {\ttfamily iteratee}, where each successive invocation is supplied the return value of the previous. If {\ttfamily accumulator} is not given, the first element of {\ttfamily collection} is used as the initial value. The iteratee is invoked with four arguments\+: (accumulator, value, index\texorpdfstring{$\vert$}{|}key, collection).
+
+Many lodash methods are guarded to work as iteratees for methods like {\ttfamily \+\_\+.\+reduce}, {\ttfamily \+\_\+.\+reduce\+Right}, and {\ttfamily \+\_\+.\+transform}.
+
+The guarded methods are\+: {\ttfamily assign}, {\ttfamily defaults}, {\ttfamily defaults\+Deep}, {\ttfamily includes}, {\ttfamily merge}, {\ttfamily order\+By}, and {\ttfamily sort\+By}
+
+@member\+Of \+\_\+ \begin{DoxySince}{Since}
+0.\+1.\+0
+\end{DoxySince}
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Array\texorpdfstring{$\vert$}{|}\+Object\}} & collection The collection to iterate over. \\
+\hline
+{\em \{\+Function\}} & \mbox{[}iteratee=\+\_\+.\+identity\mbox{]} The function invoked per iteration. \\
+\hline
+{\em \{\texorpdfstring{$\ast$}{*}\}} & \mbox{[}accumulator\mbox{]} The initial value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{\texorpdfstring{$\ast$}{*}\} Returns the accumulated value. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\+\_\+.\+reduce\+Right
+\end{DoxySeeAlso}
+\+\_\+.\+reduce(\mbox{[}1, 2\mbox{]}, function(sum, n) \{ return sum + n; \}, 0); // =\texorpdfstring{$>$}{>} 3
+
+\+\_\+.\+reduce(\{ \textquotesingle{}a\textquotesingle{}\+: 1, \textquotesingle{}b\textquotesingle{}\+: 2, \textquotesingle{}c\textquotesingle{}\+: 1 \}, function(result, value, key) \{ (result\mbox{[}value\mbox{]} \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} (result\mbox{[}value\mbox{]} = \mbox{[}\mbox{]})).\doxylink{__base_convert_8js_aa24e781fe0b662d38aac138432ec5e48}{push(key)}; return result; \}, \{\}); // =\texorpdfstring{$>$}{>} \{ \textquotesingle{}1\textquotesingle{}\+: \mbox{[}\textquotesingle{}a\textquotesingle{}, \textquotesingle{}c\textquotesingle{}\mbox{]}, \textquotesingle{}2\textquotesingle{}\+: \mbox{[}\textquotesingle{}b\textquotesingle{}\mbox{]} \} (iteration order is not guaranteed)
+
+
+\begin{DoxyCodeInclude}{0}
+
+\end{DoxyCodeInclude}
+ Semester \doxylink{lodash_2reduce_8js}{3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/lodash/reduce.\+js} 

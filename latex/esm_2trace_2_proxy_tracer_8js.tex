@@ -1,0 +1,65 @@
+\doxysection{backend/node\+\_\+modules/@opentelemetry/api/build/esm/trace/\+Proxy\+Tracer.js File Reference}
+\hypertarget{esm_2trace_2_proxy_tracer_8js}{}\label{esm_2trace_2_proxy_tracer_8js}\index{backend/node\_modules/"@opentelemetry/api/build/esm/trace/ProxyTracer.js@{backend/node\_modules/"@opentelemetry/api/build/esm/trace/ProxyTracer.js}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{esm_2trace_2_proxy_tracer_8js_a59be084da8908b7d77ff34b25cd84488}{import}} \{ \mbox{\hyperlink{class_noop_tracer}{Noop\+Tracer}} \} from \textquotesingle{}./\mbox{\hyperlink{class_noop_tracer}{Noop\+Tracer}}\textquotesingle{}
+\item 
+var \mbox{\hyperlink{esm_2trace_2_proxy_tracer_8js_a58153a3802266b4fe52424ec82f3e9e9}{NOOP\+\_\+\+TRACER}} = new \mbox{\hyperlink{class_noop_tracer}{Noop\+Tracer}}()
+\item 
+var \mbox{\hyperlink{esm_2trace_2_proxy_tracer_8js_acd5665786e463a609d91e8dda4e8be4a}{Proxy\+Tracer}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{esm_2trace_2_proxy_tracer_8js_a59be084da8908b7d77ff34b25cd84488}\index{ProxyTracer.js@{ProxyTracer.js}!import@{import}}
+\index{import@{import}!ProxyTracer.js@{ProxyTracer.js}}
+\doxysubsubsection{\texorpdfstring{import}{import}}
+{\footnotesize\ttfamily \label{esm_2trace_2_proxy_tracer_8js_a59be084da8908b7d77ff34b25cd84488} 
+import \{ \mbox{\hyperlink{class_noop_tracer}{Noop\+Tracer}} \} from \textquotesingle{}./\mbox{\hyperlink{class_noop_tracer}{Noop\+Tracer}}\textquotesingle{}}
+
+\Hypertarget{esm_2trace_2_proxy_tracer_8js_a58153a3802266b4fe52424ec82f3e9e9}\index{ProxyTracer.js@{ProxyTracer.js}!NOOP\_TRACER@{NOOP\_TRACER}}
+\index{NOOP\_TRACER@{NOOP\_TRACER}!ProxyTracer.js@{ProxyTracer.js}}
+\doxysubsubsection{\texorpdfstring{NOOP\_TRACER}{NOOP\_TRACER}}
+{\footnotesize\ttfamily \label{esm_2trace_2_proxy_tracer_8js_a58153a3802266b4fe52424ec82f3e9e9} 
+var NOOP\+\_\+\+TRACER = new \mbox{\hyperlink{class_noop_tracer}{Noop\+Tracer}}()}
+
+\Hypertarget{esm_2trace_2_proxy_tracer_8js_acd5665786e463a609d91e8dda4e8be4a}\index{ProxyTracer.js@{ProxyTracer.js}!ProxyTracer@{ProxyTracer}}
+\index{ProxyTracer@{ProxyTracer}!ProxyTracer.js@{ProxyTracer.js}}
+\doxysubsubsection{\texorpdfstring{ProxyTracer}{ProxyTracer}}
+{\footnotesize\ttfamily \label{esm_2trace_2_proxy_tracer_8js_acd5665786e463a609d91e8dda4e8be4a} 
+Proxy\+Tracer}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ (\textcolor{keyword}{function}\ ()\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{function}\ \mbox{\hyperlink{esm_2trace_2_proxy_tracer_8js_acd5665786e463a609d91e8dda4e8be4a}{ProxyTracer}}(\_provider,\ \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}},\ \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a265a39dcf2f0b7c6b96574362aa01ad9}{version}},\ options)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ this.\_provider\ =\ \_provider;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ this.\mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}\ =\ \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ this.\mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a265a39dcf2f0b7c6b96574362aa01ad9}{version}}\ =\ \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a265a39dcf2f0b7c6b96574362aa01ad9}{version}};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ this.options\ =\ options;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{class_proxy_tracer}{ProxyTracer}}.prototype.\mbox{\hyperlink{class_proxy_tracer_a7027c258920963c3d4d2314235679f6e}{startSpan}}\ =\ \textcolor{keyword}{function}\ (\mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}},\ options,\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ this.\_getTracer().startSpan(\mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}},\ options,\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}});}
+\DoxyCodeLine{\ \ \ \ \};}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{class_proxy_tracer}{ProxyTracer}}.prototype.\mbox{\hyperlink{class_proxy_tracer_a3389db260f108029201d7199dc43f525}{startActiveSpan}}\ =\ \textcolor{keyword}{function}\ (\_name,\ \mbox{\hyperlink{express_2lib_2router_2route_8js_a6d3af37c53447908498ec53885a92a16}{\_options}},\ \_context,\ \_fn)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ var\ tracer\ =\ this.\_getTracer();}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ Reflect.apply(tracer.startActiveSpan,\ tracer,\ arguments);}
+\DoxyCodeLine{\ \ \ \ \};}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{class_proxy_tracer}{ProxyTracer}}.prototype.\mbox{\hyperlink{class_proxy_tracer_ae3b3af2122abda9d74e5be59e4d2435b}{\_getTracer}}\ =\ \textcolor{keyword}{function}\ ()\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (this.\_delegate)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ this.\_delegate;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ var\ tracer\ =\ this.\_provider.getDelegateTracer(this.\mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}},\ this.\mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a265a39dcf2f0b7c6b96574362aa01ad9}{version}},\ this.options);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!tracer)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{esm_2trace_2_proxy_tracer_8js_a58153a3802266b4fe52424ec82f3e9e9}{NOOP\_TRACER}};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ this.\_delegate\ =\ tracer;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ this.\_delegate;}
+\DoxyCodeLine{\ \ \ \ \};}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{esm_2trace_2_proxy_tracer_8js_acd5665786e463a609d91e8dda4e8be4a}{ProxyTracer}};}
+\DoxyCodeLine{\}())}
+
+\end{DoxyCode}
+Proxy tracer provided by the proxy tracer provider 

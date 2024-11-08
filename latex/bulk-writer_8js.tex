@@ -1,0 +1,211 @@
+\doxysection{backend/node\+\_\+modules/@google-\/cloud/firestore/build/src/bulk-\/writer.js File Reference}
+\hypertarget{bulk-writer_8js}{}\label{bulk-writer_8js}\index{backend/node\_modules/"@google-\/cloud/firestore/build/src/bulk-\/writer.js@{backend/node\_modules/"@google-\/cloud/firestore/build/src/bulk-\/writer.js}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_bulk_writer_operation}{Bulk\+Writer\+Operation}}
+\item 
+class \mbox{\hyperlink{class_bulk_commit_batch}{Bulk\+Commit\+Batch}}
+\item 
+class \mbox{\hyperlink{class_buffered_operation}{Buffered\+Operation}}
+\item 
+class \mbox{\hyperlink{class_bulk_writer_error}{Bulk\+Writer\+Error}}
+\item 
+class \mbox{\hyperlink{class_bulk_writer}{Bulk\+Writer}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{bulk-writer_8js_ae4fe45f3eddfd8d8a074bccc2c8f21a9}{validate\+Bulk\+Writer\+Options}} (\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{bulk-writer_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{bulk-writer_8js_a9175037a51364a4ffec0b7cc3cf50b46}{Bulk\+Writer}} = exports.\+Bulk\+Writer\+Error = \mbox{\hyperlink{backoff_8js_a4484a8f89ba5d94007aed34462d6dab2}{exports.\+DEFAULT\+\_\+\+JITTER\+\_\+\+FACTOR}} = \mbox{\hyperlink{bulk-writer_8js_ac791cb29840446058fcb45f19b7c0fe2}{exports.\+DEFAULT\+\_\+\+MAXIMUM\+\_\+\+OPS\+\_\+\+PER\+\_\+\+SECOND\+\_\+\+LIMIT}} = \mbox{\hyperlink{bulk-writer_8js_a42b65e338d7e974742f3fecfe2f60d22}{exports.\+DEFAULT\+\_\+\+INITIAL\+\_\+\+OPS\+\_\+\+PER\+\_\+\+SECOND\+\_\+\+LIMIT}} = \mbox{\hyperlink{bulk-writer_8js_a7736013c6a0aab0e302a723d6fe6f2eb}{exports.\+RETRY\+\_\+\+MAX\+\_\+\+BATCH\+\_\+\+SIZE}} = void 0
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{bulk-writer_8js_a0a4d6a89916a48f4ba0e696e93dfc003}{assert}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}assert"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{bulk-writer_8js_a2a99b35f5acb6783c8f83ba70a05086a}{backoff\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./backoff"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{bulk-writer_8js_a21a0e741d21a21504234f0868e279cc9}{rate\+\_\+limiter\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./rate-\/limiter"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{bulk-writer_8js_ade04b24e14507564885ddbb231b3fc20}{timestamp\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./timestamp"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{bulk-writer_8js_a6af3fa6e24c6a46faf4552f3a2ad8783}{util\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./util"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{bulk-writer_8js_afdb4afc67cf9ed400ebe5293b0c916bb}{write\+\_\+batch\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./write-\/batch"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{bulk-writer_8js_aa37716c5385ffbe958d12dba0dab85f8}{validate\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./validate"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{bulk-writer_8js_aa6fdd07b218f5ee1f103f79a4ad6d5f1}{logger\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./logger"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{bulk-writer_8js_a95595af408c99329f2c923e26c08df94}{trace\+\_\+util\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./telemetry/\mbox{\hyperlink{logging_8js_acb1634453d1705af9683695efa3847e6}{trace}}-\/util"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{bulk-writer_8js_ad70a361f631cb8c6472222ce2c161cd8}{MAX\+\_\+\+BATCH\+\_\+\+SIZE}} = 20
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{bulk-writer_8js_a7736013c6a0aab0e302a723d6fe6f2eb}{RETRY\+\_\+\+MAX\+\_\+\+BATCH\+\_\+\+SIZE}} = 10
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{bulk-writer_8js_a42b65e338d7e974742f3fecfe2f60d22}{DEFAULT\+\_\+\+INITIAL\+\_\+\+OPS\+\_\+\+PER\+\_\+\+SECOND\+\_\+\+LIMIT}} = 500
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{bulk-writer_8js_ac791cb29840446058fcb45f19b7c0fe2}{DEFAULT\+\_\+\+MAXIMUM\+\_\+\+OPS\+\_\+\+PER\+\_\+\+SECOND\+\_\+\+LIMIT}} = 10000
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{bulk-writer_8js_ab67e7a5d352cec3443b6485e2a07528b}{DEFAULT\+\_\+\+JITTER\+\_\+\+FACTOR}} = 0.\+3
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{bulk-writer_8js_a095f28742b9b852bfc24f1049e3836a4}{RATE\+\_\+\+LIMITER\+\_\+\+MULTIPLIER}} = 1.\+5
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{bulk-writer_8js_ac25e75ab75c15af1d2adb3780a06e980}{RATE\+\_\+\+LIMITER\+\_\+\+MULTIPLIER\+\_\+\+MILLIS}} = 5 \texorpdfstring{$\ast$}{*} 60 \texorpdfstring{$\ast$}{*} 1000
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{bulk-writer_8js_a083bffda1f1d06c54602a8931366057e}{DEFAULT\+\_\+\+MAXIMUM\+\_\+\+PENDING\+\_\+\+OPERATIONS\+\_\+\+COUNT}} = 500
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{bulk-writer_8js_a5cdd30f92244b2dc8928e07bb94b7527}{Bulk\+Writer\+Error}} = Bulk\+Writer\+Error
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{bulk-writer_8js_ae4fe45f3eddfd8d8a074bccc2c8f21a9}\index{bulk-\/writer.js@{bulk-\/writer.js}!validateBulkWriterOptions@{validateBulkWriterOptions}}
+\index{validateBulkWriterOptions@{validateBulkWriterOptions}!bulk-\/writer.js@{bulk-\/writer.js}}
+\doxysubsubsection{\texorpdfstring{validateBulkWriterOptions()}{validateBulkWriterOptions()}}
+{\footnotesize\ttfamily \label{bulk-writer_8js_ae4fe45f3eddfd8d8a074bccc2c8f21a9} 
+function validate\+Bulk\+Writer\+Options (\begin{DoxyParamCaption}\item[{}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Validates the use of \textquotesingle{}value\textquotesingle{} as Bulk\+Writer\+Options. 
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{core_8min_8js_a46d2d1e8780c9b3b6a642760bb148e61}{an}}, \mbox{\hyperlink{express_2lib_2request_8js_a5e3afd97276cc403924d1a449a83ea84}{is}}, \mbox{\hyperlink{long_2index_8js_ad7dc44f0ebdb746f4a5b0612ae9315cb}{not}}, \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}, \mbox{\hyperlink{bulk-writer_8js_a6af3fa6e24c6a46faf4552f3a2ad8783}{util\+\_\+1}}, \mbox{\hyperlink{bulk-writer_8js_aa37716c5385ffbe958d12dba0dab85f8}{validate\+\_\+1}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{bulk-writer_8js_ae4fe45f3eddfd8d8a074bccc2c8f21a9_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{bulk-writer_8js_a0a4d6a89916a48f4ba0e696e93dfc003}\index{bulk-\/writer.js@{bulk-\/writer.js}!assert@{assert}}
+\index{assert@{assert}!bulk-\/writer.js@{bulk-\/writer.js}}
+\doxysubsubsection{\texorpdfstring{assert}{assert}}
+{\footnotesize\ttfamily \label{bulk-writer_8js_a0a4d6a89916a48f4ba0e696e93dfc003} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} assert = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}assert"{})}
+
+\Hypertarget{bulk-writer_8js_a2a99b35f5acb6783c8f83ba70a05086a}\index{bulk-\/writer.js@{bulk-\/writer.js}!backoff\_1@{backoff\_1}}
+\index{backoff\_1@{backoff\_1}!bulk-\/writer.js@{bulk-\/writer.js}}
+\doxysubsubsection{\texorpdfstring{backoff\_1}{backoff\_1}}
+{\footnotesize\ttfamily \label{bulk-writer_8js_a2a99b35f5acb6783c8f83ba70a05086a} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} backoff\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./backoff"{})}
+
+\Hypertarget{bulk-writer_8js_a9175037a51364a4ffec0b7cc3cf50b46}\index{bulk-\/writer.js@{bulk-\/writer.js}!BulkWriter@{BulkWriter}}
+\index{BulkWriter@{BulkWriter}!bulk-\/writer.js@{bulk-\/writer.js}}
+\doxysubsubsection{\texorpdfstring{BulkWriter}{BulkWriter}}
+{\footnotesize\ttfamily \label{bulk-writer_8js_a9175037a51364a4ffec0b7cc3cf50b46} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} Bulk\+Writer = exports.\+Bulk\+Writer\+Error = \mbox{\hyperlink{backoff_8js_a4484a8f89ba5d94007aed34462d6dab2}{exports.\+DEFAULT\+\_\+\+JITTER\+\_\+\+FACTOR}} = \mbox{\hyperlink{bulk-writer_8js_ac791cb29840446058fcb45f19b7c0fe2}{exports.\+DEFAULT\+\_\+\+MAXIMUM\+\_\+\+OPS\+\_\+\+PER\+\_\+\+SECOND\+\_\+\+LIMIT}} = \mbox{\hyperlink{bulk-writer_8js_a42b65e338d7e974742f3fecfe2f60d22}{exports.\+DEFAULT\+\_\+\+INITIAL\+\_\+\+OPS\+\_\+\+PER\+\_\+\+SECOND\+\_\+\+LIMIT}} = \mbox{\hyperlink{bulk-writer_8js_a7736013c6a0aab0e302a723d6fe6f2eb}{exports.\+RETRY\+\_\+\+MAX\+\_\+\+BATCH\+\_\+\+SIZE}} = void 0}
+
+\Hypertarget{bulk-writer_8js_a5cdd30f92244b2dc8928e07bb94b7527}\index{bulk-\/writer.js@{bulk-\/writer.js}!BulkWriterError@{BulkWriterError}}
+\index{BulkWriterError@{BulkWriterError}!bulk-\/writer.js@{bulk-\/writer.js}}
+\doxysubsubsection{\texorpdfstring{BulkWriterError}{BulkWriterError}}
+{\footnotesize\ttfamily \label{bulk-writer_8js_a5cdd30f92244b2dc8928e07bb94b7527} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} Bulk\+Writer\+Error = Bulk\+Writer\+Error}
+
+\Hypertarget{bulk-writer_8js_a42b65e338d7e974742f3fecfe2f60d22}\index{bulk-\/writer.js@{bulk-\/writer.js}!DEFAULT\_INITIAL\_OPS\_PER\_SECOND\_LIMIT@{DEFAULT\_INITIAL\_OPS\_PER\_SECOND\_LIMIT}}
+\index{DEFAULT\_INITIAL\_OPS\_PER\_SECOND\_LIMIT@{DEFAULT\_INITIAL\_OPS\_PER\_SECOND\_LIMIT}!bulk-\/writer.js@{bulk-\/writer.js}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_INITIAL\_OPS\_PER\_SECOND\_LIMIT}{DEFAULT\_INITIAL\_OPS\_PER\_SECOND\_LIMIT}}
+{\footnotesize\ttfamily \label{bulk-writer_8js_a42b65e338d7e974742f3fecfe2f60d22} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} DEFAULT\+\_\+\+INITIAL\+\_\+\+OPS\+\_\+\+PER\+\_\+\+SECOND\+\_\+\+LIMIT = 500}
+
+The starting maximum number of operations per second as allowed by the 500/50/5 rule.
+
+\href{https://firebase.google.com/docs/firestore/best-practices\#ramping_up_traffic}{\texttt{ https\+://firebase.\+google.\+com/docs/firestore/best-\/practices\#ramping\+\_\+up\+\_\+traffic}}. \Hypertarget{bulk-writer_8js_ab67e7a5d352cec3443b6485e2a07528b}\index{bulk-\/writer.js@{bulk-\/writer.js}!DEFAULT\_JITTER\_FACTOR@{DEFAULT\_JITTER\_FACTOR}}
+\index{DEFAULT\_JITTER\_FACTOR@{DEFAULT\_JITTER\_FACTOR}!bulk-\/writer.js@{bulk-\/writer.js}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_JITTER\_FACTOR}{DEFAULT\_JITTER\_FACTOR}}
+{\footnotesize\ttfamily \label{bulk-writer_8js_ab67e7a5d352cec3443b6485e2a07528b} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} DEFAULT\+\_\+\+JITTER\+\_\+\+FACTOR = 0.\+3}
+
+The default jitter to apply to the exponential backoff used in retries. For example, a factor of 0.\+3 means a 30\% jitter is applied. \Hypertarget{bulk-writer_8js_ac791cb29840446058fcb45f19b7c0fe2}\index{bulk-\/writer.js@{bulk-\/writer.js}!DEFAULT\_MAXIMUM\_OPS\_PER\_SECOND\_LIMIT@{DEFAULT\_MAXIMUM\_OPS\_PER\_SECOND\_LIMIT}}
+\index{DEFAULT\_MAXIMUM\_OPS\_PER\_SECOND\_LIMIT@{DEFAULT\_MAXIMUM\_OPS\_PER\_SECOND\_LIMIT}!bulk-\/writer.js@{bulk-\/writer.js}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_MAXIMUM\_OPS\_PER\_SECOND\_LIMIT}{DEFAULT\_MAXIMUM\_OPS\_PER\_SECOND\_LIMIT}}
+{\footnotesize\ttfamily \label{bulk-writer_8js_ac791cb29840446058fcb45f19b7c0fe2} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} DEFAULT\+\_\+\+MAXIMUM\+\_\+\+OPS\+\_\+\+PER\+\_\+\+SECOND\+\_\+\+LIMIT = 10000}
+
+The maximum number of operations per second as allowed by the 500/50/5 rule. By default the rate limiter will not exceed this value.
+
+\href{https://firebase.google.com/docs/firestore/best-practices\#ramping_up_traffic}{\texttt{ https\+://firebase.\+google.\+com/docs/firestore/best-\/practices\#ramping\+\_\+up\+\_\+traffic}}. \Hypertarget{bulk-writer_8js_a083bffda1f1d06c54602a8931366057e}\index{bulk-\/writer.js@{bulk-\/writer.js}!DEFAULT\_MAXIMUM\_PENDING\_OPERATIONS\_COUNT@{DEFAULT\_MAXIMUM\_PENDING\_OPERATIONS\_COUNT}}
+\index{DEFAULT\_MAXIMUM\_PENDING\_OPERATIONS\_COUNT@{DEFAULT\_MAXIMUM\_PENDING\_OPERATIONS\_COUNT}!bulk-\/writer.js@{bulk-\/writer.js}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_MAXIMUM\_PENDING\_OPERATIONS\_COUNT}{DEFAULT\_MAXIMUM\_PENDING\_OPERATIONS\_COUNT}}
+{\footnotesize\ttfamily \label{bulk-writer_8js_a083bffda1f1d06c54602a8931366057e} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} DEFAULT\+\_\+\+MAXIMUM\+\_\+\+PENDING\+\_\+\+OPERATIONS\+\_\+\+COUNT = 500}
+
+The default maximum number of pending operations that can be enqueued onto a \doxylink{class_bulk_writer}{Bulk\+Writer} instance. An operation is considered pending if \doxylink{class_bulk_writer}{Bulk\+Writer} has sent it via RPC and is awaiting the result. \doxylink{class_bulk_writer}{Bulk\+Writer} buffers additional writes after this many pending operations in order to avoiding going OOM. \Hypertarget{bulk-writer_8js_aa6fdd07b218f5ee1f103f79a4ad6d5f1}\index{bulk-\/writer.js@{bulk-\/writer.js}!logger\_1@{logger\_1}}
+\index{logger\_1@{logger\_1}!bulk-\/writer.js@{bulk-\/writer.js}}
+\doxysubsubsection{\texorpdfstring{logger\_1}{logger\_1}}
+{\footnotesize\ttfamily \label{bulk-writer_8js_aa6fdd07b218f5ee1f103f79a4ad6d5f1} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} logger\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./logger"{})}
+
+\Hypertarget{bulk-writer_8js_ad70a361f631cb8c6472222ce2c161cd8}\index{bulk-\/writer.js@{bulk-\/writer.js}!MAX\_BATCH\_SIZE@{MAX\_BATCH\_SIZE}}
+\index{MAX\_BATCH\_SIZE@{MAX\_BATCH\_SIZE}!bulk-\/writer.js@{bulk-\/writer.js}}
+\doxysubsubsection{\texorpdfstring{MAX\_BATCH\_SIZE}{MAX\_BATCH\_SIZE}}
+{\footnotesize\ttfamily \label{bulk-writer_8js_ad70a361f631cb8c6472222ce2c161cd8} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} MAX\+\_\+\+BATCH\+\_\+\+SIZE = 20}
+
+The maximum number of writes that can be in a single batch. \Hypertarget{bulk-writer_8js_a21a0e741d21a21504234f0868e279cc9}\index{bulk-\/writer.js@{bulk-\/writer.js}!rate\_limiter\_1@{rate\_limiter\_1}}
+\index{rate\_limiter\_1@{rate\_limiter\_1}!bulk-\/writer.js@{bulk-\/writer.js}}
+\doxysubsubsection{\texorpdfstring{rate\_limiter\_1}{rate\_limiter\_1}}
+{\footnotesize\ttfamily \label{bulk-writer_8js_a21a0e741d21a21504234f0868e279cc9} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} rate\+\_\+limiter\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./rate-\/limiter"{})}
+
+\Hypertarget{bulk-writer_8js_a095f28742b9b852bfc24f1049e3836a4}\index{bulk-\/writer.js@{bulk-\/writer.js}!RATE\_LIMITER\_MULTIPLIER@{RATE\_LIMITER\_MULTIPLIER}}
+\index{RATE\_LIMITER\_MULTIPLIER@{RATE\_LIMITER\_MULTIPLIER}!bulk-\/writer.js@{bulk-\/writer.js}}
+\doxysubsubsection{\texorpdfstring{RATE\_LIMITER\_MULTIPLIER}{RATE\_LIMITER\_MULTIPLIER}}
+{\footnotesize\ttfamily \label{bulk-writer_8js_a095f28742b9b852bfc24f1049e3836a4} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} RATE\+\_\+\+LIMITER\+\_\+\+MULTIPLIER = 1.\+5}
+
+The rate by which to increase the capacity as specified by the 500/50/5 rule. \Hypertarget{bulk-writer_8js_ac25e75ab75c15af1d2adb3780a06e980}\index{bulk-\/writer.js@{bulk-\/writer.js}!RATE\_LIMITER\_MULTIPLIER\_MILLIS@{RATE\_LIMITER\_MULTIPLIER\_MILLIS}}
+\index{RATE\_LIMITER\_MULTIPLIER\_MILLIS@{RATE\_LIMITER\_MULTIPLIER\_MILLIS}!bulk-\/writer.js@{bulk-\/writer.js}}
+\doxysubsubsection{\texorpdfstring{RATE\_LIMITER\_MULTIPLIER\_MILLIS}{RATE\_LIMITER\_MULTIPLIER\_MILLIS}}
+{\footnotesize\ttfamily \label{bulk-writer_8js_ac25e75ab75c15af1d2adb3780a06e980} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} RATE\+\_\+\+LIMITER\+\_\+\+MULTIPLIER\+\_\+\+MILLIS = 5 \texorpdfstring{$\ast$}{*} 60 \texorpdfstring{$\ast$}{*} 1000}
+
+How often the operations per second capacity should increase in milliseconds as specified by the 500/50/5 rule. \Hypertarget{bulk-writer_8js_a7736013c6a0aab0e302a723d6fe6f2eb}\index{bulk-\/writer.js@{bulk-\/writer.js}!RETRY\_MAX\_BATCH\_SIZE@{RETRY\_MAX\_BATCH\_SIZE}}
+\index{RETRY\_MAX\_BATCH\_SIZE@{RETRY\_MAX\_BATCH\_SIZE}!bulk-\/writer.js@{bulk-\/writer.js}}
+\doxysubsubsection{\texorpdfstring{RETRY\_MAX\_BATCH\_SIZE}{RETRY\_MAX\_BATCH\_SIZE}}
+{\footnotesize\ttfamily \label{bulk-writer_8js_a7736013c6a0aab0e302a723d6fe6f2eb} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} RETRY\+\_\+\+MAX\+\_\+\+BATCH\+\_\+\+SIZE = 10}
+
+The maximum number of writes can be can in a single batch that is being retried. \Hypertarget{bulk-writer_8js_ae2475e10618961c050dcba04e8c42331}\index{bulk-\/writer.js@{bulk-\/writer.js}!strict@{strict}}
+\index{strict@{strict}!bulk-\/writer.js@{bulk-\/writer.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{bulk-writer_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+
+\Hypertarget{bulk-writer_8js_ade04b24e14507564885ddbb231b3fc20}\index{bulk-\/writer.js@{bulk-\/writer.js}!timestamp\_1@{timestamp\_1}}
+\index{timestamp\_1@{timestamp\_1}!bulk-\/writer.js@{bulk-\/writer.js}}
+\doxysubsubsection{\texorpdfstring{timestamp\_1}{timestamp\_1}}
+{\footnotesize\ttfamily \label{bulk-writer_8js_ade04b24e14507564885ddbb231b3fc20} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} timestamp\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./timestamp"{})}
+
+\Hypertarget{bulk-writer_8js_a95595af408c99329f2c923e26c08df94}\index{bulk-\/writer.js@{bulk-\/writer.js}!trace\_util\_1@{trace\_util\_1}}
+\index{trace\_util\_1@{trace\_util\_1}!bulk-\/writer.js@{bulk-\/writer.js}}
+\doxysubsubsection{\texorpdfstring{trace\_util\_1}{trace\_util\_1}}
+{\footnotesize\ttfamily \label{bulk-writer_8js_a95595af408c99329f2c923e26c08df94} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} trace\+\_\+util\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./telemetry/\mbox{\hyperlink{logging_8js_acb1634453d1705af9683695efa3847e6}{trace}}-\/util"{})}
+
+\Hypertarget{bulk-writer_8js_a6af3fa6e24c6a46faf4552f3a2ad8783}\index{bulk-\/writer.js@{bulk-\/writer.js}!util\_1@{util\_1}}
+\index{util\_1@{util\_1}!bulk-\/writer.js@{bulk-\/writer.js}}
+\doxysubsubsection{\texorpdfstring{util\_1}{util\_1}}
+{\footnotesize\ttfamily \label{bulk-writer_8js_a6af3fa6e24c6a46faf4552f3a2ad8783} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} util\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./util"{})}
+
+\Hypertarget{bulk-writer_8js_aa37716c5385ffbe958d12dba0dab85f8}\index{bulk-\/writer.js@{bulk-\/writer.js}!validate\_1@{validate\_1}}
+\index{validate\_1@{validate\_1}!bulk-\/writer.js@{bulk-\/writer.js}}
+\doxysubsubsection{\texorpdfstring{validate\_1}{validate\_1}}
+{\footnotesize\ttfamily \label{bulk-writer_8js_aa37716c5385ffbe958d12dba0dab85f8} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} validate\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./validate"{})}
+
+\Hypertarget{bulk-writer_8js_afdb4afc67cf9ed400ebe5293b0c916bb}\index{bulk-\/writer.js@{bulk-\/writer.js}!write\_batch\_1@{write\_batch\_1}}
+\index{write\_batch\_1@{write\_batch\_1}!bulk-\/writer.js@{bulk-\/writer.js}}
+\doxysubsubsection{\texorpdfstring{write\_batch\_1}{write\_batch\_1}}
+{\footnotesize\ttfamily \label{bulk-writer_8js_afdb4afc67cf9ed400ebe5293b0c916bb} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} write\+\_\+batch\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./write-\/batch"{})}
+

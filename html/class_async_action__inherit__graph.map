@@ -1,0 +1,15 @@
+<map id="AsyncAction" name="AsyncAction">
+<area shape="rect" id="Node000001" title=" " alt="" coords="246,376,369,565"/>
+<area shape="rect" id="Node000004" href="$class_animation_frame_action.html" title=" " alt="" coords="5,643,148,750"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="237,542,163,615,131,645,128,641,159,611,234,539"/>
+<area shape="rect" id="Node000005" href="$class_asap_action.html" title=" " alt="" coords="172,643,296,750"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="275,579,253,644,248,643,270,577"/>
+<area shape="rect" id="Node000006" href="$class_queue_action.html" title=" " alt="" coords="319,633,442,760"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="345,578,363,632,358,634,340,579"/>
+<area shape="rect" id="Node000007" href="$class_virtual_action.html" title=" " alt="" coords="466,613,589,781"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="381,537,456,611,468,624,464,627,452,615,378,541"/>
+<area shape="rect" id="Node000002" href="$class_action.html" title=" " alt="" coords="259,242,356,328"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="310,344,310,376,305,376,305,344"/>
+<area shape="rect" id="Node000003" href="$class_subscription.html" title=" " alt="" coords="247,5,367,194"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="310,208,310,242,305,242,305,208"/>
+</map>

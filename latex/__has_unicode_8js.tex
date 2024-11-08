@@ -1,0 +1,109 @@
+\doxysection{backend/node\+\_\+modules/lodash/\+\_\+has\+Unicode.js File Reference}
+\hypertarget{__has_unicode_8js}{}\label{__has_unicode_8js}\index{backend/node\_modules/lodash/\_hasUnicode.js@{backend/node\_modules/lodash/\_hasUnicode.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{__has_unicode_8js_ad47921b4384f9f2024edad5186eb0e78}{has\+Unicode}} (\mbox{\hyperlink{reader_8js_a5c10456fb38514f2fe2b2da9323924ac}{string}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{__has_unicode_8js_aac2496148c2bae8f025a68dc5a0b9417}{rs\+Astral\+Range}} = \textquotesingle{}\textbackslash{}\textbackslash{}ud800-\/\textbackslash{}\textbackslash{}udfff\textquotesingle{}
+\item 
+var \mbox{\hyperlink{__has_unicode_8js_a885aad772f5897d96e5f8767bcec88ed}{rs\+Combo\+Marks\+Range}} = \textquotesingle{}\textbackslash{}\textbackslash{}u0300-\/\textbackslash{}\textbackslash{}u036f\textquotesingle{}
+\item 
+var \mbox{\hyperlink{__has_unicode_8js_a94a4d252925472afd4f6b143853c19a0}{re\+Combo\+Half\+Marks\+Range}} = \textquotesingle{}\textbackslash{}\textbackslash{}ufe20-\/\textbackslash{}\textbackslash{}ufe2f\textquotesingle{}
+\item 
+var \mbox{\hyperlink{__has_unicode_8js_a515a0cb5a96082753fd36385bf86693e}{rs\+Combo\+Symbols\+Range}} = \textquotesingle{}\textbackslash{}\textbackslash{}u20d0-\/\textbackslash{}\textbackslash{}u20ff\textquotesingle{}
+\item 
+var \mbox{\hyperlink{__has_unicode_8js_a4a1eee3e8813830dd2fbd32b29b9247a}{rs\+Combo\+Range}} = \mbox{\hyperlink{lodash_8camelcase_2index_8js_a885aad772f5897d96e5f8767bcec88ed}{rs\+Combo\+Marks\+Range}} + \mbox{\hyperlink{__has_unicode_8js_a94a4d252925472afd4f6b143853c19a0}{re\+Combo\+Half\+Marks\+Range}} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_a515a0cb5a96082753fd36385bf86693e}{rs\+Combo\+Symbols\+Range}}
+\item 
+var \mbox{\hyperlink{__has_unicode_8js_a368fad66a39831fdfcf197df7a8e36de}{rs\+Var\+Range}} = \textquotesingle{}\textbackslash{}\textbackslash{}ufe0e\textbackslash{}\textbackslash{}ufe0f\textquotesingle{}
+\item 
+var \mbox{\hyperlink{__has_unicode_8js_acfd4af6a55c6291ade760cc82e35f69c}{rs\+ZWJ}} = \textquotesingle{}\textbackslash{}\textbackslash{}u200d\textquotesingle{}
+\item 
+var \mbox{\hyperlink{__has_unicode_8js_a010ca1beed0f67fe790aa7eb5d13aa77}{re\+Has\+Unicode}} = Reg\+Exp(\textquotesingle{}\mbox{[}\textquotesingle{} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_acfd4af6a55c6291ade760cc82e35f69c}{rs\+ZWJ}} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_aac2496148c2bae8f025a68dc5a0b9417}{rs\+Astral\+Range}} + \mbox{\hyperlink{__has_unicode_8js_a4a1eee3e8813830dd2fbd32b29b9247a}{rs\+Combo\+Range}} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_a368fad66a39831fdfcf197df7a8e36de}{rs\+Var\+Range}} + \textquotesingle{}\mbox{]}\textquotesingle{})
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{__has_unicode_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} = \mbox{\hyperlink{__create_case_first_8js_aee4627ce490299eb92074c18d3b14ec3}{has\+Unicode}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{__has_unicode_8js_ad47921b4384f9f2024edad5186eb0e78}\index{\_hasUnicode.js@{\_hasUnicode.js}!hasUnicode@{hasUnicode}}
+\index{hasUnicode@{hasUnicode}!\_hasUnicode.js@{\_hasUnicode.js}}
+\doxysubsubsection{\texorpdfstring{hasUnicode()}{hasUnicode()}}
+{\footnotesize\ttfamily \label{__has_unicode_8js_ad47921b4384f9f2024edad5186eb0e78} 
+function has\+Unicode (\begin{DoxyParamCaption}\item[{}]{string}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Checks if {\ttfamily string} contains Unicode symbols.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & string The string to inspect. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{boolean\} Returns {\ttfamily true} if a symbol is found, else {\ttfamily false}. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{__has_unicode_8js_a010ca1beed0f67fe790aa7eb5d13aa77}{re\+Has\+Unicode}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{__has_unicode_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\index{\_hasUnicode.js@{\_hasUnicode.js}!exports@{exports}}
+\index{exports@{exports}!\_hasUnicode.js@{\_hasUnicode.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \label{__has_unicode_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports = \mbox{\hyperlink{__create_case_first_8js_aee4627ce490299eb92074c18d3b14ec3}{has\+Unicode}}}
+
+\Hypertarget{__has_unicode_8js_a94a4d252925472afd4f6b143853c19a0}\index{\_hasUnicode.js@{\_hasUnicode.js}!reComboHalfMarksRange@{reComboHalfMarksRange}}
+\index{reComboHalfMarksRange@{reComboHalfMarksRange}!\_hasUnicode.js@{\_hasUnicode.js}}
+\doxysubsubsection{\texorpdfstring{reComboHalfMarksRange}{reComboHalfMarksRange}}
+{\footnotesize\ttfamily \label{__has_unicode_8js_a94a4d252925472afd4f6b143853c19a0} 
+var re\+Combo\+Half\+Marks\+Range = \textquotesingle{}\textbackslash{}\textbackslash{}ufe20-\/\textbackslash{}\textbackslash{}ufe2f\textquotesingle{}}
+
+\Hypertarget{__has_unicode_8js_a010ca1beed0f67fe790aa7eb5d13aa77}\index{\_hasUnicode.js@{\_hasUnicode.js}!reHasUnicode@{reHasUnicode}}
+\index{reHasUnicode@{reHasUnicode}!\_hasUnicode.js@{\_hasUnicode.js}}
+\doxysubsubsection{\texorpdfstring{reHasUnicode}{reHasUnicode}}
+{\footnotesize\ttfamily \label{__has_unicode_8js_a010ca1beed0f67fe790aa7eb5d13aa77} 
+var re\+Has\+Unicode = Reg\+Exp(\textquotesingle{}\mbox{[}\textquotesingle{} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_acfd4af6a55c6291ade760cc82e35f69c}{rs\+ZWJ}} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_aac2496148c2bae8f025a68dc5a0b9417}{rs\+Astral\+Range}} + \mbox{\hyperlink{__has_unicode_8js_a4a1eee3e8813830dd2fbd32b29b9247a}{rs\+Combo\+Range}} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_a368fad66a39831fdfcf197df7a8e36de}{rs\+Var\+Range}} + \textquotesingle{}\mbox{]}\textquotesingle{})}
+
+Used to detect strings with \href{http://eev.ee/blog/2015/09/12/dark-corners-of-unicode/}{\texttt{ zero-\/width joiners or code points from the astral planes}}. \Hypertarget{__has_unicode_8js_aac2496148c2bae8f025a68dc5a0b9417}\index{\_hasUnicode.js@{\_hasUnicode.js}!rsAstralRange@{rsAstralRange}}
+\index{rsAstralRange@{rsAstralRange}!\_hasUnicode.js@{\_hasUnicode.js}}
+\doxysubsubsection{\texorpdfstring{rsAstralRange}{rsAstralRange}}
+{\footnotesize\ttfamily \label{__has_unicode_8js_aac2496148c2bae8f025a68dc5a0b9417} 
+var rs\+Astral\+Range = \textquotesingle{}\textbackslash{}\textbackslash{}ud800-\/\textbackslash{}\textbackslash{}udfff\textquotesingle{}}
+
+Used to compose unicode character classes. \Hypertarget{__has_unicode_8js_a885aad772f5897d96e5f8767bcec88ed}\index{\_hasUnicode.js@{\_hasUnicode.js}!rsComboMarksRange@{rsComboMarksRange}}
+\index{rsComboMarksRange@{rsComboMarksRange}!\_hasUnicode.js@{\_hasUnicode.js}}
+\doxysubsubsection{\texorpdfstring{rsComboMarksRange}{rsComboMarksRange}}
+{\footnotesize\ttfamily \label{__has_unicode_8js_a885aad772f5897d96e5f8767bcec88ed} 
+var rs\+Combo\+Marks\+Range = \textquotesingle{}\textbackslash{}\textbackslash{}u0300-\/\textbackslash{}\textbackslash{}u036f\textquotesingle{}}
+
+\Hypertarget{__has_unicode_8js_a4a1eee3e8813830dd2fbd32b29b9247a}\index{\_hasUnicode.js@{\_hasUnicode.js}!rsComboRange@{rsComboRange}}
+\index{rsComboRange@{rsComboRange}!\_hasUnicode.js@{\_hasUnicode.js}}
+\doxysubsubsection{\texorpdfstring{rsComboRange}{rsComboRange}}
+{\footnotesize\ttfamily \label{__has_unicode_8js_a4a1eee3e8813830dd2fbd32b29b9247a} 
+var rs\+Combo\+Range = \mbox{\hyperlink{lodash_8camelcase_2index_8js_a885aad772f5897d96e5f8767bcec88ed}{rs\+Combo\+Marks\+Range}} + \mbox{\hyperlink{__has_unicode_8js_a94a4d252925472afd4f6b143853c19a0}{re\+Combo\+Half\+Marks\+Range}} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_a515a0cb5a96082753fd36385bf86693e}{rs\+Combo\+Symbols\+Range}}}
+
+\Hypertarget{__has_unicode_8js_a515a0cb5a96082753fd36385bf86693e}\index{\_hasUnicode.js@{\_hasUnicode.js}!rsComboSymbolsRange@{rsComboSymbolsRange}}
+\index{rsComboSymbolsRange@{rsComboSymbolsRange}!\_hasUnicode.js@{\_hasUnicode.js}}
+\doxysubsubsection{\texorpdfstring{rsComboSymbolsRange}{rsComboSymbolsRange}}
+{\footnotesize\ttfamily \label{__has_unicode_8js_a515a0cb5a96082753fd36385bf86693e} 
+var rs\+Combo\+Symbols\+Range = \textquotesingle{}\textbackslash{}\textbackslash{}u20d0-\/\textbackslash{}\textbackslash{}u20ff\textquotesingle{}}
+
+\Hypertarget{__has_unicode_8js_a368fad66a39831fdfcf197df7a8e36de}\index{\_hasUnicode.js@{\_hasUnicode.js}!rsVarRange@{rsVarRange}}
+\index{rsVarRange@{rsVarRange}!\_hasUnicode.js@{\_hasUnicode.js}}
+\doxysubsubsection{\texorpdfstring{rsVarRange}{rsVarRange}}
+{\footnotesize\ttfamily \label{__has_unicode_8js_a368fad66a39831fdfcf197df7a8e36de} 
+var rs\+Var\+Range = \textquotesingle{}\textbackslash{}\textbackslash{}ufe0e\textbackslash{}\textbackslash{}ufe0f\textquotesingle{}}
+
+\Hypertarget{__has_unicode_8js_acfd4af6a55c6291ade760cc82e35f69c}\index{\_hasUnicode.js@{\_hasUnicode.js}!rsZWJ@{rsZWJ}}
+\index{rsZWJ@{rsZWJ}!\_hasUnicode.js@{\_hasUnicode.js}}
+\doxysubsubsection{\texorpdfstring{rsZWJ}{rsZWJ}}
+{\footnotesize\ttfamily \label{__has_unicode_8js_acfd4af6a55c6291ade760cc82e35f69c} 
+var rs\+ZWJ = \textquotesingle{}\textbackslash{}\textbackslash{}u200d\textquotesingle{}}
+
+Used to compose unicode capture groups. 

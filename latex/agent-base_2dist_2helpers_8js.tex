@@ -1,0 +1,169 @@
+\doxysection{backend/node\+\_\+modules/agent-\/base/dist/helpers.js File Reference}
+\hypertarget{agent-base_2dist_2helpers_8js}{}\label{agent-base_2dist_2helpers_8js}\index{backend/node\_modules/agent-\/base/dist/helpers.js@{backend/node\_modules/agent-\/base/dist/helpers.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{agent-base_2dist_2helpers_8js_ad45dff4735c06621f672fae645f40b34}{to\+Buffer}} (\mbox{\hyperlink{debug_2src_2node_8js_a822bf74d422c61e6caa292f739dc4786}{stream}})
+\item 
+function \mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{agent-base_2dist_2helpers_8js_af067e394503562e8c00e142c1c3d1a9f}{json}} (\mbox{\hyperlink{debug_2src_2node_8js_a822bf74d422c61e6caa292f739dc4786}{stream}})
+\item 
+function \mbox{\hyperlink{agent-base_2dist_2helpers_8js_a72be1a14eb8b794e6a9842213cd25826}{req}} (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_acf0a8b41f00a22e21672c8b3768a0618}{url}}, opts=\{\})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{agent-base_2dist_2helpers_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+var \mbox{\hyperlink{agent-base_2dist_2helpers_8js_aad21db4e996a9d643f0c8474ad6f9ab5}{\+\_\+\+\_\+create\+Binding}}
+\item 
+var \mbox{\hyperlink{agent-base_2dist_2helpers_8js_a592a6583f5af2245f87923bf2a4c4355}{\+\_\+\+\_\+set\+Module\+Default}}
+\item 
+var \mbox{\hyperlink{agent-base_2dist_2helpers_8js_a3cef2c800c06ac51252260359d9f3f99}{\+\_\+\+\_\+import\+Star}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{agent-base_2dist_2helpers_8js_a960c3c3c7bce40c2aa54b029b3dbb9c8}{req}} = exports.\+json = \mbox{\hyperlink{agent-base_2dist_2helpers_8js_ad089324b07505ae0a81eaefc7427a40e}{exports.\+to\+Buffer}} = void 0
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{agent-base_2dist_2helpers_8js_a84cec47a61a1218c482b5de1674f8c17}{http}} = \mbox{\hyperlink{cjs_2src_2bucket_8js_a3cef2c800c06ac51252260359d9f3f99}{\+\_\+\+\_\+import\+Star}}(\mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}http"{}))
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{agent-base_2dist_2helpers_8js_ab3093f9d8507c035b404b9d49bdb40f7}{https}} = \mbox{\hyperlink{cjs_2src_2bucket_8js_a3cef2c800c06ac51252260359d9f3f99}{\+\_\+\+\_\+import\+Star}}(\mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}https"{}))
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{agent-base_2dist_2helpers_8js_ad089324b07505ae0a81eaefc7427a40e}{to\+Buffer}} = to\+Buffer
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{agent-base_2dist_2helpers_8js_ac6fdc7f7005e375dc7d7dce4bc785ab4}{json}} = json
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{agent-base_2dist_2helpers_8js_af067e394503562e8c00e142c1c3d1a9f}\index{helpers.js@{helpers.js}!json@{json}}
+\index{json@{json}!helpers.js@{helpers.js}}
+\doxysubsubsection{\texorpdfstring{json()}{json()}}
+{\footnotesize\ttfamily \label{agent-base_2dist_2helpers_8js_af067e394503562e8c00e142c1c3d1a9f} 
+function \mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} json (\begin{DoxyParamCaption}\item[{}]{stream}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a34083d02677ea6acceb641fa647bc25a}{buf}}, \mbox{\hyperlink{json-bigint_2lib_2stringify_8js_aec316efdeb7b2e5358b7d50869858da1}{JSON}}, \mbox{\hyperlink{json-bigint_2lib_2stringify_8js_abd4075a8f329b0ccafd81359c952a9df}{str()}}, \mbox{\hyperlink{debug_2src_2node_8js_a822bf74d422c61e6caa292f739dc4786}{stream}}, and \mbox{\hyperlink{agent-base_2dist_2helpers_8js_ad089324b07505ae0a81eaefc7427a40e}{to\+Buffer}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=179pt]{agent-base_2dist_2helpers_8js_af067e394503562e8c00e142c1c3d1a9f_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{agent-base_2dist_2helpers_8js_a72be1a14eb8b794e6a9842213cd25826}\index{helpers.js@{helpers.js}!req@{req}}
+\index{req@{req}!helpers.js@{helpers.js}}
+\doxysubsubsection{\texorpdfstring{req()}{req()}}
+{\footnotesize\ttfamily \label{agent-base_2dist_2helpers_8js_a72be1a14eb8b794e6a9842213cd25826} 
+function req (\begin{DoxyParamCaption}\item[{}]{url}{, }\item[{}]{opts}{ = {\ttfamily \{\}}}\end{DoxyParamCaption})}
+
+\Hypertarget{agent-base_2dist_2helpers_8js_ad45dff4735c06621f672fae645f40b34}\index{helpers.js@{helpers.js}!toBuffer@{toBuffer}}
+\index{toBuffer@{toBuffer}!helpers.js@{helpers.js}}
+\doxysubsubsection{\texorpdfstring{toBuffer()}{toBuffer()}}
+{\footnotesize\ttfamily \label{agent-base_2dist_2helpers_8js_ad45dff4735c06621f672fae645f40b34} 
+function \mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} to\+Buffer (\begin{DoxyParamCaption}\item[{}]{stream}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{chunk_8js_a49c71f4b8e247d1267a25b3f04caef18}{chunk()}}, \mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a7fdcf4c82c9946bf2b0b80829a7ab230}{length}}, \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}, and \mbox{\hyperlink{debug_2src_2node_8js_a822bf74d422c61e6caa292f739dc4786}{stream}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=209pt]{agent-base_2dist_2helpers_8js_ad45dff4735c06621f672fae645f40b34_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{agent-base_2dist_2helpers_8js_aad21db4e996a9d643f0c8474ad6f9ab5}\index{helpers.js@{helpers.js}!\_\_createBinding@{\_\_createBinding}}
+\index{\_\_createBinding@{\_\_createBinding}!helpers.js@{helpers.js}}
+\doxysubsubsection{\texorpdfstring{\_\_createBinding}{\_\_createBinding}}
+{\footnotesize\ttfamily \label{agent-base_2dist_2helpers_8js_aad21db4e996a9d643f0c8474ad6f9ab5} 
+var \+\_\+\+\_\+create\+Binding}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ (\textcolor{keyword}{this}\ \&\&\ this.\mbox{\hyperlink{agent-base_2dist_2helpers_8js_aad21db4e996a9d643f0c8474ad6f9ab5}{\_\_createBinding}})\ ||\ (Object.create\ ?\ (\textcolor{keyword}{function}(\mbox{\hyperlink{uuid_8min_8js_a400dc8109620963da8314d4bdfa14f83}{o}},\ \mbox{\hyperlink{agent-base_2node__modules_2ms_2index_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m}},\ \mbox{\hyperlink{ordered-map_8min_8js_aee3ae2d5bdb3d18f52a8134a79a88d14}{k}},\ k2)\ \{}
+\DoxyCodeLine{\ \ \ \ if\ (k2\ ===\ undefined)\ k2\ =\ k;}
+\DoxyCodeLine{\ \ \ \ var\ desc\ =\ Object.getOwnPropertyDescriptor(m,\ k);}
+\DoxyCodeLine{\ \ \ \ if\ (!desc\ ||\ (\textcolor{stringliteral}{"{}get"{}}\ in\ desc\ ?\ !m.\_\_esModule\ :\ desc.writable\ ||\ desc.configurable))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ desc\ =\ \{\ enumerable:\ true,\ get:\ function()\ \{\ return\ m[k];\ \}\ \};}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ Object.defineProperty(\mbox{\hyperlink{uuid_8min_8js_a400dc8109620963da8314d4bdfa14f83}{o}},\ k2,\ desc);}
+\DoxyCodeLine{\})\ :\ (function(\mbox{\hyperlink{uuid_8min_8js_a400dc8109620963da8314d4bdfa14f83}{o}},\ \mbox{\hyperlink{agent-base_2node__modules_2ms_2index_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m}},\ \mbox{\hyperlink{ordered-map_8min_8js_aee3ae2d5bdb3d18f52a8134a79a88d14}{k}},\ k2)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (k2\ ===\ \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}})\ k2\ =\ \mbox{\hyperlink{ordered-map_8min_8js_aee3ae2d5bdb3d18f52a8134a79a88d14}{k}};}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{uuid_8min_8js_a400dc8109620963da8314d4bdfa14f83}{o}}[k2]\ =\ \mbox{\hyperlink{agent-base_2node__modules_2ms_2index_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m}}[\mbox{\hyperlink{ordered-map_8min_8js_aee3ae2d5bdb3d18f52a8134a79a88d14}{k}}];}
+\DoxyCodeLine{\}))}
+
+\end{DoxyCode}
+\Hypertarget{agent-base_2dist_2helpers_8js_a3cef2c800c06ac51252260359d9f3f99}\index{helpers.js@{helpers.js}!\_\_importStar@{\_\_importStar}}
+\index{\_\_importStar@{\_\_importStar}!helpers.js@{helpers.js}}
+\doxysubsubsection{\texorpdfstring{\_\_importStar}{\_\_importStar}}
+{\footnotesize\ttfamily \label{agent-base_2dist_2helpers_8js_a3cef2c800c06ac51252260359d9f3f99} 
+var \+\_\+\+\_\+import\+Star}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ (\textcolor{keyword}{this}\ \&\&\ this.\mbox{\hyperlink{agent-base_2dist_2helpers_8js_a3cef2c800c06ac51252260359d9f3f99}{\_\_importStar}})\ ||\ \textcolor{keyword}{function}\ (\mbox{\hyperlink{long_2index_8js_afe8b4d98ba998dc78d0369b49d2aebf3}{mod}})\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{long_2index_8js_afe8b4d98ba998dc78d0369b49d2aebf3}{mod}}\ \&\&\ \mbox{\hyperlink{long_2index_8js_afe8b4d98ba998dc78d0369b49d2aebf3}{mod}}.\_\_esModule)\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{long_2index_8js_afe8b4d98ba998dc78d0369b49d2aebf3}{mod}};}
+\DoxyCodeLine{\ \ \ \ var\ \mbox{\hyperlink{lodash_2core_8js_a348c112a244660a2f280cda892658c24}{result}}\ =\ \{\};}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{long_2index_8js_afe8b4d98ba998dc78d0369b49d2aebf3}{mod}}\ !=\ \textcolor{keyword}{null})\ \textcolor{keywordflow}{for}\ (var\ \mbox{\hyperlink{ordered-map_8min_8js_aee3ae2d5bdb3d18f52a8134a79a88d14}{k}}\ in\ \mbox{\hyperlink{long_2index_8js_afe8b4d98ba998dc78d0369b49d2aebf3}{mod}})\ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{ordered-map_8min_8js_aee3ae2d5bdb3d18f52a8134a79a88d14}{k}}\ !==\ \textcolor{stringliteral}{"{}default"{}}\ \&\&\ Object.prototype.hasOwnProperty.call(\mbox{\hyperlink{long_2index_8js_afe8b4d98ba998dc78d0369b49d2aebf3}{mod}},\ \mbox{\hyperlink{ordered-map_8min_8js_aee3ae2d5bdb3d18f52a8134a79a88d14}{k}}))\ \mbox{\hyperlink{agent-base_2dist_2helpers_8js_aad21db4e996a9d643f0c8474ad6f9ab5}{\_\_createBinding}}(\mbox{\hyperlink{lodash_2core_8js_a348c112a244660a2f280cda892658c24}{result}},\ \mbox{\hyperlink{long_2index_8js_afe8b4d98ba998dc78d0369b49d2aebf3}{mod}},\ \mbox{\hyperlink{ordered-map_8min_8js_aee3ae2d5bdb3d18f52a8134a79a88d14}{k}});}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{agent-base_2dist_2helpers_8js_a592a6583f5af2245f87923bf2a4c4355}{\_\_setModuleDefault}}(\mbox{\hyperlink{lodash_2core_8js_a348c112a244660a2f280cda892658c24}{result}},\ \mbox{\hyperlink{long_2index_8js_afe8b4d98ba998dc78d0369b49d2aebf3}{mod}});}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{lodash_2core_8js_a348c112a244660a2f280cda892658c24}{result}};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{agent-base_2dist_2helpers_8js_a592a6583f5af2245f87923bf2a4c4355}\index{helpers.js@{helpers.js}!\_\_setModuleDefault@{\_\_setModuleDefault}}
+\index{\_\_setModuleDefault@{\_\_setModuleDefault}!helpers.js@{helpers.js}}
+\doxysubsubsection{\texorpdfstring{\_\_setModuleDefault}{\_\_setModuleDefault}}
+{\footnotesize\ttfamily \label{agent-base_2dist_2helpers_8js_a592a6583f5af2245f87923bf2a4c4355} 
+var \+\_\+\+\_\+set\+Module\+Default}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ (\textcolor{keyword}{this}\ \&\&\ this.\mbox{\hyperlink{agent-base_2dist_2helpers_8js_a592a6583f5af2245f87923bf2a4c4355}{\_\_setModuleDefault}})\ ||\ (Object.create\ ?\ (\textcolor{keyword}{function}(\mbox{\hyperlink{uuid_8min_8js_a400dc8109620963da8314d4bdfa14f83}{o}},\ \mbox{\hyperlink{ordered-map_8min_8js_a207400f40ed647015069564fa40946e1}{v}})\ \{}
+\DoxyCodeLine{\ \ \ \ Object.defineProperty(o,\ \textcolor{stringliteral}{"{}default"{}},\ \{\ enumerable:\ true,\ value:\ v\ \});}
+\DoxyCodeLine{\})\ :\ function(\mbox{\hyperlink{uuid_8min_8js_a400dc8109620963da8314d4bdfa14f83}{o}},\ \mbox{\hyperlink{ordered-map_8min_8js_a207400f40ed647015069564fa40946e1}{v}})\ \{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{uuid_8min_8js_a400dc8109620963da8314d4bdfa14f83}{o}}[\textcolor{stringliteral}{"{}default"{}}]\ =\ \mbox{\hyperlink{ordered-map_8min_8js_a207400f40ed647015069564fa40946e1}{v}};}
+\DoxyCodeLine{\})}
+
+\end{DoxyCode}
+\Hypertarget{agent-base_2dist_2helpers_8js_a84cec47a61a1218c482b5de1674f8c17}\index{helpers.js@{helpers.js}!http@{http}}
+\index{http@{http}!helpers.js@{helpers.js}}
+\doxysubsubsection{\texorpdfstring{http}{http}}
+{\footnotesize\ttfamily \label{agent-base_2dist_2helpers_8js_a84cec47a61a1218c482b5de1674f8c17} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} http = \mbox{\hyperlink{cjs_2src_2bucket_8js_a3cef2c800c06ac51252260359d9f3f99}{\+\_\+\+\_\+import\+Star}}(\mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}http"{}))}
+
+\Hypertarget{agent-base_2dist_2helpers_8js_ab3093f9d8507c035b404b9d49bdb40f7}\index{helpers.js@{helpers.js}!https@{https}}
+\index{https@{https}!helpers.js@{helpers.js}}
+\doxysubsubsection{\texorpdfstring{https}{https}}
+{\footnotesize\ttfamily \label{agent-base_2dist_2helpers_8js_ab3093f9d8507c035b404b9d49bdb40f7} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} https = \mbox{\hyperlink{cjs_2src_2bucket_8js_a3cef2c800c06ac51252260359d9f3f99}{\+\_\+\+\_\+import\+Star}}(\mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}https"{}))}
+
+\Hypertarget{agent-base_2dist_2helpers_8js_ac6fdc7f7005e375dc7d7dce4bc785ab4}\index{helpers.js@{helpers.js}!json@{json}}
+\index{json@{json}!helpers.js@{helpers.js}}
+\doxysubsubsection{\texorpdfstring{json}{json}}
+{\footnotesize\ttfamily \label{agent-base_2dist_2helpers_8js_ac6fdc7f7005e375dc7d7dce4bc785ab4} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} json = json}
+
+\Hypertarget{agent-base_2dist_2helpers_8js_a960c3c3c7bce40c2aa54b029b3dbb9c8}\index{helpers.js@{helpers.js}!req@{req}}
+\index{req@{req}!helpers.js@{helpers.js}}
+\doxysubsubsection{\texorpdfstring{req}{req}}
+{\footnotesize\ttfamily \label{agent-base_2dist_2helpers_8js_a960c3c3c7bce40c2aa54b029b3dbb9c8} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} req = exports.\+json = \mbox{\hyperlink{agent-base_2dist_2helpers_8js_ad089324b07505ae0a81eaefc7427a40e}{exports.\+to\+Buffer}} = void 0}
+
+\Hypertarget{agent-base_2dist_2helpers_8js_ae2475e10618961c050dcba04e8c42331}\index{helpers.js@{helpers.js}!strict@{strict}}
+\index{strict@{strict}!helpers.js@{helpers.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{agent-base_2dist_2helpers_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+
+\Hypertarget{agent-base_2dist_2helpers_8js_ad089324b07505ae0a81eaefc7427a40e}\index{helpers.js@{helpers.js}!toBuffer@{toBuffer}}
+\index{toBuffer@{toBuffer}!helpers.js@{helpers.js}}
+\doxysubsubsection{\texorpdfstring{toBuffer}{toBuffer}}
+{\footnotesize\ttfamily \label{agent-base_2dist_2helpers_8js_ad089324b07505ae0a81eaefc7427a40e} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} to\+Buffer = to\+Buffer}
+

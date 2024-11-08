@@ -1,0 +1,39 @@
+\doxysection{/\+Users/nicoletiokhin/\+Desktop/\+Software Semester 3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/lodash/throttle.\+js}
+\hypertarget{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_c911a90302e823c5268b4f8e0bb8faa9}{}\label{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_c911a90302e823c5268b4f8e0bb8faa9}Creates a throttled function that only invokes {\ttfamily func} at most once per every {\ttfamily wait} milliseconds. The throttled function comes with a {\ttfamily cancel} method to cancel delayed {\ttfamily func} invocations and a {\ttfamily flush} method to immediately invoke them. Provide {\ttfamily options} to indicate whether {\ttfamily func} should be invoked on the leading and/or trailing edge of the {\ttfamily wait} timeout. The {\ttfamily func} is invoked with the last arguments provided to the throttled function. Subsequent calls to the throttled function return the result of the last {\ttfamily func} invocation.
+
+{\bfseries{Note\+:}} If {\ttfamily leading} and {\ttfamily trailing} options are {\ttfamily true}, {\ttfamily func} is invoked on the trailing edge of the timeout only if the throttled function is invoked more than once during the {\ttfamily wait} timeout.
+
+If {\ttfamily wait} is {\ttfamily 0} and {\ttfamily leading} is {\ttfamily false}, {\ttfamily func} invocation is deferred until to the next tick, similar to {\ttfamily set\+Timeout} with a timeout of {\ttfamily 0}.
+
+See \href{https://css-tricks.com/debouncing-throttling-explained-examples/}{\texttt{ David Corbacho\textquotesingle{}s article}} for details over the differences between {\ttfamily \+\_\+.\+throttle} and {\ttfamily \+\_\+.\+debounce}.
+
+@member\+Of \+\_\+ \begin{DoxySince}{Since}
+0.\+1.\+0
+\end{DoxySince}
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Function\}} & func The function to throttle. \\
+\hline
+{\em \{number\}} & \mbox{[}wait=0\mbox{]} The number of milliseconds to throttle invocations to. \\
+\hline
+{\em \{\+Object\}} & \mbox{[}options=\{\}\mbox{]} The options object. \\
+\hline
+{\em \{boolean\}} & \mbox{[}options.\+leading=true\mbox{]} Specify invoking on the leading edge of the timeout. \\
+\hline
+{\em \{boolean\}} & \mbox{[}options.\+trailing=true\mbox{]} Specify invoking on the trailing edge of the timeout. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Function\} Returns the new throttled function.
+\end{DoxyReturn}
+// Avoid excessively updating the position while scrolling. \doxylink{form_8js_a2b1d6f9c448e3ce72f4e1865d6e38d2c}{j\+Query(window)}.on(\textquotesingle{}scroll\textquotesingle{}, \+\_\+.\+throttle(update\+Position, 100));
+
+// Invoke {\ttfamily renew\+Token} when the click event is fired, but not more than once every 5 minutes. var throttled = \+\_\+.\+throttle(renew\+Token, 300000, \{ \textquotesingle{}trailing\textquotesingle{}\+: false \}); \doxylink{form_8js_a2b1d6f9c448e3ce72f4e1865d6e38d2c}{j\+Query(element)}.on(\textquotesingle{}click\textquotesingle{}, throttled);
+
+// Cancel the trailing throttled invocation. \doxylink{form_8js_a2b1d6f9c448e3ce72f4e1865d6e38d2c}{j\+Query(window)}.on(\textquotesingle{}popstate\textquotesingle{}, throttled.\+cancel);
+
+
+\begin{DoxyCodeInclude}{0}
+
+\end{DoxyCodeInclude}
+ Semester \doxylink{lodash_2throttle_8js}{3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/lodash/throttle.\+js} 

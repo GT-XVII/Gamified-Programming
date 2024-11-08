@@ -1,0 +1,533 @@
+\doxysection{backend/node\+\_\+modules/firebase-\/admin/lib/messaging/messaging-\/internal.js File Reference}
+\hypertarget{messaging-internal_8js}{}\label{messaging-internal_8js}\index{backend/node\_modules/firebase-\/admin/lib/messaging/messaging-\/internal.js@{backend/node\_modules/firebase-\/admin/lib/messaging/messaging-\/internal.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{messaging-internal_8js_abe99780056f7051fc28be1dbf6b4ea70}{validate\+Message}} (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}})
+\item 
+function \mbox{\hyperlink{messaging-internal_8js_a053a6e745d37d225882ade924f0c9481}{validate\+String\+Map}} (\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af0ed083046515bb220ecbeab418ed9d4}{map}}, label)
+\item 
+function \mbox{\hyperlink{messaging-internal_8js_a42d9e5d5a92b4b5d2de8ffc03aa5adf5}{validate\+Webpush\+Config}} (\mbox{\hyperlink{rxjs_8umd_8js_a729ec4717f914fce241d4dccc9a03066}{config}})
+\item 
+function \mbox{\hyperlink{messaging-internal_8js_a5ca3ffb565680733f8adb8d5882e0dbd}{validate\+Apns\+Config}} (\mbox{\hyperlink{rxjs_8umd_8js_a729ec4717f914fce241d4dccc9a03066}{config}})
+\item 
+function \mbox{\hyperlink{messaging-internal_8js_a852c81c87d3046cd4e6766c580ed3cba}{validate\+Apns\+Fcm\+Options}} (fcm\+Options)
+\item 
+function \mbox{\hyperlink{messaging-internal_8js_a66e2fa8564a5bda91c83957a203cc951}{validate\+Fcm\+Options}} (fcm\+Options)
+\item 
+function \mbox{\hyperlink{messaging-internal_8js_a6070e9aa744fbd66ea9f543dc85cd370}{validate\+Notification}} (notification)
+\item 
+function \mbox{\hyperlink{messaging-internal_8js_abc2be885f757b960eba580f28503842a}{validate\+Apns\+Payload}} (payload)
+\item 
+function \mbox{\hyperlink{messaging-internal_8js_a0d826071aa1ef8ff1e3a6415407f6fb2}{validate\+Aps}} (aps)
+\item 
+function \mbox{\hyperlink{messaging-internal_8js_aba6bb6d0ee8e15f10c6b046ca4ec007f}{validate\+Aps\+Sound}} (sound)
+\item 
+function \mbox{\hyperlink{messaging-internal_8js_a176c46b1e0af63d10e280155a6e7daed}{validate\+Aps\+Alert}} (alert)
+\item 
+function \mbox{\hyperlink{messaging-internal_8js_ae05aa3d8b2a7b49229af4d4c5b2f1908}{validate\+Android\+Config}} (\mbox{\hyperlink{rxjs_8umd_8js_a729ec4717f914fce241d4dccc9a03066}{config}})
+\item 
+function \mbox{\hyperlink{messaging-internal_8js_a3b61e1a85ade49661f80d53df12e4033}{validate\+Android\+Notification}} (notification)
+\item 
+function \mbox{\hyperlink{messaging-internal_8js_a29b79aa60173c46c82a100363b166546}{validate\+Light\+Settings}} (light\+Settings)
+\item 
+function \mbox{\hyperlink{messaging-internal_8js_a6fb0c6acc06f5b11812c673f6aa01c60}{validate\+Android\+Fcm\+Options}} (fcm\+Options)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{messaging-internal_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{messaging-internal_8js_a7ff608980ae470ab1dcb2fa0b30ce776}{validate\+Message}} = \mbox{\hyperlink{messaging-internal_8js_ad7a86d8fddbef6352d43357b4bdbe633}{exports.\+BLACKLISTED\+\_\+\+OPTIONS\+\_\+\+KEYS}} = \mbox{\hyperlink{messaging-internal_8js_a4e4f5db4b68b03ff5aad5b9f4c9d91c8}{exports.\+BLACKLISTED\+\_\+\+DATA\+\_\+\+PAYLOAD\+\_\+\+KEYS}} = void 0
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{messaging-internal_8js_ad6da97f28182979eca61059c656f8ed6}{index\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/index"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{messaging-internal_8js_af1a99a3ff1a35c114bdd06cc7252beb6}{error\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/error"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{messaging-internal_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/validator"{})
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{messaging-internal_8js_a4e4f5db4b68b03ff5aad5b9f4c9d91c8}{BLACKLISTED\+\_\+\+DATA\+\_\+\+PAYLOAD\+\_\+\+KEYS}} = \mbox{[}\textquotesingle{}from\textquotesingle{}\mbox{]}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{messaging-internal_8js_ad7a86d8fddbef6352d43357b4bdbe633}{BLACKLISTED\+\_\+\+OPTIONS\+\_\+\+KEYS}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{messaging-internal_8js_ae05aa3d8b2a7b49229af4d4c5b2f1908}\index{messaging-\/internal.js@{messaging-\/internal.js}!validateAndroidConfig@{validateAndroidConfig}}
+\index{validateAndroidConfig@{validateAndroidConfig}!messaging-\/internal.js@{messaging-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{validateAndroidConfig()}{validateAndroidConfig()}}
+{\footnotesize\ttfamily \label{messaging-internal_8js_ae05aa3d8b2a7b49229af4d4c5b2f1908} 
+function validate\+Android\+Config (\begin{DoxyParamCaption}\item[{}]{config}{}\end{DoxyParamCaption})}
+
+Checks if the given Android\+Config object is valid. The object must have valid ttl, data, and notification fields. If successful, transforms the input object by renaming keys to valid Android keys. Also transforms the ttl value to the format expected by FCM service.
+
+
+\begin{DoxyParams}{Parameters}
+{\em config} & -\/ An object to be validated. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{rxjs_8umd_8js_a729ec4717f914fce241d4dccc9a03066}{config}}, \mbox{\hyperlink{messaging-internal_8js_af1a99a3ff1a35c114bdd06cc7252beb6}{error\+\_\+1}}, \mbox{\hyperlink{messaging-internal_8js_ad6da97f28182979eca61059c656f8ed6}{index\+\_\+1}}, \mbox{\hyperlink{messaging-internal_8js_a6fb0c6acc06f5b11812c673f6aa01c60}{validate\+Android\+Fcm\+Options()}}, \mbox{\hyperlink{messaging-internal_8js_a3b61e1a85ade49661f80d53df12e4033}{validate\+Android\+Notification()}}, \mbox{\hyperlink{messaging-internal_8js_a053a6e745d37d225882ade924f0c9481}{validate\+String\+Map()}}, and \mbox{\hyperlink{messaging-internal_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{messaging-internal_8js_ae05aa3d8b2a7b49229af4d4c5b2f1908_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=317pt]{messaging-internal_8js_ae05aa3d8b2a7b49229af4d4c5b2f1908_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{messaging-internal_8js_a6fb0c6acc06f5b11812c673f6aa01c60}\index{messaging-\/internal.js@{messaging-\/internal.js}!validateAndroidFcmOptions@{validateAndroidFcmOptions}}
+\index{validateAndroidFcmOptions@{validateAndroidFcmOptions}!messaging-\/internal.js@{messaging-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{validateAndroidFcmOptions()}{validateAndroidFcmOptions()}}
+{\footnotesize\ttfamily \label{messaging-internal_8js_a6fb0c6acc06f5b11812c673f6aa01c60} 
+function validate\+Android\+Fcm\+Options (\begin{DoxyParamCaption}\item[{}]{fcm\+Options}{}\end{DoxyParamCaption})}
+
+Checks if the given Android\+Fcm\+Options object is valid.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Android\+Fcm\+Options\}} & fcm\+Options An object to be validated. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{messaging-internal_8js_af1a99a3ff1a35c114bdd06cc7252beb6}{error\+\_\+1}}, and \mbox{\hyperlink{messaging-internal_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{messaging-internal_8js_a6fb0c6acc06f5b11812c673f6aa01c60_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{messaging-internal_8js_a3b61e1a85ade49661f80d53df12e4033}\index{messaging-\/internal.js@{messaging-\/internal.js}!validateAndroidNotification@{validateAndroidNotification}}
+\index{validateAndroidNotification@{validateAndroidNotification}!messaging-\/internal.js@{messaging-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{validateAndroidNotification()}{validateAndroidNotification()}}
+{\footnotesize\ttfamily \label{messaging-internal_8js_a3b61e1a85ade49661f80d53df12e4033} 
+function validate\+Android\+Notification (\begin{DoxyParamCaption}\item[{}]{notification}{}\end{DoxyParamCaption})}
+
+Checks if the given Android\+Notification object is valid. The object must have valid color and localization parameters. If successful, transforms the input object by renaming keys to valid Android keys.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Android\+Notification\}} & notification An object to be validated. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}, \mbox{\hyperlink{messaging-internal_8js_af1a99a3ff1a35c114bdd06cc7252beb6}{error\+\_\+1}}, \mbox{\hyperlink{ordered-map_8min_8js_a45c5de94e3c796c826492da3a18272f1}{F}}, \mbox{\hyperlink{messaging-internal_8js_ad6da97f28182979eca61059c656f8ed6}{index\+\_\+1}}, \mbox{\hyperlink{messaging-internal_8js_a29b79aa60173c46c82a100363b166546}{validate\+Light\+Settings()}}, \mbox{\hyperlink{messaging-internal_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{messaging-internal_8js_a3b61e1a85ade49661f80d53df12e4033_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{messaging-internal_8js_a3b61e1a85ade49661f80d53df12e4033_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{messaging-internal_8js_a5ca3ffb565680733f8adb8d5882e0dbd}\index{messaging-\/internal.js@{messaging-\/internal.js}!validateApnsConfig@{validateApnsConfig}}
+\index{validateApnsConfig@{validateApnsConfig}!messaging-\/internal.js@{messaging-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{validateApnsConfig()}{validateApnsConfig()}}
+{\footnotesize\ttfamily \label{messaging-internal_8js_a5ca3ffb565680733f8adb8d5882e0dbd} 
+function validate\+Apns\+Config (\begin{DoxyParamCaption}\item[{}]{config}{}\end{DoxyParamCaption})}
+
+Checks if the given Apns\+Config object is valid. The object must have valid headers and a payload.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Apns\+Config\}} & config An object to be validated. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{rxjs_8umd_8js_a729ec4717f914fce241d4dccc9a03066}{config}}, \mbox{\hyperlink{messaging-internal_8js_af1a99a3ff1a35c114bdd06cc7252beb6}{error\+\_\+1}}, \mbox{\hyperlink{messaging-internal_8js_a852c81c87d3046cd4e6766c580ed3cba}{validate\+Apns\+Fcm\+Options()}}, \mbox{\hyperlink{messaging-internal_8js_abc2be885f757b960eba580f28503842a}{validate\+Apns\+Payload()}}, \mbox{\hyperlink{messaging-internal_8js_a053a6e745d37d225882ade924f0c9481}{validate\+String\+Map()}}, and \mbox{\hyperlink{messaging-internal_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{messaging-internal_8js_a5ca3ffb565680733f8adb8d5882e0dbd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{messaging-internal_8js_a5ca3ffb565680733f8adb8d5882e0dbd_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{messaging-internal_8js_a852c81c87d3046cd4e6766c580ed3cba}\index{messaging-\/internal.js@{messaging-\/internal.js}!validateApnsFcmOptions@{validateApnsFcmOptions}}
+\index{validateApnsFcmOptions@{validateApnsFcmOptions}!messaging-\/internal.js@{messaging-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{validateApnsFcmOptions()}{validateApnsFcmOptions()}}
+{\footnotesize\ttfamily \label{messaging-internal_8js_a852c81c87d3046cd4e6766c580ed3cba} 
+function validate\+Apns\+Fcm\+Options (\begin{DoxyParamCaption}\item[{}]{fcm\+Options}{}\end{DoxyParamCaption})}
+
+Checks if the given Apns\+Fcm\+Options object is valid.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Apns\+Fcm\+Options\}} & fcm\+Options An object to be validated. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{messaging-internal_8js_af1a99a3ff1a35c114bdd06cc7252beb6}{error\+\_\+1}}, \mbox{\hyperlink{messaging-internal_8js_ad6da97f28182979eca61059c656f8ed6}{index\+\_\+1}}, and \mbox{\hyperlink{messaging-internal_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{messaging-internal_8js_a852c81c87d3046cd4e6766c580ed3cba_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{messaging-internal_8js_abc2be885f757b960eba580f28503842a}\index{messaging-\/internal.js@{messaging-\/internal.js}!validateApnsPayload@{validateApnsPayload}}
+\index{validateApnsPayload@{validateApnsPayload}!messaging-\/internal.js@{messaging-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{validateApnsPayload()}{validateApnsPayload()}}
+{\footnotesize\ttfamily \label{messaging-internal_8js_abc2be885f757b960eba580f28503842a} 
+function validate\+Apns\+Payload (\begin{DoxyParamCaption}\item[{}]{payload}{}\end{DoxyParamCaption})}
+
+Checks if the given Apns\+Payload object is valid. The object must have a valid aps value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Apns\+Payload\}} & payload An object to be validated. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{messaging-internal_8js_af1a99a3ff1a35c114bdd06cc7252beb6}{error\+\_\+1}}, \mbox{\hyperlink{messaging-internal_8js_a0d826071aa1ef8ff1e3a6415407f6fb2}{validate\+Aps()}}, and \mbox{\hyperlink{messaging-internal_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{messaging-internal_8js_abc2be885f757b960eba580f28503842a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{messaging-internal_8js_abc2be885f757b960eba580f28503842a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{messaging-internal_8js_a0d826071aa1ef8ff1e3a6415407f6fb2}\index{messaging-\/internal.js@{messaging-\/internal.js}!validateAps@{validateAps}}
+\index{validateAps@{validateAps}!messaging-\/internal.js@{messaging-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{validateAps()}{validateAps()}}
+{\footnotesize\ttfamily \label{messaging-internal_8js_a0d826071aa1ef8ff1e3a6415407f6fb2} 
+function validate\+Aps (\begin{DoxyParamCaption}\item[{}]{aps}{}\end{DoxyParamCaption})}
+
+Checks if the given Aps object is valid. The object must have a valid alert. If the validation is successful, transforms the input object by renaming the keys to valid APNS payload keys.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Aps\}} & aps An object to be validated. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{messaging-internal_8js_af1a99a3ff1a35c114bdd06cc7252beb6}{error\+\_\+1}}, \mbox{\hyperlink{messaging-internal_8js_ad6da97f28182979eca61059c656f8ed6}{index\+\_\+1}}, \mbox{\hyperlink{messaging-internal_8js_a176c46b1e0af63d10e280155a6e7daed}{validate\+Aps\+Alert()}}, \mbox{\hyperlink{messaging-internal_8js_aba6bb6d0ee8e15f10c6b046ca4ec007f}{validate\+Aps\+Sound()}}, and \mbox{\hyperlink{messaging-internal_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{messaging-internal_8js_a0d826071aa1ef8ff1e3a6415407f6fb2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{messaging-internal_8js_a0d826071aa1ef8ff1e3a6415407f6fb2_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{messaging-internal_8js_a176c46b1e0af63d10e280155a6e7daed}\index{messaging-\/internal.js@{messaging-\/internal.js}!validateApsAlert@{validateApsAlert}}
+\index{validateApsAlert@{validateApsAlert}!messaging-\/internal.js@{messaging-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{validateApsAlert()}{validateApsAlert()}}
+{\footnotesize\ttfamily \label{messaging-internal_8js_a176c46b1e0af63d10e280155a6e7daed} 
+function validate\+Aps\+Alert (\begin{DoxyParamCaption}\item[{}]{alert}{}\end{DoxyParamCaption})}
+
+Checks if the given alert object is valid. Alert could be a string or a complex object. If specified as an object, it must have valid localization parameters. If successful, transforms the input object by renaming the keys to valid APNS payload keys.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{string} & \texorpdfstring{$\vert$}{|} Aps\+Alert\} alert An alert string or an object to be validated. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{messaging-internal_8js_af1a99a3ff1a35c114bdd06cc7252beb6}{error\+\_\+1}}, \mbox{\hyperlink{messaging-internal_8js_ad6da97f28182979eca61059c656f8ed6}{index\+\_\+1}}, and \mbox{\hyperlink{messaging-internal_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{messaging-internal_8js_a176c46b1e0af63d10e280155a6e7daed_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{messaging-internal_8js_aba6bb6d0ee8e15f10c6b046ca4ec007f}\index{messaging-\/internal.js@{messaging-\/internal.js}!validateApsSound@{validateApsSound}}
+\index{validateApsSound@{validateApsSound}!messaging-\/internal.js@{messaging-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{validateApsSound()}{validateApsSound()}}
+{\footnotesize\ttfamily \label{messaging-internal_8js_aba6bb6d0ee8e15f10c6b046ca4ec007f} 
+function validate\+Aps\+Sound (\begin{DoxyParamCaption}\item[{}]{sound}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{messaging-internal_8js_af1a99a3ff1a35c114bdd06cc7252beb6}{error\+\_\+1}}, and \mbox{\hyperlink{messaging-internal_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{messaging-internal_8js_aba6bb6d0ee8e15f10c6b046ca4ec007f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{messaging-internal_8js_a66e2fa8564a5bda91c83957a203cc951}\index{messaging-\/internal.js@{messaging-\/internal.js}!validateFcmOptions@{validateFcmOptions}}
+\index{validateFcmOptions@{validateFcmOptions}!messaging-\/internal.js@{messaging-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{validateFcmOptions()}{validateFcmOptions()}}
+{\footnotesize\ttfamily \label{messaging-internal_8js_a66e2fa8564a5bda91c83957a203cc951} 
+function validate\+Fcm\+Options (\begin{DoxyParamCaption}\item[{}]{fcm\+Options}{}\end{DoxyParamCaption})}
+
+Checks if the given Fcm\+Options object is valid.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Fcm\+Options\}} & fcm\+Options An object to be validated. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{messaging-internal_8js_af1a99a3ff1a35c114bdd06cc7252beb6}{error\+\_\+1}}, and \mbox{\hyperlink{messaging-internal_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{messaging-internal_8js_a66e2fa8564a5bda91c83957a203cc951_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{messaging-internal_8js_a29b79aa60173c46c82a100363b166546}\index{messaging-\/internal.js@{messaging-\/internal.js}!validateLightSettings@{validateLightSettings}}
+\index{validateLightSettings@{validateLightSettings}!messaging-\/internal.js@{messaging-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{validateLightSettings()}{validateLightSettings()}}
+{\footnotesize\ttfamily \label{messaging-internal_8js_a29b79aa60173c46c82a100363b166546} 
+function validate\+Light\+Settings (\begin{DoxyParamCaption}\item[{}]{light\+Settings}{}\end{DoxyParamCaption})}
+
+Checks if the given Light\+Settings object is valid. The object must have valid color and light on/off duration parameters. If successful, transforms the input object by renaming keys to valid Android keys.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Light\+Settings\}} & light\+Settings An object to be validated. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}, \mbox{\hyperlink{messaging-internal_8js_af1a99a3ff1a35c114bdd06cc7252beb6}{error\+\_\+1}}, \mbox{\hyperlink{ordered-map_8min_8js_a45c5de94e3c796c826492da3a18272f1}{F}}, \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}, \mbox{\hyperlink{messaging-internal_8js_ad6da97f28182979eca61059c656f8ed6}{index\+\_\+1}}, \mbox{\hyperlink{parse_int_8js_a04ee837a5f7721fcb0ea2d152162ef92}{parse\+Int()}}, \mbox{\hyperlink{conversions_8js_a671a257fc59bfac887975538c4846d2c}{rgb}}, and \mbox{\hyperlink{messaging-internal_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=274pt]{messaging-internal_8js_a29b79aa60173c46c82a100363b166546_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{messaging-internal_8js_a29b79aa60173c46c82a100363b166546_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{messaging-internal_8js_abe99780056f7051fc28be1dbf6b4ea70}\index{messaging-\/internal.js@{messaging-\/internal.js}!validateMessage@{validateMessage}}
+\index{validateMessage@{validateMessage}!messaging-\/internal.js@{messaging-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{validateMessage()}{validateMessage()}}
+{\footnotesize\ttfamily \label{messaging-internal_8js_abe99780056f7051fc28be1dbf6b4ea70} 
+function validate\+Message (\begin{DoxyParamCaption}\item[{}]{message}{}\end{DoxyParamCaption})}
+
+Checks if the given Message object is valid. Recursively validates all the child objects included in the message (android, apns, data etc.). If successful, transforms the message in place by renaming the keys to what\textquotesingle{}s expected by the remote FCM service.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Message\}} & Message An object to be validated. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{fp_8js_a6e69a5af94d7d53886e51f89fb3bd6b4}{\+\_\+}}, \mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}, \mbox{\hyperlink{messaging-internal_8js_af1a99a3ff1a35c114bdd06cc7252beb6}{error\+\_\+1}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}, \mbox{\hyperlink{ordered-map_8min_8js_a207400f40ed647015069564fa40946e1}{v}}, \mbox{\hyperlink{messaging-internal_8js_ae05aa3d8b2a7b49229af4d4c5b2f1908}{validate\+Android\+Config()}}, \mbox{\hyperlink{messaging-internal_8js_a5ca3ffb565680733f8adb8d5882e0dbd}{validate\+Apns\+Config()}}, \mbox{\hyperlink{messaging-internal_8js_a66e2fa8564a5bda91c83957a203cc951}{validate\+Fcm\+Options()}}, \mbox{\hyperlink{messaging-internal_8js_a6070e9aa744fbd66ea9f543dc85cd370}{validate\+Notification()}}, \mbox{\hyperlink{messaging-internal_8js_a053a6e745d37d225882ade924f0c9481}{validate\+String\+Map()}}, \mbox{\hyperlink{messaging-internal_8js_a42d9e5d5a92b4b5d2de8ffc03aa5adf5}{validate\+Webpush\+Config()}}, and \mbox{\hyperlink{messaging-internal_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{messaging-internal_8js_abe99780056f7051fc28be1dbf6b4ea70_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{messaging-internal_8js_a6070e9aa744fbd66ea9f543dc85cd370}\index{messaging-\/internal.js@{messaging-\/internal.js}!validateNotification@{validateNotification}}
+\index{validateNotification@{validateNotification}!messaging-\/internal.js@{messaging-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{validateNotification()}{validateNotification()}}
+{\footnotesize\ttfamily \label{messaging-internal_8js_a6070e9aa744fbd66ea9f543dc85cd370} 
+function validate\+Notification (\begin{DoxyParamCaption}\item[{}]{notification}{}\end{DoxyParamCaption})}
+
+Checks if the given \doxylink{class_notification}{Notification} object is valid.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Notification\}} & notification An object to be validated. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{messaging-internal_8js_af1a99a3ff1a35c114bdd06cc7252beb6}{error\+\_\+1}}, \mbox{\hyperlink{messaging-internal_8js_ad6da97f28182979eca61059c656f8ed6}{index\+\_\+1}}, and \mbox{\hyperlink{messaging-internal_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=305pt]{messaging-internal_8js_a6070e9aa744fbd66ea9f543dc85cd370_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{messaging-internal_8js_a053a6e745d37d225882ade924f0c9481}\index{messaging-\/internal.js@{messaging-\/internal.js}!validateStringMap@{validateStringMap}}
+\index{validateStringMap@{validateStringMap}!messaging-\/internal.js@{messaging-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{validateStringMap()}{validateStringMap()}}
+{\footnotesize\ttfamily \label{messaging-internal_8js_a053a6e745d37d225882ade924f0c9481} 
+function validate\+String\+Map (\begin{DoxyParamCaption}\item[{}]{map}{, }\item[{}]{label}{}\end{DoxyParamCaption})}
+
+Checks if the given object only contains strings as child values.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{object\}} & map An object to be validated. \\
+\hline
+{\em \{string\}} & label \doxylink{class_a}{A} label to be included in the errors thrown. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}, \mbox{\hyperlink{messaging-internal_8js_af1a99a3ff1a35c114bdd06cc7252beb6}{error\+\_\+1}}, \mbox{\hyperlink{util_2dist_2index_8cjs_8js_af0ed083046515bb220ecbeab418ed9d4}{map}}, \mbox{\hyperlink{messaging-internal_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}}, and \mbox{\hyperlink{__base_sample_8js_a133e745a7002d95c39d29cc180b56327}{values}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{messaging-internal_8js_a053a6e745d37d225882ade924f0c9481_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{messaging-internal_8js_a42d9e5d5a92b4b5d2de8ffc03aa5adf5}\index{messaging-\/internal.js@{messaging-\/internal.js}!validateWebpushConfig@{validateWebpushConfig}}
+\index{validateWebpushConfig@{validateWebpushConfig}!messaging-\/internal.js@{messaging-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{validateWebpushConfig()}{validateWebpushConfig()}}
+{\footnotesize\ttfamily \label{messaging-internal_8js_a42d9e5d5a92b4b5d2de8ffc03aa5adf5} 
+function validate\+Webpush\+Config (\begin{DoxyParamCaption}\item[{}]{config}{}\end{DoxyParamCaption})}
+
+Checks if the given Webpush\+Config object is valid. The object must have valid headers and data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Webpush\+Config\}} & config An object to be validated. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{rxjs_8umd_8js_a729ec4717f914fce241d4dccc9a03066}{config}}, \mbox{\hyperlink{messaging-internal_8js_af1a99a3ff1a35c114bdd06cc7252beb6}{error\+\_\+1}}, \mbox{\hyperlink{messaging-internal_8js_a053a6e745d37d225882ade924f0c9481}{validate\+String\+Map()}}, and \mbox{\hyperlink{messaging-internal_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{messaging-internal_8js_a42d9e5d5a92b4b5d2de8ffc03aa5adf5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{messaging-internal_8js_a42d9e5d5a92b4b5d2de8ffc03aa5adf5_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{messaging-internal_8js_a4e4f5db4b68b03ff5aad5b9f4c9d91c8}\index{messaging-\/internal.js@{messaging-\/internal.js}!BLACKLISTED\_DATA\_PAYLOAD\_KEYS@{BLACKLISTED\_DATA\_PAYLOAD\_KEYS}}
+\index{BLACKLISTED\_DATA\_PAYLOAD\_KEYS@{BLACKLISTED\_DATA\_PAYLOAD\_KEYS}!messaging-\/internal.js@{messaging-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{BLACKLISTED\_DATA\_PAYLOAD\_KEYS}{BLACKLISTED\_DATA\_PAYLOAD\_KEYS}}
+{\footnotesize\ttfamily \label{messaging-internal_8js_a4e4f5db4b68b03ff5aad5b9f4c9d91c8} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} BLACKLISTED\+\_\+\+DATA\+\_\+\+PAYLOAD\+\_\+\+KEYS = \mbox{[}\textquotesingle{}from\textquotesingle{}\mbox{]}}
+
+\Hypertarget{messaging-internal_8js_ad7a86d8fddbef6352d43357b4bdbe633}\index{messaging-\/internal.js@{messaging-\/internal.js}!BLACKLISTED\_OPTIONS\_KEYS@{BLACKLISTED\_OPTIONS\_KEYS}}
+\index{BLACKLISTED\_OPTIONS\_KEYS@{BLACKLISTED\_OPTIONS\_KEYS}!messaging-\/internal.js@{messaging-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{BLACKLISTED\_OPTIONS\_KEYS}{BLACKLISTED\_OPTIONS\_KEYS}}
+{\footnotesize\ttfamily \label{messaging-internal_8js_ad7a86d8fddbef6352d43357b4bdbe633} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} BLACKLISTED\+\_\+\+OPTIONS\+\_\+\+KEYS}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{'condition'},\ \textcolor{stringliteral}{'data'},\ \textcolor{stringliteral}{'notification'},\ \textcolor{stringliteral}{'registrationIds'},\ \textcolor{stringliteral}{'registration\_ids'},\ \textcolor{stringliteral}{'to'},}
+\DoxyCodeLine{]}
+
+\end{DoxyCode}
+\Hypertarget{messaging-internal_8js_af1a99a3ff1a35c114bdd06cc7252beb6}\index{messaging-\/internal.js@{messaging-\/internal.js}!error\_1@{error\_1}}
+\index{error\_1@{error\_1}!messaging-\/internal.js@{messaging-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{error\_1}{error\_1}}
+{\footnotesize\ttfamily \label{messaging-internal_8js_af1a99a3ff1a35c114bdd06cc7252beb6} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} error\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/error"{})}
+
+\Hypertarget{messaging-internal_8js_ad6da97f28182979eca61059c656f8ed6}\index{messaging-\/internal.js@{messaging-\/internal.js}!index\_1@{index\_1}}
+\index{index\_1@{index\_1}!messaging-\/internal.js@{messaging-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{index\_1}{index\_1}}
+{\footnotesize\ttfamily \label{messaging-internal_8js_ad6da97f28182979eca61059c656f8ed6} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} index\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/index"{})}
+
+\Hypertarget{messaging-internal_8js_ae2475e10618961c050dcba04e8c42331}\index{messaging-\/internal.js@{messaging-\/internal.js}!strict@{strict}}
+\index{strict@{strict}!messaging-\/internal.js@{messaging-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{messaging-internal_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+
+firebase-\/admin v12.\+7.\+0 \Hypertarget{messaging-internal_8js_a7ff608980ae470ab1dcb2fa0b30ce776}\index{messaging-\/internal.js@{messaging-\/internal.js}!validateMessage@{validateMessage}}
+\index{validateMessage@{validateMessage}!messaging-\/internal.js@{messaging-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{validateMessage}{validateMessage}}
+{\footnotesize\ttfamily \label{messaging-internal_8js_a7ff608980ae470ab1dcb2fa0b30ce776} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} validate\+Message = \mbox{\hyperlink{messaging-internal_8js_ad7a86d8fddbef6352d43357b4bdbe633}{exports.\+BLACKLISTED\+\_\+\+OPTIONS\+\_\+\+KEYS}} = \mbox{\hyperlink{messaging-internal_8js_a4e4f5db4b68b03ff5aad5b9f4c9d91c8}{exports.\+BLACKLISTED\+\_\+\+DATA\+\_\+\+PAYLOAD\+\_\+\+KEYS}} = void 0}
+
+\Hypertarget{messaging-internal_8js_add6dc10e852e313f07c0d59bcf288b6a}\index{messaging-\/internal.js@{messaging-\/internal.js}!validator@{validator}}
+\index{validator@{validator}!messaging-\/internal.js@{messaging-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{validator}{validator}}
+{\footnotesize\ttfamily \label{messaging-internal_8js_add6dc10e852e313f07c0d59bcf288b6a} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} validator = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/validator"{})}
+

@@ -1,0 +1,122 @@
+\doxysection{backend/node\+\_\+modules/rxjs/dist/cjs/internal/\+Subject.js File Reference}
+\hypertarget{cjs_2internal_2_subject_8js}{}\label{cjs_2internal_2_subject_8js}\index{backend/node\_modules/rxjs/dist/cjs/internal/Subject.js@{backend/node\_modules/rxjs/dist/cjs/internal/Subject.js}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{cjs_2internal_2_subject_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+var \mbox{\hyperlink{cjs_2internal_2_subject_8js_ac09f4951ac4b25df0272d4e78ff85ae0}{\+\_\+\+\_\+extends}}
+\item 
+var \mbox{\hyperlink{cjs_2internal_2_subject_8js_aaf73949a24bd438f2247f99567047a34}{\+\_\+\+\_\+values}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{cjs_2internal_2_subject_8js_a485c5ffc811f0c2d1c2130d50b638d94}{Anonymous\+Subject}} = exports.\+Subject = void 0
+\item 
+var \mbox{\hyperlink{cjs_2internal_2_subject_8js_a095e975a8df547e4d25a7c36893ab8cb}{Observable\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./Observable"{})
+\item 
+var \mbox{\hyperlink{cjs_2internal_2_subject_8js_a10f451aec6899f829552bdf238c02af6}{Subscription\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./Subscription"{})
+\item 
+var \mbox{\hyperlink{cjs_2internal_2_subject_8js_aeb22b01421e6dd6a8830c86f4dbd5d0f}{Object\+Unsubscribed\+Error\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./util/Object\+Unsubscribed\+Error"{})
+\item 
+var \mbox{\hyperlink{cjs_2internal_2_subject_8js_a459c85c3c7a49cea7975690ba533ffb6}{arr\+Remove\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./util/arr\+Remove"{})
+\item 
+var \mbox{\hyperlink{cjs_2internal_2_subject_8js_a8930757937168ce57ab6463ea74c2d92}{error\+Context\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./util/error\+Context"{})
+\item 
+var \mbox{\hyperlink{cjs_2internal_2_subject_8js_a81bf4c210668709ac8a23b7a0667b7ab}{Subject}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{cjs_2internal_2_subject_8js_ac09f4951ac4b25df0272d4e78ff85ae0}\index{Subject.js@{Subject.js}!\_\_extends@{\_\_extends}}
+\index{\_\_extends@{\_\_extends}!Subject.js@{Subject.js}}
+\doxysubsubsection{\texorpdfstring{\_\_extends}{\_\_extends}}
+{\footnotesize\ttfamily \label{cjs_2internal_2_subject_8js_ac09f4951ac4b25df0272d4e78ff85ae0} 
+var \+\_\+\+\_\+extends}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ (\textcolor{keyword}{this}\ \&\&\ this.\mbox{\hyperlink{cjs_2internal_2_subject_8js_ac09f4951ac4b25df0272d4e78ff85ae0}{\_\_extends}})\ ||\ (\textcolor{keyword}{function}\ ()\ \{}
+\DoxyCodeLine{\ \ \ \ var\ \mbox{\hyperlink{_0djs-sdsl_2ordered-map_2dist_2esm_2index_8js_af6df0c69369b815e37f84b0ddf51fb0c}{extendStatics}}\ =\ \textcolor{keyword}{function}\ (\mbox{\hyperlink{uuid_8min_8js_aeb337d295abaddb5ec3cb34cc2e2bbc9}{d}},\ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{_0djs-sdsl_2ordered-map_2dist_2esm_2index_8js_af6df0c69369b815e37f84b0ddf51fb0c}{extendStatics}}\ =\ Object.setPrototypeOf\ ||}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ (\{\ \_\_proto\_\_:\ []\ \}\ instanceof\ \mbox{\hyperlink{src_2util_2minimal_8js_a325c4e317c38d8497130ebce7670be2f}{Array}}\ \&\&\ \textcolor{keyword}{function}\ (\mbox{\hyperlink{uuid_8min_8js_aeb337d295abaddb5ec3cb34cc2e2bbc9}{d}},\ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}})\ \{\ \mbox{\hyperlink{uuid_8min_8js_aeb337d295abaddb5ec3cb34cc2e2bbc9}{d}}.\_\_proto\_\_\ =\ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}};\ \})\ ||}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{function}\ (\mbox{\hyperlink{uuid_8min_8js_aeb337d295abaddb5ec3cb34cc2e2bbc9}{d}},\ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}})\ \{\ \textcolor{keywordflow}{for}\ (var\ \mbox{\hyperlink{ordered-map_8min_8js_ab2752257551c1a01e010ceba5d7ec200}{p}}\ in\ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}})\ \textcolor{keywordflow}{if}\ (Object.prototype.hasOwnProperty.call(\mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}},\ \mbox{\hyperlink{ordered-map_8min_8js_ab2752257551c1a01e010ceba5d7ec200}{p}}))\ \mbox{\hyperlink{uuid_8min_8js_aeb337d295abaddb5ec3cb34cc2e2bbc9}{d}}[\mbox{\hyperlink{ordered-map_8min_8js_ab2752257551c1a01e010ceba5d7ec200}{p}}]\ =\ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}[\mbox{\hyperlink{ordered-map_8min_8js_ab2752257551c1a01e010ceba5d7ec200}{p}}];\ \};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{_0djs-sdsl_2ordered-map_2dist_2esm_2index_8js_af6df0c69369b815e37f84b0ddf51fb0c}{extendStatics}}(\mbox{\hyperlink{uuid_8min_8js_aeb337d295abaddb5ec3cb34cc2e2bbc9}{d}},\ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}});}
+\DoxyCodeLine{\ \ \ \ \};}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{function}\ (\mbox{\hyperlink{uuid_8min_8js_aeb337d295abaddb5ec3cb34cc2e2bbc9}{d}},\ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (typeof\ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}\ !==\ \textcolor{stringliteral}{"{}function"{}}\ \&\&\ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}\ !==\ \textcolor{keyword}{null})}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ TypeError(\textcolor{stringliteral}{"{}Class\ extends\ value\ "{}}\ +\ String(\mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}})\ +\ \textcolor{stringliteral}{"{}\ is\ not\ a\ constructor\ or\ null"{}});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{_0djs-sdsl_2ordered-map_2dist_2esm_2index_8js_af6df0c69369b815e37f84b0ddf51fb0c}{extendStatics}}(\mbox{\hyperlink{uuid_8min_8js_aeb337d295abaddb5ec3cb34cc2e2bbc9}{d}},\ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keyword}{function}\ \mbox{\hyperlink{tls_8js_ac1fbe2830b29835dd7fbf894fc78c5dc}{\_\_}}()\ \{\ this.\mbox{\hyperlink{_json_web_token_error_8js_ae0d7523761ce2ef80fa2f1afff43bbf3}{constructor}}\ =\ \mbox{\hyperlink{uuid_8min_8js_aeb337d295abaddb5ec3cb34cc2e2bbc9}{d}};\ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{uuid_8min_8js_aeb337d295abaddb5ec3cb34cc2e2bbc9}{d}}.prototype\ =\ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}\ ===\ \textcolor{keyword}{null}\ ?\ Object.create(\mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}})\ :\ (\mbox{\hyperlink{tls_8js_ac1fbe2830b29835dd7fbf894fc78c5dc}{\_\_}}.prototype\ =\ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}.prototype,\ \textcolor{keyword}{new}\ \mbox{\hyperlink{tls_8js_ac1fbe2830b29835dd7fbf894fc78c5dc}{\_\_}}());}
+\DoxyCodeLine{\ \ \ \ \};}
+\DoxyCodeLine{\})()}
+
+\end{DoxyCode}
+\Hypertarget{cjs_2internal_2_subject_8js_aaf73949a24bd438f2247f99567047a34}\index{Subject.js@{Subject.js}!\_\_values@{\_\_values}}
+\index{\_\_values@{\_\_values}!Subject.js@{Subject.js}}
+\doxysubsubsection{\texorpdfstring{\_\_values}{\_\_values}}
+{\footnotesize\ttfamily \label{cjs_2internal_2_subject_8js_aaf73949a24bd438f2247f99567047a34} 
+var \+\_\+\+\_\+values}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ (\textcolor{keyword}{this}\ \&\&\ this.\mbox{\hyperlink{cjs_2internal_2_subject_8js_aaf73949a24bd438f2247f99567047a34}{\_\_values}})\ ||\ \textcolor{keyword}{function}(\mbox{\hyperlink{uuid_8min_8js_a400dc8109620963da8314d4bdfa14f83}{o}})\ \{}
+\DoxyCodeLine{\ \ \ \ var\ \mbox{\hyperlink{ordered-map_8min_8js_ad9a7d92cb87932d25187fdec3ba1b621}{s}}\ =\ typeof\ \mbox{\hyperlink{__base_get_tag_8js_a9223501a4f1d046befc3fb8f0bf5c1e4}{Symbol}}\ ===\ \textcolor{stringliteral}{"{}function"{}}\ \&\&\ \mbox{\hyperlink{__base_get_tag_8js_a9223501a4f1d046befc3fb8f0bf5c1e4}{Symbol}}.iterator,\ \mbox{\hyperlink{agent-base_2node__modules_2ms_2index_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m}}\ =\ \mbox{\hyperlink{ordered-map_8min_8js_ad9a7d92cb87932d25187fdec3ba1b621}{s}}\ \&\&\ \mbox{\hyperlink{uuid_8min_8js_a400dc8109620963da8314d4bdfa14f83}{o}}[\mbox{\hyperlink{ordered-map_8min_8js_ad9a7d92cb87932d25187fdec3ba1b621}{s}}],\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ =\ 0;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{agent-base_2node__modules_2ms_2index_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m}})\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{agent-base_2node__modules_2ms_2index_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m}}.call(\mbox{\hyperlink{uuid_8min_8js_a400dc8109620963da8314d4bdfa14f83}{o}});}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{uuid_8min_8js_a400dc8109620963da8314d4bdfa14f83}{o}}\ \&\&\ typeof\ \mbox{\hyperlink{uuid_8min_8js_a400dc8109620963da8314d4bdfa14f83}{o}}.length\ ===\ \textcolor{stringliteral}{"{}number"{}})\ \textcolor{keywordflow}{return}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{protobufjs_2dist_2protobuf_8js_adc8497f1b8fa9c7bee4a53c25c244a66}{next}}:\ \textcolor{keyword}{function}\ ()\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{uuid_8min_8js_a400dc8109620963da8314d4bdfa14f83}{o}}\ \&\&\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ >=\ \mbox{\hyperlink{uuid_8min_8js_a400dc8109620963da8314d4bdfa14f83}{o}}.length)\ \mbox{\hyperlink{uuid_8min_8js_a400dc8109620963da8314d4bdfa14f83}{o}}\ =\ \textcolor{keywordtype}{void}\ 0;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \{\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}:\ \mbox{\hyperlink{uuid_8min_8js_a400dc8109620963da8314d4bdfa14f83}{o}}\ \&\&\ \mbox{\hyperlink{uuid_8min_8js_a400dc8109620963da8314d4bdfa14f83}{o}}[\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}++],\ \mbox{\hyperlink{pledge_8js_abf6a3c9d69bed4b518ad706279009f51}{done}}:\ !\mbox{\hyperlink{uuid_8min_8js_a400dc8109620963da8314d4bdfa14f83}{o}}\ \};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \};}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ TypeError(\mbox{\hyperlink{ordered-map_8min_8js_ad9a7d92cb87932d25187fdec3ba1b621}{s}}\ ?\ \textcolor{stringliteral}{"{}Object\ is\ not\ iterable."{}}\ :\ \textcolor{stringliteral}{"{}Symbol.iterator\ is\ not\ defined."{}});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{cjs_2internal_2_subject_8js_a485c5ffc811f0c2d1c2130d50b638d94}\index{Subject.js@{Subject.js}!AnonymousSubject@{AnonymousSubject}}
+\index{AnonymousSubject@{AnonymousSubject}!Subject.js@{Subject.js}}
+\doxysubsubsection{\texorpdfstring{AnonymousSubject}{AnonymousSubject}}
+{\footnotesize\ttfamily \label{cjs_2internal_2_subject_8js_a485c5ffc811f0c2d1c2130d50b638d94} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} Anonymous\+Subject = exports.\+Subject = void 0}
+
+\Hypertarget{cjs_2internal_2_subject_8js_a459c85c3c7a49cea7975690ba533ffb6}\index{Subject.js@{Subject.js}!arrRemove\_1@{arrRemove\_1}}
+\index{arrRemove\_1@{arrRemove\_1}!Subject.js@{Subject.js}}
+\doxysubsubsection{\texorpdfstring{arrRemove\_1}{arrRemove\_1}}
+{\footnotesize\ttfamily \label{cjs_2internal_2_subject_8js_a459c85c3c7a49cea7975690ba533ffb6} 
+var arr\+Remove\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./util/arr\+Remove"{})}
+
+\Hypertarget{cjs_2internal_2_subject_8js_a8930757937168ce57ab6463ea74c2d92}\index{Subject.js@{Subject.js}!errorContext\_1@{errorContext\_1}}
+\index{errorContext\_1@{errorContext\_1}!Subject.js@{Subject.js}}
+\doxysubsubsection{\texorpdfstring{errorContext\_1}{errorContext\_1}}
+{\footnotesize\ttfamily \label{cjs_2internal_2_subject_8js_a8930757937168ce57ab6463ea74c2d92} 
+var error\+Context\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./util/error\+Context"{})}
+
+\Hypertarget{cjs_2internal_2_subject_8js_aeb22b01421e6dd6a8830c86f4dbd5d0f}\index{Subject.js@{Subject.js}!ObjectUnsubscribedError\_1@{ObjectUnsubscribedError\_1}}
+\index{ObjectUnsubscribedError\_1@{ObjectUnsubscribedError\_1}!Subject.js@{Subject.js}}
+\doxysubsubsection{\texorpdfstring{ObjectUnsubscribedError\_1}{ObjectUnsubscribedError\_1}}
+{\footnotesize\ttfamily \label{cjs_2internal_2_subject_8js_aeb22b01421e6dd6a8830c86f4dbd5d0f} 
+var Object\+Unsubscribed\+Error\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./util/Object\+Unsubscribed\+Error"{})}
+
+\Hypertarget{cjs_2internal_2_subject_8js_a095e975a8df547e4d25a7c36893ab8cb}\index{Subject.js@{Subject.js}!Observable\_1@{Observable\_1}}
+\index{Observable\_1@{Observable\_1}!Subject.js@{Subject.js}}
+\doxysubsubsection{\texorpdfstring{Observable\_1}{Observable\_1}}
+{\footnotesize\ttfamily \label{cjs_2internal_2_subject_8js_a095e975a8df547e4d25a7c36893ab8cb} 
+var Observable\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./Observable"{})}
+
+\Hypertarget{cjs_2internal_2_subject_8js_ae2475e10618961c050dcba04e8c42331}\index{Subject.js@{Subject.js}!strict@{strict}}
+\index{strict@{strict}!Subject.js@{Subject.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{cjs_2internal_2_subject_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+
+\Hypertarget{cjs_2internal_2_subject_8js_a81bf4c210668709ac8a23b7a0667b7ab}\index{Subject.js@{Subject.js}!Subject@{Subject}}
+\index{Subject@{Subject}!Subject.js@{Subject.js}}
+\doxysubsubsection{\texorpdfstring{Subject}{Subject}}
+{\footnotesize\ttfamily \label{cjs_2internal_2_subject_8js_a81bf4c210668709ac8a23b7a0667b7ab} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} Subject}
+
+\Hypertarget{cjs_2internal_2_subject_8js_a10f451aec6899f829552bdf238c02af6}\index{Subject.js@{Subject.js}!Subscription\_1@{Subscription\_1}}
+\index{Subscription\_1@{Subscription\_1}!Subject.js@{Subject.js}}
+\doxysubsubsection{\texorpdfstring{Subscription\_1}{Subscription\_1}}
+{\footnotesize\ttfamily \label{cjs_2internal_2_subject_8js_a10f451aec6899f829552bdf238c02af6} 
+var Subscription\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./Subscription"{})}
+

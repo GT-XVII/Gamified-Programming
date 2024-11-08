@@ -1,0 +1,7 @@
+<map id="OnlineMonitor::getInstance" name="OnlineMonitor::getInstance">
+<area shape="rect" id="Node000001" title=" " alt="" coords="200,42,377,68"/>
+<area shape="rect" id="Node000002" href="$class_persistent_connection.html#a8c09e931dfb3da193dd0b7c1d5864781" title=" " alt="" coords="5,5,152,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="184,43,152,39,153,33,184,38"/>
+<area shape="rect" id="Node000003" href="$database_2dist_2index_8cjs_8js.html#a6ce91eca0ae29b8eb1acac4e16b5b0a0" title=" " alt="" coords="14,70,143,96"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="184,72,144,77,143,72,184,66"/>
+</map>

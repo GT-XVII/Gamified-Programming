@@ -1,0 +1,213 @@
+\doxysection{XMLMulti\+Part\+Upload\+Helper Class Reference}
+\hypertarget{class_x_m_l_multi_part_upload_helper}{}\label{class_x_m_l_multi_part_upload_helper}\index{XMLMultiPartUploadHelper@{XMLMultiPartUploadHelper}}
+
+
+Collaboration diagram for XMLMulti\+Part\+Upload\+Helper\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{class_x_m_l_multi_part_upload_helper__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_x_m_l_multi_part_upload_helper_a39e0e8846d7a7324b55fcc064fb56e5a}{constructor}} (bucket, \mbox{\hyperlink{fast-xml-parser_2src_2cli_2cli_8js_a9cbb53856a08d61515603f478f2d8bc1}{file\+Name}}, upload\+Id, parts\+Map)
+\item 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{class_x_m_l_multi_part_upload_helper_a6f6b72bf7c7183b9cb1e85206174608b}{initiate\+Upload}} (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7f2cb2fcdd79bf72cefd29b7bc2d10fa}{headers}}=\{\})
+\item 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{class_x_m_l_multi_part_upload_helper_ac6f50a73701792f9d479c73662af1361}{upload\+Part}} (part\+Number, \mbox{\hyperlink{chunk_8js_a49c71f4b8e247d1267a25b3f04caef18}{chunk}}, \mbox{\hyperlink{validation_8js_a216f390033b6c85f657c2e0cff85f29b}{validation}})
+\item 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{class_x_m_l_multi_part_upload_helper_a0cf6af86727eed893f3296233be8bae7}{complete\+Upload}} ()
+\item 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{class_x_m_l_multi_part_upload_helper_aecccf16a3cf863a425c1ae270cef5ac5}{abort\+Upload}} ()
+\item 
+\mbox{\hyperlink{class_x_m_l_multi_part_upload_helper_a39e0e8846d7a7324b55fcc064fb56e5a}{constructor}} (bucket, \mbox{\hyperlink{fast-xml-parser_2src_2cli_2cli_8js_a9cbb53856a08d61515603f478f2d8bc1}{file\+Name}}, upload\+Id, parts\+Map)
+\item 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{class_x_m_l_multi_part_upload_helper_a6f6b72bf7c7183b9cb1e85206174608b}{initiate\+Upload}} (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7f2cb2fcdd79bf72cefd29b7bc2d10fa}{headers}}=\{\})
+\item 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{class_x_m_l_multi_part_upload_helper_ac6f50a73701792f9d479c73662af1361}{upload\+Part}} (part\+Number, \mbox{\hyperlink{chunk_8js_a49c71f4b8e247d1267a25b3f04caef18}{chunk}}, \mbox{\hyperlink{validation_8js_a216f390033b6c85f657c2e0cff85f29b}{validation}})
+\item 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{class_x_m_l_multi_part_upload_helper_a0cf6af86727eed893f3296233be8bae7}{complete\+Upload}} ()
+\item 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{class_x_m_l_multi_part_upload_helper_aecccf16a3cf863a425c1ae270cef5ac5}{abort\+Upload}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class representing an implementation of MPU in the XML API. This class is not meant for public usage. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_x_m_l_multi_part_upload_helper_aecccf16a3cf863a425c1ae270cef5ac5}\index{XMLMultiPartUploadHelper@{XMLMultiPartUploadHelper}!abortUpload@{abortUpload}}
+\index{abortUpload@{abortUpload}!XMLMultiPartUploadHelper@{XMLMultiPartUploadHelper}}
+\doxysubsubsection{\texorpdfstring{abortUpload()}{abortUpload()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_x_m_l_multi_part_upload_helper_aecccf16a3cf863a425c1ae270cef5ac5} 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} XMLMulti\+Part\+Upload\+Helper\+::abort\+Upload (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Aborts an multipart upload that is in progress. Once aborted, any parts in the process of being uploaded fail, and future requests using the upload ID fail.
+
+\begin{DoxyReturn}{Returns}
+\{Promise$<$void$>$\} 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{esm_2src_2transfer-manager_8js_a447cd4ee0c75db2d366d333c1c6ab92b}{\+\_\+\+\_\+class\+Private\+Field\+Get}}, \mbox{\hyperlink{esm_2src_2transfer-manager_8js_a4a1e19a637aee539cba355a4d7621f6b}{\+\_\+\+XMLMulti\+Part\+Upload\+Helper\+\_\+handle\+Error\+Response}}, \mbox{\hyperlink{esm_2src_2transfer-manager_8js_afed199a1cd645baaae66580c75f2ef1b}{\+\_\+\+XMLMulti\+Part\+Upload\+Helper\+\_\+instances}}, \mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}}, \mbox{\hyperlink{cjs_2src_2bucket_8js_a73265d5d9471c044b8a03169eb17e28a}{async\+\_\+retry\+\_\+1}}, \mbox{\hyperlink{firestore__admin__v1__proto__api_8js_a08a4415e9d594ff960030b921d42b91e}{e}}, \mbox{\hyperlink{lodash_2method_8js_a2f565198b0a61cb8648a01f0d9617cd7}{method}}, \mbox{\hyperlink{express_2lib_2express_8js_abde3c35e3bb7e5225dd7f234c685329c}{res}}, and \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_acf0a8b41f00a22e21672c8b3768a0618}{url}}.
+
+\Hypertarget{class_x_m_l_multi_part_upload_helper_aecccf16a3cf863a425c1ae270cef5ac5}\index{XMLMultiPartUploadHelper@{XMLMultiPartUploadHelper}!abortUpload@{abortUpload}}
+\index{abortUpload@{abortUpload}!XMLMultiPartUploadHelper@{XMLMultiPartUploadHelper}}
+\doxysubsubsection{\texorpdfstring{abortUpload()}{abortUpload()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_x_m_l_multi_part_upload_helper_aecccf16a3cf863a425c1ae270cef5ac5} 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} XMLMulti\+Part\+Upload\+Helper\+::abort\+Upload (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Aborts an multipart upload that is in progress. Once aborted, any parts in the process of being uploaded fail, and future requests using the upload ID fail.
+
+\begin{DoxyReturn}{Returns}
+\{Promise$<$void$>$\} 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{esm_2src_2transfer-manager_8js_a447cd4ee0c75db2d366d333c1c6ab92b}{\+\_\+\+\_\+class\+Private\+Field\+Get}}, \mbox{\hyperlink{esm_2src_2transfer-manager_8js_a4a1e19a637aee539cba355a4d7621f6b}{\+\_\+\+XMLMulti\+Part\+Upload\+Helper\+\_\+handle\+Error\+Response}}, \mbox{\hyperlink{esm_2src_2transfer-manager_8js_afed199a1cd645baaae66580c75f2ef1b}{\+\_\+\+XMLMulti\+Part\+Upload\+Helper\+\_\+instances}}, \mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}}, \mbox{\hyperlink{firestore__admin__v1__proto__api_8js_a08a4415e9d594ff960030b921d42b91e}{e}}, \mbox{\hyperlink{lodash_2method_8js_a2f565198b0a61cb8648a01f0d9617cd7}{method}}, \mbox{\hyperlink{express_2lib_2express_8js_abde3c35e3bb7e5225dd7f234c685329c}{res}}, and \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_acf0a8b41f00a22e21672c8b3768a0618}{url}}.
+
+\Hypertarget{class_x_m_l_multi_part_upload_helper_a0cf6af86727eed893f3296233be8bae7}\index{XMLMultiPartUploadHelper@{XMLMultiPartUploadHelper}!completeUpload@{completeUpload}}
+\index{completeUpload@{completeUpload}!XMLMultiPartUploadHelper@{XMLMultiPartUploadHelper}}
+\doxysubsubsection{\texorpdfstring{completeUpload()}{completeUpload()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_x_m_l_multi_part_upload_helper_a0cf6af86727eed893f3296233be8bae7} 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} XMLMulti\+Part\+Upload\+Helper\+::complete\+Upload (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sends the final request of the MPU to tell GCS the upload is now complete.
+
+\begin{DoxyReturn}{Returns}
+\{Promise$<$void$>$\} 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{esm_2src_2transfer-manager_8js_a447cd4ee0c75db2d366d333c1c6ab92b}{\+\_\+\+\_\+class\+Private\+Field\+Get}}, \mbox{\hyperlink{esm_2src_2transfer-manager_8js_a4a1e19a637aee539cba355a4d7621f6b}{\+\_\+\+XMLMulti\+Part\+Upload\+Helper\+\_\+handle\+Error\+Response}}, \mbox{\hyperlink{esm_2src_2transfer-manager_8js_afed199a1cd645baaae66580c75f2ef1b}{\+\_\+\+XMLMulti\+Part\+Upload\+Helper\+\_\+instances}}, \mbox{\hyperlink{esm_2src_2transfer-manager_8js_aa8a7bc0e145bcd71ecfa6a33fde108ab}{\+\_\+\+XMLMulti\+Part\+Upload\+Helper\+\_\+set\+Goog\+Api\+Client\+Headers}}, \mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}, \mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}}, \mbox{\hyperlink{cjs_2src_2bucket_8js_a73265d5d9471c044b8a03169eb17e28a}{async\+\_\+retry\+\_\+1}}, \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}, \mbox{\hyperlink{firestore__admin__v1__proto__api_8js_a08a4415e9d594ff960030b921d42b91e}{e}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7f2cb2fcdd79bf72cefd29b7bc2d10fa}{headers}}, \mbox{\hyperlink{__get_tag_8js_aa38772edcc6ff00766e19b36ce8073a8}{Map}}, \mbox{\hyperlink{lodash_2method_8js_a2f565198b0a61cb8648a01f0d9617cd7}{method}}, \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}, \mbox{\hyperlink{express_2lib_2express_8js_abde3c35e3bb7e5225dd7f234c685329c}{res}}, and \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_acf0a8b41f00a22e21672c8b3768a0618}{url}}.
+
+\Hypertarget{class_x_m_l_multi_part_upload_helper_a0cf6af86727eed893f3296233be8bae7}\index{XMLMultiPartUploadHelper@{XMLMultiPartUploadHelper}!completeUpload@{completeUpload}}
+\index{completeUpload@{completeUpload}!XMLMultiPartUploadHelper@{XMLMultiPartUploadHelper}}
+\doxysubsubsection{\texorpdfstring{completeUpload()}{completeUpload()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_x_m_l_multi_part_upload_helper_a0cf6af86727eed893f3296233be8bae7} 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} XMLMulti\+Part\+Upload\+Helper\+::complete\+Upload (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sends the final request of the MPU to tell GCS the upload is now complete.
+
+\begin{DoxyReturn}{Returns}
+\{Promise$<$void$>$\} 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{esm_2src_2transfer-manager_8js_a447cd4ee0c75db2d366d333c1c6ab92b}{\+\_\+\+\_\+class\+Private\+Field\+Get}}, \mbox{\hyperlink{esm_2src_2transfer-manager_8js_a4a1e19a637aee539cba355a4d7621f6b}{\+\_\+\+XMLMulti\+Part\+Upload\+Helper\+\_\+handle\+Error\+Response}}, \mbox{\hyperlink{esm_2src_2transfer-manager_8js_afed199a1cd645baaae66580c75f2ef1b}{\+\_\+\+XMLMulti\+Part\+Upload\+Helper\+\_\+instances}}, \mbox{\hyperlink{esm_2src_2transfer-manager_8js_aa8a7bc0e145bcd71ecfa6a33fde108ab}{\+\_\+\+XMLMulti\+Part\+Upload\+Helper\+\_\+set\+Goog\+Api\+Client\+Headers}}, \mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}, \mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}}, \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}, \mbox{\hyperlink{firestore__admin__v1__proto__api_8js_a08a4415e9d594ff960030b921d42b91e}{e}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7f2cb2fcdd79bf72cefd29b7bc2d10fa}{headers}}, \mbox{\hyperlink{__get_tag_8js_aa38772edcc6ff00766e19b36ce8073a8}{Map}}, \mbox{\hyperlink{lodash_2method_8js_a2f565198b0a61cb8648a01f0d9617cd7}{method}}, \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}, \mbox{\hyperlink{express_2lib_2express_8js_abde3c35e3bb7e5225dd7f234c685329c}{res}}, and \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_acf0a8b41f00a22e21672c8b3768a0618}{url}}.
+
+\Hypertarget{class_x_m_l_multi_part_upload_helper_a39e0e8846d7a7324b55fcc064fb56e5a}\index{XMLMultiPartUploadHelper@{XMLMultiPartUploadHelper}!constructor@{constructor}}
+\index{constructor@{constructor}!XMLMultiPartUploadHelper@{XMLMultiPartUploadHelper}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_x_m_l_multi_part_upload_helper_a39e0e8846d7a7324b55fcc064fb56e5a} 
+XMLMulti\+Part\+Upload\+Helper\+::constructor (\begin{DoxyParamCaption}\item[{}]{bucket}{, }\item[{}]{file\+Name}{, }\item[{}]{upload\+Id}{, }\item[{}]{parts\+Map}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{esm_2src_2transfer-manager_8js_afed199a1cd645baaae66580c75f2ef1b}{\+\_\+\+XMLMulti\+Part\+Upload\+Helper\+\_\+instances}}, \mbox{\hyperlink{cjs_2src_2transfer-manager_8js_a42e055213f4139c3c97e9d26ae97c8e0}{fast\+\_\+xml\+\_\+parser\+\_\+1}}, \mbox{\hyperlink{fast-xml-parser_2src_2cli_2cli_8js_a9cbb53856a08d61515603f478f2d8bc1}{file\+Name}}, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2cjs_2src_2nodejs-common_2service_8js_ae0055684ea6f89c4f9efef6a704261a2}{google\+\_\+auth\+\_\+library\+\_\+1}}, \mbox{\hyperlink{agent-base_2dist_2helpers_8js_ab3093f9d8507c035b404b9d49bdb40f7}{https}}, and \mbox{\hyperlink{__get_tag_8js_aa38772edcc6ff00766e19b36ce8073a8}{Map}}.
+
+\Hypertarget{class_x_m_l_multi_part_upload_helper_a39e0e8846d7a7324b55fcc064fb56e5a}\index{XMLMultiPartUploadHelper@{XMLMultiPartUploadHelper}!constructor@{constructor}}
+\index{constructor@{constructor}!XMLMultiPartUploadHelper@{XMLMultiPartUploadHelper}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_x_m_l_multi_part_upload_helper_a39e0e8846d7a7324b55fcc064fb56e5a} 
+XMLMulti\+Part\+Upload\+Helper\+::constructor (\begin{DoxyParamCaption}\item[{}]{bucket}{, }\item[{}]{file\+Name}{, }\item[{}]{upload\+Id}{, }\item[{}]{parts\+Map}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{esm_2src_2transfer-manager_8js_afed199a1cd645baaae66580c75f2ef1b}{\+\_\+\+XMLMulti\+Part\+Upload\+Helper\+\_\+instances}}, \mbox{\hyperlink{fast-xml-parser_2src_2cli_2cli_8js_a9cbb53856a08d61515603f478f2d8bc1}{file\+Name}}, \mbox{\hyperlink{googleauth_8js_a4a0115a1538b2e215c420f903f7267a0}{Google\+Auth}}, \mbox{\hyperlink{agent-base_2dist_2helpers_8js_ab3093f9d8507c035b404b9d49bdb40f7}{https}}, \mbox{\hyperlink{__get_tag_8js_aa38772edcc6ff00766e19b36ce8073a8}{Map}}, \mbox{\hyperlink{fxp_8js_a0bcbf22268efb8fa5e1ac242125d8216}{XMLBuilder}}, and \mbox{\hyperlink{fxp_8js_a0faadc81efb98e95a3e35fd896ce5004}{XMLParser}}.
+
+\Hypertarget{class_x_m_l_multi_part_upload_helper_a6f6b72bf7c7183b9cb1e85206174608b}\index{XMLMultiPartUploadHelper@{XMLMultiPartUploadHelper}!initiateUpload@{initiateUpload}}
+\index{initiateUpload@{initiateUpload}!XMLMultiPartUploadHelper@{XMLMultiPartUploadHelper}}
+\doxysubsubsection{\texorpdfstring{initiateUpload()}{initiateUpload()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_x_m_l_multi_part_upload_helper_a6f6b72bf7c7183b9cb1e85206174608b} 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} XMLMulti\+Part\+Upload\+Helper\+::initiate\+Upload (\begin{DoxyParamCaption}\item[{}]{headers}{ = {\ttfamily \{\}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Initiates a multipart upload (MPU) to the XML API and stores the resultant upload id.
+
+\begin{DoxyReturn}{Returns}
+\{Promise$<$void$>$\} 
+\end{DoxyReturn}
+\Hypertarget{class_x_m_l_multi_part_upload_helper_a6f6b72bf7c7183b9cb1e85206174608b}\index{XMLMultiPartUploadHelper@{XMLMultiPartUploadHelper}!initiateUpload@{initiateUpload}}
+\index{initiateUpload@{initiateUpload}!XMLMultiPartUploadHelper@{XMLMultiPartUploadHelper}}
+\doxysubsubsection{\texorpdfstring{initiateUpload()}{initiateUpload()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_x_m_l_multi_part_upload_helper_a6f6b72bf7c7183b9cb1e85206174608b} 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} XMLMulti\+Part\+Upload\+Helper\+::initiate\+Upload (\begin{DoxyParamCaption}\item[{}]{headers}{ = {\ttfamily \{\}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Initiates a multipart upload (MPU) to the XML API and stores the resultant upload id.
+
+\begin{DoxyReturn}{Returns}
+\{Promise$<$void$>$\} 
+\end{DoxyReturn}
+\Hypertarget{class_x_m_l_multi_part_upload_helper_ac6f50a73701792f9d479c73662af1361}\index{XMLMultiPartUploadHelper@{XMLMultiPartUploadHelper}!uploadPart@{uploadPart}}
+\index{uploadPart@{uploadPart}!XMLMultiPartUploadHelper@{XMLMultiPartUploadHelper}}
+\doxysubsubsection{\texorpdfstring{uploadPart()}{uploadPart()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_x_m_l_multi_part_upload_helper_ac6f50a73701792f9d479c73662af1361} 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} XMLMulti\+Part\+Upload\+Helper\+::upload\+Part (\begin{DoxyParamCaption}\item[{}]{part\+Number}{, }\item[{}]{chunk}{, }\item[{}]{validation}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Uploads the provided chunk of data to the XML API using the previously created upload id.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{number\}} & part\+Number the sequence number of this chunk. \\
+\hline
+{\em \{\+Buffer\}} & chunk the chunk of data to be uploaded. \\
+\hline
+{\em \{string} & \texorpdfstring{$\vert$}{|} false\} validation whether or not to include the md5 hash in the headers to cause the server to validate the chunk was not corrupted. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Promise$<$void$>$\} 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{esm_2src_2transfer-manager_8js_a447cd4ee0c75db2d366d333c1c6ab92b}{\+\_\+\+\_\+class\+Private\+Field\+Get}}, \mbox{\hyperlink{esm_2src_2transfer-manager_8js_a4a1e19a637aee539cba355a4d7621f6b}{\+\_\+\+XMLMulti\+Part\+Upload\+Helper\+\_\+handle\+Error\+Response}}, \mbox{\hyperlink{esm_2src_2transfer-manager_8js_afed199a1cd645baaae66580c75f2ef1b}{\+\_\+\+XMLMulti\+Part\+Upload\+Helper\+\_\+instances}}, \mbox{\hyperlink{esm_2src_2transfer-manager_8js_aa8a7bc0e145bcd71ecfa6a33fde108ab}{\+\_\+\+XMLMulti\+Part\+Upload\+Helper\+\_\+set\+Goog\+Api\+Client\+Headers}}, \mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}}, \mbox{\hyperlink{cjs_2src_2bucket_8js_a73265d5d9471c044b8a03169eb17e28a}{async\+\_\+retry\+\_\+1}}, \mbox{\hyperlink{chunk_8js_a49c71f4b8e247d1267a25b3f04caef18}{chunk()}}, \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2util_8js_a76fa7e3bd69ca107520d99475fa60fe7}{crypto\+\_\+1}}, \mbox{\hyperlink{firestore__admin__v1__proto__api_8js_a08a4415e9d594ff960030b921d42b91e}{e}}, \mbox{\hyperlink{pbe_8js_a4e8eeb941272ccb92c8911eb60686dd3}{hash()}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7f2cb2fcdd79bf72cefd29b7bc2d10fa}{headers}}, \mbox{\hyperlink{lodash_2method_8js_a2f565198b0a61cb8648a01f0d9617cd7}{method}}, \mbox{\hyperlink{express_2lib_2express_8js_abde3c35e3bb7e5225dd7f234c685329c}{res}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_acf0a8b41f00a22e21672c8b3768a0618}{url}}, and \mbox{\hyperlink{validation_8js_a216f390033b6c85f657c2e0cff85f29b}{validation()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_x_m_l_multi_part_upload_helper_ac6f50a73701792f9d479c73662af1361_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_x_m_l_multi_part_upload_helper_ac6f50a73701792f9d479c73662af1361}\index{XMLMultiPartUploadHelper@{XMLMultiPartUploadHelper}!uploadPart@{uploadPart}}
+\index{uploadPart@{uploadPart}!XMLMultiPartUploadHelper@{XMLMultiPartUploadHelper}}
+\doxysubsubsection{\texorpdfstring{uploadPart()}{uploadPart()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_x_m_l_multi_part_upload_helper_ac6f50a73701792f9d479c73662af1361} 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} XMLMulti\+Part\+Upload\+Helper\+::upload\+Part (\begin{DoxyParamCaption}\item[{}]{part\+Number}{, }\item[{}]{chunk}{, }\item[{}]{validation}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Uploads the provided chunk of data to the XML API using the previously created upload id.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{number\}} & part\+Number the sequence number of this chunk. \\
+\hline
+{\em \{\+Buffer\}} & chunk the chunk of data to be uploaded. \\
+\hline
+{\em \{string} & \texorpdfstring{$\vert$}{|} false\} validation whether or not to include the md5 hash in the headers to cause the server to validate the chunk was not corrupted. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Promise$<$void$>$\} 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{esm_2src_2transfer-manager_8js_a447cd4ee0c75db2d366d333c1c6ab92b}{\+\_\+\+\_\+class\+Private\+Field\+Get}}, \mbox{\hyperlink{esm_2src_2transfer-manager_8js_a4a1e19a637aee539cba355a4d7621f6b}{\+\_\+\+XMLMulti\+Part\+Upload\+Helper\+\_\+handle\+Error\+Response}}, \mbox{\hyperlink{esm_2src_2transfer-manager_8js_afed199a1cd645baaae66580c75f2ef1b}{\+\_\+\+XMLMulti\+Part\+Upload\+Helper\+\_\+instances}}, \mbox{\hyperlink{esm_2src_2transfer-manager_8js_aa8a7bc0e145bcd71ecfa6a33fde108ab}{\+\_\+\+XMLMulti\+Part\+Upload\+Helper\+\_\+set\+Goog\+Api\+Client\+Headers}}, \mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}}, \mbox{\hyperlink{chunk_8js_a49c71f4b8e247d1267a25b3f04caef18}{chunk()}}, \mbox{\hyperlink{firestore__admin__v1__proto__api_8js_a08a4415e9d594ff960030b921d42b91e}{e}}, \mbox{\hyperlink{pbe_8js_a4e8eeb941272ccb92c8911eb60686dd3}{hash()}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7f2cb2fcdd79bf72cefd29b7bc2d10fa}{headers}}, \mbox{\hyperlink{lodash_2method_8js_a2f565198b0a61cb8648a01f0d9617cd7}{method}}, \mbox{\hyperlink{express_2lib_2express_8js_abde3c35e3bb7e5225dd7f234c685329c}{res}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_acf0a8b41f00a22e21672c8b3768a0618}{url}}, and \mbox{\hyperlink{validation_8js_a216f390033b6c85f657c2e0cff85f29b}{validation()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_x_m_l_multi_part_upload_helper_ac6f50a73701792f9d479c73662af1361_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/@google-\/cloud/storage/build/cjs/src/\mbox{\hyperlink{cjs_2src_2transfer-manager_8js}{transfer-\/manager.\+js}}\item 
+backend/node\+\_\+modules/@google-\/cloud/storage/build/esm/src/\mbox{\hyperlink{esm_2src_2transfer-manager_8js}{transfer-\/manager.\+js}}\end{DoxyCompactItemize}

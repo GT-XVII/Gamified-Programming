@@ -1,0 +1,7 @@
+<map id="createPart" name="createPart">
+<area shape="rect" id="Node000001" title=" " alt="" coords="384,13,465,38"/>
+<area shape="rect" id="Node000002" href="$class_batch_request_client.html#ae35eb09c51ad5161b4d9471ede27e107" title=" " alt="" coords="192,5,336,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="368,28,336,28,336,23,368,23"/>
+<area shape="rect" id="Node000003" href="$class_batch_request_client.html#afeebfe344109d32d62dd0bb969cd077d" title=" " alt="" coords="5,5,144,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="176,28,144,28,144,23,176,23"/>
+</map>

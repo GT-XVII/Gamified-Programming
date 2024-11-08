@@ -1,0 +1,10 @@
+<map id="safeJsonParse" name="safeJsonParse">
+<area shape="rect" id="Node000001" title=" " alt="" coords="438,31,547,56"/>
+<area shape="rect" id="Node000002" href="$jsonwebtoken_2node__modules_2jws_2lib_2verify-stream_8js.html#a32cc55c26c7207108422f6cb371ae11a" title=" " alt="" coords="271,31,390,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="422,46,390,46,390,41,422,41"/>
+<area shape="rect" id="Node000003" href="$jsonwebtoken_2node__modules_2jws_2lib_2verify-stream_8js.html#a06a8d63765bfafa0dfca5dba60639024" title=" " alt="" coords="140,5,223,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="255,33,223,28,224,23,256,28"/>
+<area shape="rect" id="Node000004" href="$jsonwebtoken_2node__modules_2jws_2lib_2verify-stream_8js.html#a8b5fc06ddd3d75433612502fb1bf5537" title=" " alt="" coords="5,31,92,56"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="255,46,92,46,92,41,255,41"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="125,32,93,38,92,33,124,26"/>
+</map>

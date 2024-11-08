@@ -1,0 +1,16 @@
+<map id="compoundWriteAddWrite" name="compoundWriteAddWrite">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,104,170,130"/>
+<area shape="rect" id="Node000002" href="$database_2dist_2index_8cjs_8js.html#aa7f36279f0399a54fb8929ab7b755248" title=" " alt="" coords="218,55,338,80"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="139,101,210,82,211,87,141,106"/>
+<area shape="rect" id="Node000005" href="$database_2dist_2index_8cjs_8js.html#a43414a334079e9b1d3f0f72536d276de" title=" " alt="" coords="227,104,328,130"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="170,114,211,114,211,120,170,120"/>
+<area shape="rect" id="Node000007" href="$database_2dist_2index_8cjs_8js.html#a13685d947fd1cec360a07a75e0be533c" title=" " alt="" coords="230,153,326,179"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="141,128,216,147,214,153,139,133"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="246,56,240,46,244,36,257,30,278,28,300,31,312,37,310,42,299,36,278,33,258,35,248,40,245,45,251,53"/>
+<area shape="rect" id="Node000003" href="$database_2dist_2index_8cjs_8js.html#a7b654592c33e62ec97e21c99cc51f9a9" title=" " alt="" coords="416,5,514,31"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="329,51,401,32,402,37,330,57"/>
+<area shape="rect" id="Node000004" href="$database_2dist_2index_8cjs_8js.html#a7a1977e4bb906999d912c8a38d416af6" title=" " alt="" coords="416,55,515,80"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="339,65,400,65,400,70,339,70"/>
+<area shape="rect" id="Node000006" href="$class_compound_write.html#abbce8975c273c15b3f6a8a0cdc668b0f" title=" " alt="" coords="386,104,544,130"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="329,114,371,114,371,120,329,120"/>
+</map>

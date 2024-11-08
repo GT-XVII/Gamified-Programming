@@ -1,0 +1,142 @@
+\doxysection{backend/node\+\_\+modules/websocket-\/extensions/lib/pipeline/ring\+\_\+buffer.js File Reference}
+\hypertarget{ring__buffer_8js}{}\label{ring__buffer_8js}\index{backend/node\_modules/websocket-\/extensions/lib/pipeline/ring\_buffer.js@{backend/node\_modules/websocket-\/extensions/lib/pipeline/ring\_buffer.js}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{ring__buffer_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+var \mbox{\hyperlink{ring__buffer_8js_aa94c20db16fddb6041167acd8d295e79}{Ring\+Buffer}}
+\item 
+\mbox{\hyperlink{functor_8js_aa94c20db16fddb6041167acd8d295e79}{Ring\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{ring__buffer_8js_ae71fab66650ab0199c978391851bfe15}{clear}}
+\item 
+\mbox{\hyperlink{functor_8js_aa94c20db16fddb6041167acd8d295e79}{Ring\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{ring__buffer_8js_a8d7a2b3586ba16aba28dae631fdbd77e}{push}}
+\item 
+\mbox{\hyperlink{functor_8js_aa94c20db16fddb6041167acd8d295e79}{Ring\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{ring__buffer_8js_ae303f08fd0fd46fcabefc27736c6f9f9}{peek}}
+\item 
+\mbox{\hyperlink{functor_8js_aa94c20db16fddb6041167acd8d295e79}{Ring\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{ring__buffer_8js_a9d50f79482c19af86c52db5d9eea31cc}{shift}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{ring__buffer_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} = \mbox{\hyperlink{functor_8js_aa94c20db16fddb6041167acd8d295e79}{Ring\+Buffer}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{ring__buffer_8js_ae71fab66650ab0199c978391851bfe15}\index{ring\_buffer.js@{ring\_buffer.js}!clear@{clear}}
+\index{clear@{clear}!ring\_buffer.js@{ring\_buffer.js}}
+\doxysubsubsection{\texorpdfstring{clear}{clear}}
+{\footnotesize\ttfamily \label{ring__buffer_8js_ae71fab66650ab0199c978391851bfe15} 
+\mbox{\hyperlink{functor_8js_aa94c20db16fddb6041167acd8d295e79}{Ring\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} clear}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}()\ \{}
+\DoxyCodeLine{\ \ this.\_buffer\ \ \ \ \ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{src_2util_2minimal_8js_a325c4e317c38d8497130ebce7670be2f}{Array}}(this.\_bufferSize);}
+\DoxyCodeLine{\ \ this.\_ringOffset\ =\ 0;}
+\DoxyCodeLine{\ \ this.\_ringSize\ \ \ =\ this.\_bufferSize;}
+\DoxyCodeLine{\ \ this.\_head\ \ \ \ \ \ \ =\ 0;}
+\DoxyCodeLine{\ \ this.\_tail\ \ \ \ \ \ \ =\ 0;}
+\DoxyCodeLine{\ \ this.\mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a7fdcf4c82c9946bf2b0b80829a7ab230}{length}}\ \ \ \ \ \ =\ 0;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{ring__buffer_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\index{ring\_buffer.js@{ring\_buffer.js}!exports@{exports}}
+\index{exports@{exports}!ring\_buffer.js@{ring\_buffer.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \label{ring__buffer_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports = \mbox{\hyperlink{functor_8js_aa94c20db16fddb6041167acd8d295e79}{Ring\+Buffer}}}
+
+\Hypertarget{ring__buffer_8js_ae303f08fd0fd46fcabefc27736c6f9f9}\index{ring\_buffer.js@{ring\_buffer.js}!peek@{peek}}
+\index{peek@{peek}!ring\_buffer.js@{ring\_buffer.js}}
+\doxysubsubsection{\texorpdfstring{peek}{peek}}
+{\footnotesize\ttfamily \label{ring__buffer_8js_ae303f08fd0fd46fcabefc27736c6f9f9} 
+\mbox{\hyperlink{functor_8js_aa94c20db16fddb6041167acd8d295e79}{Ring\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} peek}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}()\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (this.\mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a7fdcf4c82c9946bf2b0b80829a7ab230}{length}}\ ===\ 0)\ \textcolor{keywordflow}{return}\ \textcolor{keywordtype}{void}\ 0;}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ this.\_buffer[this.\_head];}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{ring__buffer_8js_a8d7a2b3586ba16aba28dae631fdbd77e}\index{ring\_buffer.js@{ring\_buffer.js}!push@{push}}
+\index{push@{push}!ring\_buffer.js@{ring\_buffer.js}}
+\doxysubsubsection{\texorpdfstring{push}{push}}
+{\footnotesize\ttfamily \label{ring__buffer_8js_a8d7a2b3586ba16aba28dae631fdbd77e} 
+\mbox{\hyperlink{functor_8js_aa94c20db16fddb6041167acd8d295e79}{Ring\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} push}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}})\ \{}
+\DoxyCodeLine{\ \ var\ expandBuffer\ =\ \textcolor{keyword}{false},}
+\DoxyCodeLine{\ \ \ \ \ \ expandRing\ \ \ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (this.\_ringSize\ <\ this.\_bufferSize)\ \{}
+\DoxyCodeLine{\ \ \ \ expandBuffer\ =\ (this.\_tail\ ===\ 0);}
+\DoxyCodeLine{\ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (this.\_ringOffset\ ===\ this.\_ringSize)\ \{}
+\DoxyCodeLine{\ \ \ \ expandBuffer\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\ \ \ \ expandRing\ \ \ =\ (this.\_tail\ ===\ 0);}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (expandBuffer)\ \{}
+\DoxyCodeLine{\ \ \ \ this.\_tail\ \ \ \ \ \ \ =\ this.\_bufferSize;}
+\DoxyCodeLine{\ \ \ \ this.\_buffer\ \ \ \ \ =\ this.\_buffer.concat(\textcolor{keyword}{new}\ \mbox{\hyperlink{src_2util_2minimal_8js_a325c4e317c38d8497130ebce7670be2f}{Array}}(this.\_bufferSize));}
+\DoxyCodeLine{\ \ \ \ this.\_bufferSize\ =\ this.\_buffer.length;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (expandRing)}
+\DoxyCodeLine{\ \ \ \ \ \ this.\_ringSize\ =\ this.\_bufferSize;}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ this.\_buffer[this.\_tail]\ =\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}};}
+\DoxyCodeLine{\ \ this.\mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a7fdcf4c82c9946bf2b0b80829a7ab230}{length}}\ +=\ 1;}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (this.\_tail\ <\ this.\_ringSize)\ this.\_ringOffset\ +=\ 1;}
+\DoxyCodeLine{\ \ this.\_tail\ =\ (this.\_tail\ +\ 1)\ \%\ this.\_bufferSize;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{ring__buffer_8js_aa94c20db16fddb6041167acd8d295e79}\index{ring\_buffer.js@{ring\_buffer.js}!RingBuffer@{RingBuffer}}
+\index{RingBuffer@{RingBuffer}!ring\_buffer.js@{ring\_buffer.js}}
+\doxysubsubsection{\texorpdfstring{RingBuffer}{RingBuffer}}
+{\footnotesize\ttfamily \label{ring__buffer_8js_aa94c20db16fddb6041167acd8d295e79} 
+var Ring\+Buffer}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(bufferSize)\ \{}
+\DoxyCodeLine{\ \ this.\_bufferSize\ =\ bufferSize;}
+\DoxyCodeLine{\ \ this.\mbox{\hyperlink{ring__buffer_8js_ae71fab66650ab0199c978391851bfe15}{clear}}();}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{ring__buffer_8js_a9d50f79482c19af86c52db5d9eea31cc}\index{ring\_buffer.js@{ring\_buffer.js}!shift@{shift}}
+\index{shift@{shift}!ring\_buffer.js@{ring\_buffer.js}}
+\doxysubsubsection{\texorpdfstring{shift}{shift}}
+{\footnotesize\ttfamily \label{ring__buffer_8js_a9d50f79482c19af86c52db5d9eea31cc} 
+\mbox{\hyperlink{functor_8js_aa94c20db16fddb6041167acd8d295e79}{Ring\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} shift}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}()\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (this.\mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a7fdcf4c82c9946bf2b0b80829a7ab230}{length}}\ ===\ 0)\ \textcolor{keywordflow}{return}\ \textcolor{keywordtype}{void}\ 0;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}\ =\ this.\_buffer[this.\_head];}
+\DoxyCodeLine{\ \ this.\_buffer[this.\_head]\ =\ \textcolor{keywordtype}{void}\ 0;}
+\DoxyCodeLine{\ \ this.\mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a7fdcf4c82c9946bf2b0b80829a7ab230}{length}}\ -\/=\ 1;}
+\DoxyCodeLine{\ \ this.\_ringOffset\ -\/=\ 1;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (this.\_ringOffset\ ===\ 0\ \&\&\ this.\mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a7fdcf4c82c9946bf2b0b80829a7ab230}{length}}\ >\ 0)\ \{}
+\DoxyCodeLine{\ \ \ \ this.\_head\ \ \ \ \ \ \ =\ this.\_ringSize;}
+\DoxyCodeLine{\ \ \ \ this.\_ringOffset\ =\ this.\mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a7fdcf4c82c9946bf2b0b80829a7ab230}{length}};}
+\DoxyCodeLine{\ \ \ \ this.\_ringSize\ \ \ =\ this.\_bufferSize;}
+\DoxyCodeLine{\ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\ \ \ \ this.\_head\ =\ (this.\_head\ +\ 1)\ \%\ this.\_ringSize;}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{ring__buffer_8js_ae2475e10618961c050dcba04e8c42331}\index{ring\_buffer.js@{ring\_buffer.js}!strict@{strict}}
+\index{strict@{strict}!ring\_buffer.js@{ring\_buffer.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{ring__buffer_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+

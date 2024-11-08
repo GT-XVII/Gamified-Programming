@@ -1,0 +1,168 @@
+\doxysection{Project\+Config Class Reference}
+\hypertarget{class_project_config}{}\label{class_project_config}\index{ProjectConfig@{ProjectConfig}}
+
+
+Collaboration diagram for Project\+Config\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{class_project_config__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} \mbox{\hyperlink{class_project_config_afb2cd36c8ea6ba395bc2d2effb9a3366}{multi\+Factor\+Config}} ()
+\item 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} \mbox{\hyperlink{class_project_config_aa55df21d175cd895d0526f4ebf51f255}{recaptcha\+Config}} ()
+\item 
+\mbox{\hyperlink{class_project_config_acab01ff88833b6de5e3b6c1f2fdac965}{constructor}} (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ac70ac40ef8199c59316b35022dd21914}{response}})
+\item 
+\mbox{\hyperlink{class_project_config_a8106b05f03d0800bff79a9eb569f6c24}{to\+JSON}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_project_config_af1f98185305c5c5b90e3b9fc7be24776}{validate}} (\mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}})
+\item 
+static \mbox{\hyperlink{class_project_config_aa3fe5013a739bbaf8775ca0eb22e52b9}{build\+Server\+Request}} (config\+Options)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a project configuration. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_project_config_aa3fe5013a739bbaf8775ca0eb22e52b9}\index{ProjectConfig@{ProjectConfig}!buildServerRequest@{buildServerRequest}}
+\index{buildServerRequest@{buildServerRequest}!ProjectConfig@{ProjectConfig}}
+\doxysubsubsection{\texorpdfstring{buildServerRequest()}{buildServerRequest()}}
+{\footnotesize\ttfamily \label{class_project_config_aa3fe5013a739bbaf8775ca0eb22e52b9} 
+static Project\+Config\+::build\+Server\+Request (\begin{DoxyParamCaption}\item[{}]{config\+Options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Build the corresponding server request for a Update\+Project\+Config\+Request object. 
+\begin{DoxyParams}{Parameters}
+{\em config\+Options} & -\/ The properties to convert to a server request. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The equivalent server request. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{project-config_8js_a6c5d80272703a3b8334ada4da14b59e4}{auth\+\_\+config\+\_\+1}}, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}}, and \mbox{\hyperlink{class_project_config_af1f98185305c5c5b90e3b9fc7be24776}{validate()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_project_config_aa3fe5013a739bbaf8775ca0eb22e52b9_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_project_config_acab01ff88833b6de5e3b6c1f2fdac965}\index{ProjectConfig@{ProjectConfig}!constructor@{constructor}}
+\index{constructor@{constructor}!ProjectConfig@{ProjectConfig}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_project_config_acab01ff88833b6de5e3b6c1f2fdac965} 
+Project\+Config\+::constructor (\begin{DoxyParamCaption}\item[{}]{response}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+The Project Config object constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em response} & -\/ The server side response used to initialize the Project Config object. @constructor \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{project-config_8js_a6c5d80272703a3b8334ada4da14b59e4}{auth\+\_\+config\+\_\+1}}, and \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ac70ac40ef8199c59316b35022dd21914}{response}}.
+
+\Hypertarget{class_project_config_afb2cd36c8ea6ba395bc2d2effb9a3366}\index{ProjectConfig@{ProjectConfig}!multiFactorConfig@{multiFactorConfig}}
+\index{multiFactorConfig@{multiFactorConfig}!ProjectConfig@{ProjectConfig}}
+\doxysubsubsection{\texorpdfstring{multiFactorConfig()}{multiFactorConfig()}}
+{\footnotesize\ttfamily \label{class_project_config_afb2cd36c8ea6ba395bc2d2effb9a3366} 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} Project\+Config\+::multi\+Factor\+Config (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+The multi-\/factor auth configuration. Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_project_config_afb2cd36c8ea6ba395bc2d2effb9a3366_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_project_config_aa55df21d175cd895d0526f4ebf51f255}\index{ProjectConfig@{ProjectConfig}!recaptchaConfig@{recaptchaConfig}}
+\index{recaptchaConfig@{recaptchaConfig}!ProjectConfig@{ProjectConfig}}
+\doxysubsubsection{\texorpdfstring{recaptchaConfig()}{recaptchaConfig()}}
+{\footnotesize\ttfamily \label{class_project_config_aa55df21d175cd895d0526f4ebf51f255} 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} Project\+Config\+::recaptcha\+Config (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+The re\+CAPTCHA configuration. Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_project_config_aa55df21d175cd895d0526f4ebf51f255_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_project_config_a8106b05f03d0800bff79a9eb569f6c24}\index{ProjectConfig@{ProjectConfig}!toJSON@{toJSON}}
+\index{toJSON@{toJSON}!ProjectConfig@{ProjectConfig}}
+\doxysubsubsection{\texorpdfstring{toJSON()}{toJSON()}}
+{\footnotesize\ttfamily \label{class_project_config_a8106b05f03d0800bff79a9eb569f6c24} 
+Project\+Config\+::to\+JSON (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a JSON-\/serializable representation of this object.
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_a}{A} JSON-\/serializable representation of this object. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{project-config_8js_a3c878464c635c5cd2043d7e066bb187b}{deep\+\_\+copy\+\_\+1}}, \mbox{\hyperlink{agent-base_2dist_2helpers_8js_ac6fdc7f7005e375dc7d7dce4bc785ab4}{json}}, \mbox{\hyperlink{class_project_config_afb2cd36c8ea6ba395bc2d2effb9a3366}{multi\+Factor\+Config()}}, and \mbox{\hyperlink{class_project_config_aa55df21d175cd895d0526f4ebf51f255}{recaptcha\+Config()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_project_config_a8106b05f03d0800bff79a9eb569f6c24_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_project_config_af1f98185305c5c5b90e3b9fc7be24776}\index{ProjectConfig@{ProjectConfig}!validate@{validate}}
+\index{validate@{validate}!ProjectConfig@{ProjectConfig}}
+\doxysubsubsection{\texorpdfstring{validate()}{validate()}}
+{\footnotesize\ttfamily \label{class_project_config_af1f98185305c5c5b90e3b9fc7be24776} 
+static Project\+Config\+::validate (\begin{DoxyParamCaption}\item[{}]{request}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Validates a project config options object. Throws an error on failure.
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & -\/ The project config options object to validate. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}, \mbox{\hyperlink{project-config_8js_a6c5d80272703a3b8334ada4da14b59e4}{auth\+\_\+config\+\_\+1}}, \mbox{\hyperlink{project-config_8js_af1a99a3ff1a35c114bdd06cc7252beb6}{error\+\_\+1}}, \mbox{\hyperlink{express_2lib_2request_8js_a5e3afd97276cc403924d1a449a83ea84}{is}}, \mbox{\hyperlink{class_project_config_afb2cd36c8ea6ba395bc2d2effb9a3366}{multi\+Factor\+Config()}}, \mbox{\hyperlink{long_2index_8js_ad7dc44f0ebdb746f4a5b0612ae9315cb}{not}}, \mbox{\hyperlink{class_project_config_aa55df21d175cd895d0526f4ebf51f255}{recaptcha\+Config()}}, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}}, and \mbox{\hyperlink{project-config_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_project_config_af1f98185305c5c5b90e3b9fc7be24776_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_project_config_af1f98185305c5c5b90e3b9fc7be24776_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/firebase-\/admin/lib/auth/\mbox{\hyperlink{project-config_8js}{project-\/config.\+js}}\end{DoxyCompactItemize}

@@ -1,0 +1,157 @@
+\doxysection{Backoff\+Timeout Class Reference}
+\hypertarget{class_backoff_timeout}{}\label{class_backoff_timeout}\index{BackoffTimeout@{BackoffTimeout}}
+
+
+Collaboration diagram for Backoff\+Timeout\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=157pt]{class_backoff_timeout__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_backoff_timeout_aaa367c6b12580eb844a7dba8e4ca8279}{constructor}} (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a622460feeccdab6d8f307936fc6b36fb}{callback}}, options)
+\item 
+\mbox{\hyperlink{class_backoff_timeout_ad72c232026317392e08d7cb8d8a229d7}{run\+Timer}} (\mbox{\hyperlink{lodash_2core_8js_ae9012370fd5bbda6f1dbd157b9012f73}{delay}})
+\item 
+\mbox{\hyperlink{class_backoff_timeout_a80e6218abaa7f49885fa1196e1b2d28e}{run\+Once}} ()
+\item 
+\mbox{\hyperlink{class_backoff_timeout_a872ebde07206bd78d7f3e71c16475f25}{stop}} ()
+\item 
+\mbox{\hyperlink{class_backoff_timeout_aaf91fa07f33782763ee5be9c5521711f}{reset}} ()
+\item 
+\mbox{\hyperlink{class_backoff_timeout_a7db44c2626ae25bf217a221b86b1c674}{is\+Running}} ()
+\item 
+\mbox{\hyperlink{class_backoff_timeout_a4a9fa584223bb0f6cb0aea0a72fc812f}{ref}} ()
+\item 
+\mbox{\hyperlink{class_backoff_timeout_a5b2380afe8d3eff41a1fea739804c8e8}{unref}} ()
+\item 
+\mbox{\hyperlink{class_backoff_timeout_a52448f6360f90e3a2d5c212724e8e89f}{get\+End\+Time}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_backoff_timeout_aaa367c6b12580eb844a7dba8e4ca8279}\index{BackoffTimeout@{BackoffTimeout}!constructor@{constructor}}
+\index{constructor@{constructor}!BackoffTimeout@{BackoffTimeout}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_backoff_timeout_aaa367c6b12580eb844a7dba8e4ca8279} 
+Backoff\+Timeout\+::constructor (\begin{DoxyParamCaption}\item[{}]{callback}{, }\item[{}]{options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+The delay time at the start, and after each reset.
+
+The exponential backoff multiplier.
+
+The maximum delay time
+
+The maximum fraction by which the delay time can randomly vary after applying the multiplier.
+
+Indicates whether the timer is currently running.
+
+Indicates whether the timer should keep the \doxylink{class_node}{Node} process running if no other async operation is doing so.
+
+The time that the currently running timer was started. Only valid if running is true.
+
+The approximate time that the currently running timer will end. Only valid if running is true.
+
+References \mbox{\hyperlink{backoff-timeout_8js_a27d2e0b1d810e1190b205c0b02945b02}{BACKOFF\+\_\+\+JITTER}}, \mbox{\hyperlink{backoff-timeout_8js_afa96282a03d8af93ee61f32f048cbf75}{BACKOFF\+\_\+\+MULTIPLIER}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a622460feeccdab6d8f307936fc6b36fb}{callback}}, \mbox{\hyperlink{backoff-timeout_8js_a6bf2802b4a8ac21b1aa965a2d6ed747d}{INITIAL\+\_\+\+BACKOFF\+\_\+\+MS}}, and \mbox{\hyperlink{backoff-timeout_8js_a7c8a2434d4f784e45a849dd193ec84a9}{MAX\+\_\+\+BACKOFF\+\_\+\+MS}}.
+
+\Hypertarget{class_backoff_timeout_a52448f6360f90e3a2d5c212724e8e89f}\index{BackoffTimeout@{BackoffTimeout}!getEndTime@{getEndTime}}
+\index{getEndTime@{getEndTime}!BackoffTimeout@{BackoffTimeout}}
+\doxysubsubsection{\texorpdfstring{getEndTime()}{getEndTime()}}
+{\footnotesize\ttfamily \label{class_backoff_timeout_a52448f6360f90e3a2d5c212724e8e89f} 
+Backoff\+Timeout\+::get\+End\+Time (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the approximate timestamp of when the timer will fire. Only valid if this.\+is\+Running() is true. \Hypertarget{class_backoff_timeout_a7db44c2626ae25bf217a221b86b1c674}\index{BackoffTimeout@{BackoffTimeout}!isRunning@{isRunning}}
+\index{isRunning@{isRunning}!BackoffTimeout@{BackoffTimeout}}
+\doxysubsubsection{\texorpdfstring{isRunning()}{isRunning()}}
+{\footnotesize\ttfamily \label{class_backoff_timeout_a7db44c2626ae25bf217a221b86b1c674} 
+Backoff\+Timeout\+::is\+Running (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Check whether the timer is currently running. \Hypertarget{class_backoff_timeout_a4a9fa584223bb0f6cb0aea0a72fc812f}\index{BackoffTimeout@{BackoffTimeout}!ref@{ref}}
+\index{ref@{ref}!BackoffTimeout@{BackoffTimeout}}
+\doxysubsubsection{\texorpdfstring{ref()}{ref()}}
+{\footnotesize\ttfamily \label{class_backoff_timeout_a4a9fa584223bb0f6cb0aea0a72fc812f} 
+Backoff\+Timeout\+::ref (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set that while the timer is running, it should keep the \doxylink{class_node}{Node} process running. 
+
+References \mbox{\hyperlink{logger_2dist_2esm_2index_8esm5_8js_a0adf123df8967a14b5bdd9ff3bbe2d0c}{\+\_\+a}}, and \mbox{\hyperlink{logging_8js_a53284eb14d953f3ba58806fc49cd4f7c}{\+\_\+b}}.
+
+\Hypertarget{class_backoff_timeout_aaf91fa07f33782763ee5be9c5521711f}\index{BackoffTimeout@{BackoffTimeout}!reset@{reset}}
+\index{reset@{reset}!BackoffTimeout@{BackoffTimeout}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily \label{class_backoff_timeout_aaf91fa07f33782763ee5be9c5521711f} 
+Backoff\+Timeout\+::reset (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Reset the delay time to its initial value. If the timer is still running, retroactively apply that reset to the current timer. 
+
+References \mbox{\hyperlink{lodash_2debounce_8js_ae2dc5120e9ccb39c5ef94d5c203e534a}{now}}, and \mbox{\hyperlink{class_backoff_timeout_ad72c232026317392e08d7cb8d8a229d7}{run\+Timer()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_backoff_timeout_aaf91fa07f33782763ee5be9c5521711f_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_backoff_timeout_a80e6218abaa7f49885fa1196e1b2d28e}\index{BackoffTimeout@{BackoffTimeout}!runOnce@{runOnce}}
+\index{runOnce@{runOnce}!BackoffTimeout@{BackoffTimeout}}
+\doxysubsubsection{\texorpdfstring{runOnce()}{runOnce()}}
+{\footnotesize\ttfamily \label{class_backoff_timeout_a80e6218abaa7f49885fa1196e1b2d28e} 
+Backoff\+Timeout\+::run\+Once (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Call the callback after the current amount of delay time 
+
+References \mbox{\hyperlink{class_backoff_timeout_ad72c232026317392e08d7cb8d8a229d7}{run\+Timer()}}, and \mbox{\hyperlink{backoff-timeout_8js_a8b7d55e424a88c0859a76ebc36bd0d06}{uniform\+Random()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_backoff_timeout_a80e6218abaa7f49885fa1196e1b2d28e_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_backoff_timeout_ad72c232026317392e08d7cb8d8a229d7}\index{BackoffTimeout@{BackoffTimeout}!runTimer@{runTimer}}
+\index{runTimer@{runTimer}!BackoffTimeout@{BackoffTimeout}}
+\doxysubsubsection{\texorpdfstring{runTimer()}{runTimer()}}
+{\footnotesize\ttfamily \label{class_backoff_timeout_ad72c232026317392e08d7cb8d8a229d7} 
+Backoff\+Timeout\+::run\+Timer (\begin{DoxyParamCaption}\item[{}]{delay}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{logger_2dist_2esm_2index_8esm5_8js_a0adf123df8967a14b5bdd9ff3bbe2d0c}{\+\_\+a}}, \mbox{\hyperlink{logging_8js_a53284eb14d953f3ba58806fc49cd4f7c}{\+\_\+b}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a622460feeccdab6d8f307936fc6b36fb}{callback}}, and \mbox{\hyperlink{lodash_2core_8js_ae9012370fd5bbda6f1dbd157b9012f73}{delay}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_backoff_timeout_ad72c232026317392e08d7cb8d8a229d7_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_backoff_timeout_a872ebde07206bd78d7f3e71c16475f25}\index{BackoffTimeout@{BackoffTimeout}!stop@{stop}}
+\index{stop@{stop}!BackoffTimeout@{BackoffTimeout}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily \label{class_backoff_timeout_a872ebde07206bd78d7f3e71c16475f25} 
+Backoff\+Timeout\+::stop (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Stop the timer. The callback will not be called until {\ttfamily run\+Once} is called again. \Hypertarget{class_backoff_timeout_a5b2380afe8d3eff41a1fea739804c8e8}\index{BackoffTimeout@{BackoffTimeout}!unref@{unref}}
+\index{unref@{unref}!BackoffTimeout@{BackoffTimeout}}
+\doxysubsubsection{\texorpdfstring{unref()}{unref()}}
+{\footnotesize\ttfamily \label{class_backoff_timeout_a5b2380afe8d3eff41a1fea739804c8e8} 
+Backoff\+Timeout\+::unref (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set that while the timer is running, it should not keep the \doxylink{class_node}{Node} process running. 
+
+References \mbox{\hyperlink{logger_2dist_2esm_2index_8esm5_8js_a0adf123df8967a14b5bdd9ff3bbe2d0c}{\+\_\+a}}, and \mbox{\hyperlink{logging_8js_a53284eb14d953f3ba58806fc49cd4f7c}{\+\_\+b}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/@grpc/grpc-\/js/build/src/\mbox{\hyperlink{backoff-timeout_8js}{backoff-\/timeout.\+js}}\end{DoxyCompactItemize}

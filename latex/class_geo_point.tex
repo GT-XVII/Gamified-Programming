@@ -1,0 +1,155 @@
+\doxysection{Geo\+Point Class Reference}
+\hypertarget{class_geo_point}{}\label{class_geo_point}\index{GeoPoint@{GeoPoint}}
+
+
+Collaboration diagram for Geo\+Point\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=153pt]{class_geo_point__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_geo_point_a1a69220bf8c31551fcb207dddf8feee7}{constructor}} (\mbox{\hyperlink{class_geo_point_a175fc0c7a278d1cd0f8b488d45ae70bc}{latitude}}, \mbox{\hyperlink{class_geo_point_aa697b8d55b15e15dbfaa8e036e027d67}{longitude}})
+\end{DoxyCompactItemize}
+\begin{Indent}\textbf{ Geo\+Point\#latitude}\par
+{\em The latitude as a number between -\/90 and 90.
+
+@type \{number\}
+
+@readonly }\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} \mbox{\hyperlink{class_geo_point_a175fc0c7a278d1cd0f8b488d45ae70bc}{latitude}} ()
+\end{DoxyCompactItemize}
+\end{Indent}
+\doxysubsubsection*{Geo\+Point\#longitude}
+The longitude as a number between -\/180 and 180.
+
+@type \{number\}
+
+@readonly \begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} \mbox{\hyperlink{class_geo_point_aa697b8d55b15e15dbfaa8e036e027d67}{longitude}} ()
+\item 
+\mbox{\hyperlink{class_geo_point_abcd26d23856d27911b982050499b408e}{is\+Equal}} (other)
+\item 
+\mbox{\hyperlink{class_geo_point_a003e93b6fad362160f051d5414065d8f}{to\+Proto}} ()
+\item 
+static \mbox{\hyperlink{class_geo_point_aa28b1820ffb5e94f4aadb84ba6a2a0fb}{from\+Proto}} (\mbox{\hyperlink{chalk_2source_2index_8js_a391e164e296dc4d66cb9a11c050f2f3d}{proto}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An immutable object representing a geographic location in \doxylink{class_firestore}{Firestore}. The location is represented as a latitude/longitude pair. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_geo_point_a1a69220bf8c31551fcb207dddf8feee7}\index{GeoPoint@{GeoPoint}!constructor@{constructor}}
+\index{constructor@{constructor}!GeoPoint@{GeoPoint}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_geo_point_a1a69220bf8c31551fcb207dddf8feee7} 
+Geo\+Point\+::constructor (\begin{DoxyParamCaption}\item[{}]{latitude}{, }\item[{}]{longitude}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{class_geo_point_a175fc0c7a278d1cd0f8b488d45ae70bc}{latitude()}}, \mbox{\hyperlink{class_geo_point_aa697b8d55b15e15dbfaa8e036e027d67}{longitude()}}, and \mbox{\hyperlink{geo-point_8js_aa37716c5385ffbe958d12dba0dab85f8}{validate\+\_\+1}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{class_geo_point_a1a69220bf8c31551fcb207dddf8feee7_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_geo_point_aa28b1820ffb5e94f4aadb84ba6a2a0fb}\index{GeoPoint@{GeoPoint}!fromProto@{fromProto}}
+\index{fromProto@{fromProto}!GeoPoint@{GeoPoint}}
+\doxysubsubsection{\texorpdfstring{fromProto()}{fromProto()}}
+{\footnotesize\ttfamily \label{class_geo_point_aa28b1820ffb5e94f4aadb84ba6a2a0fb} 
+static Geo\+Point\+::from\+Proto (\begin{DoxyParamCaption}\item[{}]{proto}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+Converts a google.\+type.\+Lat\+Lng proto to its \doxylink{class_geo_point}{Geo\+Point} representation. 
+
+References \mbox{\hyperlink{geo-point_8js_aa70fbeafd30c6ff9bb54e7508f29ad82}{Geo\+Point}}, and \mbox{\hyperlink{chalk_2source_2index_8js_a391e164e296dc4d66cb9a11c050f2f3d}{proto}}.
+
+\Hypertarget{class_geo_point_abcd26d23856d27911b982050499b408e}\index{GeoPoint@{GeoPoint}!isEqual@{isEqual}}
+\index{isEqual@{isEqual}!GeoPoint@{GeoPoint}}
+\doxysubsubsection{\texorpdfstring{isEqual()}{isEqual()}}
+{\footnotesize\ttfamily \label{class_geo_point_abcd26d23856d27911b982050499b408e} 
+Geo\+Point\+::is\+Equal (\begin{DoxyParamCaption}\item[{}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns true if this {\ttfamily \doxylink{class_geo_point}{Geo\+Point}} is equal to the provided value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\texorpdfstring{$\ast$}{*}\}} & other The value to compare against. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{boolean\} true if this {\ttfamily \doxylink{class_geo_point}{Geo\+Point}} is equal to the provided value. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{class_geo_point_a175fc0c7a278d1cd0f8b488d45ae70bc}{latitude()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=305pt]{class_geo_point_abcd26d23856d27911b982050499b408e_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_geo_point_a175fc0c7a278d1cd0f8b488d45ae70bc}\index{GeoPoint@{GeoPoint}!latitude@{latitude}}
+\index{latitude@{latitude}!GeoPoint@{GeoPoint}}
+\doxysubsubsection{\texorpdfstring{latitude()}{latitude()}}
+{\footnotesize\ttfamily \label{class_geo_point_a175fc0c7a278d1cd0f8b488d45ae70bc} 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} Geo\+Point\+::latitude (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=321pt]{class_geo_point_a175fc0c7a278d1cd0f8b488d45ae70bc_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_geo_point_aa697b8d55b15e15dbfaa8e036e027d67}\index{GeoPoint@{GeoPoint}!longitude@{longitude}}
+\index{longitude@{longitude}!GeoPoint@{GeoPoint}}
+\doxysubsubsection{\texorpdfstring{longitude()}{longitude()}}
+{\footnotesize\ttfamily \label{class_geo_point_aa697b8d55b15e15dbfaa8e036e027d67} 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} Geo\+Point\+::longitude (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{class_geo_point_aa697b8d55b15e15dbfaa8e036e027d67_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_geo_point_a003e93b6fad362160f051d5414065d8f}\index{GeoPoint@{GeoPoint}!toProto@{toProto}}
+\index{toProto@{toProto}!GeoPoint@{GeoPoint}}
+\doxysubsubsection{\texorpdfstring{toProto()}{toProto()}}
+{\footnotesize\ttfamily \label{class_geo_point_a003e93b6fad362160f051d5414065d8f} 
+Geo\+Point\+::to\+Proto (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Converts the \doxylink{class_geo_point}{Geo\+Point} to a google.\+type.\+Lat\+Lng proto. 
+
+References \mbox{\hyperlink{class_geo_point_a175fc0c7a278d1cd0f8b488d45ae70bc}{latitude()}}, and \mbox{\hyperlink{class_geo_point_aa697b8d55b15e15dbfaa8e036e027d67}{longitude()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{class_geo_point_a003e93b6fad362160f051d5414065d8f_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/@google-\/cloud/firestore/build/src/\mbox{\hyperlink{geo-point_8js}{geo-\/point.\+js}}\end{DoxyCompactItemize}

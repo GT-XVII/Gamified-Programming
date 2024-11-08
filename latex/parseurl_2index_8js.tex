@@ -1,0 +1,115 @@
+\doxysection{backend/node\+\_\+modules/parseurl/index.js File Reference}
+\hypertarget{parseurl_2index_8js}{}\label{parseurl_2index_8js}\index{backend/node\_modules/parseurl/index.js@{backend/node\_modules/parseurl/index.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{parseurl_2index_8js_a4cb8c6d8ea0504ff5413650aa6083fa6}{originalurl}} (\mbox{\hyperlink{agent-base_2dist_2helpers_8js_a960c3c3c7bce40c2aa54b029b3dbb9c8}{req}})
+\item 
+function \mbox{\hyperlink{parseurl_2index_8js_a1f883321f9313fbba55f36021e60a49e}{fastparse}} (\mbox{\hyperlink{json-bigint_2lib_2stringify_8js_abd4075a8f329b0ccafd81359c952a9df}{str}})
+\item 
+function \mbox{\hyperlink{parseurl_2index_8js_a645d7d7924024798e1ef66851f78a92b}{fresh}} (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_acf0a8b41f00a22e21672c8b3768a0618}{url}}, parsed\+Url)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{component_2dist_2index_8cjs_8js_ae2475e10618961c050dcba04e8c42331}{strict}} \mbox{\hyperlink{parseurl_2index_8js_a65816e32ba79081310206985a234e96c}{url}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{parseurl_2index_8js_a1f883321f9313fbba55f36021e60a49e}\index{index.js@{index.js}!fastparse@{fastparse}}
+\index{fastparse@{fastparse}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{fastparse()}{fastparse()}}
+{\footnotesize\ttfamily \label{parseurl_2index_8js_a1f883321f9313fbba55f36021e60a49e} 
+function fastparse (\begin{DoxyParamCaption}\item[{}]{str}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Parse the {\ttfamily str} url with fast-\/path short-\/cut.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & str \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Object\} 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa96c2329bbb4c535fae1093499f4ad49}{parse}}, \mbox{\hyperlink{application_8js_a3934419f0f9a2068c705a0013b77fab3}{query}}, \mbox{\hyperlink{json-bigint_2lib_2stringify_8js_abd4075a8f329b0ccafd81359c952a9df}{str()}}, \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}, \mbox{\hyperlink{node-fetch_2lib_2index_8js_aef25914263226ea1d4ffd2024cef196b}{Url}}, and \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_acf0a8b41f00a22e21672c8b3768a0618}{url}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=201pt]{parseurl_2index_8js_a1f883321f9313fbba55f36021e60a49e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{parseurl_2index_8js_a1f883321f9313fbba55f36021e60a49e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{parseurl_2index_8js_a645d7d7924024798e1ef66851f78a92b}\index{index.js@{index.js}!fresh@{fresh}}
+\index{fresh@{fresh}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{fresh()}{fresh()}}
+{\footnotesize\ttfamily \label{parseurl_2index_8js_a645d7d7924024798e1ef66851f78a92b} 
+function fresh (\begin{DoxyParamCaption}\item[{}]{url}{, }\item[{}]{parsed\+Url}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Determine if parsed is still fresh for url.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & url \\
+\hline
+{\em \{object\}} & parsed\+Url \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{boolean\} 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}, \mbox{\hyperlink{node-fetch_2lib_2index_8js_aef25914263226ea1d4ffd2024cef196b}{Url}}, and \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_acf0a8b41f00a22e21672c8b3768a0618}{url}}.
+
+\Hypertarget{parseurl_2index_8js_a4cb8c6d8ea0504ff5413650aa6083fa6}\index{index.js@{index.js}!originalurl@{originalurl}}
+\index{originalurl@{originalurl}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{originalurl()}{originalurl()}}
+{\footnotesize\ttfamily \label{parseurl_2index_8js_a4cb8c6d8ea0504ff5413650aa6083fa6} 
+function originalurl (\begin{DoxyParamCaption}\item[{}]{req}{}\end{DoxyParamCaption})}
+
+Parse the {\ttfamily req} original url with fallback and memoization.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Server\+Request\}} & req \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Object\} 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{parseurl_2index_8js_a1f883321f9313fbba55f36021e60a49e}{fastparse()}}, \mbox{\hyperlink{express_2lib_2request_8js_ac6bf5484b5676a3edfddf7ca77caa54a}{fresh}}, \mbox{\hyperlink{agent-base_2dist_2helpers_8js_a960c3c3c7bce40c2aa54b029b3dbb9c8}{req}}, and \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_acf0a8b41f00a22e21672c8b3768a0618}{url}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=295pt]{parseurl_2index_8js_a4cb8c6d8ea0504ff5413650aa6083fa6_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{parseurl_2index_8js_a65816e32ba79081310206985a234e96c}\index{index.js@{index.js}!url@{url}}
+\index{url@{url}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{url}{url}}
+{\footnotesize\ttfamily \label{parseurl_2index_8js_a65816e32ba79081310206985a234e96c} 
+var \mbox{\hyperlink{component_2dist_2index_8cjs_8js_ae2475e10618961c050dcba04e8c42331}{strict}} url\hspace{0.3cm}{\ttfamily [private]}}
+
+parseurl Copyright(c) 2014 Jonathan Ong Copyright(c) 2014-\/2017 Douglas Christopher Wilson MIT Licensed Module dependencies. 

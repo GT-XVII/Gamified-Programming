@@ -1,0 +1,241 @@
+\doxysection{backend/node\+\_\+modules/@google-\/cloud/firestore/build/src/write-\/batch.js File Reference}
+\hypertarget{write-batch_8js}{}\label{write-batch_8js}\index{backend/node\_modules/"@google-\/cloud/firestore/build/src/write-\/batch.js@{backend/node\_modules/"@google-\/cloud/firestore/build/src/write-\/batch.js}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_write_result}{Write\+Result}}
+\item 
+class \mbox{\hyperlink{class_write_batch}{Write\+Batch}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{write-batch_8js_aef10cf1a18ed731761d42685e13b6bed}{validate\+Precondition}} (arg, \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}, options)
+\item 
+function \mbox{\hyperlink{write-batch_8js_a2c4e6fceacfe5d95ce1fdfbc9cbcf7b0}{validate\+Update\+Precondition}} (arg, \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}, options)
+\item 
+function \mbox{\hyperlink{write-batch_8js_a827b6ce2f59d5a7657200c934dc7a648}{validate\+Delete\+Precondition}} (arg, \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}, options)
+\item 
+function \mbox{\hyperlink{write-batch_8js_a03e477a4a03f3cfb1129960b06a9de64}{validate\+Set\+Options}} (arg, \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}, options)
+\item 
+function \mbox{\hyperlink{write-batch_8js_a5105d2ef26d2f57f601f511b4de9c87e}{validate\+Document\+Data}} (arg, \mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}, allow\+Deletes, allow\+Undefined)
+\item 
+function \mbox{\hyperlink{write-batch_8js_a4031fb5b97382ba7396321c14a4601bd}{validate\+Field\+Value}} (arg, val, allow\+Undefined, \mbox{\hyperlink{cjs_2src_2bucket_8js_a1fdc7709faf62dce60620fb3f9d3453c}{path}})
+\item 
+function \mbox{\hyperlink{write-batch_8js_afbb21328ca11d6041086cc9849a3997c}{validate\+No\+Conflicting\+Fields}} (arg, \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}})
+\item 
+function \mbox{\hyperlink{write-batch_8js_af6030e6b9636a56cb491083573492561}{validate\+Update\+Map}} (arg, \mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}, allow\+Undefined)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{write-batch_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{write-batch_8js_ac0e6136934055abef863561d2864d996}{Write\+Batch}} = exports.\+Write\+Result = void 0
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{write-batch_8js_aaa8254cadf12018bf9678c4257eace9b}{validate\+Set\+Options}} = validate\+Set\+Options
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{write-batch_8js_ae96c793b1ec5e93fa811ab10b0b5cfbd}{validate\+Document\+Data}} = validate\+Document\+Data
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{write-batch_8js_a94d5eb65ed7ddd9616af6dc56d0bbe13}{validate\+Field\+Value}} = validate\+Field\+Value
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{write-batch_8js_a0d8248e7d9115839596aa13782b68637}{document\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./document"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{write-batch_8js_aa6fdd07b218f5ee1f103f79a4ad6d5f1}{logger\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./logger"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{write-batch_8js_a705fe9bf53f002be551bde47cc3a6069}{path\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./path"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{write-batch_8js_ad6213df108db4b676327c4ab965d94fc}{helpers\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./reference/helpers"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{write-batch_8js_a2565df6a8c5758c17516b3aba038db3c}{serializer\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./serializer"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{write-batch_8js_ade04b24e14507564885ddbb231b3fc20}{timestamp\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./timestamp"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{write-batch_8js_a6af3fa6e24c6a46faf4552f3a2ad8783}{util\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./util"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{write-batch_8js_aa37716c5385ffbe958d12dba0dab85f8}{validate\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./validate"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{write-batch_8js_a95595af408c99329f2c923e26c08df94}{trace\+\_\+util\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./telemetry/\mbox{\hyperlink{logging_8js_acb1634453d1705af9683695efa3847e6}{trace}}-\/util"{})
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{write-batch_8js_aee2eb93aa0037d0f22977eafa3fc21f5}{Write\+Result}} = Write\+Result
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{write-batch_8js_a827b6ce2f59d5a7657200c934dc7a648}\index{write-\/batch.js@{write-\/batch.js}!validateDeletePrecondition@{validateDeletePrecondition}}
+\index{validateDeletePrecondition@{validateDeletePrecondition}!write-\/batch.js@{write-\/batch.js}}
+\doxysubsubsection{\texorpdfstring{validateDeletePrecondition()}{validateDeletePrecondition()}}
+{\footnotesize\ttfamily \label{write-batch_8js_a827b6ce2f59d5a7657200c934dc7a648} 
+function validate\+Delete\+Precondition (\begin{DoxyParamCaption}\item[{}]{arg}{, }\item[{}]{value}{, }\item[{}]{options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Validates the use of \textquotesingle{}value\textquotesingle{} as a delete \doxylink{class_precondition}{Precondition}. Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{write-batch_8js_a827b6ce2f59d5a7657200c934dc7a648_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{write-batch_8js_a5105d2ef26d2f57f601f511b4de9c87e}\index{write-\/batch.js@{write-\/batch.js}!validateDocumentData@{validateDocumentData}}
+\index{validateDocumentData@{validateDocumentData}!write-\/batch.js@{write-\/batch.js}}
+\doxysubsubsection{\texorpdfstring{validateDocumentData()}{validateDocumentData()}}
+{\footnotesize\ttfamily \label{write-batch_8js_a5105d2ef26d2f57f601f511b4de9c87e} 
+function validate\+Document\+Data (\begin{DoxyParamCaption}\item[{}]{arg}{, }\item[{}]{obj}{, }\item[{}]{allow\+Deletes}{, }\item[{}]{allow\+Undefined}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Validates a Java\+Script object for usage as a \doxylink{class_firestore}{Firestore} document. \Hypertarget{write-batch_8js_a4031fb5b97382ba7396321c14a4601bd}\index{write-\/batch.js@{write-\/batch.js}!validateFieldValue@{validateFieldValue}}
+\index{validateFieldValue@{validateFieldValue}!write-\/batch.js@{write-\/batch.js}}
+\doxysubsubsection{\texorpdfstring{validateFieldValue()}{validateFieldValue()}}
+{\footnotesize\ttfamily \label{write-batch_8js_a4031fb5b97382ba7396321c14a4601bd} 
+function validate\+Field\+Value (\begin{DoxyParamCaption}\item[{}]{arg}{, }\item[{}]{val}{, }\item[{}]{allow\+Undefined}{, }\item[{}]{path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Validates that a value can be used as field value during an update. \Hypertarget{write-batch_8js_afbb21328ca11d6041086cc9849a3997c}\index{write-\/batch.js@{write-\/batch.js}!validateNoConflictingFields@{validateNoConflictingFields}}
+\index{validateNoConflictingFields@{validateNoConflictingFields}!write-\/batch.js@{write-\/batch.js}}
+\doxysubsubsection{\texorpdfstring{validateNoConflictingFields()}{validateNoConflictingFields()}}
+{\footnotesize\ttfamily \label{write-batch_8js_afbb21328ca11d6041086cc9849a3997c} 
+function validate\+No\+Conflicting\+Fields (\begin{DoxyParamCaption}\item[{}]{arg}{, }\item[{}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Validates that the update data does not contain any ambiguous field definitions (such as \textquotesingle{}a.\+b\textquotesingle{} and \textquotesingle{}a\textquotesingle{}). Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{write-batch_8js_afbb21328ca11d6041086cc9849a3997c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{write-batch_8js_aef10cf1a18ed731761d42685e13b6bed}\index{write-\/batch.js@{write-\/batch.js}!validatePrecondition@{validatePrecondition}}
+\index{validatePrecondition@{validatePrecondition}!write-\/batch.js@{write-\/batch.js}}
+\doxysubsubsection{\texorpdfstring{validatePrecondition()}{validatePrecondition()}}
+{\footnotesize\ttfamily \label{write-batch_8js_aef10cf1a18ed731761d42685e13b6bed} 
+function validate\+Precondition (\begin{DoxyParamCaption}\item[{}]{arg}{, }\item[{}]{value}{, }\item[{}]{options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Validates the use of \textquotesingle{}value\textquotesingle{} as a \doxylink{class_precondition}{Precondition} and enforces that \textquotesingle{}exists\textquotesingle{} and \textquotesingle{}last\+Update\+Time\textquotesingle{} use valid types. 
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}, \mbox{\hyperlink{express_2lib_2request_8js_a5e3afd97276cc403924d1a449a83ea84}{is}}, \mbox{\hyperlink{long_2index_8js_ad7dc44f0ebdb746f4a5b0612ae9315cb}{not}}, \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}, \mbox{\hyperlink{write-batch_8js_aa37716c5385ffbe958d12dba0dab85f8}{validate\+\_\+1}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.
+
+\Hypertarget{write-batch_8js_a03e477a4a03f3cfb1129960b06a9de64}\index{write-\/batch.js@{write-\/batch.js}!validateSetOptions@{validateSetOptions}}
+\index{validateSetOptions@{validateSetOptions}!write-\/batch.js@{write-\/batch.js}}
+\doxysubsubsection{\texorpdfstring{validateSetOptions()}{validateSetOptions()}}
+{\footnotesize\ttfamily \label{write-batch_8js_a03e477a4a03f3cfb1129960b06a9de64} 
+function validate\+Set\+Options (\begin{DoxyParamCaption}\item[{}]{arg}{, }\item[{}]{value}{, }\item[{}]{options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Validates the use of \textquotesingle{}value\textquotesingle{} as Set\+Options and enforces that \textquotesingle{}merge\textquotesingle{} is a boolean. \Hypertarget{write-batch_8js_af6030e6b9636a56cb491083573492561}\index{write-\/batch.js@{write-\/batch.js}!validateUpdateMap@{validateUpdateMap}}
+\index{validateUpdateMap@{validateUpdateMap}!write-\/batch.js@{write-\/batch.js}}
+\doxysubsubsection{\texorpdfstring{validateUpdateMap()}{validateUpdateMap()}}
+{\footnotesize\ttfamily \label{write-batch_8js_af6030e6b9636a56cb491083573492561} 
+function validate\+Update\+Map (\begin{DoxyParamCaption}\item[{}]{arg}{, }\item[{}]{obj}{, }\item[{}]{allow\+Undefined}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Validates that a Java\+Script object is a map of field paths to field values. Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=315pt]{write-batch_8js_af6030e6b9636a56cb491083573492561_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{write-batch_8js_a2c4e6fceacfe5d95ce1fdfbc9cbcf7b0}\index{write-\/batch.js@{write-\/batch.js}!validateUpdatePrecondition@{validateUpdatePrecondition}}
+\index{validateUpdatePrecondition@{validateUpdatePrecondition}!write-\/batch.js@{write-\/batch.js}}
+\doxysubsubsection{\texorpdfstring{validateUpdatePrecondition()}{validateUpdatePrecondition()}}
+{\footnotesize\ttfamily \label{write-batch_8js_a2c4e6fceacfe5d95ce1fdfbc9cbcf7b0} 
+function validate\+Update\+Precondition (\begin{DoxyParamCaption}\item[{}]{arg}{, }\item[{}]{value}{, }\item[{}]{options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Validates the use of \textquotesingle{}value\textquotesingle{} as an update \doxylink{class_precondition}{Precondition}. Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{write-batch_8js_a2c4e6fceacfe5d95ce1fdfbc9cbcf7b0_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{write-batch_8js_a0d8248e7d9115839596aa13782b68637}\index{write-\/batch.js@{write-\/batch.js}!document\_1@{document\_1}}
+\index{document\_1@{document\_1}!write-\/batch.js@{write-\/batch.js}}
+\doxysubsubsection{\texorpdfstring{document\_1}{document\_1}}
+{\footnotesize\ttfamily \label{write-batch_8js_a0d8248e7d9115839596aa13782b68637} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} document\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./document"{})}
+
+\Hypertarget{write-batch_8js_ad6213df108db4b676327c4ab965d94fc}\index{write-\/batch.js@{write-\/batch.js}!helpers\_1@{helpers\_1}}
+\index{helpers\_1@{helpers\_1}!write-\/batch.js@{write-\/batch.js}}
+\doxysubsubsection{\texorpdfstring{helpers\_1}{helpers\_1}}
+{\footnotesize\ttfamily \label{write-batch_8js_ad6213df108db4b676327c4ab965d94fc} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} helpers\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./reference/helpers"{})}
+
+\Hypertarget{write-batch_8js_aa6fdd07b218f5ee1f103f79a4ad6d5f1}\index{write-\/batch.js@{write-\/batch.js}!logger\_1@{logger\_1}}
+\index{logger\_1@{logger\_1}!write-\/batch.js@{write-\/batch.js}}
+\doxysubsubsection{\texorpdfstring{logger\_1}{logger\_1}}
+{\footnotesize\ttfamily \label{write-batch_8js_aa6fdd07b218f5ee1f103f79a4ad6d5f1} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} logger\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./logger"{})}
+
+\Hypertarget{write-batch_8js_a705fe9bf53f002be551bde47cc3a6069}\index{write-\/batch.js@{write-\/batch.js}!path\_1@{path\_1}}
+\index{path\_1@{path\_1}!write-\/batch.js@{write-\/batch.js}}
+\doxysubsubsection{\texorpdfstring{path\_1}{path\_1}}
+{\footnotesize\ttfamily \label{write-batch_8js_a705fe9bf53f002be551bde47cc3a6069} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} path\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./path"{})}
+
+\Hypertarget{write-batch_8js_a2565df6a8c5758c17516b3aba038db3c}\index{write-\/batch.js@{write-\/batch.js}!serializer\_1@{serializer\_1}}
+\index{serializer\_1@{serializer\_1}!write-\/batch.js@{write-\/batch.js}}
+\doxysubsubsection{\texorpdfstring{serializer\_1}{serializer\_1}}
+{\footnotesize\ttfamily \label{write-batch_8js_a2565df6a8c5758c17516b3aba038db3c} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} serializer\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./serializer"{})}
+
+\Hypertarget{write-batch_8js_ae2475e10618961c050dcba04e8c42331}\index{write-\/batch.js@{write-\/batch.js}!strict@{strict}}
+\index{strict@{strict}!write-\/batch.js@{write-\/batch.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{write-batch_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+
+\Hypertarget{write-batch_8js_ade04b24e14507564885ddbb231b3fc20}\index{write-\/batch.js@{write-\/batch.js}!timestamp\_1@{timestamp\_1}}
+\index{timestamp\_1@{timestamp\_1}!write-\/batch.js@{write-\/batch.js}}
+\doxysubsubsection{\texorpdfstring{timestamp\_1}{timestamp\_1}}
+{\footnotesize\ttfamily \label{write-batch_8js_ade04b24e14507564885ddbb231b3fc20} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} timestamp\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./timestamp"{})}
+
+\Hypertarget{write-batch_8js_a95595af408c99329f2c923e26c08df94}\index{write-\/batch.js@{write-\/batch.js}!trace\_util\_1@{trace\_util\_1}}
+\index{trace\_util\_1@{trace\_util\_1}!write-\/batch.js@{write-\/batch.js}}
+\doxysubsubsection{\texorpdfstring{trace\_util\_1}{trace\_util\_1}}
+{\footnotesize\ttfamily \label{write-batch_8js_a95595af408c99329f2c923e26c08df94} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} trace\+\_\+util\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./telemetry/\mbox{\hyperlink{logging_8js_acb1634453d1705af9683695efa3847e6}{trace}}-\/util"{})}
+
+\Hypertarget{write-batch_8js_a6af3fa6e24c6a46faf4552f3a2ad8783}\index{write-\/batch.js@{write-\/batch.js}!util\_1@{util\_1}}
+\index{util\_1@{util\_1}!write-\/batch.js@{write-\/batch.js}}
+\doxysubsubsection{\texorpdfstring{util\_1}{util\_1}}
+{\footnotesize\ttfamily \label{write-batch_8js_a6af3fa6e24c6a46faf4552f3a2ad8783} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} util\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./util"{})}
+
+\Hypertarget{write-batch_8js_aa37716c5385ffbe958d12dba0dab85f8}\index{write-\/batch.js@{write-\/batch.js}!validate\_1@{validate\_1}}
+\index{validate\_1@{validate\_1}!write-\/batch.js@{write-\/batch.js}}
+\doxysubsubsection{\texorpdfstring{validate\_1}{validate\_1}}
+{\footnotesize\ttfamily \label{write-batch_8js_aa37716c5385ffbe958d12dba0dab85f8} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} validate\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./validate"{})}
+
+\Hypertarget{write-batch_8js_ae96c793b1ec5e93fa811ab10b0b5cfbd}\index{write-\/batch.js@{write-\/batch.js}!validateDocumentData@{validateDocumentData}}
+\index{validateDocumentData@{validateDocumentData}!write-\/batch.js@{write-\/batch.js}}
+\doxysubsubsection{\texorpdfstring{validateDocumentData}{validateDocumentData}}
+{\footnotesize\ttfamily \label{write-batch_8js_ae96c793b1ec5e93fa811ab10b0b5cfbd} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} validate\+Document\+Data = validate\+Document\+Data}
+
+\Hypertarget{write-batch_8js_a94d5eb65ed7ddd9616af6dc56d0bbe13}\index{write-\/batch.js@{write-\/batch.js}!validateFieldValue@{validateFieldValue}}
+\index{validateFieldValue@{validateFieldValue}!write-\/batch.js@{write-\/batch.js}}
+\doxysubsubsection{\texorpdfstring{validateFieldValue}{validateFieldValue}}
+{\footnotesize\ttfamily \label{write-batch_8js_a94d5eb65ed7ddd9616af6dc56d0bbe13} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} validate\+Field\+Value = validate\+Field\+Value}
+
+\Hypertarget{write-batch_8js_aaa8254cadf12018bf9678c4257eace9b}\index{write-\/batch.js@{write-\/batch.js}!validateSetOptions@{validateSetOptions}}
+\index{validateSetOptions@{validateSetOptions}!write-\/batch.js@{write-\/batch.js}}
+\doxysubsubsection{\texorpdfstring{validateSetOptions}{validateSetOptions}}
+{\footnotesize\ttfamily \label{write-batch_8js_aaa8254cadf12018bf9678c4257eace9b} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} validate\+Set\+Options = validate\+Set\+Options}
+
+\Hypertarget{write-batch_8js_ac0e6136934055abef863561d2864d996}\index{write-\/batch.js@{write-\/batch.js}!WriteBatch@{WriteBatch}}
+\index{WriteBatch@{WriteBatch}!write-\/batch.js@{write-\/batch.js}}
+\doxysubsubsection{\texorpdfstring{WriteBatch}{WriteBatch}}
+{\footnotesize\ttfamily \label{write-batch_8js_ac0e6136934055abef863561d2864d996} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} Write\+Batch = exports.\+Write\+Result = void 0}
+
+\Hypertarget{write-batch_8js_aee2eb93aa0037d0f22977eafa3fc21f5}\index{write-\/batch.js@{write-\/batch.js}!WriteResult@{WriteResult}}
+\index{WriteResult@{WriteResult}!write-\/batch.js@{write-\/batch.js}}
+\doxysubsubsection{\texorpdfstring{WriteResult}{WriteResult}}
+{\footnotesize\ttfamily \label{write-batch_8js_aee2eb93aa0037d0f22977eafa3fc21f5} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} Write\+Result = Write\+Result}
+

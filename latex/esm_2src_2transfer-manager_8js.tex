@@ -1,0 +1,252 @@
+\doxysection{backend/node\+\_\+modules/@google-\/cloud/storage/build/esm/src/transfer-\/manager.js File Reference}
+\hypertarget{esm_2src_2transfer-manager_8js}{}\label{esm_2src_2transfer-manager_8js}\index{backend/node\_modules/"@google-\/cloud/storage/build/esm/src/transfer-\/manager.js@{backend/node\_modules/"@google-\/cloud/storage/build/esm/src/transfer-\/manager.js}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_multi_part_upload_error}{Multi\+Part\+Upload\+Error}}
+\item 
+class \mbox{\hyperlink{class_x_m_l_multi_part_upload_helper}{XMLMulti\+Part\+Upload\+Helper}}
+\item 
+class \mbox{\hyperlink{class_transfer_manager}{Transfer\+Manager}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{esm_2src_2transfer-manager_8js_a447cd4ee0c75db2d366d333c1c6ab92b}{\+\_\+\+\_\+class\+Private\+Field\+Get}}
+\item 
+var \mbox{\hyperlink{esm_2src_2transfer-manager_8js_afed199a1cd645baaae66580c75f2ef1b}{\+\_\+\+XMLMulti\+Part\+Upload\+Helper\+\_\+instances}} = new Weak\+Set()
+\item 
+var \mbox{\hyperlink{esm_2src_2transfer-manager_8js_aa8a7bc0e145bcd71ecfa6a33fde108ab}{\+\_\+\+XMLMulti\+Part\+Upload\+Helper\+\_\+set\+Goog\+Api\+Client\+Headers}}
+\item 
+var \mbox{\hyperlink{esm_2src_2transfer-manager_8js_a4a1e19a637aee539cba355a4d7621f6b}{\+\_\+\+XMLMulti\+Part\+Upload\+Helper\+\_\+handle\+Error\+Response}}
+\item 
+\mbox{\hyperlink{esm_2src_2transfer-manager_8js_a59be084da8908b7d77ff34b25cd84488}{import}} \{ File\+Exception\+Messages, \mbox{\hyperlink{class_request_error}{Request\+Error}}, \} from \textquotesingle{}./\mbox{\hyperlink{esm_2src_2file_8js_a73ffb0a3b9f028910adc01ac31153d46}{file.\+js}}\textquotesingle{}
+\item 
+\mbox{\hyperlink{component_2dist_2esm_2index_8esm2017_8js_a953be46b94f595d839e88a6d3d270309}{import}} \mbox{\hyperlink{p-limit_2index_8js_ac2669ad7cdb9fa68467c461d8de68593}{p\+Limit}} from \mbox{\hyperlink{ordered-map_8min_8js_ab2752257551c1a01e010ceba5d7ec200}{p}} \mbox{\hyperlink{esm_2src_2transfer-manager_8js_a855d9d33127d4a1b6d60693ff91e7f8b}{limit}}
+\item 
+\mbox{\hyperlink{component_2dist_2esm_2index_8esm2017_8js_a953be46b94f595d839e88a6d3d270309}{import}} \texorpdfstring{$\ast$}{*}as path from \mbox{\hyperlink{esm_2src_2transfer-manager_8js_a413c8bc133e31c6efb2f21ea918cb5ca}{path}}
+\item 
+\mbox{\hyperlink{component_2dist_2esm_2index_8esm2017_8js_a953be46b94f595d839e88a6d3d270309}{import}} Async\+Retry from \mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{esm_2src_2transfer-manager_8js_a5c3a024991e60780f47bfabac4db746b}{retry}}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{esm_2src_2transfer-manager_8js_af6b5c52a8c176ed1dddc0ffd7930a03a}{package\+Json}} = get\+Package\+JSON()
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{esm_2src_2transfer-manager_8js_a485a96c553a322b7697c031af10ee713}{DEFAULT\+\_\+\+PARALLEL\+\_\+\+UPLOAD\+\_\+\+LIMIT}} = 5
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{esm_2src_2transfer-manager_8js_a505224dac4aa14312d013a1efcd87345}{DEFAULT\+\_\+\+PARALLEL\+\_\+\+DOWNLOAD\+\_\+\+LIMIT}} = 5
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{esm_2src_2transfer-manager_8js_ac69b18e766e2bc273873edf4bb3f0702}{DEFAULT\+\_\+\+PARALLEL\+\_\+\+CHUNKED\+\_\+\+DOWNLOAD\+\_\+\+LIMIT}} = 5
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{esm_2src_2transfer-manager_8js_a2a683f00a24afb6b1b64b5a6b1eb726f}{DOWNLOAD\+\_\+\+IN\+\_\+\+CHUNKS\+\_\+\+FILE\+\_\+\+SIZE\+\_\+\+THRESHOLD}} = 32 \texorpdfstring{$\ast$}{*} 1024 \texorpdfstring{$\ast$}{*} 1024
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{esm_2src_2transfer-manager_8js_a73781ce09a2ab15df1625212aa65748d}{DOWNLOAD\+\_\+\+IN\+\_\+\+CHUNKS\+\_\+\+DEFAULT\+\_\+\+CHUNK\+\_\+\+SIZE}} = 32 \texorpdfstring{$\ast$}{*} 1024 \texorpdfstring{$\ast$}{*} 1024
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{esm_2src_2transfer-manager_8js_a0243b161257525b5f254d3590468d24c}{UPLOAD\+\_\+\+IN\+\_\+\+CHUNKS\+\_\+\+DEFAULT\+\_\+\+CHUNK\+\_\+\+SIZE}} = 32 \texorpdfstring{$\ast$}{*} 1024 \texorpdfstring{$\ast$}{*} 1024
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{esm_2src_2transfer-manager_8js_a50efd0073c8dc25da0649d3523c97c53}{DEFAULT\+\_\+\+PARALLEL\+\_\+\+CHUNKED\+\_\+\+UPLOAD\+\_\+\+LIMIT}} = 5
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{esm_2src_2transfer-manager_8js_a5db2b6802e6a04226117c903626e6de7}{EMPTY\+\_\+\+REGEX}} = \textquotesingle{}(?\+:)\textquotesingle{}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{esm_2src_2transfer-manager_8js_a4e1250df22369366969ec55c6f10f2ad}{GCCL\+\_\+\+GCS\+\_\+\+CMD\+\_\+\+FEATURE}}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{esm_2src_2transfer-manager_8js_ac81055caf3310d68dbd5f73964896152}{default\+Multi\+Part\+Generator}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{esm_2src_2transfer-manager_8js_a447cd4ee0c75db2d366d333c1c6ab92b}\index{transfer-\/manager.js@{transfer-\/manager.js}!\_\_classPrivateFieldGet@{\_\_classPrivateFieldGet}}
+\index{\_\_classPrivateFieldGet@{\_\_classPrivateFieldGet}!transfer-\/manager.js@{transfer-\/manager.js}}
+\doxysubsubsection{\texorpdfstring{\_\_classPrivateFieldGet}{\_\_classPrivateFieldGet}}
+{\footnotesize\ttfamily \label{esm_2src_2transfer-manager_8js_a447cd4ee0c75db2d366d333c1c6ab92b} 
+var \+\_\+\+\_\+class\+Private\+Field\+Get}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ (\textcolor{keyword}{this}\ \&\&\ this.\mbox{\hyperlink{cjs_2src_2transfer-manager_8js_a447cd4ee0c75db2d366d333c1c6ab92b}{\_\_classPrivateFieldGet}})\ ||\ \textcolor{keyword}{function}\ (receiver,\ \mbox{\hyperlink{asynckit_2lib_2state_8js_a7e1b0ba367facd663d59372bd204ea01}{state}},\ kind,\ \mbox{\hyperlink{uuidv1_8min_8js_a9cf09a2972472098a4c689fd988f4dfc}{f}})\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (kind\ ===\ \textcolor{stringliteral}{"{}a"{}}\ \&\&\ !\mbox{\hyperlink{uuidv1_8min_8js_a9cf09a2972472098a4c689fd988f4dfc}{f}})\ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ TypeError(\textcolor{stringliteral}{"{}Private\ accessor\ was\ defined\ without\ a\ getter"{}});}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (typeof\ \mbox{\hyperlink{asynckit_2lib_2state_8js_a7e1b0ba367facd663d59372bd204ea01}{state}}\ ===\ \textcolor{stringliteral}{"{}function"{}}\ ?\ receiver\ !==\ \mbox{\hyperlink{asynckit_2lib_2state_8js_a7e1b0ba367facd663d59372bd204ea01}{state}}\ ||\ !\mbox{\hyperlink{uuidv1_8min_8js_a9cf09a2972472098a4c689fd988f4dfc}{f}}\ :\ !\mbox{\hyperlink{asynckit_2lib_2state_8js_a7e1b0ba367facd663d59372bd204ea01}{state}}.has(receiver))\ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ TypeError(\textcolor{stringliteral}{"{}Cannot\ read\ private\ member\ from\ an\ object\ whose\ class\ did\ not\ declare\ it"{}});}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ kind\ ===\ \textcolor{stringliteral}{"{}m"{}}\ ?\ \mbox{\hyperlink{uuidv1_8min_8js_a9cf09a2972472098a4c689fd988f4dfc}{f}}\ :\ kind\ ===\ \textcolor{stringliteral}{"{}a"{}}\ ?\ \mbox{\hyperlink{uuidv1_8min_8js_a9cf09a2972472098a4c689fd988f4dfc}{f}}.call(receiver)\ :\ \mbox{\hyperlink{uuidv1_8min_8js_a9cf09a2972472098a4c689fd988f4dfc}{f}}\ ?\ \mbox{\hyperlink{uuidv1_8min_8js_a9cf09a2972472098a4c689fd988f4dfc}{f}}.value\ :\ \mbox{\hyperlink{asynckit_2lib_2state_8js_a7e1b0ba367facd663d59372bd204ea01}{state}}.get(receiver);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Copyright 2022 Google LLC. All Rights Reserved.
+
+Licensed under the Apache License, Version 2.\+0 (the "{}\+License"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at \begin{DoxyVerb} http://www.apache.org/licenses/LICENSE-2.0
+\end{DoxyVerb}
+
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "{}\+AS IS"{} BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. \Hypertarget{esm_2src_2transfer-manager_8js_a4a1e19a637aee539cba355a4d7621f6b}\index{transfer-\/manager.js@{transfer-\/manager.js}!\_XMLMultiPartUploadHelper\_handleErrorResponse@{\_XMLMultiPartUploadHelper\_handleErrorResponse}}
+\index{\_XMLMultiPartUploadHelper\_handleErrorResponse@{\_XMLMultiPartUploadHelper\_handleErrorResponse}!transfer-\/manager.js@{transfer-\/manager.js}}
+\doxysubsubsection{\texorpdfstring{\_XMLMultiPartUploadHelper\_handleErrorResponse}{\_XMLMultiPartUploadHelper\_handleErrorResponse}}
+{\footnotesize\ttfamily \label{esm_2src_2transfer-manager_8js_a4a1e19a637aee539cba355a4d7621f6b} 
+\+\_\+\+XMLMulti\+Part\+Upload\+Helper\+\_\+handle\+Error\+Response}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{cjs_2src_2transfer-manager_8js_a4a1e19a637aee539cba355a4d7621f6b}{\_XMLMultiPartUploadHelper\_handleErrorResponse}}(err,\ bail)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (this.bucket.storage.retryOptions.autoRetry\ \&\&}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keyword}{this}.bucket.storage.retryOptions.retryableErrorFn(err))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ err;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ bail(err);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{esm_2src_2transfer-manager_8js_afed199a1cd645baaae66580c75f2ef1b}\index{transfer-\/manager.js@{transfer-\/manager.js}!\_XMLMultiPartUploadHelper\_instances@{\_XMLMultiPartUploadHelper\_instances}}
+\index{\_XMLMultiPartUploadHelper\_instances@{\_XMLMultiPartUploadHelper\_instances}!transfer-\/manager.js@{transfer-\/manager.js}}
+\doxysubsubsection{\texorpdfstring{\_XMLMultiPartUploadHelper\_instances}{\_XMLMultiPartUploadHelper\_instances}}
+{\footnotesize\ttfamily \label{esm_2src_2transfer-manager_8js_afed199a1cd645baaae66580c75f2ef1b} 
+\+\_\+\+XMLMulti\+Part\+Upload\+Helper\+\_\+instances = new Weak\+Set()}
+
+\Hypertarget{esm_2src_2transfer-manager_8js_aa8a7bc0e145bcd71ecfa6a33fde108ab}\index{transfer-\/manager.js@{transfer-\/manager.js}!\_XMLMultiPartUploadHelper\_setGoogApiClientHeaders@{\_XMLMultiPartUploadHelper\_setGoogApiClientHeaders}}
+\index{\_XMLMultiPartUploadHelper\_setGoogApiClientHeaders@{\_XMLMultiPartUploadHelper\_setGoogApiClientHeaders}!transfer-\/manager.js@{transfer-\/manager.js}}
+\doxysubsubsection{\texorpdfstring{\_XMLMultiPartUploadHelper\_setGoogApiClientHeaders}{\_XMLMultiPartUploadHelper\_setGoogApiClientHeaders}}
+{\footnotesize\ttfamily \label{esm_2src_2transfer-manager_8js_aa8a7bc0e145bcd71ecfa6a33fde108ab} 
+\+\_\+\+XMLMulti\+Part\+Upload\+Helper\+\_\+set\+Goog\+Api\+Client\+Headers}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{cjs_2src_2transfer-manager_8js_aa8a7bc0e145bcd71ecfa6a33fde108ab}{\_XMLMultiPartUploadHelper\_setGoogApiClientHeaders}}(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7f2cb2fcdd79bf72cefd29b7bc2d10fa}{headers}}\ =\ \{\})\ \{}
+\DoxyCodeLine{\ \ \ \ let\ headerFound\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\ \ \ \ let\ userAgentFound\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ [key,\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}]\ \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}\ Object.entries(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7f2cb2fcdd79bf72cefd29b7bc2d10fa}{headers}}))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (key.toLocaleLowerCase().trim()\ ===\ \textcolor{stringliteral}{'x-\/goog-\/api-\/client'})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ headerFound\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.includes(\mbox{\hyperlink{cjs_2src_2transfer-manager_8js_a4e1250df22369366969ec55c6f10f2ad}{GCCL\_GCS\_CMD\_FEATURE}}.UPLOAD\_SHARDED))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7f2cb2fcdd79bf72cefd29b7bc2d10fa}{headers}}[key]\ =}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \`{}\mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}\{\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}\}\ gccl-\/gcs-\/cmd/\mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}\{\mbox{\hyperlink{cjs_2src_2transfer-manager_8js_a4e1250df22369366969ec55c6f10f2ad}{GCCL\_GCS\_CMD\_FEATURE}}.UPLOAD\_SHARDED\}\`{};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (key.toLocaleLowerCase().trim()\ ===\ \textcolor{stringliteral}{'user-\/agent'})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ userAgentFound\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (!headerFound)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7f2cb2fcdd79bf72cefd29b7bc2d10fa}{headers}}[\textcolor{stringliteral}{'x-\/goog-\/api-\/client'}]\ =\ \`{}\mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}\{\mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2cjs_2src_2util_8js_a2c062f7ca95aaec4bd1e865e6c1d5d5a}{getRuntimeTrackingString}}()\}\ gccl/\mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}\{\mbox{\hyperlink{cjs_2src_2transfer-manager_8js_af6b5c52a8c176ed1dddc0ffd7930a03a}{packageJson}}.version\}\ gccl-\/gcs-\/cmd/\mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}\{\mbox{\hyperlink{cjs_2src_2transfer-manager_8js_a4e1250df22369366969ec55c6f10f2ad}{GCCL\_GCS\_CMD\_FEATURE}}.UPLOAD\_SHARDED\}\`{};}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (!userAgentFound)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7f2cb2fcdd79bf72cefd29b7bc2d10fa}{headers}}[\textcolor{stringliteral}{'User-\/Agent'}]\ =\ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2cjs_2src_2util_8js_acdb5a9269f837ef6c79be4ab37f124a9}{getUserAgentString}}();}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7f2cb2fcdd79bf72cefd29b7bc2d10fa}{headers}};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{esm_2src_2transfer-manager_8js_ac69b18e766e2bc273873edf4bb3f0702}\index{transfer-\/manager.js@{transfer-\/manager.js}!DEFAULT\_PARALLEL\_CHUNKED\_DOWNLOAD\_LIMIT@{DEFAULT\_PARALLEL\_CHUNKED\_DOWNLOAD\_LIMIT}}
+\index{DEFAULT\_PARALLEL\_CHUNKED\_DOWNLOAD\_LIMIT@{DEFAULT\_PARALLEL\_CHUNKED\_DOWNLOAD\_LIMIT}!transfer-\/manager.js@{transfer-\/manager.js}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_PARALLEL\_CHUNKED\_DOWNLOAD\_LIMIT}{DEFAULT\_PARALLEL\_CHUNKED\_DOWNLOAD\_LIMIT}}
+{\footnotesize\ttfamily \label{esm_2src_2transfer-manager_8js_ac69b18e766e2bc273873edf4bb3f0702} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} DEFAULT\+\_\+\+PARALLEL\+\_\+\+CHUNKED\+\_\+\+DOWNLOAD\+\_\+\+LIMIT = 5}
+
+Default number of concurrently executing promises to use when calling download\+File\+In\+Chunks. \Hypertarget{esm_2src_2transfer-manager_8js_a50efd0073c8dc25da0649d3523c97c53}\index{transfer-\/manager.js@{transfer-\/manager.js}!DEFAULT\_PARALLEL\_CHUNKED\_UPLOAD\_LIMIT@{DEFAULT\_PARALLEL\_CHUNKED\_UPLOAD\_LIMIT}}
+\index{DEFAULT\_PARALLEL\_CHUNKED\_UPLOAD\_LIMIT@{DEFAULT\_PARALLEL\_CHUNKED\_UPLOAD\_LIMIT}!transfer-\/manager.js@{transfer-\/manager.js}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_PARALLEL\_CHUNKED\_UPLOAD\_LIMIT}{DEFAULT\_PARALLEL\_CHUNKED\_UPLOAD\_LIMIT}}
+{\footnotesize\ttfamily \label{esm_2src_2transfer-manager_8js_a50efd0073c8dc25da0649d3523c97c53} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} DEFAULT\+\_\+\+PARALLEL\+\_\+\+CHUNKED\+\_\+\+UPLOAD\+\_\+\+LIMIT = 5}
+
+Default number of concurrently executing promises to use when calling upload\+File\+In\+Chunks. \Hypertarget{esm_2src_2transfer-manager_8js_a505224dac4aa14312d013a1efcd87345}\index{transfer-\/manager.js@{transfer-\/manager.js}!DEFAULT\_PARALLEL\_DOWNLOAD\_LIMIT@{DEFAULT\_PARALLEL\_DOWNLOAD\_LIMIT}}
+\index{DEFAULT\_PARALLEL\_DOWNLOAD\_LIMIT@{DEFAULT\_PARALLEL\_DOWNLOAD\_LIMIT}!transfer-\/manager.js@{transfer-\/manager.js}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_PARALLEL\_DOWNLOAD\_LIMIT}{DEFAULT\_PARALLEL\_DOWNLOAD\_LIMIT}}
+{\footnotesize\ttfamily \label{esm_2src_2transfer-manager_8js_a505224dac4aa14312d013a1efcd87345} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} DEFAULT\+\_\+\+PARALLEL\+\_\+\+DOWNLOAD\+\_\+\+LIMIT = 5}
+
+Default number of concurrently executing promises to use when calling download\+Many\+Files. \Hypertarget{esm_2src_2transfer-manager_8js_a485a96c553a322b7697c031af10ee713}\index{transfer-\/manager.js@{transfer-\/manager.js}!DEFAULT\_PARALLEL\_UPLOAD\_LIMIT@{DEFAULT\_PARALLEL\_UPLOAD\_LIMIT}}
+\index{DEFAULT\_PARALLEL\_UPLOAD\_LIMIT@{DEFAULT\_PARALLEL\_UPLOAD\_LIMIT}!transfer-\/manager.js@{transfer-\/manager.js}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_PARALLEL\_UPLOAD\_LIMIT}{DEFAULT\_PARALLEL\_UPLOAD\_LIMIT}}
+{\footnotesize\ttfamily \label{esm_2src_2transfer-manager_8js_a485a96c553a322b7697c031af10ee713} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} DEFAULT\+\_\+\+PARALLEL\+\_\+\+UPLOAD\+\_\+\+LIMIT = 5}
+
+Default number of concurrently executing promises to use when calling upload\+Many\+Files. \Hypertarget{esm_2src_2transfer-manager_8js_ac81055caf3310d68dbd5f73964896152}\index{transfer-\/manager.js@{transfer-\/manager.js}!defaultMultiPartGenerator@{defaultMultiPartGenerator}}
+\index{defaultMultiPartGenerator@{defaultMultiPartGenerator}!transfer-\/manager.js@{transfer-\/manager.js}}
+\doxysubsubsection{\texorpdfstring{defaultMultiPartGenerator}{defaultMultiPartGenerator}}
+{\footnotesize\ttfamily \label{esm_2src_2transfer-manager_8js_ac81055caf3310d68dbd5f73964896152} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} default\+Multi\+Part\+Generator}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ (bucket,\ \mbox{\hyperlink{fast-xml-parser_2src_2cli_2cli_8js_a9cbb53856a08d61515603f478f2d8bc1}{fileName}},\ uploadId,\ partsMap)\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_x_m_l_multi_part_upload_helper}{XMLMultiPartUploadHelper}}(bucket,\ \mbox{\hyperlink{fast-xml-parser_2src_2cli_2cli_8js_a9cbb53856a08d61515603f478f2d8bc1}{fileName}},\ uploadId,\ partsMap);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{esm_2src_2transfer-manager_8js_a73781ce09a2ab15df1625212aa65748d}\index{transfer-\/manager.js@{transfer-\/manager.js}!DOWNLOAD\_IN\_CHUNKS\_DEFAULT\_CHUNK\_SIZE@{DOWNLOAD\_IN\_CHUNKS\_DEFAULT\_CHUNK\_SIZE}}
+\index{DOWNLOAD\_IN\_CHUNKS\_DEFAULT\_CHUNK\_SIZE@{DOWNLOAD\_IN\_CHUNKS\_DEFAULT\_CHUNK\_SIZE}!transfer-\/manager.js@{transfer-\/manager.js}}
+\doxysubsubsection{\texorpdfstring{DOWNLOAD\_IN\_CHUNKS\_DEFAULT\_CHUNK\_SIZE}{DOWNLOAD\_IN\_CHUNKS\_DEFAULT\_CHUNK\_SIZE}}
+{\footnotesize\ttfamily \label{esm_2src_2transfer-manager_8js_a73781ce09a2ab15df1625212aa65748d} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} DOWNLOAD\+\_\+\+IN\+\_\+\+CHUNKS\+\_\+\+DEFAULT\+\_\+\+CHUNK\+\_\+\+SIZE = 32 \texorpdfstring{$\ast$}{*} 1024 \texorpdfstring{$\ast$}{*} 1024}
+
+The chunk size in bytes to use when calling download\+File\+In\+Chunks. \Hypertarget{esm_2src_2transfer-manager_8js_a2a683f00a24afb6b1b64b5a6b1eb726f}\index{transfer-\/manager.js@{transfer-\/manager.js}!DOWNLOAD\_IN\_CHUNKS\_FILE\_SIZE\_THRESHOLD@{DOWNLOAD\_IN\_CHUNKS\_FILE\_SIZE\_THRESHOLD}}
+\index{DOWNLOAD\_IN\_CHUNKS\_FILE\_SIZE\_THRESHOLD@{DOWNLOAD\_IN\_CHUNKS\_FILE\_SIZE\_THRESHOLD}!transfer-\/manager.js@{transfer-\/manager.js}}
+\doxysubsubsection{\texorpdfstring{DOWNLOAD\_IN\_CHUNKS\_FILE\_SIZE\_THRESHOLD}{DOWNLOAD\_IN\_CHUNKS\_FILE\_SIZE\_THRESHOLD}}
+{\footnotesize\ttfamily \label{esm_2src_2transfer-manager_8js_a2a683f00a24afb6b1b64b5a6b1eb726f} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} DOWNLOAD\+\_\+\+IN\+\_\+\+CHUNKS\+\_\+\+FILE\+\_\+\+SIZE\+\_\+\+THRESHOLD = 32 \texorpdfstring{$\ast$}{*} 1024 \texorpdfstring{$\ast$}{*} 1024}
+
+The minimum size threshold in bytes at which to apply a chunked download strategy when calling download\+File\+In\+Chunks. \Hypertarget{esm_2src_2transfer-manager_8js_a5db2b6802e6a04226117c903626e6de7}\index{transfer-\/manager.js@{transfer-\/manager.js}!EMPTY\_REGEX@{EMPTY\_REGEX}}
+\index{EMPTY\_REGEX@{EMPTY\_REGEX}!transfer-\/manager.js@{transfer-\/manager.js}}
+\doxysubsubsection{\texorpdfstring{EMPTY\_REGEX}{EMPTY\_REGEX}}
+{\footnotesize\ttfamily \label{esm_2src_2transfer-manager_8js_a5db2b6802e6a04226117c903626e6de7} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} EMPTY\+\_\+\+REGEX = \textquotesingle{}(?\+:)\textquotesingle{}}
+
+\Hypertarget{esm_2src_2transfer-manager_8js_a4e1250df22369366969ec55c6f10f2ad}\index{transfer-\/manager.js@{transfer-\/manager.js}!GCCL\_GCS\_CMD\_FEATURE@{GCCL\_GCS\_CMD\_FEATURE}}
+\index{GCCL\_GCS\_CMD\_FEATURE@{GCCL\_GCS\_CMD\_FEATURE}!transfer-\/manager.js@{transfer-\/manager.js}}
+\doxysubsubsection{\texorpdfstring{GCCL\_GCS\_CMD\_FEATURE}{GCCL\_GCS\_CMD\_FEATURE}}
+{\footnotesize\ttfamily \label{esm_2src_2transfer-manager_8js_a4e1250df22369366969ec55c6f10f2ad} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} GCCL\+\_\+\+GCS\+\_\+\+CMD\+\_\+\+FEATURE}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \ \ UPLOAD\_MANY:\ \textcolor{stringliteral}{'tm.upload\_many'},}
+\DoxyCodeLine{\ \ \ \ DOWNLOAD\_MANY:\ \textcolor{stringliteral}{'tm.download\_many'},}
+\DoxyCodeLine{\ \ \ \ UPLOAD\_SHARDED:\ \textcolor{stringliteral}{'tm.upload\_sharded'},}
+\DoxyCodeLine{\ \ \ \ DOWNLOAD\_SHARDED:\ \textcolor{stringliteral}{'tm.download\_sharded'},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+The {\ttfamily gccl-\/gcs-\/cmd} value for the {\ttfamily X-\/\+Goog-\/\+API-\/\+Client} header. Example\+: {\ttfamily gccl-\/gcs-\/cmd/tm.\+upload\+\_\+many}
+
+\begin{DoxySeeAlso}{See also}
+{\ttfamily \doxylink{}{GCCL\+\_\+\+GCS\+\_\+\+CMD}}. 
+
+{\ttfamily \doxylink{_0dgoogle-cloud_2storage_2build_2cjs_2src_2nodejs-common_2util_8js_aae2c366a51ec197cf2042075d2f21adc}{GCCL\+\_\+\+GCS\+\_\+\+CMD\+\_\+\+KEY}}. 
+\end{DoxySeeAlso}
+\Hypertarget{esm_2src_2transfer-manager_8js_a59be084da8908b7d77ff34b25cd84488}\index{transfer-\/manager.js@{transfer-\/manager.js}!import@{import}}
+\index{import@{import}!transfer-\/manager.js@{transfer-\/manager.js}}
+\doxysubsubsection{\texorpdfstring{import}{import}}
+{\footnotesize\ttfamily \label{esm_2src_2transfer-manager_8js_a59be084da8908b7d77ff34b25cd84488} 
+import \{ File\+Exception\+Messages, \mbox{\hyperlink{class_request_error}{Request\+Error}}, \} from \textquotesingle{}./\mbox{\hyperlink{esm_2src_2file_8js_a73ffb0a3b9f028910adc01ac31153d46}{file.\+js}}\textquotesingle{}}
+
+\Hypertarget{esm_2src_2transfer-manager_8js_a855d9d33127d4a1b6d60693ff91e7f8b}\index{transfer-\/manager.js@{transfer-\/manager.js}!limit@{limit}}
+\index{limit@{limit}!transfer-\/manager.js@{transfer-\/manager.js}}
+\doxysubsubsection{\texorpdfstring{limit}{limit}}
+{\footnotesize\ttfamily \label{esm_2src_2transfer-manager_8js_a855d9d33127d4a1b6d60693ff91e7f8b} 
+\mbox{\hyperlink{component_2dist_2esm_2index_8esm2017_8js_a953be46b94f595d839e88a6d3d270309}{import}} \mbox{\hyperlink{p-limit_2index_8js_ac2669ad7cdb9fa68467c461d8de68593}{p\+Limit}} from \mbox{\hyperlink{ordered-map_8min_8js_ab2752257551c1a01e010ceba5d7ec200}{p}} limit}
+
+\Hypertarget{esm_2src_2transfer-manager_8js_af6b5c52a8c176ed1dddc0ffd7930a03a}\index{transfer-\/manager.js@{transfer-\/manager.js}!packageJson@{packageJson}}
+\index{packageJson@{packageJson}!transfer-\/manager.js@{transfer-\/manager.js}}
+\doxysubsubsection{\texorpdfstring{packageJson}{packageJson}}
+{\footnotesize\ttfamily \label{esm_2src_2transfer-manager_8js_af6b5c52a8c176ed1dddc0ffd7930a03a} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} package\+Json = get\+Package\+JSON()}
+
+\Hypertarget{esm_2src_2transfer-manager_8js_a413c8bc133e31c6efb2f21ea918cb5ca}\index{transfer-\/manager.js@{transfer-\/manager.js}!path@{path}}
+\index{path@{path}!transfer-\/manager.js@{transfer-\/manager.js}}
+\doxysubsubsection{\texorpdfstring{path}{path}}
+{\footnotesize\ttfamily \label{esm_2src_2transfer-manager_8js_a413c8bc133e31c6efb2f21ea918cb5ca} 
+\mbox{\hyperlink{component_2dist_2esm_2index_8esm2017_8js_a953be46b94f595d839e88a6d3d270309}{import}}\texorpdfstring{$\ast$}{*} as path from path}
+
+\Hypertarget{esm_2src_2transfer-manager_8js_a5c3a024991e60780f47bfabac4db746b}\index{transfer-\/manager.js@{transfer-\/manager.js}!retry@{retry}}
+\index{retry@{retry}!transfer-\/manager.js@{transfer-\/manager.js}}
+\doxysubsubsection{\texorpdfstring{retry}{retry}}
+{\footnotesize\ttfamily \label{esm_2src_2transfer-manager_8js_a5c3a024991e60780f47bfabac4db746b} 
+\mbox{\hyperlink{component_2dist_2esm_2index_8esm2017_8js_a953be46b94f595d839e88a6d3d270309}{import}} Async\+Retry from \mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} retry}
+
+\Hypertarget{esm_2src_2transfer-manager_8js_a0243b161257525b5f254d3590468d24c}\index{transfer-\/manager.js@{transfer-\/manager.js}!UPLOAD\_IN\_CHUNKS\_DEFAULT\_CHUNK\_SIZE@{UPLOAD\_IN\_CHUNKS\_DEFAULT\_CHUNK\_SIZE}}
+\index{UPLOAD\_IN\_CHUNKS\_DEFAULT\_CHUNK\_SIZE@{UPLOAD\_IN\_CHUNKS\_DEFAULT\_CHUNK\_SIZE}!transfer-\/manager.js@{transfer-\/manager.js}}
+\doxysubsubsection{\texorpdfstring{UPLOAD\_IN\_CHUNKS\_DEFAULT\_CHUNK\_SIZE}{UPLOAD\_IN\_CHUNKS\_DEFAULT\_CHUNK\_SIZE}}
+{\footnotesize\ttfamily \label{esm_2src_2transfer-manager_8js_a0243b161257525b5f254d3590468d24c} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} UPLOAD\+\_\+\+IN\+\_\+\+CHUNKS\+\_\+\+DEFAULT\+\_\+\+CHUNK\+\_\+\+SIZE = 32 \texorpdfstring{$\ast$}{*} 1024 \texorpdfstring{$\ast$}{*} 1024}
+
+The chunk size in bytes to use when calling upload\+File\+In\+Chunks. 

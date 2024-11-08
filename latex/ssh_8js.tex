@@ -1,0 +1,236 @@
+\doxysection{backend/node\+\_\+modules/node-\/forge/lib/ssh.js File Reference}
+\hypertarget{ssh_8js}{}\label{ssh_8js}\index{backend/node\_modules/node-\/forge/lib/ssh.js@{backend/node\_modules/node-\/forge/lib/ssh.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{ssh_8js_a145a31234f7b22612790ef857ddcafbd}{\+\_\+add\+Big\+Integer\+To\+Buffer}} (\mbox{\hyperlink{cjs_2internal_2operators_2buffer_8js_a838d54b935df11eff7928ba8da636891}{buffer}}, val)
+\item 
+function \mbox{\hyperlink{ssh_8js_a4630e987f8775a6291769343f2640072}{\+\_\+add\+String\+To\+Buffer}} (\mbox{\hyperlink{cjs_2internal_2operators_2buffer_8js_a838d54b935df11eff7928ba8da636891}{buffer}}, val)
+\item 
+function \mbox{\hyperlink{ssh_8js_aae836a32649662721c86212d38dc14ac}{\+\_\+sha1}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{ssh_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./forge\textquotesingle{})
+\item 
+var \mbox{\hyperlink{ssh_8js_a630f5498b11f8a91edda920f9c95ed8b}{ssh}} = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{module.\+exports}} = forge.\+ssh = forge.\+ssh \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} \{\}
+\item 
+\mbox{\hyperlink{ssh_8js_a630f5498b11f8a91edda920f9c95ed8b}{ssh}} \mbox{\hyperlink{ssh_8js_aa4109cafb348a08753d29b6dc8d124e7}{private\+Key\+To\+Putty}}
+\item 
+\mbox{\hyperlink{ssh_8js_a630f5498b11f8a91edda920f9c95ed8b}{ssh}} \mbox{\hyperlink{ssh_8js_a18ba9c9b7ca91dcb8ff6d6461f178040}{public\+Key\+To\+Open\+SSH}}
+\item 
+\mbox{\hyperlink{ssh_8js_a630f5498b11f8a91edda920f9c95ed8b}{ssh}} \mbox{\hyperlink{ssh_8js_ab9bc2c1e1c7e060a0fe1d46332be307e}{private\+Key\+To\+Open\+SSH}}
+\item 
+\mbox{\hyperlink{ssh_8js_a630f5498b11f8a91edda920f9c95ed8b}{ssh}} \mbox{\hyperlink{ssh_8js_ab5e8a9401d3477b52925a2b96d915e7d}{get\+Public\+Key\+Fingerprint}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{ssh_8js_a145a31234f7b22612790ef857ddcafbd}\index{ssh.js@{ssh.js}!\_addBigIntegerToBuffer@{\_addBigIntegerToBuffer}}
+\index{\_addBigIntegerToBuffer@{\_addBigIntegerToBuffer}!ssh.js@{ssh.js}}
+\doxysubsubsection{\texorpdfstring{\_addBigIntegerToBuffer()}{\_addBigIntegerToBuffer()}}
+{\footnotesize\ttfamily \label{ssh_8js_a145a31234f7b22612790ef857ddcafbd} 
+function \+\_\+add\+Big\+Integer\+To\+Buffer (\begin{DoxyParamCaption}\item[{}]{buffer}{, }\item[{}]{val}{}\end{DoxyParamCaption})}
+
+Adds len(val) then val to a buffer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & the buffer to add to. \\
+\hline
+{\em val} & a big integer. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{cjs_2internal_2operators_2buffer_8js_a838d54b935df11eff7928ba8da636891}{buffer}}, \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}}, and \mbox{\hyperlink{ssh_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.
+
+\Hypertarget{ssh_8js_a4630e987f8775a6291769343f2640072}\index{ssh.js@{ssh.js}!\_addStringToBuffer@{\_addStringToBuffer}}
+\index{\_addStringToBuffer@{\_addStringToBuffer}!ssh.js@{ssh.js}}
+\doxysubsubsection{\texorpdfstring{\_addStringToBuffer()}{\_addStringToBuffer()}}
+{\footnotesize\ttfamily \label{ssh_8js_a4630e987f8775a6291769343f2640072} 
+function \+\_\+add\+String\+To\+Buffer (\begin{DoxyParamCaption}\item[{}]{buffer}{, }\item[{}]{val}{}\end{DoxyParamCaption})}
+
+Adds len(val) then val to a buffer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & the buffer to add to. \\
+\hline
+{\em val} & a string. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{cjs_2internal_2operators_2buffer_8js_a838d54b935df11eff7928ba8da636891}{buffer}}.
+
+\Hypertarget{ssh_8js_aae836a32649662721c86212d38dc14ac}\index{ssh.js@{ssh.js}!\_sha1@{\_sha1}}
+\index{\_sha1@{\_sha1}!ssh.js@{ssh.js}}
+\doxysubsubsection{\texorpdfstring{\_sha1()}{\_sha1()}}
+{\footnotesize\ttfamily \label{ssh_8js_aae836a32649662721c86212d38dc14ac} 
+function \+\_\+sha1 (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Hashes the arguments into one value using SHA-\/1.
+
+\begin{DoxyReturn}{Returns}
+the sha1 hash of the provided arguments. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{ssh_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}, and \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{ssh_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}\index{ssh.js@{ssh.js}!forge@{forge}}
+\index{forge@{forge}!ssh.js@{ssh.js}}
+\doxysubsubsection{\texorpdfstring{forge}{forge}}
+{\footnotesize\ttfamily \label{ssh_8js_ab4dbef01e35b8e6d06087c0542ba9e2c} 
+var forge = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./forge\textquotesingle{})}
+
+\doxylink{class_functions}{Functions} to output keys in SSH-\/friendly formats.
+
+This is part of the Forge project which may be used under the terms of either the BSD License or the GNU General Public License (GPL) Version 2.
+
+See\+: \href{https://github.com/digitalbazaar/forge/blob/cbebca3780658703d925b61b2caffb1d263a6c1d/LICENSE}{\texttt{ https\+://github.\+com/digitalbazaar/forge/blob/cbebca3780658703d925b61b2caffb1d263a6c1d/\+LICENSE}}
+
+\begin{DoxyAuthor}{Author}
+\href{https://github.com/shellac}{\texttt{ https\+://github.\+com/shellac}} 
+\end{DoxyAuthor}
+\Hypertarget{ssh_8js_ab5e8a9401d3477b52925a2b96d915e7d}\index{ssh.js@{ssh.js}!getPublicKeyFingerprint@{getPublicKeyFingerprint}}
+\index{getPublicKeyFingerprint@{getPublicKeyFingerprint}!ssh.js@{ssh.js}}
+\doxysubsubsection{\texorpdfstring{getPublicKeyFingerprint}{getPublicKeyFingerprint}}
+{\footnotesize\ttfamily \label{ssh_8js_ab5e8a9401d3477b52925a2b96d915e7d} 
+\mbox{\hyperlink{ssh_8js_a630f5498b11f8a91edda920f9c95ed8b}{ssh}} get\+Public\+Key\+Fingerprint}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(key,\ options)\ \{}
+\DoxyCodeLine{\ \ options\ =\ options\ ||\ \{\};}
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{sha512_8js_a4a0380eac0cebce3ad3d5fb0f14d6dae}{md}}\ =\ options.md\ ||\ \mbox{\hyperlink{ssh_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.md.md5.create();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type}}\ =\ \textcolor{stringliteral}{'ssh-\/rsa'};}
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{cjs_2internal_2operators_2buffer_8js_a838d54b935df11eff7928ba8da636891}{buffer}}\ =\ \mbox{\hyperlink{ssh_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.util.createBuffer();}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{ssh_8js_a4630e987f8775a6291769343f2640072}{\_addStringToBuffer}}(\mbox{\hyperlink{cjs_2internal_2operators_2buffer_8js_a838d54b935df11eff7928ba8da636891}{buffer}},\ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type}});}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{ssh_8js_a145a31234f7b22612790ef857ddcafbd}{\_addBigIntegerToBuffer}}(\mbox{\hyperlink{cjs_2internal_2operators_2buffer_8js_a838d54b935df11eff7928ba8da636891}{buffer}},\ key.e);}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{ssh_8js_a145a31234f7b22612790ef857ddcafbd}{\_addBigIntegerToBuffer}}(\mbox{\hyperlink{cjs_2internal_2operators_2buffer_8js_a838d54b935df11eff7928ba8da636891}{buffer}},\ key.n);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ \mbox{\hyperlink{sha512_8js_a4a0380eac0cebce3ad3d5fb0f14d6dae}{md}}.start();}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{sha512_8js_a4a0380eac0cebce3ad3d5fb0f14d6dae}{md}}.update(\mbox{\hyperlink{cjs_2internal_2operators_2buffer_8js_a838d54b935df11eff7928ba8da636891}{buffer}}.getBytes());}
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{browser_2runtime_2digest_8js_a54d3c9201937d07375b3cdef4258dc37}{digest}}\ =\ \mbox{\hyperlink{sha512_8js_a4a0380eac0cebce3ad3d5fb0f14d6dae}{md}}.digest();}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}(options.encoding\ ===\ \textcolor{stringliteral}{'hex'})\ \{}
+\DoxyCodeLine{\ \ \ \ var\ \mbox{\hyperlink{conversions_8js_ad69b853a65b1b99def2b5b90d9bd63e9}{hex}}\ =\ \mbox{\hyperlink{browser_2runtime_2digest_8js_a54d3c9201937d07375b3cdef4258dc37}{digest}}.toHex();}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}(options.delimiter)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{conversions_8js_ad69b853a65b1b99def2b5b90d9bd63e9}{hex}}.match(/.\{2\}/\mbox{\hyperlink{ordered-map_8min_8js_a103df269476e78897c9c4c6cb8f4eb06}{g}}).\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a500bc97a63b7c35b84493a7f90ef44d6}{join}}(options.delimiter);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{conversions_8js_ad69b853a65b1b99def2b5b90d9bd63e9}{hex}};}
+\DoxyCodeLine{\ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}(options.encoding\ ===\ \textcolor{stringliteral}{'binary'})\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{browser_2runtime_2digest_8js_a54d3c9201937d07375b3cdef4258dc37}{digest}}.getBytes();}
+\DoxyCodeLine{\ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}(options.encoding)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ Error(\textcolor{stringliteral}{'Unknown\ encoding\ "{}'}\ +\ options.encoding\ +\ \textcolor{stringliteral}{'"{}.'});}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{browser_2runtime_2digest_8js_a54d3c9201937d07375b3cdef4258dc37}{digest}};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Gets the SSH fingerprint for the given public key.
+
+
+\begin{DoxyParams}{Parameters}
+{\em options} & the options to use. \mbox{[}md\mbox{]} the message digest object to use (defaults to forge.\+md.\+md5). \mbox{[}encoding\mbox{]} an alternative output encoding, such as \textquotesingle{}hex\textquotesingle{} (defaults to none, outputs a byte buffer). \mbox{[}delimiter\mbox{]} the delimiter to use between bytes for \textquotesingle{}hex\textquotesingle{} encoded output, eg\+: \textquotesingle{}\+:\textquotesingle{} (defaults to none).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the fingerprint as a byte buffer or other encoding based on options. 
+\end{DoxyReturn}
+\Hypertarget{ssh_8js_ab9bc2c1e1c7e060a0fe1d46332be307e}\index{ssh.js@{ssh.js}!privateKeyToOpenSSH@{privateKeyToOpenSSH}}
+\index{privateKeyToOpenSSH@{privateKeyToOpenSSH}!ssh.js@{ssh.js}}
+\doxysubsubsection{\texorpdfstring{privateKeyToOpenSSH}{privateKeyToOpenSSH}}
+{\footnotesize\ttfamily \label{ssh_8js_ab9bc2c1e1c7e060a0fe1d46332be307e} 
+\mbox{\hyperlink{ssh_8js_a630f5498b11f8a91edda920f9c95ed8b}{ssh}} private\+Key\+To\+Open\+SSH}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(privateKey,\ passphrase)\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}(!passphrase)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{ssh_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.pki.privateKeyToPem(privateKey);}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{ssh_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.pki.encryptRsaPrivateKey(privateKey,\ passphrase,}
+\DoxyCodeLine{\ \ \ \ \{legacy:\ \textcolor{keyword}{true},\ algorithm:\ \textcolor{stringliteral}{'aes128'}\});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Encodes a private RSA key as an Open\+SSH file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & the key. \\
+\hline
+{\em passphrase} & a passphrase to protect the key (falsy for no encryption).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the public key in Open\+SSH format. 
+\end{DoxyReturn}
+\Hypertarget{ssh_8js_aa4109cafb348a08753d29b6dc8d124e7}\index{ssh.js@{ssh.js}!privateKeyToPutty@{privateKeyToPutty}}
+\index{privateKeyToPutty@{privateKeyToPutty}!ssh.js@{ssh.js}}
+\doxysubsubsection{\texorpdfstring{privateKeyToPutty}{privateKeyToPutty}}
+{\footnotesize\ttfamily \label{ssh_8js_aa4109cafb348a08753d29b6dc8d124e7} 
+\mbox{\hyperlink{ssh_8js_a630f5498b11f8a91edda920f9c95ed8b}{ssh}} private\+Key\+To\+Putty}
+
+Encodes (and optionally encrypts) a private RSA key as a Putty PPK file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em private\+Key} & the key. \\
+\hline
+{\em passphrase} & a passphrase to protect the key (falsy for no encryption). \\
+\hline
+{\em comment} & a comment to include in the key file.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the PPK file as a string. 
+\end{DoxyReturn}
+\Hypertarget{ssh_8js_a18ba9c9b7ca91dcb8ff6d6461f178040}\index{ssh.js@{ssh.js}!publicKeyToOpenSSH@{publicKeyToOpenSSH}}
+\index{publicKeyToOpenSSH@{publicKeyToOpenSSH}!ssh.js@{ssh.js}}
+\doxysubsubsection{\texorpdfstring{publicKeyToOpenSSH}{publicKeyToOpenSSH}}
+{\footnotesize\ttfamily \label{ssh_8js_a18ba9c9b7ca91dcb8ff6d6461f178040} 
+\mbox{\hyperlink{ssh_8js_a630f5498b11f8a91edda920f9c95ed8b}{ssh}} public\+Key\+To\+Open\+SSH}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(key,\ comment)\ \{}
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type}}\ =\ \textcolor{stringliteral}{'ssh-\/rsa'};}
+\DoxyCodeLine{\ \ comment\ =\ comment\ ||\ \textcolor{stringliteral}{''};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{cjs_2internal_2operators_2buffer_8js_a838d54b935df11eff7928ba8da636891}{buffer}}\ =\ \mbox{\hyperlink{ssh_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.util.createBuffer();}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{ssh_8js_a4630e987f8775a6291769343f2640072}{\_addStringToBuffer}}(\mbox{\hyperlink{cjs_2internal_2operators_2buffer_8js_a838d54b935df11eff7928ba8da636891}{buffer}},\ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type}});}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{ssh_8js_a145a31234f7b22612790ef857ddcafbd}{\_addBigIntegerToBuffer}}(\mbox{\hyperlink{cjs_2internal_2operators_2buffer_8js_a838d54b935df11eff7928ba8da636891}{buffer}},\ key.e);}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{ssh_8js_a145a31234f7b22612790ef857ddcafbd}{\_addBigIntegerToBuffer}}(\mbox{\hyperlink{cjs_2internal_2operators_2buffer_8js_a838d54b935df11eff7928ba8da636891}{buffer}},\ key.n);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type}}\ +\ \textcolor{charliteral}{'\ '}\ +\ \mbox{\hyperlink{ssh_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.util.encode64(\mbox{\hyperlink{cjs_2internal_2operators_2buffer_8js_a838d54b935df11eff7928ba8da636891}{buffer}}.bytes())\ +\ \textcolor{charliteral}{'\ '}\ +\ comment;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Encodes a public RSA key as an Open\+SSH file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & the key. \\
+\hline
+{\em comment} & a comment.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the public key in Open\+SSH format. 
+\end{DoxyReturn}
+\Hypertarget{ssh_8js_a630f5498b11f8a91edda920f9c95ed8b}\index{ssh.js@{ssh.js}!ssh@{ssh}}
+\index{ssh@{ssh}!ssh.js@{ssh.js}}
+\doxysubsubsection{\texorpdfstring{ssh}{ssh}}
+{\footnotesize\ttfamily \label{ssh_8js_a630f5498b11f8a91edda920f9c95ed8b} 
+var ssh = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{module.\+exports}} = forge.\+ssh = forge.\+ssh \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} \{\}}
+

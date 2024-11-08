@@ -1,0 +1,250 @@
+\doxysection{Vector\+Query Class Reference}
+\hypertarget{class_vector_query}{}\label{class_vector_query}\index{VectorQuery@{VectorQuery}}
+
+
+Collaboration diagram for Vector\+Query\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{class_vector_query__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_vector_query_a7e88f6d22219be37a4a57f981b2f389e}{get}} \mbox{\hyperlink{class_vector_query_a784bacd7a2a2a68236b49e4032b1ada0}{query}} ()
+\item 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{class_vector_query_ae2c2ffc39552952579287c334b4ab822}{explain}} (options)
+\item 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{class_vector_query_a7e88f6d22219be37a4a57f981b2f389e}{get}} ()
+\item 
+\mbox{\hyperlink{class_vector_query_ae48cc4b0ddbe3ea1346b009add2bc36b}{\+\_\+get\+Response}} (explain\+Options)
+\item 
+\mbox{\hyperlink{class_vector_query_a7fa234ea55389318b6530e40f58cc6c2}{is\+Equal}} (other)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_vector_query_ac8115cf1426fa770be35125912ff2b22}{constructor}} (\+\_\+query, \mbox{\hyperlink{express_2lib_2router_2route_8js_a6d3af37c53447908498ec53885a92a16}{\+\_\+options}})
+\item 
+\mbox{\hyperlink{class_vector_query_a7e88f6d22219be37a4a57f981b2f389e}{get}} \mbox{\hyperlink{class_vector_query_a996255147abbe6fa59c0552db3c2632c}{\+\_\+raw\+Vector\+Field}} ()
+\item 
+\mbox{\hyperlink{class_vector_query_a7e88f6d22219be37a4a57f981b2f389e}{get}} \mbox{\hyperlink{class_vector_query_ae924ecaaaca8dfba33713e79aedb733d}{\+\_\+raw\+Distance\+Result\+Field}} ()
+\item 
+\mbox{\hyperlink{class_vector_query_a7e88f6d22219be37a4a57f981b2f389e}{get}} \mbox{\hyperlink{class_vector_query_a0c1be8f26b30d9129aece9eb76ec5d72}{\+\_\+raw\+Query\+Vector}} ()
+\item 
+\mbox{\hyperlink{class_vector_query_a0df83e08e936577cdeff7bc7339aa752}{\+\_\+stream}} (transaction\+Id)
+\item 
+\mbox{\hyperlink{class_vector_query_a8ff055c5abb59ce505697766030dea25}{to\+Proto}} (transaction\+Or\+Read\+Time, explain\+Options)
+\item 
+\mbox{\hyperlink{class_vector_query_a92df1fd626738757eaefbb3daa851e5b}{\+\_\+create\+Snapshot}} (read\+Time, \mbox{\hyperlink{ordered-map_8min_8js_aa4a39500e3f754a8f2e1fd50b9ae523c}{size}}, docs, changes)
+\item 
+\mbox{\hyperlink{class_vector_query_a21652e3886f33f03c31ba65e469ff6ab}{start\+After}} (...field\+Values\+Or\+Document\+Snapshot)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_a}{A} query that finds the documents whose vector fields are closest to a certain query vector. Create an instance of {\ttfamily \doxylink{class_vector_query}{Vector\+Query}} with {\ttfamily \doxylink{class_query_a04939bf9e7a633a29075dcd763258ec3}{Query.\+find\+Nearest}}. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_vector_query_a92df1fd626738757eaefbb3daa851e5b}\index{VectorQuery@{VectorQuery}!\_createSnapshot@{\_createSnapshot}}
+\index{\_createSnapshot@{\_createSnapshot}!VectorQuery@{VectorQuery}}
+\doxysubsubsection{\texorpdfstring{\_createSnapshot()}{\_createSnapshot()}}
+{\footnotesize\ttfamily \label{class_vector_query_a92df1fd626738757eaefbb3daa851e5b} 
+Vector\+Query\+::\+\_\+create\+Snapshot (\begin{DoxyParamCaption}\item[{}]{read\+Time}{, }\item[{}]{size}{, }\item[{}]{docs}{, }\item[{}]{changes}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Construct the resulting vector snapshot for this query with given documents. 
+
+References \mbox{\hyperlink{ordered-map_8min_8js_aa4a39500e3f754a8f2e1fd50b9ae523c}{size}}, and \mbox{\hyperlink{vector-query_8js_afbd147c74cdf5846f112e05d6fdf140d}{vector\+\_\+query\+\_\+snapshot\+\_\+1}}.
+
+\Hypertarget{class_vector_query_ae48cc4b0ddbe3ea1346b009add2bc36b}\index{VectorQuery@{VectorQuery}!\_getResponse@{\_getResponse}}
+\index{\_getResponse@{\_getResponse}!VectorQuery@{VectorQuery}}
+\doxysubsubsection{\texorpdfstring{\_getResponse()}{\_getResponse()}}
+{\footnotesize\ttfamily \label{class_vector_query_ae48cc4b0ddbe3ea1346b009add2bc36b} 
+Vector\+Query\+::\+\_\+get\+Response (\begin{DoxyParamCaption}\item[{}]{explain\+Options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_vector_query_ae48cc4b0ddbe3ea1346b009add2bc36b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_vector_query_ae924ecaaaca8dfba33713e79aedb733d}\index{VectorQuery@{VectorQuery}!\_rawDistanceResultField@{\_rawDistanceResultField}}
+\index{\_rawDistanceResultField@{\_rawDistanceResultField}!VectorQuery@{VectorQuery}}
+\doxysubsubsection{\texorpdfstring{\_rawDistanceResultField()}{\_rawDistanceResultField()}}
+{\footnotesize\ttfamily \label{class_vector_query_ae924ecaaaca8dfba33713e79aedb733d} 
+\mbox{\hyperlink{class_vector_query_a7e88f6d22219be37a4a57f981b2f389e}{get}} Vector\+Query\+::\+\_\+raw\+Distance\+Result\+Field (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+References \mbox{\hyperlink{express_2lib_2router_2route_8js_a6d3af37c53447908498ec53885a92a16}{\+\_\+options}}.
+
+\Hypertarget{class_vector_query_a0c1be8f26b30d9129aece9eb76ec5d72}\index{VectorQuery@{VectorQuery}!\_rawQueryVector@{\_rawQueryVector}}
+\index{\_rawQueryVector@{\_rawQueryVector}!VectorQuery@{VectorQuery}}
+\doxysubsubsection{\texorpdfstring{\_rawQueryVector()}{\_rawQueryVector()}}
+{\footnotesize\ttfamily \label{class_vector_query_a0c1be8f26b30d9129aece9eb76ec5d72} 
+\mbox{\hyperlink{class_vector_query_a7e88f6d22219be37a4a57f981b2f389e}{get}} Vector\+Query\+::\+\_\+raw\+Query\+Vector (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+References \mbox{\hyperlink{express_2lib_2router_2route_8js_a6d3af37c53447908498ec53885a92a16}{\+\_\+options}}, and \mbox{\hyperlink{src_2util_2minimal_8js_a325c4e317c38d8497130ebce7670be2f}{Array}}.
+
+\Hypertarget{class_vector_query_a996255147abbe6fa59c0552db3c2632c}\index{VectorQuery@{VectorQuery}!\_rawVectorField@{\_rawVectorField}}
+\index{\_rawVectorField@{\_rawVectorField}!VectorQuery@{VectorQuery}}
+\doxysubsubsection{\texorpdfstring{\_rawVectorField()}{\_rawVectorField()}}
+{\footnotesize\ttfamily \label{class_vector_query_a996255147abbe6fa59c0552db3c2632c} 
+\mbox{\hyperlink{class_vector_query_a7e88f6d22219be37a4a57f981b2f389e}{get}} Vector\+Query\+::\+\_\+raw\+Vector\+Field (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+References \mbox{\hyperlink{express_2lib_2router_2route_8js_a6d3af37c53447908498ec53885a92a16}{\+\_\+options}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_vector_query_a996255147abbe6fa59c0552db3c2632c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_vector_query_a0df83e08e936577cdeff7bc7339aa752}\index{VectorQuery@{VectorQuery}!\_stream@{\_stream}}
+\index{\_stream@{\_stream}!VectorQuery@{VectorQuery}}
+\doxysubsubsection{\texorpdfstring{\_stream()}{\_stream()}}
+{\footnotesize\ttfamily \label{class_vector_query_a0df83e08e936577cdeff7bc7339aa752} 
+Vector\+Query\+::\+\_\+stream (\begin{DoxyParamCaption}\item[{}]{transaction\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Internal streaming method that accepts an optional transaction ID.
+
+
+\begin{DoxyParams}{Parameters}
+{\em transaction\+Id} & -\/ \doxylink{class_a}{A} transaction ID. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_vector_query_ac8115cf1426fa770be35125912ff2b22}\index{VectorQuery@{VectorQuery}!constructor@{constructor}}
+\index{constructor@{constructor}!VectorQuery@{VectorQuery}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_vector_query_ac8115cf1426fa770be35125912ff2b22} 
+Vector\+Query\+::constructor (\begin{DoxyParamCaption}\item[{}]{\+\_\+query}{, }\item[{}]{\+\_\+options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+References \mbox{\hyperlink{express_2lib_2router_2route_8js_a6d3af37c53447908498ec53885a92a16}{\+\_\+options}}, and \mbox{\hyperlink{vector-query_8js_a71a43ff8ba7968b20612667bbdef0fdb}{query\+\_\+util\+\_\+1}}.
+
+\Hypertarget{class_vector_query_ae2c2ffc39552952579287c334b4ab822}\index{VectorQuery@{VectorQuery}!explain@{explain}}
+\index{explain@{explain}!VectorQuery@{VectorQuery}}
+\doxysubsubsection{\texorpdfstring{explain()}{explain()}}
+{\footnotesize\ttfamily \label{class_vector_query_ae2c2ffc39552952579287c334b4ab822} 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} Vector\+Query\+::explain (\begin{DoxyParamCaption}\item[{}]{options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Plans and optionally executes this vector search query. Returns a Promise that will be resolved with the planner information, statistics from the query execution (if any), and the query results (if any).
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_a}{A} Promise that will be resolved with the planner information, statistics from the query execution (if any), and the query results (if any). 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{class_vector_query_ae48cc4b0ddbe3ea1346b009add2bc36b}{\+\_\+get\+Response()}}, \mbox{\hyperlink{vector-query_8js_a0551a3f12d83c39cfce719ff41746801}{query\+\_\+profile\+\_\+1}}, \mbox{\hyperlink{lodash_2core_8js_a348c112a244660a2f280cda892658c24}{result}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_vector_query_ae2c2ffc39552952579287c334b4ab822_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_vector_query_a7e88f6d22219be37a4a57f981b2f389e}\index{VectorQuery@{VectorQuery}!get@{get}}
+\index{get@{get}!VectorQuery@{VectorQuery}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{class_vector_query_a7e88f6d22219be37a4a57f981b2f389e} 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} Vector\+Query\+::get (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Executes this vector search query.
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_a}{A} promise that will be resolved with the results of the query. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{class_vector_query_ae48cc4b0ddbe3ea1346b009add2bc36b}{\+\_\+get\+Response()}}, and \mbox{\hyperlink{lodash_2core_8js_a348c112a244660a2f280cda892658c24}{result}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{class_vector_query_a7e88f6d22219be37a4a57f981b2f389e_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_vector_query_a7fa234ea55389318b6530e40f58cc6c2}\index{VectorQuery@{VectorQuery}!isEqual@{isEqual}}
+\index{isEqual@{isEqual}!VectorQuery@{VectorQuery}}
+\doxysubsubsection{\texorpdfstring{isEqual()}{isEqual()}}
+{\footnotesize\ttfamily \label{class_vector_query_a7fa234ea55389318b6530e40f58cc6c2} 
+Vector\+Query\+::is\+Equal (\begin{DoxyParamCaption}\item[{}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Compares this object with the given object for equality.
+
+This object is considered "{}equal"{} to the other object if and only if {\ttfamily other} performs the same vector distance search as this {\ttfamily \doxylink{class_vector_query}{Vector\+Query}} and the underlying \doxylink{class_query}{Query} of {\ttfamily other} compares equal to that of this object using {\ttfamily \doxylink{class_query_a310a24f63ebaa118222ca9b5bc4aa149}{Query.\+is\+Equal()}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & -\/ The object to compare to this object for equality. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if this object is "{}equal"{} to the given object, as defined above, or {\ttfamily false} otherwise. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{class_vector_query_a996255147abbe6fa59c0552db3c2632c}{\+\_\+raw\+Vector\+Field()}}, \mbox{\hyperlink{class_vector_query_a784bacd7a2a2a68236b49e4032b1ada0}{query()}}, and \mbox{\hyperlink{vector-query_8js_a6af3fa6e24c6a46faf4552f3a2ad8783}{util\+\_\+1}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_vector_query_a7fa234ea55389318b6530e40f58cc6c2_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_vector_query_a784bacd7a2a2a68236b49e4032b1ada0}\index{VectorQuery@{VectorQuery}!query@{query}}
+\index{query@{query}!VectorQuery@{VectorQuery}}
+\doxysubsubsection{\texorpdfstring{query()}{query()}}
+{\footnotesize\ttfamily \label{class_vector_query_a784bacd7a2a2a68236b49e4032b1ada0} 
+\mbox{\hyperlink{class_vector_query_a7e88f6d22219be37a4a57f981b2f389e}{get}} Vector\+Query\+::query (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+The query whose results participants in the vector search. Filtering performed by the query will apply before the vector search. Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{class_vector_query_a784bacd7a2a2a68236b49e4032b1ada0_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_vector_query_a21652e3886f33f03c31ba65e469ff6ab}\index{VectorQuery@{VectorQuery}!startAfter@{startAfter}}
+\index{startAfter@{startAfter}!VectorQuery@{VectorQuery}}
+\doxysubsubsection{\texorpdfstring{startAfter()}{startAfter()}}
+{\footnotesize\ttfamily \label{class_vector_query_a21652e3886f33f03c31ba65e469ff6ab} 
+Vector\+Query\+::start\+After (\begin{DoxyParamCaption}\item[{}]{...}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Construct a new vector query whose result will start after To support \doxylink{debug_2src_2node_8js_a822bf74d422c61e6caa292f739dc4786}{stream()}. This now throws an exception because cursors are not supported from the backend for vector queries yet. \Hypertarget{class_vector_query_a8ff055c5abb59ce505697766030dea25}\index{VectorQuery@{VectorQuery}!toProto@{toProto}}
+\index{toProto@{toProto}!VectorQuery@{VectorQuery}}
+\doxysubsubsection{\texorpdfstring{toProto()}{toProto()}}
+{\footnotesize\ttfamily \label{class_vector_query_a8ff055c5abb59ce505697766030dea25} 
+Vector\+Query\+::to\+Proto (\begin{DoxyParamCaption}\item[{}]{transaction\+Or\+Read\+Time}{, }\item[{}]{explain\+Options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Internal method for serializing a query to its proto representation with an optional transaction id. 
+
+References \mbox{\hyperlink{logger_2dist_2esm_2index_8esm5_8js_a0adf123df8967a14b5bdd9ff3bbe2d0c}{\+\_\+a}}, \mbox{\hyperlink{logging_8js_a53284eb14d953f3ba58806fc49cd4f7c}{\+\_\+b}}, \mbox{\hyperlink{logging_8js_aa9188bfce96541e3026ad83bee2ab87c}{\+\_\+c}}, \mbox{\hyperlink{express_2lib_2router_2route_8js_a6d3af37c53447908498ec53885a92a16}{\+\_\+options}}, \mbox{\hyperlink{src_2util_2minimal_8js_a325c4e317c38d8497130ebce7670be2f}{Array}}, \mbox{\hyperlink{vector-query_8js_abb5837ddeb6cdc50bf1ab149418463a5}{field\+\_\+value\+\_\+1}}, \mbox{\hyperlink{esm_2src_2bucket_8js_a855d9d33127d4a1b6d60693ff91e7f8b}{limit}}, \mbox{\hyperlink{vector-query_8js_a705fe9bf53f002be551bde47cc3a6069}{path\+\_\+1}}, \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/@google-\/cloud/firestore/build/src/reference/\mbox{\hyperlink{vector-query_8js}{vector-\/query.\+js}}\end{DoxyCompactItemize}

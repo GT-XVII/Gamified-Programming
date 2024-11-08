@@ -1,0 +1,13 @@
+<map id="RemoteConfigApiClient::getServerTemplate" name="RemoteConfigApiClient::getServerTemplate">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,71,164,111"/>
+<area shape="rect" id="Node000002" href="$class_remote_config_api_client.html#a8d717f02223a3eeae4acae6b3d5dd090" title=" " alt="" coords="240,5,398,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,68,228,48,229,53,161,73"/>
+<area shape="rect" id="Node000004" href="$class_remote_config_api_client.html#abdaabd3b282557158d34d59af9a2f288" title=" " alt="" coords="240,71,398,111"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="164,88,225,88,225,94,164,94"/>
+<area shape="rect" id="Node000005" href="$class_remote_config_api_client.html#a44985020276279474d81e2c5a9773025" title=" " alt="" coords="212,136,427,177"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="161,109,229,129,228,134,159,114"/>
+<area shape="rect" id="Node000003" href="$class_remote_config_api_client.html#a2da104fed98482b1c8cc1e58740569bd" title=" " alt="" coords="475,5,633,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="399,23,459,23,459,28,399,28"/>
+<area shape="rect" id="Node000006" href="$class_remote_config_api_client.html#a14f61ed08772dea2e5a36557fe8e10df" title=" " alt="" coords="475,136,633,177"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="428,154,459,154,459,159,428,159"/>
+</map>

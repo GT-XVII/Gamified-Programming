@@ -1,0 +1,1975 @@
+\doxysection{backend/node\+\_\+modules/long/index.js File Reference}
+\hypertarget{long_2index_8js}{}\label{long_2index_8js}\index{backend/node\_modules/long/index.js@{backend/node\_modules/long/index.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{long_2index_8js_a5bf45fc51bc0426586792b5f9cb95431}{catch}} (\mbox{\hyperlink{firestore__admin__v1__proto__api_8js_a08a4415e9d594ff960030b921d42b91e}{e}})
+\item 
+function \mbox{\hyperlink{long_2index_8js_ae87870f7108ac720cff5f3f432b9f0f3}{Long}} (low, high, unsigned)
+\item 
+function \mbox{\hyperlink{long_2index_8js_a9fa1d2c92d5c36576fc88f6a1f68284b}{is\+Long}} (\mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}})
+\item 
+function \mbox{\hyperlink{long_2index_8js_a4239fbbe8c4562a351b550250b5fe619}{ctz32}} (\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}})
+\item 
+function \mbox{\hyperlink{long_2index_8js_aeca8920e257a840c7f30fbcfcb9aed6d}{from\+Int}} (\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}, unsigned)
+\item 
+function \mbox{\hyperlink{long_2index_8js_a98511324cb7f120ba0e829ac1590cf32}{from\+Number}} (\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}, unsigned)
+\item 
+function \mbox{\hyperlink{long_2index_8js_a50593dbc261b172e4d8b4b773157fd27}{from\+Bits}} (low\+Bits, high\+Bits, unsigned)
+\item 
+function \mbox{\hyperlink{long_2index_8js_a9ae53eb26d614d2444cdc9a832a14e81}{from\+String}} (\mbox{\hyperlink{json-bigint_2lib_2stringify_8js_abd4075a8f329b0ccafd81359c952a9df}{str}}, unsigned, radix)
+\item 
+function \mbox{\hyperlink{long_2index_8js_afb7b22d61888a3782a02efb5622aa0fd}{from\+Value}} (val, unsigned)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{long_2index_8js_a23a3372e7fdb6d70d0ea9e37720a75bd}{wasm}} = null
+\item 
+\mbox{\hyperlink{long_2index_8js_abe4cc9788f52e49485473dc699537388}{try}}
+\item 
+\mbox{\hyperlink{interface_long}{Long}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{long_2index_8js_a30b36dfd40d515ff1513ac73327b4026}{\+\_\+\+\_\+is\+Long\+\_\+\+\_\+}}
+\item 
+\mbox{\hyperlink{interface_long}{Long}} \mbox{\hyperlink{long_2index_8js_a987be1914fa8b126ef6f42ee6ca22f6c}{is\+Long}} = is\+Long
+\item 
+var \mbox{\hyperlink{long_2index_8js_aa270556316328316957b05df065142d5}{INT\+\_\+\+CACHE}} = \{\}
+\item 
+var \mbox{\hyperlink{long_2index_8js_a71457c80c147c23fa062134a65c29bb7}{UINT\+\_\+\+CACHE}} = \{\}
+\item 
+\mbox{\hyperlink{interface_long}{Long}} \mbox{\hyperlink{long_2index_8js_abe372bfcd00f2889d3a04d98ffe33ab1}{from\+Int}} = from\+Int
+\item 
+\mbox{\hyperlink{interface_long}{Long}} \mbox{\hyperlink{long_2index_8js_a3682c64d9f10e0eb159469a27d2d77c3}{from\+Number}} = from\+Number
+\item 
+\mbox{\hyperlink{interface_long}{Long}} \mbox{\hyperlink{long_2index_8js_a4982e92a462ec92e04632054fbba81c7}{from\+Bits}} = from\+Bits
+\item 
+var \mbox{\hyperlink{long_2index_8js_adc919b34f39f7fd40d8904e7ecdc6400}{pow\+\_\+dbl}} = \mbox{\hyperlink{prime_8worker_8min_8js_a6d15710102d801a0d899ac88542197f9}{Math.\+pow}}
+\item 
+\mbox{\hyperlink{interface_long}{Long}} \mbox{\hyperlink{long_2index_8js_afa5a3e4304a66b6502ee45a946b6176e}{from\+String}} = from\+String
+\item 
+\mbox{\hyperlink{interface_long}{Long}} \mbox{\hyperlink{long_2index_8js_a44cb3d7b998b87b0e947a150084e56c4}{from\+Value}} = from\+Value
+\item 
+var \mbox{\hyperlink{long_2index_8js_a65d356b8a0577b943e500b0923dc80f4}{TWO\+\_\+\+PWR\+\_\+16\+\_\+\+DBL}} = 1 $<$$<$ 16
+\item 
+var \mbox{\hyperlink{long_2index_8js_ace22a13fa54d3e757fb2f6afb9a7c6d9}{TWO\+\_\+\+PWR\+\_\+24\+\_\+\+DBL}} = 1 $<$$<$ 24
+\item 
+var \mbox{\hyperlink{long_2index_8js_ae98932fe3b7d5609f52004b048d66c06}{TWO\+\_\+\+PWR\+\_\+32\+\_\+\+DBL}} = \mbox{\hyperlink{long_2index_8js_a65d356b8a0577b943e500b0923dc80f4}{TWO\+\_\+\+PWR\+\_\+16\+\_\+\+DBL}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{long_2index_8js_a65d356b8a0577b943e500b0923dc80f4}{TWO\+\_\+\+PWR\+\_\+16\+\_\+\+DBL}}
+\item 
+var \mbox{\hyperlink{long_2index_8js_aa803787abfacd9e2ad50c8b23fd363a9}{TWO\+\_\+\+PWR\+\_\+64\+\_\+\+DBL}} = \mbox{\hyperlink{long_2index_8js_ae98932fe3b7d5609f52004b048d66c06}{TWO\+\_\+\+PWR\+\_\+32\+\_\+\+DBL}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{long_2index_8js_ae98932fe3b7d5609f52004b048d66c06}{TWO\+\_\+\+PWR\+\_\+32\+\_\+\+DBL}}
+\item 
+var \mbox{\hyperlink{long_2index_8js_ab1ec9b5780c0a7448a5f5829be0b74d5}{TWO\+\_\+\+PWR\+\_\+63\+\_\+\+DBL}} = \mbox{\hyperlink{long_2index_8js_aa803787abfacd9e2ad50c8b23fd363a9}{TWO\+\_\+\+PWR\+\_\+64\+\_\+\+DBL}} / 2
+\item 
+var \mbox{\hyperlink{long_2index_8js_a0eaae65ce6d25ba985bad4dd90a34260}{TWO\+\_\+\+PWR\+\_\+24}} = \mbox{\hyperlink{long_2index_8js_abe372bfcd00f2889d3a04d98ffe33ab1}{from\+Int}}(\mbox{\hyperlink{long_2index_8js_ace22a13fa54d3e757fb2f6afb9a7c6d9}{TWO\+\_\+\+PWR\+\_\+24\+\_\+\+DBL}})
+\item 
+var \mbox{\hyperlink{long_2index_8js_a2610f9b78232bda11b2fa63c930b3ef7}{ZERO}} = \mbox{\hyperlink{long_2index_8js_abe372bfcd00f2889d3a04d98ffe33ab1}{from\+Int}}(0)
+\item 
+var \mbox{\hyperlink{long_2index_8js_adfb75f3ed10ec9d71977d6d53fd750e6}{UZERO}} = \mbox{\hyperlink{long_2index_8js_abe372bfcd00f2889d3a04d98ffe33ab1}{from\+Int}}(0, true)
+\item 
+var \mbox{\hyperlink{long_2index_8js_a10633d23fbed3c46a0a25a34474d8510}{ONE}} = \mbox{\hyperlink{long_2index_8js_abe372bfcd00f2889d3a04d98ffe33ab1}{from\+Int}}(1)
+\item 
+var \mbox{\hyperlink{long_2index_8js_a337119821513cb26cfa2499ced775aa0}{UONE}} = \mbox{\hyperlink{long_2index_8js_abe372bfcd00f2889d3a04d98ffe33ab1}{from\+Int}}(1, true)
+\item 
+var \mbox{\hyperlink{long_2index_8js_afbf71d15b1d83a1230102678c9950d7d}{NEG\+\_\+\+ONE}} = \mbox{\hyperlink{long_2index_8js_abe372bfcd00f2889d3a04d98ffe33ab1}{from\+Int}}(-\/1)
+\item 
+var \mbox{\hyperlink{long_2index_8js_ae0a0454ee409787ef161593fe79079c2}{MAX\+\_\+\+VALUE}} = \mbox{\hyperlink{long_2index_8js_a4982e92a462ec92e04632054fbba81c7}{from\+Bits}}(0x\+FFFFFFFF \texorpdfstring{$\vert$}{|} 0, 0x7\+FFFFFFF \texorpdfstring{$\vert$}{|} 0, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a5df37b7f02e5cdc7d9412b7f872b8e01}{false}})
+\item 
+var \mbox{\hyperlink{long_2index_8js_a1675577b82328d6d7c73385767591d4a}{MAX\+\_\+\+UNSIGNED\+\_\+\+VALUE}} = \mbox{\hyperlink{long_2index_8js_a4982e92a462ec92e04632054fbba81c7}{from\+Bits}}(0x\+FFFFFFFF \texorpdfstring{$\vert$}{|} 0, 0x\+FFFFFFFF \texorpdfstring{$\vert$}{|} 0, true)
+\item 
+var \mbox{\hyperlink{long_2index_8js_a658bfd7bf2057953eb283172659d2268}{MIN\+\_\+\+VALUE}} = \mbox{\hyperlink{long_2index_8js_a4982e92a462ec92e04632054fbba81c7}{from\+Bits}}(0, 0x80000000 \texorpdfstring{$\vert$}{|} 0, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a5df37b7f02e5cdc7d9412b7f872b8e01}{false}})
+\item 
+var \mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{Long.\+prototype}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_a6d36cc5d1b63d0a8e27a97b6be2ee7a5}{to\+Int}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_a5092c3ce75e09e6874313df3fc6d7196}{to\+Number}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_a0f93c73e5b1fc9629f1fd3554d002ced}{to\+String}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_ac8dcd44e64627459800a4a893dbedcd2}{get\+High\+Bits}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_a706ce44f0ab1ccd505bcfaac41302ad8}{get\+High\+Bits\+Unsigned}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_af8ba78bb4d67caf264af8bb452ad223f}{get\+Low\+Bits}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_a38a0302c8025d633f9a6bfeb93f2a665}{get\+Low\+Bits\+Unsigned}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_abdf736b071498c50e05fb479675faf3c}{get\+Num\+Bits\+Abs}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_a16a44bae441805a0def5a4db5243162a}{is\+Zero}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_a824164c22ccdf3f52cff348c83dd08e8}{eqz}} = \mbox{\hyperlink{long_2index_8js_a16a44bae441805a0def5a4db5243162a}{Long\+Prototype.\+is\+Zero}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_a9a95247cc0683fe372cc62edb37fd3cd}{is\+Negative}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_a06a2ccd6baeeffb74912283e8204f649}{is\+Positive}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_a5a6d8820684763477ec7ad5efdc44b3b}{is\+Odd}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_a6526c9cc2a231737f268b033cc191a98}{is\+Even}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_ad229f448a893363dda8c6716108663f4}{equals}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_a8143aba4b5feecd1f9ec141a3e04c1e6}{eq}} = \mbox{\hyperlink{ordered-map_8min_8js_acdf31fcdaf23de6bc0aad38a158a8354}{Long\+Prototype.\+equals}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_a69732c18ed1ba51a4da4173010594a74}{not\+Equals}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_ae7af9f6310dd26fdf01abdd0a8a76875}{neq}} = \mbox{\hyperlink{long_2index_8js_a69732c18ed1ba51a4da4173010594a74}{Long\+Prototype.\+not\+Equals}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_a4c27baafd450238566ee82fd95e3bc1b}{ne}} = \mbox{\hyperlink{long_2index_8js_a69732c18ed1ba51a4da4173010594a74}{Long\+Prototype.\+not\+Equals}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_a3b785172bc40376da41a2cf296a0a965}{less\+Than}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_ad6c71863bd83b0ca049f55d3bb3f0105}{lt}} = \mbox{\hyperlink{long_2index_8js_a3b785172bc40376da41a2cf296a0a965}{Long\+Prototype.\+less\+Than}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_a123d88a67ea6e1c4c01a6f26ef405abe}{less\+Than\+Or\+Equal}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_a3d146cc0ed37be54c4e70dfeb1391313}{lte}} = \mbox{\hyperlink{long_2index_8js_a123d88a67ea6e1c4c01a6f26ef405abe}{Long\+Prototype.\+less\+Than\+Or\+Equal}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_aa23f614cfec8acc3dcca51a416df5d9a}{le}} = \mbox{\hyperlink{long_2index_8js_a123d88a67ea6e1c4c01a6f26ef405abe}{Long\+Prototype.\+less\+Than\+Or\+Equal}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_a0ad960682c7bab5e8ff96463ccdfba6a}{greater\+Than}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_adf255e13f6654220155e6602a6d5481b}{gt}} = \mbox{\hyperlink{long_2index_8js_a0ad960682c7bab5e8ff96463ccdfba6a}{Long\+Prototype.\+greater\+Than}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_abf8ac33baa97e6dd57637ef16ea86ad3}{greater\+Than\+Or\+Equal}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_a3d8450ebe6b80d3a072f60e46d2e3ad9}{gte}} = \mbox{\hyperlink{long_2index_8js_abf8ac33baa97e6dd57637ef16ea86ad3}{Long\+Prototype.\+greater\+Than\+Or\+Equal}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_a04ceb998bda8088ad9650eb2fdfad866}{ge}} = \mbox{\hyperlink{long_2index_8js_abf8ac33baa97e6dd57637ef16ea86ad3}{Long\+Prototype.\+greater\+Than\+Or\+Equal}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_a13dbb15b63f0c317a8545e0128d39c60}{compare}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_a33e3b5296f866a66acae6bd74f2b2316}{comp}} = \mbox{\hyperlink{order_8js_a25a83804b6b1871627a0e9747e35bbdc}{Long\+Prototype.\+compare}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_aafb4b95213c0e8f93d3ac8ec687924eb}{negate}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_ab49f736b39a52f051bde165dd1a14165}{neg}} = \mbox{\hyperlink{lodash_2core_8js_ab36d953814a1ca7ba78f2fad36ec7cb1}{Long\+Prototype.\+negate}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_ad1e4d2db24caa60c411ef204d2ef0d4d}{add}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_a4c8fc2025a3beeff5a877e608ac15155}{subtract}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_aa57d3d0484d1c8baeb1acf8a6a773b39}{sub}} = \mbox{\hyperlink{subtract_8js_afe2f537cd9e72982975aaf3e0a4900f2}{Long\+Prototype.\+subtract}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_a48b27e8b6ac21b916965966bbabebdbb}{multiply}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_a086fb43a5c1071fbfea460f415d8eb96}{mul}} = \mbox{\hyperlink{multiply_8js_ab116c6fdfad3fe9745bc3301a0a98696}{Long\+Prototype.\+multiply}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_afe23bb1a1d1a88cdedba7b683ab6e77b}{divide}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_ad0dda96dfc771375c80cc246c67929d6}{div}} = \mbox{\hyperlink{divide_8js_aa784dbb12f6c236e6b01f44abeab791d}{Long\+Prototype.\+divide}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_ae744e995fe717fffc43139012a2848e9}{modulo}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_afe8b4d98ba998dc78d0369b49d2aebf3}{mod}} = \mbox{\hyperlink{long_2index_8js_ae744e995fe717fffc43139012a2848e9}{Long\+Prototype.\+modulo}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_afc3bf5c0a581b82e373c599b5c43e15b}{rem}} = \mbox{\hyperlink{long_2index_8js_ae744e995fe717fffc43139012a2848e9}{Long\+Prototype.\+modulo}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_ad7dc44f0ebdb746f4a5b0612ae9315cb}{not}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_acc76b432492a754bd6dbc036226cd150}{count\+Leading\+Zeros}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_a023af6feddeb5d7174bd85bfb60dc0fb}{clz}} = \mbox{\hyperlink{long_2index_8js_acc76b432492a754bd6dbc036226cd150}{Long\+Prototype.\+count\+Leading\+Zeros}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_a6240b1a31ee6298e8b157bdbf76f5e3d}{count\+Trailing\+Zeros}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_ac4069dc58d5445f178833ac90b457dca}{ctz}} = \mbox{\hyperlink{long_2index_8js_a6240b1a31ee6298e8b157bdbf76f5e3d}{Long\+Prototype.\+count\+Trailing\+Zeros}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_af6ba5df101e5630835a0a5d778844922}{and}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_a88083640992a53a144223e2bd602d47d}{or}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_a57a7f84d7a6445fc4bcc479225c29be3}{xor}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_aaad3c8b0d6696565664e45cbb26fe85b}{shift\+Left}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_adff4d5229510bc56f1b1961dd20c8a2f}{shl}} = \mbox{\hyperlink{long_2index_8js_aaad3c8b0d6696565664e45cbb26fe85b}{Long\+Prototype.\+shift\+Left}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_ab811dcdc8a6b90bf6cd035916fe6d3f3}{shift\+Right}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_a06f6cd01f7ce128a682b22f0295389cd}{shr}} = \mbox{\hyperlink{long_2index_8js_ab811dcdc8a6b90bf6cd035916fe6d3f3}{Long\+Prototype.\+shift\+Right}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_a3bdb1f7632bea83afbae01b50ae3f3ee}{shift\+Right\+Unsigned}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_a26d4ad3a147fbecfee2d72ce92729829}{shru}} = \mbox{\hyperlink{long_2index_8js_a3bdb1f7632bea83afbae01b50ae3f3ee}{Long\+Prototype.\+shift\+Right\+Unsigned}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_a77e8ed07b198c5cf6d107260fa5125bc}{shr\+\_\+u}} = \mbox{\hyperlink{long_2index_8js_a3bdb1f7632bea83afbae01b50ae3f3ee}{Long\+Prototype.\+shift\+Right\+Unsigned}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_a100eed368f6b8025913813f9dbf314f9}{rotate\+Left}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_a9c531fa0a10808753826697ca8dfb48b}{rotate\+Right}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_a260f93e309c51a85dd2d7bcef816e699}{to\+Signed}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_a692e14c9e32b6ad903bec89014e94a15}{to\+Unsigned}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_ad42de39e174086451dd936c0252a6c00}{to\+Bytes}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_a35d437c896d464906b3b3419674a35de}{to\+Bytes\+LE}}
+\item 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} \mbox{\hyperlink{long_2index_8js_a5649943f8615c57ed6dad52e64095046}{to\+Bytes\+BE}}
+\item 
+\mbox{\hyperlink{interface_long}{Long}} \mbox{\hyperlink{long_2index_8js_ab0273758bdc337547e9df300c1a76956}{from\+Bytes}}
+\item 
+\mbox{\hyperlink{interface_long}{Long}} \mbox{\hyperlink{long_2index_8js_a5738038439f4b91454660f4ed7c76881}{from\+Bytes\+LE}}
+\item 
+\mbox{\hyperlink{interface_long}{Long}} \mbox{\hyperlink{long_2index_8js_a5e999de87365c50f951facf8ad56c6dc}{from\+Bytes\+BE}}
+\item 
+export \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2index_8js_a48acd3189d40b017f47c93b673b8b8f6}{default}} \mbox{\hyperlink{long_2index_8js_a1a0bab9fca95fe4a58fb392e24393fa7}{Long}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{long_2index_8js_a5bf45fc51bc0426586792b5f9cb95431}\index{index.js@{index.js}!catch@{catch}}
+\index{catch@{catch}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{catch()}{catch()}}
+{\footnotesize\ttfamily \label{long_2index_8js_a5bf45fc51bc0426586792b5f9cb95431} 
+catch (\begin{DoxyParamCaption}\item[{}]{e}{}\end{DoxyParamCaption})}
+
+\Hypertarget{long_2index_8js_a4239fbbe8c4562a351b550250b5fe619}\index{index.js@{index.js}!ctz32@{ctz32}}
+\index{ctz32@{ctz32}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{ctz32()}{ctz32()}}
+{\footnotesize\ttfamily \label{long_2index_8js_a4239fbbe8c4562a351b550250b5fe619} 
+function ctz32 (\begin{DoxyParamCaption}\item[{}]{value}{}\end{DoxyParamCaption})}
+
+@function 
+\begin{DoxyParams}{Parameters}
+{\em \{\texorpdfstring{$\ast$}{*}\}} & value number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{number\} @inner 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.
+
+\Hypertarget{long_2index_8js_a50593dbc261b172e4d8b4b773157fd27}\index{index.js@{index.js}!fromBits@{fromBits}}
+\index{fromBits@{fromBits}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{fromBits()}{fromBits()}}
+{\footnotesize\ttfamily \label{long_2index_8js_a50593dbc261b172e4d8b4b773157fd27} 
+function from\+Bits (\begin{DoxyParamCaption}\item[{}]{low\+Bits}{, }\item[{}]{high\+Bits}{, }\item[{}]{unsigned}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{number\}} & low\+Bits \\
+\hline
+{\em \{number\}} & high\+Bits \\
+\hline
+{\em \{boolean=\}} & unsigned \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{!\+Long\} @inner 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{_0dgrpc_2proto-loader_2build_2src_2index_8js_a8f8c848788373879186cd0715ca35b0d}{Long}}.
+
+\Hypertarget{long_2index_8js_aeca8920e257a840c7f30fbcfcb9aed6d}\index{index.js@{index.js}!fromInt@{fromInt}}
+\index{fromInt@{fromInt}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{fromInt()}{fromInt()}}
+{\footnotesize\ttfamily \label{long_2index_8js_aeca8920e257a840c7f30fbcfcb9aed6d} 
+function from\+Int (\begin{DoxyParamCaption}\item[{}]{value}{, }\item[{}]{unsigned}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{number\}} & value \\
+\hline
+{\em \{boolean=\}} & unsigned \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{!\+Long\} @inner 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{long_2index_8js_a4982e92a462ec92e04632054fbba81c7}{from\+Bits}}, \mbox{\hyperlink{long_2index_8js_aa270556316328316957b05df065142d5}{INT\+\_\+\+CACHE}}, \mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}, \mbox{\hyperlink{long_2index_8js_a71457c80c147c23fa062134a65c29bb7}{UINT\+\_\+\+CACHE}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.
+
+\Hypertarget{long_2index_8js_a98511324cb7f120ba0e829ac1590cf32}\index{index.js@{index.js}!fromNumber@{fromNumber}}
+\index{fromNumber@{fromNumber}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{fromNumber()}{fromNumber()}}
+{\footnotesize\ttfamily \label{long_2index_8js_a98511324cb7f120ba0e829ac1590cf32} 
+function from\+Number (\begin{DoxyParamCaption}\item[{}]{value}{, }\item[{}]{unsigned}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{number\}} & value \\
+\hline
+{\em \{boolean=\}} & unsigned \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{!\+Long\} @inner 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{long_2index_8js_a4982e92a462ec92e04632054fbba81c7}{from\+Bits}}, \mbox{\hyperlink{long_2index_8js_a3682c64d9f10e0eb159469a27d2d77c3}{from\+Number}}, \mbox{\hyperlink{lodash_2core_8js_ae2c7b9b535f93c96826bdbe1da681ceb}{is\+NaN}}, \mbox{\hyperlink{long_2index_8js_a1675577b82328d6d7c73385767591d4a}{MAX\+\_\+\+UNSIGNED\+\_\+\+VALUE}}, \mbox{\hyperlink{long_2index_8js_ae0a0454ee409787ef161593fe79079c2}{MAX\+\_\+\+VALUE}}, \mbox{\hyperlink{long_2index_8js_a658bfd7bf2057953eb283172659d2268}{MIN\+\_\+\+VALUE}}, \mbox{\hyperlink{long_2index_8js_ae98932fe3b7d5609f52004b048d66c06}{TWO\+\_\+\+PWR\+\_\+32\+\_\+\+DBL}}, \mbox{\hyperlink{long_2index_8js_ab1ec9b5780c0a7448a5f5829be0b74d5}{TWO\+\_\+\+PWR\+\_\+63\+\_\+\+DBL}}, \mbox{\hyperlink{long_2index_8js_aa803787abfacd9e2ad50c8b23fd363a9}{TWO\+\_\+\+PWR\+\_\+64\+\_\+\+DBL}}, \mbox{\hyperlink{long_2index_8js_adfb75f3ed10ec9d71977d6d53fd750e6}{UZERO}}, \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}, and \mbox{\hyperlink{long_2index_8js_a2610f9b78232bda11b2fa63c930b3ef7}{ZERO}}.
+
+\Hypertarget{long_2index_8js_a9ae53eb26d614d2444cdc9a832a14e81}\index{index.js@{index.js}!fromString@{fromString}}
+\index{fromString@{fromString}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{fromString()}{fromString()}}
+{\footnotesize\ttfamily \label{long_2index_8js_a9ae53eb26d614d2444cdc9a832a14e81} 
+function from\+String (\begin{DoxyParamCaption}\item[{}]{str}{, }\item[{}]{unsigned}{, }\item[{}]{radix}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & str \\
+\hline
+{\em \{(boolean\texorpdfstring{$\vert$}{|}number)=\}} & unsigned \\
+\hline
+{\em \{number=\}} & radix \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{!\+Long\} @inner 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{long_2index_8js_a3682c64d9f10e0eb159469a27d2d77c3}{from\+Number}}, \mbox{\hyperlink{long_2index_8js_afa5a3e4304a66b6502ee45a946b6176e}{from\+String}}, \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}, \mbox{\hyperlink{ordered-map_8min_8js_ab2752257551c1a01e010ceba5d7ec200}{p}}, \mbox{\hyperlink{parse_int_8js_a04ee837a5f7721fcb0ea2d152162ef92}{parse\+Int()}}, \mbox{\hyperlink{long_2index_8js_adc919b34f39f7fd40d8904e7ecdc6400}{pow\+\_\+dbl}}, \mbox{\hyperlink{lodash_2core_8js_a348c112a244660a2f280cda892658c24}{result}}, \mbox{\hyperlink{ordered-map_8min_8js_aa4a39500e3f754a8f2e1fd50b9ae523c}{size}}, \mbox{\hyperlink{json-bigint_2lib_2stringify_8js_abd4075a8f329b0ccafd81359c952a9df}{str()}}, \mbox{\hyperlink{long_2index_8js_adfb75f3ed10ec9d71977d6d53fd750e6}{UZERO}}, \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}, and \mbox{\hyperlink{long_2index_8js_a2610f9b78232bda11b2fa63c930b3ef7}{ZERO}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{long_2index_8js_a9ae53eb26d614d2444cdc9a832a14e81_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{long_2index_8js_afb7b22d61888a3782a02efb5622aa0fd}\index{index.js@{index.js}!fromValue@{fromValue}}
+\index{fromValue@{fromValue}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{fromValue()}{fromValue()}}
+{\footnotesize\ttfamily \label{long_2index_8js_afb7b22d61888a3782a02efb5622aa0fd} 
+function from\+Value (\begin{DoxyParamCaption}\item[{}]{val}{, }\item[{}]{unsigned}{}\end{DoxyParamCaption})}
+
+@function 
+\begin{DoxyParams}{Parameters}
+{\em \{!\+Long\texorpdfstring{$\vert$}{|}number\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}!\{low} & number, high\+: number, unsigned\+: boolean\}\} val \\
+\hline
+{\em \{boolean=\}} & unsigned \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{!\+Long\} @inner 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{long_2index_8js_a4982e92a462ec92e04632054fbba81c7}{from\+Bits}}, \mbox{\hyperlink{long_2index_8js_a3682c64d9f10e0eb159469a27d2d77c3}{from\+Number}}, and \mbox{\hyperlink{long_2index_8js_afa5a3e4304a66b6502ee45a946b6176e}{from\+String}}.
+
+\Hypertarget{long_2index_8js_a9fa1d2c92d5c36576fc88f6a1f68284b}\index{index.js@{index.js}!isLong@{isLong}}
+\index{isLong@{isLong}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{isLong()}{isLong()}}
+{\footnotesize\ttfamily \label{long_2index_8js_a9fa1d2c92d5c36576fc88f6a1f68284b} 
+function is\+Long (\begin{DoxyParamCaption}\item[{}]{obj}{}\end{DoxyParamCaption})}
+
+@function 
+\begin{DoxyParams}{Parameters}
+{\em \{\texorpdfstring{$\ast$}{*}\}} & obj Object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{boolean\} @inner 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}.
+
+\Hypertarget{long_2index_8js_ae87870f7108ac720cff5f3f432b9f0f3}\index{index.js@{index.js}!Long@{Long}}
+\index{Long@{Long}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{Long()}{Long()}}
+{\footnotesize\ttfamily \label{long_2index_8js_ae87870f7108ac720cff5f3f432b9f0f3} 
+function Long (\begin{DoxyParamCaption}\item[{}]{low}{, }\item[{}]{high}{, }\item[{}]{unsigned}{}\end{DoxyParamCaption})}
+
+The low 32 bits as a signed value. @type \{number\}
+
+The high 32 bits as a signed value. @type \{number\}
+
+Whether unsigned or not. @type \{boolean\}
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{long_2index_8js_a30b36dfd40d515ff1513ac73327b4026}\index{index.js@{index.js}!\_\_isLong\_\_@{\_\_isLong\_\_}}
+\index{\_\_isLong\_\_@{\_\_isLong\_\_}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{\_\_isLong\_\_}{\_\_isLong\_\_}}
+{\footnotesize\ttfamily \label{long_2index_8js_a30b36dfd40d515ff1513ac73327b4026} 
+\mbox{\hyperlink{interface_long}{Long}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \+\_\+\+\_\+is\+Long\+\_\+\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+An indicator used to reliably determine if an object is a \doxylink{interface_long}{Long} or not. @type \{boolean\} @const \Hypertarget{long_2index_8js_ad1e4d2db24caa60c411ef204d2ef0d4d}\index{index.js@{index.js}!add@{add}}
+\index{add@{add}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{add}{add}}
+{\footnotesize\ttfamily \label{long_2index_8js_ad1e4d2db24caa60c411ef204d2ef0d4d} 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} add}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{_0dprotobufjs_2codegen_2tests_2index_8js_a4e768d30759ccd1fa31604f664ac1c6e}{add}}(addend)\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{long_2index_8js_a987be1914fa8b126ef6f42ee6ca22f6c}{isLong}}(addend))}
+\DoxyCodeLine{\ \ \ \ addend\ =\ \mbox{\hyperlink{long_2index_8js_a44cb3d7b998b87b0e947a150084e56c4}{fromValue}}(addend);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ var\ a48\ =\ this.high\ >>>\ 16;}
+\DoxyCodeLine{\ \ var\ a32\ =\ this.high\ \&\ 0xFFFF;}
+\DoxyCodeLine{\ \ var\ a16\ =\ this.low\ >>>\ 16;}
+\DoxyCodeLine{\ \ var\ a00\ =\ this.low\ \&\ 0xFFFF;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ var\ b48\ =\ addend.high\ >>>\ 16;}
+\DoxyCodeLine{\ \ var\ b32\ =\ addend.high\ \&\ 0xFFFF;}
+\DoxyCodeLine{\ \ var\ b16\ =\ addend.low\ >>>\ 16;}
+\DoxyCodeLine{\ \ var\ b00\ =\ addend.low\ \&\ 0xFFFF;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ var\ c48\ =\ 0,\ c32\ =\ 0,\ c16\ =\ 0,\ c00\ =\ 0;}
+\DoxyCodeLine{\ \ c00\ +=\ a00\ +\ b00;}
+\DoxyCodeLine{\ \ c16\ +=\ c00\ >>>\ 16;}
+\DoxyCodeLine{\ \ c00\ \&=\ 0xFFFF;}
+\DoxyCodeLine{\ \ c16\ +=\ a16\ +\ b16;}
+\DoxyCodeLine{\ \ c32\ +=\ c16\ >>>\ 16;}
+\DoxyCodeLine{\ \ c16\ \&=\ 0xFFFF;}
+\DoxyCodeLine{\ \ c32\ +=\ a32\ +\ b32;}
+\DoxyCodeLine{\ \ c48\ +=\ c32\ >>>\ 16;}
+\DoxyCodeLine{\ \ c32\ \&=\ 0xFFFF;}
+\DoxyCodeLine{\ \ c48\ +=\ a48\ +\ b48;}
+\DoxyCodeLine{\ \ c48\ \&=\ 0xFFFF;}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{long_2index_8js_a4982e92a462ec92e04632054fbba81c7}{fromBits}}((c16\ <<\ 16)\ |\ c00,\ (c48\ <<\ 16)\ |\ c32,\ this.\textcolor{keywordtype}{unsigned});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Returns the sum of this and the specified \doxylink{interface_long}{Long}. @this \{!\+Long\} 
+\begin{DoxyParams}{Parameters}
+{\em \{!\+Long\texorpdfstring{$\vert$}{|}number\texorpdfstring{$\vert$}{|}string\}} & addend Addend \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{!\+Long\} Sum 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_af6ba5df101e5630835a0a5d778844922}\index{index.js@{index.js}!and@{and}}
+\index{and@{and}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{and}{and}}
+{\footnotesize\ttfamily \label{long_2index_8js_af6ba5df101e5630835a0a5d778844922} 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} and}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{long_2index_8js_af6ba5df101e5630835a0a5d778844922}{and}}(other)\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{long_2index_8js_a987be1914fa8b126ef6f42ee6ca22f6c}{isLong}}(other))}
+\DoxyCodeLine{\ \ \ \ other\ =\ \mbox{\hyperlink{long_2index_8js_a44cb3d7b998b87b0e947a150084e56c4}{fromValue}}(other);}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{long_2index_8js_a4982e92a462ec92e04632054fbba81c7}{fromBits}}(this.low\ \&\ other.low,\ \textcolor{keyword}{this}.high\ \&\ other.high,\ \textcolor{keyword}{this}.unsigned);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Returns the bitwise AND of this \doxylink{interface_long}{Long} and the specified. @this \{!\+Long\} 
+\begin{DoxyParams}{Parameters}
+{\em \{!\+Long\texorpdfstring{$\vert$}{|}number\texorpdfstring{$\vert$}{|}string\}} & other Other \doxylink{interface_long}{Long} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{!\+Long\} 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_a023af6feddeb5d7174bd85bfb60dc0fb}\index{index.js@{index.js}!clz@{clz}}
+\index{clz@{clz}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{clz}{clz}}
+{\footnotesize\ttfamily \label{long_2index_8js_a023af6feddeb5d7174bd85bfb60dc0fb} 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} clz = \mbox{\hyperlink{long_2index_8js_acc76b432492a754bd6dbc036226cd150}{Long\+Prototype.\+count\+Leading\+Zeros}}}
+
+Returns count leading zeros. This is an alias of {\ttfamily \doxylink{}{Long\#count\+Leading\+Zeros}}. @function 
+\begin{DoxyParams}{Parameters}
+{\em \{!\+Long\}} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{!number\} 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_a33e3b5296f866a66acae6bd74f2b2316}\index{index.js@{index.js}!comp@{comp}}
+\index{comp@{comp}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{comp}{comp}}
+{\footnotesize\ttfamily \label{long_2index_8js_a33e3b5296f866a66acae6bd74f2b2316} 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} comp = \mbox{\hyperlink{order_8js_a25a83804b6b1871627a0e9747e35bbdc}{Long\+Prototype.\+compare}}}
+
+Compares this \doxylink{interface_long}{Long}\textquotesingle{}s value with the specified\textquotesingle{}s. This is an alias of {\ttfamily \doxylink{}{Long\#compare}}. @function 
+\begin{DoxyParams}{Parameters}
+{\em \{!\+Long\texorpdfstring{$\vert$}{|}number\texorpdfstring{$\vert$}{|}string\}} & other Other value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{number\} 0 if they are the same, 1 if the this is greater and -\/1 if the given one is greater 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_a13dbb15b63f0c317a8545e0128d39c60}\index{index.js@{index.js}!compare@{compare}}
+\index{compare@{compare}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{compare}{compare}}
+{\footnotesize\ttfamily \label{long_2index_8js_a13dbb15b63f0c317a8545e0128d39c60} 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} compare}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{long_2index_8js_a13dbb15b63f0c317a8545e0128d39c60}{compare}}(other)\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{long_2index_8js_a987be1914fa8b126ef6f42ee6ca22f6c}{isLong}}(other))}
+\DoxyCodeLine{\ \ \ \ other\ =\ \mbox{\hyperlink{long_2index_8js_a44cb3d7b998b87b0e947a150084e56c4}{fromValue}}(other);}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (this.\mbox{\hyperlink{__assign_merge_value_8js_a720306033bd1fff435cf4313a4bb1fa3}{eq}}(other))}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{\ \ var\ thisNeg\ =\ this.\mbox{\hyperlink{long_2index_8js_a9a95247cc0683fe372cc62edb37fd3cd}{isNegative}}(),}
+\DoxyCodeLine{\ \ \ \ otherNeg\ =\ other.isNegative();}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (thisNeg\ \&\&\ !otherNeg)}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ -\/1;}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (!thisNeg\ \&\&\ otherNeg)}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ 1;}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (!this.\textcolor{keywordtype}{unsigned})}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{long_2index_8js_aa57d3d0484d1c8baeb1acf8a6a773b39}{sub}}(other).isNegative()\ ?\ -\/1\ :\ 1;}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ (other.high\ >>>\ 0)\ >\ (this.high\ >>>\ 0)\ ||\ (other.high\ ===\ \textcolor{keyword}{this}.high\ \&\&\ (other.low\ >>>\ 0)\ >\ (\textcolor{keyword}{this}.low\ >>>\ 0))\ ?\ -\/1\ :\ 1;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Compares this \doxylink{interface_long}{Long}\textquotesingle{}s value with the specified\textquotesingle{}s. @this \{!\+Long\} 
+\begin{DoxyParams}{Parameters}
+{\em \{!\+Long\texorpdfstring{$\vert$}{|}number\texorpdfstring{$\vert$}{|}string\}} & other Other value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{number\} 0 if they are the same, 1 if the this is greater and -\/1 if the given one is greater 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_acc76b432492a754bd6dbc036226cd150}\index{index.js@{index.js}!countLeadingZeros@{countLeadingZeros}}
+\index{countLeadingZeros@{countLeadingZeros}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{countLeadingZeros}{countLeadingZeros}}
+{\footnotesize\ttfamily \label{long_2index_8js_acc76b432492a754bd6dbc036226cd150} 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} count\+Leading\+Zeros}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{long_2index_8js_acc76b432492a754bd6dbc036226cd150}{countLeadingZeros}}()\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ this.high\ ?\ Math.clz32(this.high)\ :\ Math.clz32(this.low)\ +\ 32;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Returns count leading zeros of this \doxylink{interface_long}{Long}. @this \{!\+Long\} \begin{DoxyReturn}{Returns}
+\{!number\} 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_a6240b1a31ee6298e8b157bdbf76f5e3d}\index{index.js@{index.js}!countTrailingZeros@{countTrailingZeros}}
+\index{countTrailingZeros@{countTrailingZeros}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{countTrailingZeros}{countTrailingZeros}}
+{\footnotesize\ttfamily \label{long_2index_8js_a6240b1a31ee6298e8b157bdbf76f5e3d} 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} count\+Trailing\+Zeros}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{long_2index_8js_a6240b1a31ee6298e8b157bdbf76f5e3d}{countTrailingZeros}}()\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ this.low\ ?\ \mbox{\hyperlink{long_2index_8js_a4239fbbe8c4562a351b550250b5fe619}{ctz32}}(this.low)\ :\ \mbox{\hyperlink{long_2index_8js_a4239fbbe8c4562a351b550250b5fe619}{ctz32}}(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a05c09a5e9d53fa7adf0a7936038c2fa3}{this}}.high)\ +\ 32;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Returns count trailing zeros of this \doxylink{interface_long}{Long}. @this \{!\+Long\} \begin{DoxyReturn}{Returns}
+\{!number\} 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_ac4069dc58d5445f178833ac90b457dca}\index{index.js@{index.js}!ctz@{ctz}}
+\index{ctz@{ctz}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{ctz}{ctz}}
+{\footnotesize\ttfamily \label{long_2index_8js_ac4069dc58d5445f178833ac90b457dca} 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} ctz = \mbox{\hyperlink{long_2index_8js_a6240b1a31ee6298e8b157bdbf76f5e3d}{Long\+Prototype.\+count\+Trailing\+Zeros}}}
+
+Returns count trailing zeros. This is an alias of {\ttfamily \doxylink{}{Long\#count\+Trailing\+Zeros}}. @function 
+\begin{DoxyParams}{Parameters}
+{\em \{!\+Long\}} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{!number\} 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_ad0dda96dfc771375c80cc246c67929d6}\index{index.js@{index.js}!div@{div}}
+\index{div@{div}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{div}{div}}
+{\footnotesize\ttfamily \label{long_2index_8js_ad0dda96dfc771375c80cc246c67929d6} 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} div = \mbox{\hyperlink{divide_8js_aa784dbb12f6c236e6b01f44abeab791d}{Long\+Prototype.\+divide}}}
+
+Returns this \doxylink{interface_long}{Long} divided by the specified. This is an alias of {\ttfamily \doxylink{}{Long\#divide}}. @function 
+\begin{DoxyParams}{Parameters}
+{\em \{!\+Long\texorpdfstring{$\vert$}{|}number\texorpdfstring{$\vert$}{|}string\}} & divisor Divisor \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{!\+Long\} Quotient 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_afe23bb1a1d1a88cdedba7b683ab6e77b}\index{index.js@{index.js}!divide@{divide}}
+\index{divide@{divide}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{divide}{divide}}
+{\footnotesize\ttfamily \label{long_2index_8js_afe23bb1a1d1a88cdedba7b683ab6e77b} 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} divide}
+
+Returns this \doxylink{interface_long}{Long} divided by the specified. The result is signed if this \doxylink{interface_long}{Long} is signed or unsigned if this \doxylink{interface_long}{Long} is unsigned. @this \{!\+Long\} 
+\begin{DoxyParams}{Parameters}
+{\em \{!\+Long\texorpdfstring{$\vert$}{|}number\texorpdfstring{$\vert$}{|}string\}} & divisor Divisor \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{!\+Long\} Quotient 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_a8143aba4b5feecd1f9ec141a3e04c1e6}\index{index.js@{index.js}!eq@{eq}}
+\index{eq@{eq}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{eq}{eq}}
+{\footnotesize\ttfamily \label{long_2index_8js_a8143aba4b5feecd1f9ec141a3e04c1e6} 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} eq = \mbox{\hyperlink{ordered-map_8min_8js_acdf31fcdaf23de6bc0aad38a158a8354}{Long\+Prototype.\+equals}}}
+
+Tests if this \doxylink{interface_long}{Long}\textquotesingle{}s value equals the specified\textquotesingle{}s. This is an alias of {\ttfamily \doxylink{}{Long\#equals}}. @function 
+\begin{DoxyParams}{Parameters}
+{\em \{!\+Long\texorpdfstring{$\vert$}{|}number\texorpdfstring{$\vert$}{|}string\}} & other Other value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{boolean\} 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_ad229f448a893363dda8c6716108663f4}\index{index.js@{index.js}!equals@{equals}}
+\index{equals@{equals}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{equals}{equals}}
+{\footnotesize\ttfamily \label{long_2index_8js_ad229f448a893363dda8c6716108663f4} 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} equals}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{long_2index_8js_ad229f448a893363dda8c6716108663f4}{equals}}(other)\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{long_2index_8js_a987be1914fa8b126ef6f42ee6ca22f6c}{isLong}}(other))}
+\DoxyCodeLine{\ \ \ \ other\ =\ \mbox{\hyperlink{long_2index_8js_a44cb3d7b998b87b0e947a150084e56c4}{fromValue}}(other);}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (this.\textcolor{keywordtype}{unsigned}\ !==\ other.unsigned\ \&\&\ (\textcolor{keyword}{this}.high\ >>>\ 31)\ ===\ 1\ \&\&\ (other.high\ >>>\ 31)\ ===\ 1)}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ this.high\ ===\ other.high\ \&\&\ this.low\ ===\ other.low;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Tests if this \doxylink{interface_long}{Long}\textquotesingle{}s value equals the specified\textquotesingle{}s. @this \{!\+Long\} 
+\begin{DoxyParams}{Parameters}
+{\em \{!\+Long\texorpdfstring{$\vert$}{|}number\texorpdfstring{$\vert$}{|}string\}} & other Other value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{boolean\} 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_a824164c22ccdf3f52cff348c83dd08e8}\index{index.js@{index.js}!eqz@{eqz}}
+\index{eqz@{eqz}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{eqz}{eqz}}
+{\footnotesize\ttfamily \label{long_2index_8js_a824164c22ccdf3f52cff348c83dd08e8} 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} eqz = \mbox{\hyperlink{long_2index_8js_a16a44bae441805a0def5a4db5243162a}{Long\+Prototype.\+is\+Zero}}}
+
+Tests if this \doxylink{interface_long}{Long}\textquotesingle{}s value equals zero. This is an alias of {\ttfamily \doxylink{}{Long\#is\+Zero}}. \begin{DoxyReturn}{Returns}
+\{boolean\} 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_a4982e92a462ec92e04632054fbba81c7}\index{index.js@{index.js}!fromBits@{fromBits}}
+\index{fromBits@{fromBits}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{fromBits}{fromBits}}
+{\footnotesize\ttfamily \label{long_2index_8js_a4982e92a462ec92e04632054fbba81c7} 
+\mbox{\hyperlink{interface_long}{Long}} from\+Bits = from\+Bits}
+
+Returns a \doxylink{interface_long}{Long} representing the 64 bit integer that comes by concatenating the given low and high bits. Each is assumed to use 32 bits. @function 
+\begin{DoxyParams}{Parameters}
+{\em \{number\}} & low\+Bits The low 32 bits \\
+\hline
+{\em \{number\}} & high\+Bits The high 32 bits \\
+\hline
+{\em \{boolean=\}} & unsigned Whether unsigned or not, defaults to signed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{!\+Long\} The corresponding \doxylink{interface_long}{Long} value 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_ab0273758bdc337547e9df300c1a76956}\index{index.js@{index.js}!fromBytes@{fromBytes}}
+\index{fromBytes@{fromBytes}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{fromBytes}{fromBytes}}
+{\footnotesize\ttfamily \label{long_2index_8js_ab0273758bdc337547e9df300c1a76956} 
+\mbox{\hyperlink{interface_long}{Long}} from\+Bytes}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{long_2index_8js_ab0273758bdc337547e9df300c1a76956}{fromBytes}}(\mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}},\ \textcolor{keywordtype}{unsigned},\ \mbox{\hyperlink{long_2index_8js_aa23f614cfec8acc3dcca51a416df5d9a}{le}})\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{long_2index_8js_aa23f614cfec8acc3dcca51a416df5d9a}{le}}\ ?\ \mbox{\hyperlink{interface_long}{Long}}.fromBytesLE(\mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}},\ \textcolor{keywordtype}{unsigned})\ :\ \mbox{\hyperlink{interface_long}{Long}}.fromBytesBE(\mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}},\ \textcolor{keywordtype}{unsigned});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Creates a \doxylink{interface_long}{Long} from its byte representation. 
+\begin{DoxyParams}{Parameters}
+{\em \{!\+Array.$<$number$>$\}} & bytes Byte representation \\
+\hline
+{\em \{boolean=\}} & unsigned Whether unsigned or not, defaults to signed \\
+\hline
+{\em \{boolean=\}} & le Whether little or big endian, defaults to big endian \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{\doxylink{interface_long}{Long}\} The corresponding \doxylink{interface_long}{Long} value 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_a5e999de87365c50f951facf8ad56c6dc}\index{index.js@{index.js}!fromBytesBE@{fromBytesBE}}
+\index{fromBytesBE@{fromBytesBE}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{fromBytesBE}{fromBytesBE}}
+{\footnotesize\ttfamily \label{long_2index_8js_a5e999de87365c50f951facf8ad56c6dc} 
+\mbox{\hyperlink{interface_long}{Long}} from\+Bytes\+BE}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{long_2index_8js_a5e999de87365c50f951facf8ad56c6dc}{fromBytesBE}}(\mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}},\ \textcolor{keywordtype}{unsigned})\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{_0dgrpc_2proto-loader_2build_2src_2index_8js_a8f8c848788373879186cd0715ca35b0d}{Long}}(}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}}[4]\ <<\ 24\ |}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}}[5]\ <<\ 16\ |}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}}[6]\ <<\ 8\ |}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}}[7],}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}}[0]\ <<\ 24\ |}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}}[1]\ <<\ 16\ |}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}}[2]\ <<\ 8\ |}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}}[3],}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordtype}{unsigned}}
+\DoxyCodeLine{\ \ );}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Creates a \doxylink{interface_long}{Long} from its big endian byte representation. 
+\begin{DoxyParams}{Parameters}
+{\em \{!\+Array.$<$number$>$\}} & bytes Big endian byte representation \\
+\hline
+{\em \{boolean=\}} & unsigned Whether unsigned or not, defaults to signed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{\doxylink{interface_long}{Long}\} The corresponding \doxylink{interface_long}{Long} value 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_a5738038439f4b91454660f4ed7c76881}\index{index.js@{index.js}!fromBytesLE@{fromBytesLE}}
+\index{fromBytesLE@{fromBytesLE}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{fromBytesLE}{fromBytesLE}}
+{\footnotesize\ttfamily \label{long_2index_8js_a5738038439f4b91454660f4ed7c76881} 
+\mbox{\hyperlink{interface_long}{Long}} from\+Bytes\+LE}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{long_2index_8js_a5738038439f4b91454660f4ed7c76881}{fromBytesLE}}(\mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}},\ \textcolor{keywordtype}{unsigned})\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{_0dgrpc_2proto-loader_2build_2src_2index_8js_a8f8c848788373879186cd0715ca35b0d}{Long}}(}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}}[0]\ |}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}}[1]\ <<\ 8\ |}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}}[2]\ <<\ 16\ |}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}}[3]\ <<\ 24,}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}}[4]\ |}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}}[5]\ <<\ 8\ |}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}}[6]\ <<\ 16\ |}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}}[7]\ <<\ 24,}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordtype}{unsigned}}
+\DoxyCodeLine{\ \ );}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Creates a \doxylink{interface_long}{Long} from its little endian byte representation. 
+\begin{DoxyParams}{Parameters}
+{\em \{!\+Array.$<$number$>$\}} & bytes Little endian byte representation \\
+\hline
+{\em \{boolean=\}} & unsigned Whether unsigned or not, defaults to signed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{\doxylink{interface_long}{Long}\} The corresponding \doxylink{interface_long}{Long} value 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_abe372bfcd00f2889d3a04d98ffe33ab1}\index{index.js@{index.js}!fromInt@{fromInt}}
+\index{fromInt@{fromInt}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{fromInt}{fromInt}}
+{\footnotesize\ttfamily \label{long_2index_8js_abe372bfcd00f2889d3a04d98ffe33ab1} 
+\mbox{\hyperlink{interface_long}{Long}} from\+Int = from\+Int}
+
+Returns a \doxylink{interface_long}{Long} representing the given 32 bit integer value. @function 
+\begin{DoxyParams}{Parameters}
+{\em \{number\}} & value The 32 bit integer in question \\
+\hline
+{\em \{boolean=\}} & unsigned Whether unsigned or not, defaults to signed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{!\+Long\} The corresponding \doxylink{interface_long}{Long} value 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_a3682c64d9f10e0eb159469a27d2d77c3}\index{index.js@{index.js}!fromNumber@{fromNumber}}
+\index{fromNumber@{fromNumber}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{fromNumber}{fromNumber}}
+{\footnotesize\ttfamily \label{long_2index_8js_a3682c64d9f10e0eb159469a27d2d77c3} 
+\mbox{\hyperlink{interface_long}{Long}} from\+Number = from\+Number}
+
+Returns a \doxylink{interface_long}{Long} representing the given value, provided that it is a finite number. Otherwise, zero is returned. @function 
+\begin{DoxyParams}{Parameters}
+{\em \{number\}} & value The number in question \\
+\hline
+{\em \{boolean=\}} & unsigned Whether unsigned or not, defaults to signed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{!\+Long\} The corresponding \doxylink{interface_long}{Long} value 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_afa5a3e4304a66b6502ee45a946b6176e}\index{index.js@{index.js}!fromString@{fromString}}
+\index{fromString@{fromString}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{fromString}{fromString}}
+{\footnotesize\ttfamily \label{long_2index_8js_afa5a3e4304a66b6502ee45a946b6176e} 
+\mbox{\hyperlink{interface_long}{Long}} from\+String = from\+String}
+
+Returns a \doxylink{interface_long}{Long} representation of the given string, written using the specified radix. @function 
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & str The textual representation of the \doxylink{interface_long}{Long} \\
+\hline
+{\em \{(boolean\texorpdfstring{$\vert$}{|}number)=\}} & unsigned Whether unsigned or not, defaults to signed \\
+\hline
+{\em \{number=\}} & radix The radix in which the text is written (2-\/36), defaults to 10 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{!\+Long\} The corresponding \doxylink{interface_long}{Long} value 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_a44cb3d7b998b87b0e947a150084e56c4}\index{index.js@{index.js}!fromValue@{fromValue}}
+\index{fromValue@{fromValue}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{fromValue}{fromValue}}
+{\footnotesize\ttfamily \label{long_2index_8js_a44cb3d7b998b87b0e947a150084e56c4} 
+\mbox{\hyperlink{interface_long}{Long}} from\+Value = from\+Value}
+
+Converts the specified value to a \doxylink{interface_long}{Long} using the appropriate from\texorpdfstring{$\ast$}{*} function for its type. @function 
+\begin{DoxyParams}{Parameters}
+{\em \{!\+Long\texorpdfstring{$\vert$}{|}number\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}!\{low} & number, high\+: number, unsigned\+: boolean\}\} val Value \\
+\hline
+{\em \{boolean=\}} & unsigned Whether unsigned or not, defaults to signed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{!\+Long\} 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_a04ceb998bda8088ad9650eb2fdfad866}\index{index.js@{index.js}!ge@{ge}}
+\index{ge@{ge}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{ge}{ge}}
+{\footnotesize\ttfamily \label{long_2index_8js_a04ceb998bda8088ad9650eb2fdfad866} 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} ge = \mbox{\hyperlink{long_2index_8js_abf8ac33baa97e6dd57637ef16ea86ad3}{Long\+Prototype.\+greater\+Than\+Or\+Equal}}}
+
+Tests if this \doxylink{interface_long}{Long}\textquotesingle{}s value is greater than or equal the specified\textquotesingle{}s. This is an alias of {\ttfamily \doxylink{}{Long\#greater\+Than\+Or\+Equal}}. @function 
+\begin{DoxyParams}{Parameters}
+{\em \{!\+Long\texorpdfstring{$\vert$}{|}number\texorpdfstring{$\vert$}{|}string\}} & other Other value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{boolean\} 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_ac8dcd44e64627459800a4a893dbedcd2}\index{index.js@{index.js}!getHighBits@{getHighBits}}
+\index{getHighBits@{getHighBits}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{getHighBits}{getHighBits}}
+{\footnotesize\ttfamily \label{long_2index_8js_ac8dcd44e64627459800a4a893dbedcd2} 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} get\+High\+Bits}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{long_2index_8js_ac8dcd44e64627459800a4a893dbedcd2}{getHighBits}}()\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ this.high;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Gets the high 32 bits as a signed integer. @this \{!\+Long\} \begin{DoxyReturn}{Returns}
+\{number\} Signed high bits 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_a706ce44f0ab1ccd505bcfaac41302ad8}\index{index.js@{index.js}!getHighBitsUnsigned@{getHighBitsUnsigned}}
+\index{getHighBitsUnsigned@{getHighBitsUnsigned}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{getHighBitsUnsigned}{getHighBitsUnsigned}}
+{\footnotesize\ttfamily \label{long_2index_8js_a706ce44f0ab1ccd505bcfaac41302ad8} 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} get\+High\+Bits\+Unsigned}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{long_2index_8js_a706ce44f0ab1ccd505bcfaac41302ad8}{getHighBitsUnsigned}}()\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ this.high\ >>>\ 0;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Gets the high 32 bits as an unsigned integer. @this \{!\+Long\} \begin{DoxyReturn}{Returns}
+\{number\} Unsigned high bits 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_af8ba78bb4d67caf264af8bb452ad223f}\index{index.js@{index.js}!getLowBits@{getLowBits}}
+\index{getLowBits@{getLowBits}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{getLowBits}{getLowBits}}
+{\footnotesize\ttfamily \label{long_2index_8js_af8ba78bb4d67caf264af8bb452ad223f} 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} get\+Low\+Bits}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{long_2index_8js_af8ba78bb4d67caf264af8bb452ad223f}{getLowBits}}()\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ this.low;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Gets the low 32 bits as a signed integer. @this \{!\+Long\} \begin{DoxyReturn}{Returns}
+\{number\} Signed low bits 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_a38a0302c8025d633f9a6bfeb93f2a665}\index{index.js@{index.js}!getLowBitsUnsigned@{getLowBitsUnsigned}}
+\index{getLowBitsUnsigned@{getLowBitsUnsigned}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{getLowBitsUnsigned}{getLowBitsUnsigned}}
+{\footnotesize\ttfamily \label{long_2index_8js_a38a0302c8025d633f9a6bfeb93f2a665} 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} get\+Low\+Bits\+Unsigned}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{long_2index_8js_a38a0302c8025d633f9a6bfeb93f2a665}{getLowBitsUnsigned}}()\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ this.low\ >>>\ 0;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Gets the low 32 bits as an unsigned integer. @this \{!\+Long\} \begin{DoxyReturn}{Returns}
+\{number\} Unsigned low bits 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_abdf736b071498c50e05fb479675faf3c}\index{index.js@{index.js}!getNumBitsAbs@{getNumBitsAbs}}
+\index{getNumBitsAbs@{getNumBitsAbs}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{getNumBitsAbs}{getNumBitsAbs}}
+{\footnotesize\ttfamily \label{long_2index_8js_abdf736b071498c50e05fb479675faf3c} 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} get\+Num\+Bits\+Abs}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{long_2index_8js_abdf736b071498c50e05fb479675faf3c}{getNumBitsAbs}}()\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (this.\mbox{\hyperlink{long_2index_8js_a9a95247cc0683fe372cc62edb37fd3cd}{isNegative}}())\ }
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{__assign_merge_value_8js_a720306033bd1fff435cf4313a4bb1fa3}{eq}}(\mbox{\hyperlink{long_2index_8js_a658bfd7bf2057953eb283172659d2268}{MIN\_VALUE}})\ ?\ 64\ :\ this.\mbox{\hyperlink{long_2index_8js_ab49f736b39a52f051bde165dd1a14165}{neg}}().getNumBitsAbs();}
+\DoxyCodeLine{\ \ var\ val\ =\ this.high\ !=\ 0\ ?\ this.high\ :\ this.low;}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{for}\ (var\ bit\ =\ 31;\ bit\ >\ 0;\ bit-\/-\/)}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ ((val\ \&\ (1\ <<\ bit))\ !=\ 0)}
+\DoxyCodeLine{\ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ this.high\ !=\ 0\ ?\ bit\ +\ 33\ :\ bit\ +\ 1;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Gets the number of bits needed to represent the absolute value of this \doxylink{interface_long}{Long}. @this \{!\+Long\} \begin{DoxyReturn}{Returns}
+\{number\} 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_a0ad960682c7bab5e8ff96463ccdfba6a}\index{index.js@{index.js}!greaterThan@{greaterThan}}
+\index{greaterThan@{greaterThan}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{greaterThan}{greaterThan}}
+{\footnotesize\ttfamily \label{long_2index_8js_a0ad960682c7bab5e8ff96463ccdfba6a} 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} greater\+Than}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{long_2index_8js_a0ad960682c7bab5e8ff96463ccdfba6a}{greaterThan}}(other)\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{long_2index_8js_a33e3b5296f866a66acae6bd74f2b2316}{comp}}(\ other)\ >\ 0;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Tests if this \doxylink{interface_long}{Long}\textquotesingle{}s value is greater than the specified\textquotesingle{}s. @this \{!\+Long\} 
+\begin{DoxyParams}{Parameters}
+{\em \{!\+Long\texorpdfstring{$\vert$}{|}number\texorpdfstring{$\vert$}{|}string\}} & other Other value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{boolean\} 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_abf8ac33baa97e6dd57637ef16ea86ad3}\index{index.js@{index.js}!greaterThanOrEqual@{greaterThanOrEqual}}
+\index{greaterThanOrEqual@{greaterThanOrEqual}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{greaterThanOrEqual}{greaterThanOrEqual}}
+{\footnotesize\ttfamily \label{long_2index_8js_abf8ac33baa97e6dd57637ef16ea86ad3} 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} greater\+Than\+Or\+Equal}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{long_2index_8js_abf8ac33baa97e6dd57637ef16ea86ad3}{greaterThanOrEqual}}(other)\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{long_2index_8js_a33e3b5296f866a66acae6bd74f2b2316}{comp}}(\ other)\ >=\ 0;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Tests if this \doxylink{interface_long}{Long}\textquotesingle{}s value is greater than or equal the specified\textquotesingle{}s. @this \{!\+Long\} 
+\begin{DoxyParams}{Parameters}
+{\em \{!\+Long\texorpdfstring{$\vert$}{|}number\texorpdfstring{$\vert$}{|}string\}} & other Other value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{boolean\} 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_adf255e13f6654220155e6602a6d5481b}\index{index.js@{index.js}!gt@{gt}}
+\index{gt@{gt}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{gt}{gt}}
+{\footnotesize\ttfamily \label{long_2index_8js_adf255e13f6654220155e6602a6d5481b} 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} gt = \mbox{\hyperlink{long_2index_8js_a0ad960682c7bab5e8ff96463ccdfba6a}{Long\+Prototype.\+greater\+Than}}}
+
+Tests if this \doxylink{interface_long}{Long}\textquotesingle{}s value is greater than the specified\textquotesingle{}s. This is an alias of {\ttfamily \doxylink{}{Long\#greater\+Than}}. @function 
+\begin{DoxyParams}{Parameters}
+{\em \{!\+Long\texorpdfstring{$\vert$}{|}number\texorpdfstring{$\vert$}{|}string\}} & other Other value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{boolean\} 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_a3d8450ebe6b80d3a072f60e46d2e3ad9}\index{index.js@{index.js}!gte@{gte}}
+\index{gte@{gte}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{gte}{gte}}
+{\footnotesize\ttfamily \label{long_2index_8js_a3d8450ebe6b80d3a072f60e46d2e3ad9} 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} gte = \mbox{\hyperlink{long_2index_8js_abf8ac33baa97e6dd57637ef16ea86ad3}{Long\+Prototype.\+greater\+Than\+Or\+Equal}}}
+
+Tests if this \doxylink{interface_long}{Long}\textquotesingle{}s value is greater than or equal the specified\textquotesingle{}s. This is an alias of {\ttfamily \doxylink{}{Long\#greater\+Than\+Or\+Equal}}. @function 
+\begin{DoxyParams}{Parameters}
+{\em \{!\+Long\texorpdfstring{$\vert$}{|}number\texorpdfstring{$\vert$}{|}string\}} & other Other value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{boolean\} 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_aa270556316328316957b05df065142d5}\index{index.js@{index.js}!INT\_CACHE@{INT\_CACHE}}
+\index{INT\_CACHE@{INT\_CACHE}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{INT\_CACHE}{INT\_CACHE}}
+{\footnotesize\ttfamily \label{long_2index_8js_aa270556316328316957b05df065142d5} 
+var INT\+\_\+\+CACHE = \{\}}
+
+\doxylink{class_a}{A} cache of the \doxylink{interface_long}{Long} representations of small integer values. @type \{!\+Object\} @inner \Hypertarget{long_2index_8js_a6526c9cc2a231737f268b033cc191a98}\index{index.js@{index.js}!isEven@{isEven}}
+\index{isEven@{isEven}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{isEven}{isEven}}
+{\footnotesize\ttfamily \label{long_2index_8js_a6526c9cc2a231737f268b033cc191a98} 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} is\+Even}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{long_2index_8js_a6526c9cc2a231737f268b033cc191a98}{isEven}}()\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ (this.low\ \&\ 1)\ ===\ 0;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Tests if this \doxylink{interface_long}{Long}\textquotesingle{}s value is even. @this \{!\+Long\} \begin{DoxyReturn}{Returns}
+\{boolean\} 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_a987be1914fa8b126ef6f42ee6ca22f6c}\index{index.js@{index.js}!isLong@{isLong}}
+\index{isLong@{isLong}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{isLong}{isLong}}
+{\footnotesize\ttfamily \label{long_2index_8js_a987be1914fa8b126ef6f42ee6ca22f6c} 
+\mbox{\hyperlink{interface_long}{Long}} is\+Long = is\+Long}
+
+Tests if the specified object is a \doxylink{interface_long}{Long}. @function 
+\begin{DoxyParams}{Parameters}
+{\em \{\texorpdfstring{$\ast$}{*}\}} & obj Object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{boolean\} 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_a9a95247cc0683fe372cc62edb37fd3cd}\index{index.js@{index.js}!isNegative@{isNegative}}
+\index{isNegative@{isNegative}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{isNegative}{isNegative}}
+{\footnotesize\ttfamily \label{long_2index_8js_a9a95247cc0683fe372cc62edb37fd3cd} 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} is\+Negative}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{long_2index_8js_a9a95247cc0683fe372cc62edb37fd3cd}{isNegative}}()\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ !this.\textcolor{keywordtype}{unsigned}\ \&\&\ this.high\ <\ 0;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Tests if this \doxylink{interface_long}{Long}\textquotesingle{}s value is negative. @this \{!\+Long\} \begin{DoxyReturn}{Returns}
+\{boolean\} 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_a5a6d8820684763477ec7ad5efdc44b3b}\index{index.js@{index.js}!isOdd@{isOdd}}
+\index{isOdd@{isOdd}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{isOdd}{isOdd}}
+{\footnotesize\ttfamily \label{long_2index_8js_a5a6d8820684763477ec7ad5efdc44b3b} 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} is\+Odd}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{long_2index_8js_a5a6d8820684763477ec7ad5efdc44b3b}{isOdd}}()\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ (this.low\ \&\ 1)\ ===\ 1;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Tests if this \doxylink{interface_long}{Long}\textquotesingle{}s value is odd. @this \{!\+Long\} \begin{DoxyReturn}{Returns}
+\{boolean\} 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_a06a2ccd6baeeffb74912283e8204f649}\index{index.js@{index.js}!isPositive@{isPositive}}
+\index{isPositive@{isPositive}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{isPositive}{isPositive}}
+{\footnotesize\ttfamily \label{long_2index_8js_a06a2ccd6baeeffb74912283e8204f649} 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} is\+Positive}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{long_2index_8js_a06a2ccd6baeeffb74912283e8204f649}{isPositive}}()\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ this.\textcolor{keywordtype}{unsigned}\ ||\ this.high\ >=\ 0;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Tests if this \doxylink{interface_long}{Long}\textquotesingle{}s value is positive or zero. @this \{!\+Long\} \begin{DoxyReturn}{Returns}
+\{boolean\} 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_a16a44bae441805a0def5a4db5243162a}\index{index.js@{index.js}!isZero@{isZero}}
+\index{isZero@{isZero}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{isZero}{isZero}}
+{\footnotesize\ttfamily \label{long_2index_8js_a16a44bae441805a0def5a4db5243162a} 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} is\+Zero}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{long_2index_8js_a16a44bae441805a0def5a4db5243162a}{isZero}}()\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ this.high\ ===\ 0\ \&\&\ this.low\ ===\ 0;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Tests if this \doxylink{interface_long}{Long}\textquotesingle{}s value equals zero. @this \{!\+Long\} \begin{DoxyReturn}{Returns}
+\{boolean\} 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_aa23f614cfec8acc3dcca51a416df5d9a}\index{index.js@{index.js}!le@{le}}
+\index{le@{le}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{le}{le}}
+{\footnotesize\ttfamily \label{long_2index_8js_aa23f614cfec8acc3dcca51a416df5d9a} 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} le = \mbox{\hyperlink{long_2index_8js_a123d88a67ea6e1c4c01a6f26ef405abe}{Long\+Prototype.\+less\+Than\+Or\+Equal}}}
+
+Tests if this \doxylink{interface_long}{Long}\textquotesingle{}s value is less than or equal the specified\textquotesingle{}s. This is an alias of {\ttfamily \doxylink{}{Long\#less\+Than\+Or\+Equal}}. @function 
+\begin{DoxyParams}{Parameters}
+{\em \{!\+Long\texorpdfstring{$\vert$}{|}number\texorpdfstring{$\vert$}{|}string\}} & other Other value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{boolean\} 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_a3b785172bc40376da41a2cf296a0a965}\index{index.js@{index.js}!lessThan@{lessThan}}
+\index{lessThan@{lessThan}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{lessThan}{lessThan}}
+{\footnotesize\ttfamily \label{long_2index_8js_a3b785172bc40376da41a2cf296a0a965} 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} less\+Than}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{long_2index_8js_a3b785172bc40376da41a2cf296a0a965}{lessThan}}(other)\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{long_2index_8js_a33e3b5296f866a66acae6bd74f2b2316}{comp}}(\ other)\ <\ 0;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Tests if this \doxylink{interface_long}{Long}\textquotesingle{}s value is less than the specified\textquotesingle{}s. @this \{!\+Long\} 
+\begin{DoxyParams}{Parameters}
+{\em \{!\+Long\texorpdfstring{$\vert$}{|}number\texorpdfstring{$\vert$}{|}string\}} & other Other value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{boolean\} 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_a123d88a67ea6e1c4c01a6f26ef405abe}\index{index.js@{index.js}!lessThanOrEqual@{lessThanOrEqual}}
+\index{lessThanOrEqual@{lessThanOrEqual}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{lessThanOrEqual}{lessThanOrEqual}}
+{\footnotesize\ttfamily \label{long_2index_8js_a123d88a67ea6e1c4c01a6f26ef405abe} 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} less\+Than\+Or\+Equal}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{long_2index_8js_a123d88a67ea6e1c4c01a6f26ef405abe}{lessThanOrEqual}}(other)\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{long_2index_8js_a33e3b5296f866a66acae6bd74f2b2316}{comp}}(\ other)\ <=\ 0;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Tests if this \doxylink{interface_long}{Long}\textquotesingle{}s value is less than or equal the specified\textquotesingle{}s. @this \{!\+Long\} 
+\begin{DoxyParams}{Parameters}
+{\em \{!\+Long\texorpdfstring{$\vert$}{|}number\texorpdfstring{$\vert$}{|}string\}} & other Other value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{boolean\} 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_a1a0bab9fca95fe4a58fb392e24393fa7}\index{index.js@{index.js}!Long@{Long}}
+\index{Long@{Long}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{Long}{Long}}
+{\footnotesize\ttfamily \label{long_2index_8js_a1a0bab9fca95fe4a58fb392e24393fa7} 
+export \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2index_8js_a48acd3189d40b017f47c93b673b8b8f6}{default}} Long}
+
+\Hypertarget{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}\index{index.js@{index.js}!LongPrototype@{LongPrototype}}
+\index{LongPrototype@{LongPrototype}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{LongPrototype}{LongPrototype}}
+{\footnotesize\ttfamily \label{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020} 
+var Long\+Prototype = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{Long.\+prototype}}}
+
+@alias Long.\+prototype @inner \Hypertarget{long_2index_8js_ad6c71863bd83b0ca049f55d3bb3f0105}\index{index.js@{index.js}!lt@{lt}}
+\index{lt@{lt}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{lt}{lt}}
+{\footnotesize\ttfamily \label{long_2index_8js_ad6c71863bd83b0ca049f55d3bb3f0105} 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} lt = \mbox{\hyperlink{long_2index_8js_a3b785172bc40376da41a2cf296a0a965}{Long\+Prototype.\+less\+Than}}}
+
+Tests if this \doxylink{interface_long}{Long}\textquotesingle{}s value is less than the specified\textquotesingle{}s. This is an alias of {\ttfamily \doxylink{}{Long\#less\+Than}}. @function 
+\begin{DoxyParams}{Parameters}
+{\em \{!\+Long\texorpdfstring{$\vert$}{|}number\texorpdfstring{$\vert$}{|}string\}} & other Other value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{boolean\} 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_a3d146cc0ed37be54c4e70dfeb1391313}\index{index.js@{index.js}!lte@{lte}}
+\index{lte@{lte}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{lte}{lte}}
+{\footnotesize\ttfamily \label{long_2index_8js_a3d146cc0ed37be54c4e70dfeb1391313} 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} lte = \mbox{\hyperlink{long_2index_8js_a123d88a67ea6e1c4c01a6f26ef405abe}{Long\+Prototype.\+less\+Than\+Or\+Equal}}}
+
+Tests if this \doxylink{interface_long}{Long}\textquotesingle{}s value is less than or equal the specified\textquotesingle{}s. This is an alias of {\ttfamily \doxylink{}{Long\#less\+Than\+Or\+Equal}}. @function 
+\begin{DoxyParams}{Parameters}
+{\em \{!\+Long\texorpdfstring{$\vert$}{|}number\texorpdfstring{$\vert$}{|}string\}} & other Other value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{boolean\} 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_a1675577b82328d6d7c73385767591d4a}\index{index.js@{index.js}!MAX\_UNSIGNED\_VALUE@{MAX\_UNSIGNED\_VALUE}}
+\index{MAX\_UNSIGNED\_VALUE@{MAX\_UNSIGNED\_VALUE}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{MAX\_UNSIGNED\_VALUE}{MAX\_UNSIGNED\_VALUE}}
+{\footnotesize\ttfamily \label{long_2index_8js_a1675577b82328d6d7c73385767591d4a} 
+\mbox{\hyperlink{interface_long}{Long}} MAX\+\_\+\+UNSIGNED\+\_\+\+VALUE = \mbox{\hyperlink{long_2index_8js_a4982e92a462ec92e04632054fbba81c7}{from\+Bits}}(0x\+FFFFFFFF \texorpdfstring{$\vert$}{|} 0, 0x\+FFFFFFFF \texorpdfstring{$\vert$}{|} 0, true)}
+
+@type \{!\+Long\} @inner
+
+Maximum unsigned value. @type \{!\+Long\} \Hypertarget{long_2index_8js_ae0a0454ee409787ef161593fe79079c2}\index{index.js@{index.js}!MAX\_VALUE@{MAX\_VALUE}}
+\index{MAX\_VALUE@{MAX\_VALUE}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{MAX\_VALUE}{MAX\_VALUE}}
+{\footnotesize\ttfamily \label{long_2index_8js_ae0a0454ee409787ef161593fe79079c2} 
+\mbox{\hyperlink{interface_long}{Long}} MAX\+\_\+\+VALUE = \mbox{\hyperlink{long_2index_8js_a4982e92a462ec92e04632054fbba81c7}{from\+Bits}}(0x\+FFFFFFFF \texorpdfstring{$\vert$}{|} 0, 0x7\+FFFFFFF \texorpdfstring{$\vert$}{|} 0, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a5df37b7f02e5cdc7d9412b7f872b8e01}{false}})}
+
+@type \{!\+Long\} @inner
+
+Maximum signed value. @type \{!\+Long\} \Hypertarget{long_2index_8js_a658bfd7bf2057953eb283172659d2268}\index{index.js@{index.js}!MIN\_VALUE@{MIN\_VALUE}}
+\index{MIN\_VALUE@{MIN\_VALUE}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{MIN\_VALUE}{MIN\_VALUE}}
+{\footnotesize\ttfamily \label{long_2index_8js_a658bfd7bf2057953eb283172659d2268} 
+\mbox{\hyperlink{interface_long}{Long}} MIN\+\_\+\+VALUE = \mbox{\hyperlink{long_2index_8js_a4982e92a462ec92e04632054fbba81c7}{from\+Bits}}(0, 0x80000000 \texorpdfstring{$\vert$}{|} 0, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a5df37b7f02e5cdc7d9412b7f872b8e01}{false}})}
+
+@type \{!\+Long\} @inner
+
+Minimum signed value. @type \{!\+Long\} \Hypertarget{long_2index_8js_afe8b4d98ba998dc78d0369b49d2aebf3}\index{index.js@{index.js}!mod@{mod}}
+\index{mod@{mod}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{mod}{mod}}
+{\footnotesize\ttfamily \label{long_2index_8js_afe8b4d98ba998dc78d0369b49d2aebf3} 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} mod = \mbox{\hyperlink{long_2index_8js_ae744e995fe717fffc43139012a2848e9}{Long\+Prototype.\+modulo}}}
+
+Returns this \doxylink{interface_long}{Long} modulo the specified. This is an alias of {\ttfamily \doxylink{}{Long\#modulo}}. @function 
+\begin{DoxyParams}{Parameters}
+{\em \{!\+Long\texorpdfstring{$\vert$}{|}number\texorpdfstring{$\vert$}{|}string\}} & divisor Divisor \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{!\+Long\} Remainder 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_ae744e995fe717fffc43139012a2848e9}\index{index.js@{index.js}!modulo@{modulo}}
+\index{modulo@{modulo}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{modulo}{modulo}}
+{\footnotesize\ttfamily \label{long_2index_8js_ae744e995fe717fffc43139012a2848e9} 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} modulo}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{long_2index_8js_ae744e995fe717fffc43139012a2848e9}{modulo}}(divisor)\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{long_2index_8js_a987be1914fa8b126ef6f42ee6ca22f6c}{isLong}}(divisor))}
+\DoxyCodeLine{\ \ \ \ divisor\ =\ \mbox{\hyperlink{long_2index_8js_a44cb3d7b998b87b0e947a150084e56c4}{fromValue}}(divisor);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{long_2index_8js_a23a3372e7fdb6d70d0ea9e37720a75bd}{wasm}})\ \{}
+\DoxyCodeLine{\ \ \ \ var\ low\ =\ (this.\textcolor{keywordtype}{unsigned}\ ?\ \mbox{\hyperlink{long_2index_8js_a23a3372e7fdb6d70d0ea9e37720a75bd}{wasm}}[\textcolor{stringliteral}{"{}rem\_u"{}}]\ :\ \mbox{\hyperlink{long_2index_8js_a23a3372e7fdb6d70d0ea9e37720a75bd}{wasm}}[\textcolor{stringliteral}{"{}rem\_s"{}}])(}
+\DoxyCodeLine{\ \ \ \ \ \ this.low,}
+\DoxyCodeLine{\ \ \ \ \ \ this.high,}
+\DoxyCodeLine{\ \ \ \ \ \ divisor.low,}
+\DoxyCodeLine{\ \ \ \ \ \ divisor.high}
+\DoxyCodeLine{\ \ \ \ );}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{long_2index_8js_a4982e92a462ec92e04632054fbba81c7}{fromBits}}(low,\ \mbox{\hyperlink{long_2index_8js_a23a3372e7fdb6d70d0ea9e37720a75bd}{wasm}}[\textcolor{stringliteral}{"{}get\_high"{}}](),\ this.\textcolor{keywordtype}{unsigned});}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{long_2index_8js_aa57d3d0484d1c8baeb1acf8a6a773b39}{sub}}(this.\mbox{\hyperlink{long_2index_8js_ad0dda96dfc771375c80cc246c67929d6}{div}}(divisor).\mbox{\hyperlink{long_2index_8js_a086fb43a5c1071fbfea460f415d8eb96}{mul}}(divisor));}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Returns this \doxylink{interface_long}{Long} modulo the specified. @this \{!\+Long\} 
+\begin{DoxyParams}{Parameters}
+{\em \{!\+Long\texorpdfstring{$\vert$}{|}number\texorpdfstring{$\vert$}{|}string\}} & divisor Divisor \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{!\+Long\} Remainder 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_a086fb43a5c1071fbfea460f415d8eb96}\index{index.js@{index.js}!mul@{mul}}
+\index{mul@{mul}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{mul}{mul}}
+{\footnotesize\ttfamily \label{long_2index_8js_a086fb43a5c1071fbfea460f415d8eb96} 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} mul = \mbox{\hyperlink{multiply_8js_ab116c6fdfad3fe9745bc3301a0a98696}{Long\+Prototype.\+multiply}}}
+
+Returns the product of this and the specified \doxylink{interface_long}{Long}. This is an alias of {\ttfamily \doxylink{}{Long\#multiply}}. @function 
+\begin{DoxyParams}{Parameters}
+{\em \{!\+Long\texorpdfstring{$\vert$}{|}number\texorpdfstring{$\vert$}{|}string\}} & multiplier Multiplier \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{!\+Long\} Product 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_a48b27e8b6ac21b916965966bbabebdbb}\index{index.js@{index.js}!multiply@{multiply}}
+\index{multiply@{multiply}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{multiply}{multiply}}
+{\footnotesize\ttfamily \label{long_2index_8js_a48b27e8b6ac21b916965966bbabebdbb} 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} multiply}
+
+Returns the product of this and the specified \doxylink{interface_long}{Long}. @this \{!\+Long\} 
+\begin{DoxyParams}{Parameters}
+{\em \{!\+Long\texorpdfstring{$\vert$}{|}number\texorpdfstring{$\vert$}{|}string\}} & multiplier Multiplier \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{!\+Long\} Product 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_a4c27baafd450238566ee82fd95e3bc1b}\index{index.js@{index.js}!ne@{ne}}
+\index{ne@{ne}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{ne}{ne}}
+{\footnotesize\ttfamily \label{long_2index_8js_a4c27baafd450238566ee82fd95e3bc1b} 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} ne = \mbox{\hyperlink{long_2index_8js_a69732c18ed1ba51a4da4173010594a74}{Long\+Prototype.\+not\+Equals}}}
+
+Tests if this \doxylink{interface_long}{Long}\textquotesingle{}s value differs from the specified\textquotesingle{}s. This is an alias of {\ttfamily \doxylink{}{Long\#not\+Equals}}. @function 
+\begin{DoxyParams}{Parameters}
+{\em \{!\+Long\texorpdfstring{$\vert$}{|}number\texorpdfstring{$\vert$}{|}string\}} & other Other value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{boolean\} 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_ab49f736b39a52f051bde165dd1a14165}\index{index.js@{index.js}!neg@{neg}}
+\index{neg@{neg}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{neg}{neg}}
+{\footnotesize\ttfamily \label{long_2index_8js_ab49f736b39a52f051bde165dd1a14165} 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} neg = \mbox{\hyperlink{lodash_2core_8js_ab36d953814a1ca7ba78f2fad36ec7cb1}{Long\+Prototype.\+negate}}}
+
+Negates this \doxylink{interface_long}{Long}\textquotesingle{}s value. This is an alias of {\ttfamily \doxylink{}{Long\#negate}}. @function \begin{DoxyReturn}{Returns}
+\{!\+Long\} Negated \doxylink{interface_long}{Long} 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_afbf71d15b1d83a1230102678c9950d7d}\index{index.js@{index.js}!NEG\_ONE@{NEG\_ONE}}
+\index{NEG\_ONE@{NEG\_ONE}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{NEG\_ONE}{NEG\_ONE}}
+{\footnotesize\ttfamily \label{long_2index_8js_afbf71d15b1d83a1230102678c9950d7d} 
+\mbox{\hyperlink{interface_long}{Long}} NEG\+\_\+\+ONE = \mbox{\hyperlink{long_2index_8js_abe372bfcd00f2889d3a04d98ffe33ab1}{from\+Int}}(-\/1)}
+
+@type \{!\+Long\} @inner
+
+Signed negative one. @type \{!\+Long\} \Hypertarget{long_2index_8js_aafb4b95213c0e8f93d3ac8ec687924eb}\index{index.js@{index.js}!negate@{negate}}
+\index{negate@{negate}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{negate}{negate}}
+{\footnotesize\ttfamily \label{long_2index_8js_aafb4b95213c0e8f93d3ac8ec687924eb} 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} negate}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{long_2index_8js_aafb4b95213c0e8f93d3ac8ec687924eb}{negate}}()\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (!this.\textcolor{keywordtype}{unsigned}\ \&\&\ this.\mbox{\hyperlink{__assign_merge_value_8js_a720306033bd1fff435cf4313a4bb1fa3}{eq}}(\mbox{\hyperlink{long_2index_8js_a658bfd7bf2057953eb283172659d2268}{MIN\_VALUE}}))}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{long_2index_8js_a658bfd7bf2057953eb283172659d2268}{MIN\_VALUE}};}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{long_2index_8js_ad7dc44f0ebdb746f4a5b0612ae9315cb}{not}}().add(\mbox{\hyperlink{long_2index_8js_a10633d23fbed3c46a0a25a34474d8510}{ONE}});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Negates this \doxylink{interface_long}{Long}\textquotesingle{}s value. @this \{!\+Long\} \begin{DoxyReturn}{Returns}
+\{!\+Long\} Negated \doxylink{interface_long}{Long} 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_ae7af9f6310dd26fdf01abdd0a8a76875}\index{index.js@{index.js}!neq@{neq}}
+\index{neq@{neq}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{neq}{neq}}
+{\footnotesize\ttfamily \label{long_2index_8js_ae7af9f6310dd26fdf01abdd0a8a76875} 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} neq = \mbox{\hyperlink{long_2index_8js_a69732c18ed1ba51a4da4173010594a74}{Long\+Prototype.\+not\+Equals}}}
+
+Tests if this \doxylink{interface_long}{Long}\textquotesingle{}s value differs from the specified\textquotesingle{}s. This is an alias of {\ttfamily \doxylink{}{Long\#not\+Equals}}. @function 
+\begin{DoxyParams}{Parameters}
+{\em \{!\+Long\texorpdfstring{$\vert$}{|}number\texorpdfstring{$\vert$}{|}string\}} & other Other value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{boolean\} 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_ad7dc44f0ebdb746f4a5b0612ae9315cb}\index{index.js@{index.js}!not@{not}}
+\index{not@{not}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{not}{not}}
+{\footnotesize\ttfamily \label{long_2index_8js_ad7dc44f0ebdb746f4a5b0612ae9315cb} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} not}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{long_2index_8js_ad7dc44f0ebdb746f4a5b0612ae9315cb}{not}}()\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{long_2index_8js_a4982e92a462ec92e04632054fbba81c7}{fromBits}}(\string~this.low,\ \string~this.high,\ this.\textcolor{keywordtype}{unsigned});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Returns the bitwise NOT of this \doxylink{interface_long}{Long}. @this \{!\+Long\} \begin{DoxyReturn}{Returns}
+\{!\+Long\} 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_a69732c18ed1ba51a4da4173010594a74}\index{index.js@{index.js}!notEquals@{notEquals}}
+\index{notEquals@{notEquals}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{notEquals}{notEquals}}
+{\footnotesize\ttfamily \label{long_2index_8js_a69732c18ed1ba51a4da4173010594a74} 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} not\+Equals}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{long_2index_8js_a69732c18ed1ba51a4da4173010594a74}{notEquals}}(other)\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ !this.\mbox{\hyperlink{__assign_merge_value_8js_a720306033bd1fff435cf4313a4bb1fa3}{eq}}(\ other);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Tests if this \doxylink{interface_long}{Long}\textquotesingle{}s value differs from the specified\textquotesingle{}s. @this \{!\+Long\} 
+\begin{DoxyParams}{Parameters}
+{\em \{!\+Long\texorpdfstring{$\vert$}{|}number\texorpdfstring{$\vert$}{|}string\}} & other Other value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{boolean\} 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_a10633d23fbed3c46a0a25a34474d8510}\index{index.js@{index.js}!ONE@{ONE}}
+\index{ONE@{ONE}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{ONE}{ONE}}
+{\footnotesize\ttfamily \label{long_2index_8js_a10633d23fbed3c46a0a25a34474d8510} 
+\mbox{\hyperlink{interface_long}{Long}} ONE = \mbox{\hyperlink{long_2index_8js_abe372bfcd00f2889d3a04d98ffe33ab1}{from\+Int}}(1)}
+
+@type \{!\+Long\} @inner
+
+Signed one. @type \{!\+Long\} \Hypertarget{long_2index_8js_a88083640992a53a144223e2bd602d47d}\index{index.js@{index.js}!or@{or}}
+\index{or@{or}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{or}{or}}
+{\footnotesize\ttfamily \label{long_2index_8js_a88083640992a53a144223e2bd602d47d} 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} or}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{long_2index_8js_a88083640992a53a144223e2bd602d47d}{or}}(other)\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{long_2index_8js_a987be1914fa8b126ef6f42ee6ca22f6c}{isLong}}(other))}
+\DoxyCodeLine{\ \ \ \ other\ =\ \mbox{\hyperlink{long_2index_8js_a44cb3d7b998b87b0e947a150084e56c4}{fromValue}}(other);}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{long_2index_8js_a4982e92a462ec92e04632054fbba81c7}{fromBits}}(this.low\ |\ other.low,\ \textcolor{keyword}{this}.high\ |\ other.high,\ \textcolor{keyword}{this}.unsigned);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Returns the bitwise OR of this \doxylink{interface_long}{Long} and the specified. @this \{!\+Long\} 
+\begin{DoxyParams}{Parameters}
+{\em \{!\+Long\texorpdfstring{$\vert$}{|}number\texorpdfstring{$\vert$}{|}string\}} & other Other \doxylink{interface_long}{Long} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{!\+Long\} 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_adc919b34f39f7fd40d8904e7ecdc6400}\index{index.js@{index.js}!pow\_dbl@{pow\_dbl}}
+\index{pow\_dbl@{pow\_dbl}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{pow\_dbl}{pow\_dbl}}
+{\footnotesize\ttfamily \label{long_2index_8js_adc919b34f39f7fd40d8904e7ecdc6400} 
+var pow\+\_\+dbl = \mbox{\hyperlink{prime_8worker_8min_8js_a6d15710102d801a0d899ac88542197f9}{Math.\+pow}}}
+
+@function 
+\begin{DoxyParams}{Parameters}
+{\em \{number\}} & base \\
+\hline
+{\em \{number\}} & exponent \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{number\} @inner 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_afc3bf5c0a581b82e373c599b5c43e15b}\index{index.js@{index.js}!rem@{rem}}
+\index{rem@{rem}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{rem}{rem}}
+{\footnotesize\ttfamily \label{long_2index_8js_afc3bf5c0a581b82e373c599b5c43e15b} 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} rem = \mbox{\hyperlink{long_2index_8js_ae744e995fe717fffc43139012a2848e9}{Long\+Prototype.\+modulo}}}
+
+Returns this \doxylink{interface_long}{Long} modulo the specified. This is an alias of {\ttfamily \doxylink{}{Long\#modulo}}. @function 
+\begin{DoxyParams}{Parameters}
+{\em \{!\+Long\texorpdfstring{$\vert$}{|}number\texorpdfstring{$\vert$}{|}string\}} & divisor Divisor \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{!\+Long\} Remainder 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_a100eed368f6b8025913813f9dbf314f9}\index{index.js@{index.js}!rotateLeft@{rotateLeft}}
+\index{rotateLeft@{rotateLeft}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{rotateLeft}{rotateLeft}}
+{\footnotesize\ttfamily \label{long_2index_8js_a100eed368f6b8025913813f9dbf314f9} 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} rotate\+Left}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{long_2index_8js_a100eed368f6b8025913813f9dbf314f9}{rotateLeft}}(numBits)\ \{}
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}};}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{long_2index_8js_a987be1914fa8b126ef6f42ee6ca22f6c}{isLong}}(numBits))\ numBits\ =\ numBits.toInt();}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ ((numBits\ \&=\ 63)\ ===\ 0)\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{this};}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (numBits\ ===\ 32)\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{long_2index_8js_a4982e92a462ec92e04632054fbba81c7}{fromBits}}(this.high,\ this.low,\ this.\textcolor{keywordtype}{unsigned});}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (numBits\ <\ 32)\ \{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}\ =\ (32\ -\/\ numBits);}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{long_2index_8js_a4982e92a462ec92e04632054fbba81c7}{fromBits}}(((this.low\ <<\ numBits)\ |\ (this.high\ >>>\ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}})),\ ((this.high\ <<\ numBits)\ |\ (this.low\ >>>\ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}})),\ this.\textcolor{keywordtype}{unsigned});}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\ \ numBits\ -\/=\ 32;}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}\ =\ (32\ -\/\ numBits);}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{long_2index_8js_a4982e92a462ec92e04632054fbba81c7}{fromBits}}(((this.high\ <<\ numBits)\ |\ (this.low\ >>>\ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}})),\ ((this.low\ <<\ numBits)\ |\ (this.high\ >>>\ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}})),\ this.\textcolor{keywordtype}{unsigned});}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{LongPrototype}}.rotl\ =\ \mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{LongPrototype}}.rotateLeft}
+
+\end{DoxyCode}
+Returns this \doxylink{interface_long}{Long} with bits rotated to the left by the given amount. @this \{!\+Long\} 
+\begin{DoxyParams}{Parameters}
+{\em \{number\texorpdfstring{$\vert$}{|}!\+Long\}} & num\+Bits Number of bits \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{!\+Long\} Rotated \doxylink{interface_long}{Long} 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_a9c531fa0a10808753826697ca8dfb48b}\index{index.js@{index.js}!rotateRight@{rotateRight}}
+\index{rotateRight@{rotateRight}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{rotateRight}{rotateRight}}
+{\footnotesize\ttfamily \label{long_2index_8js_a9c531fa0a10808753826697ca8dfb48b} 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} rotate\+Right}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{long_2index_8js_a9c531fa0a10808753826697ca8dfb48b}{rotateRight}}(numBits)\ \{}
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}};}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{long_2index_8js_a987be1914fa8b126ef6f42ee6ca22f6c}{isLong}}(numBits))\ numBits\ =\ numBits.toInt();}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ ((numBits\ \&=\ 63)\ ===\ 0)\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{this};}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (numBits\ ===\ 32)\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{long_2index_8js_a4982e92a462ec92e04632054fbba81c7}{fromBits}}(this.high,\ this.low,\ this.\textcolor{keywordtype}{unsigned});}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (numBits\ <\ 32)\ \{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}\ =\ (32\ -\/\ numBits);}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{long_2index_8js_a4982e92a462ec92e04632054fbba81c7}{fromBits}}(((this.high\ <<\ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}})\ |\ (this.low\ >>>\ numBits)),\ ((this.low\ <<\ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}})\ |\ (this.high\ >>>\ numBits)),\ this.\textcolor{keywordtype}{unsigned});}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\ \ numBits\ -\/=\ 32;}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}\ =\ (32\ -\/\ numBits);}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{long_2index_8js_a4982e92a462ec92e04632054fbba81c7}{fromBits}}(((this.low\ <<\ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}})\ |\ (this.high\ >>>\ numBits)),\ ((this.high\ <<\ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}})\ |\ (this.low\ >>>\ numBits)),\ this.\textcolor{keywordtype}{unsigned});}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{LongPrototype}}.rotr\ =\ \mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{LongPrototype}}.rotateRight}
+
+\end{DoxyCode}
+Returns this \doxylink{interface_long}{Long} with bits rotated to the right by the given amount. @this \{!\+Long\} 
+\begin{DoxyParams}{Parameters}
+{\em \{number\texorpdfstring{$\vert$}{|}!\+Long\}} & num\+Bits Number of bits \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{!\+Long\} Rotated \doxylink{interface_long}{Long} 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_aaad3c8b0d6696565664e45cbb26fe85b}\index{index.js@{index.js}!shiftLeft@{shiftLeft}}
+\index{shiftLeft@{shiftLeft}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{shiftLeft}{shiftLeft}}
+{\footnotesize\ttfamily \label{long_2index_8js_aaad3c8b0d6696565664e45cbb26fe85b} 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} shift\+Left}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{long_2index_8js_aaad3c8b0d6696565664e45cbb26fe85b}{shiftLeft}}(numBits)\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{long_2index_8js_a987be1914fa8b126ef6f42ee6ca22f6c}{isLong}}(numBits))}
+\DoxyCodeLine{\ \ \ \ numBits\ =\ numBits.toInt();}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ ((numBits\ \&=\ 63)\ ===\ 0)}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{this};}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (numBits\ <\ 32)}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{long_2index_8js_a4982e92a462ec92e04632054fbba81c7}{fromBits}}(this.low\ <<\ numBits,\ (this.high\ <<\ numBits)\ |\ (this.low\ >>>\ (32\ -\/\ numBits)),\ this.\textcolor{keywordtype}{unsigned});}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{long_2index_8js_a4982e92a462ec92e04632054fbba81c7}{fromBits}}(0,\ this.low\ <<\ (numBits\ -\/\ 32),\ this.\textcolor{keywordtype}{unsigned});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Returns this \doxylink{interface_long}{Long} with bits shifted to the left by the given amount. @this \{!\+Long\} 
+\begin{DoxyParams}{Parameters}
+{\em \{number\texorpdfstring{$\vert$}{|}!\+Long\}} & num\+Bits Number of bits \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{!\+Long\} Shifted \doxylink{interface_long}{Long} 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_ab811dcdc8a6b90bf6cd035916fe6d3f3}\index{index.js@{index.js}!shiftRight@{shiftRight}}
+\index{shiftRight@{shiftRight}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{shiftRight}{shiftRight}}
+{\footnotesize\ttfamily \label{long_2index_8js_ab811dcdc8a6b90bf6cd035916fe6d3f3} 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} shift\+Right}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{long_2index_8js_ab811dcdc8a6b90bf6cd035916fe6d3f3}{shiftRight}}(numBits)\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{long_2index_8js_a987be1914fa8b126ef6f42ee6ca22f6c}{isLong}}(numBits))}
+\DoxyCodeLine{\ \ \ \ numBits\ =\ numBits.toInt();}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ ((numBits\ \&=\ 63)\ ===\ 0)}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{this};}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (numBits\ <\ 32)}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{long_2index_8js_a4982e92a462ec92e04632054fbba81c7}{fromBits}}((this.low\ >>>\ numBits)\ |\ (this.high\ <<\ (32\ -\/\ numBits)),\ this.high\ >>\ numBits,\ this.\textcolor{keywordtype}{unsigned});}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{long_2index_8js_a4982e92a462ec92e04632054fbba81c7}{fromBits}}(this.high\ >>\ (numBits\ -\/\ 32),\ this.high\ >=\ 0\ ?\ 0\ :\ -\/1,\ this.\textcolor{keywordtype}{unsigned});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Returns this \doxylink{interface_long}{Long} with bits arithmetically shifted to the right by the given amount. @this \{!\+Long\} 
+\begin{DoxyParams}{Parameters}
+{\em \{number\texorpdfstring{$\vert$}{|}!\+Long\}} & num\+Bits Number of bits \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{!\+Long\} Shifted \doxylink{interface_long}{Long} 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_a3bdb1f7632bea83afbae01b50ae3f3ee}\index{index.js@{index.js}!shiftRightUnsigned@{shiftRightUnsigned}}
+\index{shiftRightUnsigned@{shiftRightUnsigned}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{shiftRightUnsigned}{shiftRightUnsigned}}
+{\footnotesize\ttfamily \label{long_2index_8js_a3bdb1f7632bea83afbae01b50ae3f3ee} 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} shift\+Right\+Unsigned}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{long_2index_8js_a3bdb1f7632bea83afbae01b50ae3f3ee}{shiftRightUnsigned}}(numBits)\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{long_2index_8js_a987be1914fa8b126ef6f42ee6ca22f6c}{isLong}}(numBits))\ numBits\ =\ numBits.toInt();}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ ((numBits\ \&=\ 63)\ ===\ 0)\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{this};}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (numBits\ <\ 32)\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{long_2index_8js_a4982e92a462ec92e04632054fbba81c7}{fromBits}}((this.low\ >>>\ numBits)\ |\ (this.high\ <<\ (32\ -\/\ numBits)),\ this.high\ >>>\ numBits,\ this.\textcolor{keywordtype}{unsigned});}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (numBits\ ===\ 32)\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{long_2index_8js_a4982e92a462ec92e04632054fbba81c7}{fromBits}}(this.high,\ 0,\ this.\textcolor{keywordtype}{unsigned});}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{long_2index_8js_a4982e92a462ec92e04632054fbba81c7}{fromBits}}(this.high\ >>>\ (numBits\ -\/\ 32),\ 0,\ this.\textcolor{keywordtype}{unsigned});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Returns this \doxylink{interface_long}{Long} with bits logically shifted to the right by the given amount. @this \{!\+Long\} 
+\begin{DoxyParams}{Parameters}
+{\em \{number\texorpdfstring{$\vert$}{|}!\+Long\}} & num\+Bits Number of bits \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{!\+Long\} Shifted \doxylink{interface_long}{Long} 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_adff4d5229510bc56f1b1961dd20c8a2f}\index{index.js@{index.js}!shl@{shl}}
+\index{shl@{shl}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{shl}{shl}}
+{\footnotesize\ttfamily \label{long_2index_8js_adff4d5229510bc56f1b1961dd20c8a2f} 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} shl = \mbox{\hyperlink{long_2index_8js_aaad3c8b0d6696565664e45cbb26fe85b}{Long\+Prototype.\+shift\+Left}}}
+
+Returns this \doxylink{interface_long}{Long} with bits shifted to the left by the given amount. This is an alias of {\ttfamily \doxylink{}{Long\#shift\+Left}}. @function 
+\begin{DoxyParams}{Parameters}
+{\em \{number\texorpdfstring{$\vert$}{|}!\+Long\}} & num\+Bits Number of bits \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{!\+Long\} Shifted \doxylink{interface_long}{Long} 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_a06f6cd01f7ce128a682b22f0295389cd}\index{index.js@{index.js}!shr@{shr}}
+\index{shr@{shr}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{shr}{shr}}
+{\footnotesize\ttfamily \label{long_2index_8js_a06f6cd01f7ce128a682b22f0295389cd} 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} shr = \mbox{\hyperlink{long_2index_8js_ab811dcdc8a6b90bf6cd035916fe6d3f3}{Long\+Prototype.\+shift\+Right}}}
+
+Returns this \doxylink{interface_long}{Long} with bits arithmetically shifted to the right by the given amount. This is an alias of {\ttfamily \doxylink{}{Long\#shift\+Right}}. @function 
+\begin{DoxyParams}{Parameters}
+{\em \{number\texorpdfstring{$\vert$}{|}!\+Long\}} & num\+Bits Number of bits \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{!\+Long\} Shifted \doxylink{interface_long}{Long} 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_a77e8ed07b198c5cf6d107260fa5125bc}\index{index.js@{index.js}!shr\_u@{shr\_u}}
+\index{shr\_u@{shr\_u}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{shr\_u}{shr\_u}}
+{\footnotesize\ttfamily \label{long_2index_8js_a77e8ed07b198c5cf6d107260fa5125bc} 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} shr\+\_\+u = \mbox{\hyperlink{long_2index_8js_a3bdb1f7632bea83afbae01b50ae3f3ee}{Long\+Prototype.\+shift\+Right\+Unsigned}}}
+
+Returns this \doxylink{interface_long}{Long} with bits logically shifted to the right by the given amount. This is an alias of {\ttfamily \doxylink{}{Long\#shift\+Right\+Unsigned}}. @function 
+\begin{DoxyParams}{Parameters}
+{\em \{number\texorpdfstring{$\vert$}{|}!\+Long\}} & num\+Bits Number of bits \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{!\+Long\} Shifted \doxylink{interface_long}{Long} 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_a26d4ad3a147fbecfee2d72ce92729829}\index{index.js@{index.js}!shru@{shru}}
+\index{shru@{shru}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{shru}{shru}}
+{\footnotesize\ttfamily \label{long_2index_8js_a26d4ad3a147fbecfee2d72ce92729829} 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} shru = \mbox{\hyperlink{long_2index_8js_a3bdb1f7632bea83afbae01b50ae3f3ee}{Long\+Prototype.\+shift\+Right\+Unsigned}}}
+
+Returns this \doxylink{interface_long}{Long} with bits logically shifted to the right by the given amount. This is an alias of {\ttfamily \doxylink{}{Long\#shift\+Right\+Unsigned}}. @function 
+\begin{DoxyParams}{Parameters}
+{\em \{number\texorpdfstring{$\vert$}{|}!\+Long\}} & num\+Bits Number of bits \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{!\+Long\} Shifted \doxylink{interface_long}{Long} 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_aa57d3d0484d1c8baeb1acf8a6a773b39}\index{index.js@{index.js}!sub@{sub}}
+\index{sub@{sub}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{sub}{sub}}
+{\footnotesize\ttfamily \label{long_2index_8js_aa57d3d0484d1c8baeb1acf8a6a773b39} 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} sub = \mbox{\hyperlink{subtract_8js_afe2f537cd9e72982975aaf3e0a4900f2}{Long\+Prototype.\+subtract}}}
+
+Returns the difference of this and the specified \doxylink{interface_long}{Long}. This is an alias of {\ttfamily \doxylink{}{Long\#subtract}}. @function 
+\begin{DoxyParams}{Parameters}
+{\em \{!\+Long\texorpdfstring{$\vert$}{|}number\texorpdfstring{$\vert$}{|}string\}} & subtrahend Subtrahend \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{!\+Long\} Difference 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_a4c8fc2025a3beeff5a877e608ac15155}\index{index.js@{index.js}!subtract@{subtract}}
+\index{subtract@{subtract}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{subtract}{subtract}}
+{\footnotesize\ttfamily \label{long_2index_8js_a4c8fc2025a3beeff5a877e608ac15155} 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} subtract}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{long_2index_8js_a4c8fc2025a3beeff5a877e608ac15155}{subtract}}(subtrahend)\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{long_2index_8js_a987be1914fa8b126ef6f42ee6ca22f6c}{isLong}}(subtrahend))}
+\DoxyCodeLine{\ \ \ \ subtrahend\ =\ \mbox{\hyperlink{long_2index_8js_a44cb3d7b998b87b0e947a150084e56c4}{fromValue}}(subtrahend);}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{_0dprotobufjs_2codegen_2tests_2index_8js_a4e768d30759ccd1fa31604f664ac1c6e}{add}}(subtrahend.neg());}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Returns the difference of this and the specified \doxylink{interface_long}{Long}. @this \{!\+Long\} 
+\begin{DoxyParams}{Parameters}
+{\em \{!\+Long\texorpdfstring{$\vert$}{|}number\texorpdfstring{$\vert$}{|}string\}} & subtrahend Subtrahend \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{!\+Long\} Difference 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_ad42de39e174086451dd936c0252a6c00}\index{index.js@{index.js}!toBytes@{toBytes}}
+\index{toBytes@{toBytes}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{toBytes}{toBytes}}
+{\footnotesize\ttfamily \label{long_2index_8js_ad42de39e174086451dd936c0252a6c00} 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} to\+Bytes}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{long_2index_8js_ad42de39e174086451dd936c0252a6c00}{toBytes}}(\mbox{\hyperlink{long_2index_8js_aa23f614cfec8acc3dcca51a416df5d9a}{le}})\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{long_2index_8js_aa23f614cfec8acc3dcca51a416df5d9a}{le}}\ ?\ this.\mbox{\hyperlink{long_2index_8js_a35d437c896d464906b3b3419674a35de}{toBytesLE}}()\ :\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a05c09a5e9d53fa7adf0a7936038c2fa3}{this}}.\mbox{\hyperlink{long_2index_8js_a5649943f8615c57ed6dad52e64095046}{toBytesBE}}();}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Converts this \doxylink{interface_long}{Long} to its byte representation. 
+\begin{DoxyParams}{Parameters}
+{\em \{boolean=\}} & le Whether little or big endian, defaults to big endian @this \{!\+Long\} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{!\+Array.$<$number$>$\} Byte representation 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_a5649943f8615c57ed6dad52e64095046}\index{index.js@{index.js}!toBytesBE@{toBytesBE}}
+\index{toBytesBE@{toBytesBE}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{toBytesBE}{toBytesBE}}
+{\footnotesize\ttfamily \label{long_2index_8js_a5649943f8615c57ed6dad52e64095046} 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} to\+Bytes\+BE}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{long_2index_8js_a5649943f8615c57ed6dad52e64095046}{toBytesBE}}()\ \{}
+\DoxyCodeLine{\ \ var\ hi\ =\ this.high,}
+\DoxyCodeLine{\ \ \ \ lo\ =\ this.low;}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ [}
+\DoxyCodeLine{\ \ \ \ hi\ >>>\ 24,}
+\DoxyCodeLine{\ \ \ \ hi\ >>>\ 16\ \&\ 0xff,}
+\DoxyCodeLine{\ \ \ \ hi\ >>>\ 8\ \&\ 0xff,}
+\DoxyCodeLine{\ \ \ \ hi\ \&\ 0xff,}
+\DoxyCodeLine{\ \ \ \ lo\ >>>\ 24,}
+\DoxyCodeLine{\ \ \ \ lo\ >>>\ 16\ \&\ 0xff,}
+\DoxyCodeLine{\ \ \ \ lo\ >>>\ 8\ \&\ 0xff,}
+\DoxyCodeLine{\ \ \ \ lo\ \&\ 0xff}
+\DoxyCodeLine{\ \ ];}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Converts this \doxylink{interface_long}{Long} to its big endian byte representation. @this \{!\+Long\} \begin{DoxyReturn}{Returns}
+\{!\+Array.$<$number$>$\} Big endian byte representation 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_a35d437c896d464906b3b3419674a35de}\index{index.js@{index.js}!toBytesLE@{toBytesLE}}
+\index{toBytesLE@{toBytesLE}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{toBytesLE}{toBytesLE}}
+{\footnotesize\ttfamily \label{long_2index_8js_a35d437c896d464906b3b3419674a35de} 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} to\+Bytes\+LE}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{long_2index_8js_a35d437c896d464906b3b3419674a35de}{toBytesLE}}()\ \{}
+\DoxyCodeLine{\ \ var\ hi\ =\ this.high,}
+\DoxyCodeLine{\ \ \ \ lo\ =\ this.low;}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ [}
+\DoxyCodeLine{\ \ \ \ lo\ \&\ 0xff,}
+\DoxyCodeLine{\ \ \ \ lo\ >>>\ 8\ \&\ 0xff,}
+\DoxyCodeLine{\ \ \ \ lo\ >>>\ 16\ \&\ 0xff,}
+\DoxyCodeLine{\ \ \ \ lo\ >>>\ 24,}
+\DoxyCodeLine{\ \ \ \ hi\ \&\ 0xff,}
+\DoxyCodeLine{\ \ \ \ hi\ >>>\ 8\ \&\ 0xff,}
+\DoxyCodeLine{\ \ \ \ hi\ >>>\ 16\ \&\ 0xff,}
+\DoxyCodeLine{\ \ \ \ hi\ >>>\ 24}
+\DoxyCodeLine{\ \ ];}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Converts this \doxylink{interface_long}{Long} to its little endian byte representation. @this \{!\+Long\} \begin{DoxyReturn}{Returns}
+\{!\+Array.$<$number$>$\} Little endian byte representation 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_a6d36cc5d1b63d0a8e27a97b6be2ee7a5}\index{index.js@{index.js}!toInt@{toInt}}
+\index{toInt@{toInt}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{toInt}{toInt}}
+{\footnotesize\ttfamily \label{long_2index_8js_a6d36cc5d1b63d0a8e27a97b6be2ee7a5} 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} to\+Int}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{long_2index_8js_a6d36cc5d1b63d0a8e27a97b6be2ee7a5}{toInt}}()\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ this.\textcolor{keywordtype}{unsigned}\ ?\ this.low\ >>>\ 0\ :\ this.low;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Converts the \doxylink{interface_long}{Long} to a 32 bit integer, assuming it is a 32 bit integer. @this \{!\+Long\} \begin{DoxyReturn}{Returns}
+\{number\} 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_a5092c3ce75e09e6874313df3fc6d7196}\index{index.js@{index.js}!toNumber@{toNumber}}
+\index{toNumber@{toNumber}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{toNumber}{toNumber}}
+{\footnotesize\ttfamily \label{long_2index_8js_a5092c3ce75e09e6874313df3fc6d7196} 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} to\+Number}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{fast-xml-parser_2src_2v5_2value_parsers_2number_8js_a091bed83b75c2060bf5603cd92da9c53}{toNumber}}()\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (this.\textcolor{keywordtype}{unsigned})}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ ((this.high\ >>>\ 0)\ *\ \mbox{\hyperlink{long_2index_8js_ae98932fe3b7d5609f52004b048d66c06}{TWO\_PWR\_32\_DBL}})\ +\ (this.low\ >>>\ 0);}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ this.high\ *\ \mbox{\hyperlink{long_2index_8js_ae98932fe3b7d5609f52004b048d66c06}{TWO\_PWR\_32\_DBL}}\ +\ (this.low\ >>>\ 0);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Converts the \doxylink{interface_long}{Long} to a the nearest floating-\/point representation of this value (double, 53 bit mantissa). @this \{!\+Long\} \begin{DoxyReturn}{Returns}
+\{number\} 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_a260f93e309c51a85dd2d7bcef816e699}\index{index.js@{index.js}!toSigned@{toSigned}}
+\index{toSigned@{toSigned}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{toSigned}{toSigned}}
+{\footnotesize\ttfamily \label{long_2index_8js_a260f93e309c51a85dd2d7bcef816e699} 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} to\+Signed}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{long_2index_8js_a260f93e309c51a85dd2d7bcef816e699}{toSigned}}()\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (!this.\textcolor{keywordtype}{unsigned})}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{this};}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{long_2index_8js_a4982e92a462ec92e04632054fbba81c7}{fromBits}}(this.low,\ this.high,\ \textcolor{keyword}{false});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Converts this \doxylink{interface_long}{Long} to signed. @this \{!\+Long\} \begin{DoxyReturn}{Returns}
+\{!\+Long\} Signed long 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_a0f93c73e5b1fc9629f1fd3554d002ced}\index{index.js@{index.js}!toString@{toString}}
+\index{toString@{toString}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{toString}{toString}}
+{\footnotesize\ttfamily \label{long_2index_8js_a0f93c73e5b1fc9629f1fd3554d002ced} 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} to\+String}
+
+Converts the \doxylink{interface_long}{Long} to a string written in the specified radix. @this \{!\+Long\} 
+\begin{DoxyParams}{Parameters}
+{\em \{number=\}} & radix Radix (2-\/36), defaults to 10 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{string\} @override 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \{\+Range\+Error\}} & If {\ttfamily radix} is out of range \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{long_2index_8js_a692e14c9e32b6ad903bec89014e94a15}\index{index.js@{index.js}!toUnsigned@{toUnsigned}}
+\index{toUnsigned@{toUnsigned}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{toUnsigned}{toUnsigned}}
+{\footnotesize\ttfamily \label{long_2index_8js_a692e14c9e32b6ad903bec89014e94a15} 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} to\+Unsigned}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{long_2index_8js_a692e14c9e32b6ad903bec89014e94a15}{toUnsigned}}()\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (this.\textcolor{keywordtype}{unsigned})}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{this};}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{long_2index_8js_a4982e92a462ec92e04632054fbba81c7}{fromBits}}(this.low,\ this.high,\ \textcolor{keyword}{true});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Converts this \doxylink{interface_long}{Long} to unsigned. @this \{!\+Long\} \begin{DoxyReturn}{Returns}
+\{!\+Long\} Unsigned long 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_abe4cc9788f52e49485473dc699537388}\index{index.js@{index.js}!try@{try}}
+\index{try@{try}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{try}{try}}
+{\footnotesize\ttfamily \label{long_2index_8js_abe4cc9788f52e49485473dc699537388} 
+try}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{long_2index_8js_a23a3372e7fdb6d70d0ea9e37720a75bd}{wasm}}\ =\ \textcolor{keyword}{new}\ WebAssembly.Instance(\textcolor{keyword}{new}\ WebAssembly.Module(\textcolor{keyword}{new}\ Uint8Array([}
+\DoxyCodeLine{\ \ \ \ 0,\ 97,\ 115,\ 109,\ 1,\ 0,\ 0,\ 0,\ 1,\ 13,\ 2,\ 96,\ 0,\ 1,\ 127,\ 96,\ 4,\ 127,\ 127,\ 127,\ 127,\ 1,\ 127,\ 3,\ 7,\ 6,\ 0,\ 1,\ 1,\ 1,\ 1,\ 1,\ 6,\ 6,\ 1,\ 127,\ 1,\ 65,\ 0,\ 11,\ 7,\ 50,\ 6,\ 3,\ 109,\ 117,\ 108,\ 0,\ 1,\ 5,\ 100,\ 105,\ 118,\ 95,\ 115,\ 0,\ 2,\ 5,\ 100,\ 105,\ 118,\ 95,\ 117,\ 0,\ 3,\ 5,\ 114,\ 101,\ 109,\ 95,\ 115,\ 0,\ 4,\ 5,\ 114,\ 101,\ 109,\ 95,\ 117,\ 0,\ 5,\ 8,\ 103,\ 101,\ 116,\ 95,\ 104,\ 105,\ 103,\ 104,\ 0,\ 0,\ 10,\ 191,\ 1,\ 6,\ 4,\ 0,\ 35,\ 0,\ 11,\ 36,\ 1,\ 1,\ 126,\ 32,\ 0,\ 173,\ 32,\ 1,\ 173,\ 66,\ 32,\ 134,\ 132,\ 32,\ 2,\ 173,\ 32,\ 3,\ 173,\ 66,\ 32,\ 134,\ 132,\ 126,\ 34,\ 4,\ 66,\ 32,\ 135,\ 167,\ 36,\ 0,\ 32,\ 4,\ 167,\ 11,\ 36,\ 1,\ 1,\ 126,\ 32,\ 0,\ 173,\ 32,\ 1,\ 173,\ 66,\ 32,\ 134,\ 132,\ 32,\ 2,\ 173,\ 32,\ 3,\ 173,\ 66,\ 32,\ 134,\ 132,\ 127,\ 34,\ 4,\ 66,\ 32,\ 135,\ 167,\ 36,\ 0,\ 32,\ 4,\ 167,\ 11,\ 36,\ 1,\ 1,\ 126,\ 32,\ 0,\ 173,\ 32,\ 1,\ 173,\ 66,\ 32,\ 134,\ 132,\ 32,\ 2,\ 173,\ 32,\ 3,\ 173,\ 66,\ 32,\ 134,\ 132,\ 128,\ 34,\ 4,\ 66,\ 32,\ 135,\ 167,\ 36,\ 0,\ 32,\ 4,\ 167,\ 11,\ 36,\ 1,\ 1,\ 126,\ 32,\ 0,\ 173,\ 32,\ 1,\ 173,\ 66,\ 32,\ 134,\ 132,\ 32,\ 2,\ 173,\ 32,\ 3,\ 173,\ 66,\ 32,\ 134,\ 132,\ 129,\ 34,\ 4,\ 66,\ 32,\ 135,\ 167,\ 36,\ 0,\ 32,\ 4,\ 167,\ 11,\ 36,\ 1,\ 1,\ 126,\ 32,\ 0,\ 173,\ 32,\ 1,\ 173,\ 66,\ 32,\ 134,\ 132,\ 32,\ 2,\ 173,\ 32,\ 3,\ 173,\ 66,\ 32,\ 134,\ 132,\ 130,\ 34,\ 4,\ 66,\ 32,\ 135,\ 167,\ 36,\ 0,\ 32,\ 4,\ 167,\ 11}
+\DoxyCodeLine{\ \ ])),\ \{\}).\mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2index_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}}}
+
+\end{DoxyCode}
+\Hypertarget{long_2index_8js_a65d356b8a0577b943e500b0923dc80f4}\index{index.js@{index.js}!TWO\_PWR\_16\_DBL@{TWO\_PWR\_16\_DBL}}
+\index{TWO\_PWR\_16\_DBL@{TWO\_PWR\_16\_DBL}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{TWO\_PWR\_16\_DBL}{TWO\_PWR\_16\_DBL}}
+{\footnotesize\ttfamily \label{long_2index_8js_a65d356b8a0577b943e500b0923dc80f4} 
+var TWO\+\_\+\+PWR\+\_\+16\+\_\+\+DBL = 1 $<$$<$ 16}
+
+@type \{number\} @const @inner \Hypertarget{long_2index_8js_a0eaae65ce6d25ba985bad4dd90a34260}\index{index.js@{index.js}!TWO\_PWR\_24@{TWO\_PWR\_24}}
+\index{TWO\_PWR\_24@{TWO\_PWR\_24}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{TWO\_PWR\_24}{TWO\_PWR\_24}}
+{\footnotesize\ttfamily \label{long_2index_8js_a0eaae65ce6d25ba985bad4dd90a34260} 
+var TWO\+\_\+\+PWR\+\_\+24 = \mbox{\hyperlink{long_2index_8js_abe372bfcd00f2889d3a04d98ffe33ab1}{from\+Int}}(\mbox{\hyperlink{long_2index_8js_ace22a13fa54d3e757fb2f6afb9a7c6d9}{TWO\+\_\+\+PWR\+\_\+24\+\_\+\+DBL}})}
+
+@type \{!\+Long\} @const @inner \Hypertarget{long_2index_8js_ace22a13fa54d3e757fb2f6afb9a7c6d9}\index{index.js@{index.js}!TWO\_PWR\_24\_DBL@{TWO\_PWR\_24\_DBL}}
+\index{TWO\_PWR\_24\_DBL@{TWO\_PWR\_24\_DBL}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{TWO\_PWR\_24\_DBL}{TWO\_PWR\_24\_DBL}}
+{\footnotesize\ttfamily \label{long_2index_8js_ace22a13fa54d3e757fb2f6afb9a7c6d9} 
+var TWO\+\_\+\+PWR\+\_\+24\+\_\+\+DBL = 1 $<$$<$ 24}
+
+@type \{number\} @const @inner \Hypertarget{long_2index_8js_ae98932fe3b7d5609f52004b048d66c06}\index{index.js@{index.js}!TWO\_PWR\_32\_DBL@{TWO\_PWR\_32\_DBL}}
+\index{TWO\_PWR\_32\_DBL@{TWO\_PWR\_32\_DBL}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{TWO\_PWR\_32\_DBL}{TWO\_PWR\_32\_DBL}}
+{\footnotesize\ttfamily \label{long_2index_8js_ae98932fe3b7d5609f52004b048d66c06} 
+var TWO\+\_\+\+PWR\+\_\+32\+\_\+\+DBL = \mbox{\hyperlink{long_2index_8js_a65d356b8a0577b943e500b0923dc80f4}{TWO\+\_\+\+PWR\+\_\+16\+\_\+\+DBL}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{long_2index_8js_a65d356b8a0577b943e500b0923dc80f4}{TWO\+\_\+\+PWR\+\_\+16\+\_\+\+DBL}}}
+
+@type \{number\} @const @inner \Hypertarget{long_2index_8js_ab1ec9b5780c0a7448a5f5829be0b74d5}\index{index.js@{index.js}!TWO\_PWR\_63\_DBL@{TWO\_PWR\_63\_DBL}}
+\index{TWO\_PWR\_63\_DBL@{TWO\_PWR\_63\_DBL}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{TWO\_PWR\_63\_DBL}{TWO\_PWR\_63\_DBL}}
+{\footnotesize\ttfamily \label{long_2index_8js_ab1ec9b5780c0a7448a5f5829be0b74d5} 
+var TWO\+\_\+\+PWR\+\_\+63\+\_\+\+DBL = \mbox{\hyperlink{long_2index_8js_aa803787abfacd9e2ad50c8b23fd363a9}{TWO\+\_\+\+PWR\+\_\+64\+\_\+\+DBL}} / 2}
+
+@type \{number\} @const @inner \Hypertarget{long_2index_8js_aa803787abfacd9e2ad50c8b23fd363a9}\index{index.js@{index.js}!TWO\_PWR\_64\_DBL@{TWO\_PWR\_64\_DBL}}
+\index{TWO\_PWR\_64\_DBL@{TWO\_PWR\_64\_DBL}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{TWO\_PWR\_64\_DBL}{TWO\_PWR\_64\_DBL}}
+{\footnotesize\ttfamily \label{long_2index_8js_aa803787abfacd9e2ad50c8b23fd363a9} 
+var TWO\+\_\+\+PWR\+\_\+64\+\_\+\+DBL = \mbox{\hyperlink{long_2index_8js_ae98932fe3b7d5609f52004b048d66c06}{TWO\+\_\+\+PWR\+\_\+32\+\_\+\+DBL}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{long_2index_8js_ae98932fe3b7d5609f52004b048d66c06}{TWO\+\_\+\+PWR\+\_\+32\+\_\+\+DBL}}}
+
+@type \{number\} @const @inner \Hypertarget{long_2index_8js_a71457c80c147c23fa062134a65c29bb7}\index{index.js@{index.js}!UINT\_CACHE@{UINT\_CACHE}}
+\index{UINT\_CACHE@{UINT\_CACHE}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{UINT\_CACHE}{UINT\_CACHE}}
+{\footnotesize\ttfamily \label{long_2index_8js_a71457c80c147c23fa062134a65c29bb7} 
+var UINT\+\_\+\+CACHE = \{\}}
+
+\doxylink{class_a}{A} cache of the \doxylink{interface_long}{Long} representations of small unsigned integer values. @type \{!\+Object\} @inner \Hypertarget{long_2index_8js_a337119821513cb26cfa2499ced775aa0}\index{index.js@{index.js}!UONE@{UONE}}
+\index{UONE@{UONE}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{UONE}{UONE}}
+{\footnotesize\ttfamily \label{long_2index_8js_a337119821513cb26cfa2499ced775aa0} 
+\mbox{\hyperlink{interface_long}{Long}} UONE = \mbox{\hyperlink{long_2index_8js_abe372bfcd00f2889d3a04d98ffe33ab1}{from\+Int}}(1, true)}
+
+@type \{!\+Long\} @inner
+
+Unsigned one. @type \{!\+Long\} \Hypertarget{long_2index_8js_adfb75f3ed10ec9d71977d6d53fd750e6}\index{index.js@{index.js}!UZERO@{UZERO}}
+\index{UZERO@{UZERO}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{UZERO}{UZERO}}
+{\footnotesize\ttfamily \label{long_2index_8js_adfb75f3ed10ec9d71977d6d53fd750e6} 
+\mbox{\hyperlink{interface_long}{Long}} UZERO = \mbox{\hyperlink{long_2index_8js_abe372bfcd00f2889d3a04d98ffe33ab1}{from\+Int}}(0, true)}
+
+@type \{!\+Long\} @inner
+
+Unsigned zero. @type \{!\+Long\} \Hypertarget{long_2index_8js_a23a3372e7fdb6d70d0ea9e37720a75bd}\index{index.js@{index.js}!wasm@{wasm}}
+\index{wasm@{wasm}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{wasm}{wasm}}
+{\footnotesize\ttfamily \label{long_2index_8js_a23a3372e7fdb6d70d0ea9e37720a75bd} 
+var wasm = null}
+
+@license Copyright 2009 The Closure Library Authors Copyright 2020 Daniel Wirtz / The long.\+js Authors.
+
+Licensed under the Apache License, Version 2.\+0 (the "{}\+License"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at \begin{DoxyVerb}http://www.apache.org/licenses/LICENSE-2.0
+\end{DoxyVerb}
+
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "{}\+AS IS"{} BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+
+SPDX-\/\+License-\/\+Identifier\+: Apache-\/2.\+0 \Hypertarget{long_2index_8js_a57a7f84d7a6445fc4bcc479225c29be3}\index{index.js@{index.js}!xor@{xor}}
+\index{xor@{xor}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{xor}{xor}}
+{\footnotesize\ttfamily \label{long_2index_8js_a57a7f84d7a6445fc4bcc479225c29be3} 
+\mbox{\hyperlink{long_2index_8js_abd9f5b89a9325bb842c11ead69eb0020}{Long\+Prototype}} xor}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{long_2index_8js_a57a7f84d7a6445fc4bcc479225c29be3}{xor}}(other)\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{long_2index_8js_a987be1914fa8b126ef6f42ee6ca22f6c}{isLong}}(other))}
+\DoxyCodeLine{\ \ \ \ other\ =\ \mbox{\hyperlink{long_2index_8js_a44cb3d7b998b87b0e947a150084e56c4}{fromValue}}(other);}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{long_2index_8js_a4982e92a462ec92e04632054fbba81c7}{fromBits}}(this.low\ \string^\ other.low,\ \textcolor{keyword}{this}.high\ \string^\ other.high,\ \textcolor{keyword}{this}.unsigned);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Returns the bitwise XOR of this \doxylink{interface_long}{Long} and the given one. @this \{!\+Long\} 
+\begin{DoxyParams}{Parameters}
+{\em \{!\+Long\texorpdfstring{$\vert$}{|}number\texorpdfstring{$\vert$}{|}string\}} & other Other \doxylink{interface_long}{Long} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{!\+Long\} 
+\end{DoxyReturn}
+\Hypertarget{long_2index_8js_a2610f9b78232bda11b2fa63c930b3ef7}\index{index.js@{index.js}!ZERO@{ZERO}}
+\index{ZERO@{ZERO}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{ZERO}{ZERO}}
+{\footnotesize\ttfamily \label{long_2index_8js_a2610f9b78232bda11b2fa63c930b3ef7} 
+\mbox{\hyperlink{interface_long}{Long}} ZERO = \mbox{\hyperlink{long_2index_8js_abe372bfcd00f2889d3a04d98ffe33ab1}{from\+Int}}(0)}
+
+@type \{!\+Long\} @inner
+
+Signed zero. @type \{!\+Long\} 

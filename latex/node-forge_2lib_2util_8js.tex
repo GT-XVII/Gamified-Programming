@@ -1,0 +1,2648 @@
+\doxysection{backend/node\+\_\+modules/node-\/forge/lib/util.js File Reference}
+\hypertarget{node-forge_2lib_2util_8js}{}\label{node-forge_2lib_2util_8js}\index{backend/node\_modules/node-\/forge/lib/util.js@{backend/node\_modules/node-\/forge/lib/util.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{node-forge_2lib_2util_8js_a2c140ee9665d5c42721fc0b7e25b76dd}{if}} (typeof \mbox{\hyperlink{forge_8all_8min_8js_a77335ab2a82353d4a02f9ba062031c46}{window}} !==\textquotesingle{}\mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}\textquotesingle{} \&\&typeof window.\+post\+Message===\textquotesingle{}function\textquotesingle{})
+\item 
+function \mbox{\hyperlink{node-forge_2lib_2util_8js_a597f5efe02f0d3e307888e099aa553fe}{\+\_\+check\+Bits\+Param}} (\mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}})
+\item 
+function \mbox{\hyperlink{node-forge_2lib_2util_8js_ab2965b2412e389b08f82b5ac9d2cb26a}{Byte\+String\+Buffer}} (\mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}})
+\item 
+function \mbox{\hyperlink{node-forge_2lib_2util_8js_a35374663a0beb6b8a01fca9910e8dbaa}{Data\+Buffer}} (\mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}, options)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{node-forge_2lib_2util_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./forge\textquotesingle{})
+\item 
+var \mbox{\hyperlink{node-forge_2lib_2util_8js_a473bd65df47dc01202f53fbc7c247e59}{baseN}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./baseN\textquotesingle{})
+\item 
+var \mbox{\hyperlink{node-forge_2lib_2util_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}} = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{module.\+exports}} = forge.\+util = forge.\+util \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} \{\}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a4c5e782564fb68a77a3691fe971064c0}{next\+Tick}} = \mbox{\hyperlink{rxjs_8umd_8js_a5008ba0c81d22f889926a449c993ac53}{util.\+set\+Immediate}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a9453d121c87bf2ffe934862ee1c9733a}{is\+Nodejs}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a8f4e2be62834a9cd4172f3fcf5aa2e32}{global\+Scope}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_af517b69e969458c2ff3d2dd2c196fabc}{is\+Array}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_ad7941977c271d24090a4936121ea2266}{is\+Array\+Buffer}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_aaff6750c47c1935750072378b191272c}{is\+Array\+Buffer\+View}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_ac4e22f271fd0a519008ede022e70a2dc}{Byte\+Buffer}} = \mbox{\hyperlink{node-forge_2lib_2util_8js_a46f867dddee6f6920722359a4c8260bb}{Byte\+String\+Buffer}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a46f867dddee6f6920722359a4c8260bb}{Byte\+String\+Buffer}} = Byte\+String\+Buffer
+\item 
+var \mbox{\hyperlink{node-forge_2lib_2util_8js_ae1d8e6c99a364102202e6f7ba687c2a0}{\+\_\+\+MAX\+\_\+\+CONSTRUCTED\+\_\+\+STRING\+\_\+\+LENGTH}} = 4096
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a46f867dddee6f6920722359a4c8260bb}{Byte\+String\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a42f83600f6c8176115c953fb5865324a}{\+\_\+optimize\+Constructed\+String}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a46f867dddee6f6920722359a4c8260bb}{Byte\+String\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a2abec698811250e9dda18895bbcf8ab2}{length}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a46f867dddee6f6920722359a4c8260bb}{Byte\+String\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{node-forge_2lib_2util_8js_aefec98137b4c16f950a3f8034e38303f}{is\+Empty}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a46f867dddee6f6920722359a4c8260bb}{Byte\+String\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{node-forge_2lib_2util_8js_ad7ae0e6e39076e24da9278fda43481c9}{put\+Byte}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a46f867dddee6f6920722359a4c8260bb}{Byte\+String\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a4b6b059fba6e322b734b062ebfe0ea1f}{fill\+With\+Byte}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a46f867dddee6f6920722359a4c8260bb}{Byte\+String\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a0f5951fa016615ffc42ebc2526fd1fc1}{put\+Bytes}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a46f867dddee6f6920722359a4c8260bb}{Byte\+String\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a67242e4434053377321081602ab946aa}{put\+String}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a46f867dddee6f6920722359a4c8260bb}{Byte\+String\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a4d8650a0e0dd0ca5a00749f9e231686c}{put\+Int16}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a46f867dddee6f6920722359a4c8260bb}{Byte\+String\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a1fa3524dd4816405930c52d3f573fe88}{put\+Int24}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a46f867dddee6f6920722359a4c8260bb}{Byte\+String\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{node-forge_2lib_2util_8js_ad283db7c06f96ee909d4eb56e73ed6d6}{put\+Int32}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a46f867dddee6f6920722359a4c8260bb}{Byte\+String\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{node-forge_2lib_2util_8js_ab8b5096131f848276a7d3bd41f1d9207}{put\+Int16\+Le}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a46f867dddee6f6920722359a4c8260bb}{Byte\+String\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{node-forge_2lib_2util_8js_aeb60ea3d2405de3048cdab4e826ebb81}{put\+Int24\+Le}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a46f867dddee6f6920722359a4c8260bb}{Byte\+String\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{node-forge_2lib_2util_8js_afe1a0c0e385b685a00f70db2284a6319}{put\+Int32\+Le}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a46f867dddee6f6920722359a4c8260bb}{Byte\+String\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a333a6ea82c4c3dfb1683f478caf07ce7}{put\+Int}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a46f867dddee6f6920722359a4c8260bb}{Byte\+String\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{node-forge_2lib_2util_8js_ab058b1288197d5381a01b520f4d20d89}{put\+Signed\+Int}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a46f867dddee6f6920722359a4c8260bb}{Byte\+String\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a14d023a925aa4e0ff2c0ecc315a50efd}{put\+Buffer}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a46f867dddee6f6920722359a4c8260bb}{Byte\+String\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{node-forge_2lib_2util_8js_aa520297ca8b55f9373b3c23ae5037a95}{get\+Byte}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a46f867dddee6f6920722359a4c8260bb}{Byte\+String\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a11a43b826c142b970ab6a04521d3e977}{get\+Int16}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a46f867dddee6f6920722359a4c8260bb}{Byte\+String\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a336d1d203f44d50b7fe6127d608644f4}{get\+Int24}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a46f867dddee6f6920722359a4c8260bb}{Byte\+String\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a36008d6b260f991e19e4e1710c17651a}{get\+Int32}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a46f867dddee6f6920722359a4c8260bb}{Byte\+String\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{node-forge_2lib_2util_8js_aa03a09d8842047feca43a4d4f925457f}{get\+Int16\+Le}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a46f867dddee6f6920722359a4c8260bb}{Byte\+String\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{node-forge_2lib_2util_8js_af81e64b9184c6c7fff4827d2188aba70}{get\+Int24\+Le}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a46f867dddee6f6920722359a4c8260bb}{Byte\+String\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a637b00d1ad0bc6489fbda436ef3667b5}{get\+Int32\+Le}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a46f867dddee6f6920722359a4c8260bb}{Byte\+String\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a60a5d63dbaf036f5b4849a4956d1bcf1}{get\+Int}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a46f867dddee6f6920722359a4c8260bb}{Byte\+String\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{node-forge_2lib_2util_8js_ac0b19f5bb3419ee39ffabaca1bf9f0dd}{get\+Signed\+Int}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a46f867dddee6f6920722359a4c8260bb}{Byte\+String\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a5d9d16fafe225eb7bc75ea76b87c7e9a}{get\+Bytes}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a46f867dddee6f6920722359a4c8260bb}{Byte\+String\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{node-forge_2lib_2util_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a46f867dddee6f6920722359a4c8260bb}{Byte\+String\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a78af5f3fbaccaa8a16d6bea9d7a5e9f4}{at}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a46f867dddee6f6920722359a4c8260bb}{Byte\+String\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{node-forge_2lib_2util_8js_ab48fde8dcd5e032a46d52239037a67a2}{set\+At}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a46f867dddee6f6920722359a4c8260bb}{Byte\+String\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a18fd9acda23a2bd9fa792470c332f6bc}{last}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a46f867dddee6f6920722359a4c8260bb}{Byte\+String\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a684383e7e596d4ada3fb9be600b8e98c}{copy}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a46f867dddee6f6920722359a4c8260bb}{Byte\+String\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a19f7a0e3b49e3ffa2b4972033b758c0a}{compact}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a46f867dddee6f6920722359a4c8260bb}{Byte\+String\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a65921ba8a67e74d6e1a13e7605d840fb}{clear}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a46f867dddee6f6920722359a4c8260bb}{Byte\+String\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a45967263bdc66ddff86208af5f6916f4}{truncate}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a46f867dddee6f6920722359a4c8260bb}{Byte\+String\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{node-forge_2lib_2util_8js_ad7a85257a2d4098f85e0308ecf88bebb}{to\+Hex}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a46f867dddee6f6920722359a4c8260bb}{Byte\+String\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a7234a4e8129e261e2c517e09a337bf6a}{to\+String}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_af2ca5985446bc50a0e237108dd4fa56d}{Data\+Buffer}} = Data\+Buffer
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_af2ca5985446bc50a0e237108dd4fa56d}{Data\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a9502bfc938fde47d76ab91a485f20d4b}{accommodate}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_aee1d41df7fbb56cf86f8a528ebb5e3d0}{create\+Buffer}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a447c1ad0c2b2903fd9cf492c964588ed}{fill\+String}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_ad1bca1864729eceb711536ea6f293a1a}{xor\+Bytes}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a641c4491d4191705025985a85949cf39}{hex\+To\+Bytes}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_ac94999fcf7a90f387d237d7c3b8aba8d}{bytes\+To\+Hex}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a807e6a02de574d2718230f4ec445e2c2}{int32\+To\+Bytes}}
+\item 
+var \mbox{\hyperlink{node-forge_2lib_2util_8js_a4bdbb97db4316500b3d0db647235d92d}{\+\_\+base64}}
+\item 
+var \mbox{\hyperlink{node-forge_2lib_2util_8js_a3f0fd91f8e094af313cb98bd0e470c2b}{\+\_\+base64\+Idx}}
+\item 
+var \mbox{\hyperlink{node-forge_2lib_2util_8js_a2c0f24e72f00e1948f77f0b0965f6919}{\+\_\+base58}} = \textquotesingle{}123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz\textquotesingle{}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_ad331392d579a259c5e6e36d325571956}{encode64}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a0889c511c964d3c03cd10671c254d47c}{decode64}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a9979ba390a01990f4eb6082442cd2125}{encode\+Utf8}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_ab7b6d0aee49b2f553452433bb4b3d111}{decode\+Utf8}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_aa5dc99428648b9dc3ee403ffb2319c8c}{binary}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_aa5dc99428648b9dc3ee403ffb2319c8c}{binary}} \mbox{\hyperlink{concurrently_2dist_2src_2defaults_8js_a6fddf0a674d03300188e5ba3195c9a00}{raw}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a3444f884a621942de98c573e3fb30621}{encode}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_aa5dc99428648b9dc3ee403ffb2319c8c}{binary}} \mbox{\hyperlink{concurrently_2dist_2src_2defaults_8js_a6fddf0a674d03300188e5ba3195c9a00}{raw}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a80b796b0a4bd15bbafa042eda7857b70}{decode}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_ab492f69e70933f85fe6b3a8808d19852}{text}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_ad29fd7e42f40ebe97170740528a9f02a}{deflate}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_ac2b18bc3331b6382a6400ef28e752748}{inflate}}
+\item 
+var \mbox{\hyperlink{node-forge_2lib_2util_8js_acfa7eb5830973b62953b191b8edb5739}{\+\_\+set\+Storage\+Object}}
+\item 
+var \mbox{\hyperlink{node-forge_2lib_2util_8js_a781bcce7690e21cf323b557be288f188}{\+\_\+get\+Storage\+Object}}
+\item 
+var \mbox{\hyperlink{node-forge_2lib_2util_8js_a31fe782247f80dcd3b104072e271c13e}{\+\_\+set\+Item}}
+\item 
+var \mbox{\hyperlink{node-forge_2lib_2util_8js_a01e11eba1e3e6be9247eb7763194f1df}{\+\_\+get\+Item}}
+\item 
+var \mbox{\hyperlink{node-forge_2lib_2util_8js_ae490803f6b4baceca77f7f04b9f8bf09}{\+\_\+remove\+Item}}
+\item 
+var \mbox{\hyperlink{node-forge_2lib_2util_8js_a3b7f6d0a84c295908c25eed1b98d82c8}{\+\_\+clear\+Items}}
+\item 
+var \mbox{\hyperlink{node-forge_2lib_2util_8js_ad80ed82f9223467aa246b999b9c8e4b3}{\+\_\+call\+Storage\+Function}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_ad79f45e19abb62870b38a173145eca5a}{set\+Item}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a88e325f56bb065f4b05e4590a9420450}{get\+Item}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a16eae6d5b0b6177e7290e9b1b8a556bb}{remove\+Item}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_aeee756f1c03ed7645f1bb00c2f578810}{clear\+Items}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a66f24ca11c08afe75ae5a64d4252d968}{format}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a05339cb4ac19e62e763b0b59fa799887}{format\+Number}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_aaf41c52cf0ad0b88bb1b94f7b1385d49}{format\+Size}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a928375b5d32e8e4b92b61513cacc20c1}{bytes\+From\+IP}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a61c2bd08f20dcfb89c1b9eeb344369b0}{bytes\+From\+IPv4}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a53bd0f11238f88c75cf95f38f0376a8c}{bytes\+From\+IPv6}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_ad22a14304358eaf81062cf2c7b5ff12e}{bytes\+To\+IP}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_ad8d0815b5dfdda4ea0d60270fa4cf55f}{bytes\+To\+IPv4}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a7af1f56c59366613afcbf5f3e1f12738}{bytes\+To\+IPv6}}
+\item 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a2b820fff57822ce59b70939c85503554}{estimate\+Cores}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{node-forge_2lib_2util_8js_a597f5efe02f0d3e307888e099aa553fe}\index{util.js@{util.js}!\_checkBitsParam@{\_checkBitsParam}}
+\index{\_checkBitsParam@{\_checkBitsParam}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{\_checkBitsParam()}{\_checkBitsParam()}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_a597f5efe02f0d3e307888e099aa553fe} 
+function \+\_\+check\+Bits\+Param (\begin{DoxyParamCaption}\item[{}]{n}{}\end{DoxyParamCaption})}
+
+Ensure a bits param is 8, 16, 24, or 32. Used to validate input for algorithms where bit manipulation, Java\+Script limitations, and/or algorithm design only allow for byte operations of a limited size.
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & number of bits.\\
+\hline
+\end{DoxyParams}
+Throw Error if n invalid. 
+
+References \mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}.
+
+\Hypertarget{node-forge_2lib_2util_8js_ab2965b2412e389b08f82b5ac9d2cb26a}\index{util.js@{util.js}!ByteStringBuffer@{ByteStringBuffer}}
+\index{ByteStringBuffer@{ByteStringBuffer}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{ByteStringBuffer()}{ByteStringBuffer()}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_ab2965b2412e389b08f82b5ac9d2cb26a} 
+function Byte\+String\+Buffer (\begin{DoxyParamCaption}\item[{}]{b}{}\end{DoxyParamCaption})}
+
+\doxylink{interface_buffer}{Buffer} w/\+Binary\+String backing Constructor for a binary string backed byte buffer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}b\mbox{]}} & the bytes to wrap (either encoded as string, one byte per character, or as an Array\+Buffer or Typed Array). \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}, \mbox{\hyperlink{node-forge_2lib_2util_8js_a46f867dddee6f6920722359a4c8260bb}{Byte\+String\+Buffer}}, \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}, \mbox{\hyperlink{firestore__admin__v1__proto__api_8js_a08a4415e9d594ff960030b921d42b91e}{e}}, \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}, \mbox{\hyperlink{node-forge_2lib_2util_8js_ad7ae0e6e39076e24da9278fda43481c9}{put\+Byte}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a99dd3b4c246dbde846b5228e734d9341}{read}}, \mbox{\hyperlink{__clone_array_buffer_8js_a23efaf497399fa716c3e05b817cb7d0c}{Uint8\+Array}}, and \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2cjs_2src_2nodejs-common_2util_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}}.
+
+\Hypertarget{node-forge_2lib_2util_8js_a35374663a0beb6b8a01fca9910e8dbaa}\index{util.js@{util.js}!DataBuffer@{DataBuffer}}
+\index{DataBuffer@{DataBuffer}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{DataBuffer()}{DataBuffer()}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_a35374663a0beb6b8a01fca9910e8dbaa} 
+function Data\+Buffer (\begin{DoxyParamCaption}\item[{}]{b}{, }\item[{}]{options}{}\end{DoxyParamCaption})}
+
+End \doxylink{interface_buffer}{Buffer} w/\+Binary\+String backing \doxylink{interface_buffer}{Buffer} w/\+UInt8\+Array backing FIXME\+: Experimental. Do not use yet.
+
+Constructor for an Array\+Buffer-\/backed byte buffer.
+
+The buffer may be constructed from a string, an Array\+Buffer, Data\+View, or a Typed\+Array.
+
+If a string is given, its encoding should be provided as an option, otherwise it will default to \textquotesingle{}binary\textquotesingle{}. \doxylink{class_a}{A} \textquotesingle{}binary\textquotesingle{} string is encoded such that each character is one byte in length and size.
+
+If an Array\+Buffer, Data\+View, or Typed\+Array is given, it will be used {\itshape directly} without any copying. Note that, if a write to the buffer requires more space, the buffer will allocate a new backing Array\+Buffer to accommodate. The starting read and write offsets for the buffer may be given as options.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}b\mbox{]}} & the initial bytes for this buffer. \\
+\hline
+{\em options} & the options to use\+: \mbox{[}read\+Offset\mbox{]} the starting read offset to use (default\+: 0). \mbox{[}write\+Offset\mbox{]} the starting write offset to use (default\+: the length of the first parameter). \mbox{[}grow\+Size\mbox{]} the minimum amount, in bytes, to grow the buffer by to accommodate writes (default\+: 1024). \mbox{[}encoding\mbox{]} the encoding (\textquotesingle{}binary\textquotesingle{}, \textquotesingle{}utf8\textquotesingle{}, \textquotesingle{}utf16\textquotesingle{}, \textquotesingle{}hex\textquotesingle{}) for the first parameter, if it is a string (default\+: \textquotesingle{}binary\textquotesingle{}). \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}, \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}, \mbox{\hyperlink{___data_view_8js_a035b362a299d444b77597fe2d1ad1823}{Data\+View}}, \mbox{\hyperlink{node-forge_2lib_2util_8js_ad7941977c271d24090a4936121ea2266}{is\+Array\+Buffer}}, \mbox{\hyperlink{node-forge_2lib_2util_8js_aaff6750c47c1935750072378b191272c}{is\+Array\+Buffer\+View}}, \mbox{\hyperlink{node-forge_2lib_2util_8js_a0f5951fa016615ffc42ebc2526fd1fc1}{put\+Bytes}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a99dd3b4c246dbde846b5228e734d9341}{read}}, \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2cjs_2src_2nodejs-common_2util_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}}, and \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a355f75ff9c8abb4bda3db7af40f2ee4a}{write}}.
+
+\Hypertarget{node-forge_2lib_2util_8js_a2c140ee9665d5c42721fc0b7e25b76dd}\index{util.js@{util.js}!if@{if}}
+\index{if@{if}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{if()}{if()}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_a2c140ee9665d5c42721fc0b7e25b76dd} 
+function if (\begin{DoxyParamCaption}\item[{}]{typeof window !}{ = {\ttfamily =~\textquotesingle{}\mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}\textquotesingle{}~\&\&~typeof~window.postMessage~===~\textquotesingle{}function\textquotesingle{}}}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a622460feeccdab6d8f307936fc6b36fb}{callback}}, \mbox{\hyperlink{node-forge_2lib_2util_8js_a684383e7e596d4ada3fb9be600b8e98c}{copy}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a5506ca18b8a75a8da375a9319e63a2e7}{event}}, \mbox{\hyperlink{protobufjs_2ext_2descriptor_2test_8js_aa2e57ff47bd491f47d9b13a694aa0aeb}{msg}}, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2cjs_2src_2nodejs-common_2util_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}}, and \mbox{\hyperlink{forge_8all_8min_8js_a77335ab2a82353d4a02f9ba062031c46}{window}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{node-forge_2lib_2util_8js_a2c0f24e72f00e1948f77f0b0965f6919}\index{util.js@{util.js}!\_base58@{\_base58}}
+\index{\_base58@{\_base58}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{\_base58}{\_base58}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_a2c0f24e72f00e1948f77f0b0965f6919} 
+var \+\_\+base58 = \textquotesingle{}123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz\textquotesingle{}}
+
+\Hypertarget{node-forge_2lib_2util_8js_a4bdbb97db4316500b3d0db647235d92d}\index{util.js@{util.js}!\_base64@{\_base64}}
+\index{\_base64@{\_base64}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{\_base64}{\_base64}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_a4bdbb97db4316500b3d0db647235d92d} 
+var \+\_\+base64}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{\ \ \textcolor{stringliteral}{'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/='}}
+
+\end{DoxyCode}
+\Hypertarget{node-forge_2lib_2util_8js_a3f0fd91f8e094af313cb98bd0e470c2b}\index{util.js@{util.js}!\_base64Idx@{\_base64Idx}}
+\index{\_base64Idx@{\_base64Idx}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{\_base64Idx}{\_base64Idx}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_a3f0fd91f8e094af313cb98bd0e470c2b} 
+var \+\_\+base64\+Idx}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ 62,\ -\/1,\ -\/1,\ -\/1,\ 63,}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ 52,\ 53,\ 54,\ 55,\ 56,\ 57,\ 58,\ 59,\ 60,\ 61,}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ -\/1,\ -\/1,\ -\/1,\ 64,\ -\/1,\ -\/1,\ -\/1,}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ 0,\ \ 1,\ \ 2,\ \ 3,\ \ 4,\ \ 5,\ \ 6,\ \ 7,\ \ 8,\ \ 9,\ 10,\ 11,\ 12,}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ 13,\ 14,\ 15,\ 16,\ 17,\ 18,\ 19,\ 20,\ 21,\ 22,\ 23,\ 24,\ 25,}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ -\/1,\ -\/1,\ -\/1,\ -\/1,\ -\/1,\ -\/1,}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ 26,\ 27,\ 28,\ 29,\ 30,\ 31,\ 32,\ 33,\ 34,\ 35,\ 36,\ 37,\ 38,}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ 39,\ 40,\ 41,\ 42,\ 43,\ 44,\ 45,\ 46,\ 47,\ 48,\ 49,\ 50,\ 51}
+\DoxyCodeLine{]}
+
+\end{DoxyCode}
+\Hypertarget{node-forge_2lib_2util_8js_ad80ed82f9223467aa246b999b9c8e4b3}\index{util.js@{util.js}!\_callStorageFunction@{\_callStorageFunction}}
+\index{\_callStorageFunction@{\_callStorageFunction}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{\_callStorageFunction}{\_callStorageFunction}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_ad80ed82f9223467aa246b999b9c8e4b3} 
+var \+\_\+call\+Storage\+Function}
+
+Calls a storage function.
+
+
+\begin{DoxyParams}{Parameters}
+{\em func} & the function to call. \\
+\hline
+{\em args} & the arguments for the function. \\
+\hline
+{\em location} & the location argument.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the return value from the function. 
+\end{DoxyReturn}
+\Hypertarget{node-forge_2lib_2util_8js_a3b7f6d0a84c295908c25eed1b98d82c8}\index{util.js@{util.js}!\_clearItems@{\_clearItems}}
+\index{\_clearItems@{\_clearItems}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{\_clearItems}{\_clearItems}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_a3b7f6d0a84c295908c25eed1b98d82c8} 
+var \+\_\+clear\+Items}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}},\ id)\ \{}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{node-forge_2lib_2util_8js_acfa7eb5830973b62953b191b8edb5739}{\_setStorageObject}}(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}},\ \textcolor{keywordtype}{id},\ \textcolor{keyword}{null});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Clears the local disk storage identified by the given ID.
+
+
+\begin{DoxyParams}{Parameters}
+{\em api} & the storage interface. \\
+\hline
+{\em id} & the storage ID to use. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{node-forge_2lib_2util_8js_a01e11eba1e3e6be9247eb7763194f1df}\index{util.js@{util.js}!\_getItem@{\_getItem}}
+\index{\_getItem@{\_getItem}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{\_getItem}{\_getItem}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_a01e11eba1e3e6be9247eb7763194f1df} 
+var \+\_\+get\+Item}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}},\ id,\ key)\ \{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ var\ rval\ =\ \mbox{\hyperlink{node-forge_2lib_2util_8js_a781bcce7690e21cf323b557be288f188}{\_getStorageObject}}(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}},\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}(rval\ !==\ \textcolor{keyword}{null})\ \{}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ rval\ =\ (key\ in\ rval)\ ?\ rval[key]\ :\ null;}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ rval;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Gets an item from local storage.
+
+
+\begin{DoxyParams}{Parameters}
+{\em api} & the storage interface. \\
+\hline
+{\em id} & the storage ID to use. \\
+\hline
+{\em key} & the key for the item.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the item. 
+\end{DoxyReturn}
+\Hypertarget{node-forge_2lib_2util_8js_a781bcce7690e21cf323b557be288f188}\index{util.js@{util.js}!\_getStorageObject@{\_getStorageObject}}
+\index{\_getStorageObject@{\_getStorageObject}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{\_getStorageObject}{\_getStorageObject}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_a781bcce7690e21cf323b557be288f188} 
+var \+\_\+get\+Storage\+Object}
+
+Gets a storage object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em api} & the storage interface. \\
+\hline
+{\em id} & the storage ID to use.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the storage object entry or null if none exists. 
+\end{DoxyReturn}
+\Hypertarget{node-forge_2lib_2util_8js_ae1d8e6c99a364102202e6f7ba687c2a0}\index{util.js@{util.js}!\_MAX\_CONSTRUCTED\_STRING\_LENGTH@{\_MAX\_CONSTRUCTED\_STRING\_LENGTH}}
+\index{\_MAX\_CONSTRUCTED\_STRING\_LENGTH@{\_MAX\_CONSTRUCTED\_STRING\_LENGTH}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{\_MAX\_CONSTRUCTED\_STRING\_LENGTH}{\_MAX\_CONSTRUCTED\_STRING\_LENGTH}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_ae1d8e6c99a364102202e6f7ba687c2a0} 
+var \+\_\+\+MAX\+\_\+\+CONSTRUCTED\+\_\+\+STRING\+\_\+\+LENGTH = 4096}
+
+\Hypertarget{node-forge_2lib_2util_8js_a42f83600f6c8176115c953fb5865324a}\index{util.js@{util.js}!\_optimizeConstructedString@{\_optimizeConstructedString}}
+\index{\_optimizeConstructedString@{\_optimizeConstructedString}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{\_optimizeConstructedString}{\_optimizeConstructedString}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_a42f83600f6c8176115c953fb5865324a} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_a46f867dddee6f6920722359a4c8260bb}{Byte\+String\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \+\_\+optimize\+Constructed\+String}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(x)\ \{}
+\DoxyCodeLine{\ \ this.\_constructedStringLength\ +=\ x;}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}(this.\_constructedStringLength\ >\ \mbox{\hyperlink{node-forge_2lib_2util_8js_ae1d8e6c99a364102202e6f7ba687c2a0}{\_MAX\_CONSTRUCTED\_STRING\_LENGTH}})\ \{}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ this.\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}.substr(0,\ 1);}
+\DoxyCodeLine{\ \ \ \ this.\_constructedStringLength\ =\ 0;}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{node-forge_2lib_2util_8js_ae490803f6b4baceca77f7f04b9f8bf09}\index{util.js@{util.js}!\_removeItem@{\_removeItem}}
+\index{\_removeItem@{\_removeItem}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{\_removeItem}{\_removeItem}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_ae490803f6b4baceca77f7f04b9f8bf09} 
+var \+\_\+remove\+Item}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}},\ id,\ key)\ \{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}\ =\ \mbox{\hyperlink{node-forge_2lib_2util_8js_a781bcce7690e21cf323b557be288f188}{\_getStorageObject}}(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}},\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}\ !==\ \textcolor{keyword}{null}\ \&\&\ key\ in\ \mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}})\ \{}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{delete}\ \mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}[key];}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ var\ \mbox{\hyperlink{ordered-map_8min_8js_a4bdf3e530f52a4f5162d818b2a88378b}{empty}}\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{for}(var\ \mbox{\hyperlink{protobufjs_2src_2util_8js_a1ac3cdcaad4dbc4ad940f9e47c185bc2}{prop}}\ in\ \mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \mbox{\hyperlink{ordered-map_8min_8js_a4bdf3e530f52a4f5162d818b2a88378b}{empty}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{ordered-map_8min_8js_a4bdf3e530f52a4f5162d818b2a88378b}{empty}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}\ =\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{node-forge_2lib_2util_8js_acfa7eb5830973b62953b191b8edb5739}{\_setStorageObject}}(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}},\ \textcolor{keywordtype}{id},\ \mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}});}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Removes an item from local storage.
+
+
+\begin{DoxyParams}{Parameters}
+{\em api} & the storage interface. \\
+\hline
+{\em id} & the storage ID to use. \\
+\hline
+{\em key} & the key for the item. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{node-forge_2lib_2util_8js_a31fe782247f80dcd3b104072e271c13e}\index{util.js@{util.js}!\_setItem@{\_setItem}}
+\index{\_setItem@{\_setItem}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{\_setItem}{\_setItem}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_a31fe782247f80dcd3b104072e271c13e} 
+var \+\_\+set\+Item}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}},\ id,\ key,\ \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}})\ \{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}\ =\ \mbox{\hyperlink{node-forge_2lib_2util_8js_a781bcce7690e21cf323b557be288f188}{\_getStorageObject}}(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}},\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}\ ===\ \textcolor{keyword}{null})\ \{}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}\ =\ \{\};}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ \mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}[key]\ =\ \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ \mbox{\hyperlink{node-forge_2lib_2util_8js_acfa7eb5830973b62953b191b8edb5739}{\_setStorageObject}}(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}},\ \textcolor{keywordtype}{id},\ \mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Stores an item in local storage.
+
+
+\begin{DoxyParams}{Parameters}
+{\em api} & the storage interface. \\
+\hline
+{\em id} & the storage ID to use. \\
+\hline
+{\em key} & the key for the item. \\
+\hline
+{\em data} & the data for the item (any javascript object/primitive). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{node-forge_2lib_2util_8js_acfa7eb5830973b62953b191b8edb5739}\index{util.js@{util.js}!\_setStorageObject@{\_setStorageObject}}
+\index{\_setStorageObject@{\_setStorageObject}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{\_setStorageObject}{\_setStorageObject}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_acfa7eb5830973b62953b191b8edb5739} 
+var \+\_\+set\+Storage\+Object}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}},\ id,\ \mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}})\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}(!\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}})\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ Error(\textcolor{stringliteral}{'WebStorage\ not\ available.'});}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ var\ rval;}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}\ ===\ \textcolor{keyword}{null})\ \{}
+\DoxyCodeLine{\ \ \ \ rval\ =\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}}.removeItem(\textcolor{keywordtype}{id});}
+\DoxyCodeLine{\ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}\ =\ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2cjs_2src_2nodejs-common_2util_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}}.encode64(\mbox{\hyperlink{json-bigint_2lib_2stringify_8js_aec316efdeb7b2e5358b7d50869858da1}{JSON}}.stringify(\mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}));}
+\DoxyCodeLine{\ \ \ \ rval\ =\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}}.setItem(\textcolor{keywordtype}{id},\ \mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}});}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}(typeof(rval)\ !==\ \textcolor{stringliteral}{'undefined'}\ \&\&\ rval.rval\ !==\ \textcolor{keyword}{true})\ \{}
+\DoxyCodeLine{\ \ \ \ var\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}}\ =\ \textcolor{keyword}{new}\ Error(rval.error.message);}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}}.id\ =\ rval.error.id;}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}}.name\ =\ rval.error.name;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{throw}\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}};}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Sets a storage object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em api} & the storage interface. \\
+\hline
+{\em id} & the storage ID to use. \\
+\hline
+{\em obj} & the storage object, null to remove. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{node-forge_2lib_2util_8js_a9502bfc938fde47d76ab91a485f20d4b}\index{util.js@{util.js}!accommodate@{accommodate}}
+\index{accommodate@{accommodate}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{accommodate}{accommodate}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_a9502bfc938fde47d76ab91a485f20d4b} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_af2ca5985446bc50a0e237108dd4fa56d}{Data\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} accommodate}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(amount,\ growSize)\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}(this.\mbox{\hyperlink{node-forge_2lib_2util_8js_a2abec698811250e9dda18895bbcf8ab2}{length}}()\ >=\ amount)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{this};}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\ \ growSize\ =\ Math.max(growSize\ ||\ this.growSize,\ amount);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ var\ src\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{__clone_array_buffer_8js_a23efaf497399fa716c3e05b817cb7d0c}{Uint8Array}}(}
+\DoxyCodeLine{\ \ \ \ this.\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}.buffer,\ \textcolor{keyword}{this}.data.byteOffset,\ \textcolor{keyword}{this}.data.byteLength);}
+\DoxyCodeLine{\ \ var\ dst\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{__clone_array_buffer_8js_a23efaf497399fa716c3e05b817cb7d0c}{Uint8Array}}(this.\mbox{\hyperlink{node-forge_2lib_2util_8js_a2abec698811250e9dda18895bbcf8ab2}{length}}()\ +\ growSize);}
+\DoxyCodeLine{\ \ dst.set(src);}
+\DoxyCodeLine{\ \ this.\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{___data_view_8js_a035b362a299d444b77597fe2d1ad1823}{DataView}}(dst.buffer);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{this};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Ensures this buffer has enough empty space to accommodate the given number of bytes. An optional parameter may be given that indicates a minimum amount to grow the buffer if necessary. If the parameter is not given, the buffer will be grown by some previously-\/specified default amount or heuristic.
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & the number of bytes to accommodate. \\
+\hline
+{\em \mbox{[}grow\+Size\mbox{]}} & the minimum amount, in bytes, to grow the buffer by if necessary. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{node-forge_2lib_2util_8js_a78af5f3fbaccaa8a16d6bea9d7a5e9f4}\index{util.js@{util.js}!at@{at}}
+\index{at@{at}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{at}{at}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_a78af5f3fbaccaa8a16d6bea9d7a5e9f4} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_af2ca5985446bc50a0e237108dd4fa56d}{Data\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} at}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}})\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}.charCodeAt(this.\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a99dd3b4c246dbde846b5228e734d9341}{read}}\ +\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Gets a byte at the given index without modifying the read pointer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & the byte index.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the byte. 
+\end{DoxyReturn}
+\Hypertarget{node-forge_2lib_2util_8js_a473bd65df47dc01202f53fbc7c247e59}\index{util.js@{util.js}!baseN@{baseN}}
+\index{baseN@{baseN}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{baseN}{baseN}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_a473bd65df47dc01202f53fbc7c247e59} 
+var baseN = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./baseN\textquotesingle{})}
+
+\Hypertarget{node-forge_2lib_2util_8js_aa5dc99428648b9dc3ee403ffb2319c8c}\index{util.js@{util.js}!binary@{binary}}
+\index{binary@{binary}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{binary}{binary}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_aa5dc99428648b9dc3ee403ffb2319c8c} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} binary}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{concurrently_2dist_2src_2defaults_8js_a6fddf0a674d03300188e5ba3195c9a00}{raw}}:\ \{\},}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{conversions_8js_ad69b853a65b1b99def2b5b90d9bd63e9}{hex}}:\ \{\},}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{util_2dist_2index_8cjs_8js_a9ff01f6fde00861281ba5efcec6c267d}{base64}}:\ \{\},}
+\DoxyCodeLine{\ \ base58:\ \{\},}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{node-forge_2lib_2util_8js_a473bd65df47dc01202f53fbc7c247e59}{baseN}}\ :\ \{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{node-forge_2lib_2util_8js_a3444f884a621942de98c573e3fb30621}{encode}}:\ \mbox{\hyperlink{node-forge_2lib_2util_8js_a473bd65df47dc01202f53fbc7c247e59}{baseN}}.encode,}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{node-forge_2lib_2util_8js_a80b796b0a4bd15bbafa042eda7857b70}{decode}}:\ \mbox{\hyperlink{node-forge_2lib_2util_8js_a473bd65df47dc01202f53fbc7c247e59}{baseN}}.decode}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{node-forge_2lib_2util_8js_ac4e22f271fd0a519008ede022e70a2dc}\index{util.js@{util.js}!ByteBuffer@{ByteBuffer}}
+\index{ByteBuffer@{ByteBuffer}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{ByteBuffer}{ByteBuffer}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_ac4e22f271fd0a519008ede022e70a2dc} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} Byte\+Buffer = \mbox{\hyperlink{node-forge_2lib_2util_8js_a46f867dddee6f6920722359a4c8260bb}{Byte\+String\+Buffer}}}
+
+\Hypertarget{node-forge_2lib_2util_8js_ab4415a1984303e3efc591e24fc521e25}\index{util.js@{util.js}!bytes@{bytes}}
+\index{bytes@{bytes}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{bytes}{bytes}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_ab4415a1984303e3efc591e24fc521e25} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_af2ca5985446bc50a0e237108dd4fa56d}{Data\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} bytes}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{cjs_2internal_2operators_2count_8js_ac88314f55a9398aa7c8da3c0aae90d53}{count}})\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ (typeof(\mbox{\hyperlink{cjs_2internal_2operators_2count_8js_ac88314f55a9398aa7c8da3c0aae90d53}{count}})\ ===\ \textcolor{stringliteral}{'undefined'}\ ?}
+\DoxyCodeLine{\ \ \ \ this.\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}.slice(\textcolor{keyword}{this}.read)\ :}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{this}.data.slice(\textcolor{keyword}{this}.read,\ \textcolor{keyword}{this}.read\ +\ \mbox{\hyperlink{cjs_2internal_2operators_2count_8js_ac88314f55a9398aa7c8da3c0aae90d53}{count}}));}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Gets a binary encoded string of the bytes from this buffer without modifying the read pointer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em count} & the number of bytes to get, omit to get all.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a string full of binary encoded characters. 
+\end{DoxyReturn}
+\Hypertarget{node-forge_2lib_2util_8js_a928375b5d32e8e4b92b61513cacc20c1}\index{util.js@{util.js}!bytesFromIP@{bytesFromIP}}
+\index{bytesFromIP@{bytesFromIP}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{bytesFromIP}{bytesFromIP}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_a928375b5d32e8e4b92b61513cacc20c1} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} bytes\+From\+IP}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(ip)\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}(ip.indexOf(\textcolor{charliteral}{'.'})\ !==\ -\/1)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2cjs_2src_2nodejs-common_2util_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}}.bytesFromIPv4(ip);}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}(ip.indexOf(\textcolor{charliteral}{':'})\ !==\ -\/1)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2cjs_2src_2nodejs-common_2util_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}}.bytesFromIPv6(ip);}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Converts an IPv4 or IPv6 string representation into bytes (in network order).
+
+
+\begin{DoxyParams}{Parameters}
+{\em ip} & the IPv4 or IPv6 address to convert.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the 4-\/byte IPv6 or 16-\/byte IPv6 address or null if the address can\textquotesingle{}t be parsed. 
+\end{DoxyReturn}
+\Hypertarget{node-forge_2lib_2util_8js_a61c2bd08f20dcfb89c1b9eeb344369b0}\index{util.js@{util.js}!bytesFromIPv4@{bytesFromIPv4}}
+\index{bytesFromIPv4@{bytesFromIPv4}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{bytesFromIPv4}{bytesFromIPv4}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_a61c2bd08f20dcfb89c1b9eeb344369b0} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} bytes\+From\+IPv4}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(ip)\ \{}
+\DoxyCodeLine{\ \ ip\ =\ ip.split(\textcolor{charliteral}{'.'});}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}(ip.length\ !==\ 4)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}\ =\ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2cjs_2src_2nodejs-common_2util_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}}.createBuffer();}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{for}(var\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ =\ 0;\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ <\ ip.length;\ ++\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}})\ \{}
+\DoxyCodeLine{\ \ \ \ var\ num\ =\ \mbox{\hyperlink{parse_int_8js_a04ee837a5f7721fcb0ea2d152162ef92}{parseInt}}(ip[\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}],\ 10);}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{lodash_2core_8js_ae2c7b9b535f93c96826bdbe1da681ceb}{isNaN}}(num))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}.putByte(num);}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}.getBytes();}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Converts an IPv4 string representation into bytes (in network order).
+
+
+\begin{DoxyParams}{Parameters}
+{\em ip} & the IPv4 address to convert.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the 4-\/byte address or null if the address can\textquotesingle{}t be parsed. 
+\end{DoxyReturn}
+\Hypertarget{node-forge_2lib_2util_8js_a53bd0f11238f88c75cf95f38f0376a8c}\index{util.js@{util.js}!bytesFromIPv6@{bytesFromIPv6}}
+\index{bytesFromIPv6@{bytesFromIPv6}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{bytesFromIPv6}{bytesFromIPv6}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_a53bd0f11238f88c75cf95f38f0376a8c} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} bytes\+From\+IPv6}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(ip)\ \{}
+\DoxyCodeLine{\ \ var\ blanks\ =\ 0;}
+\DoxyCodeLine{\ \ ip\ =\ ip.split(\textcolor{charliteral}{':'}).filter(\textcolor{keyword}{function}(\mbox{\hyperlink{firestore__admin__v1__proto__api_8js_a08a4415e9d594ff960030b921d42b91e}{e}})\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{firestore__admin__v1__proto__api_8js_a08a4415e9d594ff960030b921d42b91e}{e}}.length\ ===\ 0)\ ++blanks;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\ \ \});}
+\DoxyCodeLine{\ \ var\ zeros\ =\ (8\ -\/\ ip.length\ +\ blanks)\ *\ 2;}
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}\ =\ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2cjs_2src_2nodejs-common_2util_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}}.createBuffer();}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{for}(var\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ =\ 0;\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ <\ 8;\ ++\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}})\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}(!ip[\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}]\ ||\ ip[\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}].\mbox{\hyperlink{node-forge_2lib_2util_8js_a2abec698811250e9dda18895bbcf8ab2}{length}}\ ===\ 0)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}.fillWithByte(0,\ zeros);}
+\DoxyCodeLine{\ \ \ \ \ \ zeros\ =\ 0;}
+\DoxyCodeLine{\ \ \ \ \ \ \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ var\ \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}}\ =\ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2cjs_2src_2nodejs-common_2util_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}}.hexToBytes(ip[\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}]);}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}}.length\ <\ 2)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}.putByte(0);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}.putBytes(\mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}});}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}.getBytes();}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Converts an IPv6 string representation into bytes (in network order).
+
+
+\begin{DoxyParams}{Parameters}
+{\em ip} & the IPv6 address to convert.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the 16-\/byte address or null if the address can\textquotesingle{}t be parsed. 
+\end{DoxyReturn}
+\Hypertarget{node-forge_2lib_2util_8js_ac94999fcf7a90f387d237d7c3b8aba8d}\index{util.js@{util.js}!bytesToHex@{bytesToHex}}
+\index{bytesToHex@{bytesToHex}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{bytesToHex}{bytesToHex}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_ac94999fcf7a90f387d237d7c3b8aba8d} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} bytes\+To\+Hex}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}})\ \{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2cjs_2src_2nodejs-common_2util_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}}.createBuffer(\mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}}).toHex();}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Converts a \textquotesingle{}binary\textquotesingle{} encoded string of bytes to hex.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bytes} & the byte string to convert.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the string of hexadecimal characters. 
+\end{DoxyReturn}
+\Hypertarget{node-forge_2lib_2util_8js_ad22a14304358eaf81062cf2c7b5ff12e}\index{util.js@{util.js}!bytesToIP@{bytesToIP}}
+\index{bytesToIP@{bytesToIP}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{bytesToIP}{bytesToIP}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_ad22a14304358eaf81062cf2c7b5ff12e} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} bytes\+To\+IP}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}})\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}}.length\ ===\ 4)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2cjs_2src_2nodejs-common_2util_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}}.bytesToIPv4(\mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}});}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}}.length\ ===\ 16)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2cjs_2src_2nodejs-common_2util_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}}.bytesToIPv6(\mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}});}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Converts 4-\/bytes into an IPv4 string representation or 16-\/bytes into an IPv6 string representation. The bytes must be in network order.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bytes} & the bytes to convert.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the IPv4 or IPv6 string representation if 4 or 16 bytes, respectively, are given, otherwise null. 
+\end{DoxyReturn}
+\Hypertarget{node-forge_2lib_2util_8js_ad8d0815b5dfdda4ea0d60270fa4cf55f}\index{util.js@{util.js}!bytesToIPv4@{bytesToIPv4}}
+\index{bytesToIPv4@{bytesToIPv4}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{bytesToIPv4}{bytesToIPv4}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_ad8d0815b5dfdda4ea0d60270fa4cf55f} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} bytes\+To\+IPv4}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}})\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}}.length\ !==\ 4)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\ \ var\ ip\ =\ [];}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{for}(var\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ =\ 0;\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ <\ \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}}.length;\ ++\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}})\ \{}
+\DoxyCodeLine{\ \ \ \ ip.push(\mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}}.charCodeAt(\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}));}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ ip.join(\textcolor{charliteral}{'.'});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Converts 4-\/bytes into an IPv4 string representation. The bytes must be in network order.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bytes} & the bytes to convert.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the IPv4 string representation or null for an invalid \# of bytes. 
+\end{DoxyReturn}
+\Hypertarget{node-forge_2lib_2util_8js_a7af1f56c59366613afcbf5f3e1f12738}\index{util.js@{util.js}!bytesToIPv6@{bytesToIPv6}}
+\index{bytesToIPv6@{bytesToIPv6}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{bytesToIPv6}{bytesToIPv6}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_a7af1f56c59366613afcbf5f3e1f12738} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} bytes\+To\+IPv6}
+
+Converts 16-\/bytes into an IPv16 string representation. The bytes must be in network order.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bytes} & the bytes to convert.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the IPv16 string representation or null for an invalid \# of bytes. 
+\end{DoxyReturn}
+\Hypertarget{node-forge_2lib_2util_8js_a46f867dddee6f6920722359a4c8260bb}\index{util.js@{util.js}!ByteStringBuffer@{ByteStringBuffer}}
+\index{ByteStringBuffer@{ByteStringBuffer}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{ByteStringBuffer}{ByteStringBuffer}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_a46f867dddee6f6920722359a4c8260bb} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} Byte\+String\+Buffer = Byte\+String\+Buffer}
+
+\Hypertarget{node-forge_2lib_2util_8js_a65921ba8a67e74d6e1a13e7605d840fb}\index{util.js@{util.js}!clear@{clear}}
+\index{clear@{clear}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{clear}{clear}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_a65921ba8a67e74d6e1a13e7605d840fb} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_af2ca5985446bc50a0e237108dd4fa56d}{Data\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} clear}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}()\ \{}
+\DoxyCodeLine{\ \ this.\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}\ =\ \textcolor{stringliteral}{''};}
+\DoxyCodeLine{\ \ this.\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a99dd3b4c246dbde846b5228e734d9341}{read}}\ =\ 0;}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{this};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Clears this buffer.
+
+\begin{DoxyReturn}{Returns}
+this buffer. 
+\end{DoxyReturn}
+\Hypertarget{node-forge_2lib_2util_8js_aeee756f1c03ed7645f1bb00c2f578810}\index{util.js@{util.js}!clearItems@{clearItems}}
+\index{clearItems@{clearItems}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{clearItems}{clearItems}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_aeee756f1c03ed7645f1bb00c2f578810} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} clear\+Items}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}},\ id,\ \mbox{\hyperlink{response_8js_a75ec03e18914bc8699236700707f598d}{location}})\ \{}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{node-forge_2lib_2util_8js_ad80ed82f9223467aa246b999b9c8e4b3}{\_callStorageFunction}}(\mbox{\hyperlink{node-forge_2lib_2util_8js_a3b7f6d0a84c295908c25eed1b98d82c8}{\_clearItems}},\ arguments,\ \mbox{\hyperlink{response_8js_a75ec03e18914bc8699236700707f598d}{location}});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Clears the local disk storage identified by the given ID.
+
+Set \doxylink{node-forge_2lib_2util_8js_ad79f45e19abb62870b38a173145eca5a}{set\+Item()} for details on storage types.
+
+
+\begin{DoxyParams}{Parameters}
+{\em api} & the flash interface if flash is available. \\
+\hline
+{\em id} & the storage ID to use. \\
+\hline
+{\em location} & an array with the preferred types of storage to use. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{node-forge_2lib_2util_8js_a19f7a0e3b49e3ffa2b4972033b758c0a}\index{util.js@{util.js}!compact@{compact}}
+\index{compact@{compact}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{compact}{compact}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_a19f7a0e3b49e3ffa2b4972033b758c0a} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_af2ca5985446bc50a0e237108dd4fa56d}{Data\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} compact}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}()\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}(this.\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a99dd3b4c246dbde846b5228e734d9341}{read}}\ >\ 0)\ \{}
+\DoxyCodeLine{\ \ \ \ this.\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}\ =\ this.\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}.slice(this.\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a99dd3b4c246dbde846b5228e734d9341}{read}});}
+\DoxyCodeLine{\ \ \ \ this.\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a99dd3b4c246dbde846b5228e734d9341}{read}}\ =\ 0;}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{this};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Compacts this buffer.
+
+\begin{DoxyReturn}{Returns}
+this buffer. 
+\end{DoxyReturn}
+\Hypertarget{node-forge_2lib_2util_8js_a684383e7e596d4ada3fb9be600b8e98c}\index{util.js@{util.js}!copy@{copy}}
+\index{copy@{copy}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{copy}{copy}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_a684383e7e596d4ada3fb9be600b8e98c} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_af2ca5985446bc50a0e237108dd4fa56d}{Data\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} copy}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}()\ \{}
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}\ =\ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2cjs_2src_2nodejs-common_2util_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}}.createBuffer(this.\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}});}
+\DoxyCodeLine{\ \ c.read\ =\ this.\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a99dd3b4c246dbde846b5228e734d9341}{read}};}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Creates a copy of this buffer.
+
+\begin{DoxyReturn}{Returns}
+the copy. 
+\end{DoxyReturn}
+\Hypertarget{node-forge_2lib_2util_8js_aee1d41df7fbb56cf86f8a528ebb5e3d0}\index{util.js@{util.js}!createBuffer@{createBuffer}}
+\index{createBuffer@{createBuffer}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{createBuffer}{createBuffer}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_aee1d41df7fbb56cf86f8a528ebb5e3d0} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} create\+Buffer}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(input,\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aace6cbf6b92481670f8b8421548f7584}{encoding}})\ \{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aace6cbf6b92481670f8b8421548f7584}{encoding}}\ =\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aace6cbf6b92481670f8b8421548f7584}{encoding}}\ ||\ \textcolor{stringliteral}{'raw'};}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}(input\ !==\ \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}\ \&\&\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aace6cbf6b92481670f8b8421548f7584}{encoding}}\ ===\ \textcolor{stringliteral}{'utf8'})\ \{}
+\DoxyCodeLine{\ \ \ \ input\ =\ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2cjs_2src_2nodejs-common_2util_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}}.encodeUtf8(input);}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2cjs_2src_2nodejs-common_2util_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}}.ByteBuffer(input);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+End \doxylink{interface_buffer}{Buffer} w/\+UInt8\+Array backing Creates a buffer that stores bytes. \doxylink{class_a}{A} value may be given to populate the buffer with data. This value can either be string of encoded bytes or a regular string of characters. When passing a string of binary encoded bytes, the encoding {\ttfamily raw} should be given. This is also the default. When passing a string of characters, the encoding {\ttfamily utf8} should be given.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}input\mbox{]}} & a string with encoded bytes to store in the buffer. \\
+\hline
+{\em \mbox{[}encoding\mbox{]}} & (default\+: \textquotesingle{}raw\textquotesingle{}, other\+: \textquotesingle{}utf8\textquotesingle{}). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{node-forge_2lib_2util_8js_af2ca5985446bc50a0e237108dd4fa56d}\index{util.js@{util.js}!DataBuffer@{DataBuffer}}
+\index{DataBuffer@{DataBuffer}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{DataBuffer}{DataBuffer}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_af2ca5985446bc50a0e237108dd4fa56d} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} Data\+Buffer = Data\+Buffer}
+
+\Hypertarget{node-forge_2lib_2util_8js_a80b796b0a4bd15bbafa042eda7857b70}\index{util.js@{util.js}!decode@{decode}}
+\index{decode@{decode}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{decode}{decode}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_a80b796b0a4bd15bbafa042eda7857b70} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_ab492f69e70933f85fe6b3a8808d19852}{text}} utf16 decode}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{json-bigint_2lib_2stringify_8js_abd4075a8f329b0ccafd81359c952a9df}{str}},\ output,\ offset)\ \{}
+\DoxyCodeLine{\ \ var\ out\ =\ output;}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}(!out)\ \{}
+\DoxyCodeLine{\ \ \ \ out\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{__clone_array_buffer_8js_a23efaf497399fa716c3e05b817cb7d0c}{Uint8Array}}(\mbox{\hyperlink{json-bigint_2lib_2stringify_8js_abd4075a8f329b0ccafd81359c952a9df}{str}}.length);}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\ \ offset\ =\ offset\ ||\ 0;}
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{ordered-map_8min_8js_a2e0772d176c27e9cea01defba2a9575a}{j}}\ =\ offset;}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{for}(var\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ =\ 0;\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ <\ \mbox{\hyperlink{json-bigint_2lib_2stringify_8js_abd4075a8f329b0ccafd81359c952a9df}{str}}.length;\ ++\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}})\ \{}
+\DoxyCodeLine{\ \ \ \ out[\mbox{\hyperlink{ordered-map_8min_8js_a2e0772d176c27e9cea01defba2a9575a}{j}}++]\ =\ \mbox{\hyperlink{json-bigint_2lib_2stringify_8js_abd4075a8f329b0ccafd81359c952a9df}{str}}.charCodeAt(\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}});}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ output\ ?\ (\mbox{\hyperlink{ordered-map_8min_8js_a2e0772d176c27e9cea01defba2a9575a}{j}}\ -\/\ offset)\ :\ out;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Decodes a binary-\/encoded string to a Uint8\+Array. This encoding uses a value between 0 and 255 for each character.
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & the binary-\/encoded string to decode. \\
+\hline
+{\em \mbox{[}output\mbox{]}} & an optional Uint8\+Array to write the output to; if it is too small, an exception will be thrown. \\
+\hline
+{\em \mbox{[}offset\mbox{]}} & the start offset for writing to the output (default\+: 0).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the Uint8\+Array or the number of bytes written if output was given.
+\end{DoxyReturn}
+Decodes a hex-\/encoded string to a Uint8\+Array.
+
+
+\begin{DoxyParams}{Parameters}
+{\em hex} & the hexadecimal string to convert. \\
+\hline
+{\em \mbox{[}output\mbox{]}} & an optional Uint8\+Array to write the output to; if it is too small, an exception will be thrown. \\
+\hline
+{\em \mbox{[}offset\mbox{]}} & the start offset for writing to the output (default\+: 0).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the Uint8\+Array or the number of bytes written if output was given.
+\end{DoxyReturn}
+Decodes a base64-\/encoded string to a Uint8\+Array.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & the base64-\/encoded input string. \\
+\hline
+{\em \mbox{[}output\mbox{]}} & an optional Uint8\+Array to write the output to; if it is too small, an exception will be thrown. \\
+\hline
+{\em \mbox{[}offset\mbox{]}} & the start offset for writing to the output (default\+: 0).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the Uint8\+Array or the number of bytes written if output was given.
+\end{DoxyReturn}
+Decodes the UTF-\/8 contents from a Uint8\+Array.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bytes} & the Uint8\+Array to decode.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the resulting string.
+\end{DoxyReturn}
+Decodes the UTF-\/16 contents from a Uint8\+Array.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bytes} & the Uint8\+Array to decode.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the resulting string. 
+\end{DoxyReturn}
+\Hypertarget{node-forge_2lib_2util_8js_a0889c511c964d3c03cd10671c254d47c}\index{util.js@{util.js}!decode64@{decode64}}
+\index{decode64@{decode64}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{decode64}{decode64}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_a0889c511c964d3c03cd10671c254d47c} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} decode64}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(input)\ \{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ input\ =\ input.replace(/[\string^\mbox{\hyperlink{class_a}{A}}-\/Za-\/z0-\/9\(\backslash\)+\(\backslash\)/\(\backslash\)=]/\mbox{\hyperlink{ordered-map_8min_8js_a103df269476e78897c9c4c6cb8f4eb06}{g}},\ \textcolor{stringliteral}{''});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ var\ output\ =\ \textcolor{stringliteral}{''};}
+\DoxyCodeLine{\ \ var\ enc1,\ enc2,\ enc3,\ enc4;}
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ =\ 0;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{while}(\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ <\ input.length)\ \{}
+\DoxyCodeLine{\ \ \ \ enc1\ =\ \mbox{\hyperlink{node-forge_2lib_2util_8js_a3f0fd91f8e094af313cb98bd0e470c2b}{\_base64Idx}}[input.charCodeAt(\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}++)\ -\/\ 43];}
+\DoxyCodeLine{\ \ \ \ enc2\ =\ \mbox{\hyperlink{node-forge_2lib_2util_8js_a3f0fd91f8e094af313cb98bd0e470c2b}{\_base64Idx}}[input.charCodeAt(\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}++)\ -\/\ 43];}
+\DoxyCodeLine{\ \ \ \ enc3\ =\ \mbox{\hyperlink{node-forge_2lib_2util_8js_a3f0fd91f8e094af313cb98bd0e470c2b}{\_base64Idx}}[input.charCodeAt(\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}++)\ -\/\ 43];}
+\DoxyCodeLine{\ \ \ \ enc4\ =\ \mbox{\hyperlink{node-forge_2lib_2util_8js_a3f0fd91f8e094af313cb98bd0e470c2b}{\_base64Idx}}[input.charCodeAt(\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}++)\ -\/\ 43];}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ output\ +=\ String.fromCharCode((enc1\ <<\ 2)\ |\ (enc2\ >>\ 4));}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}(enc3\ !==\ 64)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ output\ +=\ String.fromCharCode(((enc2\ \&\ 15)\ <<\ 4)\ |\ (enc3\ >>\ 2));}
+\DoxyCodeLine{\ \ \ \ \ \ \textcolor{keywordflow}{if}(enc4\ !==\ 64)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ output\ +=\ String.fromCharCode(((enc3\ \&\ 3)\ <<\ 6)\ |\ enc4);}
+\DoxyCodeLine{\ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ output;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Base64 decodes a string into a \textquotesingle{}binary\textquotesingle{} encoded string of bytes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & the base64-\/encoded input.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the binary encoded string. 
+\end{DoxyReturn}
+\Hypertarget{node-forge_2lib_2util_8js_ab7b6d0aee49b2f553452433bb4b3d111}\index{util.js@{util.js}!decodeUtf8@{decodeUtf8}}
+\index{decodeUtf8@{decodeUtf8}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{decodeUtf8}{decodeUtf8}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_ab7b6d0aee49b2f553452433bb4b3d111} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} decode\+Utf8}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{json-bigint_2lib_2stringify_8js_abd4075a8f329b0ccafd81359c952a9df}{str}})\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ decodeURIComponent(\mbox{\hyperlink{lodash_2core_8js_a464a49dd6b07539ec72c6100c34b2a6a}{escape}}(\mbox{\hyperlink{json-bigint_2lib_2stringify_8js_abd4075a8f329b0ccafd81359c952a9df}{str}}));}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Decodes a binary encoded string that contains bytes that represent a UTF-\/8 encoded string of characters -- into a string of characters (a standard Java\+Script string).
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & the binary encoded string to decode.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the resulting standard string of characters. 
+\end{DoxyReturn}
+\Hypertarget{node-forge_2lib_2util_8js_ad29fd7e42f40ebe97170740528a9f02a}\index{util.js@{util.js}!deflate@{deflate}}
+\index{deflate@{deflate}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{deflate}{deflate}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_ad29fd7e42f40ebe97170740528a9f02a} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} deflate}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}},\ \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}},\ \mbox{\hyperlink{concurrently_2dist_2src_2defaults_8js_a6fddf0a674d03300188e5ba3195c9a00}{raw}})\ \{}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}}\ =\ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2cjs_2src_2nodejs-common_2util_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}}.decode64(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}}.deflate(\mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2cjs_2src_2nodejs-common_2util_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}}.encode64(\mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}})).rval);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{concurrently_2dist_2src_2defaults_8js_a6fddf0a674d03300188e5ba3195c9a00}{raw}})\ \{}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ var\ \mbox{\hyperlink{cipher_8js_a1960adf42cbf8c24067b45da3a2f0aaf}{start}}\ =\ 2;}
+\DoxyCodeLine{\ \ \ \ var\ flg\ =\ \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}}.charCodeAt(1);}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}(flg\ \&\ 0x20)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \mbox{\hyperlink{cipher_8js_a1960adf42cbf8c24067b45da3a2f0aaf}{start}}\ =\ 6;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}}\ =\ \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}}.substring(\mbox{\hyperlink{cipher_8js_a1960adf42cbf8c24067b45da3a2f0aaf}{start}},\ \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}}.length\ -\/\ 4);}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Deflates the given data using a flash interface.
+
+
+\begin{DoxyParams}{Parameters}
+{\em api} & the flash interface. \\
+\hline
+{\em bytes} & the data. \\
+\hline
+{\em raw} & true to return only raw deflate data, false to include zlib header and trailer.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the deflated data as a string. 
+\end{DoxyReturn}
+\Hypertarget{node-forge_2lib_2util_8js_a3444f884a621942de98c573e3fb30621}\index{util.js@{util.js}!encode@{encode}}
+\index{encode@{encode}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{encode}{encode}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_a3444f884a621942de98c573e3fb30621} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_ab492f69e70933f85fe6b3a8808d19852}{text}} utf16 encode}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}})\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ String.fromCharCode.apply(\textcolor{keyword}{null},\ \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Encodes a Uint8\+Array as a binary-\/encoded string. This encoding uses a value between 0 and 255 for each character.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bytes} & the Uint8\+Array to encode.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the binary-\/encoded string.
+\end{DoxyReturn}
+Encodes a \textquotesingle{}binary\textquotesingle{} string, Array\+Buffer, Data\+View, Typed\+Array, or Byte\+Buffer as a string of hexadecimal characters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bytes} & the bytes to convert.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the string of hexadecimal characters.
+\end{DoxyReturn}
+Base64-\/encodes a Uint8\+Array.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & the Uint8\+Array to encode. \\
+\hline
+{\em maxline} & the maximum number of encoded characters per line to use, defaults to none.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the base64-\/encoded output string.
+\end{DoxyReturn}
+Encodes the given string as UTF-\/8 in a Uint8\+Array.
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & the string to encode. \\
+\hline
+{\em \mbox{[}output\mbox{]}} & an optional Uint8\+Array to write the output to; if it is too small, an exception will be thrown. \\
+\hline
+{\em \mbox{[}offset\mbox{]}} & the start offset for writing to the output (default\+: 0).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the Uint8\+Array or the number of bytes written if output was given.
+\end{DoxyReturn}
+Encodes the given string as UTF-\/16 in a Uint8\+Array.
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & the string to encode. \\
+\hline
+{\em \mbox{[}output\mbox{]}} & an optional Uint8\+Array to write the output to; if it is too small, an exception will be thrown. \\
+\hline
+{\em \mbox{[}offset\mbox{]}} & the start offset for writing to the output (default\+: 0).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the Uint8\+Array or the number of bytes written if output was given. 
+\end{DoxyReturn}
+\Hypertarget{node-forge_2lib_2util_8js_ad331392d579a259c5e6e36d325571956}\index{util.js@{util.js}!encode64@{encode64}}
+\index{encode64@{encode64}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{encode64}{encode64}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_ad331392d579a259c5e6e36d325571956} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} encode64}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(input,\ maxline)\ \{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ var\ line\ =\ \textcolor{stringliteral}{''};}
+\DoxyCodeLine{\ \ var\ output\ =\ \textcolor{stringliteral}{''};}
+\DoxyCodeLine{\ \ var\ chr1,\ chr2,\ chr3;}
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ =\ 0;}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{while}(\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ <\ input.length)\ \{}
+\DoxyCodeLine{\ \ \ \ chr1\ =\ input.charCodeAt(\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}++);}
+\DoxyCodeLine{\ \ \ \ chr2\ =\ input.charCodeAt(\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}++);}
+\DoxyCodeLine{\ \ \ \ chr3\ =\ input.charCodeAt(\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}++);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ line\ +=\ \mbox{\hyperlink{node-forge_2lib_2util_8js_a4bdbb97db4316500b3d0db647235d92d}{\_base64}}.charAt(chr1\ >>\ 2);}
+\DoxyCodeLine{\ \ \ \ line\ +=\ \mbox{\hyperlink{node-forge_2lib_2util_8js_a4bdbb97db4316500b3d0db647235d92d}{\_base64}}.charAt(((chr1\ \&\ 3)\ <<\ 4)\ |\ (chr2\ >>\ 4));}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{lodash_2core_8js_ae2c7b9b535f93c96826bdbe1da681ceb}{isNaN}}(chr2))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ line\ +=\ \textcolor{stringliteral}{'=='};}
+\DoxyCodeLine{\ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ line\ +=\ \mbox{\hyperlink{node-forge_2lib_2util_8js_a4bdbb97db4316500b3d0db647235d92d}{\_base64}}.charAt(((chr2\ \&\ 15)\ <<\ 2)\ |\ (chr3\ >>\ 6));}
+\DoxyCodeLine{\ \ \ \ \ \ line\ +=\ \mbox{\hyperlink{lodash_2core_8js_ae2c7b9b535f93c96826bdbe1da681ceb}{isNaN}}(chr3)\ ?\ \textcolor{charliteral}{'='}\ :\ \mbox{\hyperlink{node-forge_2lib_2util_8js_a4bdbb97db4316500b3d0db647235d92d}{\_base64}}.charAt(chr3\ \&\ 63);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}(maxline\ \&\&\ line.length\ >\ maxline)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ output\ +=\ line.substr(0,\ maxline)\ +\ \textcolor{stringliteral}{'\(\backslash\)r\(\backslash\)n'};}
+\DoxyCodeLine{\ \ \ \ \ \ line\ =\ line.substr(maxline);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\ \ output\ +=\ line;}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ output;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Base64 encodes a \textquotesingle{}binary\textquotesingle{} encoded string of bytes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & the binary encoded string of bytes to base64-\/encode. \\
+\hline
+{\em maxline} & the maximum number of encoded characters per line to use, defaults to none.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the base64-\/encoded output. 
+\end{DoxyReturn}
+\Hypertarget{node-forge_2lib_2util_8js_a9979ba390a01990f4eb6082442cd2125}\index{util.js@{util.js}!encodeUtf8@{encodeUtf8}}
+\index{encodeUtf8@{encodeUtf8}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{encodeUtf8}{encodeUtf8}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_a9979ba390a01990f4eb6082442cd2125} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} encode\+Utf8}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{json-bigint_2lib_2stringify_8js_abd4075a8f329b0ccafd81359c952a9df}{str}})\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{unescape_8js_aca7e92c33f4b00031f3989601a75a145}{unescape}}(encodeURIComponent(\mbox{\hyperlink{json-bigint_2lib_2stringify_8js_abd4075a8f329b0ccafd81359c952a9df}{str}}));}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Encodes the given string of characters (a standard Java\+Script string) as a binary encoded string where the bytes represent a UTF-\/8 encoded string of characters. Non-\/\+ASCII characters will be encoded as multiple bytes according to UTF-\/8.
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & a standard string of characters to encode.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the binary encoded string. 
+\end{DoxyReturn}
+\Hypertarget{node-forge_2lib_2util_8js_a2b820fff57822ce59b70939c85503554}\index{util.js@{util.js}!estimateCores@{estimateCores}}
+\index{estimateCores@{estimateCores}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{estimateCores}{estimateCores}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_a2b820fff57822ce59b70939c85503554} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} estimate\+Cores}
+
+Estimates the number of processes that can be run concurrently. If creating Web Workers, keep in mind that the main Java\+Script process needs its own core.
+
+
+\begin{DoxyParams}{Parameters}
+{\em options} & the options to use\+: update true to force an update (not use the cached value). \\
+\hline
+{\em \doxylink{database-compat_2dist_2index_8standalone_8js_a622460feeccdab6d8f307936fc6b36fb}{callback(err},max)} & called once the operation completes. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{node-forge_2lib_2util_8js_a447c1ad0c2b2903fd9cf492c964588ed}\index{util.js@{util.js}!fillString@{fillString}}
+\index{fillString@{fillString}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{fillString}{fillString}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_a447c1ad0c2b2903fd9cf492c964588ed} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} fill\+String}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}},\ \mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}})\ \{}
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{ordered-map_8min_8js_ad9a7d92cb87932d25187fdec3ba1b621}{s}}\ =\ \textcolor{stringliteral}{''};}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{while}(\mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}\ >\ 0)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}\ \&\ 1)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \mbox{\hyperlink{ordered-map_8min_8js_ad9a7d92cb87932d25187fdec3ba1b621}{s}}\ +=\ \mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}};}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}\ >>>=\ 1;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}\ >\ 0)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}\ +=\ \mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}};}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{ordered-map_8min_8js_ad9a7d92cb87932d25187fdec3ba1b621}{s}};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Fills a string with a particular value. If you want the string to be a byte string, pass in String.\+from\+Char\+Code(the\+Byte).
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & the character to fill the string with, use String.\+from\+Char\+Code to fill the string with a byte value. \\
+\hline
+{\em n} & the number of characters of value c to fill with.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the filled string. 
+\end{DoxyReturn}
+\Hypertarget{node-forge_2lib_2util_8js_a4b6b059fba6e322b734b062ebfe0ea1f}\index{util.js@{util.js}!fillWithByte@{fillWithByte}}
+\index{fillWithByte@{fillWithByte}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{fillWithByte}{fillWithByte}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_a4b6b059fba6e322b734b062ebfe0ea1f} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_af2ca5985446bc50a0e237108dd4fa56d}{Data\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} fill\+With\+Byte}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}},\ \mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}})\ \{}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}\ =\ String.fromCharCode(\mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}});}
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{uuid_8min_8js_aeb337d295abaddb5ec3cb34cc2e2bbc9}{d}}\ =\ this.\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}};}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{while}(\mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}\ >\ 0)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}\ \&\ 1)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ d\ +=\ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}};}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}\ >>>=\ 1;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}\ >\ 0)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}\ +=\ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}};}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\ \ this.\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}\ =\ \mbox{\hyperlink{uuid_8min_8js_aeb337d295abaddb5ec3cb34cc2e2bbc9}{d}};}
+\DoxyCodeLine{\ \ this.\mbox{\hyperlink{node-forge_2lib_2util_8js_a42f83600f6c8176115c953fb5865324a}{\_optimizeConstructedString}}(\mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}});}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{this};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Puts a byte in this buffer N times.
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & the byte to put. \\
+\hline
+{\em n} & the number of bytes of value b to put.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+this buffer. 
+\end{DoxyReturn}
+\Hypertarget{node-forge_2lib_2util_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}\index{util.js@{util.js}!forge@{forge}}
+\index{forge@{forge}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{forge}{forge}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_ab4dbef01e35b8e6d06087c0542ba9e2c} 
+var forge = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./forge\textquotesingle{})}
+
+Utility functions for web applications.
+
+\begin{DoxyAuthor}{Author}
+Dave Longley
+\end{DoxyAuthor}
+Copyright (c) 2010-\/2018 Digital Bazaar, Inc. \Hypertarget{node-forge_2lib_2util_8js_a66f24ca11c08afe75ae5a64d4252d968}\index{util.js@{util.js}!format@{format}}
+\index{format@{format}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{format}{format}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_a66f24ca11c08afe75ae5a64d4252d968} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} format}
+
+Format with simple printf-\/style interpolation.
+
+\%\%\+: literal \textquotesingle{}\textquotesingle{} s,o\+: convert next argument into a string.
+
+
+\begin{DoxyParams}{Parameters}
+{\em format} & the string to format. \\
+\hline
+{\em ...} & arguments to interpolate into the format string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{node-forge_2lib_2util_8js_a05339cb4ac19e62e763b0b59fa799887}\index{util.js@{util.js}!formatNumber@{formatNumber}}
+\index{formatNumber@{formatNumber}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{formatNumber}{formatNumber}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_a05339cb4ac19e62e763b0b59fa799887} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} format\+Number}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(number,\ decimals,\ dec\_point,\ thousands\_sep)\ \{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}\ =\ number,\ \mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}\ =\ \mbox{\hyperlink{lodash_2core_8js_ae2c7b9b535f93c96826bdbe1da681ceb}{isNaN}}(decimals\ =\ Math.abs(decimals))\ ?\ 2\ :\ decimals;}
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{uuid_8min_8js_aeb337d295abaddb5ec3cb34cc2e2bbc9}{d}}\ =\ dec\_point\ ===\ \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}\ ?\ \textcolor{charliteral}{','}\ :\ dec\_point;}
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{uuidv4_8min_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}}\ =\ thousands\_sep\ ===\ \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}\ ?}
+\DoxyCodeLine{\ \ \ \textcolor{charliteral}{'.'}\ :\ thousands\_sep,\ \mbox{\hyperlink{ordered-map_8min_8js_ad9a7d92cb87932d25187fdec3ba1b621}{s}}\ =\ \mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}\ <\ 0\ ?\ \textcolor{charliteral}{'-\/'}\ :\ \textcolor{stringliteral}{''};}
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ =\ \mbox{\hyperlink{parse_int_8js_a04ee837a5f7721fcb0ea2d152162ef92}{parseInt}}((\mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}\ =\ Math.abs(+\mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}\ ||\ 0).toFixed(\mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}})),\ 10)\ +\ \textcolor{stringliteral}{''};}
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{ordered-map_8min_8js_a2e0772d176c27e9cea01defba2a9575a}{j}}\ =\ (\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}.length\ >\ 3)\ ?\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}.length\ \%\ 3\ :\ 0;}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{ordered-map_8min_8js_ad9a7d92cb87932d25187fdec3ba1b621}{s}}\ +\ (\mbox{\hyperlink{ordered-map_8min_8js_a2e0772d176c27e9cea01defba2a9575a}{j}}\ ?\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}.substr(0,\ \mbox{\hyperlink{ordered-map_8min_8js_a2e0772d176c27e9cea01defba2a9575a}{j}})\ +\ \mbox{\hyperlink{uuidv4_8min_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}}\ :\ \textcolor{stringliteral}{''})\ +}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}.substr(\mbox{\hyperlink{ordered-map_8min_8js_a2e0772d176c27e9cea01defba2a9575a}{j}}).replace(/(\(\backslash\)\mbox{\hyperlink{uuid_8min_8js_aeb337d295abaddb5ec3cb34cc2e2bbc9}{d}}\{3\})(?=\(\backslash\)\mbox{\hyperlink{uuid_8min_8js_aeb337d295abaddb5ec3cb34cc2e2bbc9}{d}})/\mbox{\hyperlink{ordered-map_8min_8js_a103df269476e78897c9c4c6cb8f4eb06}{g}},\ \textcolor{stringliteral}{'\$1'}\ +\ \mbox{\hyperlink{uuidv4_8min_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}})\ +}
+\DoxyCodeLine{\ \ \ \ (\mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}\ ?\ \mbox{\hyperlink{uuid_8min_8js_aeb337d295abaddb5ec3cb34cc2e2bbc9}{d}}\ +\ Math.abs(\mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}\ -\/\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}).toFixed(\mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}).slice(2)\ :\ \textcolor{stringliteral}{''});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Formats a number.
+
+\href{http://snipplr.com/view/5945/javascript-numberformat&ndash;ported-from-php/}{\texttt{ http\+://snipplr.\+com/view/5945/javascript-\/numberformat--ported-\/from-\/php/}} \Hypertarget{node-forge_2lib_2util_8js_aaf41c52cf0ad0b88bb1b94f7b1385d49}\index{util.js@{util.js}!formatSize@{formatSize}}
+\index{formatSize@{formatSize}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{formatSize}{formatSize}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_aaf41c52cf0ad0b88bb1b94f7b1385d49} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} format\+Size}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{ordered-map_8min_8js_aa4a39500e3f754a8f2e1fd50b9ae523c}{size}})\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{ordered-map_8min_8js_aa4a39500e3f754a8f2e1fd50b9ae523c}{size}}\ >=\ 1073741824)\ \{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{ordered-map_8min_8js_aa4a39500e3f754a8f2e1fd50b9ae523c}{size}}\ =\ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2cjs_2src_2nodejs-common_2util_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}}.formatNumber(\mbox{\hyperlink{ordered-map_8min_8js_aa4a39500e3f754a8f2e1fd50b9ae523c}{size}}\ /\ 1073741824,\ 2,\ \textcolor{charliteral}{'.'},\ \textcolor{stringliteral}{''})\ +\ \textcolor{stringliteral}{'\ GiB'};}
+\DoxyCodeLine{\ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}(\mbox{\hyperlink{ordered-map_8min_8js_aa4a39500e3f754a8f2e1fd50b9ae523c}{size}}\ >=\ 1048576)\ \{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{ordered-map_8min_8js_aa4a39500e3f754a8f2e1fd50b9ae523c}{size}}\ =\ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2cjs_2src_2nodejs-common_2util_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}}.formatNumber(\mbox{\hyperlink{ordered-map_8min_8js_aa4a39500e3f754a8f2e1fd50b9ae523c}{size}}\ /\ 1048576,\ 2,\ \textcolor{charliteral}{'.'},\ \textcolor{stringliteral}{''})\ +\ \textcolor{stringliteral}{'\ MiB'};}
+\DoxyCodeLine{\ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}(\mbox{\hyperlink{ordered-map_8min_8js_aa4a39500e3f754a8f2e1fd50b9ae523c}{size}}\ >=\ 1024)\ \{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{ordered-map_8min_8js_aa4a39500e3f754a8f2e1fd50b9ae523c}{size}}\ =\ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2cjs_2src_2nodejs-common_2util_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}}.formatNumber(\mbox{\hyperlink{ordered-map_8min_8js_aa4a39500e3f754a8f2e1fd50b9ae523c}{size}}\ /\ 1024,\ 0)\ +\ \textcolor{stringliteral}{'\ KiB'};}
+\DoxyCodeLine{\ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{ordered-map_8min_8js_aa4a39500e3f754a8f2e1fd50b9ae523c}{size}}\ =\ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2cjs_2src_2nodejs-common_2util_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}}.formatNumber(\mbox{\hyperlink{ordered-map_8min_8js_aa4a39500e3f754a8f2e1fd50b9ae523c}{size}},\ 0)\ +\ \textcolor{stringliteral}{'\ bytes'};}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{ordered-map_8min_8js_aa4a39500e3f754a8f2e1fd50b9ae523c}{size}};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Formats a byte size.
+
+\href{http://snipplr.com/view/5949/format-humanize-file-byte-size-presentation-in-javascript/}{\texttt{ http\+://snipplr.\+com/view/5949/format-\/humanize-\/file-\/byte-\/size-\/presentation-\/in-\/javascript/}} \Hypertarget{node-forge_2lib_2util_8js_aa520297ca8b55f9373b3c23ae5037a95}\index{util.js@{util.js}!getByte@{getByte}}
+\index{getByte@{getByte}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{getByte}{getByte}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_aa520297ca8b55f9373b3c23ae5037a95} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_af2ca5985446bc50a0e237108dd4fa56d}{Data\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} get\+Byte}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}()\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}.charCodeAt(this.\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a99dd3b4c246dbde846b5228e734d9341}{read}}++);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Gets a byte from this buffer and advances the read pointer by 1.
+
+\begin{DoxyReturn}{Returns}
+the byte. 
+\end{DoxyReturn}
+\Hypertarget{node-forge_2lib_2util_8js_a5d9d16fafe225eb7bc75ea76b87c7e9a}\index{util.js@{util.js}!getBytes@{getBytes}}
+\index{getBytes@{getBytes}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{getBytes}{getBytes}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_a5d9d16fafe225eb7bc75ea76b87c7e9a} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_af2ca5985446bc50a0e237108dd4fa56d}{Data\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} get\+Bytes}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{cjs_2internal_2operators_2count_8js_ac88314f55a9398aa7c8da3c0aae90d53}{count}})\ \{}
+\DoxyCodeLine{\ \ var\ rval;}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{cjs_2internal_2operators_2count_8js_ac88314f55a9398aa7c8da3c0aae90d53}{count}})\ \{}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{cjs_2internal_2operators_2count_8js_ac88314f55a9398aa7c8da3c0aae90d53}{count}}\ =\ Math.min(this.\mbox{\hyperlink{node-forge_2lib_2util_8js_a2abec698811250e9dda18895bbcf8ab2}{length}}(),\ \mbox{\hyperlink{cjs_2internal_2operators_2count_8js_ac88314f55a9398aa7c8da3c0aae90d53}{count}});}
+\DoxyCodeLine{\ \ \ \ rval\ =\ this.\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}.slice(this.\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a99dd3b4c246dbde846b5228e734d9341}{read}},\ this.\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a99dd3b4c246dbde846b5228e734d9341}{read}}\ +\ \mbox{\hyperlink{cjs_2internal_2operators_2count_8js_ac88314f55a9398aa7c8da3c0aae90d53}{count}});}
+\DoxyCodeLine{\ \ \ \ this.\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a99dd3b4c246dbde846b5228e734d9341}{read}}\ +=\ \mbox{\hyperlink{cjs_2internal_2operators_2count_8js_ac88314f55a9398aa7c8da3c0aae90d53}{count}};}
+\DoxyCodeLine{\ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}(\mbox{\hyperlink{cjs_2internal_2operators_2count_8js_ac88314f55a9398aa7c8da3c0aae90d53}{count}}\ ===\ 0)\ \{}
+\DoxyCodeLine{\ \ \ \ rval\ =\ \textcolor{stringliteral}{''};}
+\DoxyCodeLine{\ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ rval\ =\ (this.\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a99dd3b4c246dbde846b5228e734d9341}{read}}\ ===\ 0)\ ?\ this.\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}\ :\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a05c09a5e9d53fa7adf0a7936038c2fa3}{this}}.\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}.\mbox{\hyperlink{express_2lib_2router_2index_8js_acab0c09ac73e7a3c85a21fa773e9b8b0}{slice}}(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a05c09a5e9d53fa7adf0a7936038c2fa3}{this}}.\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a99dd3b4c246dbde846b5228e734d9341}{read}});}
+\DoxyCodeLine{\ \ \ \ this.\mbox{\hyperlink{node-forge_2lib_2util_8js_a65921ba8a67e74d6e1a13e7605d840fb}{clear}}();}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ rval;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Reads bytes out as a binary encoded string and clears them from the buffer. Note that the resulting string is binary encoded (in node.\+js this encoding is referred to as {\ttfamily binary}, it is {\itshape not} {\ttfamily utf8}).
+
+
+\begin{DoxyParams}{Parameters}
+{\em count} & the number of bytes to read, undefined or null for all.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a binary encoded string of bytes.
+\end{DoxyReturn}
+Reads bytes out as a binary encoded string and clears them from the buffer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em count} & the number of bytes to read, undefined or null for all.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a binary encoded string of bytes. 
+\end{DoxyReturn}
+\Hypertarget{node-forge_2lib_2util_8js_a60a5d63dbaf036f5b4849a4956d1bcf1}\index{util.js@{util.js}!getInt@{getInt}}
+\index{getInt@{getInt}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{getInt}{getInt}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_a60a5d63dbaf036f5b4849a4956d1bcf1} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_af2ca5985446bc50a0e237108dd4fa56d}{Data\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} get\+Int}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}})\ \{}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{node-forge_2lib_2util_8js_a597f5efe02f0d3e307888e099aa553fe}{\_checkBitsParam}}(\mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}});}
+\DoxyCodeLine{\ \ var\ rval\ =\ 0;}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{do}\ \{}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ rval\ =\ (rval\ <<\ 8)\ +\ this.\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}.charCodeAt(\textcolor{keyword}{this}.read++);}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}\ -\/=\ 8;}
+\DoxyCodeLine{\ \ \}\ \textcolor{keywordflow}{while}(\mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}\ >\ 0);}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ rval;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Gets an n-\/bit integer from this buffer in big-\/endian order and advances the read pointer by ceil(n/8).
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & the number of bits in the integer (8, 16, 24, or 32).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the integer.
+\end{DoxyReturn}
+Gets an n-\/bit integer from this buffer in big-\/endian order and advances the read pointer by n/8.
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & the number of bits in the integer (8, 16, 24, or 32).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the integer. 
+\end{DoxyReturn}
+\Hypertarget{node-forge_2lib_2util_8js_a11a43b826c142b970ab6a04521d3e977}\index{util.js@{util.js}!getInt16@{getInt16}}
+\index{getInt16@{getInt16}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{getInt16}{getInt16}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_a11a43b826c142b970ab6a04521d3e977} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_af2ca5985446bc50a0e237108dd4fa56d}{Data\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} get\+Int16}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}()\ \{}
+\DoxyCodeLine{\ \ var\ rval\ =\ (}
+\DoxyCodeLine{\ \ \ \ this.\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}.charCodeAt(this.\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a99dd3b4c246dbde846b5228e734d9341}{read}})\ <<\ 8\ \string^}
+\DoxyCodeLine{\ \ \ \ this.\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}.charCodeAt(\textcolor{keyword}{this}.read\ +\ 1));}
+\DoxyCodeLine{\ \ this.\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a99dd3b4c246dbde846b5228e734d9341}{read}}\ +=\ 2;}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ rval;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Gets a uint16 from this buffer in big-\/endian order and advances the read pointer by 2.
+
+\begin{DoxyReturn}{Returns}
+the uint16. 
+\end{DoxyReturn}
+\Hypertarget{node-forge_2lib_2util_8js_aa03a09d8842047feca43a4d4f925457f}\index{util.js@{util.js}!getInt16Le@{getInt16Le}}
+\index{getInt16Le@{getInt16Le}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{getInt16Le}{getInt16Le}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_aa03a09d8842047feca43a4d4f925457f} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_af2ca5985446bc50a0e237108dd4fa56d}{Data\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} get\+Int16\+Le}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}()\ \{}
+\DoxyCodeLine{\ \ var\ rval\ =\ (}
+\DoxyCodeLine{\ \ \ \ this.\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}.charCodeAt(this.\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a99dd3b4c246dbde846b5228e734d9341}{read}})\ \string^}
+\DoxyCodeLine{\ \ \ \ this.\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}.charCodeAt(\textcolor{keyword}{this}.read\ +\ 1)\ <<\ 8);}
+\DoxyCodeLine{\ \ this.\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a99dd3b4c246dbde846b5228e734d9341}{read}}\ +=\ 2;}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ rval;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Gets a uint16 from this buffer in little-\/endian order and advances the read pointer by 2.
+
+\begin{DoxyReturn}{Returns}
+the uint16. 
+\end{DoxyReturn}
+\Hypertarget{node-forge_2lib_2util_8js_a336d1d203f44d50b7fe6127d608644f4}\index{util.js@{util.js}!getInt24@{getInt24}}
+\index{getInt24@{getInt24}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{getInt24}{getInt24}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_a336d1d203f44d50b7fe6127d608644f4} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_af2ca5985446bc50a0e237108dd4fa56d}{Data\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} get\+Int24}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}()\ \{}
+\DoxyCodeLine{\ \ var\ rval\ =\ (}
+\DoxyCodeLine{\ \ \ \ this.\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}.charCodeAt(this.\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a99dd3b4c246dbde846b5228e734d9341}{read}})\ <<\ 16\ \string^}
+\DoxyCodeLine{\ \ \ \ this.\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}.charCodeAt(\textcolor{keyword}{this}.read\ +\ 1)\ <<\ 8\ \string^}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{this}.data.charCodeAt(\textcolor{keyword}{this}.read\ +\ 2));}
+\DoxyCodeLine{\ \ this.\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a99dd3b4c246dbde846b5228e734d9341}{read}}\ +=\ 3;}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ rval;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Gets a uint24 from this buffer in big-\/endian order and advances the read pointer by 3.
+
+\begin{DoxyReturn}{Returns}
+the uint24. 
+\end{DoxyReturn}
+\Hypertarget{node-forge_2lib_2util_8js_af81e64b9184c6c7fff4827d2188aba70}\index{util.js@{util.js}!getInt24Le@{getInt24Le}}
+\index{getInt24Le@{getInt24Le}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{getInt24Le}{getInt24Le}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_af81e64b9184c6c7fff4827d2188aba70} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_af2ca5985446bc50a0e237108dd4fa56d}{Data\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} get\+Int24\+Le}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}()\ \{}
+\DoxyCodeLine{\ \ var\ rval\ =\ (}
+\DoxyCodeLine{\ \ \ \ this.\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}.charCodeAt(this.\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a99dd3b4c246dbde846b5228e734d9341}{read}})\ \string^}
+\DoxyCodeLine{\ \ \ \ this.\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}.charCodeAt(\textcolor{keyword}{this}.read\ +\ 1)\ <<\ 8\ \string^}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{this}.data.charCodeAt(\textcolor{keyword}{this}.read\ +\ 2)\ <<\ 16);}
+\DoxyCodeLine{\ \ this.\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a99dd3b4c246dbde846b5228e734d9341}{read}}\ +=\ 3;}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ rval;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Gets a uint24 from this buffer in little-\/endian order and advances the read pointer by 3.
+
+\begin{DoxyReturn}{Returns}
+the uint24. 
+\end{DoxyReturn}
+\Hypertarget{node-forge_2lib_2util_8js_a36008d6b260f991e19e4e1710c17651a}\index{util.js@{util.js}!getInt32@{getInt32}}
+\index{getInt32@{getInt32}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{getInt32}{getInt32}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_a36008d6b260f991e19e4e1710c17651a} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_af2ca5985446bc50a0e237108dd4fa56d}{Data\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} get\+Int32}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}()\ \{}
+\DoxyCodeLine{\ \ var\ rval\ =\ (}
+\DoxyCodeLine{\ \ \ \ this.\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}.charCodeAt(this.\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a99dd3b4c246dbde846b5228e734d9341}{read}})\ <<\ 24\ \string^}
+\DoxyCodeLine{\ \ \ \ this.\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}.charCodeAt(\textcolor{keyword}{this}.read\ +\ 1)\ <<\ 16\ \string^}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{this}.data.charCodeAt(\textcolor{keyword}{this}.read\ +\ 2)\ <<\ 8\ \string^}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{this}.data.charCodeAt(\textcolor{keyword}{this}.read\ +\ 3));}
+\DoxyCodeLine{\ \ this.\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a99dd3b4c246dbde846b5228e734d9341}{read}}\ +=\ 4;}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ rval;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Gets a uint32 from this buffer in big-\/endian order and advances the read pointer by 4.
+
+\begin{DoxyReturn}{Returns}
+the word. 
+\end{DoxyReturn}
+\Hypertarget{node-forge_2lib_2util_8js_a637b00d1ad0bc6489fbda436ef3667b5}\index{util.js@{util.js}!getInt32Le@{getInt32Le}}
+\index{getInt32Le@{getInt32Le}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{getInt32Le}{getInt32Le}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_a637b00d1ad0bc6489fbda436ef3667b5} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_af2ca5985446bc50a0e237108dd4fa56d}{Data\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} get\+Int32\+Le}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}()\ \{}
+\DoxyCodeLine{\ \ var\ rval\ =\ (}
+\DoxyCodeLine{\ \ \ \ this.\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}.charCodeAt(this.\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a99dd3b4c246dbde846b5228e734d9341}{read}})\ \string^}
+\DoxyCodeLine{\ \ \ \ this.\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}.charCodeAt(\textcolor{keyword}{this}.read\ +\ 1)\ <<\ 8\ \string^}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{this}.data.charCodeAt(\textcolor{keyword}{this}.read\ +\ 2)\ <<\ 16\ \string^}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{this}.data.charCodeAt(\textcolor{keyword}{this}.read\ +\ 3)\ <<\ 24);}
+\DoxyCodeLine{\ \ this.\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a99dd3b4c246dbde846b5228e734d9341}{read}}\ +=\ 4;}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ rval;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Gets a uint32 from this buffer in little-\/endian order and advances the read pointer by 4.
+
+\begin{DoxyReturn}{Returns}
+the word. 
+\end{DoxyReturn}
+\Hypertarget{node-forge_2lib_2util_8js_a88e325f56bb065f4b05e4590a9420450}\index{util.js@{util.js}!getItem@{getItem}}
+\index{getItem@{getItem}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{getItem}{getItem}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_a88e325f56bb065f4b05e4590a9420450} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} get\+Item}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}},\ id,\ key,\ \mbox{\hyperlink{response_8js_a75ec03e18914bc8699236700707f598d}{location}})\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{node-forge_2lib_2util_8js_ad80ed82f9223467aa246b999b9c8e4b3}{\_callStorageFunction}}(\mbox{\hyperlink{node-forge_2lib_2util_8js_a01e11eba1e3e6be9247eb7763194f1df}{\_getItem}},\ arguments,\ \mbox{\hyperlink{response_8js_a75ec03e18914bc8699236700707f598d}{location}});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Gets an item on local disk.
+
+Set \doxylink{node-forge_2lib_2util_8js_ad79f45e19abb62870b38a173145eca5a}{set\+Item()} for details on storage types.
+
+
+\begin{DoxyParams}{Parameters}
+{\em api} & the flash interface, null to use only Web\+Storage. \\
+\hline
+{\em id} & the storage ID to use. \\
+\hline
+{\em key} & the key for the item. \\
+\hline
+{\em location} & an array with the preferred types of storage to use.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the item. 
+\end{DoxyReturn}
+\Hypertarget{node-forge_2lib_2util_8js_ac0b19f5bb3419ee39ffabaca1bf9f0dd}\index{util.js@{util.js}!getSignedInt@{getSignedInt}}
+\index{getSignedInt@{getSignedInt}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{getSignedInt}{getSignedInt}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_ac0b19f5bb3419ee39ffabaca1bf9f0dd} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_af2ca5985446bc50a0e237108dd4fa56d}{Data\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} get\+Signed\+Int}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}})\ \{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ var\ x\ =\ this.\mbox{\hyperlink{node-forge_2lib_2util_8js_a60a5d63dbaf036f5b4849a4956d1bcf1}{getInt}}(\mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}});}
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{implementation_8js_a2af6481e8d02218064702cc796ef97ef}{max}}\ =\ 2\ <<\ (\mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}\ -\/\ 2);}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}(x\ >=\ \mbox{\hyperlink{implementation_8js_a2af6481e8d02218064702cc796ef97ef}{max}})\ \{}
+\DoxyCodeLine{\ \ \ \ x\ -\/=\ \mbox{\hyperlink{implementation_8js_a2af6481e8d02218064702cc796ef97ef}{max}}\ <<\ 1;}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ x;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Gets a signed n-\/bit integer from this buffer in big-\/endian order, using two\textquotesingle{}s complement, and advances the read pointer by n/8.
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & the number of bits in the integer (8, 16, 24, or 32).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the integer. 
+\end{DoxyReturn}
+\Hypertarget{node-forge_2lib_2util_8js_a8f4e2be62834a9cd4172f3fcf5aa2e32}\index{util.js@{util.js}!globalScope@{globalScope}}
+\index{globalScope@{globalScope}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{globalScope}{globalScope}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_a8f4e2be62834a9cd4172f3fcf5aa2e32} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} global\+Scope}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ (\textcolor{keyword}{function}()\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2cjs_2src_2nodejs-common_2util_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}}.isNodejs)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{ordered-map_8js_a57efe929cc6b44042891d05e15cec785}{global}};}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ typeof\ \textcolor{keyword}{self}\ ===\ \textcolor{stringliteral}{'undefined'}\ ?\ \mbox{\hyperlink{forge_8all_8min_8js_a77335ab2a82353d4a02f9ba062031c46}{window}}\ :\ \textcolor{keyword}{self};}
+\DoxyCodeLine{\})()}
+
+\end{DoxyCode}
+\Hypertarget{node-forge_2lib_2util_8js_a641c4491d4191705025985a85949cf39}\index{util.js@{util.js}!hexToBytes@{hexToBytes}}
+\index{hexToBytes@{hexToBytes}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{hexToBytes}{hexToBytes}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_a641c4491d4191705025985a85949cf39} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} hex\+To\+Bytes}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{conversions_8js_ad69b853a65b1b99def2b5b90d9bd63e9}{hex}})\ \{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ var\ rval\ =\ \textcolor{stringliteral}{''};}
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ =\ 0;}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{conversions_8js_ad69b853a65b1b99def2b5b90d9bd63e9}{hex}}.length\ \&\ 1\ ==\ 1)\ \{}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ =\ 1;}
+\DoxyCodeLine{\ \ \ \ rval\ +=\ String.fromCharCode(\mbox{\hyperlink{parse_int_8js_a04ee837a5f7721fcb0ea2d152162ef92}{parseInt}}(\mbox{\hyperlink{conversions_8js_ad69b853a65b1b99def2b5b90d9bd63e9}{hex}}[0],\ 16));}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{for}(;\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ <\ \mbox{\hyperlink{conversions_8js_ad69b853a65b1b99def2b5b90d9bd63e9}{hex}}.length;\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ +=\ 2)\ \{}
+\DoxyCodeLine{\ \ \ \ rval\ +=\ String.fromCharCode(\mbox{\hyperlink{parse_int_8js_a04ee837a5f7721fcb0ea2d152162ef92}{parseInt}}(\mbox{\hyperlink{conversions_8js_ad69b853a65b1b99def2b5b90d9bd63e9}{hex}}.substr(\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}},\ 2),\ 16));}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ rval;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Converts a hex string into a \textquotesingle{}binary\textquotesingle{} encoded string of bytes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em hex} & the hexadecimal string to convert.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the binary-\/encoded string of bytes. 
+\end{DoxyReturn}
+\Hypertarget{node-forge_2lib_2util_8js_ac2b18bc3331b6382a6400ef28e752748}\index{util.js@{util.js}!inflate@{inflate}}
+\index{inflate@{inflate}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{inflate}{inflate}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_ac2b18bc3331b6382a6400ef28e752748} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} inflate}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}},\ \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}},\ \mbox{\hyperlink{concurrently_2dist_2src_2defaults_8js_a6fddf0a674d03300188e5ba3195c9a00}{raw}})\ \{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ var\ rval\ =\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}}.inflate(\mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2cjs_2src_2nodejs-common_2util_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}}.encode64(\mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}})).rval;}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ (rval\ ===\ \textcolor{keyword}{null})\ ?\ null\ :\ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2cjs_2src_2nodejs-common_2util_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}}.decode64(rval);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Inflates the given data using a flash interface.
+
+
+\begin{DoxyParams}{Parameters}
+{\em api} & the flash interface. \\
+\hline
+{\em bytes} & the data. \\
+\hline
+{\em raw} & true if the incoming data has no zlib header or trailer and is raw DEFLATE data.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the inflated data as a string, null on error. 
+\end{DoxyReturn}
+\Hypertarget{node-forge_2lib_2util_8js_a807e6a02de574d2718230f4ec445e2c2}\index{util.js@{util.js}!int32ToBytes@{int32ToBytes}}
+\index{int32ToBytes@{int32ToBytes}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{int32ToBytes}{int32ToBytes}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_a807e6a02de574d2718230f4ec445e2c2} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} int32\+To\+Bytes}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}})\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ (}
+\DoxyCodeLine{\ \ \ \ String.fromCharCode(\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ >>\ 24\ \&\ 0xFF)\ +}
+\DoxyCodeLine{\ \ \ \ String.fromCharCode(\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ >>\ 16\ \&\ 0xFF)\ +}
+\DoxyCodeLine{\ \ \ \ String.fromCharCode(\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ >>\ 8\ \&\ 0xFF)\ +}
+\DoxyCodeLine{\ \ \ \ String.fromCharCode(\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ \&\ 0xFF));}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Converts an 32-\/bit integer to 4-\/big-\/endian byte string.
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & the integer.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the byte string. 
+\end{DoxyReturn}
+\Hypertarget{node-forge_2lib_2util_8js_af517b69e969458c2ff3d2dd2c196fabc}\index{util.js@{util.js}!isArray@{isArray}}
+\index{isArray@{isArray}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{isArray}{isArray}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_af517b69e969458c2ff3d2dd2c196fabc} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} is\+Array}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \mbox{\hyperlink{src_2util_2minimal_8js_a325c4e317c38d8497130ebce7670be2f}{Array}}.isArray\ ||\ \textcolor{keyword}{function}(x)\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ Object.prototype.toString.call(x)\ ===\ \textcolor{stringliteral}{'[object\ Array]'};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{node-forge_2lib_2util_8js_ad7941977c271d24090a4936121ea2266}\index{util.js@{util.js}!isArrayBuffer@{isArrayBuffer}}
+\index{isArrayBuffer@{isArrayBuffer}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{isArrayBuffer}{isArrayBuffer}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_ad7941977c271d24090a4936121ea2266} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} is\+Array\+Buffer}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(x)\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ typeof\ ArrayBuffer\ !==\ \textcolor{stringliteral}{'undefined'}\ \&\&\ x\ instanceof\ ArrayBuffer;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{node-forge_2lib_2util_8js_aaff6750c47c1935750072378b191272c}\index{util.js@{util.js}!isArrayBufferView@{isArrayBufferView}}
+\index{isArrayBufferView@{isArrayBufferView}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{isArrayBufferView}{isArrayBufferView}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_aaff6750c47c1935750072378b191272c} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} is\+Array\+Buffer\+View}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(x)\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ x\ \&\&\ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2cjs_2src_2nodejs-common_2util_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}}.isArrayBuffer(x.buffer)\ \&\&\ x.byteLength\ !==\ \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{node-forge_2lib_2util_8js_aefec98137b4c16f950a3f8034e38303f}\index{util.js@{util.js}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{isEmpty}{isEmpty}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_aefec98137b4c16f950a3f8034e38303f} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} is\+Empty}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}()\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{node-forge_2lib_2util_8js_a2abec698811250e9dda18895bbcf8ab2}{length}}()\ <=\ 0;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Gets whether or not this buffer is empty.
+
+\begin{DoxyReturn}{Returns}
+true if this buffer is empty, false if not.
+\end{DoxyReturn}
+Check if an object is empty.
+
+Taken from\+: \href{http://stackoverflow.com/questions/679915/how-do-i-test-for-an-empty-javascript-object-from-json/679937\#679937}{\texttt{ http\+://stackoverflow.\+com/questions/679915/how-\/do-\/i-\/test-\/for-\/an-\/empty-\/javascript-\/object-\/from-\/json/679937\#679937}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & the object to check. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{node-forge_2lib_2util_8js_a9453d121c87bf2ffe934862ee1c9733a}\index{util.js@{util.js}!isNodejs@{isNodejs}}
+\index{isNodejs@{isNodejs}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{isNodejs}{isNodejs}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_a9453d121c87bf2ffe934862ee1c9733a} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} is\+Nodejs}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{\ \ typeof\ \mbox{\hyperlink{ipaddr_8min_8js_abcedab16429ea0641c6596f556f2e102}{process}}\ !==\ \textcolor{stringliteral}{'undefined'}\ \&\&\ \mbox{\hyperlink{ipaddr_8min_8js_abcedab16429ea0641c6596f556f2e102}{process}}.versions\ \&\&\ \mbox{\hyperlink{ipaddr_8min_8js_abcedab16429ea0641c6596f556f2e102}{process}}.versions.node}
+
+\end{DoxyCode}
+\Hypertarget{node-forge_2lib_2util_8js_a18fd9acda23a2bd9fa792470c332f6bc}\index{util.js@{util.js}!last@{last}}
+\index{last@{last}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{last}{last}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_a18fd9acda23a2bd9fa792470c332f6bc} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_af2ca5985446bc50a0e237108dd4fa56d}{Data\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} last}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}()\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}.charCodeAt(this.\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}.length\ -\/\ 1);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Gets the last byte without modifying the read pointer.
+
+\begin{DoxyReturn}{Returns}
+the last byte. 
+\end{DoxyReturn}
+\Hypertarget{node-forge_2lib_2util_8js_a2abec698811250e9dda18895bbcf8ab2}\index{util.js@{util.js}!length@{length}}
+\index{length@{length}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{length}{length}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_a2abec698811250e9dda18895bbcf8ab2} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_af2ca5985446bc50a0e237108dd4fa56d}{Data\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} length}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}()\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}.length\ -\/\ this.\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a99dd3b4c246dbde846b5228e734d9341}{read}};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Gets the number of bytes in this buffer.
+
+\begin{DoxyReturn}{Returns}
+the number of bytes in this buffer. 
+\end{DoxyReturn}
+\Hypertarget{node-forge_2lib_2util_8js_a4c5e782564fb68a77a3691fe971064c0}\index{util.js@{util.js}!nextTick@{nextTick}}
+\index{nextTick@{nextTick}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{nextTick}{nextTick}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_a4c5e782564fb68a77a3691fe971064c0} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} next\+Tick = \mbox{\hyperlink{rxjs_8umd_8js_a5008ba0c81d22f889926a449c993ac53}{util.\+set\+Immediate}}}
+
+\Hypertarget{node-forge_2lib_2util_8js_a14d023a925aa4e0ff2c0ecc315a50efd}\index{util.js@{util.js}!putBuffer@{putBuffer}}
+\index{putBuffer@{putBuffer}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{putBuffer}{putBuffer}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_a14d023a925aa4e0ff2c0ecc315a50efd} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_af2ca5985446bc50a0e237108dd4fa56d}{Data\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} put\+Buffer}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{cjs_2internal_2operators_2buffer_8js_a838d54b935df11eff7928ba8da636891}{buffer}})\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{node-forge_2lib_2util_8js_a0f5951fa016615ffc42ebc2526fd1fc1}{putBytes}}(\mbox{\hyperlink{cjs_2internal_2operators_2buffer_8js_a838d54b935df11eff7928ba8da636891}{buffer}}.getBytes());}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Puts the given buffer into this buffer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & the buffer to put into this one.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+this buffer. 
+\end{DoxyReturn}
+\Hypertarget{node-forge_2lib_2util_8js_ad7ae0e6e39076e24da9278fda43481c9}\index{util.js@{util.js}!putByte@{putByte}}
+\index{putByte@{putByte}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{putByte}{putByte}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_ad7ae0e6e39076e24da9278fda43481c9} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_af2ca5985446bc50a0e237108dd4fa56d}{Data\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} put\+Byte}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}})\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{node-forge_2lib_2util_8js_a0f5951fa016615ffc42ebc2526fd1fc1}{putBytes}}(String.fromCharCode(\mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}));}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Puts a byte in this buffer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & the byte to put.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+this buffer. 
+\end{DoxyReturn}
+\Hypertarget{node-forge_2lib_2util_8js_a0f5951fa016615ffc42ebc2526fd1fc1}\index{util.js@{util.js}!putBytes@{putBytes}}
+\index{putBytes@{putBytes}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{putBytes}{putBytes}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_a0f5951fa016615ffc42ebc2526fd1fc1} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_af2ca5985446bc50a0e237108dd4fa56d}{Data\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} put\+Bytes}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}})\ \{}
+\DoxyCodeLine{\ \ this.\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}\ +=\ \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}};}
+\DoxyCodeLine{\ \ this.\mbox{\hyperlink{node-forge_2lib_2util_8js_a42f83600f6c8176115c953fb5865324a}{\_optimizeConstructedString}}(\mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}}.length);}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{this};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Puts bytes in this buffer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bytes} & the bytes (as a binary encoded string) to put.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+this buffer.
+\end{DoxyReturn}
+Puts bytes in this buffer. The bytes may be given as a string, an Array\+Buffer, a Data\+View, or a Typed\+Array.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bytes} & the bytes to put. \\
+\hline
+{\em \mbox{[}encoding\mbox{]}} & the encoding for the first parameter (\textquotesingle{}binary\textquotesingle{}, \textquotesingle{}utf8\textquotesingle{}, \textquotesingle{}utf16\textquotesingle{}, \textquotesingle{}hex\textquotesingle{}), if it is a string (default\+: \textquotesingle{}binary\textquotesingle{}).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+this buffer. 
+\end{DoxyReturn}
+\Hypertarget{node-forge_2lib_2util_8js_a333a6ea82c4c3dfb1683f478caf07ce7}\index{util.js@{util.js}!putInt@{putInt}}
+\index{putInt@{putInt}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{putInt}{putInt}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_a333a6ea82c4c3dfb1683f478caf07ce7} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_af2ca5985446bc50a0e237108dd4fa56d}{Data\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} put\+Int}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}},\ \mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}})\ \{}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{node-forge_2lib_2util_8js_a597f5efe02f0d3e307888e099aa553fe}{\_checkBitsParam}}(\mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}});}
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}}\ =\ \textcolor{stringliteral}{''};}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{do}\ \{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}\ -\/=\ 8;}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}}\ +=\ String.fromCharCode((\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ >>\ \mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}})\ \&\ 0xFF);}
+\DoxyCodeLine{\ \ \}\ \textcolor{keywordflow}{while}(\mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}\ >\ 0);}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{node-forge_2lib_2util_8js_a0f5951fa016615ffc42ebc2526fd1fc1}{putBytes}}(bytes);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Puts an n-\/bit integer in this buffer in big-\/endian order.
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & the n-\/bit integer. \\
+\hline
+{\em n} & the number of bits in the integer (8, 16, 24, or 32).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+this buffer. 
+\end{DoxyReturn}
+\Hypertarget{node-forge_2lib_2util_8js_a4d8650a0e0dd0ca5a00749f9e231686c}\index{util.js@{util.js}!putInt16@{putInt16}}
+\index{putInt16@{putInt16}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{putInt16}{putInt16}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_a4d8650a0e0dd0ca5a00749f9e231686c} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_af2ca5985446bc50a0e237108dd4fa56d}{Data\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} put\+Int16}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}})\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{node-forge_2lib_2util_8js_a0f5951fa016615ffc42ebc2526fd1fc1}{putBytes}}(}
+\DoxyCodeLine{\ \ \ \ String.fromCharCode(\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ >>\ 8\ \&\ 0xFF)\ +}
+\DoxyCodeLine{\ \ \ \ String.fromCharCode(\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ \&\ 0xFF));}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Puts a 16-\/bit integer in this buffer in big-\/endian order.
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & the 16-\/bit integer.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+this buffer. 
+\end{DoxyReturn}
+\Hypertarget{node-forge_2lib_2util_8js_ab8b5096131f848276a7d3bd41f1d9207}\index{util.js@{util.js}!putInt16Le@{putInt16Le}}
+\index{putInt16Le@{putInt16Le}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{putInt16Le}{putInt16Le}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_ab8b5096131f848276a7d3bd41f1d9207} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_af2ca5985446bc50a0e237108dd4fa56d}{Data\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} put\+Int16\+Le}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}})\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{node-forge_2lib_2util_8js_a0f5951fa016615ffc42ebc2526fd1fc1}{putBytes}}(}
+\DoxyCodeLine{\ \ \ \ String.fromCharCode(\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ \&\ 0xFF)\ +}
+\DoxyCodeLine{\ \ \ \ String.fromCharCode(\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ >>\ 8\ \&\ 0xFF));}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Puts a 16-\/bit integer in this buffer in little-\/endian order.
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & the 16-\/bit integer.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+this buffer. 
+\end{DoxyReturn}
+\Hypertarget{node-forge_2lib_2util_8js_a1fa3524dd4816405930c52d3f573fe88}\index{util.js@{util.js}!putInt24@{putInt24}}
+\index{putInt24@{putInt24}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{putInt24}{putInt24}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_a1fa3524dd4816405930c52d3f573fe88} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_af2ca5985446bc50a0e237108dd4fa56d}{Data\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} put\+Int24}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}})\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{node-forge_2lib_2util_8js_a0f5951fa016615ffc42ebc2526fd1fc1}{putBytes}}(}
+\DoxyCodeLine{\ \ \ \ String.fromCharCode(\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ >>\ 16\ \&\ 0xFF)\ +}
+\DoxyCodeLine{\ \ \ \ String.fromCharCode(\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ >>\ 8\ \&\ 0xFF)\ +}
+\DoxyCodeLine{\ \ \ \ String.fromCharCode(\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ \&\ 0xFF));}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Puts a 24-\/bit integer in this buffer in big-\/endian order.
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & the 24-\/bit integer.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+this buffer. 
+\end{DoxyReturn}
+\Hypertarget{node-forge_2lib_2util_8js_aeb60ea3d2405de3048cdab4e826ebb81}\index{util.js@{util.js}!putInt24Le@{putInt24Le}}
+\index{putInt24Le@{putInt24Le}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{putInt24Le}{putInt24Le}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_aeb60ea3d2405de3048cdab4e826ebb81} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_af2ca5985446bc50a0e237108dd4fa56d}{Data\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} put\+Int24\+Le}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}})\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{node-forge_2lib_2util_8js_a0f5951fa016615ffc42ebc2526fd1fc1}{putBytes}}(}
+\DoxyCodeLine{\ \ \ \ String.fromCharCode(\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ \&\ 0xFF)\ +}
+\DoxyCodeLine{\ \ \ \ String.fromCharCode(\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ >>\ 8\ \&\ 0xFF)\ +}
+\DoxyCodeLine{\ \ \ \ String.fromCharCode(\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ >>\ 16\ \&\ 0xFF));}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Puts a 24-\/bit integer in this buffer in little-\/endian order.
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & the 24-\/bit integer.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+this buffer. 
+\end{DoxyReturn}
+\Hypertarget{node-forge_2lib_2util_8js_ad283db7c06f96ee909d4eb56e73ed6d6}\index{util.js@{util.js}!putInt32@{putInt32}}
+\index{putInt32@{putInt32}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{putInt32}{putInt32}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_ad283db7c06f96ee909d4eb56e73ed6d6} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_af2ca5985446bc50a0e237108dd4fa56d}{Data\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} put\+Int32}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}})\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{node-forge_2lib_2util_8js_a0f5951fa016615ffc42ebc2526fd1fc1}{putBytes}}(}
+\DoxyCodeLine{\ \ \ \ String.fromCharCode(\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ >>\ 24\ \&\ 0xFF)\ +}
+\DoxyCodeLine{\ \ \ \ String.fromCharCode(\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ >>\ 16\ \&\ 0xFF)\ +}
+\DoxyCodeLine{\ \ \ \ String.fromCharCode(\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ >>\ 8\ \&\ 0xFF)\ +}
+\DoxyCodeLine{\ \ \ \ String.fromCharCode(\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ \&\ 0xFF));}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Puts a 32-\/bit integer in this buffer in big-\/endian order.
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & the 32-\/bit integer.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+this buffer. 
+\end{DoxyReturn}
+\Hypertarget{node-forge_2lib_2util_8js_afe1a0c0e385b685a00f70db2284a6319}\index{util.js@{util.js}!putInt32Le@{putInt32Le}}
+\index{putInt32Le@{putInt32Le}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{putInt32Le}{putInt32Le}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_afe1a0c0e385b685a00f70db2284a6319} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_af2ca5985446bc50a0e237108dd4fa56d}{Data\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} put\+Int32\+Le}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}})\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{node-forge_2lib_2util_8js_a0f5951fa016615ffc42ebc2526fd1fc1}{putBytes}}(}
+\DoxyCodeLine{\ \ \ \ String.fromCharCode(\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ \&\ 0xFF)\ +}
+\DoxyCodeLine{\ \ \ \ String.fromCharCode(\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ >>\ 8\ \&\ 0xFF)\ +}
+\DoxyCodeLine{\ \ \ \ String.fromCharCode(\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ >>\ 16\ \&\ 0xFF)\ +}
+\DoxyCodeLine{\ \ \ \ String.fromCharCode(\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ >>\ 24\ \&\ 0xFF));}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Puts a 32-\/bit integer in this buffer in little-\/endian order.
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & the 32-\/bit integer.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+this buffer. 
+\end{DoxyReturn}
+\Hypertarget{node-forge_2lib_2util_8js_ab058b1288197d5381a01b520f4d20d89}\index{util.js@{util.js}!putSignedInt@{putSignedInt}}
+\index{putSignedInt@{putSignedInt}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{putSignedInt}{putSignedInt}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_ab058b1288197d5381a01b520f4d20d89} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_af2ca5985446bc50a0e237108dd4fa56d}{Data\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} put\+Signed\+Int}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}},\ \mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}})\ \{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ <\ 0)\ \{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ +=\ 2\ <<\ (\mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}\ -\/\ 1);}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{node-forge_2lib_2util_8js_a333a6ea82c4c3dfb1683f478caf07ce7}{putInt}}(\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}},\ \mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Puts a signed n-\/bit integer in this buffer in big-\/endian order. Two\textquotesingle{}s complement representation is used.
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & the n-\/bit integer. \\
+\hline
+{\em n} & the number of bits in the integer (8, 16, 24, or 32).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+this buffer.
+\end{DoxyReturn}
+Puts a signed n-\/bit integer in this buffer in big-\/endian order. Two\textquotesingle{}s complement representation is used.
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & the n-\/bit integer. \\
+\hline
+{\em n} & the number of bits in the integer.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+this buffer. 
+\end{DoxyReturn}
+\Hypertarget{node-forge_2lib_2util_8js_a67242e4434053377321081602ab946aa}\index{util.js@{util.js}!putString@{putString}}
+\index{putString@{putString}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{putString}{putString}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_a67242e4434053377321081602ab946aa} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_af2ca5985446bc50a0e237108dd4fa56d}{Data\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} put\+String}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{json-bigint_2lib_2stringify_8js_abd4075a8f329b0ccafd81359c952a9df}{str}})\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{node-forge_2lib_2util_8js_a0f5951fa016615ffc42ebc2526fd1fc1}{putBytes}}(\mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2cjs_2src_2nodejs-common_2util_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}}.encodeUtf8(\mbox{\hyperlink{json-bigint_2lib_2stringify_8js_abd4075a8f329b0ccafd81359c952a9df}{str}}));}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Puts a UTF-\/16 encoded string into this buffer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & the string to put.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+this buffer.
+\end{DoxyReturn}
+Puts a string into this buffer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & the string to put. \\
+\hline
+{\em \mbox{[}encoding\mbox{]}} & the encoding for the string (default\+: \textquotesingle{}utf16\textquotesingle{}).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+this buffer. 
+\end{DoxyReturn}
+\Hypertarget{node-forge_2lib_2util_8js_a16eae6d5b0b6177e7290e9b1b8a556bb}\index{util.js@{util.js}!removeItem@{removeItem}}
+\index{removeItem@{removeItem}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{removeItem}{removeItem}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_a16eae6d5b0b6177e7290e9b1b8a556bb} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} remove\+Item}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}},\ id,\ key,\ \mbox{\hyperlink{response_8js_a75ec03e18914bc8699236700707f598d}{location}})\ \{}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{node-forge_2lib_2util_8js_ad80ed82f9223467aa246b999b9c8e4b3}{\_callStorageFunction}}(\mbox{\hyperlink{node-forge_2lib_2util_8js_ae490803f6b4baceca77f7f04b9f8bf09}{\_removeItem}},\ arguments,\ \mbox{\hyperlink{response_8js_a75ec03e18914bc8699236700707f598d}{location}});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Removes an item on local disk.
+
+Set \doxylink{node-forge_2lib_2util_8js_ad79f45e19abb62870b38a173145eca5a}{set\+Item()} for details on storage types.
+
+
+\begin{DoxyParams}{Parameters}
+{\em api} & the flash interface. \\
+\hline
+{\em id} & the storage ID to use. \\
+\hline
+{\em key} & the key for the item. \\
+\hline
+{\em location} & an array with the preferred types of storage to use. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{node-forge_2lib_2util_8js_ab48fde8dcd5e032a46d52239037a67a2}\index{util.js@{util.js}!setAt@{setAt}}
+\index{setAt@{setAt}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{setAt}{setAt}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_ab48fde8dcd5e032a46d52239037a67a2} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_af2ca5985446bc50a0e237108dd4fa56d}{Data\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} set\+At}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}},\ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}})\ \{}
+\DoxyCodeLine{\ \ this.\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}\ =\ this.\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}.substr(0,\ this.\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a99dd3b4c246dbde846b5228e734d9341}{read}}\ +\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}})\ +}
+\DoxyCodeLine{\ \ \ \ String.fromCharCode(\mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}})\ +}
+\DoxyCodeLine{\ \ \ \ this.\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}.substr(this.\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a99dd3b4c246dbde846b5228e734d9341}{read}}\ +\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ +\ 1);}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{this};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Puts a byte at the given index without modifying the read pointer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & the byte index. \\
+\hline
+{\em b} & the byte to put.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+this buffer. 
+\end{DoxyReturn}
+\Hypertarget{node-forge_2lib_2util_8js_ad79f45e19abb62870b38a173145eca5a}\index{util.js@{util.js}!setItem@{setItem}}
+\index{setItem@{setItem}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{setItem}{setItem}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_ad79f45e19abb62870b38a173145eca5a} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} set\+Item}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}},\ id,\ key,\ \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}},\ \mbox{\hyperlink{response_8js_a75ec03e18914bc8699236700707f598d}{location}})\ \{}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{node-forge_2lib_2util_8js_ad80ed82f9223467aa246b999b9c8e4b3}{\_callStorageFunction}}(\mbox{\hyperlink{node-forge_2lib_2util_8js_a31fe782247f80dcd3b104072e271c13e}{\_setItem}},\ arguments,\ \mbox{\hyperlink{response_8js_a75ec03e18914bc8699236700707f598d}{location}});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Stores an item on local disk.
+
+The available types of local storage include \textquotesingle{}flash\textquotesingle{}, \textquotesingle{}web\textquotesingle{}, and \textquotesingle{}both\textquotesingle{}.
+
+The type \textquotesingle{}flash\textquotesingle{} refers to flash local storage (Shared\+Object). In order to use flash local storage, the \textquotesingle{}api\textquotesingle{} parameter must be valid. The type \textquotesingle{}web\textquotesingle{} refers to Web\+Storage, if supported by the browser. The type \textquotesingle{}both\textquotesingle{} refers to storing using both \textquotesingle{}flash\textquotesingle{} and \textquotesingle{}web\textquotesingle{}, not just one or the other.
+
+The location array should list the storage types to use in order of preference\+:
+
+\mbox{[}\textquotesingle{}flash\textquotesingle{}\mbox{]}\+: flash only storage \mbox{[}\textquotesingle{}web\textquotesingle{}\mbox{]}\+: web only storage \mbox{[}\textquotesingle{}both\textquotesingle{}\mbox{]}\+: try to store in both \mbox{[}\textquotesingle{}flash\textquotesingle{},\textquotesingle{}web\textquotesingle{}\mbox{]}\+: store in flash first, but if not available, \textquotesingle{}web\textquotesingle{} \mbox{[}\textquotesingle{}web\textquotesingle{},\textquotesingle{}flash\textquotesingle{}\mbox{]}\+: store in web first, but if not available, \textquotesingle{}flash\textquotesingle{}
+
+The location array defaults to\+: \mbox{[}\textquotesingle{}web\textquotesingle{}, \textquotesingle{}flash\textquotesingle{}\mbox{]}
+
+
+\begin{DoxyParams}{Parameters}
+{\em api} & the flash interface, null to use only Web\+Storage. \\
+\hline
+{\em id} & the storage ID to use. \\
+\hline
+{\em key} & the key for the item. \\
+\hline
+{\em data} & the data for the item (any javascript object/primitive). \\
+\hline
+{\em location} & an array with the preferred types of storage to use. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{node-forge_2lib_2util_8js_ab492f69e70933f85fe6b3a8808d19852}\index{util.js@{util.js}!text@{text}}
+\index{text@{text}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{text}{text}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_ab492f69e70933f85fe6b3a8808d19852} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} text}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{_0dprotobufjs_2utf8_2index_8js_ae89897a1ed7a0f204da2b78e025a7eff}{utf8}}:\ \{\},}
+\DoxyCodeLine{\ \ utf16:\ \{\}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{node-forge_2lib_2util_8js_ad7a85257a2d4098f85e0308ecf88bebb}\index{util.js@{util.js}!toHex@{toHex}}
+\index{toHex@{toHex}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{toHex}{toHex}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_ad7a85257a2d4098f85e0308ecf88bebb} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_af2ca5985446bc50a0e237108dd4fa56d}{Data\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} to\+Hex}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}()\ \{}
+\DoxyCodeLine{\ \ var\ rval\ =\ \textcolor{stringliteral}{''};}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{for}(var\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ =\ this.\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a99dd3b4c246dbde846b5228e734d9341}{read}};\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ <\ this.\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}.length;\ ++\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}})\ \{}
+\DoxyCodeLine{\ \ \ \ var\ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}\ =\ this.\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}.charCodeAt(\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}});}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}(b\ <\ 16)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ rval\ +=\ \textcolor{charliteral}{'0'};}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ rval\ +=\ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}.toString(16);}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ rval;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Converts this buffer to a hexadecimal string.
+
+\begin{DoxyReturn}{Returns}
+a hexadecimal string. 
+\end{DoxyReturn}
+\Hypertarget{node-forge_2lib_2util_8js_a7234a4e8129e261e2c517e09a337bf6a}\index{util.js@{util.js}!toString@{toString}}
+\index{toString@{toString}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{toString}{toString}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_a7234a4e8129e261e2c517e09a337bf6a} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_af2ca5985446bc50a0e237108dd4fa56d}{Data\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} to\+String}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}()\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2cjs_2src_2nodejs-common_2util_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}}.decodeUtf8(this.\mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}}());}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Converts this buffer to a UTF-\/16 string (standard Java\+Script string).
+
+\begin{DoxyReturn}{Returns}
+a UTF-\/16 string.
+\end{DoxyReturn}
+Converts this buffer to a string, using the given encoding. If no encoding is given, \textquotesingle{}utf8\textquotesingle{} (UTF-\/8) is used.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{[}encoding\mbox{]}} & the encoding to use\+: \textquotesingle{}binary\textquotesingle{}, \textquotesingle{}utf8\textquotesingle{}, \textquotesingle{}utf16\textquotesingle{}, \textquotesingle{}hex\textquotesingle{}, \textquotesingle{}base64\textquotesingle{} (default\+: \textquotesingle{}utf8\textquotesingle{}).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a string representation of the bytes in this buffer. 
+\end{DoxyReturn}
+\Hypertarget{node-forge_2lib_2util_8js_a45967263bdc66ddff86208af5f6916f4}\index{util.js@{util.js}!truncate@{truncate}}
+\index{truncate@{truncate}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{truncate}{truncate}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_a45967263bdc66ddff86208af5f6916f4} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_af2ca5985446bc50a0e237108dd4fa56d}{Data\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} truncate}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{cjs_2internal_2operators_2count_8js_ac88314f55a9398aa7c8da3c0aae90d53}{count}})\ \{}
+\DoxyCodeLine{\ \ var\ len\ =\ Math.max(0,\ this.\mbox{\hyperlink{node-forge_2lib_2util_8js_a2abec698811250e9dda18895bbcf8ab2}{length}}()\ -\/\ \mbox{\hyperlink{cjs_2internal_2operators_2count_8js_ac88314f55a9398aa7c8da3c0aae90d53}{count}});}
+\DoxyCodeLine{\ \ this.\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}\ =\ this.\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}.substr(this.\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a99dd3b4c246dbde846b5228e734d9341}{read}},\ len);}
+\DoxyCodeLine{\ \ this.\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a99dd3b4c246dbde846b5228e734d9341}{read}}\ =\ 0;}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{this};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Shortens this buffer by triming bytes off of the end of this buffer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em count} & the number of bytes to trim off.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+this buffer. 
+\end{DoxyReturn}
+\Hypertarget{node-forge_2lib_2util_8js_a8f5b2e09d5197e9d28f6032dff542d44}\index{util.js@{util.js}!util@{util}}
+\index{util@{util}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{util}{util}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_a8f5b2e09d5197e9d28f6032dff542d44} 
+var util = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{module.\+exports}} = forge.\+util = forge.\+util \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} \{\}}
+
+\Hypertarget{node-forge_2lib_2util_8js_ad1bca1864729eceb711536ea6f293a1a}\index{util.js@{util.js}!xorBytes@{xorBytes}}
+\index{xorBytes@{xorBytes}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{xorBytes}{xorBytes}}
+{\footnotesize\ttfamily \label{node-forge_2lib_2util_8js_ad1bca1864729eceb711536ea6f293a1a} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} xor\+Bytes}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(s1,\ s2,\ \mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}})\ \{}
+\DoxyCodeLine{\ \ var\ s3\ =\ \textcolor{stringliteral}{''};}
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}\ =\ \textcolor{stringliteral}{''};}
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{uuidv4_8min_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}}\ =\ \textcolor{stringliteral}{''};}
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ =\ 0;}
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}\ =\ 0;}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{for}(;\ \mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}\ >\ 0;\ -\/-\/\mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}},\ ++\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}})\ \{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}\ =\ s1.charCodeAt(\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}})\ \string^\ s2.charCodeAt(\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}});}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}\ >=\ 10)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ s3\ +=\ \mbox{\hyperlink{uuidv4_8min_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}};}
+\DoxyCodeLine{\ \ \ \ \ \ \mbox{\hyperlink{uuidv4_8min_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}}\ =\ \textcolor{stringliteral}{''};}
+\DoxyCodeLine{\ \ \ \ \ \ \mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}\ =\ 0;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{uuidv4_8min_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}}\ +=\ String.fromCharCode(\mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}});}
+\DoxyCodeLine{\ \ \ \ ++\mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}};}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\ \ s3\ +=\ \mbox{\hyperlink{uuidv4_8min_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}};}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ s3;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Performs a per byte XOR between two byte strings and returns the result as a string of bytes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em s1} & first string of bytes. \\
+\hline
+{\em s2} & second string of bytes. \\
+\hline
+{\em n} & the number of bytes to XOR.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the XOR\textquotesingle{}d result. 
+\end{DoxyReturn}

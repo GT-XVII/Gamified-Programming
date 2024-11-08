@@ -1,0 +1,7 @@
+<map id="getDatabaseInstance" name="getDatabaseInstance">
+<area shape="rect" id="Node000001" title=" " alt="" coords="193,31,338,56"/>
+<area shape="rect" id="Node000002" href="$firebase-admin_2lib_2database_2index_8js.html#a0098b8b55f319b3873545a28c0b2fc67" title=" " alt="" coords="27,5,123,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="177,34,123,27,124,22,178,29"/>
+<area shape="rect" id="Node000003" href="$firebase-admin_2lib_2database_2index_8js.html#a5a592df41ff38f518ba9b15dada5bd51" title=" " alt="" coords="5,55,145,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="178,57,145,61,145,56,177,52"/>
+</map>

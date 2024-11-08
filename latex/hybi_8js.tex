@@ -1,0 +1,179 @@
+\doxysection{backend/node\+\_\+modules/websocket-\/driver/lib/websocket/driver/hybi.js File Reference}
+\hypertarget{hybi_8js}{}\label{hybi_8js}\index{backend/node\_modules/websocket-\/driver/lib/websocket/driver/hybi.js@{backend/node\_modules/websocket-\/driver/lib/websocket/driver/hybi.js}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{hybi_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+var \mbox{\hyperlink{hybi_8js_a6e9de2d16b02dc274208bfcc1914d7f4}{Buffer}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}safe-\/\mbox{\hyperlink{cjs_2internal_2operators_2buffer_8js_a838d54b935df11eff7928ba8da636891}{buffer}}\textquotesingle{}).Buffer
+\item 
+var \mbox{\hyperlink{hybi_8js_a3eca37c9aac9a17870baa116339724e3}{crypto}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}crypto\textquotesingle{})
+\item 
+var \mbox{\hyperlink{hybi_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}util\textquotesingle{})
+\item 
+var \mbox{\hyperlink{hybi_8js_a756505e3ee68b72bb7888a848d99bd42}{Extensions}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_adbdf4dbc0734d27590fca9f60ad422ea}{websocket}}-\/extensions\textquotesingle{})
+\item 
+var \mbox{\hyperlink{hybi_8js_a9e9b777c6c201cee9f04395483bb677d}{Base}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a633f76c2f6070be182949e8d86a51bc6}{base}}\textquotesingle{})
+\item 
+var \mbox{\hyperlink{hybi_8js_a656d801e2f47fc9dc36513173300a086}{Frame}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a9664ec86a45948a0d2dc23316c47a877}{hybi}}/\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a94e011a39c19820bf962b007fc5ac00b}{frame}}\textquotesingle{})
+\item 
+var \mbox{\hyperlink{hybi_8js_a2b999b964c05992f7c4361df3fcb3017}{Message}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a9664ec86a45948a0d2dc23316c47a877}{hybi}}/\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}\textquotesingle{})
+\item 
+var \mbox{\hyperlink{hybi_8js_a0805dbb728d88870d593209c0b329e8c}{Hybi}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a0805dbb728d88870d593209c0b329e8c}{Hybi}} \mbox{\hyperlink{hybi_8js_a9dde57843cc17bec620c019687f494f3}{VERSION}} = \textquotesingle{}13\textquotesingle{}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a0805dbb728d88870d593209c0b329e8c}{Hybi}} \mbox{\hyperlink{hybi_8js_a03a089fcf2374732890627cb80b1dfa7}{mask}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a0805dbb728d88870d593209c0b329e8c}{Hybi}} \mbox{\hyperlink{hybi_8js_aea0860d4f0fa1d40948ebfb5bc77ab42}{generate\+Accept}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a0805dbb728d88870d593209c0b329e8c}{Hybi}} \mbox{\hyperlink{hybi_8js_a270f9aad9aed3ce1c0e14afe522282e0}{GUID}} = \textquotesingle{}258EAFA5-\/E914-\/47DA-\/95CA-\/C5\+AB0\+DC85\+B11\textquotesingle{}
+\item 
+var \mbox{\hyperlink{hybi_8js_a243c7aa6c47d450837986091ed54a347}{instance}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{hybi_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a0805dbb728d88870d593209c0b329e8c}{Hybi}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{hybi_8js_a9e9b777c6c201cee9f04395483bb677d}\index{hybi.js@{hybi.js}!Base@{Base}}
+\index{Base@{Base}!hybi.js@{hybi.js}}
+\doxysubsubsection{\texorpdfstring{Base}{Base}}
+{\footnotesize\ttfamily \label{hybi_8js_a9e9b777c6c201cee9f04395483bb677d} 
+var Base = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a633f76c2f6070be182949e8d86a51bc6}{base}}\textquotesingle{})}
+
+\Hypertarget{hybi_8js_a6e9de2d16b02dc274208bfcc1914d7f4}\index{hybi.js@{hybi.js}!Buffer@{Buffer}}
+\index{Buffer@{Buffer}!hybi.js@{hybi.js}}
+\doxysubsubsection{\texorpdfstring{Buffer}{Buffer}}
+{\footnotesize\ttfamily \label{hybi_8js_a6e9de2d16b02dc274208bfcc1914d7f4} 
+var Buffer = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}safe-\/\mbox{\hyperlink{cjs_2internal_2operators_2buffer_8js_a838d54b935df11eff7928ba8da636891}{buffer}}\textquotesingle{}).Buffer}
+
+\Hypertarget{hybi_8js_a3eca37c9aac9a17870baa116339724e3}\index{hybi.js@{hybi.js}!crypto@{crypto}}
+\index{crypto@{crypto}!hybi.js@{hybi.js}}
+\doxysubsubsection{\texorpdfstring{crypto}{crypto}}
+{\footnotesize\ttfamily \label{hybi_8js_a3eca37c9aac9a17870baa116339724e3} 
+var crypto = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}crypto\textquotesingle{})}
+
+\Hypertarget{hybi_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\index{hybi.js@{hybi.js}!exports@{exports}}
+\index{exports@{exports}!hybi.js@{hybi.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \label{hybi_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a0805dbb728d88870d593209c0b329e8c}{Hybi}}}
+
+\Hypertarget{hybi_8js_a756505e3ee68b72bb7888a848d99bd42}\index{hybi.js@{hybi.js}!Extensions@{Extensions}}
+\index{Extensions@{Extensions}!hybi.js@{hybi.js}}
+\doxysubsubsection{\texorpdfstring{Extensions}{Extensions}}
+{\footnotesize\ttfamily \label{hybi_8js_a756505e3ee68b72bb7888a848d99bd42} 
+var Extensions = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_adbdf4dbc0734d27590fca9f60ad422ea}{websocket}}-\/extensions\textquotesingle{})}
+
+\Hypertarget{hybi_8js_a656d801e2f47fc9dc36513173300a086}\index{hybi.js@{hybi.js}!Frame@{Frame}}
+\index{Frame@{Frame}!hybi.js@{hybi.js}}
+\doxysubsubsection{\texorpdfstring{Frame}{Frame}}
+{\footnotesize\ttfamily \label{hybi_8js_a656d801e2f47fc9dc36513173300a086} 
+var Frame = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a9664ec86a45948a0d2dc23316c47a877}{hybi}}/\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a94e011a39c19820bf962b007fc5ac00b}{frame}}\textquotesingle{})}
+
+\Hypertarget{hybi_8js_aea0860d4f0fa1d40948ebfb5bc77ab42}\index{hybi.js@{hybi.js}!generateAccept@{generateAccept}}
+\index{generateAccept@{generateAccept}!hybi.js@{hybi.js}}
+\doxysubsubsection{\texorpdfstring{generateAccept}{generateAccept}}
+{\footnotesize\ttfamily \label{hybi_8js_aea0860d4f0fa1d40948ebfb5bc77ab42} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a0805dbb728d88870d593209c0b329e8c}{Hybi}} generate\+Accept}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(key)\ \{}
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a86e184a184e03e47b460100f5bc03c0b}{sha1}}\ =\ \mbox{\hyperlink{hybi_8js_a3eca37c9aac9a17870baa116339724e3}{crypto}}.createHash(\textcolor{stringliteral}{'sha1'});}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a86e184a184e03e47b460100f5bc03c0b}{sha1}}.update(key\ +\ \mbox{\hyperlink{hybi_8js_a0805dbb728d88870d593209c0b329e8c}{Hybi}}.GUID);}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a86e184a184e03e47b460100f5bc03c0b}{sha1}}.digest(\textcolor{stringliteral}{'base64'});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{hybi_8js_a270f9aad9aed3ce1c0e14afe522282e0}\index{hybi.js@{hybi.js}!GUID@{GUID}}
+\index{GUID@{GUID}!hybi.js@{hybi.js}}
+\doxysubsubsection{\texorpdfstring{GUID}{GUID}}
+{\footnotesize\ttfamily \label{hybi_8js_a270f9aad9aed3ce1c0e14afe522282e0} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a0805dbb728d88870d593209c0b329e8c}{Hybi}} GUID = \textquotesingle{}258EAFA5-\/E914-\/47DA-\/95CA-\/C5\+AB0\+DC85\+B11\textquotesingle{}}
+
+\Hypertarget{hybi_8js_a0805dbb728d88870d593209c0b329e8c}\index{hybi.js@{hybi.js}!Hybi@{Hybi}}
+\index{Hybi@{Hybi}!hybi.js@{hybi.js}}
+\doxysubsubsection{\texorpdfstring{Hybi}{Hybi}}
+{\footnotesize\ttfamily \label{hybi_8js_a0805dbb728d88870d593209c0b329e8c} 
+var Hybi}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}},\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_acf0a8b41f00a22e21672c8b3768a0618}{url}},\ options)\ \{}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{class_base}{Base}}.apply(\textcolor{keyword}{this},\ arguments);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ this.\_extensions\ \ \ \ \ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{hybi_8js_a756505e3ee68b72bb7888a848d99bd42}{Extensions}}();}
+\DoxyCodeLine{\ \ this.\_stage\ \ \ \ \ \ \ \ \ \ =\ 0;}
+\DoxyCodeLine{\ \ this.\_masking\ \ \ \ \ \ \ \ =\ this.\mbox{\hyperlink{express_2lib_2router_2route_8js_a6d3af37c53447908498ec53885a92a16}{\_options}}.masking;}
+\DoxyCodeLine{\ \ this.\_protocols\ \ \ \ \ \ =\ this.\mbox{\hyperlink{express_2lib_2router_2route_8js_a6d3af37c53447908498ec53885a92a16}{\_options}}.protocols\ ||\ [];}
+\DoxyCodeLine{\ \ this.\_requireMasking\ =\ this.\mbox{\hyperlink{express_2lib_2router_2route_8js_a6d3af37c53447908498ec53885a92a16}{\_options}}.requireMasking;}
+\DoxyCodeLine{\ \ this.\_pingCallbacks\ \ =\ \{\};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (typeof\ this.\_protocols\ ===\ \textcolor{stringliteral}{'string'})}
+\DoxyCodeLine{\ \ \ \ this.\_protocols\ =\ this.\_protocols.split(/\ *,\ */);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (!this.\_request)\ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ var\ protos\ \ \ \ =\ this.\_request.headers[\textcolor{stringliteral}{'sec-\/websocket-\/protocol'}],}
+\DoxyCodeLine{\ \ \ \ \ \ supported\ =\ this.\_protocols;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (protos\ !==\ \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}})\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (typeof\ protos\ ===\ \textcolor{stringliteral}{'string'})\ protos\ =\ protos.split(/\ *,\ */);}
+\DoxyCodeLine{\ \ \ \ this.protocol\ =\ protos.filter(\textcolor{keyword}{function}(\mbox{\hyperlink{ordered-map_8min_8js_ab2752257551c1a01e010ceba5d7ec200}{p}})\ \{\ \textcolor{keywordflow}{return}\ supported.indexOf(\mbox{\hyperlink{ordered-map_8min_8js_ab2752257551c1a01e010ceba5d7ec200}{p}})\ >=\ 0\ \})[0];}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ this.\mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a265a39dcf2f0b7c6b96574362aa01ad9}{version}}\ =\ \textcolor{stringliteral}{'hybi-\/'}\ +\ \mbox{\hyperlink{hybi_8js_a0805dbb728d88870d593209c0b329e8c}{Hybi}}.VERSION;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{hybi_8js_a243c7aa6c47d450837986091ed54a347}\index{hybi.js@{hybi.js}!instance@{instance}}
+\index{instance@{instance}!hybi.js@{hybi.js}}
+\doxysubsubsection{\texorpdfstring{instance}{instance}}
+{\footnotesize\ttfamily \label{hybi_8js_a243c7aa6c47d450837986091ed54a347} 
+var instance}
+
+\Hypertarget{hybi_8js_a03a089fcf2374732890627cb80b1dfa7}\index{hybi.js@{hybi.js}!mask@{mask}}
+\index{mask@{mask}!hybi.js@{hybi.js}}
+\doxysubsubsection{\texorpdfstring{mask}{mask}}
+{\footnotesize\ttfamily \label{hybi_8js_a03a089fcf2374732890627cb80b1dfa7} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a0805dbb728d88870d593209c0b329e8c}{Hybi}} mask}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(payload,\ \mbox{\hyperlink{hybi_8js_a03a089fcf2374732890627cb80b1dfa7}{mask}},\ offset)\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{hybi_8js_a03a089fcf2374732890627cb80b1dfa7}{mask}}\ ||\ \mbox{\hyperlink{hybi_8js_a03a089fcf2374732890627cb80b1dfa7}{mask}}.length\ ===\ 0)\ \textcolor{keywordflow}{return}\ payload;}
+\DoxyCodeLine{\ \ offset\ =\ offset\ ||\ 0;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{for}\ (var\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ =\ 0,\ \mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}\ =\ payload.length\ -\/\ offset;\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ <\ \mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}};\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}++)\ \{}
+\DoxyCodeLine{\ \ \ \ payload[offset\ +\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}]\ =\ payload[offset\ +\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}]\ \string^\ \mbox{\hyperlink{hybi_8js_a03a089fcf2374732890627cb80b1dfa7}{mask}}[\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ \%\ 4];}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ payload;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{hybi_8js_a2b999b964c05992f7c4361df3fcb3017}\index{hybi.js@{hybi.js}!Message@{Message}}
+\index{Message@{Message}!hybi.js@{hybi.js}}
+\doxysubsubsection{\texorpdfstring{Message}{Message}}
+{\footnotesize\ttfamily \label{hybi_8js_a2b999b964c05992f7c4361df3fcb3017} 
+var Message = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a9664ec86a45948a0d2dc23316c47a877}{hybi}}/\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}\textquotesingle{})}
+
+\Hypertarget{hybi_8js_ae2475e10618961c050dcba04e8c42331}\index{hybi.js@{hybi.js}!strict@{strict}}
+\index{strict@{strict}!hybi.js@{hybi.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{hybi_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+
+\Hypertarget{hybi_8js_a8f5b2e09d5197e9d28f6032dff542d44}\index{hybi.js@{hybi.js}!util@{util}}
+\index{util@{util}!hybi.js@{hybi.js}}
+\doxysubsubsection{\texorpdfstring{util}{util}}
+{\footnotesize\ttfamily \label{hybi_8js_a8f5b2e09d5197e9d28f6032dff542d44} 
+var util = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}util\textquotesingle{})}
+
+\Hypertarget{hybi_8js_a9dde57843cc17bec620c019687f494f3}\index{hybi.js@{hybi.js}!VERSION@{VERSION}}
+\index{VERSION@{VERSION}!hybi.js@{hybi.js}}
+\doxysubsubsection{\texorpdfstring{VERSION}{VERSION}}
+{\footnotesize\ttfamily \label{hybi_8js_a9dde57843cc17bec620c019687f494f3} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a0805dbb728d88870d593209c0b329e8c}{Hybi}} VERSION = \textquotesingle{}13\textquotesingle{}}
+

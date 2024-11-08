@@ -1,0 +1,193 @@
+\doxysection{Firebase\+App Class Reference}
+\hypertarget{class_firebase_app}{}\label{class_firebase_app}\index{FirebaseApp@{FirebaseApp}}
+
+
+Collaboration diagram for Firebase\+App\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{class_firebase_app__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_firebase_app_aab0af421101bdcec0449a94656966d1c}{constructor}} (\mbox{\hyperlink{class_firebase_app_a2edd9c97d5e5e1b94c743b37b7be0d68}{options}}, \mbox{\hyperlink{class_firebase_app_abb2bd7d7d3aae2a169ea6cb9ea64b5a3}{name}}, app\+Store)
+\item 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} \mbox{\hyperlink{class_firebase_app_abb2bd7d7d3aae2a169ea6cb9ea64b5a3}{name}} ()
+\item 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} \mbox{\hyperlink{class_firebase_app_a2edd9c97d5e5e1b94c743b37b7be0d68}{options}} ()
+\item 
+\mbox{\hyperlink{class_firebase_app_a567ff8703dea07b4cac6ff8f924a8143}{get\+Or\+Init\+Service}} (\mbox{\hyperlink{class_firebase_app_abb2bd7d7d3aae2a169ea6cb9ea64b5a3}{name}}, \mbox{\hyperlink{agent-base_2node__modules_2debug_2src_2node_8js_a1dc0aa163de2e7161fbb52b60824b4c6}{init}})
+\item 
+\mbox{\hyperlink{class_firebase_app_a8e04719e5ceda9487f2643088dcd838b}{delete}} ()
+\item 
+\mbox{\hyperlink{class_firebase_app_aa95aced7e037d864f28dfcb6292c6a4a}{ensure\+Service\+\_\+}} (service\+Name, initializer)
+\item 
+\mbox{\hyperlink{class_firebase_app_ade7f80604e4bb7de73971a82e16414fc}{check\+Destroyed\+\_\+}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Global context object for a collection of services using a shared authentication state. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_firebase_app_ade7f80604e4bb7de73971a82e16414fc}\index{FirebaseApp@{FirebaseApp}!checkDestroyed\_@{checkDestroyed\_}}
+\index{checkDestroyed\_@{checkDestroyed\_}!FirebaseApp@{FirebaseApp}}
+\doxysubsubsection{\texorpdfstring{checkDestroyed\_()}{checkDestroyed\_()}}
+{\footnotesize\ttfamily \label{class_firebase_app_ade7f80604e4bb7de73971a82e16414fc} 
+Firebase\+App\+::check\+Destroyed\+\_\+ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Throws an Error if the \doxylink{class_firebase_app}{Firebase\+App} instance has already been deleted. 
+
+References \mbox{\hyperlink{database_2dist_2index_8cjs_8js_a7b225fcb720e4d5ed2bbf60e28a25e6d}{app}}, \mbox{\hyperlink{firebase-app_8js_af1a99a3ff1a35c114bdd06cc7252beb6}{error\+\_\+1}}, and \mbox{\hyperlink{___hash_8js_a54a061fe5287ccd59bdb25b09f05270c}{has}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_firebase_app_ade7f80604e4bb7de73971a82e16414fc_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_firebase_app_aab0af421101bdcec0449a94656966d1c}\index{FirebaseApp@{FirebaseApp}!constructor@{constructor}}
+\index{constructor@{constructor}!FirebaseApp@{FirebaseApp}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_firebase_app_aab0af421101bdcec0449a94656966d1c} 
+Firebase\+App\+::constructor (\begin{DoxyParamCaption}\item[{}]{options}{, }\item[{}]{name}{, }\item[{}]{app\+Store}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}, \mbox{\hyperlink{core_8min_8js_a46d2d1e8780c9b3b6a642760bb148e61}{an}}, \mbox{\hyperlink{database_2dist_2index_8cjs_8js_a7b225fcb720e4d5ed2bbf60e28a25e6d}{app}}, \mbox{\hyperlink{firebase-admin_2lib_2credential_2index_8js_aee5dce8f0575eecdffdfa59b49b319e1}{credential}}, \mbox{\hyperlink{firebase-app_8js_a942c275c9eb51472dccb1e1fc76db6ac}{credential\+\_\+internal\+\_\+1}}, \mbox{\hyperlink{firebase-app_8js_a3c878464c635c5cd2043d7e066bb187b}{deep\+\_\+copy\+\_\+1}}, \mbox{\hyperlink{firebase-app_8js_af1a99a3ff1a35c114bdd06cc7252beb6}{error\+\_\+1}}, \mbox{\hyperlink{firebase-app_8js_ad24b8b487222ad6b7c64853befdcdf87}{Firebase\+App\+Internals}}, \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a9ffa956335fc503879e7740f1543e56e}{INTERNAL}}, \mbox{\hyperlink{class_firebase_app_abb2bd7d7d3aae2a169ea6cb9ea64b5a3}{name()}}, \mbox{\hyperlink{class_firebase_app_a2edd9c97d5e5e1b94c743b37b7be0d68}{options()}}, \mbox{\hyperlink{__base_iteratee_8js_a25d2c394b1266993db0577c720d53782}{property}}, and \mbox{\hyperlink{firebase-app_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_firebase_app_aab0af421101bdcec0449a94656966d1c_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_firebase_app_a8e04719e5ceda9487f2643088dcd838b}\index{FirebaseApp@{FirebaseApp}!delete@{delete}}
+\index{delete@{delete}!FirebaseApp@{FirebaseApp}}
+\doxysubsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily \label{class_firebase_app_a8e04719e5ceda9487f2643088dcd838b} 
+Firebase\+App\+::delete (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Deletes the \doxylink{class_firebase_app}{Firebase\+App} instance.
+
+\begin{DoxyReturn}{Returns}
+An empty Promise fulfilled once the \doxylink{class_firebase_app}{Firebase\+App} instance is deleted. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{class_firebase_app_ade7f80604e4bb7de73971a82e16414fc}{check\+Destroyed\+\_\+()}}, \mbox{\hyperlink{class_firebase_app_abb2bd7d7d3aae2a169ea6cb9ea64b5a3}{name()}}, and \mbox{\hyperlink{__get_tag_8js_abace523389c17bce1848e3a427871700}{Promise}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_firebase_app_a8e04719e5ceda9487f2643088dcd838b_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_firebase_app_aa95aced7e037d864f28dfcb6292c6a4a}\index{FirebaseApp@{FirebaseApp}!ensureService\_@{ensureService\_}}
+\index{ensureService\_@{ensureService\_}!FirebaseApp@{FirebaseApp}}
+\doxysubsubsection{\texorpdfstring{ensureService\_()}{ensureService\_()}}
+{\footnotesize\ttfamily \label{class_firebase_app_aa95aced7e037d864f28dfcb6292c6a4a} 
+Firebase\+App\+::ensure\+Service\+\_\+ (\begin{DoxyParamCaption}\item[{}]{service\+Name}{, }\item[{}]{initializer}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_firebase_app_aa95aced7e037d864f28dfcb6292c6a4a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_firebase_app_a567ff8703dea07b4cac6ff8f924a8143}\index{FirebaseApp@{FirebaseApp}!getOrInitService@{getOrInitService}}
+\index{getOrInitService@{getOrInitService}!FirebaseApp@{FirebaseApp}}
+\doxysubsubsection{\texorpdfstring{getOrInitService()}{getOrInitService()}}
+{\footnotesize\ttfamily \label{class_firebase_app_a567ff8703dea07b4cac6ff8f924a8143} 
+Firebase\+App\+::get\+Or\+Init\+Service (\begin{DoxyParamCaption}\item[{}]{name}{, }\item[{}]{init}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{class_firebase_app_aa95aced7e037d864f28dfcb6292c6a4a}{ensure\+Service\+\_\+()}}, \mbox{\hyperlink{agent-base_2node__modules_2debug_2src_2node_8js_a1dc0aa163de2e7161fbb52b60824b4c6}{init}}, and \mbox{\hyperlink{class_firebase_app_abb2bd7d7d3aae2a169ea6cb9ea64b5a3}{name()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_firebase_app_a567ff8703dea07b4cac6ff8f924a8143_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_firebase_app_abb2bd7d7d3aae2a169ea6cb9ea64b5a3}\index{FirebaseApp@{FirebaseApp}!name@{name}}
+\index{name@{name}!FirebaseApp@{FirebaseApp}}
+\doxysubsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily \label{class_firebase_app_abb2bd7d7d3aae2a169ea6cb9ea64b5a3} 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} Firebase\+App\+::name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the name of the \doxylink{class_firebase_app}{Firebase\+App} instance.
+
+\begin{DoxyReturn}{Returns}
+The name of the \doxylink{class_firebase_app}{Firebase\+App} instance. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{class_firebase_app_ade7f80604e4bb7de73971a82e16414fc}{check\+Destroyed\+\_\+()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_firebase_app_abb2bd7d7d3aae2a169ea6cb9ea64b5a3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_firebase_app_abb2bd7d7d3aae2a169ea6cb9ea64b5a3_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_firebase_app_a2edd9c97d5e5e1b94c743b37b7be0d68}\index{FirebaseApp@{FirebaseApp}!options@{options}}
+\index{options@{options}!FirebaseApp@{FirebaseApp}}
+\doxysubsubsection{\texorpdfstring{options()}{options()}}
+{\footnotesize\ttfamily \label{class_firebase_app_a2edd9c97d5e5e1b94c743b37b7be0d68} 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} Firebase\+App\+::options (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the options for the \doxylink{class_firebase_app}{Firebase\+App} instance.
+
+\begin{DoxyReturn}{Returns}
+The options for the \doxylink{class_firebase_app}{Firebase\+App} instance. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{class_firebase_app_ade7f80604e4bb7de73971a82e16414fc}{check\+Destroyed\+\_\+()}}, and \mbox{\hyperlink{firebase-app_8js_a3c878464c635c5cd2043d7e066bb187b}{deep\+\_\+copy\+\_\+1}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_firebase_app_a2edd9c97d5e5e1b94c743b37b7be0d68_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_firebase_app_a2edd9c97d5e5e1b94c743b37b7be0d68_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/firebase-\/admin/lib/app/\mbox{\hyperlink{firebase-app_8js}{firebase-\/app.\+js}}\end{DoxyCompactItemize}

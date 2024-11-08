@@ -1,0 +1,9 @@
+<map id="BaseExternalAccountClient::getRequestHeaders" name="BaseExternalAccountClient::getRequestHeaders">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,39,187,79"/>
+<area shape="rect" id="Node000002" href="$class_base_external_account_client.html#ad0804062ac1325329b9f76ac603ac74c" title=" " alt="" coords="235,39,416,79"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="187,56,219,56,219,62,187,62"/>
+<area shape="rect" id="Node000003" href="$class_base_external_account_client.html#ada53ec42a80860f6e777d00cd501e20d" title=" " alt="" coords="466,5,647,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="416,43,450,38,451,44,417,49"/>
+<area shape="rect" id="Node000004" href="$class_base_external_account_client.html#a7cbb6f741d620990412edb466f7c3e57" title=" " alt="" coords="464,71,649,111"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="417,69,449,73,448,79,416,74"/>
+</map>

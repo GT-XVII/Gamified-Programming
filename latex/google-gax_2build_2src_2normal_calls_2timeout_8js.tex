@@ -1,0 +1,60 @@
+\doxysection{backend/node\+\_\+modules/google-\/gax/build/src/normal\+Calls/timeout.js File Reference}
+\hypertarget{google-gax_2build_2src_2normal_calls_2timeout_8js}{}\label{google-gax_2build_2src_2normal_calls_2timeout_8js}\index{backend/node\_modules/google-\/gax/build/src/normalCalls/timeout.js@{backend/node\_modules/google-\/gax/build/src/normalCalls/timeout.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{google-gax_2build_2src_2normal_calls_2timeout_8js_a4404fa02c66bbe46c774e6f8ab2ffbee}{add\+Timeout\+Arg}} (\mbox{\hyperlink{fp_2add_8js_a1ba8e806628b2f512d93819d64d86db9}{func}}, \mbox{\hyperlink{rxjs_2dist_2cjs_2internal_2operators_2timeout_8js_a56cd1f2498714e800f2da45ee2fd56b7}{timeout}}, other\+Args, ab\+Tests)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{google-gax_2build_2src_2normal_calls_2timeout_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{google-gax_2build_2src_2normal_calls_2timeout_8js_a9604be0e7a6bb5112954197ca666b547}{add\+Timeout\+Arg}} = add\+Timeout\+Arg
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{google-gax_2build_2src_2normal_calls_2timeout_8js_a4404fa02c66bbe46c774e6f8ab2ffbee}\index{timeout.js@{timeout.js}!addTimeoutArg@{addTimeoutArg}}
+\index{addTimeoutArg@{addTimeoutArg}!timeout.js@{timeout.js}}
+\doxysubsubsection{\texorpdfstring{addTimeoutArg()}{addTimeoutArg()}}
+{\footnotesize\ttfamily \label{google-gax_2build_2src_2normal_calls_2timeout_8js_a4404fa02c66bbe46c774e6f8ab2ffbee} 
+function add\+Timeout\+Arg (\begin{DoxyParamCaption}\item[{}]{func}{, }\item[{}]{timeout}{, }\item[{}]{other\+Args}{, }\item[{}]{ab\+Tests}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Updates func so that it gets called with the timeout as its final arg.
+
+This converts a function, func, into another function with updated deadline.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+GRPCCall\}} & func -\/ a function to be updated. \\
+\hline
+{\em \{number\}} & timeout -\/ to be added to the original function as it final positional arg. \\
+\hline
+{\em \{\+Object\}} & other\+Args -\/ the additional arguments to be passed to func. \\
+\hline
+{\em \{\+Object=\}} & ab\+Tests -\/ the A/B testing key/value pairs. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{function(\+Object, APICallback)\} the function with other arguments and the timeout. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a622460feeccdab6d8f307936fc6b36fb}{callback}}, \mbox{\hyperlink{fp_2add_8js_a1ba8e806628b2f512d93819d64d86db9}{func}}, \mbox{\hyperlink{lodash_2debounce_8js_ae2dc5120e9ccb39c5ef94d5c203e534a}{now}}, and \mbox{\hyperlink{rxjs_2dist_2cjs_2internal_2operators_2timeout_8js_a56cd1f2498714e800f2da45ee2fd56b7}{timeout}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{google-gax_2build_2src_2normal_calls_2timeout_8js_a9604be0e7a6bb5112954197ca666b547}\index{timeout.js@{timeout.js}!addTimeoutArg@{addTimeoutArg}}
+\index{addTimeoutArg@{addTimeoutArg}!timeout.js@{timeout.js}}
+\doxysubsubsection{\texorpdfstring{addTimeoutArg}{addTimeoutArg}}
+{\footnotesize\ttfamily \label{google-gax_2build_2src_2normal_calls_2timeout_8js_a9604be0e7a6bb5112954197ca666b547} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} add\+Timeout\+Arg = add\+Timeout\+Arg}
+
+\Hypertarget{google-gax_2build_2src_2normal_calls_2timeout_8js_ae2475e10618961c050dcba04e8c42331}\index{timeout.js@{timeout.js}!strict@{strict}}
+\index{strict@{strict}!timeout.js@{timeout.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{google-gax_2build_2src_2normal_calls_2timeout_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+

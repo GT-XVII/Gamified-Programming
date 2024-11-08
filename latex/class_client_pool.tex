@@ -1,0 +1,219 @@
+\doxysection{Client\+Pool Class Reference}
+\hypertarget{class_client_pool}{}\label{class_client_pool}\index{ClientPool@{ClientPool}}
+
+
+Collaboration diagram for Client\+Pool\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{class_client_pool__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_client_pool_a01e2873277c5aa5f23d0325e4b5a7a1e}{constructor}} (concurrent\+Operation\+Limit, max\+Idle\+Clients, client\+Factory, client\+Destructor=()=$>$ Promise.\+resolve())
+\item 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{class_client_pool_a8ede42b9ab8c869b4f0f7ed6945452f3}{terminate}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_client_pool_a957115d3960781bc2b8232f4b56f2a3a}{acquire}} (\mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2util_8js_aaf8bdc7a31a57b85aa6575ef8ffdd793}{request\+Tag}}, requires\+Grpc)
+\item 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{class_client_pool_a4bfa858223bf3ab230fea95918c80e89}{release}} (\mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2util_8js_aaf8bdc7a31a57b85aa6575ef8ffdd793}{request\+Tag}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af46081dcabb4da1ee7ca00228506bcb7}{client}})
+\item 
+\mbox{\hyperlink{class_client_pool_a3b8fe0280f4a2c46404509b1c5709ec1}{should\+Garbage\+Collect\+Client}} (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af46081dcabb4da1ee7ca00228506bcb7}{client}})
+\item 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} \mbox{\hyperlink{class_client_pool_a29856e354ec83fa1f5321146d1cd9081}{size}} ()
+\item 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} \mbox{\hyperlink{class_client_pool_a5e6b52a6722bdbcb62936ed229c6d7e9}{op\+Count}} ()
+\item 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} \mbox{\hyperlink{class_client_pool_a6957edaba04696abba7aea1c471a5330}{\+\_\+active\+Clients}} ()
+\item 
+\mbox{\hyperlink{class_client_pool_a24ffde10c4f86bb95ab85b31bbe0d868}{run}} (\mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2util_8js_aaf8bdc7a31a57b85aa6575ef8ffdd793}{request\+Tag}}, requires\+Grpc, op)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An auto-\/resizing pool that distributes concurrent operations over multiple clients of type {\ttfamily T}.
+
+\doxylink{class_client_pool}{Client\+Pool} is used within \doxylink{class_firestore}{Firestore} to manage a pool of GAPIC clients and automatically initializes multiple clients if we issue more than 100 concurrent operations. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_client_pool_a6957edaba04696abba7aea1c471a5330}\index{ClientPool@{ClientPool}!\_activeClients@{\_activeClients}}
+\index{\_activeClients@{\_activeClients}!ClientPool@{ClientPool}}
+\doxysubsubsection{\texorpdfstring{\_activeClients()}{\_activeClients()}}
+{\footnotesize\ttfamily \label{class_client_pool_a6957edaba04696abba7aea1c471a5330} 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} Client\+Pool\+::\+\_\+active\+Clients (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+The currently active clients.
+
+\begin{DoxyReturn}{Returns}
+The currently active clients. 
+\end{DoxyReturn}
+\Hypertarget{class_client_pool_a957115d3960781bc2b8232f4b56f2a3a}\index{ClientPool@{ClientPool}!acquire@{acquire}}
+\index{acquire@{acquire}!ClientPool@{ClientPool}}
+\doxysubsubsection{\texorpdfstring{acquire()}{acquire()}}
+{\footnotesize\ttfamily \label{class_client_pool_a957115d3960781bc2b8232f4b56f2a3a} 
+Client\+Pool\+::acquire (\begin{DoxyParamCaption}\item[{}]{request\+Tag}{, }\item[{}]{requires\+Grpc}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Returns an already existing client if it has less than the maximum number of concurrent operations or initializes and returns a new client. 
+
+References \mbox{\hyperlink{pool_8js_a0a4d6a89916a48f4ba0e696e93dfc003}{assert}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af46081dcabb4da1ee7ca00228506bcb7}{client}}, \mbox{\hyperlink{pool_8js_aa6fdd07b218f5ee1f103f79a4ad6d5f1}{logger\+\_\+1}}, \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}, and \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2util_8js_aaf8bdc7a31a57b85aa6575ef8ffdd793}{request\+Tag}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=295pt]{class_client_pool_a957115d3960781bc2b8232f4b56f2a3a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_client_pool_a01e2873277c5aa5f23d0325e4b5a7a1e}\index{ClientPool@{ClientPool}!constructor@{constructor}}
+\index{constructor@{constructor}!ClientPool@{ClientPool}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_client_pool_a01e2873277c5aa5f23d0325e4b5a7a1e} 
+Client\+Pool\+::constructor (\begin{DoxyParamCaption}\item[{}]{concurrent\+Operation\+Limit}{, }\item[{}]{max\+Idle\+Clients}{, }\item[{}]{client\+Factory}{, }\item[{}]{client\+Destructor}{ = {\ttfamily ()~=}, }\item[{Promise.}]{resolve}{()}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em concurrent\+Operation\+Limit} & The number of operations that each client can handle. \\
+\hline
+{\em max\+Idle\+Clients} & The maximum number of idle clients to keep before garbage collecting. \\
+\hline
+{\em client\+Factory} & \doxylink{class_a}{A} factory function called as needed when new clients are required. \\
+\hline
+{\em client\+Destructor} & \doxylink{class_a}{A} cleanup function that is called when a client is disposed of. \\
+\hline
+\end{DoxyParams}
+Stores each active clients and how many operations it has outstanding.
+
+\doxylink{class_a}{A} set of clients that have seen RST\+\_\+\+STREAM errors (see \href{https://github.com/googleapis/nodejs-firestore/issues/1023}{\texttt{ https\+://github.\+com/googleapis/nodejs-\/firestore/issues/1023}}) and should no longer be used.
+
+Whether the \doxylink{class_firestore}{Firestore} instance has been terminated. Once terminated, the \doxylink{class_client_pool}{Client\+Pool} can longer schedule new operations.
+
+\doxylink{class_deferred}{Deferred} promise that is resolved when there are no active operations on the client pool after \doxylink{class_client_pool_a8ede42b9ab8c869b4f0f7ed6945452f3}{terminate()} has been called.
+
+References \mbox{\hyperlink{__get_tag_8js_aa38772edcc6ff00766e19b36ce8073a8}{Map}}, \mbox{\hyperlink{__create_set_8js_ab9f46b8207185d305162498bea0d1c26}{Set}}, and \mbox{\hyperlink{pool_8js_a6af3fa6e24c6a46faf4552f3a2ad8783}{util\+\_\+1}}.
+
+\Hypertarget{class_client_pool_a5e6b52a6722bdbcb62936ed229c6d7e9}\index{ClientPool@{ClientPool}!opCount@{opCount}}
+\index{opCount@{opCount}!ClientPool@{ClientPool}}
+\doxysubsubsection{\texorpdfstring{opCount()}{opCount()}}
+{\footnotesize\ttfamily \label{class_client_pool_a5e6b52a6722bdbcb62936ed229c6d7e9} 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} Client\+Pool\+::op\+Count (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+The number of currently active operations.
+
+\begin{DoxyReturn}{Returns}
+Number of currently active operations. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{class_client_pool_a5e6b52a6722bdbcb62936ed229c6d7e9_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_client_pool_a4bfa858223bf3ab230fea95918c80e89}\index{ClientPool@{ClientPool}!release@{release}}
+\index{release@{release}!ClientPool@{ClientPool}}
+\doxysubsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily \label{class_client_pool_a4bfa858223bf3ab230fea95918c80e89} 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} Client\+Pool\+::release (\begin{DoxyParamCaption}\item[{}]{request\+Tag}{, }\item[{}]{client}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Reduces the number of operations for the provided client, potentially removing it from the pool of active clients. 
+
+References \mbox{\hyperlink{pool_8js_a0a4d6a89916a48f4ba0e696e93dfc003}{assert}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af46081dcabb4da1ee7ca00228506bcb7}{client}}, \mbox{\hyperlink{pool_8js_aa6fdd07b218f5ee1f103f79a4ad6d5f1}{logger\+\_\+1}}, \mbox{\hyperlink{class_client_pool_a5e6b52a6722bdbcb62936ed229c6d7e9}{op\+Count()}}, \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2util_8js_aaf8bdc7a31a57b85aa6575ef8ffdd793}{request\+Tag}}, and \mbox{\hyperlink{class_client_pool_a3b8fe0280f4a2c46404509b1c5709ec1}{should\+Garbage\+Collect\+Client()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{class_client_pool_a4bfa858223bf3ab230fea95918c80e89_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_client_pool_a24ffde10c4f86bb95ab85b31bbe0d868}\index{ClientPool@{ClientPool}!run@{run}}
+\index{run@{run}!ClientPool@{ClientPool}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \label{class_client_pool_a24ffde10c4f86bb95ab85b31bbe0d868} 
+Client\+Pool\+::run (\begin{DoxyParamCaption}\item[{}]{request\+Tag}{, }\item[{}]{requires\+Grpc}{, }\item[{}]{op}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Runs the provided operation in this pool. This function may create an additional client if all existing clients already operate at the concurrent operation limit.
+
+
+\begin{DoxyParams}{Parameters}
+{\em request\+Tag} & \doxylink{class_a}{A} unique client-\/assigned identifier for this operation. \\
+\hline
+{\em op} & \doxylink{class_a}{A} callback function that returns a Promise. The client T will be returned to the pool when callback finishes. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_a}{A} Promise that resolves with the result of {\ttfamily op}. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{logger_2dist_2esm_2index_8esm5_8js_a0adf123df8967a14b5bdd9ff3bbe2d0c}{\+\_\+a}}, \mbox{\hyperlink{class_client_pool_a957115d3960781bc2b8232f4b56f2a3a}{acquire()}}, \mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af46081dcabb4da1ee7ca00228506bcb7}{client}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}}, \mbox{\hyperlink{__get_tag_8js_abace523389c17bce1848e3a427871700}{Promise}}, \mbox{\hyperlink{delayed__stream_8js_af690c0ffa4360862fc675f76f1df3ac9}{release}}, \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2util_8js_aaf8bdc7a31a57b85aa6575ef8ffdd793}{request\+Tag}}, \mbox{\hyperlink{express_2lib_2express_8js_abde3c35e3bb7e5225dd7f234c685329c}{res}}, and \mbox{\hyperlink{pledge_8js_a492a4eb4b80e71a1bb4761df42875565}{then}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=295pt]{class_client_pool_a24ffde10c4f86bb95ab85b31bbe0d868_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_client_pool_a3b8fe0280f4a2c46404509b1c5709ec1}\index{ClientPool@{ClientPool}!shouldGarbageCollectClient@{shouldGarbageCollectClient}}
+\index{shouldGarbageCollectClient@{shouldGarbageCollectClient}!ClientPool@{ClientPool}}
+\doxysubsubsection{\texorpdfstring{shouldGarbageCollectClient()}{shouldGarbageCollectClient()}}
+{\footnotesize\ttfamily \label{class_client_pool_a3b8fe0280f4a2c46404509b1c5709ec1} 
+Client\+Pool\+::should\+Garbage\+Collect\+Client (\begin{DoxyParamCaption}\item[{}]{client}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Given the current operation counts, determines if the given client should be garbage collected. 
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af46081dcabb4da1ee7ca00228506bcb7}{client}}, and \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{class_client_pool_a3b8fe0280f4a2c46404509b1c5709ec1_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_client_pool_a29856e354ec83fa1f5321146d1cd9081}\index{ClientPool@{ClientPool}!size@{size}}
+\index{size@{size}!ClientPool@{ClientPool}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily \label{class_client_pool_a29856e354ec83fa1f5321146d1cd9081} 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} Client\+Pool\+::size (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+The number of currently registered clients.
+
+\begin{DoxyReturn}{Returns}
+Number of currently registered clients. 
+\end{DoxyReturn}
+\Hypertarget{class_client_pool_a8ede42b9ab8c869b4f0f7ed6945452f3}\index{ClientPool@{ClientPool}!terminate@{terminate}}
+\index{terminate@{terminate}!ClientPool@{ClientPool}}
+\doxysubsubsection{\texorpdfstring{terminate()}{terminate()}}
+{\footnotesize\ttfamily \label{class_client_pool_a8ede42b9ab8c869b4f0f7ed6945452f3} 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} Client\+Pool\+::terminate (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af46081dcabb4da1ee7ca00228506bcb7}{client}}, \mbox{\hyperlink{pool_8js_aa6fdd07b218f5ee1f103f79a4ad6d5f1}{logger\+\_\+1}}, \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}, and \mbox{\hyperlink{class_client_pool_a5e6b52a6722bdbcb62936ed229c6d7e9}{op\+Count()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{class_client_pool_a8ede42b9ab8c869b4f0f7ed6945452f3_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/@google-\/cloud/firestore/build/src/\mbox{\hyperlink{pool_8js}{pool.\+js}}\end{DoxyCompactItemize}

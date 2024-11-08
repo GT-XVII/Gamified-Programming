@@ -1,0 +1,90 @@
+\doxysection{Installations Class Reference}
+\hypertarget{class_installations}{}\label{class_installations}\index{Installations@{Installations}}
+
+
+Collaboration diagram for Installations\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{class_installations__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_installations_aa8cc6f15ea0174513915609b2506213b}{constructor}} (\mbox{\hyperlink{class_installations_a8f6726d9b3b4aabedf1d2a8c41c3f1c3}{app}})
+\item 
+\mbox{\hyperlink{class_installations_a0ea9ecec69c680b3b0cc5a385a371501}{delete\+Installation}} (fid)
+\item 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} \mbox{\hyperlink{class_installations_a8f6726d9b3b4aabedf1d2a8c41c3f1c3}{app}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The {\ttfamily \doxylink{class_installations}{Installations}} service for the current app. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_installations_a8f6726d9b3b4aabedf1d2a8c41c3f1c3}\index{Installations@{Installations}!app@{app}}
+\index{app@{app}!Installations@{Installations}}
+\doxysubsubsection{\texorpdfstring{app()}{app()}}
+{\footnotesize\ttfamily \label{class_installations_a8f6726d9b3b4aabedf1d2a8c41c3f1c3} 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} Installations\+::app (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the app associated with this \doxylink{class_installations}{Installations} instance.
+
+\begin{DoxyReturn}{Returns}
+The app associated with this \doxylink{class_installations}{Installations} instance. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{class_installations_a8f6726d9b3b4aabedf1d2a8c41c3f1c3_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_installations_aa8cc6f15ea0174513915609b2506213b}\index{Installations@{Installations}!constructor@{constructor}}
+\index{constructor@{constructor}!Installations@{Installations}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_installations_aa8cc6f15ea0174513915609b2506213b} 
+Installations\+::constructor (\begin{DoxyParamCaption}\item[{}]{app}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em app} & -\/ The app for this \doxylink{class_installations}{Installations} service. @constructor \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{class_installations_a8f6726d9b3b4aabedf1d2a8c41c3f1c3}{app()}}, \mbox{\hyperlink{installations_8js_af1a99a3ff1a35c114bdd06cc7252beb6}{error\+\_\+1}}, \mbox{\hyperlink{installations_8js_a296bd4d1d3aa7b960387a29240cad8e5}{installations\+\_\+request\+\_\+handler\+\_\+1}}, and \mbox{\hyperlink{installations_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{class_installations_aa8cc6f15ea0174513915609b2506213b_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_installations_a0ea9ecec69c680b3b0cc5a385a371501}\index{Installations@{Installations}!deleteInstallation@{deleteInstallation}}
+\index{deleteInstallation@{deleteInstallation}!Installations@{Installations}}
+\doxysubsubsection{\texorpdfstring{deleteInstallation()}{deleteInstallation()}}
+{\footnotesize\ttfamily \label{class_installations_a0ea9ecec69c680b3b0cc5a385a371501} 
+Installations\+::delete\+Installation (\begin{DoxyParamCaption}\item[{}]{fid}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Deletes the specified installation ID and the associated data from Firebase.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fid} & -\/ The Firebase installation ID to be deleted.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_a}{A} promise fulfilled when the installation ID is deleted. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/firebase-\/admin/lib/installations/\mbox{\hyperlink{installations_8js}{installations.\+js}}\end{DoxyCompactItemize}

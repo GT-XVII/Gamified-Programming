@@ -1,0 +1,88 @@
+\doxysection{backend/node\+\_\+modules/lodash/\+\_\+base\+Is\+Native.js File Reference}
+\hypertarget{__base_is_native_8js}{}\label{__base_is_native_8js}\index{backend/node\_modules/lodash/\_baseIsNative.js@{backend/node\_modules/lodash/\_baseIsNative.js}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{__base_is_native_8js_a0fd10f3667f54ac77aa663fdf52c89b2}{is\+Function}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./is\+Function\textquotesingle{})
+\item 
+var \mbox{\hyperlink{__base_is_native_8js_ab92353aa43ba373ecab611add094e019}{is\+Masked}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\+\_\+is\+Masked\textquotesingle{})
+\item 
+var \mbox{\hyperlink{__base_is_native_8js_ade4514786846f3fd15e74c4ec7ea26c0}{is\+Object}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./is\+Object\textquotesingle{})
+\item 
+var \mbox{\hyperlink{__base_is_native_8js_a52431920115e61fec1253ceaf156a38d}{to\+Source}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\+\_\+to\+Source\textquotesingle{})
+\item 
+var \mbox{\hyperlink{__base_is_native_8js_a8f9ae1f4441911cc681827450f54a15a}{re\+Reg\+Exp\+Char}} = /\mbox{[}\textbackslash{}\textbackslash{}\texorpdfstring{$^\wedge$}{\string^}\$.\texorpdfstring{$\ast$}{*}+?()\mbox{[}\textbackslash{}\mbox{]}\{\}\texorpdfstring{$\vert$}{|}\mbox{]}/\mbox{\hyperlink{ordered-map_8min_8js_a103df269476e78897c9c4c6cb8f4eb06}{g}}
+\item 
+var \mbox{\hyperlink{__base_is_native_8js_a3e3dabfde5aa2dce3b0e3a2867df7861}{re\+Is\+Host\+Ctor}} = /\texorpdfstring{$^\wedge$}{\string^}\textbackslash{}\mbox{[}\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}} .+?Constructor\textbackslash{}\mbox{]}\$/
+\item 
+var \mbox{\hyperlink{__base_is_native_8js_a5aa45ca694aebb192aab79296ef1860d}{func\+Proto}} = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{Function.\+prototype}}
+\item 
+var \mbox{\hyperlink{__base_is_native_8js_a562e1facef2ded1e56f0505c1942fa1b}{object\+Proto}} = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{Object.\+prototype}}
+\item 
+var \mbox{\hyperlink{__base_is_native_8js_a2d3a93c1a4fb5770fd38db1c7a304c91}{func\+To\+String}} = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7234a4e8129e261e2c517e09a337bf6a}{func\+Proto.\+to\+String}}
+\item 
+var \mbox{\hyperlink{__base_is_native_8js_a70e9fba663e9e2e297e34ddce97d6fb7}{has\+Own\+Property}} = object\+Proto.\+has\+Own\+Property
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{__base_is_native_8js_a5aa45ca694aebb192aab79296ef1860d}\index{\_baseIsNative.js@{\_baseIsNative.js}!funcProto@{funcProto}}
+\index{funcProto@{funcProto}!\_baseIsNative.js@{\_baseIsNative.js}}
+\doxysubsubsection{\texorpdfstring{funcProto}{funcProto}}
+{\footnotesize\ttfamily \label{__base_is_native_8js_a5aa45ca694aebb192aab79296ef1860d} 
+var func\+Proto = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{Function.\+prototype}}}
+
+Used for built-\/in method references. \Hypertarget{__base_is_native_8js_a2d3a93c1a4fb5770fd38db1c7a304c91}\index{\_baseIsNative.js@{\_baseIsNative.js}!funcToString@{funcToString}}
+\index{funcToString@{funcToString}!\_baseIsNative.js@{\_baseIsNative.js}}
+\doxysubsubsection{\texorpdfstring{funcToString}{funcToString}}
+{\footnotesize\ttfamily \label{__base_is_native_8js_a2d3a93c1a4fb5770fd38db1c7a304c91} 
+var func\+To\+String = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7234a4e8129e261e2c517e09a337bf6a}{func\+Proto.\+to\+String}}}
+
+Used to resolve the decompiled source of functions. \Hypertarget{__base_is_native_8js_a70e9fba663e9e2e297e34ddce97d6fb7}\index{\_baseIsNative.js@{\_baseIsNative.js}!hasOwnProperty@{hasOwnProperty}}
+\index{hasOwnProperty@{hasOwnProperty}!\_baseIsNative.js@{\_baseIsNative.js}}
+\doxysubsubsection{\texorpdfstring{hasOwnProperty}{hasOwnProperty}}
+{\footnotesize\ttfamily \label{__base_is_native_8js_a70e9fba663e9e2e297e34ddce97d6fb7} 
+var has\+Own\+Property = object\+Proto.\+has\+Own\+Property}
+
+Used to check objects for own properties. \Hypertarget{__base_is_native_8js_a0fd10f3667f54ac77aa663fdf52c89b2}\index{\_baseIsNative.js@{\_baseIsNative.js}!isFunction@{isFunction}}
+\index{isFunction@{isFunction}!\_baseIsNative.js@{\_baseIsNative.js}}
+\doxysubsubsection{\texorpdfstring{isFunction}{isFunction}}
+{\footnotesize\ttfamily \label{__base_is_native_8js_a0fd10f3667f54ac77aa663fdf52c89b2} 
+var is\+Function = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./is\+Function\textquotesingle{})}
+
+\Hypertarget{__base_is_native_8js_ab92353aa43ba373ecab611add094e019}\index{\_baseIsNative.js@{\_baseIsNative.js}!isMasked@{isMasked}}
+\index{isMasked@{isMasked}!\_baseIsNative.js@{\_baseIsNative.js}}
+\doxysubsubsection{\texorpdfstring{isMasked}{isMasked}}
+{\footnotesize\ttfamily \label{__base_is_native_8js_ab92353aa43ba373ecab611add094e019} 
+var is\+Masked = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\+\_\+is\+Masked\textquotesingle{})}
+
+\Hypertarget{__base_is_native_8js_ade4514786846f3fd15e74c4ec7ea26c0}\index{\_baseIsNative.js@{\_baseIsNative.js}!isObject@{isObject}}
+\index{isObject@{isObject}!\_baseIsNative.js@{\_baseIsNative.js}}
+\doxysubsubsection{\texorpdfstring{isObject}{isObject}}
+{\footnotesize\ttfamily \label{__base_is_native_8js_ade4514786846f3fd15e74c4ec7ea26c0} 
+var is\+Object = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./is\+Object\textquotesingle{})}
+
+\Hypertarget{__base_is_native_8js_a562e1facef2ded1e56f0505c1942fa1b}\index{\_baseIsNative.js@{\_baseIsNative.js}!objectProto@{objectProto}}
+\index{objectProto@{objectProto}!\_baseIsNative.js@{\_baseIsNative.js}}
+\doxysubsubsection{\texorpdfstring{objectProto}{objectProto}}
+{\footnotesize\ttfamily \label{__base_is_native_8js_a562e1facef2ded1e56f0505c1942fa1b} 
+var object\+Proto = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{Object.\+prototype}}}
+
+\Hypertarget{__base_is_native_8js_a3e3dabfde5aa2dce3b0e3a2867df7861}\index{\_baseIsNative.js@{\_baseIsNative.js}!reIsHostCtor@{reIsHostCtor}}
+\index{reIsHostCtor@{reIsHostCtor}!\_baseIsNative.js@{\_baseIsNative.js}}
+\doxysubsubsection{\texorpdfstring{reIsHostCtor}{reIsHostCtor}}
+{\footnotesize\ttfamily \label{__base_is_native_8js_a3e3dabfde5aa2dce3b0e3a2867df7861} 
+var re\+Is\+Host\+Ctor = /\texorpdfstring{$^\wedge$}{\string^}\textbackslash{}\mbox{[}\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}} .+?Constructor\textbackslash{}\mbox{]}\$/}
+
+Used to detect host constructors (Safari). \Hypertarget{__base_is_native_8js_a8f9ae1f4441911cc681827450f54a15a}\index{\_baseIsNative.js@{\_baseIsNative.js}!reRegExpChar@{reRegExpChar}}
+\index{reRegExpChar@{reRegExpChar}!\_baseIsNative.js@{\_baseIsNative.js}}
+\doxysubsubsection{\texorpdfstring{reRegExpChar}{reRegExpChar}}
+{\footnotesize\ttfamily \label{__base_is_native_8js_a8f9ae1f4441911cc681827450f54a15a} 
+var re\+Reg\+Exp\+Char = /\mbox{[}\textbackslash{}\textbackslash{}\texorpdfstring{$^\wedge$}{\string^}\$.\texorpdfstring{$\ast$}{*}+?()\mbox{[}\textbackslash{}\mbox{]}\{\}\texorpdfstring{$\vert$}{|}\mbox{]}/\mbox{\hyperlink{ordered-map_8min_8js_a103df269476e78897c9c4c6cb8f4eb06}{g}}}
+
+Used to match {\ttfamily Reg\+Exp} \href{http://ecma-international.org/ecma-262/7.0/\#sec-patterns}{\texttt{ syntax characters}}. \Hypertarget{__base_is_native_8js_a52431920115e61fec1253ceaf156a38d}\index{\_baseIsNative.js@{\_baseIsNative.js}!toSource@{toSource}}
+\index{toSource@{toSource}!\_baseIsNative.js@{\_baseIsNative.js}}
+\doxysubsubsection{\texorpdfstring{toSource}{toSource}}
+{\footnotesize\ttfamily \label{__base_is_native_8js_a52431920115e61fec1253ceaf156a38d} 
+var to\+Source = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\+\_\+to\+Source\textquotesingle{})}
+

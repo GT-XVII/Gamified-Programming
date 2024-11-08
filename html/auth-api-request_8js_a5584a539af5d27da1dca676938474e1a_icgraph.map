@@ -1,0 +1,9 @@
+<map id="emulatorHost" name="emulatorHost">
+<area shape="rect" id="Node000001" title=" " alt="" coords="251,78,350,104"/>
+<area shape="rect" id="Node000002" href="$class_auth_resource_url_builder.html#a15856d209520a5ff0ecbeead5e670a4d" title=" " alt="" coords="23,5,185,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="244,75,167,49,168,44,246,70"/>
+<area shape="rect" id="Node000003" href="$class_database_rules_client.html#af9de06b0b0d386e587380242a7590a29" title=" " alt="" coords="31,71,177,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="235,94,177,94,177,88,235,88"/>
+<area shape="rect" id="Node000004" href="$class_tenant_aware_auth_resource_url_builder.html#aae7fca8a6890b718b375e395f668f5b1" title=" " alt="" coords="5,136,203,177"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="246,112,168,138,167,133,244,107"/>
+</map>

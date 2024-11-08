@@ -1,0 +1,376 @@
+\doxysection{Http2\+Subchannel\+Call Class Reference}
+\hypertarget{class_http2_subchannel_call}{}\label{class_http2_subchannel_call}\index{Http2SubchannelCall@{Http2SubchannelCall}}
+
+
+Collaboration diagram for Http2\+Subchannel\+Call\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=191pt]{class_http2_subchannel_call__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_http2_subchannel_call_a4e662060d7da85f955a859ea983cd3c5}{constructor}} (http2\+Stream, call\+Event\+Tracker, listener, transport, call\+Id)
+\item 
+\mbox{\hyperlink{class_http2_subchannel_call_aae4ee2c5dc75d25280f0b2421c860b47}{get\+Deadline\+Info}} ()
+\item 
+\mbox{\hyperlink{class_http2_subchannel_call_ab6bcaf0fa89dabd15d0c896ebd8244cc}{on\+Disconnect}} ()
+\item 
+\mbox{\hyperlink{class_http2_subchannel_call_a6a26b5d76620042142ebd4e05e81b613}{output\+Status}} ()
+\item 
+\mbox{\hyperlink{class_http2_subchannel_call_a2e68938ce8f1bf01cdcc8e92e2a425b0}{trace}} (\mbox{\hyperlink{node-forge_2lib_2util_8js_ab492f69e70933f85fe6b3a8808d19852}{text}})
+\item 
+\mbox{\hyperlink{class_http2_subchannel_call_a4635a80aeb3d0d12f0f653fc855cb711}{end\+Call}} (\mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2index_8js_aac9dfada3e10bfb087ebb0a95f284488}{status}})
+\item 
+\mbox{\hyperlink{class_http2_subchannel_call_a8bce8516073ee2ec458d51afbeeb3721}{maybe\+Output\+Status}} ()
+\item 
+\mbox{\hyperlink{class_http2_subchannel_call_a6c26b9385d790c573f542c7cb516720d}{push}} (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}})
+\item 
+\mbox{\hyperlink{class_http2_subchannel_call_a48c0f77acc1940a96ec706acc8449602}{try\+Push}} (message\+Bytes)
+\item 
+\mbox{\hyperlink{class_http2_subchannel_call_a8e3adddf6f5615e0b159fedeff3cb0f8}{handle\+Trailers}} (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7f2cb2fcdd79bf72cefd29b7bc2d10fa}{headers}})
+\item 
+\mbox{\hyperlink{class_http2_subchannel_call_a6e659f8b24f49145b68ffe3e43117b6a}{destroy\+Http2\+Stream}} ()
+\item 
+\mbox{\hyperlink{class_http2_subchannel_call_a2d53aee613fb1ffcc45c42eda86ff2b3}{cancel\+With\+Status}} (\mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2index_8js_aac9dfada3e10bfb087ebb0a95f284488}{status}}, details)
+\item 
+\mbox{\hyperlink{class_http2_subchannel_call_a2e49b55f9dc17b79687b6d2eff0f4d47}{get\+Status}} ()
+\item 
+\mbox{\hyperlink{class_http2_subchannel_call_adb74f0af6fc093dc724f2a528b92ad03}{get\+Peer}} ()
+\item 
+\mbox{\hyperlink{class_http2_subchannel_call_a066207b183bae9f559653790f917814f}{get\+Call\+Number}} ()
+\item 
+\mbox{\hyperlink{class_http2_subchannel_call_aed6ae6a57fdf8cfbdd422ecb734b9fdd}{start\+Read}} ()
+\item 
+\mbox{\hyperlink{class_http2_subchannel_call_aa89acb416a3ba6d0141060d7c5bab4db}{send\+Message\+With\+Context}} (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}})
+\item 
+\mbox{\hyperlink{class_http2_subchannel_call_aab60e2a41668d0ba05ee49b15d691437}{half\+Close}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_http2_subchannel_call_a2d53aee613fb1ffcc45c42eda86ff2b3}\index{Http2SubchannelCall@{Http2SubchannelCall}!cancelWithStatus@{cancelWithStatus}}
+\index{cancelWithStatus@{cancelWithStatus}!Http2SubchannelCall@{Http2SubchannelCall}}
+\doxysubsubsection{\texorpdfstring{cancelWithStatus()}{cancelWithStatus()}}
+{\footnotesize\ttfamily \label{class_http2_subchannel_call_a2d53aee613fb1ffcc45c42eda86ff2b3} 
+Http2\+Subchannel\+Call\+::cancel\+With\+Status (\begin{DoxyParamCaption}\item[{}]{status}{, }\item[{}]{details}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{class_http2_subchannel_call_a4635a80aeb3d0d12f0f653fc855cb711}{end\+Call()}}, \mbox{\hyperlink{subchannel-call_8js_a7ccaf64b99eed08557e09f7f79748878}{metadata\+\_\+1}}, \mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2index_8js_aac9dfada3e10bfb087ebb0a95f284488}{status}}, and \mbox{\hyperlink{logging_8js_acb1634453d1705af9683695efa3847e6}{trace}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_http2_subchannel_call_a2d53aee613fb1ffcc45c42eda86ff2b3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_http2_subchannel_call_a2d53aee613fb1ffcc45c42eda86ff2b3_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_http2_subchannel_call_a4e662060d7da85f955a859ea983cd3c5}\index{Http2SubchannelCall@{Http2SubchannelCall}!constructor@{constructor}}
+\index{constructor@{constructor}!Http2SubchannelCall@{Http2SubchannelCall}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_http2_subchannel_call_a4e662060d7da85f955a859ea983cd3c5} 
+Http2\+Subchannel\+Call\+::constructor (\begin{DoxyParamCaption}\item[{}]{http2\+Stream}{, }\item[{}]{call\+Event\+Tracker}{, }\item[{}]{listener}{, }\item[{}]{transport}{, }\item[{}]{call\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Indicates that an \textquotesingle{}end\textquotesingle{} event has come from the http2 stream, so there will be no more data events.
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{logger_2dist_2esm_2index_8esm5_8js_a0adf123df8967a14b5bdd9ff3bbe2d0c}{\+\_\+a}}, \mbox{\hyperlink{class_http2_subchannel_call_a2d53aee613fb1ffcc45c42eda86ff2b3}{cancel\+With\+Status()}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af46081dcabb4da1ee7ca00228506bcb7}{client}}, \mbox{\hyperlink{subchannel-call_8js_ad33cb6840349d3bc93f4fe9de15a6f8f}{constants\+\_\+1}}, \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}, \mbox{\hyperlink{dbcs-codec_8js_ad3d625998d0232650afb4cf3c50dc9f1}{decoder}}, \mbox{\hyperlink{firestore__admin__v1__proto__api_8js_a08a4415e9d594ff960030b921d42b91e}{e}}, \mbox{\hyperlink{class_http2_subchannel_call_a4635a80aeb3d0d12f0f653fc855cb711}{end\+Call()}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}}, \mbox{\hyperlink{subchannel-call_8js_a7cc447ddf2064efb286bd4b18a9e0d0b}{get\+System\+Error\+Name()}}, \mbox{\hyperlink{class_http2_subchannel_call_a8e3adddf6f5615e0b159fedeff3cb0f8}{handle\+Trailers()}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7f2cb2fcdd79bf72cefd29b7bc2d10fa}{headers}}, \mbox{\hyperlink{subchannel-call_8js_a41a25b54de72b0be6fc52792a59af64c}{http2}}, \mbox{\hyperlink{subchannel-call_8js_a90c0a9663382cfce6ecec54aeb0ac08f}{map\+Http\+Status\+Code()}}, \mbox{\hyperlink{class_http2_subchannel_call_a8bce8516073ee2ec458d51afbeeb3721}{maybe\+Output\+Status()}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}, \mbox{\hyperlink{subchannel-call_8js_a7ccaf64b99eed08557e09f7f79748878}{metadata\+\_\+1}}, \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}, \mbox{\hyperlink{ipaddr_8min_8js_abcedab16429ea0641c6596f556f2e102}{process}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a207259f7e3cfd9800ed8f7d7224c7a68}{server}}, \mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2index_8js_aac9dfada3e10bfb087ebb0a95f284488}{status}}, \mbox{\hyperlink{subchannel-call_8js_a75183069d786e5fe57ab0fd5206813ce}{stream\+\_\+decoder\+\_\+1}}, \mbox{\hyperlink{logging_8js_acb1634453d1705af9683695efa3847e6}{trace}}, \mbox{\hyperlink{class_http2_subchannel_call_a48c0f77acc1940a96ec706acc8449602}{try\+Push()}}, and \mbox{\hyperlink{__mapping_8js_af37e5440fa5cad095a598c4cb9afcc1b}{without}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_http2_subchannel_call_a4e662060d7da85f955a859ea983cd3c5_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_http2_subchannel_call_a6e659f8b24f49145b68ffe3e43117b6a}\index{Http2SubchannelCall@{Http2SubchannelCall}!destroyHttp2Stream@{destroyHttp2Stream}}
+\index{destroyHttp2Stream@{destroyHttp2Stream}!Http2SubchannelCall@{Http2SubchannelCall}}
+\doxysubsubsection{\texorpdfstring{destroyHttp2Stream()}{destroyHttp2Stream()}}
+{\footnotesize\ttfamily \label{class_http2_subchannel_call_a6e659f8b24f49145b68ffe3e43117b6a} 
+Http2\+Subchannel\+Call\+::destroy\+Http2\+Stream (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{logger_2dist_2esm_2index_8esm5_8js_a0adf123df8967a14b5bdd9ff3bbe2d0c}{\+\_\+a}}, \mbox{\hyperlink{subchannel-call_8js_ad33cb6840349d3bc93f4fe9de15a6f8f}{constants\+\_\+1}}, \mbox{\hyperlink{subchannel-call_8js_a41a25b54de72b0be6fc52792a59af64c}{http2}}, and \mbox{\hyperlink{logging_8js_acb1634453d1705af9683695efa3847e6}{trace}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_http2_subchannel_call_a6e659f8b24f49145b68ffe3e43117b6a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_http2_subchannel_call_a4635a80aeb3d0d12f0f653fc855cb711}\index{Http2SubchannelCall@{Http2SubchannelCall}!endCall@{endCall}}
+\index{endCall@{endCall}!Http2SubchannelCall@{Http2SubchannelCall}}
+\doxysubsubsection{\texorpdfstring{endCall()}{endCall()}}
+{\footnotesize\ttfamily \label{class_http2_subchannel_call_a4635a80aeb3d0d12f0f653fc855cb711} 
+Http2\+Subchannel\+Call\+::end\+Call (\begin{DoxyParamCaption}\item[{}]{status}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+On first call, emits a \textquotesingle{}status\textquotesingle{} event with the given Status\+Object. Subsequent calls are no-\/ops. 
+\begin{DoxyParams}{Parameters}
+{\em status} & The status of the call. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{subchannel-call_8js_ad33cb6840349d3bc93f4fe9de15a6f8f}{constants\+\_\+1}}, \mbox{\hyperlink{class_http2_subchannel_call_a6e659f8b24f49145b68ffe3e43117b6a}{destroy\+Http2\+Stream()}}, \mbox{\hyperlink{class_http2_subchannel_call_a8bce8516073ee2ec458d51afbeeb3721}{maybe\+Output\+Status()}}, and \mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2index_8js_aac9dfada3e10bfb087ebb0a95f284488}{status}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_http2_subchannel_call_a4635a80aeb3d0d12f0f653fc855cb711_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_http2_subchannel_call_a4635a80aeb3d0d12f0f653fc855cb711_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_http2_subchannel_call_a066207b183bae9f559653790f917814f}\index{Http2SubchannelCall@{Http2SubchannelCall}!getCallNumber@{getCallNumber}}
+\index{getCallNumber@{getCallNumber}!Http2SubchannelCall@{Http2SubchannelCall}}
+\doxysubsubsection{\texorpdfstring{getCallNumber()}{getCallNumber()}}
+{\footnotesize\ttfamily \label{class_http2_subchannel_call_a066207b183bae9f559653790f917814f} 
+Http2\+Subchannel\+Call\+::get\+Call\+Number (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_http2_subchannel_call_aae4ee2c5dc75d25280f0b2421c860b47}\index{Http2SubchannelCall@{Http2SubchannelCall}!getDeadlineInfo@{getDeadlineInfo}}
+\index{getDeadlineInfo@{getDeadlineInfo}!Http2SubchannelCall@{Http2SubchannelCall}}
+\doxysubsubsection{\texorpdfstring{getDeadlineInfo()}{getDeadlineInfo()}}
+{\footnotesize\ttfamily \label{class_http2_subchannel_call_aae4ee2c5dc75d25280f0b2421c860b47} 
+Http2\+Subchannel\+Call\+::get\+Deadline\+Info (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, and \mbox{\hyperlink{class_http2_subchannel_call_adb74f0af6fc093dc724f2a528b92ad03}{get\+Peer()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{class_http2_subchannel_call_aae4ee2c5dc75d25280f0b2421c860b47_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_http2_subchannel_call_adb74f0af6fc093dc724f2a528b92ad03}\index{Http2SubchannelCall@{Http2SubchannelCall}!getPeer@{getPeer}}
+\index{getPeer@{getPeer}!Http2SubchannelCall@{Http2SubchannelCall}}
+\doxysubsubsection{\texorpdfstring{getPeer()}{getPeer()}}
+{\footnotesize\ttfamily \label{class_http2_subchannel_call_adb74f0af6fc093dc724f2a528b92ad03} 
+Http2\+Subchannel\+Call\+::get\+Peer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{class_http2_subchannel_call_adb74f0af6fc093dc724f2a528b92ad03_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_http2_subchannel_call_a2e49b55f9dc17b79687b6d2eff0f4d47}\index{Http2SubchannelCall@{Http2SubchannelCall}!getStatus@{getStatus}}
+\index{getStatus@{getStatus}!Http2SubchannelCall@{Http2SubchannelCall}}
+\doxysubsubsection{\texorpdfstring{getStatus()}{getStatus()}}
+{\footnotesize\ttfamily \label{class_http2_subchannel_call_a2e49b55f9dc17b79687b6d2eff0f4d47} 
+Http2\+Subchannel\+Call\+::get\+Status (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_http2_subchannel_call_aab60e2a41668d0ba05ee49b15d691437}\index{Http2SubchannelCall@{Http2SubchannelCall}!halfClose@{halfClose}}
+\index{halfClose@{halfClose}!Http2SubchannelCall@{Http2SubchannelCall}}
+\doxysubsubsection{\texorpdfstring{halfClose()}{halfClose()}}
+{\footnotesize\ttfamily \label{class_http2_subchannel_call_aab60e2a41668d0ba05ee49b15d691437} 
+Http2\+Subchannel\+Call\+::half\+Close (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{logging_8js_acb1634453d1705af9683695efa3847e6}{trace}}.
+
+\Hypertarget{class_http2_subchannel_call_a8e3adddf6f5615e0b159fedeff3cb0f8}\index{Http2SubchannelCall@{Http2SubchannelCall}!handleTrailers@{handleTrailers}}
+\index{handleTrailers@{handleTrailers}!Http2SubchannelCall@{Http2SubchannelCall}}
+\doxysubsubsection{\texorpdfstring{handleTrailers()}{handleTrailers()}}
+{\footnotesize\ttfamily \label{class_http2_subchannel_call_a8e3adddf6f5615e0b159fedeff3cb0f8} 
+Http2\+Subchannel\+Call\+::handle\+Trailers (\begin{DoxyParamCaption}\item[{}]{headers}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{subchannel-call_8js_ad33cb6840349d3bc93f4fe9de15a6f8f}{constants\+\_\+1}}, \mbox{\hyperlink{firestore__admin__v1__proto__api_8js_a08a4415e9d594ff960030b921d42b91e}{e}}, \mbox{\hyperlink{class_http2_subchannel_call_a4635a80aeb3d0d12f0f653fc855cb711}{end\+Call()}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7f2cb2fcdd79bf72cefd29b7bc2d10fa}{headers}}, \mbox{\hyperlink{subchannel-call_8js_a90c0a9663382cfce6ecec54aeb0ac08f}{map\+Http\+Status\+Code()}}, \mbox{\hyperlink{subchannel-call_8js_a7ccaf64b99eed08557e09f7f79748878}{metadata\+\_\+1}}, \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}, \mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2index_8js_aac9dfada3e10bfb087ebb0a95f284488}{status}}, and \mbox{\hyperlink{logging_8js_acb1634453d1705af9683695efa3847e6}{trace}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_http2_subchannel_call_a8e3adddf6f5615e0b159fedeff3cb0f8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{class_http2_subchannel_call_a8e3adddf6f5615e0b159fedeff3cb0f8_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_http2_subchannel_call_a8bce8516073ee2ec458d51afbeeb3721}\index{Http2SubchannelCall@{Http2SubchannelCall}!maybeOutputStatus@{maybeOutputStatus}}
+\index{maybeOutputStatus@{maybeOutputStatus}!Http2SubchannelCall@{Http2SubchannelCall}}
+\doxysubsubsection{\texorpdfstring{maybeOutputStatus()}{maybeOutputStatus()}}
+{\footnotesize\ttfamily \label{class_http2_subchannel_call_a8bce8516073ee2ec458d51afbeeb3721} 
+Http2\+Subchannel\+Call\+::maybe\+Output\+Status (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{subchannel-call_8js_ad33cb6840349d3bc93f4fe9de15a6f8f}{constants\+\_\+1}}, and \mbox{\hyperlink{class_http2_subchannel_call_a6a26b5d76620042142ebd4e05e81b613}{output\+Status()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{class_http2_subchannel_call_a8bce8516073ee2ec458d51afbeeb3721_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_http2_subchannel_call_a8bce8516073ee2ec458d51afbeeb3721_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_http2_subchannel_call_ab6bcaf0fa89dabd15d0c896ebd8244cc}\index{Http2SubchannelCall@{Http2SubchannelCall}!onDisconnect@{onDisconnect}}
+\index{onDisconnect@{onDisconnect}!Http2SubchannelCall@{Http2SubchannelCall}}
+\doxysubsubsection{\texorpdfstring{onDisconnect()}{onDisconnect()}}
+{\footnotesize\ttfamily \label{class_http2_subchannel_call_ab6bcaf0fa89dabd15d0c896ebd8244cc} 
+Http2\+Subchannel\+Call\+::on\+Disconnect (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{subchannel-call_8js_ad33cb6840349d3bc93f4fe9de15a6f8f}{constants\+\_\+1}}, \mbox{\hyperlink{class_http2_subchannel_call_a4635a80aeb3d0d12f0f653fc855cb711}{end\+Call()}}, and \mbox{\hyperlink{subchannel-call_8js_a7ccaf64b99eed08557e09f7f79748878}{metadata\+\_\+1}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_http2_subchannel_call_ab6bcaf0fa89dabd15d0c896ebd8244cc_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_http2_subchannel_call_a6a26b5d76620042142ebd4e05e81b613}\index{Http2SubchannelCall@{Http2SubchannelCall}!outputStatus@{outputStatus}}
+\index{outputStatus@{outputStatus}!Http2SubchannelCall@{Http2SubchannelCall}}
+\doxysubsubsection{\texorpdfstring{outputStatus()}{outputStatus()}}
+{\footnotesize\ttfamily \label{class_http2_subchannel_call_a6a26b5d76620042142ebd4e05e81b613} 
+Http2\+Subchannel\+Call\+::output\+Status (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{ipaddr_8min_8js_abcedab16429ea0641c6596f556f2e102}{process}}, and \mbox{\hyperlink{logging_8js_acb1634453d1705af9683695efa3847e6}{trace}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_http2_subchannel_call_a6a26b5d76620042142ebd4e05e81b613_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_http2_subchannel_call_a6c26b9385d790c573f542c7cb516720d}\index{Http2SubchannelCall@{Http2SubchannelCall}!push@{push}}
+\index{push@{push}!Http2SubchannelCall@{Http2SubchannelCall}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily \label{class_http2_subchannel_call_a6c26b9385d790c573f542c7cb516720d} 
+Http2\+Subchannel\+Call\+::push (\begin{DoxyParamCaption}\item[{}]{message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{class_http2_subchannel_call_a8bce8516073ee2ec458d51afbeeb3721}{maybe\+Output\+Status()}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}, \mbox{\hyperlink{ipaddr_8min_8js_abcedab16429ea0641c6596f556f2e102}{process}}, and \mbox{\hyperlink{logging_8js_acb1634453d1705af9683695efa3847e6}{trace}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_http2_subchannel_call_a6c26b9385d790c573f542c7cb516720d_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_http2_subchannel_call_aa89acb416a3ba6d0141060d7c5bab4db}\index{Http2SubchannelCall@{Http2SubchannelCall}!sendMessageWithContext@{sendMessageWithContext}}
+\index{sendMessageWithContext@{sendMessageWithContext}!Http2SubchannelCall@{Http2SubchannelCall}}
+\doxysubsubsection{\texorpdfstring{sendMessageWithContext()}{sendMessageWithContext()}}
+{\footnotesize\ttfamily \label{class_http2_subchannel_call_aa89acb416a3ba6d0141060d7c5bab4db} 
+Http2\+Subchannel\+Call\+::send\+Message\+With\+Context (\begin{DoxyParamCaption}\item[{}]{context}{, }\item[{}]{message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{logger_2dist_2esm_2index_8esm5_8js_a0adf123df8967a14b5bdd9ff3bbe2d0c}{\+\_\+a}}, \mbox{\hyperlink{class_http2_subchannel_call_a2d53aee613fb1ffcc45c42eda86ff2b3}{cancel\+With\+Status()}}, \mbox{\hyperlink{subchannel-call_8js_ad33cb6840349d3bc93f4fe9de15a6f8f}{constants\+\_\+1}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}}, \mbox{\hyperlink{class_http2_subchannel_call_a4635a80aeb3d0d12f0f653fc855cb711}{end\+Call()}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}, \mbox{\hyperlink{subchannel-call_8js_a7ccaf64b99eed08557e09f7f79748878}{metadata\+\_\+1}}, \mbox{\hyperlink{ipaddr_8min_8js_abcedab16429ea0641c6596f556f2e102}{process}}, and \mbox{\hyperlink{logging_8js_acb1634453d1705af9683695efa3847e6}{trace}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_http2_subchannel_call_aa89acb416a3ba6d0141060d7c5bab4db_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_http2_subchannel_call_aed6ae6a57fdf8cfbdd422ecb734b9fdd}\index{Http2SubchannelCall@{Http2SubchannelCall}!startRead@{startRead}}
+\index{startRead@{startRead}!Http2SubchannelCall@{Http2SubchannelCall}}
+\doxysubsubsection{\texorpdfstring{startRead()}{startRead()}}
+{\footnotesize\ttfamily \label{class_http2_subchannel_call_aed6ae6a57fdf8cfbdd422ecb734b9fdd} 
+Http2\+Subchannel\+Call\+::start\+Read (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{subchannel-call_8js_ad33cb6840349d3bc93f4fe9de15a6f8f}{constants\+\_\+1}}, \mbox{\hyperlink{class_http2_subchannel_call_a8bce8516073ee2ec458d51afbeeb3721}{maybe\+Output\+Status()}}, and \mbox{\hyperlink{__base_convert_8js_aa24e781fe0b662d38aac138432ec5e48}{push}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_http2_subchannel_call_aed6ae6a57fdf8cfbdd422ecb734b9fdd_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_http2_subchannel_call_a2e68938ce8f1bf01cdcc8e92e2a425b0}\index{Http2SubchannelCall@{Http2SubchannelCall}!trace@{trace}}
+\index{trace@{trace}!Http2SubchannelCall@{Http2SubchannelCall}}
+\doxysubsubsection{\texorpdfstring{trace()}{trace()}}
+{\footnotesize\ttfamily \label{class_http2_subchannel_call_a2e68938ce8f1bf01cdcc8e92e2a425b0} 
+Http2\+Subchannel\+Call\+::trace (\begin{DoxyParamCaption}\item[{}]{text}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{subchannel-call_8js_a9a82210578662572b5c320d974e286bb}{constants\+\_\+2}}, \mbox{\hyperlink{subchannel-call_8js_ab53afa7b9c9aef77e950713c8b54c98c}{logging}}, \mbox{\hyperlink{node-forge_2lib_2util_8js_ab492f69e70933f85fe6b3a8808d19852}{text}}, and \mbox{\hyperlink{subchannel-call_8js_a4d771a845df73d12433ddcb6b91f8b9a}{TRACER\+\_\+\+NAME}}.
+
+\Hypertarget{class_http2_subchannel_call_a48c0f77acc1940a96ec706acc8449602}\index{Http2SubchannelCall@{Http2SubchannelCall}!tryPush@{tryPush}}
+\index{tryPush@{tryPush}!Http2SubchannelCall@{Http2SubchannelCall}}
+\doxysubsubsection{\texorpdfstring{tryPush()}{tryPush()}}
+{\footnotesize\ttfamily \label{class_http2_subchannel_call_a48c0f77acc1940a96ec706acc8449602} 
+Http2\+Subchannel\+Call\+::try\+Push (\begin{DoxyParamCaption}\item[{}]{message\+Bytes}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{__base_convert_8js_aa24e781fe0b662d38aac138432ec5e48}{push}}, and \mbox{\hyperlink{logging_8js_acb1634453d1705af9683695efa3847e6}{trace}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{class_http2_subchannel_call_a48c0f77acc1940a96ec706acc8449602_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/@grpc/grpc-\/js/build/src/\mbox{\hyperlink{subchannel-call_8js}{subchannel-\/call.\+js}}\end{DoxyCompactItemize}

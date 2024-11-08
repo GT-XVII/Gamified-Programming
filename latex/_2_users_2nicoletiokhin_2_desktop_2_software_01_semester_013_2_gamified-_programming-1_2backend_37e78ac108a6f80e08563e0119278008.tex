@@ -1,0 +1,27 @@
+\doxysection{/\+Users/nicoletiokhin/\+Desktop/\+Software Semester 3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/lodash/after.\+js}
+\hypertarget{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_37e78ac108a6f80e08563e0119278008}{}\label{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_37e78ac108a6f80e08563e0119278008}The opposite of {\ttfamily \+\_\+.\+before}; this method creates a function that invokes {\ttfamily func} once it\textquotesingle{}s called {\ttfamily n} or more times.
+
+@member\+Of \+\_\+ \begin{DoxySince}{Since}
+0.\+1.\+0
+\end{DoxySince}
+
+\begin{DoxyParams}{Parameters}
+{\em \{number\}} & n The number of calls before {\ttfamily func} is invoked. \\
+\hline
+{\em \{\+Function\}} & func The function to restrict. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Function\} Returns the new restricted function.
+\end{DoxyReturn}
+var saves = \mbox{[}\textquotesingle{}profile\textquotesingle{}, \textquotesingle{}settings\textquotesingle{}\mbox{]};
+
+var done = \+\_\+.\+after(saves.\+length, function() \{ console.\+log(\textquotesingle{}done saving!\textquotesingle{}); \});
+
+\+\_\+.\+for\+Each(saves, function(type) \{ async\+Save(\{ \textquotesingle{}type\textquotesingle{}\+: type, \textquotesingle{}complete\textquotesingle{}\+: done \}); \}); // =\texorpdfstring{$>$}{>} Logs \textquotesingle{}done saving!\textquotesingle{} after the two async saves have completed.
+
+
+\begin{DoxyCodeInclude}{0}
+
+\end{DoxyCodeInclude}
+ Semester \doxylink{after_8js}{3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/lodash/after.\+js} 

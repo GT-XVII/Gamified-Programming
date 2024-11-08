@@ -1,0 +1,66 @@
+\doxysection{Multi\+Factor\+Settings Class Reference}
+\hypertarget{class_multi_factor_settings}{}\label{class_multi_factor_settings}\index{MultiFactorSettings@{MultiFactorSettings}}
+
+
+Collaboration diagram for Multi\+Factor\+Settings\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=173pt]{class_multi_factor_settings__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_multi_factor_settings_a8a65802487b654c7f3a0ee89fa4c7929}{constructor}} (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ac70ac40ef8199c59316b35022dd21914}{response}})
+\item 
+\mbox{\hyperlink{class_multi_factor_settings_acdac305ca31172ff98d8e3c997547762}{to\+JSON}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The multi-\/factor related user settings. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_multi_factor_settings_a8a65802487b654c7f3a0ee89fa4c7929}\index{MultiFactorSettings@{MultiFactorSettings}!constructor@{constructor}}
+\index{constructor@{constructor}!MultiFactorSettings@{MultiFactorSettings}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_multi_factor_settings_a8a65802487b654c7f3a0ee89fa4c7929} 
+Multi\+Factor\+Settings\+::constructor (\begin{DoxyParamCaption}\item[{}]{response}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Initializes the {\ttfamily Multi\+Factor} object using the server side or \doxylink{class_j_w_t}{JWT} format response.
+
+
+\begin{DoxyParams}{Parameters}
+{\em response} & -\/ The server side response. @constructor \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{user-record_8js_af1a99a3ff1a35c114bdd06cc7252beb6}{error\+\_\+1}}, \mbox{\hyperlink{class_multi_factor_info_a2d94dfef32be59b8e75de79aa38d4972}{Multi\+Factor\+Info\+::init\+Multi\+Factor\+Info()}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ac70ac40ef8199c59316b35022dd21914}{response}}, \mbox{\hyperlink{user-record_8js_a022e926a40defc4294368e708a7e2372}{utils}}, and \mbox{\hyperlink{user-record_8js_ae8e6bfc69861f6844f5e12fb6a9836c8}{validator\+\_\+1}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{class_multi_factor_settings_a8a65802487b654c7f3a0ee89fa4c7929_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_multi_factor_settings_acdac305ca31172ff98d8e3c997547762}\index{MultiFactorSettings@{MultiFactorSettings}!toJSON@{toJSON}}
+\index{toJSON@{toJSON}!MultiFactorSettings@{MultiFactorSettings}}
+\doxysubsubsection{\texorpdfstring{toJSON()}{toJSON()}}
+{\footnotesize\ttfamily \label{class_multi_factor_settings_acdac305ca31172ff98d8e3c997547762} 
+Multi\+Factor\+Settings\+::to\+JSON (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a JSON-\/serializable representation of this multi-\/factor object.
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_a}{A} JSON-\/serializable representation of this multi-\/factor object. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/firebase-\/admin/lib/auth/\mbox{\hyperlink{user-record_8js}{user-\/record.\+js}}\end{DoxyCompactItemize}

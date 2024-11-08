@@ -1,0 +1,9 @@
+<map id="A" name="A">
+<area shape="rect" id="Node000001" title=" " alt="" coords="309,31,347,56"/>
+<area shape="rect" id="Node000002" href="$ed25519_8js.html#ad5cda3f12c0f7eaf07305db62e2fcc71" title=" " alt="" coords="198,5,240,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="293,38,240,26,241,20,295,33"/>
+<area shape="rect" id="Node000003" href="$ed25519_8js.html#a2ebf44ee9289ff62005dae1e4ccdf2b6" title=" " alt="" coords="177,55,261,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="294,54,262,61,261,56,293,48"/>
+<area shape="rect" id="Node000004" href="$ed25519_8js.html#ad665ff72b771075af33785babb5f79e1" title=" " alt="" coords="5,55,129,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="161,70,129,70,129,65,161,65"/>
+</map>

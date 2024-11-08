@@ -1,0 +1,24 @@
+<map id="loadFileDescriptorSetFromObject" name="loadFileDescriptorSetFromObject">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,128,182,169"/>
+<area shape="rect" id="Node000002" href="$_0dgrpc_2proto-loader_2build_2src_2index_8js.html#ab33472109a567b1b966dae70917482ae" title=" " alt="" coords="230,128,423,169"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="182,146,214,146,214,152,182,152"/>
+<area shape="rect" id="Node000003" href="$_0dgrpc_2proto-loader_2build_2src_2index_8js.html#acc1b93d0d1876a09212cde08ec0e346e" title=" " alt="" coords="471,136,634,162"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="423,146,456,146,456,152,423,152"/>
+<area shape="rect" id="Node000004" href="$_0dgrpc_2proto-loader_2build_2src_2index_8js.html#aa5363e18d392025c8a89b8592e172c1c" title=" " alt="" coords="729,87,842,112"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="616,133,714,112,715,117,617,138"/>
+<area shape="rect" id="Node000012" href="$_0dgrpc_2proto-loader_2build_2src_2index_8js.html#a0b4c1e2129267cfc5e3056de597a8d47" title=" " alt="" coords="682,172,889,198"/>
+<area shape="poly" id="edge7_Node000003_Node000012" title=" " alt="" coords="635,159,684,166,683,172,634,164"/>
+<area shape="rect" id="Node000005" href="$_0dgrpc_2proto-loader_2build_2src_2index_8js.html#a7629df7de0be9667f7ca5f0b26c3eea2" title=" " alt="" coords="952,5,1098,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="818,84,936,40,957,33,958,38,938,45,820,89"/>
+<area shape="rect" id="Node000006" href="$_0dgrpc_2proto-loader_2build_2src_2index_8js.html#a4a8bf73852c14e9dfed8da0f3a779aa1" title=" " alt="" coords="942,55,1108,80"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="842,89,927,78,927,83,843,95"/>
+<area shape="rect" id="Node000007" href="$_0dgrpc_2proto-loader_2build_2src_2index_8js.html#a2bbf0cb67f4f415bd519c53275e52037" title=" " alt="" coords="947,104,1103,130"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="843,101,932,107,931,113,842,106"/>
+<area shape="poly" id="edge8_Node000012_Node000012" title=" " alt="" coords="747,173,739,163,744,154,760,147,786,145,814,148,828,155,826,160,812,153,785,151,761,153,747,157,745,163,751,170"/>
+<area shape="rect" id="Node000013" href="$_0dgrpc_2proto-loader_2build_2src_2index_8js.html#a849ea2844ca7f387cdcf3fa47bf39703" title=" " alt="" coords="937,153,1113,179"/>
+<area shape="poly" id="edge9_Node000012_Node000013" title=" " alt="" coords="889,174,921,172,921,177,889,179"/>
+<area shape="rect" id="Node000014" href="$_0dgrpc_2proto-loader_2build_2src_2index_8js.html#add870a3a6b6070c98366d1a8eb1cefdd" title=" " alt="" coords="959,203,1090,228"/>
+<area shape="poly" id="edge10_Node000012_Node000014" title=" " alt="" coords="890,195,944,203,943,208,889,201"/>
+<area shape="rect" id="Node000015" href="$_0dgrpc_2proto-loader_2build_2src_2index_8js.html#a28ccdd8c24267b17279350acfcdd8959" title=" " alt="" coords="987,252,1063,278"/>
+<area shape="poly" id="edge11_Node000012_Node000015" title=" " alt="" coords="821,196,938,238,972,249,971,254,936,243,819,201"/>
+</map>

@@ -1,0 +1,123 @@
+\doxysection{Leaf\+Load\+Balancer Class Reference}
+\hypertarget{class_leaf_load_balancer}{}\label{class_leaf_load_balancer}\index{LeafLoadBalancer@{LeafLoadBalancer}}
+
+
+Collaboration diagram for Leaf\+Load\+Balancer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{class_leaf_load_balancer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_leaf_load_balancer_ac9f4d80b732802271e3621670588ebf4}{constructor}} (endpoint, channel\+Control\+Helper, \mbox{\hyperlink{_0dgrpc_2grpc-js_2build_2src_2index_8js_a88f1ca34064fef6dc1e29d7d1cf5cfcf}{credentials}}, options)
+\item 
+\mbox{\hyperlink{class_leaf_load_balancer_a423c1f148e2e2596037a0317b09da691}{start\+Connecting}} ()
+\item 
+\mbox{\hyperlink{class_leaf_load_balancer_aee3f0843f4c525840ac66c12ec0ce556}{update\+Endpoint}} (new\+Endpoint)
+\item 
+\mbox{\hyperlink{class_leaf_load_balancer_a84fcde0be8c2036ed8bc73997cb2261b}{get\+Connectivity\+State}} ()
+\item 
+\mbox{\hyperlink{class_leaf_load_balancer_aeb6836866153f067cca37720104021bd}{get\+Picker}} ()
+\item 
+\mbox{\hyperlink{class_leaf_load_balancer_adbd8c70eecf9a7c95aaa3a2aa2a69d12}{get\+Endpoint}} ()
+\item 
+\mbox{\hyperlink{class_leaf_load_balancer_a2c2c31e1d908f146eac2ae49bc6c3576}{exit\+Idle}} ()
+\item 
+\mbox{\hyperlink{class_leaf_load_balancer_a08ece45d40b0c28f617934bf58f7c071}{destroy}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class handles the leaf load balancing operations for a single endpoint. It is a thin wrapper around a \doxylink{class_pick_first_load_balancer}{Pick\+First\+Load\+Balancer} with a different API that more closely reflects how it will be used as a leaf balancer. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_leaf_load_balancer_ac9f4d80b732802271e3621670588ebf4}\index{LeafLoadBalancer@{LeafLoadBalancer}!constructor@{constructor}}
+\index{constructor@{constructor}!LeafLoadBalancer@{LeafLoadBalancer}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_leaf_load_balancer_ac9f4d80b732802271e3621670588ebf4} 
+Leaf\+Load\+Balancer\+::constructor (\begin{DoxyParamCaption}\item[{}]{endpoint}{, }\item[{}]{channel\+Control\+Helper}{, }\item[{}]{credentials}{, }\item[{}]{options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{load-balancer-pick-first_8js_a66e6c9aea487cf1c4498cf2b1aa0f621}{connectivity\+\_\+state\+\_\+1}}, \mbox{\hyperlink{_0dgrpc_2grpc-js_2build_2src_2index_8js_a88f1ca34064fef6dc1e29d7d1cf5cfcf}{credentials}}, \mbox{\hyperlink{load-balancer-pick-first_8js_a5136c4ad4dd2c82202031f18efa1c007}{load\+\_\+balancer\+\_\+1}}, \mbox{\hyperlink{load-balancer-pick-first_8js_a81c59cca4f80962eae892ca3d4f2e839}{picker\+\_\+1}}, and \mbox{\hyperlink{load-balancer-pick-first_8js_ab9545a81690e309f5996ef0309b9f926}{Pick\+First\+Load\+Balancer}}.
+
+\Hypertarget{class_leaf_load_balancer_a08ece45d40b0c28f617934bf58f7c071}\index{LeafLoadBalancer@{LeafLoadBalancer}!destroy@{destroy}}
+\index{destroy@{destroy}!LeafLoadBalancer@{LeafLoadBalancer}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily \label{class_leaf_load_balancer_a08ece45d40b0c28f617934bf58f7c071} 
+Leaf\+Load\+Balancer\+::destroy (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_leaf_load_balancer_a2c2c31e1d908f146eac2ae49bc6c3576}\index{LeafLoadBalancer@{LeafLoadBalancer}!exitIdle@{exitIdle}}
+\index{exitIdle@{exitIdle}!LeafLoadBalancer@{LeafLoadBalancer}}
+\doxysubsubsection{\texorpdfstring{exitIdle()}{exitIdle()}}
+{\footnotesize\ttfamily \label{class_leaf_load_balancer_a2c2c31e1d908f146eac2ae49bc6c3576} 
+Leaf\+Load\+Balancer\+::exit\+Idle (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_leaf_load_balancer_a84fcde0be8c2036ed8bc73997cb2261b}\index{LeafLoadBalancer@{LeafLoadBalancer}!getConnectivityState@{getConnectivityState}}
+\index{getConnectivityState@{getConnectivityState}!LeafLoadBalancer@{LeafLoadBalancer}}
+\doxysubsubsection{\texorpdfstring{getConnectivityState()}{getConnectivityState()}}
+{\footnotesize\ttfamily \label{class_leaf_load_balancer_a84fcde0be8c2036ed8bc73997cb2261b} 
+Leaf\+Load\+Balancer\+::get\+Connectivity\+State (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_leaf_load_balancer_adbd8c70eecf9a7c95aaa3a2aa2a69d12}\index{LeafLoadBalancer@{LeafLoadBalancer}!getEndpoint@{getEndpoint}}
+\index{getEndpoint@{getEndpoint}!LeafLoadBalancer@{LeafLoadBalancer}}
+\doxysubsubsection{\texorpdfstring{getEndpoint()}{getEndpoint()}}
+{\footnotesize\ttfamily \label{class_leaf_load_balancer_adbd8c70eecf9a7c95aaa3a2aa2a69d12} 
+Leaf\+Load\+Balancer\+::get\+Endpoint (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_leaf_load_balancer_aeb6836866153f067cca37720104021bd}\index{LeafLoadBalancer@{LeafLoadBalancer}!getPicker@{getPicker}}
+\index{getPicker@{getPicker}!LeafLoadBalancer@{LeafLoadBalancer}}
+\doxysubsubsection{\texorpdfstring{getPicker()}{getPicker()}}
+{\footnotesize\ttfamily \label{class_leaf_load_balancer_aeb6836866153f067cca37720104021bd} 
+Leaf\+Load\+Balancer\+::get\+Picker (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_leaf_load_balancer_a423c1f148e2e2596037a0317b09da691}\index{LeafLoadBalancer@{LeafLoadBalancer}!startConnecting@{startConnecting}}
+\index{startConnecting@{startConnecting}!LeafLoadBalancer@{LeafLoadBalancer}}
+\doxysubsubsection{\texorpdfstring{startConnecting()}{startConnecting()}}
+{\footnotesize\ttfamily \label{class_leaf_load_balancer_a423c1f148e2e2596037a0317b09da691} 
+Leaf\+Load\+Balancer\+::start\+Connecting (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{load-balancer-pick-first_8js_a0c574ed9e718bd7a4c83d8f8ead8ffa7}{LEAF\+\_\+\+CONFIG}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_leaf_load_balancer_a423c1f148e2e2596037a0317b09da691_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_leaf_load_balancer_aee3f0843f4c525840ac66c12ec0ce556}\index{LeafLoadBalancer@{LeafLoadBalancer}!updateEndpoint@{updateEndpoint}}
+\index{updateEndpoint@{updateEndpoint}!LeafLoadBalancer@{LeafLoadBalancer}}
+\doxysubsubsection{\texorpdfstring{updateEndpoint()}{updateEndpoint()}}
+{\footnotesize\ttfamily \label{class_leaf_load_balancer_aee3f0843f4c525840ac66c12ec0ce556} 
+Leaf\+Load\+Balancer\+::update\+Endpoint (\begin{DoxyParamCaption}\item[{}]{new\+Endpoint}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Update the endpoint associated with this \doxylink{class_leaf_load_balancer}{Leaf\+Load\+Balancer} to a new endpoint. Does not trigger connection establishment if a connection attempt is not already in progress. 
+\begin{DoxyParams}{Parameters}
+{\em new\+Endpoint} & \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{load-balancer-pick-first_8js_a66e6c9aea487cf1c4498cf2b1aa0f621}{connectivity\+\_\+state\+\_\+1}}, and \mbox{\hyperlink{class_leaf_load_balancer_a423c1f148e2e2596037a0317b09da691}{start\+Connecting()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_leaf_load_balancer_aee3f0843f4c525840ac66c12ec0ce556_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/@grpc/grpc-\/js/build/src/\mbox{\hyperlink{load-balancer-pick-first_8js}{load-\/balancer-\/pick-\/first.\+js}}\end{DoxyCompactItemize}

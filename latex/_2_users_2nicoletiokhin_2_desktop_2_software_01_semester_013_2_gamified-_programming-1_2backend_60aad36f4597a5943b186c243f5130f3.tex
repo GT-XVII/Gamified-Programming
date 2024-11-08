@@ -1,0 +1,27 @@
+\doxysection{/\+Users/nicoletiokhin/\+Desktop/\+Software Semester 3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/lodash/min\+By.\+js}
+\hypertarget{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_60aad36f4597a5943b186c243f5130f3}{}\label{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_60aad36f4597a5943b186c243f5130f3}This method is like {\ttfamily \+\_\+.\+min} except that it accepts {\ttfamily iteratee} which is invoked for each element in {\ttfamily array} to generate the criterion by which the value is ranked. The iteratee is invoked with one argument\+: (value).
+
+@member\+Of \+\_\+ \begin{DoxySince}{Since}
+4.\+0.\+0
+\end{DoxySince}
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Array\}} & array The array to iterate over. \\
+\hline
+{\em \{\+Function\}} & \mbox{[}iteratee=\+\_\+.\+identity\mbox{]} The iteratee invoked per element. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{\texorpdfstring{$\ast$}{*}\} Returns the minimum value.
+\end{DoxyReturn}
+var objects = \mbox{[}\{ \textquotesingle{}n\textquotesingle{}\+: 1 \}, \{ \textquotesingle{}n\textquotesingle{}\+: 2 \}\mbox{]};
+
+\+\_\+.\+min\+By(objects, function(o) \{ return o.\+n; \}); // =\texorpdfstring{$>$}{>} \{ \textquotesingle{}n\textquotesingle{}\+: 1 \}
+
+// The {\ttfamily \+\_\+.\+property} iteratee shorthand. \+\_\+.\+min\+By(objects, \textquotesingle{}n\textquotesingle{}); // =\texorpdfstring{$>$}{>} \{ \textquotesingle{}n\textquotesingle{}\+: 1 \}
+
+
+\begin{DoxyCodeInclude}{0}
+
+\end{DoxyCodeInclude}
+ Semester \doxylink{min_by_8js}{3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/lodash/min\+By.\+js} 

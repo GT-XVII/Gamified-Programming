@@ -1,0 +1,27 @@
+<map id="WebSocketSubject::_connectSocket" name="WebSocketSubject::_connectSocket">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,96,146,137"/>
+<area shape="rect" id="Node000002" href="$class_web_socket_subject.html#a3fc1a5db9d9e78bbf0ad76498dacc72b" title=" " alt="" coords="194,67,334,108"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,103,178,98,179,103,146,109"/>
+<area shape="rect" id="Node000003" href="$class_subscriber.html#afb60832d2560fd75e4edcb71f19ea3b6" title=" " alt="" coords="200,132,328,158"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="146,125,185,131,185,136,146,130"/>
+<area shape="rect" id="Node000004" href="$class_subscriber.html#aea7573165dee4bc6bf44f57ce2ea5f89" title=" " alt="" coords="382,81,526,107"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="314,129,388,109,390,114,316,134"/>
+<area shape="rect" id="Node000010" href="$protobufjs_2dist_2protobuf_8js.html#adc8497f1b8fa9c7bee4a53c25c244a66" title=" " alt="" coords="431,157,477,183"/>
+<area shape="poly" id="edge9_Node000003_Node000010" title=" " alt="" coords="328,151,416,162,415,168,327,156"/>
+<area shape="rect" id="Node000005" href="$class_subscriber.html#afea705f5e252c1329c30392ad187b611" title=" " alt="" coords="592,5,743,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="490,78,573,48,612,34,614,39,575,53,492,83"/>
+<area shape="rect" id="Node000007" href="$event-target-shim_8js.html#a0a94f0d223a31d755d48ed03a64873ab" title=" " alt="" coords="1018,31,1097,56"/>
+<area shape="poly" id="edge8_Node000004_Node000007" title=" " alt="" coords="527,85,1002,45,1003,51,527,91"/>
+<area shape="rect" id="Node000009" href="$esm_2internal_2_subscriber_8js.html#a3b968d79ed5bf3304a2c1dd128d5722c" title=" " alt="" coords="581,107,754,132"/>
+<area shape="poly" id="edge7_Node000004_Node000009" title=" " alt="" coords="527,100,566,105,565,110,527,105"/>
+<area shape="rect" id="Node000006" href="$class_subscriber.html#a58bdd865eb6e3949a8812421352b7141" title=" " alt="" coords="809,5,970,31"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="744,16,793,16,793,21,744,21"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="971,28,1003,33,1002,38,970,33"/>
+<area shape="rect" id="Node000011" href="$protobufjs_2dist_2protobuf_8js.html#a74d7fa31d45064974a0c297422d3c0c5" title=" " alt="" coords="838,157,941,183"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="478,168,822,168,822,173,478,173"/>
+<area shape="rect" id="Node000012" href="$protobufjs_2dist_2protobuf_8js.html#afd366b4e60dba7acb371422d6dddcc64" title=" " alt="" coords="574,208,761,234"/>
+<area shape="poly" id="edge11_Node000010_Node000012" title=" " alt="" coords="478,173,596,201,595,206,477,178"/>
+<area shape="poly" id="edge12_Node000012_Node000011" title=" " alt="" coords="726,205,822,183,823,188,728,210"/>
+<area shape="rect" id="Node000013" href="$_doc_type_reader_8js.html#a14b5fcc27a4889161d94c35f6a630cea" title=" " alt="" coords="845,208,934,234"/>
+<area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="761,218,829,218,829,224,761,224"/>
+</map>

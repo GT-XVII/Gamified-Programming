@@ -1,0 +1,233 @@
+\doxysection{Firebase\+Auth\+Error Class Reference}
+\hypertarget{class_firebase_auth_error}{}\label{class_firebase_auth_error}\index{FirebaseAuthError@{FirebaseAuthError}}
+
+
+Inheritance diagram for Firebase\+Auth\+Error\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=183pt]{class_firebase_auth_error__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Firebase\+Auth\+Error\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=183pt]{class_firebase_auth_error__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_firebase_auth_error_a1e948e28bd3fb1a7bdfae860afcfa348}{constructor}} (info, \mbox{\hyperlink{class_firebase_error_acdf5aa108b03b22936004b6dddf09ae4}{message}})
+\item 
+\mbox{\hyperlink{class_prefixed_firebase_error_a69b0bf6e8fd2934cda27d342ac0ea402}{constructor}} (code\+Prefix, \mbox{\hyperlink{class_firebase_error_aa5393ebea8b8852f474684a0d23cc4d6}{code}}, \mbox{\hyperlink{class_firebase_error_acdf5aa108b03b22936004b6dddf09ae4}{message}})
+\item 
+\mbox{\hyperlink{class_firebase_error_a2b0dc562734724061499de1f233d609b}{constructor}} (error\+Info)
+\item 
+\mbox{\hyperlink{class_prefixed_firebase_error_af298d08f98f52c67cdb5e45a532389e4}{has\+Code}} (\mbox{\hyperlink{class_firebase_error_aa5393ebea8b8852f474684a0d23cc4d6}{code}})
+\item 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} \mbox{\hyperlink{class_firebase_error_aa5393ebea8b8852f474684a0d23cc4d6}{code}} ()
+\item 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} \mbox{\hyperlink{class_firebase_error_acdf5aa108b03b22936004b6dddf09ae4}{message}} ()
+\item 
+\mbox{\hyperlink{class_firebase_error_a4469b81b97fc2f9cc8d5979a965d608c}{to\+JSON}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_firebase_auth_error_a74d9b58bc75eef003a8d63848ed2f60d}{from\+Server\+Error}} (server\+Error\+Code, \mbox{\hyperlink{class_firebase_error_acdf5aa108b03b22936004b6dddf09ae4}{message}}, raw\+Server\+Response)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Firebase \doxylink{class_auth}{Auth} error code structure. This extends \doxylink{class_prefixed_firebase_error}{Prefixed\+Firebase\+Error}. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_firebase_error_aa5393ebea8b8852f474684a0d23cc4d6}\index{FirebaseAuthError@{FirebaseAuthError}!code@{code}}
+\index{code@{code}!FirebaseAuthError@{FirebaseAuthError}}
+\doxysubsubsection{\texorpdfstring{code()}{code()}}
+{\footnotesize\ttfamily \label{class_firebase_error_aa5393ebea8b8852f474684a0d23cc4d6} 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} Firebase\+Error\+::code (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+\begin{DoxyReturn}{Returns}
+The error code. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{class_firebase_error_aa5393ebea8b8852f474684a0d23cc4d6_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_firebase_auth_error_a1e948e28bd3fb1a7bdfae860afcfa348}\index{FirebaseAuthError@{FirebaseAuthError}!constructor@{constructor}}
+\index{constructor@{constructor}!FirebaseAuthError@{FirebaseAuthError}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_firebase_auth_error_a1e948e28bd3fb1a7bdfae860afcfa348} 
+Firebase\+Auth\+Error\+::constructor (\begin{DoxyParamCaption}\item[{}]{info}{, }\item[{}]{message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em info} & -\/ The error code info. \\
+\hline
+{\em message} & -\/ The error message. This will override the default message if provided. @constructor \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{class_firebase_error_acdf5aa108b03b22936004b6dddf09ae4}{Firebase\+Error\+::message()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=337pt]{class_firebase_auth_error_a1e948e28bd3fb1a7bdfae860afcfa348_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_firebase_error_a2b0dc562734724061499de1f233d609b}\index{FirebaseAuthError@{FirebaseAuthError}!constructor@{constructor}}
+\index{constructor@{constructor}!FirebaseAuthError@{FirebaseAuthError}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_firebase_error_a2b0dc562734724061499de1f233d609b} 
+Firebase\+Error\+::constructor (\begin{DoxyParamCaption}\item[{}]{error\+Info}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em error\+Info} & -\/ The error information (code and message). @constructor \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_prefixed_firebase_error_a69b0bf6e8fd2934cda27d342ac0ea402}\index{FirebaseAuthError@{FirebaseAuthError}!constructor@{constructor}}
+\index{constructor@{constructor}!FirebaseAuthError@{FirebaseAuthError}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_prefixed_firebase_error_a69b0bf6e8fd2934cda27d342ac0ea402} 
+Prefixed\+Firebase\+Error\+::constructor (\begin{DoxyParamCaption}\item[{}]{code\+Prefix}{, }\item[{}]{code}{, }\item[{}]{message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em code\+Prefix} & -\/ The prefix to apply to the error code. \\
+\hline
+{\em code} & -\/ The error code. \\
+\hline
+{\em message} & -\/ The error message. @constructor \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{class_firebase_error_aa5393ebea8b8852f474684a0d23cc4d6}{Firebase\+Error\+::code()}}, and \mbox{\hyperlink{class_firebase_error_acdf5aa108b03b22936004b6dddf09ae4}{Firebase\+Error\+::message()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{class_prefixed_firebase_error_a69b0bf6e8fd2934cda27d342ac0ea402_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_firebase_auth_error_a74d9b58bc75eef003a8d63848ed2f60d}\index{FirebaseAuthError@{FirebaseAuthError}!fromServerError@{fromServerError}}
+\index{fromServerError@{fromServerError}!FirebaseAuthError@{FirebaseAuthError}}
+\doxysubsubsection{\texorpdfstring{fromServerError()}{fromServerError()}}
+{\footnotesize\ttfamily \label{class_firebase_auth_error_a74d9b58bc75eef003a8d63848ed2f60d} 
+static Firebase\+Auth\+Error\+::from\+Server\+Error (\begin{DoxyParamCaption}\item[{}]{server\+Error\+Code}{, }\item[{}]{message}{, }\item[{}]{raw\+Server\+Response}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Creates the developer-\/facing error corresponding to the backend error code.
+
+
+\begin{DoxyParams}{Parameters}
+{\em server\+Error\+Code} & -\/ The server error code. \\
+\hline
+{\em \mbox{[}message\mbox{]}} & The error message. The default message is used if not provided. \\
+\hline
+{\em \mbox{[}raw\+Server\+Response\mbox{]}} & The error\textquotesingle{}s raw server response. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding developer-\/facing error. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{firebase-admin_2lib_2utils_2error_8js_a5fb500641caa64f70d7a30e6b607f305}{AUTH\+\_\+\+SERVER\+\_\+\+TO\+\_\+\+CLIENT\+\_\+\+CODE}}, \mbox{\hyperlink{firebase-admin_2lib_2utils_2error_8js_a3c878464c635c5cd2043d7e066bb187b}{deep\+\_\+copy\+\_\+1}}, \mbox{\hyperlink{firestore__admin__v1__proto__api_8js_a08a4415e9d594ff960030b921d42b91e}{e}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}}, \mbox{\hyperlink{firebase-admin_2lib_2utils_2error_8js_ad9158e24c1d3ca3bcd8b12ccdfc62d95}{Firebase\+Auth\+Error}}, \mbox{\hyperlink{lodash_2core_8js_ac7893463f7a7a3455fd07dc84fd222dd}{index\+Of}}, \mbox{\hyperlink{class_firebase_error_acdf5aa108b03b22936004b6dddf09ae4}{Firebase\+Error\+::message()}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ac70ac40ef8199c59316b35022dd21914}{response}}, and \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a207259f7e3cfd9800ed8f7d7224c7a68}{server}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=337pt]{class_firebase_auth_error_a74d9b58bc75eef003a8d63848ed2f60d_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_prefixed_firebase_error_af298d08f98f52c67cdb5e45a532389e4}\index{FirebaseAuthError@{FirebaseAuthError}!hasCode@{hasCode}}
+\index{hasCode@{hasCode}!FirebaseAuthError@{FirebaseAuthError}}
+\doxysubsubsection{\texorpdfstring{hasCode()}{hasCode()}}
+{\footnotesize\ttfamily \label{class_prefixed_firebase_error_af298d08f98f52c67cdb5e45a532389e4} 
+Prefixed\+Firebase\+Error\+::has\+Code (\begin{DoxyParamCaption}\item[{}]{code}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+Allows the error type to be checked without needing to know implementation details of the code prefixing.
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & -\/ The non-\/prefixed error code to test against. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the code matches, false otherwise. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, and \mbox{\hyperlink{class_firebase_error_aa5393ebea8b8852f474684a0d23cc4d6}{Firebase\+Error\+::code()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{class_prefixed_firebase_error_af298d08f98f52c67cdb5e45a532389e4_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_firebase_error_acdf5aa108b03b22936004b6dddf09ae4}\index{FirebaseAuthError@{FirebaseAuthError}!message@{message}}
+\index{message@{message}!FirebaseAuthError@{FirebaseAuthError}}
+\doxysubsubsection{\texorpdfstring{message()}{message()}}
+{\footnotesize\ttfamily \label{class_firebase_error_acdf5aa108b03b22936004b6dddf09ae4} 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} Firebase\+Error\+::message (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+\begin{DoxyReturn}{Returns}
+The error message. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_firebase_error_acdf5aa108b03b22936004b6dddf09ae4_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_firebase_error_a4469b81b97fc2f9cc8d5979a965d608c}\index{FirebaseAuthError@{FirebaseAuthError}!toJSON@{toJSON}}
+\index{toJSON@{toJSON}!FirebaseAuthError@{FirebaseAuthError}}
+\doxysubsubsection{\texorpdfstring{toJSON()}{toJSON()}}
+{\footnotesize\ttfamily \label{class_firebase_error_a4469b81b97fc2f9cc8d5979a965d608c} 
+Firebase\+Error\+::to\+JSON (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+\begin{DoxyReturn}{Returns}
+The object representation of the error. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{class_firebase_error_aa5393ebea8b8852f474684a0d23cc4d6}{Firebase\+Error\+::code()}}, and \mbox{\hyperlink{class_firebase_error_acdf5aa108b03b22936004b6dddf09ae4}{Firebase\+Error\+::message()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_firebase_error_a4469b81b97fc2f9cc8d5979a965d608c_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/firebase-\/admin/lib/utils/\mbox{\hyperlink{firebase-admin_2lib_2utils_2error_8js}{error.\+js}}\end{DoxyCompactItemize}

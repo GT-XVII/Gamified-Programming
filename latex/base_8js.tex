@@ -1,0 +1,224 @@
+\doxysection{backend/node\+\_\+modules/websocket-\/driver/lib/websocket/driver/base.js File Reference}
+\hypertarget{base_8js}{}\label{base_8js}\index{backend/node\_modules/websocket-\/driver/lib/websocket/driver/base.js@{backend/node\_modules/websocket-\/driver/lib/websocket/driver/base.js}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{base_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+var \mbox{\hyperlink{base_8js_a6e9de2d16b02dc274208bfcc1914d7f4}{Buffer}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}safe-\/\mbox{\hyperlink{cjs_2internal_2operators_2buffer_8js_a838d54b935df11eff7928ba8da636891}{buffer}}\textquotesingle{}).Buffer
+\item 
+var \mbox{\hyperlink{base_8js_a0f0d294c46eadae2d98cde57fb40186d}{Emitter}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}events\textquotesingle{}).\mbox{\hyperlink{class_event_emitter}{Event\+Emitter}}
+\item 
+var \mbox{\hyperlink{base_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}util\textquotesingle{})
+\item 
+var \mbox{\hyperlink{base_8js_a50863eb27c2d89b6dd3135709bdaf135}{streams}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}../streams\textquotesingle{})
+\item 
+var \mbox{\hyperlink{base_8js_afecab107cd22ae44c28cb45049846a57}{Headers}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7f2cb2fcdd79bf72cefd29b7bc2d10fa}{headers}}\textquotesingle{})
+\item 
+var \mbox{\hyperlink{base_8js_a1b804b43a9af8fa8940b69c1217fb5ff}{Reader}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa899c5894b4c5f99b267c29788a52c7d}{stream\+\_\+reader}}\textquotesingle{})
+\item 
+var \mbox{\hyperlink{base_8js_a9e9b777c6c201cee9f04395483bb677d}{Base}}
+\item 
+\mbox{\hyperlink{class_base}{Base}} \mbox{\hyperlink{base_8js_a9d09d6f5b57ce30ee12db3bc0bd80b02}{is\+Web\+Socket}}
+\item 
+\mbox{\hyperlink{class_base}{Base}} \mbox{\hyperlink{base_8js_ac5bee784169eb458a77200c4a296e57c}{validate\+Options}}
+\item 
+var \mbox{\hyperlink{base_8js_a243c7aa6c47d450837986091ed54a347}{instance}}
+\item 
+\mbox{\hyperlink{class_base}{Base}} \mbox{\hyperlink{base_8js_a3a426e1b647b84937277278ac159149b}{Connect\+Event}} = function() \{\}
+\item 
+\mbox{\hyperlink{class_base}{Base}} \mbox{\hyperlink{base_8js_aaec3663096c1c30f97e21e1779e51d49}{Open\+Event}} = function() \{\}
+\item 
+\mbox{\hyperlink{class_base}{Base}} \mbox{\hyperlink{base_8js_a2ea40eb394d6aba29f37871ac760848c}{Close\+Event}}
+\item 
+\mbox{\hyperlink{class_base}{Base}} \mbox{\hyperlink{base_8js_aacfa0ae8596dbae8724a5ebb6a484076}{Message\+Event}}
+\item 
+\mbox{\hyperlink{class_base}{Base}} \mbox{\hyperlink{base_8js_a76633df84bf59c580e1352735338fd5a}{Ping\+Event}}
+\item 
+\mbox{\hyperlink{class_base}{Base}} \mbox{\hyperlink{base_8js_aba7a89710e3d2774a49de9ba29d2ba15}{Pong\+Event}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{base_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} = \mbox{\hyperlink{class_base}{Base}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{base_8js_a9e9b777c6c201cee9f04395483bb677d}\index{base.js@{base.js}!Base@{Base}}
+\index{Base@{Base}!base.js@{base.js}}
+\doxysubsubsection{\texorpdfstring{Base}{Base}}
+{\footnotesize\ttfamily \label{base_8js_a9e9b777c6c201cee9f04395483bb677d} 
+var Base}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}},\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_acf0a8b41f00a22e21672c8b3768a0618}{url}},\ options)\ \{}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{base_8js_a0f0d294c46eadae2d98cde57fb40186d}{Emitter}}.call(\textcolor{keyword}{this});}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{class_base}{Base}}.validateOptions(options\ ||\ \{\},\ [\textcolor{stringliteral}{'maxLength'},\ \textcolor{stringliteral}{'masking'},\ \textcolor{stringliteral}{'requireMasking'},\ \textcolor{stringliteral}{'protocols'}]);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ this.\_request\ \ \ =\ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}};}
+\DoxyCodeLine{\ \ this.\_reader\ \ \ \ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{base_8js_a1b804b43a9af8fa8940b69c1217fb5ff}{Reader}}();}
+\DoxyCodeLine{\ \ this.\mbox{\hyperlink{express_2lib_2router_2route_8js_a6d3af37c53447908498ec53885a92a16}{\_options}}\ \ \ =\ options\ ||\ \{\};}
+\DoxyCodeLine{\ \ this.\_maxLength\ =\ this.\mbox{\hyperlink{express_2lib_2router_2route_8js_a6d3af37c53447908498ec53885a92a16}{\_options}}.maxLength\ ||\ this.\mbox{\hyperlink{condition-evaluator-internal_8js_a4a344335e7fe940e4ffa548ebe89741b}{MAX\_LENGTH}};}
+\DoxyCodeLine{\ \ this.\_headers\ \ \ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{base_8js_afecab107cd22ae44c28cb45049846a57}{Headers}}();}
+\DoxyCodeLine{\ \ this.\_\_queue\ \ \ \ =\ [];}
+\DoxyCodeLine{\ \ this.readyState\ =\ 0;}
+\DoxyCodeLine{\ \ this.\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_acf0a8b41f00a22e21672c8b3768a0618}{url}}\ \ \ \ \ \ \ \ =\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_acf0a8b41f00a22e21672c8b3768a0618}{url}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ this.io\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{base_8js_a50863eb27c2d89b6dd3135709bdaf135}{streams}}.IO(\textcolor{keyword}{this});}
+\DoxyCodeLine{\ \ this.messages\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{base_8js_a50863eb27c2d89b6dd3135709bdaf135}{streams}}.Messages(\textcolor{keyword}{this});}
+\DoxyCodeLine{\ \ this.\_bindEventListeners();}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{base_8js_a6e9de2d16b02dc274208bfcc1914d7f4}\index{base.js@{base.js}!Buffer@{Buffer}}
+\index{Buffer@{Buffer}!base.js@{base.js}}
+\doxysubsubsection{\texorpdfstring{Buffer}{Buffer}}
+{\footnotesize\ttfamily \label{base_8js_a6e9de2d16b02dc274208bfcc1914d7f4} 
+var Buffer = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}safe-\/\mbox{\hyperlink{cjs_2internal_2operators_2buffer_8js_a838d54b935df11eff7928ba8da636891}{buffer}}\textquotesingle{}).Buffer}
+
+\Hypertarget{base_8js_a2ea40eb394d6aba29f37871ac760848c}\index{base.js@{base.js}!CloseEvent@{CloseEvent}}
+\index{CloseEvent@{CloseEvent}!base.js@{base.js}}
+\doxysubsubsection{\texorpdfstring{CloseEvent}{CloseEvent}}
+{\footnotesize\ttfamily \label{base_8js_a2ea40eb394d6aba29f37871ac760848c} 
+\mbox{\hyperlink{class_base}{Base}} Close\+Event}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{namespacecode}{code}},\ \mbox{\hyperlink{cjs_2internal_2observable_2dom_2_web_socket_subject_8js_ae1a6322b130a00a3357599cfec0feebe}{reason}})\ \{}
+\DoxyCodeLine{\ \ this.\mbox{\hyperlink{namespacecode}{code}}\ \ \ =\ \mbox{\hyperlink{namespacecode}{code}};}
+\DoxyCodeLine{\ \ this.\mbox{\hyperlink{cjs_2internal_2observable_2dom_2_web_socket_subject_8js_ae1a6322b130a00a3357599cfec0feebe}{reason}}\ =\ \mbox{\hyperlink{cjs_2internal_2observable_2dom_2_web_socket_subject_8js_ae1a6322b130a00a3357599cfec0feebe}{reason}};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{base_8js_a3a426e1b647b84937277278ac159149b}\index{base.js@{base.js}!ConnectEvent@{ConnectEvent}}
+\index{ConnectEvent@{ConnectEvent}!base.js@{base.js}}
+\doxysubsubsection{\texorpdfstring{ConnectEvent}{ConnectEvent}}
+{\footnotesize\ttfamily \label{base_8js_a3a426e1b647b84937277278ac159149b} 
+\mbox{\hyperlink{class_base}{Base}} Connect\+Event = function() \{\}}
+
+\Hypertarget{base_8js_a0f0d294c46eadae2d98cde57fb40186d}\index{base.js@{base.js}!Emitter@{Emitter}}
+\index{Emitter@{Emitter}!base.js@{base.js}}
+\doxysubsubsection{\texorpdfstring{Emitter}{Emitter}}
+{\footnotesize\ttfamily \label{base_8js_a0f0d294c46eadae2d98cde57fb40186d} 
+var Emitter = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}events\textquotesingle{}).\mbox{\hyperlink{class_event_emitter}{Event\+Emitter}}}
+
+\Hypertarget{base_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\index{base.js@{base.js}!exports@{exports}}
+\index{exports@{exports}!base.js@{base.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \label{base_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports = \mbox{\hyperlink{class_base}{Base}}}
+
+\Hypertarget{base_8js_afecab107cd22ae44c28cb45049846a57}\index{base.js@{base.js}!Headers@{Headers}}
+\index{Headers@{Headers}!base.js@{base.js}}
+\doxysubsubsection{\texorpdfstring{Headers}{Headers}}
+{\footnotesize\ttfamily \label{base_8js_afecab107cd22ae44c28cb45049846a57} 
+var Headers = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7f2cb2fcdd79bf72cefd29b7bc2d10fa}{headers}}\textquotesingle{})}
+
+\Hypertarget{base_8js_a243c7aa6c47d450837986091ed54a347}\index{base.js@{base.js}!instance@{instance}}
+\index{instance@{instance}!base.js@{base.js}}
+\doxysubsubsection{\texorpdfstring{instance}{instance}}
+{\footnotesize\ttfamily \label{base_8js_a243c7aa6c47d450837986091ed54a347} 
+var instance}
+
+\Hypertarget{base_8js_a9d09d6f5b57ce30ee12db3bc0bd80b02}\index{base.js@{base.js}!isWebSocket@{isWebSocket}}
+\index{isWebSocket@{isWebSocket}!base.js@{base.js}}
+\doxysubsubsection{\texorpdfstring{isWebSocket}{isWebSocket}}
+{\footnotesize\ttfamily \label{base_8js_a9d09d6f5b57ce30ee12db3bc0bd80b02} 
+\mbox{\hyperlink{class_base}{Base}} is\+Web\+Socket}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}})\ \{}
+\DoxyCodeLine{\ \ var\ connection\ =\ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}}.headers.connection\ ||\ \textcolor{stringliteral}{''},}
+\DoxyCodeLine{\ \ \ \ \ \ upgrade\ \ \ \ =\ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}}.headers.upgrade\ ||\ \textcolor{stringliteral}{''};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}}.method\ ===\ \textcolor{stringliteral}{'GET'}\ \&\&}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ connection.toLowerCase().split(/\ *,\ */).indexOf(\textcolor{stringliteral}{'upgrade'})\ >=\ 0\ \&\&}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ upgrade.toLowerCase()\ ===\ \textcolor{stringliteral}{'websocket'};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{base_8js_aacfa0ae8596dbae8724a5ebb6a484076}\index{base.js@{base.js}!MessageEvent@{MessageEvent}}
+\index{MessageEvent@{MessageEvent}!base.js@{base.js}}
+\doxysubsubsection{\texorpdfstring{MessageEvent}{MessageEvent}}
+{\footnotesize\ttfamily \label{base_8js_aacfa0ae8596dbae8724a5ebb6a484076} 
+\mbox{\hyperlink{class_base}{Base}} Message\+Event}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}})\ \{}
+\DoxyCodeLine{\ \ this.\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}\ =\ \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{base_8js_aaec3663096c1c30f97e21e1779e51d49}\index{base.js@{base.js}!OpenEvent@{OpenEvent}}
+\index{OpenEvent@{OpenEvent}!base.js@{base.js}}
+\doxysubsubsection{\texorpdfstring{OpenEvent}{OpenEvent}}
+{\footnotesize\ttfamily \label{base_8js_aaec3663096c1c30f97e21e1779e51d49} 
+\mbox{\hyperlink{class_base}{Base}} Open\+Event = function() \{\}}
+
+\Hypertarget{base_8js_a76633df84bf59c580e1352735338fd5a}\index{base.js@{base.js}!PingEvent@{PingEvent}}
+\index{PingEvent@{PingEvent}!base.js@{base.js}}
+\doxysubsubsection{\texorpdfstring{PingEvent}{PingEvent}}
+{\footnotesize\ttfamily \label{base_8js_a76633df84bf59c580e1352735338fd5a} 
+\mbox{\hyperlink{class_base}{Base}} Ping\+Event}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}})\ \{}
+\DoxyCodeLine{\ \ this.\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}\ =\ \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{base_8js_aba7a89710e3d2774a49de9ba29d2ba15}\index{base.js@{base.js}!PongEvent@{PongEvent}}
+\index{PongEvent@{PongEvent}!base.js@{base.js}}
+\doxysubsubsection{\texorpdfstring{PongEvent}{PongEvent}}
+{\footnotesize\ttfamily \label{base_8js_aba7a89710e3d2774a49de9ba29d2ba15} 
+\mbox{\hyperlink{class_base}{Base}} Pong\+Event}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}})\ \{}
+\DoxyCodeLine{\ \ this.\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}\ =\ \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{base_8js_a1b804b43a9af8fa8940b69c1217fb5ff}\index{base.js@{base.js}!Reader@{Reader}}
+\index{Reader@{Reader}!base.js@{base.js}}
+\doxysubsubsection{\texorpdfstring{Reader}{Reader}}
+{\footnotesize\ttfamily \label{base_8js_a1b804b43a9af8fa8940b69c1217fb5ff} 
+var Reader = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa899c5894b4c5f99b267c29788a52c7d}{stream\+\_\+reader}}\textquotesingle{})}
+
+\Hypertarget{base_8js_a50863eb27c2d89b6dd3135709bdaf135}\index{base.js@{base.js}!streams@{streams}}
+\index{streams@{streams}!base.js@{base.js}}
+\doxysubsubsection{\texorpdfstring{streams}{streams}}
+{\footnotesize\ttfamily \label{base_8js_a50863eb27c2d89b6dd3135709bdaf135} 
+var streams = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}../streams\textquotesingle{})}
+
+\Hypertarget{base_8js_ae2475e10618961c050dcba04e8c42331}\index{base.js@{base.js}!strict@{strict}}
+\index{strict@{strict}!base.js@{base.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{base_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+
+\Hypertarget{base_8js_a8f5b2e09d5197e9d28f6032dff542d44}\index{base.js@{base.js}!util@{util}}
+\index{util@{util}!base.js@{base.js}}
+\doxysubsubsection{\texorpdfstring{util}{util}}
+{\footnotesize\ttfamily \label{base_8js_a8f5b2e09d5197e9d28f6032dff542d44} 
+var util = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}util\textquotesingle{})}
+
+\Hypertarget{base_8js_ac5bee784169eb458a77200c4a296e57c}\index{base.js@{base.js}!validateOptions@{validateOptions}}
+\index{validateOptions@{validateOptions}!base.js@{base.js}}
+\doxysubsubsection{\texorpdfstring{validateOptions}{validateOptions}}
+{\footnotesize\ttfamily \label{base_8js_ac5bee784169eb458a77200c4a296e57c} 
+\mbox{\hyperlink{class_base}{Base}} validate\+Options}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(options,\ validKeys)\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{for}\ (var\ key\ in\ options)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (validKeys.indexOf(key)\ <\ 0)}
+\DoxyCodeLine{\ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ Error(\textcolor{stringliteral}{'Unrecognized\ option:\ '}\ +\ key);}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}

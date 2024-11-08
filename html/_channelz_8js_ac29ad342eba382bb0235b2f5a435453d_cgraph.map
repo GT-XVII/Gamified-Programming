@@ -1,0 +1,7 @@
+<map id="GetServerSockets" name="GetServerSockets">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,134,56"/>
+<area shape="rect" id="Node000002" href="$parse_int_8js.html#a04ee837a5f7721fcb0ea2d152162ef92" title=" " alt="" coords="222,5,290,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,32,206,22,206,28,134,37"/>
+<area shape="rect" id="Node000003" href="$_channelz_8js.html#a287491d8649fbe4d756b46196b6533b2" title=" " alt="" coords="182,55,330,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="134,49,166,53,166,59,134,54"/>
+</map>

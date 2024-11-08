@@ -1,0 +1,31 @@
+\doxysection{/\+Users/nicoletiokhin/\+Desktop/\+Software Semester 3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/lodash/matches.\+js}
+\hypertarget{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_58ee795bce0c6d94f3d7bdcce78eee65}{}\label{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_58ee795bce0c6d94f3d7bdcce78eee65}Creates a function that performs a partial deep comparison between a given object and {\ttfamily source}, returning {\ttfamily true} if the given object has equivalent property values, else {\ttfamily false}.
+
+{\bfseries{Note\+:}} The created function is equivalent to {\ttfamily \+\_\+.\+is\+Match} with {\ttfamily source} partially applied.
+
+Partial comparisons will match empty array and empty object {\ttfamily source} values against any array or object value, respectively. See {\ttfamily \+\_\+.\+is\+Equal} for a list of supported value comparisons.
+
+{\bfseries{Note\+:}} Multiple values can be checked by combining several matchers using {\ttfamily \+\_\+.\+over\+Some}
+
+@member\+Of \+\_\+ \begin{DoxySince}{Since}
+3.\+0.\+0
+\end{DoxySince}
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Object\}} & source The object of property values to match. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Function\} Returns the new spec function.
+\end{DoxyReturn}
+var objects = \mbox{[} \{ \textquotesingle{}a\textquotesingle{}\+: 1, \textquotesingle{}b\textquotesingle{}\+: 2, \textquotesingle{}c\textquotesingle{}\+: 3 \}, \{ \textquotesingle{}a\textquotesingle{}\+: 4, \textquotesingle{}b\textquotesingle{}\+: 5, \textquotesingle{}c\textquotesingle{}\+: 6 \} \mbox{]};
+
+\+\_\+.\+filter(objects, \+\_\+.\+matches(\{ \textquotesingle{}a\textquotesingle{}\+: 4, \textquotesingle{}c\textquotesingle{}\+: 6 \})); // =\texorpdfstring{$>$}{>} \mbox{[}\{ \textquotesingle{}a\textquotesingle{}\+: 4, \textquotesingle{}b\textquotesingle{}\+: 5, \textquotesingle{}c\textquotesingle{}\+: 6 \}\mbox{]}
+
+// Checking for several possible values \+\_\+.\+filter(objects, \+\_\+.\+over\+Some(\mbox{[}\+\_\+.\+matches(\{ \textquotesingle{}a\textquotesingle{}\+: 1 \}), \+\_\+.\+matches(\{ \textquotesingle{}a\textquotesingle{}\+: 4 \})\mbox{]})); // =\texorpdfstring{$>$}{>} \mbox{[}\{ \textquotesingle{}a\textquotesingle{}\+: 1, \textquotesingle{}b\textquotesingle{}\+: 2, \textquotesingle{}c\textquotesingle{}\+: 3 \}, \{ \textquotesingle{}a\textquotesingle{}\+: 4, \textquotesingle{}b\textquotesingle{}\+: 5, \textquotesingle{}c\textquotesingle{}\+: 6 \}\mbox{]}
+
+
+\begin{DoxyCodeInclude}{0}
+
+\end{DoxyCodeInclude}
+ Semester \doxylink{matches_8js}{3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/lodash/matches.\+js} 

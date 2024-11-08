@@ -1,0 +1,139 @@
+\doxysection{backend/node\+\_\+modules/firebase-\/admin/lib/messaging/batch-\/request-\/internal.js File Reference}
+\hypertarget{batch-request-internal_8js}{}\label{batch-request-internal_8js}\index{backend/node\_modules/firebase-\/admin/lib/messaging/batch-\/request-\/internal.js@{backend/node\_modules/firebase-\/admin/lib/messaging/batch-\/request-\/internal.js}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_batch_request_client}{Batch\+Request\+Client}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{batch-request-internal_8js_a268ac22380d7f57a354fc2bce8820768}{create\+Part}} (\mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}}, boundary, idx)
+\item 
+function \mbox{\hyperlink{batch-request-internal_8js_acd39016862f57cdffba75626dce29f6c}{serialize\+Sub\+Request}} (\mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{batch-request-internal_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{batch-request-internal_8js_ab37b855540c25ea0156ce57b1de003e9}{Batch\+Request\+Client}} = void 0
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{batch-request-internal_8js_a73dd1e6f0bc0a0234576ddef2bbe0452}{api\+\_\+request\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}}-\/request"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{batch-request-internal_8js_af1a99a3ff1a35c114bdd06cc7252beb6}{error\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/error"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{batch-request-internal_8js_a4bb8d1a425407ca8ee6585ebf47c2ecd}{PART\+\_\+\+BOUNDARY}} = \textquotesingle{}\+\_\+\+\_\+\+END\+\_\+\+OF\+\_\+\+PART\+\_\+\+\_\+\textquotesingle{}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{batch-request-internal_8js_aedfb91334b47d5a51d65697b5d7cf5c1}{TEN\+\_\+\+SECONDS\+\_\+\+IN\+\_\+\+MILLIS}} = 15000
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{batch-request-internal_8js_a268ac22380d7f57a354fc2bce8820768}\index{batch-\/request-\/internal.js@{batch-\/request-\/internal.js}!createPart@{createPart}}
+\index{createPart@{createPart}!batch-\/request-\/internal.js@{batch-\/request-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{createPart()}{createPart()}}
+{\footnotesize\ttfamily \label{batch-request-internal_8js_a268ac22380d7f57a354fc2bce8820768} 
+function create\+Part (\begin{DoxyParamCaption}\item[{}]{request}{, }\item[{}]{boundary}{, }\item[{}]{idx}{}\end{DoxyParamCaption})}
+
+Creates a single part in a multipart HTTP request body. The part consists of several headers followed by the serialized sub request as the body. As per the requirements of the FCM batch API, sets the content-\/type header to application/http, and the content-\/transfer-\/encoding to binary.
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & -\/ \doxylink{class_a}{A} sub request that will be used to populate the part. \\
+\hline
+{\em boundary} & -\/ Multipart boundary string. \\
+\hline
+{\em idx} & -\/ An index number that is used to set the content-\/id header. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The part as a string that can be included in the HTTP body. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}}, and \mbox{\hyperlink{batch-request-internal_8js_acd39016862f57cdffba75626dce29f6c}{serialize\+Sub\+Request()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=283pt]{batch-request-internal_8js_a268ac22380d7f57a354fc2bce8820768_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{batch-request-internal_8js_a268ac22380d7f57a354fc2bce8820768_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{batch-request-internal_8js_acd39016862f57cdffba75626dce29f6c}\index{batch-\/request-\/internal.js@{batch-\/request-\/internal.js}!serializeSubRequest@{serializeSubRequest}}
+\index{serializeSubRequest@{serializeSubRequest}!batch-\/request-\/internal.js@{batch-\/request-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{serializeSubRequest()}{serializeSubRequest()}}
+{\footnotesize\ttfamily \label{batch-request-internal_8js_acd39016862f57cdffba75626dce29f6c} 
+function serialize\+Sub\+Request (\begin{DoxyParamCaption}\item[{}]{request}{}\end{DoxyParamCaption})}
+
+Serializes a sub request into a string that can be embedded in a multipart HTTP request. The format of the string is the wire format of a typical HTTP request, consisting of a header and a body.
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & -\/ The sub request to be serialized. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String representation of the Sub\+Request. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{json-bigint_2lib_2stringify_8js_aec316efdeb7b2e5358b7d50869858da1}{JSON}}, and \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{batch-request-internal_8js_acd39016862f57cdffba75626dce29f6c_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{batch-request-internal_8js_a73dd1e6f0bc0a0234576ddef2bbe0452}\index{batch-\/request-\/internal.js@{batch-\/request-\/internal.js}!api\_request\_1@{api\_request\_1}}
+\index{api\_request\_1@{api\_request\_1}!batch-\/request-\/internal.js@{batch-\/request-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{api\_request\_1}{api\_request\_1}}
+{\footnotesize\ttfamily \label{batch-request-internal_8js_a73dd1e6f0bc0a0234576ddef2bbe0452} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} api\+\_\+request\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}}-\/request"{})}
+
+\Hypertarget{batch-request-internal_8js_ab37b855540c25ea0156ce57b1de003e9}\index{batch-\/request-\/internal.js@{batch-\/request-\/internal.js}!BatchRequestClient@{BatchRequestClient}}
+\index{BatchRequestClient@{BatchRequestClient}!batch-\/request-\/internal.js@{batch-\/request-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{BatchRequestClient}{BatchRequestClient}}
+{\footnotesize\ttfamily \label{batch-request-internal_8js_ab37b855540c25ea0156ce57b1de003e9} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} Batch\+Request\+Client = void 0}
+
+\Hypertarget{batch-request-internal_8js_af1a99a3ff1a35c114bdd06cc7252beb6}\index{batch-\/request-\/internal.js@{batch-\/request-\/internal.js}!error\_1@{error\_1}}
+\index{error\_1@{error\_1}!batch-\/request-\/internal.js@{batch-\/request-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{error\_1}{error\_1}}
+{\footnotesize\ttfamily \label{batch-request-internal_8js_af1a99a3ff1a35c114bdd06cc7252beb6} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} error\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/error"{})}
+
+\Hypertarget{batch-request-internal_8js_a4bb8d1a425407ca8ee6585ebf47c2ecd}\index{batch-\/request-\/internal.js@{batch-\/request-\/internal.js}!PART\_BOUNDARY@{PART\_BOUNDARY}}
+\index{PART\_BOUNDARY@{PART\_BOUNDARY}!batch-\/request-\/internal.js@{batch-\/request-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{PART\_BOUNDARY}{PART\_BOUNDARY}}
+{\footnotesize\ttfamily \label{batch-request-internal_8js_a4bb8d1a425407ca8ee6585ebf47c2ecd} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} PART\+\_\+\+BOUNDARY = \textquotesingle{}\+\_\+\+\_\+\+END\+\_\+\+OF\+\_\+\+PART\+\_\+\+\_\+\textquotesingle{}}
+
+\Hypertarget{batch-request-internal_8js_ae2475e10618961c050dcba04e8c42331}\index{batch-\/request-\/internal.js@{batch-\/request-\/internal.js}!strict@{strict}}
+\index{strict@{strict}!batch-\/request-\/internal.js@{batch-\/request-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{batch-request-internal_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+
+firebase-\/admin v12.\+7.\+0 \Hypertarget{batch-request-internal_8js_aedfb91334b47d5a51d65697b5d7cf5c1}\index{batch-\/request-\/internal.js@{batch-\/request-\/internal.js}!TEN\_SECONDS\_IN\_MILLIS@{TEN\_SECONDS\_IN\_MILLIS}}
+\index{TEN\_SECONDS\_IN\_MILLIS@{TEN\_SECONDS\_IN\_MILLIS}!batch-\/request-\/internal.js@{batch-\/request-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{TEN\_SECONDS\_IN\_MILLIS}{TEN\_SECONDS\_IN\_MILLIS}}
+{\footnotesize\ttfamily \label{batch-request-internal_8js_aedfb91334b47d5a51d65697b5d7cf5c1} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} TEN\+\_\+\+SECONDS\+\_\+\+IN\+\_\+\+MILLIS = 15000}
+

@@ -1,0 +1,231 @@
+\doxysection{backend/node\+\_\+modules/negotiator/lib/language.js File Reference}
+\hypertarget{language_8js}{}\label{language_8js}\index{backend/node\_modules/negotiator/lib/language.js@{backend/node\_modules/negotiator/lib/language.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{language_8js_a15c49172a2f663e284e4d3038c2c1335}{parse\+Accept\+Language}} (accept)
+\item 
+function \mbox{\hyperlink{language_8js_a5e1953baef17689fd54e908bd9e394af}{parse\+Language}} (\mbox{\hyperlink{json-bigint_2lib_2stringify_8js_abd4075a8f329b0ccafd81359c952a9df}{str}}, \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}})
+\item 
+function \mbox{\hyperlink{language_8js_ac28d5744214c58f59f58c46384d33535}{get\+Language\+Priority}} (\mbox{\hyperlink{negotiator_2index_8js_a06c08a07ae0a0d399b49658047e51393}{language}}, accepted, \mbox{\hyperlink{cookie_2index_8js_a0ac000318c33f03e412baff8df5b2513}{index}})
+\item 
+function \mbox{\hyperlink{language_8js_ac95213a3b35770524f6f61b775ef8a0e}{specify}} (\mbox{\hyperlink{negotiator_2index_8js_a06c08a07ae0a0d399b49658047e51393}{language}}, spec, \mbox{\hyperlink{cookie_2index_8js_a0ac000318c33f03e412baff8df5b2513}{index}})
+\item 
+function \mbox{\hyperlink{language_8js_a3333738f57aad85ca925e9c6c2f10004}{preferred\+Languages}} (accept, provided)
+\item 
+function \mbox{\hyperlink{language_8js_a061926345fc6504e118f2f08ecd83461}{compare\+Specs}} (\mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}, \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}})
+\item 
+function \mbox{\hyperlink{language_8js_aac674da7a77ceee4ac83ec478864be9a}{get\+Full\+Language}} (spec)
+\item 
+function \mbox{\hyperlink{language_8js_a919b1e638f6088c43e77b99ccc60ab4d}{is\+Quality}} (spec)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{language_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{language_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} = \mbox{\hyperlink{negotiator_2index_8js_a7e7ceaa85a10887ba14afd5e8f5ef920}{preferred\+Languages}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{language_8js_a8bf8af32e6e32ad9ed82cbdc62cb2274}{preferred\+Languages}} = preferred\+Languages
+\item 
+var \mbox{\hyperlink{language_8js_a7cef23a37740b28b6e238cb322beb987}{simple\+Language\+Reg\+Exp}} = /\texorpdfstring{$^\wedge$}{\string^}\textbackslash{}\mbox{\hyperlink{ordered-map_8min_8js_ad9a7d92cb87932d25187fdec3ba1b621}{s}}\texorpdfstring{$\ast$}{*}(\mbox{[}\texorpdfstring{$^\wedge$}{\string^}\textbackslash{}s\textbackslash{}-\/;\mbox{]}+)(?\+:-\/(\mbox{[}\texorpdfstring{$^\wedge$}{\string^}\textbackslash{}\mbox{\hyperlink{ordered-map_8min_8js_ad9a7d92cb87932d25187fdec3ba1b621}{s}};\mbox{]}+))?\textbackslash{}\mbox{\hyperlink{ordered-map_8min_8js_ad9a7d92cb87932d25187fdec3ba1b621}{s}}\texorpdfstring{$\ast$}{*}(?\+:;(.\texorpdfstring{$\ast$}{*}))?\$/
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{language_8js_a061926345fc6504e118f2f08ecd83461}\index{language.js@{language.js}!compareSpecs@{compareSpecs}}
+\index{compareSpecs@{compareSpecs}!language.js@{language.js}}
+\doxysubsubsection{\texorpdfstring{compareSpecs()}{compareSpecs()}}
+{\footnotesize\ttfamily \label{language_8js_a061926345fc6504e118f2f08ecd83461} 
+function compare\+Specs (\begin{DoxyParamCaption}\item[{}]{a}{, }\item[{}]{b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Compare two specs. 
+
+References \mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}, and \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=299pt]{language_8js_a061926345fc6504e118f2f08ecd83461_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{language_8js_aac674da7a77ceee4ac83ec478864be9a}\index{language.js@{language.js}!getFullLanguage@{getFullLanguage}}
+\index{getFullLanguage@{getFullLanguage}!language.js@{language.js}}
+\doxysubsubsection{\texorpdfstring{getFullLanguage()}{getFullLanguage()}}
+{\footnotesize\ttfamily \label{language_8js_aac674da7a77ceee4ac83ec478864be9a} 
+function get\+Full\+Language (\begin{DoxyParamCaption}\item[{}]{spec}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Get full language string. Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=305pt]{language_8js_aac674da7a77ceee4ac83ec478864be9a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{language_8js_ac28d5744214c58f59f58c46384d33535}\index{language.js@{language.js}!getLanguagePriority@{getLanguagePriority}}
+\index{getLanguagePriority@{getLanguagePriority}!language.js@{language.js}}
+\doxysubsubsection{\texorpdfstring{getLanguagePriority()}{getLanguagePriority()}}
+{\footnotesize\ttfamily \label{language_8js_ac28d5744214c58f59f58c46384d33535} 
+function get\+Language\+Priority (\begin{DoxyParamCaption}\item[{}]{language}{, }\item[{}]{accepted}{, }\item[{}]{index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Get the priority of a language. 
+
+References \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}, \mbox{\hyperlink{cookie_2index_8js_a0ac000318c33f03e412baff8df5b2513}{index}}, \mbox{\hyperlink{negotiator_2index_8js_a06c08a07ae0a0d399b49658047e51393}{language}}, \mbox{\hyperlink{uuid_8min_8js_a400dc8109620963da8314d4bdfa14f83}{o}}, \mbox{\hyperlink{ordered-map_8min_8js_ad711cf8878f34f088655a499839c551a}{q}}, \mbox{\hyperlink{ordered-map_8min_8js_ad9a7d92cb87932d25187fdec3ba1b621}{s}}, and \mbox{\hyperlink{language_8js_ac95213a3b35770524f6f61b775ef8a0e}{specify()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{language_8js_ac28d5744214c58f59f58c46384d33535_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{language_8js_ac28d5744214c58f59f58c46384d33535_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{language_8js_a919b1e638f6088c43e77b99ccc60ab4d}\index{language.js@{language.js}!isQuality@{isQuality}}
+\index{isQuality@{isQuality}!language.js@{language.js}}
+\doxysubsubsection{\texorpdfstring{isQuality()}{isQuality()}}
+{\footnotesize\ttfamily \label{language_8js_a919b1e638f6088c43e77b99ccc60ab4d} 
+function is\+Quality (\begin{DoxyParamCaption}\item[{}]{spec}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Check if a spec has any quality. Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{language_8js_a919b1e638f6088c43e77b99ccc60ab4d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{language_8js_a15c49172a2f663e284e4d3038c2c1335}\index{language.js@{language.js}!parseAcceptLanguage@{parseAcceptLanguage}}
+\index{parseAcceptLanguage@{parseAcceptLanguage}!language.js@{language.js}}
+\doxysubsubsection{\texorpdfstring{parseAcceptLanguage()}{parseAcceptLanguage()}}
+{\footnotesize\ttfamily \label{language_8js_a15c49172a2f663e284e4d3038c2c1335} 
+function parse\+Accept\+Language (\begin{DoxyParamCaption}\item[{}]{accept}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Parse the Accept-\/\+Language header. 
+
+References \mbox{\hyperlink{express_2lib_2request_8js_aea581760449850bbdc91f5c3f5fe852d}{accepts}}, \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}, \mbox{\hyperlink{ordered-map_8min_8js_a2e0772d176c27e9cea01defba2a9575a}{j}}, \mbox{\hyperlink{negotiator_2index_8js_a06c08a07ae0a0d399b49658047e51393}{language}}, \mbox{\hyperlink{language_8js_a5e1953baef17689fd54e908bd9e394af}{parse\+Language()}}, and \mbox{\hyperlink{lodash_2trim_8js_a5493b0d3088f09fb8e81cbd35e7faee9}{trim()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{language_8js_a15c49172a2f663e284e4d3038c2c1335_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{language_8js_a15c49172a2f663e284e4d3038c2c1335_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{language_8js_a5e1953baef17689fd54e908bd9e394af}\index{language.js@{language.js}!parseLanguage@{parseLanguage}}
+\index{parseLanguage@{parseLanguage}!language.js@{language.js}}
+\doxysubsubsection{\texorpdfstring{parseLanguage()}{parseLanguage()}}
+{\footnotesize\ttfamily \label{language_8js_a5e1953baef17689fd54e908bd9e394af} 
+function parse\+Language (\begin{DoxyParamCaption}\item[{}]{str}{, }\item[{}]{i}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Parse a language from the Accept-\/\+Language header. 
+
+References \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}, \mbox{\hyperlink{ordered-map_8min_8js_a2e0772d176c27e9cea01defba2a9575a}{j}}, \mbox{\hyperlink{layer_8js_aee433120cbb9ab29eb32064146e11ef5}{match}}, \mbox{\hyperlink{ordered-map_8min_8js_ab2752257551c1a01e010ceba5d7ec200}{p}}, \mbox{\hyperlink{bin_2concurrently_8js_a574c2775e74c5015b26f28e8e7e8d21e}{prefix}}, \mbox{\hyperlink{ordered-map_8min_8js_ad711cf8878f34f088655a499839c551a}{q}}, \mbox{\hyperlink{language_8js_a7cef23a37740b28b6e238cb322beb987}{simple\+Language\+Reg\+Exp}}, and \mbox{\hyperlink{json-bigint_2lib_2stringify_8js_abd4075a8f329b0ccafd81359c952a9df}{str()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{language_8js_a5e1953baef17689fd54e908bd9e394af_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{language_8js_a5e1953baef17689fd54e908bd9e394af_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{language_8js_a3333738f57aad85ca925e9c6c2f10004}\index{language.js@{language.js}!preferredLanguages@{preferredLanguages}}
+\index{preferredLanguages@{preferredLanguages}!language.js@{language.js}}
+\doxysubsubsection{\texorpdfstring{preferredLanguages()}{preferredLanguages()}}
+{\footnotesize\ttfamily \label{language_8js_a3333738f57aad85ca925e9c6c2f10004} 
+function preferred\+Languages (\begin{DoxyParamCaption}\item[{}]{accept}{, }\item[{}]{provided}{}\end{DoxyParamCaption})}
+
+Get the preferred languages from an Accept-\/\+Language header. 
+
+References \mbox{\hyperlink{express_2lib_2request_8js_aea581760449850bbdc91f5c3f5fe852d}{accepts}}, \mbox{\hyperlink{language_8js_a061926345fc6504e118f2f08ecd83461}{compare\+Specs()}}, \mbox{\hyperlink{language_8js_aac674da7a77ceee4ac83ec478864be9a}{get\+Full\+Language()}}, \mbox{\hyperlink{language_8js_ac28d5744214c58f59f58c46384d33535}{get\+Language\+Priority()}}, \mbox{\hyperlink{cookie_2index_8js_a0ac000318c33f03e412baff8df5b2513}{index}}, \mbox{\hyperlink{language_8js_a919b1e638f6088c43e77b99ccc60ab4d}{is\+Quality()}}, \mbox{\hyperlink{language_8js_a15c49172a2f663e284e4d3038c2c1335}{parse\+Accept\+Language()}}, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{language_8js_a3333738f57aad85ca925e9c6c2f10004_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{language_8js_ac95213a3b35770524f6f61b775ef8a0e}\index{language.js@{language.js}!specify@{specify}}
+\index{specify@{specify}!language.js@{language.js}}
+\doxysubsubsection{\texorpdfstring{specify()}{specify()}}
+{\footnotesize\ttfamily \label{language_8js_ac95213a3b35770524f6f61b775ef8a0e} 
+function specify (\begin{DoxyParamCaption}\item[{}]{language}{, }\item[{}]{spec}{, }\item[{}]{index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Get the specificity of the language. 
+
+References \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}, \mbox{\hyperlink{cookie_2index_8js_a0ac000318c33f03e412baff8df5b2513}{index}}, \mbox{\hyperlink{negotiator_2index_8js_a06c08a07ae0a0d399b49658047e51393}{language}}, \mbox{\hyperlink{uuid_8min_8js_a400dc8109620963da8314d4bdfa14f83}{o}}, \mbox{\hyperlink{ordered-map_8min_8js_ab2752257551c1a01e010ceba5d7ec200}{p}}, \mbox{\hyperlink{language_8js_a5e1953baef17689fd54e908bd9e394af}{parse\+Language()}}, \mbox{\hyperlink{ordered-map_8min_8js_ad711cf8878f34f088655a499839c551a}{q}}, and \mbox{\hyperlink{ordered-map_8min_8js_ad9a7d92cb87932d25187fdec3ba1b621}{s}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{language_8js_ac95213a3b35770524f6f61b775ef8a0e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{language_8js_ac95213a3b35770524f6f61b775ef8a0e_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{language_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\index{language.js@{language.js}!exports@{exports}}
+\index{exports@{exports}!language.js@{language.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \label{language_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports = \mbox{\hyperlink{negotiator_2index_8js_a7e7ceaa85a10887ba14afd5e8f5ef920}{preferred\+Languages}}}
+
+Module exports. \Hypertarget{language_8js_a8bf8af32e6e32ad9ed82cbdc62cb2274}\index{language.js@{language.js}!preferredLanguages@{preferredLanguages}}
+\index{preferredLanguages@{preferredLanguages}!language.js@{language.js}}
+\doxysubsubsection{\texorpdfstring{preferredLanguages}{preferredLanguages}}
+{\footnotesize\ttfamily \label{language_8js_a8bf8af32e6e32ad9ed82cbdc62cb2274} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} preferred\+Languages = preferred\+Languages}
+
+\Hypertarget{language_8js_a7cef23a37740b28b6e238cb322beb987}\index{language.js@{language.js}!simpleLanguageRegExp@{simpleLanguageRegExp}}
+\index{simpleLanguageRegExp@{simpleLanguageRegExp}!language.js@{language.js}}
+\doxysubsubsection{\texorpdfstring{simpleLanguageRegExp}{simpleLanguageRegExp}}
+{\footnotesize\ttfamily \label{language_8js_a7cef23a37740b28b6e238cb322beb987} 
+var simple\+Language\+Reg\+Exp = /\texorpdfstring{$^\wedge$}{\string^}\textbackslash{}\mbox{\hyperlink{ordered-map_8min_8js_ad9a7d92cb87932d25187fdec3ba1b621}{s}}\texorpdfstring{$\ast$}{*}(\mbox{[}\texorpdfstring{$^\wedge$}{\string^}\textbackslash{}s\textbackslash{}-\/;\mbox{]}+)(?\+:-\/(\mbox{[}\texorpdfstring{$^\wedge$}{\string^}\textbackslash{}\mbox{\hyperlink{ordered-map_8min_8js_ad9a7d92cb87932d25187fdec3ba1b621}{s}};\mbox{]}+))?\textbackslash{}\mbox{\hyperlink{ordered-map_8min_8js_ad9a7d92cb87932d25187fdec3ba1b621}{s}}\texorpdfstring{$\ast$}{*}(?\+:;(.\texorpdfstring{$\ast$}{*}))?\$/\hspace{0.3cm}{\ttfamily [private]}}
+
+Module variables. \Hypertarget{language_8js_ae2475e10618961c050dcba04e8c42331}\index{language.js@{language.js}!strict@{strict}}
+\index{strict@{strict}!language.js@{language.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{language_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+
+negotiator Copyright(c) 2012 Isaac Z. Schlueter Copyright(c) 2014 Federico Romero Copyright(c) 2014-\/2015 Douglas Christopher Wilson MIT Licensed 

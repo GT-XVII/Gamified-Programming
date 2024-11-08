@@ -1,0 +1,102 @@
+\doxysection{Composite\+Filter Class Reference}
+\hypertarget{class_composite_filter}{}\label{class_composite_filter}\index{CompositeFilter@{CompositeFilter}}
+
+
+Inheritance diagram for Composite\+Filter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=157pt]{class_composite_filter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Composite\+Filter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=157pt]{class_composite_filter__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_filter_af6be2934075d0920033f1d57a1608b11}{where}} (field\+Path, op\+Str, \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}})
+\item 
+static \mbox{\hyperlink{class_filter_a206bac0e574a0b6a4c09747a50d0bc52}{or}} (...filters)
+\item 
+static \mbox{\hyperlink{class_filter_adf8b4ed4a08705db57bb2e4c483336e0}{and}} (...filters)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_composite_filter_ab277e3a1daf6339eb76c9346ac04ad5a}{constructor}} (filters, operator)
+\item 
+\mbox{\hyperlink{class_composite_filter_a3de4a6b6b014e18a3ce17434bf044b20}{\+\_\+get\+Filters}} ()
+\item 
+\mbox{\hyperlink{class_composite_filter_a902654972241a21dba1e307a53062099}{\+\_\+get\+Operator}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_a}{A} {\ttfamily \doxylink{class_composite_filter}{Composite\+Filter}} is used to narrow the set of documents returned by a \doxylink{class_firestore}{Firestore} query by performing the logical OR or AND of multiple {\ttfamily \doxylink{}{Filters}}s. {\ttfamily Composite\+Filters}s are created by invoking {\ttfamily \doxylink{class_filter_a206bac0e574a0b6a4c09747a50d0bc52}{Filter\#or}} or {\ttfamily \doxylink{class_filter_adf8b4ed4a08705db57bb2e4c483336e0}{Filter\#and}} and can then be passed to {\ttfamily \doxylink{class_query_a09b549eea59e9d2d0d81b07b1b34bb77}{Query\#where}} to create a new query instance that also contains the {\ttfamily \doxylink{class_composite_filter}{Composite\+Filter}}. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_composite_filter_a3de4a6b6b014e18a3ce17434bf044b20}\index{CompositeFilter@{CompositeFilter}!\_getFilters@{\_getFilters}}
+\index{\_getFilters@{\_getFilters}!CompositeFilter@{CompositeFilter}}
+\doxysubsubsection{\texorpdfstring{\_getFilters()}{\_getFilters()}}
+{\footnotesize\ttfamily \label{class_composite_filter_a3de4a6b6b014e18a3ce17434bf044b20} 
+Composite\+Filter\+::\+\_\+get\+Filters (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\Hypertarget{class_composite_filter_a902654972241a21dba1e307a53062099}\index{CompositeFilter@{CompositeFilter}!\_getOperator@{\_getOperator}}
+\index{\_getOperator@{\_getOperator}!CompositeFilter@{CompositeFilter}}
+\doxysubsubsection{\texorpdfstring{\_getOperator()}{\_getOperator()}}
+{\footnotesize\ttfamily \label{class_composite_filter_a902654972241a21dba1e307a53062099} 
+Composite\+Filter\+::\+\_\+get\+Operator (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\Hypertarget{class_filter_adf8b4ed4a08705db57bb2e4c483336e0}\index{CompositeFilter@{CompositeFilter}!and@{and}}
+\index{and@{and}!CompositeFilter@{CompositeFilter}}
+\doxysubsubsection{\texorpdfstring{and()}{and()}}
+{\footnotesize\ttfamily \label{class_filter_adf8b4ed4a08705db57bb2e4c483336e0} 
+static Filter\+::and (\begin{DoxyParamCaption}\item[{}]{...}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [inherited]}}
+
+
+
+References \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2filter_8js_ac9cd26142a8b3b16686b5e41b9941c58}{Composite\+Filter}}.
+
+\Hypertarget{class_composite_filter_ab277e3a1daf6339eb76c9346ac04ad5a}\index{CompositeFilter@{CompositeFilter}!constructor@{constructor}}
+\index{constructor@{constructor}!CompositeFilter@{CompositeFilter}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_composite_filter_ab277e3a1daf6339eb76c9346ac04ad5a} 
+Composite\+Filter\+::constructor (\begin{DoxyParamCaption}\item[{}]{filters}{, }\item[{}]{operator}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\Hypertarget{class_filter_a206bac0e574a0b6a4c09747a50d0bc52}\index{CompositeFilter@{CompositeFilter}!or@{or}}
+\index{or@{or}!CompositeFilter@{CompositeFilter}}
+\doxysubsubsection{\texorpdfstring{or()}{or()}}
+{\footnotesize\ttfamily \label{class_filter_a206bac0e574a0b6a4c09747a50d0bc52} 
+static Filter\+::or (\begin{DoxyParamCaption}\item[{}]{...}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [inherited]}}
+
+
+
+References \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2filter_8js_ac9cd26142a8b3b16686b5e41b9941c58}{Composite\+Filter}}.
+
+\Hypertarget{class_filter_af6be2934075d0920033f1d57a1608b11}\index{CompositeFilter@{CompositeFilter}!where@{where}}
+\index{where@{where}!CompositeFilter@{CompositeFilter}}
+\doxysubsubsection{\texorpdfstring{where()}{where()}}
+{\footnotesize\ttfamily \label{class_filter_af6be2934075d0920033f1d57a1608b11} 
+static Filter\+::where (\begin{DoxyParamCaption}\item[{}]{field\+Path}{, }\item[{}]{op\+Str}{, }\item[{}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [inherited]}}
+
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_c4841461196c822ab6502f58f84f8573}{/\+Users/nicoletiokhin/\+Desktop/\+Software Semester 3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/@google-\/cloud/firestore/build/src/filter.\+js}}.\end{Desc}
+
+
+References \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2filter_8js_a5aaa56ed74ba0108d0c2079fdedeacab}{Unary\+Filter}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/@google-\/cloud/firestore/build/src/\mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2filter_8js}{filter.\+js}}\end{DoxyCompactItemize}

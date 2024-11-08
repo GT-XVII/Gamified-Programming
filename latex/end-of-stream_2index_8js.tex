@@ -1,0 +1,79 @@
+\doxysection{backend/node\+\_\+modules/end-\/of-\/stream/index.js File Reference}
+\hypertarget{end-of-stream_2index_8js}{}\label{end-of-stream_2index_8js}\index{backend/node\_modules/end-\/of-\/stream/index.js@{backend/node\_modules/end-\/of-\/stream/index.js}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{end-of-stream_2index_8js_a7eeb4207b9b135e4e12f3c9accacb111}{once}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}once\textquotesingle{})
+\item 
+var \mbox{\hyperlink{end-of-stream_2index_8js_a00d68567242b3f02a40c36c48058da2a}{is\+Request}}
+\item 
+var \mbox{\hyperlink{end-of-stream_2index_8js_a2e63ffee6e1cb85e69fd4e9fef1c2832}{is\+Child\+Process}}
+\item 
+var \mbox{\hyperlink{end-of-stream_2index_8js_a3386eea78a116bf2ccb53b88c8b45f53}{eos}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{end-of-stream_2index_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} = \mbox{\hyperlink{end-of-stream_2index_8js_a3386eea78a116bf2ccb53b88c8b45f53}{eos}}
+\end{DoxyCompactItemize}
+\begin{Indent}\textbf{ value}\par
+{\em Executes the chain sequence to resolve the unwrapped value.
+
+@member\+Of \+\_\+ \begin{DoxySince}{Since}
+0.\+1.\+0 @alias to\+JSON, value\+Of 
+\end{DoxySince}
+}\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{end-of-stream_2index_8js_a37fee5e1732e0b29861d5327595fdd37}{noop}} = function() \{\}
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{end-of-stream_2index_8js_a3386eea78a116bf2ccb53b88c8b45f53}\index{index.js@{index.js}!eos@{eos}}
+\index{eos@{eos}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{eos}{eos}}
+{\footnotesize\ttfamily \label{end-of-stream_2index_8js_a3386eea78a116bf2ccb53b88c8b45f53} 
+var eos}
+
+\Hypertarget{end-of-stream_2index_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\index{index.js@{index.js}!exports@{exports}}
+\index{exports@{exports}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \label{end-of-stream_2index_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports = \mbox{\hyperlink{end-of-stream_2index_8js_a3386eea78a116bf2ccb53b88c8b45f53}{eos}}}
+
+\Hypertarget{end-of-stream_2index_8js_a2e63ffee6e1cb85e69fd4e9fef1c2832}\index{index.js@{index.js}!isChildProcess@{isChildProcess}}
+\index{isChildProcess@{isChildProcess}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{isChildProcess}{isChildProcess}}
+{\footnotesize\ttfamily \label{end-of-stream_2index_8js_a2e63ffee6e1cb85e69fd4e9fef1c2832} 
+var is\+Child\+Process}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{debug_2src_2node_8js_a822bf74d422c61e6caa292f739dc4786}{stream}})\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{debug_2src_2node_8js_a822bf74d422c61e6caa292f739dc4786}{stream}}.stdio\ \&\&\ \mbox{\hyperlink{src_2util_2minimal_8js_a325c4e317c38d8497130ebce7670be2f}{Array}}.isArray(\mbox{\hyperlink{debug_2src_2node_8js_a822bf74d422c61e6caa292f739dc4786}{stream}}.stdio)\ \&\&\ \mbox{\hyperlink{debug_2src_2node_8js_a822bf74d422c61e6caa292f739dc4786}{stream}}.stdio.length\ ===\ 3}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{end-of-stream_2index_8js_a00d68567242b3f02a40c36c48058da2a}\index{index.js@{index.js}!isRequest@{isRequest}}
+\index{isRequest@{isRequest}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{isRequest}{isRequest}}
+{\footnotesize\ttfamily \label{end-of-stream_2index_8js_a00d68567242b3f02a40c36c48058da2a} 
+var is\+Request}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{debug_2src_2node_8js_a822bf74d422c61e6caa292f739dc4786}{stream}})\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{debug_2src_2node_8js_a822bf74d422c61e6caa292f739dc4786}{stream}}.setHeader\ \&\&\ typeof\ \mbox{\hyperlink{debug_2src_2node_8js_a822bf74d422c61e6caa292f739dc4786}{stream}}.abort\ ===\ \textcolor{stringliteral}{'function'};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{end-of-stream_2index_8js_a37fee5e1732e0b29861d5327595fdd37}\index{index.js@{index.js}!noop@{noop}}
+\index{noop@{noop}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{noop}{noop}}
+{\footnotesize\ttfamily \label{end-of-stream_2index_8js_a37fee5e1732e0b29861d5327595fdd37} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} noop = function() \{\}}
+
+\Hypertarget{end-of-stream_2index_8js_a7eeb4207b9b135e4e12f3c9accacb111}\index{index.js@{index.js}!once@{once}}
+\index{once@{once}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{once}{once}}
+{\footnotesize\ttfamily \label{end-of-stream_2index_8js_a7eeb4207b9b135e4e12f3c9accacb111} 
+var once = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}once\textquotesingle{})}
+

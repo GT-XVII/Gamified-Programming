@@ -1,0 +1,12 @@
+<map id="tap" name="tap">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,45,55"/>
+<area shape="rect" id="Node000002" href="$protobufjs_2dist_2protobuf_8js.html#adc8497f1b8fa9c7bee4a53c25c244a66" title=" " alt="" coords="93,29,139,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="45,40,77,40,77,45,45,45"/>
+<area shape="rect" id="Node000003" href="$protobufjs_2dist_2protobuf_8js.html#a74d7fa31d45064974a0c297422d3c0c5" title=" " alt="" coords="421,5,525,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="139,38,406,20,406,25,140,43"/>
+<area shape="rect" id="Node000004" href="$protobufjs_2dist_2protobuf_8js.html#afd366b4e60dba7acb371422d6dddcc64" title=" " alt="" coords="187,55,373,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="140,43,178,49,177,54,139,48"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="333,51,406,33,407,38,334,57"/>
+<area shape="rect" id="Node000005" href="$_doc_type_reader_8js.html#a14b5fcc27a4889161d94c35f6a630cea" title=" " alt="" coords="429,55,517,80"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="374,65,413,65,413,70,374,70"/>
+</map>

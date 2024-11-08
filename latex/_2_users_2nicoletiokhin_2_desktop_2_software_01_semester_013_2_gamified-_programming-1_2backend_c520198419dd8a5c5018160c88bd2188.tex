@@ -1,0 +1,27 @@
+\doxysection{/\+Users/nicoletiokhin/\+Desktop/\+Software Semester 3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/lodash/mean\+By.\+js}
+\hypertarget{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_c520198419dd8a5c5018160c88bd2188}{}\label{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_c520198419dd8a5c5018160c88bd2188}This method is like {\ttfamily \+\_\+.\+mean} except that it accepts {\ttfamily iteratee} which is invoked for each element in {\ttfamily array} to generate the value to be averaged. The iteratee is invoked with one argument\+: (value).
+
+@member\+Of \+\_\+ \begin{DoxySince}{Since}
+4.\+7.\+0
+\end{DoxySince}
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Array\}} & array The array to iterate over. \\
+\hline
+{\em \{\+Function\}} & \mbox{[}iteratee=\+\_\+.\+identity\mbox{]} The iteratee invoked per element. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{number\} Returns the mean.
+\end{DoxyReturn}
+var objects = \mbox{[}\{ \textquotesingle{}n\textquotesingle{}\+: 4 \}, \{ \textquotesingle{}n\textquotesingle{}\+: 2 \}, \{ \textquotesingle{}n\textquotesingle{}\+: 8 \}, \{ \textquotesingle{}n\textquotesingle{}\+: 6 \}\mbox{]};
+
+\+\_\+.\+mean\+By(objects, function(o) \{ return o.\+n; \}); // =\texorpdfstring{$>$}{>} 5
+
+// The {\ttfamily \+\_\+.\+property} iteratee shorthand. \+\_\+.\+mean\+By(objects, \textquotesingle{}n\textquotesingle{}); // =\texorpdfstring{$>$}{>} 5
+
+
+\begin{DoxyCodeInclude}{0}
+
+\end{DoxyCodeInclude}
+ Semester \doxylink{mean_by_8js}{3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/lodash/mean\+By.\+js} 

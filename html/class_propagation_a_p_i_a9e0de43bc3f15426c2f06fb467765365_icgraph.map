@@ -1,0 +1,13 @@
+<map id="PropagationAPI::_getGlobalPropagator" name="PropagationAPI::_getGlobalPropagator">
+<area shape="rect" id="Node000001" title=" " alt="" coords="214,96,396,137"/>
+<area shape="rect" id="Node000002" href="$class_propagation_a_p_i.html#a7e67578c2ec054e95cdcf899bdbbc6a4" title=" " alt="" coords="5,5,166,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="256,91,165,45,136,34,137,29,167,40,258,86"/>
+<area shape="rect" id="Node000003" href="$class_propagation_a_p_i.html#a81efa2e8c2d4365cc45d67f7655a5d49" title=" " alt="" coords="5,55,166,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="198,96,145,84,147,78,200,90"/>
+<area shape="rect" id="Node000004" href="$class_propagation_a_p_i.html#afb0cb922f19bd4d369a12a7495bae19e" title=" " alt="" coords="10,104,161,130"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="198,120,162,120,162,114,198,114"/>
+<area shape="rect" id="Node000005" href="$class_propagation_a_p_i.html#a26700f3c22da424a839228d933047424" title=" " alt="" coords="10,153,161,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="200,143,147,155,145,150,198,138"/>
+<area shape="rect" id="Node000006" href="$class_propagation_a_p_i.html#a810be9d083b664af3037e24692ad3a44" title=" " alt="" coords="10,203,161,228"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="258,147,167,194,137,205,136,200,165,189,256,143"/>
+</map>

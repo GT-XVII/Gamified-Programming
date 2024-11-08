@@ -1,0 +1,17 @@
+<map id="Timestamp::seconds" name="Timestamp::seconds">
+<area shape="rect" id="Node000001" title=" " alt="" coords="409,104,552,130"/>
+<area shape="rect" id="Node000002" href="$class_timestamp.html#ac4d71271b0510e048a84be0a4b3135bd" title=" " alt="" coords="202,5,361,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="448,97,407,70,360,45,333,34,335,29,362,40,410,66,451,93"/>
+<area shape="rect" id="Node000003" href="$class_timestamp.html#a482e3b3655e55e99cda25bbc92076395" title=" " alt="" coords="206,55,356,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="410,102,336,84,337,78,411,97"/>
+<area shape="rect" id="Node000006" href="$class_timestamp.html#abb40dddee70d12ea748c9a09a8b82068" title=" " alt="" coords="213,104,350,130"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="394,120,351,120,351,114,394,114"/>
+<area shape="rect" id="Node000007" href="$class_timestamp.html#a39147a727d6c1ae96b9ddf27ec792705" title=" " alt="" coords="213,153,350,179"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="411,137,337,155,336,150,410,131"/>
+<area shape="rect" id="Node000008" href="$class_timestamp.html#acaaa26c0e6f1b7f66ab5de43d15af8b5" title=" " alt="" coords="212,203,351,228"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="451,141,410,168,362,194,335,205,333,200,360,189,407,164,448,137"/>
+<area shape="rect" id="Node000004" href="$class_timestamp.html#a91361a25fad342e1c78e0b7858680350" title=" " alt="" coords="5,31,154,56"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="191,59,153,55,154,50,191,54"/>
+<area shape="rect" id="Node000005" href="$class_timestamp.html#a68cbd58ad44f094292cd3d523f523376" title=" " alt="" coords="20,80,139,106"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="191,81,139,88,139,83,191,76"/>
+</map>

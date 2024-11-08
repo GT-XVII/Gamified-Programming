@@ -1,0 +1,491 @@
+\doxysection{Data\+Snapshot Class Reference}
+\hypertarget{class_data_snapshot}{}\label{class_data_snapshot}\index{DataSnapshot@{DataSnapshot}}
+
+
+Collaboration diagram for Data\+Snapshot\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=161pt]{class_data_snapshot__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_data_snapshot_af7c4ca644078765840ba2aad839768bc}{constructor}} (\+\_\+database, \+\_\+delegate)
+\item 
+\mbox{\hyperlink{class_data_snapshot_aa5af0d05591a1b27f1c57d4ce00e7cea}{val}} ()
+\item 
+\mbox{\hyperlink{class_data_snapshot_a29e8c9648421da8f85454ba3f7ab413c}{export\+Val}} ()
+\item 
+\mbox{\hyperlink{class_data_snapshot_ac21a01ab91e5bc60d23ed05497249917}{to\+JSON}} ()
+\item 
+\mbox{\hyperlink{class_data_snapshot_a5af3e7af81824917d7e7fa0243407057}{exists}} ()
+\item 
+\mbox{\hyperlink{class_data_snapshot_a54f51ad473375d758ef27ad5f190ba56}{child}} (\mbox{\hyperlink{cjs_2src_2bucket_8js_a1fdc7709faf62dce60620fb3f9d3453c}{path}})
+\item 
+\mbox{\hyperlink{class_data_snapshot_ac7cab2b51eee4d88ed099b11127a6b08}{has\+Child}} (\mbox{\hyperlink{cjs_2src_2bucket_8js_a1fdc7709faf62dce60620fb3f9d3453c}{path}})
+\item 
+\mbox{\hyperlink{class_data_snapshot_aaff64c4a950899651ac732697b10318e}{get\+Priority}} ()
+\item 
+\mbox{\hyperlink{class_data_snapshot_a7ff24d0ba4aa3634acb5958ca5caa8e3}{for\+Each}} (action)
+\item 
+\mbox{\hyperlink{class_data_snapshot_a9af59fb21f6f6b6d018eeb6f1bf3a4c9}{has\+Children}} ()
+\item 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} \mbox{\hyperlink{class_data_snapshot_ac5495faa8f9a0adbb82479f7c212d4a5}{key}} ()
+\item 
+\mbox{\hyperlink{class_data_snapshot_abc356ad83fe6dea53dc23641ee5db02a}{num\+Children}} ()
+\item 
+\mbox{\hyperlink{class_data_snapshot_aa2bcd414e100eb057ccd5ae4461894b5}{get\+Ref}} ()
+\item 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} \mbox{\hyperlink{class_data_snapshot_a9c5b8f6eaa9c06d1799d7347c441a47e}{ref}} ()
+\item 
+\mbox{\hyperlink{class_data_snapshot_af7c4ca644078765840ba2aad839768bc}{constructor}} (\+\_\+database, \+\_\+delegate)
+\item 
+\mbox{\hyperlink{class_data_snapshot_aa5af0d05591a1b27f1c57d4ce00e7cea}{val}} ()
+\item 
+\mbox{\hyperlink{class_data_snapshot_a29e8c9648421da8f85454ba3f7ab413c}{export\+Val}} ()
+\item 
+\mbox{\hyperlink{class_data_snapshot_ac21a01ab91e5bc60d23ed05497249917}{to\+JSON}} ()
+\item 
+\mbox{\hyperlink{class_data_snapshot_a5af3e7af81824917d7e7fa0243407057}{exists}} ()
+\item 
+\mbox{\hyperlink{class_data_snapshot_a54f51ad473375d758ef27ad5f190ba56}{child}} (\mbox{\hyperlink{cjs_2src_2bucket_8js_a1fdc7709faf62dce60620fb3f9d3453c}{path}})
+\item 
+\mbox{\hyperlink{class_data_snapshot_ac7cab2b51eee4d88ed099b11127a6b08}{has\+Child}} (\mbox{\hyperlink{cjs_2src_2bucket_8js_a1fdc7709faf62dce60620fb3f9d3453c}{path}})
+\item 
+\mbox{\hyperlink{class_data_snapshot_aaff64c4a950899651ac732697b10318e}{get\+Priority}} ()
+\item 
+\mbox{\hyperlink{class_data_snapshot_a7ff24d0ba4aa3634acb5958ca5caa8e3}{for\+Each}} (action)
+\item 
+\mbox{\hyperlink{class_data_snapshot_a9af59fb21f6f6b6d018eeb6f1bf3a4c9}{has\+Children}} ()
+\item 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} \mbox{\hyperlink{class_data_snapshot_ac5495faa8f9a0adbb82479f7c212d4a5}{key}} ()
+\item 
+\mbox{\hyperlink{class_data_snapshot_abc356ad83fe6dea53dc23641ee5db02a}{num\+Children}} ()
+\item 
+\mbox{\hyperlink{class_data_snapshot_aa2bcd414e100eb057ccd5ae4461894b5}{get\+Ref}} ()
+\item 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} \mbox{\hyperlink{class_data_snapshot_a9c5b8f6eaa9c06d1799d7347c441a47e}{ref}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+@license Copyright 2017 Google LLC
+
+Licensed under the Apache License, Version 2.\+0 (the "{}\+License"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+\href{http://www.apache.org/licenses/LICENSE-2.0}{\texttt{ http\+://www.\+apache.\+org/licenses/\+LICENSE-\/2.\+0}}
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "{}\+AS IS"{} BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. Class representing a firebase data snapshot. It wraps a Snapshot\+Node and surfaces the public methods (val, for\+Each, etc.) we want to expose. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_data_snapshot_a54f51ad473375d758ef27ad5f190ba56}\index{DataSnapshot@{DataSnapshot}!child@{child}}
+\index{child@{child}!DataSnapshot@{DataSnapshot}}
+\doxysubsubsection{\texorpdfstring{child()}{child()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_data_snapshot_a54f51ad473375d758ef27ad5f190ba56} 
+Data\+Snapshot\+::child (\begin{DoxyParamCaption}\item[{}]{path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a \doxylink{class_data_snapshot}{Data\+Snapshot} of the specified child node\textquotesingle{}s contents.
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & -\/ \doxylink{class_path}{Path} to a child. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_data_snapshot}{Data\+Snapshot} for child node. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8esm5_8js_acf627f43238905be40b5e931c8f37a7b}{Data\+Snapshot}}, \mbox{\hyperlink{cjs_2src_2bucket_8js_a1fdc7709faf62dce60620fb3f9d3453c}{path}}, and \mbox{\hyperlink{util_2dist_2index_8cjs_8js_aac72100f43d5791c4ad04e225fb2de29}{validate\+Arg\+Count}}.
+
+\Hypertarget{class_data_snapshot_a54f51ad473375d758ef27ad5f190ba56}\index{DataSnapshot@{DataSnapshot}!child@{child}}
+\index{child@{child}!DataSnapshot@{DataSnapshot}}
+\doxysubsubsection{\texorpdfstring{child()}{child()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_data_snapshot_a54f51ad473375d758ef27ad5f190ba56} 
+Data\+Snapshot\+::child (\begin{DoxyParamCaption}\item[{}]{path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a \doxylink{class_data_snapshot}{Data\+Snapshot} of the specified child node\textquotesingle{}s contents.
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & -\/ \doxylink{class_path}{Path} to a child. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_data_snapshot}{Data\+Snapshot} for child node. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8esm5_8js_acf627f43238905be40b5e931c8f37a7b}{Data\+Snapshot}}, \mbox{\hyperlink{cjs_2src_2bucket_8js_a1fdc7709faf62dce60620fb3f9d3453c}{path}}, and \mbox{\hyperlink{util_2dist_2index_8cjs_8js_aac72100f43d5791c4ad04e225fb2de29}{validate\+Arg\+Count}}.
+
+\Hypertarget{class_data_snapshot_af7c4ca644078765840ba2aad839768bc}\index{DataSnapshot@{DataSnapshot}!constructor@{constructor}}
+\index{constructor@{constructor}!DataSnapshot@{DataSnapshot}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_data_snapshot_af7c4ca644078765840ba2aad839768bc} 
+Data\+Snapshot\+::constructor (\begin{DoxyParamCaption}\item[{}]{\+\_\+database}{, }\item[{}]{\+\_\+delegate}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_data_snapshot_af7c4ca644078765840ba2aad839768bc}\index{DataSnapshot@{DataSnapshot}!constructor@{constructor}}
+\index{constructor@{constructor}!DataSnapshot@{DataSnapshot}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_data_snapshot_af7c4ca644078765840ba2aad839768bc} 
+Data\+Snapshot\+::constructor (\begin{DoxyParamCaption}\item[{}]{\+\_\+database}{, }\item[{}]{\+\_\+delegate}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_data_snapshot_a5af3e7af81824917d7e7fa0243407057}\index{DataSnapshot@{DataSnapshot}!exists@{exists}}
+\index{exists@{exists}!DataSnapshot@{DataSnapshot}}
+\doxysubsubsection{\texorpdfstring{exists()}{exists()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_data_snapshot_a5af3e7af81824917d7e7fa0243407057} 
+Data\+Snapshot\+::exists (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns whether the snapshot contains a non-\/null value.
+
+\begin{DoxyReturn}{Returns}
+Whether the snapshot contains a non-\/null value, or is empty. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{util_2dist_2index_8cjs_8js_aac72100f43d5791c4ad04e225fb2de29}{validate\+Arg\+Count}}.
+
+\Hypertarget{class_data_snapshot_a5af3e7af81824917d7e7fa0243407057}\index{DataSnapshot@{DataSnapshot}!exists@{exists}}
+\index{exists@{exists}!DataSnapshot@{DataSnapshot}}
+\doxysubsubsection{\texorpdfstring{exists()}{exists()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_data_snapshot_a5af3e7af81824917d7e7fa0243407057} 
+Data\+Snapshot\+::exists (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns whether the snapshot contains a non-\/null value.
+
+\begin{DoxyReturn}{Returns}
+Whether the snapshot contains a non-\/null value, or is empty. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{util_2dist_2index_8cjs_8js_aac72100f43d5791c4ad04e225fb2de29}{validate\+Arg\+Count}}.
+
+\Hypertarget{class_data_snapshot_a29e8c9648421da8f85454ba3f7ab413c}\index{DataSnapshot@{DataSnapshot}!exportVal@{exportVal}}
+\index{exportVal@{exportVal}!DataSnapshot@{DataSnapshot}}
+\doxysubsubsection{\texorpdfstring{exportVal()}{exportVal()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_data_snapshot_a29e8c9648421da8f85454ba3f7ab413c} 
+Data\+Snapshot\+::export\+Val (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the snapshot contents as JSON, including priorities of node. Suitable for exporting the entire node contents. \begin{DoxyReturn}{Returns}
+JSON representation of the \doxylink{class_data_snapshot}{Data\+Snapshot} contents, or null if empty. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{util_2dist_2index_8cjs_8js_aac72100f43d5791c4ad04e225fb2de29}{validate\+Arg\+Count}}.
+
+\Hypertarget{class_data_snapshot_a29e8c9648421da8f85454ba3f7ab413c}\index{DataSnapshot@{DataSnapshot}!exportVal@{exportVal}}
+\index{exportVal@{exportVal}!DataSnapshot@{DataSnapshot}}
+\doxysubsubsection{\texorpdfstring{exportVal()}{exportVal()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_data_snapshot_a29e8c9648421da8f85454ba3f7ab413c} 
+Data\+Snapshot\+::export\+Val (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the snapshot contents as JSON, including priorities of node. Suitable for exporting the entire node contents. \begin{DoxyReturn}{Returns}
+JSON representation of the \doxylink{class_data_snapshot}{Data\+Snapshot} contents, or null if empty. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{util_2dist_2index_8cjs_8js_aac72100f43d5791c4ad04e225fb2de29}{validate\+Arg\+Count}}.
+
+\Hypertarget{class_data_snapshot_a7ff24d0ba4aa3634acb5958ca5caa8e3}\index{DataSnapshot@{DataSnapshot}!forEach@{forEach}}
+\index{forEach@{forEach}!DataSnapshot@{DataSnapshot}}
+\doxysubsubsection{\texorpdfstring{forEach()}{forEach()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_data_snapshot_a7ff24d0ba4aa3634acb5958ca5caa8e3} 
+Data\+Snapshot\+::for\+Each (\begin{DoxyParamCaption}\item[{}]{action}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Iterates through child nodes and calls the specified action for each one.
+
+
+\begin{DoxyParams}{Parameters}
+{\em action} & -\/ Callback function to be called for each child. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if for\+Each was canceled by action returning true for one of the child nodes. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8esm5_8js_acf627f43238905be40b5e931c8f37a7b}{Data\+Snapshot}}, \mbox{\hyperlink{util_2dist_2index_8cjs_8js_aac72100f43d5791c4ad04e225fb2de29}{validate\+Arg\+Count}}, and \mbox{\hyperlink{util_2dist_2index_8cjs_8js_aa81548590e6375e0d909ae1687de2b80}{validate\+Callback}}.
+
+\Hypertarget{class_data_snapshot_a7ff24d0ba4aa3634acb5958ca5caa8e3}\index{DataSnapshot@{DataSnapshot}!forEach@{forEach}}
+\index{forEach@{forEach}!DataSnapshot@{DataSnapshot}}
+\doxysubsubsection{\texorpdfstring{forEach()}{forEach()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_data_snapshot_a7ff24d0ba4aa3634acb5958ca5caa8e3} 
+Data\+Snapshot\+::for\+Each (\begin{DoxyParamCaption}\item[{}]{action}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Iterates through child nodes and calls the specified action for each one.
+
+
+\begin{DoxyParams}{Parameters}
+{\em action} & -\/ Callback function to be called for each child. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if for\+Each was canceled by action returning true for one of the child nodes. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8esm5_8js_acf627f43238905be40b5e931c8f37a7b}{Data\+Snapshot}}, \mbox{\hyperlink{util_2dist_2index_8cjs_8js_aac72100f43d5791c4ad04e225fb2de29}{validate\+Arg\+Count}}, and \mbox{\hyperlink{util_2dist_2index_8cjs_8js_aa81548590e6375e0d909ae1687de2b80}{validate\+Callback}}.
+
+\Hypertarget{class_data_snapshot_aaff64c4a950899651ac732697b10318e}\index{DataSnapshot@{DataSnapshot}!getPriority@{getPriority}}
+\index{getPriority@{getPriority}!DataSnapshot@{DataSnapshot}}
+\doxysubsubsection{\texorpdfstring{getPriority()}{getPriority()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_data_snapshot_aaff64c4a950899651ac732697b10318e} 
+Data\+Snapshot\+::get\+Priority (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the priority of the object, or null if no priority was set.
+
+\begin{DoxyReturn}{Returns}
+The priority. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{util_2dist_2index_8cjs_8js_aac72100f43d5791c4ad04e225fb2de29}{validate\+Arg\+Count}}.
+
+\Hypertarget{class_data_snapshot_aaff64c4a950899651ac732697b10318e}\index{DataSnapshot@{DataSnapshot}!getPriority@{getPriority}}
+\index{getPriority@{getPriority}!DataSnapshot@{DataSnapshot}}
+\doxysubsubsection{\texorpdfstring{getPriority()}{getPriority()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_data_snapshot_aaff64c4a950899651ac732697b10318e} 
+Data\+Snapshot\+::get\+Priority (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the priority of the object, or null if no priority was set.
+
+\begin{DoxyReturn}{Returns}
+The priority. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{util_2dist_2index_8cjs_8js_aac72100f43d5791c4ad04e225fb2de29}{validate\+Arg\+Count}}.
+
+\Hypertarget{class_data_snapshot_aa2bcd414e100eb057ccd5ae4461894b5}\index{DataSnapshot@{DataSnapshot}!getRef@{getRef}}
+\index{getRef@{getRef}!DataSnapshot@{DataSnapshot}}
+\doxysubsubsection{\texorpdfstring{getRef()}{getRef()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_data_snapshot_aa2bcd414e100eb057ccd5ae4461894b5} 
+Data\+Snapshot\+::get\+Ref (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+The Firebase reference for the location this snapshot\textquotesingle{}s data came from. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8esm5_8js_a219cae54aef3f6f9a8b2db3085ffe6ff}{Reference}}, and \mbox{\hyperlink{util_2dist_2index_8cjs_8js_aac72100f43d5791c4ad04e225fb2de29}{validate\+Arg\+Count}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=325pt]{class_data_snapshot_aa2bcd414e100eb057ccd5ae4461894b5_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_data_snapshot_aa2bcd414e100eb057ccd5ae4461894b5}\index{DataSnapshot@{DataSnapshot}!getRef@{getRef}}
+\index{getRef@{getRef}!DataSnapshot@{DataSnapshot}}
+\doxysubsubsection{\texorpdfstring{getRef()}{getRef()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_data_snapshot_aa2bcd414e100eb057ccd5ae4461894b5} 
+Data\+Snapshot\+::get\+Ref (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+The Firebase reference for the location this snapshot\textquotesingle{}s data came from. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8esm5_8js_a219cae54aef3f6f9a8b2db3085ffe6ff}{Reference}}, and \mbox{\hyperlink{util_2dist_2index_8cjs_8js_aac72100f43d5791c4ad04e225fb2de29}{validate\+Arg\+Count}}.
+
+\Hypertarget{class_data_snapshot_ac7cab2b51eee4d88ed099b11127a6b08}\index{DataSnapshot@{DataSnapshot}!hasChild@{hasChild}}
+\index{hasChild@{hasChild}!DataSnapshot@{DataSnapshot}}
+\doxysubsubsection{\texorpdfstring{hasChild()}{hasChild()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_data_snapshot_ac7cab2b51eee4d88ed099b11127a6b08} 
+Data\+Snapshot\+::has\+Child (\begin{DoxyParamCaption}\item[{}]{path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns whether the snapshot contains a child at the specified path.
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & -\/ \doxylink{class_path}{Path} to a child. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether the child exists. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{cjs_2src_2bucket_8js_a1fdc7709faf62dce60620fb3f9d3453c}{path}}, and \mbox{\hyperlink{util_2dist_2index_8cjs_8js_aac72100f43d5791c4ad04e225fb2de29}{validate\+Arg\+Count}}.
+
+\Hypertarget{class_data_snapshot_ac7cab2b51eee4d88ed099b11127a6b08}\index{DataSnapshot@{DataSnapshot}!hasChild@{hasChild}}
+\index{hasChild@{hasChild}!DataSnapshot@{DataSnapshot}}
+\doxysubsubsection{\texorpdfstring{hasChild()}{hasChild()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_data_snapshot_ac7cab2b51eee4d88ed099b11127a6b08} 
+Data\+Snapshot\+::has\+Child (\begin{DoxyParamCaption}\item[{}]{path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns whether the snapshot contains a child at the specified path.
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & -\/ \doxylink{class_path}{Path} to a child. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether the child exists. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{cjs_2src_2bucket_8js_a1fdc7709faf62dce60620fb3f9d3453c}{path}}, and \mbox{\hyperlink{util_2dist_2index_8cjs_8js_aac72100f43d5791c4ad04e225fb2de29}{validate\+Arg\+Count}}.
+
+\Hypertarget{class_data_snapshot_a9af59fb21f6f6b6d018eeb6f1bf3a4c9}\index{DataSnapshot@{DataSnapshot}!hasChildren@{hasChildren}}
+\index{hasChildren@{hasChildren}!DataSnapshot@{DataSnapshot}}
+\doxysubsubsection{\texorpdfstring{hasChildren()}{hasChildren()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_data_snapshot_a9af59fb21f6f6b6d018eeb6f1bf3a4c9} 
+Data\+Snapshot\+::has\+Children (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns whether this \doxylink{class_data_snapshot}{Data\+Snapshot} has children. \begin{DoxyReturn}{Returns}
+True if the \doxylink{class_data_snapshot}{Data\+Snapshot} contains 1 or more child nodes. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{util_2dist_2index_8cjs_8js_aac72100f43d5791c4ad04e225fb2de29}{validate\+Arg\+Count}}.
+
+\Hypertarget{class_data_snapshot_a9af59fb21f6f6b6d018eeb6f1bf3a4c9}\index{DataSnapshot@{DataSnapshot}!hasChildren@{hasChildren}}
+\index{hasChildren@{hasChildren}!DataSnapshot@{DataSnapshot}}
+\doxysubsubsection{\texorpdfstring{hasChildren()}{hasChildren()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_data_snapshot_a9af59fb21f6f6b6d018eeb6f1bf3a4c9} 
+Data\+Snapshot\+::has\+Children (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns whether this \doxylink{class_data_snapshot}{Data\+Snapshot} has children. \begin{DoxyReturn}{Returns}
+True if the \doxylink{class_data_snapshot}{Data\+Snapshot} contains 1 or more child nodes. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{util_2dist_2index_8cjs_8js_aac72100f43d5791c4ad04e225fb2de29}{validate\+Arg\+Count}}.
+
+\Hypertarget{class_data_snapshot_ac5495faa8f9a0adbb82479f7c212d4a5}\index{DataSnapshot@{DataSnapshot}!key@{key}}
+\index{key@{key}!DataSnapshot@{DataSnapshot}}
+\doxysubsubsection{\texorpdfstring{key()}{key()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_data_snapshot_ac5495faa8f9a0adbb82479f7c212d4a5} 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} Data\+Snapshot\+::key (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_data_snapshot_ac5495faa8f9a0adbb82479f7c212d4a5}\index{DataSnapshot@{DataSnapshot}!key@{key}}
+\index{key@{key}!DataSnapshot@{DataSnapshot}}
+\doxysubsubsection{\texorpdfstring{key()}{key()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_data_snapshot_ac5495faa8f9a0adbb82479f7c212d4a5} 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} Data\+Snapshot\+::key (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_data_snapshot_abc356ad83fe6dea53dc23641ee5db02a}\index{DataSnapshot@{DataSnapshot}!numChildren@{numChildren}}
+\index{numChildren@{numChildren}!DataSnapshot@{DataSnapshot}}
+\doxysubsubsection{\texorpdfstring{numChildren()}{numChildren()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_data_snapshot_abc356ad83fe6dea53dc23641ee5db02a} 
+Data\+Snapshot\+::num\+Children (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the number of children for this \doxylink{class_data_snapshot}{Data\+Snapshot}. \begin{DoxyReturn}{Returns}
+The number of children that this \doxylink{class_data_snapshot}{Data\+Snapshot} contains. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{util_2dist_2index_8cjs_8js_aac72100f43d5791c4ad04e225fb2de29}{validate\+Arg\+Count}}.
+
+\Hypertarget{class_data_snapshot_abc356ad83fe6dea53dc23641ee5db02a}\index{DataSnapshot@{DataSnapshot}!numChildren@{numChildren}}
+\index{numChildren@{numChildren}!DataSnapshot@{DataSnapshot}}
+\doxysubsubsection{\texorpdfstring{numChildren()}{numChildren()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_data_snapshot_abc356ad83fe6dea53dc23641ee5db02a} 
+Data\+Snapshot\+::num\+Children (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the number of children for this \doxylink{class_data_snapshot}{Data\+Snapshot}. \begin{DoxyReturn}{Returns}
+The number of children that this \doxylink{class_data_snapshot}{Data\+Snapshot} contains. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{util_2dist_2index_8cjs_8js_aac72100f43d5791c4ad04e225fb2de29}{validate\+Arg\+Count}}.
+
+\Hypertarget{class_data_snapshot_a9c5b8f6eaa9c06d1799d7347c441a47e}\index{DataSnapshot@{DataSnapshot}!ref@{ref}}
+\index{ref@{ref}!DataSnapshot@{DataSnapshot}}
+\doxysubsubsection{\texorpdfstring{ref()}{ref()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_data_snapshot_a9c5b8f6eaa9c06d1799d7347c441a47e} 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} Data\+Snapshot\+::ref (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{class_data_snapshot_aa2bcd414e100eb057ccd5ae4461894b5}{get\+Ref()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=325pt]{class_data_snapshot_a9c5b8f6eaa9c06d1799d7347c441a47e_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_data_snapshot_a9c5b8f6eaa9c06d1799d7347c441a47e}\index{DataSnapshot@{DataSnapshot}!ref@{ref}}
+\index{ref@{ref}!DataSnapshot@{DataSnapshot}}
+\doxysubsubsection{\texorpdfstring{ref()}{ref()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_data_snapshot_a9c5b8f6eaa9c06d1799d7347c441a47e} 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} Data\+Snapshot\+::ref (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{class_data_snapshot_aa2bcd414e100eb057ccd5ae4461894b5}{get\+Ref()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=325pt]{class_data_snapshot_a9c5b8f6eaa9c06d1799d7347c441a47e_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_data_snapshot_ac21a01ab91e5bc60d23ed05497249917}\index{DataSnapshot@{DataSnapshot}!toJSON@{toJSON}}
+\index{toJSON@{toJSON}!DataSnapshot@{DataSnapshot}}
+\doxysubsubsection{\texorpdfstring{toJSON()}{toJSON()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_data_snapshot_ac21a01ab91e5bc60d23ed05497249917} 
+Data\+Snapshot\+::to\+JSON (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{util_2dist_2index_8cjs_8js_aac72100f43d5791c4ad04e225fb2de29}{validate\+Arg\+Count}}.
+
+\Hypertarget{class_data_snapshot_ac21a01ab91e5bc60d23ed05497249917}\index{DataSnapshot@{DataSnapshot}!toJSON@{toJSON}}
+\index{toJSON@{toJSON}!DataSnapshot@{DataSnapshot}}
+\doxysubsubsection{\texorpdfstring{toJSON()}{toJSON()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_data_snapshot_ac21a01ab91e5bc60d23ed05497249917} 
+Data\+Snapshot\+::to\+JSON (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{util_2dist_2index_8cjs_8js_aac72100f43d5791c4ad04e225fb2de29}{validate\+Arg\+Count}}.
+
+\Hypertarget{class_data_snapshot_aa5af0d05591a1b27f1c57d4ce00e7cea}\index{DataSnapshot@{DataSnapshot}!val@{val}}
+\index{val@{val}!DataSnapshot@{DataSnapshot}}
+\doxysubsubsection{\texorpdfstring{val()}{val()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_data_snapshot_aa5af0d05591a1b27f1c57d4ce00e7cea} 
+Data\+Snapshot\+::val (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Retrieves the snapshot contents as JSON. Returns null if the snapshot is empty.
+
+\begin{DoxyReturn}{Returns}
+JSON representation of the \doxylink{class_data_snapshot}{Data\+Snapshot} contents, or null if empty. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{util_2dist_2index_8cjs_8js_aac72100f43d5791c4ad04e225fb2de29}{validate\+Arg\+Count}}.
+
+\Hypertarget{class_data_snapshot_aa5af0d05591a1b27f1c57d4ce00e7cea}\index{DataSnapshot@{DataSnapshot}!val@{val}}
+\index{val@{val}!DataSnapshot@{DataSnapshot}}
+\doxysubsubsection{\texorpdfstring{val()}{val()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_data_snapshot_aa5af0d05591a1b27f1c57d4ce00e7cea} 
+Data\+Snapshot\+::val (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Retrieves the snapshot contents as JSON. Returns null if the snapshot is empty.
+
+\begin{DoxyReturn}{Returns}
+JSON representation of the \doxylink{class_data_snapshot}{Data\+Snapshot} contents, or null if empty. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{util_2dist_2index_8cjs_8js_aac72100f43d5791c4ad04e225fb2de29}{validate\+Arg\+Count}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/@firebase/database-\/compat/dist/\mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js}{index.\+esm2017.\+js}}\item 
+backend/node\+\_\+modules/@firebase/database-\/compat/dist/node-\/esm/\mbox{\hyperlink{_0dfirebase_2database-compat_2dist_2node-esm_2index_8js}{index.\+js}}\end{DoxyCompactItemize}

@@ -1,0 +1,10 @@
+<map id="DatabaseService::onTokenChange" name="DatabaseService::onTokenChange">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,184,46"/>
+<area shape="rect" id="Node000002" href="$class_database_service.html#a4fe7b6279d55086a962176623d6ac719" title=" " alt="" coords="461,13,659,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="184,20,232,19,413,19,445,20,445,25,413,24,232,24,184,25"/>
+<area shape="rect" id="Node000004" href="$class_database_service.html#ad7752b03949d621893e1c747d8ef1501" title=" " alt="" coords="232,33,413,74"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="185,34,216,38,216,43,184,39"/>
+<area shape="rect" id="Node000003" href="$class_database_service.html#a0b54b848c05f235a2db9975049757a5f" title=" " alt="" coords="707,13,858,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="660,23,692,23,692,28,660,28"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="413,40,445,37,446,42,414,46"/>
+</map>

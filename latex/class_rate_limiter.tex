@@ -1,0 +1,163 @@
+\doxysection{Rate\+Limiter Class Reference}
+\hypertarget{class_rate_limiter}{}\label{class_rate_limiter}\index{RateLimiter@{RateLimiter}}
+
+
+Collaboration diagram for Rate\+Limiter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{class_rate_limiter__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_rate_limiter_a5ab5532de3edc2aaebea51f606e552a9}{constructor}} (initial\+Capacity, multiplier, multiplier\+Millis, maximum\+Capacity, start\+Time\+Millis=Date.\+now())
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_rate_limiter_a90b056073ac6c2201cf77b73463df4aa}{try\+Make\+Request}} (num\+Operations, request\+Time\+Millis=Date.\+now())
+\item 
+\mbox{\hyperlink{class_rate_limiter_ae5af8f905edf8d5db3679ac0be9166b7}{get\+Next\+Request\+Delay\+Ms}} (num\+Operations, request\+Time\+Millis=Date.\+now())
+\item 
+\mbox{\hyperlink{class_rate_limiter_a8fd4a04f1a622ec9dfaec5db9b48dca2}{refill\+Tokens}} (request\+Time\+Millis)
+\item 
+\mbox{\hyperlink{class_rate_limiter_a5572a9a5c0d7c12b9fa7398101c22b2e}{calculate\+Capacity}} (request\+Time\+Millis)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_a}{A} helper that uses the Token \doxylink{class_bucket}{Bucket} algorithm to rate limit the number of operations that can be made in a second.
+
+Before a given request containing a number of operations can proceed, \doxylink{class_rate_limiter}{Rate\+Limiter} determines doing so stays under the provided rate limits. It can also determine how much time is required before a request can be made.
+
+\doxylink{class_rate_limiter}{Rate\+Limiter} can also implement a gradually increasing rate limit. This is used to enforce the 500/50/5 rule (\href{https://firebase.google.com/docs/firestore/best-practices\#ramping_up_traffic}{\texttt{ https\+://firebase.\+google.\+com/docs/firestore/best-\/practices\#ramping\+\_\+up\+\_\+traffic}}). 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_rate_limiter_a5572a9a5c0d7c12b9fa7398101c22b2e}\index{RateLimiter@{RateLimiter}!calculateCapacity@{calculateCapacity}}
+\index{calculateCapacity@{calculateCapacity}!RateLimiter@{RateLimiter}}
+\doxysubsubsection{\texorpdfstring{calculateCapacity()}{calculateCapacity()}}
+{\footnotesize\ttfamily \label{class_rate_limiter_a5572a9a5c0d7c12b9fa7398101c22b2e} 
+Rate\+Limiter\+::calculate\+Capacity (\begin{DoxyParamCaption}\item[{}]{request\+Time\+Millis}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Calculates the maximum capacity based on the provided date. 
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{rate-limiter_8js_a0a4d6a89916a48f4ba0e696e93dfc003}{assert}}, \mbox{\hyperlink{rate-limiter_8js_aa6fdd07b218f5ee1f103f79a4ad6d5f1}{logger\+\_\+1}}, and \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_rate_limiter_a5572a9a5c0d7c12b9fa7398101c22b2e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_rate_limiter_a5ab5532de3edc2aaebea51f606e552a9}\index{RateLimiter@{RateLimiter}!constructor@{constructor}}
+\index{constructor@{constructor}!RateLimiter@{RateLimiter}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_rate_limiter_a5ab5532de3edc2aaebea51f606e552a9} 
+Rate\+Limiter\+::constructor (\begin{DoxyParamCaption}\item[{}]{initial\+Capacity}{, }\item[{}]{multiplier}{, }\item[{}]{multiplier\+Millis}{, }\item[{}]{maximum\+Capacity}{, }\item[{}]{start\+Time\+Millis}{ = {\ttfamily Date.now()}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em initial\+Capacity} & Initial maximum number of operations per second. \\
+\hline
+{\em multiplier} & Rate by which to increase the capacity. \\
+\hline
+{\em multiplier\+Millis} & How often the capacity should increase in milliseconds. \\
+\hline
+{\em maximum\+Capacity} & Maximum number of allowed operations per second. The number of tokens added per second will never exceed this number. \\
+\hline
+{\em start\+Time\+Millis} & The starting time in epoch milliseconds that the rate limit is based on. Used for testing the limiter. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_rate_limiter_ae5af8f905edf8d5db3679ac0be9166b7}\index{RateLimiter@{RateLimiter}!getNextRequestDelayMs@{getNextRequestDelayMs}}
+\index{getNextRequestDelayMs@{getNextRequestDelayMs}!RateLimiter@{RateLimiter}}
+\doxysubsubsection{\texorpdfstring{getNextRequestDelayMs()}{getNextRequestDelayMs()}}
+{\footnotesize\ttfamily \label{class_rate_limiter_ae5af8f905edf8d5db3679ac0be9166b7} 
+Rate\+Limiter\+::get\+Next\+Request\+Delay\+Ms (\begin{DoxyParamCaption}\item[{}]{num\+Operations}{, }\item[{}]{request\+Time\+Millis}{ = {\ttfamily Date.now()}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Returns the number of ms needed to make a request with the provided number of operations. Returns 0 if the request can be made with the existing capacity. Returns -\/1 if the request is not possible with the current capacity.
+
+
+\begin{DoxyParams}{Parameters}
+{\em request\+Time\+Millis} & The time used to calculate the number of available tokens. Used for testing the limiter. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{class_rate_limiter_a5572a9a5c0d7c12b9fa7398101c22b2e}{calculate\+Capacity()}}, and \mbox{\hyperlink{class_rate_limiter_a8fd4a04f1a622ec9dfaec5db9b48dca2}{refill\+Tokens()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_rate_limiter_ae5af8f905edf8d5db3679ac0be9166b7_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_rate_limiter_a8fd4a04f1a622ec9dfaec5db9b48dca2}\index{RateLimiter@{RateLimiter}!refillTokens@{refillTokens}}
+\index{refillTokens@{refillTokens}!RateLimiter@{RateLimiter}}
+\doxysubsubsection{\texorpdfstring{refillTokens()}{refillTokens()}}
+{\footnotesize\ttfamily \label{class_rate_limiter_a8fd4a04f1a622ec9dfaec5db9b48dca2} 
+Rate\+Limiter\+::refill\+Tokens (\begin{DoxyParamCaption}\item[{}]{request\+Time\+Millis}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Refills the number of available tokens based on how much time has elapsed since the last time the tokens were refilled.
+
+
+\begin{DoxyParams}{Parameters}
+{\em request\+Time\+Millis} & The time used to calculate the number of available tokens. Used for testing the limiter. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{class_rate_limiter_a5572a9a5c0d7c12b9fa7398101c22b2e}{calculate\+Capacity()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_rate_limiter_a8fd4a04f1a622ec9dfaec5db9b48dca2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_rate_limiter_a8fd4a04f1a622ec9dfaec5db9b48dca2_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_rate_limiter_a90b056073ac6c2201cf77b73463df4aa}\index{RateLimiter@{RateLimiter}!tryMakeRequest@{tryMakeRequest}}
+\index{tryMakeRequest@{tryMakeRequest}!RateLimiter@{RateLimiter}}
+\doxysubsubsection{\texorpdfstring{tryMakeRequest()}{tryMakeRequest()}}
+{\footnotesize\ttfamily \label{class_rate_limiter_a90b056073ac6c2201cf77b73463df4aa} 
+Rate\+Limiter\+::try\+Make\+Request (\begin{DoxyParamCaption}\item[{}]{num\+Operations}{, }\item[{}]{request\+Time\+Millis}{ = {\ttfamily Date.now()}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Tries to make the number of operations. Returns true if the request succeeded and false otherwise.
+
+
+\begin{DoxyParams}{Parameters}
+{\em request\+Time\+Millis} & The time used to calculate the number of available tokens. Used for testing the limiter. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{class_rate_limiter_a8fd4a04f1a622ec9dfaec5db9b48dca2}{refill\+Tokens()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_rate_limiter_a90b056073ac6c2201cf77b73463df4aa_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/@google-\/cloud/firestore/build/src/\mbox{\hyperlink{rate-limiter_8js}{rate-\/limiter.\+js}}\end{DoxyCompactItemize}

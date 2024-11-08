@@ -1,0 +1,116 @@
+\doxysection{backend/node\+\_\+modules/@grpc/grpc-\/js/build/src/subchannel-\/pool.js File Reference}
+\hypertarget{subchannel-pool_8js}{}\label{subchannel-pool_8js}\index{backend/node\_modules/"@grpc/grpc-\/js/build/src/subchannel-\/pool.js@{backend/node\_modules/"@grpc/grpc-\/js/build/src/subchannel-\/pool.js}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_subchannel_pool}{Subchannel\+Pool}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{subchannel-pool_8js_a2648fca1d38e76c945357b90a93b1fc2}{get\+Subchannel\+Pool}} (\mbox{\hyperlink{ordered-map_8js_a57efe929cc6b44042891d05e15cec785}{global}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{subchannel-pool_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{subchannel-pool_8js_a88c92d1916ee3f543ca864004a2fa0e4}{get\+Subchannel\+Pool}} = exports.\+Subchannel\+Pool = void 0
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{subchannel-pool_8js_ac2e9db306145ff5da0d0504e0c5e7b17}{channel\+\_\+options\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./channel-\/options"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{subchannel-pool_8js_ad41fcb9ac932ac2712b2cba62cb95cc3}{subchannel\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./subchannel"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{subchannel-pool_8js_a46c0e253ac00dface70796e150cad858}{subchannel\+\_\+address\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./subchannel-\/address"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{subchannel-pool_8js_a5a0788f0fd3744f268bfd27b3acc9857}{uri\+\_\+parser\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./uri-\/parser"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{subchannel-pool_8js_a785b2f8635cf561e8e3eee3e02fe9ad2}{transport\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./transport"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{subchannel-pool_8js_afbe9497349df888c29f5e044dec427ea}{REF\+\_\+\+CHECK\+\_\+\+INTERVAL}} = 10000
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{subchannel-pool_8js_a5936d77e6dfffd7703d4b26067028f05}{Subchannel\+Pool}} = Subchannel\+Pool
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{subchannel-pool_8js_a60995d377d5c27ce26b15c12cc5850f4}{global\+Subchannel\+Pool}} = new \mbox{\hyperlink{class_subchannel_pool}{Subchannel\+Pool}}()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{subchannel-pool_8js_a2648fca1d38e76c945357b90a93b1fc2}\index{subchannel-\/pool.js@{subchannel-\/pool.js}!getSubchannelPool@{getSubchannelPool}}
+\index{getSubchannelPool@{getSubchannelPool}!subchannel-\/pool.js@{subchannel-\/pool.js}}
+\doxysubsubsection{\texorpdfstring{getSubchannelPool()}{getSubchannelPool()}}
+{\footnotesize\ttfamily \label{subchannel-pool_8js_a2648fca1d38e76c945357b90a93b1fc2} 
+function get\+Subchannel\+Pool (\begin{DoxyParamCaption}\item[{}]{global}{}\end{DoxyParamCaption})}
+
+Get either the global subchannel pool, or a new subchannel pool. 
+\begin{DoxyParams}{Parameters}
+{\em global} & \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{ordered-map_8js_a57efe929cc6b44042891d05e15cec785}{global}}, \mbox{\hyperlink{subchannel-pool_8js_a60995d377d5c27ce26b15c12cc5850f4}{global\+Subchannel\+Pool}}, and \mbox{\hyperlink{subchannel-pool_8js_a5936d77e6dfffd7703d4b26067028f05}{Subchannel\+Pool}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{subchannel-pool_8js_ac2e9db306145ff5da0d0504e0c5e7b17}\index{subchannel-\/pool.js@{subchannel-\/pool.js}!channel\_options\_1@{channel\_options\_1}}
+\index{channel\_options\_1@{channel\_options\_1}!subchannel-\/pool.js@{subchannel-\/pool.js}}
+\doxysubsubsection{\texorpdfstring{channel\_options\_1}{channel\_options\_1}}
+{\footnotesize\ttfamily \label{subchannel-pool_8js_ac2e9db306145ff5da0d0504e0c5e7b17} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} channel\+\_\+options\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./channel-\/options"{})}
+
+\Hypertarget{subchannel-pool_8js_a88c92d1916ee3f543ca864004a2fa0e4}\index{subchannel-\/pool.js@{subchannel-\/pool.js}!getSubchannelPool@{getSubchannelPool}}
+\index{getSubchannelPool@{getSubchannelPool}!subchannel-\/pool.js@{subchannel-\/pool.js}}
+\doxysubsubsection{\texorpdfstring{getSubchannelPool}{getSubchannelPool}}
+{\footnotesize\ttfamily \label{subchannel-pool_8js_a88c92d1916ee3f543ca864004a2fa0e4} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} get\+Subchannel\+Pool = exports.\+Subchannel\+Pool = void 0}
+
+\Hypertarget{subchannel-pool_8js_a60995d377d5c27ce26b15c12cc5850f4}\index{subchannel-\/pool.js@{subchannel-\/pool.js}!globalSubchannelPool@{globalSubchannelPool}}
+\index{globalSubchannelPool@{globalSubchannelPool}!subchannel-\/pool.js@{subchannel-\/pool.js}}
+\doxysubsubsection{\texorpdfstring{globalSubchannelPool}{globalSubchannelPool}}
+{\footnotesize\ttfamily \label{subchannel-pool_8js_a60995d377d5c27ce26b15c12cc5850f4} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} global\+Subchannel\+Pool = new \mbox{\hyperlink{class_subchannel_pool}{Subchannel\+Pool}}()}
+
+\Hypertarget{subchannel-pool_8js_afbe9497349df888c29f5e044dec427ea}\index{subchannel-\/pool.js@{subchannel-\/pool.js}!REF\_CHECK\_INTERVAL@{REF\_CHECK\_INTERVAL}}
+\index{REF\_CHECK\_INTERVAL@{REF\_CHECK\_INTERVAL}!subchannel-\/pool.js@{subchannel-\/pool.js}}
+\doxysubsubsection{\texorpdfstring{REF\_CHECK\_INTERVAL}{REF\_CHECK\_INTERVAL}}
+{\footnotesize\ttfamily \label{subchannel-pool_8js_afbe9497349df888c29f5e044dec427ea} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} REF\+\_\+\+CHECK\+\_\+\+INTERVAL = 10000}
+
+The amount of time in between checks for dropping subchannels that have no other references \Hypertarget{subchannel-pool_8js_ae2475e10618961c050dcba04e8c42331}\index{subchannel-\/pool.js@{subchannel-\/pool.js}!strict@{strict}}
+\index{strict@{strict}!subchannel-\/pool.js@{subchannel-\/pool.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{subchannel-pool_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+
+\Hypertarget{subchannel-pool_8js_ad41fcb9ac932ac2712b2cba62cb95cc3}\index{subchannel-\/pool.js@{subchannel-\/pool.js}!subchannel\_1@{subchannel\_1}}
+\index{subchannel\_1@{subchannel\_1}!subchannel-\/pool.js@{subchannel-\/pool.js}}
+\doxysubsubsection{\texorpdfstring{subchannel\_1}{subchannel\_1}}
+{\footnotesize\ttfamily \label{subchannel-pool_8js_ad41fcb9ac932ac2712b2cba62cb95cc3} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} subchannel\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./subchannel"{})}
+
+\Hypertarget{subchannel-pool_8js_a46c0e253ac00dface70796e150cad858}\index{subchannel-\/pool.js@{subchannel-\/pool.js}!subchannel\_address\_1@{subchannel\_address\_1}}
+\index{subchannel\_address\_1@{subchannel\_address\_1}!subchannel-\/pool.js@{subchannel-\/pool.js}}
+\doxysubsubsection{\texorpdfstring{subchannel\_address\_1}{subchannel\_address\_1}}
+{\footnotesize\ttfamily \label{subchannel-pool_8js_a46c0e253ac00dface70796e150cad858} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} subchannel\+\_\+address\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./subchannel-\/address"{})}
+
+\Hypertarget{subchannel-pool_8js_a5936d77e6dfffd7703d4b26067028f05}\index{subchannel-\/pool.js@{subchannel-\/pool.js}!SubchannelPool@{SubchannelPool}}
+\index{SubchannelPool@{SubchannelPool}!subchannel-\/pool.js@{subchannel-\/pool.js}}
+\doxysubsubsection{\texorpdfstring{SubchannelPool}{SubchannelPool}}
+{\footnotesize\ttfamily \label{subchannel-pool_8js_a5936d77e6dfffd7703d4b26067028f05} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} Subchannel\+Pool = Subchannel\+Pool}
+
+\Hypertarget{subchannel-pool_8js_a785b2f8635cf561e8e3eee3e02fe9ad2}\index{subchannel-\/pool.js@{subchannel-\/pool.js}!transport\_1@{transport\_1}}
+\index{transport\_1@{transport\_1}!subchannel-\/pool.js@{subchannel-\/pool.js}}
+\doxysubsubsection{\texorpdfstring{transport\_1}{transport\_1}}
+{\footnotesize\ttfamily \label{subchannel-pool_8js_a785b2f8635cf561e8e3eee3e02fe9ad2} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} transport\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./transport"{})}
+
+\Hypertarget{subchannel-pool_8js_a5a0788f0fd3744f268bfd27b3acc9857}\index{subchannel-\/pool.js@{subchannel-\/pool.js}!uri\_parser\_1@{uri\_parser\_1}}
+\index{uri\_parser\_1@{uri\_parser\_1}!subchannel-\/pool.js@{subchannel-\/pool.js}}
+\doxysubsubsection{\texorpdfstring{uri\_parser\_1}{uri\_parser\_1}}
+{\footnotesize\ttfamily \label{subchannel-pool_8js_a5a0788f0fd3744f268bfd27b3acc9857} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} uri\+\_\+parser\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./uri-\/parser"{})}
+

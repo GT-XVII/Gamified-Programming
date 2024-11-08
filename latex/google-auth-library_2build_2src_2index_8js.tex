@@ -1,0 +1,216 @@
+\doxysection{backend/node\+\_\+modules/google-\/auth-\/library/build/src/index.js File Reference}
+\hypertarget{google-auth-library_2build_2src_2index_8js}{}\label{google-auth-library_2build_2src_2index_8js}\index{backend/node\_modules/google-\/auth-\/library/build/src/index.js@{backend/node\_modules/google-\/auth-\/library/build/src/index.js}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{google-auth-library_2build_2src_2index_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{google-auth-library_2build_2src_2index_8js_a4a0115a1538b2e215c420f903f7267a0}{Google\+Auth}} = \mbox{\hyperlink{google-auth-library_2build_2src_2index_8js_ad26b69249342cfd7b4d6e0352d739857}{exports.\+auth}} = exports.\+Default\+Transporter = exports.\+Pass\+Through\+Client = exports.\+Executable\+Error = exports.\+Pluggable\+Auth\+Client = exports.\+Downscoped\+Client = exports.\+Base\+External\+Account\+Client = exports.\+External\+Account\+Client = exports.\+Identity\+Pool\+Client = exports.\+Aws\+Request\+Signer = exports.\+Aws\+Client = exports.\+User\+Refresh\+Client = exports.\+Login\+Ticket = \mbox{\hyperlink{oauth2client_8js_a09268424a0f9a22888267eb7653969f9}{exports.\+Client\+Authentication}} = exports.\+OAuth2\+Client = \mbox{\hyperlink{oauth2client_8js_aeb5828d58d5318d78b52b852ba76cb20}{exports.\+Code\+Challenge\+Method}} = exports.\+Impersonated = exports.\+JWT = exports.\+JWTAccess = exports.\+Id\+Token\+Client = exports.\+IAMAuth = \mbox{\hyperlink{env_detect_8js_aa2db0c95038f16b92319faabce4c0a9a}{exports.\+GCPEnv}} = exports.\+Compute = \mbox{\hyperlink{authclient_8js_a227980d26b88dfe1dae37e07d6572565}{exports.\+DEFAULT\+\_\+\+UNIVERSE}} = exports.\+Auth\+Client = \mbox{\hyperlink{cjs_2src_2resumable-upload_8js_ad8a74e81fb1c9bbddc4799d3e965d384}{exports.\+gaxios}} = \mbox{\hyperlink{computeclient_8js_a80bfde70eaf05b3be2dc49a2fd5e15d5}{exports.\+gcp\+Metadata}} = void 0
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{google-auth-library_2build_2src_2index_8js_a3350927a2dc1dba9756acba16de5687a}{googleauth\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./auth/googleauth"{})
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{google-auth-library_2build_2src_2index_8js_a3f89fc77f4c0fbbdb7aa6bafee64e8ca}{gcp\+Metadata}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}gcp-\/metadata"{})
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{google-auth-library_2build_2src_2index_8js_a422b48af99a2f4954bf1d4908395ae43}{gaxios}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}gaxios"{})
+\item 
+var \mbox{\hyperlink{google-auth-library_2build_2src_2index_8js_ae6be0684da5528279de6ee358c5ce124}{authclient\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./auth/authclient"{})
+\item 
+var \mbox{\hyperlink{google-auth-library_2build_2src_2index_8js_a0797324a2061002a1e827744e50e1f96}{computeclient\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./auth/computeclient"{})
+\item 
+var \mbox{\hyperlink{google-auth-library_2build_2src_2index_8js_a850cf9e0e429893b870b8a60881cb7f7}{env\+Detect\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./auth/env\+Detect"{})
+\item 
+var \mbox{\hyperlink{google-auth-library_2build_2src_2index_8js_a6c4a2f4b3a02fefe516fb82dce27bb3b}{iam\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./auth/iam"{})
+\item 
+var \mbox{\hyperlink{google-auth-library_2build_2src_2index_8js_a6ed81cfe1c9b3e314d57520ef46be273}{idtokenclient\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./auth/idtokenclient"{})
+\item 
+var \mbox{\hyperlink{google-auth-library_2build_2src_2index_8js_a0946d0203bebe2f044ee42bad3ff0569}{jwtaccess\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./auth/jwtaccess"{})
+\item 
+var \mbox{\hyperlink{google-auth-library_2build_2src_2index_8js_abfd16ea0ced278b9ebc26c494e6a8124}{jwtclient\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./auth/jwtclient"{})
+\item 
+var \mbox{\hyperlink{google-auth-library_2build_2src_2index_8js_ad1cd7161d8e2e8bf2ff809e484e8159a}{impersonated\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./auth/impersonated"{})
+\item 
+var \mbox{\hyperlink{google-auth-library_2build_2src_2index_8js_af51938e1b2b150847552267db60d4539}{oauth2client\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./auth/oauth2client"{})
+\item 
+var \mbox{\hyperlink{google-auth-library_2build_2src_2index_8js_a981388bbb2dca00afcc16ee31a8c6814}{loginticket\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./auth/loginticket"{})
+\item 
+var \mbox{\hyperlink{google-auth-library_2build_2src_2index_8js_a79e1e4daa47ff7095144b5c5a737722f}{refreshclient\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./auth/refreshclient"{})
+\item 
+var \mbox{\hyperlink{google-auth-library_2build_2src_2index_8js_ae920144d78fe35ec0bfc9a0578fc5865}{awsclient\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./auth/awsclient"{})
+\item 
+var \mbox{\hyperlink{google-auth-library_2build_2src_2index_8js_a1f8a636ab619ab4bc032e851e26b25ff}{awsrequestsigner\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./auth/awsrequestsigner"{})
+\item 
+var \mbox{\hyperlink{google-auth-library_2build_2src_2index_8js_ada3ba7790609787fd39f847daf11677b}{identitypoolclient\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./auth/identitypoolclient"{})
+\item 
+var \mbox{\hyperlink{google-auth-library_2build_2src_2index_8js_aaa984ebcdad990d90fee5d66ea2f655c}{externalclient\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./auth/externalclient"{})
+\item 
+var \mbox{\hyperlink{google-auth-library_2build_2src_2index_8js_adca2e7a207baf2c61f8b827f4c64a335}{baseexternalclient\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./auth/baseexternalclient"{})
+\item 
+var \mbox{\hyperlink{google-auth-library_2build_2src_2index_8js_aa59e8583f7eef2fc95a1a22979c0edce}{downscopedclient\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./auth/downscopedclient"{})
+\item 
+var \mbox{\hyperlink{google-auth-library_2build_2src_2index_8js_a0d63b3da977ca3c0f01720243c1c5e22}{pluggable\+\_\+auth\+\_\+client\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./auth/pluggable-\/\mbox{\hyperlink{google-auth-library_2build_2src_2index_8js_ad26b69249342cfd7b4d6e0352d739857}{auth}}-\/client"{})
+\item 
+var \mbox{\hyperlink{google-auth-library_2build_2src_2index_8js_a002f6fe00c4e864786544a1c2fd45703}{passthrough\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./auth/passthrough"{})
+\item 
+var \mbox{\hyperlink{google-auth-library_2build_2src_2index_8js_a275c0d254f69a224743673887261c122}{transporters\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./transporters"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{google-auth-library_2build_2src_2index_8js_ad26b69249342cfd7b4d6e0352d739857}{auth}} = new googleauth\+\_\+1.\+Google\+Auth()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{google-auth-library_2build_2src_2index_8js_ad26b69249342cfd7b4d6e0352d739857}\index{index.js@{index.js}!auth@{auth}}
+\index{auth@{auth}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{auth}{auth}}
+{\footnotesize\ttfamily \label{google-auth-library_2build_2src_2index_8js_ad26b69249342cfd7b4d6e0352d739857} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} auth = new googleauth\+\_\+1.\+Google\+Auth()}
+
+\Hypertarget{google-auth-library_2build_2src_2index_8js_ae6be0684da5528279de6ee358c5ce124}\index{index.js@{index.js}!authclient\_1@{authclient\_1}}
+\index{authclient\_1@{authclient\_1}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{authclient\_1}{authclient\_1}}
+{\footnotesize\ttfamily \label{google-auth-library_2build_2src_2index_8js_ae6be0684da5528279de6ee358c5ce124} 
+var authclient\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./auth/authclient"{})}
+
+\Hypertarget{google-auth-library_2build_2src_2index_8js_ae920144d78fe35ec0bfc9a0578fc5865}\index{index.js@{index.js}!awsclient\_1@{awsclient\_1}}
+\index{awsclient\_1@{awsclient\_1}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{awsclient\_1}{awsclient\_1}}
+{\footnotesize\ttfamily \label{google-auth-library_2build_2src_2index_8js_ae920144d78fe35ec0bfc9a0578fc5865} 
+var awsclient\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./auth/awsclient"{})}
+
+\Hypertarget{google-auth-library_2build_2src_2index_8js_a1f8a636ab619ab4bc032e851e26b25ff}\index{index.js@{index.js}!awsrequestsigner\_1@{awsrequestsigner\_1}}
+\index{awsrequestsigner\_1@{awsrequestsigner\_1}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{awsrequestsigner\_1}{awsrequestsigner\_1}}
+{\footnotesize\ttfamily \label{google-auth-library_2build_2src_2index_8js_a1f8a636ab619ab4bc032e851e26b25ff} 
+var awsrequestsigner\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./auth/awsrequestsigner"{})}
+
+\Hypertarget{google-auth-library_2build_2src_2index_8js_adca2e7a207baf2c61f8b827f4c64a335}\index{index.js@{index.js}!baseexternalclient\_1@{baseexternalclient\_1}}
+\index{baseexternalclient\_1@{baseexternalclient\_1}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{baseexternalclient\_1}{baseexternalclient\_1}}
+{\footnotesize\ttfamily \label{google-auth-library_2build_2src_2index_8js_adca2e7a207baf2c61f8b827f4c64a335} 
+var baseexternalclient\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./auth/baseexternalclient"{})}
+
+\Hypertarget{google-auth-library_2build_2src_2index_8js_a0797324a2061002a1e827744e50e1f96}\index{index.js@{index.js}!computeclient\_1@{computeclient\_1}}
+\index{computeclient\_1@{computeclient\_1}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{computeclient\_1}{computeclient\_1}}
+{\footnotesize\ttfamily \label{google-auth-library_2build_2src_2index_8js_a0797324a2061002a1e827744e50e1f96} 
+var computeclient\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./auth/computeclient"{})}
+
+\Hypertarget{google-auth-library_2build_2src_2index_8js_aa59e8583f7eef2fc95a1a22979c0edce}\index{index.js@{index.js}!downscopedclient\_1@{downscopedclient\_1}}
+\index{downscopedclient\_1@{downscopedclient\_1}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{downscopedclient\_1}{downscopedclient\_1}}
+{\footnotesize\ttfamily \label{google-auth-library_2build_2src_2index_8js_aa59e8583f7eef2fc95a1a22979c0edce} 
+var downscopedclient\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./auth/downscopedclient"{})}
+
+\Hypertarget{google-auth-library_2build_2src_2index_8js_a850cf9e0e429893b870b8a60881cb7f7}\index{index.js@{index.js}!envDetect\_1@{envDetect\_1}}
+\index{envDetect\_1@{envDetect\_1}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{envDetect\_1}{envDetect\_1}}
+{\footnotesize\ttfamily \label{google-auth-library_2build_2src_2index_8js_a850cf9e0e429893b870b8a60881cb7f7} 
+var env\+Detect\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./auth/env\+Detect"{})}
+
+\Hypertarget{google-auth-library_2build_2src_2index_8js_aaa984ebcdad990d90fee5d66ea2f655c}\index{index.js@{index.js}!externalclient\_1@{externalclient\_1}}
+\index{externalclient\_1@{externalclient\_1}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{externalclient\_1}{externalclient\_1}}
+{\footnotesize\ttfamily \label{google-auth-library_2build_2src_2index_8js_aaa984ebcdad990d90fee5d66ea2f655c} 
+var externalclient\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./auth/externalclient"{})}
+
+\Hypertarget{google-auth-library_2build_2src_2index_8js_a422b48af99a2f4954bf1d4908395ae43}\index{index.js@{index.js}!gaxios@{gaxios}}
+\index{gaxios@{gaxios}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{gaxios}{gaxios}}
+{\footnotesize\ttfamily \label{google-auth-library_2build_2src_2index_8js_a422b48af99a2f4954bf1d4908395ae43} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} gaxios = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}gaxios"{})}
+
+\Hypertarget{google-auth-library_2build_2src_2index_8js_a3f89fc77f4c0fbbdb7aa6bafee64e8ca}\index{index.js@{index.js}!gcpMetadata@{gcpMetadata}}
+\index{gcpMetadata@{gcpMetadata}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{gcpMetadata}{gcpMetadata}}
+{\footnotesize\ttfamily \label{google-auth-library_2build_2src_2index_8js_a3f89fc77f4c0fbbdb7aa6bafee64e8ca} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} gcp\+Metadata = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}gcp-\/metadata"{})}
+
+\Hypertarget{google-auth-library_2build_2src_2index_8js_a4a0115a1538b2e215c420f903f7267a0}\index{index.js@{index.js}!GoogleAuth@{GoogleAuth}}
+\index{GoogleAuth@{GoogleAuth}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{GoogleAuth}{GoogleAuth}}
+{\footnotesize\ttfamily \label{google-auth-library_2build_2src_2index_8js_a4a0115a1538b2e215c420f903f7267a0} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} Google\+Auth = \mbox{\hyperlink{google-auth-library_2build_2src_2index_8js_ad26b69249342cfd7b4d6e0352d739857}{exports.\+auth}} = exports.\+Default\+Transporter = exports.\+Pass\+Through\+Client = exports.\+Executable\+Error = exports.\+Pluggable\+Auth\+Client = exports.\+Downscoped\+Client = exports.\+Base\+External\+Account\+Client = exports.\+External\+Account\+Client = exports.\+Identity\+Pool\+Client = exports.\+Aws\+Request\+Signer = exports.\+Aws\+Client = exports.\+User\+Refresh\+Client = exports.\+Login\+Ticket = \mbox{\hyperlink{oauth2client_8js_a09268424a0f9a22888267eb7653969f9}{exports.\+Client\+Authentication}} = exports.\+OAuth2\+Client = \mbox{\hyperlink{oauth2client_8js_aeb5828d58d5318d78b52b852ba76cb20}{exports.\+Code\+Challenge\+Method}} = exports.\+Impersonated = exports.\+JWT = exports.\+JWTAccess = exports.\+Id\+Token\+Client = exports.\+IAMAuth = \mbox{\hyperlink{env_detect_8js_aa2db0c95038f16b92319faabce4c0a9a}{exports.\+GCPEnv}} = exports.\+Compute = \mbox{\hyperlink{authclient_8js_a227980d26b88dfe1dae37e07d6572565}{exports.\+DEFAULT\+\_\+\+UNIVERSE}} = exports.\+Auth\+Client = \mbox{\hyperlink{cjs_2src_2resumable-upload_8js_ad8a74e81fb1c9bbddc4799d3e965d384}{exports.\+gaxios}} = \mbox{\hyperlink{computeclient_8js_a80bfde70eaf05b3be2dc49a2fd5e15d5}{exports.\+gcp\+Metadata}} = void 0}
+
+\Hypertarget{google-auth-library_2build_2src_2index_8js_a3350927a2dc1dba9756acba16de5687a}\index{index.js@{index.js}!googleauth\_1@{googleauth\_1}}
+\index{googleauth\_1@{googleauth\_1}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{googleauth\_1}{googleauth\_1}}
+{\footnotesize\ttfamily \label{google-auth-library_2build_2src_2index_8js_a3350927a2dc1dba9756acba16de5687a} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} googleauth\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./auth/googleauth"{})}
+
+\Hypertarget{google-auth-library_2build_2src_2index_8js_a6c4a2f4b3a02fefe516fb82dce27bb3b}\index{index.js@{index.js}!iam\_1@{iam\_1}}
+\index{iam\_1@{iam\_1}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{iam\_1}{iam\_1}}
+{\footnotesize\ttfamily \label{google-auth-library_2build_2src_2index_8js_a6c4a2f4b3a02fefe516fb82dce27bb3b} 
+var iam\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./auth/iam"{})}
+
+\Hypertarget{google-auth-library_2build_2src_2index_8js_ada3ba7790609787fd39f847daf11677b}\index{index.js@{index.js}!identitypoolclient\_1@{identitypoolclient\_1}}
+\index{identitypoolclient\_1@{identitypoolclient\_1}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{identitypoolclient\_1}{identitypoolclient\_1}}
+{\footnotesize\ttfamily \label{google-auth-library_2build_2src_2index_8js_ada3ba7790609787fd39f847daf11677b} 
+var identitypoolclient\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./auth/identitypoolclient"{})}
+
+\Hypertarget{google-auth-library_2build_2src_2index_8js_a6ed81cfe1c9b3e314d57520ef46be273}\index{index.js@{index.js}!idtokenclient\_1@{idtokenclient\_1}}
+\index{idtokenclient\_1@{idtokenclient\_1}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{idtokenclient\_1}{idtokenclient\_1}}
+{\footnotesize\ttfamily \label{google-auth-library_2build_2src_2index_8js_a6ed81cfe1c9b3e314d57520ef46be273} 
+var idtokenclient\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./auth/idtokenclient"{})}
+
+\Hypertarget{google-auth-library_2build_2src_2index_8js_ad1cd7161d8e2e8bf2ff809e484e8159a}\index{index.js@{index.js}!impersonated\_1@{impersonated\_1}}
+\index{impersonated\_1@{impersonated\_1}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{impersonated\_1}{impersonated\_1}}
+{\footnotesize\ttfamily \label{google-auth-library_2build_2src_2index_8js_ad1cd7161d8e2e8bf2ff809e484e8159a} 
+var impersonated\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./auth/impersonated"{})}
+
+\Hypertarget{google-auth-library_2build_2src_2index_8js_a0946d0203bebe2f044ee42bad3ff0569}\index{index.js@{index.js}!jwtaccess\_1@{jwtaccess\_1}}
+\index{jwtaccess\_1@{jwtaccess\_1}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{jwtaccess\_1}{jwtaccess\_1}}
+{\footnotesize\ttfamily \label{google-auth-library_2build_2src_2index_8js_a0946d0203bebe2f044ee42bad3ff0569} 
+var jwtaccess\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./auth/jwtaccess"{})}
+
+\Hypertarget{google-auth-library_2build_2src_2index_8js_abfd16ea0ced278b9ebc26c494e6a8124}\index{index.js@{index.js}!jwtclient\_1@{jwtclient\_1}}
+\index{jwtclient\_1@{jwtclient\_1}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{jwtclient\_1}{jwtclient\_1}}
+{\footnotesize\ttfamily \label{google-auth-library_2build_2src_2index_8js_abfd16ea0ced278b9ebc26c494e6a8124} 
+var jwtclient\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./auth/jwtclient"{})}
+
+\Hypertarget{google-auth-library_2build_2src_2index_8js_a981388bbb2dca00afcc16ee31a8c6814}\index{index.js@{index.js}!loginticket\_1@{loginticket\_1}}
+\index{loginticket\_1@{loginticket\_1}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{loginticket\_1}{loginticket\_1}}
+{\footnotesize\ttfamily \label{google-auth-library_2build_2src_2index_8js_a981388bbb2dca00afcc16ee31a8c6814} 
+var loginticket\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./auth/loginticket"{})}
+
+\Hypertarget{google-auth-library_2build_2src_2index_8js_af51938e1b2b150847552267db60d4539}\index{index.js@{index.js}!oauth2client\_1@{oauth2client\_1}}
+\index{oauth2client\_1@{oauth2client\_1}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{oauth2client\_1}{oauth2client\_1}}
+{\footnotesize\ttfamily \label{google-auth-library_2build_2src_2index_8js_af51938e1b2b150847552267db60d4539} 
+var oauth2client\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./auth/oauth2client"{})}
+
+\Hypertarget{google-auth-library_2build_2src_2index_8js_a002f6fe00c4e864786544a1c2fd45703}\index{index.js@{index.js}!passthrough\_1@{passthrough\_1}}
+\index{passthrough\_1@{passthrough\_1}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{passthrough\_1}{passthrough\_1}}
+{\footnotesize\ttfamily \label{google-auth-library_2build_2src_2index_8js_a002f6fe00c4e864786544a1c2fd45703} 
+var passthrough\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./auth/passthrough"{})}
+
+\Hypertarget{google-auth-library_2build_2src_2index_8js_a0d63b3da977ca3c0f01720243c1c5e22}\index{index.js@{index.js}!pluggable\_auth\_client\_1@{pluggable\_auth\_client\_1}}
+\index{pluggable\_auth\_client\_1@{pluggable\_auth\_client\_1}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{pluggable\_auth\_client\_1}{pluggable\_auth\_client\_1}}
+{\footnotesize\ttfamily \label{google-auth-library_2build_2src_2index_8js_a0d63b3da977ca3c0f01720243c1c5e22} 
+var pluggable\+\_\+auth\+\_\+client\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./auth/pluggable-\/\mbox{\hyperlink{google-auth-library_2build_2src_2index_8js_ad26b69249342cfd7b4d6e0352d739857}{auth}}-\/client"{})}
+
+\Hypertarget{google-auth-library_2build_2src_2index_8js_a79e1e4daa47ff7095144b5c5a737722f}\index{index.js@{index.js}!refreshclient\_1@{refreshclient\_1}}
+\index{refreshclient\_1@{refreshclient\_1}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{refreshclient\_1}{refreshclient\_1}}
+{\footnotesize\ttfamily \label{google-auth-library_2build_2src_2index_8js_a79e1e4daa47ff7095144b5c5a737722f} 
+var refreshclient\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./auth/refreshclient"{})}
+
+\Hypertarget{google-auth-library_2build_2src_2index_8js_ae2475e10618961c050dcba04e8c42331}\index{index.js@{index.js}!strict@{strict}}
+\index{strict@{strict}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{google-auth-library_2build_2src_2index_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+
+\Hypertarget{google-auth-library_2build_2src_2index_8js_a275c0d254f69a224743673887261c122}\index{index.js@{index.js}!transporters\_1@{transporters\_1}}
+\index{transporters\_1@{transporters\_1}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{transporters\_1}{transporters\_1}}
+{\footnotesize\ttfamily \label{google-auth-library_2build_2src_2index_8js_a275c0d254f69a224743673887261c122} 
+var transporters\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./transporters"{})}
+

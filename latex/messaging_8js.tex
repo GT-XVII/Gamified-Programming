@@ -1,0 +1,320 @@
+\doxysection{backend/node\+\_\+modules/firebase-\/admin/lib/messaging/messaging.js File Reference}
+\hypertarget{messaging_8js}{}\label{messaging_8js}\index{backend/node\_modules/firebase-\/admin/lib/messaging/messaging.js@{backend/node\_modules/firebase-\/admin/lib/messaging/messaging.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{messaging_8js_a8b4f4727957a4e2391373e4243e6a343}{map\+Raw\+Response\+To\+Devices\+Response}} (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ac70ac40ef8199c59316b35022dd21914}{response}})
+\item 
+function \mbox{\hyperlink{messaging_8js_a8820999e7b6aa4317d391395210709bb}{map\+Raw\+Response\+To\+Device\+Group\+Response}} (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ac70ac40ef8199c59316b35022dd21914}{response}})
+\item 
+function \mbox{\hyperlink{messaging_8js_a8186a2a3bb3ecec4cd6741b7e79a62eb}{map\+Raw\+Response\+To\+Topic\+Management\+Response}} (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ac70ac40ef8199c59316b35022dd21914}{response}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{messaging_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{messaging_8js_a2fb83dd9ae8aa2f6e166272953757d72}{Messaging}} = void 0
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{messaging_8js_a3c878464c635c5cd2043d7e066bb187b}{deep\+\_\+copy\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/deep-\/copy"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{messaging_8js_af1a99a3ff1a35c114bdd06cc7252beb6}{error\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/error"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{messaging_8js_a022e926a40defc4294368e708a7e2372}{utils}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{messaging_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/validator"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{messaging_8js_ae95f6e02baf7021a53f061b66227edbb}{messaging\+\_\+internal\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./messaging-\/internal"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{messaging_8js_a5afa5471fc689335221fb2abfa3d13b9}{messaging\+\_\+api\+\_\+request\+\_\+internal\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./messaging-\/\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}}-\/\mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}}-\/internal"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{messaging_8js_a73dd1e6f0bc0a0234576ddef2bbe0452}{api\+\_\+request\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}}-\/request"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{messaging_8js_a0c24ba663f3def19768f8e2751f7db74}{FCM\+\_\+\+SEND\+\_\+\+HOST}} = \textquotesingle{}fcm.\+googleapis.\+com\textquotesingle{}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{messaging_8js_a514fdc8c858f8cd012a8c886955c4119}{FCM\+\_\+\+SEND\+\_\+\+PATH}} = \textquotesingle{}/fcm/\mbox{\hyperlink{response_8js_a88d7310f8a18b3e16f4020168641b86a}{send}}\textquotesingle{}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{messaging_8js_a364c394ff9b5f5159df1cbcca3a2b3b0}{FCM\+\_\+\+TOPIC\+\_\+\+MANAGEMENT\+\_\+\+HOST}} = \textquotesingle{}iid.\+googleapis.\+com\textquotesingle{}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{messaging_8js_a1ab1a2eca5962b16a4f4b4d285f01703}{FCM\+\_\+\+TOPIC\+\_\+\+MANAGEMENT\+\_\+\+ADD\+\_\+\+PATH}} = \textquotesingle{}/iid/v1\+:batch\+Add\textquotesingle{}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{messaging_8js_aad144fd67bd4d363dc818563b0ddb833}{FCM\+\_\+\+TOPIC\+\_\+\+MANAGEMENT\+\_\+\+REMOVE\+\_\+\+PATH}} = \textquotesingle{}/iid/v1\+:batch\+Remove\textquotesingle{}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{messaging_8js_a6962641d3761166b9e4f0b8bca24ceee}{FCM\+\_\+\+MAX\+\_\+\+BATCH\+\_\+\+SIZE}} = 500
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{messaging_8js_a9353aa0b29397ce6403ec4e46165a15f}{CAMELCASED\+\_\+\+NOTIFICATION\+\_\+\+PAYLOAD\+\_\+\+KEYS\+\_\+\+MAP}}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{messaging_8js_aad9c5f2b56dafc6ce1e93c170e87459d}{CAMELCASE\+\_\+\+OPTIONS\+\_\+\+KEYS\+\_\+\+MAP}}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{messaging_8js_a6a27bb22e53bf507a04fb0ae8aff3dde}{MESSAGING\+\_\+\+DEVICE\+\_\+\+RESULT\+\_\+\+KEYS\+\_\+\+MAP}}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{messaging_8js_aafbcf2a13f85d81013093b859bec03fa}{MESSAGING\+\_\+\+DEVICES\+\_\+\+RESPONSE\+\_\+\+KEYS\+\_\+\+MAP}}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{messaging_8js_a4ce37102f80519b43f6a04960450ffbd}{MESSAGING\+\_\+\+DEVICE\+\_\+\+GROUP\+\_\+\+RESPONSE\+\_\+\+KEYS\+\_\+\+MAP}}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{messaging_8js_a526d446be66812e340da4a99a5087ae2}{MESSAGING\+\_\+\+TOPIC\+\_\+\+RESPONSE\+\_\+\+KEYS\+\_\+\+MAP}}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{messaging_8js_aaa4ec600a68be400f4c2769cd226e776}{MESSAGING\+\_\+\+CONDITION\+\_\+\+RESPONSE\+\_\+\+KEYS\+\_\+\+MAP}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{messaging_8js_a8820999e7b6aa4317d391395210709bb}\index{messaging.js@{messaging.js}!mapRawResponseToDeviceGroupResponse@{mapRawResponseToDeviceGroupResponse}}
+\index{mapRawResponseToDeviceGroupResponse@{mapRawResponseToDeviceGroupResponse}!messaging.js@{messaging.js}}
+\doxysubsubsection{\texorpdfstring{mapRawResponseToDeviceGroupResponse()}{mapRawResponseToDeviceGroupResponse()}}
+{\footnotesize\ttfamily \label{messaging_8js_a8820999e7b6aa4317d391395210709bb} 
+function map\+Raw\+Response\+To\+Device\+Group\+Response (\begin{DoxyParamCaption}\item[{}]{response}{}\end{DoxyParamCaption})}
+
+Maps a raw FCM server response to a {\ttfamily Messaging\+Device\+Group\+Response} object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em response} & -\/ The raw FCM server response to map.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The mapped {\ttfamily Messaging\+Device\+Group\+Response} object. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{messaging_8js_a4ce37102f80519b43f6a04960450ffbd}{MESSAGING\+\_\+\+DEVICE\+\_\+\+GROUP\+\_\+\+RESPONSE\+\_\+\+KEYS\+\_\+\+MAP}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ac70ac40ef8199c59316b35022dd21914}{response}}, and \mbox{\hyperlink{messaging_8js_a022e926a40defc4294368e708a7e2372}{utils}}.
+
+\Hypertarget{messaging_8js_a8b4f4727957a4e2391373e4243e6a343}\index{messaging.js@{messaging.js}!mapRawResponseToDevicesResponse@{mapRawResponseToDevicesResponse}}
+\index{mapRawResponseToDevicesResponse@{mapRawResponseToDevicesResponse}!messaging.js@{messaging.js}}
+\doxysubsubsection{\texorpdfstring{mapRawResponseToDevicesResponse()}{mapRawResponseToDevicesResponse()}}
+{\footnotesize\ttfamily \label{messaging_8js_a8b4f4727957a4e2391373e4243e6a343} 
+function map\+Raw\+Response\+To\+Devices\+Response (\begin{DoxyParamCaption}\item[{}]{response}{}\end{DoxyParamCaption})}
+
+Maps a raw FCM server response to a {\ttfamily Messaging\+Devices\+Response} object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em response} & -\/ The raw FCM server response to map.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The mapped {\ttfamily Messaging\+Devices\+Response} object. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{messaging_8js_af1a99a3ff1a35c114bdd06cc7252beb6}{error\+\_\+1}}, \mbox{\hyperlink{messaging_8js_a6a27bb22e53bf507a04fb0ae8aff3dde}{MESSAGING\+\_\+\+DEVICE\+\_\+\+RESULT\+\_\+\+KEYS\+\_\+\+MAP}}, \mbox{\hyperlink{messaging_8js_aafbcf2a13f85d81013093b859bec03fa}{MESSAGING\+\_\+\+DEVICES\+\_\+\+RESPONSE\+\_\+\+KEYS\+\_\+\+MAP}}, \mbox{\hyperlink{src_2util_2minimal_8js_aa3317850982dbc974f6f2272837e911a}{new\+Error}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ac70ac40ef8199c59316b35022dd21914}{response}}, \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}, and \mbox{\hyperlink{messaging_8js_a022e926a40defc4294368e708a7e2372}{utils}}.
+
+\Hypertarget{messaging_8js_a8186a2a3bb3ecec4cd6741b7e79a62eb}\index{messaging.js@{messaging.js}!mapRawResponseToTopicManagementResponse@{mapRawResponseToTopicManagementResponse}}
+\index{mapRawResponseToTopicManagementResponse@{mapRawResponseToTopicManagementResponse}!messaging.js@{messaging.js}}
+\doxysubsubsection{\texorpdfstring{mapRawResponseToTopicManagementResponse()}{mapRawResponseToTopicManagementResponse()}}
+{\footnotesize\ttfamily \label{messaging_8js_a8186a2a3bb3ecec4cd6741b7e79a62eb} 
+function map\+Raw\+Response\+To\+Topic\+Management\+Response (\begin{DoxyParamCaption}\item[{}]{response}{}\end{DoxyParamCaption})}
+
+Maps a raw FCM server response to a {\ttfamily Messaging\+Topic\+Management\+Response} object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{object\}} & response The raw FCM server response to map.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Messaging\+Topic\+Management\+Response\} The mapped {\ttfamily Messaging\+Topic\+Management\+Response} object. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}}, \mbox{\hyperlink{messaging_8js_af1a99a3ff1a35c114bdd06cc7252beb6}{error\+\_\+1}}, \mbox{\hyperlink{jose_2dist_2browser_2index_8js_ab343513764f2ea39eb6381949385cc3e}{errors}}, \mbox{\hyperlink{cookie_2index_8js_a0ac000318c33f03e412baff8df5b2513}{index}}, \mbox{\hyperlink{src_2util_2minimal_8js_aa3317850982dbc974f6f2272837e911a}{new\+Error}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ac70ac40ef8199c59316b35022dd21914}{response}}, \mbox{\hyperlink{lodash_2core_8js_a348c112a244660a2f280cda892658c24}{result}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{messaging_8js_a73dd1e6f0bc0a0234576ddef2bbe0452}\index{messaging.js@{messaging.js}!api\_request\_1@{api\_request\_1}}
+\index{api\_request\_1@{api\_request\_1}!messaging.js@{messaging.js}}
+\doxysubsubsection{\texorpdfstring{api\_request\_1}{api\_request\_1}}
+{\footnotesize\ttfamily \label{messaging_8js_a73dd1e6f0bc0a0234576ddef2bbe0452} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} api\+\_\+request\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}}-\/request"{})}
+
+\Hypertarget{messaging_8js_aad9c5f2b56dafc6ce1e93c170e87459d}\index{messaging.js@{messaging.js}!CAMELCASE\_OPTIONS\_KEYS\_MAP@{CAMELCASE\_OPTIONS\_KEYS\_MAP}}
+\index{CAMELCASE\_OPTIONS\_KEYS\_MAP@{CAMELCASE\_OPTIONS\_KEYS\_MAP}!messaging.js@{messaging.js}}
+\doxysubsubsection{\texorpdfstring{CAMELCASE\_OPTIONS\_KEYS\_MAP}{CAMELCASE\_OPTIONS\_KEYS\_MAP}}
+{\footnotesize\ttfamily \label{messaging_8js_aad9c5f2b56dafc6ce1e93c170e87459d} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} CAMELCASE\+\_\+\+OPTIONS\+\_\+\+KEYS\+\_\+\+MAP}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \ \ dryRun:\ \textcolor{stringliteral}{'dry\_run'},}
+\DoxyCodeLine{\ \ \ \ timeToLive:\ \textcolor{stringliteral}{'time\_to\_live'},}
+\DoxyCodeLine{\ \ \ \ collapseKey:\ \textcolor{stringliteral}{'collapse\_key'},}
+\DoxyCodeLine{\ \ \ \ mutableContent:\ \textcolor{stringliteral}{'mutable\_content'},}
+\DoxyCodeLine{\ \ \ \ contentAvailable:\ \textcolor{stringliteral}{'content\_available'},}
+\DoxyCodeLine{\ \ \ \ restrictedPackageName:\ \textcolor{stringliteral}{'restricted\_package\_name'},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{messaging_8js_a9353aa0b29397ce6403ec4e46165a15f}\index{messaging.js@{messaging.js}!CAMELCASED\_NOTIFICATION\_PAYLOAD\_KEYS\_MAP@{CAMELCASED\_NOTIFICATION\_PAYLOAD\_KEYS\_MAP}}
+\index{CAMELCASED\_NOTIFICATION\_PAYLOAD\_KEYS\_MAP@{CAMELCASED\_NOTIFICATION\_PAYLOAD\_KEYS\_MAP}!messaging.js@{messaging.js}}
+\doxysubsubsection{\texorpdfstring{CAMELCASED\_NOTIFICATION\_PAYLOAD\_KEYS\_MAP}{CAMELCASED\_NOTIFICATION\_PAYLOAD\_KEYS\_MAP}}
+{\footnotesize\ttfamily \label{messaging_8js_a9353aa0b29397ce6403ec4e46165a15f} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} CAMELCASED\+\_\+\+NOTIFICATION\+\_\+\+PAYLOAD\+\_\+\+KEYS\+\_\+\+MAP}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \ \ bodyLocArgs:\ \textcolor{stringliteral}{'body\_loc\_args'},}
+\DoxyCodeLine{\ \ \ \ bodyLocKey:\ \textcolor{stringliteral}{'body\_loc\_key'},}
+\DoxyCodeLine{\ \ \ \ clickAction:\ \textcolor{stringliteral}{'click\_action'},}
+\DoxyCodeLine{\ \ \ \ titleLocArgs:\ \textcolor{stringliteral}{'title\_loc\_args'},}
+\DoxyCodeLine{\ \ \ \ titleLocKey:\ \textcolor{stringliteral}{'title\_loc\_key'},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{messaging_8js_a3c878464c635c5cd2043d7e066bb187b}\index{messaging.js@{messaging.js}!deep\_copy\_1@{deep\_copy\_1}}
+\index{deep\_copy\_1@{deep\_copy\_1}!messaging.js@{messaging.js}}
+\doxysubsubsection{\texorpdfstring{deep\_copy\_1}{deep\_copy\_1}}
+{\footnotesize\ttfamily \label{messaging_8js_a3c878464c635c5cd2043d7e066bb187b} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} deep\+\_\+copy\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/deep-\/copy"{})}
+
+\Hypertarget{messaging_8js_af1a99a3ff1a35c114bdd06cc7252beb6}\index{messaging.js@{messaging.js}!error\_1@{error\_1}}
+\index{error\_1@{error\_1}!messaging.js@{messaging.js}}
+\doxysubsubsection{\texorpdfstring{error\_1}{error\_1}}
+{\footnotesize\ttfamily \label{messaging_8js_af1a99a3ff1a35c114bdd06cc7252beb6} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} error\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/error"{})}
+
+\Hypertarget{messaging_8js_a6962641d3761166b9e4f0b8bca24ceee}\index{messaging.js@{messaging.js}!FCM\_MAX\_BATCH\_SIZE@{FCM\_MAX\_BATCH\_SIZE}}
+\index{FCM\_MAX\_BATCH\_SIZE@{FCM\_MAX\_BATCH\_SIZE}!messaging.js@{messaging.js}}
+\doxysubsubsection{\texorpdfstring{FCM\_MAX\_BATCH\_SIZE}{FCM\_MAX\_BATCH\_SIZE}}
+{\footnotesize\ttfamily \label{messaging_8js_a6962641d3761166b9e4f0b8bca24ceee} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} FCM\+\_\+\+MAX\+\_\+\+BATCH\+\_\+\+SIZE = 500}
+
+\Hypertarget{messaging_8js_a0c24ba663f3def19768f8e2751f7db74}\index{messaging.js@{messaging.js}!FCM\_SEND\_HOST@{FCM\_SEND\_HOST}}
+\index{FCM\_SEND\_HOST@{FCM\_SEND\_HOST}!messaging.js@{messaging.js}}
+\doxysubsubsection{\texorpdfstring{FCM\_SEND\_HOST}{FCM\_SEND\_HOST}}
+{\footnotesize\ttfamily \label{messaging_8js_a0c24ba663f3def19768f8e2751f7db74} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} FCM\+\_\+\+SEND\+\_\+\+HOST = \textquotesingle{}fcm.\+googleapis.\+com\textquotesingle{}}
+
+\Hypertarget{messaging_8js_a514fdc8c858f8cd012a8c886955c4119}\index{messaging.js@{messaging.js}!FCM\_SEND\_PATH@{FCM\_SEND\_PATH}}
+\index{FCM\_SEND\_PATH@{FCM\_SEND\_PATH}!messaging.js@{messaging.js}}
+\doxysubsubsection{\texorpdfstring{FCM\_SEND\_PATH}{FCM\_SEND\_PATH}}
+{\footnotesize\ttfamily \label{messaging_8js_a514fdc8c858f8cd012a8c886955c4119} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} FCM\+\_\+\+SEND\+\_\+\+PATH = \textquotesingle{}/fcm/\mbox{\hyperlink{response_8js_a88d7310f8a18b3e16f4020168641b86a}{send}}\textquotesingle{}}
+
+\Hypertarget{messaging_8js_a1ab1a2eca5962b16a4f4b4d285f01703}\index{messaging.js@{messaging.js}!FCM\_TOPIC\_MANAGEMENT\_ADD\_PATH@{FCM\_TOPIC\_MANAGEMENT\_ADD\_PATH}}
+\index{FCM\_TOPIC\_MANAGEMENT\_ADD\_PATH@{FCM\_TOPIC\_MANAGEMENT\_ADD\_PATH}!messaging.js@{messaging.js}}
+\doxysubsubsection{\texorpdfstring{FCM\_TOPIC\_MANAGEMENT\_ADD\_PATH}{FCM\_TOPIC\_MANAGEMENT\_ADD\_PATH}}
+{\footnotesize\ttfamily \label{messaging_8js_a1ab1a2eca5962b16a4f4b4d285f01703} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} FCM\+\_\+\+TOPIC\+\_\+\+MANAGEMENT\+\_\+\+ADD\+\_\+\+PATH = \textquotesingle{}/iid/v1\+:batch\+Add\textquotesingle{}}
+
+\Hypertarget{messaging_8js_a364c394ff9b5f5159df1cbcca3a2b3b0}\index{messaging.js@{messaging.js}!FCM\_TOPIC\_MANAGEMENT\_HOST@{FCM\_TOPIC\_MANAGEMENT\_HOST}}
+\index{FCM\_TOPIC\_MANAGEMENT\_HOST@{FCM\_TOPIC\_MANAGEMENT\_HOST}!messaging.js@{messaging.js}}
+\doxysubsubsection{\texorpdfstring{FCM\_TOPIC\_MANAGEMENT\_HOST}{FCM\_TOPIC\_MANAGEMENT\_HOST}}
+{\footnotesize\ttfamily \label{messaging_8js_a364c394ff9b5f5159df1cbcca3a2b3b0} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} FCM\+\_\+\+TOPIC\+\_\+\+MANAGEMENT\+\_\+\+HOST = \textquotesingle{}iid.\+googleapis.\+com\textquotesingle{}}
+
+\Hypertarget{messaging_8js_aad144fd67bd4d363dc818563b0ddb833}\index{messaging.js@{messaging.js}!FCM\_TOPIC\_MANAGEMENT\_REMOVE\_PATH@{FCM\_TOPIC\_MANAGEMENT\_REMOVE\_PATH}}
+\index{FCM\_TOPIC\_MANAGEMENT\_REMOVE\_PATH@{FCM\_TOPIC\_MANAGEMENT\_REMOVE\_PATH}!messaging.js@{messaging.js}}
+\doxysubsubsection{\texorpdfstring{FCM\_TOPIC\_MANAGEMENT\_REMOVE\_PATH}{FCM\_TOPIC\_MANAGEMENT\_REMOVE\_PATH}}
+{\footnotesize\ttfamily \label{messaging_8js_aad144fd67bd4d363dc818563b0ddb833} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} FCM\+\_\+\+TOPIC\+\_\+\+MANAGEMENT\+\_\+\+REMOVE\+\_\+\+PATH = \textquotesingle{}/iid/v1\+:batch\+Remove\textquotesingle{}}
+
+\Hypertarget{messaging_8js_a2fb83dd9ae8aa2f6e166272953757d72}\index{messaging.js@{messaging.js}!Messaging@{Messaging}}
+\index{Messaging@{Messaging}!messaging.js@{messaging.js}}
+\doxysubsubsection{\texorpdfstring{Messaging}{Messaging}}
+{\footnotesize\ttfamily \label{messaging_8js_a2fb83dd9ae8aa2f6e166272953757d72} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} Messaging = void 0}
+
+\Hypertarget{messaging_8js_a5afa5471fc689335221fb2abfa3d13b9}\index{messaging.js@{messaging.js}!messaging\_api\_request\_internal\_1@{messaging\_api\_request\_internal\_1}}
+\index{messaging\_api\_request\_internal\_1@{messaging\_api\_request\_internal\_1}!messaging.js@{messaging.js}}
+\doxysubsubsection{\texorpdfstring{messaging\_api\_request\_internal\_1}{messaging\_api\_request\_internal\_1}}
+{\footnotesize\ttfamily \label{messaging_8js_a5afa5471fc689335221fb2abfa3d13b9} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} messaging\+\_\+api\+\_\+request\+\_\+internal\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./messaging-\/\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}}-\/\mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}}-\/internal"{})}
+
+\Hypertarget{messaging_8js_aaa4ec600a68be400f4c2769cd226e776}\index{messaging.js@{messaging.js}!MESSAGING\_CONDITION\_RESPONSE\_KEYS\_MAP@{MESSAGING\_CONDITION\_RESPONSE\_KEYS\_MAP}}
+\index{MESSAGING\_CONDITION\_RESPONSE\_KEYS\_MAP@{MESSAGING\_CONDITION\_RESPONSE\_KEYS\_MAP}!messaging.js@{messaging.js}}
+\doxysubsubsection{\texorpdfstring{MESSAGING\_CONDITION\_RESPONSE\_KEYS\_MAP}{MESSAGING\_CONDITION\_RESPONSE\_KEYS\_MAP}}
+{\footnotesize\ttfamily \label{messaging_8js_aaa4ec600a68be400f4c2769cd226e776} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} MESSAGING\+\_\+\+CONDITION\+\_\+\+RESPONSE\+\_\+\+KEYS\+\_\+\+MAP}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \ \ message\_id:\ \textcolor{stringliteral}{'messageId'},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{messaging_8js_a4ce37102f80519b43f6a04960450ffbd}\index{messaging.js@{messaging.js}!MESSAGING\_DEVICE\_GROUP\_RESPONSE\_KEYS\_MAP@{MESSAGING\_DEVICE\_GROUP\_RESPONSE\_KEYS\_MAP}}
+\index{MESSAGING\_DEVICE\_GROUP\_RESPONSE\_KEYS\_MAP@{MESSAGING\_DEVICE\_GROUP\_RESPONSE\_KEYS\_MAP}!messaging.js@{messaging.js}}
+\doxysubsubsection{\texorpdfstring{MESSAGING\_DEVICE\_GROUP\_RESPONSE\_KEYS\_MAP}{MESSAGING\_DEVICE\_GROUP\_RESPONSE\_KEYS\_MAP}}
+{\footnotesize\ttfamily \label{messaging_8js_a4ce37102f80519b43f6a04960450ffbd} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} MESSAGING\+\_\+\+DEVICE\+\_\+\+GROUP\+\_\+\+RESPONSE\+\_\+\+KEYS\+\_\+\+MAP}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{concurrently_2dist_2src_2defaults_8js_a7118084f766708fc137849390f20845b}{success}}:\ \textcolor{stringliteral}{'successCount'},}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{url-state-machine_8js_a260daceb4b8c3e74325e56337ba59784}{failure}}:\ \textcolor{stringliteral}{'failureCount'},}
+\DoxyCodeLine{\ \ \ \ failed\_registration\_ids:\ \textcolor{stringliteral}{'failedRegistrationTokens'},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{messaging_8js_a6a27bb22e53bf507a04fb0ae8aff3dde}\index{messaging.js@{messaging.js}!MESSAGING\_DEVICE\_RESULT\_KEYS\_MAP@{MESSAGING\_DEVICE\_RESULT\_KEYS\_MAP}}
+\index{MESSAGING\_DEVICE\_RESULT\_KEYS\_MAP@{MESSAGING\_DEVICE\_RESULT\_KEYS\_MAP}!messaging.js@{messaging.js}}
+\doxysubsubsection{\texorpdfstring{MESSAGING\_DEVICE\_RESULT\_KEYS\_MAP}{MESSAGING\_DEVICE\_RESULT\_KEYS\_MAP}}
+{\footnotesize\ttfamily \label{messaging_8js_a6a27bb22e53bf507a04fb0ae8aff3dde} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} MESSAGING\+\_\+\+DEVICE\+\_\+\+RESULT\+\_\+\+KEYS\+\_\+\+MAP}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \ \ message\_id:\ \textcolor{stringliteral}{'messageId'},}
+\DoxyCodeLine{\ \ \ \ registration\_id:\ \textcolor{stringliteral}{'canonicalRegistrationToken'},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{messaging_8js_aafbcf2a13f85d81013093b859bec03fa}\index{messaging.js@{messaging.js}!MESSAGING\_DEVICES\_RESPONSE\_KEYS\_MAP@{MESSAGING\_DEVICES\_RESPONSE\_KEYS\_MAP}}
+\index{MESSAGING\_DEVICES\_RESPONSE\_KEYS\_MAP@{MESSAGING\_DEVICES\_RESPONSE\_KEYS\_MAP}!messaging.js@{messaging.js}}
+\doxysubsubsection{\texorpdfstring{MESSAGING\_DEVICES\_RESPONSE\_KEYS\_MAP}{MESSAGING\_DEVICES\_RESPONSE\_KEYS\_MAP}}
+{\footnotesize\ttfamily \label{messaging_8js_aafbcf2a13f85d81013093b859bec03fa} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} MESSAGING\+\_\+\+DEVICES\+\_\+\+RESPONSE\+\_\+\+KEYS\+\_\+\+MAP}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \ \ canonical\_ids:\ \textcolor{stringliteral}{'canonicalRegistrationTokenCount'},}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{url-state-machine_8js_a260daceb4b8c3e74325e56337ba59784}{failure}}:\ \textcolor{stringliteral}{'failureCount'},}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{concurrently_2dist_2src_2defaults_8js_a7118084f766708fc137849390f20845b}{success}}:\ \textcolor{stringliteral}{'successCount'},}
+\DoxyCodeLine{\ \ \ \ multicast\_id:\ \textcolor{stringliteral}{'multicastId'},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{messaging_8js_ae95f6e02baf7021a53f061b66227edbb}\index{messaging.js@{messaging.js}!messaging\_internal\_1@{messaging\_internal\_1}}
+\index{messaging\_internal\_1@{messaging\_internal\_1}!messaging.js@{messaging.js}}
+\doxysubsubsection{\texorpdfstring{messaging\_internal\_1}{messaging\_internal\_1}}
+{\footnotesize\ttfamily \label{messaging_8js_ae95f6e02baf7021a53f061b66227edbb} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} messaging\+\_\+internal\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./messaging-\/internal"{})}
+
+\Hypertarget{messaging_8js_a526d446be66812e340da4a99a5087ae2}\index{messaging.js@{messaging.js}!MESSAGING\_TOPIC\_RESPONSE\_KEYS\_MAP@{MESSAGING\_TOPIC\_RESPONSE\_KEYS\_MAP}}
+\index{MESSAGING\_TOPIC\_RESPONSE\_KEYS\_MAP@{MESSAGING\_TOPIC\_RESPONSE\_KEYS\_MAP}!messaging.js@{messaging.js}}
+\doxysubsubsection{\texorpdfstring{MESSAGING\_TOPIC\_RESPONSE\_KEYS\_MAP}{MESSAGING\_TOPIC\_RESPONSE\_KEYS\_MAP}}
+{\footnotesize\ttfamily \label{messaging_8js_a526d446be66812e340da4a99a5087ae2} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} MESSAGING\+\_\+\+TOPIC\+\_\+\+RESPONSE\+\_\+\+KEYS\+\_\+\+MAP}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \ \ message\_id:\ \textcolor{stringliteral}{'messageId'},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{messaging_8js_ae2475e10618961c050dcba04e8c42331}\index{messaging.js@{messaging.js}!strict@{strict}}
+\index{strict@{strict}!messaging.js@{messaging.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{messaging_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+
+firebase-\/admin v12.\+7.\+0 \Hypertarget{messaging_8js_a022e926a40defc4294368e708a7e2372}\index{messaging.js@{messaging.js}!utils@{utils}}
+\index{utils@{utils}!messaging.js@{messaging.js}}
+\doxysubsubsection{\texorpdfstring{utils}{utils}}
+{\footnotesize\ttfamily \label{messaging_8js_a022e926a40defc4294368e708a7e2372} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} utils = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils"{})}
+
+\Hypertarget{messaging_8js_add6dc10e852e313f07c0d59bcf288b6a}\index{messaging.js@{messaging.js}!validator@{validator}}
+\index{validator@{validator}!messaging.js@{messaging.js}}
+\doxysubsubsection{\texorpdfstring{validator}{validator}}
+{\footnotesize\ttfamily \label{messaging_8js_add6dc10e852e313f07c0d59bcf288b6a} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} validator = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/validator"{})}
+

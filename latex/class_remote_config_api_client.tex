@@ -1,0 +1,482 @@
+\doxysection{Remote\+Config\+Api\+Client Class Reference}
+\hypertarget{class_remote_config_api_client}{}\label{class_remote_config_api_client}\index{RemoteConfigApiClient@{RemoteConfigApiClient}}
+
+
+Collaboration diagram for Remote\+Config\+Api\+Client\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{class_remote_config_api_client__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_remote_config_api_client_a0f64039b466f070e14fd86dcdb4a696a}{constructor}} (\mbox{\hyperlink{database_2dist_2index_8cjs_8js_a7b225fcb720e4d5ed2bbf60e28a25e6d}{app}})
+\item 
+\mbox{\hyperlink{class_remote_config_api_client_af9a255ec4039772a2b298b8bb58856a2}{get\+Template}} ()
+\item 
+\mbox{\hyperlink{class_remote_config_api_client_ac56baa26a619cbc4ef7d056eef449c89}{get\+Template\+At\+Version}} (version\+Number)
+\item 
+\mbox{\hyperlink{class_remote_config_api_client_a70196aa9a1946948fbbe4955072e1ddc}{validate\+Template}} (\mbox{\hyperlink{chalk_2source_2index_8js_ac61a96c3fce99db622c56916677af3b4}{template}})
+\item 
+\mbox{\hyperlink{class_remote_config_api_client_aac5a7f803b08b4ee67c6b7ad5684e829}{publish\+Template}} (\mbox{\hyperlink{chalk_2source_2index_8js_ac61a96c3fce99db622c56916677af3b4}{template}}, options)
+\item 
+\mbox{\hyperlink{class_remote_config_api_client_a95a8c76b94be249064e92b5c58773b2d}{rollback}} (version\+Number)
+\item 
+\mbox{\hyperlink{class_remote_config_api_client_adc9e990aff01cdc06d8cc71138d3e24b}{list\+Versions}} (options)
+\item 
+\mbox{\hyperlink{class_remote_config_api_client_acad789b41896f69a2a498c68aef448d1}{get\+Server\+Template}} ()
+\item 
+\mbox{\hyperlink{class_remote_config_api_client_aa0674741e8cbfcd250b890decf62eaeb}{send\+Put\+Request}} (\mbox{\hyperlink{chalk_2source_2index_8js_ac61a96c3fce99db622c56916677af3b4}{template}}, \mbox{\hyperlink{express_2lib_2utils_8js_aa7b4b88130584154c4a863b71b8a3075}{etag}}, \mbox{\hyperlink{fast-xml-parser_2src_2cli_2cli_8js_a6a4509e21a86ab45aa30d6cf21ffb169}{validate\+Only}})
+\item 
+\mbox{\hyperlink{class_remote_config_api_client_a8d717f02223a3eeae4acae6b3d5dd090}{get\+Url}} ()
+\item 
+\mbox{\hyperlink{class_remote_config_api_client_a2da104fed98482b1c8cc1e58740569bd}{get\+Project\+Id\+Prefix}} ()
+\item 
+\mbox{\hyperlink{class_remote_config_api_client_abdaabd3b282557158d34d59af9a2f288}{to\+Firebase\+Error}} (err)
+\item 
+\mbox{\hyperlink{class_remote_config_api_client_afcf2fa8762487ccb7d6261b6f98270c2}{to\+Remote\+Config\+Template}} (resp, custom\+Etag)
+\item 
+\mbox{\hyperlink{class_remote_config_api_client_a44985020276279474d81e2c5a9773025}{to\+Remote\+Config\+Server\+Template}} (resp, custom\+Etag)
+\item 
+\mbox{\hyperlink{class_remote_config_api_client_afa53ba93f55a6193a2648d92a1d237b1}{validate\+Input\+Remote\+Config\+Template}} (\mbox{\hyperlink{chalk_2source_2index_8js_ac61a96c3fce99db622c56916677af3b4}{template}})
+\item 
+\mbox{\hyperlink{class_remote_config_api_client_a8f2ac87f73626742f62a441c0614f0c3}{validate\+Version\+Number}} (version\+Number, property\+Name=\textquotesingle{}version\+Number\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_remote_config_api_client_a14f61ed08772dea2e5a36557fe8e10df}{validate\+Etag}} (\mbox{\hyperlink{express_2lib_2utils_8js_aa7b4b88130584154c4a863b71b8a3075}{etag}})
+\item 
+\mbox{\hyperlink{class_remote_config_api_client_ab13fba86f3071432bd80e333026e6d51}{validate\+List\+Versions\+Options}} (options)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class that facilitates sending requests to the Firebase Remote Config backend API. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_remote_config_api_client_a0f64039b466f070e14fd86dcdb4a696a}\index{RemoteConfigApiClient@{RemoteConfigApiClient}!constructor@{constructor}}
+\index{constructor@{constructor}!RemoteConfigApiClient@{RemoteConfigApiClient}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_remote_config_api_client_a0f64039b466f070e14fd86dcdb4a696a} 
+Remote\+Config\+Api\+Client\+::constructor (\begin{DoxyParamCaption}\item[{}]{app}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{remote-config-api-client-internal_8js_a73dd1e6f0bc0a0234576ddef2bbe0452}{api\+\_\+request\+\_\+1}}, \mbox{\hyperlink{database_2dist_2index_8cjs_8js_a7b225fcb720e4d5ed2bbf60e28a25e6d}{app}}, \mbox{\hyperlink{remote-config-api-client-internal_8js_aa821110988fd33e782585416dfc22af6}{Firebase\+Remote\+Config\+Error}}, and \mbox{\hyperlink{remote-config-api-client-internal_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}}.
+
+\Hypertarget{class_remote_config_api_client_a2da104fed98482b1c8cc1e58740569bd}\index{RemoteConfigApiClient@{RemoteConfigApiClient}!getProjectIdPrefix@{getProjectIdPrefix}}
+\index{getProjectIdPrefix@{getProjectIdPrefix}!RemoteConfigApiClient@{RemoteConfigApiClient}}
+\doxysubsubsection{\texorpdfstring{getProjectIdPrefix()}{getProjectIdPrefix()}}
+{\footnotesize\ttfamily \label{class_remote_config_api_client_a2da104fed98482b1c8cc1e58740569bd} 
+Remote\+Config\+Api\+Client\+::get\+Project\+Id\+Prefix (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{database_2dist_2index_8cjs_8js_a7b225fcb720e4d5ed2bbf60e28a25e6d}{app}}, \mbox{\hyperlink{remote-config-api-client-internal_8js_aa821110988fd33e782585416dfc22af6}{Firebase\+Remote\+Config\+Error}}, \mbox{\hyperlink{__get_tag_8js_abace523389c17bce1848e3a427871700}{Promise}}, \mbox{\hyperlink{remote-config-api-client-internal_8js_a022e926a40defc4294368e708a7e2372}{utils}}, and \mbox{\hyperlink{remote-config-api-client-internal_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_remote_config_api_client_a2da104fed98482b1c8cc1e58740569bd_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_remote_config_api_client_acad789b41896f69a2a498c68aef448d1}\index{RemoteConfigApiClient@{RemoteConfigApiClient}!getServerTemplate@{getServerTemplate}}
+\index{getServerTemplate@{getServerTemplate}!RemoteConfigApiClient@{RemoteConfigApiClient}}
+\doxysubsubsection{\texorpdfstring{getServerTemplate()}{getServerTemplate()}}
+{\footnotesize\ttfamily \label{class_remote_config_api_client_acad789b41896f69a2a498c68aef448d1} 
+Remote\+Config\+Api\+Client\+::get\+Server\+Template (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{_0dfirebase_2database-compat_2dist_2index_8js_a4f1ae2e0d595a01da793594dc4c89f03}{firebase}}, \mbox{\hyperlink{class_remote_config_api_client_a8d717f02223a3eeae4acae6b3d5dd090}{get\+Url()}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7f2cb2fcdd79bf72cefd29b7bc2d10fa}{headers}}, \mbox{\hyperlink{lodash_2method_8js_a2f565198b0a61cb8648a01f0d9617cd7}{method}}, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a207259f7e3cfd9800ed8f7d7224c7a68}{server}}, \mbox{\hyperlink{pledge_8js_a492a4eb4b80e71a1bb4761df42875565}{then}}, \mbox{\hyperlink{class_remote_config_api_client_abdaabd3b282557158d34d59af9a2f288}{to\+Firebase\+Error()}}, \mbox{\hyperlink{class_remote_config_api_client_a44985020276279474d81e2c5a9773025}{to\+Remote\+Config\+Server\+Template()}}, and \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_acf0a8b41f00a22e21672c8b3768a0618}{url}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_remote_config_api_client_acad789b41896f69a2a498c68aef448d1_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_remote_config_api_client_af9a255ec4039772a2b298b8bb58856a2}\index{RemoteConfigApiClient@{RemoteConfigApiClient}!getTemplate@{getTemplate}}
+\index{getTemplate@{getTemplate}!RemoteConfigApiClient@{RemoteConfigApiClient}}
+\doxysubsubsection{\texorpdfstring{getTemplate()}{getTemplate()}}
+{\footnotesize\ttfamily \label{class_remote_config_api_client_af9a255ec4039772a2b298b8bb58856a2} 
+Remote\+Config\+Api\+Client\+::get\+Template (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{class_remote_config_api_client_a8d717f02223a3eeae4acae6b3d5dd090}{get\+Url()}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7f2cb2fcdd79bf72cefd29b7bc2d10fa}{headers}}, \mbox{\hyperlink{lodash_2method_8js_a2f565198b0a61cb8648a01f0d9617cd7}{method}}, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}}, \mbox{\hyperlink{pledge_8js_a492a4eb4b80e71a1bb4761df42875565}{then}}, \mbox{\hyperlink{class_remote_config_api_client_abdaabd3b282557158d34d59af9a2f288}{to\+Firebase\+Error()}}, \mbox{\hyperlink{class_remote_config_api_client_afcf2fa8762487ccb7d6261b6f98270c2}{to\+Remote\+Config\+Template()}}, and \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_acf0a8b41f00a22e21672c8b3768a0618}{url}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_remote_config_api_client_af9a255ec4039772a2b298b8bb58856a2_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_remote_config_api_client_ac56baa26a619cbc4ef7d056eef449c89}\index{RemoteConfigApiClient@{RemoteConfigApiClient}!getTemplateAtVersion@{getTemplateAtVersion}}
+\index{getTemplateAtVersion@{getTemplateAtVersion}!RemoteConfigApiClient@{RemoteConfigApiClient}}
+\doxysubsubsection{\texorpdfstring{getTemplateAtVersion()}{getTemplateAtVersion()}}
+{\footnotesize\ttfamily \label{class_remote_config_api_client_ac56baa26a619cbc4ef7d056eef449c89} 
+Remote\+Config\+Api\+Client\+::get\+Template\+At\+Version (\begin{DoxyParamCaption}\item[{}]{version\+Number}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}, \mbox{\hyperlink{class_remote_config_api_client_a8d717f02223a3eeae4acae6b3d5dd090}{get\+Url()}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7f2cb2fcdd79bf72cefd29b7bc2d10fa}{headers}}, \mbox{\hyperlink{lodash_2method_8js_a2f565198b0a61cb8648a01f0d9617cd7}{method}}, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}}, \mbox{\hyperlink{pledge_8js_a492a4eb4b80e71a1bb4761df42875565}{then}}, \mbox{\hyperlink{class_remote_config_api_client_abdaabd3b282557158d34d59af9a2f288}{to\+Firebase\+Error()}}, \mbox{\hyperlink{class_remote_config_api_client_afcf2fa8762487ccb7d6261b6f98270c2}{to\+Remote\+Config\+Template()}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_acf0a8b41f00a22e21672c8b3768a0618}{url}}, and \mbox{\hyperlink{class_remote_config_api_client_a8f2ac87f73626742f62a441c0614f0c3}{validate\+Version\+Number()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_remote_config_api_client_ac56baa26a619cbc4ef7d056eef449c89_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_remote_config_api_client_a8d717f02223a3eeae4acae6b3d5dd090}\index{RemoteConfigApiClient@{RemoteConfigApiClient}!getUrl@{getUrl}}
+\index{getUrl@{getUrl}!RemoteConfigApiClient@{RemoteConfigApiClient}}
+\doxysubsubsection{\texorpdfstring{getUrl()}{getUrl()}}
+{\footnotesize\ttfamily \label{class_remote_config_api_client_a8d717f02223a3eeae4acae6b3d5dd090} 
+Remote\+Config\+Api\+Client\+::get\+Url (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{remote-config-api-client-internal_8js_a3484cb39058b1fe3cac022f126ffb078}{FIREBASE\+\_\+\+REMOTE\+\_\+\+CONFIG\+\_\+\+URL\+\_\+\+BASE}}, \mbox{\hyperlink{class_remote_config_api_client_a2da104fed98482b1c8cc1e58740569bd}{get\+Project\+Id\+Prefix()}}, and \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2uuid_2dist_2esm-browser_2v1_8js_a32c2d9d82f64ce86ca1da30b62dd1482}{v1}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_remote_config_api_client_a8d717f02223a3eeae4acae6b3d5dd090_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_remote_config_api_client_a8d717f02223a3eeae4acae6b3d5dd090_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_remote_config_api_client_adc9e990aff01cdc06d8cc71138d3e24b}\index{RemoteConfigApiClient@{RemoteConfigApiClient}!listVersions@{listVersions}}
+\index{listVersions@{listVersions}!RemoteConfigApiClient@{RemoteConfigApiClient}}
+\doxysubsubsection{\texorpdfstring{listVersions()}{listVersions()}}
+{\footnotesize\ttfamily \label{class_remote_config_api_client_adc9e990aff01cdc06d8cc71138d3e24b} 
+Remote\+Config\+Api\+Client\+::list\+Versions (\begin{DoxyParamCaption}\item[{}]{options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}, \mbox{\hyperlink{class_remote_config_api_client_a8d717f02223a3eeae4acae6b3d5dd090}{get\+Url()}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7f2cb2fcdd79bf72cefd29b7bc2d10fa}{headers}}, \mbox{\hyperlink{class_remote_config_api_client_adc9e990aff01cdc06d8cc71138d3e24b}{list\+Versions()}}, \mbox{\hyperlink{lodash_2method_8js_a2f565198b0a61cb8648a01f0d9617cd7}{method}}, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}}, \mbox{\hyperlink{pledge_8js_a492a4eb4b80e71a1bb4761df42875565}{then}}, \mbox{\hyperlink{class_remote_config_api_client_abdaabd3b282557158d34d59af9a2f288}{to\+Firebase\+Error()}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_acf0a8b41f00a22e21672c8b3768a0618}{url}}, and \mbox{\hyperlink{class_remote_config_api_client_ab13fba86f3071432bd80e333026e6d51}{validate\+List\+Versions\+Options()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_remote_config_api_client_adc9e990aff01cdc06d8cc71138d3e24b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{class_remote_config_api_client_adc9e990aff01cdc06d8cc71138d3e24b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_remote_config_api_client_aac5a7f803b08b4ee67c6b7ad5684e829}\index{RemoteConfigApiClient@{RemoteConfigApiClient}!publishTemplate@{publishTemplate}}
+\index{publishTemplate@{publishTemplate}!RemoteConfigApiClient@{RemoteConfigApiClient}}
+\doxysubsubsection{\texorpdfstring{publishTemplate()}{publishTemplate()}}
+{\footnotesize\ttfamily \label{class_remote_config_api_client_aac5a7f803b08b4ee67c6b7ad5684e829} 
+Remote\+Config\+Api\+Client\+::publish\+Template (\begin{DoxyParamCaption}\item[{}]{template}{, }\item[{}]{options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{class_remote_config_api_client_aa0674741e8cbfcd250b890decf62eaeb}{send\+Put\+Request()}}, \mbox{\hyperlink{class_remote_config_api_client_abdaabd3b282557158d34d59af9a2f288}{to\+Firebase\+Error()}}, \mbox{\hyperlink{class_remote_config_api_client_afcf2fa8762487ccb7d6261b6f98270c2}{to\+Remote\+Config\+Template()}}, and \mbox{\hyperlink{class_remote_config_api_client_afa53ba93f55a6193a2648d92a1d237b1}{validate\+Input\+Remote\+Config\+Template()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_remote_config_api_client_aac5a7f803b08b4ee67c6b7ad5684e829_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_remote_config_api_client_a95a8c76b94be249064e92b5c58773b2d}\index{RemoteConfigApiClient@{RemoteConfigApiClient}!rollback@{rollback}}
+\index{rollback@{rollback}!RemoteConfigApiClient@{RemoteConfigApiClient}}
+\doxysubsubsection{\texorpdfstring{rollback()}{rollback()}}
+{\footnotesize\ttfamily \label{class_remote_config_api_client_a95a8c76b94be249064e92b5c58773b2d} 
+Remote\+Config\+Api\+Client\+::rollback (\begin{DoxyParamCaption}\item[{}]{version\+Number}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}, \mbox{\hyperlink{class_remote_config_api_client_a8d717f02223a3eeae4acae6b3d5dd090}{get\+Url()}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7f2cb2fcdd79bf72cefd29b7bc2d10fa}{headers}}, \mbox{\hyperlink{lodash_2method_8js_a2f565198b0a61cb8648a01f0d9617cd7}{method}}, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}}, \mbox{\hyperlink{class_remote_config_api_client_a95a8c76b94be249064e92b5c58773b2d}{rollback()}}, \mbox{\hyperlink{pledge_8js_a492a4eb4b80e71a1bb4761df42875565}{then}}, \mbox{\hyperlink{class_remote_config_api_client_abdaabd3b282557158d34d59af9a2f288}{to\+Firebase\+Error()}}, \mbox{\hyperlink{class_remote_config_api_client_afcf2fa8762487ccb7d6261b6f98270c2}{to\+Remote\+Config\+Template()}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_acf0a8b41f00a22e21672c8b3768a0618}{url}}, and \mbox{\hyperlink{class_remote_config_api_client_a8f2ac87f73626742f62a441c0614f0c3}{validate\+Version\+Number()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_remote_config_api_client_a95a8c76b94be249064e92b5c58773b2d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{class_remote_config_api_client_a95a8c76b94be249064e92b5c58773b2d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_remote_config_api_client_aa0674741e8cbfcd250b890decf62eaeb}\index{RemoteConfigApiClient@{RemoteConfigApiClient}!sendPutRequest@{sendPutRequest}}
+\index{sendPutRequest@{sendPutRequest}!RemoteConfigApiClient@{RemoteConfigApiClient}}
+\doxysubsubsection{\texorpdfstring{sendPutRequest()}{sendPutRequest()}}
+{\footnotesize\ttfamily \label{class_remote_config_api_client_aa0674741e8cbfcd250b890decf62eaeb} 
+Remote\+Config\+Api\+Client\+::send\+Put\+Request (\begin{DoxyParamCaption}\item[{}]{template}{, }\item[{}]{etag}{, }\item[{}]{validate\+Only}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}, \mbox{\hyperlink{express_2lib_2utils_8js_aa7b4b88130584154c4a863b71b8a3075}{etag}}, \mbox{\hyperlink{class_remote_config_api_client_a8d717f02223a3eeae4acae6b3d5dd090}{get\+Url()}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7f2cb2fcdd79bf72cefd29b7bc2d10fa}{headers}}, \mbox{\hyperlink{lodash_2method_8js_a2f565198b0a61cb8648a01f0d9617cd7}{method}}, \mbox{\hyperlink{cjs_2src_2bucket_8js_a1fdc7709faf62dce60620fb3f9d3453c}{path}}, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_acf0a8b41f00a22e21672c8b3768a0618}{url}}, \mbox{\hyperlink{fast-xml-parser_2src_2cli_2cli_8js_a6a4509e21a86ab45aa30d6cf21ffb169}{validate\+Only}}, and \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a265a39dcf2f0b7c6b96574362aa01ad9}{version}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_remote_config_api_client_aa0674741e8cbfcd250b890decf62eaeb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_remote_config_api_client_aa0674741e8cbfcd250b890decf62eaeb_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_remote_config_api_client_abdaabd3b282557158d34d59af9a2f288}\index{RemoteConfigApiClient@{RemoteConfigApiClient}!toFirebaseError@{toFirebaseError}}
+\index{toFirebaseError@{toFirebaseError}!RemoteConfigApiClient@{RemoteConfigApiClient}}
+\doxysubsubsection{\texorpdfstring{toFirebaseError()}{toFirebaseError()}}
+{\footnotesize\ttfamily \label{class_remote_config_api_client_abdaabd3b282557158d34d59af9a2f288} 
+Remote\+Config\+Api\+Client\+::to\+Firebase\+Error (\begin{DoxyParamCaption}\item[{}]{err}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{long_2index_8js_af6ba5df101e5630835a0a5d778844922}{and}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}}, \mbox{\hyperlink{remote-config-api-client-internal_8js_af1a99a3ff1a35c114bdd06cc7252beb6}{error\+\_\+1}}, \mbox{\hyperlink{remote-config-api-client-internal_8js_ac23834702346874fb5b4d9fca8ebc93b}{ERROR\+\_\+\+CODE\+\_\+\+MAPPING}}, \mbox{\hyperlink{remote-config-api-client-internal_8js_aa821110988fd33e782585416dfc22af6}{Firebase\+Remote\+Config\+Error}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ac70ac40ef8199c59316b35022dd21914}{response}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a207259f7e3cfd9800ed8f7d7224c7a68}{server}}, and \mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2index_8js_aac9dfada3e10bfb087ebb0a95f284488}{status}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_remote_config_api_client_abdaabd3b282557158d34d59af9a2f288_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_remote_config_api_client_a44985020276279474d81e2c5a9773025}\index{RemoteConfigApiClient@{RemoteConfigApiClient}!toRemoteConfigServerTemplate@{toRemoteConfigServerTemplate}}
+\index{toRemoteConfigServerTemplate@{toRemoteConfigServerTemplate}!RemoteConfigApiClient@{RemoteConfigApiClient}}
+\doxysubsubsection{\texorpdfstring{toRemoteConfigServerTemplate()}{toRemoteConfigServerTemplate()}}
+{\footnotesize\ttfamily \label{class_remote_config_api_client_a44985020276279474d81e2c5a9773025} 
+Remote\+Config\+Api\+Client\+::to\+Remote\+Config\+Server\+Template (\begin{DoxyParamCaption}\item[{}]{resp}{, }\item[{}]{custom\+Etag}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Creates a Remote\+Config\+Server\+Template from the API response. If provided, custom\+Etag is used instead of the etag returned in the API response.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Http\+Response\}} & resp API response object. \\
+\hline
+{\em \{string\}} & custom\+Etag \doxylink{class_a}{A} custom etag to replace the etag fom the API response (Optional). \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{express_2lib_2utils_8js_aa7b4b88130584154c4a863b71b8a3075}{etag}}, \mbox{\hyperlink{class_remote_config_api_client_a14f61ed08772dea2e5a36557fe8e10df}{validate\+Etag()}}, and \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a265a39dcf2f0b7c6b96574362aa01ad9}{version}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_remote_config_api_client_a44985020276279474d81e2c5a9773025_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_remote_config_api_client_a44985020276279474d81e2c5a9773025_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_remote_config_api_client_afcf2fa8762487ccb7d6261b6f98270c2}\index{RemoteConfigApiClient@{RemoteConfigApiClient}!toRemoteConfigTemplate@{toRemoteConfigTemplate}}
+\index{toRemoteConfigTemplate@{toRemoteConfigTemplate}!RemoteConfigApiClient@{RemoteConfigApiClient}}
+\doxysubsubsection{\texorpdfstring{toRemoteConfigTemplate()}{toRemoteConfigTemplate()}}
+{\footnotesize\ttfamily \label{class_remote_config_api_client_afcf2fa8762487ccb7d6261b6f98270c2} 
+Remote\+Config\+Api\+Client\+::to\+Remote\+Config\+Template (\begin{DoxyParamCaption}\item[{}]{resp}{, }\item[{}]{custom\+Etag}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Creates a Remote\+Config\+Template from the API response. If provided, custom\+Etag is used instead of the etag returned in the API response.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Http\+Response\}} & resp API response object. \\
+\hline
+{\em \{string\}} & custom\+Etag \doxylink{class_a}{A} custom etag to replace the etag fom the API response (Optional). \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{express_2lib_2utils_8js_aa7b4b88130584154c4a863b71b8a3075}{etag}}, \mbox{\hyperlink{class_remote_config_api_client_a14f61ed08772dea2e5a36557fe8e10df}{validate\+Etag()}}, and \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a265a39dcf2f0b7c6b96574362aa01ad9}{version}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_remote_config_api_client_afcf2fa8762487ccb7d6261b6f98270c2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_remote_config_api_client_afcf2fa8762487ccb7d6261b6f98270c2_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_remote_config_api_client_a14f61ed08772dea2e5a36557fe8e10df}\index{RemoteConfigApiClient@{RemoteConfigApiClient}!validateEtag@{validateEtag}}
+\index{validateEtag@{validateEtag}!RemoteConfigApiClient@{RemoteConfigApiClient}}
+\doxysubsubsection{\texorpdfstring{validateEtag()}{validateEtag()}}
+{\footnotesize\ttfamily \label{class_remote_config_api_client_a14f61ed08772dea2e5a36557fe8e10df} 
+Remote\+Config\+Api\+Client\+::validate\+Etag (\begin{DoxyParamCaption}\item[{}]{etag}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{express_2lib_2utils_8js_aa7b4b88130584154c4a863b71b8a3075}{etag}}, \mbox{\hyperlink{remote-config-api-client-internal_8js_aa821110988fd33e782585416dfc22af6}{Firebase\+Remote\+Config\+Error}}, and \mbox{\hyperlink{remote-config-api-client-internal_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_remote_config_api_client_a14f61ed08772dea2e5a36557fe8e10df_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_remote_config_api_client_afa53ba93f55a6193a2648d92a1d237b1}\index{RemoteConfigApiClient@{RemoteConfigApiClient}!validateInputRemoteConfigTemplate@{validateInputRemoteConfigTemplate}}
+\index{validateInputRemoteConfigTemplate@{validateInputRemoteConfigTemplate}!RemoteConfigApiClient@{RemoteConfigApiClient}}
+\doxysubsubsection{\texorpdfstring{validateInputRemoteConfigTemplate()}{validateInputRemoteConfigTemplate()}}
+{\footnotesize\ttfamily \label{class_remote_config_api_client_afa53ba93f55a6193a2648d92a1d237b1} 
+Remote\+Config\+Api\+Client\+::validate\+Input\+Remote\+Config\+Template (\begin{DoxyParamCaption}\item[{}]{template}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Checks if the given Remote\+Config\+Template object is valid. The object must have valid parameters, parameter groups, conditions, and an etag. Removes output only properties from version metadata.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Remote\+Config\+Template\}} & template \doxylink{class_a}{A} Remote\+Config\+Template object to be validated.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Remote\+Config\+Template\} The validated Remote\+Config\+Template object. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{remote-config-api-client-internal_8js_a3c878464c635c5cd2043d7e066bb187b}{deep\+\_\+copy\+\_\+1}}, \mbox{\hyperlink{remote-config-api-client-internal_8js_aa821110988fd33e782585416dfc22af6}{Firebase\+Remote\+Config\+Error}}, \mbox{\hyperlink{json-bigint_2lib_2stringify_8js_aec316efdeb7b2e5358b7d50869858da1}{JSON}}, and \mbox{\hyperlink{remote-config-api-client-internal_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_remote_config_api_client_afa53ba93f55a6193a2648d92a1d237b1_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_remote_config_api_client_ab13fba86f3071432bd80e333026e6d51}\index{RemoteConfigApiClient@{RemoteConfigApiClient}!validateListVersionsOptions@{validateListVersionsOptions}}
+\index{validateListVersionsOptions@{validateListVersionsOptions}!RemoteConfigApiClient@{RemoteConfigApiClient}}
+\doxysubsubsection{\texorpdfstring{validateListVersionsOptions()}{validateListVersionsOptions()}}
+{\footnotesize\ttfamily \label{class_remote_config_api_client_ab13fba86f3071432bd80e333026e6d51} 
+Remote\+Config\+Api\+Client\+::validate\+List\+Versions\+Options (\begin{DoxyParamCaption}\item[{}]{options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Checks if a given {\ttfamily List\+Versions\+Options} object is valid. If successful, creates a copy of the options object and convert {\ttfamily start\+Time} and {\ttfamily end\+Time} to RFC3339 UTC "{}\+Zulu"{} format, if present.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+List\+Versions\+Options\}} & options An options object to be validated.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{List\+Versions\+Options\} \doxylink{class_a}{A} copy of the provided options object with timestamps converted to UTC Zulu format. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{remote-config-api-client-internal_8js_a3c878464c635c5cd2043d7e066bb187b}{deep\+\_\+copy\+\_\+1}}, \mbox{\hyperlink{remote-config-api-client-internal_8js_aa821110988fd33e782585416dfc22af6}{Firebase\+Remote\+Config\+Error}}, \mbox{\hyperlink{class_remote_config_api_client_a8f2ac87f73626742f62a441c0614f0c3}{validate\+Version\+Number()}}, and \mbox{\hyperlink{remote-config-api-client-internal_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_remote_config_api_client_ab13fba86f3071432bd80e333026e6d51_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_remote_config_api_client_ab13fba86f3071432bd80e333026e6d51_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_remote_config_api_client_a70196aa9a1946948fbbe4955072e1ddc}\index{RemoteConfigApiClient@{RemoteConfigApiClient}!validateTemplate@{validateTemplate}}
+\index{validateTemplate@{validateTemplate}!RemoteConfigApiClient@{RemoteConfigApiClient}}
+\doxysubsubsection{\texorpdfstring{validateTemplate()}{validateTemplate()}}
+{\footnotesize\ttfamily \label{class_remote_config_api_client_a70196aa9a1946948fbbe4955072e1ddc} 
+Remote\+Config\+Api\+Client\+::validate\+Template (\begin{DoxyParamCaption}\item[{}]{template}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{express_2lib_2utils_8js_aa7b4b88130584154c4a863b71b8a3075}{etag}}, \mbox{\hyperlink{class_remote_config_api_client_aa0674741e8cbfcd250b890decf62eaeb}{send\+Put\+Request()}}, \mbox{\hyperlink{class_remote_config_api_client_abdaabd3b282557158d34d59af9a2f288}{to\+Firebase\+Error()}}, \mbox{\hyperlink{class_remote_config_api_client_afcf2fa8762487ccb7d6261b6f98270c2}{to\+Remote\+Config\+Template()}}, \mbox{\hyperlink{class_remote_config_api_client_a14f61ed08772dea2e5a36557fe8e10df}{validate\+Etag()}}, and \mbox{\hyperlink{class_remote_config_api_client_afa53ba93f55a6193a2648d92a1d237b1}{validate\+Input\+Remote\+Config\+Template()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_remote_config_api_client_a70196aa9a1946948fbbe4955072e1ddc_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_remote_config_api_client_a8f2ac87f73626742f62a441c0614f0c3}\index{RemoteConfigApiClient@{RemoteConfigApiClient}!validateVersionNumber@{validateVersionNumber}}
+\index{validateVersionNumber@{validateVersionNumber}!RemoteConfigApiClient@{RemoteConfigApiClient}}
+\doxysubsubsection{\texorpdfstring{validateVersionNumber()}{validateVersionNumber()}}
+{\footnotesize\ttfamily \label{class_remote_config_api_client_a8f2ac87f73626742f62a441c0614f0c3} 
+Remote\+Config\+Api\+Client\+::validate\+Version\+Number (\begin{DoxyParamCaption}\item[{}]{version\+Number}{, }\item[{}]{property\+Name}{ = {\ttfamily \textquotesingle{}versionNumber\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Checks if a given version number is valid. \doxylink{class_a}{A} version number must be an integer or a string in int64 format. If valid, returns the string representation of the provided version number.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{string\texorpdfstring{$\vert$}{|}number\}} & version\+Number \doxylink{class_a}{A} version number to be validated.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{string\} The validated version number as a string. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}, \mbox{\hyperlink{core_8min_8js_a46d2d1e8780c9b3b6a642760bb148e61}{an}}, \mbox{\hyperlink{ordered-map_8min_8js_a4bdf3e530f52a4f5162d818b2a88378b}{empty}}, \mbox{\hyperlink{remote-config-api-client-internal_8js_aa821110988fd33e782585416dfc22af6}{Firebase\+Remote\+Config\+Error}}, \mbox{\hyperlink{bytes_2index_8js_a9027c5af360d5ef99cc9906449e85a27}{format}}, \mbox{\hyperlink{writer_8js_a88a9576bbd510d1fc79beaa5accdfd84}{int64}}, \mbox{\hyperlink{long_2index_8js_a88083640992a53a144223e2bd602d47d}{or}}, and \mbox{\hyperlink{remote-config-api-client-internal_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_remote_config_api_client_a8f2ac87f73626742f62a441c0614f0c3_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/firebase-\/admin/lib/remote-\/config/\mbox{\hyperlink{remote-config-api-client-internal_8js}{remote-\/config-\/api-\/client-\/internal.\+js}}\end{DoxyCompactItemize}

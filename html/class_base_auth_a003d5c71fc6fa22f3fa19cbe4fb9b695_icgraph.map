@@ -1,0 +1,13 @@
+<map id="BaseAuth::getUser" name="BaseAuth::getUser">
+<area shape="rect" id="Node000001" title=" " alt="" coords="527,55,659,80"/>
+<area shape="rect" id="Node000002" href="$class_base_auth.html#a2e530071cd1f4abf6fb2784fc7fed5b3" title=" " alt="" coords="294,5,444,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="517,53,478,45,431,34,432,29,480,40,518,48"/>
+<area shape="rect" id="Node000003" href="$class_base_auth.html#ace25545dcdc7dc0755afd5ec254b05b7" title=" " alt="" coords="293,55,446,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="512,70,447,70,447,65,512,65"/>
+<area shape="rect" id="Node000004" href="$class_base_auth.html#a079d88955148093104ed169d6660683c" title=" " alt="" coords="260,104,479,145"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="526,87,452,106,451,101,525,82"/>
+<area shape="rect" id="Node000005" href="$class_base_auth.html#a1120c66e53173faf55e78684da1551d5" title=" " alt="" coords="26,87,191,112"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="244,115,191,110,191,105,244,110"/>
+<area shape="rect" id="Node000006" href="$class_base_auth.html#a09eb47fb20948c4ba1563faf5ed8cf8a" title=" " alt="" coords="5,136,212,162"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="244,139,213,142,212,137,244,134"/>
+</map>

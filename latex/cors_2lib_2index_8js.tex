@@ -1,0 +1,302 @@
+\doxysection{backend/node\+\_\+modules/cors/lib/index.js File Reference}
+\hypertarget{cors_2lib_2index_8js}{}\label{cors_2lib_2index_8js}\index{backend/node\_modules/cors/lib/index.js@{backend/node\_modules/cors/lib/index.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{cors_2lib_2index_8js_a39f2d5c2bbf85c7aff74ebb4579cf074}{is\+String}} (\mbox{\hyperlink{ordered-map_8min_8js_ad9a7d92cb87932d25187fdec3ba1b621}{s}})
+\item 
+function \mbox{\hyperlink{cors_2lib_2index_8js_ac97356ee0b4330ba82c6d335a0b0f6bc}{is\+Origin\+Allowed}} (origin, allowed\+Origin)
+\item 
+function \mbox{\hyperlink{cors_2lib_2index_8js_a9756f99b07b428a841cb0010a5dbd7ee}{configure\+Origin}} (options, \mbox{\hyperlink{agent-base_2dist_2helpers_8js_a960c3c3c7bce40c2aa54b029b3dbb9c8}{req}})
+\item 
+function \mbox{\hyperlink{cors_2lib_2index_8js_a2c3b796a25ec28aeab975e2c24a30fda}{configure\+Methods}} (options)
+\item 
+function \mbox{\hyperlink{cors_2lib_2index_8js_a7ab3e309f3f7b55ef5441daea411be71}{configure\+Credentials}} (options)
+\item 
+function \mbox{\hyperlink{cors_2lib_2index_8js_a12f32303cfca4712e542d70c7acd4031}{configure\+Allowed\+Headers}} (options, \mbox{\hyperlink{agent-base_2dist_2helpers_8js_a960c3c3c7bce40c2aa54b029b3dbb9c8}{req}})
+\item 
+function \mbox{\hyperlink{cors_2lib_2index_8js_aa26ac86d723166aa232c9bbbb5e139f2}{configure\+Exposed\+Headers}} (options)
+\item 
+function \mbox{\hyperlink{cors_2lib_2index_8js_a83a3d4e035b033f67770a617609b025f}{configure\+Max\+Age}} (options)
+\item 
+function \mbox{\hyperlink{cors_2lib_2index_8js_a7929eb32713255a0a5e0c5dda5e1d209}{apply\+Headers}} (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7f2cb2fcdd79bf72cefd29b7bc2d10fa}{headers}}, \mbox{\hyperlink{express_2lib_2express_8js_abde3c35e3bb7e5225dd7f234c685329c}{res}})
+\item 
+function \mbox{\hyperlink{cors_2lib_2index_8js_a10a68fce9db730423ebdec1e8eda23bc}{cors}} (options, \mbox{\hyperlink{agent-base_2dist_2helpers_8js_a960c3c3c7bce40c2aa54b029b3dbb9c8}{req}}, \mbox{\hyperlink{express_2lib_2express_8js_abde3c35e3bb7e5225dd7f234c685329c}{res}}, \mbox{\hyperlink{protobufjs_2dist_2protobuf_8js_adc8497f1b8fa9c7bee4a53c25c244a66}{next}})
+\item 
+function \mbox{\hyperlink{cors_2lib_2index_8js_a35fdceb48199b33a2b09febee98f180d}{middleware\+Wrapper}} (\mbox{\hyperlink{uuid_8min_8js_a400dc8109620963da8314d4bdfa14f83}{o}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{cors_2lib_2index_8js_a22b5a735edb78e9f8fdfb7618dc7a6b7}{assign}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}}-\/assign\textquotesingle{})
+\item 
+var \mbox{\hyperlink{cors_2lib_2index_8js_a2222d7dc84a3b14edb06515136c7d0a5}{vary}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}vary\textquotesingle{})
+\item 
+var \mbox{\hyperlink{cors_2lib_2index_8js_a25652520ac081f98103987b0e68544cf}{defaults}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{cors_2lib_2index_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} = \mbox{\hyperlink{cors_2lib_2index_8js_a35fdceb48199b33a2b09febee98f180d}{middleware\+Wrapper}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{cors_2lib_2index_8js_a7929eb32713255a0a5e0c5dda5e1d209}\index{index.js@{index.js}!applyHeaders@{applyHeaders}}
+\index{applyHeaders@{applyHeaders}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{applyHeaders()}{applyHeaders()}}
+{\footnotesize\ttfamily \label{cors_2lib_2index_8js_a7929eb32713255a0a5e0c5dda5e1d209} 
+function apply\+Headers (\begin{DoxyParamCaption}\item[{}]{headers}{, }\item[{}]{res}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{cors_2lib_2index_8js_a7929eb32713255a0a5e0c5dda5e1d209}{apply\+Headers()}}, \mbox{\hyperlink{src_2util_2minimal_8js_a325c4e317c38d8497130ebce7670be2f}{Array}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7f2cb2fcdd79bf72cefd29b7bc2d10fa}{headers}}, \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}, \mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}, \mbox{\hyperlink{express_2lib_2express_8js_abde3c35e3bb7e5225dd7f234c685329c}{res}}, and \mbox{\hyperlink{cors_2lib_2index_8js_a2222d7dc84a3b14edb06515136c7d0a5}{vary}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=156pt]{cors_2lib_2index_8js_a7929eb32713255a0a5e0c5dda5e1d209_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{cors_2lib_2index_8js_a7929eb32713255a0a5e0c5dda5e1d209_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{cors_2lib_2index_8js_a12f32303cfca4712e542d70c7acd4031}\index{index.js@{index.js}!configureAllowedHeaders@{configureAllowedHeaders}}
+\index{configureAllowedHeaders@{configureAllowedHeaders}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{configureAllowedHeaders()}{configureAllowedHeaders()}}
+{\footnotesize\ttfamily \label{cors_2lib_2index_8js_a12f32303cfca4712e542d70c7acd4031} 
+function configure\+Allowed\+Headers (\begin{DoxyParamCaption}\item[{}]{options}{, }\item[{}]{req}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7f2cb2fcdd79bf72cefd29b7bc2d10fa}{headers}}, \mbox{\hyperlink{agent-base_2dist_2helpers_8js_a960c3c3c7bce40c2aa54b029b3dbb9c8}{req}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{cors_2lib_2index_8js_a12f32303cfca4712e542d70c7acd4031_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{cors_2lib_2index_8js_a7ab3e309f3f7b55ef5441daea411be71}\index{index.js@{index.js}!configureCredentials@{configureCredentials}}
+\index{configureCredentials@{configureCredentials}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{configureCredentials()}{configureCredentials()}}
+{\footnotesize\ttfamily \label{cors_2lib_2index_8js_a7ab3e309f3f7b55ef5441daea411be71} 
+function configure\+Credentials (\begin{DoxyParamCaption}\item[{}]{options}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{cors_2lib_2index_8js_a7ab3e309f3f7b55ef5441daea411be71_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{cors_2lib_2index_8js_aa26ac86d723166aa232c9bbbb5e139f2}\index{index.js@{index.js}!configureExposedHeaders@{configureExposedHeaders}}
+\index{configureExposedHeaders@{configureExposedHeaders}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{configureExposedHeaders()}{configureExposedHeaders()}}
+{\footnotesize\ttfamily \label{cors_2lib_2index_8js_aa26ac86d723166aa232c9bbbb5e139f2} 
+function configure\+Exposed\+Headers (\begin{DoxyParamCaption}\item[{}]{options}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7f2cb2fcdd79bf72cefd29b7bc2d10fa}{headers}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{cors_2lib_2index_8js_aa26ac86d723166aa232c9bbbb5e139f2_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{cors_2lib_2index_8js_a83a3d4e035b033f67770a617609b025f}\index{index.js@{index.js}!configureMaxAge@{configureMaxAge}}
+\index{configureMaxAge@{configureMaxAge}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{configureMaxAge()}{configureMaxAge()}}
+{\footnotesize\ttfamily \label{cors_2lib_2index_8js_a83a3d4e035b033f67770a617609b025f} 
+function configure\+Max\+Age (\begin{DoxyParamCaption}\item[{}]{options}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=243pt]{cors_2lib_2index_8js_a83a3d4e035b033f67770a617609b025f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{cors_2lib_2index_8js_a2c3b796a25ec28aeab975e2c24a30fda}\index{index.js@{index.js}!configureMethods@{configureMethods}}
+\index{configureMethods@{configureMethods}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{configureMethods()}{configureMethods()}}
+{\footnotesize\ttfamily \label{cors_2lib_2index_8js_a2c3b796a25ec28aeab975e2c24a30fda} 
+function configure\+Methods (\begin{DoxyParamCaption}\item[{}]{options}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a04d30fa6e159a438c5fe8d248cb41845}{methods}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{cors_2lib_2index_8js_a2c3b796a25ec28aeab975e2c24a30fda_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{cors_2lib_2index_8js_a9756f99b07b428a841cb0010a5dbd7ee}\index{index.js@{index.js}!configureOrigin@{configureOrigin}}
+\index{configureOrigin@{configureOrigin}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{configureOrigin()}{configureOrigin()}}
+{\footnotesize\ttfamily \label{cors_2lib_2index_8js_a9756f99b07b428a841cb0010a5dbd7ee} 
+function configure\+Origin (\begin{DoxyParamCaption}\item[{}]{options}{, }\item[{}]{req}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7f2cb2fcdd79bf72cefd29b7bc2d10fa}{headers}}, \mbox{\hyperlink{cors_2lib_2index_8js_ac97356ee0b4330ba82c6d335a0b0f6bc}{is\+Origin\+Allowed()}}, \mbox{\hyperlink{firebase-admin_2lib_2utils_2validator_8js_a2988d5b8995beaf8d6e5cf5a927d67a0}{is\+String}}, \mbox{\hyperlink{agent-base_2dist_2helpers_8js_a960c3c3c7bce40c2aa54b029b3dbb9c8}{req}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=281pt]{cors_2lib_2index_8js_a9756f99b07b428a841cb0010a5dbd7ee_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{cors_2lib_2index_8js_a9756f99b07b428a841cb0010a5dbd7ee_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{cors_2lib_2index_8js_a10a68fce9db730423ebdec1e8eda23bc}\index{index.js@{index.js}!cors@{cors}}
+\index{cors@{cors}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{cors()}{cors()}}
+{\footnotesize\ttfamily \label{cors_2lib_2index_8js_a10a68fce9db730423ebdec1e8eda23bc} 
+function cors (\begin{DoxyParamCaption}\item[{}]{options}{, }\item[{}]{req}{, }\item[{}]{res}{, }\item[{}]{next}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{cors_2lib_2index_8js_a7929eb32713255a0a5e0c5dda5e1d209}{apply\+Headers()}}, \mbox{\hyperlink{cors_2lib_2index_8js_a12f32303cfca4712e542d70c7acd4031}{configure\+Allowed\+Headers()}}, \mbox{\hyperlink{cors_2lib_2index_8js_a7ab3e309f3f7b55ef5441daea411be71}{configure\+Credentials()}}, \mbox{\hyperlink{cors_2lib_2index_8js_aa26ac86d723166aa232c9bbbb5e139f2}{configure\+Exposed\+Headers()}}, \mbox{\hyperlink{cors_2lib_2index_8js_a83a3d4e035b033f67770a617609b025f}{configure\+Max\+Age()}}, \mbox{\hyperlink{cors_2lib_2index_8js_a2c3b796a25ec28aeab975e2c24a30fda}{configure\+Methods()}}, \mbox{\hyperlink{cors_2lib_2index_8js_a9756f99b07b428a841cb0010a5dbd7ee}{configure\+Origin()}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7f2cb2fcdd79bf72cefd29b7bc2d10fa}{headers}}, \mbox{\hyperlink{lodash_2method_8js_a2f565198b0a61cb8648a01f0d9617cd7}{method}}, \mbox{\hyperlink{protobufjs_2dist_2protobuf_8js_adc8497f1b8fa9c7bee4a53c25c244a66}{next()}}, \mbox{\hyperlink{agent-base_2dist_2helpers_8js_a960c3c3c7bce40c2aa54b029b3dbb9c8}{req}}, and \mbox{\hyperlink{express_2lib_2express_8js_abde3c35e3bb7e5225dd7f234c685329c}{res}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{cors_2lib_2index_8js_a10a68fce9db730423ebdec1e8eda23bc_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{cors_2lib_2index_8js_ac97356ee0b4330ba82c6d335a0b0f6bc}\index{index.js@{index.js}!isOriginAllowed@{isOriginAllowed}}
+\index{isOriginAllowed@{isOriginAllowed}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{isOriginAllowed()}{isOriginAllowed()}}
+{\footnotesize\ttfamily \label{cors_2lib_2index_8js_ac97356ee0b4330ba82c6d335a0b0f6bc} 
+function is\+Origin\+Allowed (\begin{DoxyParamCaption}\item[{}]{origin}{, }\item[{}]{allowed\+Origin}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{src_2util_2minimal_8js_a325c4e317c38d8497130ebce7670be2f}{Array}}, \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}, \mbox{\hyperlink{cors_2lib_2index_8js_ac97356ee0b4330ba82c6d335a0b0f6bc}{is\+Origin\+Allowed()}}, and \mbox{\hyperlink{firebase-admin_2lib_2utils_2validator_8js_a2988d5b8995beaf8d6e5cf5a927d67a0}{is\+String}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{cors_2lib_2index_8js_ac97356ee0b4330ba82c6d335a0b0f6bc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{cors_2lib_2index_8js_ac97356ee0b4330ba82c6d335a0b0f6bc_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{cors_2lib_2index_8js_a39f2d5c2bbf85c7aff74ebb4579cf074}\index{index.js@{index.js}!isString@{isString}}
+\index{isString@{isString}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{isString()}{isString()}}
+{\footnotesize\ttfamily \label{cors_2lib_2index_8js_a39f2d5c2bbf85c7aff74ebb4579cf074} 
+function is\+String (\begin{DoxyParamCaption}\item[{}]{s}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{ordered-map_8min_8js_ad9a7d92cb87932d25187fdec3ba1b621}{s}}.
+
+\Hypertarget{cors_2lib_2index_8js_a35fdceb48199b33a2b09febee98f180d}\index{index.js@{index.js}!middlewareWrapper@{middlewareWrapper}}
+\index{middlewareWrapper@{middlewareWrapper}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{middlewareWrapper()}{middlewareWrapper()}}
+{\footnotesize\ttfamily \label{cors_2lib_2index_8js_a35fdceb48199b33a2b09febee98f180d} 
+function middleware\+Wrapper (\begin{DoxyParamCaption}\item[{}]{o}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{cors_2lib_2index_8js_a22b5a735edb78e9f8fdfb7618dc7a6b7}{assign}}, \mbox{\hyperlink{server_8js_a2481c912250fa1495a111ba4e7a66d07}{cors}}, \mbox{\hyperlink{bin_2concurrently_8js_aa653ef4c1afb65b8238508c53e164b58}{defaults}}, \mbox{\hyperlink{protobufjs_2dist_2protobuf_8js_adc8497f1b8fa9c7bee4a53c25c244a66}{next()}}, \mbox{\hyperlink{uuid_8min_8js_a400dc8109620963da8314d4bdfa14f83}{o}}, \mbox{\hyperlink{agent-base_2dist_2helpers_8js_a960c3c3c7bce40c2aa54b029b3dbb9c8}{req}}, and \mbox{\hyperlink{express_2lib_2express_8js_abde3c35e3bb7e5225dd7f234c685329c}{res}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{cors_2lib_2index_8js_a35fdceb48199b33a2b09febee98f180d_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{cors_2lib_2index_8js_a22b5a735edb78e9f8fdfb7618dc7a6b7}\index{index.js@{index.js}!assign@{assign}}
+\index{assign@{assign}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{assign}{assign}}
+{\footnotesize\ttfamily \label{cors_2lib_2index_8js_a22b5a735edb78e9f8fdfb7618dc7a6b7} 
+var assign = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}}-\/assign\textquotesingle{})}
+
+\Hypertarget{cors_2lib_2index_8js_a25652520ac081f98103987b0e68544cf}\index{index.js@{index.js}!defaults@{defaults}}
+\index{defaults@{defaults}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{defaults}{defaults}}
+{\footnotesize\ttfamily \label{cors_2lib_2index_8js_a25652520ac081f98103987b0e68544cf} 
+var defaults}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \ \ origin:\ \textcolor{charliteral}{'*'},}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a04d30fa6e159a438c5fe8d248cb41845}{methods}}:\ \textcolor{stringliteral}{'GET,HEAD,PUT,PATCH,POST,DELETE'},}
+\DoxyCodeLine{\ \ \ \ preflightContinue:\ \textcolor{keyword}{false},}
+\DoxyCodeLine{\ \ \ \ optionsSuccessStatus:\ 204}
+\DoxyCodeLine{\ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{cors_2lib_2index_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\index{index.js@{index.js}!exports@{exports}}
+\index{exports@{exports}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \label{cors_2lib_2index_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports = \mbox{\hyperlink{cors_2lib_2index_8js_a35fdceb48199b33a2b09febee98f180d}{middleware\+Wrapper}}}
+
+\Hypertarget{cors_2lib_2index_8js_a2222d7dc84a3b14edb06515136c7d0a5}\index{index.js@{index.js}!vary@{vary}}
+\index{vary@{vary}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{vary}{vary}}
+{\footnotesize\ttfamily \label{cors_2lib_2index_8js_a2222d7dc84a3b14edb06515136c7d0a5} 
+\mbox{\hyperlink{express_2lib_2express_8js_abde3c35e3bb7e5225dd7f234c685329c}{res}} vary = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}vary\textquotesingle{})}
+
+Add {\ttfamily field} to Vary. If already present in the Vary set, then this call is simply ignored.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Array\texorpdfstring{$\vert$}{|}\+String\}} & field \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Server\+Response\} for chaining 
+\end{DoxyReturn}

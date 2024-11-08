@@ -1,0 +1,12 @@
+<map id="middlewareWrapper" name="middlewareWrapper">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,141,55"/>
+<area shape="rect" id="Node000002" href="$protobufjs_2dist_2protobuf_8js.html#adc8497f1b8fa9c7bee4a53c25c244a66" title=" " alt="" coords="189,29,235,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="141,40,173,40,173,45,141,45"/>
+<area shape="rect" id="Node000003" href="$protobufjs_2dist_2protobuf_8js.html#a74d7fa31d45064974a0c297422d3c0c5" title=" " alt="" coords="517,5,621,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="235,38,502,20,502,25,236,43"/>
+<area shape="rect" id="Node000004" href="$protobufjs_2dist_2protobuf_8js.html#afd366b4e60dba7acb371422d6dddcc64" title=" " alt="" coords="283,55,469,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="236,43,274,49,273,54,235,48"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="429,51,502,33,503,38,430,57"/>
+<area shape="rect" id="Node000005" href="$_doc_type_reader_8js.html#a14b5fcc27a4889161d94c35f6a630cea" title=" " alt="" coords="525,55,613,80"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="470,65,509,65,509,70,470,70"/>
+</map>

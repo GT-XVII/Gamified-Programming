@@ -1,0 +1,54 @@
+\doxysection{backend/node\+\_\+modules/jwks-\/rsa/src/wrappers/cache.js File Reference}
+\hypertarget{cache_8js}{}\label{cache_8js}\index{backend/node\_modules/jwks-\/rsa/src/wrappers/cache.js@{backend/node\_modules/jwks-\/rsa/src/wrappers/cache.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{cache_8js_afe52b2fb123385ffcd540e0199422337}{cache\+Wrapper}} (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af46081dcabb4da1ee7ca00228506bcb7}{client}}, \{ cache\+Max\+Entries=5, cache\+Max\+Age=600000 \})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{cache_8js_a7343f0c6712bd65d3d51282ddbf80fe2}{logger}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}\mbox{\hyperlink{application_8js_a651046067579e48d7f0d03ce38dc7cf8}{debug}}\textquotesingle{})(\textquotesingle{}\mbox{\hyperlink{jwt_8js_ada30f8b6b63870d89a3c0afdd231fe92}{jwks}}\textquotesingle{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{cache_8js_ad8d2ef87b1271e61b182204498db7069}{memoizer}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}lru-\/memoizer\textquotesingle{})
+\item 
+\mbox{\hyperlink{cache_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \{ \mbox{\hyperlink{_0dgoogle-cloud_2promisify_2build_2src_2index_8js_a06546af61e059a2b1f9579214348f22d}{promisify}}, \mbox{\hyperlink{_0dgoogle-cloud_2promisify_2build_2src_2index_8js_afd444cb22e22c8661a1eb49bf80ebc50}{callbackify}} \} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}}\textquotesingle{})
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{cache_8js_af9407f361b2d982c5af536898b63fc11}{default}} = \mbox{\hyperlink{cache_8js_afe52b2fb123385ffcd540e0199422337}{cache\+Wrapper}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{cache_8js_afe52b2fb123385ffcd540e0199422337}\index{cache.js@{cache.js}!cacheWrapper@{cacheWrapper}}
+\index{cacheWrapper@{cacheWrapper}!cache.js@{cache.js}}
+\doxysubsubsection{\texorpdfstring{cacheWrapper()}{cacheWrapper()}}
+{\footnotesize\ttfamily \label{cache_8js_afe52b2fb123385ffcd540e0199422337} 
+function cache\+Wrapper (\begin{DoxyParamCaption}\item[{}]{client}{, }\item[{}]{\{ cache\+Max\+Entries=5, cache\+Max\+Age=600000 \}}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{cache_8js_a92b303b76a3f942ea819498907d5e83c}\index{cache.js@{cache.js}!const@{const}}
+\index{const@{const}!cache.js@{cache.js}}
+\doxysubsubsection{\texorpdfstring{const}{const}}
+{\footnotesize\ttfamily \label{cache_8js_a92b303b76a3f942ea819498907d5e83c} 
+const \{ \mbox{\hyperlink{_0dgoogle-cloud_2promisify_2build_2src_2index_8js_a06546af61e059a2b1f9579214348f22d}{promisify}}, \mbox{\hyperlink{_0dgoogle-cloud_2promisify_2build_2src_2index_8js_afd444cb22e22c8661a1eb49bf80ebc50}{callbackify}} \} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}}\textquotesingle{})}
+
+\Hypertarget{cache_8js_af9407f361b2d982c5af536898b63fc11}\index{cache.js@{cache.js}!default@{default}}
+\index{default@{default}!cache.js@{cache.js}}
+\doxysubsubsection{\texorpdfstring{default}{default}}
+{\footnotesize\ttfamily \label{cache_8js_af9407f361b2d982c5af536898b63fc11} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} default = \mbox{\hyperlink{cache_8js_afe52b2fb123385ffcd540e0199422337}{cache\+Wrapper}}}
+
+\Hypertarget{cache_8js_a7343f0c6712bd65d3d51282ddbf80fe2}\index{cache.js@{cache.js}!logger@{logger}}
+\index{logger@{logger}!cache.js@{cache.js}}
+\doxysubsubsection{\texorpdfstring{logger}{logger}}
+{\footnotesize\ttfamily \label{cache_8js_a7343f0c6712bd65d3d51282ddbf80fe2} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} logger = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}\mbox{\hyperlink{application_8js_a651046067579e48d7f0d03ce38dc7cf8}{debug}}\textquotesingle{})(\textquotesingle{}\mbox{\hyperlink{jwt_8js_ada30f8b6b63870d89a3c0afdd231fe92}{jwks}}\textquotesingle{})}
+
+\Hypertarget{cache_8js_ad8d2ef87b1271e61b182204498db7069}\index{cache.js@{cache.js}!memoizer@{memoizer}}
+\index{memoizer@{memoizer}!cache.js@{cache.js}}
+\doxysubsubsection{\texorpdfstring{memoizer}{memoizer}}
+{\footnotesize\ttfamily \label{cache_8js_ad8d2ef87b1271e61b182204498db7069} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} memoizer = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}lru-\/memoizer\textquotesingle{})}
+

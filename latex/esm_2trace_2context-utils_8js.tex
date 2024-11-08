@@ -1,0 +1,150 @@
+\doxysection{backend/node\+\_\+modules/@opentelemetry/api/build/esm/trace/context-\/utils.js File Reference}
+\hypertarget{esm_2trace_2context-utils_8js}{}\label{esm_2trace_2context-utils_8js}\index{backend/node\_modules/"@opentelemetry/api/build/esm/trace/context-\/utils.js@{backend/node\_modules/"@opentelemetry/api/build/esm/trace/context-\/utils.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function export \mbox{\hyperlink{esm_2trace_2context-utils_8js_a0e35142d08b28af05bf0b1549c80cddc}{get\+Span}} (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}})
+\item 
+function export \mbox{\hyperlink{esm_2trace_2context-utils_8js_a2617de420ac05aacf018196940d6a260}{get\+Active\+Span}} ()
+\item 
+function export \mbox{\hyperlink{esm_2trace_2context-utils_8js_ab08a2205d9da6ff03a4b5be612f8e67b}{set\+Span}} (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}}, span)
+\item 
+function export \mbox{\hyperlink{esm_2trace_2context-utils_8js_acc8cf44d1dc7a900693f32a3aa35075c}{delete\+Span}} (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}})
+\item 
+function export \mbox{\hyperlink{esm_2trace_2context-utils_8js_a9be67d437a7b6de67f4f95d255b04f05}{set\+Span\+Context}} (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}}, span\+Context)
+\item 
+function export \mbox{\hyperlink{esm_2trace_2context-utils_8js_a63499bb6c05c5b6cd8eb9ecfdb4bcde2}{get\+Span\+Context}} (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{esm_2trace_2context-utils_8js_a59be084da8908b7d77ff34b25cd84488}{import}} \{ \mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2index_8js_a148528b1b092ddb249ae8cc4a59b10b3}{create\+Context\+Key}} \} from \textquotesingle{}../\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}}/\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}}\textquotesingle{}
+\item 
+var \mbox{\hyperlink{esm_2trace_2context-utils_8js_a74d27a3cd738a3090b9b272275f74689}{SPAN\+\_\+\+KEY}} = \mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2index_8js_a148528b1b092ddb249ae8cc4a59b10b3}{create\+Context\+Key}}(\textquotesingle{}Open\+Telemetry Context Key SPAN\textquotesingle{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{esm_2trace_2context-utils_8js_acc8cf44d1dc7a900693f32a3aa35075c}\index{context-\/utils.js@{context-\/utils.js}!deleteSpan@{deleteSpan}}
+\index{deleteSpan@{deleteSpan}!context-\/utils.js@{context-\/utils.js}}
+\doxysubsubsection{\texorpdfstring{deleteSpan()}{deleteSpan()}}
+{\footnotesize\ttfamily \label{esm_2trace_2context-utils_8js_acc8cf44d1dc7a900693f32a3aa35075c} 
+function export delete\+Span (\begin{DoxyParamCaption}\item[{}]{context}{}\end{DoxyParamCaption})}
+
+Remove current span stored in the context
+
+
+\begin{DoxyParams}{Parameters}
+{\em context} & context to delete span from \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}}, and \mbox{\hyperlink{esm_2trace_2context-utils_8js_a74d27a3cd738a3090b9b272275f74689}{SPAN\+\_\+\+KEY}}.
+
+\Hypertarget{esm_2trace_2context-utils_8js_a2617de420ac05aacf018196940d6a260}\index{context-\/utils.js@{context-\/utils.js}!getActiveSpan@{getActiveSpan}}
+\index{getActiveSpan@{getActiveSpan}!context-\/utils.js@{context-\/utils.js}}
+\doxysubsubsection{\texorpdfstring{getActiveSpan()}{getActiveSpan()}}
+{\footnotesize\ttfamily \label{esm_2trace_2context-utils_8js_a2617de420ac05aacf018196940d6a260} 
+function export get\+Active\+Span (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the span from the current context, if one exists. 
+
+References \mbox{\hyperlink{class_context_a_p_i_a8136f648f3e26cd636c9c1eb3e65fe6b}{Context\+API\+::get\+Instance()}}, and \mbox{\hyperlink{src_2trace_2context-utils_8js_a48993423c1dbbe0ed0e892ee311b48d8}{get\+Span}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{esm_2trace_2context-utils_8js_a2617de420ac05aacf018196940d6a260_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{esm_2trace_2context-utils_8js_a0e35142d08b28af05bf0b1549c80cddc}\index{context-\/utils.js@{context-\/utils.js}!getSpan@{getSpan}}
+\index{getSpan@{getSpan}!context-\/utils.js@{context-\/utils.js}}
+\doxysubsubsection{\texorpdfstring{getSpan()}{getSpan()}}
+{\footnotesize\ttfamily \label{esm_2trace_2context-utils_8js_a0e35142d08b28af05bf0b1549c80cddc} 
+function export get\+Span (\begin{DoxyParamCaption}\item[{}]{context}{}\end{DoxyParamCaption})}
+
+Return the span if one exists
+
+
+\begin{DoxyParams}{Parameters}
+{\em context} & context to get span from \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}}, \mbox{\hyperlink{esm_2trace_2context-utils_8js_a74d27a3cd738a3090b9b272275f74689}{SPAN\+\_\+\+KEY}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}.
+
+\Hypertarget{esm_2trace_2context-utils_8js_a63499bb6c05c5b6cd8eb9ecfdb4bcde2}\index{context-\/utils.js@{context-\/utils.js}!getSpanContext@{getSpanContext}}
+\index{getSpanContext@{getSpanContext}!context-\/utils.js@{context-\/utils.js}}
+\doxysubsubsection{\texorpdfstring{getSpanContext()}{getSpanContext()}}
+{\footnotesize\ttfamily \label{esm_2trace_2context-utils_8js_a63499bb6c05c5b6cd8eb9ecfdb4bcde2} 
+function export get\+Span\+Context (\begin{DoxyParamCaption}\item[{}]{context}{}\end{DoxyParamCaption})}
+
+Get the span context of the span if it exists.
+
+
+\begin{DoxyParams}{Parameters}
+{\em context} & context to get values from \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{logger_2dist_2esm_2index_8esm5_8js_a0adf123df8967a14b5bdd9ff3bbe2d0c}{\+\_\+a}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}}, and \mbox{\hyperlink{src_2trace_2context-utils_8js_a48993423c1dbbe0ed0e892ee311b48d8}{get\+Span}}.
+
+\Hypertarget{esm_2trace_2context-utils_8js_ab08a2205d9da6ff03a4b5be612f8e67b}\index{context-\/utils.js@{context-\/utils.js}!setSpan@{setSpan}}
+\index{setSpan@{setSpan}!context-\/utils.js@{context-\/utils.js}}
+\doxysubsubsection{\texorpdfstring{setSpan()}{setSpan()}}
+{\footnotesize\ttfamily \label{esm_2trace_2context-utils_8js_ab08a2205d9da6ff03a4b5be612f8e67b} 
+function export set\+Span (\begin{DoxyParamCaption}\item[{}]{context}{, }\item[{}]{span}{}\end{DoxyParamCaption})}
+
+Set the span on a context
+
+
+\begin{DoxyParams}{Parameters}
+{\em context} & context to use as parent \\
+\hline
+{\em span} & span to set active \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}}, and \mbox{\hyperlink{esm_2trace_2context-utils_8js_a74d27a3cd738a3090b9b272275f74689}{SPAN\+\_\+\+KEY}}.
+
+\Hypertarget{esm_2trace_2context-utils_8js_a9be67d437a7b6de67f4f95d255b04f05}\index{context-\/utils.js@{context-\/utils.js}!setSpanContext@{setSpanContext}}
+\index{setSpanContext@{setSpanContext}!context-\/utils.js@{context-\/utils.js}}
+\doxysubsubsection{\texorpdfstring{setSpanContext()}{setSpanContext()}}
+{\footnotesize\ttfamily \label{esm_2trace_2context-utils_8js_a9be67d437a7b6de67f4f95d255b04f05} 
+function export set\+Span\+Context (\begin{DoxyParamCaption}\item[{}]{context}{, }\item[{}]{span\+Context}{}\end{DoxyParamCaption})}
+
+Wrap span context in a Noop\+Span and set as span in a new context
+
+
+\begin{DoxyParams}{Parameters}
+{\em context} & context to set active span on \\
+\hline
+{\em span\+Context} & span context to be wrapped \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}}, \mbox{\hyperlink{esm_2trace_2_non_recording_span_8js_a1a557bfacd914902478ad449bd255817}{Non\+Recording\+Span}}, and \mbox{\hyperlink{src_2trace_2context-utils_8js_ae4d08635a1cc2f820052bdcebf2ae95f}{set\+Span}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{esm_2trace_2context-utils_8js_a59be084da8908b7d77ff34b25cd84488}\index{context-\/utils.js@{context-\/utils.js}!import@{import}}
+\index{import@{import}!context-\/utils.js@{context-\/utils.js}}
+\doxysubsubsection{\texorpdfstring{import}{import}}
+{\footnotesize\ttfamily \label{esm_2trace_2context-utils_8js_a59be084da8908b7d77ff34b25cd84488} 
+import \{ \mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2index_8js_a148528b1b092ddb249ae8cc4a59b10b3}{create\+Context\+Key}} \} from \textquotesingle{}../\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}}/\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}}\textquotesingle{}}
+
+\Hypertarget{esm_2trace_2context-utils_8js_a74d27a3cd738a3090b9b272275f74689}\index{context-\/utils.js@{context-\/utils.js}!SPAN\_KEY@{SPAN\_KEY}}
+\index{SPAN\_KEY@{SPAN\_KEY}!context-\/utils.js@{context-\/utils.js}}
+\doxysubsubsection{\texorpdfstring{SPAN\_KEY}{SPAN\_KEY}}
+{\footnotesize\ttfamily \label{esm_2trace_2context-utils_8js_a74d27a3cd738a3090b9b272275f74689} 
+var SPAN\+\_\+\+KEY = \mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2index_8js_a148528b1b092ddb249ae8cc4a59b10b3}{create\+Context\+Key}}(\textquotesingle{}Open\+Telemetry Context Key SPAN\textquotesingle{})}
+
+span key 

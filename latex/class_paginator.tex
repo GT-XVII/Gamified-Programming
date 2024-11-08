@@ -1,0 +1,177 @@
+\doxysection{Paginator Class Reference}
+\hypertarget{class_paginator}{}\label{class_paginator}\index{Paginator@{Paginator}}
+
+
+Collaboration diagram for Paginator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{class_paginator__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_paginator_ace1191634885d080cabbb06dd91ae44f}{extend}} (\mbox{\hyperlink{node-forge_2lib_2asn1_8js_ac87fbdbd626d4ab37ce017be68cc3144}{Class}}, method\+Names)
+\item 
+\mbox{\hyperlink{class_paginator_ab905a344c42af204ed1217605c7ecde8}{streamify}} (method\+Name)
+\item 
+\mbox{\hyperlink{class_paginator_a9c218ae744ec675b988cc184fb751c43}{parse\+Arguments\+\_\+}} (\mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_aeda6958b2fc8494c5a17f91600065eb9}{args}})
+\item 
+\mbox{\hyperlink{class_paginator_aa7292a72a1ddd7999bfdcb1326fb99d9}{run\+\_\+}} (parsed\+Arguments, original\+Method)
+\item 
+\mbox{\hyperlink{class_paginator_a2c862264d451b9481920f5d1e7e30ff0}{run\+As\+Stream\+\_\+}} (parsed\+Arguments, original\+Method)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Developer Documentation
+
+paginator is used to auto-\/paginate {\ttfamily next\+Query} methods as well as streamifying them.
+
+Before\+:
+
+search.\+query(\textquotesingle{}done=true\textquotesingle{}, function(err, results, next\+Query) \{ search.\+query(next\+Query, function(err, results, next\+Query) \{\}); \});
+
+After\+:
+
+search.\+query(\textquotesingle{}done=true\textquotesingle{}, function(err, results) \{\});
+
+Methods to extend should be written to accept callbacks and return a {\ttfamily next\+Query}. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_paginator_ace1191634885d080cabbb06dd91ae44f}\index{Paginator@{Paginator}!extend@{extend}}
+\index{extend@{extend}!Paginator@{Paginator}}
+\doxysubsubsection{\texorpdfstring{extend()}{extend()}}
+{\footnotesize\ttfamily \label{class_paginator_ace1191634885d080cabbb06dd91ae44f} 
+Paginator\+::extend (\begin{DoxyParamCaption}\item[{}]{Class}{, }\item[{}]{method\+Names}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Cache the original method, then overwrite it on the Class\textquotesingle{}s prototype.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{function\}} & Class -\/ The parent class of the methods to extend. \\
+\hline
+{\em \{string\texorpdfstring{$\vert$}{|}string\mbox{[}$\,$\mbox{]}\}} & method\+Names -\/ Name(s) of the methods to extend. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_aeda6958b2fc8494c5a17f91600065eb9}{args}}, \mbox{\hyperlink{_0dgoogle-cloud_2paginator_2build_2src_2index_8js_ae934d3bd4185226cd851c4bb5b6cb74b}{arrify}}, \mbox{\hyperlink{node-forge_2lib_2asn1_8js_ac87fbdbd626d4ab37ce017be68cc3144}{Class}}, and \mbox{\hyperlink{_0dgoogle-cloud_2paginator_2build_2src_2index_8js_a37903c5925ec0ac9c386df049ad01331}{paginator}}.
+
+\Hypertarget{class_paginator_a9c218ae744ec675b988cc184fb751c43}\index{Paginator@{Paginator}!parseArguments\_@{parseArguments\_}}
+\index{parseArguments\_@{parseArguments\_}!Paginator@{Paginator}}
+\doxysubsubsection{\texorpdfstring{parseArguments\_()}{parseArguments\_()}}
+{\footnotesize\ttfamily \label{class_paginator_a9c218ae744ec675b988cc184fb751c43} 
+Paginator\+::parse\+Arguments\+\_\+ (\begin{DoxyParamCaption}\item[{}]{args}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Parse a pseudo-\/array {\ttfamily arguments} for a query and callback.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{array\}} & args -\/ The original {\ttfamily arguments} pseduo-\/array that the original method received. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_aeda6958b2fc8494c5a17f91600065eb9}{args}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a622460feeccdab6d8f307936fc6b36fb}{callback}}, \mbox{\hyperlink{_0dgoogle-cloud_2paginator_2build_2src_2index_8js_a91492657a38115d3423abd956a3821a4}{extend}}, and \mbox{\hyperlink{application_8js_a3934419f0f9a2068c705a0013b77fab3}{query}}.
+
+\Hypertarget{class_paginator_aa7292a72a1ddd7999bfdcb1326fb99d9}\index{Paginator@{Paginator}!run\_@{run\_}}
+\index{run\_@{run\_}!Paginator@{Paginator}}
+\doxysubsubsection{\texorpdfstring{run\_()}{run\_()}}
+{\footnotesize\ttfamily \label{class_paginator_aa7292a72a1ddd7999bfdcb1326fb99d9} 
+Paginator\+::run\+\_\+ (\begin{DoxyParamCaption}\item[{}]{parsed\+Arguments}{, }\item[{}]{original\+Method}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+This simply checks to see if {\ttfamily auto\+Paginate} is set or not, if it\textquotesingle{}s true then we buffer all results, otherwise simply call the original method.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{array\}} & parsed\+Arguments -\/ Parsed arguments from the original method call. \\
+\hline
+{\em \{object=\texorpdfstring{$\vert$}{|}string=\}} & parsed\+Arguments.\+query -\/ \doxylink{class_query}{Query} object. This is most commonly an object, but to make the API more simple, it can also be a string in some places. \\
+\hline
+{\em \{function=\}} & parsed\+Arguments.\+callback -\/ Callback function. \\
+\hline
+{\em \{boolean\}} & parsed\+Arguments.\+auto\+Paginate -\/ Auto-\/pagination enabled. \\
+\hline
+{\em \{boolean\}} & parsed\+Arguments.\+max\+Api\+Calls -\/ Maximum API calls to make. \\
+\hline
+{\em \{number\}} & parsed\+Arguments.\+max\+Results -\/ Maximum results to return. \\
+\hline
+{\em \{function\}} & original\+Method -\/ The cached method that accepts a callback and returns {\ttfamily next\+Query} to receive more results. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{src_2util_2minimal_8js_a325c4e317c38d8497130ebce7670be2f}{Array}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a622460feeccdab6d8f307936fc6b36fb}{callback}}, \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}, \mbox{\hyperlink{_0dgoogle-cloud_2paginator_2build_2src_2index_8js_a37903c5925ec0ac9c386df049ad01331}{paginator}}, \mbox{\hyperlink{__get_tag_8js_abace523389c17bce1848e3a427871700}{Promise}}, \mbox{\hyperlink{application_8js_a3934419f0f9a2068c705a0013b77fab3}{query}}, \mbox{\hyperlink{reject_8js_a94bc21104657e301a8ec194b529feaed}{reject()}}, \mbox{\hyperlink{_0dprotobufjs_2path_2index_8js_a2001ea102ec496ebdabe15e68493427a}{resolve}}, and \mbox{\hyperlink{debug_2src_2node_8js_a822bf74d422c61e6caa292f739dc4786}{stream}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{class_paginator_aa7292a72a1ddd7999bfdcb1326fb99d9_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_paginator_a2c862264d451b9481920f5d1e7e30ff0}\index{Paginator@{Paginator}!runAsStream\_@{runAsStream\_}}
+\index{runAsStream\_@{runAsStream\_}!Paginator@{Paginator}}
+\doxysubsubsection{\texorpdfstring{runAsStream\_()}{runAsStream\_()}}
+{\footnotesize\ttfamily \label{class_paginator_a2c862264d451b9481920f5d1e7e30ff0} 
+Paginator\+::run\+As\+Stream\+\_\+ (\begin{DoxyParamCaption}\item[{}]{parsed\+Arguments}{, }\item[{}]{original\+Method}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+This method simply calls the next\+Query recursively, emitting results to a stream. The stream ends when {\ttfamily next\+Query} is null.
+
+{\ttfamily max\+Results} will act as a cap for how many results are fetched and emitted to the stream.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{object=\texorpdfstring{$\vert$}{|}string=\}} & parsed\+Arguments.\+query -\/ \doxylink{class_query}{Query} object. This is most commonly an object, but to make the API more simple, it can also be a string in some places. \\
+\hline
+{\em \{function=\}} & parsed\+Arguments.\+callback -\/ Callback function. \\
+\hline
+{\em \{boolean\}} & parsed\+Arguments.\+auto\+Paginate -\/ Auto-\/pagination enabled. \\
+\hline
+{\em \{boolean\}} & parsed\+Arguments.\+max\+Api\+Calls -\/ Maximum API calls to make. \\
+\hline
+{\em \{number\}} & parsed\+Arguments.\+max\+Results -\/ Maximum results to return. \\
+\hline
+{\em \{function\}} & original\+Method -\/ The cached method that accepts a callback and returns {\ttfamily next\+Query} to receive more results. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{stream\} -\/ Readable object stream. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{_0dgoogle-cloud_2paginator_2build_2src_2index_8js_af4b589fbeab657ba23c196ac9f5ef544}{resource\+\_\+stream\+\_\+1}}.
+
+\Hypertarget{class_paginator_ab905a344c42af204ed1217605c7ecde8}\index{Paginator@{Paginator}!streamify@{streamify}}
+\index{streamify@{streamify}!Paginator@{Paginator}}
+\doxysubsubsection{\texorpdfstring{streamify()}{streamify()}}
+{\footnotesize\ttfamily \label{class_paginator_ab905a344c42af204ed1217605c7ecde8} 
+Paginator\+::streamify (\begin{DoxyParamCaption}\item[{}]{method\+Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Wraps paginated API calls in a readable object stream.
+
+This method simply calls the next\+Query recursively, emitting results to a stream. The stream ends when {\ttfamily next\+Query} is null.
+
+{\ttfamily max\+Results} will act as a cap for how many results are fetched and emitted to the stream.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & method\+Name -\/ Name of the method to streamify. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{function\} -\/ Wrapped function. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_aeda6958b2fc8494c5a17f91600065eb9}{args}}, and \mbox{\hyperlink{_0dgoogle-cloud_2paginator_2build_2src_2index_8js_a37903c5925ec0ac9c386df049ad01331}{paginator}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/@google-\/cloud/paginator/build/src/\mbox{\hyperlink{_0dgoogle-cloud_2paginator_2build_2src_2index_8js}{index.\+js}}\end{DoxyCompactItemize}

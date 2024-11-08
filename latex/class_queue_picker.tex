@@ -1,0 +1,46 @@
+\doxysection{Queue\+Picker Class Reference}
+\hypertarget{class_queue_picker}{}\label{class_queue_picker}\index{QueuePicker@{QueuePicker}}
+
+
+Collaboration diagram for Queue\+Picker\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=153pt]{class_queue_picker__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_queue_picker_a13a2bde2460feb7f3061b42d8f9da3ef}{constructor}} (load\+Balancer, child\+Picker)
+\item 
+\mbox{\hyperlink{class_queue_picker_a74e1dcdf0a67f3e6f2bc09c904741247}{pick}} (pick\+Args)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_a}{A} standard picker representing a load balancer in the IDLE or CONNECTING state. Always responds to every pick request with a QUEUE pick result indicating that the pick should be tried again with the next {\ttfamily Picker}. Also reports back to the load balancer that a connection should be established once any pick is attempted. If the child\+Picker is provided, delegate to it instead of returning the hardcoded QUEUE pick result, but still calls exit\+Idle. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_queue_picker_a13a2bde2460feb7f3061b42d8f9da3ef}\index{QueuePicker@{QueuePicker}!constructor@{constructor}}
+\index{constructor@{constructor}!QueuePicker@{QueuePicker}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_queue_picker_a13a2bde2460feb7f3061b42d8f9da3ef} 
+Queue\+Picker\+::constructor (\begin{DoxyParamCaption}\item[{}]{load\+Balancer}{, }\item[{}]{child\+Picker}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_queue_picker_a74e1dcdf0a67f3e6f2bc09c904741247}\index{QueuePicker@{QueuePicker}!pick@{pick}}
+\index{pick@{pick}!QueuePicker@{QueuePicker}}
+\doxysubsubsection{\texorpdfstring{pick()}{pick()}}
+{\footnotesize\ttfamily \label{class_queue_picker_a74e1dcdf0a67f3e6f2bc09c904741247} 
+Queue\+Picker\+::pick (\begin{DoxyParamCaption}\item[{}]{pick\+Args}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{picker_8js_ae7760c6a990ea36879b6d090b5952365}{Pick\+Result\+Type}}, \mbox{\hyperlink{ipaddr_8min_8js_abcedab16429ea0641c6596f556f2e102}{process}}, and \mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2index_8js_aac9dfada3e10bfb087ebb0a95f284488}{status}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/@grpc/grpc-\/js/build/src/\mbox{\hyperlink{picker_8js}{picker.\+js}}\end{DoxyCompactItemize}

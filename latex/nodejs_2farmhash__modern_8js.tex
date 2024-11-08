@@ -1,0 +1,591 @@
+\doxysection{backend/node\+\_\+modules/farmhash-\/modern/bin/nodejs/farmhash\+\_\+modern.js File Reference}
+\hypertarget{nodejs_2farmhash__modern_8js}{}\label{nodejs_2farmhash__modern_8js}\index{backend/node\_modules/farmhash-\/modern/bin/nodejs/farmhash\_modern.js@{backend/node\_modules/farmhash-\/modern/bin/nodejs/farmhash\_modern.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{nodejs_2farmhash__modern_8js_a042629e282f3cde152f7c9b21a5d6492}{get\+Object}} (idx)
+\item 
+function \mbox{\hyperlink{nodejs_2farmhash__modern_8js_a9df3519438d84789ef772225c376a2e4}{drop\+Object}} (idx)
+\item 
+function \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ae5a83a74d50b02ea1edc67cb90710e8d}{take\+Object}} (idx)
+\item 
+function \mbox{\hyperlink{nodejs_2farmhash__modern_8js_abfec79de26a8a9cbb4412d8b0cf7d794}{get\+Uint8\+Memory0}} ()
+\item 
+function \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ac3add15480b9b60a322d5a4ff40046b4}{pass\+Array8\+To\+Wasm0}} (arg, malloc)
+\item 
+function \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ad7d15a9e18094b62e099664a79d4320f}{get\+String\+From\+Wasm0}} (ptr, len)
+\item 
+function \mbox{\hyperlink{nodejs_2farmhash__modern_8js_acf128931b05550bffb7544e6752a7f0e}{add\+Heap\+Object}} (\mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}})
+\item 
+function \mbox{\hyperlink{nodejs_2farmhash__modern_8js_aa56d951eb80d583af68c6a6f18199502}{pass\+String\+To\+Wasm0}} (arg, malloc, realloc)
+\item 
+function \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab379d8e7e66c1bcc875e757d54e9428f}{get\+Int32\+Memory0}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+let \mbox{\hyperlink{nodejs_2farmhash__modern_8js_a2a125ccb72874a580033d120491e5037}{imports}} = \{\}
+\item 
+let \mbox{\hyperlink{nodejs_2farmhash__modern_8js_a4cb9e5a3fc964f13f8bd199f0ebe907f}{wasm}} = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{wasm\+Instance.\+exports}}
+\item 
+\mbox{\hyperlink{nodejs_2farmhash__modern_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \{ Text\+Decoder, Text\+Encoder \} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\`{}\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}}\`{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{nodejs_2farmhash__modern_8js_aed0d152ee2873d7093a25bd1b2e15ff8}{heap}} = new \mbox{\hyperlink{src_2util_2minimal_8js_a325c4e317c38d8497130ebce7670be2f}{Array}}(128).\mbox{\hyperlink{fill_8js_af91832b9a8f15ea8620a69271157f155}{fill}}(\mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}})
+\item 
+let \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ae2073a3021b708ac4c79c15f9a427d79}{heap\+\_\+next}} = \mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a7fdcf4c82c9946bf2b0b80829a7ab230}{heap.\+length}}
+\item 
+let \mbox{\hyperlink{nodejs_2farmhash__modern_8js_a24257cc511b581e2a8136526ce0e5021}{cached\+Uint8\+Memory0}} = null
+\item 
+let \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ad2ed939b9838baba3bd1b29e8dba9e64}{WASM\+\_\+\+VECTOR\+\_\+\+LEN}} = 0
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ad5203ff498a7add7d87bc624d3b5bea9}{fingerprint32}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{nodejs_2farmhash__modern_8js_a33515a003133ae18946b47886450ab4e}{fingerprint64}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{nodejs_2farmhash__modern_8js_a67a854449225c057bdbe63b5677c7595}{bigquery\+\_\+fingerprint}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{nodejs_2farmhash__modern_8js_a62bec282dd3e6d490c654b0ac7678ac4}{hash32}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ad6e25edeabc208021b269f18b5b0a849}{hash32\+\_\+with\+\_\+seed}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{nodejs_2farmhash__modern_8js_a171327d54f1bdf3316acd135633a3fc1}{hash64}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ae8e64257a3f7be5169469171f3a91946}{hash64\+\_\+with\+\_\+seed}}
+\item 
+let \mbox{\hyperlink{nodejs_2farmhash__modern_8js_a252cfb1ce9ed9d1d445f374ced633127}{cached\+Text\+Decoder}} = new Text\+Decoder(\textquotesingle{}utf-\/8\textquotesingle{}, \{ ignore\+BOM\+: true, fatal\+: true \})
+\item 
+let \mbox{\hyperlink{nodejs_2farmhash__modern_8js_a456472675a47c1041df901e6d5467159}{cached\+Text\+Encoder}} = new Text\+Encoder(\textquotesingle{}utf-\/8\textquotesingle{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{nodejs_2farmhash__modern_8js_a8982393ee80db7cfb2c41d9b774bfc8d}{encode\+String}}
+\item 
+let \mbox{\hyperlink{nodejs_2farmhash__modern_8js_aa7726dc350c8648317c8c492a6016c78}{cached\+Int32\+Memory0}} = null
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{nodejs_2farmhash__modern_8js_a69bb8605317437aff3c02779bb375152}{\+\_\+\+\_\+wbg\+\_\+new\+\_\+abda76e883ba8a5f}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ad386eb5bd275f713ac1c6b774904cbd7}{\+\_\+\+\_\+wbg\+\_\+stack\+\_\+658279fe44541cf6}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{nodejs_2farmhash__modern_8js_a33f14185e0892fb6345a30d90a3c7f02}{\+\_\+\+\_\+wbg\+\_\+error\+\_\+f851667af71bcfc6}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{nodejs_2farmhash__modern_8js_a8ba6cbb84e05e543037bae1e8dbaf6d0}{\+\_\+\+\_\+wbindgen\+\_\+object\+\_\+drop\+\_\+ref}}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{nodejs_2farmhash__modern_8js_a1fdc7709faf62dce60620fb3f9d3453c}{path}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}path\textquotesingle{}).\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a500bc97a63b7c35b84493a7f90ef44d6}{join}}(\+\_\+\+\_\+dirname, \textquotesingle{}\mbox{\hyperlink{bundler_2farmhash__modern_8js_afc5e24a838f1ae8252b3bd04c009345f}{farmhash\+\_\+modern\+\_\+bg.\+wasm}}\textquotesingle{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}\mbox{\hyperlink{cjs_2src_2bucket_8js_a2e47e1f004220675d0fa39b8255bd78f}{fs}}\textquotesingle{}).read\+File\+Sync(\mbox{\hyperlink{cjs_2src_2bucket_8js_a1fdc7709faf62dce60620fb3f9d3453c}{path}})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{nodejs_2farmhash__modern_8js_aa49ccaefe3d5c5b291e40fe34d33aa75}{wasm\+Module}} = new Web\+Assembly.\+Module(\mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{nodejs_2farmhash__modern_8js_a104f2e0bc0527c9c8ddb6df4856f2d2a}{wasm\+Instance}} = new Web\+Assembly.\+Instance(\mbox{\hyperlink{nodejs_2farmhash__modern_8js_aa49ccaefe3d5c5b291e40fe34d33aa75}{wasm\+Module}}, \mbox{\hyperlink{nodejs_2farmhash__modern_8js_a2a125ccb72874a580033d120491e5037}{imports}})
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ad0d59ff741a28041aa7386039d07521c}{\+\_\+\+\_\+wasm}} = \mbox{\hyperlink{bundler_2farmhash__modern_8js_afc5e24a838f1ae8252b3bd04c009345f}{wasm}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{nodejs_2farmhash__modern_8js_acf128931b05550bffb7544e6752a7f0e}\index{farmhash\_modern.js@{farmhash\_modern.js}!addHeapObject@{addHeapObject}}
+\index{addHeapObject@{addHeapObject}!farmhash\_modern.js@{farmhash\_modern.js}}
+\doxysubsubsection{\texorpdfstring{addHeapObject()}{addHeapObject()}}
+{\footnotesize\ttfamily \label{nodejs_2farmhash__modern_8js_acf128931b05550bffb7544e6752a7f0e} 
+function add\+Heap\+Object (\begin{DoxyParamCaption}\item[{}]{obj}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{nodejs_2farmhash__modern_8js_aed0d152ee2873d7093a25bd1b2e15ff8}{heap}}, \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ae2073a3021b708ac4c79c15f9a427d79}{heap\+\_\+next}}, and \mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}.
+
+\Hypertarget{nodejs_2farmhash__modern_8js_a9df3519438d84789ef772225c376a2e4}\index{farmhash\_modern.js@{farmhash\_modern.js}!dropObject@{dropObject}}
+\index{dropObject@{dropObject}!farmhash\_modern.js@{farmhash\_modern.js}}
+\doxysubsubsection{\texorpdfstring{dropObject()}{dropObject()}}
+{\footnotesize\ttfamily \label{nodejs_2farmhash__modern_8js_a9df3519438d84789ef772225c376a2e4} 
+function drop\+Object (\begin{DoxyParamCaption}\item[{}]{idx}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{nodejs_2farmhash__modern_8js_aed0d152ee2873d7093a25bd1b2e15ff8}{heap}}, and \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ae2073a3021b708ac4c79c15f9a427d79}{heap\+\_\+next}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=243pt]{nodejs_2farmhash__modern_8js_a9df3519438d84789ef772225c376a2e4_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{nodejs_2farmhash__modern_8js_ab379d8e7e66c1bcc875e757d54e9428f}\index{farmhash\_modern.js@{farmhash\_modern.js}!getInt32Memory0@{getInt32Memory0}}
+\index{getInt32Memory0@{getInt32Memory0}!farmhash\_modern.js@{farmhash\_modern.js}}
+\doxysubsubsection{\texorpdfstring{getInt32Memory0()}{getInt32Memory0()}}
+{\footnotesize\ttfamily \label{nodejs_2farmhash__modern_8js_ab379d8e7e66c1bcc875e757d54e9428f} 
+function get\+Int32\+Memory0 (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{nodejs_2farmhash__modern_8js_aa7726dc350c8648317c8c492a6016c78}{cached\+Int32\+Memory0}}, and \mbox{\hyperlink{bundler_2farmhash__modern_8js_afc5e24a838f1ae8252b3bd04c009345f}{wasm}}.
+
+\Hypertarget{nodejs_2farmhash__modern_8js_a042629e282f3cde152f7c9b21a5d6492}\index{farmhash\_modern.js@{farmhash\_modern.js}!getObject@{getObject}}
+\index{getObject@{getObject}!farmhash\_modern.js@{farmhash\_modern.js}}
+\doxysubsubsection{\texorpdfstring{getObject()}{getObject()}}
+{\footnotesize\ttfamily \label{nodejs_2farmhash__modern_8js_a042629e282f3cde152f7c9b21a5d6492} 
+function get\+Object (\begin{DoxyParamCaption}\item[{}]{idx}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{nodejs_2farmhash__modern_8js_aed0d152ee2873d7093a25bd1b2e15ff8}{heap}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=237pt]{nodejs_2farmhash__modern_8js_a042629e282f3cde152f7c9b21a5d6492_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{nodejs_2farmhash__modern_8js_ad7d15a9e18094b62e099664a79d4320f}\index{farmhash\_modern.js@{farmhash\_modern.js}!getStringFromWasm0@{getStringFromWasm0}}
+\index{getStringFromWasm0@{getStringFromWasm0}!farmhash\_modern.js@{farmhash\_modern.js}}
+\doxysubsubsection{\texorpdfstring{getStringFromWasm0()}{getStringFromWasm0()}}
+{\footnotesize\ttfamily \label{nodejs_2farmhash__modern_8js_ad7d15a9e18094b62e099664a79d4320f} 
+function get\+String\+From\+Wasm0 (\begin{DoxyParamCaption}\item[{}]{ptr}{, }\item[{}]{len}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{nodejs_2farmhash__modern_8js_a252cfb1ce9ed9d1d445f374ced633127}{cached\+Text\+Decoder}}, and \mbox{\hyperlink{nodejs_2farmhash__modern_8js_abfec79de26a8a9cbb4412d8b0cf7d794}{get\+Uint8\+Memory0()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{nodejs_2farmhash__modern_8js_ad7d15a9e18094b62e099664a79d4320f_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{nodejs_2farmhash__modern_8js_abfec79de26a8a9cbb4412d8b0cf7d794}\index{farmhash\_modern.js@{farmhash\_modern.js}!getUint8Memory0@{getUint8Memory0}}
+\index{getUint8Memory0@{getUint8Memory0}!farmhash\_modern.js@{farmhash\_modern.js}}
+\doxysubsubsection{\texorpdfstring{getUint8Memory0()}{getUint8Memory0()}}
+{\footnotesize\ttfamily \label{nodejs_2farmhash__modern_8js_abfec79de26a8a9cbb4412d8b0cf7d794} 
+function get\+Uint8\+Memory0 (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{nodejs_2farmhash__modern_8js_a24257cc511b581e2a8136526ce0e5021}{cached\+Uint8\+Memory0}}, \mbox{\hyperlink{__clone_array_buffer_8js_a23efaf497399fa716c3e05b817cb7d0c}{Uint8\+Array}}, and \mbox{\hyperlink{bundler_2farmhash__modern_8js_afc5e24a838f1ae8252b3bd04c009345f}{wasm}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{nodejs_2farmhash__modern_8js_abfec79de26a8a9cbb4412d8b0cf7d794_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{nodejs_2farmhash__modern_8js_ac3add15480b9b60a322d5a4ff40046b4}\index{farmhash\_modern.js@{farmhash\_modern.js}!passArray8ToWasm0@{passArray8ToWasm0}}
+\index{passArray8ToWasm0@{passArray8ToWasm0}!farmhash\_modern.js@{farmhash\_modern.js}}
+\doxysubsubsection{\texorpdfstring{passArray8ToWasm0()}{passArray8ToWasm0()}}
+{\footnotesize\ttfamily \label{nodejs_2farmhash__modern_8js_ac3add15480b9b60a322d5a4ff40046b4} 
+function pass\+Array8\+To\+Wasm0 (\begin{DoxyParamCaption}\item[{}]{arg}{, }\item[{}]{malloc}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{nodejs_2farmhash__modern_8js_abfec79de26a8a9cbb4412d8b0cf7d794}{get\+Uint8\+Memory0()}}, and \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ad2ed939b9838baba3bd1b29e8dba9e64}{WASM\+\_\+\+VECTOR\+\_\+\+LEN}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{nodejs_2farmhash__modern_8js_ac3add15480b9b60a322d5a4ff40046b4_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{nodejs_2farmhash__modern_8js_aa56d951eb80d583af68c6a6f18199502}\index{farmhash\_modern.js@{farmhash\_modern.js}!passStringToWasm0@{passStringToWasm0}}
+\index{passStringToWasm0@{passStringToWasm0}!farmhash\_modern.js@{farmhash\_modern.js}}
+\doxysubsubsection{\texorpdfstring{passStringToWasm0()}{passStringToWasm0()}}
+{\footnotesize\ttfamily \label{nodejs_2farmhash__modern_8js_aa56d951eb80d583af68c6a6f18199502} 
+function pass\+String\+To\+Wasm0 (\begin{DoxyParamCaption}\item[{}]{arg}{, }\item[{}]{malloc}{, }\item[{}]{realloc}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a34083d02677ea6acceb641fa647bc25a}{buf}}, \mbox{\hyperlink{nodejs_2farmhash__modern_8js_a456472675a47c1041df901e6d5467159}{cached\+Text\+Encoder}}, \mbox{\hyperlink{nodejs_2farmhash__modern_8js_a8982393ee80db7cfb2c41d9b774bfc8d}{encode\+String}}, \mbox{\hyperlink{nodejs_2farmhash__modern_8js_abfec79de26a8a9cbb4412d8b0cf7d794}{get\+Uint8\+Memory0()}}, \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}, and \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ad2ed939b9838baba3bd1b29e8dba9e64}{WASM\+\_\+\+VECTOR\+\_\+\+LEN}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=315pt]{nodejs_2farmhash__modern_8js_aa56d951eb80d583af68c6a6f18199502_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{nodejs_2farmhash__modern_8js_ae5a83a74d50b02ea1edc67cb90710e8d}\index{farmhash\_modern.js@{farmhash\_modern.js}!takeObject@{takeObject}}
+\index{takeObject@{takeObject}!farmhash\_modern.js@{farmhash\_modern.js}}
+\doxysubsubsection{\texorpdfstring{takeObject()}{takeObject()}}
+{\footnotesize\ttfamily \label{nodejs_2farmhash__modern_8js_ae5a83a74d50b02ea1edc67cb90710e8d} 
+function take\+Object (\begin{DoxyParamCaption}\item[{}]{idx}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{nodejs_2farmhash__modern_8js_a9df3519438d84789ef772225c376a2e4}{drop\+Object()}}, and \mbox{\hyperlink{nodejs_2farmhash__modern_8js_a042629e282f3cde152f7c9b21a5d6492}{get\+Object()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=243pt]{nodejs_2farmhash__modern_8js_ae5a83a74d50b02ea1edc67cb90710e8d_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{nodejs_2farmhash__modern_8js_ad0d59ff741a28041aa7386039d07521c}\index{farmhash\_modern.js@{farmhash\_modern.js}!\_\_wasm@{\_\_wasm}}
+\index{\_\_wasm@{\_\_wasm}!farmhash\_modern.js@{farmhash\_modern.js}}
+\doxysubsubsection{\texorpdfstring{\_\_wasm}{\_\_wasm}}
+{\footnotesize\ttfamily \label{nodejs_2farmhash__modern_8js_ad0d59ff741a28041aa7386039d07521c} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \+\_\+\+\_\+wasm = \mbox{\hyperlink{bundler_2farmhash__modern_8js_afc5e24a838f1ae8252b3bd04c009345f}{wasm}}}
+
+\Hypertarget{nodejs_2farmhash__modern_8js_a33f14185e0892fb6345a30d90a3c7f02}\index{farmhash\_modern.js@{farmhash\_modern.js}!\_\_wbg\_error\_f851667af71bcfc6@{\_\_wbg\_error\_f851667af71bcfc6}}
+\index{\_\_wbg\_error\_f851667af71bcfc6@{\_\_wbg\_error\_f851667af71bcfc6}!farmhash\_modern.js@{farmhash\_modern.js}}
+\doxysubsubsection{\texorpdfstring{\_\_wbg\_error\_f851667af71bcfc6}{\_\_wbg\_error\_f851667af71bcfc6}}
+{\footnotesize\ttfamily \label{nodejs_2farmhash__modern_8js_a33f14185e0892fb6345a30d90a3c7f02} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \+\_\+\+\_\+wbg\+\_\+error\+\_\+f851667af71bcfc6}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(arg0,\ arg1)\ \{}
+\DoxyCodeLine{\ \ \ \ let\ deferred0\_0;}
+\DoxyCodeLine{\ \ \ \ let\ deferred0\_1;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ deferred0\_0\ =\ arg0;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ deferred0\_1\ =\ arg1;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ console.error(\mbox{\hyperlink{nodejs_2farmhash__modern_8js_ad7d15a9e18094b62e099664a79d4320f}{getStringFromWasm0}}(arg0,\ arg1));}
+\DoxyCodeLine{\ \ \ \ \}\ \textcolor{keywordflow}{finally}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{bundler_2farmhash__modern_8js_afc5e24a838f1ae8252b3bd04c009345f}{wasm}}.\_\_wbindgen\_free(deferred0\_0,\ deferred0\_1,\ 1);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{nodejs_2farmhash__modern_8js_a69bb8605317437aff3c02779bb375152}\index{farmhash\_modern.js@{farmhash\_modern.js}!\_\_wbg\_new\_abda76e883ba8a5f@{\_\_wbg\_new\_abda76e883ba8a5f}}
+\index{\_\_wbg\_new\_abda76e883ba8a5f@{\_\_wbg\_new\_abda76e883ba8a5f}!farmhash\_modern.js@{farmhash\_modern.js}}
+\doxysubsubsection{\texorpdfstring{\_\_wbg\_new\_abda76e883ba8a5f}{\_\_wbg\_new\_abda76e883ba8a5f}}
+{\footnotesize\ttfamily \label{nodejs_2farmhash__modern_8js_a69bb8605317437aff3c02779bb375152} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \+\_\+\+\_\+wbg\+\_\+new\+\_\+abda76e883ba8a5f}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}()\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{const}\ ret\ =\ \textcolor{keyword}{new}\ Error();}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{nodejs_2farmhash__modern_8js_acf128931b05550bffb7544e6752a7f0e}{addHeapObject}}(ret);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{nodejs_2farmhash__modern_8js_ad386eb5bd275f713ac1c6b774904cbd7}\index{farmhash\_modern.js@{farmhash\_modern.js}!\_\_wbg\_stack\_658279fe44541cf6@{\_\_wbg\_stack\_658279fe44541cf6}}
+\index{\_\_wbg\_stack\_658279fe44541cf6@{\_\_wbg\_stack\_658279fe44541cf6}!farmhash\_modern.js@{farmhash\_modern.js}}
+\doxysubsubsection{\texorpdfstring{\_\_wbg\_stack\_658279fe44541cf6}{\_\_wbg\_stack\_658279fe44541cf6}}
+{\footnotesize\ttfamily \label{nodejs_2farmhash__modern_8js_ad386eb5bd275f713ac1c6b774904cbd7} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \+\_\+\+\_\+wbg\+\_\+stack\+\_\+658279fe44541cf6}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(arg0,\ arg1)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{const}\ ret\ =\ \mbox{\hyperlink{nodejs_2farmhash__modern_8js_a042629e282f3cde152f7c9b21a5d6492}{getObject}}(arg1).stack;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{const}\ ptr1\ =\ \mbox{\hyperlink{nodejs_2farmhash__modern_8js_aa56d951eb80d583af68c6a6f18199502}{passStringToWasm0}}(ret,\ \mbox{\hyperlink{bundler_2farmhash__modern_8js_afc5e24a838f1ae8252b3bd04c009345f}{wasm}}.\_\_wbindgen\_malloc,\ \mbox{\hyperlink{bundler_2farmhash__modern_8js_afc5e24a838f1ae8252b3bd04c009345f}{wasm}}.\_\_wbindgen\_realloc);}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{const}\ len1\ =\ \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ad2ed939b9838baba3bd1b29e8dba9e64}{WASM\_VECTOR\_LEN}};}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab379d8e7e66c1bcc875e757d54e9428f}{getInt32Memory0}}()[arg0\ /\ 4\ +\ 1]\ =\ len1;}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab379d8e7e66c1bcc875e757d54e9428f}{getInt32Memory0}}()[arg0\ /\ 4\ +\ 0]\ =\ ptr1;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{nodejs_2farmhash__modern_8js_a8ba6cbb84e05e543037bae1e8dbaf6d0}\index{farmhash\_modern.js@{farmhash\_modern.js}!\_\_wbindgen\_object\_drop\_ref@{\_\_wbindgen\_object\_drop\_ref}}
+\index{\_\_wbindgen\_object\_drop\_ref@{\_\_wbindgen\_object\_drop\_ref}!farmhash\_modern.js@{farmhash\_modern.js}}
+\doxysubsubsection{\texorpdfstring{\_\_wbindgen\_object\_drop\_ref}{\_\_wbindgen\_object\_drop\_ref}}
+{\footnotesize\ttfamily \label{nodejs_2farmhash__modern_8js_a8ba6cbb84e05e543037bae1e8dbaf6d0} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \+\_\+\+\_\+wbindgen\+\_\+object\+\_\+drop\+\_\+ref}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(arg0)\ \{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ae5a83a74d50b02ea1edc67cb90710e8d}{takeObject}}(arg0);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{nodejs_2farmhash__modern_8js_a67a854449225c057bdbe63b5677c7595}\index{farmhash\_modern.js@{farmhash\_modern.js}!bigquery\_fingerprint@{bigquery\_fingerprint}}
+\index{bigquery\_fingerprint@{bigquery\_fingerprint}!farmhash\_modern.js@{farmhash\_modern.js}}
+\doxysubsubsection{\texorpdfstring{bigquery\_fingerprint}{bigquery\_fingerprint}}
+{\footnotesize\ttfamily \label{nodejs_2farmhash__modern_8js_a67a854449225c057bdbe63b5677c7595} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} bigquery\+\_\+fingerprint}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(input)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{const}\ ptr0\ =\ \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ac3add15480b9b60a322d5a4ff40046b4}{passArray8ToWasm0}}(input,\ \mbox{\hyperlink{bundler_2farmhash__modern_8js_afc5e24a838f1ae8252b3bd04c009345f}{wasm}}.\_\_wbindgen\_malloc);}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{const}\ len0\ =\ \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ad2ed939b9838baba3bd1b29e8dba9e64}{WASM\_VECTOR\_LEN}};}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{const}\ ret\ =\ \mbox{\hyperlink{bundler_2farmhash__modern_8js_afc5e24a838f1ae8252b3bd04c009345f}{wasm}}.bigquery\_fingerprint(ptr0,\ len0);}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ ret;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Uint8\+Array\}} & input \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{bigint\} 
+\end{DoxyReturn}
+\Hypertarget{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}\index{farmhash\_modern.js@{farmhash\_modern.js}!bytes@{bytes}}
+\index{bytes@{bytes}!farmhash\_modern.js@{farmhash\_modern.js}}
+\doxysubsubsection{\texorpdfstring{bytes}{bytes}}
+{\footnotesize\ttfamily \label{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25} 
+\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}} \mbox{\hyperlink{node-forge_2lib_2util_8js_af2ca5985446bc50a0e237108dd4fa56d}{Data\+Buffer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} bytes = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}\mbox{\hyperlink{cjs_2src_2bucket_8js_a2e47e1f004220675d0fa39b8255bd78f}{fs}}\textquotesingle{}).read\+File\+Sync(\mbox{\hyperlink{cjs_2src_2bucket_8js_a1fdc7709faf62dce60620fb3f9d3453c}{path}})}
+
+Gets a binary encoded string of the bytes from this buffer without modifying the read pointer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em count} & the number of bytes to get, omit to get all.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a string full of binary encoded characters. 
+\end{DoxyReturn}
+\Hypertarget{nodejs_2farmhash__modern_8js_aa7726dc350c8648317c8c492a6016c78}\index{farmhash\_modern.js@{farmhash\_modern.js}!cachedInt32Memory0@{cachedInt32Memory0}}
+\index{cachedInt32Memory0@{cachedInt32Memory0}!farmhash\_modern.js@{farmhash\_modern.js}}
+\doxysubsubsection{\texorpdfstring{cachedInt32Memory0}{cachedInt32Memory0}}
+{\footnotesize\ttfamily \label{nodejs_2farmhash__modern_8js_aa7726dc350c8648317c8c492a6016c78} 
+let cached\+Int32\+Memory0 = null}
+
+\Hypertarget{nodejs_2farmhash__modern_8js_a252cfb1ce9ed9d1d445f374ced633127}\index{farmhash\_modern.js@{farmhash\_modern.js}!cachedTextDecoder@{cachedTextDecoder}}
+\index{cachedTextDecoder@{cachedTextDecoder}!farmhash\_modern.js@{farmhash\_modern.js}}
+\doxysubsubsection{\texorpdfstring{cachedTextDecoder}{cachedTextDecoder}}
+{\footnotesize\ttfamily \label{nodejs_2farmhash__modern_8js_a252cfb1ce9ed9d1d445f374ced633127} 
+let cached\+Text\+Decoder = new Text\+Decoder(\textquotesingle{}utf-\/8\textquotesingle{}, \{ ignore\+BOM\+: true, fatal\+: true \})}
+
+\Hypertarget{nodejs_2farmhash__modern_8js_a456472675a47c1041df901e6d5467159}\index{farmhash\_modern.js@{farmhash\_modern.js}!cachedTextEncoder@{cachedTextEncoder}}
+\index{cachedTextEncoder@{cachedTextEncoder}!farmhash\_modern.js@{farmhash\_modern.js}}
+\doxysubsubsection{\texorpdfstring{cachedTextEncoder}{cachedTextEncoder}}
+{\footnotesize\ttfamily \label{nodejs_2farmhash__modern_8js_a456472675a47c1041df901e6d5467159} 
+let cached\+Text\+Encoder = new Text\+Encoder(\textquotesingle{}utf-\/8\textquotesingle{})}
+
+\Hypertarget{nodejs_2farmhash__modern_8js_a24257cc511b581e2a8136526ce0e5021}\index{farmhash\_modern.js@{farmhash\_modern.js}!cachedUint8Memory0@{cachedUint8Memory0}}
+\index{cachedUint8Memory0@{cachedUint8Memory0}!farmhash\_modern.js@{farmhash\_modern.js}}
+\doxysubsubsection{\texorpdfstring{cachedUint8Memory0}{cachedUint8Memory0}}
+{\footnotesize\ttfamily \label{nodejs_2farmhash__modern_8js_a24257cc511b581e2a8136526ce0e5021} 
+let cached\+Uint8\+Memory0 = null}
+
+\Hypertarget{nodejs_2farmhash__modern_8js_a92b303b76a3f942ea819498907d5e83c}\index{farmhash\_modern.js@{farmhash\_modern.js}!const@{const}}
+\index{const@{const}!farmhash\_modern.js@{farmhash\_modern.js}}
+\doxysubsubsection{\texorpdfstring{const}{const}}
+{\footnotesize\ttfamily \label{nodejs_2farmhash__modern_8js_a92b303b76a3f942ea819498907d5e83c} 
+const \{ Text\+Decoder, Text\+Encoder \} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\`{}\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}}\`{})}
+
+\Hypertarget{nodejs_2farmhash__modern_8js_a8982393ee80db7cfb2c41d9b774bfc8d}\index{farmhash\_modern.js@{farmhash\_modern.js}!encodeString@{encodeString}}
+\index{encodeString@{encodeString}!farmhash\_modern.js@{farmhash\_modern.js}}
+\doxysubsubsection{\texorpdfstring{encodeString}{encodeString}}
+{\footnotesize\ttfamily \label{nodejs_2farmhash__modern_8js_a8982393ee80db7cfb2c41d9b774bfc8d} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} encode\+String}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ (typeof\ \mbox{\hyperlink{nodejs_2farmhash__modern_8js_a456472675a47c1041df901e6d5467159}{cachedTextEncoder}}.encodeInto\ ===\ \textcolor{stringliteral}{'function'}}
+\DoxyCodeLine{\ \ \ \ ?\ \textcolor{keyword}{function}\ (arg,\ view)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{nodejs_2farmhash__modern_8js_a456472675a47c1041df901e6d5467159}{cachedTextEncoder}}.encodeInto(arg,\ view);}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{\ \ \ \ :\ \textcolor{keyword}{function}\ (arg,\ view)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a34083d02677ea6acceb641fa647bc25a}{buf}}\ =\ \mbox{\hyperlink{nodejs_2farmhash__modern_8js_a456472675a47c1041df901e6d5467159}{cachedTextEncoder}}.encode(arg);}
+\DoxyCodeLine{\ \ \ \ view.set(\mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a34083d02677ea6acceb641fa647bc25a}{buf}});}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a99dd3b4c246dbde846b5228e734d9341}{read}}:\ arg.length,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ written:\ \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a34083d02677ea6acceb641fa647bc25a}{buf}}.length}
+\DoxyCodeLine{\ \ \ \ \};}
+\DoxyCodeLine{\})}
+
+\end{DoxyCode}
+\Hypertarget{nodejs_2farmhash__modern_8js_ad5203ff498a7add7d87bc624d3b5bea9}\index{farmhash\_modern.js@{farmhash\_modern.js}!fingerprint32@{fingerprint32}}
+\index{fingerprint32@{fingerprint32}!farmhash\_modern.js@{farmhash\_modern.js}}
+\doxysubsubsection{\texorpdfstring{fingerprint32}{fingerprint32}}
+{\footnotesize\ttfamily \label{nodejs_2farmhash__modern_8js_ad5203ff498a7add7d87bc624d3b5bea9} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} fingerprint32}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(input)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{const}\ ptr0\ =\ \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ac3add15480b9b60a322d5a4ff40046b4}{passArray8ToWasm0}}(input,\ \mbox{\hyperlink{bundler_2farmhash__modern_8js_afc5e24a838f1ae8252b3bd04c009345f}{wasm}}.\_\_wbindgen\_malloc);}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{const}\ len0\ =\ \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ad2ed939b9838baba3bd1b29e8dba9e64}{WASM\_VECTOR\_LEN}};}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{const}\ ret\ =\ \mbox{\hyperlink{bundler_2farmhash__modern_8js_afc5e24a838f1ae8252b3bd04c009345f}{wasm}}.fingerprint32(ptr0,\ len0);}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ ret\ >>>\ 0;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Uint8\+Array\}} & input \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{number\} 
+\end{DoxyReturn}
+\Hypertarget{nodejs_2farmhash__modern_8js_a33515a003133ae18946b47886450ab4e}\index{farmhash\_modern.js@{farmhash\_modern.js}!fingerprint64@{fingerprint64}}
+\index{fingerprint64@{fingerprint64}!farmhash\_modern.js@{farmhash\_modern.js}}
+\doxysubsubsection{\texorpdfstring{fingerprint64}{fingerprint64}}
+{\footnotesize\ttfamily \label{nodejs_2farmhash__modern_8js_a33515a003133ae18946b47886450ab4e} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} fingerprint64}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(input)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{const}\ ptr0\ =\ \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ac3add15480b9b60a322d5a4ff40046b4}{passArray8ToWasm0}}(input,\ \mbox{\hyperlink{bundler_2farmhash__modern_8js_afc5e24a838f1ae8252b3bd04c009345f}{wasm}}.\_\_wbindgen\_malloc);}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{const}\ len0\ =\ \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ad2ed939b9838baba3bd1b29e8dba9e64}{WASM\_VECTOR\_LEN}};}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{const}\ ret\ =\ \mbox{\hyperlink{bundler_2farmhash__modern_8js_afc5e24a838f1ae8252b3bd04c009345f}{wasm}}.bigquery\_fingerprint(ptr0,\ len0);}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ BigInt.asUintN(64,\ ret);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Uint8\+Array\}} & input \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{bigint\} 
+\end{DoxyReturn}
+\Hypertarget{nodejs_2farmhash__modern_8js_a62bec282dd3e6d490c654b0ac7678ac4}\index{farmhash\_modern.js@{farmhash\_modern.js}!hash32@{hash32}}
+\index{hash32@{hash32}!farmhash\_modern.js@{farmhash\_modern.js}}
+\doxysubsubsection{\texorpdfstring{hash32}{hash32}}
+{\footnotesize\ttfamily \label{nodejs_2farmhash__modern_8js_a62bec282dd3e6d490c654b0ac7678ac4} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} hash32}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(input)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{const}\ ptr0\ =\ \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ac3add15480b9b60a322d5a4ff40046b4}{passArray8ToWasm0}}(input,\ \mbox{\hyperlink{bundler_2farmhash__modern_8js_afc5e24a838f1ae8252b3bd04c009345f}{wasm}}.\_\_wbindgen\_malloc);}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{const}\ len0\ =\ \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ad2ed939b9838baba3bd1b29e8dba9e64}{WASM\_VECTOR\_LEN}};}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{const}\ ret\ =\ \mbox{\hyperlink{bundler_2farmhash__modern_8js_afc5e24a838f1ae8252b3bd04c009345f}{wasm}}.hash32(ptr0,\ len0);}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ ret\ >>>\ 0;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Uint8\+Array\}} & input \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{number\} 
+\end{DoxyReturn}
+\Hypertarget{nodejs_2farmhash__modern_8js_ad6e25edeabc208021b269f18b5b0a849}\index{farmhash\_modern.js@{farmhash\_modern.js}!hash32\_with\_seed@{hash32\_with\_seed}}
+\index{hash32\_with\_seed@{hash32\_with\_seed}!farmhash\_modern.js@{farmhash\_modern.js}}
+\doxysubsubsection{\texorpdfstring{hash32\_with\_seed}{hash32\_with\_seed}}
+{\footnotesize\ttfamily \label{nodejs_2farmhash__modern_8js_ad6e25edeabc208021b269f18b5b0a849} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} hash32\+\_\+with\+\_\+seed}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(input,\ seed)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{const}\ ptr0\ =\ \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ac3add15480b9b60a322d5a4ff40046b4}{passArray8ToWasm0}}(input,\ \mbox{\hyperlink{bundler_2farmhash__modern_8js_afc5e24a838f1ae8252b3bd04c009345f}{wasm}}.\_\_wbindgen\_malloc);}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{const}\ len0\ =\ \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ad2ed939b9838baba3bd1b29e8dba9e64}{WASM\_VECTOR\_LEN}};}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{const}\ ret\ =\ \mbox{\hyperlink{bundler_2farmhash__modern_8js_afc5e24a838f1ae8252b3bd04c009345f}{wasm}}.hash32\_with\_seed(ptr0,\ len0,\ seed);}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ ret\ >>>\ 0;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Uint8\+Array\}} & input \\
+\hline
+{\em \{number\}} & seed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{number\} 
+\end{DoxyReturn}
+\Hypertarget{nodejs_2farmhash__modern_8js_a171327d54f1bdf3316acd135633a3fc1}\index{farmhash\_modern.js@{farmhash\_modern.js}!hash64@{hash64}}
+\index{hash64@{hash64}!farmhash\_modern.js@{farmhash\_modern.js}}
+\doxysubsubsection{\texorpdfstring{hash64}{hash64}}
+{\footnotesize\ttfamily \label{nodejs_2farmhash__modern_8js_a171327d54f1bdf3316acd135633a3fc1} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} hash64}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(input)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{const}\ ptr0\ =\ \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ac3add15480b9b60a322d5a4ff40046b4}{passArray8ToWasm0}}(input,\ \mbox{\hyperlink{bundler_2farmhash__modern_8js_afc5e24a838f1ae8252b3bd04c009345f}{wasm}}.\_\_wbindgen\_malloc);}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{const}\ len0\ =\ \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ad2ed939b9838baba3bd1b29e8dba9e64}{WASM\_VECTOR\_LEN}};}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{const}\ ret\ =\ \mbox{\hyperlink{bundler_2farmhash__modern_8js_afc5e24a838f1ae8252b3bd04c009345f}{wasm}}.hash64(ptr0,\ len0);}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ BigInt.asUintN(64,\ ret);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Uint8\+Array\}} & input \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{bigint\} 
+\end{DoxyReturn}
+\Hypertarget{nodejs_2farmhash__modern_8js_ae8e64257a3f7be5169469171f3a91946}\index{farmhash\_modern.js@{farmhash\_modern.js}!hash64\_with\_seed@{hash64\_with\_seed}}
+\index{hash64\_with\_seed@{hash64\_with\_seed}!farmhash\_modern.js@{farmhash\_modern.js}}
+\doxysubsubsection{\texorpdfstring{hash64\_with\_seed}{hash64\_with\_seed}}
+{\footnotesize\ttfamily \label{nodejs_2farmhash__modern_8js_ae8e64257a3f7be5169469171f3a91946} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} hash64\+\_\+with\+\_\+seed}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(input,\ seed)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{const}\ ptr0\ =\ \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ac3add15480b9b60a322d5a4ff40046b4}{passArray8ToWasm0}}(input,\ \mbox{\hyperlink{bundler_2farmhash__modern_8js_afc5e24a838f1ae8252b3bd04c009345f}{wasm}}.\_\_wbindgen\_malloc);}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{const}\ len0\ =\ \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ad2ed939b9838baba3bd1b29e8dba9e64}{WASM\_VECTOR\_LEN}};}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{const}\ ret\ =\ \mbox{\hyperlink{bundler_2farmhash__modern_8js_afc5e24a838f1ae8252b3bd04c009345f}{wasm}}.hash64\_with\_seed(ptr0,\ len0,\ seed);}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ BigInt.asUintN(64,\ ret);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Uint8\+Array\}} & input \\
+\hline
+{\em \{bigint\}} & seed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{bigint\} 
+\end{DoxyReturn}
+\Hypertarget{nodejs_2farmhash__modern_8js_aed0d152ee2873d7093a25bd1b2e15ff8}\index{farmhash\_modern.js@{farmhash\_modern.js}!heap@{heap}}
+\index{heap@{heap}!farmhash\_modern.js@{farmhash\_modern.js}}
+\doxysubsubsection{\texorpdfstring{heap}{heap}}
+{\footnotesize\ttfamily \label{nodejs_2farmhash__modern_8js_aed0d152ee2873d7093a25bd1b2e15ff8} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} heap = new \mbox{\hyperlink{src_2util_2minimal_8js_a325c4e317c38d8497130ebce7670be2f}{Array}}(128).\mbox{\hyperlink{fill_8js_af91832b9a8f15ea8620a69271157f155}{fill}}(\mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}})}
+
+\Hypertarget{nodejs_2farmhash__modern_8js_ae2073a3021b708ac4c79c15f9a427d79}\index{farmhash\_modern.js@{farmhash\_modern.js}!heap\_next@{heap\_next}}
+\index{heap\_next@{heap\_next}!farmhash\_modern.js@{farmhash\_modern.js}}
+\doxysubsubsection{\texorpdfstring{heap\_next}{heap\_next}}
+{\footnotesize\ttfamily \label{nodejs_2farmhash__modern_8js_ae2073a3021b708ac4c79c15f9a427d79} 
+let heap\+\_\+next = \mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a7fdcf4c82c9946bf2b0b80829a7ab230}{heap.\+length}}}
+
+\Hypertarget{nodejs_2farmhash__modern_8js_a2a125ccb72874a580033d120491e5037}\index{farmhash\_modern.js@{farmhash\_modern.js}!imports@{imports}}
+\index{imports@{imports}!farmhash\_modern.js@{farmhash\_modern.js}}
+\doxysubsubsection{\texorpdfstring{imports}{imports}}
+{\footnotesize\ttfamily \label{nodejs_2farmhash__modern_8js_a2a125ccb72874a580033d120491e5037} 
+imports\mbox{[} \textquotesingle{}\+\_\+\+\_\+wbindgen\+\_\+placeholder\+\_\+\+\_\+\textquotesingle{}\mbox{]} = \{\}}
+
+\Hypertarget{nodejs_2farmhash__modern_8js_a1fdc7709faf62dce60620fb3f9d3453c}\index{farmhash\_modern.js@{farmhash\_modern.js}!path@{path}}
+\index{path@{path}!farmhash\_modern.js@{farmhash\_modern.js}}
+\doxysubsubsection{\texorpdfstring{path}{path}}
+{\footnotesize\ttfamily \label{nodejs_2farmhash__modern_8js_a1fdc7709faf62dce60620fb3f9d3453c} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} path = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}path\textquotesingle{}).\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a500bc97a63b7c35b84493a7f90ef44d6}{join}}(\+\_\+\+\_\+dirname, \textquotesingle{}\mbox{\hyperlink{bundler_2farmhash__modern_8js_afc5e24a838f1ae8252b3bd04c009345f}{farmhash\+\_\+modern\+\_\+bg.\+wasm}}\textquotesingle{})}
+
+\Hypertarget{nodejs_2farmhash__modern_8js_a4cb9e5a3fc964f13f8bd199f0ebe907f}\index{farmhash\_modern.js@{farmhash\_modern.js}!wasm@{wasm}}
+\index{wasm@{wasm}!farmhash\_modern.js@{farmhash\_modern.js}}
+\doxysubsubsection{\texorpdfstring{wasm}{wasm}}
+{\footnotesize\ttfamily \label{nodejs_2farmhash__modern_8js_a4cb9e5a3fc964f13f8bd199f0ebe907f} 
+wasm = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{wasm\+Instance.\+exports}}}
+
+\Hypertarget{nodejs_2farmhash__modern_8js_ad2ed939b9838baba3bd1b29e8dba9e64}\index{farmhash\_modern.js@{farmhash\_modern.js}!WASM\_VECTOR\_LEN@{WASM\_VECTOR\_LEN}}
+\index{WASM\_VECTOR\_LEN@{WASM\_VECTOR\_LEN}!farmhash\_modern.js@{farmhash\_modern.js}}
+\doxysubsubsection{\texorpdfstring{WASM\_VECTOR\_LEN}{WASM\_VECTOR\_LEN}}
+{\footnotesize\ttfamily \label{nodejs_2farmhash__modern_8js_ad2ed939b9838baba3bd1b29e8dba9e64} 
+let WASM\+\_\+\+VECTOR\+\_\+\+LEN = 0}
+
+\Hypertarget{nodejs_2farmhash__modern_8js_a104f2e0bc0527c9c8ddb6df4856f2d2a}\index{farmhash\_modern.js@{farmhash\_modern.js}!wasmInstance@{wasmInstance}}
+\index{wasmInstance@{wasmInstance}!farmhash\_modern.js@{farmhash\_modern.js}}
+\doxysubsubsection{\texorpdfstring{wasmInstance}{wasmInstance}}
+{\footnotesize\ttfamily \label{nodejs_2farmhash__modern_8js_a104f2e0bc0527c9c8ddb6df4856f2d2a} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} wasm\+Instance = new Web\+Assembly.\+Instance(\mbox{\hyperlink{nodejs_2farmhash__modern_8js_aa49ccaefe3d5c5b291e40fe34d33aa75}{wasm\+Module}}, \mbox{\hyperlink{nodejs_2farmhash__modern_8js_a2a125ccb72874a580033d120491e5037}{imports}})}
+
+\Hypertarget{nodejs_2farmhash__modern_8js_aa49ccaefe3d5c5b291e40fe34d33aa75}\index{farmhash\_modern.js@{farmhash\_modern.js}!wasmModule@{wasmModule}}
+\index{wasmModule@{wasmModule}!farmhash\_modern.js@{farmhash\_modern.js}}
+\doxysubsubsection{\texorpdfstring{wasmModule}{wasmModule}}
+{\footnotesize\ttfamily \label{nodejs_2farmhash__modern_8js_aa49ccaefe3d5c5b291e40fe34d33aa75} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} wasm\+Module = new Web\+Assembly.\+Module(\mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}})}
+

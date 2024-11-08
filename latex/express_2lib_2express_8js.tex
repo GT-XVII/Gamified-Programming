@@ -1,0 +1,170 @@
+\doxysection{backend/node\+\_\+modules/express/lib/express.js File Reference}
+\hypertarget{express_2lib_2express_8js}{}\label{express_2lib_2express_8js}\index{backend/node\_modules/express/lib/express.js@{backend/node\_modules/express/lib/express.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{express_2lib_2express_8js_a6d50a0f10926f32faa518f0fbc6e4612}{create\+Application}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{express_2lib_2express_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+var \mbox{\hyperlink{express_2lib_2express_8js_a2f18df3edfa1cab06177ab4917a1d17e}{body\+Parser}}
+\item 
+var \mbox{\hyperlink{express_2lib_2express_8js_a26282ca510b43f3d4a9080b0fa48eac9}{mixin}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}\mbox{\hyperlink{application_8js_a3ece49ce053833fd2c7b994d6b6ab3f1}{merge}}-\/descriptors\textquotesingle{})
+\item 
+var \mbox{\hyperlink{express_2lib_2express_8js_a930fae672851c7e279583e20638e2228}{proto}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\mbox{\hyperlink{express_2lib_2express_8js_aa30c9d0e437092b0607b68dee5b2c751}{application}}\textquotesingle{})
+\item 
+var \mbox{\hyperlink{express_2lib_2express_8js_a01754b113e4439f9a2740d01a338e80b}{Route}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./router/\mbox{\hyperlink{color-convert_2index_8js_a5bd1c268fc1d6e49ce003add4c101b7b}{route}}\textquotesingle{})
+\item 
+var \mbox{\hyperlink{express_2lib_2express_8js_abba65771981450b82508e4145d73f148}{Router}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./router\textquotesingle{})
+\item 
+var \mbox{\hyperlink{express_2lib_2express_8js_a42c43c76081a7df8ae2954f16ee9338b}{req}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}}\textquotesingle{})
+\item 
+var \mbox{\hyperlink{express_2lib_2express_8js_abde3c35e3bb7e5225dd7f234c685329c}{res}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ac70ac40ef8199c59316b35022dd21914}{response}}\textquotesingle{})
+\item 
+\mbox{\hyperlink{express_2lib_2express_8js_af2836014938e5fb6078778620cb19081}{exports}} = module.\+exports = \mbox{\hyperlink{express_2lib_2express_8js_a6d50a0f10926f32faa518f0fbc6e4612}{create\+Application}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{express_2lib_2express_8js_aa30c9d0e437092b0607b68dee5b2c751}{application}} = \mbox{\hyperlink{chalk_2source_2index_8js_a391e164e296dc4d66cb9a11c050f2f3d}{proto}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{express_2lib_2express_8js_a8f93470e5b37ab44b3a4bf3e325f105c}{request}} = \mbox{\hyperlink{agent-base_2dist_2helpers_8js_a960c3c3c7bce40c2aa54b029b3dbb9c8}{req}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{express_2lib_2express_8js_ae7104b681e73125e8f941d3522d5a1c6}{response}} = \mbox{\hyperlink{express_2lib_2express_8js_abde3c35e3bb7e5225dd7f234c685329c}{res}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{express_2lib_2express_8js_ac6fdc7f7005e375dc7d7dce4bc785ab4}{json}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{express_2lib_2express_8js_a6fddf0a674d03300188e5ba3195c9a00}{raw}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{express_2lib_2express_8js_a6d50a0f10926f32faa518f0fbc6e4612}\index{express.js@{express.js}!createApplication@{createApplication}}
+\index{createApplication@{createApplication}!express.js@{express.js}}
+\doxysubsubsection{\texorpdfstring{createApplication()}{createApplication()}}
+{\footnotesize\ttfamily \label{express_2lib_2express_8js_a6d50a0f10926f32faa518f0fbc6e4612} 
+function create\+Application (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Create an express application.
+
+\begin{DoxyReturn}{Returns}
+\{Function\} @api public 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{database_2dist_2index_8cjs_8js_a7b225fcb720e4d5ed2bbf60e28a25e6d}{app}}, \mbox{\hyperlink{express_2lib_2express_8js_a26282ca510b43f3d4a9080b0fa48eac9}{mixin}}, \mbox{\hyperlink{protobufjs_2dist_2protobuf_8js_adc8497f1b8fa9c7bee4a53c25c244a66}{next()}}, \mbox{\hyperlink{express_2lib_2express_8js_a930fae672851c7e279583e20638e2228}{proto}}, \mbox{\hyperlink{express_2lib_2express_8js_a42c43c76081a7df8ae2954f16ee9338b}{req}}, \mbox{\hyperlink{express_2lib_2express_8js_abde3c35e3bb7e5225dd7f234c685329c}{res}}, \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}, and \mbox{\hyperlink{is-stream_2index_8js_ac8dca21fa013a97d16bb9a1a8a41de0b}{writable}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{express_2lib_2express_8js_a6d50a0f10926f32faa518f0fbc6e4612_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{express_2lib_2express_8js_aa30c9d0e437092b0607b68dee5b2c751}\index{express.js@{express.js}!application@{application}}
+\index{application@{application}!express.js@{express.js}}
+\doxysubsubsection{\texorpdfstring{application}{application}}
+{\footnotesize\ttfamily \label{express_2lib_2express_8js_aa30c9d0e437092b0607b68dee5b2c751} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} application = \mbox{\hyperlink{chalk_2source_2index_8js_a391e164e296dc4d66cb9a11c050f2f3d}{proto}}}
+
+Expose the prototypes. \Hypertarget{express_2lib_2express_8js_a2f18df3edfa1cab06177ab4917a1d17e}\index{express.js@{express.js}!bodyParser@{bodyParser}}
+\index{bodyParser@{bodyParser}!express.js@{express.js}}
+\doxysubsubsection{\texorpdfstring{bodyParser}{bodyParser}}
+{\footnotesize\ttfamily \label{express_2lib_2express_8js_a2f18df3edfa1cab06177ab4917a1d17e} 
+var body\+Parser}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textcolor{stringliteral}{'body-\/parser'})}
+\DoxyCodeLine{var\ \mbox{\hyperlink{class_event_emitter}{EventEmitter}}\ =\ \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}('events').\mbox{\hyperlink{class_event_emitter}{EventEmitter}}}
+
+\end{DoxyCode}
+Module dependencies. \Hypertarget{express_2lib_2express_8js_af2836014938e5fb6078778620cb19081}\index{express.js@{express.js}!exports@{exports}}
+\index{exports@{exports}!express.js@{express.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \label{express_2lib_2express_8js_af2836014938e5fb6078778620cb19081} 
+exports = module.\+exports = \mbox{\hyperlink{express_2lib_2express_8js_a6d50a0f10926f32faa518f0fbc6e4612}{create\+Application}}}
+
+Expose {\ttfamily \doxylink{express_2lib_2express_8js_a6d50a0f10926f32faa518f0fbc6e4612}{create\+Application()}}. \Hypertarget{express_2lib_2express_8js_ac6fdc7f7005e375dc7d7dce4bc785ab4}\index{express.js@{express.js}!json@{json}}
+\index{json@{json}!express.js@{express.js}}
+\doxysubsubsection{\texorpdfstring{json}{json}}
+{\footnotesize\ttfamily \label{express_2lib_2express_8js_ac6fdc7f7005e375dc7d7dce4bc785ab4} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} json}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \mbox{\hyperlink{express_2lib_2express_8js_a2f18df3edfa1cab06177ab4917a1d17e}{bodyParser}}.json}
+\DoxyCodeLine{\mbox{\hyperlink{express_2lib_2express_8js_af2836014938e5fb6078778620cb19081}{exports}}.query\ =\ \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textcolor{stringliteral}{'./middleware/query'})}
+
+\end{DoxyCode}
+Expose middleware \Hypertarget{express_2lib_2express_8js_a26282ca510b43f3d4a9080b0fa48eac9}\index{express.js@{express.js}!mixin@{mixin}}
+\index{mixin@{mixin}!express.js@{express.js}}
+\doxysubsubsection{\texorpdfstring{mixin}{mixin}}
+{\footnotesize\ttfamily \label{express_2lib_2express_8js_a26282ca510b43f3d4a9080b0fa48eac9} 
+var mixin = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}\mbox{\hyperlink{application_8js_a3ece49ce053833fd2c7b994d6b6ab3f1}{merge}}-\/descriptors\textquotesingle{})}
+
+\Hypertarget{express_2lib_2express_8js_a930fae672851c7e279583e20638e2228}\index{express.js@{express.js}!proto@{proto}}
+\index{proto@{proto}!express.js@{express.js}}
+\doxysubsubsection{\texorpdfstring{proto}{proto}}
+{\footnotesize\ttfamily \label{express_2lib_2express_8js_a930fae672851c7e279583e20638e2228} 
+var proto = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\mbox{\hyperlink{express_2lib_2express_8js_aa30c9d0e437092b0607b68dee5b2c751}{application}}\textquotesingle{})}
+
+\Hypertarget{express_2lib_2express_8js_a6fddf0a674d03300188e5ba3195c9a00}\index{express.js@{express.js}!raw@{raw}}
+\index{raw@{raw}!express.js@{express.js}}
+\doxysubsubsection{\texorpdfstring{raw}{raw}}
+{\footnotesize\ttfamily \label{express_2lib_2express_8js_a6fddf0a674d03300188e5ba3195c9a00} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} raw}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \mbox{\hyperlink{express_2lib_2express_8js_a2f18df3edfa1cab06177ab4917a1d17e}{bodyParser}}.raw}
+\DoxyCodeLine{\mbox{\hyperlink{express_2lib_2express_8js_af2836014938e5fb6078778620cb19081}{exports}}.static\ =\ \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textcolor{stringliteral}{'serve-\/static'})}
+
+\end{DoxyCode}
+\Hypertarget{express_2lib_2express_8js_a42c43c76081a7df8ae2954f16ee9338b}\index{express.js@{express.js}!req@{req}}
+\index{req@{req}!express.js@{express.js}}
+\doxysubsubsection{\texorpdfstring{req}{req}}
+{\footnotesize\ttfamily \label{express_2lib_2express_8js_a42c43c76081a7df8ae2954f16ee9338b} 
+var req = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}}\textquotesingle{})}
+
+\Hypertarget{express_2lib_2express_8js_a8f93470e5b37ab44b3a4bf3e325f105c}\index{express.js@{express.js}!request@{request}}
+\index{request@{request}!express.js@{express.js}}
+\doxysubsubsection{\texorpdfstring{request}{request}}
+{\footnotesize\ttfamily \label{express_2lib_2express_8js_a8f93470e5b37ab44b3a4bf3e325f105c} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} request = \mbox{\hyperlink{agent-base_2dist_2helpers_8js_a960c3c3c7bce40c2aa54b029b3dbb9c8}{req}}}
+
+\Hypertarget{express_2lib_2express_8js_abde3c35e3bb7e5225dd7f234c685329c}\index{express.js@{express.js}!res@{res}}
+\index{res@{res}!express.js@{express.js}}
+\doxysubsubsection{\texorpdfstring{res}{res}}
+{\footnotesize\ttfamily \label{express_2lib_2express_8js_abde3c35e3bb7e5225dd7f234c685329c} 
+var res = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ac70ac40ef8199c59316b35022dd21914}{response}}\textquotesingle{})}
+
+\Hypertarget{express_2lib_2express_8js_ae7104b681e73125e8f941d3522d5a1c6}\index{express.js@{express.js}!response@{response}}
+\index{response@{response}!express.js@{express.js}}
+\doxysubsubsection{\texorpdfstring{response}{response}}
+{\footnotesize\ttfamily \label{express_2lib_2express_8js_ae7104b681e73125e8f941d3522d5a1c6} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} response = \mbox{\hyperlink{express_2lib_2express_8js_abde3c35e3bb7e5225dd7f234c685329c}{res}}}
+
+\Hypertarget{express_2lib_2express_8js_a01754b113e4439f9a2740d01a338e80b}\index{express.js@{express.js}!Route@{Route}}
+\index{Route@{Route}!express.js@{express.js}}
+\doxysubsubsection{\texorpdfstring{Route}{Route}}
+{\footnotesize\ttfamily \label{express_2lib_2express_8js_a01754b113e4439f9a2740d01a338e80b} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} Route = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./router/\mbox{\hyperlink{color-convert_2index_8js_a5bd1c268fc1d6e49ce003add4c101b7b}{route}}\textquotesingle{})}
+
+Expose constructors. \Hypertarget{express_2lib_2express_8js_abba65771981450b82508e4145d73f148}\index{express.js@{express.js}!Router@{Router}}
+\index{Router@{Router}!express.js@{express.js}}
+\doxysubsubsection{\texorpdfstring{Router}{Router}}
+{\footnotesize\ttfamily \label{express_2lib_2express_8js_abba65771981450b82508e4145d73f148} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} Router = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./router\textquotesingle{})}
+
+\Hypertarget{express_2lib_2express_8js_ae2475e10618961c050dcba04e8c42331}\index{express.js@{express.js}!strict@{strict}}
+\index{strict@{strict}!express.js@{express.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{express_2lib_2express_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+
+express Copyright(c) 2009-\/2013 TJ Holowaychuk Copyright(c) 2013 Roman Shtylman Copyright(c) 2014-\/2015 Douglas Christopher Wilson MIT Licensed 

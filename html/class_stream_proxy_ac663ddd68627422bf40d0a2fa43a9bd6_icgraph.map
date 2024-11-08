@@ -1,0 +1,11 @@
+<map id="StreamProxy::shouldRetryRequest" name="StreamProxy::shouldRetryRequest">
+<area shape="rect" id="Node000001" title=" " alt="" coords="663,39,839,79"/>
+<area shape="rect" id="Node000002" href="$class_stream_proxy.html#a2c214d140520db88e1a217db91b98a86" title=" " alt="" coords="425,5,614,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="648,47,614,42,615,37,649,42"/>
+<area shape="rect" id="Node000003" href="$class_stream_proxy.html#a90be87b378d484bde0b1e542b9edb447" title=" " alt="" coords="424,71,615,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="649,76,616,80,616,75,648,71"/>
+<area shape="rect" id="Node000004" href="$class_stream_proxy.html#ae019898af76283ed0ce19916732cc4d4" title=" " alt="" coords="185,71,376,111"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="408,94,377,94,377,88,408,88"/>
+<area shape="rect" id="Node000005" href="$class_stream_proxy.html#a25f74af75b7cc826f2b7a09dbed9ae5b" title=" " alt="" coords="5,78,137,104"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="169,94,137,94,137,88,169,88"/>
+</map>

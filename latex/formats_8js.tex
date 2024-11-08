@@ -1,0 +1,73 @@
+\doxysection{backend/node\+\_\+modules/qs/lib/formats.js File Reference}
+\hypertarget{formats_8js}{}\label{formats_8js}\index{backend/node\_modules/qs/lib/formats.js@{backend/node\_modules/qs/lib/formats.js}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{formats_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+var \mbox{\hyperlink{formats_8js_afd83a7a4c1a27011426e0e517bddbfbc}{replace}} = String.\+prototype.\+replace
+\item 
+var \mbox{\hyperlink{formats_8js_a8bcfb6eeb71757a607878f38a803a28c}{percent\+Twenties}} = /\%20/\mbox{\hyperlink{ordered-map_8min_8js_a103df269476e78897c9c4c6cb8f4eb06}{g}}
+\item 
+var \mbox{\hyperlink{formats_8js_aebd98ea8a5bb3693aa4e3b31dbc67194}{Format}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{formats_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{formats_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\index{formats.js@{formats.js}!exports@{exports}}
+\index{exports@{exports}!formats.js@{formats.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \label{formats_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{'default'}:\ \mbox{\hyperlink{formats_8js_aebd98ea8a5bb3693aa4e3b31dbc67194}{Format}}.RFC3986,}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{debug_2src_2debug_8js_a8b728f13fab33c62e04926e9947a6545}{formatters}}:\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ RFC1738:\ \textcolor{keyword}{function}\ (\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{formats_8js_afd83a7a4c1a27011426e0e517bddbfbc}{replace}}.call(\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}},\ \mbox{\hyperlink{formats_8js_a8bcfb6eeb71757a607878f38a803a28c}{percentTwenties}},\ \textcolor{charliteral}{'+'});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ RFC3986:\ \textcolor{keyword}{function}\ (\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ String(\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \},}
+\DoxyCodeLine{\ \ \ \ RFC1738:\ \mbox{\hyperlink{formats_8js_aebd98ea8a5bb3693aa4e3b31dbc67194}{Format}}.RFC1738,}
+\DoxyCodeLine{\ \ \ \ RFC3986:\ \mbox{\hyperlink{formats_8js_aebd98ea8a5bb3693aa4e3b31dbc67194}{Format}}.RFC3986}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{formats_8js_aebd98ea8a5bb3693aa4e3b31dbc67194}\index{formats.js@{formats.js}!Format@{Format}}
+\index{Format@{Format}!formats.js@{formats.js}}
+\doxysubsubsection{\texorpdfstring{Format}{Format}}
+{\footnotesize\ttfamily \label{formats_8js_aebd98ea8a5bb3693aa4e3b31dbc67194} 
+var Format}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \ \ RFC1738:\ \textcolor{stringliteral}{'RFC1738'},}
+\DoxyCodeLine{\ \ \ \ RFC3986:\ \textcolor{stringliteral}{'RFC3986'}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{formats_8js_a8bcfb6eeb71757a607878f38a803a28c}\index{formats.js@{formats.js}!percentTwenties@{percentTwenties}}
+\index{percentTwenties@{percentTwenties}!formats.js@{formats.js}}
+\doxysubsubsection{\texorpdfstring{percentTwenties}{percentTwenties}}
+{\footnotesize\ttfamily \label{formats_8js_a8bcfb6eeb71757a607878f38a803a28c} 
+var percent\+Twenties = /\%20/\mbox{\hyperlink{ordered-map_8min_8js_a103df269476e78897c9c4c6cb8f4eb06}{g}}}
+
+\Hypertarget{formats_8js_afd83a7a4c1a27011426e0e517bddbfbc}\index{formats.js@{formats.js}!replace@{replace}}
+\index{replace@{replace}!formats.js@{formats.js}}
+\doxysubsubsection{\texorpdfstring{replace}{replace}}
+{\footnotesize\ttfamily \label{formats_8js_afd83a7a4c1a27011426e0e517bddbfbc} 
+var replace = String.\+prototype.\+replace}
+
+\Hypertarget{formats_8js_ae2475e10618961c050dcba04e8c42331}\index{formats.js@{formats.js}!strict@{strict}}
+\index{strict@{strict}!formats.js@{formats.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{formats_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+

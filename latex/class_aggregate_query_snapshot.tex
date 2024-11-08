@@ -1,0 +1,105 @@
+\doxysection{Aggregate\+Query\+Snapshot Class Reference}
+\hypertarget{class_aggregate_query_snapshot}{}\label{class_aggregate_query_snapshot}\index{AggregateQuerySnapshot@{AggregateQuerySnapshot}}
+
+
+Collaboration diagram for Aggregate\+Query\+Snapshot\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{class_aggregate_query_snapshot__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_aggregate_query_snapshot_a87e09d0a8a47a094a562261647ba0929}{constructor}} (\+\_\+query, \+\_\+read\+Time, \+\_\+data)
+\item 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} \mbox{\hyperlink{class_aggregate_query_snapshot_aa8c95f8b605c8c0fefb0658442cbc237}{query}} ()
+\item 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} \mbox{\hyperlink{class_aggregate_query_snapshot_a8f57bbf11b727c8c29e256c8811860e1}{read\+Time}} ()
+\item 
+\mbox{\hyperlink{class_aggregate_query_snapshot_aa83273f7d868984ff30a56854af3ff99}{data}} ()
+\item 
+\mbox{\hyperlink{class_aggregate_query_snapshot_ab5a545ad528c95b727abccff1e0f7caa}{is\+Equal}} (other)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The results of executing an aggregation query. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_aggregate_query_snapshot_a87e09d0a8a47a094a562261647ba0929}\index{AggregateQuerySnapshot@{AggregateQuerySnapshot}!constructor@{constructor}}
+\index{constructor@{constructor}!AggregateQuerySnapshot@{AggregateQuerySnapshot}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_aggregate_query_snapshot_a87e09d0a8a47a094a562261647ba0929} 
+Aggregate\+Query\+Snapshot\+::constructor (\begin{DoxyParamCaption}\item[{}]{\+\_\+query}{, }\item[{}]{\+\_\+read\+Time}{, }\item[{}]{\+\_\+data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_aggregate_query_snapshot_aa83273f7d868984ff30a56854af3ff99}\index{AggregateQuerySnapshot@{AggregateQuerySnapshot}!data@{data}}
+\index{data@{data}!AggregateQuerySnapshot@{AggregateQuerySnapshot}}
+\doxysubsubsection{\texorpdfstring{data()}{data()}}
+{\footnotesize\ttfamily \label{class_aggregate_query_snapshot_aa83273f7d868984ff30a56854af3ff99} 
+Aggregate\+Query\+Snapshot\+::data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the results of the aggregations performed over the underlying query.
+
+The keys of the returned object will be the same as those of the {\ttfamily Aggregate\+Spec} object specified to the aggregation method, and the values will be the corresponding aggregation result.
+
+\begin{DoxyReturn}{Returns}
+The results of the aggregations performed over the underlying query. 
+\end{DoxyReturn}
+\Hypertarget{class_aggregate_query_snapshot_ab5a545ad528c95b727abccff1e0f7caa}\index{AggregateQuerySnapshot@{AggregateQuerySnapshot}!isEqual@{isEqual}}
+\index{isEqual@{isEqual}!AggregateQuerySnapshot@{AggregateQuerySnapshot}}
+\doxysubsubsection{\texorpdfstring{isEqual()}{isEqual()}}
+{\footnotesize\ttfamily \label{class_aggregate_query_snapshot_ab5a545ad528c95b727abccff1e0f7caa} 
+Aggregate\+Query\+Snapshot\+::is\+Equal (\begin{DoxyParamCaption}\item[{}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Compares this object with the given object for equality.
+
+Two {\ttfamily \doxylink{class_aggregate_query_snapshot}{Aggregate\+Query\+Snapshot}} instances are considered "{}equal"{} if they have the same data and their underlying queries compare "{}equal"{} using {\ttfamily \doxylink{class_aggregate_query_ac316137903013083d5dfb3ac15fedf79}{Aggregate\+Query.\+is\+Equal()}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The object to compare to this object for equality. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if this object is "{}equal"{} to the given object, as defined above, or {\ttfamily false} otherwise. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{aggregate-query-snapshot_8js_aec0b793d5926a7a59d7c0772c78ba5fa}{deep\+Equal}}, and \mbox{\hyperlink{class_aggregate_query_snapshot_aa8c95f8b605c8c0fefb0658442cbc237}{query()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_aggregate_query_snapshot_ab5a545ad528c95b727abccff1e0f7caa_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_aggregate_query_snapshot_aa8c95f8b605c8c0fefb0658442cbc237}\index{AggregateQuerySnapshot@{AggregateQuerySnapshot}!query@{query}}
+\index{query@{query}!AggregateQuerySnapshot@{AggregateQuerySnapshot}}
+\doxysubsubsection{\texorpdfstring{query()}{query()}}
+{\footnotesize\ttfamily \label{class_aggregate_query_snapshot_aa8c95f8b605c8c0fefb0658442cbc237} 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} Aggregate\+Query\+Snapshot\+::query (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+The query that was executed to produce this result. Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_aggregate_query_snapshot_aa8c95f8b605c8c0fefb0658442cbc237_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_aggregate_query_snapshot_a8f57bbf11b727c8c29e256c8811860e1}\index{AggregateQuerySnapshot@{AggregateQuerySnapshot}!readTime@{readTime}}
+\index{readTime@{readTime}!AggregateQuerySnapshot@{AggregateQuerySnapshot}}
+\doxysubsubsection{\texorpdfstring{readTime()}{readTime()}}
+{\footnotesize\ttfamily \label{class_aggregate_query_snapshot_a8f57bbf11b727c8c29e256c8811860e1} 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} Aggregate\+Query\+Snapshot\+::read\+Time (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+The time this snapshot was read. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/@google-\/cloud/firestore/build/src/reference/\mbox{\hyperlink{aggregate-query-snapshot_8js}{aggregate-\/query-\/snapshot.\+js}}\end{DoxyCompactItemize}

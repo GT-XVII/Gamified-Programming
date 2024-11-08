@@ -1,0 +1,187 @@
+\doxysection{backend/node\+\_\+modules/firebase-\/admin/lib/auth/user-\/import-\/builder.js File Reference}
+\hypertarget{user-import-builder_8js}{}\label{user-import-builder_8js}\index{backend/node\_modules/firebase-\/admin/lib/auth/user-\/import-\/builder.js@{backend/node\_modules/firebase-\/admin/lib/auth/user-\/import-\/builder.js}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_user_import_builder}{User\+Import\+Builder}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{user-import-builder_8js_af2b2f8dc81bcf6bce5862187591ac3fe}{convert\+Multi\+Factor\+Info\+To\+Server\+Format}} (multi\+Factor\+Info)
+\item 
+function \mbox{\hyperlink{user-import-builder_8js_a3163aeea9da48846055dfd38f2e249a7}{is\+Phone\+Factor}} (multi\+Factor\+Info)
+\item 
+function \mbox{\hyperlink{user-import-builder_8js_a29f1039068eaecd439a324f7475261f2}{get\+Number\+Field}} (\mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}, key)
+\item 
+function \mbox{\hyperlink{user-import-builder_8js_a269f560661b4f00e081e1f2d953d3c8f}{populate\+Upload\+Account\+User}} (user, user\+Validator)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{user-import-builder_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{user-import-builder_8js_a65a82198308c5c3b59045da90ac745b0}{User\+Import\+Builder}} = \mbox{\hyperlink{user-import-builder_8js_ac88eb01f70d91527fc700b01f74085cf}{exports.\+convert\+Multi\+Factor\+Info\+To\+Server\+Format}} = void 0
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{user-import-builder_8js_a3c878464c635c5cd2043d7e066bb187b}{deep\+\_\+copy\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/deep-\/copy"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{user-import-builder_8js_a022e926a40defc4294368e708a7e2372}{utils}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{user-import-builder_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/validator"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{user-import-builder_8js_af1a99a3ff1a35c114bdd06cc7252beb6}{error\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/error"{})
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{user-import-builder_8js_ac88eb01f70d91527fc700b01f74085cf}{convert\+Multi\+Factor\+Info\+To\+Server\+Format}} = convert\+Multi\+Factor\+Info\+To\+Server\+Format
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{user-import-builder_8js_af2b2f8dc81bcf6bce5862187591ac3fe}\index{user-\/import-\/builder.js@{user-\/import-\/builder.js}!convertMultiFactorInfoToServerFormat@{convertMultiFactorInfoToServerFormat}}
+\index{convertMultiFactorInfoToServerFormat@{convertMultiFactorInfoToServerFormat}!user-\/import-\/builder.js@{user-\/import-\/builder.js}}
+\doxysubsubsection{\texorpdfstring{convertMultiFactorInfoToServerFormat()}{convertMultiFactorInfoToServerFormat()}}
+{\footnotesize\ttfamily \label{user-import-builder_8js_af2b2f8dc81bcf6bce5862187591ac3fe} 
+function convert\+Multi\+Factor\+Info\+To\+Server\+Format (\begin{DoxyParamCaption}\item[{}]{multi\+Factor\+Info}{}\end{DoxyParamCaption})}
+
+Converts a client format second factor object to server format. 
+\begin{DoxyParams}{Parameters}
+{\em multi\+Factor\+Info} & -\/ The client format second factor. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding Auth\+Factor\+Info server request format. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}, \mbox{\hyperlink{user-import-builder_8js_af1a99a3ff1a35c114bdd06cc7252beb6}{error\+\_\+1}}, \mbox{\hyperlink{user-import-builder_8js_a3163aeea9da48846055dfd38f2e249a7}{is\+Phone\+Factor()}}, and \mbox{\hyperlink{user-import-builder_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{user-import-builder_8js_af2b2f8dc81bcf6bce5862187591ac3fe_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{user-import-builder_8js_a29f1039068eaecd439a324f7475261f2}\index{user-\/import-\/builder.js@{user-\/import-\/builder.js}!getNumberField@{getNumberField}}
+\index{getNumberField@{getNumberField}!user-\/import-\/builder.js@{user-\/import-\/builder.js}}
+\doxysubsubsection{\texorpdfstring{getNumberField()}{getNumberField()}}
+{\footnotesize\ttfamily \label{user-import-builder_8js_a29f1039068eaecd439a324f7475261f2} 
+function get\+Number\+Field (\begin{DoxyParamCaption}\item[{}]{obj}{, }\item[{}]{key}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{any\}} & obj The object to check for number field within. \\
+\hline
+{\em \{string\}} & key The entry key. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{number\} The corresponding number if available. Otherwise, NaN. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}, \mbox{\hyperlink{parse_int_8js_a04ee837a5f7721fcb0ea2d152162ef92}{parse\+Int()}}, and \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7234a4e8129e261e2c517e09a337bf6a}{to\+String}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{user-import-builder_8js_a29f1039068eaecd439a324f7475261f2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{user-import-builder_8js_a29f1039068eaecd439a324f7475261f2_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{user-import-builder_8js_a3163aeea9da48846055dfd38f2e249a7}\index{user-\/import-\/builder.js@{user-\/import-\/builder.js}!isPhoneFactor@{isPhoneFactor}}
+\index{isPhoneFactor@{isPhoneFactor}!user-\/import-\/builder.js@{user-\/import-\/builder.js}}
+\doxysubsubsection{\texorpdfstring{isPhoneFactor()}{isPhoneFactor()}}
+{\footnotesize\ttfamily \label{user-import-builder_8js_a3163aeea9da48846055dfd38f2e249a7} 
+function is\+Phone\+Factor (\begin{DoxyParamCaption}\item[{}]{multi\+Factor\+Info}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{user-import-builder_8js_a3163aeea9da48846055dfd38f2e249a7_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{user-import-builder_8js_a269f560661b4f00e081e1f2d953d3c8f}\index{user-\/import-\/builder.js@{user-\/import-\/builder.js}!populateUploadAccountUser@{populateUploadAccountUser}}
+\index{populateUploadAccountUser@{populateUploadAccountUser}!user-\/import-\/builder.js@{user-\/import-\/builder.js}}
+\doxysubsubsection{\texorpdfstring{populateUploadAccountUser()}{populateUploadAccountUser()}}
+{\footnotesize\ttfamily \label{user-import-builder_8js_a269f560661b4f00e081e1f2d953d3c8f} 
+function populate\+Upload\+Account\+User (\begin{DoxyParamCaption}\item[{}]{user}{, }\item[{}]{user\+Validator}{}\end{DoxyParamCaption})}
+
+Converts a User\+Import\+Record to a Upload\+Account\+User object. Throws an error when invalid fields are provided. 
+\begin{DoxyParams}{Parameters}
+{\em \{\+User\+Import\+Record\}} & user The User\+Import\+Record to conver to Upload\+Account\+User. \\
+\hline
+{\em \{\+Validator\+Function=\}} & user\+Validator The user validator function. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Upload\+Account\+User\} The corresponding Upload\+Account\+User to return. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{user-import-builder_8js_ac88eb01f70d91527fc700b01f74085cf}{convert\+Multi\+Factor\+Info\+To\+Server\+Format}}, \mbox{\hyperlink{application_8js_a1c8c0f5dea0786f9f7750c076275f96c}{disabled}}, \mbox{\hyperlink{user-import-builder_8js_af1a99a3ff1a35c114bdd06cc7252beb6}{error\+\_\+1}}, \mbox{\hyperlink{json-bigint_2lib_2stringify_8js_aec316efdeb7b2e5358b7d50869858da1}{JSON}}, \mbox{\hyperlink{lodash_2core_8js_a348c112a244660a2f280cda892658c24}{result}}, \mbox{\hyperlink{user-import-builder_8js_a022e926a40defc4294368e708a7e2372}{utils}}, and \mbox{\hyperlink{user-import-builder_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{user-import-builder_8js_a269f560661b4f00e081e1f2d953d3c8f_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{user-import-builder_8js_ac88eb01f70d91527fc700b01f74085cf}\index{user-\/import-\/builder.js@{user-\/import-\/builder.js}!convertMultiFactorInfoToServerFormat@{convertMultiFactorInfoToServerFormat}}
+\index{convertMultiFactorInfoToServerFormat@{convertMultiFactorInfoToServerFormat}!user-\/import-\/builder.js@{user-\/import-\/builder.js}}
+\doxysubsubsection{\texorpdfstring{convertMultiFactorInfoToServerFormat}{convertMultiFactorInfoToServerFormat}}
+{\footnotesize\ttfamily \label{user-import-builder_8js_ac88eb01f70d91527fc700b01f74085cf} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} convert\+Multi\+Factor\+Info\+To\+Server\+Format = convert\+Multi\+Factor\+Info\+To\+Server\+Format}
+
+\Hypertarget{user-import-builder_8js_a3c878464c635c5cd2043d7e066bb187b}\index{user-\/import-\/builder.js@{user-\/import-\/builder.js}!deep\_copy\_1@{deep\_copy\_1}}
+\index{deep\_copy\_1@{deep\_copy\_1}!user-\/import-\/builder.js@{user-\/import-\/builder.js}}
+\doxysubsubsection{\texorpdfstring{deep\_copy\_1}{deep\_copy\_1}}
+{\footnotesize\ttfamily \label{user-import-builder_8js_a3c878464c635c5cd2043d7e066bb187b} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} deep\+\_\+copy\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/deep-\/copy"{})}
+
+\Hypertarget{user-import-builder_8js_af1a99a3ff1a35c114bdd06cc7252beb6}\index{user-\/import-\/builder.js@{user-\/import-\/builder.js}!error\_1@{error\_1}}
+\index{error\_1@{error\_1}!user-\/import-\/builder.js@{user-\/import-\/builder.js}}
+\doxysubsubsection{\texorpdfstring{error\_1}{error\_1}}
+{\footnotesize\ttfamily \label{user-import-builder_8js_af1a99a3ff1a35c114bdd06cc7252beb6} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} error\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/error"{})}
+
+\Hypertarget{user-import-builder_8js_ae2475e10618961c050dcba04e8c42331}\index{user-\/import-\/builder.js@{user-\/import-\/builder.js}!strict@{strict}}
+\index{strict@{strict}!user-\/import-\/builder.js@{user-\/import-\/builder.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{user-import-builder_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+
+firebase-\/admin v12.\+7.\+0 \Hypertarget{user-import-builder_8js_a65a82198308c5c3b59045da90ac745b0}\index{user-\/import-\/builder.js@{user-\/import-\/builder.js}!UserImportBuilder@{UserImportBuilder}}
+\index{UserImportBuilder@{UserImportBuilder}!user-\/import-\/builder.js@{user-\/import-\/builder.js}}
+\doxysubsubsection{\texorpdfstring{UserImportBuilder}{UserImportBuilder}}
+{\footnotesize\ttfamily \label{user-import-builder_8js_a65a82198308c5c3b59045da90ac745b0} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} User\+Import\+Builder = \mbox{\hyperlink{user-import-builder_8js_ac88eb01f70d91527fc700b01f74085cf}{exports.\+convert\+Multi\+Factor\+Info\+To\+Server\+Format}} = void 0}
+
+\Hypertarget{user-import-builder_8js_a022e926a40defc4294368e708a7e2372}\index{user-\/import-\/builder.js@{user-\/import-\/builder.js}!utils@{utils}}
+\index{utils@{utils}!user-\/import-\/builder.js@{user-\/import-\/builder.js}}
+\doxysubsubsection{\texorpdfstring{utils}{utils}}
+{\footnotesize\ttfamily \label{user-import-builder_8js_a022e926a40defc4294368e708a7e2372} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} utils = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils"{})}
+
+\Hypertarget{user-import-builder_8js_add6dc10e852e313f07c0d59bcf288b6a}\index{user-\/import-\/builder.js@{user-\/import-\/builder.js}!validator@{validator}}
+\index{validator@{validator}!user-\/import-\/builder.js@{user-\/import-\/builder.js}}
+\doxysubsubsection{\texorpdfstring{validator}{validator}}
+{\footnotesize\ttfamily \label{user-import-builder_8js_add6dc10e852e313f07c0d59bcf288b6a} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} validator = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/validator"{})}
+

@@ -1,0 +1,133 @@
+\doxysection{Task Class Reference}
+\hypertarget{class_task}{}\label{class_task}\index{Task@{Task}}
+
+
+Collaboration diagram for Task\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{class_task__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_task_a83952874ba6bd6717cd4b7ede7426d9f}{get\+Element\+Count}} ()
+\item 
+\mbox{\hyperlink{class_task_a777b5c558c6e63745f003aabb3ce8f70}{get\+Request\+Byte\+Size}} ()
+\item 
+\mbox{\hyperlink{class_task_a3cba5883238380fde414077f3d680f03}{run}} ()
+\item 
+\mbox{\hyperlink{class_task_a0adfaf512a0c417279209f846ed11588}{extend}} (elements, \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a622460feeccdab6d8f307936fc6b36fb}{callback}})
+\item 
+\mbox{\hyperlink{class_task_a6facae297233ed746e6e1250867cd0c0}{cancel}} (id)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_task_a63de143a6f31137da2b2e2d81b7b49e9}{constructor}} (api\+Call, bundling\+Request, bundled\+Field, subresponse\+Field)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_task_a6facae297233ed746e6e1250867cd0c0}\index{Task@{Task}!cancel@{cancel}}
+\index{cancel@{cancel}!Task@{Task}}
+\doxysubsubsection{\texorpdfstring{cancel()}{cancel()}}
+{\footnotesize\ttfamily \label{class_task_a6facae297233ed746e6e1250867cd0c0} 
+Task\+::cancel (\begin{DoxyParamCaption}\item[{}]{id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Cancels a part of elements. 
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & id -\/ The identifier of the part of elements. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{boolean\} Whether the entire task will be canceled or not. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a622460feeccdab6d8f307936fc6b36fb}{callback}}, \mbox{\hyperlink{uuid_8min_8js_aeb337d295abaddb5ec3cb34cc2e2bbc9}{d}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}}, \mbox{\hyperlink{task_8js_af543d951cd813de4cca338839a98ab32}{google\+Error\+\_\+1}}, \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}, and \mbox{\hyperlink{task_8js_a74c7370f714eaf560437567361a88f5b}{status\+\_\+1}}.
+
+\Hypertarget{class_task_a63de143a6f31137da2b2e2d81b7b49e9}\index{Task@{Task}!constructor@{constructor}}
+\index{constructor@{constructor}!Task@{Task}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_task_a63de143a6f31137da2b2e2d81b7b49e9} 
+Task\+::constructor (\begin{DoxyParamCaption}\item[{}]{api\+Call}{, }\item[{}]{bundling\+Request}{, }\item[{}]{bundled\+Field}{, }\item[{}]{subresponse\+Field}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\doxylink{class_a}{A} task coordinates the execution of a single bundle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{function\}} & api\+Call -\/ The function to conduct calling API. \\
+\hline
+{\em \{\+Object\}} & bundling\+Request -\/ The base request object to be used for the actual API call. \\
+\hline
+{\em \{string\}} & bundled\+Field -\/ The name of the field in bundling\+Request to be bundled. \\
+\hline
+{\em \{string=\}} & subresponse\+Field -\/ The name of the field in the response to be passed to the callback. @constructor \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_task_a0adfaf512a0c417279209f846ed11588}\index{Task@{Task}!extend@{extend}}
+\index{extend@{extend}!Task@{Task}}
+\doxysubsubsection{\texorpdfstring{extend()}{extend()}}
+{\footnotesize\ttfamily \label{class_task_a0adfaf512a0c417279209f846ed11588} 
+Task\+::extend (\begin{DoxyParamCaption}\item[{}]{elements}{, }\item[{}]{bytes}{, }\item[{}]{callback}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Appends the list of elements into the task. 
+\begin{DoxyParams}{Parameters}
+{\em \{\+Object\mbox{[}$\,$\mbox{]}\}} & elements -\/ the new list of elements. \\
+\hline
+{\em \{number\}} & bytes -\/ the byte size required to encode elements in the API. \\
+\hline
+{\em \{\+APICallback\}} & callback -\/ the callback of the method call. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}}, and \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a622460feeccdab6d8f307936fc6b36fb}{callback}}.
+
+\Hypertarget{class_task_a83952874ba6bd6717cd4b7ede7426d9f}\index{Task@{Task}!getElementCount@{getElementCount}}
+\index{getElementCount@{getElementCount}!Task@{Task}}
+\doxysubsubsection{\texorpdfstring{getElementCount()}{getElementCount()}}
+{\footnotesize\ttfamily \label{class_task_a83952874ba6bd6717cd4b7ede7426d9f} 
+Task\+::get\+Element\+Count (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the number of elements in a task. \begin{DoxyReturn}{Returns}
+\{number\} The number of elements. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{cjs_2internal_2operators_2count_8js_ac88314f55a9398aa7c8da3c0aae90d53}{count}}, and \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}.
+
+\Hypertarget{class_task_a777b5c558c6e63745f003aabb3ce8f70}\index{Task@{Task}!getRequestByteSize@{getRequestByteSize}}
+\index{getRequestByteSize@{getRequestByteSize}!Task@{Task}}
+\doxysubsubsection{\texorpdfstring{getRequestByteSize()}{getRequestByteSize()}}
+{\footnotesize\ttfamily \label{class_task_a777b5c558c6e63745f003aabb3ce8f70} 
+Task\+::get\+Request\+Byte\+Size (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the total byte size of the elements in a task. \begin{DoxyReturn}{Returns}
+\{number\} The byte size. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}, and \mbox{\hyperlink{ordered-map_8min_8js_aa4a39500e3f754a8f2e1fd50b9ae523c}{size}}.
+
+\Hypertarget{class_task_a3cba5883238380fde414077f3d680f03}\index{Task@{Task}!run@{run}}
+\index{run@{run}!Task@{Task}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \label{class_task_a3cba5883238380fde414077f3d680f03} 
+Task\+::run (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Invokes the actual API call with current elements. \begin{DoxyReturn}{Returns}
+\{string\mbox{[}\mbox{]}\} -\/ the list of ids for invocations to be run. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a622460feeccdab6d8f307936fc6b36fb}{callback}}, \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}, \mbox{\hyperlink{task_8js_a01037e683055c7022fdc460e46fa5be8}{deep\+Copy\+For\+Response}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}}, \mbox{\hyperlink{task_8js_af543d951cd813de4cca338839a98ab32}{google\+Error\+\_\+1}}, \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ac70ac40ef8199c59316b35022dd21914}{response}}, \mbox{\hyperlink{cipher_8js_a1960adf42cbf8c24067b45da3a2f0aaf}{start}}, \mbox{\hyperlink{task_8js_a74c7370f714eaf560437567361a88f5b}{status\+\_\+1}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/google-\/gax/build/src/bundling\+Calls/\mbox{\hyperlink{task_8js}{task.\+js}}\end{DoxyCompactItemize}

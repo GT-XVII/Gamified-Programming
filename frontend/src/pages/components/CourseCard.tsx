@@ -1,5 +1,14 @@
 import React from 'react';
 
+/**
+ * Props for the CourseCard component.
+ * @interface CourseCardProps
+ * @property {string} title - The title of the course.
+ * @property {string} description - A brief description of the course.
+ * @property {string} imageSrc - The source URL for the course image.
+ * @property {number} progress - The current progress of the course.
+ * @property {number} totalSteps - The total number of steps in the course.
+ */
 interface CourseCardProps {
   title: string;
   description: string;
@@ -8,6 +17,12 @@ interface CourseCardProps {
   totalSteps: number;
 }
 
+/**
+ * CourseCard component displays information about a course.
+ * 
+ * @param {CourseCardProps} props - The properties for the component.
+ * @returns {JSX.Element} The rendered CourseCard component.
+ */
 export const CourseCard: React.FC<CourseCardProps> = ({
   title,
   description,
@@ -16,15 +31,15 @@ export const CourseCard: React.FC<CourseCardProps> = ({
   totalSteps
 }) => {
   return (
-    <article className="flex flex-col  max-md:ml-0 max-md:w-full">
+    <article className="flex flex-col max-md:ml-0 max-md:w-full">
       <div className="flex overflow-hidden flex-col py-5 mx-auto w-full rounded-3xl border border-solid bg-zinc-900 border-zinc-900 max-md:mt-4 max-md:max-w-full">
         <div className="flex z-10 flex-col px-3.5 w-full max-md:pr-5 max-md:max-w-full">
           <div className="max-md:mr-2.5 max-md:max-w-full">
             <div className="grid grid-cols-2">
               <div className="pl-2">
-                <img loading="lazy" src={imageSrc} alt={`${title} course illustration`}   className="rounded-3xl" />
+                <img loading="lazy" src={imageSrc} alt={`${title} course illustration`} className="rounded-3xl" />
               </div>
-              <div className="flex flex-col ml-5  max-md:ml-0 max-md:w-full">
+              <div className="flex flex-col ml-5 max-md:ml-0 max-md:w-full">
                 <div className="flex flex-col mt-2 max-md:mt-10">
                   <div className="flex flex-col min-h-[14px]">
                     <div className="flex w-full bg-purple-200 rounded-lg min-h-[4px]" />

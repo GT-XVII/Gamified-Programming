@@ -1,0 +1,304 @@
+\doxysection{backend/node\+\_\+modules/@grpc/grpc-\/js/build/src/service-\/config.js File Reference}
+\hypertarget{service-config_8js}{}\label{service-config_8js}\index{backend/node\_modules/"@grpc/grpc-\/js/build/src/service-\/config.js@{backend/node\_modules/"@grpc/grpc-\/js/build/src/service-\/config.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{service-config_8js_a706d56121d6b61dbd470fed6f744cdc6}{validate\+Name}} (\mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}})
+\item 
+function \mbox{\hyperlink{service-config_8js_a484ba7594bce0721f618146f34f76e27}{validate\+Retry\+Policy}} (\mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}})
+\item 
+function \mbox{\hyperlink{service-config_8js_ab42e56aee72f3c5c73a985ea6a2ccdaf}{validate\+Hedging\+Policy}} (\mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}})
+\item 
+function \mbox{\hyperlink{service-config_8js_aeae06e147c59aa935ec848540b60240b}{validate\+Method\+Config}} (\mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}})
+\item 
+function \mbox{\hyperlink{service-config_8js_ac56435a67b2cae386bfdb6ea8a6604f8}{validate\+Retry\+Throttling}} (\mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}})
+\item 
+function \mbox{\hyperlink{service-config_8js_ab490ddefe6992b00f97a46b6a0bb00c2}{validate\+Load\+Balancing\+Config}} (\mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}})
+\item 
+function \mbox{\hyperlink{service-config_8js_ad6a7677da1e58d8f4ed3035b63e923ce}{validate\+Service\+Config}} (\mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}})
+\item 
+function \mbox{\hyperlink{service-config_8js_afcbf16e38069a79ca1bf00096a298f03}{validate\+Canary\+Config}} (\mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}})
+\item 
+function \mbox{\hyperlink{service-config_8js_a741abb2e1192c10239aec60cd41381ee}{validate\+And\+Select\+Canary\+Config}} (\mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}, percentage)
+\item 
+function \mbox{\hyperlink{service-config_8js_adff94744168fe17aeed13d154bc989ef}{extract\+And\+Select\+Service\+Config}} (txt\+Record, percentage)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{service-config_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{service-config_8js_a2d4eab59501b0efe94f132f30cf04266}{extract\+And\+Select\+Service\+Config}} = \mbox{\hyperlink{service-config_8js_abf8d8b6e2833bcee2d99e12e9c455b39}{exports.\+validate\+Service\+Config}} = \mbox{\hyperlink{service-config_8js_a9e8cf33fcbcc29209f23d9d3ad91072a}{exports.\+validate\+Retry\+Throttling}} = void 0
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{service-config_8js_a98a6512654237767309dbb86c0bdf006}{os}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}os"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{service-config_8js_ad33cb6840349d3bc93f4fe9de15a6f8f}{constants\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./constants"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{service-config_8js_a0dd20ac0a7f483c044fd89bda87ad20c}{DURATION\+\_\+\+REGEX}} = /\texorpdfstring{$^\wedge$}{\string^}\textbackslash{}\mbox{\hyperlink{uuid_8min_8js_aeb337d295abaddb5ec3cb34cc2e2bbc9}{d}}+(\textbackslash{}.\textbackslash{}\mbox{\hyperlink{uuid_8min_8js_aeb337d295abaddb5ec3cb34cc2e2bbc9}{d}}\{1,9\})?s\$/
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{service-config_8js_a0e4fbd36525cbae52751237a8928c5db}{CLIENT\+\_\+\+LANGUAGE\+\_\+\+STRING}} = \textquotesingle{}\mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2platform_2index_8js_a74c72f849f998803d0f301e524445c36}{node}}\textquotesingle{}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{service-config_8js_a9e8cf33fcbcc29209f23d9d3ad91072a}{validate\+Retry\+Throttling}} = validate\+Retry\+Throttling
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{service-config_8js_abf8d8b6e2833bcee2d99e12e9c455b39}{validate\+Service\+Config}} = validate\+Service\+Config
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{service-config_8js_adff94744168fe17aeed13d154bc989ef}\index{service-\/config.js@{service-\/config.js}!extractAndSelectServiceConfig@{extractAndSelectServiceConfig}}
+\index{extractAndSelectServiceConfig@{extractAndSelectServiceConfig}!service-\/config.js@{service-\/config.js}}
+\doxysubsubsection{\texorpdfstring{extractAndSelectServiceConfig()}{extractAndSelectServiceConfig()}}
+{\footnotesize\ttfamily \label{service-config_8js_adff94744168fe17aeed13d154bc989ef} 
+function extract\+And\+Select\+Service\+Config (\begin{DoxyParamCaption}\item[{}]{txt\+Record}{, }\item[{}]{percentage}{}\end{DoxyParamCaption})}
+
+Find the "{}grpc\+\_\+config"{} record among the TXT records, parse its value as JSON, validate its contents, and select a service config with selection fields that all match this client. Most of these steps can fail with an error; the caller must handle any errors thrown this way. 
+\begin{DoxyParams}{Parameters}
+{\em txt\+Record} & The TXT record array that is output from a successful call to dns.\+resolve\+Txt \\
+\hline
+{\em percentage} & \doxylink{class_a}{A} number chosen from the range \mbox{[}0, 100) that is used to select which config to use \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The service configuration to use, given the percentage value, or null if the service config data has a valid format but none of the options match the current client. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{json-bigint_2lib_2stringify_8js_aec316efdeb7b2e5358b7d50869858da1}{JSON}}, \mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a7fdcf4c82c9946bf2b0b80829a7ab230}{length}}, \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}, and \mbox{\hyperlink{service-config_8js_a741abb2e1192c10239aec60cd41381ee}{validate\+And\+Select\+Canary\+Config()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{service-config_8js_adff94744168fe17aeed13d154bc989ef_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{service-config_8js_a741abb2e1192c10239aec60cd41381ee}\index{service-\/config.js@{service-\/config.js}!validateAndSelectCanaryConfig@{validateAndSelectCanaryConfig}}
+\index{validateAndSelectCanaryConfig@{validateAndSelectCanaryConfig}!service-\/config.js@{service-\/config.js}}
+\doxysubsubsection{\texorpdfstring{validateAndSelectCanaryConfig()}{validateAndSelectCanaryConfig()}}
+{\footnotesize\ttfamily \label{service-config_8js_a741abb2e1192c10239aec60cd41381ee} 
+function validate\+And\+Select\+Canary\+Config (\begin{DoxyParamCaption}\item[{}]{obj}{, }\item[{}]{percentage}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{src_2util_2minimal_8js_a325c4e317c38d8497130ebce7670be2f}{Array}}, \mbox{\hyperlink{service-config_8js_a0e4fbd36525cbae52751237a8928c5db}{CLIENT\+\_\+\+LANGUAGE\+\_\+\+STRING}}, \mbox{\hyperlink{rxjs_8umd_8js_a729ec4717f914fce241d4dccc9a03066}{config}}, \mbox{\hyperlink{negotiator_2index_8js_a06c08a07ae0a0d399b49658047e51393}{language}}, \mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}, \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}, and \mbox{\hyperlink{service-config_8js_afcbf16e38069a79ca1bf00096a298f03}{validate\+Canary\+Config()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{service-config_8js_a741abb2e1192c10239aec60cd41381ee_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{service-config_8js_a741abb2e1192c10239aec60cd41381ee_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{service-config_8js_afcbf16e38069a79ca1bf00096a298f03}\index{service-\/config.js@{service-\/config.js}!validateCanaryConfig@{validateCanaryConfig}}
+\index{validateCanaryConfig@{validateCanaryConfig}!service-\/config.js@{service-\/config.js}}
+\doxysubsubsection{\texorpdfstring{validateCanaryConfig()}{validateCanaryConfig()}}
+{\footnotesize\ttfamily \label{service-config_8js_afcbf16e38069a79ca1bf00096a298f03} 
+function validate\+Canary\+Config (\begin{DoxyParamCaption}\item[{}]{obj}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{src_2util_2minimal_8js_a325c4e317c38d8497130ebce7670be2f}{Array}}, \mbox{\hyperlink{rxjs_8umd_8js_a729ec4717f914fce241d4dccc9a03066}{config}}, \mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}, \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}, \mbox{\hyperlink{lodash_2core_8js_a348c112a244660a2f280cda892658c24}{result}}, \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2index_8js_a586d19d7ed905643c6ba0d589d8df6f8}{service\+Config}}, and \mbox{\hyperlink{service-config_8js_abf8d8b6e2833bcee2d99e12e9c455b39}{validate\+Service\+Config}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{service-config_8js_afcbf16e38069a79ca1bf00096a298f03_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{service-config_8js_ab42e56aee72f3c5c73a985ea6a2ccdaf}\index{service-\/config.js@{service-\/config.js}!validateHedgingPolicy@{validateHedgingPolicy}}
+\index{validateHedgingPolicy@{validateHedgingPolicy}!service-\/config.js@{service-\/config.js}}
+\doxysubsubsection{\texorpdfstring{validateHedgingPolicy()}{validateHedgingPolicy()}}
+{\footnotesize\ttfamily \label{service-config_8js_ab42e56aee72f3c5c73a985ea6a2ccdaf} 
+function validate\+Hedging\+Policy (\begin{DoxyParamCaption}\item[{}]{obj}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{src_2util_2minimal_8js_a325c4e317c38d8497130ebce7670be2f}{Array}}, \mbox{\hyperlink{service-config_8js_ad33cb6840349d3bc93f4fe9de15a6f8f}{constants\+\_\+1}}, \mbox{\hyperlink{service-config_8js_a0dd20ac0a7f483c044fd89bda87ad20c}{DURATION\+\_\+\+REGEX}}, \mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}, \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}, \mbox{\hyperlink{lodash_2core_8js_a348c112a244660a2f280cda892658c24}{result}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{service-config_8js_ab42e56aee72f3c5c73a985ea6a2ccdaf_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{service-config_8js_ab490ddefe6992b00f97a46b6a0bb00c2}\index{service-\/config.js@{service-\/config.js}!validateLoadBalancingConfig@{validateLoadBalancingConfig}}
+\index{validateLoadBalancingConfig@{validateLoadBalancingConfig}!service-\/config.js@{service-\/config.js}}
+\doxysubsubsection{\texorpdfstring{validateLoadBalancingConfig()}{validateLoadBalancingConfig()}}
+{\footnotesize\ttfamily \label{service-config_8js_ab490ddefe6992b00f97a46b6a0bb00c2} 
+function validate\+Load\+Balancing\+Config (\begin{DoxyParamCaption}\item[{}]{obj}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{__base_assign_8js_a87dd2006b34e1d50c301938be11fd6fa}{keys}}, \mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}, and \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{service-config_8js_ab490ddefe6992b00f97a46b6a0bb00c2_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{service-config_8js_aeae06e147c59aa935ec848540b60240b}\index{service-\/config.js@{service-\/config.js}!validateMethodConfig@{validateMethodConfig}}
+\index{validateMethodConfig@{validateMethodConfig}!service-\/config.js@{service-\/config.js}}
+\doxysubsubsection{\texorpdfstring{validateMethodConfig()}{validateMethodConfig()}}
+{\footnotesize\ttfamily \label{service-config_8js_aeae06e147c59aa935ec848540b60240b} 
+function validate\+Method\+Config (\begin{DoxyParamCaption}\item[{}]{obj}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{logger_2dist_2esm_2index_8esm5_8js_a0adf123df8967a14b5bdd9ff3bbe2d0c}{\+\_\+a}}, \mbox{\hyperlink{src_2util_2minimal_8js_a325c4e317c38d8497130ebce7670be2f}{Array}}, \mbox{\hyperlink{service-config_8js_a0dd20ac0a7f483c044fd89bda87ad20c}{DURATION\+\_\+\+REGEX}}, \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}, \mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}, \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}, \mbox{\hyperlink{lodash_2core_8js_a348c112a244660a2f280cda892658c24}{result}}, \mbox{\hyperlink{service-config_8js_ab42e56aee72f3c5c73a985ea6a2ccdaf}{validate\+Hedging\+Policy()}}, \mbox{\hyperlink{service-config_8js_a706d56121d6b61dbd470fed6f744cdc6}{validate\+Name()}}, and \mbox{\hyperlink{service-config_8js_a484ba7594bce0721f618146f34f76e27}{validate\+Retry\+Policy()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{service-config_8js_aeae06e147c59aa935ec848540b60240b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{service-config_8js_aeae06e147c59aa935ec848540b60240b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{service-config_8js_a706d56121d6b61dbd470fed6f744cdc6}\index{service-\/config.js@{service-\/config.js}!validateName@{validateName}}
+\index{validateName@{validateName}!service-\/config.js@{service-\/config.js}}
+\doxysubsubsection{\texorpdfstring{validateName()}{validateName()}}
+{\footnotesize\ttfamily \label{service-config_8js_a706d56121d6b61dbd470fed6f744cdc6} 
+function validate\+Name (\begin{DoxyParamCaption}\item[{}]{obj}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{rxjs_8umd_8js_a729ec4717f914fce241d4dccc9a03066}{config}}, \mbox{\hyperlink{ordered-map_8min_8js_a4bdf3e530f52a4f5162d818b2a88378b}{empty}}, \mbox{\hyperlink{bench_8js_a758587d8718823d0194f29b3b8442863}{expected}}, \mbox{\hyperlink{verifier_8js_a499da133dea4d1a4ef64e31667ec221a}{invalid()}}, \mbox{\hyperlink{lodash_2method_8js_a2f565198b0a61cb8648a01f0d9617cd7}{method}}, \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}, \mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}, \mbox{\hyperlink{long_2index_8js_a88083640992a53a144223e2bd602d47d}{or}}, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type}}, \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}, and \mbox{\hyperlink{unset_8js_a0fdf4126f4ac73e5b0e8d785ff9e82a7}{unset()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{service-config_8js_a706d56121d6b61dbd470fed6f744cdc6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{service-config_8js_a706d56121d6b61dbd470fed6f744cdc6_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{service-config_8js_a484ba7594bce0721f618146f34f76e27}\index{service-\/config.js@{service-\/config.js}!validateRetryPolicy@{validateRetryPolicy}}
+\index{validateRetryPolicy@{validateRetryPolicy}!service-\/config.js@{service-\/config.js}}
+\doxysubsubsection{\texorpdfstring{validateRetryPolicy()}{validateRetryPolicy()}}
+{\footnotesize\ttfamily \label{service-config_8js_a484ba7594bce0721f618146f34f76e27} 
+function validate\+Retry\+Policy (\begin{DoxyParamCaption}\item[{}]{obj}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{src_2util_2minimal_8js_a325c4e317c38d8497130ebce7670be2f}{Array}}, \mbox{\hyperlink{service-config_8js_ad33cb6840349d3bc93f4fe9de15a6f8f}{constants\+\_\+1}}, \mbox{\hyperlink{service-config_8js_a0dd20ac0a7f483c044fd89bda87ad20c}{DURATION\+\_\+\+REGEX}}, \mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}, \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{service-config_8js_a484ba7594bce0721f618146f34f76e27_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{service-config_8js_ac56435a67b2cae386bfdb6ea8a6604f8}\index{service-\/config.js@{service-\/config.js}!validateRetryThrottling@{validateRetryThrottling}}
+\index{validateRetryThrottling@{validateRetryThrottling}!service-\/config.js@{service-\/config.js}}
+\doxysubsubsection{\texorpdfstring{validateRetryThrottling()}{validateRetryThrottling()}}
+{\footnotesize\ttfamily \label{service-config_8js_ac56435a67b2cae386bfdb6ea8a6604f8} 
+function validate\+Retry\+Throttling (\begin{DoxyParamCaption}\item[{}]{obj}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}.
+
+\Hypertarget{service-config_8js_ad6a7677da1e58d8f4ed3035b63e923ce}\index{service-\/config.js@{service-\/config.js}!validateServiceConfig@{validateServiceConfig}}
+\index{validateServiceConfig@{validateServiceConfig}!service-\/config.js@{service-\/config.js}}
+\doxysubsubsection{\texorpdfstring{validateServiceConfig()}{validateServiceConfig()}}
+{\footnotesize\ttfamily \label{service-config_8js_ad6a7677da1e58d8f4ed3035b63e923ce} 
+function validate\+Service\+Config (\begin{DoxyParamCaption}\item[{}]{obj}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{src_2util_2minimal_8js_a325c4e317c38d8497130ebce7670be2f}{Array}}, \mbox{\hyperlink{rxjs_8umd_8js_a729ec4717f914fce241d4dccc9a03066}{config}}, \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}, \mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}, \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}, \mbox{\hyperlink{lodash_2core_8js_a348c112a244660a2f280cda892658c24}{result}}, \mbox{\hyperlink{service-config_8js_ab490ddefe6992b00f97a46b6a0bb00c2}{validate\+Load\+Balancing\+Config()}}, \mbox{\hyperlink{service-config_8js_aeae06e147c59aa935ec848540b60240b}{validate\+Method\+Config()}}, and \mbox{\hyperlink{service-config_8js_a9e8cf33fcbcc29209f23d9d3ad91072a}{validate\+Retry\+Throttling}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{service-config_8js_ad6a7677da1e58d8f4ed3035b63e923ce_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{service-config_8js_a0e4fbd36525cbae52751237a8928c5db}\index{service-\/config.js@{service-\/config.js}!CLIENT\_LANGUAGE\_STRING@{CLIENT\_LANGUAGE\_STRING}}
+\index{CLIENT\_LANGUAGE\_STRING@{CLIENT\_LANGUAGE\_STRING}!service-\/config.js@{service-\/config.js}}
+\doxysubsubsection{\texorpdfstring{CLIENT\_LANGUAGE\_STRING}{CLIENT\_LANGUAGE\_STRING}}
+{\footnotesize\ttfamily \label{service-config_8js_a0e4fbd36525cbae52751237a8928c5db} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} CLIENT\+\_\+\+LANGUAGE\+\_\+\+STRING = \textquotesingle{}\mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2platform_2index_8js_a74c72f849f998803d0f301e524445c36}{node}}\textquotesingle{}}
+
+\doxylink{class_client}{Client} language name used for determining whether this client matches a {\ttfamily Service\+Config\+Canary\+Config}\textquotesingle{}s {\ttfamily client\+Language} list. \Hypertarget{service-config_8js_ad33cb6840349d3bc93f4fe9de15a6f8f}\index{service-\/config.js@{service-\/config.js}!constants\_1@{constants\_1}}
+\index{constants\_1@{constants\_1}!service-\/config.js@{service-\/config.js}}
+\doxysubsubsection{\texorpdfstring{constants\_1}{constants\_1}}
+{\footnotesize\ttfamily \label{service-config_8js_ad33cb6840349d3bc93f4fe9de15a6f8f} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} constants\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./constants"{})}
+
+\Hypertarget{service-config_8js_a0dd20ac0a7f483c044fd89bda87ad20c}\index{service-\/config.js@{service-\/config.js}!DURATION\_REGEX@{DURATION\_REGEX}}
+\index{DURATION\_REGEX@{DURATION\_REGEX}!service-\/config.js@{service-\/config.js}}
+\doxysubsubsection{\texorpdfstring{DURATION\_REGEX}{DURATION\_REGEX}}
+{\footnotesize\ttfamily \label{service-config_8js_a0dd20ac0a7f483c044fd89bda87ad20c} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} DURATION\+\_\+\+REGEX = /\texorpdfstring{$^\wedge$}{\string^}\textbackslash{}\mbox{\hyperlink{uuid_8min_8js_aeb337d295abaddb5ec3cb34cc2e2bbc9}{d}}+(\textbackslash{}.\textbackslash{}\mbox{\hyperlink{uuid_8min_8js_aeb337d295abaddb5ec3cb34cc2e2bbc9}{d}}\{1,9\})?s\$/}
+
+Recognizes a number with up to 9 digits after the decimal point, followed by an "{}s"{}, representing a number of seconds. \Hypertarget{service-config_8js_a2d4eab59501b0efe94f132f30cf04266}\index{service-\/config.js@{service-\/config.js}!extractAndSelectServiceConfig@{extractAndSelectServiceConfig}}
+\index{extractAndSelectServiceConfig@{extractAndSelectServiceConfig}!service-\/config.js@{service-\/config.js}}
+\doxysubsubsection{\texorpdfstring{extractAndSelectServiceConfig}{extractAndSelectServiceConfig}}
+{\footnotesize\ttfamily \label{service-config_8js_a2d4eab59501b0efe94f132f30cf04266} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} extract\+And\+Select\+Service\+Config = \mbox{\hyperlink{service-config_8js_abf8d8b6e2833bcee2d99e12e9c455b39}{exports.\+validate\+Service\+Config}} = \mbox{\hyperlink{service-config_8js_a9e8cf33fcbcc29209f23d9d3ad91072a}{exports.\+validate\+Retry\+Throttling}} = void 0}
+
+\Hypertarget{service-config_8js_a98a6512654237767309dbb86c0bdf006}\index{service-\/config.js@{service-\/config.js}!os@{os}}
+\index{os@{os}!service-\/config.js@{service-\/config.js}}
+\doxysubsubsection{\texorpdfstring{os}{os}}
+{\footnotesize\ttfamily \label{service-config_8js_a98a6512654237767309dbb86c0bdf006} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} os = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}os"{})}
+
+\Hypertarget{service-config_8js_ae2475e10618961c050dcba04e8c42331}\index{service-\/config.js@{service-\/config.js}!strict@{strict}}
+\index{strict@{strict}!service-\/config.js@{service-\/config.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{service-config_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+
+\Hypertarget{service-config_8js_a9e8cf33fcbcc29209f23d9d3ad91072a}\index{service-\/config.js@{service-\/config.js}!validateRetryThrottling@{validateRetryThrottling}}
+\index{validateRetryThrottling@{validateRetryThrottling}!service-\/config.js@{service-\/config.js}}
+\doxysubsubsection{\texorpdfstring{validateRetryThrottling}{validateRetryThrottling}}
+{\footnotesize\ttfamily \label{service-config_8js_a9e8cf33fcbcc29209f23d9d3ad91072a} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} validate\+Retry\+Throttling = validate\+Retry\+Throttling}
+
+\Hypertarget{service-config_8js_abf8d8b6e2833bcee2d99e12e9c455b39}\index{service-\/config.js@{service-\/config.js}!validateServiceConfig@{validateServiceConfig}}
+\index{validateServiceConfig@{validateServiceConfig}!service-\/config.js@{service-\/config.js}}
+\doxysubsubsection{\texorpdfstring{validateServiceConfig}{validateServiceConfig}}
+{\footnotesize\ttfamily \label{service-config_8js_abf8d8b6e2833bcee2d99e12e9c455b39} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} validate\+Service\+Config = validate\+Service\+Config}
+

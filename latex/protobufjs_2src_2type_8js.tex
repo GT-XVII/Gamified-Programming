@@ -1,0 +1,707 @@
+\doxysection{backend/node\+\_\+modules/protobufjs/src/type.js File Reference}
+\hypertarget{protobufjs_2src_2type_8js}{}\label{protobufjs_2src_2type_8js}\index{backend/node\_modules/protobufjs/src/type.js@{backend/node\_modules/protobufjs/src/type.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{protobufjs_2src_2type_8js_a90ebe65837b4060b99f30c816cbfbf86}{Type}} (\mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}, options)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{protobufjs_2src_2type_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{protobufjs_2src_2type_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} = \mbox{\hyperlink{node-forge_2lib_2asn1_8js_ae7bd3a5c9bffe6cb55cf1a9c317433d7}{Type}}
+\item 
+var \mbox{\hyperlink{protobufjs_2src_2type_8js_a380ca3c2b04d350ee2d2da0449bba832}{Namespace}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./namespace"{})
+\item 
+\mbox{\hyperlink{node-forge_2lib_2asn1_8js_ae7bd3a5c9bffe6cb55cf1a9c317433d7}{Type}} \mbox{\hyperlink{protobufjs_2src_2type_8js_aba5b69ab5e0454d40408fa080ef03a8e}{prototype}} = \mbox{\hyperlink{combined__stream_8js_a1366166f7d9d88068055585de50f1037}{Object.\+create}}(Namespace.\+prototype)).\mbox{\hyperlink{_json_web_token_error_8js_ae0d7523761ce2ef80fa2f1afff43bbf3}{constructor}} = \mbox{\hyperlink{node-forge_2lib_2asn1_8js_ae7bd3a5c9bffe6cb55cf1a9c317433d7}{Type}}).\mbox{\hyperlink{protobufjs_2src_2object_8js_a3a211f872d5c1f0b69d049b600b4080d}{class\+Name}} = "{}Type"{}
+\item 
+var \mbox{\hyperlink{protobufjs_2src_2type_8js_acf47369577c460f65f36bd5f1cdc57b2}{Enum}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./enum"{})
+\item 
+var \mbox{\hyperlink{protobufjs_2src_2type_8js_a2b710d99af255d85647bf03d4aabafe5}{One\+Of}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./oneof"{})
+\item 
+var \mbox{\hyperlink{protobufjs_2src_2type_8js_a5f4ca2a855c7675eb89f8921a9c61b25}{Field}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./field"{})
+\item 
+var \mbox{\hyperlink{protobufjs_2src_2type_8js_a4d6688efa4681ec7651d492cb91459a3}{Map\+Field}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./mapfield"{})
+\item 
+var \mbox{\hyperlink{protobufjs_2src_2type_8js_aeb3988523fdcf146cdbff90e65abd3a4}{Service}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./service"{})
+\item 
+var \mbox{\hyperlink{protobufjs_2src_2type_8js_a2b999b964c05992f7c4361df3fcb3017}{Message}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./message"{})
+\item 
+var \mbox{\hyperlink{protobufjs_2src_2type_8js_a1b804b43a9af8fa8940b69c1217fb5ff}{Reader}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./reader"{})
+\item 
+var \mbox{\hyperlink{protobufjs_2src_2type_8js_ad1e0e28ffc8a2d2f6704480f38c032f4}{Writer}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./writer"{})
+\item 
+var \mbox{\hyperlink{protobufjs_2src_2type_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./util"{})
+\item 
+var \mbox{\hyperlink{protobufjs_2src_2type_8js_a38e0b3f08b711fb23081974a1cb3c2f0}{encoder}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./encoder"{})
+\item 
+var \mbox{\hyperlink{protobufjs_2src_2type_8js_a47b3a44c298e29be2cdb781ca7a151b8}{decoder}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./decoder"{})
+\item 
+var \mbox{\hyperlink{protobufjs_2src_2type_8js_a0da9ddb7ec87792a57c07743c586236c}{verifier}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./verifier"{})
+\item 
+var \mbox{\hyperlink{protobufjs_2src_2type_8js_a1662812dcd90d6e58cb1f5b9f2b82e4a}{converter}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./converter"{})
+\item 
+var \mbox{\hyperlink{protobufjs_2src_2type_8js_a1e37edbd125966e3c8187b4a0ebcd57c}{wrappers}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./wrappers"{})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Type\#ctor}
+@type \{Constructor\texorpdfstring{$<$}{<}\{\}\texorpdfstring{$>$}{>}\} \begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{node-forge_2lib_2asn1_8js_ae7bd3a5c9bffe6cb55cf1a9c317433d7}{Type}} \mbox{\hyperlink{protobufjs_2src_2type_8js_ae8be0bc7805771c59e2df6e591e14559}{generate\+Constructor}}
+\item 
+\mbox{\hyperlink{node-forge_2lib_2asn1_8js_ae7bd3a5c9bffe6cb55cf1a9c317433d7}{Type}} \mbox{\hyperlink{protobufjs_2src_2type_8js_add6a992fd85b65b37de48878bbe879db}{from\+JSON}}
+\item 
+\mbox{\hyperlink{node-forge_2lib_2asn1_8js_ae7bd3a5c9bffe6cb55cf1a9c317433d7}{Type}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{protobufjs_2src_2type_8js_a910318f35b6ff41d6f82369e4765f81f}{to\+JSON}}
+\item 
+\mbox{\hyperlink{node-forge_2lib_2asn1_8js_ae7bd3a5c9bffe6cb55cf1a9c317433d7}{Type}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{protobufjs_2src_2type_8js_ad997a49bb0f94a7800824651b39971f5}{resolve\+All}}
+\item 
+\mbox{\hyperlink{node-forge_2lib_2asn1_8js_ae7bd3a5c9bffe6cb55cf1a9c317433d7}{Type}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{protobufjs_2src_2type_8js_ac76737969660ff49e4347aa9153a5d68}{get}}
+\item 
+\mbox{\hyperlink{node-forge_2lib_2asn1_8js_ae7bd3a5c9bffe6cb55cf1a9c317433d7}{Type}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{protobufjs_2src_2type_8js_a9c955487736024f49dddd7b9a766aab3}{add}}
+\item 
+\mbox{\hyperlink{node-forge_2lib_2asn1_8js_ae7bd3a5c9bffe6cb55cf1a9c317433d7}{Type}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{protobufjs_2src_2type_8js_acf367f33ba53f9f31ff784fe64b935e2}{remove}}
+\item 
+\mbox{\hyperlink{node-forge_2lib_2asn1_8js_ae7bd3a5c9bffe6cb55cf1a9c317433d7}{Type}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{protobufjs_2src_2type_8js_ae39b9bcecb822773fee2f9d6aab654a2}{is\+Reserved\+Id}}
+\item 
+\mbox{\hyperlink{node-forge_2lib_2asn1_8js_ae7bd3a5c9bffe6cb55cf1a9c317433d7}{Type}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{protobufjs_2src_2type_8js_a0834c48540fdf67b96b0e4e526fff606}{is\+Reserved\+Name}}
+\item 
+\mbox{\hyperlink{node-forge_2lib_2asn1_8js_ae7bd3a5c9bffe6cb55cf1a9c317433d7}{Type}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{protobufjs_2src_2type_8js_a8c94edfac2772cc28b524df1f9059427}{create}}
+\item 
+\mbox{\hyperlink{node-forge_2lib_2asn1_8js_ae7bd3a5c9bffe6cb55cf1a9c317433d7}{Type}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{protobufjs_2src_2type_8js_a22db87d78cd84ce92563c234cf902102}{setup}}
+\item 
+\mbox{\hyperlink{node-forge_2lib_2asn1_8js_ae7bd3a5c9bffe6cb55cf1a9c317433d7}{Type}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{protobufjs_2src_2type_8js_abaf88c002747221a5dd05881e4954ff1}{encode}}
+\item 
+\mbox{\hyperlink{node-forge_2lib_2asn1_8js_ae7bd3a5c9bffe6cb55cf1a9c317433d7}{Type}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{protobufjs_2src_2type_8js_a6c96b8241b827fe15c087282d87af569}{encode\+Delimited}}
+\item 
+\mbox{\hyperlink{node-forge_2lib_2asn1_8js_ae7bd3a5c9bffe6cb55cf1a9c317433d7}{Type}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{protobufjs_2src_2type_8js_a95dffb358ec4ef01ad1d24d6e045aa21}{decode}}
+\item 
+\mbox{\hyperlink{node-forge_2lib_2asn1_8js_ae7bd3a5c9bffe6cb55cf1a9c317433d7}{Type}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{protobufjs_2src_2type_8js_a1a90c65e19125727867a65f3760ac14a}{decode\+Delimited}}
+\item 
+\mbox{\hyperlink{node-forge_2lib_2asn1_8js_ae7bd3a5c9bffe6cb55cf1a9c317433d7}{Type}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{protobufjs_2src_2type_8js_a6d013bc6f28fbef71088c7788820be42}{verify}}
+\item 
+\mbox{\hyperlink{node-forge_2lib_2asn1_8js_ae7bd3a5c9bffe6cb55cf1a9c317433d7}{Type}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{protobufjs_2src_2type_8js_a807faea983d3efce18017f7fb4ef66cf}{from\+Object}}
+\item 
+\mbox{\hyperlink{node-forge_2lib_2asn1_8js_ae7bd3a5c9bffe6cb55cf1a9c317433d7}{Type}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{protobufjs_2src_2type_8js_af7755680631c4873e189a151821da444}{to\+Object}}
+\item 
+\mbox{\hyperlink{node-forge_2lib_2asn1_8js_ae7bd3a5c9bffe6cb55cf1a9c317433d7}{Type}} \mbox{\hyperlink{protobufjs_2src_2type_8js_a6efc9944c1586ecf45ce237f7306d1e4}{d}}
+\item 
+function \mbox{\hyperlink{protobufjs_2src_2type_8js_a49bf835c21693e0b1039dfb836bbeec8}{clear\+Cache}} (\mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{protobufjs_2src_2type_8js_a49bf835c21693e0b1039dfb836bbeec8}\index{type.js@{type.js}!clearCache@{clearCache}}
+\index{clearCache@{clearCache}!type.js@{type.js}}
+\doxysubsubsection{\texorpdfstring{clearCache()}{clearCache()}}
+{\footnotesize\ttfamily \label{protobufjs_2src_2type_8js_a49bf835c21693e0b1039dfb836bbeec8} 
+function clear\+Cache (\begin{DoxyParamCaption}\item[{}]{type}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type}}.
+
+\Hypertarget{protobufjs_2src_2type_8js_a90ebe65837b4060b99f30c816cbfbf86}\index{type.js@{type.js}!Type@{Type}}
+\index{Type@{Type}!type.js@{type.js}}
+\doxysubsubsection{\texorpdfstring{Type()}{Type()}}
+{\footnotesize\ttfamily \label{protobufjs_2src_2type_8js_a90ebe65837b4060b99f30c816cbfbf86} 
+function Type (\begin{DoxyParamCaption}\item[{}]{name}{, }\item[{}]{options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Constructs a new reflected message type instance. @classdesc Reflected message type.
+
+@constructor 
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & name Message name \\
+\hline
+{\em \{\+Object.$<$string,\texorpdfstring{$\ast$}{*}$>$\}} & \mbox{[}options\mbox{]} Declared options \\
+\hline
+\end{DoxyParams}
+Message fields. @type \{Object.\texorpdfstring{$<$}{<}string,Field\texorpdfstring{$>$}{>}\}
+
+Oneofs declared within this namespace, if any. @type \{Object.\texorpdfstring{$<$}{<}string,One\+Of\texorpdfstring{$>$}{>}\}
+
+Extension ranges, if any. @type \{number\mbox{[}\mbox{]}\mbox{[}\mbox{]}\}
+
+Reserved ranges, if any. @type \{Array.\texorpdfstring{$<$}{<}number\mbox{[}\mbox{]}\texorpdfstring{$\vert$}{|}string\texorpdfstring{$>$}{>}\}
+
+Cached fields by id. @type \{Object.\texorpdfstring{$<$}{<}number,Field\texorpdfstring{$>$}{>}\texorpdfstring{$\vert$}{|}null\}
+
+Cached fields as an array. @type \{Field\mbox{[}\mbox{]}\texorpdfstring{$\vert$}{|}null\}
+
+Cached oneofs as an array. @type \{One\+Of\mbox{[}\mbox{]}\texorpdfstring{$\vert$}{|}null\}
+
+Cached constructor. @type \{Constructor\texorpdfstring{$<$}{<}\{\}\texorpdfstring{$>$}{>}\}
+
+References \mbox{\hyperlink{bin_2concurrently_8js_a6376bcf1eb80ae6f7e35582cd7bbb5f2}{group()}}, \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}, \mbox{\hyperlink{protobufjs_2src_2type_8js_a380ca3c2b04d350ee2d2da0449bba832}{Namespace}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a50462845ad01756292de5d375e6e07f9}{reserved}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{protobufjs_2src_2type_8js_a90ebe65837b4060b99f30c816cbfbf86_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{protobufjs_2src_2type_8js_a9c955487736024f49dddd7b9a766aab3}\index{type.js@{type.js}!add@{add}}
+\index{add@{add}!type.js@{type.js}}
+\doxysubsubsection{\texorpdfstring{add}{add}}
+{\footnotesize\ttfamily \label{protobufjs_2src_2type_8js_a9c955487736024f49dddd7b9a766aab3} 
+\mbox{\hyperlink{node-forge_2lib_2asn1_8js_ae7bd3a5c9bffe6cb55cf1a9c317433d7}{Type}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} add}
+
+Adds a nested object to this type. 
+\begin{DoxyParams}{Parameters}
+{\em \{\+Reflection\+Object\}} & object Nested object to add \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Type\} {\ttfamily this} 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \{\+Type\+Error\}} & If arguments are invalid \\
+\hline
+{\em \{\+Error\}} & If there is already a nested object with this name or, if a field, when there is already a field with this id \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{protobufjs_2src_2type_8js_a1662812dcd90d6e58cb1f5b9f2b82e4a}\index{type.js@{type.js}!converter@{converter}}
+\index{converter@{converter}!type.js@{type.js}}
+\doxysubsubsection{\texorpdfstring{converter}{converter}}
+{\footnotesize\ttfamily \label{protobufjs_2src_2type_8js_a1662812dcd90d6e58cb1f5b9f2b82e4a} 
+var converter = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./converter"{})}
+
+\Hypertarget{protobufjs_2src_2type_8js_a8c94edfac2772cc28b524df1f9059427}\index{type.js@{type.js}!create@{create}}
+\index{create@{create}!type.js@{type.js}}
+\doxysubsubsection{\texorpdfstring{create}{create}}
+{\footnotesize\ttfamily \label{protobufjs_2src_2type_8js_a8c94edfac2772cc28b524df1f9059427} 
+\mbox{\hyperlink{node-forge_2lib_2asn1_8js_ae7bd3a5c9bffe6cb55cf1a9c317433d7}{Type}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} create}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{protobufjs_2src_2type_8js_a8c94edfac2772cc28b524df1f9059427}{create}}(properties)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ this.ctor(properties);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Creates a new message of this type using the specified properties. 
+\begin{DoxyParams}{Parameters}
+{\em \{\+Object.$<$string,\texorpdfstring{$\ast$}{*}$>$\}} & \mbox{[}properties\mbox{]} Properties to set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Message\texorpdfstring{$<$}{<}\{\}\texorpdfstring{$>$}{>}\} Message instance 
+\end{DoxyReturn}
+\Hypertarget{protobufjs_2src_2type_8js_a6efc9944c1586ecf45ce237f7306d1e4}\index{type.js@{type.js}!d@{d}}
+\index{d@{d}!type.js@{type.js}}
+\doxysubsubsection{\texorpdfstring{d}{d}}
+{\footnotesize\ttfamily \label{protobufjs_2src_2type_8js_a6efc9944c1586ecf45ce237f7306d1e4} 
+\mbox{\hyperlink{node-forge_2lib_2asn1_8js_ae7bd3a5c9bffe6cb55cf1a9c317433d7}{Type}} d}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{protobufjs_2dist_2light_2protobuf_8js_a2343b0044b22d13b1041e051e56f6fcd}{decorateType}}(typeName)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{function}\ typeDecorator(target)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{protobufjs_2src_2type_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}}.decorateType(target,\ typeName);}
+\DoxyCodeLine{\ \ \ \ \};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Type decorator (Type\+Script). 
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & \mbox{[}type\+Name\mbox{]} Type name, defaults to the constructor\textquotesingle{}s name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Type\+Decorator$<$\+T$>$\} Decorator function @template T extends Message$<$\+T$>$ 
+\end{DoxyReturn}
+\Hypertarget{protobufjs_2src_2type_8js_a95dffb358ec4ef01ad1d24d6e045aa21}\index{type.js@{type.js}!decode@{decode}}
+\index{decode@{decode}!type.js@{type.js}}
+\doxysubsubsection{\texorpdfstring{decode}{decode}}
+{\footnotesize\ttfamily \label{protobufjs_2src_2type_8js_a95dffb358ec4ef01ad1d24d6e045aa21} 
+\mbox{\hyperlink{node-forge_2lib_2asn1_8js_ae7bd3a5c9bffe6cb55cf1a9c317433d7}{Type}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} decode}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ decode\_setup(reader,\ \mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a7fdcf4c82c9946bf2b0b80829a7ab230}{length}})\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{protobufjs_2src_2type_8js_a22db87d78cd84ce92563c234cf902102}{setup}}().decode(reader,\ \mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a7fdcf4c82c9946bf2b0b80829a7ab230}{length}});\ }
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Decodes a message of this type. 
+\begin{DoxyParams}{Parameters}
+{\em \{\+Reader\texorpdfstring{$\vert$}{|}\+Uint8\+Array\}} & reader Reader or buffer to decode from \\
+\hline
+{\em \{number\}} & \mbox{[}length\mbox{]} Length of the message, if known beforehand \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Message\texorpdfstring{$<$}{<}\{\}\texorpdfstring{$>$}{>}\} Decoded message 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \{\+Error\}} & If the payload is not a reader or valid buffer \\
+\hline
+{\em \{util.\+Protocol\+Error$<$\{\}$>$\}} & If required fields are missing \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{protobufjs_2src_2type_8js_a1a90c65e19125727867a65f3760ac14a}\index{type.js@{type.js}!decodeDelimited@{decodeDelimited}}
+\index{decodeDelimited@{decodeDelimited}!type.js@{type.js}}
+\doxysubsubsection{\texorpdfstring{decodeDelimited}{decodeDelimited}}
+{\footnotesize\ttfamily \label{protobufjs_2src_2type_8js_a1a90c65e19125727867a65f3760ac14a} 
+\mbox{\hyperlink{node-forge_2lib_2asn1_8js_ae7bd3a5c9bffe6cb55cf1a9c317433d7}{Type}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} decode\+Delimited}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{protobufjs_2src_2type_8js_a1a90c65e19125727867a65f3760ac14a}{decodeDelimited}}(reader)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (!(reader\ instanceof\ \mbox{\hyperlink{protobufjs_2src_2type_8js_a1b804b43a9af8fa8940b69c1217fb5ff}{Reader}}))}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ reader\ =\ \mbox{\hyperlink{protobufjs_2src_2type_8js_a1b804b43a9af8fa8940b69c1217fb5ff}{Reader}}.create(reader);}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{protobufjs_2src_2type_8js_a95dffb358ec4ef01ad1d24d6e045aa21}{decode}}(reader,\ reader.uint32());}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Decodes a message of this type preceeded by its byte length as a varint. 
+\begin{DoxyParams}{Parameters}
+{\em \{\+Reader\texorpdfstring{$\vert$}{|}\+Uint8\+Array\}} & reader Reader or buffer to decode from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Message\texorpdfstring{$<$}{<}\{\}\texorpdfstring{$>$}{>}\} Decoded message 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \{\+Error\}} & If the payload is not a reader or valid buffer \\
+\hline
+{\em \{util.\+Protocol\+Error\}} & If required fields are missing \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{protobufjs_2src_2type_8js_a47b3a44c298e29be2cdb781ca7a151b8}\index{type.js@{type.js}!decoder@{decoder}}
+\index{decoder@{decoder}!type.js@{type.js}}
+\doxysubsubsection{\texorpdfstring{decoder}{decoder}}
+{\footnotesize\ttfamily \label{protobufjs_2src_2type_8js_a47b3a44c298e29be2cdb781ca7a151b8} 
+var decoder = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./decoder"{})}
+
+\Hypertarget{protobufjs_2src_2type_8js_abaf88c002747221a5dd05881e4954ff1}\index{type.js@{type.js}!encode@{encode}}
+\index{encode@{encode}!type.js@{type.js}}
+\doxysubsubsection{\texorpdfstring{encode}{encode}}
+{\footnotesize\ttfamily \label{protobufjs_2src_2type_8js_abaf88c002747221a5dd05881e4954ff1} 
+\mbox{\hyperlink{node-forge_2lib_2asn1_8js_ae7bd3a5c9bffe6cb55cf1a9c317433d7}{Type}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} encode}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ encode\_setup(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}},\ writer)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{protobufjs_2src_2type_8js_a22db87d78cd84ce92563c234cf902102}{setup}}().encode(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}},\ writer);\ }
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Encodes a message of this type. Does not implicitly {\ttfamily \doxylink{}{Type\#verify\texorpdfstring{$\vert$}{|}verify}} messages. 
+\begin{DoxyParams}{Parameters}
+{\em \{\+Message$<$\{\}$>$\texorpdfstring{$\vert$}{|}\+Object.$<$string,\texorpdfstring{$\ast$}{*}$>$\}} & message Message instance or plain object \\
+\hline
+{\em \{\+Writer\}} & \mbox{[}writer\mbox{]} Writer to encode to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Writer\} writer 
+\end{DoxyReturn}
+\Hypertarget{protobufjs_2src_2type_8js_a6c96b8241b827fe15c087282d87af569}\index{type.js@{type.js}!encodeDelimited@{encodeDelimited}}
+\index{encodeDelimited@{encodeDelimited}!type.js@{type.js}}
+\doxysubsubsection{\texorpdfstring{encodeDelimited}{encodeDelimited}}
+{\footnotesize\ttfamily \label{protobufjs_2src_2type_8js_a6c96b8241b827fe15c087282d87af569} 
+\mbox{\hyperlink{node-forge_2lib_2asn1_8js_ae7bd3a5c9bffe6cb55cf1a9c317433d7}{Type}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} encode\+Delimited}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{protobufjs_2src_2type_8js_a6c96b8241b827fe15c087282d87af569}{encodeDelimited}}(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}},\ writer)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{protobufjs_2src_2type_8js_abaf88c002747221a5dd05881e4954ff1}{encode}}(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}},\ writer\ \&\&\ writer.len\ ?\ writer.fork()\ :\ writer).ldelim();}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Encodes a message of this type preceeded by its byte length as a varint. Does not implicitly {\ttfamily \doxylink{}{Type\#verify\texorpdfstring{$\vert$}{|}verify}} messages. 
+\begin{DoxyParams}{Parameters}
+{\em \{\+Message$<$\{\}$>$\texorpdfstring{$\vert$}{|}\+Object.$<$string,\texorpdfstring{$\ast$}{*}$>$\}} & message Message instance or plain object \\
+\hline
+{\em \{\+Writer\}} & \mbox{[}writer\mbox{]} Writer to encode to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Writer\} writer 
+\end{DoxyReturn}
+\Hypertarget{protobufjs_2src_2type_8js_a38e0b3f08b711fb23081974a1cb3c2f0}\index{type.js@{type.js}!encoder@{encoder}}
+\index{encoder@{encoder}!type.js@{type.js}}
+\doxysubsubsection{\texorpdfstring{encoder}{encoder}}
+{\footnotesize\ttfamily \label{protobufjs_2src_2type_8js_a38e0b3f08b711fb23081974a1cb3c2f0} 
+var encoder = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./encoder"{})}
+
+\Hypertarget{protobufjs_2src_2type_8js_acf47369577c460f65f36bd5f1cdc57b2}\index{type.js@{type.js}!Enum@{Enum}}
+\index{Enum@{Enum}!type.js@{type.js}}
+\doxysubsubsection{\texorpdfstring{Enum}{Enum}}
+{\footnotesize\ttfamily \label{protobufjs_2src_2type_8js_acf47369577c460f65f36bd5f1cdc57b2} 
+var Enum = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./enum"{})}
+
+\Hypertarget{protobufjs_2src_2type_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\index{type.js@{type.js}!exports@{exports}}
+\index{exports@{exports}!type.js@{type.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \label{protobufjs_2src_2type_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports = \mbox{\hyperlink{node-forge_2lib_2asn1_8js_ae7bd3a5c9bffe6cb55cf1a9c317433d7}{Type}}}
+
+\Hypertarget{protobufjs_2src_2type_8js_a5f4ca2a855c7675eb89f8921a9c61b25}\index{type.js@{type.js}!Field@{Field}}
+\index{Field@{Field}!type.js@{type.js}}
+\doxysubsubsection{\texorpdfstring{Field}{Field}}
+{\footnotesize\ttfamily \label{protobufjs_2src_2type_8js_a5f4ca2a855c7675eb89f8921a9c61b25} 
+var Field = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./field"{})}
+
+\Hypertarget{protobufjs_2src_2type_8js_add6a992fd85b65b37de48878bbe879db}\index{type.js@{type.js}!fromJSON@{fromJSON}}
+\index{fromJSON@{fromJSON}!type.js@{type.js}}
+\doxysubsubsection{\texorpdfstring{fromJSON}{fromJSON}}
+{\footnotesize\ttfamily \label{protobufjs_2src_2type_8js_add6a992fd85b65b37de48878bbe879db} 
+\mbox{\hyperlink{node-forge_2lib_2asn1_8js_ae7bd3a5c9bffe6cb55cf1a9c317433d7}{Type}} from\+JSON}
+
+Creates a message type from a message type descriptor. 
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & name Message name \\
+\hline
+{\em \{\+IType\}} & json Message type descriptor \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Type\} Created message type 
+\end{DoxyReturn}
+\Hypertarget{protobufjs_2src_2type_8js_a807faea983d3efce18017f7fb4ef66cf}\index{type.js@{type.js}!fromObject@{fromObject}}
+\index{fromObject@{fromObject}!type.js@{type.js}}
+\doxysubsubsection{\texorpdfstring{fromObject}{fromObject}}
+{\footnotesize\ttfamily \label{protobufjs_2src_2type_8js_a807faea983d3efce18017f7fb4ef66cf} 
+\mbox{\hyperlink{node-forge_2lib_2asn1_8js_ae7bd3a5c9bffe6cb55cf1a9c317433d7}{Type}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} from\+Object}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{protobufjs_2src_2type_8js_a807faea983d3efce18017f7fb4ef66cf}{fromObject}}(\textcolor{keywordtype}{object})\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{protobufjs_2src_2type_8js_a22db87d78cd84ce92563c234cf902102}{setup}}().fromObject(\textcolor{keywordtype}{object});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Creates a new message of this type from a plain object. Also converts values to their respective internal types. 
+\begin{DoxyParams}{Parameters}
+{\em \{\+Object.$<$string,\texorpdfstring{$\ast$}{*}$>$\}} & object Plain object to convert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Message\texorpdfstring{$<$}{<}\{\}\texorpdfstring{$>$}{>}\} Message instance 
+\end{DoxyReturn}
+\Hypertarget{protobufjs_2src_2type_8js_ae8be0bc7805771c59e2df6e591e14559}\index{type.js@{type.js}!generateConstructor@{generateConstructor}}
+\index{generateConstructor@{generateConstructor}!type.js@{type.js}}
+\doxysubsubsection{\texorpdfstring{generateConstructor}{generateConstructor}}
+{\footnotesize\ttfamily \label{protobufjs_2src_2type_8js_ae8be0bc7805771c59e2df6e591e14559} 
+\mbox{\hyperlink{node-forge_2lib_2asn1_8js_ae7bd3a5c9bffe6cb55cf1a9c317433d7}{Type}} generate\+Constructor}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{protobufjs_2src_2type_8js_ae8be0bc7805771c59e2df6e591e14559}{generateConstructor}}(mtype)\ \{}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ var\ gen\ =\ \mbox{\hyperlink{protobufjs_2src_2type_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}}.codegen([\textcolor{stringliteral}{"{}p"{}}],\ mtype.name);}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{for}\ (var\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ =\ 0,\ field;\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ <\ mtype.fieldsArray.length;\ ++\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}})}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ ((field\ =\ mtype.\_fieldsArray[\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}]).map)\ gen}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ (\textcolor{stringliteral}{"{}this\%s=\{\}"{}},\ \mbox{\hyperlink{protobufjs_2src_2type_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}}.safeProp(field.name));}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (field.repeated)\ gen}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ (\textcolor{stringliteral}{"{}this\%s=[]"{}},\ \mbox{\hyperlink{protobufjs_2src_2type_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}}.safeProp(field.name));}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ gen}
+\DoxyCodeLine{\ \ \ \ (\textcolor{stringliteral}{"{}if(p)for(var\ ks=Object.keys(p),i=0;i<ks.length;++i)if(p[ks[i]]!=null)"{}})\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ (\textcolor{stringliteral}{"{}this[ks[i]]=p[ks[i]]"{}});}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Generates a constructor function for the specified type. 
+\begin{DoxyParams}{Parameters}
+{\em \{\+Type\}} & mtype Message type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Codegen\} Codegen instance 
+\end{DoxyReturn}
+\Hypertarget{protobufjs_2src_2type_8js_ac76737969660ff49e4347aa9153a5d68}\index{type.js@{type.js}!get@{get}}
+\index{get@{get}!type.js@{type.js}}
+\doxysubsubsection{\texorpdfstring{get}{get}}
+{\footnotesize\ttfamily \label{protobufjs_2src_2type_8js_ac76737969660ff49e4347aa9153a5d68} 
+\mbox{\hyperlink{node-forge_2lib_2asn1_8js_ae7bd3a5c9bffe6cb55cf1a9c317433d7}{Type}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} get}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \textcolor{keyword}{get}(\mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}})\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ this.fields[\mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}]}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ||\ this.oneofs\ \&\&\ this.oneofs[\mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}]}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ||\ this.nested\ \&\&\ this.nested[\mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}]}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ||\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+@override \Hypertarget{protobufjs_2src_2type_8js_ae39b9bcecb822773fee2f9d6aab654a2}\index{type.js@{type.js}!isReservedId@{isReservedId}}
+\index{isReservedId@{isReservedId}!type.js@{type.js}}
+\doxysubsubsection{\texorpdfstring{isReservedId}{isReservedId}}
+{\footnotesize\ttfamily \label{protobufjs_2src_2type_8js_ae39b9bcecb822773fee2f9d6aab654a2} 
+\mbox{\hyperlink{node-forge_2lib_2asn1_8js_ae7bd3a5c9bffe6cb55cf1a9c317433d7}{Type}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} is\+Reserved\+Id}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{protobufjs_2src_2type_8js_ae39b9bcecb822773fee2f9d6aab654a2}{isReservedId}}(\textcolor{keywordtype}{id})\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{protobufjs_2src_2type_8js_a380ca3c2b04d350ee2d2da0449bba832}{Namespace}}.isReservedId(this.\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a50462845ad01756292de5d375e6e07f9}{reserved}},\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Tests if the specified id is reserved. 
+\begin{DoxyParams}{Parameters}
+{\em \{number\}} & id Id to test \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{boolean\} {\ttfamily true} if reserved, otherwise {\ttfamily false} 
+\end{DoxyReturn}
+\Hypertarget{protobufjs_2src_2type_8js_a0834c48540fdf67b96b0e4e526fff606}\index{type.js@{type.js}!isReservedName@{isReservedName}}
+\index{isReservedName@{isReservedName}!type.js@{type.js}}
+\doxysubsubsection{\texorpdfstring{isReservedName}{isReservedName}}
+{\footnotesize\ttfamily \label{protobufjs_2src_2type_8js_a0834c48540fdf67b96b0e4e526fff606} 
+\mbox{\hyperlink{node-forge_2lib_2asn1_8js_ae7bd3a5c9bffe6cb55cf1a9c317433d7}{Type}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} is\+Reserved\+Name}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{protobufjs_2src_2type_8js_a0834c48540fdf67b96b0e4e526fff606}{isReservedName}}(\mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}})\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{protobufjs_2src_2type_8js_a380ca3c2b04d350ee2d2da0449bba832}{Namespace}}.isReservedName(this.\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a50462845ad01756292de5d375e6e07f9}{reserved}},\ \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Tests if the specified name is reserved. 
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & name Name to test \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{boolean\} {\ttfamily true} if reserved, otherwise {\ttfamily false} 
+\end{DoxyReturn}
+\Hypertarget{protobufjs_2src_2type_8js_a4d6688efa4681ec7651d492cb91459a3}\index{type.js@{type.js}!MapField@{MapField}}
+\index{MapField@{MapField}!type.js@{type.js}}
+\doxysubsubsection{\texorpdfstring{MapField}{MapField}}
+{\footnotesize\ttfamily \label{protobufjs_2src_2type_8js_a4d6688efa4681ec7651d492cb91459a3} 
+var Map\+Field = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./mapfield"{})}
+
+\Hypertarget{protobufjs_2src_2type_8js_a2b999b964c05992f7c4361df3fcb3017}\index{type.js@{type.js}!Message@{Message}}
+\index{Message@{Message}!type.js@{type.js}}
+\doxysubsubsection{\texorpdfstring{Message}{Message}}
+{\footnotesize\ttfamily \label{protobufjs_2src_2type_8js_a2b999b964c05992f7c4361df3fcb3017} 
+var Message = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./message"{})}
+
+\Hypertarget{protobufjs_2src_2type_8js_a380ca3c2b04d350ee2d2da0449bba832}\index{type.js@{type.js}!Namespace@{Namespace}}
+\index{Namespace@{Namespace}!type.js@{type.js}}
+\doxysubsubsection{\texorpdfstring{Namespace}{Namespace}}
+{\footnotesize\ttfamily \label{protobufjs_2src_2type_8js_a380ca3c2b04d350ee2d2da0449bba832} 
+var Namespace = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./namespace"{})}
+
+\Hypertarget{protobufjs_2src_2type_8js_a2b710d99af255d85647bf03d4aabafe5}\index{type.js@{type.js}!OneOf@{OneOf}}
+\index{OneOf@{OneOf}!type.js@{type.js}}
+\doxysubsubsection{\texorpdfstring{OneOf}{OneOf}}
+{\footnotesize\ttfamily \label{protobufjs_2src_2type_8js_a2b710d99af255d85647bf03d4aabafe5} 
+var One\+Of = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./oneof"{})}
+
+\Hypertarget{protobufjs_2src_2type_8js_aba5b69ab5e0454d40408fa080ef03a8e}\index{type.js@{type.js}!prototype@{prototype}}
+\index{prototype@{prototype}!type.js@{type.js}}
+\doxysubsubsection{\texorpdfstring{prototype}{prototype}}
+{\footnotesize\ttfamily \label{protobufjs_2src_2type_8js_aba5b69ab5e0454d40408fa080ef03a8e} 
+\mbox{\hyperlink{node-forge_2lib_2asn1_8js_ae7bd3a5c9bffe6cb55cf1a9c317433d7}{Type}} prototype = \mbox{\hyperlink{combined__stream_8js_a1366166f7d9d88068055585de50f1037}{Object.\+create}}(Namespace.\+prototype)).\mbox{\hyperlink{_json_web_token_error_8js_ae0d7523761ce2ef80fa2f1afff43bbf3}{constructor}} = \mbox{\hyperlink{node-forge_2lib_2asn1_8js_ae7bd3a5c9bffe6cb55cf1a9c317433d7}{Type}}).\mbox{\hyperlink{protobufjs_2src_2object_8js_a3a211f872d5c1f0b69d049b600b4080d}{class\+Name}} = "{}Type"{}}
+
+\Hypertarget{protobufjs_2src_2type_8js_a1b804b43a9af8fa8940b69c1217fb5ff}\index{type.js@{type.js}!Reader@{Reader}}
+\index{Reader@{Reader}!type.js@{type.js}}
+\doxysubsubsection{\texorpdfstring{Reader}{Reader}}
+{\footnotesize\ttfamily \label{protobufjs_2src_2type_8js_a1b804b43a9af8fa8940b69c1217fb5ff} 
+var Reader = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./reader"{})}
+
+\Hypertarget{protobufjs_2src_2type_8js_acf367f33ba53f9f31ff784fe64b935e2}\index{type.js@{type.js}!remove@{remove}}
+\index{remove@{remove}!type.js@{type.js}}
+\doxysubsubsection{\texorpdfstring{remove}{remove}}
+{\footnotesize\ttfamily \label{protobufjs_2src_2type_8js_acf367f33ba53f9f31ff784fe64b935e2} 
+\mbox{\hyperlink{node-forge_2lib_2asn1_8js_ae7bd3a5c9bffe6cb55cf1a9c317433d7}{Type}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} remove}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \textcolor{keyword}{remove}(\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}})\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (\textcolor{keywordtype}{object}\ instanceof\ \mbox{\hyperlink{protobufjs_2src_2type_8js_a5f4ca2a855c7675eb89f8921a9c61b25}{Field}}\ \&\&\ \textcolor{keywordtype}{object}.\mbox{\hyperlink{_0dgoogle-cloud_2paginator_2build_2src_2index_8js_a91492657a38115d3423abd956a3821a4}{extend}}\ ===\ \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!this.fields\ ||\ this.fields[\textcolor{keywordtype}{object}.\mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}]\ !==\ \textcolor{keywordtype}{object})}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ Error(\textcolor{keywordtype}{object}\ +\ \textcolor{stringliteral}{"{}\ is\ not\ a\ member\ of\ "{}}\ +\ \textcolor{keyword}{this});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ this.fields[\textcolor{keywordtype}{object}.name];}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordtype}{object}.parent\ =\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordtype}{object}.onRemove(\textcolor{keyword}{this});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{protobufjs_2src_2type_8js_a49bf835c21693e0b1039dfb836bbeec8}{clearCache}}(\textcolor{keyword}{this});}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (\textcolor{keywordtype}{object}\ instanceof\ \mbox{\hyperlink{protobufjs_2src_2type_8js_a2b710d99af255d85647bf03d4aabafe5}{OneOf}})\ \{}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!this.oneofs\ ||\ this.oneofs[\textcolor{keywordtype}{object}.\mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}]\ !==\ \textcolor{keywordtype}{object})}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ Error(\textcolor{keywordtype}{object}\ +\ \textcolor{stringliteral}{"{}\ is\ not\ a\ member\ of\ "{}}\ +\ \textcolor{keyword}{this});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ this.oneofs[\textcolor{keywordtype}{object}.name];}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordtype}{object}.parent\ =\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordtype}{object}.onRemove(\textcolor{keyword}{this});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{protobufjs_2src_2type_8js_a49bf835c21693e0b1039dfb836bbeec8}{clearCache}}(\textcolor{keyword}{this});}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{protobufjs_2src_2type_8js_a380ca3c2b04d350ee2d2da0449bba832}{Namespace}}.prototype.remove.call(\textcolor{keyword}{this},\ \textcolor{keywordtype}{object});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Removes a nested object from this type. 
+\begin{DoxyParams}{Parameters}
+{\em \{\+Reflection\+Object\}} & object Nested object to remove \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Type\} {\ttfamily this} 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \{\+Type\+Error\}} & If arguments are invalid \\
+\hline
+{\em \{\+Error\}} & If {\ttfamily object} is not a member of this type \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{protobufjs_2src_2type_8js_ad997a49bb0f94a7800824651b39971f5}\index{type.js@{type.js}!resolveAll@{resolveAll}}
+\index{resolveAll@{resolveAll}!type.js@{type.js}}
+\doxysubsubsection{\texorpdfstring{resolveAll}{resolveAll}}
+{\footnotesize\ttfamily \label{protobufjs_2src_2type_8js_ad997a49bb0f94a7800824651b39971f5} 
+\mbox{\hyperlink{node-forge_2lib_2asn1_8js_ae7bd3a5c9bffe6cb55cf1a9c317433d7}{Type}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} resolve\+All}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{protobufjs_2src_2type_8js_ad997a49bb0f94a7800824651b39971f5}{resolveAll}}()\ \{}
+\DoxyCodeLine{\ \ \ \ var\ fields\ =\ this.fieldsArray,\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ =\ 0;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{while}\ (\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ <\ fields.length)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ fields[\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}++].resolve();}
+\DoxyCodeLine{\ \ \ \ var\ oneofs\ =\ this.oneofsArray;\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ =\ 0;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{while}\ (\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ <\ oneofs.length)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ oneofs[\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}++].resolve();}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{protobufjs_2src_2type_8js_a380ca3c2b04d350ee2d2da0449bba832}{Namespace}}.prototype.resolveAll.call(\textcolor{keyword}{this});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+@override \Hypertarget{protobufjs_2src_2type_8js_aeb3988523fdcf146cdbff90e65abd3a4}\index{type.js@{type.js}!Service@{Service}}
+\index{Service@{Service}!type.js@{type.js}}
+\doxysubsubsection{\texorpdfstring{Service}{Service}}
+{\footnotesize\ttfamily \label{protobufjs_2src_2type_8js_aeb3988523fdcf146cdbff90e65abd3a4} 
+var Service = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./service"{})}
+
+\Hypertarget{protobufjs_2src_2type_8js_a22db87d78cd84ce92563c234cf902102}\index{type.js@{type.js}!setup@{setup}}
+\index{setup@{setup}!type.js@{type.js}}
+\doxysubsubsection{\texorpdfstring{setup}{setup}}
+{\footnotesize\ttfamily \label{protobufjs_2src_2type_8js_a22db87d78cd84ce92563c234cf902102} 
+\mbox{\hyperlink{node-forge_2lib_2asn1_8js_ae7bd3a5c9bffe6cb55cf1a9c317433d7}{Type}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} setup}
+
+Sets up {\ttfamily \doxylink{}{Type\#encode\texorpdfstring{$\vert$}{|}encode}}, {\ttfamily \doxylink{}{Type\#decode\texorpdfstring{$\vert$}{|}decode}} and {\ttfamily \doxylink{}{Type\#verify\texorpdfstring{$\vert$}{|}verify}}. \begin{DoxyReturn}{Returns}
+\{Type\} {\ttfamily this} 
+\end{DoxyReturn}
+\Hypertarget{protobufjs_2src_2type_8js_ae2475e10618961c050dcba04e8c42331}\index{type.js@{type.js}!strict@{strict}}
+\index{strict@{strict}!type.js@{type.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{protobufjs_2src_2type_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+
+\Hypertarget{protobufjs_2src_2type_8js_a910318f35b6ff41d6f82369e4765f81f}\index{type.js@{type.js}!toJSON@{toJSON}}
+\index{toJSON@{toJSON}!type.js@{type.js}}
+\doxysubsubsection{\texorpdfstring{toJSON}{toJSON}}
+{\footnotesize\ttfamily \label{protobufjs_2src_2type_8js_a910318f35b6ff41d6f82369e4765f81f} 
+\mbox{\hyperlink{node-forge_2lib_2asn1_8js_ae7bd3a5c9bffe6cb55cf1a9c317433d7}{Type}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} to\+JSON}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{protobufjs_2src_2type_8js_a910318f35b6ff41d6f82369e4765f81f}{toJSON}}(\mbox{\hyperlink{src_2util_2minimal_8js_a9c95bf7f2e7eae95ada4df19e651ed87}{toJSONOptions}})\ \{}
+\DoxyCodeLine{\ \ \ \ var\ inherited\ =\ \mbox{\hyperlink{protobufjs_2src_2type_8js_a380ca3c2b04d350ee2d2da0449bba832}{Namespace}}.prototype.toJSON.call(\textcolor{keyword}{this},\ \mbox{\hyperlink{src_2util_2minimal_8js_a9c95bf7f2e7eae95ada4df19e651ed87}{toJSONOptions}});}
+\DoxyCodeLine{\ \ \ \ var\ keepComments\ =\ \mbox{\hyperlink{src_2util_2minimal_8js_a9c95bf7f2e7eae95ada4df19e651ed87}{toJSONOptions}}\ ?\ Boolean(\mbox{\hyperlink{src_2util_2minimal_8js_a9c95bf7f2e7eae95ada4df19e651ed87}{toJSONOptions}}.keepComments)\ :\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a5df37b7f02e5cdc7d9412b7f872b8e01}{false}};}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{protobufjs_2src_2type_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}}.toObject([}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}options"{}}\ \ \ \ ,\ inherited\ \&\&\ inherited.options\ ||\ \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}oneofs"{}}\ \ \ \ \ ,\ \mbox{\hyperlink{protobufjs_2src_2type_8js_a380ca3c2b04d350ee2d2da0449bba832}{Namespace}}.arrayToJSON(\textcolor{keyword}{this}.oneofsArray,\ \mbox{\hyperlink{src_2util_2minimal_8js_a9c95bf7f2e7eae95ada4df19e651ed87}{toJSONOptions}}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}fields"{}}\ \ \ \ \ ,\ \mbox{\hyperlink{protobufjs_2src_2type_8js_a380ca3c2b04d350ee2d2da0449bba832}{Namespace}}.arrayToJSON(\textcolor{keyword}{this}.fieldsArray.filter(\textcolor{keyword}{function}(\mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}})\ \{\ return\ !obj.declaringField;\ \}),\ \mbox{\hyperlink{src_2util_2minimal_8js_a9c95bf7f2e7eae95ada4df19e651ed87}{toJSONOptions}})\ ||\ \{\},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}extensions"{}}\ ,\ \textcolor{keyword}{this}.extensions\ \&\&\ \textcolor{keyword}{this}.extensions.length\ ?\ \textcolor{keyword}{this}.extensions\ :\ \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}reserved"{}}\ \ \ ,\ \textcolor{keyword}{this}.reserved\ \&\&\ \textcolor{keyword}{this}.reserved.length\ ?\ \textcolor{keyword}{this}.reserved\ :\ \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}group"{}}\ \ \ \ \ \ ,\ \textcolor{keyword}{this}.group\ ||\ \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}nested"{}}\ \ \ \ \ ,\ inherited\ \&\&\ inherited.nested\ ||\ \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}comment"{}}\ \ \ \ ,\ keepComments\ ?\ \textcolor{keyword}{this}.comment\ :\ \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}}
+\DoxyCodeLine{\ \ \ \ ]);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Converts this message type to a message type descriptor. 
+\begin{DoxyParams}{Parameters}
+{\em \{\+ITo\+JSONOptions\}} & \mbox{[}to\+JSONOptions\mbox{]} JSON conversion options \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{\doxylink{interface_i_type}{IType}\} Message type descriptor 
+\end{DoxyReturn}
+\Hypertarget{protobufjs_2src_2type_8js_af7755680631c4873e189a151821da444}\index{type.js@{type.js}!toObject@{toObject}}
+\index{toObject@{toObject}!type.js@{type.js}}
+\doxysubsubsection{\texorpdfstring{toObject}{toObject}}
+{\footnotesize\ttfamily \label{protobufjs_2src_2type_8js_af7755680631c4873e189a151821da444} 
+\mbox{\hyperlink{node-forge_2lib_2asn1_8js_ae7bd3a5c9bffe6cb55cf1a9c317433d7}{Type}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} to\+Object}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{protobufjs_2src_2type_8js_af7755680631c4873e189a151821da444}{toObject}}(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}},\ options)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{protobufjs_2src_2type_8js_a22db87d78cd84ce92563c234cf902102}{setup}}().toObject(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}},\ options);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Creates a plain object from a message of this type. Also converts values to other types if specified. 
+\begin{DoxyParams}{Parameters}
+{\em \{\+Message$<$\{\}$>$\}} & message Message instance \\
+\hline
+{\em \{\+IConversion\+Options\}} & \mbox{[}options\mbox{]} Conversion options \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Object.\texorpdfstring{$<$}{<}string,\texorpdfstring{$\ast$}{*}\texorpdfstring{$>$}{>}\} Plain object 
+\end{DoxyReturn}
+\Hypertarget{protobufjs_2src_2type_8js_a8f5b2e09d5197e9d28f6032dff542d44}\index{type.js@{type.js}!util@{util}}
+\index{util@{util}!type.js@{type.js}}
+\doxysubsubsection{\texorpdfstring{util}{util}}
+{\footnotesize\ttfamily \label{protobufjs_2src_2type_8js_a8f5b2e09d5197e9d28f6032dff542d44} 
+var util = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./util"{})}
+
+\Hypertarget{protobufjs_2src_2type_8js_a0da9ddb7ec87792a57c07743c586236c}\index{type.js@{type.js}!verifier@{verifier}}
+\index{verifier@{verifier}!type.js@{type.js}}
+\doxysubsubsection{\texorpdfstring{verifier}{verifier}}
+{\footnotesize\ttfamily \label{protobufjs_2src_2type_8js_a0da9ddb7ec87792a57c07743c586236c} 
+var verifier = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./verifier"{})}
+
+\Hypertarget{protobufjs_2src_2type_8js_a6d013bc6f28fbef71088c7788820be42}\index{type.js@{type.js}!verify@{verify}}
+\index{verify@{verify}!type.js@{type.js}}
+\doxysubsubsection{\texorpdfstring{verify}{verify}}
+{\footnotesize\ttfamily \label{protobufjs_2src_2type_8js_a6d013bc6f28fbef71088c7788820be42} 
+\mbox{\hyperlink{node-forge_2lib_2asn1_8js_ae7bd3a5c9bffe6cb55cf1a9c317433d7}{Type}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} verify}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ verify\_setup(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}})\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{protobufjs_2src_2type_8js_a22db87d78cd84ce92563c234cf902102}{setup}}().verify(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}});\ }
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Verifies that field values are valid and that required fields are present. 
+\begin{DoxyParams}{Parameters}
+{\em \{\+Object.$<$string,\texorpdfstring{$\ast$}{*}$>$\}} & message Plain object to verify \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{null\texorpdfstring{$\vert$}{|}string\} {\ttfamily null} if valid, otherwise the reason why it is not 
+\end{DoxyReturn}
+\Hypertarget{protobufjs_2src_2type_8js_a1e37edbd125966e3c8187b4a0ebcd57c}\index{type.js@{type.js}!wrappers@{wrappers}}
+\index{wrappers@{wrappers}!type.js@{type.js}}
+\doxysubsubsection{\texorpdfstring{wrappers}{wrappers}}
+{\footnotesize\ttfamily \label{protobufjs_2src_2type_8js_a1e37edbd125966e3c8187b4a0ebcd57c} 
+var wrappers = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./wrappers"{})}
+
+\Hypertarget{protobufjs_2src_2type_8js_ad1e0e28ffc8a2d2f6704480f38c032f4}\index{type.js@{type.js}!Writer@{Writer}}
+\index{Writer@{Writer}!type.js@{type.js}}
+\doxysubsubsection{\texorpdfstring{Writer}{Writer}}
+{\footnotesize\ttfamily \label{protobufjs_2src_2type_8js_ad1e0e28ffc8a2d2f6704480f38c032f4} 
+var Writer = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./writer"{})}
+

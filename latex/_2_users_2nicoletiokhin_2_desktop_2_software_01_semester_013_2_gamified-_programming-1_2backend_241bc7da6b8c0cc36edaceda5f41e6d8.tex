@@ -1,0 +1,24 @@
+\doxysection{/\+Users/nicoletiokhin/\+Desktop/\+Software Semester 3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/google-\/gax/build/src/operations\+Client.\+js}
+\hypertarget{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_241bc7da6b8c0cc36edaceda5f41e6d8}{}\label{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_241bc7da6b8c0cc36edaceda5f41e6d8}Gets the latest state of a long-\/running operation. Clients can use this method to poll the operation result at intervals as recommended by the API service.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Object\}} & request -\/ The request object that will be sent. \\
+\hline
+{\em \{string\}} & request.\+name -\/ The name of the operation resource. \\
+\hline
+{\em \{\+Object=\}} & options Optional parameters. You can override the default settings for this call, e.\+g, timeout, retries, paginations, etc. See \mbox{[}gax.\+Call\+Options\mbox{]}{\ttfamily \doxylink{}{https\+://googleapis.\+github.\+io/gax-\/nodejs/global.\+html\#\+Call\+Options}} for the details. \\
+\hline
+{\em \{function(?\+Error,?\+Object)=\}} & callback The function which will be called with the result of the API call.\\
+\hline
+\end{DoxyParams}
+The second parameter to the callback is an object representing \mbox{[}google.\+longrunning.\+Operation\mbox{]}{\ttfamily \doxylink{}{external\+:"{}google.\+longrunning.\+Operation"{}}}. \begin{DoxyReturn}{Returns}
+\{Promise\} -\/ The promise which resolves to an array. The first element of the array is an object representing \mbox{[}google.\+longrunning.\+Operation\mbox{]}{\ttfamily \doxylink{}{external\+:"{}google.\+longrunning.\+Operation"{}}}. The promise has a method named "{}cancel"{} which cancels the ongoing API call.
+\end{DoxyReturn}
+const client = longrunning.\+operations\+Client(); const name = \textquotesingle{}\textquotesingle{}; const \mbox{[}response\mbox{]} = await client.\+get\+Operation(\{name\}); // do\+Things\+With(response)
+
+
+\begin{DoxyCodeInclude}{0}
+
+\end{DoxyCodeInclude}
+ Semester \doxylink{operations_client_8js}{3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/google-\/gax/build/src/operations\+Client.\+js} 

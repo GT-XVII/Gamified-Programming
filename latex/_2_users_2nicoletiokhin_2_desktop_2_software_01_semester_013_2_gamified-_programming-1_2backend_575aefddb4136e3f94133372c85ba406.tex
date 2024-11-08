@@ -1,0 +1,33 @@
+\doxysection{/\+Users/nicoletiokhin/\+Desktop/\+Software Semester 3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/lodash/result.\+js}
+\hypertarget{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_575aefddb4136e3f94133372c85ba406}{}\label{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_575aefddb4136e3f94133372c85ba406}This method is like {\ttfamily \+\_\+.\+get} except that if the resolved value is a function it\textquotesingle{}s invoked with the {\ttfamily this} binding of its parent object and its result is returned.
+
+\begin{DoxySince}{Since}
+0.\+1.\+0 @member\+Of \+\_\+
+\end{DoxySince}
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Object\}} & object The object to query. \\
+\hline
+{\em \{\+Array\texorpdfstring{$\vert$}{|}string\}} & path The path of the property to resolve. \\
+\hline
+{\em \{\texorpdfstring{$\ast$}{*}\}} & \mbox{[}default\+Value\mbox{]} The value returned for {\ttfamily undefined} resolved values. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{\texorpdfstring{$\ast$}{*}\} Returns the resolved value.
+\end{DoxyReturn}
+var object = \{ \textquotesingle{}a\textquotesingle{}\+: \mbox{[}\{ \textquotesingle{}b\textquotesingle{}\+: \{ \textquotesingle{}c1\textquotesingle{}\+: 3, \textquotesingle{}c2\textquotesingle{}\+: \+\_\+.\+constant(4) \} \}\mbox{]} \};
+
+\+\_\+.\+result(object, \textquotesingle{}a\mbox{[}0\mbox{]}.b.\+c1\textquotesingle{}); // =\texorpdfstring{$>$}{>} 3
+
+\+\_\+.\+result(object, \textquotesingle{}a\mbox{[}0\mbox{]}.b.\+c2\textquotesingle{}); // =\texorpdfstring{$>$}{>} 4
+
+\+\_\+.\+result(object, \textquotesingle{}a\mbox{[}0\mbox{]}.b.\+c3\textquotesingle{}, \textquotesingle{}default\textquotesingle{}); // =\texorpdfstring{$>$}{>} \textquotesingle{}default\textquotesingle{}
+
+\+\_\+.\+result(object, \textquotesingle{}a\mbox{[}0\mbox{]}.b.\+c3\textquotesingle{}, \+\_\+.\+constant(\textquotesingle{}default\textquotesingle{})); // =\texorpdfstring{$>$}{>} \textquotesingle{}default\textquotesingle{}
+
+
+\begin{DoxyCodeInclude}{0}
+
+\end{DoxyCodeInclude}
+ Semester \doxylink{result_8js}{3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/lodash/result.\+js} 

@@ -1,0 +1,14 @@
+<map id="RecursiveDelete::incrementErrorCount" name="RecursiveDelete::incrementErrorCount">
+<area shape="rect" id="Node000001" title=" " alt="" coords="692,47,876,88"/>
+<area shape="rect" id="Node000002" href="$class_recursive_delete.html#af67130a227fe282bf40d509bca513392" title=" " alt="" coords="454,29,636,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="676,59,636,54,637,49,677,53"/>
+<area shape="rect" id="Node000005" href="$class_recursive_delete.html#acca56f75c6198ff4da6e6f3e41e7ceca" title=" " alt="" coords="446,79,644,104"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="677,81,645,84,645,79,676,76"/>
+<area shape="rect" id="Node000003" href="$class_recursive_delete.html#a32515a4a97517b5e0bcabde1a05ed1c2" title=" " alt="" coords="198,29,398,55"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="438,54,398,54,398,48,439,48"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="413,31,453,31,453,36,413,36"/>
+<area shape="poly" id="edge5_Node000003_Node000003" title=" " alt="" coords="336,17,323,10,298,8,275,10,262,15,259,20,265,27,261,31,254,21,258,11,273,5,298,3,325,5,339,12"/>
+<area shape="rect" id="Node000004" href="$class_recursive_delete.html#ae89653e44bf7560aed73e678ef273ba4" title=" " alt="" coords="5,29,150,55"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="182,45,150,45,150,40,182,40"/>
+<area shape="poly" id="edge7_Node000005_Node000003" title=" " alt="" coords="461,78,365,58,366,53,463,72"/>
+</map>

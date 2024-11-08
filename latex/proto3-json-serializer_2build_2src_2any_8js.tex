@@ -1,0 +1,107 @@
+\doxysection{backend/node\+\_\+modules/proto3-\/json-\/serializer/build/src/any.js File Reference}
+\hypertarget{proto3-json-serializer_2build_2src_2any_8js}{}\label{proto3-json-serializer_2build_2src_2any_8js}\index{backend/node\_modules/proto3-\/json-\/serializer/build/src/any.js@{backend/node\_modules/proto3-\/json-\/serializer/build/src/any.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{proto3-json-serializer_2build_2src_2any_8js_af37b149b01b81c7445da8ff18d9f0531}{google\+Protobuf\+Any\+To\+Proto3\+JSON}} (\mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}, options)
+\item 
+function \mbox{\hyperlink{proto3-json-serializer_2build_2src_2any_8js_a028890aa28f02837590495d94d9ecaa1}{google\+Protobuf\+Any\+From\+Proto3\+JSON}} (\mbox{\hyperlink{ipaddr_8js_ab4b8daf4b8ea9d39568719e1e320076f}{root}}, json)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{proto3-json-serializer_2build_2src_2any_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{proto3-json-serializer_2build_2src_2any_8js_ad13bab444038e99cede6bdab048a25a5}{google\+Protobuf\+Any\+From\+Proto3\+JSON}} = \mbox{\hyperlink{proto3-json-serializer_2build_2src_2any_8js_a64125f1ed358cf82375ac8d4fcc725da}{exports.\+google\+Protobuf\+Any\+To\+Proto3\+JSON}} = void 0
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{proto3-json-serializer_2build_2src_2any_8js_ac906a64d5d60b16ef64d0e2726aa1f58}{fromproto3json\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./fromproto3json"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{proto3-json-serializer_2build_2src_2any_8js_a533ae2ed31fe2c0f1ffd224b68b8aac4}{toproto3json\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./toproto3json"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{proto3-json-serializer_2build_2src_2any_8js_ae88596540354e4a316d50cb53e5d7d96}{special\+JSON}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{proto3-json-serializer_2build_2src_2any_8js_a64125f1ed358cf82375ac8d4fcc725da}{google\+Protobuf\+Any\+To\+Proto3\+JSON}} = google\+Protobuf\+Any\+To\+Proto3\+JSON
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{proto3-json-serializer_2build_2src_2any_8js_a028890aa28f02837590495d94d9ecaa1}\index{any.js@{any.js}!googleProtobufAnyFromProto3JSON@{googleProtobufAnyFromProto3JSON}}
+\index{googleProtobufAnyFromProto3JSON@{googleProtobufAnyFromProto3JSON}!any.js@{any.js}}
+\doxysubsubsection{\texorpdfstring{googleProtobufAnyFromProto3JSON()}{googleProtobufAnyFromProto3JSON()}}
+{\footnotesize\ttfamily \label{proto3-json-serializer_2build_2src_2any_8js_a028890aa28f02837590495d94d9ecaa1} 
+function google\+Protobuf\+Any\+From\+Proto3\+JSON (\begin{DoxyParamCaption}\item[{}]{root}{, }\item[{}]{json}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{src_2util_2minimal_8js_a325c4e317c38d8497130ebce7670be2f}{Array}}, \mbox{\hyperlink{ordered-map_8min_8js_a5777012f924b8842ccb381f4d2ac9c55}{find}}, \mbox{\hyperlink{proto3-json-serializer_2build_2src_2any_8js_ad13bab444038e99cede6bdab048a25a5}{google\+Protobuf\+Any\+From\+Proto3\+JSON}}, \mbox{\hyperlink{agent-base_2dist_2helpers_8js_ac6fdc7f7005e375dc7d7dce4bc785ab4}{json}}, \mbox{\hyperlink{ipaddr_8js_ab4b8daf4b8ea9d39568719e1e320076f}{root}}, \mbox{\hyperlink{proto3-json-serializer_2build_2src_2any_8js_ae88596540354e4a316d50cb53e5d7d96}{special\+JSON}}, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.
+
+\Hypertarget{proto3-json-serializer_2build_2src_2any_8js_af37b149b01b81c7445da8ff18d9f0531}\index{any.js@{any.js}!googleProtobufAnyToProto3JSON@{googleProtobufAnyToProto3JSON}}
+\index{googleProtobufAnyToProto3JSON@{googleProtobufAnyToProto3JSON}!any.js@{any.js}}
+\doxysubsubsection{\texorpdfstring{googleProtobufAnyToProto3JSON()}{googleProtobufAnyToProto3JSON()}}
+{\footnotesize\ttfamily \label{proto3-json-serializer_2build_2src_2any_8js_af37b149b01b81c7445da8ff18d9f0531} 
+function google\+Protobuf\+Any\+To\+Proto3\+JSON (\begin{DoxyParamCaption}\item[{}]{obj}{, }\item[{}]{options}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{ordered-map_8min_8js_a5777012f924b8842ccb381f4d2ac9c55}{find}}, \mbox{\hyperlink{proto3-json-serializer_2build_2src_2any_8js_a64125f1ed358cf82375ac8d4fcc725da}{google\+Protobuf\+Any\+To\+Proto3\+JSON}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad061d61e10918d5b27e272593239c0e7}{if()}}, \mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}, \mbox{\hyperlink{proto3-json-serializer_2build_2src_2any_8js_ae88596540354e4a316d50cb53e5d7d96}{special\+JSON}}, \mbox{\hyperlink{proto3-json-serializer_2build_2src_2any_8js_a533ae2ed31fe2c0f1ffd224b68b8aac4}{toproto3json\+\_\+1}}, and \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{proto3-json-serializer_2build_2src_2any_8js_af37b149b01b81c7445da8ff18d9f0531_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{proto3-json-serializer_2build_2src_2any_8js_ac906a64d5d60b16ef64d0e2726aa1f58}\index{any.js@{any.js}!fromproto3json\_1@{fromproto3json\_1}}
+\index{fromproto3json\_1@{fromproto3json\_1}!any.js@{any.js}}
+\doxysubsubsection{\texorpdfstring{fromproto3json\_1}{fromproto3json\_1}}
+{\footnotesize\ttfamily \label{proto3-json-serializer_2build_2src_2any_8js_ac906a64d5d60b16ef64d0e2726aa1f58} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} fromproto3json\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./fromproto3json"{})}
+
+\Hypertarget{proto3-json-serializer_2build_2src_2any_8js_ad13bab444038e99cede6bdab048a25a5}\index{any.js@{any.js}!googleProtobufAnyFromProto3JSON@{googleProtobufAnyFromProto3JSON}}
+\index{googleProtobufAnyFromProto3JSON@{googleProtobufAnyFromProto3JSON}!any.js@{any.js}}
+\doxysubsubsection{\texorpdfstring{googleProtobufAnyFromProto3JSON}{googleProtobufAnyFromProto3JSON}}
+{\footnotesize\ttfamily \label{proto3-json-serializer_2build_2src_2any_8js_ad13bab444038e99cede6bdab048a25a5} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} google\+Protobuf\+Any\+From\+Proto3\+JSON = \mbox{\hyperlink{proto3-json-serializer_2build_2src_2any_8js_a64125f1ed358cf82375ac8d4fcc725da}{exports.\+google\+Protobuf\+Any\+To\+Proto3\+JSON}} = void 0}
+
+\Hypertarget{proto3-json-serializer_2build_2src_2any_8js_a64125f1ed358cf82375ac8d4fcc725da}\index{any.js@{any.js}!googleProtobufAnyToProto3JSON@{googleProtobufAnyToProto3JSON}}
+\index{googleProtobufAnyToProto3JSON@{googleProtobufAnyToProto3JSON}!any.js@{any.js}}
+\doxysubsubsection{\texorpdfstring{googleProtobufAnyToProto3JSON}{googleProtobufAnyToProto3JSON}}
+{\footnotesize\ttfamily \label{proto3-json-serializer_2build_2src_2any_8js_a64125f1ed358cf82375ac8d4fcc725da} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} google\+Protobuf\+Any\+To\+Proto3\+JSON = google\+Protobuf\+Any\+To\+Proto3\+JSON}
+
+\Hypertarget{proto3-json-serializer_2build_2src_2any_8js_ae88596540354e4a316d50cb53e5d7d96}\index{any.js@{any.js}!specialJSON@{specialJSON}}
+\index{specialJSON@{specialJSON}!any.js@{any.js}}
+\doxysubsubsection{\texorpdfstring{specialJSON}{specialJSON}}
+{\footnotesize\ttfamily \label{proto3-json-serializer_2build_2src_2any_8js_ae88596540354e4a316d50cb53e5d7d96} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} special\+JSON}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{new}\ \mbox{\hyperlink{__create_set_8js_ab9f46b8207185d305162498bea0d1c26}{Set}}([}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{'google.protobuf.Any'},}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{'google.protobuf.Duration'},}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{'google.protobuf.FieldMask'},}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{'google.protobuf.ListValue'},}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{'google.protobuf.Struct'},}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{'google.protobuf.Timestamp'},}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{'google.protobuf.Value'},}
+\DoxyCodeLine{])}
+
+\end{DoxyCode}
+\Hypertarget{proto3-json-serializer_2build_2src_2any_8js_ae2475e10618961c050dcba04e8c42331}\index{any.js@{any.js}!strict@{strict}}
+\index{strict@{strict}!any.js@{any.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{proto3-json-serializer_2build_2src_2any_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+
+\Hypertarget{proto3-json-serializer_2build_2src_2any_8js_a533ae2ed31fe2c0f1ffd224b68b8aac4}\index{any.js@{any.js}!toproto3json\_1@{toproto3json\_1}}
+\index{toproto3json\_1@{toproto3json\_1}!any.js@{any.js}}
+\doxysubsubsection{\texorpdfstring{toproto3json\_1}{toproto3json\_1}}
+{\footnotesize\ttfamily \label{proto3-json-serializer_2build_2src_2any_8js_a533ae2ed31fe2c0f1ffd224b68b8aac4} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} toproto3json\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./toproto3json"{})}
+

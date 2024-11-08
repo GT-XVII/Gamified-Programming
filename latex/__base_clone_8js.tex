@@ -1,0 +1,470 @@
+\doxysection{backend/node\+\_\+modules/lodash/\+\_\+base\+Clone.js File Reference}
+\hypertarget{__base_clone_8js}{}\label{__base_clone_8js}\index{backend/node\_modules/lodash/\_baseClone.js@{backend/node\_modules/lodash/\_baseClone.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{__base_clone_8js_a4a0cd107996982c77d1005d44cdd7cba}{base\+Clone}} (\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}, bitmask, customizer, key, \mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}}, stack)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{__base_clone_8js_ab61e40b30f319d275675805197ea3e90}{Stack}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\+\_\+\+Stack\textquotesingle{})
+\item 
+var \mbox{\hyperlink{__base_clone_8js_ad6238f819b3842b2ecc922c4eea45f08}{array\+Each}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\+\_\+array\+Each\textquotesingle{})
+\item 
+var \mbox{\hyperlink{__base_clone_8js_aa6c727d1d3f694486b601b4338a4fc98}{assign\+Value}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\+\_\+assign\+Value\textquotesingle{})
+\item 
+var \mbox{\hyperlink{__base_clone_8js_a42cad9f36885c2018d28c3f6a10eb3e4}{base\+Assign}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\+\_\+base\+Assign\textquotesingle{})
+\item 
+var \mbox{\hyperlink{__base_clone_8js_ac57c65f6b081d861ea525862d3d383c8}{base\+Assign\+In}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\+\_\+base\+Assign\+In\textquotesingle{})
+\item 
+var \mbox{\hyperlink{__base_clone_8js_a6e74118b44d2cd88b3512f83cc44b1ea}{clone\+Buffer}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\+\_\+clone\+Buffer\textquotesingle{})
+\item 
+var \mbox{\hyperlink{__base_clone_8js_abafd0dc69873d96b92fc241b9e5b0fb7}{copy\+Array}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\+\_\+copy\+Array\textquotesingle{})
+\item 
+var \mbox{\hyperlink{__base_clone_8js_aa3cb6175f13032552e5be26b548e096d}{copy\+Symbols}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\+\_\+copy\+Symbols\textquotesingle{})
+\item 
+var \mbox{\hyperlink{__base_clone_8js_a2354dfcc50214856bebd5caaa5c31ad4}{copy\+Symbols\+In}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\+\_\+copy\+Symbols\+In\textquotesingle{})
+\item 
+var \mbox{\hyperlink{__base_clone_8js_a2b004954614bcffc671c37663f952294}{get\+All\+Keys}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\+\_\+get\+All\+Keys\textquotesingle{})
+\item 
+var \mbox{\hyperlink{__base_clone_8js_a1e45905acee3f95a9322d2066d18cfc2}{get\+All\+Keys\+In}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\+\_\+get\+All\+Keys\+In\textquotesingle{})
+\item 
+var \mbox{\hyperlink{__base_clone_8js_a656b82282cf8f2375bfac9c70cc34f63}{get\+Tag}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\+\_\+get\+Tag\textquotesingle{})
+\item 
+var \mbox{\hyperlink{__base_clone_8js_a670b7118c2213a630f96b3f7d65dbaa9}{init\+Clone\+Array}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\+\_\+init\+Clone\+Array\textquotesingle{})
+\item 
+var \mbox{\hyperlink{__base_clone_8js_a04245105ca08d1912915e7be82adfd4d}{init\+Clone\+By\+Tag}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\+\_\+init\+Clone\+By\+Tag\textquotesingle{})
+\item 
+var \mbox{\hyperlink{__base_clone_8js_abf29a2841704fc0e511ed11b2e1d769b}{init\+Clone\+Object}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\+\_\+init\+Clone\+Object\textquotesingle{})
+\item 
+var \mbox{\hyperlink{__base_clone_8js_adca5ce0ed65a1514a671ae81eb33bd53}{is\+Array}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./is\+Array\textquotesingle{})
+\item 
+var \mbox{\hyperlink{__base_clone_8js_a8d89525410813127993ef667914204cf}{is\+Buffer}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./is\+Buffer\textquotesingle{})
+\item 
+var \mbox{\hyperlink{__base_clone_8js_ace4bda78c208d179c72ac9ebb04f39c5}{is\+Map}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./is\+Map\textquotesingle{})
+\item 
+var \mbox{\hyperlink{__base_clone_8js_ade4514786846f3fd15e74c4ec7ea26c0}{is\+Object}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./is\+Object\textquotesingle{})
+\item 
+var \mbox{\hyperlink{__base_clone_8js_a63726189a491412ee794f240ca459ca2}{is\+Set}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./is\+Set\textquotesingle{})
+\item 
+var \mbox{\hyperlink{__base_clone_8js_a4a8a7d6b3e9dd1cb17ef7b0590a536e2}{keys}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./keys\textquotesingle{})
+\item 
+var \mbox{\hyperlink{__base_clone_8js_a97a070878d73a4553cb05bb9d107b4ac}{keys\+In}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./keys\+In\textquotesingle{})
+\item 
+var \mbox{\hyperlink{__base_clone_8js_af0f6ab06195aa76cf762c27cf236ca83}{CLONE\+\_\+\+DEEP\+\_\+\+FLAG}} = 1
+\item 
+var \mbox{\hyperlink{__base_clone_8js_a16809d21cabae4d897e29a78af3d8541}{CLONE\+\_\+\+FLAT\+\_\+\+FLAG}} = 2
+\item 
+var \mbox{\hyperlink{__base_clone_8js_a0ce01ac8a0fba59752ea5b32ebf5df72}{CLONE\+\_\+\+SYMBOLS\+\_\+\+FLAG}} = 4
+\item 
+var \mbox{\hyperlink{__base_clone_8js_a9a49a73024c7e0250eb4dc200d1c99ff}{args\+Tag}} = \textquotesingle{}\mbox{[}\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}} Arguments\mbox{]}\textquotesingle{}
+\item 
+var \mbox{\hyperlink{__base_clone_8js_ad70f13d85f4279709da59595225e4b9b}{array\+Tag}} = \textquotesingle{}\mbox{[}\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}} \mbox{\hyperlink{src_2util_2minimal_8js_a325c4e317c38d8497130ebce7670be2f}{Array}}\mbox{]}\textquotesingle{}
+\item 
+var \mbox{\hyperlink{__base_clone_8js_a9496cd77ca14bbee6f4d32ce0802540e}{bool\+Tag}} = \textquotesingle{}\mbox{[}\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}} Boolean\mbox{]}\textquotesingle{}
+\item 
+var \mbox{\hyperlink{__base_clone_8js_ab767c38a05572c9da6e6752287cc7ece}{date\+Tag}} = \textquotesingle{}\mbox{[}\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}} Date\mbox{]}\textquotesingle{}
+\item 
+var \mbox{\hyperlink{__base_clone_8js_a2b9cfeb6d8badd093cc8b56c12af696f}{error\+Tag}} = \textquotesingle{}\mbox{[}\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}} Error\mbox{]}\textquotesingle{}
+\item 
+var \mbox{\hyperlink{__base_clone_8js_acf38149badec09470cf995aa32036a14}{func\+Tag}} = \textquotesingle{}\mbox{[}\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}} Function\mbox{]}\textquotesingle{}
+\item 
+var \mbox{\hyperlink{__base_clone_8js_a5a094f52a58e3563f45ce16215455143}{gen\+Tag}} = \textquotesingle{}\mbox{[}\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}} Generator\+Function\mbox{]}\textquotesingle{}
+\item 
+var \mbox{\hyperlink{__base_clone_8js_a74d4db68ca480f58c520984459b0264e}{map\+Tag}} = \textquotesingle{}\mbox{[}\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}} \mbox{\hyperlink{__get_tag_8js_aa38772edcc6ff00766e19b36ce8073a8}{Map}}\mbox{]}\textquotesingle{}
+\item 
+var \mbox{\hyperlink{__base_clone_8js_a3a84d34f1022deef352f48ca63e862c0}{number\+Tag}} = \textquotesingle{}\mbox{[}\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}} Number\mbox{]}\textquotesingle{}
+\item 
+var \mbox{\hyperlink{__base_clone_8js_afbf1aec266c073f677abe27048d599f9}{object\+Tag}} = \textquotesingle{}\mbox{[}\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}} Object\mbox{]}\textquotesingle{}
+\item 
+var \mbox{\hyperlink{__base_clone_8js_a524c64a46a617d981333046c62eb5655}{regexp\+Tag}} = \textquotesingle{}\mbox{[}\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}} Reg\+Exp\mbox{]}\textquotesingle{}
+\item 
+var \mbox{\hyperlink{__base_clone_8js_a15ee78f9160184570f3c275b9b5837f9}{set\+Tag}} = \textquotesingle{}\mbox{[}\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}} \mbox{\hyperlink{__create_set_8js_ab9f46b8207185d305162498bea0d1c26}{Set}}\mbox{]}\textquotesingle{}
+\item 
+var \mbox{\hyperlink{__base_clone_8js_ae360cbdaa5d2b9d572a8f535691979eb}{string\+Tag}} = \textquotesingle{}\mbox{[}\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}} String\mbox{]}\textquotesingle{}
+\item 
+var \mbox{\hyperlink{__base_clone_8js_a82320ff8df9ec6e5762da04020e18d26}{symbol\+Tag}} = \textquotesingle{}\mbox{[}\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}} \mbox{\hyperlink{__base_get_tag_8js_a9223501a4f1d046befc3fb8f0bf5c1e4}{Symbol}}\mbox{]}\textquotesingle{}
+\item 
+var \mbox{\hyperlink{__base_clone_8js_ab758fb7a72a3ea2e583dcfaf87a0422b}{weak\+Map\+Tag}} = \textquotesingle{}\mbox{[}\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}} \mbox{\hyperlink{__get_tag_8js_a7a0af2b1504d35a612ef29c54dcdef19}{Weak\+Map}}\mbox{]}\textquotesingle{}
+\item 
+var \mbox{\hyperlink{__base_clone_8js_a20f630deb51901a3622c0729acc02f03}{array\+Buffer\+Tag}} = \textquotesingle{}\mbox{[}\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}} Array\+Buffer\mbox{]}\textquotesingle{}
+\item 
+var \mbox{\hyperlink{__base_clone_8js_a3ed9cc959b4fda98519f221fa3cebe82}{data\+View\+Tag}} = \textquotesingle{}\mbox{[}\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}} \mbox{\hyperlink{___data_view_8js_a035b362a299d444b77597fe2d1ad1823}{Data\+View}}\mbox{]}\textquotesingle{}
+\item 
+var \mbox{\hyperlink{__base_clone_8js_a0d88e216aeeaa544ef13c7b8c7a8b19f}{float32\+Tag}} = \textquotesingle{}\mbox{[}\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}} \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_af1942005de9b477d1d421a6df63d7764}{Float32\+Array}}\mbox{]}\textquotesingle{}
+\item 
+var \mbox{\hyperlink{__base_clone_8js_a61182e89932bac0a9bd0f0ce68bb654e}{float64\+Tag}} = \textquotesingle{}\mbox{[}\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}} \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_afd12a71481527d47ef98eb5a6387edf3}{Float64\+Array}}\mbox{]}\textquotesingle{}
+\item 
+var \mbox{\hyperlink{__base_clone_8js_a0c2bc6eb467de8dca357e64ecd5c4f08}{int8\+Tag}} = \textquotesingle{}\mbox{[}\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}} Int8\+Array\mbox{]}\textquotesingle{}
+\item 
+var \mbox{\hyperlink{__base_clone_8js_ad3915ff374ed5c1ee23eee39a08114ed}{int16\+Tag}} = \textquotesingle{}\mbox{[}\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}} Int16\+Array\mbox{]}\textquotesingle{}
+\item 
+var \mbox{\hyperlink{__base_clone_8js_a44c2affeeb2d94b0f24cc3b4a499cd7b}{int32\+Tag}} = \textquotesingle{}\mbox{[}\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}} Int32\+Array\mbox{]}\textquotesingle{}
+\item 
+var \mbox{\hyperlink{__base_clone_8js_a0d2d41d51abb655be60348c5e6323cd2}{uint8\+Tag}} = \textquotesingle{}\mbox{[}\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}} \mbox{\hyperlink{__clone_array_buffer_8js_a23efaf497399fa716c3e05b817cb7d0c}{Uint8\+Array}}\mbox{]}\textquotesingle{}
+\item 
+var \mbox{\hyperlink{__base_clone_8js_a7398d55b652ddcb4f2579bbeff44b26d}{uint8\+Clamped\+Tag}} = \textquotesingle{}\mbox{[}\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}} Uint8\+Clamped\+Array\mbox{]}\textquotesingle{}
+\item 
+var \mbox{\hyperlink{__base_clone_8js_a5ebffa1f6f7cd27ca99e0b38acae897f}{uint16\+Tag}} = \textquotesingle{}\mbox{[}\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}} Uint16\+Array\mbox{]}\textquotesingle{}
+\item 
+var \mbox{\hyperlink{__base_clone_8js_a423c3b7bd6d1b21ec0ce47bcef2584e5}{uint32\+Tag}} = \textquotesingle{}\mbox{[}\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}} Uint32\+Array\mbox{]}\textquotesingle{}
+\item 
+var \mbox{\hyperlink{__base_clone_8js_a11a1908982389a167b4b51ff377d1a17}{cloneable\+Tags}} = \{\}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{__base_clone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} = \mbox{\hyperlink{clone_8js_a15ed1a4d91a209cf4751dbae2ddc3cf7}{base\+Clone}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{__base_clone_8js_a4a0cd107996982c77d1005d44cdd7cba}\index{\_baseClone.js@{\_baseClone.js}!baseClone@{baseClone}}
+\index{baseClone@{baseClone}!\_baseClone.js@{\_baseClone.js}}
+\doxysubsubsection{\texorpdfstring{baseClone()}{baseClone()}}
+{\footnotesize\ttfamily \label{__base_clone_8js_a4a0cd107996982c77d1005d44cdd7cba} 
+function base\+Clone (\begin{DoxyParamCaption}\item[{}]{value}{, }\item[{}]{bitmask}{, }\item[{}]{customizer}{, }\item[{}]{key}{, }\item[{}]{object}{, }\item[{}]{stack}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+The base implementation of {\ttfamily \+\_\+.\+clone} and {\ttfamily \+\_\+.\+clone\+Deep} which tracks traversed objects.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\texorpdfstring{$\ast$}{*}\}} & value The value to clone. \\
+\hline
+{\em \{boolean\}} & bitmask The bitmask flags. 1 -\/ Deep clone 2 -\/ Flatten inherited properties 4 -\/ Clone symbols \\
+\hline
+{\em \{\+Function\}} & \mbox{[}customizer\mbox{]} The function to customize cloning. \\
+\hline
+{\em \{string\}} & \mbox{[}key\mbox{]} The key of {\ttfamily value}. \\
+\hline
+{\em \{\+Object\}} & \mbox{[}object\mbox{]} The parent object of {\ttfamily value}. \\
+\hline
+{\em \{\+Object\}} & \mbox{[}stack\mbox{]} Tracks traversed objects and their clone counterparts. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{\texorpdfstring{$\ast$}{*}\} Returns the cloned value. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{__base_clone_8js_a9a49a73024c7e0250eb4dc200d1c99ff}{args\+Tag}}, \mbox{\hyperlink{__base_clone_8js_ad6238f819b3842b2ecc922c4eea45f08}{array\+Each}}, \mbox{\hyperlink{__base_clone_8js_aa6c727d1d3f694486b601b4338a4fc98}{assign\+Value}}, \mbox{\hyperlink{__base_clone_8js_a42cad9f36885c2018d28c3f6a10eb3e4}{base\+Assign}}, \mbox{\hyperlink{__base_clone_8js_ac57c65f6b081d861ea525862d3d383c8}{base\+Assign\+In}}, \mbox{\hyperlink{clone_8js_a15ed1a4d91a209cf4751dbae2ddc3cf7}{base\+Clone}}, \mbox{\hyperlink{__base_clone_8js_af0f6ab06195aa76cf762c27cf236ca83}{CLONE\+\_\+\+DEEP\+\_\+\+FLAG}}, \mbox{\hyperlink{__base_clone_8js_a16809d21cabae4d897e29a78af3d8541}{CLONE\+\_\+\+FLAT\+\_\+\+FLAG}}, \mbox{\hyperlink{__base_clone_8js_a0ce01ac8a0fba59752ea5b32ebf5df72}{CLONE\+\_\+\+SYMBOLS\+\_\+\+FLAG}}, \mbox{\hyperlink{__base_clone_8js_a11a1908982389a167b4b51ff377d1a17}{cloneable\+Tags}}, \mbox{\hyperlink{__base_clone_8js_a6e74118b44d2cd88b3512f83cc44b1ea}{clone\+Buffer}}, \mbox{\hyperlink{__base_clone_8js_abafd0dc69873d96b92fc241b9e5b0fb7}{copy\+Array}}, \mbox{\hyperlink{__base_clone_8js_aa3cb6175f13032552e5be26b548e096d}{copy\+Symbols}}, \mbox{\hyperlink{__base_clone_8js_a2354dfcc50214856bebd5caaa5c31ad4}{copy\+Symbols\+In}}, \mbox{\hyperlink{__base_clone_8js_acf38149badec09470cf995aa32036a14}{func\+Tag}}, \mbox{\hyperlink{__base_clone_8js_a5a094f52a58e3563f45ce16215455143}{gen\+Tag}}, \mbox{\hyperlink{__base_clone_8js_a2b004954614bcffc671c37663f952294}{get\+All\+Keys}}, \mbox{\hyperlink{__base_clone_8js_a1e45905acee3f95a9322d2066d18cfc2}{get\+All\+Keys\+In}}, \mbox{\hyperlink{__base_clone_8js_a656b82282cf8f2375bfac9c70cc34f63}{get\+Tag}}, \mbox{\hyperlink{__base_clone_8js_a670b7118c2213a630f96b3f7d65dbaa9}{init\+Clone\+Array}}, \mbox{\hyperlink{__base_clone_8js_a04245105ca08d1912915e7be82adfd4d}{init\+Clone\+By\+Tag}}, \mbox{\hyperlink{__base_clone_8js_abf29a2841704fc0e511ed11b2e1d769b}{init\+Clone\+Object}}, \mbox{\hyperlink{__base_clone_8js_adca5ce0ed65a1514a671ae81eb33bd53}{is\+Array}}, \mbox{\hyperlink{__base_clone_8js_a8d89525410813127993ef667914204cf}{is\+Buffer}}, \mbox{\hyperlink{__base_clone_8js_ace4bda78c208d179c72ac9ebb04f39c5}{is\+Map}}, \mbox{\hyperlink{__base_clone_8js_ade4514786846f3fd15e74c4ec7ea26c0}{is\+Object}}, \mbox{\hyperlink{__base_clone_8js_a63726189a491412ee794f240ca459ca2}{is\+Set}}, \mbox{\hyperlink{__base_clone_8js_a4a8a7d6b3e9dd1cb17ef7b0590a536e2}{keys}}, \mbox{\hyperlink{__base_clone_8js_a97a070878d73a4553cb05bb9d107b4ac}{keys\+In}}, \mbox{\hyperlink{__base_clone_8js_afbf1aec266c073f677abe27048d599f9}{object\+Tag}}, \mbox{\hyperlink{lodash_2core_8js_a348c112a244660a2f280cda892658c24}{result}}, \mbox{\hyperlink{__base_clone_8js_ab61e40b30f319d275675805197ea3e90}{Stack}}, \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{__base_clone_8js_a9a49a73024c7e0250eb4dc200d1c99ff}\index{\_baseClone.js@{\_baseClone.js}!argsTag@{argsTag}}
+\index{argsTag@{argsTag}!\_baseClone.js@{\_baseClone.js}}
+\doxysubsubsection{\texorpdfstring{argsTag}{argsTag}}
+{\footnotesize\ttfamily \label{__base_clone_8js_a9a49a73024c7e0250eb4dc200d1c99ff} 
+var args\+Tag = \textquotesingle{}\mbox{[}\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}} Arguments\mbox{]}\textquotesingle{}}
+
+{\ttfamily Object\#to\+String} result references. \Hypertarget{__base_clone_8js_a20f630deb51901a3622c0729acc02f03}\index{\_baseClone.js@{\_baseClone.js}!arrayBufferTag@{arrayBufferTag}}
+\index{arrayBufferTag@{arrayBufferTag}!\_baseClone.js@{\_baseClone.js}}
+\doxysubsubsection{\texorpdfstring{arrayBufferTag}{arrayBufferTag}}
+{\footnotesize\ttfamily \label{__base_clone_8js_a20f630deb51901a3622c0729acc02f03} 
+var array\+Buffer\+Tag = \textquotesingle{}\mbox{[}\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}} Array\+Buffer\mbox{]}\textquotesingle{}}
+
+\Hypertarget{__base_clone_8js_ad6238f819b3842b2ecc922c4eea45f08}\index{\_baseClone.js@{\_baseClone.js}!arrayEach@{arrayEach}}
+\index{arrayEach@{arrayEach}!\_baseClone.js@{\_baseClone.js}}
+\doxysubsubsection{\texorpdfstring{arrayEach}{arrayEach}}
+{\footnotesize\ttfamily \label{__base_clone_8js_ad6238f819b3842b2ecc922c4eea45f08} 
+var array\+Each = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\+\_\+array\+Each\textquotesingle{})}
+
+\Hypertarget{__base_clone_8js_ad70f13d85f4279709da59595225e4b9b}\index{\_baseClone.js@{\_baseClone.js}!arrayTag@{arrayTag}}
+\index{arrayTag@{arrayTag}!\_baseClone.js@{\_baseClone.js}}
+\doxysubsubsection{\texorpdfstring{arrayTag}{arrayTag}}
+{\footnotesize\ttfamily \label{__base_clone_8js_ad70f13d85f4279709da59595225e4b9b} 
+var array\+Tag = \textquotesingle{}\mbox{[}\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}} \mbox{\hyperlink{src_2util_2minimal_8js_a325c4e317c38d8497130ebce7670be2f}{Array}}\mbox{]}\textquotesingle{}}
+
+\Hypertarget{__base_clone_8js_aa6c727d1d3f694486b601b4338a4fc98}\index{\_baseClone.js@{\_baseClone.js}!assignValue@{assignValue}}
+\index{assignValue@{assignValue}!\_baseClone.js@{\_baseClone.js}}
+\doxysubsubsection{\texorpdfstring{assignValue}{assignValue}}
+{\footnotesize\ttfamily \label{__base_clone_8js_aa6c727d1d3f694486b601b4338a4fc98} 
+var assign\+Value = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\+\_\+assign\+Value\textquotesingle{})}
+
+\Hypertarget{__base_clone_8js_a42cad9f36885c2018d28c3f6a10eb3e4}\index{\_baseClone.js@{\_baseClone.js}!baseAssign@{baseAssign}}
+\index{baseAssign@{baseAssign}!\_baseClone.js@{\_baseClone.js}}
+\doxysubsubsection{\texorpdfstring{baseAssign}{baseAssign}}
+{\footnotesize\ttfamily \label{__base_clone_8js_a42cad9f36885c2018d28c3f6a10eb3e4} 
+var base\+Assign = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\+\_\+base\+Assign\textquotesingle{})}
+
+\Hypertarget{__base_clone_8js_ac57c65f6b081d861ea525862d3d383c8}\index{\_baseClone.js@{\_baseClone.js}!baseAssignIn@{baseAssignIn}}
+\index{baseAssignIn@{baseAssignIn}!\_baseClone.js@{\_baseClone.js}}
+\doxysubsubsection{\texorpdfstring{baseAssignIn}{baseAssignIn}}
+{\footnotesize\ttfamily \label{__base_clone_8js_ac57c65f6b081d861ea525862d3d383c8} 
+var base\+Assign\+In = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\+\_\+base\+Assign\+In\textquotesingle{})}
+
+\Hypertarget{__base_clone_8js_a9496cd77ca14bbee6f4d32ce0802540e}\index{\_baseClone.js@{\_baseClone.js}!boolTag@{boolTag}}
+\index{boolTag@{boolTag}!\_baseClone.js@{\_baseClone.js}}
+\doxysubsubsection{\texorpdfstring{boolTag}{boolTag}}
+{\footnotesize\ttfamily \label{__base_clone_8js_a9496cd77ca14bbee6f4d32ce0802540e} 
+var bool\+Tag = \textquotesingle{}\mbox{[}\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}} Boolean\mbox{]}\textquotesingle{}}
+
+\Hypertarget{__base_clone_8js_af0f6ab06195aa76cf762c27cf236ca83}\index{\_baseClone.js@{\_baseClone.js}!CLONE\_DEEP\_FLAG@{CLONE\_DEEP\_FLAG}}
+\index{CLONE\_DEEP\_FLAG@{CLONE\_DEEP\_FLAG}!\_baseClone.js@{\_baseClone.js}}
+\doxysubsubsection{\texorpdfstring{CLONE\_DEEP\_FLAG}{CLONE\_DEEP\_FLAG}}
+{\footnotesize\ttfamily \label{__base_clone_8js_af0f6ab06195aa76cf762c27cf236ca83} 
+var CLONE\+\_\+\+DEEP\+\_\+\+FLAG = 1}
+
+Used to compose bitmasks for cloning. \Hypertarget{__base_clone_8js_a16809d21cabae4d897e29a78af3d8541}\index{\_baseClone.js@{\_baseClone.js}!CLONE\_FLAT\_FLAG@{CLONE\_FLAT\_FLAG}}
+\index{CLONE\_FLAT\_FLAG@{CLONE\_FLAT\_FLAG}!\_baseClone.js@{\_baseClone.js}}
+\doxysubsubsection{\texorpdfstring{CLONE\_FLAT\_FLAG}{CLONE\_FLAT\_FLAG}}
+{\footnotesize\ttfamily \label{__base_clone_8js_a16809d21cabae4d897e29a78af3d8541} 
+var CLONE\+\_\+\+FLAT\+\_\+\+FLAG = 2}
+
+\Hypertarget{__base_clone_8js_a0ce01ac8a0fba59752ea5b32ebf5df72}\index{\_baseClone.js@{\_baseClone.js}!CLONE\_SYMBOLS\_FLAG@{CLONE\_SYMBOLS\_FLAG}}
+\index{CLONE\_SYMBOLS\_FLAG@{CLONE\_SYMBOLS\_FLAG}!\_baseClone.js@{\_baseClone.js}}
+\doxysubsubsection{\texorpdfstring{CLONE\_SYMBOLS\_FLAG}{CLONE\_SYMBOLS\_FLAG}}
+{\footnotesize\ttfamily \label{__base_clone_8js_a0ce01ac8a0fba59752ea5b32ebf5df72} 
+var CLONE\+\_\+\+SYMBOLS\+\_\+\+FLAG = 4}
+
+\Hypertarget{__base_clone_8js_a11a1908982389a167b4b51ff377d1a17}\index{\_baseClone.js@{\_baseClone.js}!cloneableTags@{cloneableTags}}
+\index{cloneableTags@{cloneableTags}!\_baseClone.js@{\_baseClone.js}}
+\doxysubsubsection{\texorpdfstring{cloneableTags}{cloneableTags}}
+{\footnotesize\ttfamily \label{__base_clone_8js_a11a1908982389a167b4b51ff377d1a17} 
+cloneable\+Tags\mbox{[}\mbox{\hyperlink{lodash_8clonedeep_2index_8js_a2b9cfeb6d8badd093cc8b56c12af696f}{error\+Tag}}\mbox{]} = \{\}}
+
+Used to identify {\ttfamily to\+String\+Tag} values supported by {\ttfamily \+\_\+.\+clone}. \Hypertarget{__base_clone_8js_a6e74118b44d2cd88b3512f83cc44b1ea}\index{\_baseClone.js@{\_baseClone.js}!cloneBuffer@{cloneBuffer}}
+\index{cloneBuffer@{cloneBuffer}!\_baseClone.js@{\_baseClone.js}}
+\doxysubsubsection{\texorpdfstring{cloneBuffer}{cloneBuffer}}
+{\footnotesize\ttfamily \label{__base_clone_8js_a6e74118b44d2cd88b3512f83cc44b1ea} 
+var clone\+Buffer = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\+\_\+clone\+Buffer\textquotesingle{})}
+
+\Hypertarget{__base_clone_8js_abafd0dc69873d96b92fc241b9e5b0fb7}\index{\_baseClone.js@{\_baseClone.js}!copyArray@{copyArray}}
+\index{copyArray@{copyArray}!\_baseClone.js@{\_baseClone.js}}
+\doxysubsubsection{\texorpdfstring{copyArray}{copyArray}}
+{\footnotesize\ttfamily \label{__base_clone_8js_abafd0dc69873d96b92fc241b9e5b0fb7} 
+var copy\+Array = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\+\_\+copy\+Array\textquotesingle{})}
+
+\Hypertarget{__base_clone_8js_aa3cb6175f13032552e5be26b548e096d}\index{\_baseClone.js@{\_baseClone.js}!copySymbols@{copySymbols}}
+\index{copySymbols@{copySymbols}!\_baseClone.js@{\_baseClone.js}}
+\doxysubsubsection{\texorpdfstring{copySymbols}{copySymbols}}
+{\footnotesize\ttfamily \label{__base_clone_8js_aa3cb6175f13032552e5be26b548e096d} 
+var copy\+Symbols = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\+\_\+copy\+Symbols\textquotesingle{})}
+
+\Hypertarget{__base_clone_8js_a2354dfcc50214856bebd5caaa5c31ad4}\index{\_baseClone.js@{\_baseClone.js}!copySymbolsIn@{copySymbolsIn}}
+\index{copySymbolsIn@{copySymbolsIn}!\_baseClone.js@{\_baseClone.js}}
+\doxysubsubsection{\texorpdfstring{copySymbolsIn}{copySymbolsIn}}
+{\footnotesize\ttfamily \label{__base_clone_8js_a2354dfcc50214856bebd5caaa5c31ad4} 
+var copy\+Symbols\+In = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\+\_\+copy\+Symbols\+In\textquotesingle{})}
+
+\Hypertarget{__base_clone_8js_a3ed9cc959b4fda98519f221fa3cebe82}\index{\_baseClone.js@{\_baseClone.js}!dataViewTag@{dataViewTag}}
+\index{dataViewTag@{dataViewTag}!\_baseClone.js@{\_baseClone.js}}
+\doxysubsubsection{\texorpdfstring{dataViewTag}{dataViewTag}}
+{\footnotesize\ttfamily \label{__base_clone_8js_a3ed9cc959b4fda98519f221fa3cebe82} 
+var data\+View\+Tag = \textquotesingle{}\mbox{[}\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}} \mbox{\hyperlink{___data_view_8js_a035b362a299d444b77597fe2d1ad1823}{Data\+View}}\mbox{]}\textquotesingle{}}
+
+\Hypertarget{__base_clone_8js_ab767c38a05572c9da6e6752287cc7ece}\index{\_baseClone.js@{\_baseClone.js}!dateTag@{dateTag}}
+\index{dateTag@{dateTag}!\_baseClone.js@{\_baseClone.js}}
+\doxysubsubsection{\texorpdfstring{dateTag}{dateTag}}
+{\footnotesize\ttfamily \label{__base_clone_8js_ab767c38a05572c9da6e6752287cc7ece} 
+var date\+Tag = \textquotesingle{}\mbox{[}\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}} Date\mbox{]}\textquotesingle{}}
+
+\Hypertarget{__base_clone_8js_a2b9cfeb6d8badd093cc8b56c12af696f}\index{\_baseClone.js@{\_baseClone.js}!errorTag@{errorTag}}
+\index{errorTag@{errorTag}!\_baseClone.js@{\_baseClone.js}}
+\doxysubsubsection{\texorpdfstring{errorTag}{errorTag}}
+{\footnotesize\ttfamily \label{__base_clone_8js_a2b9cfeb6d8badd093cc8b56c12af696f} 
+var error\+Tag = \textquotesingle{}\mbox{[}\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}} Error\mbox{]}\textquotesingle{}}
+
+\Hypertarget{__base_clone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\index{\_baseClone.js@{\_baseClone.js}!exports@{exports}}
+\index{exports@{exports}!\_baseClone.js@{\_baseClone.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \label{__base_clone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports = \mbox{\hyperlink{clone_8js_a15ed1a4d91a209cf4751dbae2ddc3cf7}{base\+Clone}}}
+
+\Hypertarget{__base_clone_8js_a0d88e216aeeaa544ef13c7b8c7a8b19f}\index{\_baseClone.js@{\_baseClone.js}!float32Tag@{float32Tag}}
+\index{float32Tag@{float32Tag}!\_baseClone.js@{\_baseClone.js}}
+\doxysubsubsection{\texorpdfstring{float32Tag}{float32Tag}}
+{\footnotesize\ttfamily \label{__base_clone_8js_a0d88e216aeeaa544ef13c7b8c7a8b19f} 
+var float32\+Tag = \textquotesingle{}\mbox{[}\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}} \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_af1942005de9b477d1d421a6df63d7764}{Float32\+Array}}\mbox{]}\textquotesingle{}}
+
+\Hypertarget{__base_clone_8js_a61182e89932bac0a9bd0f0ce68bb654e}\index{\_baseClone.js@{\_baseClone.js}!float64Tag@{float64Tag}}
+\index{float64Tag@{float64Tag}!\_baseClone.js@{\_baseClone.js}}
+\doxysubsubsection{\texorpdfstring{float64Tag}{float64Tag}}
+{\footnotesize\ttfamily \label{__base_clone_8js_a61182e89932bac0a9bd0f0ce68bb654e} 
+var float64\+Tag = \textquotesingle{}\mbox{[}\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}} \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_afd12a71481527d47ef98eb5a6387edf3}{Float64\+Array}}\mbox{]}\textquotesingle{}}
+
+\Hypertarget{__base_clone_8js_acf38149badec09470cf995aa32036a14}\index{\_baseClone.js@{\_baseClone.js}!funcTag@{funcTag}}
+\index{funcTag@{funcTag}!\_baseClone.js@{\_baseClone.js}}
+\doxysubsubsection{\texorpdfstring{funcTag}{funcTag}}
+{\footnotesize\ttfamily \label{__base_clone_8js_acf38149badec09470cf995aa32036a14} 
+var func\+Tag = \textquotesingle{}\mbox{[}\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}} Function\mbox{]}\textquotesingle{}}
+
+\Hypertarget{__base_clone_8js_a5a094f52a58e3563f45ce16215455143}\index{\_baseClone.js@{\_baseClone.js}!genTag@{genTag}}
+\index{genTag@{genTag}!\_baseClone.js@{\_baseClone.js}}
+\doxysubsubsection{\texorpdfstring{genTag}{genTag}}
+{\footnotesize\ttfamily \label{__base_clone_8js_a5a094f52a58e3563f45ce16215455143} 
+var gen\+Tag = \textquotesingle{}\mbox{[}\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}} Generator\+Function\mbox{]}\textquotesingle{}}
+
+\Hypertarget{__base_clone_8js_a2b004954614bcffc671c37663f952294}\index{\_baseClone.js@{\_baseClone.js}!getAllKeys@{getAllKeys}}
+\index{getAllKeys@{getAllKeys}!\_baseClone.js@{\_baseClone.js}}
+\doxysubsubsection{\texorpdfstring{getAllKeys}{getAllKeys}}
+{\footnotesize\ttfamily \label{__base_clone_8js_a2b004954614bcffc671c37663f952294} 
+var get\+All\+Keys = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\+\_\+get\+All\+Keys\textquotesingle{})}
+
+\Hypertarget{__base_clone_8js_a1e45905acee3f95a9322d2066d18cfc2}\index{\_baseClone.js@{\_baseClone.js}!getAllKeysIn@{getAllKeysIn}}
+\index{getAllKeysIn@{getAllKeysIn}!\_baseClone.js@{\_baseClone.js}}
+\doxysubsubsection{\texorpdfstring{getAllKeysIn}{getAllKeysIn}}
+{\footnotesize\ttfamily \label{__base_clone_8js_a1e45905acee3f95a9322d2066d18cfc2} 
+var get\+All\+Keys\+In = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\+\_\+get\+All\+Keys\+In\textquotesingle{})}
+
+\Hypertarget{__base_clone_8js_a656b82282cf8f2375bfac9c70cc34f63}\index{\_baseClone.js@{\_baseClone.js}!getTag@{getTag}}
+\index{getTag@{getTag}!\_baseClone.js@{\_baseClone.js}}
+\doxysubsubsection{\texorpdfstring{getTag}{getTag}}
+{\footnotesize\ttfamily \label{__base_clone_8js_a656b82282cf8f2375bfac9c70cc34f63} 
+var get\+Tag = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\+\_\+get\+Tag\textquotesingle{})}
+
+\Hypertarget{__base_clone_8js_a670b7118c2213a630f96b3f7d65dbaa9}\index{\_baseClone.js@{\_baseClone.js}!initCloneArray@{initCloneArray}}
+\index{initCloneArray@{initCloneArray}!\_baseClone.js@{\_baseClone.js}}
+\doxysubsubsection{\texorpdfstring{initCloneArray}{initCloneArray}}
+{\footnotesize\ttfamily \label{__base_clone_8js_a670b7118c2213a630f96b3f7d65dbaa9} 
+var init\+Clone\+Array = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\+\_\+init\+Clone\+Array\textquotesingle{})}
+
+\Hypertarget{__base_clone_8js_a04245105ca08d1912915e7be82adfd4d}\index{\_baseClone.js@{\_baseClone.js}!initCloneByTag@{initCloneByTag}}
+\index{initCloneByTag@{initCloneByTag}!\_baseClone.js@{\_baseClone.js}}
+\doxysubsubsection{\texorpdfstring{initCloneByTag}{initCloneByTag}}
+{\footnotesize\ttfamily \label{__base_clone_8js_a04245105ca08d1912915e7be82adfd4d} 
+var init\+Clone\+By\+Tag = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\+\_\+init\+Clone\+By\+Tag\textquotesingle{})}
+
+\Hypertarget{__base_clone_8js_abf29a2841704fc0e511ed11b2e1d769b}\index{\_baseClone.js@{\_baseClone.js}!initCloneObject@{initCloneObject}}
+\index{initCloneObject@{initCloneObject}!\_baseClone.js@{\_baseClone.js}}
+\doxysubsubsection{\texorpdfstring{initCloneObject}{initCloneObject}}
+{\footnotesize\ttfamily \label{__base_clone_8js_abf29a2841704fc0e511ed11b2e1d769b} 
+var init\+Clone\+Object = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\+\_\+init\+Clone\+Object\textquotesingle{})}
+
+\Hypertarget{__base_clone_8js_ad3915ff374ed5c1ee23eee39a08114ed}\index{\_baseClone.js@{\_baseClone.js}!int16Tag@{int16Tag}}
+\index{int16Tag@{int16Tag}!\_baseClone.js@{\_baseClone.js}}
+\doxysubsubsection{\texorpdfstring{int16Tag}{int16Tag}}
+{\footnotesize\ttfamily \label{__base_clone_8js_ad3915ff374ed5c1ee23eee39a08114ed} 
+var int16\+Tag = \textquotesingle{}\mbox{[}\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}} Int16\+Array\mbox{]}\textquotesingle{}}
+
+\Hypertarget{__base_clone_8js_a44c2affeeb2d94b0f24cc3b4a499cd7b}\index{\_baseClone.js@{\_baseClone.js}!int32Tag@{int32Tag}}
+\index{int32Tag@{int32Tag}!\_baseClone.js@{\_baseClone.js}}
+\doxysubsubsection{\texorpdfstring{int32Tag}{int32Tag}}
+{\footnotesize\ttfamily \label{__base_clone_8js_a44c2affeeb2d94b0f24cc3b4a499cd7b} 
+var int32\+Tag = \textquotesingle{}\mbox{[}\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}} Int32\+Array\mbox{]}\textquotesingle{}}
+
+\Hypertarget{__base_clone_8js_a0c2bc6eb467de8dca357e64ecd5c4f08}\index{\_baseClone.js@{\_baseClone.js}!int8Tag@{int8Tag}}
+\index{int8Tag@{int8Tag}!\_baseClone.js@{\_baseClone.js}}
+\doxysubsubsection{\texorpdfstring{int8Tag}{int8Tag}}
+{\footnotesize\ttfamily \label{__base_clone_8js_a0c2bc6eb467de8dca357e64ecd5c4f08} 
+var int8\+Tag = \textquotesingle{}\mbox{[}\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}} Int8\+Array\mbox{]}\textquotesingle{}}
+
+\Hypertarget{__base_clone_8js_adca5ce0ed65a1514a671ae81eb33bd53}\index{\_baseClone.js@{\_baseClone.js}!isArray@{isArray}}
+\index{isArray@{isArray}!\_baseClone.js@{\_baseClone.js}}
+\doxysubsubsection{\texorpdfstring{isArray}{isArray}}
+{\footnotesize\ttfamily \label{__base_clone_8js_adca5ce0ed65a1514a671ae81eb33bd53} 
+var is\+Array = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./is\+Array\textquotesingle{})}
+
+\Hypertarget{__base_clone_8js_a8d89525410813127993ef667914204cf}\index{\_baseClone.js@{\_baseClone.js}!isBuffer@{isBuffer}}
+\index{isBuffer@{isBuffer}!\_baseClone.js@{\_baseClone.js}}
+\doxysubsubsection{\texorpdfstring{isBuffer}{isBuffer}}
+{\footnotesize\ttfamily \label{__base_clone_8js_a8d89525410813127993ef667914204cf} 
+var is\+Buffer = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./is\+Buffer\textquotesingle{})}
+
+\Hypertarget{__base_clone_8js_ace4bda78c208d179c72ac9ebb04f39c5}\index{\_baseClone.js@{\_baseClone.js}!isMap@{isMap}}
+\index{isMap@{isMap}!\_baseClone.js@{\_baseClone.js}}
+\doxysubsubsection{\texorpdfstring{isMap}{isMap}}
+{\footnotesize\ttfamily \label{__base_clone_8js_ace4bda78c208d179c72ac9ebb04f39c5} 
+var is\+Map = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./is\+Map\textquotesingle{})}
+
+\Hypertarget{__base_clone_8js_ade4514786846f3fd15e74c4ec7ea26c0}\index{\_baseClone.js@{\_baseClone.js}!isObject@{isObject}}
+\index{isObject@{isObject}!\_baseClone.js@{\_baseClone.js}}
+\doxysubsubsection{\texorpdfstring{isObject}{isObject}}
+{\footnotesize\ttfamily \label{__base_clone_8js_ade4514786846f3fd15e74c4ec7ea26c0} 
+var is\+Object = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./is\+Object\textquotesingle{})}
+
+\Hypertarget{__base_clone_8js_a63726189a491412ee794f240ca459ca2}\index{\_baseClone.js@{\_baseClone.js}!isSet@{isSet}}
+\index{isSet@{isSet}!\_baseClone.js@{\_baseClone.js}}
+\doxysubsubsection{\texorpdfstring{isSet}{isSet}}
+{\footnotesize\ttfamily \label{__base_clone_8js_a63726189a491412ee794f240ca459ca2} 
+var is\+Set = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./is\+Set\textquotesingle{})}
+
+\Hypertarget{__base_clone_8js_a4a8a7d6b3e9dd1cb17ef7b0590a536e2}\index{\_baseClone.js@{\_baseClone.js}!keys@{keys}}
+\index{keys@{keys}!\_baseClone.js@{\_baseClone.js}}
+\doxysubsubsection{\texorpdfstring{keys}{keys}}
+{\footnotesize\ttfamily \label{__base_clone_8js_a4a8a7d6b3e9dd1cb17ef7b0590a536e2} 
+var keys = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./keys\textquotesingle{})}
+
+\Hypertarget{__base_clone_8js_a97a070878d73a4553cb05bb9d107b4ac}\index{\_baseClone.js@{\_baseClone.js}!keysIn@{keysIn}}
+\index{keysIn@{keysIn}!\_baseClone.js@{\_baseClone.js}}
+\doxysubsubsection{\texorpdfstring{keysIn}{keysIn}}
+{\footnotesize\ttfamily \label{__base_clone_8js_a97a070878d73a4553cb05bb9d107b4ac} 
+var keys\+In = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./keys\+In\textquotesingle{})}
+
+\Hypertarget{__base_clone_8js_a74d4db68ca480f58c520984459b0264e}\index{\_baseClone.js@{\_baseClone.js}!mapTag@{mapTag}}
+\index{mapTag@{mapTag}!\_baseClone.js@{\_baseClone.js}}
+\doxysubsubsection{\texorpdfstring{mapTag}{mapTag}}
+{\footnotesize\ttfamily \label{__base_clone_8js_a74d4db68ca480f58c520984459b0264e} 
+var map\+Tag = \textquotesingle{}\mbox{[}\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}} \mbox{\hyperlink{__get_tag_8js_aa38772edcc6ff00766e19b36ce8073a8}{Map}}\mbox{]}\textquotesingle{}}
+
+\Hypertarget{__base_clone_8js_a3a84d34f1022deef352f48ca63e862c0}\index{\_baseClone.js@{\_baseClone.js}!numberTag@{numberTag}}
+\index{numberTag@{numberTag}!\_baseClone.js@{\_baseClone.js}}
+\doxysubsubsection{\texorpdfstring{numberTag}{numberTag}}
+{\footnotesize\ttfamily \label{__base_clone_8js_a3a84d34f1022deef352f48ca63e862c0} 
+var number\+Tag = \textquotesingle{}\mbox{[}\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}} Number\mbox{]}\textquotesingle{}}
+
+\Hypertarget{__base_clone_8js_afbf1aec266c073f677abe27048d599f9}\index{\_baseClone.js@{\_baseClone.js}!objectTag@{objectTag}}
+\index{objectTag@{objectTag}!\_baseClone.js@{\_baseClone.js}}
+\doxysubsubsection{\texorpdfstring{objectTag}{objectTag}}
+{\footnotesize\ttfamily \label{__base_clone_8js_afbf1aec266c073f677abe27048d599f9} 
+var object\+Tag = \textquotesingle{}\mbox{[}\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}} Object\mbox{]}\textquotesingle{}}
+
+\Hypertarget{__base_clone_8js_a524c64a46a617d981333046c62eb5655}\index{\_baseClone.js@{\_baseClone.js}!regexpTag@{regexpTag}}
+\index{regexpTag@{regexpTag}!\_baseClone.js@{\_baseClone.js}}
+\doxysubsubsection{\texorpdfstring{regexpTag}{regexpTag}}
+{\footnotesize\ttfamily \label{__base_clone_8js_a524c64a46a617d981333046c62eb5655} 
+var regexp\+Tag = \textquotesingle{}\mbox{[}\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}} Reg\+Exp\mbox{]}\textquotesingle{}}
+
+\Hypertarget{__base_clone_8js_a15ee78f9160184570f3c275b9b5837f9}\index{\_baseClone.js@{\_baseClone.js}!setTag@{setTag}}
+\index{setTag@{setTag}!\_baseClone.js@{\_baseClone.js}}
+\doxysubsubsection{\texorpdfstring{setTag}{setTag}}
+{\footnotesize\ttfamily \label{__base_clone_8js_a15ee78f9160184570f3c275b9b5837f9} 
+var set\+Tag = \textquotesingle{}\mbox{[}\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}} \mbox{\hyperlink{__create_set_8js_ab9f46b8207185d305162498bea0d1c26}{Set}}\mbox{]}\textquotesingle{}}
+
+\Hypertarget{__base_clone_8js_ab61e40b30f319d275675805197ea3e90}\index{\_baseClone.js@{\_baseClone.js}!Stack@{Stack}}
+\index{Stack@{Stack}!\_baseClone.js@{\_baseClone.js}}
+\doxysubsubsection{\texorpdfstring{Stack}{Stack}}
+{\footnotesize\ttfamily \label{__base_clone_8js_ab61e40b30f319d275675805197ea3e90} 
+var Stack = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\+\_\+\+Stack\textquotesingle{})}
+
+\Hypertarget{__base_clone_8js_ae360cbdaa5d2b9d572a8f535691979eb}\index{\_baseClone.js@{\_baseClone.js}!stringTag@{stringTag}}
+\index{stringTag@{stringTag}!\_baseClone.js@{\_baseClone.js}}
+\doxysubsubsection{\texorpdfstring{stringTag}{stringTag}}
+{\footnotesize\ttfamily \label{__base_clone_8js_ae360cbdaa5d2b9d572a8f535691979eb} 
+var string\+Tag = \textquotesingle{}\mbox{[}\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}} String\mbox{]}\textquotesingle{}}
+
+\Hypertarget{__base_clone_8js_a82320ff8df9ec6e5762da04020e18d26}\index{\_baseClone.js@{\_baseClone.js}!symbolTag@{symbolTag}}
+\index{symbolTag@{symbolTag}!\_baseClone.js@{\_baseClone.js}}
+\doxysubsubsection{\texorpdfstring{symbolTag}{symbolTag}}
+{\footnotesize\ttfamily \label{__base_clone_8js_a82320ff8df9ec6e5762da04020e18d26} 
+var symbol\+Tag = \textquotesingle{}\mbox{[}\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}} \mbox{\hyperlink{__base_get_tag_8js_a9223501a4f1d046befc3fb8f0bf5c1e4}{Symbol}}\mbox{]}\textquotesingle{}}
+
+\Hypertarget{__base_clone_8js_a5ebffa1f6f7cd27ca99e0b38acae897f}\index{\_baseClone.js@{\_baseClone.js}!uint16Tag@{uint16Tag}}
+\index{uint16Tag@{uint16Tag}!\_baseClone.js@{\_baseClone.js}}
+\doxysubsubsection{\texorpdfstring{uint16Tag}{uint16Tag}}
+{\footnotesize\ttfamily \label{__base_clone_8js_a5ebffa1f6f7cd27ca99e0b38acae897f} 
+var uint16\+Tag = \textquotesingle{}\mbox{[}\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}} Uint16\+Array\mbox{]}\textquotesingle{}}
+
+\Hypertarget{__base_clone_8js_a423c3b7bd6d1b21ec0ce47bcef2584e5}\index{\_baseClone.js@{\_baseClone.js}!uint32Tag@{uint32Tag}}
+\index{uint32Tag@{uint32Tag}!\_baseClone.js@{\_baseClone.js}}
+\doxysubsubsection{\texorpdfstring{uint32Tag}{uint32Tag}}
+{\footnotesize\ttfamily \label{__base_clone_8js_a423c3b7bd6d1b21ec0ce47bcef2584e5} 
+var uint32\+Tag = \textquotesingle{}\mbox{[}\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}} Uint32\+Array\mbox{]}\textquotesingle{}}
+
+\Hypertarget{__base_clone_8js_a7398d55b652ddcb4f2579bbeff44b26d}\index{\_baseClone.js@{\_baseClone.js}!uint8ClampedTag@{uint8ClampedTag}}
+\index{uint8ClampedTag@{uint8ClampedTag}!\_baseClone.js@{\_baseClone.js}}
+\doxysubsubsection{\texorpdfstring{uint8ClampedTag}{uint8ClampedTag}}
+{\footnotesize\ttfamily \label{__base_clone_8js_a7398d55b652ddcb4f2579bbeff44b26d} 
+var uint8\+Clamped\+Tag = \textquotesingle{}\mbox{[}\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}} Uint8\+Clamped\+Array\mbox{]}\textquotesingle{}}
+
+\Hypertarget{__base_clone_8js_a0d2d41d51abb655be60348c5e6323cd2}\index{\_baseClone.js@{\_baseClone.js}!uint8Tag@{uint8Tag}}
+\index{uint8Tag@{uint8Tag}!\_baseClone.js@{\_baseClone.js}}
+\doxysubsubsection{\texorpdfstring{uint8Tag}{uint8Tag}}
+{\footnotesize\ttfamily \label{__base_clone_8js_a0d2d41d51abb655be60348c5e6323cd2} 
+var uint8\+Tag = \textquotesingle{}\mbox{[}\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}} \mbox{\hyperlink{__clone_array_buffer_8js_a23efaf497399fa716c3e05b817cb7d0c}{Uint8\+Array}}\mbox{]}\textquotesingle{}}
+
+\Hypertarget{__base_clone_8js_ab758fb7a72a3ea2e583dcfaf87a0422b}\index{\_baseClone.js@{\_baseClone.js}!weakMapTag@{weakMapTag}}
+\index{weakMapTag@{weakMapTag}!\_baseClone.js@{\_baseClone.js}}
+\doxysubsubsection{\texorpdfstring{weakMapTag}{weakMapTag}}
+{\footnotesize\ttfamily \label{__base_clone_8js_ab758fb7a72a3ea2e583dcfaf87a0422b} 
+var weak\+Map\+Tag = \textquotesingle{}\mbox{[}\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}} \mbox{\hyperlink{__get_tag_8js_a7a0af2b1504d35a612ef29c54dcdef19}{Weak\+Map}}\mbox{]}\textquotesingle{}}
+

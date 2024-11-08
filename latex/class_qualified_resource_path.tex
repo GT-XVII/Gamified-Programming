@@ -1,0 +1,291 @@
+\doxysection{Qualified\+Resource\+Path Class Reference}
+\hypertarget{class_qualified_resource_path}{}\label{class_qualified_resource_path}\index{QualifiedResourcePath@{QualifiedResourcePath}}
+
+
+Inheritance diagram for Qualified\+Resource\+Path\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_qualified_resource_path__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Qualified\+Resource\+Path\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_qualified_resource_path__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_path_a6f5487fe6e89bed96d26c96d0ed4913e}{constructor}} (path\+Or\+String, piece\+Num)
+\item 
+\mbox{\hyperlink{class_path_a85756e6ba3a49168250f542147224e92}{to\+String}} ()
+\item 
+\mbox{\hyperlink{class_path_a85756e6ba3a49168250f542147224e92}{to\+String}} ()
+\item 
+\mbox{\hyperlink{class_path_a85756e6ba3a49168250f542147224e92}{to\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_qualified_resource_path_a80d9c314d3386f18e0b83164545522f8}{constructor}} (project\+Id, database\+Id,...segments)
+\item 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} \mbox{\hyperlink{class_qualified_resource_path_acc6268bc6322e90ae03727e3cee167cb}{relative\+Name}} ()
+\item 
+\mbox{\hyperlink{class_qualified_resource_path_a675bf78244cead718aac0e74915e11af}{append}} (relative\+Path)
+\item 
+\mbox{\hyperlink{class_qualified_resource_path_a6996fb0909ffc618c4e327fbd9abb8b6}{parent}} ()
+\item 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} \mbox{\hyperlink{class_qualified_resource_path_a4fe159210ba6ce2219e62d8532d7317e}{formatted\+Name}} ()
+\item 
+\mbox{\hyperlink{class_qualified_resource_path_a65589481d8db17c3ecd5c5113b99fde5}{construct}} (segments)
+\item 
+\mbox{\hyperlink{class_qualified_resource_path_aae9fe42029ccac79c75aac5e3ee4bda3}{to\+Qualified\+Resource\+Path}} ()
+\item 
+\mbox{\hyperlink{class_qualified_resource_path_ab384c4388dd8f50217fda5c6e0b094b4}{compare\+To}} (other)
+\item 
+\mbox{\hyperlink{class_qualified_resource_path_a530f5bbdc878713a4f13a66516c0ccd2}{to\+Proto}} ()
+\item 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} \mbox{\hyperlink{class_resource_path_a1a06bbce0d2ce462478f537b5feee703}{is\+Document}} ()
+\item 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} \mbox{\hyperlink{class_resource_path_aa8f117c696a16810a4ad10355c0d37c9}{is\+Collection}} ()
+\item 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} \mbox{\hyperlink{class_resource_path_aee873bbb6d9c9c6af9e4a5005247b02f}{id}} ()
+\item 
+\mbox{\hyperlink{class_resource_path_a0e52f6935761d6a8179c6a074c3a20ac}{split}} (relative\+Path)
+\item 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} \mbox{\hyperlink{class_path_aa052e342ee5d8d2b4e5946c0c1e0616d}{size}} ()
+\item 
+\mbox{\hyperlink{class_path_af78fc0ff77745a224b9515006789929b}{is\+Prefix\+Of}} (other)
+\item 
+\mbox{\hyperlink{class_path_a751de3fffb721f398ece922c9231cfaf}{to\+Array}} ()
+\item 
+\mbox{\hyperlink{class_path_ad4b5bb6a77ef3ca7f1cd8649ac3b9883}{pop\+Last}} ()
+\item 
+\mbox{\hyperlink{class_path_a3d0023fabd2ea7963388d59697641575}{is\+Equal}} (other)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_qualified_resource_path_a6ddc54430b5d3fe29479e3bf91bc63fb}{from\+Slash\+Separated\+String}} (absolute\+Path)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_a}{A} slash-\/separated path that includes a project and database ID for referring to resources in any \doxylink{class_firestore}{Firestore} project. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_qualified_resource_path_a675bf78244cead718aac0e74915e11af}\index{QualifiedResourcePath@{QualifiedResourcePath}!append@{append}}
+\index{append@{append}!QualifiedResourcePath@{QualifiedResourcePath}}
+\doxysubsubsection{\texorpdfstring{append()}{append()}}
+{\footnotesize\ttfamily \label{class_qualified_resource_path_a675bf78244cead718aac0e74915e11af} 
+Qualified\+Resource\+Path\+::append (\begin{DoxyParamCaption}\item[{}]{relative\+Path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Create a child path beneath the current level. \Hypertarget{class_qualified_resource_path_ab384c4388dd8f50217fda5c6e0b094b4}\index{QualifiedResourcePath@{QualifiedResourcePath}!compareTo@{compareTo}}
+\index{compareTo@{compareTo}!QualifiedResourcePath@{QualifiedResourcePath}}
+\doxysubsubsection{\texorpdfstring{compareTo()}{compareTo()}}
+{\footnotesize\ttfamily \label{class_qualified_resource_path_ab384c4388dd8f50217fda5c6e0b094b4} 
+Qualified\+Resource\+Path\+::compare\+To (\begin{DoxyParamCaption}\item[{}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Compare the current path against another \doxylink{class_resource_path}{Resource\+Path} object. \Hypertarget{class_qualified_resource_path_a65589481d8db17c3ecd5c5113b99fde5}\index{QualifiedResourcePath@{QualifiedResourcePath}!construct@{construct}}
+\index{construct@{construct}!QualifiedResourcePath@{QualifiedResourcePath}}
+\doxysubsubsection{\texorpdfstring{construct()}{construct()}}
+{\footnotesize\ttfamily \label{class_qualified_resource_path_a65589481d8db17c3ecd5c5113b99fde5} 
+Qualified\+Resource\+Path\+::construct (\begin{DoxyParamCaption}\item[{}]{segments}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Constructs a new instance of \doxylink{class_resource_path}{Resource\+Path}. We need this instead of using the normal constructor because polymorphic \textquotesingle{}this\textquotesingle{} doesn\textquotesingle{}t work on static methods. 
+
+References \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2path_8js_afd0bb5cbf69ebfd101296cc9a8f11cfb}{Qualified\+Resource\+Path}}.
+
+\Hypertarget{class_path_a6f5487fe6e89bed96d26c96d0ed4913e}\index{QualifiedResourcePath@{QualifiedResourcePath}!constructor@{constructor}}
+\index{constructor@{constructor}!QualifiedResourcePath@{QualifiedResourcePath}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_path_a6f5487fe6e89bed96d26c96d0ed4913e} 
+Path\+::constructor (\begin{DoxyParamCaption}\item[{}]{path\+Or\+String}{, }\item[{}]{piece\+Num}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em path\+Or\+String} & -\/ \doxylink{class_path}{Path} string to parse, or another path, or the raw tokens array \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{prime_8worker_8min_8js_a9d5f68e7deda011db9f133394a1af272}{copy\+To}}, \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}, and \mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a7fdcf4c82c9946bf2b0b80829a7ab230}{length}}.
+
+\Hypertarget{class_qualified_resource_path_a80d9c314d3386f18e0b83164545522f8}\index{QualifiedResourcePath@{QualifiedResourcePath}!constructor@{constructor}}
+\index{constructor@{constructor}!QualifiedResourcePath@{QualifiedResourcePath}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_qualified_resource_path_a80d9c314d3386f18e0b83164545522f8} 
+Qualified\+Resource\+Path\+::constructor (\begin{DoxyParamCaption}\item[{}]{project\+Id}{, }\item[{}]{database\+Id}{, }\item[{}]{...}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Constructs a \doxylink{class_firestore}{Firestore} Resource \doxylink{class_path}{Path}. \Hypertarget{class_qualified_resource_path_a4fe159210ba6ce2219e62d8532d7317e}\index{QualifiedResourcePath@{QualifiedResourcePath}!formattedName@{formattedName}}
+\index{formattedName@{formattedName}!QualifiedResourcePath@{QualifiedResourcePath}}
+\doxysubsubsection{\texorpdfstring{formattedName()}{formattedName()}}
+{\footnotesize\ttfamily \label{class_qualified_resource_path_a4fe159210ba6ce2219e62d8532d7317e} 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} Qualified\+Resource\+Path\+::formatted\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+String representation of a \doxylink{class_resource_path}{Resource\+Path} as expected by the API. Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{class_qualified_resource_path_a4fe159210ba6ce2219e62d8532d7317e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_qualified_resource_path_a6ddc54430b5d3fe29479e3bf91bc63fb}\index{QualifiedResourcePath@{QualifiedResourcePath}!fromSlashSeparatedString@{fromSlashSeparatedString}}
+\index{fromSlashSeparatedString@{fromSlashSeparatedString}!QualifiedResourcePath@{QualifiedResourcePath}}
+\doxysubsubsection{\texorpdfstring{fromSlashSeparatedString()}{fromSlashSeparatedString()}}
+{\footnotesize\ttfamily \label{class_qualified_resource_path_a6ddc54430b5d3fe29479e3bf91bc63fb} 
+static Qualified\+Resource\+Path\+::from\+Slash\+Separated\+String (\begin{DoxyParamCaption}\item[{}]{absolute\+Path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+Creates a resource path from an absolute \doxylink{class_firestore}{Firestore} path. 
+
+References \mbox{\hyperlink{_0dfirebase_2database-compat_2dist_2index_8js_a7d2d4a94c06389308b8c8b273f66f009}{database}}, \mbox{\hyperlink{express_2lib_2request_8js_a5e3afd97276cc403924d1a449a83ea84}{is}}, \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}, \mbox{\hyperlink{long_2index_8js_ad7dc44f0ebdb746f4a5b0612ae9315cb}{not}}, \mbox{\hyperlink{cjs_2src_2bucket_8js_a1fdc7709faf62dce60620fb3f9d3453c}{path}}, \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_a9f9936437366b60c5e081a744e4fb397}{project}}, \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2path_8js_afd0bb5cbf69ebfd101296cc9a8f11cfb}{Qualified\+Resource\+Path}}, and \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2path_8js_a2f31c992b4b7b4994903f76b29313c3a}{RESOURCE\+\_\+\+PATH\+\_\+\+RE}}.
+
+\Hypertarget{class_resource_path_aee873bbb6d9c9c6af9e4a5005247b02f}\index{QualifiedResourcePath@{QualifiedResourcePath}!id@{id}}
+\index{id@{id}!QualifiedResourcePath@{QualifiedResourcePath}}
+\doxysubsubsection{\texorpdfstring{id()}{id()}}
+{\footnotesize\ttfamily \label{class_resource_path_aee873bbb6d9c9c6af9e4a5005247b02f} 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} Resource\+Path\+::id (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}, {\ttfamily [inherited]}}
+
+The last component of the path. \Hypertarget{class_resource_path_aa8f117c696a16810a4ad10355c0d37c9}\index{QualifiedResourcePath@{QualifiedResourcePath}!isCollection@{isCollection}}
+\index{isCollection@{isCollection}!QualifiedResourcePath@{QualifiedResourcePath}}
+\doxysubsubsection{\texorpdfstring{isCollection()}{isCollection()}}
+{\footnotesize\ttfamily \label{class_resource_path_aa8f117c696a16810a4ad10355c0d37c9} 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} Resource\+Path\+::is\+Collection (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}, {\ttfamily [inherited]}}
+
+Indicates whether this path points to a collection. \Hypertarget{class_resource_path_a1a06bbce0d2ce462478f537b5feee703}\index{QualifiedResourcePath@{QualifiedResourcePath}!isDocument@{isDocument}}
+\index{isDocument@{isDocument}!QualifiedResourcePath@{QualifiedResourcePath}}
+\doxysubsubsection{\texorpdfstring{isDocument()}{isDocument()}}
+{\footnotesize\ttfamily \label{class_resource_path_a1a06bbce0d2ce462478f537b5feee703} 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} Resource\+Path\+::is\+Document (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}, {\ttfamily [inherited]}}
+
+Indicates whether this path points to a document. \Hypertarget{class_path_a3d0023fabd2ea7963388d59697641575}\index{QualifiedResourcePath@{QualifiedResourcePath}!isEqual@{isEqual}}
+\index{isEqual@{isEqual}!QualifiedResourcePath@{QualifiedResourcePath}}
+\doxysubsubsection{\texorpdfstring{isEqual()}{isEqual()}}
+{\footnotesize\ttfamily \label{class_path_a3d0023fabd2ea7963388d59697641575} 
+Path\+::is\+Equal (\begin{DoxyParamCaption}\item[{}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}, {\ttfamily [inherited]}}
+
+Returns true if this {\ttfamily \doxylink{class_path}{Path}} is equal to the provided value. 
+
+References \mbox{\hyperlink{prime_8worker_8min_8js_af7854cc09ac68328a75594971a975649}{compare\+To}}.
+
+\Hypertarget{class_path_af78fc0ff77745a224b9515006789929b}\index{QualifiedResourcePath@{QualifiedResourcePath}!isPrefixOf@{isPrefixOf}}
+\index{isPrefixOf@{isPrefixOf}!QualifiedResourcePath@{QualifiedResourcePath}}
+\doxysubsubsection{\texorpdfstring{isPrefixOf()}{isPrefixOf()}}
+{\footnotesize\ttfamily \label{class_path_af78fc0ff77745a224b9515006789929b} 
+Path\+::is\+Prefix\+Of (\begin{DoxyParamCaption}\item[{}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}, {\ttfamily [inherited]}}
+
+Checks whether the current path is a prefix of the specified path. 
+
+References \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}.
+
+\Hypertarget{class_qualified_resource_path_a6996fb0909ffc618c4e327fbd9abb8b6}\index{QualifiedResourcePath@{QualifiedResourcePath}!parent@{parent}}
+\index{parent@{parent}!QualifiedResourcePath@{QualifiedResourcePath}}
+\doxysubsubsection{\texorpdfstring{parent()}{parent()}}
+{\footnotesize\ttfamily \label{class_qualified_resource_path_a6996fb0909ffc618c4e327fbd9abb8b6} 
+Qualified\+Resource\+Path\+::parent (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Create a child path beneath the current level. \Hypertarget{class_path_ad4b5bb6a77ef3ca7f1cd8649ac3b9883}\index{QualifiedResourcePath@{QualifiedResourcePath}!popLast@{popLast}}
+\index{popLast@{popLast}!QualifiedResourcePath@{QualifiedResourcePath}}
+\doxysubsubsection{\texorpdfstring{popLast()}{popLast()}}
+{\footnotesize\ttfamily \label{class_path_ad4b5bb6a77ef3ca7f1cd8649ac3b9883} 
+Path\+::pop\+Last (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}, {\ttfamily [inherited]}}
+
+Pops the last segment from this {\ttfamily \doxylink{class_path}{Path}} and returns a newly constructed {\ttfamily \doxylink{class_path}{Path}}. \Hypertarget{class_qualified_resource_path_acc6268bc6322e90ae03727e3cee167cb}\index{QualifiedResourcePath@{QualifiedResourcePath}!relativeName@{relativeName}}
+\index{relativeName@{relativeName}!QualifiedResourcePath@{QualifiedResourcePath}}
+\doxysubsubsection{\texorpdfstring{relativeName()}{relativeName()}}
+{\footnotesize\ttfamily \label{class_qualified_resource_path_acc6268bc6322e90ae03727e3cee167cb} 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} Qualified\+Resource\+Path\+::relative\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+String representation of the path relative to the database root. \Hypertarget{class_path_aa052e342ee5d8d2b4e5946c0c1e0616d}\index{QualifiedResourcePath@{QualifiedResourcePath}!size@{size}}
+\index{size@{size}!QualifiedResourcePath@{QualifiedResourcePath}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily \label{class_path_aa052e342ee5d8d2b4e5946c0c1e0616d} 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} Path\+::size (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}, {\ttfamily [inherited]}}
+
+Returns the number of segments of this field path. \Hypertarget{class_resource_path_a0e52f6935761d6a8179c6a074c3a20ac}\index{QualifiedResourcePath@{QualifiedResourcePath}!split@{split}}
+\index{split@{split}!QualifiedResourcePath@{QualifiedResourcePath}}
+\doxysubsubsection{\texorpdfstring{split()}{split()}}
+{\footnotesize\ttfamily \label{class_resource_path_a0e52f6935761d6a8179c6a074c3a20ac} 
+Resource\+Path\+::split (\begin{DoxyParamCaption}\item[{}]{relative\+Path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}, {\ttfamily [inherited]}}
+
+Splits a string into path segments, using slashes as separators. \Hypertarget{class_path_a751de3fffb721f398ece922c9231cfaf}\index{QualifiedResourcePath@{QualifiedResourcePath}!toArray@{toArray}}
+\index{toArray@{toArray}!QualifiedResourcePath@{QualifiedResourcePath}}
+\doxysubsubsection{\texorpdfstring{toArray()}{toArray()}}
+{\footnotesize\ttfamily \label{class_path_a751de3fffb721f398ece922c9231cfaf} 
+Path\+::to\+Array (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}, {\ttfamily [inherited]}}
+
+Returns a copy of the underlying segments. \Hypertarget{class_qualified_resource_path_a530f5bbdc878713a4f13a66516c0ccd2}\index{QualifiedResourcePath@{QualifiedResourcePath}!toProto@{toProto}}
+\index{toProto@{toProto}!QualifiedResourcePath@{QualifiedResourcePath}}
+\doxysubsubsection{\texorpdfstring{toProto()}{toProto()}}
+{\footnotesize\ttfamily \label{class_qualified_resource_path_a530f5bbdc878713a4f13a66516c0ccd2} 
+Qualified\+Resource\+Path\+::to\+Proto (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Converts this \doxylink{class_resource_path}{Resource\+Path} to the \doxylink{class_firestore}{Firestore} Proto representation. 
+
+References \mbox{\hyperlink{class_qualified_resource_path_a4fe159210ba6ce2219e62d8532d7317e}{formatted\+Name()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{class_qualified_resource_path_a530f5bbdc878713a4f13a66516c0ccd2_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_qualified_resource_path_aae9fe42029ccac79c75aac5e3ee4bda3}\index{QualifiedResourcePath@{QualifiedResourcePath}!toQualifiedResourcePath@{toQualifiedResourcePath}}
+\index{toQualifiedResourcePath@{toQualifiedResourcePath}!QualifiedResourcePath@{QualifiedResourcePath}}
+\doxysubsubsection{\texorpdfstring{toQualifiedResourcePath()}{toQualifiedResourcePath()}}
+{\footnotesize\ttfamily \label{class_qualified_resource_path_aae9fe42029ccac79c75aac5e3ee4bda3} 
+Qualified\+Resource\+Path\+::to\+Qualified\+Resource\+Path (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Convenience method to match the \doxylink{class_resource_path}{Resource\+Path} API. This method always returns the current instance. \Hypertarget{class_path_a85756e6ba3a49168250f542147224e92}\index{QualifiedResourcePath@{QualifiedResourcePath}!toString@{toString}}
+\index{toString@{toString}!QualifiedResourcePath@{QualifiedResourcePath}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_path_a85756e6ba3a49168250f542147224e92} 
+Path\+::to\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+References \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{class_path_a85756e6ba3a49168250f542147224e92_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_path_a85756e6ba3a49168250f542147224e92}\index{QualifiedResourcePath@{QualifiedResourcePath}!toString@{toString}}
+\index{toString@{toString}!QualifiedResourcePath@{QualifiedResourcePath}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_path_a85756e6ba3a49168250f542147224e92} 
+Path\+::to\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+References \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}.
+
+\Hypertarget{class_path_a85756e6ba3a49168250f542147224e92}\index{QualifiedResourcePath@{QualifiedResourcePath}!toString@{toString}}
+\index{toString@{toString}!QualifiedResourcePath@{QualifiedResourcePath}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_path_a85756e6ba3a49168250f542147224e92} 
+Path\+::to\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+References \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/@google-\/cloud/firestore/build/src/\mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2path_8js}{path.\+js}}\end{DoxyCompactItemize}

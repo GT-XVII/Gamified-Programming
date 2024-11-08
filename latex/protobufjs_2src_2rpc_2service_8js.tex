@@ -1,0 +1,126 @@
+\doxysection{backend/node\+\_\+modules/protobufjs/src/rpc/service.js File Reference}
+\hypertarget{protobufjs_2src_2rpc_2service_8js}{}\label{protobufjs_2src_2rpc_2service_8js}\index{backend/node\_modules/protobufjs/src/rpc/service.js@{backend/node\_modules/protobufjs/src/rpc/service.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{protobufjs_2src_2rpc_2service_8js_a29f691efde4d6891f578bb269d1f52c8}{Service}} (rpc\+Impl, request\+Delimited, response\+Delimited)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{protobufjs_2src_2rpc_2service_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{protobufjs_2src_2rpc_2service_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} = \mbox{\hyperlink{class_service}{Service}}
+\item 
+var \mbox{\hyperlink{protobufjs_2src_2rpc_2service_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../util/minimal"{})
+\item 
+\mbox{\hyperlink{class_service}{Service}} \mbox{\hyperlink{protobufjs_2src_2rpc_2service_8js_ad5f2d32b4e072a2e1026171f6bbd6ec3}{prototype}} = \mbox{\hyperlink{combined__stream_8js_a1366166f7d9d88068055585de50f1037}{Object.\+create}}(util.\+Event\+Emitter.\+prototype)).\mbox{\hyperlink{_json_web_token_error_8js_ae0d7523761ce2ef80fa2f1afff43bbf3}{constructor}} = \mbox{\hyperlink{class_service}{Service}}
+\item 
+\mbox{\hyperlink{class_service}{Service}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{protobufjs_2src_2rpc_2service_8js_ade61ab71dbf77e82f82b21cf06cbeb6b}{rpc\+Call}}
+\item 
+\mbox{\hyperlink{class_service}{Service}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{protobufjs_2src_2rpc_2service_8js_ae1fc9eb69bf99fe73cd1c261f531d4d0}{end}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{protobufjs_2src_2rpc_2service_8js_a29f691efde4d6891f578bb269d1f52c8}\index{service.js@{service.js}!Service@{Service}}
+\index{Service@{Service}!service.js@{service.js}}
+\doxysubsubsection{\texorpdfstring{Service()}{Service()}}
+{\footnotesize\ttfamily \label{protobufjs_2src_2rpc_2service_8js_a29f691efde4d6891f578bb269d1f52c8} 
+function Service (\begin{DoxyParamCaption}\item[{}]{rpc\+Impl}{, }\item[{}]{request\+Delimited}{, }\item[{}]{response\+Delimited}{}\end{DoxyParamCaption})}
+
+Constructs a new RPC service instance. @classdesc An RPC service as returned by {\ttfamily \doxylink{}{Service\#create}}. @exports rpc.\+Service
+
+@constructor 
+\begin{DoxyParams}{Parameters}
+{\em \{\+RPCImpl\}} & rpc\+Impl RPC implementation \\
+\hline
+{\em \{boolean\}} & \mbox{[}request\+Delimited=false\mbox{]} Whether requests are length-\/delimited \\
+\hline
+{\em \{boolean\}} & \mbox{[}response\+Delimited=false\mbox{]} Whether responses are length-\/delimited \\
+\hline
+\end{DoxyParams}
+RPC implementation. Becomes {\ttfamily null} once the service is ended. @type \{RPCImpl\texorpdfstring{$\vert$}{|}null\}
+
+Whether requests are length-\/delimited. @type \{boolean\}
+
+Whether responses are length-\/delimited. @type \{boolean\}
+
+References \mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{protobufjs_2src_2rpc_2service_8js_ae1fc9eb69bf99fe73cd1c261f531d4d0}\index{service.js@{service.js}!end@{end}}
+\index{end@{end}!service.js@{service.js}}
+\doxysubsubsection{\texorpdfstring{end}{end}}
+{\footnotesize\ttfamily \label{protobufjs_2src_2rpc_2service_8js_ae1fc9eb69bf99fe73cd1c261f531d4d0} 
+\mbox{\hyperlink{class_service}{Service}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} end}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{protobufjs_2src_2rpc_2service_8js_ae1fc9eb69bf99fe73cd1c261f531d4d0}{end}}(endedByRPC)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (this.rpcImpl)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!endedByRPC)\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ this.rpcImpl(\textcolor{keyword}{null},\ \textcolor{keyword}{null},\ \textcolor{keyword}{null});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ this.rpcImpl\ =\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ this.\mbox{\hyperlink{_0dprotobufjs_2eventemitter_2index_8js_a16439605b9cd7bd34fdbf935bef49de6}{emit}}(\textcolor{stringliteral}{"{}end"{}}).\mbox{\hyperlink{class_event_emitter_a10f141d79d08f1987d98f707c962fd2c}{off}}();}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{this};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Ends this service and emits the {\ttfamily end} event. 
+\begin{DoxyParams}{Parameters}
+{\em \{boolean\}} & \mbox{[}ended\+By\+RPC=false\mbox{]} Whether the service has been ended by the RPC implementation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{rpc.\+Service\} {\ttfamily this} 
+\end{DoxyReturn}
+\Hypertarget{protobufjs_2src_2rpc_2service_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\index{service.js@{service.js}!exports@{exports}}
+\index{exports@{exports}!service.js@{service.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \label{protobufjs_2src_2rpc_2service_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports = \mbox{\hyperlink{class_service}{Service}}}
+
+\Hypertarget{protobufjs_2src_2rpc_2service_8js_ad5f2d32b4e072a2e1026171f6bbd6ec3}\index{service.js@{service.js}!prototype@{prototype}}
+\index{prototype@{prototype}!service.js@{service.js}}
+\doxysubsubsection{\texorpdfstring{prototype}{prototype}}
+{\footnotesize\ttfamily \label{protobufjs_2src_2rpc_2service_8js_ad5f2d32b4e072a2e1026171f6bbd6ec3} 
+\mbox{\hyperlink{class_service}{Service}} prototype = \mbox{\hyperlink{combined__stream_8js_a1366166f7d9d88068055585de50f1037}{Object.\+create}}(util.\+Event\+Emitter.\+prototype)).\mbox{\hyperlink{_json_web_token_error_8js_ae0d7523761ce2ef80fa2f1afff43bbf3}{constructor}} = \mbox{\hyperlink{class_service}{Service}}}
+
+\Hypertarget{protobufjs_2src_2rpc_2service_8js_ade61ab71dbf77e82f82b21cf06cbeb6b}\index{service.js@{service.js}!rpcCall@{rpcCall}}
+\index{rpcCall@{rpcCall}!service.js@{service.js}}
+\doxysubsubsection{\texorpdfstring{rpcCall}{rpcCall}}
+{\footnotesize\ttfamily \label{protobufjs_2src_2rpc_2service_8js_ade61ab71dbf77e82f82b21cf06cbeb6b} 
+\mbox{\hyperlink{class_service}{Service}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} rpc\+Call}
+
+Calls a service method through {\ttfamily \doxylink{}{rpc.\+Service\#rpc\+Impl\texorpdfstring{$\vert$}{|}rpc\+Impl}}. 
+\begin{DoxyParams}{Parameters}
+{\em \{\+Method\texorpdfstring{$\vert$}{|}rpc.\+Service\+Method$<$\+TReq,TRes$>$\}} & method Reflected or static method \\
+\hline
+{\em \{\+Constructor$<$\+TReq$>$\}} & request\+Ctor \doxylink{class_request}{Request} constructor \\
+\hline
+{\em \{\+Constructor$<$\+TRes$>$\}} & response\+Ctor \doxylink{class_response}{Response} constructor \\
+\hline
+{\em \{\+TReq\texorpdfstring{$\vert$}{|}\+Properties$<$\+TReq$>$\}} & request \doxylink{class_request}{Request} message or plain object \\
+\hline
+{\em \{rpc.\+Service\+Method\+Callback$<$\+TRes$>$\}} & callback \doxylink{class_service}{Service} callback \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{undefined\} @template TReq extends Message$<$\+TReq$>$ @template TRes extends Message$<$\+TRes$>$ 
+\end{DoxyReturn}
+\Hypertarget{protobufjs_2src_2rpc_2service_8js_ae2475e10618961c050dcba04e8c42331}\index{service.js@{service.js}!strict@{strict}}
+\index{strict@{strict}!service.js@{service.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{protobufjs_2src_2rpc_2service_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+
+\Hypertarget{protobufjs_2src_2rpc_2service_8js_a8f5b2e09d5197e9d28f6032dff542d44}\index{service.js@{service.js}!util@{util}}
+\index{util@{util}!service.js@{service.js}}
+\doxysubsubsection{\texorpdfstring{util}{util}}
+{\footnotesize\ttfamily \label{protobufjs_2src_2rpc_2service_8js_a8f5b2e09d5197e9d28f6032dff542d44} 
+var util = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../util/minimal"{})}
+

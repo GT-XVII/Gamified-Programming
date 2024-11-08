@@ -1,0 +1,563 @@
+\doxysection{Command\+Instance Class Reference}
+\hypertarget{class_command_instance}{}\label{class_command_instance}\index{CommandInstance@{CommandInstance}}
+
+
+Collaboration diagram for Command\+Instance\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{class_command_instance__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_command_instance_a70aa98fb588132196942cec20742dacb}{constructor}} (\mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2uuid_2dist_2uuid-bin_8js_a5d483393835b7f0091e60cf967ded21e}{usage}}, \mbox{\hyperlink{validation_8js_a216f390033b6c85f657c2e0cff85f29b}{validation}}, global\+Middleware, \mbox{\hyperlink{y18n_2build_2lib_2index_8js_a90a38689fac05010e729986454636436}{shim}})
+\item 
+\mbox{\hyperlink{class_command_instance_ab60baf8b3c1a34e47c3f996f5821366b}{add\+Directory}} (dir, \mbox{\hyperlink{agent-base_2dist_2helpers_8js_a960c3c3c7bce40c2aa54b029b3dbb9c8}{req}}, caller\+File, opts)
+\item 
+\mbox{\hyperlink{class_command_instance_aed24e36eaa75bb884f304a52979c8aa5}{add\+Handler}} (cmd, description, builder, handler, command\+Middleware, deprecated)
+\item 
+\mbox{\hyperlink{class_command_instance_a8b477f4ab35b5e19e372e3e65e0dfcff}{get\+Command\+Handlers}} ()
+\item 
+\mbox{\hyperlink{class_command_instance_ae67bfadedea0c90c6426641fecd4b0c7}{get\+Commands}} ()
+\item 
+\mbox{\hyperlink{class_command_instance_acd007d1cdf1708c1fda25342b08e775e}{has\+Default\+Command}} ()
+\item 
+\mbox{\hyperlink{class_command_instance_a0d72efb342f1af0ca9b15f3930e9f81f}{run\+Command}} (\mbox{\hyperlink{yargs_2build_2lib_2command_8js_a375077f2439e51b3d30f204271589efb}{command}}, \mbox{\hyperlink{proto-loader-gen-types_8js_ad733adac447ee26e6037fb4cb9604970}{yargs}}, parsed, command\+Index, help\+Only, help\+Or\+Version\+Set)
+\item 
+\mbox{\hyperlink{class_command_instance_a1065e46e0b10182429c844153c604813}{apply\+Builder\+Update\+Usage\+And\+Parse}} (is\+Default\+Command, command\+Handler, \mbox{\hyperlink{proto-loader-gen-types_8js_ad733adac447ee26e6037fb4cb9604970}{yargs}}, aliases, parent\+Commands, command\+Index, help\+Only, help\+Or\+Version\+Set)
+\item 
+\mbox{\hyperlink{class_command_instance_a86e195892b9693c0de3676ac5e188046}{parse\+And\+Update\+Usage}} (is\+Default\+Command, command\+Handler, inner\+Yargs, parent\+Commands, command\+Index, help\+Only)
+\item 
+\mbox{\hyperlink{class_command_instance_aa6499dc620d2f88e31ded4474d420ece}{should\+Update\+Usage}} (\mbox{\hyperlink{proto-loader-gen-types_8js_ad733adac447ee26e6037fb4cb9604970}{yargs}})
+\item 
+\mbox{\hyperlink{class_command_instance_a126afb770bb6731de81e9d3870b9fdc4}{usage\+From\+Parent\+Commands\+Command\+Handler}} (parent\+Commands, command\+Handler)
+\item 
+\mbox{\hyperlink{class_command_instance_a8c7eb8f211020c46d83834d159e7fbcb}{handle\+Validation\+And\+Get\+Result}} (is\+Default\+Command, command\+Handler, inner\+Argv, current\+Context, aliases, \mbox{\hyperlink{proto-loader-gen-types_8js_ad733adac447ee26e6037fb4cb9604970}{yargs}}, middlewares, positional\+Map)
+\item 
+\mbox{\hyperlink{class_command_instance_a06b0360e69fa996075c392a3425de316}{apply\+Middleware\+And\+Get\+Result}} (is\+Default\+Command, command\+Handler, inner\+Argv, current\+Context, help\+Only, aliases, \mbox{\hyperlink{proto-loader-gen-types_8js_ad733adac447ee26e6037fb4cb9604970}{yargs}})
+\item 
+\mbox{\hyperlink{class_command_instance_aa1ebc8a8abf9a2d78bc1f7e3bbaf1c14}{populate\+Positionals}} (command\+Handler, argv, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}}, \mbox{\hyperlink{proto-loader-gen-types_8js_ad733adac447ee26e6037fb4cb9604970}{yargs}})
+\item 
+\mbox{\hyperlink{class_command_instance_af15fbbff906c8c9e23f01258cc04967a}{populate\+Positional}} (positional, argv, positional\+Map)
+\item 
+\mbox{\hyperlink{class_command_instance_a777f5c0ff501f269343fa4693071e0f4}{cmd\+To\+Parse\+Options}} (cmd\+String)
+\item 
+\mbox{\hyperlink{class_command_instance_a116ec96770913e35a406409c0b2167a4}{post\+Process\+Positionals}} (argv, positional\+Map, parse\+Options, \mbox{\hyperlink{proto-loader-gen-types_8js_ad733adac447ee26e6037fb4cb9604970}{yargs}})
+\item 
+\mbox{\hyperlink{class_command_instance_a7556ec1e0034b71bf7e61796b9bb725a}{is\+Defaulted}} (\mbox{\hyperlink{proto-loader-gen-types_8js_ad733adac447ee26e6037fb4cb9604970}{yargs}}, key)
+\item 
+\mbox{\hyperlink{class_command_instance_a8b400c33f9b198d377f5b819a24fce5f}{is\+In\+Configs}} (\mbox{\hyperlink{proto-loader-gen-types_8js_ad733adac447ee26e6037fb4cb9604970}{yargs}}, key)
+\item 
+\mbox{\hyperlink{class_command_instance_ae4abcaf0169758680acd57738e20425c}{run\+Default\+Builder\+On}} (\mbox{\hyperlink{proto-loader-gen-types_8js_ad733adac447ee26e6037fb4cb9604970}{yargs}})
+\item 
+\mbox{\hyperlink{class_command_instance_ad651837fcad61ff3c2c7f48588fa9ece}{module\+Name}} (\mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}})
+\item 
+\mbox{\hyperlink{class_command_instance_a5881f94e0212ef72d947b33d1a703dd2}{command\+From\+Filename}} (\mbox{\hyperlink{protobufjs_2src_2parse_8js_ad87dd7d0bb9bb745c8a20ef981fe2d32}{filename}})
+\item 
+\mbox{\hyperlink{class_command_instance_a77630f4d8d973bf65c66d6748c7ac51d}{extract\+Desc}} (\{ \mbox{\hyperlink{ratelimiter-test_8js_af12ca6bcba67b3d74f966e681edbbaa6}{describe}}, description, desc \})
+\item 
+\mbox{\hyperlink{class_command_instance_af402e545ce04fb38a0662aebf88eca7f}{freeze}} ()
+\item 
+\mbox{\hyperlink{class_command_instance_ad6d209ae0c3c958109851f4fa0761bba}{unfreeze}} ()
+\item 
+\mbox{\hyperlink{class_command_instance_a71dafe0115bea39cc3c220a20f6256b9}{reset}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_command_instance_ab60baf8b3c1a34e47c3f996f5821366b}\index{CommandInstance@{CommandInstance}!addDirectory@{addDirectory}}
+\index{addDirectory@{addDirectory}!CommandInstance@{CommandInstance}}
+\doxysubsubsection{\texorpdfstring{addDirectory()}{addDirectory()}}
+{\footnotesize\ttfamily \label{class_command_instance_ab60baf8b3c1a34e47c3f996f5821366b} 
+Command\+Instance\+::add\+Directory (\begin{DoxyParamCaption}\item[{}]{dir}{, }\item[{}]{req}{, }\item[{}]{caller\+File}{, }\item[{}]{opts}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{class_command_instance_aed24e36eaa75bb884f304a52979c8aa5}{add\+Handler()}}, \mbox{\hyperlink{src_2util_2minimal_8js_a325c4e317c38d8497130ebce7670be2f}{Array}}, \mbox{\hyperlink{protobufjs_2src_2parse_8js_ad87dd7d0bb9bb745c8a20ef981fe2d32}{filename}}, \mbox{\hyperlink{uuid_8min_8js_a400dc8109620963da8314d4bdfa14f83}{o}}, \mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}, \mbox{\hyperlink{agent-base_2dist_2helpers_8js_a960c3c3c7bce40c2aa54b029b3dbb9c8}{req}}, \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require()}}, and \mbox{\hyperlink{y18n_2build_2lib_2index_8js_a90a38689fac05010e729986454636436}{shim}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_command_instance_ab60baf8b3c1a34e47c3f996f5821366b_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_command_instance_aed24e36eaa75bb884f304a52979c8aa5}\index{CommandInstance@{CommandInstance}!addHandler@{addHandler}}
+\index{addHandler@{addHandler}!CommandInstance@{CommandInstance}}
+\doxysubsubsection{\texorpdfstring{addHandler()}{addHandler()}}
+{\footnotesize\ttfamily \label{class_command_instance_aed24e36eaa75bb884f304a52979c8aa5} 
+Command\+Instance\+::add\+Handler (\begin{DoxyParamCaption}\item[{}]{cmd}{, }\item[{}]{description}{, }\item[{}]{builder}{, }\item[{}]{handler}{, }\item[{}]{command\+Middleware}{, }\item[{}]{deprecated}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{class_command_instance_aed24e36eaa75bb884f304a52979c8aa5}{add\+Handler()}}, \mbox{\hyperlink{bin_2concurrently_8js_ab5020aa9816b6db29be6336a11ff3fcc}{alias()}}, \mbox{\hyperlink{src_2util_2minimal_8js_a325c4e317c38d8497130ebce7670be2f}{Array}}, \mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}, \mbox{\hyperlink{yargs_2build_2lib_2command_8js_a375077f2439e51b3d30f204271589efb}{command()}}, \mbox{\hyperlink{middleware_8js_a4167ea327a633433942fba147453e16d}{command\+Middleware\+Factory()}}, \mbox{\hyperlink{node_2cjs_2lib_2buffer__utils_8js_af776a17274b57c50f3e7b020e1fcd88e}{concat}}, \mbox{\hyperlink{yargs_2build_2lib_2command_8js_a60b1aeb4272ecb116057d7bae82a753c}{DEFAULT\+\_\+\+MARKER}}, \mbox{\hyperlink{class_command_instance_a77630f4d8d973bf65c66d6748c7ac51d}{extract\+Desc()}}, \mbox{\hyperlink{yargs_2build_2lib_2command_8js_a5711d769993f8ae78a6df4834e41beba}{is\+Command\+And\+Aliases()}}, \mbox{\hyperlink{yargs_2build_2lib_2command_8js_aa2fa63da9381f8065363dabcca80f722}{is\+Command\+Builder\+Definition()}}, \mbox{\hyperlink{yargs_2build_2lib_2command_8js_a7ca2ba0f9d1419b944a4557aa8981c55}{is\+Command\+Handler\+Definition()}}, \mbox{\hyperlink{class_command_instance_ad651837fcad61ff3c2c7f48588fa9ece}{module\+Name()}}, \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}, \mbox{\hyperlink{src_2concurrently_8js_a526c6f0222dd087a0e2e068a1abd702c}{parse\+Command()}}, and \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2uuid_2dist_2uuid-bin_8js_a5d483393835b7f0091e60cf967ded21e}{usage()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_command_instance_aed24e36eaa75bb884f304a52979c8aa5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_command_instance_aed24e36eaa75bb884f304a52979c8aa5_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_command_instance_a1065e46e0b10182429c844153c604813}\index{CommandInstance@{CommandInstance}!applyBuilderUpdateUsageAndParse@{applyBuilderUpdateUsageAndParse}}
+\index{applyBuilderUpdateUsageAndParse@{applyBuilderUpdateUsageAndParse}!CommandInstance@{CommandInstance}}
+\doxysubsubsection{\texorpdfstring{applyBuilderUpdateUsageAndParse()}{applyBuilderUpdateUsageAndParse()}}
+{\footnotesize\ttfamily \label{class_command_instance_a1065e46e0b10182429c844153c604813} 
+Command\+Instance\+::apply\+Builder\+Update\+Usage\+And\+Parse (\begin{DoxyParamCaption}\item[{}]{is\+Default\+Command}{, }\item[{}]{command\+Handler}{, }\item[{}]{yargs}{, }\item[{}]{aliases}{, }\item[{}]{parent\+Commands}{, }\item[{}]{command\+Index}{, }\item[{}]{help\+Only}{, }\item[{}]{help\+Or\+Version\+Set}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{yargs_2build_2lib_2command_8js_a98d3b7447314e693e929e282c0feb8e5}{is\+Command\+Builder\+Callback()}}, \mbox{\hyperlink{yargs_2build_2lib_2command_8js_a3b57d05ee88755d8314c9b3f9a975ec0}{is\+Command\+Builder\+Option\+Definitions()}}, \mbox{\hyperlink{cjs_2internal_2util_2is_promise_8js_a0f2c14124bf8d89eb799f9f4d472f431}{is\+Promise}}, \mbox{\hyperlink{yargs-factory_8js_a923d15366d847096f107ecadd5c0c627}{is\+Yargs\+Instance()}}, \mbox{\hyperlink{class_command_instance_a86e195892b9693c0de3676ac5e188046}{parse\+And\+Update\+Usage()}}, and \mbox{\hyperlink{proto-loader-gen-types_8js_ad733adac447ee26e6037fb4cb9604970}{yargs}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_command_instance_a1065e46e0b10182429c844153c604813_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_command_instance_a1065e46e0b10182429c844153c604813_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_command_instance_a06b0360e69fa996075c392a3425de316}\index{CommandInstance@{CommandInstance}!applyMiddlewareAndGetResult@{applyMiddlewareAndGetResult}}
+\index{applyMiddlewareAndGetResult@{applyMiddlewareAndGetResult}!CommandInstance@{CommandInstance}}
+\doxysubsubsection{\texorpdfstring{applyMiddlewareAndGetResult()}{applyMiddlewareAndGetResult()}}
+{\footnotesize\ttfamily \label{class_command_instance_a06b0360e69fa996075c392a3425de316} 
+Command\+Instance\+::apply\+Middleware\+And\+Get\+Result (\begin{DoxyParamCaption}\item[{}]{is\+Default\+Command}{, }\item[{}]{command\+Handler}{, }\item[{}]{inner\+Argv}{, }\item[{}]{current\+Context}{, }\item[{}]{help\+Only}{, }\item[{}]{aliases}{, }\item[{}]{yargs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{middleware_8js_a2846efcf79eeb05d954f5ecca1c4d1db}{apply\+Middleware()}}, \mbox{\hyperlink{class_command_instance_a8c7eb8f211020c46d83834d159e7fbcb}{handle\+Validation\+And\+Get\+Result()}}, \mbox{\hyperlink{cjs_2internal_2util_2is_promise_8js_a0f2c14124bf8d89eb799f9f4d472f431}{is\+Promise}}, \mbox{\hyperlink{class_command_instance_aa1ebc8a8abf9a2d78bc1f7e3bbaf1c14}{populate\+Positionals()}}, and \mbox{\hyperlink{proto-loader-gen-types_8js_ad733adac447ee26e6037fb4cb9604970}{yargs}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_command_instance_a06b0360e69fa996075c392a3425de316_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_command_instance_a06b0360e69fa996075c392a3425de316_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_command_instance_a777f5c0ff501f269343fa4693071e0f4}\index{CommandInstance@{CommandInstance}!cmdToParseOptions@{cmdToParseOptions}}
+\index{cmdToParseOptions@{cmdToParseOptions}!CommandInstance@{CommandInstance}}
+\doxysubsubsection{\texorpdfstring{cmdToParseOptions()}{cmdToParseOptions()}}
+{\footnotesize\ttfamily \label{class_command_instance_a777f5c0ff501f269343fa4693071e0f4} 
+Command\+Instance\+::cmd\+To\+Parse\+Options (\begin{DoxyParamCaption}\item[{}]{cmd\+String}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{bin_2concurrently_8js_ab5020aa9816b6db29be6336a11ff3fcc}{alias()}}, \mbox{\hyperlink{uuid_8min_8js_aeb337d295abaddb5ec3cb34cc2e2bbc9}{d}}, \mbox{\hyperlink{uuid_8min_8js_a400dc8109620963da8314d4bdfa14f83}{o}}, and \mbox{\hyperlink{src_2concurrently_8js_a526c6f0222dd087a0e2e068a1abd702c}{parse\+Command()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_command_instance_a777f5c0ff501f269343fa4693071e0f4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_command_instance_a777f5c0ff501f269343fa4693071e0f4_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_command_instance_a5881f94e0212ef72d947b33d1a703dd2}\index{CommandInstance@{CommandInstance}!commandFromFilename@{commandFromFilename}}
+\index{commandFromFilename@{commandFromFilename}!CommandInstance@{CommandInstance}}
+\doxysubsubsection{\texorpdfstring{commandFromFilename()}{commandFromFilename()}}
+{\footnotesize\ttfamily \label{class_command_instance_a5881f94e0212ef72d947b33d1a703dd2} 
+Command\+Instance\+::command\+From\+Filename (\begin{DoxyParamCaption}\item[{}]{filename}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{protobufjs_2src_2parse_8js_ad87dd7d0bb9bb745c8a20ef981fe2d32}{filename}}, and \mbox{\hyperlink{y18n_2build_2lib_2index_8js_a90a38689fac05010e729986454636436}{shim}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_command_instance_a5881f94e0212ef72d947b33d1a703dd2_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_command_instance_a70aa98fb588132196942cec20742dacb}\index{CommandInstance@{CommandInstance}!constructor@{constructor}}
+\index{constructor@{constructor}!CommandInstance@{CommandInstance}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_command_instance_a70aa98fb588132196942cec20742dacb} 
+Command\+Instance\+::constructor (\begin{DoxyParamCaption}\item[{}]{usage}{, }\item[{}]{validation}{, }\item[{}]{global\+Middleware}{, }\item[{}]{shim}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{__create_set_8js_ab9f46b8207185d305162498bea0d1c26}{Set}}, \mbox{\hyperlink{y18n_2build_2lib_2index_8js_a90a38689fac05010e729986454636436}{shim}}, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2uuid_2dist_2uuid-bin_8js_a5d483393835b7f0091e60cf967ded21e}{usage()}}, and \mbox{\hyperlink{validation_8js_a216f390033b6c85f657c2e0cff85f29b}{validation()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_command_instance_a70aa98fb588132196942cec20742dacb_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_command_instance_a77630f4d8d973bf65c66d6748c7ac51d}\index{CommandInstance@{CommandInstance}!extractDesc@{extractDesc}}
+\index{extractDesc@{extractDesc}!CommandInstance@{CommandInstance}}
+\doxysubsubsection{\texorpdfstring{extractDesc()}{extractDesc()}}
+{\footnotesize\ttfamily \label{class_command_instance_a77630f4d8d973bf65c66d6748c7ac51d} 
+Command\+Instance\+::extract\+Desc (\begin{DoxyParamCaption}\item[{}]{\{ describe, description, desc \}}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{ratelimiter-test_8js_af12ca6bcba67b3d74f966e681edbbaa6}{describe()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{class_command_instance_a77630f4d8d973bf65c66d6748c7ac51d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_command_instance_a77630f4d8d973bf65c66d6748c7ac51d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_command_instance_af402e545ce04fb38a0662aebf88eca7f}\index{CommandInstance@{CommandInstance}!freeze@{freeze}}
+\index{freeze@{freeze}!CommandInstance@{CommandInstance}}
+\doxysubsubsection{\texorpdfstring{freeze()}{freeze()}}
+{\footnotesize\ttfamily \label{class_command_instance_af402e545ce04fb38a0662aebf88eca7f} 
+Command\+Instance\+::freeze (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_command_instance_a8b477f4ab35b5e19e372e3e65e0dfcff}\index{CommandInstance@{CommandInstance}!getCommandHandlers@{getCommandHandlers}}
+\index{getCommandHandlers@{getCommandHandlers}!CommandInstance@{CommandInstance}}
+\doxysubsubsection{\texorpdfstring{getCommandHandlers()}{getCommandHandlers()}}
+{\footnotesize\ttfamily \label{class_command_instance_a8b477f4ab35b5e19e372e3e65e0dfcff} 
+Command\+Instance\+::get\+Command\+Handlers (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_command_instance_ae67bfadedea0c90c6426641fecd4b0c7}\index{CommandInstance@{CommandInstance}!getCommands@{getCommands}}
+\index{getCommands@{getCommands}!CommandInstance@{CommandInstance}}
+\doxysubsubsection{\texorpdfstring{getCommands()}{getCommands()}}
+{\footnotesize\ttfamily \label{class_command_instance_ae67bfadedea0c90c6426641fecd4b0c7} 
+Command\+Instance\+::get\+Commands (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_command_instance_a8c7eb8f211020c46d83834d159e7fbcb}\index{CommandInstance@{CommandInstance}!handleValidationAndGetResult@{handleValidationAndGetResult}}
+\index{handleValidationAndGetResult@{handleValidationAndGetResult}!CommandInstance@{CommandInstance}}
+\doxysubsubsection{\texorpdfstring{handleValidationAndGetResult()}{handleValidationAndGetResult()}}
+{\footnotesize\ttfamily \label{class_command_instance_a8c7eb8f211020c46d83834d159e7fbcb} 
+Command\+Instance\+::handle\+Validation\+And\+Get\+Result (\begin{DoxyParamCaption}\item[{}]{is\+Default\+Command}{, }\item[{}]{command\+Handler}{, }\item[{}]{inner\+Argv}{, }\item[{}]{current\+Context}{, }\item[{}]{aliases}{, }\item[{}]{yargs}{, }\item[{}]{middlewares}{, }\item[{}]{positional\+Map}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{middleware_8js_a2846efcf79eeb05d954f5ecca1c4d1db}{apply\+Middleware()}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}}, \mbox{\hyperlink{cjs_2internal_2util_2is_promise_8js_a0f2c14124bf8d89eb799f9f4d472f431}{is\+Promise}}, \mbox{\hyperlink{maybe-async-result_8js_a185e28dd2a762d59a9ab1f255626a012}{maybe\+Async\+Result()}}, \mbox{\hyperlink{lodash_2core_8js_a348c112a244660a2f280cda892658c24}{result}}, \mbox{\hyperlink{validation_8js_a216f390033b6c85f657c2e0cff85f29b}{validation()}}, and \mbox{\hyperlink{proto-loader-gen-types_8js_ad733adac447ee26e6037fb4cb9604970}{yargs}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_command_instance_a8c7eb8f211020c46d83834d159e7fbcb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_command_instance_a8c7eb8f211020c46d83834d159e7fbcb_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_command_instance_acd007d1cdf1708c1fda25342b08e775e}\index{CommandInstance@{CommandInstance}!hasDefaultCommand@{hasDefaultCommand}}
+\index{hasDefaultCommand@{hasDefaultCommand}!CommandInstance@{CommandInstance}}
+\doxysubsubsection{\texorpdfstring{hasDefaultCommand()}{hasDefaultCommand()}}
+{\footnotesize\ttfamily \label{class_command_instance_acd007d1cdf1708c1fda25342b08e775e} 
+Command\+Instance\+::has\+Default\+Command (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_command_instance_a7556ec1e0034b71bf7e61796b9bb725a}\index{CommandInstance@{CommandInstance}!isDefaulted@{isDefaulted}}
+\index{isDefaulted@{isDefaulted}!CommandInstance@{CommandInstance}}
+\doxysubsubsection{\texorpdfstring{isDefaulted()}{isDefaulted()}}
+{\footnotesize\ttfamily \label{class_command_instance_a7556ec1e0034b71bf7e61796b9bb725a} 
+Command\+Instance\+::is\+Defaulted (\begin{DoxyParamCaption}\item[{}]{yargs}{, }\item[{}]{key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{bin_2concurrently_8js_aa653ef4c1afb65b8238508c53e164b58}{defaults}}, and \mbox{\hyperlink{proto-loader-gen-types_8js_ad733adac447ee26e6037fb4cb9604970}{yargs}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_command_instance_a7556ec1e0034b71bf7e61796b9bb725a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_command_instance_a8b400c33f9b198d377f5b819a24fce5f}\index{CommandInstance@{CommandInstance}!isInConfigs@{isInConfigs}}
+\index{isInConfigs@{isInConfigs}!CommandInstance@{CommandInstance}}
+\doxysubsubsection{\texorpdfstring{isInConfigs()}{isInConfigs()}}
+{\footnotesize\ttfamily \label{class_command_instance_a8b400c33f9b198d377f5b819a24fce5f} 
+Command\+Instance\+::is\+In\+Configs (\begin{DoxyParamCaption}\item[{}]{yargs}{, }\item[{}]{key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}, and \mbox{\hyperlink{proto-loader-gen-types_8js_ad733adac447ee26e6037fb4cb9604970}{yargs}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_command_instance_a8b400c33f9b198d377f5b819a24fce5f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_command_instance_ad651837fcad61ff3c2c7f48588fa9ece}\index{CommandInstance@{CommandInstance}!moduleName@{moduleName}}
+\index{moduleName@{moduleName}!CommandInstance@{CommandInstance}}
+\doxysubsubsection{\texorpdfstring{moduleName()}{moduleName()}}
+{\footnotesize\ttfamily \label{class_command_instance_ad651837fcad61ff3c2c7f48588fa9ece} 
+Command\+Instance\+::module\+Name (\begin{DoxyParamCaption}\item[{}]{obj}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{yargs_2build_2lib_2command_8js_a375077f2439e51b3d30f204271589efb}{command()}}, \mbox{\hyperlink{class_command_instance_a5881f94e0212ef72d947b33d1a703dd2}{command\+From\+Filename()}}, \mbox{\hyperlink{long_2index_8js_afe8b4d98ba998dc78d0369b49d2aebf3}{mod}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}}, \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}, \mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}, \mbox{\hyperlink{y18n_2build_2lib_2index_8js_a90a38689fac05010e729986454636436}{shim}}, and \mbox{\hyperlink{which-module_8js_a43312f6dc1c6fd907bfc288d98d85ecf}{which\+Module()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_command_instance_ad651837fcad61ff3c2c7f48588fa9ece_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_command_instance_ad651837fcad61ff3c2c7f48588fa9ece_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_command_instance_a86e195892b9693c0de3676ac5e188046}\index{CommandInstance@{CommandInstance}!parseAndUpdateUsage@{parseAndUpdateUsage}}
+\index{parseAndUpdateUsage@{parseAndUpdateUsage}!CommandInstance@{CommandInstance}}
+\doxysubsubsection{\texorpdfstring{parseAndUpdateUsage()}{parseAndUpdateUsage()}}
+{\footnotesize\ttfamily \label{class_command_instance_a86e195892b9693c0de3676ac5e188046} 
+Command\+Instance\+::parse\+And\+Update\+Usage (\begin{DoxyParamCaption}\item[{}]{is\+Default\+Command}{, }\item[{}]{command\+Handler}{, }\item[{}]{inner\+Yargs}{, }\item[{}]{parent\+Commands}{, }\item[{}]{command\+Index}{, }\item[{}]{help\+Only}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{cjs_2internal_2util_2is_promise_8js_a0f2c14124bf8d89eb799f9f4d472f431}{is\+Promise}}, \mbox{\hyperlink{class_command_instance_aa6499dc620d2f88e31ded4474d420ece}{should\+Update\+Usage()}}, \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}, and \mbox{\hyperlink{class_command_instance_a126afb770bb6731de81e9d3870b9fdc4}{usage\+From\+Parent\+Commands\+Command\+Handler()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_command_instance_a86e195892b9693c0de3676ac5e188046_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_command_instance_a86e195892b9693c0de3676ac5e188046_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_command_instance_af15fbbff906c8c9e23f01258cc04967a}\index{CommandInstance@{CommandInstance}!populatePositional@{populatePositional}}
+\index{populatePositional@{populatePositional}!CommandInstance@{CommandInstance}}
+\doxysubsubsection{\texorpdfstring{populatePositional()}{populatePositional()}}
+{\footnotesize\ttfamily \label{class_command_instance_af15fbbff906c8c9e23f01258cc04967a} 
+Command\+Instance\+::populate\+Positional (\begin{DoxyParamCaption}\item[{}]{positional}{, }\item[{}]{argv}{, }\item[{}]{positional\+Map}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_command_instance_af15fbbff906c8c9e23f01258cc04967a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_command_instance_aa1ebc8a8abf9a2d78bc1f7e3bbaf1c14}\index{CommandInstance@{CommandInstance}!populatePositionals@{populatePositionals}}
+\index{populatePositionals@{populatePositionals}!CommandInstance@{CommandInstance}}
+\doxysubsubsection{\texorpdfstring{populatePositionals()}{populatePositionals()}}
+{\footnotesize\ttfamily \label{class_command_instance_aa1ebc8a8abf9a2d78bc1f7e3bbaf1c14} 
+Command\+Instance\+::populate\+Positionals (\begin{DoxyParamCaption}\item[{}]{command\+Handler}{, }\item[{}]{argv}{, }\item[{}]{context}{, }\item[{}]{yargs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}, \mbox{\hyperlink{class_command_instance_a777f5c0ff501f269343fa4693071e0f4}{cmd\+To\+Parse\+Options()}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}}, \mbox{\hyperlink{class_command_instance_af15fbbff906c8c9e23f01258cc04967a}{populate\+Positional()}}, \mbox{\hyperlink{class_command_instance_a116ec96770913e35a406409c0b2167a4}{post\+Process\+Positionals()}}, \mbox{\hyperlink{validation_8js_a216f390033b6c85f657c2e0cff85f29b}{validation()}}, and \mbox{\hyperlink{proto-loader-gen-types_8js_ad733adac447ee26e6037fb4cb9604970}{yargs}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_command_instance_aa1ebc8a8abf9a2d78bc1f7e3bbaf1c14_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_command_instance_aa1ebc8a8abf9a2d78bc1f7e3bbaf1c14_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_command_instance_a116ec96770913e35a406409c0b2167a4}\index{CommandInstance@{CommandInstance}!postProcessPositionals@{postProcessPositionals}}
+\index{postProcessPositionals@{postProcessPositionals}!CommandInstance@{CommandInstance}}
+\doxysubsubsection{\texorpdfstring{postProcessPositionals()}{postProcessPositionals()}}
+{\footnotesize\ttfamily \label{class_command_instance_a116ec96770913e35a406409c0b2167a4} 
+Command\+Instance\+::post\+Process\+Positionals (\begin{DoxyParamCaption}\item[{}]{argv}{, }\item[{}]{positional\+Map}{, }\item[{}]{parse\+Options}{, }\item[{}]{yargs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{src_2util_2minimal_8js_a325c4e317c38d8497130ebce7670be2f}{Array}}, \mbox{\hyperlink{node_2cjs_2lib_2buffer__utils_8js_af776a17274b57c50f3e7b020e1fcd88e}{concat}}, \mbox{\hyperlink{rxjs_8umd_8js_a729ec4717f914fce241d4dccc9a03066}{config}}, \mbox{\hyperlink{class_command_instance_a7556ec1e0034b71bf7e61796b9bb725a}{is\+Defaulted()}}, \mbox{\hyperlink{class_command_instance_a8b400c33f9b198d377f5b819a24fce5f}{is\+In\+Configs()}}, \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}, \mbox{\hyperlink{y18n_2build_2lib_2index_8js_a90a38689fac05010e729986454636436}{shim}}, \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}, and \mbox{\hyperlink{proto-loader-gen-types_8js_ad733adac447ee26e6037fb4cb9604970}{yargs}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_command_instance_a116ec96770913e35a406409c0b2167a4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_command_instance_a116ec96770913e35a406409c0b2167a4_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_command_instance_a71dafe0115bea39cc3c220a20f6256b9}\index{CommandInstance@{CommandInstance}!reset@{reset}}
+\index{reset@{reset}!CommandInstance@{CommandInstance}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily \label{class_command_instance_a71dafe0115bea39cc3c220a20f6256b9} 
+Command\+Instance\+::reset (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{__create_set_8js_ab9f46b8207185d305162498bea0d1c26}{Set}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}.
+
+\Hypertarget{class_command_instance_a0d72efb342f1af0ca9b15f3930e9f81f}\index{CommandInstance@{CommandInstance}!runCommand@{runCommand}}
+\index{runCommand@{runCommand}!CommandInstance@{CommandInstance}}
+\doxysubsubsection{\texorpdfstring{runCommand()}{runCommand()}}
+{\footnotesize\ttfamily \label{class_command_instance_a0d72efb342f1af0ca9b15f3930e9f81f} 
+Command\+Instance\+::run\+Command (\begin{DoxyParamCaption}\item[{}]{command}{, }\item[{}]{yargs}{, }\item[{}]{parsed}{, }\item[{}]{command\+Index}{, }\item[{}]{help\+Only}{, }\item[{}]{help\+Or\+Version\+Set}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{class_command_instance_a1065e46e0b10182429c844153c604813}{apply\+Builder\+Update\+Usage\+And\+Parse()}}, \mbox{\hyperlink{class_command_instance_a06b0360e69fa996075c392a3425de316}{apply\+Middleware\+And\+Get\+Result()}}, \mbox{\hyperlink{yargs_2build_2lib_2command_8js_a375077f2439e51b3d30f204271589efb}{command()}}, \mbox{\hyperlink{cjs_2internal_2util_2is_promise_8js_a0f2c14124bf8d89eb799f9f4d472f431}{is\+Promise}}, \mbox{\hyperlink{lodash_2core_8js_a348c112a244660a2f280cda892658c24}{result}}, and \mbox{\hyperlink{proto-loader-gen-types_8js_ad733adac447ee26e6037fb4cb9604970}{yargs}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_command_instance_a0d72efb342f1af0ca9b15f3930e9f81f_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_command_instance_ae4abcaf0169758680acd57738e20425c}\index{CommandInstance@{CommandInstance}!runDefaultBuilderOn@{runDefaultBuilderOn}}
+\index{runDefaultBuilderOn@{runDefaultBuilderOn}!CommandInstance@{CommandInstance}}
+\doxysubsubsection{\texorpdfstring{runDefaultBuilderOn()}{runDefaultBuilderOn()}}
+{\footnotesize\ttfamily \label{class_command_instance_ae4abcaf0169758680acd57738e20425c} 
+Command\+Instance\+::run\+Default\+Builder\+On (\begin{DoxyParamCaption}\item[{}]{yargs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{yargs_2build_2lib_2command_8js_a60b1aeb4272ecb116057d7bae82a753c}{DEFAULT\+\_\+\+MARKER}}, \mbox{\hyperlink{yargs_2build_2lib_2command_8js_a98d3b7447314e693e929e282c0feb8e5}{is\+Command\+Builder\+Callback()}}, \mbox{\hyperlink{yargs_2build_2lib_2command_8js_aa2fa63da9381f8065363dabcca80f722}{is\+Command\+Builder\+Definition()}}, \mbox{\hyperlink{class_command_instance_aa6499dc620d2f88e31ded4474d420ece}{should\+Update\+Usage()}}, \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}, and \mbox{\hyperlink{proto-loader-gen-types_8js_ad733adac447ee26e6037fb4cb9604970}{yargs}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_command_instance_ae4abcaf0169758680acd57738e20425c_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_command_instance_aa6499dc620d2f88e31ded4474d420ece}\index{CommandInstance@{CommandInstance}!shouldUpdateUsage@{shouldUpdateUsage}}
+\index{shouldUpdateUsage@{shouldUpdateUsage}!CommandInstance@{CommandInstance}}
+\doxysubsubsection{\texorpdfstring{shouldUpdateUsage()}{shouldUpdateUsage()}}
+{\footnotesize\ttfamily \label{class_command_instance_aa6499dc620d2f88e31ded4474d420ece} 
+Command\+Instance\+::should\+Update\+Usage (\begin{DoxyParamCaption}\item[{}]{yargs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{proto-loader-gen-types_8js_ad733adac447ee26e6037fb4cb9604970}{yargs}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_command_instance_aa6499dc620d2f88e31ded4474d420ece_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_command_instance_ad6d209ae0c3c958109851f4fa0761bba}\index{CommandInstance@{CommandInstance}!unfreeze@{unfreeze}}
+\index{unfreeze@{unfreeze}!CommandInstance@{CommandInstance}}
+\doxysubsubsection{\texorpdfstring{unfreeze()}{unfreeze()}}
+{\footnotesize\ttfamily \label{class_command_instance_ad6d209ae0c3c958109851f4fa0761bba} 
+Command\+Instance\+::unfreeze (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{common-types_8js_af5e27105bfd4328721312ab762102c70}{assert\+Not\+Strict\+Equal()}}, \mbox{\hyperlink{y18n_2build_2lib_2index_8js_a90a38689fac05010e729986454636436}{shim}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_command_instance_ad6d209ae0c3c958109851f4fa0761bba_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_command_instance_a126afb770bb6731de81e9d3870b9fdc4}\index{CommandInstance@{CommandInstance}!usageFromParentCommandsCommandHandler@{usageFromParentCommandsCommandHandler}}
+\index{usageFromParentCommandsCommandHandler@{usageFromParentCommandsCommandHandler}!CommandInstance@{CommandInstance}}
+\doxysubsubsection{\texorpdfstring{usageFromParentCommandsCommandHandler()}{usageFromParentCommandsCommandHandler()}}
+{\footnotesize\ttfamily \label{class_command_instance_a126afb770bb6731de81e9d3870b9fdc4} 
+Command\+Instance\+::usage\+From\+Parent\+Commands\+Command\+Handler (\begin{DoxyParamCaption}\item[{}]{parent\+Commands}{, }\item[{}]{command\+Handler}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}, and \mbox{\hyperlink{yargs_2build_2lib_2command_8js_a60b1aeb4272ecb116057d7bae82a753c}{DEFAULT\+\_\+\+MARKER}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_command_instance_a126afb770bb6731de81e9d3870b9fdc4_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/yargs/build/lib/\mbox{\hyperlink{yargs_2build_2lib_2command_8js}{command.\+js}}\end{DoxyCompactItemize}

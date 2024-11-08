@@ -1,0 +1,13 @@
+<map id="rest" name="rest">
+<area shape="rect" id="Node000001" title=" " alt="" coords="250,104,293,130"/>
+<area shape="rect" id="Node000002" href="$class_firestore_client.html#a3866c9d2a91ac2054c54f0e2aabe3f0e" title=" " alt="" coords="14,5,193,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="251,93,229,67,200,44,177,34,180,29,203,40,232,63,255,90"/>
+<area shape="rect" id="Node000003" href="$class_locations_client.html#a7f7852b409a8e69e35c1ab83299436e6" title=" " alt="" coords="11,55,196,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="234,106,201,94,163,83,164,78,202,89,236,101"/>
+<area shape="rect" id="Node000004" href="$class_stream_descriptor.html#ab80fe73b0fa243f73cc9a9a8cfe05553" title=" " alt="" coords="5,104,202,130"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="234,120,202,120,202,114,234,114"/>
+<area shape="rect" id="Node000005" href="$class_stream_proxy.html#a9f2fd9b7fcc786c733979913c35ab0f5" title=" " alt="" coords="18,153,189,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="236,133,202,145,164,155,163,150,201,140,234,128"/>
+<area shape="rect" id="Node000006" href="$class_general_sign.html#aa81008ed12e31752e82341a5eb85d788" title=" " alt="" coords="41,203,166,228"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="255,144,232,170,203,194,167,209,165,204,200,189,229,166,251,140"/>
+</map>

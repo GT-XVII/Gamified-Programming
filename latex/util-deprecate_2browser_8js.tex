@@ -1,0 +1,75 @@
+\doxysection{backend/node\+\_\+modules/util-\/deprecate/browser.js File Reference}
+\hypertarget{util-deprecate_2browser_8js}{}\label{util-deprecate_2browser_8js}\index{backend/node\_modules/util-\/deprecate/browser.js@{backend/node\_modules/util-\/deprecate/browser.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{util-deprecate_2browser_8js_ab6f762425aab73d5a3dc18633d484d84}{deprecate}} (\mbox{\hyperlink{writer_8js_a10238cf619a9073c096c996342cd720a}{fn}}, \mbox{\hyperlink{protobufjs_2ext_2descriptor_2test_8js_aa2e57ff47bd491f47d9b13a694aa0aeb}{msg}})
+\item 
+function \mbox{\hyperlink{util-deprecate_2browser_8js_a284405d0674e460c764c6b86a3761ebb}{config}} (\mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{util-deprecate_2browser_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} = \mbox{\hyperlink{application_8js_acfcd119b39526e732877a941ebeed620}{deprecate}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{util-deprecate_2browser_8js_a284405d0674e460c764c6b86a3761ebb}\index{browser.js@{browser.js}!config@{config}}
+\index{config@{config}!browser.js@{browser.js}}
+\doxysubsubsection{\texorpdfstring{config()}{config()}}
+{\footnotesize\ttfamily \label{util-deprecate_2browser_8js_a284405d0674e460c764c6b86a3761ebb} 
+function config (\begin{DoxyParamCaption}\item[{}]{name}{}\end{DoxyParamCaption})}
+
+Checks {\ttfamily local\+Storage} for boolean values for the given {\ttfamily name}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+String\}} & name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Boolean\} @api private 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{fp_8js_a6e69a5af94d7d53886e51f89fb3bd6b4}{\+\_\+}}, \mbox{\hyperlink{ordered-map_8js_a57efe929cc6b44042891d05e15cec785}{global}}, and \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}.
+
+\Hypertarget{util-deprecate_2browser_8js_ab6f762425aab73d5a3dc18633d484d84}\index{browser.js@{browser.js}!deprecate@{deprecate}}
+\index{deprecate@{deprecate}!browser.js@{browser.js}}
+\doxysubsubsection{\texorpdfstring{deprecate()}{deprecate()}}
+{\footnotesize\ttfamily \label{util-deprecate_2browser_8js_ab6f762425aab73d5a3dc18633d484d84} 
+function deprecate (\begin{DoxyParamCaption}\item[{}]{fn}{, }\item[{}]{msg}{}\end{DoxyParamCaption})}
+
+Mark that a method should not be used. Returns a modified function which warns once by default.
+
+If {\ttfamily local\+Storage.\+no\+Deprecation = true} is set, then it is a no-\/op.
+
+If {\ttfamily local\+Storage.\+throw\+Deprecation = true} is set, then deprecated functions will throw an Error when invoked.
+
+If {\ttfamily local\+Storage.\+trace\+Deprecation = true} is set, then deprecated functions will invoke {\ttfamily console.\+trace()} instead of {\ttfamily console.\+error()}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Function\}} & fn -\/ the function to deprecate \\
+\hline
+{\em \{\+String\}} & msg -\/ the string to print to the console when {\ttfamily fn} is invoked \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Function\} a new "{}deprecated"{} version of {\ttfamily fn} @api public 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{rxjs_8umd_8js_a729ec4717f914fce241d4dccc9a03066}{config}}, \mbox{\hyperlink{writer_8js_a10238cf619a9073c096c996342cd720a}{fn}}, and \mbox{\hyperlink{protobufjs_2ext_2descriptor_2test_8js_aa2e57ff47bd491f47d9b13a694aa0aeb}{msg}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{util-deprecate_2browser_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\index{browser.js@{browser.js}!exports@{exports}}
+\index{exports@{exports}!browser.js@{browser.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \label{util-deprecate_2browser_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports = \mbox{\hyperlink{application_8js_acfcd119b39526e732877a941ebeed620}{deprecate}}}
+
+Module exports. 

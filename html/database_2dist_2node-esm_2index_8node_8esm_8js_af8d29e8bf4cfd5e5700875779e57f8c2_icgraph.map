@@ -1,0 +1,9 @@
+<map id="repoInfoConnectionURL" name="repoInfoConnectionURL">
+<area shape="rect" id="Node000001" title=" " alt="" coords="413,46,574,72"/>
+<area shape="rect" id="Node000002" href="$class_web_socket_connection.html#a139fe46702a582718b3f5a5bbca1bb13" title=" " alt="" coords="209,5,364,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="397,46,364,41,365,35,398,41"/>
+<area shape="rect" id="Node000004" href="$class_browser_poll_connection.html#a9b5e850789199620659964170cfdfbcf" title=" " alt="" coords="208,71,365,111"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="398,76,366,81,365,76,397,71"/>
+<area shape="rect" id="Node000003" href="$class_web_socket_connection.html#a1332dd798778b56d21d9384769b55322" title=" " alt="" coords="5,5,160,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="194,28,160,28,160,23,194,23"/>
+</map>

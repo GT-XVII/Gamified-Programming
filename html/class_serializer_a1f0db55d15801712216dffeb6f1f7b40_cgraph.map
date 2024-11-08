@@ -1,0 +1,9 @@
+<map id="Serializer::decodeGoogleProtobufValue" name="Serializer::decodeGoogleProtobufValue">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,39,172,79"/>
+<area shape="rect" id="Node000002" href="$class_serializer.html#a1d098764ddcc6660425d61472c2c93da" title=" " alt="" coords="220,5,386,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,52,209,47,209,52,173,57"/>
+<area shape="rect" id="Node000003" href="$class_serializer.html#aa17ecffe90993f845c7c18db819d3cc0" title=" " alt="" coords="220,71,386,111"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="171,77,205,83,204,88,170,83"/>
+<area shape="poly" id="edge2_Node000002_Node000001" title=" " alt="" coords="220,32,183,38,182,33,219,27"/>
+<area shape="poly" id="edge4_Node000003_Node000001" title=" " alt="" coords="220,73,187,67,188,62,221,67"/>
+</map>

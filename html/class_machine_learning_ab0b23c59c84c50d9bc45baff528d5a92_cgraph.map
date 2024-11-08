@@ -1,0 +1,10 @@
+<map id="MachineLearning::createModel" name="MachineLearning::createModel">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,204,55"/>
+<area shape="rect" id="Node000002" href="$class_machine_learning.html#ae16f84b7b214797dbecaadfbbbede2c6" title=" " alt="" coords="252,22,420,62"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="204,40,236,40,236,45,204,45"/>
+<area shape="rect" id="Node000003" href="$class_machine_learning.html#aa58b1d34788af03e504187632a53ad86" title=" " alt="" coords="468,29,636,55"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="420,40,452,40,452,45,420,45"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="518,31,511,21,515,11,529,5,552,3,578,5,590,12,588,17,576,10,552,8,530,10,519,15,516,20,522,27"/>
+<area shape="rect" id="Node000004" href="$class_machine_learning.html#a6d54f5a55092d1fa22c558b9dc624e7c" title=" " alt="" coords="684,29,833,55"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="637,40,669,40,669,45,637,45"/>
+</map>

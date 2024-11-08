@@ -1,0 +1,379 @@
+\doxysection{Base\+External\+Account\+Client Class Reference}
+\hypertarget{class_base_external_account_client}{}\label{class_base_external_account_client}\index{BaseExternalAccountClient@{BaseExternalAccountClient}}
+
+
+Inheritance diagram for Base\+External\+Account\+Client\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{class_base_external_account_client__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Base\+External\+Account\+Client\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{class_base_external_account_client__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_base_external_account_client_ac3c181fbecace73f4d16bf5f1454ff6a}{constructor}} (options, additional\+Options)
+\item 
+\mbox{\hyperlink{class_base_external_account_client_a15e4e876505f164608bcf84b5c33fdc1}{get\+Service\+Account\+Email}} ()
+\item 
+\mbox{\hyperlink{class_base_external_account_client_a401d8ae5c66bc97c2c032f7e750d32cb}{set\+Credentials}} (\mbox{\hyperlink{_0dgrpc_2grpc-js_2build_2src_2index_8js_a88f1ca34064fef6dc1e29d7d1cf5cfcf}{credentials}})
+\item 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{class_base_external_account_client_ad0804062ac1325329b9f76ac603ac74c}{get\+Access\+Token}} ()
+\item 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{class_base_external_account_client_a8caad074ecc8066c195db462a1632828}{get\+Request\+Headers}} ()
+\item 
+\mbox{\hyperlink{class_base_external_account_client_ab381dadac9ad3b6e8c34f194714c9cc3}{request}} (opts, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a622460feeccdab6d8f307936fc6b36fb}{callback}})
+\item 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{class_base_external_account_client_a0e5c9c1ea4ac4463c04a9bdeb9e3fc41}{get\+Project\+Id}} ()
+\item 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{class_base_external_account_client_a9050d118276189d24a16ce5928a28335}{request\+Async}} (opts, re\+Auth\+Retried=\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a5df37b7f02e5cdc7d9412b7f872b8e01}{false}})
+\item 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{class_base_external_account_client_a7cbb6f741d620990412edb466f7c3e57}{refresh\+Access\+Token\+Async}} ()
+\item 
+\mbox{\hyperlink{class_base_external_account_client_a55a12679fd3f75c44401f2618d84292b}{get\+Project\+Number}} (audience)
+\item 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{class_base_external_account_client_a8f7b31af6e0999b67597375cd2b5306c}{get\+Impersonated\+Access\+Token}} (\mbox{\hyperlink{util_2dist_2index_8cjs_8js_a87da3d8264af1c9427605148f20dd9c4}{token}})
+\item 
+\mbox{\hyperlink{class_base_external_account_client_ada53ec42a80860f6e777d00cd501e20d}{is\+Expired}} (access\+Token)
+\item 
+\mbox{\hyperlink{class_base_external_account_client_abc38efcb9d33126f69bf7267d9407a4f}{get\+Scopes\+Array}} ()
+\item 
+\mbox{\hyperlink{class_base_external_account_client_a4a0ef1ea66a830faf89585cc08af41a5}{get\+Metrics\+Header\+Value}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_base}{Base} external account client. This is used to instantiate Auth\+Clients for exchanging external account credentials for GCP access token and authorizing requests to GCP APIs. The base class implements common logic for exchanging various type of external credentials for GCP access token. The logic of determining and retrieving the external credential based on the environment and credential\+\_\+source will be left for the subclasses. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_base_external_account_client_ac3c181fbecace73f4d16bf5f1454ff6a}\index{BaseExternalAccountClient@{BaseExternalAccountClient}!constructor@{constructor}}
+\index{constructor@{constructor}!BaseExternalAccountClient@{BaseExternalAccountClient}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_base_external_account_client_ac3c181fbecace73f4d16bf5f1454ff6a} 
+Base\+External\+Account\+Client\+::constructor (\begin{DoxyParamCaption}\item[{}]{options}{, }\item[{}]{additional\+Options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Instantiate a \doxylink{class_base_external_account_client}{Base\+External\+Account\+Client} instance using the provided JSON object loaded from an external account credentials file. 
+\begin{DoxyParams}{Parameters}
+{\em options} & The external account options object typically loaded from the external account JSON credential file. The camel\+Cased options are aliases for the snake\+\_\+cased options. \\
+\hline
+{\em additional\+Options} & {\bfseries{DEPRECATED, all options are available in the {\ttfamily options} parameter.}} Optional additional behavior customization options. These currently customize expiration threshold time and whether to retry on 401/403 API request errors. \\
+\hline
+\end{DoxyParams}
+\doxylink{class_a}{A} pending access token request. Used for concurrent calls.
+
+References \mbox{\hyperlink{logger_2dist_2esm_2index_8esm5_8js_a0adf123df8967a14b5bdd9ff3bbe2d0c}{\+\_\+a}}, \mbox{\hyperlink{baseexternalclient_8js_a80e9a534fae049c9db83545a06bf3bd3}{\+\_\+\+Base\+External\+Account\+Client\+\_\+instances}}, \mbox{\hyperlink{baseexternalclient_8js_aa05cdb0f5572a0d71e715c9360a56943}{\+\_\+\+Base\+External\+Account\+Client\+\_\+pending\+Access\+Token}}, \mbox{\hyperlink{baseexternalclient_8js_a545d79b3be01df2399efb6a82e47f67d}{DEFAULT\+\_\+\+OAUTH\+\_\+\+SCOPE}}, \mbox{\hyperlink{external_account_authorized_user_client_8js_a13ff36530d8d18bc8f409911211aeb9c}{DEFAULT\+\_\+\+TOKEN\+\_\+\+URL}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}}, \mbox{\hyperlink{class_base_external_account_client_a55a12679fd3f75c44401f2618d84292b}{get\+Project\+Number()}}, \mbox{\hyperlink{agent-base_2dist_2helpers_8js_ab3093f9d8507c035b404b9d49bdb40f7}{https}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad061d61e10918d5b27e272593239c0e7}{if()}}, \mbox{\hyperlink{baseexternalclient_8js_aed84e6a8dd47163697d602a45f4cf675}{sts}}, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type}}, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2uuid_2dist_2esm-browser_2v35_8js_a2a5fb34fada8ceb9b494ec16878c09dc}{URL}}, and \mbox{\hyperlink{baseexternalclient_8js_a6af3fa6e24c6a46faf4552f3a2ad8783}{util\+\_\+1}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_base_external_account_client_ac3c181fbecace73f4d16bf5f1454ff6a_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_base_external_account_client_ad0804062ac1325329b9f76ac603ac74c}\index{BaseExternalAccountClient@{BaseExternalAccountClient}!getAccessToken@{getAccessToken}}
+\index{getAccessToken@{getAccessToken}!BaseExternalAccountClient@{BaseExternalAccountClient}}
+\doxysubsubsection{\texorpdfstring{getAccessToken()}{getAccessToken()}}
+{\footnotesize\ttfamily \label{class_base_external_account_client_ad0804062ac1325329b9f76ac603ac74c} 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} Base\+External\+Account\+Client\+::get\+Access\+Token (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_a}{A} promise that resolves with the current GCP access token response. If the current credential is expired, a new one is retrieved. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{class_base_external_account_client_ada53ec42a80860f6e777d00cd501e20d}{is\+Expired()}}, \mbox{\hyperlink{class_base_external_account_client_a7cbb6f741d620990412edb466f7c3e57}{refresh\+Access\+Token\+Async()}}, \mbox{\hyperlink{express_2lib_2express_8js_abde3c35e3bb7e5225dd7f234c685329c}{res}}, and \mbox{\hyperlink{util_2dist_2index_8cjs_8js_a87da3d8264af1c9427605148f20dd9c4}{token}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_base_external_account_client_ad0804062ac1325329b9f76ac603ac74c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_base_external_account_client_ad0804062ac1325329b9f76ac603ac74c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_base_external_account_client_a8f7b31af6e0999b67597375cd2b5306c}\index{BaseExternalAccountClient@{BaseExternalAccountClient}!getImpersonatedAccessToken@{getImpersonatedAccessToken}}
+\index{getImpersonatedAccessToken@{getImpersonatedAccessToken}!BaseExternalAccountClient@{BaseExternalAccountClient}}
+\doxysubsubsection{\texorpdfstring{getImpersonatedAccessToken()}{getImpersonatedAccessToken()}}
+{\footnotesize\ttfamily \label{class_base_external_account_client_a8f7b31af6e0999b67597375cd2b5306c} 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} Base\+External\+Account\+Client\+::get\+Impersonated\+Access\+Token (\begin{DoxyParamCaption}\item[{}]{token}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Exchanges an external account GCP access token for a service account impersonated access token using iamcredentials Generate\+Access\+Token API. 
+\begin{DoxyParams}{Parameters}
+{\em token} & The access token to exchange for a service account access token. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_a}{A} promise that resolves with the service account impersonated credentials response. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}, \mbox{\hyperlink{class_base_external_account_client_abc38efcb9d33126f69bf7267d9407a4f}{get\+Scopes\+Array()}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7f2cb2fcdd79bf72cefd29b7bc2d10fa}{headers}}, \mbox{\hyperlink{lodash_2method_8js_a2f565198b0a61cb8648a01f0d9617cd7}{method}}, \mbox{\hyperlink{express_2lib_2express_8js_abde3c35e3bb7e5225dd7f234c685329c}{res}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ac70ac40ef8199c59316b35022dd21914}{response}}, \mbox{\hyperlink{util_2dist_2index_8cjs_8js_a87da3d8264af1c9427605148f20dd9c4}{token}}, and \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_acf0a8b41f00a22e21672c8b3768a0618}{url}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_base_external_account_client_a8f7b31af6e0999b67597375cd2b5306c_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_base_external_account_client_a4a0ef1ea66a830faf89585cc08af41a5}\index{BaseExternalAccountClient@{BaseExternalAccountClient}!getMetricsHeaderValue@{getMetricsHeaderValue}}
+\index{getMetricsHeaderValue@{getMetricsHeaderValue}!BaseExternalAccountClient@{BaseExternalAccountClient}}
+\doxysubsubsection{\texorpdfstring{getMetricsHeaderValue()}{getMetricsHeaderValue()}}
+{\footnotesize\ttfamily \label{class_base_external_account_client_a4a0ef1ea66a830faf89585cc08af41a5} 
+Base\+External\+Account\+Client\+::get\+Metrics\+Header\+Value (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{google-auth-library_2build_2src_2index_8js_ad26b69249342cfd7b4d6e0352d739857}{auth}}, \mbox{\hyperlink{rxjs_8umd_8js_a729ec4717f914fce241d4dccc9a03066}{config}}, \mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2platform_2index_8js_a74c72f849f998803d0f301e524445c36}{node}}, \mbox{\hyperlink{yargs-parser_2build_2lib_2index_8js_a746c1dba5b291273ede6005252d220fb}{node\+Version}}, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a7f6cb4aa5112e614bc63e81ace6378d0}{pkg}}, \mbox{\hyperlink{ipaddr_8min_8js_abcedab16429ea0641c6596f556f2e102}{process}}, \mbox{\hyperlink{bench_8js_a4f85c6ae2a8cdd19ca9b7006b1860d40}{source}}, \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}, and \mbox{\hyperlink{ordered-map_8min_8js_a207400f40ed647015069564fa40946e1}{v}}.
+
+\Hypertarget{class_base_external_account_client_a0e5c9c1ea4ac4463c04a9bdeb9e3fc41}\index{BaseExternalAccountClient@{BaseExternalAccountClient}!getProjectId@{getProjectId}}
+\index{getProjectId@{getProjectId}!BaseExternalAccountClient@{BaseExternalAccountClient}}
+\doxysubsubsection{\texorpdfstring{getProjectId()}{getProjectId()}}
+{\footnotesize\ttfamily \label{class_base_external_account_client_a0e5c9c1ea4ac4463c04a9bdeb9e3fc41} 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} Base\+External\+Account\+Client\+::get\+Project\+Id (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_a}{A} promise that resolves with the project ID corresponding to the current workload identity pool or current workforce pool if determinable. For workforce pool credential, it returns the project ID corresponding to the workforce\+Pool\+User\+Project. This is introduced to match the current pattern of using the \doxylink{class_auth}{Auth} library\+: const project\+Id = await auth.\+get\+Project\+Id(); const url = {\ttfamily \href{https://dns.googleapis.com/dns/v1/projects/}{\texttt{ https\+://dns.\+googleapis.\+com/dns/v1/projects/}}\$\{project\+Id\}}; const res = await client.\+request(\{ url \}); The resource may not have permission (resourcemanager.\+projects.\+get) to call this API or the required scopes may not be selected\+: \href{https://cloud.google.com/resource-manager/reference/rest/v1/projects/get\#authorization-scopes}{\texttt{ https\+://cloud.\+google.\+com/resource-\/manager/reference/rest/v1/projects/get\#authorization-\/scopes}} 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{class_base_external_account_client_a8caad074ecc8066c195db462a1632828}{get\+Request\+Headers()}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7f2cb2fcdd79bf72cefd29b7bc2d10fa}{headers}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ac70ac40ef8199c59316b35022dd21914}{response}}, and \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_acf0a8b41f00a22e21672c8b3768a0618}{url}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_base_external_account_client_a0e5c9c1ea4ac4463c04a9bdeb9e3fc41_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_base_external_account_client_a55a12679fd3f75c44401f2618d84292b}\index{BaseExternalAccountClient@{BaseExternalAccountClient}!getProjectNumber@{getProjectNumber}}
+\index{getProjectNumber@{getProjectNumber}!BaseExternalAccountClient@{BaseExternalAccountClient}}
+\doxysubsubsection{\texorpdfstring{getProjectNumber()}{getProjectNumber()}}
+{\footnotesize\ttfamily \label{class_base_external_account_client_a55a12679fd3f75c44401f2618d84292b} 
+Base\+External\+Account\+Client\+::get\+Project\+Number (\begin{DoxyParamCaption}\item[{}]{audience}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the workload identity pool project number if it is determinable from the audience resource name. 
+\begin{DoxyParams}{Parameters}
+{\em audience} & The STS audience used to determine the project number. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The project number associated with the workload identity pool, if this can be determined from the STS audience field. Otherwise, null is returned. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{layer_8js_aee433120cbb9ab29eb32064146e11ef5}{match}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_base_external_account_client_a55a12679fd3f75c44401f2618d84292b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_base_external_account_client_a8caad074ecc8066c195db462a1632828}\index{BaseExternalAccountClient@{BaseExternalAccountClient}!getRequestHeaders@{getRequestHeaders}}
+\index{getRequestHeaders@{getRequestHeaders}!BaseExternalAccountClient@{BaseExternalAccountClient}}
+\doxysubsubsection{\texorpdfstring{getRequestHeaders()}{getRequestHeaders()}}
+{\footnotesize\ttfamily \label{class_base_external_account_client_a8caad074ecc8066c195db462a1632828} 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} Base\+External\+Account\+Client\+::get\+Request\+Headers (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+The main authentication interface. It takes an optional url which when present is the endpoint being accessed, and returns a Promise which resolves with authorization header fields.
+
+The result has the form\+: \{ Authorization\+: \textquotesingle{}Bearer $<$access\+\_\+token\+\_\+value$>$\textquotesingle{} \} 
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{class_base_external_account_client_ad0804062ac1325329b9f76ac603ac74c}{get\+Access\+Token()}}, and \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7f2cb2fcdd79bf72cefd29b7bc2d10fa}{headers}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_base_external_account_client_a8caad074ecc8066c195db462a1632828_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_base_external_account_client_a8caad074ecc8066c195db462a1632828_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_base_external_account_client_abc38efcb9d33126f69bf7267d9407a4f}\index{BaseExternalAccountClient@{BaseExternalAccountClient}!getScopesArray@{getScopesArray}}
+\index{getScopesArray@{getScopesArray}!BaseExternalAccountClient@{BaseExternalAccountClient}}
+\doxysubsubsection{\texorpdfstring{getScopesArray()}{getScopesArray()}}
+{\footnotesize\ttfamily \label{class_base_external_account_client_abc38efcb9d33126f69bf7267d9407a4f} 
+Base\+External\+Account\+Client\+::get\+Scopes\+Array (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+The list of scopes for the requested GCP access token. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{baseexternalclient_8js_a545d79b3be01df2399efb6a82e47f67d}{DEFAULT\+\_\+\+OAUTH\+\_\+\+SCOPE}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_base_external_account_client_abc38efcb9d33126f69bf7267d9407a4f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_base_external_account_client_a15e4e876505f164608bcf84b5c33fdc1}\index{BaseExternalAccountClient@{BaseExternalAccountClient}!getServiceAccountEmail@{getServiceAccountEmail}}
+\index{getServiceAccountEmail@{getServiceAccountEmail}!BaseExternalAccountClient@{BaseExternalAccountClient}}
+\doxysubsubsection{\texorpdfstring{getServiceAccountEmail()}{getServiceAccountEmail()}}
+{\footnotesize\ttfamily \label{class_base_external_account_client_a15e4e876505f164608bcf84b5c33fdc1} 
+Base\+External\+Account\+Client\+::get\+Service\+Account\+Email (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+The service account email to be impersonated, if available. Prevents DOS attacks. \begin{DoxySeeAlso}{See also}
+{\ttfamily \doxylink{}{https\+://github.\+com/googleapis/google-\/auth-\/library-\/nodejs/security/code-\/scanning/84}}
+\end{DoxySeeAlso}
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{logger_2dist_2esm_2index_8esm5_8js_a0adf123df8967a14b5bdd9ff3bbe2d0c}{\+\_\+a}}, \mbox{\hyperlink{express_2lib_2request_8js_a5e3afd97276cc403924d1a449a83ea84}{is}}, \mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2internal_2semver_8js_a03ebaa93eddf6cea83c58d6fadd722a1}{re}}, \mbox{\hyperlink{lodash_2core_8js_a348c112a244660a2f280cda892658c24}{result}}, and \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2uuid_2dist_2esm-browser_2v35_8js_a2a5fb34fada8ceb9b494ec16878c09dc}{URL}}.
+
+\Hypertarget{class_base_external_account_client_ada53ec42a80860f6e777d00cd501e20d}\index{BaseExternalAccountClient@{BaseExternalAccountClient}!isExpired@{isExpired}}
+\index{isExpired@{isExpired}!BaseExternalAccountClient@{BaseExternalAccountClient}}
+\doxysubsubsection{\texorpdfstring{isExpired()}{isExpired()}}
+{\footnotesize\ttfamily \label{class_base_external_account_client_ada53ec42a80860f6e777d00cd501e20d} 
+Base\+External\+Account\+Client\+::is\+Expired (\begin{DoxyParamCaption}\item[{}]{access\+Token}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns whether the provided credentials are expired or not. If there is no expiry time, assumes the token is not expired or expiring. 
+\begin{DoxyParams}{Parameters}
+{\em access\+Token} & The credentials to check for expiration. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether the credentials are expired or not. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{lodash_2debounce_8js_ae2dc5120e9ccb39c5ef94d5c203e534a}{now}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_base_external_account_client_ada53ec42a80860f6e777d00cd501e20d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_base_external_account_client_a7cbb6f741d620990412edb466f7c3e57}\index{BaseExternalAccountClient@{BaseExternalAccountClient}!refreshAccessTokenAsync@{refreshAccessTokenAsync}}
+\index{refreshAccessTokenAsync@{refreshAccessTokenAsync}!BaseExternalAccountClient@{BaseExternalAccountClient}}
+\doxysubsubsection{\texorpdfstring{refreshAccessTokenAsync()}{refreshAccessTokenAsync()}}
+{\footnotesize\ttfamily \label{class_base_external_account_client_a7cbb6f741d620990412edb466f7c3e57} 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} Base\+External\+Account\+Client\+::refresh\+Access\+Token\+Async (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Forces token refresh, even if unexpired tokens are currently cached. External credentials are exchanged for GCP access tokens via the token exchange endpoint and other settings provided in the client options object. If the service\+\_\+account\+\_\+impersonation\+\_\+url is provided, an additional step to exchange the external account GCP access token for a service account impersonated token is performed. \begin{DoxyReturn}{Returns}
+\doxylink{class_a}{A} promise that resolves with the fresh GCP access tokens. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{baseexternalclient_8js_a447cd4ee0c75db2d366d333c1c6ab92b}{\+\_\+\+\_\+class\+Private\+Field\+Get}}, \mbox{\hyperlink{baseexternalclient_8js_a9c0a3b4ec16c0e88e32e52464cf3423e}{\+\_\+\+\_\+class\+Private\+Field\+Set}}, \mbox{\hyperlink{baseexternalclient_8js_a80e9a534fae049c9db83545a06bf3bd3}{\+\_\+\+Base\+External\+Account\+Client\+\_\+instances}}, \mbox{\hyperlink{baseexternalclient_8js_a09b7171e7d0420f0f3d0a4cd01bf9392}{\+\_\+\+Base\+External\+Account\+Client\+\_\+internal\+Refresh\+Access\+Token\+Async}}, \mbox{\hyperlink{baseexternalclient_8js_aa05cdb0f5572a0d71e715c9360a56943}{\+\_\+\+Base\+External\+Account\+Client\+\_\+pending\+Access\+Token}}, and \mbox{\hyperlink{hasown_2index_8js_af41b23e59e21fbbca9175e1dbd07b54e}{call}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_base_external_account_client_a7cbb6f741d620990412edb466f7c3e57_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_base_external_account_client_ab381dadac9ad3b6e8c34f194714c9cc3}\index{BaseExternalAccountClient@{BaseExternalAccountClient}!request@{request}}
+\index{request@{request}!BaseExternalAccountClient@{BaseExternalAccountClient}}
+\doxysubsubsection{\texorpdfstring{request()}{request()}}
+{\footnotesize\ttfamily \label{class_base_external_account_client_ab381dadac9ad3b6e8c34f194714c9cc3} 
+Base\+External\+Account\+Client\+::request (\begin{DoxyParamCaption}\item[{}]{opts}{, }\item[{}]{callback}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a622460feeccdab6d8f307936fc6b36fb}{callback}}, \mbox{\hyperlink{firestore__admin__v1__proto__api_8js_a08a4415e9d594ff960030b921d42b91e}{e}}, \mbox{\hyperlink{uuid_8min_8js_aaa5fef39529cdffdfa257202bb4fda9f}{r}}, and \mbox{\hyperlink{class_base_external_account_client_a9050d118276189d24a16ce5928a28335}{request\+Async()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_base_external_account_client_ab381dadac9ad3b6e8c34f194714c9cc3_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_base_external_account_client_a9050d118276189d24a16ce5928a28335}\index{BaseExternalAccountClient@{BaseExternalAccountClient}!requestAsync@{requestAsync}}
+\index{requestAsync@{requestAsync}!BaseExternalAccountClient@{BaseExternalAccountClient}}
+\doxysubsubsection{\texorpdfstring{requestAsync()}{requestAsync()}}
+{\footnotesize\ttfamily \label{class_base_external_account_client_a9050d118276189d24a16ce5928a28335} 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} Base\+External\+Account\+Client\+::request\+Async (\begin{DoxyParamCaption}\item[{}]{opts}{, }\item[{}]{re\+Auth\+Retried}{ = {\ttfamily \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a5df37b7f02e5cdc7d9412b7f872b8e01}{false}}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Authenticates the provided HTTP request, processes it and resolves with the returned response. 
+\begin{DoxyParams}{Parameters}
+{\em opts} & The HTTP request options. \\
+\hline
+{\em re\+Auth\+Retried} & Whether the current attempt is a retry after a failed attempt due to an auth failure. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_a}{A} promise that resolves with the successful response. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{firestore__admin__v1__proto__api_8js_a08a4415e9d594ff960030b921d42b91e}{e}}, \mbox{\hyperlink{class_base_external_account_client_a8caad074ecc8066c195db462a1632828}{get\+Request\+Headers()}}, \mbox{\hyperlink{cjs_2internal_2ajax_2ajax_8js_a45744f6308afbbcefdd2479b2c4bd5c5}{is\+Readable\+Stream()}}, \mbox{\hyperlink{class_base_external_account_client_a7cbb6f741d620990412edb466f7c3e57}{refresh\+Access\+Token\+Async()}}, \mbox{\hyperlink{class_base_external_account_client_a9050d118276189d24a16ce5928a28335}{request\+Async()}}, \mbox{\hyperlink{express_2lib_2express_8js_abde3c35e3bb7e5225dd7f234c685329c}{res}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ac70ac40ef8199c59316b35022dd21914}{response}}, and \mbox{\hyperlink{baseexternalclient_8js_ae3aac9dcd83d0a6524a3db7f78ecdce3}{stream}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_base_external_account_client_a9050d118276189d24a16ce5928a28335_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_base_external_account_client_a9050d118276189d24a16ce5928a28335_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_base_external_account_client_a401d8ae5c66bc97c2c032f7e750d32cb}\index{BaseExternalAccountClient@{BaseExternalAccountClient}!setCredentials@{setCredentials}}
+\index{setCredentials@{setCredentials}!BaseExternalAccountClient@{BaseExternalAccountClient}}
+\doxysubsubsection{\texorpdfstring{setCredentials()}{setCredentials()}}
+{\footnotesize\ttfamily \label{class_base_external_account_client_a401d8ae5c66bc97c2c032f7e750d32cb} 
+Base\+External\+Account\+Client\+::set\+Credentials (\begin{DoxyParamCaption}\item[{}]{credentials}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Provides a mechanism to inject GCP access tokens directly. When the provided credential expires, a new credential, using the external account options, is retrieved. 
+\begin{DoxyParams}{Parameters}
+{\em credentials} & The Credentials object to set on the current client. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{_0dgrpc_2grpc-js_2build_2src_2index_8js_a88f1ca34064fef6dc1e29d7d1cf5cfcf}{credentials}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/google-\/auth-\/library/build/src/auth/\mbox{\hyperlink{baseexternalclient_8js}{baseexternalclient.\+js}}\end{DoxyCompactItemize}

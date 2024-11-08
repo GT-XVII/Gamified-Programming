@@ -1,0 +1,15 @@
+<map id="Connection::nextTransportId_" name="Connection::nextTransportId_">
+<area shape="rect" id="Node000001" title=" " alt="" coords="901,55,1094,80"/>
+<area shape="rect" id="Node000002" href="$class_connection.html#a88533d064d11b8428ad64a5492f331ff" title=" " alt="" coords="700,29,828,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="885,58,828,52,829,46,886,53"/>
+<area shape="rect" id="Node000008" href="$class_connection.html#acbbf499767f048587000284304829b76" title=" " alt="" coords="675,79,853,104"/>
+<area shape="poly" id="edge6_Node000001_Node000008" title=" " alt="" coords="885,82,853,85,853,80,885,76"/>
+<area shape="rect" id="Node000003" href="$class_connection.html#a651f90fb27f831f0a148e1c7a4edce08" title=" " alt="" coords="467,5,627,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="684,36,628,30,628,24,685,31"/>
+<area shape="rect" id="Node000004" href="$class_connection.html#a0c2cf036417d3fbcd51185fcfaa865c0" title=" " alt="" coords="472,55,623,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="685,54,624,61,623,56,684,49"/>
+<area shape="rect" id="Node000005" href="$class_connection.html#a45442c96920d96ea88c3c941b937f16c" title=" " alt="" coords="261,55,419,80"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="456,70,419,70,419,65,456,65"/>
+<area shape="rect" id="Node000006" href="$class_connection.html#aa5c3762aae09c375df8d64110c19ef37" title=" " alt="" coords="5,47,213,88"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="245,70,213,70,213,65,245,65"/>
+</map>

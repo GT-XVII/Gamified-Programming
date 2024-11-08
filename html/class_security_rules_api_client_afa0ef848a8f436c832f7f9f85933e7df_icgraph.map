@@ -1,0 +1,28 @@
+<map id="SecurityRulesApiClient::getProjectIdPrefix" name="SecurityRulesApiClient::getProjectIdPrefix">
+<area shape="rect" id="Node000001" title=" " alt="" coords="636,104,793,145"/>
+<area shape="rect" id="Node000002" href="$class_security_rules_api_client.html#ae277a6cb3aba8b59a0f09f7f601189fd" title=" " alt="" coords="427,71,588,111"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="620,112,588,107,589,101,621,107"/>
+<area shape="rect" id="Node000006" href="$class_security_rules_api_client.html#a3177f32d0d98364da2e39baa6e5bac62" title=" " alt="" coords="430,136,586,177"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="621,141,587,147,586,142,621,136"/>
+<area shape="rect" id="Node000003" href="$class_security_rules_api_client.html#a383842c731004dc978b94c7518166900" title=" " alt="" coords="223,5,379,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="426,68,367,49,369,44,427,63"/>
+<area shape="rect" id="Node000005" href="$class_security_rules_api_client.html#a996054731c7c7c1bffe5db5dafc092fb" title=" " alt="" coords="223,71,379,111"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="412,94,379,94,379,88,412,88"/>
+<area shape="rect" id="Node000004" href="$class_security_rules_api_client.html#ab69bbe8146c91be0eebc4e55c85aeb84" title=" " alt="" coords="5,23,175,63"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="208,36,176,39,175,33,207,31"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="207,72,175,65,176,60,209,67"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="432,130,425,125,409,108,401,92,392,77,377,61,358,49,361,44,381,57,396,74,405,90,414,105,429,121,436,126"/>
+<area shape="poly" id="edge14_Node000006_Node000005" title=" " alt="" coords="426,133,367,115,369,109,427,128"/>
+<area shape="rect" id="Node000007" href="$class_security_rules_api_client.html#aa0e2494ee49145ff15bab9123ed87a3f" title=" " alt="" coords="223,267,379,307"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="473,189,430,223,380,256,356,268,354,264,378,251,427,219,469,185"/>
+<area shape="rect" id="Node000008" href="$class_security_rules_api_client.html#ad476cbeda31b99c02a0afcb13a957519" title=" " alt="" coords="223,332,379,373"/>
+<area shape="poly" id="edge9_Node000006_Node000008" title=" " alt="" coords="489,192,444,256,414,291,381,321,361,334,358,329,377,317,411,287,440,253,485,189"/>
+<area shape="rect" id="Node000009" href="$class_security_rules_api_client.html#aa7b56c73e0e4a99dd83edb9f111bdab8" title=" " alt="" coords="223,136,379,177"/>
+<area shape="poly" id="edge10_Node000006_Node000009" title=" " alt="" coords="414,159,379,159,379,154,414,154"/>
+<area shape="rect" id="Node000012" href="$class_security_rules_api_client.html#ab6aaf10281aa1c9ca68af32dfe5b6e12" title=" " alt="" coords="223,201,379,242"/>
+<area shape="poly" id="edge13_Node000006_Node000012" title=" " alt="" coords="427,184,369,203,367,198,426,179"/>
+<area shape="rect" id="Node000010" href="$class_security_rules_api_client.html#a0ec88c88b25c1cbb07f890f8b586fe16" title=" " alt="" coords="12,185,168,226"/>
+<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="209,181,169,190,168,185,207,175"/>
+<area shape="rect" id="Node000011" href="$class_security_rules_api_client.html#aebeb6d3ae68a7e36999c3d7ac1a9f975" title=" " alt="" coords="12,120,168,161"/>
+<area shape="poly" id="edge12_Node000009_Node000011" title=" " alt="" coords="207,152,168,149,169,144,208,147"/>
+</map>

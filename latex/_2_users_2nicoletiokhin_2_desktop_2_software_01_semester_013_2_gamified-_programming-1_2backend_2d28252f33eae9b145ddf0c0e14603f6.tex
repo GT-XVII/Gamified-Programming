@@ -1,0 +1,30 @@
+\doxysection{/\+Users/nicoletiokhin/\+Desktop/\+Software Semester 3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/@google-\/cloud/storage/build/esm/src/notification.\+js}
+\hypertarget{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_2d28252f33eae9b145ddf0c0e14603f6}{}\label{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_2d28252f33eae9b145ddf0c0e14603f6}\doxylink{class_a}{A} \doxylink{class_notification}{Notification} object is created from your {\ttfamily \doxylink{class_bucket}{Bucket}} object using {\ttfamily \doxylink{class_bucket_a2105a6cdf5c8952e529034df747e1c83}{Bucket\#notification}}. Use it to interact with Cloud Pub/\+Sub notifications.
+
+See {\ttfamily \doxylink{}{Cloud Pub/\+Sub Notifications for Google Cloud Storage}}
+
+@hideconstructor
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Bucket\}} & bucket The bucket instance this notification is attached to. \\
+\hline
+{\em \{string\}} & id The ID of the notification.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{const}\ \{\mbox{\hyperlink{class_storage}{Storage}}\}\ =\ \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textcolor{stringliteral}{'@google-\/cloud/storage'});}
+\DoxyCodeLine{\textcolor{keyword}{const}\ \mbox{\hyperlink{agent-base_2node__modules_2debug_2src_2browser_8js_a9db00901182c1c519126a0a5b7f3a560}{storage}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2cjs_2src_2storage_8js_a678db53c3e617f478f84125eb71b562d}{Storage}}();}
+\DoxyCodeLine{\textcolor{keyword}{const}\ myBucket\ =\ \mbox{\hyperlink{agent-base_2node__modules_2debug_2src_2browser_8js_a9db00901182c1c519126a0a5b7f3a560}{storage}}.bucket(\textcolor{stringliteral}{'my-\/bucket'});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{const}\ notification\ =\ myBucket.notification(\textcolor{charliteral}{'1'});}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyCodeInclude}{0}
+
+\end{DoxyCodeInclude}
+ Semester 3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/@google\doxylink{_0dgoogle-cloud_2storage_2build_2esm_2src_2notification_8js}{-\/cloud/storage/build/esm/src/notification.\+js} 

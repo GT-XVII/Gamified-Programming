@@ -1,0 +1,57 @@
+\doxysection{backend/node\+\_\+modules/jose/dist/node/cjs/lib/check\+\_\+iv\+\_\+length.js File Reference}
+\hypertarget{node_2cjs_2lib_2check__iv__length_8js}{}\label{node_2cjs_2lib_2check__iv__length_8js}\index{backend/node\_modules/jose/dist/node/cjs/lib/check\_iv\_length.js@{backend/node\_modules/jose/dist/node/cjs/lib/check\_iv\_length.js}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{node_2cjs_2lib_2check__iv__length_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{node_2cjs_2lib_2check__iv__length_8js_a285fbd72467b60dd40c49c8c9166b064}{errors\+\_\+js\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../util/errors.\+js"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{node_2cjs_2lib_2check__iv__length_8js_a72e34c053a63ced906440d13edc604be}{iv\+\_\+js\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./iv.\+js"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{node_2cjs_2lib_2check__iv__length_8js_a75cd14afa88a1c0cb796e4aac9508fc5}{check\+Iv\+Length}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{node_2cjs_2lib_2check__iv__length_8js_a48acd3189d40b017f47c93b673b8b8f6}{default}} = \mbox{\hyperlink{browser_2lib_2check__iv__length_8js_a85d3fae8f80aa8e32cb9d13136d12e4c}{check\+Iv\+Length}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{node_2cjs_2lib_2check__iv__length_8js_a75cd14afa88a1c0cb796e4aac9508fc5}\index{check\_iv\_length.js@{check\_iv\_length.js}!checkIvLength@{checkIvLength}}
+\index{checkIvLength@{checkIvLength}!check\_iv\_length.js@{check\_iv\_length.js}}
+\doxysubsubsection{\texorpdfstring{checkIvLength}{checkIvLength}}
+{\footnotesize\ttfamily \label{node_2cjs_2lib_2check__iv__length_8js_a75cd14afa88a1c0cb796e4aac9508fc5} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} check\+Iv\+Length}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ (enc,\ iv)\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (iv.length\ <<\ 3\ !==\ (0,\ \mbox{\hyperlink{node_2cjs_2lib_2check__iv__length_8js_a72e34c053a63ced906440d13edc604be}{iv\_js\_1}}.bitLength)(enc))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{node_2cjs_2lib_2check__iv__length_8js_a285fbd72467b60dd40c49c8c9166b064}{errors\_js\_1}}.JWEInvalid(\textcolor{stringliteral}{'Invalid\ Initialization\ Vector\ length'});}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{node_2cjs_2lib_2check__iv__length_8js_a48acd3189d40b017f47c93b673b8b8f6}\index{check\_iv\_length.js@{check\_iv\_length.js}!default@{default}}
+\index{default@{default}!check\_iv\_length.js@{check\_iv\_length.js}}
+\doxysubsubsection{\texorpdfstring{default}{default}}
+{\footnotesize\ttfamily \label{node_2cjs_2lib_2check__iv__length_8js_a48acd3189d40b017f47c93b673b8b8f6} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} default = \mbox{\hyperlink{browser_2lib_2check__iv__length_8js_a85d3fae8f80aa8e32cb9d13136d12e4c}{check\+Iv\+Length}}}
+
+\Hypertarget{node_2cjs_2lib_2check__iv__length_8js_a285fbd72467b60dd40c49c8c9166b064}\index{check\_iv\_length.js@{check\_iv\_length.js}!errors\_js\_1@{errors\_js\_1}}
+\index{errors\_js\_1@{errors\_js\_1}!check\_iv\_length.js@{check\_iv\_length.js}}
+\doxysubsubsection{\texorpdfstring{errors\_js\_1}{errors\_js\_1}}
+{\footnotesize\ttfamily \label{node_2cjs_2lib_2check__iv__length_8js_a285fbd72467b60dd40c49c8c9166b064} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} errors\+\_\+js\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../util/errors.\+js"{})}
+
+\Hypertarget{node_2cjs_2lib_2check__iv__length_8js_a72e34c053a63ced906440d13edc604be}\index{check\_iv\_length.js@{check\_iv\_length.js}!iv\_js\_1@{iv\_js\_1}}
+\index{iv\_js\_1@{iv\_js\_1}!check\_iv\_length.js@{check\_iv\_length.js}}
+\doxysubsubsection{\texorpdfstring{iv\_js\_1}{iv\_js\_1}}
+{\footnotesize\ttfamily \label{node_2cjs_2lib_2check__iv__length_8js_a72e34c053a63ced906440d13edc604be} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} iv\+\_\+js\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./iv.\+js"{})}
+
+\Hypertarget{node_2cjs_2lib_2check__iv__length_8js_ae2475e10618961c050dcba04e8c42331}\index{check\_iv\_length.js@{check\_iv\_length.js}!strict@{strict}}
+\index{strict@{strict}!check\_iv\_length.js@{check\_iv\_length.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{node_2cjs_2lib_2check__iv__length_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+

@@ -1,0 +1,7 @@
+<map id="howMuchToRead" name="howMuchToRead">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,128,56"/>
+<area shape="rect" id="Node000002" href="$__stream__readable_8js.html#a147f8d1867e1516e5bd2c61cdfce837d" title=" " alt="" coords="176,5,364,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,33,160,29,161,34,128,39"/>
+<area shape="rect" id="Node000003" href="$asynckit_2lib_2state_8js.html#a7e1b0ba367facd663d59372bd204ea01" title=" " alt="" coords="245,55,295,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="128,48,230,60,229,65,128,53"/>
+</map>

@@ -1,0 +1,106 @@
+\doxysection{backend/node\+\_\+modules/lodash/deburr.js File Reference}
+\hypertarget{deburr_8js}{}\label{deburr_8js}\index{backend/node\_modules/lodash/deburr.js@{backend/node\_modules/lodash/deburr.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{deburr_8js_aa945512eb5c74d3e7bf667f1fa7375ef}{deburr}} (\mbox{\hyperlink{reader_8js_a5c10456fb38514f2fe2b2da9323924ac}{string}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{deburr_8js_a033fcdbc293185974906687ed2d50b3a}{deburr\+Letter}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\+\_\+deburr\+Letter\textquotesingle{})
+\item 
+var \mbox{\hyperlink{deburr_8js_a7c9b2c6889147a97101a5409709b8d91}{to\+String}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./to\+String\textquotesingle{})
+\item 
+var \mbox{\hyperlink{deburr_8js_a169d461afaf3913560e04d4932609d64}{re\+Latin}} = /\mbox{[}\textbackslash{}xc0-\/\textbackslash{}xd6\textbackslash{}xd8-\/\textbackslash{}xf6\textbackslash{}xf8-\/\textbackslash{}xff\textbackslash{}u0100-\/\textbackslash{}u017f\mbox{]}/\mbox{\hyperlink{ordered-map_8min_8js_a103df269476e78897c9c4c6cb8f4eb06}{g}}
+\item 
+var \mbox{\hyperlink{deburr_8js_a885aad772f5897d96e5f8767bcec88ed}{rs\+Combo\+Marks\+Range}} = \textquotesingle{}\textbackslash{}\textbackslash{}u0300-\/\textbackslash{}\textbackslash{}u036f\textquotesingle{}
+\item 
+var \mbox{\hyperlink{deburr_8js_a94a4d252925472afd4f6b143853c19a0}{re\+Combo\+Half\+Marks\+Range}} = \textquotesingle{}\textbackslash{}\textbackslash{}ufe20-\/\textbackslash{}\textbackslash{}ufe2f\textquotesingle{}
+\item 
+var \mbox{\hyperlink{deburr_8js_a515a0cb5a96082753fd36385bf86693e}{rs\+Combo\+Symbols\+Range}} = \textquotesingle{}\textbackslash{}\textbackslash{}u20d0-\/\textbackslash{}\textbackslash{}u20ff\textquotesingle{}
+\item 
+var \mbox{\hyperlink{deburr_8js_a4a1eee3e8813830dd2fbd32b29b9247a}{rs\+Combo\+Range}} = \mbox{\hyperlink{lodash_8camelcase_2index_8js_a885aad772f5897d96e5f8767bcec88ed}{rs\+Combo\+Marks\+Range}} + \mbox{\hyperlink{__has_unicode_8js_a94a4d252925472afd4f6b143853c19a0}{re\+Combo\+Half\+Marks\+Range}} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_a515a0cb5a96082753fd36385bf86693e}{rs\+Combo\+Symbols\+Range}}
+\item 
+var \mbox{\hyperlink{deburr_8js_a3ad6c09dbc4945188e86cf6189da745c}{rs\+Combo}} = \textquotesingle{}\mbox{[}\textquotesingle{} + \mbox{\hyperlink{__has_unicode_8js_a4a1eee3e8813830dd2fbd32b29b9247a}{rs\+Combo\+Range}} + \textquotesingle{}\mbox{]}\textquotesingle{}
+\item 
+var \mbox{\hyperlink{deburr_8js_aa1339dbe56bcbf23f3e74b38608f6034}{re\+Combo\+Mark}} = Reg\+Exp(\mbox{\hyperlink{lodash_8camelcase_2index_8js_a3ad6c09dbc4945188e86cf6189da745c}{rs\+Combo}}, \textquotesingle{}\mbox{\hyperlink{ordered-map_8min_8js_a103df269476e78897c9c4c6cb8f4eb06}{g}}\textquotesingle{})
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{deburr_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} = \mbox{\hyperlink{__create_compounder_8js_afbf29805ed59c07d5a678ae112e50cdf}{deburr}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{deburr_8js_aa945512eb5c74d3e7bf667f1fa7375ef}\index{deburr.js@{deburr.js}!deburr@{deburr}}
+\index{deburr@{deburr}!deburr.js@{deburr.js}}
+\doxysubsubsection{\texorpdfstring{deburr()}{deburr()}}
+{\footnotesize\ttfamily \label{deburr_8js_aa945512eb5c74d3e7bf667f1fa7375ef} 
+function deburr (\begin{DoxyParamCaption}\item[{}]{string}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{deburr_8js_a033fcdbc293185974906687ed2d50b3a}{deburr\+Letter}}, \mbox{\hyperlink{deburr_8js_aa1339dbe56bcbf23f3e74b38608f6034}{re\+Combo\+Mark}}, \mbox{\hyperlink{deburr_8js_a169d461afaf3913560e04d4932609d64}{re\+Latin}}, and \mbox{\hyperlink{deburr_8js_a7c9b2c6889147a97101a5409709b8d91}{to\+String}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{deburr_8js_a033fcdbc293185974906687ed2d50b3a}\index{deburr.js@{deburr.js}!deburrLetter@{deburrLetter}}
+\index{deburrLetter@{deburrLetter}!deburr.js@{deburr.js}}
+\doxysubsubsection{\texorpdfstring{deburrLetter}{deburrLetter}}
+{\footnotesize\ttfamily \label{deburr_8js_a033fcdbc293185974906687ed2d50b3a} 
+var deburr\+Letter = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\+\_\+deburr\+Letter\textquotesingle{})}
+
+\Hypertarget{deburr_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\index{deburr.js@{deburr.js}!exports@{exports}}
+\index{exports@{exports}!deburr.js@{deburr.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \label{deburr_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports = \mbox{\hyperlink{__create_compounder_8js_afbf29805ed59c07d5a678ae112e50cdf}{deburr}}}
+
+\Hypertarget{deburr_8js_a94a4d252925472afd4f6b143853c19a0}\index{deburr.js@{deburr.js}!reComboHalfMarksRange@{reComboHalfMarksRange}}
+\index{reComboHalfMarksRange@{reComboHalfMarksRange}!deburr.js@{deburr.js}}
+\doxysubsubsection{\texorpdfstring{reComboHalfMarksRange}{reComboHalfMarksRange}}
+{\footnotesize\ttfamily \label{deburr_8js_a94a4d252925472afd4f6b143853c19a0} 
+var re\+Combo\+Half\+Marks\+Range = \textquotesingle{}\textbackslash{}\textbackslash{}ufe20-\/\textbackslash{}\textbackslash{}ufe2f\textquotesingle{}}
+
+\Hypertarget{deburr_8js_aa1339dbe56bcbf23f3e74b38608f6034}\index{deburr.js@{deburr.js}!reComboMark@{reComboMark}}
+\index{reComboMark@{reComboMark}!deburr.js@{deburr.js}}
+\doxysubsubsection{\texorpdfstring{reComboMark}{reComboMark}}
+{\footnotesize\ttfamily \label{deburr_8js_aa1339dbe56bcbf23f3e74b38608f6034} 
+var re\+Combo\+Mark = Reg\+Exp(\mbox{\hyperlink{lodash_8camelcase_2index_8js_a3ad6c09dbc4945188e86cf6189da745c}{rs\+Combo}}, \textquotesingle{}\mbox{\hyperlink{ordered-map_8min_8js_a103df269476e78897c9c4c6cb8f4eb06}{g}}\textquotesingle{})}
+
+Used to match \href{https://en.wikipedia.org/wiki/Combining_Diacritical_Marks}{\texttt{ combining diacritical marks}} and \href{https://en.wikipedia.org/wiki/Combining_Diacritical_Marks_for_Symbols}{\texttt{ combining diacritical marks for symbols}}. \Hypertarget{deburr_8js_a169d461afaf3913560e04d4932609d64}\index{deburr.js@{deburr.js}!reLatin@{reLatin}}
+\index{reLatin@{reLatin}!deburr.js@{deburr.js}}
+\doxysubsubsection{\texorpdfstring{reLatin}{reLatin}}
+{\footnotesize\ttfamily \label{deburr_8js_a169d461afaf3913560e04d4932609d64} 
+var re\+Latin = /\mbox{[}\textbackslash{}xc0-\/\textbackslash{}xd6\textbackslash{}xd8-\/\textbackslash{}xf6\textbackslash{}xf8-\/\textbackslash{}xff\textbackslash{}u0100-\/\textbackslash{}u017f\mbox{]}/\mbox{\hyperlink{ordered-map_8min_8js_a103df269476e78897c9c4c6cb8f4eb06}{g}}}
+
+Used to match Latin Unicode letters (excluding mathematical operators). \Hypertarget{deburr_8js_a3ad6c09dbc4945188e86cf6189da745c}\index{deburr.js@{deburr.js}!rsCombo@{rsCombo}}
+\index{rsCombo@{rsCombo}!deburr.js@{deburr.js}}
+\doxysubsubsection{\texorpdfstring{rsCombo}{rsCombo}}
+{\footnotesize\ttfamily \label{deburr_8js_a3ad6c09dbc4945188e86cf6189da745c} 
+var rs\+Combo = \textquotesingle{}\mbox{[}\textquotesingle{} + \mbox{\hyperlink{__has_unicode_8js_a4a1eee3e8813830dd2fbd32b29b9247a}{rs\+Combo\+Range}} + \textquotesingle{}\mbox{]}\textquotesingle{}}
+
+Used to compose unicode capture groups. \Hypertarget{deburr_8js_a885aad772f5897d96e5f8767bcec88ed}\index{deburr.js@{deburr.js}!rsComboMarksRange@{rsComboMarksRange}}
+\index{rsComboMarksRange@{rsComboMarksRange}!deburr.js@{deburr.js}}
+\doxysubsubsection{\texorpdfstring{rsComboMarksRange}{rsComboMarksRange}}
+{\footnotesize\ttfamily \label{deburr_8js_a885aad772f5897d96e5f8767bcec88ed} 
+var rs\+Combo\+Marks\+Range = \textquotesingle{}\textbackslash{}\textbackslash{}u0300-\/\textbackslash{}\textbackslash{}u036f\textquotesingle{}}
+
+Used to compose unicode character classes. \Hypertarget{deburr_8js_a4a1eee3e8813830dd2fbd32b29b9247a}\index{deburr.js@{deburr.js}!rsComboRange@{rsComboRange}}
+\index{rsComboRange@{rsComboRange}!deburr.js@{deburr.js}}
+\doxysubsubsection{\texorpdfstring{rsComboRange}{rsComboRange}}
+{\footnotesize\ttfamily \label{deburr_8js_a4a1eee3e8813830dd2fbd32b29b9247a} 
+var rs\+Combo\+Range = \mbox{\hyperlink{lodash_8camelcase_2index_8js_a885aad772f5897d96e5f8767bcec88ed}{rs\+Combo\+Marks\+Range}} + \mbox{\hyperlink{__has_unicode_8js_a94a4d252925472afd4f6b143853c19a0}{re\+Combo\+Half\+Marks\+Range}} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_a515a0cb5a96082753fd36385bf86693e}{rs\+Combo\+Symbols\+Range}}}
+
+\Hypertarget{deburr_8js_a515a0cb5a96082753fd36385bf86693e}\index{deburr.js@{deburr.js}!rsComboSymbolsRange@{rsComboSymbolsRange}}
+\index{rsComboSymbolsRange@{rsComboSymbolsRange}!deburr.js@{deburr.js}}
+\doxysubsubsection{\texorpdfstring{rsComboSymbolsRange}{rsComboSymbolsRange}}
+{\footnotesize\ttfamily \label{deburr_8js_a515a0cb5a96082753fd36385bf86693e} 
+var rs\+Combo\+Symbols\+Range = \textquotesingle{}\textbackslash{}\textbackslash{}u20d0-\/\textbackslash{}\textbackslash{}u20ff\textquotesingle{}}
+
+\Hypertarget{deburr_8js_a7c9b2c6889147a97101a5409709b8d91}\index{deburr.js@{deburr.js}!toString@{toString}}
+\index{toString@{toString}!deburr.js@{deburr.js}}
+\doxysubsubsection{\texorpdfstring{toString}{toString}}
+{\footnotesize\ttfamily \label{deburr_8js_a7c9b2c6889147a97101a5409709b8d91} 
+var to\+String = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./to\+String\textquotesingle{})}
+

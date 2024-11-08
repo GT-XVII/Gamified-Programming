@@ -1,0 +1,39 @@
+\doxysection{backend/node\+\_\+modules/jose/dist/browser/runtime/verify.js File Reference}
+\hypertarget{jose_2dist_2browser_2runtime_2verify_8js}{}\label{jose_2dist_2browser_2runtime_2verify_8js}\index{backend/node\_modules/jose/dist/browser/runtime/verify.js@{backend/node\_modules/jose/dist/browser/runtime/verify.js}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{component_2dist_2esm_2index_8esm2017_8js_a953be46b94f595d839e88a6d3d270309}{import}} subtle\+Algorithm from subtle\+\_\+dsa \mbox{\hyperlink{jose_2dist_2browser_2runtime_2verify_8js_a42c42d0365f3a34d11f07470ec950b8f}{js}}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{jose_2dist_2browser_2runtime_2verify_8js_aef27cf90f7f5269ad7122f8f7f14c457}{verify}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{jose_2dist_2browser_2runtime_2verify_8js_a42c42d0365f3a34d11f07470ec950b8f}\index{verify.js@{verify.js}!js@{js}}
+\index{js@{js}!verify.js@{verify.js}}
+\doxysubsubsection{\texorpdfstring{js}{js}}
+{\footnotesize\ttfamily \label{jose_2dist_2browser_2runtime_2verify_8js_a42c42d0365f3a34d11f07470ec950b8f} 
+\mbox{\hyperlink{component_2dist_2esm_2index_8esm2017_8js_a953be46b94f595d839e88a6d3d270309}{import}} get\+Verify\+Key from get\+\_\+sign\+\_\+verify\+\_\+key js}
+
+\Hypertarget{jose_2dist_2browser_2runtime_2verify_8js_aef27cf90f7f5269ad7122f8f7f14c457}\index{verify.js@{verify.js}!verify@{verify}}
+\index{verify@{verify}!verify.js@{verify.js}}
+\doxysubsubsection{\texorpdfstring{verify}{verify}}
+{\footnotesize\ttfamily \label{jose_2dist_2browser_2runtime_2verify_8js_aef27cf90f7f5269ad7122f8f7f14c457} 
+\mbox{\hyperlink{jsonwebtoken_2node__modules_2jws_2index_8js_ad5c4434a2a8f63da9fb3e71e39eb44d6}{Verify\+Stream}} verify}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}}\ (alg,\ key,\ \mbox{\hyperlink{util_2dist_2index_8cjs_8js_a49c27936a5413e9cfe35de3e98a0d4d7}{signature}},\ \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}})\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{const}\ cryptoKey\ =\ await\ getVerifyKey(alg,\ key,\ \textcolor{stringliteral}{'verify'});}
+\DoxyCodeLine{\ \ \ \ checkKeyLength(alg,\ cryptoKey);}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{const}\ algorithm\ =\ subtleAlgorithm(alg,\ cryptoKey.algorithm);}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ await\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a3eca37c9aac9a17870baa116339724e3}{crypto}}.subtle.verify(algorithm,\ cryptoKey,\ \mbox{\hyperlink{util_2dist_2index_8cjs_8js_a49c27936a5413e9cfe35de3e98a0d4d7}{signature}},\ \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}});}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{catch}\ (\mbox{\hyperlink{logger_2dist_2esm_2index_8esm5_8js_a0adf123df8967a14b5bdd9ff3bbe2d0c}{\_a}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}

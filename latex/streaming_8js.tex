@@ -1,0 +1,86 @@
+\doxysection{backend/node\+\_\+modules/google-\/gax/build/src/streaming\+Calls/streaming.js File Reference}
+\hypertarget{streaming_8js}{}\label{streaming_8js}\index{backend/node\_modules/google-\/gax/build/src/streamingCalls/streaming.js@{backend/node\_modules/google-\/gax/build/src/streamingCalls/streaming.js}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_stream_proxy}{Stream\+Proxy}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{streaming_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{streaming_8js_aa1596b4c5e0e7a6ddea1706e10dcc1db}{Stream\+Proxy}} = \mbox{\hyperlink{streaming_8js_a3da01373fd32f4ec9eaacdf2cf74ffb6}{exports.\+Stream\+Type}} = void 0
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{streaming_8js_af543d951cd813de4cca338839a98ab32}{google\+Error\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../google\+Error"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{streaming_8js_a4197658d1682e9288ee6dbc660ae9f3a}{streaming\+Retry\+Request\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../streaming\+Retry\+Request"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{streaming_8js_a74c7370f714eaf560437567361a88f5b}{status\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../status"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{streaming_8js_aa675fa79a33fe454fbb03fcacc359fd4}{duplexify}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}duplexify\textquotesingle{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{streaming_8js_a701da608ab0ff00f42f6b462046b5e1f}{retry\+Request}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}\mbox{\hyperlink{esm_2src_2bucket_8js_a451094c82c509e4de33de7f8df781a35}{retry}}-\/\mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}}\textquotesingle{})
+\item 
+var \mbox{\hyperlink{streaming_8js_a3da01373fd32f4ec9eaacdf2cf74ffb6}{Stream\+Type}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{streaming_8js_aa675fa79a33fe454fbb03fcacc359fd4}\index{streaming.js@{streaming.js}!duplexify@{duplexify}}
+\index{duplexify@{duplexify}!streaming.js@{streaming.js}}
+\doxysubsubsection{\texorpdfstring{duplexify}{duplexify}}
+{\footnotesize\ttfamily \label{streaming_8js_aa675fa79a33fe454fbb03fcacc359fd4} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} duplexify = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}duplexify\textquotesingle{})}
+
+\Hypertarget{streaming_8js_af543d951cd813de4cca338839a98ab32}\index{streaming.js@{streaming.js}!googleError\_1@{googleError\_1}}
+\index{googleError\_1@{googleError\_1}!streaming.js@{streaming.js}}
+\doxysubsubsection{\texorpdfstring{googleError\_1}{googleError\_1}}
+{\footnotesize\ttfamily \label{streaming_8js_af543d951cd813de4cca338839a98ab32} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} google\+Error\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../google\+Error"{})}
+
+\Hypertarget{streaming_8js_a701da608ab0ff00f42f6b462046b5e1f}\index{streaming.js@{streaming.js}!retryRequest@{retryRequest}}
+\index{retryRequest@{retryRequest}!streaming.js@{streaming.js}}
+\doxysubsubsection{\texorpdfstring{retryRequest}{retryRequest}}
+{\footnotesize\ttfamily \label{streaming_8js_a701da608ab0ff00f42f6b462046b5e1f} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} retry\+Request = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}\mbox{\hyperlink{esm_2src_2bucket_8js_a451094c82c509e4de33de7f8df781a35}{retry}}-\/\mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}}\textquotesingle{})}
+
+\Hypertarget{streaming_8js_a74c7370f714eaf560437567361a88f5b}\index{streaming.js@{streaming.js}!status\_1@{status\_1}}
+\index{status\_1@{status\_1}!streaming.js@{streaming.js}}
+\doxysubsubsection{\texorpdfstring{status\_1}{status\_1}}
+{\footnotesize\ttfamily \label{streaming_8js_a74c7370f714eaf560437567361a88f5b} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} status\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../status"{})}
+
+\Hypertarget{streaming_8js_a4197658d1682e9288ee6dbc660ae9f3a}\index{streaming.js@{streaming.js}!streamingRetryRequest\_1@{streamingRetryRequest\_1}}
+\index{streamingRetryRequest\_1@{streamingRetryRequest\_1}!streaming.js@{streaming.js}}
+\doxysubsubsection{\texorpdfstring{streamingRetryRequest\_1}{streamingRetryRequest\_1}}
+{\footnotesize\ttfamily \label{streaming_8js_a4197658d1682e9288ee6dbc660ae9f3a} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} streaming\+Retry\+Request\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../streaming\+Retry\+Request"{})}
+
+\Hypertarget{streaming_8js_aa1596b4c5e0e7a6ddea1706e10dcc1db}\index{streaming.js@{streaming.js}!StreamProxy@{StreamProxy}}
+\index{StreamProxy@{StreamProxy}!streaming.js@{streaming.js}}
+\doxysubsubsection{\texorpdfstring{StreamProxy}{StreamProxy}}
+{\footnotesize\ttfamily \label{streaming_8js_aa1596b4c5e0e7a6ddea1706e10dcc1db} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} Stream\+Proxy = \mbox{\hyperlink{streaming_8js_a3da01373fd32f4ec9eaacdf2cf74ffb6}{exports.\+Stream\+Type}} = void 0}
+
+\Hypertarget{streaming_8js_a3da01373fd32f4ec9eaacdf2cf74ffb6}\index{streaming.js@{streaming.js}!StreamType@{StreamType}}
+\index{StreamType@{StreamType}!streaming.js@{streaming.js}}
+\doxysubsubsection{\texorpdfstring{StreamType}{StreamType}}
+{\footnotesize\ttfamily \label{streaming_8js_a3da01373fd32f4ec9eaacdf2cf74ffb6} 
+function Stream\+Type}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{streaming_8js_a3da01373fd32f4ec9eaacdf2cf74ffb6}{StreamType}}[\mbox{\hyperlink{streaming_8js_a3da01373fd32f4ec9eaacdf2cf74ffb6}{StreamType}}[\textcolor{stringliteral}{"{}SERVER\_STREAMING"{}}]\ =\ 1]\ =\ \textcolor{stringliteral}{"{}SERVER\_STREAMING"{}}}
+
+\end{DoxyCode}
+\doxylink{class_client}{Client} streams requests, server returns a single response.
+
+Both client and server stream objects. \Hypertarget{streaming_8js_ae2475e10618961c050dcba04e8c42331}\index{streaming.js@{streaming.js}!strict@{strict}}
+\index{strict@{strict}!streaming.js@{streaming.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{streaming_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+

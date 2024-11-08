@@ -1,0 +1,34 @@
+\doxysection{backend/node\+\_\+modules/rxjs/dist/esm/internal/scheduler/interval\+Provider.js File Reference}
+\hypertarget{esm_2internal_2scheduler_2interval_provider_8js}{}\label{esm_2internal_2scheduler_2interval_provider_8js}\index{backend/node\_modules/rxjs/dist/esm/internal/scheduler/intervalProvider.js@{backend/node\_modules/rxjs/dist/esm/internal/scheduler/intervalProvider.js}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+export \mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{esm_2internal_2scheduler_2interval_provider_8js_acb75662d331a28574899701e0e04f071}{interval\+Provider}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{esm_2internal_2scheduler_2interval_provider_8js_acb75662d331a28574899701e0e04f071}\index{intervalProvider.js@{intervalProvider.js}!intervalProvider@{intervalProvider}}
+\index{intervalProvider@{intervalProvider}!intervalProvider.js@{intervalProvider.js}}
+\doxysubsubsection{\texorpdfstring{intervalProvider}{intervalProvider}}
+{\footnotesize\ttfamily \label{esm_2internal_2scheduler_2interval_provider_8js_acb75662d331a28574899701e0e04f071} 
+export \mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} interval\+Provider}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \ \ setInterval(handler,\ \mbox{\hyperlink{rxjs_2dist_2cjs_2internal_2operators_2timeout_8js_a56cd1f2498714e800f2da45ee2fd56b7}{timeout}},\ ...\mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_aeda6958b2fc8494c5a17f91600065eb9}{args}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \{\ delegate\ \}\ =\ \mbox{\hyperlink{esm_2internal_2scheduler_2interval_provider_8js_acb75662d331a28574899701e0e04f071}{intervalProvider}};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (delegate\ ===\ \textcolor{keyword}{null}\ ||\ delegate\ ===\ \textcolor{keywordtype}{void}\ 0\ ?\ \textcolor{keywordtype}{void}\ 0\ :\ delegate.setInterval)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ delegate.setInterval(handler,\ \mbox{\hyperlink{rxjs_2dist_2cjs_2internal_2operators_2timeout_8js_a56cd1f2498714e800f2da45ee2fd56b7}{timeout}},\ ...\mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_aeda6958b2fc8494c5a17f91600065eb9}{args}});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ setInterval(handler,\ \mbox{\hyperlink{rxjs_2dist_2cjs_2internal_2operators_2timeout_8js_a56cd1f2498714e800f2da45ee2fd56b7}{timeout}},\ ...\mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_aeda6958b2fc8494c5a17f91600065eb9}{args}});}
+\DoxyCodeLine{\ \ \ \ \},}
+\DoxyCodeLine{\ \ \ \ clearInterval(\mbox{\hyperlink{application_8js_a9f88a167a461dc8dbd869fe1e6d81b98}{handle}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \{\ delegate\ \}\ =\ \mbox{\hyperlink{esm_2internal_2scheduler_2interval_provider_8js_acb75662d331a28574899701e0e04f071}{intervalProvider}};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ ((delegate\ ===\ \textcolor{keyword}{null}\ ||\ delegate\ ===\ \textcolor{keywordtype}{void}\ 0\ ?\ \textcolor{keywordtype}{void}\ 0\ :\ delegate.clearInterval)\ ||\ clearInterval)(\mbox{\hyperlink{application_8js_a9f88a167a461dc8dbd869fe1e6d81b98}{handle}});}
+\DoxyCodeLine{\ \ \ \ \},}
+\DoxyCodeLine{\ \ \ \ delegate:\ \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}

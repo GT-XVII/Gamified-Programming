@@ -1,0 +1,131 @@
+\doxysection{Deflate\+Handler Class Reference}
+\hypertarget{class_deflate_handler}{}\label{class_deflate_handler}\index{DeflateHandler@{DeflateHandler}}
+
+
+Inheritance diagram for Deflate\+Handler\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{class_deflate_handler__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Deflate\+Handler\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{class_deflate_handler__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_deflate_handler_ad2a2d1005b97b1c500175985ab65fa34}{constructor}} (max\+Recv\+Message\+Length)
+\item 
+\mbox{\hyperlink{class_deflate_handler_a2fc5409be05e53cf53dd894374797757}{compress\+Message}} (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}})
+\item 
+\mbox{\hyperlink{class_deflate_handler_a86eaf4ec98914299ce727513babbdbf4}{decompress\+Message}} (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}})
+\item 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{class_compression_handler_a0ab88148dfd199cff9cefe44d8c67981}{write\+Message}} (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}, \mbox{\hyperlink{node2json_8js_acd97ec39370eb7c8149d807099b0bd68}{compress}})
+\item 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{class_compression_handler_a09f19ce90784219488f35bb354931ee9}{read\+Message}} (\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_deflate_handler_a2fc5409be05e53cf53dd894374797757}\index{DeflateHandler@{DeflateHandler}!compressMessage@{compressMessage}}
+\index{compressMessage@{compressMessage}!DeflateHandler@{DeflateHandler}}
+\doxysubsubsection{\texorpdfstring{compressMessage()}{compressMessage()}}
+{\footnotesize\ttfamily \label{class_deflate_handler_a2fc5409be05e53cf53dd894374797757} 
+Deflate\+Handler\+::compress\+Message (\begin{DoxyParamCaption}\item[{}]{message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}, \mbox{\hyperlink{__get_tag_8js_abace523389c17bce1848e3a427871700}{Promise}}, \mbox{\hyperlink{reject_8js_a94bc21104657e301a8ec194b529feaed}{reject()}}, \mbox{\hyperlink{_0dprotobufjs_2path_2index_8js_a2001ea102ec496ebdabe15e68493427a}{resolve}}, and \mbox{\hyperlink{compression-filter_8js_a27ccbb53720cd053c6ced7d851a6992e}{zlib}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{class_deflate_handler_a2fc5409be05e53cf53dd894374797757_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_deflate_handler_ad2a2d1005b97b1c500175985ab65fa34}\index{DeflateHandler@{DeflateHandler}!constructor@{constructor}}
+\index{constructor@{constructor}!DeflateHandler@{DeflateHandler}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_deflate_handler_ad2a2d1005b97b1c500175985ab65fa34} 
+Deflate\+Handler\+::constructor (\begin{DoxyParamCaption}\item[{}]{max\+Recv\+Message\+Length}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_deflate_handler_a86eaf4ec98914299ce727513babbdbf4}\index{DeflateHandler@{DeflateHandler}!decompressMessage@{decompressMessage}}
+\index{decompressMessage@{decompressMessage}!DeflateHandler@{DeflateHandler}}
+\doxysubsubsection{\texorpdfstring{decompressMessage()}{decompressMessage()}}
+{\footnotesize\ttfamily \label{class_deflate_handler_a86eaf4ec98914299ce727513babbdbf4} 
+Deflate\+Handler\+::decompress\+Message (\begin{DoxyParamCaption}\item[{}]{message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}, \mbox{\hyperlink{chunk_8js_a49c71f4b8e247d1267a25b3f04caef18}{chunk()}}, \mbox{\hyperlink{compression-filter_8js_ad33cb6840349d3bc93f4fe9de15a6f8f}{constants\+\_\+1}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}, \mbox{\hyperlink{__get_tag_8js_abace523389c17bce1848e3a427871700}{Promise}}, \mbox{\hyperlink{reject_8js_a94bc21104657e301a8ec194b529feaed}{reject()}}, \mbox{\hyperlink{_0dprotobufjs_2path_2index_8js_a2001ea102ec496ebdabe15e68493427a}{resolve}}, \mbox{\hyperlink{ordered-map_8min_8js_aa4a39500e3f754a8f2e1fd50b9ae523c}{size}}, and \mbox{\hyperlink{compression-filter_8js_a27ccbb53720cd053c6ced7d851a6992e}{zlib}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=299pt]{class_deflate_handler_a86eaf4ec98914299ce727513babbdbf4_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_compression_handler_a09f19ce90784219488f35bb354931ee9}\index{DeflateHandler@{DeflateHandler}!readMessage@{readMessage}}
+\index{readMessage@{readMessage}!DeflateHandler@{DeflateHandler}}
+\doxysubsubsection{\texorpdfstring{readMessage()}{readMessage()}}
+{\footnotesize\ttfamily \label{class_compression_handler_a09f19ce90784219488f35bb354931ee9} 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} Compression\+Handler\+::read\+Message (\begin{DoxyParamCaption}\item[{}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Framed message, possibly compressed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Uncompressed message 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}.
+
+\Hypertarget{class_compression_handler_a0ab88148dfd199cff9cefe44d8c67981}\index{DeflateHandler@{DeflateHandler}!writeMessage@{writeMessage}}
+\index{writeMessage@{writeMessage}!DeflateHandler@{DeflateHandler}}
+\doxysubsubsection{\texorpdfstring{writeMessage()}{writeMessage()}}
+{\footnotesize\ttfamily \label{class_compression_handler_a0ab88148dfd199cff9cefe44d8c67981} 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} Compression\+Handler\+::write\+Message (\begin{DoxyParamCaption}\item[{}]{message}{, }\item[{}]{compress}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & Raw uncompressed message bytes \\
+\hline
+{\em compress} & Indicates whether the message should be compressed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Framed message, compressed if applicable 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{node2json_8js_acd97ec39370eb7c8149d807099b0bd68}{compress()}}, and \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_compression_handler_a0ab88148dfd199cff9cefe44d8c67981_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/@grpc/grpc-\/js/build/src/\mbox{\hyperlink{compression-filter_8js}{compression-\/filter.\+js}}\end{DoxyCompactItemize}

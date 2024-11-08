@@ -1,0 +1,101 @@
+\doxysection{Batch\+Request\+Client Class Reference}
+\hypertarget{class_batch_request_client}{}\label{class_batch_request_client}\index{BatchRequestClient@{BatchRequestClient}}
+
+
+Collaboration diagram for Batch\+Request\+Client\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{class_batch_request_client__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_batch_request_client_a98344b157f72b23382e7a8155b0b7be7}{constructor}} (http\+Client, batch\+Url, common\+Headers)
+\item 
+\mbox{\hyperlink{class_batch_request_client_afeebfe344109d32d62dd0bb969cd077d}{send}} (requests)
+\item 
+\mbox{\hyperlink{class_batch_request_client_ae35eb09c51ad5161b4d9471ede27e107}{get\+Multipart\+Payload}} (requests)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An HTTP client that can be used to make batch requests. This client is not tied to any service (FCM or otherwise). Therefore it can be used to make batch requests to any service that allows it. If this requirement ever arises we can move this implementation to the utils module where it can be easily shared among other modules. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_batch_request_client_a98344b157f72b23382e7a8155b0b7be7}\index{BatchRequestClient@{BatchRequestClient}!constructor@{constructor}}
+\index{constructor@{constructor}!BatchRequestClient@{BatchRequestClient}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_batch_request_client_a98344b157f72b23382e7a8155b0b7be7} 
+Batch\+Request\+Client\+::constructor (\begin{DoxyParamCaption}\item[{}]{http\+Client}{, }\item[{}]{batch\+Url}{, }\item[{}]{common\+Headers}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Http\+Client\}} & http\+Client The client that will be used to make HTTP calls. \\
+\hline
+{\em \{string\}} & batch\+Url The URL that accepts batch requests. \\
+\hline
+{\em \{object=\}} & common\+Headers Optional headers that will be included in all requests.\\
+\hline
+\end{DoxyParams}
+@constructor \Hypertarget{class_batch_request_client_ae35eb09c51ad5161b4d9471ede27e107}\index{BatchRequestClient@{BatchRequestClient}!getMultipartPayload@{getMultipartPayload}}
+\index{getMultipartPayload@{getMultipartPayload}!BatchRequestClient@{BatchRequestClient}}
+\doxysubsubsection{\texorpdfstring{getMultipartPayload()}{getMultipartPayload()}}
+{\footnotesize\ttfamily \label{class_batch_request_client_ae35eb09c51ad5161b4d9471ede27e107} 
+Batch\+Request\+Client\+::get\+Multipart\+Payload (\begin{DoxyParamCaption}\item[{}]{requests}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{cjs_2internal_2operators_2buffer_8js_a838d54b935df11eff7928ba8da636891}{buffer}}, \mbox{\hyperlink{batch-request-internal_8js_a268ac22380d7f57a354fc2bce8820768}{create\+Part()}}, \mbox{\hyperlink{batch-request-internal_8js_a4bb8d1a425407ca8ee6585ebf47c2ecd}{PART\+\_\+\+BOUNDARY}}, and \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_batch_request_client_ae35eb09c51ad5161b4d9471ede27e107_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{class_batch_request_client_ae35eb09c51ad5161b4d9471ede27e107_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_batch_request_client_afeebfe344109d32d62dd0bb969cd077d}\index{BatchRequestClient@{BatchRequestClient}!send@{send}}
+\index{send@{send}!BatchRequestClient@{BatchRequestClient}}
+\doxysubsubsection{\texorpdfstring{send()}{send()}}
+{\footnotesize\ttfamily \label{class_batch_request_client_afeebfe344109d32d62dd0bb969cd077d} 
+Batch\+Request\+Client\+::send (\begin{DoxyParamCaption}\item[{}]{requests}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sends the given array of sub requests as a single batch, and parses the results into an array of {\ttfamily Request\+Response} objects.
+
+
+\begin{DoxyParams}{Parameters}
+{\em requests} & -\/ An array of sub requests to send. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_a}{A} promise that resolves when the send operation is complete. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{batch-request-internal_8js_a73dd1e6f0bc0a0234576ddef2bbe0452}{api\+\_\+request\+\_\+1}}, \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}, \mbox{\hyperlink{batch-request-internal_8js_af1a99a3ff1a35c114bdd06cc7252beb6}{error\+\_\+1}}, \mbox{\hyperlink{class_batch_request_client_ae35eb09c51ad5161b4d9471ede27e107}{get\+Multipart\+Payload()}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7f2cb2fcdd79bf72cefd29b7bc2d10fa}{headers}}, \mbox{\hyperlink{lodash_2method_8js_a2f565198b0a61cb8648a01f0d9617cd7}{method}}, \mbox{\hyperlink{batch-request-internal_8js_a4bb8d1a425407ca8ee6585ebf47c2ecd}{PART\+\_\+\+BOUNDARY}}, \mbox{\hyperlink{agent-base_2dist_2helpers_8js_a960c3c3c7bce40c2aa54b029b3dbb9c8}{req}}, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ac70ac40ef8199c59316b35022dd21914}{response}}, \mbox{\hyperlink{batch-request-internal_8js_aedfb91334b47d5a51d65697b5d7cf5c1}{TEN\+\_\+\+SECONDS\+\_\+\+IN\+\_\+\+MILLIS}}, \mbox{\hyperlink{rxjs_2dist_2cjs_2internal_2operators_2timeout_8js_a56cd1f2498714e800f2da45ee2fd56b7}{timeout}}, and \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_acf0a8b41f00a22e21672c8b3768a0618}{url}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_batch_request_client_afeebfe344109d32d62dd0bb969cd077d_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/firebase-\/admin/lib/messaging/\mbox{\hyperlink{batch-request-internal_8js}{batch-\/request-\/internal.\+js}}\end{DoxyCompactItemize}

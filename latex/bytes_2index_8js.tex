@@ -1,0 +1,191 @@
+\doxysection{backend/node\+\_\+modules/bytes/index.js File Reference}
+\hypertarget{bytes_2index_8js}{}\label{bytes_2index_8js}\index{backend/node\_modules/bytes/index.js@{backend/node\_modules/bytes/index.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{bytes_2index_8js_adeb1431b84efe09355bbd01e42326838}{bytes}} (\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}, options)
+\item 
+function \mbox{\hyperlink{bytes_2index_8js_abe609f6530a12306839787778f9f0a09}{format}} (\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}, options)
+\item 
+function \mbox{\hyperlink{bytes_2index_8js_a4b0c2185d35bf0049a385542da99334a}{parse}} (val)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{bytes_2index_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{bytes_2index_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} = \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{bytes_2index_8js_a9027c5af360d5ef99cc9906449e85a27}{format}} = format
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{bytes_2index_8js_a28ecd76297a5d556aac05441b295f93c}{parse}} = parse
+\item 
+var \mbox{\hyperlink{bytes_2index_8js_aac7afbc729c505f1f9b4019c134bb3a2}{format\+Thousands\+Reg\+Exp}} = /\textbackslash{}\mbox{\hyperlink{ordered-map_8min_8js_ab7f8bbc43067ded7759fb964cd756418}{B}}(?=(\textbackslash{}\mbox{\hyperlink{uuid_8min_8js_aeb337d295abaddb5ec3cb34cc2e2bbc9}{d}}\{3\})+(?!\textbackslash{}\mbox{\hyperlink{uuid_8min_8js_aeb337d295abaddb5ec3cb34cc2e2bbc9}{d}}))/\mbox{\hyperlink{ordered-map_8min_8js_a103df269476e78897c9c4c6cb8f4eb06}{g}}
+\item 
+var \mbox{\hyperlink{bytes_2index_8js_a3787d1b6ea0a8a3830ef5b20dde86faf}{format\+Decimals\+Reg\+Exp}} = /(?\+:\textbackslash{}.\+0\texorpdfstring{$\ast$}{*}\texorpdfstring{$\vert$}{|}(\textbackslash{}.\mbox{[}\texorpdfstring{$^\wedge$}{\string^}0\mbox{]}+)0+)\$/
+\item 
+var \mbox{\hyperlink{bytes_2index_8js_a48e18769649a3ca5bab0fafdec44cb15}{map}}
+\item 
+var \mbox{\hyperlink{bytes_2index_8js_a91a2aee55639e45d0e4a4484025b538a}{parse\+Reg\+Exp}} = /\texorpdfstring{$^\wedge$}{\string^}((-\/\texorpdfstring{$\vert$}{|}\textbackslash{}+)?(\textbackslash{}\mbox{\hyperlink{uuid_8min_8js_aeb337d295abaddb5ec3cb34cc2e2bbc9}{d}}+(?\+:\textbackslash{}.\textbackslash{}\mbox{\hyperlink{uuid_8min_8js_aeb337d295abaddb5ec3cb34cc2e2bbc9}{d}}+)?)) \texorpdfstring{$\ast$}{*}(kb\texorpdfstring{$\vert$}{|}mb\texorpdfstring{$\vert$}{|}gb\texorpdfstring{$\vert$}{|}tb\texorpdfstring{$\vert$}{|}pb)\$/\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{bytes_2index_8js_adeb1431b84efe09355bbd01e42326838}\index{index.js@{index.js}!bytes@{bytes}}
+\index{bytes@{bytes}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{bytes()}{bytes()}}
+{\footnotesize\ttfamily \label{bytes_2index_8js_adeb1431b84efe09355bbd01e42326838} 
+function bytes (\begin{DoxyParamCaption}\item[{}]{value}{, }\item[{}]{options}{}\end{DoxyParamCaption})}
+
+Convert the given value in bytes into a string or parse to string to an integer in bytes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{string\texorpdfstring{$\vert$}{|}number\}} & value \\
+\hline
+{\em \{\{} & case\+: \mbox{[}string\mbox{]}, decimal\+Places\+: \mbox{[}number\mbox{]} fixed\+Decimals\+: \mbox{[}boolean\mbox{]} thousands\+Separator\+: \mbox{[}string\mbox{]} unit\+Separator\+: \mbox{[}string\mbox{]} \}\} \mbox{[}options\mbox{]} bytes options.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{string\texorpdfstring{$\vert$}{|}number\texorpdfstring{$\vert$}{|}null\} 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{bytes_2index_8js_a9027c5af360d5ef99cc9906449e85a27}{format}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa96c2329bbb4c535fae1093499f4ad49}{parse}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.
+
+\Hypertarget{bytes_2index_8js_abe609f6530a12306839787778f9f0a09}\index{index.js@{index.js}!format@{format}}
+\index{format@{format}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{format()}{format()}}
+{\footnotesize\ttfamily \label{bytes_2index_8js_abe609f6530a12306839787778f9f0a09} 
+function format (\begin{DoxyParamCaption}\item[{}]{value}{, }\item[{}]{options}{}\end{DoxyParamCaption})}
+
+Format the given value in bytes into a string.
+
+If the value is negative, it is kept as such. If it is a float, it is rounded.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{number\}} & value \\
+\hline
+{\em \{object\}} & \mbox{[}options\mbox{]} \\
+\hline
+{\em \{number\}} & \mbox{[}options.\+decimal\+Places=2\mbox{]} \\
+\hline
+{\em \{number\}} & \mbox{[}options.\+fixed\+Decimals=false\mbox{]} \\
+\hline
+{\em \{string\}} & \mbox{[}options.\+thousands\+Separator=\mbox{]} \\
+\hline
+{\em \{string\}} & \mbox{[}options.\+unit=\mbox{]} \\
+\hline
+{\em \{string\}} & \mbox{[}options.\+unit\+Separator=\mbox{]}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{string\texorpdfstring{$\vert$}{|}null\} 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{bytes_2index_8js_a3787d1b6ea0a8a3830ef5b20dde86faf}{format\+Decimals\+Reg\+Exp}}, \mbox{\hyperlink{bytes_2index_8js_aac7afbc729c505f1f9b4019c134bb3a2}{format\+Thousands\+Reg\+Exp}}, \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a500bc97a63b7c35b84493a7f90ef44d6}{join}}, \mbox{\hyperlink{bytes_2index_8js_a48e18769649a3ca5bab0fafdec44cb15}{map}}, \mbox{\hyperlink{ordered-map_8min_8js_ad9a7d92cb87932d25187fdec3ba1b621}{s}}, \mbox{\hyperlink{json-bigint_2lib_2stringify_8js_abd4075a8f329b0ccafd81359c952a9df}{str()}}, \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=189pt]{bytes_2index_8js_abe609f6530a12306839787778f9f0a09_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{bytes_2index_8js_a4b0c2185d35bf0049a385542da99334a}\index{index.js@{index.js}!parse@{parse}}
+\index{parse@{parse}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily \label{bytes_2index_8js_a4b0c2185d35bf0049a385542da99334a} 
+function parse (\begin{DoxyParamCaption}\item[{}]{val}{}\end{DoxyParamCaption})}
+
+Parse the string value into an integer in bytes.
+
+If no unit is given, it is assumed the value is in bytes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{number\texorpdfstring{$\vert$}{|}string\}} & val\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{number\texorpdfstring{$\vert$}{|}null\} 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{lodash_2core_8js_ae2c7b9b535f93c96826bdbe1da681ceb}{is\+NaN}}, \mbox{\hyperlink{bytes_2index_8js_a48e18769649a3ca5bab0fafdec44cb15}{map}}, \mbox{\hyperlink{parse_int_8js_a04ee837a5f7721fcb0ea2d152162ef92}{parse\+Int()}}, and \mbox{\hyperlink{bytes_2index_8js_a91a2aee55639e45d0e4a4484025b538a}{parse\+Reg\+Exp}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{bytes_2index_8js_a4b0c2185d35bf0049a385542da99334a_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{bytes_2index_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\index{index.js@{index.js}!exports@{exports}}
+\index{exports@{exports}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \label{bytes_2index_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports = \mbox{\hyperlink{nodejs_2farmhash__modern_8js_ab4415a1984303e3efc591e24fc521e25}{bytes}}}
+
+Module exports. \Hypertarget{bytes_2index_8js_a9027c5af360d5ef99cc9906449e85a27}\index{index.js@{index.js}!format@{format}}
+\index{format@{format}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{format}{format}}
+{\footnotesize\ttfamily \label{bytes_2index_8js_a9027c5af360d5ef99cc9906449e85a27} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} format = format}
+
+\Hypertarget{bytes_2index_8js_a3787d1b6ea0a8a3830ef5b20dde86faf}\index{index.js@{index.js}!formatDecimalsRegExp@{formatDecimalsRegExp}}
+\index{formatDecimalsRegExp@{formatDecimalsRegExp}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{formatDecimalsRegExp}{formatDecimalsRegExp}}
+{\footnotesize\ttfamily \label{bytes_2index_8js_a3787d1b6ea0a8a3830ef5b20dde86faf} 
+var format\+Decimals\+Reg\+Exp = /(?\+:\textbackslash{}.\+0\texorpdfstring{$\ast$}{*}\texorpdfstring{$\vert$}{|}(\textbackslash{}.\mbox{[}\texorpdfstring{$^\wedge$}{\string^}0\mbox{]}+)0+)\$/}
+
+\Hypertarget{bytes_2index_8js_aac7afbc729c505f1f9b4019c134bb3a2}\index{index.js@{index.js}!formatThousandsRegExp@{formatThousandsRegExp}}
+\index{formatThousandsRegExp@{formatThousandsRegExp}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{formatThousandsRegExp}{formatThousandsRegExp}}
+{\footnotesize\ttfamily \label{bytes_2index_8js_aac7afbc729c505f1f9b4019c134bb3a2} 
+var format\+Thousands\+Reg\+Exp = /\textbackslash{}\mbox{\hyperlink{ordered-map_8min_8js_ab7f8bbc43067ded7759fb964cd756418}{B}}(?=(\textbackslash{}\mbox{\hyperlink{uuid_8min_8js_aeb337d295abaddb5ec3cb34cc2e2bbc9}{d}}\{3\})+(?!\textbackslash{}\mbox{\hyperlink{uuid_8min_8js_aeb337d295abaddb5ec3cb34cc2e2bbc9}{d}}))/\mbox{\hyperlink{ordered-map_8min_8js_a103df269476e78897c9c4c6cb8f4eb06}{g}}\hspace{0.3cm}{\ttfamily [private]}}
+
+Module variables. \Hypertarget{bytes_2index_8js_a48e18769649a3ca5bab0fafdec44cb15}\index{index.js@{index.js}!map@{map}}
+\index{map@{map}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{map}{map}}
+{\footnotesize\ttfamily \label{bytes_2index_8js_a48e18769649a3ca5bab0fafdec44cb15} 
+var map}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}:\ \ 1,}
+\DoxyCodeLine{\ \ kb:\ 1\ <<\ 10,}
+\DoxyCodeLine{\ \ mb:\ 1\ <<\ 20,}
+\DoxyCodeLine{\ \ gb:\ 1\ <<\ 30,}
+\DoxyCodeLine{\ \ tb:\ Math.pow(1024,\ 4),}
+\DoxyCodeLine{\ \ pb:\ Math.pow(1024,\ 5),}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{bytes_2index_8js_a28ecd76297a5d556aac05441b295f93c}\index{index.js@{index.js}!parse@{parse}}
+\index{parse@{parse}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{parse}{parse}}
+{\footnotesize\ttfamily \label{bytes_2index_8js_a28ecd76297a5d556aac05441b295f93c} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} parse = parse}
+
+\Hypertarget{bytes_2index_8js_a91a2aee55639e45d0e4a4484025b538a}\index{index.js@{index.js}!parseRegExp@{parseRegExp}}
+\index{parseRegExp@{parseRegExp}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{parseRegExp}{parseRegExp}}
+{\footnotesize\ttfamily \label{bytes_2index_8js_a91a2aee55639e45d0e4a4484025b538a} 
+var parse\+Reg\+Exp = /\texorpdfstring{$^\wedge$}{\string^}((-\/\texorpdfstring{$\vert$}{|}\textbackslash{}+)?(\textbackslash{}\mbox{\hyperlink{uuid_8min_8js_aeb337d295abaddb5ec3cb34cc2e2bbc9}{d}}+(?\+:\textbackslash{}.\textbackslash{}\mbox{\hyperlink{uuid_8min_8js_aeb337d295abaddb5ec3cb34cc2e2bbc9}{d}}+)?)) \texorpdfstring{$\ast$}{*}(kb\texorpdfstring{$\vert$}{|}mb\texorpdfstring{$\vert$}{|}gb\texorpdfstring{$\vert$}{|}tb\texorpdfstring{$\vert$}{|}pb)\$/\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}}
+
+\Hypertarget{bytes_2index_8js_ae2475e10618961c050dcba04e8c42331}\index{index.js@{index.js}!strict@{strict}}
+\index{strict@{strict}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{bytes_2index_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+
+bytes Copyright(c) 2012-\/2014 TJ Holowaychuk Copyright(c) 2015 Jed Watson MIT Licensed 

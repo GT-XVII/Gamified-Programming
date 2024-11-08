@@ -1,0 +1,398 @@
+\doxysection{Http2\+Transport Class Reference}
+\hypertarget{class_http2_transport}{}\label{class_http2_transport}\index{Http2Transport@{Http2Transport}}
+
+
+Collaboration diagram for Http2\+Transport\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{class_http2_transport__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_http2_transport_a1808a554996a91c906f712ce183e2ca7}{constructor}} (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a3bb9e2b145c6085298a45027f885f0d3}{session}}, subchannel\+Address, options, remote\+Name)
+\item 
+\mbox{\hyperlink{class_http2_transport_afa38be2f2a3f87ebdee779ceed2e158d}{get\+Channelz\+Info}} ()
+\item 
+\mbox{\hyperlink{class_http2_transport_acc9b06a7d830b9f11b38e97938f1a10f}{trace}} (\mbox{\hyperlink{node-forge_2lib_2util_8js_ab492f69e70933f85fe6b3a8808d19852}{text}})
+\item 
+\mbox{\hyperlink{class_http2_transport_a008136a5819d072f7be0826d2d00f2a5}{keepalive\+Trace}} (\mbox{\hyperlink{node-forge_2lib_2util_8js_ab492f69e70933f85fe6b3a8808d19852}{text}})
+\item 
+\mbox{\hyperlink{class_http2_transport_a463b91fd056400e06dd91cbbcf3f4b70}{flow\+Control\+Trace}} (\mbox{\hyperlink{node-forge_2lib_2util_8js_ab492f69e70933f85fe6b3a8808d19852}{text}})
+\item 
+\mbox{\hyperlink{class_http2_transport_a5cd706383ee876bbeb6101dd635a6e62}{internals\+Trace}} (\mbox{\hyperlink{node-forge_2lib_2util_8js_ab492f69e70933f85fe6b3a8808d19852}{text}})
+\item 
+\mbox{\hyperlink{class_http2_transport_af7386aa4ecd45e161a5488b1ec1aca5d}{report\+Disconnect\+To\+Owner}} (too\+Many\+Pings)
+\item 
+\mbox{\hyperlink{class_http2_transport_af7c82fe69e2b67cfe9fd528b66c2949d}{handle\+Disconnect}} ()
+\item 
+\mbox{\hyperlink{class_http2_transport_ad3806019f65f2d48441421b193d2f1e1}{add\+Disconnect\+Listener}} (listener)
+\item 
+\mbox{\hyperlink{class_http2_transport_a3e5e1ba5de580d4ff4327b65cbd5b3c6}{can\+Send\+Ping}} ()
+\item 
+\mbox{\hyperlink{class_http2_transport_abce3cbb9b5d1c42336a2f46f92aeb7e5}{maybe\+Send\+Ping}} ()
+\item 
+\mbox{\hyperlink{class_http2_transport_afc6fd7defde2b7e2e498bc65c7f88cc6}{maybe\+Start\+Keepalive\+Ping\+Timer}} ()
+\item 
+\mbox{\hyperlink{class_http2_transport_a0e3963f20a62add707a40fb85a7241d8}{clear\+Keepalive\+Timeout}} ()
+\item 
+\mbox{\hyperlink{class_http2_transport_aa92008e2e5121f315f877bdcd59a4b1c}{remove\+Active\+Call}} (\mbox{\hyperlink{hasown_2index_8js_af41b23e59e21fbbca9175e1dbd07b54e}{call}})
+\item 
+\mbox{\hyperlink{class_http2_transport_ae7e1069ab432aed081023ae7eece7451}{add\+Active\+Call}} (\mbox{\hyperlink{hasown_2index_8js_af41b23e59e21fbbca9175e1dbd07b54e}{call}})
+\item 
+\mbox{\hyperlink{class_http2_transport_a619d3c32fc540ff0a63dd3232723c447}{create\+Call}} (metadata, host, \mbox{\hyperlink{lodash_2method_8js_a2f565198b0a61cb8648a01f0d9617cd7}{method}}, listener, subchannel\+Call\+Stats\+Tracker)
+\item 
+\mbox{\hyperlink{class_http2_transport_aedfe8a0de06f92954a5967b6428ff1ee}{get\+Channelz\+Ref}} ()
+\item 
+\mbox{\hyperlink{class_http2_transport_aa25271b617f6ee5c6a0791a95508fce9}{get\+Peer\+Name}} ()
+\item 
+\mbox{\hyperlink{class_http2_transport_ad7b0453c65c36ecbbda5e5a29307d6b4}{get\+Options}} ()
+\item 
+\mbox{\hyperlink{class_http2_transport_acc862abb21f4382919ca4e5155cb4dae}{shutdown}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_http2_transport_ae7e1069ab432aed081023ae7eece7451}\index{Http2Transport@{Http2Transport}!addActiveCall@{addActiveCall}}
+\index{addActiveCall@{addActiveCall}!Http2Transport@{Http2Transport}}
+\doxysubsubsection{\texorpdfstring{addActiveCall()}{addActiveCall()}}
+{\footnotesize\ttfamily \label{class_http2_transport_ae7e1069ab432aed081023ae7eece7451} 
+Http2\+Transport\+::add\+Active\+Call (\begin{DoxyParamCaption}\item[{}]{call}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{hasown_2index_8js_af41b23e59e21fbbca9175e1dbd07b54e}{call}}, \mbox{\hyperlink{class_http2_transport_afc6fd7defde2b7e2e498bc65c7f88cc6}{maybe\+Start\+Keepalive\+Ping\+Timer()}}, and \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a3bb9e2b145c6085298a45027f885f0d3}{session}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_http2_transport_ae7e1069ab432aed081023ae7eece7451_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_http2_transport_ae7e1069ab432aed081023ae7eece7451_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_http2_transport_ad3806019f65f2d48441421b193d2f1e1}\index{Http2Transport@{Http2Transport}!addDisconnectListener@{addDisconnectListener}}
+\index{addDisconnectListener@{addDisconnectListener}!Http2Transport@{Http2Transport}}
+\doxysubsubsection{\texorpdfstring{addDisconnectListener()}{addDisconnectListener()}}
+{\footnotesize\ttfamily \label{class_http2_transport_ad3806019f65f2d48441421b193d2f1e1} 
+Http2\+Transport\+::add\+Disconnect\+Listener (\begin{DoxyParamCaption}\item[{}]{listener}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_http2_transport_a3e5e1ba5de580d4ff4327b65cbd5b3c6}\index{Http2Transport@{Http2Transport}!canSendPing@{canSendPing}}
+\index{canSendPing@{canSendPing}!Http2Transport@{Http2Transport}}
+\doxysubsubsection{\texorpdfstring{canSendPing()}{canSendPing()}}
+{\footnotesize\ttfamily \label{class_http2_transport_a3e5e1ba5de580d4ff4327b65cbd5b3c6} 
+Http2\+Transport\+::can\+Send\+Ping (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a3bb9e2b145c6085298a45027f885f0d3}{session}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_http2_transport_a3e5e1ba5de580d4ff4327b65cbd5b3c6_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_http2_transport_a0e3963f20a62add707a40fb85a7241d8}\index{Http2Transport@{Http2Transport}!clearKeepaliveTimeout@{clearKeepaliveTimeout}}
+\index{clearKeepaliveTimeout@{clearKeepaliveTimeout}!Http2Transport@{Http2Transport}}
+\doxysubsubsection{\texorpdfstring{clearKeepaliveTimeout()}{clearKeepaliveTimeout()}}
+{\footnotesize\ttfamily \label{class_http2_transport_a0e3963f20a62add707a40fb85a7241d8} 
+Http2\+Transport\+::clear\+Keepalive\+Timeout (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Clears whichever keepalive timeout is currently active, if any. Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_http2_transport_a0e3963f20a62add707a40fb85a7241d8_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_http2_transport_a1808a554996a91c906f712ce183e2ca7}\index{Http2Transport@{Http2Transport}!constructor@{constructor}}
+\index{constructor@{constructor}!Http2Transport@{Http2Transport}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_http2_transport_a1808a554996a91c906f712ce183e2ca7} 
+Http2\+Transport\+::constructor (\begin{DoxyParamCaption}\item[{}]{session}{, }\item[{}]{subchannel\+Address}{, }\item[{}]{options}{, }\item[{}]{remote\+Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Timer reference indicating when to send the next ping or when the most recent ping will be considered lost.
+
+Indicates that the keepalive timer ran out while there were no active calls, and a ping should be sent the next time a call starts.
+\begin{DoxyParams}{Parameters}
+{\em remote\+Name} & Name of the remote server, if it is not the same as the subchannel address, i.\+e. if connecting through an HTTP CONNECT proxy. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{transport_8js_a1c963d3b854ccff6bad1a2f8b0f7f18a}{channelz\+\_\+1}}, \mbox{\hyperlink{transport_8js_a7f742a86630bf44123c69dafc8eca74e}{client\+Version}}, \mbox{\hyperlink{firestore__admin__v1__proto__api_8js_a08a4415e9d594ff960030b921d42b91e}{e}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}}, \mbox{\hyperlink{class_http2_transport_afa38be2f2a3f87ebdee779ceed2e158d}{get\+Channelz\+Info()}}, \mbox{\hyperlink{grpc_8js_a42e9afda263e8798e687bf032e968ff4}{grpc}}, \mbox{\hyperlink{class_http2_transport_af7c82fe69e2b67cfe9fd528b66c2949d}{handle\+Disconnect()}}, \mbox{\hyperlink{transport_8js_a41a25b54de72b0be6fc52792a59af64c}{http2}}, \mbox{\hyperlink{esm_2src_2file_8js_a73ffb0a3b9f028910adc01ac31153d46}{js}}, \mbox{\hyperlink{json-bigint_2lib_2stringify_8js_aec316efdeb7b2e5358b7d50869858da1}{JSON}}, \mbox{\hyperlink{transport_8js_a0f08ca60c7f75e701495466571cfea7a}{KEEPALIVE\+\_\+\+TIMEOUT\+\_\+\+MS}}, \mbox{\hyperlink{transport_8js_ab53afa7b9c9aef77e950713c8b54c98c}{logging}}, \mbox{\hyperlink{class_http2_transport_afc6fd7defde2b7e2e498bc65c7f88cc6}{maybe\+Start\+Keepalive\+Ping\+Timer()}}, \mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2platform_2index_8js_a74c72f849f998803d0f301e524445c36}{node}}, \mbox{\hyperlink{class_http2_transport_af7386aa4ecd45e161a5488b1ec1aca5d}{report\+Disconnect\+To\+Owner()}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a3bb9e2b145c6085298a45027f885f0d3}{session}}, \mbox{\hyperlink{__create_set_8js_ab9f46b8207185d305162498bea0d1c26}{Set}}, \mbox{\hyperlink{transport_8js_a46c0e253ac00dface70796e150cad858}{subchannel\+\_\+address\+\_\+1}}, \mbox{\hyperlink{transport_8js_a1d0af8dba30251d989812fd1bfc82eba}{too\+Many\+Pings\+Data}}, \mbox{\hyperlink{logging_8js_acb1634453d1705af9683695efa3847e6}{trace}}, and \mbox{\hyperlink{transport_8js_a4d771a845df73d12433ddcb6b91f8b9a}{TRACER\+\_\+\+NAME}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_http2_transport_a1808a554996a91c906f712ce183e2ca7_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_http2_transport_a619d3c32fc540ff0a63dd3232723c447}\index{Http2Transport@{Http2Transport}!createCall@{createCall}}
+\index{createCall@{createCall}!Http2Transport@{Http2Transport}}
+\doxysubsubsection{\texorpdfstring{createCall()}{createCall()}}
+{\footnotesize\ttfamily \label{class_http2_transport_a619d3c32fc540ff0a63dd3232723c447} 
+Http2\+Transport\+::create\+Call (\begin{DoxyParamCaption}\item[{}]{metadata}{, }\item[{}]{host}{, }\item[{}]{method}{, }\item[{}]{listener}{, }\item[{}]{subchannel\+Call\+Stats\+Tracker}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{logger_2dist_2esm_2index_8esm5_8js_a0adf123df8967a14b5bdd9ff3bbe2d0c}{\+\_\+a}}, \mbox{\hyperlink{class_http2_transport_ae7e1069ab432aed081023ae7eece7451}{add\+Active\+Call()}}, \mbox{\hyperlink{hasown_2index_8js_af41b23e59e21fbbca9175e1dbd07b54e}{call}}, \mbox{\hyperlink{transport_8js_a319740617d5b5b61d80127ac9926cd53}{call\+\_\+number\+\_\+1}}, \mbox{\hyperlink{firestore__admin__v1__proto__api_8js_a08a4415e9d594ff960030b921d42b91e}{e}}, \mbox{\hyperlink{class_http2_transport_a463b91fd056400e06dd91cbbcf3f4b70}{flow\+Control\+Trace()}}, \mbox{\hyperlink{class_http2_transport_af7c82fe69e2b67cfe9fd528b66c2949d}{handle\+Disconnect()}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7f2cb2fcdd79bf72cefd29b7bc2d10fa}{headers}}, \mbox{\hyperlink{class_http2_transport_a5cd706383ee876bbeb6101dd635a6e62}{internals\+Trace()}}, \mbox{\hyperlink{lodash_2method_8js_a2f565198b0a61cb8648a01f0d9617cd7}{method}}, \mbox{\hyperlink{class_http2_transport_aa92008e2e5121f315f877bdcd59a4b1c}{remove\+Active\+Call()}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a3bb9e2b145c6085298a45027f885f0d3}{session}}, \mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2index_8js_aac9dfada3e10bfb087ebb0a95f284488}{status}}, \mbox{\hyperlink{transport_8js_aafc6a7b77c03bc3df2d5946af3573d13}{subchannel\+\_\+call\+\_\+1}}, and \mbox{\hyperlink{concurrently_2dist_2src_2defaults_8js_a7118084f766708fc137849390f20845b}{success}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_http2_transport_a619d3c32fc540ff0a63dd3232723c447_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_http2_transport_a463b91fd056400e06dd91cbbcf3f4b70}\index{Http2Transport@{Http2Transport}!flowControlTrace@{flowControlTrace}}
+\index{flowControlTrace@{flowControlTrace}!Http2Transport@{Http2Transport}}
+\doxysubsubsection{\texorpdfstring{flowControlTrace()}{flowControlTrace()}}
+{\footnotesize\ttfamily \label{class_http2_transport_a463b91fd056400e06dd91cbbcf3f4b70} 
+Http2\+Transport\+::flow\+Control\+Trace (\begin{DoxyParamCaption}\item[{}]{text}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{transport_8js_ad33cb6840349d3bc93f4fe9de15a6f8f}{constants\+\_\+1}}, \mbox{\hyperlink{transport_8js_a9322c11c35f9d4c9e87e16fef38473ed}{FLOW\+\_\+\+CONTROL\+\_\+\+TRACER\+\_\+\+NAME}}, \mbox{\hyperlink{transport_8js_ab53afa7b9c9aef77e950713c8b54c98c}{logging}}, and \mbox{\hyperlink{node-forge_2lib_2util_8js_ab492f69e70933f85fe6b3a8808d19852}{text}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_http2_transport_a463b91fd056400e06dd91cbbcf3f4b70_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_http2_transport_afa38be2f2a3f87ebdee779ceed2e158d}\index{Http2Transport@{Http2Transport}!getChannelzInfo@{getChannelzInfo}}
+\index{getChannelzInfo@{getChannelzInfo}!Http2Transport@{Http2Transport}}
+\doxysubsubsection{\texorpdfstring{getChannelzInfo()}{getChannelzInfo()}}
+{\footnotesize\ttfamily \label{class_http2_transport_afa38be2f2a3f87ebdee779ceed2e158d} 
+Http2\+Transport\+::get\+Channelz\+Info (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{logger_2dist_2esm_2index_8esm5_8js_a0adf123df8967a14b5bdd9ff3bbe2d0c}{\+\_\+a}}, \mbox{\hyperlink{logging_8js_a53284eb14d953f3ba58806fc49cd4f7c}{\+\_\+b}}, \mbox{\hyperlink{logging_8js_aa9188bfce96541e3026ad83bee2ab87c}{\+\_\+c}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a3bb9e2b145c6085298a45027f885f0d3}{session}}, and \mbox{\hyperlink{transport_8js_a46c0e253ac00dface70796e150cad858}{subchannel\+\_\+address\+\_\+1}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_http2_transport_afa38be2f2a3f87ebdee779ceed2e158d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_http2_transport_aedfe8a0de06f92954a5967b6428ff1ee}\index{Http2Transport@{Http2Transport}!getChannelzRef@{getChannelzRef}}
+\index{getChannelzRef@{getChannelzRef}!Http2Transport@{Http2Transport}}
+\doxysubsubsection{\texorpdfstring{getChannelzRef()}{getChannelzRef()}}
+{\footnotesize\ttfamily \label{class_http2_transport_aedfe8a0de06f92954a5967b6428ff1ee} 
+Http2\+Transport\+::get\+Channelz\+Ref (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_http2_transport_ad7b0453c65c36ecbbda5e5a29307d6b4}\index{Http2Transport@{Http2Transport}!getOptions@{getOptions}}
+\index{getOptions@{getOptions}!Http2Transport@{Http2Transport}}
+\doxysubsubsection{\texorpdfstring{getOptions()}{getOptions()}}
+{\footnotesize\ttfamily \label{class_http2_transport_ad7b0453c65c36ecbbda5e5a29307d6b4} 
+Http2\+Transport\+::get\+Options (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_http2_transport_aa25271b617f6ee5c6a0791a95508fce9}\index{Http2Transport@{Http2Transport}!getPeerName@{getPeerName}}
+\index{getPeerName@{getPeerName}!Http2Transport@{Http2Transport}}
+\doxysubsubsection{\texorpdfstring{getPeerName()}{getPeerName()}}
+{\footnotesize\ttfamily \label{class_http2_transport_aa25271b617f6ee5c6a0791a95508fce9} 
+Http2\+Transport\+::get\+Peer\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_http2_transport_af7c82fe69e2b67cfe9fd528b66c2949d}\index{Http2Transport@{Http2Transport}!handleDisconnect@{handleDisconnect}}
+\index{handleDisconnect@{handleDisconnect}!Http2Transport@{Http2Transport}}
+\doxysubsubsection{\texorpdfstring{handleDisconnect()}{handleDisconnect()}}
+{\footnotesize\ttfamily \label{class_http2_transport_af7c82fe69e2b67cfe9fd528b66c2949d} 
+Http2\+Transport\+::handle\+Disconnect (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Handle connection drops, but not GOAWAYs. 
+
+References \mbox{\hyperlink{hasown_2index_8js_af41b23e59e21fbbca9175e1dbd07b54e}{call}}, \mbox{\hyperlink{class_http2_transport_a0e3963f20a62add707a40fb85a7241d8}{clear\+Keepalive\+Timeout()}}, \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}, \mbox{\hyperlink{class_http2_transport_af7386aa4ecd45e161a5488b1ec1aca5d}{report\+Disconnect\+To\+Owner()}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a3bb9e2b145c6085298a45027f885f0d3}{session}}, and \mbox{\hyperlink{rxjs_8umd_8js_a5008ba0c81d22f889926a449c993ac53}{set\+Immediate}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_http2_transport_af7c82fe69e2b67cfe9fd528b66c2949d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_http2_transport_af7c82fe69e2b67cfe9fd528b66c2949d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_http2_transport_a5cd706383ee876bbeb6101dd635a6e62}\index{Http2Transport@{Http2Transport}!internalsTrace@{internalsTrace}}
+\index{internalsTrace@{internalsTrace}!Http2Transport@{Http2Transport}}
+\doxysubsubsection{\texorpdfstring{internalsTrace()}{internalsTrace()}}
+{\footnotesize\ttfamily \label{class_http2_transport_a5cd706383ee876bbeb6101dd635a6e62} 
+Http2\+Transport\+::internals\+Trace (\begin{DoxyParamCaption}\item[{}]{text}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{transport_8js_ad33cb6840349d3bc93f4fe9de15a6f8f}{constants\+\_\+1}}, \mbox{\hyperlink{transport_8js_ab53afa7b9c9aef77e950713c8b54c98c}{logging}}, and \mbox{\hyperlink{node-forge_2lib_2util_8js_ab492f69e70933f85fe6b3a8808d19852}{text}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_http2_transport_a5cd706383ee876bbeb6101dd635a6e62_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_http2_transport_a008136a5819d072f7be0826d2d00f2a5}\index{Http2Transport@{Http2Transport}!keepaliveTrace@{keepaliveTrace}}
+\index{keepaliveTrace@{keepaliveTrace}!Http2Transport@{Http2Transport}}
+\doxysubsubsection{\texorpdfstring{keepaliveTrace()}{keepaliveTrace()}}
+{\footnotesize\ttfamily \label{class_http2_transport_a008136a5819d072f7be0826d2d00f2a5} 
+Http2\+Transport\+::keepalive\+Trace (\begin{DoxyParamCaption}\item[{}]{text}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{transport_8js_ad33cb6840349d3bc93f4fe9de15a6f8f}{constants\+\_\+1}}, \mbox{\hyperlink{transport_8js_ab53afa7b9c9aef77e950713c8b54c98c}{logging}}, and \mbox{\hyperlink{node-forge_2lib_2util_8js_ab492f69e70933f85fe6b3a8808d19852}{text}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_http2_transport_a008136a5819d072f7be0826d2d00f2a5_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_http2_transport_abce3cbb9b5d1c42336a2f46f92aeb7e5}\index{Http2Transport@{Http2Transport}!maybeSendPing@{maybeSendPing}}
+\index{maybeSendPing@{maybeSendPing}!Http2Transport@{Http2Transport}}
+\doxysubsubsection{\texorpdfstring{maybeSendPing()}{maybeSendPing()}}
+{\footnotesize\ttfamily \label{class_http2_transport_abce3cbb9b5d1c42336a2f46f92aeb7e5} 
+Http2\+Transport\+::maybe\+Send\+Ping (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{logger_2dist_2esm_2index_8esm5_8js_a0adf123df8967a14b5bdd9ff3bbe2d0c}{\+\_\+a}}, \mbox{\hyperlink{logging_8js_a53284eb14d953f3ba58806fc49cd4f7c}{\+\_\+b}}, \mbox{\hyperlink{class_http2_transport_a3e5e1ba5de580d4ff4327b65cbd5b3c6}{can\+Send\+Ping()}}, \mbox{\hyperlink{class_http2_transport_a0e3963f20a62add707a40fb85a7241d8}{clear\+Keepalive\+Timeout()}}, \mbox{\hyperlink{firestore__admin__v1__proto__api_8js_a08a4415e9d594ff960030b921d42b91e}{e}}, \mbox{\hyperlink{class_http2_transport_af7c82fe69e2b67cfe9fd528b66c2949d}{handle\+Disconnect()}}, \mbox{\hyperlink{class_http2_transport_a008136a5819d072f7be0826d2d00f2a5}{keepalive\+Trace()}}, \mbox{\hyperlink{class_http2_transport_afc6fd7defde2b7e2e498bc65c7f88cc6}{maybe\+Start\+Keepalive\+Ping\+Timer()}}, and \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a3bb9e2b145c6085298a45027f885f0d3}{session}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_http2_transport_abce3cbb9b5d1c42336a2f46f92aeb7e5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_http2_transport_abce3cbb9b5d1c42336a2f46f92aeb7e5_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_http2_transport_afc6fd7defde2b7e2e498bc65c7f88cc6}\index{Http2Transport@{Http2Transport}!maybeStartKeepalivePingTimer@{maybeStartKeepalivePingTimer}}
+\index{maybeStartKeepalivePingTimer@{maybeStartKeepalivePingTimer}!Http2Transport@{Http2Transport}}
+\doxysubsubsection{\texorpdfstring{maybeStartKeepalivePingTimer()}{maybeStartKeepalivePingTimer()}}
+{\footnotesize\ttfamily \label{class_http2_transport_afc6fd7defde2b7e2e498bc65c7f88cc6} 
+Http2\+Transport\+::maybe\+Start\+Keepalive\+Ping\+Timer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Starts the keepalive ping timer if appropriate. If the timer already ran out while there were no active requests, instead send a ping immediately. If the ping timer is already running or a ping is currently in flight, instead do nothing and wait for them to resolve. 
+
+References \mbox{\hyperlink{logger_2dist_2esm_2index_8esm5_8js_a0adf123df8967a14b5bdd9ff3bbe2d0c}{\+\_\+a}}, \mbox{\hyperlink{logging_8js_a53284eb14d953f3ba58806fc49cd4f7c}{\+\_\+b}}, \mbox{\hyperlink{class_http2_transport_a3e5e1ba5de580d4ff4327b65cbd5b3c6}{can\+Send\+Ping()}}, \mbox{\hyperlink{class_http2_transport_a008136a5819d072f7be0826d2d00f2a5}{keepalive\+Trace()}}, and \mbox{\hyperlink{class_http2_transport_abce3cbb9b5d1c42336a2f46f92aeb7e5}{maybe\+Send\+Ping()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_http2_transport_afc6fd7defde2b7e2e498bc65c7f88cc6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_http2_transport_afc6fd7defde2b7e2e498bc65c7f88cc6_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_http2_transport_aa92008e2e5121f315f877bdcd59a4b1c}\index{Http2Transport@{Http2Transport}!removeActiveCall@{removeActiveCall}}
+\index{removeActiveCall@{removeActiveCall}!Http2Transport@{Http2Transport}}
+\doxysubsubsection{\texorpdfstring{removeActiveCall()}{removeActiveCall()}}
+{\footnotesize\ttfamily \label{class_http2_transport_aa92008e2e5121f315f877bdcd59a4b1c} 
+Http2\+Transport\+::remove\+Active\+Call (\begin{DoxyParamCaption}\item[{}]{call}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{hasown_2index_8js_af41b23e59e21fbbca9175e1dbd07b54e}{call}}, and \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a3bb9e2b145c6085298a45027f885f0d3}{session}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_http2_transport_aa92008e2e5121f315f877bdcd59a4b1c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_http2_transport_af7386aa4ecd45e161a5488b1ec1aca5d}\index{Http2Transport@{Http2Transport}!reportDisconnectToOwner@{reportDisconnectToOwner}}
+\index{reportDisconnectToOwner@{reportDisconnectToOwner}!Http2Transport@{Http2Transport}}
+\doxysubsubsection{\texorpdfstring{reportDisconnectToOwner()}{reportDisconnectToOwner()}}
+{\footnotesize\ttfamily \label{class_http2_transport_af7386aa4ecd45e161a5488b1ec1aca5d} 
+Http2\+Transport\+::report\+Disconnect\+To\+Owner (\begin{DoxyParamCaption}\item[{}]{too\+Many\+Pings}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Indicate to the owner of this object that this transport should no longer be used. That happens if the connection drops, or if the server sends a GOAWAY. 
+\begin{DoxyParams}{Parameters}
+{\em too\+Many\+Pings} & If true, this was triggered by a GOAWAY with data indicating that the session was closed becaues the client sent too many pings. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_http2_transport_af7386aa4ecd45e161a5488b1ec1aca5d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_http2_transport_acc862abb21f4382919ca4e5155cb4dae}\index{Http2Transport@{Http2Transport}!shutdown@{shutdown}}
+\index{shutdown@{shutdown}!Http2Transport@{Http2Transport}}
+\doxysubsubsection{\texorpdfstring{shutdown()}{shutdown()}}
+{\footnotesize\ttfamily \label{class_http2_transport_acc862abb21f4382919ca4e5155cb4dae} 
+Http2\+Transport\+::shutdown (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{transport_8js_a1c963d3b854ccff6bad1a2f8b0f7f18a}{channelz\+\_\+1}}, and \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a3bb9e2b145c6085298a45027f885f0d3}{session}}.
+
+\Hypertarget{class_http2_transport_acc9b06a7d830b9f11b38e97938f1a10f}\index{Http2Transport@{Http2Transport}!trace@{trace}}
+\index{trace@{trace}!Http2Transport@{Http2Transport}}
+\doxysubsubsection{\texorpdfstring{trace()}{trace()}}
+{\footnotesize\ttfamily \label{class_http2_transport_acc9b06a7d830b9f11b38e97938f1a10f} 
+Http2\+Transport\+::trace (\begin{DoxyParamCaption}\item[{}]{text}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{transport_8js_ad33cb6840349d3bc93f4fe9de15a6f8f}{constants\+\_\+1}}, \mbox{\hyperlink{transport_8js_ab53afa7b9c9aef77e950713c8b54c98c}{logging}}, \mbox{\hyperlink{node-forge_2lib_2util_8js_ab492f69e70933f85fe6b3a8808d19852}{text}}, and \mbox{\hyperlink{transport_8js_a4d771a845df73d12433ddcb6b91f8b9a}{TRACER\+\_\+\+NAME}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/@grpc/grpc-\/js/build/src/\mbox{\hyperlink{transport_8js}{transport.\+js}}\end{DoxyCompactItemize}

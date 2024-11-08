@@ -1,0 +1,22 @@
+\doxysection{/\+Users/nicoletiokhin/\+Desktop/\+Software Semester 3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/firebase-\/admin/lib/credential/index.\+js}
+\hypertarget{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_5ae276ecf71c8c405db98411c428cfa5}{}\label{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_5ae276ecf71c8c405db98411c428cfa5}Returns a credential created from the provided service account that grants admin access to Firebase services. This credential can be used in the call to {\ttfamily \doxylink{}{firebase-\/admin.\+app\#initialize\+App}}.
+
+See {\ttfamily \doxylink{}{\texorpdfstring{$\vert$}{|} Initialize the SDK}} for more details.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//\ Providing\ a\ path\ to\ a\ service\ account\ key\ JSON\ file}}
+\DoxyCodeLine{var\ serviceAccount\ =\ \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textcolor{stringliteral}{"{}path/to/serviceAccountKey.json"{}});}
+\DoxyCodeLine{admin.initializeApp(\{}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{firebase-admin_2lib_2credential_2index_8js_aee5dce8f0575eecdffdfa59b49b319e1}{credential}}:\ admin.credential.cert(serviceAccount),}
+\DoxyCodeLine{\ \ databaseURL:\ \textcolor{stringliteral}{"{}https://<DATABASE\_NAME>.firebaseio.com"{}}}
+\DoxyCodeLine{\});}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyCodeInclude}{0}
+
+\end{DoxyCodeInclude}
+ Semester \doxylink{firebase-admin_2lib_2credential_2index_8js}{3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/firebase-\/admin/lib/credential/index.\+js} 

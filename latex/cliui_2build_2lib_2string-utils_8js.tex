@@ -1,0 +1,68 @@
+\doxysection{backend/node\+\_\+modules/cliui/build/lib/string-\/utils.js File Reference}
+\hypertarget{cliui_2build_2lib_2string-utils_8js}{}\label{cliui_2build_2lib_2string-utils_8js}\index{backend/node\_modules/cliui/build/lib/string-\/utils.js@{backend/node\_modules/cliui/build/lib/string-\/utils.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function export \mbox{\hyperlink{cliui_2build_2lib_2string-utils_8js_a247e95f1cb01d5e7a14d26533edea05a}{strip\+Ansi}} (\mbox{\hyperlink{json-bigint_2lib_2stringify_8js_abd4075a8f329b0ccafd81359c952a9df}{str}})
+\item 
+function export \mbox{\hyperlink{cliui_2build_2lib_2string-utils_8js_a2dd510d8d65e368e3845ec36db79a38f}{wrap}} (\mbox{\hyperlink{json-bigint_2lib_2stringify_8js_abd4075a8f329b0ccafd81359c952a9df}{str}}, width)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{cliui_2build_2lib_2string-utils_8js_a8756f80efca793822f2e87019478e824}{ansi}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{cliui_2build_2lib_2string-utils_8js_a247e95f1cb01d5e7a14d26533edea05a}\index{string-\/utils.js@{string-\/utils.js}!stripAnsi@{stripAnsi}}
+\index{stripAnsi@{stripAnsi}!string-\/utils.js@{string-\/utils.js}}
+\doxysubsubsection{\texorpdfstring{stripAnsi()}{stripAnsi()}}
+{\footnotesize\ttfamily \label{cliui_2build_2lib_2string-utils_8js_a247e95f1cb01d5e7a14d26533edea05a} 
+function export strip\+Ansi (\begin{DoxyParamCaption}\item[{}]{str}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{cliui_2build_2lib_2string-utils_8js_a8756f80efca793822f2e87019478e824}{ansi}}, and \mbox{\hyperlink{json-bigint_2lib_2stringify_8js_abd4075a8f329b0ccafd81359c952a9df}{str()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{cliui_2build_2lib_2string-utils_8js_a247e95f1cb01d5e7a14d26533edea05a_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{cliui_2build_2lib_2string-utils_8js_a2dd510d8d65e368e3845ec36db79a38f}\index{string-\/utils.js@{string-\/utils.js}!wrap@{wrap}}
+\index{wrap@{wrap}!string-\/utils.js@{string-\/utils.js}}
+\doxysubsubsection{\texorpdfstring{wrap()}{wrap()}}
+{\footnotesize\ttfamily \label{cliui_2build_2lib_2string-utils_8js_a2dd510d8d65e368e3845ec36db79a38f} 
+function export wrap (\begin{DoxyParamCaption}\item[{}]{str}{, }\item[{}]{width}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{cliui_2build_2lib_2string-utils_8js_a8756f80efca793822f2e87019478e824}{ansi}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2eb0ae9087079e95bc67981f6c61288b}{end}}, \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}, \mbox{\hyperlink{cipher_8js_a1960adf42cbf8c24067b45da3a2f0aaf}{start}}, \mbox{\hyperlink{json-bigint_2lib_2stringify_8js_abd4075a8f329b0ccafd81359c952a9df}{str()}}, and \mbox{\hyperlink{string-width_2index_8js_a036ef4ffd4da85a986ee86b488fe4730}{strip\+Ansi}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=182pt]{cliui_2build_2lib_2string-utils_8js_a2dd510d8d65e368e3845ec36db79a38f_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{cliui_2build_2lib_2string-utils_8js_a8756f80efca793822f2e87019478e824}\index{string-\/utils.js@{string-\/utils.js}!ansi@{ansi}}
+\index{ansi@{ansi}!string-\/utils.js@{string-\/utils.js}}
+\doxysubsubsection{\texorpdfstring{ansi}{ansi}}
+{\footnotesize\ttfamily \label{cliui_2build_2lib_2string-utils_8js_a8756f80efca793822f2e87019478e824} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} ansi}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{new}\ RegExp(\textcolor{stringliteral}{'\(\backslash\)x1b(?:\(\backslash\)\(\backslash\)[(?:\(\backslash\)\(\backslash\)d+[ABCDEFGJKSTm]|\(\backslash\)\(\backslash\)d+;\(\backslash\)\(\backslash\)d+[Hfm]|'}\ +}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{'\(\backslash\)\(\backslash\)d+;\(\backslash\)\(\backslash\)d+;\(\backslash\)\(\backslash\)d+m|6n|s|u|\(\backslash\)\(\backslash\)?25[lh])|\(\backslash\)\(\backslash\)w)'},\ \textcolor{charliteral}{'g'})}
+
+\end{DoxyCode}

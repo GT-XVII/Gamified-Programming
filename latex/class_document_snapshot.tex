@@ -1,0 +1,377 @@
+\doxysection{Document\+Snapshot Class Reference}
+\hypertarget{class_document_snapshot}{}\label{class_document_snapshot}\index{DocumentSnapshot@{DocumentSnapshot}}
+
+
+Inheritance diagram for Document\+Snapshot\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_document_snapshot__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Document\+Snapshot\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{class_document_snapshot__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{Indent}\textbf{ Document\+Snapshot\#exists}\par
+{\em True if the document exists.
+
+@type \{boolean\}
+
+@readonly }\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_document_snapshot_a57b0cb444662b5793585625a5b357cd2}{get}} \mbox{\hyperlink{class_document_snapshot_aebd8a2962c04eddc15d1dd114f9b5cb0}{exists}} ()
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Document\+Snapshot\#ref}\par
+{\em \doxylink{class_a}{A} \mbox{[}\doxylink{class_document_reference}{Document\+Reference}\mbox{]}{\ttfamily \doxylink{class_document_reference}{Document\+Reference}} for the document stored in this snapshot.
+
+@type \{\doxylink{class_document_reference}{Document\+Reference}\}
+
+@readonly }\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_document_snapshot_a57b0cb444662b5793585625a5b357cd2}{get}} \mbox{\hyperlink{class_document_snapshot_a9f820969a4617dd847f68fc7baba28ab}{ref}} ()
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Document\+Snapshot\#id}\par
+{\em The ID of the document for which this \doxylink{class_document_snapshot}{Document\+Snapshot} contains data.
+
+@type \{string\}
+
+@readonly }\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_document_snapshot_a57b0cb444662b5793585625a5b357cd2}{get}} \mbox{\hyperlink{class_document_snapshot_a91219497a9420f3dff04764a1289729d}{id}} ()
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Document\+Snapshot\#create\+Time}\par
+{\em The time the document was created. Undefined for documents that don\textquotesingle{}t exist.
+
+@type \{Timestamp\texorpdfstring{$\vert$}{|}undefined\}
+
+@readonly }\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_document_snapshot_a57b0cb444662b5793585625a5b357cd2}{get}} \mbox{\hyperlink{class_document_snapshot_a345561532f42c58845aa95b534a137c2}{create\+Time}} ()
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Document\+Snapshot\#update\+Time}\par
+{\em The time the document was last updated (at the time the snapshot was generated). Undefined for documents that don\textquotesingle{}t exist.
+
+@type \{Timestamp\texorpdfstring{$\vert$}{|}undefined\}
+
+@readonly }\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_document_snapshot_a57b0cb444662b5793585625a5b357cd2}{get}} \mbox{\hyperlink{class_document_snapshot_a46533bb71953dfa0b6ed8e1d58938132}{update\+Time}} ()
+\end{DoxyCompactItemize}
+\end{Indent}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_document_snapshot_aca112385bdabae76585a9a07e74efe50}{constructor}} (\mbox{\hyperlink{class_document_snapshot_a9f820969a4617dd847f68fc7baba28ab}{ref}}, \+\_\+fields\+Proto, \mbox{\hyperlink{class_document_snapshot_a1c730f69a665bab3790650823a68c793}{read\+Time}}, \mbox{\hyperlink{class_document_snapshot_a345561532f42c58845aa95b534a137c2}{create\+Time}}, \mbox{\hyperlink{class_document_snapshot_a46533bb71953dfa0b6ed8e1d58938132}{update\+Time}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_document_snapshot_a80b58be012014b3f119d7f6101346b43}{from\+Object}} (\mbox{\hyperlink{class_document_snapshot_a9f820969a4617dd847f68fc7baba28ab}{ref}}, \mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}})
+\item 
+static \mbox{\hyperlink{class_document_snapshot_ac0588158541db1e3622648fc36fd1670}{from\+Update\+Map}} (\mbox{\hyperlink{class_document_snapshot_a9f820969a4617dd847f68fc7baba28ab}{ref}}, \mbox{\hyperlink{class_document_snapshot_a2779504a2af8f1a97e5431c9c40d4e5d}{data}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Document\+Snapshot\#read\+Time}
+The time this snapshot was read.
+
+@type \{\doxylink{class_timestamp}{Timestamp}\}
+
+@readonly \begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_document_snapshot_a738f83f4404ce58c3759c3b6e96ddc2d}{proto\+Field}} (field)
+\item 
+\mbox{\hyperlink{class_document_snapshot_a6169b25dbc3adfb1d35d2f6d4373be30}{to\+Write\+Proto}} ()
+\item 
+\mbox{\hyperlink{class_document_snapshot_a702a2898d3ffaa543bf1ee5a9b6953da}{to\+Document\+Proto}} ()
+\item 
+\mbox{\hyperlink{class_document_snapshot_a57b0cb444662b5793585625a5b357cd2}{get}} \mbox{\hyperlink{class_document_snapshot_a1c730f69a665bab3790650823a68c793}{read\+Time}} ()
+\item 
+\mbox{\hyperlink{class_document_snapshot_a2779504a2af8f1a97e5431c9c40d4e5d}{data}} ()
+\item 
+\mbox{\hyperlink{class_document_snapshot_a57b0cb444662b5793585625a5b357cd2}{get}} (field)
+\item 
+\mbox{\hyperlink{class_document_snapshot_a0450ce4302ca28e1131e71e59ff57c4b}{is\+Equal}} (other)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_a}{A} \doxylink{class_document_snapshot}{Document\+Snapshot} is an immutable representation for a document in a \doxylink{class_firestore}{Firestore} database. The data can be extracted with \mbox{[}\doxylink{class_document_snapshot_a2779504a2af8f1a97e5431c9c40d4e5d}{data()}\mbox{]}{\ttfamily \doxylink{class_document_snapshot_a2779504a2af8f1a97e5431c9c40d4e5d}{Document\+Snapshot\#data}} or \mbox{[}\doxylink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get(field\+Path)}\mbox{]}{\ttfamily \doxylink{class_document_snapshot_a57b0cb444662b5793585625a5b357cd2}{Document\+Snapshot\#get}} to get a specific field.
+
+For a \doxylink{class_document_snapshot}{Document\+Snapshot} that points to a non-\/existing document, any data access will return \textquotesingle{}undefined\textquotesingle{}. You can use the \mbox{[}exists\mbox{]}{\ttfamily \doxylink{class_document_snapshot_aebd8a2962c04eddc15d1dd114f9b5cb0}{Document\+Snapshot\#exists}} property to explicitly verify a document\textquotesingle{}s existence. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_document_snapshot_aca112385bdabae76585a9a07e74efe50}\index{DocumentSnapshot@{DocumentSnapshot}!constructor@{constructor}}
+\index{constructor@{constructor}!DocumentSnapshot@{DocumentSnapshot}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_document_snapshot_aca112385bdabae76585a9a07e74efe50} 
+Document\+Snapshot\+::constructor (\begin{DoxyParamCaption}\item[{}]{ref}{, }\item[{}]{\+\_\+fields\+Proto}{, }\item[{}]{read\+Time}{, }\item[{}]{create\+Time}{, }\item[{}]{update\+Time}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+References \mbox{\hyperlink{class_document_snapshot_a345561532f42c58845aa95b534a137c2}{create\+Time()}}, \mbox{\hyperlink{class_document_snapshot_a1c730f69a665bab3790650823a68c793}{read\+Time()}}, \mbox{\hyperlink{class_document_snapshot_a9f820969a4617dd847f68fc7baba28ab}{ref()}}, and \mbox{\hyperlink{class_document_snapshot_a46533bb71953dfa0b6ed8e1d58938132}{update\+Time()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_document_snapshot_aca112385bdabae76585a9a07e74efe50_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_document_snapshot_a345561532f42c58845aa95b534a137c2}\index{DocumentSnapshot@{DocumentSnapshot}!createTime@{createTime}}
+\index{createTime@{createTime}!DocumentSnapshot@{DocumentSnapshot}}
+\doxysubsubsection{\texorpdfstring{createTime()}{createTime()}}
+{\footnotesize\ttfamily \label{class_document_snapshot_a345561532f42c58845aa95b534a137c2} 
+\mbox{\hyperlink{class_document_snapshot_a57b0cb444662b5793585625a5b357cd2}{get}} Document\+Snapshot\+::create\+Time (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_document_snapshot_a345561532f42c58845aa95b534a137c2_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_document_snapshot_a2779504a2af8f1a97e5431c9c40d4e5d}\index{DocumentSnapshot@{DocumentSnapshot}!data@{data}}
+\index{data@{data}!DocumentSnapshot@{DocumentSnapshot}}
+\doxysubsubsection{\texorpdfstring{data()}{data()}}
+{\footnotesize\ttfamily \label{class_document_snapshot_a2779504a2af8f1a97e5431c9c40d4e5d} 
+Document\+Snapshot\+::data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{class_document_snapshot_a345561532f42c58845aa95b534a137c2}{create\+Time()}}, \mbox{\hyperlink{document_8js_afb1d0857b9b7b881fc71e04526f3d736}{document\+\_\+reference\+\_\+1}}, \mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}, \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}, \mbox{\hyperlink{protobufjs_2src_2util_8js_a1ac3cdcaad4dbc4ad940f9e47c185bc2}{prop}}, \mbox{\hyperlink{document_8js_ae7636075f30650f6ff0a20eccbe647f3}{Query\+Document\+Snapshot}}, \mbox{\hyperlink{class_document_snapshot_a1c730f69a665bab3790650823a68c793}{read\+Time()}}, \mbox{\hyperlink{class_document_snapshot_a9f820969a4617dd847f68fc7baba28ab}{ref()}}, \mbox{\hyperlink{document_8js_a55a953cce0b62371f42d14c2de9a6eb4}{types\+\_\+1}}, \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}, and \mbox{\hyperlink{class_document_snapshot_a46533bb71953dfa0b6ed8e1d58938132}{update\+Time()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_document_snapshot_a2779504a2af8f1a97e5431c9c40d4e5d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_document_snapshot_a2779504a2af8f1a97e5431c9c40d4e5d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_document_snapshot_aebd8a2962c04eddc15d1dd114f9b5cb0}\index{DocumentSnapshot@{DocumentSnapshot}!exists@{exists}}
+\index{exists@{exists}!DocumentSnapshot@{DocumentSnapshot}}
+\doxysubsubsection{\texorpdfstring{exists()}{exists()}}
+{\footnotesize\ttfamily \label{class_document_snapshot_aebd8a2962c04eddc15d1dd114f9b5cb0} 
+\mbox{\hyperlink{class_document_snapshot_a57b0cb444662b5793585625a5b357cd2}{get}} Document\+Snapshot\+::exists (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}.
+
+\Hypertarget{class_document_snapshot_a80b58be012014b3f119d7f6101346b43}\index{DocumentSnapshot@{DocumentSnapshot}!fromObject@{fromObject}}
+\index{fromObject@{fromObject}!DocumentSnapshot@{DocumentSnapshot}}
+\doxysubsubsection{\texorpdfstring{fromObject()}{fromObject()}}
+{\footnotesize\ttfamily \label{class_document_snapshot_a80b58be012014b3f119d7f6101346b43} 
+static Document\+Snapshot\+::from\+Object (\begin{DoxyParamCaption}\item[{}]{ref}{, }\item[{}]{obj}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+Creates a \doxylink{class_document_snapshot}{Document\+Snapshot} from an object. 
+
+References \mbox{\hyperlink{document_8js_a2bfcdd11d556660d7f330dded5c31e0e}{Document\+Snapshot}}, \mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}, \mbox{\hyperlink{class_document_snapshot_a9f820969a4617dd847f68fc7baba28ab}{ref()}}, and \mbox{\hyperlink{fallback_rest_8js_ac64cda4812d2b01353a2e43c605d772b}{serializer}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_document_snapshot_a80b58be012014b3f119d7f6101346b43_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_document_snapshot_ac0588158541db1e3622648fc36fd1670}\index{DocumentSnapshot@{DocumentSnapshot}!fromUpdateMap@{fromUpdateMap}}
+\index{fromUpdateMap@{fromUpdateMap}!DocumentSnapshot@{DocumentSnapshot}}
+\doxysubsubsection{\texorpdfstring{fromUpdateMap()}{fromUpdateMap()}}
+{\footnotesize\ttfamily \label{class_document_snapshot_ac0588158541db1e3622648fc36fd1670} 
+static Document\+Snapshot\+::from\+Update\+Map (\begin{DoxyParamCaption}\item[{}]{ref}{, }\item[{}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+Creates a \doxylink{class_document_snapshot}{Document\+Snapshot} from an Update\+Map.
+
+This methods expands the top-\/level field paths in a Java\+Script map and turns \{ foo.\+bar \+: foobar \} into \{ foo \{ bar \+: foobar \}\} Merges \textquotesingle{}value\textquotesingle{} at the field path specified by the path array into \textquotesingle{}target\textquotesingle{}.
+
+References \mbox{\hyperlink{document_8js_a0a4d6a89916a48f4ba0e696e93dfc003}{assert}}, \mbox{\hyperlink{class_document_snapshot_a2779504a2af8f1a97e5431c9c40d4e5d}{data()}}, \mbox{\hyperlink{document_8js_a2bfcdd11d556660d7f330dded5c31e0e}{Document\+Snapshot}}, \mbox{\hyperlink{document_8js_abb5837ddeb6cdc50bf1ab149418463a5}{field\+\_\+value\+\_\+1}}, \mbox{\hyperlink{application_8js_a3ece49ce053833fd2c7b994d6b6ab3f1}{merge}}, \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}, \mbox{\hyperlink{cjs_2src_2bucket_8js_a1fdc7709faf62dce60620fb3f9d3453c}{path}}, \mbox{\hyperlink{class_document_snapshot_a9f820969a4617dd847f68fc7baba28ab}{ref()}}, \mbox{\hyperlink{express_2lib_2express_8js_abde3c35e3bb7e5225dd7f234c685329c}{res}}, \mbox{\hyperlink{fallback_rest_8js_ac64cda4812d2b01353a2e43c605d772b}{serializer}}, \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}, \mbox{\hyperlink{document_8js_a6af3fa6e24c6a46faf4552f3a2ad8783}{util\+\_\+1}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_document_snapshot_ac0588158541db1e3622648fc36fd1670_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_document_snapshot_a57b0cb444662b5793585625a5b357cd2}\index{DocumentSnapshot@{DocumentSnapshot}!get@{get}}
+\index{get@{get}!DocumentSnapshot@{DocumentSnapshot}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{class_document_snapshot_a57b0cb444662b5793585625a5b357cd2} 
+Document\+Snapshot\+::get (\begin{DoxyParamCaption}\item[{}]{field}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{document_8js_a705fe9bf53f002be551bde47cc3a6069}{path\+\_\+1}}, \mbox{\hyperlink{class_document_snapshot_a738f83f4404ce58c3759c3b6e96ddc2d}{proto\+Field()}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_document_snapshot_a57b0cb444662b5793585625a5b357cd2_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_document_snapshot_a91219497a9420f3dff04764a1289729d}\index{DocumentSnapshot@{DocumentSnapshot}!id@{id}}
+\index{id@{id}!DocumentSnapshot@{DocumentSnapshot}}
+\doxysubsubsection{\texorpdfstring{id()}{id()}}
+{\footnotesize\ttfamily \label{class_document_snapshot_a91219497a9420f3dff04764a1289729d} 
+\mbox{\hyperlink{class_document_snapshot_a57b0cb444662b5793585625a5b357cd2}{get}} Document\+Snapshot\+::id (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_document_snapshot_a0450ce4302ca28e1131e71e59ff57c4b}\index{DocumentSnapshot@{DocumentSnapshot}!isEqual@{isEqual}}
+\index{isEqual@{isEqual}!DocumentSnapshot@{DocumentSnapshot}}
+\doxysubsubsection{\texorpdfstring{isEqual()}{isEqual()}}
+{\footnotesize\ttfamily \label{class_document_snapshot_a0450ce4302ca28e1131e71e59ff57c4b} 
+Document\+Snapshot\+::is\+Equal (\begin{DoxyParamCaption}\item[{}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns true if the document\textquotesingle{}s data and path in this {\ttfamily \doxylink{class_document_snapshot}{Document\+Snapshot}} is equal to the provided value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\texorpdfstring{$\ast$}{*}\}} & other The value to compare against. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{boolean\} true if this {\ttfamily \doxylink{class_document_snapshot}{Document\+Snapshot}} is equal to the provided value. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{document_8js_aec0b793d5926a7a59d7c0772c78ba5fa}{deep\+Equal}}, and \mbox{\hyperlink{class_document_snapshot_a0450ce4302ca28e1131e71e59ff57c4b}{is\+Equal()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=221pt]{class_document_snapshot_a0450ce4302ca28e1131e71e59ff57c4b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=221pt]{class_document_snapshot_a0450ce4302ca28e1131e71e59ff57c4b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_document_snapshot_a738f83f4404ce58c3759c3b6e96ddc2d}\index{DocumentSnapshot@{DocumentSnapshot}!protoField@{protoField}}
+\index{protoField@{protoField}!DocumentSnapshot@{DocumentSnapshot}}
+\doxysubsubsection{\texorpdfstring{protoField()}{protoField()}}
+{\footnotesize\ttfamily \label{class_document_snapshot_a738f83f4404ce58c3759c3b6e96ddc2d} 
+Document\+Snapshot\+::proto\+Field (\begin{DoxyParamCaption}\item[{}]{field}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Retrieves the field specified by \textquotesingle{}field\+Path\textquotesingle{} in its Protobuf JS representation. 
+
+References \mbox{\hyperlink{document_8js_a705fe9bf53f002be551bde47cc3a6069}{path\+\_\+1}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_document_snapshot_a738f83f4404ce58c3759c3b6e96ddc2d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_document_snapshot_a1c730f69a665bab3790650823a68c793}\index{DocumentSnapshot@{DocumentSnapshot}!readTime@{readTime}}
+\index{readTime@{readTime}!DocumentSnapshot@{DocumentSnapshot}}
+\doxysubsubsection{\texorpdfstring{readTime()}{readTime()}}
+{\footnotesize\ttfamily \label{class_document_snapshot_a1c730f69a665bab3790650823a68c793} 
+\mbox{\hyperlink{class_document_snapshot_a57b0cb444662b5793585625a5b357cd2}{get}} Document\+Snapshot\+::read\+Time (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_document_snapshot_a1c730f69a665bab3790650823a68c793_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_document_snapshot_a9f820969a4617dd847f68fc7baba28ab}\index{DocumentSnapshot@{DocumentSnapshot}!ref@{ref}}
+\index{ref@{ref}!DocumentSnapshot@{DocumentSnapshot}}
+\doxysubsubsection{\texorpdfstring{ref()}{ref()}}
+{\footnotesize\ttfamily \label{class_document_snapshot_a9f820969a4617dd847f68fc7baba28ab} 
+\mbox{\hyperlink{class_document_snapshot_a57b0cb444662b5793585625a5b357cd2}{get}} Document\+Snapshot\+::ref (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_document_snapshot_a9f820969a4617dd847f68fc7baba28ab_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_document_snapshot_a702a2898d3ffaa543bf1ee5a9b6953da}\index{DocumentSnapshot@{DocumentSnapshot}!toDocumentProto@{toDocumentProto}}
+\index{toDocumentProto@{toDocumentProto}!DocumentSnapshot@{DocumentSnapshot}}
+\doxysubsubsection{\texorpdfstring{toDocumentProto()}{toDocumentProto()}}
+{\footnotesize\ttfamily \label{class_document_snapshot_a702a2898d3ffaa543bf1ee5a9b6953da} 
+Document\+Snapshot\+::to\+Document\+Proto (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Convert a document snapshot to the \doxylink{class_firestore}{Firestore} \textquotesingle{}Document\textquotesingle{} proto. 
+
+References \mbox{\hyperlink{logger_2dist_2esm_2index_8esm5_8js_a0adf123df8967a14b5bdd9ff3bbe2d0c}{\+\_\+a}}, \mbox{\hyperlink{logging_8js_a53284eb14d953f3ba58806fc49cd4f7c}{\+\_\+b}}, \mbox{\hyperlink{class_document_snapshot_a345561532f42c58845aa95b534a137c2}{create\+Time()}}, \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}, and \mbox{\hyperlink{class_document_snapshot_a46533bb71953dfa0b6ed8e1d58938132}{update\+Time()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_document_snapshot_a702a2898d3ffaa543bf1ee5a9b6953da_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_document_snapshot_a6169b25dbc3adfb1d35d2f6d4373be30}\index{DocumentSnapshot@{DocumentSnapshot}!toWriteProto@{toWriteProto}}
+\index{toWriteProto@{toWriteProto}!DocumentSnapshot@{DocumentSnapshot}}
+\doxysubsubsection{\texorpdfstring{toWriteProto()}{toWriteProto()}}
+{\footnotesize\ttfamily \label{class_document_snapshot_a6169b25dbc3adfb1d35d2f6d4373be30} 
+Document\+Snapshot\+::to\+Write\+Proto (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Convert a document snapshot to the \doxylink{class_firestore}{Firestore} \textquotesingle{}Write\textquotesingle{} proto. 
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}, and \mbox{\hyperlink{cipher_8js_af2e4dc57151c84e08431510ddacfb9c6}{update}}.
+
+\Hypertarget{class_document_snapshot_a46533bb71953dfa0b6ed8e1d58938132}\index{DocumentSnapshot@{DocumentSnapshot}!updateTime@{updateTime}}
+\index{updateTime@{updateTime}!DocumentSnapshot@{DocumentSnapshot}}
+\doxysubsubsection{\texorpdfstring{updateTime()}{updateTime()}}
+{\footnotesize\ttfamily \label{class_document_snapshot_a46533bb71953dfa0b6ed8e1d58938132} 
+\mbox{\hyperlink{class_document_snapshot_a57b0cb444662b5793585625a5b357cd2}{get}} Document\+Snapshot\+::update\+Time (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_document_snapshot_a46533bb71953dfa0b6ed8e1d58938132_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/@google-\/cloud/firestore/build/src/\mbox{\hyperlink{document_8js}{document.\+js}}\end{DoxyCompactItemize}

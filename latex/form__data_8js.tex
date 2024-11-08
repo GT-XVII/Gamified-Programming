@@ -1,0 +1,512 @@
+\doxysection{backend/node\+\_\+modules/form-\/data/lib/form\+\_\+data.js File Reference}
+\hypertarget{form__data_8js}{}\label{form__data_8js}\index{backend/node\_modules/form-\/data/lib/form\_data.js@{backend/node\_modules/form-\/data/lib/form\_data.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{form__data_8js_ace76d2862e317d4ef1a0363fe5682436}{Form\+Data}} (options)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{form__data_8js_a199a005514aafaa9766857ff3fa8b393}{Combined\+Stream}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}combined-\/\mbox{\hyperlink{debug_2src_2node_8js_a822bf74d422c61e6caa292f739dc4786}{stream}}\textquotesingle{})
+\item 
+var \mbox{\hyperlink{form__data_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}util\textquotesingle{})
+\item 
+var \mbox{\hyperlink{form__data_8js_aa72e0c8a20e6bcc571d3a1c51846e627}{path}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}path\textquotesingle{})
+\item 
+var \mbox{\hyperlink{form__data_8js_a55f22d498ca401fddca364855629d1d3}{http}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}http\textquotesingle{})
+\item 
+var \mbox{\hyperlink{form__data_8js_a6e280dccdb759066a762d4a1a10850cc}{https}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}https\textquotesingle{})
+\item 
+var \mbox{\hyperlink{form__data_8js_a22abdd124753668e3939b76fbc8e3386}{parse\+Url}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_acf0a8b41f00a22e21672c8b3768a0618}{url}}\textquotesingle{}).\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa96c2329bbb4c535fae1093499f4ad49}{parse}}
+\item 
+var \mbox{\hyperlink{form__data_8js_aebcdd70130f7e0b00b39cc981ab0bab0}{fs}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}fs\textquotesingle{})
+\item 
+var \mbox{\hyperlink{form__data_8js_ab4d288fe448bcc077971c41ae3797375}{mime}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}mime-\/\mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2index_8js_ab7462236e30435444188ea2b81d92654}{types}}\textquotesingle{})
+\item 
+var \mbox{\hyperlink{form__data_8js_a07b85203c5cae55aebd1c1aeea509a49}{asynckit}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}asynckit\textquotesingle{})
+\item 
+var \mbox{\hyperlink{form__data_8js_a704a0d2cf66bba0127007a11ac4245d7}{populate}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\mbox{\hyperlink{esm_2src_2file_8js_a73ffb0a3b9f028910adc01ac31153d46}{populate.\+js}}\textquotesingle{})
+\item 
+var \mbox{\hyperlink{form__data_8js_a6e9de2d16b02dc274208bfcc1914d7f4}{Buffer}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}safe-\/\mbox{\hyperlink{cjs_2internal_2operators_2buffer_8js_a838d54b935df11eff7928ba8da636891}{buffer}}\textquotesingle{}).Buffer
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{form__data_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} = \mbox{\hyperlink{form__data_8js_ace76d2862e317d4ef1a0363fe5682436}{Form\+Data}}
+\item 
+\mbox{\hyperlink{form__data_8js_ace76d2862e317d4ef1a0363fe5682436}{Form\+Data}} \mbox{\hyperlink{form__data_8js_a3cf9c99a5b89f472253738b3cc2e8a51}{LINE\+\_\+\+BREAK}} = \textquotesingle{}\textbackslash{}\mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{r\textbackslash{}n}}\textquotesingle{}
+\item 
+\mbox{\hyperlink{form__data_8js_ace76d2862e317d4ef1a0363fe5682436}{Form\+Data}} \mbox{\hyperlink{form__data_8js_a44ff7852710cb70e6db123cd336445c5}{DEFAULT\+\_\+\+CONTENT\+\_\+\+TYPE}} = \textquotesingle{}\mbox{\hyperlink{express_2lib_2express_8js_aa30c9d0e437092b0607b68dee5b2c751}{application}}/octet-\/\mbox{\hyperlink{debug_2src_2node_8js_a822bf74d422c61e6caa292f739dc4786}{stream}}\textquotesingle{}
+\item 
+\mbox{\hyperlink{form__data_8js_ace76d2862e317d4ef1a0363fe5682436}{Form\+Data}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{form__data_8js_a724c452c3a827c1d12cf0de77360c95e}{append}}
+\item 
+\mbox{\hyperlink{form__data_8js_ace76d2862e317d4ef1a0363fe5682436}{Form\+Data}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{form__data_8js_abea5ed5bd11da29c9e7beead4958dc0d}{\+\_\+track\+Length}}
+\item 
+\mbox{\hyperlink{form__data_8js_ace76d2862e317d4ef1a0363fe5682436}{Form\+Data}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{form__data_8js_a5430696dcdae15b0e09ce24637a101c1}{\+\_\+length\+Retriever}}
+\item 
+\mbox{\hyperlink{form__data_8js_ace76d2862e317d4ef1a0363fe5682436}{Form\+Data}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{form__data_8js_a5528938ba55590a60a02bf73efa34364}{\+\_\+multi\+Part\+Header}}
+\item 
+\mbox{\hyperlink{form__data_8js_ace76d2862e317d4ef1a0363fe5682436}{Form\+Data}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{form__data_8js_ab6f03199e4d8629a49a8dc8ce58534cf}{\+\_\+get\+Content\+Disposition}}
+\item 
+\mbox{\hyperlink{form__data_8js_ace76d2862e317d4ef1a0363fe5682436}{Form\+Data}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{form__data_8js_a47dc1b0e65d5d1b0e1330a6fed1347aa}{\+\_\+get\+Content\+Type}}
+\item 
+\mbox{\hyperlink{form__data_8js_ace76d2862e317d4ef1a0363fe5682436}{Form\+Data}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{form__data_8js_a63a3100a9d63e90b3f27c639d6dffb47}{\+\_\+multi\+Part\+Footer}}
+\item 
+\mbox{\hyperlink{form__data_8js_ace76d2862e317d4ef1a0363fe5682436}{Form\+Data}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{form__data_8js_a5cbbdad24324a205025f8f82e447e92f}{\+\_\+last\+Boundary}}
+\item 
+\mbox{\hyperlink{form__data_8js_ace76d2862e317d4ef1a0363fe5682436}{Form\+Data}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{form__data_8js_a9ac45d90a31f58620ae9040c8a3fcd23}{get\+Headers}}
+\item 
+\mbox{\hyperlink{form__data_8js_ace76d2862e317d4ef1a0363fe5682436}{Form\+Data}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{form__data_8js_ab86ad8f5b13abef3804c3a0e43197668}{get\+Boundary}}
+\item 
+\mbox{\hyperlink{form__data_8js_ace76d2862e317d4ef1a0363fe5682436}{Form\+Data}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{form__data_8js_a71d654aecc30f6797942fbb06bc947ed}{get\+Buffer}}
+\item 
+\mbox{\hyperlink{form__data_8js_ace76d2862e317d4ef1a0363fe5682436}{Form\+Data}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{form__data_8js_a7d47954e99bc60056c813e94bc226986}{\+\_\+generate\+Boundary}}
+\item 
+\mbox{\hyperlink{form__data_8js_ace76d2862e317d4ef1a0363fe5682436}{Form\+Data}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{form__data_8js_a4c8eff73b8de0aa8fbd65af4e78ec618}{get\+Length\+Sync}}
+\item 
+\mbox{\hyperlink{form__data_8js_ace76d2862e317d4ef1a0363fe5682436}{Form\+Data}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{form__data_8js_abcd456d1bc37ac288181ee16d4b4ee1e}{has\+Known\+Length}}
+\item 
+\mbox{\hyperlink{form__data_8js_ace76d2862e317d4ef1a0363fe5682436}{Form\+Data}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{form__data_8js_a9c7f7ee36bf67c653f7db1173ac9091b}{get\+Length}}
+\item 
+\mbox{\hyperlink{form__data_8js_ace76d2862e317d4ef1a0363fe5682436}{Form\+Data}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{form__data_8js_a9cbc3428ecdbd3113df7d310ae683717}{submit}}
+\item 
+\mbox{\hyperlink{form__data_8js_ace76d2862e317d4ef1a0363fe5682436}{Form\+Data}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{form__data_8js_a01a7119891521521b943d655de0b6d9f}{\+\_\+error}}
+\item 
+\mbox{\hyperlink{form__data_8js_ace76d2862e317d4ef1a0363fe5682436}{Form\+Data}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{form__data_8js_aacd6bd72ed9ff159ae0ff5dd36eb3c3d}{to\+String}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{form__data_8js_ace76d2862e317d4ef1a0363fe5682436}\index{form\_data.js@{form\_data.js}!FormData@{FormData}}
+\index{FormData@{FormData}!form\_data.js@{form\_data.js}}
+\doxysubsubsection{\texorpdfstring{FormData()}{FormData()}}
+{\footnotesize\ttfamily \label{form__data_8js_ace76d2862e317d4ef1a0363fe5682436} 
+function Form\+Data (\begin{DoxyParamCaption}\item[{}]{options}{}\end{DoxyParamCaption})}
+
+Create readable "{}multipart/form-\/data"{} streams. Can be used to submit forms and file uploads to other web applications.
+
+@constructor 
+\begin{DoxyParams}{Parameters}
+{\em \{\+Object\}} & options -\/ Properties to be added/overriden for Form\+Data and Combined\+Stream \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{form__data_8js_a199a005514aafaa9766857ff3fa8b393}{Combined\+Stream}}, and \mbox{\hyperlink{form__data_8js_ace76d2862e317d4ef1a0363fe5682436}{Form\+Data()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=140pt]{form__data_8js_ace76d2862e317d4ef1a0363fe5682436_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{form__data_8js_ace76d2862e317d4ef1a0363fe5682436_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{form__data_8js_a01a7119891521521b943d655de0b6d9f}\index{form\_data.js@{form\_data.js}!\_error@{\_error}}
+\index{\_error@{\_error}!form\_data.js@{form\_data.js}}
+\doxysubsubsection{\texorpdfstring{\_error}{\_error}}
+{\footnotesize\ttfamily \label{form__data_8js_a01a7119891521521b943d655de0b6d9f} 
+\mbox{\hyperlink{form__data_8js_ace76d2862e317d4ef1a0363fe5682436}{Form\+Data}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \+\_\+error}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(err)\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (!this.\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}})\ \{}
+\DoxyCodeLine{\ \ \ \ this.\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}}\ =\ err;}
+\DoxyCodeLine{\ \ \ \ this.\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ae6a1eb421b73e4127993b6fce5471a3a}{pause}}();}
+\DoxyCodeLine{\ \ \ \ this.\mbox{\hyperlink{_0dprotobufjs_2eventemitter_2index_8js_a16439605b9cd7bd34fdbf935bef49de6}{emit}}(\textcolor{stringliteral}{'error'},\ err);}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{form__data_8js_a7d47954e99bc60056c813e94bc226986}\index{form\_data.js@{form\_data.js}!\_generateBoundary@{\_generateBoundary}}
+\index{\_generateBoundary@{\_generateBoundary}!form\_data.js@{form\_data.js}}
+\doxysubsubsection{\texorpdfstring{\_generateBoundary}{\_generateBoundary}}
+{\footnotesize\ttfamily \label{form__data_8js_a7d47954e99bc60056c813e94bc226986} 
+\mbox{\hyperlink{form__data_8js_ace76d2862e317d4ef1a0363fe5682436}{Form\+Data}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \+\_\+generate\+Boundary}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}()\ \{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ var\ boundary\ =\ \textcolor{stringliteral}{'-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/'};}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{for}\ (var\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ =\ 0;\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ <\ 24;\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}++)\ \{}
+\DoxyCodeLine{\ \ \ \ boundary\ +=\ Math.floor(Math.random()\ *\ 10).toString(16);}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ this.\_boundary\ =\ boundary;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{form__data_8js_ab6f03199e4d8629a49a8dc8ce58534cf}\index{form\_data.js@{form\_data.js}!\_getContentDisposition@{\_getContentDisposition}}
+\index{\_getContentDisposition@{\_getContentDisposition}!form\_data.js@{form\_data.js}}
+\doxysubsubsection{\texorpdfstring{\_getContentDisposition}{\_getContentDisposition}}
+{\footnotesize\ttfamily \label{form__data_8js_ab6f03199e4d8629a49a8dc8ce58534cf} 
+\mbox{\hyperlink{form__data_8js_ace76d2862e317d4ef1a0363fe5682436}{Form\+Data}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \+\_\+get\+Content\+Disposition}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}},\ options)\ \{}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{protobufjs_2src_2parse_8js_ad87dd7d0bb9bb745c8a20ef981fe2d32}{filename}}}
+\DoxyCodeLine{\ \ \ \ ,\ \mbox{\hyperlink{express_2lib_2utils_8js_aa1ae8b5aa0df46fcc9f22aba2deb965a}{contentDisposition}}}
+\DoxyCodeLine{\ \ \ \ ;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (typeof\ options.filepath\ ===\ \textcolor{stringliteral}{'string'})\ \{}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{protobufjs_2src_2parse_8js_ad87dd7d0bb9bb745c8a20ef981fe2d32}{filename}}\ =\ \mbox{\hyperlink{form__data_8js_aa72e0c8a20e6bcc571d3a1c51846e627}{path}}.normalize(options.filepath).replace(/\(\backslash\)\(\backslash\)/\mbox{\hyperlink{ordered-map_8min_8js_a103df269476e78897c9c4c6cb8f4eb06}{g}},\ \textcolor{charliteral}{'/'});}
+\DoxyCodeLine{\ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (options.filename\ ||\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.name\ ||\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.path)\ \{}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{protobufjs_2src_2parse_8js_ad87dd7d0bb9bb745c8a20ef981fe2d32}{filename}}\ =\ \mbox{\hyperlink{form__data_8js_aa72e0c8a20e6bcc571d3a1c51846e627}{path}}.basename(options.filename\ ||\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.name\ ||\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.path);}
+\DoxyCodeLine{\ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.readable\ \&\&\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.hasOwnProperty(\textcolor{stringliteral}{'httpVersion'}))\ \{}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{protobufjs_2src_2parse_8js_ad87dd7d0bb9bb745c8a20ef981fe2d32}{filename}}\ =\ \mbox{\hyperlink{form__data_8js_aa72e0c8a20e6bcc571d3a1c51846e627}{path}}.basename(\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.client.\_httpMessage.path\ ||\ \textcolor{stringliteral}{''});}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{protobufjs_2src_2parse_8js_ad87dd7d0bb9bb745c8a20ef981fe2d32}{filename}})\ \{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{express_2lib_2utils_8js_aa1ae8b5aa0df46fcc9f22aba2deb965a}{contentDisposition}}\ =\ \textcolor{stringliteral}{'filename="{}'}\ +\ \mbox{\hyperlink{protobufjs_2src_2parse_8js_ad87dd7d0bb9bb745c8a20ef981fe2d32}{filename}}\ +\ \textcolor{charliteral}{'"{}'};}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{express_2lib_2utils_8js_aa1ae8b5aa0df46fcc9f22aba2deb965a}{contentDisposition}};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{form__data_8js_a47dc1b0e65d5d1b0e1330a6fed1347aa}\index{form\_data.js@{form\_data.js}!\_getContentType@{\_getContentType}}
+\index{\_getContentType@{\_getContentType}!form\_data.js@{form\_data.js}}
+\doxysubsubsection{\texorpdfstring{\_getContentType}{\_getContentType}}
+{\footnotesize\ttfamily \label{form__data_8js_a47dc1b0e65d5d1b0e1330a6fed1347aa} 
+\mbox{\hyperlink{form__data_8js_ace76d2862e317d4ef1a0363fe5682436}{Form\+Data}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \+\_\+get\+Content\+Type}
+
+\Hypertarget{form__data_8js_a5cbbdad24324a205025f8f82e447e92f}\index{form\_data.js@{form\_data.js}!\_lastBoundary@{\_lastBoundary}}
+\index{\_lastBoundary@{\_lastBoundary}!form\_data.js@{form\_data.js}}
+\doxysubsubsection{\texorpdfstring{\_lastBoundary}{\_lastBoundary}}
+{\footnotesize\ttfamily \label{form__data_8js_a5cbbdad24324a205025f8f82e447e92f} 
+\mbox{\hyperlink{form__data_8js_ace76d2862e317d4ef1a0363fe5682436}{Form\+Data}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \+\_\+last\+Boundary}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}()\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{'-\/-\/'}\ +\ this.\mbox{\hyperlink{form__data_8js_ab86ad8f5b13abef3804c3a0e43197668}{getBoundary}}()\ +\ \textcolor{stringliteral}{'-\/-\/'}\ +\ \mbox{\hyperlink{form__data_8js_ace76d2862e317d4ef1a0363fe5682436}{FormData}}.LINE\_BREAK;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{form__data_8js_a5430696dcdae15b0e09ce24637a101c1}\index{form\_data.js@{form\_data.js}!\_lengthRetriever@{\_lengthRetriever}}
+\index{\_lengthRetriever@{\_lengthRetriever}!form\_data.js@{form\_data.js}}
+\doxysubsubsection{\texorpdfstring{\_lengthRetriever}{\_lengthRetriever}}
+{\footnotesize\ttfamily \label{form__data_8js_a5430696dcdae15b0e09ce24637a101c1} 
+\mbox{\hyperlink{form__data_8js_ace76d2862e317d4ef1a0363fe5682436}{Form\+Data}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \+\_\+length\+Retriever}
+
+\Hypertarget{form__data_8js_a63a3100a9d63e90b3f27c639d6dffb47}\index{form\_data.js@{form\_data.js}!\_multiPartFooter@{\_multiPartFooter}}
+\index{\_multiPartFooter@{\_multiPartFooter}!form\_data.js@{form\_data.js}}
+\doxysubsubsection{\texorpdfstring{\_multiPartFooter}{\_multiPartFooter}}
+{\footnotesize\ttfamily \label{form__data_8js_a63a3100a9d63e90b3f27c639d6dffb47} 
+\mbox{\hyperlink{form__data_8js_ace76d2862e317d4ef1a0363fe5682436}{Form\+Data}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \+\_\+multi\+Part\+Footer}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}()\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{function}(\mbox{\hyperlink{protobufjs_2dist_2protobuf_8js_adc8497f1b8fa9c7bee4a53c25c244a66}{next}})\ \{}
+\DoxyCodeLine{\ \ \ \ var\ footer\ =\ \mbox{\hyperlink{form__data_8js_ace76d2862e317d4ef1a0363fe5682436}{FormData}}.LINE\_BREAK;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ var\ lastPart\ =\ (this.\_streams.length\ ===\ 0);}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (lastPart)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ footer\ +=\ this.\mbox{\hyperlink{form__data_8js_a5cbbdad24324a205025f8f82e447e92f}{\_lastBoundary}}();}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{protobufjs_2dist_2protobuf_8js_adc8497f1b8fa9c7bee4a53c25c244a66}{next}}(footer);}
+\DoxyCodeLine{\ \ \}.bind(\textcolor{keyword}{this});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{form__data_8js_a5528938ba55590a60a02bf73efa34364}\index{form\_data.js@{form\_data.js}!\_multiPartHeader@{\_multiPartHeader}}
+\index{\_multiPartHeader@{\_multiPartHeader}!form\_data.js@{form\_data.js}}
+\doxysubsubsection{\texorpdfstring{\_multiPartHeader}{\_multiPartHeader}}
+{\footnotesize\ttfamily \label{form__data_8js_a5528938ba55590a60a02bf73efa34364} 
+\mbox{\hyperlink{form__data_8js_ace76d2862e317d4ef1a0363fe5682436}{Form\+Data}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \+\_\+multi\+Part\+Header}
+
+\Hypertarget{form__data_8js_abea5ed5bd11da29c9e7beead4958dc0d}\index{form\_data.js@{form\_data.js}!\_trackLength@{\_trackLength}}
+\index{\_trackLength@{\_trackLength}!form\_data.js@{form\_data.js}}
+\doxysubsubsection{\texorpdfstring{\_trackLength}{\_trackLength}}
+{\footnotesize\ttfamily \label{form__data_8js_abea5ed5bd11da29c9e7beead4958dc0d} 
+\mbox{\hyperlink{form__data_8js_ace76d2862e317d4ef1a0363fe5682436}{Form\+Data}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \+\_\+track\+Length}
+
+\Hypertarget{form__data_8js_a724c452c3a827c1d12cf0de77360c95e}\index{form\_data.js@{form\_data.js}!append@{append}}
+\index{append@{append}!form\_data.js@{form\_data.js}}
+\doxysubsubsection{\texorpdfstring{append}{append}}
+{\footnotesize\ttfamily \label{form__data_8js_a724c452c3a827c1d12cf0de77360c95e} 
+\mbox{\hyperlink{form__data_8js_ace76d2862e317d4ef1a0363fe5682436}{Form\+Data}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} append}
+
+\Hypertarget{form__data_8js_a07b85203c5cae55aebd1c1aeea509a49}\index{form\_data.js@{form\_data.js}!asynckit@{asynckit}}
+\index{asynckit@{asynckit}!form\_data.js@{form\_data.js}}
+\doxysubsubsection{\texorpdfstring{asynckit}{asynckit}}
+{\footnotesize\ttfamily \label{form__data_8js_a07b85203c5cae55aebd1c1aeea509a49} 
+var asynckit = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}asynckit\textquotesingle{})}
+
+\Hypertarget{form__data_8js_a6e9de2d16b02dc274208bfcc1914d7f4}\index{form\_data.js@{form\_data.js}!Buffer@{Buffer}}
+\index{Buffer@{Buffer}!form\_data.js@{form\_data.js}}
+\doxysubsubsection{\texorpdfstring{Buffer}{Buffer}}
+{\footnotesize\ttfamily \label{form__data_8js_a6e9de2d16b02dc274208bfcc1914d7f4} 
+var Buffer = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}safe-\/\mbox{\hyperlink{cjs_2internal_2operators_2buffer_8js_a838d54b935df11eff7928ba8da636891}{buffer}}\textquotesingle{}).Buffer}
+
+\Hypertarget{form__data_8js_a199a005514aafaa9766857ff3fa8b393}\index{form\_data.js@{form\_data.js}!CombinedStream@{CombinedStream}}
+\index{CombinedStream@{CombinedStream}!form\_data.js@{form\_data.js}}
+\doxysubsubsection{\texorpdfstring{CombinedStream}{CombinedStream}}
+{\footnotesize\ttfamily \label{form__data_8js_a199a005514aafaa9766857ff3fa8b393} 
+var Combined\+Stream = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}combined-\/\mbox{\hyperlink{debug_2src_2node_8js_a822bf74d422c61e6caa292f739dc4786}{stream}}\textquotesingle{})}
+
+\Hypertarget{form__data_8js_a44ff7852710cb70e6db123cd336445c5}\index{form\_data.js@{form\_data.js}!DEFAULT\_CONTENT\_TYPE@{DEFAULT\_CONTENT\_TYPE}}
+\index{DEFAULT\_CONTENT\_TYPE@{DEFAULT\_CONTENT\_TYPE}!form\_data.js@{form\_data.js}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_CONTENT\_TYPE}{DEFAULT\_CONTENT\_TYPE}}
+{\footnotesize\ttfamily \label{form__data_8js_a44ff7852710cb70e6db123cd336445c5} 
+\mbox{\hyperlink{form__data_8js_ace76d2862e317d4ef1a0363fe5682436}{Form\+Data}} DEFAULT\+\_\+\+CONTENT\+\_\+\+TYPE = \textquotesingle{}\mbox{\hyperlink{express_2lib_2express_8js_aa30c9d0e437092b0607b68dee5b2c751}{application}}/octet-\/\mbox{\hyperlink{debug_2src_2node_8js_a822bf74d422c61e6caa292f739dc4786}{stream}}\textquotesingle{}}
+
+\Hypertarget{form__data_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\index{form\_data.js@{form\_data.js}!exports@{exports}}
+\index{exports@{exports}!form\_data.js@{form\_data.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \label{form__data_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports = \mbox{\hyperlink{form__data_8js_ace76d2862e317d4ef1a0363fe5682436}{Form\+Data}}}
+
+\Hypertarget{form__data_8js_aebcdd70130f7e0b00b39cc981ab0bab0}\index{form\_data.js@{form\_data.js}!fs@{fs}}
+\index{fs@{fs}!form\_data.js@{form\_data.js}}
+\doxysubsubsection{\texorpdfstring{fs}{fs}}
+{\footnotesize\ttfamily \label{form__data_8js_aebcdd70130f7e0b00b39cc981ab0bab0} 
+var fs = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}fs\textquotesingle{})}
+
+\Hypertarget{form__data_8js_ab86ad8f5b13abef3804c3a0e43197668}\index{form\_data.js@{form\_data.js}!getBoundary@{getBoundary}}
+\index{getBoundary@{getBoundary}!form\_data.js@{form\_data.js}}
+\doxysubsubsection{\texorpdfstring{getBoundary}{getBoundary}}
+{\footnotesize\ttfamily \label{form__data_8js_ab86ad8f5b13abef3804c3a0e43197668} 
+\mbox{\hyperlink{form__data_8js_ace76d2862e317d4ef1a0363fe5682436}{Form\+Data}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} get\+Boundary}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}()\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (!this.\_boundary)\ \{}
+\DoxyCodeLine{\ \ \ \ this.\mbox{\hyperlink{form__data_8js_a7d47954e99bc60056c813e94bc226986}{\_generateBoundary}}();}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ this.\_boundary;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{form__data_8js_a71d654aecc30f6797942fbb06bc947ed}\index{form\_data.js@{form\_data.js}!getBuffer@{getBuffer}}
+\index{getBuffer@{getBuffer}!form\_data.js@{form\_data.js}}
+\doxysubsubsection{\texorpdfstring{getBuffer}{getBuffer}}
+{\footnotesize\ttfamily \label{form__data_8js_a71d654aecc30f6797942fbb06bc947ed} 
+\mbox{\hyperlink{form__data_8js_ace76d2862e317d4ef1a0363fe5682436}{Form\+Data}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} get\+Buffer}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}()\ \{}
+\DoxyCodeLine{\ \ var\ dataBuffer\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{interface_buffer}{Buffer}}.alloc(0);}
+\DoxyCodeLine{\ \ var\ boundary\ =\ this.\mbox{\hyperlink{form__data_8js_ab86ad8f5b13abef3804c3a0e43197668}{getBoundary}}();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{for}\ (var\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ =\ 0,\ len\ =\ this.\_streams.length;\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ <\ len;\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}++)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (typeof\ this.\_streams[\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}]\ !==\ \textcolor{stringliteral}{'function'})\ \{}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{interface_buffer}{Buffer}}.isBuffer(\textcolor{keyword}{this}.\_streams[\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}]))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ dataBuffer\ =\ \mbox{\hyperlink{interface_buffer}{Buffer}}.concat(\ [dataBuffer,\ this.\_streams[\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}]]);}
+\DoxyCodeLine{\ \ \ \ \ \ \}\textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ dataBuffer\ =\ \mbox{\hyperlink{interface_buffer}{Buffer}}.concat(\ [dataBuffer,\ \mbox{\hyperlink{interface_buffer}{Buffer}}.from(\textcolor{keyword}{this}.\_streams[\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}])]);}
+\DoxyCodeLine{\ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \textcolor{keywordflow}{if}\ (typeof\ this.\_streams[\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}]\ !==\ \textcolor{stringliteral}{'string'}\ ||\ this.\_streams[\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}].substring(\ 2,\ boundary.length\ +\ 2\ )\ !==\ boundary)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ dataBuffer\ =\ \mbox{\hyperlink{interface_buffer}{Buffer}}.concat(\ [dataBuffer,\ \mbox{\hyperlink{interface_buffer}{Buffer}}.from(\mbox{\hyperlink{form__data_8js_ace76d2862e317d4ef1a0363fe5682436}{FormData}}.LINE\_BREAK)]\ );}
+\DoxyCodeLine{\ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{interface_buffer}{Buffer}}.concat(\ [dataBuffer,\ \mbox{\hyperlink{interface_buffer}{Buffer}}.from(\textcolor{keyword}{this}.\_lastBoundary())]\ );}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{form__data_8js_a9ac45d90a31f58620ae9040c8a3fcd23}\index{form\_data.js@{form\_data.js}!getHeaders@{getHeaders}}
+\index{getHeaders@{getHeaders}!form\_data.js@{form\_data.js}}
+\doxysubsubsection{\texorpdfstring{getHeaders}{getHeaders}}
+{\footnotesize\ttfamily \label{form__data_8js_a9ac45d90a31f58620ae9040c8a3fcd23} 
+\mbox{\hyperlink{form__data_8js_ace76d2862e317d4ef1a0363fe5682436}{Form\+Data}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} get\+Headers}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(userHeaders)\ \{}
+\DoxyCodeLine{\ \ var\ header;}
+\DoxyCodeLine{\ \ var\ formHeaders\ =\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{'content-\/type'}:\ \textcolor{stringliteral}{'multipart/form-\/data;\ boundary='}\ +\ this.\mbox{\hyperlink{form__data_8js_ab86ad8f5b13abef3804c3a0e43197668}{getBoundary}}()}
+\DoxyCodeLine{\ \ \};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{for}\ (header\ in\ userHeaders)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (userHeaders.hasOwnProperty(header))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ formHeaders[header.toLowerCase()]\ =\ userHeaders[header];}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ formHeaders;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{form__data_8js_a9c7f7ee36bf67c653f7db1173ac9091b}\index{form\_data.js@{form\_data.js}!getLength@{getLength}}
+\index{getLength@{getLength}!form\_data.js@{form\_data.js}}
+\doxysubsubsection{\texorpdfstring{getLength}{getLength}}
+{\footnotesize\ttfamily \label{form__data_8js_a9c7f7ee36bf67c653f7db1173ac9091b} 
+\mbox{\hyperlink{form__data_8js_ace76d2862e317d4ef1a0363fe5682436}{Form\+Data}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} get\+Length}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(cb)\ \{}
+\DoxyCodeLine{\ \ var\ knownLength\ =\ this.\_overheadLength\ +\ this.\_valueLength;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (this.\_streams.length)\ \{}
+\DoxyCodeLine{\ \ \ \ knownLength\ +=\ this.\mbox{\hyperlink{form__data_8js_a5cbbdad24324a205025f8f82e447e92f}{\_lastBoundary}}().length;}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (!this.\_valuesToMeasure.length)\ \{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{ipaddr_8min_8js_abcedab16429ea0641c6596f556f2e102}{process}}.nextTick(cb.bind(\textcolor{keyword}{this},\ \textcolor{keyword}{null},\ knownLength));}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{form__data_8js_a07b85203c5cae55aebd1c1aeea509a49}{asynckit}}.parallel(this.\_valuesToMeasure,\ this.\mbox{\hyperlink{form__data_8js_a5430696dcdae15b0e09ce24637a101c1}{\_lengthRetriever}},\ \textcolor{keyword}{function}(err,\ \mbox{\hyperlink{__base_sample_8js_a133e745a7002d95c39d29cc180b56327}{values}})\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (err)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ cb(err);}
+\DoxyCodeLine{\ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{__base_sample_8js_a133e745a7002d95c39d29cc180b56327}{values}}.forEach(\textcolor{keyword}{function}(\mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a7fdcf4c82c9946bf2b0b80829a7ab230}{length}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ knownLength\ +=\ \mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a7fdcf4c82c9946bf2b0b80829a7ab230}{length}};}
+\DoxyCodeLine{\ \ \ \ \});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ cb(\textcolor{keyword}{null},\ knownLength);}
+\DoxyCodeLine{\ \ \});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{form__data_8js_a4c8eff73b8de0aa8fbd65af4e78ec618}\index{form\_data.js@{form\_data.js}!getLengthSync@{getLengthSync}}
+\index{getLengthSync@{getLengthSync}!form\_data.js@{form\_data.js}}
+\doxysubsubsection{\texorpdfstring{getLengthSync}{getLengthSync}}
+{\footnotesize\ttfamily \label{form__data_8js_a4c8eff73b8de0aa8fbd65af4e78ec618} 
+\mbox{\hyperlink{form__data_8js_ace76d2862e317d4ef1a0363fe5682436}{Form\+Data}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} get\+Length\+Sync}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}()\ \{}
+\DoxyCodeLine{\ \ var\ knownLength\ =\ this.\_overheadLength\ +\ this.\_valueLength;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (this.\_streams.length)\ \{}
+\DoxyCodeLine{\ \ \ \ knownLength\ +=\ this.\mbox{\hyperlink{form__data_8js_a5cbbdad24324a205025f8f82e447e92f}{\_lastBoundary}}().length;}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (!this.\mbox{\hyperlink{form__data_8js_abcd456d1bc37ac288181ee16d4b4ee1e}{hasKnownLength}}())\ \{}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ this.\mbox{\hyperlink{form__data_8js_a01a7119891521521b943d655de0b6d9f}{\_error}}(\textcolor{keyword}{new}\ Error(\textcolor{stringliteral}{'Cannot\ calculate\ proper\ length\ in\ synchronous\ way.'}));}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ knownLength;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{form__data_8js_abcd456d1bc37ac288181ee16d4b4ee1e}\index{form\_data.js@{form\_data.js}!hasKnownLength@{hasKnownLength}}
+\index{hasKnownLength@{hasKnownLength}!form\_data.js@{form\_data.js}}
+\doxysubsubsection{\texorpdfstring{hasKnownLength}{hasKnownLength}}
+{\footnotesize\ttfamily \label{form__data_8js_abcd456d1bc37ac288181ee16d4b4ee1e} 
+\mbox{\hyperlink{form__data_8js_ace76d2862e317d4ef1a0363fe5682436}{Form\+Data}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} has\+Known\+Length}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}()\ \{}
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{form__data_8js_abcd456d1bc37ac288181ee16d4b4ee1e}{hasKnownLength}}\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (this.\_valuesToMeasure.length)\ \{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{form__data_8js_abcd456d1bc37ac288181ee16d4b4ee1e}{hasKnownLength}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{form__data_8js_abcd456d1bc37ac288181ee16d4b4ee1e}{hasKnownLength}};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{form__data_8js_a55f22d498ca401fddca364855629d1d3}\index{form\_data.js@{form\_data.js}!http@{http}}
+\index{http@{http}!form\_data.js@{form\_data.js}}
+\doxysubsubsection{\texorpdfstring{http}{http}}
+{\footnotesize\ttfamily \label{form__data_8js_a55f22d498ca401fddca364855629d1d3} 
+var http = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}http\textquotesingle{})}
+
+\Hypertarget{form__data_8js_a6e280dccdb759066a762d4a1a10850cc}\index{form\_data.js@{form\_data.js}!https@{https}}
+\index{https@{https}!form\_data.js@{form\_data.js}}
+\doxysubsubsection{\texorpdfstring{https}{https}}
+{\footnotesize\ttfamily \label{form__data_8js_a6e280dccdb759066a762d4a1a10850cc} 
+var https = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}https\textquotesingle{})}
+
+\Hypertarget{form__data_8js_a3cf9c99a5b89f472253738b3cc2e8a51}\index{form\_data.js@{form\_data.js}!LINE\_BREAK@{LINE\_BREAK}}
+\index{LINE\_BREAK@{LINE\_BREAK}!form\_data.js@{form\_data.js}}
+\doxysubsubsection{\texorpdfstring{LINE\_BREAK}{LINE\_BREAK}}
+{\footnotesize\ttfamily \label{form__data_8js_a3cf9c99a5b89f472253738b3cc2e8a51} 
+\mbox{\hyperlink{form__data_8js_ace76d2862e317d4ef1a0363fe5682436}{Form\+Data}} LINE\+\_\+\+BREAK = \textquotesingle{}\textbackslash{}\mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{r\textbackslash{}n}}\textquotesingle{}}
+
+\Hypertarget{form__data_8js_ab4d288fe448bcc077971c41ae3797375}\index{form\_data.js@{form\_data.js}!mime@{mime}}
+\index{mime@{mime}!form\_data.js@{form\_data.js}}
+\doxysubsubsection{\texorpdfstring{mime}{mime}}
+{\footnotesize\ttfamily \label{form__data_8js_ab4d288fe448bcc077971c41ae3797375} 
+var mime = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}mime-\/\mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2index_8js_ab7462236e30435444188ea2b81d92654}{types}}\textquotesingle{})}
+
+\Hypertarget{form__data_8js_a22abdd124753668e3939b76fbc8e3386}\index{form\_data.js@{form\_data.js}!parseUrl@{parseUrl}}
+\index{parseUrl@{parseUrl}!form\_data.js@{form\_data.js}}
+\doxysubsubsection{\texorpdfstring{parseUrl}{parseUrl}}
+{\footnotesize\ttfamily \label{form__data_8js_a22abdd124753668e3939b76fbc8e3386} 
+var parse\+Url = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_acf0a8b41f00a22e21672c8b3768a0618}{url}}\textquotesingle{}).\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa96c2329bbb4c535fae1093499f4ad49}{parse}}}
+
+\Hypertarget{form__data_8js_aa72e0c8a20e6bcc571d3a1c51846e627}\index{form\_data.js@{form\_data.js}!path@{path}}
+\index{path@{path}!form\_data.js@{form\_data.js}}
+\doxysubsubsection{\texorpdfstring{path}{path}}
+{\footnotesize\ttfamily \label{form__data_8js_aa72e0c8a20e6bcc571d3a1c51846e627} 
+var path = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}path\textquotesingle{})}
+
+\Hypertarget{form__data_8js_a704a0d2cf66bba0127007a11ac4245d7}\index{form\_data.js@{form\_data.js}!populate@{populate}}
+\index{populate@{populate}!form\_data.js@{form\_data.js}}
+\doxysubsubsection{\texorpdfstring{populate}{populate}}
+{\footnotesize\ttfamily \label{form__data_8js_a704a0d2cf66bba0127007a11ac4245d7} 
+var populate = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\mbox{\hyperlink{esm_2src_2file_8js_a73ffb0a3b9f028910adc01ac31153d46}{populate.\+js}}\textquotesingle{})}
+
+\Hypertarget{form__data_8js_a9cbc3428ecdbd3113df7d310ae683717}\index{form\_data.js@{form\_data.js}!submit@{submit}}
+\index{submit@{submit}!form\_data.js@{form\_data.js}}
+\doxysubsubsection{\texorpdfstring{submit}{submit}}
+{\footnotesize\ttfamily \label{form__data_8js_a9cbc3428ecdbd3113df7d310ae683717} 
+\mbox{\hyperlink{form__data_8js_ace76d2862e317d4ef1a0363fe5682436}{Form\+Data}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} submit}
+
+\Hypertarget{form__data_8js_aacd6bd72ed9ff159ae0ff5dd36eb3c3d}\index{form\_data.js@{form\_data.js}!toString@{toString}}
+\index{toString@{toString}!form\_data.js@{form\_data.js}}
+\doxysubsubsection{\texorpdfstring{toString}{toString}}
+{\footnotesize\ttfamily \label{form__data_8js_aacd6bd72ed9ff159ae0ff5dd36eb3c3d} 
+\mbox{\hyperlink{form__data_8js_ace76d2862e317d4ef1a0363fe5682436}{Form\+Data}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} to\+String}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ ()\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{'[object\ FormData]'};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{form__data_8js_a8f5b2e09d5197e9d28f6032dff542d44}\index{form\_data.js@{form\_data.js}!util@{util}}
+\index{util@{util}!form\_data.js@{form\_data.js}}
+\doxysubsubsection{\texorpdfstring{util}{util}}
+{\footnotesize\ttfamily \label{form__data_8js_a8f5b2e09d5197e9d28f6032dff542d44} 
+var util = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}util\textquotesingle{})}
+

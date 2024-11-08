@@ -1,0 +1,195 @@
+\doxysection{backend/node\+\_\+modules/@google-\/cloud/firestore/build/src/watch.js File Reference}
+\hypertarget{watch_8js}{}\label{watch_8js}\index{backend/node\_modules/"@google-\/cloud/firestore/build/src/watch.js@{backend/node\_modules/"@google-\/cloud/firestore/build/src/watch.js}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_watch}{Watch}}
+\item 
+class \mbox{\hyperlink{class_document_watch}{Document\+Watch}}
+\item 
+class \mbox{\hyperlink{class_query_watch}{Query\+Watch}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{watch_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{watch_8js_ab149dbdaecd6c8e27e6eef96142a6003}{Query\+Watch}} = exports.\+Document\+Watch = \mbox{\hyperlink{watch_8js_ac88e5d37a549312df65908f5e6621a66}{exports.\+WATCH\+\_\+\+IDLE\+\_\+\+TIMEOUT\+\_\+\+MS}} = void 0
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{watch_8js_a0a4d6a89916a48f4ba0e696e93dfc003}{assert}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}assert"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{watch_8js_ae8dc558c657230155f2b18b6ab497984}{rbtree}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}functional-\/red-\/black-\/tree"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{watch_8js_ae49df1ea55f05ce652f5f279bb057b0d}{google\+\_\+gax\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}google-\/gax"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{watch_8js_a2a99b35f5acb6783c8f83ba70a05086a}{backoff\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./backoff"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{watch_8js_a0d8248e7d9115839596aa13782b68637}{document\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./document"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{watch_8js_a1796b01a2d5d3a6ff1cca09435ef9ae8}{document\+\_\+change\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./document-\/change"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{watch_8js_aa6fdd07b218f5ee1f103f79a4ad6d5f1}{logger\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./logger"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{watch_8js_a705fe9bf53f002be551bde47cc3a6069}{path\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./path"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{watch_8js_ade04b24e14507564885ddbb231b3fc20}{timestamp\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./timestamp"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{watch_8js_a55a953cce0b62371f42d14c2de9a6eb4}{types\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./types"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{watch_8js_a6af3fa6e24c6a46faf4552f3a2ad8783}{util\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./util"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{watch_8js_a875fd9e2d4a7c5222882e625efeaf814}{WATCH\+\_\+\+TARGET\+\_\+\+ID}} = 0x1
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{watch_8js_ac88e5d37a549312df65908f5e6621a66}{WATCH\+\_\+\+IDLE\+\_\+\+TIMEOUT\+\_\+\+MS}} = 120 \texorpdfstring{$\ast$}{*} 1000
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{watch_8js_a407d200e9f16e51a21be57a9fcec09f0}{REMOVED}} = \{\}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{watch_8js_a3e3ff11e8765f8a0f5fdb17731d5b163}{Change\+Type}}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{watch_8js_afebc4611ca9c3ddc5845215e835cbfc0}{DOCUMENT\+\_\+\+WATCH\+\_\+\+COMPARATOR}}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{watch_8js_a1b87f652b360fcee5472ad89bb56665c}{EMPTY\+\_\+\+FUNCTION}} = () =$>$ \{ \}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{watch_8js_a8654ee5963e21efae51302705b9f8626}{Document\+Watch}} = Document\+Watch
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{watch_8js_a0a4d6a89916a48f4ba0e696e93dfc003}\index{watch.js@{watch.js}!assert@{assert}}
+\index{assert@{assert}!watch.js@{watch.js}}
+\doxysubsubsection{\texorpdfstring{assert}{assert}}
+{\footnotesize\ttfamily \label{watch_8js_a0a4d6a89916a48f4ba0e696e93dfc003} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} assert = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}assert"{})}
+
+\Hypertarget{watch_8js_a2a99b35f5acb6783c8f83ba70a05086a}\index{watch.js@{watch.js}!backoff\_1@{backoff\_1}}
+\index{backoff\_1@{backoff\_1}!watch.js@{watch.js}}
+\doxysubsubsection{\texorpdfstring{backoff\_1}{backoff\_1}}
+{\footnotesize\ttfamily \label{watch_8js_a2a99b35f5acb6783c8f83ba70a05086a} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} backoff\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./backoff"{})}
+
+\Hypertarget{watch_8js_a3e3ff11e8765f8a0f5fdb17731d5b163}\index{watch.js@{watch.js}!ChangeType@{ChangeType}}
+\index{ChangeType@{ChangeType}!watch.js@{watch.js}}
+\doxysubsubsection{\texorpdfstring{ChangeType}{ChangeType}}
+{\footnotesize\ttfamily \label{watch_8js_a3e3ff11e8765f8a0f5fdb17731d5b163} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} Change\+Type}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \ \ added:\ \textcolor{stringliteral}{'added'},}
+\DoxyCodeLine{\ \ \ \ modified:\ \textcolor{stringliteral}{'modified'},}
+\DoxyCodeLine{\ \ \ \ removed:\ \textcolor{stringliteral}{'removed'},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+The change type for document change events. \Hypertarget{watch_8js_a0d8248e7d9115839596aa13782b68637}\index{watch.js@{watch.js}!document\_1@{document\_1}}
+\index{document\_1@{document\_1}!watch.js@{watch.js}}
+\doxysubsubsection{\texorpdfstring{document\_1}{document\_1}}
+{\footnotesize\ttfamily \label{watch_8js_a0d8248e7d9115839596aa13782b68637} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} document\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./document"{})}
+
+\Hypertarget{watch_8js_a1796b01a2d5d3a6ff1cca09435ef9ae8}\index{watch.js@{watch.js}!document\_change\_1@{document\_change\_1}}
+\index{document\_change\_1@{document\_change\_1}!watch.js@{watch.js}}
+\doxysubsubsection{\texorpdfstring{document\_change\_1}{document\_change\_1}}
+{\footnotesize\ttfamily \label{watch_8js_a1796b01a2d5d3a6ff1cca09435ef9ae8} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} document\+\_\+change\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./document-\/change"{})}
+
+\Hypertarget{watch_8js_afebc4611ca9c3ddc5845215e835cbfc0}\index{watch.js@{watch.js}!DOCUMENT\_WATCH\_COMPARATOR@{DOCUMENT\_WATCH\_COMPARATOR}}
+\index{DOCUMENT\_WATCH\_COMPARATOR@{DOCUMENT\_WATCH\_COMPARATOR}!watch.js@{watch.js}}
+\doxysubsubsection{\texorpdfstring{DOCUMENT\_WATCH\_COMPARATOR}{DOCUMENT\_WATCH\_COMPARATOR}}
+{\footnotesize\ttfamily \label{watch_8js_afebc4611ca9c3ddc5845215e835cbfc0} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} DOCUMENT\+\_\+\+WATCH\+\_\+\+COMPARATOR}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ (doc1,\ doc2)\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{watch_8js_a0a4d6a89916a48f4ba0e696e93dfc003}{assert}}(doc1\ ===\ doc2,\ \textcolor{stringliteral}{'Document\ watches\ only\ support\ one\ document.'});}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+The comparator used for document watches (which should always get called with the same document). \Hypertarget{watch_8js_a8654ee5963e21efae51302705b9f8626}\index{watch.js@{watch.js}!DocumentWatch@{DocumentWatch}}
+\index{DocumentWatch@{DocumentWatch}!watch.js@{watch.js}}
+\doxysubsubsection{\texorpdfstring{DocumentWatch}{DocumentWatch}}
+{\footnotesize\ttfamily \label{watch_8js_a8654ee5963e21efae51302705b9f8626} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} Document\+Watch = Document\+Watch}
+
+\Hypertarget{watch_8js_a1b87f652b360fcee5472ad89bb56665c}\index{watch.js@{watch.js}!EMPTY\_FUNCTION@{EMPTY\_FUNCTION}}
+\index{EMPTY\_FUNCTION@{EMPTY\_FUNCTION}!watch.js@{watch.js}}
+\doxysubsubsection{\texorpdfstring{EMPTY\_FUNCTION}{EMPTY\_FUNCTION}}
+{\footnotesize\ttfamily \label{watch_8js_a1b87f652b360fcee5472ad89bb56665c} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} EMPTY\+\_\+\+FUNCTION = () =$>$ \{ \}}
+
+\Hypertarget{watch_8js_ae49df1ea55f05ce652f5f279bb057b0d}\index{watch.js@{watch.js}!google\_gax\_1@{google\_gax\_1}}
+\index{google\_gax\_1@{google\_gax\_1}!watch.js@{watch.js}}
+\doxysubsubsection{\texorpdfstring{google\_gax\_1}{google\_gax\_1}}
+{\footnotesize\ttfamily \label{watch_8js_ae49df1ea55f05ce652f5f279bb057b0d} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} google\+\_\+gax\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}google-\/gax"{})}
+
+\Hypertarget{watch_8js_aa6fdd07b218f5ee1f103f79a4ad6d5f1}\index{watch.js@{watch.js}!logger\_1@{logger\_1}}
+\index{logger\_1@{logger\_1}!watch.js@{watch.js}}
+\doxysubsubsection{\texorpdfstring{logger\_1}{logger\_1}}
+{\footnotesize\ttfamily \label{watch_8js_aa6fdd07b218f5ee1f103f79a4ad6d5f1} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} logger\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./logger"{})}
+
+\Hypertarget{watch_8js_a705fe9bf53f002be551bde47cc3a6069}\index{watch.js@{watch.js}!path\_1@{path\_1}}
+\index{path\_1@{path\_1}!watch.js@{watch.js}}
+\doxysubsubsection{\texorpdfstring{path\_1}{path\_1}}
+{\footnotesize\ttfamily \label{watch_8js_a705fe9bf53f002be551bde47cc3a6069} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} path\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./path"{})}
+
+\Hypertarget{watch_8js_ab149dbdaecd6c8e27e6eef96142a6003}\index{watch.js@{watch.js}!QueryWatch@{QueryWatch}}
+\index{QueryWatch@{QueryWatch}!watch.js@{watch.js}}
+\doxysubsubsection{\texorpdfstring{QueryWatch}{QueryWatch}}
+{\footnotesize\ttfamily \label{watch_8js_ab149dbdaecd6c8e27e6eef96142a6003} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} Query\+Watch = exports.\+Document\+Watch = \mbox{\hyperlink{watch_8js_ac88e5d37a549312df65908f5e6621a66}{exports.\+WATCH\+\_\+\+IDLE\+\_\+\+TIMEOUT\+\_\+\+MS}} = void 0}
+
+\Hypertarget{watch_8js_ae8dc558c657230155f2b18b6ab497984}\index{watch.js@{watch.js}!rbtree@{rbtree}}
+\index{rbtree@{rbtree}!watch.js@{watch.js}}
+\doxysubsubsection{\texorpdfstring{rbtree}{rbtree}}
+{\footnotesize\ttfamily \label{watch_8js_ae8dc558c657230155f2b18b6ab497984} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} rbtree = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}functional-\/red-\/black-\/tree"{})}
+
+\Hypertarget{watch_8js_a407d200e9f16e51a21be57a9fcec09f0}\index{watch.js@{watch.js}!REMOVED@{REMOVED}}
+\index{REMOVED@{REMOVED}!watch.js@{watch.js}}
+\doxysubsubsection{\texorpdfstring{REMOVED}{REMOVED}}
+{\footnotesize\ttfamily \label{watch_8js_a407d200e9f16e51a21be57a9fcec09f0} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} REMOVED = \{\}}
+
+Sentinel value for a document remove. \Hypertarget{watch_8js_ae2475e10618961c050dcba04e8c42331}\index{watch.js@{watch.js}!strict@{strict}}
+\index{strict@{strict}!watch.js@{watch.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{watch_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+
+\Hypertarget{watch_8js_ade04b24e14507564885ddbb231b3fc20}\index{watch.js@{watch.js}!timestamp\_1@{timestamp\_1}}
+\index{timestamp\_1@{timestamp\_1}!watch.js@{watch.js}}
+\doxysubsubsection{\texorpdfstring{timestamp\_1}{timestamp\_1}}
+{\footnotesize\ttfamily \label{watch_8js_ade04b24e14507564885ddbb231b3fc20} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} timestamp\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./timestamp"{})}
+
+\Hypertarget{watch_8js_a55a953cce0b62371f42d14c2de9a6eb4}\index{watch.js@{watch.js}!types\_1@{types\_1}}
+\index{types\_1@{types\_1}!watch.js@{watch.js}}
+\doxysubsubsection{\texorpdfstring{types\_1}{types\_1}}
+{\footnotesize\ttfamily \label{watch_8js_a55a953cce0b62371f42d14c2de9a6eb4} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} types\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./types"{})}
+
+\Hypertarget{watch_8js_a6af3fa6e24c6a46faf4552f3a2ad8783}\index{watch.js@{watch.js}!util\_1@{util\_1}}
+\index{util\_1@{util\_1}!watch.js@{watch.js}}
+\doxysubsubsection{\texorpdfstring{util\_1}{util\_1}}
+{\footnotesize\ttfamily \label{watch_8js_a6af3fa6e24c6a46faf4552f3a2ad8783} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} util\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./util"{})}
+
+\Hypertarget{watch_8js_ac88e5d37a549312df65908f5e6621a66}\index{watch.js@{watch.js}!WATCH\_IDLE\_TIMEOUT\_MS@{WATCH\_IDLE\_TIMEOUT\_MS}}
+\index{WATCH\_IDLE\_TIMEOUT\_MS@{WATCH\_IDLE\_TIMEOUT\_MS}!watch.js@{watch.js}}
+\doxysubsubsection{\texorpdfstring{WATCH\_IDLE\_TIMEOUT\_MS}{WATCH\_IDLE\_TIMEOUT\_MS}}
+{\footnotesize\ttfamily \label{watch_8js_ac88e5d37a549312df65908f5e6621a66} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} WATCH\+\_\+\+IDLE\+\_\+\+TIMEOUT\+\_\+\+MS = 120 \texorpdfstring{$\ast$}{*} 1000}
+
+Idle timeout used to detect \doxylink{class_watch}{Watch} streams that stall (see \href{https://github.com/googleapis/nodejs-firestore/issues/1057}{\texttt{ https\+://github.\+com/googleapis/nodejs-\/firestore/issues/1057}}, b/156308554). Under normal load, the \doxylink{class_watch}{Watch} backend will send a TARGET\+\_\+\+CHANGE message roughly every 30 seconds. As discussed with the backend team, we reset the \doxylink{class_watch}{Watch} stream if we do not receive any message within 120 seconds. \Hypertarget{watch_8js_a875fd9e2d4a7c5222882e625efeaf814}\index{watch.js@{watch.js}!WATCH\_TARGET\_ID@{WATCH\_TARGET\_ID}}
+\index{WATCH\_TARGET\_ID@{WATCH\_TARGET\_ID}!watch.js@{watch.js}}
+\doxysubsubsection{\texorpdfstring{WATCH\_TARGET\_ID}{WATCH\_TARGET\_ID}}
+{\footnotesize\ttfamily \label{watch_8js_a875fd9e2d4a7c5222882e625efeaf814} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} WATCH\+\_\+\+TARGET\+\_\+\+ID = 0x1}
+
+Target ID used by watch. \doxylink{class_watch}{Watch} uses a fixed target id since we only support one target per stream. @type \{number\} 

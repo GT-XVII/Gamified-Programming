@@ -1,0 +1,261 @@
+\doxysection{backend/node\+\_\+modules/jws/lib/verify-\/stream.js File Reference}
+\hypertarget{jws_2lib_2verify-stream_8js}{}\label{jws_2lib_2verify-stream_8js}\index{backend/node\_modules/jws/lib/verify-\/stream.js@{backend/node\_modules/jws/lib/verify-\/stream.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{jws_2lib_2verify-stream_8js_a0a9cfb8de33d630d648d68cea68b354c}{is\+Object}} (thing)
+\item 
+function \mbox{\hyperlink{jws_2lib_2verify-stream_8js_a89b8e29a62f1c66b03506b485f157978}{safe\+Json\+Parse}} (thing)
+\item 
+function \mbox{\hyperlink{jws_2lib_2verify-stream_8js_a32cc55c26c7207108422f6cb371ae11a}{header\+From\+JWS}} (jws\+Sig)
+\item 
+function \mbox{\hyperlink{jws_2lib_2verify-stream_8js_a73f38c466241121b9d1dbf01481b2c35}{secured\+Input\+From\+JWS}} (jws\+Sig)
+\item 
+function \mbox{\hyperlink{jws_2lib_2verify-stream_8js_a3d8b74a826f00a7026442dcf65b3bd04}{signature\+From\+JWS}} (jws\+Sig)
+\item 
+function \mbox{\hyperlink{jws_2lib_2verify-stream_8js_af645faa05a3e7811a6c0948721595733}{payload\+From\+JWS}} (jws\+Sig, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aace6cbf6b92481670f8b8421548f7584}{encoding}})
+\item 
+function \mbox{\hyperlink{jws_2lib_2verify-stream_8js_a06a8d63765bfafa0dfca5dba60639024}{is\+Valid\+Jws}} (\mbox{\hyperlink{reader_8js_a5c10456fb38514f2fe2b2da9323924ac}{string}})
+\item 
+function \mbox{\hyperlink{jws_2lib_2verify-stream_8js_a6c4a7880932d45cddada578f81469ce4}{jws\+Verify}} (jws\+Sig, algorithm, secret\+Or\+Key)
+\item 
+function \mbox{\hyperlink{jws_2lib_2verify-stream_8js_a8b5fc06ddd3d75433612502fb1bf5537}{jws\+Decode}} (jws\+Sig, opts)
+\item 
+function \mbox{\hyperlink{jws_2lib_2verify-stream_8js_a4b8051ec15fe4f030bbd0acee51f888e}{Verify\+Stream}} (opts)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{jws_2lib_2verify-stream_8js_a6e9de2d16b02dc274208bfcc1914d7f4}{Buffer}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}safe-\/\mbox{\hyperlink{cjs_2internal_2operators_2buffer_8js_a838d54b935df11eff7928ba8da636891}{buffer}}\textquotesingle{}).Buffer
+\item 
+var \mbox{\hyperlink{jws_2lib_2verify-stream_8js_af7a06c6ff395742675a7a38fd048f702}{Data\+Stream}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}-\/\mbox{\hyperlink{debug_2src_2node_8js_a822bf74d422c61e6caa292f739dc4786}{stream}}\textquotesingle{})
+\item 
+var \mbox{\hyperlink{jws_2lib_2verify-stream_8js_a7f7e6110a03aee89f69811a30332c33f}{jwa}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}jwa\textquotesingle{})
+\item 
+var \mbox{\hyperlink{jws_2lib_2verify-stream_8js_a2ad0cbec59ce1e4920545b10498bf9f5}{Stream}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}\mbox{\hyperlink{debug_2src_2node_8js_a822bf74d422c61e6caa292f739dc4786}{stream}}\textquotesingle{})
+\item 
+var \mbox{\hyperlink{jws_2lib_2verify-stream_8js_a7c9b2c6889147a97101a5409709b8d91}{to\+String}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./tostring\textquotesingle{})
+\item 
+var \mbox{\hyperlink{jws_2lib_2verify-stream_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}util\textquotesingle{})
+\item 
+var \mbox{\hyperlink{jws_2lib_2verify-stream_8js_af36226ff6b2918d8ca7dba460a560bbb}{JWS\+\_\+\+REGEX}} = /\texorpdfstring{$^\wedge$}{\string^}\mbox{[}\mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}-\/zA-\/Z0-\/9\textbackslash{}-\/\mbox{\hyperlink{fp_8js_a6e69a5af94d7d53886e51f89fb3bd6b4}{\+\_\+}}\mbox{]}+?\textbackslash{}.\mbox{[}\mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}-\/zA-\/Z0-\/9\textbackslash{}-\/\mbox{\hyperlink{fp_8js_a6e69a5af94d7d53886e51f89fb3bd6b4}{\+\_\+}}\mbox{]}+?\textbackslash{}.(\mbox{[}\mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}-\/zA-\/Z0-\/9\textbackslash{}-\/\mbox{\hyperlink{fp_8js_a6e69a5af94d7d53886e51f89fb3bd6b4}{\+\_\+}}\mbox{]}+)?\$/
+\item 
+\mbox{\hyperlink{jsonwebtoken_2node__modules_2jws_2index_8js_ad5c4434a2a8f63da9fb3e71e39eb44d6}{Verify\+Stream}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{jws_2lib_2verify-stream_8js_aef27cf90f7f5269ad7122f8f7f14c457}{verify}}
+\item 
+\mbox{\hyperlink{jsonwebtoken_2node__modules_2jws_2index_8js_ad5c4434a2a8f63da9fb3e71e39eb44d6}{Verify\+Stream}} \mbox{\hyperlink{jws_2lib_2verify-stream_8js_a5cf15f5e9a1ae455e36a7ce4690ae5d6}{decode}} = \mbox{\hyperlink{jsonwebtoken_2node__modules_2jws_2lib_2verify-stream_8js_a8b5fc06ddd3d75433612502fb1bf5537}{jws\+Decode}}
+\item 
+\mbox{\hyperlink{jsonwebtoken_2node__modules_2jws_2index_8js_ad5c4434a2a8f63da9fb3e71e39eb44d6}{Verify\+Stream}} \mbox{\hyperlink{jws_2lib_2verify-stream_8js_a2a7c268161ceb79a43f28d551ab75dd2}{is\+Valid}} = \mbox{\hyperlink{jsonwebtoken_2node__modules_2jws_2lib_2verify-stream_8js_a06a8d63765bfafa0dfca5dba60639024}{is\+Valid\+Jws}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{jws_2lib_2verify-stream_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} = \mbox{\hyperlink{jsonwebtoken_2node__modules_2jws_2index_8js_ad5c4434a2a8f63da9fb3e71e39eb44d6}{Verify\+Stream}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{jws_2lib_2verify-stream_8js_a32cc55c26c7207108422f6cb371ae11a}\index{verify-\/stream.js@{verify-\/stream.js}!headerFromJWS@{headerFromJWS}}
+\index{headerFromJWS@{headerFromJWS}!verify-\/stream.js@{verify-\/stream.js}}
+\doxysubsubsection{\texorpdfstring{headerFromJWS()}{headerFromJWS()}}
+{\footnotesize\ttfamily \label{jws_2lib_2verify-stream_8js_a32cc55c26c7207108422f6cb371ae11a} 
+function header\+From\+JWS (\begin{DoxyParamCaption}\item[{}]{jws\+Sig}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{jsonwebtoken_2node__modules_2jws_2lib_2verify-stream_8js_a89b8e29a62f1c66b03506b485f157978}{safe\+Json\+Parse()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=287pt]{jws_2lib_2verify-stream_8js_a32cc55c26c7207108422f6cb371ae11a_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{jws_2lib_2verify-stream_8js_a0a9cfb8de33d630d648d68cea68b354c}\index{verify-\/stream.js@{verify-\/stream.js}!isObject@{isObject}}
+\index{isObject@{isObject}!verify-\/stream.js@{verify-\/stream.js}}
+\doxysubsubsection{\texorpdfstring{isObject()}{isObject()}}
+{\footnotesize\ttfamily \label{jws_2lib_2verify-stream_8js_a0a9cfb8de33d630d648d68cea68b354c} 
+function is\+Object (\begin{DoxyParamCaption}\item[{}]{thing}{}\end{DoxyParamCaption})}
+
+\Hypertarget{jws_2lib_2verify-stream_8js_a06a8d63765bfafa0dfca5dba60639024}\index{verify-\/stream.js@{verify-\/stream.js}!isValidJws@{isValidJws}}
+\index{isValidJws@{isValidJws}!verify-\/stream.js@{verify-\/stream.js}}
+\doxysubsubsection{\texorpdfstring{isValidJws()}{isValidJws()}}
+{\footnotesize\ttfamily \label{jws_2lib_2verify-stream_8js_a06a8d63765bfafa0dfca5dba60639024} 
+function is\+Valid\+Jws (\begin{DoxyParamCaption}\item[{}]{string}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{jsonwebtoken_2node__modules_2jws_2lib_2verify-stream_8js_a32cc55c26c7207108422f6cb371ae11a}{header\+From\+JWS()}}, and \mbox{\hyperlink{jsonwebtoken_2node__modules_2jws_2lib_2verify-stream_8js_af36226ff6b2918d8ca7dba460a560bbb}{JWS\+\_\+\+REGEX}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{jws_2lib_2verify-stream_8js_a06a8d63765bfafa0dfca5dba60639024_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{jws_2lib_2verify-stream_8js_a8b5fc06ddd3d75433612502fb1bf5537}\index{verify-\/stream.js@{verify-\/stream.js}!jwsDecode@{jwsDecode}}
+\index{jwsDecode@{jwsDecode}!verify-\/stream.js@{verify-\/stream.js}}
+\doxysubsubsection{\texorpdfstring{jwsDecode()}{jwsDecode()}}
+{\footnotesize\ttfamily \label{jws_2lib_2verify-stream_8js_a8b5fc06ddd3d75433612502fb1bf5537} 
+function jws\+Decode (\begin{DoxyParamCaption}\item[{}]{jws\+Sig}{, }\item[{}]{opts}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{jsonwebtoken_2node__modules_2jws_2lib_2verify-stream_8js_a32cc55c26c7207108422f6cb371ae11a}{header\+From\+JWS()}}, \mbox{\hyperlink{jsonwebtoken_2node__modules_2jws_2lib_2verify-stream_8js_a06a8d63765bfafa0dfca5dba60639024}{is\+Valid\+Jws()}}, \mbox{\hyperlink{json-bigint_2lib_2stringify_8js_aec316efdeb7b2e5358b7d50869858da1}{JSON}}, \mbox{\hyperlink{jsonwebtoken_2node__modules_2jws_2lib_2verify-stream_8js_af645faa05a3e7811a6c0948721595733}{payload\+From\+JWS()}}, \mbox{\hyperlink{util_2dist_2index_8cjs_8js_a49c27936a5413e9cfe35de3e98a0d4d7}{signature}}, \mbox{\hyperlink{jsonwebtoken_2node__modules_2jws_2lib_2verify-stream_8js_a3d8b74a826f00a7026442dcf65b3bd04}{signature\+From\+JWS()}}, and \mbox{\hyperlink{jsonwebtoken_2node__modules_2jws_2lib_2verify-stream_8js_a7c9b2c6889147a97101a5409709b8d91}{to\+String}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{jws_2lib_2verify-stream_8js_a8b5fc06ddd3d75433612502fb1bf5537_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{jws_2lib_2verify-stream_8js_a6c4a7880932d45cddada578f81469ce4}\index{verify-\/stream.js@{verify-\/stream.js}!jwsVerify@{jwsVerify}}
+\index{jwsVerify@{jwsVerify}!verify-\/stream.js@{verify-\/stream.js}}
+\doxysubsubsection{\texorpdfstring{jwsVerify()}{jwsVerify()}}
+{\footnotesize\ttfamily \label{jws_2lib_2verify-stream_8js_a6c4a7880932d45cddada578f81469ce4} 
+function jws\+Verify (\begin{DoxyParamCaption}\item[{}]{jws\+Sig}{, }\item[{}]{algorithm}{, }\item[{}]{secret\+Or\+Key}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{jsonwebtoken_2node__modules_2jws_2lib_2verify-stream_8js_a7f7e6110a03aee89f69811a30332c33f}{jwa}}, \mbox{\hyperlink{jsonwebtoken_2node__modules_2jws_2lib_2verify-stream_8js_a73f38c466241121b9d1dbf01481b2c35}{secured\+Input\+From\+JWS()}}, \mbox{\hyperlink{util_2dist_2index_8cjs_8js_a49c27936a5413e9cfe35de3e98a0d4d7}{signature}}, \mbox{\hyperlink{jsonwebtoken_2node__modules_2jws_2lib_2verify-stream_8js_a3d8b74a826f00a7026442dcf65b3bd04}{signature\+From\+JWS()}}, and \mbox{\hyperlink{jsonwebtoken_2node__modules_2jws_2lib_2verify-stream_8js_a7c9b2c6889147a97101a5409709b8d91}{to\+String}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=289pt]{jws_2lib_2verify-stream_8js_a6c4a7880932d45cddada578f81469ce4_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{jws_2lib_2verify-stream_8js_af645faa05a3e7811a6c0948721595733}\index{verify-\/stream.js@{verify-\/stream.js}!payloadFromJWS@{payloadFromJWS}}
+\index{payloadFromJWS@{payloadFromJWS}!verify-\/stream.js@{verify-\/stream.js}}
+\doxysubsubsection{\texorpdfstring{payloadFromJWS()}{payloadFromJWS()}}
+{\footnotesize\ttfamily \label{jws_2lib_2verify-stream_8js_af645faa05a3e7811a6c0948721595733} 
+function payload\+From\+JWS (\begin{DoxyParamCaption}\item[{}]{jws\+Sig}{, }\item[{}]{encoding}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aace6cbf6b92481670f8b8421548f7584}{encoding}}.
+
+\Hypertarget{jws_2lib_2verify-stream_8js_a89b8e29a62f1c66b03506b485f157978}\index{verify-\/stream.js@{verify-\/stream.js}!safeJsonParse@{safeJsonParse}}
+\index{safeJsonParse@{safeJsonParse}!verify-\/stream.js@{verify-\/stream.js}}
+\doxysubsubsection{\texorpdfstring{safeJsonParse()}{safeJsonParse()}}
+{\footnotesize\ttfamily \label{jws_2lib_2verify-stream_8js_a89b8e29a62f1c66b03506b485f157978} 
+function safe\+Json\+Parse (\begin{DoxyParamCaption}\item[{}]{thing}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{firestore__admin__v1__proto__api_8js_a08a4415e9d594ff960030b921d42b91e}{e}}, \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2util_8js_abf86e241701120aea6dfd247bfc055cd}{is\+Object}}, \mbox{\hyperlink{json-bigint_2lib_2stringify_8js_aec316efdeb7b2e5358b7d50869858da1}{JSON}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}.
+
+\Hypertarget{jws_2lib_2verify-stream_8js_a73f38c466241121b9d1dbf01481b2c35}\index{verify-\/stream.js@{verify-\/stream.js}!securedInputFromJWS@{securedInputFromJWS}}
+\index{securedInputFromJWS@{securedInputFromJWS}!verify-\/stream.js@{verify-\/stream.js}}
+\doxysubsubsection{\texorpdfstring{securedInputFromJWS()}{securedInputFromJWS()}}
+{\footnotesize\ttfamily \label{jws_2lib_2verify-stream_8js_a73f38c466241121b9d1dbf01481b2c35} 
+function secured\+Input\+From\+JWS (\begin{DoxyParamCaption}\item[{}]{jws\+Sig}{}\end{DoxyParamCaption})}
+
+\Hypertarget{jws_2lib_2verify-stream_8js_a3d8b74a826f00a7026442dcf65b3bd04}\index{verify-\/stream.js@{verify-\/stream.js}!signatureFromJWS@{signatureFromJWS}}
+\index{signatureFromJWS@{signatureFromJWS}!verify-\/stream.js@{verify-\/stream.js}}
+\doxysubsubsection{\texorpdfstring{signatureFromJWS()}{signatureFromJWS()}}
+{\footnotesize\ttfamily \label{jws_2lib_2verify-stream_8js_a3d8b74a826f00a7026442dcf65b3bd04} 
+function signature\+From\+JWS (\begin{DoxyParamCaption}\item[{}]{jws\+Sig}{}\end{DoxyParamCaption})}
+
+\Hypertarget{jws_2lib_2verify-stream_8js_a4b8051ec15fe4f030bbd0acee51f888e}\index{verify-\/stream.js@{verify-\/stream.js}!VerifyStream@{VerifyStream}}
+\index{VerifyStream@{VerifyStream}!verify-\/stream.js@{verify-\/stream.js}}
+\doxysubsubsection{\texorpdfstring{VerifyStream()}{VerifyStream()}}
+{\footnotesize\ttfamily \label{jws_2lib_2verify-stream_8js_a4b8051ec15fe4f030bbd0acee51f888e} 
+function Verify\+Stream (\begin{DoxyParamCaption}\item[{}]{opts}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{jsonwebtoken_2node__modules_2jws_2lib_2verify-stream_8js_af7a06c6ff395742675a7a38fd048f702}{Data\+Stream}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aace6cbf6b92481670f8b8421548f7584}{encoding}}, \mbox{\hyperlink{is-stream_2index_8js_a126b1e28219c4d2abaa73fbe41cb676a}{readable}}, \mbox{\hyperlink{util_2dist_2index_8cjs_8js_a49c27936a5413e9cfe35de3e98a0d4d7}{signature}}, and \mbox{\hyperlink{jsonwebtoken_2node__modules_2jws_2lib_2verify-stream_8js_aef27cf90f7f5269ad7122f8f7f14c457}{verify}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{jws_2lib_2verify-stream_8js_a6e9de2d16b02dc274208bfcc1914d7f4}\index{verify-\/stream.js@{verify-\/stream.js}!Buffer@{Buffer}}
+\index{Buffer@{Buffer}!verify-\/stream.js@{verify-\/stream.js}}
+\doxysubsubsection{\texorpdfstring{Buffer}{Buffer}}
+{\footnotesize\ttfamily \label{jws_2lib_2verify-stream_8js_a6e9de2d16b02dc274208bfcc1914d7f4} 
+var Buffer = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}safe-\/\mbox{\hyperlink{cjs_2internal_2operators_2buffer_8js_a838d54b935df11eff7928ba8da636891}{buffer}}\textquotesingle{}).Buffer}
+
+\Hypertarget{jws_2lib_2verify-stream_8js_af7a06c6ff395742675a7a38fd048f702}\index{verify-\/stream.js@{verify-\/stream.js}!DataStream@{DataStream}}
+\index{DataStream@{DataStream}!verify-\/stream.js@{verify-\/stream.js}}
+\doxysubsubsection{\texorpdfstring{DataStream}{DataStream}}
+{\footnotesize\ttfamily \label{jws_2lib_2verify-stream_8js_af7a06c6ff395742675a7a38fd048f702} 
+var Data\+Stream = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}-\/\mbox{\hyperlink{debug_2src_2node_8js_a822bf74d422c61e6caa292f739dc4786}{stream}}\textquotesingle{})}
+
+\Hypertarget{jws_2lib_2verify-stream_8js_a5cf15f5e9a1ae455e36a7ce4690ae5d6}\index{verify-\/stream.js@{verify-\/stream.js}!decode@{decode}}
+\index{decode@{decode}!verify-\/stream.js@{verify-\/stream.js}}
+\doxysubsubsection{\texorpdfstring{decode}{decode}}
+{\footnotesize\ttfamily \label{jws_2lib_2verify-stream_8js_a5cf15f5e9a1ae455e36a7ce4690ae5d6} 
+\mbox{\hyperlink{jsonwebtoken_2node__modules_2jws_2index_8js_ad5c4434a2a8f63da9fb3e71e39eb44d6}{Verify\+Stream}} decode = \mbox{\hyperlink{jsonwebtoken_2node__modules_2jws_2lib_2verify-stream_8js_a8b5fc06ddd3d75433612502fb1bf5537}{jws\+Decode}}}
+
+\Hypertarget{jws_2lib_2verify-stream_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\index{verify-\/stream.js@{verify-\/stream.js}!exports@{exports}}
+\index{exports@{exports}!verify-\/stream.js@{verify-\/stream.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \label{jws_2lib_2verify-stream_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports = \mbox{\hyperlink{jsonwebtoken_2node__modules_2jws_2index_8js_ad5c4434a2a8f63da9fb3e71e39eb44d6}{Verify\+Stream}}}
+
+\Hypertarget{jws_2lib_2verify-stream_8js_a2a7c268161ceb79a43f28d551ab75dd2}\index{verify-\/stream.js@{verify-\/stream.js}!isValid@{isValid}}
+\index{isValid@{isValid}!verify-\/stream.js@{verify-\/stream.js}}
+\doxysubsubsection{\texorpdfstring{isValid}{isValid}}
+{\footnotesize\ttfamily \label{jws_2lib_2verify-stream_8js_a2a7c268161ceb79a43f28d551ab75dd2} 
+\mbox{\hyperlink{jsonwebtoken_2node__modules_2jws_2index_8js_ad5c4434a2a8f63da9fb3e71e39eb44d6}{Verify\+Stream}} is\+Valid = \mbox{\hyperlink{jsonwebtoken_2node__modules_2jws_2lib_2verify-stream_8js_a06a8d63765bfafa0dfca5dba60639024}{is\+Valid\+Jws}}}
+
+\Hypertarget{jws_2lib_2verify-stream_8js_a7f7e6110a03aee89f69811a30332c33f}\index{verify-\/stream.js@{verify-\/stream.js}!jwa@{jwa}}
+\index{jwa@{jwa}!verify-\/stream.js@{verify-\/stream.js}}
+\doxysubsubsection{\texorpdfstring{jwa}{jwa}}
+{\footnotesize\ttfamily \label{jws_2lib_2verify-stream_8js_a7f7e6110a03aee89f69811a30332c33f} 
+var jwa = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}jwa\textquotesingle{})}
+
+\Hypertarget{jws_2lib_2verify-stream_8js_af36226ff6b2918d8ca7dba460a560bbb}\index{verify-\/stream.js@{verify-\/stream.js}!JWS\_REGEX@{JWS\_REGEX}}
+\index{JWS\_REGEX@{JWS\_REGEX}!verify-\/stream.js@{verify-\/stream.js}}
+\doxysubsubsection{\texorpdfstring{JWS\_REGEX}{JWS\_REGEX}}
+{\footnotesize\ttfamily \label{jws_2lib_2verify-stream_8js_af36226ff6b2918d8ca7dba460a560bbb} 
+var JWS\+\_\+\+REGEX = /\texorpdfstring{$^\wedge$}{\string^}\mbox{[}\mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}-\/zA-\/Z0-\/9\textbackslash{}-\/\mbox{\hyperlink{fp_8js_a6e69a5af94d7d53886e51f89fb3bd6b4}{\+\_\+}}\mbox{]}+?\textbackslash{}.\mbox{[}\mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}-\/zA-\/Z0-\/9\textbackslash{}-\/\mbox{\hyperlink{fp_8js_a6e69a5af94d7d53886e51f89fb3bd6b4}{\+\_\+}}\mbox{]}+?\textbackslash{}.(\mbox{[}\mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}-\/zA-\/Z0-\/9\textbackslash{}-\/\mbox{\hyperlink{fp_8js_a6e69a5af94d7d53886e51f89fb3bd6b4}{\+\_\+}}\mbox{]}+)?\$/}
+
+\Hypertarget{jws_2lib_2verify-stream_8js_a2ad0cbec59ce1e4920545b10498bf9f5}\index{verify-\/stream.js@{verify-\/stream.js}!Stream@{Stream}}
+\index{Stream@{Stream}!verify-\/stream.js@{verify-\/stream.js}}
+\doxysubsubsection{\texorpdfstring{Stream}{Stream}}
+{\footnotesize\ttfamily \label{jws_2lib_2verify-stream_8js_a2ad0cbec59ce1e4920545b10498bf9f5} 
+var Stream = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}\mbox{\hyperlink{debug_2src_2node_8js_a822bf74d422c61e6caa292f739dc4786}{stream}}\textquotesingle{})}
+
+\Hypertarget{jws_2lib_2verify-stream_8js_a7c9b2c6889147a97101a5409709b8d91}\index{verify-\/stream.js@{verify-\/stream.js}!toString@{toString}}
+\index{toString@{toString}!verify-\/stream.js@{verify-\/stream.js}}
+\doxysubsubsection{\texorpdfstring{toString}{toString}}
+{\footnotesize\ttfamily \label{jws_2lib_2verify-stream_8js_a7c9b2c6889147a97101a5409709b8d91} 
+var to\+String = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./tostring\textquotesingle{})}
+
+\Hypertarget{jws_2lib_2verify-stream_8js_a8f5b2e09d5197e9d28f6032dff542d44}\index{verify-\/stream.js@{verify-\/stream.js}!util@{util}}
+\index{util@{util}!verify-\/stream.js@{verify-\/stream.js}}
+\doxysubsubsection{\texorpdfstring{util}{util}}
+{\footnotesize\ttfamily \label{jws_2lib_2verify-stream_8js_a8f5b2e09d5197e9d28f6032dff542d44} 
+var util = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}util\textquotesingle{})}
+
+\Hypertarget{jws_2lib_2verify-stream_8js_aef27cf90f7f5269ad7122f8f7f14c457}\index{verify-\/stream.js@{verify-\/stream.js}!verify@{verify}}
+\index{verify@{verify}!verify-\/stream.js@{verify-\/stream.js}}
+\doxysubsubsection{\texorpdfstring{verify}{verify}}
+{\footnotesize\ttfamily \label{jws_2lib_2verify-stream_8js_aef27cf90f7f5269ad7122f8f7f14c457} 
+\mbox{\hyperlink{jsonwebtoken_2node__modules_2jws_2index_8js_ad5c4434a2a8f63da9fb3e71e39eb44d6}{Verify\+Stream}} verify}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{jsonwebtoken_2node__modules_2jws_2lib_2verify-stream_8js_aef27cf90f7f5269ad7122f8f7f14c457}{verify}}()\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{\ \ \ \ var\ valid\ =\ \mbox{\hyperlink{jsonwebtoken_2node__modules_2jws_2lib_2verify-stream_8js_a6c4a7880932d45cddada578f81469ce4}{jwsVerify}}(this.\mbox{\hyperlink{util_2dist_2index_8cjs_8js_a49c27936a5413e9cfe35de3e98a0d4d7}{signature}}.buffer,\ \textcolor{keyword}{this}.algorithm,\ \textcolor{keyword}{this}.key.buffer);}
+\DoxyCodeLine{\ \ \ \ var\ \mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}\ =\ \mbox{\hyperlink{jsonwebtoken_2node__modules_2jws_2lib_2verify-stream_8js_a8b5fc06ddd3d75433612502fb1bf5537}{jwsDecode}}(this.\mbox{\hyperlink{util_2dist_2index_8cjs_8js_a49c27936a5413e9cfe35de3e98a0d4d7}{signature}}.buffer,\ \textcolor{keyword}{this}.encoding);}
+\DoxyCodeLine{\ \ \ \ this.\mbox{\hyperlink{_0dprotobufjs_2eventemitter_2index_8js_a16439605b9cd7bd34fdbf935bef49de6}{emit}}(\textcolor{stringliteral}{'done'},\ valid,\ \mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}});}
+\DoxyCodeLine{\ \ \ \ this.\mbox{\hyperlink{_0dprotobufjs_2eventemitter_2index_8js_a16439605b9cd7bd34fdbf935bef49de6}{emit}}(\textcolor{stringliteral}{'data'},\ valid);}
+\DoxyCodeLine{\ \ \ \ this.\mbox{\hyperlink{_0dprotobufjs_2eventemitter_2index_8js_a16439605b9cd7bd34fdbf935bef49de6}{emit}}(\textcolor{stringliteral}{'end'});}
+\DoxyCodeLine{\ \ \ \ this.\mbox{\hyperlink{is-stream_2index_8js_a126b1e28219c4d2abaa73fbe41cb676a}{readable}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ valid;}
+\DoxyCodeLine{\ \ \}\ \textcolor{keywordflow}{catch}\ (\mbox{\hyperlink{firestore__admin__v1__proto__api_8js_a08a4415e9d594ff960030b921d42b91e}{e}})\ \{}
+\DoxyCodeLine{\ \ \ \ this.\mbox{\hyperlink{is-stream_2index_8js_a126b1e28219c4d2abaa73fbe41cb676a}{readable}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\ \ \ \ this.\mbox{\hyperlink{_0dprotobufjs_2eventemitter_2index_8js_a16439605b9cd7bd34fdbf935bef49de6}{emit}}(\textcolor{stringliteral}{'error'},\ \mbox{\hyperlink{firestore__admin__v1__proto__api_8js_a08a4415e9d594ff960030b921d42b91e}{e}});}
+\DoxyCodeLine{\ \ \ \ this.\mbox{\hyperlink{_0dprotobufjs_2eventemitter_2index_8js_a16439605b9cd7bd34fdbf935bef49de6}{emit}}(\textcolor{stringliteral}{'close'});}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}

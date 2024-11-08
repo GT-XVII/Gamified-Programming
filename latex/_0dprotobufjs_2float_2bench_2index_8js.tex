@@ -1,0 +1,144 @@
+\doxysection{backend/node\+\_\+modules/@protobufjs/float/bench/index.js File Reference}
+\hypertarget{_0dprotobufjs_2float_2bench_2index_8js}{}\label{_0dprotobufjs_2float_2bench_2index_8js}\index{backend/node\_modules/"@protobufjs/float/bench/index.js@{backend/node\_modules/"@protobufjs/float/bench/index.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a4fe56a1863316ff6889ad2fc1295ffb5}{new\+Suite}} ("{}write\+Float"{}) .\mbox{\hyperlink{_0dprotobufjs_2codegen_2tests_2index_8js_a4e768d30759ccd1fa31604f664ac1c6e}{add}}("{}float"{}
+\item 
+function \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a2b90475996f6be27cc3e3118300faa0f}{add}} ("{}float (\mbox{\hyperlink{fallback_8js_ae1090345e119e6f92b204fdc31b2f6e1}{fallback}})"{}, function() \{ float\+Fallback.\+write\+Float\+LE(0.\+1, \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a34083d02677ea6acceb641fa647bc25a}{buf}}, 0);\}) .add("{}ieee754"{}
+\item 
+function \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a05ab1b1fd0e164bf57674844a0f2e628}{run}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+var \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a80a15c7dee3c9957cd40fc1f8718cf60}{float}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}.."{})
+\item 
+var \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a4f087b9defe57c8919988b76d8316bf8}{ieee754}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}ieee754"{})
+\item 
+var \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a8ec43d4af71ef982a54756664dd19019}{new\+Suite}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./suite"{})
+\item 
+var \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_aea6b1f989ab2d0bdebce7e9cf3a48938}{F32}} = \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_af1942005de9b477d1d421a6df63d7764}{Float32\+Array}}
+\item 
+var \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a402fbdde9b3b8e31b18aeff7e006246e}{F64}} = \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_afd12a71481527d47ef98eb5a6387edf3}{Float64\+Array}}
+\item 
+delete \mbox{\hyperlink{ordered-map_8js_a57efe929cc6b44042891d05e15cec785}{global}} \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_af1942005de9b477d1d421a6df63d7764}{Float32\+Array}} = \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_aea6b1f989ab2d0bdebce7e9cf3a48938}{F32}}
+\item 
+delete \mbox{\hyperlink{ordered-map_8js_a57efe929cc6b44042891d05e15cec785}{global}} \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_afd12a71481527d47ef98eb5a6387edf3}{Float64\+Array}} = \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a402fbdde9b3b8e31b18aeff7e006246e}{F64}}
+\item 
+var \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a71b27e9547ebee536edd3903ce2c8f00}{float\+Fallback}} = \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a80a15c7dee3c9957cd40fc1f8718cf60}{float}}(\{\})
+\item 
+var \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a34083d02677ea6acceb641fa647bc25a}{buf}} = new \mbox{\hyperlink{interface_buffer}{Buffer}}(8)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_0dprotobufjs_2float_2bench_2index_8js_a2b90475996f6be27cc3e3118300faa0f}\index{index.js@{index.js}!add@{add}}
+\index{add@{add}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \label{_0dprotobufjs_2float_2bench_2index_8js_a2b90475996f6be27cc3e3118300faa0f} 
+function add (\begin{DoxyParamCaption}\item[{}]{"{}float (fallback)"{}}{, }\item[{}]{function() \{ float\+Fallback.\+write\+Float\+LE(0.\+1, buf, 0);\}}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a34083d02677ea6acceb641fa647bc25a}{buf}}, and \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a71b27e9547ebee536edd3903ce2c8f00}{float\+Fallback}}.
+
+\Hypertarget{_0dprotobufjs_2float_2bench_2index_8js_a4fe56a1863316ff6889ad2fc1295ffb5}\index{index.js@{index.js}!newSuite@{newSuite}}
+\index{newSuite@{newSuite}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{newSuite()}{newSuite()}}
+{\footnotesize\ttfamily \label{_0dprotobufjs_2float_2bench_2index_8js_a4fe56a1863316ff6889ad2fc1295ffb5} 
+new\+Suite (\begin{DoxyParamCaption}\item[{}]{"{}write\+Float"{}}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a34083d02677ea6acceb641fa647bc25a}{buf}}.
+
+\Hypertarget{_0dprotobufjs_2float_2bench_2index_8js_a05ab1b1fd0e164bf57674844a0f2e628}\index{index.js@{index.js}!run@{run}}
+\index{run@{run}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \label{_0dprotobufjs_2float_2bench_2index_8js_a05ab1b1fd0e164bf57674844a0f2e628} 
+function run (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a34083d02677ea6acceb641fa647bc25a}{buf}}.readFloatLE(0,\ \textcolor{keyword}{true})}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a34083d02677ea6acceb641fa647bc25a}{buf}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_0dprotobufjs_2float_2bench_2index_8js_a05ab1b1fd0e164bf57674844a0f2e628_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{_0dprotobufjs_2float_2bench_2index_8js_a34083d02677ea6acceb641fa647bc25a}\index{index.js@{index.js}!buf@{buf}}
+\index{buf@{buf}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{buf}{buf}}
+{\footnotesize\ttfamily \label{_0dprotobufjs_2float_2bench_2index_8js_a34083d02677ea6acceb641fa647bc25a} 
+var buf = new \mbox{\hyperlink{interface_buffer}{Buffer}}(8)}
+
+\Hypertarget{_0dprotobufjs_2float_2bench_2index_8js_aea6b1f989ab2d0bdebce7e9cf3a48938}\index{index.js@{index.js}!F32@{F32}}
+\index{F32@{F32}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{F32}{F32}}
+{\footnotesize\ttfamily \label{_0dprotobufjs_2float_2bench_2index_8js_aea6b1f989ab2d0bdebce7e9cf3a48938} 
+var F32 = \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_af1942005de9b477d1d421a6df63d7764}{Float32\+Array}}}
+
+\Hypertarget{_0dprotobufjs_2float_2bench_2index_8js_a402fbdde9b3b8e31b18aeff7e006246e}\index{index.js@{index.js}!F64@{F64}}
+\index{F64@{F64}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{F64}{F64}}
+{\footnotesize\ttfamily \label{_0dprotobufjs_2float_2bench_2index_8js_a402fbdde9b3b8e31b18aeff7e006246e} 
+var F64 = \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_afd12a71481527d47ef98eb5a6387edf3}{Float64\+Array}}}
+
+\Hypertarget{_0dprotobufjs_2float_2bench_2index_8js_a80a15c7dee3c9957cd40fc1f8718cf60}\index{index.js@{index.js}!float@{float}}
+\index{float@{float}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{float}{float}}
+{\footnotesize\ttfamily \label{_0dprotobufjs_2float_2bench_2index_8js_a80a15c7dee3c9957cd40fc1f8718cf60} 
+var float = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}.."{})}
+
+\Hypertarget{_0dprotobufjs_2float_2bench_2index_8js_af1942005de9b477d1d421a6df63d7764}\index{index.js@{index.js}!Float32Array@{Float32Array}}
+\index{Float32Array@{Float32Array}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{Float32Array}{Float32Array}}
+{\footnotesize\ttfamily \label{_0dprotobufjs_2float_2bench_2index_8js_af1942005de9b477d1d421a6df63d7764} 
+\mbox{\hyperlink{ordered-map_8js_a57efe929cc6b44042891d05e15cec785}{global}} Float32\+Array = \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_aea6b1f989ab2d0bdebce7e9cf3a48938}{F32}}}
+
+\Hypertarget{_0dprotobufjs_2float_2bench_2index_8js_afd12a71481527d47ef98eb5a6387edf3}\index{index.js@{index.js}!Float64Array@{Float64Array}}
+\index{Float64Array@{Float64Array}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{Float64Array}{Float64Array}}
+{\footnotesize\ttfamily \label{_0dprotobufjs_2float_2bench_2index_8js_afd12a71481527d47ef98eb5a6387edf3} 
+\mbox{\hyperlink{ordered-map_8js_a57efe929cc6b44042891d05e15cec785}{global}} Float64\+Array = \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a402fbdde9b3b8e31b18aeff7e006246e}{F64}}}
+
+\Hypertarget{_0dprotobufjs_2float_2bench_2index_8js_a71b27e9547ebee536edd3903ce2c8f00}\index{index.js@{index.js}!floatFallback@{floatFallback}}
+\index{floatFallback@{floatFallback}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{floatFallback}{floatFallback}}
+{\footnotesize\ttfamily \label{_0dprotobufjs_2float_2bench_2index_8js_a71b27e9547ebee536edd3903ce2c8f00} 
+var float\+Fallback = \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a80a15c7dee3c9957cd40fc1f8718cf60}{float}}(\{\})}
+
+\Hypertarget{_0dprotobufjs_2float_2bench_2index_8js_a4f087b9defe57c8919988b76d8316bf8}\index{index.js@{index.js}!ieee754@{ieee754}}
+\index{ieee754@{ieee754}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{ieee754}{ieee754}}
+{\footnotesize\ttfamily \label{_0dprotobufjs_2float_2bench_2index_8js_a4f087b9defe57c8919988b76d8316bf8} 
+var ieee754 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}ieee754"{})}
+
+\Hypertarget{_0dprotobufjs_2float_2bench_2index_8js_a8ec43d4af71ef982a54756664dd19019}\index{index.js@{index.js}!newSuite@{newSuite}}
+\index{newSuite@{newSuite}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{newSuite}{newSuite}}
+{\footnotesize\ttfamily \label{_0dprotobufjs_2float_2bench_2index_8js_a8ec43d4af71ef982a54756664dd19019} 
+new\+Suite = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./suite"{})}
+
+\Hypertarget{_0dprotobufjs_2float_2bench_2index_8js_ae2475e10618961c050dcba04e8c42331}\index{index.js@{index.js}!strict@{strict}}
+\index{strict@{strict}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{_0dprotobufjs_2float_2bench_2index_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+

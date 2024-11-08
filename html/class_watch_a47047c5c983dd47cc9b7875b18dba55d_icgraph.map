@@ -1,0 +1,16 @@
+<map id="Watch::maybeReopenStream" name="Watch::maybeReopenStream">
+<area shape="rect" id="Node000001" title=" " alt="" coords="732,55,924,80"/>
+<area shape="rect" id="Node000002" href="$class_watch.html#a444d1b684995b48c0fa178ab7fa79ca3" title=" " alt="" coords="347,55,472,80"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="716,78,472,77,472,71,716,73"/>
+<area shape="rect" id="Node000006" href="$class_watch.html#a18fb83c5b256846e262feb349400adfb" title=" " alt="" coords="520,117,684,143"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="765,88,652,119,650,114,763,83"/>
+<area shape="poly" id="edge2_Node000002_Node000001" title=" " alt="" coords="487,58,731,57,731,62,487,63"/>
+<area shape="rect" id="Node000003" href="$class_watch.html#a502cddf27d20bae18e6b7d49d0aee5b6" title=" " alt="" coords="163,5,298,31"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="345,53,279,34,281,29,346,47"/>
+<area shape="rect" id="Node000004" href="$class_watch.html#a8550a3e7706176102c2f303551f10f4f" title=" " alt="" coords="162,55,299,80"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="332,70,299,70,299,65,332,65"/>
+<area shape="rect" id="Node000005" href="$class_watch.html#a5ff70affbd79cef883681b2d9a9a8e6c" title=" " alt="" coords="5,80,114,106"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="147,83,114,87,114,82,146,77"/>
+<area shape="poly" id="edge6_Node000005_Node000002" title=" " alt="" coords="129,94,210,95,299,90,360,78,361,84,299,95,210,101,129,100"/>
+<area shape="poly" id="edge8_Node000006_Node000002" title=" " alt="" coords="545,114,451,83,452,78,546,109"/>
+</map>

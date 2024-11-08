@@ -1,0 +1,14 @@
+<map id="cswap" name="cswap">
+<area shape="rect" id="Node000001" title=" " alt="" coords="452,31,512,56"/>
+<area shape="rect" id="Node000002" href="$ed25519_8js.html#a38863358bb339fea1837360053535f6f" title=" " alt="" coords="323,31,404,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="437,46,405,46,405,41,437,41"/>
+<area shape="rect" id="Node000003" href="$ed25519_8js.html#ad665ff72b771075af33785babb5f79e1" title=" " alt="" coords="12,5,136,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="307,41,136,26,136,21,308,36"/>
+<area shape="rect" id="Node000004" href="$ed25519_8js.html#a62279622d82f98b2aa16ce9a7f7fc36e" title=" " alt="" coords="191,56,275,82"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="308,57,276,63,275,58,307,52"/>
+<area shape="poly" id="edge6_Node000004_Node000003" title=" " alt="" coords="175,53,116,34,117,29,176,48"/>
+<area shape="rect" id="Node000005" href="$ed25519_8js.html#a2a4c197b9a0bd2dcd50bdbb04b10d8a8" title=" " alt="" coords="30,55,118,80"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="175,71,119,71,119,65,175,66"/>
+<area shape="rect" id="Node000006" href="$ed25519_8js.html#a63d249ca43e44ee064f26b0f23362954" title=" " alt="" coords="5,104,143,130"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="176,89,120,106,118,101,175,83"/>
+</map>

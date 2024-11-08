@@ -1,0 +1,7 @@
+<map id="massageParams" name="massageParams">
+<area shape="rect" id="Node000001" title=" " alt="" coords="259,31,378,56"/>
+<area shape="rect" id="Node000002" href="$class_sugared_tracer.html#ab7b2c0cf2ef00ef4cb1000a3af5ca36e" title=" " alt="" coords="5,5,211,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="243,37,211,33,212,28,243,32"/>
+<area shape="rect" id="Node000003" href="$class_sugared_tracer.html#a15f6a60af3d13019b6714be60b156fbc" title=" " alt="" coords="24,55,192,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="244,55,193,61,192,55,243,49"/>
+</map>

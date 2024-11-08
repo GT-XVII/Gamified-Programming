@@ -1,0 +1,31 @@
+\doxysection{/\+Users/nicoletiokhin/\+Desktop/\+Software Semester 3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/lodash/find\+Key.\+js}
+\hypertarget{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_50e91794181af3841a16deb28c1f44ce}{}\label{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_50e91794181af3841a16deb28c1f44ce}This method is like {\ttfamily \+\_\+.\+find} except that it returns the key of the first element {\ttfamily predicate} returns truthy for instead of the element itself.
+
+@member\+Of \+\_\+ \begin{DoxySince}{Since}
+1.\+1.\+0
+\end{DoxySince}
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Object\}} & object The object to inspect. \\
+\hline
+{\em \{\+Function\}} & \mbox{[}predicate=\+\_\+.\+identity\mbox{]} The function invoked per iteration. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{string\texorpdfstring{$\vert$}{|}undefined\} Returns the key of the matched element, else {\ttfamily undefined}.
+\end{DoxyReturn}
+var users = \{ \textquotesingle{}barney\textquotesingle{}\+: \{ \textquotesingle{}age\textquotesingle{}\+: 36, \textquotesingle{}active\textquotesingle{}\+: true \}, \textquotesingle{}fred\textquotesingle{}\+: \{ \textquotesingle{}age\textquotesingle{}\+: 40, \textquotesingle{}active\textquotesingle{}\+: false \}, \textquotesingle{}pebbles\textquotesingle{}\+: \{ \textquotesingle{}age\textquotesingle{}\+: 1, \textquotesingle{}active\textquotesingle{}\+: true \} \};
+
+\+\_\+.\+find\+Key(users, function(o) \{ return o.\+age \texorpdfstring{$<$}{<} 40; \}); // =\texorpdfstring{$>$}{>} \textquotesingle{}barney\textquotesingle{} (iteration order is not guaranteed)
+
+// The {\ttfamily \+\_\+.\+matches} iteratee shorthand. \+\_\+.\+find\+Key(users, \{ \textquotesingle{}age\textquotesingle{}\+: 1, \textquotesingle{}active\textquotesingle{}\+: true \}); // =\texorpdfstring{$>$}{>} \textquotesingle{}pebbles\textquotesingle{}
+
+// The {\ttfamily \+\_\+.\+matches\+Property} iteratee shorthand. \+\_\+.\+find\+Key(users, \mbox{[}\textquotesingle{}active\textquotesingle{}, false\mbox{]}); // =\texorpdfstring{$>$}{>} \textquotesingle{}fred\textquotesingle{}
+
+// The {\ttfamily \+\_\+.\+property} iteratee shorthand. \+\_\+.\+find\+Key(users, \textquotesingle{}active\textquotesingle{}); // =\texorpdfstring{$>$}{>} \textquotesingle{}barney\textquotesingle{}
+
+
+\begin{DoxyCodeInclude}{0}
+
+\end{DoxyCodeInclude}
+ Semester \doxylink{find_key_8js}{3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/lodash/find\+Key.\+js} 

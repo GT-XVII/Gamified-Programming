@@ -1,0 +1,66 @@
+\doxysection{backend/node\+\_\+modules/google-\/gax/build/src/bundling\+Calls/bundling\+Utils.js File Reference}
+\hypertarget{bundling_utils_8js}{}\label{bundling_utils_8js}\index{backend/node\_modules/google-\/gax/build/src/bundlingCalls/bundlingUtils.js@{backend/node\_modules/google-\/gax/build/src/bundlingCalls/bundlingUtils.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{bundling_utils_8js_af4a61270dd7c2c8e11dbfc3f6517f1e1}{compute\+Bundle\+Id}} (\mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}, discriminator\+Fields)
+\item 
+function \mbox{\hyperlink{bundling_utils_8js_a4bdbf2f185c19c5091b9c1e7a119c212}{at}} (\mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}, field)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{bundling_utils_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{bundling_utils_8js_a8015425fa68a462f4152a1d35024c452}{compute\+Bundle\+Id}} = compute\+Bundle\+Id
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{bundling_utils_8js_a4bdbf2f185c19c5091b9c1e7a119c212}\index{bundlingUtils.js@{bundlingUtils.js}!at@{at}}
+\index{at@{at}!bundlingUtils.js@{bundlingUtils.js}}
+\doxysubsubsection{\texorpdfstring{at()}{at()}}
+{\footnotesize\ttfamily \label{bundling_utils_8js_a4bdbf2f185c19c5091b9c1e7a119c212} 
+function at (\begin{DoxyParamCaption}\item[{}]{obj}{, }\item[{}]{field}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}, and \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}.
+
+\Hypertarget{bundling_utils_8js_af4a61270dd7c2c8e11dbfc3f6517f1e1}\index{bundlingUtils.js@{bundlingUtils.js}!computeBundleId@{computeBundleId}}
+\index{computeBundleId@{computeBundleId}!bundlingUtils.js@{bundlingUtils.js}}
+\doxysubsubsection{\texorpdfstring{computeBundleId()}{computeBundleId()}}
+{\footnotesize\ttfamily \label{bundling_utils_8js_af4a61270dd7c2c8e11dbfc3f6517f1e1} 
+function compute\+Bundle\+Id (\begin{DoxyParamCaption}\item[{}]{obj}{, }\item[{}]{discriminator\+Fields}{}\end{DoxyParamCaption})}
+
+\doxylink{class_compute}{Compute} the identifier of the {\ttfamily obj}. The objects of the same ID will be bundled together.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Request\+Type\}} & obj -\/ The request object. \\
+\hline
+{\em \{\+String\mbox{[}$\,$\mbox{]}\}} & discriminator\+Fields -\/ The array of field names. \doxylink{class_a}{A} field name may include \textquotesingle{}.\textquotesingle{} as a separator, which is used to indicate object traversal. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{String\texorpdfstring{$\vert$}{|}undefined\} -\/ the identifier string, or undefined if any discriminator fields do not exist. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{at_8js_a78af5f3fbaccaa8a16d6bea9d7a5e9f4}{at}}, \mbox{\hyperlink{json-bigint_2lib_2stringify_8js_aec316efdeb7b2e5358b7d50869858da1}{JSON}}, \mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}, \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{bundling_utils_8js_a8015425fa68a462f4152a1d35024c452}\index{bundlingUtils.js@{bundlingUtils.js}!computeBundleId@{computeBundleId}}
+\index{computeBundleId@{computeBundleId}!bundlingUtils.js@{bundlingUtils.js}}
+\doxysubsubsection{\texorpdfstring{computeBundleId}{computeBundleId}}
+{\footnotesize\ttfamily \label{bundling_utils_8js_a8015425fa68a462f4152a1d35024c452} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} compute\+Bundle\+Id = compute\+Bundle\+Id}
+
+\Hypertarget{bundling_utils_8js_ae2475e10618961c050dcba04e8c42331}\index{bundlingUtils.js@{bundlingUtils.js}!strict@{strict}}
+\index{strict@{strict}!bundlingUtils.js@{bundlingUtils.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{bundling_utils_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+

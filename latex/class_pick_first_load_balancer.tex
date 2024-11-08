@@ -1,0 +1,310 @@
+\doxysection{Pick\+First\+Load\+Balancer Class Reference}
+\hypertarget{class_pick_first_load_balancer}{}\label{class_pick_first_load_balancer}\index{PickFirstLoadBalancer@{PickFirstLoadBalancer}}
+
+
+Collaboration diagram for Pick\+First\+Load\+Balancer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=245pt]{class_pick_first_load_balancer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pick_first_load_balancer_a795b17565d132429aa4c4f1ca091f3a5}{constructor}} (channel\+Control\+Helper, \mbox{\hyperlink{_0dgrpc_2grpc-js_2build_2src_2index_8js_a88f1ca34064fef6dc1e29d7d1cf5cfcf}{credentials}}, options)
+\item 
+\mbox{\hyperlink{class_pick_first_load_balancer_aa4dfbae2d70d0c06d9e296911ce00959}{all\+Children\+Have\+Reported\+TF}} ()
+\item 
+\mbox{\hyperlink{class_pick_first_load_balancer_a65706e155ed457cba7075dc4bd78e7d7}{reset\+Children\+Reported\+TF}} ()
+\item 
+\mbox{\hyperlink{class_pick_first_load_balancer_a48ee96a91b1cf8a2f23ec688050c0d27}{calculate\+And\+Report\+New\+State}} ()
+\item 
+\mbox{\hyperlink{class_pick_first_load_balancer_a1d3d2dd3e6babb691eaf99b3d05d3fcf}{request\+Reresolution}} ()
+\item 
+\mbox{\hyperlink{class_pick_first_load_balancer_aeb49e281cd383f56bee2e3257f88b775}{maybe\+Enter\+Sticky\+Transient\+Failure\+Mode}} ()
+\item 
+\mbox{\hyperlink{class_pick_first_load_balancer_a750cfb165b59ff6374851a6d1560d326}{remove\+Current\+Pick}} ()
+\item 
+\mbox{\hyperlink{class_pick_first_load_balancer_ad5113288ff01adb89a165426ceffc920}{on\+Subchannel\+State\+Update}} (subchannel, previous\+State, new\+State, error\+Message)
+\item 
+\mbox{\hyperlink{class_pick_first_load_balancer_ad769fc616088226fd5fa5c23e24744a4}{start\+Next\+Subchannel\+Connecting}} (\mbox{\hyperlink{cookie_2index_8js_a6cca702e0222673974602ea21d47986c}{start\+Index}})
+\item 
+\mbox{\hyperlink{class_pick_first_load_balancer_af6192e13f78531aee0f0d42ee1962eee}{start\+Connecting}} (subchannel\+Index)
+\item 
+\mbox{\hyperlink{class_pick_first_load_balancer_a5c2f73c48753937351d70c4f77271bb6}{pick\+Subchannel}} (subchannel)
+\item 
+\mbox{\hyperlink{class_pick_first_load_balancer_aebab92961cf0af65a548b845c4cd5686}{update\+State}} (new\+State, picker)
+\item 
+\mbox{\hyperlink{class_pick_first_load_balancer_ada9faf66320148cf80c88358e7f65d1b}{reset\+Subchannel\+List}} ()
+\item 
+\mbox{\hyperlink{class_pick_first_load_balancer_a0cd323fb5f1e35f505f1e02b92ca3493}{connect\+To\+Address\+List}} (address\+List)
+\item 
+\mbox{\hyperlink{class_pick_first_load_balancer_a8c740e485d574f220c6fa48ce86d723d}{update\+Address\+List}} (endpoint\+List, lb\+Config)
+\item 
+\mbox{\hyperlink{class_pick_first_load_balancer_aa9e0ef112a551408640cc74e8c689185}{exit\+Idle}} ()
+\item 
+\mbox{\hyperlink{class_pick_first_load_balancer_aca2bad0768cd54bd63dbf2b6867c07d3}{reset\+Backoff}} ()
+\item 
+\mbox{\hyperlink{class_pick_first_load_balancer_a1ca6a77e5cb7047a31e63bddbc3c27b9}{destroy}} ()
+\item 
+\mbox{\hyperlink{class_pick_first_load_balancer_ac28c1c0454b234e0f025117968e5e7ea}{get\+Type\+Name}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_pick_first_load_balancer_aa4dfbae2d70d0c06d9e296911ce00959}\index{PickFirstLoadBalancer@{PickFirstLoadBalancer}!allChildrenHaveReportedTF@{allChildrenHaveReportedTF}}
+\index{allChildrenHaveReportedTF@{allChildrenHaveReportedTF}!PickFirstLoadBalancer@{PickFirstLoadBalancer}}
+\doxysubsubsection{\texorpdfstring{allChildrenHaveReportedTF()}{allChildrenHaveReportedTF()}}
+{\footnotesize\ttfamily \label{class_pick_first_load_balancer_aa4dfbae2d70d0c06d9e296911ce00959} 
+Pick\+First\+Load\+Balancer\+::all\+Children\+Have\+Reported\+TF (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_pick_first_load_balancer_a48ee96a91b1cf8a2f23ec688050c0d27}\index{PickFirstLoadBalancer@{PickFirstLoadBalancer}!calculateAndReportNewState@{calculateAndReportNewState}}
+\index{calculateAndReportNewState@{calculateAndReportNewState}!PickFirstLoadBalancer@{PickFirstLoadBalancer}}
+\doxysubsubsection{\texorpdfstring{calculateAndReportNewState()}{calculateAndReportNewState()}}
+{\footnotesize\ttfamily \label{class_pick_first_load_balancer_a48ee96a91b1cf8a2f23ec688050c0d27} 
+Pick\+First\+Load\+Balancer\+::calculate\+And\+Report\+New\+State (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{load-balancer-pick-first_8js_a66e6c9aea487cf1c4498cf2b1aa0f621}{connectivity\+\_\+state\+\_\+1}}, \mbox{\hyperlink{express_2lib_2request_8js_a5e3afd97276cc403924d1a449a83ea84}{is}}, \mbox{\hyperlink{load-balancer-pick-first_8js_a81c59cca4f80962eae892ca3d4f2e839}{picker\+\_\+1}}, and \mbox{\hyperlink{class_pick_first_load_balancer_aebab92961cf0af65a548b845c4cd5686}{update\+State()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_pick_first_load_balancer_a48ee96a91b1cf8a2f23ec688050c0d27_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_pick_first_load_balancer_a48ee96a91b1cf8a2f23ec688050c0d27_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_pick_first_load_balancer_a0cd323fb5f1e35f505f1e02b92ca3493}\index{PickFirstLoadBalancer@{PickFirstLoadBalancer}!connectToAddressList@{connectToAddressList}}
+\index{connectToAddressList@{connectToAddressList}!PickFirstLoadBalancer@{PickFirstLoadBalancer}}
+\doxysubsubsection{\texorpdfstring{connectToAddressList()}{connectToAddressList()}}
+{\footnotesize\ttfamily \label{class_pick_first_load_balancer_a0cd323fb5f1e35f505f1e02b92ca3493} 
+Pick\+First\+Load\+Balancer\+::connect\+To\+Address\+List (\begin{DoxyParamCaption}\item[{}]{address\+List}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{load-balancer-pick-first_8js_a66e6c9aea487cf1c4498cf2b1aa0f621}{connectivity\+\_\+state\+\_\+1}}, \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}, \mbox{\hyperlink{load-balancer-pick-first_8js_a46c0e253ac00dface70796e150cad858}{subchannel\+\_\+address\+\_\+1}}, and \mbox{\hyperlink{logging_8js_acb1634453d1705af9683695efa3847e6}{trace}}.
+
+\Hypertarget{class_pick_first_load_balancer_a795b17565d132429aa4c4f1ca091f3a5}\index{PickFirstLoadBalancer@{PickFirstLoadBalancer}!constructor@{constructor}}
+\index{constructor@{constructor}!PickFirstLoadBalancer@{PickFirstLoadBalancer}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_pick_first_load_balancer_a795b17565d132429aa4c4f1ca091f3a5} 
+Pick\+First\+Load\+Balancer\+::constructor (\begin{DoxyParamCaption}\item[{}]{channel\+Control\+Helper}{, }\item[{}]{credentials}{, }\item[{}]{options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Load balancer that attempts to connect to each backend in the address list in order, and picks the first one that connects, using it for every request. 
+\begin{DoxyParams}{Parameters}
+{\em channel\+Control\+Helper} & {\ttfamily Channel\+Control\+Helper} instance provided by this load balancer\textquotesingle{}s owner. \\
+\hline
+\end{DoxyParams}
+The list of subchannels this load balancer is currently attempting to connect to.
+
+The current connectivity state of the load balancer.
+
+The index within the {\ttfamily subchannels} array of the subchannel with the most recently started connection attempt.
+
+The currently picked subchannel used for making calls. Populated if and only if the load balancer\textquotesingle{}s current state is READY. In that case, the subchannel\textquotesingle{}s current state is also READY.
+
+Listener callback attached to each subchannel in the {\ttfamily subchannels} list while establishing a connection.
+
+The LB policy enters sticky TRANSIENT\+\_\+\+FAILURE mode when all subchannels have failed to connect at least once, and it stays in that mode until a connection attempt is successful. While in sticky TF mode, the LB policy continuously attempts to connect to all of its subchannels.
+
+The most recent error reported by any subchannel as it transitioned to TRANSIENT\+\_\+\+FAILURE.
+
+References \mbox{\hyperlink{class_pick_first_load_balancer_a48ee96a91b1cf8a2f23ec688050c0d27}{calculate\+And\+Report\+New\+State()}}, \mbox{\hyperlink{load-balancer-pick-first_8js_a66e6c9aea487cf1c4498cf2b1aa0f621}{connectivity\+\_\+state\+\_\+1}}, \mbox{\hyperlink{class_pick_first_load_balancer_ad5113288ff01adb89a165426ceffc920}{on\+Subchannel\+State\+Update()}}, and \mbox{\hyperlink{load-balancer-pick-first_8js_a9ae6ba1861fb95fba2bae99537b2a21b}{REPORT\+\_\+\+HEALTH\+\_\+\+STATUS\+\_\+\+OPTION\+\_\+\+NAME}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_pick_first_load_balancer_a795b17565d132429aa4c4f1ca091f3a5_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_pick_first_load_balancer_a1ca6a77e5cb7047a31e63bddbc3c27b9}\index{PickFirstLoadBalancer@{PickFirstLoadBalancer}!destroy@{destroy}}
+\index{destroy@{destroy}!PickFirstLoadBalancer@{PickFirstLoadBalancer}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily \label{class_pick_first_load_balancer_a1ca6a77e5cb7047a31e63bddbc3c27b9} 
+Pick\+First\+Load\+Balancer\+::destroy (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_pick_first_load_balancer_aa9e0ef112a551408640cc74e8c689185}\index{PickFirstLoadBalancer@{PickFirstLoadBalancer}!exitIdle@{exitIdle}}
+\index{exitIdle@{exitIdle}!PickFirstLoadBalancer@{PickFirstLoadBalancer}}
+\doxysubsubsection{\texorpdfstring{exitIdle()}{exitIdle()}}
+{\footnotesize\ttfamily \label{class_pick_first_load_balancer_aa9e0ef112a551408640cc74e8c689185} 
+Pick\+First\+Load\+Balancer\+::exit\+Idle (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{load-balancer-pick-first_8js_a66e6c9aea487cf1c4498cf2b1aa0f621}{connectivity\+\_\+state\+\_\+1}}.
+
+\Hypertarget{class_pick_first_load_balancer_ac28c1c0454b234e0f025117968e5e7ea}\index{PickFirstLoadBalancer@{PickFirstLoadBalancer}!getTypeName@{getTypeName}}
+\index{getTypeName@{getTypeName}!PickFirstLoadBalancer@{PickFirstLoadBalancer}}
+\doxysubsubsection{\texorpdfstring{getTypeName()}{getTypeName()}}
+{\footnotesize\ttfamily \label{class_pick_first_load_balancer_ac28c1c0454b234e0f025117968e5e7ea} 
+Pick\+First\+Load\+Balancer\+::get\+Type\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{load-balancer-pick-first_8js_a5e14686da00d96f08257c3d977f2ee7e}{TYPE\+\_\+\+NAME}}.
+
+\Hypertarget{class_pick_first_load_balancer_aeb49e281cd383f56bee2e3257f88b775}\index{PickFirstLoadBalancer@{PickFirstLoadBalancer}!maybeEnterStickyTransientFailureMode@{maybeEnterStickyTransientFailureMode}}
+\index{maybeEnterStickyTransientFailureMode@{maybeEnterStickyTransientFailureMode}!PickFirstLoadBalancer@{PickFirstLoadBalancer}}
+\doxysubsubsection{\texorpdfstring{maybeEnterStickyTransientFailureMode()}{maybeEnterStickyTransientFailureMode()}}
+{\footnotesize\ttfamily \label{class_pick_first_load_balancer_aeb49e281cd383f56bee2e3257f88b775} 
+Pick\+First\+Load\+Balancer\+::maybe\+Enter\+Sticky\+Transient\+Failure\+Mode (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}.
+
+\Hypertarget{class_pick_first_load_balancer_ad5113288ff01adb89a165426ceffc920}\index{PickFirstLoadBalancer@{PickFirstLoadBalancer}!onSubchannelStateUpdate@{onSubchannelStateUpdate}}
+\index{onSubchannelStateUpdate@{onSubchannelStateUpdate}!PickFirstLoadBalancer@{PickFirstLoadBalancer}}
+\doxysubsubsection{\texorpdfstring{onSubchannelStateUpdate()}{onSubchannelStateUpdate()}}
+{\footnotesize\ttfamily \label{class_pick_first_load_balancer_ad5113288ff01adb89a165426ceffc920} 
+Pick\+First\+Load\+Balancer\+::on\+Subchannel\+State\+Update (\begin{DoxyParamCaption}\item[{}]{subchannel}{, }\item[{}]{previous\+State}{, }\item[{}]{new\+State}{, }\item[{}]{error\+Message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{logger_2dist_2esm_2index_8esm5_8js_a0adf123df8967a14b5bdd9ff3bbe2d0c}{\+\_\+a}}, \mbox{\hyperlink{load-balancer-pick-first_8js_a66e6c9aea487cf1c4498cf2b1aa0f621}{connectivity\+\_\+state\+\_\+1}}, \mbox{\hyperlink{cookie_2index_8js_a0ac000318c33f03e412baff8df5b2513}{index}}, and \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_pick_first_load_balancer_ad5113288ff01adb89a165426ceffc920_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_pick_first_load_balancer_a5c2f73c48753937351d70c4f77271bb6}\index{PickFirstLoadBalancer@{PickFirstLoadBalancer}!pickSubchannel@{pickSubchannel}}
+\index{pickSubchannel@{pickSubchannel}!PickFirstLoadBalancer@{PickFirstLoadBalancer}}
+\doxysubsubsection{\texorpdfstring{pickSubchannel()}{pickSubchannel()}}
+{\footnotesize\ttfamily \label{class_pick_first_load_balancer_a5c2f73c48753937351d70c4f77271bb6} 
+Pick\+First\+Load\+Balancer\+::pick\+Subchannel (\begin{DoxyParamCaption}\item[{}]{subchannel}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Declare that the specified subchannel should be used to make requests. This functions the same independent of whether subchannel is a member of this.\+children and whether it is equal to this.\+current\+Pick. Prerequisite\+: subchannel.\+get\+Connectivity\+State() === READY. 
+\begin{DoxyParams}{Parameters}
+{\em subchannel} & \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{logging_8js_acb1634453d1705af9683695efa3847e6}{trace}}.
+
+\Hypertarget{class_pick_first_load_balancer_a750cfb165b59ff6374851a6d1560d326}\index{PickFirstLoadBalancer@{PickFirstLoadBalancer}!removeCurrentPick@{removeCurrentPick}}
+\index{removeCurrentPick@{removeCurrentPick}!PickFirstLoadBalancer@{PickFirstLoadBalancer}}
+\doxysubsubsection{\texorpdfstring{removeCurrentPick()}{removeCurrentPick()}}
+{\footnotesize\ttfamily \label{class_pick_first_load_balancer_a750cfb165b59ff6374851a6d1560d326} 
+Pick\+First\+Load\+Balancer\+::remove\+Current\+Pick (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_pick_first_load_balancer_a1d3d2dd3e6babb691eaf99b3d05d3fcf}\index{PickFirstLoadBalancer@{PickFirstLoadBalancer}!requestReresolution@{requestReresolution}}
+\index{requestReresolution@{requestReresolution}!PickFirstLoadBalancer@{PickFirstLoadBalancer}}
+\doxysubsubsection{\texorpdfstring{requestReresolution()}{requestReresolution()}}
+{\footnotesize\ttfamily \label{class_pick_first_load_balancer_a1d3d2dd3e6babb691eaf99b3d05d3fcf} 
+Pick\+First\+Load\+Balancer\+::request\+Reresolution (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_pick_first_load_balancer_aca2bad0768cd54bd63dbf2b6867c07d3}\index{PickFirstLoadBalancer@{PickFirstLoadBalancer}!resetBackoff@{resetBackoff}}
+\index{resetBackoff@{resetBackoff}!PickFirstLoadBalancer@{PickFirstLoadBalancer}}
+\doxysubsubsection{\texorpdfstring{resetBackoff()}{resetBackoff()}}
+{\footnotesize\ttfamily \label{class_pick_first_load_balancer_aca2bad0768cd54bd63dbf2b6867c07d3} 
+Pick\+First\+Load\+Balancer\+::reset\+Backoff (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_pick_first_load_balancer_a65706e155ed457cba7075dc4bd78e7d7}\index{PickFirstLoadBalancer@{PickFirstLoadBalancer}!resetChildrenReportedTF@{resetChildrenReportedTF}}
+\index{resetChildrenReportedTF@{resetChildrenReportedTF}!PickFirstLoadBalancer@{PickFirstLoadBalancer}}
+\doxysubsubsection{\texorpdfstring{resetChildrenReportedTF()}{resetChildrenReportedTF()}}
+{\footnotesize\ttfamily \label{class_pick_first_load_balancer_a65706e155ed457cba7075dc4bd78e7d7} 
+Pick\+First\+Load\+Balancer\+::reset\+Children\+Reported\+TF (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_pick_first_load_balancer_ada9faf66320148cf80c88358e7f65d1b}\index{PickFirstLoadBalancer@{PickFirstLoadBalancer}!resetSubchannelList@{resetSubchannelList}}
+\index{resetSubchannelList@{resetSubchannelList}!PickFirstLoadBalancer@{PickFirstLoadBalancer}}
+\doxysubsubsection{\texorpdfstring{resetSubchannelList()}{resetSubchannelList()}}
+{\footnotesize\ttfamily \label{class_pick_first_load_balancer_ada9faf66320148cf80c88358e7f65d1b} 
+Pick\+First\+Load\+Balancer\+::reset\+Subchannel\+List (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}.
+
+\Hypertarget{class_pick_first_load_balancer_af6192e13f78531aee0f0d42ee1962eee}\index{PickFirstLoadBalancer@{PickFirstLoadBalancer}!startConnecting@{startConnecting}}
+\index{startConnecting@{startConnecting}!PickFirstLoadBalancer@{PickFirstLoadBalancer}}
+\doxysubsubsection{\texorpdfstring{startConnecting()}{startConnecting()}}
+{\footnotesize\ttfamily \label{class_pick_first_load_balancer_af6192e13f78531aee0f0d42ee1962eee} 
+Pick\+First\+Load\+Balancer\+::start\+Connecting (\begin{DoxyParamCaption}\item[{}]{subchannel\+Index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Have a single subchannel in the {\ttfamily subchannels} list start connecting. 
+\begin{DoxyParams}{Parameters}
+{\em subchannel\+Index} & The index into the {\ttfamily subchannels} list. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{logger_2dist_2esm_2index_8esm5_8js_a0adf123df8967a14b5bdd9ff3bbe2d0c}{\+\_\+a}}, \mbox{\hyperlink{logging_8js_a53284eb14d953f3ba58806fc49cd4f7c}{\+\_\+b}}, \mbox{\hyperlink{load-balancer-pick-first_8js_abb055f041ec071b4095a374d31cc0768}{CONNECTION\+\_\+\+DELAY\+\_\+\+INTERVAL\+\_\+\+MS}}, \mbox{\hyperlink{load-balancer-pick-first_8js_a66e6c9aea487cf1c4498cf2b1aa0f621}{connectivity\+\_\+state\+\_\+1}}, \mbox{\hyperlink{ipaddr_8min_8js_abcedab16429ea0641c6596f556f2e102}{process}}, and \mbox{\hyperlink{logging_8js_acb1634453d1705af9683695efa3847e6}{trace}}.
+
+\Hypertarget{class_pick_first_load_balancer_ad769fc616088226fd5fa5c23e24744a4}\index{PickFirstLoadBalancer@{PickFirstLoadBalancer}!startNextSubchannelConnecting@{startNextSubchannelConnecting}}
+\index{startNextSubchannelConnecting@{startNextSubchannelConnecting}!PickFirstLoadBalancer@{PickFirstLoadBalancer}}
+\doxysubsubsection{\texorpdfstring{startNextSubchannelConnecting()}{startNextSubchannelConnecting()}}
+{\footnotesize\ttfamily \label{class_pick_first_load_balancer_ad769fc616088226fd5fa5c23e24744a4} 
+Pick\+First\+Load\+Balancer\+::start\+Next\+Subchannel\+Connecting (\begin{DoxyParamCaption}\item[{}]{start\+Index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{load-balancer-pick-first_8js_a66e6c9aea487cf1c4498cf2b1aa0f621}{connectivity\+\_\+state\+\_\+1}}, \mbox{\hyperlink{cookie_2index_8js_a0ac000318c33f03e412baff8df5b2513}{index}}, \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}, and \mbox{\hyperlink{cookie_2index_8js_a6cca702e0222673974602ea21d47986c}{start\+Index()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{class_pick_first_load_balancer_ad769fc616088226fd5fa5c23e24744a4_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_pick_first_load_balancer_a8c740e485d574f220c6fa48ce86d723d}\index{PickFirstLoadBalancer@{PickFirstLoadBalancer}!updateAddressList@{updateAddressList}}
+\index{updateAddressList@{updateAddressList}!PickFirstLoadBalancer@{PickFirstLoadBalancer}}
+\doxysubsubsection{\texorpdfstring{updateAddressList()}{updateAddressList()}}
+{\footnotesize\ttfamily \label{class_pick_first_load_balancer_a8c740e485d574f220c6fa48ce86d723d} 
+Pick\+First\+Load\+Balancer\+::update\+Address\+List (\begin{DoxyParamCaption}\item[{}]{endpoint\+List}{, }\item[{}]{lb\+Config}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{load-balancer-pick-first_8js_a8341e6e0c05d06b48a6b83a69a6a770d}{interleave\+Address\+Families()}}, \mbox{\hyperlink{load-balancer-pick-first_8js_a76bed45768e8bd89de5e08f8a72a3e7f}{shuffled}}, \mbox{\hyperlink{load-balancer-pick-first_8js_a46c0e253ac00dface70796e150cad858}{subchannel\+\_\+address\+\_\+1}}, and \mbox{\hyperlink{logging_8js_acb1634453d1705af9683695efa3847e6}{trace}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_pick_first_load_balancer_a8c740e485d574f220c6fa48ce86d723d_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_pick_first_load_balancer_aebab92961cf0af65a548b845c4cd5686}\index{PickFirstLoadBalancer@{PickFirstLoadBalancer}!updateState@{updateState}}
+\index{updateState@{updateState}!PickFirstLoadBalancer@{PickFirstLoadBalancer}}
+\doxysubsubsection{\texorpdfstring{updateState()}{updateState()}}
+{\footnotesize\ttfamily \label{class_pick_first_load_balancer_aebab92961cf0af65a548b845c4cd5686} 
+Pick\+First\+Load\+Balancer\+::update\+State (\begin{DoxyParamCaption}\item[{}]{new\+State}{, }\item[{}]{picker}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{load-balancer-pick-first_8js_a66e6c9aea487cf1c4498cf2b1aa0f621}{connectivity\+\_\+state\+\_\+1}}, and \mbox{\hyperlink{logging_8js_acb1634453d1705af9683695efa3847e6}{trace}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_pick_first_load_balancer_aebab92961cf0af65a548b845c4cd5686_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/@grpc/grpc-\/js/build/src/\mbox{\hyperlink{load-balancer-pick-first_8js}{load-\/balancer-\/pick-\/first.\+js}}\end{DoxyCompactItemize}

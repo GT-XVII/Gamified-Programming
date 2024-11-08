@@ -1,0 +1,106 @@
+\doxysection{Auth\+Client Class Reference}
+\hypertarget{class_auth_client}{}\label{class_auth_client}\index{AuthClient@{AuthClient}}
+
+
+Inheritance diagram for Auth\+Client\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{class_auth_client__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Auth\+Client\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{class_auth_client__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_auth_client_afe41dadb488d105a80551bc7f4c55cff}{constructor}} (opts=\{\})
+\item 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} \mbox{\hyperlink{class_auth_client_aefda9acb34566549b35c745aee2f155b}{gaxios}} ()
+\item 
+\mbox{\hyperlink{class_auth_client_a5e9075d3f51dd2de5908d17977617066}{set\+Credentials}} (\mbox{\hyperlink{_0dgrpc_2grpc-js_2build_2src_2index_8js_a88f1ca34064fef6dc1e29d7d1cf5cfcf}{credentials}})
+\item 
+\mbox{\hyperlink{class_auth_client_ad6318242afab68122da97d04914bcf6a}{add\+Shared\+Metadata\+Headers}} (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7f2cb2fcdd79bf72cefd29b7bc2d10fa}{headers}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} \mbox{\hyperlink{class_auth_client_a5792589eff08ff0276a45c7e08f23102}{RETRY\+\_\+\+CONFIG}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_auth_client_ad6318242afab68122da97d04914bcf6a}\index{AuthClient@{AuthClient}!addSharedMetadataHeaders@{addSharedMetadataHeaders}}
+\index{addSharedMetadataHeaders@{addSharedMetadataHeaders}!AuthClient@{AuthClient}}
+\doxysubsubsection{\texorpdfstring{addSharedMetadataHeaders()}{addSharedMetadataHeaders()}}
+{\footnotesize\ttfamily \label{class_auth_client_ad6318242afab68122da97d04914bcf6a} 
+Auth\+Client\+::add\+Shared\+Metadata\+Headers (\begin{DoxyParamCaption}\item[{}]{headers}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Append additional headers, e.\+g., x-\/goog-\/user-\/project, shared across the classes inheriting \doxylink{class_auth_client}{Auth\+Client}. This method should be used by any method that overrides get\+Request\+Metadata\+Async(), which is a shared helper for setting request information in both g\+RPC and HTTP API calls.
+
+
+\begin{DoxyParams}{Parameters}
+{\em headers} & object to append additional headers to. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7f2cb2fcdd79bf72cefd29b7bc2d10fa}{headers}}.
+
+\Hypertarget{class_auth_client_afe41dadb488d105a80551bc7f4c55cff}\index{AuthClient@{AuthClient}!constructor@{constructor}}
+\index{constructor@{constructor}!AuthClient@{AuthClient}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_auth_client_afe41dadb488d105a80551bc7f4c55cff} 
+Auth\+Client\+::constructor (\begin{DoxyParamCaption}\item[{}]{opts}{ = {\ttfamily \{\}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_auth_client_aefda9acb34566549b35c745aee2f155b}\index{AuthClient@{AuthClient}!gaxios@{gaxios}}
+\index{gaxios@{gaxios}!AuthClient@{AuthClient}}
+\doxysubsubsection{\texorpdfstring{gaxios()}{gaxios()}}
+{\footnotesize\ttfamily \label{class_auth_client_aefda9acb34566549b35c745aee2f155b} 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} Auth\+Client\+::gaxios (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the {\ttfamily \doxylink{class_gaxios}{{\ttfamily Gaxios}}} instance from the {\ttfamily \doxylink{}{Auth\+Client.\+transporter}}.
+
+@expiremental 
+
+References \mbox{\hyperlink{authclient_8js_acebd772c433354e36a6a4a6f15b56286}{gaxios\+\_\+1}}, and \mbox{\hyperlink{authclient_8js_ad9ce739f6a07ef5e9d364ca1d6286e56}{transporters\+\_\+1}}.
+
+\Hypertarget{class_auth_client_a5792589eff08ff0276a45c7e08f23102}\index{AuthClient@{AuthClient}!RETRY\_CONFIG@{RETRY\_CONFIG}}
+\index{RETRY\_CONFIG@{RETRY\_CONFIG}!AuthClient@{AuthClient}}
+\doxysubsubsection{\texorpdfstring{RETRY\_CONFIG()}{RETRY\_CONFIG()}}
+{\footnotesize\ttfamily \label{class_auth_client_a5792589eff08ff0276a45c7e08f23102} 
+static \mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} Auth\+Client\+::\+RETRY\+\_\+\+CONFIG (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Retry config for Auth-\/related requests.
+
+\begin{DoxyRemark}{Remarks}
+
+\end{DoxyRemark}
+This is not a part of the default {\ttfamily \doxylink{}{transporter/gaxios}} config as some downstream APIs would prefer if customers explicitly enable retries, such as GCS. 
+
+References \mbox{\hyperlink{esm_2src_2bucket_8js_a451094c82c509e4de33de7f8df781a35}{retry}}.
+
+\Hypertarget{class_auth_client_a5e9075d3f51dd2de5908d17977617066}\index{AuthClient@{AuthClient}!setCredentials@{setCredentials}}
+\index{setCredentials@{setCredentials}!AuthClient@{AuthClient}}
+\doxysubsubsection{\texorpdfstring{setCredentials()}{setCredentials()}}
+{\footnotesize\ttfamily \label{class_auth_client_a5e9075d3f51dd2de5908d17977617066} 
+Auth\+Client\+::set\+Credentials (\begin{DoxyParamCaption}\item[{}]{credentials}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the auth credentials. 
+
+References \mbox{\hyperlink{_0dgrpc_2grpc-js_2build_2src_2index_8js_a88f1ca34064fef6dc1e29d7d1cf5cfcf}{credentials}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/google-\/auth-\/library/build/src/auth/\mbox{\hyperlink{authclient_8js}{authclient.\+js}}\end{DoxyCompactItemize}

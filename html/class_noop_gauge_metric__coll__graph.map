@@ -1,0 +1,6 @@
+<map id="NoopGaugeMetric" name="NoopGaugeMetric">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,120,121,206"/>
+<area shape="rect" id="Node000002" href="$class_noop_metric.html" title=" " alt="" coords="24,5,102,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="57,86,57,120,52,120,52,86"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="75,86,74,120,69,120,69,86"/>
+</map>

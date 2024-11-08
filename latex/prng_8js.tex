@@ -1,0 +1,90 @@
+\doxysection{backend/node\+\_\+modules/node-\/forge/lib/prng.js File Reference}
+\hypertarget{prng_8js}{}\label{prng_8js}\index{backend/node\_modules/node-\/forge/lib/prng.js@{backend/node\_modules/node-\/forge/lib/prng.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{prng_8js_a1a7dee422240b03c1da3c743360c2e2f}{if}} (\mbox{\hyperlink{node-forge_2lib_2util_8js_a9453d121c87bf2ffe934862ee1c9733a}{forge.\+util.\+is\+Nodejs}} \&\&!forge.\+options.\+use\+Pure\+Java\+Script \&\&!process.\+versions\mbox{[}\textquotesingle{}\mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2platform_2index_8js_a74c72f849f998803d0f301e524445c36}{node}}-\/webkit\textquotesingle{}\mbox{]})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{prng_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./forge\textquotesingle{})
+\item 
+var \mbox{\hyperlink{prng_8js_a64c9823b6989c7255ad46e120b932f84}{\+\_\+crypto}} = null
+\item 
+var \mbox{\hyperlink{prng_8js_a42015e3f47533522897fbc2c90b723dd}{prng}} = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{module.\+exports}} = forge.\+prng = forge.\+prng \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} \{\}
+\item 
+\mbox{\hyperlink{prng_8js_a42015e3f47533522897fbc2c90b723dd}{prng}} \mbox{\hyperlink{prng_8js_a933bebb8c7785b5844ce805a45415758}{create}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{prng_8js_a1a7dee422240b03c1da3c743360c2e2f}\index{prng.js@{prng.js}!if@{if}}
+\index{if@{if}!prng.js@{prng.js}}
+\doxysubsubsection{\texorpdfstring{if()}{if()}}
+{\footnotesize\ttfamily \label{prng_8js_a1a7dee422240b03c1da3c743360c2e2f} 
+if (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{node-forge_2lib_2util_8js_a9453d121c87bf2ffe934862ee1c9733a}{forge.\+util.\+is\+Nodejs}} \&\&!forge.\+options.\+use\+Pure\+Java\+Script \&\&!process.}]{versions}{\mbox{[} \textquotesingle{}node-\/webkit\textquotesingle{}\mbox{]}}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{prng_8js_a64c9823b6989c7255ad46e120b932f84}{\+\_\+crypto}}, and \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{prng_8js_a1a7dee422240b03c1da3c743360c2e2f_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{prng_8js_a64c9823b6989c7255ad46e120b932f84}\index{prng.js@{prng.js}!\_crypto@{\_crypto}}
+\index{\_crypto@{\_crypto}!prng.js@{prng.js}}
+\doxysubsubsection{\texorpdfstring{\_crypto}{\_crypto}}
+{\footnotesize\ttfamily \label{prng_8js_a64c9823b6989c7255ad46e120b932f84} 
+var \+\_\+crypto = null}
+
+\Hypertarget{prng_8js_a933bebb8c7785b5844ce805a45415758}\index{prng.js@{prng.js}!create@{create}}
+\index{create@{create}!prng.js@{prng.js}}
+\doxysubsubsection{\texorpdfstring{create}{create}}
+{\footnotesize\ttfamily \label{prng_8js_a933bebb8c7785b5844ce805a45415758} 
+\mbox{\hyperlink{prng_8js_a42015e3f47533522897fbc2c90b723dd}{prng}} create}
+
+Creates a new PRNG context.
+
+\doxylink{class_a}{A} PRNG plugin must be passed in that will provide\+:
+
+
+\begin{DoxyEnumerate}
+\item \doxylink{class_a}{A} function that initializes the key and seed of a PRNG context. It will be given a 16 byte key and a 16 byte seed. Any key expansion or transformation of the seed from a byte string into an array of integers (or similar) should be performed.
+\item The cryptographic function used by the generator. It takes a key and a seed.
+\item \doxylink{class_a}{A} seed increment function. It takes the seed and returns seed + 1.
+\item An api to create a message digest.
+\end{DoxyEnumerate}
+
+For an example, see random.\+js.
+
+
+\begin{DoxyParams}{Parameters}
+{\em plugin} & the PRNG plugin to use. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{prng_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}\index{prng.js@{prng.js}!forge@{forge}}
+\index{forge@{forge}!prng.js@{prng.js}}
+\doxysubsubsection{\texorpdfstring{forge}{forge}}
+{\footnotesize\ttfamily \label{prng_8js_ab4dbef01e35b8e6d06087c0542ba9e2c} 
+var forge = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./forge\textquotesingle{})}
+
+\doxylink{class_a}{A} javascript implementation of a cryptographically-\/secure Pseudo Random Number Generator (PRNG). The Fortuna algorithm is followed here though the use of SHA-\/256 is not enforced; when generating an a PRNG context, the hashing algorithm and block cipher used for the generator are specified via a plugin.
+
+\begin{DoxyAuthor}{Author}
+Dave Longley
+\end{DoxyAuthor}
+Copyright (c) 2010-\/2014 Digital Bazaar, Inc. \Hypertarget{prng_8js_a42015e3f47533522897fbc2c90b723dd}\index{prng.js@{prng.js}!prng@{prng}}
+\index{prng@{prng}!prng.js@{prng.js}}
+\doxysubsubsection{\texorpdfstring{prng}{prng}}
+{\footnotesize\ttfamily \label{prng_8js_a42015e3f47533522897fbc2c90b723dd} 
+var prng = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{module.\+exports}} = forge.\+prng = forge.\+prng \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} \{\}}
+

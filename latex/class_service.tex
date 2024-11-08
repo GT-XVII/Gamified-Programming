@@ -1,0 +1,214 @@
+\doxysection{Service Class Reference}
+\hypertarget{class_service}{}\label{class_service}\index{Service@{Service}}
+
+
+Inheritance diagram for Service\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_service__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Service\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{class_service__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_service_af07c23c15a34040dbd99643fbc58e0eb}{constructor}} (\mbox{\hyperlink{rxjs_8umd_8js_a729ec4717f914fce241d4dccc9a03066}{config}}, options=\{\})
+\item 
+\mbox{\hyperlink{class_service_a73fcf83eb00805b083e4528d587290bb}{get\+Request\+Interceptors}} ()
+\item 
+\mbox{\hyperlink{class_service_af924d0b3f7486d728452cc721c45b0a2}{get\+Project\+Id}} (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a622460feeccdab6d8f307936fc6b36fb}{callback}})
+\item 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{class_service_ad264a26b4ec3d71c17caaad8447b62bf}{get\+Project\+Id\+Async}} ()
+\item 
+\mbox{\hyperlink{class_service_aee902e23632b42cbc750746adfd5c19e}{request\+\_\+}} (req\+Opts, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a622460feeccdab6d8f307936fc6b36fb}{callback}})
+\item 
+\mbox{\hyperlink{class_service_af07c23c15a34040dbd99643fbc58e0eb}{constructor}} (\mbox{\hyperlink{rxjs_8umd_8js_a729ec4717f914fce241d4dccc9a03066}{config}}, options=\{\})
+\item 
+\mbox{\hyperlink{class_service_a73fcf83eb00805b083e4528d587290bb}{get\+Request\+Interceptors}} ()
+\item 
+\mbox{\hyperlink{class_service_af924d0b3f7486d728452cc721c45b0a2}{get\+Project\+Id}} (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a622460feeccdab6d8f307936fc6b36fb}{callback}})
+\item 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{class_service_ad264a26b4ec3d71c17caaad8447b62bf}{get\+Project\+Id\+Async}} ()
+\item 
+\mbox{\hyperlink{class_service_aee902e23632b42cbc750746adfd5c19e}{request\+\_\+}} (req\+Opts, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a622460feeccdab6d8f307936fc6b36fb}{callback}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_service_af07c23c15a34040dbd99643fbc58e0eb}\index{Service@{Service}!constructor@{constructor}}
+\index{constructor@{constructor}!Service@{Service}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_service_af07c23c15a34040dbd99643fbc58e0eb} 
+Service\+::constructor (\begin{DoxyParamCaption}\item[{}]{config}{, }\item[{}]{options}{ = {\ttfamily \{\}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\doxylink{class_service}{Service} is a base class, meant to be inherited from by a "{}service,"{} like Big\+Query or \doxylink{class_storage}{Storage}.
+
+This handles making authenticated requests by exposing a {\ttfamily make\+Req\+\_\+} function.
+
+@constructor @alias module\+:common/service
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{object\}} & config -\/ Configuration object. \\
+\hline
+{\em \{string\}} & config.\+base\+Url -\/ The base URL to make API requests to. \\
+\hline
+{\em \{string\mbox{[}$\,$\mbox{]}\}} & config.\+scopes -\/ The scopes required for the request. \\
+\hline
+{\em \{object=\}} & options -\/ Configuration object. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_service_af07c23c15a34040dbd99643fbc58e0eb}\index{Service@{Service}!constructor@{constructor}}
+\index{constructor@{constructor}!Service@{Service}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_service_af07c23c15a34040dbd99643fbc58e0eb} 
+Service\+::constructor (\begin{DoxyParamCaption}\item[{}]{config}{, }\item[{}]{options}{ = {\ttfamily \{\}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\doxylink{class_service}{Service} is a base class, meant to be inherited from by a "{}service,"{} like Big\+Query or \doxylink{class_storage}{Storage}.
+
+This handles making authenticated requests by exposing a {\ttfamily make\+Req\+\_\+} function.
+
+@constructor @alias module\+:common/service
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{object\}} & config -\/ Configuration object. \\
+\hline
+{\em \{string\}} & config.\+base\+Url -\/ The base URL to make API requests to. \\
+\hline
+{\em \{string\mbox{[}$\,$\mbox{]}\}} & config.\+scopes -\/ The scopes required for the request. \\
+\hline
+{\em \{object=\}} & options -\/ Configuration object. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_service_af924d0b3f7486d728452cc721c45b0a2}\index{Service@{Service}!getProjectId@{getProjectId}}
+\index{getProjectId@{getProjectId}!Service@{Service}}
+\doxysubsubsection{\texorpdfstring{getProjectId()}{getProjectId()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_service_af924d0b3f7486d728452cc721c45b0a2} 
+Service\+::get\+Project\+Id (\begin{DoxyParamCaption}\item[{}]{callback}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a622460feeccdab6d8f307936fc6b36fb}{callback}}, \mbox{\hyperlink{class_service_ad264a26b4ec3d71c17caaad8447b62bf}{get\+Project\+Id\+Async()}}, and \mbox{\hyperlink{ordered-map_8min_8js_ab2752257551c1a01e010ceba5d7ec200}{p}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_service_af924d0b3f7486d728452cc721c45b0a2_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_service_af924d0b3f7486d728452cc721c45b0a2}\index{Service@{Service}!getProjectId@{getProjectId}}
+\index{getProjectId@{getProjectId}!Service@{Service}}
+\doxysubsubsection{\texorpdfstring{getProjectId()}{getProjectId()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_service_af924d0b3f7486d728452cc721c45b0a2} 
+Service\+::get\+Project\+Id (\begin{DoxyParamCaption}\item[{}]{callback}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a622460feeccdab6d8f307936fc6b36fb}{callback}}, \mbox{\hyperlink{class_service_ad264a26b4ec3d71c17caaad8447b62bf}{get\+Project\+Id\+Async()}}, and \mbox{\hyperlink{ordered-map_8min_8js_ab2752257551c1a01e010ceba5d7ec200}{p}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_service_af924d0b3f7486d728452cc721c45b0a2_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_service_ad264a26b4ec3d71c17caaad8447b62bf}\index{Service@{Service}!getProjectIdAsync@{getProjectIdAsync}}
+\index{getProjectIdAsync@{getProjectIdAsync}!Service@{Service}}
+\doxysubsubsection{\texorpdfstring{getProjectIdAsync()}{getProjectIdAsync()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_service_ad264a26b4ec3d71c17caaad8447b62bf} 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} Service\+::get\+Project\+Id\+Async (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_service_ad264a26b4ec3d71c17caaad8447b62bf_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_service_ad264a26b4ec3d71c17caaad8447b62bf}\index{Service@{Service}!getProjectIdAsync@{getProjectIdAsync}}
+\index{getProjectIdAsync@{getProjectIdAsync}!Service@{Service}}
+\doxysubsubsection{\texorpdfstring{getProjectIdAsync()}{getProjectIdAsync()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_service_ad264a26b4ec3d71c17caaad8447b62bf} 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} Service\+::get\+Project\+Id\+Async (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2service_8js_a94ae991df95b922c0c364c83a6666c97}{DEFAULT\+\_\+\+PROJECT\+\_\+\+ID\+\_\+\+TOKEN}}.
+
+\Hypertarget{class_service_a73fcf83eb00805b083e4528d587290bb}\index{Service@{Service}!getRequestInterceptors@{getRequestInterceptors}}
+\index{getRequestInterceptors@{getRequestInterceptors}!Service@{Service}}
+\doxysubsubsection{\texorpdfstring{getRequestInterceptors()}{getRequestInterceptors()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_service_a73fcf83eb00805b083e4528d587290bb} 
+Service\+::get\+Request\+Interceptors (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the user\textquotesingle{}s custom request interceptors. \Hypertarget{class_service_a73fcf83eb00805b083e4528d587290bb}\index{Service@{Service}!getRequestInterceptors@{getRequestInterceptors}}
+\index{getRequestInterceptors@{getRequestInterceptors}!Service@{Service}}
+\doxysubsubsection{\texorpdfstring{getRequestInterceptors()}{getRequestInterceptors()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_service_a73fcf83eb00805b083e4528d587290bb} 
+Service\+::get\+Request\+Interceptors (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the user\textquotesingle{}s custom request interceptors. \Hypertarget{class_service_aee902e23632b42cbc750746adfd5c19e}\index{Service@{Service}!request\_@{request\_}}
+\index{request\_@{request\_}!Service@{Service}}
+\doxysubsubsection{\texorpdfstring{request\_()}{request\_()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_service_aee902e23632b42cbc750746adfd5c19e} 
+Service\+::request\+\_\+ (\begin{DoxyParamCaption}\item[{}]{req\+Opts}{, }\item[{}]{callback}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Make an authenticated API request.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{object\}} & req\+Opts -\/ \doxylink{class_request}{Request} options that are passed to {\ttfamily request}. \\
+\hline
+{\em \{string\}} & req\+Opts.\+uri -\/ \doxylink{class_a}{A} URI relative to the base\+Url.\\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{rxjs_2dist_2cjs_2internal_2operators_2timeout_8js_a56cd1f2498714e800f2da45ee2fd56b7}{timeout}}.
+
+\Hypertarget{class_service_aee902e23632b42cbc750746adfd5c19e}\index{Service@{Service}!request\_@{request\_}}
+\index{request\_@{request\_}!Service@{Service}}
+\doxysubsubsection{\texorpdfstring{request\_()}{request\_()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_service_aee902e23632b42cbc750746adfd5c19e} 
+Service\+::request\+\_\+ (\begin{DoxyParamCaption}\item[{}]{req\+Opts}{, }\item[{}]{callback}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Make an authenticated API request.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{object\}} & req\+Opts -\/ \doxylink{class_request}{Request} options that are passed to {\ttfamily request}. \\
+\hline
+{\em \{string\}} & req\+Opts.\+uri -\/ \doxylink{class_a}{A} URI relative to the base\+Url.\\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{rxjs_2dist_2cjs_2internal_2operators_2timeout_8js_a56cd1f2498714e800f2da45ee2fd56b7}{timeout}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/@google-\/cloud/storage/build/cjs/src/nodejs-\/common/\mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2cjs_2src_2nodejs-common_2service_8js}{service.\+js}}\item 
+backend/node\+\_\+modules/@google-\/cloud/storage/build/esm/src/nodejs-\/common/\mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2service_8js}{service.\+js}}\end{DoxyCompactItemize}

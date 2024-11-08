@@ -1,0 +1,12 @@
+<map id="PersistentConnection::refreshAuthToken" name="PersistentConnection::refreshAuthToken">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,78,152,119"/>
+<area shape="rect" id="Node000002" href="$class_persistent_connection.html#a4c563921f12da81aee16a0a90a1334ae" title=" " alt="" coords="200,5,410,61"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="150,75,191,63,193,68,152,80"/>
+<area shape="rect" id="Node000003" href="$class_persistent_connection.html#a4ec7b69f34049f6b647a253d3ba548d2" title=" " alt="" coords="458,78,604,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="152,96,442,96,442,101,152,101"/>
+<area shape="rect" id="Node000004" href="$class_persistent_connection.html#a3d910e671627e575f263971ce80631cd" title=" " alt="" coords="232,136,378,176"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="152,114,217,131,216,136,151,120"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="378,135,442,118,444,123,379,140"/>
+<area shape="rect" id="Node000005" href="$database_2dist_2node-esm_2index_8node_8esm_8js.html#a271ab6931d284fd38e7c85133abd63ae" title=" " alt="" coords="470,143,592,169"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="378,153,455,153,455,158,378,158"/>
+</map>

@@ -1,0 +1,76 @@
+\doxysection{backend/node\+\_\+modules/websocket-\/extensions/lib/websocket\+\_\+extensions.js File Reference}
+\hypertarget{websocket__extensions_8js}{}\label{websocket__extensions_8js}\index{backend/node\_modules/websocket-\/extensions/lib/websocket\_extensions.js@{backend/node\_modules/websocket-\/extensions/lib/websocket\_extensions.js}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{websocket__extensions_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+var \mbox{\hyperlink{websocket__extensions_8js_a4ef7bcbee0350d2dea7de9d7c1c4576d}{Parser}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\mbox{\hyperlink{ipaddr_8min_8js_a04bd013037bcf380d2d5e88fcd9a2ebf}{parser}}\textquotesingle{})
+\item 
+var \mbox{\hyperlink{websocket__extensions_8js_ae0a96f8ae9190b82f4c42817fd150cb9}{Pipeline}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\mbox{\hyperlink{readable-browser_8js_a1bc71971807dacee34d8635610dd925f}{pipeline}}\textquotesingle{})
+\item 
+var \mbox{\hyperlink{websocket__extensions_8js_a756505e3ee68b72bb7888a848d99bd42}{Extensions}}
+\item 
+\mbox{\hyperlink{class_extensions}{Extensions}} \mbox{\hyperlink{websocket__extensions_8js_ae943d8c182c622865e986d1512ba156b}{MESSAGE\+\_\+\+OPCODES}} = \mbox{[}1, 2\mbox{]}
+\item 
+var \mbox{\hyperlink{websocket__extensions_8js_a243c7aa6c47d450837986091ed54a347}{instance}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{websocket__extensions_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} = \mbox{\hyperlink{class_extensions}{Extensions}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{websocket__extensions_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\index{websocket\_extensions.js@{websocket\_extensions.js}!exports@{exports}}
+\index{exports@{exports}!websocket\_extensions.js@{websocket\_extensions.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \label{websocket__extensions_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports = \mbox{\hyperlink{class_extensions}{Extensions}}}
+
+\Hypertarget{websocket__extensions_8js_a756505e3ee68b72bb7888a848d99bd42}\index{websocket\_extensions.js@{websocket\_extensions.js}!Extensions@{Extensions}}
+\index{Extensions@{Extensions}!websocket\_extensions.js@{websocket\_extensions.js}}
+\doxysubsubsection{\texorpdfstring{Extensions}{Extensions}}
+{\footnotesize\ttfamily \label{websocket__extensions_8js_a756505e3ee68b72bb7888a848d99bd42} 
+var Extensions}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}()\ \{}
+\DoxyCodeLine{\ \ this.\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a5276ab0567e7a44201b582088c8aacc3}{\_rsv1}}\ =\ this.\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a75e427798f89144e2076516629bdb82d}{\_rsv2}}\ =\ this.\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_abf1edc5218de691e71407c1f06fa837d}{\_rsv3}}\ =\ \textcolor{keyword}{null};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ this.\_byName\ \ \ =\ \{\};}
+\DoxyCodeLine{\ \ this.\_inOrder\ \ =\ [];}
+\DoxyCodeLine{\ \ this.\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ae11fb127208e8bfec735c091456cb888}{\_sessions}}\ =\ [];}
+\DoxyCodeLine{\ \ this.\_index\ \ \ \ =\ \{\};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{websocket__extensions_8js_a243c7aa6c47d450837986091ed54a347}\index{websocket\_extensions.js@{websocket\_extensions.js}!instance@{instance}}
+\index{instance@{instance}!websocket\_extensions.js@{websocket\_extensions.js}}
+\doxysubsubsection{\texorpdfstring{instance}{instance}}
+{\footnotesize\ttfamily \label{websocket__extensions_8js_a243c7aa6c47d450837986091ed54a347} 
+var instance}
+
+\Hypertarget{websocket__extensions_8js_ae943d8c182c622865e986d1512ba156b}\index{websocket\_extensions.js@{websocket\_extensions.js}!MESSAGE\_OPCODES@{MESSAGE\_OPCODES}}
+\index{MESSAGE\_OPCODES@{MESSAGE\_OPCODES}!websocket\_extensions.js@{websocket\_extensions.js}}
+\doxysubsubsection{\texorpdfstring{MESSAGE\_OPCODES}{MESSAGE\_OPCODES}}
+{\footnotesize\ttfamily \label{websocket__extensions_8js_ae943d8c182c622865e986d1512ba156b} 
+\mbox{\hyperlink{class_extensions}{Extensions}} MESSAGE\+\_\+\+OPCODES = \mbox{[}1, 2\mbox{]}}
+
+\Hypertarget{websocket__extensions_8js_a4ef7bcbee0350d2dea7de9d7c1c4576d}\index{websocket\_extensions.js@{websocket\_extensions.js}!Parser@{Parser}}
+\index{Parser@{Parser}!websocket\_extensions.js@{websocket\_extensions.js}}
+\doxysubsubsection{\texorpdfstring{Parser}{Parser}}
+{\footnotesize\ttfamily \label{websocket__extensions_8js_a4ef7bcbee0350d2dea7de9d7c1c4576d} 
+var Parser = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\mbox{\hyperlink{ipaddr_8min_8js_a04bd013037bcf380d2d5e88fcd9a2ebf}{parser}}\textquotesingle{})}
+
+\Hypertarget{websocket__extensions_8js_ae0a96f8ae9190b82f4c42817fd150cb9}\index{websocket\_extensions.js@{websocket\_extensions.js}!Pipeline@{Pipeline}}
+\index{Pipeline@{Pipeline}!websocket\_extensions.js@{websocket\_extensions.js}}
+\doxysubsubsection{\texorpdfstring{Pipeline}{Pipeline}}
+{\footnotesize\ttfamily \label{websocket__extensions_8js_ae0a96f8ae9190b82f4c42817fd150cb9} 
+var Pipeline = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\mbox{\hyperlink{readable-browser_8js_a1bc71971807dacee34d8635610dd925f}{pipeline}}\textquotesingle{})}
+
+\Hypertarget{websocket__extensions_8js_ae2475e10618961c050dcba04e8c42331}\index{websocket\_extensions.js@{websocket\_extensions.js}!strict@{strict}}
+\index{strict@{strict}!websocket\_extensions.js@{websocket\_extensions.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{websocket__extensions_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+

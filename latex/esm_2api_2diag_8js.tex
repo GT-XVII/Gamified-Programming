@@ -1,0 +1,81 @@
+\doxysection{backend/node\+\_\+modules/@opentelemetry/api/build/esm/api/diag.js File Reference}
+\hypertarget{esm_2api_2diag_8js}{}\label{esm_2api_2diag_8js}\index{backend/node\_modules/"@opentelemetry/api/build/esm/api/diag.js@{backend/node\_modules/"@opentelemetry/api/build/esm/api/diag.js}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{esm_2api_2diag_8js_ac2bb750999c1807e9c61dbbc385bda88}{\+\_\+\+\_\+read}}
+\item 
+var \mbox{\hyperlink{esm_2api_2diag_8js_aff39b60b9d9ed7566ea206262596581d}{\+\_\+\+\_\+spread\+Array}}
+\item 
+\mbox{\hyperlink{esm_2api_2diag_8js_a59be084da8908b7d77ff34b25cd84488}{import}} \{ \mbox{\hyperlink{class_diag_component_logger}{Diag\+Component\+Logger}} \} from \textquotesingle{}../\mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2baggage_2utils_8js_a33a2fa12737e4357178a3ebcd0309a4e}{diag}}/Component\+Logger\textquotesingle{}
+\item 
+var \mbox{\hyperlink{esm_2api_2diag_8js_a4130824184d15c4be87d20bccbd7c562}{API\+\_\+\+NAME}} = \textquotesingle{}\mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2baggage_2utils_8js_a33a2fa12737e4357178a3ebcd0309a4e}{diag}}\textquotesingle{}
+\item 
+var \mbox{\hyperlink{esm_2api_2diag_8js_a9eda80c2634065c9a4e6bec0f877e606}{Diag\+API}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{esm_2api_2diag_8js_ac2bb750999c1807e9c61dbbc385bda88}\index{diag.js@{diag.js}!\_\_read@{\_\_read}}
+\index{\_\_read@{\_\_read}!diag.js@{diag.js}}
+\doxysubsubsection{\texorpdfstring{\_\_read}{\_\_read}}
+{\footnotesize\ttfamily \label{esm_2api_2diag_8js_ac2bb750999c1807e9c61dbbc385bda88} 
+var \+\_\+\+\_\+read}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ (\textcolor{keyword}{this}\ \&\&\ this.\mbox{\hyperlink{esm_2api_2diag_8js_ac2bb750999c1807e9c61dbbc385bda88}{\_\_read}})\ ||\ \textcolor{keyword}{function}\ (\mbox{\hyperlink{uuid_8min_8js_a400dc8109620963da8314d4bdfa14f83}{o}},\ \mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}})\ \{}
+\DoxyCodeLine{\ \ \ \ var\ \mbox{\hyperlink{agent-base_2node__modules_2ms_2index_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m}}\ =\ typeof\ \mbox{\hyperlink{__base_get_tag_8js_a9223501a4f1d046befc3fb8f0bf5c1e4}{Symbol}}\ ===\ \textcolor{stringliteral}{"{}function"{}}\ \&\&\ \mbox{\hyperlink{uuid_8min_8js_a400dc8109620963da8314d4bdfa14f83}{o}}[\mbox{\hyperlink{__base_get_tag_8js_a9223501a4f1d046befc3fb8f0bf5c1e4}{Symbol}}.iterator];}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{agent-base_2node__modules_2ms_2index_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m}})\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{uuid_8min_8js_a400dc8109620963da8314d4bdfa14f83}{o}};}
+\DoxyCodeLine{\ \ \ \ var\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ =\ \mbox{\hyperlink{agent-base_2node__modules_2ms_2index_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m}}.call(\mbox{\hyperlink{uuid_8min_8js_a400dc8109620963da8314d4bdfa14f83}{o}}),\ \mbox{\hyperlink{uuid_8min_8js_aaa5fef39529cdffdfa257202bb4fda9f}{r}},\ ar\ =\ [],\ \mbox{\hyperlink{firestore__admin__v1__proto__api_8js_a08a4415e9d594ff960030b921d42b91e}{e}};}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ ((\mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}\ ===\ \textcolor{keywordtype}{void}\ 0\ ||\ \mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}-\/-\/\ >\ 0)\ \&\&\ !(\mbox{\hyperlink{uuid_8min_8js_aaa5fef39529cdffdfa257202bb4fda9f}{r}}\ =\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}.next()).done)\ ar.push(\mbox{\hyperlink{uuid_8min_8js_aaa5fef39529cdffdfa257202bb4fda9f}{r}}.value);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{catch}\ (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}})\ \{\ \mbox{\hyperlink{firestore__admin__v1__proto__api_8js_a08a4415e9d594ff960030b921d42b91e}{e}}\ =\ \{\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}}:\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}}\ \};\ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{finally}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{uuid_8min_8js_aaa5fef39529cdffdfa257202bb4fda9f}{r}}\ \&\&\ !\mbox{\hyperlink{uuid_8min_8js_aaa5fef39529cdffdfa257202bb4fda9f}{r}}.done\ \&\&\ (\mbox{\hyperlink{agent-base_2node__modules_2ms_2index_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m}}\ =\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}[\textcolor{stringliteral}{"{}return"{}}]))\ \mbox{\hyperlink{agent-base_2node__modules_2ms_2index_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m}}.call(\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{finally}\ \{\ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{firestore__admin__v1__proto__api_8js_a08a4415e9d594ff960030b921d42b91e}{e}})\ \textcolor{keywordflow}{throw}\ \mbox{\hyperlink{firestore__admin__v1__proto__api_8js_a08a4415e9d594ff960030b921d42b91e}{e}}.error;\ \}}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ ar;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{esm_2api_2diag_8js_aff39b60b9d9ed7566ea206262596581d}\index{diag.js@{diag.js}!\_\_spreadArray@{\_\_spreadArray}}
+\index{\_\_spreadArray@{\_\_spreadArray}!diag.js@{diag.js}}
+\doxysubsubsection{\texorpdfstring{\_\_spreadArray}{\_\_spreadArray}}
+{\footnotesize\ttfamily \label{esm_2api_2diag_8js_aff39b60b9d9ed7566ea206262596581d} 
+var \+\_\+\+\_\+spread\+Array}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ (\textcolor{keyword}{this}\ \&\&\ this.\mbox{\hyperlink{esm_2api_2diag_8js_aff39b60b9d9ed7566ea206262596581d}{\_\_spreadArray}})\ ||\ \textcolor{keyword}{function}\ (to,\ from,\ \mbox{\hyperlink{ed25519_8js_a6f36d187a0979bc1d60b8c602058fa14}{pack}})\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{ed25519_8js_a6f36d187a0979bc1d60b8c602058fa14}{pack}}\ ||\ arguments.length\ ===\ 2)\ \textcolor{keywordflow}{for}\ (var\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ =\ 0,\ \mbox{\hyperlink{uuid_8min_8js_ae5e71a2600e8891c54854be157cc6626}{l}}\ =\ from.length,\ ar;\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ <\ \mbox{\hyperlink{uuid_8min_8js_ae5e71a2600e8891c54854be157cc6626}{l}};\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}++)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (ar\ ||\ !(\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ in\ from))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!ar)\ ar\ =\ \mbox{\hyperlink{src_2util_2minimal_8js_a325c4e317c38d8497130ebce7670be2f}{Array}}.prototype.slice.call(from,\ 0,\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ ar[\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}]\ =\ from[\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}];}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ to.concat(ar\ ||\ \mbox{\hyperlink{src_2util_2minimal_8js_a325c4e317c38d8497130ebce7670be2f}{Array}}.prototype.slice.call(from));}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{esm_2api_2diag_8js_a4130824184d15c4be87d20bccbd7c562}\index{diag.js@{diag.js}!API\_NAME@{API\_NAME}}
+\index{API\_NAME@{API\_NAME}!diag.js@{diag.js}}
+\doxysubsubsection{\texorpdfstring{API\_NAME}{API\_NAME}}
+{\footnotesize\ttfamily \label{esm_2api_2diag_8js_a4130824184d15c4be87d20bccbd7c562} 
+var API\+\_\+\+NAME = \textquotesingle{}\mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2baggage_2utils_8js_a33a2fa12737e4357178a3ebcd0309a4e}{diag}}\textquotesingle{}}
+
+\Hypertarget{esm_2api_2diag_8js_a9eda80c2634065c9a4e6bec0f877e606}\index{diag.js@{diag.js}!DiagAPI@{DiagAPI}}
+\index{DiagAPI@{DiagAPI}!diag.js@{diag.js}}
+\doxysubsubsection{\texorpdfstring{DiagAPI}{DiagAPI}}
+{\footnotesize\ttfamily \label{esm_2api_2diag_8js_a9eda80c2634065c9a4e6bec0f877e606} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} Diag\+API}
+
+Singleton object which represents the entry point to the Open\+Telemetry internal diagnostic API \Hypertarget{esm_2api_2diag_8js_a59be084da8908b7d77ff34b25cd84488}\index{diag.js@{diag.js}!import@{import}}
+\index{import@{import}!diag.js@{diag.js}}
+\doxysubsubsection{\texorpdfstring{import}{import}}
+{\footnotesize\ttfamily \label{esm_2api_2diag_8js_a59be084da8908b7d77ff34b25cd84488} 
+import \{ \mbox{\hyperlink{class_diag_component_logger}{Diag\+Component\+Logger}} \} from \textquotesingle{}../\mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2baggage_2utils_8js_a33a2fa12737e4357178a3ebcd0309a4e}{diag}}/Component\+Logger\textquotesingle{}}
+

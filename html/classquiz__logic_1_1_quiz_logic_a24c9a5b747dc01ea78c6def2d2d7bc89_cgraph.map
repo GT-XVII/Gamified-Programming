@@ -1,0 +1,9 @@
+<map id="quiz_logic.QuizLogic.process_tasks" name="quiz_logic.QuizLogic.process_tasks">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,39,197,79"/>
+<area shape="rect" id="Node000002" href="$classquiz__logic_1_1_quiz_logic.html#a1d53a3f09ae9a20ff037da6654b40437" title=" " alt="" coords="245,39,390,79"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="197,56,229,56,229,62,197,62"/>
+<area shape="rect" id="Node000003" href="$classquiz__logic_1_1_quiz_logic.html#aa46fd8ffa1f11873d29ac5e7ad6b3daf" title=" " alt="" coords="438,5,595,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="390,44,422,39,423,44,391,50"/>
+<area shape="rect" id="Node000004" href="$classquiz__logic_1_1_quiz_logic.html#aa3d711e6aef8854fbeefb8b02fb1d2ef" title=" " alt="" coords="442,71,592,111"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="391,68,426,74,425,79,390,73"/>
+</map>

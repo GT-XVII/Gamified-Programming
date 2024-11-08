@@ -1,0 +1,13 @@
+<map id="logProxy" name="logProxy">
+<area shape="rect" id="Node000001" title=" " alt="" coords="208,144,280,169"/>
+<area shape="rect" id="Node000002" href="$class_diag_component_logger.html#adc20577036f2a82445660bad4aa6cf72" title=" " alt="" coords="5,5,160,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="223,132,195,96,158,61,138,49,141,44,161,57,199,92,228,129"/>
+<area shape="rect" id="Node000003" href="$class_diag_component_logger.html#aba7346032fb980b99a2fe2446180d2da" title=" " alt="" coords="5,71,160,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="195,140,133,114,135,109,197,135"/>
+<area shape="rect" id="Node000004" href="$class_diag_component_logger.html#ae07cd357f607bf913a1d4131060d7c51" title=" " alt="" coords="5,136,160,177"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="192,159,160,159,160,154,192,154"/>
+<area shape="rect" id="Node000005" href="$class_diag_component_logger.html#a428cdfcb07d313c6b2a5e14795318a25" title=" " alt="" coords="5,201,160,242"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="197,178,135,203,133,198,195,173"/>
+<area shape="rect" id="Node000006" href="$class_diag_component_logger.html#a944a046ea6df103abe316d5d99768137" title=" " alt="" coords="5,267,160,307"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="228,184,199,220,161,256,141,268,138,264,158,252,195,217,223,181"/>
+</map>

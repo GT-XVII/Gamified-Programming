@@ -1,0 +1,197 @@
+\doxysection{backend/node\+\_\+modules/iconv-\/lite/encodings/utf7.js File Reference}
+\hypertarget{utf7_8js}{}\label{utf7_8js}\index{backend/node\_modules/iconv-\/lite/encodings/utf7.js@{backend/node\_modules/iconv-\/lite/encodings/utf7.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{utf7_8js_ad9c8d697f1119aaf35bf9ba9ae58386d}{Utf7\+Codec}} (codec\+Options, \mbox{\hyperlink{iconv-lite_2lib_2index_8js_a5c062989a80f49a2caf367fe212f6b52}{iconv}})
+\item 
+function \mbox{\hyperlink{utf7_8js_acd42668c60fd6b32d9644fd0b07e710f}{Utf7\+Encoder}} (options, codec)
+\item 
+function \mbox{\hyperlink{utf7_8js_a7c1e076a3b86de2accdaab53f15e59a2}{Utf7\+IMAPCodec}} (codec\+Options, \mbox{\hyperlink{iconv-lite_2lib_2index_8js_a5c062989a80f49a2caf367fe212f6b52}{iconv}})
+\item 
+function \mbox{\hyperlink{utf7_8js_a2e71523a525b41b3645a92aa73d77ef7}{Utf7\+IMAPEncoder}} (options, codec)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{utf7_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+var \mbox{\hyperlink{utf7_8js_a6e9de2d16b02dc274208bfcc1914d7f4}{Buffer}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}safer-\/buffer"{}).Buffer
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{utf7_8js_a4324d0cf4af4df10b4f8de0ac5b2be50}{utf7}} = \mbox{\hyperlink{utf7_8js_ad9c8d697f1119aaf35bf9ba9ae58386d}{Utf7\+Codec}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{utf7_8js_aaf571087210942b405e4ffee382ee53e}{unicode11utf7}} = \textquotesingle{}\mbox{\hyperlink{utf7_8js_a4324d0cf4af4df10b4f8de0ac5b2be50}{utf7}}\textquotesingle{}
+\item 
+\mbox{\hyperlink{utf7_8js_ad9c8d697f1119aaf35bf9ba9ae58386d}{Utf7\+Codec}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{utf7_8js_a2e3d2e577cc69881c4ec00c7b8005e35}{encoder}} = \mbox{\hyperlink{utf7_8js_acd42668c60fd6b32d9644fd0b07e710f}{Utf7\+Encoder}}
+\item 
+\mbox{\hyperlink{utf7_8js_ad9c8d697f1119aaf35bf9ba9ae58386d}{Utf7\+Codec}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{utf7_8js_ad3d625998d0232650afb4cf3c50dc9f1}{decoder}} = Utf7\+Decoder
+\item 
+\mbox{\hyperlink{utf7_8js_ad9c8d697f1119aaf35bf9ba9ae58386d}{Utf7\+Codec}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{utf7_8js_af3ef7327c06a1ab0dc740941d2bb307e}{bom\+Aware}} = true
+\item 
+var \mbox{\hyperlink{utf7_8js_a4c98fc0a0f540ab2e304512712dc21a0}{non\+Direct\+Chars}} = /\mbox{[}\texorpdfstring{$^\wedge$}{\string^}\mbox{\hyperlink{class_a}{A}}-\/Za-\/z0-\/9\textquotesingle{}\textbackslash{}(\textbackslash{}),-\/\textbackslash{}.\textbackslash{}/\+:\textbackslash{}? \textbackslash{}\mbox{\hyperlink{uuidv4_8min_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{n\textbackslash{}r\textbackslash{}t}}\mbox{]}+/\mbox{\hyperlink{ordered-map_8min_8js_a103df269476e78897c9c4c6cb8f4eb06}{g}}
+\item 
+\mbox{\hyperlink{utf7_8js_acd42668c60fd6b32d9644fd0b07e710f}{Utf7\+Encoder}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{utf7_8js_ac84eb1c937f703f14c9844357248991b}{write}}
+\item 
+var \mbox{\hyperlink{utf7_8js_ad894bcba46fbe160c60b00abcab491e6}{base64\+Chars}} = \mbox{[}$\,$\mbox{]}
+\item 
+var \mbox{\hyperlink{utf7_8js_a3d20a6ea315c9afd42607632100fe189}{plus\+Char}} = \textquotesingle{}+\textquotesingle{}.\mbox{\hyperlink{longbits_8js_ab461155ec48c76bb68d2872b8da726c1}{char\+Code\+At}}(0)
+\item 
+var \mbox{\hyperlink{utf7_8js_a86557d39f1cdc5bac35262c3435907d5}{minus\+Char}} = \textquotesingle{}-\/\textquotesingle{}.\mbox{\hyperlink{longbits_8js_ab461155ec48c76bb68d2872b8da726c1}{char\+Code\+At}}(0)
+\item 
+var \mbox{\hyperlink{utf7_8js_a153bacf41113e2741e947aade6aa992d}{and\+Char}} = \textquotesingle{}\&\textquotesingle{}.\mbox{\hyperlink{longbits_8js_ab461155ec48c76bb68d2872b8da726c1}{char\+Code\+At}}(0)
+\item 
+\mbox{\hyperlink{utf7_8js_a119c65845c86019834e3ce443b696911}{base64\+IMAPChars}} \mbox{[}\textquotesingle{},\textquotesingle{}.\mbox{\hyperlink{longbits_8js_ab461155ec48c76bb68d2872b8da726c1}{char\+Code\+At}}(0)\mbox{]} = true
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{utf7_8js_ad9c8d697f1119aaf35bf9ba9ae58386d}\index{utf7.js@{utf7.js}!Utf7Codec@{Utf7Codec}}
+\index{Utf7Codec@{Utf7Codec}!utf7.js@{utf7.js}}
+\doxysubsubsection{\texorpdfstring{Utf7Codec()}{Utf7Codec()}}
+{\footnotesize\ttfamily \label{utf7_8js_ad9c8d697f1119aaf35bf9ba9ae58386d} 
+function Utf7\+Codec (\begin{DoxyParamCaption}\item[{}]{codec\+Options}{, }\item[{}]{iconv}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{iconv-lite_2lib_2index_8js_a5c062989a80f49a2caf367fe212f6b52}{iconv}}.
+
+\Hypertarget{utf7_8js_acd42668c60fd6b32d9644fd0b07e710f}\index{utf7.js@{utf7.js}!Utf7Encoder@{Utf7Encoder}}
+\index{Utf7Encoder@{Utf7Encoder}!utf7.js@{utf7.js}}
+\doxysubsubsection{\texorpdfstring{Utf7Encoder()}{Utf7Encoder()}}
+{\footnotesize\ttfamily \label{utf7_8js_acd42668c60fd6b32d9644fd0b07e710f} 
+function Utf7\+Encoder (\begin{DoxyParamCaption}\item[{}]{options}{, }\item[{}]{codec}{}\end{DoxyParamCaption})}
+
+\Hypertarget{utf7_8js_a7c1e076a3b86de2accdaab53f15e59a2}\index{utf7.js@{utf7.js}!Utf7IMAPCodec@{Utf7IMAPCodec}}
+\index{Utf7IMAPCodec@{Utf7IMAPCodec}!utf7.js@{utf7.js}}
+\doxysubsubsection{\texorpdfstring{Utf7IMAPCodec()}{Utf7IMAPCodec()}}
+{\footnotesize\ttfamily \label{utf7_8js_a7c1e076a3b86de2accdaab53f15e59a2} 
+function Utf7\+IMAPCodec (\begin{DoxyParamCaption}\item[{}]{codec\+Options}{, }\item[{}]{iconv}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{iconv-lite_2lib_2index_8js_a5c062989a80f49a2caf367fe212f6b52}{iconv}}.
+
+\Hypertarget{utf7_8js_a2e71523a525b41b3645a92aa73d77ef7}\index{utf7.js@{utf7.js}!Utf7IMAPEncoder@{Utf7IMAPEncoder}}
+\index{Utf7IMAPEncoder@{Utf7IMAPEncoder}!utf7.js@{utf7.js}}
+\doxysubsubsection{\texorpdfstring{Utf7IMAPEncoder()}{Utf7IMAPEncoder()}}
+{\footnotesize\ttfamily \label{utf7_8js_a2e71523a525b41b3645a92aa73d77ef7} 
+function Utf7\+IMAPEncoder (\begin{DoxyParamCaption}\item[{}]{options}{, }\item[{}]{codec}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{iconv-lite_2lib_2index_8js_a5c062989a80f49a2caf367fe212f6b52}{iconv}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{utf7_8js_a153bacf41113e2741e947aade6aa992d}\index{utf7.js@{utf7.js}!andChar@{andChar}}
+\index{andChar@{andChar}!utf7.js@{utf7.js}}
+\doxysubsubsection{\texorpdfstring{andChar}{andChar}}
+{\footnotesize\ttfamily \label{utf7_8js_a153bacf41113e2741e947aade6aa992d} 
+var and\+Char = \textquotesingle{}\&\textquotesingle{}.\mbox{\hyperlink{longbits_8js_ab461155ec48c76bb68d2872b8da726c1}{char\+Code\+At}}(0)}
+
+\Hypertarget{utf7_8js_ad894bcba46fbe160c60b00abcab491e6}\index{utf7.js@{utf7.js}!base64Chars@{base64Chars}}
+\index{base64Chars@{base64Chars}!utf7.js@{utf7.js}}
+\doxysubsubsection{\texorpdfstring{base64Chars}{base64Chars}}
+{\footnotesize\ttfamily \label{utf7_8js_ad894bcba46fbe160c60b00abcab491e6} 
+var base64\+Chars = \mbox{[}$\,$\mbox{]}}
+
+\Hypertarget{utf7_8js_a119c65845c86019834e3ce443b696911}\index{utf7.js@{utf7.js}!base64IMAPChars@{base64IMAPChars}}
+\index{base64IMAPChars@{base64IMAPChars}!utf7.js@{utf7.js}}
+\doxysubsubsection{\texorpdfstring{base64IMAPChars}{base64IMAPChars}}
+{\footnotesize\ttfamily \label{utf7_8js_a119c65845c86019834e3ce443b696911} 
+base64\+IMAPChars\mbox{[}\textquotesingle{},\textquotesingle{}.\mbox{\hyperlink{longbits_8js_ab461155ec48c76bb68d2872b8da726c1}{char\+Code\+At}}(0)\mbox{]} = true}
+
+\Hypertarget{utf7_8js_af3ef7327c06a1ab0dc740941d2bb307e}\index{utf7.js@{utf7.js}!bomAware@{bomAware}}
+\index{bomAware@{bomAware}!utf7.js@{utf7.js}}
+\doxysubsubsection{\texorpdfstring{bomAware}{bomAware}}
+{\footnotesize\ttfamily \label{utf7_8js_af3ef7327c06a1ab0dc740941d2bb307e} 
+\mbox{\hyperlink{utf7_8js_a7c1e076a3b86de2accdaab53f15e59a2}{Utf7\+IMAPCodec}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} bom\+Aware = true}
+
+\Hypertarget{utf7_8js_a6e9de2d16b02dc274208bfcc1914d7f4}\index{utf7.js@{utf7.js}!Buffer@{Buffer}}
+\index{Buffer@{Buffer}!utf7.js@{utf7.js}}
+\doxysubsubsection{\texorpdfstring{Buffer}{Buffer}}
+{\footnotesize\ttfamily \label{utf7_8js_a6e9de2d16b02dc274208bfcc1914d7f4} 
+var Buffer = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}safer-\/buffer"{}).Buffer}
+
+\Hypertarget{utf7_8js_ad3d625998d0232650afb4cf3c50dc9f1}\index{utf7.js@{utf7.js}!decoder@{decoder}}
+\index{decoder@{decoder}!utf7.js@{utf7.js}}
+\doxysubsubsection{\texorpdfstring{decoder}{decoder}}
+{\footnotesize\ttfamily \label{utf7_8js_ad3d625998d0232650afb4cf3c50dc9f1} 
+\mbox{\hyperlink{utf7_8js_a7c1e076a3b86de2accdaab53f15e59a2}{Utf7\+IMAPCodec}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} decoder = Utf7\+Decoder}
+
+\Hypertarget{utf7_8js_a2e3d2e577cc69881c4ec00c7b8005e35}\index{utf7.js@{utf7.js}!encoder@{encoder}}
+\index{encoder@{encoder}!utf7.js@{utf7.js}}
+\doxysubsubsection{\texorpdfstring{encoder}{encoder}}
+{\footnotesize\ttfamily \label{utf7_8js_a2e3d2e577cc69881c4ec00c7b8005e35} 
+\mbox{\hyperlink{utf7_8js_a7c1e076a3b86de2accdaab53f15e59a2}{Utf7\+IMAPCodec}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} encoder = \mbox{\hyperlink{utf7_8js_acd42668c60fd6b32d9644fd0b07e710f}{Utf7\+Encoder}}}
+
+\Hypertarget{utf7_8js_a86557d39f1cdc5bac35262c3435907d5}\index{utf7.js@{utf7.js}!minusChar@{minusChar}}
+\index{minusChar@{minusChar}!utf7.js@{utf7.js}}
+\doxysubsubsection{\texorpdfstring{minusChar}{minusChar}}
+{\footnotesize\ttfamily \label{utf7_8js_a86557d39f1cdc5bac35262c3435907d5} 
+var minus\+Char = \textquotesingle{}-\/\textquotesingle{}.\mbox{\hyperlink{longbits_8js_ab461155ec48c76bb68d2872b8da726c1}{char\+Code\+At}}(0)}
+
+\Hypertarget{utf7_8js_a4c98fc0a0f540ab2e304512712dc21a0}\index{utf7.js@{utf7.js}!nonDirectChars@{nonDirectChars}}
+\index{nonDirectChars@{nonDirectChars}!utf7.js@{utf7.js}}
+\doxysubsubsection{\texorpdfstring{nonDirectChars}{nonDirectChars}}
+{\footnotesize\ttfamily \label{utf7_8js_a4c98fc0a0f540ab2e304512712dc21a0} 
+var non\+Direct\+Chars = /\mbox{[}\texorpdfstring{$^\wedge$}{\string^}\mbox{\hyperlink{class_a}{A}}-\/Za-\/z0-\/9\textquotesingle{}\textbackslash{}(\textbackslash{}),-\/\textbackslash{}.\textbackslash{}/\+:\textbackslash{}? \textbackslash{}\mbox{\hyperlink{uuidv4_8min_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{n\textbackslash{}r\textbackslash{}t}}\mbox{]}+/\mbox{\hyperlink{ordered-map_8min_8js_a103df269476e78897c9c4c6cb8f4eb06}{g}}}
+
+\Hypertarget{utf7_8js_a3d20a6ea315c9afd42607632100fe189}\index{utf7.js@{utf7.js}!plusChar@{plusChar}}
+\index{plusChar@{plusChar}!utf7.js@{utf7.js}}
+\doxysubsubsection{\texorpdfstring{plusChar}{plusChar}}
+{\footnotesize\ttfamily \label{utf7_8js_a3d20a6ea315c9afd42607632100fe189} 
+var plus\+Char = \textquotesingle{}+\textquotesingle{}.\mbox{\hyperlink{longbits_8js_ab461155ec48c76bb68d2872b8da726c1}{char\+Code\+At}}(0)}
+
+\Hypertarget{utf7_8js_ae2475e10618961c050dcba04e8c42331}\index{utf7.js@{utf7.js}!strict@{strict}}
+\index{strict@{strict}!utf7.js@{utf7.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{utf7_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+
+\Hypertarget{utf7_8js_aaf571087210942b405e4ffee382ee53e}\index{utf7.js@{utf7.js}!unicode11utf7@{unicode11utf7}}
+\index{unicode11utf7@{unicode11utf7}!utf7.js@{utf7.js}}
+\doxysubsubsection{\texorpdfstring{unicode11utf7}{unicode11utf7}}
+{\footnotesize\ttfamily \label{utf7_8js_aaf571087210942b405e4ffee382ee53e} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} unicode11utf7 = \textquotesingle{}\mbox{\hyperlink{utf7_8js_a4324d0cf4af4df10b4f8de0ac5b2be50}{utf7}}\textquotesingle{}}
+
+\Hypertarget{utf7_8js_a4324d0cf4af4df10b4f8de0ac5b2be50}\index{utf7.js@{utf7.js}!utf7@{utf7}}
+\index{utf7@{utf7}!utf7.js@{utf7.js}}
+\doxysubsubsection{\texorpdfstring{utf7}{utf7}}
+{\footnotesize\ttfamily \label{utf7_8js_a4324d0cf4af4df10b4f8de0ac5b2be50} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} utf7 = \mbox{\hyperlink{utf7_8js_ad9c8d697f1119aaf35bf9ba9ae58386d}{Utf7\+Codec}}}
+
+\Hypertarget{utf7_8js_ac84eb1c937f703f14c9844357248991b}\index{utf7.js@{utf7.js}!write@{write}}
+\index{write@{write}!utf7.js@{utf7.js}}
+\doxysubsubsection{\texorpdfstring{write}{write}}
+{\footnotesize\ttfamily \label{utf7_8js_ac84eb1c937f703f14c9844357248991b} 
+\mbox{\hyperlink{utf7_8js_a2e71523a525b41b3645a92aa73d77ef7}{Utf7\+IMAPEncoder}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} write}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{json-bigint_2lib_2stringify_8js_abd4075a8f329b0ccafd81359c952a9df}{str}})\ \{}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{interface_buffer}{Buffer}}.from(\mbox{\hyperlink{json-bigint_2lib_2stringify_8js_abd4075a8f329b0ccafd81359c952a9df}{str}}.replace(\mbox{\hyperlink{utf7_8js_a4c98fc0a0f540ab2e304512712dc21a0}{nonDirectChars}},\ \textcolor{keyword}{function}(\mbox{\hyperlink{chunk_8js_a49c71f4b8e247d1267a25b3f04caef18}{chunk}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ return\ \textcolor{stringliteral}{"{}+"{}}\ +\ (chunk\ ===\ \textcolor{stringliteral}{'+'}\ ?\ \textcolor{stringliteral}{''}\ :\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ this.iconv.encode(chunk,\ \textcolor{stringliteral}{'utf16-\/be'}).toString(\textcolor{stringliteral}{'base64'}).replace(/=+\$/,\ \textcolor{stringliteral}{''}))\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ +\ \textcolor{stringliteral}{"{}-\/"{}};}
+\DoxyCodeLine{\ \ \ \ \}.bind(\textcolor{keyword}{this})));}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\mbox{\hyperlink{utf7_8js_acd42668c60fd6b32d9644fd0b07e710f}{Utf7Encoder}}.prototype.end\ =\ \textcolor{keyword}{function}()\ \{}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{function}\ Utf7Decoder(options,\ codec)\ \{}
+\DoxyCodeLine{\ \ \ \ this.\mbox{\hyperlink{iconv-lite_2lib_2index_8js_a5c062989a80f49a2caf367fe212f6b52}{iconv}}\ =\ codec.iconv;}
+\DoxyCodeLine{\ \ \ \ this.inBase64\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\ \ \ \ this.base64Accum\ =\ \textcolor{stringliteral}{''};}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{var\ base64Regex\ =\ /[\mbox{\hyperlink{class_a}{A}}-\/Za-\/z0-\/9\(\backslash\)/+]/}
+
+\end{DoxyCode}

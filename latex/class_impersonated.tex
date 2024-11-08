@@ -1,0 +1,132 @@
+\doxysection{Impersonated Class Reference}
+\hypertarget{class_impersonated}{}\label{class_impersonated}\index{Impersonated@{Impersonated}}
+
+
+Inheritance diagram for Impersonated\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{class_impersonated__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Impersonated\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{class_impersonated__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_impersonated_ac01b56208fcbb0dbd83ab1f20728d2d5}{constructor}} (options=\{\})
+\item 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{class_impersonated_a1425f9ac2427d1c878428de7cd371c72}{sign}} (blob\+To\+Sign)
+\item 
+\mbox{\hyperlink{class_impersonated_aa7ea3c37eea933a23143d027cf31fa48}{get\+Target\+Principal}} ()
+\item 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{class_impersonated_a6d11db492718bdfb36188064eced18c2}{refresh\+Token}} ()
+\item 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{class_impersonated_a5ce1bc4b345dd8d395ce9d362d147a7f}{fetch\+Id\+Token}} (target\+Audience, options)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_impersonated_ac01b56208fcbb0dbd83ab1f20728d2d5}\index{Impersonated@{Impersonated}!constructor@{constructor}}
+\index{constructor@{constructor}!Impersonated@{Impersonated}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_impersonated_ac01b56208fcbb0dbd83ab1f20728d2d5} 
+Impersonated\+::constructor (\begin{DoxyParamCaption}\item[{}]{options}{ = {\ttfamily \{\}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\doxylink{class_impersonated}{Impersonated} service account credentials.
+
+Create a new access token by impersonating another service account.
+
+\doxylink{class_impersonated}{Impersonated} Credentials allowing credentials issued to a user or service account to impersonate another. The source project using \doxylink{class_impersonated}{Impersonated} Credentials must enable the "{}\+IAMCredentials"{} API. Also, the target service account must grant the orginating principal the "{}\+Service Account Token Creator"{} IAM role.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{object\}} & options -\/ The configuration object. \\
+\hline
+{\em \{object\}} & \mbox{[}options.\+source\+Client\mbox{]} the source credential used as to acquire the impersonated credentials. \\
+\hline
+{\em \{string\}} & \mbox{[}options.\+target\+Principal\mbox{]} the service account to impersonate. \\
+\hline
+{\em \{string\mbox{[}$\,$\mbox{]}\}} & \mbox{[}options.\+delegates\mbox{]} the chained list of delegates required to grant the final access\+\_\+token. If set, the sequence of identities must have "{}\+Service Account Token Creator"{} capability granted to the preceding identity. For example, if set to \mbox{[}service\+AccountB, service\+AccountC\mbox{]}, the source\+Credential must have the Token Creator role on service\+AccountB. service\+AccountB must have the Token Creator on service\+AccountC. Finally, C must have Token Creator on target\+\_\+principal. If left unset, source\+Credential must have that role on target\+Principal. \\
+\hline
+{\em \{string\mbox{[}$\,$\mbox{]}\}} & \mbox{[}options.\+target\+Scopes\mbox{]} scopes to request during the authorization grant. \\
+\hline
+{\em \{number\}} & \mbox{[}options.\+lifetime\mbox{]} number of seconds the delegated credential should be valid for up to 3600 seconds by default, or 43,200 seconds by extending the token\textquotesingle{}s lifetime, see\+: \href{https://cloud.google.com/iam/docs/creating-short-lived-service-account-credentials\#sa-credentials-oauth}{\texttt{ https\+://cloud.\+google.\+com/iam/docs/creating-\/short-\/lived-\/service-\/account-\/credentials\#sa-\/credentials-\/oauth}} \\
+\hline
+{\em \{string\}} & \mbox{[}options.\+endpoint\mbox{]} api endpoint override. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_impersonated_a5ce1bc4b345dd8d395ce9d362d147a7f}\index{Impersonated@{Impersonated}!fetchIdToken@{fetchIdToken}}
+\index{fetchIdToken@{fetchIdToken}!Impersonated@{Impersonated}}
+\doxysubsubsection{\texorpdfstring{fetchIdToken()}{fetchIdToken()}}
+{\footnotesize\ttfamily \label{class_impersonated_a5ce1bc4b345dd8d395ce9d362d147a7f} 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} Impersonated\+::fetch\+Id\+Token (\begin{DoxyParamCaption}\item[{}]{target\+Audience}{, }\item[{}]{options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Generates an Open\+ID Connect ID token for a service account.
+
+{\ttfamily \doxylink{}{Reference Documentation}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em target\+Audience} & the audience for the fetched ID token. \\
+\hline
+{\em options} & the for the request \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an Open\+ID Connect ID token 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{logger_2dist_2esm_2index_8esm5_8js_a0adf123df8967a14b5bdd9ff3bbe2d0c}{\+\_\+a}}, \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}, \mbox{\hyperlink{lodash_2method_8js_a2f565198b0a61cb8648a01f0d9617cd7}{method}}, \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}, \mbox{\hyperlink{express_2lib_2express_8js_abde3c35e3bb7e5225dd7f234c685329c}{res}}, \mbox{\hyperlink{uuidv5_8min_8js_a36cbe5f9ac6b49b08930abff15443ab0}{u}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_acf0a8b41f00a22e21672c8b3768a0618}{url}}, and \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2uuid_2dist_2esm-browser_2v1_8js_a32c2d9d82f64ce86ca1da30b62dd1482}{v1}}.
+
+\Hypertarget{class_impersonated_aa7ea3c37eea933a23143d027cf31fa48}\index{Impersonated@{Impersonated}!getTargetPrincipal@{getTargetPrincipal}}
+\index{getTargetPrincipal@{getTargetPrincipal}!Impersonated@{Impersonated}}
+\doxysubsubsection{\texorpdfstring{getTargetPrincipal()}{getTargetPrincipal()}}
+{\footnotesize\ttfamily \label{class_impersonated_aa7ea3c37eea933a23143d027cf31fa48} 
+Impersonated\+::get\+Target\+Principal (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+The service account email to be impersonated. \Hypertarget{class_impersonated_a6d11db492718bdfb36188064eced18c2}\index{Impersonated@{Impersonated}!refreshToken@{refreshToken}}
+\index{refreshToken@{refreshToken}!Impersonated@{Impersonated}}
+\doxysubsubsection{\texorpdfstring{refreshToken()}{refreshToken()}}
+{\footnotesize\ttfamily \label{class_impersonated_a6d11db492718bdfb36188064eced18c2} 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} Impersonated\+::refresh\+Token (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Refreshes the access token. 
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{logger_2dist_2esm_2index_8esm5_8js_a0adf123df8967a14b5bdd9ff3bbe2d0c}{\+\_\+a}}, \mbox{\hyperlink{logging_8js_a53284eb14d953f3ba58806fc49cd4f7c}{\+\_\+b}}, \mbox{\hyperlink{logging_8js_aa9188bfce96541e3026ad83bee2ab87c}{\+\_\+c}}, \mbox{\hyperlink{logging_8js_aae1d992982698a637e8201f92e274e19}{\+\_\+d}}, \mbox{\hyperlink{_0dgrpc_2grpc-js_2build_2src_2index_8js_a88f1ca34064fef6dc1e29d7d1cf5cfcf}{credentials}}, \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}}, \mbox{\hyperlink{impersonated_8js_acebd772c433354e36a6a4a6f15b56286}{gaxios\+\_\+1}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}, \mbox{\hyperlink{lodash_2method_8js_a2f565198b0a61cb8648a01f0d9617cd7}{method}}, \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}, \mbox{\hyperlink{express_2lib_2express_8js_abde3c35e3bb7e5225dd7f234c685329c}{res}}, \mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2index_8js_aac9dfada3e10bfb087ebb0a95f284488}{status}}, \mbox{\hyperlink{date-format_8js_a3aca6d495c609f199b374e8ef0111f18}{tokens}}, \mbox{\hyperlink{uuidv5_8min_8js_a36cbe5f9ac6b49b08930abff15443ab0}{u}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_acf0a8b41f00a22e21672c8b3768a0618}{url}}, and \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2uuid_2dist_2esm-browser_2v1_8js_a32c2d9d82f64ce86ca1da30b62dd1482}{v1}}.
+
+\Hypertarget{class_impersonated_a1425f9ac2427d1c878428de7cd371c72}\index{Impersonated@{Impersonated}!sign@{sign}}
+\index{sign@{sign}!Impersonated@{Impersonated}}
+\doxysubsubsection{\texorpdfstring{sign()}{sign()}}
+{\footnotesize\ttfamily \label{class_impersonated_a1425f9ac2427d1c878428de7cd371c72} 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} Impersonated\+::sign (\begin{DoxyParamCaption}\item[{}]{blob\+To\+Sign}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Signs some bytes.
+
+{\ttfamily \doxylink{}{Reference Documentation}} 
+\begin{DoxyParams}{Parameters}
+{\em blob\+To\+Sign} & String to sign. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\+Sign\+Blob\+Response$>$ denoting the keyy\+ID and signed\+Blob in base64 string 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}, \mbox{\hyperlink{lodash_2method_8js_a2f565198b0a61cb8648a01f0d9617cd7}{method}}, \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}, \mbox{\hyperlink{express_2lib_2express_8js_abde3c35e3bb7e5225dd7f234c685329c}{res}}, \mbox{\hyperlink{uuidv5_8min_8js_a36cbe5f9ac6b49b08930abff15443ab0}{u}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_acf0a8b41f00a22e21672c8b3768a0618}{url}}, and \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2uuid_2dist_2esm-browser_2v1_8js_a32c2d9d82f64ce86ca1da30b62dd1482}{v1}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/google-\/auth-\/library/build/src/auth/\mbox{\hyperlink{impersonated_8js}{impersonated.\+js}}\end{DoxyCompactItemize}

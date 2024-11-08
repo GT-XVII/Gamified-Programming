@@ -1,0 +1,19 @@
+<map id="DiagAPI::instance" name="DiagAPI::instance">
+<area shape="rect" id="Node000001" title=" " alt="" coords="252,183,379,208"/>
+<area shape="rect" id="Node000002" href="$class_context_a_p_i.html#ace6f95458356b81f2e0e73be2db4e6cf" title=" " alt="" coords="35,5,174,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="300,170,262,106,235,73,202,44,173,31,175,26,205,40,239,69,267,103,304,168"/>
+<area shape="rect" id="Node000003" href="$class_metrics_a_p_i.html#aedf9479e8c105c07e30057b2f6db5e3d" title=" " alt="" coords="37,55,172,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="292,173,253,132,229,111,202,94,172,82,174,77,205,89,232,107,257,128,296,169"/>
+<area shape="rect" id="Node000004" href="$class_propagation_a_p_i.html#ad56c6041f8a80011f29a7eb8bf8772a7" title=" " alt="" coords="24,104,185,130"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="277,178,203,143,169,133,170,128,205,138,279,173"/>
+<area shape="rect" id="Node000005" href="$class_trace_a_p_i.html#a74cae43292f687cb8e31268bbf88719e" title=" " alt="" coords="42,153,167,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="236,187,167,178,168,172,237,182"/>
+<area shape="rect" id="Node000006" href="$class_context_a_p_i.html#a5f11fc1a26057be0249d32e1dc68e984" title=" " alt="" coords="5,203,204,244"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="237,209,204,213,204,208,236,203"/>
+<area shape="rect" id="Node000007" href="$class_metrics_a_p_i.html#a492b94376ae3420b7b239cd54be3d402" title=" " alt="" coords="13,268,196,309"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="280,219,205,258,173,270,171,265,203,253,278,214"/>
+<area shape="rect" id="Node000008" href="$class_propagation_a_p_i.html#ac25f18b33cab5d0a5d37b12fec5b586e" title=" " alt="" coords="17,334,192,374"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="299,223,260,274,234,300,205,323,182,336,179,331,202,319,231,296,256,270,295,220"/>
+<area shape="rect" id="Node000009" href="$class_trace_a_p_i.html#adaf3950b05c537fe0466ccfa167d7f3b" title=" " alt="" coords="16,399,193,440"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="308,224,293,261,271,305,242,350,205,388,186,401,183,396,202,384,238,346,267,302,288,259,303,222"/>
+</map>

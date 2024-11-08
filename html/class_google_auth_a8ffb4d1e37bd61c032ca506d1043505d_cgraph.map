@@ -1,0 +1,9 @@
+<map id="GoogleAuth::getFileProjectId" name="GoogleAuth::getFileProjectId">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,42,194,68"/>
+<area shape="rect" id="Node000002" href="$class_google_auth.html#a183604a220b72d86312a28ace06d140c" title=" " alt="" coords="242,5,478,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,42,226,38,226,43,195,47"/>
+<area shape="rect" id="Node000004" href="$class_google_auth.html#a4bef7ae30cea3335614d76871a513945" title=" " alt="" coords="285,70,434,96"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="195,62,270,71,269,76,194,68"/>
+<area shape="rect" id="Node000003" href="$class_google_auth.html#ad47e5b80abf05b7f7271180eb6c10d06" title=" " alt="" coords="526,5,712,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="479,23,510,23,510,28,479,28"/>
+</map>

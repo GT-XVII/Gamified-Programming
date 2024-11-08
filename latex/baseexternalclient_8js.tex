@@ -1,0 +1,202 @@
+\doxysection{backend/node\+\_\+modules/google-\/auth-\/library/build/src/auth/baseexternalclient.js File Reference}
+\hypertarget{baseexternalclient_8js}{}\label{baseexternalclient_8js}\index{backend/node\_modules/google-\/auth-\/library/build/src/auth/baseexternalclient.js@{backend/node\_modules/google-\/auth-\/library/build/src/auth/baseexternalclient.js}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_base_external_account_client}{Base\+External\+Account\+Client}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{baseexternalclient_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+var \mbox{\hyperlink{baseexternalclient_8js_a447cd4ee0c75db2d366d333c1c6ab92b}{\+\_\+\+\_\+class\+Private\+Field\+Get}}
+\item 
+var \mbox{\hyperlink{baseexternalclient_8js_a9c0a3b4ec16c0e88e32e52464cf3423e}{\+\_\+\+\_\+class\+Private\+Field\+Set}}
+\item 
+var \mbox{\hyperlink{baseexternalclient_8js_a80e9a534fae049c9db83545a06bf3bd3}{\+\_\+\+Base\+External\+Account\+Client\+\_\+instances}} = new Weak\+Set()
+\item 
+var \mbox{\hyperlink{baseexternalclient_8js_aa05cdb0f5572a0d71e715c9360a56943}{\+\_\+\+Base\+External\+Account\+Client\+\_\+pending\+Access\+Token}} = new \mbox{\hyperlink{__get_tag_8js_a7a0af2b1504d35a612ef29c54dcdef19}{Weak\+Map}}()
+\item 
+var \mbox{\hyperlink{baseexternalclient_8js_a09b7171e7d0420f0f3d0a4cd01bf9392}{\+\_\+\+Base\+External\+Account\+Client\+\_\+internal\+Refresh\+Access\+Token\+Async}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{baseexternalclient_8js_a266c148dde9da3eb838aaa9ec3e72b31}{Base\+External\+Account\+Client}} = \mbox{\hyperlink{authclient_8js_a227980d26b88dfe1dae37e07d6572565}{exports.\+DEFAULT\+\_\+\+UNIVERSE}} = \mbox{\hyperlink{baseexternalclient_8js_ae1bcf25458fb1614e36ebb008cc4f920}{exports.\+CLOUD\+\_\+\+RESOURCE\+\_\+\+MANAGER}} = \mbox{\hyperlink{baseexternalclient_8js_af63a06e68fb099d7093b4f626505f67f}{exports.\+EXTERNAL\+\_\+\+ACCOUNT\+\_\+\+TYPE}} = \mbox{\hyperlink{baseexternalclient_8js_ac3dc07dc02ba13e9707301bbe7e326f0}{exports.\+EXPIRATION\+\_\+\+TIME\+\_\+\+OFFSET}} = void 0
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{baseexternalclient_8js_ae3aac9dcd83d0a6524a3db7f78ecdce3}{stream}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}stream"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{baseexternalclient_8js_a9a71c497cb0105a7c4d189cdcbeb41c7}{authclient\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./authclient"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{baseexternalclient_8js_aed84e6a8dd47163697d602a45f4cf675}{sts}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./stscredentials"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{baseexternalclient_8js_a6af3fa6e24c6a46faf4552f3a2ad8783}{util\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../util"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{baseexternalclient_8js_a9e961b123750db457d1dfdd601a5922f}{STS\+\_\+\+GRANT\+\_\+\+TYPE}} = \textquotesingle{}urn\+:ietf\+:params\+:oauth\+:grant-\/type\+:token-\/exchange\textquotesingle{}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{baseexternalclient_8js_abd38bae0d786fc063e9e0870dd3c3cb7}{STS\+\_\+\+REQUEST\+\_\+\+TOKEN\+\_\+\+TYPE}} = \textquotesingle{}urn\+:ietf\+:params\+:oauth\+:token-\/type\+:access\+\_\+token\textquotesingle{}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{baseexternalclient_8js_a545d79b3be01df2399efb6a82e47f67d}{DEFAULT\+\_\+\+OAUTH\+\_\+\+SCOPE}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{baseexternalclient_8js_ac3dc07dc02ba13e9707301bbe7e326f0}{EXPIRATION\+\_\+\+TIME\+\_\+\+OFFSET}} = 5 \texorpdfstring{$\ast$}{*} 60 \texorpdfstring{$\ast$}{*} 1000
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{baseexternalclient_8js_af63a06e68fb099d7093b4f626505f67f}{EXTERNAL\+\_\+\+ACCOUNT\+\_\+\+TYPE}} = \textquotesingle{}external\+\_\+account\textquotesingle{}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{baseexternalclient_8js_ae1bcf25458fb1614e36ebb008cc4f920}{CLOUD\+\_\+\+RESOURCE\+\_\+\+MANAGER}}
+\item 
+var \mbox{\hyperlink{baseexternalclient_8js_a48c2e2fb315b8708b1b32789cb4a1c27}{authclient\+\_\+2}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./authclient"{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{baseexternalclient_8js_a447cd4ee0c75db2d366d333c1c6ab92b}\index{baseexternalclient.js@{baseexternalclient.js}!\_\_classPrivateFieldGet@{\_\_classPrivateFieldGet}}
+\index{\_\_classPrivateFieldGet@{\_\_classPrivateFieldGet}!baseexternalclient.js@{baseexternalclient.js}}
+\doxysubsubsection{\texorpdfstring{\_\_classPrivateFieldGet}{\_\_classPrivateFieldGet}}
+{\footnotesize\ttfamily \label{baseexternalclient_8js_a447cd4ee0c75db2d366d333c1c6ab92b} 
+var \+\_\+\+\_\+class\+Private\+Field\+Get}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ (\textcolor{keyword}{this}\ \&\&\ this.\mbox{\hyperlink{baseexternalclient_8js_a447cd4ee0c75db2d366d333c1c6ab92b}{\_\_classPrivateFieldGet}})\ ||\ \textcolor{keyword}{function}\ (receiver,\ \mbox{\hyperlink{asynckit_2lib_2state_8js_a7e1b0ba367facd663d59372bd204ea01}{state}},\ kind,\ \mbox{\hyperlink{uuidv1_8min_8js_a9cf09a2972472098a4c689fd988f4dfc}{f}})\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (kind\ ===\ \textcolor{stringliteral}{"{}a"{}}\ \&\&\ !\mbox{\hyperlink{uuidv1_8min_8js_a9cf09a2972472098a4c689fd988f4dfc}{f}})\ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ TypeError(\textcolor{stringliteral}{"{}Private\ accessor\ was\ defined\ without\ a\ getter"{}});}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (typeof\ \mbox{\hyperlink{asynckit_2lib_2state_8js_a7e1b0ba367facd663d59372bd204ea01}{state}}\ ===\ \textcolor{stringliteral}{"{}function"{}}\ ?\ receiver\ !==\ \mbox{\hyperlink{asynckit_2lib_2state_8js_a7e1b0ba367facd663d59372bd204ea01}{state}}\ ||\ !\mbox{\hyperlink{uuidv1_8min_8js_a9cf09a2972472098a4c689fd988f4dfc}{f}}\ :\ !\mbox{\hyperlink{asynckit_2lib_2state_8js_a7e1b0ba367facd663d59372bd204ea01}{state}}.has(receiver))\ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ TypeError(\textcolor{stringliteral}{"{}Cannot\ read\ private\ member\ from\ an\ object\ whose\ class\ did\ not\ declare\ it"{}});}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ kind\ ===\ \textcolor{stringliteral}{"{}m"{}}\ ?\ \mbox{\hyperlink{uuidv1_8min_8js_a9cf09a2972472098a4c689fd988f4dfc}{f}}\ :\ kind\ ===\ \textcolor{stringliteral}{"{}a"{}}\ ?\ \mbox{\hyperlink{uuidv1_8min_8js_a9cf09a2972472098a4c689fd988f4dfc}{f}}.call(receiver)\ :\ \mbox{\hyperlink{uuidv1_8min_8js_a9cf09a2972472098a4c689fd988f4dfc}{f}}\ ?\ \mbox{\hyperlink{uuidv1_8min_8js_a9cf09a2972472098a4c689fd988f4dfc}{f}}.value\ :\ \mbox{\hyperlink{asynckit_2lib_2state_8js_a7e1b0ba367facd663d59372bd204ea01}{state}}.get(receiver);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{baseexternalclient_8js_a9c0a3b4ec16c0e88e32e52464cf3423e}\index{baseexternalclient.js@{baseexternalclient.js}!\_\_classPrivateFieldSet@{\_\_classPrivateFieldSet}}
+\index{\_\_classPrivateFieldSet@{\_\_classPrivateFieldSet}!baseexternalclient.js@{baseexternalclient.js}}
+\doxysubsubsection{\texorpdfstring{\_\_classPrivateFieldSet}{\_\_classPrivateFieldSet}}
+{\footnotesize\ttfamily \label{baseexternalclient_8js_a9c0a3b4ec16c0e88e32e52464cf3423e} 
+var \+\_\+\+\_\+class\+Private\+Field\+Set}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ (\textcolor{keyword}{this}\ \&\&\ this.\mbox{\hyperlink{baseexternalclient_8js_a9c0a3b4ec16c0e88e32e52464cf3423e}{\_\_classPrivateFieldSet}})\ ||\ \textcolor{keyword}{function}\ (receiver,\ \mbox{\hyperlink{asynckit_2lib_2state_8js_a7e1b0ba367facd663d59372bd204ea01}{state}},\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}},\ kind,\ \mbox{\hyperlink{uuidv1_8min_8js_a9cf09a2972472098a4c689fd988f4dfc}{f}})\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (kind\ ===\ \textcolor{stringliteral}{"{}m"{}})\ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ TypeError(\textcolor{stringliteral}{"{}Private\ method\ is\ not\ writable"{}});}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (kind\ ===\ \textcolor{stringliteral}{"{}a"{}}\ \&\&\ !\mbox{\hyperlink{uuidv1_8min_8js_a9cf09a2972472098a4c689fd988f4dfc}{f}})\ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ TypeError(\textcolor{stringliteral}{"{}Private\ accessor\ was\ defined\ without\ a\ setter"{}});}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (typeof\ \mbox{\hyperlink{asynckit_2lib_2state_8js_a7e1b0ba367facd663d59372bd204ea01}{state}}\ ===\ \textcolor{stringliteral}{"{}function"{}}\ ?\ receiver\ !==\ \mbox{\hyperlink{asynckit_2lib_2state_8js_a7e1b0ba367facd663d59372bd204ea01}{state}}\ ||\ !\mbox{\hyperlink{uuidv1_8min_8js_a9cf09a2972472098a4c689fd988f4dfc}{f}}\ :\ !\mbox{\hyperlink{asynckit_2lib_2state_8js_a7e1b0ba367facd663d59372bd204ea01}{state}}.has(receiver))\ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ TypeError(\textcolor{stringliteral}{"{}Cannot\ write\ private\ member\ to\ an\ object\ whose\ class\ did\ not\ declare\ it"{}});}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ (kind\ ===\ \textcolor{stringliteral}{"{}a"{}}\ ?\ \mbox{\hyperlink{uuidv1_8min_8js_a9cf09a2972472098a4c689fd988f4dfc}{f}}.call(receiver,\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}})\ :\ \mbox{\hyperlink{uuidv1_8min_8js_a9cf09a2972472098a4c689fd988f4dfc}{f}}\ ?\ \mbox{\hyperlink{uuidv1_8min_8js_a9cf09a2972472098a4c689fd988f4dfc}{f}}.value\ =\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}\ :\ \mbox{\hyperlink{asynckit_2lib_2state_8js_a7e1b0ba367facd663d59372bd204ea01}{state}}.set(receiver,\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}})),\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{baseexternalclient_8js_a80e9a534fae049c9db83545a06bf3bd3}\index{baseexternalclient.js@{baseexternalclient.js}!\_BaseExternalAccountClient\_instances@{\_BaseExternalAccountClient\_instances}}
+\index{\_BaseExternalAccountClient\_instances@{\_BaseExternalAccountClient\_instances}!baseexternalclient.js@{baseexternalclient.js}}
+\doxysubsubsection{\texorpdfstring{\_BaseExternalAccountClient\_instances}{\_BaseExternalAccountClient\_instances}}
+{\footnotesize\ttfamily \label{baseexternalclient_8js_a80e9a534fae049c9db83545a06bf3bd3} 
+\+\_\+\+Base\+External\+Account\+Client\+\_\+instances = new Weak\+Set()}
+
+\Hypertarget{baseexternalclient_8js_a09b7171e7d0420f0f3d0a4cd01bf9392}\index{baseexternalclient.js@{baseexternalclient.js}!\_BaseExternalAccountClient\_internalRefreshAccessTokenAsync@{\_BaseExternalAccountClient\_internalRefreshAccessTokenAsync}}
+\index{\_BaseExternalAccountClient\_internalRefreshAccessTokenAsync@{\_BaseExternalAccountClient\_internalRefreshAccessTokenAsync}!baseexternalclient.js@{baseexternalclient.js}}
+\doxysubsubsection{\texorpdfstring{\_BaseExternalAccountClient\_internalRefreshAccessTokenAsync}{\_BaseExternalAccountClient\_internalRefreshAccessTokenAsync}}
+{\footnotesize\ttfamily \label{baseexternalclient_8js_a09b7171e7d0420f0f3d0a4cd01bf9392} 
+\+\_\+\+Base\+External\+Account\+Client\+\_\+internal\+Refresh\+Access\+Token\+Async}
+
+\Hypertarget{baseexternalclient_8js_aa05cdb0f5572a0d71e715c9360a56943}\index{baseexternalclient.js@{baseexternalclient.js}!\_BaseExternalAccountClient\_pendingAccessToken@{\_BaseExternalAccountClient\_pendingAccessToken}}
+\index{\_BaseExternalAccountClient\_pendingAccessToken@{\_BaseExternalAccountClient\_pendingAccessToken}!baseexternalclient.js@{baseexternalclient.js}}
+\doxysubsubsection{\texorpdfstring{\_BaseExternalAccountClient\_pendingAccessToken}{\_BaseExternalAccountClient\_pendingAccessToken}}
+{\footnotesize\ttfamily \label{baseexternalclient_8js_aa05cdb0f5572a0d71e715c9360a56943} 
+\+\_\+\+Base\+External\+Account\+Client\+\_\+pending\+Access\+Token = new \mbox{\hyperlink{__get_tag_8js_a7a0af2b1504d35a612ef29c54dcdef19}{Weak\+Map}}()}
+
+\Hypertarget{baseexternalclient_8js_a9a71c497cb0105a7c4d189cdcbeb41c7}\index{baseexternalclient.js@{baseexternalclient.js}!authclient\_1@{authclient\_1}}
+\index{authclient\_1@{authclient\_1}!baseexternalclient.js@{baseexternalclient.js}}
+\doxysubsubsection{\texorpdfstring{authclient\_1}{authclient\_1}}
+{\footnotesize\ttfamily \label{baseexternalclient_8js_a9a71c497cb0105a7c4d189cdcbeb41c7} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} authclient\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./authclient"{})}
+
+\Hypertarget{baseexternalclient_8js_a48c2e2fb315b8708b1b32789cb4a1c27}\index{baseexternalclient.js@{baseexternalclient.js}!authclient\_2@{authclient\_2}}
+\index{authclient\_2@{authclient\_2}!baseexternalclient.js@{baseexternalclient.js}}
+\doxysubsubsection{\texorpdfstring{authclient\_2}{authclient\_2}}
+{\footnotesize\ttfamily \label{baseexternalclient_8js_a48c2e2fb315b8708b1b32789cb4a1c27} 
+var authclient\+\_\+2 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./authclient"{})}
+
+For backwards compatibility. \Hypertarget{baseexternalclient_8js_a266c148dde9da3eb838aaa9ec3e72b31}\index{baseexternalclient.js@{baseexternalclient.js}!BaseExternalAccountClient@{BaseExternalAccountClient}}
+\index{BaseExternalAccountClient@{BaseExternalAccountClient}!baseexternalclient.js@{baseexternalclient.js}}
+\doxysubsubsection{\texorpdfstring{BaseExternalAccountClient}{BaseExternalAccountClient}}
+{\footnotesize\ttfamily \label{baseexternalclient_8js_a266c148dde9da3eb838aaa9ec3e72b31} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} Base\+External\+Account\+Client = \mbox{\hyperlink{authclient_8js_a227980d26b88dfe1dae37e07d6572565}{exports.\+DEFAULT\+\_\+\+UNIVERSE}} = \mbox{\hyperlink{baseexternalclient_8js_ae1bcf25458fb1614e36ebb008cc4f920}{exports.\+CLOUD\+\_\+\+RESOURCE\+\_\+\+MANAGER}} = \mbox{\hyperlink{baseexternalclient_8js_af63a06e68fb099d7093b4f626505f67f}{exports.\+EXTERNAL\+\_\+\+ACCOUNT\+\_\+\+TYPE}} = \mbox{\hyperlink{baseexternalclient_8js_ac3dc07dc02ba13e9707301bbe7e326f0}{exports.\+EXPIRATION\+\_\+\+TIME\+\_\+\+OFFSET}} = void 0}
+
+\Hypertarget{baseexternalclient_8js_ae1bcf25458fb1614e36ebb008cc4f920}\index{baseexternalclient.js@{baseexternalclient.js}!CLOUD\_RESOURCE\_MANAGER@{CLOUD\_RESOURCE\_MANAGER}}
+\index{CLOUD\_RESOURCE\_MANAGER@{CLOUD\_RESOURCE\_MANAGER}!baseexternalclient.js@{baseexternalclient.js}}
+\doxysubsubsection{\texorpdfstring{CLOUD\_RESOURCE\_MANAGER}{CLOUD\_RESOURCE\_MANAGER}}
+{\footnotesize\ttfamily \label{baseexternalclient_8js_ae1bcf25458fb1614e36ebb008cc4f920} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} CLOUD\+\_\+\+RESOURCE\+\_\+\+MANAGER}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{stringliteral}{'https:}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{const\ WORKFORCE\_AUDIENCE\_PATTERN\ =\ '}}
+\DoxyCodeLine{\textcolor{keyword}{const}\ \mbox{\hyperlink{external_account_authorized_user_client_8js_a13ff36530d8d18bc8f409911211aeb9c}{DEFAULT\_TOKEN\_URL}}\ =\ \textcolor{stringliteral}{'https:}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{const\ pkg\ =\ require('}../../../package.json\textcolor{stringliteral}{')}}
+
+\end{DoxyCode}
+Cloud resource manager URL used to retrieve project information.
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000037}{Deprecated}}]use {\ttfamily \doxylink{}{Base\+External\+Account\+Client.\+cloud\+Resource\+Manager\+URL}} instead \end{DoxyRefDesc}
+\Hypertarget{baseexternalclient_8js_a545d79b3be01df2399efb6a82e47f67d}\index{baseexternalclient.js@{baseexternalclient.js}!DEFAULT\_OAUTH\_SCOPE@{DEFAULT\_OAUTH\_SCOPE}}
+\index{DEFAULT\_OAUTH\_SCOPE@{DEFAULT\_OAUTH\_SCOPE}!baseexternalclient.js@{baseexternalclient.js}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_OAUTH\_SCOPE}{DEFAULT\_OAUTH\_SCOPE}}
+{\footnotesize\ttfamily \label{baseexternalclient_8js_a545d79b3be01df2399efb6a82e47f67d} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} DEFAULT\+\_\+\+OAUTH\+\_\+\+SCOPE}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{stringliteral}{'https:}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{const\ DEFAULT\_TOKEN\_LIFESPAN\ =\ 3600}}
+
+\end{DoxyCode}
+The default OAuth scope to request when none is provided. \Hypertarget{baseexternalclient_8js_ac3dc07dc02ba13e9707301bbe7e326f0}\index{baseexternalclient.js@{baseexternalclient.js}!EXPIRATION\_TIME\_OFFSET@{EXPIRATION\_TIME\_OFFSET}}
+\index{EXPIRATION\_TIME\_OFFSET@{EXPIRATION\_TIME\_OFFSET}!baseexternalclient.js@{baseexternalclient.js}}
+\doxysubsubsection{\texorpdfstring{EXPIRATION\_TIME\_OFFSET}{EXPIRATION\_TIME\_OFFSET}}
+{\footnotesize\ttfamily \label{baseexternalclient_8js_ac3dc07dc02ba13e9707301bbe7e326f0} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} EXPIRATION\+\_\+\+TIME\+\_\+\+OFFSET = 5 \texorpdfstring{$\ast$}{*} 60 \texorpdfstring{$\ast$}{*} 1000}
+
+Offset to take into account network delays and server clock skews. \Hypertarget{baseexternalclient_8js_af63a06e68fb099d7093b4f626505f67f}\index{baseexternalclient.js@{baseexternalclient.js}!EXTERNAL\_ACCOUNT\_TYPE@{EXTERNAL\_ACCOUNT\_TYPE}}
+\index{EXTERNAL\_ACCOUNT\_TYPE@{EXTERNAL\_ACCOUNT\_TYPE}!baseexternalclient.js@{baseexternalclient.js}}
+\doxysubsubsection{\texorpdfstring{EXTERNAL\_ACCOUNT\_TYPE}{EXTERNAL\_ACCOUNT\_TYPE}}
+{\footnotesize\ttfamily \label{baseexternalclient_8js_af63a06e68fb099d7093b4f626505f67f} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} EXTERNAL\+\_\+\+ACCOUNT\+\_\+\+TYPE = \textquotesingle{}external\+\_\+account\textquotesingle{}}
+
+The credentials JSON file type for external account clients. There are 3 types of JSON configs\+:
+\begin{DoxyEnumerate}
+\item authorized\+\_\+user =\texorpdfstring{$>$}{>} Google end user credential
+\item service\+\_\+account =\texorpdfstring{$>$}{>} Google service account credential
+\item external\+\_\+\+Account =\texorpdfstring{$>$}{>} non-\/\+GCP service (eg. AWS, Azure, K8s) 
+\end{DoxyEnumerate}\Hypertarget{baseexternalclient_8js_ae3aac9dcd83d0a6524a3db7f78ecdce3}\index{baseexternalclient.js@{baseexternalclient.js}!stream@{stream}}
+\index{stream@{stream}!baseexternalclient.js@{baseexternalclient.js}}
+\doxysubsubsection{\texorpdfstring{stream}{stream}}
+{\footnotesize\ttfamily \label{baseexternalclient_8js_ae3aac9dcd83d0a6524a3db7f78ecdce3} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} stream = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}stream"{})}
+
+\Hypertarget{baseexternalclient_8js_ae2475e10618961c050dcba04e8c42331}\index{baseexternalclient.js@{baseexternalclient.js}!strict@{strict}}
+\index{strict@{strict}!baseexternalclient.js@{baseexternalclient.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{baseexternalclient_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+
+\Hypertarget{baseexternalclient_8js_aed84e6a8dd47163697d602a45f4cf675}\index{baseexternalclient.js@{baseexternalclient.js}!sts@{sts}}
+\index{sts@{sts}!baseexternalclient.js@{baseexternalclient.js}}
+\doxysubsubsection{\texorpdfstring{sts}{sts}}
+{\footnotesize\ttfamily \label{baseexternalclient_8js_aed84e6a8dd47163697d602a45f4cf675} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} sts = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./stscredentials"{})}
+
+\Hypertarget{baseexternalclient_8js_a9e961b123750db457d1dfdd601a5922f}\index{baseexternalclient.js@{baseexternalclient.js}!STS\_GRANT\_TYPE@{STS\_GRANT\_TYPE}}
+\index{STS\_GRANT\_TYPE@{STS\_GRANT\_TYPE}!baseexternalclient.js@{baseexternalclient.js}}
+\doxysubsubsection{\texorpdfstring{STS\_GRANT\_TYPE}{STS\_GRANT\_TYPE}}
+{\footnotesize\ttfamily \label{baseexternalclient_8js_a9e961b123750db457d1dfdd601a5922f} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} STS\+\_\+\+GRANT\+\_\+\+TYPE = \textquotesingle{}urn\+:ietf\+:params\+:oauth\+:grant-\/type\+:token-\/exchange\textquotesingle{}}
+
+The required token exchange grant\+\_\+type\+: rfc8693\#section-\/2.\+1 \Hypertarget{baseexternalclient_8js_abd38bae0d786fc063e9e0870dd3c3cb7}\index{baseexternalclient.js@{baseexternalclient.js}!STS\_REQUEST\_TOKEN\_TYPE@{STS\_REQUEST\_TOKEN\_TYPE}}
+\index{STS\_REQUEST\_TOKEN\_TYPE@{STS\_REQUEST\_TOKEN\_TYPE}!baseexternalclient.js@{baseexternalclient.js}}
+\doxysubsubsection{\texorpdfstring{STS\_REQUEST\_TOKEN\_TYPE}{STS\_REQUEST\_TOKEN\_TYPE}}
+{\footnotesize\ttfamily \label{baseexternalclient_8js_abd38bae0d786fc063e9e0870dd3c3cb7} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} STS\+\_\+\+REQUEST\+\_\+\+TOKEN\+\_\+\+TYPE = \textquotesingle{}urn\+:ietf\+:params\+:oauth\+:token-\/type\+:access\+\_\+token\textquotesingle{}}
+
+The requested token exchange requested\+\_\+token\+\_\+type\+: rfc8693\#section-\/2.\+1 \Hypertarget{baseexternalclient_8js_a6af3fa6e24c6a46faf4552f3a2ad8783}\index{baseexternalclient.js@{baseexternalclient.js}!util\_1@{util\_1}}
+\index{util\_1@{util\_1}!baseexternalclient.js@{baseexternalclient.js}}
+\doxysubsubsection{\texorpdfstring{util\_1}{util\_1}}
+{\footnotesize\ttfamily \label{baseexternalclient_8js_a6af3fa6e24c6a46faf4552f3a2ad8783} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} util\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../util"{})}
+

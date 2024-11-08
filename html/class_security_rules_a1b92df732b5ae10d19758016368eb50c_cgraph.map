@@ -1,0 +1,7 @@
+<map id="SecurityRules::getRulesetForRelease" name="SecurityRules::getRulesetForRelease">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,23,180,64"/>
+<area shape="rect" id="Node000002" href="$class_security_rules.html#a8e08a864939c59bc3adb8ff3bbe78a73" title=" " alt="" coords="228,5,402,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="180,31,212,27,212,33,180,36"/>
+<area shape="rect" id="Node000003" href="$security-rules_8js.html#a8275de8c80b295058e3d69e1d6b270e5" title=" " alt="" coords="249,55,381,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="180,50,234,56,233,61,180,56"/>
+</map>

@@ -1,0 +1,117 @@
+\doxysection{Compression\+Filter Class Reference}
+\hypertarget{class_compression_filter}{}\label{class_compression_filter}\index{CompressionFilter@{CompressionFilter}}
+
+
+Inheritance diagram for Compression\+Filter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{class_compression_filter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Compression\+Filter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{class_compression_filter__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_compression_filter_a7e28b2d66b414f95b84384d6d6cae2de}{constructor}} (channel\+Options, shared\+Filter\+Config)
+\item 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{class_compression_filter_a5b360b7eee3782d027e099f7784cbb59}{send\+Metadata}} (metadata)
+\item 
+\mbox{\hyperlink{class_compression_filter_abb783dd9db527ce9809ea20492b46160}{receive\+Metadata}} (metadata)
+\item 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{class_compression_filter_a786f12aaf0cbc6f2845d849264eb47f3}{send\+Message}} (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}})
+\item 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{class_compression_filter_a6409d030979ac8e2da8a7ee3d96d58ef}{receive\+Message}} (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_compression_filter_a7e28b2d66b414f95b84384d6d6cae2de}\index{CompressionFilter@{CompressionFilter}!constructor@{constructor}}
+\index{constructor@{constructor}!CompressionFilter@{CompressionFilter}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_compression_filter_a7e28b2d66b414f95b84384d6d6cae2de} 
+Compression\+Filter\+::constructor (\begin{DoxyParamCaption}\item[{}]{channel\+Options}{, }\item[{}]{shared\+Filter\+Config}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+There are two possible situations here\+: 1) We don\textquotesingle{}t have any info yet from the server about what compression it supports In that case we should just use what the client tells us to use 2) We\textquotesingle{}ve previously received a response from the server including a grpc-\/accept-\/encoding header In that case we only want to use the encoding chosen by the client if the server supports it
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{logger_2dist_2esm_2index_8esm5_8js_a0adf123df8967a14b5bdd9ff3bbe2d0c}{\+\_\+a}}, \mbox{\hyperlink{logging_8js_a53284eb14d953f3ba58806fc49cd4f7c}{\+\_\+b}}, \mbox{\hyperlink{logging_8js_aa9188bfce96541e3026ad83bee2ab87c}{\+\_\+c}}, \mbox{\hyperlink{compression-filter_8js_ad82ada84f6b04bb3c04b9cfcb995eca1}{compression\+\_\+algorithms\+\_\+1}}, \mbox{\hyperlink{compression-filter_8js_ad33cb6840349d3bc93f4fe9de15a6f8f}{constants\+\_\+1}}, \mbox{\hyperlink{compression-filter_8js_ab83c492459e7f40135e0bdafbea3afc1}{get\+Compression\+Handler()}}, \mbox{\hyperlink{grpc_8js_a42e9afda263e8798e687bf032e968ff4}{grpc}}, \mbox{\hyperlink{compression-filter_8js_ac4bf31841e72a2a924ce599e9ee4123e}{is\+Compression\+Algorithm\+Key}}, \mbox{\hyperlink{compression-filter_8js_ab53afa7b9c9aef77e950713c8b54c98c}{logging}}, \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{class_compression_filter_a7e28b2d66b414f95b84384d6d6cae2de_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_compression_filter_a6409d030979ac8e2da8a7ee3d96d58ef}\index{CompressionFilter@{CompressionFilter}!receiveMessage@{receiveMessage}}
+\index{receiveMessage@{receiveMessage}!CompressionFilter@{CompressionFilter}}
+\doxysubsubsection{\texorpdfstring{receiveMessage()}{receiveMessage()}}
+{\footnotesize\ttfamily \label{class_compression_filter_a6409d030979ac8e2da8a7ee3d96d58ef} 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} Compression\+Filter\+::receive\+Message (\begin{DoxyParamCaption}\item[{}]{message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}.
+
+\Hypertarget{class_compression_filter_abb783dd9db527ce9809ea20492b46160}\index{CompressionFilter@{CompressionFilter}!receiveMetadata@{receiveMetadata}}
+\index{receiveMetadata@{receiveMetadata}!CompressionFilter@{CompressionFilter}}
+\doxysubsubsection{\texorpdfstring{receiveMetadata()}{receiveMetadata()}}
+{\footnotesize\ttfamily \label{class_compression_filter_abb783dd9db527ce9809ea20492b46160} 
+Compression\+Filter\+::receive\+Metadata (\begin{DoxyParamCaption}\item[{}]{metadata}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aace6cbf6b92481670f8b8421548f7584}{encoding}}, and \mbox{\hyperlink{compression-filter_8js_ab83c492459e7f40135e0bdafbea3afc1}{get\+Compression\+Handler()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{class_compression_filter_abb783dd9db527ce9809ea20492b46160_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_compression_filter_a786f12aaf0cbc6f2845d849264eb47f3}\index{CompressionFilter@{CompressionFilter}!sendMessage@{sendMessage}}
+\index{sendMessage@{sendMessage}!CompressionFilter@{CompressionFilter}}
+\doxysubsubsection{\texorpdfstring{sendMessage()}{sendMessage()}}
+{\footnotesize\ttfamily \label{class_compression_filter_a786f12aaf0cbc6f2845d849264eb47f3} 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} Compression\+Filter\+::send\+Message (\begin{DoxyParamCaption}\item[{}]{message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{logger_2dist_2esm_2index_8esm5_8js_a0adf123df8967a14b5bdd9ff3bbe2d0c}{\+\_\+a}}, \mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}, \mbox{\hyperlink{node2json_8js_acd97ec39370eb7c8149d807099b0bd68}{compress()}}, \mbox{\hyperlink{compression-filter_8js_ad33cb6840349d3bc93f4fe9de15a6f8f}{constants\+\_\+1}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}, \mbox{\hyperlink{response_8js_a88d7310f8a18b3e16f4020168641b86a}{send}}, and \mbox{\hyperlink{ordered-map_8min_8js_aa4a39500e3f754a8f2e1fd50b9ae523c}{size}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_compression_filter_a786f12aaf0cbc6f2845d849264eb47f3_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_compression_filter_a5b360b7eee3782d027e099f7784cbb59}\index{CompressionFilter@{CompressionFilter}!sendMetadata@{sendMetadata}}
+\index{sendMetadata@{sendMetadata}!CompressionFilter@{CompressionFilter}}
+\doxysubsubsection{\texorpdfstring{sendMetadata()}{sendMetadata()}}
+{\footnotesize\ttfamily \label{class_compression_filter_a5b360b7eee3782d027e099f7784cbb59} 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} Compression\+Filter\+::send\+Metadata (\begin{DoxyParamCaption}\item[{}]{metadata}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7f2cb2fcdd79bf72cefd29b7bc2d10fa}{headers}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/@grpc/grpc-\/js/build/src/\mbox{\hyperlink{compression-filter_8js}{compression-\/filter.\+js}}\end{DoxyCompactItemize}

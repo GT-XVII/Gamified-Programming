@@ -1,0 +1,128 @@
+\doxysection{backend/node\+\_\+modules/@google-\/cloud/storage/build/esm/src/nodejs-\/common/util.js File Reference}
+\hypertarget{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js}{}\label{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js}\index{backend/node\_modules/"@google-\/cloud/storage/build/esm/src/nodejs-\/common/util.js@{backend/node\_modules/"@google-\/cloud/storage/build/esm/src/nodejs-\/common/util.js}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_api_error}{Api\+Error}}
+\item 
+class \mbox{\hyperlink{class_partial_failure_error}{Partial\+Failure\+Error}}
+\item 
+class \mbox{\hyperlink{class_util}{Util}}
+\item 
+class \mbox{\hyperlink{class_progress_stream}{Progress\+Stream}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a59be084da8908b7d77ff34b25cd84488}{import}} \{ \mbox{\hyperlink{_0dgoogle-cloud_2projectify_2build_2src_2index_8js_a39a1a57184d6ccf12e0999e7deda065d}{replace\+Project\+Id\+Token}}, \mbox{\hyperlink{class_missing_project_id_error}{Missing\+Project\+Id\+Error}}, \} from \textquotesingle{}@google-\/cloud/projectify\textquotesingle{}
+\item 
+\mbox{\hyperlink{component_2dist_2esm_2index_8esm2017_8js_a953be46b94f595d839e88a6d3d270309}{import}} \texorpdfstring{$\ast$}{*}as \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2cjs_2src_2nodejs-common_2util_8js_afc0030e7fba12b9638b964f985c605f4}{html\+Entities}} from \mbox{\hyperlink{escape-html_2index_8js_a8f99bc655183db169e126fc155ceb631}{html}} \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a7eb30deac331df9e327498520f885925}{entities}}
+\item 
+\mbox{\hyperlink{component_2dist_2esm_2index_8esm2017_8js_a953be46b94f595d839e88a6d3d270309}{import}} \mbox{\hyperlink{streaming_8js_a701da608ab0ff00f42f6b462046b5e1f}{retry\+Request}} from \mbox{\hyperlink{esm_2src_2bucket_8js_a451094c82c509e4de33de7f8df781a35}{retry}} \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}}
+\item 
+\mbox{\hyperlink{component_2dist_2esm_2index_8esm2017_8js_a953be46b94f595d839e88a6d3d270309}{import}} \texorpdfstring{$\ast$}{*}as uuid from \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_adcc488972b920eda05a63018d44a2a0d}{uuid}}
+\item 
+\mbox{\hyperlink{component_2dist_2esm_2index_8esm2017_8js_a953be46b94f595d839e88a6d3d270309}{import}} duplexify from \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a9a261fbe94b374c700a4fec6c8459f0a}{duplexify}}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_af6b5c52a8c176ed1dddc0ffd7930a03a}{package\+Json}} = get\+Package\+JSON()
+\item 
+export \mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a3ee7715e4a17718b1db76be0ad7f742d}{GCCL\+\_\+\+GCS\+\_\+\+CMD\+\_\+\+KEY}} = \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2uuid_2dist_2esm-browser_2stringify_8js_adbcbd46c1ee4745c23a2274bf70afe77}{Symbol.\+for}}(\textquotesingle{}GCCL\+\_\+\+GCS\+\_\+\+CMD\textquotesingle{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_ac9cc7fe3c5f9333e18f68344f8aa89f1}{request\+Defaults}}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_ac7bf979f32ddb6b1d44805a21542439b}{AUTO\+\_\+\+RETRY\+\_\+\+DEFAULT}} = true
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_aa84cd8e9c2f59d54f265e006f5ad2f06}{MAX\+\_\+\+RETRY\+\_\+\+DEFAULT}} = 3
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a523848c9ac351b2c7735cac51657c4b5}{util}} = new \mbox{\hyperlink{class_util}{Util}}()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_ac7bf979f32ddb6b1d44805a21542439b}\index{util.js@{util.js}!AUTO\_RETRY\_DEFAULT@{AUTO\_RETRY\_DEFAULT}}
+\index{AUTO\_RETRY\_DEFAULT@{AUTO\_RETRY\_DEFAULT}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{AUTO\_RETRY\_DEFAULT}{AUTO\_RETRY\_DEFAULT}}
+{\footnotesize\ttfamily \label{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_ac7bf979f32ddb6b1d44805a21542439b} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} AUTO\+\_\+\+RETRY\+\_\+\+DEFAULT = true\hspace{0.3cm}{\ttfamily [private]}}
+
+Default behavior\+: Automatically retry retriable server errors.
+
+@const \{boolean\} \Hypertarget{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a9a261fbe94b374c700a4fec6c8459f0a}\index{util.js@{util.js}!duplexify@{duplexify}}
+\index{duplexify@{duplexify}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{duplexify}{duplexify}}
+{\footnotesize\ttfamily \label{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a9a261fbe94b374c700a4fec6c8459f0a} 
+\mbox{\hyperlink{component_2dist_2esm_2index_8esm2017_8js_a953be46b94f595d839e88a6d3d270309}{import}} duplexify from duplexify}
+
+\Hypertarget{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a7eb30deac331df9e327498520f885925}\index{util.js@{util.js}!entities@{entities}}
+\index{entities@{entities}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{entities}{entities}}
+{\footnotesize\ttfamily \label{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a7eb30deac331df9e327498520f885925} 
+\mbox{\hyperlink{component_2dist_2esm_2index_8esm2017_8js_a953be46b94f595d839e88a6d3d270309}{import}}\texorpdfstring{$\ast$}{*} as \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2cjs_2src_2nodejs-common_2util_8js_afc0030e7fba12b9638b964f985c605f4}{html\+Entities}} from \mbox{\hyperlink{escape-html_2index_8js_a8f99bc655183db169e126fc155ceb631}{html}} entities}
+
+\Hypertarget{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a3ee7715e4a17718b1db76be0ad7f742d}\index{util.js@{util.js}!GCCL\_GCS\_CMD\_KEY@{GCCL\_GCS\_CMD\_KEY}}
+\index{GCCL\_GCS\_CMD\_KEY@{GCCL\_GCS\_CMD\_KEY}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{GCCL\_GCS\_CMD\_KEY}{GCCL\_GCS\_CMD\_KEY}}
+{\footnotesize\ttfamily \label{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a3ee7715e4a17718b1db76be0ad7f742d} 
+export \mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} GCCL\+\_\+\+GCS\+\_\+\+CMD\+\_\+\+KEY = \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2uuid_2dist_2esm-browser_2stringify_8js_adbcbd46c1ee4745c23a2274bf70afe77}{Symbol.\+for}}(\textquotesingle{}GCCL\+\_\+\+GCS\+\_\+\+CMD\textquotesingle{})}
+
+\doxylink{class_a}{A} unique symbol for providing a {\ttfamily gccl-\/gcs-\/cmd} value for the {\ttfamily X-\/\+Goog-\/\+API-\/\+Client} header.
+
+E.\+g. the {\ttfamily V} in {\ttfamily X-\/\+Goog-\/\+API-\/\+Client\+: gccl-\/gcs-\/cmd/V} \Hypertarget{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a59be084da8908b7d77ff34b25cd84488}\index{util.js@{util.js}!import@{import}}
+\index{import@{import}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{import}{import}}
+{\footnotesize\ttfamily \label{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a59be084da8908b7d77ff34b25cd84488} 
+import \{ \mbox{\hyperlink{_0dgoogle-cloud_2projectify_2build_2src_2index_8js_a39a1a57184d6ccf12e0999e7deda065d}{replace\+Project\+Id\+Token}}, \mbox{\hyperlink{class_missing_project_id_error}{Missing\+Project\+Id\+Error}}, \} from \textquotesingle{}@google-\/cloud/projectify\textquotesingle{}}
+
+\Hypertarget{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_aa84cd8e9c2f59d54f265e006f5ad2f06}\index{util.js@{util.js}!MAX\_RETRY\_DEFAULT@{MAX\_RETRY\_DEFAULT}}
+\index{MAX\_RETRY\_DEFAULT@{MAX\_RETRY\_DEFAULT}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{MAX\_RETRY\_DEFAULT}{MAX\_RETRY\_DEFAULT}}
+{\footnotesize\ttfamily \label{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_aa84cd8e9c2f59d54f265e006f5ad2f06} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} MAX\+\_\+\+RETRY\+\_\+\+DEFAULT = 3\hspace{0.3cm}{\ttfamily [private]}}
+
+Default behavior\+: Only attempt to retry retriable errors 3 times.
+
+@const \{number\} \Hypertarget{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_af6b5c52a8c176ed1dddc0ffd7930a03a}\index{util.js@{util.js}!packageJson@{packageJson}}
+\index{packageJson@{packageJson}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{packageJson}{packageJson}}
+{\footnotesize\ttfamily \label{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_af6b5c52a8c176ed1dddc0ffd7930a03a} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} package\+Json = get\+Package\+JSON()}
+
+\Hypertarget{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}\index{util.js@{util.js}!request@{request}}
+\index{request@{request}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{request}{request}}
+{\footnotesize\ttfamily \label{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da} 
+\mbox{\hyperlink{component_2dist_2esm_2index_8esm2017_8js_a953be46b94f595d839e88a6d3d270309}{import}} \mbox{\hyperlink{streaming_8js_a701da608ab0ff00f42f6b462046b5e1f}{retry\+Request}} from \mbox{\hyperlink{esm_2src_2bucket_8js_a451094c82c509e4de33de7f8df781a35}{retry}} request}
+
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_ad13d57ba6ae8042a7e6196ff119640b}{/\+Users/nicoletiokhin/\+Desktop/\+Software Semester 3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/@google-\/cloud/firestore/build/src/v1/firestore\+\_\+client.\+js}}.\end{Desc}
+\Hypertarget{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_ac9cc7fe3c5f9333e18f68344f8aa89f1}\index{util.js@{util.js}!requestDefaults@{requestDefaults}}
+\index{requestDefaults@{requestDefaults}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{requestDefaults}{requestDefaults}}
+{\footnotesize\ttfamily \label{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_ac9cc7fe3c5f9333e18f68344f8aa89f1} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} request\+Defaults}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{rxjs_2dist_2cjs_2internal_2operators_2timeout_8js_a56cd1f2498714e800f2da45ee2fd56b7}{timeout}}:\ 60000,}
+\DoxyCodeLine{\ \ \ \ gzip:\ \textcolor{keyword}{true},}
+\DoxyCodeLine{\ \ \ \ forever:\ \textcolor{keyword}{true},}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{_0dprotobufjs_2pool_2tests_2index_8js_a313c537afe006a57ae27f8660e027191}{pool}}:\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ maxSockets:\ Infinity,}
+\DoxyCodeLine{\ \ \ \ \},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a523848c9ac351b2c7735cac51657c4b5}\index{util.js@{util.js}!util@{util}}
+\index{util@{util}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{util}{util}}
+{\footnotesize\ttfamily \label{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a523848c9ac351b2c7735cac51657c4b5} 
+util = new \mbox{\hyperlink{class_util}{Util}}()}
+
+\Hypertarget{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_adcc488972b920eda05a63018d44a2a0d}\index{util.js@{util.js}!uuid@{uuid}}
+\index{uuid@{uuid}!util.js@{util.js}}
+\doxysubsubsection{\texorpdfstring{uuid}{uuid}}
+{\footnotesize\ttfamily \label{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_adcc488972b920eda05a63018d44a2a0d} 
+\mbox{\hyperlink{component_2dist_2esm_2index_8esm2017_8js_a953be46b94f595d839e88a6d3d270309}{import}}\texorpdfstring{$\ast$}{*} as uuid from uuid}
+

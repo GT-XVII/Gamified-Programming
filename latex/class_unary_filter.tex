@@ -1,0 +1,118 @@
+\doxysection{Unary\+Filter Class Reference}
+\hypertarget{class_unary_filter}{}\label{class_unary_filter}\index{UnaryFilter@{UnaryFilter}}
+
+
+Inheritance diagram for Unary\+Filter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=157pt]{class_unary_filter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Unary\+Filter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=157pt]{class_unary_filter__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_filter_af6be2934075d0920033f1d57a1608b11}{where}} (field\+Path, op\+Str, \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}})
+\item 
+static \mbox{\hyperlink{class_filter_a206bac0e574a0b6a4c09747a50d0bc52}{or}} (...filters)
+\item 
+static \mbox{\hyperlink{class_filter_adf8b4ed4a08705db57bb2e4c483336e0}{and}} (...filters)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_unary_filter_ad468c79a8accdd2af36c3479eedf2c50}{constructor}} (field, operator, \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}})
+\item 
+\mbox{\hyperlink{class_unary_filter_a1a6c93bc1daee42d215d805bba2fd1fa}{\+\_\+get\+Field}} ()
+\item 
+\mbox{\hyperlink{class_unary_filter_ac8d5548e55e079af7db379fa69e0f5ff}{\+\_\+get\+Operator}} ()
+\item 
+\mbox{\hyperlink{class_unary_filter_a5a2603e151bbcf6fff4b8c4c275dec81}{\+\_\+get\+Value}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_a}{A} {\ttfamily \doxylink{class_unary_filter}{Unary\+Filter}} represents a restriction on one field value and can be used to refine the results of a {\ttfamily \doxylink{class_query}{Query}}. {\ttfamily \doxylink{class_unary_filter}{Unary\+Filter}}s are created by invoking {\ttfamily \doxylink{class_filter_af6be2934075d0920033f1d57a1608b11}{Filter\#where}} and can then be passed to {\ttfamily \doxylink{class_query_a09b549eea59e9d2d0d81b07b1b34bb77}{Query\#where}} to create a new {\ttfamily \doxylink{class_query}{Query}} instance that also contains this {\ttfamily \doxylink{class_unary_filter}{Unary\+Filter}}. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_unary_filter_a1a6c93bc1daee42d215d805bba2fd1fa}\index{UnaryFilter@{UnaryFilter}!\_getField@{\_getField}}
+\index{\_getField@{\_getField}!UnaryFilter@{UnaryFilter}}
+\doxysubsubsection{\texorpdfstring{\_getField()}{\_getField()}}
+{\footnotesize\ttfamily \label{class_unary_filter_a1a6c93bc1daee42d215d805bba2fd1fa} 
+Unary\+Filter\+::\+\_\+get\+Field (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\Hypertarget{class_unary_filter_ac8d5548e55e079af7db379fa69e0f5ff}\index{UnaryFilter@{UnaryFilter}!\_getOperator@{\_getOperator}}
+\index{\_getOperator@{\_getOperator}!UnaryFilter@{UnaryFilter}}
+\doxysubsubsection{\texorpdfstring{\_getOperator()}{\_getOperator()}}
+{\footnotesize\ttfamily \label{class_unary_filter_ac8d5548e55e079af7db379fa69e0f5ff} 
+Unary\+Filter\+::\+\_\+get\+Operator (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\Hypertarget{class_unary_filter_a5a2603e151bbcf6fff4b8c4c275dec81}\index{UnaryFilter@{UnaryFilter}!\_getValue@{\_getValue}}
+\index{\_getValue@{\_getValue}!UnaryFilter@{UnaryFilter}}
+\doxysubsubsection{\texorpdfstring{\_getValue()}{\_getValue()}}
+{\footnotesize\ttfamily \label{class_unary_filter_a5a2603e151bbcf6fff4b8c4c275dec81} 
+Unary\+Filter\+::\+\_\+get\+Value (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+References \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.
+
+\Hypertarget{class_filter_adf8b4ed4a08705db57bb2e4c483336e0}\index{UnaryFilter@{UnaryFilter}!and@{and}}
+\index{and@{and}!UnaryFilter@{UnaryFilter}}
+\doxysubsubsection{\texorpdfstring{and()}{and()}}
+{\footnotesize\ttfamily \label{class_filter_adf8b4ed4a08705db57bb2e4c483336e0} 
+static Filter\+::and (\begin{DoxyParamCaption}\item[{}]{...}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [inherited]}}
+
+
+
+References \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2filter_8js_ac9cd26142a8b3b16686b5e41b9941c58}{Composite\+Filter}}.
+
+\Hypertarget{class_unary_filter_ad468c79a8accdd2af36c3479eedf2c50}\index{UnaryFilter@{UnaryFilter}!constructor@{constructor}}
+\index{constructor@{constructor}!UnaryFilter@{UnaryFilter}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_unary_filter_ad468c79a8accdd2af36c3479eedf2c50} 
+Unary\+Filter\+::constructor (\begin{DoxyParamCaption}\item[{}]{field}{, }\item[{}]{operator}{, }\item[{}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+References \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.
+
+\Hypertarget{class_filter_a206bac0e574a0b6a4c09747a50d0bc52}\index{UnaryFilter@{UnaryFilter}!or@{or}}
+\index{or@{or}!UnaryFilter@{UnaryFilter}}
+\doxysubsubsection{\texorpdfstring{or()}{or()}}
+{\footnotesize\ttfamily \label{class_filter_a206bac0e574a0b6a4c09747a50d0bc52} 
+static Filter\+::or (\begin{DoxyParamCaption}\item[{}]{...}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [inherited]}}
+
+
+
+References \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2filter_8js_ac9cd26142a8b3b16686b5e41b9941c58}{Composite\+Filter}}.
+
+\Hypertarget{class_filter_af6be2934075d0920033f1d57a1608b11}\index{UnaryFilter@{UnaryFilter}!where@{where}}
+\index{where@{where}!UnaryFilter@{UnaryFilter}}
+\doxysubsubsection{\texorpdfstring{where()}{where()}}
+{\footnotesize\ttfamily \label{class_filter_af6be2934075d0920033f1d57a1608b11} 
+static Filter\+::where (\begin{DoxyParamCaption}\item[{}]{field\+Path}{, }\item[{}]{op\+Str}{, }\item[{}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [inherited]}}
+
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_c4841461196c822ab6502f58f84f8573}{/\+Users/nicoletiokhin/\+Desktop/\+Software Semester 3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/@google-\/cloud/firestore/build/src/filter.\+js}}.\end{Desc}
+
+
+References \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2filter_8js_a5aaa56ed74ba0108d0c2079fdedeacab}{Unary\+Filter}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/@google-\/cloud/firestore/build/src/\mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2filter_8js}{filter.\+js}}\end{DoxyCompactItemize}

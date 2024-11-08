@@ -1,0 +1,58 @@
+\doxysection{backend/node\+\_\+modules/jsonwebtoken/lib/validate\+Asymmetric\+Key.js File Reference}
+\hypertarget{validate_asymmetric_key_8js}{}\label{validate_asymmetric_key_8js}\index{backend/node\_modules/jsonwebtoken/lib/validateAsymmetricKey.js@{backend/node\_modules/jsonwebtoken/lib/validateAsymmetricKey.js}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{validate_asymmetric_key_8js_a4e6c0c3f5662682fbf0fc18bd71198de}{ASYMMETRIC\+\_\+\+KEY\+\_\+\+DETAILS\+\_\+\+SUPPORTED}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./asymmetric\+Key\+Details\+Supported\textquotesingle{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{validate_asymmetric_key_8js_a3f818d9a5209acd045f39a998f0ed077}{RSA\+\_\+\+PSS\+\_\+\+KEY\+\_\+\+DETAILS\+\_\+\+SUPPORTED}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./rsa\+Pss\+Key\+Details\+Supported\textquotesingle{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{validate_asymmetric_key_8js_ae6708264183ad3f1bc25aea5b716c5e4}{allowed\+Algorithms\+For\+Keys}}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{validate_asymmetric_key_8js_ad349d505868b17326022afc5c3f209ce}{allowed\+Curves}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{validate_asymmetric_key_8js_ae6708264183ad3f1bc25aea5b716c5e4}\index{validateAsymmetricKey.js@{validateAsymmetricKey.js}!allowedAlgorithmsForKeys@{allowedAlgorithmsForKeys}}
+\index{allowedAlgorithmsForKeys@{allowedAlgorithmsForKeys}!validateAsymmetricKey.js@{validateAsymmetricKey.js}}
+\doxysubsubsection{\texorpdfstring{allowedAlgorithmsForKeys}{allowedAlgorithmsForKeys}}
+{\footnotesize\ttfamily \label{validate_asymmetric_key_8js_ae6708264183ad3f1bc25aea5b716c5e4} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} allowed\+Algorithms\+For\+Keys}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \textcolor{stringliteral}{'ec'}:\ [\textcolor{stringliteral}{'ES256'},\ \textcolor{stringliteral}{'ES384'},\ \textcolor{stringliteral}{'ES512'}],}
+\DoxyCodeLine{\ \ \textcolor{stringliteral}{'rsa'}:\ [\textcolor{stringliteral}{'RS256'},\ \textcolor{stringliteral}{'PS256'},\ \textcolor{stringliteral}{'RS384'},\ \textcolor{stringliteral}{'PS384'},\ \textcolor{stringliteral}{'RS512'},\ \textcolor{stringliteral}{'PS512'}],}
+\DoxyCodeLine{\ \ \textcolor{stringliteral}{'rsa-\/pss'}:\ [\textcolor{stringliteral}{'PS256'},\ \textcolor{stringliteral}{'PS384'},\ \textcolor{stringliteral}{'PS512'}]}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{validate_asymmetric_key_8js_ad349d505868b17326022afc5c3f209ce}\index{validateAsymmetricKey.js@{validateAsymmetricKey.js}!allowedCurves@{allowedCurves}}
+\index{allowedCurves@{allowedCurves}!validateAsymmetricKey.js@{validateAsymmetricKey.js}}
+\doxysubsubsection{\texorpdfstring{allowedCurves}{allowedCurves}}
+{\footnotesize\ttfamily \label{validate_asymmetric_key_8js_ad349d505868b17326022afc5c3f209ce} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} allowed\+Curves}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_aa80be98f5ebe9e6bec49ec43b6ebcad4}{ES256}}:\ \textcolor{stringliteral}{'prime256v1'},}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a5848304995124d0114f41a1c1fd81613}{ES384}}:\ \textcolor{stringliteral}{'secp384r1'},}
+\DoxyCodeLine{\ \ ES512:\ \textcolor{stringliteral}{'secp521r1'},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{validate_asymmetric_key_8js_a4e6c0c3f5662682fbf0fc18bd71198de}\index{validateAsymmetricKey.js@{validateAsymmetricKey.js}!ASYMMETRIC\_KEY\_DETAILS\_SUPPORTED@{ASYMMETRIC\_KEY\_DETAILS\_SUPPORTED}}
+\index{ASYMMETRIC\_KEY\_DETAILS\_SUPPORTED@{ASYMMETRIC\_KEY\_DETAILS\_SUPPORTED}!validateAsymmetricKey.js@{validateAsymmetricKey.js}}
+\doxysubsubsection{\texorpdfstring{ASYMMETRIC\_KEY\_DETAILS\_SUPPORTED}{ASYMMETRIC\_KEY\_DETAILS\_SUPPORTED}}
+{\footnotesize\ttfamily \label{validate_asymmetric_key_8js_a4e6c0c3f5662682fbf0fc18bd71198de} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} ASYMMETRIC\+\_\+\+KEY\+\_\+\+DETAILS\+\_\+\+SUPPORTED = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./asymmetric\+Key\+Details\+Supported\textquotesingle{})}
+
+\Hypertarget{validate_asymmetric_key_8js_a3f818d9a5209acd045f39a998f0ed077}\index{validateAsymmetricKey.js@{validateAsymmetricKey.js}!RSA\_PSS\_KEY\_DETAILS\_SUPPORTED@{RSA\_PSS\_KEY\_DETAILS\_SUPPORTED}}
+\index{RSA\_PSS\_KEY\_DETAILS\_SUPPORTED@{RSA\_PSS\_KEY\_DETAILS\_SUPPORTED}!validateAsymmetricKey.js@{validateAsymmetricKey.js}}
+\doxysubsubsection{\texorpdfstring{RSA\_PSS\_KEY\_DETAILS\_SUPPORTED}{RSA\_PSS\_KEY\_DETAILS\_SUPPORTED}}
+{\footnotesize\ttfamily \label{validate_asymmetric_key_8js_a3f818d9a5209acd045f39a998f0ed077} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} RSA\+\_\+\+PSS\+\_\+\+KEY\+\_\+\+DETAILS\+\_\+\+SUPPORTED = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./rsa\+Pss\+Key\+Details\+Supported\textquotesingle{})}
+

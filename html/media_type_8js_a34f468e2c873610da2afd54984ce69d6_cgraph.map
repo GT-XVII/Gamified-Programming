@@ -1,0 +1,17 @@
+<map id="getMediaTypePriority" name="getMediaTypePriority">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,56,149,82"/>
+<area shape="rect" id="Node000002" href="$media_type_8js.html#add0e9e664cc68e108a2e7903a5abff49" title=" " alt="" coords="197,56,260,82"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,66,181,66,181,72,149,72"/>
+<area shape="rect" id="Node000003" href="$media_type_8js.html#ad6cd89c6f16d76eaa2ca89229f6a7e8b" title=" " alt="" coords="308,56,424,82"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="260,66,293,66,293,72,260,72"/>
+<area shape="rect" id="Node000004" href="$media_type_8js.html#a18f17df64e140527a4f419e420dd4e35" title=" " alt="" coords="472,5,596,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="411,53,474,33,475,39,412,58"/>
+<area shape="rect" id="Node000005" href="$json-bigint_2lib_2stringify_8js.html#abd4075a8f329b0ccafd81359c952a9df" title=" " alt="" coords="669,56,707,82"/>
+<area shape="poly" id="edge8_Node000003_Node000005" title=" " alt="" coords="425,66,653,66,653,72,425,72"/>
+<area shape="rect" id="Node000006" href="$media_type_8js.html#a1e6f5504ab4951364d5256ce68072672" title=" " alt="" coords="478,107,590,132"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="412,80,475,99,474,104,411,85"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="576,29,655,55,653,60,575,34"/>
+<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="575,104,653,77,655,82,576,109"/>
+<area shape="rect" id="Node000007" href="$media_type_8js.html#a97cd04b128a9b6b19f89afc419107b4d" title=" " alt="" coords="644,107,732,132"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="591,117,628,117,628,122,591,122"/>
+</map>

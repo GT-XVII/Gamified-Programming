@@ -1,0 +1,39 @@
+\doxysection{backend/node\+\_\+modules/@opentelemetry/api/build/esm/trace/\+Noop\+Tracer\+Provider.js File Reference}
+\hypertarget{esm_2trace_2_noop_tracer_provider_8js}{}\label{esm_2trace_2_noop_tracer_provider_8js}\index{backend/node\_modules/"@opentelemetry/api/build/esm/trace/NoopTracerProvider.js@{backend/node\_modules/"@opentelemetry/api/build/esm/trace/NoopTracerProvider.js}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{esm_2trace_2_noop_tracer_provider_8js_a59be084da8908b7d77ff34b25cd84488}{import}} \{ \mbox{\hyperlink{class_noop_tracer}{Noop\+Tracer}} \} from \textquotesingle{}./\mbox{\hyperlink{class_noop_tracer}{Noop\+Tracer}}\textquotesingle{}
+\item 
+var \mbox{\hyperlink{esm_2trace_2_noop_tracer_provider_8js_aa585c6d72359f2104e35409b63ff47f6}{Noop\+Tracer\+Provider}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{esm_2trace_2_noop_tracer_provider_8js_a59be084da8908b7d77ff34b25cd84488}\index{NoopTracerProvider.js@{NoopTracerProvider.js}!import@{import}}
+\index{import@{import}!NoopTracerProvider.js@{NoopTracerProvider.js}}
+\doxysubsubsection{\texorpdfstring{import}{import}}
+{\footnotesize\ttfamily \label{esm_2trace_2_noop_tracer_provider_8js_a59be084da8908b7d77ff34b25cd84488} 
+import \{ \mbox{\hyperlink{class_noop_tracer}{Noop\+Tracer}} \} from \textquotesingle{}./\mbox{\hyperlink{class_noop_tracer}{Noop\+Tracer}}\textquotesingle{}}
+
+\Hypertarget{esm_2trace_2_noop_tracer_provider_8js_aa585c6d72359f2104e35409b63ff47f6}\index{NoopTracerProvider.js@{NoopTracerProvider.js}!NoopTracerProvider@{NoopTracerProvider}}
+\index{NoopTracerProvider@{NoopTracerProvider}!NoopTracerProvider.js@{NoopTracerProvider.js}}
+\doxysubsubsection{\texorpdfstring{NoopTracerProvider}{NoopTracerProvider}}
+{\footnotesize\ttfamily \label{esm_2trace_2_noop_tracer_provider_8js_aa585c6d72359f2104e35409b63ff47f6} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} Noop\+Tracer\+Provider}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ (\textcolor{keyword}{function}\ ()\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{function}\ \mbox{\hyperlink{esm_2trace_2_noop_tracer_provider_8js_aa585c6d72359f2104e35409b63ff47f6}{NoopTracerProvider}}()\ \{}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{class_noop_tracer_provider}{NoopTracerProvider}}.prototype.\mbox{\hyperlink{class_noop_tracer_provider_a133122a4591d5191a1d5912f152537aa}{getTracer}}\ =\ \textcolor{keyword}{function}\ (\_name,\ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2uuid_2dist_2index_8js_a21f4024e20b5b656c3c0171cca576fd9}{\_version}},\ \mbox{\hyperlink{express_2lib_2router_2route_8js_a6d3af37c53447908498ec53885a92a16}{\_options}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{esm_2trace_2_noop_tracer_8js_aab214642f05ea06179c363acf548a7a3}{NoopTracer}}();}
+\DoxyCodeLine{\ \ \ \ \};}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{esm_2trace_2_noop_tracer_provider_8js_aa585c6d72359f2104e35409b63ff47f6}{NoopTracerProvider}};}
+\DoxyCodeLine{\}())}
+
+\end{DoxyCode}
+An implementation of the {\ttfamily \doxylink{}{Tracer\+Provider}} which returns an impotent Tracer for all calls to {\ttfamily get\+Tracer}.
+
+All operations are no-\/op. 

@@ -1,0 +1,7 @@
+<map id="Filter" name="Filter">
+<area shape="rect" id="Node000001" title=" " alt="" coords="86,5,153,112"/>
+<area shape="rect" id="Node000002" href="$class_composite_filter.html" title=" " alt="" coords="5,170,108,278"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="97,127,79,172,74,170,92,125"/>
+<area shape="rect" id="Node000003" href="$class_unary_filter.html" title=" " alt="" coords="132,160,235,288"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="148,125,161,160,157,161,143,127"/>
+</map>

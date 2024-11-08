@@ -1,0 +1,273 @@
+\doxysection{backend/node\+\_\+modules/protobufjs/src/index-\/light.js File Reference}
+\hypertarget{index-light_8js}{}\label{index-light_8js}\index{backend/node\_modules/protobufjs/src/index-\/light.js@{backend/node\_modules/protobufjs/src/index-\/light.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{index-light_8js_a375bcf63038f214c42df88dfb19830df}{load}} (\mbox{\hyperlink{protobufjs_2src_2parse_8js_ad87dd7d0bb9bb745c8a20ef981fe2d32}{filename}}, \mbox{\hyperlink{ipaddr_8js_ab4b8daf4b8ea9d39568719e1e320076f}{root}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a622460feeccdab6d8f307936fc6b36fb}{callback}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{index-light_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+var \mbox{\hyperlink{index-light_8js_a8e1efdf2ca1b2625c06af33d33d2959d}{protobuf}} = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{module.\+exports}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./index-\/minimal"{})
+\item 
+\mbox{\hyperlink{fallback_8js_aa995398e7e3941569ba442d9a8e4b8e8}{protobuf}} \mbox{\hyperlink{index-light_8js_a039aa83d6d61385edb39e9f5c810df1f}{build}} = "{}light"{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{load}
+Loads one or multiple .proto or preprocessed .json files into a common root namespace and returns a promise.
+
+@function 
+\begin{DoxyParams}{Parameters}
+{\em \{string\texorpdfstring{$\vert$}{|}string\mbox{[}$\,$\mbox{]}\}} & filename One or multiple files to load \\
+\hline
+{\em \{\+Root\}} & \mbox{[}root\mbox{]} Root namespace, defaults to create a new one if omitted. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Promise$<$\+Root$>$\} Promise 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+{\ttfamily \doxylink{}{Root\#load}} @variation 3 
+\end{DoxySeeAlso}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{fallback_8js_aa995398e7e3941569ba442d9a8e4b8e8}{protobuf}} \mbox{\hyperlink{index-light_8js_a96979240a92e1353696631e75ed6b1fc}{load}} = load
+\item 
+\mbox{\hyperlink{fallback_8js_aa995398e7e3941569ba442d9a8e4b8e8}{protobuf}} \mbox{\hyperlink{index-light_8js_a6af8461e3bb41c71d01c35c8da0ab5a7}{load\+Sync}} = load\+Sync
+\item 
+\mbox{\hyperlink{fallback_8js_aa995398e7e3941569ba442d9a8e4b8e8}{protobuf}} \mbox{\hyperlink{index-light_8js_a0fc6b44e2833b72a8adf2a6995e101c1}{encoder}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./encoder"{})
+\item 
+\mbox{\hyperlink{fallback_8js_aa995398e7e3941569ba442d9a8e4b8e8}{protobuf}} \mbox{\hyperlink{index-light_8js_a2e50d341c002b2c7ad72b309af79d194}{decoder}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./decoder"{})
+\item 
+\mbox{\hyperlink{fallback_8js_aa995398e7e3941569ba442d9a8e4b8e8}{protobuf}} \mbox{\hyperlink{index-light_8js_ae959a106a18fef09505a816f05d8088f}{verifier}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./verifier"{})
+\item 
+\mbox{\hyperlink{fallback_8js_aa995398e7e3941569ba442d9a8e4b8e8}{protobuf}} \mbox{\hyperlink{index-light_8js_ae342696b9632c67e5707f165f2c5d374}{converter}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./converter"{})
+\item 
+\mbox{\hyperlink{fallback_8js_aa995398e7e3941569ba442d9a8e4b8e8}{protobuf}} \mbox{\hyperlink{index-light_8js_a8456f6e2a2db0e1850bb8a82a0b69537}{Reflection\+Object}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./object"{})
+\item 
+\mbox{\hyperlink{fallback_8js_aa995398e7e3941569ba442d9a8e4b8e8}{protobuf}} \mbox{\hyperlink{index-light_8js_ab533dfac8c339a493e7cbc6df955c262}{Namespace}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./namespace"{})
+\item 
+\mbox{\hyperlink{fallback_8js_aa995398e7e3941569ba442d9a8e4b8e8}{protobuf}} \mbox{\hyperlink{index-light_8js_a8d80ba652ee018889e3d4c3c20928394}{Root}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./root"{})
+\item 
+\mbox{\hyperlink{fallback_8js_aa995398e7e3941569ba442d9a8e4b8e8}{protobuf}} \mbox{\hyperlink{index-light_8js_a6dfed300d1408be1e2d8c6a70811b787}{Enum}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./enum"{})
+\item 
+\mbox{\hyperlink{fallback_8js_aa995398e7e3941569ba442d9a8e4b8e8}{protobuf}} \mbox{\hyperlink{index-light_8js_af969f5298a17369d4f9ed092e0208fd1}{Type}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./type"{})
+\item 
+\mbox{\hyperlink{fallback_8js_aa995398e7e3941569ba442d9a8e4b8e8}{protobuf}} \mbox{\hyperlink{index-light_8js_acc0f2edcc7328f2269c66c6cdd0b9daa}{Field}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./field"{})
+\item 
+\mbox{\hyperlink{fallback_8js_aa995398e7e3941569ba442d9a8e4b8e8}{protobuf}} \mbox{\hyperlink{index-light_8js_aa04c73a1f20b1dfa6b264a3d31588642}{One\+Of}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./oneof"{})
+\item 
+\mbox{\hyperlink{fallback_8js_aa995398e7e3941569ba442d9a8e4b8e8}{protobuf}} \mbox{\hyperlink{index-light_8js_ab6f52302bd0af3648ce3232440f512fc}{Map\+Field}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./mapfield"{})
+\item 
+\mbox{\hyperlink{fallback_8js_aa995398e7e3941569ba442d9a8e4b8e8}{protobuf}} \mbox{\hyperlink{index-light_8js_abf0f1a212f6a3c33f49d26cce10ff140}{Service}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./service"{})
+\item 
+\mbox{\hyperlink{fallback_8js_aa995398e7e3941569ba442d9a8e4b8e8}{protobuf}} \mbox{\hyperlink{index-light_8js_ad120eb16b6322a7934dc3e880b6b690a}{Method}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./method"{})
+\item 
+\mbox{\hyperlink{fallback_8js_aa995398e7e3941569ba442d9a8e4b8e8}{protobuf}} \mbox{\hyperlink{index-light_8js_a5ce26187997e51fc7e0b05d3add1b277}{Message}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./message"{})
+\item 
+\mbox{\hyperlink{fallback_8js_aa995398e7e3941569ba442d9a8e4b8e8}{protobuf}} \mbox{\hyperlink{index-light_8js_ae7d45bd15e52c97ce205a7c8866bf732}{wrappers}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./wrappers"{})
+\item 
+\mbox{\hyperlink{fallback_8js_aa995398e7e3941569ba442d9a8e4b8e8}{protobuf}} \mbox{\hyperlink{index-light_8js_ad71be579813c3ee4a733eab19faeab62}{types}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./types"{})
+\item 
+\mbox{\hyperlink{fallback_8js_aa995398e7e3941569ba442d9a8e4b8e8}{protobuf}} \mbox{\hyperlink{index-light_8js_aa96b82e11cd2d9a5efb0ddeaf4780766}{util}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./util"{})
+\item 
+function \mbox{\hyperlink{index-light_8js_ab83ce865a0ad986814511c3fb5a2857d}{load\+Sync}} (\mbox{\hyperlink{protobufjs_2src_2parse_8js_ad87dd7d0bb9bb745c8a20ef981fe2d32}{filename}}, \mbox{\hyperlink{ipaddr_8js_ab4b8daf4b8ea9d39568719e1e320076f}{root}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{index-light_8js_a375bcf63038f214c42df88dfb19830df}\index{index-\/light.js@{index-\/light.js}!load@{load}}
+\index{load@{load}!index-\/light.js@{index-\/light.js}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily \label{index-light_8js_a375bcf63038f214c42df88dfb19830df} 
+function load (\begin{DoxyParamCaption}\item[{}]{filename}{, }\item[{}]{root}{, }\item[{}]{callback}{}\end{DoxyParamCaption})}
+
+Loads one or multiple .proto or preprocessed .json files into a common root namespace and calls the callback. 
+\begin{DoxyParams}{Parameters}
+{\em \{string\texorpdfstring{$\vert$}{|}string\mbox{[}$\,$\mbox{]}\}} & filename One or multiple files to load \\
+\hline
+{\em \{\+Root\}} & root Root namespace, defaults to create a new one if omitted. \\
+\hline
+{\em \{\+Load\+Callback\}} & callback Callback function \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{undefined\} 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+{\ttfamily \doxylink{}{Root\#load}} 
+\end{DoxySeeAlso}
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a622460feeccdab6d8f307936fc6b36fb}{callback}}, \mbox{\hyperlink{protobufjs_2src_2parse_8js_ad87dd7d0bb9bb745c8a20ef981fe2d32}{filename}}, \mbox{\hyperlink{index-light_8js_a8e1efdf2ca1b2625c06af33d33d2959d}{protobuf}}, and \mbox{\hyperlink{ipaddr_8js_ab4b8daf4b8ea9d39568719e1e320076f}{root}}.
+
+\Hypertarget{index-light_8js_ab83ce865a0ad986814511c3fb5a2857d}\index{index-\/light.js@{index-\/light.js}!loadSync@{loadSync}}
+\index{loadSync@{loadSync}!index-\/light.js@{index-\/light.js}}
+\doxysubsubsection{\texorpdfstring{loadSync()}{loadSync()}}
+{\footnotesize\ttfamily \label{index-light_8js_ab83ce865a0ad986814511c3fb5a2857d} 
+function load\+Sync (\begin{DoxyParamCaption}\item[{}]{filename}{, }\item[{}]{root}{}\end{DoxyParamCaption})}
+
+Synchronously loads one or multiple .proto or preprocessed .json files into a common root namespace (node only). 
+\begin{DoxyParams}{Parameters}
+{\em \{string\texorpdfstring{$\vert$}{|}string\mbox{[}$\,$\mbox{]}\}} & filename One or multiple files to load \\
+\hline
+{\em \{\+Root\}} & \mbox{[}root\mbox{]} Root namespace, defaults to create a new one if omitted. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Root\} Root namespace 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \{\+Error\}} & If synchronous fetching is not supported (i.\+e. in browsers) or if a file\textquotesingle{}s syntax is invalid \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See also}
+{\ttfamily \doxylink{}{Root\#load\+Sync}} 
+\end{DoxySeeAlso}
+
+
+References \mbox{\hyperlink{protobufjs_2src_2parse_8js_ad87dd7d0bb9bb745c8a20ef981fe2d32}{filename}}, \mbox{\hyperlink{index-light_8js_a8e1efdf2ca1b2625c06af33d33d2959d}{protobuf}}, and \mbox{\hyperlink{ipaddr_8js_ab4b8daf4b8ea9d39568719e1e320076f}{root}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{index-light_8js_a039aa83d6d61385edb39e9f5c810df1f}\index{index-\/light.js@{index-\/light.js}!build@{build}}
+\index{build@{build}!index-\/light.js@{index-\/light.js}}
+\doxysubsubsection{\texorpdfstring{build}{build}}
+{\footnotesize\ttfamily \label{index-light_8js_a039aa83d6d61385edb39e9f5c810df1f} 
+\mbox{\hyperlink{fallback_8js_aa995398e7e3941569ba442d9a8e4b8e8}{protobuf}} build = "{}light"{}}
+
+\Hypertarget{index-light_8js_ae342696b9632c67e5707f165f2c5d374}\index{index-\/light.js@{index-\/light.js}!converter@{converter}}
+\index{converter@{converter}!index-\/light.js@{index-\/light.js}}
+\doxysubsubsection{\texorpdfstring{converter}{converter}}
+{\footnotesize\ttfamily \label{index-light_8js_ae342696b9632c67e5707f165f2c5d374} 
+\mbox{\hyperlink{fallback_8js_aa995398e7e3941569ba442d9a8e4b8e8}{protobuf}} converter = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./converter"{})}
+
+\Hypertarget{index-light_8js_a2e50d341c002b2c7ad72b309af79d194}\index{index-\/light.js@{index-\/light.js}!decoder@{decoder}}
+\index{decoder@{decoder}!index-\/light.js@{index-\/light.js}}
+\doxysubsubsection{\texorpdfstring{decoder}{decoder}}
+{\footnotesize\ttfamily \label{index-light_8js_a2e50d341c002b2c7ad72b309af79d194} 
+\mbox{\hyperlink{fallback_8js_aa995398e7e3941569ba442d9a8e4b8e8}{protobuf}} decoder = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./decoder"{})}
+
+\Hypertarget{index-light_8js_a0fc6b44e2833b72a8adf2a6995e101c1}\index{index-\/light.js@{index-\/light.js}!encoder@{encoder}}
+\index{encoder@{encoder}!index-\/light.js@{index-\/light.js}}
+\doxysubsubsection{\texorpdfstring{encoder}{encoder}}
+{\footnotesize\ttfamily \label{index-light_8js_a0fc6b44e2833b72a8adf2a6995e101c1} 
+\mbox{\hyperlink{fallback_8js_aa995398e7e3941569ba442d9a8e4b8e8}{protobuf}} encoder = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./encoder"{})}
+
+\Hypertarget{index-light_8js_a6dfed300d1408be1e2d8c6a70811b787}\index{index-\/light.js@{index-\/light.js}!Enum@{Enum}}
+\index{Enum@{Enum}!index-\/light.js@{index-\/light.js}}
+\doxysubsubsection{\texorpdfstring{Enum}{Enum}}
+{\footnotesize\ttfamily \label{index-light_8js_a6dfed300d1408be1e2d8c6a70811b787} 
+\mbox{\hyperlink{fallback_8js_aa995398e7e3941569ba442d9a8e4b8e8}{protobuf}} Enum = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./enum"{})}
+
+\Hypertarget{index-light_8js_acc0f2edcc7328f2269c66c6cdd0b9daa}\index{index-\/light.js@{index-\/light.js}!Field@{Field}}
+\index{Field@{Field}!index-\/light.js@{index-\/light.js}}
+\doxysubsubsection{\texorpdfstring{Field}{Field}}
+{\footnotesize\ttfamily \label{index-light_8js_acc0f2edcc7328f2269c66c6cdd0b9daa} 
+\mbox{\hyperlink{fallback_8js_aa995398e7e3941569ba442d9a8e4b8e8}{protobuf}} Field = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./field"{})}
+
+\Hypertarget{index-light_8js_a96979240a92e1353696631e75ed6b1fc}\index{index-\/light.js@{index-\/light.js}!load@{load}}
+\index{load@{load}!index-\/light.js@{index-\/light.js}}
+\doxysubsubsection{\texorpdfstring{load}{load}}
+{\footnotesize\ttfamily \label{index-light_8js_a96979240a92e1353696631e75ed6b1fc} 
+\mbox{\hyperlink{fallback_8js_aa995398e7e3941569ba442d9a8e4b8e8}{protobuf}} load = load}
+
+\Hypertarget{index-light_8js_a6af8461e3bb41c71d01c35c8da0ab5a7}\index{index-\/light.js@{index-\/light.js}!loadSync@{loadSync}}
+\index{loadSync@{loadSync}!index-\/light.js@{index-\/light.js}}
+\doxysubsubsection{\texorpdfstring{loadSync}{loadSync}}
+{\footnotesize\ttfamily \label{index-light_8js_a6af8461e3bb41c71d01c35c8da0ab5a7} 
+\mbox{\hyperlink{fallback_8js_aa995398e7e3941569ba442d9a8e4b8e8}{protobuf}} load\+Sync = load\+Sync}
+
+\Hypertarget{index-light_8js_ab6f52302bd0af3648ce3232440f512fc}\index{index-\/light.js@{index-\/light.js}!MapField@{MapField}}
+\index{MapField@{MapField}!index-\/light.js@{index-\/light.js}}
+\doxysubsubsection{\texorpdfstring{MapField}{MapField}}
+{\footnotesize\ttfamily \label{index-light_8js_ab6f52302bd0af3648ce3232440f512fc} 
+\mbox{\hyperlink{fallback_8js_aa995398e7e3941569ba442d9a8e4b8e8}{protobuf}} Map\+Field = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./mapfield"{})}
+
+\Hypertarget{index-light_8js_a5ce26187997e51fc7e0b05d3add1b277}\index{index-\/light.js@{index-\/light.js}!Message@{Message}}
+\index{Message@{Message}!index-\/light.js@{index-\/light.js}}
+\doxysubsubsection{\texorpdfstring{Message}{Message}}
+{\footnotesize\ttfamily \label{index-light_8js_a5ce26187997e51fc7e0b05d3add1b277} 
+\mbox{\hyperlink{fallback_8js_aa995398e7e3941569ba442d9a8e4b8e8}{protobuf}} Message = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./message"{})}
+
+\Hypertarget{index-light_8js_ad120eb16b6322a7934dc3e880b6b690a}\index{index-\/light.js@{index-\/light.js}!Method@{Method}}
+\index{Method@{Method}!index-\/light.js@{index-\/light.js}}
+\doxysubsubsection{\texorpdfstring{Method}{Method}}
+{\footnotesize\ttfamily \label{index-light_8js_ad120eb16b6322a7934dc3e880b6b690a} 
+\mbox{\hyperlink{fallback_8js_aa995398e7e3941569ba442d9a8e4b8e8}{protobuf}} Method = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./method"{})}
+
+\Hypertarget{index-light_8js_ab533dfac8c339a493e7cbc6df955c262}\index{index-\/light.js@{index-\/light.js}!Namespace@{Namespace}}
+\index{Namespace@{Namespace}!index-\/light.js@{index-\/light.js}}
+\doxysubsubsection{\texorpdfstring{Namespace}{Namespace}}
+{\footnotesize\ttfamily \label{index-light_8js_ab533dfac8c339a493e7cbc6df955c262} 
+\mbox{\hyperlink{fallback_8js_aa995398e7e3941569ba442d9a8e4b8e8}{protobuf}} Namespace = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./namespace"{})}
+
+\Hypertarget{index-light_8js_aa04c73a1f20b1dfa6b264a3d31588642}\index{index-\/light.js@{index-\/light.js}!OneOf@{OneOf}}
+\index{OneOf@{OneOf}!index-\/light.js@{index-\/light.js}}
+\doxysubsubsection{\texorpdfstring{OneOf}{OneOf}}
+{\footnotesize\ttfamily \label{index-light_8js_aa04c73a1f20b1dfa6b264a3d31588642} 
+\mbox{\hyperlink{fallback_8js_aa995398e7e3941569ba442d9a8e4b8e8}{protobuf}} One\+Of = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./oneof"{})}
+
+\Hypertarget{index-light_8js_a8e1efdf2ca1b2625c06af33d33d2959d}\index{index-\/light.js@{index-\/light.js}!protobuf@{protobuf}}
+\index{protobuf@{protobuf}!index-\/light.js@{index-\/light.js}}
+\doxysubsubsection{\texorpdfstring{protobuf}{protobuf}}
+{\footnotesize\ttfamily \label{index-light_8js_a8e1efdf2ca1b2625c06af33d33d2959d} 
+var protobuf = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{module.\+exports}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./index-\/minimal"{})}
+
+\Hypertarget{index-light_8js_a8456f6e2a2db0e1850bb8a82a0b69537}\index{index-\/light.js@{index-\/light.js}!ReflectionObject@{ReflectionObject}}
+\index{ReflectionObject@{ReflectionObject}!index-\/light.js@{index-\/light.js}}
+\doxysubsubsection{\texorpdfstring{ReflectionObject}{ReflectionObject}}
+{\footnotesize\ttfamily \label{index-light_8js_a8456f6e2a2db0e1850bb8a82a0b69537} 
+\mbox{\hyperlink{fallback_8js_aa995398e7e3941569ba442d9a8e4b8e8}{protobuf}} Reflection\+Object = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./object"{})}
+
+\Hypertarget{index-light_8js_a8d80ba652ee018889e3d4c3c20928394}\index{index-\/light.js@{index-\/light.js}!Root@{Root}}
+\index{Root@{Root}!index-\/light.js@{index-\/light.js}}
+\doxysubsubsection{\texorpdfstring{Root}{Root}}
+{\footnotesize\ttfamily \label{index-light_8js_a8d80ba652ee018889e3d4c3c20928394} 
+\mbox{\hyperlink{fallback_8js_aa995398e7e3941569ba442d9a8e4b8e8}{protobuf}} Root = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./root"{})}
+
+\Hypertarget{index-light_8js_abf0f1a212f6a3c33f49d26cce10ff140}\index{index-\/light.js@{index-\/light.js}!Service@{Service}}
+\index{Service@{Service}!index-\/light.js@{index-\/light.js}}
+\doxysubsubsection{\texorpdfstring{Service}{Service}}
+{\footnotesize\ttfamily \label{index-light_8js_abf0f1a212f6a3c33f49d26cce10ff140} 
+\mbox{\hyperlink{fallback_8js_aa995398e7e3941569ba442d9a8e4b8e8}{protobuf}} Service = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./service"{})}
+
+\Hypertarget{index-light_8js_ae2475e10618961c050dcba04e8c42331}\index{index-\/light.js@{index-\/light.js}!strict@{strict}}
+\index{strict@{strict}!index-\/light.js@{index-\/light.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{index-light_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+
+\Hypertarget{index-light_8js_af969f5298a17369d4f9ed092e0208fd1}\index{index-\/light.js@{index-\/light.js}!Type@{Type}}
+\index{Type@{Type}!index-\/light.js@{index-\/light.js}}
+\doxysubsubsection{\texorpdfstring{Type}{Type}}
+{\footnotesize\ttfamily \label{index-light_8js_af969f5298a17369d4f9ed092e0208fd1} 
+\mbox{\hyperlink{fallback_8js_aa995398e7e3941569ba442d9a8e4b8e8}{protobuf}} Type = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./type"{})}
+
+\Hypertarget{index-light_8js_ad71be579813c3ee4a733eab19faeab62}\index{index-\/light.js@{index-\/light.js}!types@{types}}
+\index{types@{types}!index-\/light.js@{index-\/light.js}}
+\doxysubsubsection{\texorpdfstring{types}{types}}
+{\footnotesize\ttfamily \label{index-light_8js_ad71be579813c3ee4a733eab19faeab62} 
+\mbox{\hyperlink{fallback_8js_aa995398e7e3941569ba442d9a8e4b8e8}{protobuf}} types = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./types"{})}
+
+\Hypertarget{index-light_8js_aa96b82e11cd2d9a5efb0ddeaf4780766}\index{index-\/light.js@{index-\/light.js}!util@{util}}
+\index{util@{util}!index-\/light.js@{index-\/light.js}}
+\doxysubsubsection{\texorpdfstring{util}{util}}
+{\footnotesize\ttfamily \label{index-light_8js_aa96b82e11cd2d9a5efb0ddeaf4780766} 
+\mbox{\hyperlink{fallback_8js_aa995398e7e3941569ba442d9a8e4b8e8}{protobuf}} util = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./util"{})}
+
+\Hypertarget{index-light_8js_ae959a106a18fef09505a816f05d8088f}\index{index-\/light.js@{index-\/light.js}!verifier@{verifier}}
+\index{verifier@{verifier}!index-\/light.js@{index-\/light.js}}
+\doxysubsubsection{\texorpdfstring{verifier}{verifier}}
+{\footnotesize\ttfamily \label{index-light_8js_ae959a106a18fef09505a816f05d8088f} 
+\mbox{\hyperlink{fallback_8js_aa995398e7e3941569ba442d9a8e4b8e8}{protobuf}} verifier = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./verifier"{})}
+
+\Hypertarget{index-light_8js_ae7d45bd15e52c97ce205a7c8866bf732}\index{index-\/light.js@{index-\/light.js}!wrappers@{wrappers}}
+\index{wrappers@{wrappers}!index-\/light.js@{index-\/light.js}}
+\doxysubsubsection{\texorpdfstring{wrappers}{wrappers}}
+{\footnotesize\ttfamily \label{index-light_8js_ae7d45bd15e52c97ce205a7c8866bf732} 
+\mbox{\hyperlink{fallback_8js_aa995398e7e3941569ba442d9a8e4b8e8}{protobuf}} wrappers = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./wrappers"{})}
+

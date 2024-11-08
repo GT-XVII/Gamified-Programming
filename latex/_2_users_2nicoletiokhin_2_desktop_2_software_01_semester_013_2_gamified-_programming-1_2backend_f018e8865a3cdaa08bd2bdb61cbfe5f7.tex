@@ -1,0 +1,27 @@
+\doxysection{/\+Users/nicoletiokhin/\+Desktop/\+Software Semester 3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/lodash/bind\+All.\+js}
+\hypertarget{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_f018e8865a3cdaa08bd2bdb61cbfe5f7}{}\label{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_f018e8865a3cdaa08bd2bdb61cbfe5f7}Binds methods of an object to the object itself, overwriting the existing method.
+
+{\bfseries{Note\+:}} This method doesn\textquotesingle{}t set the "{}length"{} property of bound functions.
+
+\begin{DoxySince}{Since}
+0.\+1.\+0 @member\+Of \+\_\+
+\end{DoxySince}
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Object\}} & object The object to bind and assign the bound methods to. \\
+\hline
+{\em \{...(string\texorpdfstring{$\vert$}{|}string\mbox{[}$\,$\mbox{]})\}} & method\+Names The object method names to bind. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Object\} Returns {\ttfamily object}.
+\end{DoxyReturn}
+var view = \{ \textquotesingle{}label\textquotesingle{}\+: \textquotesingle{}docs\textquotesingle{}, \textquotesingle{}click\textquotesingle{}\+: function() \{ console.\+log(\textquotesingle{}clicked \textquotesingle{} + this.\+label); \} \};
+
+\+\_\+.\+bind\+All(view, \mbox{[}\textquotesingle{}click\textquotesingle{}\mbox{]}); \doxylink{form_8js_a2b1d6f9c448e3ce72f4e1865d6e38d2c}{j\+Query(element)}.on(\textquotesingle{}click\textquotesingle{}, view.\+click); // =\texorpdfstring{$>$}{>} Logs \textquotesingle{}clicked docs\textquotesingle{} when clicked.
+
+
+\begin{DoxyCodeInclude}{0}
+
+\end{DoxyCodeInclude}
+ Semester \doxylink{bind_all_8js}{3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/lodash/bind\+All.\+js} 

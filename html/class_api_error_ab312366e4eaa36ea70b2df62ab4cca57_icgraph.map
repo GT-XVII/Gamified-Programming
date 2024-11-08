@@ -1,0 +1,7 @@
+<map id="ApiError::createMultiErrorMessage" name="ApiError::createMultiErrorMessage">
+<area shape="rect" id="Node000001" title=" " alt="" coords="195,27,363,68"/>
+<area shape="rect" id="Node000002" href="$class_api_error.html#a9f4d4647485192e71f60371d4046215e" title=" " alt="" coords="5,5,147,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="179,36,147,31,148,26,180,31"/>
+<area shape="rect" id="Node000003" href="$class_partial_failure_error.html#a94e3c0665dfd757181ecb8e5edeb00c5" title=" " alt="" coords="13,55,139,96"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="180,64,140,69,139,64,179,59"/>
+</map>

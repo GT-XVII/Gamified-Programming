@@ -1,0 +1,7 @@
+<map id="Http2Client" name="Http2Client">
+<area shape="rect" id="Node000001" title=" " alt="" coords="34,242,153,349"/>
+<area shape="rect" id="Node000003" href="$class_authorized_http2_client.html" title=" " alt="" coords="24,397,163,504"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="96,364,96,397,91,397,91,364"/>
+<area shape="rect" id="Node000002" href="$class_request_client.html" title=" " alt="" coords="5,5,181,194"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,209,96,242,91,242,91,209"/>
+</map>

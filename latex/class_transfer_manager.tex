@@ -1,0 +1,164 @@
+\doxysection{Transfer\+Manager Class Reference}
+\hypertarget{class_transfer_manager}{}\label{class_transfer_manager}\index{TransferManager@{TransferManager}}
+
+
+Collaboration diagram for Transfer\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{class_transfer_manager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_transfer_manager_a3cd9a3bdb9a54f4739edd8007d71744d}{constructor}} (bucket)
+\item 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{class_transfer_manager_a6112bfb2992230135e471d9b82939f98}{upload\+Many\+Files}} (file\+Paths\+Or\+Directory, options=\{\})
+\item 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{class_transfer_manager_a6d9576be4a698e962e409eb465d9c1f3}{download\+Many\+Files}} (files\+Or\+Folder, options=\{\})
+\item 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{class_transfer_manager_a3ae708d876a73e49fa56defffa98a79e}{download\+File\+In\+Chunks}} (file\+Or\+Name, options=\{\})
+\item 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{class_transfer_manager_ab793a5961f21c2ccc46c05756b62372e}{upload\+File\+In\+Chunks}} (file\+Path, options=\{\}, generator=\mbox{\hyperlink{esm_2src_2transfer-manager_8js_ac81055caf3310d68dbd5f73964896152}{default\+Multi\+Part\+Generator}})
+\item 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_transfer_manager_a64e5e72beb2d0a6dd80d8862d3cb9422}{get\+Paths\+From\+Directory}} (directory)
+\item 
+\mbox{\hyperlink{class_transfer_manager_a3cd9a3bdb9a54f4739edd8007d71744d}{constructor}} (bucket)
+\item 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{class_transfer_manager_a6112bfb2992230135e471d9b82939f98}{upload\+Many\+Files}} (file\+Paths\+Or\+Directory, options=\{\})
+\item 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{class_transfer_manager_a6d9576be4a698e962e409eb465d9c1f3}{download\+Many\+Files}} (files\+Or\+Folder, options=\{\})
+\item 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{class_transfer_manager_a3ae708d876a73e49fa56defffa98a79e}{download\+File\+In\+Chunks}} (file\+Or\+Name, options=\{\})
+\item 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{class_transfer_manager_ab793a5961f21c2ccc46c05756b62372e}{upload\+File\+In\+Chunks}} (file\+Path, options=\{\}, generator=\mbox{\hyperlink{esm_2src_2transfer-manager_8js_ac81055caf3310d68dbd5f73964896152}{default\+Multi\+Part\+Generator}})
+\item 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_transfer_manager_a64e5e72beb2d0a6dd80d8862d3cb9422}{get\+Paths\+From\+Directory}} (directory)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Create a \doxylink{class_transfer_manager}{Transfer\+Manager} object to perform parallel transfer operations on a Cloud \doxylink{class_storage}{Storage} bucket.
+
+@hideconstructor
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Bucket\}} & bucket \doxylink{class_a}{A} {\ttfamily \doxylink{class_bucket}{Bucket}} instance \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_transfer_manager_a3cd9a3bdb9a54f4739edd8007d71744d}\index{TransferManager@{TransferManager}!constructor@{constructor}}
+\index{constructor@{constructor}!TransferManager@{TransferManager}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_transfer_manager_a3cd9a3bdb9a54f4739edd8007d71744d} 
+Transfer\+Manager\+::constructor (\begin{DoxyParamCaption}\item[{}]{bucket}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_transfer_manager_a3cd9a3bdb9a54f4739edd8007d71744d}\index{TransferManager@{TransferManager}!constructor@{constructor}}
+\index{constructor@{constructor}!TransferManager@{TransferManager}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_transfer_manager_a3cd9a3bdb9a54f4739edd8007d71744d} 
+Transfer\+Manager\+::constructor (\begin{DoxyParamCaption}\item[{}]{bucket}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_transfer_manager_a3ae708d876a73e49fa56defffa98a79e}\index{TransferManager@{TransferManager}!downloadFileInChunks@{downloadFileInChunks}}
+\index{downloadFileInChunks@{downloadFileInChunks}!TransferManager@{TransferManager}}
+\doxysubsubsection{\texorpdfstring{downloadFileInChunks()}{downloadFileInChunks()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_transfer_manager_a3ae708d876a73e49fa56defffa98a79e} 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} Transfer\+Manager\+::download\+File\+In\+Chunks (\begin{DoxyParamCaption}\item[{}]{file\+Or\+Name}{, }\item[{}]{options}{ = {\ttfamily \{\}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_transfer_manager_a3ae708d876a73e49fa56defffa98a79e}\index{TransferManager@{TransferManager}!downloadFileInChunks@{downloadFileInChunks}}
+\index{downloadFileInChunks@{downloadFileInChunks}!TransferManager@{TransferManager}}
+\doxysubsubsection{\texorpdfstring{downloadFileInChunks()}{downloadFileInChunks()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_transfer_manager_a3ae708d876a73e49fa56defffa98a79e} 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} Transfer\+Manager\+::download\+File\+In\+Chunks (\begin{DoxyParamCaption}\item[{}]{file\+Or\+Name}{, }\item[{}]{options}{ = {\ttfamily \{\}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_transfer_manager_a6d9576be4a698e962e409eb465d9c1f3}\index{TransferManager@{TransferManager}!downloadManyFiles@{downloadManyFiles}}
+\index{downloadManyFiles@{downloadManyFiles}!TransferManager@{TransferManager}}
+\doxysubsubsection{\texorpdfstring{downloadManyFiles()}{downloadManyFiles()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_transfer_manager_a6d9576be4a698e962e409eb465d9c1f3} 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} Transfer\+Manager\+::download\+Many\+Files (\begin{DoxyParamCaption}\item[{}]{files\+Or\+Folder}{, }\item[{}]{options}{ = {\ttfamily \{\}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_transfer_manager_a6d9576be4a698e962e409eb465d9c1f3}\index{TransferManager@{TransferManager}!downloadManyFiles@{downloadManyFiles}}
+\index{downloadManyFiles@{downloadManyFiles}!TransferManager@{TransferManager}}
+\doxysubsubsection{\texorpdfstring{downloadManyFiles()}{downloadManyFiles()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_transfer_manager_a6d9576be4a698e962e409eb465d9c1f3} 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} Transfer\+Manager\+::download\+Many\+Files (\begin{DoxyParamCaption}\item[{}]{files\+Or\+Folder}{, }\item[{}]{options}{ = {\ttfamily \{\}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_transfer_manager_a64e5e72beb2d0a6dd80d8862d3cb9422}\index{TransferManager@{TransferManager}!getPathsFromDirectory@{getPathsFromDirectory}}
+\index{getPathsFromDirectory@{getPathsFromDirectory}!TransferManager@{TransferManager}}
+\doxysubsubsection{\texorpdfstring{getPathsFromDirectory()}{getPathsFromDirectory()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_transfer_manager_a64e5e72beb2d0a6dd80d8862d3cb9422} 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \texorpdfstring{$\ast$}{*} Transfer\+Manager\+::get\+Paths\+From\+Directory (\begin{DoxyParamCaption}\item[{}]{directory}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{cjs_2src_2crc32c_8js_ac00fcb402868b098d3624f8b35a61083}{fs\+\_\+1}}, \mbox{\hyperlink{class_transfer_manager_a64e5e72beb2d0a6dd80d8862d3cb9422}{get\+Paths\+From\+Directory()}}, \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}, and \mbox{\hyperlink{esm_2src_2transfer-manager_8js_a413c8bc133e31c6efb2f21ea918cb5ca}{path}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=215pt]{class_transfer_manager_a64e5e72beb2d0a6dd80d8862d3cb9422_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=215pt]{class_transfer_manager_a64e5e72beb2d0a6dd80d8862d3cb9422_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_transfer_manager_a64e5e72beb2d0a6dd80d8862d3cb9422}\index{TransferManager@{TransferManager}!getPathsFromDirectory@{getPathsFromDirectory}}
+\index{getPathsFromDirectory@{getPathsFromDirectory}!TransferManager@{TransferManager}}
+\doxysubsubsection{\texorpdfstring{getPathsFromDirectory()}{getPathsFromDirectory()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_transfer_manager_a64e5e72beb2d0a6dd80d8862d3cb9422} 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \texorpdfstring{$\ast$}{*} Transfer\+Manager\+::get\+Paths\+From\+Directory (\begin{DoxyParamCaption}\item[{}]{directory}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{class_transfer_manager_a64e5e72beb2d0a6dd80d8862d3cb9422}{get\+Paths\+From\+Directory()}}, \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}, and \mbox{\hyperlink{esm_2src_2transfer-manager_8js_a413c8bc133e31c6efb2f21ea918cb5ca}{path}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=215pt]{class_transfer_manager_a64e5e72beb2d0a6dd80d8862d3cb9422_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_transfer_manager_ab793a5961f21c2ccc46c05756b62372e}\index{TransferManager@{TransferManager}!uploadFileInChunks@{uploadFileInChunks}}
+\index{uploadFileInChunks@{uploadFileInChunks}!TransferManager@{TransferManager}}
+\doxysubsubsection{\texorpdfstring{uploadFileInChunks()}{uploadFileInChunks()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_transfer_manager_ab793a5961f21c2ccc46c05756b62372e} 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} Transfer\+Manager\+::upload\+File\+In\+Chunks (\begin{DoxyParamCaption}\item[{}]{file\+Path}{, }\item[{}]{options}{ = {\ttfamily \{\}}, }\item[{}]{generator}{ = {\ttfamily \mbox{\hyperlink{esm_2src_2transfer-manager_8js_ac81055caf3310d68dbd5f73964896152}{default\+Multi\+Part\+Generator}}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_transfer_manager_ab793a5961f21c2ccc46c05756b62372e}\index{TransferManager@{TransferManager}!uploadFileInChunks@{uploadFileInChunks}}
+\index{uploadFileInChunks@{uploadFileInChunks}!TransferManager@{TransferManager}}
+\doxysubsubsection{\texorpdfstring{uploadFileInChunks()}{uploadFileInChunks()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_transfer_manager_ab793a5961f21c2ccc46c05756b62372e} 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} Transfer\+Manager\+::upload\+File\+In\+Chunks (\begin{DoxyParamCaption}\item[{}]{file\+Path}{, }\item[{}]{options}{ = {\ttfamily \{\}}, }\item[{}]{generator}{ = {\ttfamily \mbox{\hyperlink{esm_2src_2transfer-manager_8js_ac81055caf3310d68dbd5f73964896152}{default\+Multi\+Part\+Generator}}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_transfer_manager_a6112bfb2992230135e471d9b82939f98}\index{TransferManager@{TransferManager}!uploadManyFiles@{uploadManyFiles}}
+\index{uploadManyFiles@{uploadManyFiles}!TransferManager@{TransferManager}}
+\doxysubsubsection{\texorpdfstring{uploadManyFiles()}{uploadManyFiles()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_transfer_manager_a6112bfb2992230135e471d9b82939f98} 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} Transfer\+Manager\+::upload\+Many\+Files (\begin{DoxyParamCaption}\item[{}]{file\+Paths\+Or\+Directory}{, }\item[{}]{options}{ = {\ttfamily \{\}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_transfer_manager_a6112bfb2992230135e471d9b82939f98}\index{TransferManager@{TransferManager}!uploadManyFiles@{uploadManyFiles}}
+\index{uploadManyFiles@{uploadManyFiles}!TransferManager@{TransferManager}}
+\doxysubsubsection{\texorpdfstring{uploadManyFiles()}{uploadManyFiles()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_transfer_manager_a6112bfb2992230135e471d9b82939f98} 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} Transfer\+Manager\+::upload\+Many\+Files (\begin{DoxyParamCaption}\item[{}]{file\+Paths\+Or\+Directory}{, }\item[{}]{options}{ = {\ttfamily \{\}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/@google-\/cloud/storage/build/cjs/src/\mbox{\hyperlink{cjs_2src_2transfer-manager_8js}{transfer-\/manager.\+js}}\item 
+backend/node\+\_\+modules/@google-\/cloud/storage/build/esm/src/\mbox{\hyperlink{esm_2src_2transfer-manager_8js}{transfer-\/manager.\+js}}\end{DoxyCompactItemize}

@@ -1,0 +1,261 @@
+\doxysection{Http2\+Client Class Reference}
+\hypertarget{class_http2_client}{}\label{class_http2_client}\index{Http2Client@{Http2Client}}
+
+
+Inheritance diagram for Http2\+Client\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{class_http2_client__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Http2\+Client\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{class_http2_client__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_http2_client_a2670b3deded9cf30e69632724719667f}{constructor}} (\mbox{\hyperlink{esm_2src_2bucket_8js_a451094c82c509e4de33de7f8df781a35}{retry}}=\mbox{\hyperlink{api-request_8js_a657b0adb401415bf942e895140eb2a7b}{default\+Retry\+Config}}())
+\item 
+\mbox{\hyperlink{class_http2_client_a67425b1426509e70b50c3c844ca84b07}{send}} (\mbox{\hyperlink{rxjs_8umd_8js_a729ec4717f914fce241d4dccc9a03066}{config}})
+\item 
+\mbox{\hyperlink{class_http2_client_ac66cf9aeb473864e8bb15473aab1c188}{send\+With\+Retry}} (\mbox{\hyperlink{rxjs_8umd_8js_a729ec4717f914fce241d4dccc9a03066}{config}}, retry\+Attempts=0)
+\item 
+\mbox{\hyperlink{class_request_client_aebd076b8d145f53fd3faf2ba131e9a53}{create\+Request\+Response}} (resp)
+\item 
+\mbox{\hyperlink{class_request_client_a1cdd7dd8052b01282ec11099dc018ae2}{wait\+For\+Retry}} (delay\+Millis)
+\item 
+\mbox{\hyperlink{class_request_client_a489c5124785f2aabff57f9ed093f69b2}{get\+Retry\+Delay\+Millis}} (retry\+Attempts, err)
+\item 
+\mbox{\hyperlink{class_request_client_a41a647201a363e47d674e1230788d728}{is\+Retry\+Eligible}} (retry\+Attempts, err)
+\item 
+\mbox{\hyperlink{class_request_client_afc604c35dac88ed06c67a6f3c200286e}{parse\+Retry\+After\+Into\+Millis}} (retry\+After)
+\item 
+\mbox{\hyperlink{class_request_client_ae4342651364bc3bc21c1a41116fd459b}{back\+Off\+Delay\+Millis}} (retry\+Attempts)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_request_client_ae4342651364bc3bc21c1a41116fd459b}\index{Http2Client@{Http2Client}!backOffDelayMillis@{backOffDelayMillis}}
+\index{backOffDelayMillis@{backOffDelayMillis}!Http2Client@{Http2Client}}
+\doxysubsubsection{\texorpdfstring{backOffDelayMillis()}{backOffDelayMillis()}}
+{\footnotesize\ttfamily \label{class_request_client_ae4342651364bc3bc21c1a41116fd459b} 
+Request\+Client\+::back\+Off\+Delay\+Millis (\begin{DoxyParamCaption}\item[{}]{retry\+Attempts}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+References \mbox{\hyperlink{api-request_8js_af1a99a3ff1a35c114bdd06cc7252beb6}{error\+\_\+1}}, and \mbox{\hyperlink{esm_2src_2bucket_8js_a451094c82c509e4de33de7f8df781a35}{retry}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_request_client_ae4342651364bc3bc21c1a41116fd459b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_http2_client_a2670b3deded9cf30e69632724719667f}\index{Http2Client@{Http2Client}!constructor@{constructor}}
+\index{constructor@{constructor}!Http2Client@{Http2Client}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_http2_client_a2670b3deded9cf30e69632724719667f} 
+Http2\+Client\+::constructor (\begin{DoxyParamCaption}\item[{}]{retry}{ = {\ttfamily \mbox{\hyperlink{api-request_8js_a657b0adb401415bf942e895140eb2a7b}{default\+Retry\+Config}}()}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{esm_2src_2bucket_8js_a451094c82c509e4de33de7f8df781a35}{retry}}.
+
+\Hypertarget{class_request_client_aebd076b8d145f53fd3faf2ba131e9a53}\index{Http2Client@{Http2Client}!createRequestResponse@{createRequestResponse}}
+\index{createRequestResponse@{createRequestResponse}!Http2Client@{Http2Client}}
+\doxysubsubsection{\texorpdfstring{createRequestResponse()}{createRequestResponse()}}
+{\footnotesize\ttfamily \label{class_request_client_aebd076b8d145f53fd3faf2ba131e9a53} 
+Request\+Client\+::create\+Request\+Response (\begin{DoxyParamCaption}\item[{}]{resp}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_request_client_aebd076b8d145f53fd3faf2ba131e9a53_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_request_client_a489c5124785f2aabff57f9ed093f69b2}\index{Http2Client@{Http2Client}!getRetryDelayMillis@{getRetryDelayMillis}}
+\index{getRetryDelayMillis@{getRetryDelayMillis}!Http2Client@{Http2Client}}
+\doxysubsubsection{\texorpdfstring{getRetryDelayMillis()}{getRetryDelayMillis()}}
+{\footnotesize\ttfamily \label{class_request_client_a489c5124785f2aabff57f9ed093f69b2} 
+Request\+Client\+::get\+Retry\+Delay\+Millis (\begin{DoxyParamCaption}\item[{}]{retry\+Attempts}{, }\item[{}]{err}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+Checks if a failed request is eligible for a retry, and if so returns the duration to wait before initiating the retry.
+
+
+\begin{DoxyParams}{Parameters}
+{\em retry\+Attempts} & -\/ Number of retries completed up to now. \\
+\hline
+{\em err} & -\/ The last encountered error. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_a}{A} 2-\/tuple where the 1st element is the duration to wait before another retry, and the 2nd element is a boolean indicating whether the request is eligible for a retry or not. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{class_request_client_ae4342651364bc3bc21c1a41116fd459b}{Request\+Client\+::back\+Off\+Delay\+Millis()}}, \mbox{\hyperlink{class_request_client_a41a647201a363e47d674e1230788d728}{Request\+Client\+::is\+Retry\+Eligible()}}, \mbox{\hyperlink{class_request_client_afc604c35dac88ed06c67a6f3c200286e}{Request\+Client\+::parse\+Retry\+After\+Into\+Millis()}}, and \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ac70ac40ef8199c59316b35022dd21914}{response}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_request_client_a489c5124785f2aabff57f9ed093f69b2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_request_client_a489c5124785f2aabff57f9ed093f69b2_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_request_client_a41a647201a363e47d674e1230788d728}\index{Http2Client@{Http2Client}!isRetryEligible@{isRetryEligible}}
+\index{isRetryEligible@{isRetryEligible}!Http2Client@{Http2Client}}
+\doxysubsubsection{\texorpdfstring{isRetryEligible()}{isRetryEligible()}}
+{\footnotesize\ttfamily \label{class_request_client_a41a647201a363e47d674e1230788d728} 
+Request\+Client\+::is\+Retry\+Eligible (\begin{DoxyParamCaption}\item[{}]{retry\+Attempts}{, }\item[{}]{err}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+References \mbox{\hyperlink{esm_2src_2bucket_8js_a451094c82c509e4de33de7f8df781a35}{retry}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_request_client_a41a647201a363e47d674e1230788d728_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_request_client_afc604c35dac88ed06c67a6f3c200286e}\index{Http2Client@{Http2Client}!parseRetryAfterIntoMillis@{parseRetryAfterIntoMillis}}
+\index{parseRetryAfterIntoMillis@{parseRetryAfterIntoMillis}!Http2Client@{Http2Client}}
+\doxysubsubsection{\texorpdfstring{parseRetryAfterIntoMillis()}{parseRetryAfterIntoMillis()}}
+{\footnotesize\ttfamily \label{class_request_client_afc604c35dac88ed06c67a6f3c200286e} 
+Request\+Client\+::parse\+Retry\+After\+Into\+Millis (\begin{DoxyParamCaption}\item[{}]{retry\+After}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+??? Parses the Retry-\/\+After header as a milliseconds value. Return value is negative if the Retry-\/\+After header contains an expired timestamp or otherwise malformed. 
+
+References \mbox{\hyperlink{lodash_2core_8js_ae2c7b9b535f93c96826bdbe1da681ceb}{is\+NaN}}, and \mbox{\hyperlink{parse_int_8js_a04ee837a5f7721fcb0ea2d152162ef92}{parse\+Int()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{class_request_client_afc604c35dac88ed06c67a6f3c200286e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_request_client_afc604c35dac88ed06c67a6f3c200286e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_http2_client_a67425b1426509e70b50c3c844ca84b07}\index{Http2Client@{Http2Client}!send@{send}}
+\index{send@{send}!Http2Client@{Http2Client}}
+\doxysubsubsection{\texorpdfstring{send()}{send()}}
+{\footnotesize\ttfamily \label{class_http2_client_a67425b1426509e70b50c3c844ca84b07} 
+Http2\+Client\+::send (\begin{DoxyParamCaption}\item[{}]{config}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sends an HTTP/2 request to a remote server. If the server responds with a successful response (2xx), the returned promise resolves with an {\ttfamily Request\+Response}. If the server responds with an error (3xx, 4xx, 5xx), the promise rejects with an {\ttfamily \doxylink{class_request_response_error}{Request\+Response\+Error}}. In case of all other errors, the promise rejects with a {\ttfamily \doxylink{class_firebase_app_error}{Firebase\+App\+Error}}. If a request fails due to a low-\/level network error, the client transparently retries the request once before rejecting the promise.
+
+If the request data is specified as an object, it will be serialized into a JSON string. The application/json content-\/type header will also be automatically set in this case. For all other payload types, the content-\/type header should be explicitly set by the caller. To send a JSON leaf value (e.\+g. "{}foo"{}, 5), parse it into JSON, and pass as a string or a \doxylink{interface_buffer}{Buffer} along with the appropriate content-\/type header.
+
+
+\begin{DoxyParams}{Parameters}
+{\em config} & -\/ HTTP/2 request to be sent. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_a}{A} promise that resolves with the response details. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{rxjs_8umd_8js_a729ec4717f914fce241d4dccc9a03066}{config}}, and \mbox{\hyperlink{class_http2_client_ac66cf9aeb473864e8bb15473aab1c188}{send\+With\+Retry()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_http2_client_a67425b1426509e70b50c3c844ca84b07_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_http2_client_ac66cf9aeb473864e8bb15473aab1c188}\index{Http2Client@{Http2Client}!sendWithRetry@{sendWithRetry}}
+\index{sendWithRetry@{sendWithRetry}!Http2Client@{Http2Client}}
+\doxysubsubsection{\texorpdfstring{sendWithRetry()}{sendWithRetry()}}
+{\footnotesize\ttfamily \label{class_http2_client_ac66cf9aeb473864e8bb15473aab1c188} 
+Http2\+Client\+::send\+With\+Retry (\begin{DoxyParamCaption}\item[{}]{config}{, }\item[{}]{retry\+Attempts}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sends an HTTP/2 request. In the event of an error, retries the HTTP/2 request according to the {\ttfamily Retry\+Config} set on the {\ttfamily \doxylink{class_http2_client}{Http2\+Client}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em config} & -\/ HTTP/2 request to be sent. \\
+\hline
+{\em retry\+Attempts} & -\/ Number of retries performed up to now. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_a}{A} promise that resolves with the response details. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{rxjs_8umd_8js_a729ec4717f914fce241d4dccc9a03066}{config}}, \mbox{\hyperlink{class_request_client_aebd076b8d145f53fd3faf2ba131e9a53}{Request\+Client\+::create\+Request\+Response()}}, \mbox{\hyperlink{api-request_8js_af1a99a3ff1a35c114bdd06cc7252beb6}{error\+\_\+1}}, \mbox{\hyperlink{class_request_client_a489c5124785f2aabff57f9ed093f69b2}{Request\+Client\+::get\+Retry\+Delay\+Millis()}}, \mbox{\hyperlink{class_async_http2_call_aeff93fbeed89d63ceb3a78f46214aaf6}{Async\+Http2\+Call\+::invoke()}}, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}}, \mbox{\hyperlink{api-request_8js_afe629434968db24f03c173fc208c163d}{Request\+Response\+Error}}, \mbox{\hyperlink{esm_2src_2bucket_8js_a451094c82c509e4de33de7f8df781a35}{retry}}, \mbox{\hyperlink{class_http2_client_ac66cf9aeb473864e8bb15473aab1c188}{send\+With\+Retry()}}, and \mbox{\hyperlink{class_request_client_a1cdd7dd8052b01282ec11099dc018ae2}{Request\+Client\+::wait\+For\+Retry()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_http2_client_ac66cf9aeb473864e8bb15473aab1c188_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{class_http2_client_ac66cf9aeb473864e8bb15473aab1c188_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_request_client_a1cdd7dd8052b01282ec11099dc018ae2}\index{Http2Client@{Http2Client}!waitForRetry@{waitForRetry}}
+\index{waitForRetry@{waitForRetry}!Http2Client@{Http2Client}}
+\doxysubsubsection{\texorpdfstring{waitForRetry()}{waitForRetry()}}
+{\footnotesize\ttfamily \label{class_request_client_a1cdd7dd8052b01282ec11099dc018ae2} 
+Request\+Client\+::wait\+For\+Retry (\begin{DoxyParamCaption}\item[{}]{delay\+Millis}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+
+References \mbox{\hyperlink{__get_tag_8js_abace523389c17bce1848e3a427871700}{Promise}}, and \mbox{\hyperlink{_0dprotobufjs_2path_2index_8js_a2001ea102ec496ebdabe15e68493427a}{resolve}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_request_client_a1cdd7dd8052b01282ec11099dc018ae2_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/firebase-\/admin/lib/utils/\mbox{\hyperlink{api-request_8js}{api-\/request.\+js}}\end{DoxyCompactItemize}

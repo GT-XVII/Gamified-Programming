@@ -1,0 +1,91 @@
+\doxysection{Task\+Queue Class Reference}
+\hypertarget{class_task_queue}{}\label{class_task_queue}\index{TaskQueue@{TaskQueue}}
+
+
+Collaboration diagram for Task\+Queue\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=153pt]{class_task_queue__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_task_queue_af4b2934defcc47c717e5a60753cc9945}{constructor}} (function\+Name, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af46081dcabb4da1ee7ca00228506bcb7}{client}}, extension\+Id)
+\item 
+\mbox{\hyperlink{class_task_queue_aac2143d574234e2503d4ff1e2f046b40}{enqueue}} (\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}, opts)
+\item 
+\mbox{\hyperlink{class_task_queue_aafb408cd8a50daef08644488b6fce66e}{delete}} (id)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The {\ttfamily \doxylink{class_task_queue}{Task\+Queue}} interface. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_task_queue_af4b2934defcc47c717e5a60753cc9945}\index{TaskQueue@{TaskQueue}!constructor@{constructor}}
+\index{constructor@{constructor}!TaskQueue@{TaskQueue}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_task_queue_af4b2934defcc47c717e5a60753cc9945} 
+Task\+Queue\+::constructor (\begin{DoxyParamCaption}\item[{}]{function\+Name}{, }\item[{}]{client}{, }\item[{}]{extension\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em function\+Name} & -\/ The name of the function. \\
+\hline
+{\em client} & -\/ The {\ttfamily \doxylink{class_functions_api_client}{Functions\+Api\+Client}} instance. \\
+\hline
+{\em extension\+Id} & -\/ Optional canonical ID of the extension. @constructor \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af46081dcabb4da1ee7ca00228506bcb7}{client}}, \mbox{\hyperlink{firebase-admin_2lib_2functions_2functions_8js_a218621b3b67b7813155d7c777802a9f1}{functions\+\_\+api\+\_\+client\+\_\+internal\+\_\+1}}, and \mbox{\hyperlink{firebase-admin_2lib_2functions_2functions_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}}.
+
+\Hypertarget{class_task_queue_aafb408cd8a50daef08644488b6fce66e}\index{TaskQueue@{TaskQueue}!delete@{delete}}
+\index{delete@{delete}!TaskQueue@{TaskQueue}}
+\doxysubsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily \label{class_task_queue_aafb408cd8a50daef08644488b6fce66e} 
+Task\+Queue\+::delete (\begin{DoxyParamCaption}\item[{}]{id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Deletes an enqueued task if it has not yet completed. 
+\begin{DoxyParams}{Parameters}
+{\em id} & -\/ the ID of the task, relative to this queue. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_a}{A} promise that resolves when the task has been deleted. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af46081dcabb4da1ee7ca00228506bcb7}{client}}.
+
+\Hypertarget{class_task_queue_aac2143d574234e2503d4ff1e2f046b40}\index{TaskQueue@{TaskQueue}!enqueue@{enqueue}}
+\index{enqueue@{enqueue}!TaskQueue@{TaskQueue}}
+\doxysubsubsection{\texorpdfstring{enqueue()}{enqueue()}}
+{\footnotesize\ttfamily \label{class_task_queue_aac2143d574234e2503d4ff1e2f046b40} 
+Task\+Queue\+::enqueue (\begin{DoxyParamCaption}\item[{}]{data}{, }\item[{}]{opts}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Creates a task and adds it to the queue. Tasks cannot be updated after creation. This action requires {\ttfamily cloudtasks.\+tasks.\+create} IAM permission on the service account.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & -\/ The data payload of the task. \\
+\hline
+{\em opts} & -\/ Optional options when enqueuing a new task. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_a}{A} promise that resolves when the task has successfully been added to the queue. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af46081dcabb4da1ee7ca00228506bcb7}{client}}, and \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/firebase-\/admin/lib/functions/\mbox{\hyperlink{firebase-admin_2lib_2functions_2functions_8js}{functions.\+js}}\end{DoxyCompactItemize}

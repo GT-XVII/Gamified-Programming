@@ -1,0 +1,9 @@
+<map id="SecurityRules::getFirestoreRuleset" name="SecurityRules::getFirestoreRuleset">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,23,186,64"/>
+<area shape="rect" id="Node000002" href="$class_security_rules.html#a1b92df732b5ae10d19758016368eb50c" title=" " alt="" coords="234,23,408,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="186,41,218,41,218,46,186,46"/>
+<area shape="rect" id="Node000003" href="$class_security_rules.html#a8e08a864939c59bc3adb8ff3bbe78a73" title=" " alt="" coords="456,5,630,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="408,31,440,27,441,33,409,36"/>
+<area shape="rect" id="Node000004" href="$security-rules_8js.html#a8275de8c80b295058e3d69e1d6b270e5" title=" " alt="" coords="477,55,609,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="409,50,462,56,461,61,408,56"/>
+</map>

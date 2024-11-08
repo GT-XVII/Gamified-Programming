@@ -1,0 +1,84 @@
+\doxysection{Project\+Config\+Manager Class Reference}
+\hypertarget{class_project_config_manager}{}\label{class_project_config_manager}\index{ProjectConfigManager@{ProjectConfigManager}}
+
+
+Collaboration diagram for Project\+Config\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{class_project_config_manager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_project_config_manager_a8c80f61edee6189edc779c59acc1db9e}{constructor}} (\mbox{\hyperlink{database_2dist_2index_8cjs_8js_a7b225fcb720e4d5ed2bbf60e28a25e6d}{app}})
+\item 
+\mbox{\hyperlink{class_project_config_manager_abc7d98404f66575a0665a15e635e4013}{get\+Project\+Config}} ()
+\item 
+\mbox{\hyperlink{class_project_config_manager_ab638556ad871dfaf18fe3c06d23ee422}{update\+Project\+Config}} (project\+Config\+Options)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages (gets and updates) the current project config. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_project_config_manager_a8c80f61edee6189edc779c59acc1db9e}\index{ProjectConfigManager@{ProjectConfigManager}!constructor@{constructor}}
+\index{constructor@{constructor}!ProjectConfigManager@{ProjectConfigManager}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_project_config_manager_a8c80f61edee6189edc779c59acc1db9e} 
+Project\+Config\+Manager\+::constructor (\begin{DoxyParamCaption}\item[{}]{app}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Initializes a \doxylink{class_project_config_manager}{Project\+Config\+Manager} instance for a specified \doxylink{class_firebase_app}{Firebase\+App}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em app} & -\/ The app for this \doxylink{class_project_config_manager}{Project\+Config\+Manager} instance.\\
+\hline
+\end{DoxyParams}
+@constructor 
+
+References \mbox{\hyperlink{database_2dist_2index_8cjs_8js_a7b225fcb720e4d5ed2bbf60e28a25e6d}{app}}, and \mbox{\hyperlink{project-config-manager_8js_ac7589a803bd4e053198614715963a7ff}{auth\+\_\+api\+\_\+request\+\_\+1}}.
+
+\Hypertarget{class_project_config_manager_abc7d98404f66575a0665a15e635e4013}\index{ProjectConfigManager@{ProjectConfigManager}!getProjectConfig@{getProjectConfig}}
+\index{getProjectConfig@{getProjectConfig}!ProjectConfigManager@{ProjectConfigManager}}
+\doxysubsubsection{\texorpdfstring{getProjectConfig()}{getProjectConfig()}}
+{\footnotesize\ttfamily \label{class_project_config_manager_abc7d98404f66575a0665a15e635e4013} 
+Project\+Config\+Manager\+::get\+Project\+Config (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the project configuration.
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_a}{A} promise fulfilled with the project configuration. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{project-config-manager_8js_af5d32355ef73c5d89bd15c0a8cdd0fe4}{project\+\_\+config\+\_\+1}}, and \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ac70ac40ef8199c59316b35022dd21914}{response}}.
+
+\Hypertarget{class_project_config_manager_ab638556ad871dfaf18fe3c06d23ee422}\index{ProjectConfigManager@{ProjectConfigManager}!updateProjectConfig@{updateProjectConfig}}
+\index{updateProjectConfig@{updateProjectConfig}!ProjectConfigManager@{ProjectConfigManager}}
+\doxysubsubsection{\texorpdfstring{updateProjectConfig()}{updateProjectConfig()}}
+{\footnotesize\ttfamily \label{class_project_config_manager_ab638556ad871dfaf18fe3c06d23ee422} 
+Project\+Config\+Manager\+::update\+Project\+Config (\begin{DoxyParamCaption}\item[{}]{project\+Config\+Options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Updates an existing project configuration.
+
+
+\begin{DoxyParams}{Parameters}
+{\em project\+Config\+Options} & -\/ The properties to update on the project.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_a}{A} promise fulfilled with the updated project config. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{project-config-manager_8js_af5d32355ef73c5d89bd15c0a8cdd0fe4}{project\+\_\+config\+\_\+1}}, and \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ac70ac40ef8199c59316b35022dd21914}{response}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/firebase-\/admin/lib/auth/\mbox{\hyperlink{project-config-manager_8js}{project-\/config-\/manager.\+js}}\end{DoxyCompactItemize}

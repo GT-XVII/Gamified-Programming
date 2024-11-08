@@ -1,0 +1,7 @@
+<map id="PassThroughShim" name="PassThroughShim">
+<area shape="rect" id="Node000001" title=" " alt="" coords="92,120,210,328"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,155,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,84,114,119,109,121,95,86"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="179,5,267,72"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="207,86,194,121,189,119,202,84"/>
+</map>

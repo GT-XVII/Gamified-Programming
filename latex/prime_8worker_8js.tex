@@ -1,0 +1,175 @@
+\doxysection{backend/node\+\_\+modules/node-\/forge/lib/prime.worker.\+js File Reference}
+\hypertarget{prime_8worker_8js}{}\label{prime_8worker_8js}\index{backend/node\_modules/node-\/forge/lib/prime.worker.js@{backend/node\_modules/node-\/forge/lib/prime.worker.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{prime_8worker_8js_a7949b8d45aad872fe2b70365e90ee47b}{find\+Prime}} (\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}})
+\item 
+function \mbox{\hyperlink{prime_8worker_8js_aea202609ce8eb5116d6188855060317a}{is\+Probable\+Prime}} (\mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}})
+\item 
+function \mbox{\hyperlink{prime_8worker_8js_af5e86b48b4af40dd0030f9cf2502ad66}{run\+Miller\+Rabin}} (\mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}})
+\item 
+function \mbox{\hyperlink{prime_8worker_8js_af677dafd2a9dc7cb5f92b3c777069c5f}{get\+Prng}} ()
+\item 
+function \mbox{\hyperlink{prime_8worker_8js_a40b234d5eec9c10c7230a04cc6157154}{\+\_\+get\+Miller\+Rabin\+Tests}} (bits)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{prime_8worker_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./forge\textquotesingle{})
+\item 
+var \mbox{\hyperlink{prime_8worker_8js_aa710fabef1fd2fc7ea8d4e9114d7a842}{LOW\+\_\+\+PRIMES}} = \mbox{[}2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89,97,101,103,107,109,113,127,131,137,139,149,151,157,163,167,173,179,181,191,193,197,199,211,223,227,229,233,239,241,251,257,263,269,271,277,281,283,293,307,311,313,317,331,337,347,349,353,359,367,373,379,383,389,397,401,409,419,421,431,433,439,443,449,457,461,463,467,479,487,491,499,503,509,521,523,541,547,557,563,569,571,577,587,593,599,601,607,613,617,619,631,641,643,647,653,659,661,673,677,683,691,701,709,719,727,733,739,743,751,757,761,769,773,787,797,809,811,821,823,827,829,839,853,857,859,863,877,881,883,887,907,911,919,929,937,941,947,953,967,971,977,983,991,997\mbox{]}
+\item 
+var \mbox{\hyperlink{prime_8worker_8js_ac9066e193d60644fea31c8da68d22640}{LP\+\_\+\+LIMIT}} = (1 $<$$<$ 26) / \mbox{\hyperlink{prime_8worker_8js_aa710fabef1fd2fc7ea8d4e9114d7a842}{LOW\+\_\+\+PRIMES}}\mbox{[}\mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a7fdcf4c82c9946bf2b0b80829a7ab230}{LOW\+\_\+\+PRIMES.\+length}} -\/ 1\mbox{]}
+\item 
+var \mbox{\hyperlink{prime_8worker_8js_a05c51c983abe22ee2f0f31224f86c538}{Big\+Integer}} = forge.\+jsbn.\+Big\+Integer
+\item 
+var \mbox{\hyperlink{prime_8worker_8js_ac5a65824ef28b217991896c048833ee2}{BIG\+\_\+\+TWO}} = new \mbox{\hyperlink{prime_8worker_8min_8js_aadd7f6bee64caef46a8c559f79d8f832}{Big\+Integer}}(null)
+\item 
+var \mbox{\hyperlink{prime_8worker_8js_ab0fe8055be9f4315d2bb1d2cdecf1d16}{GCD\+\_\+30\+\_\+\+DELTA}} = \mbox{[}6, 4, 2, 4, 2, 4, 6, 2\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{prime_8worker_8js_a40b234d5eec9c10c7230a04cc6157154}\index{prime.worker.js@{prime.worker.js}!\_getMillerRabinTests@{\_getMillerRabinTests}}
+\index{\_getMillerRabinTests@{\_getMillerRabinTests}!prime.worker.js@{prime.worker.js}}
+\doxysubsubsection{\texorpdfstring{\_getMillerRabinTests()}{\_getMillerRabinTests()}}
+{\footnotesize\ttfamily \label{prime_8worker_8js_a40b234d5eec9c10c7230a04cc6157154} 
+function \+\_\+get\+Miller\+Rabin\+Tests (\begin{DoxyParamCaption}\item[{}]{bits}{}\end{DoxyParamCaption})}
+
+Returns the required number of Miller-\/\+Rabin tests to generate a prime with an error probability of (1/2)\texorpdfstring{$^\wedge$}{\string^}80.
+
+See Handbook of Applied Cryptography Chapter 4, Table 4.\+4.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bits} & the bit size.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the required number of iterations. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{prime_8worker_8js_a40b234d5eec9c10c7230a04cc6157154_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{prime_8worker_8js_a7949b8d45aad872fe2b70365e90ee47b}\index{prime.worker.js@{prime.worker.js}!findPrime@{findPrime}}
+\index{findPrime@{findPrime}!prime.worker.js@{prime.worker.js}}
+\doxysubsubsection{\texorpdfstring{findPrime()}{findPrime()}}
+{\footnotesize\ttfamily \label{prime_8worker_8js_a7949b8d45aad872fe2b70365e90ee47b} 
+function find\+Prime (\begin{DoxyParamCaption}\item[{}]{data}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{prime_8worker_8js_a05c51c983abe22ee2f0f31224f86c538}{Big\+Integer}}, \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}, \mbox{\hyperlink{prime_8worker_8js_ab0fe8055be9f4315d2bb1d2cdecf1d16}{GCD\+\_\+30\+\_\+\+DELTA}}, \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}, and \mbox{\hyperlink{prime_8worker_8min_8js_a7ef3c6529e0ada39b4e8a1ce351d5b62}{is\+Probable\+Prime}}.
+
+\Hypertarget{prime_8worker_8js_af677dafd2a9dc7cb5f92b3c777069c5f}\index{prime.worker.js@{prime.worker.js}!getPrng@{getPrng}}
+\index{getPrng@{getPrng}!prime.worker.js@{prime.worker.js}}
+\doxysubsubsection{\texorpdfstring{getPrng()}{getPrng()}}
+{\footnotesize\ttfamily \label{prime_8worker_8js_af677dafd2a9dc7cb5f92b3c777069c5f} 
+function get\+Prng (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{prime_8worker_8js_af677dafd2a9dc7cb5f92b3c777069c5f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{prime_8worker_8js_aea202609ce8eb5116d6188855060317a}\index{prime.worker.js@{prime.worker.js}!isProbablePrime@{isProbablePrime}}
+\index{isProbablePrime@{isProbablePrime}!prime.worker.js@{prime.worker.js}}
+\doxysubsubsection{\texorpdfstring{isProbablePrime()}{isProbablePrime()}}
+{\footnotesize\ttfamily \label{prime_8worker_8js_aea202609ce8eb5116d6188855060317a} 
+function is\+Probable\+Prime (\begin{DoxyParamCaption}\item[{}]{n}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}, \mbox{\hyperlink{ordered-map_8min_8js_a2e0772d176c27e9cea01defba2a9575a}{j}}, \mbox{\hyperlink{prime_8worker_8js_aa710fabef1fd2fc7ea8d4e9114d7a842}{LOW\+\_\+\+PRIMES}}, \mbox{\hyperlink{prime_8worker_8js_ac9066e193d60644fea31c8da68d22640}{LP\+\_\+\+LIMIT}}, \mbox{\hyperlink{agent-base_2node__modules_2ms_2index_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m}}, \mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}, and \mbox{\hyperlink{prime_8worker_8js_af5e86b48b4af40dd0030f9cf2502ad66}{run\+Miller\+Rabin()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{prime_8worker_8js_aea202609ce8eb5116d6188855060317a_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{prime_8worker_8js_af5e86b48b4af40dd0030f9cf2502ad66}\index{prime.worker.js@{prime.worker.js}!runMillerRabin@{runMillerRabin}}
+\index{runMillerRabin@{runMillerRabin}!prime.worker.js@{prime.worker.js}}
+\doxysubsubsection{\texorpdfstring{runMillerRabin()}{runMillerRabin()}}
+{\footnotesize\ttfamily \label{prime_8worker_8js_af5e86b48b4af40dd0030f9cf2502ad66} 
+function run\+Miller\+Rabin (\begin{DoxyParamCaption}\item[{}]{n}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{prime_8worker_8js_a40b234d5eec9c10c7230a04cc6157154}{\+\_\+get\+Miller\+Rabin\+Tests()}}, \mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}, \mbox{\hyperlink{prime_8worker_8js_a05c51c983abe22ee2f0f31224f86c538}{Big\+Integer}}, \mbox{\hyperlink{uuid_8min_8js_aeb337d295abaddb5ec3cb34cc2e2bbc9}{d}}, \mbox{\hyperlink{prime_8worker_8js_af677dafd2a9dc7cb5f92b3c777069c5f}{get\+Prng()}}, \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}, \mbox{\hyperlink{ordered-map_8min_8js_a2e0772d176c27e9cea01defba2a9575a}{j}}, \mbox{\hyperlink{ordered-map_8min_8js_aee3ae2d5bdb3d18f52a8134a79a88d14}{k}}, \mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}, \mbox{\hyperlink{prng_8js_a42015e3f47533522897fbc2c90b723dd}{prng}}, and \mbox{\hyperlink{ordered-map_8min_8js_ad9a7d92cb87932d25187fdec3ba1b621}{s}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{prime_8worker_8js_af5e86b48b4af40dd0030f9cf2502ad66_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{prime_8worker_8js_af5e86b48b4af40dd0030f9cf2502ad66_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{prime_8worker_8js_ac5a65824ef28b217991896c048833ee2}\index{prime.worker.js@{prime.worker.js}!BIG\_TWO@{BIG\_TWO}}
+\index{BIG\_TWO@{BIG\_TWO}!prime.worker.js@{prime.worker.js}}
+\doxysubsubsection{\texorpdfstring{BIG\_TWO}{BIG\_TWO}}
+{\footnotesize\ttfamily \label{prime_8worker_8js_ac5a65824ef28b217991896c048833ee2} 
+var BIG\+\_\+\+TWO = new \mbox{\hyperlink{prime_8worker_8min_8js_aadd7f6bee64caef46a8c559f79d8f832}{Big\+Integer}}(null)}
+
+\Hypertarget{prime_8worker_8js_a05c51c983abe22ee2f0f31224f86c538}\index{prime.worker.js@{prime.worker.js}!BigInteger@{BigInteger}}
+\index{BigInteger@{BigInteger}!prime.worker.js@{prime.worker.js}}
+\doxysubsubsection{\texorpdfstring{BigInteger}{BigInteger}}
+{\footnotesize\ttfamily \label{prime_8worker_8js_a05c51c983abe22ee2f0f31224f86c538} 
+var Big\+Integer = forge.\+jsbn.\+Big\+Integer}
+
+\Hypertarget{prime_8worker_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}\index{prime.worker.js@{prime.worker.js}!forge@{forge}}
+\index{forge@{forge}!prime.worker.js@{prime.worker.js}}
+\doxysubsubsection{\texorpdfstring{forge}{forge}}
+{\footnotesize\ttfamily \label{prime_8worker_8js_ab4dbef01e35b8e6d06087c0542ba9e2c} 
+var forge = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./forge\textquotesingle{})}
+
+RSA Key Generation Worker.
+
+\begin{DoxyAuthor}{Author}
+Dave Longley
+\end{DoxyAuthor}
+Copyright (c) 2013 Digital Bazaar, Inc. \Hypertarget{prime_8worker_8js_ab0fe8055be9f4315d2bb1d2cdecf1d16}\index{prime.worker.js@{prime.worker.js}!GCD\_30\_DELTA@{GCD\_30\_DELTA}}
+\index{GCD\_30\_DELTA@{GCD\_30\_DELTA}!prime.worker.js@{prime.worker.js}}
+\doxysubsubsection{\texorpdfstring{GCD\_30\_DELTA}{GCD\_30\_DELTA}}
+{\footnotesize\ttfamily \label{prime_8worker_8js_ab0fe8055be9f4315d2bb1d2cdecf1d16} 
+var GCD\+\_\+30\+\_\+\+DELTA = \mbox{[}6, 4, 2, 4, 2, 4, 6, 2\mbox{]}}
+
+\Hypertarget{prime_8worker_8js_aa710fabef1fd2fc7ea8d4e9114d7a842}\index{prime.worker.js@{prime.worker.js}!LOW\_PRIMES@{LOW\_PRIMES}}
+\index{LOW\_PRIMES@{LOW\_PRIMES}!prime.worker.js@{prime.worker.js}}
+\doxysubsubsection{\texorpdfstring{LOW\_PRIMES}{LOW\_PRIMES}}
+{\footnotesize\ttfamily \label{prime_8worker_8js_aa710fabef1fd2fc7ea8d4e9114d7a842} 
+var LOW\+\_\+\+PRIMES = \mbox{[}2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89,97,101,103,107,109,113,127,131,137,139,149,151,157,163,167,173,179,181,191,193,197,199,211,223,227,229,233,239,241,251,257,263,269,271,277,281,283,293,307,311,313,317,331,337,347,349,353,359,367,373,379,383,389,397,401,409,419,421,431,433,439,443,449,457,461,463,467,479,487,491,499,503,509,521,523,541,547,557,563,569,571,577,587,593,599,601,607,613,617,619,631,641,643,647,653,659,661,673,677,683,691,701,709,719,727,733,739,743,751,757,761,769,773,787,797,809,811,821,823,827,829,839,853,857,859,863,877,881,883,887,907,911,919,929,937,941,947,953,967,971,977,983,991,997\mbox{]}}
+
+\Hypertarget{prime_8worker_8js_ac9066e193d60644fea31c8da68d22640}\index{prime.worker.js@{prime.worker.js}!LP\_LIMIT@{LP\_LIMIT}}
+\index{LP\_LIMIT@{LP\_LIMIT}!prime.worker.js@{prime.worker.js}}
+\doxysubsubsection{\texorpdfstring{LP\_LIMIT}{LP\_LIMIT}}
+{\footnotesize\ttfamily \label{prime_8worker_8js_ac9066e193d60644fea31c8da68d22640} 
+var LP\+\_\+\+LIMIT = (1 $<$$<$ 26) / \mbox{\hyperlink{prime_8worker_8js_aa710fabef1fd2fc7ea8d4e9114d7a842}{LOW\+\_\+\+PRIMES}}\mbox{[}\mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a7fdcf4c82c9946bf2b0b80829a7ab230}{LOW\+\_\+\+PRIMES.\+length}} -\/ 1\mbox{]}}
+

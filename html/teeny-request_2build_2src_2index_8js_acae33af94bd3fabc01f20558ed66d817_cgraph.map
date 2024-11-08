@@ -1,0 +1,11 @@
+<map id="teenyRequest" name="teenyRequest">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,108,80"/>
+<area shape="rect" id="Node000002" href="$teeny-request_2build_2src_2index_8js.html#a4299a2f1f8c164997a7f04d65982ce3e" title=" " alt="" coords="167,5,316,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,51,176,33,177,38,108,57"/>
+<area shape="rect" id="Node000003" href="$teeny-request_2build_2src_2index_8js.html#aa6e2935f45845317cc727954d87ec6f7" title=" " alt="" coords="156,55,328,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="108,65,140,65,140,70,108,70"/>
+<area shape="rect" id="Node000004" href="$teeny-request_2build_2src_2index_8js.html#a0c6ab56e63d5cbb0eb2a72db7faadf4d" title=" " alt="" coords="164,104,320,130"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="108,78,177,97,176,102,107,84"/>
+<area shape="rect" id="Node000005" href="$__stream__duplex_8js.html#a472985ef50ed84466f5fce48a490c29b" title=" " alt="" coords="376,104,436,130"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="320,114,360,114,360,120,320,120"/>
+</map>

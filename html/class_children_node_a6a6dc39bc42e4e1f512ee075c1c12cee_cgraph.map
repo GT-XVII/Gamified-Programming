@@ -1,0 +1,7 @@
+<map id="ChildrenNode::getLastChild" name="ChildrenNode::getLastChild">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,187,31"/>
+<area shape="rect" id="Node000002" href="$class_children_node.html#a09c4f019654aec373d44e1e8b9e841e6" title=" " alt="" coords="235,5,451,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="187,16,219,16,219,21,187,21"/>
+<area shape="rect" id="Node000003" href="$class_children_node.html#a9601f9b7b951df246d69e5b780cf3ead" title=" " alt="" coords="499,5,688,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="452,16,483,16,483,21,452,21"/>
+</map>

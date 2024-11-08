@@ -1,0 +1,29 @@
+\doxysection{/\+Users/nicoletiokhin/\+Desktop/\+Software Semester 3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/lodash/conforms\+To.\+js}
+\hypertarget{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_ea04ebd05231ae74a84ca097cd71af41}{}\label{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_ea04ebd05231ae74a84ca097cd71af41}Checks if {\ttfamily object} conforms to {\ttfamily source} by invoking the predicate properties of {\ttfamily source} with the corresponding property values of {\ttfamily object}.
+
+{\bfseries{Note\+:}} This method is equivalent to {\ttfamily \+\_\+.\+conforms} when {\ttfamily source} is partially applied.
+
+@member\+Of \+\_\+ \begin{DoxySince}{Since}
+4.\+14.\+0
+\end{DoxySince}
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Object\}} & object The object to inspect. \\
+\hline
+{\em \{\+Object\}} & source The object of property predicates to conform to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{boolean\} Returns {\ttfamily true} if {\ttfamily object} conforms, else {\ttfamily false}.
+\end{DoxyReturn}
+var object = \{ \textquotesingle{}a\textquotesingle{}\+: 1, \textquotesingle{}b\textquotesingle{}\+: 2 \};
+
+\+\_\+.\+conforms\+To(object, \{ \textquotesingle{}b\textquotesingle{}\+: function(n) \{ return n \texorpdfstring{$>$}{>} 1; \} \}); // =\texorpdfstring{$>$}{>} true
+
+\+\_\+.\+conforms\+To(object, \{ \textquotesingle{}b\textquotesingle{}\+: function(n) \{ return n \texorpdfstring{$>$}{>} 2; \} \}); // =\texorpdfstring{$>$}{>} false
+
+
+\begin{DoxyCodeInclude}{0}
+
+\end{DoxyCodeInclude}
+ Semester \doxylink{conforms_to_8js}{3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/lodash/conforms\+To.\+js} 

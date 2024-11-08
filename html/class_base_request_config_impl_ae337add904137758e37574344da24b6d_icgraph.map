@@ -1,0 +1,9 @@
+<map id="BaseRequestConfigImpl::urlWithProtocol" name="BaseRequestConfigImpl::urlWithProtocol">
+<area shape="rect" id="Node000001" title=" " alt="" coords="430,39,593,79"/>
+<area shape="rect" id="Node000002" href="$class_base_request_config_impl.html#a4b69942f1d05199193ec8513bda6ca44" title=" " alt="" coords="219,39,382,79"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="415,62,382,62,382,56,415,56"/>
+<area shape="rect" id="Node000003" href="$class_http2_request_config_impl.html#a7091575ad433e16016d7e8172aea049b" title=" " alt="" coords="5,5,171,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="203,46,171,41,172,36,204,41"/>
+<area shape="rect" id="Node000004" href="$class_http_request_config_impl.html#aadc63f410e905fb52f3bb33e52c4df16" title=" " alt="" coords="9,71,167,111"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="204,76,168,82,167,76,203,71"/>
+</map>

@@ -1,0 +1,85 @@
+\doxysection{backend/node\+\_\+modules/jose/dist/node/cjs/jws/flattened/sign.js File Reference}
+\hypertarget{jose_2dist_2node_2cjs_2jws_2flattened_2sign_8js}{}\label{jose_2dist_2node_2cjs_2jws_2flattened_2sign_8js}\index{backend/node\_modules/jose/dist/node/cjs/jws/flattened/sign.js@{backend/node\_modules/jose/dist/node/cjs/jws/flattened/sign.js}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_flattened_sign}{Flattened\+Sign}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{jose_2dist_2node_2cjs_2jws_2flattened_2sign_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{jose_2dist_2node_2cjs_2jws_2flattened_2sign_8js_a66abe4a940fad0b0696ad6e7d656eb90}{Flattened\+Sign}} = void 0
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{jose_2dist_2node_2cjs_2jws_2flattened_2sign_8js_a956fb17ffd600aff230acef52df9eee4}{base64url\+\_\+js\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../../runtime/base64url.\+js"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{jose_2dist_2node_2cjs_2jws_2flattened_2sign_8js_a28bd0d8e580a9d7bf98b83da9d1d54d5}{sign\+\_\+js\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../../runtime/sign.\+js"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{jose_2dist_2node_2cjs_2jws_2flattened_2sign_8js_ad0dcd255a6fdf56ec75700acf8307011}{is\+\_\+disjoint\+\_\+js\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../../lib/is\+\_\+disjoint.\+js"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{jose_2dist_2node_2cjs_2jws_2flattened_2sign_8js_a285fbd72467b60dd40c49c8c9166b064}{errors\+\_\+js\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../../util/errors.\+js"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{jose_2dist_2node_2cjs_2jws_2flattened_2sign_8js_aa6950734ec05ac96ae4e199bbf64b4b9}{buffer\+\_\+utils\+\_\+js\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../../lib/buffer\+\_\+utils.\+js"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{jose_2dist_2node_2cjs_2jws_2flattened_2sign_8js_ad39d6793ce05bb9c41d51205d70607e5}{check\+\_\+key\+\_\+type\+\_\+js\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../../lib/check\+\_\+key\+\_\+type.\+js"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{jose_2dist_2node_2cjs_2jws_2flattened_2sign_8js_a44702d6845524171ea32290c861f20f2}{validate\+\_\+crit\+\_\+js\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../../lib/validate\+\_\+crit.\+js"{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{jose_2dist_2node_2cjs_2jws_2flattened_2sign_8js_a956fb17ffd600aff230acef52df9eee4}\index{sign.js@{sign.js}!base64url\_js\_1@{base64url\_js\_1}}
+\index{base64url\_js\_1@{base64url\_js\_1}!sign.js@{sign.js}}
+\doxysubsubsection{\texorpdfstring{base64url\_js\_1}{base64url\_js\_1}}
+{\footnotesize\ttfamily \label{jose_2dist_2node_2cjs_2jws_2flattened_2sign_8js_a956fb17ffd600aff230acef52df9eee4} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} base64url\+\_\+js\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../../runtime/base64url.\+js"{})}
+
+\Hypertarget{jose_2dist_2node_2cjs_2jws_2flattened_2sign_8js_aa6950734ec05ac96ae4e199bbf64b4b9}\index{sign.js@{sign.js}!buffer\_utils\_js\_1@{buffer\_utils\_js\_1}}
+\index{buffer\_utils\_js\_1@{buffer\_utils\_js\_1}!sign.js@{sign.js}}
+\doxysubsubsection{\texorpdfstring{buffer\_utils\_js\_1}{buffer\_utils\_js\_1}}
+{\footnotesize\ttfamily \label{jose_2dist_2node_2cjs_2jws_2flattened_2sign_8js_aa6950734ec05ac96ae4e199bbf64b4b9} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} buffer\+\_\+utils\+\_\+js\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../../lib/buffer\+\_\+utils.\+js"{})}
+
+\Hypertarget{jose_2dist_2node_2cjs_2jws_2flattened_2sign_8js_ad39d6793ce05bb9c41d51205d70607e5}\index{sign.js@{sign.js}!check\_key\_type\_js\_1@{check\_key\_type\_js\_1}}
+\index{check\_key\_type\_js\_1@{check\_key\_type\_js\_1}!sign.js@{sign.js}}
+\doxysubsubsection{\texorpdfstring{check\_key\_type\_js\_1}{check\_key\_type\_js\_1}}
+{\footnotesize\ttfamily \label{jose_2dist_2node_2cjs_2jws_2flattened_2sign_8js_ad39d6793ce05bb9c41d51205d70607e5} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} check\+\_\+key\+\_\+type\+\_\+js\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../../lib/check\+\_\+key\+\_\+type.\+js"{})}
+
+\Hypertarget{jose_2dist_2node_2cjs_2jws_2flattened_2sign_8js_a285fbd72467b60dd40c49c8c9166b064}\index{sign.js@{sign.js}!errors\_js\_1@{errors\_js\_1}}
+\index{errors\_js\_1@{errors\_js\_1}!sign.js@{sign.js}}
+\doxysubsubsection{\texorpdfstring{errors\_js\_1}{errors\_js\_1}}
+{\footnotesize\ttfamily \label{jose_2dist_2node_2cjs_2jws_2flattened_2sign_8js_a285fbd72467b60dd40c49c8c9166b064} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} errors\+\_\+js\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../../util/errors.\+js"{})}
+
+\Hypertarget{jose_2dist_2node_2cjs_2jws_2flattened_2sign_8js_a66abe4a940fad0b0696ad6e7d656eb90}\index{sign.js@{sign.js}!FlattenedSign@{FlattenedSign}}
+\index{FlattenedSign@{FlattenedSign}!sign.js@{sign.js}}
+\doxysubsubsection{\texorpdfstring{FlattenedSign}{FlattenedSign}}
+{\footnotesize\ttfamily \label{jose_2dist_2node_2cjs_2jws_2flattened_2sign_8js_a66abe4a940fad0b0696ad6e7d656eb90} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} Flattened\+Sign = void 0}
+
+\Hypertarget{jose_2dist_2node_2cjs_2jws_2flattened_2sign_8js_ad0dcd255a6fdf56ec75700acf8307011}\index{sign.js@{sign.js}!is\_disjoint\_js\_1@{is\_disjoint\_js\_1}}
+\index{is\_disjoint\_js\_1@{is\_disjoint\_js\_1}!sign.js@{sign.js}}
+\doxysubsubsection{\texorpdfstring{is\_disjoint\_js\_1}{is\_disjoint\_js\_1}}
+{\footnotesize\ttfamily \label{jose_2dist_2node_2cjs_2jws_2flattened_2sign_8js_ad0dcd255a6fdf56ec75700acf8307011} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} is\+\_\+disjoint\+\_\+js\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../../lib/is\+\_\+disjoint.\+js"{})}
+
+\Hypertarget{jose_2dist_2node_2cjs_2jws_2flattened_2sign_8js_a28bd0d8e580a9d7bf98b83da9d1d54d5}\index{sign.js@{sign.js}!sign\_js\_1@{sign\_js\_1}}
+\index{sign\_js\_1@{sign\_js\_1}!sign.js@{sign.js}}
+\doxysubsubsection{\texorpdfstring{sign\_js\_1}{sign\_js\_1}}
+{\footnotesize\ttfamily \label{jose_2dist_2node_2cjs_2jws_2flattened_2sign_8js_a28bd0d8e580a9d7bf98b83da9d1d54d5} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} sign\+\_\+js\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../../runtime/sign.\+js"{})}
+
+\Hypertarget{jose_2dist_2node_2cjs_2jws_2flattened_2sign_8js_ae2475e10618961c050dcba04e8c42331}\index{sign.js@{sign.js}!strict@{strict}}
+\index{strict@{strict}!sign.js@{sign.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{jose_2dist_2node_2cjs_2jws_2flattened_2sign_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+
+\Hypertarget{jose_2dist_2node_2cjs_2jws_2flattened_2sign_8js_a44702d6845524171ea32290c861f20f2}\index{sign.js@{sign.js}!validate\_crit\_js\_1@{validate\_crit\_js\_1}}
+\index{validate\_crit\_js\_1@{validate\_crit\_js\_1}!sign.js@{sign.js}}
+\doxysubsubsection{\texorpdfstring{validate\_crit\_js\_1}{validate\_crit\_js\_1}}
+{\footnotesize\ttfamily \label{jose_2dist_2node_2cjs_2jws_2flattened_2sign_8js_a44702d6845524171ea32290c861f20f2} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} validate\+\_\+crit\+\_\+js\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../../lib/validate\+\_\+crit.\+js"{})}
+

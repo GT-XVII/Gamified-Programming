@@ -1,0 +1,328 @@
+\doxysection{Transport\+Manager Class Reference}
+\hypertarget{class_transport_manager}{}\label{class_transport_manager}\index{TransportManager@{TransportManager}}
+
+
+Collaboration diagram for Transport\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{class_transport_manager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_transport_manager_adfbe78f013e450e0e109bee8a4fd88e2}{constructor}} (repo\+Info)
+\item 
+\mbox{\hyperlink{class_transport_manager_a702cd82a6fab9c35dd166120d1a89951}{init\+Transports\+\_\+}} (repo\+Info)
+\item 
+\mbox{\hyperlink{class_transport_manager_a311251d4d847dff5694d1babd3b55dd1}{initial\+Transport}} ()
+\item 
+\mbox{\hyperlink{class_transport_manager_abb5142d0ba00b452e9f9a12fa690f74f}{upgrade\+Transport}} ()
+\item 
+\mbox{\hyperlink{class_transport_manager_adfbe78f013e450e0e109bee8a4fd88e2}{constructor}} (repo\+Info)
+\item 
+\mbox{\hyperlink{class_transport_manager_a702cd82a6fab9c35dd166120d1a89951}{init\+Transports\+\_\+}} (repo\+Info)
+\item 
+\mbox{\hyperlink{class_transport_manager_a311251d4d847dff5694d1babd3b55dd1}{initial\+Transport}} ()
+\item 
+\mbox{\hyperlink{class_transport_manager_abb5142d0ba00b452e9f9a12fa690f74f}{upgrade\+Transport}} ()
+\item 
+\mbox{\hyperlink{class_transport_manager_adfbe78f013e450e0e109bee8a4fd88e2}{constructor}} (repo\+Info)
+\item 
+\mbox{\hyperlink{class_transport_manager_a702cd82a6fab9c35dd166120d1a89951}{init\+Transports\+\_\+}} (repo\+Info)
+\item 
+\mbox{\hyperlink{class_transport_manager_a311251d4d847dff5694d1babd3b55dd1}{initial\+Transport}} ()
+\item 
+\mbox{\hyperlink{class_transport_manager_abb5142d0ba00b452e9f9a12fa690f74f}{upgrade\+Transport}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} \mbox{\hyperlink{class_transport_manager_a4717c74140b2b59497eeeb21245d68db}{ALL\+\_\+\+TRANSPORTS}} ()
+\item 
+static \mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} \mbox{\hyperlink{class_transport_manager_a942a53568a87d24f4f215e8dddaab7cd}{IS\+\_\+\+TRANSPORT\+\_\+\+INITIALIZED}} ()
+\item 
+static \mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} \mbox{\hyperlink{class_transport_manager_a4717c74140b2b59497eeeb21245d68db}{ALL\+\_\+\+TRANSPORTS}} ()
+\item 
+static \mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} \mbox{\hyperlink{class_transport_manager_a942a53568a87d24f4f215e8dddaab7cd}{IS\+\_\+\+TRANSPORT\+\_\+\+INITIALIZED}} ()
+\item 
+static \mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} \mbox{\hyperlink{class_transport_manager_a4717c74140b2b59497eeeb21245d68db}{ALL\+\_\+\+TRANSPORTS}} ()
+\item 
+static \mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} \mbox{\hyperlink{class_transport_manager_a942a53568a87d24f4f215e8dddaab7cd}{IS\+\_\+\+TRANSPORT\+\_\+\+INITIALIZED}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+@license Copyright 2017 Google LLC
+
+Licensed under the Apache License, Version 2.\+0 (the "{}\+License"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+\href{http://www.apache.org/licenses/LICENSE-2.0}{\texttt{ http\+://www.\+apache.\+org/licenses/\+LICENSE-\/2.\+0}}
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "{}\+AS IS"{} BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. Currently simplistic, this class manages what transport a \doxylink{class_connection}{Connection} should use at various stages of its lifecycle.
+
+It starts with longpolling in a browser, and httppolling on node. It then upgrades to websockets if they are available. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_transport_manager_a4717c74140b2b59497eeeb21245d68db}\index{TransportManager@{TransportManager}!ALL\_TRANSPORTS@{ALL\_TRANSPORTS}}
+\index{ALL\_TRANSPORTS@{ALL\_TRANSPORTS}!TransportManager@{TransportManager}}
+\doxysubsubsection{\texorpdfstring{ALL\_TRANSPORTS()}{ALL\_TRANSPORTS()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_transport_manager_a4717c74140b2b59497eeeb21245d68db} 
+static \mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} Transport\+Manager\+::\+ALL\+\_\+\+TRANSPORTS (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+References \mbox{\hyperlink{database_2dist_2index_8esm5_8js_a1d735f8b52f37237bdeac3e7b47952a4}{Browser\+Poll\+Connection}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_transport_manager_a4717c74140b2b59497eeeb21245d68db_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_transport_manager_a4717c74140b2b59497eeeb21245d68db}\index{TransportManager@{TransportManager}!ALL\_TRANSPORTS@{ALL\_TRANSPORTS}}
+\index{ALL\_TRANSPORTS@{ALL\_TRANSPORTS}!TransportManager@{TransportManager}}
+\doxysubsubsection{\texorpdfstring{ALL\_TRANSPORTS()}{ALL\_TRANSPORTS()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_transport_manager_a4717c74140b2b59497eeeb21245d68db} 
+static \mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} Transport\+Manager\+::\+ALL\+\_\+\+TRANSPORTS (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+References \mbox{\hyperlink{database_2dist_2index_8esm5_8js_a1d735f8b52f37237bdeac3e7b47952a4}{Browser\+Poll\+Connection}}.
+
+\Hypertarget{class_transport_manager_a4717c74140b2b59497eeeb21245d68db}\index{TransportManager@{TransportManager}!ALL\_TRANSPORTS@{ALL\_TRANSPORTS}}
+\index{ALL\_TRANSPORTS@{ALL\_TRANSPORTS}!TransportManager@{TransportManager}}
+\doxysubsubsection{\texorpdfstring{ALL\_TRANSPORTS()}{ALL\_TRANSPORTS()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_transport_manager_a4717c74140b2b59497eeeb21245d68db} 
+static \mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} Transport\+Manager\+::\+ALL\+\_\+\+TRANSPORTS (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+References \mbox{\hyperlink{database_2dist_2index_8esm5_8js_a1d735f8b52f37237bdeac3e7b47952a4}{Browser\+Poll\+Connection}}.
+
+\Hypertarget{class_transport_manager_adfbe78f013e450e0e109bee8a4fd88e2}\index{TransportManager@{TransportManager}!constructor@{constructor}}
+\index{constructor@{constructor}!TransportManager@{TransportManager}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_transport_manager_adfbe78f013e450e0e109bee8a4fd88e2} 
+Transport\+Manager\+::constructor (\begin{DoxyParamCaption}\item[{}]{repo\+Info}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em repo\+Info} & -\/ \doxylink{class_metadata}{Metadata} around the namespace we\textquotesingle{}re connecting to \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{class_transport_manager_a702cd82a6fab9c35dd166120d1a89951}{init\+Transports\+\_\+()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_transport_manager_adfbe78f013e450e0e109bee8a4fd88e2_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_transport_manager_adfbe78f013e450e0e109bee8a4fd88e2}\index{TransportManager@{TransportManager}!constructor@{constructor}}
+\index{constructor@{constructor}!TransportManager@{TransportManager}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_transport_manager_adfbe78f013e450e0e109bee8a4fd88e2} 
+Transport\+Manager\+::constructor (\begin{DoxyParamCaption}\item[{}]{repo\+Info}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em repo\+Info} & -\/ \doxylink{class_metadata}{Metadata} around the namespace we\textquotesingle{}re connecting to \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{class_transport_manager_a702cd82a6fab9c35dd166120d1a89951}{init\+Transports\+\_\+()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_transport_manager_adfbe78f013e450e0e109bee8a4fd88e2_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_transport_manager_adfbe78f013e450e0e109bee8a4fd88e2}\index{TransportManager@{TransportManager}!constructor@{constructor}}
+\index{constructor@{constructor}!TransportManager@{TransportManager}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_transport_manager_adfbe78f013e450e0e109bee8a4fd88e2} 
+Transport\+Manager\+::constructor (\begin{DoxyParamCaption}\item[{}]{repo\+Info}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em repo\+Info} & -\/ \doxylink{class_metadata}{Metadata} around the namespace we\textquotesingle{}re connecting to \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{class_transport_manager_a702cd82a6fab9c35dd166120d1a89951}{init\+Transports\+\_\+()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_transport_manager_adfbe78f013e450e0e109bee8a4fd88e2_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_transport_manager_a311251d4d847dff5694d1babd3b55dd1}\index{TransportManager@{TransportManager}!initialTransport@{initialTransport}}
+\index{initialTransport@{initialTransport}!TransportManager@{TransportManager}}
+\doxysubsubsection{\texorpdfstring{initialTransport()}{initialTransport()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_transport_manager_a311251d4d847dff5694d1babd3b55dd1} 
+Transport\+Manager\+::initial\+Transport (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+The constructor for the initial transport to use 
+\end{DoxyReturn}
+\Hypertarget{class_transport_manager_a311251d4d847dff5694d1babd3b55dd1}\index{TransportManager@{TransportManager}!initialTransport@{initialTransport}}
+\index{initialTransport@{initialTransport}!TransportManager@{TransportManager}}
+\doxysubsubsection{\texorpdfstring{initialTransport()}{initialTransport()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_transport_manager_a311251d4d847dff5694d1babd3b55dd1} 
+Transport\+Manager\+::initial\+Transport (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+The constructor for the initial transport to use 
+\end{DoxyReturn}
+\Hypertarget{class_transport_manager_a311251d4d847dff5694d1babd3b55dd1}\index{TransportManager@{TransportManager}!initialTransport@{initialTransport}}
+\index{initialTransport@{initialTransport}!TransportManager@{TransportManager}}
+\doxysubsubsection{\texorpdfstring{initialTransport()}{initialTransport()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_transport_manager_a311251d4d847dff5694d1babd3b55dd1} 
+Transport\+Manager\+::initial\+Transport (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+The constructor for the initial transport to use 
+\end{DoxyReturn}
+\Hypertarget{class_transport_manager_a702cd82a6fab9c35dd166120d1a89951}\index{TransportManager@{TransportManager}!initTransports\_@{initTransports\_}}
+\index{initTransports\_@{initTransports\_}!TransportManager@{TransportManager}}
+\doxysubsubsection{\texorpdfstring{initTransports\_()}{initTransports\_()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_transport_manager_a702cd82a6fab9c35dd166120d1a89951} 
+Transport\+Manager\+::init\+Transports\+\_\+ (\begin{DoxyParamCaption}\item[{}]{repo\+Info}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{class_transport_manager_a4717c74140b2b59497eeeb21245d68db}{ALL\+\_\+\+TRANSPORTS()}}, \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}, \mbox{\hyperlink{class_web_socket_connection_a60edc7f46f096c5fb18569abc1599011}{Web\+Socket\+Connection\+::previously\+Failed()}}, and \mbox{\hyperlink{database_2dist_2node-esm_2index_8node_8esm_8js_a153ef7f6fccf9bae313bac28706c3e91}{warn}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_transport_manager_a702cd82a6fab9c35dd166120d1a89951_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_transport_manager_a702cd82a6fab9c35dd166120d1a89951_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_transport_manager_a702cd82a6fab9c35dd166120d1a89951}\index{TransportManager@{TransportManager}!initTransports\_@{initTransports\_}}
+\index{initTransports\_@{initTransports\_}!TransportManager@{TransportManager}}
+\doxysubsubsection{\texorpdfstring{initTransports\_()}{initTransports\_()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_transport_manager_a702cd82a6fab9c35dd166120d1a89951} 
+Transport\+Manager\+::init\+Transports\+\_\+ (\begin{DoxyParamCaption}\item[{}]{repo\+Info}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{class_transport_manager_a4717c74140b2b59497eeeb21245d68db}{ALL\+\_\+\+TRANSPORTS()}}, \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}, \mbox{\hyperlink{class_web_socket_connection_a60edc7f46f096c5fb18569abc1599011}{Web\+Socket\+Connection\+::previously\+Failed()}}, and \mbox{\hyperlink{database_2dist_2node-esm_2index_8node_8esm_8js_a153ef7f6fccf9bae313bac28706c3e91}{warn}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_transport_manager_a702cd82a6fab9c35dd166120d1a89951_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_transport_manager_a702cd82a6fab9c35dd166120d1a89951}\index{TransportManager@{TransportManager}!initTransports\_@{initTransports\_}}
+\index{initTransports\_@{initTransports\_}!TransportManager@{TransportManager}}
+\doxysubsubsection{\texorpdfstring{initTransports\_()}{initTransports\_()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_transport_manager_a702cd82a6fab9c35dd166120d1a89951} 
+Transport\+Manager\+::init\+Transports\+\_\+ (\begin{DoxyParamCaption}\item[{}]{repo\+Info}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{class_transport_manager_a4717c74140b2b59497eeeb21245d68db}{ALL\+\_\+\+TRANSPORTS()}}, \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}, \mbox{\hyperlink{class_web_socket_connection_a60edc7f46f096c5fb18569abc1599011}{Web\+Socket\+Connection\+::previously\+Failed()}}, and \mbox{\hyperlink{database_2dist_2node-esm_2index_8node_8esm_8js_a153ef7f6fccf9bae313bac28706c3e91}{warn}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_transport_manager_a702cd82a6fab9c35dd166120d1a89951_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_transport_manager_a942a53568a87d24f4f215e8dddaab7cd}\index{TransportManager@{TransportManager}!IS\_TRANSPORT\_INITIALIZED@{IS\_TRANSPORT\_INITIALIZED}}
+\index{IS\_TRANSPORT\_INITIALIZED@{IS\_TRANSPORT\_INITIALIZED}!TransportManager@{TransportManager}}
+\doxysubsubsection{\texorpdfstring{IS\_TRANSPORT\_INITIALIZED()}{IS\_TRANSPORT\_INITIALIZED()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_transport_manager_a942a53568a87d24f4f215e8dddaab7cd} 
+static \mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} Transport\+Manager\+::\+IS\+\_\+\+TRANSPORT\+\_\+\+INITIALIZED (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Returns whether transport has been selected to ensure \doxylink{class_web_socket_connection}{Web\+Socket\+Connection} or \doxylink{class_browser_poll_connection}{Browser\+Poll\+Connection} are not called after \doxylink{class_transport_manager}{Transport\+Manager} has already set up transports\+\_\+ 
+
+References \mbox{\hyperlink{database_2dist_2node-esm_2index_8node_8esm_8js_a5f8a4db2e6ca1970735a1387c0a22576}{global\+Transport\+Initialized\+\_\+}}.
+
+\Hypertarget{class_transport_manager_a942a53568a87d24f4f215e8dddaab7cd}\index{TransportManager@{TransportManager}!IS\_TRANSPORT\_INITIALIZED@{IS\_TRANSPORT\_INITIALIZED}}
+\index{IS\_TRANSPORT\_INITIALIZED@{IS\_TRANSPORT\_INITIALIZED}!TransportManager@{TransportManager}}
+\doxysubsubsection{\texorpdfstring{IS\_TRANSPORT\_INITIALIZED()}{IS\_TRANSPORT\_INITIALIZED()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_transport_manager_a942a53568a87d24f4f215e8dddaab7cd} 
+static \mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} Transport\+Manager\+::\+IS\+\_\+\+TRANSPORT\+\_\+\+INITIALIZED (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Returns whether transport has been selected to ensure \doxylink{class_web_socket_connection}{Web\+Socket\+Connection} or \doxylink{class_browser_poll_connection}{Browser\+Poll\+Connection} are not called after \doxylink{class_transport_manager}{Transport\+Manager} has already set up transports\+\_\+ 
+
+References \mbox{\hyperlink{database_2dist_2node-esm_2index_8node_8esm_8js_a5f8a4db2e6ca1970735a1387c0a22576}{global\+Transport\+Initialized\+\_\+}}.
+
+\Hypertarget{class_transport_manager_a942a53568a87d24f4f215e8dddaab7cd}\index{TransportManager@{TransportManager}!IS\_TRANSPORT\_INITIALIZED@{IS\_TRANSPORT\_INITIALIZED}}
+\index{IS\_TRANSPORT\_INITIALIZED@{IS\_TRANSPORT\_INITIALIZED}!TransportManager@{TransportManager}}
+\doxysubsubsection{\texorpdfstring{IS\_TRANSPORT\_INITIALIZED()}{IS\_TRANSPORT\_INITIALIZED()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_transport_manager_a942a53568a87d24f4f215e8dddaab7cd} 
+static \mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} Transport\+Manager\+::\+IS\+\_\+\+TRANSPORT\+\_\+\+INITIALIZED (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Returns whether transport has been selected to ensure \doxylink{class_web_socket_connection}{Web\+Socket\+Connection} or \doxylink{class_browser_poll_connection}{Browser\+Poll\+Connection} are not called after \doxylink{class_transport_manager}{Transport\+Manager} has already set up transports\+\_\+ 
+
+References \mbox{\hyperlink{database_2dist_2node-esm_2index_8node_8esm_8js_a5f8a4db2e6ca1970735a1387c0a22576}{global\+Transport\+Initialized\+\_\+}}.
+
+\Hypertarget{class_transport_manager_abb5142d0ba00b452e9f9a12fa690f74f}\index{TransportManager@{TransportManager}!upgradeTransport@{upgradeTransport}}
+\index{upgradeTransport@{upgradeTransport}!TransportManager@{TransportManager}}
+\doxysubsubsection{\texorpdfstring{upgradeTransport()}{upgradeTransport()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_transport_manager_abb5142d0ba00b452e9f9a12fa690f74f} 
+Transport\+Manager\+::upgrade\+Transport (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+The constructor for the next transport, or null 
+\end{DoxyReturn}
+\Hypertarget{class_transport_manager_abb5142d0ba00b452e9f9a12fa690f74f}\index{TransportManager@{TransportManager}!upgradeTransport@{upgradeTransport}}
+\index{upgradeTransport@{upgradeTransport}!TransportManager@{TransportManager}}
+\doxysubsubsection{\texorpdfstring{upgradeTransport()}{upgradeTransport()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_transport_manager_abb5142d0ba00b452e9f9a12fa690f74f} 
+Transport\+Manager\+::upgrade\+Transport (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+The constructor for the next transport, or null 
+\end{DoxyReturn}
+\Hypertarget{class_transport_manager_abb5142d0ba00b452e9f9a12fa690f74f}\index{TransportManager@{TransportManager}!upgradeTransport@{upgradeTransport}}
+\index{upgradeTransport@{upgradeTransport}!TransportManager@{TransportManager}}
+\doxysubsubsection{\texorpdfstring{upgradeTransport()}{upgradeTransport()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_transport_manager_abb5142d0ba00b452e9f9a12fa690f74f} 
+Transport\+Manager\+::upgrade\+Transport (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+The constructor for the next transport, or null 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/@firebase/database/dist/\mbox{\hyperlink{database_2dist_2index_8cjs_8js}{index.\+cjs.\+js}}\item 
+backend/node\+\_\+modules/@firebase/database/dist/\mbox{\hyperlink{database_2dist_2index_8esm2017_8js}{index.\+esm2017.\+js}}\item 
+backend/node\+\_\+modules/@firebase/database/dist/node-\/esm/\mbox{\hyperlink{database_2dist_2node-esm_2index_8node_8esm_8js}{index.\+node.\+esm.\+js}}\end{DoxyCompactItemize}

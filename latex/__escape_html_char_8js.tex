@@ -1,0 +1,62 @@
+\doxysection{backend/node\+\_\+modules/lodash/\+\_\+escape\+Html\+Char.js File Reference}
+\hypertarget{__escape_html_char_8js}{}\label{__escape_html_char_8js}\index{backend/node\_modules/lodash/\_escapeHtmlChar.js@{backend/node\_modules/lodash/\_escapeHtmlChar.js}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{__escape_html_char_8js_ac128f4397db8c6b7c84f6c7346d8e695}{base\+Property\+Of}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\+\_\+base\+Property\+Of\textquotesingle{})
+\item 
+var \mbox{\hyperlink{__escape_html_char_8js_ace0043d44e39a9bbb563b07c195ef536}{html\+Escapes}}
+\item 
+var \mbox{\hyperlink{__escape_html_char_8js_a0745d6a1797c6cfad56dbe8c9f82c085}{escape\+Html\+Char}} = \mbox{\hyperlink{__deburr_letter_8js_ac128f4397db8c6b7c84f6c7346d8e695}{base\+Property\+Of}}(\mbox{\hyperlink{__escape_html_char_8js_ace0043d44e39a9bbb563b07c195ef536}{html\+Escapes}})
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{__escape_html_char_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} = \mbox{\hyperlink{__escape_html_char_8js_a0745d6a1797c6cfad56dbe8c9f82c085}{escape\+Html\+Char}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{__escape_html_char_8js_ac128f4397db8c6b7c84f6c7346d8e695}\index{\_escapeHtmlChar.js@{\_escapeHtmlChar.js}!basePropertyOf@{basePropertyOf}}
+\index{basePropertyOf@{basePropertyOf}!\_escapeHtmlChar.js@{\_escapeHtmlChar.js}}
+\doxysubsubsection{\texorpdfstring{basePropertyOf}{basePropertyOf}}
+{\footnotesize\ttfamily \label{__escape_html_char_8js_ac128f4397db8c6b7c84f6c7346d8e695} 
+var base\+Property\+Of = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\+\_\+base\+Property\+Of\textquotesingle{})}
+
+\Hypertarget{__escape_html_char_8js_a0745d6a1797c6cfad56dbe8c9f82c085}\index{\_escapeHtmlChar.js@{\_escapeHtmlChar.js}!escapeHtmlChar@{escapeHtmlChar}}
+\index{escapeHtmlChar@{escapeHtmlChar}!\_escapeHtmlChar.js@{\_escapeHtmlChar.js}}
+\doxysubsubsection{\texorpdfstring{escapeHtmlChar}{escapeHtmlChar}}
+{\footnotesize\ttfamily \label{__escape_html_char_8js_a0745d6a1797c6cfad56dbe8c9f82c085} 
+var escape\+Html\+Char = \mbox{\hyperlink{__deburr_letter_8js_ac128f4397db8c6b7c84f6c7346d8e695}{base\+Property\+Of}}(\mbox{\hyperlink{__escape_html_char_8js_ace0043d44e39a9bbb563b07c195ef536}{html\+Escapes}})\hspace{0.3cm}{\ttfamily [private]}}
+
+Used by {\ttfamily \+\_\+.\+escape} to convert characters to HTML entities.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & chr The matched character to escape. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{string\} Returns the escaped character. 
+\end{DoxyReturn}
+\Hypertarget{__escape_html_char_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\index{\_escapeHtmlChar.js@{\_escapeHtmlChar.js}!exports@{exports}}
+\index{exports@{exports}!\_escapeHtmlChar.js@{\_escapeHtmlChar.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \label{__escape_html_char_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports = \mbox{\hyperlink{__escape_html_char_8js_a0745d6a1797c6cfad56dbe8c9f82c085}{escape\+Html\+Char}}}
+
+\Hypertarget{__escape_html_char_8js_ace0043d44e39a9bbb563b07c195ef536}\index{\_escapeHtmlChar.js@{\_escapeHtmlChar.js}!htmlEscapes@{htmlEscapes}}
+\index{htmlEscapes@{htmlEscapes}!\_escapeHtmlChar.js@{\_escapeHtmlChar.js}}
+\doxysubsubsection{\texorpdfstring{htmlEscapes}{htmlEscapes}}
+{\footnotesize\ttfamily \label{__escape_html_char_8js_ace0043d44e39a9bbb563b07c195ef536} 
+var html\+Escapes}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \textcolor{charliteral}{'\&'}:\ \textcolor{stringliteral}{'\&amp;'},}
+\DoxyCodeLine{\ \ \textcolor{charliteral}{'<'}:\ \textcolor{stringliteral}{'\&lt;'},}
+\DoxyCodeLine{\ \ \textcolor{charliteral}{'>'}:\ \textcolor{stringliteral}{'\&gt;'},}
+\DoxyCodeLine{\ \ \textcolor{charliteral}{'"{}'}:\ \textcolor{stringliteral}{'\&quot;'},}
+\DoxyCodeLine{\ \ \textcolor{stringliteral}{"{}'"{}}:\ \textcolor{stringliteral}{'\&\#39;'}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Used to map characters to HTML entities. 

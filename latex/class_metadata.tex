@@ -1,0 +1,256 @@
+\doxysection{Metadata Class Reference}
+\hypertarget{class_metadata}{}\label{class_metadata}\index{Metadata@{Metadata}}
+
+
+Collaboration diagram for Metadata\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{class_metadata__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_metadata_a757b48020533b010307dd8539dd7f600}{constructor}} (options=\{\})
+\item 
+\mbox{\hyperlink{class_metadata_ad420f66e3b10ce92cf53ea4ee777981d}{set}} (key, \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}})
+\item 
+\mbox{\hyperlink{class_metadata_a2f8eada90c22f5e60e2b0e02f68e094b}{add}} (key, \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}})
+\item 
+\mbox{\hyperlink{class_metadata_a8721c5ac4388ee3113b89af3908aa2db}{remove}} (key)
+\item 
+\mbox{\hyperlink{class_metadata_a4bcaeb076288eb008e02616fb6294134}{get}} (key)
+\item 
+\mbox{\hyperlink{class_metadata_ab501ce165cbaea04b0405e5bcbd3492c}{get\+Map}} ()
+\item 
+\mbox{\hyperlink{class_metadata_aec0e4320a08d84bed191b0746d40580c}{clone}} ()
+\item 
+\mbox{\hyperlink{class_metadata_ac09265fb901fc1ef470230585eeebe55}{merge}} (other)
+\item 
+\mbox{\hyperlink{class_metadata_ad372cacb537d16b3a97fc7b308d10725}{set\+Options}} (options)
+\item 
+\mbox{\hyperlink{class_metadata_a89ab649abc8c662f58417e28b8650922}{get\+Options}} ()
+\item 
+\mbox{\hyperlink{class_metadata_a05c32da3f2238f2897711b2bb4aaf34a}{to\+Http2\+Headers}} ()
+\item 
+\mbox{\hyperlink{class_metadata_ae06a7fccc9be5be62e2dc94d7ea75ba9}{to\+JSON}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_metadata_ac33e69484a6f55cfff12e92e3fd6f8dd}{from\+Http2\+Headers}} (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7f2cb2fcdd79bf72cefd29b7bc2d10fa}{headers}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_a}{A} class for storing metadata. Keys are normalized to lowercase ASCII. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_metadata_a2f8eada90c22f5e60e2b0e02f68e094b}\index{Metadata@{Metadata}!add@{add}}
+\index{add@{add}!Metadata@{Metadata}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \label{class_metadata_a2f8eada90c22f5e60e2b0e02f68e094b} 
+Metadata\+::add (\begin{DoxyParamCaption}\item[{}]{key}{, }\item[{}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Adds the given value for the given key by appending to a list of previous values associated with that key. Normalizes the key. 
+\begin{DoxyParams}{Parameters}
+{\em key} & The key for which a new value should be appended. \\
+\hline
+{\em value} & The value to add. Must be a buffer if and only if the normalized key ends with \textquotesingle{}-\/bin\textquotesingle{}. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{metadata_8js_ab4b36e3be6065c2c4e129fbbf6a5b55e}{normalize\+Key()}}, \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2uuid_2dist_2esm-browser_2validate_8js_a0e032d36ce373150820a75269842f789}{validate}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{class_metadata_a2f8eada90c22f5e60e2b0e02f68e094b_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_metadata_aec0e4320a08d84bed191b0746d40580c}\index{Metadata@{Metadata}!clone@{clone}}
+\index{clone@{clone}!Metadata@{Metadata}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \label{class_metadata_aec0e4320a08d84bed191b0746d40580c} 
+Metadata\+::clone (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Clones the metadata object. \begin{DoxyReturn}{Returns}
+The newly cloned object. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{metadata_8js_a84305cdf6591dfbc3127e70173fd204c}{Metadata}}, \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}, \mbox{\hyperlink{ordered-map_8min_8js_a207400f40ed647015069564fa40946e1}{v}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.
+
+\Hypertarget{class_metadata_a757b48020533b010307dd8539dd7f600}\index{Metadata@{Metadata}!constructor@{constructor}}
+\index{constructor@{constructor}!Metadata@{Metadata}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_metadata_a757b48020533b010307dd8539dd7f600} 
+Metadata\+::constructor (\begin{DoxyParamCaption}\item[{}]{options}{ = {\ttfamily \{\}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_metadata_ac33e69484a6f55cfff12e92e3fd6f8dd}\index{Metadata@{Metadata}!fromHttp2Headers@{fromHttp2Headers}}
+\index{fromHttp2Headers@{fromHttp2Headers}!Metadata@{Metadata}}
+\doxysubsubsection{\texorpdfstring{fromHttp2Headers()}{fromHttp2Headers()}}
+{\footnotesize\ttfamily \label{class_metadata_ac33e69484a6f55cfff12e92e3fd6f8dd} 
+static Metadata\+::from\+Http2\+Headers (\begin{DoxyParamCaption}\item[{}]{headers}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Returns a new \doxylink{class_metadata}{Metadata} object based fields in a given Incoming\+Http\+Headers object. 
+\begin{DoxyParams}{Parameters}
+{\em headers} & An Incoming\+Http\+Headers object. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{_0dprotobufjs_2codegen_2tests_2index_8js_a4e768d30759ccd1fa31604f664ac1c6e}{add}}, \mbox{\hyperlink{src_2util_2minimal_8js_a325c4e317c38d8497130ebce7670be2f}{Array}}, \mbox{\hyperlink{metadata_8js_ad33cb6840349d3bc93f4fe9de15a6f8f}{constants\+\_\+1}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}}, \mbox{\hyperlink{metadata_8js_af1a99a3ff1a35c114bdd06cc7252beb6}{error\+\_\+1}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7f2cb2fcdd79bf72cefd29b7bc2d10fa}{headers}}, \mbox{\hyperlink{agent-base_2dist_2helpers_8js_ab3093f9d8507c035b404b9d49bdb40f7}{https}}, \mbox{\hyperlink{metadata_8js_af326dd3d84d7dbf22a7ace36c7c51aac}{is\+Binary\+Key()}}, \mbox{\hyperlink{metadata_8js_aaf8ff6ada2be57409cd22a5584152ffb}{is\+Custom\+Metadata()}}, \mbox{\hyperlink{metadata_8js_ab3854fba8b19fab451a21ca34f1af97c}{logging\+\_\+1}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}, \mbox{\hyperlink{metadata_8js_a84305cdf6591dfbc3127e70173fd204c}{Metadata}}, \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}, \mbox{\hyperlink{lodash_2core_8js_a348c112a244660a2f280cda892658c24}{result}}, \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}, \mbox{\hyperlink{ordered-map_8min_8js_a207400f40ed647015069564fa40946e1}{v}}, \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}, and \mbox{\hyperlink{__base_sample_8js_a133e745a7002d95c39d29cc180b56327}{values}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_metadata_ac33e69484a6f55cfff12e92e3fd6f8dd_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_metadata_a4bcaeb076288eb008e02616fb6294134}\index{Metadata@{Metadata}!get@{get}}
+\index{get@{get}!Metadata@{Metadata}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{class_metadata_a4bcaeb076288eb008e02616fb6294134} 
+Metadata\+::get (\begin{DoxyParamCaption}\item[{}]{key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets a list of all values associated with the key. Normalizes the key. 
+\begin{DoxyParams}{Parameters}
+{\em key} & The key whose value should be retrieved. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_a}{A} list of values associated with the given key. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{metadata_8js_ab4b36e3be6065c2c4e129fbbf6a5b55e}{normalize\+Key()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=267pt]{class_metadata_a4bcaeb076288eb008e02616fb6294134_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_metadata_ab501ce165cbaea04b0405e5bcbd3492c}\index{Metadata@{Metadata}!getMap@{getMap}}
+\index{getMap@{getMap}!Metadata@{Metadata}}
+\doxysubsubsection{\texorpdfstring{getMap()}{getMap()}}
+{\footnotesize\ttfamily \label{class_metadata_ab501ce165cbaea04b0405e5bcbd3492c} 
+Metadata\+::get\+Map (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets a plain object mapping each key to the first value associated with it. This reflects the most common way that people will want to see metadata. \begin{DoxyReturn}{Returns}
+\doxylink{class_a}{A} key/value mapping of the metadata. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}, \mbox{\hyperlink{lodash_2core_8js_a348c112a244660a2f280cda892658c24}{result}}, \mbox{\hyperlink{ordered-map_8min_8js_a207400f40ed647015069564fa40946e1}{v}}, and \mbox{\hyperlink{__base_sample_8js_a133e745a7002d95c39d29cc180b56327}{values}}.
+
+\Hypertarget{class_metadata_a89ab649abc8c662f58417e28b8650922}\index{Metadata@{Metadata}!getOptions@{getOptions}}
+\index{getOptions@{getOptions}!Metadata@{Metadata}}
+\doxysubsubsection{\texorpdfstring{getOptions()}{getOptions()}}
+{\footnotesize\ttfamily \label{class_metadata_a89ab649abc8c662f58417e28b8650922} 
+Metadata\+::get\+Options (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_metadata_ac09265fb901fc1ef470230585eeebe55}\index{Metadata@{Metadata}!merge@{merge}}
+\index{merge@{merge}!Metadata@{Metadata}}
+\doxysubsubsection{\texorpdfstring{merge()}{merge()}}
+{\footnotesize\ttfamily \label{class_metadata_ac09265fb901fc1ef470230585eeebe55} 
+Metadata\+::merge (\begin{DoxyParamCaption}\item[{}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Merges all key-\/value pairs from a given \doxylink{class_metadata}{Metadata} object into this one. If both this object and the given object have values in the same key, values from the other \doxylink{class_metadata}{Metadata} object will be appended to this object\textquotesingle{}s values. 
+\begin{DoxyParams}{Parameters}
+{\em other} & \doxylink{class_a}{A} \doxylink{class_metadata}{Metadata} object. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}, and \mbox{\hyperlink{__base_sample_8js_a133e745a7002d95c39d29cc180b56327}{values}}.
+
+\Hypertarget{class_metadata_a8721c5ac4388ee3113b89af3908aa2db}\index{Metadata@{Metadata}!remove@{remove}}
+\index{remove@{remove}!Metadata@{Metadata}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily \label{class_metadata_a8721c5ac4388ee3113b89af3908aa2db} 
+Metadata\+::remove (\begin{DoxyParamCaption}\item[{}]{key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Removes the given key and any associated values. Normalizes the key. 
+\begin{DoxyParams}{Parameters}
+{\em key} & The key whose values should be removed. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{metadata_8js_ab4b36e3be6065c2c4e129fbbf6a5b55e}{normalize\+Key()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{class_metadata_a8721c5ac4388ee3113b89af3908aa2db_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_metadata_ad420f66e3b10ce92cf53ea4ee777981d}\index{Metadata@{Metadata}!set@{set}}
+\index{set@{set}!Metadata@{Metadata}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily \label{class_metadata_ad420f66e3b10ce92cf53ea4ee777981d} 
+Metadata\+::set (\begin{DoxyParamCaption}\item[{}]{key}{, }\item[{}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the given value for the given key by replacing any other values associated with that key. Normalizes the key. 
+\begin{DoxyParams}{Parameters}
+{\em key} & The key to whose value should be set. \\
+\hline
+{\em value} & The value to set. Must be a buffer if and only if the normalized key ends with \textquotesingle{}-\/bin\textquotesingle{}. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{metadata_8js_ab4b36e3be6065c2c4e129fbbf6a5b55e}{normalize\+Key()}}, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2uuid_2dist_2esm-browser_2validate_8js_a0e032d36ce373150820a75269842f789}{validate}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=267pt]{class_metadata_ad420f66e3b10ce92cf53ea4ee777981d_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_metadata_ad372cacb537d16b3a97fc7b308d10725}\index{Metadata@{Metadata}!setOptions@{setOptions}}
+\index{setOptions@{setOptions}!Metadata@{Metadata}}
+\doxysubsubsection{\texorpdfstring{setOptions()}{setOptions()}}
+{\footnotesize\ttfamily \label{class_metadata_ad372cacb537d16b3a97fc7b308d10725} 
+Metadata\+::set\+Options (\begin{DoxyParamCaption}\item[{}]{options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_metadata_a05c32da3f2238f2897711b2bb4aaf34a}\index{Metadata@{Metadata}!toHttp2Headers@{toHttp2Headers}}
+\index{toHttp2Headers@{toHttp2Headers}!Metadata@{Metadata}}
+\doxysubsubsection{\texorpdfstring{toHttp2Headers()}{toHttp2Headers()}}
+{\footnotesize\ttfamily \label{class_metadata_a05c32da3f2238f2897711b2bb4aaf34a} 
+Metadata\+::to\+Http2\+Headers (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Creates an Outgoing\+Http\+Headers object that can be used with the http2 API. 
+
+References \mbox{\hyperlink{metadata_8js_aa49f25cbc1b0d1962e43657df5a074de}{buf\+To\+String}}, \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}, \mbox{\hyperlink{lodash_2core_8js_a348c112a244660a2f280cda892658c24}{result}}, and \mbox{\hyperlink{__base_sample_8js_a133e745a7002d95c39d29cc180b56327}{values}}.
+
+\Hypertarget{class_metadata_ae06a7fccc9be5be62e2dc94d7ea75ba9}\index{Metadata@{Metadata}!toJSON@{toJSON}}
+\index{toJSON@{toJSON}!Metadata@{Metadata}}
+\doxysubsubsection{\texorpdfstring{toJSON()}{toJSON()}}
+{\footnotesize\ttfamily \label{class_metadata_ae06a7fccc9be5be62e2dc94d7ea75ba9} 
+Metadata\+::to\+JSON (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+This modifies the behavior of JSON.\+stringify to show an object representation of the metadata map. 
+
+References \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}, \mbox{\hyperlink{lodash_2core_8js_a348c112a244660a2f280cda892658c24}{result}}, and \mbox{\hyperlink{__base_sample_8js_a133e745a7002d95c39d29cc180b56327}{values}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/@grpc/grpc-\/js/build/src/\mbox{\hyperlink{metadata_8js}{metadata.\+js}}\end{DoxyCompactItemize}

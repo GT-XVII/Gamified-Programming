@@ -1,0 +1,31 @@
+\doxysection{/\+Users/nicoletiokhin/\+Desktop/\+Software Semester 3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/lodash/update.\+js}
+\hypertarget{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_00b7a92886f2681621de048c2e228667}{}\label{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_00b7a92886f2681621de048c2e228667}This method is like {\ttfamily \+\_\+.\+set} except that accepts {\ttfamily updater} to produce the value to set. Use {\ttfamily \+\_\+.\+update\+With} to customize {\ttfamily path} creation. The {\ttfamily updater} is invoked with one argument\+: (value).
+
+{\bfseries{Note\+:}} This method mutates {\ttfamily object}.
+
+@member\+Of \+\_\+ \begin{DoxySince}{Since}
+4.\+6.\+0
+\end{DoxySince}
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Object\}} & object The object to modify. \\
+\hline
+{\em \{\+Array\texorpdfstring{$\vert$}{|}string\}} & path The path of the property to set. \\
+\hline
+{\em \{\+Function\}} & updater The function to produce the updated value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Object\} Returns {\ttfamily object}.
+\end{DoxyReturn}
+var object = \{ \textquotesingle{}a\textquotesingle{}\+: \mbox{[}\{ \textquotesingle{}b\textquotesingle{}\+: \{ \textquotesingle{}c\textquotesingle{}\+: 3 \} \}\mbox{]} \};
+
+\+\_\+.\+update(object, \textquotesingle{}a\mbox{[}0\mbox{]}.b.\+c\textquotesingle{}, function(n) \{ return n \texorpdfstring{$\ast$}{*} n; \}); console.\+log(object.\+a\mbox{[}0\mbox{]}.b.\+c); // =\texorpdfstring{$>$}{>} 9
+
+\+\_\+.\+update(object, \textquotesingle{}x\mbox{[}0\mbox{]}.y.\+z\textquotesingle{}, function(n) \{ return n ? n + 1 \+: 0; \}); console.\+log(object.\+x\mbox{[}0\mbox{]}.y.\+z); // =\texorpdfstring{$>$}{>} 0
+
+
+\begin{DoxyCodeInclude}{0}
+
+\end{DoxyCodeInclude}
+ Semester \doxylink{update_8js}{3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/lodash/update.\+js} 

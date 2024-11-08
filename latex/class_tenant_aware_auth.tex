@@ -1,0 +1,115 @@
+\doxysection{Tenant\+Aware\+Auth Class Reference}
+\hypertarget{class_tenant_aware_auth}{}\label{class_tenant_aware_auth}\index{TenantAwareAuth@{TenantAwareAuth}}
+
+
+Inheritance diagram for Tenant\+Aware\+Auth\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{class_tenant_aware_auth__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Tenant\+Aware\+Auth\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{class_tenant_aware_auth__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_tenant_aware_auth_aebba1f2fa3d0eae89fb5a4bd48e2f6bb}{constructor}} (\mbox{\hyperlink{database_2dist_2index_8cjs_8js_a7b225fcb720e4d5ed2bbf60e28a25e6d}{app}}, tenant\+Id)
+\item 
+\mbox{\hyperlink{class_tenant_aware_auth_af5f79b1c4671a70f68f8ee1ce0245708}{verify\+Id\+Token}} (id\+Token, check\+Revoked=\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a5df37b7f02e5cdc7d9412b7f872b8e01}{false}})
+\item 
+\mbox{\hyperlink{class_tenant_aware_auth_adc4293ea0238abb339df5d5fef2a6cc5}{create\+Session\+Cookie}} (id\+Token, session\+Cookie\+Options)
+\item 
+\mbox{\hyperlink{class_tenant_aware_auth_a671883791514f579ab36dc3284154028}{verify\+Session\+Cookie}} (session\+Cookie, check\+Revoked=\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a5df37b7f02e5cdc7d9412b7f872b8e01}{false}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Tenant-\/aware {\ttfamily \doxylink{class_auth}{Auth}} interface used for managing users, configuring SAML/\+OIDC providers, generating email links for password reset, email verification, etc for specific tenants.
+
+Multi-\/tenancy support requires Google Cloud\textquotesingle{}s Identity Platform (GCIP). To learn more about GCIP, including pricing and features, see the {\ttfamily \doxylink{}{\texorpdfstring{$\vert$}{|} GCIP documentation}}.
+
+Each tenant contains its own identity providers, settings and sets of users. Using {\ttfamily \doxylink{class_tenant_aware_auth}{Tenant\+Aware\+Auth}}, users for a specific tenant and corresponding OIDC/\+SAML configurations can also be managed, ID tokens for users signed in to a specific tenant can be verified, and email action links can also be generated for users belonging to the tenant.
+
+{\ttfamily \doxylink{class_tenant_aware_auth}{Tenant\+Aware\+Auth}} instances for a specific {\ttfamily tenant\+Id} can be instantiated by calling {\ttfamily \doxylink{class_tenant_manager_a181b30109f3224426456eaf4aa0b805a}{Tenant\+Manager.\+auth\+For\+Tenant}}. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_tenant_aware_auth_aebba1f2fa3d0eae89fb5a4bd48e2f6bb}\index{TenantAwareAuth@{TenantAwareAuth}!constructor@{constructor}}
+\index{constructor@{constructor}!TenantAwareAuth@{TenantAwareAuth}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_tenant_aware_auth_aebba1f2fa3d0eae89fb5a4bd48e2f6bb} 
+Tenant\+Aware\+Auth\+::constructor (\begin{DoxyParamCaption}\item[{}]{app}{, }\item[{}]{tenant\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+The \doxylink{class_tenant_aware_auth}{Tenant\+Aware\+Auth} class constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em app} & -\/ The app that created this tenant. \\
+\hline
+{\em tenant\+Id} & -\/ The corresponding tenant ID. @constructor \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{database_2dist_2index_8cjs_8js_a7b225fcb720e4d5ed2bbf60e28a25e6d}{app}}, \mbox{\hyperlink{tenant-manager_8js_ac7589a803bd4e053198614715963a7ff}{auth\+\_\+api\+\_\+request\+\_\+1}}, \mbox{\hyperlink{tenant-manager_8js_abd6e336b1482121b53a7ed55c495e2bb}{base\+\_\+auth\+\_\+1}}, and \mbox{\hyperlink{tenant-manager_8js_a022e926a40defc4294368e708a7e2372}{utils}}.
+
+\Hypertarget{class_tenant_aware_auth_adc4293ea0238abb339df5d5fef2a6cc5}\index{TenantAwareAuth@{TenantAwareAuth}!createSessionCookie@{createSessionCookie}}
+\index{createSessionCookie@{createSessionCookie}!TenantAwareAuth@{TenantAwareAuth}}
+\doxysubsubsection{\texorpdfstring{createSessionCookie()}{createSessionCookie()}}
+{\footnotesize\ttfamily \label{class_tenant_aware_auth_adc4293ea0238abb339df5d5fef2a6cc5} 
+Tenant\+Aware\+Auth\+::create\+Session\+Cookie (\begin{DoxyParamCaption}\item[{}]{id\+Token}{, }\item[{}]{session\+Cookie\+Options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\{ \doxylink{class_base_auth_ad19f4435cb787150df6cabbaa880ef1c}{Base\+Auth.\+create\+Session\+Cookie}\} 
+
+References \mbox{\hyperlink{tenant-manager_8js_af1a99a3ff1a35c114bdd06cc7252beb6}{error\+\_\+1}}, \mbox{\hyperlink{__get_tag_8js_abace523389c17bce1848e3a427871700}{Promise}}, \mbox{\hyperlink{tenant-manager_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}}, and \mbox{\hyperlink{class_tenant_aware_auth_af5f79b1c4671a70f68f8ee1ce0245708}{verify\+Id\+Token()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_tenant_aware_auth_adc4293ea0238abb339df5d5fef2a6cc5_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_tenant_aware_auth_af5f79b1c4671a70f68f8ee1ce0245708}\index{TenantAwareAuth@{TenantAwareAuth}!verifyIdToken@{verifyIdToken}}
+\index{verifyIdToken@{verifyIdToken}!TenantAwareAuth@{TenantAwareAuth}}
+\doxysubsubsection{\texorpdfstring{verifyIdToken()}{verifyIdToken()}}
+{\footnotesize\ttfamily \label{class_tenant_aware_auth_af5f79b1c4671a70f68f8ee1ce0245708} 
+Tenant\+Aware\+Auth\+::verify\+Id\+Token (\begin{DoxyParamCaption}\item[{}]{id\+Token}{, }\item[{}]{check\+Revoked}{ = {\ttfamily \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a5df37b7f02e5cdc7d9412b7f872b8e01}{false}}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\{ \doxylink{class_base_auth_a1120c66e53173faf55e78684da1551d5}{Base\+Auth.\+verify\+Id\+Token}\} 
+
+References \mbox{\hyperlink{tenant-manager_8js_af1a99a3ff1a35c114bdd06cc7252beb6}{error\+\_\+1}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_tenant_aware_auth_af5f79b1c4671a70f68f8ee1ce0245708_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_tenant_aware_auth_a671883791514f579ab36dc3284154028}\index{TenantAwareAuth@{TenantAwareAuth}!verifySessionCookie@{verifySessionCookie}}
+\index{verifySessionCookie@{verifySessionCookie}!TenantAwareAuth@{TenantAwareAuth}}
+\doxysubsubsection{\texorpdfstring{verifySessionCookie()}{verifySessionCookie()}}
+{\footnotesize\ttfamily \label{class_tenant_aware_auth_a671883791514f579ab36dc3284154028} 
+Tenant\+Aware\+Auth\+::verify\+Session\+Cookie (\begin{DoxyParamCaption}\item[{}]{session\+Cookie}{, }\item[{}]{check\+Revoked}{ = {\ttfamily \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a5df37b7f02e5cdc7d9412b7f872b8e01}{false}}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\{ \doxylink{class_base_auth_a09eb47fb20948c4ba1563faf5ed8cf8a}{Base\+Auth.\+verify\+Session\+Cookie}\} 
+
+References \mbox{\hyperlink{tenant-manager_8js_af1a99a3ff1a35c114bdd06cc7252beb6}{error\+\_\+1}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/firebase-\/admin/lib/auth/\mbox{\hyperlink{tenant-manager_8js}{tenant-\/manager.\+js}}\end{DoxyCompactItemize}

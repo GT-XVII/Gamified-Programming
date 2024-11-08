@@ -1,0 +1,287 @@
+\doxysection{backend/node\+\_\+modules/node-\/forge/lib/cipher.js File Reference}
+\hypertarget{cipher_8js}{}\label{cipher_8js}\index{backend/node\_modules/node-\/forge/lib/cipher.js@{backend/node\_modules/node-\/forge/lib/cipher.js}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{cipher_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./forge\textquotesingle{})
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{cipher_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} = \mbox{\hyperlink{cipher_modes_8js_ad3529e6b62fffcc9799ee186212e4b5a}{forge.\+cipher}} = \mbox{\hyperlink{cipher_modes_8js_ad3529e6b62fffcc9799ee186212e4b5a}{forge.\+cipher}} \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} \{\}
+\item 
+\mbox{\hyperlink{aes_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} \mbox{\hyperlink{cipher_modes_8js_ad3529e6b62fffcc9799ee186212e4b5a}{cipher}} \mbox{\hyperlink{cipher_8js_a92f800b4fe48ec339baf687c1acf8ec6}{algorithms}} = forge.\+cipher.\+algorithms \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} \{\}
+\item 
+\mbox{\hyperlink{aes_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} \mbox{\hyperlink{cipher_modes_8js_ad3529e6b62fffcc9799ee186212e4b5a}{cipher}} \mbox{\hyperlink{cipher_8js_ac8e503150e4396cd8b522060bd763b72}{create\+Cipher}}
+\item 
+\mbox{\hyperlink{aes_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} \mbox{\hyperlink{cipher_modes_8js_ad3529e6b62fffcc9799ee186212e4b5a}{cipher}} \mbox{\hyperlink{cipher_8js_abfcc9d6a27aa7b81a85ef96833d89f58}{create\+Decipher}}
+\item 
+\mbox{\hyperlink{aes_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} \mbox{\hyperlink{cipher_modes_8js_ad3529e6b62fffcc9799ee186212e4b5a}{cipher}} \mbox{\hyperlink{cipher_8js_a66b4d6e09f97c7631b9c136cd99530fb}{register\+Algorithm}}
+\item 
+\mbox{\hyperlink{aes_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} \mbox{\hyperlink{cipher_modes_8js_ad3529e6b62fffcc9799ee186212e4b5a}{cipher}} \mbox{\hyperlink{cipher_8js_ae173cef2069adb692095e6da083630d7}{get\+Algorithm}}
+\item 
+var \mbox{\hyperlink{cipher_8js_a1223883309950affd02ef922ffddc3d0}{Block\+Cipher}}
+\item 
+\mbox{\hyperlink{cipher_8js_a1223883309950affd02ef922ffddc3d0}{Block\+Cipher}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{cipher_8js_a1960adf42cbf8c24067b45da3a2f0aaf}{start}}
+\item 
+\mbox{\hyperlink{cipher_8js_a1223883309950affd02ef922ffddc3d0}{Block\+Cipher}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{cipher_8js_af2e4dc57151c84e08431510ddacfb9c6}{update}}
+\item 
+\mbox{\hyperlink{cipher_8js_a1223883309950affd02ef922ffddc3d0}{Block\+Cipher}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{cipher_8js_a5d1dcadfd3f0fbe38f05c9dd1050a6ca}{finish}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{cipher_8js_a92f800b4fe48ec339baf687c1acf8ec6}\index{cipher.js@{cipher.js}!algorithms@{algorithms}}
+\index{algorithms@{algorithms}!cipher.js@{cipher.js}}
+\doxysubsubsection{\texorpdfstring{algorithms}{algorithms}}
+{\footnotesize\ttfamily \label{cipher_8js_a92f800b4fe48ec339baf687c1acf8ec6} 
+\mbox{\hyperlink{aes_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} \mbox{\hyperlink{cipher_modes_8js_ad3529e6b62fffcc9799ee186212e4b5a}{cipher}} algorithms = forge.\+cipher.\+algorithms \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} \{\}}
+
+\Hypertarget{cipher_8js_a1223883309950affd02ef922ffddc3d0}\index{cipher.js@{cipher.js}!BlockCipher@{BlockCipher}}
+\index{BlockCipher@{BlockCipher}!cipher.js@{cipher.js}}
+\doxysubsubsection{\texorpdfstring{BlockCipher}{BlockCipher}}
+{\footnotesize\ttfamily \label{cipher_8js_a1223883309950affd02ef922ffddc3d0} 
+var Block\+Cipher}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \mbox{\hyperlink{cipher_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.cipher.BlockCipher\ =\ \textcolor{keyword}{function}(options)\ \{}
+\DoxyCodeLine{\ \ this.algorithm\ =\ options.algorithm;}
+\DoxyCodeLine{\ \ this.mode\ =\ this.algorithm.mode;}
+\DoxyCodeLine{\ \ this.blockSize\ =\ this.mode.blockSize;}
+\DoxyCodeLine{\ \ this.\_finish\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\ \ this.\_input\ =\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\ \ this.output\ =\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\ \ this.\_op\ =\ options.decrypt\ ?\ this.mode.decrypt\ :\ this.mode.encrypt;}
+\DoxyCodeLine{\ \ this.\_decrypt\ =\ options.decrypt;}
+\DoxyCodeLine{\ \ this.algorithm.initialize(options);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{cipher_8js_ac8e503150e4396cd8b522060bd763b72}\index{cipher.js@{cipher.js}!createCipher@{createCipher}}
+\index{createCipher@{createCipher}!cipher.js@{cipher.js}}
+\doxysubsubsection{\texorpdfstring{createCipher}{createCipher}}
+{\footnotesize\ttfamily \label{cipher_8js_ac8e503150e4396cd8b522060bd763b72} 
+\mbox{\hyperlink{aes_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} \mbox{\hyperlink{cipher_modes_8js_ad3529e6b62fffcc9799ee186212e4b5a}{cipher}} create\+Cipher}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(algorithm,\ key)\ \{}
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}}\ =\ algorithm;}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}(typeof\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}}\ ===\ \textcolor{stringliteral}{'string'})\ \{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}}\ =\ \mbox{\hyperlink{cipher_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.cipher.getAlgorithm(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}});}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}}\ =\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}}();}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}(!\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}})\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ Error(\textcolor{stringliteral}{'Unsupported\ algorithm:\ '}\ +\ algorithm);}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{cipher_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.cipher.BlockCipher(\{}
+\DoxyCodeLine{\ \ \ \ algorithm:\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}},}
+\DoxyCodeLine{\ \ \ \ key:\ key,}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{browser_2runtime_2decrypt_8js_afaaeea0da230d94865a0b9c048831b1e}{decrypt}}:\ \textcolor{keyword}{false}}
+\DoxyCodeLine{\ \ \});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Creates a cipher object that can be used to encrypt data using the given algorithm and key. The algorithm may be provided as a string value for a previously registered algorithm or it may be given as a cipher algorithm API object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em algorithm} & the algorithm to use, either a string or an algorithm API object. \\
+\hline
+{\em key} & the key to use, as a binary-\/encoded string of bytes or a byte buffer.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the cipher. 
+\end{DoxyReturn}
+\Hypertarget{cipher_8js_abfcc9d6a27aa7b81a85ef96833d89f58}\index{cipher.js@{cipher.js}!createDecipher@{createDecipher}}
+\index{createDecipher@{createDecipher}!cipher.js@{cipher.js}}
+\doxysubsubsection{\texorpdfstring{createDecipher}{createDecipher}}
+{\footnotesize\ttfamily \label{cipher_8js_abfcc9d6a27aa7b81a85ef96833d89f58} 
+\mbox{\hyperlink{aes_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} \mbox{\hyperlink{cipher_modes_8js_ad3529e6b62fffcc9799ee186212e4b5a}{cipher}} create\+Decipher}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(algorithm,\ key)\ \{}
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}}\ =\ algorithm;}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}(typeof\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}}\ ===\ \textcolor{stringliteral}{'string'})\ \{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}}\ =\ \mbox{\hyperlink{cipher_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.cipher.getAlgorithm(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}});}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}}\ =\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}}();}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}(!\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}})\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ Error(\textcolor{stringliteral}{'Unsupported\ algorithm:\ '}\ +\ algorithm);}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{cipher_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.cipher.BlockCipher(\{}
+\DoxyCodeLine{\ \ \ \ algorithm:\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}},}
+\DoxyCodeLine{\ \ \ \ key:\ key,}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{browser_2runtime_2decrypt_8js_afaaeea0da230d94865a0b9c048831b1e}{decrypt}}:\ \textcolor{keyword}{true}}
+\DoxyCodeLine{\ \ \});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Creates a decipher object that can be used to decrypt data using the given algorithm and key. The algorithm may be provided as a string value for a previously registered algorithm or it may be given as a cipher algorithm API object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em algorithm} & the algorithm to use, either a string or an algorithm API object. \\
+\hline
+{\em key} & the key to use, as a binary-\/encoded string of bytes or a byte buffer.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the cipher. 
+\end{DoxyReturn}
+\Hypertarget{cipher_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\index{cipher.js@{cipher.js}!exports@{exports}}
+\index{exports@{exports}!cipher.js@{cipher.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \label{cipher_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports = \mbox{\hyperlink{cipher_modes_8js_ad3529e6b62fffcc9799ee186212e4b5a}{forge.\+cipher}} = \mbox{\hyperlink{cipher_modes_8js_ad3529e6b62fffcc9799ee186212e4b5a}{forge.\+cipher}} \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} \{\}}
+
+\Hypertarget{cipher_8js_a5d1dcadfd3f0fbe38f05c9dd1050a6ca}\index{cipher.js@{cipher.js}!finish@{finish}}
+\index{finish@{finish}!cipher.js@{cipher.js}}
+\doxysubsubsection{\texorpdfstring{finish}{finish}}
+{\footnotesize\ttfamily \label{cipher_8js_a5d1dcadfd3f0fbe38f05c9dd1050a6ca} 
+\mbox{\hyperlink{cipher_8js_a1223883309950affd02ef922ffddc3d0}{Block\+Cipher}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} finish}
+
+Finishes encrypting or decrypting.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pad} & a padding function to use in CBC mode, null for default, \doxylink{util_2dist_2index_8cjs_8js_a49c27936a5413e9cfe35de3e98a0d4d7}{signature(block\+Size, buffer, decrypt)}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if successful, false on error. 
+\end{DoxyReturn}
+\Hypertarget{cipher_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}\index{cipher.js@{cipher.js}!forge@{forge}}
+\index{forge@{forge}!cipher.js@{cipher.js}}
+\doxysubsubsection{\texorpdfstring{forge}{forge}}
+{\footnotesize\ttfamily \label{cipher_8js_ab4dbef01e35b8e6d06087c0542ba9e2c} 
+var forge = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./forge\textquotesingle{})}
+
+Cipher base API.
+
+\begin{DoxyAuthor}{Author}
+Dave Longley
+\end{DoxyAuthor}
+Copyright (c) 2010-\/2014 Digital Bazaar, Inc. \Hypertarget{cipher_8js_ae173cef2069adb692095e6da083630d7}\index{cipher.js@{cipher.js}!getAlgorithm@{getAlgorithm}}
+\index{getAlgorithm@{getAlgorithm}!cipher.js@{cipher.js}}
+\doxysubsubsection{\texorpdfstring{getAlgorithm}{getAlgorithm}}
+{\footnotesize\ttfamily \label{cipher_8js_ae173cef2069adb692095e6da083630d7} 
+\mbox{\hyperlink{aes_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} \mbox{\hyperlink{cipher_modes_8js_ad3529e6b62fffcc9799ee186212e4b5a}{cipher}} get\+Algorithm}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}})\ \{}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}\ =\ \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}.toUpperCase();}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}\ in\ \mbox{\hyperlink{cipher_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.cipher.algorithms)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{cipher_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.cipher.algorithms[\mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}];}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Gets a registered algorithm by name.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the name of the algorithm.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the algorithm, if found, null if not. 
+\end{DoxyReturn}
+\Hypertarget{cipher_8js_a66b4d6e09f97c7631b9c136cd99530fb}\index{cipher.js@{cipher.js}!registerAlgorithm@{registerAlgorithm}}
+\index{registerAlgorithm@{registerAlgorithm}!cipher.js@{cipher.js}}
+\doxysubsubsection{\texorpdfstring{registerAlgorithm}{registerAlgorithm}}
+{\footnotesize\ttfamily \label{cipher_8js_a66b4d6e09f97c7631b9c136cd99530fb} 
+\mbox{\hyperlink{aes_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} \mbox{\hyperlink{cipher_modes_8js_ad3529e6b62fffcc9799ee186212e4b5a}{cipher}} register\+Algorithm}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}},\ algorithm)\ \{}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}\ =\ \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}.toUpperCase();}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{cipher_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.cipher.algorithms[\mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}]\ =\ algorithm;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Registers an algorithm by name. If the name was already registered, the algorithm API object will be overwritten.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the name of the algorithm. \\
+\hline
+{\em algorithm} & the algorithm API object. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{cipher_8js_a1960adf42cbf8c24067b45da3a2f0aaf}\index{cipher.js@{cipher.js}!start@{start}}
+\index{start@{start}!cipher.js@{cipher.js}}
+\doxysubsubsection{\texorpdfstring{start}{start}}
+{\footnotesize\ttfamily \label{cipher_8js_a1960adf42cbf8c24067b45da3a2f0aaf} 
+\mbox{\hyperlink{retry_2lib_2retry_8js_a3b91a3197f48fb35e7964ca35df9c162}{Retry\+Operation}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} start}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(options)\ \{}
+\DoxyCodeLine{\ \ options\ =\ options\ ||\ \{\};}
+\DoxyCodeLine{\ \ var\ opts\ =\ \{\};}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{for}(var\ key\ in\ options)\ \{}
+\DoxyCodeLine{\ \ \ \ opts[key]\ =\ options[key];}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\ \ opts.decrypt\ =\ this.\_decrypt;}
+\DoxyCodeLine{\ \ this.\_finish\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\ \ this.\_input\ =\ \mbox{\hyperlink{cipher_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.util.createBuffer();}
+\DoxyCodeLine{\ \ this.output\ =\ options.output\ ||\ \mbox{\hyperlink{cipher_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.util.createBuffer();}
+\DoxyCodeLine{\ \ this.mode.start(opts);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Starts or restarts the encryption or decryption process, whichever was previously configured.
+
+For non-\/\+GCM mode, the IV may be a binary-\/encoded string of bytes, an array of bytes, a byte buffer, or an array of 32-\/bit integers. If the IV is in bytes, then it must be Nb (16) bytes in length. If the IV is given in as 32-\/bit integers, then it must be 4 integers long.
+
+Note\+: an IV is not required or used in ECB mode.
+
+For GCM-\/mode, the IV must be given as a binary-\/encoded string of bytes or a byte buffer. The number of bytes should be 12 (96 bits) as recommended by NIST SP-\/800-\/38D but another length may be given.
+
+
+\begin{DoxyParams}{Parameters}
+{\em options} & the options to use\+: iv the initialization vector to use as a binary-\/encoded string of bytes, null to reuse the last ciphered block from a previous \doxylink{cipher_8js_af2e4dc57151c84e08431510ddacfb9c6}{update()} (this "{}residue"{} method is for legacy support only). additional\+Data additional authentication data as a binary-\/encoded string of bytes, for \textquotesingle{}GCM\textquotesingle{} mode, (default\+: none). tag\+Length desired length of authentication tag, in bits, for \textquotesingle{}GCM\textquotesingle{} mode (0-\/128, default\+: 128). tag the authentication tag to check if decrypting, as a binary-\/encoded string of bytes. output the output the buffer to write to, null to create one. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{cipher_8js_af2e4dc57151c84e08431510ddacfb9c6}\index{cipher.js@{cipher.js}!update@{update}}
+\index{update@{update}!cipher.js@{cipher.js}}
+\doxysubsubsection{\texorpdfstring{update}{update}}
+{\footnotesize\ttfamily \label{cipher_8js_af2e4dc57151c84e08431510ddacfb9c6} 
+\mbox{\hyperlink{cipher_8js_a1223883309950affd02ef922ffddc3d0}{Block\+Cipher}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} update}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(input)\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}(input)\ \{}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ this.\_input.putBuffer(input);}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{while}(!this.\_op.call(\textcolor{keyword}{this}.mode,\ \textcolor{keyword}{this}.\_input,\ \textcolor{keyword}{this}.output,\ \textcolor{keyword}{this}.\_finish)\ \&\&}
+\DoxyCodeLine{\ \ \ \ !\textcolor{keyword}{this}.\_finish)\ \{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ this.\_input.compact();}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Updates the next block according to the cipher mode.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & the buffer to read from. \\
+\hline
+\end{DoxyParams}

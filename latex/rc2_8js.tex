@@ -1,0 +1,323 @@
+\doxysection{backend/node\+\_\+modules/node-\/forge/lib/rc2.js File Reference}
+\hypertarget{rc2_8js}{}\label{rc2_8js}\index{backend/node\_modules/node-\/forge/lib/rc2.js@{backend/node\_modules/node-\/forge/lib/rc2.js}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{rc2_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./forge\textquotesingle{})
+\item 
+var \mbox{\hyperlink{rc2_8js_a6eea7f1ab287603eb381a06216d04221}{pi\+Table}}
+\item 
+var \mbox{\hyperlink{rc2_8js_ad9a7d92cb87932d25187fdec3ba1b621}{s}} = \mbox{[}1, 2, 3, 5\mbox{]}
+\item 
+var \mbox{\hyperlink{rc2_8js_a4c9d6b1e785a26a63ee3fc8f42ee5bb8}{rol}}
+\item 
+var \mbox{\hyperlink{rc2_8js_a62c9a5059f1f5542d4fbb69c8a78a62e}{ror}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{rc2_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} = forge.\+rc2 = forge.\+rc2 \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} \{\}
+\item 
+\mbox{\hyperlink{aes_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} rc2 \mbox{\hyperlink{rc2_8js_a107d74eeb171c6f5159751a50ea58526}{expand\+Key}}
+\item 
+var \mbox{\hyperlink{rc2_8js_ad926c9370c1f5ff3fc1ae658c7c8e74e}{create\+Cipher}}
+\item 
+\mbox{\hyperlink{aes_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} rc2 \mbox{\hyperlink{rc2_8js_a4654fff5383cd0914159549a56a58a5b}{start\+Encrypting}}
+\item 
+\mbox{\hyperlink{aes_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} rc2 \mbox{\hyperlink{rc2_8js_afdc7531a6b91a384e7816d321065d107}{create\+Encryption\+Cipher}}
+\item 
+\mbox{\hyperlink{aes_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} rc2 \mbox{\hyperlink{rc2_8js_a2298ea8ae5e5ca760d28744b9f402cc5}{start\+Decrypting}}
+\item 
+\mbox{\hyperlink{aes_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} rc2 \mbox{\hyperlink{rc2_8js_adbaca508ccfc088fe76ffd1ac6847f4b}{create\+Decryption\+Cipher}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{rc2_8js_ad926c9370c1f5ff3fc1ae658c7c8e74e}\index{rc2.js@{rc2.js}!createCipher@{createCipher}}
+\index{createCipher@{createCipher}!rc2.js@{rc2.js}}
+\doxysubsubsection{\texorpdfstring{createCipher}{createCipher}}
+{\footnotesize\ttfamily \label{rc2_8js_ad926c9370c1f5ff3fc1ae658c7c8e74e} 
+var create\+Cipher}
+
+Creates a RC2 cipher object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & the symmetric key to use (as base for key generation). \\
+\hline
+{\em bits} & the number of effective key bits. \\
+\hline
+{\em encrypt} & false for decryption, true for encryption.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the cipher. 
+\end{DoxyReturn}
+\Hypertarget{rc2_8js_adbaca508ccfc088fe76ffd1ac6847f4b}\index{rc2.js@{rc2.js}!createDecryptionCipher@{createDecryptionCipher}}
+\index{createDecryptionCipher@{createDecryptionCipher}!rc2.js@{rc2.js}}
+\doxysubsubsection{\texorpdfstring{createDecryptionCipher}{createDecryptionCipher}}
+{\footnotesize\ttfamily \label{rc2_8js_adbaca508ccfc088fe76ffd1ac6847f4b} 
+\mbox{\hyperlink{aes_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} rc2 create\+Decryption\+Cipher}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(key,\ bits)\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{rc2_8js_ad926c9370c1f5ff3fc1ae658c7c8e74e}{createCipher}}(key,\ bits,\ \textcolor{keyword}{false});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Creates an RC2 cipher object to decrypt data in ECB or CBC mode using the given symmetric key.
+
+The key may be given as a string of bytes or a byte buffer.
+
+To start decrypting call \doxylink{cipher_8js_a1960adf42cbf8c24067b45da3a2f0aaf}{start()} on the cipher with an iv and optional output buffer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & the symmetric key to use.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the cipher. 
+\end{DoxyReturn}
+\Hypertarget{rc2_8js_afdc7531a6b91a384e7816d321065d107}\index{rc2.js@{rc2.js}!createEncryptionCipher@{createEncryptionCipher}}
+\index{createEncryptionCipher@{createEncryptionCipher}!rc2.js@{rc2.js}}
+\doxysubsubsection{\texorpdfstring{createEncryptionCipher}{createEncryptionCipher}}
+{\footnotesize\ttfamily \label{rc2_8js_afdc7531a6b91a384e7816d321065d107} 
+\mbox{\hyperlink{aes_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} rc2 create\+Encryption\+Cipher}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(key,\ bits)\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{rc2_8js_ad926c9370c1f5ff3fc1ae658c7c8e74e}{createCipher}}(key,\ bits,\ \textcolor{keyword}{true});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Creates an RC2 cipher object to encrypt data in ECB or CBC mode using the given symmetric key.
+
+The key may be given as a string of bytes or a byte buffer.
+
+To start encrypting call \doxylink{cipher_8js_a1960adf42cbf8c24067b45da3a2f0aaf}{start()} on the cipher with an iv and optional output buffer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & the symmetric key to use.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the cipher. 
+\end{DoxyReturn}
+\Hypertarget{rc2_8js_a107d74eeb171c6f5159751a50ea58526}\index{rc2.js@{rc2.js}!expandKey@{expandKey}}
+\index{expandKey@{expandKey}!rc2.js@{rc2.js}}
+\doxysubsubsection{\texorpdfstring{expandKey}{expandKey}}
+{\footnotesize\ttfamily \label{rc2_8js_a107d74eeb171c6f5159751a50ea58526} 
+\mbox{\hyperlink{aes_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} rc2 expand\+Key}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(key,\ effKeyBits)\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}(typeof\ key\ ===\ \textcolor{stringliteral}{'string'})\ \{}
+\DoxyCodeLine{\ \ \ \ key\ =\ \mbox{\hyperlink{rc2_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.util.createBuffer(key);}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\ \ effKeyBits\ =\ effKeyBits\ ||\ 128;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{ed25519_8js_af17802630779ec5087c1028d57f3d02b}{L}}\ =\ key;}
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{ordered-map_8min_8js_a91a9b6b17f03c9673df0494780403f29}{T}}\ =\ key.length();}
+\DoxyCodeLine{\ \ var\ T1\ =\ effKeyBits;}
+\DoxyCodeLine{\ \ var\ T8\ =\ Math.ceil(T1\ /\ 8);}
+\DoxyCodeLine{\ \ var\ TM\ =\ 0xff\ >>\ (T1\ \&\ 0x07);}
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{for}(\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ =\ \mbox{\hyperlink{ordered-map_8min_8js_a91a9b6b17f03c9673df0494780403f29}{T}};\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ <\ 128;\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}++)\ \{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{ed25519_8js_af17802630779ec5087c1028d57f3d02b}{L}}.putByte(\mbox{\hyperlink{rc2_8js_a6eea7f1ab287603eb381a06216d04221}{piTable}}[(\mbox{\hyperlink{ed25519_8js_af17802630779ec5087c1028d57f3d02b}{L}}.at(\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ -\/\ 1)\ +\ \mbox{\hyperlink{ed25519_8js_af17802630779ec5087c1028d57f3d02b}{L}}.at(\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ -\/\ \mbox{\hyperlink{ordered-map_8min_8js_a91a9b6b17f03c9673df0494780403f29}{T}}))\ \&\ 0xff]);}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{ed25519_8js_af17802630779ec5087c1028d57f3d02b}{L}}.setAt(128\ -\/\ T8,\ \mbox{\hyperlink{rc2_8js_a6eea7f1ab287603eb381a06216d04221}{piTable}}[\mbox{\hyperlink{ed25519_8js_af17802630779ec5087c1028d57f3d02b}{L}}.at(128\ -\/\ T8)\ \&\ TM]);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{for}(\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ =\ 127\ -\/\ T8;\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ >=\ 0;\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}-\/-\/)\ \{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{ed25519_8js_af17802630779ec5087c1028d57f3d02b}{L}}.setAt(\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}},\ \mbox{\hyperlink{rc2_8js_a6eea7f1ab287603eb381a06216d04221}{piTable}}[\mbox{\hyperlink{ed25519_8js_af17802630779ec5087c1028d57f3d02b}{L}}.at(\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ +\ 1)\ \string^\ \mbox{\hyperlink{ed25519_8js_af17802630779ec5087c1028d57f3d02b}{L}}.at(\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ +\ T8)]);}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{ed25519_8js_af17802630779ec5087c1028d57f3d02b}{L}};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Perform RC2 key expansion as per RFC \#2268, section 2.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & variable-\/length user key (between 1 and 128 bytes) \\
+\hline
+{\em eff\+Key\+Bits} & number of effective key bits (default\+: 128) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the expanded RC2 key (Byte\+Buffer of 128 bytes) 
+\end{DoxyReturn}
+\Hypertarget{rc2_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\index{rc2.js@{rc2.js}!exports@{exports}}
+\index{exports@{exports}!rc2.js@{rc2.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \label{rc2_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports = forge.\+rc2 = forge.\+rc2 \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} \{\}}
+
+\Hypertarget{rc2_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}\index{rc2.js@{rc2.js}!forge@{forge}}
+\index{forge@{forge}!rc2.js@{rc2.js}}
+\doxysubsubsection{\texorpdfstring{forge}{forge}}
+{\footnotesize\ttfamily \label{rc2_8js_ab4dbef01e35b8e6d06087c0542ba9e2c} 
+var forge = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./forge\textquotesingle{})}
+
+RC2 implementation.
+
+\begin{DoxyAuthor}{Author}
+Stefan Siegl
+\end{DoxyAuthor}
+Copyright (c) 2012 Stefan Siegl \href{mailto:stesie@brokenpipe.de}{\texttt{ stesie@brokenpipe.\+de}}
+
+Information on the RC2 cipher is available from RFC \#2268, \href{http://www.ietf.org/rfc/rfc2268.txt}{\texttt{ http\+://www.\+ietf.\+org/rfc/rfc2268.\+txt}} \Hypertarget{rc2_8js_a6eea7f1ab287603eb381a06216d04221}\index{rc2.js@{rc2.js}!piTable@{piTable}}
+\index{piTable@{piTable}!rc2.js@{rc2.js}}
+\doxysubsubsection{\texorpdfstring{piTable}{piTable}}
+{\footnotesize\ttfamily \label{rc2_8js_a6eea7f1ab287603eb381a06216d04221} 
+var pi\+Table}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ 0xd9,\ 0x78,\ 0xf9,\ 0xc4,\ 0x19,\ 0xdd,\ 0xb5,\ 0xed,\ 0x28,\ 0xe9,\ 0xfd,\ 0x79,\ 0x4a,\ 0xa0,\ 0xd8,\ 0x9d,}
+\DoxyCodeLine{\ \ 0xc6,\ 0x7e,\ 0x37,\ 0x83,\ 0x2b,\ 0x76,\ 0x53,\ 0x8e,\ 0x62,\ 0x4c,\ 0x64,\ 0x88,\ 0x44,\ 0x8b,\ 0xfb,\ 0xa2,}
+\DoxyCodeLine{\ \ 0x17,\ 0x9a,\ 0x59,\ 0xf5,\ 0x87,\ 0xb3,\ 0x4f,\ 0x13,\ 0x61,\ 0x45,\ 0x6d,\ 0x8d,\ 0x09,\ 0x81,\ 0x7d,\ 0x32,}
+\DoxyCodeLine{\ \ 0xbd,\ 0x8f,\ 0x40,\ 0xeb,\ 0x86,\ 0xb7,\ 0x7b,\ 0x0b,\ 0xf0,\ 0x95,\ 0x21,\ 0x22,\ 0x5c,\ 0x6b,\ 0x4e,\ 0x82,}
+\DoxyCodeLine{\ \ 0x54,\ 0xd6,\ 0x65,\ 0x93,\ 0xce,\ 0x60,\ 0xb2,\ 0x1c,\ 0x73,\ 0x56,\ 0xc0,\ 0x14,\ 0xa7,\ 0x8c,\ 0xf1,\ 0xdc,}
+\DoxyCodeLine{\ \ 0x12,\ 0x75,\ 0xca,\ 0x1f,\ 0x3b,\ 0xbe,\ 0xe4,\ 0xd1,\ 0x42,\ 0x3d,\ 0xd4,\ 0x30,\ 0xa3,\ 0x3c,\ 0xb6,\ 0x26,}
+\DoxyCodeLine{\ \ 0x6f,\ 0xbf,\ 0x0e,\ 0xda,\ 0x46,\ 0x69,\ 0x07,\ 0x57,\ 0x27,\ 0xf2,\ 0x1d,\ 0x9b,\ 0xbc,\ 0x94,\ 0x43,\ 0x03,}
+\DoxyCodeLine{\ \ 0xf8,\ 0x11,\ 0xc7,\ 0xf6,\ 0x90,\ 0xef,\ 0x3e,\ 0xe7,\ 0x06,\ 0xc3,\ 0xd5,\ 0x2f,\ 0xc8,\ 0x66,\ 0x1e,\ 0xd7,}
+\DoxyCodeLine{\ \ 0x08,\ 0xe8,\ 0xea,\ 0xde,\ 0x80,\ 0x52,\ 0xee,\ 0xf7,\ 0x84,\ 0xaa,\ 0x72,\ 0xac,\ 0x35,\ 0x4d,\ 0x6a,\ 0x2a,}
+\DoxyCodeLine{\ \ 0x96,\ 0x1a,\ 0xd2,\ 0x71,\ 0x5a,\ 0x15,\ 0x49,\ 0x74,\ 0x4b,\ 0x9f,\ 0xd0,\ 0x5e,\ 0x04,\ 0x18,\ 0xa4,\ 0xec,}
+\DoxyCodeLine{\ \ 0xc2,\ 0xe0,\ 0x41,\ 0x6e,\ 0x0f,\ 0x51,\ 0xcb,\ 0xcc,\ 0x24,\ 0x91,\ 0xaf,\ 0x50,\ 0xa1,\ 0xf4,\ 0x70,\ 0x39,}
+\DoxyCodeLine{\ \ 0x99,\ 0x7c,\ 0x3a,\ 0x85,\ 0x23,\ 0xb8,\ 0xb4,\ 0x7a,\ 0xfc,\ 0x02,\ 0x36,\ 0x5b,\ 0x25,\ 0x55,\ 0x97,\ 0x31,}
+\DoxyCodeLine{\ \ 0x2d,\ 0x5d,\ 0xfa,\ 0x98,\ 0xe3,\ 0x8a,\ 0x92,\ 0xae,\ 0x05,\ 0xdf,\ 0x29,\ 0x10,\ 0x67,\ 0x6c,\ 0xba,\ 0xc9,}
+\DoxyCodeLine{\ \ 0xd3,\ 0x00,\ 0xe6,\ 0xcf,\ 0xe1,\ 0x9e,\ 0xa8,\ 0x2c,\ 0x63,\ 0x16,\ 0x01,\ 0x3f,\ 0x58,\ 0xe2,\ 0x89,\ 0xa9,}
+\DoxyCodeLine{\ \ 0x0d,\ 0x38,\ 0x34,\ 0x1b,\ 0xab,\ 0x33,\ 0xff,\ 0xb0,\ 0xbb,\ 0x48,\ 0x0c,\ 0x5f,\ 0xb9,\ 0xb1,\ 0xcd,\ 0x2e,}
+\DoxyCodeLine{\ \ 0xc5,\ 0xf3,\ 0xdb,\ 0x47,\ 0xe5,\ 0xa5,\ 0x9c,\ 0x77,\ 0x0a,\ 0xa6,\ 0x20,\ 0x68,\ 0xfe,\ 0x7f,\ 0xc1,\ 0xad}
+\DoxyCodeLine{]}
+
+\end{DoxyCode}
+\Hypertarget{rc2_8js_a4c9d6b1e785a26a63ee3fc8f42ee5bb8}\index{rc2.js@{rc2.js}!rol@{rol}}
+\index{rol@{rol}!rc2.js@{rc2.js}}
+\doxysubsubsection{\texorpdfstring{rol}{rol}}
+{\footnotesize\ttfamily \label{rc2_8js_a4c9d6b1e785a26a63ee3fc8f42ee5bb8} 
+var rol}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(word,\ bits)\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ ((word\ <<\ bits)\ \&\ 0xffff)\ |\ ((word\ \&\ 0xffff)\ >>\ (16\ -\/\ bits));}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Rotate a word left by given number of bits.
+
+Bits that are shifted out on the left are put back in on the right hand side.
+
+
+\begin{DoxyParams}{Parameters}
+{\em word} & The word to shift left. \\
+\hline
+{\em bits} & The number of bits to shift by. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The rotated word. 
+\end{DoxyReturn}
+\Hypertarget{rc2_8js_a62c9a5059f1f5542d4fbb69c8a78a62e}\index{rc2.js@{rc2.js}!ror@{ror}}
+\index{ror@{ror}!rc2.js@{rc2.js}}
+\doxysubsubsection{\texorpdfstring{ror}{ror}}
+{\footnotesize\ttfamily \label{rc2_8js_a62c9a5059f1f5542d4fbb69c8a78a62e} 
+var ror}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(word,\ bits)\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ ((word\ \&\ 0xffff)\ >>\ bits)\ |\ ((word\ <<\ (16\ -\/\ bits))\ \&\ 0xffff);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Rotate a word right by given number of bits.
+
+Bits that are shifted out on the right are put back in on the left hand side.
+
+
+\begin{DoxyParams}{Parameters}
+{\em word} & The word to shift right. \\
+\hline
+{\em bits} & The number of bits to shift by. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The rotated word. 
+\end{DoxyReturn}
+\Hypertarget{rc2_8js_ad9a7d92cb87932d25187fdec3ba1b621}\index{rc2.js@{rc2.js}!s@{s}}
+\index{s@{s}!rc2.js@{rc2.js}}
+\doxysubsubsection{\texorpdfstring{s}{s}}
+{\footnotesize\ttfamily \label{rc2_8js_ad9a7d92cb87932d25187fdec3ba1b621} 
+var s = \mbox{[}1, 2, 3, 5\mbox{]}}
+
+\Hypertarget{rc2_8js_a2298ea8ae5e5ca760d28744b9f402cc5}\index{rc2.js@{rc2.js}!startDecrypting@{startDecrypting}}
+\index{startDecrypting@{startDecrypting}!rc2.js@{rc2.js}}
+\doxysubsubsection{\texorpdfstring{startDecrypting}{startDecrypting}}
+{\footnotesize\ttfamily \label{rc2_8js_a2298ea8ae5e5ca760d28744b9f402cc5} 
+\mbox{\hyperlink{aes_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} rc2 start\+Decrypting}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(key,\ iv,\ output)\ \{}
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{cipher_modes_8js_ad3529e6b62fffcc9799ee186212e4b5a}{cipher}}\ =\ \mbox{\hyperlink{rc2_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.rc2.createDecryptionCipher(key,\ 128);}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{cipher_modes_8js_ad3529e6b62fffcc9799ee186212e4b5a}{cipher}}.start(iv,\ output);}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{cipher_modes_8js_ad3529e6b62fffcc9799ee186212e4b5a}{cipher}};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Creates an RC2 cipher object to decrypt data in ECB or CBC mode using the given symmetric key. The output will be stored in the \textquotesingle{}output\textquotesingle{} member of the returned cipher.
+
+The key and iv may be given as a string of bytes or a byte buffer. The cipher is initialized to use 128 effective key bits.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & the symmetric key to use. \\
+\hline
+{\em iv} & the initialization vector to use. \\
+\hline
+{\em output} & the buffer to write to, null to create one.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the cipher. 
+\end{DoxyReturn}
+\Hypertarget{rc2_8js_a4654fff5383cd0914159549a56a58a5b}\index{rc2.js@{rc2.js}!startEncrypting@{startEncrypting}}
+\index{startEncrypting@{startEncrypting}!rc2.js@{rc2.js}}
+\doxysubsubsection{\texorpdfstring{startEncrypting}{startEncrypting}}
+{\footnotesize\ttfamily \label{rc2_8js_a4654fff5383cd0914159549a56a58a5b} 
+\mbox{\hyperlink{aes_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} rc2 start\+Encrypting}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(key,\ iv,\ output)\ \{}
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{cipher_modes_8js_ad3529e6b62fffcc9799ee186212e4b5a}{cipher}}\ =\ \mbox{\hyperlink{rc2_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.rc2.createEncryptionCipher(key,\ 128);}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{cipher_modes_8js_ad3529e6b62fffcc9799ee186212e4b5a}{cipher}}.start(iv,\ output);}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{cipher_modes_8js_ad3529e6b62fffcc9799ee186212e4b5a}{cipher}};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Creates an RC2 cipher object to encrypt data in ECB or CBC mode using the given symmetric key. The output will be stored in the \textquotesingle{}output\textquotesingle{} member of the returned cipher.
+
+The key and iv may be given as a string of bytes or a byte buffer. The cipher is initialized to use 128 effective key bits.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & the symmetric key to use. \\
+\hline
+{\em iv} & the initialization vector to use. \\
+\hline
+{\em output} & the buffer to write to, null to create one.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the cipher. 
+\end{DoxyReturn}

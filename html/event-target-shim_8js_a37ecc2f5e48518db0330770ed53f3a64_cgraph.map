@@ -1,0 +1,7 @@
+<map id="Event" name="Event">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,61,31"/>
+<area shape="rect" id="Node000002" href="$event-target-shim_8js.html#ac0ea2abe726506794d744d14e6aa5864" title=" " alt="" coords="109,5,274,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="61,16,93,16,93,21,61,21"/>
+<area shape="rect" id="Node000003" href="$event-target-shim_8js.html#a6b2fd9b8f5131cd07c19f9ff4b2b3666" title=" " alt="" coords="322,5,360,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="274,16,306,16,306,21,274,21"/>
+</map>

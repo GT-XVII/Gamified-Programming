@@ -1,0 +1,125 @@
+\doxysection{backend/node\+\_\+modules/firebase-\/admin/lib/remote-\/config/remote-\/config-\/api-\/client-\/internal.js File Reference}
+\hypertarget{remote-config-api-client-internal_8js}{}\label{remote-config-api-client-internal_8js}\index{backend/node\_modules/firebase-\/admin/lib/remote-\/config/remote-\/config-\/api-\/client-\/internal.js@{backend/node\_modules/firebase-\/admin/lib/remote-\/config/remote-\/config-\/api-\/client-\/internal.js}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_remote_config_api_client}{Remote\+Config\+Api\+Client}}
+\item 
+class \mbox{\hyperlink{class_firebase_remote_config_error}{Firebase\+Remote\+Config\+Error}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{remote-config-api-client-internal_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{remote-config-api-client-internal_8js_aa821110988fd33e782585416dfc22af6}{Firebase\+Remote\+Config\+Error}} = exports.\+Remote\+Config\+Api\+Client = void 0
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{remote-config-api-client-internal_8js_a73dd1e6f0bc0a0234576ddef2bbe0452}{api\+\_\+request\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}}-\/request"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{remote-config-api-client-internal_8js_af1a99a3ff1a35c114bdd06cc7252beb6}{error\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/error"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{remote-config-api-client-internal_8js_a022e926a40defc4294368e708a7e2372}{utils}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/index"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{remote-config-api-client-internal_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/validator"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{remote-config-api-client-internal_8js_a3c878464c635c5cd2043d7e066bb187b}{deep\+\_\+copy\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/deep-\/copy"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{remote-config-api-client-internal_8js_a3484cb39058b1fe3cac022f126ffb078}{FIREBASE\+\_\+\+REMOTE\+\_\+\+CONFIG\+\_\+\+URL\+\_\+\+BASE}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{remote-config-api-client-internal_8js_a4bc05bd85aa57caa2f22cbd4105f0b93}{Remote\+Config\+Api\+Client}} = Remote\+Config\+Api\+Client
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{remote-config-api-client-internal_8js_ac23834702346874fb5b4d9fca8ebc93b}{ERROR\+\_\+\+CODE\+\_\+\+MAPPING}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{remote-config-api-client-internal_8js_a73dd1e6f0bc0a0234576ddef2bbe0452}\index{remote-\/config-\/api-\/client-\/internal.js@{remote-\/config-\/api-\/client-\/internal.js}!api\_request\_1@{api\_request\_1}}
+\index{api\_request\_1@{api\_request\_1}!remote-\/config-\/api-\/client-\/internal.js@{remote-\/config-\/api-\/client-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{api\_request\_1}{api\_request\_1}}
+{\footnotesize\ttfamily \label{remote-config-api-client-internal_8js_a73dd1e6f0bc0a0234576ddef2bbe0452} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} api\+\_\+request\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}}-\/request"{})}
+
+\Hypertarget{remote-config-api-client-internal_8js_a3c878464c635c5cd2043d7e066bb187b}\index{remote-\/config-\/api-\/client-\/internal.js@{remote-\/config-\/api-\/client-\/internal.js}!deep\_copy\_1@{deep\_copy\_1}}
+\index{deep\_copy\_1@{deep\_copy\_1}!remote-\/config-\/api-\/client-\/internal.js@{remote-\/config-\/api-\/client-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{deep\_copy\_1}{deep\_copy\_1}}
+{\footnotesize\ttfamily \label{remote-config-api-client-internal_8js_a3c878464c635c5cd2043d7e066bb187b} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} deep\+\_\+copy\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/deep-\/copy"{})}
+
+\Hypertarget{remote-config-api-client-internal_8js_af1a99a3ff1a35c114bdd06cc7252beb6}\index{remote-\/config-\/api-\/client-\/internal.js@{remote-\/config-\/api-\/client-\/internal.js}!error\_1@{error\_1}}
+\index{error\_1@{error\_1}!remote-\/config-\/api-\/client-\/internal.js@{remote-\/config-\/api-\/client-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{error\_1}{error\_1}}
+{\footnotesize\ttfamily \label{remote-config-api-client-internal_8js_af1a99a3ff1a35c114bdd06cc7252beb6} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} error\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/error"{})}
+
+\Hypertarget{remote-config-api-client-internal_8js_ac23834702346874fb5b4d9fca8ebc93b}\index{remote-\/config-\/api-\/client-\/internal.js@{remote-\/config-\/api-\/client-\/internal.js}!ERROR\_CODE\_MAPPING@{ERROR\_CODE\_MAPPING}}
+\index{ERROR\_CODE\_MAPPING@{ERROR\_CODE\_MAPPING}!remote-\/config-\/api-\/client-\/internal.js@{remote-\/config-\/api-\/client-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{ERROR\_CODE\_MAPPING}{ERROR\_CODE\_MAPPING}}
+{\footnotesize\ttfamily \label{remote-config-api-client-internal_8js_ac23834702346874fb5b4d9fca8ebc93b} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} ERROR\+\_\+\+CODE\+\_\+\+MAPPING}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \ \ ABORTED:\ \textcolor{stringliteral}{'aborted'},}
+\DoxyCodeLine{\ \ \ \ ALREADY\_EXISTS:\ \textcolor{stringliteral}{'already-\/exists'},}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{crypto-signer_8js_a70c18fba00c4d8391e61dfadbe44ed94}{INVALID\_ARGUMENT}}:\ \textcolor{stringliteral}{'invalid-\/argument'},}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a9ffa956335fc503879e7740f1543e56e}{INTERNAL}}:\ \textcolor{stringliteral}{'internal-\/error'},}
+\DoxyCodeLine{\ \ \ \ FAILED\_PRECONDITION:\ \textcolor{stringliteral}{'failed-\/precondition'},}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{firebase-admin_2lib_2utils_2error_8js_ad4740058d98e7c8fbf0d3ea0633b6b3a}{NOT\_FOUND}}:\ \textcolor{stringliteral}{'not-\/found'},}
+\DoxyCodeLine{\ \ \ \ OUT\_OF\_RANGE:\ \textcolor{stringliteral}{'out-\/of-\/range'},}
+\DoxyCodeLine{\ \ \ \ PERMISSION\_DENIED:\ \textcolor{stringliteral}{'permission-\/denied'},}
+\DoxyCodeLine{\ \ \ \ RESOURCE\_EXHAUSTED:\ \textcolor{stringliteral}{'resource-\/exhausted'},}
+\DoxyCodeLine{\ \ \ \ UNAUTHENTICATED:\ \textcolor{stringliteral}{'unauthenticated'},}
+\DoxyCodeLine{\ \ \ \ UNKNOWN:\ \textcolor{stringliteral}{'unknown-\/error'},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{remote-config-api-client-internal_8js_a3484cb39058b1fe3cac022f126ffb078}\index{remote-\/config-\/api-\/client-\/internal.js@{remote-\/config-\/api-\/client-\/internal.js}!FIREBASE\_REMOTE\_CONFIG\_URL\_BASE@{FIREBASE\_REMOTE\_CONFIG\_URL\_BASE}}
+\index{FIREBASE\_REMOTE\_CONFIG\_URL\_BASE@{FIREBASE\_REMOTE\_CONFIG\_URL\_BASE}!remote-\/config-\/api-\/client-\/internal.js@{remote-\/config-\/api-\/client-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{FIREBASE\_REMOTE\_CONFIG\_URL\_BASE}{FIREBASE\_REMOTE\_CONFIG\_URL\_BASE}}
+{\footnotesize\ttfamily \label{remote-config-api-client-internal_8js_a3484cb39058b1fe3cac022f126ffb078} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} FIREBASE\+\_\+\+REMOTE\+\_\+\+CONFIG\+\_\+\+URL\+\_\+\+BASE}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \mbox{\hyperlink{ipaddr_8min_8js_abcedab16429ea0641c6596f556f2e102}{process}}.env.FIREBASE\_REMOTE\_CONFIG\_URL\_BASE\ ||\ \textcolor{stringliteral}{'https:}}
+\DoxyCodeLine{\textcolor{stringliteral}{const\ FIREBASE\_REMOTE\_CONFIG\_HEADERS\ =\ \{}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ '}\mbox{\hyperlink{ed25519_8js_a8f6df0ea3658d5ac6a612671d29527e6}{X}}-\/Firebase-\/\mbox{\hyperlink{class_client}{Client}}\textcolor{stringliteral}{':\ \`{}fire-\/admin-\/node/\$\{utils.getSdkVersion()\}`,}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ }}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ }}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ }}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ }}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ '}Accept-\/Encoding\textcolor{stringliteral}{':\ '}gzip\textcolor{stringliteral}{',}}
+\DoxyCodeLine{\textcolor{stringliteral}{\}}}
+
+\end{DoxyCode}
+Allows the {\ttfamily FIREBASE\+\_\+\+REMOTE\+\_\+\+CONFIG\+\_\+\+URL\+\_\+\+BASE} environment variable to override the default API endpoint URL. \Hypertarget{remote-config-api-client-internal_8js_aa821110988fd33e782585416dfc22af6}\index{remote-\/config-\/api-\/client-\/internal.js@{remote-\/config-\/api-\/client-\/internal.js}!FirebaseRemoteConfigError@{FirebaseRemoteConfigError}}
+\index{FirebaseRemoteConfigError@{FirebaseRemoteConfigError}!remote-\/config-\/api-\/client-\/internal.js@{remote-\/config-\/api-\/client-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{FirebaseRemoteConfigError}{FirebaseRemoteConfigError}}
+{\footnotesize\ttfamily \label{remote-config-api-client-internal_8js_aa821110988fd33e782585416dfc22af6} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} Firebase\+Remote\+Config\+Error = exports.\+Remote\+Config\+Api\+Client = void 0}
+
+\Hypertarget{remote-config-api-client-internal_8js_a4bc05bd85aa57caa2f22cbd4105f0b93}\index{remote-\/config-\/api-\/client-\/internal.js@{remote-\/config-\/api-\/client-\/internal.js}!RemoteConfigApiClient@{RemoteConfigApiClient}}
+\index{RemoteConfigApiClient@{RemoteConfigApiClient}!remote-\/config-\/api-\/client-\/internal.js@{remote-\/config-\/api-\/client-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{RemoteConfigApiClient}{RemoteConfigApiClient}}
+{\footnotesize\ttfamily \label{remote-config-api-client-internal_8js_a4bc05bd85aa57caa2f22cbd4105f0b93} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} Remote\+Config\+Api\+Client = Remote\+Config\+Api\+Client}
+
+\Hypertarget{remote-config-api-client-internal_8js_ae2475e10618961c050dcba04e8c42331}\index{remote-\/config-\/api-\/client-\/internal.js@{remote-\/config-\/api-\/client-\/internal.js}!strict@{strict}}
+\index{strict@{strict}!remote-\/config-\/api-\/client-\/internal.js@{remote-\/config-\/api-\/client-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{remote-config-api-client-internal_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+
+firebase-\/admin v12.\+7.\+0 \Hypertarget{remote-config-api-client-internal_8js_a022e926a40defc4294368e708a7e2372}\index{remote-\/config-\/api-\/client-\/internal.js@{remote-\/config-\/api-\/client-\/internal.js}!utils@{utils}}
+\index{utils@{utils}!remote-\/config-\/api-\/client-\/internal.js@{remote-\/config-\/api-\/client-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{utils}{utils}}
+{\footnotesize\ttfamily \label{remote-config-api-client-internal_8js_a022e926a40defc4294368e708a7e2372} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} utils = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/index"{})}
+
+\Hypertarget{remote-config-api-client-internal_8js_add6dc10e852e313f07c0d59bcf288b6a}\index{remote-\/config-\/api-\/client-\/internal.js@{remote-\/config-\/api-\/client-\/internal.js}!validator@{validator}}
+\index{validator@{validator}!remote-\/config-\/api-\/client-\/internal.js@{remote-\/config-\/api-\/client-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{validator}{validator}}
+{\footnotesize\ttfamily \label{remote-config-api-client-internal_8js_add6dc10e852e313f07c0d59bcf288b6a} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} validator = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/validator"{})}
+

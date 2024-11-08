@@ -1,0 +1,263 @@
+\doxysection{Field\+Path Class Reference}
+\hypertarget{class_field_path}{}\label{class_field_path}\index{FieldPath@{FieldPath}}
+
+
+Inheritance diagram for Field\+Path\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{class_field_path__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Field\+Path\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{class_field_path__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_field_path_aad87bc7a54b3c1ade7e6b41e1c329c77}{constructor}} (...segments)
+\item 
+\mbox{\hyperlink{class_field_path_ab8db710941545112a533145f2da079d3}{is\+Equal}} (other)
+\item 
+\mbox{\hyperlink{class_path_a6f5487fe6e89bed96d26c96d0ed4913e}{constructor}} (path\+Or\+String, piece\+Num)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_field_path_a9f59b30fa7d14088ac9fe581e2686df9}{document\+Id}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} \mbox{\hyperlink{class_field_path_a563dc31cb25f20e261091fed9d87b86a}{formatted\+Name}} ()
+\item 
+\mbox{\hyperlink{class_field_path_aaa1f6dbfca490be8a31bbb6d7cc9b9f3}{to\+String}} ()
+\item 
+\mbox{\hyperlink{class_field_path_a88a6dd7199bf553737398de66cdfd5ee}{split}} (field\+Path)
+\item 
+\mbox{\hyperlink{class_field_path_a1adc68bce0aebc0d00895804c257a2b8}{construct}} (segments)
+\item 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} \mbox{\hyperlink{class_path_aa052e342ee5d8d2b4e5946c0c1e0616d}{size}} ()
+\item 
+\mbox{\hyperlink{class_path_a589e0bcb3ff8256b473e9dc108e459c0}{append}} (relative\+Path)
+\item 
+\mbox{\hyperlink{class_path_ab40f4941f6b7d9dd7269bd2da6a8d4b8}{parent}} ()
+\item 
+\mbox{\hyperlink{class_path_af78fc0ff77745a224b9515006789929b}{is\+Prefix\+Of}} (other)
+\item 
+\mbox{\hyperlink{class_path_a53535bc274fc824b528a5e6d0150ce35}{compare\+To}} (other)
+\item 
+\mbox{\hyperlink{class_path_a751de3fffb721f398ece922c9231cfaf}{to\+Array}} ()
+\item 
+\mbox{\hyperlink{class_path_ad4b5bb6a77ef3ca7f1cd8649ac3b9883}{pop\+Last}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_field_path_afacd5cd0ec411b981992cf870e97e988}{from\+Argument}} (field\+Path)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_a}{A} dot-\/separated path for navigating sub-\/objects (e.\+g. nested maps) within a document. \begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_62415c365bdeb9a4328334206323a168}{/\+Users/nicoletiokhin/\+Desktop/\+Software Semester 3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/@google-\/cloud/firestore/build/src/query-\/partition.\+js}}.\end{Desc}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_path_a589e0bcb3ff8256b473e9dc108e459c0}\index{FieldPath@{FieldPath}!append@{append}}
+\index{append@{append}!FieldPath@{FieldPath}}
+\doxysubsubsection{\texorpdfstring{append()}{append()}}
+{\footnotesize\ttfamily \label{class_path_a589e0bcb3ff8256b473e9dc108e459c0} 
+Path\+::append (\begin{DoxyParamCaption}\item[{}]{relative\+Path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}, {\ttfamily [inherited]}}
+
+Create a child path beneath the current level. \Hypertarget{class_path_a53535bc274fc824b528a5e6d0150ce35}\index{FieldPath@{FieldPath}!compareTo@{compareTo}}
+\index{compareTo@{compareTo}!FieldPath@{FieldPath}}
+\doxysubsubsection{\texorpdfstring{compareTo()}{compareTo()}}
+{\footnotesize\ttfamily \label{class_path_a53535bc274fc824b528a5e6d0150ce35} 
+Path\+::compare\+To (\begin{DoxyParamCaption}\item[{}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}, {\ttfamily [inherited]}}
+
+Compare the current path against another \doxylink{class_path}{Path} object. 
+
+References \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}.
+
+\Hypertarget{class_field_path_a1adc68bce0aebc0d00895804c257a2b8}\index{FieldPath@{FieldPath}!construct@{construct}}
+\index{construct@{construct}!FieldPath@{FieldPath}}
+\doxysubsubsection{\texorpdfstring{construct()}{construct()}}
+{\footnotesize\ttfamily \label{class_field_path_a1adc68bce0aebc0d00895804c257a2b8} 
+Field\+Path\+::construct (\begin{DoxyParamCaption}\item[{}]{segments}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Constructs a new instance of \doxylink{class_field_path}{Field\+Path}. We need this instead of using the normal constructor because polymorphic \textquotesingle{}this\textquotesingle{} doesn\textquotesingle{}t work on static methods. 
+
+References \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2path_8js_ad893056bb306a76a3a563f5344a0fac0}{Field\+Path}}.
+
+\Hypertarget{class_field_path_aad87bc7a54b3c1ade7e6b41e1c329c77}\index{FieldPath@{FieldPath}!constructor@{constructor}}
+\index{constructor@{constructor}!FieldPath@{FieldPath}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_field_path_aad87bc7a54b3c1ade7e6b41e1c329c77} 
+Field\+Path\+::constructor (\begin{DoxyParamCaption}\item[{}]{...}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{core_8min_8js_a46d2d1e8780c9b3b6a642760bb148e61}{an}}, \mbox{\hyperlink{src_2util_2minimal_8js_a325c4e317c38d8497130ebce7670be2f}{Array}}, \mbox{\hyperlink{at_8js_a78af5f3fbaccaa8a16d6bea9d7a5e9f4}{at}}, \mbox{\hyperlink{ordered-map_8min_8js_a4bdf3e530f52a4f5162d818b2a88378b}{empty}}, \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}, \mbox{\hyperlink{cookie_2index_8js_a0ac000318c33f03e412baff8df5b2513}{index}}, \mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a7fdcf4c82c9946bf2b0b80829a7ab230}{length}}, \mbox{\hyperlink{long_2index_8js_ad7dc44f0ebdb746f4a5b0612ae9315cb}{not}}, and \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2path_8js_aa37716c5385ffbe958d12dba0dab85f8}{validate\+\_\+1}}.
+
+\Hypertarget{class_path_a6f5487fe6e89bed96d26c96d0ed4913e}\index{FieldPath@{FieldPath}!constructor@{constructor}}
+\index{constructor@{constructor}!FieldPath@{FieldPath}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_path_a6f5487fe6e89bed96d26c96d0ed4913e} 
+Path\+::constructor (\begin{DoxyParamCaption}\item[{}]{path\+Or\+String}{, }\item[{}]{piece\+Num}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em path\+Or\+String} & -\/ \doxylink{class_path}{Path} string to parse, or another path, or the raw tokens array \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{prime_8worker_8min_8js_a9d5f68e7deda011db9f133394a1af272}{copy\+To}}, \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}, and \mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a7fdcf4c82c9946bf2b0b80829a7ab230}{length}}.
+
+\Hypertarget{class_field_path_a9f59b30fa7d14088ac9fe581e2686df9}\index{FieldPath@{FieldPath}!documentId@{documentId}}
+\index{documentId@{documentId}!FieldPath@{FieldPath}}
+\doxysubsubsection{\texorpdfstring{documentId()}{documentId()}}
+{\footnotesize\ttfamily \label{class_field_path_a9f59b30fa7d14088ac9fe581e2686df9} 
+static Field\+Path\+::document\+Id (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\doxylink{class_a}{A} special \doxylink{class_field_path}{Field\+Path} value to refer to the ID of a document. It can be used in queries to sort or filter by the document ID.
+
+\begin{DoxyReturn}{Returns}
+\{\doxylink{class_field_path}{Field\+Path}\} 
+\end{DoxyReturn}
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_62415c365bdeb9a4328334206323a168}{/\+Users/nicoletiokhin/\+Desktop/\+Software Semester 3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/@google-\/cloud/firestore/build/src/query-\/partition.\+js}}.\end{Desc}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_field_path_a9f59b30fa7d14088ac9fe581e2686df9_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_field_path_a563dc31cb25f20e261091fed9d87b86a}\index{FieldPath@{FieldPath}!formattedName@{formattedName}}
+\index{formattedName@{formattedName}!FieldPath@{FieldPath}}
+\doxysubsubsection{\texorpdfstring{formattedName()}{formattedName()}}
+{\footnotesize\ttfamily \label{class_field_path_a563dc31cb25f20e261091fed9d87b86a} 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} Field\+Path\+::formatted\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+String representation of a \doxylink{class_field_path}{Field\+Path} as expected by the API. 
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a500bc97a63b7c35b84493a7f90ef44d6}{join}}, \mbox{\hyperlink{json-bigint_2lib_2stringify_8js_abd4075a8f329b0ccafd81359c952a9df}{str()}}, and \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2path_8js_a5b049752da8a7aa1005cfdc37638c084}{UNESCAPED\+\_\+\+FIELD\+\_\+\+NAME\+\_\+\+RE}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{class_field_path_a563dc31cb25f20e261091fed9d87b86a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{class_field_path_a563dc31cb25f20e261091fed9d87b86a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_field_path_afacd5cd0ec411b981992cf870e97e988}\index{FieldPath@{FieldPath}!fromArgument@{fromArgument}}
+\index{fromArgument@{fromArgument}!FieldPath@{FieldPath}}
+\doxysubsubsection{\texorpdfstring{fromArgument()}{fromArgument()}}
+{\footnotesize\ttfamily \label{class_field_path_afacd5cd0ec411b981992cf870e97e988} 
+static Field\+Path\+::from\+Argument (\begin{DoxyParamCaption}\item[{}]{field\+Path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+Turns a field path argument into a \mbox{[}\doxylink{class_field_path}{Field\+Path}\mbox{]}{\ttfamily \doxylink{class_field_path}{Field\+Path}}. Supports Field\+Paths as input (which are passed through) and dot-\/separated strings. 
+
+References \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2path_8js_ad893056bb306a76a3a563f5344a0fac0}{Field\+Path}}.
+
+\Hypertarget{class_field_path_ab8db710941545112a533145f2da079d3}\index{FieldPath@{FieldPath}!isEqual@{isEqual}}
+\index{isEqual@{isEqual}!FieldPath@{FieldPath}}
+\doxysubsubsection{\texorpdfstring{isEqual()}{isEqual()}}
+{\footnotesize\ttfamily \label{class_field_path_ab8db710941545112a533145f2da079d3} 
+Field\+Path\+::is\+Equal (\begin{DoxyParamCaption}\item[{}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns true if this {\ttfamily \doxylink{class_field_path}{Field\+Path}} is equal to the provided value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\texorpdfstring{$\ast$}{*}\}} & other The value to compare against. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{boolean\} true if this {\ttfamily \doxylink{class_field_path}{Field\+Path}} is equal to the provided value. 
+\end{DoxyReturn}
+\Hypertarget{class_path_af78fc0ff77745a224b9515006789929b}\index{FieldPath@{FieldPath}!isPrefixOf@{isPrefixOf}}
+\index{isPrefixOf@{isPrefixOf}!FieldPath@{FieldPath}}
+\doxysubsubsection{\texorpdfstring{isPrefixOf()}{isPrefixOf()}}
+{\footnotesize\ttfamily \label{class_path_af78fc0ff77745a224b9515006789929b} 
+Path\+::is\+Prefix\+Of (\begin{DoxyParamCaption}\item[{}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}, {\ttfamily [inherited]}}
+
+Checks whether the current path is a prefix of the specified path. 
+
+References \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}.
+
+\Hypertarget{class_path_ab40f4941f6b7d9dd7269bd2da6a8d4b8}\index{FieldPath@{FieldPath}!parent@{parent}}
+\index{parent@{parent}!FieldPath@{FieldPath}}
+\doxysubsubsection{\texorpdfstring{parent()}{parent()}}
+{\footnotesize\ttfamily \label{class_path_ab40f4941f6b7d9dd7269bd2da6a8d4b8} 
+Path\+::parent (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}, {\ttfamily [inherited]}}
+
+Returns the path of the parent node. \Hypertarget{class_path_ad4b5bb6a77ef3ca7f1cd8649ac3b9883}\index{FieldPath@{FieldPath}!popLast@{popLast}}
+\index{popLast@{popLast}!FieldPath@{FieldPath}}
+\doxysubsubsection{\texorpdfstring{popLast()}{popLast()}}
+{\footnotesize\ttfamily \label{class_path_ad4b5bb6a77ef3ca7f1cd8649ac3b9883} 
+Path\+::pop\+Last (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}, {\ttfamily [inherited]}}
+
+Pops the last segment from this {\ttfamily \doxylink{class_path}{Path}} and returns a newly constructed {\ttfamily \doxylink{class_path}{Path}}. \Hypertarget{class_path_aa052e342ee5d8d2b4e5946c0c1e0616d}\index{FieldPath@{FieldPath}!size@{size}}
+\index{size@{size}!FieldPath@{FieldPath}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily \label{class_path_aa052e342ee5d8d2b4e5946c0c1e0616d} 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} Path\+::size (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}, {\ttfamily [inherited]}}
+
+Returns the number of segments of this field path. \Hypertarget{class_field_path_a88a6dd7199bf553737398de66cdfd5ee}\index{FieldPath@{FieldPath}!split@{split}}
+\index{split@{split}!FieldPath@{FieldPath}}
+\doxysubsubsection{\texorpdfstring{split()}{split()}}
+{\footnotesize\ttfamily \label{class_field_path_a88a6dd7199bf553737398de66cdfd5ee} 
+Field\+Path\+::split (\begin{DoxyParamCaption}\item[{}]{field\+Path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Splits a string into path segments, using dots as separators. \Hypertarget{class_path_a751de3fffb721f398ece922c9231cfaf}\index{FieldPath@{FieldPath}!toArray@{toArray}}
+\index{toArray@{toArray}!FieldPath@{FieldPath}}
+\doxysubsubsection{\texorpdfstring{toArray()}{toArray()}}
+{\footnotesize\ttfamily \label{class_path_a751de3fffb721f398ece922c9231cfaf} 
+Path\+::to\+Array (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}, {\ttfamily [inherited]}}
+
+Returns a copy of the underlying segments. \Hypertarget{class_field_path_aaa1f6dbfca490be8a31bbb6d7cc9b9f3}\index{FieldPath@{FieldPath}!toString@{toString}}
+\index{toString@{toString}!FieldPath@{FieldPath}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily \label{class_field_path_aaa1f6dbfca490be8a31bbb6d7cc9b9f3} 
+Field\+Path\+::to\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Returns a string representation of this path. 
+
+References \mbox{\hyperlink{class_field_path_a563dc31cb25f20e261091fed9d87b86a}{formatted\+Name()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_field_path_aaa1f6dbfca490be8a31bbb6d7cc9b9f3_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/@google-\/cloud/firestore/build/src/\mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2path_8js}{path.\+js}}\end{DoxyCompactItemize}

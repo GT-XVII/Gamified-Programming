@@ -1,0 +1,118 @@
+\doxysection{backend/node\+\_\+modules/jose/dist/node/cjs/lib/encrypt\+\_\+key\+\_\+management.js File Reference}
+\hypertarget{node_2cjs_2lib_2encrypt__key__management_8js}{}\label{node_2cjs_2lib_2encrypt__key__management_8js}\index{backend/node\_modules/jose/dist/node/cjs/lib/encrypt\_key\_management.js@{backend/node\_modules/jose/dist/node/cjs/lib/encrypt\_key\_management.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{node_2cjs_2lib_2encrypt__key__management_8js_af32bed7b74ee5cf906ffe50bb58febf6}{encrypt\+Key\+Management}} (alg, enc, key, provided\+Cek, provided\+Parameters=\{\})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{node_2cjs_2lib_2encrypt__key__management_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{node_2cjs_2lib_2encrypt__key__management_8js_abb287ec192bef00caaa09480c4882615}{aeskw\+\_\+js\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../runtime/aeskw.\+js"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{node_2cjs_2lib_2encrypt__key__management_8js_a467d297cccba349c116cbe7aa870bb9e}{ECDH}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../runtime/ecdhes.\+js"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{node_2cjs_2lib_2encrypt__key__management_8js_a1e6bfdf59cda91ed228f2ee3f079a9b5}{pbes2kw\+\_\+js\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../runtime/pbes2kw.\+js"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{node_2cjs_2lib_2encrypt__key__management_8js_a3b7da9dfa75bbdd4197c8126d843b6b2}{rsaes\+\_\+js\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../runtime/rsaes.\+js"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{node_2cjs_2lib_2encrypt__key__management_8js_a956fb17ffd600aff230acef52df9eee4}{base64url\+\_\+js\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../runtime/base64url.\+js"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{node_2cjs_2lib_2encrypt__key__management_8js_ac02e5f197126c83e96c08d34fd9cb967}{cek\+\_\+js\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../lib/cek.\+js"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{node_2cjs_2lib_2encrypt__key__management_8js_a285fbd72467b60dd40c49c8c9166b064}{errors\+\_\+js\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../util/errors.\+js"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{node_2cjs_2lib_2encrypt__key__management_8js_a703b14547dabec9fe06402deea512821}{export\+\_\+js\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../key/export.\+js"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{node_2cjs_2lib_2encrypt__key__management_8js_ad39d6793ce05bb9c41d51205d70607e5}{check\+\_\+key\+\_\+type\+\_\+js\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./check\+\_\+key\+\_\+type.\+js"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{node_2cjs_2lib_2encrypt__key__management_8js_ae724af7c9347d2e97d8ab2fc9fcd4393}{aesgcmkw\+\_\+js\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./aesgcmkw.\+js"{})
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{node_2cjs_2lib_2encrypt__key__management_8js_a48acd3189d40b017f47c93b673b8b8f6}{default}} = \mbox{\hyperlink{browser_2lib_2encrypt__key__management_8js_a85fda130f1b535dc6c0457337f736ca9}{encrypt\+Key\+Management}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{node_2cjs_2lib_2encrypt__key__management_8js_af32bed7b74ee5cf906ffe50bb58febf6}\index{encrypt\_key\_management.js@{encrypt\_key\_management.js}!encryptKeyManagement@{encryptKeyManagement}}
+\index{encryptKeyManagement@{encryptKeyManagement}!encrypt\_key\_management.js@{encrypt\_key\_management.js}}
+\doxysubsubsection{\texorpdfstring{encryptKeyManagement()}{encryptKeyManagement()}}
+{\footnotesize\ttfamily \label{node_2cjs_2lib_2encrypt__key__management_8js_af32bed7b74ee5cf906ffe50bb58febf6} 
+function \mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} encrypt\+Key\+Management (\begin{DoxyParamCaption}\item[{}]{alg}{, }\item[{}]{enc}{, }\item[{}]{key}{, }\item[{}]{provided\+Cek}{, }\item[{}]{provided\+Parameters}{ = {\ttfamily \{\}}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{node_2cjs_2lib_2encrypt__key__management_8js_ae724af7c9347d2e97d8ab2fc9fcd4393}\index{encrypt\_key\_management.js@{encrypt\_key\_management.js}!aesgcmkw\_js\_1@{aesgcmkw\_js\_1}}
+\index{aesgcmkw\_js\_1@{aesgcmkw\_js\_1}!encrypt\_key\_management.js@{encrypt\_key\_management.js}}
+\doxysubsubsection{\texorpdfstring{aesgcmkw\_js\_1}{aesgcmkw\_js\_1}}
+{\footnotesize\ttfamily \label{node_2cjs_2lib_2encrypt__key__management_8js_ae724af7c9347d2e97d8ab2fc9fcd4393} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} aesgcmkw\+\_\+js\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./aesgcmkw.\+js"{})}
+
+\Hypertarget{node_2cjs_2lib_2encrypt__key__management_8js_abb287ec192bef00caaa09480c4882615}\index{encrypt\_key\_management.js@{encrypt\_key\_management.js}!aeskw\_js\_1@{aeskw\_js\_1}}
+\index{aeskw\_js\_1@{aeskw\_js\_1}!encrypt\_key\_management.js@{encrypt\_key\_management.js}}
+\doxysubsubsection{\texorpdfstring{aeskw\_js\_1}{aeskw\_js\_1}}
+{\footnotesize\ttfamily \label{node_2cjs_2lib_2encrypt__key__management_8js_abb287ec192bef00caaa09480c4882615} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} aeskw\+\_\+js\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../runtime/aeskw.\+js"{})}
+
+\Hypertarget{node_2cjs_2lib_2encrypt__key__management_8js_a956fb17ffd600aff230acef52df9eee4}\index{encrypt\_key\_management.js@{encrypt\_key\_management.js}!base64url\_js\_1@{base64url\_js\_1}}
+\index{base64url\_js\_1@{base64url\_js\_1}!encrypt\_key\_management.js@{encrypt\_key\_management.js}}
+\doxysubsubsection{\texorpdfstring{base64url\_js\_1}{base64url\_js\_1}}
+{\footnotesize\ttfamily \label{node_2cjs_2lib_2encrypt__key__management_8js_a956fb17ffd600aff230acef52df9eee4} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} base64url\+\_\+js\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../runtime/base64url.\+js"{})}
+
+\Hypertarget{node_2cjs_2lib_2encrypt__key__management_8js_ac02e5f197126c83e96c08d34fd9cb967}\index{encrypt\_key\_management.js@{encrypt\_key\_management.js}!cek\_js\_1@{cek\_js\_1}}
+\index{cek\_js\_1@{cek\_js\_1}!encrypt\_key\_management.js@{encrypt\_key\_management.js}}
+\doxysubsubsection{\texorpdfstring{cek\_js\_1}{cek\_js\_1}}
+{\footnotesize\ttfamily \label{node_2cjs_2lib_2encrypt__key__management_8js_ac02e5f197126c83e96c08d34fd9cb967} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} cek\+\_\+js\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../lib/cek.\+js"{})}
+
+\Hypertarget{node_2cjs_2lib_2encrypt__key__management_8js_ad39d6793ce05bb9c41d51205d70607e5}\index{encrypt\_key\_management.js@{encrypt\_key\_management.js}!check\_key\_type\_js\_1@{check\_key\_type\_js\_1}}
+\index{check\_key\_type\_js\_1@{check\_key\_type\_js\_1}!encrypt\_key\_management.js@{encrypt\_key\_management.js}}
+\doxysubsubsection{\texorpdfstring{check\_key\_type\_js\_1}{check\_key\_type\_js\_1}}
+{\footnotesize\ttfamily \label{node_2cjs_2lib_2encrypt__key__management_8js_ad39d6793ce05bb9c41d51205d70607e5} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} check\+\_\+key\+\_\+type\+\_\+js\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./check\+\_\+key\+\_\+type.\+js"{})}
+
+\Hypertarget{node_2cjs_2lib_2encrypt__key__management_8js_a48acd3189d40b017f47c93b673b8b8f6}\index{encrypt\_key\_management.js@{encrypt\_key\_management.js}!default@{default}}
+\index{default@{default}!encrypt\_key\_management.js@{encrypt\_key\_management.js}}
+\doxysubsubsection{\texorpdfstring{default}{default}}
+{\footnotesize\ttfamily \label{node_2cjs_2lib_2encrypt__key__management_8js_a48acd3189d40b017f47c93b673b8b8f6} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} default = \mbox{\hyperlink{browser_2lib_2encrypt__key__management_8js_a85fda130f1b535dc6c0457337f736ca9}{encrypt\+Key\+Management}}}
+
+\Hypertarget{node_2cjs_2lib_2encrypt__key__management_8js_a467d297cccba349c116cbe7aa870bb9e}\index{encrypt\_key\_management.js@{encrypt\_key\_management.js}!ECDH@{ECDH}}
+\index{ECDH@{ECDH}!encrypt\_key\_management.js@{encrypt\_key\_management.js}}
+\doxysubsubsection{\texorpdfstring{ECDH}{ECDH}}
+{\footnotesize\ttfamily \label{node_2cjs_2lib_2encrypt__key__management_8js_a467d297cccba349c116cbe7aa870bb9e} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} ECDH = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../runtime/ecdhes.\+js"{})}
+
+\Hypertarget{node_2cjs_2lib_2encrypt__key__management_8js_a285fbd72467b60dd40c49c8c9166b064}\index{encrypt\_key\_management.js@{encrypt\_key\_management.js}!errors\_js\_1@{errors\_js\_1}}
+\index{errors\_js\_1@{errors\_js\_1}!encrypt\_key\_management.js@{encrypt\_key\_management.js}}
+\doxysubsubsection{\texorpdfstring{errors\_js\_1}{errors\_js\_1}}
+{\footnotesize\ttfamily \label{node_2cjs_2lib_2encrypt__key__management_8js_a285fbd72467b60dd40c49c8c9166b064} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} errors\+\_\+js\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../util/errors.\+js"{})}
+
+\Hypertarget{node_2cjs_2lib_2encrypt__key__management_8js_a703b14547dabec9fe06402deea512821}\index{encrypt\_key\_management.js@{encrypt\_key\_management.js}!export\_js\_1@{export\_js\_1}}
+\index{export\_js\_1@{export\_js\_1}!encrypt\_key\_management.js@{encrypt\_key\_management.js}}
+\doxysubsubsection{\texorpdfstring{export\_js\_1}{export\_js\_1}}
+{\footnotesize\ttfamily \label{node_2cjs_2lib_2encrypt__key__management_8js_a703b14547dabec9fe06402deea512821} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} export\+\_\+js\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../key/export.\+js"{})}
+
+\Hypertarget{node_2cjs_2lib_2encrypt__key__management_8js_a1e6bfdf59cda91ed228f2ee3f079a9b5}\index{encrypt\_key\_management.js@{encrypt\_key\_management.js}!pbes2kw\_js\_1@{pbes2kw\_js\_1}}
+\index{pbes2kw\_js\_1@{pbes2kw\_js\_1}!encrypt\_key\_management.js@{encrypt\_key\_management.js}}
+\doxysubsubsection{\texorpdfstring{pbes2kw\_js\_1}{pbes2kw\_js\_1}}
+{\footnotesize\ttfamily \label{node_2cjs_2lib_2encrypt__key__management_8js_a1e6bfdf59cda91ed228f2ee3f079a9b5} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} pbes2kw\+\_\+js\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../runtime/pbes2kw.\+js"{})}
+
+\Hypertarget{node_2cjs_2lib_2encrypt__key__management_8js_a3b7da9dfa75bbdd4197c8126d843b6b2}\index{encrypt\_key\_management.js@{encrypt\_key\_management.js}!rsaes\_js\_1@{rsaes\_js\_1}}
+\index{rsaes\_js\_1@{rsaes\_js\_1}!encrypt\_key\_management.js@{encrypt\_key\_management.js}}
+\doxysubsubsection{\texorpdfstring{rsaes\_js\_1}{rsaes\_js\_1}}
+{\footnotesize\ttfamily \label{node_2cjs_2lib_2encrypt__key__management_8js_a3b7da9dfa75bbdd4197c8126d843b6b2} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} rsaes\+\_\+js\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../runtime/rsaes.\+js"{})}
+
+\Hypertarget{node_2cjs_2lib_2encrypt__key__management_8js_ae2475e10618961c050dcba04e8c42331}\index{encrypt\_key\_management.js@{encrypt\_key\_management.js}!strict@{strict}}
+\index{strict@{strict}!encrypt\_key\_management.js@{encrypt\_key\_management.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{node_2cjs_2lib_2encrypt__key__management_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+

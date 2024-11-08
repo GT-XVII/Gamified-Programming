@@ -1,0 +1,104 @@
+\doxysection{Ios\+App Class Reference}
+\hypertarget{class_ios_app}{}\label{class_ios_app}\index{IosApp@{IosApp}}
+
+
+Collaboration diagram for Ios\+App\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=177pt]{class_ios_app__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ios_app_abd407507451f0713a5232b282abd51cd}{constructor}} (app\+Id, request\+Handler)
+\item 
+\mbox{\hyperlink{class_ios_app_a2372a03746602e5b045b0d1bf17eacf7}{get\+Metadata}} ()
+\item 
+\mbox{\hyperlink{class_ios_app_a81e5987fefce36b92624ee5e4b1be593}{set\+Display\+Name}} (new\+Display\+Name)
+\item 
+\mbox{\hyperlink{class_ios_app_a515f1f820f648ef44bd52cb8832c6e0a}{get\+Config}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_a}{A} reference to a Firebase i\+OS app.
+
+Do not call this constructor directly. Instead, use {\ttfamily \doxylink{class_project_management_a33a12f863411532748f911d1f594c1c1}{Project\+Management.\+ios\+App}}. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_ios_app_abd407507451f0713a5232b282abd51cd}\index{IosApp@{IosApp}!constructor@{constructor}}
+\index{constructor@{constructor}!IosApp@{IosApp}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_ios_app_abd407507451f0713a5232b282abd51cd} 
+Ios\+App\+::constructor (\begin{DoxyParamCaption}\item[{}]{app\+Id}{, }\item[{}]{request\+Handler}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{ios-app_8js_af1a99a3ff1a35c114bdd06cc7252beb6}{error\+\_\+1}}, and \mbox{\hyperlink{ios-app_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}}.
+
+\Hypertarget{class_ios_app_a515f1f820f648ef44bd52cb8832c6e0a}\index{IosApp@{IosApp}!getConfig@{getConfig}}
+\index{getConfig@{getConfig}!IosApp@{IosApp}}
+\doxysubsubsection{\texorpdfstring{getConfig()}{getConfig()}}
+{\footnotesize\ttfamily \label{class_ios_app_a515f1f820f648ef44bd52cb8832c6e0a} 
+Ios\+App\+::get\+Config (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the configuration artifact associated with this app.
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_a}{A} promise that resolves to the i\+OS app\textquotesingle{}s Firebase config file, in UTF-\/8 string format. This string is typically intended to be written to a plist file that gets shipped with your i\+OS app. 
+\end{DoxyReturn}
+\Hypertarget{class_ios_app_a2372a03746602e5b045b0d1bf17eacf7}\index{IosApp@{IosApp}!getMetadata@{getMetadata}}
+\index{getMetadata@{getMetadata}!IosApp@{IosApp}}
+\doxysubsubsection{\texorpdfstring{getMetadata()}{getMetadata()}}
+{\footnotesize\ttfamily \label{class_ios_app_a2372a03746602e5b045b0d1bf17eacf7} 
+Ios\+App\+::get\+Metadata (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Retrieves metadata about this i\+OS app.
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_a}{A} promise that resolves to the retrieved metadata about this i\+OS app. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{class_ios_app_a2372a03746602e5b045b0d1bf17eacf7}{get\+Metadata()}}, \mbox{\hyperlink{ios-app_8js_a2705289d304d4f5526639fd01c52c277}{project\+\_\+management\+\_\+api\+\_\+request\+\_\+internal\+\_\+1}}, and \mbox{\hyperlink{ios-app_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{class_ios_app_a2372a03746602e5b045b0d1bf17eacf7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{class_ios_app_a2372a03746602e5b045b0d1bf17eacf7_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_ios_app_a81e5987fefce36b92624ee5e4b1be593}\index{IosApp@{IosApp}!setDisplayName@{setDisplayName}}
+\index{setDisplayName@{setDisplayName}!IosApp@{IosApp}}
+\doxysubsubsection{\texorpdfstring{setDisplayName()}{setDisplayName()}}
+{\footnotesize\ttfamily \label{class_ios_app_a81e5987fefce36b92624ee5e4b1be593} 
+Ios\+App\+::set\+Display\+Name (\begin{DoxyParamCaption}\item[{}]{new\+Display\+Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the optional user-\/assigned display name of the app.
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Display\+Name} & -\/ The new display name to set.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_a}{A} promise that resolves when the display name has been set. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/firebase-\/admin/lib/project-\/management/\mbox{\hyperlink{ios-app_8js}{ios-\/app.\+js}}\end{DoxyCompactItemize}

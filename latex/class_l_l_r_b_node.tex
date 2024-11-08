@@ -1,0 +1,1271 @@
+\doxysection{LLRBNode Class Reference}
+\hypertarget{class_l_l_r_b_node}{}\label{class_l_l_r_b_node}\index{LLRBNode@{LLRBNode}}
+
+
+Collaboration diagram for LLRBNode\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=177pt]{class_l_l_r_b_node__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_l_l_r_b_node_ad07ef0a269925a988f367248bf14ac82}{constructor}} (key, \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}, color, \mbox{\hyperlink{cliui_2build_2lib_2index_8js_a6c7e5f9c0d1a7ce5a205c24cc75b881a}{left}}, \mbox{\hyperlink{cliui_2build_2lib_2index_8js_adcf5bb43a9792563db7e8c6c3cca2257}{right}})
+\item 
+\mbox{\hyperlink{class_l_l_r_b_node_a0d4153aafd1a3159bd631953853eb989}{copy}} (key, \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}, color, \mbox{\hyperlink{cliui_2build_2lib_2index_8js_a6c7e5f9c0d1a7ce5a205c24cc75b881a}{left}}, \mbox{\hyperlink{cliui_2build_2lib_2index_8js_adcf5bb43a9792563db7e8c6c3cca2257}{right}})
+\item 
+\mbox{\hyperlink{class_l_l_r_b_node_ad3fa7ac133612ba3d8e93ea3442437af}{count}} ()
+\item 
+\mbox{\hyperlink{class_l_l_r_b_node_a58729e6b8be2e0934dafa246269600ce}{is\+Empty}} ()
+\item 
+\mbox{\hyperlink{class_l_l_r_b_node_a1b1755607051a9321a91bc57d7c50f14}{inorder\+Traversal}} (action)
+\item 
+\mbox{\hyperlink{class_l_l_r_b_node_ac9f4794d2bd56720a4f818cd8e49c6e0}{reverse\+Traversal}} (action)
+\item 
+\mbox{\hyperlink{class_l_l_r_b_node_a124ec38a1d2810b2b5f96f7e43f13ee9}{min\+\_\+}} ()
+\item 
+\mbox{\hyperlink{class_l_l_r_b_node_a0f489df0af21f9f1713b2168c7821ad6}{min\+Key}} ()
+\item 
+\mbox{\hyperlink{class_l_l_r_b_node_a57118b06c4276e1eb787453a9384d165}{max\+Key}} ()
+\item 
+\mbox{\hyperlink{class_l_l_r_b_node_af9ec1966ffd53da4e514093eebadebe7}{insert}} (key, \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}, comparator)
+\item 
+\mbox{\hyperlink{class_l_l_r_b_node_a01ce8dc9ba3811ed44a0aa10e158f7f9}{remove\+Min\+\_\+}} ()
+\item 
+\mbox{\hyperlink{class_l_l_r_b_node_a535faa02d1ae8982a019bff3b56e8d45}{remove}} (key, comparator)
+\item 
+\mbox{\hyperlink{class_l_l_r_b_node_af5a25083ebfc5facfce8bcea69234da6}{is\+Red\+\_\+}} ()
+\item 
+\mbox{\hyperlink{class_l_l_r_b_node_a676586e8382fbd04017dd0244ee719e1}{fix\+Up\+\_\+}} ()
+\item 
+\mbox{\hyperlink{class_l_l_r_b_node_a2af6f5e1b0ecd2bc24a2ed13863c5254}{move\+Red\+Left\+\_\+}} ()
+\item 
+\mbox{\hyperlink{class_l_l_r_b_node_ae60b485a970016d80cab222f6d9f8901}{move\+Red\+Right\+\_\+}} ()
+\item 
+\mbox{\hyperlink{class_l_l_r_b_node_a0dc2cd7e3077a5667faf5c59e1d9446b}{rotate\+Left\+\_\+}} ()
+\item 
+\mbox{\hyperlink{class_l_l_r_b_node_a001fb8fb233fd58b0f06a72b5fff3020}{rotate\+Right\+\_\+}} ()
+\item 
+\mbox{\hyperlink{class_l_l_r_b_node_abec1e13b04d5cbc4ea2c85e5472ac6d2}{color\+Flip\+\_\+}} ()
+\item 
+\mbox{\hyperlink{class_l_l_r_b_node_aee7cfcbe760f9522c068b67d22beb4d1}{check\+Max\+Depth\+\_\+}} ()
+\item 
+\mbox{\hyperlink{class_l_l_r_b_node_a8d9741bd97bd5eeb50fdeb51866ca9ef}{check\+\_\+}} ()
+\item 
+\mbox{\hyperlink{class_l_l_r_b_node_ad07ef0a269925a988f367248bf14ac82}{constructor}} (key, \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}, color, \mbox{\hyperlink{cliui_2build_2lib_2index_8js_a6c7e5f9c0d1a7ce5a205c24cc75b881a}{left}}, \mbox{\hyperlink{cliui_2build_2lib_2index_8js_adcf5bb43a9792563db7e8c6c3cca2257}{right}})
+\item 
+\mbox{\hyperlink{class_l_l_r_b_node_a0d4153aafd1a3159bd631953853eb989}{copy}} (key, \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}, color, \mbox{\hyperlink{cliui_2build_2lib_2index_8js_a6c7e5f9c0d1a7ce5a205c24cc75b881a}{left}}, \mbox{\hyperlink{cliui_2build_2lib_2index_8js_adcf5bb43a9792563db7e8c6c3cca2257}{right}})
+\item 
+\mbox{\hyperlink{class_l_l_r_b_node_ad3fa7ac133612ba3d8e93ea3442437af}{count}} ()
+\item 
+\mbox{\hyperlink{class_l_l_r_b_node_a58729e6b8be2e0934dafa246269600ce}{is\+Empty}} ()
+\item 
+\mbox{\hyperlink{class_l_l_r_b_node_a1b1755607051a9321a91bc57d7c50f14}{inorder\+Traversal}} (action)
+\item 
+\mbox{\hyperlink{class_l_l_r_b_node_ac9f4794d2bd56720a4f818cd8e49c6e0}{reverse\+Traversal}} (action)
+\item 
+\mbox{\hyperlink{class_l_l_r_b_node_a124ec38a1d2810b2b5f96f7e43f13ee9}{min\+\_\+}} ()
+\item 
+\mbox{\hyperlink{class_l_l_r_b_node_a0f489df0af21f9f1713b2168c7821ad6}{min\+Key}} ()
+\item 
+\mbox{\hyperlink{class_l_l_r_b_node_a57118b06c4276e1eb787453a9384d165}{max\+Key}} ()
+\item 
+\mbox{\hyperlink{class_l_l_r_b_node_af9ec1966ffd53da4e514093eebadebe7}{insert}} (key, \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}, comparator)
+\item 
+\mbox{\hyperlink{class_l_l_r_b_node_a01ce8dc9ba3811ed44a0aa10e158f7f9}{remove\+Min\+\_\+}} ()
+\item 
+\mbox{\hyperlink{class_l_l_r_b_node_a535faa02d1ae8982a019bff3b56e8d45}{remove}} (key, comparator)
+\item 
+\mbox{\hyperlink{class_l_l_r_b_node_af5a25083ebfc5facfce8bcea69234da6}{is\+Red\+\_\+}} ()
+\item 
+\mbox{\hyperlink{class_l_l_r_b_node_a676586e8382fbd04017dd0244ee719e1}{fix\+Up\+\_\+}} ()
+\item 
+\mbox{\hyperlink{class_l_l_r_b_node_a2af6f5e1b0ecd2bc24a2ed13863c5254}{move\+Red\+Left\+\_\+}} ()
+\item 
+\mbox{\hyperlink{class_l_l_r_b_node_ae60b485a970016d80cab222f6d9f8901}{move\+Red\+Right\+\_\+}} ()
+\item 
+\mbox{\hyperlink{class_l_l_r_b_node_a0dc2cd7e3077a5667faf5c59e1d9446b}{rotate\+Left\+\_\+}} ()
+\item 
+\mbox{\hyperlink{class_l_l_r_b_node_a001fb8fb233fd58b0f06a72b5fff3020}{rotate\+Right\+\_\+}} ()
+\item 
+\mbox{\hyperlink{class_l_l_r_b_node_abec1e13b04d5cbc4ea2c85e5472ac6d2}{color\+Flip\+\_\+}} ()
+\item 
+\mbox{\hyperlink{class_l_l_r_b_node_aee7cfcbe760f9522c068b67d22beb4d1}{check\+Max\+Depth\+\_\+}} ()
+\item 
+\mbox{\hyperlink{class_l_l_r_b_node_a8d9741bd97bd5eeb50fdeb51866ca9ef}{check\+\_\+}} ()
+\item 
+\mbox{\hyperlink{class_l_l_r_b_node_ad07ef0a269925a988f367248bf14ac82}{constructor}} (key, \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}, color, \mbox{\hyperlink{cliui_2build_2lib_2index_8js_a6c7e5f9c0d1a7ce5a205c24cc75b881a}{left}}, \mbox{\hyperlink{cliui_2build_2lib_2index_8js_adcf5bb43a9792563db7e8c6c3cca2257}{right}})
+\item 
+\mbox{\hyperlink{class_l_l_r_b_node_a0d4153aafd1a3159bd631953853eb989}{copy}} (key, \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}, color, \mbox{\hyperlink{cliui_2build_2lib_2index_8js_a6c7e5f9c0d1a7ce5a205c24cc75b881a}{left}}, \mbox{\hyperlink{cliui_2build_2lib_2index_8js_adcf5bb43a9792563db7e8c6c3cca2257}{right}})
+\item 
+\mbox{\hyperlink{class_l_l_r_b_node_ad3fa7ac133612ba3d8e93ea3442437af}{count}} ()
+\item 
+\mbox{\hyperlink{class_l_l_r_b_node_a58729e6b8be2e0934dafa246269600ce}{is\+Empty}} ()
+\item 
+\mbox{\hyperlink{class_l_l_r_b_node_a1b1755607051a9321a91bc57d7c50f14}{inorder\+Traversal}} (action)
+\item 
+\mbox{\hyperlink{class_l_l_r_b_node_ac9f4794d2bd56720a4f818cd8e49c6e0}{reverse\+Traversal}} (action)
+\item 
+\mbox{\hyperlink{class_l_l_r_b_node_a124ec38a1d2810b2b5f96f7e43f13ee9}{min\+\_\+}} ()
+\item 
+\mbox{\hyperlink{class_l_l_r_b_node_a0f489df0af21f9f1713b2168c7821ad6}{min\+Key}} ()
+\item 
+\mbox{\hyperlink{class_l_l_r_b_node_a57118b06c4276e1eb787453a9384d165}{max\+Key}} ()
+\item 
+\mbox{\hyperlink{class_l_l_r_b_node_af9ec1966ffd53da4e514093eebadebe7}{insert}} (key, \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}, comparator)
+\item 
+\mbox{\hyperlink{class_l_l_r_b_node_a01ce8dc9ba3811ed44a0aa10e158f7f9}{remove\+Min\+\_\+}} ()
+\item 
+\mbox{\hyperlink{class_l_l_r_b_node_a535faa02d1ae8982a019bff3b56e8d45}{remove}} (key, comparator)
+\item 
+\mbox{\hyperlink{class_l_l_r_b_node_af5a25083ebfc5facfce8bcea69234da6}{is\+Red\+\_\+}} ()
+\item 
+\mbox{\hyperlink{class_l_l_r_b_node_a676586e8382fbd04017dd0244ee719e1}{fix\+Up\+\_\+}} ()
+\item 
+\mbox{\hyperlink{class_l_l_r_b_node_a2af6f5e1b0ecd2bc24a2ed13863c5254}{move\+Red\+Left\+\_\+}} ()
+\item 
+\mbox{\hyperlink{class_l_l_r_b_node_ae60b485a970016d80cab222f6d9f8901}{move\+Red\+Right\+\_\+}} ()
+\item 
+\mbox{\hyperlink{class_l_l_r_b_node_a0dc2cd7e3077a5667faf5c59e1d9446b}{rotate\+Left\+\_\+}} ()
+\item 
+\mbox{\hyperlink{class_l_l_r_b_node_a001fb8fb233fd58b0f06a72b5fff3020}{rotate\+Right\+\_\+}} ()
+\item 
+\mbox{\hyperlink{class_l_l_r_b_node_abec1e13b04d5cbc4ea2c85e5472ac6d2}{color\+Flip\+\_\+}} ()
+\item 
+\mbox{\hyperlink{class_l_l_r_b_node_aee7cfcbe760f9522c068b67d22beb4d1}{check\+Max\+Depth\+\_\+}} ()
+\item 
+\mbox{\hyperlink{class_l_l_r_b_node_a8d9741bd97bd5eeb50fdeb51866ca9ef}{check\+\_\+}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a node in a Left-\/leaning Red-\/\+Black tree. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_l_l_r_b_node_a8d9741bd97bd5eeb50fdeb51866ca9ef}\index{LLRBNode@{LLRBNode}!check\_@{check\_}}
+\index{check\_@{check\_}!LLRBNode@{LLRBNode}}
+\doxysubsubsection{\texorpdfstring{check\_()}{check\_()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_l_l_r_b_node_a8d9741bd97bd5eeb50fdeb51866ca9ef} 
+LLRBNode\+::check\+\_\+ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{class_l_l_r_b_node_af5a25083ebfc5facfce8bcea69234da6}{is\+Red\+\_\+()}}, \mbox{\hyperlink{cliui_2build_2lib_2index_8js_a6c7e5f9c0d1a7ce5a205c24cc75b881a}{left}}, \mbox{\hyperlink{cliui_2build_2lib_2index_8js_adcf5bb43a9792563db7e8c6c3cca2257}{right}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{class_l_l_r_b_node_a8d9741bd97bd5eeb50fdeb51866ca9ef_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_l_r_b_node_a8d9741bd97bd5eeb50fdeb51866ca9ef_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_l_l_r_b_node_a8d9741bd97bd5eeb50fdeb51866ca9ef}\index{LLRBNode@{LLRBNode}!check\_@{check\_}}
+\index{check\_@{check\_}!LLRBNode@{LLRBNode}}
+\doxysubsubsection{\texorpdfstring{check\_()}{check\_()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_l_l_r_b_node_a8d9741bd97bd5eeb50fdeb51866ca9ef} 
+LLRBNode\+::check\+\_\+ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{class_l_l_r_b_node_af5a25083ebfc5facfce8bcea69234da6}{is\+Red\+\_\+()}}, \mbox{\hyperlink{cliui_2build_2lib_2index_8js_a6c7e5f9c0d1a7ce5a205c24cc75b881a}{left}}, \mbox{\hyperlink{cliui_2build_2lib_2index_8js_adcf5bb43a9792563db7e8c6c3cca2257}{right}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{class_l_l_r_b_node_a8d9741bd97bd5eeb50fdeb51866ca9ef_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_l_l_r_b_node_a8d9741bd97bd5eeb50fdeb51866ca9ef}\index{LLRBNode@{LLRBNode}!check\_@{check\_}}
+\index{check\_@{check\_}!LLRBNode@{LLRBNode}}
+\doxysubsubsection{\texorpdfstring{check\_()}{check\_()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_l_l_r_b_node_a8d9741bd97bd5eeb50fdeb51866ca9ef} 
+LLRBNode\+::check\+\_\+ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{class_l_l_r_b_node_af5a25083ebfc5facfce8bcea69234da6}{is\+Red\+\_\+()}}, \mbox{\hyperlink{cliui_2build_2lib_2index_8js_a6c7e5f9c0d1a7ce5a205c24cc75b881a}{left}}, \mbox{\hyperlink{cliui_2build_2lib_2index_8js_adcf5bb43a9792563db7e8c6c3cca2257}{right}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{class_l_l_r_b_node_a8d9741bd97bd5eeb50fdeb51866ca9ef_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_l_l_r_b_node_aee7cfcbe760f9522c068b67d22beb4d1}\index{LLRBNode@{LLRBNode}!checkMaxDepth\_@{checkMaxDepth\_}}
+\index{checkMaxDepth\_@{checkMaxDepth\_}!LLRBNode@{LLRBNode}}
+\doxysubsubsection{\texorpdfstring{checkMaxDepth\_()}{checkMaxDepth\_()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_l_l_r_b_node_aee7cfcbe760f9522c068b67d22beb4d1} 
+LLRBNode\+::check\+Max\+Depth\+\_\+ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+For testing.
+
+\begin{DoxyReturn}{Returns}
+True if all is well. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{class_l_l_r_b_node_a8d9741bd97bd5eeb50fdeb51866ca9ef}{check\+\_\+()}}, and \mbox{\hyperlink{class_l_l_r_b_node_ad3fa7ac133612ba3d8e93ea3442437af}{count()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_l_r_b_node_aee7cfcbe760f9522c068b67d22beb4d1_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_l_l_r_b_node_aee7cfcbe760f9522c068b67d22beb4d1}\index{LLRBNode@{LLRBNode}!checkMaxDepth\_@{checkMaxDepth\_}}
+\index{checkMaxDepth\_@{checkMaxDepth\_}!LLRBNode@{LLRBNode}}
+\doxysubsubsection{\texorpdfstring{checkMaxDepth\_()}{checkMaxDepth\_()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_l_l_r_b_node_aee7cfcbe760f9522c068b67d22beb4d1} 
+LLRBNode\+::check\+Max\+Depth\+\_\+ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+For testing.
+
+\begin{DoxyReturn}{Returns}
+True if all is well. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{class_l_l_r_b_node_a8d9741bd97bd5eeb50fdeb51866ca9ef}{check\+\_\+()}}, and \mbox{\hyperlink{class_l_l_r_b_node_ad3fa7ac133612ba3d8e93ea3442437af}{count()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_l_r_b_node_aee7cfcbe760f9522c068b67d22beb4d1_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_l_l_r_b_node_aee7cfcbe760f9522c068b67d22beb4d1}\index{LLRBNode@{LLRBNode}!checkMaxDepth\_@{checkMaxDepth\_}}
+\index{checkMaxDepth\_@{checkMaxDepth\_}!LLRBNode@{LLRBNode}}
+\doxysubsubsection{\texorpdfstring{checkMaxDepth\_()}{checkMaxDepth\_()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_l_l_r_b_node_aee7cfcbe760f9522c068b67d22beb4d1} 
+LLRBNode\+::check\+Max\+Depth\+\_\+ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+For testing.
+
+\begin{DoxyReturn}{Returns}
+True if all is well. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{class_l_l_r_b_node_a8d9741bd97bd5eeb50fdeb51866ca9ef}{check\+\_\+()}}, and \mbox{\hyperlink{class_l_l_r_b_node_ad3fa7ac133612ba3d8e93ea3442437af}{count()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_l_r_b_node_aee7cfcbe760f9522c068b67d22beb4d1_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_l_l_r_b_node_abec1e13b04d5cbc4ea2c85e5472ac6d2}\index{LLRBNode@{LLRBNode}!colorFlip\_@{colorFlip\_}}
+\index{colorFlip\_@{colorFlip\_}!LLRBNode@{LLRBNode}}
+\doxysubsubsection{\texorpdfstring{colorFlip\_()}{colorFlip\_()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_l_l_r_b_node_abec1e13b04d5cbc4ea2c85e5472ac6d2} 
+LLRBNode\+::color\+Flip\+\_\+ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+Newt ree, after color\+Flip. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{ordered-map_8min_8js_a684383e7e596d4ada3fb9be600b8e98c}{copy}}, \mbox{\hyperlink{cliui_2build_2lib_2index_8js_a6c7e5f9c0d1a7ce5a205c24cc75b881a}{left}}, and \mbox{\hyperlink{cliui_2build_2lib_2index_8js_adcf5bb43a9792563db7e8c6c3cca2257}{right}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_l_r_b_node_abec1e13b04d5cbc4ea2c85e5472ac6d2_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_l_l_r_b_node_abec1e13b04d5cbc4ea2c85e5472ac6d2}\index{LLRBNode@{LLRBNode}!colorFlip\_@{colorFlip\_}}
+\index{colorFlip\_@{colorFlip\_}!LLRBNode@{LLRBNode}}
+\doxysubsubsection{\texorpdfstring{colorFlip\_()}{colorFlip\_()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_l_l_r_b_node_abec1e13b04d5cbc4ea2c85e5472ac6d2} 
+LLRBNode\+::color\+Flip\+\_\+ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+Newt ree, after color\+Flip. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{ordered-map_8min_8js_a684383e7e596d4ada3fb9be600b8e98c}{copy}}, \mbox{\hyperlink{cliui_2build_2lib_2index_8js_a6c7e5f9c0d1a7ce5a205c24cc75b881a}{left}}, and \mbox{\hyperlink{cliui_2build_2lib_2index_8js_adcf5bb43a9792563db7e8c6c3cca2257}{right}}.
+
+\Hypertarget{class_l_l_r_b_node_abec1e13b04d5cbc4ea2c85e5472ac6d2}\index{LLRBNode@{LLRBNode}!colorFlip\_@{colorFlip\_}}
+\index{colorFlip\_@{colorFlip\_}!LLRBNode@{LLRBNode}}
+\doxysubsubsection{\texorpdfstring{colorFlip\_()}{colorFlip\_()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_l_l_r_b_node_abec1e13b04d5cbc4ea2c85e5472ac6d2} 
+LLRBNode\+::color\+Flip\+\_\+ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+Newt ree, after color\+Flip. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{ordered-map_8min_8js_a684383e7e596d4ada3fb9be600b8e98c}{copy}}, \mbox{\hyperlink{cliui_2build_2lib_2index_8js_a6c7e5f9c0d1a7ce5a205c24cc75b881a}{left}}, and \mbox{\hyperlink{cliui_2build_2lib_2index_8js_adcf5bb43a9792563db7e8c6c3cca2257}{right}}.
+
+\Hypertarget{class_l_l_r_b_node_ad07ef0a269925a988f367248bf14ac82}\index{LLRBNode@{LLRBNode}!constructor@{constructor}}
+\index{constructor@{constructor}!LLRBNode@{LLRBNode}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_l_l_r_b_node_ad07ef0a269925a988f367248bf14ac82} 
+LLRBNode\+::constructor (\begin{DoxyParamCaption}\item[{}]{key}{, }\item[{}]{value}{, }\item[{}]{color}{, }\item[{}]{left}{, }\item[{}]{right}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & -\/ Key associated with this node. \\
+\hline
+{\em value} & -\/ Value associated with this node. \\
+\hline
+{\em color} & -\/ Whether this node is red. \\
+\hline
+{\em left} & -\/ Left child. \\
+\hline
+{\em right} & -\/ Right child. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{cliui_2build_2lib_2index_8js_a6c7e5f9c0d1a7ce5a205c24cc75b881a}{left}}, \mbox{\hyperlink{cliui_2build_2lib_2index_8js_adcf5bb43a9792563db7e8c6c3cca2257}{right}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.
+
+\Hypertarget{class_l_l_r_b_node_ad07ef0a269925a988f367248bf14ac82}\index{LLRBNode@{LLRBNode}!constructor@{constructor}}
+\index{constructor@{constructor}!LLRBNode@{LLRBNode}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_l_l_r_b_node_ad07ef0a269925a988f367248bf14ac82} 
+LLRBNode\+::constructor (\begin{DoxyParamCaption}\item[{}]{key}{, }\item[{}]{value}{, }\item[{}]{color}{, }\item[{}]{left}{, }\item[{}]{right}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & -\/ Key associated with this node. \\
+\hline
+{\em value} & -\/ Value associated with this node. \\
+\hline
+{\em color} & -\/ Whether this node is red. \\
+\hline
+{\em left} & -\/ Left child. \\
+\hline
+{\em right} & -\/ Right child. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{cliui_2build_2lib_2index_8js_a6c7e5f9c0d1a7ce5a205c24cc75b881a}{left}}, \mbox{\hyperlink{cliui_2build_2lib_2index_8js_adcf5bb43a9792563db7e8c6c3cca2257}{right}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.
+
+\Hypertarget{class_l_l_r_b_node_ad07ef0a269925a988f367248bf14ac82}\index{LLRBNode@{LLRBNode}!constructor@{constructor}}
+\index{constructor@{constructor}!LLRBNode@{LLRBNode}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_l_l_r_b_node_ad07ef0a269925a988f367248bf14ac82} 
+LLRBNode\+::constructor (\begin{DoxyParamCaption}\item[{}]{key}{, }\item[{}]{value}{, }\item[{}]{color}{, }\item[{}]{left}{, }\item[{}]{right}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & -\/ Key associated with this node. \\
+\hline
+{\em value} & -\/ Value associated with this node. \\
+\hline
+{\em color} & -\/ Whether this node is red. \\
+\hline
+{\em left} & -\/ Left child. \\
+\hline
+{\em right} & -\/ Right child. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{cliui_2build_2lib_2index_8js_a6c7e5f9c0d1a7ce5a205c24cc75b881a}{left}}, \mbox{\hyperlink{cliui_2build_2lib_2index_8js_adcf5bb43a9792563db7e8c6c3cca2257}{right}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.
+
+\Hypertarget{class_l_l_r_b_node_a0d4153aafd1a3159bd631953853eb989}\index{LLRBNode@{LLRBNode}!copy@{copy}}
+\index{copy@{copy}!LLRBNode@{LLRBNode}}
+\doxysubsubsection{\texorpdfstring{copy()}{copy()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_l_l_r_b_node_a0d4153aafd1a3159bd631953853eb989} 
+LLRBNode\+::copy (\begin{DoxyParamCaption}\item[{}]{key}{, }\item[{}]{value}{, }\item[{}]{color}{, }\item[{}]{left}{, }\item[{}]{right}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a copy of the current node, optionally replacing pieces of it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & -\/ New key for the node, or null. \\
+\hline
+{\em value} & -\/ New value for the node, or null. \\
+\hline
+{\em color} & -\/ New color for the node, or null. \\
+\hline
+{\em left} & -\/ New left child for the node, or null. \\
+\hline
+{\em right} & -\/ New right child for the node, or null. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The node copy. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{cliui_2build_2lib_2index_8js_a6c7e5f9c0d1a7ce5a205c24cc75b881a}{left}}, \mbox{\hyperlink{cliui_2build_2lib_2index_8js_adcf5bb43a9792563db7e8c6c3cca2257}{right}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.
+
+\Hypertarget{class_l_l_r_b_node_a0d4153aafd1a3159bd631953853eb989}\index{LLRBNode@{LLRBNode}!copy@{copy}}
+\index{copy@{copy}!LLRBNode@{LLRBNode}}
+\doxysubsubsection{\texorpdfstring{copy()}{copy()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_l_l_r_b_node_a0d4153aafd1a3159bd631953853eb989} 
+LLRBNode\+::copy (\begin{DoxyParamCaption}\item[{}]{key}{, }\item[{}]{value}{, }\item[{}]{color}{, }\item[{}]{left}{, }\item[{}]{right}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a copy of the current node, optionally replacing pieces of it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & -\/ New key for the node, or null. \\
+\hline
+{\em value} & -\/ New value for the node, or null. \\
+\hline
+{\em color} & -\/ New color for the node, or null. \\
+\hline
+{\em left} & -\/ New left child for the node, or null. \\
+\hline
+{\em right} & -\/ New right child for the node, or null. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The node copy. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{cliui_2build_2lib_2index_8js_a6c7e5f9c0d1a7ce5a205c24cc75b881a}{left}}, \mbox{\hyperlink{cliui_2build_2lib_2index_8js_adcf5bb43a9792563db7e8c6c3cca2257}{right}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.
+
+\Hypertarget{class_l_l_r_b_node_a0d4153aafd1a3159bd631953853eb989}\index{LLRBNode@{LLRBNode}!copy@{copy}}
+\index{copy@{copy}!LLRBNode@{LLRBNode}}
+\doxysubsubsection{\texorpdfstring{copy()}{copy()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_l_l_r_b_node_a0d4153aafd1a3159bd631953853eb989} 
+LLRBNode\+::copy (\begin{DoxyParamCaption}\item[{}]{key}{, }\item[{}]{value}{, }\item[{}]{color}{, }\item[{}]{left}{, }\item[{}]{right}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a copy of the current node, optionally replacing pieces of it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & -\/ New key for the node, or null. \\
+\hline
+{\em value} & -\/ New value for the node, or null. \\
+\hline
+{\em color} & -\/ New color for the node, or null. \\
+\hline
+{\em left} & -\/ New left child for the node, or null. \\
+\hline
+{\em right} & -\/ New right child for the node, or null. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The node copy. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{cliui_2build_2lib_2index_8js_a6c7e5f9c0d1a7ce5a205c24cc75b881a}{left}}, \mbox{\hyperlink{cliui_2build_2lib_2index_8js_adcf5bb43a9792563db7e8c6c3cca2257}{right}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.
+
+\Hypertarget{class_l_l_r_b_node_ad3fa7ac133612ba3d8e93ea3442437af}\index{LLRBNode@{LLRBNode}!count@{count}}
+\index{count@{count}!LLRBNode@{LLRBNode}}
+\doxysubsubsection{\texorpdfstring{count()}{count()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_l_l_r_b_node_ad3fa7ac133612ba3d8e93ea3442437af} 
+LLRBNode\+::count (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+The total number of nodes in the tree. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{cliui_2build_2lib_2index_8js_a6c7e5f9c0d1a7ce5a205c24cc75b881a}{left}}, and \mbox{\hyperlink{cliui_2build_2lib_2index_8js_adcf5bb43a9792563db7e8c6c3cca2257}{right}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_l_r_b_node_ad3fa7ac133612ba3d8e93ea3442437af_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_l_l_r_b_node_ad3fa7ac133612ba3d8e93ea3442437af}\index{LLRBNode@{LLRBNode}!count@{count}}
+\index{count@{count}!LLRBNode@{LLRBNode}}
+\doxysubsubsection{\texorpdfstring{count()}{count()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_l_l_r_b_node_ad3fa7ac133612ba3d8e93ea3442437af} 
+LLRBNode\+::count (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+The total number of nodes in the tree. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{cliui_2build_2lib_2index_8js_a6c7e5f9c0d1a7ce5a205c24cc75b881a}{left}}, and \mbox{\hyperlink{cliui_2build_2lib_2index_8js_adcf5bb43a9792563db7e8c6c3cca2257}{right}}.
+
+\Hypertarget{class_l_l_r_b_node_ad3fa7ac133612ba3d8e93ea3442437af}\index{LLRBNode@{LLRBNode}!count@{count}}
+\index{count@{count}!LLRBNode@{LLRBNode}}
+\doxysubsubsection{\texorpdfstring{count()}{count()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_l_l_r_b_node_ad3fa7ac133612ba3d8e93ea3442437af} 
+LLRBNode\+::count (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+The total number of nodes in the tree. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{cliui_2build_2lib_2index_8js_a6c7e5f9c0d1a7ce5a205c24cc75b881a}{left}}, and \mbox{\hyperlink{cliui_2build_2lib_2index_8js_adcf5bb43a9792563db7e8c6c3cca2257}{right}}.
+
+\Hypertarget{class_l_l_r_b_node_a676586e8382fbd04017dd0244ee719e1}\index{LLRBNode@{LLRBNode}!fixUp\_@{fixUp\_}}
+\index{fixUp\_@{fixUp\_}!LLRBNode@{LLRBNode}}
+\doxysubsubsection{\texorpdfstring{fixUp\_()}{fixUp\_()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_l_l_r_b_node_a676586e8382fbd04017dd0244ee719e1} 
+LLRBNode\+::fix\+Up\+\_\+ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+New tree after performing any needed rotations. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}.
+
+\Hypertarget{class_l_l_r_b_node_a676586e8382fbd04017dd0244ee719e1}\index{LLRBNode@{LLRBNode}!fixUp\_@{fixUp\_}}
+\index{fixUp\_@{fixUp\_}!LLRBNode@{LLRBNode}}
+\doxysubsubsection{\texorpdfstring{fixUp\_()}{fixUp\_()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_l_l_r_b_node_a676586e8382fbd04017dd0244ee719e1} 
+LLRBNode\+::fix\+Up\+\_\+ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+New tree after performing any needed rotations. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}.
+
+\Hypertarget{class_l_l_r_b_node_a676586e8382fbd04017dd0244ee719e1}\index{LLRBNode@{LLRBNode}!fixUp\_@{fixUp\_}}
+\index{fixUp\_@{fixUp\_}!LLRBNode@{LLRBNode}}
+\doxysubsubsection{\texorpdfstring{fixUp\_()}{fixUp\_()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_l_l_r_b_node_a676586e8382fbd04017dd0244ee719e1} 
+LLRBNode\+::fix\+Up\+\_\+ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+New tree after performing any needed rotations. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}.
+
+\Hypertarget{class_l_l_r_b_node_a1b1755607051a9321a91bc57d7c50f14}\index{LLRBNode@{LLRBNode}!inorderTraversal@{inorderTraversal}}
+\index{inorderTraversal@{inorderTraversal}!LLRBNode@{LLRBNode}}
+\doxysubsubsection{\texorpdfstring{inorderTraversal()}{inorderTraversal()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_l_l_r_b_node_a1b1755607051a9321a91bc57d7c50f14} 
+LLRBNode\+::inorder\+Traversal (\begin{DoxyParamCaption}\item[{}]{action}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Traverses the tree in key order and calls the specified action function for each node.
+
+
+\begin{DoxyParams}{Parameters}
+{\em action} & -\/ Callback function to be called for each node. If it returns true, traversal is aborted. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The first truthy value returned by action, or the last falsey value returned by action 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{cliui_2build_2lib_2index_8js_a6c7e5f9c0d1a7ce5a205c24cc75b881a}{left}}, \mbox{\hyperlink{cliui_2build_2lib_2index_8js_adcf5bb43a9792563db7e8c6c3cca2257}{right}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.
+
+\Hypertarget{class_l_l_r_b_node_a1b1755607051a9321a91bc57d7c50f14}\index{LLRBNode@{LLRBNode}!inorderTraversal@{inorderTraversal}}
+\index{inorderTraversal@{inorderTraversal}!LLRBNode@{LLRBNode}}
+\doxysubsubsection{\texorpdfstring{inorderTraversal()}{inorderTraversal()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_l_l_r_b_node_a1b1755607051a9321a91bc57d7c50f14} 
+LLRBNode\+::inorder\+Traversal (\begin{DoxyParamCaption}\item[{}]{action}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Traverses the tree in key order and calls the specified action function for each node.
+
+
+\begin{DoxyParams}{Parameters}
+{\em action} & -\/ Callback function to be called for each node. If it returns true, traversal is aborted. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The first truthy value returned by action, or the last falsey value returned by action 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{cliui_2build_2lib_2index_8js_a6c7e5f9c0d1a7ce5a205c24cc75b881a}{left}}, \mbox{\hyperlink{cliui_2build_2lib_2index_8js_adcf5bb43a9792563db7e8c6c3cca2257}{right}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.
+
+\Hypertarget{class_l_l_r_b_node_a1b1755607051a9321a91bc57d7c50f14}\index{LLRBNode@{LLRBNode}!inorderTraversal@{inorderTraversal}}
+\index{inorderTraversal@{inorderTraversal}!LLRBNode@{LLRBNode}}
+\doxysubsubsection{\texorpdfstring{inorderTraversal()}{inorderTraversal()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_l_l_r_b_node_a1b1755607051a9321a91bc57d7c50f14} 
+LLRBNode\+::inorder\+Traversal (\begin{DoxyParamCaption}\item[{}]{action}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Traverses the tree in key order and calls the specified action function for each node.
+
+
+\begin{DoxyParams}{Parameters}
+{\em action} & -\/ Callback function to be called for each node. If it returns true, traversal is aborted. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The first truthy value returned by action, or the last falsey value returned by action 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{cliui_2build_2lib_2index_8js_a6c7e5f9c0d1a7ce5a205c24cc75b881a}{left}}, \mbox{\hyperlink{cliui_2build_2lib_2index_8js_adcf5bb43a9792563db7e8c6c3cca2257}{right}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.
+
+\Hypertarget{class_l_l_r_b_node_af9ec1966ffd53da4e514093eebadebe7}\index{LLRBNode@{LLRBNode}!insert@{insert}}
+\index{insert@{insert}!LLRBNode@{LLRBNode}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_l_l_r_b_node_af9ec1966ffd53da4e514093eebadebe7} 
+LLRBNode\+::insert (\begin{DoxyParamCaption}\item[{}]{key}{, }\item[{}]{value}{, }\item[{}]{comparator}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & -\/ Key to insert. \\
+\hline
+{\em value} & -\/ Value to insert. \\
+\hline
+{\em comparator} & -\/ Comparator. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+New tree, with the key/value added. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.
+
+\Hypertarget{class_l_l_r_b_node_af9ec1966ffd53da4e514093eebadebe7}\index{LLRBNode@{LLRBNode}!insert@{insert}}
+\index{insert@{insert}!LLRBNode@{LLRBNode}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_l_l_r_b_node_af9ec1966ffd53da4e514093eebadebe7} 
+LLRBNode\+::insert (\begin{DoxyParamCaption}\item[{}]{key}{, }\item[{}]{value}{, }\item[{}]{comparator}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & -\/ Key to insert. \\
+\hline
+{\em value} & -\/ Value to insert. \\
+\hline
+{\em comparator} & -\/ Comparator. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+New tree, with the key/value added. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.
+
+\Hypertarget{class_l_l_r_b_node_af9ec1966ffd53da4e514093eebadebe7}\index{LLRBNode@{LLRBNode}!insert@{insert}}
+\index{insert@{insert}!LLRBNode@{LLRBNode}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_l_l_r_b_node_af9ec1966ffd53da4e514093eebadebe7} 
+LLRBNode\+::insert (\begin{DoxyParamCaption}\item[{}]{key}{, }\item[{}]{value}{, }\item[{}]{comparator}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & -\/ Key to insert. \\
+\hline
+{\em value} & -\/ Value to insert. \\
+\hline
+{\em comparator} & -\/ Comparator. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+New tree, with the key/value added. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.
+
+\Hypertarget{class_l_l_r_b_node_a58729e6b8be2e0934dafa246269600ce}\index{LLRBNode@{LLRBNode}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!LLRBNode@{LLRBNode}}
+\doxysubsubsection{\texorpdfstring{isEmpty()}{isEmpty()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_l_l_r_b_node_a58729e6b8be2e0934dafa246269600ce} 
+LLRBNode\+::is\+Empty (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+True if the tree is empty. 
+\end{DoxyReturn}
+\Hypertarget{class_l_l_r_b_node_a58729e6b8be2e0934dafa246269600ce}\index{LLRBNode@{LLRBNode}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!LLRBNode@{LLRBNode}}
+\doxysubsubsection{\texorpdfstring{isEmpty()}{isEmpty()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_l_l_r_b_node_a58729e6b8be2e0934dafa246269600ce} 
+LLRBNode\+::is\+Empty (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+True if the tree is empty. 
+\end{DoxyReturn}
+\Hypertarget{class_l_l_r_b_node_a58729e6b8be2e0934dafa246269600ce}\index{LLRBNode@{LLRBNode}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!LLRBNode@{LLRBNode}}
+\doxysubsubsection{\texorpdfstring{isEmpty()}{isEmpty()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_l_l_r_b_node_a58729e6b8be2e0934dafa246269600ce} 
+LLRBNode\+::is\+Empty (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+True if the tree is empty. 
+\end{DoxyReturn}
+\Hypertarget{class_l_l_r_b_node_af5a25083ebfc5facfce8bcea69234da6}\index{LLRBNode@{LLRBNode}!isRed\_@{isRed\_}}
+\index{isRed\_@{isRed\_}!LLRBNode@{LLRBNode}}
+\doxysubsubsection{\texorpdfstring{isRed\_()}{isRed\_()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_l_l_r_b_node_af5a25083ebfc5facfce8bcea69234da6} 
+LLRBNode\+::is\+Red\+\_\+ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+Whether this is a RED node. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_l_r_b_node_af5a25083ebfc5facfce8bcea69234da6_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_l_l_r_b_node_af5a25083ebfc5facfce8bcea69234da6}\index{LLRBNode@{LLRBNode}!isRed\_@{isRed\_}}
+\index{isRed\_@{isRed\_}!LLRBNode@{LLRBNode}}
+\doxysubsubsection{\texorpdfstring{isRed\_()}{isRed\_()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_l_l_r_b_node_af5a25083ebfc5facfce8bcea69234da6} 
+LLRBNode\+::is\+Red\+\_\+ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+Whether this is a RED node. 
+\end{DoxyReturn}
+\Hypertarget{class_l_l_r_b_node_af5a25083ebfc5facfce8bcea69234da6}\index{LLRBNode@{LLRBNode}!isRed\_@{isRed\_}}
+\index{isRed\_@{isRed\_}!LLRBNode@{LLRBNode}}
+\doxysubsubsection{\texorpdfstring{isRed\_()}{isRed\_()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_l_l_r_b_node_af5a25083ebfc5facfce8bcea69234da6} 
+LLRBNode\+::is\+Red\+\_\+ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+Whether this is a RED node. 
+\end{DoxyReturn}
+\Hypertarget{class_l_l_r_b_node_a57118b06c4276e1eb787453a9384d165}\index{LLRBNode@{LLRBNode}!maxKey@{maxKey}}
+\index{maxKey@{maxKey}!LLRBNode@{LLRBNode}}
+\doxysubsubsection{\texorpdfstring{maxKey()}{maxKey()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_l_l_r_b_node_a57118b06c4276e1eb787453a9384d165} 
+LLRBNode\+::max\+Key (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+The maximum key in the tree. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{cliui_2build_2lib_2index_8js_adcf5bb43a9792563db7e8c6c3cca2257}{right}}.
+
+\Hypertarget{class_l_l_r_b_node_a57118b06c4276e1eb787453a9384d165}\index{LLRBNode@{LLRBNode}!maxKey@{maxKey}}
+\index{maxKey@{maxKey}!LLRBNode@{LLRBNode}}
+\doxysubsubsection{\texorpdfstring{maxKey()}{maxKey()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_l_l_r_b_node_a57118b06c4276e1eb787453a9384d165} 
+LLRBNode\+::max\+Key (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+The maximum key in the tree. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{cliui_2build_2lib_2index_8js_adcf5bb43a9792563db7e8c6c3cca2257}{right}}.
+
+\Hypertarget{class_l_l_r_b_node_a57118b06c4276e1eb787453a9384d165}\index{LLRBNode@{LLRBNode}!maxKey@{maxKey}}
+\index{maxKey@{maxKey}!LLRBNode@{LLRBNode}}
+\doxysubsubsection{\texorpdfstring{maxKey()}{maxKey()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_l_l_r_b_node_a57118b06c4276e1eb787453a9384d165} 
+LLRBNode\+::max\+Key (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+The maximum key in the tree. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{cliui_2build_2lib_2index_8js_adcf5bb43a9792563db7e8c6c3cca2257}{right}}.
+
+\Hypertarget{class_l_l_r_b_node_a124ec38a1d2810b2b5f96f7e43f13ee9}\index{LLRBNode@{LLRBNode}!min\_@{min\_}}
+\index{min\_@{min\_}!LLRBNode@{LLRBNode}}
+\doxysubsubsection{\texorpdfstring{min\_()}{min\_()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_l_l_r_b_node_a124ec38a1d2810b2b5f96f7e43f13ee9} 
+LLRBNode\+::min\+\_\+ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+The minimum node in the tree. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{cliui_2build_2lib_2index_8js_a6c7e5f9c0d1a7ce5a205c24cc75b881a}{left}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{class_l_l_r_b_node_a124ec38a1d2810b2b5f96f7e43f13ee9_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_l_l_r_b_node_a124ec38a1d2810b2b5f96f7e43f13ee9}\index{LLRBNode@{LLRBNode}!min\_@{min\_}}
+\index{min\_@{min\_}!LLRBNode@{LLRBNode}}
+\doxysubsubsection{\texorpdfstring{min\_()}{min\_()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_l_l_r_b_node_a124ec38a1d2810b2b5f96f7e43f13ee9} 
+LLRBNode\+::min\+\_\+ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+The minimum node in the tree. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{cliui_2build_2lib_2index_8js_a6c7e5f9c0d1a7ce5a205c24cc75b881a}{left}}.
+
+\Hypertarget{class_l_l_r_b_node_a124ec38a1d2810b2b5f96f7e43f13ee9}\index{LLRBNode@{LLRBNode}!min\_@{min\_}}
+\index{min\_@{min\_}!LLRBNode@{LLRBNode}}
+\doxysubsubsection{\texorpdfstring{min\_()}{min\_()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_l_l_r_b_node_a124ec38a1d2810b2b5f96f7e43f13ee9} 
+LLRBNode\+::min\+\_\+ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+The minimum node in the tree. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{cliui_2build_2lib_2index_8js_a6c7e5f9c0d1a7ce5a205c24cc75b881a}{left}}.
+
+\Hypertarget{class_l_l_r_b_node_a0f489df0af21f9f1713b2168c7821ad6}\index{LLRBNode@{LLRBNode}!minKey@{minKey}}
+\index{minKey@{minKey}!LLRBNode@{LLRBNode}}
+\doxysubsubsection{\texorpdfstring{minKey()}{minKey()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_l_l_r_b_node_a0f489df0af21f9f1713b2168c7821ad6} 
+LLRBNode\+::min\+Key (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+The maximum key in the tree. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{class_l_l_r_b_node_a124ec38a1d2810b2b5f96f7e43f13ee9}{min\+\_\+()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{class_l_l_r_b_node_a0f489df0af21f9f1713b2168c7821ad6_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_l_l_r_b_node_a0f489df0af21f9f1713b2168c7821ad6}\index{LLRBNode@{LLRBNode}!minKey@{minKey}}
+\index{minKey@{minKey}!LLRBNode@{LLRBNode}}
+\doxysubsubsection{\texorpdfstring{minKey()}{minKey()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_l_l_r_b_node_a0f489df0af21f9f1713b2168c7821ad6} 
+LLRBNode\+::min\+Key (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+The maximum key in the tree. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{class_l_l_r_b_node_a124ec38a1d2810b2b5f96f7e43f13ee9}{min\+\_\+()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{class_l_l_r_b_node_a0f489df0af21f9f1713b2168c7821ad6_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_l_l_r_b_node_a0f489df0af21f9f1713b2168c7821ad6}\index{LLRBNode@{LLRBNode}!minKey@{minKey}}
+\index{minKey@{minKey}!LLRBNode@{LLRBNode}}
+\doxysubsubsection{\texorpdfstring{minKey()}{minKey()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_l_l_r_b_node_a0f489df0af21f9f1713b2168c7821ad6} 
+LLRBNode\+::min\+Key (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+The maximum key in the tree. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{class_l_l_r_b_node_a124ec38a1d2810b2b5f96f7e43f13ee9}{min\+\_\+()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{class_l_l_r_b_node_a0f489df0af21f9f1713b2168c7821ad6_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_l_l_r_b_node_a2af6f5e1b0ecd2bc24a2ed13863c5254}\index{LLRBNode@{LLRBNode}!moveRedLeft\_@{moveRedLeft\_}}
+\index{moveRedLeft\_@{moveRedLeft\_}!LLRBNode@{LLRBNode}}
+\doxysubsubsection{\texorpdfstring{moveRedLeft\_()}{moveRedLeft\_()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_l_l_r_b_node_a2af6f5e1b0ecd2bc24a2ed13863c5254} 
+LLRBNode\+::move\+Red\+Left\+\_\+ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+New tree, after move\+Red\+Left. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{class_l_l_r_b_node_abec1e13b04d5cbc4ea2c85e5472ac6d2}{color\+Flip\+\_\+()}}, and \mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_l_r_b_node_a2af6f5e1b0ecd2bc24a2ed13863c5254_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_l_l_r_b_node_a2af6f5e1b0ecd2bc24a2ed13863c5254}\index{LLRBNode@{LLRBNode}!moveRedLeft\_@{moveRedLeft\_}}
+\index{moveRedLeft\_@{moveRedLeft\_}!LLRBNode@{LLRBNode}}
+\doxysubsubsection{\texorpdfstring{moveRedLeft\_()}{moveRedLeft\_()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_l_l_r_b_node_a2af6f5e1b0ecd2bc24a2ed13863c5254} 
+LLRBNode\+::move\+Red\+Left\+\_\+ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+New tree, after move\+Red\+Left. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{class_l_l_r_b_node_abec1e13b04d5cbc4ea2c85e5472ac6d2}{color\+Flip\+\_\+()}}, and \mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_l_r_b_node_a2af6f5e1b0ecd2bc24a2ed13863c5254_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_l_l_r_b_node_a2af6f5e1b0ecd2bc24a2ed13863c5254}\index{LLRBNode@{LLRBNode}!moveRedLeft\_@{moveRedLeft\_}}
+\index{moveRedLeft\_@{moveRedLeft\_}!LLRBNode@{LLRBNode}}
+\doxysubsubsection{\texorpdfstring{moveRedLeft\_()}{moveRedLeft\_()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_l_l_r_b_node_a2af6f5e1b0ecd2bc24a2ed13863c5254} 
+LLRBNode\+::move\+Red\+Left\+\_\+ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+New tree, after move\+Red\+Left. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{class_l_l_r_b_node_abec1e13b04d5cbc4ea2c85e5472ac6d2}{color\+Flip\+\_\+()}}, and \mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_l_r_b_node_a2af6f5e1b0ecd2bc24a2ed13863c5254_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_l_l_r_b_node_ae60b485a970016d80cab222f6d9f8901}\index{LLRBNode@{LLRBNode}!moveRedRight\_@{moveRedRight\_}}
+\index{moveRedRight\_@{moveRedRight\_}!LLRBNode@{LLRBNode}}
+\doxysubsubsection{\texorpdfstring{moveRedRight\_()}{moveRedRight\_()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_l_l_r_b_node_ae60b485a970016d80cab222f6d9f8901} 
+LLRBNode\+::move\+Red\+Right\+\_\+ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+New tree, after move\+Red\+Right. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{class_l_l_r_b_node_abec1e13b04d5cbc4ea2c85e5472ac6d2}{color\+Flip\+\_\+()}}, and \mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_l_r_b_node_ae60b485a970016d80cab222f6d9f8901_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_l_l_r_b_node_ae60b485a970016d80cab222f6d9f8901}\index{LLRBNode@{LLRBNode}!moveRedRight\_@{moveRedRight\_}}
+\index{moveRedRight\_@{moveRedRight\_}!LLRBNode@{LLRBNode}}
+\doxysubsubsection{\texorpdfstring{moveRedRight\_()}{moveRedRight\_()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_l_l_r_b_node_ae60b485a970016d80cab222f6d9f8901} 
+LLRBNode\+::move\+Red\+Right\+\_\+ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+New tree, after move\+Red\+Right. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{class_l_l_r_b_node_abec1e13b04d5cbc4ea2c85e5472ac6d2}{color\+Flip\+\_\+()}}, and \mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_l_r_b_node_ae60b485a970016d80cab222f6d9f8901_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_l_l_r_b_node_ae60b485a970016d80cab222f6d9f8901}\index{LLRBNode@{LLRBNode}!moveRedRight\_@{moveRedRight\_}}
+\index{moveRedRight\_@{moveRedRight\_}!LLRBNode@{LLRBNode}}
+\doxysubsubsection{\texorpdfstring{moveRedRight\_()}{moveRedRight\_()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_l_l_r_b_node_ae60b485a970016d80cab222f6d9f8901} 
+LLRBNode\+::move\+Red\+Right\+\_\+ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+New tree, after move\+Red\+Right. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{class_l_l_r_b_node_abec1e13b04d5cbc4ea2c85e5472ac6d2}{color\+Flip\+\_\+()}}, and \mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_l_r_b_node_ae60b485a970016d80cab222f6d9f8901_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_l_l_r_b_node_a535faa02d1ae8982a019bff3b56e8d45}\index{LLRBNode@{LLRBNode}!remove@{remove}}
+\index{remove@{remove}!LLRBNode@{LLRBNode}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_l_l_r_b_node_a535faa02d1ae8982a019bff3b56e8d45} 
+LLRBNode\+::remove (\begin{DoxyParamCaption}\item[{}]{key}{, }\item[{}]{comparator}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & -\/ The key of the item to remove. \\
+\hline
+{\em comparator} & -\/ Comparator. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+New tree, with the specified item removed. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}.
+
+\Hypertarget{class_l_l_r_b_node_a535faa02d1ae8982a019bff3b56e8d45}\index{LLRBNode@{LLRBNode}!remove@{remove}}
+\index{remove@{remove}!LLRBNode@{LLRBNode}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_l_l_r_b_node_a535faa02d1ae8982a019bff3b56e8d45} 
+LLRBNode\+::remove (\begin{DoxyParamCaption}\item[{}]{key}{, }\item[{}]{comparator}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & -\/ The key of the item to remove. \\
+\hline
+{\em comparator} & -\/ Comparator. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+New tree, with the specified item removed. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}.
+
+\Hypertarget{class_l_l_r_b_node_a535faa02d1ae8982a019bff3b56e8d45}\index{LLRBNode@{LLRBNode}!remove@{remove}}
+\index{remove@{remove}!LLRBNode@{LLRBNode}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_l_l_r_b_node_a535faa02d1ae8982a019bff3b56e8d45} 
+LLRBNode\+::remove (\begin{DoxyParamCaption}\item[{}]{key}{, }\item[{}]{comparator}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & -\/ The key of the item to remove. \\
+\hline
+{\em comparator} & -\/ Comparator. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+New tree, with the specified item removed. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}.
+
+\Hypertarget{class_l_l_r_b_node_a01ce8dc9ba3811ed44a0aa10e158f7f9}\index{LLRBNode@{LLRBNode}!removeMin\_@{removeMin\_}}
+\index{removeMin\_@{removeMin\_}!LLRBNode@{LLRBNode}}
+\doxysubsubsection{\texorpdfstring{removeMin\_()}{removeMin\_()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_l_l_r_b_node_a01ce8dc9ba3811ed44a0aa10e158f7f9} 
+LLRBNode\+::remove\+Min\+\_\+ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+New tree, with the minimum key removed. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{cliui_2build_2lib_2index_8js_a6c7e5f9c0d1a7ce5a205c24cc75b881a}{left}}, and \mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}.
+
+\Hypertarget{class_l_l_r_b_node_a01ce8dc9ba3811ed44a0aa10e158f7f9}\index{LLRBNode@{LLRBNode}!removeMin\_@{removeMin\_}}
+\index{removeMin\_@{removeMin\_}!LLRBNode@{LLRBNode}}
+\doxysubsubsection{\texorpdfstring{removeMin\_()}{removeMin\_()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_l_l_r_b_node_a01ce8dc9ba3811ed44a0aa10e158f7f9} 
+LLRBNode\+::remove\+Min\+\_\+ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+New tree, with the minimum key removed. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{cliui_2build_2lib_2index_8js_a6c7e5f9c0d1a7ce5a205c24cc75b881a}{left}}, and \mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}.
+
+\Hypertarget{class_l_l_r_b_node_a01ce8dc9ba3811ed44a0aa10e158f7f9}\index{LLRBNode@{LLRBNode}!removeMin\_@{removeMin\_}}
+\index{removeMin\_@{removeMin\_}!LLRBNode@{LLRBNode}}
+\doxysubsubsection{\texorpdfstring{removeMin\_()}{removeMin\_()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_l_l_r_b_node_a01ce8dc9ba3811ed44a0aa10e158f7f9} 
+LLRBNode\+::remove\+Min\+\_\+ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+New tree, with the minimum key removed. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{cliui_2build_2lib_2index_8js_a6c7e5f9c0d1a7ce5a205c24cc75b881a}{left}}, and \mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}.
+
+\Hypertarget{class_l_l_r_b_node_ac9f4794d2bd56720a4f818cd8e49c6e0}\index{LLRBNode@{LLRBNode}!reverseTraversal@{reverseTraversal}}
+\index{reverseTraversal@{reverseTraversal}!LLRBNode@{LLRBNode}}
+\doxysubsubsection{\texorpdfstring{reverseTraversal()}{reverseTraversal()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_l_l_r_b_node_ac9f4794d2bd56720a4f818cd8e49c6e0} 
+LLRBNode\+::reverse\+Traversal (\begin{DoxyParamCaption}\item[{}]{action}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Traverses the tree in reverse key order and calls the specified action function for each node.
+
+
+\begin{DoxyParams}{Parameters}
+{\em action} & -\/ Callback function to be called for each node. If it returns true, traversal is aborted. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if traversal was aborted. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{cliui_2build_2lib_2index_8js_a6c7e5f9c0d1a7ce5a205c24cc75b881a}{left}}, \mbox{\hyperlink{cliui_2build_2lib_2index_8js_adcf5bb43a9792563db7e8c6c3cca2257}{right}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.
+
+\Hypertarget{class_l_l_r_b_node_ac9f4794d2bd56720a4f818cd8e49c6e0}\index{LLRBNode@{LLRBNode}!reverseTraversal@{reverseTraversal}}
+\index{reverseTraversal@{reverseTraversal}!LLRBNode@{LLRBNode}}
+\doxysubsubsection{\texorpdfstring{reverseTraversal()}{reverseTraversal()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_l_l_r_b_node_ac9f4794d2bd56720a4f818cd8e49c6e0} 
+LLRBNode\+::reverse\+Traversal (\begin{DoxyParamCaption}\item[{}]{action}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Traverses the tree in reverse key order and calls the specified action function for each node.
+
+
+\begin{DoxyParams}{Parameters}
+{\em action} & -\/ Callback function to be called for each node. If it returns true, traversal is aborted. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if traversal was aborted. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{cliui_2build_2lib_2index_8js_a6c7e5f9c0d1a7ce5a205c24cc75b881a}{left}}, \mbox{\hyperlink{cliui_2build_2lib_2index_8js_adcf5bb43a9792563db7e8c6c3cca2257}{right}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.
+
+\Hypertarget{class_l_l_r_b_node_ac9f4794d2bd56720a4f818cd8e49c6e0}\index{LLRBNode@{LLRBNode}!reverseTraversal@{reverseTraversal}}
+\index{reverseTraversal@{reverseTraversal}!LLRBNode@{LLRBNode}}
+\doxysubsubsection{\texorpdfstring{reverseTraversal()}{reverseTraversal()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_l_l_r_b_node_ac9f4794d2bd56720a4f818cd8e49c6e0} 
+LLRBNode\+::reverse\+Traversal (\begin{DoxyParamCaption}\item[{}]{action}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Traverses the tree in reverse key order and calls the specified action function for each node.
+
+
+\begin{DoxyParams}{Parameters}
+{\em action} & -\/ Callback function to be called for each node. If it returns true, traversal is aborted. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if traversal was aborted. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{cliui_2build_2lib_2index_8js_a6c7e5f9c0d1a7ce5a205c24cc75b881a}{left}}, \mbox{\hyperlink{cliui_2build_2lib_2index_8js_adcf5bb43a9792563db7e8c6c3cca2257}{right}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.
+
+\Hypertarget{class_l_l_r_b_node_a0dc2cd7e3077a5667faf5c59e1d9446b}\index{LLRBNode@{LLRBNode}!rotateLeft\_@{rotateLeft\_}}
+\index{rotateLeft\_@{rotateLeft\_}!LLRBNode@{LLRBNode}}
+\doxysubsubsection{\texorpdfstring{rotateLeft\_()}{rotateLeft\_()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_l_l_r_b_node_a0dc2cd7e3077a5667faf5c59e1d9446b} 
+LLRBNode\+::rotate\+Left\+\_\+ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+New tree, after rotate\+Left. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{ordered-map_8min_8js_a684383e7e596d4ada3fb9be600b8e98c}{copy}}, and \mbox{\hyperlink{cliui_2build_2lib_2index_8js_adcf5bb43a9792563db7e8c6c3cca2257}{right}}.
+
+\Hypertarget{class_l_l_r_b_node_a0dc2cd7e3077a5667faf5c59e1d9446b}\index{LLRBNode@{LLRBNode}!rotateLeft\_@{rotateLeft\_}}
+\index{rotateLeft\_@{rotateLeft\_}!LLRBNode@{LLRBNode}}
+\doxysubsubsection{\texorpdfstring{rotateLeft\_()}{rotateLeft\_()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_l_l_r_b_node_a0dc2cd7e3077a5667faf5c59e1d9446b} 
+LLRBNode\+::rotate\+Left\+\_\+ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+New tree, after rotate\+Left. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{ordered-map_8min_8js_a684383e7e596d4ada3fb9be600b8e98c}{copy}}, and \mbox{\hyperlink{cliui_2build_2lib_2index_8js_adcf5bb43a9792563db7e8c6c3cca2257}{right}}.
+
+\Hypertarget{class_l_l_r_b_node_a0dc2cd7e3077a5667faf5c59e1d9446b}\index{LLRBNode@{LLRBNode}!rotateLeft\_@{rotateLeft\_}}
+\index{rotateLeft\_@{rotateLeft\_}!LLRBNode@{LLRBNode}}
+\doxysubsubsection{\texorpdfstring{rotateLeft\_()}{rotateLeft\_()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_l_l_r_b_node_a0dc2cd7e3077a5667faf5c59e1d9446b} 
+LLRBNode\+::rotate\+Left\+\_\+ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+New tree, after rotate\+Left. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{ordered-map_8min_8js_a684383e7e596d4ada3fb9be600b8e98c}{copy}}, and \mbox{\hyperlink{cliui_2build_2lib_2index_8js_adcf5bb43a9792563db7e8c6c3cca2257}{right}}.
+
+\Hypertarget{class_l_l_r_b_node_a001fb8fb233fd58b0f06a72b5fff3020}\index{LLRBNode@{LLRBNode}!rotateRight\_@{rotateRight\_}}
+\index{rotateRight\_@{rotateRight\_}!LLRBNode@{LLRBNode}}
+\doxysubsubsection{\texorpdfstring{rotateRight\_()}{rotateRight\_()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_l_l_r_b_node_a001fb8fb233fd58b0f06a72b5fff3020} 
+LLRBNode\+::rotate\+Right\+\_\+ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+New tree, after rotate\+Right. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{ordered-map_8min_8js_a684383e7e596d4ada3fb9be600b8e98c}{copy}}, and \mbox{\hyperlink{cliui_2build_2lib_2index_8js_a6c7e5f9c0d1a7ce5a205c24cc75b881a}{left}}.
+
+\Hypertarget{class_l_l_r_b_node_a001fb8fb233fd58b0f06a72b5fff3020}\index{LLRBNode@{LLRBNode}!rotateRight\_@{rotateRight\_}}
+\index{rotateRight\_@{rotateRight\_}!LLRBNode@{LLRBNode}}
+\doxysubsubsection{\texorpdfstring{rotateRight\_()}{rotateRight\_()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_l_l_r_b_node_a001fb8fb233fd58b0f06a72b5fff3020} 
+LLRBNode\+::rotate\+Right\+\_\+ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+New tree, after rotate\+Right. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{ordered-map_8min_8js_a684383e7e596d4ada3fb9be600b8e98c}{copy}}, and \mbox{\hyperlink{cliui_2build_2lib_2index_8js_a6c7e5f9c0d1a7ce5a205c24cc75b881a}{left}}.
+
+\Hypertarget{class_l_l_r_b_node_a001fb8fb233fd58b0f06a72b5fff3020}\index{LLRBNode@{LLRBNode}!rotateRight\_@{rotateRight\_}}
+\index{rotateRight\_@{rotateRight\_}!LLRBNode@{LLRBNode}}
+\doxysubsubsection{\texorpdfstring{rotateRight\_()}{rotateRight\_()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_l_l_r_b_node_a001fb8fb233fd58b0f06a72b5fff3020} 
+LLRBNode\+::rotate\+Right\+\_\+ (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+New tree, after rotate\+Right. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{ordered-map_8min_8js_a684383e7e596d4ada3fb9be600b8e98c}{copy}}, and \mbox{\hyperlink{cliui_2build_2lib_2index_8js_a6c7e5f9c0d1a7ce5a205c24cc75b881a}{left}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/@firebase/database/dist/\mbox{\hyperlink{database_2dist_2index_8cjs_8js}{index.\+cjs.\+js}}\item 
+backend/node\+\_\+modules/@firebase/database/dist/\mbox{\hyperlink{database_2dist_2index_8esm2017_8js}{index.\+esm2017.\+js}}\item 
+backend/node\+\_\+modules/@firebase/database/dist/node-\/esm/\mbox{\hyperlink{database_2dist_2node-esm_2index_8node_8esm_8js}{index.\+node.\+esm.\+js}}\end{DoxyCompactItemize}

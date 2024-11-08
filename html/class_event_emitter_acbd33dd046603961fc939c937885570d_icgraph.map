@@ -1,0 +1,21 @@
+<map id="EventEmitter::validateEventType_" name="EventEmitter::validateEventType_">
+<area shape="rect" id="Node000001" title=" " alt="" coords="353,120,537,161"/>
+<area shape="rect" id="Node000002" href="$class_event_emitter.html#a10f141d79d08f1987d98f707c962fd2c" title=" " alt="" coords="185,79,305,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="345,119,299,107,300,102,346,114"/>
+<area shape="rect" id="Node000005" href="$class_event_emitter.html#a5c24823a4ba611a3b361531b28815107" title=" " alt="" coords="185,152,304,178"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="338,156,305,160,305,155,337,151"/>
+<area shape="rect" id="Node000003" href="$minimal_2protobuf_8min_8js.html#abe1c8da62109bc155f560f1b21e7f53f" title=" " alt="" coords="35,5,107,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="201,74,136,45,106,33,108,28,138,40,204,69"/>
+<area shape="rect" id="Node000004" href="$protobufjs_2dist_2light_2protobuf_8js.html#ad8544724c289e628d9b1b4b5d59f1c38" title=" " alt="" coords="39,79,103,104"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="169,94,103,94,103,89,169,89"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="100,66,90,60,71,57,53,59,43,64,41,69,46,77,42,80,36,70,39,60,51,54,71,52,92,55,103,61"/>
+<area shape="poly" id="edge7_Node000005_Node000004" title=" " alt="" coords="201,147,136,118,102,105,104,100,138,113,204,143"/>
+<area shape="rect" id="Node000006" href="$lru-memoizer_2lib_2async_8js.html#a25bae7cac3688c880c410b8f3fc723fb" title=" " alt="" coords="14,128,128,154"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="169,157,128,151,128,146,170,152"/>
+<area shape="rect" id="Node000007" href="$class_operation.html#a14ed788e2dbfc16977b4ebacd0a119ff" title=" " alt="" coords="5,177,137,203"/>
+<area shape="poly" id="edge8_Node000005_Node000007" title=" " alt="" coords="170,178,138,183,137,178,169,173"/>
+<area shape="rect" id="Node000008" href="$retry-request_2index_8js.html#aa6d08fac66e925fc9fc20f5370a982de" title=" " alt="" coords="23,227,119,252"/>
+<area shape="poly" id="edge9_Node000005_Node000008" title=" " alt="" coords="205,187,138,218,111,229,109,224,136,213,202,182"/>
+<area shape="rect" id="Node000009" href="$sync_8js.html#aaf41546b6c7f161007d76925b59861df" title=" " alt="" coords="18,276,124,302"/>
+<area shape="poly" id="edge10_Node000005_Node000009" title=" " alt="" coords="224,191,186,230,138,267,117,278,114,273,135,263,183,226,221,188"/>
+</map>

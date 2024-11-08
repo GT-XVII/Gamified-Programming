@@ -1,0 +1,13 @@
+<map id="AppCheckApiClient::exchangeToken" name="AppCheckApiClient::exchangeToken">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,71,149,111"/>
+<area shape="rect" id="Node000002" href="$class_app_check_api_client.html#a2e34cedee8bdf568dce8a66b2949e098" title=" " alt="" coords="197,5,340,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="138,68,192,49,193,54,139,73"/>
+<area shape="rect" id="Node000004" href="$class_app_check_api_client.html#a563fa2c7c1eb003c7cdaee3dc4610933" title=" " alt="" coords="197,71,340,111"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="149,88,181,88,181,94,149,94"/>
+<area shape="rect" id="Node000006" href="$class_app_check_api_client.html#ab2e489e184953f2608bf3ae4bd21878c" title=" " alt="" coords="197,136,340,177"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="139,109,193,128,192,133,138,114"/>
+<area shape="rect" id="Node000003" href="$class_app_check_api_client.html#ab32d6bdb6fe98ff3463ad0cf466e4fa8" title=" " alt="" coords="388,5,531,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="340,23,373,23,373,28,340,28"/>
+<area shape="rect" id="Node000005" href="$class_app_check_api_client.html#a4246a4ad51a7ae124e3cd841d4713aff" title=" " alt="" coords="388,71,531,111"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="340,88,373,88,373,94,340,94"/>
+</map>

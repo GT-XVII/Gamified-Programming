@@ -1,0 +1,92 @@
+\doxysection{backend/node\+\_\+modules/firebase-\/admin/lib/extensions/extensions-\/api-\/client-\/internal.js File Reference}
+\hypertarget{extensions-api-client-internal_8js}{}\label{extensions-api-client-internal_8js}\index{backend/node\_modules/firebase-\/admin/lib/extensions/extensions-\/api-\/client-\/internal.js@{backend/node\_modules/firebase-\/admin/lib/extensions/extensions-\/api-\/client-\/internal.js}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_firebase_extensions_error}{Firebase\+Extensions\+Error}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{extensions-api-client-internal_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{extensions-api-client-internal_8js_a5d635cc36386d7556d52ef1a251d0d3c}{Firebase\+Extensions\+Error}} = exports.\+Extensions\+Api\+Client = void 0
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{extensions-api-client-internal_8js_a73dd1e6f0bc0a0234576ddef2bbe0452}{api\+\_\+request\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}}-\/request"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{extensions-api-client-internal_8js_af1a99a3ff1a35c114bdd06cc7252beb6}{error\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/error"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{extensions-api-client-internal_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/validator"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{extensions-api-client-internal_8js_a022e926a40defc4294368e708a7e2372}{utils}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{extensions-api-client-internal_8js_a7b18c6dcac31c89607fa281a84714663}{FIREBASE\+\_\+\+FUNCTIONS\+\_\+\+CONFIG\+\_\+\+HEADERS}}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{extensions-api-client-internal_8js_acc6c48b4f40ae70c4f39c3de317345c2}{EXTENSIONS\+\_\+\+API\+\_\+\+VERSION}} = \textquotesingle{}v1beta\textquotesingle{}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{extensions-api-client-internal_8js_a593a82c1ca25644f01e677348c2ac314}{EXTENSIONS\+\_\+\+URL}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{extensions-api-client-internal_8js_a73dd1e6f0bc0a0234576ddef2bbe0452}\index{extensions-\/api-\/client-\/internal.js@{extensions-\/api-\/client-\/internal.js}!api\_request\_1@{api\_request\_1}}
+\index{api\_request\_1@{api\_request\_1}!extensions-\/api-\/client-\/internal.js@{extensions-\/api-\/client-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{api\_request\_1}{api\_request\_1}}
+{\footnotesize\ttfamily \label{extensions-api-client-internal_8js_a73dd1e6f0bc0a0234576ddef2bbe0452} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} api\+\_\+request\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}}-\/request"{})}
+
+\Hypertarget{extensions-api-client-internal_8js_af1a99a3ff1a35c114bdd06cc7252beb6}\index{extensions-\/api-\/client-\/internal.js@{extensions-\/api-\/client-\/internal.js}!error\_1@{error\_1}}
+\index{error\_1@{error\_1}!extensions-\/api-\/client-\/internal.js@{extensions-\/api-\/client-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{error\_1}{error\_1}}
+{\footnotesize\ttfamily \label{extensions-api-client-internal_8js_af1a99a3ff1a35c114bdd06cc7252beb6} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} error\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/error"{})}
+
+\Hypertarget{extensions-api-client-internal_8js_acc6c48b4f40ae70c4f39c3de317345c2}\index{extensions-\/api-\/client-\/internal.js@{extensions-\/api-\/client-\/internal.js}!EXTENSIONS\_API\_VERSION@{EXTENSIONS\_API\_VERSION}}
+\index{EXTENSIONS\_API\_VERSION@{EXTENSIONS\_API\_VERSION}!extensions-\/api-\/client-\/internal.js@{extensions-\/api-\/client-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{EXTENSIONS\_API\_VERSION}{EXTENSIONS\_API\_VERSION}}
+{\footnotesize\ttfamily \label{extensions-api-client-internal_8js_acc6c48b4f40ae70c4f39c3de317345c2} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} EXTENSIONS\+\_\+\+API\+\_\+\+VERSION = \textquotesingle{}v1beta\textquotesingle{}}
+
+\Hypertarget{extensions-api-client-internal_8js_a593a82c1ca25644f01e677348c2ac314}\index{extensions-\/api-\/client-\/internal.js@{extensions-\/api-\/client-\/internal.js}!EXTENSIONS\_URL@{EXTENSIONS\_URL}}
+\index{EXTENSIONS\_URL@{EXTENSIONS\_URL}!extensions-\/api-\/client-\/internal.js@{extensions-\/api-\/client-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{EXTENSIONS\_URL}{EXTENSIONS\_URL}}
+{\footnotesize\ttfamily \label{extensions-api-client-internal_8js_a593a82c1ca25644f01e677348c2ac314} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} EXTENSIONS\+\_\+\+URL}
+
+\Hypertarget{extensions-api-client-internal_8js_a7b18c6dcac31c89607fa281a84714663}\index{extensions-\/api-\/client-\/internal.js@{extensions-\/api-\/client-\/internal.js}!FIREBASE\_FUNCTIONS\_CONFIG\_HEADERS@{FIREBASE\_FUNCTIONS\_CONFIG\_HEADERS}}
+\index{FIREBASE\_FUNCTIONS\_CONFIG\_HEADERS@{FIREBASE\_FUNCTIONS\_CONFIG\_HEADERS}!extensions-\/api-\/client-\/internal.js@{extensions-\/api-\/client-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{FIREBASE\_FUNCTIONS\_CONFIG\_HEADERS}{FIREBASE\_FUNCTIONS\_CONFIG\_HEADERS}}
+{\footnotesize\ttfamily \label{extensions-api-client-internal_8js_a7b18c6dcac31c89607fa281a84714663} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} FIREBASE\+\_\+\+FUNCTIONS\+\_\+\+CONFIG\+\_\+\+HEADERS}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{'X-\/Firebase-\/Client'}:\ \`{}fire-\/admin-\/\mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2platform_2index_8js_a74c72f849f998803d0f301e524445c36}{node}}/\mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}\{\mbox{\hyperlink{extensions-api-client-internal_8js_a022e926a40defc4294368e708a7e2372}{utils}}.getSdkVersion()\}\`{}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{extensions-api-client-internal_8js_a5d635cc36386d7556d52ef1a251d0d3c}\index{extensions-\/api-\/client-\/internal.js@{extensions-\/api-\/client-\/internal.js}!FirebaseExtensionsError@{FirebaseExtensionsError}}
+\index{FirebaseExtensionsError@{FirebaseExtensionsError}!extensions-\/api-\/client-\/internal.js@{extensions-\/api-\/client-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{FirebaseExtensionsError}{FirebaseExtensionsError}}
+{\footnotesize\ttfamily \label{extensions-api-client-internal_8js_a5d635cc36386d7556d52ef1a251d0d3c} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} Firebase\+Extensions\+Error = exports.\+Extensions\+Api\+Client = void 0}
+
+\Hypertarget{extensions-api-client-internal_8js_ae2475e10618961c050dcba04e8c42331}\index{extensions-\/api-\/client-\/internal.js@{extensions-\/api-\/client-\/internal.js}!strict@{strict}}
+\index{strict@{strict}!extensions-\/api-\/client-\/internal.js@{extensions-\/api-\/client-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{extensions-api-client-internal_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+
+firebase-\/admin v12.\+7.\+0 \Hypertarget{extensions-api-client-internal_8js_a022e926a40defc4294368e708a7e2372}\index{extensions-\/api-\/client-\/internal.js@{extensions-\/api-\/client-\/internal.js}!utils@{utils}}
+\index{utils@{utils}!extensions-\/api-\/client-\/internal.js@{extensions-\/api-\/client-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{utils}{utils}}
+{\footnotesize\ttfamily \label{extensions-api-client-internal_8js_a022e926a40defc4294368e708a7e2372} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} utils = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils"{})}
+
+\Hypertarget{extensions-api-client-internal_8js_add6dc10e852e313f07c0d59bcf288b6a}\index{extensions-\/api-\/client-\/internal.js@{extensions-\/api-\/client-\/internal.js}!validator@{validator}}
+\index{validator@{validator}!extensions-\/api-\/client-\/internal.js@{extensions-\/api-\/client-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{validator}{validator}}
+{\footnotesize\ttfamily \label{extensions-api-client-internal_8js_add6dc10e852e313f07c0d59bcf288b6a} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} validator = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/validator"{})}
+

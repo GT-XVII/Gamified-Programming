@@ -1,0 +1,27 @@
+\doxysection{/\+Users/nicoletiokhin/\+Desktop/\+Software Semester 3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/lodash/cond.\+js}
+\hypertarget{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_b78d0a57cb8d6d75cc495bba281bbd39}{}\label{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_b78d0a57cb8d6d75cc495bba281bbd39}Creates a function that iterates over {\ttfamily pairs} and invokes the corresponding function of the first predicate to return truthy. The predicate-\/function pairs are invoked with the {\ttfamily this} binding and arguments of the created function.
+
+@member\+Of \+\_\+ \begin{DoxySince}{Since}
+4.\+0.\+0
+\end{DoxySince}
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Array\}} & pairs The predicate-\/function pairs. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Function\} Returns the new composite function.
+\end{DoxyReturn}
+var func = \+\_\+.\+cond(\mbox{[} \mbox{[}\+\_\+.\+matches(\{ \textquotesingle{}a\textquotesingle{}\+: 1 \}), \+\_\+.\+constant(\textquotesingle{}matches \doxylink{class_a}{A}\textquotesingle{})\mbox{]}, \mbox{[}\+\_\+.\+conforms(\{ \textquotesingle{}b\textquotesingle{}\+: \+\_\+.\+is\+Number \}), \+\_\+.\+constant(\textquotesingle{}matches B\textquotesingle{})\mbox{]}, \mbox{[}\+\_\+.\+stub\+True, \+\_\+.\+constant(\textquotesingle{}no match\textquotesingle{})\mbox{]} \mbox{]});
+
+func(\{ \textquotesingle{}a\textquotesingle{}\+: 1, \textquotesingle{}b\textquotesingle{}\+: 2 \}); // =\texorpdfstring{$>$}{>} \textquotesingle{}matches \doxylink{class_a}{A}\textquotesingle{}
+
+func(\{ \textquotesingle{}a\textquotesingle{}\+: 0, \textquotesingle{}b\textquotesingle{}\+: 1 \}); // =\texorpdfstring{$>$}{>} \textquotesingle{}matches B\textquotesingle{}
+
+func(\{ \textquotesingle{}a\textquotesingle{}\+: \textquotesingle{}1\textquotesingle{}, \textquotesingle{}b\textquotesingle{}\+: \textquotesingle{}2\textquotesingle{} \}); // =\texorpdfstring{$>$}{>} \textquotesingle{}no match\textquotesingle{}
+
+
+\begin{DoxyCodeInclude}{0}
+
+\end{DoxyCodeInclude}
+ Semester \doxylink{cond_8js}{3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/lodash/cond.\+js} 

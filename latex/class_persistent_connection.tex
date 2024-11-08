@@ -1,0 +1,926 @@
+\doxysection{Persistent\+Connection Class Reference}
+\hypertarget{class_persistent_connection}{}\label{class_persistent_connection}\index{PersistentConnection@{PersistentConnection}}
+
+
+Inheritance diagram for Persistent\+Connection\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_persistent_connection__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Persistent\+Connection\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_persistent_connection__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_persistent_connection_a8c09e931dfb3da193dd0b7c1d5864781}{constructor}} (repo\+Info\+\_\+, application\+Id\+\_\+, on\+Data\+Update\+\_\+, on\+Connect\+Status\+\_\+, on\+Server\+Info\+Update\+\_\+, auth\+Token\+Provider\+\_\+, app\+Check\+Token\+Provider\+\_\+, auth\+Override\+\_\+)
+\item 
+\mbox{\hyperlink{class_persistent_connection_a4ec7b69f34049f6b647a253d3ba548d2}{send\+Request}} (action, body, on\+Response)
+\item 
+\mbox{\hyperlink{class_persistent_connection_a44de6e247235a11467289590d57716df}{get}} (\mbox{\hyperlink{application_8js_a3934419f0f9a2068c705a0013b77fab3}{query}})
+\item 
+\mbox{\hyperlink{class_persistent_connection_a29aff7a1100fb45b73b4f50fcedd3dfd}{listen}} (\mbox{\hyperlink{application_8js_a3934419f0f9a2068c705a0013b77fab3}{query}}, current\+Hash\+Fn, tag, on\+Complete)
+\item 
+\mbox{\hyperlink{class_persistent_connection_a816a94f3e6bf3c81b7987b6a72509ac9}{send\+Get\+\_\+}} (\mbox{\hyperlink{cookie_2index_8js_a0ac000318c33f03e412baff8df5b2513}{index}})
+\item 
+\mbox{\hyperlink{class_persistent_connection_aad1f5a989eb20f07eb59b959f722cdce}{send\+Listen\+\_\+}} (listen\+Spec)
+\item 
+\mbox{\hyperlink{class_persistent_connection_a6fa49f0487ae7f494f723e5067f207fc}{refresh\+Auth\+Token}} (\mbox{\hyperlink{util_2dist_2index_8cjs_8js_a87da3d8264af1c9427605148f20dd9c4}{token}})
+\item 
+\mbox{\hyperlink{class_persistent_connection_a4c563921f12da81aee16a0a90a1334ae}{reduce\+Reconnect\+Delay\+If\+Admin\+Credential\+\_\+}} (\mbox{\hyperlink{firebase-admin_2lib_2credential_2index_8js_aee5dce8f0575eecdffdfa59b49b319e1}{credential}})
+\item 
+\mbox{\hyperlink{class_persistent_connection_a150e9b01636e01efc21ba2d49742a22d}{refresh\+App\+Check\+Token}} (\mbox{\hyperlink{util_2dist_2index_8cjs_8js_a87da3d8264af1c9427605148f20dd9c4}{token}})
+\item 
+\mbox{\hyperlink{class_persistent_connection_a3d910e671627e575f263971ce80631cd}{try\+Auth}} ()
+\item 
+\mbox{\hyperlink{class_persistent_connection_a5ebf44b5bc0c3a612783f63700f8de33}{try\+App\+Check}} ()
+\item 
+\mbox{\hyperlink{class_persistent_connection_a8c09e931dfb3da193dd0b7c1d5864781}{constructor}} (repo\+Info\+\_\+, application\+Id\+\_\+, on\+Data\+Update\+\_\+, on\+Connect\+Status\+\_\+, on\+Server\+Info\+Update\+\_\+, auth\+Token\+Provider\+\_\+, app\+Check\+Token\+Provider\+\_\+, auth\+Override\+\_\+)
+\item 
+\mbox{\hyperlink{class_persistent_connection_a4ec7b69f34049f6b647a253d3ba548d2}{send\+Request}} (action, body, on\+Response)
+\item 
+\mbox{\hyperlink{class_persistent_connection_a44de6e247235a11467289590d57716df}{get}} (\mbox{\hyperlink{application_8js_a3934419f0f9a2068c705a0013b77fab3}{query}})
+\item 
+\mbox{\hyperlink{class_persistent_connection_a29aff7a1100fb45b73b4f50fcedd3dfd}{listen}} (\mbox{\hyperlink{application_8js_a3934419f0f9a2068c705a0013b77fab3}{query}}, current\+Hash\+Fn, tag, on\+Complete)
+\item 
+\mbox{\hyperlink{class_persistent_connection_a816a94f3e6bf3c81b7987b6a72509ac9}{send\+Get\+\_\+}} (\mbox{\hyperlink{cookie_2index_8js_a0ac000318c33f03e412baff8df5b2513}{index}})
+\item 
+\mbox{\hyperlink{class_persistent_connection_aad1f5a989eb20f07eb59b959f722cdce}{send\+Listen\+\_\+}} (listen\+Spec)
+\item 
+\mbox{\hyperlink{class_persistent_connection_a6fa49f0487ae7f494f723e5067f207fc}{refresh\+Auth\+Token}} (\mbox{\hyperlink{util_2dist_2index_8cjs_8js_a87da3d8264af1c9427605148f20dd9c4}{token}})
+\item 
+\mbox{\hyperlink{class_persistent_connection_a4c563921f12da81aee16a0a90a1334ae}{reduce\+Reconnect\+Delay\+If\+Admin\+Credential\+\_\+}} (\mbox{\hyperlink{firebase-admin_2lib_2credential_2index_8js_aee5dce8f0575eecdffdfa59b49b319e1}{credential}})
+\item 
+\mbox{\hyperlink{class_persistent_connection_a150e9b01636e01efc21ba2d49742a22d}{refresh\+App\+Check\+Token}} (\mbox{\hyperlink{util_2dist_2index_8cjs_8js_a87da3d8264af1c9427605148f20dd9c4}{token}})
+\item 
+\mbox{\hyperlink{class_persistent_connection_a3d910e671627e575f263971ce80631cd}{try\+Auth}} ()
+\item 
+\mbox{\hyperlink{class_persistent_connection_a5ebf44b5bc0c3a612783f63700f8de33}{try\+App\+Check}} ()
+\item 
+\mbox{\hyperlink{class_persistent_connection_a8c09e931dfb3da193dd0b7c1d5864781}{constructor}} (repo\+Info\+\_\+, application\+Id\+\_\+, on\+Data\+Update\+\_\+, on\+Connect\+Status\+\_\+, on\+Server\+Info\+Update\+\_\+, auth\+Token\+Provider\+\_\+, app\+Check\+Token\+Provider\+\_\+, auth\+Override\+\_\+)
+\item 
+\mbox{\hyperlink{class_persistent_connection_a4ec7b69f34049f6b647a253d3ba548d2}{send\+Request}} (action, body, on\+Response)
+\item 
+\mbox{\hyperlink{class_persistent_connection_a44de6e247235a11467289590d57716df}{get}} (\mbox{\hyperlink{application_8js_a3934419f0f9a2068c705a0013b77fab3}{query}})
+\item 
+\mbox{\hyperlink{class_persistent_connection_a29aff7a1100fb45b73b4f50fcedd3dfd}{listen}} (\mbox{\hyperlink{application_8js_a3934419f0f9a2068c705a0013b77fab3}{query}}, current\+Hash\+Fn, tag, on\+Complete)
+\item 
+\mbox{\hyperlink{class_persistent_connection_a816a94f3e6bf3c81b7987b6a72509ac9}{send\+Get\+\_\+}} (\mbox{\hyperlink{cookie_2index_8js_a0ac000318c33f03e412baff8df5b2513}{index}})
+\item 
+\mbox{\hyperlink{class_persistent_connection_aad1f5a989eb20f07eb59b959f722cdce}{send\+Listen\+\_\+}} (listen\+Spec)
+\item 
+\mbox{\hyperlink{class_persistent_connection_a6fa49f0487ae7f494f723e5067f207fc}{refresh\+Auth\+Token}} (\mbox{\hyperlink{util_2dist_2index_8cjs_8js_a87da3d8264af1c9427605148f20dd9c4}{token}})
+\item 
+\mbox{\hyperlink{class_persistent_connection_a4c563921f12da81aee16a0a90a1334ae}{reduce\+Reconnect\+Delay\+If\+Admin\+Credential\+\_\+}} (\mbox{\hyperlink{firebase-admin_2lib_2credential_2index_8js_aee5dce8f0575eecdffdfa59b49b319e1}{credential}})
+\item 
+\mbox{\hyperlink{class_persistent_connection_a150e9b01636e01efc21ba2d49742a22d}{refresh\+App\+Check\+Token}} (\mbox{\hyperlink{util_2dist_2index_8cjs_8js_a87da3d8264af1c9427605148f20dd9c4}{token}})
+\item 
+\mbox{\hyperlink{class_persistent_connection_a3d910e671627e575f263971ce80631cd}{try\+Auth}} ()
+\item 
+\mbox{\hyperlink{class_persistent_connection_a5ebf44b5bc0c3a612783f63700f8de33}{try\+App\+Check}} ()
+\item 
+\mbox{\hyperlink{class_server_actions_a4eda59dabc9aa2933bf3c9be9d662f99}{put}} (path\+String, \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}, on\+Complete, \mbox{\hyperlink{pbe_8js_a4e8eeb941272ccb92c8911eb60686dd3}{hash}})
+\item 
+\mbox{\hyperlink{class_server_actions_a4eda59dabc9aa2933bf3c9be9d662f99}{put}} (path\+String, \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}, on\+Complete, \mbox{\hyperlink{pbe_8js_a4e8eeb941272ccb92c8911eb60686dd3}{hash}})
+\item 
+\mbox{\hyperlink{class_server_actions_a4eda59dabc9aa2933bf3c9be9d662f99}{put}} (path\+String, \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}, on\+Complete, \mbox{\hyperlink{pbe_8js_a4e8eeb941272ccb92c8911eb60686dd3}{hash}})
+\item 
+\mbox{\hyperlink{class_server_actions_a0c04b4abab63df81b38cfd73f90d5c63}{merge}} (path\+String, \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}, on\+Complete, \mbox{\hyperlink{pbe_8js_a4e8eeb941272ccb92c8911eb60686dd3}{hash}})
+\item 
+\mbox{\hyperlink{class_server_actions_a0c04b4abab63df81b38cfd73f90d5c63}{merge}} (path\+String, \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}, on\+Complete, \mbox{\hyperlink{pbe_8js_a4e8eeb941272ccb92c8911eb60686dd3}{hash}})
+\item 
+\mbox{\hyperlink{class_server_actions_a0c04b4abab63df81b38cfd73f90d5c63}{merge}} (path\+String, \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}, on\+Complete, \mbox{\hyperlink{pbe_8js_a4e8eeb941272ccb92c8911eb60686dd3}{hash}})
+\item 
+\mbox{\hyperlink{class_server_actions_ae43273caca2f2be3b656352c4568e1c1}{on\+Disconnect\+Put}} (path\+String, \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}, on\+Complete)
+\item 
+\mbox{\hyperlink{class_server_actions_ae43273caca2f2be3b656352c4568e1c1}{on\+Disconnect\+Put}} (path\+String, \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}, on\+Complete)
+\item 
+\mbox{\hyperlink{class_server_actions_ae43273caca2f2be3b656352c4568e1c1}{on\+Disconnect\+Put}} (path\+String, \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}, on\+Complete)
+\item 
+\mbox{\hyperlink{class_server_actions_a74dfdcaef8cfc68735f1d7250c442e42}{on\+Disconnect\+Merge}} (path\+String, \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}, on\+Complete)
+\item 
+\mbox{\hyperlink{class_server_actions_a74dfdcaef8cfc68735f1d7250c442e42}{on\+Disconnect\+Merge}} (path\+String, \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}, on\+Complete)
+\item 
+\mbox{\hyperlink{class_server_actions_a74dfdcaef8cfc68735f1d7250c442e42}{on\+Disconnect\+Merge}} (path\+String, \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}, on\+Complete)
+\item 
+\mbox{\hyperlink{class_server_actions_aee37282fff6f343fdfd8924f31bd488b}{on\+Disconnect\+Cancel}} (path\+String, on\+Complete)
+\item 
+\mbox{\hyperlink{class_server_actions_aee37282fff6f343fdfd8924f31bd488b}{on\+Disconnect\+Cancel}} (path\+String, on\+Complete)
+\item 
+\mbox{\hyperlink{class_server_actions_aee37282fff6f343fdfd8924f31bd488b}{on\+Disconnect\+Cancel}} (path\+String, on\+Complete)
+\item 
+\mbox{\hyperlink{class_server_actions_a9b3ce3c69c8e467c8f9cfa576e97bca6}{report\+Stats}} (\mbox{\hyperlink{teeny-request_2build_2src_2index_8js_a22fda95d4c927f8c49cad1b6623ffab9}{stats}})
+\item 
+\mbox{\hyperlink{class_server_actions_a9b3ce3c69c8e467c8f9cfa576e97bca6}{report\+Stats}} (\mbox{\hyperlink{teeny-request_2build_2src_2index_8js_a22fda95d4c927f8c49cad1b6623ffab9}{stats}})
+\item 
+\mbox{\hyperlink{class_server_actions_a9b3ce3c69c8e467c8f9cfa576e97bca6}{report\+Stats}} (\mbox{\hyperlink{teeny-request_2build_2src_2index_8js_a22fda95d4c927f8c49cad1b6623ffab9}{stats}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_persistent_connection_ad4a0ce12281c0c7480bb730ea8421be0}{warn\+On\+Listen\+Warnings\+\_\+}} (payload, \mbox{\hyperlink{application_8js_a3934419f0f9a2068c705a0013b77fab3}{query}})
+\item 
+static \mbox{\hyperlink{class_persistent_connection_ad4a0ce12281c0c7480bb730ea8421be0}{warn\+On\+Listen\+Warnings\+\_\+}} (payload, \mbox{\hyperlink{application_8js_a3934419f0f9a2068c705a0013b77fab3}{query}})
+\item 
+static \mbox{\hyperlink{class_persistent_connection_ad4a0ce12281c0c7480bb730ea8421be0}{warn\+On\+Listen\+Warnings\+\_\+}} (payload, \mbox{\hyperlink{application_8js_a3934419f0f9a2068c705a0013b77fab3}{query}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Firebase connection. Abstracts wire protocol and handles reconnecting.
+
+NOTE\+: All JSON objects sent to the realtime connection must have property names enclosed in quotes to make sure the closure compiler does not minify them. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_persistent_connection_a8c09e931dfb3da193dd0b7c1d5864781}\index{PersistentConnection@{PersistentConnection}!constructor@{constructor}}
+\index{constructor@{constructor}!PersistentConnection@{PersistentConnection}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_persistent_connection_a8c09e931dfb3da193dd0b7c1d5864781} 
+Persistent\+Connection\+::constructor (\begin{DoxyParamCaption}\item[{}]{repo\+Info\+\_\+}{, }\item[{}]{application\+Id\+\_\+}{, }\item[{}]{on\+Data\+Update\+\_\+}{, }\item[{}]{on\+Connect\+Status\+\_\+}{, }\item[{}]{on\+Server\+Info\+Update\+\_\+}{, }\item[{}]{auth\+Token\+Provider\+\_\+}{, }\item[{}]{app\+Check\+Token\+Provider\+\_\+}{, }\item[{}]{auth\+Override\+\_\+}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em repo\+Info\+\_\+} & -\/ Data about the namespace we are connecting to \\
+\hline
+{\em application\+Id\+\_\+} & -\/ The Firebase App ID for this project \\
+\hline
+{\em on\+Data\+Update\+\_\+} & -\/ \doxylink{class_a}{A} callback for new data from the server \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{class_online_monitor_aa098510d59d34e4c1ec7096b2ddddaf3}{Online\+Monitor\+::get\+Instance()}}, \mbox{\hyperlink{class_visibility_monitor_afc471007bc44f75d489f49688a04a29b}{Visibility\+Monitor\+::get\+Instance()}}, \mbox{\hyperlink{database_2dist_2node-esm_2index_8node_8esm_8js_a9325ea24df2c6d150c24e75233381f57}{log\+Wrapper}}, \mbox{\hyperlink{__get_tag_8js_aa38772edcc6ff00766e19b36ce8073a8}{Map}}, \mbox{\hyperlink{database_2dist_2node-esm_2index_8node_8esm_8js_a92350a3962b0c49a76611716b0157607}{on\+Online\+\_\+()}}, \mbox{\hyperlink{database_2dist_2node-esm_2index_8node_8esm_8js_a9f6caabd8ab4ac9a82f0a8a984691b9f}{on\+Visible\+\_\+()}}, \mbox{\hyperlink{database_2dist_2node-esm_2index_8node_8esm_8js_ad0399826d4046a7b4000d11dfb8921d3}{RECONNECT\+\_\+\+MAX\+\_\+\+DELAY\+\_\+\+DEFAULT}}, \mbox{\hyperlink{database_2dist_2node-esm_2index_8node_8esm_8js_a39c85d11c06a45dec580373fe0bc52d3}{RECONNECT\+\_\+\+MIN\+\_\+\+DELAY}}, and \mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_persistent_connection_a8c09e931dfb3da193dd0b7c1d5864781_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_persistent_connection_a8c09e931dfb3da193dd0b7c1d5864781}\index{PersistentConnection@{PersistentConnection}!constructor@{constructor}}
+\index{constructor@{constructor}!PersistentConnection@{PersistentConnection}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_persistent_connection_a8c09e931dfb3da193dd0b7c1d5864781} 
+Persistent\+Connection\+::constructor (\begin{DoxyParamCaption}\item[{}]{repo\+Info\+\_\+}{, }\item[{}]{application\+Id\+\_\+}{, }\item[{}]{on\+Data\+Update\+\_\+}{, }\item[{}]{on\+Connect\+Status\+\_\+}{, }\item[{}]{on\+Server\+Info\+Update\+\_\+}{, }\item[{}]{auth\+Token\+Provider\+\_\+}{, }\item[{}]{app\+Check\+Token\+Provider\+\_\+}{, }\item[{}]{auth\+Override\+\_\+}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em repo\+Info\+\_\+} & -\/ Data about the namespace we are connecting to \\
+\hline
+{\em application\+Id\+\_\+} & -\/ The Firebase App ID for this project \\
+\hline
+{\em on\+Data\+Update\+\_\+} & -\/ \doxylink{class_a}{A} callback for new data from the server \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{class_online_monitor_aa098510d59d34e4c1ec7096b2ddddaf3}{Online\+Monitor\+::get\+Instance()}}, \mbox{\hyperlink{class_visibility_monitor_afc471007bc44f75d489f49688a04a29b}{Visibility\+Monitor\+::get\+Instance()}}, \mbox{\hyperlink{util_2dist_2index_8cjs_8js_a4212dbd63371624f22d674026bda4e14}{is\+Node\+Sdk}}, \mbox{\hyperlink{database_2dist_2node-esm_2index_8node_8esm_8js_a9325ea24df2c6d150c24e75233381f57}{log\+Wrapper}}, \mbox{\hyperlink{__get_tag_8js_aa38772edcc6ff00766e19b36ce8073a8}{Map}}, \mbox{\hyperlink{database_2dist_2node-esm_2index_8node_8esm_8js_a92350a3962b0c49a76611716b0157607}{on\+Online\+\_\+()}}, \mbox{\hyperlink{database_2dist_2node-esm_2index_8node_8esm_8js_a9f6caabd8ab4ac9a82f0a8a984691b9f}{on\+Visible\+\_\+()}}, \mbox{\hyperlink{database_2dist_2node-esm_2index_8node_8esm_8js_ad0399826d4046a7b4000d11dfb8921d3}{RECONNECT\+\_\+\+MAX\+\_\+\+DELAY\+\_\+\+DEFAULT}}, and \mbox{\hyperlink{database_2dist_2node-esm_2index_8node_8esm_8js_a39c85d11c06a45dec580373fe0bc52d3}{RECONNECT\+\_\+\+MIN\+\_\+\+DELAY}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_persistent_connection_a8c09e931dfb3da193dd0b7c1d5864781_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_persistent_connection_a8c09e931dfb3da193dd0b7c1d5864781}\index{PersistentConnection@{PersistentConnection}!constructor@{constructor}}
+\index{constructor@{constructor}!PersistentConnection@{PersistentConnection}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_persistent_connection_a8c09e931dfb3da193dd0b7c1d5864781} 
+Persistent\+Connection\+::constructor (\begin{DoxyParamCaption}\item[{}]{repo\+Info\+\_\+}{, }\item[{}]{application\+Id\+\_\+}{, }\item[{}]{on\+Data\+Update\+\_\+}{, }\item[{}]{on\+Connect\+Status\+\_\+}{, }\item[{}]{on\+Server\+Info\+Update\+\_\+}{, }\item[{}]{auth\+Token\+Provider\+\_\+}{, }\item[{}]{app\+Check\+Token\+Provider\+\_\+}{, }\item[{}]{auth\+Override\+\_\+}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em repo\+Info\+\_\+} & -\/ Data about the namespace we are connecting to \\
+\hline
+{\em application\+Id\+\_\+} & -\/ The Firebase App ID for this project \\
+\hline
+{\em on\+Data\+Update\+\_\+} & -\/ \doxylink{class_a}{A} callback for new data from the server \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{class_online_monitor_aa098510d59d34e4c1ec7096b2ddddaf3}{Online\+Monitor\+::get\+Instance()}}, \mbox{\hyperlink{class_visibility_monitor_afc471007bc44f75d489f49688a04a29b}{Visibility\+Monitor\+::get\+Instance()}}, \mbox{\hyperlink{util_2dist_2index_8cjs_8js_a4212dbd63371624f22d674026bda4e14}{is\+Node\+Sdk}}, \mbox{\hyperlink{database_2dist_2node-esm_2index_8node_8esm_8js_a9325ea24df2c6d150c24e75233381f57}{log\+Wrapper}}, \mbox{\hyperlink{__get_tag_8js_aa38772edcc6ff00766e19b36ce8073a8}{Map}}, \mbox{\hyperlink{database_2dist_2node-esm_2index_8node_8esm_8js_a92350a3962b0c49a76611716b0157607}{on\+Online\+\_\+()}}, \mbox{\hyperlink{database_2dist_2node-esm_2index_8node_8esm_8js_a9f6caabd8ab4ac9a82f0a8a984691b9f}{on\+Visible\+\_\+()}}, \mbox{\hyperlink{database_2dist_2node-esm_2index_8node_8esm_8js_ad0399826d4046a7b4000d11dfb8921d3}{RECONNECT\+\_\+\+MAX\+\_\+\+DELAY\+\_\+\+DEFAULT}}, and \mbox{\hyperlink{database_2dist_2node-esm_2index_8node_8esm_8js_a39c85d11c06a45dec580373fe0bc52d3}{RECONNECT\+\_\+\+MIN\+\_\+\+DELAY}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_persistent_connection_a8c09e931dfb3da193dd0b7c1d5864781_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_persistent_connection_a44de6e247235a11467289590d57716df}\index{PersistentConnection@{PersistentConnection}!get@{get}}
+\index{get@{get}!PersistentConnection@{PersistentConnection}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_persistent_connection_a44de6e247235a11467289590d57716df} 
+Persistent\+Connection\+::get (\begin{DoxyParamCaption}\item[{}]{query}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{bench_8js_a0dfcfb33f2dbb1cc3eded9bc1ad4aa22}{deferred}}, \mbox{\hyperlink{cookie_2index_8js_a0ac000318c33f03e412baff8df5b2513}{index}}, \mbox{\hyperlink{database_2dist_2node-esm_2index_8node_8esm_8js_ab417bdb538800039deaefb00e84d4b79}{init\+Connection\+\_\+()}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}, \mbox{\hyperlink{ordered-map_8min_8js_ab2752257551c1a01e010ceba5d7ec200}{p}}, \mbox{\hyperlink{ordered-map_8min_8js_ad711cf8878f34f088655a499839c551a}{q}}, \mbox{\hyperlink{application_8js_a3934419f0f9a2068c705a0013b77fab3}{query}}, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}}, and \mbox{\hyperlink{class_persistent_connection_a816a94f3e6bf3c81b7987b6a72509ac9}{send\+Get\+\_\+()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_persistent_connection_a44de6e247235a11467289590d57716df_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_persistent_connection_a44de6e247235a11467289590d57716df}\index{PersistentConnection@{PersistentConnection}!get@{get}}
+\index{get@{get}!PersistentConnection@{PersistentConnection}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_persistent_connection_a44de6e247235a11467289590d57716df} 
+Persistent\+Connection\+::get (\begin{DoxyParamCaption}\item[{}]{query}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{util_2dist_2index_8cjs_8js_a20735f727286fd90d53f85b3d0648fa6}{Deferred}}, \mbox{\hyperlink{bench_8js_a0dfcfb33f2dbb1cc3eded9bc1ad4aa22}{deferred}}, \mbox{\hyperlink{cookie_2index_8js_a0ac000318c33f03e412baff8df5b2513}{index}}, \mbox{\hyperlink{database_2dist_2node-esm_2index_8node_8esm_8js_ab417bdb538800039deaefb00e84d4b79}{init\+Connection\+\_\+()}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}, \mbox{\hyperlink{ordered-map_8min_8js_ab2752257551c1a01e010ceba5d7ec200}{p}}, \mbox{\hyperlink{ordered-map_8min_8js_ad711cf8878f34f088655a499839c551a}{q}}, \mbox{\hyperlink{application_8js_a3934419f0f9a2068c705a0013b77fab3}{query}}, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}}, and \mbox{\hyperlink{class_persistent_connection_a816a94f3e6bf3c81b7987b6a72509ac9}{send\+Get\+\_\+()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_persistent_connection_a44de6e247235a11467289590d57716df_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_persistent_connection_a44de6e247235a11467289590d57716df}\index{PersistentConnection@{PersistentConnection}!get@{get}}
+\index{get@{get}!PersistentConnection@{PersistentConnection}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_persistent_connection_a44de6e247235a11467289590d57716df} 
+Persistent\+Connection\+::get (\begin{DoxyParamCaption}\item[{}]{query}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{util_2dist_2index_8cjs_8js_a20735f727286fd90d53f85b3d0648fa6}{Deferred}}, \mbox{\hyperlink{bench_8js_a0dfcfb33f2dbb1cc3eded9bc1ad4aa22}{deferred}}, \mbox{\hyperlink{cookie_2index_8js_a0ac000318c33f03e412baff8df5b2513}{index}}, \mbox{\hyperlink{database_2dist_2node-esm_2index_8node_8esm_8js_ab417bdb538800039deaefb00e84d4b79}{init\+Connection\+\_\+()}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}, \mbox{\hyperlink{ordered-map_8min_8js_ab2752257551c1a01e010ceba5d7ec200}{p}}, \mbox{\hyperlink{ordered-map_8min_8js_ad711cf8878f34f088655a499839c551a}{q}}, \mbox{\hyperlink{application_8js_a3934419f0f9a2068c705a0013b77fab3}{query}}, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}}, and \mbox{\hyperlink{class_persistent_connection_a816a94f3e6bf3c81b7987b6a72509ac9}{send\+Get\+\_\+()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_persistent_connection_a44de6e247235a11467289590d57716df_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_persistent_connection_a29aff7a1100fb45b73b4f50fcedd3dfd}\index{PersistentConnection@{PersistentConnection}!listen@{listen}}
+\index{listen@{listen}!PersistentConnection@{PersistentConnection}}
+\doxysubsubsection{\texorpdfstring{listen()}{listen()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_persistent_connection_a29aff7a1100fb45b73b4f50fcedd3dfd} 
+Persistent\+Connection\+::listen (\begin{DoxyParamCaption}\item[{}]{query}{, }\item[{}]{current\+Hash\+Fn}{, }\item[{}]{tag}{, }\item[{}]{on\+Complete}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{database_2dist_2node-esm_2index_8node_8esm_8js_ab417bdb538800039deaefb00e84d4b79}{init\+Connection\+\_\+()}}, \mbox{\hyperlink{application_8js_a57e630eaf5f2d94b72288e1cef6edc49}{listen}}, \mbox{\hyperlink{__get_tag_8js_aa38772edcc6ff00766e19b36ce8073a8}{Map}}, \mbox{\hyperlink{cjs_2src_2bucket_8js_a1fdc7709faf62dce60620fb3f9d3453c}{path}}, \mbox{\hyperlink{application_8js_a3934419f0f9a2068c705a0013b77fab3}{query}}, \mbox{\hyperlink{class_persistent_connection_aad1f5a989eb20f07eb59b959f722cdce}{send\+Listen\+\_\+()}}, and \mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_persistent_connection_a29aff7a1100fb45b73b4f50fcedd3dfd_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_persistent_connection_a29aff7a1100fb45b73b4f50fcedd3dfd}\index{PersistentConnection@{PersistentConnection}!listen@{listen}}
+\index{listen@{listen}!PersistentConnection@{PersistentConnection}}
+\doxysubsubsection{\texorpdfstring{listen()}{listen()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_persistent_connection_a29aff7a1100fb45b73b4f50fcedd3dfd} 
+Persistent\+Connection\+::listen (\begin{DoxyParamCaption}\item[{}]{query}{, }\item[{}]{current\+Hash\+Fn}{, }\item[{}]{tag}{, }\item[{}]{on\+Complete}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a445382df6f5596f104fa45c8dc67fa73}{assert}}, \mbox{\hyperlink{database_2dist_2node-esm_2index_8node_8esm_8js_ab417bdb538800039deaefb00e84d4b79}{init\+Connection\+\_\+()}}, \mbox{\hyperlink{application_8js_a57e630eaf5f2d94b72288e1cef6edc49}{listen}}, \mbox{\hyperlink{__get_tag_8js_aa38772edcc6ff00766e19b36ce8073a8}{Map}}, \mbox{\hyperlink{cjs_2src_2bucket_8js_a1fdc7709faf62dce60620fb3f9d3453c}{path}}, \mbox{\hyperlink{application_8js_a3934419f0f9a2068c705a0013b77fab3}{query}}, and \mbox{\hyperlink{class_persistent_connection_aad1f5a989eb20f07eb59b959f722cdce}{send\+Listen\+\_\+()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_persistent_connection_a29aff7a1100fb45b73b4f50fcedd3dfd_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_persistent_connection_a29aff7a1100fb45b73b4f50fcedd3dfd}\index{PersistentConnection@{PersistentConnection}!listen@{listen}}
+\index{listen@{listen}!PersistentConnection@{PersistentConnection}}
+\doxysubsubsection{\texorpdfstring{listen()}{listen()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_persistent_connection_a29aff7a1100fb45b73b4f50fcedd3dfd} 
+Persistent\+Connection\+::listen (\begin{DoxyParamCaption}\item[{}]{query}{, }\item[{}]{current\+Hash\+Fn}{, }\item[{}]{tag}{, }\item[{}]{on\+Complete}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a445382df6f5596f104fa45c8dc67fa73}{assert}}, \mbox{\hyperlink{database_2dist_2node-esm_2index_8node_8esm_8js_ab417bdb538800039deaefb00e84d4b79}{init\+Connection\+\_\+()}}, \mbox{\hyperlink{application_8js_a57e630eaf5f2d94b72288e1cef6edc49}{listen}}, \mbox{\hyperlink{__get_tag_8js_aa38772edcc6ff00766e19b36ce8073a8}{Map}}, \mbox{\hyperlink{cjs_2src_2bucket_8js_a1fdc7709faf62dce60620fb3f9d3453c}{path}}, \mbox{\hyperlink{application_8js_a3934419f0f9a2068c705a0013b77fab3}{query}}, and \mbox{\hyperlink{class_persistent_connection_aad1f5a989eb20f07eb59b959f722cdce}{send\+Listen\+\_\+()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_persistent_connection_a29aff7a1100fb45b73b4f50fcedd3dfd_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_server_actions_a0c04b4abab63df81b38cfd73f90d5c63}\index{PersistentConnection@{PersistentConnection}!merge@{merge}}
+\index{merge@{merge}!PersistentConnection@{PersistentConnection}}
+\doxysubsubsection{\texorpdfstring{merge()}{merge()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_server_actions_a0c04b4abab63df81b38cfd73f90d5c63} 
+Server\+Actions\+::merge (\begin{DoxyParamCaption}\item[{}]{path\+String}{, }\item[{}]{data}{, }\item[{}]{on\+Complete}{, }\item[{}]{hash}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+\Hypertarget{class_server_actions_a0c04b4abab63df81b38cfd73f90d5c63}\index{PersistentConnection@{PersistentConnection}!merge@{merge}}
+\index{merge@{merge}!PersistentConnection@{PersistentConnection}}
+\doxysubsubsection{\texorpdfstring{merge()}{merge()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_server_actions_a0c04b4abab63df81b38cfd73f90d5c63} 
+Server\+Actions\+::merge (\begin{DoxyParamCaption}\item[{}]{path\+String}{, }\item[{}]{data}{, }\item[{}]{on\+Complete}{, }\item[{}]{hash}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+\Hypertarget{class_server_actions_a0c04b4abab63df81b38cfd73f90d5c63}\index{PersistentConnection@{PersistentConnection}!merge@{merge}}
+\index{merge@{merge}!PersistentConnection@{PersistentConnection}}
+\doxysubsubsection{\texorpdfstring{merge()}{merge()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_server_actions_a0c04b4abab63df81b38cfd73f90d5c63} 
+Server\+Actions\+::merge (\begin{DoxyParamCaption}\item[{}]{path\+String}{, }\item[{}]{data}{, }\item[{}]{on\+Complete}{, }\item[{}]{hash}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+\Hypertarget{class_server_actions_aee37282fff6f343fdfd8924f31bd488b}\index{PersistentConnection@{PersistentConnection}!onDisconnectCancel@{onDisconnectCancel}}
+\index{onDisconnectCancel@{onDisconnectCancel}!PersistentConnection@{PersistentConnection}}
+\doxysubsubsection{\texorpdfstring{onDisconnectCancel()}{onDisconnectCancel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_server_actions_aee37282fff6f343fdfd8924f31bd488b} 
+Server\+Actions\+::on\+Disconnect\+Cancel (\begin{DoxyParamCaption}\item[{}]{path\+String}{, }\item[{}]{on\+Complete}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+\Hypertarget{class_server_actions_aee37282fff6f343fdfd8924f31bd488b}\index{PersistentConnection@{PersistentConnection}!onDisconnectCancel@{onDisconnectCancel}}
+\index{onDisconnectCancel@{onDisconnectCancel}!PersistentConnection@{PersistentConnection}}
+\doxysubsubsection{\texorpdfstring{onDisconnectCancel()}{onDisconnectCancel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_server_actions_aee37282fff6f343fdfd8924f31bd488b} 
+Server\+Actions\+::on\+Disconnect\+Cancel (\begin{DoxyParamCaption}\item[{}]{path\+String}{, }\item[{}]{on\+Complete}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+\Hypertarget{class_server_actions_aee37282fff6f343fdfd8924f31bd488b}\index{PersistentConnection@{PersistentConnection}!onDisconnectCancel@{onDisconnectCancel}}
+\index{onDisconnectCancel@{onDisconnectCancel}!PersistentConnection@{PersistentConnection}}
+\doxysubsubsection{\texorpdfstring{onDisconnectCancel()}{onDisconnectCancel()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_server_actions_aee37282fff6f343fdfd8924f31bd488b} 
+Server\+Actions\+::on\+Disconnect\+Cancel (\begin{DoxyParamCaption}\item[{}]{path\+String}{, }\item[{}]{on\+Complete}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+\Hypertarget{class_server_actions_a74dfdcaef8cfc68735f1d7250c442e42}\index{PersistentConnection@{PersistentConnection}!onDisconnectMerge@{onDisconnectMerge}}
+\index{onDisconnectMerge@{onDisconnectMerge}!PersistentConnection@{PersistentConnection}}
+\doxysubsubsection{\texorpdfstring{onDisconnectMerge()}{onDisconnectMerge()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_server_actions_a74dfdcaef8cfc68735f1d7250c442e42} 
+Server\+Actions\+::on\+Disconnect\+Merge (\begin{DoxyParamCaption}\item[{}]{path\+String}{, }\item[{}]{data}{, }\item[{}]{on\+Complete}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+\Hypertarget{class_server_actions_a74dfdcaef8cfc68735f1d7250c442e42}\index{PersistentConnection@{PersistentConnection}!onDisconnectMerge@{onDisconnectMerge}}
+\index{onDisconnectMerge@{onDisconnectMerge}!PersistentConnection@{PersistentConnection}}
+\doxysubsubsection{\texorpdfstring{onDisconnectMerge()}{onDisconnectMerge()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_server_actions_a74dfdcaef8cfc68735f1d7250c442e42} 
+Server\+Actions\+::on\+Disconnect\+Merge (\begin{DoxyParamCaption}\item[{}]{path\+String}{, }\item[{}]{data}{, }\item[{}]{on\+Complete}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+\Hypertarget{class_server_actions_a74dfdcaef8cfc68735f1d7250c442e42}\index{PersistentConnection@{PersistentConnection}!onDisconnectMerge@{onDisconnectMerge}}
+\index{onDisconnectMerge@{onDisconnectMerge}!PersistentConnection@{PersistentConnection}}
+\doxysubsubsection{\texorpdfstring{onDisconnectMerge()}{onDisconnectMerge()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_server_actions_a74dfdcaef8cfc68735f1d7250c442e42} 
+Server\+Actions\+::on\+Disconnect\+Merge (\begin{DoxyParamCaption}\item[{}]{path\+String}{, }\item[{}]{data}{, }\item[{}]{on\+Complete}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+\Hypertarget{class_server_actions_ae43273caca2f2be3b656352c4568e1c1}\index{PersistentConnection@{PersistentConnection}!onDisconnectPut@{onDisconnectPut}}
+\index{onDisconnectPut@{onDisconnectPut}!PersistentConnection@{PersistentConnection}}
+\doxysubsubsection{\texorpdfstring{onDisconnectPut()}{onDisconnectPut()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_server_actions_ae43273caca2f2be3b656352c4568e1c1} 
+Server\+Actions\+::on\+Disconnect\+Put (\begin{DoxyParamCaption}\item[{}]{path\+String}{, }\item[{}]{data}{, }\item[{}]{on\+Complete}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+\Hypertarget{class_server_actions_ae43273caca2f2be3b656352c4568e1c1}\index{PersistentConnection@{PersistentConnection}!onDisconnectPut@{onDisconnectPut}}
+\index{onDisconnectPut@{onDisconnectPut}!PersistentConnection@{PersistentConnection}}
+\doxysubsubsection{\texorpdfstring{onDisconnectPut()}{onDisconnectPut()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_server_actions_ae43273caca2f2be3b656352c4568e1c1} 
+Server\+Actions\+::on\+Disconnect\+Put (\begin{DoxyParamCaption}\item[{}]{path\+String}{, }\item[{}]{data}{, }\item[{}]{on\+Complete}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+\Hypertarget{class_server_actions_ae43273caca2f2be3b656352c4568e1c1}\index{PersistentConnection@{PersistentConnection}!onDisconnectPut@{onDisconnectPut}}
+\index{onDisconnectPut@{onDisconnectPut}!PersistentConnection@{PersistentConnection}}
+\doxysubsubsection{\texorpdfstring{onDisconnectPut()}{onDisconnectPut()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_server_actions_ae43273caca2f2be3b656352c4568e1c1} 
+Server\+Actions\+::on\+Disconnect\+Put (\begin{DoxyParamCaption}\item[{}]{path\+String}{, }\item[{}]{data}{, }\item[{}]{on\+Complete}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+\Hypertarget{class_server_actions_a4eda59dabc9aa2933bf3c9be9d662f99}\index{PersistentConnection@{PersistentConnection}!put@{put}}
+\index{put@{put}!PersistentConnection@{PersistentConnection}}
+\doxysubsubsection{\texorpdfstring{put()}{put()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_server_actions_a4eda59dabc9aa2933bf3c9be9d662f99} 
+Server\+Actions\+::put (\begin{DoxyParamCaption}\item[{}]{path\+String}{, }\item[{}]{data}{, }\item[{}]{on\+Complete}{, }\item[{}]{hash}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+\Hypertarget{class_server_actions_a4eda59dabc9aa2933bf3c9be9d662f99}\index{PersistentConnection@{PersistentConnection}!put@{put}}
+\index{put@{put}!PersistentConnection@{PersistentConnection}}
+\doxysubsubsection{\texorpdfstring{put()}{put()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_server_actions_a4eda59dabc9aa2933bf3c9be9d662f99} 
+Server\+Actions\+::put (\begin{DoxyParamCaption}\item[{}]{path\+String}{, }\item[{}]{data}{, }\item[{}]{on\+Complete}{, }\item[{}]{hash}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+\Hypertarget{class_server_actions_a4eda59dabc9aa2933bf3c9be9d662f99}\index{PersistentConnection@{PersistentConnection}!put@{put}}
+\index{put@{put}!PersistentConnection@{PersistentConnection}}
+\doxysubsubsection{\texorpdfstring{put()}{put()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_server_actions_a4eda59dabc9aa2933bf3c9be9d662f99} 
+Server\+Actions\+::put (\begin{DoxyParamCaption}\item[{}]{path\+String}{, }\item[{}]{data}{, }\item[{}]{on\+Complete}{, }\item[{}]{hash}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+\Hypertarget{class_persistent_connection_a4c563921f12da81aee16a0a90a1334ae}\index{PersistentConnection@{PersistentConnection}!reduceReconnectDelayIfAdminCredential\_@{reduceReconnectDelayIfAdminCredential\_}}
+\index{reduceReconnectDelayIfAdminCredential\_@{reduceReconnectDelayIfAdminCredential\_}!PersistentConnection@{PersistentConnection}}
+\doxysubsubsection{\texorpdfstring{reduceReconnectDelayIfAdminCredential\_()}{reduceReconnectDelayIfAdminCredential\_()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_persistent_connection_a4c563921f12da81aee16a0a90a1334ae} 
+Persistent\+Connection\+::reduce\+Reconnect\+Delay\+If\+Admin\+Credential\+\_\+ (\begin{DoxyParamCaption}\item[{}]{credential}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{firebase-admin_2lib_2credential_2index_8js_aee5dce8f0575eecdffdfa59b49b319e1}{credential}}, \mbox{\hyperlink{database_2dist_2node-esm_2index_8node_8esm_8js_a1aa623bc6cc744e71825e09cb8f13d04}{RECONNECT\+\_\+\+MAX\+\_\+\+DELAY\+\_\+\+FOR\+\_\+\+ADMINS}}, and \mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_persistent_connection_a4c563921f12da81aee16a0a90a1334ae_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_persistent_connection_a4c563921f12da81aee16a0a90a1334ae}\index{PersistentConnection@{PersistentConnection}!reduceReconnectDelayIfAdminCredential\_@{reduceReconnectDelayIfAdminCredential\_}}
+\index{reduceReconnectDelayIfAdminCredential\_@{reduceReconnectDelayIfAdminCredential\_}!PersistentConnection@{PersistentConnection}}
+\doxysubsubsection{\texorpdfstring{reduceReconnectDelayIfAdminCredential\_()}{reduceReconnectDelayIfAdminCredential\_()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_persistent_connection_a4c563921f12da81aee16a0a90a1334ae} 
+Persistent\+Connection\+::reduce\+Reconnect\+Delay\+If\+Admin\+Credential\+\_\+ (\begin{DoxyParamCaption}\item[{}]{credential}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{firebase-admin_2lib_2credential_2index_8js_aee5dce8f0575eecdffdfa59b49b319e1}{credential}}, \mbox{\hyperlink{util_2dist_2index_8cjs_8js_aeb71731ec58e6a0e7554993d8442b53d}{is\+Admin}}, and \mbox{\hyperlink{database_2dist_2node-esm_2index_8node_8esm_8js_a1aa623bc6cc744e71825e09cb8f13d04}{RECONNECT\+\_\+\+MAX\+\_\+\+DELAY\+\_\+\+FOR\+\_\+\+ADMINS}}.
+
+\Hypertarget{class_persistent_connection_a4c563921f12da81aee16a0a90a1334ae}\index{PersistentConnection@{PersistentConnection}!reduceReconnectDelayIfAdminCredential\_@{reduceReconnectDelayIfAdminCredential\_}}
+\index{reduceReconnectDelayIfAdminCredential\_@{reduceReconnectDelayIfAdminCredential\_}!PersistentConnection@{PersistentConnection}}
+\doxysubsubsection{\texorpdfstring{reduceReconnectDelayIfAdminCredential\_()}{reduceReconnectDelayIfAdminCredential\_()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_persistent_connection_a4c563921f12da81aee16a0a90a1334ae} 
+Persistent\+Connection\+::reduce\+Reconnect\+Delay\+If\+Admin\+Credential\+\_\+ (\begin{DoxyParamCaption}\item[{}]{credential}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{firebase-admin_2lib_2credential_2index_8js_aee5dce8f0575eecdffdfa59b49b319e1}{credential}}, \mbox{\hyperlink{util_2dist_2index_8cjs_8js_aeb71731ec58e6a0e7554993d8442b53d}{is\+Admin}}, and \mbox{\hyperlink{database_2dist_2node-esm_2index_8node_8esm_8js_a1aa623bc6cc744e71825e09cb8f13d04}{RECONNECT\+\_\+\+MAX\+\_\+\+DELAY\+\_\+\+FOR\+\_\+\+ADMINS}}.
+
+\Hypertarget{class_persistent_connection_a150e9b01636e01efc21ba2d49742a22d}\index{PersistentConnection@{PersistentConnection}!refreshAppCheckToken@{refreshAppCheckToken}}
+\index{refreshAppCheckToken@{refreshAppCheckToken}!PersistentConnection@{PersistentConnection}}
+\doxysubsubsection{\texorpdfstring{refreshAppCheckToken()}{refreshAppCheckToken()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_persistent_connection_a150e9b01636e01efc21ba2d49742a22d} 
+Persistent\+Connection\+::refresh\+App\+Check\+Token (\begin{DoxyParamCaption}\item[{}]{token}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{class_persistent_connection_a4ec7b69f34049f6b647a253d3ba548d2}{send\+Request()}}, \mbox{\hyperlink{util_2dist_2index_8cjs_8js_a87da3d8264af1c9427605148f20dd9c4}{token}}, and \mbox{\hyperlink{class_persistent_connection_a5ebf44b5bc0c3a612783f63700f8de33}{try\+App\+Check()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_persistent_connection_a150e9b01636e01efc21ba2d49742a22d_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_persistent_connection_a150e9b01636e01efc21ba2d49742a22d}\index{PersistentConnection@{PersistentConnection}!refreshAppCheckToken@{refreshAppCheckToken}}
+\index{refreshAppCheckToken@{refreshAppCheckToken}!PersistentConnection@{PersistentConnection}}
+\doxysubsubsection{\texorpdfstring{refreshAppCheckToken()}{refreshAppCheckToken()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_persistent_connection_a150e9b01636e01efc21ba2d49742a22d} 
+Persistent\+Connection\+::refresh\+App\+Check\+Token (\begin{DoxyParamCaption}\item[{}]{token}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{class_persistent_connection_a4ec7b69f34049f6b647a253d3ba548d2}{send\+Request()}}, \mbox{\hyperlink{util_2dist_2index_8cjs_8js_a87da3d8264af1c9427605148f20dd9c4}{token}}, and \mbox{\hyperlink{class_persistent_connection_a5ebf44b5bc0c3a612783f63700f8de33}{try\+App\+Check()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_persistent_connection_a150e9b01636e01efc21ba2d49742a22d_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_persistent_connection_a150e9b01636e01efc21ba2d49742a22d}\index{PersistentConnection@{PersistentConnection}!refreshAppCheckToken@{refreshAppCheckToken}}
+\index{refreshAppCheckToken@{refreshAppCheckToken}!PersistentConnection@{PersistentConnection}}
+\doxysubsubsection{\texorpdfstring{refreshAppCheckToken()}{refreshAppCheckToken()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_persistent_connection_a150e9b01636e01efc21ba2d49742a22d} 
+Persistent\+Connection\+::refresh\+App\+Check\+Token (\begin{DoxyParamCaption}\item[{}]{token}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{class_persistent_connection_a4ec7b69f34049f6b647a253d3ba548d2}{send\+Request()}}, \mbox{\hyperlink{util_2dist_2index_8cjs_8js_a87da3d8264af1c9427605148f20dd9c4}{token}}, and \mbox{\hyperlink{class_persistent_connection_a5ebf44b5bc0c3a612783f63700f8de33}{try\+App\+Check()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_persistent_connection_a150e9b01636e01efc21ba2d49742a22d_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_persistent_connection_a6fa49f0487ae7f494f723e5067f207fc}\index{PersistentConnection@{PersistentConnection}!refreshAuthToken@{refreshAuthToken}}
+\index{refreshAuthToken@{refreshAuthToken}!PersistentConnection@{PersistentConnection}}
+\doxysubsubsection{\texorpdfstring{refreshAuthToken()}{refreshAuthToken()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_persistent_connection_a6fa49f0487ae7f494f723e5067f207fc} 
+Persistent\+Connection\+::refresh\+Auth\+Token (\begin{DoxyParamCaption}\item[{}]{token}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{class_persistent_connection_a4c563921f12da81aee16a0a90a1334ae}{reduce\+Reconnect\+Delay\+If\+Admin\+Credential\+\_\+()}}, \mbox{\hyperlink{class_persistent_connection_a4ec7b69f34049f6b647a253d3ba548d2}{send\+Request()}}, \mbox{\hyperlink{util_2dist_2index_8cjs_8js_a87da3d8264af1c9427605148f20dd9c4}{token}}, and \mbox{\hyperlink{class_persistent_connection_a3d910e671627e575f263971ce80631cd}{try\+Auth()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_persistent_connection_a6fa49f0487ae7f494f723e5067f207fc_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_persistent_connection_a6fa49f0487ae7f494f723e5067f207fc}\index{PersistentConnection@{PersistentConnection}!refreshAuthToken@{refreshAuthToken}}
+\index{refreshAuthToken@{refreshAuthToken}!PersistentConnection@{PersistentConnection}}
+\doxysubsubsection{\texorpdfstring{refreshAuthToken()}{refreshAuthToken()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_persistent_connection_a6fa49f0487ae7f494f723e5067f207fc} 
+Persistent\+Connection\+::refresh\+Auth\+Token (\begin{DoxyParamCaption}\item[{}]{token}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{class_persistent_connection_a4c563921f12da81aee16a0a90a1334ae}{reduce\+Reconnect\+Delay\+If\+Admin\+Credential\+\_\+()}}, \mbox{\hyperlink{class_persistent_connection_a4ec7b69f34049f6b647a253d3ba548d2}{send\+Request()}}, \mbox{\hyperlink{util_2dist_2index_8cjs_8js_a87da3d8264af1c9427605148f20dd9c4}{token}}, and \mbox{\hyperlink{class_persistent_connection_a3d910e671627e575f263971ce80631cd}{try\+Auth()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_persistent_connection_a6fa49f0487ae7f494f723e5067f207fc_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_persistent_connection_a6fa49f0487ae7f494f723e5067f207fc}\index{PersistentConnection@{PersistentConnection}!refreshAuthToken@{refreshAuthToken}}
+\index{refreshAuthToken@{refreshAuthToken}!PersistentConnection@{PersistentConnection}}
+\doxysubsubsection{\texorpdfstring{refreshAuthToken()}{refreshAuthToken()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_persistent_connection_a6fa49f0487ae7f494f723e5067f207fc} 
+Persistent\+Connection\+::refresh\+Auth\+Token (\begin{DoxyParamCaption}\item[{}]{token}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{class_persistent_connection_a4c563921f12da81aee16a0a90a1334ae}{reduce\+Reconnect\+Delay\+If\+Admin\+Credential\+\_\+()}}, \mbox{\hyperlink{class_persistent_connection_a4ec7b69f34049f6b647a253d3ba548d2}{send\+Request()}}, \mbox{\hyperlink{util_2dist_2index_8cjs_8js_a87da3d8264af1c9427605148f20dd9c4}{token}}, and \mbox{\hyperlink{class_persistent_connection_a3d910e671627e575f263971ce80631cd}{try\+Auth()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_persistent_connection_a6fa49f0487ae7f494f723e5067f207fc_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_server_actions_a9b3ce3c69c8e467c8f9cfa576e97bca6}\index{PersistentConnection@{PersistentConnection}!reportStats@{reportStats}}
+\index{reportStats@{reportStats}!PersistentConnection@{PersistentConnection}}
+\doxysubsubsection{\texorpdfstring{reportStats()}{reportStats()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_server_actions_a9b3ce3c69c8e467c8f9cfa576e97bca6} 
+Server\+Actions\+::report\+Stats (\begin{DoxyParamCaption}\item[{}]{stats}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_server_actions_a9b3ce3c69c8e467c8f9cfa576e97bca6_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_server_actions_a9b3ce3c69c8e467c8f9cfa576e97bca6}\index{PersistentConnection@{PersistentConnection}!reportStats@{reportStats}}
+\index{reportStats@{reportStats}!PersistentConnection@{PersistentConnection}}
+\doxysubsubsection{\texorpdfstring{reportStats()}{reportStats()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_server_actions_a9b3ce3c69c8e467c8f9cfa576e97bca6} 
+Server\+Actions\+::report\+Stats (\begin{DoxyParamCaption}\item[{}]{stats}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+\Hypertarget{class_server_actions_a9b3ce3c69c8e467c8f9cfa576e97bca6}\index{PersistentConnection@{PersistentConnection}!reportStats@{reportStats}}
+\index{reportStats@{reportStats}!PersistentConnection@{PersistentConnection}}
+\doxysubsubsection{\texorpdfstring{reportStats()}{reportStats()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_server_actions_a9b3ce3c69c8e467c8f9cfa576e97bca6} 
+Server\+Actions\+::report\+Stats (\begin{DoxyParamCaption}\item[{}]{stats}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [inherited]}}
+
+\Hypertarget{class_persistent_connection_a816a94f3e6bf3c81b7987b6a72509ac9}\index{PersistentConnection@{PersistentConnection}!sendGet\_@{sendGet\_}}
+\index{sendGet\_@{sendGet\_}!PersistentConnection@{PersistentConnection}}
+\doxysubsubsection{\texorpdfstring{sendGet\_()}{sendGet\_()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_persistent_connection_a816a94f3e6bf3c81b7987b6a72509ac9} 
+Persistent\+Connection\+::send\+Get\+\_\+ (\begin{DoxyParamCaption}\item[{}]{index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{cookie_2index_8js_a0ac000318c33f03e412baff8df5b2513}{index}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}}, and \mbox{\hyperlink{class_persistent_connection_a4ec7b69f34049f6b647a253d3ba548d2}{send\+Request()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{class_persistent_connection_a816a94f3e6bf3c81b7987b6a72509ac9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_persistent_connection_a816a94f3e6bf3c81b7987b6a72509ac9_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_persistent_connection_a816a94f3e6bf3c81b7987b6a72509ac9}\index{PersistentConnection@{PersistentConnection}!sendGet\_@{sendGet\_}}
+\index{sendGet\_@{sendGet\_}!PersistentConnection@{PersistentConnection}}
+\doxysubsubsection{\texorpdfstring{sendGet\_()}{sendGet\_()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_persistent_connection_a816a94f3e6bf3c81b7987b6a72509ac9} 
+Persistent\+Connection\+::send\+Get\+\_\+ (\begin{DoxyParamCaption}\item[{}]{index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{cookie_2index_8js_a0ac000318c33f03e412baff8df5b2513}{index}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}}, and \mbox{\hyperlink{class_persistent_connection_a4ec7b69f34049f6b647a253d3ba548d2}{send\+Request()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{class_persistent_connection_a816a94f3e6bf3c81b7987b6a72509ac9_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_persistent_connection_a816a94f3e6bf3c81b7987b6a72509ac9}\index{PersistentConnection@{PersistentConnection}!sendGet\_@{sendGet\_}}
+\index{sendGet\_@{sendGet\_}!PersistentConnection@{PersistentConnection}}
+\doxysubsubsection{\texorpdfstring{sendGet\_()}{sendGet\_()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_persistent_connection_a816a94f3e6bf3c81b7987b6a72509ac9} 
+Persistent\+Connection\+::send\+Get\+\_\+ (\begin{DoxyParamCaption}\item[{}]{index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{cookie_2index_8js_a0ac000318c33f03e412baff8df5b2513}{index}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}}, and \mbox{\hyperlink{class_persistent_connection_a4ec7b69f34049f6b647a253d3ba548d2}{send\+Request()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{class_persistent_connection_a816a94f3e6bf3c81b7987b6a72509ac9_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_persistent_connection_aad1f5a989eb20f07eb59b959f722cdce}\index{PersistentConnection@{PersistentConnection}!sendListen\_@{sendListen\_}}
+\index{sendListen\_@{sendListen\_}!PersistentConnection@{PersistentConnection}}
+\doxysubsubsection{\texorpdfstring{sendListen\_()}{sendListen\_()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_persistent_connection_aad1f5a989eb20f07eb59b959f722cdce} 
+Persistent\+Connection\+::send\+Listen\+\_\+ (\begin{DoxyParamCaption}\item[{}]{listen\+Spec}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}, \mbox{\hyperlink{ordered-map_8min_8js_ab2752257551c1a01e010ceba5d7ec200}{p}}, \mbox{\hyperlink{application_8js_a3934419f0f9a2068c705a0013b77fab3}{query}}, \mbox{\hyperlink{database_2dist_2node-esm_2index_8node_8esm_8js_aadde7de7b59b9fdcf2241fd3e587cff1}{remove\+Listen\+\_\+()}}, \mbox{\hyperlink{agent-base_2dist_2helpers_8js_a960c3c3c7bce40c2aa54b029b3dbb9c8}{req}}, \mbox{\hyperlink{class_persistent_connection_a4ec7b69f34049f6b647a253d3ba548d2}{send\+Request()}}, \mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2index_8js_aac9dfada3e10bfb087ebb0a95f284488}{status}}, and \mbox{\hyperlink{class_persistent_connection_ad4a0ce12281c0c7480bb730ea8421be0}{warn\+On\+Listen\+Warnings\+\_\+()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_persistent_connection_aad1f5a989eb20f07eb59b959f722cdce_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{class_persistent_connection_aad1f5a989eb20f07eb59b959f722cdce_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_persistent_connection_aad1f5a989eb20f07eb59b959f722cdce}\index{PersistentConnection@{PersistentConnection}!sendListen\_@{sendListen\_}}
+\index{sendListen\_@{sendListen\_}!PersistentConnection@{PersistentConnection}}
+\doxysubsubsection{\texorpdfstring{sendListen\_()}{sendListen\_()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_persistent_connection_aad1f5a989eb20f07eb59b959f722cdce} 
+Persistent\+Connection\+::send\+Listen\+\_\+ (\begin{DoxyParamCaption}\item[{}]{listen\+Spec}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}, \mbox{\hyperlink{ordered-map_8min_8js_ab2752257551c1a01e010ceba5d7ec200}{p}}, \mbox{\hyperlink{application_8js_a3934419f0f9a2068c705a0013b77fab3}{query}}, \mbox{\hyperlink{database_2dist_2node-esm_2index_8node_8esm_8js_aadde7de7b59b9fdcf2241fd3e587cff1}{remove\+Listen\+\_\+()}}, \mbox{\hyperlink{agent-base_2dist_2helpers_8js_a960c3c3c7bce40c2aa54b029b3dbb9c8}{req}}, \mbox{\hyperlink{class_persistent_connection_a4ec7b69f34049f6b647a253d3ba548d2}{send\+Request()}}, \mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2index_8js_aac9dfada3e10bfb087ebb0a95f284488}{status}}, and \mbox{\hyperlink{class_persistent_connection_ad4a0ce12281c0c7480bb730ea8421be0}{warn\+On\+Listen\+Warnings\+\_\+()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_persistent_connection_aad1f5a989eb20f07eb59b959f722cdce_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_persistent_connection_aad1f5a989eb20f07eb59b959f722cdce}\index{PersistentConnection@{PersistentConnection}!sendListen\_@{sendListen\_}}
+\index{sendListen\_@{sendListen\_}!PersistentConnection@{PersistentConnection}}
+\doxysubsubsection{\texorpdfstring{sendListen\_()}{sendListen\_()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_persistent_connection_aad1f5a989eb20f07eb59b959f722cdce} 
+Persistent\+Connection\+::send\+Listen\+\_\+ (\begin{DoxyParamCaption}\item[{}]{listen\+Spec}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}, \mbox{\hyperlink{ordered-map_8min_8js_ab2752257551c1a01e010ceba5d7ec200}{p}}, \mbox{\hyperlink{application_8js_a3934419f0f9a2068c705a0013b77fab3}{query}}, \mbox{\hyperlink{database_2dist_2node-esm_2index_8node_8esm_8js_aadde7de7b59b9fdcf2241fd3e587cff1}{remove\+Listen\+\_\+()}}, \mbox{\hyperlink{agent-base_2dist_2helpers_8js_a960c3c3c7bce40c2aa54b029b3dbb9c8}{req}}, \mbox{\hyperlink{class_persistent_connection_a4ec7b69f34049f6b647a253d3ba548d2}{send\+Request()}}, \mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2index_8js_aac9dfada3e10bfb087ebb0a95f284488}{status}}, and \mbox{\hyperlink{class_persistent_connection_ad4a0ce12281c0c7480bb730ea8421be0}{warn\+On\+Listen\+Warnings\+\_\+()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_persistent_connection_aad1f5a989eb20f07eb59b959f722cdce_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_persistent_connection_a4ec7b69f34049f6b647a253d3ba548d2}\index{PersistentConnection@{PersistentConnection}!sendRequest@{sendRequest}}
+\index{sendRequest@{sendRequest}!PersistentConnection@{PersistentConnection}}
+\doxysubsubsection{\texorpdfstring{sendRequest()}{sendRequest()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_persistent_connection_a4ec7b69f34049f6b647a253d3ba548d2} 
+Persistent\+Connection\+::send\+Request (\begin{DoxyParamCaption}\item[{}]{action}{, }\item[{}]{body}{, }\item[{}]{on\+Response}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}, \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}, \mbox{\hyperlink{protobufjs_2ext_2descriptor_2test_8js_aa2e57ff47bd491f47d9b13a694aa0aeb}{msg}}, \mbox{\hyperlink{uuid_8min_8js_aaa5fef39529cdffdfa257202bb4fda9f}{r}}, and \mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_persistent_connection_a4ec7b69f34049f6b647a253d3ba548d2_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_persistent_connection_a4ec7b69f34049f6b647a253d3ba548d2}\index{PersistentConnection@{PersistentConnection}!sendRequest@{sendRequest}}
+\index{sendRequest@{sendRequest}!PersistentConnection@{PersistentConnection}}
+\doxysubsubsection{\texorpdfstring{sendRequest()}{sendRequest()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_persistent_connection_a4ec7b69f34049f6b647a253d3ba548d2} 
+Persistent\+Connection\+::send\+Request (\begin{DoxyParamCaption}\item[{}]{action}{, }\item[{}]{body}{, }\item[{}]{on\+Response}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a445382df6f5596f104fa45c8dc67fa73}{assert}}, \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}, \mbox{\hyperlink{protobufjs_2ext_2descriptor_2test_8js_aa2e57ff47bd491f47d9b13a694aa0aeb}{msg}}, \mbox{\hyperlink{uuid_8min_8js_aaa5fef39529cdffdfa257202bb4fda9f}{r}}, and \mbox{\hyperlink{util_2dist_2index_8cjs_8js_a3f2ab0209867e832f43edccf4dfe0b6e}{stringify}}.
+
+\Hypertarget{class_persistent_connection_a4ec7b69f34049f6b647a253d3ba548d2}\index{PersistentConnection@{PersistentConnection}!sendRequest@{sendRequest}}
+\index{sendRequest@{sendRequest}!PersistentConnection@{PersistentConnection}}
+\doxysubsubsection{\texorpdfstring{sendRequest()}{sendRequest()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_persistent_connection_a4ec7b69f34049f6b647a253d3ba548d2} 
+Persistent\+Connection\+::send\+Request (\begin{DoxyParamCaption}\item[{}]{action}{, }\item[{}]{body}{, }\item[{}]{on\+Response}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a445382df6f5596f104fa45c8dc67fa73}{assert}}, \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}, \mbox{\hyperlink{protobufjs_2ext_2descriptor_2test_8js_aa2e57ff47bd491f47d9b13a694aa0aeb}{msg}}, \mbox{\hyperlink{uuid_8min_8js_aaa5fef39529cdffdfa257202bb4fda9f}{r}}, and \mbox{\hyperlink{util_2dist_2index_8cjs_8js_a3f2ab0209867e832f43edccf4dfe0b6e}{stringify}}.
+
+\Hypertarget{class_persistent_connection_a5ebf44b5bc0c3a612783f63700f8de33}\index{PersistentConnection@{PersistentConnection}!tryAppCheck@{tryAppCheck}}
+\index{tryAppCheck@{tryAppCheck}!PersistentConnection@{PersistentConnection}}
+\doxysubsubsection{\texorpdfstring{tryAppCheck()}{tryAppCheck()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_persistent_connection_a5ebf44b5bc0c3a612783f63700f8de33} 
+Persistent\+Connection\+::try\+App\+Check (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Attempts to authenticate with the given token. If the authentication attempt fails, it\textquotesingle{}s triggered like the token was revoked (the connection is closed). 
+
+References \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}, \mbox{\hyperlink{database_2dist_2node-esm_2index_8node_8esm_8js_a342d4db642725f36efb71102f6130b84}{on\+App\+Check\+Revoked\+\_\+()}}, \mbox{\hyperlink{express_2lib_2express_8js_abde3c35e3bb7e5225dd7f234c685329c}{res}}, \mbox{\hyperlink{class_persistent_connection_a4ec7b69f34049f6b647a253d3ba548d2}{send\+Request()}}, and \mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2index_8js_aac9dfada3e10bfb087ebb0a95f284488}{status}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{class_persistent_connection_a5ebf44b5bc0c3a612783f63700f8de33_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_persistent_connection_a5ebf44b5bc0c3a612783f63700f8de33_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_persistent_connection_a5ebf44b5bc0c3a612783f63700f8de33}\index{PersistentConnection@{PersistentConnection}!tryAppCheck@{tryAppCheck}}
+\index{tryAppCheck@{tryAppCheck}!PersistentConnection@{PersistentConnection}}
+\doxysubsubsection{\texorpdfstring{tryAppCheck()}{tryAppCheck()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_persistent_connection_a5ebf44b5bc0c3a612783f63700f8de33} 
+Persistent\+Connection\+::try\+App\+Check (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Attempts to authenticate with the given token. If the authentication attempt fails, it\textquotesingle{}s triggered like the token was revoked (the connection is closed). 
+
+References \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}, \mbox{\hyperlink{database_2dist_2node-esm_2index_8node_8esm_8js_a342d4db642725f36efb71102f6130b84}{on\+App\+Check\+Revoked\+\_\+()}}, \mbox{\hyperlink{express_2lib_2express_8js_abde3c35e3bb7e5225dd7f234c685329c}{res}}, \mbox{\hyperlink{class_persistent_connection_a4ec7b69f34049f6b647a253d3ba548d2}{send\+Request()}}, and \mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2index_8js_aac9dfada3e10bfb087ebb0a95f284488}{status}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{class_persistent_connection_a5ebf44b5bc0c3a612783f63700f8de33_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_persistent_connection_a5ebf44b5bc0c3a612783f63700f8de33}\index{PersistentConnection@{PersistentConnection}!tryAppCheck@{tryAppCheck}}
+\index{tryAppCheck@{tryAppCheck}!PersistentConnection@{PersistentConnection}}
+\doxysubsubsection{\texorpdfstring{tryAppCheck()}{tryAppCheck()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_persistent_connection_a5ebf44b5bc0c3a612783f63700f8de33} 
+Persistent\+Connection\+::try\+App\+Check (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Attempts to authenticate with the given token. If the authentication attempt fails, it\textquotesingle{}s triggered like the token was revoked (the connection is closed). 
+
+References \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}, \mbox{\hyperlink{database_2dist_2node-esm_2index_8node_8esm_8js_a342d4db642725f36efb71102f6130b84}{on\+App\+Check\+Revoked\+\_\+()}}, \mbox{\hyperlink{express_2lib_2express_8js_abde3c35e3bb7e5225dd7f234c685329c}{res}}, \mbox{\hyperlink{class_persistent_connection_a4ec7b69f34049f6b647a253d3ba548d2}{send\+Request()}}, and \mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2index_8js_aac9dfada3e10bfb087ebb0a95f284488}{status}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{class_persistent_connection_a5ebf44b5bc0c3a612783f63700f8de33_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_persistent_connection_a3d910e671627e575f263971ce80631cd}\index{PersistentConnection@{PersistentConnection}!tryAuth@{tryAuth}}
+\index{tryAuth@{tryAuth}!PersistentConnection@{PersistentConnection}}
+\doxysubsubsection{\texorpdfstring{tryAuth()}{tryAuth()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_persistent_connection_a3d910e671627e575f263971ce80631cd} 
+Persistent\+Connection\+::try\+Auth (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Attempts to authenticate with the given credentials. If the authentication attempt fails, it\textquotesingle{}s triggered like a auth revoked (the connection is closed). 
+
+References \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}, \mbox{\hyperlink{database_2dist_2node-esm_2index_8node_8esm_8js_a271ab6931d284fd38e7c85133abd63ae}{on\+Auth\+Revoked\+\_\+()}}, \mbox{\hyperlink{express_2lib_2express_8js_abde3c35e3bb7e5225dd7f234c685329c}{res}}, \mbox{\hyperlink{class_persistent_connection_a4ec7b69f34049f6b647a253d3ba548d2}{send\+Request()}}, \mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2index_8js_aac9dfada3e10bfb087ebb0a95f284488}{status}}, \mbox{\hyperlink{util_2dist_2index_8cjs_8js_a87da3d8264af1c9427605148f20dd9c4}{token}}, and \mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{class_persistent_connection_a3d910e671627e575f263971ce80631cd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{class_persistent_connection_a3d910e671627e575f263971ce80631cd_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_persistent_connection_a3d910e671627e575f263971ce80631cd}\index{PersistentConnection@{PersistentConnection}!tryAuth@{tryAuth}}
+\index{tryAuth@{tryAuth}!PersistentConnection@{PersistentConnection}}
+\doxysubsubsection{\texorpdfstring{tryAuth()}{tryAuth()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_persistent_connection_a3d910e671627e575f263971ce80631cd} 
+Persistent\+Connection\+::try\+Auth (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Attempts to authenticate with the given credentials. If the authentication attempt fails, it\textquotesingle{}s triggered like a auth revoked (the connection is closed). 
+
+References \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}, \mbox{\hyperlink{util_2dist_2index_8cjs_8js_a05191b196d838a59b6c74d5e30e6ffec}{is\+Valid\+Format}}, \mbox{\hyperlink{database_2dist_2node-esm_2index_8node_8esm_8js_a271ab6931d284fd38e7c85133abd63ae}{on\+Auth\+Revoked\+\_\+()}}, \mbox{\hyperlink{express_2lib_2express_8js_abde3c35e3bb7e5225dd7f234c685329c}{res}}, \mbox{\hyperlink{class_persistent_connection_a4ec7b69f34049f6b647a253d3ba548d2}{send\+Request()}}, \mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2index_8js_aac9dfada3e10bfb087ebb0a95f284488}{status}}, and \mbox{\hyperlink{util_2dist_2index_8cjs_8js_a87da3d8264af1c9427605148f20dd9c4}{token}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{class_persistent_connection_a3d910e671627e575f263971ce80631cd_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_persistent_connection_a3d910e671627e575f263971ce80631cd}\index{PersistentConnection@{PersistentConnection}!tryAuth@{tryAuth}}
+\index{tryAuth@{tryAuth}!PersistentConnection@{PersistentConnection}}
+\doxysubsubsection{\texorpdfstring{tryAuth()}{tryAuth()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_persistent_connection_a3d910e671627e575f263971ce80631cd} 
+Persistent\+Connection\+::try\+Auth (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Attempts to authenticate with the given credentials. If the authentication attempt fails, it\textquotesingle{}s triggered like a auth revoked (the connection is closed). 
+
+References \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}, \mbox{\hyperlink{util_2dist_2index_8cjs_8js_a05191b196d838a59b6c74d5e30e6ffec}{is\+Valid\+Format}}, \mbox{\hyperlink{database_2dist_2node-esm_2index_8node_8esm_8js_a271ab6931d284fd38e7c85133abd63ae}{on\+Auth\+Revoked\+\_\+()}}, \mbox{\hyperlink{express_2lib_2express_8js_abde3c35e3bb7e5225dd7f234c685329c}{res}}, \mbox{\hyperlink{class_persistent_connection_a4ec7b69f34049f6b647a253d3ba548d2}{send\+Request()}}, \mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2index_8js_aac9dfada3e10bfb087ebb0a95f284488}{status}}, and \mbox{\hyperlink{util_2dist_2index_8cjs_8js_a87da3d8264af1c9427605148f20dd9c4}{token}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{class_persistent_connection_a3d910e671627e575f263971ce80631cd_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_persistent_connection_ad4a0ce12281c0c7480bb730ea8421be0}\index{PersistentConnection@{PersistentConnection}!warnOnListenWarnings\_@{warnOnListenWarnings\_}}
+\index{warnOnListenWarnings\_@{warnOnListenWarnings\_}!PersistentConnection@{PersistentConnection}}
+\doxysubsubsection{\texorpdfstring{warnOnListenWarnings\_()}{warnOnListenWarnings\_()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_persistent_connection_ad4a0ce12281c0c7480bb730ea8421be0} 
+static Persistent\+Connection\+::warn\+On\+Listen\+Warnings\+\_\+ (\begin{DoxyParamCaption}\item[{}]{payload}{, }\item[{}]{query}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{core_8min_8js_a46d2d1e8780c9b3b6a642760bb148e61}{an}}, \mbox{\hyperlink{long_2index_8js_af6ba5df101e5630835a0a5d778844922}{and}}, \mbox{\hyperlink{src_2util_2minimal_8js_a325c4e317c38d8497130ebce7670be2f}{Array}}, \mbox{\hyperlink{at_8js_a78af5f3fbaccaa8a16d6bea9d7a5e9f4}{at}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af46081dcabb4da1ee7ca00228506bcb7}{client}}, \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}, \mbox{\hyperlink{cookie_2index_8js_a0ac000318c33f03e412baff8df5b2513}{index}}, \mbox{\hyperlink{_0dprotobufjs_2eventemitter_2index_8js_ac6ebb2e1fddfd9205cff6790e2aaa3a6}{on}}, \mbox{\hyperlink{application_8js_a3934419f0f9a2068c705a0013b77fab3}{query}}, \mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}}, and \mbox{\hyperlink{database_2dist_2node-esm_2index_8node_8esm_8js_a153ef7f6fccf9bae313bac28706c3e91}{warn}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_persistent_connection_ad4a0ce12281c0c7480bb730ea8421be0_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_persistent_connection_ad4a0ce12281c0c7480bb730ea8421be0}\index{PersistentConnection@{PersistentConnection}!warnOnListenWarnings\_@{warnOnListenWarnings\_}}
+\index{warnOnListenWarnings\_@{warnOnListenWarnings\_}!PersistentConnection@{PersistentConnection}}
+\doxysubsubsection{\texorpdfstring{warnOnListenWarnings\_()}{warnOnListenWarnings\_()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_persistent_connection_ad4a0ce12281c0c7480bb730ea8421be0} 
+static Persistent\+Connection\+::warn\+On\+Listen\+Warnings\+\_\+ (\begin{DoxyParamCaption}\item[{}]{payload}{, }\item[{}]{query}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{core_8min_8js_a46d2d1e8780c9b3b6a642760bb148e61}{an}}, \mbox{\hyperlink{long_2index_8js_af6ba5df101e5630835a0a5d778844922}{and}}, \mbox{\hyperlink{src_2util_2minimal_8js_a325c4e317c38d8497130ebce7670be2f}{Array}}, \mbox{\hyperlink{at_8js_a78af5f3fbaccaa8a16d6bea9d7a5e9f4}{at}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af46081dcabb4da1ee7ca00228506bcb7}{client}}, \mbox{\hyperlink{util_2dist_2index_8cjs_8js_a8687458b735f9c0fd241b3bd27d0ac50}{contains}}, \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}, \mbox{\hyperlink{cookie_2index_8js_a0ac000318c33f03e412baff8df5b2513}{index}}, \mbox{\hyperlink{_0dprotobufjs_2eventemitter_2index_8js_ac6ebb2e1fddfd9205cff6790e2aaa3a6}{on}}, \mbox{\hyperlink{application_8js_a3934419f0f9a2068c705a0013b77fab3}{query}}, \mbox{\hyperlink{util_2dist_2index_8cjs_8js_acad2bfc5832777bdc92df35470009974}{safe\+Get}}, and \mbox{\hyperlink{database_2dist_2node-esm_2index_8node_8esm_8js_a153ef7f6fccf9bae313bac28706c3e91}{warn}}.
+
+\Hypertarget{class_persistent_connection_ad4a0ce12281c0c7480bb730ea8421be0}\index{PersistentConnection@{PersistentConnection}!warnOnListenWarnings\_@{warnOnListenWarnings\_}}
+\index{warnOnListenWarnings\_@{warnOnListenWarnings\_}!PersistentConnection@{PersistentConnection}}
+\doxysubsubsection{\texorpdfstring{warnOnListenWarnings\_()}{warnOnListenWarnings\_()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_persistent_connection_ad4a0ce12281c0c7480bb730ea8421be0} 
+static Persistent\+Connection\+::warn\+On\+Listen\+Warnings\+\_\+ (\begin{DoxyParamCaption}\item[{}]{payload}{, }\item[{}]{query}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{core_8min_8js_a46d2d1e8780c9b3b6a642760bb148e61}{an}}, \mbox{\hyperlink{long_2index_8js_af6ba5df101e5630835a0a5d778844922}{and}}, \mbox{\hyperlink{src_2util_2minimal_8js_a325c4e317c38d8497130ebce7670be2f}{Array}}, \mbox{\hyperlink{at_8js_a78af5f3fbaccaa8a16d6bea9d7a5e9f4}{at}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af46081dcabb4da1ee7ca00228506bcb7}{client}}, \mbox{\hyperlink{util_2dist_2index_8cjs_8js_a8687458b735f9c0fd241b3bd27d0ac50}{contains}}, \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}, \mbox{\hyperlink{cookie_2index_8js_a0ac000318c33f03e412baff8df5b2513}{index}}, \mbox{\hyperlink{_0dprotobufjs_2eventemitter_2index_8js_ac6ebb2e1fddfd9205cff6790e2aaa3a6}{on}}, \mbox{\hyperlink{application_8js_a3934419f0f9a2068c705a0013b77fab3}{query}}, \mbox{\hyperlink{util_2dist_2index_8cjs_8js_acad2bfc5832777bdc92df35470009974}{safe\+Get}}, and \mbox{\hyperlink{database_2dist_2node-esm_2index_8node_8esm_8js_a153ef7f6fccf9bae313bac28706c3e91}{warn}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/@firebase/database/dist/\mbox{\hyperlink{database_2dist_2index_8cjs_8js}{index.\+cjs.\+js}}\item 
+backend/node\+\_\+modules/@firebase/database/dist/\mbox{\hyperlink{database_2dist_2index_8esm2017_8js}{index.\+esm2017.\+js}}\item 
+backend/node\+\_\+modules/@firebase/database/dist/node-\/esm/\mbox{\hyperlink{database_2dist_2node-esm_2index_8node_8esm_8js}{index.\+node.\+esm.\+js}}\end{DoxyCompactItemize}

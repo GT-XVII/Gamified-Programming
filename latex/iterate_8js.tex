@@ -1,0 +1,107 @@
+\doxysection{backend/node\+\_\+modules/asynckit/lib/iterate.js File Reference}
+\hypertarget{iterate_8js}{}\label{iterate_8js}\index{backend/node\_modules/asynckit/lib/iterate.js@{backend/node\_modules/asynckit/lib/iterate.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{iterate_8js_ab7f1f703644474c483d016e16733dd7b}{iterate}} (list, \mbox{\hyperlink{rxjs_2dist_2cjs_2internal_2symbol_2iterator_8js_aa3ffcc12be7a1491420ca0e39622dbe0}{iterator}}, \mbox{\hyperlink{asynckit_2lib_2state_8js_a7e1b0ba367facd663d59372bd204ea01}{state}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a622460feeccdab6d8f307936fc6b36fb}{callback}})
+\item 
+function \mbox{\hyperlink{iterate_8js_a04fc4fe7ab1296c17234994096cde456}{run\+Job}} (\mbox{\hyperlink{rxjs_2dist_2cjs_2internal_2symbol_2iterator_8js_aa3ffcc12be7a1491420ca0e39622dbe0}{iterator}}, key, item, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a622460feeccdab6d8f307936fc6b36fb}{callback}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{iterate_8js_a8a58c0ef8ca44edf99e5325df2dcf083}{async}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\mbox{\hyperlink{esm_2src_2file_8js_a73ffb0a3b9f028910adc01ac31153d46}{async.\+js}}\textquotesingle{})
+\item 
+var \mbox{\hyperlink{iterate_8js_aa13de7579a2b80db7a9e002938f38be3}{abort}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\mbox{\hyperlink{esm_2src_2file_8js_a73ffb0a3b9f028910adc01ac31153d46}{abort.\+js}}\textquotesingle{})
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{iterate_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} = \mbox{\hyperlink{parallel_8js_a3fc1209ee6bfd89c190486eb8f16bc73}{iterate}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{iterate_8js_ab7f1f703644474c483d016e16733dd7b}\index{iterate.js@{iterate.js}!iterate@{iterate}}
+\index{iterate@{iterate}!iterate.js@{iterate.js}}
+\doxysubsubsection{\texorpdfstring{iterate()}{iterate()}}
+{\footnotesize\ttfamily \label{iterate_8js_ab7f1f703644474c483d016e16733dd7b} 
+function iterate (\begin{DoxyParamCaption}\item[{}]{list}{, }\item[{}]{iterator}{, }\item[{}]{state}{, }\item[{}]{callback}{}\end{DoxyParamCaption})}
+
+Iterates over each job object
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{array\texorpdfstring{$\vert$}{|}object\}} & list -\/ array or object (named list) to iterate over \\
+\hline
+{\em \{function\}} & iterator -\/ iterator to run \\
+\hline
+{\em \{object\}} & state -\/ current job status \\
+\hline
+{\em \{function\}} & callback -\/ invoked when all elements processed \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{iterate_8js_aa13de7579a2b80db7a9e002938f38be3}{abort}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a622460feeccdab6d8f307936fc6b36fb}{callback}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}}, \mbox{\hyperlink{rxjs_2dist_2cjs_2internal_2symbol_2iterator_8js_aa3ffcc12be7a1491420ca0e39622dbe0}{iterator}}, \mbox{\hyperlink{iterate_8js_a04fc4fe7ab1296c17234994096cde456}{run\+Job()}}, and \mbox{\hyperlink{asynckit_2lib_2state_8js_a7e1b0ba367facd663d59372bd204ea01}{state()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{iterate_8js_ab7f1f703644474c483d016e16733dd7b_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{iterate_8js_a04fc4fe7ab1296c17234994096cde456}\index{iterate.js@{iterate.js}!runJob@{runJob}}
+\index{runJob@{runJob}!iterate.js@{iterate.js}}
+\doxysubsubsection{\texorpdfstring{runJob()}{runJob()}}
+{\footnotesize\ttfamily \label{iterate_8js_a04fc4fe7ab1296c17234994096cde456} 
+function run\+Job (\begin{DoxyParamCaption}\item[{}]{iterator}{, }\item[{}]{key}{, }\item[{}]{item}{, }\item[{}]{callback}{}\end{DoxyParamCaption})}
+
+Runs iterator over provided job element
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{function\}} & iterator -\/ iterator to invoke \\
+\hline
+{\em \{string\texorpdfstring{$\vert$}{|}number\}} & key -\/ key/index of the element in the list of jobs \\
+\hline
+{\em \{mixed\}} & item -\/ job description \\
+\hline
+{\em \{function\}} & callback -\/ invoked after iterator is done with the job \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{function\texorpdfstring{$\vert$}{|}mixed\} -\/ job abort function or something else 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{iterate_8js_a8a58c0ef8ca44edf99e5325df2dcf083}{async}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a622460feeccdab6d8f307936fc6b36fb}{callback}}, and \mbox{\hyperlink{rxjs_2dist_2cjs_2internal_2symbol_2iterator_8js_aa3ffcc12be7a1491420ca0e39622dbe0}{iterator}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{iterate_8js_a04fc4fe7ab1296c17234994096cde456_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{iterate_8js_aa13de7579a2b80db7a9e002938f38be3}\index{iterate.js@{iterate.js}!abort@{abort}}
+\index{abort@{abort}!iterate.js@{iterate.js}}
+\doxysubsubsection{\texorpdfstring{abort}{abort}}
+{\footnotesize\ttfamily \label{iterate_8js_aa13de7579a2b80db7a9e002938f38be3} 
+var abort = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\mbox{\hyperlink{esm_2src_2file_8js_a73ffb0a3b9f028910adc01ac31153d46}{abort.\+js}}\textquotesingle{})}
+
+\Hypertarget{iterate_8js_a8a58c0ef8ca44edf99e5325df2dcf083}\index{iterate.js@{iterate.js}!async@{async}}
+\index{async@{async}!iterate.js@{iterate.js}}
+\doxysubsubsection{\texorpdfstring{async}{async}}
+{\footnotesize\ttfamily \label{iterate_8js_a8a58c0ef8ca44edf99e5325df2dcf083} 
+var async = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\mbox{\hyperlink{esm_2src_2file_8js_a73ffb0a3b9f028910adc01ac31153d46}{async.\+js}}\textquotesingle{})}
+
+\Hypertarget{iterate_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\index{iterate.js@{iterate.js}!exports@{exports}}
+\index{exports@{exports}!iterate.js@{iterate.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \label{iterate_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports = \mbox{\hyperlink{parallel_8js_a3fc1209ee6bfd89c190486eb8f16bc73}{iterate}}}
+

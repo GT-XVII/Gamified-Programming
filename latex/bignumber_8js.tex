@@ -1,0 +1,338 @@
+\doxysection{backend/node\+\_\+modules/bignumber.js/bignumber.js File Reference}
+\hypertarget{bignumber_8js}{}\label{bignumber_8js}\index{backend/node\_modules/bignumber.js/bignumber.js@{backend/node\_modules/bignumber.js/bignumber.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{bignumber_8js_afaec30d2444e7c9db98c5b28da39eb9e}{clone}} (config\+Object)
+\item 
+function \mbox{\hyperlink{bignumber_8js_aa6b5cdab013e8a4628ed9b15b0415c0d}{bit\+Floor}} (\mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}})
+\item 
+function \mbox{\hyperlink{bignumber_8js_a84d2fce8e25038d8029c544ec2b5be95}{coeff\+To\+String}} (\mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}})
+\item 
+function \mbox{\hyperlink{bignumber_8js_a3ae992991e400aaa7b7fc8520ed1feb5}{compare}} (x, \mbox{\hyperlink{agent-base_2node__modules_2ms_2index_8js_a0b31909b1cae9ed1db6ff042057fce60}{y}})
+\item 
+function \mbox{\hyperlink{bignumber_8js_ae0ac56f13451239f2370252018833264}{int\+Check}} (\mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}, \mbox{\hyperlink{lodash_2core_8js_a3175572c0a46eb462efa50b61e0423c9}{min}}, \mbox{\hyperlink{implementation_8js_a2af6481e8d02218064702cc796ef97ef}{max}}, \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}})
+\item 
+function \mbox{\hyperlink{bignumber_8js_ad275f8c9fca6575b2b3dd761b68f310f}{is\+Odd}} (\mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}})
+\item 
+function \mbox{\hyperlink{bignumber_8js_a0af11d2d2876bbf92535988fc00ea57c}{to\+Exponential}} (\mbox{\hyperlink{json-bigint_2lib_2stringify_8js_abd4075a8f329b0ccafd81359c952a9df}{str}}, \mbox{\hyperlink{firestore__admin__v1__proto__api_8js_a08a4415e9d594ff960030b921d42b91e}{e}})
+\item 
+function \mbox{\hyperlink{bignumber_8js_a31d76f20fed973bafaaeaa3fff536a6f}{to\+Fixed\+Point}} (\mbox{\hyperlink{json-bigint_2lib_2stringify_8js_abd4075a8f329b0ccafd81359c952a9df}{str}}, \mbox{\hyperlink{firestore__admin__v1__proto__api_8js_a08a4415e9d594ff960030b921d42b91e}{e}}, z)
+\item 
+\mbox{\hyperlink{bignumber_8js_a497ac675cb69efa76a701b46c870f36b}{if}} (typeof \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2_mime_8js_a14947f326ebc4da17b5d55921c25e9fb}{define}}==\textquotesingle{}function\textquotesingle{} \&\&define.\+amd)
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a0544c3fe466e421738dae463968b70ba}{else}} \mbox{\hyperlink{bignumber_8js_acef637fb2e7495e8c5fb96eed6031981}{if}} (typeof \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} !=\textquotesingle{}\mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}\textquotesingle{} \&\&\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{module.\+exports}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{bignumber_8js_a636831be91b9b1e8bdc894a950125bd8}{global\+Object}}
+\item 
+var \mbox{\hyperlink{bignumber_8js_abf0a11d7993a41bf239c8392422eca15}{Big\+Number}} = \mbox{\hyperlink{lodash_2core_8js_a8f658a03f11d32dc7be2d506bb9308ee}{clone}}()
+\item 
+var \mbox{\hyperlink{bignumber_8js_a99db3cb74c85c73085b8ea711d6502d0}{is\+Numeric}} = /\texorpdfstring{$^\wedge$}{\string^}-\/?(?\+:\textbackslash{}\mbox{\hyperlink{uuid_8min_8js_aeb337d295abaddb5ec3cb34cc2e2bbc9}{d}}+(?\+:\textbackslash{}.\textbackslash{}\mbox{\hyperlink{uuid_8min_8js_aeb337d295abaddb5ec3cb34cc2e2bbc9}{d}}\texorpdfstring{$\ast$}{*})?\texorpdfstring{$\vert$}{|}\textbackslash{}.\textbackslash{}\mbox{\hyperlink{uuid_8min_8js_aeb337d295abaddb5ec3cb34cc2e2bbc9}{d}}+)(?\+:\mbox{\hyperlink{firestore__admin__v1__proto__api_8js_a08a4415e9d594ff960030b921d42b91e}{e}}\mbox{[}+-\/\mbox{]}?\textbackslash{}\mbox{\hyperlink{uuid_8min_8js_aeb337d295abaddb5ec3cb34cc2e2bbc9}{d}}+)?\$/\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}
+\item 
+var \mbox{\hyperlink{bignumber_8js_a738b1aeb1a3732b20de8c391dd5c6a3e}{mathceil}} = \mbox{\hyperlink{ceil_8js_a6586cbc801cf66072a3795820fdbd74a}{Math.\+ceil}}
+\item 
+var \mbox{\hyperlink{bignumber_8js_a57a45de95f1d32c5bd869185773250a1}{mathfloor}} = \mbox{\hyperlink{floor_8js_a87888e6ebaeda48ea98b35e3ef693726}{Math.\+floor}}
+\item 
+var \mbox{\hyperlink{bignumber_8js_acb906b0e9f55bc451fcc729378fd3203}{bignumber\+Error}} = \textquotesingle{}\mbox{[}\mbox{\hyperlink{bignumber_8js_abf0a11d7993a41bf239c8392422eca15}{Big\+Number}} Error\mbox{]} \textquotesingle{}
+\item 
+var \mbox{\hyperlink{bignumber_8js_a2bd98b1288eb925299fc0cdc9cedfe05}{too\+Many\+Digits}} = \mbox{\hyperlink{bignumber_8js_acb906b0e9f55bc451fcc729378fd3203}{bignumber\+Error}} + \textquotesingle{}Number primitive \mbox{\hyperlink{___hash_8js_a54a061fe5287ccd59bdb25b09f05270c}{has}} more than 15 significant digits\+: \textquotesingle{}
+\item 
+var \mbox{\hyperlink{bignumber_8js_acb55be75dfb73716137a420363b0d81b}{BASE}} = 1e14
+\item 
+var \mbox{\hyperlink{bignumber_8js_aa707b25a8ecc8374f1c509bf92dc214a}{LOG\+\_\+\+BASE}} = 14
+\item 
+var \mbox{\hyperlink{bignumber_8js_a01b25946529c61a9422982e11f5a3fed}{MAX\+\_\+\+SAFE\+\_\+\+INTEGER}} = 0x1fffffffffffff
+\item 
+var \mbox{\hyperlink{bignumber_8js_a4821c95b657db9d5c055cfb4906b201d}{POWS\+\_\+\+TEN}} = \mbox{[}1, 10, 100, 1e3, 1e4, 1e5, 1e6, 1e7, 1e8, 1e9, 1e10, 1e11, 1e12, 1e13\mbox{]}
+\item 
+var \mbox{\hyperlink{bignumber_8js_a988f642e59141d7b82415088b0f77691}{SQRT\+\_\+\+BASE}} = 1e7
+\item 
+var \mbox{\hyperlink{bignumber_8js_a758bf7296ec6075b978f79cada66e53a}{MAX}} = 1E9
+\item 
+\mbox{\hyperlink{bignumber_8js_a0544c3fe466e421738dae463968b70ba}{else}}
+\item 
+\mbox{\hyperlink{bignumber_8js_a05c09a5e9d53fa7adf0a7936038c2fa3}{this}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{bignumber_8js_aa6b5cdab013e8a4628ed9b15b0415c0d}\index{bignumber.js@{bignumber.js}!bitFloor@{bitFloor}}
+\index{bitFloor@{bitFloor}!bignumber.js@{bignumber.js}}
+\doxysubsubsection{\texorpdfstring{bitFloor()}{bitFloor()}}
+{\footnotesize\ttfamily \label{bignumber_8js_aa6b5cdab013e8a4628ed9b15b0415c0d} 
+function bit\+Floor (\begin{DoxyParamCaption}\item[{}]{n}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}, and \mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{bignumber_8js_aa6b5cdab013e8a4628ed9b15b0415c0d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{bignumber_8js_afaec30d2444e7c9db98c5b28da39eb9e}\index{bignumber.js@{bignumber.js}!clone@{clone}}
+\index{clone@{clone}!bignumber.js@{bignumber.js}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \label{bignumber_8js_afaec30d2444e7c9db98c5b28da39eb9e} 
+function clone (\begin{DoxyParamCaption}\item[{}]{config\+Object}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}, \mbox{\hyperlink{prime_8worker_8min_8js_a78c32b17d7dc98cbe8dfc84ffdc0348d}{abs}}, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_aeda6958b2fc8494c5a17f91600065eb9}{args}}, \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}, \mbox{\hyperlink{bignumber_8js_acb55be75dfb73716137a420363b0d81b}{BASE}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a633f76c2f6070be182949e8d86a51bc6}{base}}, \mbox{\hyperlink{bignumber_8js_abf0a11d7993a41bf239c8392422eca15}{Big\+Number}}, \mbox{\hyperlink{bignumber_8js_acb906b0e9f55bc451fcc729378fd3203}{bignumber\+Error}}, \mbox{\hyperlink{bignumber_8js_aa6b5cdab013e8a4628ed9b15b0415c0d}{bit\+Floor()}}, \mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}, \mbox{\hyperlink{lodash_2core_8js_a8f658a03f11d32dc7be2d506bb9308ee}{clone}}, \mbox{\hyperlink{bignumber_8js_a84d2fce8e25038d8029c544ec2b5be95}{coeff\+To\+String()}}, \mbox{\hyperlink{order_8js_a25a83804b6b1871627a0e9747e35bbdc}{compare}}, \mbox{\hyperlink{_json_web_token_error_8js_ae0d7523761ce2ef80fa2f1afff43bbf3}{constructor}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a3eca37c9aac9a17870baa116339724e3}{crypto}}, \mbox{\hyperlink{uuid_8min_8js_aeb337d295abaddb5ec3cb34cc2e2bbc9}{d}}, \mbox{\hyperlink{long_2index_8js_ad0dda96dfc771375c80cc246c67929d6}{div}}, \mbox{\hyperlink{firestore__admin__v1__proto__api_8js_a08a4415e9d594ff960030b921d42b91e}{e}}, \mbox{\hyperlink{prime_8worker_8min_8js_a8593eae3c208f00c7bcb61ff51ff8ac7}{exp}}, \mbox{\hyperlink{bytes_2index_8js_a9027c5af360d5ef99cc9906449e85a27}{format}}, \mbox{\hyperlink{ordered-map_8min_8js_a103df269476e78897c9c4c6cb8f4eb06}{g}}, \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}, \mbox{\hyperlink{bignumber_8js_ae0ac56f13451239f2370252018833264}{int\+Check()}}, \mbox{\hyperlink{lodash_2core_8js_ae2c7b9b535f93c96826bdbe1da681ceb}{is\+NaN}}, \mbox{\hyperlink{bignumber_8js_a99db3cb74c85c73085b8ea711d6502d0}{is\+Numeric}}, \mbox{\hyperlink{long_2index_8js_a5a6d8820684763477ec7ad5efdc44b3b}{is\+Odd}}, \mbox{\hyperlink{ordered-map_8min_8js_a2e0772d176c27e9cea01defba2a9575a}{j}}, \mbox{\hyperlink{ordered-map_8min_8js_aee3ae2d5bdb3d18f52a8134a79a88d14}{k}}, \mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a7fdcf4c82c9946bf2b0b80829a7ab230}{length}}, \mbox{\hyperlink{bignumber_8js_aa707b25a8ecc8374f1c509bf92dc214a}{LOG\+\_\+\+BASE}}, \mbox{\hyperlink{agent-base_2node__modules_2ms_2index_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m}}, \mbox{\hyperlink{bignumber_8js_a738b1aeb1a3732b20de8c391dd5c6a3e}{mathceil}}, \mbox{\hyperlink{bignumber_8js_a57a45de95f1d32c5bd869185773250a1}{mathfloor}}, \mbox{\hyperlink{bignumber_8js_a758bf7296ec6075b978f79cada66e53a}{MAX}}, \mbox{\hyperlink{bignumber_8js_a01b25946529c61a9422982e11f5a3fed}{MAX\+\_\+\+SAFE\+\_\+\+INTEGER}}, \mbox{\hyperlink{sha512_8js_a4a0380eac0cebce3ad3d5fb0f14d6dae}{md}}, \mbox{\hyperlink{multiply_8js_ab116c6fdfad3fe9745bc3301a0a98696}{multiply}}, \mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}, \mbox{\hyperlink{long_2index_8js_a4c27baafd450238566ee82fd95e3bc1b}{ne}}, \mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}, \mbox{\hyperlink{long_2index_8js_a10633d23fbed3c46a0a25a34474d8510}{ONE}}, \mbox{\hyperlink{ordered-map_8min_8js_a9e847e652b6c4112b0ef342762b969bf}{P}}, \mbox{\hyperlink{ordered-map_8min_8js_ab2752257551c1a01e010ceba5d7ec200}{p}}, \mbox{\hyperlink{bignumber_8js_a4821c95b657db9d5c055cfb4906b201d}{POWS\+\_\+\+TEN}}, \mbox{\hyperlink{bin_2concurrently_8js_a574c2775e74c5015b26f28e8e7e8d21e}{prefix}}, \mbox{\hyperlink{ordered-map_8min_8js_ad711cf8878f34f088655a499839c551a}{q}}, \mbox{\hyperlink{uuid_8min_8js_aaa5fef39529cdffdfa257202bb4fda9f}{r}}, \mbox{\hyperlink{long_2index_8js_afc3bf5c0a581b82e373c599b5c43e15b}{rem}}, \mbox{\hyperlink{round_8js_abcf15bd0ceed587926978d51b71f3c85}{round}}, \mbox{\hyperlink{ordered-map_8min_8js_ad9a7d92cb87932d25187fdec3ba1b621}{s}}, \mbox{\hyperlink{cookie-signature_2index_8js_ae84eb428e06e9d621ec1c8cba1a69b63}{sign}}, \mbox{\hyperlink{bignumber_8js_a988f642e59141d7b82415088b0f77691}{SQRT\+\_\+\+BASE}}, \mbox{\hyperlink{json-bigint_2lib_2stringify_8js_abd4075a8f329b0ccafd81359c952a9df}{str()}}, \mbox{\hyperlink{subtract_8js_afe2f537cd9e72982975aaf3e0a4900f2}{subtract}}, \mbox{\hyperlink{sum_8js_a21b352f39adff59344f0ec18ad84d9cf}{sum()}}, \mbox{\hyperlink{uuidv4_8min_8js_a5459dd59c2ac7c323d9ca8bca22ff249}{t}}, \mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a1bb461d3256d1734f13dd702ef79aa31}{test}}, \mbox{\hyperlink{times_8js_a04595f663fc704fa5cc44aa1d5c7206f}{times()}}, \mbox{\hyperlink{bignumber_8js_a0af11d2d2876bbf92535988fc00ea57c}{to\+Exponential()}}, \mbox{\hyperlink{bignumber_8js_a31d76f20fed973bafaaeaa3fff536a6f}{to\+Fixed\+Point()}}, \mbox{\hyperlink{bignumber_8js_a2bd98b1288eb925299fc0cdc9cedfe05}{too\+Many\+Digits}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7234a4e8129e261e2c517e09a337bf6a}{to\+String}}, \mbox{\hyperlink{ordered-map_8min_8js_a207400f40ed647015069564fa40946e1}{v}}, \mbox{\hyperlink{ordered-map_8min_8js_a9721a992655f700bdc2e91ba68b71e26}{w}}, and \mbox{\hyperlink{agent-base_2node__modules_2ms_2index_8js_a0b31909b1cae9ed1db6ff042057fce60}{y}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=295pt]{bignumber_8js_afaec30d2444e7c9db98c5b28da39eb9e_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{bignumber_8js_a84d2fce8e25038d8029c544ec2b5be95}\index{bignumber.js@{bignumber.js}!coeffToString@{coeffToString}}
+\index{coeffToString@{coeffToString}!bignumber.js@{bignumber.js}}
+\doxysubsubsection{\texorpdfstring{coeffToString()}{coeffToString()}}
+{\footnotesize\ttfamily \label{bignumber_8js_a84d2fce8e25038d8029c544ec2b5be95} 
+function coeff\+To\+String (\begin{DoxyParamCaption}\item[{}]{a}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}, \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}, \mbox{\hyperlink{ordered-map_8min_8js_a2e0772d176c27e9cea01defba2a9575a}{j}}, \mbox{\hyperlink{bignumber_8js_aa707b25a8ecc8374f1c509bf92dc214a}{LOG\+\_\+\+BASE}}, \mbox{\hyperlink{uuid_8min_8js_aaa5fef39529cdffdfa257202bb4fda9f}{r}}, and \mbox{\hyperlink{ordered-map_8min_8js_ad9a7d92cb87932d25187fdec3ba1b621}{s}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{bignumber_8js_a84d2fce8e25038d8029c544ec2b5be95_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{bignumber_8js_a3ae992991e400aaa7b7fc8520ed1feb5}\index{bignumber.js@{bignumber.js}!compare@{compare}}
+\index{compare@{compare}!bignumber.js@{bignumber.js}}
+\doxysubsubsection{\texorpdfstring{compare()}{compare()}}
+{\footnotesize\ttfamily \label{bignumber_8js_a3ae992991e400aaa7b7fc8520ed1feb5} 
+function compare (\begin{DoxyParamCaption}\item[{}]{x}{, }\item[{}]{y}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}, \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}, \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}, \mbox{\hyperlink{ordered-map_8min_8js_a2e0772d176c27e9cea01defba2a9575a}{j}}, \mbox{\hyperlink{ordered-map_8min_8js_aee3ae2d5bdb3d18f52a8134a79a88d14}{k}}, \mbox{\hyperlink{uuid_8min_8js_ae5e71a2600e8891c54854be157cc6626}{l}}, and \mbox{\hyperlink{agent-base_2node__modules_2ms_2index_8js_a0b31909b1cae9ed1db6ff042057fce60}{y}}.
+
+\Hypertarget{bignumber_8js_a497ac675cb69efa76a701b46c870f36b}\index{bignumber.js@{bignumber.js}!if@{if}}
+\index{if@{if}!bignumber.js@{bignumber.js}}
+\doxysubsubsection{\texorpdfstring{if()}{if()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{bignumber_8js_a497ac675cb69efa76a701b46c870f36b} 
+if (\begin{DoxyParamCaption}\item[{typeof}]{define}{ = {\ttfamily =~\textquotesingle{}function\textquotesingle{}~\&\&~define.amd}}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{bignumber_8js_abf0a11d7993a41bf239c8392422eca15}{Big\+Number}}, and \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2_mime_8js_a14947f326ebc4da17b5d55921c25e9fb}{define}}.
+
+\Hypertarget{bignumber_8js_acef637fb2e7495e8c5fb96eed6031981}\index{bignumber.js@{bignumber.js}!if@{if}}
+\index{if@{if}!bignumber.js@{bignumber.js}}
+\doxysubsubsection{\texorpdfstring{if()}{if()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{bignumber_8js_acef637fb2e7495e8c5fb96eed6031981} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a0544c3fe466e421738dae463968b70ba}{else}} if (\begin{DoxyParamCaption}\item[{}]{typeof module !}{ = {\ttfamily \textquotesingle{}\mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}\textquotesingle{}~\&\&~\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{module.\+exports}}}}\end{DoxyParamCaption})}
+
+\Hypertarget{bignumber_8js_ae0ac56f13451239f2370252018833264}\index{bignumber.js@{bignumber.js}!intCheck@{intCheck}}
+\index{intCheck@{intCheck}!bignumber.js@{bignumber.js}}
+\doxysubsubsection{\texorpdfstring{intCheck()}{intCheck()}}
+{\footnotesize\ttfamily \label{bignumber_8js_ae0ac56f13451239f2370252018833264} 
+function int\+Check (\begin{DoxyParamCaption}\item[{}]{n}{, }\item[{}]{min}{, }\item[{}]{max}{, }\item[{}]{name}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{bignumber_8js_acb906b0e9f55bc451fcc729378fd3203}{bignumber\+Error}}, \mbox{\hyperlink{bignumber_8js_a57a45de95f1d32c5bd869185773250a1}{mathfloor}}, \mbox{\hyperlink{implementation_8js_a2af6481e8d02218064702cc796ef97ef}{max}}, \mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}, and \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{bignumber_8js_ae0ac56f13451239f2370252018833264_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{bignumber_8js_ad275f8c9fca6575b2b3dd761b68f310f}\index{bignumber.js@{bignumber.js}!isOdd@{isOdd}}
+\index{isOdd@{isOdd}!bignumber.js@{bignumber.js}}
+\doxysubsubsection{\texorpdfstring{isOdd()}{isOdd()}}
+{\footnotesize\ttfamily \label{bignumber_8js_ad275f8c9fca6575b2b3dd761b68f310f} 
+function is\+Odd (\begin{DoxyParamCaption}\item[{}]{n}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{bignumber_8js_aa6b5cdab013e8a4628ed9b15b0415c0d}{bit\+Floor()}}, \mbox{\hyperlink{ordered-map_8min_8js_aee3ae2d5bdb3d18f52a8134a79a88d14}{k}}, \mbox{\hyperlink{bignumber_8js_aa707b25a8ecc8374f1c509bf92dc214a}{LOG\+\_\+\+BASE}}, and \mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{bignumber_8js_ad275f8c9fca6575b2b3dd761b68f310f_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{bignumber_8js_a0af11d2d2876bbf92535988fc00ea57c}\index{bignumber.js@{bignumber.js}!toExponential@{toExponential}}
+\index{toExponential@{toExponential}!bignumber.js@{bignumber.js}}
+\doxysubsubsection{\texorpdfstring{toExponential()}{toExponential()}}
+{\footnotesize\ttfamily \label{bignumber_8js_a0af11d2d2876bbf92535988fc00ea57c} 
+function to\+Exponential (\begin{DoxyParamCaption}\item[{}]{str}{, }\item[{}]{e}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{firestore__admin__v1__proto__api_8js_a08a4415e9d594ff960030b921d42b91e}{e}}, and \mbox{\hyperlink{json-bigint_2lib_2stringify_8js_abd4075a8f329b0ccafd81359c952a9df}{str()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{bignumber_8js_a0af11d2d2876bbf92535988fc00ea57c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=231pt]{bignumber_8js_a0af11d2d2876bbf92535988fc00ea57c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{bignumber_8js_a31d76f20fed973bafaaeaa3fff536a6f}\index{bignumber.js@{bignumber.js}!toFixedPoint@{toFixedPoint}}
+\index{toFixedPoint@{toFixedPoint}!bignumber.js@{bignumber.js}}
+\doxysubsubsection{\texorpdfstring{toFixedPoint()}{toFixedPoint()}}
+{\footnotesize\ttfamily \label{bignumber_8js_a31d76f20fed973bafaaeaa3fff536a6f} 
+function to\+Fixed\+Point (\begin{DoxyParamCaption}\item[{}]{str}{, }\item[{}]{e}{, }\item[{}]{z}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{firestore__admin__v1__proto__api_8js_a08a4415e9d594ff960030b921d42b91e}{e}}, and \mbox{\hyperlink{json-bigint_2lib_2stringify_8js_abd4075a8f329b0ccafd81359c952a9df}{str()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{bignumber_8js_a31d76f20fed973bafaaeaa3fff536a6f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{bignumber_8js_a31d76f20fed973bafaaeaa3fff536a6f_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{bignumber_8js_acb55be75dfb73716137a420363b0d81b}\index{bignumber.js@{bignumber.js}!BASE@{BASE}}
+\index{BASE@{BASE}!bignumber.js@{bignumber.js}}
+\doxysubsubsection{\texorpdfstring{BASE}{BASE}}
+{\footnotesize\ttfamily \label{bignumber_8js_acb55be75dfb73716137a420363b0d81b} 
+var BASE = 1e14}
+
+\Hypertarget{bignumber_8js_abf0a11d7993a41bf239c8392422eca15}\index{bignumber.js@{bignumber.js}!BigNumber@{BigNumber}}
+\index{BigNumber@{BigNumber}!bignumber.js@{bignumber.js}}
+\doxysubsubsection{\texorpdfstring{BigNumber}{BigNumber}}
+{\footnotesize\ttfamily \label{bignumber_8js_abf0a11d7993a41bf239c8392422eca15} 
+Big\+Number\mbox{[} \textquotesingle{}\mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2index_8js_a48acd3189d40b017f47c93b673b8b8f6}{default}}\textquotesingle{}\mbox{]} = \mbox{\hyperlink{lodash_2core_8js_a8f658a03f11d32dc7be2d506bb9308ee}{clone}}()}
+
+\Hypertarget{bignumber_8js_acb906b0e9f55bc451fcc729378fd3203}\index{bignumber.js@{bignumber.js}!bignumberError@{bignumberError}}
+\index{bignumberError@{bignumberError}!bignumber.js@{bignumber.js}}
+\doxysubsubsection{\texorpdfstring{bignumberError}{bignumberError}}
+{\footnotesize\ttfamily \label{bignumber_8js_acb906b0e9f55bc451fcc729378fd3203} 
+var bignumber\+Error = \textquotesingle{}\mbox{[}\mbox{\hyperlink{bignumber_8js_abf0a11d7993a41bf239c8392422eca15}{Big\+Number}} Error\mbox{]} \textquotesingle{}}
+
+\Hypertarget{bignumber_8js_a0544c3fe466e421738dae463968b70ba}\index{bignumber.js@{bignumber.js}!else@{else}}
+\index{else@{else}!bignumber.js@{bignumber.js}}
+\doxysubsubsection{\texorpdfstring{else}{else}}
+{\footnotesize\ttfamily \label{bignumber_8js_a0544c3fe466e421738dae463968b70ba} 
+else}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{bignumber_8js_a636831be91b9b1e8bdc894a950125bd8}{globalObject}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \mbox{\hyperlink{bignumber_8js_a636831be91b9b1e8bdc894a950125bd8}{globalObject}}\ =\ typeof\ \textcolor{keyword}{self}\ !=\ \textcolor{stringliteral}{'undefined'}\ \&\&\ \textcolor{keyword}{self}\ ?\ \mbox{\hyperlink{object-inspect_2example_2all_8js_aa4c89df6363d9220e49f390d5c14e0b3}{self}}\ :\ \mbox{\hyperlink{forge_8all_8min_8js_a77335ab2a82353d4a02f9ba062031c46}{window}};}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{bignumber_8js_a636831be91b9b1e8bdc894a950125bd8}{globalObject}}.BigNumber\ =\ \mbox{\hyperlink{bignumber_8js_abf0a11d7993a41bf239c8392422eca15}{BigNumber}}}
+
+\end{DoxyCode}
+\Hypertarget{bignumber_8js_a636831be91b9b1e8bdc894a950125bd8}\index{bignumber.js@{bignumber.js}!globalObject@{globalObject}}
+\index{globalObject@{globalObject}!bignumber.js@{bignumber.js}}
+\doxysubsubsection{\texorpdfstring{globalObject}{globalObject}}
+{\footnotesize\ttfamily \label{bignumber_8js_a636831be91b9b1e8bdc894a950125bd8} 
+function global\+Object}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \textcolor{stringliteral}{'use\ strict'}}
+
+\end{DoxyCode}
+\Hypertarget{bignumber_8js_a99db3cb74c85c73085b8ea711d6502d0}\index{bignumber.js@{bignumber.js}!isNumeric@{isNumeric}}
+\index{isNumeric@{isNumeric}!bignumber.js@{bignumber.js}}
+\doxysubsubsection{\texorpdfstring{isNumeric}{isNumeric}}
+{\footnotesize\ttfamily \label{bignumber_8js_a99db3cb74c85c73085b8ea711d6502d0} 
+var is\+Numeric = /\texorpdfstring{$^\wedge$}{\string^}-\/?(?\+:\textbackslash{}\mbox{\hyperlink{uuid_8min_8js_aeb337d295abaddb5ec3cb34cc2e2bbc9}{d}}+(?\+:\textbackslash{}.\textbackslash{}\mbox{\hyperlink{uuid_8min_8js_aeb337d295abaddb5ec3cb34cc2e2bbc9}{d}}\texorpdfstring{$\ast$}{*})?\texorpdfstring{$\vert$}{|}\textbackslash{}.\textbackslash{}\mbox{\hyperlink{uuid_8min_8js_aeb337d295abaddb5ec3cb34cc2e2bbc9}{d}}+)(?\+:\mbox{\hyperlink{firestore__admin__v1__proto__api_8js_a08a4415e9d594ff960030b921d42b91e}{e}}\mbox{[}+-\/\mbox{]}?\textbackslash{}\mbox{\hyperlink{uuid_8min_8js_aeb337d295abaddb5ec3cb34cc2e2bbc9}{d}}+)?\$/\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}}
+
+\Hypertarget{bignumber_8js_aa707b25a8ecc8374f1c509bf92dc214a}\index{bignumber.js@{bignumber.js}!LOG\_BASE@{LOG\_BASE}}
+\index{LOG\_BASE@{LOG\_BASE}!bignumber.js@{bignumber.js}}
+\doxysubsubsection{\texorpdfstring{LOG\_BASE}{LOG\_BASE}}
+{\footnotesize\ttfamily \label{bignumber_8js_aa707b25a8ecc8374f1c509bf92dc214a} 
+var LOG\+\_\+\+BASE = 14}
+
+\Hypertarget{bignumber_8js_a738b1aeb1a3732b20de8c391dd5c6a3e}\index{bignumber.js@{bignumber.js}!mathceil@{mathceil}}
+\index{mathceil@{mathceil}!bignumber.js@{bignumber.js}}
+\doxysubsubsection{\texorpdfstring{mathceil}{mathceil}}
+{\footnotesize\ttfamily \label{bignumber_8js_a738b1aeb1a3732b20de8c391dd5c6a3e} 
+var mathceil = \mbox{\hyperlink{ceil_8js_a6586cbc801cf66072a3795820fdbd74a}{Math.\+ceil}}}
+
+\Hypertarget{bignumber_8js_a57a45de95f1d32c5bd869185773250a1}\index{bignumber.js@{bignumber.js}!mathfloor@{mathfloor}}
+\index{mathfloor@{mathfloor}!bignumber.js@{bignumber.js}}
+\doxysubsubsection{\texorpdfstring{mathfloor}{mathfloor}}
+{\footnotesize\ttfamily \label{bignumber_8js_a57a45de95f1d32c5bd869185773250a1} 
+var mathfloor = \mbox{\hyperlink{floor_8js_a87888e6ebaeda48ea98b35e3ef693726}{Math.\+floor}}}
+
+\Hypertarget{bignumber_8js_a758bf7296ec6075b978f79cada66e53a}\index{bignumber.js@{bignumber.js}!MAX@{MAX}}
+\index{MAX@{MAX}!bignumber.js@{bignumber.js}}
+\doxysubsubsection{\texorpdfstring{MAX}{MAX}}
+{\footnotesize\ttfamily \label{bignumber_8js_a758bf7296ec6075b978f79cada66e53a} 
+var MAX = 1E9}
+
+\Hypertarget{bignumber_8js_a01b25946529c61a9422982e11f5a3fed}\index{bignumber.js@{bignumber.js}!MAX\_SAFE\_INTEGER@{MAX\_SAFE\_INTEGER}}
+\index{MAX\_SAFE\_INTEGER@{MAX\_SAFE\_INTEGER}!bignumber.js@{bignumber.js}}
+\doxysubsubsection{\texorpdfstring{MAX\_SAFE\_INTEGER}{MAX\_SAFE\_INTEGER}}
+{\footnotesize\ttfamily \label{bignumber_8js_a01b25946529c61a9422982e11f5a3fed} 
+var MAX\+\_\+\+SAFE\+\_\+\+INTEGER = 0x1fffffffffffff}
+
+\Hypertarget{bignumber_8js_a4821c95b657db9d5c055cfb4906b201d}\index{bignumber.js@{bignumber.js}!POWS\_TEN@{POWS\_TEN}}
+\index{POWS\_TEN@{POWS\_TEN}!bignumber.js@{bignumber.js}}
+\doxysubsubsection{\texorpdfstring{POWS\_TEN}{POWS\_TEN}}
+{\footnotesize\ttfamily \label{bignumber_8js_a4821c95b657db9d5c055cfb4906b201d} 
+var POWS\+\_\+\+TEN = \mbox{[}1, 10, 100, 1e3, 1e4, 1e5, 1e6, 1e7, 1e8, 1e9, 1e10, 1e11, 1e12, 1e13\mbox{]}}
+
+\Hypertarget{bignumber_8js_a988f642e59141d7b82415088b0f77691}\index{bignumber.js@{bignumber.js}!SQRT\_BASE@{SQRT\_BASE}}
+\index{SQRT\_BASE@{SQRT\_BASE}!bignumber.js@{bignumber.js}}
+\doxysubsubsection{\texorpdfstring{SQRT\_BASE}{SQRT\_BASE}}
+{\footnotesize\ttfamily \label{bignumber_8js_a988f642e59141d7b82415088b0f77691} 
+var SQRT\+\_\+\+BASE = 1e7}
+
+\Hypertarget{bignumber_8js_a05c09a5e9d53fa7adf0a7936038c2fa3}\index{bignumber.js@{bignumber.js}!this@{this}}
+\index{this@{this}!bignumber.js@{bignumber.js}}
+\doxysubsubsection{\texorpdfstring{this}{this}}
+{\footnotesize\ttfamily \label{bignumber_8js_a05c09a5e9d53fa7adf0a7936038c2fa3} 
+this}
+
+\Hypertarget{bignumber_8js_a2bd98b1288eb925299fc0cdc9cedfe05}\index{bignumber.js@{bignumber.js}!tooManyDigits@{tooManyDigits}}
+\index{tooManyDigits@{tooManyDigits}!bignumber.js@{bignumber.js}}
+\doxysubsubsection{\texorpdfstring{tooManyDigits}{tooManyDigits}}
+{\footnotesize\ttfamily \label{bignumber_8js_a2bd98b1288eb925299fc0cdc9cedfe05} 
+var too\+Many\+Digits = \mbox{\hyperlink{bignumber_8js_acb906b0e9f55bc451fcc729378fd3203}{bignumber\+Error}} + \textquotesingle{}Number primitive \mbox{\hyperlink{___hash_8js_a54a061fe5287ccd59bdb25b09f05270c}{has}} more than 15 significant digits\+: \textquotesingle{}}
+

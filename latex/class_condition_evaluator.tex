@@ -1,0 +1,201 @@
+\doxysection{Condition\+Evaluator Class Reference}
+\hypertarget{class_condition_evaluator}{}\label{class_condition_evaluator}\index{ConditionEvaluator@{ConditionEvaluator}}
+
+
+Collaboration diagram for Condition\+Evaluator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{class_condition_evaluator__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_condition_evaluator_a27224bf9778f0a916189a7110f148ab2}{evaluate\+Conditions}} (named\+Conditions, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}})
+\item 
+\mbox{\hyperlink{class_condition_evaluator_a2901e8ffcd50732f63aaa0e7070a9bd3}{evaluate\+Condition}} (condition, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}}, nesting\+Level=0)
+\item 
+\mbox{\hyperlink{class_condition_evaluator_aa2da738fd805e7e220505c69f688145c}{evaluate\+Or\+Condition}} (or\+Condition, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}}, nesting\+Level)
+\item 
+\mbox{\hyperlink{class_condition_evaluator_a53fe1efb71651d632f36e34177b43a88}{evaluate\+And\+Condition}} (and\+Condition, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}}, nesting\+Level)
+\item 
+\mbox{\hyperlink{class_condition_evaluator_a784688b8e8e62547a1ef8f576b8a668f}{evaluate\+Percent\+Condition}} (percent\+Condition, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}})
+\item 
+\mbox{\hyperlink{class_condition_evaluator_a1783ddd763e267cdd99bd84aad5dcbe3}{evaluate\+Custom\+Signal\+Condition}} (custom\+Signal\+Condition, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_condition_evaluator_a99b11dc03bd9ea4b7cf71275e30f6c65}{hash\+Seeded\+Randomization\+Id}} (seeded\+Randomization\+Id)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Encapsulates condition evaluation logic to simplify organization and facilitate testing. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_condition_evaluator_a53fe1efb71651d632f36e34177b43a88}\index{ConditionEvaluator@{ConditionEvaluator}!evaluateAndCondition@{evaluateAndCondition}}
+\index{evaluateAndCondition@{evaluateAndCondition}!ConditionEvaluator@{ConditionEvaluator}}
+\doxysubsubsection{\texorpdfstring{evaluateAndCondition()}{evaluateAndCondition()}}
+{\footnotesize\ttfamily \label{class_condition_evaluator_a53fe1efb71651d632f36e34177b43a88} 
+Condition\+Evaluator\+::evaluate\+And\+Condition (\begin{DoxyParamCaption}\item[{}]{and\+Condition}{, }\item[{}]{context}{, }\item[{}]{nesting\+Level}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}}, \mbox{\hyperlink{class_condition_evaluator_a2901e8ffcd50732f63aaa0e7070a9bd3}{evaluate\+Condition()}}, \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}, and \mbox{\hyperlink{lodash_2core_8js_a348c112a244660a2f280cda892658c24}{result}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_condition_evaluator_a53fe1efb71651d632f36e34177b43a88_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_condition_evaluator_a53fe1efb71651d632f36e34177b43a88_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_condition_evaluator_a2901e8ffcd50732f63aaa0e7070a9bd3}\index{ConditionEvaluator@{ConditionEvaluator}!evaluateCondition@{evaluateCondition}}
+\index{evaluateCondition@{evaluateCondition}!ConditionEvaluator@{ConditionEvaluator}}
+\doxysubsubsection{\texorpdfstring{evaluateCondition()}{evaluateCondition()}}
+{\footnotesize\ttfamily \label{class_condition_evaluator_a2901e8ffcd50732f63aaa0e7070a9bd3} 
+Condition\+Evaluator\+::evaluate\+Condition (\begin{DoxyParamCaption}\item[{}]{condition}{, }\item[{}]{context}{, }\item[{}]{nesting\+Level}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}}, \mbox{\hyperlink{class_condition_evaluator_a53fe1efb71651d632f36e34177b43a88}{evaluate\+And\+Condition()}}, \mbox{\hyperlink{class_condition_evaluator_a1783ddd763e267cdd99bd84aad5dcbe3}{evaluate\+Custom\+Signal\+Condition()}}, \mbox{\hyperlink{class_condition_evaluator_aa2da738fd805e7e220505c69f688145c}{evaluate\+Or\+Condition()}}, and \mbox{\hyperlink{class_condition_evaluator_a784688b8e8e62547a1ef8f576b8a668f}{evaluate\+Percent\+Condition()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_condition_evaluator_a2901e8ffcd50732f63aaa0e7070a9bd3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{class_condition_evaluator_a2901e8ffcd50732f63aaa0e7070a9bd3_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_condition_evaluator_a27224bf9778f0a916189a7110f148ab2}\index{ConditionEvaluator@{ConditionEvaluator}!evaluateConditions@{evaluateConditions}}
+\index{evaluateConditions@{evaluateConditions}!ConditionEvaluator@{ConditionEvaluator}}
+\doxysubsubsection{\texorpdfstring{evaluateConditions()}{evaluateConditions()}}
+{\footnotesize\ttfamily \label{class_condition_evaluator_a27224bf9778f0a916189a7110f148ab2} 
+Condition\+Evaluator\+::evaluate\+Conditions (\begin{DoxyParamCaption}\item[{}]{named\+Conditions}{, }\item[{}]{context}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}}, \mbox{\hyperlink{__get_tag_8js_aa38772edcc6ff00766e19b36ce8073a8}{Map}}, and \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}.
+
+\Hypertarget{class_condition_evaluator_a1783ddd763e267cdd99bd84aad5dcbe3}\index{ConditionEvaluator@{ConditionEvaluator}!evaluateCustomSignalCondition@{evaluateCustomSignalCondition}}
+\index{evaluateCustomSignalCondition@{evaluateCustomSignalCondition}!ConditionEvaluator@{ConditionEvaluator}}
+\doxysubsubsection{\texorpdfstring{evaluateCustomSignalCondition()}{evaluateCustomSignalCondition()}}
+{\footnotesize\ttfamily \label{class_condition_evaluator_a1783ddd763e267cdd99bd84aad5dcbe3} 
+Condition\+Evaluator\+::evaluate\+Custom\+Signal\+Condition (\begin{DoxyParamCaption}\item[{}]{custom\+Signal\+Condition}{, }\item[{}]{context}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{condition-evaluator-internal_8js_a20e779426ffc65bea92778568d9d1a5b}{compare\+Numbers()}}, \mbox{\hyperlink{condition-evaluator-internal_8js_a1789d93c21bd8ec51c2bcb9896179c8f}{compare\+Semantic\+Versions()}}, \mbox{\hyperlink{condition-evaluator-internal_8js_ae52251696b36067306cc41472f776e84}{compare\+Strings()}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}}, \mbox{\hyperlink{uuid_8min_8js_aaa5fef39529cdffdfa257202bb4fda9f}{r}}, \mbox{\hyperlink{condition-evaluator-internal_8js_ab81383e0fd521dee0a6460e75326eaf1}{remote\+\_\+config\+\_\+api\+\_\+1}}, \mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a1bb461d3256d1734f13dd702ef79aa31}{test}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_condition_evaluator_a1783ddd763e267cdd99bd84aad5dcbe3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_condition_evaluator_a1783ddd763e267cdd99bd84aad5dcbe3_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_condition_evaluator_aa2da738fd805e7e220505c69f688145c}\index{ConditionEvaluator@{ConditionEvaluator}!evaluateOrCondition@{evaluateOrCondition}}
+\index{evaluateOrCondition@{evaluateOrCondition}!ConditionEvaluator@{ConditionEvaluator}}
+\doxysubsubsection{\texorpdfstring{evaluateOrCondition()}{evaluateOrCondition()}}
+{\footnotesize\ttfamily \label{class_condition_evaluator_aa2da738fd805e7e220505c69f688145c} 
+Condition\+Evaluator\+::evaluate\+Or\+Condition (\begin{DoxyParamCaption}\item[{}]{or\+Condition}{, }\item[{}]{context}{, }\item[{}]{nesting\+Level}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}}, \mbox{\hyperlink{class_condition_evaluator_a2901e8ffcd50732f63aaa0e7070a9bd3}{evaluate\+Condition()}}, \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}, and \mbox{\hyperlink{lodash_2core_8js_a348c112a244660a2f280cda892658c24}{result}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_condition_evaluator_aa2da738fd805e7e220505c69f688145c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_condition_evaluator_aa2da738fd805e7e220505c69f688145c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_condition_evaluator_a784688b8e8e62547a1ef8f576b8a668f}\index{ConditionEvaluator@{ConditionEvaluator}!evaluatePercentCondition@{evaluatePercentCondition}}
+\index{evaluatePercentCondition@{evaluatePercentCondition}!ConditionEvaluator@{ConditionEvaluator}}
+\doxysubsubsection{\texorpdfstring{evaluatePercentCondition()}{evaluatePercentCondition()}}
+{\footnotesize\ttfamily \label{class_condition_evaluator_a784688b8e8e62547a1ef8f576b8a668f} 
+Condition\+Evaluator\+::evaluate\+Percent\+Condition (\begin{DoxyParamCaption}\item[{}]{percent\+Condition}{, }\item[{}]{context}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}}, \mbox{\hyperlink{nodejs_2farmhash__modern_8js_a171327d54f1bdf3316acd135633a3fc1}{hash64}}, \mbox{\hyperlink{class_condition_evaluator_a99b11dc03bd9ea4b7cf71275e30f6c65}{hash\+Seeded\+Randomization\+Id()}}, and \mbox{\hyperlink{condition-evaluator-internal_8js_ab81383e0fd521dee0a6460e75326eaf1}{remote\+\_\+config\+\_\+api\+\_\+1}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_condition_evaluator_a784688b8e8e62547a1ef8f576b8a668f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_condition_evaluator_a784688b8e8e62547a1ef8f576b8a668f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_condition_evaluator_a99b11dc03bd9ea4b7cf71275e30f6c65}\index{ConditionEvaluator@{ConditionEvaluator}!hashSeededRandomizationId@{hashSeededRandomizationId}}
+\index{hashSeededRandomizationId@{hashSeededRandomizationId}!ConditionEvaluator@{ConditionEvaluator}}
+\doxysubsubsection{\texorpdfstring{hashSeededRandomizationId()}{hashSeededRandomizationId()}}
+{\footnotesize\ttfamily \label{class_condition_evaluator_a99b11dc03bd9ea4b7cf71275e30f6c65} 
+static Condition\+Evaluator\+::hash\+Seeded\+Randomization\+Id (\begin{DoxyParamCaption}\item[{}]{seeded\+Randomization\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+References \mbox{\hyperlink{condition-evaluator-internal_8js_a69a10abf091d39406f3056dee2a0d0b5}{farmhash}}, and \mbox{\hyperlink{nodejs_2farmhash__modern_8js_a171327d54f1bdf3316acd135633a3fc1}{hash64}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_condition_evaluator_a99b11dc03bd9ea4b7cf71275e30f6c65_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/firebase-\/admin/lib/remote-\/config/\mbox{\hyperlink{condition-evaluator-internal_8js}{condition-\/evaluator-\/internal.\+js}}\end{DoxyCompactItemize}

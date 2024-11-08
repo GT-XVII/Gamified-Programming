@@ -1,0 +1,82 @@
+\doxysection{backend/node\+\_\+modules/lodash/\+\_\+base\+Is\+Match.js File Reference}
+\hypertarget{__base_is_match_8js}{}\label{__base_is_match_8js}\index{backend/node\_modules/lodash/\_baseIsMatch.js@{backend/node\_modules/lodash/\_baseIsMatch.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{__base_is_match_8js_a96e0ab9d4e659de239c87c53365d310f}{base\+Is\+Match}} (\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}}, \mbox{\hyperlink{bench_8js_a4f85c6ae2a8cdd19ca9b7006b1860d40}{source}}, match\+Data, customizer)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{__base_is_match_8js_ab61e40b30f319d275675805197ea3e90}{Stack}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\+\_\+\+Stack\textquotesingle{})
+\item 
+var \mbox{\hyperlink{__base_is_match_8js_a8c1986d743948b59494e00293d6be3a7}{base\+Is\+Equal}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\+\_\+base\+Is\+Equal\textquotesingle{})
+\item 
+var \mbox{\hyperlink{__base_is_match_8js_aab86c17b6dbdc0e8e7855ec9523f7a31}{COMPARE\+\_\+\+PARTIAL\+\_\+\+FLAG}} = 1
+\item 
+var \mbox{\hyperlink{__base_is_match_8js_add425400a9c8c88279e4c24a941902ac}{COMPARE\+\_\+\+UNORDERED\+\_\+\+FLAG}} = 2
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{__base_is_match_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} = \mbox{\hyperlink{__base_matches_8js_a28f368a1c30fa7d1abbecc5dc4a71718}{base\+Is\+Match}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{__base_is_match_8js_a96e0ab9d4e659de239c87c53365d310f}\index{\_baseIsMatch.js@{\_baseIsMatch.js}!baseIsMatch@{baseIsMatch}}
+\index{baseIsMatch@{baseIsMatch}!\_baseIsMatch.js@{\_baseIsMatch.js}}
+\doxysubsubsection{\texorpdfstring{baseIsMatch()}{baseIsMatch()}}
+{\footnotesize\ttfamily \label{__base_is_match_8js_a96e0ab9d4e659de239c87c53365d310f} 
+function base\+Is\+Match (\begin{DoxyParamCaption}\item[{}]{object}{, }\item[{}]{source}{, }\item[{}]{match\+Data}{, }\item[{}]{customizer}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+The base implementation of {\ttfamily \+\_\+.\+is\+Match} without support for iteratee shorthands.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Object\}} & object The object to inspect. \\
+\hline
+{\em \{\+Object\}} & source The object of property values to match. \\
+\hline
+{\em \{\+Array\}} & match\+Data The property names, values, and compare flags to match. \\
+\hline
+{\em \{\+Function\}} & \mbox{[}customizer\mbox{]} The function to customize comparisons. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{boolean\} Returns {\ttfamily true} if {\ttfamily object} is a match, else {\ttfamily false}. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{__base_is_match_8js_a8c1986d743948b59494e00293d6be3a7}{base\+Is\+Equal}}, \mbox{\hyperlink{__base_is_match_8js_aab86c17b6dbdc0e8e7855ec9523f7a31}{COMPARE\+\_\+\+PARTIAL\+\_\+\+FLAG}}, \mbox{\hyperlink{__base_is_match_8js_add425400a9c8c88279e4c24a941902ac}{COMPARE\+\_\+\+UNORDERED\+\_\+\+FLAG}}, \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}, \mbox{\hyperlink{cookie_2index_8js_a0ac000318c33f03e412baff8df5b2513}{index}}, \mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a7fdcf4c82c9946bf2b0b80829a7ab230}{length}}, \mbox{\hyperlink{lodash_2core_8js_a348c112a244660a2f280cda892658c24}{result}}, \mbox{\hyperlink{bench_8js_a4f85c6ae2a8cdd19ca9b7006b1860d40}{source}}, \mbox{\hyperlink{__base_is_match_8js_ab61e40b30f319d275675805197ea3e90}{Stack}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{__base_is_match_8js_a8c1986d743948b59494e00293d6be3a7}\index{\_baseIsMatch.js@{\_baseIsMatch.js}!baseIsEqual@{baseIsEqual}}
+\index{baseIsEqual@{baseIsEqual}!\_baseIsMatch.js@{\_baseIsMatch.js}}
+\doxysubsubsection{\texorpdfstring{baseIsEqual}{baseIsEqual}}
+{\footnotesize\ttfamily \label{__base_is_match_8js_a8c1986d743948b59494e00293d6be3a7} 
+var base\+Is\+Equal = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\+\_\+base\+Is\+Equal\textquotesingle{})}
+
+\Hypertarget{__base_is_match_8js_aab86c17b6dbdc0e8e7855ec9523f7a31}\index{\_baseIsMatch.js@{\_baseIsMatch.js}!COMPARE\_PARTIAL\_FLAG@{COMPARE\_PARTIAL\_FLAG}}
+\index{COMPARE\_PARTIAL\_FLAG@{COMPARE\_PARTIAL\_FLAG}!\_baseIsMatch.js@{\_baseIsMatch.js}}
+\doxysubsubsection{\texorpdfstring{COMPARE\_PARTIAL\_FLAG}{COMPARE\_PARTIAL\_FLAG}}
+{\footnotesize\ttfamily \label{__base_is_match_8js_aab86c17b6dbdc0e8e7855ec9523f7a31} 
+var COMPARE\+\_\+\+PARTIAL\+\_\+\+FLAG = 1}
+
+Used to compose bitmasks for value comparisons. \Hypertarget{__base_is_match_8js_add425400a9c8c88279e4c24a941902ac}\index{\_baseIsMatch.js@{\_baseIsMatch.js}!COMPARE\_UNORDERED\_FLAG@{COMPARE\_UNORDERED\_FLAG}}
+\index{COMPARE\_UNORDERED\_FLAG@{COMPARE\_UNORDERED\_FLAG}!\_baseIsMatch.js@{\_baseIsMatch.js}}
+\doxysubsubsection{\texorpdfstring{COMPARE\_UNORDERED\_FLAG}{COMPARE\_UNORDERED\_FLAG}}
+{\footnotesize\ttfamily \label{__base_is_match_8js_add425400a9c8c88279e4c24a941902ac} 
+var COMPARE\+\_\+\+UNORDERED\+\_\+\+FLAG = 2}
+
+\Hypertarget{__base_is_match_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\index{\_baseIsMatch.js@{\_baseIsMatch.js}!exports@{exports}}
+\index{exports@{exports}!\_baseIsMatch.js@{\_baseIsMatch.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \label{__base_is_match_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports = \mbox{\hyperlink{__base_matches_8js_a28f368a1c30fa7d1abbecc5dc4a71718}{base\+Is\+Match}}}
+
+\Hypertarget{__base_is_match_8js_ab61e40b30f319d275675805197ea3e90}\index{\_baseIsMatch.js@{\_baseIsMatch.js}!Stack@{Stack}}
+\index{Stack@{Stack}!\_baseIsMatch.js@{\_baseIsMatch.js}}
+\doxysubsubsection{\texorpdfstring{Stack}{Stack}}
+{\footnotesize\ttfamily \label{__base_is_match_8js_ab61e40b30f319d275675805197ea3e90} 
+var Stack = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\+\_\+\+Stack\textquotesingle{})}
+

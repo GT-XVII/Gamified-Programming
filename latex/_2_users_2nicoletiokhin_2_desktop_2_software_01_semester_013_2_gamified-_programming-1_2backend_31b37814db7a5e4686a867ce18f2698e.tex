@@ -1,0 +1,33 @@
+\doxysection{/\+Users/nicoletiokhin/\+Desktop/\+Software Semester 3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/lodash/find.\+js}
+\hypertarget{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_31b37814db7a5e4686a867ce18f2698e}{}\label{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_31b37814db7a5e4686a867ce18f2698e}Iterates over elements of {\ttfamily collection}, returning the first element {\ttfamily predicate} returns truthy for. The predicate is invoked with three arguments\+: (value, index\texorpdfstring{$\vert$}{|}key, collection).
+
+@member\+Of \+\_\+ \begin{DoxySince}{Since}
+0.\+1.\+0
+\end{DoxySince}
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Array\texorpdfstring{$\vert$}{|}\+Object\}} & collection The collection to inspect. \\
+\hline
+{\em \{\+Function\}} & \mbox{[}predicate=\+\_\+.\+identity\mbox{]} The function invoked per iteration. \\
+\hline
+{\em \{number\}} & \mbox{[}from\+Index=0\mbox{]} The index to search from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{\texorpdfstring{$\ast$}{*}\} Returns the matched element, else {\ttfamily undefined}.
+\end{DoxyReturn}
+var users = \mbox{[} \{ \textquotesingle{}user\textquotesingle{}\+: \textquotesingle{}barney\textquotesingle{}, \textquotesingle{}age\textquotesingle{}\+: 36, \textquotesingle{}active\textquotesingle{}\+: true \}, \{ \textquotesingle{}user\textquotesingle{}\+: \textquotesingle{}fred\textquotesingle{}, \textquotesingle{}age\textquotesingle{}\+: 40, \textquotesingle{}active\textquotesingle{}\+: false \}, \{ \textquotesingle{}user\textquotesingle{}\+: \textquotesingle{}pebbles\textquotesingle{}, \textquotesingle{}age\textquotesingle{}\+: 1, \textquotesingle{}active\textquotesingle{}\+: true \} \mbox{]};
+
+\+\_\+.\+find(users, function(o) \{ return o.\+age \texorpdfstring{$<$}{<} 40; \}); // =\texorpdfstring{$>$}{>} object for \textquotesingle{}barney\textquotesingle{}
+
+// The {\ttfamily \+\_\+.\+matches} iteratee shorthand. \+\_\+.\+find(users, \{ \textquotesingle{}age\textquotesingle{}\+: 1, \textquotesingle{}active\textquotesingle{}\+: true \}); // =\texorpdfstring{$>$}{>} object for \textquotesingle{}pebbles\textquotesingle{}
+
+// The {\ttfamily \+\_\+.\+matches\+Property} iteratee shorthand. \+\_\+.\+find(users, \mbox{[}\textquotesingle{}active\textquotesingle{}, false\mbox{]}); // =\texorpdfstring{$>$}{>} object for \textquotesingle{}fred\textquotesingle{}
+
+// The {\ttfamily \+\_\+.\+property} iteratee shorthand. \+\_\+.\+find(users, \textquotesingle{}active\textquotesingle{}); // =\texorpdfstring{$>$}{>} object for \textquotesingle{}barney\textquotesingle{}
+
+
+\begin{DoxyCodeInclude}{0}
+
+\end{DoxyCodeInclude}
+ Semester \doxylink{lodash_2find_8js}{3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/lodash/find.\+js} 

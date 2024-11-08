@@ -1,0 +1,353 @@
+\doxysection{backend/node\+\_\+modules/lodash.camelcase/index.js File Reference}
+\hypertarget{lodash_8camelcase_2index_8js}{}\label{lodash_8camelcase_2index_8js}\index{backend/node\_modules/lodash.camelcase/index.js@{backend/node\_modules/lodash.camelcase/index.js}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{lodash_8camelcase_2index_8js_a56c0b064492379a1b261a196ee2853ff}{INFINITY}} = 1 / 0
+\item 
+var \mbox{\hyperlink{lodash_8camelcase_2index_8js_a82320ff8df9ec6e5762da04020e18d26}{symbol\+Tag}} = \textquotesingle{}\mbox{[}\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}} \mbox{\hyperlink{__base_get_tag_8js_a9223501a4f1d046befc3fb8f0bf5c1e4}{Symbol}}\mbox{]}\textquotesingle{}
+\item 
+var \mbox{\hyperlink{lodash_8camelcase_2index_8js_a52c670bc1dda5bec2c7dcf9288dcb94d}{re\+Ascii\+Word}} = /\mbox{[}\texorpdfstring{$^\wedge$}{\string^}\textbackslash{}x00-\/\textbackslash{}x2f\textbackslash{}x3a-\/\textbackslash{}x40\textbackslash{}x5b-\/\textbackslash{}x60\textbackslash{}x7b-\/\textbackslash{}x7f\mbox{]}+/\mbox{\hyperlink{ordered-map_8min_8js_a103df269476e78897c9c4c6cb8f4eb06}{g}}
+\item 
+var \mbox{\hyperlink{lodash_8camelcase_2index_8js_a169d461afaf3913560e04d4932609d64}{re\+Latin}} = /\mbox{[}\textbackslash{}xc0-\/\textbackslash{}xd6\textbackslash{}xd8-\/\textbackslash{}xf6\textbackslash{}xf8-\/\textbackslash{}xff\textbackslash{}u0100-\/\textbackslash{}u017f\mbox{]}/\mbox{\hyperlink{ordered-map_8min_8js_a103df269476e78897c9c4c6cb8f4eb06}{g}}
+\item 
+var \mbox{\hyperlink{lodash_8camelcase_2index_8js_aac2496148c2bae8f025a68dc5a0b9417}{rs\+Astral\+Range}} = \textquotesingle{}\textbackslash{}\textbackslash{}ud800-\/\textbackslash{}\textbackslash{}udfff\textquotesingle{}
+\item 
+var \mbox{\hyperlink{lodash_8camelcase_2index_8js_a885aad772f5897d96e5f8767bcec88ed}{rs\+Combo\+Marks\+Range}} = \textquotesingle{}\textbackslash{}\textbackslash{}u0300-\/\textbackslash{}\textbackslash{}u036f\textbackslash{}\textbackslash{}ufe20-\/\textbackslash{}\textbackslash{}ufe23\textquotesingle{}
+\item 
+var \mbox{\hyperlink{lodash_8camelcase_2index_8js_a515a0cb5a96082753fd36385bf86693e}{rs\+Combo\+Symbols\+Range}} = \textquotesingle{}\textbackslash{}\textbackslash{}u20d0-\/\textbackslash{}\textbackslash{}u20f0\textquotesingle{}
+\item 
+var \mbox{\hyperlink{lodash_8camelcase_2index_8js_a870b5eb1ebfd601464b4e9365fa37e4f}{rs\+Dingbat\+Range}} = \textquotesingle{}\textbackslash{}\textbackslash{}u2700-\/\textbackslash{}\textbackslash{}u27bf\textquotesingle{}
+\item 
+var \mbox{\hyperlink{lodash_8camelcase_2index_8js_a173ecff5c72a892e0ced1fcdafd1b5ef}{rs\+Lower\+Range}} = \textquotesingle{}\mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}-\/z\textbackslash{}\textbackslash{}xdf-\/\textbackslash{}\textbackslash{}xf6\textbackslash{}\textbackslash{}xf8-\/\textbackslash{}\textbackslash{}xff\textquotesingle{}
+\item 
+var \mbox{\hyperlink{lodash_8camelcase_2index_8js_a19352cbc3d761f1d436e5564807022dd}{rs\+Math\+Op\+Range}} = \textquotesingle{}\textbackslash{}\textbackslash{}xac\textbackslash{}\textbackslash{}xb1\textbackslash{}\textbackslash{}xd7\textbackslash{}\textbackslash{}xf7\textquotesingle{}
+\item 
+var \mbox{\hyperlink{lodash_8camelcase_2index_8js_a46acbe66d22e9d08a5933c269c5298bc}{rs\+Non\+Char\+Range}} = \textquotesingle{}\textbackslash{}\textbackslash{}x00-\/\textbackslash{}\textbackslash{}x2f\textbackslash{}\textbackslash{}x3a-\/\textbackslash{}\textbackslash{}x40\textbackslash{}\textbackslash{}x5b-\/\textbackslash{}\textbackslash{}x60\textbackslash{}\textbackslash{}x7b-\/\textbackslash{}\textbackslash{}xbf\textquotesingle{}
+\item 
+var \mbox{\hyperlink{lodash_8camelcase_2index_8js_a3c0fb21cc8d743f7cd107dbc8cf998b2}{rs\+Punctuation\+Range}} = \textquotesingle{}\textbackslash{}\textbackslash{}u2000-\/\textbackslash{}\textbackslash{}u206f\textquotesingle{}
+\item 
+var \mbox{\hyperlink{lodash_8camelcase_2index_8js_a04534f90f88407613964ec336511e623}{rs\+Space\+Range}} = \textquotesingle{} \textbackslash{}\textbackslash{}t\textbackslash{}\textbackslash{}x0b\textbackslash{}\textbackslash{}f\textbackslash{}\textbackslash{}xa0\textbackslash{}\textbackslash{}ufeff\textbackslash{}\textbackslash{}n\textbackslash{}\textbackslash{}r\textbackslash{}\textbackslash{}u2028\textbackslash{}\textbackslash{}u2029\textbackslash{}\textbackslash{}u1680\textbackslash{}\textbackslash{}u180e\textbackslash{}\textbackslash{}u2000\textbackslash{}\textbackslash{}u2001\textbackslash{}\textbackslash{}u2002\textbackslash{}\textbackslash{}u2003\textbackslash{}\textbackslash{}u2004\textbackslash{}\textbackslash{}u2005\textbackslash{}\textbackslash{}u2006\textbackslash{}\textbackslash{}u2007\textbackslash{}\textbackslash{}u2008\textbackslash{}\textbackslash{}u2009\textbackslash{}\textbackslash{}u200a\textbackslash{}\textbackslash{}u202f\textbackslash{}\textbackslash{}u205f\textbackslash{}\textbackslash{}u3000\textquotesingle{}
+\item 
+var \mbox{\hyperlink{lodash_8camelcase_2index_8js_a01c70e930c613f7f103c45234579a264}{rs\+Upper\+Range}} = \textquotesingle{}\mbox{\hyperlink{class_a}{A}}-\/Z\textbackslash{}\textbackslash{}xc0-\/\textbackslash{}\textbackslash{}xd6\textbackslash{}\textbackslash{}xd8-\/\textbackslash{}\textbackslash{}xde\textquotesingle{}
+\item 
+var \mbox{\hyperlink{lodash_8camelcase_2index_8js_a368fad66a39831fdfcf197df7a8e36de}{rs\+Var\+Range}} = \textquotesingle{}\textbackslash{}\textbackslash{}ufe0e\textbackslash{}\textbackslash{}ufe0f\textquotesingle{}
+\item 
+var \mbox{\hyperlink{lodash_8camelcase_2index_8js_a04c66ccbf382bd9569fd1ee5250474b9}{rs\+Break\+Range}} = \mbox{\hyperlink{lodash_8camelcase_2index_8js_a19352cbc3d761f1d436e5564807022dd}{rs\+Math\+Op\+Range}} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_a46acbe66d22e9d08a5933c269c5298bc}{rs\+Non\+Char\+Range}} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_a3c0fb21cc8d743f7cd107dbc8cf998b2}{rs\+Punctuation\+Range}} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_a04534f90f88407613964ec336511e623}{rs\+Space\+Range}}
+\item 
+var \mbox{\hyperlink{lodash_8camelcase_2index_8js_a140a0e3ac7212b99c89e23ee2469ff71}{rs\+Apos}} = "{}\mbox{[}\textquotesingle{}\textbackslash{}u2019\mbox{]}"{}
+\item 
+var \mbox{\hyperlink{lodash_8camelcase_2index_8js_ad44cc6223ee38fdd0fc775b63c495a1b}{rs\+Astral}} = \textquotesingle{}\mbox{[}\textquotesingle{} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_aac2496148c2bae8f025a68dc5a0b9417}{rs\+Astral\+Range}} + \textquotesingle{}\mbox{]}\textquotesingle{}
+\item 
+var \mbox{\hyperlink{lodash_8camelcase_2index_8js_a1fd9d77478da4a84d0bccddb8d2cf2d1}{rs\+Break}} = \textquotesingle{}\mbox{[}\textquotesingle{} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_a04c66ccbf382bd9569fd1ee5250474b9}{rs\+Break\+Range}} + \textquotesingle{}\mbox{]}\textquotesingle{}
+\item 
+var \mbox{\hyperlink{lodash_8camelcase_2index_8js_a3ad6c09dbc4945188e86cf6189da745c}{rs\+Combo}} = \textquotesingle{}\mbox{[}\textquotesingle{} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_a885aad772f5897d96e5f8767bcec88ed}{rs\+Combo\+Marks\+Range}} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_a515a0cb5a96082753fd36385bf86693e}{rs\+Combo\+Symbols\+Range}} + \textquotesingle{}\mbox{]}\textquotesingle{}
+\item 
+var \mbox{\hyperlink{lodash_8camelcase_2index_8js_adb2f2eaf3bad3c28340d7f6cf5ee06ae}{rs\+Digits}} = \textquotesingle{}\textbackslash{}\textbackslash{}\mbox{\hyperlink{uuid_8min_8js_aeb337d295abaddb5ec3cb34cc2e2bbc9}{d}}+\textquotesingle{}
+\item 
+var \mbox{\hyperlink{lodash_8camelcase_2index_8js_afa108fa701b420f14057da2cd2a551e9}{rs\+Dingbat}} = \textquotesingle{}\mbox{[}\textquotesingle{} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_a870b5eb1ebfd601464b4e9365fa37e4f}{rs\+Dingbat\+Range}} + \textquotesingle{}\mbox{]}\textquotesingle{}
+\item 
+var \mbox{\hyperlink{lodash_8camelcase_2index_8js_a4cb46cc0d7707ea25c34a6215db18fa0}{rs\+Lower}} = \textquotesingle{}\mbox{[}\textquotesingle{} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_a173ecff5c72a892e0ced1fcdafd1b5ef}{rs\+Lower\+Range}} + \textquotesingle{}\mbox{]}\textquotesingle{}
+\item 
+var \mbox{\hyperlink{lodash_8camelcase_2index_8js_a59cfaeaf6019b95fd58826bf0c4f77f0}{rs\+Misc}} = \textquotesingle{}\mbox{[}\texorpdfstring{$^\wedge$}{\string^}\textquotesingle{} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_aac2496148c2bae8f025a68dc5a0b9417}{rs\+Astral\+Range}} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_a04c66ccbf382bd9569fd1ee5250474b9}{rs\+Break\+Range}} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_adb2f2eaf3bad3c28340d7f6cf5ee06ae}{rs\+Digits}} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_a870b5eb1ebfd601464b4e9365fa37e4f}{rs\+Dingbat\+Range}} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_a173ecff5c72a892e0ced1fcdafd1b5ef}{rs\+Lower\+Range}} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_a01c70e930c613f7f103c45234579a264}{rs\+Upper\+Range}} + \textquotesingle{}\mbox{]}\textquotesingle{}
+\item 
+var \mbox{\hyperlink{lodash_8camelcase_2index_8js_a5752905f28b8221061c838df8b4e271c}{rs\+Fitz}} = \textquotesingle{}\textbackslash{}\textbackslash{}ud83c\mbox{[}\textbackslash{}\textbackslash{}udffb-\/\textbackslash{}\textbackslash{}udfff\mbox{]}\textquotesingle{}
+\item 
+var \mbox{\hyperlink{lodash_8camelcase_2index_8js_a32c0ab361a1436f17a33dfadcad1f131}{rs\+Modifier}} = \textquotesingle{}(?\+:\textquotesingle{} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_a3ad6c09dbc4945188e86cf6189da745c}{rs\+Combo}} + \textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_a5752905f28b8221061c838df8b4e271c}{rs\+Fitz}} + \textquotesingle{})\textquotesingle{}
+\item 
+var \mbox{\hyperlink{lodash_8camelcase_2index_8js_a33d475bbbeb29386a38e402e3e087181}{rs\+Non\+Astral}} = \textquotesingle{}\mbox{[}\texorpdfstring{$^\wedge$}{\string^}\textquotesingle{} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_aac2496148c2bae8f025a68dc5a0b9417}{rs\+Astral\+Range}} + \textquotesingle{}\mbox{]}\textquotesingle{}
+\item 
+var \mbox{\hyperlink{lodash_8camelcase_2index_8js_a8ba6c51af61fd0f87b05f10dec2142b6}{rs\+Regional}} = \textquotesingle{}(?\+:\textbackslash{}\textbackslash{}ud83c\mbox{[}\textbackslash{}\textbackslash{}udde6-\/\textbackslash{}\textbackslash{}uddff\mbox{]})\{2\}\textquotesingle{}
+\item 
+var \mbox{\hyperlink{lodash_8camelcase_2index_8js_ab897b030c09495e606b5ebb6ee7332a3}{rs\+Surr\+Pair}} = \textquotesingle{}\mbox{[}\textbackslash{}\textbackslash{}ud800-\/\textbackslash{}\textbackslash{}udbff\mbox{]}\mbox{[}\textbackslash{}\textbackslash{}udc00-\/\textbackslash{}\textbackslash{}udfff\mbox{]}\textquotesingle{}
+\item 
+var \mbox{\hyperlink{lodash_8camelcase_2index_8js_ac8cd4706ddef85479900518ece536f8b}{rs\+Upper}} = \textquotesingle{}\mbox{[}\textquotesingle{} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_a01c70e930c613f7f103c45234579a264}{rs\+Upper\+Range}} + \textquotesingle{}\mbox{]}\textquotesingle{}
+\item 
+var \mbox{\hyperlink{lodash_8camelcase_2index_8js_acfd4af6a55c6291ade760cc82e35f69c}{rs\+ZWJ}} = \textquotesingle{}\textbackslash{}\textbackslash{}u200d\textquotesingle{}
+\item 
+var \mbox{\hyperlink{lodash_8camelcase_2index_8js_a9a13d28a4e6d2a036c1a431a3061fc71}{rs\+Lower\+Misc}} = \textquotesingle{}(?\+:\textquotesingle{} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_a4cb46cc0d7707ea25c34a6215db18fa0}{rs\+Lower}} + \textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_a59cfaeaf6019b95fd58826bf0c4f77f0}{rs\+Misc}} + \textquotesingle{})\textquotesingle{}
+\item 
+var \mbox{\hyperlink{lodash_8camelcase_2index_8js_a44373a57d291495becfcd7feda56385e}{rs\+Upper\+Misc}} = \textquotesingle{}(?\+:\textquotesingle{} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_ac8cd4706ddef85479900518ece536f8b}{rs\+Upper}} + \textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_a59cfaeaf6019b95fd58826bf0c4f77f0}{rs\+Misc}} + \textquotesingle{})\textquotesingle{}
+\item 
+var \mbox{\hyperlink{lodash_8camelcase_2index_8js_a83d79451280cd5885cc130e73ee09d56}{rs\+Opt\+Lower\+Contr}}
+\item 
+var \mbox{\hyperlink{lodash_8camelcase_2index_8js_ab5e88a184ee73e9cd83c6f8770feedf1}{re\+Apos}} = Reg\+Exp(\mbox{\hyperlink{lodash_8camelcase_2index_8js_a140a0e3ac7212b99c89e23ee2469ff71}{rs\+Apos}}, \textquotesingle{}\mbox{\hyperlink{ordered-map_8min_8js_a103df269476e78897c9c4c6cb8f4eb06}{g}}\textquotesingle{})
+\item 
+var \mbox{\hyperlink{lodash_8camelcase_2index_8js_aa1339dbe56bcbf23f3e74b38608f6034}{re\+Combo\+Mark}} = Reg\+Exp(\mbox{\hyperlink{lodash_8camelcase_2index_8js_a3ad6c09dbc4945188e86cf6189da745c}{rs\+Combo}}, \textquotesingle{}\mbox{\hyperlink{ordered-map_8min_8js_a103df269476e78897c9c4c6cb8f4eb06}{g}}\textquotesingle{})
+\item 
+var \mbox{\hyperlink{lodash_8camelcase_2index_8js_a2e8c82349f5b5f0b3d19fccc6696624c}{re\+Unicode}} = Reg\+Exp(\mbox{\hyperlink{lodash_8camelcase_2index_8js_a5752905f28b8221061c838df8b4e271c}{rs\+Fitz}} + \textquotesingle{}(?=\textquotesingle{} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_a5752905f28b8221061c838df8b4e271c}{rs\+Fitz}} + \textquotesingle{})\texorpdfstring{$\vert$}{|}\textquotesingle{} + \mbox{\hyperlink{__unicode_size_8js_a964a27997131caaceb6fcdca696101f7}{rs\+Symbol}} + \mbox{\hyperlink{__unicode_size_8js_a58244c418931ab391338275779f45c0b}{rs\+Seq}}, \textquotesingle{}\mbox{\hyperlink{ordered-map_8min_8js_a103df269476e78897c9c4c6cb8f4eb06}{g}}\textquotesingle{})
+\item 
+var \mbox{\hyperlink{lodash_8camelcase_2index_8js_a4c6b7c5b5e72a9e5f3b36f542f4dad32}{re\+Unicode\+Word}}
+\item 
+var \mbox{\hyperlink{lodash_8camelcase_2index_8js_a010ca1beed0f67fe790aa7eb5d13aa77}{re\+Has\+Unicode}} = Reg\+Exp(\textquotesingle{}\mbox{[}\textquotesingle{} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_acfd4af6a55c6291ade760cc82e35f69c}{rs\+ZWJ}} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_aac2496148c2bae8f025a68dc5a0b9417}{rs\+Astral\+Range}} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_a885aad772f5897d96e5f8767bcec88ed}{rs\+Combo\+Marks\+Range}} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_a515a0cb5a96082753fd36385bf86693e}{rs\+Combo\+Symbols\+Range}} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_a368fad66a39831fdfcf197df7a8e36de}{rs\+Var\+Range}} + \textquotesingle{}\mbox{]}\textquotesingle{})
+\item 
+var \mbox{\hyperlink{lodash_8camelcase_2index_8js_aeac7f0b4d4027274c660f58a409f96b9}{re\+Has\+Unicode\+Word}} = /\mbox{[}\mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}-\/z\mbox{]}\mbox{[}\mbox{\hyperlink{class_a}{A}}-\/\mbox{\hyperlink{ed25519_8js_a91b180d4aa37a81e516896ad77d1837c}{Z}}\mbox{]}\texorpdfstring{$\vert$}{|}\mbox{[}\mbox{\hyperlink{class_a}{A}}-\/\mbox{\hyperlink{ed25519_8js_a91b180d4aa37a81e516896ad77d1837c}{Z}}\mbox{]}\{2,\}\mbox{[}\mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}-\/z\mbox{]}\texorpdfstring{$\vert$}{|}\mbox{[}0-\/9\mbox{]}\mbox{[}\mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}-\/zA-\/\mbox{\hyperlink{ed25519_8js_a91b180d4aa37a81e516896ad77d1837c}{Z}}\mbox{]}\texorpdfstring{$\vert$}{|}\mbox{[}\mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}-\/zA-\/\mbox{\hyperlink{ed25519_8js_a91b180d4aa37a81e516896ad77d1837c}{Z}}\mbox{]}\mbox{[}0-\/9\mbox{]}\texorpdfstring{$\vert$}{|}\mbox{[}\texorpdfstring{$^\wedge$}{\string^}\mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}-\/zA-\/Z0-\/9 \mbox{]}/
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{lodash_8camelcase_2index_8js_a56c0b064492379a1b261a196ee2853ff}\index{index.js@{index.js}!INFINITY@{INFINITY}}
+\index{INFINITY@{INFINITY}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{INFINITY}{INFINITY}}
+{\footnotesize\ttfamily \label{lodash_8camelcase_2index_8js_a56c0b064492379a1b261a196ee2853ff} 
+var INFINITY = 1 / 0}
+
+lodash (Custom Build) \href{https://lodash.com/}{\texttt{ https\+://lodash.\+com/}} Build\+: {\ttfamily lodash modularize exports="{}npm"{} -\/o ./} Copyright j\+Query Foundation and other contributors \href{https://jquery.org/}{\texttt{ https\+://jquery.\+org/}} Released under MIT license \href{https://lodash.com/license}{\texttt{ https\+://lodash.\+com/license}} Based on Underscore.\+js 1.\+8.\+3 \href{http://underscorejs.org/LICENSE}{\texttt{ http\+://underscorejs.\+org/\+LICENSE}} Copyright Jeremy Ashkenas, Document\+Cloud and Investigative Reporters \& Editors Used as references for various {\ttfamily Number} constants. \Hypertarget{lodash_8camelcase_2index_8js_ab5e88a184ee73e9cd83c6f8770feedf1}\index{index.js@{index.js}!reApos@{reApos}}
+\index{reApos@{reApos}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{reApos}{reApos}}
+{\footnotesize\ttfamily \label{lodash_8camelcase_2index_8js_ab5e88a184ee73e9cd83c6f8770feedf1} 
+var re\+Apos = Reg\+Exp(\mbox{\hyperlink{lodash_8camelcase_2index_8js_a140a0e3ac7212b99c89e23ee2469ff71}{rs\+Apos}}, \textquotesingle{}\mbox{\hyperlink{ordered-map_8min_8js_a103df269476e78897c9c4c6cb8f4eb06}{g}}\textquotesingle{})}
+
+Used to match apostrophes. \Hypertarget{lodash_8camelcase_2index_8js_a52c670bc1dda5bec2c7dcf9288dcb94d}\index{index.js@{index.js}!reAsciiWord@{reAsciiWord}}
+\index{reAsciiWord@{reAsciiWord}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{reAsciiWord}{reAsciiWord}}
+{\footnotesize\ttfamily \label{lodash_8camelcase_2index_8js_a52c670bc1dda5bec2c7dcf9288dcb94d} 
+var re\+Ascii\+Word = /\mbox{[}\texorpdfstring{$^\wedge$}{\string^}\textbackslash{}x00-\/\textbackslash{}x2f\textbackslash{}x3a-\/\textbackslash{}x40\textbackslash{}x5b-\/\textbackslash{}x60\textbackslash{}x7b-\/\textbackslash{}x7f\mbox{]}+/\mbox{\hyperlink{ordered-map_8min_8js_a103df269476e78897c9c4c6cb8f4eb06}{g}}}
+
+Used to match words composed of alphanumeric characters. \Hypertarget{lodash_8camelcase_2index_8js_aa1339dbe56bcbf23f3e74b38608f6034}\index{index.js@{index.js}!reComboMark@{reComboMark}}
+\index{reComboMark@{reComboMark}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{reComboMark}{reComboMark}}
+{\footnotesize\ttfamily \label{lodash_8camelcase_2index_8js_aa1339dbe56bcbf23f3e74b38608f6034} 
+var re\+Combo\+Mark = Reg\+Exp(\mbox{\hyperlink{lodash_8camelcase_2index_8js_a3ad6c09dbc4945188e86cf6189da745c}{rs\+Combo}}, \textquotesingle{}\mbox{\hyperlink{ordered-map_8min_8js_a103df269476e78897c9c4c6cb8f4eb06}{g}}\textquotesingle{})}
+
+Used to match \href{https://en.wikipedia.org/wiki/Combining_Diacritical_Marks}{\texttt{ combining diacritical marks}} and \href{https://en.wikipedia.org/wiki/Combining_Diacritical_Marks_for_Symbols}{\texttt{ combining diacritical marks for symbols}}. \Hypertarget{lodash_8camelcase_2index_8js_a010ca1beed0f67fe790aa7eb5d13aa77}\index{index.js@{index.js}!reHasUnicode@{reHasUnicode}}
+\index{reHasUnicode@{reHasUnicode}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{reHasUnicode}{reHasUnicode}}
+{\footnotesize\ttfamily \label{lodash_8camelcase_2index_8js_a010ca1beed0f67fe790aa7eb5d13aa77} 
+var re\+Has\+Unicode = Reg\+Exp(\textquotesingle{}\mbox{[}\textquotesingle{} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_acfd4af6a55c6291ade760cc82e35f69c}{rs\+ZWJ}} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_aac2496148c2bae8f025a68dc5a0b9417}{rs\+Astral\+Range}} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_a885aad772f5897d96e5f8767bcec88ed}{rs\+Combo\+Marks\+Range}} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_a515a0cb5a96082753fd36385bf86693e}{rs\+Combo\+Symbols\+Range}} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_a368fad66a39831fdfcf197df7a8e36de}{rs\+Var\+Range}} + \textquotesingle{}\mbox{]}\textquotesingle{})}
+
+Used to detect strings with \href{http://eev.ee/blog/2015/09/12/dark-corners-of-unicode/}{\texttt{ zero-\/width joiners or code points from the astral planes}}. \Hypertarget{lodash_8camelcase_2index_8js_aeac7f0b4d4027274c660f58a409f96b9}\index{index.js@{index.js}!reHasUnicodeWord@{reHasUnicodeWord}}
+\index{reHasUnicodeWord@{reHasUnicodeWord}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{reHasUnicodeWord}{reHasUnicodeWord}}
+{\footnotesize\ttfamily \label{lodash_8camelcase_2index_8js_aeac7f0b4d4027274c660f58a409f96b9} 
+var re\+Has\+Unicode\+Word = /\mbox{[}\mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}-\/z\mbox{]}\mbox{[}\mbox{\hyperlink{class_a}{A}}-\/\mbox{\hyperlink{ed25519_8js_a91b180d4aa37a81e516896ad77d1837c}{Z}}\mbox{]}\texorpdfstring{$\vert$}{|}\mbox{[}\mbox{\hyperlink{class_a}{A}}-\/\mbox{\hyperlink{ed25519_8js_a91b180d4aa37a81e516896ad77d1837c}{Z}}\mbox{]}\{2,\}\mbox{[}\mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}-\/z\mbox{]}\texorpdfstring{$\vert$}{|}\mbox{[}0-\/9\mbox{]}\mbox{[}\mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}-\/zA-\/\mbox{\hyperlink{ed25519_8js_a91b180d4aa37a81e516896ad77d1837c}{Z}}\mbox{]}\texorpdfstring{$\vert$}{|}\mbox{[}\mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}-\/zA-\/\mbox{\hyperlink{ed25519_8js_a91b180d4aa37a81e516896ad77d1837c}{Z}}\mbox{]}\mbox{[}0-\/9\mbox{]}\texorpdfstring{$\vert$}{|}\mbox{[}\texorpdfstring{$^\wedge$}{\string^}\mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}-\/zA-\/Z0-\/9 \mbox{]}/}
+
+Used to detect strings that need a more robust regexp to match words. \Hypertarget{lodash_8camelcase_2index_8js_a169d461afaf3913560e04d4932609d64}\index{index.js@{index.js}!reLatin@{reLatin}}
+\index{reLatin@{reLatin}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{reLatin}{reLatin}}
+{\footnotesize\ttfamily \label{lodash_8camelcase_2index_8js_a169d461afaf3913560e04d4932609d64} 
+var re\+Latin = /\mbox{[}\textbackslash{}xc0-\/\textbackslash{}xd6\textbackslash{}xd8-\/\textbackslash{}xf6\textbackslash{}xf8-\/\textbackslash{}xff\textbackslash{}u0100-\/\textbackslash{}u017f\mbox{]}/\mbox{\hyperlink{ordered-map_8min_8js_a103df269476e78897c9c4c6cb8f4eb06}{g}}}
+
+Used to match Latin Unicode letters (excluding mathematical operators). \Hypertarget{lodash_8camelcase_2index_8js_a2e8c82349f5b5f0b3d19fccc6696624c}\index{index.js@{index.js}!reUnicode@{reUnicode}}
+\index{reUnicode@{reUnicode}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{reUnicode}{reUnicode}}
+{\footnotesize\ttfamily \label{lodash_8camelcase_2index_8js_a2e8c82349f5b5f0b3d19fccc6696624c} 
+var re\+Unicode = Reg\+Exp(\mbox{\hyperlink{lodash_8camelcase_2index_8js_a5752905f28b8221061c838df8b4e271c}{rs\+Fitz}} + \textquotesingle{}(?=\textquotesingle{} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_a5752905f28b8221061c838df8b4e271c}{rs\+Fitz}} + \textquotesingle{})\texorpdfstring{$\vert$}{|}\textquotesingle{} + \mbox{\hyperlink{__unicode_size_8js_a964a27997131caaceb6fcdca696101f7}{rs\+Symbol}} + \mbox{\hyperlink{__unicode_size_8js_a58244c418931ab391338275779f45c0b}{rs\+Seq}}, \textquotesingle{}\mbox{\hyperlink{ordered-map_8min_8js_a103df269476e78897c9c4c6cb8f4eb06}{g}}\textquotesingle{})}
+
+Used to match \href{https://mathiasbynens.be/notes/javascript-unicode}{\texttt{ string symbols}}. \Hypertarget{lodash_8camelcase_2index_8js_a4c6b7c5b5e72a9e5f3b36f542f4dad32}\index{index.js@{index.js}!reUnicodeWord@{reUnicodeWord}}
+\index{reUnicodeWord@{reUnicodeWord}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{reUnicodeWord}{reUnicodeWord}}
+{\footnotesize\ttfamily \label{lodash_8camelcase_2index_8js_a4c6b7c5b5e72a9e5f3b36f542f4dad32} 
+var re\+Unicode\+Word}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ RegExp([}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{lodash_8camelcase_2index_8js_ac8cd4706ddef85479900518ece536f8b}{rsUpper}}\ +\ \textcolor{charliteral}{'?'}\ +\ \mbox{\hyperlink{lodash_8camelcase_2index_8js_a4cb46cc0d7707ea25c34a6215db18fa0}{rsLower}}\ +\ \textcolor{charliteral}{'+'}\ +\ \mbox{\hyperlink{lodash_8camelcase_2index_8js_a83d79451280cd5885cc130e73ee09d56}{rsOptLowerContr}}\ +\ \textcolor{stringliteral}{'(?='}\ +\ [\mbox{\hyperlink{lodash_8camelcase_2index_8js_a1fd9d77478da4a84d0bccddb8d2cf2d1}{rsBreak}},\ \mbox{\hyperlink{lodash_8camelcase_2index_8js_ac8cd4706ddef85479900518ece536f8b}{rsUpper}},\ \textcolor{charliteral}{'\$'}].\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a500bc97a63b7c35b84493a7f90ef44d6}{join}}(\textcolor{charliteral}{'|'})\ +\ \textcolor{charliteral}{')'},}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{lodash_8camelcase_2index_8js_a44373a57d291495becfcd7feda56385e}{rsUpperMisc}}\ +\ \textcolor{charliteral}{'+'}\ +\ rsOptUpperContr\ +\ \textcolor{stringliteral}{'(?='}\ +\ [\mbox{\hyperlink{lodash_8camelcase_2index_8js_a1fd9d77478da4a84d0bccddb8d2cf2d1}{rsBreak}},\ \mbox{\hyperlink{lodash_8camelcase_2index_8js_ac8cd4706ddef85479900518ece536f8b}{rsUpper}}\ +\ \mbox{\hyperlink{lodash_8camelcase_2index_8js_a9a13d28a4e6d2a036c1a431a3061fc71}{rsLowerMisc}},\ \textcolor{charliteral}{'\$'}].\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a500bc97a63b7c35b84493a7f90ef44d6}{join}}(\textcolor{charliteral}{'|'})\ +\ \textcolor{charliteral}{')'},}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{lodash_8camelcase_2index_8js_ac8cd4706ddef85479900518ece536f8b}{rsUpper}}\ +\ \textcolor{charliteral}{'?'}\ +\ \mbox{\hyperlink{lodash_8camelcase_2index_8js_a9a13d28a4e6d2a036c1a431a3061fc71}{rsLowerMisc}}\ +\ \textcolor{charliteral}{'+'}\ +\ \mbox{\hyperlink{lodash_8camelcase_2index_8js_a83d79451280cd5885cc130e73ee09d56}{rsOptLowerContr}},}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{lodash_8camelcase_2index_8js_ac8cd4706ddef85479900518ece536f8b}{rsUpper}}\ +\ \textcolor{charliteral}{'+'}\ +\ rsOptUpperContr,}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{lodash_8camelcase_2index_8js_adb2f2eaf3bad3c28340d7f6cf5ee06ae}{rsDigits}},}
+\DoxyCodeLine{\ \ rsEmoji}
+\DoxyCodeLine{].\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a500bc97a63b7c35b84493a7f90ef44d6}{join}}(\textcolor{charliteral}{'|'}),\ \textcolor{charliteral}{'g'})}
+
+\end{DoxyCode}
+Used to match complex or compound words. \Hypertarget{lodash_8camelcase_2index_8js_a140a0e3ac7212b99c89e23ee2469ff71}\index{index.js@{index.js}!rsApos@{rsApos}}
+\index{rsApos@{rsApos}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{rsApos}{rsApos}}
+{\footnotesize\ttfamily \label{lodash_8camelcase_2index_8js_a140a0e3ac7212b99c89e23ee2469ff71} 
+var rs\+Apos = "{}\mbox{[}\textquotesingle{}\textbackslash{}u2019\mbox{]}"{}}
+
+Used to compose unicode capture groups. \Hypertarget{lodash_8camelcase_2index_8js_ad44cc6223ee38fdd0fc775b63c495a1b}\index{index.js@{index.js}!rsAstral@{rsAstral}}
+\index{rsAstral@{rsAstral}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{rsAstral}{rsAstral}}
+{\footnotesize\ttfamily \label{lodash_8camelcase_2index_8js_ad44cc6223ee38fdd0fc775b63c495a1b} 
+var rs\+Astral = \textquotesingle{}\mbox{[}\textquotesingle{} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_aac2496148c2bae8f025a68dc5a0b9417}{rs\+Astral\+Range}} + \textquotesingle{}\mbox{]}\textquotesingle{}}
+
+\Hypertarget{lodash_8camelcase_2index_8js_aac2496148c2bae8f025a68dc5a0b9417}\index{index.js@{index.js}!rsAstralRange@{rsAstralRange}}
+\index{rsAstralRange@{rsAstralRange}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{rsAstralRange}{rsAstralRange}}
+{\footnotesize\ttfamily \label{lodash_8camelcase_2index_8js_aac2496148c2bae8f025a68dc5a0b9417} 
+var rs\+Astral\+Range = \textquotesingle{}\textbackslash{}\textbackslash{}ud800-\/\textbackslash{}\textbackslash{}udfff\textquotesingle{}}
+
+Used to compose unicode character classes. \Hypertarget{lodash_8camelcase_2index_8js_a1fd9d77478da4a84d0bccddb8d2cf2d1}\index{index.js@{index.js}!rsBreak@{rsBreak}}
+\index{rsBreak@{rsBreak}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{rsBreak}{rsBreak}}
+{\footnotesize\ttfamily \label{lodash_8camelcase_2index_8js_a1fd9d77478da4a84d0bccddb8d2cf2d1} 
+var rs\+Break = \textquotesingle{}\mbox{[}\textquotesingle{} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_a04c66ccbf382bd9569fd1ee5250474b9}{rs\+Break\+Range}} + \textquotesingle{}\mbox{]}\textquotesingle{}}
+
+\Hypertarget{lodash_8camelcase_2index_8js_a04c66ccbf382bd9569fd1ee5250474b9}\index{index.js@{index.js}!rsBreakRange@{rsBreakRange}}
+\index{rsBreakRange@{rsBreakRange}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{rsBreakRange}{rsBreakRange}}
+{\footnotesize\ttfamily \label{lodash_8camelcase_2index_8js_a04c66ccbf382bd9569fd1ee5250474b9} 
+var rs\+Break\+Range = \mbox{\hyperlink{lodash_8camelcase_2index_8js_a19352cbc3d761f1d436e5564807022dd}{rs\+Math\+Op\+Range}} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_a46acbe66d22e9d08a5933c269c5298bc}{rs\+Non\+Char\+Range}} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_a3c0fb21cc8d743f7cd107dbc8cf998b2}{rs\+Punctuation\+Range}} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_a04534f90f88407613964ec336511e623}{rs\+Space\+Range}}}
+
+\Hypertarget{lodash_8camelcase_2index_8js_a3ad6c09dbc4945188e86cf6189da745c}\index{index.js@{index.js}!rsCombo@{rsCombo}}
+\index{rsCombo@{rsCombo}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{rsCombo}{rsCombo}}
+{\footnotesize\ttfamily \label{lodash_8camelcase_2index_8js_a3ad6c09dbc4945188e86cf6189da745c} 
+var rs\+Combo = \textquotesingle{}\mbox{[}\textquotesingle{} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_a885aad772f5897d96e5f8767bcec88ed}{rs\+Combo\+Marks\+Range}} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_a515a0cb5a96082753fd36385bf86693e}{rs\+Combo\+Symbols\+Range}} + \textquotesingle{}\mbox{]}\textquotesingle{}}
+
+\Hypertarget{lodash_8camelcase_2index_8js_a885aad772f5897d96e5f8767bcec88ed}\index{index.js@{index.js}!rsComboMarksRange@{rsComboMarksRange}}
+\index{rsComboMarksRange@{rsComboMarksRange}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{rsComboMarksRange}{rsComboMarksRange}}
+{\footnotesize\ttfamily \label{lodash_8camelcase_2index_8js_a885aad772f5897d96e5f8767bcec88ed} 
+var rs\+Combo\+Marks\+Range = \textquotesingle{}\textbackslash{}\textbackslash{}u0300-\/\textbackslash{}\textbackslash{}u036f\textbackslash{}\textbackslash{}ufe20-\/\textbackslash{}\textbackslash{}ufe23\textquotesingle{}}
+
+\Hypertarget{lodash_8camelcase_2index_8js_a515a0cb5a96082753fd36385bf86693e}\index{index.js@{index.js}!rsComboSymbolsRange@{rsComboSymbolsRange}}
+\index{rsComboSymbolsRange@{rsComboSymbolsRange}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{rsComboSymbolsRange}{rsComboSymbolsRange}}
+{\footnotesize\ttfamily \label{lodash_8camelcase_2index_8js_a515a0cb5a96082753fd36385bf86693e} 
+var rs\+Combo\+Symbols\+Range = \textquotesingle{}\textbackslash{}\textbackslash{}u20d0-\/\textbackslash{}\textbackslash{}u20f0\textquotesingle{}}
+
+\Hypertarget{lodash_8camelcase_2index_8js_adb2f2eaf3bad3c28340d7f6cf5ee06ae}\index{index.js@{index.js}!rsDigits@{rsDigits}}
+\index{rsDigits@{rsDigits}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{rsDigits}{rsDigits}}
+{\footnotesize\ttfamily \label{lodash_8camelcase_2index_8js_adb2f2eaf3bad3c28340d7f6cf5ee06ae} 
+var rs\+Digits = \textquotesingle{}\textbackslash{}\textbackslash{}\mbox{\hyperlink{uuid_8min_8js_aeb337d295abaddb5ec3cb34cc2e2bbc9}{d}}+\textquotesingle{}}
+
+\Hypertarget{lodash_8camelcase_2index_8js_afa108fa701b420f14057da2cd2a551e9}\index{index.js@{index.js}!rsDingbat@{rsDingbat}}
+\index{rsDingbat@{rsDingbat}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{rsDingbat}{rsDingbat}}
+{\footnotesize\ttfamily \label{lodash_8camelcase_2index_8js_afa108fa701b420f14057da2cd2a551e9} 
+var rs\+Dingbat = \textquotesingle{}\mbox{[}\textquotesingle{} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_a870b5eb1ebfd601464b4e9365fa37e4f}{rs\+Dingbat\+Range}} + \textquotesingle{}\mbox{]}\textquotesingle{}}
+
+\Hypertarget{lodash_8camelcase_2index_8js_a870b5eb1ebfd601464b4e9365fa37e4f}\index{index.js@{index.js}!rsDingbatRange@{rsDingbatRange}}
+\index{rsDingbatRange@{rsDingbatRange}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{rsDingbatRange}{rsDingbatRange}}
+{\footnotesize\ttfamily \label{lodash_8camelcase_2index_8js_a870b5eb1ebfd601464b4e9365fa37e4f} 
+var rs\+Dingbat\+Range = \textquotesingle{}\textbackslash{}\textbackslash{}u2700-\/\textbackslash{}\textbackslash{}u27bf\textquotesingle{}}
+
+\Hypertarget{lodash_8camelcase_2index_8js_a5752905f28b8221061c838df8b4e271c}\index{index.js@{index.js}!rsFitz@{rsFitz}}
+\index{rsFitz@{rsFitz}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{rsFitz}{rsFitz}}
+{\footnotesize\ttfamily \label{lodash_8camelcase_2index_8js_a5752905f28b8221061c838df8b4e271c} 
+var rs\+Fitz = \textquotesingle{}\textbackslash{}\textbackslash{}ud83c\mbox{[}\textbackslash{}\textbackslash{}udffb-\/\textbackslash{}\textbackslash{}udfff\mbox{]}\textquotesingle{}}
+
+\Hypertarget{lodash_8camelcase_2index_8js_a4cb46cc0d7707ea25c34a6215db18fa0}\index{index.js@{index.js}!rsLower@{rsLower}}
+\index{rsLower@{rsLower}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{rsLower}{rsLower}}
+{\footnotesize\ttfamily \label{lodash_8camelcase_2index_8js_a4cb46cc0d7707ea25c34a6215db18fa0} 
+var rs\+Lower = \textquotesingle{}\mbox{[}\textquotesingle{} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_a173ecff5c72a892e0ced1fcdafd1b5ef}{rs\+Lower\+Range}} + \textquotesingle{}\mbox{]}\textquotesingle{}}
+
+\Hypertarget{lodash_8camelcase_2index_8js_a9a13d28a4e6d2a036c1a431a3061fc71}\index{index.js@{index.js}!rsLowerMisc@{rsLowerMisc}}
+\index{rsLowerMisc@{rsLowerMisc}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{rsLowerMisc}{rsLowerMisc}}
+{\footnotesize\ttfamily \label{lodash_8camelcase_2index_8js_a9a13d28a4e6d2a036c1a431a3061fc71} 
+var rs\+Lower\+Misc = \textquotesingle{}(?\+:\textquotesingle{} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_a4cb46cc0d7707ea25c34a6215db18fa0}{rs\+Lower}} + \textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_a59cfaeaf6019b95fd58826bf0c4f77f0}{rs\+Misc}} + \textquotesingle{})\textquotesingle{}}
+
+Used to compose unicode regexes. \Hypertarget{lodash_8camelcase_2index_8js_a173ecff5c72a892e0ced1fcdafd1b5ef}\index{index.js@{index.js}!rsLowerRange@{rsLowerRange}}
+\index{rsLowerRange@{rsLowerRange}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{rsLowerRange}{rsLowerRange}}
+{\footnotesize\ttfamily \label{lodash_8camelcase_2index_8js_a173ecff5c72a892e0ced1fcdafd1b5ef} 
+var rs\+Lower\+Range = \textquotesingle{}\mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}-\/z\textbackslash{}\textbackslash{}xdf-\/\textbackslash{}\textbackslash{}xf6\textbackslash{}\textbackslash{}xf8-\/\textbackslash{}\textbackslash{}xff\textquotesingle{}}
+
+\Hypertarget{lodash_8camelcase_2index_8js_a19352cbc3d761f1d436e5564807022dd}\index{index.js@{index.js}!rsMathOpRange@{rsMathOpRange}}
+\index{rsMathOpRange@{rsMathOpRange}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{rsMathOpRange}{rsMathOpRange}}
+{\footnotesize\ttfamily \label{lodash_8camelcase_2index_8js_a19352cbc3d761f1d436e5564807022dd} 
+var rs\+Math\+Op\+Range = \textquotesingle{}\textbackslash{}\textbackslash{}xac\textbackslash{}\textbackslash{}xb1\textbackslash{}\textbackslash{}xd7\textbackslash{}\textbackslash{}xf7\textquotesingle{}}
+
+\Hypertarget{lodash_8camelcase_2index_8js_a59cfaeaf6019b95fd58826bf0c4f77f0}\index{index.js@{index.js}!rsMisc@{rsMisc}}
+\index{rsMisc@{rsMisc}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{rsMisc}{rsMisc}}
+{\footnotesize\ttfamily \label{lodash_8camelcase_2index_8js_a59cfaeaf6019b95fd58826bf0c4f77f0} 
+var rs\+Misc = \textquotesingle{}\mbox{[}\texorpdfstring{$^\wedge$}{\string^}\textquotesingle{} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_aac2496148c2bae8f025a68dc5a0b9417}{rs\+Astral\+Range}} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_a04c66ccbf382bd9569fd1ee5250474b9}{rs\+Break\+Range}} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_adb2f2eaf3bad3c28340d7f6cf5ee06ae}{rs\+Digits}} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_a870b5eb1ebfd601464b4e9365fa37e4f}{rs\+Dingbat\+Range}} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_a173ecff5c72a892e0ced1fcdafd1b5ef}{rs\+Lower\+Range}} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_a01c70e930c613f7f103c45234579a264}{rs\+Upper\+Range}} + \textquotesingle{}\mbox{]}\textquotesingle{}}
+
+\Hypertarget{lodash_8camelcase_2index_8js_a32c0ab361a1436f17a33dfadcad1f131}\index{index.js@{index.js}!rsModifier@{rsModifier}}
+\index{rsModifier@{rsModifier}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{rsModifier}{rsModifier}}
+{\footnotesize\ttfamily \label{lodash_8camelcase_2index_8js_a32c0ab361a1436f17a33dfadcad1f131} 
+var rs\+Modifier = \textquotesingle{}(?\+:\textquotesingle{} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_a3ad6c09dbc4945188e86cf6189da745c}{rs\+Combo}} + \textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_a5752905f28b8221061c838df8b4e271c}{rs\+Fitz}} + \textquotesingle{})\textquotesingle{}}
+
+\Hypertarget{lodash_8camelcase_2index_8js_a33d475bbbeb29386a38e402e3e087181}\index{index.js@{index.js}!rsNonAstral@{rsNonAstral}}
+\index{rsNonAstral@{rsNonAstral}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{rsNonAstral}{rsNonAstral}}
+{\footnotesize\ttfamily \label{lodash_8camelcase_2index_8js_a33d475bbbeb29386a38e402e3e087181} 
+var rs\+Non\+Astral = \textquotesingle{}\mbox{[}\texorpdfstring{$^\wedge$}{\string^}\textquotesingle{} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_aac2496148c2bae8f025a68dc5a0b9417}{rs\+Astral\+Range}} + \textquotesingle{}\mbox{]}\textquotesingle{}}
+
+\Hypertarget{lodash_8camelcase_2index_8js_a46acbe66d22e9d08a5933c269c5298bc}\index{index.js@{index.js}!rsNonCharRange@{rsNonCharRange}}
+\index{rsNonCharRange@{rsNonCharRange}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{rsNonCharRange}{rsNonCharRange}}
+{\footnotesize\ttfamily \label{lodash_8camelcase_2index_8js_a46acbe66d22e9d08a5933c269c5298bc} 
+var rs\+Non\+Char\+Range = \textquotesingle{}\textbackslash{}\textbackslash{}x00-\/\textbackslash{}\textbackslash{}x2f\textbackslash{}\textbackslash{}x3a-\/\textbackslash{}\textbackslash{}x40\textbackslash{}\textbackslash{}x5b-\/\textbackslash{}\textbackslash{}x60\textbackslash{}\textbackslash{}x7b-\/\textbackslash{}\textbackslash{}xbf\textquotesingle{}}
+
+\Hypertarget{lodash_8camelcase_2index_8js_a83d79451280cd5885cc130e73ee09d56}\index{index.js@{index.js}!rsOptLowerContr@{rsOptLowerContr}}
+\index{rsOptLowerContr@{rsOptLowerContr}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{rsOptLowerContr}{rsOptLowerContr}}
+{\footnotesize\ttfamily \label{lodash_8camelcase_2index_8js_a83d79451280cd5885cc130e73ee09d56} 
+var rs\+Opt\+Lower\+Contr}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{stringliteral}{'(?:'}\ +\ \mbox{\hyperlink{lodash_8camelcase_2index_8js_a140a0e3ac7212b99c89e23ee2469ff71}{rsApos}}\ +\ \textcolor{stringliteral}{'(?:d|ll|m|re|s|t|ve))?'},}
+\DoxyCodeLine{\ \ \ \ rsOptUpperContr\ =\ \textcolor{stringliteral}{'(?:'}\ +\ \mbox{\hyperlink{lodash_8camelcase_2index_8js_a140a0e3ac7212b99c89e23ee2469ff71}{rsApos}}\ +\ \textcolor{stringliteral}{'(?:D|LL|M|RE|S|T|VE))?'},}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{__unicode_size_8js_a854e7397b94c138b6b335ca16caa8532}{reOptMod}}\ =\ \mbox{\hyperlink{lodash_8camelcase_2index_8js_a32c0ab361a1436f17a33dfadcad1f131}{rsModifier}}\ +\ \textcolor{charliteral}{'?'},}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{__unicode_size_8js_a0a4ad92f19582b6a98cf8f341081b602}{rsOptVar}}\ =\ \textcolor{charliteral}{'['}\ +\ \mbox{\hyperlink{lodash_8camelcase_2index_8js_a368fad66a39831fdfcf197df7a8e36de}{rsVarRange}}\ +\ \textcolor{stringliteral}{']?'},}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{__unicode_size_8js_aad4335ccc826c6471c34ad93eccd55c6}{rsOptJoin}}\ =\ \textcolor{stringliteral}{'(?:'}\ +\ \mbox{\hyperlink{lodash_8camelcase_2index_8js_acfd4af6a55c6291ade760cc82e35f69c}{rsZWJ}}\ +\ \textcolor{stringliteral}{'(?:'}\ +\ [\mbox{\hyperlink{lodash_8camelcase_2index_8js_a33d475bbbeb29386a38e402e3e087181}{rsNonAstral}},\ \mbox{\hyperlink{lodash_8camelcase_2index_8js_a8ba6c51af61fd0f87b05f10dec2142b6}{rsRegional}},\ \mbox{\hyperlink{lodash_8camelcase_2index_8js_ab897b030c09495e606b5ebb6ee7332a3}{rsSurrPair}}].join(\textcolor{charliteral}{'|'})\ +\ \textcolor{charliteral}{')'}\ +\ \mbox{\hyperlink{__unicode_size_8js_a0a4ad92f19582b6a98cf8f341081b602}{rsOptVar}}\ +\ \mbox{\hyperlink{__unicode_size_8js_a854e7397b94c138b6b335ca16caa8532}{reOptMod}}\ +\ \textcolor{stringliteral}{')*'},}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{__unicode_size_8js_a58244c418931ab391338275779f45c0b}{rsSeq}}\ =\ \mbox{\hyperlink{__unicode_size_8js_a0a4ad92f19582b6a98cf8f341081b602}{rsOptVar}}\ +\ \mbox{\hyperlink{__unicode_size_8js_a854e7397b94c138b6b335ca16caa8532}{reOptMod}}\ +\ \mbox{\hyperlink{__unicode_size_8js_aad4335ccc826c6471c34ad93eccd55c6}{rsOptJoin}},}
+\DoxyCodeLine{\ \ \ \ rsEmoji\ =\ \textcolor{stringliteral}{'(?:'}\ +\ [\mbox{\hyperlink{lodash_8camelcase_2index_8js_afa108fa701b420f14057da2cd2a551e9}{rsDingbat}},\ \mbox{\hyperlink{lodash_8camelcase_2index_8js_a8ba6c51af61fd0f87b05f10dec2142b6}{rsRegional}},\ \mbox{\hyperlink{lodash_8camelcase_2index_8js_ab897b030c09495e606b5ebb6ee7332a3}{rsSurrPair}}].join(\textcolor{charliteral}{'|'})\ +\ \textcolor{charliteral}{')'}\ +\ \mbox{\hyperlink{__unicode_size_8js_a58244c418931ab391338275779f45c0b}{rsSeq}},}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{__unicode_size_8js_a964a27997131caaceb6fcdca696101f7}{rsSymbol}}\ =\ \textcolor{stringliteral}{'(?:'}\ +\ [\mbox{\hyperlink{lodash_8camelcase_2index_8js_a33d475bbbeb29386a38e402e3e087181}{rsNonAstral}}\ +\ \mbox{\hyperlink{lodash_8camelcase_2index_8js_a3ad6c09dbc4945188e86cf6189da745c}{rsCombo}}\ +\ \textcolor{charliteral}{'?'},\ \mbox{\hyperlink{lodash_8camelcase_2index_8js_a3ad6c09dbc4945188e86cf6189da745c}{rsCombo}},\ \mbox{\hyperlink{lodash_8camelcase_2index_8js_a8ba6c51af61fd0f87b05f10dec2142b6}{rsRegional}},\ \mbox{\hyperlink{lodash_8camelcase_2index_8js_ab897b030c09495e606b5ebb6ee7332a3}{rsSurrPair}},\ \mbox{\hyperlink{lodash_8camelcase_2index_8js_ad44cc6223ee38fdd0fc775b63c495a1b}{rsAstral}}].join(\textcolor{charliteral}{'|'})\ +\ \textcolor{charliteral}{')'}}
+
+\end{DoxyCode}
+\Hypertarget{lodash_8camelcase_2index_8js_a3c0fb21cc8d743f7cd107dbc8cf998b2}\index{index.js@{index.js}!rsPunctuationRange@{rsPunctuationRange}}
+\index{rsPunctuationRange@{rsPunctuationRange}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{rsPunctuationRange}{rsPunctuationRange}}
+{\footnotesize\ttfamily \label{lodash_8camelcase_2index_8js_a3c0fb21cc8d743f7cd107dbc8cf998b2} 
+var rs\+Punctuation\+Range = \textquotesingle{}\textbackslash{}\textbackslash{}u2000-\/\textbackslash{}\textbackslash{}u206f\textquotesingle{}}
+
+\Hypertarget{lodash_8camelcase_2index_8js_a8ba6c51af61fd0f87b05f10dec2142b6}\index{index.js@{index.js}!rsRegional@{rsRegional}}
+\index{rsRegional@{rsRegional}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{rsRegional}{rsRegional}}
+{\footnotesize\ttfamily \label{lodash_8camelcase_2index_8js_a8ba6c51af61fd0f87b05f10dec2142b6} 
+var rs\+Regional = \textquotesingle{}(?\+:\textbackslash{}\textbackslash{}ud83c\mbox{[}\textbackslash{}\textbackslash{}udde6-\/\textbackslash{}\textbackslash{}uddff\mbox{]})\{2\}\textquotesingle{}}
+
+\Hypertarget{lodash_8camelcase_2index_8js_a04534f90f88407613964ec336511e623}\index{index.js@{index.js}!rsSpaceRange@{rsSpaceRange}}
+\index{rsSpaceRange@{rsSpaceRange}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{rsSpaceRange}{rsSpaceRange}}
+{\footnotesize\ttfamily \label{lodash_8camelcase_2index_8js_a04534f90f88407613964ec336511e623} 
+var rs\+Space\+Range = \textquotesingle{} \textbackslash{}\textbackslash{}t\textbackslash{}\textbackslash{}x0b\textbackslash{}\textbackslash{}f\textbackslash{}\textbackslash{}xa0\textbackslash{}\textbackslash{}ufeff\textbackslash{}\textbackslash{}n\textbackslash{}\textbackslash{}r\textbackslash{}\textbackslash{}u2028\textbackslash{}\textbackslash{}u2029\textbackslash{}\textbackslash{}u1680\textbackslash{}\textbackslash{}u180e\textbackslash{}\textbackslash{}u2000\textbackslash{}\textbackslash{}u2001\textbackslash{}\textbackslash{}u2002\textbackslash{}\textbackslash{}u2003\textbackslash{}\textbackslash{}u2004\textbackslash{}\textbackslash{}u2005\textbackslash{}\textbackslash{}u2006\textbackslash{}\textbackslash{}u2007\textbackslash{}\textbackslash{}u2008\textbackslash{}\textbackslash{}u2009\textbackslash{}\textbackslash{}u200a\textbackslash{}\textbackslash{}u202f\textbackslash{}\textbackslash{}u205f\textbackslash{}\textbackslash{}u3000\textquotesingle{}}
+
+\Hypertarget{lodash_8camelcase_2index_8js_ab897b030c09495e606b5ebb6ee7332a3}\index{index.js@{index.js}!rsSurrPair@{rsSurrPair}}
+\index{rsSurrPair@{rsSurrPair}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{rsSurrPair}{rsSurrPair}}
+{\footnotesize\ttfamily \label{lodash_8camelcase_2index_8js_ab897b030c09495e606b5ebb6ee7332a3} 
+var rs\+Surr\+Pair = \textquotesingle{}\mbox{[}\textbackslash{}\textbackslash{}ud800-\/\textbackslash{}\textbackslash{}udbff\mbox{]}\mbox{[}\textbackslash{}\textbackslash{}udc00-\/\textbackslash{}\textbackslash{}udfff\mbox{]}\textquotesingle{}}
+
+\Hypertarget{lodash_8camelcase_2index_8js_ac8cd4706ddef85479900518ece536f8b}\index{index.js@{index.js}!rsUpper@{rsUpper}}
+\index{rsUpper@{rsUpper}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{rsUpper}{rsUpper}}
+{\footnotesize\ttfamily \label{lodash_8camelcase_2index_8js_ac8cd4706ddef85479900518ece536f8b} 
+var rs\+Upper = \textquotesingle{}\mbox{[}\textquotesingle{} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_a01c70e930c613f7f103c45234579a264}{rs\+Upper\+Range}} + \textquotesingle{}\mbox{]}\textquotesingle{}}
+
+\Hypertarget{lodash_8camelcase_2index_8js_a44373a57d291495becfcd7feda56385e}\index{index.js@{index.js}!rsUpperMisc@{rsUpperMisc}}
+\index{rsUpperMisc@{rsUpperMisc}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{rsUpperMisc}{rsUpperMisc}}
+{\footnotesize\ttfamily \label{lodash_8camelcase_2index_8js_a44373a57d291495becfcd7feda56385e} 
+var rs\+Upper\+Misc = \textquotesingle{}(?\+:\textquotesingle{} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_ac8cd4706ddef85479900518ece536f8b}{rs\+Upper}} + \textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{} + \mbox{\hyperlink{lodash_8camelcase_2index_8js_a59cfaeaf6019b95fd58826bf0c4f77f0}{rs\+Misc}} + \textquotesingle{})\textquotesingle{}}
+
+\Hypertarget{lodash_8camelcase_2index_8js_a01c70e930c613f7f103c45234579a264}\index{index.js@{index.js}!rsUpperRange@{rsUpperRange}}
+\index{rsUpperRange@{rsUpperRange}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{rsUpperRange}{rsUpperRange}}
+{\footnotesize\ttfamily \label{lodash_8camelcase_2index_8js_a01c70e930c613f7f103c45234579a264} 
+var rs\+Upper\+Range = \textquotesingle{}\mbox{\hyperlink{class_a}{A}}-\/Z\textbackslash{}\textbackslash{}xc0-\/\textbackslash{}\textbackslash{}xd6\textbackslash{}\textbackslash{}xd8-\/\textbackslash{}\textbackslash{}xde\textquotesingle{}}
+
+\Hypertarget{lodash_8camelcase_2index_8js_a368fad66a39831fdfcf197df7a8e36de}\index{index.js@{index.js}!rsVarRange@{rsVarRange}}
+\index{rsVarRange@{rsVarRange}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{rsVarRange}{rsVarRange}}
+{\footnotesize\ttfamily \label{lodash_8camelcase_2index_8js_a368fad66a39831fdfcf197df7a8e36de} 
+var rs\+Var\+Range = \textquotesingle{}\textbackslash{}\textbackslash{}ufe0e\textbackslash{}\textbackslash{}ufe0f\textquotesingle{}}
+
+\Hypertarget{lodash_8camelcase_2index_8js_acfd4af6a55c6291ade760cc82e35f69c}\index{index.js@{index.js}!rsZWJ@{rsZWJ}}
+\index{rsZWJ@{rsZWJ}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{rsZWJ}{rsZWJ}}
+{\footnotesize\ttfamily \label{lodash_8camelcase_2index_8js_acfd4af6a55c6291ade760cc82e35f69c} 
+var rs\+ZWJ = \textquotesingle{}\textbackslash{}\textbackslash{}u200d\textquotesingle{}}
+
+\Hypertarget{lodash_8camelcase_2index_8js_a82320ff8df9ec6e5762da04020e18d26}\index{index.js@{index.js}!symbolTag@{symbolTag}}
+\index{symbolTag@{symbolTag}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{symbolTag}{symbolTag}}
+{\footnotesize\ttfamily \label{lodash_8camelcase_2index_8js_a82320ff8df9ec6e5762da04020e18d26} 
+var symbol\+Tag = \textquotesingle{}\mbox{[}\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}} \mbox{\hyperlink{__base_get_tag_8js_a9223501a4f1d046befc3fb8f0bf5c1e4}{Symbol}}\mbox{]}\textquotesingle{}}
+
+{\ttfamily Object\#to\+String} result references. 

@@ -1,0 +1,179 @@
+\doxysection{Round\+Robin\+Load\+Balancer Class Reference}
+\hypertarget{class_round_robin_load_balancer}{}\label{class_round_robin_load_balancer}\index{RoundRobinLoadBalancer@{RoundRobinLoadBalancer}}
+
+
+Collaboration diagram for Round\+Robin\+Load\+Balancer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=215pt]{class_round_robin_load_balancer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_round_robin_load_balancer_a54c87b60995726b6bb276d094c323976}{constructor}} (channel\+Control\+Helper, \mbox{\hyperlink{_0dgrpc_2grpc-js_2build_2src_2index_8js_a88f1ca34064fef6dc1e29d7d1cf5cfcf}{credentials}}, options)
+\item 
+\mbox{\hyperlink{class_round_robin_load_balancer_a2165c62c11b091042f684496be8efb9b}{count\+Children\+With\+State}} (\mbox{\hyperlink{asynckit_2lib_2state_8js_a7e1b0ba367facd663d59372bd204ea01}{state}})
+\item 
+\mbox{\hyperlink{class_round_robin_load_balancer_a1c99805a8509b0b302f6a12ceca6fc29}{calculate\+And\+Update\+State}} ()
+\item 
+\mbox{\hyperlink{class_round_robin_load_balancer_a1f1642b1f3e827785918105fe06d9555}{update\+State}} (new\+State, picker)
+\item 
+\mbox{\hyperlink{class_round_robin_load_balancer_af428f6d9d9649a42eead7b4a32335a7f}{reset\+Subchannel\+List}} ()
+\item 
+\mbox{\hyperlink{class_round_robin_load_balancer_ad9d1a798325eaaa6c33098c9a2678476}{update\+Address\+List}} (endpoint\+List, lb\+Config)
+\item 
+\mbox{\hyperlink{class_round_robin_load_balancer_adcca7c1f033f8176767f5d01b95afd09}{exit\+Idle}} ()
+\item 
+\mbox{\hyperlink{class_round_robin_load_balancer_aa9a6d6a65b84d824c92a1ba9546c1264}{reset\+Backoff}} ()
+\item 
+\mbox{\hyperlink{class_round_robin_load_balancer_a1b1de2101238e73dac875aa15f9717c7}{destroy}} ()
+\item 
+\mbox{\hyperlink{class_round_robin_load_balancer_a1488c8eea19c9c50906c3e13ed3d907e}{get\+Type\+Name}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_round_robin_load_balancer_a1c99805a8509b0b302f6a12ceca6fc29}\index{RoundRobinLoadBalancer@{RoundRobinLoadBalancer}!calculateAndUpdateState@{calculateAndUpdateState}}
+\index{calculateAndUpdateState@{calculateAndUpdateState}!RoundRobinLoadBalancer@{RoundRobinLoadBalancer}}
+\doxysubsubsection{\texorpdfstring{calculateAndUpdateState()}{calculateAndUpdateState()}}
+{\footnotesize\ttfamily \label{class_round_robin_load_balancer_a1c99805a8509b0b302f6a12ceca6fc29} 
+Round\+Robin\+Load\+Balancer\+::calculate\+And\+Update\+State (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{load-balancer-round-robin_8js_a66e6c9aea487cf1c4498cf2b1aa0f621}{connectivity\+\_\+state\+\_\+1}}, \mbox{\hyperlink{class_round_robin_load_balancer_a2165c62c11b091042f684496be8efb9b}{count\+Children\+With\+State()}}, \mbox{\hyperlink{cookie_2index_8js_a0ac000318c33f03e412baff8df5b2513}{index}}, \mbox{\hyperlink{load-balancer-round-robin_8js_a81c59cca4f80962eae892ca3d4f2e839}{picker\+\_\+1}}, \mbox{\hyperlink{load-balancer-round-robin_8js_a46c0e253ac00dface70796e150cad858}{subchannel\+\_\+address\+\_\+1}}, and \mbox{\hyperlink{class_round_robin_load_balancer_a1f1642b1f3e827785918105fe06d9555}{update\+State()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_round_robin_load_balancer_a1c99805a8509b0b302f6a12ceca6fc29_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_round_robin_load_balancer_a1c99805a8509b0b302f6a12ceca6fc29_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_round_robin_load_balancer_a54c87b60995726b6bb276d094c323976}\index{RoundRobinLoadBalancer@{RoundRobinLoadBalancer}!constructor@{constructor}}
+\index{constructor@{constructor}!RoundRobinLoadBalancer@{RoundRobinLoadBalancer}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_round_robin_load_balancer_a54c87b60995726b6bb276d094c323976} 
+Round\+Robin\+Load\+Balancer\+::constructor (\begin{DoxyParamCaption}\item[{}]{channel\+Control\+Helper}{, }\item[{}]{credentials}{, }\item[{}]{options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{class_round_robin_load_balancer_a1c99805a8509b0b302f6a12ceca6fc29}{calculate\+And\+Update\+State()}}, \mbox{\hyperlink{load-balancer-round-robin_8js_a66e6c9aea487cf1c4498cf2b1aa0f621}{connectivity\+\_\+state\+\_\+1}}, \mbox{\hyperlink{_0dgrpc_2grpc-js_2build_2src_2index_8js_a88f1ca34064fef6dc1e29d7d1cf5cfcf}{credentials}}, \mbox{\hyperlink{load-balancer-round-robin_8js_a5136c4ad4dd2c82202031f18efa1c007}{load\+\_\+balancer\+\_\+1}}, and \mbox{\hyperlink{class_round_robin_load_balancer_a1f1642b1f3e827785918105fe06d9555}{update\+State()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_round_robin_load_balancer_a54c87b60995726b6bb276d094c323976_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_round_robin_load_balancer_a2165c62c11b091042f684496be8efb9b}\index{RoundRobinLoadBalancer@{RoundRobinLoadBalancer}!countChildrenWithState@{countChildrenWithState}}
+\index{countChildrenWithState@{countChildrenWithState}!RoundRobinLoadBalancer@{RoundRobinLoadBalancer}}
+\doxysubsubsection{\texorpdfstring{countChildrenWithState()}{countChildrenWithState()}}
+{\footnotesize\ttfamily \label{class_round_robin_load_balancer_a2165c62c11b091042f684496be8efb9b} 
+Round\+Robin\+Load\+Balancer\+::count\+Children\+With\+State (\begin{DoxyParamCaption}\item[{}]{state}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{asynckit_2lib_2state_8js_a7e1b0ba367facd663d59372bd204ea01}{state()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=283pt]{class_round_robin_load_balancer_a2165c62c11b091042f684496be8efb9b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_round_robin_load_balancer_a2165c62c11b091042f684496be8efb9b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_round_robin_load_balancer_a1b1de2101238e73dac875aa15f9717c7}\index{RoundRobinLoadBalancer@{RoundRobinLoadBalancer}!destroy@{destroy}}
+\index{destroy@{destroy}!RoundRobinLoadBalancer@{RoundRobinLoadBalancer}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily \label{class_round_robin_load_balancer_a1b1de2101238e73dac875aa15f9717c7} 
+Round\+Robin\+Load\+Balancer\+::destroy (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_round_robin_load_balancer_adcca7c1f033f8176767f5d01b95afd09}\index{RoundRobinLoadBalancer@{RoundRobinLoadBalancer}!exitIdle@{exitIdle}}
+\index{exitIdle@{exitIdle}!RoundRobinLoadBalancer@{RoundRobinLoadBalancer}}
+\doxysubsubsection{\texorpdfstring{exitIdle()}{exitIdle()}}
+{\footnotesize\ttfamily \label{class_round_robin_load_balancer_adcca7c1f033f8176767f5d01b95afd09} 
+Round\+Robin\+Load\+Balancer\+::exit\+Idle (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_round_robin_load_balancer_a1488c8eea19c9c50906c3e13ed3d907e}\index{RoundRobinLoadBalancer@{RoundRobinLoadBalancer}!getTypeName@{getTypeName}}
+\index{getTypeName@{getTypeName}!RoundRobinLoadBalancer@{RoundRobinLoadBalancer}}
+\doxysubsubsection{\texorpdfstring{getTypeName()}{getTypeName()}}
+{\footnotesize\ttfamily \label{class_round_robin_load_balancer_a1488c8eea19c9c50906c3e13ed3d907e} 
+Round\+Robin\+Load\+Balancer\+::get\+Type\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{load-balancer-round-robin_8js_a5e14686da00d96f08257c3d977f2ee7e}{TYPE\+\_\+\+NAME}}.
+
+\Hypertarget{class_round_robin_load_balancer_aa9a6d6a65b84d824c92a1ba9546c1264}\index{RoundRobinLoadBalancer@{RoundRobinLoadBalancer}!resetBackoff@{resetBackoff}}
+\index{resetBackoff@{resetBackoff}!RoundRobinLoadBalancer@{RoundRobinLoadBalancer}}
+\doxysubsubsection{\texorpdfstring{resetBackoff()}{resetBackoff()}}
+{\footnotesize\ttfamily \label{class_round_robin_load_balancer_aa9a6d6a65b84d824c92a1ba9546c1264} 
+Round\+Robin\+Load\+Balancer\+::reset\+Backoff (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_round_robin_load_balancer_af428f6d9d9649a42eead7b4a32335a7f}\index{RoundRobinLoadBalancer@{RoundRobinLoadBalancer}!resetSubchannelList@{resetSubchannelList}}
+\index{resetSubchannelList@{resetSubchannelList}!RoundRobinLoadBalancer@{RoundRobinLoadBalancer}}
+\doxysubsubsection{\texorpdfstring{resetSubchannelList()}{resetSubchannelList()}}
+{\footnotesize\ttfamily \label{class_round_robin_load_balancer_af428f6d9d9649a42eead7b4a32335a7f} 
+Round\+Robin\+Load\+Balancer\+::reset\+Subchannel\+List (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}.
+
+\Hypertarget{class_round_robin_load_balancer_ad9d1a798325eaaa6c33098c9a2678476}\index{RoundRobinLoadBalancer@{RoundRobinLoadBalancer}!updateAddressList@{updateAddressList}}
+\index{updateAddressList@{updateAddressList}!RoundRobinLoadBalancer@{RoundRobinLoadBalancer}}
+\doxysubsubsection{\texorpdfstring{updateAddressList()}{updateAddressList()}}
+{\footnotesize\ttfamily \label{class_round_robin_load_balancer_ad9d1a798325eaaa6c33098c9a2678476} 
+Round\+Robin\+Load\+Balancer\+::update\+Address\+List (\begin{DoxyParamCaption}\item[{}]{endpoint\+List}{, }\item[{}]{lb\+Config}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{load-balancer-round-robin_8js_af55534e9e97acf0fca1c199fc21d0b51}{load\+\_\+balancer\+\_\+pick\+\_\+first\+\_\+1}}, \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}, \mbox{\hyperlink{load-balancer-round-robin_8js_a46c0e253ac00dface70796e150cad858}{subchannel\+\_\+address\+\_\+1}}, and \mbox{\hyperlink{logging_8js_acb1634453d1705af9683695efa3847e6}{trace}}.
+
+\Hypertarget{class_round_robin_load_balancer_a1f1642b1f3e827785918105fe06d9555}\index{RoundRobinLoadBalancer@{RoundRobinLoadBalancer}!updateState@{updateState}}
+\index{updateState@{updateState}!RoundRobinLoadBalancer@{RoundRobinLoadBalancer}}
+\doxysubsubsection{\texorpdfstring{updateState()}{updateState()}}
+{\footnotesize\ttfamily \label{class_round_robin_load_balancer_a1f1642b1f3e827785918105fe06d9555} 
+Round\+Robin\+Load\+Balancer\+::update\+State (\begin{DoxyParamCaption}\item[{}]{new\+State}{, }\item[{}]{picker}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{load-balancer-round-robin_8js_a66e6c9aea487cf1c4498cf2b1aa0f621}{connectivity\+\_\+state\+\_\+1}}, and \mbox{\hyperlink{logging_8js_acb1634453d1705af9683695efa3847e6}{trace}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_round_robin_load_balancer_a1f1642b1f3e827785918105fe06d9555_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/@grpc/grpc-\/js/build/src/\mbox{\hyperlink{load-balancer-round-robin_8js}{load-\/balancer-\/round-\/robin.\+js}}\end{DoxyCompactItemize}

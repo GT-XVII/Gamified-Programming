@@ -1,0 +1,9 @@
+<map id="materialize" name="materialize">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,90,80"/>
+<area shape="rect" id="Node000002" href="$class_notification.html#a9711191c9b2a3a8112dbad9667d97149" title=" " alt="" coords="138,5,325,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="89,53,137,40,162,33,163,38,138,45,91,58"/>
+<area shape="rect" id="Node000003" href="$class_notification.html#ab701046860848cf0ac516d195904d005" title=" " alt="" coords="152,55,311,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="90,65,136,65,136,70,90,70"/>
+<area shape="rect" id="Node000004" href="$class_notification.html#a9814992b03d9e19c6eed2e633f78bc6c" title=" " alt="" coords="152,104,311,130"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="91,77,138,90,163,97,162,102,137,95,89,82"/>
+</map>

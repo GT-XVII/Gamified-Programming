@@ -1,0 +1,74 @@
+\doxysection{backend/node\+\_\+modules/retry/lib/retry.js File Reference}
+\hypertarget{retry_2lib_2retry_8js}{}\label{retry_2lib_2retry_8js}\index{backend/node\_modules/retry/lib/retry.js@{backend/node\_modules/retry/lib/retry.js}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{retry_2lib_2retry_8js_a3b91a3197f48fb35e7964ca35df9c162}{Retry\+Operation}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./retry\+\_\+operation\textquotesingle{})
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{retry_2lib_2retry_8js_a33cf33a925023de5ed63a9d4c9dcc927}{operation}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{retry_2lib_2retry_8js_a8f5c835225862f8b97568532b8807fdf}{timeouts}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{retry_2lib_2retry_8js_a194859756b949ae81aaf196feb11c172}{create\+Timeout}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{retry_2lib_2retry_8js_ab5725d08526a1a455010a791f6a5966e}{wrap}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{retry_2lib_2retry_8js_a194859756b949ae81aaf196feb11c172}\index{retry.js@{retry.js}!createTimeout@{createTimeout}}
+\index{createTimeout@{createTimeout}!retry.js@{retry.js}}
+\doxysubsubsection{\texorpdfstring{createTimeout}{createTimeout}}
+{\footnotesize\ttfamily \label{retry_2lib_2retry_8js_a194859756b949ae81aaf196feb11c172} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} create\+Timeout}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{attempt_8js_a108b00876c8a14e889be2f28579f7d94}{attempt}},\ opts)\ \{}
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{lodash_2random_8js_a1319a012d8fae8ed2b251493334c4de9}{random}}\ =\ (opts.randomize)}
+\DoxyCodeLine{\ \ \ \ ?\ (Math.random()\ +\ 1)}
+\DoxyCodeLine{\ \ \ \ :\ 1;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{rxjs_2dist_2cjs_2internal_2operators_2timeout_8js_a56cd1f2498714e800f2da45ee2fd56b7}{timeout}}\ =\ Math.round(\mbox{\hyperlink{lodash_2random_8js_a1319a012d8fae8ed2b251493334c4de9}{random}}\ *\ Math.max(opts.minTimeout,\ 1)\ *\ Math.pow(opts.factor,\ \mbox{\hyperlink{attempt_8js_a108b00876c8a14e889be2f28579f7d94}{attempt}}));}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{rxjs_2dist_2cjs_2internal_2operators_2timeout_8js_a56cd1f2498714e800f2da45ee2fd56b7}{timeout}}\ =\ Math.min(\mbox{\hyperlink{rxjs_2dist_2cjs_2internal_2operators_2timeout_8js_a56cd1f2498714e800f2da45ee2fd56b7}{timeout}},\ opts.maxTimeout);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{rxjs_2dist_2cjs_2internal_2operators_2timeout_8js_a56cd1f2498714e800f2da45ee2fd56b7}{timeout}};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{retry_2lib_2retry_8js_a33cf33a925023de5ed63a9d4c9dcc927}\index{retry.js@{retry.js}!operation@{operation}}
+\index{operation@{operation}!retry.js@{retry.js}}
+\doxysubsubsection{\texorpdfstring{operation}{operation}}
+{\footnotesize\ttfamily \label{retry_2lib_2retry_8js_a33cf33a925023de5ed63a9d4c9dcc927} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} operation}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(options)\ \{}
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{retry_2lib_2retry_8js_a8f5c835225862f8b97568532b8807fdf}{timeouts}}\ =\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}}.timeouts(options);}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{retry_2lib_2retry_8js_a3b91a3197f48fb35e7964ca35df9c162}{RetryOperation}}(\mbox{\hyperlink{retry_2lib_2retry_8js_a8f5c835225862f8b97568532b8807fdf}{timeouts}},\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ forever:\ options\ \&\&\ (options.forever\ ||\ options.retries\ ===\ Infinity),}
+\DoxyCodeLine{\ \ \ \ \ \ unref:\ options\ \&\&\ options.unref,}
+\DoxyCodeLine{\ \ \ \ \ \ maxRetryTime:\ options\ \&\&\ options.maxRetryTime}
+\DoxyCodeLine{\ \ \});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{retry_2lib_2retry_8js_a3b91a3197f48fb35e7964ca35df9c162}\index{retry.js@{retry.js}!RetryOperation@{RetryOperation}}
+\index{RetryOperation@{RetryOperation}!retry.js@{retry.js}}
+\doxysubsubsection{\texorpdfstring{RetryOperation}{RetryOperation}}
+{\footnotesize\ttfamily \label{retry_2lib_2retry_8js_a3b91a3197f48fb35e7964ca35df9c162} 
+var Retry\+Operation = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./retry\+\_\+operation\textquotesingle{})}
+
+\Hypertarget{retry_2lib_2retry_8js_a8f5c835225862f8b97568532b8807fdf}\index{retry.js@{retry.js}!timeouts@{timeouts}}
+\index{timeouts@{timeouts}!retry.js@{retry.js}}
+\doxysubsubsection{\texorpdfstring{timeouts}{timeouts}}
+{\footnotesize\ttfamily \label{retry_2lib_2retry_8js_a8f5c835225862f8b97568532b8807fdf} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} timeouts}
+
+\Hypertarget{retry_2lib_2retry_8js_ab5725d08526a1a455010a791f6a5966e}\index{retry.js@{retry.js}!wrap@{wrap}}
+\index{wrap@{wrap}!retry.js@{retry.js}}
+\doxysubsubsection{\texorpdfstring{wrap}{wrap}}
+{\footnotesize\ttfamily \label{retry_2lib_2retry_8js_ab5725d08526a1a455010a791f6a5966e} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} wrap}
+

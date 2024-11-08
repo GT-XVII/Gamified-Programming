@@ -1,0 +1,59 @@
+\doxysection{External\+Account\+Client Class Reference}
+\hypertarget{class_external_account_client}{}\label{class_external_account_client}\index{ExternalAccountClient@{ExternalAccountClient}}
+
+
+Collaboration diagram for External\+Account\+Client\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{class_external_account_client__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_external_account_client_ac1bb36348bd7557364312ac9716050e6}{constructor}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_external_account_client_a8d7778879d8c0a2b450091444cff8164}{from\+JSON}} (options, additional\+Options)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Dummy class with no constructor. Developers are expected to use from\+JSON. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_external_account_client_ac1bb36348bd7557364312ac9716050e6}\index{ExternalAccountClient@{ExternalAccountClient}!constructor@{constructor}}
+\index{constructor@{constructor}!ExternalAccountClient@{ExternalAccountClient}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_external_account_client_ac1bb36348bd7557364312ac9716050e6} 
+External\+Account\+Client\+::constructor (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_external_account_client_a8d7778879d8c0a2b450091444cff8164}\index{ExternalAccountClient@{ExternalAccountClient}!fromJSON@{fromJSON}}
+\index{fromJSON@{fromJSON}!ExternalAccountClient@{ExternalAccountClient}}
+\doxysubsubsection{\texorpdfstring{fromJSON()}{fromJSON()}}
+{\footnotesize\ttfamily \label{class_external_account_client_a8d7778879d8c0a2b450091444cff8164} 
+static External\+Account\+Client\+::from\+JSON (\begin{DoxyParamCaption}\item[{}]{options}{, }\item[{}]{additional\+Options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+This static method will instantiate the corresponding type of external account credential depending on the underlying credential source. 
+\begin{DoxyParams}{Parameters}
+{\em options} & The external account options object typically loaded from the external account JSON credential file. \\
+\hline
+{\em additional\+Options} & {\bfseries{DEPRECATED, all options are available in the {\ttfamily options} parameter.}} Optional additional behavior customization options. These currently customize expiration threshold time and whether to retry on 401/403 API request errors. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_a}{A} \doxylink{class_base_external_account_client}{Base\+External\+Account\+Client} instance or null if the options provided do not correspond to an external account credential. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{logger_2dist_2esm_2index_8esm5_8js_a0adf123df8967a14b5bdd9ff3bbe2d0c}{\+\_\+a}}, \mbox{\hyperlink{logging_8js_a53284eb14d953f3ba58806fc49cd4f7c}{\+\_\+b}}, \mbox{\hyperlink{externalclient_8js_a9161e6e43310925955fd1e0e112048cc}{awsclient\+\_\+1}}, \mbox{\hyperlink{externalclient_8js_ad4d52fa9946a608f010ca73aee1a9136}{baseexternalclient\+\_\+1}}, \mbox{\hyperlink{externalclient_8js_ab72bd0a2357e49030b265cff99db6d5b}{identitypoolclient\+\_\+1}}, and \mbox{\hyperlink{externalclient_8js_ac604fa9688c60c5ace0067cb18e20959}{pluggable\+\_\+auth\+\_\+client\+\_\+1}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/google-\/auth-\/library/build/src/auth/\mbox{\hyperlink{externalclient_8js}{externalclient.\+js}}\end{DoxyCompactItemize}

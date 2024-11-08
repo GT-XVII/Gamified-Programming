@@ -1,0 +1,201 @@
+\doxysection{backend/node\+\_\+modules/@opentelemetry/api/build/src/trace/context-\/utils.js File Reference}
+\hypertarget{src_2trace_2context-utils_8js}{}\label{src_2trace_2context-utils_8js}\index{backend/node\_modules/"@opentelemetry/api/build/src/trace/context-\/utils.js@{backend/node\_modules/"@opentelemetry/api/build/src/trace/context-\/utils.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{src_2trace_2context-utils_8js_a0fc83d7dc9a42c4da58c7d435e1a3a46}{get\+Span}} (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}})
+\item 
+function \mbox{\hyperlink{src_2trace_2context-utils_8js_ae553541b95aef8f85e65d38c1414be6e}{set\+Span}} (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}}, span)
+\item 
+function \mbox{\hyperlink{src_2trace_2context-utils_8js_a8b592114f127159160c5a0da4aa74ee8}{delete\+Span}} (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}})
+\item 
+function \mbox{\hyperlink{src_2trace_2context-utils_8js_a47303b5b40fa90792e668fdc12a44137}{set\+Span\+Context}} (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}}, span\+Context)
+\item 
+function \mbox{\hyperlink{src_2trace_2context-utils_8js_aa0869a30c2a73f87d8f77bff61b69a82}{get\+Span\+Context}} (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{src_2trace_2context-utils_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{src_2trace_2context-utils_8js_a5c1ab9793643f611a195650ef3f47560}{get\+Span\+Context}} = \mbox{\hyperlink{src_2trace_2context-utils_8js_a03550bd160ca2189acb899c34e1fe340}{exports.\+set\+Span\+Context}} = \mbox{\hyperlink{src_2trace_2context-utils_8js_addb61a2d6e75ee7ecef612f46ceea199}{exports.\+delete\+Span}} = \mbox{\hyperlink{src_2trace_2context-utils_8js_ae4d08635a1cc2f820052bdcebf2ae95f}{exports.\+set\+Span}} = \mbox{\hyperlink{src_2trace_2context-utils_8js_adc3121e2f987cd41752d67d199de69ca}{exports.\+get\+Active\+Span}} = \mbox{\hyperlink{src_2trace_2context-utils_8js_a48993423c1dbbe0ed0e892ee311b48d8}{exports.\+get\+Span}} = void 0
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{src_2trace_2context-utils_8js_a173eee8a08edf185f7dfe09613c72306}{context\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../context/context"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{src_2trace_2context-utils_8js_a6ee41d30d00fc9af72cf25096348efc3}{Non\+Recording\+Span\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./Non\+Recording\+Span"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{src_2trace_2context-utils_8js_aa42a34b6b6ae55965ca96044fe702d91}{context\+\_\+2}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../api/context"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{src_2trace_2context-utils_8js_aa73a7ac17891116a68eadb021d87e1f8}{SPAN\+\_\+\+KEY}} = (0, \mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2index_8js_a148528b1b092ddb249ae8cc4a59b10b3}{context\+\_\+1.\+create\+Context\+Key}})(\textquotesingle{}Open\+Telemetry Context Key SPAN\textquotesingle{})
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{src_2trace_2context-utils_8js_a48993423c1dbbe0ed0e892ee311b48d8}{get\+Span}} = get\+Span
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{src_2trace_2context-utils_8js_adc3121e2f987cd41752d67d199de69ca}{get\+Active\+Span}} = get\+Active\+Span
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{src_2trace_2context-utils_8js_ae4d08635a1cc2f820052bdcebf2ae95f}{set\+Span}} = set\+Span
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{src_2trace_2context-utils_8js_addb61a2d6e75ee7ecef612f46ceea199}{delete\+Span}} = delete\+Span
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{src_2trace_2context-utils_8js_a03550bd160ca2189acb899c34e1fe340}{set\+Span\+Context}} = set\+Span\+Context
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{src_2trace_2context-utils_8js_a8b592114f127159160c5a0da4aa74ee8}\index{context-\/utils.js@{context-\/utils.js}!deleteSpan@{deleteSpan}}
+\index{deleteSpan@{deleteSpan}!context-\/utils.js@{context-\/utils.js}}
+\doxysubsubsection{\texorpdfstring{deleteSpan()}{deleteSpan()}}
+{\footnotesize\ttfamily \label{src_2trace_2context-utils_8js_a8b592114f127159160c5a0da4aa74ee8} 
+function delete\+Span (\begin{DoxyParamCaption}\item[{}]{context}{}\end{DoxyParamCaption})}
+
+Remove current span stored in the context
+
+
+\begin{DoxyParams}{Parameters}
+{\em context} & context to delete span from \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}}, and \mbox{\hyperlink{esm_2trace_2context-utils_8js_a74d27a3cd738a3090b9b272275f74689}{SPAN\+\_\+\+KEY}}.
+
+\Hypertarget{src_2trace_2context-utils_8js_a0fc83d7dc9a42c4da58c7d435e1a3a46}\index{context-\/utils.js@{context-\/utils.js}!getSpan@{getSpan}}
+\index{getSpan@{getSpan}!context-\/utils.js@{context-\/utils.js}}
+\doxysubsubsection{\texorpdfstring{getSpan()}{getSpan()}}
+{\footnotesize\ttfamily \label{src_2trace_2context-utils_8js_a0fc83d7dc9a42c4da58c7d435e1a3a46} 
+function get\+Span (\begin{DoxyParamCaption}\item[{}]{context}{}\end{DoxyParamCaption})}
+
+Return the span if one exists
+
+
+\begin{DoxyParams}{Parameters}
+{\em context} & context to get span from \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}}, \mbox{\hyperlink{esm_2trace_2context-utils_8js_a74d27a3cd738a3090b9b272275f74689}{SPAN\+\_\+\+KEY}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}.
+
+\Hypertarget{src_2trace_2context-utils_8js_aa0869a30c2a73f87d8f77bff61b69a82}\index{context-\/utils.js@{context-\/utils.js}!getSpanContext@{getSpanContext}}
+\index{getSpanContext@{getSpanContext}!context-\/utils.js@{context-\/utils.js}}
+\doxysubsubsection{\texorpdfstring{getSpanContext()}{getSpanContext()}}
+{\footnotesize\ttfamily \label{src_2trace_2context-utils_8js_aa0869a30c2a73f87d8f77bff61b69a82} 
+function get\+Span\+Context (\begin{DoxyParamCaption}\item[{}]{context}{}\end{DoxyParamCaption})}
+
+Get the span context of the span if it exists.
+
+
+\begin{DoxyParams}{Parameters}
+{\em context} & context to get values from \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{logger_2dist_2esm_2index_8esm5_8js_a0adf123df8967a14b5bdd9ff3bbe2d0c}{\+\_\+a}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}}, and \mbox{\hyperlink{src_2trace_2context-utils_8js_a48993423c1dbbe0ed0e892ee311b48d8}{get\+Span}}.
+
+\Hypertarget{src_2trace_2context-utils_8js_ae553541b95aef8f85e65d38c1414be6e}\index{context-\/utils.js@{context-\/utils.js}!setSpan@{setSpan}}
+\index{setSpan@{setSpan}!context-\/utils.js@{context-\/utils.js}}
+\doxysubsubsection{\texorpdfstring{setSpan()}{setSpan()}}
+{\footnotesize\ttfamily \label{src_2trace_2context-utils_8js_ae553541b95aef8f85e65d38c1414be6e} 
+function set\+Span (\begin{DoxyParamCaption}\item[{}]{context}{, }\item[{}]{span}{}\end{DoxyParamCaption})}
+
+Set the span on a context
+
+
+\begin{DoxyParams}{Parameters}
+{\em context} & context to use as parent \\
+\hline
+{\em span} & span to set active \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}}, and \mbox{\hyperlink{esm_2trace_2context-utils_8js_a74d27a3cd738a3090b9b272275f74689}{SPAN\+\_\+\+KEY}}.
+
+\Hypertarget{src_2trace_2context-utils_8js_a47303b5b40fa90792e668fdc12a44137}\index{context-\/utils.js@{context-\/utils.js}!setSpanContext@{setSpanContext}}
+\index{setSpanContext@{setSpanContext}!context-\/utils.js@{context-\/utils.js}}
+\doxysubsubsection{\texorpdfstring{setSpanContext()}{setSpanContext()}}
+{\footnotesize\ttfamily \label{src_2trace_2context-utils_8js_a47303b5b40fa90792e668fdc12a44137} 
+function set\+Span\+Context (\begin{DoxyParamCaption}\item[{}]{context}{, }\item[{}]{span\+Context}{}\end{DoxyParamCaption})}
+
+Wrap span context in a Noop\+Span and set as span in a new context
+
+
+\begin{DoxyParams}{Parameters}
+{\em context} & context to set active span on \\
+\hline
+{\em span\+Context} & span context to be wrapped \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}}, \mbox{\hyperlink{src_2trace_2context-utils_8js_a6ee41d30d00fc9af72cf25096348efc3}{Non\+Recording\+Span\+\_\+1}}, and \mbox{\hyperlink{src_2trace_2context-utils_8js_ae4d08635a1cc2f820052bdcebf2ae95f}{set\+Span}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{src_2trace_2context-utils_8js_a173eee8a08edf185f7dfe09613c72306}\index{context-\/utils.js@{context-\/utils.js}!context\_1@{context\_1}}
+\index{context\_1@{context\_1}!context-\/utils.js@{context-\/utils.js}}
+\doxysubsubsection{\texorpdfstring{context\_1}{context\_1}}
+{\footnotesize\ttfamily \label{src_2trace_2context-utils_8js_a173eee8a08edf185f7dfe09613c72306} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} context\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../context/context"{})}
+
+\Hypertarget{src_2trace_2context-utils_8js_aa42a34b6b6ae55965ca96044fe702d91}\index{context-\/utils.js@{context-\/utils.js}!context\_2@{context\_2}}
+\index{context\_2@{context\_2}!context-\/utils.js@{context-\/utils.js}}
+\doxysubsubsection{\texorpdfstring{context\_2}{context\_2}}
+{\footnotesize\ttfamily \label{src_2trace_2context-utils_8js_aa42a34b6b6ae55965ca96044fe702d91} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} context\+\_\+2 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../api/context"{})}
+
+\Hypertarget{src_2trace_2context-utils_8js_addb61a2d6e75ee7ecef612f46ceea199}\index{context-\/utils.js@{context-\/utils.js}!deleteSpan@{deleteSpan}}
+\index{deleteSpan@{deleteSpan}!context-\/utils.js@{context-\/utils.js}}
+\doxysubsubsection{\texorpdfstring{deleteSpan}{deleteSpan}}
+{\footnotesize\ttfamily \label{src_2trace_2context-utils_8js_addb61a2d6e75ee7ecef612f46ceea199} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} delete\+Span = delete\+Span}
+
+\Hypertarget{src_2trace_2context-utils_8js_adc3121e2f987cd41752d67d199de69ca}\index{context-\/utils.js@{context-\/utils.js}!getActiveSpan@{getActiveSpan}}
+\index{getActiveSpan@{getActiveSpan}!context-\/utils.js@{context-\/utils.js}}
+\doxysubsubsection{\texorpdfstring{getActiveSpan}{getActiveSpan}}
+{\footnotesize\ttfamily \label{src_2trace_2context-utils_8js_adc3121e2f987cd41752d67d199de69ca} 
+function get\+Active\+Span (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) = get\+Active\+Span}
+
+Gets the span from the current context, if one exists. \Hypertarget{src_2trace_2context-utils_8js_a48993423c1dbbe0ed0e892ee311b48d8}\index{context-\/utils.js@{context-\/utils.js}!getSpan@{getSpan}}
+\index{getSpan@{getSpan}!context-\/utils.js@{context-\/utils.js}}
+\doxysubsubsection{\texorpdfstring{getSpan}{getSpan}}
+{\footnotesize\ttfamily \label{src_2trace_2context-utils_8js_a48993423c1dbbe0ed0e892ee311b48d8} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} get\+Span = get\+Span}
+
+\Hypertarget{src_2trace_2context-utils_8js_a5c1ab9793643f611a195650ef3f47560}\index{context-\/utils.js@{context-\/utils.js}!getSpanContext@{getSpanContext}}
+\index{getSpanContext@{getSpanContext}!context-\/utils.js@{context-\/utils.js}}
+\doxysubsubsection{\texorpdfstring{getSpanContext}{getSpanContext}}
+{\footnotesize\ttfamily \label{src_2trace_2context-utils_8js_a5c1ab9793643f611a195650ef3f47560} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} get\+Span\+Context = \mbox{\hyperlink{src_2trace_2context-utils_8js_a03550bd160ca2189acb899c34e1fe340}{exports.\+set\+Span\+Context}} = \mbox{\hyperlink{src_2trace_2context-utils_8js_addb61a2d6e75ee7ecef612f46ceea199}{exports.\+delete\+Span}} = \mbox{\hyperlink{src_2trace_2context-utils_8js_ae4d08635a1cc2f820052bdcebf2ae95f}{exports.\+set\+Span}} = \mbox{\hyperlink{src_2trace_2context-utils_8js_adc3121e2f987cd41752d67d199de69ca}{exports.\+get\+Active\+Span}} = \mbox{\hyperlink{src_2trace_2context-utils_8js_a48993423c1dbbe0ed0e892ee311b48d8}{exports.\+get\+Span}} = void 0}
+
+\Hypertarget{src_2trace_2context-utils_8js_a6ee41d30d00fc9af72cf25096348efc3}\index{context-\/utils.js@{context-\/utils.js}!NonRecordingSpan\_1@{NonRecordingSpan\_1}}
+\index{NonRecordingSpan\_1@{NonRecordingSpan\_1}!context-\/utils.js@{context-\/utils.js}}
+\doxysubsubsection{\texorpdfstring{NonRecordingSpan\_1}{NonRecordingSpan\_1}}
+{\footnotesize\ttfamily \label{src_2trace_2context-utils_8js_a6ee41d30d00fc9af72cf25096348efc3} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} Non\+Recording\+Span\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./Non\+Recording\+Span"{})}
+
+\Hypertarget{src_2trace_2context-utils_8js_ae4d08635a1cc2f820052bdcebf2ae95f}\index{context-\/utils.js@{context-\/utils.js}!setSpan@{setSpan}}
+\index{setSpan@{setSpan}!context-\/utils.js@{context-\/utils.js}}
+\doxysubsubsection{\texorpdfstring{setSpan}{setSpan}}
+{\footnotesize\ttfamily \label{src_2trace_2context-utils_8js_ae4d08635a1cc2f820052bdcebf2ae95f} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} set\+Span = set\+Span}
+
+\Hypertarget{src_2trace_2context-utils_8js_a03550bd160ca2189acb899c34e1fe340}\index{context-\/utils.js@{context-\/utils.js}!setSpanContext@{setSpanContext}}
+\index{setSpanContext@{setSpanContext}!context-\/utils.js@{context-\/utils.js}}
+\doxysubsubsection{\texorpdfstring{setSpanContext}{setSpanContext}}
+{\footnotesize\ttfamily \label{src_2trace_2context-utils_8js_a03550bd160ca2189acb899c34e1fe340} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} set\+Span\+Context = set\+Span\+Context}
+
+\Hypertarget{src_2trace_2context-utils_8js_aa73a7ac17891116a68eadb021d87e1f8}\index{context-\/utils.js@{context-\/utils.js}!SPAN\_KEY@{SPAN\_KEY}}
+\index{SPAN\_KEY@{SPAN\_KEY}!context-\/utils.js@{context-\/utils.js}}
+\doxysubsubsection{\texorpdfstring{SPAN\_KEY}{SPAN\_KEY}}
+{\footnotesize\ttfamily \label{src_2trace_2context-utils_8js_aa73a7ac17891116a68eadb021d87e1f8} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} SPAN\+\_\+\+KEY = (0, \mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2index_8js_a148528b1b092ddb249ae8cc4a59b10b3}{context\+\_\+1.\+create\+Context\+Key}})(\textquotesingle{}Open\+Telemetry Context Key SPAN\textquotesingle{})}
+
+span key \Hypertarget{src_2trace_2context-utils_8js_ae2475e10618961c050dcba04e8c42331}\index{context-\/utils.js@{context-\/utils.js}!strict@{strict}}
+\index{strict@{strict}!context-\/utils.js@{context-\/utils.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{src_2trace_2context-utils_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+

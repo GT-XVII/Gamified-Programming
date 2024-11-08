@@ -1,0 +1,25 @@
+\doxysection{/\+Users/nicoletiokhin/\+Desktop/\+Software Semester 3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/lodash/uniq\+By.\+js}
+\hypertarget{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_6624f59a1c72068a1d53d85e9d83f52c}{}\label{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_6624f59a1c72068a1d53d85e9d83f52c}This method is like {\ttfamily \+\_\+.\+uniq} except that it accepts {\ttfamily iteratee} which is invoked for each element in {\ttfamily array} to generate the criterion by which uniqueness is computed. The order of result values is determined by the order they occur in the array. The iteratee is invoked with one argument\+: (value).
+
+@member\+Of \+\_\+ \begin{DoxySince}{Since}
+4.\+0.\+0
+\end{DoxySince}
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Array\}} & array The array to inspect. \\
+\hline
+{\em \{\+Function\}} & \mbox{[}iteratee=\+\_\+.\+identity\mbox{]} The iteratee invoked per element. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Array\} Returns the new duplicate free array.
+\end{DoxyReturn}
+\+\_\+.\+uniq\+By(\mbox{[}2.\+1, 1.\+2, 2.\+3\mbox{]}, Math.\+floor); // =\texorpdfstring{$>$}{>} \mbox{[}2.\+1, 1.\+2\mbox{]}
+
+// The {\ttfamily \+\_\+.\+property} iteratee shorthand. \+\_\+.\+uniq\+By(\mbox{[}\{ \textquotesingle{}x\textquotesingle{}\+: 1 \}, \{ \textquotesingle{}x\textquotesingle{}\+: 2 \}, \{ \textquotesingle{}x\textquotesingle{}\+: 1 \}\mbox{]}, \textquotesingle{}x\textquotesingle{}); // =\texorpdfstring{$>$}{>} \mbox{[}\{ \textquotesingle{}x\textquotesingle{}\+: 1 \}, \{ \textquotesingle{}x\textquotesingle{}\+: 2 \}\mbox{]}
+
+
+\begin{DoxyCodeInclude}{0}
+
+\end{DoxyCodeInclude}
+ Semester \doxylink{uniq_by_8js}{3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/lodash/uniq\+By.\+js} 

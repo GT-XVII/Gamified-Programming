@@ -1,0 +1,11 @@
+<map id="isEntityEnclosingRequest" name="isEntityEnclosingRequest">
+<area shape="rect" id="Node000001" title=" " alt="" coords="430,46,601,72"/>
+<area shape="rect" id="Node000002" href="$class_base_request_config_impl.html#a0dc27c4c61b406ee6c53d85fad01b536" title=" " alt="" coords="219,5,382,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="414,46,382,41,383,36,415,41"/>
+<area shape="rect" id="Node000003" href="$class_base_request_config_impl.html#a4b69942f1d05199193ec8513bda6ca44" title=" " alt="" coords="219,71,382,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="415,77,383,81,382,76,414,71"/>
+<area shape="rect" id="Node000004" href="$class_http2_request_config_impl.html#a7091575ad433e16016d7e8172aea049b" title=" " alt="" coords="5,37,171,78"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="203,78,171,73,172,68,204,73"/>
+<area shape="rect" id="Node000005" href="$class_http_request_config_impl.html#aadc63f410e905fb52f3bb33e52c4df16" title=" " alt="" coords="9,103,167,143"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="204,108,168,114,167,108,203,103"/>
+</map>

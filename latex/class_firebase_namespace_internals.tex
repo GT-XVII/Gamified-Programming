@@ -1,0 +1,116 @@
+\doxysection{Firebase\+Namespace\+Internals Class Reference}
+\hypertarget{class_firebase_namespace_internals}{}\label{class_firebase_namespace_internals}\index{FirebaseNamespaceInternals@{FirebaseNamespaceInternals}}
+
+
+Collaboration diagram for Firebase\+Namespace\+Internals\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{class_firebase_namespace_internals__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_firebase_namespace_internals_a979457c184555caf0d07eb522ffdeaa4}{constructor}} (app\+Store)
+\item 
+\mbox{\hyperlink{class_firebase_namespace_internals_ad7cf4743c3d8e67493a7e2048a509e69}{initialize\+App}} (options, app\+Name)
+\item 
+\mbox{\hyperlink{class_firebase_namespace_internals_a79dd01957ba8db7cb75779df884e1ab9}{app}} (app\+Name)
+\item 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} \mbox{\hyperlink{class_firebase_namespace_internals_a44a57439b1505b05c2e942c390b0c7ad}{apps}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Internals of a \doxylink{class_firebase_namespace}{Firebase\+Namespace} instance. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_firebase_namespace_internals_a79dd01957ba8db7cb75779df884e1ab9}\index{FirebaseNamespaceInternals@{FirebaseNamespaceInternals}!app@{app}}
+\index{app@{app}!FirebaseNamespaceInternals@{FirebaseNamespaceInternals}}
+\doxysubsubsection{\texorpdfstring{app()}{app()}}
+{\footnotesize\ttfamily \label{class_firebase_namespace_internals_a79dd01957ba8db7cb75779df884e1ab9} 
+Firebase\+Namespace\+Internals\+::app (\begin{DoxyParamCaption}\item[{}]{app\+Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the App instance with the provided name (or the default App instance if no name is provided).
+
+
+\begin{DoxyParams}{Parameters}
+{\em app\+Name} & -\/ Optional name of the \doxylink{class_firebase_app}{Firebase\+App} instance to return. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The App instance which has the provided name. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{database_2dist_2index_8cjs_8js_a7b225fcb720e4d5ed2bbf60e28a25e6d}{app}}, and \mbox{\hyperlink{firebase-namespace_8js_a17d56fb30cca93117ef41058301bfadf}{extend\+App()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_firebase_namespace_internals_a79dd01957ba8db7cb75779df884e1ab9_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_firebase_namespace_internals_a44a57439b1505b05c2e942c390b0c7ad}\index{FirebaseNamespaceInternals@{FirebaseNamespaceInternals}!apps@{apps}}
+\index{apps@{apps}!FirebaseNamespaceInternals@{FirebaseNamespaceInternals}}
+\doxysubsubsection{\texorpdfstring{apps()}{apps()}}
+{\footnotesize\ttfamily \label{class_firebase_namespace_internals_a44a57439b1505b05c2e942c390b0c7ad} 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} Firebase\+Namespace\+Internals\+::apps (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{database_2dist_2index_8cjs_8js_a7b225fcb720e4d5ed2bbf60e28a25e6d}{app}}, and \mbox{\hyperlink{firebase-namespace_8js_a17d56fb30cca93117ef41058301bfadf}{extend\+App()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_firebase_namespace_internals_a44a57439b1505b05c2e942c390b0c7ad_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_firebase_namespace_internals_a979457c184555caf0d07eb522ffdeaa4}\index{FirebaseNamespaceInternals@{FirebaseNamespaceInternals}!constructor@{constructor}}
+\index{constructor@{constructor}!FirebaseNamespaceInternals@{FirebaseNamespaceInternals}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_firebase_namespace_internals_a979457c184555caf0d07eb522ffdeaa4} 
+Firebase\+Namespace\+Internals\+::constructor (\begin{DoxyParamCaption}\item[{}]{app\+Store}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_firebase_namespace_internals_ad7cf4743c3d8e67493a7e2048a509e69}\index{FirebaseNamespaceInternals@{FirebaseNamespaceInternals}!initializeApp@{initializeApp}}
+\index{initializeApp@{initializeApp}!FirebaseNamespaceInternals@{FirebaseNamespaceInternals}}
+\doxysubsubsection{\texorpdfstring{initializeApp()}{initializeApp()}}
+{\footnotesize\ttfamily \label{class_firebase_namespace_internals_ad7cf4743c3d8e67493a7e2048a509e69} 
+Firebase\+Namespace\+Internals\+::initialize\+App (\begin{DoxyParamCaption}\item[{}]{options}{, }\item[{}]{app\+Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Initializes the App instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em options} & -\/ Optional options for the App instance. If none present will try to initialize from the FIREBASE\+\_\+\+CONFIG environment variable. If the environment variable contains a string that starts with \textquotesingle{}\{\textquotesingle{} it will be parsed as JSON, otherwise it will be assumed to be pointing to a file. \\
+\hline
+{\em app\+Name} & -\/ Optional name of the \doxylink{class_firebase_app}{Firebase\+App} instance.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_a}{A} new App instance. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{database_2dist_2index_8cjs_8js_a7b225fcb720e4d5ed2bbf60e28a25e6d}{app}}, and \mbox{\hyperlink{firebase-namespace_8js_a17d56fb30cca93117ef41058301bfadf}{extend\+App()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_firebase_namespace_internals_ad7cf4743c3d8e67493a7e2048a509e69_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/firebase-\/admin/lib/app/\mbox{\hyperlink{firebase-namespace_8js}{firebase-\/namespace.\+js}}\end{DoxyCompactItemize}

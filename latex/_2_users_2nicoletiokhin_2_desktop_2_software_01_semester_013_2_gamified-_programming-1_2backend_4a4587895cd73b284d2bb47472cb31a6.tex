@@ -1,0 +1,30 @@
+\doxysection{/\+Users/nicoletiokhin/\+Desktop/\+Software Semester 3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/firebase-\/admin/lib/app/credential-\/factory.\+js}
+\hypertarget{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_4a4587895cd73b284d2bb47472cb31a6}{}\label{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_4a4587895cd73b284d2bb47472cb31a6}Returns a credential created from the {\ttfamily \doxylink{}{\texorpdfstring{$\vert$}{|} Google Application Default Credentials}} that grants admin access to Firebase services. This credential can be used in the call to {\ttfamily \doxylink{}{firebase-\/admin.\+app\#initialize\+App}}.
+
+Google Application Default Credentials are available on any Google infrastructure, such as Google App Engine and Google \doxylink{class_compute}{Compute} Engine.
+
+See {\ttfamily \doxylink{}{\texorpdfstring{$\vert$}{|} Initialize the SDK}} for more details.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{lifecycle_8js_ab6aa65e6afe886af7618b6e13af02316}{initializeApp}}(\{}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{firebase-admin_2lib_2credential_2index_8js_aee5dce8f0575eecdffdfa59b49b319e1}{credential}}:\ \mbox{\hyperlink{credential-factory_8js_a918cefeb68fd1e9a33439ad3b8c1a410}{applicationDefault}}(),}
+\DoxyCodeLine{\ \ databaseURL:\ \textcolor{stringliteral}{"{}https://<DATABASE\_NAME>.firebaseio.com"{}}}
+\DoxyCodeLine{\});}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em http\+Agent} & -\/ Optional {\ttfamily \doxylink{}{\texorpdfstring{$\vert$}{|} HTTP Agent}} to be used when retrieving access tokens from Google token servers.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_a}{A} credential authenticated via Google Application Default Credentials that can be used to initialize an app.
+\end{DoxyReturn}
+
+\begin{DoxyCodeInclude}{0}
+
+\end{DoxyCodeInclude}
+ Semester \doxylink{credential-factory_8js}{3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/firebase-\/admin/lib/app/credential-\/factory.\+js} 

@@ -1,0 +1,69 @@
+\doxysection{backend/node\+\_\+modules/rxjs/dist/cjs/internal/scheduler/timeout\+Provider.js File Reference}
+\hypertarget{cjs_2internal_2scheduler_2timeout_provider_8js}{}\label{cjs_2internal_2scheduler_2timeout_provider_8js}\index{backend/node\_modules/rxjs/dist/cjs/internal/scheduler/timeoutProvider.js@{backend/node\_modules/rxjs/dist/cjs/internal/scheduler/timeoutProvider.js}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{cjs_2internal_2scheduler_2timeout_provider_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+var \mbox{\hyperlink{cjs_2internal_2scheduler_2timeout_provider_8js_ac2bb750999c1807e9c61dbbc385bda88}{\+\_\+\+\_\+read}}
+\item 
+var \mbox{\hyperlink{cjs_2internal_2scheduler_2timeout_provider_8js_aff39b60b9d9ed7566ea206262596581d}{\+\_\+\+\_\+spread\+Array}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{cjs_2internal_2scheduler_2timeout_provider_8js_a4ff029383d08ea4d169fd2831d770933}{timeout\+Provider}} = void 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{cjs_2internal_2scheduler_2timeout_provider_8js_ac2bb750999c1807e9c61dbbc385bda88}\index{timeoutProvider.js@{timeoutProvider.js}!\_\_read@{\_\_read}}
+\index{\_\_read@{\_\_read}!timeoutProvider.js@{timeoutProvider.js}}
+\doxysubsubsection{\texorpdfstring{\_\_read}{\_\_read}}
+{\footnotesize\ttfamily \label{cjs_2internal_2scheduler_2timeout_provider_8js_ac2bb750999c1807e9c61dbbc385bda88} 
+var \+\_\+\+\_\+read}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ (\textcolor{keyword}{this}\ \&\&\ this.\mbox{\hyperlink{cjs_2internal_2scheduler_2timeout_provider_8js_ac2bb750999c1807e9c61dbbc385bda88}{\_\_read}})\ ||\ \textcolor{keyword}{function}\ (\mbox{\hyperlink{uuid_8min_8js_a400dc8109620963da8314d4bdfa14f83}{o}},\ \mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}})\ \{}
+\DoxyCodeLine{\ \ \ \ var\ \mbox{\hyperlink{agent-base_2node__modules_2ms_2index_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m}}\ =\ typeof\ \mbox{\hyperlink{__base_get_tag_8js_a9223501a4f1d046befc3fb8f0bf5c1e4}{Symbol}}\ ===\ \textcolor{stringliteral}{"{}function"{}}\ \&\&\ \mbox{\hyperlink{uuid_8min_8js_a400dc8109620963da8314d4bdfa14f83}{o}}[\mbox{\hyperlink{__base_get_tag_8js_a9223501a4f1d046befc3fb8f0bf5c1e4}{Symbol}}.iterator];}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{agent-base_2node__modules_2ms_2index_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m}})\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{uuid_8min_8js_a400dc8109620963da8314d4bdfa14f83}{o}};}
+\DoxyCodeLine{\ \ \ \ var\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ =\ \mbox{\hyperlink{agent-base_2node__modules_2ms_2index_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m}}.call(\mbox{\hyperlink{uuid_8min_8js_a400dc8109620963da8314d4bdfa14f83}{o}}),\ \mbox{\hyperlink{uuid_8min_8js_aaa5fef39529cdffdfa257202bb4fda9f}{r}},\ ar\ =\ [],\ \mbox{\hyperlink{firestore__admin__v1__proto__api_8js_a08a4415e9d594ff960030b921d42b91e}{e}};}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ ((\mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}\ ===\ \textcolor{keywordtype}{void}\ 0\ ||\ \mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}-\/-\/\ >\ 0)\ \&\&\ !(\mbox{\hyperlink{uuid_8min_8js_aaa5fef39529cdffdfa257202bb4fda9f}{r}}\ =\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}.next()).done)\ ar.push(\mbox{\hyperlink{uuid_8min_8js_aaa5fef39529cdffdfa257202bb4fda9f}{r}}.value);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{catch}\ (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}})\ \{\ \mbox{\hyperlink{firestore__admin__v1__proto__api_8js_a08a4415e9d594ff960030b921d42b91e}{e}}\ =\ \{\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}}:\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}}\ \};\ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{finally}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{uuid_8min_8js_aaa5fef39529cdffdfa257202bb4fda9f}{r}}\ \&\&\ !\mbox{\hyperlink{uuid_8min_8js_aaa5fef39529cdffdfa257202bb4fda9f}{r}}.done\ \&\&\ (\mbox{\hyperlink{agent-base_2node__modules_2ms_2index_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m}}\ =\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}[\textcolor{stringliteral}{"{}return"{}}]))\ \mbox{\hyperlink{agent-base_2node__modules_2ms_2index_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m}}.call(\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{finally}\ \{\ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{firestore__admin__v1__proto__api_8js_a08a4415e9d594ff960030b921d42b91e}{e}})\ \textcolor{keywordflow}{throw}\ \mbox{\hyperlink{firestore__admin__v1__proto__api_8js_a08a4415e9d594ff960030b921d42b91e}{e}}.error;\ \}}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ ar;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{cjs_2internal_2scheduler_2timeout_provider_8js_aff39b60b9d9ed7566ea206262596581d}\index{timeoutProvider.js@{timeoutProvider.js}!\_\_spreadArray@{\_\_spreadArray}}
+\index{\_\_spreadArray@{\_\_spreadArray}!timeoutProvider.js@{timeoutProvider.js}}
+\doxysubsubsection{\texorpdfstring{\_\_spreadArray}{\_\_spreadArray}}
+{\footnotesize\ttfamily \label{cjs_2internal_2scheduler_2timeout_provider_8js_aff39b60b9d9ed7566ea206262596581d} 
+var \+\_\+\+\_\+spread\+Array}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ (\textcolor{keyword}{this}\ \&\&\ this.\mbox{\hyperlink{cjs_2internal_2scheduler_2timeout_provider_8js_aff39b60b9d9ed7566ea206262596581d}{\_\_spreadArray}})\ ||\ \textcolor{keyword}{function}\ (to,\ from)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{for}\ (var\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ =\ 0,\ il\ =\ from.length,\ \mbox{\hyperlink{ordered-map_8min_8js_a2e0772d176c27e9cea01defba2a9575a}{j}}\ =\ to.length;\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ <\ il;\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}++,\ \mbox{\hyperlink{ordered-map_8min_8js_a2e0772d176c27e9cea01defba2a9575a}{j}}++)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ to[\mbox{\hyperlink{ordered-map_8min_8js_a2e0772d176c27e9cea01defba2a9575a}{j}}]\ =\ from[\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}];}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ to;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{cjs_2internal_2scheduler_2timeout_provider_8js_ae2475e10618961c050dcba04e8c42331}\index{timeoutProvider.js@{timeoutProvider.js}!strict@{strict}}
+\index{strict@{strict}!timeoutProvider.js@{timeoutProvider.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{cjs_2internal_2scheduler_2timeout_provider_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+
+\Hypertarget{cjs_2internal_2scheduler_2timeout_provider_8js_a4ff029383d08ea4d169fd2831d770933}\index{timeoutProvider.js@{timeoutProvider.js}!timeoutProvider@{timeoutProvider}}
+\index{timeoutProvider@{timeoutProvider}!timeoutProvider.js@{timeoutProvider.js}}
+\doxysubsubsection{\texorpdfstring{timeoutProvider}{timeoutProvider}}
+{\footnotesize\ttfamily \label{cjs_2internal_2scheduler_2timeout_provider_8js_a4ff029383d08ea4d169fd2831d770933} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} timeout\+Provider = void 0}
+

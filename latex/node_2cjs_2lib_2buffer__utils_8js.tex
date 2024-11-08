@@ -1,0 +1,228 @@
+\doxysection{backend/node\+\_\+modules/jose/dist/node/cjs/lib/buffer\+\_\+utils.js File Reference}
+\hypertarget{node_2cjs_2lib_2buffer__utils_8js}{}\label{node_2cjs_2lib_2buffer__utils_8js}\index{backend/node\_modules/jose/dist/node/cjs/lib/buffer\_utils.js@{backend/node\_modules/jose/dist/node/cjs/lib/buffer\_utils.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{node_2cjs_2lib_2buffer__utils_8js_af7e322cb886a055161d1b45cdca045ad}{concat}} (...buffers)
+\item 
+function \mbox{\hyperlink{node_2cjs_2lib_2buffer__utils_8js_af44f29bb7d85bf80b73d058fb05fab27}{p2s}} (alg, p2s\+Input)
+\item 
+function \mbox{\hyperlink{node_2cjs_2lib_2buffer__utils_8js_a97a27b91e9f23d4396a91054c3a8f39a}{write\+UInt32\+BE}} (\mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a34083d02677ea6acceb641fa647bc25a}{buf}}, \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}, offset)
+\item 
+function \mbox{\hyperlink{node_2cjs_2lib_2buffer__utils_8js_a3f4dc012578c0f0ee72811319dcb48be}{uint64be}} (\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}})
+\item 
+function \mbox{\hyperlink{node_2cjs_2lib_2buffer__utils_8js_afe4b053783c701838cd2f994efc4e557}{uint32be}} (\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}})
+\item 
+function \mbox{\hyperlink{node_2cjs_2lib_2buffer__utils_8js_aaa11b50f283e5a42fb78da8ed3400398}{length\+And\+Input}} (input)
+\item 
+function \mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{node_2cjs_2lib_2buffer__utils_8js_aa3e7fa7b907ff3987aa29899c90d7c38}{concat\+Kdf}} (secret, bits, \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{node_2cjs_2lib_2buffer__utils_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{node_2cjs_2lib_2buffer__utils_8js_a90b70b59d84d1050810724434b4ea151}{concat\+Kdf}} = \mbox{\hyperlink{node_2cjs_2lib_2buffer__utils_8js_ac2d9354817165b7d6627761f6e22d376}{exports.\+length\+And\+Input}} = \mbox{\hyperlink{node_2cjs_2lib_2buffer__utils_8js_ac7b441a1ee0ae1274fc91a83a36608e5}{exports.\+uint32be}} = \mbox{\hyperlink{node_2cjs_2lib_2buffer__utils_8js_a0bfd3e211401bc6df4fdabedc62fe7d4}{exports.\+uint64be}} = \mbox{\hyperlink{node_2cjs_2lib_2buffer__utils_8js_ace1955ae748b5269274ad77a11c773c3}{exports.\+p2s}} = \mbox{\hyperlink{node_2cjs_2lib_2buffer__utils_8js_af776a17274b57c50f3e7b020e1fcd88e}{exports.\+concat}} = \mbox{\hyperlink{dbcs-codec_8js_ad3d625998d0232650afb4cf3c50dc9f1}{exports.\+decoder}} = \mbox{\hyperlink{dbcs-codec_8js_a2e3d2e577cc69881c4ec00c7b8005e35}{exports.\+encoder}} = void 0
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{node_2cjs_2lib_2buffer__utils_8js_a1896e92deb57dfd935dc00671d448e4f}{digest\+\_\+js\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../runtime/digest.\+js"{})
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{node_2cjs_2lib_2buffer__utils_8js_a947f064c438c3cc7516fbedfa2765994}{encoder}} = new Text\+Encoder()
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{node_2cjs_2lib_2buffer__utils_8js_a39a8687674c4faad5dfa31d46a3fa79d}{decoder}} = new Text\+Decoder()
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{node_2cjs_2lib_2buffer__utils_8js_aacde6269eeba55d3971305d473404b34}{MAX\+\_\+\+INT32}} = 2 \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} 32
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{node_2cjs_2lib_2buffer__utils_8js_ace1955ae748b5269274ad77a11c773c3}{p2s}} = p2s
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{node_2cjs_2lib_2buffer__utils_8js_a0bfd3e211401bc6df4fdabedc62fe7d4}{uint64be}} = uint64be
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{node_2cjs_2lib_2buffer__utils_8js_ac7b441a1ee0ae1274fc91a83a36608e5}{uint32be}} = uint32be
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{node_2cjs_2lib_2buffer__utils_8js_ac2d9354817165b7d6627761f6e22d376}{length\+And\+Input}} = length\+And\+Input
+\end{DoxyCompactItemize}
+\begin{Indent}\textbf{ \+\_\+}\par
+{\em Creates a {\ttfamily lodash} object which wraps {\ttfamily value} to enable implicit method chain sequences. Methods that operate on and return arrays, collections, and functions can be chained together. Methods that retrieve a single value or may return a primitive value will automatically end the chain sequence and return the unwrapped value. Otherwise, the value must be unwrapped with {\ttfamily \+\_\+\#value}.
+
+Explicit chain sequences, which must be unwrapped with {\ttfamily \+\_\+\#value}, may be enabled using {\ttfamily \+\_\+.\+chain}.
+
+The execution of chained methods is lazy, that is, it\textquotesingle{}s deferred until {\ttfamily \+\_\+\#value} is implicitly or explicitly called.
+
+Lazy evaluation allows several methods to support shortcut fusion. Shortcut fusion is an optimization to merge iteratee calls; this avoids the creation of intermediate arrays and can greatly reduce the number of iteratee executions. Sections of a chain sequence qualify for shortcut fusion if the section is applied to an array and iteratees accept only one argument. The heuristic for whether a section qualifies for shortcut fusion is subject to change.
+
+Chaining is supported in custom builds as long as the {\ttfamily \+\_\+\#value} method is directly or indirectly included in the build.
+
+In addition to lodash methods, wrappers have {\ttfamily Array} and {\ttfamily String} methods.
+
+The wrapper {\ttfamily Array} methods are\+: {\ttfamily concat}, {\ttfamily join}, {\ttfamily pop}, {\ttfamily push}, {\ttfamily shift}, {\ttfamily sort}, {\ttfamily splice}, and {\ttfamily unshift}
+
+The wrapper {\ttfamily String} methods are\+: {\ttfamily replace} and {\ttfamily split}
+
+The wrapper methods that support shortcut fusion are\+: {\ttfamily at}, {\ttfamily compact}, {\ttfamily drop}, {\ttfamily drop\+Right}, {\ttfamily drop\+While}, {\ttfamily filter}, {\ttfamily find}, {\ttfamily find\+Last}, {\ttfamily head}, {\ttfamily initial}, {\ttfamily last}, {\ttfamily map}, {\ttfamily reject}, {\ttfamily reverse}, {\ttfamily slice}, {\ttfamily tail}, {\ttfamily take}, {\ttfamily take\+Right}, {\ttfamily take\+Right\+While}, {\ttfamily take\+While}, and {\ttfamily to\+Array}
+
+The chainable wrapper methods are\+: {\ttfamily after}, {\ttfamily ary}, {\ttfamily assign}, {\ttfamily assign\+In}, {\ttfamily assign\+In\+With}, {\ttfamily assign\+With}, {\ttfamily at}, {\ttfamily before}, {\ttfamily bind}, {\ttfamily bind\+All}, {\ttfamily bind\+Key}, {\ttfamily cast\+Array}, {\ttfamily chain}, {\ttfamily chunk}, {\ttfamily commit}, {\ttfamily compact}, {\ttfamily concat}, {\ttfamily conforms}, {\ttfamily constant}, {\ttfamily count\+By}, {\ttfamily create}, {\ttfamily curry}, {\ttfamily debounce}, {\ttfamily defaults}, {\ttfamily defaults\+Deep}, {\ttfamily defer}, {\ttfamily delay}, {\ttfamily difference}, {\ttfamily difference\+By}, {\ttfamily difference\+With}, {\ttfamily drop}, {\ttfamily drop\+Right}, {\ttfamily drop\+Right\+While}, {\ttfamily drop\+While}, {\ttfamily extend}, {\ttfamily extend\+With}, {\ttfamily fill}, {\ttfamily filter}, {\ttfamily flat\+Map}, {\ttfamily flat\+Map\+Deep}, {\ttfamily flat\+Map\+Depth}, {\ttfamily flatten}, {\ttfamily flatten\+Deep}, {\ttfamily flatten\+Depth}, {\ttfamily flip}, {\ttfamily flow}, {\ttfamily flow\+Right}, {\ttfamily from\+Pairs}, {\ttfamily functions}, {\ttfamily functions\+In}, {\ttfamily group\+By}, {\ttfamily initial}, {\ttfamily intersection}, {\ttfamily intersection\+By}, {\ttfamily intersection\+With}, {\ttfamily invert}, {\ttfamily invert\+By}, {\ttfamily invoke\+Map}, {\ttfamily iteratee}, {\ttfamily key\+By}, {\ttfamily keys}, {\ttfamily keys\+In}, {\ttfamily map}, {\ttfamily map\+Keys}, {\ttfamily map\+Values}, {\ttfamily matches}, {\ttfamily matches\+Property}, {\ttfamily memoize}, {\ttfamily merge}, {\ttfamily merge\+With}, {\ttfamily method}, {\ttfamily method\+Of}, {\ttfamily mixin}, {\ttfamily negate}, {\ttfamily nth\+Arg}, {\ttfamily omit}, {\ttfamily omit\+By}, {\ttfamily once}, {\ttfamily order\+By}, {\ttfamily over}, {\ttfamily over\+Args}, {\ttfamily over\+Every}, {\ttfamily over\+Some}, {\ttfamily partial}, {\ttfamily partial\+Right}, {\ttfamily partition}, {\ttfamily pick}, {\ttfamily pick\+By}, {\ttfamily plant}, {\ttfamily property}, {\ttfamily property\+Of}, {\ttfamily pull}, {\ttfamily pull\+All}, {\ttfamily pull\+All\+By}, {\ttfamily pull\+All\+With}, {\ttfamily pull\+At}, {\ttfamily push}, {\ttfamily range}, {\ttfamily range\+Right}, {\ttfamily rearg}, {\ttfamily reject}, {\ttfamily remove}, {\ttfamily rest}, {\ttfamily reverse}, {\ttfamily sample\+Size}, {\ttfamily set}, {\ttfamily set\+With}, {\ttfamily shuffle}, {\ttfamily slice}, {\ttfamily sort}, {\ttfamily sort\+By}, {\ttfamily splice}, {\ttfamily spread}, {\ttfamily tail}, {\ttfamily take}, {\ttfamily take\+Right}, {\ttfamily take\+Right\+While}, {\ttfamily take\+While}, {\ttfamily tap}, {\ttfamily throttle}, {\ttfamily thru}, {\ttfamily to\+Array}, {\ttfamily to\+Pairs}, {\ttfamily to\+Pairs\+In}, {\ttfamily to\+Path}, {\ttfamily to\+Plain\+Object}, {\ttfamily transform}, {\ttfamily unary}, {\ttfamily union}, {\ttfamily union\+By}, {\ttfamily union\+With}, {\ttfamily uniq}, {\ttfamily uniq\+By}, {\ttfamily uniq\+With}, {\ttfamily unset}, {\ttfamily unshift}, {\ttfamily unzip}, {\ttfamily unzip\+With}, {\ttfamily update}, {\ttfamily update\+With}, {\ttfamily values}, {\ttfamily values\+In}, {\ttfamily without}, {\ttfamily wrap}, {\ttfamily xor}, {\ttfamily xor\+By}, {\ttfamily xor\+With}, {\ttfamily zip}, {\ttfamily zip\+Object}, {\ttfamily zip\+Object\+Deep}, and {\ttfamily zip\+With}
+
+The wrapper methods that are {\bfseries{not}} chainable by default are\+: {\ttfamily add}, {\ttfamily attempt}, {\ttfamily camel\+Case}, {\ttfamily capitalize}, {\ttfamily ceil}, {\ttfamily clamp}, {\ttfamily clone}, {\ttfamily clone\+Deep}, {\ttfamily clone\+Deep\+With}, {\ttfamily clone\+With}, {\ttfamily conforms\+To}, {\ttfamily deburr}, {\ttfamily default\+To}, {\ttfamily divide}, {\ttfamily each}, {\ttfamily each\+Right}, {\ttfamily ends\+With}, {\ttfamily eq}, {\ttfamily escape}, {\ttfamily escape\+Reg\+Exp}, {\ttfamily every}, {\ttfamily find}, {\ttfamily find\+Index}, {\ttfamily find\+Key}, {\ttfamily find\+Last}, {\ttfamily find\+Last\+Index}, {\ttfamily find\+Last\+Key}, {\ttfamily first}, {\ttfamily floor}, {\ttfamily for\+Each}, {\ttfamily for\+Each\+Right}, {\ttfamily for\+In}, {\ttfamily for\+In\+Right}, {\ttfamily for\+Own}, {\ttfamily for\+Own\+Right}, {\ttfamily get}, {\ttfamily gt}, {\ttfamily gte}, {\ttfamily has}, {\ttfamily has\+In}, {\ttfamily head}, {\ttfamily identity}, {\ttfamily includes}, {\ttfamily index\+Of}, {\ttfamily in\+Range}, {\ttfamily invoke}, {\ttfamily is\+Arguments}, {\ttfamily is\+Array}, {\ttfamily is\+Array\+Buffer}, {\ttfamily is\+Array\+Like}, {\ttfamily is\+Array\+Like\+Object}, {\ttfamily is\+Boolean}, {\ttfamily is\+Buffer}, {\ttfamily is\+Date}, {\ttfamily is\+Element}, {\ttfamily is\+Empty}, {\ttfamily is\+Equal}, {\ttfamily is\+Equal\+With}, {\ttfamily is\+Error}, {\ttfamily is\+Finite}, {\ttfamily is\+Function}, {\ttfamily is\+Integer}, {\ttfamily is\+Length}, {\ttfamily is\+Map}, {\ttfamily is\+Match}, {\ttfamily is\+Match\+With}, {\ttfamily is\+NaN}, {\ttfamily is\+Native}, {\ttfamily is\+Nil}, {\ttfamily is\+Null}, {\ttfamily is\+Number}, {\ttfamily is\+Object}, {\ttfamily is\+Object\+Like}, {\ttfamily is\+Plain\+Object}, {\ttfamily is\+Reg\+Exp}, {\ttfamily is\+Safe\+Integer}, {\ttfamily is\+Set}, {\ttfamily is\+String}, {\ttfamily is\+Undefined}, {\ttfamily is\+Typed\+Array}, {\ttfamily is\+Weak\+Map}, {\ttfamily is\+Weak\+Set}, {\ttfamily join}, {\ttfamily kebab\+Case}, {\ttfamily last}, {\ttfamily last\+Index\+Of}, {\ttfamily lower\+Case}, {\ttfamily lower\+First}, {\ttfamily lt}, {\ttfamily lte}, {\ttfamily max}, {\ttfamily max\+By}, {\ttfamily mean}, {\ttfamily mean\+By}, {\ttfamily min}, {\ttfamily min\+By}, {\ttfamily multiply}, {\ttfamily no\+Conflict}, {\ttfamily noop}, {\ttfamily now}, {\ttfamily nth}, {\ttfamily pad}, {\ttfamily pad\+End}, {\ttfamily pad\+Start}, {\ttfamily parse\+Int}, {\ttfamily pop}, {\ttfamily random}, {\ttfamily reduce}, {\ttfamily reduce\+Right}, {\ttfamily repeat}, {\ttfamily result}, {\ttfamily round}, {\ttfamily run\+In\+Context}, {\ttfamily sample}, {\ttfamily shift}, {\ttfamily size}, {\ttfamily snake\+Case}, {\ttfamily some}, {\ttfamily sorted\+Index}, {\ttfamily sorted\+Index\+By}, {\ttfamily sorted\+Last\+Index}, {\ttfamily sorted\+Last\+Index\+By}, {\ttfamily start\+Case}, {\ttfamily starts\+With}, {\ttfamily stub\+Array}, {\ttfamily stub\+False}, {\ttfamily stub\+Object}, {\ttfamily stub\+String}, {\ttfamily stub\+True}, {\ttfamily subtract}, {\ttfamily sum}, {\ttfamily sum\+By}, {\ttfamily template}, {\ttfamily times}, {\ttfamily to\+Finite}, {\ttfamily to\+Integer}, {\ttfamily to\+JSON}, {\ttfamily to\+Length}, {\ttfamily to\+Lower}, {\ttfamily to\+Number}, {\ttfamily to\+Safe\+Integer}, {\ttfamily to\+String}, {\ttfamily to\+Upper}, {\ttfamily trim}, {\ttfamily trim\+End}, {\ttfamily trim\+Start}, {\ttfamily truncate}, {\ttfamily unescape}, {\ttfamily unique\+Id}, {\ttfamily upper\+Case}, {\ttfamily upper\+First}, {\ttfamily value}, and {\ttfamily words}
+
+@constructor }\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{node_2cjs_2lib_2buffer__utils_8js_af776a17274b57c50f3e7b020e1fcd88e}{concat}} = concat
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{node_2cjs_2lib_2buffer__utils_8js_af7e322cb886a055161d1b45cdca045ad}\index{buffer\_utils.js@{buffer\_utils.js}!concat@{concat}}
+\index{concat@{concat}!buffer\_utils.js@{buffer\_utils.js}}
+\doxysubsubsection{\texorpdfstring{concat()}{concat()}}
+{\footnotesize\ttfamily \label{node_2cjs_2lib_2buffer__utils_8js_af7e322cb886a055161d1b45cdca045ad} 
+function concat (\begin{DoxyParamCaption}\item[{}]{...}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a34083d02677ea6acceb641fa647bc25a}{buf}}, \mbox{\hyperlink{cjs_2internal_2operators_2buffer_8js_a838d54b935df11eff7928ba8da636891}{buffer}}, \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}, \mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a7fdcf4c82c9946bf2b0b80829a7ab230}{length}}, \mbox{\hyperlink{ordered-map_8min_8js_aa4a39500e3f754a8f2e1fd50b9ae523c}{size}}, and \mbox{\hyperlink{__clone_array_buffer_8js_a23efaf497399fa716c3e05b817cb7d0c}{Uint8\+Array}}.
+
+\Hypertarget{node_2cjs_2lib_2buffer__utils_8js_aa3e7fa7b907ff3987aa29899c90d7c38}\index{buffer\_utils.js@{buffer\_utils.js}!concatKdf@{concatKdf}}
+\index{concatKdf@{concatKdf}!buffer\_utils.js@{buffer\_utils.js}}
+\doxysubsubsection{\texorpdfstring{concatKdf()}{concatKdf()}}
+{\footnotesize\ttfamily \label{node_2cjs_2lib_2buffer__utils_8js_aa3e7fa7b907ff3987aa29899c90d7c38} 
+function \mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} concat\+Kdf (\begin{DoxyParamCaption}\item[{}]{secret}{, }\item[{}]{bits}{, }\item[{}]{value}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a34083d02677ea6acceb641fa647bc25a}{buf}}, \mbox{\hyperlink{node_2cjs_2lib_2buffer__utils_8js_a1896e92deb57dfd935dc00671d448e4f}{digest\+\_\+js\+\_\+1}}, \mbox{\hyperlink{express_2lib_2express_8js_abde3c35e3bb7e5225dd7f234c685329c}{res}}, \mbox{\hyperlink{node_2cjs_2lib_2buffer__utils_8js_ac7b441a1ee0ae1274fc91a83a36608e5}{uint32be}}, \mbox{\hyperlink{__clone_array_buffer_8js_a23efaf497399fa716c3e05b817cb7d0c}{Uint8\+Array}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.
+
+\Hypertarget{node_2cjs_2lib_2buffer__utils_8js_aaa11b50f283e5a42fb78da8ed3400398}\index{buffer\_utils.js@{buffer\_utils.js}!lengthAndInput@{lengthAndInput}}
+\index{lengthAndInput@{lengthAndInput}!buffer\_utils.js@{buffer\_utils.js}}
+\doxysubsubsection{\texorpdfstring{lengthAndInput()}{lengthAndInput()}}
+{\footnotesize\ttfamily \label{node_2cjs_2lib_2buffer__utils_8js_aaa11b50f283e5a42fb78da8ed3400398} 
+function length\+And\+Input (\begin{DoxyParamCaption}\item[{}]{input}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{node_2cjs_2lib_2buffer__utils_8js_af776a17274b57c50f3e7b020e1fcd88e}{concat}}, and \mbox{\hyperlink{node_2cjs_2lib_2buffer__utils_8js_ac7b441a1ee0ae1274fc91a83a36608e5}{uint32be}}.
+
+\Hypertarget{node_2cjs_2lib_2buffer__utils_8js_af44f29bb7d85bf80b73d058fb05fab27}\index{buffer\_utils.js@{buffer\_utils.js}!p2s@{p2s}}
+\index{p2s@{p2s}!buffer\_utils.js@{buffer\_utils.js}}
+\doxysubsubsection{\texorpdfstring{p2s()}{p2s()}}
+{\footnotesize\ttfamily \label{node_2cjs_2lib_2buffer__utils_8js_af44f29bb7d85bf80b73d058fb05fab27} 
+function p2s (\begin{DoxyParamCaption}\item[{}]{alg}{, }\item[{}]{p2s\+Input}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{node_2cjs_2lib_2buffer__utils_8js_af776a17274b57c50f3e7b020e1fcd88e}{concat}}, and \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}}.
+
+\Hypertarget{node_2cjs_2lib_2buffer__utils_8js_afe4b053783c701838cd2f994efc4e557}\index{buffer\_utils.js@{buffer\_utils.js}!uint32be@{uint32be}}
+\index{uint32be@{uint32be}!buffer\_utils.js@{buffer\_utils.js}}
+\doxysubsubsection{\texorpdfstring{uint32be()}{uint32be()}}
+{\footnotesize\ttfamily \label{node_2cjs_2lib_2buffer__utils_8js_afe4b053783c701838cd2f994efc4e557} 
+function uint32be (\begin{DoxyParamCaption}\item[{}]{value}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a34083d02677ea6acceb641fa647bc25a}{buf}}, \mbox{\hyperlink{__clone_array_buffer_8js_a23efaf497399fa716c3e05b817cb7d0c}{Uint8\+Array}}, \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}, and \mbox{\hyperlink{browser_2lib_2buffer__utils_8js_a97a27b91e9f23d4396a91054c3a8f39a}{write\+UInt32\+BE()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=249pt]{node_2cjs_2lib_2buffer__utils_8js_afe4b053783c701838cd2f994efc4e557_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{node_2cjs_2lib_2buffer__utils_8js_a3f4dc012578c0f0ee72811319dcb48be}\index{buffer\_utils.js@{buffer\_utils.js}!uint64be@{uint64be}}
+\index{uint64be@{uint64be}!buffer\_utils.js@{buffer\_utils.js}}
+\doxysubsubsection{\texorpdfstring{uint64be()}{uint64be()}}
+{\footnotesize\ttfamily \label{node_2cjs_2lib_2buffer__utils_8js_a3f4dc012578c0f0ee72811319dcb48be} 
+function uint64be (\begin{DoxyParamCaption}\item[{}]{value}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a34083d02677ea6acceb641fa647bc25a}{buf}}, \mbox{\hyperlink{browser_2lib_2buffer__utils_8js_aacde6269eeba55d3971305d473404b34}{MAX\+\_\+\+INT32}}, \mbox{\hyperlink{__clone_array_buffer_8js_a23efaf497399fa716c3e05b817cb7d0c}{Uint8\+Array}}, \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}, and \mbox{\hyperlink{browser_2lib_2buffer__utils_8js_a97a27b91e9f23d4396a91054c3a8f39a}{write\+UInt32\+BE()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=249pt]{node_2cjs_2lib_2buffer__utils_8js_a3f4dc012578c0f0ee72811319dcb48be_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{node_2cjs_2lib_2buffer__utils_8js_a97a27b91e9f23d4396a91054c3a8f39a}\index{buffer\_utils.js@{buffer\_utils.js}!writeUInt32BE@{writeUInt32BE}}
+\index{writeUInt32BE@{writeUInt32BE}!buffer\_utils.js@{buffer\_utils.js}}
+\doxysubsubsection{\texorpdfstring{writeUInt32BE()}{writeUInt32BE()}}
+{\footnotesize\ttfamily \label{node_2cjs_2lib_2buffer__utils_8js_a97a27b91e9f23d4396a91054c3a8f39a} 
+function write\+UInt32\+BE (\begin{DoxyParamCaption}\item[{}]{buf}{, }\item[{}]{value}{, }\item[{}]{offset}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{long_2index_8js_af6ba5df101e5630835a0a5d778844922}{and}}, \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a34083d02677ea6acceb641fa647bc25a}{buf}}, \mbox{\hyperlink{browser_2lib_2buffer__utils_8js_aacde6269eeba55d3971305d473404b34}{MAX\+\_\+\+INT32}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{node_2cjs_2lib_2buffer__utils_8js_af776a17274b57c50f3e7b020e1fcd88e}\index{buffer\_utils.js@{buffer\_utils.js}!concat@{concat}}
+\index{concat@{concat}!buffer\_utils.js@{buffer\_utils.js}}
+\doxysubsubsection{\texorpdfstring{concat}{concat}}
+{\footnotesize\ttfamily \label{node_2cjs_2lib_2buffer__utils_8js_af776a17274b57c50f3e7b020e1fcd88e} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} concat = concat}
+
+\Hypertarget{node_2cjs_2lib_2buffer__utils_8js_a90b70b59d84d1050810724434b4ea151}\index{buffer\_utils.js@{buffer\_utils.js}!concatKdf@{concatKdf}}
+\index{concatKdf@{concatKdf}!buffer\_utils.js@{buffer\_utils.js}}
+\doxysubsubsection{\texorpdfstring{concatKdf}{concatKdf}}
+{\footnotesize\ttfamily \label{node_2cjs_2lib_2buffer__utils_8js_a90b70b59d84d1050810724434b4ea151} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} concat\+Kdf = \mbox{\hyperlink{node_2cjs_2lib_2buffer__utils_8js_ac2d9354817165b7d6627761f6e22d376}{exports.\+length\+And\+Input}} = \mbox{\hyperlink{node_2cjs_2lib_2buffer__utils_8js_ac7b441a1ee0ae1274fc91a83a36608e5}{exports.\+uint32be}} = \mbox{\hyperlink{node_2cjs_2lib_2buffer__utils_8js_a0bfd3e211401bc6df4fdabedc62fe7d4}{exports.\+uint64be}} = \mbox{\hyperlink{node_2cjs_2lib_2buffer__utils_8js_ace1955ae748b5269274ad77a11c773c3}{exports.\+p2s}} = \mbox{\hyperlink{node_2cjs_2lib_2buffer__utils_8js_af776a17274b57c50f3e7b020e1fcd88e}{exports.\+concat}} = \mbox{\hyperlink{dbcs-codec_8js_ad3d625998d0232650afb4cf3c50dc9f1}{exports.\+decoder}} = \mbox{\hyperlink{dbcs-codec_8js_a2e3d2e577cc69881c4ec00c7b8005e35}{exports.\+encoder}} = void 0}
+
+\Hypertarget{node_2cjs_2lib_2buffer__utils_8js_a39a8687674c4faad5dfa31d46a3fa79d}\index{buffer\_utils.js@{buffer\_utils.js}!decoder@{decoder}}
+\index{decoder@{decoder}!buffer\_utils.js@{buffer\_utils.js}}
+\doxysubsubsection{\texorpdfstring{decoder}{decoder}}
+{\footnotesize\ttfamily \label{node_2cjs_2lib_2buffer__utils_8js_a39a8687674c4faad5dfa31d46a3fa79d} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} decoder = new Text\+Decoder()}
+
+\Hypertarget{node_2cjs_2lib_2buffer__utils_8js_a1896e92deb57dfd935dc00671d448e4f}\index{buffer\_utils.js@{buffer\_utils.js}!digest\_js\_1@{digest\_js\_1}}
+\index{digest\_js\_1@{digest\_js\_1}!buffer\_utils.js@{buffer\_utils.js}}
+\doxysubsubsection{\texorpdfstring{digest\_js\_1}{digest\_js\_1}}
+{\footnotesize\ttfamily \label{node_2cjs_2lib_2buffer__utils_8js_a1896e92deb57dfd935dc00671d448e4f} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} digest\+\_\+js\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../runtime/digest.\+js"{})}
+
+\Hypertarget{node_2cjs_2lib_2buffer__utils_8js_a947f064c438c3cc7516fbedfa2765994}\index{buffer\_utils.js@{buffer\_utils.js}!encoder@{encoder}}
+\index{encoder@{encoder}!buffer\_utils.js@{buffer\_utils.js}}
+\doxysubsubsection{\texorpdfstring{encoder}{encoder}}
+{\footnotesize\ttfamily \label{node_2cjs_2lib_2buffer__utils_8js_a947f064c438c3cc7516fbedfa2765994} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} encoder = new Text\+Encoder()}
+
+\Hypertarget{node_2cjs_2lib_2buffer__utils_8js_ac2d9354817165b7d6627761f6e22d376}\index{buffer\_utils.js@{buffer\_utils.js}!lengthAndInput@{lengthAndInput}}
+\index{lengthAndInput@{lengthAndInput}!buffer\_utils.js@{buffer\_utils.js}}
+\doxysubsubsection{\texorpdfstring{lengthAndInput}{lengthAndInput}}
+{\footnotesize\ttfamily \label{node_2cjs_2lib_2buffer__utils_8js_ac2d9354817165b7d6627761f6e22d376} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} length\+And\+Input = length\+And\+Input}
+
+\Hypertarget{node_2cjs_2lib_2buffer__utils_8js_aacde6269eeba55d3971305d473404b34}\index{buffer\_utils.js@{buffer\_utils.js}!MAX\_INT32@{MAX\_INT32}}
+\index{MAX\_INT32@{MAX\_INT32}!buffer\_utils.js@{buffer\_utils.js}}
+\doxysubsubsection{\texorpdfstring{MAX\_INT32}{MAX\_INT32}}
+{\footnotesize\ttfamily \label{node_2cjs_2lib_2buffer__utils_8js_aacde6269eeba55d3971305d473404b34} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} MAX\+\_\+\+INT32 = 2 \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} 32}
+
+\Hypertarget{node_2cjs_2lib_2buffer__utils_8js_ace1955ae748b5269274ad77a11c773c3}\index{buffer\_utils.js@{buffer\_utils.js}!p2s@{p2s}}
+\index{p2s@{p2s}!buffer\_utils.js@{buffer\_utils.js}}
+\doxysubsubsection{\texorpdfstring{p2s}{p2s}}
+{\footnotesize\ttfamily \label{node_2cjs_2lib_2buffer__utils_8js_ace1955ae748b5269274ad77a11c773c3} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} p2s = p2s}
+
+\Hypertarget{node_2cjs_2lib_2buffer__utils_8js_ae2475e10618961c050dcba04e8c42331}\index{buffer\_utils.js@{buffer\_utils.js}!strict@{strict}}
+\index{strict@{strict}!buffer\_utils.js@{buffer\_utils.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{node_2cjs_2lib_2buffer__utils_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+
+\Hypertarget{node_2cjs_2lib_2buffer__utils_8js_ac7b441a1ee0ae1274fc91a83a36608e5}\index{buffer\_utils.js@{buffer\_utils.js}!uint32be@{uint32be}}
+\index{uint32be@{uint32be}!buffer\_utils.js@{buffer\_utils.js}}
+\doxysubsubsection{\texorpdfstring{uint32be}{uint32be}}
+{\footnotesize\ttfamily \label{node_2cjs_2lib_2buffer__utils_8js_ac7b441a1ee0ae1274fc91a83a36608e5} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} uint32be = uint32be}
+
+\Hypertarget{node_2cjs_2lib_2buffer__utils_8js_a0bfd3e211401bc6df4fdabedc62fe7d4}\index{buffer\_utils.js@{buffer\_utils.js}!uint64be@{uint64be}}
+\index{uint64be@{uint64be}!buffer\_utils.js@{buffer\_utils.js}}
+\doxysubsubsection{\texorpdfstring{uint64be}{uint64be}}
+{\footnotesize\ttfamily \label{node_2cjs_2lib_2buffer__utils_8js_a0bfd3e211401bc6df4fdabedc62fe7d4} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} uint64be = uint64be}
+

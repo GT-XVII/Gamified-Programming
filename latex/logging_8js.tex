@@ -1,0 +1,301 @@
+\doxysection{backend/node\+\_\+modules/@grpc/grpc-\/js/build/src/logging.js File Reference}
+\hypertarget{logging_8js}{}\label{logging_8js}\index{backend/node\_modules/"@grpc/grpc-\/js/build/src/logging.js@{backend/node\_modules/"@grpc/grpc-\/js/build/src/logging.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{logging_8js_aa662611c59a4365f3b4ba7b91bab0371}{switch}} (verbosity\+String.\+to\+Upper\+Case())
+\item 
+\mbox{\hyperlink{logging_8js_a07c2f2193b8a37aab8736a0d2cd3b191}{for}} (\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} tracer\+Name \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}} \mbox{\hyperlink{split_8js_afeb1a7ef0d383073a030166165cd4b99}{tracers\+String.\+split}}(\textquotesingle{},\textquotesingle{}))
+\item 
+function \mbox{\hyperlink{logging_8js_a676194c61966ff0939ebff0f719055ec}{trace}} (severity, tracer, \mbox{\hyperlink{node-forge_2lib_2util_8js_ab492f69e70933f85fe6b3a8808d19852}{text}})
+\item 
+function \mbox{\hyperlink{logging_8js_a39eeee415de290bf125a319bb9c6865d}{is\+Tracer\+Enabled}} (tracer)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{logging_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+var \mbox{\hyperlink{logging_8js_a0adf123df8967a14b5bdd9ff3bbe2d0c}{\+\_\+a}}
+\item 
+var \mbox{\hyperlink{logging_8js_a53284eb14d953f3ba58806fc49cd4f7c}{\+\_\+b}}
+\item 
+var \mbox{\hyperlink{logging_8js_aa9188bfce96541e3026ad83bee2ab87c}{\+\_\+c}}
+\item 
+var \mbox{\hyperlink{logging_8js_aae1d992982698a637e8201f92e274e19}{\+\_\+d}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{logging_8js_a8ea8f4e538aa47c047b49b65ad1a90ba}{is\+Tracer\+Enabled}} = \mbox{\hyperlink{logging_8js_acb1634453d1705af9683695efa3847e6}{exports.\+trace}} = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_abd96780d5def5a58be64a80192702ca8}{exports.\+log}} = \mbox{\hyperlink{logging_8js_a7a1736684d8e3c49efca65c24c869d1a}{exports.\+set\+Logger\+Verbosity}} = \mbox{\hyperlink{_0dgrpc_2grpc-js_2build_2src_2index_8js_a7de567940593d33b18cd15850965b47f}{exports.\+set\+Logger}} = \mbox{\hyperlink{logging_8js_ad5750bc67ef3d981cbed6ec19ec835e6}{exports.\+get\+Logger}} = void 0
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{logging_8js_ad33cb6840349d3bc93f4fe9de15a6f8f}{constants\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./constants"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{logging_8js_ab4d2ce1c3229a55f81c9f4331e400d98}{process\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}process"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{logging_8js_a7f742a86630bf44123c69dafc8eca74e}{client\+Version}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}../../package.\+json\textquotesingle{}).\mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a265a39dcf2f0b7c6b96574362aa01ad9}{version}}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{logging_8js_ad93983ef9e2feeb354f923e1b8769a11}{DEFAULT\+\_\+\+LOGGER}}
+\item 
+let \mbox{\hyperlink{logging_8js_af0d35b0f0653f0f3835a847a87d1b965}{\+\_\+logger}} = \mbox{\hyperlink{logging_8js_ad93983ef9e2feeb354f923e1b8769a11}{DEFAULT\+\_\+\+LOGGER}}
+\item 
+let \mbox{\hyperlink{logging_8js_a8f624f5eb5e8cd95dad571be1344e915}{\+\_\+log\+Verbosity}} = constants\+\_\+1.\+Log\+Verbosity.\+ERROR
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{logging_8js_a22a11ddbe76f3633b68bca4c313950ec}{verbosity\+String}} = (\mbox{\hyperlink{logging_8js_a53284eb14d953f3ba58806fc49cd4f7c}{\+\_\+b}} = (\mbox{\hyperlink{logger_2dist_2esm_2index_8esm5_8js_a0adf123df8967a14b5bdd9ff3bbe2d0c}{\+\_\+a}} = process.\+env.\+GRPC\+\_\+\+NODE\+\_\+\+VERBOSITY) !== null \&\& \mbox{\hyperlink{logger_2dist_2esm_2index_8esm5_8js_a0adf123df8967a14b5bdd9ff3bbe2d0c}{\+\_\+a}} !== void 0 ? \mbox{\hyperlink{logger_2dist_2esm_2index_8esm5_8js_a0adf123df8967a14b5bdd9ff3bbe2d0c}{\+\_\+a}} \+: process.\+env.\+GRPC\+\_\+\+VERBOSITY) !== null \&\& \mbox{\hyperlink{logging_8js_a53284eb14d953f3ba58806fc49cd4f7c}{\+\_\+b}} !== void 0 ? \mbox{\hyperlink{logging_8js_a53284eb14d953f3ba58806fc49cd4f7c}{\+\_\+b}} \+: \textquotesingle{}\textquotesingle{}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{logging_8js_ad5750bc67ef3d981cbed6ec19ec835e6}{get\+Logger}}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{logging_8js_a7de567940593d33b18cd15850965b47f}{set\+Logger}}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{logging_8js_a7a1736684d8e3c49efca65c24c869d1a}{set\+Logger\+Verbosity}}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{logging_8js_acc57177ae24b9a1875f0ad075e386eed}{log}}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{logging_8js_a24177127ee93abc081e1f3f008b84f90}{tracers\+String}} = (\mbox{\hyperlink{logging_8js_aae1d992982698a637e8201f92e274e19}{\+\_\+d}} = (\mbox{\hyperlink{logging_8js_aa9188bfce96541e3026ad83bee2ab87c}{\+\_\+c}} = process.\+env.\+GRPC\+\_\+\+NODE\+\_\+\+TRACE) !== null \&\& \mbox{\hyperlink{logging_8js_aa9188bfce96541e3026ad83bee2ab87c}{\+\_\+c}} !== void 0 ? \mbox{\hyperlink{logging_8js_aa9188bfce96541e3026ad83bee2ab87c}{\+\_\+c}} \+: process.\+env.\+GRPC\+\_\+\+TRACE) !== null \&\& \mbox{\hyperlink{logging_8js_aae1d992982698a637e8201f92e274e19}{\+\_\+d}} !== void 0 ? \mbox{\hyperlink{logging_8js_aae1d992982698a637e8201f92e274e19}{\+\_\+d}} \+: \textquotesingle{}\textquotesingle{}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{logging_8js_aea80eafe20e9c7b361cd75a584d48440}{enabled\+Tracers}} = new \mbox{\hyperlink{__create_set_8js_ab9f46b8207185d305162498bea0d1c26}{Set}}()
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{logging_8js_adfbe2e548b0279db78423489128aef3a}{disabled\+Tracers}} = new \mbox{\hyperlink{__create_set_8js_ab9f46b8207185d305162498bea0d1c26}{Set}}()
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{logging_8js_a828bd9aff88794519872b75344b4e60b}{all\+Enabled}} = \mbox{\hyperlink{___hash_8js_a54a061fe5287ccd59bdb25b09f05270c}{enabled\+Tracers.\+has}}(\textquotesingle{}\mbox{\hyperlink{application_8js_adb8f173cc9d0f47e38ae05e7bb965c99}{all}}\textquotesingle{})
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{logging_8js_acb1634453d1705af9683695efa3847e6}{trace}} = trace
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{logging_8js_a07c2f2193b8a37aab8736a0d2cd3b191}\index{logging.js@{logging.js}!for@{for}}
+\index{for@{for}!logging.js@{logging.js}}
+\doxysubsubsection{\texorpdfstring{for()}{for()}}
+{\footnotesize\ttfamily \label{logging_8js_a07c2f2193b8a37aab8736a0d2cd3b191} 
+for (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} tracer\+Name \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}} tracers\+String.}]{split}{\textquotesingle{},\textquotesingle{}}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{logging_8js_adfbe2e548b0279db78423489128aef3a}{disabled\+Tracers}}, and \mbox{\hyperlink{logging_8js_aea80eafe20e9c7b361cd75a584d48440}{enabled\+Tracers}}.
+
+\Hypertarget{logging_8js_a39eeee415de290bf125a319bb9c6865d}\index{logging.js@{logging.js}!isTracerEnabled@{isTracerEnabled}}
+\index{isTracerEnabled@{isTracerEnabled}!logging.js@{logging.js}}
+\doxysubsubsection{\texorpdfstring{isTracerEnabled()}{isTracerEnabled()}}
+{\footnotesize\ttfamily \label{logging_8js_a39eeee415de290bf125a319bb9c6865d} 
+function is\+Tracer\+Enabled (\begin{DoxyParamCaption}\item[{}]{tracer}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{logging_8js_a828bd9aff88794519872b75344b4e60b}{all\+Enabled}}, \mbox{\hyperlink{logging_8js_adfbe2e548b0279db78423489128aef3a}{disabled\+Tracers}}, and \mbox{\hyperlink{logging_8js_aea80eafe20e9c7b361cd75a584d48440}{enabled\+Tracers}}.
+
+\Hypertarget{logging_8js_aa662611c59a4365f3b4ba7b91bab0371}\index{logging.js@{logging.js}!switch@{switch}}
+\index{switch@{switch}!logging.js@{logging.js}}
+\doxysubsubsection{\texorpdfstring{switch()}{switch()}}
+{\footnotesize\ttfamily \label{logging_8js_aa662611c59a4365f3b4ba7b91bab0371} 
+switch (\begin{DoxyParamCaption}\item[{verbosity\+String.}]{to\+Upper\+Case}{()}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{logging_8js_a8f624f5eb5e8cd95dad571be1344e915}{\+\_\+log\+Verbosity}}, and \mbox{\hyperlink{logging_8js_ad33cb6840349d3bc93f4fe9de15a6f8f}{constants\+\_\+1}}.
+
+\Hypertarget{logging_8js_a676194c61966ff0939ebff0f719055ec}\index{logging.js@{logging.js}!trace@{trace}}
+\index{trace@{trace}!logging.js@{logging.js}}
+\doxysubsubsection{\texorpdfstring{trace()}{trace()}}
+{\footnotesize\ttfamily \label{logging_8js_a676194c61966ff0939ebff0f719055ec} 
+function trace (\begin{DoxyParamCaption}\item[{}]{severity}{, }\item[{}]{tracer}{, }\item[{}]{text}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{logging_8js_a7f742a86630bf44123c69dafc8eca74e}{client\+Version}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}}, \mbox{\hyperlink{logging_8js_a8ea8f4e538aa47c047b49b65ad1a90ba}{is\+Tracer\+Enabled}}, \mbox{\hyperlink{logging_8js_ab4d2ce1c3229a55f81c9f4331e400d98}{process\+\_\+1}}, and \mbox{\hyperlink{node-forge_2lib_2util_8js_ab492f69e70933f85fe6b3a8808d19852}{text}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{logging_8js_a0adf123df8967a14b5bdd9ff3bbe2d0c}\index{logging.js@{logging.js}!\_a@{\_a}}
+\index{\_a@{\_a}!logging.js@{logging.js}}
+\doxysubsubsection{\texorpdfstring{\_a}{\_a}}
+{\footnotesize\ttfamily \label{logging_8js_a0adf123df8967a14b5bdd9ff3bbe2d0c} 
+var \+\_\+a}
+
+\Hypertarget{logging_8js_a53284eb14d953f3ba58806fc49cd4f7c}\index{logging.js@{logging.js}!\_b@{\_b}}
+\index{\_b@{\_b}!logging.js@{logging.js}}
+\doxysubsubsection{\texorpdfstring{\_b}{\_b}}
+{\footnotesize\ttfamily \label{logging_8js_a53284eb14d953f3ba58806fc49cd4f7c} 
+var \+\_\+b}
+
+\Hypertarget{logging_8js_aa9188bfce96541e3026ad83bee2ab87c}\index{logging.js@{logging.js}!\_c@{\_c}}
+\index{\_c@{\_c}!logging.js@{logging.js}}
+\doxysubsubsection{\texorpdfstring{\_c}{\_c}}
+{\footnotesize\ttfamily \label{logging_8js_aa9188bfce96541e3026ad83bee2ab87c} 
+var \+\_\+c}
+
+\Hypertarget{logging_8js_aae1d992982698a637e8201f92e274e19}\index{logging.js@{logging.js}!\_d@{\_d}}
+\index{\_d@{\_d}!logging.js@{logging.js}}
+\doxysubsubsection{\texorpdfstring{\_d}{\_d}}
+{\footnotesize\ttfamily \label{logging_8js_aae1d992982698a637e8201f92e274e19} 
+var \+\_\+d}
+
+\Hypertarget{logging_8js_af0d35b0f0653f0f3835a847a87d1b965}\index{logging.js@{logging.js}!\_logger@{\_logger}}
+\index{\_logger@{\_logger}!logging.js@{logging.js}}
+\doxysubsubsection{\texorpdfstring{\_logger}{\_logger}}
+{\footnotesize\ttfamily \label{logging_8js_af0d35b0f0653f0f3835a847a87d1b965} 
+let \+\_\+logger = \mbox{\hyperlink{logging_8js_ad93983ef9e2feeb354f923e1b8769a11}{DEFAULT\+\_\+\+LOGGER}}}
+
+\Hypertarget{logging_8js_a8f624f5eb5e8cd95dad571be1344e915}\index{logging.js@{logging.js}!\_logVerbosity@{\_logVerbosity}}
+\index{\_logVerbosity@{\_logVerbosity}!logging.js@{logging.js}}
+\doxysubsubsection{\texorpdfstring{\_logVerbosity}{\_logVerbosity}}
+{\footnotesize\ttfamily \label{logging_8js_a8f624f5eb5e8cd95dad571be1344e915} 
+let \+\_\+log\+Verbosity = constants\+\_\+1.\+Log\+Verbosity.\+ERROR}
+
+\Hypertarget{logging_8js_a828bd9aff88794519872b75344b4e60b}\index{logging.js@{logging.js}!allEnabled@{allEnabled}}
+\index{allEnabled@{allEnabled}!logging.js@{logging.js}}
+\doxysubsubsection{\texorpdfstring{allEnabled}{allEnabled}}
+{\footnotesize\ttfamily \label{logging_8js_a828bd9aff88794519872b75344b4e60b} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} all\+Enabled = \mbox{\hyperlink{___hash_8js_a54a061fe5287ccd59bdb25b09f05270c}{enabled\+Tracers.\+has}}(\textquotesingle{}\mbox{\hyperlink{application_8js_adb8f173cc9d0f47e38ae05e7bb965c99}{all}}\textquotesingle{})}
+
+\Hypertarget{logging_8js_a7f742a86630bf44123c69dafc8eca74e}\index{logging.js@{logging.js}!clientVersion@{clientVersion}}
+\index{clientVersion@{clientVersion}!logging.js@{logging.js}}
+\doxysubsubsection{\texorpdfstring{clientVersion}{clientVersion}}
+{\footnotesize\ttfamily \label{logging_8js_a7f742a86630bf44123c69dafc8eca74e} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} client\+Version = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}../../package.\+json\textquotesingle{}).\mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a265a39dcf2f0b7c6b96574362aa01ad9}{version}}}
+
+\Hypertarget{logging_8js_ad33cb6840349d3bc93f4fe9de15a6f8f}\index{logging.js@{logging.js}!constants\_1@{constants\_1}}
+\index{constants\_1@{constants\_1}!logging.js@{logging.js}}
+\doxysubsubsection{\texorpdfstring{constants\_1}{constants\_1}}
+{\footnotesize\ttfamily \label{logging_8js_ad33cb6840349d3bc93f4fe9de15a6f8f} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} constants\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./constants"{})}
+
+\Hypertarget{logging_8js_ad93983ef9e2feeb354f923e1b8769a11}\index{logging.js@{logging.js}!DEFAULT\_LOGGER@{DEFAULT\_LOGGER}}
+\index{DEFAULT\_LOGGER@{DEFAULT\_LOGGER}!logging.js@{logging.js}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_LOGGER}{DEFAULT\_LOGGER}}
+{\footnotesize\ttfamily \label{logging_8js_ad93983ef9e2feeb354f923e1b8769a11} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} DEFAULT\+\_\+\+LOGGER}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}}:\ (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}},\ ...optionalParams)\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ console.error(\textcolor{stringliteral}{'E\ '}\ +\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}},\ ...optionalParams);}
+\DoxyCodeLine{\ \ \ \ \},}
+\DoxyCodeLine{\ \ \ \ info:\ (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}},\ ...optionalParams)\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ console.error(\textcolor{stringliteral}{'I\ '}\ +\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}},\ ...optionalParams);}
+\DoxyCodeLine{\ \ \ \ \},}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{application_8js_a651046067579e48d7f0d03ce38dc7cf8}{debug}}:\ (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}},\ ...optionalParams)\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ console.error(\textcolor{stringliteral}{'D\ '}\ +\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}},\ ...optionalParams);}
+\DoxyCodeLine{\ \ \ \ \},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{logging_8js_adfbe2e548b0279db78423489128aef3a}\index{logging.js@{logging.js}!disabledTracers@{disabledTracers}}
+\index{disabledTracers@{disabledTracers}!logging.js@{logging.js}}
+\doxysubsubsection{\texorpdfstring{disabledTracers}{disabledTracers}}
+{\footnotesize\ttfamily \label{logging_8js_adfbe2e548b0279db78423489128aef3a} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} disabled\+Tracers = new \mbox{\hyperlink{__create_set_8js_ab9f46b8207185d305162498bea0d1c26}{Set}}()}
+
+\Hypertarget{logging_8js_aea80eafe20e9c7b361cd75a584d48440}\index{logging.js@{logging.js}!enabledTracers@{enabledTracers}}
+\index{enabledTracers@{enabledTracers}!logging.js@{logging.js}}
+\doxysubsubsection{\texorpdfstring{enabledTracers}{enabledTracers}}
+{\footnotesize\ttfamily \label{logging_8js_aea80eafe20e9c7b361cd75a584d48440} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} enabled\+Tracers = new \mbox{\hyperlink{__create_set_8js_ab9f46b8207185d305162498bea0d1c26}{Set}}()}
+
+\Hypertarget{logging_8js_ad5750bc67ef3d981cbed6ec19ec835e6}\index{logging.js@{logging.js}!getLogger@{getLogger}}
+\index{getLogger@{getLogger}!logging.js@{logging.js}}
+\doxysubsubsection{\texorpdfstring{getLogger}{getLogger}}
+{\footnotesize\ttfamily \label{logging_8js_ad5750bc67ef3d981cbed6ec19ec835e6} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} get\+Logger}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ ()\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{logging_8js_af0d35b0f0653f0f3835a847a87d1b965}{\_logger}};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{logging_8js_a8ea8f4e538aa47c047b49b65ad1a90ba}\index{logging.js@{logging.js}!isTracerEnabled@{isTracerEnabled}}
+\index{isTracerEnabled@{isTracerEnabled}!logging.js@{logging.js}}
+\doxysubsubsection{\texorpdfstring{isTracerEnabled}{isTracerEnabled}}
+{\footnotesize\ttfamily \label{logging_8js_a8ea8f4e538aa47c047b49b65ad1a90ba} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} is\+Tracer\+Enabled = \mbox{\hyperlink{logging_8js_acb1634453d1705af9683695efa3847e6}{exports.\+trace}} = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_abd96780d5def5a58be64a80192702ca8}{exports.\+log}} = \mbox{\hyperlink{logging_8js_a7a1736684d8e3c49efca65c24c869d1a}{exports.\+set\+Logger\+Verbosity}} = \mbox{\hyperlink{_0dgrpc_2grpc-js_2build_2src_2index_8js_a7de567940593d33b18cd15850965b47f}{exports.\+set\+Logger}} = \mbox{\hyperlink{logging_8js_ad5750bc67ef3d981cbed6ec19ec835e6}{exports.\+get\+Logger}} = void 0}
+
+\Hypertarget{logging_8js_acc57177ae24b9a1875f0ad075e386eed}\index{logging.js@{logging.js}!log@{log}}
+\index{log@{log}!logging.js@{logging.js}}
+\doxysubsubsection{\texorpdfstring{log}{log}}
+{\footnotesize\ttfamily \label{logging_8js_acc57177ae24b9a1875f0ad075e386eed} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} log}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ (severity,\ ...args)\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ let\ \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2logger_8js_adc5ff6f567f0d980347bd3fc087e66db}{logFunction}};}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (severity\ >=\ \mbox{\hyperlink{logging_8js_a8f624f5eb5e8cd95dad571be1344e915}{\_logVerbosity}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{switch}\ (severity)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{logging_8js_ad33cb6840349d3bc93f4fe9de15a6f8f}{constants\_1}}.LogVerbosity.DEBUG:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2logger_8js_adc5ff6f567f0d980347bd3fc087e66db}{logFunction}}\ =\ \mbox{\hyperlink{logging_8js_af0d35b0f0653f0f3835a847a87d1b965}{\_logger}}.debug;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{logging_8js_ad33cb6840349d3bc93f4fe9de15a6f8f}{constants\_1}}.LogVerbosity.INFO:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2logger_8js_adc5ff6f567f0d980347bd3fc087e66db}{logFunction}}\ =\ \mbox{\hyperlink{logging_8js_af0d35b0f0653f0f3835a847a87d1b965}{\_logger}}.info;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{logging_8js_ad33cb6840349d3bc93f4fe9de15a6f8f}{constants\_1}}.LogVerbosity.ERROR:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2logger_8js_adc5ff6f567f0d980347bd3fc087e66db}{logFunction}}\ =\ \mbox{\hyperlink{logging_8js_af0d35b0f0653f0f3835a847a87d1b965}{\_logger}}.error;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2logger_8js_adc5ff6f567f0d980347bd3fc087e66db}{logFunction}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2logger_8js_adc5ff6f567f0d980347bd3fc087e66db}{logFunction}}\ =\ \mbox{\hyperlink{logging_8js_af0d35b0f0653f0f3835a847a87d1b965}{\_logger}}.error;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2logger_8js_adc5ff6f567f0d980347bd3fc087e66db}{logFunction}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2logger_8js_adc5ff6f567f0d980347bd3fc087e66db}{logFunction}}.bind(\mbox{\hyperlink{logging_8js_af0d35b0f0653f0f3835a847a87d1b965}{\_logger}})(...args);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{logging_8js_ab4d2ce1c3229a55f81c9f4331e400d98}\index{logging.js@{logging.js}!process\_1@{process\_1}}
+\index{process\_1@{process\_1}!logging.js@{logging.js}}
+\doxysubsubsection{\texorpdfstring{process\_1}{process\_1}}
+{\footnotesize\ttfamily \label{logging_8js_ab4d2ce1c3229a55f81c9f4331e400d98} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} process\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}process"{})}
+
+\Hypertarget{logging_8js_a7de567940593d33b18cd15850965b47f}\index{logging.js@{logging.js}!setLogger@{setLogger}}
+\index{setLogger@{setLogger}!logging.js@{logging.js}}
+\doxysubsubsection{\texorpdfstring{setLogger}{setLogger}}
+{\footnotesize\ttfamily \label{logging_8js_a7de567940593d33b18cd15850965b47f} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} set\+Logger}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ (\mbox{\hyperlink{_0dfirebase_2database-compat_2dist_2index_8js_acc69707810d1669872f8199f16a0da20}{logger}})\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{logging_8js_af0d35b0f0653f0f3835a847a87d1b965}{\_logger}}\ =\ \mbox{\hyperlink{_0dfirebase_2database-compat_2dist_2index_8js_acc69707810d1669872f8199f16a0da20}{logger}};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{logging_8js_a7a1736684d8e3c49efca65c24c869d1a}\index{logging.js@{logging.js}!setLoggerVerbosity@{setLoggerVerbosity}}
+\index{setLoggerVerbosity@{setLoggerVerbosity}!logging.js@{logging.js}}
+\doxysubsubsection{\texorpdfstring{setLoggerVerbosity}{setLoggerVerbosity}}
+{\footnotesize\ttfamily \label{logging_8js_a7a1736684d8e3c49efca65c24c869d1a} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} set\+Logger\+Verbosity}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ (verbosity)\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{logging_8js_a8f624f5eb5e8cd95dad571be1344e915}{\_logVerbosity}}\ =\ verbosity;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{logging_8js_ae2475e10618961c050dcba04e8c42331}\index{logging.js@{logging.js}!strict@{strict}}
+\index{strict@{strict}!logging.js@{logging.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{logging_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+
+\Hypertarget{logging_8js_acb1634453d1705af9683695efa3847e6}\index{logging.js@{logging.js}!trace@{trace}}
+\index{trace@{trace}!logging.js@{logging.js}}
+\doxysubsubsection{\texorpdfstring{trace}{trace}}
+{\footnotesize\ttfamily \label{logging_8js_acb1634453d1705af9683695efa3847e6} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} trace = trace}
+
+Entrypoint for trace API \Hypertarget{logging_8js_a24177127ee93abc081e1f3f008b84f90}\index{logging.js@{logging.js}!tracersString@{tracersString}}
+\index{tracersString@{tracersString}!logging.js@{logging.js}}
+\doxysubsubsection{\texorpdfstring{tracersString}{tracersString}}
+{\footnotesize\ttfamily \label{logging_8js_a24177127ee93abc081e1f3f008b84f90} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} tracers\+String = (\mbox{\hyperlink{logging_8js_aae1d992982698a637e8201f92e274e19}{\+\_\+d}} = (\mbox{\hyperlink{logging_8js_aa9188bfce96541e3026ad83bee2ab87c}{\+\_\+c}} = process.\+env.\+GRPC\+\_\+\+NODE\+\_\+\+TRACE) !== null \&\& \mbox{\hyperlink{logging_8js_aa9188bfce96541e3026ad83bee2ab87c}{\+\_\+c}} !== void 0 ? \mbox{\hyperlink{logging_8js_aa9188bfce96541e3026ad83bee2ab87c}{\+\_\+c}} \+: process.\+env.\+GRPC\+\_\+\+TRACE) !== null \&\& \mbox{\hyperlink{logging_8js_aae1d992982698a637e8201f92e274e19}{\+\_\+d}} !== void 0 ? \mbox{\hyperlink{logging_8js_aae1d992982698a637e8201f92e274e19}{\+\_\+d}} \+: \textquotesingle{}\textquotesingle{}}
+
+\Hypertarget{logging_8js_a22a11ddbe76f3633b68bca4c313950ec}\index{logging.js@{logging.js}!verbosityString@{verbosityString}}
+\index{verbosityString@{verbosityString}!logging.js@{logging.js}}
+\doxysubsubsection{\texorpdfstring{verbosityString}{verbosityString}}
+{\footnotesize\ttfamily \label{logging_8js_a22a11ddbe76f3633b68bca4c313950ec} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} verbosity\+String = (\mbox{\hyperlink{logging_8js_a53284eb14d953f3ba58806fc49cd4f7c}{\+\_\+b}} = (\mbox{\hyperlink{logger_2dist_2esm_2index_8esm5_8js_a0adf123df8967a14b5bdd9ff3bbe2d0c}{\+\_\+a}} = process.\+env.\+GRPC\+\_\+\+NODE\+\_\+\+VERBOSITY) !== null \&\& \mbox{\hyperlink{logger_2dist_2esm_2index_8esm5_8js_a0adf123df8967a14b5bdd9ff3bbe2d0c}{\+\_\+a}} !== void 0 ? \mbox{\hyperlink{logger_2dist_2esm_2index_8esm5_8js_a0adf123df8967a14b5bdd9ff3bbe2d0c}{\+\_\+a}} \+: process.\+env.\+GRPC\+\_\+\+VERBOSITY) !== null \&\& \mbox{\hyperlink{logging_8js_a53284eb14d953f3ba58806fc49cd4f7c}{\+\_\+b}} !== void 0 ? \mbox{\hyperlink{logging_8js_a53284eb14d953f3ba58806fc49cd4f7c}{\+\_\+b}} \+: \textquotesingle{}\textquotesingle{}}
+

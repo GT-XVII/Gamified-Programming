@@ -1,0 +1,186 @@
+\doxysection{backend/node\+\_\+modules/firebase-\/admin/lib/auth/token-\/generator.js File Reference}
+\hypertarget{auth_2token-generator_8js}{}\label{auth_2token-generator_8js}\index{backend/node\_modules/firebase-\/admin/lib/auth/token-\/generator.js@{backend/node\_modules/firebase-\/admin/lib/auth/token-\/generator.js}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_firebase_token_generator}{Firebase\+Token\+Generator}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{auth_2token-generator_8js_ad82e5eae5200cf6b58531534dab6a1e6}{handle\+Crypto\+Signer\+Error}} (err)
+\item 
+function \mbox{\hyperlink{auth_2token-generator_8js_a5ac70c52812a52c37f02c162bfdde6c0}{map\+To\+Auth\+Client\+Error\+Code}} (code)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{auth_2token-generator_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{auth_2token-generator_8js_ada418e5727c303812a926137501ac317}{handle\+Crypto\+Signer\+Error}} = exports.\+Firebase\+Token\+Generator = exports.\+Emulated\+Signer = \mbox{\hyperlink{auth_2token-generator_8js_aba077d417af1bdcef263bbf4a4e697e0}{exports.\+BLACKLISTED\+\_\+\+CLAIMS}} = void 0
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{auth_2token-generator_8js_af1a99a3ff1a35c114bdd06cc7252beb6}{error\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/error"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{auth_2token-generator_8js_a07bbca050c948e04caf3a3a1c3164b33}{crypto\+\_\+signer\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a3eca37c9aac9a17870baa116339724e3}{crypto}}-\/signer"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{auth_2token-generator_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/validator"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{auth_2token-generator_8js_a197519d1fe9437f29d052af72196fe25}{utils\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{auth_2token-generator_8js_af23084159b6df764834c05e08fe7b4a1}{ALGORITHM\+\_\+\+NONE}} = \textquotesingle{}none\textquotesingle{}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{auth_2token-generator_8js_a9fd7e60509388ab97d1b1bd8371c36b5}{ONE\+\_\+\+HOUR\+\_\+\+IN\+\_\+\+SECONDS}} = 60 \texorpdfstring{$\ast$}{*} 60
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{auth_2token-generator_8js_aba077d417af1bdcef263bbf4a4e697e0}{BLACKLISTED\+\_\+\+CLAIMS}}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{auth_2token-generator_8js_a3623554fe79bb6fe11dab29a655a9c91}{FIREBASE\+\_\+\+AUDIENCE}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{auth_2token-generator_8js_a4666322bcb310b58243e1638860fa5a5}{Firebase\+Token\+Generator}} = Firebase\+Token\+Generator
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{auth_2token-generator_8js_ad82e5eae5200cf6b58531534dab6a1e6}\index{token-\/generator.js@{token-\/generator.js}!handleCryptoSignerError@{handleCryptoSignerError}}
+\index{handleCryptoSignerError@{handleCryptoSignerError}!token-\/generator.js@{token-\/generator.js}}
+\doxysubsubsection{\texorpdfstring{handleCryptoSignerError()}{handleCryptoSignerError()}}
+{\footnotesize\ttfamily \label{auth_2token-generator_8js_ad82e5eae5200cf6b58531534dab6a1e6} 
+function handle\+Crypto\+Signer\+Error (\begin{DoxyParamCaption}\item[{}]{err}{}\end{DoxyParamCaption})}
+
+Creates a new \doxylink{class_firebase_auth_error}{Firebase\+Auth\+Error} by extracting the error code, message and other relevant details from a \doxylink{class_crypto_signer_error}{Crypto\+Signer\+Error}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em err} & -\/ The Error to convert into a \doxylink{class_firebase_auth_error}{Firebase\+Auth\+Error} error \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_a}{A} Firebase \doxylink{class_auth}{Auth} error that can be returned to the user. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{app-check_2token-generator_8js_a07bbca050c948e04caf3a3a1c3164b33}{crypto\+\_\+signer\+\_\+1}}, \mbox{\hyperlink{auth_2token-generator_8js_af1a99a3ff1a35c114bdd06cc7252beb6}{error\+\_\+1}}, \mbox{\hyperlink{auth_2token-generator_8js_a5ac70c52812a52c37f02c162bfdde6c0}{map\+To\+Auth\+Client\+Error\+Code()}}, and \mbox{\hyperlink{app-check_2token-generator_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{auth_2token-generator_8js_ad82e5eae5200cf6b58531534dab6a1e6_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{auth_2token-generator_8js_a5ac70c52812a52c37f02c162bfdde6c0}\index{token-\/generator.js@{token-\/generator.js}!mapToAuthClientErrorCode@{mapToAuthClientErrorCode}}
+\index{mapToAuthClientErrorCode@{mapToAuthClientErrorCode}!token-\/generator.js@{token-\/generator.js}}
+\doxysubsubsection{\texorpdfstring{mapToAuthClientErrorCode()}{mapToAuthClientErrorCode()}}
+{\footnotesize\ttfamily \label{auth_2token-generator_8js_a5ac70c52812a52c37f02c162bfdde6c0} 
+function map\+To\+Auth\+Client\+Error\+Code (\begin{DoxyParamCaption}\item[{}]{code}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{app-check_2token-generator_8js_a07bbca050c948e04caf3a3a1c3164b33}{crypto\+\_\+signer\+\_\+1}}, and \mbox{\hyperlink{auth_2token-generator_8js_af1a99a3ff1a35c114bdd06cc7252beb6}{error\+\_\+1}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{auth_2token-generator_8js_a5ac70c52812a52c37f02c162bfdde6c0_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{auth_2token-generator_8js_af23084159b6df764834c05e08fe7b4a1}\index{token-\/generator.js@{token-\/generator.js}!ALGORITHM\_NONE@{ALGORITHM\_NONE}}
+\index{ALGORITHM\_NONE@{ALGORITHM\_NONE}!token-\/generator.js@{token-\/generator.js}}
+\doxysubsubsection{\texorpdfstring{ALGORITHM\_NONE}{ALGORITHM\_NONE}}
+{\footnotesize\ttfamily \label{auth_2token-generator_8js_af23084159b6df764834c05e08fe7b4a1} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} ALGORITHM\+\_\+\+NONE = \textquotesingle{}none\textquotesingle{}}
+
+\Hypertarget{auth_2token-generator_8js_aba077d417af1bdcef263bbf4a4e697e0}\index{token-\/generator.js@{token-\/generator.js}!BLACKLISTED\_CLAIMS@{BLACKLISTED\_CLAIMS}}
+\index{BLACKLISTED\_CLAIMS@{BLACKLISTED\_CLAIMS}!token-\/generator.js@{token-\/generator.js}}
+\doxysubsubsection{\texorpdfstring{BLACKLISTED\_CLAIMS}{BLACKLISTED\_CLAIMS}}
+{\footnotesize\ttfamily \label{auth_2token-generator_8js_aba077d417af1bdcef263bbf4a4e697e0} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} BLACKLISTED\+\_\+\+CLAIMS}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{'acr'},\ \textcolor{stringliteral}{'amr'},\ \textcolor{stringliteral}{'at\_hash'},\ \textcolor{stringliteral}{'aud'},\ \textcolor{stringliteral}{'auth\_time'},\ \textcolor{stringliteral}{'azp'},\ \textcolor{stringliteral}{'cnf'},\ \textcolor{stringliteral}{'c\_hash'},\ \textcolor{stringliteral}{'exp'},\ \textcolor{stringliteral}{'iat'},\ \textcolor{stringliteral}{'iss'},\ \textcolor{stringliteral}{'jti'},}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{'nbf'},\ \textcolor{stringliteral}{'nonce'},}
+\DoxyCodeLine{]}
+
+\end{DoxyCode}
+\Hypertarget{auth_2token-generator_8js_a07bbca050c948e04caf3a3a1c3164b33}\index{token-\/generator.js@{token-\/generator.js}!crypto\_signer\_1@{crypto\_signer\_1}}
+\index{crypto\_signer\_1@{crypto\_signer\_1}!token-\/generator.js@{token-\/generator.js}}
+\doxysubsubsection{\texorpdfstring{crypto\_signer\_1}{crypto\_signer\_1}}
+{\footnotesize\ttfamily \label{auth_2token-generator_8js_a07bbca050c948e04caf3a3a1c3164b33} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} crypto\+\_\+signer\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a3eca37c9aac9a17870baa116339724e3}{crypto}}-\/signer"{})}
+
+\Hypertarget{auth_2token-generator_8js_af1a99a3ff1a35c114bdd06cc7252beb6}\index{token-\/generator.js@{token-\/generator.js}!error\_1@{error\_1}}
+\index{error\_1@{error\_1}!token-\/generator.js@{token-\/generator.js}}
+\doxysubsubsection{\texorpdfstring{error\_1}{error\_1}}
+{\footnotesize\ttfamily \label{auth_2token-generator_8js_af1a99a3ff1a35c114bdd06cc7252beb6} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} error\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/error"{})}
+
+\Hypertarget{auth_2token-generator_8js_a3623554fe79bb6fe11dab29a655a9c91}\index{token-\/generator.js@{token-\/generator.js}!FIREBASE\_AUDIENCE@{FIREBASE\_AUDIENCE}}
+\index{FIREBASE\_AUDIENCE@{FIREBASE\_AUDIENCE}!token-\/generator.js@{token-\/generator.js}}
+\doxysubsubsection{\texorpdfstring{FIREBASE\_AUDIENCE}{FIREBASE\_AUDIENCE}}
+{\footnotesize\ttfamily \label{auth_2token-generator_8js_a3623554fe79bb6fe11dab29a655a9c91} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} FIREBASE\+\_\+\+AUDIENCE}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{stringliteral}{'https:}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{class\ EmulatedSigner\ \{}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ constructor()\ \{}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ this.algorithm\ =\ ALGORITHM\_NONE;}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \}}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ }}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ }}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ sign(buffer)\ \{}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ return\ Promise.resolve(Buffer.from('}\textcolor{stringliteral}{'));}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \}}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ }}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ getAccountId()\ \{}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ return\ Promise.resolve('}\mbox{\hyperlink{_0dfirebase_2database-compat_2dist_2index_8js_a4f1ae2e0d595a01da793594dc4c89f03}{firebase}}-\/\mbox{\hyperlink{google-auth-library_2build_2src_2index_8js_ad26b69249342cfd7b4d6e0352d739857}{auth}}-\/emulator@example.com\textcolor{stringliteral}{');}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \}}}
+\DoxyCodeLine{\textcolor{stringliteral}{\}}}
+\DoxyCodeLine{\textcolor{stringliteral}{exports.EmulatedSigner\ =\ EmulatedSigner}}
+
+\end{DoxyCode}
+\Hypertarget{auth_2token-generator_8js_a4666322bcb310b58243e1638860fa5a5}\index{token-\/generator.js@{token-\/generator.js}!FirebaseTokenGenerator@{FirebaseTokenGenerator}}
+\index{FirebaseTokenGenerator@{FirebaseTokenGenerator}!token-\/generator.js@{token-\/generator.js}}
+\doxysubsubsection{\texorpdfstring{FirebaseTokenGenerator}{FirebaseTokenGenerator}}
+{\footnotesize\ttfamily \label{auth_2token-generator_8js_a4666322bcb310b58243e1638860fa5a5} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} Firebase\+Token\+Generator = Firebase\+Token\+Generator}
+
+\Hypertarget{auth_2token-generator_8js_ada418e5727c303812a926137501ac317}\index{token-\/generator.js@{token-\/generator.js}!handleCryptoSignerError@{handleCryptoSignerError}}
+\index{handleCryptoSignerError@{handleCryptoSignerError}!token-\/generator.js@{token-\/generator.js}}
+\doxysubsubsection{\texorpdfstring{handleCryptoSignerError}{handleCryptoSignerError}}
+{\footnotesize\ttfamily \label{auth_2token-generator_8js_ada418e5727c303812a926137501ac317} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} handle\+Crypto\+Signer\+Error = exports.\+Firebase\+Token\+Generator = exports.\+Emulated\+Signer = \mbox{\hyperlink{auth_2token-generator_8js_aba077d417af1bdcef263bbf4a4e697e0}{exports.\+BLACKLISTED\+\_\+\+CLAIMS}} = void 0}
+
+\Hypertarget{auth_2token-generator_8js_a9fd7e60509388ab97d1b1bd8371c36b5}\index{token-\/generator.js@{token-\/generator.js}!ONE\_HOUR\_IN\_SECONDS@{ONE\_HOUR\_IN\_SECONDS}}
+\index{ONE\_HOUR\_IN\_SECONDS@{ONE\_HOUR\_IN\_SECONDS}!token-\/generator.js@{token-\/generator.js}}
+\doxysubsubsection{\texorpdfstring{ONE\_HOUR\_IN\_SECONDS}{ONE\_HOUR\_IN\_SECONDS}}
+{\footnotesize\ttfamily \label{auth_2token-generator_8js_a9fd7e60509388ab97d1b1bd8371c36b5} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} ONE\+\_\+\+HOUR\+\_\+\+IN\+\_\+\+SECONDS = 60 \texorpdfstring{$\ast$}{*} 60}
+
+\Hypertarget{auth_2token-generator_8js_ae2475e10618961c050dcba04e8c42331}\index{token-\/generator.js@{token-\/generator.js}!strict@{strict}}
+\index{strict@{strict}!token-\/generator.js@{token-\/generator.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{auth_2token-generator_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+
+firebase-\/admin v12.\+7.\+0 \Hypertarget{auth_2token-generator_8js_a197519d1fe9437f29d052af72196fe25}\index{token-\/generator.js@{token-\/generator.js}!utils\_1@{utils\_1}}
+\index{utils\_1@{utils\_1}!token-\/generator.js@{token-\/generator.js}}
+\doxysubsubsection{\texorpdfstring{utils\_1}{utils\_1}}
+{\footnotesize\ttfamily \label{auth_2token-generator_8js_a197519d1fe9437f29d052af72196fe25} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} utils\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils"{})}
+
+\Hypertarget{auth_2token-generator_8js_add6dc10e852e313f07c0d59bcf288b6a}\index{token-\/generator.js@{token-\/generator.js}!validator@{validator}}
+\index{validator@{validator}!token-\/generator.js@{token-\/generator.js}}
+\doxysubsubsection{\texorpdfstring{validator}{validator}}
+{\footnotesize\ttfamily \label{auth_2token-generator_8js_add6dc10e852e313f07c0d59bcf288b6a} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} validator = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/validator"{})}
+

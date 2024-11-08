@@ -1,0 +1,29 @@
+\doxysection{/\+Users/nicoletiokhin/\+Desktop/\+Software Semester 3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/lodash/difference\+By.\+js}
+\hypertarget{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_15e13a012580969750efd13d58289f55}{}\label{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_15e13a012580969750efd13d58289f55}This method is like {\ttfamily \+\_\+.\+difference} except that it accepts {\ttfamily iteratee} which is invoked for each element of {\ttfamily array} and {\ttfamily values} to generate the criterion by which they\textquotesingle{}re compared. The order and references of result values are determined by the first array. The iteratee is invoked with one argument\+: (value).
+
+{\bfseries{Note\+:}} Unlike {\ttfamily \+\_\+.\+pull\+All\+By}, this method returns a new array.
+
+@member\+Of \+\_\+ \begin{DoxySince}{Since}
+4.\+0.\+0
+\end{DoxySince}
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Array\}} & array The array to inspect. \\
+\hline
+{\em \{...\+Array\}} & \mbox{[}values\mbox{]} The values to exclude. \\
+\hline
+{\em \{\+Function\}} & \mbox{[}iteratee=\+\_\+.\+identity\mbox{]} The iteratee invoked per element. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Array\} Returns the new array of filtered values.
+\end{DoxyReturn}
+\+\_\+.\+difference\+By(\mbox{[}2.\+1, 1.\+2\mbox{]}, \mbox{[}2.\+3, 3.\+4\mbox{]}, Math.\+floor); // =\texorpdfstring{$>$}{>} \mbox{[}1.\+2\mbox{]}
+
+// The {\ttfamily \+\_\+.\+property} iteratee shorthand. \+\_\+.\+difference\+By(\mbox{[}\{ \textquotesingle{}x\textquotesingle{}\+: 2 \}, \{ \textquotesingle{}x\textquotesingle{}\+: 1 \}\mbox{]}, \mbox{[}\{ \textquotesingle{}x\textquotesingle{}\+: 1 \}\mbox{]}, \textquotesingle{}x\textquotesingle{}); // =\texorpdfstring{$>$}{>} \mbox{[}\{ \textquotesingle{}x\textquotesingle{}\+: 2 \}\mbox{]}
+
+
+\begin{DoxyCodeInclude}{0}
+
+\end{DoxyCodeInclude}
+ Semester \doxylink{difference_by_8js}{3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/lodash/difference\+By.\+js} 

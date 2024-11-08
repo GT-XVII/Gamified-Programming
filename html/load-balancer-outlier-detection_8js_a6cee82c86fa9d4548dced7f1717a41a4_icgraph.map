@@ -1,0 +1,7 @@
+<map id="createEmptyBucket" name="createEmptyBucket">
+<area shape="rect" id="Node000001" title=" " alt="" coords="238,31,374,56"/>
+<area shape="rect" id="Node000002" href="$class_call_counter.html#a7e3356bb31ecf66aa55815d7bd6964ec" title=" " alt="" coords="16,5,179,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="222,36,179,31,180,25,223,31"/>
+<area shape="rect" id="Node000003" href="$class_call_counter.html#a4a9637d5dc4c15db7c45803b79286ba8" title=" " alt="" coords="5,55,190,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="222,56,191,59,190,54,222,50"/>
+</map>

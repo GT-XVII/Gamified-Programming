@@ -1,0 +1,203 @@
+\doxysection{Data\+Connect\+Api\+Client Class Reference}
+\hypertarget{class_data_connect_api_client}{}\label{class_data_connect_api_client}\index{DataConnectApiClient@{DataConnectApiClient}}
+
+
+Collaboration diagram for Data\+Connect\+Api\+Client\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=201pt]{class_data_connect_api_client__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_data_connect_api_client_aa5151ba2d11403d8262dc02aa4037cfb}{constructor}} (connector\+Config, \mbox{\hyperlink{database_2dist_2index_8cjs_8js_a7b225fcb720e4d5ed2bbf60e28a25e6d}{app}})
+\item 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{class_data_connect_api_client_a53b933a47fd2f58bc672407e4fa921d8}{execute\+Graphql}} (\mbox{\hyperlink{application_8js_a3934419f0f9a2068c705a0013b77fab3}{query}}, options)
+\item 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{class_data_connect_api_client_aed2186c2ed2548f7b2d0f0b64b14bd35}{execute\+Graphql\+Read}} (\mbox{\hyperlink{application_8js_a3934419f0f9a2068c705a0013b77fab3}{query}}, options)
+\item 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{class_data_connect_api_client_a2e7cbe482b8f1ffe1ee8ef75506cd5d2}{execute\+Graphql\+Helper}} (\mbox{\hyperlink{application_8js_a3934419f0f9a2068c705a0013b77fab3}{query}}, endpoint, options)
+\item 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{class_data_connect_api_client_a0b97542412973c4cbf7a630eb35a7f34}{get\+Url}} (host, location\+Id, service\+Id, endpoint\+Id)
+\item 
+\mbox{\hyperlink{class_data_connect_api_client_a17876d2a6daec7d321a8bea9899afb12}{get\+Project\+Id}} ()
+\item 
+\mbox{\hyperlink{class_data_connect_api_client_a558ef3c6d29677922ed90628e8f8d57f}{to\+Firebase\+Error}} (err)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class that facilitates sending requests to the Firebase Data Connect backend API. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_data_connect_api_client_aa5151ba2d11403d8262dc02aa4037cfb}\index{DataConnectApiClient@{DataConnectApiClient}!constructor@{constructor}}
+\index{constructor@{constructor}!DataConnectApiClient@{DataConnectApiClient}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_data_connect_api_client_aa5151ba2d11403d8262dc02aa4037cfb} 
+Data\+Connect\+Api\+Client\+::constructor (\begin{DoxyParamCaption}\item[{}]{connector\+Config}{, }\item[{}]{app}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{data-connect-api-client-internal_8js_a73dd1e6f0bc0a0234576ddef2bbe0452}{api\+\_\+request\+\_\+1}}, \mbox{\hyperlink{database_2dist_2index_8cjs_8js_a7b225fcb720e4d5ed2bbf60e28a25e6d}{app}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}}, \mbox{\hyperlink{data-connect-api-client-internal_8js_a38ffc3c3708db682a6aab4f74a446db1}{Firebase\+Data\+Connect\+Error}}, and \mbox{\hyperlink{data-connect-api-client-internal_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}}.
+
+\Hypertarget{class_data_connect_api_client_a53b933a47fd2f58bc672407e4fa921d8}\index{DataConnectApiClient@{DataConnectApiClient}!executeGraphql@{executeGraphql}}
+\index{executeGraphql@{executeGraphql}!DataConnectApiClient@{DataConnectApiClient}}
+\doxysubsubsection{\texorpdfstring{executeGraphql()}{executeGraphql()}}
+{\footnotesize\ttfamily \label{class_data_connect_api_client_a53b933a47fd2f58bc672407e4fa921d8} 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} Data\+Connect\+Api\+Client\+::execute\+Graphql (\begin{DoxyParamCaption}\item[{}]{query}{, }\item[{}]{options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Execute arbitrary Graph\+QL, including both read and write queries
+
+
+\begin{DoxyParams}{Parameters}
+{\em query} & -\/ The Graph\+QL string to be executed. \\
+\hline
+{\em options} & -\/ Graph\+QL Options \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_a}{A} promise that fulfills with a {\ttfamily Execute\+Graphql\+Response}. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{data-connect-api-client-internal_8js_a4978babc44ee9a2c93ffd39174718a57}{EXECUTE\+\_\+\+GRAPH\+\_\+\+QL\+\_\+\+ENDPOINT}}, \mbox{\hyperlink{class_data_connect_api_client_a2e7cbe482b8f1ffe1ee8ef75506cd5d2}{execute\+Graphql\+Helper()}}, and \mbox{\hyperlink{application_8js_a3934419f0f9a2068c705a0013b77fab3}{query}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_data_connect_api_client_a53b933a47fd2f58bc672407e4fa921d8_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_data_connect_api_client_a2e7cbe482b8f1ffe1ee8ef75506cd5d2}\index{DataConnectApiClient@{DataConnectApiClient}!executeGraphqlHelper@{executeGraphqlHelper}}
+\index{executeGraphqlHelper@{executeGraphqlHelper}!DataConnectApiClient@{DataConnectApiClient}}
+\doxysubsubsection{\texorpdfstring{executeGraphqlHelper()}{executeGraphqlHelper()}}
+{\footnotesize\ttfamily \label{class_data_connect_api_client_a2e7cbe482b8f1ffe1ee8ef75506cd5d2} 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} Data\+Connect\+Api\+Client\+::execute\+Graphql\+Helper (\begin{DoxyParamCaption}\item[{}]{query}{, }\item[{}]{endpoint}{, }\item[{}]{options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}}, \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}, \mbox{\hyperlink{data-connect-api-client-internal_8js_a3426cdc1d8bab241e7a519a155447756}{DATA\+\_\+\+CONNECT\+\_\+\+CONFIG\+\_\+\+HEADERS}}, \mbox{\hyperlink{data-connect-api-client-internal_8js_a916fbcd11a669a5655532215573b9718}{DATA\+\_\+\+CONNECT\+\_\+\+HOST}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}}, \mbox{\hyperlink{data-connect-api-client-internal_8js_a38ffc3c3708db682a6aab4f74a446db1}{Firebase\+Data\+Connect\+Error}}, \mbox{\hyperlink{class_data_connect_api_client_a0b97542412973c4cbf7a630eb35a7f34}{get\+Url()}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7f2cb2fcdd79bf72cefd29b7bc2d10fa}{headers}}, \mbox{\hyperlink{lodash_2method_8js_a2f565198b0a61cb8648a01f0d9617cd7}{method}}, \mbox{\hyperlink{ipaddr_8min_8js_abcedab16429ea0641c6596f556f2e102}{process}}, \mbox{\hyperlink{__get_tag_8js_abace523389c17bce1848e3a427871700}{Promise}}, \mbox{\hyperlink{application_8js_a3934419f0f9a2068c705a0013b77fab3}{query}}, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}}, \mbox{\hyperlink{pledge_8js_a492a4eb4b80e71a1bb4761df42875565}{then}}, \mbox{\hyperlink{class_data_connect_api_client_a558ef3c6d29677922ed90628e8f8d57f}{to\+Firebase\+Error()}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_acf0a8b41f00a22e21672c8b3768a0618}{url}}, and \mbox{\hyperlink{data-connect-api-client-internal_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_data_connect_api_client_a2e7cbe482b8f1ffe1ee8ef75506cd5d2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{class_data_connect_api_client_a2e7cbe482b8f1ffe1ee8ef75506cd5d2_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_data_connect_api_client_aed2186c2ed2548f7b2d0f0b64b14bd35}\index{DataConnectApiClient@{DataConnectApiClient}!executeGraphqlRead@{executeGraphqlRead}}
+\index{executeGraphqlRead@{executeGraphqlRead}!DataConnectApiClient@{DataConnectApiClient}}
+\doxysubsubsection{\texorpdfstring{executeGraphqlRead()}{executeGraphqlRead()}}
+{\footnotesize\ttfamily \label{class_data_connect_api_client_aed2186c2ed2548f7b2d0f0b64b14bd35} 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} Data\+Connect\+Api\+Client\+::execute\+Graphql\+Read (\begin{DoxyParamCaption}\item[{}]{query}{, }\item[{}]{options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Execute arbitrary read-\/only Graph\+QL queries
+
+
+\begin{DoxyParams}{Parameters}
+{\em query} & -\/ The Graph\+QL (read-\/only) string to be executed. \\
+\hline
+{\em options} & -\/ Graph\+QL Options \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_a}{A} promise that fulfills with a {\ttfamily Execute\+Graphql\+Response}. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{class_firebase_data_connect_error}{Firebase\+Data\+Connect\+Error}} & \\
+\hline
+\end{DoxyExceptions}
+
+
+References \mbox{\hyperlink{data-connect-api-client-internal_8js_a6827ce3bfaef47faa0d3846225349ffa}{EXECUTE\+\_\+\+GRAPH\+\_\+\+QL\+\_\+\+READ\+\_\+\+ENDPOINT}}, \mbox{\hyperlink{class_data_connect_api_client_a2e7cbe482b8f1ffe1ee8ef75506cd5d2}{execute\+Graphql\+Helper()}}, and \mbox{\hyperlink{application_8js_a3934419f0f9a2068c705a0013b77fab3}{query}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_data_connect_api_client_aed2186c2ed2548f7b2d0f0b64b14bd35_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_data_connect_api_client_a17876d2a6daec7d321a8bea9899afb12}\index{DataConnectApiClient@{DataConnectApiClient}!getProjectId@{getProjectId}}
+\index{getProjectId@{getProjectId}!DataConnectApiClient@{DataConnectApiClient}}
+\doxysubsubsection{\texorpdfstring{getProjectId()}{getProjectId()}}
+{\footnotesize\ttfamily \label{class_data_connect_api_client_a17876d2a6daec7d321a8bea9899afb12} 
+Data\+Connect\+Api\+Client\+::get\+Project\+Id (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{database_2dist_2index_8cjs_8js_a7b225fcb720e4d5ed2bbf60e28a25e6d}{app}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}}, \mbox{\hyperlink{data-connect-api-client-internal_8js_a38ffc3c3708db682a6aab4f74a446db1}{Firebase\+Data\+Connect\+Error}}, \mbox{\hyperlink{__get_tag_8js_abace523389c17bce1848e3a427871700}{Promise}}, \mbox{\hyperlink{data-connect-api-client-internal_8js_a022e926a40defc4294368e708a7e2372}{utils}}, and \mbox{\hyperlink{data-connect-api-client-internal_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_data_connect_api_client_a17876d2a6daec7d321a8bea9899afb12_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_data_connect_api_client_a0b97542412973c4cbf7a630eb35a7f34}\index{DataConnectApiClient@{DataConnectApiClient}!getUrl@{getUrl}}
+\index{getUrl@{getUrl}!DataConnectApiClient@{DataConnectApiClient}}
+\doxysubsubsection{\texorpdfstring{getUrl()}{getUrl()}}
+{\footnotesize\ttfamily \label{class_data_connect_api_client_a0b97542412973c4cbf7a630eb35a7f34} 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} Data\+Connect\+Api\+Client\+::get\+Url (\begin{DoxyParamCaption}\item[{}]{host}{, }\item[{}]{location\+Id}{, }\item[{}]{service\+Id}{, }\item[{}]{endpoint\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{class_data_connect_api_client_a17876d2a6daec7d321a8bea9899afb12}{get\+Project\+Id()}}, and \mbox{\hyperlink{data-connect-api-client-internal_8js_a022e926a40defc4294368e708a7e2372}{utils}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=343pt]{class_data_connect_api_client_a0b97542412973c4cbf7a630eb35a7f34_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_data_connect_api_client_a0b97542412973c4cbf7a630eb35a7f34_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_data_connect_api_client_a558ef3c6d29677922ed90628e8f8d57f}\index{DataConnectApiClient@{DataConnectApiClient}!toFirebaseError@{toFirebaseError}}
+\index{toFirebaseError@{toFirebaseError}!DataConnectApiClient@{DataConnectApiClient}}
+\doxysubsubsection{\texorpdfstring{toFirebaseError()}{toFirebaseError()}}
+{\footnotesize\ttfamily \label{class_data_connect_api_client_a558ef3c6d29677922ed90628e8f8d57f} 
+Data\+Connect\+Api\+Client\+::to\+Firebase\+Error (\begin{DoxyParamCaption}\item[{}]{err}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{long_2index_8js_af6ba5df101e5630835a0a5d778844922}{and}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}}, \mbox{\hyperlink{data-connect-api-client-internal_8js_af1a99a3ff1a35c114bdd06cc7252beb6}{error\+\_\+1}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}}, \mbox{\hyperlink{data-connect-api-client-internal_8js_a38ffc3c3708db682a6aab4f74a446db1}{Firebase\+Data\+Connect\+Error}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ac70ac40ef8199c59316b35022dd21914}{response}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a207259f7e3cfd9800ed8f7d7224c7a68}{server}}, and \mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2index_8js_aac9dfada3e10bfb087ebb0a95f284488}{status}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_data_connect_api_client_a558ef3c6d29677922ed90628e8f8d57f_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/firebase-\/admin/lib/data-\/connect/\mbox{\hyperlink{data-connect-api-client-internal_8js}{data-\/connect-\/api-\/client-\/internal.\+js}}\end{DoxyCompactItemize}

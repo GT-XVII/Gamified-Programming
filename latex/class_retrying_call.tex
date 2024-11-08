@@ -1,0 +1,655 @@
+\doxysection{Retrying\+Call Class Reference}
+\hypertarget{class_retrying_call}{}\label{class_retrying_call}\index{RetryingCall@{RetryingCall}}
+
+
+Collaboration diagram for Retrying\+Call\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{class_retrying_call__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_retrying_call_afec7d3896c2cb521fea61b864eec56b8}{constructor}} (channel, call\+Config, method\+Name, host, \mbox{\hyperlink{_0dgrpc_2grpc-js_2build_2src_2index_8js_a88f1ca34064fef6dc1e29d7d1cf5cfcf}{credentials}}, deadline, call\+Number, buffer\+Tracker, retry\+Throttler)
+\item 
+\mbox{\hyperlink{class_retrying_call_a7b0da17900e8c0127db367af2eeb1ff9}{get\+Deadline\+Info}} ()
+\item 
+\mbox{\hyperlink{class_retrying_call_a7fdf154ac46c7089b832775c6357df33}{get\+Call\+Number}} ()
+\item 
+\mbox{\hyperlink{class_retrying_call_aace438ad29746cc16c0bd530875437a6}{trace}} (\mbox{\hyperlink{node-forge_2lib_2util_8js_ab492f69e70933f85fe6b3a8808d19852}{text}})
+\item 
+\mbox{\hyperlink{class_retrying_call_ae559c230568751ecd835fd530e33a283}{report\+Status}} (status\+Object)
+\item 
+\mbox{\hyperlink{class_retrying_call_ae37dee057f77282338765e071552912f}{cancel\+With\+Status}} (\mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2index_8js_aac9dfada3e10bfb087ebb0a95f284488}{status}}, details)
+\item 
+\mbox{\hyperlink{class_retrying_call_a94d27d053af1401ed22aecaa26222d4f}{get\+Peer}} ()
+\item 
+\mbox{\hyperlink{class_retrying_call_a8b5b331d07d5c36d02f79cfbf95f56ee}{get\+Buffer\+Entry}} (message\+Index)
+\item 
+\mbox{\hyperlink{class_retrying_call_a55821bab0d3c97e0d489b9d248e7c1f8}{get\+Next\+Buffer\+Index}} ()
+\item 
+\mbox{\hyperlink{class_retrying_call_a62b61d6f235e99e0548396602b08291b}{clear\+Sent\+Messages}} ()
+\item 
+\mbox{\hyperlink{class_retrying_call_a2597b0cb6cb41a6b808daaf42ba9461d}{commit\+Call}} (\mbox{\hyperlink{cookie_2index_8js_a0ac000318c33f03e412baff8df5b2513}{index}})
+\item 
+\mbox{\hyperlink{class_retrying_call_a8fff71ed1debe534873ff42731b786c9}{commit\+Call\+With\+Most\+Messages}} ()
+\item 
+\mbox{\hyperlink{class_retrying_call_aac9de19e3d159c287c7e105f94cbdc71}{is\+Status\+Code\+In\+List}} (list, code)
+\item 
+\mbox{\hyperlink{class_retrying_call_a7ab0ec5d1156da3758e63206f30960c3}{get\+Next\+Retry\+Backoff\+Ms}} ()
+\item 
+\mbox{\hyperlink{class_retrying_call_ae19d98376d8c8388e225cc0ab22f2c58}{maybe\+Retry\+Call}} (pushback, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a622460feeccdab6d8f307936fc6b36fb}{callback}})
+\item 
+\mbox{\hyperlink{class_retrying_call_aff3f45392faa61e894fa5c66a75ac111}{count\+Active\+Calls}} ()
+\item 
+\mbox{\hyperlink{class_retrying_call_a18feddc7a19041c97d2c072f4ffbc38d}{handle\+Processed\+Status}} (\mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2index_8js_aac9dfada3e10bfb087ebb0a95f284488}{status}}, call\+Index, pushback)
+\item 
+\mbox{\hyperlink{class_retrying_call_a2bceac845811ec70a22cf576163863f6}{get\+Pushback}} (metadata)
+\item 
+\mbox{\hyperlink{class_retrying_call_a6a5f329d32377beaafd3f8c96b959b8d}{handle\+Child\+Status}} (\mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2index_8js_aac9dfada3e10bfb087ebb0a95f284488}{status}}, call\+Index)
+\item 
+\mbox{\hyperlink{class_retrying_call_a829375bdd300f194806454d5028d767b}{maybe\+Start\+Hedging\+Attempt}} ()
+\item 
+\mbox{\hyperlink{class_retrying_call_aee8042d7de09d855b711f64f394778f9}{maybe\+Start\+Hedging\+Timer}} ()
+\item 
+\mbox{\hyperlink{class_retrying_call_a877f2a0ec23b7c0ed77cbdd4f6f14125}{start\+New\+Attempt}} ()
+\item 
+\mbox{\hyperlink{class_retrying_call_a1b1dbdd940990dbe6dc4a033a4fab147}{start}} (metadata, listener)
+\item 
+\mbox{\hyperlink{class_retrying_call_a90abf01c2c68b564f1f3eaf4cca2f8b4}{handle\+Child\+Write\+Completed}} (child\+Index)
+\item 
+\mbox{\hyperlink{class_retrying_call_a1d925690862307bcb9717c06469e63d6}{send\+Next\+Child\+Message}} (child\+Index)
+\item 
+\mbox{\hyperlink{class_retrying_call_ae4762e1ee29d331e21ac08c2bc775b2d}{send\+Message\+With\+Context}} (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}})
+\item 
+\mbox{\hyperlink{class_retrying_call_a377c0ec89105f3164d7f20a45e8de323}{start\+Read}} ()
+\item 
+\mbox{\hyperlink{class_retrying_call_ae5c235172c7bc518aa753e11c9c9cedc}{half\+Close}} ()
+\item 
+\mbox{\hyperlink{class_retrying_call_a1fd0fa701a68da9e0240cd5efc33e576}{set\+Credentials}} (new\+Credentials)
+\item 
+\mbox{\hyperlink{class_retrying_call_ac0a3bd3934cac097b0ee6f37a414f83c}{get\+Method}} ()
+\item 
+\mbox{\hyperlink{class_retrying_call_a23c9197303105f457ad2727d85550e56}{get\+Host}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_retrying_call_ae37dee057f77282338765e071552912f}\index{RetryingCall@{RetryingCall}!cancelWithStatus@{cancelWithStatus}}
+\index{cancelWithStatus@{cancelWithStatus}!RetryingCall@{RetryingCall}}
+\doxysubsubsection{\texorpdfstring{cancelWithStatus()}{cancelWithStatus()}}
+{\footnotesize\ttfamily \label{class_retrying_call_ae37dee057f77282338765e071552912f} 
+Retrying\+Call\+::cancel\+With\+Status (\begin{DoxyParamCaption}\item[{}]{status}{, }\item[{}]{details}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{hasown_2index_8js_af41b23e59e21fbbca9175e1dbd07b54e}{call}}, \mbox{\hyperlink{retrying-call_8js_a7ccaf64b99eed08557e09f7f79748878}{metadata\+\_\+1}}, \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}, \mbox{\hyperlink{class_retrying_call_ae559c230568751ecd835fd530e33a283}{report\+Status()}}, \mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2index_8js_aac9dfada3e10bfb087ebb0a95f284488}{status}}, and \mbox{\hyperlink{logging_8js_acb1634453d1705af9683695efa3847e6}{trace}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_retrying_call_ae37dee057f77282338765e071552912f_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_retrying_call_a62b61d6f235e99e0548396602b08291b}\index{RetryingCall@{RetryingCall}!clearSentMessages@{clearSentMessages}}
+\index{clearSentMessages@{clearSentMessages}!RetryingCall@{RetryingCall}}
+\doxysubsubsection{\texorpdfstring{clearSentMessages()}{clearSentMessages()}}
+{\footnotesize\ttfamily \label{class_retrying_call_a62b61d6f235e99e0548396602b08291b} 
+Retrying\+Call\+::clear\+Sent\+Messages (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{class_retrying_call_a8b5b331d07d5c36d02f79cfbf95f56ee}{get\+Buffer\+Entry()}}, and \mbox{\hyperlink{asynckit_2lib_2state_8js_a7e1b0ba367facd663d59372bd204ea01}{state()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_retrying_call_a62b61d6f235e99e0548396602b08291b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_retrying_call_a62b61d6f235e99e0548396602b08291b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_retrying_call_a2597b0cb6cb41a6b808daaf42ba9461d}\index{RetryingCall@{RetryingCall}!commitCall@{commitCall}}
+\index{commitCall@{commitCall}!RetryingCall@{RetryingCall}}
+\doxysubsubsection{\texorpdfstring{commitCall()}{commitCall()}}
+{\footnotesize\ttfamily \label{class_retrying_call_a2597b0cb6cb41a6b808daaf42ba9461d} 
+Retrying\+Call\+::commit\+Call (\begin{DoxyParamCaption}\item[{}]{index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{hasown_2index_8js_af41b23e59e21fbbca9175e1dbd07b54e}{call}}, \mbox{\hyperlink{class_retrying_call_a62b61d6f235e99e0548396602b08291b}{clear\+Sent\+Messages()}}, \mbox{\hyperlink{retrying-call_8js_ad33cb6840349d3bc93f4fe9de15a6f8f}{constants\+\_\+1}}, \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}, \mbox{\hyperlink{cookie_2index_8js_a0ac000318c33f03e412baff8df5b2513}{index}}, \mbox{\hyperlink{asynckit_2lib_2state_8js_a7e1b0ba367facd663d59372bd204ea01}{state()}}, and \mbox{\hyperlink{logging_8js_acb1634453d1705af9683695efa3847e6}{trace}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_retrying_call_a2597b0cb6cb41a6b808daaf42ba9461d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_retrying_call_a2597b0cb6cb41a6b808daaf42ba9461d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_retrying_call_a8fff71ed1debe534873ff42731b786c9}\index{RetryingCall@{RetryingCall}!commitCallWithMostMessages@{commitCallWithMostMessages}}
+\index{commitCallWithMostMessages@{commitCallWithMostMessages}!RetryingCall@{RetryingCall}}
+\doxysubsubsection{\texorpdfstring{commitCallWithMostMessages()}{commitCallWithMostMessages()}}
+{\footnotesize\ttfamily \label{class_retrying_call_a8fff71ed1debe534873ff42731b786c9} 
+Retrying\+Call\+::commit\+Call\+With\+Most\+Messages (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{class_retrying_call_a2597b0cb6cb41a6b808daaf42ba9461d}{commit\+Call()}}, \mbox{\hyperlink{cookie_2index_8js_a0ac000318c33f03e412baff8df5b2513}{index}}, \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}, and \mbox{\hyperlink{asynckit_2lib_2state_8js_a7e1b0ba367facd663d59372bd204ea01}{state()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_retrying_call_a8fff71ed1debe534873ff42731b786c9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_retrying_call_a8fff71ed1debe534873ff42731b786c9_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_retrying_call_afec7d3896c2cb521fea61b864eec56b8}\index{RetryingCall@{RetryingCall}!constructor@{constructor}}
+\index{constructor@{constructor}!RetryingCall@{RetryingCall}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_retrying_call_afec7d3896c2cb521fea61b864eec56b8} 
+Retrying\+Call\+::constructor (\begin{DoxyParamCaption}\item[{}]{channel}{, }\item[{}]{call\+Config}{, }\item[{}]{method\+Name}{, }\item[{}]{host}{, }\item[{}]{credentials}{, }\item[{}]{deadline}{, }\item[{}]{call\+Number}{, }\item[{}]{buffer\+Tracker}{, }\item[{}]{retry\+Throttler}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+The offset of message indices in the write\+Buffer. For example, if write\+Buffer\+Offset is 10, message 10 is in write\+Buffer\mbox{[}0\mbox{]} and message 15 is in write\+Buffer\mbox{[}5\mbox{]}.
+
+Tracks whether a read has been started, so that we know whether to start reads on new child calls. This only matters for the first read, because once a message comes in the child call becomes committed and there will be no new child calls.
+
+Number of attempts so far
+
+References \mbox{\hyperlink{logger_2dist_2esm_2index_8esm5_8js_a0adf123df8967a14b5bdd9ff3bbe2d0c}{\+\_\+a}}, \mbox{\hyperlink{retry__operation_8js_a4d79ab97589329675bfbccd3b9086807}{attempts}}, \mbox{\hyperlink{_0dgrpc_2grpc-js_2build_2src_2index_8js_a88f1ca34064fef6dc1e29d7d1cf5cfcf}{credentials}}, \mbox{\hyperlink{retrying-call_8js_acc8bdb67d36b26c78eef02a2da2f402d}{DEFAULT\+\_\+\+MAX\+\_\+\+ATTEMPTS\+\_\+\+LIMIT}}, and \mbox{\hyperlink{asynckit_2lib_2state_8js_a7e1b0ba367facd663d59372bd204ea01}{state()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=279pt]{class_retrying_call_afec7d3896c2cb521fea61b864eec56b8_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_retrying_call_aff3f45392faa61e894fa5c66a75ac111}\index{RetryingCall@{RetryingCall}!countActiveCalls@{countActiveCalls}}
+\index{countActiveCalls@{countActiveCalls}!RetryingCall@{RetryingCall}}
+\doxysubsubsection{\texorpdfstring{countActiveCalls()}{countActiveCalls()}}
+{\footnotesize\ttfamily \label{class_retrying_call_aff3f45392faa61e894fa5c66a75ac111} 
+Retrying\+Call\+::count\+Active\+Calls (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{hasown_2index_8js_af41b23e59e21fbbca9175e1dbd07b54e}{call}}, \mbox{\hyperlink{cjs_2internal_2operators_2count_8js_ac88314f55a9398aa7c8da3c0aae90d53}{count}}, and \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_retrying_call_aff3f45392faa61e894fa5c66a75ac111_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_retrying_call_a8b5b331d07d5c36d02f79cfbf95f56ee}\index{RetryingCall@{RetryingCall}!getBufferEntry@{getBufferEntry}}
+\index{getBufferEntry@{getBufferEntry}!RetryingCall@{RetryingCall}}
+\doxysubsubsection{\texorpdfstring{getBufferEntry()}{getBufferEntry()}}
+{\footnotesize\ttfamily \label{class_retrying_call_a8b5b331d07d5c36d02f79cfbf95f56ee} 
+Retrying\+Call\+::get\+Buffer\+Entry (\begin{DoxyParamCaption}\item[{}]{message\+Index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{logger_2dist_2esm_2index_8esm5_8js_a0adf123df8967a14b5bdd9ff3bbe2d0c}{\+\_\+a}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_retrying_call_a8b5b331d07d5c36d02f79cfbf95f56ee_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_retrying_call_a7fdf154ac46c7089b832775c6357df33}\index{RetryingCall@{RetryingCall}!getCallNumber@{getCallNumber}}
+\index{getCallNumber@{getCallNumber}!RetryingCall@{RetryingCall}}
+\doxysubsubsection{\texorpdfstring{getCallNumber()}{getCallNumber()}}
+{\footnotesize\ttfamily \label{class_retrying_call_a7fdf154ac46c7089b832775c6357df33} 
+Retrying\+Call\+::get\+Call\+Number (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_retrying_call_a7b0da17900e8c0127db367af2eeb1ff9}\index{RetryingCall@{RetryingCall}!getDeadlineInfo@{getDeadlineInfo}}
+\index{getDeadlineInfo@{getDeadlineInfo}!RetryingCall@{RetryingCall}}
+\doxysubsubsection{\texorpdfstring{getDeadlineInfo()}{getDeadlineInfo()}}
+{\footnotesize\ttfamily \label{class_retrying_call_a7b0da17900e8c0127db367af2eeb1ff9} 
+Retrying\+Call\+::get\+Deadline\+Info (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{attempt_8js_a108b00876c8a14e889be2f28579f7d94}{attempt}}, \mbox{\hyperlink{retry__operation_8js_a4d79ab97589329675bfbccd3b9086807}{attempts}}, \mbox{\hyperlink{retrying-call_8js_a377c17d0ad416d6deeaed2dab9d04b9a}{deadline\+\_\+1}}, and \mbox{\hyperlink{cipher_8js_a1960adf42cbf8c24067b45da3a2f0aaf}{start}}.
+
+\Hypertarget{class_retrying_call_a23c9197303105f457ad2727d85550e56}\index{RetryingCall@{RetryingCall}!getHost@{getHost}}
+\index{getHost@{getHost}!RetryingCall@{RetryingCall}}
+\doxysubsubsection{\texorpdfstring{getHost()}{getHost()}}
+{\footnotesize\ttfamily \label{class_retrying_call_a23c9197303105f457ad2727d85550e56} 
+Retrying\+Call\+::get\+Host (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_retrying_call_ac0a3bd3934cac097b0ee6f37a414f83c}\index{RetryingCall@{RetryingCall}!getMethod@{getMethod}}
+\index{getMethod@{getMethod}!RetryingCall@{RetryingCall}}
+\doxysubsubsection{\texorpdfstring{getMethod()}{getMethod()}}
+{\footnotesize\ttfamily \label{class_retrying_call_ac0a3bd3934cac097b0ee6f37a414f83c} 
+Retrying\+Call\+::get\+Method (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_retrying_call_a55821bab0d3c97e0d489b9d248e7c1f8}\index{RetryingCall@{RetryingCall}!getNextBufferIndex@{getNextBufferIndex}}
+\index{getNextBufferIndex@{getNextBufferIndex}!RetryingCall@{RetryingCall}}
+\doxysubsubsection{\texorpdfstring{getNextBufferIndex()}{getNextBufferIndex()}}
+{\footnotesize\ttfamily \label{class_retrying_call_a55821bab0d3c97e0d489b9d248e7c1f8} 
+Retrying\+Call\+::get\+Next\+Buffer\+Index (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_retrying_call_a55821bab0d3c97e0d489b9d248e7c1f8_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_retrying_call_a7ab0ec5d1156da3758e63206f30960c3}\index{RetryingCall@{RetryingCall}!getNextRetryBackoffMs@{getNextRetryBackoffMs}}
+\index{getNextRetryBackoffMs@{getNextRetryBackoffMs}!RetryingCall@{RetryingCall}}
+\doxysubsubsection{\texorpdfstring{getNextRetryBackoffMs()}{getNextRetryBackoffMs()}}
+{\footnotesize\ttfamily \label{class_retrying_call_a7ab0ec5d1156da3758e63206f30960c3} 
+Retrying\+Call\+::get\+Next\+Retry\+Backoff\+Ms (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{logger_2dist_2esm_2index_8esm5_8js_a0adf123df8967a14b5bdd9ff3bbe2d0c}{\+\_\+a}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_retrying_call_a7ab0ec5d1156da3758e63206f30960c3_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_retrying_call_a94d27d053af1401ed22aecaa26222d4f}\index{RetryingCall@{RetryingCall}!getPeer@{getPeer}}
+\index{getPeer@{getPeer}!RetryingCall@{RetryingCall}}
+\doxysubsubsection{\texorpdfstring{getPeer()}{getPeer()}}
+{\footnotesize\ttfamily \label{class_retrying_call_a94d27d053af1401ed22aecaa26222d4f} 
+Retrying\+Call\+::get\+Peer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_retrying_call_a2bceac845811ec70a22cf576163863f6}\index{RetryingCall@{RetryingCall}!getPushback@{getPushback}}
+\index{getPushback@{getPushback}!RetryingCall@{RetryingCall}}
+\doxysubsubsection{\texorpdfstring{getPushback()}{getPushback()}}
+{\footnotesize\ttfamily \label{class_retrying_call_a2bceac845811ec70a22cf576163863f6} 
+Retrying\+Call\+::get\+Pushback (\begin{DoxyParamCaption}\item[{}]{metadata}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{firestore__admin__v1__proto__api_8js_a08a4415e9d594ff960030b921d42b91e}{e}}, and \mbox{\hyperlink{parse_int_8js_a04ee837a5f7721fcb0ea2d152162ef92}{parse\+Int()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{class_retrying_call_a2bceac845811ec70a22cf576163863f6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_retrying_call_a2bceac845811ec70a22cf576163863f6_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_retrying_call_ae5c235172c7bc518aa753e11c9c9cedc}\index{RetryingCall@{RetryingCall}!halfClose@{halfClose}}
+\index{halfClose@{halfClose}!RetryingCall@{RetryingCall}}
+\doxysubsubsection{\texorpdfstring{halfClose()}{halfClose()}}
+{\footnotesize\ttfamily \label{class_retrying_call_ae5c235172c7bc518aa753e11c9c9cedc} 
+Retrying\+Call\+::half\+Close (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{hasown_2index_8js_af41b23e59e21fbbca9175e1dbd07b54e}{call}}, \mbox{\hyperlink{class_retrying_call_a55821bab0d3c97e0d489b9d248e7c1f8}{get\+Next\+Buffer\+Index()}}, \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}, and \mbox{\hyperlink{logging_8js_acb1634453d1705af9683695efa3847e6}{trace}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_retrying_call_ae5c235172c7bc518aa753e11c9c9cedc_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_retrying_call_a6a5f329d32377beaafd3f8c96b959b8d}\index{RetryingCall@{RetryingCall}!handleChildStatus@{handleChildStatus}}
+\index{handleChildStatus@{handleChildStatus}!RetryingCall@{RetryingCall}}
+\doxysubsubsection{\texorpdfstring{handleChildStatus()}{handleChildStatus()}}
+{\footnotesize\ttfamily \label{class_retrying_call_a6a5f329d32377beaafd3f8c96b959b8d} 
+Retrying\+Call\+::handle\+Child\+Status (\begin{DoxyParamCaption}\item[{}]{status}{, }\item[{}]{call\+Index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{logger_2dist_2esm_2index_8esm5_8js_a0adf123df8967a14b5bdd9ff3bbe2d0c}{\+\_\+a}}, \mbox{\hyperlink{class_retrying_call_a2597b0cb6cb41a6b808daaf42ba9461d}{commit\+Call()}}, \mbox{\hyperlink{retrying-call_8js_ad33cb6840349d3bc93f4fe9de15a6f8f}{constants\+\_\+1}}, \mbox{\hyperlink{class_retrying_call_a2bceac845811ec70a22cf576163863f6}{get\+Pushback()}}, \mbox{\hyperlink{class_retrying_call_a18feddc7a19041c97d2c072f4ffbc38d}{handle\+Processed\+Status()}}, \mbox{\hyperlink{class_retrying_call_ae559c230568751ecd835fd530e33a283}{report\+Status()}}, \mbox{\hyperlink{class_retrying_call_a877f2a0ec23b7c0ed77cbdd4f6f14125}{start\+New\+Attempt()}}, \mbox{\hyperlink{asynckit_2lib_2state_8js_a7e1b0ba367facd663d59372bd204ea01}{state()}}, \mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2index_8js_aac9dfada3e10bfb087ebb0a95f284488}{status}}, and \mbox{\hyperlink{logging_8js_acb1634453d1705af9683695efa3847e6}{trace}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_retrying_call_a6a5f329d32377beaafd3f8c96b959b8d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_retrying_call_a6a5f329d32377beaafd3f8c96b959b8d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_retrying_call_a90abf01c2c68b564f1f3eaf4cca2f8b4}\index{RetryingCall@{RetryingCall}!handleChildWriteCompleted@{handleChildWriteCompleted}}
+\index{handleChildWriteCompleted@{handleChildWriteCompleted}!RetryingCall@{RetryingCall}}
+\doxysubsubsection{\texorpdfstring{handleChildWriteCompleted()}{handleChildWriteCompleted()}}
+{\footnotesize\ttfamily \label{class_retrying_call_a90abf01c2c68b564f1f3eaf4cca2f8b4} 
+Retrying\+Call\+::handle\+Child\+Write\+Completed (\begin{DoxyParamCaption}\item[{}]{child\+Index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{logger_2dist_2esm_2index_8esm5_8js_a0adf123df8967a14b5bdd9ff3bbe2d0c}{\+\_\+a}}, \mbox{\hyperlink{logging_8js_a53284eb14d953f3ba58806fc49cd4f7c}{\+\_\+b}}, \mbox{\hyperlink{class_retrying_call_a62b61d6f235e99e0548396602b08291b}{clear\+Sent\+Messages()}}, \mbox{\hyperlink{class_retrying_call_a8b5b331d07d5c36d02f79cfbf95f56ee}{get\+Buffer\+Entry()}}, and \mbox{\hyperlink{class_retrying_call_a1d925690862307bcb9717c06469e63d6}{send\+Next\+Child\+Message()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_retrying_call_a90abf01c2c68b564f1f3eaf4cca2f8b4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_retrying_call_a90abf01c2c68b564f1f3eaf4cca2f8b4_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_retrying_call_a18feddc7a19041c97d2c072f4ffbc38d}\index{RetryingCall@{RetryingCall}!handleProcessedStatus@{handleProcessedStatus}}
+\index{handleProcessedStatus@{handleProcessedStatus}!RetryingCall@{RetryingCall}}
+\doxysubsubsection{\texorpdfstring{handleProcessedStatus()}{handleProcessedStatus()}}
+{\footnotesize\ttfamily \label{class_retrying_call_a18feddc7a19041c97d2c072f4ffbc38d} 
+Retrying\+Call\+::handle\+Processed\+Status (\begin{DoxyParamCaption}\item[{}]{status}{, }\item[{}]{call\+Index}{, }\item[{}]{pushback}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{logger_2dist_2esm_2index_8esm5_8js_a0adf123df8967a14b5bdd9ff3bbe2d0c}{\+\_\+a}}, \mbox{\hyperlink{logging_8js_a53284eb14d953f3ba58806fc49cd4f7c}{\+\_\+b}}, \mbox{\hyperlink{logging_8js_aa9188bfce96541e3026ad83bee2ab87c}{\+\_\+c}}, \mbox{\hyperlink{class_retrying_call_a2597b0cb6cb41a6b808daaf42ba9461d}{commit\+Call()}}, \mbox{\hyperlink{class_retrying_call_aff3f45392faa61e894fa5c66a75ac111}{count\+Active\+Calls()}}, \mbox{\hyperlink{class_retrying_call_aac9de19e3d159c287c7e105f94cbdc71}{is\+Status\+Code\+In\+List()}}, \mbox{\hyperlink{class_retrying_call_ae19d98376d8c8388e225cc0ab22f2c58}{maybe\+Retry\+Call()}}, \mbox{\hyperlink{class_retrying_call_a829375bdd300f194806454d5028d767b}{maybe\+Start\+Hedging\+Attempt()}}, \mbox{\hyperlink{class_retrying_call_ae559c230568751ecd835fd530e33a283}{report\+Status()}}, \mbox{\hyperlink{asynckit_2lib_2state_8js_a7e1b0ba367facd663d59372bd204ea01}{state()}}, and \mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2index_8js_aac9dfada3e10bfb087ebb0a95f284488}{status}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_retrying_call_a18feddc7a19041c97d2c072f4ffbc38d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_retrying_call_a18feddc7a19041c97d2c072f4ffbc38d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_retrying_call_aac9de19e3d159c287c7e105f94cbdc71}\index{RetryingCall@{RetryingCall}!isStatusCodeInList@{isStatusCodeInList}}
+\index{isStatusCodeInList@{isStatusCodeInList}!RetryingCall@{RetryingCall}}
+\doxysubsubsection{\texorpdfstring{isStatusCodeInList()}{isStatusCodeInList()}}
+{\footnotesize\ttfamily \label{class_retrying_call_aac9de19e3d159c287c7e105f94cbdc71} 
+Retrying\+Call\+::is\+Status\+Code\+In\+List (\begin{DoxyParamCaption}\item[{}]{list}{, }\item[{}]{code}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{logger_2dist_2esm_2index_8esm5_8js_a0adf123df8967a14b5bdd9ff3bbe2d0c}{\+\_\+a}}, \mbox{\hyperlink{retrying-call_8js_ad33cb6840349d3bc93f4fe9de15a6f8f}{constants\+\_\+1}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_retrying_call_aac9de19e3d159c287c7e105f94cbdc71_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_retrying_call_ae19d98376d8c8388e225cc0ab22f2c58}\index{RetryingCall@{RetryingCall}!maybeRetryCall@{maybeRetryCall}}
+\index{maybeRetryCall@{maybeRetryCall}!RetryingCall@{RetryingCall}}
+\doxysubsubsection{\texorpdfstring{maybeRetryCall()}{maybeRetryCall()}}
+{\footnotesize\ttfamily \label{class_retrying_call_ae19d98376d8c8388e225cc0ab22f2c58} 
+Retrying\+Call\+::maybe\+Retry\+Call (\begin{DoxyParamCaption}\item[{}]{pushback}{, }\item[{}]{callback}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{logger_2dist_2esm_2index_8esm5_8js_a0adf123df8967a14b5bdd9ff3bbe2d0c}{\+\_\+a}}, \mbox{\hyperlink{logging_8js_a53284eb14d953f3ba58806fc49cd4f7c}{\+\_\+b}}, \mbox{\hyperlink{retry__operation_8js_a4d79ab97589329675bfbccd3b9086807}{attempts}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a622460feeccdab6d8f307936fc6b36fb}{callback}}, \mbox{\hyperlink{class_retrying_call_a7ab0ec5d1156da3758e63206f30960c3}{get\+Next\+Retry\+Backoff\+Ms()}}, \mbox{\hyperlink{class_retrying_call_a877f2a0ec23b7c0ed77cbdd4f6f14125}{start\+New\+Attempt()}}, and \mbox{\hyperlink{asynckit_2lib_2state_8js_a7e1b0ba367facd663d59372bd204ea01}{state()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_retrying_call_ae19d98376d8c8388e225cc0ab22f2c58_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_retrying_call_ae19d98376d8c8388e225cc0ab22f2c58_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_retrying_call_a829375bdd300f194806454d5028d767b}\index{RetryingCall@{RetryingCall}!maybeStartHedgingAttempt@{maybeStartHedgingAttempt}}
+\index{maybeStartHedgingAttempt@{maybeStartHedgingAttempt}!RetryingCall@{RetryingCall}}
+\doxysubsubsection{\texorpdfstring{maybeStartHedgingAttempt()}{maybeStartHedgingAttempt()}}
+{\footnotesize\ttfamily \label{class_retrying_call_a829375bdd300f194806454d5028d767b} 
+Retrying\+Call\+::maybe\+Start\+Hedging\+Attempt (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{retry__operation_8js_a4d79ab97589329675bfbccd3b9086807}{attempts}}, \mbox{\hyperlink{class_retrying_call_aee8042d7de09d855b711f64f394778f9}{maybe\+Start\+Hedging\+Timer()}}, \mbox{\hyperlink{class_retrying_call_a877f2a0ec23b7c0ed77cbdd4f6f14125}{start\+New\+Attempt()}}, and \mbox{\hyperlink{asynckit_2lib_2state_8js_a7e1b0ba367facd663d59372bd204ea01}{state()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_retrying_call_a829375bdd300f194806454d5028d767b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_retrying_call_a829375bdd300f194806454d5028d767b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_retrying_call_aee8042d7de09d855b711f64f394778f9}\index{RetryingCall@{RetryingCall}!maybeStartHedgingTimer@{maybeStartHedgingTimer}}
+\index{maybeStartHedgingTimer@{maybeStartHedgingTimer}!RetryingCall@{RetryingCall}}
+\doxysubsubsection{\texorpdfstring{maybeStartHedgingTimer()}{maybeStartHedgingTimer()}}
+{\footnotesize\ttfamily \label{class_retrying_call_aee8042d7de09d855b711f64f394778f9} 
+Retrying\+Call\+::maybe\+Start\+Hedging\+Timer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{logger_2dist_2esm_2index_8esm5_8js_a0adf123df8967a14b5bdd9ff3bbe2d0c}{\+\_\+a}}, \mbox{\hyperlink{logging_8js_a53284eb14d953f3ba58806fc49cd4f7c}{\+\_\+b}}, \mbox{\hyperlink{logging_8js_aa9188bfce96541e3026ad83bee2ab87c}{\+\_\+c}}, \mbox{\hyperlink{retry__operation_8js_a4d79ab97589329675bfbccd3b9086807}{attempts}}, \mbox{\hyperlink{class_retrying_call_a829375bdd300f194806454d5028d767b}{maybe\+Start\+Hedging\+Attempt()}}, and \mbox{\hyperlink{asynckit_2lib_2state_8js_a7e1b0ba367facd663d59372bd204ea01}{state()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_retrying_call_aee8042d7de09d855b711f64f394778f9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_retrying_call_aee8042d7de09d855b711f64f394778f9_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_retrying_call_ae559c230568751ecd835fd530e33a283}\index{RetryingCall@{RetryingCall}!reportStatus@{reportStatus}}
+\index{reportStatus@{reportStatus}!RetryingCall@{RetryingCall}}
+\doxysubsubsection{\texorpdfstring{reportStatus()}{reportStatus()}}
+{\footnotesize\ttfamily \label{class_retrying_call_ae559c230568751ecd835fd530e33a283} 
+Retrying\+Call\+::report\+Status (\begin{DoxyParamCaption}\item[{}]{status\+Object}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{logger_2dist_2esm_2index_8esm5_8js_a0adf123df8967a14b5bdd9ff3bbe2d0c}{\+\_\+a}}, \mbox{\hyperlink{ipaddr_8min_8js_abcedab16429ea0641c6596f556f2e102}{process}}, and \mbox{\hyperlink{logging_8js_acb1634453d1705af9683695efa3847e6}{trace}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_retrying_call_ae559c230568751ecd835fd530e33a283_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_retrying_call_ae4762e1ee29d331e21ac08c2bc775b2d}\index{RetryingCall@{RetryingCall}!sendMessageWithContext@{sendMessageWithContext}}
+\index{sendMessageWithContext@{sendMessageWithContext}!RetryingCall@{RetryingCall}}
+\doxysubsubsection{\texorpdfstring{sendMessageWithContext()}{sendMessageWithContext()}}
+{\footnotesize\ttfamily \label{class_retrying_call_ae4762e1ee29d331e21ac08c2bc775b2d} 
+Retrying\+Call\+::send\+Message\+With\+Context (\begin{DoxyParamCaption}\item[{}]{context}{, }\item[{}]{message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{logger_2dist_2esm_2index_8esm5_8js_a0adf123df8967a14b5bdd9ff3bbe2d0c}{\+\_\+a}}, \mbox{\hyperlink{hasown_2index_8js_af41b23e59e21fbbca9175e1dbd07b54e}{call}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a622460feeccdab6d8f307936fc6b36fb}{callback}}, \mbox{\hyperlink{class_retrying_call_a8fff71ed1debe534873ff42731b786c9}{commit\+Call\+With\+Most\+Messages()}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}}, \mbox{\hyperlink{class_retrying_call_a55821bab0d3c97e0d489b9d248e7c1f8}{get\+Next\+Buffer\+Index()}}, \mbox{\hyperlink{class_retrying_call_a90abf01c2c68b564f1f3eaf4cca2f8b4}{handle\+Child\+Write\+Completed()}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}, \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}, and \mbox{\hyperlink{logging_8js_acb1634453d1705af9683695efa3847e6}{trace}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_retrying_call_ae4762e1ee29d331e21ac08c2bc775b2d_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_retrying_call_a1d925690862307bcb9717c06469e63d6}\index{RetryingCall@{RetryingCall}!sendNextChildMessage@{sendNextChildMessage}}
+\index{sendNextChildMessage@{sendNextChildMessage}!RetryingCall@{RetryingCall}}
+\doxysubsubsection{\texorpdfstring{sendNextChildMessage()}{sendNextChildMessage()}}
+{\footnotesize\ttfamily \label{class_retrying_call_a1d925690862307bcb9717c06469e63d6} 
+Retrying\+Call\+::send\+Next\+Child\+Message (\begin{DoxyParamCaption}\item[{}]{child\+Index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a622460feeccdab6d8f307936fc6b36fb}{callback}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}}, \mbox{\hyperlink{class_retrying_call_a8b5b331d07d5c36d02f79cfbf95f56ee}{get\+Buffer\+Entry()}}, and \mbox{\hyperlink{class_retrying_call_a90abf01c2c68b564f1f3eaf4cca2f8b4}{handle\+Child\+Write\+Completed()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_retrying_call_a1d925690862307bcb9717c06469e63d6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_retrying_call_a1d925690862307bcb9717c06469e63d6_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_retrying_call_a1fd0fa701a68da9e0240cd5efc33e576}\index{RetryingCall@{RetryingCall}!setCredentials@{setCredentials}}
+\index{setCredentials@{setCredentials}!RetryingCall@{RetryingCall}}
+\doxysubsubsection{\texorpdfstring{setCredentials()}{setCredentials()}}
+{\footnotesize\ttfamily \label{class_retrying_call_a1fd0fa701a68da9e0240cd5efc33e576} 
+Retrying\+Call\+::set\+Credentials (\begin{DoxyParamCaption}\item[{}]{new\+Credentials}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_retrying_call_a1b1dbdd940990dbe6dc4a033a4fab147}\index{RetryingCall@{RetryingCall}!start@{start}}
+\index{start@{start}!RetryingCall@{RetryingCall}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily \label{class_retrying_call_a1b1dbdd940990dbe6dc4a033a4fab147} 
+Retrying\+Call\+::start (\begin{DoxyParamCaption}\item[{}]{metadata}{, }\item[{}]{listener}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{retry__operation_8js_a4d79ab97589329675bfbccd3b9086807}{attempts}}, \mbox{\hyperlink{class_retrying_call_aee8042d7de09d855b711f64f394778f9}{maybe\+Start\+Hedging\+Timer()}}, \mbox{\hyperlink{class_retrying_call_a877f2a0ec23b7c0ed77cbdd4f6f14125}{start\+New\+Attempt()}}, and \mbox{\hyperlink{logging_8js_acb1634453d1705af9683695efa3847e6}{trace}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_retrying_call_a1b1dbdd940990dbe6dc4a033a4fab147_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_retrying_call_a877f2a0ec23b7c0ed77cbdd4f6f14125}\index{RetryingCall@{RetryingCall}!startNewAttempt@{startNewAttempt}}
+\index{startNewAttempt@{startNewAttempt}!RetryingCall@{RetryingCall}}
+\doxysubsubsection{\texorpdfstring{startNewAttempt()}{startNewAttempt()}}
+{\footnotesize\ttfamily \label{class_retrying_call_a877f2a0ec23b7c0ed77cbdd4f6f14125} 
+Retrying\+Call\+::start\+New\+Attempt (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{retry__operation_8js_a4d79ab97589329675bfbccd3b9086807}{attempts}}, \mbox{\hyperlink{hasown_2index_8js_af41b23e59e21fbbca9175e1dbd07b54e}{call}}, \mbox{\hyperlink{class_retrying_call_a2597b0cb6cb41a6b808daaf42ba9461d}{commit\+Call()}}, \mbox{\hyperlink{_0dgrpc_2grpc-js_2build_2src_2index_8js_a88f1ca34064fef6dc1e29d7d1cf5cfcf}{credentials}}, \mbox{\hyperlink{class_retrying_call_a6a5f329d32377beaafd3f8c96b959b8d}{handle\+Child\+Status()}}, \mbox{\hyperlink{cookie_2index_8js_a0ac000318c33f03e412baff8df5b2513}{index}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}, \mbox{\hyperlink{retrying-call_8js_aaef6f43870c32c442fac1080c8edf613}{PREVIONS\+\_\+\+RPC\+\_\+\+ATTEMPTS\+\_\+\+METADATA\+\_\+\+KEY}}, \mbox{\hyperlink{class_retrying_call_a1d925690862307bcb9717c06469e63d6}{send\+Next\+Child\+Message()}}, \mbox{\hyperlink{asynckit_2lib_2state_8js_a7e1b0ba367facd663d59372bd204ea01}{state()}}, \mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2index_8js_aac9dfada3e10bfb087ebb0a95f284488}{status}}, and \mbox{\hyperlink{logging_8js_acb1634453d1705af9683695efa3847e6}{trace}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_retrying_call_a877f2a0ec23b7c0ed77cbdd4f6f14125_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_retrying_call_a877f2a0ec23b7c0ed77cbdd4f6f14125_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_retrying_call_a377c0ec89105f3164d7f20a45e8de323}\index{RetryingCall@{RetryingCall}!startRead@{startRead}}
+\index{startRead@{startRead}!RetryingCall@{RetryingCall}}
+\doxysubsubsection{\texorpdfstring{startRead()}{startRead()}}
+{\footnotesize\ttfamily \label{class_retrying_call_a377c0ec89105f3164d7f20a45e8de323} 
+Retrying\+Call\+::start\+Read (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}, and \mbox{\hyperlink{logging_8js_acb1634453d1705af9683695efa3847e6}{trace}}.
+
+\Hypertarget{class_retrying_call_aace438ad29746cc16c0bd530875437a6}\index{RetryingCall@{RetryingCall}!trace@{trace}}
+\index{trace@{trace}!RetryingCall@{RetryingCall}}
+\doxysubsubsection{\texorpdfstring{trace()}{trace()}}
+{\footnotesize\ttfamily \label{class_retrying_call_aace438ad29746cc16c0bd530875437a6} 
+Retrying\+Call\+::trace (\begin{DoxyParamCaption}\item[{}]{text}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{retrying-call_8js_ad33cb6840349d3bc93f4fe9de15a6f8f}{constants\+\_\+1}}, \mbox{\hyperlink{retrying-call_8js_ab53afa7b9c9aef77e950713c8b54c98c}{logging}}, \mbox{\hyperlink{node-forge_2lib_2util_8js_ab492f69e70933f85fe6b3a8808d19852}{text}}, and \mbox{\hyperlink{retrying-call_8js_a4d771a845df73d12433ddcb6b91f8b9a}{TRACER\+\_\+\+NAME}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/@grpc/grpc-\/js/build/src/\mbox{\hyperlink{retrying-call_8js}{retrying-\/call.\+js}}\end{DoxyCompactItemize}

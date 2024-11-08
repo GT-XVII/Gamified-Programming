@@ -1,0 +1,8 @@
+<map id="isCommandAndAliases" name="isCommandAndAliases">
+<area shape="rect" id="Node000001" title=" " alt="" coords="520,29,677,55"/>
+<area shape="rect" id="Node000002" href="$class_command_instance.html#aed24e36eaa75bb884f304a52979c8aa5" title=" " alt="" coords="267,29,472,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="505,45,473,45,473,40,505,40"/>
+<area shape="poly" id="edge3_Node000002_Node000002" title=" " alt="" coords="409,17,396,10,369,8,345,10,332,15,329,20,335,27,331,31,324,21,328,11,344,5,369,3,397,5,412,12"/>
+<area shape="rect" id="Node000003" href="$class_command_instance.html#ab60baf8b3c1a34e47c3f996f5821366b" title=" " alt="" coords="5,29,219,55"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="251,45,219,45,219,40,251,40"/>
+</map>

@@ -1,0 +1,133 @@
+\doxysection{Component\+Container Class Reference}
+\hypertarget{class_component_container}{}\label{class_component_container}\index{ComponentContainer@{ComponentContainer}}
+
+
+Collaboration diagram for Component\+Container\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{class_component_container__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_component_container_a70d65b2c0474ec9272f640b81e531fb2}{constructor}} (\mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}})
+\item 
+\mbox{\hyperlink{class_component_container_a2d5b4b4b16c2332b5406455763e37d28}{add\+Component}} (\mbox{\hyperlink{_0dfirebase_2database-compat_2dist_2index_8js_a78e02835532c727b17e487ef2bc267ed}{component}})
+\item 
+\mbox{\hyperlink{class_component_container_a1969844245f50e2bcff0e696c812741f}{add\+Or\+Overwrite\+Component}} (\mbox{\hyperlink{_0dfirebase_2database-compat_2dist_2index_8js_a78e02835532c727b17e487ef2bc267ed}{component}})
+\item 
+\mbox{\hyperlink{class_component_container_a90b02e1bc56e0d9a56cb339081085e5e}{get\+Provider}} (\mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}})
+\item 
+\mbox{\hyperlink{class_component_container_a54a9a3b6fe331d117f3e488894caebef}{get\+Providers}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+@license Copyright 2019 Google LLC
+
+Licensed under the Apache License, Version 2.\+0 (the "{}\+License"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+\href{http://www.apache.org/licenses/LICENSE-2.0}{\texttt{ http\+://www.\+apache.\+org/licenses/\+LICENSE-\/2.\+0}}
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "{}\+AS IS"{} BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. \doxylink{class_component_container}{Component\+Container} that provides Providers for service name T, e.\+g. {\ttfamily auth}, {\ttfamily auth-\/internal} 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_component_container_a2d5b4b4b16c2332b5406455763e37d28}\index{ComponentContainer@{ComponentContainer}!addComponent@{addComponent}}
+\index{addComponent@{addComponent}!ComponentContainer@{ComponentContainer}}
+\doxysubsubsection{\texorpdfstring{addComponent()}{addComponent()}}
+{\footnotesize\ttfamily \label{class_component_container_a2d5b4b4b16c2332b5406455763e37d28} 
+Component\+Container\+::add\+Component (\begin{DoxyParamCaption}\item[{}]{component}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em component} & \doxylink{class_component}{Component} being added \\
+\hline
+{\em overwrite} & When a component with the same name has already been registered, if overwrite is true\+: overwrite the existing component with the new component and create a new provider with the new component. It can be useful in tests where you want to use different mocks for different tests. if overwrite is false\+: throw an exception \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{_0dfirebase_2database-compat_2dist_2index_8js_a78e02835532c727b17e487ef2bc267ed}{component}}, \mbox{\hyperlink{class_component_container_a90b02e1bc56e0d9a56cb339081085e5e}{get\+Provider()}}, \mbox{\hyperlink{___hash_8js_a54a061fe5287ccd59bdb25b09f05270c}{has}}, and \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{class_component_container_a2d5b4b4b16c2332b5406455763e37d28_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_component_container_a2d5b4b4b16c2332b5406455763e37d28_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_component_container_a1969844245f50e2bcff0e696c812741f}\index{ComponentContainer@{ComponentContainer}!addOrOverwriteComponent@{addOrOverwriteComponent}}
+\index{addOrOverwriteComponent@{addOrOverwriteComponent}!ComponentContainer@{ComponentContainer}}
+\doxysubsubsection{\texorpdfstring{addOrOverwriteComponent()}{addOrOverwriteComponent()}}
+{\footnotesize\ttfamily \label{class_component_container_a1969844245f50e2bcff0e696c812741f} 
+Component\+Container\+::add\+Or\+Overwrite\+Component (\begin{DoxyParamCaption}\item[{}]{component}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{class_component_container_a2d5b4b4b16c2332b5406455763e37d28}{add\+Component()}}, \mbox{\hyperlink{_0dfirebase_2database-compat_2dist_2index_8js_a78e02835532c727b17e487ef2bc267ed}{component}}, and \mbox{\hyperlink{class_component_container_a90b02e1bc56e0d9a56cb339081085e5e}{get\+Provider()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_component_container_a1969844245f50e2bcff0e696c812741f_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_component_container_a70d65b2c0474ec9272f640b81e531fb2}\index{ComponentContainer@{ComponentContainer}!constructor@{constructor}}
+\index{constructor@{constructor}!ComponentContainer@{ComponentContainer}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_component_container_a70d65b2c0474ec9272f640b81e531fb2} 
+Component\+Container\+::constructor (\begin{DoxyParamCaption}\item[{}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{__get_tag_8js_aa38772edcc6ff00766e19b36ce8073a8}{Map}}, and \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}.
+
+\Hypertarget{class_component_container_a90b02e1bc56e0d9a56cb339081085e5e}\index{ComponentContainer@{ComponentContainer}!getProvider@{getProvider}}
+\index{getProvider@{getProvider}!ComponentContainer@{ComponentContainer}}
+\doxysubsubsection{\texorpdfstring{getProvider()}{getProvider()}}
+{\footnotesize\ttfamily \label{class_component_container_a90b02e1bc56e0d9a56cb339081085e5e} 
+Component\+Container\+::get\+Provider (\begin{DoxyParamCaption}\item[{}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+get\+Provider provides a type safe interface where it can only be called with a field name present in Name\+Service\+Mapping interface.
+
+Firebase SDKs providing services should extend Name\+Service\+Mapping interface to register themselves. 
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}, and \mbox{\hyperlink{component_2dist_2esm_2index_8esm2017_8js_af540bc427386ebda85b5e79a70ad041f}{Provider}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_component_container_a90b02e1bc56e0d9a56cb339081085e5e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_component_container_a54a9a3b6fe331d117f3e488894caebef}\index{ComponentContainer@{ComponentContainer}!getProviders@{getProviders}}
+\index{getProviders@{getProviders}!ComponentContainer@{ComponentContainer}}
+\doxysubsubsection{\texorpdfstring{getProviders()}{getProviders()}}
+{\footnotesize\ttfamily \label{class_component_container_a54a9a3b6fe331d117f3e488894caebef} 
+Component\+Container\+::get\+Providers (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{src_2util_2minimal_8js_a325c4e317c38d8497130ebce7670be2f}{Array}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/@firebase/component/dist/esm/\mbox{\hyperlink{component_2dist_2esm_2index_8esm2017_8js}{index.\+esm2017.\+js}}\end{DoxyCompactItemize}

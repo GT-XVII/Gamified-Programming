@@ -1,0 +1,9 @@
+<map id="ProjectManagement::listPlatformApps" name="ProjectManagement::listPlatformApps">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,39,151,79"/>
+<area shape="rect" id="Node000002" href="$class_project_management.html#ae925a595edec9f9236c42e362c67f7e0" title=" " alt="" coords="199,5,394,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="151,45,183,40,184,46,152,51"/>
+<area shape="rect" id="Node000003" href="$class_project_management.html#aea660f0a95507fc149b80e1fcf1d0ad3" title=" " alt="" coords="224,71,369,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="152,67,209,75,208,81,151,72"/>
+<area shape="rect" id="Node000004" href="$class_project_management.html#ae9b5cfe7ce7bb00772ed1cd167a2a6fe" title=" " alt="" coords="442,71,587,111"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="369,88,427,88,427,94,369,94"/>
+</map>

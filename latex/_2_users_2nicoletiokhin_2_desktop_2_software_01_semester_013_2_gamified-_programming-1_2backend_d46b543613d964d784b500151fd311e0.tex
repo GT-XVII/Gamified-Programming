@@ -1,0 +1,29 @@
+\doxysection{/\+Users/nicoletiokhin/\+Desktop/\+Software Semester 3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/lodash/values.\+js}
+\hypertarget{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_d46b543613d964d784b500151fd311e0}{}\label{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_d46b543613d964d784b500151fd311e0}Creates an array of the own enumerable string keyed property values of {\ttfamily object}.
+
+{\bfseries{Note\+:}} Non-\/object values are coerced to objects.
+
+\begin{DoxySince}{Since}
+0.\+1.\+0 @member\+Of \+\_\+
+\end{DoxySince}
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Object\}} & object The object to query. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Array\} Returns the array of property values.
+\end{DoxyReturn}
+function Foo() \{ this.\+a = 1; this.\+b = 2; \}
+
+Foo.\+prototype.\+c = 3;
+
+\+\_\+.\+values(new Foo); // =\texorpdfstring{$>$}{>} \mbox{[}1, 2\mbox{]} (iteration order is not guaranteed)
+
+\+\_\+.\+values(\textquotesingle{}hi\textquotesingle{}); // =\texorpdfstring{$>$}{>} \mbox{[}\textquotesingle{}h\textquotesingle{}, \textquotesingle{}i\textquotesingle{}\mbox{]}
+
+
+\begin{DoxyCodeInclude}{0}
+
+\end{DoxyCodeInclude}
+ Semester \doxylink{lodash_2values_8js}{3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/lodash/values.\+js} 

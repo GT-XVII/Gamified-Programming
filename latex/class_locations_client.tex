@@ -1,0 +1,288 @@
+\doxysection{Locations\+Client Class Reference}
+\hypertarget{class_locations_client}{}\label{class_locations_client}\index{LocationsClient@{LocationsClient}}
+
+
+Collaboration diagram for Locations\+Client\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{class_locations_client__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_locations_client_a7f7852b409a8e69e35c1ab83299436e6}{constructor}} (gax\+Grpc, opts)
+\item 
+\mbox{\hyperlink{class_locations_client_ad42bd1cb37175c52ab8b74aa736e3726}{initialize}} ()
+\item 
+\mbox{\hyperlink{class_locations_client_a455b702c8c2a4b615f89dcda976ba404}{get\+Project\+Id}} (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a622460feeccdab6d8f307936fc6b36fb}{callback}})
+\item 
+\mbox{\hyperlink{class_locations_client_a4213bbdf73663930e235e30e176ca375}{get\+Location}} (\mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}}, options\+Or\+Callback, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a622460feeccdab6d8f307936fc6b36fb}{callback}})
+\item 
+\mbox{\hyperlink{class_locations_client_ad694b8efe9ba99973f033fd83af7b528}{list\+Locations}} (\mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}}, options\+Or\+Callback, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a622460feeccdab6d8f307936fc6b36fb}{callback}})
+\item 
+\mbox{\hyperlink{class_locations_client_a51646380948021e40d9179f6c6c0888b}{list\+Locations\+Async}} (\mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}}, options)
+\item 
+\mbox{\hyperlink{class_locations_client_af3c2bd4e8067685c313c07a8e111bcf8}{close}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} \mbox{\hyperlink{class_locations_client_a7a61de752b1511927f3c603af995acdd}{service\+Path}} ()
+\item 
+static \mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} \mbox{\hyperlink{class_locations_client_aba31838671401d98406915cd913b472e}{api\+Endpoint}} ()
+\item 
+static \mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} \mbox{\hyperlink{class_locations_client_a4aed5fdb827eed47f2ec2d43b1e369e7}{port}} ()
+\item 
+static \mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} \mbox{\hyperlink{class_locations_client_ae49d0ca1f507ace61840d63ff9a9a210}{scopes}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Google Cloud Locations \doxylink{class_client}{Client}. This is manually written for providing methods \mbox{[}list\+Locations, get\+Locations\mbox{]} to the generated client. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_locations_client_aba31838671401d98406915cd913b472e}\index{LocationsClient@{LocationsClient}!apiEndpoint@{apiEndpoint}}
+\index{apiEndpoint@{apiEndpoint}!LocationsClient@{LocationsClient}}
+\doxysubsubsection{\texorpdfstring{apiEndpoint()}{apiEndpoint()}}
+{\footnotesize\ttfamily \label{class_locations_client_aba31838671401d98406915cd913b472e} 
+static \mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} Locations\+Client\+::api\+Endpoint (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+The DNS address for this API service -\/ same as \doxylink{class_locations_client_a7a61de752b1511927f3c603af995acdd}{service\+Path()}, exists for compatibility reasons. \begin{DoxyReturn}{Returns}
+\{string\} The DNS address for this service. 
+\end{DoxyReturn}
+\Hypertarget{class_locations_client_af3c2bd4e8067685c313c07a8e111bcf8}\index{LocationsClient@{LocationsClient}!close@{close}}
+\index{close@{close}!LocationsClient@{LocationsClient}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \label{class_locations_client_af3c2bd4e8067685c313c07a8e111bcf8} 
+Locations\+Client\+::close (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Terminate the g\+RPC channel and close the client.
+
+The client will no longer be usable and all future behavior is undefined. \begin{DoxyReturn}{Returns}
+\{Promise\} \doxylink{class_a}{A} promise that resolves when the client is closed. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{class_locations_client_ad42bd1cb37175c52ab8b74aa736e3726}{initialize()}}, and \mbox{\hyperlink{__get_tag_8js_abace523389c17bce1848e3a427871700}{Promise}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_locations_client_af3c2bd4e8067685c313c07a8e111bcf8_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_locations_client_a7f7852b409a8e69e35c1ab83299436e6}\index{LocationsClient@{LocationsClient}!constructor@{constructor}}
+\index{constructor@{constructor}!LocationsClient@{LocationsClient}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_locations_client_a7f7852b409a8e69e35c1ab83299436e6} 
+Locations\+Client\+::constructor (\begin{DoxyParamCaption}\item[{}]{gax\+Grpc}{, }\item[{}]{opts}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Construct an instance of \doxylink{class_locations_client}{Locations\+Client}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{object\}} & \mbox{[}options\mbox{]} -\/ The configuration object. The options accepted by the constructor are described in detail in \href{https://github.com/googleapis/gax-nodejs/blob/main/client-libraries.md\#creating-the-client-instance}{\texttt{ this document}}. The common options are\+: \\
+\hline
+{\em \{object\}} & \mbox{[}options.\+credentials\mbox{]} -\/ Credentials object. \\
+\hline
+{\em \{string\}} & \mbox{[}options.\+credentials.\+client\+\_\+email\mbox{]} \\
+\hline
+{\em \{string\}} & \mbox{[}options.\+credentials.\+private\+\_\+key\mbox{]} \\
+\hline
+{\em \{string\}} & \mbox{[}options.\+email\mbox{]} -\/ Account email address. Required when using a .pem or .p12 key\+Filename. \\
+\hline
+{\em \{string\}} & \mbox{[}options.\+key\+Filename\mbox{]} -\/ Full path to the a .json, .pem, or .p12 key downloaded from the Google Developers Console. If you provide a path to a JSON file, the project\+Id option below is not necessary. NOTE\+: .pem and .p12 require you to specify options.\+email as well. \\
+\hline
+{\em \{number\}} & \mbox{[}options.\+port\mbox{]} -\/ The port on which to connect to the remote host. \\
+\hline
+{\em \{string\}} & \mbox{[}options.\+project\+Id\mbox{]} -\/ The project ID from the Google Developer\textquotesingle{}s Console, e.\+g. \textquotesingle{}grape-\/spaceship-\/123\textquotesingle{}. We will also check the environment variable GCLOUD\+\_\+\+PROJECT for your project ID. If your app is running in an environment which supports {\ttfamily \doxylink{}{Application Default Credentials}}, your project ID will be detected automatically. \\
+\hline
+{\em \{string\}} & \mbox{[}options.\+api\+Endpoint\mbox{]} -\/ The domain name of the API remote host. \\
+\hline
+{\em \{gax.\+Client\+Config\}} & \mbox{[}options.\+client\+Config\mbox{]} -\/ \doxylink{class_client}{Client} configuration override. Follows the structure of {\ttfamily \doxylink{location_service_8js_ac2d151e4342a795f99f7c06c709c9717}{gapic\+Config}}. \\
+\hline
+{\em \{boolean\}} & \mbox{[}options.\+fallback\mbox{]} -\/ Use HTTP fallback mode. In fallback mode, a special browser-\/compatible transport implementation is used instead of g\+RPC transport. In browser context (if the {\ttfamily window} object is defined) the fallback mode is enabled automatically; set {\ttfamily options.\+fallback} to {\ttfamily false} if you need to override this behavior. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{logger_2dist_2esm_2index_8esm5_8js_a0adf123df8967a14b5bdd9ff3bbe2d0c}{\+\_\+a}}, \mbox{\hyperlink{logging_8js_a53284eb14d953f3ba58806fc49cd4f7c}{\+\_\+b}}, \mbox{\hyperlink{google-auth-library_2build_2src_2index_8js_ad26b69249342cfd7b4d6e0352d739857}{auth}}, \mbox{\hyperlink{_json_web_token_error_8js_ae0d7523761ce2ef80fa2f1afff43bbf3}{constructor}}, \mbox{\hyperlink{fallback_8js_ae1090345e119e6f92b204fdc31b2f6e1}{fallback}}, \mbox{\hyperlink{location_service_8js_ac2d151e4342a795f99f7c06c709c9717}{gapic\+Config}}, \mbox{\hyperlink{location_service_8js_a07fe692d746d4a126dc70b87fd68eb7e}{gax}}, \mbox{\hyperlink{grpc_8js_a42e9afda263e8798e687bf032e968ff4}{grpc}}, \mbox{\hyperlink{location_service_8js_a15506a7edf48c91f28500878cf48d64f}{json\+Protos}}, \mbox{\hyperlink{class_locations_client_ad694b8efe9ba99973f033fd83af7b528}{list\+Locations()}}, \mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2platform_2index_8js_a74c72f849f998803d0f301e524445c36}{node}}, \mbox{\hyperlink{location_service_8js_a7a775fecca2bf33c92dc97f4e75b4c3e}{page\+Descriptor\+\_\+1}}, \mbox{\hyperlink{class_locations_client_a4aed5fdb827eed47f2ec2d43b1e369e7}{port()}}, \mbox{\hyperlink{ipaddr_8min_8js_abcedab16429ea0641c6596f556f2e102}{process}}, \mbox{\hyperlink{rest_8js_ae0096cf48f005bc73dd8f04b4fe3c52f}{rest()}}, \mbox{\hyperlink{class_locations_client_a7a61de752b1511927f3c603af995acdd}{service\+Path()}}, \mbox{\hyperlink{debug_2src_2node_8js_a822bf74d422c61e6caa292f739dc4786}{stream}}, \mbox{\hyperlink{location_service_8js_a265a39dcf2f0b7c6b96574362aa01ad9}{version}}, \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a153ef7f6fccf9bae313bac28706c3e91}{warn}}, \mbox{\hyperlink{location_service_8js_a2e262cff771e5ba3a685861bdb134310}{warnings\+\_\+1}}, and \mbox{\hyperlink{forge_8all_8min_8js_a77335ab2a82353d4a02f9ba062031c46}{window}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_locations_client_a7f7852b409a8e69e35c1ab83299436e6_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_locations_client_a4213bbdf73663930e235e30e176ca375}\index{LocationsClient@{LocationsClient}!getLocation@{getLocation}}
+\index{getLocation@{getLocation}!LocationsClient@{LocationsClient}}
+\doxysubsubsection{\texorpdfstring{getLocation()}{getLocation()}}
+{\footnotesize\ttfamily \label{class_locations_client_a4213bbdf73663930e235e30e176ca375} 
+Locations\+Client\+::get\+Location (\begin{DoxyParamCaption}\item[{}]{request}{, }\item[{}]{options\+Or\+Callback}{, }\item[{}]{callback}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a622460feeccdab6d8f307936fc6b36fb}{callback}}, \mbox{\hyperlink{class_locations_client_ad42bd1cb37175c52ab8b74aa736e3726}{initialize()}}, \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}}, \mbox{\hyperlink{location_service_8js_af2f5b1eaf4e4a20a2963429dac3bb40e}{routing\+Header}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_locations_client_a4213bbdf73663930e235e30e176ca375_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_locations_client_a455b702c8c2a4b615f89dcda976ba404}\index{LocationsClient@{LocationsClient}!getProjectId@{getProjectId}}
+\index{getProjectId@{getProjectId}!LocationsClient@{LocationsClient}}
+\doxysubsubsection{\texorpdfstring{getProjectId()}{getProjectId()}}
+{\footnotesize\ttfamily \label{class_locations_client_a455b702c8c2a4b615f89dcda976ba404} 
+Locations\+Client\+::get\+Project\+Id (\begin{DoxyParamCaption}\item[{}]{callback}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{google-auth-library_2build_2src_2index_8js_ad26b69249342cfd7b4d6e0352d739857}{auth}}, and \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a622460feeccdab6d8f307936fc6b36fb}{callback}}.
+
+\Hypertarget{class_locations_client_ad42bd1cb37175c52ab8b74aa736e3726}\index{LocationsClient@{LocationsClient}!initialize@{initialize}}
+\index{initialize@{initialize}!LocationsClient@{LocationsClient}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily \label{class_locations_client_ad42bd1cb37175c52ab8b74aa736e3726} 
+Locations\+Client\+::initialize (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Initialize the client. Performs asynchronous operations (such as authentication) and prepares the client. This function will be called automatically when any class method is called for the first time, but if you need to initialize it before calling an actual method, feel free to call \doxylink{class_locations_client_ad42bd1cb37175c52ab8b74aa736e3726}{initialize()} directly.
+
+You can await on this method if you want to make sure the client is initialized.
+
+\begin{DoxyReturn}{Returns}
+\{Promise\} \doxylink{class_a}{A} promise that resolves to an authenticated service stub. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_aeda6958b2fc8494c5a17f91600065eb9}{args}}, \mbox{\hyperlink{location_service_8js_acae0c22beb55b52c08d809762345b64c}{create\+Api\+Call\+\_\+1}}, \mbox{\hyperlink{_0dgrpc_2proto-loader_2build_2src_2index_8js_aa6b9cda1f610adf9d21a9408b3583d51}{descriptor}}, \mbox{\hyperlink{fp_2add_8js_a1ba8e806628b2f512d93819d64d86db9}{func}}, \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}, \mbox{\hyperlink{__get_tag_8js_abace523389c17bce1848e3a427871700}{Promise}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_locations_client_ad42bd1cb37175c52ab8b74aa736e3726_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_locations_client_ad694b8efe9ba99973f033fd83af7b528}\index{LocationsClient@{LocationsClient}!listLocations@{listLocations}}
+\index{listLocations@{listLocations}!LocationsClient@{LocationsClient}}
+\doxysubsubsection{\texorpdfstring{listLocations()}{listLocations()}}
+{\footnotesize\ttfamily \label{class_locations_client_ad694b8efe9ba99973f033fd83af7b528} 
+Locations\+Client\+::list\+Locations (\begin{DoxyParamCaption}\item[{}]{request}{, }\item[{}]{options\+Or\+Callback}{, }\item[{}]{callback}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Lists information about the supported locations for this service.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Object\}} & request The request object that will be sent. \\
+\hline
+{\em \{string\}} & request.\+name The resource that owns the locations collection, if applicable. \\
+\hline
+{\em \{string\}} & request.\+filter The standard list filter. \\
+\hline
+{\em \{number\}} & request.\+page\+Size The standard list page size. \\
+\hline
+{\em \{string\}} & request.\+page\+Token The standard list page token. \\
+\hline
+{\em \{object\}} & \mbox{[}options\mbox{]} Call options. See {\ttfamily \doxylink{}{https\+://googleapis.\+dev/nodejs/google-\/gax/latest/interfaces/\+Call\+Options.\+html\texorpdfstring{$\vert$}{|}\+Call\+Options}} for more details. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Promise\} -\/ The promise which resolves to an array. The first element of the array is Array of \mbox{[}Location\mbox{]}{\ttfamily \doxylink{}{google.\+cloud.\+location.\+Location}}. The client library will perform auto-\/pagination by default\+: it will call the API as many times as needed and will merge results from all the pages into this array. Note that it can affect your quota. We recommend using {\ttfamily \doxylink{class_locations_client_a51646380948021e40d9179f6c6c0888b}{list\+Locations\+Async()}} method described below for async iteration which you can stop as needed. Please see the \href{https://github.com/googleapis/gax-nodejs/blob/main/client-libraries.md\#auto-pagination}{\texttt{ documentation}} for more details and examples. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a622460feeccdab6d8f307936fc6b36fb}{callback}}, \mbox{\hyperlink{class_locations_client_ad42bd1cb37175c52ab8b74aa736e3726}{initialize()}}, \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}}, \mbox{\hyperlink{location_service_8js_af2f5b1eaf4e4a20a2963429dac3bb40e}{routing\+Header}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_locations_client_ad694b8efe9ba99973f033fd83af7b528_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_locations_client_ad694b8efe9ba99973f033fd83af7b528_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_locations_client_a51646380948021e40d9179f6c6c0888b}\index{LocationsClient@{LocationsClient}!listLocationsAsync@{listLocationsAsync}}
+\index{listLocationsAsync@{listLocationsAsync}!LocationsClient@{LocationsClient}}
+\doxysubsubsection{\texorpdfstring{listLocationsAsync()}{listLocationsAsync()}}
+{\footnotesize\ttfamily \label{class_locations_client_a51646380948021e40d9179f6c6c0888b} 
+Locations\+Client\+::list\+Locations\+Async (\begin{DoxyParamCaption}\item[{}]{request}{, }\item[{}]{options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{location_service_8js_a07fe692d746d4a126dc70b87fd68eb7e}{gax}}, \mbox{\hyperlink{class_locations_client_ad42bd1cb37175c52ab8b74aa736e3726}{initialize()}}, \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}}, and \mbox{\hyperlink{location_service_8js_af2f5b1eaf4e4a20a2963429dac3bb40e}{routing\+Header}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_locations_client_a51646380948021e40d9179f6c6c0888b_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_locations_client_a4aed5fdb827eed47f2ec2d43b1e369e7}\index{LocationsClient@{LocationsClient}!port@{port}}
+\index{port@{port}!LocationsClient@{LocationsClient}}
+\doxysubsubsection{\texorpdfstring{port()}{port()}}
+{\footnotesize\ttfamily \label{class_locations_client_a4aed5fdb827eed47f2ec2d43b1e369e7} 
+static \mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} Locations\+Client\+::port (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+The port for this API service. \begin{DoxyReturn}{Returns}
+\{number\} The default port for this service. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_locations_client_a4aed5fdb827eed47f2ec2d43b1e369e7_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_locations_client_ae49d0ca1f507ace61840d63ff9a9a210}\index{LocationsClient@{LocationsClient}!scopes@{scopes}}
+\index{scopes@{scopes}!LocationsClient@{LocationsClient}}
+\doxysubsubsection{\texorpdfstring{scopes()}{scopes()}}
+{\footnotesize\ttfamily \label{class_locations_client_ae49d0ca1f507ace61840d63ff9a9a210} 
+static \mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} Locations\+Client\+::scopes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+The scopes needed to make g\+RPC calls for every method defined in this service. \begin{DoxyReturn}{Returns}
+\{string\mbox{[}\mbox{]}\} List of default scopes. 
+\end{DoxyReturn}
+\Hypertarget{class_locations_client_a7a61de752b1511927f3c603af995acdd}\index{LocationsClient@{LocationsClient}!servicePath@{servicePath}}
+\index{servicePath@{servicePath}!LocationsClient@{LocationsClient}}
+\doxysubsubsection{\texorpdfstring{servicePath()}{servicePath()}}
+{\footnotesize\ttfamily \label{class_locations_client_a7a61de752b1511927f3c603af995acdd} 
+static \mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} Locations\+Client\+::service\+Path (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+The DNS address for this API service. \begin{DoxyReturn}{Returns}
+\{string\} The DNS address for this service. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_locations_client_a7a61de752b1511927f3c603af995acdd_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/google-\/gax/build/src/\mbox{\hyperlink{location_service_8js}{location\+Service.\+js}}\end{DoxyCompactItemize}

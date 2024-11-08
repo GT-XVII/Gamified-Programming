@@ -1,0 +1,25 @@
+\doxysection{/\+Users/nicoletiokhin/\+Desktop/\+Software Semester 3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/@google-\/cloud/firestore/build/src/field-\/value.\+js}
+\hypertarget{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_61f99b56e8d10f32df00ec4e8ce23d29}{}\label{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_61f99b56e8d10f32df00ec4e8ce23d29}Returns a sentinel for use with \doxylink{cipher_8js_af2e4dc57151c84e08431510ddacfb9c6}{update()} or \doxylink{database-compat_2dist_2index_8standalone_8js_a0e055d5e5250182755177897e8d99f7c}{set()} with \{merge\+:true\} to mark a field for deletion.
+
+\begin{DoxyReturn}{Returns}
+\{\doxylink{class_field_value}{Field\+Value}\} The sentinel value to use in your objects.
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{let\ documentRef\ =\ \mbox{\hyperlink{firestore-namespace_8js_a6c18541a3018cee632d7e797bb983f36}{firestore}}.doc(\textcolor{stringliteral}{'col/doc'});}
+\DoxyCodeLine{let\ \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}\ =\ \{\ \mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}:\ \textcolor{charliteral}{'b'},\ \mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}:\ \textcolor{charliteral}{'d'}\ \};}
+\DoxyCodeLine{}
+\DoxyCodeLine{documentRef.set(\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}).then(()\ =>\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ documentRef.update(\{\mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}:\ \mbox{\hyperlink{class_firestore}{Firestore}}.FieldValue.delete()\});}
+\DoxyCodeLine{\}).\mbox{\hyperlink{pledge_8js_a492a4eb4b80e71a1bb4761df42875565}{then}}(()\ =>\ \{}
+\DoxyCodeLine{\ \ \textcolor{comment}{//\ Document\ now\ only\ contains\ \{\ c:\ 'd'\ \}}}
+\DoxyCodeLine{\});}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyCodeInclude}{0}
+
+\end{DoxyCodeInclude}
+ Semester 3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/@google\doxylink{field-value_8js}{-\/cloud/firestore/build/src/field-\/value.\+js} 

@@ -1,0 +1,18 @@
+<map id="PrefixedFirebaseError" name="PrefixedFirebaseError">
+<area shape="rect" id="Node000001" title=" " alt="" coords="225,356,362,443"/>
+<area shape="rect" id="Node000004" href="$class_firebase_app_error.html" title=" " alt="" coords="5,518,117,585"/>
+<area shape="poly" id="edge6_Node000001_Node000004" title=" " alt="" coords="213,442,129,493,95,521,92,517,126,488,210,438"/>
+<area shape="rect" id="Node000005" href="$class_firebase_auth_error.html" title=" " alt="" coords="140,508,264,595"/>
+<area shape="poly" id="edge7_Node000001_Node000005" title=" " alt="" coords="262,457,230,510,226,507,258,454"/>
+<area shape="rect" id="Node000006" href="$class_firebase_messaging_error.html" title=" " alt="" coords="288,491,482,613"/>
+<area shape="poly" id="edge8_Node000001_Node000006" title=" " alt="" coords="329,454,351,490,346,492,324,457"/>
+<area shape="rect" id="Node000007" href="$class_firebase_project_management_error.html" title=" " alt="" coords="506,511,683,592"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="376,432,496,488,533,509,530,514,493,493,374,437"/>
+<area shape="rect" id="Node000002" href="$class_firebase_error.html" title=" " alt="" coords="245,120,342,308"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="296,323,296,356,290,356,290,323"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="274,5,312,72"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="273,78,269,120,264,120,268,78"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="288,87,287,120,282,120,282,87"/>
+<area shape="poly" id="edge4_Node000002_Node000003" title=" " alt="" coords="304,87,305,120,299,120,299,87"/>
+<area shape="poly" id="edge5_Node000002_Node000003" title=" " alt="" coords="319,78,323,120,317,120,313,78"/>
+</map>

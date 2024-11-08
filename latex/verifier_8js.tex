@@ -1,0 +1,176 @@
+\doxysection{backend/node\+\_\+modules/protobufjs/src/verifier.js File Reference}
+\hypertarget{verifier_8js}{}\label{verifier_8js}\index{backend/node\_modules/protobufjs/src/verifier.js@{backend/node\_modules/protobufjs/src/verifier.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{verifier_8js_a499da133dea4d1a4ef64e31667ec221a}{invalid}} (field, \mbox{\hyperlink{bench_8js_a758587d8718823d0194f29b3b8442863}{expected}})
+\item 
+function \mbox{\hyperlink{verifier_8js_a9f031e25ff2e782db0aa0681c24adb59}{gen\+Verify\+Value}} (gen, field, field\+Index, ref)
+\item 
+function \mbox{\hyperlink{verifier_8js_a592a19bc6cd03a64373196a2943209f4}{gen\+Verify\+Key}} (gen, field, ref)
+\item 
+function \mbox{\hyperlink{verifier_8js_a6dd1dba0f00ddae4e77592db9f89e0f8}{verifier}} (mtype)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{verifier_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{verifier_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} = \mbox{\hyperlink{index-light_8js_ae959a106a18fef09505a816f05d8088f}{verifier}}
+\item 
+var \mbox{\hyperlink{verifier_8js_acf47369577c460f65f36bd5f1cdc57b2}{Enum}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./enum"{})
+\item 
+var \mbox{\hyperlink{verifier_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./util"{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{verifier_8js_a592a19bc6cd03a64373196a2943209f4}\index{verifier.js@{verifier.js}!genVerifyKey@{genVerifyKey}}
+\index{genVerifyKey@{genVerifyKey}!verifier.js@{verifier.js}}
+\doxysubsubsection{\texorpdfstring{genVerifyKey()}{genVerifyKey()}}
+{\footnotesize\ttfamily \label{verifier_8js_a592a19bc6cd03a64373196a2943209f4} 
+function gen\+Verify\+Key (\begin{DoxyParamCaption}\item[{}]{gen}{, }\item[{}]{field}{, }\item[{}]{ref}{}\end{DoxyParamCaption})}
+
+Generates a partial key verifier. 
+\begin{DoxyParams}{Parameters}
+{\em \{\+Codegen\}} & gen Codegen instance \\
+\hline
+{\em \{\+Field\}} & field Reflected field \\
+\hline
+{\em \{string\}} & ref Variable reference \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Codegen\} Codegen instance @ignore 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{verifier_8js_a499da133dea4d1a4ef64e31667ec221a}{invalid()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{verifier_8js_a592a19bc6cd03a64373196a2943209f4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{verifier_8js_a592a19bc6cd03a64373196a2943209f4_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{verifier_8js_a9f031e25ff2e782db0aa0681c24adb59}\index{verifier.js@{verifier.js}!genVerifyValue@{genVerifyValue}}
+\index{genVerifyValue@{genVerifyValue}!verifier.js@{verifier.js}}
+\doxysubsubsection{\texorpdfstring{genVerifyValue()}{genVerifyValue()}}
+{\footnotesize\ttfamily \label{verifier_8js_a9f031e25ff2e782db0aa0681c24adb59} 
+function gen\+Verify\+Value (\begin{DoxyParamCaption}\item[{}]{gen}{, }\item[{}]{field}{, }\item[{}]{field\+Index}{, }\item[{}]{ref}{}\end{DoxyParamCaption})}
+
+Generates a partial value verifier. 
+\begin{DoxyParams}{Parameters}
+{\em \{\+Codegen\}} & gen Codegen instance \\
+\hline
+{\em \{\+Field\}} & field Reflected field \\
+\hline
+{\em \{number\}} & field\+Index Field index \\
+\hline
+{\em \{string\}} & ref Variable reference \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Codegen\} Codegen instance @ignore 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{verifier_8js_acf47369577c460f65f36bd5f1cdc57b2}{Enum}}, \mbox{\hyperlink{verifier_8js_a499da133dea4d1a4ef64e31667ec221a}{invalid()}}, \mbox{\hyperlink{ordered-map_8min_8js_a2e0772d176c27e9cea01defba2a9575a}{j}}, and \mbox{\hyperlink{__base_assign_8js_a87dd2006b34e1d50c301938be11fd6fa}{keys}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=241pt]{verifier_8js_a9f031e25ff2e782db0aa0681c24adb59_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=243pt]{verifier_8js_a9f031e25ff2e782db0aa0681c24adb59_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{verifier_8js_a499da133dea4d1a4ef64e31667ec221a}\index{verifier.js@{verifier.js}!invalid@{invalid}}
+\index{invalid@{invalid}!verifier.js@{verifier.js}}
+\doxysubsubsection{\texorpdfstring{invalid()}{invalid()}}
+{\footnotesize\ttfamily \label{verifier_8js_a499da133dea4d1a4ef64e31667ec221a} 
+function invalid (\begin{DoxyParamCaption}\item[{}]{field}{, }\item[{}]{expected}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{bench_8js_a758587d8718823d0194f29b3b8442863}{expected}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{verifier_8js_a499da133dea4d1a4ef64e31667ec221a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{verifier_8js_a6dd1dba0f00ddae4e77592db9f89e0f8}\index{verifier.js@{verifier.js}!verifier@{verifier}}
+\index{verifier@{verifier}!verifier.js@{verifier.js}}
+\doxysubsubsection{\texorpdfstring{verifier()}{verifier()}}
+{\footnotesize\ttfamily \label{verifier_8js_a6dd1dba0f00ddae4e77592db9f89e0f8} 
+function verifier (\begin{DoxyParamCaption}\item[{}]{mtype}{}\end{DoxyParamCaption})}
+
+Generates a verifier specific to the specified message type. 
+\begin{DoxyParams}{Parameters}
+{\em \{\+Type\}} & mtype Message type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Codegen\} Codegen instance 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{verifier_8js_a592a19bc6cd03a64373196a2943209f4}{gen\+Verify\+Key()}}, \mbox{\hyperlink{verifier_8js_a9f031e25ff2e782db0aa0681c24adb59}{gen\+Verify\+Value()}}, \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}, \mbox{\hyperlink{verifier_8js_a499da133dea4d1a4ef64e31667ec221a}{invalid()}}, and \mbox{\hyperlink{verifier_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{verifier_8js_a6dd1dba0f00ddae4e77592db9f89e0f8_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{verifier_8js_acf47369577c460f65f36bd5f1cdc57b2}\index{verifier.js@{verifier.js}!Enum@{Enum}}
+\index{Enum@{Enum}!verifier.js@{verifier.js}}
+\doxysubsubsection{\texorpdfstring{Enum}{Enum}}
+{\footnotesize\ttfamily \label{verifier_8js_acf47369577c460f65f36bd5f1cdc57b2} 
+var Enum = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./enum"{})}
+
+\Hypertarget{verifier_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\index{verifier.js@{verifier.js}!exports@{exports}}
+\index{exports@{exports}!verifier.js@{verifier.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \label{verifier_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports = \mbox{\hyperlink{index-light_8js_ae959a106a18fef09505a816f05d8088f}{verifier}}}
+
+\Hypertarget{verifier_8js_ae2475e10618961c050dcba04e8c42331}\index{verifier.js@{verifier.js}!strict@{strict}}
+\index{strict@{strict}!verifier.js@{verifier.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{verifier_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+
+\Hypertarget{verifier_8js_a8f5b2e09d5197e9d28f6032dff542d44}\index{verifier.js@{verifier.js}!util@{util}}
+\index{util@{util}!verifier.js@{verifier.js}}
+\doxysubsubsection{\texorpdfstring{util}{util}}
+{\footnotesize\ttfamily \label{verifier_8js_a8f5b2e09d5197e9d28f6032dff542d44} 
+var util = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./util"{})}
+

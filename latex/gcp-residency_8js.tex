@@ -1,0 +1,141 @@
+\doxysection{backend/node\+\_\+modules/gcp-\/metadata/build/src/gcp-\/residency.js File Reference}
+\hypertarget{gcp-residency_8js}{}\label{gcp-residency_8js}\index{backend/node\_modules/gcp-\/metadata/build/src/gcp-\/residency.js@{backend/node\_modules/gcp-\/metadata/build/src/gcp-\/residency.js}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{gcp-residency_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{gcp-residency_8js_a44caca2cc00a1b3598c42325c1407cbe}{detect\+GCPResidency}} = \mbox{\hyperlink{gcp-residency_8js_a2022718753da3a681d1f12fe670ee4c0}{exports.\+is\+Google\+Compute\+Engine}} = \mbox{\hyperlink{gcp-residency_8js_aa51f0fd0bbe67938ca6b99aae292aa3f}{exports.\+is\+Google\+Compute\+Engine\+MACAddress}} = \mbox{\hyperlink{gcp-residency_8js_a89e758594e7b8b77e86a5b4407df2fcf}{exports.\+is\+Google\+Compute\+Engine\+Linux}} = \mbox{\hyperlink{gcp-residency_8js_a92c753b62f3d73555804c57b74c92e59}{exports.\+is\+Google\+Cloud\+Serverless}} = \mbox{\hyperlink{gcp-residency_8js_a493fc36f8f08720f139e1d624ce20e23}{exports.\+GCE\+\_\+\+LINUX\+\_\+\+BIOS\+\_\+\+PATHS}} = void 0
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{gcp-residency_8js_ac00fcb402868b098d3624f8b35a61083}{fs\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}fs"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{gcp-residency_8js_af90d74c68a36a86f15b866be69ed3b86}{os\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}os"{})
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{gcp-residency_8js_a493fc36f8f08720f139e1d624ce20e23}{GCE\+\_\+\+LINUX\+\_\+\+BIOS\+\_\+\+PATHS}}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{gcp-residency_8js_acdcb14490cf404b34ed3799d3b3e9250}{GCE\+\_\+\+MAC\+\_\+\+ADDRESS\+\_\+\+REGEX}} = /\texorpdfstring{$^\wedge$}{\string^}42\+:01/
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{gcp-residency_8js_a92c753b62f3d73555804c57b74c92e59}{is\+Google\+Cloud\+Serverless}} = is\+Google\+Cloud\+Serverless
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{gcp-residency_8js_a89e758594e7b8b77e86a5b4407df2fcf}{is\+Google\+Compute\+Engine\+Linux}} = is\+Google\+Compute\+Engine\+Linux
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{gcp-residency_8js_aa51f0fd0bbe67938ca6b99aae292aa3f}{is\+Google\+Compute\+Engine\+MACAddress}} = is\+Google\+Compute\+Engine\+MACAddress
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{gcp-residency_8js_a2022718753da3a681d1f12fe670ee4c0}{is\+Google\+Compute\+Engine}} = is\+Google\+Compute\+Engine
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{gcp-residency_8js_a44caca2cc00a1b3598c42325c1407cbe}\index{gcp-\/residency.js@{gcp-\/residency.js}!detectGCPResidency@{detectGCPResidency}}
+\index{detectGCPResidency@{detectGCPResidency}!gcp-\/residency.js@{gcp-\/residency.js}}
+\doxysubsubsection{\texorpdfstring{detectGCPResidency}{detectGCPResidency}}
+{\footnotesize\ttfamily \label{gcp-residency_8js_a44caca2cc00a1b3598c42325c1407cbe} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} detect\+GCPResidency (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) = \mbox{\hyperlink{gcp-residency_8js_a2022718753da3a681d1f12fe670ee4c0}{exports.\+is\+Google\+Compute\+Engine}} = \mbox{\hyperlink{gcp-residency_8js_aa51f0fd0bbe67938ca6b99aae292aa3f}{exports.\+is\+Google\+Compute\+Engine\+MACAddress}} = \mbox{\hyperlink{gcp-residency_8js_a89e758594e7b8b77e86a5b4407df2fcf}{exports.\+is\+Google\+Compute\+Engine\+Linux}} = \mbox{\hyperlink{gcp-residency_8js_a92c753b62f3d73555804c57b74c92e59}{exports.\+is\+Google\+Cloud\+Serverless}} = \mbox{\hyperlink{gcp-residency_8js_a493fc36f8f08720f139e1d624ce20e23}{exports.\+GCE\+\_\+\+LINUX\+\_\+\+BIOS\+\_\+\+PATHS}} = void 0}
+
+Determines if the process is running on Google Cloud Platform.
+
+\begin{DoxyReturn}{Returns}
+\{boolean\} {\ttfamily true} if the process is running on GCP, {\ttfamily false} otherwise. 
+\end{DoxyReturn}
+\Hypertarget{gcp-residency_8js_ac00fcb402868b098d3624f8b35a61083}\index{gcp-\/residency.js@{gcp-\/residency.js}!fs\_1@{fs\_1}}
+\index{fs\_1@{fs\_1}!gcp-\/residency.js@{gcp-\/residency.js}}
+\doxysubsubsection{\texorpdfstring{fs\_1}{fs\_1}}
+{\footnotesize\ttfamily \label{gcp-residency_8js_ac00fcb402868b098d3624f8b35a61083} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} fs\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}fs"{})}
+
+\Hypertarget{gcp-residency_8js_a493fc36f8f08720f139e1d624ce20e23}\index{gcp-\/residency.js@{gcp-\/residency.js}!GCE\_LINUX\_BIOS\_PATHS@{GCE\_LINUX\_BIOS\_PATHS}}
+\index{GCE\_LINUX\_BIOS\_PATHS@{GCE\_LINUX\_BIOS\_PATHS}!gcp-\/residency.js@{gcp-\/residency.js}}
+\doxysubsubsection{\texorpdfstring{GCE\_LINUX\_BIOS\_PATHS}{GCE\_LINUX\_BIOS\_PATHS}}
+{\footnotesize\ttfamily \label{gcp-residency_8js_a493fc36f8f08720f139e1d624ce20e23} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} GCE\+\_\+\+LINUX\+\_\+\+BIOS\+\_\+\+PATHS}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \ \ BIOS\_DATE:\ \textcolor{stringliteral}{'/sys/class/dmi/id/bios\_date'},}
+\DoxyCodeLine{\ \ \ \ BIOS\_VENDOR:\ \textcolor{stringliteral}{'/sys/class/dmi/id/bios\_vendor'},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Known paths unique to Google \doxylink{class_compute}{Compute} Engine Linux instances \Hypertarget{gcp-residency_8js_acdcb14490cf404b34ed3799d3b3e9250}\index{gcp-\/residency.js@{gcp-\/residency.js}!GCE\_MAC\_ADDRESS\_REGEX@{GCE\_MAC\_ADDRESS\_REGEX}}
+\index{GCE\_MAC\_ADDRESS\_REGEX@{GCE\_MAC\_ADDRESS\_REGEX}!gcp-\/residency.js@{gcp-\/residency.js}}
+\doxysubsubsection{\texorpdfstring{GCE\_MAC\_ADDRESS\_REGEX}{GCE\_MAC\_ADDRESS\_REGEX}}
+{\footnotesize\ttfamily \label{gcp-residency_8js_acdcb14490cf404b34ed3799d3b3e9250} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} GCE\+\_\+\+MAC\+\_\+\+ADDRESS\+\_\+\+REGEX = /\texorpdfstring{$^\wedge$}{\string^}42\+:01/}
+
+\Hypertarget{gcp-residency_8js_a92c753b62f3d73555804c57b74c92e59}\index{gcp-\/residency.js@{gcp-\/residency.js}!isGoogleCloudServerless@{isGoogleCloudServerless}}
+\index{isGoogleCloudServerless@{isGoogleCloudServerless}!gcp-\/residency.js@{gcp-\/residency.js}}
+\doxysubsubsection{\texorpdfstring{isGoogleCloudServerless}{isGoogleCloudServerless}}
+{\footnotesize\ttfamily \label{gcp-residency_8js_a92c753b62f3d73555804c57b74c92e59} 
+function is\+Google\+Cloud\+Serverless (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) = is\+Google\+Cloud\+Serverless}
+
+Determines if the process is running on a Google Cloud Serverless environment (Cloud Run or Cloud \doxylink{class_functions}{Functions} instance).
+
+Uses the\+:
+\begin{DoxyItemize}
+\item {\ttfamily \doxylink{}{Cloud Run environment variables}}.
+\item {\ttfamily \doxylink{}{Cloud Functions environment variables}}.
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+\{boolean\} {\ttfamily true} if the process is running on GCP serverless, {\ttfamily false} otherwise. 
+\end{DoxyReturn}
+{\ttfamily CLOUD\+\_\+\+RUN\+\_\+\+JOB} is used for Cloud Run Jobs
+\begin{DoxyItemize}
+\item See {\ttfamily \doxylink{}{Cloud Run environment variables}}.
+\end{DoxyItemize}
+
+{\ttfamily FUNCTION\+\_\+\+NAME} is used in older Cloud \doxylink{class_functions}{Functions} environments\+:
+\begin{DoxyItemize}
+\item See {\ttfamily \doxylink{}{Python 3.\+7 and Go 1.\+11}}.
+\end{DoxyItemize}
+
+{\ttfamily K\+\_\+\+SERVICE} is used in Cloud Run and newer Cloud \doxylink{class_functions}{Functions} environments\+:
+\begin{DoxyItemize}
+\item See {\ttfamily \doxylink{}{Cloud Run environment variables}}.
+\item See {\ttfamily \doxylink{}{Cloud Functions newer runtimes}}.
+\end{DoxyItemize}\Hypertarget{gcp-residency_8js_a2022718753da3a681d1f12fe670ee4c0}\index{gcp-\/residency.js@{gcp-\/residency.js}!isGoogleComputeEngine@{isGoogleComputeEngine}}
+\index{isGoogleComputeEngine@{isGoogleComputeEngine}!gcp-\/residency.js@{gcp-\/residency.js}}
+\doxysubsubsection{\texorpdfstring{isGoogleComputeEngine}{isGoogleComputeEngine}}
+{\footnotesize\ttfamily \label{gcp-residency_8js_a2022718753da3a681d1f12fe670ee4c0} 
+function is\+Google\+Compute\+Engine (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) = is\+Google\+Compute\+Engine}
+
+Determines if the process is running on a Google \doxylink{class_compute}{Compute} Engine instance.
+
+\begin{DoxyReturn}{Returns}
+\{boolean\} {\ttfamily true} if the process is running on GCE, {\ttfamily false} otherwise. 
+\end{DoxyReturn}
+\Hypertarget{gcp-residency_8js_a89e758594e7b8b77e86a5b4407df2fcf}\index{gcp-\/residency.js@{gcp-\/residency.js}!isGoogleComputeEngineLinux@{isGoogleComputeEngineLinux}}
+\index{isGoogleComputeEngineLinux@{isGoogleComputeEngineLinux}!gcp-\/residency.js@{gcp-\/residency.js}}
+\doxysubsubsection{\texorpdfstring{isGoogleComputeEngineLinux}{isGoogleComputeEngineLinux}}
+{\footnotesize\ttfamily \label{gcp-residency_8js_a89e758594e7b8b77e86a5b4407df2fcf} 
+function is\+Google\+Compute\+Engine\+Linux (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) = is\+Google\+Compute\+Engine\+Linux}
+
+Determines if the process is running on a Linux Google \doxylink{class_compute}{Compute} Engine instance.
+
+\begin{DoxyReturn}{Returns}
+\{boolean\} {\ttfamily true} if the process is running on Linux GCE, {\ttfamily false} otherwise. 
+\end{DoxyReturn}
+\Hypertarget{gcp-residency_8js_aa51f0fd0bbe67938ca6b99aae292aa3f}\index{gcp-\/residency.js@{gcp-\/residency.js}!isGoogleComputeEngineMACAddress@{isGoogleComputeEngineMACAddress}}
+\index{isGoogleComputeEngineMACAddress@{isGoogleComputeEngineMACAddress}!gcp-\/residency.js@{gcp-\/residency.js}}
+\doxysubsubsection{\texorpdfstring{isGoogleComputeEngineMACAddress}{isGoogleComputeEngineMACAddress}}
+{\footnotesize\ttfamily \label{gcp-residency_8js_aa51f0fd0bbe67938ca6b99aae292aa3f} 
+function is\+Google\+Compute\+Engine\+MACAddress (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) = is\+Google\+Compute\+Engine\+MACAddress}
+
+Determines if the process is running on a Google \doxylink{class_compute}{Compute} Engine instance with a known MAC address.
+
+\begin{DoxyReturn}{Returns}
+\{boolean\} {\ttfamily true} if the process is running on GCE (as determined by MAC address), {\ttfamily false} otherwise. 
+\end{DoxyReturn}
+\Hypertarget{gcp-residency_8js_af90d74c68a36a86f15b866be69ed3b86}\index{gcp-\/residency.js@{gcp-\/residency.js}!os\_1@{os\_1}}
+\index{os\_1@{os\_1}!gcp-\/residency.js@{gcp-\/residency.js}}
+\doxysubsubsection{\texorpdfstring{os\_1}{os\_1}}
+{\footnotesize\ttfamily \label{gcp-residency_8js_af90d74c68a36a86f15b866be69ed3b86} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} os\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}os"{})}
+
+\Hypertarget{gcp-residency_8js_ae2475e10618961c050dcba04e8c42331}\index{gcp-\/residency.js@{gcp-\/residency.js}!strict@{strict}}
+\index{strict@{strict}!gcp-\/residency.js@{gcp-\/residency.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{gcp-residency_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+

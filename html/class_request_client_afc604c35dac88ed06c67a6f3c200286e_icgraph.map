@@ -1,0 +1,15 @@
+<map id="RequestClient::parseRetryAfterIntoMillis" name="RequestClient::parseRetryAfterIntoMillis">
+<area shape="rect" id="Node000001" title=" " alt="" coords="651,59,828,100"/>
+<area shape="rect" id="Node000002" href="$class_request_client.html#a489c5124785f2aabff57f9ed093f69b2" title=" " alt="" coords="407,59,603,100"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="636,82,604,82,604,77,636,77"/>
+<area shape="rect" id="Node000003" href="$class_http2_client.html#ac66cf9aeb473864e8bb15473aab1c188" title=" " alt="" coords="177,29,359,55"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="391,64,354,58,354,53,392,59"/>
+<area shape="rect" id="Node000005" href="$class_http_client.html#a34393c58179c8f4a1cc773637816a6d1" title=" " alt="" coords="180,103,356,128"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="392,99,356,105,355,100,391,94"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="303,17,291,10,268,8,247,10,235,15,233,20,239,27,234,31,228,21,232,11,245,5,268,3,293,5,305,12"/>
+<area shape="rect" id="Node000004" href="$class_http2_client.html#a67425b1426509e70b50c3c844ca84b07" title=" " alt="" coords="5,29,129,55"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="161,45,129,45,129,40,161,40"/>
+<area shape="poly" id="edge7_Node000005_Node000005" title=" " alt="" coords="303,90,291,84,268,81,247,83,235,88,233,93,239,101,234,104,228,94,232,84,245,78,268,76,293,79,305,86"/>
+<area shape="rect" id="Node000006" href="$class_http_client.html#a88c78b84a7868abfe61aee0ad3db80ef" title=" " alt="" coords="9,103,125,128"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="164,118,126,118,126,113,164,113"/>
+</map>

@@ -1,0 +1,100 @@
+\doxysection{Input\+Handler Class Reference}
+\hypertarget{class_input_handler}{}\label{class_input_handler}\index{InputHandler@{InputHandler}}
+
+
+Collaboration diagram for Input\+Handler\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{class_input_handler__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_input_handler_a1a87100f975c82a1aa02b6a0f7218405}{constructor}} (\{ \mbox{\hyperlink{class_input_handler_a67ee18180d221bfcb9ba227f48c54bef}{default\+Input\+Target}}, \mbox{\hyperlink{class_input_handler_ae8ba838efd65e18ea0f41005e97c6958}{input\+Stream}}, \mbox{\hyperlink{class_input_handler_ae7ec96f6ed7763dc2990826237615f77}{pause\+Input\+Stream\+On\+Finish}}, \mbox{\hyperlink{class_input_handler_a5c0c6004dd3a189d028a163bd03fb22d}{logger}}, \})
+\item 
+\mbox{\hyperlink{class_input_handler_a952112909a68ef911f24e4066b869ca8}{handle}} (\mbox{\hyperlink{bin_2concurrently_8js_ab9427a0fd7fe157c6ce200c3667e6fc5}{commands}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_input_handler_a5c0c6004dd3a189d028a163bd03fb22d}{logger}}
+\item 
+\mbox{\hyperlink{class_input_handler_a67ee18180d221bfcb9ba227f48c54bef}{default\+Input\+Target}}
+\item 
+\mbox{\hyperlink{class_input_handler_ae8ba838efd65e18ea0f41005e97c6958}{input\+Stream}}
+\item 
+\mbox{\hyperlink{class_input_handler_ae7ec96f6ed7763dc2990826237615f77}{pause\+Input\+Stream\+On\+Finish}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Sends input from concurrently through to commands.
+
+Input can start with a command identifier, in which case it will be sent to that specific command. For instance, {\ttfamily 0\+:bla} will send {\ttfamily bla} to command at index {\ttfamily 0}, and {\ttfamily server\+:stop} will send {\ttfamily stop} to command with name {\ttfamily server}.
+
+If the input doesn\textquotesingle{}t start with a command identifier, it is then always sent to the default target. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_input_handler_a1a87100f975c82a1aa02b6a0f7218405}\index{InputHandler@{InputHandler}!constructor@{constructor}}
+\index{constructor@{constructor}!InputHandler@{InputHandler}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_input_handler_a1a87100f975c82a1aa02b6a0f7218405} 
+Input\+Handler\+::constructor (\begin{DoxyParamCaption}\item[{}]{\{ default\+Input\+Target, input\+Stream, pause\+Input\+Stream\+On\+Finish, logger, \}}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{class_input_handler_a67ee18180d221bfcb9ba227f48c54bef}{default\+Input\+Target}}, \mbox{\hyperlink{class_input_handler_ae8ba838efd65e18ea0f41005e97c6958}{input\+Stream}}, \mbox{\hyperlink{class_input_handler_a5c0c6004dd3a189d028a163bd03fb22d}{logger}}, and \mbox{\hyperlink{class_input_handler_ae7ec96f6ed7763dc2990826237615f77}{pause\+Input\+Stream\+On\+Finish}}.
+
+\Hypertarget{class_input_handler_a952112909a68ef911f24e4066b869ca8}\index{InputHandler@{InputHandler}!handle@{handle}}
+\index{handle@{handle}!InputHandler@{InputHandler}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily \label{class_input_handler_a952112909a68ef911f24e4066b869ca8} 
+Input\+Handler\+::handle (\begin{DoxyParamCaption}\item[{}]{commands}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{yargs_2build_2lib_2command_8js_a375077f2439e51b3d30f204271589efb}{command()}}, \mbox{\hyperlink{bin_2concurrently_8js_ab9427a0fd7fe157c6ce200c3667e6fc5}{commands}}, \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}, \mbox{\hyperlink{class_input_handler_a67ee18180d221bfcb9ba227f48c54bef}{default\+Input\+Target}}, \mbox{\hyperlink{ordered-map_8min_8js_a5777012f924b8842ccb381f4d2ac9c55}{find}}, \mbox{\hyperlink{___hash_8js_a54a061fe5287ccd59bdb25b09f05270c}{has}}, \mbox{\hyperlink{class_input_handler_ae8ba838efd65e18ea0f41005e97c6958}{input\+Stream}}, \mbox{\hyperlink{lodash_8min_8js_a53bb00c7767c3df3cdef39d2863ce11f}{it}}, \mbox{\hyperlink{class_input_handler_a5c0c6004dd3a189d028a163bd03fb22d}{logger}}, \mbox{\hyperlink{__get_tag_8js_aa38772edcc6ff00766e19b36ce8073a8}{Map}}, \mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}, \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}, \mbox{\hyperlink{input-handler_8js_a3777df4cce88b3e893a2c58ef89ddd50}{operators\+\_\+1}}, \mbox{\hyperlink{long_2index_8js_a88083640992a53a144223e2bd602d47d}{or}}, \mbox{\hyperlink{class_input_handler_ae7ec96f6ed7763dc2990826237615f77}{pause\+Input\+Stream\+On\+Finish}}, \mbox{\hyperlink{input-handler_8js_a21215470202fdbefb13b095b029b1cf5}{Rx}}, and \mbox{\hyperlink{ordered-map_8min_8js_ad9a7d92cb87932d25187fdec3ba1b621}{s}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_input_handler_a952112909a68ef911f24e4066b869ca8_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_input_handler_a67ee18180d221bfcb9ba227f48c54bef}\index{InputHandler@{InputHandler}!defaultInputTarget@{defaultInputTarget}}
+\index{defaultInputTarget@{defaultInputTarget}!InputHandler@{InputHandler}}
+\doxysubsubsection{\texorpdfstring{defaultInputTarget}{defaultInputTarget}}
+{\footnotesize\ttfamily \label{class_input_handler_a67ee18180d221bfcb9ba227f48c54bef} 
+Input\+Handler\+::default\+Input\+Target}
+
+\Hypertarget{class_input_handler_ae8ba838efd65e18ea0f41005e97c6958}\index{InputHandler@{InputHandler}!inputStream@{inputStream}}
+\index{inputStream@{inputStream}!InputHandler@{InputHandler}}
+\doxysubsubsection{\texorpdfstring{inputStream}{inputStream}}
+{\footnotesize\ttfamily \label{class_input_handler_ae8ba838efd65e18ea0f41005e97c6958} 
+Input\+Handler\+::input\+Stream}
+
+\Hypertarget{class_input_handler_a5c0c6004dd3a189d028a163bd03fb22d}\index{InputHandler@{InputHandler}!logger@{logger}}
+\index{logger@{logger}!InputHandler@{InputHandler}}
+\doxysubsubsection{\texorpdfstring{logger}{logger}}
+{\footnotesize\ttfamily \label{class_input_handler_a5c0c6004dd3a189d028a163bd03fb22d} 
+Input\+Handler\+::logger}
+
+\Hypertarget{class_input_handler_ae7ec96f6ed7763dc2990826237615f77}\index{InputHandler@{InputHandler}!pauseInputStreamOnFinish@{pauseInputStreamOnFinish}}
+\index{pauseInputStreamOnFinish@{pauseInputStreamOnFinish}!InputHandler@{InputHandler}}
+\doxysubsubsection{\texorpdfstring{pauseInputStreamOnFinish}{pauseInputStreamOnFinish}}
+{\footnotesize\ttfamily \label{class_input_handler_ae7ec96f6ed7763dc2990826237615f77} 
+Input\+Handler\+::pause\+Input\+Stream\+On\+Finish}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/concurrently/dist/src/flow-\/control/\mbox{\hyperlink{input-handler_8js}{input-\/handler.\+js}}\end{DoxyCompactItemize}

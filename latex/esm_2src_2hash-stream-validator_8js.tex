@@ -1,0 +1,88 @@
+\doxysection{backend/node\+\_\+modules/@google-\/cloud/storage/build/esm/src/hash-\/stream-\/validator.js File Reference}
+\hypertarget{esm_2src_2hash-stream-validator_8js}{}\label{esm_2src_2hash-stream-validator_8js}\index{backend/node\_modules/"@google-\/cloud/storage/build/esm/src/hash-\/stream-\/validator.js@{backend/node\_modules/"@google-\/cloud/storage/build/esm/src/hash-\/stream-\/validator.js}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_hash_stream_validator}{Hash\+Stream\+Validator}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{esm_2src_2hash-stream-validator_8js_a9c0a3b4ec16c0e88e32e52464cf3423e}{\+\_\+\+\_\+class\+Private\+Field\+Set}}
+\item 
+var \mbox{\hyperlink{esm_2src_2hash-stream-validator_8js_a447cd4ee0c75db2d366d333c1c6ab92b}{\+\_\+\+\_\+class\+Private\+Field\+Get}}
+\item 
+var \mbox{\hyperlink{esm_2src_2hash-stream-validator_8js_af83af6dddf4770682e4f2b273e6a9df6}{\+\_\+\+Hash\+Stream\+Validator\+\_\+crc32c\+Hash}} = new \mbox{\hyperlink{__get_tag_8js_a7a0af2b1504d35a612ef29c54dcdef19}{Weak\+Map}}()
+\item 
+var \mbox{\hyperlink{esm_2src_2hash-stream-validator_8js_a63c991f550c0ee52bcc5040fe92b395e}{\+\_\+\+Hash\+Stream\+Validator\+\_\+md5\+Hash}} = new \mbox{\hyperlink{__get_tag_8js_a7a0af2b1504d35a612ef29c54dcdef19}{Weak\+Map}}()
+\item 
+var \mbox{\hyperlink{esm_2src_2hash-stream-validator_8js_acfdc233f8ff99c9fad9d1e135888e194}{\+\_\+\+Hash\+Stream\+Validator\+\_\+md5\+Digest}} = new \mbox{\hyperlink{__get_tag_8js_a7a0af2b1504d35a612ef29c54dcdef19}{Weak\+Map}}()
+\item 
+\mbox{\hyperlink{esm_2src_2hash-stream-validator_8js_a59be084da8908b7d77ff34b25cd84488}{import}} \{ create\+Hash \} from \textquotesingle{}\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a3eca37c9aac9a17870baa116339724e3}{crypto}}\textquotesingle{}
+\item 
+\mbox{\hyperlink{esm_2src_2hash-stream-validator_8js_ac2bdfb9ae6161ee9845b03e56a12ebd0}{Hash\+Stream\+Validator}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{esm_2src_2hash-stream-validator_8js_a447cd4ee0c75db2d366d333c1c6ab92b}\index{hash-\/stream-\/validator.js@{hash-\/stream-\/validator.js}!\_\_classPrivateFieldGet@{\_\_classPrivateFieldGet}}
+\index{\_\_classPrivateFieldGet@{\_\_classPrivateFieldGet}!hash-\/stream-\/validator.js@{hash-\/stream-\/validator.js}}
+\doxysubsubsection{\texorpdfstring{\_\_classPrivateFieldGet}{\_\_classPrivateFieldGet}}
+{\footnotesize\ttfamily \label{esm_2src_2hash-stream-validator_8js_a447cd4ee0c75db2d366d333c1c6ab92b} 
+var \+\_\+\+\_\+class\+Private\+Field\+Get}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ (\textcolor{keyword}{this}\ \&\&\ this.\mbox{\hyperlink{cjs_2src_2hash-stream-validator_8js_a447cd4ee0c75db2d366d333c1c6ab92b}{\_\_classPrivateFieldGet}})\ ||\ \textcolor{keyword}{function}\ (receiver,\ \mbox{\hyperlink{asynckit_2lib_2state_8js_a7e1b0ba367facd663d59372bd204ea01}{state}},\ kind,\ \mbox{\hyperlink{uuidv1_8min_8js_a9cf09a2972472098a4c689fd988f4dfc}{f}})\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (kind\ ===\ \textcolor{stringliteral}{"{}a"{}}\ \&\&\ !\mbox{\hyperlink{uuidv1_8min_8js_a9cf09a2972472098a4c689fd988f4dfc}{f}})\ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ TypeError(\textcolor{stringliteral}{"{}Private\ accessor\ was\ defined\ without\ a\ getter"{}});}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (typeof\ \mbox{\hyperlink{asynckit_2lib_2state_8js_a7e1b0ba367facd663d59372bd204ea01}{state}}\ ===\ \textcolor{stringliteral}{"{}function"{}}\ ?\ receiver\ !==\ \mbox{\hyperlink{asynckit_2lib_2state_8js_a7e1b0ba367facd663d59372bd204ea01}{state}}\ ||\ !\mbox{\hyperlink{uuidv1_8min_8js_a9cf09a2972472098a4c689fd988f4dfc}{f}}\ :\ !\mbox{\hyperlink{asynckit_2lib_2state_8js_a7e1b0ba367facd663d59372bd204ea01}{state}}.has(receiver))\ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ TypeError(\textcolor{stringliteral}{"{}Cannot\ read\ private\ member\ from\ an\ object\ whose\ class\ did\ not\ declare\ it"{}});}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ kind\ ===\ \textcolor{stringliteral}{"{}m"{}}\ ?\ \mbox{\hyperlink{uuidv1_8min_8js_a9cf09a2972472098a4c689fd988f4dfc}{f}}\ :\ kind\ ===\ \textcolor{stringliteral}{"{}a"{}}\ ?\ \mbox{\hyperlink{uuidv1_8min_8js_a9cf09a2972472098a4c689fd988f4dfc}{f}}.call(receiver)\ :\ \mbox{\hyperlink{uuidv1_8min_8js_a9cf09a2972472098a4c689fd988f4dfc}{f}}\ ?\ \mbox{\hyperlink{uuidv1_8min_8js_a9cf09a2972472098a4c689fd988f4dfc}{f}}.value\ :\ \mbox{\hyperlink{asynckit_2lib_2state_8js_a7e1b0ba367facd663d59372bd204ea01}{state}}.get(receiver);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{esm_2src_2hash-stream-validator_8js_a9c0a3b4ec16c0e88e32e52464cf3423e}\index{hash-\/stream-\/validator.js@{hash-\/stream-\/validator.js}!\_\_classPrivateFieldSet@{\_\_classPrivateFieldSet}}
+\index{\_\_classPrivateFieldSet@{\_\_classPrivateFieldSet}!hash-\/stream-\/validator.js@{hash-\/stream-\/validator.js}}
+\doxysubsubsection{\texorpdfstring{\_\_classPrivateFieldSet}{\_\_classPrivateFieldSet}}
+{\footnotesize\ttfamily \label{esm_2src_2hash-stream-validator_8js_a9c0a3b4ec16c0e88e32e52464cf3423e} 
+var \+\_\+\+\_\+class\+Private\+Field\+Set}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ (\textcolor{keyword}{this}\ \&\&\ this.\mbox{\hyperlink{cjs_2src_2hash-stream-validator_8js_a9c0a3b4ec16c0e88e32e52464cf3423e}{\_\_classPrivateFieldSet}})\ ||\ \textcolor{keyword}{function}\ (receiver,\ \mbox{\hyperlink{asynckit_2lib_2state_8js_a7e1b0ba367facd663d59372bd204ea01}{state}},\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}},\ kind,\ \mbox{\hyperlink{uuidv1_8min_8js_a9cf09a2972472098a4c689fd988f4dfc}{f}})\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (kind\ ===\ \textcolor{stringliteral}{"{}m"{}})\ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ TypeError(\textcolor{stringliteral}{"{}Private\ method\ is\ not\ writable"{}});}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (kind\ ===\ \textcolor{stringliteral}{"{}a"{}}\ \&\&\ !\mbox{\hyperlink{uuidv1_8min_8js_a9cf09a2972472098a4c689fd988f4dfc}{f}})\ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ TypeError(\textcolor{stringliteral}{"{}Private\ accessor\ was\ defined\ without\ a\ setter"{}});}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (typeof\ \mbox{\hyperlink{asynckit_2lib_2state_8js_a7e1b0ba367facd663d59372bd204ea01}{state}}\ ===\ \textcolor{stringliteral}{"{}function"{}}\ ?\ receiver\ !==\ \mbox{\hyperlink{asynckit_2lib_2state_8js_a7e1b0ba367facd663d59372bd204ea01}{state}}\ ||\ !\mbox{\hyperlink{uuidv1_8min_8js_a9cf09a2972472098a4c689fd988f4dfc}{f}}\ :\ !\mbox{\hyperlink{asynckit_2lib_2state_8js_a7e1b0ba367facd663d59372bd204ea01}{state}}.has(receiver))\ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ TypeError(\textcolor{stringliteral}{"{}Cannot\ write\ private\ member\ to\ an\ object\ whose\ class\ did\ not\ declare\ it"{}});}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ (kind\ ===\ \textcolor{stringliteral}{"{}a"{}}\ ?\ \mbox{\hyperlink{uuidv1_8min_8js_a9cf09a2972472098a4c689fd988f4dfc}{f}}.call(receiver,\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}})\ :\ \mbox{\hyperlink{uuidv1_8min_8js_a9cf09a2972472098a4c689fd988f4dfc}{f}}\ ?\ \mbox{\hyperlink{uuidv1_8min_8js_a9cf09a2972472098a4c689fd988f4dfc}{f}}.value\ =\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}\ :\ \mbox{\hyperlink{asynckit_2lib_2state_8js_a7e1b0ba367facd663d59372bd204ea01}{state}}.set(receiver,\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}})),\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{esm_2src_2hash-stream-validator_8js_af83af6dddf4770682e4f2b273e6a9df6}\index{hash-\/stream-\/validator.js@{hash-\/stream-\/validator.js}!\_HashStreamValidator\_crc32cHash@{\_HashStreamValidator\_crc32cHash}}
+\index{\_HashStreamValidator\_crc32cHash@{\_HashStreamValidator\_crc32cHash}!hash-\/stream-\/validator.js@{hash-\/stream-\/validator.js}}
+\doxysubsubsection{\texorpdfstring{\_HashStreamValidator\_crc32cHash}{\_HashStreamValidator\_crc32cHash}}
+{\footnotesize\ttfamily \label{esm_2src_2hash-stream-validator_8js_af83af6dddf4770682e4f2b273e6a9df6} 
+\+\_\+\+Hash\+Stream\+Validator\+\_\+crc32c\+Hash = new \mbox{\hyperlink{__get_tag_8js_a7a0af2b1504d35a612ef29c54dcdef19}{Weak\+Map}}()}
+
+\Hypertarget{esm_2src_2hash-stream-validator_8js_acfdc233f8ff99c9fad9d1e135888e194}\index{hash-\/stream-\/validator.js@{hash-\/stream-\/validator.js}!\_HashStreamValidator\_md5Digest@{\_HashStreamValidator\_md5Digest}}
+\index{\_HashStreamValidator\_md5Digest@{\_HashStreamValidator\_md5Digest}!hash-\/stream-\/validator.js@{hash-\/stream-\/validator.js}}
+\doxysubsubsection{\texorpdfstring{\_HashStreamValidator\_md5Digest}{\_HashStreamValidator\_md5Digest}}
+{\footnotesize\ttfamily \label{esm_2src_2hash-stream-validator_8js_acfdc233f8ff99c9fad9d1e135888e194} 
+\+\_\+\+Hash\+Stream\+Validator\+\_\+md5\+Digest = new \mbox{\hyperlink{__get_tag_8js_a7a0af2b1504d35a612ef29c54dcdef19}{Weak\+Map}}()}
+
+\Hypertarget{esm_2src_2hash-stream-validator_8js_a63c991f550c0ee52bcc5040fe92b395e}\index{hash-\/stream-\/validator.js@{hash-\/stream-\/validator.js}!\_HashStreamValidator\_md5Hash@{\_HashStreamValidator\_md5Hash}}
+\index{\_HashStreamValidator\_md5Hash@{\_HashStreamValidator\_md5Hash}!hash-\/stream-\/validator.js@{hash-\/stream-\/validator.js}}
+\doxysubsubsection{\texorpdfstring{\_HashStreamValidator\_md5Hash}{\_HashStreamValidator\_md5Hash}}
+{\footnotesize\ttfamily \label{esm_2src_2hash-stream-validator_8js_a63c991f550c0ee52bcc5040fe92b395e} 
+\+\_\+\+Hash\+Stream\+Validator\+\_\+md5\+Hash = new \mbox{\hyperlink{__get_tag_8js_a7a0af2b1504d35a612ef29c54dcdef19}{Weak\+Map}}()}
+
+\Hypertarget{esm_2src_2hash-stream-validator_8js_ac2bdfb9ae6161ee9845b03e56a12ebd0}\index{hash-\/stream-\/validator.js@{hash-\/stream-\/validator.js}!HashStreamValidator@{HashStreamValidator}}
+\index{HashStreamValidator@{HashStreamValidator}!hash-\/stream-\/validator.js@{hash-\/stream-\/validator.js}}
+\doxysubsubsection{\texorpdfstring{HashStreamValidator}{HashStreamValidator}}
+{\footnotesize\ttfamily \label{esm_2src_2hash-stream-validator_8js_ac2bdfb9ae6161ee9845b03e56a12ebd0} 
+Hash\+Stream\+Validator}
+
+\Hypertarget{esm_2src_2hash-stream-validator_8js_a59be084da8908b7d77ff34b25cd84488}\index{hash-\/stream-\/validator.js@{hash-\/stream-\/validator.js}!import@{import}}
+\index{import@{import}!hash-\/stream-\/validator.js@{hash-\/stream-\/validator.js}}
+\doxysubsubsection{\texorpdfstring{import}{import}}
+{\footnotesize\ttfamily \label{esm_2src_2hash-stream-validator_8js_a59be084da8908b7d77ff34b25cd84488} 
+import \{ create\+Hash \} from \textquotesingle{}\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a3eca37c9aac9a17870baa116339724e3}{crypto}}\textquotesingle{}}
+

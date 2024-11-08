@@ -1,0 +1,11 @@
+<map id="Provider::get" name="Provider::get">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,100,101,125"/>
+<area shape="rect" id="Node000002" href="$class_provider.html#ab19805266b2cc9148a3e37cc02d852ac" title=" " alt="" coords="165,5,322,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="73,97,147,55,161,50,163,55,150,60,76,101"/>
+<area shape="rect" id="Node000003" href="$class_provider.html#a9fc83fc2ad25f3edf769076e73b65047" title=" " alt="" coords="173,70,315,96"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="101,102,157,94,158,99,102,108"/>
+<area shape="rect" id="Node000004" href="$class_provider.html#a078027c13fb30500a5de97b63735a998" title=" " alt="" coords="152,120,336,161"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="102,117,137,122,136,127,101,122"/>
+<area shape="rect" id="Node000005" href="$class_provider.html#a97b87aa4eba819ff520e589f59bb2254" title=" " alt="" coords="149,185,339,210"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="73,124,108,147,150,170,169,177,167,182,148,175,105,152,70,128"/>
+</map>

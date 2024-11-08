@@ -1,0 +1,842 @@
+\doxysection{backend/node\+\_\+modules/protobufjs/src/writer.js File Reference}
+\hypertarget{writer_8js}{}\label{writer_8js}\index{backend/node\_modules/protobufjs/src/writer.js@{backend/node\_modules/protobufjs/src/writer.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{writer_8js_ae87b2ec0dea8fd97337667bb3f32d8f6}{Op}} (\mbox{\hyperlink{writer_8js_a10238cf619a9073c096c996342cd720a}{fn}}, len, val)
+\item 
+function \mbox{\hyperlink{writer_8js_a7988acb4c69d8bb23c6d54b7850f3c64}{noop}} ()
+\item 
+function \mbox{\hyperlink{writer_8js_a8ae59d95a571b17311b92dce2bd51343}{Writer}} ()
+\item 
+function \mbox{\hyperlink{writer_8js_a929d4ac31d6df19bc58d9961a64557b7}{write\+Byte}} (val, \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a34083d02677ea6acceb641fa647bc25a}{buf}}, pos)
+\item 
+function \mbox{\hyperlink{writer_8js_a9987809fed7d01b7aec34ef093ae0da7}{write\+Varint32}} (val, \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a34083d02677ea6acceb641fa647bc25a}{buf}}, pos)
+\item 
+function \mbox{\hyperlink{writer_8js_a1eb391ca6a29243957f1b742e43cd4c0}{Varint\+Op}} (len, val)
+\item 
+function \mbox{\hyperlink{writer_8js_a04573ba86ff33334991a92292da9022b}{write\+Varint64}} (val, \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a34083d02677ea6acceb641fa647bc25a}{buf}}, pos)
+\item 
+function \mbox{\hyperlink{writer_8js_a2804f7890aa42530216889c7008268a9}{write\+Fixed32}} (val, \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a34083d02677ea6acceb641fa647bc25a}{buf}}, pos)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{writer_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{writer_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} = \mbox{\hyperlink{index-minimal_8js_ac77c309547dcd46642bb4de673a4b1db}{Writer}}
+\item 
+var \mbox{\hyperlink{writer_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./util/minimal"{})
+\item 
+var \mbox{\hyperlink{writer_8js_a1a9f3c1c241701a5a3905edb6acf011a}{Buffer\+Writer}}
+\item 
+var \mbox{\hyperlink{writer_8js_a21ffaff86b4f7f6e1f825da00d64f4f4}{Long\+Bits}} = util.\+Long\+Bits
+\item 
+var \mbox{\hyperlink{writer_8js_ad52fd46249fbceb330a7de97069717a0}{base64}} = util.\+base64
+\item 
+var \mbox{\hyperlink{writer_8js_ae89897a1ed7a0f204da2b78e025a7eff}{utf8}} = util.\+utf8
+\item 
+var \mbox{\hyperlink{writer_8js_a1366166f7d9d88068055585de50f1037}{create}}
+\item 
+\mbox{\hyperlink{index-minimal_8js_ac77c309547dcd46642bb4de673a4b1db}{Writer}} \mbox{\hyperlink{writer_8js_a5a2e8e7690a9ea52d1fffb586f6b4b0b}{alloc}}
+\item 
+\mbox{\hyperlink{index-minimal_8js_ac77c309547dcd46642bb4de673a4b1db}{Writer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{writer_8js_a50390df3acc3b93deedd182957358572}{\+\_\+push}}
+\item 
+\mbox{\hyperlink{writer_8js_a1eb391ca6a29243957f1b742e43cd4c0}{Varint\+Op}} \mbox{\hyperlink{writer_8js_ae9a1af751b010f09afda8c3def5dbd66}{prototype}} = \mbox{\hyperlink{combined__stream_8js_a1366166f7d9d88068055585de50f1037}{Object.\+create}}(Op.\+prototype)
+\item 
+\mbox{\hyperlink{writer_8js_a1eb391ca6a29243957f1b742e43cd4c0}{Varint\+Op}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{writer_8js_a10238cf619a9073c096c996342cd720a}{fn}} = \mbox{\hyperlink{writer_8js_a9987809fed7d01b7aec34ef093ae0da7}{write\+Varint32}}
+\item 
+\mbox{\hyperlink{index-minimal_8js_ac77c309547dcd46642bb4de673a4b1db}{Writer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{writer_8js_ae07cb9521ae5549aae54d761e6f73817}{uint32}}
+\item 
+\mbox{\hyperlink{index-minimal_8js_ac77c309547dcd46642bb4de673a4b1db}{Writer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{writer_8js_adf1f689bfd79c564bea3f0460dd213ad}{int32}}
+\item 
+\mbox{\hyperlink{index-minimal_8js_ac77c309547dcd46642bb4de673a4b1db}{Writer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{writer_8js_a051619117b385ed6b8e7ea6be9aa2c52}{sint32}}
+\item 
+\mbox{\hyperlink{index-minimal_8js_ac77c309547dcd46642bb4de673a4b1db}{Writer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{writer_8js_afb6d80f9c6c2f0cd511903f7fbd0138a}{uint64}}
+\item 
+\mbox{\hyperlink{index-minimal_8js_ac77c309547dcd46642bb4de673a4b1db}{Writer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{writer_8js_a88a9576bbd510d1fc79beaa5accdfd84}{int64}} = \mbox{\hyperlink{writer_8js_afb6d80f9c6c2f0cd511903f7fbd0138a}{Writer.\+prototype.\+uint64}}
+\item 
+\mbox{\hyperlink{index-minimal_8js_ac77c309547dcd46642bb4de673a4b1db}{Writer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{writer_8js_ab4cf892e05b81e38c4ab4f8454951472}{sint64}}
+\item 
+\mbox{\hyperlink{index-minimal_8js_ac77c309547dcd46642bb4de673a4b1db}{Writer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{writer_8js_ab2ad190a1a44c3bd18604ff010cfc574}{bool}}
+\item 
+\mbox{\hyperlink{index-minimal_8js_ac77c309547dcd46642bb4de673a4b1db}{Writer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{writer_8js_abe3a64a840c2b71ef40d969f3a171b1c}{fixed32}}
+\item 
+\mbox{\hyperlink{index-minimal_8js_ac77c309547dcd46642bb4de673a4b1db}{Writer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{writer_8js_a65c41589eb8efd597ac3868335a87625}{sfixed32}} = \mbox{\hyperlink{reader_8js_ad333739a2f0b2e564711d3ec031cafbf}{Writer.\+prototype.\+fixed32}}
+\item 
+\mbox{\hyperlink{index-minimal_8js_ac77c309547dcd46642bb4de673a4b1db}{Writer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{writer_8js_ac0537c0b288449ca5bbed75142864baa}{fixed64}}
+\item 
+\mbox{\hyperlink{index-minimal_8js_ac77c309547dcd46642bb4de673a4b1db}{Writer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{writer_8js_aabc6466f056ec2aded217909d7c991d3}{sfixed64}} = \mbox{\hyperlink{writer_8js_ac0537c0b288449ca5bbed75142864baa}{Writer.\+prototype.\+fixed64}}
+\item 
+\mbox{\hyperlink{index-minimal_8js_ac77c309547dcd46642bb4de673a4b1db}{Writer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{writer_8js_a045180fad4d62bc04b2e7ab65bd5f41a}{float}}
+\item 
+\mbox{\hyperlink{index-minimal_8js_ac77c309547dcd46642bb4de673a4b1db}{Writer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{writer_8js_a5ef18ffb0c0765bda9bd0f89ec505163}{double}}
+\item 
+var \mbox{\hyperlink{writer_8js_aeaba07b5447c3cc0f574c206fb6f252b}{write\+Bytes}}
+\item 
+\mbox{\hyperlink{index-minimal_8js_ac77c309547dcd46642bb4de673a4b1db}{Writer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{writer_8js_a024133e4b52c32759cee7e2ffafda617}{bytes}}
+\item 
+\mbox{\hyperlink{index-minimal_8js_ac77c309547dcd46642bb4de673a4b1db}{Writer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{writer_8js_a1ecab50abf40c765a566a90c862ec7fb}{string}}
+\item 
+\mbox{\hyperlink{index-minimal_8js_ac77c309547dcd46642bb4de673a4b1db}{Writer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{writer_8js_a75755666d8daa59f57e0e30337d05886}{fork}}
+\item 
+\mbox{\hyperlink{index-minimal_8js_ac77c309547dcd46642bb4de673a4b1db}{Writer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{writer_8js_a0fb18f0b5d2fe29ac002e8b4b142ba1e}{reset}}
+\item 
+\mbox{\hyperlink{index-minimal_8js_ac77c309547dcd46642bb4de673a4b1db}{Writer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{writer_8js_a4b277170dcf96f90cc659b1ee7d4ebfa}{ldelim}}
+\item 
+\mbox{\hyperlink{index-minimal_8js_ac77c309547dcd46642bb4de673a4b1db}{Writer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{writer_8js_a9412ebbd51efefb341836877084b1553}{finish}}
+\item 
+\mbox{\hyperlink{index-minimal_8js_ac77c309547dcd46642bb4de673a4b1db}{Writer}} \mbox{\hyperlink{writer_8js_ab5b1cd015e9dde580871964891c3ebec}{\+\_\+configure}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{writer_8js_a7988acb4c69d8bb23c6d54b7850f3c64}\index{writer.js@{writer.js}!noop@{noop}}
+\index{noop@{noop}!writer.js@{writer.js}}
+\doxysubsubsection{\texorpdfstring{noop()}{noop()}}
+{\footnotesize\ttfamily \label{writer_8js_a7988acb4c69d8bb23c6d54b7850f3c64} 
+function noop (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=195pt]{writer_8js_a7988acb4c69d8bb23c6d54b7850f3c64_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{writer_8js_ae87b2ec0dea8fd97337667bb3f32d8f6}\index{writer.js@{writer.js}!Op@{Op}}
+\index{Op@{Op}!writer.js@{writer.js}}
+\doxysubsubsection{\texorpdfstring{Op()}{Op()}}
+{\footnotesize\ttfamily \label{writer_8js_ae87b2ec0dea8fd97337667bb3f32d8f6} 
+function Op (\begin{DoxyParamCaption}\item[{}]{fn}{, }\item[{}]{len}{, }\item[{}]{val}{}\end{DoxyParamCaption})}
+
+Constructs a new writer operation instance. @classdesc Scheduled writer operation. @constructor 
+\begin{DoxyParams}{Parameters}
+{\em \{function(\texorpdfstring{$\ast$}{*},Uint8\+Array,number)\}} & fn Function to call \\
+\hline
+{\em \{number\}} & len Value byte length \\
+\hline
+{\em \{\texorpdfstring{$\ast$}{*}\}} & val Value to write @ignore \\
+\hline
+\end{DoxyParams}
+Function to call. @type \{function(\+Uint8\+Array, number, \texorpdfstring{$\ast$}{*})\}
+
+Value byte length. @type \{number\}
+
+Next operation. @type \{Writer.\+Op\texorpdfstring{$\vert$}{|}undefined\}
+
+Value to write. @type \{\texorpdfstring{$\ast$}{*}\}
+
+References \mbox{\hyperlink{writer_8js_a10238cf619a9073c096c996342cd720a}{fn}}, \mbox{\hyperlink{protobufjs_2dist_2protobuf_8js_adc8497f1b8fa9c7bee4a53c25c244a66}{next()}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{writer_8js_ae87b2ec0dea8fd97337667bb3f32d8f6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{writer_8js_ae87b2ec0dea8fd97337667bb3f32d8f6_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{writer_8js_a1eb391ca6a29243957f1b742e43cd4c0}\index{writer.js@{writer.js}!VarintOp@{VarintOp}}
+\index{VarintOp@{VarintOp}!writer.js@{writer.js}}
+\doxysubsubsection{\texorpdfstring{VarintOp()}{VarintOp()}}
+{\footnotesize\ttfamily \label{writer_8js_a1eb391ca6a29243957f1b742e43cd4c0} 
+function Varint\+Op (\begin{DoxyParamCaption}\item[{}]{len}{, }\item[{}]{val}{}\end{DoxyParamCaption})}
+
+Constructs a new varint writer operation instance. @classdesc Scheduled varint writer operation.
+
+@constructor 
+\begin{DoxyParams}{Parameters}
+{\em \{number\}} & len Value byte length \\
+\hline
+{\em \{number\}} & val Value to write @ignore \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{protobufjs_2dist_2protobuf_8js_adc8497f1b8fa9c7bee4a53c25c244a66}{next()}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{writer_8js_a1eb391ca6a29243957f1b742e43cd4c0_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{writer_8js_a929d4ac31d6df19bc58d9961a64557b7}\index{writer.js@{writer.js}!writeByte@{writeByte}}
+\index{writeByte@{writeByte}!writer.js@{writer.js}}
+\doxysubsubsection{\texorpdfstring{writeByte()}{writeByte()}}
+{\footnotesize\ttfamily \label{writer_8js_a929d4ac31d6df19bc58d9961a64557b7} 
+function write\+Byte (\begin{DoxyParamCaption}\item[{}]{val}{, }\item[{}]{buf}{, }\item[{}]{pos}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a34083d02677ea6acceb641fa647bc25a}{buf}}.
+
+\Hypertarget{writer_8js_a2804f7890aa42530216889c7008268a9}\index{writer.js@{writer.js}!writeFixed32@{writeFixed32}}
+\index{writeFixed32@{writeFixed32}!writer.js@{writer.js}}
+\doxysubsubsection{\texorpdfstring{writeFixed32()}{writeFixed32()}}
+{\footnotesize\ttfamily \label{writer_8js_a2804f7890aa42530216889c7008268a9} 
+function write\+Fixed32 (\begin{DoxyParamCaption}\item[{}]{val}{, }\item[{}]{buf}{, }\item[{}]{pos}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a34083d02677ea6acceb641fa647bc25a}{buf}}.
+
+\Hypertarget{writer_8js_a8ae59d95a571b17311b92dce2bd51343}\index{writer.js@{writer.js}!Writer@{Writer}}
+\index{Writer@{Writer}!writer.js@{writer.js}}
+\doxysubsubsection{\texorpdfstring{Writer()}{Writer()}}
+{\footnotesize\ttfamily \label{writer_8js_a8ae59d95a571b17311b92dce2bd51343} 
+function Writer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Constructs a new writer instance. @classdesc Wire format writer using {\ttfamily Uint8\+Array} if available, otherwise {\ttfamily Array}. @constructor Current length. @type \{number\}
+
+Operations head. @type \{Object\}
+
+Operations tail @type \{Object\}
+
+Linked forked states. @type \{Object\texorpdfstring{$\vert$}{|}null\}
+
+References \mbox{\hyperlink{lodash_2core_8js_a3ea846cb80989ebba3263f9d32ecbc07}{head}}, \mbox{\hyperlink{writer_8js_a7988acb4c69d8bb23c6d54b7850f3c64}{noop()}}, \mbox{\hyperlink{writer_8js_ae87b2ec0dea8fd97337667bb3f32d8f6}{Op()}}, and \mbox{\hyperlink{tail_8js_a9a4cfd6ab9ea8bfd1cd3e3490b8466f5}{tail()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{writer_8js_a8ae59d95a571b17311b92dce2bd51343_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{writer_8js_a9987809fed7d01b7aec34ef093ae0da7}\index{writer.js@{writer.js}!writeVarint32@{writeVarint32}}
+\index{writeVarint32@{writeVarint32}!writer.js@{writer.js}}
+\doxysubsubsection{\texorpdfstring{writeVarint32()}{writeVarint32()}}
+{\footnotesize\ttfamily \label{writer_8js_a9987809fed7d01b7aec34ef093ae0da7} 
+function write\+Varint32 (\begin{DoxyParamCaption}\item[{}]{val}{, }\item[{}]{buf}{, }\item[{}]{pos}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a34083d02677ea6acceb641fa647bc25a}{buf}}.
+
+\Hypertarget{writer_8js_a04573ba86ff33334991a92292da9022b}\index{writer.js@{writer.js}!writeVarint64@{writeVarint64}}
+\index{writeVarint64@{writeVarint64}!writer.js@{writer.js}}
+\doxysubsubsection{\texorpdfstring{writeVarint64()}{writeVarint64()}}
+{\footnotesize\ttfamily \label{writer_8js_a04573ba86ff33334991a92292da9022b} 
+function write\+Varint64 (\begin{DoxyParamCaption}\item[{}]{val}{, }\item[{}]{buf}{, }\item[{}]{pos}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a34083d02677ea6acceb641fa647bc25a}{buf}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{writer_8js_ab5b1cd015e9dde580871964891c3ebec}\index{writer.js@{writer.js}!\_configure@{\_configure}}
+\index{\_configure@{\_configure}!writer.js@{writer.js}}
+\doxysubsubsection{\texorpdfstring{\_configure}{\_configure}}
+{\footnotesize\ttfamily \label{writer_8js_ab5b1cd015e9dde580871964891c3ebec} 
+\mbox{\hyperlink{index-minimal_8js_ac77c309547dcd46642bb4de673a4b1db}{Writer}} \+\_\+configure}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(BufferWriter\_)\ \{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{writer_8js_a1a9f3c1c241701a5a3905edb6acf011a}{BufferWriter}}\ =\ BufferWriter\_;}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{writer_8js_a8ae59d95a571b17311b92dce2bd51343}{Writer}}.create\ =\ \mbox{\hyperlink{writer_8js_a1366166f7d9d88068055585de50f1037}{create}}();}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{writer_8js_a1a9f3c1c241701a5a3905edb6acf011a}{BufferWriter}}.\_configure();}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{writer_8js_a50390df3acc3b93deedd182957358572}\index{writer.js@{writer.js}!\_push@{\_push}}
+\index{\_push@{\_push}!writer.js@{writer.js}}
+\doxysubsubsection{\texorpdfstring{\_push}{\_push}}
+{\footnotesize\ttfamily \label{writer_8js_a50390df3acc3b93deedd182957358572} 
+\mbox{\hyperlink{index-minimal_8js_ac77c309547dcd46642bb4de673a4b1db}{Writer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \+\_\+push\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{__base_convert_8js_aa24e781fe0b662d38aac138432ec5e48}{push}}(\mbox{\hyperlink{writer_8js_a10238cf619a9073c096c996342cd720a}{fn}},\ len,\ val)\ \{}
+\DoxyCodeLine{\ \ \ \ this.\mbox{\hyperlink{tail_8js_a9a4cfd6ab9ea8bfd1cd3e3490b8466f5}{tail}}\ =\ this.\mbox{\hyperlink{tail_8js_a9a4cfd6ab9ea8bfd1cd3e3490b8466f5}{tail}}.next\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{writer_8js_ae87b2ec0dea8fd97337667bb3f32d8f6}{Op}}(\mbox{\hyperlink{writer_8js_a10238cf619a9073c096c996342cd720a}{fn}},\ len,\ val);}
+\DoxyCodeLine{\ \ \ \ this.len\ +=\ len;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{this};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Pushes a new operation to the queue. 
+\begin{DoxyParams}{Parameters}
+{\em \{function(\+Uint8\+Array,number,\texorpdfstring{$\ast$}{*})\}} & fn Function to call \\
+\hline
+{\em \{number\}} & len Value byte length \\
+\hline
+{\em \{number\}} & val Value to write \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Writer\} {\ttfamily this} 
+\end{DoxyReturn}
+\Hypertarget{writer_8js_a5a2e8e7690a9ea52d1fffb586f6b4b0b}\index{writer.js@{writer.js}!alloc@{alloc}}
+\index{alloc@{alloc}!writer.js@{writer.js}}
+\doxysubsubsection{\texorpdfstring{alloc}{alloc}}
+{\footnotesize\ttfamily \label{writer_8js_a5a2e8e7690a9ea52d1fffb586f6b4b0b} 
+\mbox{\hyperlink{index-minimal_8js_ac77c309547dcd46642bb4de673a4b1db}{Writer}} alloc}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{writer_8js_a5a2e8e7690a9ea52d1fffb586f6b4b0b}{alloc}}(\mbox{\hyperlink{ordered-map_8min_8js_aa4a39500e3f754a8f2e1fd50b9ae523c}{size}})\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{writer_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}}.Array(\mbox{\hyperlink{ordered-map_8min_8js_aa4a39500e3f754a8f2e1fd50b9ae523c}{size}});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Allocates a buffer of the specified size. 
+\begin{DoxyParams}{Parameters}
+{\em \{number\}} & size \doxylink{interface_buffer}{Buffer} size \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Uint8\+Array\} \doxylink{interface_buffer}{Buffer} 
+\end{DoxyReturn}
+\Hypertarget{writer_8js_ad52fd46249fbceb330a7de97069717a0}\index{writer.js@{writer.js}!base64@{base64}}
+\index{base64@{base64}!writer.js@{writer.js}}
+\doxysubsubsection{\texorpdfstring{base64}{base64}}
+{\footnotesize\ttfamily \label{writer_8js_ad52fd46249fbceb330a7de97069717a0} 
+var base64 = util.\+base64}
+
+\Hypertarget{writer_8js_ab2ad190a1a44c3bd18604ff010cfc574}\index{writer.js@{writer.js}!bool@{bool}}
+\index{bool@{bool}!writer.js@{writer.js}}
+\doxysubsubsection{\texorpdfstring{bool}{bool}}
+{\footnotesize\ttfamily \label{writer_8js_ab2ad190a1a44c3bd18604ff010cfc574} 
+\mbox{\hyperlink{index-minimal_8js_ac77c309547dcd46642bb4de673a4b1db}{Writer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} bool}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ write\_bool(\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}})\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{writer_8js_a50390df3acc3b93deedd182957358572}{\_push}}(\mbox{\hyperlink{writer_8js_a929d4ac31d6df19bc58d9961a64557b7}{writeByte}},\ 1,\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}\ ?\ 1\ :\ 0);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Writes a boolish value as a varint. 
+\begin{DoxyParams}{Parameters}
+{\em \{boolean\}} & value Value to write \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Writer\} {\ttfamily this} 
+\end{DoxyReturn}
+\Hypertarget{writer_8js_a1a9f3c1c241701a5a3905edb6acf011a}\index{writer.js@{writer.js}!BufferWriter@{BufferWriter}}
+\index{BufferWriter@{BufferWriter}!writer.js@{writer.js}}
+\doxysubsubsection{\texorpdfstring{BufferWriter}{BufferWriter}}
+{\footnotesize\ttfamily \label{writer_8js_a1a9f3c1c241701a5a3905edb6acf011a} 
+var Buffer\+Writer}
+
+\Hypertarget{writer_8js_a024133e4b52c32759cee7e2ffafda617}\index{writer.js@{writer.js}!bytes@{bytes}}
+\index{bytes@{bytes}!writer.js@{writer.js}}
+\doxysubsubsection{\texorpdfstring{bytes}{bytes}}
+{\footnotesize\ttfamily \label{writer_8js_a024133e4b52c32759cee7e2ffafda617} 
+\mbox{\hyperlink{index-minimal_8js_ac77c309547dcd46642bb4de673a4b1db}{Writer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} bytes}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ write\_bytes(\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}})\ \{}
+\DoxyCodeLine{\ \ \ \ var\ len\ =\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.length\ >>>\ 0;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (!len)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{writer_8js_a50390df3acc3b93deedd182957358572}{\_push}}(\mbox{\hyperlink{writer_8js_a929d4ac31d6df19bc58d9961a64557b7}{writeByte}},\ 1,\ 0);}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{writer_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}}.isString(\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ var\ \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a34083d02677ea6acceb641fa647bc25a}{buf}}\ =\ \mbox{\hyperlink{writer_8js_a8ae59d95a571b17311b92dce2bd51343}{Writer}}.alloc(len\ =\ \mbox{\hyperlink{writer_8js_ad52fd46249fbceb330a7de97069717a0}{base64}}.length(\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}));}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{writer_8js_ad52fd46249fbceb330a7de97069717a0}{base64}}.decode(\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}},\ \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a34083d02677ea6acceb641fa647bc25a}{buf}},\ 0);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}\ =\ \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a34083d02677ea6acceb641fa647bc25a}{buf}};}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{writer_8js_ae07cb9521ae5549aae54d761e6f73817}{uint32}}(len).\_push(\mbox{\hyperlink{writer_8js_aeaba07b5447c3cc0f574c206fb6f252b}{writeBytes}},\ len,\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Writes a sequence of bytes. 
+\begin{DoxyParams}{Parameters}
+{\em \{\+Uint8\+Array\texorpdfstring{$\vert$}{|}string\}} & value \doxylink{interface_buffer}{Buffer} or base64 encoded string to write \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Writer\} {\ttfamily this} 
+\end{DoxyReturn}
+\Hypertarget{writer_8js_a1366166f7d9d88068055585de50f1037}\index{writer.js@{writer.js}!create@{create}}
+\index{create@{create}!writer.js@{writer.js}}
+\doxysubsubsection{\texorpdfstring{create}{create}}
+{\footnotesize\ttfamily \label{writer_8js_a1366166f7d9d88068055585de50f1037} 
+\mbox{\hyperlink{index-minimal_8js_ac77c309547dcd46642bb4de673a4b1db}{Writer}} create}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{writer_8js_a1366166f7d9d88068055585de50f1037}{create}}()\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{writer_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}}.Buffer}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ?\ \textcolor{keyword}{function}\ create\_buffer\_setup()\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (\mbox{\hyperlink{writer_8js_a8ae59d95a571b17311b92dce2bd51343}{Writer}}.create\ =\ \textcolor{keyword}{function}\ create\_buffer()\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{writer_8js_a1a9f3c1c241701a5a3905edb6acf011a}{BufferWriter}}();}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \})();}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ :\ \textcolor{keyword}{function}\ \mbox{\hyperlink{reader_8js_a6009e94984575f8b9791eae37f10a66b}{create\_array}}()\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{writer_8js_a8ae59d95a571b17311b92dce2bd51343}{Writer}}();}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Creates a new writer. @function \begin{DoxyReturn}{Returns}
+\{Buffer\+Writer\texorpdfstring{$\vert$}{|}\+Writer\} \doxylink{class_a}{A} {\ttfamily \doxylink{index-minimal_8js_a62efcee012f705114b08ca18836f945b}{Buffer\+Writer}} when Buffers are supported, otherwise a {\ttfamily \doxylink{index-minimal_8js_ac77c309547dcd46642bb4de673a4b1db}{Writer}} 
+\end{DoxyReturn}
+\Hypertarget{writer_8js_a5ef18ffb0c0765bda9bd0f89ec505163}\index{writer.js@{writer.js}!double@{double}}
+\index{double@{double}!writer.js@{writer.js}}
+\doxysubsubsection{\texorpdfstring{double}{double}}
+{\footnotesize\ttfamily \label{writer_8js_a5ef18ffb0c0765bda9bd0f89ec505163} 
+\mbox{\hyperlink{index-minimal_8js_ac77c309547dcd46642bb4de673a4b1db}{Writer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} double}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ write\_double(\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}})\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{writer_8js_a50390df3acc3b93deedd182957358572}{\_push}}(\mbox{\hyperlink{writer_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}}.float.writeDoubleLE,\ 8,\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Writes a double (64 bit float). @function 
+\begin{DoxyParams}{Parameters}
+{\em \{number\}} & value Value to write \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Writer\} {\ttfamily this} 
+\end{DoxyReturn}
+\Hypertarget{writer_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\index{writer.js@{writer.js}!exports@{exports}}
+\index{exports@{exports}!writer.js@{writer.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \label{writer_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports = \mbox{\hyperlink{index-minimal_8js_ac77c309547dcd46642bb4de673a4b1db}{Writer}}}
+
+\Hypertarget{writer_8js_a9412ebbd51efefb341836877084b1553}\index{writer.js@{writer.js}!finish@{finish}}
+\index{finish@{finish}!writer.js@{writer.js}}
+\doxysubsubsection{\texorpdfstring{finish}{finish}}
+{\footnotesize\ttfamily \label{writer_8js_a9412ebbd51efefb341836877084b1553} 
+\mbox{\hyperlink{index-minimal_8js_ac77c309547dcd46642bb4de673a4b1db}{Writer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} finish}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{writer_8js_a9412ebbd51efefb341836877084b1553}{finish}}()\ \{}
+\DoxyCodeLine{\ \ \ \ var\ \mbox{\hyperlink{lodash_2core_8js_a3ea846cb80989ebba3263f9d32ecbc07}{head}}\ =\ this.head.next,\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a34083d02677ea6acceb641fa647bc25a}{buf}}\ \ =\ this.\mbox{\hyperlink{_json_web_token_error_8js_ae0d7523761ce2ef80fa2f1afff43bbf3}{constructor}}.alloc(this.len),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ pos\ \ =\ 0;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{while}\ (\mbox{\hyperlink{lodash_2core_8js_a3ea846cb80989ebba3263f9d32ecbc07}{head}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{lodash_2core_8js_a3ea846cb80989ebba3263f9d32ecbc07}{head}}.fn(\mbox{\hyperlink{lodash_2core_8js_a3ea846cb80989ebba3263f9d32ecbc07}{head}}.val,\ \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a34083d02677ea6acceb641fa647bc25a}{buf}},\ pos);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ pos\ +=\ \mbox{\hyperlink{lodash_2core_8js_a3ea846cb80989ebba3263f9d32ecbc07}{head}}.len;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{lodash_2core_8js_a3ea846cb80989ebba3263f9d32ecbc07}{head}}\ =\ \mbox{\hyperlink{lodash_2core_8js_a3ea846cb80989ebba3263f9d32ecbc07}{head}}.next;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a34083d02677ea6acceb641fa647bc25a}{buf}};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Finishes the write operation. \begin{DoxyReturn}{Returns}
+\{Uint8\+Array\} Finished buffer 
+\end{DoxyReturn}
+\Hypertarget{writer_8js_abe3a64a840c2b71ef40d969f3a171b1c}\index{writer.js@{writer.js}!fixed32@{fixed32}}
+\index{fixed32@{fixed32}!writer.js@{writer.js}}
+\doxysubsubsection{\texorpdfstring{fixed32}{fixed32}}
+{\footnotesize\ttfamily \label{writer_8js_abe3a64a840c2b71ef40d969f3a171b1c} 
+\mbox{\hyperlink{index-minimal_8js_ac77c309547dcd46642bb4de673a4b1db}{Writer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} fixed32}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ write\_fixed32(\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}})\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{writer_8js_a50390df3acc3b93deedd182957358572}{\_push}}(\mbox{\hyperlink{writer_8js_a2804f7890aa42530216889c7008268a9}{writeFixed32}},\ 4,\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}\ >>>\ 0);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Writes an unsigned 32 bit value as fixed 32 bits. 
+\begin{DoxyParams}{Parameters}
+{\em \{number\}} & value Value to write \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Writer\} {\ttfamily this} 
+\end{DoxyReturn}
+\Hypertarget{writer_8js_ac0537c0b288449ca5bbed75142864baa}\index{writer.js@{writer.js}!fixed64@{fixed64}}
+\index{fixed64@{fixed64}!writer.js@{writer.js}}
+\doxysubsubsection{\texorpdfstring{fixed64}{fixed64}}
+{\footnotesize\ttfamily \label{writer_8js_ac0537c0b288449ca5bbed75142864baa} 
+\mbox{\hyperlink{index-minimal_8js_ac77c309547dcd46642bb4de673a4b1db}{Writer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} fixed64}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ write\_fixed64(\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}})\ \{}
+\DoxyCodeLine{\ \ \ \ var\ bits\ =\ \mbox{\hyperlink{writer_8js_a21ffaff86b4f7f6e1f825da00d64f4f4}{LongBits}}.from(\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}});}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{writer_8js_a50390df3acc3b93deedd182957358572}{\_push}}(\mbox{\hyperlink{writer_8js_a2804f7890aa42530216889c7008268a9}{writeFixed32}},\ 4,\ bits.lo).\_push(\mbox{\hyperlink{writer_8js_a2804f7890aa42530216889c7008268a9}{writeFixed32}},\ 4,\ bits.hi);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Writes an unsigned 64 bit value as fixed 64 bits. 
+\begin{DoxyParams}{Parameters}
+{\em \{\+Long\texorpdfstring{$\vert$}{|}number\texorpdfstring{$\vert$}{|}string\}} & value Value to write \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Writer\} {\ttfamily this} 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \{\+Type\+Error\}} & If {\ttfamily value} is a string and no long library is present. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{writer_8js_a045180fad4d62bc04b2e7ab65bd5f41a}\index{writer.js@{writer.js}!float@{float}}
+\index{float@{float}!writer.js@{writer.js}}
+\doxysubsubsection{\texorpdfstring{float}{float}}
+{\footnotesize\ttfamily \label{writer_8js_a045180fad4d62bc04b2e7ab65bd5f41a} 
+\mbox{\hyperlink{index-minimal_8js_ac77c309547dcd46642bb4de673a4b1db}{Writer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} float}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ write\_float(\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}})\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{writer_8js_a50390df3acc3b93deedd182957358572}{\_push}}(\mbox{\hyperlink{writer_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}}.float.writeFloatLE,\ 4,\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Writes a float (32 bit). @function 
+\begin{DoxyParams}{Parameters}
+{\em \{number\}} & value Value to write \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Writer\} {\ttfamily this} 
+\end{DoxyReturn}
+\Hypertarget{writer_8js_a10238cf619a9073c096c996342cd720a}\index{writer.js@{writer.js}!fn@{fn}}
+\index{fn@{fn}!writer.js@{writer.js}}
+\doxysubsubsection{\texorpdfstring{fn}{fn}}
+{\footnotesize\ttfamily \label{writer_8js_a10238cf619a9073c096c996342cd720a} 
+\mbox{\hyperlink{writer_8js_a1eb391ca6a29243957f1b742e43cd4c0}{Varint\+Op}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} fn = \mbox{\hyperlink{writer_8js_a9987809fed7d01b7aec34ef093ae0da7}{write\+Varint32}}}
+
+\Hypertarget{writer_8js_a75755666d8daa59f57e0e30337d05886}\index{writer.js@{writer.js}!fork@{fork}}
+\index{fork@{fork}!writer.js@{writer.js}}
+\doxysubsubsection{\texorpdfstring{fork}{fork}}
+{\footnotesize\ttfamily \label{writer_8js_a75755666d8daa59f57e0e30337d05886} 
+\mbox{\hyperlink{index-minimal_8js_ac77c309547dcd46642bb4de673a4b1db}{Writer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} fork}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{writer_8js_a75755666d8daa59f57e0e30337d05886}{fork}}()\ \{}
+\DoxyCodeLine{\ \ \ \ this.states\ =\ \textcolor{keyword}{new}\ State(\textcolor{keyword}{this});}
+\DoxyCodeLine{\ \ \ \ this.\mbox{\hyperlink{lodash_2core_8js_a3ea846cb80989ebba3263f9d32ecbc07}{head}}\ =\ this.\mbox{\hyperlink{tail_8js_a9a4cfd6ab9ea8bfd1cd3e3490b8466f5}{tail}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{writer_8js_ae87b2ec0dea8fd97337667bb3f32d8f6}{Op}}(\mbox{\hyperlink{writer_8js_a7988acb4c69d8bb23c6d54b7850f3c64}{noop}},\ 0,\ 0);}
+\DoxyCodeLine{\ \ \ \ this.len\ =\ 0;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{this};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Forks this writer\textquotesingle{}s state by pushing it to a stack. Calling {\ttfamily \doxylink{}{Writer\#reset\texorpdfstring{$\vert$}{|}reset}} or {\ttfamily \doxylink{}{Writer\#ldelim\texorpdfstring{$\vert$}{|}ldelim}} resets the writer to the previous state. \begin{DoxyReturn}{Returns}
+\{Writer\} {\ttfamily this} 
+\end{DoxyReturn}
+\Hypertarget{writer_8js_adf1f689bfd79c564bea3f0460dd213ad}\index{writer.js@{writer.js}!int32@{int32}}
+\index{int32@{int32}!writer.js@{writer.js}}
+\doxysubsubsection{\texorpdfstring{int32}{int32}}
+{\footnotesize\ttfamily \label{writer_8js_adf1f689bfd79c564bea3f0460dd213ad} 
+\mbox{\hyperlink{index-minimal_8js_ac77c309547dcd46642bb4de673a4b1db}{Writer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} int32}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ write\_int32(\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}})\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}\ <\ 0}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ?\ this.\mbox{\hyperlink{writer_8js_a50390df3acc3b93deedd182957358572}{\_push}}(\mbox{\hyperlink{writer_8js_a04573ba86ff33334991a92292da9022b}{writeVarint64}},\ 10,\ \mbox{\hyperlink{writer_8js_a21ffaff86b4f7f6e1f825da00d64f4f4}{LongBits}}.fromNumber(\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}))\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a05c09a5e9d53fa7adf0a7936038c2fa3}{this}}.\mbox{\hyperlink{writer_8js_ae07cb9521ae5549aae54d761e6f73817}{uint32}}(\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Writes a signed 32 bit value as a varint. @function 
+\begin{DoxyParams}{Parameters}
+{\em \{number\}} & value Value to write \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Writer\} {\ttfamily this} 
+\end{DoxyReturn}
+\Hypertarget{writer_8js_a88a9576bbd510d1fc79beaa5accdfd84}\index{writer.js@{writer.js}!int64@{int64}}
+\index{int64@{int64}!writer.js@{writer.js}}
+\doxysubsubsection{\texorpdfstring{int64}{int64}}
+{\footnotesize\ttfamily \label{writer_8js_a88a9576bbd510d1fc79beaa5accdfd84} 
+\mbox{\hyperlink{index-minimal_8js_ac77c309547dcd46642bb4de673a4b1db}{Writer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} int64 = \mbox{\hyperlink{writer_8js_afb6d80f9c6c2f0cd511903f7fbd0138a}{Writer.\+prototype.\+uint64}}}
+
+Writes a signed 64 bit value as a varint. @function 
+\begin{DoxyParams}{Parameters}
+{\em \{\+Long\texorpdfstring{$\vert$}{|}number\texorpdfstring{$\vert$}{|}string\}} & value Value to write \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Writer\} {\ttfamily this} 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \{\+Type\+Error\}} & If {\ttfamily value} is a string and no long library is present. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{writer_8js_a4b277170dcf96f90cc659b1ee7d4ebfa}\index{writer.js@{writer.js}!ldelim@{ldelim}}
+\index{ldelim@{ldelim}!writer.js@{writer.js}}
+\doxysubsubsection{\texorpdfstring{ldelim}{ldelim}}
+{\footnotesize\ttfamily \label{writer_8js_a4b277170dcf96f90cc659b1ee7d4ebfa} 
+\mbox{\hyperlink{index-minimal_8js_ac77c309547dcd46642bb4de673a4b1db}{Writer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} ldelim}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{writer_8js_a4b277170dcf96f90cc659b1ee7d4ebfa}{ldelim}}()\ \{}
+\DoxyCodeLine{\ \ \ \ var\ \mbox{\hyperlink{lodash_2core_8js_a3ea846cb80989ebba3263f9d32ecbc07}{head}}\ =\ this.\mbox{\hyperlink{lodash_2core_8js_a3ea846cb80989ebba3263f9d32ecbc07}{head}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{tail_8js_a9a4cfd6ab9ea8bfd1cd3e3490b8466f5}{tail}}\ =\ this.\mbox{\hyperlink{tail_8js_a9a4cfd6ab9ea8bfd1cd3e3490b8466f5}{tail}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ len\ \ =\ this.len;}
+\DoxyCodeLine{\ \ \ \ this.\mbox{\hyperlink{writer_8js_a0fb18f0b5d2fe29ac002e8b4b142ba1e}{reset}}().uint32(len);}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (len)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ this.tail.next\ =\ \mbox{\hyperlink{lodash_2core_8js_a3ea846cb80989ebba3263f9d32ecbc07}{head}}.next;\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ this.tail\ =\ \mbox{\hyperlink{tail_8js_a9a4cfd6ab9ea8bfd1cd3e3490b8466f5}{tail}};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ this.len\ +=\ len;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{this};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Resets to the last state and appends the fork state\textquotesingle{}s current write length as a varint followed by its operations. \begin{DoxyReturn}{Returns}
+\{Writer\} {\ttfamily this} 
+\end{DoxyReturn}
+\Hypertarget{writer_8js_a21ffaff86b4f7f6e1f825da00d64f4f4}\index{writer.js@{writer.js}!LongBits@{LongBits}}
+\index{LongBits@{LongBits}!writer.js@{writer.js}}
+\doxysubsubsection{\texorpdfstring{LongBits}{LongBits}}
+{\footnotesize\ttfamily \label{writer_8js_a21ffaff86b4f7f6e1f825da00d64f4f4} 
+var Long\+Bits = util.\+Long\+Bits}
+
+\Hypertarget{writer_8js_ae9a1af751b010f09afda8c3def5dbd66}\index{writer.js@{writer.js}!prototype@{prototype}}
+\index{prototype@{prototype}!writer.js@{writer.js}}
+\doxysubsubsection{\texorpdfstring{prototype}{prototype}}
+{\footnotesize\ttfamily \label{writer_8js_ae9a1af751b010f09afda8c3def5dbd66} 
+\mbox{\hyperlink{writer_8js_a1eb391ca6a29243957f1b742e43cd4c0}{Varint\+Op}} prototype = \mbox{\hyperlink{combined__stream_8js_a1366166f7d9d88068055585de50f1037}{Object.\+create}}(Op.\+prototype)}
+
+\Hypertarget{writer_8js_a0fb18f0b5d2fe29ac002e8b4b142ba1e}\index{writer.js@{writer.js}!reset@{reset}}
+\index{reset@{reset}!writer.js@{writer.js}}
+\doxysubsubsection{\texorpdfstring{reset}{reset}}
+{\footnotesize\ttfamily \label{writer_8js_a0fb18f0b5d2fe29ac002e8b4b142ba1e} 
+\mbox{\hyperlink{index-minimal_8js_ac77c309547dcd46642bb4de673a4b1db}{Writer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} reset}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{writer_8js_a0fb18f0b5d2fe29ac002e8b4b142ba1e}{reset}}()\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (this.states)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ this.\mbox{\hyperlink{lodash_2core_8js_a3ea846cb80989ebba3263f9d32ecbc07}{head}}\ \ \ =\ this.states.head;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ this.\mbox{\hyperlink{tail_8js_a9a4cfd6ab9ea8bfd1cd3e3490b8466f5}{tail}}\ \ \ =\ this.states.tail;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ this.len\ \ \ \ =\ this.states.len;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ this.states\ =\ this.states.next;}
+\DoxyCodeLine{\ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ this.\mbox{\hyperlink{lodash_2core_8js_a3ea846cb80989ebba3263f9d32ecbc07}{head}}\ =\ this.\mbox{\hyperlink{tail_8js_a9a4cfd6ab9ea8bfd1cd3e3490b8466f5}{tail}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{writer_8js_ae87b2ec0dea8fd97337667bb3f32d8f6}{Op}}(\mbox{\hyperlink{writer_8js_a7988acb4c69d8bb23c6d54b7850f3c64}{noop}},\ 0,\ 0);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ this.len\ \ =\ 0;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{this};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Resets this instance to the last state. \begin{DoxyReturn}{Returns}
+\{Writer\} {\ttfamily this} 
+\end{DoxyReturn}
+\Hypertarget{writer_8js_a65c41589eb8efd597ac3868335a87625}\index{writer.js@{writer.js}!sfixed32@{sfixed32}}
+\index{sfixed32@{sfixed32}!writer.js@{writer.js}}
+\doxysubsubsection{\texorpdfstring{sfixed32}{sfixed32}}
+{\footnotesize\ttfamily \label{writer_8js_a65c41589eb8efd597ac3868335a87625} 
+\mbox{\hyperlink{index-minimal_8js_ac77c309547dcd46642bb4de673a4b1db}{Writer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} sfixed32 = \mbox{\hyperlink{reader_8js_ad333739a2f0b2e564711d3ec031cafbf}{Writer.\+prototype.\+fixed32}}}
+
+Writes a signed 32 bit value as fixed 32 bits. @function 
+\begin{DoxyParams}{Parameters}
+{\em \{number\}} & value Value to write \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Writer\} {\ttfamily this} 
+\end{DoxyReturn}
+\Hypertarget{writer_8js_aabc6466f056ec2aded217909d7c991d3}\index{writer.js@{writer.js}!sfixed64@{sfixed64}}
+\index{sfixed64@{sfixed64}!writer.js@{writer.js}}
+\doxysubsubsection{\texorpdfstring{sfixed64}{sfixed64}}
+{\footnotesize\ttfamily \label{writer_8js_aabc6466f056ec2aded217909d7c991d3} 
+\mbox{\hyperlink{index-minimal_8js_ac77c309547dcd46642bb4de673a4b1db}{Writer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} sfixed64 = \mbox{\hyperlink{writer_8js_ac0537c0b288449ca5bbed75142864baa}{Writer.\+prototype.\+fixed64}}}
+
+Writes a signed 64 bit value as fixed 64 bits. @function 
+\begin{DoxyParams}{Parameters}
+{\em \{\+Long\texorpdfstring{$\vert$}{|}number\texorpdfstring{$\vert$}{|}string\}} & value Value to write \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Writer\} {\ttfamily this} 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \{\+Type\+Error\}} & If {\ttfamily value} is a string and no long library is present. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{writer_8js_a051619117b385ed6b8e7ea6be9aa2c52}\index{writer.js@{writer.js}!sint32@{sint32}}
+\index{sint32@{sint32}!writer.js@{writer.js}}
+\doxysubsubsection{\texorpdfstring{sint32}{sint32}}
+{\footnotesize\ttfamily \label{writer_8js_a051619117b385ed6b8e7ea6be9aa2c52} 
+\mbox{\hyperlink{index-minimal_8js_ac77c309547dcd46642bb4de673a4b1db}{Writer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} sint32}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ write\_sint32(\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}})\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{writer_8js_ae07cb9521ae5549aae54d761e6f73817}{uint32}}((\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}\ <<\ 1\ \string^\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}\ >>\ 31)\ >>>\ 0);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Writes a 32 bit value as a varint, zig-\/zag encoded. 
+\begin{DoxyParams}{Parameters}
+{\em \{number\}} & value Value to write \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Writer\} {\ttfamily this} 
+\end{DoxyReturn}
+\Hypertarget{writer_8js_ab4cf892e05b81e38c4ab4f8454951472}\index{writer.js@{writer.js}!sint64@{sint64}}
+\index{sint64@{sint64}!writer.js@{writer.js}}
+\doxysubsubsection{\texorpdfstring{sint64}{sint64}}
+{\footnotesize\ttfamily \label{writer_8js_ab4cf892e05b81e38c4ab4f8454951472} 
+\mbox{\hyperlink{index-minimal_8js_ac77c309547dcd46642bb4de673a4b1db}{Writer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} sint64}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ write\_sint64(\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}})\ \{}
+\DoxyCodeLine{\ \ \ \ var\ bits\ =\ \mbox{\hyperlink{writer_8js_a21ffaff86b4f7f6e1f825da00d64f4f4}{LongBits}}.from(\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}).zzEncode();}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{writer_8js_a50390df3acc3b93deedd182957358572}{\_push}}(\mbox{\hyperlink{writer_8js_a04573ba86ff33334991a92292da9022b}{writeVarint64}},\ bits.length(),\ bits);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Writes a signed 64 bit value as a varint, zig-\/zag encoded. 
+\begin{DoxyParams}{Parameters}
+{\em \{\+Long\texorpdfstring{$\vert$}{|}number\texorpdfstring{$\vert$}{|}string\}} & value Value to write \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Writer\} {\ttfamily this} 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \{\+Type\+Error\}} & If {\ttfamily value} is a string and no long library is present. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{writer_8js_ae2475e10618961c050dcba04e8c42331}\index{writer.js@{writer.js}!strict@{strict}}
+\index{strict@{strict}!writer.js@{writer.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{writer_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+
+\Hypertarget{writer_8js_a1ecab50abf40c765a566a90c862ec7fb}\index{writer.js@{writer.js}!string@{string}}
+\index{string@{string}!writer.js@{writer.js}}
+\doxysubsubsection{\texorpdfstring{string}{string}}
+{\footnotesize\ttfamily \label{writer_8js_a1ecab50abf40c765a566a90c862ec7fb} 
+\mbox{\hyperlink{index-minimal_8js_ac77c309547dcd46642bb4de673a4b1db}{Writer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} string}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ write\_string(\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}})\ \{}
+\DoxyCodeLine{\ \ \ \ var\ len\ =\ \mbox{\hyperlink{writer_8js_ae89897a1ed7a0f204da2b78e025a7eff}{utf8}}.length(\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}});}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ len}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ?\ this.\mbox{\hyperlink{writer_8js_ae07cb9521ae5549aae54d761e6f73817}{uint32}}(len).\_push(\mbox{\hyperlink{writer_8js_ae89897a1ed7a0f204da2b78e025a7eff}{utf8}}.write,\ len,\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}})}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ :\ this.\mbox{\hyperlink{writer_8js_a50390df3acc3b93deedd182957358572}{\_push}}(\mbox{\hyperlink{writer_8js_a929d4ac31d6df19bc58d9961a64557b7}{writeByte}},\ 1,\ 0);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Writes a string. 
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & value Value to write \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Writer\} {\ttfamily this} 
+\end{DoxyReturn}
+\Hypertarget{writer_8js_ae07cb9521ae5549aae54d761e6f73817}\index{writer.js@{writer.js}!uint32@{uint32}}
+\index{uint32@{uint32}!writer.js@{writer.js}}
+\doxysubsubsection{\texorpdfstring{uint32}{uint32}}
+{\footnotesize\ttfamily \label{writer_8js_ae07cb9521ae5549aae54d761e6f73817} 
+\mbox{\hyperlink{index-minimal_8js_ac77c309547dcd46642bb4de673a4b1db}{Writer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} uint32}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ write\_uint32(\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}})\ \{}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ this.len\ +=\ (this.\mbox{\hyperlink{tail_8js_a9a4cfd6ab9ea8bfd1cd3e3490b8466f5}{tail}}\ =\ this.\mbox{\hyperlink{tail_8js_a9a4cfd6ab9ea8bfd1cd3e3490b8466f5}{tail}}.next\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{writer_8js_a1eb391ca6a29243957f1b742e43cd4c0}{VarintOp}}(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ (\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}\ =\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}\ >>>\ 0)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <\ 128\ \ \ \ \ \ \ ?\ 1}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}\ <\ 16384\ \ \ \ \ ?\ 2}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}\ <\ 2097152\ \ \ ?\ 3}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}\ <\ 268435456\ ?\ 4}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ :\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 5,}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}})).len;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{this};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Writes an unsigned 32 bit value as a varint. 
+\begin{DoxyParams}{Parameters}
+{\em \{number\}} & value Value to write \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Writer\} {\ttfamily this} 
+\end{DoxyReturn}
+\Hypertarget{writer_8js_afb6d80f9c6c2f0cd511903f7fbd0138a}\index{writer.js@{writer.js}!uint64@{uint64}}
+\index{uint64@{uint64}!writer.js@{writer.js}}
+\doxysubsubsection{\texorpdfstring{uint64}{uint64}}
+{\footnotesize\ttfamily \label{writer_8js_afb6d80f9c6c2f0cd511903f7fbd0138a} 
+\mbox{\hyperlink{index-minimal_8js_ac77c309547dcd46642bb4de673a4b1db}{Writer}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} uint64}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ write\_uint64(\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}})\ \{}
+\DoxyCodeLine{\ \ \ \ var\ bits\ =\ \mbox{\hyperlink{writer_8js_a21ffaff86b4f7f6e1f825da00d64f4f4}{LongBits}}.from(\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}});}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{writer_8js_a50390df3acc3b93deedd182957358572}{\_push}}(\mbox{\hyperlink{writer_8js_a04573ba86ff33334991a92292da9022b}{writeVarint64}},\ bits.length(),\ bits);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Writes an unsigned 64 bit value as a varint. 
+\begin{DoxyParams}{Parameters}
+{\em \{\+Long\texorpdfstring{$\vert$}{|}number\texorpdfstring{$\vert$}{|}string\}} & value Value to write \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Writer\} {\ttfamily this} 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \{\+Type\+Error\}} & If {\ttfamily value} is a string and no long library is present. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{writer_8js_ae89897a1ed7a0f204da2b78e025a7eff}\index{writer.js@{writer.js}!utf8@{utf8}}
+\index{utf8@{utf8}!writer.js@{writer.js}}
+\doxysubsubsection{\texorpdfstring{utf8}{utf8}}
+{\footnotesize\ttfamily \label{writer_8js_ae89897a1ed7a0f204da2b78e025a7eff} 
+var utf8 = util.\+utf8}
+
+\Hypertarget{writer_8js_a8f5b2e09d5197e9d28f6032dff542d44}\index{writer.js@{writer.js}!util@{util}}
+\index{util@{util}!writer.js@{writer.js}}
+\doxysubsubsection{\texorpdfstring{util}{util}}
+{\footnotesize\ttfamily \label{writer_8js_a8f5b2e09d5197e9d28f6032dff542d44} 
+var util = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./util/minimal"{})}
+
+\Hypertarget{writer_8js_aeaba07b5447c3cc0f574c206fb6f252b}\index{writer.js@{writer.js}!writeBytes@{writeBytes}}
+\index{writeBytes@{writeBytes}!writer.js@{writer.js}}
+\doxysubsubsection{\texorpdfstring{writeBytes}{writeBytes}}
+{\footnotesize\ttfamily \label{writer_8js_aeaba07b5447c3cc0f574c206fb6f252b} 
+var write\+Bytes}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \mbox{\hyperlink{writer_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}}.Array.prototype.set}
+\DoxyCodeLine{\ \ \ \ ?\ \textcolor{keyword}{function}\ writeBytes\_set(val,\ \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a34083d02677ea6acceb641fa647bc25a}{buf}},\ pos)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a34083d02677ea6acceb641fa647bc25a}{buf}}.set(val,\ pos);\ }
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ :\ \textcolor{keyword}{function}\ writeBytes\_for(val,\ \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a34083d02677ea6acceb641fa647bc25a}{buf}},\ pos)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (var\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ =\ 0;\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ <\ val.length;\ ++\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}})}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a34083d02677ea6acceb641fa647bc25a}{buf}}[pos\ +\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}]\ =\ val[\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}];}
+\DoxyCodeLine{\ \ \ \ \}}
+
+\end{DoxyCode}

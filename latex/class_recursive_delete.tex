@@ -1,0 +1,209 @@
+\doxysection{Recursive\+Delete Class Reference}
+\hypertarget{class_recursive_delete}{}\label{class_recursive_delete}\index{RecursiveDelete@{RecursiveDelete}}
+
+
+Collaboration diagram for Recursive\+Delete\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{class_recursive_delete__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_recursive_delete_ae89653e44bf7560aed73e678ef273ba4}{run}} ()
+\item 
+\mbox{\hyperlink{class_recursive_delete_a50b7b9f26987c86b697ff39fdc6f291f}{increment\+Error\+Count}} (err)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_recursive_delete_aaa1901855167c40000b8483e6ebba507}{constructor}} (\mbox{\hyperlink{firestore-namespace_8js_a6c18541a3018cee632d7e797bb983f36}{firestore}}, writer, ref, max\+Limit, min\+Limit)
+\item 
+\mbox{\hyperlink{class_recursive_delete_a32515a4a97517b5e0bcabde1a05ed1c2}{setup\+Stream}} ()
+\item 
+\mbox{\hyperlink{class_recursive_delete_ab31766f43fd5ca9de3378c107e2c237b}{get\+All\+Descendants}} (ref)
+\item 
+\mbox{\hyperlink{class_recursive_delete_acca56f75c6198ff4da6e6f3e41e7ceca}{on\+Query\+End}} ()
+\item 
+\mbox{\hyperlink{class_recursive_delete_af67130a227fe282bf40d509bca513392}{delete\+Ref}} (doc\+Ref)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class used to store state required for running a recursive delete operation. Each recursive delete call should use a new instance of the class. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_recursive_delete_aaa1901855167c40000b8483e6ebba507}\index{RecursiveDelete@{RecursiveDelete}!constructor@{constructor}}
+\index{constructor@{constructor}!RecursiveDelete@{RecursiveDelete}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_recursive_delete_aaa1901855167c40000b8483e6ebba507} 
+Recursive\+Delete\+::constructor (\begin{DoxyParamCaption}\item[{}]{firestore}{, }\item[{}]{writer}{, }\item[{}]{ref}{, }\item[{}]{max\+Limit}{, }\item[{}]{min\+Limit}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em firestore} & The \doxylink{class_firestore}{Firestore} instance to use. \\
+\hline
+{\em writer} & The \doxylink{class_bulk_writer}{Bulk\+Writer} instance to use for delete operations. \\
+\hline
+{\em ref} & The document or collection reference to recursively delete. \\
+\hline
+{\em max\+Limit} & The query limit to use when fetching descendants \\
+\hline
+{\em min\+Limit} & The number of pending \doxylink{class_bulk_writer}{Bulk\+Writer} operations at which \doxylink{class_recursive_delete}{Recursive\+Delete} starts the next limit query to fetch descendants. \\
+\hline
+\end{DoxyParams}
+The number of deletes that failed with a permanent error.
+
+Whether there are still documents to delete that still need to be fetched.
+
+Whether \doxylink{class_recursive_delete_ae89653e44bf7560aed73e678ef273ba4}{run()} has been called.
+
+\doxylink{class_a}{A} deferred promise that resolves when the recursive delete operation is completed.
+
+Whether a query stream is currently in progress. Only one stream can be run at a time.
+
+The number of pending \doxylink{class_bulk_writer}{Bulk\+Writer} operations. Used to determine when the next query can be run.
+
+References \mbox{\hyperlink{firestore-namespace_8js_a6c18541a3018cee632d7e797bb983f36}{firestore}}, and \mbox{\hyperlink{recursive-delete_8js_a6af3fa6e24c6a46faf4552f3a2ad8783}{util\+\_\+1}}.
+
+\Hypertarget{class_recursive_delete_af67130a227fe282bf40d509bca513392}\index{RecursiveDelete@{RecursiveDelete}!deleteRef@{deleteRef}}
+\index{deleteRef@{deleteRef}!RecursiveDelete@{RecursiveDelete}}
+\doxysubsubsection{\texorpdfstring{deleteRef()}{deleteRef()}}
+{\footnotesize\ttfamily \label{class_recursive_delete_af67130a227fe282bf40d509bca513392} 
+Recursive\+Delete\+::delete\+Ref (\begin{DoxyParamCaption}\item[{}]{doc\+Ref}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Deletes the provided reference and starts the next stream if conditions are met. 
+
+References \mbox{\hyperlink{class_recursive_delete_a50b7b9f26987c86b697ff39fdc6f291f}{increment\+Error\+Count()}}, \mbox{\hyperlink{class_recursive_delete_a32515a4a97517b5e0bcabde1a05ed1c2}{setup\+Stream()}}, and \mbox{\hyperlink{pledge_8js_a492a4eb4b80e71a1bb4761df42875565}{then}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_recursive_delete_af67130a227fe282bf40d509bca513392_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_recursive_delete_af67130a227fe282bf40d509bca513392_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_recursive_delete_ab31766f43fd5ca9de3378c107e2c237b}\index{RecursiveDelete@{RecursiveDelete}!getAllDescendants@{getAllDescendants}}
+\index{getAllDescendants@{getAllDescendants}!RecursiveDelete@{RecursiveDelete}}
+\doxysubsubsection{\texorpdfstring{getAllDescendants()}{getAllDescendants()}}
+{\footnotesize\ttfamily \label{class_recursive_delete_ab31766f43fd5ca9de3378c107e2c237b} 
+Recursive\+Delete\+::get\+All\+Descendants (\begin{DoxyParamCaption}\item[{}]{ref}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Retrieves all descendant documents nested under the provided reference. 
+\begin{DoxyParams}{Parameters}
+{\em ref} & The reference to fetch all descendants for. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{recursive-delete_8js_a76aa01e4e3ebe86c8dbf548e41385e61}{\+\_\+1}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}}, \mbox{\hyperlink{firestore-namespace_8js_a6c18541a3018cee632d7e797bb983f36}{firestore}}, \mbox{\hyperlink{application_8js_a3934419f0f9a2068c705a0013b77fab3}{query}}, and \mbox{\hyperlink{recursive-delete_8js_a03937010b3cb83390f6165ae658425ac}{query\+\_\+options\+\_\+1}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_recursive_delete_ab31766f43fd5ca9de3378c107e2c237b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_recursive_delete_a50b7b9f26987c86b697ff39fdc6f291f}\index{RecursiveDelete@{RecursiveDelete}!incrementErrorCount@{incrementErrorCount}}
+\index{incrementErrorCount@{incrementErrorCount}!RecursiveDelete@{RecursiveDelete}}
+\doxysubsubsection{\texorpdfstring{incrementErrorCount()}{incrementErrorCount()}}
+{\footnotesize\ttfamily \label{class_recursive_delete_a50b7b9f26987c86b697ff39fdc6f291f} 
+Recursive\+Delete\+::increment\+Error\+Count (\begin{DoxyParamCaption}\item[{}]{err}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_recursive_delete_a50b7b9f26987c86b697ff39fdc6f291f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_recursive_delete_acca56f75c6198ff4da6e6f3e41e7ceca}\index{RecursiveDelete@{RecursiveDelete}!onQueryEnd@{onQueryEnd}}
+\index{onQueryEnd@{onQueryEnd}!RecursiveDelete@{RecursiveDelete}}
+\doxysubsubsection{\texorpdfstring{onQueryEnd()}{onQueryEnd()}}
+{\footnotesize\ttfamily \label{class_recursive_delete_acca56f75c6198ff4da6e6f3e41e7ceca} 
+Recursive\+Delete\+::on\+Query\+End (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Called when all descendants of the provided reference have been streamed or if a permanent error occurs during the stream. Deletes the developer provided reference and wraps any errors that occurred. 
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{recursive-delete_8js_a76aa01e4e3ebe86c8dbf548e41385e61}{\+\_\+1}}, \mbox{\hyperlink{logger_2dist_2esm_2index_8esm5_8js_a0adf123df8967a14b5bdd9ff3bbe2d0c}{\+\_\+a}}, \mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}}, \mbox{\hyperlink{class_recursive_delete_a50b7b9f26987c86b697ff39fdc6f291f}{increment\+Error\+Count()}}, \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require()}}, \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}, and \mbox{\hyperlink{recursive-delete_8js_a6af3fa6e24c6a46faf4552f3a2ad8783}{util\+\_\+1}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_recursive_delete_acca56f75c6198ff4da6e6f3e41e7ceca_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_recursive_delete_acca56f75c6198ff4da6e6f3e41e7ceca_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_recursive_delete_ae89653e44bf7560aed73e678ef273ba4}\index{RecursiveDelete@{RecursiveDelete}!run@{run}}
+\index{run@{run}!RecursiveDelete@{RecursiveDelete}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \label{class_recursive_delete_ae89653e44bf7560aed73e678ef273ba4} 
+Recursive\+Delete\+::run (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Recursively deletes the reference provided in the class constructor. Returns a promise that resolves when all descendants have been deleted, or if an error occurs. 
+
+References \mbox{\hyperlink{recursive-delete_8js_a0a4d6a89916a48f4ba0e696e93dfc003}{assert}}, and \mbox{\hyperlink{class_recursive_delete_a32515a4a97517b5e0bcabde1a05ed1c2}{setup\+Stream()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_recursive_delete_ae89653e44bf7560aed73e678ef273ba4_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_recursive_delete_a32515a4a97517b5e0bcabde1a05ed1c2}\index{RecursiveDelete@{RecursiveDelete}!setupStream@{setupStream}}
+\index{setupStream@{setupStream}!RecursiveDelete@{RecursiveDelete}}
+\doxysubsubsection{\texorpdfstring{setupStream()}{setupStream()}}
+{\footnotesize\ttfamily \label{class_recursive_delete_a32515a4a97517b5e0bcabde1a05ed1c2} 
+Recursive\+Delete\+::setup\+Stream (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Creates a query stream and attaches event handlers to it. 
+
+References \mbox{\hyperlink{recursive-delete_8js_a76aa01e4e3ebe86c8dbf548e41385e61}{\+\_\+1}}, \mbox{\hyperlink{class_recursive_delete_af67130a227fe282bf40d509bca513392}{delete\+Ref()}}, \mbox{\hyperlink{class_recursive_delete_ab31766f43fd5ca9de3378c107e2c237b}{get\+All\+Descendants()}}, \mbox{\hyperlink{_0dprotobufjs_2eventemitter_2index_8js_ac6ebb2e1fddfd9205cff6790e2aaa3a6}{on}}, \mbox{\hyperlink{class_recursive_delete_acca56f75c6198ff4da6e6f3e41e7ceca}{on\+Query\+End()}}, \mbox{\hyperlink{class_recursive_delete_a32515a4a97517b5e0bcabde1a05ed1c2}{setup\+Stream()}}, and \mbox{\hyperlink{debug_2src_2node_8js_a822bf74d422c61e6caa292f739dc4786}{stream}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_recursive_delete_a32515a4a97517b5e0bcabde1a05ed1c2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_recursive_delete_a32515a4a97517b5e0bcabde1a05ed1c2_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/@google-\/cloud/firestore/build/src/\mbox{\hyperlink{recursive-delete_8js}{recursive-\/delete.\+js}}\end{DoxyCompactItemize}

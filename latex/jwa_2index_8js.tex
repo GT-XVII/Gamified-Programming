@@ -1,0 +1,544 @@
+\doxysection{backend/node\+\_\+modules/jwa/index.js File Reference}
+\hypertarget{jwa_2index_8js}{}\label{jwa_2index_8js}\index{backend/node\_modules/jwa/index.js@{backend/node\_modules/jwa/index.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{jwa_2index_8js_a080ddacb7eb80a5627fd2c24f840cc63}{if}} (\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a86d033c343827a1dd8e603a1f58c8c60}{supports\+Key\+Objects}})
+\item 
+function \mbox{\hyperlink{jwa_2index_8js_a9c3eecefb87bc9693cf6e0aeb035c2e0}{check\+Is\+Public\+Key}} (key)
+\item 
+function \mbox{\hyperlink{jwa_2index_8js_a085c32c0a2225244e6347429dc10ca65}{check\+Is\+Private\+Key}} (key)
+\item 
+function \mbox{\hyperlink{jwa_2index_8js_aead9708b6254f7f9e43a5d2b6a183624}{check\+Is\+Secret\+Key}} (key)
+\item 
+function \mbox{\hyperlink{jwa_2index_8js_a58d193e4c3d0c88ce783cf40c8f46d9b}{from\+Base64}} (\mbox{\hyperlink{util_2dist_2index_8cjs_8js_a9ff01f6fde00861281ba5efcec6c267d}{base64}})
+\item 
+function \mbox{\hyperlink{jwa_2index_8js_a3d9d95fbed6eb0ce2395df293b736178}{to\+Base64}} (\mbox{\hyperlink{jose_2dist_2browser_2index_8js_aca17f042e0909acd28ea29497c3011e5}{base64url}})
+\item 
+function \mbox{\hyperlink{jwa_2index_8js_a1402aa229decd4fc897df431713b9aea}{type\+Error}} (\mbox{\hyperlink{chalk_2source_2index_8js_ac61a96c3fce99db622c56916677af3b4}{template}})
+\item 
+function \mbox{\hyperlink{jwa_2index_8js_af1d9314c7af636bebe164507536029e9}{buffer\+Or\+String}} (\mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}})
+\item 
+function \mbox{\hyperlink{jwa_2index_8js_a9a946954a6ea9374d040decf53ff28fe}{normalize\+Input}} (thing)
+\item 
+function \mbox{\hyperlink{jwa_2index_8js_aec2aae6afe46fd7409448cbd2a13cb8e}{create\+Hmac\+Signer}} (bits)
+\item 
+function \mbox{\hyperlink{jwa_2index_8js_a73bafba8e5c24977003230f77fa4c609}{create\+Hmac\+Verifier}} (bits)
+\item 
+function \mbox{\hyperlink{jwa_2index_8js_a85ef30c87a598da8d0b89f876a473326}{create\+Key\+Signer}} (bits)
+\item 
+function \mbox{\hyperlink{jwa_2index_8js_a7320477e474592211bb02c09c399efda}{create\+Key\+Verifier}} (bits)
+\item 
+function \mbox{\hyperlink{jwa_2index_8js_a5530290feaae08409043c0fd96e20ddd}{create\+PSSKey\+Signer}} (bits)
+\item 
+function \mbox{\hyperlink{jwa_2index_8js_a8bfb517da82a136409bb0dd01257d27c}{create\+PSSKey\+Verifier}} (bits)
+\item 
+function \mbox{\hyperlink{jwa_2index_8js_a0fb440cc240ffb5e79ab02d337f1d5c1}{create\+ECDSASigner}} (bits)
+\item 
+function \mbox{\hyperlink{jwa_2index_8js_a1392f6b211381371172940773fb5ae46}{create\+ECDSAVerifer}} (bits)
+\item 
+function \mbox{\hyperlink{jwa_2index_8js_af1a9fa24793f27287e703c0374a7c6b5}{create\+None\+Signer}} ()
+\item 
+function \mbox{\hyperlink{jwa_2index_8js_a72ec3dd23f8b60284218e90535a128a9}{create\+None\+Verifier}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{jwa_2index_8js_a3d57c539d7b187327167eda2ae537c23}{buffer\+Equal}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}\mbox{\hyperlink{cjs_2internal_2operators_2buffer_8js_a838d54b935df11eff7928ba8da636891}{buffer}}-\/equal-\/\mbox{\hyperlink{__base_set_to_string_8js_a508c3bb5d87fbd04c173ae4961a07e2f}{constant}}-\/time\textquotesingle{})
+\item 
+var \mbox{\hyperlink{jwa_2index_8js_a6e9de2d16b02dc274208bfcc1914d7f4}{Buffer}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}safe-\/\mbox{\hyperlink{cjs_2internal_2operators_2buffer_8js_a838d54b935df11eff7928ba8da636891}{buffer}}\textquotesingle{}).Buffer
+\item 
+var \mbox{\hyperlink{jwa_2index_8js_a3eca37c9aac9a17870baa116339724e3}{crypto}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}crypto\textquotesingle{})
+\item 
+var \mbox{\hyperlink{jwa_2index_8js_a5e4377a9e325120dd548f02a9b425b89}{format\+Ecdsa}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}ecdsa-\/sig-\/formatter\textquotesingle{})
+\item 
+var \mbox{\hyperlink{jwa_2index_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}util\textquotesingle{})
+\item 
+var \mbox{\hyperlink{jwa_2index_8js_a8c660288983e4b3259351d9ad0ff20c8}{MSG\+\_\+\+INVALID\+\_\+\+ALGORITHM}} = \textquotesingle{}"{}\%s"{} \mbox{\hyperlink{express_2lib_2request_8js_a5e3afd97276cc403924d1a449a83ea84}{is}} \mbox{\hyperlink{long_2index_8js_ad7dc44f0ebdb746f4a5b0612ae9315cb}{not}} \mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}} valid \mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{algorithm.\textbackslash{}n}} Supported \mbox{\hyperlink{cipher_8js_a92f800b4fe48ec339baf687c1acf8ec6}{algorithms}} \mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{are\+:\textbackslash{}n}} "{}HS256"{}
+\item 
+var \mbox{\hyperlink{jwa_2index_8js_a964afa0d2f174f452236f1474bea2459}{HS384}}
+\item 
+var \mbox{\hyperlink{jwa_2index_8js_a5f6a510e0c5d259782da8100338e7fe1}{HS512}}
+\item 
+var \mbox{\hyperlink{jwa_2index_8js_a611146efec37f46ceb4d2b76ad2c0cd4}{RS256}}
+\item 
+var \mbox{\hyperlink{jwa_2index_8js_a866098745a27157958f30422631a3688}{RS384}}
+\item 
+var \mbox{\hyperlink{jwa_2index_8js_ae3d5792e3a0169e48491a3f409785f5f}{RS512}}
+\item 
+var \mbox{\hyperlink{jwa_2index_8js_a78b265320ce663e7676bc75ada25941c}{PS256}}
+\item 
+var \mbox{\hyperlink{jwa_2index_8js_ad6c46894f81fbee9a650d412e8b5238b}{PS384}}
+\item 
+var \mbox{\hyperlink{jwa_2index_8js_a200ca423b585834b9bd5e09ed00951b2}{PS512}}
+\item 
+var \mbox{\hyperlink{jwa_2index_8js_aa80be98f5ebe9e6bec49ec43b6ebcad4}{ES256}}
+\item 
+var \mbox{\hyperlink{jwa_2index_8js_a5848304995124d0114f41a1c1fd81613}{ES384}}
+\item 
+var none \mbox{\hyperlink{jwa_2index_8js_a53b2c9af465fd2f70f4248c0b539ee9b}{MSG\+\_\+\+INVALID\+\_\+\+SECRET}} = \textquotesingle{}secret must be \mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}} \mbox{\hyperlink{reader_8js_a5c10456fb38514f2fe2b2da9323924ac}{string}} \mbox{\hyperlink{long_2index_8js_a88083640992a53a144223e2bd602d47d}{or}} \mbox{\hyperlink{cjs_2internal_2operators_2buffer_8js_a838d54b935df11eff7928ba8da636891}{buffer}}\textquotesingle{}
+\item 
+var \mbox{\hyperlink{jwa_2index_8js_ae72807d759fb4c7252c8c59cb296fe2e}{MSG\+\_\+\+INVALID\+\_\+\+VERIFIER\+\_\+\+KEY}} = \textquotesingle{}key must be \mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}} \mbox{\hyperlink{reader_8js_a5c10456fb38514f2fe2b2da9323924ac}{string}} \mbox{\hyperlink{long_2index_8js_a88083640992a53a144223e2bd602d47d}{or}} \mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}} \mbox{\hyperlink{cjs_2internal_2operators_2buffer_8js_a838d54b935df11eff7928ba8da636891}{buffer}}\textquotesingle{}
+\item 
+var \mbox{\hyperlink{jwa_2index_8js_a42893550f8cd472ac42a97d13019cf4b}{MSG\+\_\+\+INVALID\+\_\+\+SIGNER\+\_\+\+KEY}} = \textquotesingle{}key must be \mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}} \mbox{\hyperlink{reader_8js_a5c10456fb38514f2fe2b2da9323924ac}{string}}
+\item 
+var \mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}} \mbox{\hyperlink{cjs_2internal_2operators_2buffer_8js_a838d54b935df11eff7928ba8da636891}{buffer}} \mbox{\hyperlink{long_2index_8js_a88083640992a53a144223e2bd602d47d}{or}} \mbox{\hyperlink{core_8min_8js_a46d2d1e8780c9b3b6a642760bb148e61}{an}} \mbox{\hyperlink{jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}}
+\item 
+var \mbox{\hyperlink{jwa_2index_8js_a86d033c343827a1dd8e603a1f58c8c60}{supports\+Key\+Objects}} = typeof crypto.\+create\+Public\+Key === \textquotesingle{}function\textquotesingle{}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{jwa_2index_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{jwa_2index_8js_af1d9314c7af636bebe164507536029e9}\index{index.js@{index.js}!bufferOrString@{bufferOrString}}
+\index{bufferOrString@{bufferOrString}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{bufferOrString()}{bufferOrString()}}
+{\footnotesize\ttfamily \label{jwa_2index_8js_af1d9314c7af636bebe164507536029e9} 
+function buffer\+Or\+String (\begin{DoxyParamCaption}\item[{}]{obj}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}.
+
+\Hypertarget{jwa_2index_8js_a085c32c0a2225244e6347429dc10ca65}\index{index.js@{index.js}!checkIsPrivateKey@{checkIsPrivateKey}}
+\index{checkIsPrivateKey@{checkIsPrivateKey}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{checkIsPrivateKey()}{checkIsPrivateKey()}}
+{\footnotesize\ttfamily \label{jwa_2index_8js_a085c32c0a2225244e6347429dc10ca65} 
+function check\+Is\+Private\+Key (\begin{DoxyParamCaption}\item[{}]{key}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a42893550f8cd472ac42a97d13019cf4b}{MSG\+\_\+\+INVALID\+\_\+\+SIGNER\+\_\+\+KEY}}, and \mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1402aa229decd4fc897df431713b9aea}{type\+Error()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{jwa_2index_8js_a085c32c0a2225244e6347429dc10ca65_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{jwa_2index_8js_a9c3eecefb87bc9693cf6e0aeb035c2e0}\index{index.js@{index.js}!checkIsPublicKey@{checkIsPublicKey}}
+\index{checkIsPublicKey@{checkIsPublicKey}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{checkIsPublicKey()}{checkIsPublicKey()}}
+{\footnotesize\ttfamily \label{jwa_2index_8js_a9c3eecefb87bc9693cf6e0aeb035c2e0} 
+function check\+Is\+Public\+Key (\begin{DoxyParamCaption}\item[{}]{key}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_ae72807d759fb4c7252c8c59cb296fe2e}{MSG\+\_\+\+INVALID\+\_\+\+VERIFIER\+\_\+\+KEY}}, \mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a86d033c343827a1dd8e603a1f58c8c60}{supports\+Key\+Objects}}, and \mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1402aa229decd4fc897df431713b9aea}{type\+Error()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=267pt]{jwa_2index_8js_a9c3eecefb87bc9693cf6e0aeb035c2e0_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{jwa_2index_8js_aead9708b6254f7f9e43a5d2b6a183624}\index{index.js@{index.js}!checkIsSecretKey@{checkIsSecretKey}}
+\index{checkIsSecretKey@{checkIsSecretKey}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{checkIsSecretKey()}{checkIsSecretKey()}}
+{\footnotesize\ttfamily \label{jwa_2index_8js_aead9708b6254f7f9e43a5d2b6a183624} 
+function check\+Is\+Secret\+Key (\begin{DoxyParamCaption}\item[{}]{key}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a53b2c9af465fd2f70f4248c0b539ee9b}{MSG\+\_\+\+INVALID\+\_\+\+SECRET}}, \mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a86d033c343827a1dd8e603a1f58c8c60}{supports\+Key\+Objects}}, and \mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1402aa229decd4fc897df431713b9aea}{type\+Error()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{jwa_2index_8js_aead9708b6254f7f9e43a5d2b6a183624_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{jwa_2index_8js_a0fb440cc240ffb5e79ab02d337f1d5c1}\index{index.js@{index.js}!createECDSASigner@{createECDSASigner}}
+\index{createECDSASigner@{createECDSASigner}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{createECDSASigner()}{createECDSASigner()}}
+{\footnotesize\ttfamily \label{jwa_2index_8js_a0fb440cc240ffb5e79ab02d337f1d5c1} 
+function create\+ECDSASigner (\begin{DoxyParamCaption}\item[{}]{bits}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a85ef30c87a598da8d0b89f876a473326}{create\+Key\+Signer()}}, \mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a5e4377a9e325120dd548f02a9b425b89}{format\+Ecdsa}}, \mbox{\hyperlink{cookie-signature_2index_8js_ae84eb428e06e9d621ec1c8cba1a69b63}{sign}}, and \mbox{\hyperlink{util_2dist_2index_8cjs_8js_a49c27936a5413e9cfe35de3e98a0d4d7}{signature}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{jwa_2index_8js_a0fb440cc240ffb5e79ab02d337f1d5c1_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{jwa_2index_8js_a1392f6b211381371172940773fb5ae46}\index{index.js@{index.js}!createECDSAVerifer@{createECDSAVerifer}}
+\index{createECDSAVerifer@{createECDSAVerifer}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{createECDSAVerifer()}{createECDSAVerifer()}}
+{\footnotesize\ttfamily \label{jwa_2index_8js_a1392f6b211381371172940773fb5ae46} 
+function create\+ECDSAVerifer (\begin{DoxyParamCaption}\item[{}]{bits}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a7320477e474592211bb02c09c399efda}{create\+Key\+Verifier()}}, \mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a5e4377a9e325120dd548f02a9b425b89}{format\+Ecdsa}}, \mbox{\hyperlink{lodash_2core_8js_a348c112a244660a2f280cda892658c24}{result}}, \mbox{\hyperlink{util_2dist_2index_8cjs_8js_a49c27936a5413e9cfe35de3e98a0d4d7}{signature}}, and \mbox{\hyperlink{jose_2dist_2browser_2runtime_2verify_8js_aef27cf90f7f5269ad7122f8f7f14c457}{verify}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{jwa_2index_8js_a1392f6b211381371172940773fb5ae46_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{jwa_2index_8js_aec2aae6afe46fd7409448cbd2a13cb8e}\index{index.js@{index.js}!createHmacSigner@{createHmacSigner}}
+\index{createHmacSigner@{createHmacSigner}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{createHmacSigner()}{createHmacSigner()}}
+{\footnotesize\ttfamily \label{jwa_2index_8js_aec2aae6afe46fd7409448cbd2a13cb8e} 
+function create\+Hmac\+Signer (\begin{DoxyParamCaption}\item[{}]{bits}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_aead9708b6254f7f9e43a5d2b6a183624}{check\+Is\+Secret\+Key()}}, \mbox{\hyperlink{cookie-signature_2index_8js_a3eca37c9aac9a17870baa116339724e3}{crypto}}, \mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a58d193e4c3d0c88ce783cf40c8f46d9b}{from\+Base64()}}, \mbox{\hyperlink{hmac_8js_a01268bca9c8ec878cbb5712204e3533e}{hmac}}, \mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a9a946954a6ea9374d040decf53ff28fe}{normalize\+Input()}}, and \mbox{\hyperlink{cookie-signature_2index_8js_ae84eb428e06e9d621ec1c8cba1a69b63}{sign}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{jwa_2index_8js_aec2aae6afe46fd7409448cbd2a13cb8e_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{jwa_2index_8js_a73bafba8e5c24977003230f77fa4c609}\index{index.js@{index.js}!createHmacVerifier@{createHmacVerifier}}
+\index{createHmacVerifier@{createHmacVerifier}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{createHmacVerifier()}{createHmacVerifier()}}
+{\footnotesize\ttfamily \label{jwa_2index_8js_a73bafba8e5c24977003230f77fa4c609} 
+function create\+Hmac\+Verifier (\begin{DoxyParamCaption}\item[{}]{bits}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a3d57c539d7b187327167eda2ae537c23}{buffer\+Equal}}, \mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_aec2aae6afe46fd7409448cbd2a13cb8e}{create\+Hmac\+Signer()}}, \mbox{\hyperlink{util_2dist_2index_8cjs_8js_a49c27936a5413e9cfe35de3e98a0d4d7}{signature}}, and \mbox{\hyperlink{jose_2dist_2browser_2runtime_2verify_8js_aef27cf90f7f5269ad7122f8f7f14c457}{verify}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{jwa_2index_8js_a73bafba8e5c24977003230f77fa4c609_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{jwa_2index_8js_a85ef30c87a598da8d0b89f876a473326}\index{index.js@{index.js}!createKeySigner@{createKeySigner}}
+\index{createKeySigner@{createKeySigner}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{createKeySigner()}{createKeySigner()}}
+{\footnotesize\ttfamily \label{jwa_2index_8js_a85ef30c87a598da8d0b89f876a473326} 
+function create\+Key\+Signer (\begin{DoxyParamCaption}\item[{}]{bits}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a085c32c0a2225244e6347429dc10ca65}{check\+Is\+Private\+Key()}}, \mbox{\hyperlink{cookie-signature_2index_8js_a3eca37c9aac9a17870baa116339724e3}{crypto}}, \mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a58d193e4c3d0c88ce783cf40c8f46d9b}{from\+Base64()}}, \mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a9a946954a6ea9374d040decf53ff28fe}{normalize\+Input()}}, and \mbox{\hyperlink{cookie-signature_2index_8js_ae84eb428e06e9d621ec1c8cba1a69b63}{sign}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{jwa_2index_8js_a85ef30c87a598da8d0b89f876a473326_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{jwa_2index_8js_a7320477e474592211bb02c09c399efda}\index{index.js@{index.js}!createKeyVerifier@{createKeyVerifier}}
+\index{createKeyVerifier@{createKeyVerifier}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{createKeyVerifier()}{createKeyVerifier()}}
+{\footnotesize\ttfamily \label{jwa_2index_8js_a7320477e474592211bb02c09c399efda} 
+function create\+Key\+Verifier (\begin{DoxyParamCaption}\item[{}]{bits}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a9c3eecefb87bc9693cf6e0aeb035c2e0}{check\+Is\+Public\+Key()}}, \mbox{\hyperlink{cookie-signature_2index_8js_a3eca37c9aac9a17870baa116339724e3}{crypto}}, \mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a9a946954a6ea9374d040decf53ff28fe}{normalize\+Input()}}, \mbox{\hyperlink{util_2dist_2index_8cjs_8js_a49c27936a5413e9cfe35de3e98a0d4d7}{signature}}, \mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a3d9d95fbed6eb0ce2395df293b736178}{to\+Base64()}}, \mbox{\hyperlink{index-light_8js_ae959a106a18fef09505a816f05d8088f}{verifier}}, and \mbox{\hyperlink{jose_2dist_2browser_2runtime_2verify_8js_aef27cf90f7f5269ad7122f8f7f14c457}{verify}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{jwa_2index_8js_a7320477e474592211bb02c09c399efda_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{jwa_2index_8js_af1a9fa24793f27287e703c0374a7c6b5}\index{index.js@{index.js}!createNoneSigner@{createNoneSigner}}
+\index{createNoneSigner@{createNoneSigner}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{createNoneSigner()}{createNoneSigner()}}
+{\footnotesize\ttfamily \label{jwa_2index_8js_af1a9fa24793f27287e703c0374a7c6b5} 
+function create\+None\+Signer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{cookie-signature_2index_8js_ae84eb428e06e9d621ec1c8cba1a69b63}{sign}}.
+
+\Hypertarget{jwa_2index_8js_a72ec3dd23f8b60284218e90535a128a9}\index{index.js@{index.js}!createNoneVerifier@{createNoneVerifier}}
+\index{createNoneVerifier@{createNoneVerifier}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{createNoneVerifier()}{createNoneVerifier()}}
+{\footnotesize\ttfamily \label{jwa_2index_8js_a72ec3dd23f8b60284218e90535a128a9} 
+function create\+None\+Verifier (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{util_2dist_2index_8cjs_8js_a49c27936a5413e9cfe35de3e98a0d4d7}{signature}}, and \mbox{\hyperlink{jose_2dist_2browser_2runtime_2verify_8js_aef27cf90f7f5269ad7122f8f7f14c457}{verify}}.
+
+\Hypertarget{jwa_2index_8js_a5530290feaae08409043c0fd96e20ddd}\index{index.js@{index.js}!createPSSKeySigner@{createPSSKeySigner}}
+\index{createPSSKeySigner@{createPSSKeySigner}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{createPSSKeySigner()}{createPSSKeySigner()}}
+{\footnotesize\ttfamily \label{jwa_2index_8js_a5530290feaae08409043c0fd96e20ddd} 
+function create\+PSSKey\+Signer (\begin{DoxyParamCaption}\item[{}]{bits}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a085c32c0a2225244e6347429dc10ca65}{check\+Is\+Private\+Key()}}, \mbox{\hyperlink{cookie-signature_2index_8js_a3eca37c9aac9a17870baa116339724e3}{crypto}}, \mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a58d193e4c3d0c88ce783cf40c8f46d9b}{from\+Base64()}}, \mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a9a946954a6ea9374d040decf53ff28fe}{normalize\+Input()}}, and \mbox{\hyperlink{cookie-signature_2index_8js_ae84eb428e06e9d621ec1c8cba1a69b63}{sign}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{jwa_2index_8js_a5530290feaae08409043c0fd96e20ddd_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{jwa_2index_8js_a8bfb517da82a136409bb0dd01257d27c}\index{index.js@{index.js}!createPSSKeyVerifier@{createPSSKeyVerifier}}
+\index{createPSSKeyVerifier@{createPSSKeyVerifier}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{createPSSKeyVerifier()}{createPSSKeyVerifier()}}
+{\footnotesize\ttfamily \label{jwa_2index_8js_a8bfb517da82a136409bb0dd01257d27c} 
+function create\+PSSKey\+Verifier (\begin{DoxyParamCaption}\item[{}]{bits}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a9c3eecefb87bc9693cf6e0aeb035c2e0}{check\+Is\+Public\+Key()}}, \mbox{\hyperlink{cookie-signature_2index_8js_a3eca37c9aac9a17870baa116339724e3}{crypto}}, \mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a9a946954a6ea9374d040decf53ff28fe}{normalize\+Input()}}, \mbox{\hyperlink{util_2dist_2index_8cjs_8js_a49c27936a5413e9cfe35de3e98a0d4d7}{signature}}, \mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a3d9d95fbed6eb0ce2395df293b736178}{to\+Base64()}}, \mbox{\hyperlink{index-light_8js_ae959a106a18fef09505a816f05d8088f}{verifier}}, and \mbox{\hyperlink{jose_2dist_2browser_2runtime_2verify_8js_aef27cf90f7f5269ad7122f8f7f14c457}{verify}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{jwa_2index_8js_a8bfb517da82a136409bb0dd01257d27c_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{jwa_2index_8js_a58d193e4c3d0c88ce783cf40c8f46d9b}\index{index.js@{index.js}!fromBase64@{fromBase64}}
+\index{fromBase64@{fromBase64}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{fromBase64()}{fromBase64()}}
+{\footnotesize\ttfamily \label{jwa_2index_8js_a58d193e4c3d0c88ce783cf40c8f46d9b} 
+function from\+Base64 (\begin{DoxyParamCaption}\item[{}]{base64}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_ad52fd46249fbceb330a7de97069717a0}{base64}}, and \mbox{\hyperlink{ordered-map_8min_8js_a103df269476e78897c9c4c6cb8f4eb06}{g}}.
+
+\Hypertarget{jwa_2index_8js_a080ddacb7eb80a5627fd2c24f840cc63}\index{index.js@{index.js}!if@{if}}
+\index{if@{if}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{if()}{if()}}
+{\footnotesize\ttfamily \label{jwa_2index_8js_a080ddacb7eb80a5627fd2c24f840cc63} 
+if (\begin{DoxyParamCaption}\item[{}]{supports\+Key\+Objects}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a53b2c9af465fd2f70f4248c0b539ee9b}{MSG\+\_\+\+INVALID\+\_\+\+SECRET}}, and \mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_ae72807d759fb4c7252c8c59cb296fe2e}{MSG\+\_\+\+INVALID\+\_\+\+VERIFIER\+\_\+\+KEY}}.
+
+\Hypertarget{jwa_2index_8js_a9a946954a6ea9374d040decf53ff28fe}\index{index.js@{index.js}!normalizeInput@{normalizeInput}}
+\index{normalizeInput@{normalizeInput}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{normalizeInput()}{normalizeInput()}}
+{\footnotesize\ttfamily \label{jwa_2index_8js_a9a946954a6ea9374d040decf53ff28fe} 
+function normalize\+Input (\begin{DoxyParamCaption}\item[{}]{thing}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_af1d9314c7af636bebe164507536029e9}{buffer\+Or\+String()}}, and \mbox{\hyperlink{json-bigint_2lib_2stringify_8js_aec316efdeb7b2e5358b7d50869858da1}{JSON}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{jwa_2index_8js_a9a946954a6ea9374d040decf53ff28fe_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{jwa_2index_8js_a3d9d95fbed6eb0ce2395df293b736178}\index{index.js@{index.js}!toBase64@{toBase64}}
+\index{toBase64@{toBase64}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{toBase64()}{toBase64()}}
+{\footnotesize\ttfamily \label{jwa_2index_8js_a3d9d95fbed6eb0ce2395df293b736178} 
+function to\+Base64 (\begin{DoxyParamCaption}\item[{}]{base64url}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{fp_8js_a6e69a5af94d7d53886e51f89fb3bd6b4}{\+\_\+}}, \mbox{\hyperlink{jose_2dist_2browser_2index_8js_aca17f042e0909acd28ea29497c3011e5}{base64url}}, \mbox{\hyperlink{ordered-map_8min_8js_a103df269476e78897c9c4c6cb8f4eb06}{g}}, and \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}.
+
+\Hypertarget{jwa_2index_8js_a1402aa229decd4fc897df431713b9aea}\index{index.js@{index.js}!typeError@{typeError}}
+\index{typeError@{typeError}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{typeError()}{typeError()}}
+{\footnotesize\ttfamily \label{jwa_2index_8js_a1402aa229decd4fc897df431713b9aea} 
+function type\+Error (\begin{DoxyParamCaption}\item[{}]{template}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_aeda6958b2fc8494c5a17f91600065eb9}{args}}, and \mbox{\hyperlink{_0dfirebase_2database-compat_2dist_2index_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{jwa_2index_8js_a6e9de2d16b02dc274208bfcc1914d7f4}\index{index.js@{index.js}!Buffer@{Buffer}}
+\index{Buffer@{Buffer}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{Buffer}{Buffer}}
+{\footnotesize\ttfamily \label{jwa_2index_8js_a6e9de2d16b02dc274208bfcc1914d7f4} 
+var Buffer = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}safe-\/\mbox{\hyperlink{cjs_2internal_2operators_2buffer_8js_a838d54b935df11eff7928ba8da636891}{buffer}}\textquotesingle{}).Buffer}
+
+\Hypertarget{jwa_2index_8js_a3d57c539d7b187327167eda2ae537c23}\index{index.js@{index.js}!bufferEqual@{bufferEqual}}
+\index{bufferEqual@{bufferEqual}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{bufferEqual}{bufferEqual}}
+{\footnotesize\ttfamily \label{jwa_2index_8js_a3d57c539d7b187327167eda2ae537c23} 
+var buffer\+Equal = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}\mbox{\hyperlink{cjs_2internal_2operators_2buffer_8js_a838d54b935df11eff7928ba8da636891}{buffer}}-\/equal-\/\mbox{\hyperlink{__base_set_to_string_8js_a508c3bb5d87fbd04c173ae4961a07e2f}{constant}}-\/time\textquotesingle{})}
+
+\Hypertarget{jwa_2index_8js_a3eca37c9aac9a17870baa116339724e3}\index{index.js@{index.js}!crypto@{crypto}}
+\index{crypto@{crypto}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{crypto}{crypto}}
+{\footnotesize\ttfamily \label{jwa_2index_8js_a3eca37c9aac9a17870baa116339724e3} 
+var crypto = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}crypto\textquotesingle{})}
+
+\Hypertarget{jwa_2index_8js_aa80be98f5ebe9e6bec49ec43b6ebcad4}\index{index.js@{index.js}!ES256@{ES256}}
+\index{ES256@{ES256}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{ES256}{ES256}}
+{\footnotesize\ttfamily \label{jwa_2index_8js_aa80be98f5ebe9e6bec49ec43b6ebcad4} 
+var ES256}
+
+\Hypertarget{jwa_2index_8js_a5848304995124d0114f41a1c1fd81613}\index{index.js@{index.js}!ES384@{ES384}}
+\index{ES384@{ES384}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{ES384}{ES384}}
+{\footnotesize\ttfamily \label{jwa_2index_8js_a5848304995124d0114f41a1c1fd81613} 
+var ES384}
+
+\Hypertarget{jwa_2index_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\index{index.js@{index.js}!exports@{exports}}
+\index{exports@{exports}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \label{jwa_2index_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{jsonwebtoken_2node__modules_2jws_2lib_2sign-stream_8js_a7f7e6110a03aee89f69811a30332c33f}{jwa}}(algorithm)\ \{}
+\DoxyCodeLine{\ \ var\ signerFactories\ =\ \{}
+\DoxyCodeLine{\ \ \ \ hs:\ \mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_aec2aae6afe46fd7409448cbd2a13cb8e}{createHmacSigner}},}
+\DoxyCodeLine{\ \ \ \ rs:\ \mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a85ef30c87a598da8d0b89f876a473326}{createKeySigner}},}
+\DoxyCodeLine{\ \ \ \ ps:\ \mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a5530290feaae08409043c0fd96e20ddd}{createPSSKeySigner}},}
+\DoxyCodeLine{\ \ \ \ es:\ \mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a0fb440cc240ffb5e79ab02d337f1d5c1}{createECDSASigner}},}
+\DoxyCodeLine{\ \ \ \ none:\ \mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_af1a9fa24793f27287e703c0374a7c6b5}{createNoneSigner}},}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\ \ var\ verifierFactories\ =\ \{}
+\DoxyCodeLine{\ \ \ \ hs:\ \mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a73bafba8e5c24977003230f77fa4c609}{createHmacVerifier}},}
+\DoxyCodeLine{\ \ \ \ rs:\ \mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a7320477e474592211bb02c09c399efda}{createKeyVerifier}},}
+\DoxyCodeLine{\ \ \ \ ps:\ \mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a8bfb517da82a136409bb0dd01257d27c}{createPSSKeyVerifier}},}
+\DoxyCodeLine{\ \ \ \ es:\ \mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1392f6b211381371172940773fb5ae46}{createECDSAVerifer}},}
+\DoxyCodeLine{\ \ \ \ none:\ \mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a72ec3dd23f8b60284218e90535a128a9}{createNoneVerifier}},}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{layer_8js_aee433120cbb9ab29eb32064146e11ef5}{match}}\ =\ algorithm.match(/\string^(RS|PS|ES|HS)(256|384|512)\mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}|\string^(none)\mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}/);}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{layer_8js_aee433120cbb9ab29eb32064146e11ef5}{match}})}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{throw}\ \mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1402aa229decd4fc897df431713b9aea}{typeError}}(\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a8c660288983e4b3259351d9ad0ff20c8}{MSG\_INVALID\_ALGORITHM}},\ algorithm);}
+\DoxyCodeLine{\ \ var\ algo\ =\ (\mbox{\hyperlink{layer_8js_aee433120cbb9ab29eb32064146e11ef5}{match}}[1]\ ||\ \mbox{\hyperlink{layer_8js_aee433120cbb9ab29eb32064146e11ef5}{match}}[3]).toLowerCase();}
+\DoxyCodeLine{\ \ var\ bits\ =\ \mbox{\hyperlink{layer_8js_aee433120cbb9ab29eb32064146e11ef5}{match}}[2];}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{cookie-signature_2index_8js_ae84eb428e06e9d621ec1c8cba1a69b63}{sign}}:\ signerFactories[algo](bits),}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{jose_2dist_2browser_2runtime_2verify_8js_aef27cf90f7f5269ad7122f8f7f14c457}{verify}}:\ verifierFactories[algo](bits),}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{jwa_2index_8js_a5e4377a9e325120dd548f02a9b425b89}\index{index.js@{index.js}!formatEcdsa@{formatEcdsa}}
+\index{formatEcdsa@{formatEcdsa}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{formatEcdsa}{formatEcdsa}}
+{\footnotesize\ttfamily \label{jwa_2index_8js_a5e4377a9e325120dd548f02a9b425b89} 
+var format\+Ecdsa = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}ecdsa-\/sig-\/formatter\textquotesingle{})}
+
+\Hypertarget{jwa_2index_8js_a964afa0d2f174f452236f1474bea2459}\index{index.js@{index.js}!HS384@{HS384}}
+\index{HS384@{HS384}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{HS384}{HS384}}
+{\footnotesize\ttfamily \label{jwa_2index_8js_a964afa0d2f174f452236f1474bea2459} 
+var HS384}
+
+\Hypertarget{jwa_2index_8js_a5f6a510e0c5d259782da8100338e7fe1}\index{index.js@{index.js}!HS512@{HS512}}
+\index{HS512@{HS512}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{HS512}{HS512}}
+{\footnotesize\ttfamily \label{jwa_2index_8js_a5f6a510e0c5d259782da8100338e7fe1} 
+var HS512}
+
+\Hypertarget{jwa_2index_8js_a8c660288983e4b3259351d9ad0ff20c8}\index{index.js@{index.js}!MSG\_INVALID\_ALGORITHM@{MSG\_INVALID\_ALGORITHM}}
+\index{MSG\_INVALID\_ALGORITHM@{MSG\_INVALID\_ALGORITHM}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{MSG\_INVALID\_ALGORITHM}{MSG\_INVALID\_ALGORITHM}}
+{\footnotesize\ttfamily \label{jwa_2index_8js_a8c660288983e4b3259351d9ad0ff20c8} 
+var MSG\+\_\+\+INVALID\+\_\+\+ALGORITHM = \textquotesingle{}"{}\%s"{} \mbox{\hyperlink{express_2lib_2request_8js_a5e3afd97276cc403924d1a449a83ea84}{is}} \mbox{\hyperlink{long_2index_8js_ad7dc44f0ebdb746f4a5b0612ae9315cb}{not}} \mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}} valid \mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{algorithm.\textbackslash{}n}} Supported \mbox{\hyperlink{cipher_8js_a92f800b4fe48ec339baf687c1acf8ec6}{algorithms}} \mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{are\+:\textbackslash{}n}} "{}HS256"{}}
+
+\Hypertarget{jwa_2index_8js_a53b2c9af465fd2f70f4248c0b539ee9b}\index{index.js@{index.js}!MSG\_INVALID\_SECRET@{MSG\_INVALID\_SECRET}}
+\index{MSG\_INVALID\_SECRET@{MSG\_INVALID\_SECRET}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{MSG\_INVALID\_SECRET}{MSG\_INVALID\_SECRET}}
+{\footnotesize\ttfamily \label{jwa_2index_8js_a53b2c9af465fd2f70f4248c0b539ee9b} 
+var none MSG\+\_\+\+INVALID\+\_\+\+SECRET = \textquotesingle{}secret must be \mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}} \mbox{\hyperlink{reader_8js_a5c10456fb38514f2fe2b2da9323924ac}{string}} \mbox{\hyperlink{long_2index_8js_a88083640992a53a144223e2bd602d47d}{or}} \mbox{\hyperlink{cjs_2internal_2operators_2buffer_8js_a838d54b935df11eff7928ba8da636891}{buffer}}\textquotesingle{}}
+
+\Hypertarget{jwa_2index_8js_a42893550f8cd472ac42a97d13019cf4b}\index{index.js@{index.js}!MSG\_INVALID\_SIGNER\_KEY@{MSG\_INVALID\_SIGNER\_KEY}}
+\index{MSG\_INVALID\_SIGNER\_KEY@{MSG\_INVALID\_SIGNER\_KEY}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{MSG\_INVALID\_SIGNER\_KEY}{MSG\_INVALID\_SIGNER\_KEY}}
+{\footnotesize\ttfamily \label{jwa_2index_8js_a42893550f8cd472ac42a97d13019cf4b} 
+var MSG\+\_\+\+INVALID\+\_\+\+SIGNER\+\_\+\+KEY = \textquotesingle{}key must be \mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}} \mbox{\hyperlink{reader_8js_a5c10456fb38514f2fe2b2da9323924ac}{string}}}
+
+\Hypertarget{jwa_2index_8js_ae72807d759fb4c7252c8c59cb296fe2e}\index{index.js@{index.js}!MSG\_INVALID\_VERIFIER\_KEY@{MSG\_INVALID\_VERIFIER\_KEY}}
+\index{MSG\_INVALID\_VERIFIER\_KEY@{MSG\_INVALID\_VERIFIER\_KEY}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{MSG\_INVALID\_VERIFIER\_KEY}{MSG\_INVALID\_VERIFIER\_KEY}}
+{\footnotesize\ttfamily \label{jwa_2index_8js_ae72807d759fb4c7252c8c59cb296fe2e} 
+var MSG\+\_\+\+INVALID\+\_\+\+VERIFIER\+\_\+\+KEY = \textquotesingle{}key must be \mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}} \mbox{\hyperlink{reader_8js_a5c10456fb38514f2fe2b2da9323924ac}{string}} \mbox{\hyperlink{long_2index_8js_a88083640992a53a144223e2bd602d47d}{or}} \mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}} \mbox{\hyperlink{cjs_2internal_2operators_2buffer_8js_a838d54b935df11eff7928ba8da636891}{buffer}}\textquotesingle{}}
+
+\Hypertarget{jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}\index{index.js@{index.js}!object@{object}}
+\index{object@{object}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{object}{object}}
+{\footnotesize\ttfamily \label{jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa} 
+var \mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}} \mbox{\hyperlink{cjs_2internal_2operators_2buffer_8js_a838d54b935df11eff7928ba8da636891}{buffer}} \mbox{\hyperlink{long_2index_8js_a88083640992a53a144223e2bd602d47d}{or}} \mbox{\hyperlink{core_8min_8js_a46d2d1e8780c9b3b6a642760bb148e61}{an}} object}
+
+\Hypertarget{jwa_2index_8js_a78b265320ce663e7676bc75ada25941c}\index{index.js@{index.js}!PS256@{PS256}}
+\index{PS256@{PS256}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{PS256}{PS256}}
+{\footnotesize\ttfamily \label{jwa_2index_8js_a78b265320ce663e7676bc75ada25941c} 
+var PS256}
+
+\Hypertarget{jwa_2index_8js_ad6c46894f81fbee9a650d412e8b5238b}\index{index.js@{index.js}!PS384@{PS384}}
+\index{PS384@{PS384}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{PS384}{PS384}}
+{\footnotesize\ttfamily \label{jwa_2index_8js_ad6c46894f81fbee9a650d412e8b5238b} 
+var PS384}
+
+\Hypertarget{jwa_2index_8js_a200ca423b585834b9bd5e09ed00951b2}\index{index.js@{index.js}!PS512@{PS512}}
+\index{PS512@{PS512}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{PS512}{PS512}}
+{\footnotesize\ttfamily \label{jwa_2index_8js_a200ca423b585834b9bd5e09ed00951b2} 
+var PS512}
+
+\Hypertarget{jwa_2index_8js_a611146efec37f46ceb4d2b76ad2c0cd4}\index{index.js@{index.js}!RS256@{RS256}}
+\index{RS256@{RS256}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{RS256}{RS256}}
+{\footnotesize\ttfamily \label{jwa_2index_8js_a611146efec37f46ceb4d2b76ad2c0cd4} 
+var RS256}
+
+\Hypertarget{jwa_2index_8js_a866098745a27157958f30422631a3688}\index{index.js@{index.js}!RS384@{RS384}}
+\index{RS384@{RS384}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{RS384}{RS384}}
+{\footnotesize\ttfamily \label{jwa_2index_8js_a866098745a27157958f30422631a3688} 
+var RS384}
+
+\Hypertarget{jwa_2index_8js_ae3d5792e3a0169e48491a3f409785f5f}\index{index.js@{index.js}!RS512@{RS512}}
+\index{RS512@{RS512}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{RS512}{RS512}}
+{\footnotesize\ttfamily \label{jwa_2index_8js_ae3d5792e3a0169e48491a3f409785f5f} 
+var RS512}
+
+\Hypertarget{jwa_2index_8js_a86d033c343827a1dd8e603a1f58c8c60}\index{index.js@{index.js}!supportsKeyObjects@{supportsKeyObjects}}
+\index{supportsKeyObjects@{supportsKeyObjects}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{supportsKeyObjects}{supportsKeyObjects}}
+{\footnotesize\ttfamily \label{jwa_2index_8js_a86d033c343827a1dd8e603a1f58c8c60} 
+var supports\+Key\+Objects = typeof crypto.\+create\+Public\+Key === \textquotesingle{}function\textquotesingle{}}
+
+\Hypertarget{jwa_2index_8js_a8f5b2e09d5197e9d28f6032dff542d44}\index{index.js@{index.js}!util@{util}}
+\index{util@{util}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{util}{util}}
+{\footnotesize\ttfamily \label{jwa_2index_8js_a8f5b2e09d5197e9d28f6032dff542d44} 
+var util = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}util\textquotesingle{})}
+

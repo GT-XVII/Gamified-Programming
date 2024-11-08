@@ -1,0 +1,7 @@
+<map id="WriteBatch::commit" name="WriteBatch::commit">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,142,56"/>
+<area shape="rect" id="Node000002" href="$class_write_batch.html#ae9369fe2baa6f6efe1e5cf219e83e825" title=" " alt="" coords="193,5,336,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="142,32,177,27,177,32,143,37"/>
+<area shape="rect" id="Node000003" href="$class_write_batch.html#a09439069d7c6c0b124b2b6bf95a4f65f" title=" " alt="" coords="190,55,339,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="143,49,174,54,174,59,142,55"/>
+</map>

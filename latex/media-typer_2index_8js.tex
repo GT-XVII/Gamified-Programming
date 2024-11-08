@@ -1,0 +1,35 @@
+\doxysection{backend/node\+\_\+modules/media-\/typer/index.js File Reference}
+\hypertarget{media-typer_2index_8js}{}\label{media-typer_2index_8js}\index{backend/node\_modules/media-\/typer/index.js@{backend/node\_modules/media-\/typer/index.js}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{media-typer_2index_8js_a0bd2867eb88fbbf4a792913f60f60a3f}{param\+Reg\+Exp}} = /
+\item 
+var \mbox{\hyperlink{media-typer_2index_8js_af729e29247fd52636fe6cec69c8ba8e8}{text\+Reg\+Exp}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{media-typer_2index_8js_a0bd2867eb88fbbf4a792913f60f60a3f}\index{index.js@{index.js}!paramRegExp@{paramRegExp}}
+\index{paramRegExp@{paramRegExp}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{paramRegExp}{paramRegExp}}
+{\footnotesize\ttfamily \label{media-typer_2index_8js_a0bd2867eb88fbbf4a792913f60f60a3f} 
+var param\+Reg\+Exp = /}
+
+media-\/typer Copyright(c) 2014 Douglas Christopher Wilson MIT Licensed Reg\+Exp to match \texorpdfstring{$\ast$}{*}( "{};"{} parameter ) in RFC 2616 sec 3.\+7
+
+parameter = token "{}="{} ( token \texorpdfstring{$\vert$}{|} quoted-\/string ) token = 1\texorpdfstring{$\ast$}{*}$<$any CHAR except CTLs or separators$>$ separators = "{}("{} \texorpdfstring{$\vert$}{|} "{})"{} \texorpdfstring{$\vert$}{|} "{}$<$"{} \texorpdfstring{$\vert$}{|} "{}$>$"{} \texorpdfstring{$\vert$}{|} "{}@"{} \texorpdfstring{$\vert$}{|} "{},"{} \texorpdfstring{$\vert$}{|} "{};"{} \texorpdfstring{$\vert$}{|} "{}\+:"{} \texorpdfstring{$\vert$}{|} "{}\textbackslash{}"{} \texorpdfstring{$\vert$}{|} $<$"{}\texorpdfstring{$>$}{>} \texorpdfstring{$\vert$}{|} "{}/"{} \texorpdfstring{$\vert$}{|} "{}\mbox{[}"{} \texorpdfstring{$\vert$}{|} "{}\mbox{]}"{} \texorpdfstring{$\vert$}{|} "{}?"{} \texorpdfstring{$\vert$}{|} "{}="{} \texorpdfstring{$\vert$}{|} "{}\{"{} \texorpdfstring{$\vert$}{|} "{}\}"{} \texorpdfstring{$\vert$}{|} SP \texorpdfstring{$\vert$}{|} HT quoted-\/string = ( \texorpdfstring{$<$}{<}"{}$>$ $<$em$>$(qdtext \texorpdfstring{$\vert$}{|} quoted-\/pair ) $<$"{}\texorpdfstring{$>$}{>} ) qdtext = \texorpdfstring{$<$}{<}any TEXT except \texorpdfstring{$<$}{<}"{}$>$$>$ quoted-\/pair   = "{}"{} CHAR CHAR = \texorpdfstring{$<$}{<}any US-\/\+ASCII character (octets 0 -\/ 127)\texorpdfstring{$>$}{>} TEXT = \texorpdfstring{$<$}{<}any OCTET except CTLs, but including LWS\texorpdfstring{$>$}{>} LWS = \mbox{[}CRLF\mbox{]} 1( SP \texorpdfstring{$\vert$}{|} HT ) CRLF = CR LF CR = \texorpdfstring{$<$}{<}US-\/\+ASCII CR, carriage return (13)\texorpdfstring{$>$}{>} LF = \texorpdfstring{$<$}{<}US-\/\+ASCII LF, linefeed (10)\texorpdfstring{$>$}{>} SP = \texorpdfstring{$<$}{<}US-\/\+ASCII SP, space (32)\texorpdfstring{$>$}{>} SHT = \texorpdfstring{$<$}{<}US-\/\+ASCII HT, horizontal-\/tab (9)\texorpdfstring{$>$}{>} CTL = \texorpdfstring{$<$}{<}any US-\/\+ASCII control character (octets 0 -\/ 31) and DEL (127)\texorpdfstring{$>$}{>} OCTET = \texorpdfstring{$<$}{<}any 8-\/bit sequence of data\texorpdfstring{$>$}{>} \Hypertarget{media-typer_2index_8js_af729e29247fd52636fe6cec69c8ba8e8}\index{index.js@{index.js}!textRegExp@{textRegExp}}
+\index{textRegExp@{textRegExp}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{textRegExp}{textRegExp}}
+{\footnotesize\ttfamily \label{media-typer_2index_8js_af729e29247fd52636fe6cec69c8ba8e8} 
+var text\+Reg\+Exp}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ /\string^[\(\backslash\)u0020-\/\(\backslash\)u007e\(\backslash\)u0080-\/\(\backslash\)u00ff]+\mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}/}
+\DoxyCodeLine{var\ tokenRegExp\ =\ /\string^[!\#\mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}\%\&\textcolor{stringliteral}{'\(\backslash\)*\(\backslash\)+\(\backslash\)-\/\(\backslash\).0-\/9A-\/Z\(\backslash\)\string^\_`a-\/z\(\backslash\)|\string~]+\$/}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{var\ qescRegExp\ =\ /\(\backslash\)\(\backslash\)([\(\backslash\)u0000-\/\(\backslash\)u007f])/g}}
+
+\end{DoxyCode}

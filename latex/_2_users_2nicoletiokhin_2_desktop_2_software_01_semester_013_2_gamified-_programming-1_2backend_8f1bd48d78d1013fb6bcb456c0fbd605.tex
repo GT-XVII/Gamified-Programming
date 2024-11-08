@@ -1,0 +1,27 @@
+\doxysection{/\+Users/nicoletiokhin/\+Desktop/\+Software Semester 3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/lodash/rest.\+js}
+\hypertarget{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_8f1bd48d78d1013fb6bcb456c0fbd605}{}\label{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_8f1bd48d78d1013fb6bcb456c0fbd605}Creates a function that invokes {\ttfamily func} with the {\ttfamily this} binding of the created function and arguments from {\ttfamily start} and beyond provided as an array.
+
+{\bfseries{Note\+:}} This method is based on the \href{https://mdn.io/rest_parameters}{\texttt{ rest parameter}}.
+
+@member\+Of \+\_\+ \begin{DoxySince}{Since}
+4.\+0.\+0
+\end{DoxySince}
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Function\}} & func The function to apply a rest parameter to. \\
+\hline
+{\em \{number\}} & \mbox{[}start=func.\+length-\/1\mbox{]} The start position of the rest parameter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Function\} Returns the new function.
+\end{DoxyReturn}
+var say = \+\_\+.\+rest(function(what, names) \{ return what + \textquotesingle{} \textquotesingle{} + \+\_\+.\+initial(names).join(\textquotesingle{}, \textquotesingle{}) + (\+\_\+.\+size(names) \texorpdfstring{$>$}{>} 1 ? \textquotesingle{}, \& \textquotesingle{} \+: \textquotesingle{}\textquotesingle{}) + \+\_\+.\+last(names); \});
+
+say(\textquotesingle{}hello\textquotesingle{}, \textquotesingle{}fred\textquotesingle{}, \textquotesingle{}barney\textquotesingle{}, \textquotesingle{}pebbles\textquotesingle{}); // =\texorpdfstring{$>$}{>} \textquotesingle{}hello fred, barney, \& pebbles\textquotesingle{}
+
+
+\begin{DoxyCodeInclude}{0}
+
+\end{DoxyCodeInclude}
+ Semester \doxylink{rest_8js}{3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/lodash/rest.\+js} 

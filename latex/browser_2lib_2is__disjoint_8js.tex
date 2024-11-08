@@ -1,0 +1,41 @@
+\doxysection{backend/node\+\_\+modules/jose/dist/browser/lib/is\+\_\+disjoint.js File Reference}
+\hypertarget{browser_2lib_2is__disjoint_8js}{}\label{browser_2lib_2is__disjoint_8js}\index{backend/node\_modules/jose/dist/browser/lib/is\_disjoint.js@{backend/node\_modules/jose/dist/browser/lib/is\_disjoint.js}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{browser_2lib_2is__disjoint_8js_a646b4adabaa50b9fb47d9857d36b095d}{is\+Disjoint}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{browser_2lib_2is__disjoint_8js_a646b4adabaa50b9fb47d9857d36b095d}\index{is\_disjoint.js@{is\_disjoint.js}!isDisjoint@{isDisjoint}}
+\index{isDisjoint@{isDisjoint}!is\_disjoint.js@{is\_disjoint.js}}
+\doxysubsubsection{\texorpdfstring{isDisjoint}{isDisjoint}}
+{\footnotesize\ttfamily \label{browser_2lib_2is__disjoint_8js_a646b4adabaa50b9fb47d9857d36b095d} 
+export \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2index_8js_a48acd3189d40b017f47c93b673b8b8f6}{default}} is\+Disjoint}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ (...headers)\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{const}\ sources\ =\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7f2cb2fcdd79bf72cefd29b7bc2d10fa}{headers}}.filter(Boolean);}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (sources.length\ ===\ 0\ ||\ sources.length\ ===\ 1)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ let\ acc;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ header\ \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}\ sources)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ parameters\ =\ Object.keys(header);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!acc\ ||\ acc.size\ ===\ 0)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ acc\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{__create_set_8js_ab9f46b8207185d305162498bea0d1c26}{Set}}(parameters);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ parameter\ \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}\ parameters)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (acc.has(parameter))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ acc.add(parameter);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}

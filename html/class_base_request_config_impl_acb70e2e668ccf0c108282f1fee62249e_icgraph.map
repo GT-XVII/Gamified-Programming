@@ -1,0 +1,15 @@
+<map id="BaseRequestConfigImpl::data" name="BaseRequestConfigImpl::data">
+<area shape="rect" id="Node000001" title=" " alt="" coords="554,47,718,87"/>
+<area shape="rect" id="Node000002" href="$class_base_request_config_impl.html#a0dc27c4c61b406ee6c53d85fad01b536" title=" " alt="" coords="219,5,382,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="539,49,506,44,382,32,383,27,507,39,539,44"/>
+<area shape="rect" id="Node000003" href="$class_base_request_config_impl.html#a4b69942f1d05199193ec8513bda6ca44" title=" " alt="" coords="219,80,382,121"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="539,90,507,95,383,103,382,97,506,90,539,85"/>
+<area shape="rect" id="Node000006" href="$api-request_8js.html#aeee40be8d4e8fd6789efa5f3b299490f" title=" " alt="" coords="430,54,506,80"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="539,70,507,70,507,64,539,64"/>
+<area shape="rect" id="Node000004" href="$class_http2_request_config_impl.html#a7091575ad433e16016d7e8172aea049b" title=" " alt="" coords="5,47,171,87"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="203,88,171,83,172,77,204,83"/>
+<area shape="rect" id="Node000005" href="$class_http_request_config_impl.html#aadc63f410e905fb52f3bb33e52c4df16" title=" " alt="" coords="9,112,167,153"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="204,118,168,123,167,118,203,112"/>
+<area shape="poly" id="edge6_Node000006_Node000002" title=" " alt="" coords="414,56,382,48,383,43,415,51"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="415,80,383,87,382,81,414,75"/>
+</map>

@@ -1,0 +1,623 @@
+\doxysection{backend/node\+\_\+modules/protobufjs/src/reader.js File Reference}
+\hypertarget{reader_8js}{}\label{reader_8js}\index{backend/node\_modules/protobufjs/src/reader.js@{backend/node\_modules/protobufjs/src/reader.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{reader_8js_a7b5fb5ca493fcf1d14f44b185f865d5b}{index\+Out\+Of\+Range}} (reader, write\+Length)
+\item 
+function \mbox{\hyperlink{reader_8js_aa3ae88b8082542844357ef8ec36aa541}{Reader}} (\mbox{\hyperlink{cjs_2internal_2operators_2buffer_8js_a838d54b935df11eff7928ba8da636891}{buffer}})
+\item 
+function \mbox{\hyperlink{reader_8js_a84f6b33d5e46fdda054cbfd36489285c}{read\+Long\+Varint}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{reader_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{reader_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a1b804b43a9af8fa8940b69c1217fb5ff}{Reader}}
+\item 
+var \mbox{\hyperlink{reader_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./util/minimal"{})
+\item 
+var \mbox{\hyperlink{reader_8js_a0efed13cd65190e89e587c6b39a1048d}{Buffer\+Reader}}
+\item 
+var \mbox{\hyperlink{reader_8js_a21ffaff86b4f7f6e1f825da00d64f4f4}{Long\+Bits}} = util.\+Long\+Bits
+\item 
+var \mbox{\hyperlink{reader_8js_ae89897a1ed7a0f204da2b78e025a7eff}{utf8}} = util.\+utf8
+\item 
+var \mbox{\hyperlink{reader_8js_a6009e94984575f8b9791eae37f10a66b}{create\+\_\+array}}
+\item 
+var \mbox{\hyperlink{reader_8js_ad124cbe7b08cd87816545f694fca55a8}{create}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a1b804b43a9af8fa8940b69c1217fb5ff}{Reader}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{reader_8js_a309ae7ab6d331e2555ced65708365ab6}{\+\_\+slice}} = util.\+Array.\+prototype.\+subarray \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} \mbox{\hyperlink{express_2lib_2router_2index_8js_acab0c09ac73e7a3c85a21fa773e9b8b0}{util.\+Array.\+prototype.\+slice}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a1b804b43a9af8fa8940b69c1217fb5ff}{Reader}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{reader_8js_aca0812733caefcf6391e98a97b4b7e95}{uint32}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a1b804b43a9af8fa8940b69c1217fb5ff}{Reader}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{reader_8js_aeedad0a065d28d27719a978889047a61}{int32}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a1b804b43a9af8fa8940b69c1217fb5ff}{Reader}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{reader_8js_afbd8edb241de60c0ee603d015e15636f}{sint32}}
+\end{DoxyCompactItemize}
+\begin{Indent}\textbf{ Reader\#sfixed64}\par
+{\em Reads zig-\/zag encoded fixed 64 bits.
+
+@function \begin{DoxyReturn}{Returns}
+\{\doxylink{interface_long}{Long}\} Value read 
+\end{DoxyReturn}
+}\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a1b804b43a9af8fa8940b69c1217fb5ff}{Reader}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{reader_8js_a3633c098690b7647f3a7f2d7fd52ff3c}{float}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a1b804b43a9af8fa8940b69c1217fb5ff}{Reader}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{reader_8js_a706b599f517c4b1c6e8d96ab93bdf0c5}{double}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a1b804b43a9af8fa8940b69c1217fb5ff}{Reader}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{reader_8js_a75ba8faf86daa3f0b2e4c1b1449fd332}{bytes}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a1b804b43a9af8fa8940b69c1217fb5ff}{Reader}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{reader_8js_a5c10456fb38514f2fe2b2da9323924ac}{string}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a1b804b43a9af8fa8940b69c1217fb5ff}{Reader}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{reader_8js_afbd9017f4ea67c707719a7f4eab8d224}{skip}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a1b804b43a9af8fa8940b69c1217fb5ff}{Reader}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{reader_8js_a9f90b0ff09407a8f406f41ffe5a78cfd}{skip\+Type}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a1b804b43a9af8fa8940b69c1217fb5ff}{Reader}} \mbox{\hyperlink{reader_8js_ad08e78ff8104a57a96ad4ba59b97e69f}{\+\_\+configure}}
+\end{DoxyCompactItemize}
+\end{Indent}
+\doxysubsubsection*{Reader\#sint64}
+Reads a zig-\/zag encoded varint as a signed 64 bit value.
+
+@function \begin{DoxyReturn}{Returns}
+\{\doxylink{interface_long}{Long}\} Value read 
+\end{DoxyReturn}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a1b804b43a9af8fa8940b69c1217fb5ff}{Reader}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{reader_8js_ad60c2f39674fd4c5aca2b1e58b4ca3b5}{bool}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a1b804b43a9af8fa8940b69c1217fb5ff}{Reader}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{reader_8js_ad333739a2f0b2e564711d3ec031cafbf}{fixed32}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a1b804b43a9af8fa8940b69c1217fb5ff}{Reader}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{reader_8js_a3f146a6b33139590c4e52cc8c0b2d3b6}{sfixed32}}
+\item 
+function \mbox{\hyperlink{reader_8js_abf7e21ad3ded181f055c6914be332f7a}{read\+Fixed32\+\_\+end}} (\mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a34083d02677ea6acceb641fa647bc25a}{buf}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2eb0ae9087079e95bc67981f6c61288b}{end}})
+\item 
+function \mbox{\hyperlink{reader_8js_a6dee9074310e2c6510bbb57e61f858a9}{read\+Fixed64}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{reader_8js_a7b5fb5ca493fcf1d14f44b185f865d5b}\index{reader.js@{reader.js}!indexOutOfRange@{indexOutOfRange}}
+\index{indexOutOfRange@{indexOutOfRange}!reader.js@{reader.js}}
+\doxysubsubsection{\texorpdfstring{indexOutOfRange()}{indexOutOfRange()}}
+{\footnotesize\ttfamily \label{reader_8js_a7b5fb5ca493fcf1d14f44b185f865d5b} 
+function index\+Out\+Of\+Range (\begin{DoxyParamCaption}\item[{}]{reader}{, }\item[{}]{write\+Length}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{reader_8js_a7b5fb5ca493fcf1d14f44b185f865d5b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{reader_8js_aa3ae88b8082542844357ef8ec36aa541}\index{reader.js@{reader.js}!Reader@{Reader}}
+\index{Reader@{Reader}!reader.js@{reader.js}}
+\doxysubsubsection{\texorpdfstring{Reader()}{Reader()}}
+{\footnotesize\ttfamily \label{reader_8js_aa3ae88b8082542844357ef8ec36aa541} 
+function Reader (\begin{DoxyParamCaption}\item[{}]{buffer}{}\end{DoxyParamCaption})}
+
+Constructs a new reader instance using the specified buffer. @classdesc Wire format reader using {\ttfamily Uint8\+Array} if available, otherwise {\ttfamily Array}. @constructor 
+\begin{DoxyParams}{Parameters}
+{\em \{\+Uint8\+Array\}} & buffer \doxylink{interface_buffer}{Buffer} to read from \\
+\hline
+\end{DoxyParams}
+Read buffer. @type \{Uint8\+Array\}
+
+Read buffer position. @type \{number\}
+
+Read buffer length. @type \{number\}
+
+References \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a34083d02677ea6acceb641fa647bc25a}{buf}}, and \mbox{\hyperlink{cjs_2internal_2operators_2buffer_8js_a838d54b935df11eff7928ba8da636891}{buffer}}.
+
+\Hypertarget{reader_8js_abf7e21ad3ded181f055c6914be332f7a}\index{reader.js@{reader.js}!readFixed32\_end@{readFixed32\_end}}
+\index{readFixed32\_end@{readFixed32\_end}!reader.js@{reader.js}}
+\doxysubsubsection{\texorpdfstring{readFixed32\_end()}{readFixed32\_end()}}
+{\footnotesize\ttfamily \label{reader_8js_abf7e21ad3ded181f055c6914be332f7a} 
+function read\+Fixed32\+\_\+end (\begin{DoxyParamCaption}\item[{}]{buf}{, }\item[{}]{end}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a34083d02677ea6acceb641fa647bc25a}{buf}}, and \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2eb0ae9087079e95bc67981f6c61288b}{end}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{reader_8js_abf7e21ad3ded181f055c6914be332f7a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{reader_8js_a6dee9074310e2c6510bbb57e61f858a9}\index{reader.js@{reader.js}!readFixed64@{readFixed64}}
+\index{readFixed64@{readFixed64}!reader.js@{reader.js}}
+\doxysubsubsection{\texorpdfstring{readFixed64()}{readFixed64()}}
+{\footnotesize\ttfamily \label{reader_8js_a6dee9074310e2c6510bbb57e61f858a9} 
+function read\+Fixed64 (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a34083d02677ea6acceb641fa647bc25a}{buf}}, \mbox{\hyperlink{reader_8js_a7b5fb5ca493fcf1d14f44b185f865d5b}{index\+Out\+Of\+Range()}}, \mbox{\hyperlink{reader_8js_a21ffaff86b4f7f6e1f825da00d64f4f4}{Long\+Bits}}, and \mbox{\hyperlink{reader_8js_abf7e21ad3ded181f055c6914be332f7a}{read\+Fixed32\+\_\+end()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=279pt]{reader_8js_a6dee9074310e2c6510bbb57e61f858a9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=233pt]{reader_8js_a6dee9074310e2c6510bbb57e61f858a9_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{reader_8js_a84f6b33d5e46fdda054cbfd36489285c}\index{reader.js@{reader.js}!readLongVarint@{readLongVarint}}
+\index{readLongVarint@{readLongVarint}!reader.js@{reader.js}}
+\doxysubsubsection{\texorpdfstring{readLongVarint()}{readLongVarint()}}
+{\footnotesize\ttfamily \label{reader_8js_a84f6b33d5e46fdda054cbfd36489285c} 
+function read\+Long\+Varint (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a34083d02677ea6acceb641fa647bc25a}{buf}}, \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}, \mbox{\hyperlink{reader_8js_a7b5fb5ca493fcf1d14f44b185f865d5b}{index\+Out\+Of\+Range()}}, and \mbox{\hyperlink{reader_8js_a21ffaff86b4f7f6e1f825da00d64f4f4}{Long\+Bits}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=291pt]{reader_8js_a84f6b33d5e46fdda054cbfd36489285c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{reader_8js_a84f6b33d5e46fdda054cbfd36489285c_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{reader_8js_ad08e78ff8104a57a96ad4ba59b97e69f}\index{reader.js@{reader.js}!\_configure@{\_configure}}
+\index{\_configure@{\_configure}!reader.js@{reader.js}}
+\doxysubsubsection{\texorpdfstring{\_configure}{\_configure}}
+{\footnotesize\ttfamily \label{reader_8js_ad08e78ff8104a57a96ad4ba59b97e69f} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a1b804b43a9af8fa8940b69c1217fb5ff}{Reader}} \+\_\+configure}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(BufferReader\_)\ \{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{reader_8js_a0efed13cd65190e89e587c6b39a1048d}{BufferReader}}\ =\ BufferReader\_;}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a1b804b43a9af8fa8940b69c1217fb5ff}{Reader}}.create\ =\ \mbox{\hyperlink{reader_8js_ad124cbe7b08cd87816545f694fca55a8}{create}}();}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{reader_8js_a0efed13cd65190e89e587c6b39a1048d}{BufferReader}}.\_configure();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ var\ \mbox{\hyperlink{writer_8js_a10238cf619a9073c096c996342cd720a}{fn}}\ =\ \mbox{\hyperlink{reader_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}}.Long\ ?\ \textcolor{stringliteral}{"{}toLong"{}}\ :\ \ \textcolor{stringliteral}{"{}toNumber"{}};}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{reader_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}}.merge(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a1b804b43a9af8fa8940b69c1217fb5ff}{Reader}}.prototype,\ \{}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ int64:\ function\ read\_int64()\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ return\ readLongVarint.call(this)[fn](false);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \},}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{writer_8js_afb6d80f9c6c2f0cd511903f7fbd0138a}{uint64}}:\ \textcolor{keyword}{function}\ read\_uint64()\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{reader_8js_a84f6b33d5e46fdda054cbfd36489285c}{readLongVarint}}.call(\textcolor{keyword}{this})[\mbox{\hyperlink{writer_8js_a10238cf619a9073c096c996342cd720a}{fn}}](\textcolor{keyword}{true});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \},}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{writer_8js_ab4cf892e05b81e38c4ab4f8454951472}{sint64}}:\ \textcolor{keyword}{function}\ read\_sint64()\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{reader_8js_a84f6b33d5e46fdda054cbfd36489285c}{readLongVarint}}.call(\textcolor{keyword}{this}).zzDecode()[\mbox{\hyperlink{writer_8js_a10238cf619a9073c096c996342cd720a}{fn}}](\textcolor{keyword}{false});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \},}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{writer_8js_ac0537c0b288449ca5bbed75142864baa}{fixed64}}:\ \textcolor{keyword}{function}\ read\_fixed64()\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{reader_8js_a6dee9074310e2c6510bbb57e61f858a9}{readFixed64}}.call(\textcolor{keyword}{this})[\mbox{\hyperlink{writer_8js_a10238cf619a9073c096c996342cd720a}{fn}}](\textcolor{keyword}{true});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \},}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{writer_8js_aabc6466f056ec2aded217909d7c991d3}{sfixed64}}:\ \textcolor{keyword}{function}\ read\_sfixed64()\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{reader_8js_a6dee9074310e2c6510bbb57e61f858a9}{readFixed64}}.call(\textcolor{keyword}{this})[\mbox{\hyperlink{writer_8js_a10238cf619a9073c096c996342cd720a}{fn}}](\textcolor{keyword}{false});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{reader_8js_a309ae7ab6d331e2555ced65708365ab6}\index{reader.js@{reader.js}!\_slice@{\_slice}}
+\index{\_slice@{\_slice}!reader.js@{reader.js}}
+\doxysubsubsection{\texorpdfstring{\_slice}{\_slice}}
+{\footnotesize\ttfamily \label{reader_8js_a309ae7ab6d331e2555ced65708365ab6} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a1b804b43a9af8fa8940b69c1217fb5ff}{Reader}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \+\_\+slice = util.\+Array.\+prototype.\+subarray \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} \mbox{\hyperlink{express_2lib_2router_2index_8js_acab0c09ac73e7a3c85a21fa773e9b8b0}{util.\+Array.\+prototype.\+slice}}}
+
+\Hypertarget{reader_8js_ad60c2f39674fd4c5aca2b1e58b4ca3b5}\index{reader.js@{reader.js}!bool@{bool}}
+\index{bool@{bool}!reader.js@{reader.js}}
+\doxysubsubsection{\texorpdfstring{bool}{bool}}
+{\footnotesize\ttfamily \label{reader_8js_ad60c2f39674fd4c5aca2b1e58b4ca3b5} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a1b804b43a9af8fa8940b69c1217fb5ff}{Reader}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} bool}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ read\_bool()\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{reader_8js_aca0812733caefcf6391e98a97b4b7e95}{uint32}}()\ !==\ 0;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Reads a varint as a boolean. \begin{DoxyReturn}{Returns}
+\{boolean\} Value read 
+\end{DoxyReturn}
+\Hypertarget{reader_8js_a0efed13cd65190e89e587c6b39a1048d}\index{reader.js@{reader.js}!BufferReader@{BufferReader}}
+\index{BufferReader@{BufferReader}!reader.js@{reader.js}}
+\doxysubsubsection{\texorpdfstring{BufferReader}{BufferReader}}
+{\footnotesize\ttfamily \label{reader_8js_a0efed13cd65190e89e587c6b39a1048d} 
+var Buffer\+Reader}
+
+\Hypertarget{reader_8js_a75ba8faf86daa3f0b2e4c1b1449fd332}\index{reader.js@{reader.js}!bytes@{bytes}}
+\index{bytes@{bytes}!reader.js@{reader.js}}
+\doxysubsubsection{\texorpdfstring{bytes}{bytes}}
+{\footnotesize\ttfamily \label{reader_8js_a75ba8faf86daa3f0b2e4c1b1449fd332} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a1b804b43a9af8fa8940b69c1217fb5ff}{Reader}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} bytes}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ read\_bytes()\ \{}
+\DoxyCodeLine{\ \ \ \ var\ \mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a7fdcf4c82c9946bf2b0b80829a7ab230}{length}}\ =\ this.\mbox{\hyperlink{reader_8js_aca0812733caefcf6391e98a97b4b7e95}{uint32}}(),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{cipher_8js_a1960adf42cbf8c24067b45da3a2f0aaf}{start}}\ \ =\ this.pos,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2eb0ae9087079e95bc67981f6c61288b}{end}}\ \ \ \ =\ this.pos\ +\ \mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a7fdcf4c82c9946bf2b0b80829a7ab230}{length}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2eb0ae9087079e95bc67981f6c61288b}{end}}\ >\ this.len)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \mbox{\hyperlink{reader_8js_a7b5fb5ca493fcf1d14f44b185f865d5b}{indexOutOfRange}}(\textcolor{keyword}{this},\ \mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a7fdcf4c82c9946bf2b0b80829a7ab230}{length}});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ this.pos\ +=\ \mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a7fdcf4c82c9946bf2b0b80829a7ab230}{length}};}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{src_2util_2minimal_8js_a325c4e317c38d8497130ebce7670be2f}{Array}}.isArray(\textcolor{keyword}{this}.buf))\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a34083d02677ea6acceb641fa647bc25a}{buf}}.slice(\mbox{\hyperlink{cipher_8js_a1960adf42cbf8c24067b45da3a2f0aaf}{start}},\ end);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{cipher_8js_a1960adf42cbf8c24067b45da3a2f0aaf}{start}}\ ===\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2eb0ae9087079e95bc67981f6c61288b}{end}})\ \{\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ var\ nativeBuffer\ =\ \mbox{\hyperlink{reader_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}}.Buffer;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ nativeBuffer}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ ?\ nativeBuffer.alloc(0)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ :\ \textcolor{keyword}{new}\ this.\mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a34083d02677ea6acceb641fa647bc25a}{buf}}.constructor(0);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{reader_8js_a309ae7ab6d331e2555ced65708365ab6}{\_slice}}.call(this.\mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a34083d02677ea6acceb641fa647bc25a}{buf}},\ \mbox{\hyperlink{cipher_8js_a1960adf42cbf8c24067b45da3a2f0aaf}{start}},\ end);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Reads a sequence of bytes preceeded by its length as a varint. \begin{DoxyReturn}{Returns}
+\{Uint8\+Array\} Value read 
+\end{DoxyReturn}
+\Hypertarget{reader_8js_ad124cbe7b08cd87816545f694fca55a8}\index{reader.js@{reader.js}!create@{create}}
+\index{create@{create}!reader.js@{reader.js}}
+\doxysubsubsection{\texorpdfstring{create}{create}}
+{\footnotesize\ttfamily \label{reader_8js_ad124cbe7b08cd87816545f694fca55a8} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a1b804b43a9af8fa8940b69c1217fb5ff}{Reader}} create}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{reader_8js_ad124cbe7b08cd87816545f694fca55a8}{create}}()\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{reader_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}}.Buffer}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ?\ \textcolor{keyword}{function}\ create\_buffer\_setup(\mbox{\hyperlink{cjs_2internal_2operators_2buffer_8js_a838d54b935df11eff7928ba8da636891}{buffer}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a1b804b43a9af8fa8940b69c1217fb5ff}{Reader}}.create\ =\ \textcolor{keyword}{function}\ create\_buffer(\mbox{\hyperlink{cjs_2internal_2operators_2buffer_8js_a838d54b935df11eff7928ba8da636891}{buffer}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{reader_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}}.Buffer.isBuffer(\mbox{\hyperlink{cjs_2internal_2operators_2buffer_8js_a838d54b935df11eff7928ba8da636891}{buffer}})}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ?\ \textcolor{keyword}{new}\ \mbox{\hyperlink{reader_8js_a0efed13cd65190e89e587c6b39a1048d}{BufferReader}}(\mbox{\hyperlink{cjs_2internal_2operators_2buffer_8js_a838d54b935df11eff7928ba8da636891}{buffer}})}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{reader_8js_a6009e94984575f8b9791eae37f10a66b}{create\_array}}(\mbox{\hyperlink{cjs_2internal_2operators_2buffer_8js_a838d54b935df11eff7928ba8da636891}{buffer}});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \})(\mbox{\hyperlink{cjs_2internal_2operators_2buffer_8js_a838d54b935df11eff7928ba8da636891}{buffer}});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{reader_8js_a6009e94984575f8b9791eae37f10a66b}{create\_array}};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Creates a new reader using the specified buffer. @function 
+\begin{DoxyParams}{Parameters}
+{\em \{\+Uint8\+Array\texorpdfstring{$\vert$}{|}\+Buffer\}} & buffer \doxylink{interface_buffer}{Buffer} to read from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Reader\texorpdfstring{$\vert$}{|}\+Buffer\+Reader\} \doxylink{class_a}{A} {\ttfamily \doxylink{index-minimal_8js_a1dcc96f87f7ba8de1ef0814e18eac967}{Buffer\+Reader}} if {\ttfamily buffer} is a \doxylink{interface_buffer}{Buffer}, otherwise a {\ttfamily \doxylink{database-compat_2dist_2index_8standalone_8js_a1b804b43a9af8fa8940b69c1217fb5ff}{Reader}} 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \{\+Error\}} & If {\ttfamily buffer} is not a valid buffer \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{reader_8js_a6009e94984575f8b9791eae37f10a66b}\index{reader.js@{reader.js}!create\_array@{create\_array}}
+\index{create\_array@{create\_array}!reader.js@{reader.js}}
+\doxysubsubsection{\texorpdfstring{create\_array}{create\_array}}
+{\footnotesize\ttfamily \label{reader_8js_a6009e94984575f8b9791eae37f10a66b} 
+var create\+\_\+array}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ typeof\ Uint8Array\ !==\ \textcolor{stringliteral}{"{}undefined"{}}}
+\DoxyCodeLine{\ \ \ \ ?\ \textcolor{keyword}{function}\ create\_typed\_array(\mbox{\hyperlink{cjs_2internal_2operators_2buffer_8js_a838d54b935df11eff7928ba8da636891}{buffer}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{cjs_2internal_2operators_2buffer_8js_a838d54b935df11eff7928ba8da636891}{buffer}}\ instanceof\ Uint8Array\ ||\ \mbox{\hyperlink{src_2util_2minimal_8js_a325c4e317c38d8497130ebce7670be2f}{Array}}.isArray(\mbox{\hyperlink{cjs_2internal_2operators_2buffer_8js_a838d54b935df11eff7928ba8da636891}{buffer}}))}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a1b804b43a9af8fa8940b69c1217fb5ff}{Reader}}(\mbox{\hyperlink{cjs_2internal_2operators_2buffer_8js_a838d54b935df11eff7928ba8da636891}{buffer}});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ Error(\textcolor{stringliteral}{"{}illegal\ buffer"{}});}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ :\ \textcolor{keyword}{function}\ \mbox{\hyperlink{reader_8js_a6009e94984575f8b9791eae37f10a66b}{create\_array}}(\mbox{\hyperlink{cjs_2internal_2operators_2buffer_8js_a838d54b935df11eff7928ba8da636891}{buffer}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{src_2util_2minimal_8js_a325c4e317c38d8497130ebce7670be2f}{Array}}.isArray(\mbox{\hyperlink{cjs_2internal_2operators_2buffer_8js_a838d54b935df11eff7928ba8da636891}{buffer}}))}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a1b804b43a9af8fa8940b69c1217fb5ff}{Reader}}(\mbox{\hyperlink{cjs_2internal_2operators_2buffer_8js_a838d54b935df11eff7928ba8da636891}{buffer}});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ Error(\textcolor{stringliteral}{"{}illegal\ buffer"{}});}
+\DoxyCodeLine{\ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{reader_8js_a706b599f517c4b1c6e8d96ab93bdf0c5}\index{reader.js@{reader.js}!double@{double}}
+\index{double@{double}!reader.js@{reader.js}}
+\doxysubsubsection{\texorpdfstring{double}{double}}
+{\footnotesize\ttfamily \label{reader_8js_a706b599f517c4b1c6e8d96ab93bdf0c5} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a1b804b43a9af8fa8940b69c1217fb5ff}{Reader}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} double}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ read\_double()\ \{}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (this.pos\ +\ 8\ >\ this.len)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \mbox{\hyperlink{reader_8js_a7b5fb5ca493fcf1d14f44b185f865d5b}{indexOutOfRange}}(\textcolor{keyword}{this},\ 4);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ var\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}\ =\ \mbox{\hyperlink{reader_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}}.float.readDoubleLE(this.\mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a34083d02677ea6acceb641fa647bc25a}{buf}},\ this.pos);}
+\DoxyCodeLine{\ \ \ \ this.pos\ +=\ 8;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Reads a double (64 bit float) as a number. @function \begin{DoxyReturn}{Returns}
+\{number\} Value read 
+\end{DoxyReturn}
+\Hypertarget{reader_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\index{reader.js@{reader.js}!exports@{exports}}
+\index{exports@{exports}!reader.js@{reader.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \label{reader_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a1b804b43a9af8fa8940b69c1217fb5ff}{Reader}}}
+
+\Hypertarget{reader_8js_ad333739a2f0b2e564711d3ec031cafbf}\index{reader.js@{reader.js}!fixed32@{fixed32}}
+\index{fixed32@{fixed32}!reader.js@{reader.js}}
+\doxysubsubsection{\texorpdfstring{fixed32}{fixed32}}
+{\footnotesize\ttfamily \label{reader_8js_ad333739a2f0b2e564711d3ec031cafbf} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a1b804b43a9af8fa8940b69c1217fb5ff}{Reader}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} fixed32}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ read\_fixed32()\ \{}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (this.pos\ +\ 4\ >\ this.len)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \mbox{\hyperlink{reader_8js_a7b5fb5ca493fcf1d14f44b185f865d5b}{indexOutOfRange}}(\textcolor{keyword}{this},\ 4);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{reader_8js_abf7e21ad3ded181f055c6914be332f7a}{readFixed32\_end}}(this.\mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a34083d02677ea6acceb641fa647bc25a}{buf}},\ this.pos\ +=\ 4);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Reads fixed 32 bits as an unsigned 32 bit integer. \begin{DoxyReturn}{Returns}
+\{number\} Value read 
+\end{DoxyReturn}
+\Hypertarget{reader_8js_a3633c098690b7647f3a7f2d7fd52ff3c}\index{reader.js@{reader.js}!float@{float}}
+\index{float@{float}!reader.js@{reader.js}}
+\doxysubsubsection{\texorpdfstring{float}{float}}
+{\footnotesize\ttfamily \label{reader_8js_a3633c098690b7647f3a7f2d7fd52ff3c} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a1b804b43a9af8fa8940b69c1217fb5ff}{Reader}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} float}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ read\_float()\ \{}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (this.pos\ +\ 4\ >\ this.len)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \mbox{\hyperlink{reader_8js_a7b5fb5ca493fcf1d14f44b185f865d5b}{indexOutOfRange}}(\textcolor{keyword}{this},\ 4);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ var\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}\ =\ \mbox{\hyperlink{reader_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}}.float.readFloatLE(this.\mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a34083d02677ea6acceb641fa647bc25a}{buf}},\ this.pos);}
+\DoxyCodeLine{\ \ \ \ this.pos\ +=\ 4;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Reads a float (32 bit) as a number. @function \begin{DoxyReturn}{Returns}
+\{number\} Value read 
+\end{DoxyReturn}
+\Hypertarget{reader_8js_aeedad0a065d28d27719a978889047a61}\index{reader.js@{reader.js}!int32@{int32}}
+\index{int32@{int32}!reader.js@{reader.js}}
+\doxysubsubsection{\texorpdfstring{int32}{int32}}
+{\footnotesize\ttfamily \label{reader_8js_aeedad0a065d28d27719a978889047a61} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a1b804b43a9af8fa8940b69c1217fb5ff}{Reader}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} int32}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ read\_int32()\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{reader_8js_aca0812733caefcf6391e98a97b4b7e95}{uint32}}()\ |\ 0;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Reads a varint as a signed 32 bit value. \begin{DoxyReturn}{Returns}
+\{number\} Value read 
+\end{DoxyReturn}
+\Hypertarget{reader_8js_a21ffaff86b4f7f6e1f825da00d64f4f4}\index{reader.js@{reader.js}!LongBits@{LongBits}}
+\index{LongBits@{LongBits}!reader.js@{reader.js}}
+\doxysubsubsection{\texorpdfstring{LongBits}{LongBits}}
+{\footnotesize\ttfamily \label{reader_8js_a21ffaff86b4f7f6e1f825da00d64f4f4} 
+var Long\+Bits = util.\+Long\+Bits}
+
+\Hypertarget{reader_8js_a3f146a6b33139590c4e52cc8c0b2d3b6}\index{reader.js@{reader.js}!sfixed32@{sfixed32}}
+\index{sfixed32@{sfixed32}!reader.js@{reader.js}}
+\doxysubsubsection{\texorpdfstring{sfixed32}{sfixed32}}
+{\footnotesize\ttfamily \label{reader_8js_a3f146a6b33139590c4e52cc8c0b2d3b6} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a1b804b43a9af8fa8940b69c1217fb5ff}{Reader}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} sfixed32}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ read\_sfixed32()\ \{}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (this.pos\ +\ 4\ >\ this.len)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \mbox{\hyperlink{reader_8js_a7b5fb5ca493fcf1d14f44b185f865d5b}{indexOutOfRange}}(\textcolor{keyword}{this},\ 4);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{reader_8js_abf7e21ad3ded181f055c6914be332f7a}{readFixed32\_end}}(this.\mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a34083d02677ea6acceb641fa647bc25a}{buf}},\ this.pos\ +=\ 4)\ |\ 0;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Reads fixed 32 bits as a signed 32 bit integer. \begin{DoxyReturn}{Returns}
+\{number\} Value read 
+\end{DoxyReturn}
+\Hypertarget{reader_8js_afbd8edb241de60c0ee603d015e15636f}\index{reader.js@{reader.js}!sint32@{sint32}}
+\index{sint32@{sint32}!reader.js@{reader.js}}
+\doxysubsubsection{\texorpdfstring{sint32}{sint32}}
+{\footnotesize\ttfamily \label{reader_8js_afbd8edb241de60c0ee603d015e15636f} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a1b804b43a9af8fa8940b69c1217fb5ff}{Reader}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} sint32}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ read\_sint32()\ \{}
+\DoxyCodeLine{\ \ \ \ var\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}\ =\ this.\mbox{\hyperlink{reader_8js_aca0812733caefcf6391e98a97b4b7e95}{uint32}}();}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ value\ >>>\ 1\ \string^\ -\/(\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}\ \&\ 1)\ |\ 0;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Reads a zig-\/zag encoded varint as a signed 32 bit value. \begin{DoxyReturn}{Returns}
+\{number\} Value read 
+\end{DoxyReturn}
+\Hypertarget{reader_8js_afbd9017f4ea67c707719a7f4eab8d224}\index{reader.js@{reader.js}!skip@{skip}}
+\index{skip@{skip}!reader.js@{reader.js}}
+\doxysubsubsection{\texorpdfstring{skip}{skip}}
+{\footnotesize\ttfamily \label{reader_8js_afbd9017f4ea67c707719a7f4eab8d224} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} skip}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{reader_8js_afbd9017f4ea67c707719a7f4eab8d224}{skip}}(\mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a7fdcf4c82c9946bf2b0b80829a7ab230}{length}})\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (typeof\ \mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a7fdcf4c82c9946bf2b0b80829a7ab230}{length}}\ ===\ \textcolor{stringliteral}{"{}number"{}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (this.pos\ +\ \mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a7fdcf4c82c9946bf2b0b80829a7ab230}{length}}\ >\ this.len)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \mbox{\hyperlink{reader_8js_a7b5fb5ca493fcf1d14f44b185f865d5b}{indexOutOfRange}}(\textcolor{keyword}{this},\ \mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a7fdcf4c82c9946bf2b0b80829a7ab230}{length}});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ this.pos\ +=\ \mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a7fdcf4c82c9946bf2b0b80829a7ab230}{length}};}
+\DoxyCodeLine{\ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{do}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (this.pos\ >=\ this.len)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \mbox{\hyperlink{reader_8js_a7b5fb5ca493fcf1d14f44b185f865d5b}{indexOutOfRange}}(\textcolor{keyword}{this});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{while}\ (this.\mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a34083d02677ea6acceb641fa647bc25a}{buf}}[this.pos++]\ \&\ 128);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{this};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Skips the specified number of bytes if specified, otherwise skips a varint. 
+\begin{DoxyParams}{Parameters}
+{\em \{number\}} & \mbox{[}length\mbox{]} Length if known, otherwise a varint is assumed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Reader\} {\ttfamily this} 
+\end{DoxyReturn}
+\Hypertarget{reader_8js_a9f90b0ff09407a8f406f41ffe5a78cfd}\index{reader.js@{reader.js}!skipType@{skipType}}
+\index{skipType@{skipType}!reader.js@{reader.js}}
+\doxysubsubsection{\texorpdfstring{skipType}{skipType}}
+{\footnotesize\ttfamily \label{reader_8js_a9f90b0ff09407a8f406f41ffe5a78cfd} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a1b804b43a9af8fa8940b69c1217fb5ff}{Reader}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} skip\+Type}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(wireType)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{switch}\ (wireType)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 0:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ this.\mbox{\hyperlink{reader_8js_afbd9017f4ea67c707719a7f4eab8d224}{skip}}();}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 1:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ this.\mbox{\hyperlink{reader_8js_afbd9017f4ea67c707719a7f4eab8d224}{skip}}(8);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 2:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ this.\mbox{\hyperlink{reader_8js_afbd9017f4ea67c707719a7f4eab8d224}{skip}}(this.\mbox{\hyperlink{reader_8js_aca0812733caefcf6391e98a97b4b7e95}{uint32}}());}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 3:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ ((wireType\ =\ this.\mbox{\hyperlink{reader_8js_aca0812733caefcf6391e98a97b4b7e95}{uint32}}()\ \&\ 7)\ !==\ 4)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ this.\mbox{\hyperlink{reader_8js_a9f90b0ff09407a8f406f41ffe5a78cfd}{skipType}}(wireType);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 5:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ this.\mbox{\hyperlink{reader_8js_afbd9017f4ea67c707719a7f4eab8d224}{skip}}(4);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ Error(\textcolor{stringliteral}{"{}invalid\ wire\ type\ "{}}\ +\ wireType\ +\ \textcolor{stringliteral}{"{}\ at\ offset\ "{}}\ +\ this.pos);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{this};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Skips the next element of the specified wire type. 
+\begin{DoxyParams}{Parameters}
+{\em \{number\}} & wire\+Type Wire type received \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Reader\} {\ttfamily this} 
+\end{DoxyReturn}
+\Hypertarget{reader_8js_ae2475e10618961c050dcba04e8c42331}\index{reader.js@{reader.js}!strict@{strict}}
+\index{strict@{strict}!reader.js@{reader.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{reader_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+
+\Hypertarget{reader_8js_a5c10456fb38514f2fe2b2da9323924ac}\index{reader.js@{reader.js}!string@{string}}
+\index{string@{string}!reader.js@{reader.js}}
+\doxysubsubsection{\texorpdfstring{string}{string}}
+{\footnotesize\ttfamily \label{reader_8js_a5c10456fb38514f2fe2b2da9323924ac} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a1b804b43a9af8fa8940b69c1217fb5ff}{Reader}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} string}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ read\_string()\ \{}
+\DoxyCodeLine{\ \ \ \ var\ \mbox{\hyperlink{reader_8js_a75ba8faf86daa3f0b2e4c1b1449fd332}{bytes}}\ =\ this.\mbox{\hyperlink{reader_8js_a75ba8faf86daa3f0b2e4c1b1449fd332}{bytes}}();}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{reader_8js_ae89897a1ed7a0f204da2b78e025a7eff}{utf8}}.read(bytes,\ 0,\ \mbox{\hyperlink{reader_8js_a75ba8faf86daa3f0b2e4c1b1449fd332}{bytes}}.length);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Reads a string preceeded by its byte length as a varint. \begin{DoxyReturn}{Returns}
+\{string\} Value read 
+\end{DoxyReturn}
+\Hypertarget{reader_8js_aca0812733caefcf6391e98a97b4b7e95}\index{reader.js@{reader.js}!uint32@{uint32}}
+\index{uint32@{uint32}!reader.js@{reader.js}}
+\doxysubsubsection{\texorpdfstring{uint32}{uint32}}
+{\footnotesize\ttfamily \label{reader_8js_aca0812733caefcf6391e98a97b4b7e95} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a1b804b43a9af8fa8940b69c1217fb5ff}{Reader}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} uint32}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ (\textcolor{keyword}{function}\ read\_uint32\_setup()\ \{}
+\DoxyCodeLine{\ \ \ \ var\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}\ =\ 4294967295;\ }
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{function}\ read\_uint32()\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}\ =\ (\ \ \ \ \ \ \ \ \ this.\mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a34083d02677ea6acceb641fa647bc25a}{buf}}[this.pos]\ \&\ 127\ \ \ \ \ \ \ )\ >>>\ 0;\ \textcolor{keywordflow}{if}\ (this.\mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a34083d02677ea6acceb641fa647bc25a}{buf}}[this.pos++]\ <\ 128)\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}\ =\ (\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}\ |\ (this.\mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a34083d02677ea6acceb641fa647bc25a}{buf}}[this.pos]\ \&\ 127)\ <<\ \ 7)\ >>>\ 0;\ \textcolor{keywordflow}{if}\ (this.\mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a34083d02677ea6acceb641fa647bc25a}{buf}}[this.pos++]\ <\ 128)\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}\ =\ (\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}\ |\ (this.\mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a34083d02677ea6acceb641fa647bc25a}{buf}}[this.pos]\ \&\ 127)\ <<\ 14)\ >>>\ 0;\ \textcolor{keywordflow}{if}\ (this.\mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a34083d02677ea6acceb641fa647bc25a}{buf}}[this.pos++]\ <\ 128)\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}\ =\ (\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}\ |\ (this.\mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a34083d02677ea6acceb641fa647bc25a}{buf}}[this.pos]\ \&\ 127)\ <<\ 21)\ >>>\ 0;\ \textcolor{keywordflow}{if}\ (this.\mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a34083d02677ea6acceb641fa647bc25a}{buf}}[this.pos++]\ <\ 128)\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}\ =\ (\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}\ |\ (this.\mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a34083d02677ea6acceb641fa647bc25a}{buf}}[this.pos]\ \&\ \ 15)\ <<\ 28)\ >>>\ 0;\ \textcolor{keywordflow}{if}\ (this.\mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a34083d02677ea6acceb641fa647bc25a}{buf}}[this.pos++]\ <\ 128)\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ ((this.pos\ +=\ 5)\ >\ this.len)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ this.pos\ =\ this.len;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \mbox{\hyperlink{reader_8js_a7b5fb5ca493fcf1d14f44b185f865d5b}{indexOutOfRange}}(\textcolor{keyword}{this},\ 10);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}};}
+\DoxyCodeLine{\ \ \ \ \};}
+\DoxyCodeLine{\})()}
+
+\end{DoxyCode}
+Reads a varint as an unsigned 32 bit value. @function \begin{DoxyReturn}{Returns}
+\{number\} Value read 
+\end{DoxyReturn}
+\Hypertarget{reader_8js_ae89897a1ed7a0f204da2b78e025a7eff}\index{reader.js@{reader.js}!utf8@{utf8}}
+\index{utf8@{utf8}!reader.js@{reader.js}}
+\doxysubsubsection{\texorpdfstring{utf8}{utf8}}
+{\footnotesize\ttfamily \label{reader_8js_ae89897a1ed7a0f204da2b78e025a7eff} 
+var utf8 = util.\+utf8}
+
+\Hypertarget{reader_8js_a8f5b2e09d5197e9d28f6032dff542d44}\index{reader.js@{reader.js}!util@{util}}
+\index{util@{util}!reader.js@{reader.js}}
+\doxysubsubsection{\texorpdfstring{util}{util}}
+{\footnotesize\ttfamily \label{reader_8js_a8f5b2e09d5197e9d28f6032dff542d44} 
+var util = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./util/minimal"{})}
+

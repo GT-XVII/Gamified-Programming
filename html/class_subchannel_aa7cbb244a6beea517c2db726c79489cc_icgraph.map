@@ -1,0 +1,19 @@
+<map id="Subchannel::transitionToState" name="Subchannel::transitionToState">
+<area shape="rect" id="Node000001" title=" " alt="" coords="470,112,634,153"/>
+<area shape="rect" id="Node000002" href="$class_subchannel.html#ac3eeed0f4d4d026a43bb77bbb0ea34bd" title=" " alt="" coords="237,5,418,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="487,106,421,72,362,49,364,44,423,67,489,102"/>
+<area shape="rect" id="Node000004" href="$class_subchannel.html#ab92f9328d2bbfb6a3a65a2fadf742780" title=" " alt="" coords="242,70,413,96"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="454,114,389,99,390,94,455,108"/>
+<area shape="rect" id="Node000005" href="$class_subchannel.html#a8f4a24d194efeee8b55182239fedeb8c" title=" " alt="" coords="233,120,422,145"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="454,135,423,135,423,130,454,130"/>
+<area shape="rect" id="Node000006" href="$class_subchannel.html#a9d4600623a558e674969162a89010da4" title=" " alt="" coords="233,169,422,210"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="486,160,423,177,422,172,485,155"/>
+<area shape="rect" id="Node000007" href="$class_subchannel.html#a605dc8a7db8463adbb391c0395c00426" title=" " alt="" coords="264,234,390,260"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="516,165,473,196,423,224,391,236,389,231,421,219,470,191,513,160"/>
+<area shape="poly" id="edge3_Node000002_Node000001" title=" " alt="" coords="433,48,490,79,533,109,530,114,487,84,430,53"/>
+<area shape="rect" id="Node000003" href="$class_subchannel.html#ab684aec903ec37559929f4718264bbbf" title=" " alt="" coords="14,13,176,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="222,28,177,28,177,23,222,23"/>
+<area shape="poly" id="edge7_Node000006_Node000001" title=" " alt="" coords="394,162,469,142,470,147,395,167"/>
+<area shape="rect" id="Node000008" href="$class_subchannel.html#a45f3f1220da24d4862facab27ad18cf7" title=" " alt="" coords="5,234,185,260"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="249,250,185,250,185,244,249,244"/>
+</map>

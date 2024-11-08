@@ -1,0 +1,207 @@
+\doxysection{Firebase\+Messaging\+Request\+Handler Class Reference}
+\hypertarget{class_firebase_messaging_request_handler}{}\label{class_firebase_messaging_request_handler}\index{FirebaseMessagingRequestHandler@{FirebaseMessagingRequestHandler}}
+
+
+Collaboration diagram for Firebase\+Messaging\+Request\+Handler\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{class_firebase_messaging_request_handler__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_firebase_messaging_request_handler_a8b2ad8a9b2a338bef7a0fa9805819edb}{constructor}} (\mbox{\hyperlink{database_2dist_2index_8cjs_8js_a7b225fcb720e4d5ed2bbf60e28a25e6d}{app}})
+\item 
+\mbox{\hyperlink{class_firebase_messaging_request_handler_afcc639911b2ca382f8a9f619b85c9b54}{invoke\+Request\+Handler}} (host, \mbox{\hyperlink{cjs_2src_2bucket_8js_a1fdc7709faf62dce60620fb3f9d3453c}{path}}, request\+Data)
+\item 
+\mbox{\hyperlink{class_firebase_messaging_request_handler_a37424ac504b7e93a6c04c23055a1f615}{invoke\+Http\+Request\+Handler\+For\+Send\+Response}} (host, \mbox{\hyperlink{cjs_2src_2bucket_8js_a1fdc7709faf62dce60620fb3f9d3453c}{path}}, request\+Data)
+\item 
+\mbox{\hyperlink{class_firebase_messaging_request_handler_ac41f52aae092721e5e5883a3d8873d23}{invoke\+Http2\+Request\+Handler\+For\+Send\+Response}} (host, \mbox{\hyperlink{cjs_2src_2bucket_8js_a1fdc7709faf62dce60620fb3f9d3453c}{path}}, request\+Data, http2\+Session\+Handler)
+\item 
+\mbox{\hyperlink{class_firebase_messaging_request_handler_a29be071e2dff9a16dcce79e25e4148a3}{send\+Batch\+Request}} (requests)
+\item 
+\mbox{\hyperlink{class_firebase_messaging_request_handler_a527d816c0df73a58225957bac130fe66}{build\+Send\+Response}} (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ac70ac40ef8199c59316b35022dd21914}{response}})
+\item 
+\mbox{\hyperlink{class_firebase_messaging_request_handler_a086940079e50278f08ca57167efd27e2}{build\+Send\+Response\+From\+Error}} (err)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class that provides a mechanism to send requests to the Firebase Cloud Messaging backend. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_firebase_messaging_request_handler_a527d816c0df73a58225957bac130fe66}\index{FirebaseMessagingRequestHandler@{FirebaseMessagingRequestHandler}!buildSendResponse@{buildSendResponse}}
+\index{buildSendResponse@{buildSendResponse}!FirebaseMessagingRequestHandler@{FirebaseMessagingRequestHandler}}
+\doxysubsubsection{\texorpdfstring{buildSendResponse()}{buildSendResponse()}}
+{\footnotesize\ttfamily \label{class_firebase_messaging_request_handler_a527d816c0df73a58225957bac130fe66} 
+Firebase\+Messaging\+Request\+Handler\+::build\+Send\+Response (\begin{DoxyParamCaption}\item[{}]{response}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{messaging-api-request-internal_8js_a73dd1e6f0bc0a0234576ddef2bbe0452}{api\+\_\+request\+\_\+1}}, \mbox{\hyperlink{messaging-api-request-internal_8js_a60d1667db0278ac571c92dcf52deff74}{messaging\+\_\+errors\+\_\+internal\+\_\+1}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ac70ac40ef8199c59316b35022dd21914}{response}}, \mbox{\hyperlink{lodash_2core_8js_a348c112a244660a2f280cda892658c24}{result}}, and \mbox{\hyperlink{concurrently_2dist_2src_2defaults_8js_a7118084f766708fc137849390f20845b}{success}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_firebase_messaging_request_handler_a527d816c0df73a58225957bac130fe66_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_firebase_messaging_request_handler_a086940079e50278f08ca57167efd27e2}\index{FirebaseMessagingRequestHandler@{FirebaseMessagingRequestHandler}!buildSendResponseFromError@{buildSendResponseFromError}}
+\index{buildSendResponseFromError@{buildSendResponseFromError}!FirebaseMessagingRequestHandler@{FirebaseMessagingRequestHandler}}
+\doxysubsubsection{\texorpdfstring{buildSendResponseFromError()}{buildSendResponseFromError()}}
+{\footnotesize\ttfamily \label{class_firebase_messaging_request_handler_a086940079e50278f08ca57167efd27e2} 
+Firebase\+Messaging\+Request\+Handler\+::build\+Send\+Response\+From\+Error (\begin{DoxyParamCaption}\item[{}]{err}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}}, \mbox{\hyperlink{messaging-api-request-internal_8js_a60d1667db0278ac571c92dcf52deff74}{messaging\+\_\+errors\+\_\+internal\+\_\+1}}, and \mbox{\hyperlink{concurrently_2dist_2src_2defaults_8js_a7118084f766708fc137849390f20845b}{success}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_firebase_messaging_request_handler_a086940079e50278f08ca57167efd27e2_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_firebase_messaging_request_handler_a8b2ad8a9b2a338bef7a0fa9805819edb}\index{FirebaseMessagingRequestHandler@{FirebaseMessagingRequestHandler}!constructor@{constructor}}
+\index{constructor@{constructor}!FirebaseMessagingRequestHandler@{FirebaseMessagingRequestHandler}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_firebase_messaging_request_handler_a8b2ad8a9b2a338bef7a0fa9805819edb} 
+Firebase\+Messaging\+Request\+Handler\+::constructor (\begin{DoxyParamCaption}\item[{}]{app}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em app} & -\/ The app used to fetch access tokens to sign API requests. @constructor \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{messaging-api-request-internal_8js_a73dd1e6f0bc0a0234576ddef2bbe0452}{api\+\_\+request\+\_\+1}}, \mbox{\hyperlink{database_2dist_2index_8cjs_8js_a7b225fcb720e4d5ed2bbf60e28a25e6d}{app}}, \mbox{\hyperlink{messaging-api-request-internal_8js_ae48ef850169617e3057f5ba8a133959e}{batch\+\_\+request\+\_\+internal\+\_\+1}}, \mbox{\hyperlink{messaging-api-request-internal_8js_ab0c06a94edfe0dd0dbbc6a68fc868372}{FIREBASE\+\_\+\+MESSAGING\+\_\+\+BATCH\+\_\+\+URL}}, and \mbox{\hyperlink{messaging-api-request-internal_8js_adea6955bb87adc052c3fe9f8873a243c}{FIREBASE\+\_\+\+MESSAGING\+\_\+\+HEADERS}}.
+
+\Hypertarget{class_firebase_messaging_request_handler_ac41f52aae092721e5e5883a3d8873d23}\index{FirebaseMessagingRequestHandler@{FirebaseMessagingRequestHandler}!invokeHttp2RequestHandlerForSendResponse@{invokeHttp2RequestHandlerForSendResponse}}
+\index{invokeHttp2RequestHandlerForSendResponse@{invokeHttp2RequestHandlerForSendResponse}!FirebaseMessagingRequestHandler@{FirebaseMessagingRequestHandler}}
+\doxysubsubsection{\texorpdfstring{invokeHttp2RequestHandlerForSendResponse()}{invokeHttp2RequestHandlerForSendResponse()}}
+{\footnotesize\ttfamily \label{class_firebase_messaging_request_handler_ac41f52aae092721e5e5883a3d8873d23} 
+Firebase\+Messaging\+Request\+Handler\+::invoke\+Http2\+Request\+Handler\+For\+Send\+Response (\begin{DoxyParamCaption}\item[{}]{host}{, }\item[{}]{path}{, }\item[{}]{request\+Data}{, }\item[{}]{http2\+Session\+Handler}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Invokes the HTTP/2 request handler with the provided request data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em host} & -\/ The host to which to send the request. \\
+\hline
+{\em path} & -\/ The path to which to send the request. \\
+\hline
+{\em request\+Data} & -\/ The request data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_a}{A} promise that resolves with the {\ttfamily \doxylink{}{Send\+Response}}. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{messaging-api-request-internal_8js_a73dd1e6f0bc0a0234576ddef2bbe0452}{api\+\_\+request\+\_\+1}}, \mbox{\hyperlink{class_firebase_messaging_request_handler_a527d816c0df73a58225957bac130fe66}{build\+Send\+Response()}}, \mbox{\hyperlink{class_firebase_messaging_request_handler_a086940079e50278f08ca57167efd27e2}{build\+Send\+Response\+From\+Error()}}, \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}, \mbox{\hyperlink{messaging-api-request-internal_8js_a788a7c701e45f478803f24eff7212f3c}{FIREBASE\+\_\+\+MESSAGING\+\_\+\+TIMEOUT}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7f2cb2fcdd79bf72cefd29b7bc2d10fa}{headers}}, \mbox{\hyperlink{agent-base_2dist_2helpers_8js_ab3093f9d8507c035b404b9d49bdb40f7}{https}}, \mbox{\hyperlink{messaging-api-request-internal_8js_a43a9df2ef29ca4a952a1f8b4725d481e}{LEGACY\+\_\+\+FIREBASE\+\_\+\+MESSAGING\+\_\+\+HEADERS}}, \mbox{\hyperlink{lodash_2method_8js_a2f565198b0a61cb8648a01f0d9617cd7}{method}}, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ac70ac40ef8199c59316b35022dd21914}{response}}, \mbox{\hyperlink{rxjs_2dist_2cjs_2internal_2operators_2timeout_8js_a56cd1f2498714e800f2da45ee2fd56b7}{timeout}}, and \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_acf0a8b41f00a22e21672c8b3768a0618}{url}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_firebase_messaging_request_handler_ac41f52aae092721e5e5883a3d8873d23_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_firebase_messaging_request_handler_a37424ac504b7e93a6c04c23055a1f615}\index{FirebaseMessagingRequestHandler@{FirebaseMessagingRequestHandler}!invokeHttpRequestHandlerForSendResponse@{invokeHttpRequestHandlerForSendResponse}}
+\index{invokeHttpRequestHandlerForSendResponse@{invokeHttpRequestHandlerForSendResponse}!FirebaseMessagingRequestHandler@{FirebaseMessagingRequestHandler}}
+\doxysubsubsection{\texorpdfstring{invokeHttpRequestHandlerForSendResponse()}{invokeHttpRequestHandlerForSendResponse()}}
+{\footnotesize\ttfamily \label{class_firebase_messaging_request_handler_a37424ac504b7e93a6c04c23055a1f615} 
+Firebase\+Messaging\+Request\+Handler\+::invoke\+Http\+Request\+Handler\+For\+Send\+Response (\begin{DoxyParamCaption}\item[{}]{host}{, }\item[{}]{path}{, }\item[{}]{request\+Data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Invokes the HTTP/1.\+1 request handler with the provided request data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em host} & -\/ The host to which to send the request. \\
+\hline
+{\em path} & -\/ The path to which to send the request. \\
+\hline
+{\em request\+Data} & -\/ The request data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_a}{A} promise that resolves with the {\ttfamily \doxylink{}{Send\+Response}}. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{messaging-api-request-internal_8js_a73dd1e6f0bc0a0234576ddef2bbe0452}{api\+\_\+request\+\_\+1}}, \mbox{\hyperlink{class_firebase_messaging_request_handler_a527d816c0df73a58225957bac130fe66}{build\+Send\+Response()}}, \mbox{\hyperlink{class_firebase_messaging_request_handler_a086940079e50278f08ca57167efd27e2}{build\+Send\+Response\+From\+Error()}}, \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}, \mbox{\hyperlink{messaging-api-request-internal_8js_a788a7c701e45f478803f24eff7212f3c}{FIREBASE\+\_\+\+MESSAGING\+\_\+\+TIMEOUT}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7f2cb2fcdd79bf72cefd29b7bc2d10fa}{headers}}, \mbox{\hyperlink{agent-base_2dist_2helpers_8js_ab3093f9d8507c035b404b9d49bdb40f7}{https}}, \mbox{\hyperlink{messaging-api-request-internal_8js_a43a9df2ef29ca4a952a1f8b4725d481e}{LEGACY\+\_\+\+FIREBASE\+\_\+\+MESSAGING\+\_\+\+HEADERS}}, \mbox{\hyperlink{lodash_2method_8js_a2f565198b0a61cb8648a01f0d9617cd7}{method}}, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ac70ac40ef8199c59316b35022dd21914}{response}}, \mbox{\hyperlink{rxjs_2dist_2cjs_2internal_2operators_2timeout_8js_a56cd1f2498714e800f2da45ee2fd56b7}{timeout}}, and \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_acf0a8b41f00a22e21672c8b3768a0618}{url}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_firebase_messaging_request_handler_a37424ac504b7e93a6c04c23055a1f615_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_firebase_messaging_request_handler_afcc639911b2ca382f8a9f619b85c9b54}\index{FirebaseMessagingRequestHandler@{FirebaseMessagingRequestHandler}!invokeRequestHandler@{invokeRequestHandler}}
+\index{invokeRequestHandler@{invokeRequestHandler}!FirebaseMessagingRequestHandler@{FirebaseMessagingRequestHandler}}
+\doxysubsubsection{\texorpdfstring{invokeRequestHandler()}{invokeRequestHandler()}}
+{\footnotesize\ttfamily \label{class_firebase_messaging_request_handler_afcc639911b2ca382f8a9f619b85c9b54} 
+Firebase\+Messaging\+Request\+Handler\+::invoke\+Request\+Handler (\begin{DoxyParamCaption}\item[{}]{host}{, }\item[{}]{path}{, }\item[{}]{request\+Data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Invokes the request handler with the provided request data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em host} & -\/ The host to which to send the request. \\
+\hline
+{\em path} & -\/ The path to which to send the request. \\
+\hline
+{\em request\+Data} & -\/ The request data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_a}{A} promise that resolves with the response. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{messaging-api-request-internal_8js_a73dd1e6f0bc0a0234576ddef2bbe0452}{api\+\_\+request\+\_\+1}}, \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}, \mbox{\hyperlink{messaging-api-request-internal_8js_a788a7c701e45f478803f24eff7212f3c}{FIREBASE\+\_\+\+MESSAGING\+\_\+\+TIMEOUT}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7f2cb2fcdd79bf72cefd29b7bc2d10fa}{headers}}, \mbox{\hyperlink{agent-base_2dist_2helpers_8js_ab3093f9d8507c035b404b9d49bdb40f7}{https}}, \mbox{\hyperlink{messaging-api-request-internal_8js_a43a9df2ef29ca4a952a1f8b4725d481e}{LEGACY\+\_\+\+FIREBASE\+\_\+\+MESSAGING\+\_\+\+HEADERS}}, \mbox{\hyperlink{messaging-api-request-internal_8js_a60d1667db0278ac571c92dcf52deff74}{messaging\+\_\+errors\+\_\+internal\+\_\+1}}, \mbox{\hyperlink{lodash_2method_8js_a2f565198b0a61cb8648a01f0d9617cd7}{method}}, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ac70ac40ef8199c59316b35022dd21914}{response}}, \mbox{\hyperlink{rxjs_2dist_2cjs_2internal_2operators_2timeout_8js_a56cd1f2498714e800f2da45ee2fd56b7}{timeout}}, and \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_acf0a8b41f00a22e21672c8b3768a0618}{url}}.
+
+\Hypertarget{class_firebase_messaging_request_handler_a29be071e2dff9a16dcce79e25e4148a3}\index{FirebaseMessagingRequestHandler@{FirebaseMessagingRequestHandler}!sendBatchRequest@{sendBatchRequest}}
+\index{sendBatchRequest@{sendBatchRequest}!FirebaseMessagingRequestHandler@{FirebaseMessagingRequestHandler}}
+\doxysubsubsection{\texorpdfstring{sendBatchRequest()}{sendBatchRequest()}}
+{\footnotesize\ttfamily \label{class_firebase_messaging_request_handler_a29be071e2dff9a16dcce79e25e4148a3} 
+Firebase\+Messaging\+Request\+Handler\+::send\+Batch\+Request (\begin{DoxyParamCaption}\item[{}]{requests}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sends the given array of sub requests as a single batch to FCM, and parses the result into a {\ttfamily Batch\+Response} object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em requests} & -\/ An array of sub requests to send. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_a}{A} promise that resolves when the send operation is complete. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{messaging-api-request-internal_8js_a73dd1e6f0bc0a0234576ddef2bbe0452}{api\+\_\+request\+\_\+1}}, \mbox{\hyperlink{class_firebase_messaging_request_handler_a527d816c0df73a58225957bac130fe66}{build\+Send\+Response()}}, \mbox{\hyperlink{messaging-api-request-internal_8js_a60d1667db0278ac571c92dcf52deff74}{messaging\+\_\+errors\+\_\+internal\+\_\+1}}, and \mbox{\hyperlink{pledge_8js_a492a4eb4b80e71a1bb4761df42875565}{then}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_firebase_messaging_request_handler_a29be071e2dff9a16dcce79e25e4148a3_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/firebase-\/admin/lib/messaging/\mbox{\hyperlink{messaging-api-request-internal_8js}{messaging-\/api-\/request-\/internal.\+js}}\end{DoxyCompactItemize}

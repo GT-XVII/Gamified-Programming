@@ -1,0 +1,45 @@
+\doxysection{/\+Users/nicoletiokhin/\+Desktop/\+Software Semester 3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/firebase-\/admin/lib/auth/base-\/auth.\+js}
+\hypertarget{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_f8b0727155c2d79c34dba4fa044b53ac}{}\label{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_f8b0727155c2d79c34dba4fa044b53ac}Generates the out of band email action link to reset a user\textquotesingle{}s password. The link is generated for the user with the specified email address. The optional {\ttfamily \doxylink{}{Action\+Code\+Settings}} object defines whether the link is to be handled by a mobile app or browser and the additional state information to be passed in the deep link, etc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{var\ actionCodeSettings\ =\ \{}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_acf0a8b41f00a22e21672c8b3768a0618}{url}}:\ \textcolor{stringliteral}{'https://www.example.com/?email=user@example.com'},}
+\DoxyCodeLine{\ \ iOS:\ \{}
+\DoxyCodeLine{\ \ \ \ bundleId:\ \textcolor{stringliteral}{'com.example.ios'}}
+\DoxyCodeLine{\ \ \},}
+\DoxyCodeLine{\ \ android:\ \{}
+\DoxyCodeLine{\ \ \ \ packageName:\ \textcolor{stringliteral}{'com.example.android'},}
+\DoxyCodeLine{\ \ \ \ installApp:\ \textcolor{keyword}{true},}
+\DoxyCodeLine{\ \ \ \ minimumVersion:\ \textcolor{stringliteral}{'12'}}
+\DoxyCodeLine{\ \ \},}
+\DoxyCodeLine{\ \ handleCodeInApp:\ \textcolor{keyword}{true},}
+\DoxyCodeLine{\ \ dynamicLinkDomain:\ \textcolor{stringliteral}{'custom.page.link'}}
+\DoxyCodeLine{\};}
+\DoxyCodeLine{admin.auth()}
+\DoxyCodeLine{\ \ \ \ .generatePasswordResetLink(\textcolor{stringliteral}{'user@example.com'},\ actionCodeSettings)}
+\DoxyCodeLine{\ \ \ \ .then(\textcolor{keyword}{function}(\mbox{\hyperlink{color-convert_2route_8js_a19ce3d5e08ba274745a9457953950823}{link}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \textcolor{comment}{//\ The\ link\ was\ successfully\ generated.}}
+\DoxyCodeLine{\ \ \ \ \})}
+\DoxyCodeLine{\ \ \ \ .\textcolor{keywordflow}{catch}(\textcolor{keyword}{function}(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \textcolor{comment}{//\ Some\ error\ occurred,\ you\ can\ inspect\ the\ code:\ error.code}}
+\DoxyCodeLine{\ \ \ \ \});}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em email} & -\/ The email address of the user whose password is to be reset. \\
+\hline
+{\em action\+Code\+Settings} & -\/ The action code settings. If specified, the state/continue URL is set as the "{}continue\+Url"{} parameter in the password reset link. The default password reset landing page will use this to display a link to go back to the app if it is installed. If the action\+Code\+Settings is not specified, no URL is appended to the action URL. The state URL provided must belong to a domain that is whitelisted by the developer in the console. Otherwise an error is thrown. Mobile app redirects are only applicable if the developer configures and accepts the Firebase Dynamic Links terms of service. The Android package name and i\+OS bundle ID are respected only if they are configured in the same Firebase \doxylink{class_auth}{Auth} project. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_a}{A} promise that resolves with the generated link.
+\end{DoxyReturn}
+
+\begin{DoxyCodeInclude}{0}
+
+\end{DoxyCodeInclude}
+ Semester \doxylink{base-auth_8js}{3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/firebase-\/admin/lib/auth/base-\/auth.\+js} 

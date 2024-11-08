@@ -1,0 +1,62 @@
+\doxysection{backend/node\+\_\+modules/@google-\/cloud/storage/build/esm/src/signer.js File Reference}
+\hypertarget{esm_2src_2signer_8js}{}\label{esm_2src_2signer_8js}\index{backend/node\_modules/"@google-\/cloud/storage/build/esm/src/signer.js@{backend/node\_modules/"@google-\/cloud/storage/build/esm/src/signer.js}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{component_2dist_2esm_2index_8esm2017_8js_a953be46b94f595d839e88a6d3d270309}{import}} \texorpdfstring{$\ast$}{*}as crypto from \mbox{\hyperlink{esm_2src_2signer_8js_a55e8ee0aa6b8330faf62902d77148c8f}{crypto}}
+\item 
+\mbox{\hyperlink{component_2dist_2esm_2index_8esm2017_8js_a953be46b94f595d839e88a6d3d270309}{import}} \texorpdfstring{$\ast$}{*}as url from \mbox{\hyperlink{esm_2src_2signer_8js_a09143460e33851f2f831bcd4fdc4877c}{url}}
+\item 
+\mbox{\hyperlink{esm_2src_2signer_8js_a59be084da8908b7d77ff34b25cd84488}{import}} \{ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2cjs_2src_2storage_8js_a3aa2f8a709a870834082916ff946b006}{Exception\+Messages}}, \mbox{\hyperlink{class_storage}{Storage}} \} from \textquotesingle{}./\mbox{\hyperlink{esm_2src_2file_8js_a73ffb0a3b9f028910adc01ac31153d46}{storage.\+js}}\textquotesingle{}
+\item 
+var export \mbox{\hyperlink{esm_2src_2signer_8js_a8945ab353a7a98174057e889d94d8c87}{Signer\+Exception\+Messages}}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{esm_2src_2signer_8js_a7ca65d8060c4a956f4b7a2d93b35c17f}{DEFAULT\+\_\+\+SIGNING\+\_\+\+VERSION}} = \textquotesingle{}v2\textquotesingle{}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{esm_2src_2signer_8js_a45b0576d7043a4ed35779679ab00b15d}{SEVEN\+\_\+\+DAYS}} = 7 \texorpdfstring{$\ast$}{*} 24 \texorpdfstring{$\ast$}{*} 60 \texorpdfstring{$\ast$}{*} 60
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{esm_2src_2signer_8js_a55e8ee0aa6b8330faf62902d77148c8f}\index{signer.js@{signer.js}!crypto@{crypto}}
+\index{crypto@{crypto}!signer.js@{signer.js}}
+\doxysubsubsection{\texorpdfstring{crypto}{crypto}}
+{\footnotesize\ttfamily \label{esm_2src_2signer_8js_a55e8ee0aa6b8330faf62902d77148c8f} 
+\mbox{\hyperlink{component_2dist_2esm_2index_8esm2017_8js_a953be46b94f595d839e88a6d3d270309}{import}}\texorpdfstring{$\ast$}{*} as crypto from crypto}
+
+\Hypertarget{esm_2src_2signer_8js_a7ca65d8060c4a956f4b7a2d93b35c17f}\index{signer.js@{signer.js}!DEFAULT\_SIGNING\_VERSION@{DEFAULT\_SIGNING\_VERSION}}
+\index{DEFAULT\_SIGNING\_VERSION@{DEFAULT\_SIGNING\_VERSION}!signer.js@{signer.js}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_SIGNING\_VERSION}{DEFAULT\_SIGNING\_VERSION}}
+{\footnotesize\ttfamily \label{esm_2src_2signer_8js_a7ca65d8060c4a956f4b7a2d93b35c17f} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} DEFAULT\+\_\+\+SIGNING\+\_\+\+VERSION = \textquotesingle{}v2\textquotesingle{}}
+
+\Hypertarget{esm_2src_2signer_8js_a59be084da8908b7d77ff34b25cd84488}\index{signer.js@{signer.js}!import@{import}}
+\index{import@{import}!signer.js@{signer.js}}
+\doxysubsubsection{\texorpdfstring{import}{import}}
+{\footnotesize\ttfamily \label{esm_2src_2signer_8js_a59be084da8908b7d77ff34b25cd84488} 
+import \{ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2cjs_2src_2storage_8js_a3aa2f8a709a870834082916ff946b006}{Exception\+Messages}}, \mbox{\hyperlink{class_storage}{Storage}} \} from \textquotesingle{}./\mbox{\hyperlink{esm_2src_2file_8js_a73ffb0a3b9f028910adc01ac31153d46}{storage.\+js}}\textquotesingle{}}
+
+\Hypertarget{esm_2src_2signer_8js_a45b0576d7043a4ed35779679ab00b15d}\index{signer.js@{signer.js}!SEVEN\_DAYS@{SEVEN\_DAYS}}
+\index{SEVEN\_DAYS@{SEVEN\_DAYS}!signer.js@{signer.js}}
+\doxysubsubsection{\texorpdfstring{SEVEN\_DAYS}{SEVEN\_DAYS}}
+{\footnotesize\ttfamily \label{esm_2src_2signer_8js_a45b0576d7043a4ed35779679ab00b15d} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} SEVEN\+\_\+\+DAYS = 7 \texorpdfstring{$\ast$}{*} 24 \texorpdfstring{$\ast$}{*} 60 \texorpdfstring{$\ast$}{*} 60}
+
+\Hypertarget{esm_2src_2signer_8js_a8945ab353a7a98174057e889d94d8c87}\index{signer.js@{signer.js}!SignerExceptionMessages@{SignerExceptionMessages}}
+\index{SignerExceptionMessages@{SignerExceptionMessages}!signer.js@{signer.js}}
+\doxysubsubsection{\texorpdfstring{SignerExceptionMessages}{SignerExceptionMessages}}
+{\footnotesize\ttfamily \label{esm_2src_2signer_8js_a8945ab353a7a98174057e889d94d8c87} 
+Signer\+Exception\+Messages\mbox{[}"{}X\+\_\+\+GOOG\+\_\+\+CONTENT\+\_\+\+SHA256"{}\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{cjs_2src_2signer_8js_a6fd559fae461bb1b0949decae30e583b}{SignerExceptionMessages}}[\textcolor{stringliteral}{"{}ACCESSIBLE\_DATE\_INVALID"{}}]\ =\ \textcolor{stringliteral}{"{}The\ accessible\ at\ date\ provided\ was\ invalid."{}}}
+
+\end{DoxyCode}
+\Hypertarget{esm_2src_2signer_8js_a09143460e33851f2f831bcd4fdc4877c}\index{signer.js@{signer.js}!url@{url}}
+\index{url@{url}!signer.js@{signer.js}}
+\doxysubsubsection{\texorpdfstring{url}{url}}
+{\footnotesize\ttfamily \label{esm_2src_2signer_8js_a09143460e33851f2f831bcd4fdc4877c} 
+\mbox{\hyperlink{component_2dist_2esm_2index_8esm2017_8js_a953be46b94f595d839e88a6d3d270309}{import}}\texorpdfstring{$\ast$}{*} as url from url}
+

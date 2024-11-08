@@ -1,0 +1,118 @@
+\doxysection{backend/node\+\_\+modules/jose/dist/node/cjs/lib/check\+\_\+key\+\_\+type.js File Reference}
+\hypertarget{node_2cjs_2lib_2check__key__type_8js}{}\label{node_2cjs_2lib_2check__key__type_8js}\index{backend/node\_modules/jose/dist/node/cjs/lib/check\_key\_type.js@{backend/node\_modules/jose/dist/node/cjs/lib/check\_key\_type.js}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{node_2cjs_2lib_2check__key__type_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{node_2cjs_2lib_2check__key__type_8js_a090f2d7ffded4553d2ba280656d82d0f}{invalid\+\_\+key\+\_\+input\+\_\+js\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./invalid\+\_\+key\+\_\+input.\+js"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{node_2cjs_2lib_2check__key__type_8js_aa6df49a25715bcc2c2030bc3778d295d}{is\+\_\+key\+\_\+like\+\_\+js\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../runtime/is\+\_\+key\+\_\+like.\+js"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{node_2cjs_2lib_2check__key__type_8js_ac778f9d592cbf6691c74dd4da743bd6e}{symmetric\+Type\+Check}}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{node_2cjs_2lib_2check__key__type_8js_af0b1744e7ecf222abe57ea4aab64f390}{asymmetric\+Type\+Check}}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{node_2cjs_2lib_2check__key__type_8js_afb2946420da147bf4002652314fe6827}{check\+Key\+Type}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{node_2cjs_2lib_2check__key__type_8js_a48acd3189d40b017f47c93b673b8b8f6}{default}} = \mbox{\hyperlink{browser_2lib_2check__key__type_8js_a82dc03bdbeb5708689e774b54cb1258f}{check\+Key\+Type}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{node_2cjs_2lib_2check__key__type_8js_af0b1744e7ecf222abe57ea4aab64f390}\index{check\_key\_type.js@{check\_key\_type.js}!asymmetricTypeCheck@{asymmetricTypeCheck}}
+\index{asymmetricTypeCheck@{asymmetricTypeCheck}!check\_key\_type.js@{check\_key\_type.js}}
+\doxysubsubsection{\texorpdfstring{asymmetricTypeCheck}{asymmetricTypeCheck}}
+{\footnotesize\ttfamily \label{node_2cjs_2lib_2check__key__type_8js_af0b1744e7ecf222abe57ea4aab64f390} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} asymmetric\+Type\+Check}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ (alg,\ key,\ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2uuid_2dist_2uuid-bin_8js_a5d483393835b7f0091e60cf967ded21e}{usage}})\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (!(0,\ \mbox{\hyperlink{node_2cjs_2lib_2check__key__type_8js_aa6df49a25715bcc2c2030bc3778d295d}{is\_key\_like\_js\_1}}.default)(key))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ TypeError((0,\ \mbox{\hyperlink{node_2cjs_2lib_2check__key__type_8js_a090f2d7ffded4553d2ba280656d82d0f}{invalid\_key\_input\_js\_1}}.withAlg)(alg,\ key,\ ...is\_key\_like\_js\_1.types));}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (key.type\ ===\ \textcolor{stringliteral}{'secret'})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ TypeError(\`{}\mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}\{\mbox{\hyperlink{node_2cjs_2lib_2check__key__type_8js_aa6df49a25715bcc2c2030bc3778d295d}{is\_key\_like\_js\_1}}.types.join(\textcolor{stringliteral}{'\ or\ '})\}\ \mbox{\hyperlink{logger_2dist_2esm_2index_8esm2017_8js_acc1ac38c4c5946ff758a24ed7e04b4a9}{instances}}\ \textcolor{keywordflow}{for}\ asymmetric\ \mbox{\hyperlink{cipher_8js_a92f800b4fe48ec339baf687c1acf8ec6}{algorithms}}\ must\ \mbox{\hyperlink{long_2index_8js_ad7dc44f0ebdb746f4a5b0612ae9315cb}{not}}\ be\ \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}\ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type}}\ \textcolor{stringliteral}{"{}secret"{}}\`{});}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2uuid_2dist_2uuid-bin_8js_a5d483393835b7f0091e60cf967ded21e}{usage}}\ ===\ \textcolor{stringliteral}{'sign'}\ \&\&\ key.type\ ===\ \textcolor{stringliteral}{'public'})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ TypeError(\`{}\mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}\{\mbox{\hyperlink{node_2cjs_2lib_2check__key__type_8js_aa6df49a25715bcc2c2030bc3778d295d}{is\_key\_like\_js\_1}}.types.join(\textcolor{stringliteral}{'\ or\ '})\}\ \mbox{\hyperlink{logger_2dist_2esm_2index_8esm2017_8js_acc1ac38c4c5946ff758a24ed7e04b4a9}{instances}}\ \textcolor{keywordflow}{for}\ asymmetric\ algorithm\ signing\ must\ be\ \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}\ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type}}\ \textcolor{stringliteral}{"{}private"{}}\`{});}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2uuid_2dist_2uuid-bin_8js_a5d483393835b7f0091e60cf967ded21e}{usage}}\ ===\ \textcolor{stringliteral}{'decrypt'}\ \&\&\ key.type\ ===\ \textcolor{stringliteral}{'public'})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ TypeError(\`{}\mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}\{\mbox{\hyperlink{node_2cjs_2lib_2check__key__type_8js_aa6df49a25715bcc2c2030bc3778d295d}{is\_key\_like\_js\_1}}.types.join(\textcolor{stringliteral}{'\ or\ '})\}\ \mbox{\hyperlink{logger_2dist_2esm_2index_8esm2017_8js_acc1ac38c4c5946ff758a24ed7e04b4a9}{instances}}\ \textcolor{keywordflow}{for}\ asymmetric\ algorithm\ decryption\ must\ be\ \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}\ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type}}\ \textcolor{stringliteral}{"{}private"{}}\`{});}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (key.algorithm\ \&\&\ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2uuid_2dist_2uuid-bin_8js_a5d483393835b7f0091e60cf967ded21e}{usage}}\ ===\ \textcolor{stringliteral}{'verify'}\ \&\&\ key.type\ ===\ \textcolor{stringliteral}{'private'})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ TypeError(\`{}\mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}\{\mbox{\hyperlink{node_2cjs_2lib_2check__key__type_8js_aa6df49a25715bcc2c2030bc3778d295d}{is\_key\_like\_js\_1}}.types.join(\textcolor{stringliteral}{'\ or\ '})\}\ \mbox{\hyperlink{logger_2dist_2esm_2index_8esm2017_8js_acc1ac38c4c5946ff758a24ed7e04b4a9}{instances}}\ \textcolor{keywordflow}{for}\ asymmetric\ algorithm\ verifying\ must\ be\ \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}\ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type}}\ \textcolor{stringliteral}{"{}public"{}}\`{});}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (key.algorithm\ \&\&\ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2uuid_2dist_2uuid-bin_8js_a5d483393835b7f0091e60cf967ded21e}{usage}}\ ===\ \textcolor{stringliteral}{'encrypt'}\ \&\&\ key.type\ ===\ \textcolor{stringliteral}{'private'})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ TypeError(\`{}\mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}\{\mbox{\hyperlink{node_2cjs_2lib_2check__key__type_8js_aa6df49a25715bcc2c2030bc3778d295d}{is\_key\_like\_js\_1}}.types.join(\textcolor{stringliteral}{'\ or\ '})\}\ \mbox{\hyperlink{logger_2dist_2esm_2index_8esm2017_8js_acc1ac38c4c5946ff758a24ed7e04b4a9}{instances}}\ \textcolor{keywordflow}{for}\ asymmetric\ algorithm\ encryption\ must\ be\ \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}\ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type}}\ \textcolor{stringliteral}{"{}public"{}}\`{});}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{node_2cjs_2lib_2check__key__type_8js_afb2946420da147bf4002652314fe6827}\index{check\_key\_type.js@{check\_key\_type.js}!checkKeyType@{checkKeyType}}
+\index{checkKeyType@{checkKeyType}!check\_key\_type.js@{check\_key\_type.js}}
+\doxysubsubsection{\texorpdfstring{checkKeyType}{checkKeyType}}
+{\footnotesize\ttfamily \label{node_2cjs_2lib_2check__key__type_8js_afb2946420da147bf4002652314fe6827} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} check\+Key\+Type}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ (alg,\ key,\ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2uuid_2dist_2uuid-bin_8js_a5d483393835b7f0091e60cf967ded21e}{usage}})\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{const}\ symmetric\ =\ alg.startsWith(\textcolor{stringliteral}{'HS'})\ ||}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ alg\ ===\ \textcolor{stringliteral}{'dir'}\ ||}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ alg.startsWith(\textcolor{stringliteral}{'PBES2'})\ ||}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ /\string^A\(\backslash\)d\{3\}(?:GCM)?KW\$/.\mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a1bb461d3256d1734f13dd702ef79aa31}{test}}(alg);}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (symmetric)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{browser_2lib_2check__key__type_8js_aebc17b38076b7313934d38e440070651}{symmetricTypeCheck}}(alg,\ key);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{browser_2lib_2check__key__type_8js_af0b1744e7ecf222abe57ea4aab64f390}{asymmetricTypeCheck}}(alg,\ key,\ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2uuid_2dist_2uuid-bin_8js_a5d483393835b7f0091e60cf967ded21e}{usage}});}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{node_2cjs_2lib_2check__key__type_8js_a48acd3189d40b017f47c93b673b8b8f6}\index{check\_key\_type.js@{check\_key\_type.js}!default@{default}}
+\index{default@{default}!check\_key\_type.js@{check\_key\_type.js}}
+\doxysubsubsection{\texorpdfstring{default}{default}}
+{\footnotesize\ttfamily \label{node_2cjs_2lib_2check__key__type_8js_a48acd3189d40b017f47c93b673b8b8f6} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} default = \mbox{\hyperlink{browser_2lib_2check__key__type_8js_a82dc03bdbeb5708689e774b54cb1258f}{check\+Key\+Type}}}
+
+\Hypertarget{node_2cjs_2lib_2check__key__type_8js_a090f2d7ffded4553d2ba280656d82d0f}\index{check\_key\_type.js@{check\_key\_type.js}!invalid\_key\_input\_js\_1@{invalid\_key\_input\_js\_1}}
+\index{invalid\_key\_input\_js\_1@{invalid\_key\_input\_js\_1}!check\_key\_type.js@{check\_key\_type.js}}
+\doxysubsubsection{\texorpdfstring{invalid\_key\_input\_js\_1}{invalid\_key\_input\_js\_1}}
+{\footnotesize\ttfamily \label{node_2cjs_2lib_2check__key__type_8js_a090f2d7ffded4553d2ba280656d82d0f} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} invalid\+\_\+key\+\_\+input\+\_\+js\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./invalid\+\_\+key\+\_\+input.\+js"{})}
+
+\Hypertarget{node_2cjs_2lib_2check__key__type_8js_aa6df49a25715bcc2c2030bc3778d295d}\index{check\_key\_type.js@{check\_key\_type.js}!is\_key\_like\_js\_1@{is\_key\_like\_js\_1}}
+\index{is\_key\_like\_js\_1@{is\_key\_like\_js\_1}!check\_key\_type.js@{check\_key\_type.js}}
+\doxysubsubsection{\texorpdfstring{is\_key\_like\_js\_1}{is\_key\_like\_js\_1}}
+{\footnotesize\ttfamily \label{node_2cjs_2lib_2check__key__type_8js_aa6df49a25715bcc2c2030bc3778d295d} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} is\+\_\+key\+\_\+like\+\_\+js\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../runtime/is\+\_\+key\+\_\+like.\+js"{})}
+
+\Hypertarget{node_2cjs_2lib_2check__key__type_8js_ae2475e10618961c050dcba04e8c42331}\index{check\_key\_type.js@{check\_key\_type.js}!strict@{strict}}
+\index{strict@{strict}!check\_key\_type.js@{check\_key\_type.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{node_2cjs_2lib_2check__key__type_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+
+\Hypertarget{node_2cjs_2lib_2check__key__type_8js_ac778f9d592cbf6691c74dd4da743bd6e}\index{check\_key\_type.js@{check\_key\_type.js}!symmetricTypeCheck@{symmetricTypeCheck}}
+\index{symmetricTypeCheck@{symmetricTypeCheck}!check\_key\_type.js@{check\_key\_type.js}}
+\doxysubsubsection{\texorpdfstring{symmetricTypeCheck}{symmetricTypeCheck}}
+{\footnotesize\ttfamily \label{node_2cjs_2lib_2check__key__type_8js_ac778f9d592cbf6691c74dd4da743bd6e} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} symmetric\+Type\+Check}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ (alg,\ key)\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (key\ instanceof\ Uint8Array)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (!(0,\ \mbox{\hyperlink{node_2cjs_2lib_2check__key__type_8js_aa6df49a25715bcc2c2030bc3778d295d}{is\_key\_like\_js\_1}}.default)(key))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ TypeError((0,\ \mbox{\hyperlink{node_2cjs_2lib_2check__key__type_8js_a090f2d7ffded4553d2ba280656d82d0f}{invalid\_key\_input\_js\_1}}.withAlg)(alg,\ key,\ ...is\_key\_like\_js\_1.types,\ \textcolor{stringliteral}{'Uint8Array'}));}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (key.type\ !==\ \textcolor{stringliteral}{'secret'})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ TypeError(\`{}\mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}\{\mbox{\hyperlink{node_2cjs_2lib_2check__key__type_8js_aa6df49a25715bcc2c2030bc3778d295d}{is\_key\_like\_js\_1}}.types.join(\textcolor{stringliteral}{'\ or\ '})\}\ \mbox{\hyperlink{logger_2dist_2esm_2index_8esm2017_8js_acc1ac38c4c5946ff758a24ed7e04b4a9}{instances}}\ \textcolor{keywordflow}{for}\ symmetric\ \mbox{\hyperlink{cipher_8js_a92f800b4fe48ec339baf687c1acf8ec6}{algorithms}}\ must\ be\ \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}\ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type}}\ \textcolor{stringliteral}{"{}secret"{}}\`{});}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}

@@ -1,0 +1,130 @@
+\doxysection{Query\+Util Class Reference}
+\hypertarget{class_query_util}{}\label{class_query_util}\index{QueryUtil@{QueryUtil}}
+
+
+Collaboration diagram for Query\+Util\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{class_query_util__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_query_util_ae41217d95c4df5dad9783a2b574e02ab}{\+\_\+get\+Response}} (\mbox{\hyperlink{application_8js_a3934419f0f9a2068c705a0013b77fab3}{query}}, transaction\+Or\+Read\+Time, retry\+With\+Cursor=true, explain\+Options)
+\item 
+\mbox{\hyperlink{class_query_util_a26bdb239ad1d9fc37b8fb5ccab222ec4}{\+\_\+is\+Permanent\+Rpc\+Error}} (err, method\+Name)
+\item 
+\mbox{\hyperlink{class_query_util_ac398fc6ff3e1e6de48f050db70f706d1}{\+\_\+has\+Retry\+Timed\+Out}} (method\+Name, start\+Time)
+\item 
+\mbox{\hyperlink{class_query_util_a95675d40ac170c992edb7b50356eb76e}{stream}} (\mbox{\hyperlink{application_8js_a3934419f0f9a2068c705a0013b77fab3}{query}})
+\item 
+\mbox{\hyperlink{class_query_util_a974d66ec9d49d52b6d29c69946fed756}{\+\_\+stream}} (\mbox{\hyperlink{application_8js_a3934419f0f9a2068c705a0013b77fab3}{query}}, transaction\+Or\+Read\+Time, retry\+With\+Cursor=true, explain\+Options)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_query_util_a9c66244a3f4a05b0a208d1411955933b}{constructor}} (\mbox{\hyperlink{firestore-namespace_8js_a0ea74ea11566bd0d53855253d2003d02}{\+\_\+firestore}}, \+\_\+query\+Options, \+\_\+serializer)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_query_util_ae41217d95c4df5dad9783a2b574e02ab}\index{QueryUtil@{QueryUtil}!\_getResponse@{\_getResponse}}
+\index{\_getResponse@{\_getResponse}!QueryUtil@{QueryUtil}}
+\doxysubsubsection{\texorpdfstring{\_getResponse()}{\_getResponse()}}
+{\footnotesize\ttfamily \label{class_query_util_ae41217d95c4df5dad9783a2b574e02ab} 
+Query\+Util\+::\+\_\+get\+Response (\begin{DoxyParamCaption}\item[{}]{query}{, }\item[{}]{transaction\+Or\+Read\+Time}{, }\item[{}]{retry\+With\+Cursor}{ = {\ttfamily true}, }\item[{}]{explain\+Options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{class_query_util_a974d66ec9d49d52b6d29c69946fed756}{\+\_\+stream()}}, \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}, \mbox{\hyperlink{_0dprotobufjs_2eventemitter_2index_8js_ac6ebb2e1fddfd9205cff6790e2aaa3a6}{on}}, \mbox{\hyperlink{__get_tag_8js_abace523389c17bce1848e3a427871700}{Promise}}, \mbox{\hyperlink{application_8js_a3934419f0f9a2068c705a0013b77fab3}{query}}, \mbox{\hyperlink{reject_8js_a94bc21104657e301a8ec194b529feaed}{reject()}}, \mbox{\hyperlink{_0dprotobufjs_2path_2index_8js_a2001ea102ec496ebdabe15e68493427a}{resolve}}, \mbox{\hyperlink{lodash_2core_8js_a348c112a244660a2f280cda892658c24}{result}}, \mbox{\hyperlink{query-util_8js_a55a953cce0b62371f42d14c2de9a6eb4}{types\+\_\+1}}, \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}, and \mbox{\hyperlink{query-util_8js_a6af3fa6e24c6a46faf4552f3a2ad8783}{util\+\_\+1}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_query_util_ae41217d95c4df5dad9783a2b574e02ab_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_query_util_ac398fc6ff3e1e6de48f050db70f706d1}\index{QueryUtil@{QueryUtil}!\_hasRetryTimedOut@{\_hasRetryTimedOut}}
+\index{\_hasRetryTimedOut@{\_hasRetryTimedOut}!QueryUtil@{QueryUtil}}
+\doxysubsubsection{\texorpdfstring{\_hasRetryTimedOut()}{\_hasRetryTimedOut()}}
+{\footnotesize\ttfamily \label{class_query_util_ac398fc6ff3e1e6de48f050db70f706d1} 
+Query\+Util\+::\+\_\+has\+Retry\+Timed\+Out (\begin{DoxyParamCaption}\item[{}]{method\+Name}{, }\item[{}]{start\+Time}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{query-util_8js_a6af3fa6e24c6a46faf4552f3a2ad8783}{util\+\_\+1}}.
+
+\Hypertarget{class_query_util_a26bdb239ad1d9fc37b8fb5ccab222ec4}\index{QueryUtil@{QueryUtil}!\_isPermanentRpcError@{\_isPermanentRpcError}}
+\index{\_isPermanentRpcError@{\_isPermanentRpcError}!QueryUtil@{QueryUtil}}
+\doxysubsubsection{\texorpdfstring{\_isPermanentRpcError()}{\_isPermanentRpcError()}}
+{\footnotesize\ttfamily \label{class_query_util_a26bdb239ad1d9fc37b8fb5ccab222ec4} 
+Query\+Util\+::\+\_\+is\+Permanent\+Rpc\+Error (\begin{DoxyParamCaption}\item[{}]{err}{, }\item[{}]{method\+Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{query-util_8js_a6af3fa6e24c6a46faf4552f3a2ad8783}{util\+\_\+1}}.
+
+\Hypertarget{class_query_util_a974d66ec9d49d52b6d29c69946fed756}\index{QueryUtil@{QueryUtil}!\_stream@{\_stream}}
+\index{\_stream@{\_stream}!QueryUtil@{QueryUtil}}
+\doxysubsubsection{\texorpdfstring{\_stream()}{\_stream()}}
+{\footnotesize\ttfamily \label{class_query_util_a974d66ec9d49d52b6d29c69946fed756} 
+Query\+Util\+::\+\_\+stream (\begin{DoxyParamCaption}\item[{}]{query}{, }\item[{}]{transaction\+Or\+Read\+Time}{, }\item[{}]{retry\+With\+Cursor}{ = {\ttfamily true}, }\item[{}]{explain\+Options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{logger_2dist_2esm_2index_8esm5_8js_a0adf123df8967a14b5bdd9ff3bbe2d0c}{\+\_\+a}}, \mbox{\hyperlink{firestore-namespace_8js_a0ea74ea11566bd0d53855253d2003d02}{\+\_\+firestore}}, \mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a622460feeccdab6d8f307936fc6b36fb}{callback}}, \mbox{\hyperlink{query-util_8js_ad33cb6840349d3bc93f4fe9de15a6f8f}{constants\+\_\+1}}, \mbox{\hyperlink{query-util_8js_a0d8248e7d9115839596aa13782b68637}{document\+\_\+1}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad061d61e10918d5b27e272593239c0e7}{if()}}, \mbox{\hyperlink{query-util_8js_aa6fdd07b218f5ee1f103f79a4ad6d5f1}{logger\+\_\+1}}, \mbox{\hyperlink{streaming_retry_request_8js_adfab432c3cde545db21ffd40d115cef7}{object\+Mode}}, \mbox{\hyperlink{long_2index_8js_a88083640992a53a144223e2bd602d47d}{or}}, \mbox{\hyperlink{chalk_2source_2index_8js_a391e164e296dc4d66cb9a11c050f2f3d}{proto}}, \mbox{\hyperlink{application_8js_a3934419f0f9a2068c705a0013b77fab3}{query}}, \mbox{\hyperlink{query-util_8js_a0551a3f12d83c39cfce719ff41746801}{query\+\_\+profile\+\_\+1}}, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}}, \mbox{\hyperlink{retries_8js_a0675f7b45c36f3f318e066d6310f8dab}{retryable}}, \mbox{\hyperlink{debug_2src_2node_8js_a822bf74d422c61e6caa292f739dc4786}{stream}}, \mbox{\hyperlink{query-util_8js_a4bf84a2dbc80e17d37c6591ece0577c1}{stream\+\_\+1}}, \mbox{\hyperlink{query-util_8js_ade04b24e14507564885ddbb231b3fc20}{timestamp\+\_\+1}}, \mbox{\hyperlink{query-util_8js_a95595af408c99329f2c923e26c08df94}{trace\+\_\+util\+\_\+1}}, \mbox{\hyperlink{is-stream_2index_8js_a2d5c6d4aa2bc7fd81424482fffdb2c57}{transform}}, \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}, and \mbox{\hyperlink{query-util_8js_a6af3fa6e24c6a46faf4552f3a2ad8783}{util\+\_\+1}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=243pt]{class_query_util_a974d66ec9d49d52b6d29c69946fed756_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{class_query_util_a974d66ec9d49d52b6d29c69946fed756_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_query_util_a9c66244a3f4a05b0a208d1411955933b}\index{QueryUtil@{QueryUtil}!constructor@{constructor}}
+\index{constructor@{constructor}!QueryUtil@{QueryUtil}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_query_util_a9c66244a3f4a05b0a208d1411955933b} 
+Query\+Util\+::constructor (\begin{DoxyParamCaption}\item[{}]{\+\_\+firestore}{, }\item[{}]{\+\_\+query\+Options}{, }\item[{}]{\+\_\+serializer}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+References \mbox{\hyperlink{firestore-namespace_8js_a0ea74ea11566bd0d53855253d2003d02}{\+\_\+firestore}}.
+
+\Hypertarget{class_query_util_a95675d40ac170c992edb7b50356eb76e}\index{QueryUtil@{QueryUtil}!stream@{stream}}
+\index{stream@{stream}!QueryUtil@{QueryUtil}}
+\doxysubsubsection{\texorpdfstring{stream()}{stream()}}
+{\footnotesize\ttfamily \label{class_query_util_a95675d40ac170c992edb7b50356eb76e} 
+Query\+Util\+::stream (\begin{DoxyParamCaption}\item[{}]{query}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a622460feeccdab6d8f307936fc6b36fb}{callback}}, \mbox{\hyperlink{chunk_8js_a49c71f4b8e247d1267a25b3f04caef18}{chunk()}}, \mbox{\hyperlink{firestore__admin__v1__proto__api_8js_a08a4415e9d594ff960030b921d42b91e}{e}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aace6cbf6b92481670f8b8421548f7584}{encoding}}, \mbox{\hyperlink{streaming_retry_request_8js_adfab432c3cde545db21ffd40d115cef7}{object\+Mode}}, \mbox{\hyperlink{application_8js_a3934419f0f9a2068c705a0013b77fab3}{query}}, \mbox{\hyperlink{query-util_8js_a4bf84a2dbc80e17d37c6591ece0577c1}{stream\+\_\+1}}, \mbox{\hyperlink{is-stream_2index_8js_a2d5c6d4aa2bc7fd81424482fffdb2c57}{transform}}, \mbox{\hyperlink{query-util_8js_a55a953cce0b62371f42d14c2de9a6eb4}{types\+\_\+1}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{class_query_util_a95675d40ac170c992edb7b50356eb76e_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/@google-\/cloud/firestore/build/src/reference/\mbox{\hyperlink{query-util_8js}{query-\/util.\+js}}\end{DoxyCompactItemize}

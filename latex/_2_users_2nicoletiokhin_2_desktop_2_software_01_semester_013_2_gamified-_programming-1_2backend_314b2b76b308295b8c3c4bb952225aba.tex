@@ -1,0 +1,33 @@
+\doxysection{/\+Users/nicoletiokhin/\+Desktop/\+Software Semester 3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/lodash/includes.\+js}
+\hypertarget{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_314b2b76b308295b8c3c4bb952225aba}{}\label{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_314b2b76b308295b8c3c4bb952225aba}Checks if {\ttfamily value} is in {\ttfamily collection}. If {\ttfamily collection} is a string, it\textquotesingle{}s checked for a substring of {\ttfamily value}, otherwise \href{http://ecma-international.org/ecma-262/7.0/\#sec-samevaluezero}{\texttt{ {\ttfamily Same\+Value\+Zero}}} is used for equality comparisons. If {\ttfamily from\+Index} is negative, it\textquotesingle{}s used as the offset from the end of {\ttfamily collection}.
+
+@member\+Of \+\_\+ \begin{DoxySince}{Since}
+0.\+1.\+0
+\end{DoxySince}
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Array\texorpdfstring{$\vert$}{|}\+Object\texorpdfstring{$\vert$}{|}string\}} & collection The collection to inspect. \\
+\hline
+{\em \{\texorpdfstring{$\ast$}{*}\}} & value The value to search for. \\
+\hline
+{\em \{number\}} & \mbox{[}from\+Index=0\mbox{]} The index to search from. \\
+\hline
+{\em -\/} & \{Object\} \mbox{[}guard\mbox{]} Enables use as an iteratee for methods like {\ttfamily \+\_\+.\+reduce}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{boolean\} Returns {\ttfamily true} if {\ttfamily value} is found, else {\ttfamily false}.
+\end{DoxyReturn}
+\+\_\+.\+includes(\mbox{[}1, 2, 3\mbox{]}, 1); // =\texorpdfstring{$>$}{>} true
+
+\+\_\+.\+includes(\mbox{[}1, 2, 3\mbox{]}, 1, 2); // =\texorpdfstring{$>$}{>} false
+
+\+\_\+.\+includes(\{ \textquotesingle{}a\textquotesingle{}\+: 1, \textquotesingle{}b\textquotesingle{}\+: 2 \}, 1); // =\texorpdfstring{$>$}{>} true
+
+\+\_\+.\+includes(\textquotesingle{}abcd\textquotesingle{}, \textquotesingle{}bc\textquotesingle{}); // =\texorpdfstring{$>$}{>} true
+
+
+\begin{DoxyCodeInclude}{0}
+
+\end{DoxyCodeInclude}
+ Semester \doxylink{includes_8js}{3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/lodash/includes.\+js} 

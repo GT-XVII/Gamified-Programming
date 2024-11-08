@@ -1,0 +1,15 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$class_scheduler.html" title=" " alt="" coords="5,80,85,106"/>
+<area shape="rect" id="Node000001" href="$class_async_scheduler.html" title=" " alt="" coords="133,80,249,106"/>
+<area shape="poly" id="edge196_Node000000_Node000001" title=" " alt="" coords="100,90,132,90,132,96,100,96"/>
+<area shape="rect" id="Node000002" href="$class_animation_frame_scheduler.html" title=" " alt="" coords="297,5,471,31"/>
+<area shape="poly" id="edge197_Node000001_Node000002" title=" " alt="" coords="229,70,296,40,328,29,330,34,298,45,231,75"/>
+<area shape="rect" id="Node000003" href="$class_asap_scheduler.html" title=" " alt="" coords="330,55,439,80"/>
+<area shape="poly" id="edge198_Node000001_Node000003" title=" " alt="" coords="264,81,329,72,329,77,265,86"/>
+<area shape="rect" id="Node000004" href="$class_queue_scheduler.html" title=" " alt="" coords="326,104,443,130"/>
+<area shape="poly" id="edge199_Node000001_Node000004" title=" " alt="" coords="265,99,325,107,325,112,264,105"/>
+<area shape="rect" id="Node000005" href="$class_virtual_time_scheduler.html" title=" " alt="" coords="312,153,457,179"/>
+<area shape="poly" id="edge200_Node000001_Node000005" title=" " alt="" coords="232,110,298,140,330,150,328,155,296,145,230,115"/>
+<area shape="rect" id="Node000006" href="$class_test_scheduler.html" title=" " alt="" coords="519,153,624,179"/>
+<area shape="poly" id="edge201_Node000005_Node000006" title=" " alt="" coords="472,164,519,164,519,169,472,169"/>
+</map>

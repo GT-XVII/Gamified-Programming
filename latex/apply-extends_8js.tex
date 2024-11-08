@@ -1,0 +1,134 @@
+\doxysection{backend/node\+\_\+modules/yargs/build/lib/utils/apply-\/extends.js File Reference}
+\hypertarget{apply-extends_8js}{}\label{apply-extends_8js}\index{backend/node\_modules/yargs/build/lib/utils/apply-\/extends.js@{backend/node\_modules/yargs/build/lib/utils/apply-\/extends.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function export \mbox{\hyperlink{apply-extends_8js_afa86fd9513186e7c4f22343419d34f9d}{apply\+Extends}} (\mbox{\hyperlink{rxjs_8umd_8js_a729ec4717f914fce241d4dccc9a03066}{config}}, \mbox{\hyperlink{concurrently_2dist_2src_2defaults_8js_a70921e70320e5ca3e972c2b8c6ee9e68}{cwd}}, merge\+Extends, \+\_\+shim)
+\item 
+function \mbox{\hyperlink{apply-extends_8js_aa7357a3221d82d8dc33241aa9eab71d3}{check\+For\+Circular\+Extends}} (cfg\+Path)
+\item 
+function \mbox{\hyperlink{apply-extends_8js_afe44b38203d90a95ee08adb3a8e9794c}{get\+Path\+To\+Default\+Config}} (\mbox{\hyperlink{concurrently_2dist_2src_2defaults_8js_a70921e70320e5ca3e972c2b8c6ee9e68}{cwd}}, path\+To\+Extend)
+\item 
+function \mbox{\hyperlink{apply-extends_8js_a4e93d4d32507ebc42ef6a73c3bb25be2}{merge\+Deep}} (config1, config2)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{apply-extends_8js_a59be084da8908b7d77ff34b25cd84488}{import}} \{ \mbox{\hyperlink{class_y_error}{YError}} \} from \textquotesingle{}../\mbox{\hyperlink{esm_2src_2file_8js_a73ffb0a3b9f028910adc01ac31153d46}{yerror.\+js}}\textquotesingle{}
+\item 
+let \mbox{\hyperlink{apply-extends_8js_a96403762f62d8f0d0fa71c30481062d5}{previously\+Visited\+Configs}} = \mbox{[}$\,$\mbox{]}
+\item 
+let \mbox{\hyperlink{apply-extends_8js_a90a38689fac05010e729986454636436}{shim}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{apply-extends_8js_afa86fd9513186e7c4f22343419d34f9d}\index{apply-\/extends.js@{apply-\/extends.js}!applyExtends@{applyExtends}}
+\index{applyExtends@{applyExtends}!apply-\/extends.js@{apply-\/extends.js}}
+\doxysubsubsection{\texorpdfstring{applyExtends()}{applyExtends()}}
+{\footnotesize\ttfamily \label{apply-extends_8js_afa86fd9513186e7c4f22343419d34f9d} 
+function export apply\+Extends (\begin{DoxyParamCaption}\item[{}]{config}{, }\item[{}]{cwd}{, }\item[{}]{merge\+Extends}{, }\item[{}]{\+\_\+shim}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{apply-extends_8js_afa86fd9513186e7c4f22343419d34f9d}{apply\+Extends()}}, \mbox{\hyperlink{apply-extends_8js_aa7357a3221d82d8dc33241aa9eab71d3}{check\+For\+Circular\+Extends()}}, \mbox{\hyperlink{rxjs_8umd_8js_a729ec4717f914fce241d4dccc9a03066}{config}}, \mbox{\hyperlink{concurrently_2dist_2src_2defaults_8js_a70921e70320e5ca3e972c2b8c6ee9e68}{cwd}}, \mbox{\hyperlink{apply-extends_8js_afe44b38203d90a95ee08adb3a8e9794c}{get\+Path\+To\+Default\+Config()}}, \mbox{\hyperlink{json-bigint_2lib_2stringify_8js_aec316efdeb7b2e5358b7d50869858da1}{JSON}}, \mbox{\hyperlink{apply-extends_8js_a4e93d4d32507ebc42ef6a73c3bb25be2}{merge\+Deep()}}, \mbox{\hyperlink{apply-extends_8js_a96403762f62d8f0d0fa71c30481062d5}{previously\+Visited\+Configs}}, \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require()}}, and \mbox{\hyperlink{apply-extends_8js_a90a38689fac05010e729986454636436}{shim}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{apply-extends_8js_afa86fd9513186e7c4f22343419d34f9d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{apply-extends_8js_afa86fd9513186e7c4f22343419d34f9d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{apply-extends_8js_aa7357a3221d82d8dc33241aa9eab71d3}\index{apply-\/extends.js@{apply-\/extends.js}!checkForCircularExtends@{checkForCircularExtends}}
+\index{checkForCircularExtends@{checkForCircularExtends}!apply-\/extends.js@{apply-\/extends.js}}
+\doxysubsubsection{\texorpdfstring{checkForCircularExtends()}{checkForCircularExtends()}}
+{\footnotesize\ttfamily \label{apply-extends_8js_aa7357a3221d82d8dc33241aa9eab71d3} 
+function check\+For\+Circular\+Extends (\begin{DoxyParamCaption}\item[{}]{cfg\+Path}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{apply-extends_8js_a96403762f62d8f0d0fa71c30481062d5}{previously\+Visited\+Configs}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{apply-extends_8js_aa7357a3221d82d8dc33241aa9eab71d3_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{apply-extends_8js_afe44b38203d90a95ee08adb3a8e9794c}\index{apply-\/extends.js@{apply-\/extends.js}!getPathToDefaultConfig@{getPathToDefaultConfig}}
+\index{getPathToDefaultConfig@{getPathToDefaultConfig}!apply-\/extends.js@{apply-\/extends.js}}
+\doxysubsubsection{\texorpdfstring{getPathToDefaultConfig()}{getPathToDefaultConfig()}}
+{\footnotesize\ttfamily \label{apply-extends_8js_afe44b38203d90a95ee08adb3a8e9794c} 
+function get\+Path\+To\+Default\+Config (\begin{DoxyParamCaption}\item[{}]{cwd}{, }\item[{}]{path\+To\+Extend}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{concurrently_2dist_2src_2defaults_8js_a70921e70320e5ca3e972c2b8c6ee9e68}{cwd}}, and \mbox{\hyperlink{apply-extends_8js_a90a38689fac05010e729986454636436}{shim}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{apply-extends_8js_afe44b38203d90a95ee08adb3a8e9794c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{apply-extends_8js_a4e93d4d32507ebc42ef6a73c3bb25be2}\index{apply-\/extends.js@{apply-\/extends.js}!mergeDeep@{mergeDeep}}
+\index{mergeDeep@{mergeDeep}!apply-\/extends.js@{apply-\/extends.js}}
+\doxysubsubsection{\texorpdfstring{mergeDeep()}{mergeDeep()}}
+{\footnotesize\ttfamily \label{apply-extends_8js_a4e93d4d32507ebc42ef6a73c3bb25be2} 
+function merge\+Deep (\begin{DoxyParamCaption}\item[{}]{config1}{, }\item[{}]{config2}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{src_2util_2minimal_8js_a325c4e317c38d8497130ebce7670be2f}{Array}}, \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2util_8js_abf86e241701120aea6dfd247bfc055cd}{is\+Object}}, \mbox{\hyperlink{apply-extends_8js_a4e93d4d32507ebc42ef6a73c3bb25be2}{merge\+Deep()}}, \mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}, and \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=146pt]{apply-extends_8js_a4e93d4d32507ebc42ef6a73c3bb25be2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{apply-extends_8js_a4e93d4d32507ebc42ef6a73c3bb25be2_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{apply-extends_8js_a59be084da8908b7d77ff34b25cd84488}\index{apply-\/extends.js@{apply-\/extends.js}!import@{import}}
+\index{import@{import}!apply-\/extends.js@{apply-\/extends.js}}
+\doxysubsubsection{\texorpdfstring{import}{import}}
+{\footnotesize\ttfamily \label{apply-extends_8js_a59be084da8908b7d77ff34b25cd84488} 
+import \{ \mbox{\hyperlink{class_y_error}{YError}} \} from \textquotesingle{}../\mbox{\hyperlink{esm_2src_2file_8js_a73ffb0a3b9f028910adc01ac31153d46}{yerror.\+js}}\textquotesingle{}}
+
+\Hypertarget{apply-extends_8js_a96403762f62d8f0d0fa71c30481062d5}\index{apply-\/extends.js@{apply-\/extends.js}!previouslyVisitedConfigs@{previouslyVisitedConfigs}}
+\index{previouslyVisitedConfigs@{previouslyVisitedConfigs}!apply-\/extends.js@{apply-\/extends.js}}
+\doxysubsubsection{\texorpdfstring{previouslyVisitedConfigs}{previouslyVisitedConfigs}}
+{\footnotesize\ttfamily \label{apply-extends_8js_a96403762f62d8f0d0fa71c30481062d5} 
+let previously\+Visited\+Configs = \mbox{[}$\,$\mbox{]}}
+
+\Hypertarget{apply-extends_8js_a90a38689fac05010e729986454636436}\index{apply-\/extends.js@{apply-\/extends.js}!shim@{shim}}
+\index{shim@{shim}!apply-\/extends.js@{apply-\/extends.js}}
+\doxysubsubsection{\texorpdfstring{shim}{shim}}
+{\footnotesize\ttfamily \label{apply-extends_8js_a90a38689fac05010e729986454636436} 
+let shim}
+

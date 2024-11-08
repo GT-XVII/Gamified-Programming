@@ -1,0 +1,31 @@
+\doxysection{/\+Users/nicoletiokhin/\+Desktop/\+Software Semester 3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/lodash/partition.\+js}
+\hypertarget{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_5168e99946c9f4e92324bc4d6e3a90d9}{}\label{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_5168e99946c9f4e92324bc4d6e3a90d9}Creates an array of elements split into two groups, the first of which contains elements {\ttfamily predicate} returns truthy for, the second of which contains elements {\ttfamily predicate} returns falsey for. The predicate is invoked with one argument\+: (value).
+
+@member\+Of \+\_\+ \begin{DoxySince}{Since}
+3.\+0.\+0
+\end{DoxySince}
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Array\texorpdfstring{$\vert$}{|}\+Object\}} & collection The collection to iterate over. \\
+\hline
+{\em \{\+Function\}} & \mbox{[}predicate=\+\_\+.\+identity\mbox{]} The function invoked per iteration. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Array\} Returns the array of grouped elements.
+\end{DoxyReturn}
+var users = \mbox{[} \{ \textquotesingle{}user\textquotesingle{}\+: \textquotesingle{}barney\textquotesingle{}, \textquotesingle{}age\textquotesingle{}\+: 36, \textquotesingle{}active\textquotesingle{}\+: false \}, \{ \textquotesingle{}user\textquotesingle{}\+: \textquotesingle{}fred\textquotesingle{}, \textquotesingle{}age\textquotesingle{}\+: 40, \textquotesingle{}active\textquotesingle{}\+: true \}, \{ \textquotesingle{}user\textquotesingle{}\+: \textquotesingle{}pebbles\textquotesingle{}, \textquotesingle{}age\textquotesingle{}\+: 1, \textquotesingle{}active\textquotesingle{}\+: false \} \mbox{]};
+
+\+\_\+.\+partition(users, function(o) \{ return o.\+active; \}); // =\texorpdfstring{$>$}{>} objects for \mbox{[}\mbox{[}\textquotesingle{}fred\textquotesingle{}\mbox{]}, \mbox{[}\textquotesingle{}barney\textquotesingle{}, \textquotesingle{}pebbles\textquotesingle{}\mbox{]}\mbox{]}
+
+// The {\ttfamily \+\_\+.\+matches} iteratee shorthand. \+\_\+.\+partition(users, \{ \textquotesingle{}age\textquotesingle{}\+: 1, \textquotesingle{}active\textquotesingle{}\+: false \}); // =\texorpdfstring{$>$}{>} objects for \mbox{[}\mbox{[}\textquotesingle{}pebbles\textquotesingle{}\mbox{]}, \mbox{[}\textquotesingle{}barney\textquotesingle{}, \textquotesingle{}fred\textquotesingle{}\mbox{]}\mbox{]}
+
+// The {\ttfamily \+\_\+.\+matches\+Property} iteratee shorthand. \+\_\+.\+partition(users, \mbox{[}\textquotesingle{}active\textquotesingle{}, false\mbox{]}); // =\texorpdfstring{$>$}{>} objects for \mbox{[}\mbox{[}\textquotesingle{}barney\textquotesingle{}, \textquotesingle{}pebbles\textquotesingle{}\mbox{]}, \mbox{[}\textquotesingle{}fred\textquotesingle{}\mbox{]}\mbox{]}
+
+// The {\ttfamily \+\_\+.\+property} iteratee shorthand. \+\_\+.\+partition(users, \textquotesingle{}active\textquotesingle{}); // =\texorpdfstring{$>$}{>} objects for \mbox{[}\mbox{[}\textquotesingle{}fred\textquotesingle{}\mbox{]}, \mbox{[}\textquotesingle{}barney\textquotesingle{}, \textquotesingle{}pebbles\textquotesingle{}\mbox{]}\mbox{]}
+
+
+\begin{DoxyCodeInclude}{0}
+
+\end{DoxyCodeInclude}
+ Semester \doxylink{lodash_2partition_8js}{3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/lodash/partition.\+js} 

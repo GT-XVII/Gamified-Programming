@@ -1,0 +1,86 @@
+\doxysection{backend/node\+\_\+modules/jose/dist/browser/runtime/rsaes.js File Reference}
+\hypertarget{browser_2runtime_2rsaes_8js}{}\label{browser_2runtime_2rsaes_8js}\index{backend/node\_modules/jose/dist/browser/runtime/rsaes.js@{backend/node\_modules/jose/dist/browser/runtime/rsaes.js}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{component_2dist_2esm_2index_8esm2017_8js_a953be46b94f595d839e88a6d3d270309}{import}} subtle\+Algorithm from subtle\+\_\+rsaes \mbox{\hyperlink{browser_2runtime_2rsaes_8js_ad71b065f5b1a390405da40e7fb61870a}{js}}
+\item 
+\mbox{\hyperlink{component_2dist_2esm_2index_8esm2017_8js_a953be46b94f595d839e88a6d3d270309}{import}} \mbox{\hyperlink{browser_2runtime_2rsaes_8js_a134431f40ac7c551b09e1fec2f270a0e}{crypto}}
+\item 
+import \mbox{\hyperlink{browser_2runtime_2rsaes_8js_a59be084da8908b7d77ff34b25cd84488}{import}} \{ \mbox{\hyperlink{node_2cjs_2lib_2crypto__key_8js_af27b6a4feebf02858bb969780864aa80}{check\+Enc\+Crypto\+Key}} \} from \textquotesingle{}../lib/\mbox{\hyperlink{esm_2src_2file_8js_a73ffb0a3b9f028910adc01ac31153d46}{crypto\+\_\+key.\+js}}\textquotesingle{}
+\item 
+export \mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{browser_2runtime_2rsaes_8js_aac89a6db5126c85c363a079abd62de96}{encrypt}}
+\item 
+export \mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{browser_2runtime_2rsaes_8js_a07d05c7641944921cf3d33f7bcb4714a}{decrypt}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{browser_2runtime_2rsaes_8js_a134431f40ac7c551b09e1fec2f270a0e}\index{rsaes.js@{rsaes.js}!crypto@{crypto}}
+\index{crypto@{crypto}!rsaes.js@{rsaes.js}}
+\doxysubsubsection{\texorpdfstring{crypto}{crypto}}
+{\footnotesize\ttfamily \label{browser_2runtime_2rsaes_8js_a134431f40ac7c551b09e1fec2f270a0e} 
+\mbox{\hyperlink{component_2dist_2esm_2index_8esm2017_8js_a953be46b94f595d839e88a6d3d270309}{import}} crypto}
+
+\Hypertarget{browser_2runtime_2rsaes_8js_a07d05c7641944921cf3d33f7bcb4714a}\index{rsaes.js@{rsaes.js}!decrypt@{decrypt}}
+\index{decrypt@{decrypt}!rsaes.js@{rsaes.js}}
+\doxysubsubsection{\texorpdfstring{decrypt}{decrypt}}
+{\footnotesize\ttfamily \label{browser_2runtime_2rsaes_8js_a07d05c7641944921cf3d33f7bcb4714a} 
+export \mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} decrypt}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}}\ (alg,\ key,\ encryptedKey)\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{browser_2runtime_2webcrypto_8js_a07bf2f5cc958f8fc7cfbe07d09a0f9e0}{isCryptoKey}}(key))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ TypeError(invalidKeyInput(key,\ ...\mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2index_8js_ab7462236e30435444188ea2b81d92654}{types}}));}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{node_2cjs_2lib_2crypto__key_8js_af27b6a4feebf02858bb969780864aa80}{checkEncCryptoKey}}(key,\ alg,\ \textcolor{stringliteral}{'decrypt'},\ \textcolor{stringliteral}{'unwrapKey'});}
+\DoxyCodeLine{\ \ \ \ checkKeyLength(alg,\ key);}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (key.usages.includes(\textcolor{stringliteral}{'decrypt'}))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{__clone_array_buffer_8js_a23efaf497399fa716c3e05b817cb7d0c}{Uint8Array}}(await\ \mbox{\hyperlink{browser_2runtime_2rsaes_8js_a134431f40ac7c551b09e1fec2f270a0e}{crypto}}.subtle.decrypt(subtleAlgorithm(alg),\ key,\ encryptedKey));}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (key.usages.includes(\textcolor{stringliteral}{'unwrapKey'}))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ cryptoKeyCek\ =\ await\ \mbox{\hyperlink{browser_2runtime_2rsaes_8js_a134431f40ac7c551b09e1fec2f270a0e}{crypto}}.subtle.unwrapKey(\textcolor{stringliteral}{'raw'},\ encryptedKey,\ key,\ subtleAlgorithm(alg),\ ...\mbox{\hyperlink{bogus_8js_a4114069b252e496a6cfc7984d010ee25}{bogusWebCrypto}});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{__clone_array_buffer_8js_a23efaf497399fa716c3e05b817cb7d0c}{Uint8Array}}(await\ \mbox{\hyperlink{browser_2runtime_2rsaes_8js_a134431f40ac7c551b09e1fec2f270a0e}{crypto}}.subtle.exportKey(\textcolor{stringliteral}{'raw'},\ cryptoKeyCek));}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ TypeError(\textcolor{stringliteral}{'RSA-\/OAEP\ key\ "{}usages"{}\ must\ include\ "{}decrypt"{}\ or\ "{}unwrapKey"{}\ for\ this\ operation'});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{browser_2runtime_2rsaes_8js_aac89a6db5126c85c363a079abd62de96}\index{rsaes.js@{rsaes.js}!encrypt@{encrypt}}
+\index{encrypt@{encrypt}!rsaes.js@{rsaes.js}}
+\doxysubsubsection{\texorpdfstring{encrypt}{encrypt}}
+{\footnotesize\ttfamily \label{browser_2runtime_2rsaes_8js_aac89a6db5126c85c363a079abd62de96} 
+export \mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} encrypt}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}}\ (alg,\ key,\ cek)\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{browser_2runtime_2webcrypto_8js_a07bf2f5cc958f8fc7cfbe07d09a0f9e0}{isCryptoKey}}(key))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ TypeError(invalidKeyInput(key,\ ...\mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2index_8js_ab7462236e30435444188ea2b81d92654}{types}}));}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{node_2cjs_2lib_2crypto__key_8js_af27b6a4feebf02858bb969780864aa80}{checkEncCryptoKey}}(key,\ alg,\ \textcolor{stringliteral}{'encrypt'},\ \textcolor{stringliteral}{'wrapKey'});}
+\DoxyCodeLine{\ \ \ \ checkKeyLength(alg,\ key);}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (key.usages.includes(\textcolor{stringliteral}{'encrypt'}))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{__clone_array_buffer_8js_a23efaf497399fa716c3e05b817cb7d0c}{Uint8Array}}(await\ \mbox{\hyperlink{browser_2runtime_2rsaes_8js_a134431f40ac7c551b09e1fec2f270a0e}{crypto}}.subtle.encrypt(subtleAlgorithm(alg),\ key,\ cek));}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (key.usages.includes(\textcolor{stringliteral}{'wrapKey'}))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ cryptoKeyCek\ =\ await\ \mbox{\hyperlink{browser_2runtime_2rsaes_8js_a134431f40ac7c551b09e1fec2f270a0e}{crypto}}.subtle.importKey(\textcolor{stringliteral}{'raw'},\ cek,\ ...\mbox{\hyperlink{bogus_8js_a4114069b252e496a6cfc7984d010ee25}{bogusWebCrypto}});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{__clone_array_buffer_8js_a23efaf497399fa716c3e05b817cb7d0c}{Uint8Array}}(await\ \mbox{\hyperlink{browser_2runtime_2rsaes_8js_a134431f40ac7c551b09e1fec2f270a0e}{crypto}}.subtle.wrapKey(\textcolor{stringliteral}{'raw'},\ cryptoKeyCek,\ key,\ subtleAlgorithm(alg)));}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ TypeError(\textcolor{stringliteral}{'RSA-\/OAEP\ key\ "{}usages"{}\ must\ include\ "{}encrypt"{}\ or\ "{}wrapKey"{}\ for\ this\ operation'});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{browser_2runtime_2rsaes_8js_a59be084da8908b7d77ff34b25cd84488}\index{rsaes.js@{rsaes.js}!import@{import}}
+\index{import@{import}!rsaes.js@{rsaes.js}}
+\doxysubsubsection{\texorpdfstring{import}{import}}
+{\footnotesize\ttfamily \label{browser_2runtime_2rsaes_8js_a59be084da8908b7d77ff34b25cd84488} 
+import \{ \mbox{\hyperlink{node_2cjs_2lib_2crypto__key_8js_af27b6a4feebf02858bb969780864aa80}{check\+Enc\+Crypto\+Key}} \} from \textquotesingle{}../lib/\mbox{\hyperlink{esm_2src_2file_8js_a73ffb0a3b9f028910adc01ac31153d46}{crypto\+\_\+key.\+js}}\textquotesingle{}}
+
+\Hypertarget{browser_2runtime_2rsaes_8js_ad71b065f5b1a390405da40e7fb61870a}\index{rsaes.js@{rsaes.js}!js@{js}}
+\index{js@{js}!rsaes.js@{rsaes.js}}
+\doxysubsubsection{\texorpdfstring{js}{js}}
+{\footnotesize\ttfamily \label{browser_2runtime_2rsaes_8js_ad71b065f5b1a390405da40e7fb61870a} 
+\mbox{\hyperlink{component_2dist_2esm_2index_8esm2017_8js_a953be46b94f595d839e88a6d3d270309}{import}} invalid\+Key\+Input from lib invalid\+\_\+key\+\_\+input js}
+

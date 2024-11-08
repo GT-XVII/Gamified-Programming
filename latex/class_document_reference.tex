@@ -1,0 +1,329 @@
+\doxysection{Document\+Reference Class Reference}
+\hypertarget{class_document_reference}{}\label{class_document_reference}\index{DocumentReference@{DocumentReference}}
+
+
+Collaboration diagram for Document\+Reference\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{class_document_reference__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{Indent}\textbf{ Document\+Reference\#firestore}\par
+{\em The \mbox{[}\doxylink{class_firestore}{Firestore}\mbox{]}{\ttfamily \doxylink{class_firestore}{Firestore}} instance for the \doxylink{class_firestore}{Firestore} database (useful for performing transactions, etc.).
+
+@type \{\doxylink{class_firestore}{Firestore}\}
+
+@readonly }\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_document_reference_a087b59b13aa6232e09a90181f216e733}{get}} \mbox{\hyperlink{class_document_reference_ad6bd851cc58a0d201c5d459513f6b167}{firestore}} ()
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Document\+Reference\#path}\par
+{\em \doxylink{class_a}{A} string representing the path of the referenced document (relative to the root of the database).
+
+@type \{string\}
+
+@readonly }\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_document_reference_a087b59b13aa6232e09a90181f216e733}{get}} \mbox{\hyperlink{class_document_reference_a714c42f11204902413d928afe05c9906}{path}} ()
+\end{DoxyCompactItemize}
+\end{Indent}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_document_reference_a3a05f4f058c81c8ecfc15adb2a55e234}{constructor}} (\mbox{\hyperlink{firestore-namespace_8js_a0ea74ea11566bd0d53855253d2003d02}{\+\_\+firestore}}, \+\_\+path, \+\_\+converter=(0, types\+\_\+1.\+default\+Converter)())
+\item 
+\mbox{\hyperlink{class_document_reference_a087b59b13aa6232e09a90181f216e733}{get}} \mbox{\hyperlink{class_document_reference_a4a1c8d380a66069415d45e168ce1330f}{formatted\+Name}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Document\+Reference\#id}
+The last path element of the referenced document.
+
+@type \{string\}
+
+@readonly \begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_document_reference_a087b59b13aa6232e09a90181f216e733}{get}} \mbox{\hyperlink{class_document_reference_ae6512023e68f0c9c958ecd40bd228a91}{\+\_\+resource\+Path}} ()
+\item 
+\mbox{\hyperlink{class_document_reference_a087b59b13aa6232e09a90181f216e733}{get}} \mbox{\hyperlink{class_document_reference_ab5c9f07c9c496499d0132a5bc43d3911}{id}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Document\+Reference\#parent}
+\doxylink{class_a}{A} reference to the collection to which this \doxylink{class_document_reference}{Document\+Reference} belongs.
+
+@type \{\doxylink{class_collection_reference}{Collection\+Reference}\} @readonly \begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_document_reference_a1db3fdf09e9cb08683a56070dc0da787}{to\+Proto}} ()
+\item 
+\mbox{\hyperlink{class_document_reference_a087b59b13aa6232e09a90181f216e733}{get}} \mbox{\hyperlink{class_document_reference_af1c560a8e9df67371768e53c9390b1ae}{parent}} ()
+\item 
+\mbox{\hyperlink{class_document_reference_a087b59b13aa6232e09a90181f216e733}{get}} ()
+\item 
+\mbox{\hyperlink{class_document_reference_ad10c59946aacd496ed2e784def9dfa5b}{collection}} (collection\+Path)
+\item 
+\mbox{\hyperlink{class_document_reference_ace9430220bcb4c53219f1403e9d0d5f4}{list\+Collections}} ()
+\item 
+\mbox{\hyperlink{class_document_reference_a51f667c86361a923cbc64fa3e2c409a0}{create}} (\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}})
+\item 
+\mbox{\hyperlink{class_document_reference_a22d9483c93b93b86d7ddbc6b81b95ae8}{delete}} (precondition)
+\item 
+\mbox{\hyperlink{class_document_reference_a84995c5ddeee0bf282d71943a80e8a61}{set}} (\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}, options)
+\item 
+\mbox{\hyperlink{class_document_reference_a983d2c0ff77a95d14b0e5f4197615296}{update}} (data\+Or\+Field,...precondition\+Or\+Values)
+\item 
+\mbox{\hyperlink{class_document_reference_a88a86621f0cb65fd3f064806301849e3}{on\+Snapshot}} (on\+Next, on\+Error)
+\item 
+\mbox{\hyperlink{class_document_reference_af5c8865fb03a59ac1f9feee3b3edeaf0}{is\+Equal}} (other)
+\item 
+\mbox{\hyperlink{class_document_reference_a3d65dacdef2f5cf756a3ff4879927df2}{with\+Converter}} (\mbox{\hyperlink{converter_8js_a1662812dcd90d6e58cb1f5b9f2b82e4a}{converter}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_a}{A} \doxylink{class_document_reference}{Document\+Reference} refers to a document location in a \doxylink{class_firestore}{Firestore} database and can be used to write, read, or listen to the location. The document at the referenced location may or may not exist. \doxylink{class_a}{A} \doxylink{class_document_reference}{Document\+Reference} can also be used to create a \mbox{[}\doxylink{class_collection_reference}{Collection\+Reference}\mbox{]}{\ttfamily \doxylink{class_collection_reference}{Collection\+Reference}} to a subcollection. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_document_reference_ae6512023e68f0c9c958ecd40bd228a91}\index{DocumentReference@{DocumentReference}!\_resourcePath@{\_resourcePath}}
+\index{\_resourcePath@{\_resourcePath}!DocumentReference@{DocumentReference}}
+\doxysubsubsection{\texorpdfstring{\_resourcePath()}{\_resourcePath()}}
+{\footnotesize\ttfamily \label{class_document_reference_ae6512023e68f0c9c958ecd40bd228a91} 
+\mbox{\hyperlink{class_document_reference_a087b59b13aa6232e09a90181f216e733}{get}} Document\+Reference\+::\+\_\+resource\+Path (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Returns a resource path for this document. \Hypertarget{class_document_reference_ad10c59946aacd496ed2e784def9dfa5b}\index{DocumentReference@{DocumentReference}!collection@{collection}}
+\index{collection@{collection}!DocumentReference@{DocumentReference}}
+\doxysubsubsection{\texorpdfstring{collection()}{collection()}}
+{\footnotesize\ttfamily \label{class_document_reference_ad10c59946aacd496ed2e784def9dfa5b} 
+Document\+Reference\+::collection (\begin{DoxyParamCaption}\item[{}]{collection\+Path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{firestore-namespace_8js_a0ea74ea11566bd0d53855253d2003d02}{\+\_\+firestore}}, \mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}, \mbox{\hyperlink{core_8min_8js_a46d2d1e8780c9b3b6a642760bb148e61}{an}}, \mbox{\hyperlink{class_document_reference_ad10c59946aacd496ed2e784def9dfa5b}{collection()}}, \mbox{\hyperlink{document-reference_8js_a6d51c10fc0c74acc4f84344686f994fa}{collection\+\_\+reference\+\_\+1}}, \mbox{\hyperlink{long_2index_8js_ad7dc44f0ebdb746f4a5b0612ae9315cb}{not}}, \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}, \mbox{\hyperlink{class_document_reference_a714c42f11204902413d928afe05c9906}{path()}}, and \mbox{\hyperlink{document-reference_8js_a705fe9bf53f002be551bde47cc3a6069}{path\+\_\+1}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_document_reference_ad10c59946aacd496ed2e784def9dfa5b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{class_document_reference_ad10c59946aacd496ed2e784def9dfa5b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_document_reference_a3a05f4f058c81c8ecfc15adb2a55e234}\index{DocumentReference@{DocumentReference}!constructor@{constructor}}
+\index{constructor@{constructor}!DocumentReference@{DocumentReference}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_document_reference_a3a05f4f058c81c8ecfc15adb2a55e234} 
+Document\+Reference\+::constructor (\begin{DoxyParamCaption}\item[{}]{\+\_\+firestore}{, }\item[{}]{\+\_\+path}{, }\item[{}]{\+\_\+converter}{ = {\ttfamily (0,~types\+\_\+1.defaultConverter)()}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+References \mbox{\hyperlink{firestore-namespace_8js_a0ea74ea11566bd0d53855253d2003d02}{\+\_\+firestore}}.
+
+\Hypertarget{class_document_reference_a51f667c86361a923cbc64fa3e2c409a0}\index{DocumentReference@{DocumentReference}!create@{create}}
+\index{create@{create}!DocumentReference@{DocumentReference}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily \label{class_document_reference_a51f667c86361a923cbc64fa3e2c409a0} 
+Document\+Reference\+::create (\begin{DoxyParamCaption}\item[{}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{firestore-namespace_8js_a0ea74ea11566bd0d53855253d2003d02}{\+\_\+firestore}}, and \mbox{\hyperlink{document-reference_8js_a95595af408c99329f2c923e26c08df94}{trace\+\_\+util\+\_\+1}}.
+
+\Hypertarget{class_document_reference_a22d9483c93b93b86d7ddbc6b81b95ae8}\index{DocumentReference@{DocumentReference}!delete@{delete}}
+\index{delete@{delete}!DocumentReference@{DocumentReference}}
+\doxysubsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily \label{class_document_reference_a22d9483c93b93b86d7ddbc6b81b95ae8} 
+Document\+Reference\+::delete (\begin{DoxyParamCaption}\item[{}]{precondition}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{firestore-namespace_8js_a0ea74ea11566bd0d53855253d2003d02}{\+\_\+firestore}}, and \mbox{\hyperlink{document-reference_8js_a95595af408c99329f2c923e26c08df94}{trace\+\_\+util\+\_\+1}}.
+
+\Hypertarget{class_document_reference_ad6bd851cc58a0d201c5d459513f6b167}\index{DocumentReference@{DocumentReference}!firestore@{firestore}}
+\index{firestore@{firestore}!DocumentReference@{DocumentReference}}
+\doxysubsubsection{\texorpdfstring{firestore()}{firestore()}}
+{\footnotesize\ttfamily \label{class_document_reference_ad6bd851cc58a0d201c5d459513f6b167} 
+\mbox{\hyperlink{class_document_reference_a087b59b13aa6232e09a90181f216e733}{get}} Document\+Reference\+::firestore (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{firestore-namespace_8js_a0ea74ea11566bd0d53855253d2003d02}{\+\_\+firestore}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{class_document_reference_ad6bd851cc58a0d201c5d459513f6b167_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_document_reference_a4a1c8d380a66069415d45e168ce1330f}\index{DocumentReference@{DocumentReference}!formattedName@{formattedName}}
+\index{formattedName@{formattedName}!DocumentReference@{DocumentReference}}
+\doxysubsubsection{\texorpdfstring{formattedName()}{formattedName()}}
+{\footnotesize\ttfamily \label{class_document_reference_a4a1c8d380a66069415d45e168ce1330f} 
+\mbox{\hyperlink{class_document_reference_a087b59b13aa6232e09a90181f216e733}{get}} Document\+Reference\+::formatted\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+The string representation of the \doxylink{class_document_reference}{Document\+Reference}\textquotesingle{}s location. 
+
+References \mbox{\hyperlink{class_document_reference_ad6bd851cc58a0d201c5d459513f6b167}{firestore()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{class_document_reference_a4a1c8d380a66069415d45e168ce1330f_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_document_reference_a087b59b13aa6232e09a90181f216e733}\index{DocumentReference@{DocumentReference}!get@{get}}
+\index{get@{get}!DocumentReference@{DocumentReference}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{class_document_reference_a087b59b13aa6232e09a90181f216e733} 
+Document\+Reference\+::get (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{firestore-namespace_8js_a0ea74ea11566bd0d53855253d2003d02}{\+\_\+firestore}}, and \mbox{\hyperlink{document-reference_8js_a95595af408c99329f2c923e26c08df94}{trace\+\_\+util\+\_\+1}}.
+
+\Hypertarget{class_document_reference_ab5c9f07c9c496499d0132a5bc43d3911}\index{DocumentReference@{DocumentReference}!id@{id}}
+\index{id@{id}!DocumentReference@{DocumentReference}}
+\doxysubsubsection{\texorpdfstring{id()}{id()}}
+{\footnotesize\ttfamily \label{class_document_reference_ab5c9f07c9c496499d0132a5bc43d3911} 
+\mbox{\hyperlink{class_document_reference_a087b59b13aa6232e09a90181f216e733}{get}} Document\+Reference\+::id (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_document_reference_af5c8865fb03a59ac1f9feee3b3edeaf0}\index{DocumentReference@{DocumentReference}!isEqual@{isEqual}}
+\index{isEqual@{isEqual}!DocumentReference@{DocumentReference}}
+\doxysubsubsection{\texorpdfstring{isEqual()}{isEqual()}}
+{\footnotesize\ttfamily \label{class_document_reference_af5c8865fb03a59ac1f9feee3b3edeaf0} 
+Document\+Reference\+::is\+Equal (\begin{DoxyParamCaption}\item[{}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns true if this {\ttfamily \doxylink{class_document_reference}{Document\+Reference}} is equal to the provided value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\texorpdfstring{$\ast$}{*}\}} & other The value to compare against. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{boolean\} true if this {\ttfamily \doxylink{class_document_reference}{Document\+Reference}} is equal to the provided value. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{firestore-namespace_8js_a0ea74ea11566bd0d53855253d2003d02}{\+\_\+firestore}}, and \mbox{\hyperlink{class_document_reference_af5c8865fb03a59ac1f9feee3b3edeaf0}{is\+Equal()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{class_document_reference_af5c8865fb03a59ac1f9feee3b3edeaf0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{class_document_reference_af5c8865fb03a59ac1f9feee3b3edeaf0_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_document_reference_ace9430220bcb4c53219f1403e9d0d5f4}\index{DocumentReference@{DocumentReference}!listCollections@{listCollections}}
+\index{listCollections@{listCollections}!DocumentReference@{DocumentReference}}
+\doxysubsubsection{\texorpdfstring{listCollections()}{listCollections()}}
+{\footnotesize\ttfamily \label{class_document_reference_ace9430220bcb4c53219f1403e9d0d5f4} 
+Document\+Reference\+::list\+Collections (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{firestore-namespace_8js_a0ea74ea11566bd0d53855253d2003d02}{\+\_\+firestore}}, and \mbox{\hyperlink{document-reference_8js_a95595af408c99329f2c923e26c08df94}{trace\+\_\+util\+\_\+1}}.
+
+\Hypertarget{class_document_reference_a88a86621f0cb65fd3f064806301849e3}\index{DocumentReference@{DocumentReference}!onSnapshot@{onSnapshot}}
+\index{onSnapshot@{onSnapshot}!DocumentReference@{DocumentReference}}
+\doxysubsubsection{\texorpdfstring{onSnapshot()}{onSnapshot()}}
+{\footnotesize\ttfamily \label{class_document_reference_a88a86621f0cb65fd3f064806301849e3} 
+Document\+Reference\+::on\+Snapshot (\begin{DoxyParamCaption}\item[{}]{on\+Next}{, }\item[{}]{on\+Error}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{firestore-namespace_8js_a0ea74ea11566bd0d53855253d2003d02}{\+\_\+firestore}}, \mbox{\hyperlink{document-reference_8js_a0d8248e7d9115839596aa13782b68637}{document\+\_\+1}}, \mbox{\hyperlink{document-reference_8js_a0936448cd0e11eefbb0fc1ae147a3141}{Document\+Reference}}, \mbox{\hyperlink{firestore-namespace_8js_a6c18541a3018cee632d7e797bb983f36}{firestore}}, \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}, \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require()}}, \mbox{\hyperlink{ordered-map_8min_8js_aa4a39500e3f754a8f2e1fd50b9ae523c}{size}}, and \mbox{\hyperlink{document-reference_8js_aa37716c5385ffbe958d12dba0dab85f8}{validate\+\_\+1}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{class_document_reference_a88a86621f0cb65fd3f064806301849e3_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_document_reference_af1c560a8e9df67371768e53c9390b1ae}\index{DocumentReference@{DocumentReference}!parent@{parent}}
+\index{parent@{parent}!DocumentReference@{DocumentReference}}
+\doxysubsubsection{\texorpdfstring{parent()}{parent()}}
+{\footnotesize\ttfamily \label{class_document_reference_af1c560a8e9df67371768e53c9390b1ae} 
+\mbox{\hyperlink{class_document_reference_a087b59b13aa6232e09a90181f216e733}{get}} Document\+Reference\+::parent (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{firestore-namespace_8js_a0ea74ea11566bd0d53855253d2003d02}{\+\_\+firestore}}, and \mbox{\hyperlink{document-reference_8js_a6d51c10fc0c74acc4f84344686f994fa}{collection\+\_\+reference\+\_\+1}}.
+
+\Hypertarget{class_document_reference_a714c42f11204902413d928afe05c9906}\index{DocumentReference@{DocumentReference}!path@{path}}
+\index{path@{path}!DocumentReference@{DocumentReference}}
+\doxysubsubsection{\texorpdfstring{path()}{path()}}
+{\footnotesize\ttfamily \label{class_document_reference_a714c42f11204902413d928afe05c9906} 
+\mbox{\hyperlink{class_document_reference_a087b59b13aa6232e09a90181f216e733}{get}} Document\+Reference\+::path (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_document_reference_a714c42f11204902413d928afe05c9906_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_document_reference_a84995c5ddeee0bf282d71943a80e8a61}\index{DocumentReference@{DocumentReference}!set@{set}}
+\index{set@{set}!DocumentReference@{DocumentReference}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily \label{class_document_reference_a84995c5ddeee0bf282d71943a80e8a61} 
+Document\+Reference\+::set (\begin{DoxyParamCaption}\item[{}]{data}{, }\item[{}]{options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{firestore-namespace_8js_a0ea74ea11566bd0d53855253d2003d02}{\+\_\+firestore}}, and \mbox{\hyperlink{document-reference_8js_a95595af408c99329f2c923e26c08df94}{trace\+\_\+util\+\_\+1}}.
+
+\Hypertarget{class_document_reference_a1db3fdf09e9cb08683a56070dc0da787}\index{DocumentReference@{DocumentReference}!toProto@{toProto}}
+\index{toProto@{toProto}!DocumentReference@{DocumentReference}}
+\doxysubsubsection{\texorpdfstring{toProto()}{toProto()}}
+{\footnotesize\ttfamily \label{class_document_reference_a1db3fdf09e9cb08683a56070dc0da787} 
+Document\+Reference\+::to\+Proto (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Converts this \doxylink{class_document_reference}{Document\+Reference} to the \doxylink{class_firestore}{Firestore} Proto representation. \Hypertarget{class_document_reference_a983d2c0ff77a95d14b0e5f4197615296}\index{DocumentReference@{DocumentReference}!update@{update}}
+\index{update@{update}!DocumentReference@{DocumentReference}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{class_document_reference_a983d2c0ff77a95d14b0e5f4197615296} 
+Document\+Reference\+::update (\begin{DoxyParamCaption}\item[{}]{data\+Or\+Field}{, }\item[{}]{...}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{firestore-namespace_8js_a0ea74ea11566bd0d53855253d2003d02}{\+\_\+firestore}}, and \mbox{\hyperlink{document-reference_8js_a95595af408c99329f2c923e26c08df94}{trace\+\_\+util\+\_\+1}}.
+
+\Hypertarget{class_document_reference_a3d65dacdef2f5cf756a3ff4879927df2}\index{DocumentReference@{DocumentReference}!withConverter@{withConverter}}
+\index{withConverter@{withConverter}!DocumentReference@{DocumentReference}}
+\doxysubsubsection{\texorpdfstring{withConverter()}{withConverter()}}
+{\footnotesize\ttfamily \label{class_document_reference_a3d65dacdef2f5cf756a3ff4879927df2} 
+Document\+Reference\+::with\+Converter (\begin{DoxyParamCaption}\item[{}]{converter}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{converter_8js_a1662812dcd90d6e58cb1f5b9f2b82e4a}{converter}}, \mbox{\hyperlink{document-reference_8js_a0936448cd0e11eefbb0fc1ae147a3141}{Document\+Reference}}, \mbox{\hyperlink{firestore-namespace_8js_a6c18541a3018cee632d7e797bb983f36}{firestore}}, and \mbox{\hyperlink{document-reference_8js_a55a953cce0b62371f42d14c2de9a6eb4}{types\+\_\+1}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/@google-\/cloud/firestore/build/src/reference/\mbox{\hyperlink{document-reference_8js}{document-\/reference.\+js}}\end{DoxyCompactItemize}

@@ -1,0 +1,17 @@
+<map id="Connection::onSecondaryControl_" name="Connection::onSecondaryControl_">
+<area shape="rect" id="Node000001" title=" " alt="" coords="976,80,1196,106"/>
+<area shape="rect" id="Node000002" href="$class_connection.html#a09a3765f7587095ec702457d0312cc3f" title=" " alt="" coords="703,72,928,113"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="960,96,928,96,928,90,960,90"/>
+<area shape="rect" id="Node000003" href="$class_connection.html#ab636a3d51c375d83c899a2652d11df36" title=" " alt="" coords="473,80,655,106"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="688,96,656,96,656,90,688,90"/>
+<area shape="rect" id="Node000004" href="$class_connection.html#a88533d064d11b8428ad64a5492f331ff" title=" " alt="" coords="272,55,400,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="457,84,401,77,401,72,458,78"/>
+<area shape="rect" id="Node000009" href="$class_connection.html#acbbf499767f048587000284304829b76" title=" " alt="" coords="248,104,425,130"/>
+<area shape="poly" id="edge6_Node000003_Node000009" title=" " alt="" coords="458,107,426,110,425,105,457,101"/>
+<area shape="rect" id="Node000005" href="$class_connection.html#a651f90fb27f831f0a148e1c7a4edce08" title=" " alt="" coords="22,5,183,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="256,53,166,34,167,29,257,48"/>
+<area shape="rect" id="Node000006" href="$class_connection.html#a0c2cf036417d3fbcd51185fcfaa865c0" title=" " alt="" coords="27,55,178,80"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="257,70,179,70,179,65,257,65"/>
+<area shape="rect" id="Node000010" href="$class_connection.html#af3c26341d5f367314e2f17b6fdbaaad3" title=" " alt="" coords="5,104,200,130"/>
+<area shape="poly" id="edge7_Node000009_Node000010" title=" " alt="" coords="233,120,200,120,200,114,233,114"/>
+</map>

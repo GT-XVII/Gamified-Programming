@@ -1,0 +1,303 @@
+\doxysection{backend/node\+\_\+modules/@grpc/grpc-\/js/build/src/server.js File Reference}
+\hypertarget{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js}{}\label{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js}\index{backend/node\_modules/"@grpc/grpc-\/js/build/src/server.js@{backend/node\_modules/"@grpc/grpc-\/js/build/src/server.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a7988acb4c69d8bb23c6d54b7850f3c64}{noop}} ()
+\item 
+function \mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_ad0de37ca67e404ec4032f2e38d6fb8c7}{deprecate}} (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}})
+\item 
+function \mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a09cc52047534cac93ae6b581a1bfb34d}{get\+Unimplemented\+Status\+Response}} (method\+Name)
+\item 
+function \mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_abee9bcfe909eb72882ba4ba106819568}{get\+Default\+Handler}} (handler\+Type, method\+Name)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+var \mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a1553789d2657a68b093a67b296492de8}{\+\_\+\+\_\+run\+Initializers}}
+\item 
+var \mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a7513c8e2f774235756c222b618ed7c58}{\+\_\+\+\_\+es\+Decorate}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_ab79d21f504d93477dd4f694688b229c4}{Server}} = void 0
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a41a25b54de72b0be6fc52792a59af64c}{http2}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}http2"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a33c572c61e9ecc2b82ba9e4cdb85d3da}{util}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}util"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_ad33cb6840349d3bc93f4fe9de15a6f8f}{constants\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./constants"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_af09904666216d7dfe3504a1e16d13ae7}{server\+\_\+call\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./server-\/call"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a00187ee62e807945aa65d25f9e773068}{server\+\_\+credentials\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./server-\/credentials"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a8b789798d76e3ffb33244839d1ffa9e0}{resolver\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./resolver"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_ab53afa7b9c9aef77e950713c8b54c98c}{logging}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./logging"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a46c0e253ac00dface70796e150cad858}{subchannel\+\_\+address\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./subchannel-\/address"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a5a0788f0fd3744f268bfd27b3acc9857}{uri\+\_\+parser\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./uri-\/parser"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a1c963d3b854ccff6bad1a2f8b0f7f18a}{channelz\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./channelz"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_aff78c6abe77b7bb8915f429a1cf7126d}{server\+\_\+interceptors\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./server-\/interceptors"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a26d544d11c4edd0e1d4b9d42206e865e}{UNLIMITED\+\_\+\+CONNECTION\+\_\+\+AGE\+\_\+\+MS}} = \texorpdfstring{$\sim$}{\string~}(1 $<$$<$ 31)
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_aa26599d7fa4468d81fc9b5cc6a9e10dc}{KEEPALIVE\+\_\+\+MAX\+\_\+\+TIME\+\_\+\+MS}} = \texorpdfstring{$\sim$}{\string~}(1 $<$$<$ 31)
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a0f08ca60c7f75e701495466571cfea7a}{KEEPALIVE\+\_\+\+TIMEOUT\+\_\+\+MS}} = 20000
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a26040b1de32ccc47f1d85a1b5572e011}{MAX\+\_\+\+CONNECTION\+\_\+\+IDLE\+\_\+\+MS}} = \texorpdfstring{$\sim$}{\string~}(1 $<$$<$ 31)
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \{ HTTP2\+\_\+\+HEADER\+\_\+\+PATH \} = \mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2index_8js_adf60a23f40dff925e51ea74c6b3c8ff2}{http2.\+constants}}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a4d771a845df73d12433ddcb6b91f8b9a}{TRACER\+\_\+\+NAME}} = \textquotesingle{}\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a207259f7e3cfd9800ed8f7d7224c7a68}{server}}\textquotesingle{}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a438b200b2272622b4f29cd33f6e4b32e}{k\+Max\+Age}} = Buffer.\+from(\textquotesingle{}max\+\_\+age\textquotesingle{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_ad0de37ca67e404ec4032f2e38d6fb8c7}\index{server.js@{server.js}!deprecate@{deprecate}}
+\index{deprecate@{deprecate}!server.js@{server.js}}
+\doxysubsubsection{\texorpdfstring{deprecate()}{deprecate()}}
+{\footnotesize\ttfamily \label{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_ad0de37ca67e404ec4032f2e38d6fb8c7} 
+function deprecate (\begin{DoxyParamCaption}\item[{}]{message}{}\end{DoxyParamCaption})}
+
+Decorator to wrap a class method with util.\+deprecate 
+\begin{DoxyParams}{Parameters}
+{\em message} & The message to output if the deprecated method is called \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}, and \mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a33c572c61e9ecc2b82ba9e4cdb85d3da}{util}}.
+
+\Hypertarget{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_abee9bcfe909eb72882ba4ba106819568}\index{server.js@{server.js}!getDefaultHandler@{getDefaultHandler}}
+\index{getDefaultHandler@{getDefaultHandler}!server.js@{server.js}}
+\doxysubsubsection{\texorpdfstring{getDefaultHandler()}{getDefaultHandler()}}
+{\footnotesize\ttfamily \label{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_abee9bcfe909eb72882ba4ba106819568} 
+function get\+Default\+Handler (\begin{DoxyParamCaption}\item[{}]{handler\+Type}{, }\item[{}]{method\+Name}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{hasown_2index_8js_af41b23e59e21fbbca9175e1dbd07b54e}{call}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a622460feeccdab6d8f307936fc6b36fb}{callback}}, and \mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a09cc52047534cac93ae6b581a1bfb34d}{get\+Unimplemented\+Status\+Response()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_abee9bcfe909eb72882ba4ba106819568_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a09cc52047534cac93ae6b581a1bfb34d}\index{server.js@{server.js}!getUnimplementedStatusResponse@{getUnimplementedStatusResponse}}
+\index{getUnimplementedStatusResponse@{getUnimplementedStatusResponse}!server.js@{server.js}}
+\doxysubsubsection{\texorpdfstring{getUnimplementedStatusResponse()}{getUnimplementedStatusResponse()}}
+{\footnotesize\ttfamily \label{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a09cc52047534cac93ae6b581a1bfb34d} 
+function get\+Unimplemented\+Status\+Response (\begin{DoxyParamCaption}\item[{}]{method\+Name}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_ad33cb6840349d3bc93f4fe9de15a6f8f}{constants\+\_\+1}}, \mbox{\hyperlink{lodash_2method_8js_a2f565198b0a61cb8648a01f0d9617cd7}{method}}, \mbox{\hyperlink{long_2index_8js_ad7dc44f0ebdb746f4a5b0612ae9315cb}{not}}, and \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a207259f7e3cfd9800ed8f7d7224c7a68}{server}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a09cc52047534cac93ae6b581a1bfb34d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a7988acb4c69d8bb23c6d54b7850f3c64}\index{server.js@{server.js}!noop@{noop}}
+\index{noop@{noop}!server.js@{server.js}}
+\doxysubsubsection{\texorpdfstring{noop()}{noop()}}
+{\footnotesize\ttfamily \label{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a7988acb4c69d8bb23c6d54b7850f3c64} 
+function noop (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a7513c8e2f774235756c222b618ed7c58}\index{server.js@{server.js}!\_\_esDecorate@{\_\_esDecorate}}
+\index{\_\_esDecorate@{\_\_esDecorate}!server.js@{server.js}}
+\doxysubsubsection{\texorpdfstring{\_\_esDecorate}{\_\_esDecorate}}
+{\footnotesize\ttfamily \label{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a7513c8e2f774235756c222b618ed7c58} 
+var \+\_\+\+\_\+es\+Decorate}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ (\textcolor{keyword}{this}\ \&\&\ this.\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a7513c8e2f774235756c222b618ed7c58}{\_\_esDecorate}})\ ||\ \textcolor{keyword}{function}\ (ctor,\ descriptorIn,\ decorators,\ contextIn,\ initializers,\ extraInitializers)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{function}\ accept(\mbox{\hyperlink{uuidv1_8min_8js_a9cf09a2972472098a4c689fd988f4dfc}{f}})\ \{\ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{uuidv1_8min_8js_a9cf09a2972472098a4c689fd988f4dfc}{f}}\ !==\ \textcolor{keywordtype}{void}\ 0\ \&\&\ typeof\ \mbox{\hyperlink{uuidv1_8min_8js_a9cf09a2972472098a4c689fd988f4dfc}{f}}\ !==\ \textcolor{stringliteral}{"{}function"{}})\ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ TypeError(\textcolor{stringliteral}{"{}Function\ expected"{}});\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{uuidv1_8min_8js_a9cf09a2972472098a4c689fd988f4dfc}{f}};\ \}}
+\DoxyCodeLine{\ \ \ \ var\ kind\ =\ contextIn.kind,\ key\ =\ kind\ ===\ \textcolor{stringliteral}{"{}getter"{}}\ ?\ \textcolor{stringliteral}{"{}get"{}}\ :\ kind\ ===\ \textcolor{stringliteral}{"{}setter"{}}\ ?\ \textcolor{stringliteral}{"{}set"{}}\ :\ \textcolor{stringliteral}{"{}value"{}};}
+\DoxyCodeLine{\ \ \ \ var\ target\ =\ !descriptorIn\ \&\&\ ctor\ ?\ contextIn[\textcolor{stringliteral}{"{}static"{}}]\ ?\ ctor\ :\ ctor.prototype\ :\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\ \ \ \ var\ \mbox{\hyperlink{_0dgrpc_2proto-loader_2build_2src_2index_8js_aa6b9cda1f610adf9d21a9408b3583d51}{descriptor}}\ =\ descriptorIn\ ||\ (target\ ?\ Object.getOwnPropertyDescriptor(target,\ contextIn.name)\ :\ \{\});}
+\DoxyCodeLine{\ \ \ \ var\ \mbox{\hyperlink{fp_8js_a6e69a5af94d7d53886e51f89fb3bd6b4}{\_}},\ \mbox{\hyperlink{pledge_8js_abf6a3c9d69bed4b518ad706279009f51}{done}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{for}\ (var\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ =\ decorators.length\ -\/\ 1;\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ >=\ 0;\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}-\/-\/)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ var\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}}\ =\ \{\};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (var\ \mbox{\hyperlink{ordered-map_8min_8js_ab2752257551c1a01e010ceba5d7ec200}{p}}\ in\ contextIn)\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}}[\mbox{\hyperlink{ordered-map_8min_8js_ab2752257551c1a01e010ceba5d7ec200}{p}}]\ =\ \mbox{\hyperlink{ordered-map_8min_8js_ab2752257551c1a01e010ceba5d7ec200}{p}}\ ===\ \textcolor{stringliteral}{"{}access"{}}\ ?\ \{\}\ :\ contextIn[\mbox{\hyperlink{ordered-map_8min_8js_ab2752257551c1a01e010ceba5d7ec200}{p}}];}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (var\ \mbox{\hyperlink{ordered-map_8min_8js_ab2752257551c1a01e010ceba5d7ec200}{p}}\ in\ contextIn.access)\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}}.access[\mbox{\hyperlink{ordered-map_8min_8js_ab2752257551c1a01e010ceba5d7ec200}{p}}]\ =\ contextIn.access[\mbox{\hyperlink{ordered-map_8min_8js_ab2752257551c1a01e010ceba5d7ec200}{p}}];}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}}.addInitializer\ =\ \textcolor{keyword}{function}\ (\mbox{\hyperlink{uuidv1_8min_8js_a9cf09a2972472098a4c689fd988f4dfc}{f}})\ \{\ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{pledge_8js_abf6a3c9d69bed4b518ad706279009f51}{done}})\ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ TypeError(\textcolor{stringliteral}{"{}Cannot\ add\ initializers\ after\ decoration\ has\ completed"{}});\ extraInitializers.push(accept(\mbox{\hyperlink{uuidv1_8min_8js_a9cf09a2972472098a4c689fd988f4dfc}{f}}\ ||\ \textcolor{keyword}{null}));\ \};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ var\ \mbox{\hyperlink{lodash_2core_8js_a348c112a244660a2f280cda892658c24}{result}}\ =\ (0,\ decorators[\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}])(kind\ ===\ \textcolor{stringliteral}{"{}accessor"{}}\ ?\ \{\ \textcolor{keyword}{get}:\ \mbox{\hyperlink{_0dgrpc_2proto-loader_2build_2src_2index_8js_aa6b9cda1f610adf9d21a9408b3583d51}{descriptor}}.get,\ \textcolor{keyword}{set}:\ \mbox{\hyperlink{_0dgrpc_2proto-loader_2build_2src_2index_8js_aa6b9cda1f610adf9d21a9408b3583d51}{descriptor}}.set\ \}\ :\ \mbox{\hyperlink{_0dgrpc_2proto-loader_2build_2src_2index_8js_aa6b9cda1f610adf9d21a9408b3583d51}{descriptor}}[key],\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (kind\ ===\ \textcolor{stringliteral}{"{}accessor"{}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{lodash_2core_8js_a348c112a244660a2f280cda892658c24}{result}}\ ===\ \textcolor{keywordtype}{void}\ 0)\ \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{lodash_2core_8js_a348c112a244660a2f280cda892658c24}{result}}\ ===\ \textcolor{keyword}{null}\ ||\ typeof\ \mbox{\hyperlink{lodash_2core_8js_a348c112a244660a2f280cda892658c24}{result}}\ !==\ \textcolor{stringliteral}{"{}object"{}})\ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ TypeError(\textcolor{stringliteral}{"{}Object\ expected"{}});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{fp_8js_a6e69a5af94d7d53886e51f89fb3bd6b4}{\_}}\ =\ accept(\mbox{\hyperlink{lodash_2core_8js_a348c112a244660a2f280cda892658c24}{result}}.get))\ \mbox{\hyperlink{_0dgrpc_2proto-loader_2build_2src_2index_8js_aa6b9cda1f610adf9d21a9408b3583d51}{descriptor}}.get\ =\ \mbox{\hyperlink{fp_8js_a6e69a5af94d7d53886e51f89fb3bd6b4}{\_}};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{fp_8js_a6e69a5af94d7d53886e51f89fb3bd6b4}{\_}}\ =\ accept(\mbox{\hyperlink{lodash_2core_8js_a348c112a244660a2f280cda892658c24}{result}}.set))\ \mbox{\hyperlink{_0dgrpc_2proto-loader_2build_2src_2index_8js_aa6b9cda1f610adf9d21a9408b3583d51}{descriptor}}.set\ =\ \mbox{\hyperlink{fp_8js_a6e69a5af94d7d53886e51f89fb3bd6b4}{\_}};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{fp_8js_a6e69a5af94d7d53886e51f89fb3bd6b4}{\_}}\ =\ accept(\mbox{\hyperlink{lodash_2core_8js_a348c112a244660a2f280cda892658c24}{result}}.init))\ initializers.unshift(\mbox{\hyperlink{fp_8js_a6e69a5af94d7d53886e51f89fb3bd6b4}{\_}});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{fp_8js_a6e69a5af94d7d53886e51f89fb3bd6b4}{\_}}\ =\ accept(\mbox{\hyperlink{lodash_2core_8js_a348c112a244660a2f280cda892658c24}{result}}))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (kind\ ===\ \textcolor{stringliteral}{"{}field"{}})\ initializers.unshift(\mbox{\hyperlink{fp_8js_a6e69a5af94d7d53886e51f89fb3bd6b4}{\_}});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \mbox{\hyperlink{_0dgrpc_2proto-loader_2build_2src_2index_8js_aa6b9cda1f610adf9d21a9408b3583d51}{descriptor}}[key]\ =\ \mbox{\hyperlink{fp_8js_a6e69a5af94d7d53886e51f89fb3bd6b4}{\_}};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (target)\ Object.defineProperty(target,\ contextIn.name,\ \mbox{\hyperlink{_0dgrpc_2proto-loader_2build_2src_2index_8js_aa6b9cda1f610adf9d21a9408b3583d51}{descriptor}});}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{pledge_8js_abf6a3c9d69bed4b518ad706279009f51}{done}}\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a1553789d2657a68b093a67b296492de8}\index{server.js@{server.js}!\_\_runInitializers@{\_\_runInitializers}}
+\index{\_\_runInitializers@{\_\_runInitializers}!server.js@{server.js}}
+\doxysubsubsection{\texorpdfstring{\_\_runInitializers}{\_\_runInitializers}}
+{\footnotesize\ttfamily \label{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a1553789d2657a68b093a67b296492de8} 
+var \+\_\+\+\_\+run\+Initializers}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ (\textcolor{keyword}{this}\ \&\&\ this.\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a1553789d2657a68b093a67b296492de8}{\_\_runInitializers}})\ ||\ \textcolor{keyword}{function}\ (thisArg,\ initializers,\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}})\ \{}
+\DoxyCodeLine{\ \ \ \ var\ useValue\ =\ arguments.length\ >\ 2;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{for}\ (var\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ =\ 0;\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ <\ initializers.length;\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}++)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}\ =\ useValue\ ?\ initializers[\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}].call(thisArg,\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}})\ :\ initializers[\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}].call(thisArg);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ useValue\ ?\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}\ :\ \textcolor{keywordtype}{void}\ 0;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a1c963d3b854ccff6bad1a2f8b0f7f18a}\index{server.js@{server.js}!channelz\_1@{channelz\_1}}
+\index{channelz\_1@{channelz\_1}!server.js@{server.js}}
+\doxysubsubsection{\texorpdfstring{channelz\_1}{channelz\_1}}
+{\footnotesize\ttfamily \label{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a1c963d3b854ccff6bad1a2f8b0f7f18a} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} channelz\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./channelz"{})}
+
+\Hypertarget{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}\index{server.js@{server.js}!const@{const}}
+\index{const@{const}!server.js@{server.js}}
+\doxysubsubsection{\texorpdfstring{const}{const}}
+{\footnotesize\ttfamily \label{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c} 
+const \{ HTTP2\+\_\+\+HEADER\+\_\+\+PATH \} = \mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2index_8js_adf60a23f40dff925e51ea74c6b3c8ff2}{http2.\+constants}}}
+
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_02379c0e33aed3867a6b675f15224a3a}{/\+Users/nicoletiokhin/\+Desktop/\+Software Semester 3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/@google-\/cloud/firestore/build/src/index.\+js}}.\end{Desc}
+\Hypertarget{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_ad33cb6840349d3bc93f4fe9de15a6f8f}\index{server.js@{server.js}!constants\_1@{constants\_1}}
+\index{constants\_1@{constants\_1}!server.js@{server.js}}
+\doxysubsubsection{\texorpdfstring{constants\_1}{constants\_1}}
+{\footnotesize\ttfamily \label{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_ad33cb6840349d3bc93f4fe9de15a6f8f} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} constants\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./constants"{})}
+
+\Hypertarget{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a41a25b54de72b0be6fc52792a59af64c}\index{server.js@{server.js}!http2@{http2}}
+\index{http2@{http2}!server.js@{server.js}}
+\doxysubsubsection{\texorpdfstring{http2}{http2}}
+{\footnotesize\ttfamily \label{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a41a25b54de72b0be6fc52792a59af64c} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} http2 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}http2"{})}
+
+\Hypertarget{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_aa26599d7fa4468d81fc9b5cc6a9e10dc}\index{server.js@{server.js}!KEEPALIVE\_MAX\_TIME\_MS@{KEEPALIVE\_MAX\_TIME\_MS}}
+\index{KEEPALIVE\_MAX\_TIME\_MS@{KEEPALIVE\_MAX\_TIME\_MS}!server.js@{server.js}}
+\doxysubsubsection{\texorpdfstring{KEEPALIVE\_MAX\_TIME\_MS}{KEEPALIVE\_MAX\_TIME\_MS}}
+{\footnotesize\ttfamily \label{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_aa26599d7fa4468d81fc9b5cc6a9e10dc} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} KEEPALIVE\+\_\+\+MAX\+\_\+\+TIME\+\_\+\+MS = \texorpdfstring{$\sim$}{\string~}(1 $<$$<$ 31)}
+
+\Hypertarget{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a0f08ca60c7f75e701495466571cfea7a}\index{server.js@{server.js}!KEEPALIVE\_TIMEOUT\_MS@{KEEPALIVE\_TIMEOUT\_MS}}
+\index{KEEPALIVE\_TIMEOUT\_MS@{KEEPALIVE\_TIMEOUT\_MS}!server.js@{server.js}}
+\doxysubsubsection{\texorpdfstring{KEEPALIVE\_TIMEOUT\_MS}{KEEPALIVE\_TIMEOUT\_MS}}
+{\footnotesize\ttfamily \label{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a0f08ca60c7f75e701495466571cfea7a} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} KEEPALIVE\+\_\+\+TIMEOUT\+\_\+\+MS = 20000}
+
+\Hypertarget{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a438b200b2272622b4f29cd33f6e4b32e}\index{server.js@{server.js}!kMaxAge@{kMaxAge}}
+\index{kMaxAge@{kMaxAge}!server.js@{server.js}}
+\doxysubsubsection{\texorpdfstring{kMaxAge}{kMaxAge}}
+{\footnotesize\ttfamily \label{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a438b200b2272622b4f29cd33f6e4b32e} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} k\+Max\+Age = Buffer.\+from(\textquotesingle{}max\+\_\+age\textquotesingle{})}
+
+\Hypertarget{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_ab53afa7b9c9aef77e950713c8b54c98c}\index{server.js@{server.js}!logging@{logging}}
+\index{logging@{logging}!server.js@{server.js}}
+\doxysubsubsection{\texorpdfstring{logging}{logging}}
+{\footnotesize\ttfamily \label{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_ab53afa7b9c9aef77e950713c8b54c98c} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} logging = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./logging"{})}
+
+\Hypertarget{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a26040b1de32ccc47f1d85a1b5572e011}\index{server.js@{server.js}!MAX\_CONNECTION\_IDLE\_MS@{MAX\_CONNECTION\_IDLE\_MS}}
+\index{MAX\_CONNECTION\_IDLE\_MS@{MAX\_CONNECTION\_IDLE\_MS}!server.js@{server.js}}
+\doxysubsubsection{\texorpdfstring{MAX\_CONNECTION\_IDLE\_MS}{MAX\_CONNECTION\_IDLE\_MS}}
+{\footnotesize\ttfamily \label{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a26040b1de32ccc47f1d85a1b5572e011} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} MAX\+\_\+\+CONNECTION\+\_\+\+IDLE\+\_\+\+MS = \texorpdfstring{$\sim$}{\string~}(1 $<$$<$ 31)}
+
+\Hypertarget{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a8b789798d76e3ffb33244839d1ffa9e0}\index{server.js@{server.js}!resolver\_1@{resolver\_1}}
+\index{resolver\_1@{resolver\_1}!server.js@{server.js}}
+\doxysubsubsection{\texorpdfstring{resolver\_1}{resolver\_1}}
+{\footnotesize\ttfamily \label{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a8b789798d76e3ffb33244839d1ffa9e0} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} resolver\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./resolver"{})}
+
+\Hypertarget{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_ab79d21f504d93477dd4f694688b229c4}\index{server.js@{server.js}!Server@{Server}}
+\index{Server@{Server}!server.js@{server.js}}
+\doxysubsubsection{\texorpdfstring{Server}{Server}}
+{\footnotesize\ttfamily \label{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_ab79d21f504d93477dd4f694688b229c4} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} Server = void 0}
+
+\Hypertarget{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_af09904666216d7dfe3504a1e16d13ae7}\index{server.js@{server.js}!server\_call\_1@{server\_call\_1}}
+\index{server\_call\_1@{server\_call\_1}!server.js@{server.js}}
+\doxysubsubsection{\texorpdfstring{server\_call\_1}{server\_call\_1}}
+{\footnotesize\ttfamily \label{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_af09904666216d7dfe3504a1e16d13ae7} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} server\+\_\+call\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./server-\/call"{})}
+
+\Hypertarget{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a00187ee62e807945aa65d25f9e773068}\index{server.js@{server.js}!server\_credentials\_1@{server\_credentials\_1}}
+\index{server\_credentials\_1@{server\_credentials\_1}!server.js@{server.js}}
+\doxysubsubsection{\texorpdfstring{server\_credentials\_1}{server\_credentials\_1}}
+{\footnotesize\ttfamily \label{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a00187ee62e807945aa65d25f9e773068} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} server\+\_\+credentials\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./server-\/credentials"{})}
+
+\Hypertarget{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_aff78c6abe77b7bb8915f429a1cf7126d}\index{server.js@{server.js}!server\_interceptors\_1@{server\_interceptors\_1}}
+\index{server\_interceptors\_1@{server\_interceptors\_1}!server.js@{server.js}}
+\doxysubsubsection{\texorpdfstring{server\_interceptors\_1}{server\_interceptors\_1}}
+{\footnotesize\ttfamily \label{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_aff78c6abe77b7bb8915f429a1cf7126d} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} server\+\_\+interceptors\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./server-\/interceptors"{})}
+
+\Hypertarget{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_ae2475e10618961c050dcba04e8c42331}\index{server.js@{server.js}!strict@{strict}}
+\index{strict@{strict}!server.js@{server.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+
+\Hypertarget{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a46c0e253ac00dface70796e150cad858}\index{server.js@{server.js}!subchannel\_address\_1@{subchannel\_address\_1}}
+\index{subchannel\_address\_1@{subchannel\_address\_1}!server.js@{server.js}}
+\doxysubsubsection{\texorpdfstring{subchannel\_address\_1}{subchannel\_address\_1}}
+{\footnotesize\ttfamily \label{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a46c0e253ac00dface70796e150cad858} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} subchannel\+\_\+address\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./subchannel-\/address"{})}
+
+\Hypertarget{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a4d771a845df73d12433ddcb6b91f8b9a}\index{server.js@{server.js}!TRACER\_NAME@{TRACER\_NAME}}
+\index{TRACER\_NAME@{TRACER\_NAME}!server.js@{server.js}}
+\doxysubsubsection{\texorpdfstring{TRACER\_NAME}{TRACER\_NAME}}
+{\footnotesize\ttfamily \label{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a4d771a845df73d12433ddcb6b91f8b9a} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} TRACER\+\_\+\+NAME = \textquotesingle{}\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a207259f7e3cfd9800ed8f7d7224c7a68}{server}}\textquotesingle{}}
+
+\Hypertarget{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a26d544d11c4edd0e1d4b9d42206e865e}\index{server.js@{server.js}!UNLIMITED\_CONNECTION\_AGE\_MS@{UNLIMITED\_CONNECTION\_AGE\_MS}}
+\index{UNLIMITED\_CONNECTION\_AGE\_MS@{UNLIMITED\_CONNECTION\_AGE\_MS}!server.js@{server.js}}
+\doxysubsubsection{\texorpdfstring{UNLIMITED\_CONNECTION\_AGE\_MS}{UNLIMITED\_CONNECTION\_AGE\_MS}}
+{\footnotesize\ttfamily \label{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a26d544d11c4edd0e1d4b9d42206e865e} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} UNLIMITED\+\_\+\+CONNECTION\+\_\+\+AGE\+\_\+\+MS = \texorpdfstring{$\sim$}{\string~}(1 $<$$<$ 31)}
+
+\Hypertarget{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a5a0788f0fd3744f268bfd27b3acc9857}\index{server.js@{server.js}!uri\_parser\_1@{uri\_parser\_1}}
+\index{uri\_parser\_1@{uri\_parser\_1}!server.js@{server.js}}
+\doxysubsubsection{\texorpdfstring{uri\_parser\_1}{uri\_parser\_1}}
+{\footnotesize\ttfamily \label{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a5a0788f0fd3744f268bfd27b3acc9857} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} uri\+\_\+parser\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./uri-\/parser"{})}
+
+\Hypertarget{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a33c572c61e9ecc2b82ba9e4cdb85d3da}\index{server.js@{server.js}!util@{util}}
+\index{util@{util}!server.js@{server.js}}
+\doxysubsubsection{\texorpdfstring{util}{util}}
+{\footnotesize\ttfamily \label{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a33c572c61e9ecc2b82ba9e4cdb85d3da} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} util = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}util"{})}
+

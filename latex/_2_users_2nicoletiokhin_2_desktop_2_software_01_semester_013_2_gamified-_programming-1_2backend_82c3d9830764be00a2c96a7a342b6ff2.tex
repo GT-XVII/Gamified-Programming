@@ -1,0 +1,21 @@
+\doxysection{/\+Users/nicoletiokhin/\+Desktop/\+Software Semester 3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/firebase-\/admin/lib/app/lifecycle.\+js}
+\hypertarget{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_82c3d9830764be00a2c96a7a342b6ff2}{}\label{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_82c3d9830764be00a2c96a7a342b6ff2}Renders this given {\ttfamily App} unusable and frees the resources of all associated services (though it does {\itshape not} clean up any backend resources). When running the SDK locally, this method must be called to ensure graceful termination of the process.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{lifecycle_8js_a0543cb53529769c387755210fbd40914}{deleteApp}}(\mbox{\hyperlink{database_2dist_2index_8cjs_8js_a7b225fcb720e4d5ed2bbf60e28a25e6d}{app}})}
+\DoxyCodeLine{\ \ .then(\textcolor{keyword}{function}()\ \{}
+\DoxyCodeLine{\ \ \ \ console.log(\textcolor{stringliteral}{"{}App\ deleted\ successfully"{}});}
+\DoxyCodeLine{\ \ \})}
+\DoxyCodeLine{\ \ .\textcolor{keywordflow}{catch}(\textcolor{keyword}{function}(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}})\ \{}
+\DoxyCodeLine{\ \ \ \ console.log(\textcolor{stringliteral}{"{}Error\ deleting\ app:"{}},\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}});}
+\DoxyCodeLine{\ \ \});}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyCodeInclude}{0}
+
+\end{DoxyCodeInclude}
+ Semester \doxylink{lifecycle_8js}{3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/firebase-\/admin/lib/app/lifecycle.\+js} 

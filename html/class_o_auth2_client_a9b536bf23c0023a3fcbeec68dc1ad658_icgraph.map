@@ -1,0 +1,9 @@
+<map id="OAuth2Client::getFederatedSignonCertsAsync" name="OAuth2Client::getFederatedSignonCertsAsync">
+<area shape="rect" id="Node000001" title=" " alt="" coords="472,39,655,79"/>
+<area shape="rect" id="Node000002" href="$class_o_auth2_client.html#ae52b84eb975be95eee5b486abd2504f1" title=" " alt="" coords="240,5,423,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="456,46,423,41,424,36,457,41"/>
+<area shape="rect" id="Node000003" href="$class_o_auth2_client.html#a1909d025ae1d268015814b3bc5e145f0" title=" " alt="" coords="239,71,424,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="457,76,425,81,424,76,456,71"/>
+<area shape="rect" id="Node000004" href="$class_o_auth2_client.html#aba5835f709ddda99b5c5195fe9e4eafc" title=" " alt="" coords="5,78,191,104"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="223,94,191,94,191,88,223,88"/>
+</map>

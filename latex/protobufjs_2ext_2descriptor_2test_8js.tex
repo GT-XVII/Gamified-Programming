@@ -1,0 +1,90 @@
+\doxysection{backend/node\+\_\+modules/protobufjs/ext/descriptor/test.js File Reference}
+\hypertarget{protobufjs_2ext_2descriptor_2test_8js}{}\label{protobufjs_2ext_2descriptor_2test_8js}\index{backend/node\_modules/protobufjs/ext/descriptor/test.js@{backend/node\_modules/protobufjs/ext/descriptor/test.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{protobufjs_2ext_2descriptor_2test_8js_acd36e4de44b69609ea53c1d862b7147d}{if}} (\mbox{\hyperlink{protobufjs_2ext_2descriptor_2test_8js_aa99bb602c86e4801a2bbde2f9158fdf6}{diff}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{protobufjs_2ext_2descriptor_2test_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+var \mbox{\hyperlink{protobufjs_2ext_2descriptor_2test_8js_a8e1efdf2ca1b2625c06af33d33d2959d}{protobuf}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../../"{})
+\item 
+var \mbox{\hyperlink{protobufjs_2ext_2descriptor_2test_8js_ab442966d70bc5fb6a90db28b5ff372e0}{descriptor}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}."{})
+\item 
+var \mbox{\hyperlink{protobufjs_2ext_2descriptor_2test_8js_a33796d6d1aed1fe6b4c866bfd3867459}{root}} = \mbox{\hyperlink{_0dgrpc_2proto-loader_2build_2src_2index_8js_add88c7c9e9a238ea7c283208800a180a}{protobuf.\+load\+Sync}}("{}tests/\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}/google/\mbox{\hyperlink{fallback_8js_aa995398e7e3941569ba442d9a8e4b8e8}{protobuf}}/descriptor.\+proto"{}).\mbox{\hyperlink{namespace_8js_a8052c5ec35977c0ecd46a50af3eee666}{resolve\+All}}()
+\item 
+var \mbox{\hyperlink{protobufjs_2ext_2descriptor_2test_8js_aa2e57ff47bd491f47d9b13a694aa0aeb}{msg}} = \mbox{\hyperlink{protobufjs_2ext_2descriptor_2index_8js_ad35851d2273d44a94edb74d57a28ddab}{root.\+to\+Descriptor}}()
+\item 
+var \mbox{\hyperlink{protobufjs_2ext_2descriptor_2test_8js_a34083d02677ea6acceb641fa647bc25a}{buf}} = \mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a3444f884a621942de98c573e3fb30621}{descriptor.\+File\+Descriptor\+Set.\+encode}}(\mbox{\hyperlink{protobufjs_2ext_2descriptor_2test_8js_aa2e57ff47bd491f47d9b13a694aa0aeb}{msg}}).\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7204a05867d40eea581f90e884991720}{finish}}()
+\item 
+var \mbox{\hyperlink{protobufjs_2ext_2descriptor_2test_8js_a455118dadb13173fab7243f9257e280c}{root2}} = \mbox{\hyperlink{protobufjs_2ext_2descriptor_2index_8js_aa2fe9e8a9903e860daeceafa2a95dfae}{protobuf.\+Root.\+from\+Descriptor}}(\mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a34083d02677ea6acceb641fa647bc25a}{buf}}, "{}proto2"{}).\mbox{\hyperlink{namespace_8js_a8052c5ec35977c0ecd46a50af3eee666}{resolve\+All}}()
+\item 
+var \mbox{\hyperlink{protobufjs_2ext_2descriptor_2test_8js_aa99bb602c86e4801a2bbde2f9158fdf6}{diff}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}deep-\/diff"{}).diff(\mbox{\hyperlink{lodash_2core_8js_a023ce8f335e42977d3cc76ecbd8aaa6b}{root.\+to\+JSON}}(), \mbox{\hyperlink{lodash_2core_8js_a023ce8f335e42977d3cc76ecbd8aaa6b}{root2.\+to\+JSON}}())
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{protobufjs_2ext_2descriptor_2test_8js_acd36e4de44b69609ea53c1d862b7147d}\index{test.js@{test.js}!if@{if}}
+\index{if@{if}!test.js@{test.js}}
+\doxysubsubsection{\texorpdfstring{if()}{if()}}
+{\footnotesize\ttfamily \label{protobufjs_2ext_2descriptor_2test_8js_acd36e4de44b69609ea53c1d862b7147d} 
+if (\begin{DoxyParamCaption}\item[{}]{diff}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{protobufjs_2ext_2descriptor_2test_8js_aa99bb602c86e4801a2bbde2f9158fdf6}{diff}}, and \mbox{\hyperlink{ipaddr_8min_8js_abcedab16429ea0641c6596f556f2e102}{process}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{protobufjs_2ext_2descriptor_2test_8js_a34083d02677ea6acceb641fa647bc25a}\index{test.js@{test.js}!buf@{buf}}
+\index{buf@{buf}!test.js@{test.js}}
+\doxysubsubsection{\texorpdfstring{buf}{buf}}
+{\footnotesize\ttfamily \label{protobufjs_2ext_2descriptor_2test_8js_a34083d02677ea6acceb641fa647bc25a} 
+var buf = \mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a3444f884a621942de98c573e3fb30621}{descriptor.\+File\+Descriptor\+Set.\+encode}}(\mbox{\hyperlink{protobufjs_2ext_2descriptor_2test_8js_aa2e57ff47bd491f47d9b13a694aa0aeb}{msg}}).\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7204a05867d40eea581f90e884991720}{finish}}()}
+
+\Hypertarget{protobufjs_2ext_2descriptor_2test_8js_ab442966d70bc5fb6a90db28b5ff372e0}\index{test.js@{test.js}!descriptor@{descriptor}}
+\index{descriptor@{descriptor}!test.js@{test.js}}
+\doxysubsubsection{\texorpdfstring{descriptor}{descriptor}}
+{\footnotesize\ttfamily \label{protobufjs_2ext_2descriptor_2test_8js_ab442966d70bc5fb6a90db28b5ff372e0} 
+var descriptor = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}."{})}
+
+\Hypertarget{protobufjs_2ext_2descriptor_2test_8js_aa99bb602c86e4801a2bbde2f9158fdf6}\index{test.js@{test.js}!diff@{diff}}
+\index{diff@{diff}!test.js@{test.js}}
+\doxysubsubsection{\texorpdfstring{diff}{diff}}
+{\footnotesize\ttfamily \label{protobufjs_2ext_2descriptor_2test_8js_aa99bb602c86e4801a2bbde2f9158fdf6} 
+var diff = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}deep-\/diff"{}).diff(\mbox{\hyperlink{lodash_2core_8js_a023ce8f335e42977d3cc76ecbd8aaa6b}{root.\+to\+JSON}}(), \mbox{\hyperlink{lodash_2core_8js_a023ce8f335e42977d3cc76ecbd8aaa6b}{root2.\+to\+JSON}}())}
+
+\Hypertarget{protobufjs_2ext_2descriptor_2test_8js_aa2e57ff47bd491f47d9b13a694aa0aeb}\index{test.js@{test.js}!msg@{msg}}
+\index{msg@{msg}!test.js@{test.js}}
+\doxysubsubsection{\texorpdfstring{msg}{msg}}
+{\footnotesize\ttfamily \label{protobufjs_2ext_2descriptor_2test_8js_aa2e57ff47bd491f47d9b13a694aa0aeb} 
+var msg = \mbox{\hyperlink{protobufjs_2ext_2descriptor_2index_8js_ad35851d2273d44a94edb74d57a28ddab}{root.\+to\+Descriptor}}()}
+
+\Hypertarget{protobufjs_2ext_2descriptor_2test_8js_a8e1efdf2ca1b2625c06af33d33d2959d}\index{test.js@{test.js}!protobuf@{protobuf}}
+\index{protobuf@{protobuf}!test.js@{test.js}}
+\doxysubsubsection{\texorpdfstring{protobuf}{protobuf}}
+{\footnotesize\ttfamily \label{protobufjs_2ext_2descriptor_2test_8js_a8e1efdf2ca1b2625c06af33d33d2959d} 
+var protobuf = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../../"{})}
+
+\Hypertarget{protobufjs_2ext_2descriptor_2test_8js_a33796d6d1aed1fe6b4c866bfd3867459}\index{test.js@{test.js}!root@{root}}
+\index{root@{root}!test.js@{test.js}}
+\doxysubsubsection{\texorpdfstring{root}{root}}
+{\footnotesize\ttfamily \label{protobufjs_2ext_2descriptor_2test_8js_a33796d6d1aed1fe6b4c866bfd3867459} 
+var root = \mbox{\hyperlink{_0dgrpc_2proto-loader_2build_2src_2index_8js_add88c7c9e9a238ea7c283208800a180a}{protobuf.\+load\+Sync}}("{}tests/\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}/google/\mbox{\hyperlink{fallback_8js_aa995398e7e3941569ba442d9a8e4b8e8}{protobuf}}/descriptor.\+proto"{}).\mbox{\hyperlink{namespace_8js_a8052c5ec35977c0ecd46a50af3eee666}{resolve\+All}}()}
+
+\Hypertarget{protobufjs_2ext_2descriptor_2test_8js_a455118dadb13173fab7243f9257e280c}\index{test.js@{test.js}!root2@{root2}}
+\index{root2@{root2}!test.js@{test.js}}
+\doxysubsubsection{\texorpdfstring{root2}{root2}}
+{\footnotesize\ttfamily \label{protobufjs_2ext_2descriptor_2test_8js_a455118dadb13173fab7243f9257e280c} 
+var root2 = \mbox{\hyperlink{protobufjs_2ext_2descriptor_2index_8js_aa2fe9e8a9903e860daeceafa2a95dfae}{protobuf.\+Root.\+from\+Descriptor}}(\mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a34083d02677ea6acceb641fa647bc25a}{buf}}, "{}proto2"{}).\mbox{\hyperlink{namespace_8js_a8052c5ec35977c0ecd46a50af3eee666}{resolve\+All}}()}
+
+\Hypertarget{protobufjs_2ext_2descriptor_2test_8js_ae2475e10618961c050dcba04e8c42331}\index{test.js@{test.js}!strict@{strict}}
+\index{strict@{strict}!test.js@{test.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{protobufjs_2ext_2descriptor_2test_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+

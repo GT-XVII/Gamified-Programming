@@ -1,0 +1,417 @@
+\doxysection{backend/node\+\_\+modules/lodash/fp/\+\_\+base\+Convert.js File Reference}
+\hypertarget{__base_convert_8js}{}\label{__base_convert_8js}\index{backend/node\_modules/lodash/fp/\_baseConvert.js@{backend/node\_modules/lodash/fp/\_baseConvert.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{__base_convert_8js_a1f95f85f6b9ac97a3128c01b35e1323b}{base\+Arity}} (\mbox{\hyperlink{fp_2add_8js_a1ba8e806628b2f512d93819d64d86db9}{func}}, \mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}})
+\item 
+function \mbox{\hyperlink{__base_convert_8js_a591cdb6cf03e24f52513967ee4615da6}{base\+Ary}} (\mbox{\hyperlink{fp_2add_8js_a1ba8e806628b2f512d93819d64d86db9}{func}}, \mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}})
+\item 
+function \mbox{\hyperlink{__base_convert_8js_a6a8b35f60bb878e88ef572d9ee339b29}{clone\+Array}} (array)
+\item 
+function \mbox{\hyperlink{__base_convert_8js_a5a617cf9ac28d07587d17be3b61d0ef7}{create\+Cloner}} (\mbox{\hyperlink{fp_2add_8js_a1ba8e806628b2f512d93819d64d86db9}{func}})
+\item 
+function \mbox{\hyperlink{__base_convert_8js_a78e98cb858d2195289958d9262ac51c9}{flat\+Spread}} (\mbox{\hyperlink{fp_2add_8js_a1ba8e806628b2f512d93819d64d86db9}{func}}, \mbox{\hyperlink{cipher_8js_a1960adf42cbf8c24067b45da3a2f0aaf}{start}})
+\item 
+function \mbox{\hyperlink{__base_convert_8js_aa5f63529bfd9762c6301daa5fb378427}{wrap\+Immutable}} (\mbox{\hyperlink{fp_2add_8js_a1ba8e806628b2f512d93819d64d86db9}{func}}, cloner)
+\item 
+function \mbox{\hyperlink{__base_convert_8js_a27f2f90d1be0172618915d41b2f382bf}{base\+Convert}} (\mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}}, \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}, \mbox{\hyperlink{fp_2add_8js_a1ba8e806628b2f512d93819d64d86db9}{func}}, options)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{__base_convert_8js_a419ced462d9bebd751c55fa258341a11}{mapping}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\+\_\+mapping\textquotesingle{})
+\item 
+var \mbox{\hyperlink{__base_convert_8js_af4c0a9c164a7b42191c04b31a4efd56d}{fallback\+Holder}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\mbox{\hyperlink{bind_8js_a0b8a1bbd1466ff8c0c8b0d002592a14c}{placeholder}}\textquotesingle{})
+\item 
+var \mbox{\hyperlink{__base_convert_8js_aa24e781fe0b662d38aac138432ec5e48}{push}} = Array.\+prototype.\+push
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{__base_convert_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} = \mbox{\hyperlink{__convert_browser_8js_a6a438daf9f22d90fb4ce037582471a3a}{base\+Convert}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{__base_convert_8js_a1f95f85f6b9ac97a3128c01b35e1323b}\index{\_baseConvert.js@{\_baseConvert.js}!baseArity@{baseArity}}
+\index{baseArity@{baseArity}!\_baseConvert.js@{\_baseConvert.js}}
+\doxysubsubsection{\texorpdfstring{baseArity()}{baseArity()}}
+{\footnotesize\ttfamily \label{__base_convert_8js_a1f95f85f6b9ac97a3128c01b35e1323b} 
+function base\+Arity (\begin{DoxyParamCaption}\item[{}]{func}{, }\item[{}]{n}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Creates a function, with an arity of {\ttfamily n}, that invokes {\ttfamily func} with the arguments it receives.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Function\}} & func The function to wrap. \\
+\hline
+{\em \{number\}} & n The arity of the new function. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Function\} Returns the new function. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}, \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}, \mbox{\hyperlink{fp_2add_8js_a1ba8e806628b2f512d93819d64d86db9}{func}}, \mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=245pt]{__base_convert_8js_a1f95f85f6b9ac97a3128c01b35e1323b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{__base_convert_8js_a591cdb6cf03e24f52513967ee4615da6}\index{\_baseConvert.js@{\_baseConvert.js}!baseAry@{baseAry}}
+\index{baseAry@{baseAry}!\_baseConvert.js@{\_baseConvert.js}}
+\doxysubsubsection{\texorpdfstring{baseAry()}{baseAry()}}
+{\footnotesize\ttfamily \label{__base_convert_8js_a591cdb6cf03e24f52513967ee4615da6} 
+function base\+Ary (\begin{DoxyParamCaption}\item[{}]{func}{, }\item[{}]{n}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Creates a function that invokes {\ttfamily func}, with up to {\ttfamily n} arguments, ignoring any additional arguments.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Function\}} & func The function to cap arguments for. \\
+\hline
+{\em \{number\}} & n The arity cap. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Function\} Returns the new function. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}, \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}, \mbox{\hyperlink{fp_2add_8js_a1ba8e806628b2f512d93819d64d86db9}{func}}, and \mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{__base_convert_8js_a591cdb6cf03e24f52513967ee4615da6_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{__base_convert_8js_a27f2f90d1be0172618915d41b2f382bf}\index{\_baseConvert.js@{\_baseConvert.js}!baseConvert@{baseConvert}}
+\index{baseConvert@{baseConvert}!\_baseConvert.js@{\_baseConvert.js}}
+\doxysubsubsection{\texorpdfstring{baseConvert()}{baseConvert()}}
+{\footnotesize\ttfamily \label{__base_convert_8js_a27f2f90d1be0172618915d41b2f382bf} 
+function base\+Convert (\begin{DoxyParamCaption}\item[{}]{util}{, }\item[{}]{name}{, }\item[{}]{func}{, }\item[{}]{options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+The base implementation of {\ttfamily convert} which accepts a {\ttfamily util} object of methods required to perform conversions.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Object\}} & util The util object. \\
+\hline
+{\em \{string\}} & name The name of the function to convert. \\
+\hline
+{\em \{\+Function\}} & func The function to convert. \\
+\hline
+{\em \{\+Object\}} & \mbox{[}options\mbox{]} The options object. \\
+\hline
+{\em \{boolean\}} & \mbox{[}options.\+cap=true\mbox{]} Specify capping iteratee arguments. \\
+\hline
+{\em \{boolean\}} & \mbox{[}options.\+curry=true\mbox{]} Specify currying. \\
+\hline
+{\em \{boolean\}} & \mbox{[}options.\+fixed=true\mbox{]} Specify fixed arity. \\
+\hline
+{\em \{boolean\}} & \mbox{[}options.\+immutable=true\mbox{]} Specify immutable operations. \\
+\hline
+{\em \{boolean\}} & \mbox{[}options.\+rearg=true\mbox{]} Specify rearranging arguments. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Function\texorpdfstring{$\vert$}{|}\+Object\} Returns the converted function or object. 
+\end{DoxyReturn}
+Casts {\ttfamily func} to a function with an arity capped iteratee if needed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & name The name of the function to inspect. \\
+\hline
+{\em \{\+Function\}} & func The function to inspect. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Function\} Returns the cast function.
+\end{DoxyReturn}
+Casts {\ttfamily func} to a curried function if needed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & name The name of the function to inspect. \\
+\hline
+{\em \{\+Function\}} & func The function to inspect. \\
+\hline
+{\em \{number\}} & n The arity of {\ttfamily func}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Function\} Returns the cast function.
+\end{DoxyReturn}
+Casts {\ttfamily func} to a fixed arity function if needed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & name The name of the function to inspect. \\
+\hline
+{\em \{\+Function\}} & func The function to inspect. \\
+\hline
+{\em \{number\}} & n The arity cap. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Function\} Returns the cast function.
+\end{DoxyReturn}
+Casts {\ttfamily func} to an rearged function if needed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & name The name of the function to inspect. \\
+\hline
+{\em \{\+Function\}} & func The function to inspect. \\
+\hline
+{\em \{number\}} & n The arity of {\ttfamily func}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Function\} Returns the cast function.
+\end{DoxyReturn}
+Creates a clone of {\ttfamily object} by {\ttfamily path}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Object\}} & object The object to clone. \\
+\hline
+{\em \{\+Array\texorpdfstring{$\vert$}{|}string\}} & path The path to clone by. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Object\} Returns the cloned object.
+\end{DoxyReturn}
+Converts {\ttfamily lodash} to an immutable auto-\/curried iteratee-\/first data-\/last version with conversion {\ttfamily options} applied.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Object\}} & \mbox{[}options\mbox{]} The options object. See {\ttfamily base\+Convert} for more details. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Function\} Returns the converted {\ttfamily lodash}.
+\end{DoxyReturn}
+Create a converter function for {\ttfamily func} of {\ttfamily name}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & name The name of the function to convert. \\
+\hline
+{\em \{\+Function\}} & func The function to convert. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Function\} Returns the new converter function.
+\end{DoxyReturn}
+Creates a function that wraps {\ttfamily func} to invoke its iteratee, with up to {\ttfamily n} arguments, ignoring any additional arguments.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Function\}} & func The function to cap iteratee arguments for. \\
+\hline
+{\em \{number\}} & n The arity cap. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Function\} Returns the new function.
+\end{DoxyReturn}
+Creates a function that wraps {\ttfamily func} to invoke its iteratee with arguments arranged according to the specified {\ttfamily indexes} where the argument value at the first index is provided as the first argument, the argument value at the second index is provided as the second argument, and so on.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Function\}} & func The function to rearrange iteratee arguments for. \\
+\hline
+{\em \{number\mbox{[}$\,$\mbox{]}\}} & indexes The arranged argument indexes. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Function\} Returns the new function.
+\end{DoxyReturn}
+Creates a function that invokes {\ttfamily func} with its first argument transformed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Function\}} & func The function to wrap. \\
+\hline
+{\em \{\+Function\}} & transform The argument transform. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Function\} Returns the new function.
+\end{DoxyReturn}
+Creates a function that wraps {\ttfamily func} and applys the conversions rules by {\ttfamily name}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & name The name of the function to wrap. \\
+\hline
+{\em \{\+Function\}} & func The function to wrap. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Function\} Returns the converted function.
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{fp_8js_a6e69a5af94d7d53886e51f89fb3bd6b4}{\+\_\+}}, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_aeda6958b2fc8494c5a17f91600065eb9}{args}}, \mbox{\hyperlink{src_2util_2minimal_8js_a325c4e317c38d8497130ebce7670be2f}{Array}}, \mbox{\hyperlink{unary_8js_a3c39f59b8b5a7b2453788db43316a502}{ary}}, \mbox{\hyperlink{cors_2lib_2index_8js_a22b5a735edb78e9f8fdfb7618dc7a6b7}{assign}}, \mbox{\hyperlink{__base_convert_8js_a1f95f85f6b9ac97a3128c01b35e1323b}{base\+Arity()}}, \mbox{\hyperlink{__base_convert_8js_a591cdb6cf03e24f52513967ee4615da6}{base\+Ary()}}, \mbox{\hyperlink{__convert_browser_8js_a6a438daf9f22d90fb4ce037582471a3a}{base\+Convert}}, \mbox{\hyperlink{cast_array_8js_a7b0c1cd8209b9f2ddeaa6564bcf3d3a7}{cast\+Array()}}, \mbox{\hyperlink{lodash_2core_8js_a8f658a03f11d32dc7be2d506bb9308ee}{clone}}, \mbox{\hyperlink{__base_convert_8js_a6a8b35f60bb878e88ef572d9ee339b29}{clone\+Array()}}, \mbox{\hyperlink{rxjs_8umd_8js_a729ec4717f914fce241d4dccc9a03066}{config}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}}, \mbox{\hyperlink{__base_convert_8js_a5a617cf9ac28d07587d17be3b61d0ef7}{create\+Cloner()}}, \mbox{\hyperlink{curry_8js_a11f39c9126ad37b3e4f36cd6cd9651f6}{curry()}}, \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}, \mbox{\hyperlink{lodash_2core_8js_adaff3e7f788c1e0729b031592eb0f962}{each}}, \mbox{\hyperlink{__base_convert_8js_af4c0a9c164a7b42191c04b31a4efd56d}{fallback\+Holder}}, \mbox{\hyperlink{__base_convert_8js_a78e98cb858d2195289958d9262ac51c9}{flat\+Spread()}}, \mbox{\hyperlink{fp_2add_8js_a1ba8e806628b2f512d93819d64d86db9}{func}}, \mbox{\hyperlink{cookie_2index_8js_a0ac000318c33f03e412baff8df5b2513}{index}}, \mbox{\hyperlink{extend_2index_8js_abe8cca5e4950af0fdf83d8bc648e697f}{is\+Array}}, \mbox{\hyperlink{attempt_8js_ac42b3f43dea23e9faba5b1c74d70eff2}{is\+Error}}, \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2util_8js_ab99881fb6b825b5a44461fa3b80d020c}{is\+Function}}, \mbox{\hyperlink{is_weak_map_8js_a260538ddc5ab04eae574082f9e6892e9}{is\+Weak\+Map()}}, \mbox{\hyperlink{lodash_2core_8js_aef5532821d5a6898b0ae85805bb74501}{iteratee}}, \mbox{\hyperlink{__mapping_8js_a236efb12f8c32bdaff24127401f4b7fd}{iteratee\+Ary}}, \mbox{\hyperlink{__mapping_8js_ae0db4a49b25bbbcbd8d6c8ac668fc47f}{iteratee\+Rearg}}, \mbox{\hyperlink{__base_assign_8js_a87dd2006b34e1d50c301938be11fd6fa}{keys}}, \mbox{\hyperlink{escape-html_2index_8js_a84551b25f948a23769bf4c16feb1a973}{last\+Index}}, \mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a7fdcf4c82c9946bf2b0b80829a7ab230}{length}}, \mbox{\hyperlink{__base_convert_8js_a419ced462d9bebd751c55fa258341a11}{mapping}}, \mbox{\hyperlink{cliui_2build_2lib_2index_8js_aa9ea611ab578af2c3ab4fe0d408ecad6}{mixin}}, \mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}, \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}, \mbox{\hyperlink{nth_arg_8js_a5f471acd9e193e85fea0b3eb4fff3a17}{nth\+Arg()}}, \mbox{\hyperlink{__get_prototype_8js_adecbd50bddb43e93d54f21a2555ed749}{over\+Arg}}, \mbox{\hyperlink{cjs_2internal_2observable_2pairs_8js_a0018e2feb647e867aa077d4399e4395f}{pairs}}, \mbox{\hyperlink{cjs_2src_2bucket_8js_a1fdc7709faf62dce60620fb3f9d3453c}{path}}, \mbox{\hyperlink{bind_8js_a0b8a1bbd1466ff8c0c8b0d002592a14c}{placeholder}}, \mbox{\hyperlink{rearg_8js_abe1b214f2b1ee2f5fc9b6928f6c5de7d}{rearg}}, \mbox{\hyperlink{lodash_2core_8js_a348c112a244660a2f280cda892658c24}{result}}, \mbox{\hyperlink{bench_8js_a4f85c6ae2a8cdd19ca9b7006b1860d40}{source}}, \mbox{\hyperlink{cipher_8js_a1960adf42cbf8c24067b45da3a2f0aaf}{start}}, \mbox{\hyperlink{__base_fill_8js_ab1e8012ea5b81f04ea9e2d6e2f6fce07}{to\+Integer}}, \mbox{\hyperlink{to_path_8js_a4119720f852abc288c24d6f1c92768ab}{to\+Path()}}, \mbox{\hyperlink{is-stream_2index_8js_a2d5c6d4aa2bc7fd81424482fffdb2c57}{transform}}, \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}, \mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}}, \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}, \mbox{\hyperlink{browser_2runtime_2aeskw_8js_ab5725d08526a1a455010a791f6a5966e}{wrap}}, \mbox{\hyperlink{__base_convert_8js_aa5f63529bfd9762c6301daa5fb378427}{wrap\+Immutable()}}, and \mbox{\hyperlink{event-target-shim_8js_aae4fb331c97982f682924b26f518d3b2}{wrappers}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{__base_convert_8js_a27f2f90d1be0172618915d41b2f382bf_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{__base_convert_8js_a6a8b35f60bb878e88ef572d9ee339b29}\index{\_baseConvert.js@{\_baseConvert.js}!cloneArray@{cloneArray}}
+\index{cloneArray@{cloneArray}!\_baseConvert.js@{\_baseConvert.js}}
+\doxysubsubsection{\texorpdfstring{cloneArray()}{cloneArray()}}
+{\footnotesize\ttfamily \label{__base_convert_8js_a6a8b35f60bb878e88ef572d9ee339b29} 
+function clone\+Array (\begin{DoxyParamCaption}\item[{}]{array}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Creates a clone of {\ttfamily array}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Array\}} & array The array to clone. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Array\} Returns the cloned array. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{src_2util_2minimal_8js_a325c4e317c38d8497130ebce7670be2f}{Array}}, \mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a7fdcf4c82c9946bf2b0b80829a7ab230}{length}}, and \mbox{\hyperlink{lodash_2core_8js_a348c112a244660a2f280cda892658c24}{result}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{__base_convert_8js_a6a8b35f60bb878e88ef572d9ee339b29_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{__base_convert_8js_a5a617cf9ac28d07587d17be3b61d0ef7}\index{\_baseConvert.js@{\_baseConvert.js}!createCloner@{createCloner}}
+\index{createCloner@{createCloner}!\_baseConvert.js@{\_baseConvert.js}}
+\doxysubsubsection{\texorpdfstring{createCloner()}{createCloner()}}
+{\footnotesize\ttfamily \label{__base_convert_8js_a5a617cf9ac28d07587d17be3b61d0ef7} 
+function create\+Cloner (\begin{DoxyParamCaption}\item[{}]{func}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Creates a function that clones a given object using the assignment {\ttfamily func}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Function\}} & func The assignment function. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Function\} Returns the new cloner function. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{fp_2add_8js_a1ba8e806628b2f512d93819d64d86db9}{func}}, and \mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=259pt]{__base_convert_8js_a5a617cf9ac28d07587d17be3b61d0ef7_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{__base_convert_8js_a78e98cb858d2195289958d9262ac51c9}\index{\_baseConvert.js@{\_baseConvert.js}!flatSpread@{flatSpread}}
+\index{flatSpread@{flatSpread}!\_baseConvert.js@{\_baseConvert.js}}
+\doxysubsubsection{\texorpdfstring{flatSpread()}{flatSpread()}}
+{\footnotesize\ttfamily \label{__base_convert_8js_a78e98cb858d2195289958d9262ac51c9} 
+function flat\+Spread (\begin{DoxyParamCaption}\item[{}]{func}{, }\item[{}]{start}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\doxylink{class_a}{A} specialized version of {\ttfamily \+\_\+.\+spread} which flattens the spread array into the arguments of the invoked {\ttfamily func}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Function\}} & func The function to spread arguments over. \\
+\hline
+{\em \{number\}} & start The start position of the spread. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Function\} Returns the new function. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_aeda6958b2fc8494c5a17f91600065eb9}{args}}, \mbox{\hyperlink{src_2util_2minimal_8js_a325c4e317c38d8497130ebce7670be2f}{Array}}, \mbox{\hyperlink{fp_2add_8js_a1ba8e806628b2f512d93819d64d86db9}{func}}, \mbox{\hyperlink{escape-html_2index_8js_a84551b25f948a23769bf4c16feb1a973}{last\+Index}}, \mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a7fdcf4c82c9946bf2b0b80829a7ab230}{length}}, \mbox{\hyperlink{__base_convert_8js_aa24e781fe0b662d38aac138432ec5e48}{push}}, and \mbox{\hyperlink{cipher_8js_a1960adf42cbf8c24067b45da3a2f0aaf}{start}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{__base_convert_8js_a78e98cb858d2195289958d9262ac51c9_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{__base_convert_8js_aa5f63529bfd9762c6301daa5fb378427}\index{\_baseConvert.js@{\_baseConvert.js}!wrapImmutable@{wrapImmutable}}
+\index{wrapImmutable@{wrapImmutable}!\_baseConvert.js@{\_baseConvert.js}}
+\doxysubsubsection{\texorpdfstring{wrapImmutable()}{wrapImmutable()}}
+{\footnotesize\ttfamily \label{__base_convert_8js_aa5f63529bfd9762c6301daa5fb378427} 
+function wrap\+Immutable (\begin{DoxyParamCaption}\item[{}]{func}{, }\item[{}]{cloner}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Creates a function that wraps {\ttfamily func} and uses {\ttfamily cloner} to clone the first argument it receives.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Function\}} & func The function to wrap. \\
+\hline
+{\em \{\+Function\}} & cloner The function to clone arguments. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Function\} Returns the new immutable function. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_aeda6958b2fc8494c5a17f91600065eb9}{args}}, \mbox{\hyperlink{src_2util_2minimal_8js_a325c4e317c38d8497130ebce7670be2f}{Array}}, \mbox{\hyperlink{fp_2add_8js_a1ba8e806628b2f512d93819d64d86db9}{func}}, \mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a7fdcf4c82c9946bf2b0b80829a7ab230}{length}}, \mbox{\hyperlink{lodash_2core_8js_a348c112a244660a2f280cda892658c24}{result}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{__base_convert_8js_aa5f63529bfd9762c6301daa5fb378427_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{__base_convert_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\index{\_baseConvert.js@{\_baseConvert.js}!exports@{exports}}
+\index{exports@{exports}!\_baseConvert.js@{\_baseConvert.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \label{__base_convert_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports = \mbox{\hyperlink{__convert_browser_8js_a6a438daf9f22d90fb4ce037582471a3a}{base\+Convert}}}
+
+\Hypertarget{__base_convert_8js_af4c0a9c164a7b42191c04b31a4efd56d}\index{\_baseConvert.js@{\_baseConvert.js}!fallbackHolder@{fallbackHolder}}
+\index{fallbackHolder@{fallbackHolder}!\_baseConvert.js@{\_baseConvert.js}}
+\doxysubsubsection{\texorpdfstring{fallbackHolder}{fallbackHolder}}
+{\footnotesize\ttfamily \label{__base_convert_8js_af4c0a9c164a7b42191c04b31a4efd56d} 
+var fallback\+Holder = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\mbox{\hyperlink{bind_8js_a0b8a1bbd1466ff8c0c8b0d002592a14c}{placeholder}}\textquotesingle{})}
+
+\Hypertarget{__base_convert_8js_a419ced462d9bebd751c55fa258341a11}\index{\_baseConvert.js@{\_baseConvert.js}!mapping@{mapping}}
+\index{mapping@{mapping}!\_baseConvert.js@{\_baseConvert.js}}
+\doxysubsubsection{\texorpdfstring{mapping}{mapping}}
+{\footnotesize\ttfamily \label{__base_convert_8js_a419ced462d9bebd751c55fa258341a11} 
+var mapping = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\+\_\+mapping\textquotesingle{})}
+
+\Hypertarget{__base_convert_8js_aa24e781fe0b662d38aac138432ec5e48}\index{\_baseConvert.js@{\_baseConvert.js}!push@{push}}
+\index{push@{push}!\_baseConvert.js@{\_baseConvert.js}}
+\doxysubsubsection{\texorpdfstring{push}{push}}
+{\footnotesize\ttfamily \label{__base_convert_8js_aa24e781fe0b662d38aac138432ec5e48} 
+var push = Array.\+prototype.\+push}
+
+Built-\/in value reference. 

@@ -1,0 +1,153 @@
+\doxysection{Android\+App Class Reference}
+\hypertarget{class_android_app}{}\label{class_android_app}\index{AndroidApp@{AndroidApp}}
+
+
+Collaboration diagram for Android\+App\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{class_android_app__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_android_app_ad8286b46f2e38e832f7949f6d89606bf}{constructor}} (app\+Id, request\+Handler)
+\item 
+\mbox{\hyperlink{class_android_app_a717981e0a70b96ab1737df68e47f4ca9}{get\+Metadata}} ()
+\item 
+\mbox{\hyperlink{class_android_app_a5749821bd14c2d03c93c86185c710818}{set\+Display\+Name}} (new\+Display\+Name)
+\item 
+\mbox{\hyperlink{class_android_app_ab6384c0503a1ad5c82fc6dafc15a66f0}{get\+Sha\+Certificates}} ()
+\item 
+\mbox{\hyperlink{class_android_app_a595524dc37cd9189758f782b9aa62b9e}{add\+Sha\+Certificate}} (certificate\+To\+Add)
+\item 
+\mbox{\hyperlink{class_android_app_ae13e3ae1ab7ad61f7228436d13073e31}{delete\+Sha\+Certificate}} (certificate\+To\+Delete)
+\item 
+\mbox{\hyperlink{class_android_app_a5093c6b78fb67f8e31eb273ace3167d7}{get\+Config}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_a}{A} reference to a Firebase Android app.
+
+Do not call this constructor directly. Instead, use {\ttfamily \doxylink{class_project_management_a7b95c1439a8a0913104383593f3173c3}{Project\+Management.\+android\+App}}. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_android_app_a595524dc37cd9189758f782b9aa62b9e}\index{AndroidApp@{AndroidApp}!addShaCertificate@{addShaCertificate}}
+\index{addShaCertificate@{addShaCertificate}!AndroidApp@{AndroidApp}}
+\doxysubsubsection{\texorpdfstring{addShaCertificate()}{addShaCertificate()}}
+{\footnotesize\ttfamily \label{class_android_app_a595524dc37cd9189758f782b9aa62b9e} 
+Android\+App\+::add\+Sha\+Certificate (\begin{DoxyParamCaption}\item[{}]{certificate\+To\+Add}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Adds the given SHA certificate to this Android app.
+
+
+\begin{DoxyParams}{Parameters}
+{\em certificate\+To\+Add} & -\/ The SHA certificate to add.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_a}{A} promise that resolves when the given certificate has been added to the Android app. 
+\end{DoxyReturn}
+\Hypertarget{class_android_app_ad8286b46f2e38e832f7949f6d89606bf}\index{AndroidApp@{AndroidApp}!constructor@{constructor}}
+\index{constructor@{constructor}!AndroidApp@{AndroidApp}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_android_app_ad8286b46f2e38e832f7949f6d89606bf} 
+Android\+App\+::constructor (\begin{DoxyParamCaption}\item[{}]{app\+Id}{, }\item[{}]{request\+Handler}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{android-app_8js_af1a99a3ff1a35c114bdd06cc7252beb6}{error\+\_\+1}}, and \mbox{\hyperlink{android-app_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}}.
+
+\Hypertarget{class_android_app_ae13e3ae1ab7ad61f7228436d13073e31}\index{AndroidApp@{AndroidApp}!deleteShaCertificate@{deleteShaCertificate}}
+\index{deleteShaCertificate@{deleteShaCertificate}!AndroidApp@{AndroidApp}}
+\doxysubsubsection{\texorpdfstring{deleteShaCertificate()}{deleteShaCertificate()}}
+{\footnotesize\ttfamily \label{class_android_app_ae13e3ae1ab7ad61f7228436d13073e31} 
+Android\+App\+::delete\+Sha\+Certificate (\begin{DoxyParamCaption}\item[{}]{certificate\+To\+Delete}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Deletes the specified SHA certificate from this Android app.
+
+
+\begin{DoxyParams}{Parameters}
+{\em certificate\+To\+Delete} & -\/ The SHA certificate to delete.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_a}{A} promise that resolves when the specified certificate has been removed from the Android app. 
+\end{DoxyReturn}
+\Hypertarget{class_android_app_a5093c6b78fb67f8e31eb273ace3167d7}\index{AndroidApp@{AndroidApp}!getConfig@{getConfig}}
+\index{getConfig@{getConfig}!AndroidApp@{AndroidApp}}
+\doxysubsubsection{\texorpdfstring{getConfig()}{getConfig()}}
+{\footnotesize\ttfamily \label{class_android_app_a5093c6b78fb67f8e31eb273ace3167d7} 
+Android\+App\+::get\+Config (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the configuration artifact associated with this app.
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_a}{A} promise that resolves to the Android app\textquotesingle{}s Firebase config file, in UTF-\/8 string format. This string is typically intended to be written to a JSON file that gets shipped with your Android app. 
+\end{DoxyReturn}
+\Hypertarget{class_android_app_a717981e0a70b96ab1737df68e47f4ca9}\index{AndroidApp@{AndroidApp}!getMetadata@{getMetadata}}
+\index{getMetadata@{getMetadata}!AndroidApp@{AndroidApp}}
+\doxysubsubsection{\texorpdfstring{getMetadata()}{getMetadata()}}
+{\footnotesize\ttfamily \label{class_android_app_a717981e0a70b96ab1737df68e47f4ca9} 
+Android\+App\+::get\+Metadata (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Retrieves metadata about this Android app.
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_a}{A} promise that resolves to the retrieved metadata about this Android app. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{class_android_app_a717981e0a70b96ab1737df68e47f4ca9}{get\+Metadata()}}, \mbox{\hyperlink{android-app_8js_a2705289d304d4f5526639fd01c52c277}{project\+\_\+management\+\_\+api\+\_\+request\+\_\+internal\+\_\+1}}, and \mbox{\hyperlink{android-app_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{class_android_app_a717981e0a70b96ab1737df68e47f4ca9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{class_android_app_a717981e0a70b96ab1737df68e47f4ca9_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_android_app_ab6384c0503a1ad5c82fc6dafc15a66f0}\index{AndroidApp@{AndroidApp}!getShaCertificates@{getShaCertificates}}
+\index{getShaCertificates@{getShaCertificates}!AndroidApp@{AndroidApp}}
+\doxysubsubsection{\texorpdfstring{getShaCertificates()}{getShaCertificates()}}
+{\footnotesize\ttfamily \label{class_android_app_ab6384c0503a1ad5c82fc6dafc15a66f0} 
+Android\+App\+::get\+Sha\+Certificates (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the list of SHA certificates associated with this Android app in Firebase.
+
+\begin{DoxyReturn}{Returns}
+The list of SHA-\/1 and SHA-\/256 certificates associated with this Android app in Firebase. 
+\end{DoxyReturn}
+\Hypertarget{class_android_app_a5749821bd14c2d03c93c86185c710818}\index{AndroidApp@{AndroidApp}!setDisplayName@{setDisplayName}}
+\index{setDisplayName@{setDisplayName}!AndroidApp@{AndroidApp}}
+\doxysubsubsection{\texorpdfstring{setDisplayName()}{setDisplayName()}}
+{\footnotesize\ttfamily \label{class_android_app_a5749821bd14c2d03c93c86185c710818} 
+Android\+App\+::set\+Display\+Name (\begin{DoxyParamCaption}\item[{}]{new\+Display\+Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the optional user-\/assigned display name of the app.
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Display\+Name} & -\/ The new display name to set.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_a}{A} promise that resolves when the display name has been set. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/firebase-\/admin/lib/project-\/management/\mbox{\hyperlink{android-app_8js}{android-\/app.\+js}}\end{DoxyCompactItemize}

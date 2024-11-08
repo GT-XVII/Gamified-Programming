@@ -1,0 +1,31 @@
+\doxysection{/\+Users/nicoletiokhin/\+Desktop/\+Software Semester 3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/lodash/over\+Args.\+js}
+\hypertarget{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_7b894176a0cd456e907aecf5e331540c}{}\label{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_7b894176a0cd456e907aecf5e331540c}Creates a function that invokes {\ttfamily func} with its arguments transformed.
+
+\begin{DoxySince}{Since}
+4.\+0.\+0 @member\+Of \+\_\+
+\end{DoxySince}
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Function\}} & func The function to wrap. \\
+\hline
+{\em \{...(\+Function\texorpdfstring{$\vert$}{|}\+Function\mbox{[}$\,$\mbox{]})\}} & \mbox{[}transforms=\mbox{[}\+\_\+.\+identity\mbox{]}\mbox{]} The argument transforms. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Function\} Returns the new function.
+\end{DoxyReturn}
+function doubled(n) \{ return n \texorpdfstring{$\ast$}{*} 2; \}
+
+function square(n) \{ return n \texorpdfstring{$\ast$}{*} n; \}
+
+var func = \+\_\+.\+over\+Args(function(x, y) \{ return \mbox{[}x, y\mbox{]}; \}, \mbox{[}square, doubled\mbox{]});
+
+\doxylink{fp_2add_8js_a1ba8e806628b2f512d93819d64d86db9}{func(9, 3)}; // =\texorpdfstring{$>$}{>} \mbox{[}81, 6\mbox{]}
+
+\doxylink{fp_2add_8js_a1ba8e806628b2f512d93819d64d86db9}{func(10, 5)}; // =\texorpdfstring{$>$}{>} \mbox{[}100, 10\mbox{]}
+
+
+\begin{DoxyCodeInclude}{0}
+
+\end{DoxyCodeInclude}
+ Semester \doxylink{over_args_8js}{3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/lodash/over\+Args.\+js} 

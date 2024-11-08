@@ -1,0 +1,131 @@
+\doxysection{backend/node\+\_\+modules/jose/dist/node/esm/jwks/local.js File Reference}
+\hypertarget{node_2esm_2jwks_2local_8js}{}\label{node_2esm_2jwks_2local_8js}\index{backend/node\_modules/jose/dist/node/esm/jwks/local.js@{backend/node\_modules/jose/dist/node/esm/jwks/local.js}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_local_j_w_k_set}{Local\+JWKSet}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{node_2esm_2jwks_2local_8js_a91c4c6b23609af46c1ab2cfb09d7aea4}{get\+Kty\+From\+Alg}} (alg)
+\item 
+function export \mbox{\hyperlink{node_2esm_2jwks_2local_8js_a8e94b0657cef246eff6fe953343a295d}{is\+JWKSLike}} (\mbox{\hyperlink{jwt_8js_ada30f8b6b63870d89a3c0afdd231fe92}{jwks}})
+\item 
+function \mbox{\hyperlink{node_2esm_2jwks_2local_8js_a87afe551ee022cd2ef4cfdd58a27853a}{is\+JWKLike}} (key)
+\item 
+function \mbox{\hyperlink{node_2esm_2jwks_2local_8js_a0bf06b7d7d55d35fa50bb5c52c831c90}{clone}} (\mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}})
+\item 
+function \mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{node_2esm_2jwks_2local_8js_a29492f804718c142e45ad5c53a217cff}{import\+With\+Alg\+Cache}} (cache, jwk, alg)
+\item 
+function export \mbox{\hyperlink{node_2esm_2jwks_2local_8js_a95e620daa2c78fb318c738aef49281c0}{create\+Local\+JWKSet}} (\mbox{\hyperlink{jwt_8js_ada30f8b6b63870d89a3c0afdd231fe92}{jwks}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{node_2esm_2jwks_2local_8js_a59be084da8908b7d77ff34b25cd84488}{import}} \{ \mbox{\hyperlink{node_2cjs_2key_2import_8js_a56d4bc1cd03434e01c05f4ccc7e6e410}{import\+JWK}} \} from \textquotesingle{}../key/\mbox{\hyperlink{esm_2src_2file_8js_a73ffb0a3b9f028910adc01ac31153d46}{import.\+js}}\textquotesingle{}
+\item 
+\mbox{\hyperlink{component_2dist_2esm_2index_8esm2017_8js_a953be46b94f595d839e88a6d3d270309}{import}} \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2util_8js_abf86e241701120aea6dfd247bfc055cd}{is\+Object}} from lib is\+\_\+object \mbox{\hyperlink{node_2esm_2jwks_2local_8js_a0e52dadfb9a7f37f2c4f6e971f0f3d43}{js}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{node_2esm_2jwks_2local_8js_a0bf06b7d7d55d35fa50bb5c52c831c90}\index{local.js@{local.js}!clone@{clone}}
+\index{clone@{clone}!local.js@{local.js}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \label{node_2esm_2jwks_2local_8js_a0bf06b7d7d55d35fa50bb5c52c831c90} 
+function clone (\begin{DoxyParamCaption}\item[{}]{obj}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{json-bigint_2lib_2stringify_8js_aec316efdeb7b2e5358b7d50869858da1}{JSON}}, and \mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}.
+
+\Hypertarget{node_2esm_2jwks_2local_8js_a95e620daa2c78fb318c738aef49281c0}\index{local.js@{local.js}!createLocalJWKSet@{createLocalJWKSet}}
+\index{createLocalJWKSet@{createLocalJWKSet}!local.js@{local.js}}
+\doxysubsubsection{\texorpdfstring{createLocalJWKSet()}{createLocalJWKSet()}}
+{\footnotesize\ttfamily \label{node_2esm_2jwks_2local_8js_a95e620daa2c78fb318c738aef49281c0} 
+function export create\+Local\+JWKSet (\begin{DoxyParamCaption}\item[{}]{jwks}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}}, \mbox{\hyperlink{jwt_8js_ada30f8b6b63870d89a3c0afdd231fe92}{jwks}}, \mbox{\hyperlink{node_2cjs_2jwks_2local_8js_ab174f4aae0ebfe46ac92163c6e8fdf9c}{Local\+JWKSet}}, and \mbox{\hyperlink{util_2dist_2index_8cjs_8js_a87da3d8264af1c9427605148f20dd9c4}{token}}.
+
+\Hypertarget{node_2esm_2jwks_2local_8js_a91c4c6b23609af46c1ab2cfb09d7aea4}\index{local.js@{local.js}!getKtyFromAlg@{getKtyFromAlg}}
+\index{getKtyFromAlg@{getKtyFromAlg}!local.js@{local.js}}
+\doxysubsubsection{\texorpdfstring{getKtyFromAlg()}{getKtyFromAlg()}}
+{\footnotesize\ttfamily \label{node_2esm_2jwks_2local_8js_a91c4c6b23609af46c1ab2cfb09d7aea4} 
+function get\+Kty\+From\+Alg (\begin{DoxyParamCaption}\item[{}]{alg}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{jose_2dist_2node_2cjs_2util_2errors_8js_a0be60ea572dd147f9eca4a1e3ddfb8b7}{JOSENot\+Supported}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{node_2esm_2jwks_2local_8js_a91c4c6b23609af46c1ab2cfb09d7aea4_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{node_2esm_2jwks_2local_8js_a29492f804718c142e45ad5c53a217cff}\index{local.js@{local.js}!importWithAlgCache@{importWithAlgCache}}
+\index{importWithAlgCache@{importWithAlgCache}!local.js@{local.js}}
+\doxysubsubsection{\texorpdfstring{importWithAlgCache()}{importWithAlgCache()}}
+{\footnotesize\ttfamily \label{node_2esm_2jwks_2local_8js_a29492f804718c142e45ad5c53a217cff} 
+function \mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} import\+With\+Alg\+Cache (\begin{DoxyParamCaption}\item[{}]{cache}{, }\item[{}]{jwk}{, }\item[{}]{alg}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7abb73f4f9b358b06de4d5253980de9a}{ext}}, \mbox{\hyperlink{node_2cjs_2key_2import_8js_a56d4bc1cd03434e01c05f4ccc7e6e410}{import\+JWK}}, \mbox{\hyperlink{jose_2dist_2node_2cjs_2util_2errors_8js_aa331e4d747660c6276db9292d05ef12b}{JWKSInvalid}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{node_2esm_2jwks_2local_8js_a29492f804718c142e45ad5c53a217cff_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{node_2esm_2jwks_2local_8js_a87afe551ee022cd2ef4cfdd58a27853a}\index{local.js@{local.js}!isJWKLike@{isJWKLike}}
+\index{isJWKLike@{isJWKLike}!local.js@{local.js}}
+\doxysubsubsection{\texorpdfstring{isJWKLike()}{isJWKLike()}}
+{\footnotesize\ttfamily \label{node_2esm_2jwks_2local_8js_a87afe551ee022cd2ef4cfdd58a27853a} 
+function is\+JWKLike (\begin{DoxyParamCaption}\item[{}]{key}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2util_8js_abf86e241701120aea6dfd247bfc055cd}{is\+Object}}.
+
+\Hypertarget{node_2esm_2jwks_2local_8js_a8e94b0657cef246eff6fe953343a295d}\index{local.js@{local.js}!isJWKSLike@{isJWKSLike}}
+\index{isJWKSLike@{isJWKSLike}!local.js@{local.js}}
+\doxysubsubsection{\texorpdfstring{isJWKSLike()}{isJWKSLike()}}
+{\footnotesize\ttfamily \label{node_2esm_2jwks_2local_8js_a8e94b0657cef246eff6fe953343a295d} 
+function export is\+JWKSLike (\begin{DoxyParamCaption}\item[{}]{jwks}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{src_2util_2minimal_8js_a325c4e317c38d8497130ebce7670be2f}{Array}}, \mbox{\hyperlink{browser_2jwks_2local_8js_a87afe551ee022cd2ef4cfdd58a27853a}{is\+JWKLike()}}, and \mbox{\hyperlink{jwt_8js_ada30f8b6b63870d89a3c0afdd231fe92}{jwks}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=249pt]{node_2esm_2jwks_2local_8js_a8e94b0657cef246eff6fe953343a295d_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{node_2esm_2jwks_2local_8js_a59be084da8908b7d77ff34b25cd84488}\index{local.js@{local.js}!import@{import}}
+\index{import@{import}!local.js@{local.js}}
+\doxysubsubsection{\texorpdfstring{import}{import}}
+{\footnotesize\ttfamily \label{node_2esm_2jwks_2local_8js_a59be084da8908b7d77ff34b25cd84488} 
+import \{ \mbox{\hyperlink{node_2cjs_2key_2import_8js_a56d4bc1cd03434e01c05f4ccc7e6e410}{import\+JWK}} \} from \textquotesingle{}../key/\mbox{\hyperlink{esm_2src_2file_8js_a73ffb0a3b9f028910adc01ac31153d46}{import.\+js}}\textquotesingle{}}
+
+\Hypertarget{node_2esm_2jwks_2local_8js_a0e52dadfb9a7f37f2c4f6e971f0f3d43}\index{local.js@{local.js}!js@{js}}
+\index{js@{js}!local.js@{local.js}}
+\doxysubsubsection{\texorpdfstring{js}{js}}
+{\footnotesize\ttfamily \label{node_2esm_2jwks_2local_8js_a0e52dadfb9a7f37f2c4f6e971f0f3d43} 
+\mbox{\hyperlink{component_2dist_2esm_2index_8esm2017_8js_a953be46b94f595d839e88a6d3d270309}{import}} \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2util_8js_abf86e241701120aea6dfd247bfc055cd}{is\+Object}} from lib is\+\_\+object js}
+

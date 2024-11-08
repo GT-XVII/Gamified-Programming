@@ -1,0 +1,33 @@
+\doxysection{/\+Users/nicoletiokhin/\+Desktop/\+Software Semester 3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/@google-\/cloud/firestore/build/src/filter.\+js}
+\hypertarget{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_c4841461196c822ab6502f58f84f8573}{}\label{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_c4841461196c822ab6502f58f84f8573}Creates and returns a new \mbox{[}\doxylink{class_filter}{Filter}\mbox{]}{\ttfamily \doxylink{class_filter}{Filter}}, which can be applied to \mbox{[}\doxylink{class_query_a09b549eea59e9d2d0d81b07b1b34bb77}{Query.\+where()}\mbox{]}{\ttfamily \doxylink{class_query_a09b549eea59e9d2d0d81b07b1b34bb77}{Query\#where}}, \mbox{[}\doxylink{class_filter_a206bac0e574a0b6a4c09747a50d0bc52}{Filter.\+or()}\mbox{]}{\ttfamily \doxylink{class_filter_a206bac0e574a0b6a4c09747a50d0bc52}{Filter\#or}}, or \mbox{[}\doxylink{class_filter_adf8b4ed4a08705db57bb2e4c483336e0}{Filter.\+and()}\mbox{]}{\ttfamily \doxylink{class_filter_adf8b4ed4a08705db57bb2e4c483336e0}{Filter\#and}}. When applied to a \mbox{[}\doxylink{class_query}{Query}\mbox{]}{\ttfamily \doxylink{class_query}{Query}} it requires that documents must contain the specified field and that its value should satisfy the relation constraint provided.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{string\texorpdfstring{$\vert$}{|}\+Field\+Path\}} & field\+Path The name of a property value to compare. \\
+\hline
+{\em \{string\}} & op\+Str \doxylink{class_a}{A} comparison operation in the form of a string. Acceptable operator strings are "{}$<$"{}, "{}$<$="{}, "{}=="{}, "{}!="{}, "{}$>$="{}, "{}$>$"{}, "{}array-\/contains"{}, "{}in"{}, "{}not-\/in"{}, and "{}array-\/contains-\/any"{}. \\
+\hline
+{\em \{\texorpdfstring{$\ast$}{*}\}} & value The value to which to compare the field for inclusion in a query. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{\doxylink{class_filter}{Filter}\} The created \doxylink{class_filter}{Filter}.
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{let\ collectionRef\ =\ \mbox{\hyperlink{firestore-namespace_8js_a6c18541a3018cee632d7e797bb983f36}{firestore}}.collection(\textcolor{stringliteral}{'col'});}
+\DoxyCodeLine{}
+\DoxyCodeLine{collectionRef.where(\mbox{\hyperlink{class_filter}{Filter}}.\mbox{\hyperlink{class_filter_af6be2934075d0920033f1d57a1608b11}{where}}(\textcolor{stringliteral}{'foo'},\ \textcolor{stringliteral}{'=='},\ \textcolor{stringliteral}{'bar'})).get().then(querySnapshot\ =>\ \{}
+\DoxyCodeLine{\ \ querySnapshot.forEach(documentSnapshot\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ console.log(\`{}Found\ document\ \mbox{\hyperlink{at_8js_a78af5f3fbaccaa8a16d6bea9d7a5e9f4}{at}}\ \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}\{documentSnapshot.ref.path\}\`{});}
+\DoxyCodeLine{\ \ \});}
+\DoxyCodeLine{\});}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyCodeInclude}{0}
+
+\end{DoxyCodeInclude}
+ Semester 3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/@google\doxylink{_0dgoogle-cloud_2firestore_2build_2src_2filter_8js}{-\/cloud/firestore/build/src/filter.\+js} 

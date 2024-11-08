@@ -1,0 +1,172 @@
+\doxysection{backend/node\+\_\+modules/node-\/forge/lib/pki.js File Reference}
+\hypertarget{pki_8js}{}\label{pki_8js}\index{backend/node\_modules/node-\/forge/lib/pki.js@{backend/node\_modules/node-\/forge/lib/pki.js}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{pki_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./forge\textquotesingle{})
+\item 
+var \mbox{\hyperlink{pki_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}} = forge.\+asn1
+\item 
+var \mbox{\hyperlink{pki_8js_a09f30a96df6dedfab363359fcbd6ed8b}{pki}} = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{module.\+exports}} = forge.\+pki = forge.\+pki \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} \{\}
+\item 
+\mbox{\hyperlink{ed25519_8js_a09f30a96df6dedfab363359fcbd6ed8b}{pki}} \mbox{\hyperlink{pki_8js_a8d7674d156cf21ec34ac8166fcbc24e8}{pem\+To\+Der}}
+\item 
+\mbox{\hyperlink{ed25519_8js_a09f30a96df6dedfab363359fcbd6ed8b}{pki}} \mbox{\hyperlink{pki_8js_a84df2df256b8d7307642c0fbbcc5fc1e}{private\+Key\+From\+Pem}}
+\item 
+\mbox{\hyperlink{ed25519_8js_a09f30a96df6dedfab363359fcbd6ed8b}{pki}} \mbox{\hyperlink{pki_8js_a73e371e0746ce0165f3de217c976f562}{private\+Key\+To\+Pem}}
+\item 
+\mbox{\hyperlink{ed25519_8js_a09f30a96df6dedfab363359fcbd6ed8b}{pki}} \mbox{\hyperlink{pki_8js_a79d55ef87f08391d6ac109f2fe2ee7e3}{private\+Key\+Info\+To\+Pem}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{pki_8js_a9c78fc6dc234df01559c22bf320e9785}\index{pki.js@{pki.js}!asn1@{asn1}}
+\index{asn1@{asn1}!pki.js@{pki.js}}
+\doxysubsubsection{\texorpdfstring{asn1}{asn1}}
+{\footnotesize\ttfamily \label{pki_8js_a9c78fc6dc234df01559c22bf320e9785} 
+var asn1 = forge.\+asn1}
+
+\Hypertarget{pki_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}\index{pki.js@{pki.js}!forge@{forge}}
+\index{forge@{forge}!pki.js@{pki.js}}
+\doxysubsubsection{\texorpdfstring{forge}{forge}}
+{\footnotesize\ttfamily \label{pki_8js_ab4dbef01e35b8e6d06087c0542ba9e2c} 
+var forge = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./forge\textquotesingle{})}
+
+Javascript implementation of a basic Public Key Infrastructure, including support for RSA public and private keys.
+
+\begin{DoxyAuthor}{Author}
+Dave Longley
+\end{DoxyAuthor}
+Copyright (c) 2010-\/2013 Digital Bazaar, Inc. \Hypertarget{pki_8js_a8d7674d156cf21ec34ac8166fcbc24e8}\index{pki.js@{pki.js}!pemToDer@{pemToDer}}
+\index{pemToDer@{pemToDer}!pki.js@{pki.js}}
+\doxysubsubsection{\texorpdfstring{pemToDer}{pemToDer}}
+{\footnotesize\ttfamily \label{pki_8js_a8d7674d156cf21ec34ac8166fcbc24e8} 
+\mbox{\hyperlink{ed25519_8js_a09f30a96df6dedfab363359fcbd6ed8b}{pki}} pem\+To\+Der}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{pem_8js_a524de6b057fd414473c56000d92a5601}{pem}})\ \{}
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{protobufjs_2ext_2descriptor_2test_8js_aa2e57ff47bd491f47d9b13a694aa0aeb}{msg}}\ =\ \mbox{\hyperlink{pki_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.pem.decode(\mbox{\hyperlink{pem_8js_a524de6b057fd414473c56000d92a5601}{pem}})[0];}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{protobufjs_2ext_2descriptor_2test_8js_aa2e57ff47bd491f47d9b13a694aa0aeb}{msg}}.procType\ \&\&\ \mbox{\hyperlink{protobufjs_2ext_2descriptor_2test_8js_aa2e57ff47bd491f47d9b13a694aa0aeb}{msg}}.procType.type\ ===\ \textcolor{stringliteral}{'ENCRYPTED'})\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ Error(\textcolor{stringliteral}{'Could\ not\ convert\ PEM\ to\ DER;\ PEM\ is\ encrypted.'});}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{pki_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.util.createBuffer(\mbox{\hyperlink{protobufjs_2ext_2descriptor_2test_8js_aa2e57ff47bd491f47d9b13a694aa0aeb}{msg}}.body);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+NOTE\+: THIS METHOD IS DEPRECATED. Use pem.\+decode() instead.
+
+Converts PEM-\/formatted data to DER.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pem} & the PEM-\/formatted data.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the DER-\/formatted data. 
+\end{DoxyReturn}
+\Hypertarget{pki_8js_a09f30a96df6dedfab363359fcbd6ed8b}\index{pki.js@{pki.js}!pki@{pki}}
+\index{pki@{pki}!pki.js@{pki.js}}
+\doxysubsubsection{\texorpdfstring{pki}{pki}}
+{\footnotesize\ttfamily \label{pki_8js_a09f30a96df6dedfab363359fcbd6ed8b} 
+var pki = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{module.\+exports}} = forge.\+pki = forge.\+pki \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} \{\}}
+
+\Hypertarget{pki_8js_a84df2df256b8d7307642c0fbbcc5fc1e}\index{pki.js@{pki.js}!privateKeyFromPem@{privateKeyFromPem}}
+\index{privateKeyFromPem@{privateKeyFromPem}!pki.js@{pki.js}}
+\doxysubsubsection{\texorpdfstring{privateKeyFromPem}{privateKeyFromPem}}
+{\footnotesize\ttfamily \label{pki_8js_a84df2df256b8d7307642c0fbbcc5fc1e} 
+\mbox{\hyperlink{ed25519_8js_a09f30a96df6dedfab363359fcbd6ed8b}{pki}} private\+Key\+From\+Pem}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{pem_8js_a524de6b057fd414473c56000d92a5601}{pem}})\ \{}
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{protobufjs_2ext_2descriptor_2test_8js_aa2e57ff47bd491f47d9b13a694aa0aeb}{msg}}\ =\ \mbox{\hyperlink{pki_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.pem.decode(\mbox{\hyperlink{pem_8js_a524de6b057fd414473c56000d92a5601}{pem}})[0];}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{protobufjs_2ext_2descriptor_2test_8js_aa2e57ff47bd491f47d9b13a694aa0aeb}{msg}}.type\ !==\ \textcolor{stringliteral}{'PRIVATE\ KEY'}\ \&\&\ \mbox{\hyperlink{protobufjs_2ext_2descriptor_2test_8js_aa2e57ff47bd491f47d9b13a694aa0aeb}{msg}}.type\ !==\ \textcolor{stringliteral}{'RSA\ PRIVATE\ KEY'})\ \{}
+\DoxyCodeLine{\ \ \ \ var\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}}\ =\ \textcolor{keyword}{new}\ Error(\textcolor{stringliteral}{'Could\ not\ convert\ private\ key\ from\ PEM;\ PEM\ '}\ +}
+\DoxyCodeLine{\ \ \ \ \ \ \textcolor{stringliteral}{'header\ type\ is\ not\ "{}PRIVATE\ KEY"{}\ or\ "{}RSA\ PRIVATE\ KEY"{}.'});}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}}.headerType\ =\ \mbox{\hyperlink{protobufjs_2ext_2descriptor_2test_8js_aa2e57ff47bd491f47d9b13a694aa0aeb}{msg}}.type;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{throw}\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}};}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{protobufjs_2ext_2descriptor_2test_8js_aa2e57ff47bd491f47d9b13a694aa0aeb}{msg}}.procType\ \&\&\ \mbox{\hyperlink{protobufjs_2ext_2descriptor_2test_8js_aa2e57ff47bd491f47d9b13a694aa0aeb}{msg}}.procType.type\ ===\ \textcolor{stringliteral}{'ENCRYPTED'})\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ Error(\textcolor{stringliteral}{'Could\ not\ convert\ private\ key\ from\ PEM;\ PEM\ is\ encrypted.'});}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}\ =\ \mbox{\hyperlink{pki_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.fromDer(\mbox{\hyperlink{protobufjs_2ext_2descriptor_2test_8js_aa2e57ff47bd491f47d9b13a694aa0aeb}{msg}}.body);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{pki_8js_a09f30a96df6dedfab363359fcbd6ed8b}{pki}}.privateKeyFromAsn1(\mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Converts an RSA private key from PEM format.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pem} & the PEM-\/formatted private key.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the private key. 
+\end{DoxyReturn}
+\Hypertarget{pki_8js_a79d55ef87f08391d6ac109f2fe2ee7e3}\index{pki.js@{pki.js}!privateKeyInfoToPem@{privateKeyInfoToPem}}
+\index{privateKeyInfoToPem@{privateKeyInfoToPem}!pki.js@{pki.js}}
+\doxysubsubsection{\texorpdfstring{privateKeyInfoToPem}{privateKeyInfoToPem}}
+{\footnotesize\ttfamily \label{pki_8js_a79d55ef87f08391d6ac109f2fe2ee7e3} 
+\mbox{\hyperlink{ed25519_8js_a09f30a96df6dedfab363359fcbd6ed8b}{pki}} private\+Key\+Info\+To\+Pem}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{pki_8js_a09f30a96df6dedfab363359fcbd6ed8b}{pki}},\ maxline)\ \{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{protobufjs_2ext_2descriptor_2test_8js_aa2e57ff47bd491f47d9b13a694aa0aeb}{msg}}\ =\ \{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type}}:\ \textcolor{stringliteral}{'PRIVATE\ KEY'},}
+\DoxyCodeLine{\ \ \ \ body:\ \mbox{\hyperlink{pki_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.toDer(\mbox{\hyperlink{pki_8js_a09f30a96df6dedfab363359fcbd6ed8b}{pki}}).getBytes()}
+\DoxyCodeLine{\ \ \};}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{pki_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.pem.encode(\mbox{\hyperlink{protobufjs_2ext_2descriptor_2test_8js_aa2e57ff47bd491f47d9b13a694aa0aeb}{msg}},\ \{maxline:\ maxline\});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Converts a Private\+Key\+Info to PEM format.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pki} & the Private\+Key\+Info. \\
+\hline
+{\em maxline} & the maximum characters per line, defaults to 64.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the PEM-\/formatted private key. 
+\end{DoxyReturn}
+\Hypertarget{pki_8js_a73e371e0746ce0165f3de217c976f562}\index{pki.js@{pki.js}!privateKeyToPem@{privateKeyToPem}}
+\index{privateKeyToPem@{privateKeyToPem}!pki.js@{pki.js}}
+\doxysubsubsection{\texorpdfstring{privateKeyToPem}{privateKeyToPem}}
+{\footnotesize\ttfamily \label{pki_8js_a73e371e0746ce0165f3de217c976f562} 
+\mbox{\hyperlink{ed25519_8js_a09f30a96df6dedfab363359fcbd6ed8b}{pki}} private\+Key\+To\+Pem}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(key,\ maxline)\ \{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{protobufjs_2ext_2descriptor_2test_8js_aa2e57ff47bd491f47d9b13a694aa0aeb}{msg}}\ =\ \{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type}}:\ \textcolor{stringliteral}{'RSA\ PRIVATE\ KEY'},}
+\DoxyCodeLine{\ \ \ \ body:\ \mbox{\hyperlink{pki_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.toDer(\mbox{\hyperlink{pki_8js_a09f30a96df6dedfab363359fcbd6ed8b}{pki}}.privateKeyToAsn1(key)).getBytes()}
+\DoxyCodeLine{\ \ \};}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{pki_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}.pem.encode(\mbox{\hyperlink{protobufjs_2ext_2descriptor_2test_8js_aa2e57ff47bd491f47d9b13a694aa0aeb}{msg}},\ \{maxline:\ maxline\});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Converts an RSA private key to PEM format.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & the private key. \\
+\hline
+{\em maxline} & the maximum characters per line, defaults to 64.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the PEM-\/formatted private key. 
+\end{DoxyReturn}

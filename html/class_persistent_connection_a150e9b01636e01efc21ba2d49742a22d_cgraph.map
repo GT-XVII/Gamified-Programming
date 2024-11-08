@@ -1,0 +1,10 @@
+<map id="PersistentConnection::refreshAppCheckToken" name="PersistentConnection::refreshAppCheckToken">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,35,171,75"/>
+<area shape="rect" id="Node000002" href="$class_persistent_connection.html#a4ec7b69f34049f6b647a253d3ba548d2" title=" " alt="" coords="418,5,564,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,46,402,29,402,35,171,52"/>
+<area shape="rect" id="Node000003" href="$class_persistent_connection.html#a5ebf44b5bc0c3a612783f63700f8de33" title=" " alt="" coords="219,63,365,103"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="172,64,204,68,203,74,171,69"/>
+<area shape="poly" id="edge4_Node000003_Node000002" title=" " alt="" coords="364,60,403,48,404,53,365,65"/>
+<area shape="rect" id="Node000004" href="$database_2dist_2node-esm_2index_8node_8esm_8js.html#a342d4db642725f36efb71102f6130b84" title=" " alt="" coords="413,70,568,96"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="366,80,398,80,398,86,366,86"/>
+</map>

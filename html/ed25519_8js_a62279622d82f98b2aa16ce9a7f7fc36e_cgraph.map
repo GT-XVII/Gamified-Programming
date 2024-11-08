@@ -1,0 +1,14 @@
+<map id="scalarbase" name="scalarbase">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,90,80"/>
+<area shape="rect" id="Node000002" href="$ed25519_8js.html#ab65e99c4cef2469ef19143555bd7c321" title=" " alt="" coords="159,5,198,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="83,52,143,28,145,33,85,57"/>
+<area shape="rect" id="Node000003" href="$ed25519_8js.html#a38863358bb339fea1837360053535f6f" title=" " alt="" coords="138,55,219,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="90,65,122,65,122,70,90,70"/>
+<area shape="rect" id="Node000006" href="$ed25519_8js.html#aabf718982584c21b166b2657d0a62aa7" title=" " alt="" coords="267,104,341,130"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="91,78,138,90,252,109,251,114,137,95,89,83"/>
+<area shape="rect" id="Node000004" href="$ed25519_8js.html#ae79c7a907b304a5667d423acb70eb780" title=" " alt="" coords="274,55,334,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="220,65,259,65,259,70,220,70"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="214,79,256,95,254,100,212,83"/>
+<area shape="rect" id="Node000005" href="$ed25519_8js.html#a01a5ebbc6692285962adf61bd7e33153" title=" " alt="" coords="389,55,463,80"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="334,65,374,65,374,70,334,70"/>
+</map>

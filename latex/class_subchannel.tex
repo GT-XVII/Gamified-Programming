@@ -1,0 +1,466 @@
+\doxysection{Subchannel Class Reference}
+\hypertarget{class_subchannel}{}\label{class_subchannel}\index{Subchannel@{Subchannel}}
+
+
+Collaboration diagram for Subchannel\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{class_subchannel__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_subchannel_ab684aec903ec37559929f4718264bbbf}{constructor}} (channel\+Target, subchannel\+Address, options, \mbox{\hyperlink{_0dgrpc_2grpc-js_2build_2src_2index_8js_a88f1ca34064fef6dc1e29d7d1cf5cfcf}{credentials}}, connector)
+\item 
+\mbox{\hyperlink{class_subchannel_a9421ad1efd8a53c8645f0864c99b8730}{get\+Channelz\+Info}} ()
+\item 
+\mbox{\hyperlink{class_subchannel_a84010a503c419c9a17bfd682addfd5ce}{trace}} (\mbox{\hyperlink{node-forge_2lib_2util_8js_ab492f69e70933f85fe6b3a8808d19852}{text}})
+\item 
+\mbox{\hyperlink{class_subchannel_ac95a1970e72e63741cb6ad18a3f89bfb}{ref\+Trace}} (\mbox{\hyperlink{node-forge_2lib_2util_8js_ab492f69e70933f85fe6b3a8808d19852}{text}})
+\item 
+\mbox{\hyperlink{class_subchannel_ac3eeed0f4d4d026a43bb77bbb0ea34bd}{handle\+Backoff\+Timer}} ()
+\item 
+\mbox{\hyperlink{class_subchannel_a527c3c3ed3039e365fe9c8d39a738a08}{start\+Backoff}} ()
+\item 
+\mbox{\hyperlink{class_subchannel_a1572a4d885d23cda8b1b4f3b1fa4ec8b}{stop\+Backoff}} ()
+\item 
+\mbox{\hyperlink{class_subchannel_a9d4600623a558e674969162a89010da4}{start\+Connecting\+Internal}} ()
+\item 
+\mbox{\hyperlink{class_subchannel_aa7cbb244a6beea517c2db726c79489cc}{transition\+To\+State}} (old\+States, new\+State, error\+Message)
+\item 
+\mbox{\hyperlink{class_subchannel_a8bad34746bbbb85c368309a4152eec84}{ref}} ()
+\item 
+\mbox{\hyperlink{class_subchannel_a605dc8a7db8463adbb391c0395c00426}{unref}} ()
+\item 
+\mbox{\hyperlink{class_subchannel_a45f3f1220da24d4862facab27ad18cf7}{unref\+If\+One\+Ref}} ()
+\item 
+\mbox{\hyperlink{class_subchannel_a8a99b09a3ba7969d8791f0ea9b2f3702}{create\+Call}} (metadata, host, \mbox{\hyperlink{lodash_2method_8js_a2f565198b0a61cb8648a01f0d9617cd7}{method}}, listener)
+\item 
+\mbox{\hyperlink{class_subchannel_a8f4a24d194efeee8b55182239fedeb8c}{start\+Connecting}} ()
+\item 
+\mbox{\hyperlink{class_subchannel_afce65a4b228bca2d74d1a3b9e9bbffc4}{get\+Connectivity\+State}} ()
+\item 
+\mbox{\hyperlink{class_subchannel_aa054ba879f5e22c9a6c8ffef48f96c3b}{add\+Connectivity\+State\+Listener}} (listener)
+\item 
+\mbox{\hyperlink{class_subchannel_ad93fe18a6ff5a355c9f360bd1218683a}{remove\+Connectivity\+State\+Listener}} (listener)
+\item 
+\mbox{\hyperlink{class_subchannel_ab92f9328d2bbfb6a3a65a2fadf742780}{reset\+Backoff}} ()
+\item 
+\mbox{\hyperlink{class_subchannel_a6fb67a0cc2d8d8b9fb409afea9677e6e}{get\+Address}} ()
+\item 
+\mbox{\hyperlink{class_subchannel_ae9358363915450602f9dfa00ddfa8132}{get\+Channelz\+Ref}} ()
+\item 
+\mbox{\hyperlink{class_subchannel_a4a782f67fdd2c6fd9b54f43d6f3a321e}{is\+Healthy}} ()
+\item 
+\mbox{\hyperlink{class_subchannel_a554f6056e36811f551f2d25033e56965}{add\+Health\+State\+Watcher}} (listener)
+\item 
+\mbox{\hyperlink{class_subchannel_a7c67efa857e5bf9ca419f5a4355150a5}{remove\+Health\+State\+Watcher}} (listener)
+\item 
+\mbox{\hyperlink{class_subchannel_af771ebcb4be22f9a9c2add1f9fde6e7b}{get\+Real\+Subchannel}} ()
+\item 
+\mbox{\hyperlink{class_subchannel_a59d19a763403e0f73ab283adb9d4a573}{real\+Subchannel\+Equals}} (other)
+\item 
+\mbox{\hyperlink{class_subchannel_a58bd1573cec02a0815d6a170f61d2daf}{throttle\+Keepalive}} (new\+Keepalive\+Time)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_subchannel_aa054ba879f5e22c9a6c8ffef48f96c3b}\index{Subchannel@{Subchannel}!addConnectivityStateListener@{addConnectivityStateListener}}
+\index{addConnectivityStateListener@{addConnectivityStateListener}!Subchannel@{Subchannel}}
+\doxysubsubsection{\texorpdfstring{addConnectivityStateListener()}{addConnectivityStateListener()}}
+{\footnotesize\ttfamily \label{class_subchannel_aa054ba879f5e22c9a6c8ffef48f96c3b} 
+Subchannel\+::add\+Connectivity\+State\+Listener (\begin{DoxyParamCaption}\item[{}]{listener}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Add a listener function to be called whenever the subchannel\textquotesingle{}s connectivity state changes. 
+\begin{DoxyParams}{Parameters}
+{\em listener} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_subchannel_a554f6056e36811f551f2d25033e56965}\index{Subchannel@{Subchannel}!addHealthStateWatcher@{addHealthStateWatcher}}
+\index{addHealthStateWatcher@{addHealthStateWatcher}!Subchannel@{Subchannel}}
+\doxysubsubsection{\texorpdfstring{addHealthStateWatcher()}{addHealthStateWatcher()}}
+{\footnotesize\ttfamily \label{class_subchannel_a554f6056e36811f551f2d25033e56965} 
+Subchannel\+::add\+Health\+State\+Watcher (\begin{DoxyParamCaption}\item[{}]{listener}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_subchannel_ab684aec903ec37559929f4718264bbbf}\index{Subchannel@{Subchannel}!constructor@{constructor}}
+\index{constructor@{constructor}!Subchannel@{Subchannel}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_subchannel_ab684aec903ec37559929f4718264bbbf} 
+Subchannel\+::constructor (\begin{DoxyParamCaption}\item[{}]{channel\+Target}{, }\item[{}]{subchannel\+Address}{, }\item[{}]{options}{, }\item[{}]{credentials}{, }\item[{}]{connector}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\doxylink{class_a}{A} class representing a connection to a single backend. 
+\begin{DoxyParams}{Parameters}
+{\em channel\+Target} & The target string for the channel as a whole \\
+\hline
+{\em subchannel\+Address} & The address for the backend that this subchannel will connect to \\
+\hline
+{\em options} & The channel options, plus any specific subchannel options for this subchannel \\
+\hline
+{\em credentials} & The channel credentials used to establish this connection \\
+\hline
+\end{DoxyParams}
+The subchannel\textquotesingle{}s current connectivity state. Invariant\+: {\ttfamily session} === {\ttfamily null} if and only if {\ttfamily connectivity\+State} is IDLE or TRANSIENT\+\_\+\+FAILURE.
+
+The underlying http2 session used to make requests.
+
+Indicates that the subchannel should transition from TRANSIENT\+\_\+\+FAILURE to CONNECTING instead of IDLE when the backoff timeout ends.
+
+\doxylink{class_a}{A} list of listener functions that will be called whenever the connectivity state changes. Will be modified by {\ttfamily add\+Connectivity\+State\+Listener} and {\ttfamily remove\+Connectivity\+State\+Listener}
+
+Tracks channels and subchannel pools with references to this subchannel
+
+References \mbox{\hyperlink{logger_2dist_2esm_2index_8esm5_8js_a0adf123df8967a14b5bdd9ff3bbe2d0c}{\+\_\+a}}, \mbox{\hyperlink{_subchannel_8js_ac6ee4d06458738135616d807a5a13342}{backoff\+\_\+timeout\+\_\+1}}, \mbox{\hyperlink{_subchannel_8js_a1c963d3b854ccff6bad1a2f8b0f7f18a}{channelz\+\_\+1}}, \mbox{\hyperlink{_subchannel_8js_a66e6c9aea487cf1c4498cf2b1aa0f621}{connectivity\+\_\+state\+\_\+1}}, \mbox{\hyperlink{_0dgrpc_2grpc-js_2build_2src_2index_8js_a88f1ca34064fef6dc1e29d7d1cf5cfcf}{credentials}}, \mbox{\hyperlink{class_subchannel_a9421ad1efd8a53c8645f0864c99b8730}{get\+Channelz\+Info()}}, \mbox{\hyperlink{class_subchannel_ac3eeed0f4d4d026a43bb77bbb0ea34bd}{handle\+Backoff\+Timer()}}, \mbox{\hyperlink{json-bigint_2lib_2stringify_8js_aec316efdeb7b2e5358b7d50869858da1}{JSON}}, \mbox{\hyperlink{__create_set_8js_ab9f46b8207185d305162498bea0d1c26}{Set}}, \mbox{\hyperlink{_subchannel_8js_a46c0e253ac00dface70796e150cad858}{subchannel\+\_\+address\+\_\+1}}, \mbox{\hyperlink{logging_8js_acb1634453d1705af9683695efa3847e6}{trace}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_subchannel_ab684aec903ec37559929f4718264bbbf_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_subchannel_a8a99b09a3ba7969d8791f0ea9b2f3702}\index{Subchannel@{Subchannel}!createCall@{createCall}}
+\index{createCall@{createCall}!Subchannel@{Subchannel}}
+\doxysubsubsection{\texorpdfstring{createCall()}{createCall()}}
+{\footnotesize\ttfamily \label{class_subchannel_a8a99b09a3ba7969d8791f0ea9b2f3702} 
+Subchannel\+::create\+Call (\begin{DoxyParamCaption}\item[{}]{metadata}{, }\item[{}]{host}{, }\item[{}]{method}{, }\item[{}]{listener}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{_subchannel_8js_ad33cb6840349d3bc93f4fe9de15a6f8f}{constants\+\_\+1}}, \mbox{\hyperlink{lodash_2method_8js_a2f565198b0a61cb8648a01f0d9617cd7}{method}}, and \mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2index_8js_aac9dfada3e10bfb087ebb0a95f284488}{status}}.
+
+\Hypertarget{class_subchannel_a6fb67a0cc2d8d8b9fb409afea9677e6e}\index{Subchannel@{Subchannel}!getAddress@{getAddress}}
+\index{getAddress@{getAddress}!Subchannel@{Subchannel}}
+\doxysubsubsection{\texorpdfstring{getAddress()}{getAddress()}}
+{\footnotesize\ttfamily \label{class_subchannel_a6fb67a0cc2d8d8b9fb409afea9677e6e} 
+Subchannel\+::get\+Address (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_subchannel_a9421ad1efd8a53c8645f0864c99b8730}\index{Subchannel@{Subchannel}!getChannelzInfo@{getChannelzInfo}}
+\index{getChannelzInfo@{getChannelzInfo}!Subchannel@{Subchannel}}
+\doxysubsubsection{\texorpdfstring{getChannelzInfo()}{getChannelzInfo()}}
+{\footnotesize\ttfamily \label{class_subchannel_a9421ad1efd8a53c8645f0864c99b8730} 
+Subchannel\+::get\+Channelz\+Info (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{asynckit_2lib_2state_8js_a7e1b0ba367facd663d59372bd204ea01}{state()}}, and \mbox{\hyperlink{logging_8js_acb1634453d1705af9683695efa3847e6}{trace}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{class_subchannel_a9421ad1efd8a53c8645f0864c99b8730_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_subchannel_a9421ad1efd8a53c8645f0864c99b8730_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_subchannel_ae9358363915450602f9dfa00ddfa8132}\index{Subchannel@{Subchannel}!getChannelzRef@{getChannelzRef}}
+\index{getChannelzRef@{getChannelzRef}!Subchannel@{Subchannel}}
+\doxysubsubsection{\texorpdfstring{getChannelzRef()}{getChannelzRef()}}
+{\footnotesize\ttfamily \label{class_subchannel_ae9358363915450602f9dfa00ddfa8132} 
+Subchannel\+::get\+Channelz\+Ref (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_subchannel_afce65a4b228bca2d74d1a3b9e9bbffc4}\index{Subchannel@{Subchannel}!getConnectivityState@{getConnectivityState}}
+\index{getConnectivityState@{getConnectivityState}!Subchannel@{Subchannel}}
+\doxysubsubsection{\texorpdfstring{getConnectivityState()}{getConnectivityState()}}
+{\footnotesize\ttfamily \label{class_subchannel_afce65a4b228bca2d74d1a3b9e9bbffc4} 
+Subchannel\+::get\+Connectivity\+State (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the subchannel\textquotesingle{}s current connectivity state. \Hypertarget{class_subchannel_af771ebcb4be22f9a9c2add1f9fde6e7b}\index{Subchannel@{Subchannel}!getRealSubchannel@{getRealSubchannel}}
+\index{getRealSubchannel@{getRealSubchannel}!Subchannel@{Subchannel}}
+\doxysubsubsection{\texorpdfstring{getRealSubchannel()}{getRealSubchannel()}}
+{\footnotesize\ttfamily \label{class_subchannel_af771ebcb4be22f9a9c2add1f9fde6e7b} 
+Subchannel\+::get\+Real\+Subchannel (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_subchannel_ac3eeed0f4d4d026a43bb77bbb0ea34bd}\index{Subchannel@{Subchannel}!handleBackoffTimer@{handleBackoffTimer}}
+\index{handleBackoffTimer@{handleBackoffTimer}!Subchannel@{Subchannel}}
+\doxysubsubsection{\texorpdfstring{handleBackoffTimer()}{handleBackoffTimer()}}
+{\footnotesize\ttfamily \label{class_subchannel_ac3eeed0f4d4d026a43bb77bbb0ea34bd} 
+Subchannel\+::handle\+Backoff\+Timer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{_subchannel_8js_a66e6c9aea487cf1c4498cf2b1aa0f621}{connectivity\+\_\+state\+\_\+1}}, and \mbox{\hyperlink{class_subchannel_aa7cbb244a6beea517c2db726c79489cc}{transition\+To\+State()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_subchannel_ac3eeed0f4d4d026a43bb77bbb0ea34bd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_subchannel_ac3eeed0f4d4d026a43bb77bbb0ea34bd_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_subchannel_a4a782f67fdd2c6fd9b54f43d6f3a321e}\index{Subchannel@{Subchannel}!isHealthy@{isHealthy}}
+\index{isHealthy@{isHealthy}!Subchannel@{Subchannel}}
+\doxysubsubsection{\texorpdfstring{isHealthy()}{isHealthy()}}
+{\footnotesize\ttfamily \label{class_subchannel_a4a782f67fdd2c6fd9b54f43d6f3a321e} 
+Subchannel\+::is\+Healthy (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_subchannel_a59d19a763403e0f73ab283adb9d4a573}\index{Subchannel@{Subchannel}!realSubchannelEquals@{realSubchannelEquals}}
+\index{realSubchannelEquals@{realSubchannelEquals}!Subchannel@{Subchannel}}
+\doxysubsubsection{\texorpdfstring{realSubchannelEquals()}{realSubchannelEquals()}}
+{\footnotesize\ttfamily \label{class_subchannel_a59d19a763403e0f73ab283adb9d4a573} 
+Subchannel\+::real\+Subchannel\+Equals (\begin{DoxyParamCaption}\item[{}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_subchannel_a8bad34746bbbb85c368309a4152eec84}\index{Subchannel@{Subchannel}!ref@{ref}}
+\index{ref@{ref}!Subchannel@{Subchannel}}
+\doxysubsubsection{\texorpdfstring{ref()}{ref()}}
+{\footnotesize\ttfamily \label{class_subchannel_a8bad34746bbbb85c368309a4152eec84} 
+Subchannel\+::ref (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{class_subchannel_ac95a1970e72e63741cb6ad18a3f89bfb}{ref\+Trace()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{class_subchannel_a8bad34746bbbb85c368309a4152eec84_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_subchannel_ac95a1970e72e63741cb6ad18a3f89bfb}\index{Subchannel@{Subchannel}!refTrace@{refTrace}}
+\index{refTrace@{refTrace}!Subchannel@{Subchannel}}
+\doxysubsubsection{\texorpdfstring{refTrace()}{refTrace()}}
+{\footnotesize\ttfamily \label{class_subchannel_ac95a1970e72e63741cb6ad18a3f89bfb} 
+Subchannel\+::ref\+Trace (\begin{DoxyParamCaption}\item[{}]{text}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{_subchannel_8js_ad33cb6840349d3bc93f4fe9de15a6f8f}{constants\+\_\+1}}, \mbox{\hyperlink{_subchannel_8js_ab53afa7b9c9aef77e950713c8b54c98c}{logging}}, and \mbox{\hyperlink{node-forge_2lib_2util_8js_ab492f69e70933f85fe6b3a8808d19852}{text}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_subchannel_ac95a1970e72e63741cb6ad18a3f89bfb_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_subchannel_ad93fe18a6ff5a355c9f360bd1218683a}\index{Subchannel@{Subchannel}!removeConnectivityStateListener@{removeConnectivityStateListener}}
+\index{removeConnectivityStateListener@{removeConnectivityStateListener}!Subchannel@{Subchannel}}
+\doxysubsubsection{\texorpdfstring{removeConnectivityStateListener()}{removeConnectivityStateListener()}}
+{\footnotesize\ttfamily \label{class_subchannel_ad93fe18a6ff5a355c9f360bd1218683a} 
+Subchannel\+::remove\+Connectivity\+State\+Listener (\begin{DoxyParamCaption}\item[{}]{listener}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Remove a listener previously added with {\ttfamily add\+Connectivity\+State\+Listener} 
+\begin{DoxyParams}{Parameters}
+{\em listener} & \doxylink{class_a}{A} reference to a function previously passed to {\ttfamily add\+Connectivity\+State\+Listener} \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_subchannel_a7c67efa857e5bf9ca419f5a4355150a5}\index{Subchannel@{Subchannel}!removeHealthStateWatcher@{removeHealthStateWatcher}}
+\index{removeHealthStateWatcher@{removeHealthStateWatcher}!Subchannel@{Subchannel}}
+\doxysubsubsection{\texorpdfstring{removeHealthStateWatcher()}{removeHealthStateWatcher()}}
+{\footnotesize\ttfamily \label{class_subchannel_a7c67efa857e5bf9ca419f5a4355150a5} 
+Subchannel\+::remove\+Health\+State\+Watcher (\begin{DoxyParamCaption}\item[{}]{listener}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_subchannel_ab92f9328d2bbfb6a3a65a2fadf742780}\index{Subchannel@{Subchannel}!resetBackoff@{resetBackoff}}
+\index{resetBackoff@{resetBackoff}!Subchannel@{Subchannel}}
+\doxysubsubsection{\texorpdfstring{resetBackoff()}{resetBackoff()}}
+{\footnotesize\ttfamily \label{class_subchannel_ab92f9328d2bbfb6a3a65a2fadf742780} 
+Subchannel\+::reset\+Backoff (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Reset the backoff timeout, and immediately start connecting if in backoff. 
+
+References \mbox{\hyperlink{_subchannel_8js_a66e6c9aea487cf1c4498cf2b1aa0f621}{connectivity\+\_\+state\+\_\+1}}, \mbox{\hyperlink{ipaddr_8min_8js_abcedab16429ea0641c6596f556f2e102}{process}}, and \mbox{\hyperlink{class_subchannel_aa7cbb244a6beea517c2db726c79489cc}{transition\+To\+State()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_subchannel_ab92f9328d2bbfb6a3a65a2fadf742780_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_subchannel_a527c3c3ed3039e365fe9c8d39a738a08}\index{Subchannel@{Subchannel}!startBackoff@{startBackoff}}
+\index{startBackoff@{startBackoff}!Subchannel@{Subchannel}}
+\doxysubsubsection{\texorpdfstring{startBackoff()}{startBackoff()}}
+{\footnotesize\ttfamily \label{class_subchannel_a527c3c3ed3039e365fe9c8d39a738a08} 
+Subchannel\+::start\+Backoff (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Start a backoff timer with the current next\+Backoff timeout Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_subchannel_a527c3c3ed3039e365fe9c8d39a738a08_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_subchannel_a8f4a24d194efeee8b55182239fedeb8c}\index{Subchannel@{Subchannel}!startConnecting@{startConnecting}}
+\index{startConnecting@{startConnecting}!Subchannel@{Subchannel}}
+\doxysubsubsection{\texorpdfstring{startConnecting()}{startConnecting()}}
+{\footnotesize\ttfamily \label{class_subchannel_a8f4a24d194efeee8b55182239fedeb8c} 
+Subchannel\+::start\+Connecting (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+If the subchannel is currently IDLE, start connecting and switch to the CONNECTING state. If the subchannel is current in TRANSIENT\+\_\+\+FAILURE, the next time it would transition to IDLE, start connecting again instead. Otherwise, do nothing. 
+
+References \mbox{\hyperlink{_subchannel_8js_a66e6c9aea487cf1c4498cf2b1aa0f621}{connectivity\+\_\+state\+\_\+1}}, \mbox{\hyperlink{ipaddr_8min_8js_abcedab16429ea0641c6596f556f2e102}{process}}, and \mbox{\hyperlink{class_subchannel_aa7cbb244a6beea517c2db726c79489cc}{transition\+To\+State()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_subchannel_a8f4a24d194efeee8b55182239fedeb8c_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_subchannel_a9d4600623a558e674969162a89010da4}\index{Subchannel@{Subchannel}!startConnectingInternal@{startConnectingInternal}}
+\index{startConnectingInternal@{startConnectingInternal}!Subchannel@{Subchannel}}
+\doxysubsubsection{\texorpdfstring{startConnectingInternal()}{startConnectingInternal()}}
+{\footnotesize\ttfamily \label{class_subchannel_a9d4600623a558e674969162a89010da4} 
+Subchannel\+::start\+Connecting\+Internal (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{at_8js_a78af5f3fbaccaa8a16d6bea9d7a5e9f4}{at}}, \mbox{\hyperlink{_subchannel_8js_a66e6c9aea487cf1c4498cf2b1aa0f621}{connectivity\+\_\+state\+\_\+1}}, \mbox{\hyperlink{_subchannel_8js_ad33cb6840349d3bc93f4fe9de15a6f8f}{constants\+\_\+1}}, \mbox{\hyperlink{_0dgrpc_2grpc-js_2build_2src_2index_8js_a88f1ca34064fef6dc1e29d7d1cf5cfcf}{credentials}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}}, \mbox{\hyperlink{rxjs_2dist_2cjs_2index_8js_af0b145a3cd1c67ae14a83aa1f274a4c8}{interval}}, \mbox{\hyperlink{_subchannel_8js_aa26599d7fa4468d81fc9b5cc6a9e10dc}{KEEPALIVE\+\_\+\+MAX\+\_\+\+TIME\+\_\+\+MS}}, \mbox{\hyperlink{_subchannel_8js_ab53afa7b9c9aef77e950713c8b54c98c}{logging}}, \mbox{\hyperlink{timespan_8js_a4bd9500f2db802231165a0f18e843906}{ms}}, \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a207259f7e3cfd9800ed8f7d7224c7a68}{server}}, and \mbox{\hyperlink{class_subchannel_aa7cbb244a6beea517c2db726c79489cc}{transition\+To\+State()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_subchannel_a9d4600623a558e674969162a89010da4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_subchannel_a9d4600623a558e674969162a89010da4_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_subchannel_a1572a4d885d23cda8b1b4f3b1fa4ec8b}\index{Subchannel@{Subchannel}!stopBackoff@{stopBackoff}}
+\index{stopBackoff@{stopBackoff}!Subchannel@{Subchannel}}
+\doxysubsubsection{\texorpdfstring{stopBackoff()}{stopBackoff()}}
+{\footnotesize\ttfamily \label{class_subchannel_a1572a4d885d23cda8b1b4f3b1fa4ec8b} 
+Subchannel\+::stop\+Backoff (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_subchannel_a1572a4d885d23cda8b1b4f3b1fa4ec8b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_subchannel_a58bd1573cec02a0815d6a170f61d2daf}\index{Subchannel@{Subchannel}!throttleKeepalive@{throttleKeepalive}}
+\index{throttleKeepalive@{throttleKeepalive}!Subchannel@{Subchannel}}
+\doxysubsubsection{\texorpdfstring{throttleKeepalive()}{throttleKeepalive()}}
+{\footnotesize\ttfamily \label{class_subchannel_a58bd1573cec02a0815d6a170f61d2daf} 
+Subchannel\+::throttle\+Keepalive (\begin{DoxyParamCaption}\item[{}]{new\+Keepalive\+Time}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_subchannel_a84010a503c419c9a17bfd682addfd5ce}\index{Subchannel@{Subchannel}!trace@{trace}}
+\index{trace@{trace}!Subchannel@{Subchannel}}
+\doxysubsubsection{\texorpdfstring{trace()}{trace()}}
+{\footnotesize\ttfamily \label{class_subchannel_a84010a503c419c9a17bfd682addfd5ce} 
+Subchannel\+::trace (\begin{DoxyParamCaption}\item[{}]{text}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{_subchannel_8js_ad33cb6840349d3bc93f4fe9de15a6f8f}{constants\+\_\+1}}, \mbox{\hyperlink{_subchannel_8js_ab53afa7b9c9aef77e950713c8b54c98c}{logging}}, \mbox{\hyperlink{node-forge_2lib_2util_8js_ab492f69e70933f85fe6b3a8808d19852}{text}}, and \mbox{\hyperlink{_subchannel_8js_a4d771a845df73d12433ddcb6b91f8b9a}{TRACER\+\_\+\+NAME}}.
+
+\Hypertarget{class_subchannel_aa7cbb244a6beea517c2db726c79489cc}\index{Subchannel@{Subchannel}!transitionToState@{transitionToState}}
+\index{transitionToState@{transitionToState}!Subchannel@{Subchannel}}
+\doxysubsubsection{\texorpdfstring{transitionToState()}{transitionToState()}}
+{\footnotesize\ttfamily \label{class_subchannel_aa7cbb244a6beea517c2db726c79489cc} 
+Subchannel\+::transition\+To\+State (\begin{DoxyParamCaption}\item[{}]{old\+States}{, }\item[{}]{new\+State}{, }\item[{}]{error\+Message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Initiate a state transition from any element of old\+States to the new state. If the current connectivity\+State is not in old\+States, do nothing. 
+\begin{DoxyParams}{Parameters}
+{\em old\+States} & The set of states to transition from \\
+\hline
+{\em new\+State} & The state to transition to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the state changed, false otherwise 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{logger_2dist_2esm_2index_8esm5_8js_a0adf123df8967a14b5bdd9ff3bbe2d0c}{\+\_\+a}}, \mbox{\hyperlink{logging_8js_a53284eb14d953f3ba58806fc49cd4f7c}{\+\_\+b}}, \mbox{\hyperlink{_subchannel_8js_a66e6c9aea487cf1c4498cf2b1aa0f621}{connectivity\+\_\+state\+\_\+1}}, \mbox{\hyperlink{connectivity-state_8js_a208f1eed4946268b3e63d2fe77225d7d}{Connectivity\+State}}, \mbox{\hyperlink{class_subchannel_ac3eeed0f4d4d026a43bb77bbb0ea34bd}{handle\+Backoff\+Timer()}}, \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}, \mbox{\hyperlink{ipaddr_8min_8js_abcedab16429ea0641c6596f556f2e102}{process}}, \mbox{\hyperlink{class_subchannel_a527c3c3ed3039e365fe9c8d39a738a08}{start\+Backoff()}}, \mbox{\hyperlink{class_subchannel_a9d4600623a558e674969162a89010da4}{start\+Connecting\+Internal()}}, \mbox{\hyperlink{asynckit_2lib_2state_8js_a7e1b0ba367facd663d59372bd204ea01}{state()}}, \mbox{\hyperlink{class_subchannel_a1572a4d885d23cda8b1b4f3b1fa4ec8b}{stop\+Backoff()}}, and \mbox{\hyperlink{logging_8js_acb1634453d1705af9683695efa3847e6}{trace}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_subchannel_aa7cbb244a6beea517c2db726c79489cc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_subchannel_aa7cbb244a6beea517c2db726c79489cc_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_subchannel_a605dc8a7db8463adbb391c0395c00426}\index{Subchannel@{Subchannel}!unref@{unref}}
+\index{unref@{unref}!Subchannel@{Subchannel}}
+\doxysubsubsection{\texorpdfstring{unref()}{unref()}}
+{\footnotesize\ttfamily \label{class_subchannel_a605dc8a7db8463adbb391c0395c00426} 
+Subchannel\+::unref (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{_subchannel_8js_a1c963d3b854ccff6bad1a2f8b0f7f18a}{channelz\+\_\+1}}, \mbox{\hyperlink{_subchannel_8js_a66e6c9aea487cf1c4498cf2b1aa0f621}{connectivity\+\_\+state\+\_\+1}}, \mbox{\hyperlink{_0dgrpc_2grpc-js_2build_2src_2index_8js_a88f1ca34064fef6dc1e29d7d1cf5cfcf}{credentials}}, \mbox{\hyperlink{ipaddr_8min_8js_abcedab16429ea0641c6596f556f2e102}{process}}, \mbox{\hyperlink{class_subchannel_ac95a1970e72e63741cb6ad18a3f89bfb}{ref\+Trace()}}, and \mbox{\hyperlink{class_subchannel_aa7cbb244a6beea517c2db726c79489cc}{transition\+To\+State()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_subchannel_a605dc8a7db8463adbb391c0395c00426_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{class_subchannel_a605dc8a7db8463adbb391c0395c00426_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_subchannel_a45f3f1220da24d4862facab27ad18cf7}\index{Subchannel@{Subchannel}!unrefIfOneRef@{unrefIfOneRef}}
+\index{unrefIfOneRef@{unrefIfOneRef}!Subchannel@{Subchannel}}
+\doxysubsubsection{\texorpdfstring{unrefIfOneRef()}{unrefIfOneRef()}}
+{\footnotesize\ttfamily \label{class_subchannel_a45f3f1220da24d4862facab27ad18cf7} 
+Subchannel\+::unref\+If\+One\+Ref (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{class_subchannel_a605dc8a7db8463adbb391c0395c00426}{unref()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_subchannel_a45f3f1220da24d4862facab27ad18cf7_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/@grpc/grpc-\/js/build/src/\mbox{\hyperlink{_subchannel_8js}{subchannel.\+js}}\end{DoxyCompactItemize}

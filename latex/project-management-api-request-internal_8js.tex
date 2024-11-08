@@ -1,0 +1,158 @@
+\doxysection{backend/node\+\_\+modules/firebase-\/admin/lib/project-\/management/project-\/management-\/api-\/request-\/internal.js File Reference}
+\hypertarget{project-management-api-request-internal_8js}{}\label{project-management-api-request-internal_8js}\index{backend/node\_modules/firebase-\/admin/lib/project-\/management/project-\/management-\/api-\/request-\/internal.js@{backend/node\_modules/firebase-\/admin/lib/project-\/management/project-\/management-\/api-\/request-\/internal.js}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_project_management_request_handler}{Project\+Management\+Request\+Handler}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{project-management-api-request-internal_8js_a1b595505ee001776f46a76c45a48dcec}{assert\+Server\+Response}} (condition, response\+Data, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{project-management-api-request-internal_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{project-management-api-request-internal_8js_a3b9e4637310152acadd204feb22c5259}{Project\+Management\+Request\+Handler}} = \mbox{\hyperlink{project-management-api-request-internal_8js_afce8f7e6945f44ea0b7de5a8c42202fc}{exports.\+assert\+Server\+Response}} = void 0
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{project-management-api-request-internal_8js_a73dd1e6f0bc0a0234576ddef2bbe0452}{api\+\_\+request\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}}-\/request"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{project-management-api-request-internal_8js_af1a99a3ff1a35c114bdd06cc7252beb6}{error\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/error"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{project-management-api-request-internal_8js_ad6da97f28182979eca61059c656f8ed6}{index\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/index"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{project-management-api-request-internal_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/validator"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{project-management-api-request-internal_8js_af7eb33dbc2b9052e2da9d0d12c93c1e9}{PROJECT\+\_\+\+MANAGEMENT\+\_\+\+HOST\+\_\+\+AND\+\_\+\+PORT}} = \textquotesingle{}firebase.\+googleapis.\+com\+:443\textquotesingle{}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{project-management-api-request-internal_8js_a2d5f7b82ce62b3cc2eefede16ae31614}{PROJECT\+\_\+\+MANAGEMENT\+\_\+\+PATH}} = \textquotesingle{}/\mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2uuid_2dist_2esm-browser_2v1_8js_a32c2d9d82f64ce86ca1da30b62dd1482}{v1}}/\textquotesingle{}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{project-management-api-request-internal_8js_a97b93a6149c762f6f66c109faba8b84e}{PROJECT\+\_\+\+MANAGEMENT\+\_\+\+BETA\+\_\+\+PATH}} = \textquotesingle{}/v1beta1/\textquotesingle{}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{project-management-api-request-internal_8js_a6b490d61fcb7cf714dc09aedfb95983b}{PROJECT\+\_\+\+MANAGEMENT\+\_\+\+HEADERS}}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{project-management-api-request-internal_8js_acfcf7142af466db679abef08292b081d}{PROJECT\+\_\+\+MANAGEMENT\+\_\+\+TIMEOUT\+\_\+\+MILLIS}} = 10000
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{project-management-api-request-internal_8js_a2a0f6c0eb57434aae0618ada8158f72e}{LIST\+\_\+\+APPS\+\_\+\+MAX\+\_\+\+PAGE\+\_\+\+SIZE}} = 100
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{project-management-api-request-internal_8js_a6b98e1be9dca86e31333b216f0488676}{CERT\+\_\+\+TYPE\+\_\+\+API\+\_\+\+MAP}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{project-management-api-request-internal_8js_afce8f7e6945f44ea0b7de5a8c42202fc}{assert\+Server\+Response}} = assert\+Server\+Response
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{project-management-api-request-internal_8js_a1b595505ee001776f46a76c45a48dcec}\index{project-\/management-\/api-\/request-\/internal.js@{project-\/management-\/api-\/request-\/internal.js}!assertServerResponse@{assertServerResponse}}
+\index{assertServerResponse@{assertServerResponse}!project-\/management-\/api-\/request-\/internal.js@{project-\/management-\/api-\/request-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{assertServerResponse()}{assertServerResponse()}}
+{\footnotesize\ttfamily \label{project-management-api-request-internal_8js_a1b595505ee001776f46a76c45a48dcec} 
+function assert\+Server\+Response (\begin{DoxyParamCaption}\item[{}]{condition}{, }\item[{}]{response\+Data}{, }\item[{}]{message}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}, \mbox{\hyperlink{project-management-api-request-internal_8js_af1a99a3ff1a35c114bdd06cc7252beb6}{error\+\_\+1}}, \mbox{\hyperlink{json-bigint_2lib_2stringify_8js_aec316efdeb7b2e5358b7d50869858da1}{JSON}}, and \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{project-management-api-request-internal_8js_a73dd1e6f0bc0a0234576ddef2bbe0452}\index{project-\/management-\/api-\/request-\/internal.js@{project-\/management-\/api-\/request-\/internal.js}!api\_request\_1@{api\_request\_1}}
+\index{api\_request\_1@{api\_request\_1}!project-\/management-\/api-\/request-\/internal.js@{project-\/management-\/api-\/request-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{api\_request\_1}{api\_request\_1}}
+{\footnotesize\ttfamily \label{project-management-api-request-internal_8js_a73dd1e6f0bc0a0234576ddef2bbe0452} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} api\+\_\+request\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}}-\/request"{})}
+
+\Hypertarget{project-management-api-request-internal_8js_afce8f7e6945f44ea0b7de5a8c42202fc}\index{project-\/management-\/api-\/request-\/internal.js@{project-\/management-\/api-\/request-\/internal.js}!assertServerResponse@{assertServerResponse}}
+\index{assertServerResponse@{assertServerResponse}!project-\/management-\/api-\/request-\/internal.js@{project-\/management-\/api-\/request-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{assertServerResponse}{assertServerResponse}}
+{\footnotesize\ttfamily \label{project-management-api-request-internal_8js_afce8f7e6945f44ea0b7de5a8c42202fc} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} assert\+Server\+Response = assert\+Server\+Response}
+
+\Hypertarget{project-management-api-request-internal_8js_a6b98e1be9dca86e31333b216f0488676}\index{project-\/management-\/api-\/request-\/internal.js@{project-\/management-\/api-\/request-\/internal.js}!CERT\_TYPE\_API\_MAP@{CERT\_TYPE\_API\_MAP}}
+\index{CERT\_TYPE\_API\_MAP@{CERT\_TYPE\_API\_MAP}!project-\/management-\/api-\/request-\/internal.js@{project-\/management-\/api-\/request-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{CERT\_TYPE\_API\_MAP}{CERT\_TYPE\_API\_MAP}}
+{\footnotesize\ttfamily \label{project-management-api-request-internal_8js_a6b98e1be9dca86e31333b216f0488676} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} CERT\+\_\+\+TYPE\+\_\+\+API\+\_\+\+MAP}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a86e184a184e03e47b460100f5bc03c0b}{sha1}}:\ \textcolor{stringliteral}{'SHA\_1'},}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{sha256_8js_a830ba1a208bf5ed3137aa1463427974c}{sha256}}:\ \textcolor{stringliteral}{'SHA\_256'},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{project-management-api-request-internal_8js_af1a99a3ff1a35c114bdd06cc7252beb6}\index{project-\/management-\/api-\/request-\/internal.js@{project-\/management-\/api-\/request-\/internal.js}!error\_1@{error\_1}}
+\index{error\_1@{error\_1}!project-\/management-\/api-\/request-\/internal.js@{project-\/management-\/api-\/request-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{error\_1}{error\_1}}
+{\footnotesize\ttfamily \label{project-management-api-request-internal_8js_af1a99a3ff1a35c114bdd06cc7252beb6} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} error\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/error"{})}
+
+\Hypertarget{project-management-api-request-internal_8js_ad6da97f28182979eca61059c656f8ed6}\index{project-\/management-\/api-\/request-\/internal.js@{project-\/management-\/api-\/request-\/internal.js}!index\_1@{index\_1}}
+\index{index\_1@{index\_1}!project-\/management-\/api-\/request-\/internal.js@{project-\/management-\/api-\/request-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{index\_1}{index\_1}}
+{\footnotesize\ttfamily \label{project-management-api-request-internal_8js_ad6da97f28182979eca61059c656f8ed6} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} index\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/index"{})}
+
+\Hypertarget{project-management-api-request-internal_8js_a2a0f6c0eb57434aae0618ada8158f72e}\index{project-\/management-\/api-\/request-\/internal.js@{project-\/management-\/api-\/request-\/internal.js}!LIST\_APPS\_MAX\_PAGE\_SIZE@{LIST\_APPS\_MAX\_PAGE\_SIZE}}
+\index{LIST\_APPS\_MAX\_PAGE\_SIZE@{LIST\_APPS\_MAX\_PAGE\_SIZE}!project-\/management-\/api-\/request-\/internal.js@{project-\/management-\/api-\/request-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{LIST\_APPS\_MAX\_PAGE\_SIZE}{LIST\_APPS\_MAX\_PAGE\_SIZE}}
+{\footnotesize\ttfamily \label{project-management-api-request-internal_8js_a2a0f6c0eb57434aae0618ada8158f72e} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} LIST\+\_\+\+APPS\+\_\+\+MAX\+\_\+\+PAGE\+\_\+\+SIZE = 100}
+
+\Hypertarget{project-management-api-request-internal_8js_a97b93a6149c762f6f66c109faba8b84e}\index{project-\/management-\/api-\/request-\/internal.js@{project-\/management-\/api-\/request-\/internal.js}!PROJECT\_MANAGEMENT\_BETA\_PATH@{PROJECT\_MANAGEMENT\_BETA\_PATH}}
+\index{PROJECT\_MANAGEMENT\_BETA\_PATH@{PROJECT\_MANAGEMENT\_BETA\_PATH}!project-\/management-\/api-\/request-\/internal.js@{project-\/management-\/api-\/request-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{PROJECT\_MANAGEMENT\_BETA\_PATH}{PROJECT\_MANAGEMENT\_BETA\_PATH}}
+{\footnotesize\ttfamily \label{project-management-api-request-internal_8js_a97b93a6149c762f6f66c109faba8b84e} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} PROJECT\+\_\+\+MANAGEMENT\+\_\+\+BETA\+\_\+\+PATH = \textquotesingle{}/v1beta1/\textquotesingle{}}
+
+Project management beta backend path. \Hypertarget{project-management-api-request-internal_8js_a6b490d61fcb7cf714dc09aedfb95983b}\index{project-\/management-\/api-\/request-\/internal.js@{project-\/management-\/api-\/request-\/internal.js}!PROJECT\_MANAGEMENT\_HEADERS@{PROJECT\_MANAGEMENT\_HEADERS}}
+\index{PROJECT\_MANAGEMENT\_HEADERS@{PROJECT\_MANAGEMENT\_HEADERS}!project-\/management-\/api-\/request-\/internal.js@{project-\/management-\/api-\/request-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{PROJECT\_MANAGEMENT\_HEADERS}{PROJECT\_MANAGEMENT\_HEADERS}}
+{\footnotesize\ttfamily \label{project-management-api-request-internal_8js_a6b490d61fcb7cf714dc09aedfb95983b} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} PROJECT\+\_\+\+MANAGEMENT\+\_\+\+HEADERS}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{'X-\/Client-\/Version'}:\ \`{}\mbox{\hyperlink{class_node}{Node}}/Admin/\mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}\{(0,\ \mbox{\hyperlink{project-management-api-request-internal_8js_ad6da97f28182979eca61059c656f8ed6}{index\_1}}.getSdkVersion)()\}\`{},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Project management request header. \Hypertarget{project-management-api-request-internal_8js_af7eb33dbc2b9052e2da9d0d12c93c1e9}\index{project-\/management-\/api-\/request-\/internal.js@{project-\/management-\/api-\/request-\/internal.js}!PROJECT\_MANAGEMENT\_HOST\_AND\_PORT@{PROJECT\_MANAGEMENT\_HOST\_AND\_PORT}}
+\index{PROJECT\_MANAGEMENT\_HOST\_AND\_PORT@{PROJECT\_MANAGEMENT\_HOST\_AND\_PORT}!project-\/management-\/api-\/request-\/internal.js@{project-\/management-\/api-\/request-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{PROJECT\_MANAGEMENT\_HOST\_AND\_PORT}{PROJECT\_MANAGEMENT\_HOST\_AND\_PORT}}
+{\footnotesize\ttfamily \label{project-management-api-request-internal_8js_af7eb33dbc2b9052e2da9d0d12c93c1e9} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} PROJECT\+\_\+\+MANAGEMENT\+\_\+\+HOST\+\_\+\+AND\+\_\+\+PORT = \textquotesingle{}firebase.\+googleapis.\+com\+:443\textquotesingle{}}
+
+Project management backend host and port. \Hypertarget{project-management-api-request-internal_8js_a2d5f7b82ce62b3cc2eefede16ae31614}\index{project-\/management-\/api-\/request-\/internal.js@{project-\/management-\/api-\/request-\/internal.js}!PROJECT\_MANAGEMENT\_PATH@{PROJECT\_MANAGEMENT\_PATH}}
+\index{PROJECT\_MANAGEMENT\_PATH@{PROJECT\_MANAGEMENT\_PATH}!project-\/management-\/api-\/request-\/internal.js@{project-\/management-\/api-\/request-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{PROJECT\_MANAGEMENT\_PATH}{PROJECT\_MANAGEMENT\_PATH}}
+{\footnotesize\ttfamily \label{project-management-api-request-internal_8js_a2d5f7b82ce62b3cc2eefede16ae31614} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} PROJECT\+\_\+\+MANAGEMENT\+\_\+\+PATH = \textquotesingle{}/\mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2uuid_2dist_2esm-browser_2v1_8js_a32c2d9d82f64ce86ca1da30b62dd1482}{v1}}/\textquotesingle{}}
+
+Project management backend path. \Hypertarget{project-management-api-request-internal_8js_acfcf7142af466db679abef08292b081d}\index{project-\/management-\/api-\/request-\/internal.js@{project-\/management-\/api-\/request-\/internal.js}!PROJECT\_MANAGEMENT\_TIMEOUT\_MILLIS@{PROJECT\_MANAGEMENT\_TIMEOUT\_MILLIS}}
+\index{PROJECT\_MANAGEMENT\_TIMEOUT\_MILLIS@{PROJECT\_MANAGEMENT\_TIMEOUT\_MILLIS}!project-\/management-\/api-\/request-\/internal.js@{project-\/management-\/api-\/request-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{PROJECT\_MANAGEMENT\_TIMEOUT\_MILLIS}{PROJECT\_MANAGEMENT\_TIMEOUT\_MILLIS}}
+{\footnotesize\ttfamily \label{project-management-api-request-internal_8js_acfcf7142af466db679abef08292b081d} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} PROJECT\+\_\+\+MANAGEMENT\+\_\+\+TIMEOUT\+\_\+\+MILLIS = 10000}
+
+Project management request timeout duration in milliseconds. \Hypertarget{project-management-api-request-internal_8js_a3b9e4637310152acadd204feb22c5259}\index{project-\/management-\/api-\/request-\/internal.js@{project-\/management-\/api-\/request-\/internal.js}!ProjectManagementRequestHandler@{ProjectManagementRequestHandler}}
+\index{ProjectManagementRequestHandler@{ProjectManagementRequestHandler}!project-\/management-\/api-\/request-\/internal.js@{project-\/management-\/api-\/request-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{ProjectManagementRequestHandler}{ProjectManagementRequestHandler}}
+{\footnotesize\ttfamily \label{project-management-api-request-internal_8js_a3b9e4637310152acadd204feb22c5259} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} Project\+Management\+Request\+Handler = \mbox{\hyperlink{project-management-api-request-internal_8js_afce8f7e6945f44ea0b7de5a8c42202fc}{exports.\+assert\+Server\+Response}} = void 0}
+
+\Hypertarget{project-management-api-request-internal_8js_ae2475e10618961c050dcba04e8c42331}\index{project-\/management-\/api-\/request-\/internal.js@{project-\/management-\/api-\/request-\/internal.js}!strict@{strict}}
+\index{strict@{strict}!project-\/management-\/api-\/request-\/internal.js@{project-\/management-\/api-\/request-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{project-management-api-request-internal_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+
+firebase-\/admin v12.\+7.\+0 \Hypertarget{project-management-api-request-internal_8js_add6dc10e852e313f07c0d59bcf288b6a}\index{project-\/management-\/api-\/request-\/internal.js@{project-\/management-\/api-\/request-\/internal.js}!validator@{validator}}
+\index{validator@{validator}!project-\/management-\/api-\/request-\/internal.js@{project-\/management-\/api-\/request-\/internal.js}}
+\doxysubsubsection{\texorpdfstring{validator}{validator}}
+{\footnotesize\ttfamily \label{project-management-api-request-internal_8js_add6dc10e852e313f07c0d59bcf288b6a} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} validator = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/validator"{})}
+

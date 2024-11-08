@@ -1,0 +1,27 @@
+\doxysection{/\+Users/nicoletiokhin/\+Desktop/\+Software Semester 3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/lodash/to\+Plain\+Object.\+js}
+\hypertarget{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_944daf1ac60e9fe15ccbaea703ee6a1c}{}\label{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_944daf1ac60e9fe15ccbaea703ee6a1c}Converts {\ttfamily value} to a plain object flattening inherited enumerable string keyed properties of {\ttfamily value} to own properties of the plain object.
+
+@member\+Of \+\_\+ \begin{DoxySince}{Since}
+3.\+0.\+0
+\end{DoxySince}
+
+\begin{DoxyParams}{Parameters}
+{\em \{\texorpdfstring{$\ast$}{*}\}} & value The value to convert. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Object\} Returns the converted plain object.
+\end{DoxyReturn}
+function Foo() \{ this.\+b = 2; \}
+
+Foo.\+prototype.\+c = 3;
+
+\+\_\+.\+assign(\{ \textquotesingle{}a\textquotesingle{}\+: 1 \}, new Foo); // =\texorpdfstring{$>$}{>} \{ \textquotesingle{}a\textquotesingle{}\+: 1, \textquotesingle{}b\textquotesingle{}\+: 2 \}
+
+\+\_\+.\+assign(\{ \textquotesingle{}a\textquotesingle{}\+: 1 \}, \+\_\+.\+to\+Plain\+Object(new Foo)); // =\texorpdfstring{$>$}{>} \{ \textquotesingle{}a\textquotesingle{}\+: 1, \textquotesingle{}b\textquotesingle{}\+: 2, \textquotesingle{}c\textquotesingle{}\+: 3 \}
+
+
+\begin{DoxyCodeInclude}{0}
+
+\end{DoxyCodeInclude}
+ Semester \doxylink{to_plain_object_8js}{3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/lodash/to\+Plain\+Object.\+js} 

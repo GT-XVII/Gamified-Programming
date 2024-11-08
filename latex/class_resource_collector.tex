@@ -1,0 +1,68 @@
+\doxysection{Resource\+Collector Class Reference}
+\hypertarget{class_resource_collector}{}\label{class_resource_collector}\index{ResourceCollector@{ResourceCollector}}
+
+
+Collaboration diagram for Resource\+Collector\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{class_resource_collector__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_resource_collector_af4eb25df73ddd0cb19fe643c11f1a58a}{constructor}} (api\+Call, max\+Results=-\/1)
+\item 
+\mbox{\hyperlink{class_resource_collector_a866e157a1e62919af29f38153dc7704b}{callback}} (err, resources, next\+Page\+Request)
+\item 
+\mbox{\hyperlink{class_resource_collector_ae33fa0118343d45bbd962043ce7e215e}{process\+All\+Pages}} (first\+Request)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_resource_collector}{Resource\+Collector} class implements asynchronous logic of calling the API call that supports pagination, page by page, collecting all resources (up to {\ttfamily max\+Results}) in the array.
+
+Usage\+: const resource\+Collector = new \doxylink{resource_collector_8js_ab9d423487ca9c7da0073ba542e584678}{Resource\+Collector(api\+Call, max\+Results)}; // -\/1 for unlimited resource\+Collector.\+process\+All\+Pages(request).then(resources =\texorpdfstring{$>$}{>} ...); 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_resource_collector_a866e157a1e62919af29f38153dc7704b}\index{ResourceCollector@{ResourceCollector}!callback@{callback}}
+\index{callback@{callback}!ResourceCollector@{ResourceCollector}}
+\doxysubsubsection{\texorpdfstring{callback()}{callback()}}
+{\footnotesize\ttfamily \label{class_resource_collector_a866e157a1e62919af29f38153dc7704b} 
+Resource\+Collector\+::callback (\begin{DoxyParamCaption}\item[{}]{err}{, }\item[{}]{resources}{, }\item[{}]{next\+Page\+Request}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_aeda6958b2fc8494c5a17f91600065eb9}{args}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a622460feeccdab6d8f307936fc6b36fb}{callback}}, \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}, and \mbox{\hyperlink{rxjs_8umd_8js_a5008ba0c81d22f889926a449c993ac53}{set\+Immediate}}.
+
+\Hypertarget{class_resource_collector_af4eb25df73ddd0cb19fe643c11f1a58a}\index{ResourceCollector@{ResourceCollector}!constructor@{constructor}}
+\index{constructor@{constructor}!ResourceCollector@{ResourceCollector}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_resource_collector_af4eb25df73ddd0cb19fe643c11f1a58a} 
+Resource\+Collector\+::constructor (\begin{DoxyParamCaption}\item[{}]{api\+Call}{, }\item[{}]{max\+Results}{ = {\ttfamily -\/1}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_resource_collector_ae33fa0118343d45bbd962043ce7e215e}\index{ResourceCollector@{ResourceCollector}!processAllPages@{processAllPages}}
+\index{processAllPages@{processAllPages}!ResourceCollector@{ResourceCollector}}
+\doxysubsubsection{\texorpdfstring{processAllPages()}{processAllPages()}}
+{\footnotesize\ttfamily \label{class_resource_collector_ae33fa0118343d45bbd962043ce7e215e} 
+Resource\+Collector\+::process\+All\+Pages (\begin{DoxyParamCaption}\item[{}]{first\+Request}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_aeda6958b2fc8494c5a17f91600065eb9}{args}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a622460feeccdab6d8f307936fc6b36fb}{callback}}, \mbox{\hyperlink{__get_tag_8js_abace523389c17bce1848e3a427871700}{Promise}}, \mbox{\hyperlink{reject_8js_a94bc21104657e301a8ec194b529feaed}{reject()}}, \mbox{\hyperlink{_0dprotobufjs_2path_2index_8js_a2001ea102ec496ebdabe15e68493427a}{resolve}}, and \mbox{\hyperlink{rxjs_8umd_8js_a5008ba0c81d22f889926a449c993ac53}{set\+Immediate}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=259pt]{class_resource_collector_ae33fa0118343d45bbd962043ce7e215e_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/google-\/gax/build/src/pagination\+Calls/\mbox{\hyperlink{resource_collector_8js}{resource\+Collector.\+js}}\end{DoxyCompactItemize}

@@ -1,0 +1,164 @@
+\doxysection{backend/node\+\_\+modules/extend/index.js File Reference}
+\hypertarget{extend_2index_8js}{}\label{extend_2index_8js}\index{backend/node\_modules/extend/index.js@{backend/node\_modules/extend/index.js}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{extend_2index_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+var \mbox{\hyperlink{extend_2index_8js_a0511343fcdbac93090154dce865cbfd5}{has\+Own}} = \mbox{\hyperlink{layer_8js_a70e9fba663e9e2e297e34ddce97d6fb7}{Object.\+prototype.\+has\+Own\+Property}}
+\item 
+var \mbox{\hyperlink{extend_2index_8js_a1bf1e00afe659d66f60b959824ca1f9c}{to\+Str}} = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7234a4e8129e261e2c517e09a337bf6a}{Object.\+prototype.\+to\+String}}
+\item 
+var \mbox{\hyperlink{extend_2index_8js_a817fcb70b363027b28fec000da90139a}{define\+Property}} = Object.\+define\+Property
+\item 
+var \mbox{\hyperlink{extend_2index_8js_a84b871b070ccb8a7b1d0bf553be7be3b}{g\+OPD}} = Object.\+get\+Own\+Property\+Descriptor
+\item 
+var \mbox{\hyperlink{extend_2index_8js_aa644eb40e2c6c35ce4c245a40ce310fb}{is\+Plain\+Object}}
+\item 
+var \mbox{\hyperlink{extend_2index_8js_ac262f313a62dbcc8111f47ce16689a96}{set\+Property}}
+\item 
+var \mbox{\hyperlink{extend_2index_8js_a1483fb87854eeb502536b1c2b10c92f0}{get\+Property}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{extend_2index_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}}
+\end{DoxyCompactItemize}
+\begin{Indent}\textbf{ value}\par
+{\em Executes the chain sequence to resolve the unwrapped value.
+
+@member\+Of \+\_\+ \begin{DoxySince}{Since}
+0.\+1.\+0 @alias to\+JSON, value\+Of 
+\end{DoxySince}
+}\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{extend_2index_8js_abe8cca5e4950af0fdf83d8bc648e697f}{is\+Array}}
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{extend_2index_8js_a817fcb70b363027b28fec000da90139a}\index{index.js@{index.js}!defineProperty@{defineProperty}}
+\index{defineProperty@{defineProperty}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{defineProperty}{defineProperty}}
+{\footnotesize\ttfamily \label{extend_2index_8js_a817fcb70b363027b28fec000da90139a} 
+var define\+Property = Object.\+define\+Property}
+
+\Hypertarget{extend_2index_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\index{index.js@{index.js}!exports@{exports}}
+\index{exports@{exports}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \label{extend_2index_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports}
+
+\Hypertarget{extend_2index_8js_a1483fb87854eeb502536b1c2b10c92f0}\index{index.js@{index.js}!getProperty@{getProperty}}
+\index{getProperty@{getProperty}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{getProperty}{getProperty}}
+{\footnotesize\ttfamily \label{extend_2index_8js_a1483fb87854eeb502536b1c2b10c92f0} 
+var get\+Property}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{extend_2index_8js_a1483fb87854eeb502536b1c2b10c92f0}{getProperty}}(\mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}},\ \mbox{\hyperlink{_0dfirebase_2database-compat_2dist_2index_8js_adac2bcb4f01b574cbc63fe8ee2c56bf0}{name}})\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_0dfirebase_2database-compat_2dist_2index_8js_adac2bcb4f01b574cbc63fe8ee2c56bf0}{name}}\ ===\ \textcolor{stringliteral}{'\_\_proto\_\_'})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{define-data-property_2test_2index_8js_a0511343fcdbac93090154dce865cbfd5}{hasOwn}}.call(\mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}},\ \mbox{\hyperlink{_0dfirebase_2database-compat_2dist_2index_8js_adac2bcb4f01b574cbc63fe8ee2c56bf0}{name}}))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keywordtype}{void}\ 0;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{call-bind_2test_2index_8js_a84b871b070ccb8a7b1d0bf553be7be3b}{gOPD}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{call-bind_2test_2index_8js_a84b871b070ccb8a7b1d0bf553be7be3b}{gOPD}}(\mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}},\ \mbox{\hyperlink{_0dfirebase_2database-compat_2dist_2index_8js_adac2bcb4f01b574cbc63fe8ee2c56bf0}{name}}).value;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}[\mbox{\hyperlink{_0dfirebase_2database-compat_2dist_2index_8js_adac2bcb4f01b574cbc63fe8ee2c56bf0}{name}}];}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{extend_2index_8js_a84b871b070ccb8a7b1d0bf553be7be3b}\index{index.js@{index.js}!gOPD@{gOPD}}
+\index{gOPD@{gOPD}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{gOPD}{gOPD}}
+{\footnotesize\ttfamily \label{extend_2index_8js_a84b871b070ccb8a7b1d0bf553be7be3b} 
+var g\+OPD = Object.\+get\+Own\+Property\+Descriptor}
+
+\Hypertarget{extend_2index_8js_a0511343fcdbac93090154dce865cbfd5}\index{index.js@{index.js}!hasOwn@{hasOwn}}
+\index{hasOwn@{hasOwn}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{hasOwn}{hasOwn}}
+{\footnotesize\ttfamily \label{extend_2index_8js_a0511343fcdbac93090154dce865cbfd5} 
+var has\+Own = \mbox{\hyperlink{layer_8js_a70e9fba663e9e2e297e34ddce97d6fb7}{Object.\+prototype.\+has\+Own\+Property}}}
+
+\Hypertarget{extend_2index_8js_abe8cca5e4950af0fdf83d8bc648e697f}\index{index.js@{index.js}!isArray@{isArray}}
+\index{isArray@{isArray}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{isArray}{isArray}}
+{\footnotesize\ttfamily \label{extend_2index_8js_abe8cca5e4950af0fdf83d8bc648e697f} 
+\mbox{\hyperlink{__is_laziable_8js_aa2fb6807d706966ad58046ef1e6bac7f}{lodash}} is\+Array}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{extend_2index_8js_abe8cca5e4950af0fdf83d8bc648e697f}{isArray}}(arr)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (typeof\ \mbox{\hyperlink{src_2util_2minimal_8js_a325c4e317c38d8497130ebce7670be2f}{Array}}.isArray\ ===\ \textcolor{stringliteral}{'function'})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{src_2util_2minimal_8js_a325c4e317c38d8497130ebce7670be2f}{Array}}.isArray(arr);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{extend_2index_8js_a1bf1e00afe659d66f60b959824ca1f9c}{toStr}}.call(arr)\ ===\ \textcolor{stringliteral}{'[object\ Array]'};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{extend_2index_8js_aa644eb40e2c6c35ce4c245a40ce310fb}\index{index.js@{index.js}!isPlainObject@{isPlainObject}}
+\index{isPlainObject@{isPlainObject}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{isPlainObject}{isPlainObject}}
+{\footnotesize\ttfamily \label{extend_2index_8js_aa644eb40e2c6c35ce4c245a40ce310fb} 
+var is\+Plain\+Object}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{extend_2index_8js_aa644eb40e2c6c35ce4c245a40ce310fb}{isPlainObject}}(\mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}})\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}\ ||\ \mbox{\hyperlink{extend_2index_8js_a1bf1e00afe659d66f60b959824ca1f9c}{toStr}}.call(\mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}})\ !==\ \textcolor{stringliteral}{'[object\ Object]'})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ var\ hasOwnConstructor\ =\ \mbox{\hyperlink{define-data-property_2test_2index_8js_a0511343fcdbac93090154dce865cbfd5}{hasOwn}}.call(\mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}},\ \textcolor{stringliteral}{'constructor'});}
+\DoxyCodeLine{\ \ \ \ var\ hasIsPrototypeOf\ =\ \mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}.constructor\ \&\&\ \mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}.constructor.prototype\ \&\&\ \mbox{\hyperlink{define-data-property_2test_2index_8js_a0511343fcdbac93090154dce865cbfd5}{hasOwn}}.call(\mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}.constructor.prototype,\ \textcolor{stringliteral}{'isPrototypeOf'});}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}.constructor\ \&\&\ !hasOwnConstructor\ \&\&\ !hasIsPrototypeOf)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ var\ key;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{for}\ (key\ in\ \mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}})\ \{\ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ typeof\ key\ ===\ \textcolor{stringliteral}{'undefined'}\ ||\ \mbox{\hyperlink{define-data-property_2test_2index_8js_a0511343fcdbac93090154dce865cbfd5}{hasOwn}}.call(\mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}},\ key);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{extend_2index_8js_ac262f313a62dbcc8111f47ce16689a96}\index{index.js@{index.js}!setProperty@{setProperty}}
+\index{setProperty@{setProperty}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{setProperty}{setProperty}}
+{\footnotesize\ttfamily \label{extend_2index_8js_ac262f313a62dbcc8111f47ce16689a96} 
+var set\+Property}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{extend_2index_8js_ac262f313a62dbcc8111f47ce16689a96}{setProperty}}(target,\ options)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{extend_2index_8js_a817fcb70b363027b28fec000da90139a}{defineProperty}}\ \&\&\ options.name\ ===\ \textcolor{stringliteral}{'\_\_proto\_\_'})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{extend_2index_8js_a817fcb70b363027b28fec000da90139a}{defineProperty}}(target,\ options.name,\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ enumerable:\ true,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ configurable:\ true,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ value:\ options.newValue,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ writable:\ true}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \});}
+\DoxyCodeLine{\ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ target[options.name]\ =\ options.newValue;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{extend_2index_8js_ae2475e10618961c050dcba04e8c42331}\index{index.js@{index.js}!strict@{strict}}
+\index{strict@{strict}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{extend_2index_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+
+\Hypertarget{extend_2index_8js_a1bf1e00afe659d66f60b959824ca1f9c}\index{index.js@{index.js}!toStr@{toStr}}
+\index{toStr@{toStr}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{toStr}{toStr}}
+{\footnotesize\ttfamily \label{extend_2index_8js_a1bf1e00afe659d66f60b959824ca1f9c} 
+var to\+Str = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7234a4e8129e261e2c517e09a337bf6a}{Object.\+prototype.\+to\+String}}}
+

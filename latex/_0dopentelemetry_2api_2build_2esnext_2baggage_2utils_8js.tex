@@ -1,0 +1,72 @@
+\doxysection{backend/node\+\_\+modules/@opentelemetry/api/build/esnext/baggage/utils.js File Reference}
+\hypertarget{_0dopentelemetry_2api_2build_2esnext_2baggage_2utils_8js}{}\label{_0dopentelemetry_2api_2build_2esnext_2baggage_2utils_8js}\index{backend/node\_modules/"@opentelemetry/api/build/esnext/baggage/utils.js@{backend/node\_modules/"@opentelemetry/api/build/esnext/baggage/utils.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function export \mbox{\hyperlink{_0dopentelemetry_2api_2build_2esnext_2baggage_2utils_8js_a0a86bacda9d568f1891ea4dea3e7515c}{create\+Baggage}} (\mbox{\hyperlink{index_8es_8js_a0c141df65fb873bae7cc4e4d17ce4297}{entries}}=\{\})
+\item 
+function export \mbox{\hyperlink{_0dopentelemetry_2api_2build_2esnext_2baggage_2utils_8js_a16d7fa661d7d5987153e357cc1468960}{baggage\+Entry\+Metadata\+From\+String}} (\mbox{\hyperlink{json-bigint_2lib_2stringify_8js_abd4075a8f329b0ccafd81359c952a9df}{str}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_0dopentelemetry_2api_2build_2esnext_2baggage_2utils_8js_a59be084da8908b7d77ff34b25cd84488}{import}} \{ \mbox{\hyperlink{class_diag_a_p_i}{Diag\+API}} \} from \textquotesingle{}../\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}}/\mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2baggage_2utils_8js_a33a2fa12737e4357178a3ebcd0309a4e}{diag}}\textquotesingle{}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{_0dopentelemetry_2api_2build_2esnext_2baggage_2utils_8js_a67df7f8a07cf7f8e76f50a63a00aea8f}{diag}} = \mbox{\hyperlink{class_diag_a_p_i_a86655077b3f4caa5509c26815ee43772}{Diag\+API.\+instance}}()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_0dopentelemetry_2api_2build_2esnext_2baggage_2utils_8js_a16d7fa661d7d5987153e357cc1468960}\index{utils.js@{utils.js}!baggageEntryMetadataFromString@{baggageEntryMetadataFromString}}
+\index{baggageEntryMetadataFromString@{baggageEntryMetadataFromString}!utils.js@{utils.js}}
+\doxysubsubsection{\texorpdfstring{baggageEntryMetadataFromString()}{baggageEntryMetadataFromString()}}
+{\footnotesize\ttfamily \label{_0dopentelemetry_2api_2build_2esnext_2baggage_2utils_8js_a16d7fa661d7d5987153e357cc1468960} 
+function export baggage\+Entry\+Metadata\+From\+String (\begin{DoxyParamCaption}\item[{}]{str}{}\end{DoxyParamCaption})}
+
+Create a serializable Baggage\+Entry\+Metadata object from a string.
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & string metadata. Format is currently not defined by the spec and has no special meaning. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{esm_2baggage_2internal_2symbol_8js_a23fef1f0eb1263000b72dc440ec682c6}{baggage\+Entry\+Metadata\+Symbol}}, \mbox{\hyperlink{combined__stream_8js_a1366166f7d9d88068055585de50f1037}{create}}, \mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2baggage_2utils_8js_a33a2fa12737e4357178a3ebcd0309a4e}{diag}}, \mbox{\hyperlink{json-bigint_2lib_2stringify_8js_abd4075a8f329b0ccafd81359c952a9df}{str()}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7234a4e8129e261e2c517e09a337bf6a}{to\+String}}, and \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=284pt]{_0dopentelemetry_2api_2build_2esnext_2baggage_2utils_8js_a16d7fa661d7d5987153e357cc1468960_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{_0dopentelemetry_2api_2build_2esnext_2baggage_2utils_8js_a0a86bacda9d568f1891ea4dea3e7515c}\index{utils.js@{utils.js}!createBaggage@{createBaggage}}
+\index{createBaggage@{createBaggage}!utils.js@{utils.js}}
+\doxysubsubsection{\texorpdfstring{createBaggage()}{createBaggage()}}
+{\footnotesize\ttfamily \label{_0dopentelemetry_2api_2build_2esnext_2baggage_2utils_8js_a0a86bacda9d568f1891ea4dea3e7515c} 
+function export create\+Baggage (\begin{DoxyParamCaption}\item[{}]{entries}{ = {\ttfamily \{\}}}\end{DoxyParamCaption})}
+
+Create a new Baggage with optional entries
+
+
+\begin{DoxyParams}{Parameters}
+{\em entries} & An array of baggage entries the new baggage should contain \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{_0dopentelemetry_2api_2build_2esnext_2baggage_2utils_8js_a67df7f8a07cf7f8e76f50a63a00aea8f}\index{utils.js@{utils.js}!diag@{diag}}
+\index{diag@{diag}!utils.js@{utils.js}}
+\doxysubsubsection{\texorpdfstring{diag}{diag}}
+{\footnotesize\ttfamily \label{_0dopentelemetry_2api_2build_2esnext_2baggage_2utils_8js_a67df7f8a07cf7f8e76f50a63a00aea8f} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} diag = \mbox{\hyperlink{class_diag_a_p_i_a86655077b3f4caa5509c26815ee43772}{Diag\+API.\+instance}}()}
+
+\Hypertarget{_0dopentelemetry_2api_2build_2esnext_2baggage_2utils_8js_a59be084da8908b7d77ff34b25cd84488}\index{utils.js@{utils.js}!import@{import}}
+\index{import@{import}!utils.js@{utils.js}}
+\doxysubsubsection{\texorpdfstring{import}{import}}
+{\footnotesize\ttfamily \label{_0dopentelemetry_2api_2build_2esnext_2baggage_2utils_8js_a59be084da8908b7d77ff34b25cd84488} 
+import \{ \mbox{\hyperlink{class_diag_a_p_i}{Diag\+API}} \} from \textquotesingle{}../\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}}/\mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2baggage_2utils_8js_a33a2fa12737e4357178a3ebcd0309a4e}{diag}}\textquotesingle{}}
+

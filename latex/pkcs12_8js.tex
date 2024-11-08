@@ -1,0 +1,524 @@
+\doxysection{backend/node\+\_\+modules/node-\/forge/lib/pkcs12.js File Reference}
+\hypertarget{pkcs12_8js}{}\label{pkcs12_8js}\index{backend/node\_modules/node-\/forge/lib/pkcs12.js@{backend/node\_modules/node-\/forge/lib/pkcs12.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{pkcs12_8js_ab3d397984b1911c9523c418293aeab27}{\+\_\+get\+Bags\+By\+Attribute}} (safe\+Contents, attr\+Name, attr\+Value, bag\+Type)
+\item 
+function \mbox{\hyperlink{pkcs12_8js_af966cd7ec8318c937fbfdb7321913a10}{\+\_\+decode\+Pkcs7\+Data}} (\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}})
+\item 
+function \mbox{\hyperlink{pkcs12_8js_a55eaea12f6da73596898a37460458c7b}{\+\_\+decode\+Authenticated\+Safe}} (pfx, auth\+Safe, \mbox{\hyperlink{component_2dist_2index_8cjs_8js_ae2475e10618961c050dcba04e8c42331}{strict}}, password)
+\item 
+function \mbox{\hyperlink{pkcs12_8js_a990dff1d8aae7d08fbf5a489183d6b82}{\+\_\+decrypt\+Safe\+Contents}} (\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}, password)
+\item 
+function \mbox{\hyperlink{pkcs12_8js_a47efcc498d8e2a95ffea3db4afb5ca3b}{\+\_\+decode\+Safe\+Contents}} (safe\+Contents, \mbox{\hyperlink{component_2dist_2index_8cjs_8js_ae2475e10618961c050dcba04e8c42331}{strict}}, password)
+\item 
+function \mbox{\hyperlink{pkcs12_8js_ad38599f2a67a8a98377cdcc523b4abf0}{\+\_\+decode\+Bag\+Attributes}} (attributes)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{pkcs12_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./forge\textquotesingle{})
+\item 
+var \mbox{\hyperlink{pkcs12_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}} = forge.\+asn1
+\item 
+var \mbox{\hyperlink{pkcs12_8js_a09f30a96df6dedfab363359fcbd6ed8b}{pki}} = forge.\+pki
+\item 
+var \mbox{\hyperlink{pkcs12_8js_a81c5bae16c42449aee13bebd2ac494e7}{p12}} = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{module.\+exports}} = forge.\+pkcs12 = forge.\+pkcs12 \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} \{\}
+\item 
+var \mbox{\hyperlink{pkcs12_8js_a0f8719ca6e4db492c8f62585a28be536}{content\+Info\+Validator}}
+\item 
+var \mbox{\hyperlink{pkcs12_8js_a191756366b90e1f01dd1d96de30a00d0}{pfx\+Validator}}
+\item 
+var \mbox{\hyperlink{pkcs12_8js_a7385455b0375a9b5125e0aa3cbd7f0d9}{safe\+Bag\+Validator}}
+\item 
+var \mbox{\hyperlink{pkcs12_8js_ab9aadf955070a4db912e6d293de7419b}{attribute\+Validator}}
+\item 
+var \mbox{\hyperlink{pkcs12_8js_ae31952254d5c060e0006a55b7e7a4683}{cert\+Bag\+Validator}}
+\item 
+\mbox{\hyperlink{pkcs12_8js_a81c5bae16c42449aee13bebd2ac494e7}{p12}} \mbox{\hyperlink{pkcs12_8js_a3d17bc61e5888344585c8c8cadf01f91}{pkcs12\+From\+Asn1}}
+\item 
+\mbox{\hyperlink{pkcs12_8js_a81c5bae16c42449aee13bebd2ac494e7}{p12}} \mbox{\hyperlink{pkcs12_8js_a9dec7a67109e50c90e06d3d1f29b4db7}{to\+Pkcs12\+Asn1}}
+\item 
+\mbox{\hyperlink{pkcs12_8js_a81c5bae16c42449aee13bebd2ac494e7}{p12}} \mbox{\hyperlink{pkcs12_8js_a87a490dfb002a79e567415fc39508b2a}{generate\+Key}} = \mbox{\hyperlink{pbe_8js_a3e4173e2076fbf051cc024fff5ad6536}{forge.\+pbe.\+generate\+Pkcs12\+Key}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{pkcs12_8js_a55eaea12f6da73596898a37460458c7b}\index{pkcs12.js@{pkcs12.js}!\_decodeAuthenticatedSafe@{\_decodeAuthenticatedSafe}}
+\index{\_decodeAuthenticatedSafe@{\_decodeAuthenticatedSafe}!pkcs12.js@{pkcs12.js}}
+\doxysubsubsection{\texorpdfstring{\_decodeAuthenticatedSafe()}{\_decodeAuthenticatedSafe()}}
+{\footnotesize\ttfamily \label{pkcs12_8js_a55eaea12f6da73596898a37460458c7b} 
+function \+\_\+decode\+Authenticated\+Safe (\begin{DoxyParamCaption}\item[{}]{pfx}{, }\item[{}]{auth\+Safe}{, }\item[{}]{strict}{, }\item[{}]{password}{}\end{DoxyParamCaption})}
+
+Decode PKCS\#12 Authenticated\+Safe (BER encoded) into PFX object.
+
+The Authenticated\+Safe is a BER-\/encoded SEQUENCE OF Content\+Info.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pfx} & The PKCS\#12 PFX object to fill. \\
+\hline
+{\em \{\+String\}} & auth\+Safe BER-\/encoded Authenticated\+Safe. \\
+\hline
+{\em strict} & true to use strict DER decoding, false not to. \\
+\hline
+{\em \{\+String\}} & password Password to decrypt with (optional). \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{pkcs12_8js_af966cd7ec8318c937fbfdb7321913a10}{\+\_\+decode\+Pkcs7\+Data()}}, \mbox{\hyperlink{pkcs12_8js_a47efcc498d8e2a95ffea3db4afb5ca3b}{\+\_\+decode\+Safe\+Contents()}}, \mbox{\hyperlink{pkcs12_8js_a990dff1d8aae7d08fbf5a489183d6b82}{\+\_\+decrypt\+Safe\+Contents()}}, \mbox{\hyperlink{pkcs12_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}, \mbox{\hyperlink{pkcs12_8js_a0f8719ca6e4db492c8f62585a28be536}{content\+Info\+Validator}}, \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}}, \mbox{\hyperlink{jose_2dist_2browser_2index_8js_ab343513764f2ea39eb6381949385cc3e}{errors}}, \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}, \mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}, \mbox{\hyperlink{pkcs12_8js_a09f30a96df6dedfab363359fcbd6ed8b}{pki}}, and \mbox{\hyperlink{component_2dist_2index_8cjs_8js_ae2475e10618961c050dcba04e8c42331}{strict}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{pkcs12_8js_a55eaea12f6da73596898a37460458c7b_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{pkcs12_8js_ad38599f2a67a8a98377cdcc523b4abf0}\index{pkcs12.js@{pkcs12.js}!\_decodeBagAttributes@{\_decodeBagAttributes}}
+\index{\_decodeBagAttributes@{\_decodeBagAttributes}!pkcs12.js@{pkcs12.js}}
+\doxysubsubsection{\texorpdfstring{\_decodeBagAttributes()}{\_decodeBagAttributes()}}
+{\footnotesize\ttfamily \label{pkcs12_8js_ad38599f2a67a8a98377cdcc523b4abf0} 
+function \+\_\+decode\+Bag\+Attributes (\begin{DoxyParamCaption}\item[{}]{attributes}{}\end{DoxyParamCaption})}
+
+Decode PKCS\#12 SET OF PKCS12\+Attribute into Java\+Script object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em attributes} & SET OF PKCS12\+Attribute (ASN.\+1 object).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the decoded attributes. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{pkcs12_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}, \mbox{\hyperlink{pkcs12_8js_ab9aadf955070a4db912e6d293de7419b}{attribute\+Validator}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}}, \mbox{\hyperlink{jose_2dist_2browser_2index_8js_ab343513764f2ea39eb6381949385cc3e}{errors}}, \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}, \mbox{\hyperlink{ordered-map_8min_8js_a2e0772d176c27e9cea01defba2a9575a}{j}}, \mbox{\hyperlink{pkcs12_8js_a09f30a96df6dedfab363359fcbd6ed8b}{pki}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{pkcs12_8js_ad38599f2a67a8a98377cdcc523b4abf0_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{pkcs12_8js_af966cd7ec8318c937fbfdb7321913a10}\index{pkcs12.js@{pkcs12.js}!\_decodePkcs7Data@{\_decodePkcs7Data}}
+\index{\_decodePkcs7Data@{\_decodePkcs7Data}!pkcs12.js@{pkcs12.js}}
+\doxysubsubsection{\texorpdfstring{\_decodePkcs7Data()}{\_decodePkcs7Data()}}
+{\footnotesize\ttfamily \label{pkcs12_8js_af966cd7ec8318c937fbfdb7321913a10} 
+function \+\_\+decode\+Pkcs7\+Data (\begin{DoxyParamCaption}\item[{}]{data}{}\end{DoxyParamCaption})}
+
+Decodes PKCS\#7 Data. PKCS\#7 (RFC 2315) defines "{}\+Data"{} as an OCTET STRING, but it is sometimes an OCTET STRING that is composed/constructed of chunks, each its own OCTET STRING. This is BER-\/encoding vs. DER-\/encoding. This function transforms this corner-\/case into the usual simple, non-\/composed/constructed OCTET STRING.
+
+This function may be moved to ASN.\+1 at some point to better deal with more BER-\/encoding issues, should they arise.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & the ASN.\+1 Data object to transform. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}, \mbox{\hyperlink{pkcs12_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}, \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{pkcs12_8js_af966cd7ec8318c937fbfdb7321913a10_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{pkcs12_8js_a47efcc498d8e2a95ffea3db4afb5ca3b}\index{pkcs12.js@{pkcs12.js}!\_decodeSafeContents@{\_decodeSafeContents}}
+\index{\_decodeSafeContents@{\_decodeSafeContents}!pkcs12.js@{pkcs12.js}}
+\doxysubsubsection{\texorpdfstring{\_decodeSafeContents()}{\_decodeSafeContents()}}
+{\footnotesize\ttfamily \label{pkcs12_8js_a47efcc498d8e2a95ffea3db4afb5ca3b} 
+function \+\_\+decode\+Safe\+Contents (\begin{DoxyParamCaption}\item[{}]{safe\+Contents}{, }\item[{}]{strict}{, }\item[{}]{password}{}\end{DoxyParamCaption})}
+
+Decode PKCS\#12 Safe\+Contents (BER-\/encoded) into array of Bag objects.
+
+The safe\+Contents is a BER-\/encoded SEQUENCE OF Safe\+Bag.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+String\}} & safe\+Contents BER-\/encoded safe\+Contents. \\
+\hline
+{\em strict} & true to use strict DER decoding, false not to. \\
+\hline
+{\em \{\+String\}} & password Password to decrypt with (optional).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Array\} Array of Bag objects. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{pkcs12_8js_ad38599f2a67a8a98377cdcc523b4abf0}{\+\_\+decode\+Bag\+Attributes()}}, \mbox{\hyperlink{pkcs12_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}, \mbox{\hyperlink{pkcs12_8js_ae31952254d5c060e0006a55b7e7a4683}{cert\+Bag\+Validator}}, \mbox{\hyperlink{dbcs-codec_8js_ad3d625998d0232650afb4cf3c50dc9f1}{decoder}}, \mbox{\hyperlink{firestore__admin__v1__proto__api_8js_a08a4415e9d594ff960030b921d42b91e}{e}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}}, \mbox{\hyperlink{jose_2dist_2browser_2index_8js_ab343513764f2ea39eb6381949385cc3e}{errors}}, \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}, \mbox{\hyperlink{pkcs12_8js_a09f30a96df6dedfab363359fcbd6ed8b}{pki}}, \mbox{\hyperlink{express_2lib_2express_8js_abde3c35e3bb7e5225dd7f234c685329c}{res}}, \mbox{\hyperlink{pkcs12_8js_a7385455b0375a9b5125e0aa3cbd7f0d9}{safe\+Bag\+Validator}}, \mbox{\hyperlink{component_2dist_2index_8cjs_8js_ae2475e10618961c050dcba04e8c42331}{strict}}, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type}}, \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}, and \mbox{\hyperlink{fxp_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{pkcs12_8js_a47efcc498d8e2a95ffea3db4afb5ca3b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{pkcs12_8js_a47efcc498d8e2a95ffea3db4afb5ca3b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{pkcs12_8js_a990dff1d8aae7d08fbf5a489183d6b82}\index{pkcs12.js@{pkcs12.js}!\_decryptSafeContents@{\_decryptSafeContents}}
+\index{\_decryptSafeContents@{\_decryptSafeContents}!pkcs12.js@{pkcs12.js}}
+\doxysubsubsection{\texorpdfstring{\_decryptSafeContents()}{\_decryptSafeContents()}}
+{\footnotesize\ttfamily \label{pkcs12_8js_a990dff1d8aae7d08fbf5a489183d6b82} 
+function \+\_\+decrypt\+Safe\+Contents (\begin{DoxyParamCaption}\item[{}]{data}{, }\item[{}]{password}{}\end{DoxyParamCaption})}
+
+Decrypt PKCS\#7 Encrypted\+Data structure.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & ASN.\+1 encoded Encrypted\+Content\+Info object. \\
+\hline
+{\em password} & The user-\/provided password.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The decrypted Safe\+Contents (ASN.\+1 object). 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{pkcs12_8js_af966cd7ec8318c937fbfdb7321913a10}{\+\_\+decode\+Pkcs7\+Data()}}, \mbox{\hyperlink{pkcs12_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}, \mbox{\hyperlink{cipher_modes_8js_ad3529e6b62fffcc9799ee186212e4b5a}{cipher}}, \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}}, \mbox{\hyperlink{jose_2dist_2browser_2index_8js_ab343513764f2ea39eb6381949385cc3e}{errors}}, \mbox{\hyperlink{pkcs12_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}, and \mbox{\hyperlink{pkcs12_8js_a09f30a96df6dedfab363359fcbd6ed8b}{pki}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=331pt]{pkcs12_8js_a990dff1d8aae7d08fbf5a489183d6b82_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{pkcs12_8js_a990dff1d8aae7d08fbf5a489183d6b82_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{pkcs12_8js_ab3d397984b1911c9523c418293aeab27}\index{pkcs12.js@{pkcs12.js}!\_getBagsByAttribute@{\_getBagsByAttribute}}
+\index{\_getBagsByAttribute@{\_getBagsByAttribute}!pkcs12.js@{pkcs12.js}}
+\doxysubsubsection{\texorpdfstring{\_getBagsByAttribute()}{\_getBagsByAttribute()}}
+{\footnotesize\ttfamily \label{pkcs12_8js_ab3d397984b1911c9523c418293aeab27} 
+function \+\_\+get\+Bags\+By\+Attribute (\begin{DoxyParamCaption}\item[{}]{safe\+Contents}{, }\item[{}]{attr\+Name}{, }\item[{}]{attr\+Value}{, }\item[{}]{bag\+Type}{}\end{DoxyParamCaption})}
+
+Search Safe\+Contents structure for bags with matching attributes.
+
+The search can optionally be narrowed by a certain bag type.
+
+
+\begin{DoxyParams}{Parameters}
+{\em safe\+Contents} & the Safe\+Contents structure to search in. \\
+\hline
+{\em attr\+Name} & the name of the attribute to compare against. \\
+\hline
+{\em attr\+Value} & the attribute value to search for. \\
+\hline
+{\em \mbox{[}bag\+Type\mbox{]}} & bag type to narrow search by.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an array of matching bags. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}, \mbox{\hyperlink{ordered-map_8min_8js_a2e0772d176c27e9cea01defba2a9575a}{j}}, \mbox{\hyperlink{lodash_2core_8js_a348c112a244660a2f280cda892658c24}{result}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{pkcs12_8js_a9c78fc6dc234df01559c22bf320e9785}\index{pkcs12.js@{pkcs12.js}!asn1@{asn1}}
+\index{asn1@{asn1}!pkcs12.js@{pkcs12.js}}
+\doxysubsubsection{\texorpdfstring{asn1}{asn1}}
+{\footnotesize\ttfamily \label{pkcs12_8js_a9c78fc6dc234df01559c22bf320e9785} 
+var asn1 = forge.\+asn1}
+
+\Hypertarget{pkcs12_8js_ab9aadf955070a4db912e6d293de7419b}\index{pkcs12.js@{pkcs12.js}!attributeValidator@{attributeValidator}}
+\index{attributeValidator@{attributeValidator}!pkcs12.js@{pkcs12.js}}
+\doxysubsubsection{\texorpdfstring{attributeValidator}{attributeValidator}}
+{\footnotesize\ttfamily \label{pkcs12_8js_ab9aadf955070a4db912e6d293de7419b} 
+var attribute\+Validator}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}:\ \textcolor{stringliteral}{'Attribute'},}
+\DoxyCodeLine{\ \ tagClass:\ \mbox{\hyperlink{pkcs12_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Class.UNIVERSAL,}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type}}:\ \mbox{\hyperlink{pkcs12_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Type.SEQUENCE,}
+\DoxyCodeLine{\ \ constructed:\ \textcolor{keyword}{true},}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}:\ [\{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}:\ \textcolor{stringliteral}{'Attribute.attrId'},}
+\DoxyCodeLine{\ \ \ \ tagClass:\ \mbox{\hyperlink{pkcs12_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Class.UNIVERSAL,}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type}}:\ \mbox{\hyperlink{pkcs12_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Type.OID,}
+\DoxyCodeLine{\ \ \ \ constructed:\ \textcolor{keyword}{false},}
+\DoxyCodeLine{\ \ \ \ capture:\ \textcolor{stringliteral}{'oid'}}
+\DoxyCodeLine{\ \ \},\ \{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}:\ \textcolor{stringliteral}{'Attribute.attrValues'},}
+\DoxyCodeLine{\ \ \ \ tagClass:\ \mbox{\hyperlink{pkcs12_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Class.UNIVERSAL,}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type}}:\ \mbox{\hyperlink{pkcs12_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Type.SET,}
+\DoxyCodeLine{\ \ \ \ constructed:\ \textcolor{keyword}{true},}
+\DoxyCodeLine{\ \ \ \ capture:\ \textcolor{stringliteral}{'values'}}
+\DoxyCodeLine{\ \ \}]}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{pkcs12_8js_ae31952254d5c060e0006a55b7e7a4683}\index{pkcs12.js@{pkcs12.js}!certBagValidator@{certBagValidator}}
+\index{certBagValidator@{certBagValidator}!pkcs12.js@{pkcs12.js}}
+\doxysubsubsection{\texorpdfstring{certBagValidator}{certBagValidator}}
+{\footnotesize\ttfamily \label{pkcs12_8js_ae31952254d5c060e0006a55b7e7a4683} 
+var cert\+Bag\+Validator}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}:\ \textcolor{stringliteral}{'CertBag'},}
+\DoxyCodeLine{\ \ tagClass:\ \mbox{\hyperlink{pkcs12_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Class.UNIVERSAL,}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type}}:\ \mbox{\hyperlink{pkcs12_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Type.SEQUENCE,}
+\DoxyCodeLine{\ \ constructed:\ \textcolor{keyword}{true},}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}:\ [\{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}:\ \textcolor{stringliteral}{'CertBag.certId'},}
+\DoxyCodeLine{\ \ \ \ tagClass:\ \mbox{\hyperlink{pkcs12_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Class.UNIVERSAL,}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type}}:\ \mbox{\hyperlink{pkcs12_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Type.OID,}
+\DoxyCodeLine{\ \ \ \ constructed:\ \textcolor{keyword}{false},}
+\DoxyCodeLine{\ \ \ \ capture:\ \textcolor{stringliteral}{'certId'}}
+\DoxyCodeLine{\ \ \},\ \{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}:\ \textcolor{stringliteral}{'CertBag.certValue'},}
+\DoxyCodeLine{\ \ \ \ tagClass:\ \mbox{\hyperlink{pkcs12_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Class.CONTEXT\_SPECIFIC,}
+\DoxyCodeLine{\ \ \ \ constructed:\ \textcolor{keyword}{true},}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}:\ [\{}
+\DoxyCodeLine{\ \ \ \ \ \ \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}:\ \textcolor{stringliteral}{'CertBag.certValue[0]'},}
+\DoxyCodeLine{\ \ \ \ \ \ tagClass:\ \mbox{\hyperlink{pkcs12_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Class.UNIVERSAL,}
+\DoxyCodeLine{\ \ \ \ \ \ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type}}:\ \mbox{\hyperlink{pkcs12_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Class.OCTETSTRING,}
+\DoxyCodeLine{\ \ \ \ \ \ constructed:\ \textcolor{keyword}{false},}
+\DoxyCodeLine{\ \ \ \ \ \ capture:\ \textcolor{stringliteral}{'cert'}}
+\DoxyCodeLine{\ \ \ \ \}]}
+\DoxyCodeLine{\ \ \}]}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{pkcs12_8js_a0f8719ca6e4db492c8f62585a28be536}\index{pkcs12.js@{pkcs12.js}!contentInfoValidator@{contentInfoValidator}}
+\index{contentInfoValidator@{contentInfoValidator}!pkcs12.js@{pkcs12.js}}
+\doxysubsubsection{\texorpdfstring{contentInfoValidator}{contentInfoValidator}}
+{\footnotesize\ttfamily \label{pkcs12_8js_a0f8719ca6e4db492c8f62585a28be536} 
+\mbox{\hyperlink{pkcs7asn1_8js_ab89882b88c09cf79f0f77ea240d66d36}{p7v}} content\+Info\+Validator}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}:\ \textcolor{stringliteral}{'ContentInfo'},}
+\DoxyCodeLine{\ \ tagClass:\ \mbox{\hyperlink{pkcs12_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Class.UNIVERSAL,}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type}}:\ \mbox{\hyperlink{pkcs12_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Type.SEQUENCE,\ \ }
+\DoxyCodeLine{\ \ constructed:\ \textcolor{keyword}{true},}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}:\ [\{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}:\ \textcolor{stringliteral}{'ContentInfo.contentType'},}
+\DoxyCodeLine{\ \ \ \ tagClass:\ \mbox{\hyperlink{pkcs12_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Class.UNIVERSAL,}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type}}:\ \mbox{\hyperlink{pkcs12_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Type.OID,}
+\DoxyCodeLine{\ \ \ \ constructed:\ \textcolor{keyword}{false},}
+\DoxyCodeLine{\ \ \ \ capture:\ \textcolor{stringliteral}{'contentType'}}
+\DoxyCodeLine{\ \ \},\ \{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}:\ \textcolor{stringliteral}{'ContentInfo.content'},}
+\DoxyCodeLine{\ \ \ \ tagClass:\ \mbox{\hyperlink{pkcs12_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Class.CONTEXT\_SPECIFIC,}
+\DoxyCodeLine{\ \ \ \ constructed:\ \textcolor{keyword}{true},}
+\DoxyCodeLine{\ \ \ \ captureAsn1:\ \textcolor{stringliteral}{'content'}}
+\DoxyCodeLine{\ \ \}]}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{pkcs12_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}\index{pkcs12.js@{pkcs12.js}!forge@{forge}}
+\index{forge@{forge}!pkcs12.js@{pkcs12.js}}
+\doxysubsubsection{\texorpdfstring{forge}{forge}}
+{\footnotesize\ttfamily \label{pkcs12_8js_ab4dbef01e35b8e6d06087c0542ba9e2c} 
+var forge = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./forge\textquotesingle{})}
+
+Javascript implementation of PKCS\#12.
+
+\begin{DoxyAuthor}{Author}
+Dave Longley 
+
+Stefan Siegl \href{mailto:stesie@brokenpipe.de}{\texttt{ stesie@brokenpipe.\+de}}
+\end{DoxyAuthor}
+Copyright (c) 2010-\/2014 Digital Bazaar, Inc. Copyright (c) 2012 Stefan Siegl \href{mailto:stesie@brokenpipe.de}{\texttt{ stesie@brokenpipe.\+de}}
+
+The ASN.\+1 representation of PKCS\#12 is as follows (see \href{ftp://ftp.rsasecurity.com/pub/pkcs/pkcs-12/pkcs-12-tc1.pdf}{\texttt{ ftp\+://ftp.\+rsasecurity.\+com/pub/pkcs/pkcs-\/12/pkcs-\/12-\/tc1.\+pdf}} for details)
+
+PFX \+::= SEQUENCE \{ version INTEGER \{\doxylink{_0dgoogle-cloud_2storage_2node__modules_2uuid_2dist_2esm-browser_2v3_8js_ae0eace440707e51daa76ff8632a709cf}{v3(3)}\}(v3,...), auth\+Safe Content\+Info, mac\+Data Mac\+Data OPTIONAL \}
+
+Mac\+Data \+::= SEQUENCE \{ mac Digest\+Info, mac\+Salt OCTET STRING, iterations INTEGER DEFAULT 1 \} Note\+: The iterations default is for historical reasons and its use is deprecated. \doxylink{class_a}{A} higher value, like 1024, is recommended.
+
+Digest\+Info is defined in PKCS\#7 as follows\+:
+
+Digest\+Info \+::= SEQUENCE \{ digest\+Algorithm Digest\+Algorithm\+Identifier, digest Digest \}
+
+Digest\+Algorithm\+Identifier \+::= Algorithm\+Identifier
+
+The Algorithm\+Identifier contains an Object Identifier (OID) and parameters for the algorithm, if any. In the case of SHA1 there is none.
+
+Algorithm\+Identifer \+::= SEQUENCE \{ algorithm OBJECT IDENTIFIER, parameters ANY DEFINED BY algorithm OPTIONAL \}
+
+Digest \+::= OCTET STRING
+
+Content\+Info \+::= SEQUENCE \{ content\+Type Content\+Type, content \mbox{[}0\mbox{]} EXPLICIT ANY DEFINED BY content\+Type OPTIONAL \}
+
+Content\+Type \+::= OBJECT IDENTIFIER
+
+Authenticated\+Safe \+::= SEQUENCE OF Content\+Info -- Data if unencrypted -- Encrypted\+Data if password-\/encrypted -- Enveloped\+Data if public key-\/encrypted
+
+Safe\+Contents \+::= SEQUENCE OF Safe\+Bag
+
+Safe\+Bag \+::= SEQUENCE \{ bag\+Id BAG-\/\+TYPE.\&id (\{PKCS12\+Bag\+Set\}) bag\+Value \mbox{[}0\mbox{]} EXPLICIT BAG-\/\+TYPE.\&Type(\{PKCS12\+Bag\+Set\}\{@bag\+Id\}), bag\+Attributes SET OF PKCS12\+Attribute OPTIONAL \}
+
+PKCS12\+Attribute \+::= SEQUENCE \{ attr\+Id ATTRIBUTE.\&id (\{PKCS12\+Attr\+Set\}), attr\+Values SET OF ATTRIBUTE.\&Type (\{PKCS12\+Attr\+Set\}\{@attr\+Id\}) \} -- This type is compatible with the X.\+500 type \textquotesingle{}Attribute\textquotesingle{}
+
+PKCS12\+Attr\+Set ATTRIBUTE \+::= \{ friendly\+Name \texorpdfstring{$\vert$}{|} -- from PKCS \#9 local\+Key\+Id, -- from PKCS \#9 ... -- Other attributes are allowed \}
+
+Cert\+Bag \+::= SEQUENCE \{ cert\+Id BAG-\/\+TYPE.\&id (\{Cert\+Types\}), cert\+Value \mbox{[}0\mbox{]} EXPLICIT BAG-\/\+TYPE.\&Type (\{Cert\+Types\}\{@cert\+Id\}) \}
+
+x509\+Certificate BAG-\/\+TYPE \+::= \{OCTET STRING IDENTIFIED BY \{cert\+Types 1\}\} -- DER-\/encoded X.\+509 certificate stored in OCTET STRING
+
+sdsi\+Certificate BAG-\/\+TYPE \+::= \{IA5\+String IDENTIFIED BY \{cert\+Types 2\}\} -- Base64-\/encoded SDSI certificate stored in IA5\+String
+
+Cert\+Types BAG-\/\+TYPE \+::= \{ x509\+Certificate \texorpdfstring{$\vert$}{|} sdsi\+Certificate, ... -- For future extensions \} \Hypertarget{pkcs12_8js_a87a490dfb002a79e567415fc39508b2a}\index{pkcs12.js@{pkcs12.js}!generateKey@{generateKey}}
+\index{generateKey@{generateKey}!pkcs12.js@{pkcs12.js}}
+\doxysubsubsection{\texorpdfstring{generateKey}{generateKey}}
+{\footnotesize\ttfamily \label{pkcs12_8js_a87a490dfb002a79e567415fc39508b2a} 
+\mbox{\hyperlink{pkcs12_8js_a81c5bae16c42449aee13bebd2ac494e7}{p12}} generate\+Key = \mbox{\hyperlink{pbe_8js_a3e4173e2076fbf051cc024fff5ad6536}{forge.\+pbe.\+generate\+Pkcs12\+Key}}}
+
+Derives a PKCS\#12 key.
+
+
+\begin{DoxyParams}{Parameters}
+{\em password} & the password to derive the key material from, null or undefined for none. \\
+\hline
+{\em salt} & the salt, as a Byte\+Buffer, to use. \\
+\hline
+{\em id} & the PKCS\#12 ID byte (1 = key material, 2 = IV, 3 = MAC). \\
+\hline
+{\em iter} & the iteration count. \\
+\hline
+{\em n} & the number of bytes to derive from the password. \\
+\hline
+{\em md} & the message digest to use, defaults to SHA-\/1.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a Byte\+Buffer with the bytes derived from the password. 
+\end{DoxyReturn}
+\Hypertarget{pkcs12_8js_a81c5bae16c42449aee13bebd2ac494e7}\index{pkcs12.js@{pkcs12.js}!p12@{p12}}
+\index{p12@{p12}!pkcs12.js@{pkcs12.js}}
+\doxysubsubsection{\texorpdfstring{p12}{p12}}
+{\footnotesize\ttfamily \label{pkcs12_8js_a81c5bae16c42449aee13bebd2ac494e7} 
+var p12 = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{module.\+exports}} = forge.\+pkcs12 = forge.\+pkcs12 \texorpdfstring{$\vert$}{|}\texorpdfstring{$\vert$}{|} \{\}}
+
+\Hypertarget{pkcs12_8js_a191756366b90e1f01dd1d96de30a00d0}\index{pkcs12.js@{pkcs12.js}!pfxValidator@{pfxValidator}}
+\index{pfxValidator@{pfxValidator}!pkcs12.js@{pkcs12.js}}
+\doxysubsubsection{\texorpdfstring{pfxValidator}{pfxValidator}}
+{\footnotesize\ttfamily \label{pkcs12_8js_a191756366b90e1f01dd1d96de30a00d0} 
+var pfx\+Validator}
+
+\Hypertarget{pkcs12_8js_a3d17bc61e5888344585c8c8cadf01f91}\index{pkcs12.js@{pkcs12.js}!pkcs12FromAsn1@{pkcs12FromAsn1}}
+\index{pkcs12FromAsn1@{pkcs12FromAsn1}!pkcs12.js@{pkcs12.js}}
+\doxysubsubsection{\texorpdfstring{pkcs12FromAsn1}{pkcs12FromAsn1}}
+{\footnotesize\ttfamily \label{pkcs12_8js_a3d17bc61e5888344585c8c8cadf01f91} 
+\mbox{\hyperlink{pkcs12_8js_a81c5bae16c42449aee13bebd2ac494e7}{p12}} pkcs12\+From\+Asn1}
+
+Converts a PKCS\#12 PFX in ASN.\+1 notation into a PFX object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & The PKCS\#12 PFX in ASN.\+1 notation. \\
+\hline
+{\em strict} & true to use strict DER decoding, false not to (default\+: true). \\
+\hline
+{\em \{\+String\}} & password Password to decrypt with (optional).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+PKCS\#12 PFX object. 
+\end{DoxyReturn}
+\Hypertarget{pkcs12_8js_a09f30a96df6dedfab363359fcbd6ed8b}\index{pkcs12.js@{pkcs12.js}!pki@{pki}}
+\index{pki@{pki}!pkcs12.js@{pkcs12.js}}
+\doxysubsubsection{\texorpdfstring{pki}{pki}}
+{\footnotesize\ttfamily \label{pkcs12_8js_a09f30a96df6dedfab363359fcbd6ed8b} 
+var pki = forge.\+pki}
+
+\Hypertarget{pkcs12_8js_a7385455b0375a9b5125e0aa3cbd7f0d9}\index{pkcs12.js@{pkcs12.js}!safeBagValidator@{safeBagValidator}}
+\index{safeBagValidator@{safeBagValidator}!pkcs12.js@{pkcs12.js}}
+\doxysubsubsection{\texorpdfstring{safeBagValidator}{safeBagValidator}}
+{\footnotesize\ttfamily \label{pkcs12_8js_a7385455b0375a9b5125e0aa3cbd7f0d9} 
+var safe\+Bag\+Validator}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}:\ \textcolor{stringliteral}{'SafeBag'},}
+\DoxyCodeLine{\ \ tagClass:\ \mbox{\hyperlink{pkcs12_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Class.UNIVERSAL,}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type}}:\ \mbox{\hyperlink{pkcs12_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Type.SEQUENCE,}
+\DoxyCodeLine{\ \ constructed:\ \textcolor{keyword}{true},}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}:\ [\{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}:\ \textcolor{stringliteral}{'SafeBag.bagId'},}
+\DoxyCodeLine{\ \ \ \ tagClass:\ \mbox{\hyperlink{pkcs12_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Class.UNIVERSAL,}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type}}:\ \mbox{\hyperlink{pkcs12_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Type.OID,}
+\DoxyCodeLine{\ \ \ \ constructed:\ \textcolor{keyword}{false},}
+\DoxyCodeLine{\ \ \ \ capture:\ \textcolor{stringliteral}{'bagId'}}
+\DoxyCodeLine{\ \ \},\ \{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}:\ \textcolor{stringliteral}{'SafeBag.bagValue'},}
+\DoxyCodeLine{\ \ \ \ tagClass:\ \mbox{\hyperlink{pkcs12_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Class.CONTEXT\_SPECIFIC,}
+\DoxyCodeLine{\ \ \ \ constructed:\ \textcolor{keyword}{true},}
+\DoxyCodeLine{\ \ \ \ captureAsn1:\ \textcolor{stringliteral}{'bagValue'}}
+\DoxyCodeLine{\ \ \},\ \{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}:\ \textcolor{stringliteral}{'SafeBag.bagAttributes'},}
+\DoxyCodeLine{\ \ \ \ tagClass:\ \mbox{\hyperlink{pkcs12_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Class.UNIVERSAL,}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type}}:\ \mbox{\hyperlink{pkcs12_8js_a9c78fc6dc234df01559c22bf320e9785}{asn1}}.Type.SET,}
+\DoxyCodeLine{\ \ \ \ constructed:\ \textcolor{keyword}{true},}
+\DoxyCodeLine{\ \ \ \ optional:\ \textcolor{keyword}{true},}
+\DoxyCodeLine{\ \ \ \ capture:\ \textcolor{stringliteral}{'bagAttributes'}}
+\DoxyCodeLine{\ \ \}]}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{pkcs12_8js_a9dec7a67109e50c90e06d3d1f29b4db7}\index{pkcs12.js@{pkcs12.js}!toPkcs12Asn1@{toPkcs12Asn1}}
+\index{toPkcs12Asn1@{toPkcs12Asn1}!pkcs12.js@{pkcs12.js}}
+\doxysubsubsection{\texorpdfstring{toPkcs12Asn1}{toPkcs12Asn1}}
+{\footnotesize\ttfamily \label{pkcs12_8js_a9dec7a67109e50c90e06d3d1f29b4db7} 
+\mbox{\hyperlink{pkcs12_8js_a81c5bae16c42449aee13bebd2ac494e7}{p12}} to\+Pkcs12\+Asn1}
+
+Wraps a private key and certificate in a PKCS\#12 PFX wrapper. If a password is provided then the private key will be encrypted.
+
+An entire certificate chain may also be included. To do this, pass an array for the "{}cert"{} parameter where the first certificate is the one that is paired with the private key and each subsequent one verifies the previous one. The certificates may be in PEM format or have been already parsed by Forge.
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000001}{Todo}}]implement password-\/based-\/encryption for the whole package\end{DoxyRefDesc}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & the private key. \\
+\hline
+{\em cert} & the certificate (may be an array of certificates in order to specify a certificate chain). \\
+\hline
+{\em password} & the password to use, null for none. \\
+\hline
+{\em options} & algorithm the encryption algorithm to use (\textquotesingle{}aes128\textquotesingle{}, \textquotesingle{}aes192\textquotesingle{}, \textquotesingle{}aes256\textquotesingle{}, \textquotesingle{}3des\textquotesingle{}), defaults to \textquotesingle{}aes128\textquotesingle{}. count the iteration count to use. salt\+Size the salt size to use. use\+Mac true to include a MAC, false not to, defaults to true. local\+Key\+Id the local key ID to use, in hex. friendly\+Name the friendly name to use. generate\+Local\+Key\+Id true to generate a random local key ID, false not to, defaults to true.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the PKCS\#12 PFX ASN.\+1 object. 
+\end{DoxyReturn}

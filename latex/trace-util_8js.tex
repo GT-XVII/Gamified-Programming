@@ -1,0 +1,264 @@
+\doxysection{backend/node\+\_\+modules/@google-\/cloud/firestore/build/src/telemetry/trace-\/util.js File Reference}
+\hypertarget{trace-util_8js}{}\label{trace-util_8js}\index{backend/node\_modules/"@google-\/cloud/firestore/build/src/telemetry/trace-\/util.js@{backend/node\_modules/"@google-\/cloud/firestore/build/src/telemetry/trace-\/util.js}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{trace-util_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{trace-util_8js_ab4b60deb4cf7982bb1ec1201840a90f2}{ATTRIBUTE\+\_\+\+KEY\+\_\+\+ATTEMPTS\+\_\+\+REMAINING}} = \mbox{\hyperlink{trace-util_8js_a8d10f47990add8367fb452d3e1fd092a}{exports.\+ATTRIBUTE\+\_\+\+KEY\+\_\+\+ATTEMPTS\+\_\+\+ALLOWED}} = \mbox{\hyperlink{trace-util_8js_a5e79797d7cbc555bcaa4021e5e4dc973}{exports.\+ATTRIBUTE\+\_\+\+KEY\+\_\+\+TRANSACTION\+\_\+\+TYPE}} = \mbox{\hyperlink{trace-util_8js_a43d8b994b4bd816d2daf196c94b0a014}{exports.\+ATTRIBUTE\+\_\+\+KEY\+\_\+\+IS\+\_\+\+RETRY\+\_\+\+WITH\+\_\+\+CURSOR}} = \mbox{\hyperlink{trace-util_8js_ac3da02bd5c69bc946028c44b13fbe119}{exports.\+ATTRIBUTE\+\_\+\+KEY\+\_\+\+NUM\+\_\+\+RESPONSES}} = \mbox{\hyperlink{trace-util_8js_aeeed1b4e6d5001b6b1bfef6feca9a30c}{exports.\+ATTRIBUTE\+\_\+\+KEY\+\_\+\+IS\+\_\+\+TRANSACTIONAL}} = \mbox{\hyperlink{trace-util_8js_a57cb2e2dab3a313844ef204e0b465193}{exports.\+ATTRIBUTE\+\_\+\+KEY\+\_\+\+DOC\+\_\+\+COUNT}} = \mbox{\hyperlink{trace-util_8js_af3f6d36e79445e3680479485a1b4289e}{exports.\+SPAN\+\_\+\+NAME\+\_\+\+BULK\+\_\+\+WRITER\+\_\+\+COMMIT}} = \mbox{\hyperlink{trace-util_8js_a3af6f9e484d616c0c1be6dabbbf919bf}{exports.\+SPAN\+\_\+\+NAME\+\_\+\+PARTITION\+\_\+\+QUERY}} = \mbox{\hyperlink{trace-util_8js_aa611fcc024584ece9eff5ce01fcf7f21}{exports.\+SPAN\+\_\+\+NAME\+\_\+\+BATCH\+\_\+\+COMMIT}} = \mbox{\hyperlink{trace-util_8js_a27a24ce88612154d545faafaa78ddf7f}{exports.\+SPAN\+\_\+\+NAME\+\_\+\+TRANSACTION\+\_\+\+COMMIT}} = \mbox{\hyperlink{trace-util_8js_ad1f5dd3f2efec10c6d1b0677f5ca86d6}{exports.\+SPAN\+\_\+\+NAME\+\_\+\+TRANSACTION\+\_\+\+ROLLBACK}} = \mbox{\hyperlink{trace-util_8js_ae20fc2bc3148e9ac3d705c85dbac0ca7}{exports.\+SPAN\+\_\+\+NAME\+\_\+\+TRANSACTION\+\_\+\+GET\+\_\+\+DOCUMENTS}} = \mbox{\hyperlink{trace-util_8js_abcdb6125e726305a401b19fce92da0ec}{exports.\+SPAN\+\_\+\+NAME\+\_\+\+TRANSACTION\+\_\+\+GET\+\_\+\+DOCUMENT}} = \mbox{\hyperlink{trace-util_8js_a8953bbf3d916efd6c1622bd05e869103}{exports.\+SPAN\+\_\+\+NAME\+\_\+\+TRANSACTION\+\_\+\+GET\+\_\+\+AGGREGATION\+\_\+\+QUERY}} = \mbox{\hyperlink{trace-util_8js_a83e4e611ecc2600ca19b706b8f1aeeb2}{exports.\+SPAN\+\_\+\+NAME\+\_\+\+TRANSACTION\+\_\+\+GET\+\_\+\+QUERY}} = \mbox{\hyperlink{trace-util_8js_a6e7c9f3b4258821ed10d603afb6b09f7}{exports.\+SPAN\+\_\+\+NAME\+\_\+\+TRANSACTION\+\_\+\+RUN}} = \mbox{\hyperlink{trace-util_8js_aa8f24f62af5d1325c1f84f424d8dc3cc}{exports.\+SPAN\+\_\+\+NAME\+\_\+\+AGGREGATION\+\_\+\+QUERY\+\_\+\+GET}} = \mbox{\hyperlink{trace-util_8js_a629baad809db2599c633c9de51940034}{exports.\+SPAN\+\_\+\+NAME\+\_\+\+QUERY\+\_\+\+GET}} = \mbox{\hyperlink{trace-util_8js_af26b78f3034d131745ba027632fb1333}{exports.\+SPAN\+\_\+\+NAME\+\_\+\+COL\+\_\+\+REF\+\_\+\+LIST\+\_\+\+DOCUMENTS}} = \mbox{\hyperlink{trace-util_8js_adabb29c89eb5f2f5e4390294c0a2c32a}{exports.\+SPAN\+\_\+\+NAME\+\_\+\+COL\+\_\+\+REF\+\_\+\+ADD}} = \mbox{\hyperlink{trace-util_8js_a359f410136f539cde52ddf9464e279fb}{exports.\+SPAN\+\_\+\+NAME\+\_\+\+DOC\+\_\+\+REF\+\_\+\+LIST\+\_\+\+COLLECTIONS}} = \mbox{\hyperlink{trace-util_8js_aa251684b8f136b2396a946ff90384ddf}{exports.\+SPAN\+\_\+\+NAME\+\_\+\+DOC\+\_\+\+REF\+\_\+\+GET}} = \mbox{\hyperlink{trace-util_8js_ac3211a719480c1272e5d6d9210631c25}{exports.\+SPAN\+\_\+\+NAME\+\_\+\+DOC\+\_\+\+REF\+\_\+\+DELETE}} = \mbox{\hyperlink{trace-util_8js_a4f47be3b5abbe77ee72f0331a7925ae6}{exports.\+SPAN\+\_\+\+NAME\+\_\+\+DOC\+\_\+\+REF\+\_\+\+UPDATE}} = \mbox{\hyperlink{trace-util_8js_a8a3d294a53c1dfd27b7e62e47ef6e812}{exports.\+SPAN\+\_\+\+NAME\+\_\+\+DOC\+\_\+\+REF\+\_\+\+SET}} = \mbox{\hyperlink{trace-util_8js_a2aed3445f5b607ff6df2fc4207928e82}{exports.\+SPAN\+\_\+\+NAME\+\_\+\+DOC\+\_\+\+REF\+\_\+\+CREATE}} = \mbox{\hyperlink{trace-util_8js_ad31d9f3caee608acd025190756f250ba}{exports.\+SPAN\+\_\+\+NAME\+\_\+\+RUN\+\_\+\+AGGREGATION\+\_\+\+QUERY}} = \mbox{\hyperlink{trace-util_8js_a97d897ccaa50f136e341e8d2f188e748}{exports.\+SPAN\+\_\+\+NAME\+\_\+\+RUN\+\_\+\+QUERY}} = \mbox{\hyperlink{trace-util_8js_a767711ad8ff1922ac620f4a42acf1027}{exports.\+SPAN\+\_\+\+NAME\+\_\+\+BATCH\+\_\+\+GET\+\_\+\+DOCUMENTS}} = \mbox{\hyperlink{trace-util_8js_a5fa7c09dd1644486385db368178a0704}{exports.\+SERVICE}} = void 0
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{trace-util_8js_a5fa7c09dd1644486385db368178a0704}{SERVICE}} = \textquotesingle{}google.\+firestore.\+v1.\+Firestore/\textquotesingle{}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{trace-util_8js_a767711ad8ff1922ac620f4a42acf1027}{SPAN\+\_\+\+NAME\+\_\+\+BATCH\+\_\+\+GET\+\_\+\+DOCUMENTS}} = \textquotesingle{}Batch\+Get\+Documents\textquotesingle{}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{trace-util_8js_a97d897ccaa50f136e341e8d2f188e748}{SPAN\+\_\+\+NAME\+\_\+\+RUN\+\_\+\+QUERY}} = \textquotesingle{}Run\+Query\textquotesingle{}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{trace-util_8js_ad31d9f3caee608acd025190756f250ba}{SPAN\+\_\+\+NAME\+\_\+\+RUN\+\_\+\+AGGREGATION\+\_\+\+QUERY}} = \textquotesingle{}Run\+Aggregation\+Query\textquotesingle{}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{trace-util_8js_a2aed3445f5b607ff6df2fc4207928e82}{SPAN\+\_\+\+NAME\+\_\+\+DOC\+\_\+\+REF\+\_\+\+CREATE}} = \textquotesingle{}Document\+Reference.\+Create\textquotesingle{}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{trace-util_8js_a8a3d294a53c1dfd27b7e62e47ef6e812}{SPAN\+\_\+\+NAME\+\_\+\+DOC\+\_\+\+REF\+\_\+\+SET}} = \textquotesingle{}\mbox{\hyperlink{__create_set_8js_ab9f46b8207185d305162498bea0d1c26}{Document\+Reference.\+Set}}\textquotesingle{}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{trace-util_8js_a4f47be3b5abbe77ee72f0331a7925ae6}{SPAN\+\_\+\+NAME\+\_\+\+DOC\+\_\+\+REF\+\_\+\+UPDATE}} = \textquotesingle{}Document\+Reference.\+Update\textquotesingle{}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{trace-util_8js_ac3211a719480c1272e5d6d9210631c25}{SPAN\+\_\+\+NAME\+\_\+\+DOC\+\_\+\+REF\+\_\+\+DELETE}} = \textquotesingle{}Document\+Reference.\+Delete\textquotesingle{}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{trace-util_8js_aa251684b8f136b2396a946ff90384ddf}{SPAN\+\_\+\+NAME\+\_\+\+DOC\+\_\+\+REF\+\_\+\+GET}} = \textquotesingle{}Document\+Reference.\+Get\textquotesingle{}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{trace-util_8js_a359f410136f539cde52ddf9464e279fb}{SPAN\+\_\+\+NAME\+\_\+\+DOC\+\_\+\+REF\+\_\+\+LIST\+\_\+\+COLLECTIONS}} = \textquotesingle{}Document\+Reference.\+List\+Collections\textquotesingle{}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{trace-util_8js_adabb29c89eb5f2f5e4390294c0a2c32a}{SPAN\+\_\+\+NAME\+\_\+\+COL\+\_\+\+REF\+\_\+\+ADD}} = \textquotesingle{}Collection\+Reference.\+Add\textquotesingle{}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{trace-util_8js_af26b78f3034d131745ba027632fb1333}{SPAN\+\_\+\+NAME\+\_\+\+COL\+\_\+\+REF\+\_\+\+LIST\+\_\+\+DOCUMENTS}} = \textquotesingle{}Collection\+Reference.\+List\+Documents\textquotesingle{}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{trace-util_8js_a629baad809db2599c633c9de51940034}{SPAN\+\_\+\+NAME\+\_\+\+QUERY\+\_\+\+GET}} = \textquotesingle{}Query.\+Get\textquotesingle{}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{trace-util_8js_aa8f24f62af5d1325c1f84f424d8dc3cc}{SPAN\+\_\+\+NAME\+\_\+\+AGGREGATION\+\_\+\+QUERY\+\_\+\+GET}} = \textquotesingle{}Aggregation\+Query.\+Get\textquotesingle{}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{trace-util_8js_a6e7c9f3b4258821ed10d603afb6b09f7}{SPAN\+\_\+\+NAME\+\_\+\+TRANSACTION\+\_\+\+RUN}} = \textquotesingle{}Transaction.\+Run\textquotesingle{}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{trace-util_8js_a83e4e611ecc2600ca19b706b8f1aeeb2}{SPAN\+\_\+\+NAME\+\_\+\+TRANSACTION\+\_\+\+GET\+\_\+\+QUERY}} = \textquotesingle{}Transaction.\+Get.\+Query\textquotesingle{}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{trace-util_8js_a8953bbf3d916efd6c1622bd05e869103}{SPAN\+\_\+\+NAME\+\_\+\+TRANSACTION\+\_\+\+GET\+\_\+\+AGGREGATION\+\_\+\+QUERY}} = \textquotesingle{}Transaction.\+Get.\+Aggregation\+Query\textquotesingle{}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{trace-util_8js_abcdb6125e726305a401b19fce92da0ec}{SPAN\+\_\+\+NAME\+\_\+\+TRANSACTION\+\_\+\+GET\+\_\+\+DOCUMENT}} = \textquotesingle{}Transaction.\+Get.\+Document\textquotesingle{}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{trace-util_8js_ae20fc2bc3148e9ac3d705c85dbac0ca7}{SPAN\+\_\+\+NAME\+\_\+\+TRANSACTION\+\_\+\+GET\+\_\+\+DOCUMENTS}} = \textquotesingle{}Transaction.\+Get.\+Documents\textquotesingle{}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{trace-util_8js_ad1f5dd3f2efec10c6d1b0677f5ca86d6}{SPAN\+\_\+\+NAME\+\_\+\+TRANSACTION\+\_\+\+ROLLBACK}} = \textquotesingle{}Transaction.\+Rollback\textquotesingle{}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{trace-util_8js_a27a24ce88612154d545faafaa78ddf7f}{SPAN\+\_\+\+NAME\+\_\+\+TRANSACTION\+\_\+\+COMMIT}} = \textquotesingle{}Transaction.\+Commit\textquotesingle{}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{trace-util_8js_aa611fcc024584ece9eff5ce01fcf7f21}{SPAN\+\_\+\+NAME\+\_\+\+BATCH\+\_\+\+COMMIT}} = \textquotesingle{}Batch.\+Commit\textquotesingle{}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{trace-util_8js_a3af6f9e484d616c0c1be6dabbbf919bf}{SPAN\+\_\+\+NAME\+\_\+\+PARTITION\+\_\+\+QUERY}} = \textquotesingle{}Partition\+Query\textquotesingle{}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{trace-util_8js_af3f6d36e79445e3680479485a1b4289e}{SPAN\+\_\+\+NAME\+\_\+\+BULK\+\_\+\+WRITER\+\_\+\+COMMIT}} = \textquotesingle{}Bulk\+Writer.\+Commit\textquotesingle{}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{trace-util_8js_a57cb2e2dab3a313844ef204e0b465193}{ATTRIBUTE\+\_\+\+KEY\+\_\+\+DOC\+\_\+\+COUNT}} = \textquotesingle{}doc\+\_\+count\textquotesingle{}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{trace-util_8js_aeeed1b4e6d5001b6b1bfef6feca9a30c}{ATTRIBUTE\+\_\+\+KEY\+\_\+\+IS\+\_\+\+TRANSACTIONAL}} = \textquotesingle{}transactional\textquotesingle{}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{trace-util_8js_ac3da02bd5c69bc946028c44b13fbe119}{ATTRIBUTE\+\_\+\+KEY\+\_\+\+NUM\+\_\+\+RESPONSES}} = \textquotesingle{}response\+\_\+count\textquotesingle{}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{trace-util_8js_a43d8b994b4bd816d2daf196c94b0a014}{ATTRIBUTE\+\_\+\+KEY\+\_\+\+IS\+\_\+\+RETRY\+\_\+\+WITH\+\_\+\+CURSOR}} = \textquotesingle{}retry\+\_\+query\+\_\+with\+\_\+cursor\textquotesingle{}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{trace-util_8js_a5e79797d7cbc555bcaa4021e5e4dc973}{ATTRIBUTE\+\_\+\+KEY\+\_\+\+TRANSACTION\+\_\+\+TYPE}} = \textquotesingle{}transaction\+\_\+type\textquotesingle{}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{trace-util_8js_a8d10f47990add8367fb452d3e1fd092a}{ATTRIBUTE\+\_\+\+KEY\+\_\+\+ATTEMPTS\+\_\+\+ALLOWED}} = \textquotesingle{}attempts\+\_\+allowed\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{trace-util_8js_a8d10f47990add8367fb452d3e1fd092a}\index{trace-\/util.js@{trace-\/util.js}!ATTRIBUTE\_KEY\_ATTEMPTS\_ALLOWED@{ATTRIBUTE\_KEY\_ATTEMPTS\_ALLOWED}}
+\index{ATTRIBUTE\_KEY\_ATTEMPTS\_ALLOWED@{ATTRIBUTE\_KEY\_ATTEMPTS\_ALLOWED}!trace-\/util.js@{trace-\/util.js}}
+\doxysubsubsection{\texorpdfstring{ATTRIBUTE\_KEY\_ATTEMPTS\_ALLOWED}{ATTRIBUTE\_KEY\_ATTEMPTS\_ALLOWED}}
+{\footnotesize\ttfamily \label{trace-util_8js_a8d10f47990add8367fb452d3e1fd092a} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} ATTRIBUTE\+\_\+\+KEY\+\_\+\+ATTEMPTS\+\_\+\+ALLOWED = \textquotesingle{}attempts\+\_\+allowed\textquotesingle{}}
+
+\Hypertarget{trace-util_8js_ab4b60deb4cf7982bb1ec1201840a90f2}\index{trace-\/util.js@{trace-\/util.js}!ATTRIBUTE\_KEY\_ATTEMPTS\_REMAINING@{ATTRIBUTE\_KEY\_ATTEMPTS\_REMAINING}}
+\index{ATTRIBUTE\_KEY\_ATTEMPTS\_REMAINING@{ATTRIBUTE\_KEY\_ATTEMPTS\_REMAINING}!trace-\/util.js@{trace-\/util.js}}
+\doxysubsubsection{\texorpdfstring{ATTRIBUTE\_KEY\_ATTEMPTS\_REMAINING}{ATTRIBUTE\_KEY\_ATTEMPTS\_REMAINING}}
+{\footnotesize\ttfamily \label{trace-util_8js_ab4b60deb4cf7982bb1ec1201840a90f2} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} ATTRIBUTE\+\_\+\+KEY\+\_\+\+ATTEMPTS\+\_\+\+REMAINING = \mbox{\hyperlink{trace-util_8js_a8d10f47990add8367fb452d3e1fd092a}{exports.\+ATTRIBUTE\+\_\+\+KEY\+\_\+\+ATTEMPTS\+\_\+\+ALLOWED}} = \mbox{\hyperlink{trace-util_8js_a5e79797d7cbc555bcaa4021e5e4dc973}{exports.\+ATTRIBUTE\+\_\+\+KEY\+\_\+\+TRANSACTION\+\_\+\+TYPE}} = \mbox{\hyperlink{trace-util_8js_a43d8b994b4bd816d2daf196c94b0a014}{exports.\+ATTRIBUTE\+\_\+\+KEY\+\_\+\+IS\+\_\+\+RETRY\+\_\+\+WITH\+\_\+\+CURSOR}} = \mbox{\hyperlink{trace-util_8js_ac3da02bd5c69bc946028c44b13fbe119}{exports.\+ATTRIBUTE\+\_\+\+KEY\+\_\+\+NUM\+\_\+\+RESPONSES}} = \mbox{\hyperlink{trace-util_8js_aeeed1b4e6d5001b6b1bfef6feca9a30c}{exports.\+ATTRIBUTE\+\_\+\+KEY\+\_\+\+IS\+\_\+\+TRANSACTIONAL}} = \mbox{\hyperlink{trace-util_8js_a57cb2e2dab3a313844ef204e0b465193}{exports.\+ATTRIBUTE\+\_\+\+KEY\+\_\+\+DOC\+\_\+\+COUNT}} = \mbox{\hyperlink{trace-util_8js_af3f6d36e79445e3680479485a1b4289e}{exports.\+SPAN\+\_\+\+NAME\+\_\+\+BULK\+\_\+\+WRITER\+\_\+\+COMMIT}} = \mbox{\hyperlink{trace-util_8js_a3af6f9e484d616c0c1be6dabbbf919bf}{exports.\+SPAN\+\_\+\+NAME\+\_\+\+PARTITION\+\_\+\+QUERY}} = \mbox{\hyperlink{trace-util_8js_aa611fcc024584ece9eff5ce01fcf7f21}{exports.\+SPAN\+\_\+\+NAME\+\_\+\+BATCH\+\_\+\+COMMIT}} = \mbox{\hyperlink{trace-util_8js_a27a24ce88612154d545faafaa78ddf7f}{exports.\+SPAN\+\_\+\+NAME\+\_\+\+TRANSACTION\+\_\+\+COMMIT}} = \mbox{\hyperlink{trace-util_8js_ad1f5dd3f2efec10c6d1b0677f5ca86d6}{exports.\+SPAN\+\_\+\+NAME\+\_\+\+TRANSACTION\+\_\+\+ROLLBACK}} = \mbox{\hyperlink{trace-util_8js_ae20fc2bc3148e9ac3d705c85dbac0ca7}{exports.\+SPAN\+\_\+\+NAME\+\_\+\+TRANSACTION\+\_\+\+GET\+\_\+\+DOCUMENTS}} = \mbox{\hyperlink{trace-util_8js_abcdb6125e726305a401b19fce92da0ec}{exports.\+SPAN\+\_\+\+NAME\+\_\+\+TRANSACTION\+\_\+\+GET\+\_\+\+DOCUMENT}} = \mbox{\hyperlink{trace-util_8js_a8953bbf3d916efd6c1622bd05e869103}{exports.\+SPAN\+\_\+\+NAME\+\_\+\+TRANSACTION\+\_\+\+GET\+\_\+\+AGGREGATION\+\_\+\+QUERY}} = \mbox{\hyperlink{trace-util_8js_a83e4e611ecc2600ca19b706b8f1aeeb2}{exports.\+SPAN\+\_\+\+NAME\+\_\+\+TRANSACTION\+\_\+\+GET\+\_\+\+QUERY}} = \mbox{\hyperlink{trace-util_8js_a6e7c9f3b4258821ed10d603afb6b09f7}{exports.\+SPAN\+\_\+\+NAME\+\_\+\+TRANSACTION\+\_\+\+RUN}} = \mbox{\hyperlink{trace-util_8js_aa8f24f62af5d1325c1f84f424d8dc3cc}{exports.\+SPAN\+\_\+\+NAME\+\_\+\+AGGREGATION\+\_\+\+QUERY\+\_\+\+GET}} = \mbox{\hyperlink{trace-util_8js_a629baad809db2599c633c9de51940034}{exports.\+SPAN\+\_\+\+NAME\+\_\+\+QUERY\+\_\+\+GET}} = \mbox{\hyperlink{trace-util_8js_af26b78f3034d131745ba027632fb1333}{exports.\+SPAN\+\_\+\+NAME\+\_\+\+COL\+\_\+\+REF\+\_\+\+LIST\+\_\+\+DOCUMENTS}} = \mbox{\hyperlink{trace-util_8js_adabb29c89eb5f2f5e4390294c0a2c32a}{exports.\+SPAN\+\_\+\+NAME\+\_\+\+COL\+\_\+\+REF\+\_\+\+ADD}} = \mbox{\hyperlink{trace-util_8js_a359f410136f539cde52ddf9464e279fb}{exports.\+SPAN\+\_\+\+NAME\+\_\+\+DOC\+\_\+\+REF\+\_\+\+LIST\+\_\+\+COLLECTIONS}} = \mbox{\hyperlink{trace-util_8js_aa251684b8f136b2396a946ff90384ddf}{exports.\+SPAN\+\_\+\+NAME\+\_\+\+DOC\+\_\+\+REF\+\_\+\+GET}} = \mbox{\hyperlink{trace-util_8js_ac3211a719480c1272e5d6d9210631c25}{exports.\+SPAN\+\_\+\+NAME\+\_\+\+DOC\+\_\+\+REF\+\_\+\+DELETE}} = \mbox{\hyperlink{trace-util_8js_a4f47be3b5abbe77ee72f0331a7925ae6}{exports.\+SPAN\+\_\+\+NAME\+\_\+\+DOC\+\_\+\+REF\+\_\+\+UPDATE}} = \mbox{\hyperlink{trace-util_8js_a8a3d294a53c1dfd27b7e62e47ef6e812}{exports.\+SPAN\+\_\+\+NAME\+\_\+\+DOC\+\_\+\+REF\+\_\+\+SET}} = \mbox{\hyperlink{trace-util_8js_a2aed3445f5b607ff6df2fc4207928e82}{exports.\+SPAN\+\_\+\+NAME\+\_\+\+DOC\+\_\+\+REF\+\_\+\+CREATE}} = \mbox{\hyperlink{trace-util_8js_ad31d9f3caee608acd025190756f250ba}{exports.\+SPAN\+\_\+\+NAME\+\_\+\+RUN\+\_\+\+AGGREGATION\+\_\+\+QUERY}} = \mbox{\hyperlink{trace-util_8js_a97d897ccaa50f136e341e8d2f188e748}{exports.\+SPAN\+\_\+\+NAME\+\_\+\+RUN\+\_\+\+QUERY}} = \mbox{\hyperlink{trace-util_8js_a767711ad8ff1922ac620f4a42acf1027}{exports.\+SPAN\+\_\+\+NAME\+\_\+\+BATCH\+\_\+\+GET\+\_\+\+DOCUMENTS}} = \mbox{\hyperlink{trace-util_8js_a5fa7c09dd1644486385db368178a0704}{exports.\+SERVICE}} = void 0}
+
+\Hypertarget{trace-util_8js_a57cb2e2dab3a313844ef204e0b465193}\index{trace-\/util.js@{trace-\/util.js}!ATTRIBUTE\_KEY\_DOC\_COUNT@{ATTRIBUTE\_KEY\_DOC\_COUNT}}
+\index{ATTRIBUTE\_KEY\_DOC\_COUNT@{ATTRIBUTE\_KEY\_DOC\_COUNT}!trace-\/util.js@{trace-\/util.js}}
+\doxysubsubsection{\texorpdfstring{ATTRIBUTE\_KEY\_DOC\_COUNT}{ATTRIBUTE\_KEY\_DOC\_COUNT}}
+{\footnotesize\ttfamily \label{trace-util_8js_a57cb2e2dab3a313844ef204e0b465193} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} ATTRIBUTE\+\_\+\+KEY\+\_\+\+DOC\+\_\+\+COUNT = \textquotesingle{}doc\+\_\+count\textquotesingle{}}
+
+\Hypertarget{trace-util_8js_a43d8b994b4bd816d2daf196c94b0a014}\index{trace-\/util.js@{trace-\/util.js}!ATTRIBUTE\_KEY\_IS\_RETRY\_WITH\_CURSOR@{ATTRIBUTE\_KEY\_IS\_RETRY\_WITH\_CURSOR}}
+\index{ATTRIBUTE\_KEY\_IS\_RETRY\_WITH\_CURSOR@{ATTRIBUTE\_KEY\_IS\_RETRY\_WITH\_CURSOR}!trace-\/util.js@{trace-\/util.js}}
+\doxysubsubsection{\texorpdfstring{ATTRIBUTE\_KEY\_IS\_RETRY\_WITH\_CURSOR}{ATTRIBUTE\_KEY\_IS\_RETRY\_WITH\_CURSOR}}
+{\footnotesize\ttfamily \label{trace-util_8js_a43d8b994b4bd816d2daf196c94b0a014} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} ATTRIBUTE\+\_\+\+KEY\+\_\+\+IS\+\_\+\+RETRY\+\_\+\+WITH\+\_\+\+CURSOR = \textquotesingle{}retry\+\_\+query\+\_\+with\+\_\+cursor\textquotesingle{}}
+
+\Hypertarget{trace-util_8js_aeeed1b4e6d5001b6b1bfef6feca9a30c}\index{trace-\/util.js@{trace-\/util.js}!ATTRIBUTE\_KEY\_IS\_TRANSACTIONAL@{ATTRIBUTE\_KEY\_IS\_TRANSACTIONAL}}
+\index{ATTRIBUTE\_KEY\_IS\_TRANSACTIONAL@{ATTRIBUTE\_KEY\_IS\_TRANSACTIONAL}!trace-\/util.js@{trace-\/util.js}}
+\doxysubsubsection{\texorpdfstring{ATTRIBUTE\_KEY\_IS\_TRANSACTIONAL}{ATTRIBUTE\_KEY\_IS\_TRANSACTIONAL}}
+{\footnotesize\ttfamily \label{trace-util_8js_aeeed1b4e6d5001b6b1bfef6feca9a30c} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} ATTRIBUTE\+\_\+\+KEY\+\_\+\+IS\+\_\+\+TRANSACTIONAL = \textquotesingle{}transactional\textquotesingle{}}
+
+\Hypertarget{trace-util_8js_ac3da02bd5c69bc946028c44b13fbe119}\index{trace-\/util.js@{trace-\/util.js}!ATTRIBUTE\_KEY\_NUM\_RESPONSES@{ATTRIBUTE\_KEY\_NUM\_RESPONSES}}
+\index{ATTRIBUTE\_KEY\_NUM\_RESPONSES@{ATTRIBUTE\_KEY\_NUM\_RESPONSES}!trace-\/util.js@{trace-\/util.js}}
+\doxysubsubsection{\texorpdfstring{ATTRIBUTE\_KEY\_NUM\_RESPONSES}{ATTRIBUTE\_KEY\_NUM\_RESPONSES}}
+{\footnotesize\ttfamily \label{trace-util_8js_ac3da02bd5c69bc946028c44b13fbe119} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} ATTRIBUTE\+\_\+\+KEY\+\_\+\+NUM\+\_\+\+RESPONSES = \textquotesingle{}response\+\_\+count\textquotesingle{}}
+
+\Hypertarget{trace-util_8js_a5e79797d7cbc555bcaa4021e5e4dc973}\index{trace-\/util.js@{trace-\/util.js}!ATTRIBUTE\_KEY\_TRANSACTION\_TYPE@{ATTRIBUTE\_KEY\_TRANSACTION\_TYPE}}
+\index{ATTRIBUTE\_KEY\_TRANSACTION\_TYPE@{ATTRIBUTE\_KEY\_TRANSACTION\_TYPE}!trace-\/util.js@{trace-\/util.js}}
+\doxysubsubsection{\texorpdfstring{ATTRIBUTE\_KEY\_TRANSACTION\_TYPE}{ATTRIBUTE\_KEY\_TRANSACTION\_TYPE}}
+{\footnotesize\ttfamily \label{trace-util_8js_a5e79797d7cbc555bcaa4021e5e4dc973} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} ATTRIBUTE\+\_\+\+KEY\+\_\+\+TRANSACTION\+\_\+\+TYPE = \textquotesingle{}transaction\+\_\+type\textquotesingle{}}
+
+\Hypertarget{trace-util_8js_a5fa7c09dd1644486385db368178a0704}\index{trace-\/util.js@{trace-\/util.js}!SERVICE@{SERVICE}}
+\index{SERVICE@{SERVICE}!trace-\/util.js@{trace-\/util.js}}
+\doxysubsubsection{\texorpdfstring{SERVICE}{SERVICE}}
+{\footnotesize\ttfamily \label{trace-util_8js_a5fa7c09dd1644486385db368178a0704} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} SERVICE = \textquotesingle{}google.\+firestore.\+v1.\+Firestore/\textquotesingle{}}
+
+\doxylink{class_span}{Span} names for instrumented operations. \Hypertarget{trace-util_8js_aa8f24f62af5d1325c1f84f424d8dc3cc}\index{trace-\/util.js@{trace-\/util.js}!SPAN\_NAME\_AGGREGATION\_QUERY\_GET@{SPAN\_NAME\_AGGREGATION\_QUERY\_GET}}
+\index{SPAN\_NAME\_AGGREGATION\_QUERY\_GET@{SPAN\_NAME\_AGGREGATION\_QUERY\_GET}!trace-\/util.js@{trace-\/util.js}}
+\doxysubsubsection{\texorpdfstring{SPAN\_NAME\_AGGREGATION\_QUERY\_GET}{SPAN\_NAME\_AGGREGATION\_QUERY\_GET}}
+{\footnotesize\ttfamily \label{trace-util_8js_aa8f24f62af5d1325c1f84f424d8dc3cc} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} SPAN\+\_\+\+NAME\+\_\+\+AGGREGATION\+\_\+\+QUERY\+\_\+\+GET = \textquotesingle{}Aggregation\+Query.\+Get\textquotesingle{}}
+
+\Hypertarget{trace-util_8js_aa611fcc024584ece9eff5ce01fcf7f21}\index{trace-\/util.js@{trace-\/util.js}!SPAN\_NAME\_BATCH\_COMMIT@{SPAN\_NAME\_BATCH\_COMMIT}}
+\index{SPAN\_NAME\_BATCH\_COMMIT@{SPAN\_NAME\_BATCH\_COMMIT}!trace-\/util.js@{trace-\/util.js}}
+\doxysubsubsection{\texorpdfstring{SPAN\_NAME\_BATCH\_COMMIT}{SPAN\_NAME\_BATCH\_COMMIT}}
+{\footnotesize\ttfamily \label{trace-util_8js_aa611fcc024584ece9eff5ce01fcf7f21} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} SPAN\+\_\+\+NAME\+\_\+\+BATCH\+\_\+\+COMMIT = \textquotesingle{}Batch.\+Commit\textquotesingle{}}
+
+\Hypertarget{trace-util_8js_a767711ad8ff1922ac620f4a42acf1027}\index{trace-\/util.js@{trace-\/util.js}!SPAN\_NAME\_BATCH\_GET\_DOCUMENTS@{SPAN\_NAME\_BATCH\_GET\_DOCUMENTS}}
+\index{SPAN\_NAME\_BATCH\_GET\_DOCUMENTS@{SPAN\_NAME\_BATCH\_GET\_DOCUMENTS}!trace-\/util.js@{trace-\/util.js}}
+\doxysubsubsection{\texorpdfstring{SPAN\_NAME\_BATCH\_GET\_DOCUMENTS}{SPAN\_NAME\_BATCH\_GET\_DOCUMENTS}}
+{\footnotesize\ttfamily \label{trace-util_8js_a767711ad8ff1922ac620f4a42acf1027} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} SPAN\+\_\+\+NAME\+\_\+\+BATCH\+\_\+\+GET\+\_\+\+DOCUMENTS = \textquotesingle{}Batch\+Get\+Documents\textquotesingle{}}
+
+\Hypertarget{trace-util_8js_af3f6d36e79445e3680479485a1b4289e}\index{trace-\/util.js@{trace-\/util.js}!SPAN\_NAME\_BULK\_WRITER\_COMMIT@{SPAN\_NAME\_BULK\_WRITER\_COMMIT}}
+\index{SPAN\_NAME\_BULK\_WRITER\_COMMIT@{SPAN\_NAME\_BULK\_WRITER\_COMMIT}!trace-\/util.js@{trace-\/util.js}}
+\doxysubsubsection{\texorpdfstring{SPAN\_NAME\_BULK\_WRITER\_COMMIT}{SPAN\_NAME\_BULK\_WRITER\_COMMIT}}
+{\footnotesize\ttfamily \label{trace-util_8js_af3f6d36e79445e3680479485a1b4289e} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} SPAN\+\_\+\+NAME\+\_\+\+BULK\+\_\+\+WRITER\+\_\+\+COMMIT = \textquotesingle{}Bulk\+Writer.\+Commit\textquotesingle{}}
+
+\Hypertarget{trace-util_8js_adabb29c89eb5f2f5e4390294c0a2c32a}\index{trace-\/util.js@{trace-\/util.js}!SPAN\_NAME\_COL\_REF\_ADD@{SPAN\_NAME\_COL\_REF\_ADD}}
+\index{SPAN\_NAME\_COL\_REF\_ADD@{SPAN\_NAME\_COL\_REF\_ADD}!trace-\/util.js@{trace-\/util.js}}
+\doxysubsubsection{\texorpdfstring{SPAN\_NAME\_COL\_REF\_ADD}{SPAN\_NAME\_COL\_REF\_ADD}}
+{\footnotesize\ttfamily \label{trace-util_8js_adabb29c89eb5f2f5e4390294c0a2c32a} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} SPAN\+\_\+\+NAME\+\_\+\+COL\+\_\+\+REF\+\_\+\+ADD = \textquotesingle{}Collection\+Reference.\+Add\textquotesingle{}}
+
+\Hypertarget{trace-util_8js_af26b78f3034d131745ba027632fb1333}\index{trace-\/util.js@{trace-\/util.js}!SPAN\_NAME\_COL\_REF\_LIST\_DOCUMENTS@{SPAN\_NAME\_COL\_REF\_LIST\_DOCUMENTS}}
+\index{SPAN\_NAME\_COL\_REF\_LIST\_DOCUMENTS@{SPAN\_NAME\_COL\_REF\_LIST\_DOCUMENTS}!trace-\/util.js@{trace-\/util.js}}
+\doxysubsubsection{\texorpdfstring{SPAN\_NAME\_COL\_REF\_LIST\_DOCUMENTS}{SPAN\_NAME\_COL\_REF\_LIST\_DOCUMENTS}}
+{\footnotesize\ttfamily \label{trace-util_8js_af26b78f3034d131745ba027632fb1333} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} SPAN\+\_\+\+NAME\+\_\+\+COL\+\_\+\+REF\+\_\+\+LIST\+\_\+\+DOCUMENTS = \textquotesingle{}Collection\+Reference.\+List\+Documents\textquotesingle{}}
+
+\Hypertarget{trace-util_8js_a2aed3445f5b607ff6df2fc4207928e82}\index{trace-\/util.js@{trace-\/util.js}!SPAN\_NAME\_DOC\_REF\_CREATE@{SPAN\_NAME\_DOC\_REF\_CREATE}}
+\index{SPAN\_NAME\_DOC\_REF\_CREATE@{SPAN\_NAME\_DOC\_REF\_CREATE}!trace-\/util.js@{trace-\/util.js}}
+\doxysubsubsection{\texorpdfstring{SPAN\_NAME\_DOC\_REF\_CREATE}{SPAN\_NAME\_DOC\_REF\_CREATE}}
+{\footnotesize\ttfamily \label{trace-util_8js_a2aed3445f5b607ff6df2fc4207928e82} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} SPAN\+\_\+\+NAME\+\_\+\+DOC\+\_\+\+REF\+\_\+\+CREATE = \textquotesingle{}Document\+Reference.\+Create\textquotesingle{}}
+
+\Hypertarget{trace-util_8js_ac3211a719480c1272e5d6d9210631c25}\index{trace-\/util.js@{trace-\/util.js}!SPAN\_NAME\_DOC\_REF\_DELETE@{SPAN\_NAME\_DOC\_REF\_DELETE}}
+\index{SPAN\_NAME\_DOC\_REF\_DELETE@{SPAN\_NAME\_DOC\_REF\_DELETE}!trace-\/util.js@{trace-\/util.js}}
+\doxysubsubsection{\texorpdfstring{SPAN\_NAME\_DOC\_REF\_DELETE}{SPAN\_NAME\_DOC\_REF\_DELETE}}
+{\footnotesize\ttfamily \label{trace-util_8js_ac3211a719480c1272e5d6d9210631c25} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} SPAN\+\_\+\+NAME\+\_\+\+DOC\+\_\+\+REF\+\_\+\+DELETE = \textquotesingle{}Document\+Reference.\+Delete\textquotesingle{}}
+
+\Hypertarget{trace-util_8js_aa251684b8f136b2396a946ff90384ddf}\index{trace-\/util.js@{trace-\/util.js}!SPAN\_NAME\_DOC\_REF\_GET@{SPAN\_NAME\_DOC\_REF\_GET}}
+\index{SPAN\_NAME\_DOC\_REF\_GET@{SPAN\_NAME\_DOC\_REF\_GET}!trace-\/util.js@{trace-\/util.js}}
+\doxysubsubsection{\texorpdfstring{SPAN\_NAME\_DOC\_REF\_GET}{SPAN\_NAME\_DOC\_REF\_GET}}
+{\footnotesize\ttfamily \label{trace-util_8js_aa251684b8f136b2396a946ff90384ddf} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} SPAN\+\_\+\+NAME\+\_\+\+DOC\+\_\+\+REF\+\_\+\+GET = \textquotesingle{}Document\+Reference.\+Get\textquotesingle{}}
+
+\Hypertarget{trace-util_8js_a359f410136f539cde52ddf9464e279fb}\index{trace-\/util.js@{trace-\/util.js}!SPAN\_NAME\_DOC\_REF\_LIST\_COLLECTIONS@{SPAN\_NAME\_DOC\_REF\_LIST\_COLLECTIONS}}
+\index{SPAN\_NAME\_DOC\_REF\_LIST\_COLLECTIONS@{SPAN\_NAME\_DOC\_REF\_LIST\_COLLECTIONS}!trace-\/util.js@{trace-\/util.js}}
+\doxysubsubsection{\texorpdfstring{SPAN\_NAME\_DOC\_REF\_LIST\_COLLECTIONS}{SPAN\_NAME\_DOC\_REF\_LIST\_COLLECTIONS}}
+{\footnotesize\ttfamily \label{trace-util_8js_a359f410136f539cde52ddf9464e279fb} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} SPAN\+\_\+\+NAME\+\_\+\+DOC\+\_\+\+REF\+\_\+\+LIST\+\_\+\+COLLECTIONS = \textquotesingle{}Document\+Reference.\+List\+Collections\textquotesingle{}}
+
+\Hypertarget{trace-util_8js_a8a3d294a53c1dfd27b7e62e47ef6e812}\index{trace-\/util.js@{trace-\/util.js}!SPAN\_NAME\_DOC\_REF\_SET@{SPAN\_NAME\_DOC\_REF\_SET}}
+\index{SPAN\_NAME\_DOC\_REF\_SET@{SPAN\_NAME\_DOC\_REF\_SET}!trace-\/util.js@{trace-\/util.js}}
+\doxysubsubsection{\texorpdfstring{SPAN\_NAME\_DOC\_REF\_SET}{SPAN\_NAME\_DOC\_REF\_SET}}
+{\footnotesize\ttfamily \label{trace-util_8js_a8a3d294a53c1dfd27b7e62e47ef6e812} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} SPAN\+\_\+\+NAME\+\_\+\+DOC\+\_\+\+REF\+\_\+\+SET = \textquotesingle{}\mbox{\hyperlink{__create_set_8js_ab9f46b8207185d305162498bea0d1c26}{Document\+Reference.\+Set}}\textquotesingle{}}
+
+\Hypertarget{trace-util_8js_a4f47be3b5abbe77ee72f0331a7925ae6}\index{trace-\/util.js@{trace-\/util.js}!SPAN\_NAME\_DOC\_REF\_UPDATE@{SPAN\_NAME\_DOC\_REF\_UPDATE}}
+\index{SPAN\_NAME\_DOC\_REF\_UPDATE@{SPAN\_NAME\_DOC\_REF\_UPDATE}!trace-\/util.js@{trace-\/util.js}}
+\doxysubsubsection{\texorpdfstring{SPAN\_NAME\_DOC\_REF\_UPDATE}{SPAN\_NAME\_DOC\_REF\_UPDATE}}
+{\footnotesize\ttfamily \label{trace-util_8js_a4f47be3b5abbe77ee72f0331a7925ae6} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} SPAN\+\_\+\+NAME\+\_\+\+DOC\+\_\+\+REF\+\_\+\+UPDATE = \textquotesingle{}Document\+Reference.\+Update\textquotesingle{}}
+
+\Hypertarget{trace-util_8js_a3af6f9e484d616c0c1be6dabbbf919bf}\index{trace-\/util.js@{trace-\/util.js}!SPAN\_NAME\_PARTITION\_QUERY@{SPAN\_NAME\_PARTITION\_QUERY}}
+\index{SPAN\_NAME\_PARTITION\_QUERY@{SPAN\_NAME\_PARTITION\_QUERY}!trace-\/util.js@{trace-\/util.js}}
+\doxysubsubsection{\texorpdfstring{SPAN\_NAME\_PARTITION\_QUERY}{SPAN\_NAME\_PARTITION\_QUERY}}
+{\footnotesize\ttfamily \label{trace-util_8js_a3af6f9e484d616c0c1be6dabbbf919bf} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} SPAN\+\_\+\+NAME\+\_\+\+PARTITION\+\_\+\+QUERY = \textquotesingle{}Partition\+Query\textquotesingle{}}
+
+\Hypertarget{trace-util_8js_a629baad809db2599c633c9de51940034}\index{trace-\/util.js@{trace-\/util.js}!SPAN\_NAME\_QUERY\_GET@{SPAN\_NAME\_QUERY\_GET}}
+\index{SPAN\_NAME\_QUERY\_GET@{SPAN\_NAME\_QUERY\_GET}!trace-\/util.js@{trace-\/util.js}}
+\doxysubsubsection{\texorpdfstring{SPAN\_NAME\_QUERY\_GET}{SPAN\_NAME\_QUERY\_GET}}
+{\footnotesize\ttfamily \label{trace-util_8js_a629baad809db2599c633c9de51940034} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} SPAN\+\_\+\+NAME\+\_\+\+QUERY\+\_\+\+GET = \textquotesingle{}Query.\+Get\textquotesingle{}}
+
+\Hypertarget{trace-util_8js_ad31d9f3caee608acd025190756f250ba}\index{trace-\/util.js@{trace-\/util.js}!SPAN\_NAME\_RUN\_AGGREGATION\_QUERY@{SPAN\_NAME\_RUN\_AGGREGATION\_QUERY}}
+\index{SPAN\_NAME\_RUN\_AGGREGATION\_QUERY@{SPAN\_NAME\_RUN\_AGGREGATION\_QUERY}!trace-\/util.js@{trace-\/util.js}}
+\doxysubsubsection{\texorpdfstring{SPAN\_NAME\_RUN\_AGGREGATION\_QUERY}{SPAN\_NAME\_RUN\_AGGREGATION\_QUERY}}
+{\footnotesize\ttfamily \label{trace-util_8js_ad31d9f3caee608acd025190756f250ba} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} SPAN\+\_\+\+NAME\+\_\+\+RUN\+\_\+\+AGGREGATION\+\_\+\+QUERY = \textquotesingle{}Run\+Aggregation\+Query\textquotesingle{}}
+
+\Hypertarget{trace-util_8js_a97d897ccaa50f136e341e8d2f188e748}\index{trace-\/util.js@{trace-\/util.js}!SPAN\_NAME\_RUN\_QUERY@{SPAN\_NAME\_RUN\_QUERY}}
+\index{SPAN\_NAME\_RUN\_QUERY@{SPAN\_NAME\_RUN\_QUERY}!trace-\/util.js@{trace-\/util.js}}
+\doxysubsubsection{\texorpdfstring{SPAN\_NAME\_RUN\_QUERY}{SPAN\_NAME\_RUN\_QUERY}}
+{\footnotesize\ttfamily \label{trace-util_8js_a97d897ccaa50f136e341e8d2f188e748} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} SPAN\+\_\+\+NAME\+\_\+\+RUN\+\_\+\+QUERY = \textquotesingle{}Run\+Query\textquotesingle{}}
+
+\Hypertarget{trace-util_8js_a27a24ce88612154d545faafaa78ddf7f}\index{trace-\/util.js@{trace-\/util.js}!SPAN\_NAME\_TRANSACTION\_COMMIT@{SPAN\_NAME\_TRANSACTION\_COMMIT}}
+\index{SPAN\_NAME\_TRANSACTION\_COMMIT@{SPAN\_NAME\_TRANSACTION\_COMMIT}!trace-\/util.js@{trace-\/util.js}}
+\doxysubsubsection{\texorpdfstring{SPAN\_NAME\_TRANSACTION\_COMMIT}{SPAN\_NAME\_TRANSACTION\_COMMIT}}
+{\footnotesize\ttfamily \label{trace-util_8js_a27a24ce88612154d545faafaa78ddf7f} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} SPAN\+\_\+\+NAME\+\_\+\+TRANSACTION\+\_\+\+COMMIT = \textquotesingle{}Transaction.\+Commit\textquotesingle{}}
+
+\Hypertarget{trace-util_8js_a8953bbf3d916efd6c1622bd05e869103}\index{trace-\/util.js@{trace-\/util.js}!SPAN\_NAME\_TRANSACTION\_GET\_AGGREGATION\_QUERY@{SPAN\_NAME\_TRANSACTION\_GET\_AGGREGATION\_QUERY}}
+\index{SPAN\_NAME\_TRANSACTION\_GET\_AGGREGATION\_QUERY@{SPAN\_NAME\_TRANSACTION\_GET\_AGGREGATION\_QUERY}!trace-\/util.js@{trace-\/util.js}}
+\doxysubsubsection{\texorpdfstring{SPAN\_NAME\_TRANSACTION\_GET\_AGGREGATION\_QUERY}{SPAN\_NAME\_TRANSACTION\_GET\_AGGREGATION\_QUERY}}
+{\footnotesize\ttfamily \label{trace-util_8js_a8953bbf3d916efd6c1622bd05e869103} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} SPAN\+\_\+\+NAME\+\_\+\+TRANSACTION\+\_\+\+GET\+\_\+\+AGGREGATION\+\_\+\+QUERY = \textquotesingle{}Transaction.\+Get.\+Aggregation\+Query\textquotesingle{}}
+
+\Hypertarget{trace-util_8js_abcdb6125e726305a401b19fce92da0ec}\index{trace-\/util.js@{trace-\/util.js}!SPAN\_NAME\_TRANSACTION\_GET\_DOCUMENT@{SPAN\_NAME\_TRANSACTION\_GET\_DOCUMENT}}
+\index{SPAN\_NAME\_TRANSACTION\_GET\_DOCUMENT@{SPAN\_NAME\_TRANSACTION\_GET\_DOCUMENT}!trace-\/util.js@{trace-\/util.js}}
+\doxysubsubsection{\texorpdfstring{SPAN\_NAME\_TRANSACTION\_GET\_DOCUMENT}{SPAN\_NAME\_TRANSACTION\_GET\_DOCUMENT}}
+{\footnotesize\ttfamily \label{trace-util_8js_abcdb6125e726305a401b19fce92da0ec} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} SPAN\+\_\+\+NAME\+\_\+\+TRANSACTION\+\_\+\+GET\+\_\+\+DOCUMENT = \textquotesingle{}Transaction.\+Get.\+Document\textquotesingle{}}
+
+\Hypertarget{trace-util_8js_ae20fc2bc3148e9ac3d705c85dbac0ca7}\index{trace-\/util.js@{trace-\/util.js}!SPAN\_NAME\_TRANSACTION\_GET\_DOCUMENTS@{SPAN\_NAME\_TRANSACTION\_GET\_DOCUMENTS}}
+\index{SPAN\_NAME\_TRANSACTION\_GET\_DOCUMENTS@{SPAN\_NAME\_TRANSACTION\_GET\_DOCUMENTS}!trace-\/util.js@{trace-\/util.js}}
+\doxysubsubsection{\texorpdfstring{SPAN\_NAME\_TRANSACTION\_GET\_DOCUMENTS}{SPAN\_NAME\_TRANSACTION\_GET\_DOCUMENTS}}
+{\footnotesize\ttfamily \label{trace-util_8js_ae20fc2bc3148e9ac3d705c85dbac0ca7} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} SPAN\+\_\+\+NAME\+\_\+\+TRANSACTION\+\_\+\+GET\+\_\+\+DOCUMENTS = \textquotesingle{}Transaction.\+Get.\+Documents\textquotesingle{}}
+
+\Hypertarget{trace-util_8js_a83e4e611ecc2600ca19b706b8f1aeeb2}\index{trace-\/util.js@{trace-\/util.js}!SPAN\_NAME\_TRANSACTION\_GET\_QUERY@{SPAN\_NAME\_TRANSACTION\_GET\_QUERY}}
+\index{SPAN\_NAME\_TRANSACTION\_GET\_QUERY@{SPAN\_NAME\_TRANSACTION\_GET\_QUERY}!trace-\/util.js@{trace-\/util.js}}
+\doxysubsubsection{\texorpdfstring{SPAN\_NAME\_TRANSACTION\_GET\_QUERY}{SPAN\_NAME\_TRANSACTION\_GET\_QUERY}}
+{\footnotesize\ttfamily \label{trace-util_8js_a83e4e611ecc2600ca19b706b8f1aeeb2} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} SPAN\+\_\+\+NAME\+\_\+\+TRANSACTION\+\_\+\+GET\+\_\+\+QUERY = \textquotesingle{}Transaction.\+Get.\+Query\textquotesingle{}}
+
+\Hypertarget{trace-util_8js_ad1f5dd3f2efec10c6d1b0677f5ca86d6}\index{trace-\/util.js@{trace-\/util.js}!SPAN\_NAME\_TRANSACTION\_ROLLBACK@{SPAN\_NAME\_TRANSACTION\_ROLLBACK}}
+\index{SPAN\_NAME\_TRANSACTION\_ROLLBACK@{SPAN\_NAME\_TRANSACTION\_ROLLBACK}!trace-\/util.js@{trace-\/util.js}}
+\doxysubsubsection{\texorpdfstring{SPAN\_NAME\_TRANSACTION\_ROLLBACK}{SPAN\_NAME\_TRANSACTION\_ROLLBACK}}
+{\footnotesize\ttfamily \label{trace-util_8js_ad1f5dd3f2efec10c6d1b0677f5ca86d6} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} SPAN\+\_\+\+NAME\+\_\+\+TRANSACTION\+\_\+\+ROLLBACK = \textquotesingle{}Transaction.\+Rollback\textquotesingle{}}
+
+\Hypertarget{trace-util_8js_a6e7c9f3b4258821ed10d603afb6b09f7}\index{trace-\/util.js@{trace-\/util.js}!SPAN\_NAME\_TRANSACTION\_RUN@{SPAN\_NAME\_TRANSACTION\_RUN}}
+\index{SPAN\_NAME\_TRANSACTION\_RUN@{SPAN\_NAME\_TRANSACTION\_RUN}!trace-\/util.js@{trace-\/util.js}}
+\doxysubsubsection{\texorpdfstring{SPAN\_NAME\_TRANSACTION\_RUN}{SPAN\_NAME\_TRANSACTION\_RUN}}
+{\footnotesize\ttfamily \label{trace-util_8js_a6e7c9f3b4258821ed10d603afb6b09f7} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} SPAN\+\_\+\+NAME\+\_\+\+TRANSACTION\+\_\+\+RUN = \textquotesingle{}Transaction.\+Run\textquotesingle{}}
+
+\Hypertarget{trace-util_8js_ae2475e10618961c050dcba04e8c42331}\index{trace-\/util.js@{trace-\/util.js}!strict@{strict}}
+\index{strict@{strict}!trace-\/util.js@{trace-\/util.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{trace-util_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+

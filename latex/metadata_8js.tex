@@ -1,0 +1,198 @@
+\doxysection{backend/node\+\_\+modules/@grpc/grpc-\/js/build/src/metadata.js File Reference}
+\hypertarget{metadata_8js}{}\label{metadata_8js}\index{backend/node\_modules/"@grpc/grpc-\/js/build/src/metadata.js@{backend/node\_modules/"@grpc/grpc-\/js/build/src/metadata.js}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_metadata}{Metadata}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{metadata_8js_a2b279966091f394af279d0d72ece7606}{is\+Legal\+Key}} (key)
+\item 
+function \mbox{\hyperlink{metadata_8js_a767e1dfd313ef5ed1b0307cbaf521b20}{is\+Legal\+Non\+Binary\+Value}} (\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}})
+\item 
+function \mbox{\hyperlink{metadata_8js_af326dd3d84d7dbf22a7ace36c7c51aac}{is\+Binary\+Key}} (key)
+\item 
+function \mbox{\hyperlink{metadata_8js_aaf8ff6ada2be57409cd22a5584152ffb}{is\+Custom\+Metadata}} (key)
+\item 
+function \mbox{\hyperlink{metadata_8js_ab4b36e3be6065c2c4e129fbbf6a5b55e}{normalize\+Key}} (key)
+\item 
+function \mbox{\hyperlink{metadata_8js_aeb838895974ed9d49368338de733f096}{validate}} (key, \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{metadata_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{metadata_8js_a84305cdf6591dfbc3127e70173fd204c}{Metadata}} = void 0
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{metadata_8js_ab3854fba8b19fab451a21ca34f1af97c}{logging\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./logging"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{metadata_8js_ad33cb6840349d3bc93f4fe9de15a6f8f}{constants\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./constants"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{metadata_8js_af1a99a3ff1a35c114bdd06cc7252beb6}{error\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./error"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{metadata_8js_a70be0921eec2c39e8c3942205fefb070}{LEGAL\+\_\+\+KEY\+\_\+\+REGEX}} = /\texorpdfstring{$^\wedge$}{\string^}\mbox{[}0-\/9\mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}-\/z\+\_\+.-\/\mbox{]}+\$/
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{metadata_8js_a01a853b80f58d0d48b0f9eea98b64e54}{LEGAL\+\_\+\+NON\+\_\+\+BINARY\+\_\+\+VALUE\+\_\+\+REGEX}} = /\texorpdfstring{$^\wedge$}{\string^}\mbox{[} -\/\texorpdfstring{$\sim$}{\string~}\mbox{]}\texorpdfstring{$\ast$}{*}\$/
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{metadata_8js_aa49f25cbc1b0d1962e43657df5a074de}{buf\+To\+String}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{metadata_8js_af326dd3d84d7dbf22a7ace36c7c51aac}\index{metadata.js@{metadata.js}!isBinaryKey@{isBinaryKey}}
+\index{isBinaryKey@{isBinaryKey}!metadata.js@{metadata.js}}
+\doxysubsubsection{\texorpdfstring{isBinaryKey()}{isBinaryKey()}}
+{\footnotesize\ttfamily \label{metadata_8js_af326dd3d84d7dbf22a7ace36c7c51aac} 
+function is\+Binary\+Key (\begin{DoxyParamCaption}\item[{}]{key}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{metadata_8js_af326dd3d84d7dbf22a7ace36c7c51aac_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{metadata_8js_aaf8ff6ada2be57409cd22a5584152ffb}\index{metadata.js@{metadata.js}!isCustomMetadata@{isCustomMetadata}}
+\index{isCustomMetadata@{isCustomMetadata}!metadata.js@{metadata.js}}
+\doxysubsubsection{\texorpdfstring{isCustomMetadata()}{isCustomMetadata()}}
+{\footnotesize\ttfamily \label{metadata_8js_aaf8ff6ada2be57409cd22a5584152ffb} 
+function is\+Custom\+Metadata (\begin{DoxyParamCaption}\item[{}]{key}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{metadata_8js_aaf8ff6ada2be57409cd22a5584152ffb_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{metadata_8js_a2b279966091f394af279d0d72ece7606}\index{metadata.js@{metadata.js}!isLegalKey@{isLegalKey}}
+\index{isLegalKey@{isLegalKey}!metadata.js@{metadata.js}}
+\doxysubsubsection{\texorpdfstring{isLegalKey()}{isLegalKey()}}
+{\footnotesize\ttfamily \label{metadata_8js_a2b279966091f394af279d0d72ece7606} 
+function is\+Legal\+Key (\begin{DoxyParamCaption}\item[{}]{key}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{metadata_8js_a70be0921eec2c39e8c3942205fefb070}{LEGAL\+\_\+\+KEY\+\_\+\+REGEX}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{metadata_8js_a2b279966091f394af279d0d72ece7606_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{metadata_8js_a767e1dfd313ef5ed1b0307cbaf521b20}\index{metadata.js@{metadata.js}!isLegalNonBinaryValue@{isLegalNonBinaryValue}}
+\index{isLegalNonBinaryValue@{isLegalNonBinaryValue}!metadata.js@{metadata.js}}
+\doxysubsubsection{\texorpdfstring{isLegalNonBinaryValue()}{isLegalNonBinaryValue()}}
+{\footnotesize\ttfamily \label{metadata_8js_a767e1dfd313ef5ed1b0307cbaf521b20} 
+function is\+Legal\+Non\+Binary\+Value (\begin{DoxyParamCaption}\item[{}]{value}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{metadata_8js_a01a853b80f58d0d48b0f9eea98b64e54}{LEGAL\+\_\+\+NON\+\_\+\+BINARY\+\_\+\+VALUE\+\_\+\+REGEX}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{metadata_8js_a767e1dfd313ef5ed1b0307cbaf521b20_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{metadata_8js_ab4b36e3be6065c2c4e129fbbf6a5b55e}\index{metadata.js@{metadata.js}!normalizeKey@{normalizeKey}}
+\index{normalizeKey@{normalizeKey}!metadata.js@{metadata.js}}
+\doxysubsubsection{\texorpdfstring{normalizeKey()}{normalizeKey()}}
+{\footnotesize\ttfamily \label{metadata_8js_ab4b36e3be6065c2c4e129fbbf6a5b55e} 
+function normalize\+Key (\begin{DoxyParamCaption}\item[{}]{key}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{metadata_8js_ab4b36e3be6065c2c4e129fbbf6a5b55e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{metadata_8js_aeb838895974ed9d49368338de733f096}\index{metadata.js@{metadata.js}!validate@{validate}}
+\index{validate@{validate}!metadata.js@{metadata.js}}
+\doxysubsubsection{\texorpdfstring{validate()}{validate()}}
+{\footnotesize\ttfamily \label{metadata_8js_aeb838895974ed9d49368338de733f096} 
+function validate (\begin{DoxyParamCaption}\item[{}]{key}{, }\item[{}]{value}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{metadata_8js_af326dd3d84d7dbf22a7ace36c7c51aac}{is\+Binary\+Key()}}, \mbox{\hyperlink{metadata_8js_a2b279966091f394af279d0d72ece7606}{is\+Legal\+Key()}}, \mbox{\hyperlink{metadata_8js_a767e1dfd313ef5ed1b0307cbaf521b20}{is\+Legal\+Non\+Binary\+Value()}}, \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{metadata_8js_aeb838895974ed9d49368338de733f096_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{metadata_8js_aa49f25cbc1b0d1962e43657df5a074de}\index{metadata.js@{metadata.js}!bufToString@{bufToString}}
+\index{bufToString@{bufToString}!metadata.js@{metadata.js}}
+\doxysubsubsection{\texorpdfstring{bufToString}{bufToString}}
+{\footnotesize\ttfamily \label{metadata_8js_aa49f25cbc1b0d1962e43657df5a074de} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} buf\+To\+String}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ (val)\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{interface_buffer}{Buffer}}.isBuffer(val)\ ?\ val.toString(\textcolor{stringliteral}{'base64'})\ :\ val;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{metadata_8js_ad33cb6840349d3bc93f4fe9de15a6f8f}\index{metadata.js@{metadata.js}!constants\_1@{constants\_1}}
+\index{constants\_1@{constants\_1}!metadata.js@{metadata.js}}
+\doxysubsubsection{\texorpdfstring{constants\_1}{constants\_1}}
+{\footnotesize\ttfamily \label{metadata_8js_ad33cb6840349d3bc93f4fe9de15a6f8f} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} constants\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./constants"{})}
+
+\Hypertarget{metadata_8js_af1a99a3ff1a35c114bdd06cc7252beb6}\index{metadata.js@{metadata.js}!error\_1@{error\_1}}
+\index{error\_1@{error\_1}!metadata.js@{metadata.js}}
+\doxysubsubsection{\texorpdfstring{error\_1}{error\_1}}
+{\footnotesize\ttfamily \label{metadata_8js_af1a99a3ff1a35c114bdd06cc7252beb6} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} error\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./error"{})}
+
+\Hypertarget{metadata_8js_a70be0921eec2c39e8c3942205fefb070}\index{metadata.js@{metadata.js}!LEGAL\_KEY\_REGEX@{LEGAL\_KEY\_REGEX}}
+\index{LEGAL\_KEY\_REGEX@{LEGAL\_KEY\_REGEX}!metadata.js@{metadata.js}}
+\doxysubsubsection{\texorpdfstring{LEGAL\_KEY\_REGEX}{LEGAL\_KEY\_REGEX}}
+{\footnotesize\ttfamily \label{metadata_8js_a70be0921eec2c39e8c3942205fefb070} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} LEGAL\+\_\+\+KEY\+\_\+\+REGEX = /\texorpdfstring{$^\wedge$}{\string^}\mbox{[}0-\/9\mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}-\/z\+\_\+.-\/\mbox{]}+\$/}
+
+\Hypertarget{metadata_8js_a01a853b80f58d0d48b0f9eea98b64e54}\index{metadata.js@{metadata.js}!LEGAL\_NON\_BINARY\_VALUE\_REGEX@{LEGAL\_NON\_BINARY\_VALUE\_REGEX}}
+\index{LEGAL\_NON\_BINARY\_VALUE\_REGEX@{LEGAL\_NON\_BINARY\_VALUE\_REGEX}!metadata.js@{metadata.js}}
+\doxysubsubsection{\texorpdfstring{LEGAL\_NON\_BINARY\_VALUE\_REGEX}{LEGAL\_NON\_BINARY\_VALUE\_REGEX}}
+{\footnotesize\ttfamily \label{metadata_8js_a01a853b80f58d0d48b0f9eea98b64e54} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} LEGAL\+\_\+\+NON\+\_\+\+BINARY\+\_\+\+VALUE\+\_\+\+REGEX = /\texorpdfstring{$^\wedge$}{\string^}\mbox{[} -\/\texorpdfstring{$\sim$}{\string~}\mbox{]}\texorpdfstring{$\ast$}{*}\$/}
+
+\Hypertarget{metadata_8js_ab3854fba8b19fab451a21ca34f1af97c}\index{metadata.js@{metadata.js}!logging\_1@{logging\_1}}
+\index{logging\_1@{logging\_1}!metadata.js@{metadata.js}}
+\doxysubsubsection{\texorpdfstring{logging\_1}{logging\_1}}
+{\footnotesize\ttfamily \label{metadata_8js_ab3854fba8b19fab451a21ca34f1af97c} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} logging\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./logging"{})}
+
+\Hypertarget{metadata_8js_a84305cdf6591dfbc3127e70173fd204c}\index{metadata.js@{metadata.js}!Metadata@{Metadata}}
+\index{Metadata@{Metadata}!metadata.js@{metadata.js}}
+\doxysubsubsection{\texorpdfstring{Metadata}{Metadata}}
+{\footnotesize\ttfamily \label{metadata_8js_a84305cdf6591dfbc3127e70173fd204c} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} Metadata = void 0}
+
+along with the operation. \Hypertarget{metadata_8js_ae2475e10618961c050dcba04e8c42331}\index{metadata.js@{metadata.js}!strict@{strict}}
+\index{strict@{strict}!metadata.js@{metadata.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{metadata_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+

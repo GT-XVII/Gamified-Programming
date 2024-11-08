@@ -1,0 +1,111 @@
+\doxysection{backend/node\+\_\+modules/asynckit/bench.js File Reference}
+\hypertarget{bench_8js}{}\label{bench_8js}\index{backend/node\_modules/asynckit/bench.js@{backend/node\_modules/asynckit/bench.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{bench_8js_aa391c7d5b8a703f32ecf1374a21a5e99}{for}} (var z=1;z$<$ 100;z++)
+\item 
+\mbox{\hyperlink{bench_8js_a35d334f92e70a1f5bfe1ffcdbe6055f2}{suite}} \mbox{\hyperlink{bench_8js_a0a8cc40718d9a55ac8d3a5c2415b3cc1}{add}} (\textquotesingle{}\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af0ed083046515bb220ecbeab418ed9d4}{async.\+map}}\textquotesingle{}, function(\mbox{\hyperlink{bench_8js_a0dfcfb33f2dbb1cc3eded9bc1ad4aa22}{deferred}}) \{ var total=0;\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af0ed083046515bb220ecbeab418ed9d4}{async.\+map}}(\mbox{\hyperlink{bench_8js_a4f85c6ae2a8cdd19ca9b7006b1860d40}{source}}, function(\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}, cb) \{ \mbox{\hyperlink{rxjs_8umd_8js_a5008ba0c81d22f889926a449c993ac53}{set\+Immediate}}(function() \{ total+=\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}};cb(null, total);\});\}, function(err, \mbox{\hyperlink{lodash_2core_8js_a348c112a244660a2f280cda892658c24}{result}}) \{ assert.\+if\+Error(err);assert.\+equal(\mbox{\hyperlink{lodash_2core_8js_a348c112a244660a2f280cda892658c24}{result}}\mbox{[}\mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a7fdcf4c82c9946bf2b0b80829a7ab230}{result.\+length}} -\/ 1\mbox{]}, \mbox{\hyperlink{bench_8js_a758587d8718823d0194f29b3b8442863}{expected}});\mbox{\hyperlink{_0dprotobufjs_2path_2index_8js_a2001ea102ec496ebdabe15e68493427a}{deferred.\+resolve}}();\});\}, \{ \textquotesingle{}\mbox{\hyperlink{asynckit_2lib_2async_8js_ac0bde79ec46fe1a8e275eb407e41bfad}{defer}}\textquotesingle{}\+:true\}) .add(\textquotesingle{}\mbox{\hyperlink{readable__parallel_8js_aaf397ba3bd0dadaa84dfae01e76f716a}{asynckit.\+parallel}}\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{bench_8js_a07b85203c5cae55aebd1c1aeea509a49}{asynckit}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\textquotesingle{})
+\item 
+var \mbox{\hyperlink{bench_8js_a8a58c0ef8ca44edf99e5325df2dcf083}{async}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}async\textquotesingle{})
+\item 
+var \mbox{\hyperlink{bench_8js_a5e95655c9188700b16a5488897cecb90}{assert}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}assert\textquotesingle{})
+\item 
+var \mbox{\hyperlink{bench_8js_a758587d8718823d0194f29b3b8442863}{expected}} = 0
+\item 
+var \mbox{\hyperlink{bench_8js_a2b174dc07df70960317f3c7c9c6a13f9}{Benchmark}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}\mbox{\hyperlink{suite_8js_a9a6346cac7f7b8506d7d1b62bcfa71cf}{benchmark}}\textquotesingle{})
+\item 
+var \mbox{\hyperlink{bench_8js_a35d334f92e70a1f5bfe1ffcdbe6055f2}{suite}} = new Benchmark.\+Suite
+\item 
+var \mbox{\hyperlink{bench_8js_a4f85c6ae2a8cdd19ca9b7006b1860d40}{source}} = \mbox{[}$\,$\mbox{]}
+\item 
+function \mbox{\hyperlink{bench_8js_a0dfcfb33f2dbb1cc3eded9bc1ad4aa22}{deferred}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{bench_8js_a0a8cc40718d9a55ac8d3a5c2415b3cc1}\index{bench.js@{bench.js}!add@{add}}
+\index{add@{add}!bench.js@{bench.js}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \label{bench_8js_a0a8cc40718d9a55ac8d3a5c2415b3cc1} 
+\mbox{\hyperlink{bench_8js_a35d334f92e70a1f5bfe1ffcdbe6055f2}{suite}} add (\begin{DoxyParamCaption}\item[{}]{\textquotesingle{}async.\+map\textquotesingle{}}{, }\item[{}]{function(deferred) \{ var total=0;async.\+map(source, function(i, cb) \{ set\+Immediate(function() \{ total+=i;cb(null, total);\});\}, function(err, result) \{ assert.\+if\+Error(err);assert.\+equal(result\mbox{[}result.\+length -\/ 1\mbox{]}, expected);deferred.\+resolve();\});\}}{, }\item[{}]{\{ \textquotesingle{}defer\textquotesingle{}\+:true\}}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{bench_8js_a5e95655c9188700b16a5488897cecb90}{assert}}, \mbox{\hyperlink{bench_8js_a8a58c0ef8ca44edf99e5325df2dcf083}{async}}, \mbox{\hyperlink{bench_8js_a0dfcfb33f2dbb1cc3eded9bc1ad4aa22}{deferred}}, \mbox{\hyperlink{bench_8js_a758587d8718823d0194f29b3b8442863}{expected}}, \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}, \mbox{\hyperlink{lodash_2core_8js_a348c112a244660a2f280cda892658c24}{result}}, \mbox{\hyperlink{rxjs_8umd_8js_a5008ba0c81d22f889926a449c993ac53}{set\+Immediate}}, and \mbox{\hyperlink{bench_8js_a4f85c6ae2a8cdd19ca9b7006b1860d40}{source}}.
+
+\Hypertarget{bench_8js_aa391c7d5b8a703f32ecf1374a21a5e99}\index{bench.js@{bench.js}!for@{for}}
+\index{for@{for}!bench.js@{bench.js}}
+\doxysubsubsection{\texorpdfstring{for()}{for()}}
+{\footnotesize\ttfamily \label{bench_8js_aa391c7d5b8a703f32ecf1374a21a5e99} 
+for (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{bench_8js_a758587d8718823d0194f29b3b8442863}{expected}}, and \mbox{\hyperlink{bench_8js_a4f85c6ae2a8cdd19ca9b7006b1860d40}{source}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{bench_8js_a5e95655c9188700b16a5488897cecb90}\index{bench.js@{bench.js}!assert@{assert}}
+\index{assert@{assert}!bench.js@{bench.js}}
+\doxysubsubsection{\texorpdfstring{assert}{assert}}
+{\footnotesize\ttfamily \label{bench_8js_a5e95655c9188700b16a5488897cecb90} 
+var assert = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}assert\textquotesingle{})}
+
+\Hypertarget{bench_8js_a8a58c0ef8ca44edf99e5325df2dcf083}\index{bench.js@{bench.js}!async@{async}}
+\index{async@{async}!bench.js@{bench.js}}
+\doxysubsubsection{\texorpdfstring{async}{async}}
+{\footnotesize\ttfamily \label{bench_8js_a8a58c0ef8ca44edf99e5325df2dcf083} 
+var async = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}async\textquotesingle{})}
+
+\Hypertarget{bench_8js_a07b85203c5cae55aebd1c1aeea509a49}\index{bench.js@{bench.js}!asynckit@{asynckit}}
+\index{asynckit@{asynckit}!bench.js@{bench.js}}
+\doxysubsubsection{\texorpdfstring{asynckit}{asynckit}}
+{\footnotesize\ttfamily \label{bench_8js_a07b85203c5cae55aebd1c1aeea509a49} 
+var asynckit = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\textquotesingle{})}
+
+\Hypertarget{bench_8js_a2b174dc07df70960317f3c7c9c6a13f9}\index{bench.js@{bench.js}!Benchmark@{Benchmark}}
+\index{Benchmark@{Benchmark}!bench.js@{bench.js}}
+\doxysubsubsection{\texorpdfstring{Benchmark}{Benchmark}}
+{\footnotesize\ttfamily \label{bench_8js_a2b174dc07df70960317f3c7c9c6a13f9} 
+var Benchmark = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}\mbox{\hyperlink{suite_8js_a9a6346cac7f7b8506d7d1b62bcfa71cf}{benchmark}}\textquotesingle{})}
+
+\Hypertarget{bench_8js_a0dfcfb33f2dbb1cc3eded9bc1ad4aa22}\index{bench.js@{bench.js}!deferred@{deferred}}
+\index{deferred@{deferred}!bench.js@{bench.js}}
+\doxysubsubsection{\texorpdfstring{deferred}{deferred}}
+{\footnotesize\ttfamily \label{bench_8js_a0dfcfb33f2dbb1cc3eded9bc1ad4aa22} 
+function deferred}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ var\ total\ =\ 0}
+
+\end{DoxyCode}
+\Hypertarget{bench_8js_a758587d8718823d0194f29b3b8442863}\index{bench.js@{bench.js}!expected@{expected}}
+\index{expected@{expected}!bench.js@{bench.js}}
+\doxysubsubsection{\texorpdfstring{expected}{expected}}
+{\footnotesize\ttfamily \label{bench_8js_a758587d8718823d0194f29b3b8442863} 
+var expected = 0}
+
+\Hypertarget{bench_8js_a4f85c6ae2a8cdd19ca9b7006b1860d40}\index{bench.js@{bench.js}!source@{source}}
+\index{source@{source}!bench.js@{bench.js}}
+\doxysubsubsection{\texorpdfstring{source}{source}}
+{\footnotesize\ttfamily \label{bench_8js_a4f85c6ae2a8cdd19ca9b7006b1860d40} 
+var source = \mbox{[}$\,$\mbox{]}}
+
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_b5dee8a239cc08d6f7139042dbf512f5}{/\+Users/nicoletiokhin/\+Desktop/\+Software Semester 3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/firebase-\/admin/lib/security-\/rules/security-\/rules.\+js}}.\end{Desc}
+\Hypertarget{bench_8js_a35d334f92e70a1f5bfe1ffcdbe6055f2}\index{bench.js@{bench.js}!suite@{suite}}
+\index{suite@{suite}!bench.js@{bench.js}}
+\doxysubsubsection{\texorpdfstring{suite}{suite}}
+{\footnotesize\ttfamily \label{bench_8js_a35d334f92e70a1f5bfe1ffcdbe6055f2} 
+var suite = new Benchmark.\+Suite}
+

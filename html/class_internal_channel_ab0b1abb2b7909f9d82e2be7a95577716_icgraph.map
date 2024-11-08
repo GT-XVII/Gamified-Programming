@@ -1,0 +1,14 @@
+<map id="InternalChannel::enterIdle" name="InternalChannel::enterIdle">
+<area shape="rect" id="Node000001" title=" " alt="" coords="1001,42,1171,68"/>
+<area shape="rect" id="Node000002" href="$class_internal_channel.html#a200c4334efb064f4fdefbf1655186eca" title=" " alt="" coords="785,35,953,75"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="985,58,953,58,953,52,985,52"/>
+<area shape="poly" id="edge6_Node000002_Node000002" title=" " alt="" coords="904,21,891,16,869,13,848,15,836,20,831,26,833,33,828,35,826,25,833,16,847,10,869,8,893,10,906,17"/>
+<area shape="rect" id="Node000003" href="$class_internal_channel.html#a402eac0e13cf705d15c6b570e271f67f" title=" " alt="" coords="550,35,737,75"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="769,58,738,58,738,52,769,52"/>
+<area shape="rect" id="Node000004" href="$class_internal_channel.html#a44c059512ebb43b9c2014ed1a263d1eb" title=" " alt="" coords="291,5,502,46"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="534,45,502,41,503,36,535,39"/>
+<area shape="rect" id="Node000005" href="$class_internal_channel.html#a9eda58755827f333bdba1ec8ec451972" title=" " alt="" coords="306,70,486,96"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="535,70,487,75,487,70,534,65"/>
+<area shape="rect" id="Node000006" href="$class_internal_channel.html#aba80a113ec975c8bb4ebe9b1a7223969" title=" " alt="" coords="5,70,243,96"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="290,86,243,86,243,80,290,80"/>
+</map>

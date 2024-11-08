@@ -1,0 +1,9 @@
+<map id="FirestoreService::app" name="FirestoreService::app">
+<area shape="rect" id="Node000001" title=" " alt="" coords="252,55,397,80"/>
+<area shape="rect" id="Node000002" href="$class_firestore_service.html#a367da92f38146c585d16f7be0d631d19" title=" " alt="" coords="10,5,199,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="248,53,165,34,166,29,249,48"/>
+<area shape="rect" id="Node000003" href="$class_firestore_service.html#aaa7549002ae67804288f50e76e81f300" title=" " alt="" coords="5,55,204,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="236,70,204,70,204,65,236,65"/>
+<area shape="rect" id="Node000004" href="$class_firestore_service.html#a10a916fb8c89baf87234904aec0eb3d1" title=" " alt="" coords="19,104,190,145"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="258,87,186,106,185,101,257,82"/>
+</map>

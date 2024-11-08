@@ -1,0 +1,107 @@
+\doxysection{backend/node\+\_\+modules/firebase-\/admin/lib/installations/installations-\/request-\/handler.js File Reference}
+\hypertarget{installations-request-handler_8js}{}\label{installations-request-handler_8js}\index{backend/node\_modules/firebase-\/admin/lib/installations/installations-\/request-\/handler.js@{backend/node\_modules/firebase-\/admin/lib/installations/installations-\/request-\/handler.js}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_firebase_installations_request_handler}{Firebase\+Installations\+Request\+Handler}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{installations-request-handler_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{installations-request-handler_8js_a740d3563fde88b17a3229f5e6ebb2715}{Firebase\+Installations\+Request\+Handler}} = void 0
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{installations-request-handler_8js_af1a99a3ff1a35c114bdd06cc7252beb6}{error\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/error"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{installations-request-handler_8js_a73dd1e6f0bc0a0234576ddef2bbe0452}{api\+\_\+request\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}}-\/request"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{installations-request-handler_8js_a022e926a40defc4294368e708a7e2372}{utils}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/index"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{installations-request-handler_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/validator"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{installations-request-handler_8js_ad013b205201124e542aae0cfdb005797}{FIREBASE\+\_\+\+IID\+\_\+\+HOST}} = \textquotesingle{}console.\+firebase.\+google.\+com\textquotesingle{}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{installations-request-handler_8js_ac12c3c17f5c0ddf8b9a3359d993df07b}{FIREBASE\+\_\+\+IID\+\_\+\+PATH}} = \textquotesingle{}/\mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2uuid_2dist_2esm-browser_2v1_8js_a32c2d9d82f64ce86ca1da30b62dd1482}{v1}}/\textquotesingle{}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{installations-request-handler_8js_ae4d10bfd69812e50748c9b162ed0724c}{FIREBASE\+\_\+\+IID\+\_\+\+TIMEOUT}} = 10000
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{installations-request-handler_8js_ab239c39a43bc486f296c70950203c511}{ERROR\+\_\+\+CODES}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{installations-request-handler_8js_a73dd1e6f0bc0a0234576ddef2bbe0452}\index{installations-\/request-\/handler.js@{installations-\/request-\/handler.js}!api\_request\_1@{api\_request\_1}}
+\index{api\_request\_1@{api\_request\_1}!installations-\/request-\/handler.js@{installations-\/request-\/handler.js}}
+\doxysubsubsection{\texorpdfstring{api\_request\_1}{api\_request\_1}}
+{\footnotesize\ttfamily \label{installations-request-handler_8js_a73dd1e6f0bc0a0234576ddef2bbe0452} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} api\+\_\+request\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}}-\/request"{})}
+
+\Hypertarget{installations-request-handler_8js_af1a99a3ff1a35c114bdd06cc7252beb6}\index{installations-\/request-\/handler.js@{installations-\/request-\/handler.js}!error\_1@{error\_1}}
+\index{error\_1@{error\_1}!installations-\/request-\/handler.js@{installations-\/request-\/handler.js}}
+\doxysubsubsection{\texorpdfstring{error\_1}{error\_1}}
+{\footnotesize\ttfamily \label{installations-request-handler_8js_af1a99a3ff1a35c114bdd06cc7252beb6} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} error\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/error"{})}
+
+\Hypertarget{installations-request-handler_8js_ab239c39a43bc486f296c70950203c511}\index{installations-\/request-\/handler.js@{installations-\/request-\/handler.js}!ERROR\_CODES@{ERROR\_CODES}}
+\index{ERROR\_CODES@{ERROR\_CODES}!installations-\/request-\/handler.js@{installations-\/request-\/handler.js}}
+\doxysubsubsection{\texorpdfstring{ERROR\_CODES}{ERROR\_CODES}}
+{\footnotesize\ttfamily \label{installations-request-handler_8js_ab239c39a43bc486f296c70950203c511} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} ERROR\+\_\+\+CODES}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \ \ 400:\ \textcolor{stringliteral}{'Malformed\ installation\ ID\ argument.'},}
+\DoxyCodeLine{\ \ \ \ 401:\ \textcolor{stringliteral}{'Request\ not\ authorized.'},}
+\DoxyCodeLine{\ \ \ \ 403:\ \textcolor{stringliteral}{'Project\ does\ not\ match\ installation\ ID\ or\ the\ client\ does\ not\ have\ sufficient\ privileges.'},}
+\DoxyCodeLine{\ \ \ \ 404:\ \textcolor{stringliteral}{'Failed\ to\ find\ the\ installation\ ID.'},}
+\DoxyCodeLine{\ \ \ \ 409:\ \textcolor{stringliteral}{'Already\ deleted.'},}
+\DoxyCodeLine{\ \ \ \ 429:\ \textcolor{stringliteral}{'Request\ throttled\ out\ by\ the\ backend\ server.'},}
+\DoxyCodeLine{\ \ \ \ 500:\ \textcolor{stringliteral}{'Internal\ server\ error.'},}
+\DoxyCodeLine{\ \ \ \ 503:\ \textcolor{stringliteral}{'Backend\ servers\ are\ over\ capacity.\ Try\ again\ later.'},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+HTTP error codes raised by the backend server. \Hypertarget{installations-request-handler_8js_ad013b205201124e542aae0cfdb005797}\index{installations-\/request-\/handler.js@{installations-\/request-\/handler.js}!FIREBASE\_IID\_HOST@{FIREBASE\_IID\_HOST}}
+\index{FIREBASE\_IID\_HOST@{FIREBASE\_IID\_HOST}!installations-\/request-\/handler.js@{installations-\/request-\/handler.js}}
+\doxysubsubsection{\texorpdfstring{FIREBASE\_IID\_HOST}{FIREBASE\_IID\_HOST}}
+{\footnotesize\ttfamily \label{installations-request-handler_8js_ad013b205201124e542aae0cfdb005797} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} FIREBASE\+\_\+\+IID\+\_\+\+HOST = \textquotesingle{}console.\+firebase.\+google.\+com\textquotesingle{}}
+
+Firebase IID backend host. \Hypertarget{installations-request-handler_8js_ac12c3c17f5c0ddf8b9a3359d993df07b}\index{installations-\/request-\/handler.js@{installations-\/request-\/handler.js}!FIREBASE\_IID\_PATH@{FIREBASE\_IID\_PATH}}
+\index{FIREBASE\_IID\_PATH@{FIREBASE\_IID\_PATH}!installations-\/request-\/handler.js@{installations-\/request-\/handler.js}}
+\doxysubsubsection{\texorpdfstring{FIREBASE\_IID\_PATH}{FIREBASE\_IID\_PATH}}
+{\footnotesize\ttfamily \label{installations-request-handler_8js_ac12c3c17f5c0ddf8b9a3359d993df07b} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} FIREBASE\+\_\+\+IID\+\_\+\+PATH = \textquotesingle{}/\mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2uuid_2dist_2esm-browser_2v1_8js_a32c2d9d82f64ce86ca1da30b62dd1482}{v1}}/\textquotesingle{}}
+
+Firebase IID backend path. \Hypertarget{installations-request-handler_8js_ae4d10bfd69812e50748c9b162ed0724c}\index{installations-\/request-\/handler.js@{installations-\/request-\/handler.js}!FIREBASE\_IID\_TIMEOUT@{FIREBASE\_IID\_TIMEOUT}}
+\index{FIREBASE\_IID\_TIMEOUT@{FIREBASE\_IID\_TIMEOUT}!installations-\/request-\/handler.js@{installations-\/request-\/handler.js}}
+\doxysubsubsection{\texorpdfstring{FIREBASE\_IID\_TIMEOUT}{FIREBASE\_IID\_TIMEOUT}}
+{\footnotesize\ttfamily \label{installations-request-handler_8js_ae4d10bfd69812e50748c9b162ed0724c} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} FIREBASE\+\_\+\+IID\+\_\+\+TIMEOUT = 10000}
+
+Firebase IID request timeout duration in milliseconds. \Hypertarget{installations-request-handler_8js_a740d3563fde88b17a3229f5e6ebb2715}\index{installations-\/request-\/handler.js@{installations-\/request-\/handler.js}!FirebaseInstallationsRequestHandler@{FirebaseInstallationsRequestHandler}}
+\index{FirebaseInstallationsRequestHandler@{FirebaseInstallationsRequestHandler}!installations-\/request-\/handler.js@{installations-\/request-\/handler.js}}
+\doxysubsubsection{\texorpdfstring{FirebaseInstallationsRequestHandler}{FirebaseInstallationsRequestHandler}}
+{\footnotesize\ttfamily \label{installations-request-handler_8js_a740d3563fde88b17a3229f5e6ebb2715} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} Firebase\+Installations\+Request\+Handler = void 0}
+
+\Hypertarget{installations-request-handler_8js_ae2475e10618961c050dcba04e8c42331}\index{installations-\/request-\/handler.js@{installations-\/request-\/handler.js}!strict@{strict}}
+\index{strict@{strict}!installations-\/request-\/handler.js@{installations-\/request-\/handler.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{installations-request-handler_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+
+firebase-\/admin v12.\+7.\+0 \Hypertarget{installations-request-handler_8js_a022e926a40defc4294368e708a7e2372}\index{installations-\/request-\/handler.js@{installations-\/request-\/handler.js}!utils@{utils}}
+\index{utils@{utils}!installations-\/request-\/handler.js@{installations-\/request-\/handler.js}}
+\doxysubsubsection{\texorpdfstring{utils}{utils}}
+{\footnotesize\ttfamily \label{installations-request-handler_8js_a022e926a40defc4294368e708a7e2372} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} utils = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/index"{})}
+
+\Hypertarget{installations-request-handler_8js_add6dc10e852e313f07c0d59bcf288b6a}\index{installations-\/request-\/handler.js@{installations-\/request-\/handler.js}!validator@{validator}}
+\index{validator@{validator}!installations-\/request-\/handler.js@{installations-\/request-\/handler.js}}
+\doxysubsubsection{\texorpdfstring{validator}{validator}}
+{\footnotesize\ttfamily \label{installations-request-handler_8js_add6dc10e852e313f07c0d59bcf288b6a} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} validator = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/validator"{})}
+

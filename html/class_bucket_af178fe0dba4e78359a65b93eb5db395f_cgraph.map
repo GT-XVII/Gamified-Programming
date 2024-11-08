@@ -1,0 +1,9 @@
+<map id="Bucket::addLifecycleRule" name="Bucket::addLifecycleRule">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,176,56"/>
+<area shape="rect" id="Node000002" href="$class_service_object.html#a529b594c152c6c8d182c6965722340d2" title=" " alt="" coords="224,5,407,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="176,31,208,28,208,33,176,37"/>
+<area shape="rect" id="Node000003" href="$class_bucket.html#ab97a4d74e5d0359f3f600a4415fd1716" title=" " alt="" coords="244,55,386,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="176,50,229,56,228,61,176,55"/>
+<area shape="rect" id="Node000004" href="$class_bucket.html#aaaad3edeb09fdc61bad9c33a115e580c" title=" " alt="" coords="455,47,625,88"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="387,65,440,65,440,70,387,70"/>
+</map>

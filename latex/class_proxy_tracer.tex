@@ -1,0 +1,163 @@
+\doxysection{Proxy\+Tracer Class Reference}
+\hypertarget{class_proxy_tracer}{}\label{class_proxy_tracer}\index{ProxyTracer@{ProxyTracer}}
+
+
+Collaboration diagram for Proxy\+Tracer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=174pt]{class_proxy_tracer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_proxy_tracer_ae9ff5427efa9fa71fd35834bb6e35292}{constructor}} (\+\_\+provider, \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}, \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a265a39dcf2f0b7c6b96574362aa01ad9}{version}}, options)
+\item 
+\mbox{\hyperlink{class_proxy_tracer_a7027c258920963c3d4d2314235679f6e}{start\+Span}} (\mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}, options, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}})
+\item 
+\mbox{\hyperlink{class_proxy_tracer_a3389db260f108029201d7199dc43f525}{start\+Active\+Span}} (\+\_\+name, \mbox{\hyperlink{express_2lib_2router_2route_8js_a6d3af37c53447908498ec53885a92a16}{\+\_\+options}}, \+\_\+context, \+\_\+fn)
+\item 
+\mbox{\hyperlink{class_proxy_tracer_ae3b3af2122abda9d74e5be59e4d2435b}{\+\_\+get\+Tracer}} ()
+\item 
+\mbox{\hyperlink{class_proxy_tracer_ae9ff5427efa9fa71fd35834bb6e35292}{constructor}} (\+\_\+provider, \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}, \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a265a39dcf2f0b7c6b96574362aa01ad9}{version}}, options)
+\item 
+\mbox{\hyperlink{class_proxy_tracer_a7027c258920963c3d4d2314235679f6e}{start\+Span}} (\mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}, options, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}})
+\item 
+\mbox{\hyperlink{class_proxy_tracer_a3389db260f108029201d7199dc43f525}{start\+Active\+Span}} (\+\_\+name, \mbox{\hyperlink{express_2lib_2router_2route_8js_a6d3af37c53447908498ec53885a92a16}{\+\_\+options}}, \+\_\+context, \+\_\+fn)
+\item 
+\mbox{\hyperlink{class_proxy_tracer_ae3b3af2122abda9d74e5be59e4d2435b}{\+\_\+get\+Tracer}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Proxy tracer provided by the proxy tracer provider 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_proxy_tracer_ae3b3af2122abda9d74e5be59e4d2435b}\index{ProxyTracer@{ProxyTracer}!\_getTracer@{\_getTracer}}
+\index{\_getTracer@{\_getTracer}!ProxyTracer@{ProxyTracer}}
+\doxysubsubsection{\texorpdfstring{\_getTracer()}{\_getTracer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_proxy_tracer_ae3b3af2122abda9d74e5be59e4d2435b} 
+Proxy\+Tracer\+::\+\_\+get\+Tracer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Try to get a tracer from the proxy tracer provider. If the proxy tracer provider has no delegate, return a noop tracer. 
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}, \mbox{\hyperlink{src_2trace_2_proxy_tracer_8js_a8d5e7793956b4211430931044e7724d1}{NOOP\+\_\+\+TRACER}}, and \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a265a39dcf2f0b7c6b96574362aa01ad9}{version}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_proxy_tracer_ae3b3af2122abda9d74e5be59e4d2435b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_proxy_tracer_ae3b3af2122abda9d74e5be59e4d2435b}\index{ProxyTracer@{ProxyTracer}!\_getTracer@{\_getTracer}}
+\index{\_getTracer@{\_getTracer}!ProxyTracer@{ProxyTracer}}
+\doxysubsubsection{\texorpdfstring{\_getTracer()}{\_getTracer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_proxy_tracer_ae3b3af2122abda9d74e5be59e4d2435b} 
+Proxy\+Tracer\+::\+\_\+get\+Tracer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Try to get a tracer from the proxy tracer provider. If the proxy tracer provider has no delegate, return a noop tracer. 
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}, \mbox{\hyperlink{src_2trace_2_proxy_tracer_8js_a8d5e7793956b4211430931044e7724d1}{NOOP\+\_\+\+TRACER}}, and \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a265a39dcf2f0b7c6b96574362aa01ad9}{version}}.
+
+\Hypertarget{class_proxy_tracer_ae9ff5427efa9fa71fd35834bb6e35292}\index{ProxyTracer@{ProxyTracer}!constructor@{constructor}}
+\index{constructor@{constructor}!ProxyTracer@{ProxyTracer}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_proxy_tracer_ae9ff5427efa9fa71fd35834bb6e35292} 
+Proxy\+Tracer\+::constructor (\begin{DoxyParamCaption}\item[{}]{\+\_\+provider}{, }\item[{}]{name}{, }\item[{}]{version}{, }\item[{}]{options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}, and \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a265a39dcf2f0b7c6b96574362aa01ad9}{version}}.
+
+\Hypertarget{class_proxy_tracer_ae9ff5427efa9fa71fd35834bb6e35292}\index{ProxyTracer@{ProxyTracer}!constructor@{constructor}}
+\index{constructor@{constructor}!ProxyTracer@{ProxyTracer}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_proxy_tracer_ae9ff5427efa9fa71fd35834bb6e35292} 
+Proxy\+Tracer\+::constructor (\begin{DoxyParamCaption}\item[{}]{\+\_\+provider}{, }\item[{}]{name}{, }\item[{}]{version}{, }\item[{}]{options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}, and \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a265a39dcf2f0b7c6b96574362aa01ad9}{version}}.
+
+\Hypertarget{class_proxy_tracer_a3389db260f108029201d7199dc43f525}\index{ProxyTracer@{ProxyTracer}!startActiveSpan@{startActiveSpan}}
+\index{startActiveSpan@{startActiveSpan}!ProxyTracer@{ProxyTracer}}
+\doxysubsubsection{\texorpdfstring{startActiveSpan()}{startActiveSpan()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_proxy_tracer_a3389db260f108029201d7199dc43f525} 
+Proxy\+Tracer\+::start\+Active\+Span (\begin{DoxyParamCaption}\item[{}]{\+\_\+name}{, }\item[{}]{\+\_\+options}{, }\item[{}]{\+\_\+context}{, }\item[{}]{\+\_\+fn}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{class_proxy_tracer_ae3b3af2122abda9d74e5be59e4d2435b}{\+\_\+get\+Tracer()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_proxy_tracer_a3389db260f108029201d7199dc43f525_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_proxy_tracer_a3389db260f108029201d7199dc43f525}\index{ProxyTracer@{ProxyTracer}!startActiveSpan@{startActiveSpan}}
+\index{startActiveSpan@{startActiveSpan}!ProxyTracer@{ProxyTracer}}
+\doxysubsubsection{\texorpdfstring{startActiveSpan()}{startActiveSpan()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_proxy_tracer_a3389db260f108029201d7199dc43f525} 
+Proxy\+Tracer\+::start\+Active\+Span (\begin{DoxyParamCaption}\item[{}]{\+\_\+name}{, }\item[{}]{\+\_\+options}{, }\item[{}]{\+\_\+context}{, }\item[{}]{\+\_\+fn}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{class_proxy_tracer_ae3b3af2122abda9d74e5be59e4d2435b}{\+\_\+get\+Tracer()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_proxy_tracer_a3389db260f108029201d7199dc43f525_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_proxy_tracer_a7027c258920963c3d4d2314235679f6e}\index{ProxyTracer@{ProxyTracer}!startSpan@{startSpan}}
+\index{startSpan@{startSpan}!ProxyTracer@{ProxyTracer}}
+\doxysubsubsection{\texorpdfstring{startSpan()}{startSpan()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_proxy_tracer_a7027c258920963c3d4d2314235679f6e} 
+Proxy\+Tracer\+::start\+Span (\begin{DoxyParamCaption}\item[{}]{name}{, }\item[{}]{options}{, }\item[{}]{context}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{class_proxy_tracer_ae3b3af2122abda9d74e5be59e4d2435b}{\+\_\+get\+Tracer()}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}}, and \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_proxy_tracer_a7027c258920963c3d4d2314235679f6e_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_proxy_tracer_a7027c258920963c3d4d2314235679f6e}\index{ProxyTracer@{ProxyTracer}!startSpan@{startSpan}}
+\index{startSpan@{startSpan}!ProxyTracer@{ProxyTracer}}
+\doxysubsubsection{\texorpdfstring{startSpan()}{startSpan()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_proxy_tracer_a7027c258920963c3d4d2314235679f6e} 
+Proxy\+Tracer\+::start\+Span (\begin{DoxyParamCaption}\item[{}]{name}{, }\item[{}]{options}{, }\item[{}]{context}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{class_proxy_tracer_ae3b3af2122abda9d74e5be59e4d2435b}{\+\_\+get\+Tracer()}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}}, and \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_proxy_tracer_a7027c258920963c3d4d2314235679f6e_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/@opentelemetry/api/build/esnext/trace/\mbox{\hyperlink{esnext_2trace_2_proxy_tracer_8js}{Proxy\+Tracer.\+js}}\item 
+backend/node\+\_\+modules/@opentelemetry/api/build/src/trace/\mbox{\hyperlink{src_2trace_2_proxy_tracer_8js}{Proxy\+Tracer.\+js}}\end{DoxyCompactItemize}

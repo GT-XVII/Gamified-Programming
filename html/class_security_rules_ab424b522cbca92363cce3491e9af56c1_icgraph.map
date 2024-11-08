@@ -1,0 +1,10 @@
+<map id="SecurityRules::getBucketName" name="SecurityRules::getBucketName">
+<area shape="rect" id="Node000001" title=" " alt="" coords="498,78,703,104"/>
+<area shape="rect" id="Node000002" href="$class_security_rules.html#a3febd3f9cbbc7269fbf4d337d557be26" title=" " alt="" coords="264,5,438,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="534,76,431,49,432,44,535,71"/>
+<area shape="rect" id="Node000003" href="$class_security_rules.html#a48b3db7524106369d1f689c6e117de62" title=" " alt="" coords="252,71,450,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="482,94,450,94,450,88,482,88"/>
+<area shape="rect" id="Node000004" href="$class_security_rules.html#aecd7ef177ad9b8595500aae3de7d94be" title=" " alt="" coords="5,100,204,141"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="535,111,450,126,322,132,204,130,204,124,322,127,450,120,534,105"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="236,107,205,111,204,106,236,102"/>
+</map>

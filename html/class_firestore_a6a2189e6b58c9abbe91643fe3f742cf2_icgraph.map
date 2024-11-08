@@ -1,0 +1,10 @@
+<map id="Firestore::validateAndApplySettings" name="Firestore::validateAndApplySettings">
+<area shape="rect" id="Node000001" title=" " alt="" coords="373,41,554,81"/>
+<area shape="rect" id="Node000002" href="$class_firestore.html#a947c241ebe54acabf5a26f1da9350823" title=" " alt="" coords="5,11,151,36"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="402,37,364,24,325,14,280,9,235,8,151,14,151,9,235,3,280,4,325,9,366,19,404,32"/>
+<area shape="rect" id="Node000003" href="$class_firestore.html#ad378f359b0fd207f574ae2c4eed5f92b" title=" " alt="" coords="199,48,325,74"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="357,73,326,72,326,67,357,67"/>
+<area shape="poly" id="edge5_Node000003_Node000001" title=" " alt="" coords="341,49,373,49,373,55,341,55"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="183,48,144,40,145,34,184,42"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="293,35,282,29,262,27,243,29,232,33,230,39,235,46,231,49,225,39,228,30,241,24,262,21,284,24,296,31"/>
+</map>

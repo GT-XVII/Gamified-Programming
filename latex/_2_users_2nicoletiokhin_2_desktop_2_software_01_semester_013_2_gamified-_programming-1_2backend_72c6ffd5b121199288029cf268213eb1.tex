@@ -1,0 +1,25 @@
+\doxysection{/\+Users/nicoletiokhin/\+Desktop/\+Software Semester 3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/lodash/flat\+Map\+Deep.\+js}
+\hypertarget{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_72c6ffd5b121199288029cf268213eb1}{}\label{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_72c6ffd5b121199288029cf268213eb1}This method is like {\ttfamily \+\_\+.\+flat\+Map} except that it recursively flattens the mapped results.
+
+@member\+Of \+\_\+ \begin{DoxySince}{Since}
+4.\+7.\+0
+\end{DoxySince}
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Array\texorpdfstring{$\vert$}{|}\+Object\}} & collection The collection to iterate over. \\
+\hline
+{\em \{\+Function\}} & \mbox{[}iteratee=\+\_\+.\+identity\mbox{]} The function invoked per iteration. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Array\} Returns the new flattened array.
+\end{DoxyReturn}
+function duplicate(n) \{ return \mbox{[}\mbox{[}\mbox{[}n, n\mbox{]}\mbox{]}\mbox{]}; \}
+
+\+\_\+.\+flat\+Map\+Deep(\mbox{[}1, 2\mbox{]}, duplicate); // =\texorpdfstring{$>$}{>} \mbox{[}1, 1, 2, 2\mbox{]}
+
+
+\begin{DoxyCodeInclude}{0}
+
+\end{DoxyCodeInclude}
+ Semester \doxylink{flat_map_deep_8js}{3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/lodash/flat\+Map\+Deep.\+js} 

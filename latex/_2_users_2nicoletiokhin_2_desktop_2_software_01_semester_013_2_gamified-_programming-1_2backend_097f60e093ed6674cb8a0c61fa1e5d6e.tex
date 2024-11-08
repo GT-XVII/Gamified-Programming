@@ -1,0 +1,29 @@
+\doxysection{/\+Users/nicoletiokhin/\+Desktop/\+Software Semester 3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/lodash/pull\+All\+With.\+js}
+\hypertarget{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_097f60e093ed6674cb8a0c61fa1e5d6e}{}\label{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_097f60e093ed6674cb8a0c61fa1e5d6e}This method is like {\ttfamily \+\_\+.\+pull\+All} except that it accepts {\ttfamily comparator} which is invoked to compare elements of {\ttfamily array} to {\ttfamily values}. The comparator is invoked with two arguments\+: (arr\+Val, oth\+Val).
+
+{\bfseries{Note\+:}} Unlike {\ttfamily \+\_\+.\+difference\+With}, this method mutates {\ttfamily array}.
+
+@member\+Of \+\_\+ \begin{DoxySince}{Since}
+4.\+6.\+0
+\end{DoxySince}
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Array\}} & array The array to modify. \\
+\hline
+{\em \{\+Array\}} & values The values to remove. \\
+\hline
+{\em \{\+Function\}} & \mbox{[}comparator\mbox{]} The comparator invoked per element. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Array\} Returns {\ttfamily array}.
+\end{DoxyReturn}
+var array = \mbox{[}\{ \textquotesingle{}x\textquotesingle{}\+: 1, \textquotesingle{}y\textquotesingle{}\+: 2 \}, \{ \textquotesingle{}x\textquotesingle{}\+: 3, \textquotesingle{}y\textquotesingle{}\+: 4 \}, \{ \textquotesingle{}x\textquotesingle{}\+: 5, \textquotesingle{}y\textquotesingle{}\+: 6 \}\mbox{]};
+
+\+\_\+.\+pull\+All\+With(array, \mbox{[}\{ \textquotesingle{}x\textquotesingle{}\+: 3, \textquotesingle{}y\textquotesingle{}\+: 4 \}\mbox{]}, \+\_\+.\+is\+Equal); console.\+log(array); // =\texorpdfstring{$>$}{>} \mbox{[}\{ \textquotesingle{}x\textquotesingle{}\+: 1, \textquotesingle{}y\textquotesingle{}\+: 2 \}, \{ \textquotesingle{}x\textquotesingle{}\+: 5, \textquotesingle{}y\textquotesingle{}\+: 6 \}\mbox{]}
+
+
+\begin{DoxyCodeInclude}{0}
+
+\end{DoxyCodeInclude}
+ Semester \doxylink{pull_all_with_8js}{3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/lodash/pull\+All\+With.\+js} 

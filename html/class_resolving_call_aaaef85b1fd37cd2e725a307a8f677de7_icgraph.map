@@ -1,0 +1,18 @@
+<map id="ResolvingCall::cancelWithStatus" name="ResolvingCall::cancelWithStatus">
+<area shape="rect" id="Node000001" title=" " alt="" coords="668,60,844,100"/>
+<area shape="rect" id="Node000002" href="$class_resolving_call.html#a01336cf137f2d0e3ed06b83965191e61" title=" " alt="" coords="198,10,373,36"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="706,55,665,36,620,21,556,12,491,8,374,14,373,9,492,3,557,6,621,16,666,31,708,50"/>
+<area shape="rect" id="Node000003" href="$class_resolving_call.html#af3eb8971c5843801e4bf96b50ff75cb5" title=" " alt="" coords="202,95,368,121"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="653,89,369,106,369,101,653,84"/>
+<area shape="rect" id="Node000005" href="$class_resolving_call.html#afbe62d515af2bef2a48f7821a3294ebb" title=" " alt="" coords="435,30,614,71"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="653,70,615,65,615,60,654,64"/>
+<area shape="rect" id="Node000006" href="$class_resolving_call.html#acfbc974f9ec1bca53d915957a8db3856" title=" " alt="" coords="429,145,620,186"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="685,109,583,147,581,142,684,104"/>
+<area shape="rect" id="Node000004" href="$class_resolving_call.html#abe488bc79024dd30dba7af23e709ec64" title=" " alt="" coords="5,95,142,121"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="187,111,142,111,142,105,187,105"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="419,41,373,36,374,30,420,36"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="423,78,343,97,342,92,422,73"/>
+<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="422,144,342,124,343,119,423,138"/>
+<area shape="rect" id="Node000007" href="$class_resolving_call.html#a0d5d8f1861020449fb5b6fd1d4b693a7" title=" " alt="" coords="190,145,381,186"/>
+<area shape="poly" id="edge9_Node000006_Node000007" title=" " alt="" coords="413,168,382,168,382,163,413,163"/>
+</map>

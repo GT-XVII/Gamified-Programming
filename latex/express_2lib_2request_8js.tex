@@ -1,0 +1,464 @@
+\doxysection{backend/node\+\_\+modules/express/lib/request.js File Reference}
+\hypertarget{express_2lib_2request_8js}{}\label{express_2lib_2request_8js}\index{backend/node\_modules/express/lib/request.js@{backend/node\_modules/express/lib/request.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{express_2lib_2request_8js_ae1161b18b3e7253c7e7d70c51cc4cc8e}{define\+Getter}} (\mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}, \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}, getter)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{express_2lib_2request_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+var \mbox{\hyperlink{express_2lib_2request_8js_aea581760449850bbdc91f5c3f5fe852d}{accepts}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}accepts\textquotesingle{})
+\item 
+var \mbox{\hyperlink{express_2lib_2request_8js_acfcd119b39526e732877a941ebeed620}{deprecate}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}depd\textquotesingle{})(\textquotesingle{}\mbox{\hyperlink{server_8js_a81e570c198204c57e1ebcace4f4e6dad}{express}}\textquotesingle{})
+\item 
+var \mbox{\hyperlink{express_2lib_2request_8js_a4a6ff4913d40907f5438cd21c126a33e}{is\+IP}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a24df1ebe2aee23540b4159c6087afdf1}{net}}\textquotesingle{}).is\+IP
+\item 
+var \mbox{\hyperlink{express_2lib_2request_8js_a2efc67136068229eaf03e7ae371b6b25}{typeis}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}\mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type}}-\/\mbox{\hyperlink{express_2lib_2request_8js_a5e3afd97276cc403924d1a449a83ea84}{is}}\textquotesingle{})
+\item 
+var \mbox{\hyperlink{express_2lib_2request_8js_a55f22d498ca401fddca364855629d1d3}{http}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}http\textquotesingle{})
+\item 
+var \mbox{\hyperlink{express_2lib_2request_8js_ac6bf5484b5676a3edfddf7ca77caa54a}{fresh}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}fresh\textquotesingle{})
+\item 
+var \mbox{\hyperlink{express_2lib_2request_8js_aaaaf98f51168d5ff2608b0f4752a312f}{parse\+Range}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}\mbox{\hyperlink{express_2lib_2request_8js_a55f6ebbb5a6909ddb530526f2e1f1301}{range}}-\/\mbox{\hyperlink{ipaddr_8min_8js_a04bd013037bcf380d2d5e88fcd9a2ebf}{parser}}\textquotesingle{})
+\item 
+var \mbox{\hyperlink{express_2lib_2request_8js_afbb224ef64380e0c03fd28ca64a949ab}{parse}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}parseurl\textquotesingle{})
+\item 
+var \mbox{\hyperlink{express_2lib_2request_8js_adccce5d9fde7ce401d03984f2d2a4715}{proxyaddr}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_acc29a98f9072a7cabbfef0b654723faf}{proxy}}-\/addr\textquotesingle{})
+\item 
+var \mbox{\hyperlink{express_2lib_2request_8js_a42c43c76081a7df8ae2954f16ee9338b}{req}}
+\item 
+\mbox{\hyperlink{agent-base_2dist_2helpers_8js_a960c3c3c7bce40c2aa54b029b3dbb9c8}{req}} \mbox{\hyperlink{express_2lib_2request_8js_ad590a4c822ccf7a8651345f38de5c34a}{accepts\+Encodings}}
+\item 
+\mbox{\hyperlink{agent-base_2dist_2helpers_8js_a960c3c3c7bce40c2aa54b029b3dbb9c8}{req}} \mbox{\hyperlink{express_2lib_2request_8js_a35c49f40601e9f31f16471ab9d008ab9}{accepts\+Encoding}}
+\item 
+\mbox{\hyperlink{agent-base_2dist_2helpers_8js_a960c3c3c7bce40c2aa54b029b3dbb9c8}{req}} \mbox{\hyperlink{express_2lib_2request_8js_a6029d2a4188dac8f6e0ad604166d5c7f}{accepts\+Charsets}}
+\item 
+\mbox{\hyperlink{agent-base_2dist_2helpers_8js_a960c3c3c7bce40c2aa54b029b3dbb9c8}{req}} \mbox{\hyperlink{express_2lib_2request_8js_a96e11499c15709433c941a710da04ca4}{accepts\+Charset}}
+\item 
+\mbox{\hyperlink{agent-base_2dist_2helpers_8js_a960c3c3c7bce40c2aa54b029b3dbb9c8}{req}} \mbox{\hyperlink{express_2lib_2request_8js_a04523be7e11c86fa4d5b3b4b90e1fc2e}{accepts\+Languages}}
+\item 
+\mbox{\hyperlink{agent-base_2dist_2helpers_8js_a960c3c3c7bce40c2aa54b029b3dbb9c8}{req}} \mbox{\hyperlink{express_2lib_2request_8js_af5fec45eb1d586bd37a859653922d607}{accepts\+Language}}
+\item 
+\mbox{\hyperlink{agent-base_2dist_2helpers_8js_a960c3c3c7bce40c2aa54b029b3dbb9c8}{req}} \mbox{\hyperlink{express_2lib_2request_8js_a55f6ebbb5a6909ddb530526f2e1f1301}{range}}
+\item 
+\mbox{\hyperlink{agent-base_2dist_2helpers_8js_a960c3c3c7bce40c2aa54b029b3dbb9c8}{req}} \mbox{\hyperlink{express_2lib_2request_8js_ac30f03e4827ddd737a83aa6c7e5a5f24}{param}}
+\item 
+\mbox{\hyperlink{agent-base_2dist_2helpers_8js_a960c3c3c7bce40c2aa54b029b3dbb9c8}{req}} \mbox{\hyperlink{express_2lib_2request_8js_a5e3afd97276cc403924d1a449a83ea84}{is}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{express_2lib_2request_8js_ae1161b18b3e7253c7e7d70c51cc4cc8e}\index{request.js@{request.js}!defineGetter@{defineGetter}}
+\index{defineGetter@{defineGetter}!request.js@{request.js}}
+\doxysubsubsection{\texorpdfstring{defineGetter()}{defineGetter()}}
+{\footnotesize\ttfamily \label{express_2lib_2request_8js_ae1161b18b3e7253c7e7d70c51cc4cc8e} 
+function define\+Getter (\begin{DoxyParamCaption}\item[{}]{obj}{, }\item[{}]{name}{, }\item[{}]{getter}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Helper function for creating a getter on an object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Object\}} & obj \\
+\hline
+{\em \{\+String\}} & name \\
+\hline
+{\em \{\+Function\}} & getter \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}, and \mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{express_2lib_2request_8js_aea581760449850bbdc91f5c3f5fe852d}\index{request.js@{request.js}!accepts@{accepts}}
+\index{accepts@{accepts}!request.js@{request.js}}
+\doxysubsubsection{\texorpdfstring{accepts}{accepts}}
+{\footnotesize\ttfamily \label{express_2lib_2request_8js_aea581760449850bbdc91f5c3f5fe852d} 
+\mbox{\hyperlink{agent-base_2dist_2helpers_8js_a960c3c3c7bce40c2aa54b029b3dbb9c8}{req}} accepts = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}accepts\textquotesingle{})\hspace{0.3cm}{\ttfamily [private]}}
+
+Module dependencies.
+
+To do\+: update docs.
+
+Check if the given {\ttfamily \doxylink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type(s)}} is acceptable, returning the best match when true, otherwise {\ttfamily undefined}, in which case you should respond with 406 "{}\+Not Acceptable"{}.
+
+The {\ttfamily type} value may be a single MIME type string such as "{}application/json"{}, an extension name such as "{}json"{}, a comma-\/delimited list such as "{}json, html, text/plain"{}, an argument list such as {\ttfamily "{}json"{}, "{}html"{}, "{}text/plain"{}}, or an array {\ttfamily \mbox{[}"{}json"{}, "{}html"{}, "{}text/plain"{}\mbox{]}}. When a list or array is given, the {\itshape best} match, if any is returned.
+
+Examples\+: \begin{DoxyVerb}// Accept: text/html
+req.accepts('html');
+// => "html"
+
+// Accept: text/*, application/json
+req.accepts('html');
+// => "html"
+req.accepts('text/html');
+// => "text/html"
+req.accepts('json, text');
+// => "json"
+req.accepts('application/json');
+// => "application/json"
+
+// Accept: text/*, application/json
+req.accepts('image/png');
+req.accepts('png');
+// => undefined
+
+// Accept: text/*;q=.5, application/json
+req.accepts(['html', 'json']);
+req.accepts('html', 'json');
+req.accepts('html, json');
+// => "json"
+\end{DoxyVerb}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+String\texorpdfstring{$\vert$}{|}\+Array\}} & \doxylink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type(s)} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{String\texorpdfstring{$\vert$}{|}\+Array\texorpdfstring{$\vert$}{|}\+Boolean\} 
+\end{DoxyReturn}
+\Hypertarget{express_2lib_2request_8js_a96e11499c15709433c941a710da04ca4}\index{request.js@{request.js}!acceptsCharset@{acceptsCharset}}
+\index{acceptsCharset@{acceptsCharset}!request.js@{request.js}}
+\doxysubsubsection{\texorpdfstring{acceptsCharset}{acceptsCharset}}
+{\footnotesize\ttfamily \label{express_2lib_2request_8js_a96e11499c15709433c941a710da04ca4} 
+\mbox{\hyperlink{agent-base_2dist_2helpers_8js_a960c3c3c7bce40c2aa54b029b3dbb9c8}{req}} accepts\+Charset}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \mbox{\hyperlink{express_2lib_2request_8js_acfcd119b39526e732877a941ebeed620}{deprecate}}.function(\mbox{\hyperlink{express_2lib_2request_8js_a42c43c76081a7df8ae2954f16ee9338b}{req}}.acceptsCharsets,}
+\DoxyCodeLine{\ \ \textcolor{stringliteral}{'req.acceptsCharset:\ Use\ acceptsCharsets\ instead'})}
+
+\end{DoxyCode}
+\Hypertarget{express_2lib_2request_8js_a6029d2a4188dac8f6e0ad604166d5c7f}\index{request.js@{request.js}!acceptsCharsets@{acceptsCharsets}}
+\index{acceptsCharsets@{acceptsCharsets}!request.js@{request.js}}
+\doxysubsubsection{\texorpdfstring{acceptsCharsets}{acceptsCharsets}}
+{\footnotesize\ttfamily \label{express_2lib_2request_8js_a6029d2a4188dac8f6e0ad604166d5c7f} 
+\mbox{\hyperlink{agent-base_2dist_2helpers_8js_a960c3c3c7bce40c2aa54b029b3dbb9c8}{req}} accepts\+Charsets}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}()\{}
+\DoxyCodeLine{\ \ var\ accept\ =\ \mbox{\hyperlink{express_2lib_2request_8js_aea581760449850bbdc91f5c3f5fe852d}{accepts}}(\textcolor{keyword}{this});}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ accept.charsets.apply(accept,\ arguments);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Check if the given {\ttfamily charset}s are acceptable, otherwise you should respond with 406 "{}\+Not Acceptable"{}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+String\}} & ...charset \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{String\texorpdfstring{$\vert$}{|}\+Array\} 
+\end{DoxyReturn}
+\Hypertarget{express_2lib_2request_8js_a35c49f40601e9f31f16471ab9d008ab9}\index{request.js@{request.js}!acceptsEncoding@{acceptsEncoding}}
+\index{acceptsEncoding@{acceptsEncoding}!request.js@{request.js}}
+\doxysubsubsection{\texorpdfstring{acceptsEncoding}{acceptsEncoding}}
+{\footnotesize\ttfamily \label{express_2lib_2request_8js_a35c49f40601e9f31f16471ab9d008ab9} 
+\mbox{\hyperlink{agent-base_2dist_2helpers_8js_a960c3c3c7bce40c2aa54b029b3dbb9c8}{req}} accepts\+Encoding}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \mbox{\hyperlink{express_2lib_2request_8js_acfcd119b39526e732877a941ebeed620}{deprecate}}.function(\mbox{\hyperlink{express_2lib_2request_8js_a42c43c76081a7df8ae2954f16ee9338b}{req}}.acceptsEncodings,}
+\DoxyCodeLine{\ \ \textcolor{stringliteral}{'req.acceptsEncoding:\ Use\ acceptsEncodings\ instead'})}
+
+\end{DoxyCode}
+\Hypertarget{express_2lib_2request_8js_ad590a4c822ccf7a8651345f38de5c34a}\index{request.js@{request.js}!acceptsEncodings@{acceptsEncodings}}
+\index{acceptsEncodings@{acceptsEncodings}!request.js@{request.js}}
+\doxysubsubsection{\texorpdfstring{acceptsEncodings}{acceptsEncodings}}
+{\footnotesize\ttfamily \label{express_2lib_2request_8js_ad590a4c822ccf7a8651345f38de5c34a} 
+\mbox{\hyperlink{agent-base_2dist_2helpers_8js_a960c3c3c7bce40c2aa54b029b3dbb9c8}{req}} accepts\+Encodings}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}()\{}
+\DoxyCodeLine{\ \ var\ accept\ =\ \mbox{\hyperlink{express_2lib_2request_8js_aea581760449850bbdc91f5c3f5fe852d}{accepts}}(\textcolor{keyword}{this});}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ accept.encodings.apply(accept,\ arguments);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Check if the given {\ttfamily encoding}s are accepted.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+String\}} & ...encoding \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{String\texorpdfstring{$\vert$}{|}\+Array\} 
+\end{DoxyReturn}
+\Hypertarget{express_2lib_2request_8js_af5fec45eb1d586bd37a859653922d607}\index{request.js@{request.js}!acceptsLanguage@{acceptsLanguage}}
+\index{acceptsLanguage@{acceptsLanguage}!request.js@{request.js}}
+\doxysubsubsection{\texorpdfstring{acceptsLanguage}{acceptsLanguage}}
+{\footnotesize\ttfamily \label{express_2lib_2request_8js_af5fec45eb1d586bd37a859653922d607} 
+\mbox{\hyperlink{agent-base_2dist_2helpers_8js_a960c3c3c7bce40c2aa54b029b3dbb9c8}{req}} accepts\+Language}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \mbox{\hyperlink{express_2lib_2request_8js_acfcd119b39526e732877a941ebeed620}{deprecate}}.function(\mbox{\hyperlink{express_2lib_2request_8js_a42c43c76081a7df8ae2954f16ee9338b}{req}}.acceptsLanguages,}
+\DoxyCodeLine{\ \ \textcolor{stringliteral}{'req.acceptsLanguage:\ Use\ acceptsLanguages\ instead'})}
+
+\end{DoxyCode}
+\Hypertarget{express_2lib_2request_8js_a04523be7e11c86fa4d5b3b4b90e1fc2e}\index{request.js@{request.js}!acceptsLanguages@{acceptsLanguages}}
+\index{acceptsLanguages@{acceptsLanguages}!request.js@{request.js}}
+\doxysubsubsection{\texorpdfstring{acceptsLanguages}{acceptsLanguages}}
+{\footnotesize\ttfamily \label{express_2lib_2request_8js_a04523be7e11c86fa4d5b3b4b90e1fc2e} 
+\mbox{\hyperlink{agent-base_2dist_2helpers_8js_a960c3c3c7bce40c2aa54b029b3dbb9c8}{req}} accepts\+Languages}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}()\{}
+\DoxyCodeLine{\ \ var\ accept\ =\ \mbox{\hyperlink{express_2lib_2request_8js_aea581760449850bbdc91f5c3f5fe852d}{accepts}}(\textcolor{keyword}{this});}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ accept.languages.apply(accept,\ arguments);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Check if the given {\ttfamily lang}s are acceptable, otherwise you should respond with 406 "{}\+Not Acceptable"{}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+String\}} & ...lang \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{String\texorpdfstring{$\vert$}{|}\+Array\} 
+\end{DoxyReturn}
+\Hypertarget{express_2lib_2request_8js_acfcd119b39526e732877a941ebeed620}\index{request.js@{request.js}!deprecate@{deprecate}}
+\index{deprecate@{deprecate}!request.js@{request.js}}
+\doxysubsubsection{\texorpdfstring{deprecate}{deprecate}}
+{\footnotesize\ttfamily \label{express_2lib_2request_8js_acfcd119b39526e732877a941ebeed620} 
+var deprecate = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}depd\textquotesingle{})(\textquotesingle{}\mbox{\hyperlink{server_8js_a81e570c198204c57e1ebcace4f4e6dad}{express}}\textquotesingle{})}
+
+\Hypertarget{express_2lib_2request_8js_ac6bf5484b5676a3edfddf7ca77caa54a}\index{request.js@{request.js}!fresh@{fresh}}
+\index{fresh@{fresh}!request.js@{request.js}}
+\doxysubsubsection{\texorpdfstring{fresh}{fresh}}
+{\footnotesize\ttfamily \label{express_2lib_2request_8js_ac6bf5484b5676a3edfddf7ca77caa54a} 
+var fresh = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}fresh\textquotesingle{})}
+
+\Hypertarget{express_2lib_2request_8js_a55f22d498ca401fddca364855629d1d3}\index{request.js@{request.js}!http@{http}}
+\index{http@{http}!request.js@{request.js}}
+\doxysubsubsection{\texorpdfstring{http}{http}}
+{\footnotesize\ttfamily \label{express_2lib_2request_8js_a55f22d498ca401fddca364855629d1d3} 
+var http = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}http\textquotesingle{})}
+
+\Hypertarget{express_2lib_2request_8js_a5e3afd97276cc403924d1a449a83ea84}\index{request.js@{request.js}!is@{is}}
+\index{is@{is}!request.js@{request.js}}
+\doxysubsubsection{\texorpdfstring{is}{is}}
+{\footnotesize\ttfamily \label{express_2lib_2request_8js_a5e3afd97276cc403924d1a449a83ea84} 
+\mbox{\hyperlink{agent-base_2dist_2helpers_8js_a960c3c3c7bce40c2aa54b029b3dbb9c8}{req}} is}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{express_2lib_2request_8js_a5e3afd97276cc403924d1a449a83ea84}{is}}(\mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2index_8js_ab7462236e30435444188ea2b81d92654}{types}})\ \{}
+\DoxyCodeLine{\ \ var\ arr\ =\ \mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2index_8js_ab7462236e30435444188ea2b81d92654}{types}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ }
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{src_2util_2minimal_8js_a325c4e317c38d8497130ebce7670be2f}{Array}}.isArray(\mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2index_8js_ab7462236e30435444188ea2b81d92654}{types}}))\ \{}
+\DoxyCodeLine{\ \ \ \ arr\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{src_2util_2minimal_8js_a325c4e317c38d8497130ebce7670be2f}{Array}}(arguments.length);}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{for}\ (var\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ =\ 0;\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ <\ arr.length;\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}++)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ arr[\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}]\ =\ arguments[\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}];}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{express_2lib_2request_8js_a2efc67136068229eaf03e7ae371b6b25}{typeis}}(\textcolor{keyword}{this},\ arr);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Check if the incoming request contains the "{}\+Content-\/\+Type"{} header field, and it contains the given mime {\ttfamily type}.
+
+Examples\+: \begin{DoxyVerb} // With Content-Type: text/html; charset=utf-8
+ req.is('html');
+ req.is('text/html');
+ req.is('text/*');
+ // => true
+
+ // When Content-Type is application/json
+ req.is('json');
+ req.is('application/json');
+ req.is('application/*');
+ // => true
+
+ req.is('html');
+ // => false
+\end{DoxyVerb}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+String\texorpdfstring{$\vert$}{|}\+Array\}} & types... \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{String\texorpdfstring{$\vert$}{|}false\texorpdfstring{$\vert$}{|}null\}
+\end{DoxyReturn}
+configured for paged iteration, page unrolling is not performed, instead the callback will be called with the response object. \begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_f81125be3b659f4a7d752e7c44b8a2b2}{/\+Users/nicoletiokhin/\+Desktop/\+Software Semester 3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/@google-\/cloud/firestore/build/src/document-\/change.\+js}}, \mbox{\hyperlink{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_9a040d6869d59834271fe79d9ebdfebb}{/\+Users/nicoletiokhin/\+Desktop/\+Software Semester 3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/@google-\/cloud/firestore/build/src/geo-\/point.\+js}}, \mbox{\hyperlink{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_a9457148feb8780c03ab2cb686fc85ae}{/\+Users/nicoletiokhin/\+Desktop/\+Software Semester 3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/@google-\/cloud/firestore/build/src/reference/document-\/reference.\+js}}, and \mbox{\hyperlink{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_53df2cb1bd34a3fa36bb2c961c1c0bfc}{/\+Users/nicoletiokhin/\+Desktop/\+Software Semester 3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/@google-\/cloud/firestore/build/src/reference/query.\+js}}.\end{Desc}
+\Hypertarget{express_2lib_2request_8js_a4a6ff4913d40907f5438cd21c126a33e}\index{request.js@{request.js}!isIP@{isIP}}
+\index{isIP@{isIP}!request.js@{request.js}}
+\doxysubsubsection{\texorpdfstring{isIP}{isIP}}
+{\footnotesize\ttfamily \label{express_2lib_2request_8js_a4a6ff4913d40907f5438cd21c126a33e} 
+var is\+IP = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a24df1ebe2aee23540b4159c6087afdf1}{net}}\textquotesingle{}).is\+IP}
+
+\Hypertarget{express_2lib_2request_8js_ac30f03e4827ddd737a83aa6c7e5a5f24}\index{request.js@{request.js}!param@{param}}
+\index{param@{param}!request.js@{request.js}}
+\doxysubsubsection{\texorpdfstring{param}{param}}
+{\footnotesize\ttfamily \label{express_2lib_2request_8js_ac30f03e4827ddd737a83aa6c7e5a5f24} 
+\mbox{\hyperlink{agent-base_2dist_2helpers_8js_a960c3c3c7bce40c2aa54b029b3dbb9c8}{req}} param}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{express_2lib_2request_8js_ac30f03e4827ddd737a83aa6c7e5a5f24}{param}}(\mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}},\ defaultValue)\ \{}
+\DoxyCodeLine{\ \ var\ params\ =\ this.params\ ||\ \{\};}
+\DoxyCodeLine{\ \ var\ body\ =\ this.body\ ||\ \{\};}
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{application_8js_a3934419f0f9a2068c705a0013b77fab3}{query}}\ =\ this.query\ ||\ \{\};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_aeda6958b2fc8494c5a17f91600065eb9}{args}}\ =\ arguments.length\ ===\ 1}
+\DoxyCodeLine{\ \ \ \ ?\ \textcolor{stringliteral}{'name'}}
+\DoxyCodeLine{\ \ \ \ :\ \textcolor{stringliteral}{'name,\ default'};}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{express_2lib_2request_8js_acfcd119b39526e732877a941ebeed620}{deprecate}}(\textcolor{stringliteral}{'req.param('}\ +\ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_aeda6958b2fc8494c5a17f91600065eb9}{args}}\ +\ \textcolor{stringliteral}{'):\ Use\ req.params,\ req.body,\ or\ req.query\ instead'});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (\textcolor{keyword}{null}\ !=\ params[\mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}]\ \&\&\ params.hasOwnProperty(\mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}))\ \textcolor{keywordflow}{return}\ params[\mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}];}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (\textcolor{keyword}{null}\ !=\ body[\mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}])\ \textcolor{keywordflow}{return}\ body[\mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}];}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (\textcolor{keyword}{null}\ !=\ \mbox{\hyperlink{application_8js_a3934419f0f9a2068c705a0013b77fab3}{query}}[\mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}])\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{application_8js_a3934419f0f9a2068c705a0013b77fab3}{query}}[\mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}];}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ defaultValue;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Return the value of param {\ttfamily name} when present or {\ttfamily default\+Value}.
+
+
+\begin{DoxyItemize}
+\item Checks route placeholders, ex\+: \+\_\+/user/\+:id\+\_\+
+\item Checks body params, ex\+: id=12, \{"{}id"{}\+:12\}
+\item Checks query string params, ex\+: ?id=12
+\end{DoxyItemize}
+
+To utilize request bodies, {\ttfamily req.\+body} should be an object. This can be done by using the {\ttfamily \doxylink{express_2lib_2express_8js_a2f18df3edfa1cab06177ab4917a1d17e}{body\+Parser()}} middleware.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+String\}} & name \\
+\hline
+{\em \{\+Mixed\}} & \mbox{[}default\+Value\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{String\} 
+\end{DoxyReturn}
+\Hypertarget{express_2lib_2request_8js_afbb224ef64380e0c03fd28ca64a949ab}\index{request.js@{request.js}!parse@{parse}}
+\index{parse@{parse}!request.js@{request.js}}
+\doxysubsubsection{\texorpdfstring{parse}{parse}}
+{\footnotesize\ttfamily \label{express_2lib_2request_8js_afbb224ef64380e0c03fd28ca64a949ab} 
+var parse = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}parseurl\textquotesingle{})}
+
+\Hypertarget{express_2lib_2request_8js_aaaaf98f51168d5ff2608b0f4752a312f}\index{request.js@{request.js}!parseRange@{parseRange}}
+\index{parseRange@{parseRange}!request.js@{request.js}}
+\doxysubsubsection{\texorpdfstring{parseRange}{parseRange}}
+{\footnotesize\ttfamily \label{express_2lib_2request_8js_aaaaf98f51168d5ff2608b0f4752a312f} 
+var parse\+Range = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}\mbox{\hyperlink{express_2lib_2request_8js_a55f6ebbb5a6909ddb530526f2e1f1301}{range}}-\/\mbox{\hyperlink{ipaddr_8min_8js_a04bd013037bcf380d2d5e88fcd9a2ebf}{parser}}\textquotesingle{})}
+
+\Hypertarget{express_2lib_2request_8js_adccce5d9fde7ce401d03984f2d2a4715}\index{request.js@{request.js}!proxyaddr@{proxyaddr}}
+\index{proxyaddr@{proxyaddr}!request.js@{request.js}}
+\doxysubsubsection{\texorpdfstring{proxyaddr}{proxyaddr}}
+{\footnotesize\ttfamily \label{express_2lib_2request_8js_adccce5d9fde7ce401d03984f2d2a4715} 
+var proxyaddr = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_acc29a98f9072a7cabbfef0b654723faf}{proxy}}-\/addr\textquotesingle{})}
+
+\Hypertarget{express_2lib_2request_8js_a55f6ebbb5a6909ddb530526f2e1f1301}\index{request.js@{request.js}!range@{range}}
+\index{range@{range}!request.js@{request.js}}
+\doxysubsubsection{\texorpdfstring{range}{range}}
+{\footnotesize\ttfamily \label{express_2lib_2request_8js_a55f6ebbb5a6909ddb530526f2e1f1301} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} range}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{express_2lib_2request_8js_a55f6ebbb5a6909ddb530526f2e1f1301}{range}}(\mbox{\hyperlink{ordered-map_8min_8js_aa4a39500e3f754a8f2e1fd50b9ae523c}{size}},\ options)\ \{}
+\DoxyCodeLine{\ \ var\ \mbox{\hyperlink{express_2lib_2request_8js_a55f6ebbb5a6909ddb530526f2e1f1301}{range}}\ =\ this.\textcolor{keyword}{get}(\textcolor{stringliteral}{'Range'});}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (!range)\ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{express_2lib_2request_8js_aaaaf98f51168d5ff2608b0f4752a312f}{parseRange}}(\mbox{\hyperlink{ordered-map_8min_8js_aa4a39500e3f754a8f2e1fd50b9ae523c}{size}},\ \mbox{\hyperlink{express_2lib_2request_8js_a55f6ebbb5a6909ddb530526f2e1f1301}{range}},\ options);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Parse Range header field, capping to the given {\ttfamily size}.
+
+Unspecified ranges such as "{}0-\/"{} require knowledge of your resource length. In the case of a byte range this is of course the total number of bytes. If the Range header field is not given {\ttfamily undefined} is returned, {\ttfamily -\/1} when unsatisfiable, and {\ttfamily -\/2} when syntactically invalid.
+
+When ranges are returned, the array has a "{}type"{} property which is the type of range that is required (most commonly, "{}bytes"{}). Each array element is an object with a "{}start"{} and "{}end"{} property for the portion of the range.
+
+The "{}combine"{} option can be set to {\ttfamily true} and overlapping \& adjacent ranges will be combined into a single range.
+
+NOTE\+: remember that ranges are inclusive, so for example "{}\+Range\+: users=0-\/3"{} should respond with 4 users when available, not 3.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{number\}} & size \\
+\hline
+{\em \{object\}} & \mbox{[}options\mbox{]} \\
+\hline
+{\em \{boolean\}} & \mbox{[}options.\+combine=false\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{number\texorpdfstring{$\vert$}{|}array\} 
+\end{DoxyReturn}
+\Hypertarget{express_2lib_2request_8js_a42c43c76081a7df8ae2954f16ee9338b}\index{request.js@{request.js}!req@{req}}
+\index{req@{req}!request.js@{request.js}}
+\doxysubsubsection{\texorpdfstring{req}{req}}
+{\footnotesize\ttfamily \label{express_2lib_2request_8js_a42c43c76081a7df8ae2954f16ee9338b} 
+var req}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ Object.create(\mbox{\hyperlink{express_2lib_2request_8js_a55f22d498ca401fddca364855629d1d3}{http}}.IncomingMessage.prototype)}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}}.exports\ =\ \mbox{\hyperlink{express_2lib_2request_8js_a42c43c76081a7df8ae2954f16ee9338b}{req}}}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{\mbox{\hyperlink{express_2lib_2request_8js_a42c43c76081a7df8ae2954f16ee9338b}{req}}.get\ =}
+\DoxyCodeLine{\mbox{\hyperlink{express_2lib_2request_8js_a42c43c76081a7df8ae2954f16ee9338b}{req}}.header\ =\ \textcolor{keyword}{function}\ header(\mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}})\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}})\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ TypeError(\textcolor{stringliteral}{'name\ argument\ is\ required\ to\ req.get'});}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (typeof\ \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}\ !==\ \textcolor{stringliteral}{'string'})\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ TypeError(\textcolor{stringliteral}{'name\ must\ be\ a\ string\ to\ req.get'});}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ var\ lc\ =\ \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}.toLowerCase();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{switch}\ (lc)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'referer'}:}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'referrer'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7f2cb2fcdd79bf72cefd29b7bc2d10fa}{headers}}.referrer}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ||\ this.\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7f2cb2fcdd79bf72cefd29b7bc2d10fa}{headers}}.referer;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{\ \ \ \ \ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7f2cb2fcdd79bf72cefd29b7bc2d10fa}{headers}}[lc];}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\doxylink{class_request}{Request} prototype. \Hypertarget{express_2lib_2request_8js_ae2475e10618961c050dcba04e8c42331}\index{request.js@{request.js}!strict@{strict}}
+\index{strict@{strict}!request.js@{request.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{express_2lib_2request_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+
+express Copyright(c) 2009-\/2013 TJ Holowaychuk Copyright(c) 2013 Roman Shtylman Copyright(c) 2014-\/2015 Douglas Christopher Wilson MIT Licensed \Hypertarget{express_2lib_2request_8js_a2efc67136068229eaf03e7ae371b6b25}\index{request.js@{request.js}!typeis@{typeis}}
+\index{typeis@{typeis}!request.js@{request.js}}
+\doxysubsubsection{\texorpdfstring{typeis}{typeis}}
+{\footnotesize\ttfamily \label{express_2lib_2request_8js_a2efc67136068229eaf03e7ae371b6b25} 
+var typeis = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}\mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type}}-\/\mbox{\hyperlink{express_2lib_2request_8js_a5e3afd97276cc403924d1a449a83ea84}{is}}\textquotesingle{})}
+

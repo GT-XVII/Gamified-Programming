@@ -1,0 +1,419 @@
+\doxysection{backend/node\+\_\+modules/gcp-\/metadata/build/src/index.js File Reference}
+\hypertarget{gcp-metadata_2build_2src_2index_8js}{}\label{gcp-metadata_2build_2src_2index_8js}\index{backend/node\_modules/gcp-\/metadata/build/src/index.js@{backend/node\_modules/gcp-\/metadata/build/src/index.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_a7abdd8910336d45e10ad31c9ad5d4367}{get\+Base\+Url}} (base\+Url)
+\item 
+function \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_a2cbb9b8a5c70445ed5f51d7d3979cb79}{validate}} (options)
+\item 
+function \mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_aaed9cce6c8a56097a7b2a0fe633c63cb}{metadata\+Accessor}} (\mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type}}, options=\{\}, no\+Response\+Retries=3, fast\+Fail=\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a5df37b7f02e5cdc7d9412b7f872b8e01}{false}})
+\item 
+function \mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_a9434388b96fba3840689b6919ed0efc8}{fast\+Fail\+Metadata\+Request}} (options)
+\item 
+function \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_a74fffb6adbe5273977764c9c73d189f3}{instance}} (options)
+\item 
+function \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_a409ed45e5e99b90e3531d4fd0809f187}{project}} (options)
+\item 
+function \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_a42e1038ffbecd2f3d80e8222ef442d6d}{universe}} (options)
+\item 
+function \mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_ae8e5c246cbb9d7ac8a63a3dffcab9ef2}{bulk}} (properties)
+\item 
+function \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_af408a944d15eebddbd5e4784fca13a84}{detect\+GCPAvailable\+Retries}} ()
+\item 
+function \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_ac7a06b7a5cfab2dedbd72c79e1947418}{set\+GCPResidency}} (\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+var \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_aad21db4e996a9d643f0c8474ad6f9ab5}{\+\_\+\+\_\+create\+Binding}}
+\item 
+var \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_a2b5229be6d311f9a39b9f93a5399dd42}{\+\_\+\+\_\+export\+Star}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_abcec9dc3ed296b14225d653576cde450}{request\+Timeout}} = \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_a88af58df70be1803496a9d7e40bf4531}{exports.\+set\+GCPResidency}} = \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_a37ef5f55ea90d0675cde4040da0536e3}{exports.\+get\+GCPResidency}} = \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_a5fa8cb6167be2b77a612e2c10b7abfa9}{exports.\+gcp\+Residency\+Cache}} = \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_aaf56af9cf45a8b6b5775a3950dc3c7fa}{exports.\+reset\+Is\+Available\+Cache}} = \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_a5fe04561f6201c00df78fca1b38e510c}{exports.\+is\+Available}} = \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_ad867b1254d26da8c105fbec31ecc7f15}{exports.\+bulk}} = \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_accf4f088914aeed9f204048b2cb5204c}{exports.\+universe}} = \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_a9f9936437366b60c5e081a744e4fb397}{exports.\+project}} = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a1706a36c7994cbe3b35abe2169e75422}{exports.\+instance}} = \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_aedbcbe63b27ea37342798570a2608bac}{exports.\+METADATA\+\_\+\+SERVER\+\_\+\+DETECTION}} = \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_a5d75aee910372a332f69664ecb969c8f}{exports.\+HEADERS}} = \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_a85857b39d29a32db05b71c1cbeebefcc}{exports.\+HEADER\+\_\+\+VALUE}} = exports.\+HEADER\+\_\+\+NAME = exports.\+SECONDARY\+\_\+\+HOST\+\_\+\+ADDRESS = \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_a4dbb61d3ed0a16da87c1cca77c17acc8}{exports.\+HOST\+\_\+\+ADDRESS}} = \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_a868b38f84321e15cad94527ba652800e}{exports.\+BASE\+\_\+\+PATH}} = void 0
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_acebd772c433354e36a6a4a6f15b56286}{gaxios\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}gaxios"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_add284ca33446417391e87cbc1e829224}{json\+Bigint}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}json-\/bigint"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_ac57fbca2f913b13fb30c3465bdab4e8b}{gcp\+\_\+residency\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./gcp-\/residency"{})
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_a868b38f84321e15cad94527ba652800e}{BASE\+\_\+\+PATH}} = \textquotesingle{}/compute\+Metadata/\mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2uuid_2dist_2esm-browser_2v1_8js_a32c2d9d82f64ce86ca1da30b62dd1482}{v1}}\textquotesingle{}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_a4dbb61d3ed0a16da87c1cca77c17acc8}{HOST\+\_\+\+ADDRESS}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_a85857b39d29a32db05b71c1cbeebefcc}{HEADER\+\_\+\+VALUE}} = \textquotesingle{}Google\textquotesingle{}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_a5d75aee910372a332f69664ecb969c8f}{HEADERS}} = Object.\+freeze(\{ \mbox{[}exports.\+HEADER\+\_\+\+NAME\mbox{]}\+: \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_a85857b39d29a32db05b71c1cbeebefcc}{exports.\+HEADER\+\_\+\+VALUE}} \})
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_aedbcbe63b27ea37342798570a2608bac}{METADATA\+\_\+\+SERVER\+\_\+\+DETECTION}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_a1706a36c7994cbe3b35abe2169e75422}{instance}} = instance
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_a9f9936437366b60c5e081a744e4fb397}{project}} = project
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_accf4f088914aeed9f204048b2cb5204c}{universe}} = universe
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_ad867b1254d26da8c105fbec31ecc7f15}{bulk}} = bulk
+\item 
+let \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_a2a55778e259eb4017fd56134a19fe701}{cached\+Is\+Available\+Response}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_a5fe04561f6201c00df78fca1b38e510c}{is\+Available}} = is\+Available
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_aaf56af9cf45a8b6b5775a3950dc3c7fa}{reset\+Is\+Available\+Cache}} = reset\+Is\+Available\+Cache
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_a5fa8cb6167be2b77a612e2c10b7abfa9}{gcp\+Residency\+Cache}} = null
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_a37ef5f55ea90d0675cde4040da0536e3}{get\+GCPResidency}} = get\+GCPResidency
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_a88af58df70be1803496a9d7e40bf4531}{set\+GCPResidency}} = set\+GCPResidency
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{gcp-metadata_2build_2src_2index_8js_ae8e5c246cbb9d7ac8a63a3dffcab9ef2}\index{index.js@{index.js}!bulk@{bulk}}
+\index{bulk@{bulk}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{bulk()}{bulk()}}
+{\footnotesize\ttfamily \label{gcp-metadata_2build_2src_2index_8js_ae8e5c246cbb9d7ac8a63a3dffcab9ef2} 
+function \mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} bulk (\begin{DoxyParamCaption}\item[{}]{properties}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{__get_tag_8js_abace523389c17bce1848e3a427871700}{Promise}}, and \mbox{\hyperlink{uuid_8min_8js_aaa5fef39529cdffdfa257202bb4fda9f}{r}}.
+
+\Hypertarget{gcp-metadata_2build_2src_2index_8js_af408a944d15eebddbd5e4784fca13a84}\index{index.js@{index.js}!detectGCPAvailableRetries@{detectGCPAvailableRetries}}
+\index{detectGCPAvailableRetries@{detectGCPAvailableRetries}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{detectGCPAvailableRetries()}{detectGCPAvailableRetries()}}
+{\footnotesize\ttfamily \label{gcp-metadata_2build_2src_2index_8js_af408a944d15eebddbd5e4784fca13a84} 
+function detect\+GCPAvailable\+Retries (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{ipaddr_8min_8js_abcedab16429ea0641c6596f556f2e102}{process}}.
+
+\Hypertarget{gcp-metadata_2build_2src_2index_8js_a9434388b96fba3840689b6919ed0efc8}\index{index.js@{index.js}!fastFailMetadataRequest@{fastFailMetadataRequest}}
+\index{fastFailMetadataRequest@{fastFailMetadataRequest}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{fastFailMetadataRequest()}{fastFailMetadataRequest()}}
+{\footnotesize\ttfamily \label{gcp-metadata_2build_2src_2index_8js_a9434388b96fba3840689b6919ed0efc8} 
+function \mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} fast\+Fail\+Metadata\+Request (\begin{DoxyParamCaption}\item[{}]{options}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2index_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}}, \mbox{\hyperlink{gaxios_2build_2src_2index_8js_acebd772c433354e36a6a4a6f15b56286}{gaxios\+\_\+1}}, \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_a7abdd8910336d45e10ad31c9ad5d4367}{get\+Base\+Url()}}, \mbox{\hyperlink{__get_tag_8js_abace523389c17bce1848e3a427871700}{Promise}}, \mbox{\hyperlink{express_2lib_2express_8js_abde3c35e3bb7e5225dd7f234c685329c}{res}}, and \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_acf0a8b41f00a22e21672c8b3768a0618}{url}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{gcp-metadata_2build_2src_2index_8js_a9434388b96fba3840689b6919ed0efc8_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{gcp-metadata_2build_2src_2index_8js_a7abdd8910336d45e10ad31c9ad5d4367}\index{index.js@{index.js}!getBaseUrl@{getBaseUrl}}
+\index{getBaseUrl@{getBaseUrl}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{getBaseUrl()}{getBaseUrl()}}
+{\footnotesize\ttfamily \label{gcp-metadata_2build_2src_2index_8js_a7abdd8910336d45e10ad31c9ad5d4367} 
+function get\+Base\+Url (\begin{DoxyParamCaption}\item[{}]{base\+Url}{}\end{DoxyParamCaption})}
+
+Returns the base URL while taking into account the GCE\+\_\+\+METADATA\+\_\+\+HOST environment variable if it exists.
+
+\begin{DoxyReturn}{Returns}
+The base URL, e.\+g., \href{http://169.254.169.254/computeMetadata/v1}{\texttt{ http\+://169.\+254.\+169.\+254/compute\+Metadata/v1}}. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2index_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}}, \mbox{\hyperlink{agent-base_2dist_2index_8js_a84cec47a61a1218c482b5de1674f8c17}{http}}, \mbox{\hyperlink{agent-base_2dist_2helpers_8js_ab3093f9d8507c035b404b9d49bdb40f7}{https}}, and \mbox{\hyperlink{ipaddr_8min_8js_abcedab16429ea0641c6596f556f2e102}{process}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{gcp-metadata_2build_2src_2index_8js_a7abdd8910336d45e10ad31c9ad5d4367_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{gcp-metadata_2build_2src_2index_8js_a74fffb6adbe5273977764c9c73d189f3}\index{index.js@{index.js}!instance@{instance}}
+\index{instance@{instance}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{instance()}{instance()}}
+{\footnotesize\ttfamily \label{gcp-metadata_2build_2src_2index_8js_a74fffb6adbe5273977764c9c73d189f3} 
+function instance (\begin{DoxyParamCaption}\item[{}]{options}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_aaed9cce6c8a56097a7b2a0fe633c63cb}{metadata\+Accessor()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=267pt]{gcp-metadata_2build_2src_2index_8js_a74fffb6adbe5273977764c9c73d189f3_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{gcp-metadata_2build_2src_2index_8js_aaed9cce6c8a56097a7b2a0fe633c63cb}\index{index.js@{index.js}!metadataAccessor@{metadataAccessor}}
+\index{metadataAccessor@{metadataAccessor}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{metadataAccessor()}{metadataAccessor()}}
+{\footnotesize\ttfamily \label{gcp-metadata_2build_2src_2index_8js_aaed9cce6c8a56097a7b2a0fe633c63cb} 
+function \mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} metadata\+Accessor (\begin{DoxyParamCaption}\item[{}]{type}{, }\item[{}]{options}{ = {\ttfamily \{\}}, }\item[{}]{no\+Response\+Retries}{ = {\ttfamily 3}, }\item[{}]{fast\+Fail}{ = {\ttfamily \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a5df37b7f02e5cdc7d9412b7f872b8e01}{false}}}}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=267pt]{gcp-metadata_2build_2src_2index_8js_aaed9cce6c8a56097a7b2a0fe633c63cb_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{gcp-metadata_2build_2src_2index_8js_a409ed45e5e99b90e3531d4fd0809f187}\index{index.js@{index.js}!project@{project}}
+\index{project@{project}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{project()}{project()}}
+{\footnotesize\ttfamily \label{gcp-metadata_2build_2src_2index_8js_a409ed45e5e99b90e3531d4fd0809f187} 
+function project (\begin{DoxyParamCaption}\item[{}]{options}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_aaed9cce6c8a56097a7b2a0fe633c63cb}{metadata\+Accessor()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=259pt]{gcp-metadata_2build_2src_2index_8js_a409ed45e5e99b90e3531d4fd0809f187_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{gcp-metadata_2build_2src_2index_8js_ac7a06b7a5cfab2dedbd72c79e1947418}\index{index.js@{index.js}!setGCPResidency@{setGCPResidency}}
+\index{setGCPResidency@{setGCPResidency}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{setGCPResidency()}{setGCPResidency()}}
+{\footnotesize\ttfamily \label{gcp-metadata_2build_2src_2index_8js_ac7a06b7a5cfab2dedbd72c79e1947418} 
+function set\+GCPResidency (\begin{DoxyParamCaption}\item[{}]{value}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Sets the detected GCP Residency. Useful for forcing metadata server detection behavior.
+
+Set {\ttfamily null} to autodetect the environment (default behavior). \begin{DoxySeeAlso}{See also}
+\doxylink{gcp-metadata_2build_2src_2index_8js_a37ef5f55ea90d0675cde4040da0536e3}{get\+GCPResidency} \doxylink{_0dgoogle-cloud_2storage_2node__modules_2uuid_2dist_2esm-browser_2stringify_8js_adbcbd46c1ee4745c23a2274bf70afe77}{for} getting 
+\end{DoxySeeAlso}
+
+
+References \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2index_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}}, \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_ac57fbca2f913b13fb30c3465bdab4e8b}{gcp\+\_\+residency\+\_\+1}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.
+
+\Hypertarget{gcp-metadata_2build_2src_2index_8js_a42e1038ffbecd2f3d80e8222ef442d6d}\index{index.js@{index.js}!universe@{universe}}
+\index{universe@{universe}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{universe()}{universe()}}
+{\footnotesize\ttfamily \label{gcp-metadata_2build_2src_2index_8js_a42e1038ffbecd2f3d80e8222ef442d6d} 
+function universe (\begin{DoxyParamCaption}\item[{}]{options}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_aaed9cce6c8a56097a7b2a0fe633c63cb}{metadata\+Accessor()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=267pt]{gcp-metadata_2build_2src_2index_8js_a42e1038ffbecd2f3d80e8222ef442d6d_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{gcp-metadata_2build_2src_2index_8js_a2cbb9b8a5c70445ed5f51d7d3979cb79}\index{index.js@{index.js}!validate@{validate}}
+\index{validate@{validate}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{validate()}{validate()}}
+{\footnotesize\ttfamily \label{gcp-metadata_2build_2src_2index_8js_a2cbb9b8a5c70445ed5f51d7d3979cb79} 
+function validate (\begin{DoxyParamCaption}\item[{}]{options}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}, \mbox{\hyperlink{express_2lib_2request_8js_a5e3afd97276cc403924d1a449a83ea84}{is}}, and \mbox{\hyperlink{long_2index_8js_ad7dc44f0ebdb746f4a5b0612ae9315cb}{not}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{gcp-metadata_2build_2src_2index_8js_aad21db4e996a9d643f0c8474ad6f9ab5}\index{index.js@{index.js}!\_\_createBinding@{\_\_createBinding}}
+\index{\_\_createBinding@{\_\_createBinding}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{\_\_createBinding}{\_\_createBinding}}
+{\footnotesize\ttfamily \label{gcp-metadata_2build_2src_2index_8js_aad21db4e996a9d643f0c8474ad6f9ab5} 
+var \+\_\+\+\_\+create\+Binding}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ (\textcolor{keyword}{this}\ \&\&\ this.\mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2cjs_2src_2index_8js_aad21db4e996a9d643f0c8474ad6f9ab5}{\_\_createBinding}})\ ||\ (Object.create\ ?\ (\textcolor{keyword}{function}(\mbox{\hyperlink{uuid_8min_8js_a400dc8109620963da8314d4bdfa14f83}{o}},\ \mbox{\hyperlink{agent-base_2node__modules_2ms_2index_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m}},\ \mbox{\hyperlink{ordered-map_8min_8js_aee3ae2d5bdb3d18f52a8134a79a88d14}{k}},\ k2)\ \{}
+\DoxyCodeLine{\ \ \ \ if\ (k2\ ===\ undefined)\ k2\ =\ k;}
+\DoxyCodeLine{\ \ \ \ var\ desc\ =\ Object.getOwnPropertyDescriptor(m,\ k);}
+\DoxyCodeLine{\ \ \ \ if\ (!desc\ ||\ (\textcolor{stringliteral}{"{}get"{}}\ in\ desc\ ?\ !m.\_\_esModule\ :\ desc.writable\ ||\ desc.configurable))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ desc\ =\ \{\ enumerable:\ true,\ get:\ function()\ \{\ return\ m[k];\ \}\ \};}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ Object.defineProperty(\mbox{\hyperlink{uuid_8min_8js_a400dc8109620963da8314d4bdfa14f83}{o}},\ k2,\ desc);}
+\DoxyCodeLine{\})\ :\ (function(\mbox{\hyperlink{uuid_8min_8js_a400dc8109620963da8314d4bdfa14f83}{o}},\ \mbox{\hyperlink{agent-base_2node__modules_2ms_2index_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m}},\ \mbox{\hyperlink{ordered-map_8min_8js_aee3ae2d5bdb3d18f52a8134a79a88d14}{k}},\ k2)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (k2\ ===\ \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}})\ k2\ =\ \mbox{\hyperlink{ordered-map_8min_8js_aee3ae2d5bdb3d18f52a8134a79a88d14}{k}};}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{uuid_8min_8js_a400dc8109620963da8314d4bdfa14f83}{o}}[k2]\ =\ \mbox{\hyperlink{agent-base_2node__modules_2ms_2index_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m}}[\mbox{\hyperlink{ordered-map_8min_8js_aee3ae2d5bdb3d18f52a8134a79a88d14}{k}}];}
+\DoxyCodeLine{\}))}
+
+\end{DoxyCode}
+Copyright 2018 Google LLC
+
+Distributed under MIT license. See file LICENSE for detail or copy at \href{https://opensource.org/licenses/MIT}{\texttt{ https\+://opensource.\+org/licenses/\+MIT}} \Hypertarget{gcp-metadata_2build_2src_2index_8js_a2b5229be6d311f9a39b9f93a5399dd42}\index{index.js@{index.js}!\_\_exportStar@{\_\_exportStar}}
+\index{\_\_exportStar@{\_\_exportStar}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{\_\_exportStar}{\_\_exportStar}}
+{\footnotesize\ttfamily \label{gcp-metadata_2build_2src_2index_8js_a2b5229be6d311f9a39b9f93a5399dd42} 
+var \+\_\+\+\_\+export\+Star}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ (\textcolor{keyword}{this}\ \&\&\ this.\mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2cjs_2src_2index_8js_a2b5229be6d311f9a39b9f93a5399dd42}{\_\_exportStar}})\ ||\ \textcolor{keyword}{function}(\mbox{\hyperlink{agent-base_2node__modules_2ms_2index_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m}},\ \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2index_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}})\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{for}\ (var\ \mbox{\hyperlink{ordered-map_8min_8js_ab2752257551c1a01e010ceba5d7ec200}{p}}\ in\ \mbox{\hyperlink{agent-base_2node__modules_2ms_2index_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m}})\ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{ordered-map_8min_8js_ab2752257551c1a01e010ceba5d7ec200}{p}}\ !==\ \textcolor{stringliteral}{"{}default"{}}\ \&\&\ !Object.prototype.hasOwnProperty.call(\mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2index_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}},\ \mbox{\hyperlink{ordered-map_8min_8js_ab2752257551c1a01e010ceba5d7ec200}{p}}))\ \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2cjs_2src_2index_8js_aad21db4e996a9d643f0c8474ad6f9ab5}{\_\_createBinding}}(\mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2index_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}},\ \mbox{\hyperlink{agent-base_2node__modules_2ms_2index_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m}},\ \mbox{\hyperlink{ordered-map_8min_8js_ab2752257551c1a01e010ceba5d7ec200}{p}});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{gcp-metadata_2build_2src_2index_8js_a868b38f84321e15cad94527ba652800e}\index{index.js@{index.js}!BASE\_PATH@{BASE\_PATH}}
+\index{BASE\_PATH@{BASE\_PATH}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{BASE\_PATH}{BASE\_PATH}}
+{\footnotesize\ttfamily \label{gcp-metadata_2build_2src_2index_8js_a868b38f84321e15cad94527ba652800e} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} BASE\+\_\+\+PATH = \textquotesingle{}/compute\+Metadata/\mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2uuid_2dist_2esm-browser_2v1_8js_a32c2d9d82f64ce86ca1da30b62dd1482}{v1}}\textquotesingle{}}
+
+\Hypertarget{gcp-metadata_2build_2src_2index_8js_ad867b1254d26da8c105fbec31ecc7f15}\index{index.js@{index.js}!bulk@{bulk}}
+\index{bulk@{bulk}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{bulk}{bulk}}
+{\footnotesize\ttfamily \label{gcp-metadata_2build_2src_2index_8js_ad867b1254d26da8c105fbec31ecc7f15} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} bulk = bulk}
+
+\Hypertarget{gcp-metadata_2build_2src_2index_8js_a2a55778e259eb4017fd56134a19fe701}\index{index.js@{index.js}!cachedIsAvailableResponse@{cachedIsAvailableResponse}}
+\index{cachedIsAvailableResponse@{cachedIsAvailableResponse}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{cachedIsAvailableResponse}{cachedIsAvailableResponse}}
+{\footnotesize\ttfamily \label{gcp-metadata_2build_2src_2index_8js_a2a55778e259eb4017fd56134a19fe701} 
+let cached\+Is\+Available\+Response}
+
+\Hypertarget{gcp-metadata_2build_2src_2index_8js_acebd772c433354e36a6a4a6f15b56286}\index{index.js@{index.js}!gaxios\_1@{gaxios\_1}}
+\index{gaxios\_1@{gaxios\_1}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{gaxios\_1}{gaxios\_1}}
+{\footnotesize\ttfamily \label{gcp-metadata_2build_2src_2index_8js_acebd772c433354e36a6a4a6f15b56286} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} gaxios\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}gaxios"{})}
+
+\Hypertarget{gcp-metadata_2build_2src_2index_8js_ac57fbca2f913b13fb30c3465bdab4e8b}\index{index.js@{index.js}!gcp\_residency\_1@{gcp\_residency\_1}}
+\index{gcp\_residency\_1@{gcp\_residency\_1}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{gcp\_residency\_1}{gcp\_residency\_1}}
+{\footnotesize\ttfamily \label{gcp-metadata_2build_2src_2index_8js_ac57fbca2f913b13fb30c3465bdab4e8b} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} gcp\+\_\+residency\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./gcp-\/residency"{})}
+
+\Hypertarget{gcp-metadata_2build_2src_2index_8js_a5fa8cb6167be2b77a612e2c10b7abfa9}\index{index.js@{index.js}!gcpResidencyCache@{gcpResidencyCache}}
+\index{gcpResidencyCache@{gcpResidencyCache}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{gcpResidencyCache}{gcpResidencyCache}}
+{\footnotesize\ttfamily \label{gcp-metadata_2build_2src_2index_8js_a5fa8cb6167be2b77a612e2c10b7abfa9} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} gcp\+Residency\+Cache = null}
+
+\doxylink{class_a}{A} cache for the detected GCP Residency. \Hypertarget{gcp-metadata_2build_2src_2index_8js_a37ef5f55ea90d0675cde4040da0536e3}\index{index.js@{index.js}!getGCPResidency@{getGCPResidency}}
+\index{getGCPResidency@{getGCPResidency}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{getGCPResidency}{getGCPResidency}}
+{\footnotesize\ttfamily \label{gcp-metadata_2build_2src_2index_8js_a37ef5f55ea90d0675cde4040da0536e3} 
+function get\+GCPResidency (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) = get\+GCPResidency}
+
+Detects GCP Residency. Caches results to reduce costs for subsequent calls.
+
+\begin{DoxySeeAlso}{See also}
+\doxylink{gcp-metadata_2build_2src_2index_8js_a88af58df70be1803496a9d7e40bf4531}{set\+GCPResidency} \doxylink{_0dgoogle-cloud_2storage_2node__modules_2uuid_2dist_2esm-browser_2stringify_8js_adbcbd46c1ee4745c23a2274bf70afe77}{for} setting 
+\end{DoxySeeAlso}
+\Hypertarget{gcp-metadata_2build_2src_2index_8js_a85857b39d29a32db05b71c1cbeebefcc}\index{index.js@{index.js}!HEADER\_VALUE@{HEADER\_VALUE}}
+\index{HEADER\_VALUE@{HEADER\_VALUE}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{HEADER\_VALUE}{HEADER\_VALUE}}
+{\footnotesize\ttfamily \label{gcp-metadata_2build_2src_2index_8js_a85857b39d29a32db05b71c1cbeebefcc} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} HEADER\+\_\+\+VALUE = \textquotesingle{}Google\textquotesingle{}}
+
+\Hypertarget{gcp-metadata_2build_2src_2index_8js_a5d75aee910372a332f69664ecb969c8f}\index{index.js@{index.js}!HEADERS@{HEADERS}}
+\index{HEADERS@{HEADERS}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{HEADERS}{HEADERS}}
+{\footnotesize\ttfamily \label{gcp-metadata_2build_2src_2index_8js_a5d75aee910372a332f69664ecb969c8f} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} HEADERS = Object.\+freeze(\{ \mbox{[}exports.\+HEADER\+\_\+\+NAME\mbox{]}\+: \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_a85857b39d29a32db05b71c1cbeebefcc}{exports.\+HEADER\+\_\+\+VALUE}} \})}
+
+\Hypertarget{gcp-metadata_2build_2src_2index_8js_a4dbb61d3ed0a16da87c1cca77c17acc8}\index{index.js@{index.js}!HOST\_ADDRESS@{HOST\_ADDRESS}}
+\index{HOST\_ADDRESS@{HOST\_ADDRESS}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{HOST\_ADDRESS}{HOST\_ADDRESS}}
+{\footnotesize\ttfamily \label{gcp-metadata_2build_2src_2index_8js_a4dbb61d3ed0a16da87c1cca77c17acc8} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} HOST\+\_\+\+ADDRESS}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{stringliteral}{'http:}}
+\DoxyCodeLine{\textcolor{stringliteral}{exports.SECONDARY\_HOST\_ADDRESS\ =\ '}\mbox{\hyperlink{agent-base_2dist_2index_8js_a84cec47a61a1218c482b5de1674f8c17}{http}}:}
+\DoxyCodeLine{\mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2index_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}}.HEADER\_NAME\ =\ \textcolor{stringliteral}{'Metadata-\/Flavor'}}
+
+\end{DoxyCode}
+\Hypertarget{gcp-metadata_2build_2src_2index_8js_a1706a36c7994cbe3b35abe2169e75422}\index{index.js@{index.js}!instance@{instance}}
+\index{instance@{instance}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{instance}{instance}}
+{\footnotesize\ttfamily \label{gcp-metadata_2build_2src_2index_8js_a1706a36c7994cbe3b35abe2169e75422} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} instance = instance}
+
+\Hypertarget{gcp-metadata_2build_2src_2index_8js_a5fe04561f6201c00df78fca1b38e510c}\index{index.js@{index.js}!isAvailable@{isAvailable}}
+\index{isAvailable@{isAvailable}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{isAvailable}{isAvailable}}
+{\footnotesize\ttfamily \label{gcp-metadata_2build_2src_2index_8js_a5fe04561f6201c00df78fca1b38e510c} 
+function \mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} is\+Available (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) = is\+Available}
+
+Determine if the metadata server is currently available. \Hypertarget{gcp-metadata_2build_2src_2index_8js_add284ca33446417391e87cbc1e829224}\index{index.js@{index.js}!jsonBigint@{jsonBigint}}
+\index{jsonBigint@{jsonBigint}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{jsonBigint}{jsonBigint}}
+{\footnotesize\ttfamily \label{gcp-metadata_2build_2src_2index_8js_add284ca33446417391e87cbc1e829224} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} json\+Bigint = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}json-\/bigint"{})}
+
+\Hypertarget{gcp-metadata_2build_2src_2index_8js_aedbcbe63b27ea37342798570a2608bac}\index{index.js@{index.js}!METADATA\_SERVER\_DETECTION@{METADATA\_SERVER\_DETECTION}}
+\index{METADATA\_SERVER\_DETECTION@{METADATA\_SERVER\_DETECTION}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{METADATA\_SERVER\_DETECTION}{METADATA\_SERVER\_DETECTION}}
+{\footnotesize\ttfamily \label{gcp-metadata_2build_2src_2index_8js_aedbcbe63b27ea37342798570a2608bac} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} METADATA\+\_\+\+SERVER\+\_\+\+DETECTION}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ Object.freeze(\{}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{'assume-\/present'}:\ \textcolor{stringliteral}{"{}don't\ try\ to\ ping\ the\ metadata\ server,\ but\ assume\ it's\ present"{}},}
+\DoxyCodeLine{\ \ \ \ none:\ \textcolor{stringliteral}{"{}don't\ try\ to\ ping\ the\ metadata\ server,\ but\ don't\ try\ to\ use\ it\ either"{}},}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{'bios-\/only'}:\ \textcolor{stringliteral}{"{}treat\ the\ result\ of\ a\ BIOS\ probe\ as\ canonical\ (don't\ fall\ back\ to\ pinging)"{}},}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{'ping-\/only'}:\ \textcolor{stringliteral}{'skip\ the\ BIOS\ probe,\ and\ go\ straight\ to\ pinging'},}
+\DoxyCodeLine{\})}
+
+\end{DoxyCode}
+\doxylink{class_metadata}{Metadata} server detection override options.
+
+Available via {\ttfamily process.\+env.\+METADATA\+\_\+\+SERVER\+\_\+\+DETECTION}. \Hypertarget{gcp-metadata_2build_2src_2index_8js_a9f9936437366b60c5e081a744e4fb397}\index{index.js@{index.js}!project@{project}}
+\index{project@{project}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{project}{project}}
+{\footnotesize\ttfamily \label{gcp-metadata_2build_2src_2index_8js_a9f9936437366b60c5e081a744e4fb397} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} project = project}
+
+\Hypertarget{gcp-metadata_2build_2src_2index_8js_abcec9dc3ed296b14225d653576cde450}\index{index.js@{index.js}!requestTimeout@{requestTimeout}}
+\index{requestTimeout@{requestTimeout}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{requestTimeout}{requestTimeout}}
+{\footnotesize\ttfamily \label{gcp-metadata_2build_2src_2index_8js_abcec9dc3ed296b14225d653576cde450} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} request\+Timeout (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) = \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_a88af58df70be1803496a9d7e40bf4531}{exports.\+set\+GCPResidency}} = \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_a37ef5f55ea90d0675cde4040da0536e3}{exports.\+get\+GCPResidency}} = \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_a5fa8cb6167be2b77a612e2c10b7abfa9}{exports.\+gcp\+Residency\+Cache}} = \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_aaf56af9cf45a8b6b5775a3950dc3c7fa}{exports.\+reset\+Is\+Available\+Cache}} = \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_a5fe04561f6201c00df78fca1b38e510c}{exports.\+is\+Available}} = \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_ad867b1254d26da8c105fbec31ecc7f15}{exports.\+bulk}} = \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_accf4f088914aeed9f204048b2cb5204c}{exports.\+universe}} = \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_a9f9936437366b60c5e081a744e4fb397}{exports.\+project}} = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a1706a36c7994cbe3b35abe2169e75422}{exports.\+instance}} = \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_aedbcbe63b27ea37342798570a2608bac}{exports.\+METADATA\+\_\+\+SERVER\+\_\+\+DETECTION}} = \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_a5d75aee910372a332f69664ecb969c8f}{exports.\+HEADERS}} = \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_a85857b39d29a32db05b71c1cbeebefcc}{exports.\+HEADER\+\_\+\+VALUE}} = exports.\+HEADER\+\_\+\+NAME = exports.\+SECONDARY\+\_\+\+HOST\+\_\+\+ADDRESS = \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_a4dbb61d3ed0a16da87c1cca77c17acc8}{exports.\+HOST\+\_\+\+ADDRESS}} = \mbox{\hyperlink{gcp-metadata_2build_2src_2index_8js_a868b38f84321e15cad94527ba652800e}{exports.\+BASE\+\_\+\+PATH}} = void 0}
+
+Obtain the timeout for requests to the metadata server.
+
+In certain environments and conditions requests can take longer than the default timeout to complete. This function will determine the appropriate timeout based on the environment.
+
+\begin{DoxyReturn}{Returns}
+\{number\} a request timeout duration in milliseconds. 
+\end{DoxyReturn}
+\Hypertarget{gcp-metadata_2build_2src_2index_8js_aaf56af9cf45a8b6b5775a3950dc3c7fa}\index{index.js@{index.js}!resetIsAvailableCache@{resetIsAvailableCache}}
+\index{resetIsAvailableCache@{resetIsAvailableCache}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{resetIsAvailableCache}{resetIsAvailableCache}}
+{\footnotesize\ttfamily \label{gcp-metadata_2build_2src_2index_8js_aaf56af9cf45a8b6b5775a3950dc3c7fa} 
+function reset\+Is\+Available\+Cache (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) = reset\+Is\+Available\+Cache}
+
+reset the memoized \doxylink{gcp-metadata_2build_2src_2index_8js_a5fe04561f6201c00df78fca1b38e510c}{is\+Available()} lookup. \Hypertarget{gcp-metadata_2build_2src_2index_8js_a88af58df70be1803496a9d7e40bf4531}\index{index.js@{index.js}!setGCPResidency@{setGCPResidency}}
+\index{setGCPResidency@{setGCPResidency}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{setGCPResidency}{setGCPResidency}}
+{\footnotesize\ttfamily \label{gcp-metadata_2build_2src_2index_8js_a88af58df70be1803496a9d7e40bf4531} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} set\+GCPResidency = set\+GCPResidency}
+
+\Hypertarget{gcp-metadata_2build_2src_2index_8js_ae2475e10618961c050dcba04e8c42331}\index{index.js@{index.js}!strict@{strict}}
+\index{strict@{strict}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{gcp-metadata_2build_2src_2index_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+
+\Hypertarget{gcp-metadata_2build_2src_2index_8js_accf4f088914aeed9f204048b2cb5204c}\index{index.js@{index.js}!universe@{universe}}
+\index{universe@{universe}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{universe}{universe}}
+{\footnotesize\ttfamily \label{gcp-metadata_2build_2src_2index_8js_accf4f088914aeed9f204048b2cb5204c} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} universe = universe}
+

@@ -1,0 +1,7 @@
+<map id="ClientPool::release" name="ClientPool::release">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,35,137,60"/>
+<area shape="rect" id="Node000002" href="$class_client_pool.html#a5e6b52a6722bdbcb62936ed229c6d7e9" title=" " alt="" coords="204,5,342,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="137,35,188,28,189,33,137,41"/>
+<area shape="rect" id="Node000003" href="$class_client_pool.html#a3b8fe0280f4a2c46404509b1c5709ec1" title=" " alt="" coords="185,55,361,96"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="137,54,170,58,169,64,137,59"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="Bucket::setStorageClass" name="Bucket::setStorageClass">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,38,173,64"/>
+<area shape="rect" id="Node000002" href="$class_bucket.html#ab97a4d74e5d0359f3f600a4415fd1716" title=" " alt="" coords="221,13,363,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="173,38,205,34,206,39,173,43"/>
+<area shape="rect" id="Node000004" href="$ed25519_8js.html#a91b180d4aa37a81e516896ad77d1837c" title=" " alt="" coords="273,62,311,88"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="173,58,257,68,257,74,173,64"/>
+<area shape="rect" id="Node000003" href="$class_bucket.html#aaaad3edeb09fdc61bad9c33a115e580c" title=" " alt="" coords="411,5,581,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="363,23,395,23,395,28,363,28"/>
+</map>

@@ -1,0 +1,155 @@
+\doxysection{backend/node\+\_\+modules/jose/dist/node/cjs/jwks/local.js File Reference}
+\hypertarget{node_2cjs_2jwks_2local_8js}{}\label{node_2cjs_2jwks_2local_8js}\index{backend/node\_modules/jose/dist/node/cjs/jwks/local.js@{backend/node\_modules/jose/dist/node/cjs/jwks/local.js}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_local_j_w_k_set}{Local\+JWKSet}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{node_2cjs_2jwks_2local_8js_a91c4c6b23609af46c1ab2cfb09d7aea4}{get\+Kty\+From\+Alg}} (alg)
+\item 
+function \mbox{\hyperlink{node_2cjs_2jwks_2local_8js_a96c257ca7131ca37cd5c4dd7d210d7e9}{is\+JWKSLike}} (\mbox{\hyperlink{jwt_8js_ada30f8b6b63870d89a3c0afdd231fe92}{jwks}})
+\item 
+function \mbox{\hyperlink{node_2cjs_2jwks_2local_8js_a87afe551ee022cd2ef4cfdd58a27853a}{is\+JWKLike}} (key)
+\item 
+function \mbox{\hyperlink{node_2cjs_2jwks_2local_8js_a0bf06b7d7d55d35fa50bb5c52c831c90}{clone}} (\mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}})
+\item 
+function \mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{node_2cjs_2jwks_2local_8js_a29492f804718c142e45ad5c53a217cff}{import\+With\+Alg\+Cache}} (cache, jwk, alg)
+\item 
+function \mbox{\hyperlink{node_2cjs_2jwks_2local_8js_acb5e4ec7292a8d4e5055805a5f83a42d}{create\+Local\+JWKSet}} (\mbox{\hyperlink{jwt_8js_ada30f8b6b63870d89a3c0afdd231fe92}{jwks}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{node_2cjs_2jwks_2local_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{node_2cjs_2jwks_2local_8js_a9e33f7f81f4720fea1bc64ad27af1e2a}{create\+Local\+JWKSet}} = exports.\+Local\+JWKSet = \mbox{\hyperlink{node_2cjs_2jwks_2local_8js_aa3ded7b910752afb564bc2cbad66a7f8}{exports.\+is\+JWKSLike}} = void 0
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{node_2cjs_2jwks_2local_8js_ab1dfa893c968e2bd885328515d657e1e}{import\+\_\+js\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../key/import.\+js"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{node_2cjs_2jwks_2local_8js_a285fbd72467b60dd40c49c8c9166b064}{errors\+\_\+js\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../util/errors.\+js"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{node_2cjs_2jwks_2local_8js_ae1572e93e60cfc2d4f800b860edc05b8}{is\+\_\+object\+\_\+js\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../lib/is\+\_\+object.\+js"{})
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{node_2cjs_2jwks_2local_8js_aa3ded7b910752afb564bc2cbad66a7f8}{is\+JWKSLike}} = is\+JWKSLike
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{node_2cjs_2jwks_2local_8js_ab174f4aae0ebfe46ac92163c6e8fdf9c}{Local\+JWKSet}} = Local\+JWKSet
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{node_2cjs_2jwks_2local_8js_a0bf06b7d7d55d35fa50bb5c52c831c90}\index{local.js@{local.js}!clone@{clone}}
+\index{clone@{clone}!local.js@{local.js}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \label{node_2cjs_2jwks_2local_8js_a0bf06b7d7d55d35fa50bb5c52c831c90} 
+function clone (\begin{DoxyParamCaption}\item[{}]{obj}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{json-bigint_2lib_2stringify_8js_aec316efdeb7b2e5358b7d50869858da1}{JSON}}, and \mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}.
+
+\Hypertarget{node_2cjs_2jwks_2local_8js_acb5e4ec7292a8d4e5055805a5f83a42d}\index{local.js@{local.js}!createLocalJWKSet@{createLocalJWKSet}}
+\index{createLocalJWKSet@{createLocalJWKSet}!local.js@{local.js}}
+\doxysubsubsection{\texorpdfstring{createLocalJWKSet()}{createLocalJWKSet()}}
+{\footnotesize\ttfamily \label{node_2cjs_2jwks_2local_8js_acb5e4ec7292a8d4e5055805a5f83a42d} 
+function create\+Local\+JWKSet (\begin{DoxyParamCaption}\item[{}]{jwks}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}}, \mbox{\hyperlink{jwt_8js_ada30f8b6b63870d89a3c0afdd231fe92}{jwks}}, \mbox{\hyperlink{node_2cjs_2jwks_2local_8js_ab174f4aae0ebfe46ac92163c6e8fdf9c}{Local\+JWKSet}}, and \mbox{\hyperlink{util_2dist_2index_8cjs_8js_a87da3d8264af1c9427605148f20dd9c4}{token}}.
+
+\Hypertarget{node_2cjs_2jwks_2local_8js_a91c4c6b23609af46c1ab2cfb09d7aea4}\index{local.js@{local.js}!getKtyFromAlg@{getKtyFromAlg}}
+\index{getKtyFromAlg@{getKtyFromAlg}!local.js@{local.js}}
+\doxysubsubsection{\texorpdfstring{getKtyFromAlg()}{getKtyFromAlg()}}
+{\footnotesize\ttfamily \label{node_2cjs_2jwks_2local_8js_a91c4c6b23609af46c1ab2cfb09d7aea4} 
+function get\+Kty\+From\+Alg (\begin{DoxyParamCaption}\item[{}]{alg}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{node_2cjs_2jwks_2local_8js_a285fbd72467b60dd40c49c8c9166b064}{errors\+\_\+js\+\_\+1}}.
+
+\Hypertarget{node_2cjs_2jwks_2local_8js_a29492f804718c142e45ad5c53a217cff}\index{local.js@{local.js}!importWithAlgCache@{importWithAlgCache}}
+\index{importWithAlgCache@{importWithAlgCache}!local.js@{local.js}}
+\doxysubsubsection{\texorpdfstring{importWithAlgCache()}{importWithAlgCache()}}
+{\footnotesize\ttfamily \label{node_2cjs_2jwks_2local_8js_a29492f804718c142e45ad5c53a217cff} 
+function \mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} import\+With\+Alg\+Cache (\begin{DoxyParamCaption}\item[{}]{cache}{, }\item[{}]{jwk}{, }\item[{}]{alg}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{node_2cjs_2jwks_2local_8js_a285fbd72467b60dd40c49c8c9166b064}{errors\+\_\+js\+\_\+1}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7abb73f4f9b358b06de4d5253980de9a}{ext}}, \mbox{\hyperlink{node_2cjs_2jwks_2local_8js_ab1dfa893c968e2bd885328515d657e1e}{import\+\_\+js\+\_\+1}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}.
+
+\Hypertarget{node_2cjs_2jwks_2local_8js_a87afe551ee022cd2ef4cfdd58a27853a}\index{local.js@{local.js}!isJWKLike@{isJWKLike}}
+\index{isJWKLike@{isJWKLike}!local.js@{local.js}}
+\doxysubsubsection{\texorpdfstring{isJWKLike()}{isJWKLike()}}
+{\footnotesize\ttfamily \label{node_2cjs_2jwks_2local_8js_a87afe551ee022cd2ef4cfdd58a27853a} 
+function is\+JWKLike (\begin{DoxyParamCaption}\item[{}]{key}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{node_2cjs_2jwks_2local_8js_ae1572e93e60cfc2d4f800b860edc05b8}{is\+\_\+object\+\_\+js\+\_\+1}}.
+
+\Hypertarget{node_2cjs_2jwks_2local_8js_a96c257ca7131ca37cd5c4dd7d210d7e9}\index{local.js@{local.js}!isJWKSLike@{isJWKSLike}}
+\index{isJWKSLike@{isJWKSLike}!local.js@{local.js}}
+\doxysubsubsection{\texorpdfstring{isJWKSLike()}{isJWKSLike()}}
+{\footnotesize\ttfamily \label{node_2cjs_2jwks_2local_8js_a96c257ca7131ca37cd5c4dd7d210d7e9} 
+function is\+JWKSLike (\begin{DoxyParamCaption}\item[{}]{jwks}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{src_2util_2minimal_8js_a325c4e317c38d8497130ebce7670be2f}{Array}}, \mbox{\hyperlink{browser_2jwks_2local_8js_a87afe551ee022cd2ef4cfdd58a27853a}{is\+JWKLike()}}, and \mbox{\hyperlink{jwt_8js_ada30f8b6b63870d89a3c0afdd231fe92}{jwks}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=249pt]{node_2cjs_2jwks_2local_8js_a96c257ca7131ca37cd5c4dd7d210d7e9_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{node_2cjs_2jwks_2local_8js_a9e33f7f81f4720fea1bc64ad27af1e2a}\index{local.js@{local.js}!createLocalJWKSet@{createLocalJWKSet}}
+\index{createLocalJWKSet@{createLocalJWKSet}!local.js@{local.js}}
+\doxysubsubsection{\texorpdfstring{createLocalJWKSet}{createLocalJWKSet}}
+{\footnotesize\ttfamily \label{node_2cjs_2jwks_2local_8js_a9e33f7f81f4720fea1bc64ad27af1e2a} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} create\+Local\+JWKSet = exports.\+Local\+JWKSet = \mbox{\hyperlink{node_2cjs_2jwks_2local_8js_aa3ded7b910752afb564bc2cbad66a7f8}{exports.\+is\+JWKSLike}} = void 0}
+
+\Hypertarget{node_2cjs_2jwks_2local_8js_a285fbd72467b60dd40c49c8c9166b064}\index{local.js@{local.js}!errors\_js\_1@{errors\_js\_1}}
+\index{errors\_js\_1@{errors\_js\_1}!local.js@{local.js}}
+\doxysubsubsection{\texorpdfstring{errors\_js\_1}{errors\_js\_1}}
+{\footnotesize\ttfamily \label{node_2cjs_2jwks_2local_8js_a285fbd72467b60dd40c49c8c9166b064} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} errors\+\_\+js\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../util/errors.\+js"{})}
+
+\Hypertarget{node_2cjs_2jwks_2local_8js_ab1dfa893c968e2bd885328515d657e1e}\index{local.js@{local.js}!import\_js\_1@{import\_js\_1}}
+\index{import\_js\_1@{import\_js\_1}!local.js@{local.js}}
+\doxysubsubsection{\texorpdfstring{import\_js\_1}{import\_js\_1}}
+{\footnotesize\ttfamily \label{node_2cjs_2jwks_2local_8js_ab1dfa893c968e2bd885328515d657e1e} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} import\+\_\+js\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../key/import.\+js"{})}
+
+\Hypertarget{node_2cjs_2jwks_2local_8js_ae1572e93e60cfc2d4f800b860edc05b8}\index{local.js@{local.js}!is\_object\_js\_1@{is\_object\_js\_1}}
+\index{is\_object\_js\_1@{is\_object\_js\_1}!local.js@{local.js}}
+\doxysubsubsection{\texorpdfstring{is\_object\_js\_1}{is\_object\_js\_1}}
+{\footnotesize\ttfamily \label{node_2cjs_2jwks_2local_8js_ae1572e93e60cfc2d4f800b860edc05b8} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} is\+\_\+object\+\_\+js\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../lib/is\+\_\+object.\+js"{})}
+
+\Hypertarget{node_2cjs_2jwks_2local_8js_aa3ded7b910752afb564bc2cbad66a7f8}\index{local.js@{local.js}!isJWKSLike@{isJWKSLike}}
+\index{isJWKSLike@{isJWKSLike}!local.js@{local.js}}
+\doxysubsubsection{\texorpdfstring{isJWKSLike}{isJWKSLike}}
+{\footnotesize\ttfamily \label{node_2cjs_2jwks_2local_8js_aa3ded7b910752afb564bc2cbad66a7f8} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} is\+JWKSLike = is\+JWKSLike}
+
+\Hypertarget{node_2cjs_2jwks_2local_8js_ab174f4aae0ebfe46ac92163c6e8fdf9c}\index{local.js@{local.js}!LocalJWKSet@{LocalJWKSet}}
+\index{LocalJWKSet@{LocalJWKSet}!local.js@{local.js}}
+\doxysubsubsection{\texorpdfstring{LocalJWKSet}{LocalJWKSet}}
+{\footnotesize\ttfamily \label{node_2cjs_2jwks_2local_8js_ab174f4aae0ebfe46ac92163c6e8fdf9c} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} Local\+JWKSet = Local\+JWKSet}
+
+\Hypertarget{node_2cjs_2jwks_2local_8js_ae2475e10618961c050dcba04e8c42331}\index{local.js@{local.js}!strict@{strict}}
+\index{strict@{strict}!local.js@{local.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{node_2cjs_2jwks_2local_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+

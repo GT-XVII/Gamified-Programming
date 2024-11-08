@@ -1,0 +1,32 @@
+\doxysection{backend/node\+\_\+modules/jose/dist/browser/runtime/digest.js File Reference}
+\hypertarget{browser_2runtime_2digest_8js}{}\label{browser_2runtime_2digest_8js}\index{backend/node\_modules/jose/dist/browser/runtime/digest.js@{backend/node\_modules/jose/dist/browser/runtime/digest.js}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{component_2dist_2esm_2index_8esm2017_8js_a953be46b94f595d839e88a6d3d270309}{import}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a3eca37c9aac9a17870baa116339724e3}{crypto}} from \mbox{\hyperlink{node_2cjs_2runtime_2webcrypto_8js_a42e078a6a9436717937db17cb78eaff3}{webcrypto}} \mbox{\hyperlink{browser_2runtime_2digest_8js_aab06c07f227fab4249e372906e3fb08d}{js}}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{browser_2runtime_2digest_8js_a54d3c9201937d07375b3cdef4258dc37}{digest}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{browser_2runtime_2digest_8js_a54d3c9201937d07375b3cdef4258dc37}\index{digest.js@{digest.js}!digest@{digest}}
+\index{digest@{digest}!digest.js@{digest.js}}
+\doxysubsubsection{\texorpdfstring{digest}{digest}}
+{\footnotesize\ttfamily \label{browser_2runtime_2digest_8js_a54d3c9201937d07375b3cdef4258dc37} 
+export \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2index_8js_a48acd3189d40b017f47c93b673b8b8f6}{default}} digest}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}}\ (algorithm,\ \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}})\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{const}\ subtleDigest\ =\ \`{}SHA-\/\mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}\{algorithm.slice(-\/3)\}\`{};}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{__clone_array_buffer_8js_a23efaf497399fa716c3e05b817cb7d0c}{Uint8Array}}(await\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a3eca37c9aac9a17870baa116339724e3}{crypto}}.subtle.digest(subtleDigest,\ \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}));}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{browser_2runtime_2digest_8js_aab06c07f227fab4249e372906e3fb08d}\index{digest.js@{digest.js}!js@{js}}
+\index{js@{js}!digest.js@{digest.js}}
+\doxysubsubsection{\texorpdfstring{js}{js}}
+{\footnotesize\ttfamily \label{browser_2runtime_2digest_8js_aab06c07f227fab4249e372906e3fb08d} 
+\mbox{\hyperlink{component_2dist_2esm_2index_8esm2017_8js_a953be46b94f595d839e88a6d3d270309}{import}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a3eca37c9aac9a17870baa116339724e3}{crypto}} from \mbox{\hyperlink{node_2cjs_2runtime_2webcrypto_8js_a42e078a6a9436717937db17cb78eaff3}{webcrypto}} js}
+

@@ -1,0 +1,114 @@
+\doxysection{Subchannel\+Pool Class Reference}
+\hypertarget{class_subchannel_pool}{}\label{class_subchannel_pool}\index{SubchannelPool@{SubchannelPool}}
+
+
+Collaboration diagram for Subchannel\+Pool\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{class_subchannel_pool__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_subchannel_pool_acd46eb5404a1b23937cb770ea2d1af3b}{constructor}} ()
+\item 
+\mbox{\hyperlink{class_subchannel_pool_a3261b2890513fe0601e980b966a2eb48}{unref\+Unused\+Subchannels}} ()
+\item 
+\mbox{\hyperlink{class_subchannel_pool_a642c8bdb0361c1230752c2c09f4ea7cc}{ensure\+Cleanup\+Task}} ()
+\item 
+\mbox{\hyperlink{class_subchannel_pool_aa62579bd003985dea1400154fe25c7f3}{get\+Or\+Create\+Subchannel}} (channel\+Target\+Uri, subchannel\+Target, channel\+Arguments, channel\+Credentials)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_subchannel_pool_acd46eb5404a1b23937cb770ea2d1af3b}\index{SubchannelPool@{SubchannelPool}!constructor@{constructor}}
+\index{constructor@{constructor}!SubchannelPool@{SubchannelPool}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_subchannel_pool_acd46eb5404a1b23937cb770ea2d1af3b} 
+Subchannel\+Pool\+::constructor (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\doxylink{class_a}{A} pool of subchannels use for making connections. Subchannels with the exact same parameters will be reused. \doxylink{class_a}{A} timer of a task performing a periodic subchannel cleanup.
+
+References \mbox{\hyperlink{_0dprotobufjs_2pool_2tests_2index_8js_a313c537afe006a57ae27f8660e027191}{pool}}.
+
+\Hypertarget{class_subchannel_pool_a642c8bdb0361c1230752c2c09f4ea7cc}\index{SubchannelPool@{SubchannelPool}!ensureCleanupTask@{ensureCleanupTask}}
+\index{ensureCleanupTask@{ensureCleanupTask}!SubchannelPool@{SubchannelPool}}
+\doxysubsubsection{\texorpdfstring{ensureCleanupTask()}{ensureCleanupTask()}}
+{\footnotesize\ttfamily \label{class_subchannel_pool_a642c8bdb0361c1230752c2c09f4ea7cc} 
+Subchannel\+Pool\+::ensure\+Cleanup\+Task (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Ensures that the cleanup task is spawned. 
+
+References \mbox{\hyperlink{logger_2dist_2esm_2index_8esm5_8js_a0adf123df8967a14b5bdd9ff3bbe2d0c}{\+\_\+a}}, \mbox{\hyperlink{logging_8js_a53284eb14d953f3ba58806fc49cd4f7c}{\+\_\+b}}, \mbox{\hyperlink{subchannel-pool_8js_afbe9497349df888c29f5e044dec427ea}{REF\+\_\+\+CHECK\+\_\+\+INTERVAL}}, and \mbox{\hyperlink{class_subchannel_pool_a3261b2890513fe0601e980b966a2eb48}{unref\+Unused\+Subchannels()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_subchannel_pool_a642c8bdb0361c1230752c2c09f4ea7cc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_subchannel_pool_a642c8bdb0361c1230752c2c09f4ea7cc_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_subchannel_pool_aa62579bd003985dea1400154fe25c7f3}\index{SubchannelPool@{SubchannelPool}!getOrCreateSubchannel@{getOrCreateSubchannel}}
+\index{getOrCreateSubchannel@{getOrCreateSubchannel}!SubchannelPool@{SubchannelPool}}
+\doxysubsubsection{\texorpdfstring{getOrCreateSubchannel()}{getOrCreateSubchannel()}}
+{\footnotesize\ttfamily \label{class_subchannel_pool_aa62579bd003985dea1400154fe25c7f3} 
+Subchannel\+Pool\+::get\+Or\+Create\+Subchannel (\begin{DoxyParamCaption}\item[{}]{channel\+Target\+Uri}{, }\item[{}]{subchannel\+Target}{, }\item[{}]{channel\+Arguments}{, }\item[{}]{channel\+Credentials}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get a subchannel if one already exists with exactly matching parameters. Otherwise, create and save a subchannel with those parameters. 
+\begin{DoxyParams}{Parameters}
+{\em channel\+Target} & \\
+\hline
+{\em subchannel\+Target} & \\
+\hline
+{\em channel\+Arguments} & \\
+\hline
+{\em channel\+Credentials} & \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{subchannel-pool_8js_ac2e9db306145ff5da0d0504e0c5e7b17}{channel\+\_\+options\+\_\+1}}, \mbox{\hyperlink{class_subchannel_pool_a642c8bdb0361c1230752c2c09f4ea7cc}{ensure\+Cleanup\+Task()}}, \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}, \mbox{\hyperlink{_0dprotobufjs_2pool_2tests_2index_8js_a313c537afe006a57ae27f8660e027191}{pool}}, \mbox{\hyperlink{subchannel-pool_8js_ad41fcb9ac932ac2712b2cba62cb95cc3}{subchannel\+\_\+1}}, \mbox{\hyperlink{subchannel-pool_8js_a46c0e253ac00dface70796e150cad858}{subchannel\+\_\+address\+\_\+1}}, \mbox{\hyperlink{subchannel-pool_8js_a785b2f8635cf561e8e3eee3e02fe9ad2}{transport\+\_\+1}}, and \mbox{\hyperlink{subchannel-pool_8js_a5a0788f0fd3744f268bfd27b3acc9857}{uri\+\_\+parser\+\_\+1}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_subchannel_pool_aa62579bd003985dea1400154fe25c7f3_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_subchannel_pool_a3261b2890513fe0601e980b966a2eb48}\index{SubchannelPool@{SubchannelPool}!unrefUnusedSubchannels@{unrefUnusedSubchannels}}
+\index{unrefUnusedSubchannels@{unrefUnusedSubchannels}!SubchannelPool@{SubchannelPool}}
+\doxysubsubsection{\texorpdfstring{unrefUnusedSubchannels()}{unrefUnusedSubchannels()}}
+{\footnotesize\ttfamily \label{class_subchannel_pool_a3261b2890513fe0601e980b966a2eb48} 
+Subchannel\+Pool\+::unref\+Unused\+Subchannels (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Unrefs all unused subchannels and cancels the cleanup task if all subchannels have been unrefed. 
+
+References \mbox{\hyperlink{_0dprotobufjs_2pool_2tests_2index_8js_a313c537afe006a57ae27f8660e027191}{pool}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_subchannel_pool_a3261b2890513fe0601e980b966a2eb48_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/@grpc/grpc-\/js/build/src/\mbox{\hyperlink{subchannel-pool_8js}{subchannel-\/pool.\+js}}\end{DoxyCompactItemize}

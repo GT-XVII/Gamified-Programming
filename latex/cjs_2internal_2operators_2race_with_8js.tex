@@ -1,0 +1,93 @@
+\doxysection{backend/node\+\_\+modules/rxjs/dist/cjs/internal/operators/race\+With.js File Reference}
+\hypertarget{cjs_2internal_2operators_2race_with_8js}{}\label{cjs_2internal_2operators_2race_with_8js}\index{backend/node\_modules/rxjs/dist/cjs/internal/operators/raceWith.js@{backend/node\_modules/rxjs/dist/cjs/internal/operators/raceWith.js}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{cjs_2internal_2operators_2race_with_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+var \mbox{\hyperlink{cjs_2internal_2operators_2race_with_8js_ac2bb750999c1807e9c61dbbc385bda88}{\+\_\+\+\_\+read}}
+\item 
+var \mbox{\hyperlink{cjs_2internal_2operators_2race_with_8js_aff39b60b9d9ed7566ea206262596581d}{\+\_\+\+\_\+spread\+Array}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{cjs_2internal_2operators_2race_with_8js_a1d7fa21e392fe1087162010fa0696272}{race\+With}} = void 0
+\item 
+var \mbox{\hyperlink{cjs_2internal_2operators_2race_with_8js_a50da984a854e67e4f2d4c28baede85f7}{race\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../observable/race"{})
+\item 
+var \mbox{\hyperlink{cjs_2internal_2operators_2race_with_8js_a18d0aa1dc242a92d1a5faf479b203e7b}{lift\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../util/lift"{})
+\item 
+var \mbox{\hyperlink{cjs_2internal_2operators_2race_with_8js_a25ece0cf0f492f8d6a167a05e7ae0d78}{identity\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../util/identity"{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{cjs_2internal_2operators_2race_with_8js_ac2bb750999c1807e9c61dbbc385bda88}\index{raceWith.js@{raceWith.js}!\_\_read@{\_\_read}}
+\index{\_\_read@{\_\_read}!raceWith.js@{raceWith.js}}
+\doxysubsubsection{\texorpdfstring{\_\_read}{\_\_read}}
+{\footnotesize\ttfamily \label{cjs_2internal_2operators_2race_with_8js_ac2bb750999c1807e9c61dbbc385bda88} 
+var \+\_\+\+\_\+read}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ (\textcolor{keyword}{this}\ \&\&\ this.\mbox{\hyperlink{cjs_2internal_2operators_2race_with_8js_ac2bb750999c1807e9c61dbbc385bda88}{\_\_read}})\ ||\ \textcolor{keyword}{function}\ (\mbox{\hyperlink{uuid_8min_8js_a400dc8109620963da8314d4bdfa14f83}{o}},\ \mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}})\ \{}
+\DoxyCodeLine{\ \ \ \ var\ \mbox{\hyperlink{agent-base_2node__modules_2ms_2index_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m}}\ =\ typeof\ \mbox{\hyperlink{__base_get_tag_8js_a9223501a4f1d046befc3fb8f0bf5c1e4}{Symbol}}\ ===\ \textcolor{stringliteral}{"{}function"{}}\ \&\&\ \mbox{\hyperlink{uuid_8min_8js_a400dc8109620963da8314d4bdfa14f83}{o}}[\mbox{\hyperlink{__base_get_tag_8js_a9223501a4f1d046befc3fb8f0bf5c1e4}{Symbol}}.iterator];}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{agent-base_2node__modules_2ms_2index_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m}})\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{uuid_8min_8js_a400dc8109620963da8314d4bdfa14f83}{o}};}
+\DoxyCodeLine{\ \ \ \ var\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ =\ \mbox{\hyperlink{agent-base_2node__modules_2ms_2index_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m}}.call(\mbox{\hyperlink{uuid_8min_8js_a400dc8109620963da8314d4bdfa14f83}{o}}),\ \mbox{\hyperlink{uuid_8min_8js_aaa5fef39529cdffdfa257202bb4fda9f}{r}},\ ar\ =\ [],\ \mbox{\hyperlink{firestore__admin__v1__proto__api_8js_a08a4415e9d594ff960030b921d42b91e}{e}};}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ ((\mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}\ ===\ \textcolor{keywordtype}{void}\ 0\ ||\ \mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}-\/-\/\ >\ 0)\ \&\&\ !(\mbox{\hyperlink{uuid_8min_8js_aaa5fef39529cdffdfa257202bb4fda9f}{r}}\ =\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}.next()).done)\ ar.push(\mbox{\hyperlink{uuid_8min_8js_aaa5fef39529cdffdfa257202bb4fda9f}{r}}.value);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{catch}\ (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}})\ \{\ \mbox{\hyperlink{firestore__admin__v1__proto__api_8js_a08a4415e9d594ff960030b921d42b91e}{e}}\ =\ \{\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}}:\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}}\ \};\ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{finally}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{uuid_8min_8js_aaa5fef39529cdffdfa257202bb4fda9f}{r}}\ \&\&\ !\mbox{\hyperlink{uuid_8min_8js_aaa5fef39529cdffdfa257202bb4fda9f}{r}}.done\ \&\&\ (\mbox{\hyperlink{agent-base_2node__modules_2ms_2index_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m}}\ =\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}[\textcolor{stringliteral}{"{}return"{}}]))\ \mbox{\hyperlink{agent-base_2node__modules_2ms_2index_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m}}.call(\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{finally}\ \{\ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{firestore__admin__v1__proto__api_8js_a08a4415e9d594ff960030b921d42b91e}{e}})\ \textcolor{keywordflow}{throw}\ \mbox{\hyperlink{firestore__admin__v1__proto__api_8js_a08a4415e9d594ff960030b921d42b91e}{e}}.error;\ \}}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ ar;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{cjs_2internal_2operators_2race_with_8js_aff39b60b9d9ed7566ea206262596581d}\index{raceWith.js@{raceWith.js}!\_\_spreadArray@{\_\_spreadArray}}
+\index{\_\_spreadArray@{\_\_spreadArray}!raceWith.js@{raceWith.js}}
+\doxysubsubsection{\texorpdfstring{\_\_spreadArray}{\_\_spreadArray}}
+{\footnotesize\ttfamily \label{cjs_2internal_2operators_2race_with_8js_aff39b60b9d9ed7566ea206262596581d} 
+var \+\_\+\+\_\+spread\+Array}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ (\textcolor{keyword}{this}\ \&\&\ this.\mbox{\hyperlink{cjs_2internal_2operators_2race_with_8js_aff39b60b9d9ed7566ea206262596581d}{\_\_spreadArray}})\ ||\ \textcolor{keyword}{function}\ (to,\ from)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{for}\ (var\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ =\ 0,\ il\ =\ from.length,\ \mbox{\hyperlink{ordered-map_8min_8js_a2e0772d176c27e9cea01defba2a9575a}{j}}\ =\ to.length;\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ <\ il;\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}++,\ \mbox{\hyperlink{ordered-map_8min_8js_a2e0772d176c27e9cea01defba2a9575a}{j}}++)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ to[\mbox{\hyperlink{ordered-map_8min_8js_a2e0772d176c27e9cea01defba2a9575a}{j}}]\ =\ from[\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}];}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ to;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{cjs_2internal_2operators_2race_with_8js_a25ece0cf0f492f8d6a167a05e7ae0d78}\index{raceWith.js@{raceWith.js}!identity\_1@{identity\_1}}
+\index{identity\_1@{identity\_1}!raceWith.js@{raceWith.js}}
+\doxysubsubsection{\texorpdfstring{identity\_1}{identity\_1}}
+{\footnotesize\ttfamily \label{cjs_2internal_2operators_2race_with_8js_a25ece0cf0f492f8d6a167a05e7ae0d78} 
+var identity\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../util/identity"{})}
+
+\Hypertarget{cjs_2internal_2operators_2race_with_8js_a18d0aa1dc242a92d1a5faf479b203e7b}\index{raceWith.js@{raceWith.js}!lift\_1@{lift\_1}}
+\index{lift\_1@{lift\_1}!raceWith.js@{raceWith.js}}
+\doxysubsubsection{\texorpdfstring{lift\_1}{lift\_1}}
+{\footnotesize\ttfamily \label{cjs_2internal_2operators_2race_with_8js_a18d0aa1dc242a92d1a5faf479b203e7b} 
+var lift\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../util/lift"{})}
+
+\Hypertarget{cjs_2internal_2operators_2race_with_8js_a50da984a854e67e4f2d4c28baede85f7}\index{raceWith.js@{raceWith.js}!race\_1@{race\_1}}
+\index{race\_1@{race\_1}!raceWith.js@{raceWith.js}}
+\doxysubsubsection{\texorpdfstring{race\_1}{race\_1}}
+{\footnotesize\ttfamily \label{cjs_2internal_2operators_2race_with_8js_a50da984a854e67e4f2d4c28baede85f7} 
+var race\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../observable/race"{})}
+
+\Hypertarget{cjs_2internal_2operators_2race_with_8js_a1d7fa21e392fe1087162010fa0696272}\index{raceWith.js@{raceWith.js}!raceWith@{raceWith}}
+\index{raceWith@{raceWith}!raceWith.js@{raceWith.js}}
+\doxysubsubsection{\texorpdfstring{raceWith}{raceWith}}
+{\footnotesize\ttfamily \label{cjs_2internal_2operators_2race_with_8js_a1d7fa21e392fe1087162010fa0696272} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} race\+With = void 0}
+
+\Hypertarget{cjs_2internal_2operators_2race_with_8js_ae2475e10618961c050dcba04e8c42331}\index{raceWith.js@{raceWith.js}!strict@{strict}}
+\index{strict@{strict}!raceWith.js@{raceWith.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{cjs_2internal_2operators_2race_with_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+

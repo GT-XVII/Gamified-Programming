@@ -1,0 +1,432 @@
+\doxysection{Security\+Rules Class Reference}
+\hypertarget{class_security_rules}{}\label{class_security_rules}\index{SecurityRules@{SecurityRules}}
+
+
+Collaboration diagram for Security\+Rules\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{class_security_rules__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_security_rules_a1249a8dd7b256b5151c0ed1dc0d4f433}{constructor}} (\mbox{\hyperlink{database_2dist_2index_8cjs_8js_a7b225fcb720e4d5ed2bbf60e28a25e6d}{app}})
+\item 
+\mbox{\hyperlink{class_security_rules_a8e08a864939c59bc3adb8ff3bbe78a73}{get\+Ruleset}} (\mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}})
+\item 
+\mbox{\hyperlink{class_security_rules_ab0beb4027c0f0fc9c0328f366d0ced23}{get\+Firestore\+Ruleset}} ()
+\item 
+\mbox{\hyperlink{class_security_rules_ac8b19474750063de8f6959bf99478aa7}{release\+Firestore\+Ruleset\+From\+Source}} (\mbox{\hyperlink{bench_8js_a4f85c6ae2a8cdd19ca9b7006b1860d40}{source}})
+\item 
+\mbox{\hyperlink{class_security_rules_ad09180f2aac20b5992139df98e57d74b}{release\+Firestore\+Ruleset}} (ruleset)
+\item 
+\mbox{\hyperlink{class_security_rules_a3febd3f9cbbc7269fbf4d337d557be26}{get\+Storage\+Ruleset}} (bucket)
+\item 
+\mbox{\hyperlink{class_security_rules_aecd7ef177ad9b8595500aae3de7d94be}{release\+Storage\+Ruleset\+From\+Source}} (\mbox{\hyperlink{bench_8js_a4f85c6ae2a8cdd19ca9b7006b1860d40}{source}}, bucket)
+\item 
+\mbox{\hyperlink{class_security_rules_a48b3db7524106369d1f689c6e117de62}{release\+Storage\+Ruleset}} (ruleset, bucket)
+\item 
+\mbox{\hyperlink{class_security_rules_a16e2a50b9f3cf60adf2e0f725e369c2e}{create\+Rules\+File\+From\+Source}} (\mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}, \mbox{\hyperlink{bench_8js_a4f85c6ae2a8cdd19ca9b7006b1860d40}{source}})
+\item 
+\mbox{\hyperlink{class_security_rules_afd629b62eefe2769da2dc054d2063514}{create\+Ruleset}} (\mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a4abaedaa5078f55d753a41e28ef4b9a1}{file}})
+\item 
+\mbox{\hyperlink{class_security_rules_a46f5db2c24ff4ab741a01982d2ca0b2c}{delete\+Ruleset}} (\mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}})
+\item 
+\mbox{\hyperlink{class_security_rules_ae1d001b9f98d7056cded919d8bc89943}{list\+Ruleset\+Metadata}} (page\+Size=100, next\+Page\+Token)
+\item 
+\mbox{\hyperlink{class_security_rules_a1b92df732b5ae10d19758016368eb50c}{get\+Ruleset\+For\+Release}} (release\+Name)
+\item 
+\mbox{\hyperlink{class_security_rules_a72b59d7d47ecd7707262e75bd866f75c}{release\+Ruleset}} (ruleset, release\+Name)
+\item 
+\mbox{\hyperlink{class_security_rules_ab424b522cbca92363cce3491e9af56c1}{get\+Bucket\+Name}} (bucket)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The Firebase {\ttfamily \doxylink{class_security_rules}{Security\+Rules}} service interface. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_security_rules_a1249a8dd7b256b5151c0ed1dc0d4f433}\index{SecurityRules@{SecurityRules}!constructor@{constructor}}
+\index{constructor@{constructor}!SecurityRules@{SecurityRules}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_security_rules_a1249a8dd7b256b5151c0ed1dc0d4f433} 
+Security\+Rules\+::constructor (\begin{DoxyParamCaption}\item[{}]{app}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em app} & -\/ The app for this \doxylink{class_security_rules}{Security\+Rules} service. @constructor \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{database_2dist_2index_8cjs_8js_a7b225fcb720e4d5ed2bbf60e28a25e6d}{app}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af46081dcabb4da1ee7ca00228506bcb7}{client}}, and \mbox{\hyperlink{security-rules_8js_a916157075a325c17b30d4e115dfcc586}{security\+\_\+rules\+\_\+api\+\_\+client\+\_\+internal\+\_\+1}}.
+
+\Hypertarget{class_security_rules_afd629b62eefe2769da2dc054d2063514}\index{SecurityRules@{SecurityRules}!createRuleset@{createRuleset}}
+\index{createRuleset@{createRuleset}!SecurityRules@{SecurityRules}}
+\doxysubsubsection{\texorpdfstring{createRuleset()}{createRuleset()}}
+{\footnotesize\ttfamily \label{class_security_rules_afd629b62eefe2769da2dc054d2063514} 
+Security\+Rules\+::create\+Ruleset (\begin{DoxyParamCaption}\item[{}]{file}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Creates a new {\ttfamily \doxylink{class_ruleset}{Ruleset}} from the given {\ttfamily \doxylink{}{Rules\+File}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & -\/ Rules file to include in the new {\ttfamily \doxylink{class_ruleset}{Ruleset}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_a}{A} promise that fulfills with the newly created {\ttfamily \doxylink{class_ruleset}{Ruleset}}. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af46081dcabb4da1ee7ca00228506bcb7}{client}}, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a4abaedaa5078f55d753a41e28ef4b9a1}{file}}, \mbox{\hyperlink{security-rules_8js_a73854064b4a184526fe80e24656598d0}{Ruleset}}, and \mbox{\hyperlink{bench_8js_a4f85c6ae2a8cdd19ca9b7006b1860d40}{source}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_security_rules_afd629b62eefe2769da2dc054d2063514_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_security_rules_a16e2a50b9f3cf60adf2e0f725e369c2e}\index{SecurityRules@{SecurityRules}!createRulesFileFromSource@{createRulesFileFromSource}}
+\index{createRulesFileFromSource@{createRulesFileFromSource}!SecurityRules@{SecurityRules}}
+\doxysubsubsection{\texorpdfstring{createRulesFileFromSource()}{createRulesFileFromSource()}}
+{\footnotesize\ttfamily \label{class_security_rules_a16e2a50b9f3cf60adf2e0f725e369c2e} 
+Security\+Rules\+::create\+Rules\+File\+From\+Source (\begin{DoxyParamCaption}\item[{}]{name}{, }\item[{}]{source}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}, \mbox{\hyperlink{security-rules_8js_af907ad093db25ea35b2c0ea8d3d1d928}{security\+\_\+rules\+\_\+internal\+\_\+1}}, \mbox{\hyperlink{bench_8js_a4f85c6ae2a8cdd19ca9b7006b1860d40}{source}}, and \mbox{\hyperlink{security-rules_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_security_rules_a16e2a50b9f3cf60adf2e0f725e369c2e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_security_rules_a46f5db2c24ff4ab741a01982d2ca0b2c}\index{SecurityRules@{SecurityRules}!deleteRuleset@{deleteRuleset}}
+\index{deleteRuleset@{deleteRuleset}!SecurityRules@{SecurityRules}}
+\doxysubsubsection{\texorpdfstring{deleteRuleset()}{deleteRuleset()}}
+{\footnotesize\ttfamily \label{class_security_rules_a46f5db2c24ff4ab741a01982d2ca0b2c} 
+Security\+Rules\+::delete\+Ruleset (\begin{DoxyParamCaption}\item[{}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Deletes the {\ttfamily \doxylink{class_ruleset}{Ruleset}} identified by the given name. The input name should be the short name string without the project ID prefix. For example, to delete the {\ttfamily projects/project-\/id/rulesets/my-\/ruleset}, pass the short name "{}my-\/ruleset"{}. Rejects with a {\ttfamily not-\/found} error if the specified {\ttfamily \doxylink{class_ruleset}{Ruleset}} cannot be found.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & -\/ Name of the {\ttfamily \doxylink{class_ruleset}{Ruleset}} to delete. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_a}{A} promise that fulfills when the {\ttfamily \doxylink{class_ruleset}{Ruleset}} is deleted. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af46081dcabb4da1ee7ca00228506bcb7}{client}}, and \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}.
+
+\Hypertarget{class_security_rules_ab424b522cbca92363cce3491e9af56c1}\index{SecurityRules@{SecurityRules}!getBucketName@{getBucketName}}
+\index{getBucketName@{getBucketName}!SecurityRules@{SecurityRules}}
+\doxysubsubsection{\texorpdfstring{getBucketName()}{getBucketName()}}
+{\footnotesize\ttfamily \label{class_security_rules_ab424b522cbca92363cce3491e9af56c1} 
+Security\+Rules\+::get\+Bucket\+Name (\begin{DoxyParamCaption}\item[{}]{bucket}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{database_2dist_2index_8cjs_8js_a7b225fcb720e4d5ed2bbf60e28a25e6d}{app}}, \mbox{\hyperlink{security-rules_8js_af907ad093db25ea35b2c0ea8d3d1d928}{security\+\_\+rules\+\_\+internal\+\_\+1}}, and \mbox{\hyperlink{security-rules_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_security_rules_ab424b522cbca92363cce3491e9af56c1_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_security_rules_ab0beb4027c0f0fc9c0328f366d0ced23}\index{SecurityRules@{SecurityRules}!getFirestoreRuleset@{getFirestoreRuleset}}
+\index{getFirestoreRuleset@{getFirestoreRuleset}!SecurityRules@{SecurityRules}}
+\doxysubsubsection{\texorpdfstring{getFirestoreRuleset()}{getFirestoreRuleset()}}
+{\footnotesize\ttfamily \label{class_security_rules_ab0beb4027c0f0fc9c0328f366d0ced23} 
+Security\+Rules\+::get\+Firestore\+Ruleset (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the {\ttfamily \doxylink{class_ruleset}{Ruleset}} currently applied to Cloud \doxylink{class_firestore}{Firestore}. Rejects with a {\ttfamily not-\/found} error if no ruleset is applied on \doxylink{class_firestore}{Firestore}.
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_a}{A} promise that fulfills with the \doxylink{class_firestore}{Firestore} ruleset. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{class_security_rules_a1b92df732b5ae10d19758016368eb50c}{get\+Ruleset\+For\+Release()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_security_rules_ab0beb4027c0f0fc9c0328f366d0ced23_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_security_rules_a8e08a864939c59bc3adb8ff3bbe78a73}\index{SecurityRules@{SecurityRules}!getRuleset@{getRuleset}}
+\index{getRuleset@{getRuleset}!SecurityRules@{SecurityRules}}
+\doxysubsubsection{\texorpdfstring{getRuleset()}{getRuleset()}}
+{\footnotesize\ttfamily \label{class_security_rules_a8e08a864939c59bc3adb8ff3bbe78a73} 
+Security\+Rules\+::get\+Ruleset (\begin{DoxyParamCaption}\item[{}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the {\ttfamily \doxylink{class_ruleset}{Ruleset}} identified by the given name. The input name should be the short name string without the project ID prefix. For example, to retrieve the {\ttfamily projects/project-\/id/rulesets/my-\/ruleset}, pass the short name "{}my-\/ruleset"{}. Rejects with a {\ttfamily not-\/found} error if the specified {\ttfamily \doxylink{class_ruleset}{Ruleset}} cannot be found.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & -\/ Name of the {\ttfamily \doxylink{class_ruleset}{Ruleset}} to retrieve. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_a}{A} promise that fulfills with the specified {\ttfamily \doxylink{class_ruleset}{Ruleset}}. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af46081dcabb4da1ee7ca00228506bcb7}{client}}, \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}, and \mbox{\hyperlink{security-rules_8js_a73854064b4a184526fe80e24656598d0}{Ruleset}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_security_rules_a8e08a864939c59bc3adb8ff3bbe78a73_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_security_rules_a1b92df732b5ae10d19758016368eb50c}\index{SecurityRules@{SecurityRules}!getRulesetForRelease@{getRulesetForRelease}}
+\index{getRulesetForRelease@{getRulesetForRelease}!SecurityRules@{SecurityRules}}
+\doxysubsubsection{\texorpdfstring{getRulesetForRelease()}{getRulesetForRelease()}}
+{\footnotesize\ttfamily \label{class_security_rules_a1b92df732b5ae10d19758016368eb50c} 
+Security\+Rules\+::get\+Ruleset\+For\+Release (\begin{DoxyParamCaption}\item[{}]{release\+Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af46081dcabb4da1ee7ca00228506bcb7}{client}}, \mbox{\hyperlink{class_security_rules_a8e08a864939c59bc3adb8ff3bbe78a73}{get\+Ruleset()}}, \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}, \mbox{\hyperlink{long_2index_8js_ad7dc44f0ebdb746f4a5b0612ae9315cb}{not}}, \mbox{\hyperlink{delayed__stream_8js_af690c0ffa4360862fc675f76f1df3ac9}{release}}, \mbox{\hyperlink{security-rules_8js_af907ad093db25ea35b2c0ea8d3d1d928}{security\+\_\+rules\+\_\+internal\+\_\+1}}, \mbox{\hyperlink{security-rules_8js_a8275de8c80b295058e3d69e1d6b270e5}{strip\+Project\+Id\+Prefix()}}, and \mbox{\hyperlink{security-rules_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_security_rules_a1b92df732b5ae10d19758016368eb50c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_security_rules_a1b92df732b5ae10d19758016368eb50c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_security_rules_a3febd3f9cbbc7269fbf4d337d557be26}\index{SecurityRules@{SecurityRules}!getStorageRuleset@{getStorageRuleset}}
+\index{getStorageRuleset@{getStorageRuleset}!SecurityRules@{SecurityRules}}
+\doxysubsubsection{\texorpdfstring{getStorageRuleset()}{getStorageRuleset()}}
+{\footnotesize\ttfamily \label{class_security_rules_a3febd3f9cbbc7269fbf4d337d557be26} 
+Security\+Rules\+::get\+Storage\+Ruleset (\begin{DoxyParamCaption}\item[{}]{bucket}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the {\ttfamily \doxylink{class_ruleset}{Ruleset}} currently applied to a Cloud \doxylink{class_storage}{Storage} bucket. Rejects with a {\ttfamily not-\/found} error if no ruleset is applied on the bucket.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bucket} & -\/ Optional name of the Cloud \doxylink{class_storage}{Storage} bucket to be retrieved. If not specified, retrieves the ruleset applied on the default bucket configured via {\ttfamily App\+Options}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_a}{A} promise that fulfills with the Cloud \doxylink{class_storage}{Storage} ruleset. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{class_security_rules_ab424b522cbca92363cce3491e9af56c1}{get\+Bucket\+Name()}}, \mbox{\hyperlink{class_security_rules_a1b92df732b5ae10d19758016368eb50c}{get\+Ruleset\+For\+Release()}}, \mbox{\hyperlink{__get_tag_8js_abace523389c17bce1848e3a427871700}{Promise}}, and \mbox{\hyperlink{pledge_8js_a492a4eb4b80e71a1bb4761df42875565}{then}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_security_rules_a3febd3f9cbbc7269fbf4d337d557be26_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_security_rules_ae1d001b9f98d7056cded919d8bc89943}\index{SecurityRules@{SecurityRules}!listRulesetMetadata@{listRulesetMetadata}}
+\index{listRulesetMetadata@{listRulesetMetadata}!SecurityRules@{SecurityRules}}
+\doxysubsubsection{\texorpdfstring{listRulesetMetadata()}{listRulesetMetadata()}}
+{\footnotesize\ttfamily \label{class_security_rules_ae1d001b9f98d7056cded919d8bc89943} 
+Security\+Rules\+::list\+Ruleset\+Metadata (\begin{DoxyParamCaption}\item[{}]{page\+Size}{ = {\ttfamily 100}, }\item[{}]{next\+Page\+Token}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Retrieves a page of ruleset metadata.
+
+
+\begin{DoxyParams}{Parameters}
+{\em page\+Size} & -\/ The page size, 100 if undefined. This is also the maximum allowed limit. \\
+\hline
+{\em next\+Page\+Token} & -\/ The next page token. If not specified, returns rulesets starting without any offset. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_a}{A} promise that fulfills with a page of rulesets. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af46081dcabb4da1ee7ca00228506bcb7}{client}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ac70ac40ef8199c59316b35022dd21914}{response}}, and \mbox{\hyperlink{security-rules_8js_a6e984f84fd6a5de95bc83df8bc88a24b}{Ruleset\+Metadata\+List}}.
+
+\Hypertarget{class_security_rules_ad09180f2aac20b5992139df98e57d74b}\index{SecurityRules@{SecurityRules}!releaseFirestoreRuleset@{releaseFirestoreRuleset}}
+\index{releaseFirestoreRuleset@{releaseFirestoreRuleset}!SecurityRules@{SecurityRules}}
+\doxysubsubsection{\texorpdfstring{releaseFirestoreRuleset()}{releaseFirestoreRuleset()}}
+{\footnotesize\ttfamily \label{class_security_rules_ad09180f2aac20b5992139df98e57d74b} 
+Security\+Rules\+::release\+Firestore\+Ruleset (\begin{DoxyParamCaption}\item[{}]{ruleset}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Applies the specified {\ttfamily \doxylink{class_ruleset}{Ruleset}} ruleset to Cloud \doxylink{class_firestore}{Firestore}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ruleset} & -\/ Name of the ruleset to apply or a {\ttfamily Ruleset\+Metadata} object containing the name. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_a}{A} promise that fulfills when the ruleset is released. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{class_security_rules_a72b59d7d47ecd7707262e75bd866f75c}{release\+Ruleset()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_security_rules_ad09180f2aac20b5992139df98e57d74b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_security_rules_ad09180f2aac20b5992139df98e57d74b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_security_rules_ac8b19474750063de8f6959bf99478aa7}\index{SecurityRules@{SecurityRules}!releaseFirestoreRulesetFromSource@{releaseFirestoreRulesetFromSource}}
+\index{releaseFirestoreRulesetFromSource@{releaseFirestoreRulesetFromSource}!SecurityRules@{SecurityRules}}
+\doxysubsubsection{\texorpdfstring{releaseFirestoreRulesetFromSource()}{releaseFirestoreRulesetFromSource()}}
+{\footnotesize\ttfamily \label{class_security_rules_ac8b19474750063de8f6959bf99478aa7} 
+Security\+Rules\+::release\+Firestore\+Ruleset\+From\+Source (\begin{DoxyParamCaption}\item[{}]{source}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Creates a new {\ttfamily \doxylink{class_ruleset}{Ruleset}} from the given source, and applies it to Cloud \doxylink{class_firestore}{Firestore}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & -\/ Rules source to apply. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_a}{A} promise that fulfills when the ruleset is created and released. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{class_security_rules_afd629b62eefe2769da2dc054d2063514}{create\+Ruleset()}}, \mbox{\hyperlink{class_security_rules_a16e2a50b9f3cf60adf2e0f725e369c2e}{create\+Rules\+File\+From\+Source()}}, \mbox{\hyperlink{__get_tag_8js_abace523389c17bce1848e3a427871700}{Promise}}, \mbox{\hyperlink{class_security_rules_ad09180f2aac20b5992139df98e57d74b}{release\+Firestore\+Ruleset()}}, \mbox{\hyperlink{bench_8js_a4f85c6ae2a8cdd19ca9b7006b1860d40}{source}}, and \mbox{\hyperlink{pledge_8js_a492a4eb4b80e71a1bb4761df42875565}{then}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_security_rules_ac8b19474750063de8f6959bf99478aa7_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_security_rules_a72b59d7d47ecd7707262e75bd866f75c}\index{SecurityRules@{SecurityRules}!releaseRuleset@{releaseRuleset}}
+\index{releaseRuleset@{releaseRuleset}!SecurityRules@{SecurityRules}}
+\doxysubsubsection{\texorpdfstring{releaseRuleset()}{releaseRuleset()}}
+{\footnotesize\ttfamily \label{class_security_rules_a72b59d7d47ecd7707262e75bd866f75c} 
+Security\+Rules\+::release\+Ruleset (\begin{DoxyParamCaption}\item[{}]{ruleset}{, }\item[{}]{release\+Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af46081dcabb4da1ee7ca00228506bcb7}{client}}, \mbox{\hyperlink{__get_tag_8js_abace523389c17bce1848e3a427871700}{Promise}}, \mbox{\hyperlink{security-rules_8js_af907ad093db25ea35b2c0ea8d3d1d928}{security\+\_\+rules\+\_\+internal\+\_\+1}}, and \mbox{\hyperlink{security-rules_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_security_rules_a72b59d7d47ecd7707262e75bd866f75c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_security_rules_a48b3db7524106369d1f689c6e117de62}\index{SecurityRules@{SecurityRules}!releaseStorageRuleset@{releaseStorageRuleset}}
+\index{releaseStorageRuleset@{releaseStorageRuleset}!SecurityRules@{SecurityRules}}
+\doxysubsubsection{\texorpdfstring{releaseStorageRuleset()}{releaseStorageRuleset()}}
+{\footnotesize\ttfamily \label{class_security_rules_a48b3db7524106369d1f689c6e117de62} 
+Security\+Rules\+::release\+Storage\+Ruleset (\begin{DoxyParamCaption}\item[{}]{ruleset}{, }\item[{}]{bucket}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Applies the specified {\ttfamily \doxylink{class_ruleset}{Ruleset}} ruleset to a Cloud \doxylink{class_storage}{Storage} bucket.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ruleset} & -\/ Name of the ruleset to apply or a {\ttfamily Ruleset\+Metadata} object containing the name. \\
+\hline
+{\em bucket} & -\/ Optional name of the Cloud \doxylink{class_storage}{Storage} bucket to apply the rules on. If not specified, applies the ruleset on the default bucket configured via {\ttfamily \doxylink{}{firebase-\/admin.\+app\#\+App\+Options}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_a}{A} promise that fulfills when the ruleset is released. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{class_security_rules_ab424b522cbca92363cce3491e9af56c1}{get\+Bucket\+Name()}}, \mbox{\hyperlink{__get_tag_8js_abace523389c17bce1848e3a427871700}{Promise}}, \mbox{\hyperlink{class_security_rules_a72b59d7d47ecd7707262e75bd866f75c}{release\+Ruleset()}}, and \mbox{\hyperlink{pledge_8js_a492a4eb4b80e71a1bb4761df42875565}{then}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_security_rules_a48b3db7524106369d1f689c6e117de62_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_security_rules_a48b3db7524106369d1f689c6e117de62_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_security_rules_aecd7ef177ad9b8595500aae3de7d94be}\index{SecurityRules@{SecurityRules}!releaseStorageRulesetFromSource@{releaseStorageRulesetFromSource}}
+\index{releaseStorageRulesetFromSource@{releaseStorageRulesetFromSource}!SecurityRules@{SecurityRules}}
+\doxysubsubsection{\texorpdfstring{releaseStorageRulesetFromSource()}{releaseStorageRulesetFromSource()}}
+{\footnotesize\ttfamily \label{class_security_rules_aecd7ef177ad9b8595500aae3de7d94be} 
+Security\+Rules\+::release\+Storage\+Ruleset\+From\+Source (\begin{DoxyParamCaption}\item[{}]{source}{, }\item[{}]{bucket}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Creates a new {\ttfamily \doxylink{class_ruleset}{Ruleset}} from the given source, and applies it to a Cloud \doxylink{class_storage}{Storage} bucket.
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & -\/ Rules source to apply. \\
+\hline
+{\em bucket} & -\/ Optional name of the Cloud \doxylink{class_storage}{Storage} bucket to apply the rules on. If not specified, applies the ruleset on the default bucket configured via {\ttfamily \doxylink{}{firebase-\/admin.\+app\#\+App\+Options}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_a}{A} promise that fulfills when the ruleset is created and released. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{class_security_rules_afd629b62eefe2769da2dc054d2063514}{create\+Ruleset()}}, \mbox{\hyperlink{class_security_rules_a16e2a50b9f3cf60adf2e0f725e369c2e}{create\+Rules\+File\+From\+Source()}}, \mbox{\hyperlink{class_security_rules_ab424b522cbca92363cce3491e9af56c1}{get\+Bucket\+Name()}}, \mbox{\hyperlink{__get_tag_8js_abace523389c17bce1848e3a427871700}{Promise}}, \mbox{\hyperlink{class_security_rules_a48b3db7524106369d1f689c6e117de62}{release\+Storage\+Ruleset()}}, \mbox{\hyperlink{bench_8js_a4f85c6ae2a8cdd19ca9b7006b1860d40}{source}}, and \mbox{\hyperlink{pledge_8js_a492a4eb4b80e71a1bb4761df42875565}{then}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_security_rules_aecd7ef177ad9b8595500aae3de7d94be_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/firebase-\/admin/lib/security-\/rules/\mbox{\hyperlink{security-rules_8js}{security-\/rules.\+js}}\end{DoxyCompactItemize}

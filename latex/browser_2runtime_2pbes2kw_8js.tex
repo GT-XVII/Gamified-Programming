@@ -1,0 +1,111 @@
+\doxysection{backend/node\+\_\+modules/jose/dist/browser/runtime/pbes2kw.js File Reference}
+\hypertarget{browser_2runtime_2pbes2kw_8js}{}\label{browser_2runtime_2pbes2kw_8js}\index{backend/node\_modules/jose/dist/browser/runtime/pbes2kw.js@{backend/node\_modules/jose/dist/browser/runtime/pbes2kw.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{browser_2runtime_2pbes2kw_8js_a4c62fa2ed777d04643d49295bf70e11d}{get\+Crypto\+Key}} (key, alg)
+\item 
+function \mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{browser_2runtime_2pbes2kw_8js_a97f312505c2251bad02abe0b0dc35359}{derive\+Key}} (\mbox{\hyperlink{node_2cjs_2lib_2buffer__utils_8js_ace1955ae748b5269274ad77a11c773c3}{p2s}}, alg, p2c, key)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{component_2dist_2esm_2index_8esm2017_8js_a953be46b94f595d839e88a6d3d270309}{import}} \mbox{\hyperlink{lodash_2random_8js_a1319a012d8fae8ed2b251493334c4de9}{random}} from \mbox{\hyperlink{lodash_2random_8js_a1319a012d8fae8ed2b251493334c4de9}{random}} \mbox{\hyperlink{browser_2runtime_2pbes2kw_8js_ad71b065f5b1a390405da40e7fb61870a}{js}}
+\item 
+\mbox{\hyperlink{browser_2runtime_2pbes2kw_8js_a59be084da8908b7d77ff34b25cd84488}{import}} \{ \mbox{\hyperlink{node_2cjs_2lib_2buffer__utils_8js_ace1955ae748b5269274ad77a11c773c3}{p2s}} as concat\+Salt \} from \textquotesingle{}../lib/\mbox{\hyperlink{esm_2src_2file_8js_a73ffb0a3b9f028910adc01ac31153d46}{buffer\+\_\+utils.\+js}}\textquotesingle{}
+\item 
+\mbox{\hyperlink{component_2dist_2esm_2index_8esm2017_8js_a953be46b94f595d839e88a6d3d270309}{import}} \mbox{\hyperlink{browser_2runtime_2pbes2kw_8js_a134431f40ac7c551b09e1fec2f270a0e}{crypto}}
+\item 
+export \mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{browser_2runtime_2pbes2kw_8js_aac89a6db5126c85c363a079abd62de96}{encrypt}}
+\item 
+export \mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{browser_2runtime_2pbes2kw_8js_a07d05c7641944921cf3d33f7bcb4714a}{decrypt}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{browser_2runtime_2pbes2kw_8js_a97f312505c2251bad02abe0b0dc35359}\index{pbes2kw.js@{pbes2kw.js}!deriveKey@{deriveKey}}
+\index{deriveKey@{deriveKey}!pbes2kw.js@{pbes2kw.js}}
+\doxysubsubsection{\texorpdfstring{deriveKey()}{deriveKey()}}
+{\footnotesize\ttfamily \label{browser_2runtime_2pbes2kw_8js_a97f312505c2251bad02abe0b0dc35359} 
+function \mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} derive\+Key (\begin{DoxyParamCaption}\item[{}]{p2s}{, }\item[{}]{alg}{, }\item[{}]{p2c}{, }\item[{}]{key}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{browser_2lib_2check__p2s_8js_a8dfeeb642b5ce3cf6f32819a323f7b3a}{check\+P2s()}}, \mbox{\hyperlink{browser_2runtime_2pbes2kw_8js_a134431f40ac7c551b09e1fec2f270a0e}{crypto}}, \mbox{\hyperlink{browser_2runtime_2pbes2kw_8js_a4c62fa2ed777d04643d49295bf70e11d}{get\+Crypto\+Key()}}, \mbox{\hyperlink{pbe_8js_a4e8eeb941272ccb92c8911eb60686dd3}{hash()}}, \mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a7fdcf4c82c9946bf2b0b80829a7ab230}{length}}, \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}, \mbox{\hyperlink{node_2cjs_2lib_2buffer__utils_8js_ace1955ae748b5269274ad77a11c773c3}{p2s}}, \mbox{\hyperlink{parse_int_8js_a04ee837a5f7721fcb0ea2d152162ef92}{parse\+Int()}}, and \mbox{\hyperlink{__clone_array_buffer_8js_a23efaf497399fa716c3e05b817cb7d0c}{Uint8\+Array}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{browser_2runtime_2pbes2kw_8js_a97f312505c2251bad02abe0b0dc35359_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{browser_2runtime_2pbes2kw_8js_a4c62fa2ed777d04643d49295bf70e11d}\index{pbes2kw.js@{pbes2kw.js}!getCryptoKey@{getCryptoKey}}
+\index{getCryptoKey@{getCryptoKey}!pbes2kw.js@{pbes2kw.js}}
+\doxysubsubsection{\texorpdfstring{getCryptoKey()}{getCryptoKey()}}
+{\footnotesize\ttfamily \label{browser_2runtime_2pbes2kw_8js_a4c62fa2ed777d04643d49295bf70e11d} 
+function get\+Crypto\+Key (\begin{DoxyParamCaption}\item[{}]{key}{, }\item[{}]{alg}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{node_2cjs_2lib_2crypto__key_8js_af27b6a4feebf02858bb969780864aa80}{check\+Enc\+Crypto\+Key}}, \mbox{\hyperlink{browser_2runtime_2pbes2kw_8js_a134431f40ac7c551b09e1fec2f270a0e}{crypto}}, \mbox{\hyperlink{browser_2runtime_2webcrypto_8js_a07bf2f5cc958f8fc7cfbe07d09a0f9e0}{is\+Crypto\+Key}}, and \mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2index_8js_ab7462236e30435444188ea2b81d92654}{types}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{browser_2runtime_2pbes2kw_8js_a4c62fa2ed777d04643d49295bf70e11d_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{browser_2runtime_2pbes2kw_8js_a134431f40ac7c551b09e1fec2f270a0e}\index{pbes2kw.js@{pbes2kw.js}!crypto@{crypto}}
+\index{crypto@{crypto}!pbes2kw.js@{pbes2kw.js}}
+\doxysubsubsection{\texorpdfstring{crypto}{crypto}}
+{\footnotesize\ttfamily \label{browser_2runtime_2pbes2kw_8js_a134431f40ac7c551b09e1fec2f270a0e} 
+\mbox{\hyperlink{component_2dist_2esm_2index_8esm2017_8js_a953be46b94f595d839e88a6d3d270309}{import}} crypto}
+
+\Hypertarget{browser_2runtime_2pbes2kw_8js_a07d05c7641944921cf3d33f7bcb4714a}\index{pbes2kw.js@{pbes2kw.js}!decrypt@{decrypt}}
+\index{decrypt@{decrypt}!pbes2kw.js@{pbes2kw.js}}
+\doxysubsubsection{\texorpdfstring{decrypt}{decrypt}}
+{\footnotesize\ttfamily \label{browser_2runtime_2pbes2kw_8js_a07d05c7641944921cf3d33f7bcb4714a} 
+export \mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} decrypt}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}}\ (alg,\ key,\ encryptedKey,\ p2c,\ \mbox{\hyperlink{node_2cjs_2lib_2buffer__utils_8js_ace1955ae748b5269274ad77a11c773c3}{p2s}})\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{const}\ derived\ =\ await\ \mbox{\hyperlink{node_2cjs_2runtime_2ecdhes_8js_ac5ddc228ead153361ff6475bc85beaaa}{deriveKey}}(\mbox{\hyperlink{node_2cjs_2lib_2buffer__utils_8js_ace1955ae748b5269274ad77a11c773c3}{p2s}},\ alg,\ p2c,\ key);}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{browser_2runtime_2aeskw_8js_a7c721b0d78394ccca2e1bf2a7b55f285}{unwrap}}(alg.slice(-\/6),\ derived,\ encryptedKey);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{browser_2runtime_2pbes2kw_8js_aac89a6db5126c85c363a079abd62de96}\index{pbes2kw.js@{pbes2kw.js}!encrypt@{encrypt}}
+\index{encrypt@{encrypt}!pbes2kw.js@{pbes2kw.js}}
+\doxysubsubsection{\texorpdfstring{encrypt}{encrypt}}
+{\footnotesize\ttfamily \label{browser_2runtime_2pbes2kw_8js_aac89a6db5126c85c363a079abd62de96} 
+export \mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} encrypt}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}}\ (alg,\ key,\ cek,\ p2c\ =\ 2048,\ \mbox{\hyperlink{node_2cjs_2lib_2buffer__utils_8js_ace1955ae748b5269274ad77a11c773c3}{p2s}}\ =\ \mbox{\hyperlink{lodash_2random_8js_a1319a012d8fae8ed2b251493334c4de9}{random}}(\textcolor{keyword}{new}\ \mbox{\hyperlink{__clone_array_buffer_8js_a23efaf497399fa716c3e05b817cb7d0c}{Uint8Array}}(16)))\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{const}\ derived\ =\ await\ \mbox{\hyperlink{node_2cjs_2runtime_2ecdhes_8js_ac5ddc228ead153361ff6475bc85beaaa}{deriveKey}}(\mbox{\hyperlink{node_2cjs_2lib_2buffer__utils_8js_ace1955ae748b5269274ad77a11c773c3}{p2s}},\ alg,\ p2c,\ key);}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{const}\ encryptedKey\ =\ await\ \mbox{\hyperlink{browser_2runtime_2aeskw_8js_ab5725d08526a1a455010a791f6a5966e}{wrap}}(alg.slice(-\/6),\ derived,\ cek);}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \{\ encryptedKey,\ p2c,\ \mbox{\hyperlink{node_2cjs_2lib_2buffer__utils_8js_ace1955ae748b5269274ad77a11c773c3}{p2s}}:\ \mbox{\hyperlink{jose_2dist_2browser_2index_8js_aca17f042e0909acd28ea29497c3011e5}{base64url}}(\mbox{\hyperlink{node_2cjs_2lib_2buffer__utils_8js_ace1955ae748b5269274ad77a11c773c3}{p2s}})\ \};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{browser_2runtime_2pbes2kw_8js_a59be084da8908b7d77ff34b25cd84488}\index{pbes2kw.js@{pbes2kw.js}!import@{import}}
+\index{import@{import}!pbes2kw.js@{pbes2kw.js}}
+\doxysubsubsection{\texorpdfstring{import}{import}}
+{\footnotesize\ttfamily \label{browser_2runtime_2pbes2kw_8js_a59be084da8908b7d77ff34b25cd84488} 
+import \{ \mbox{\hyperlink{node_2cjs_2lib_2buffer__utils_8js_ace1955ae748b5269274ad77a11c773c3}{p2s}} as concat\+Salt \} from \textquotesingle{}../lib/\mbox{\hyperlink{esm_2src_2file_8js_a73ffb0a3b9f028910adc01ac31153d46}{buffer\+\_\+utils.\+js}}\textquotesingle{}}
+
+\Hypertarget{browser_2runtime_2pbes2kw_8js_ad71b065f5b1a390405da40e7fb61870a}\index{pbes2kw.js@{pbes2kw.js}!js@{js}}
+\index{js@{js}!pbes2kw.js@{pbes2kw.js}}
+\doxysubsubsection{\texorpdfstring{js}{js}}
+{\footnotesize\ttfamily \label{browser_2runtime_2pbes2kw_8js_ad71b065f5b1a390405da40e7fb61870a} 
+\mbox{\hyperlink{component_2dist_2esm_2index_8esm2017_8js_a953be46b94f595d839e88a6d3d270309}{import}} invalid\+Key\+Input from lib invalid\+\_\+key\+\_\+input js}
+

@@ -1,0 +1,149 @@
+\doxysection{backend/node\+\_\+modules/jose/dist/node/esm/runtime/rsaes.js File Reference}
+\hypertarget{node_2esm_2runtime_2rsaes_8js}{}\label{node_2esm_2runtime_2rsaes_8js}\index{backend/node\_modules/jose/dist/node/esm/runtime/rsaes.js@{backend/node\_modules/jose/dist/node/esm/runtime/rsaes.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{node_2esm_2runtime_2rsaes_8js_a44a2208d195f85bd40db5b70635a9243}{ensure\+Key\+Object}} (key, alg,...usages)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{node_2esm_2runtime_2rsaes_8js_a59be084da8908b7d77ff34b25cd84488}{import}} \{ Key\+Object, public\+Encrypt, \mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2index_8js_adf60a23f40dff925e51ea74c6b3c8ff2}{constants}}, private\+Decrypt \} from \textquotesingle{}\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a3eca37c9aac9a17870baa116339724e3}{crypto}}\textquotesingle{}
+\item 
+\mbox{\hyperlink{component_2dist_2esm_2index_8esm2017_8js_a953be46b94f595d839e88a6d3d270309}{import}} check\+Modulus\+Length from check\+\_\+modulus\+\_\+length \mbox{\hyperlink{node_2esm_2runtime_2rsaes_8js_ad71b065f5b1a390405da40e7fb61870a}{js}}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{node_2esm_2runtime_2rsaes_8js_ad5b07b02ca715a0bebff6c024037d1bb}{check\+Key}}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{node_2esm_2runtime_2rsaes_8js_ac43001588df09f1c03ce1bd776aa4055}{resolve\+Padding}}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{node_2esm_2runtime_2rsaes_8js_a3abcec3da65afbc20000515a1091be39}{resolve\+Oaep\+Hash}}
+\item 
+export \mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{node_2esm_2runtime_2rsaes_8js_aac89a6db5126c85c363a079abd62de96}{encrypt}}
+\item 
+export \mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{node_2esm_2runtime_2rsaes_8js_a07d05c7641944921cf3d33f7bcb4714a}{decrypt}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{node_2esm_2runtime_2rsaes_8js_a44a2208d195f85bd40db5b70635a9243}\index{rsaes.js@{rsaes.js}!ensureKeyObject@{ensureKeyObject}}
+\index{ensureKeyObject@{ensureKeyObject}!rsaes.js@{rsaes.js}}
+\doxysubsubsection{\texorpdfstring{ensureKeyObject()}{ensureKeyObject()}}
+{\footnotesize\ttfamily \label{node_2esm_2runtime_2rsaes_8js_a44a2208d195f85bd40db5b70635a9243} 
+function ensure\+Key\+Object (\begin{DoxyParamCaption}\item[{}]{key}{, }\item[{}]{alg}{, }\item[{}]{...}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{node_2cjs_2lib_2crypto__key_8js_af27b6a4feebf02858bb969780864aa80}{check\+Enc\+Crypto\+Key}}, \mbox{\hyperlink{browser_2runtime_2webcrypto_8js_a07bf2f5cc958f8fc7cfbe07d09a0f9e0}{is\+Crypto\+Key}}, and \mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2index_8js_ab7462236e30435444188ea2b81d92654}{types}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{node_2esm_2runtime_2rsaes_8js_ad5b07b02ca715a0bebff6c024037d1bb}\index{rsaes.js@{rsaes.js}!checkKey@{checkKey}}
+\index{checkKey@{checkKey}!rsaes.js@{rsaes.js}}
+\doxysubsubsection{\texorpdfstring{checkKey}{checkKey}}
+{\footnotesize\ttfamily \label{node_2esm_2runtime_2rsaes_8js_ad5b07b02ca715a0bebff6c024037d1bb} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} check\+Key}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ (key,\ alg)\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (key.asymmetricKeyType\ !==\ \textcolor{stringliteral}{'rsa'})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ TypeError(\textcolor{stringliteral}{'Invalid\ key\ for\ this\ operation,\ its\ asymmetricKeyType\ must\ be\ rsa'});}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ checkModulusLength(key,\ alg);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{node_2esm_2runtime_2rsaes_8js_a07d05c7641944921cf3d33f7bcb4714a}\index{rsaes.js@{rsaes.js}!decrypt@{decrypt}}
+\index{decrypt@{decrypt}!rsaes.js@{rsaes.js}}
+\doxysubsubsection{\texorpdfstring{decrypt}{decrypt}}
+{\footnotesize\ttfamily \label{node_2esm_2runtime_2rsaes_8js_a07d05c7641944921cf3d33f7bcb4714a} 
+export \mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} decrypt}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ (alg,\ key,\ encryptedKey)\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{const}\ padding\ =\ \mbox{\hyperlink{node_2cjs_2runtime_2rsaes_8js_ac43001588df09f1c03ce1bd776aa4055}{resolvePadding}}(alg);}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{const}\ oaepHash\ =\ \mbox{\hyperlink{node_2cjs_2runtime_2rsaes_8js_a3abcec3da65afbc20000515a1091be39}{resolveOaepHash}}(alg);}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{const}\ keyObject\ =\ \mbox{\hyperlink{node_2cjs_2runtime_2rsaes_8js_a44a2208d195f85bd40db5b70635a9243}{ensureKeyObject}}(key,\ alg,\ \textcolor{stringliteral}{'unwrapKey'},\ \textcolor{stringliteral}{'decrypt'});}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{node_2cjs_2runtime_2rsaes_8js_ad5b07b02ca715a0bebff6c024037d1bb}{checkKey}}(keyObject,\ alg);}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ privateDecrypt(\{\ key:\ keyObject,\ oaepHash,\ padding\ \},\ encryptedKey);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{node_2esm_2runtime_2rsaes_8js_aac89a6db5126c85c363a079abd62de96}\index{rsaes.js@{rsaes.js}!encrypt@{encrypt}}
+\index{encrypt@{encrypt}!rsaes.js@{rsaes.js}}
+\doxysubsubsection{\texorpdfstring{encrypt}{encrypt}}
+{\footnotesize\ttfamily \label{node_2esm_2runtime_2rsaes_8js_aac89a6db5126c85c363a079abd62de96} 
+export \mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} encrypt}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ (alg,\ key,\ cek)\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{const}\ padding\ =\ \mbox{\hyperlink{node_2cjs_2runtime_2rsaes_8js_ac43001588df09f1c03ce1bd776aa4055}{resolvePadding}}(alg);}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{const}\ oaepHash\ =\ \mbox{\hyperlink{node_2cjs_2runtime_2rsaes_8js_a3abcec3da65afbc20000515a1091be39}{resolveOaepHash}}(alg);}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{const}\ keyObject\ =\ \mbox{\hyperlink{node_2cjs_2runtime_2rsaes_8js_a44a2208d195f85bd40db5b70635a9243}{ensureKeyObject}}(key,\ alg,\ \textcolor{stringliteral}{'wrapKey'},\ \textcolor{stringliteral}{'encrypt'});}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{node_2cjs_2runtime_2rsaes_8js_ad5b07b02ca715a0bebff6c024037d1bb}{checkKey}}(keyObject,\ alg);}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ publicEncrypt(\{\ key:\ keyObject,\ oaepHash,\ padding\ \},\ cek);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{node_2esm_2runtime_2rsaes_8js_a59be084da8908b7d77ff34b25cd84488}\index{rsaes.js@{rsaes.js}!import@{import}}
+\index{import@{import}!rsaes.js@{rsaes.js}}
+\doxysubsubsection{\texorpdfstring{import}{import}}
+{\footnotesize\ttfamily \label{node_2esm_2runtime_2rsaes_8js_a59be084da8908b7d77ff34b25cd84488} 
+import \{ Key\+Object, public\+Encrypt, \mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2index_8js_adf60a23f40dff925e51ea74c6b3c8ff2}{constants}}, private\+Decrypt \} from \textquotesingle{}\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a3eca37c9aac9a17870baa116339724e3}{crypto}}\textquotesingle{}}
+
+\Hypertarget{node_2esm_2runtime_2rsaes_8js_ad71b065f5b1a390405da40e7fb61870a}\index{rsaes.js@{rsaes.js}!js@{js}}
+\index{js@{js}!rsaes.js@{rsaes.js}}
+\doxysubsubsection{\texorpdfstring{js}{js}}
+{\footnotesize\ttfamily \label{node_2esm_2runtime_2rsaes_8js_ad71b065f5b1a390405da40e7fb61870a} 
+\mbox{\hyperlink{component_2dist_2esm_2index_8esm2017_8js_a953be46b94f595d839e88a6d3d270309}{import}} invalid\+Key\+Input from lib invalid\+\_\+key\+\_\+input js}
+
+\Hypertarget{node_2esm_2runtime_2rsaes_8js_a3abcec3da65afbc20000515a1091be39}\index{rsaes.js@{rsaes.js}!resolveOaepHash@{resolveOaepHash}}
+\index{resolveOaepHash@{resolveOaepHash}!rsaes.js@{rsaes.js}}
+\doxysubsubsection{\texorpdfstring{resolveOaepHash}{resolveOaepHash}}
+{\footnotesize\ttfamily \label{node_2esm_2runtime_2rsaes_8js_a3abcec3da65afbc20000515a1091be39} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} resolve\+Oaep\+Hash}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ (alg)\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{switch}\ (alg)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'RSA-\/OAEP'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{'sha1'};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'RSA-\/OAEP-\/256'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{'sha256'};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'RSA-\/OAEP-\/384'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{'sha384'};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'RSA-\/OAEP-\/512'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{'sha512'};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}};}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{node_2esm_2runtime_2rsaes_8js_ac43001588df09f1c03ce1bd776aa4055}\index{rsaes.js@{rsaes.js}!resolvePadding@{resolvePadding}}
+\index{resolvePadding@{resolvePadding}!rsaes.js@{rsaes.js}}
+\doxysubsubsection{\texorpdfstring{resolvePadding}{resolvePadding}}
+{\footnotesize\ttfamily \label{node_2esm_2runtime_2rsaes_8js_ac43001588df09f1c03ce1bd776aa4055} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} resolve\+Padding}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ (alg)\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{switch}\ (alg)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'RSA-\/OAEP'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'RSA-\/OAEP-\/256'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'RSA-\/OAEP-\/384'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'RSA-\/OAEP-\/512'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2index_8js_adf60a23f40dff925e51ea74c6b3c8ff2}{constants}}.RSA\_PKCS1\_OAEP\_PADDING;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'RSA1\_5'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{_0dopentelemetry_2api_2build_2esm_2index_8js_adf60a23f40dff925e51ea74c6b3c8ff2}{constants}}.RSA\_PKCS1\_PADDING;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}};}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}

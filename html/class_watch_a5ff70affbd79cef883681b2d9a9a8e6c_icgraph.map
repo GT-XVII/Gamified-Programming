@@ -1,0 +1,16 @@
+<map id="Watch::onData" name="Watch::onData">
+<area shape="rect" id="Node000001" title=" " alt="" coords="630,105,739,131"/>
+<area shape="rect" id="Node000002" href="$class_watch.html#a444d1b684995b48c0fa178ab7fa79ca3" title=" " alt="" coords="457,80,582,106"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="615,110,582,105,583,100,616,105"/>
+<area shape="rect" id="Node000003" href="$class_watch.html#a47047c5c983dd47cc9b7875b18dba55d" title=" " alt="" coords="217,5,409,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="456,76,408,57,334,34,336,29,410,52,458,71"/>
+<area shape="rect" id="Node000005" href="$class_watch.html#a502cddf27d20bae18e6b7d49d0aee5b6" title=" " alt="" coords="245,55,380,80"/>
+<area shape="poly" id="edge6_Node000002_Node000005" title=" " alt="" coords="441,86,381,78,381,73,442,81"/>
+<area shape="rect" id="Node000006" href="$class_watch.html#a8550a3e7706176102c2f303551f10f4f" title=" " alt="" coords="244,156,382,182"/>
+<area shape="poly" id="edge7_Node000002_Node000006" title=" " alt="" coords="473,114,410,139,356,158,355,153,408,134,471,110"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="425,33,473,55,509,77,506,82,470,60,422,38"/>
+<area shape="rect" id="Node000004" href="$class_watch.html#a18fb83c5b256846e262feb349400adfb" title=" " alt="" coords="5,56,169,82"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="238,38,148,58,147,53,237,32"/>
+<area shape="poly" id="edge5_Node000004_Node000002" title=" " alt="" coords="162,82,217,90,345,96,456,94,456,99,345,101,216,95,162,88"/>
+<area shape="poly" id="edge8_Node000006_Node000001" title=" " alt="" coords="397,155,630,123,630,128,397,160"/>
+</map>

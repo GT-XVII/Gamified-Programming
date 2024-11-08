@@ -1,0 +1,15 @@
+<map id="StreamProxy::streamHandoffHelper" name="StreamProxy::streamHandoffHelper">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,197,96"/>
+<area shape="rect" id="Node000002" href="$class_stream_proxy.html#acee6bfabff9a947955589b43153bd91a" title=" " alt="" coords="269,5,412,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="188,52,268,33,269,38,189,57"/>
+<area shape="rect" id="Node000003" href="$class_stream_proxy.html#a61c599dc4df1b3232bcfacb5bf3ec4a5" title=" " alt="" coords="248,55,432,96"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="197,73,232,73,232,78,197,78"/>
+<area shape="rect" id="Node000004" href="$class_stream_proxy.html#a90be87b378d484bde0b1e542b9edb447" title=" " alt="" coords="245,120,436,161"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="179,94,249,113,248,118,177,99"/>
+<area shape="rect" id="Node000005" href="$class_stream_proxy.html#ac663ddd68627422bf40d0a2fa43a9bd6" title=" " alt="" coords="502,87,678,128"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="436,125,486,119,487,124,437,131"/>
+<area shape="rect" id="Node000007" href="$class_stream_proxy.html#aa01a008503f3aeb23749072a772a8d35" title=" " alt="" coords="484,152,696,193"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="437,150,469,155,468,160,436,156"/>
+<area shape="rect" id="Node000006" href="$class_stream_proxy.html#a373949e8ef5c9150d7f6cdfe0fde414d" title=" " alt="" coords="744,87,929,128"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="678,105,729,105,729,110,678,110"/>
+</map>

@@ -1,0 +1,38 @@
+\doxysection{backend/node\+\_\+modules/jose/dist/browser/runtime/timing\+\_\+safe\+\_\+equal.js File Reference}
+\hypertarget{browser_2runtime_2timing__safe__equal_8js}{}\label{browser_2runtime_2timing__safe__equal_8js}\index{backend/node\_modules/jose/dist/browser/runtime/timing\_safe\_equal.js@{backend/node\_modules/jose/dist/browser/runtime/timing\_safe\_equal.js}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{browser_2runtime_2timing__safe__equal_8js_ab39816e43f71bdd0d0d6081d2e2bf44f}{timing\+Safe\+Equal}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{browser_2runtime_2timing__safe__equal_8js_ab39816e43f71bdd0d0d6081d2e2bf44f}\index{timing\_safe\_equal.js@{timing\_safe\_equal.js}!timingSafeEqual@{timingSafeEqual}}
+\index{timingSafeEqual@{timingSafeEqual}!timing\_safe\_equal.js@{timing\_safe\_equal.js}}
+\doxysubsubsection{\texorpdfstring{timingSafeEqual}{timingSafeEqual}}
+{\footnotesize\ttfamily \label{browser_2runtime_2timing__safe__equal_8js_ab39816e43f71bdd0d0d6081d2e2bf44f} 
+export \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2index_8js_a48acd3189d40b017f47c93b673b8b8f6}{default}} timing\+Safe\+Equal}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ (\mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}},\ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}})\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (!(\mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}\ instanceof\ Uint8Array))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ TypeError(\textcolor{stringliteral}{'First\ argument\ must\ be\ a\ buffer'});}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (!(\mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}\ instanceof\ Uint8Array))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ TypeError(\textcolor{stringliteral}{'Second\ argument\ must\ be\ a\ buffer'});}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}.length\ !==\ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}.length)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ TypeError(\textcolor{stringliteral}{'Input\ buffers\ must\ have\ the\ same\ length'});}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{const}\ len\ =\ \mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}.length;}
+\DoxyCodeLine{\ \ \ \ let\ out\ =\ 0;}
+\DoxyCodeLine{\ \ \ \ let\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ =\ -\/1;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{while}\ (++\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ <\ len)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ out\ |=\ \mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}[\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}]\ \string^\ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}[\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}];}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ out\ ===\ 0;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}

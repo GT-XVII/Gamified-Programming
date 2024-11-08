@@ -1,0 +1,87 @@
+\doxysection{backend/node\+\_\+modules/firebase-\/admin/lib/auth/tenant-\/manager.js File Reference}
+\hypertarget{tenant-manager_8js}{}\label{tenant-manager_8js}\index{backend/node\_modules/firebase-\/admin/lib/auth/tenant-\/manager.js@{backend/node\_modules/firebase-\/admin/lib/auth/tenant-\/manager.js}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_tenant_aware_auth}{Tenant\+Aware\+Auth}}
+\item 
+class \mbox{\hyperlink{class_tenant_manager}{Tenant\+Manager}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{tenant-manager_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{tenant-manager_8js_a6431103c6759c4fc2065f2ca193f9e93}{Tenant\+Manager}} = exports.\+Tenant\+Aware\+Auth = void 0
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{tenant-manager_8js_add6dc10e852e313f07c0d59bcf288b6a}{validator}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/validator"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{tenant-manager_8js_a022e926a40defc4294368e708a7e2372}{utils}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/index"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{tenant-manager_8js_af1a99a3ff1a35c114bdd06cc7252beb6}{error\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/error"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{tenant-manager_8js_abd6e336b1482121b53a7ed55c495e2bb}{base\+\_\+auth\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./base-\/auth"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{tenant-manager_8js_a7f22382a0e169c2c376a54c661007a14}{tenant\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./tenant"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{tenant-manager_8js_ac7589a803bd4e053198614715963a7ff}{auth\+\_\+api\+\_\+request\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./auth-\/\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}}-\/request"{})
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{tenant-manager_8js_aab8b26998ade14aac2edc78bac191cb1}{Tenant\+Aware\+Auth}} = Tenant\+Aware\+Auth
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{tenant-manager_8js_ac7589a803bd4e053198614715963a7ff}\index{tenant-\/manager.js@{tenant-\/manager.js}!auth\_api\_request\_1@{auth\_api\_request\_1}}
+\index{auth\_api\_request\_1@{auth\_api\_request\_1}!tenant-\/manager.js@{tenant-\/manager.js}}
+\doxysubsubsection{\texorpdfstring{auth\_api\_request\_1}{auth\_api\_request\_1}}
+{\footnotesize\ttfamily \label{tenant-manager_8js_ac7589a803bd4e053198614715963a7ff} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} auth\+\_\+api\+\_\+request\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./auth-\/\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a8462ad4133b5ec0dba72024e65cf3a5b}{api}}-\/request"{})}
+
+\Hypertarget{tenant-manager_8js_abd6e336b1482121b53a7ed55c495e2bb}\index{tenant-\/manager.js@{tenant-\/manager.js}!base\_auth\_1@{base\_auth\_1}}
+\index{base\_auth\_1@{base\_auth\_1}!tenant-\/manager.js@{tenant-\/manager.js}}
+\doxysubsubsection{\texorpdfstring{base\_auth\_1}{base\_auth\_1}}
+{\footnotesize\ttfamily \label{tenant-manager_8js_abd6e336b1482121b53a7ed55c495e2bb} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} base\+\_\+auth\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./base-\/auth"{})}
+
+\Hypertarget{tenant-manager_8js_af1a99a3ff1a35c114bdd06cc7252beb6}\index{tenant-\/manager.js@{tenant-\/manager.js}!error\_1@{error\_1}}
+\index{error\_1@{error\_1}!tenant-\/manager.js@{tenant-\/manager.js}}
+\doxysubsubsection{\texorpdfstring{error\_1}{error\_1}}
+{\footnotesize\ttfamily \label{tenant-manager_8js_af1a99a3ff1a35c114bdd06cc7252beb6} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} error\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/error"{})}
+
+\Hypertarget{tenant-manager_8js_ae2475e10618961c050dcba04e8c42331}\index{tenant-\/manager.js@{tenant-\/manager.js}!strict@{strict}}
+\index{strict@{strict}!tenant-\/manager.js@{tenant-\/manager.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{tenant-manager_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+
+firebase-\/admin v12.\+7.\+0 \Hypertarget{tenant-manager_8js_a7f22382a0e169c2c376a54c661007a14}\index{tenant-\/manager.js@{tenant-\/manager.js}!tenant\_1@{tenant\_1}}
+\index{tenant\_1@{tenant\_1}!tenant-\/manager.js@{tenant-\/manager.js}}
+\doxysubsubsection{\texorpdfstring{tenant\_1}{tenant\_1}}
+{\footnotesize\ttfamily \label{tenant-manager_8js_a7f22382a0e169c2c376a54c661007a14} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} tenant\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./tenant"{})}
+
+\Hypertarget{tenant-manager_8js_aab8b26998ade14aac2edc78bac191cb1}\index{tenant-\/manager.js@{tenant-\/manager.js}!TenantAwareAuth@{TenantAwareAuth}}
+\index{TenantAwareAuth@{TenantAwareAuth}!tenant-\/manager.js@{tenant-\/manager.js}}
+\doxysubsubsection{\texorpdfstring{TenantAwareAuth}{TenantAwareAuth}}
+{\footnotesize\ttfamily \label{tenant-manager_8js_aab8b26998ade14aac2edc78bac191cb1} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} Tenant\+Aware\+Auth = Tenant\+Aware\+Auth}
+
+\Hypertarget{tenant-manager_8js_a6431103c6759c4fc2065f2ca193f9e93}\index{tenant-\/manager.js@{tenant-\/manager.js}!TenantManager@{TenantManager}}
+\index{TenantManager@{TenantManager}!tenant-\/manager.js@{tenant-\/manager.js}}
+\doxysubsubsection{\texorpdfstring{TenantManager}{TenantManager}}
+{\footnotesize\ttfamily \label{tenant-manager_8js_a6431103c6759c4fc2065f2ca193f9e93} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} Tenant\+Manager = exports.\+Tenant\+Aware\+Auth = void 0}
+
+\Hypertarget{tenant-manager_8js_a022e926a40defc4294368e708a7e2372}\index{tenant-\/manager.js@{tenant-\/manager.js}!utils@{utils}}
+\index{utils@{utils}!tenant-\/manager.js@{tenant-\/manager.js}}
+\doxysubsubsection{\texorpdfstring{utils}{utils}}
+{\footnotesize\ttfamily \label{tenant-manager_8js_a022e926a40defc4294368e708a7e2372} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} utils = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/index"{})}
+
+\Hypertarget{tenant-manager_8js_add6dc10e852e313f07c0d59bcf288b6a}\index{tenant-\/manager.js@{tenant-\/manager.js}!validator@{validator}}
+\index{validator@{validator}!tenant-\/manager.js@{tenant-\/manager.js}}
+\doxysubsubsection{\texorpdfstring{validator}{validator}}
+{\footnotesize\ttfamily \label{tenant-manager_8js_add6dc10e852e313f07c0d59bcf288b6a} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} validator = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../utils/validator"{})}
+

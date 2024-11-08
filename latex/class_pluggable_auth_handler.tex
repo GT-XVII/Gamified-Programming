@@ -1,0 +1,125 @@
+\doxysection{Pluggable\+Auth\+Handler Class Reference}
+\hypertarget{class_pluggable_auth_handler}{}\label{class_pluggable_auth_handler}\index{PluggableAuthHandler@{PluggableAuthHandler}}
+
+
+Collaboration diagram for Pluggable\+Auth\+Handler\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{class_pluggable_auth_handler__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pluggable_auth_handler_a419d58441bda1967f7835cba5c8934d7}{constructor}} (options)
+\item 
+\mbox{\hyperlink{class_pluggable_auth_handler_ac33a538407f779119e81811fee1e9f96}{retrieve\+Response\+From\+Executable}} (env\+Map)
+\item 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{class_pluggable_auth_handler_a9b4572914a4260f7d0c22b4c754cf629}{retrieve\+Cached\+Response}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_pluggable_auth_handler_ac2f7ce286923c3f01965b425512b54c5}{parse\+Command}} (\mbox{\hyperlink{yargs_2build_2lib_2command_8js_a375077f2439e51b3d30f204271589efb}{command}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_a}{A} handler used to retrieve 3rd party token responses from user defined executables and cached file output for the \doxylink{class_pluggable_auth_client}{Pluggable\+Auth\+Client} class. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_pluggable_auth_handler_a419d58441bda1967f7835cba5c8934d7}\index{PluggableAuthHandler@{PluggableAuthHandler}!constructor@{constructor}}
+\index{constructor@{constructor}!PluggableAuthHandler@{PluggableAuthHandler}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_pluggable_auth_handler_a419d58441bda1967f7835cba5c8934d7} 
+Pluggable\+Auth\+Handler\+::constructor (\begin{DoxyParamCaption}\item[{}]{options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Instantiates a \doxylink{class_pluggable_auth_handler}{Pluggable\+Auth\+Handler} instance using the provided Pluggable\+Auth\+Handler\+Options object. 
+
+References \mbox{\hyperlink{class_pluggable_auth_handler_ac2f7ce286923c3f01965b425512b54c5}{parse\+Command()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_pluggable_auth_handler_a419d58441bda1967f7835cba5c8934d7_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_pluggable_auth_handler_ac2f7ce286923c3f01965b425512b54c5}\index{PluggableAuthHandler@{PluggableAuthHandler}!parseCommand@{parseCommand}}
+\index{parseCommand@{parseCommand}!PluggableAuthHandler@{PluggableAuthHandler}}
+\doxysubsubsection{\texorpdfstring{parseCommand()}{parseCommand()}}
+{\footnotesize\ttfamily \label{class_pluggable_auth_handler_ac2f7ce286923c3f01965b425512b54c5} 
+static Pluggable\+Auth\+Handler\+::parse\+Command (\begin{DoxyParamCaption}\item[{}]{command}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Parses given command string into component array, splitting on spaces unless spaces are between quotation marks. 
+
+References \mbox{\hyperlink{yargs_2build_2lib_2command_8js_a375077f2439e51b3d30f204271589efb}{command()}}, \mbox{\hyperlink{ordered-map_8min_8js_a103df269476e78897c9c4c6cb8f4eb06}{g}}, \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}, \mbox{\hyperlink{long_2index_8js_ad7dc44f0ebdb746f4a5b0612ae9315cb}{not}}, \mbox{\hyperlink{ordered-map_8min_8js_ad9a7d92cb87932d25187fdec3ba1b621}{s}}, and \mbox{\hyperlink{express_2lib_2router_2index_8js_acab0c09ac73e7a3c85a21fa773e9b8b0}{slice}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_pluggable_auth_handler_ac2f7ce286923c3f01965b425512b54c5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{class_pluggable_auth_handler_ac2f7ce286923c3f01965b425512b54c5_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_pluggable_auth_handler_a9b4572914a4260f7d0c22b4c754cf629}\index{PluggableAuthHandler@{PluggableAuthHandler}!retrieveCachedResponse@{retrieveCachedResponse}}
+\index{retrieveCachedResponse@{retrieveCachedResponse}!PluggableAuthHandler@{PluggableAuthHandler}}
+\doxysubsubsection{\texorpdfstring{retrieveCachedResponse()}{retrieveCachedResponse()}}
+{\footnotesize\ttfamily \label{class_pluggable_auth_handler_a9b4572914a4260f7d0c22b4c754cf629} 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} Pluggable\+Auth\+Handler\+::retrieve\+Cached\+Response (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Checks user provided output file for response from previous run of executable and return the response if it exists, is formatted correctly, and is not expired. 
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{logger_2dist_2esm_2index_8esm5_8js_a0adf123df8967a14b5bdd9ff3bbe2d0c}{\+\_\+a}}, \mbox{\hyperlink{core_8min_8js_a46d2d1e8780c9b3b6a642760bb148e61}{an}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aace6cbf6b92481670f8b8421548f7584}{encoding}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}}, \mbox{\hyperlink{pluggable-auth-handler_8js_af6038e8f5fc75e21bdf13e594865d699}{executable\+\_\+response\+\_\+1}}, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a4abaedaa5078f55d753a41e28ef4b9a1}{file}}, \mbox{\hyperlink{pluggable-auth-handler_8js_a2e47e1f004220675d0fa39b8255bd78f}{fs}}, \mbox{\hyperlink{verifier_8js_a499da133dea4d1a4ef64e31667ec221a}{invalid()}}, \mbox{\hyperlink{json-bigint_2lib_2stringify_8js_aec316efdeb7b2e5358b7d50869858da1}{JSON}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ac70ac40ef8199c59316b35022dd21914}{response}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{class_pluggable_auth_handler_a9b4572914a4260f7d0c22b4c754cf629_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_pluggable_auth_handler_ac33a538407f779119e81811fee1e9f96}\index{PluggableAuthHandler@{PluggableAuthHandler}!retrieveResponseFromExecutable@{retrieveResponseFromExecutable}}
+\index{retrieveResponseFromExecutable@{retrieveResponseFromExecutable}!PluggableAuthHandler@{PluggableAuthHandler}}
+\doxysubsubsection{\texorpdfstring{retrieveResponseFromExecutable()}{retrieveResponseFromExecutable()}}
+{\footnotesize\ttfamily \label{class_pluggable_auth_handler_ac33a538407f779119e81811fee1e9f96} 
+Pluggable\+Auth\+Handler\+::retrieve\+Response\+From\+Executable (\begin{DoxyParamCaption}\item[{}]{env\+Map}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Calls user provided executable to get a 3rd party subject token and returns the response. 
+\begin{DoxyParams}{Parameters}
+{\em env\+Map} & a Map of additional Environment Variables required for the executable. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_a}{A} promise that resolves with the executable response. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{core_8min_8js_a46d2d1e8780c9b3b6a642760bb148e61}{an}}, \mbox{\hyperlink{pluggable-auth-handler_8js_a15864adf3f55f4e666d9e849629371ba}{child\+Process}}, \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_afaa7db0d6208d21f727c716fa3962b44}{error}}, \mbox{\hyperlink{pluggable-auth-handler_8js_af6038e8f5fc75e21bdf13e594865d699}{executable\+\_\+response\+\_\+1}}, \mbox{\hyperlink{verifier_8js_a499da133dea4d1a4ef64e31667ec221a}{invalid()}}, \mbox{\hyperlink{json-bigint_2lib_2stringify_8js_aec316efdeb7b2e5358b7d50869858da1}{JSON}}, \mbox{\hyperlink{pluggable-auth-handler_8js_ac604fa9688c60c5ace0067cb18e20959}{pluggable\+\_\+auth\+\_\+client\+\_\+1}}, \mbox{\hyperlink{__get_tag_8js_abace523389c17bce1848e3a427871700}{Promise}}, \mbox{\hyperlink{reject_8js_a94bc21104657e301a8ec194b529feaed}{reject()}}, \mbox{\hyperlink{_0dprotobufjs_2path_2index_8js_a2001ea102ec496ebdabe15e68493427a}{resolve}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ac70ac40ef8199c59316b35022dd21914}{response}}, and \mbox{\hyperlink{rxjs_2dist_2cjs_2internal_2operators_2timeout_8js_a56cd1f2498714e800f2da45ee2fd56b7}{timeout}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{class_pluggable_auth_handler_ac33a538407f779119e81811fee1e9f96_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/google-\/auth-\/library/build/src/auth/\mbox{\hyperlink{pluggable-auth-handler_8js}{pluggable-\/auth-\/handler.\+js}}\end{DoxyCompactItemize}

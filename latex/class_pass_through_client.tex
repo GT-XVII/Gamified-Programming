@@ -1,0 +1,90 @@
+\doxysection{Pass\+Through\+Client Class Reference}
+\hypertarget{class_pass_through_client}{}\label{class_pass_through_client}\index{PassThroughClient@{PassThroughClient}}
+
+
+Inheritance diagram for Pass\+Through\+Client\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{class_pass_through_client__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Pass\+Through\+Client\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{class_pass_through_client__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{class_pass_through_client_a83ee97c7363a3058151c92adf7251e6b}{request}} (opts)
+\item 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{class_pass_through_client_aa320502330242caff4c4db6518d1ed17}{get\+Access\+Token}} ()
+\item 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{class_pass_through_client_a7129733482f1a6c8c061cee3e9c9b2f6}{get\+Request\+Headers}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An \doxylink{class_auth_client}{Auth\+Client} without any Authentication information. Useful for\+:
+\begin{DoxyItemize}
+\item Anonymous access
+\item Local Emulators
+\item Testing Environments 
+\end{DoxyItemize}
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_pass_through_client_aa320502330242caff4c4db6518d1ed17}\index{PassThroughClient@{PassThroughClient}!getAccessToken@{getAccessToken}}
+\index{getAccessToken@{getAccessToken}!PassThroughClient@{PassThroughClient}}
+\doxysubsubsection{\texorpdfstring{getAccessToken()}{getAccessToken()}}
+{\footnotesize\ttfamily \label{class_pass_through_client_aa320502330242caff4c4db6518d1ed17} 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} Pass\+Through\+Client\+::get\+Access\+Token (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\doxylink{class_a}{A} required method of the base class. Always will return an empty object.
+
+\begin{DoxyReturn}{Returns}
+\{\} 
+\end{DoxyReturn}
+\Hypertarget{class_pass_through_client_a7129733482f1a6c8c061cee3e9c9b2f6}\index{PassThroughClient@{PassThroughClient}!getRequestHeaders@{getRequestHeaders}}
+\index{getRequestHeaders@{getRequestHeaders}!PassThroughClient@{PassThroughClient}}
+\doxysubsubsection{\texorpdfstring{getRequestHeaders()}{getRequestHeaders()}}
+{\footnotesize\ttfamily \label{class_pass_through_client_a7129733482f1a6c8c061cee3e9c9b2f6} 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} Pass\+Through\+Client\+::get\+Request\+Headers (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\doxylink{class_a}{A} required method of the base class. Always will return an empty object.
+
+\begin{DoxyReturn}{Returns}
+\{\} 
+\end{DoxyReturn}
+\Hypertarget{class_pass_through_client_a83ee97c7363a3058151c92adf7251e6b}\index{PassThroughClient@{PassThroughClient}!request@{request}}
+\index{request@{request}!PassThroughClient@{PassThroughClient}}
+\doxysubsubsection{\texorpdfstring{request()}{request()}}
+{\footnotesize\ttfamily \label{class_pass_through_client_a83ee97c7363a3058151c92adf7251e6b} 
+\mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} Pass\+Through\+Client\+::request (\begin{DoxyParamCaption}\item[{}]{opts}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Creates a request without any authentication headers or checks.
+
+\begin{DoxyRemark}{Remarks}
+
+\end{DoxyRemark}
+In testing environments it may be useful to change the provided {\ttfamily \doxylink{}{Auth\+Client.\+transporter}} for any desired request overrides/handling.
+
+
+\begin{DoxyParams}{Parameters}
+{\em opts} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The response of the request. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/google-\/auth-\/library/build/src/auth/\mbox{\hyperlink{passthrough_8js}{passthrough.\+js}}\end{DoxyCompactItemize}

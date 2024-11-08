@@ -1,0 +1,196 @@
+\doxysection{Query\+Snapshot Class Reference}
+\hypertarget{class_query_snapshot}{}\label{class_query_snapshot}\index{QuerySnapshot@{QuerySnapshot}}
+
+
+Collaboration diagram for Query\+Snapshot\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=159pt]{class_query_snapshot__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{Indent}\textbf{ Query\+Snapshot\#query}\par
+{\em The query on which you called \doxylink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get()} or on\+Snapshot() in order to get this \doxylink{class_query_snapshot}{Query\+Snapshot}.
+
+@type \{\doxylink{class_query}{Query}\}
+
+@readonly }\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} \mbox{\hyperlink{class_query_snapshot_a987ec73fe5c87518930bec694a0d16c9}{query}} ()
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Query\+Snapshot\#docs}\par
+{\em An array of all the documents in this \doxylink{class_query_snapshot}{Query\+Snapshot}.
+
+@type \{Array.$<$\+Query\+Document\+Snapshot$>$\}
+
+@readonly }\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} \mbox{\hyperlink{class_query_snapshot_a4b503d36791ac3dfdfba53c29163b3cf}{docs}} ()
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Query\+Snapshot\#empty}\par
+{\em True if there are no documents in the \doxylink{class_query_snapshot}{Query\+Snapshot}.
+
+@type \{boolean\}
+
+@readonly }\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} \mbox{\hyperlink{class_query_snapshot_a3a2200080de64e727524012aa9441a5f}{empty}} ()
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Query\+Snapshot\#size}\par
+{\em The number of documents in the \doxylink{class_query_snapshot}{Query\+Snapshot}.
+
+@type \{number\}
+
+@readonly }\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} \mbox{\hyperlink{class_query_snapshot_a2f087d8d024b81215234eeca6a766d18}{size}} ()
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Query\+Snapshot\#read\+Time}\par
+{\em The time this query snapshot was obtained.
+
+@type \{\doxylink{class_timestamp}{Timestamp}\} }\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} \mbox{\hyperlink{class_query_snapshot_ad233436a04a122ad65cd2876fdcafce0}{read\+Time}} ()
+\item 
+\mbox{\hyperlink{class_query_snapshot_abaae17f5a2fc903f445b0d578e9d91c0}{doc\+Changes}} ()
+\item 
+\mbox{\hyperlink{class_query_snapshot_a7cb3bbed4e6b398fb95468194884c0e0}{for\+Each}} (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a622460feeccdab6d8f307936fc6b36fb}{callback}}, this\+Arg)
+\item 
+\mbox{\hyperlink{class_query_snapshot_aeb7522043458de69f0d0d7d2282624d9}{is\+Equal}} (other)
+\end{DoxyCompactItemize}
+\end{Indent}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_query_snapshot_a097222630a19ba2d91ad36dc172271dc}{constructor}} (\+\_\+query, \+\_\+read\+Time, \+\_\+size, \mbox{\hyperlink{class_query_snapshot_a4b503d36791ac3dfdfba53c29163b3cf}{docs}}, changes)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_a}{A} \doxylink{class_query_snapshot}{Query\+Snapshot} contains zero or more \mbox{[}\doxylink{class_query_document_snapshot}{Query\+Document\+Snapshot}\mbox{]}{\ttfamily \doxylink{class_query_document_snapshot}{Query\+Document\+Snapshot}} objects representing the results of a query. The documents can be accessed as an array via the \mbox{[}documents\mbox{]}{\ttfamily \doxylink{}{Query\+Snapshot\#documents}} property or enumerated using the \mbox{[}for\+Each\mbox{]}{\ttfamily \doxylink{class_query_snapshot_a7cb3bbed4e6b398fb95468194884c0e0}{Query\+Snapshot\#for\+Each}} method. The number of documents can be determined via the \mbox{[}empty\mbox{]}{\ttfamily \doxylink{class_query_snapshot_a3a2200080de64e727524012aa9441a5f}{Query\+Snapshot\#empty}} and \mbox{[}size\mbox{]}{\ttfamily \doxylink{class_query_snapshot_a2f087d8d024b81215234eeca6a766d18}{Query\+Snapshot\#size}} properties. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_query_snapshot_a097222630a19ba2d91ad36dc172271dc}\index{QuerySnapshot@{QuerySnapshot}!constructor@{constructor}}
+\index{constructor@{constructor}!QuerySnapshot@{QuerySnapshot}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_query_snapshot_a097222630a19ba2d91ad36dc172271dc} 
+Query\+Snapshot\+::constructor (\begin{DoxyParamCaption}\item[{}]{\+\_\+query}{, }\item[{}]{\+\_\+read\+Time}{, }\item[{}]{\+\_\+size}{, }\item[{}]{docs}{, }\item[{}]{changes}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+query} & The originating query. \\
+\hline
+{\em \+\_\+read\+Time} & The time when this query snapshot was obtained. \\
+\hline
+{\em \+\_\+size} & The number of documents in the result set. \\
+\hline
+{\em docs} & \doxylink{class_a}{A} callback returning a sorted array of documents matching this query \\
+\hline
+{\em changes} & \doxylink{class_a}{A} callback returning a sorted array of document change events for this snapshot. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{class_query_snapshot_a4b503d36791ac3dfdfba53c29163b3cf}{docs()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_query_snapshot_a097222630a19ba2d91ad36dc172271dc_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_query_snapshot_abaae17f5a2fc903f445b0d578e9d91c0}\index{QuerySnapshot@{QuerySnapshot}!docChanges@{docChanges}}
+\index{docChanges@{docChanges}!QuerySnapshot@{QuerySnapshot}}
+\doxysubsubsection{\texorpdfstring{docChanges()}{docChanges()}}
+{\footnotesize\ttfamily \label{class_query_snapshot_abaae17f5a2fc903f445b0d578e9d91c0} 
+Query\+Snapshot\+::doc\+Changes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_query_snapshot_a4b503d36791ac3dfdfba53c29163b3cf}\index{QuerySnapshot@{QuerySnapshot}!docs@{docs}}
+\index{docs@{docs}!QuerySnapshot@{QuerySnapshot}}
+\doxysubsubsection{\texorpdfstring{docs()}{docs()}}
+{\footnotesize\ttfamily \label{class_query_snapshot_a4b503d36791ac3dfdfba53c29163b3cf} 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} Query\+Snapshot\+::docs (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_query_snapshot_a4b503d36791ac3dfdfba53c29163b3cf_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_query_snapshot_a3a2200080de64e727524012aa9441a5f}\index{QuerySnapshot@{QuerySnapshot}!empty@{empty}}
+\index{empty@{empty}!QuerySnapshot@{QuerySnapshot}}
+\doxysubsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily \label{class_query_snapshot_a3a2200080de64e727524012aa9441a5f} 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} Query\+Snapshot\+::empty (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_query_snapshot_a7cb3bbed4e6b398fb95468194884c0e0}\index{QuerySnapshot@{QuerySnapshot}!forEach@{forEach}}
+\index{forEach@{forEach}!QuerySnapshot@{QuerySnapshot}}
+\doxysubsubsection{\texorpdfstring{forEach()}{forEach()}}
+{\footnotesize\ttfamily \label{class_query_snapshot_a7cb3bbed4e6b398fb95468194884c0e0} 
+Query\+Snapshot\+::for\+Each (\begin{DoxyParamCaption}\item[{}]{callback}{, }\item[{}]{this\+Arg}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a622460feeccdab6d8f307936fc6b36fb}{callback}}, \mbox{\hyperlink{class_query_snapshot_a4b503d36791ac3dfdfba53c29163b3cf}{docs()}}, \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}, and \mbox{\hyperlink{query-snapshot_8js_aa37716c5385ffbe958d12dba0dab85f8}{validate\+\_\+1}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_query_snapshot_a7cb3bbed4e6b398fb95468194884c0e0_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_query_snapshot_aeb7522043458de69f0d0d7d2282624d9}\index{QuerySnapshot@{QuerySnapshot}!isEqual@{isEqual}}
+\index{isEqual@{isEqual}!QuerySnapshot@{QuerySnapshot}}
+\doxysubsubsection{\texorpdfstring{isEqual()}{isEqual()}}
+{\footnotesize\ttfamily \label{class_query_snapshot_aeb7522043458de69f0d0d7d2282624d9} 
+Query\+Snapshot\+::is\+Equal (\begin{DoxyParamCaption}\item[{}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns true if the document data in this {\ttfamily \doxylink{class_query_snapshot}{Query\+Snapshot}} is equal to the provided value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\texorpdfstring{$\ast$}{*}\}} & other The value to compare against. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{boolean\} true if this {\ttfamily \doxylink{class_query_snapshot}{Query\+Snapshot}} is equal to the provided value. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{query-snapshot_8js_a6af3fa6e24c6a46faf4552f3a2ad8783}{util\+\_\+1}}.
+
+\Hypertarget{class_query_snapshot_a987ec73fe5c87518930bec694a0d16c9}\index{QuerySnapshot@{QuerySnapshot}!query@{query}}
+\index{query@{query}!QuerySnapshot@{QuerySnapshot}}
+\doxysubsubsection{\texorpdfstring{query()}{query()}}
+{\footnotesize\ttfamily \label{class_query_snapshot_a987ec73fe5c87518930bec694a0d16c9} 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} Query\+Snapshot\+::query (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_query_snapshot_ad233436a04a122ad65cd2876fdcafce0}\index{QuerySnapshot@{QuerySnapshot}!readTime@{readTime}}
+\index{readTime@{readTime}!QuerySnapshot@{QuerySnapshot}}
+\doxysubsubsection{\texorpdfstring{readTime()}{readTime()}}
+{\footnotesize\ttfamily \label{class_query_snapshot_ad233436a04a122ad65cd2876fdcafce0} 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} Query\+Snapshot\+::read\+Time (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_query_snapshot_a2f087d8d024b81215234eeca6a766d18}\index{QuerySnapshot@{QuerySnapshot}!size@{size}}
+\index{size@{size}!QuerySnapshot@{QuerySnapshot}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily \label{class_query_snapshot_a2f087d8d024b81215234eeca6a766d18} 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} Query\+Snapshot\+::size (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/@google-\/cloud/firestore/build/src/reference/\mbox{\hyperlink{query-snapshot_8js}{query-\/snapshot.\+js}}\end{DoxyCompactItemize}

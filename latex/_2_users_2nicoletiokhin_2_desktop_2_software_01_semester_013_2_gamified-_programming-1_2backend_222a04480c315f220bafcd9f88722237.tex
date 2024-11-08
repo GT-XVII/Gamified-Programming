@@ -1,0 +1,34 @@
+\doxysection{/\+Users/nicoletiokhin/\+Desktop/\+Software Semester 3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/lodash/assign\+In.\+js}
+\hypertarget{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_222a04480c315f220bafcd9f88722237}{}\label{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_222a04480c315f220bafcd9f88722237}This method is like {\ttfamily \+\_\+.\+assign} except that it iterates over own and inherited source properties.
+
+{\bfseries{Note\+:}} This method mutates {\ttfamily object}.
+
+@member\+Of \+\_\+ \begin{DoxySince}{Since}
+4.\+0.\+0 @alias extend
+\end{DoxySince}
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Object\}} & object The destination object. \\
+\hline
+{\em \{...\+Object\}} & \mbox{[}sources\mbox{]} The source objects. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Object\} Returns {\ttfamily object}. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\+\_\+.\+assign
+\end{DoxySeeAlso}
+function Foo() \{ this.\+a = 1; \}
+
+function Bar() \{ this.\+c = 3; \}
+
+Foo.\+prototype.\+b = 2; Bar.\+prototype.\+d = 4;
+
+\+\_\+.\+assign\+In(\{ \textquotesingle{}a\textquotesingle{}\+: 0 \}, new Foo, new Bar); // =\texorpdfstring{$>$}{>} \{ \textquotesingle{}a\textquotesingle{}\+: 1, \textquotesingle{}b\textquotesingle{}\+: 2, \textquotesingle{}c\textquotesingle{}\+: 3, \textquotesingle{}d\textquotesingle{}\+: 4 \}
+
+
+\begin{DoxyCodeInclude}{0}
+
+\end{DoxyCodeInclude}
+ Semester \doxylink{assign_in_8js}{3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/lodash/assign\+In.\+js} 

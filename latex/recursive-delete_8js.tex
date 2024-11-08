@@ -1,0 +1,87 @@
+\doxysection{backend/node\+\_\+modules/@google-\/cloud/firestore/build/src/recursive-\/delete.js File Reference}
+\hypertarget{recursive-delete_8js}{}\label{recursive-delete_8js}\index{backend/node\_modules/"@google-\/cloud/firestore/build/src/recursive-\/delete.js@{backend/node\_modules/"@google-\/cloud/firestore/build/src/recursive-\/delete.js}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_recursive_delete}{Recursive\+Delete}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{recursive-delete_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{recursive-delete_8js_a873d6f6de7f0932da0093b8e91fe41a7}{Recursive\+Delete}} = \mbox{\hyperlink{recursive-delete_8js_ab57ad0f05c75929525e204e91e066788}{exports.\+RECURSIVE\+\_\+\+DELETE\+\_\+\+MIN\+\_\+\+PENDING\+\_\+\+OPS}} = \mbox{\hyperlink{recursive-delete_8js_a6155f015c10c00c494d4123ac8500940}{exports.\+RECURSIVE\+\_\+\+DELETE\+\_\+\+MAX\+\_\+\+PENDING\+\_\+\+OPS}} = \mbox{\hyperlink{recursive-delete_8js_a9d6dfcbc390c7b6ea8e8d6aa5b069fca}{exports.\+REFERENCE\+\_\+\+NAME\+\_\+\+MIN\+\_\+\+ID}} = void 0
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{recursive-delete_8js_a0a4d6a89916a48f4ba0e696e93dfc003}{assert}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}assert"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{recursive-delete_8js_a76aa01e4e3ebe86c8dbf548e41385e61}{\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}."{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{recursive-delete_8js_a6af3fa6e24c6a46faf4552f3a2ad8783}{util\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./util"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{recursive-delete_8js_a03937010b3cb83390f6165ae658425ac}{query\+\_\+options\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./reference/\mbox{\hyperlink{application_8js_a3934419f0f9a2068c705a0013b77fab3}{query}}-\/options"{})
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{recursive-delete_8js_a9d6dfcbc390c7b6ea8e8d6aa5b069fca}{REFERENCE\+\_\+\+NAME\+\_\+\+MIN\+\_\+\+ID}} = \textquotesingle{}\+\_\+\+\_\+id-\/9223372036854775808\mbox{\hyperlink{tls_8js_ac1fbe2830b29835dd7fbf894fc78c5dc}{\+\_\+\+\_\+}}\textquotesingle{}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{recursive-delete_8js_a6155f015c10c00c494d4123ac8500940}{RECURSIVE\+\_\+\+DELETE\+\_\+\+MAX\+\_\+\+PENDING\+\_\+\+OPS}} = 5000
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{recursive-delete_8js_ab57ad0f05c75929525e204e91e066788}{RECURSIVE\+\_\+\+DELETE\+\_\+\+MIN\+\_\+\+PENDING\+\_\+\+OPS}} = 1000
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{recursive-delete_8js_a76aa01e4e3ebe86c8dbf548e41385e61}\index{recursive-\/delete.js@{recursive-\/delete.js}!\_1@{\_1}}
+\index{\_1@{\_1}!recursive-\/delete.js@{recursive-\/delete.js}}
+\doxysubsubsection{\texorpdfstring{\_1}{\_1}}
+{\footnotesize\ttfamily \label{recursive-delete_8js_a76aa01e4e3ebe86c8dbf548e41385e61} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}."{})}
+
+\Hypertarget{recursive-delete_8js_a0a4d6a89916a48f4ba0e696e93dfc003}\index{recursive-\/delete.js@{recursive-\/delete.js}!assert@{assert}}
+\index{assert@{assert}!recursive-\/delete.js@{recursive-\/delete.js}}
+\doxysubsubsection{\texorpdfstring{assert}{assert}}
+{\footnotesize\ttfamily \label{recursive-delete_8js_a0a4d6a89916a48f4ba0e696e93dfc003} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} assert = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}assert"{})}
+
+\Hypertarget{recursive-delete_8js_a03937010b3cb83390f6165ae658425ac}\index{recursive-\/delete.js@{recursive-\/delete.js}!query\_options\_1@{query\_options\_1}}
+\index{query\_options\_1@{query\_options\_1}!recursive-\/delete.js@{recursive-\/delete.js}}
+\doxysubsubsection{\texorpdfstring{query\_options\_1}{query\_options\_1}}
+{\footnotesize\ttfamily \label{recursive-delete_8js_a03937010b3cb83390f6165ae658425ac} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} query\+\_\+options\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./reference/\mbox{\hyperlink{application_8js_a3934419f0f9a2068c705a0013b77fab3}{query}}-\/options"{})}
+
+\Hypertarget{recursive-delete_8js_a6155f015c10c00c494d4123ac8500940}\index{recursive-\/delete.js@{recursive-\/delete.js}!RECURSIVE\_DELETE\_MAX\_PENDING\_OPS@{RECURSIVE\_DELETE\_MAX\_PENDING\_OPS}}
+\index{RECURSIVE\_DELETE\_MAX\_PENDING\_OPS@{RECURSIVE\_DELETE\_MAX\_PENDING\_OPS}!recursive-\/delete.js@{recursive-\/delete.js}}
+\doxysubsubsection{\texorpdfstring{RECURSIVE\_DELETE\_MAX\_PENDING\_OPS}{RECURSIVE\_DELETE\_MAX\_PENDING\_OPS}}
+{\footnotesize\ttfamily \label{recursive-delete_8js_a6155f015c10c00c494d4123ac8500940} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} RECURSIVE\+\_\+\+DELETE\+\_\+\+MAX\+\_\+\+PENDING\+\_\+\+OPS = 5000}
+
+The query limit used for recursive deletes when fetching all descendants of the specified reference to delete. This is done to prevent the query stream from streaming documents faster than \doxylink{class_firestore}{Firestore} can delete. \Hypertarget{recursive-delete_8js_ab57ad0f05c75929525e204e91e066788}\index{recursive-\/delete.js@{recursive-\/delete.js}!RECURSIVE\_DELETE\_MIN\_PENDING\_OPS@{RECURSIVE\_DELETE\_MIN\_PENDING\_OPS}}
+\index{RECURSIVE\_DELETE\_MIN\_PENDING\_OPS@{RECURSIVE\_DELETE\_MIN\_PENDING\_OPS}!recursive-\/delete.js@{recursive-\/delete.js}}
+\doxysubsubsection{\texorpdfstring{RECURSIVE\_DELETE\_MIN\_PENDING\_OPS}{RECURSIVE\_DELETE\_MIN\_PENDING\_OPS}}
+{\footnotesize\ttfamily \label{recursive-delete_8js_ab57ad0f05c75929525e204e91e066788} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} RECURSIVE\+\_\+\+DELETE\+\_\+\+MIN\+\_\+\+PENDING\+\_\+\+OPS = 1000}
+
+The number of pending \doxylink{class_bulk_writer}{Bulk\+Writer} operations at which \doxylink{class_recursive_delete}{Recursive\+Delete} starts the next limit query to fetch descendants. By starting the query while there are pending operations, \doxylink{class_firestore}{Firestore} can improve \doxylink{class_bulk_writer}{Bulk\+Writer} throughput. This helps prevent \doxylink{class_bulk_writer}{Bulk\+Writer} from idling while \doxylink{class_firestore}{Firestore} fetches the next query. \Hypertarget{recursive-delete_8js_a873d6f6de7f0932da0093b8e91fe41a7}\index{recursive-\/delete.js@{recursive-\/delete.js}!RecursiveDelete@{RecursiveDelete}}
+\index{RecursiveDelete@{RecursiveDelete}!recursive-\/delete.js@{recursive-\/delete.js}}
+\doxysubsubsection{\texorpdfstring{RecursiveDelete}{RecursiveDelete}}
+{\footnotesize\ttfamily \label{recursive-delete_8js_a873d6f6de7f0932da0093b8e91fe41a7} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} Recursive\+Delete = \mbox{\hyperlink{recursive-delete_8js_ab57ad0f05c75929525e204e91e066788}{exports.\+RECURSIVE\+\_\+\+DELETE\+\_\+\+MIN\+\_\+\+PENDING\+\_\+\+OPS}} = \mbox{\hyperlink{recursive-delete_8js_a6155f015c10c00c494d4123ac8500940}{exports.\+RECURSIVE\+\_\+\+DELETE\+\_\+\+MAX\+\_\+\+PENDING\+\_\+\+OPS}} = \mbox{\hyperlink{recursive-delete_8js_a9d6dfcbc390c7b6ea8e8d6aa5b069fca}{exports.\+REFERENCE\+\_\+\+NAME\+\_\+\+MIN\+\_\+\+ID}} = void 0}
+
+\Hypertarget{recursive-delete_8js_a9d6dfcbc390c7b6ea8e8d6aa5b069fca}\index{recursive-\/delete.js@{recursive-\/delete.js}!REFERENCE\_NAME\_MIN\_ID@{REFERENCE\_NAME\_MIN\_ID}}
+\index{REFERENCE\_NAME\_MIN\_ID@{REFERENCE\_NAME\_MIN\_ID}!recursive-\/delete.js@{recursive-\/delete.js}}
+\doxysubsubsection{\texorpdfstring{REFERENCE\_NAME\_MIN\_ID}{REFERENCE\_NAME\_MIN\_ID}}
+{\footnotesize\ttfamily \label{recursive-delete_8js_a9d6dfcbc390c7b6ea8e8d6aa5b069fca} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} REFERENCE\+\_\+\+NAME\+\_\+\+MIN\+\_\+\+ID = \textquotesingle{}\+\_\+\+\_\+id-\/9223372036854775808\mbox{\hyperlink{tls_8js_ac1fbe2830b29835dd7fbf894fc78c5dc}{\+\_\+\+\_\+}}\textquotesingle{}}
+
+Datastore allowed numeric IDs where \doxylink{class_firestore}{Firestore} only allows strings. Numeric IDs are exposed to \doxylink{class_firestore}{Firestore} as {\bfseries{id\+NUM}}, so this is the lowest possible negative numeric value expressed in that format.
+
+This constant is used to specify start\+At/end\+At values when querying for all descendants in a single collection. \Hypertarget{recursive-delete_8js_ae2475e10618961c050dcba04e8c42331}\index{recursive-\/delete.js@{recursive-\/delete.js}!strict@{strict}}
+\index{strict@{strict}!recursive-\/delete.js@{recursive-\/delete.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{recursive-delete_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+
+\Hypertarget{recursive-delete_8js_a6af3fa6e24c6a46faf4552f3a2ad8783}\index{recursive-\/delete.js@{recursive-\/delete.js}!util\_1@{util\_1}}
+\index{util\_1@{util\_1}!recursive-\/delete.js@{recursive-\/delete.js}}
+\doxysubsubsection{\texorpdfstring{util\_1}{util\_1}}
+{\footnotesize\ttfamily \label{recursive-delete_8js_a6af3fa6e24c6a46faf4552f3a2ad8783} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} util\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./util"{})}
+

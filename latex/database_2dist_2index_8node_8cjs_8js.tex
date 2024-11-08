@@ -1,0 +1,1249 @@
+\doxysection{backend/node\+\_\+modules/@firebase/database/dist/index.node.\+cjs.\+js File Reference}
+\hypertarget{database_2dist_2index_8node_8cjs_8js}{}\label{database_2dist_2index_8node_8cjs_8js}\index{backend/node\_modules/"@firebase/database/dist/index.node.cjs.js@{backend/node\_modules/"@firebase/database/dist/index.node.cjs.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a09fc983e0ada80de3cbce41b17ff601f}{\+\_\+interop\+Default\+Legacy}} (\mbox{\hyperlink{firestore__admin__v1__proto__api_8js_a08a4415e9d594ff960030b921d42b91e}{e}})
+\item 
+function \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a7638e3cb39eb4da2acc0aa5adeefbe2e}{each}} (\mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}, \mbox{\hyperlink{writer_8js_a10238cf619a9073c096c996342cd720a}{fn}})
+\item 
+function \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a11c7008b386fafac49105753d50a9e2c}{error\+For\+Server\+Code}} (code, \mbox{\hyperlink{application_8js_a3934419f0f9a2068c705a0013b77fab3}{query}})
+\item 
+function \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a3d382bbae6ab45004bb6462753315156}{repo\+Info\+Needs\+Query\+Param}} (repo\+Info)
+\item 
+function \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_af8d29e8bf4cfd5e5700875779e57f8c2}{repo\+Info\+Connection\+URL}} (repo\+Info, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type}}, params)
+\item 
+function \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_ac14faa536f4864c13eb67c8d962a1330}{stats\+Manager\+Get\+Collection}} (repo\+Info)
+\item 
+function \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a9f204fd8e2e941e9818b6f5236c18873}{stats\+Manager\+Get\+Or\+Create\+Reporter}} (repo\+Info, creator\+Function)
+\item 
+function \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a6f05da8acf605982982354d62a695563}{set\+SDKVersion}} (\mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a265a39dcf2f0b7c6b96574362aa01ad9}{version}})
+\item 
+\mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a8e24c916cf76a834bd25ce55a60fa19a}{if}} (typeof Moz\+Web\+Socket !==\textquotesingle{}\mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}\textquotesingle{})
+\item 
+function \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a58e13176beec59a9f2381eb57c09adc3}{set\+Web\+Socket\+Impl}} (\mbox{\hyperlink{_u_r_l_8js_ae3dd6dec55796db6010372f2c26fbb10}{impl}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+var \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a335d737ceb235a64cba3291ebeb1cea4}{Websocket}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}faye-\/\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_adbdf4dbc0734d27590fca9f60ad422ea}{websocket}}\textquotesingle{})
+\item 
+var \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}@\mbox{\hyperlink{_0dfirebase_2database-compat_2dist_2index_8js_a4f1ae2e0d595a01da793594dc4c89f03}{firebase}}/util\textquotesingle{})
+\item 
+var \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a38931f84edf8c628155994f6be598a46}{tslib}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}tslib\textquotesingle{})
+\item 
+var \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_aee1a758aa8a4ee3f7a341bf1075f2824}{logger\$1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}@\mbox{\hyperlink{_0dfirebase_2database-compat_2dist_2index_8js_a4f1ae2e0d595a01da793594dc4c89f03}{firebase}}/\mbox{\hyperlink{_0dfirebase_2database-compat_2dist_2index_8js_acc69707810d1669872f8199f16a0da20}{logger}}\textquotesingle{})
+\item 
+var \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a7b225fcb720e4d5ed2bbf60e28a25e6d}{app}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}@\mbox{\hyperlink{_0dfirebase_2database-compat_2dist_2index_8js_a4f1ae2e0d595a01da793594dc4c89f03}{firebase}}/app\textquotesingle{})
+\item 
+var \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a78e02835532c727b17e487ef2bc267ed}{component}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}@\mbox{\hyperlink{_0dfirebase_2database-compat_2dist_2index_8js_a4f1ae2e0d595a01da793594dc4c89f03}{firebase}}/component\textquotesingle{})
+\item 
+var \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a4fe0f2d968bfaf1740987f4e9ba83d80}{Websocket\+\_\+\+\_\+default}} = \mbox{\hyperlink{_0dfirebase_2database-compat_2dist_2index_8js_a09fc983e0ada80de3cbce41b17ff601f}{\+\_\+interop\+Default\+Legacy}}(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a335d737ceb235a64cba3291ebeb1cea4}{Websocket}})
+\item 
+var \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a91f6f90952c9eba26572fb7e94738192}{PROTOCOL\+\_\+\+VERSION}} = \textquotesingle{}5\textquotesingle{}
+\item 
+var \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a4417b154eb1c06516936ab07ca3b1ed8}{VERSION\+\_\+\+PARAM}} = \textquotesingle{}\mbox{\hyperlink{ordered-map_8min_8js_a207400f40ed647015069564fa40946e1}{v}}\textquotesingle{}
+\item 
+var \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_adafdae3b24ddefcf8ee4a76c580adc96}{TRANSPORT\+\_\+\+SESSION\+\_\+\+PARAM}} = \textquotesingle{}\mbox{\hyperlink{ordered-map_8min_8js_ad9a7d92cb87932d25187fdec3ba1b621}{s}}\textquotesingle{}
+\item 
+var \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a53d5e70ea43e400627e040d801fa69cb}{REFERER\+\_\+\+PARAM}} = \textquotesingle{}\mbox{\hyperlink{uuid_8min_8js_aaa5fef39529cdffdfa257202bb4fda9f}{r}}\textquotesingle{}
+\item 
+var \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_ad1bd9c6a3ac4a8b29c45b2417544fe7b}{FORGE\+\_\+\+REF}} = \textquotesingle{}\mbox{\hyperlink{uuidv1_8min_8js_a9cf09a2972472098a4c689fd988f4dfc}{f}}\textquotesingle{}
+\item 
+var \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_af0a748775bc2e98b70afba643d11359c}{FORGE\+\_\+\+DOMAIN\+\_\+\+RE}} = /(\mbox{\hyperlink{_0dfirebase_2database-compat_2dist_2index_8js_a4f1ae2e0d595a01da793594dc4c89f03}{console\textbackslash{}.\+firebase}}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{_0dfirebase_2database-compat_2dist_2index_8js_a4f1ae2e0d595a01da793594dc4c89f03}{firebase}}-\/console-\/\textbackslash{}\mbox{\hyperlink{ordered-map_8min_8js_a9721a992655f700bdc2e91ba68b71e26}{w}}+\textbackslash{}.corp\texorpdfstring{$\vert$}{|}firebase\textbackslash{}.\+corp)\textbackslash{}.google\textbackslash{}.\+com/
+\item 
+var \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a321fa6cc81e1109026cb93eb9ae12c9d}{LAST\+\_\+\+SESSION\+\_\+\+PARAM}} = \textquotesingle{}ls\textquotesingle{}
+\item 
+var \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a5c5b32771f3a317fd7feac6e374ddad0}{APPLICATION\+\_\+\+ID\+\_\+\+PARAM}} = \textquotesingle{}\mbox{\hyperlink{ordered-map_8min_8js_ab2752257551c1a01e010ceba5d7ec200}{p}}\textquotesingle{}
+\item 
+var \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a842d76db76cd8d7cca86a5172ad8fc22}{APP\+\_\+\+CHECK\+\_\+\+TOKEN\+\_\+\+PARAM}} = \textquotesingle{}ac\textquotesingle{}
+\item 
+var \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_ac6029bcd1a1d2ecdff9b88206d2f0a72}{WEBSOCKET}} = \textquotesingle{}\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_adbdf4dbc0734d27590fca9f60ad422ea}{websocket}}\textquotesingle{}
+\item 
+var \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a910957698872c8ac691e68a34af3c63b}{LONG\+\_\+\+POLLING}} = \textquotesingle{}long\+\_\+polling\textquotesingle{}
+\item 
+var \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a6bc7f8282e258fbe180bdc0984012815}{DOMStorage\+Wrapper}}
+\item 
+var \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_afc562819dd3c6dd5f10bd8336b90eec2}{Memory\+Storage}}
+\item 
+var \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a7418a9da786c93cf7de941e7c78dc6a8}{create\+Storagefor}}
+\item 
+var \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a7446ace52835fe322e65a12d8b62b28c}{Persistent\+Storage}} = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7418a9da786c93cf7de941e7c78dc6a8}{create\+Storagefor}}(\textquotesingle{}local\+Storage\textquotesingle{})
+\item 
+var \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_ab30ceed4689bf8f0288313456785eb73}{Session\+Storage}} = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7418a9da786c93cf7de941e7c78dc6a8}{create\+Storagefor}}(\textquotesingle{}session\+Storage\textquotesingle{})
+\item 
+var \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a57d340ce140aa5d03645510ddda31036}{log\+Client}} = new logger\$1.\+Logger(\textquotesingle{}@\mbox{\hyperlink{_0dfirebase_2database-compat_2dist_2index_8js_a4f1ae2e0d595a01da793594dc4c89f03}{firebase}}/\mbox{\hyperlink{_0dfirebase_2database-compat_2dist_2index_8js_a7d2d4a94c06389308b8c8b273f66f009}{database}}\textquotesingle{})
+\item 
+var \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a44f66860a5730df110168b216c765581}{LUIDGenerator}}
+\item 
+var \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a8304dcbc5c1f5d02ec4395f6aeab7675}{sha1}}
+\item 
+var \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_ac8c2f91e0f8128b7e28d0fa532ab4706}{build\+Log\+Message\+\_\+}}
+\item 
+var \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_acc69707810d1669872f8199f16a0da20}{logger}} = null
+\item 
+var \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a8a095ffaf53a23f259b5fc81e5f8d706}{first\+Log\+\_\+}} = true
+\item 
+var \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a007ac80bbbc7f9788c1467da5bf42e02}{enable\+Logging\$1}}
+\item 
+var \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_aefe23c2cbd8b153a63929a8306f43c1d}{log}}
+\item 
+var \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_ada96f0ac97fa75e290468bef39e09756}{log\+Wrapper}}
+\item 
+var \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_afaa7db0d6208d21f727c716fa3962b44}{error}}
+\item 
+var \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_acc3b191bb2652b439f122d17aa70b612}{fatal}}
+\item 
+var \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_ad8c5c796d017ca2e3db7513c25558fbc}{warn}}
+\item 
+var \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a2eac21d6d645bb2a3fcf44d929c60d53}{warn\+If\+Page\+Is\+Secure}}
+\item 
+var \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a1f333720d64b654adf492f13b2bb65ca}{is\+Invalid\+JSONNumber}}
+\item 
+var \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a5fe92fa03066560e0df5f330544ca825}{execute\+When\+DOMReady}}
+\item 
+var \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_ac2a89fe8520f327dc68f4c712eeb9e83}{MIN\+\_\+\+NAME}} = \textquotesingle{}\mbox{[}MIN\+\_\+\+NAME\mbox{]}\textquotesingle{}
+\item 
+var \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_afb7396e6fb38516b5f543a1b9569c5f3}{MAX\+\_\+\+NAME}} = \textquotesingle{}\mbox{[}MAX\+\_\+\+NAME\mbox{]}\textquotesingle{}
+\item 
+var \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a97bb272363f589e30592399281157781}{name\+Compare}}
+\item 
+var \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a633a364f69464a365c6ef2b1fa3dbec2}{string\+Compare}}
+\item 
+var \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_aeff74edf852062820742eaeb726a36e2}{require\+Key}}
+\item 
+var \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a2058260f62b62c21fd2cc745c92ce65b}{Object\+To\+Unique\+Key}}
+\item 
+var \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a439bfe45c47260099daec5d475035ab0}{split\+String\+By\+Size}}
+\item 
+var \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a31117d31190a0ecfe81a74a2cb067439}{double\+To\+IEEE754\+String}}
+\item 
+var \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_ac8936c8599a28a7e72e01fbf63e8238c}{is\+Chrome\+Extension\+Content\+Script}}
+\item 
+var \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a846d617250ce108b21d10f74b2c0b08d}{is\+Windows\+Store\+App}}
+\item 
+var \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a3dc59aab33584184c45fd3144dd04658}{INTEGER\+\_\+\+REGEXP\+\_\+}} = new Reg\+Exp(\textquotesingle{}\texorpdfstring{$^\wedge$}{\string^}-\/?(0\texorpdfstring{$\ast$}{*})\textbackslash{}\textbackslash{}\mbox{\hyperlink{uuid_8min_8js_aeb337d295abaddb5ec3cb34cc2e2bbc9}{d}}\{1,10\}\$\textquotesingle{})
+\item 
+var \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_af666b8d5786a7a8ba19015a946546bac}{INTEGER\+\_\+32\+\_\+\+MIN}} = -\/2147483648
+\item 
+var \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a9e81860bb620d62e91941c713b77bee8}{INTEGER\+\_\+32\+\_\+\+MAX}} = 2147483647
+\item 
+var \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a4849d300aa5877d14c31c8e40c92a277}{try\+Parse\+Int}}
+\item 
+var \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_ac21dd9464541428e7ddb0079cffd7f5c}{exception\+Guard}}
+\item 
+var \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_aa0b0be998d27c727d1df0be4d8c174a0}{being\+Crawled}}
+\item 
+var \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_adb90c631ce8d70f14399f330582f915d}{set\+Timeout\+Non\+Blocking}}
+\item 
+var \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a61a542da1a291102827a24d941d907c9}{Repo\+Info}}
+\item 
+var \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a895eb4fe2b6f27040ad6a79cae8ac367}{Stats\+Collection}}
+\item 
+var \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_ac8e7865525f283adff7b25ff9f321f03}{collections}} = \{\}
+\item 
+var \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_af37fcce01e1e10b086f0179b5dde6141}{reporters}} = \{\}
+\item 
+var \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_afc028ba4f9caba4ee1b5c94d4fed7180}{SDK\+\_\+\+VERSION}} = \textquotesingle{}\textquotesingle{}
+\item 
+var \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a283d1ef5a90e0fb13e82ad1b59c50152}{WEBSOCKET\+\_\+\+MAX\+\_\+\+FRAME\+\_\+\+SIZE}} = 16384
+\item 
+var \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_aa4dfcbdc710f1b0206331259491940b1}{WEBSOCKET\+\_\+\+KEEPALIVE\+\_\+\+INTERVAL}} = 45000
+\item 
+var \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a7ad224b5d871c7da3eef0993aa36ae38}{Web\+Socket\+Impl}} = null
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{database_2dist_2index_8node_8cjs_8js_a09fc983e0ada80de3cbce41b17ff601f}\index{index.node.cjs.js@{index.node.cjs.js}!\_interopDefaultLegacy@{\_interopDefaultLegacy}}
+\index{\_interopDefaultLegacy@{\_interopDefaultLegacy}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{\_interopDefaultLegacy()}{\_interopDefaultLegacy()}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_a09fc983e0ada80de3cbce41b17ff601f} 
+function \+\_\+interop\+Default\+Legacy (\begin{DoxyParamCaption}\item[{}]{e}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{firestore__admin__v1__proto__api_8js_a08a4415e9d594ff960030b921d42b91e}{e}}.
+
+\Hypertarget{database_2dist_2index_8node_8cjs_8js_a7638e3cb39eb4da2acc0aa5adeefbe2e}\index{index.node.cjs.js@{index.node.cjs.js}!each@{each}}
+\index{each@{each}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{each()}{each()}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_a7638e3cb39eb4da2acc0aa5adeefbe2e} 
+function each (\begin{DoxyParamCaption}\item[{}]{obj}{, }\item[{}]{fn}{}\end{DoxyParamCaption})}
+
+Apply a function to each (key, value) pair in an object or apply a function to each (index, value) pair in an array 
+\begin{DoxyParams}{Parameters}
+{\em obj} & -\/ The object or array to iterate over \\
+\hline
+{\em fn} & -\/ The function to apply \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{writer_8js_a10238cf619a9073c096c996342cd720a}{fn}}, and \mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}.
+
+\Hypertarget{database_2dist_2index_8node_8cjs_8js_a11c7008b386fafac49105753d50a9e2c}\index{index.node.cjs.js@{index.node.cjs.js}!errorForServerCode@{errorForServerCode}}
+\index{errorForServerCode@{errorForServerCode}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{errorForServerCode()}{errorForServerCode()}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_a11c7008b386fafac49105753d50a9e2c} 
+function error\+For\+Server\+Code (\begin{DoxyParamCaption}\item[{}]{code}{, }\item[{}]{query}{}\end{DoxyParamCaption})}
+
+Converts a server error code to a Java\+Script Error 
+
+References \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_afaa7db0d6208d21f727c716fa3962b44}{error}}, \mbox{\hyperlink{application_8js_a3934419f0f9a2068c705a0013b77fab3}{query}}, and \mbox{\hyperlink{cjs_2internal_2observable_2dom_2_web_socket_subject_8js_ae1a6322b130a00a3357599cfec0feebe}{reason}}.
+
+\Hypertarget{database_2dist_2index_8node_8cjs_8js_a8e24c916cf76a834bd25ce55a60fa19a}\index{index.node.cjs.js@{index.node.cjs.js}!if@{if}}
+\index{if@{if}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{if()}{if()}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_a8e24c916cf76a834bd25ce55a60fa19a} 
+if (\begin{DoxyParamCaption}\item[{}]{typeof Moz\+Web\+Socket !}{ = {\ttfamily =~\textquotesingle{}\mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}\textquotesingle{}}}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a7ad224b5d871c7da3eef0993aa36ae38}{Web\+Socket\+Impl}}.
+
+\Hypertarget{database_2dist_2index_8node_8cjs_8js_af8d29e8bf4cfd5e5700875779e57f8c2}\index{index.node.cjs.js@{index.node.cjs.js}!repoInfoConnectionURL@{repoInfoConnectionURL}}
+\index{repoInfoConnectionURL@{repoInfoConnectionURL}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{repoInfoConnectionURL()}{repoInfoConnectionURL()}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_af8d29e8bf4cfd5e5700875779e57f8c2} 
+function repo\+Info\+Connection\+URL (\begin{DoxyParamCaption}\item[{}]{repo\+Info}{, }\item[{}]{type}{, }\item[{}]{params}{}\end{DoxyParamCaption})}
+
+Returns the websocket URL for this repo 
+\begin{DoxyParams}{Parameters}
+{\em repo\+Info} & -\/ \doxylink{class_repo_info}{Repo\+Info} object \\
+\hline
+{\em type} & -\/ of connection \\
+\hline
+{\em params} & -\/ list \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The URL for this repo 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{lodash_2core_8js_adaff3e7f788c1e0729b031592eb0f962}{each}}, \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a910957698872c8ac691e68a34af3c63b}{LONG\+\_\+\+POLLING}}, \mbox{\hyperlink{cjs_2internal_2observable_2pairs_8js_a0018e2feb647e867aa077d4399e4395f}{pairs}}, \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a3d382bbae6ab45004bb6462753315156}{repo\+Info\+Needs\+Query\+Param()}}, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type}}, \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}}, \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}, and \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_ac6029bcd1a1d2ecdff9b88206d2f0a72}{WEBSOCKET}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{database_2dist_2index_8node_8cjs_8js_af8d29e8bf4cfd5e5700875779e57f8c2_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{database_2dist_2index_8node_8cjs_8js_a3d382bbae6ab45004bb6462753315156}\index{index.node.cjs.js@{index.node.cjs.js}!repoInfoNeedsQueryParam@{repoInfoNeedsQueryParam}}
+\index{repoInfoNeedsQueryParam@{repoInfoNeedsQueryParam}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{repoInfoNeedsQueryParam()}{repoInfoNeedsQueryParam()}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_a3d382bbae6ab45004bb6462753315156} 
+function repo\+Info\+Needs\+Query\+Param (\begin{DoxyParamCaption}\item[{}]{repo\+Info}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{database_2dist_2index_8node_8cjs_8js_a3d382bbae6ab45004bb6462753315156_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{database_2dist_2index_8node_8cjs_8js_a6f05da8acf605982982354d62a695563}\index{index.node.cjs.js@{index.node.cjs.js}!setSDKVersion@{setSDKVersion}}
+\index{setSDKVersion@{setSDKVersion}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{setSDKVersion()}{setSDKVersion()}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_a6f05da8acf605982982354d62a695563} 
+function set\+SDKVersion (\begin{DoxyParamCaption}\item[{}]{version}{}\end{DoxyParamCaption})}
+
+SDK\+\_\+\+VERSION should be set before any database instance is created 
+
+References \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_afc028ba4f9caba4ee1b5c94d4fed7180}{SDK\+\_\+\+VERSION}}, and \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a265a39dcf2f0b7c6b96574362aa01ad9}{version}}.
+
+\Hypertarget{database_2dist_2index_8node_8cjs_8js_a58e13176beec59a9f2381eb57c09adc3}\index{index.node.cjs.js@{index.node.cjs.js}!setWebSocketImpl@{setWebSocketImpl}}
+\index{setWebSocketImpl@{setWebSocketImpl}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{setWebSocketImpl()}{setWebSocketImpl()}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_a58e13176beec59a9f2381eb57c09adc3} 
+function set\+Web\+Socket\+Impl (\begin{DoxyParamCaption}\item[{}]{impl}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{_u_r_l_8js_ae3dd6dec55796db6010372f2c26fbb10}{impl}}, and \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a7ad224b5d871c7da3eef0993aa36ae38}{Web\+Socket\+Impl}}.
+
+\Hypertarget{database_2dist_2index_8node_8cjs_8js_ac14faa536f4864c13eb67c8d962a1330}\index{index.node.cjs.js@{index.node.cjs.js}!statsManagerGetCollection@{statsManagerGetCollection}}
+\index{statsManagerGetCollection@{statsManagerGetCollection}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{statsManagerGetCollection()}{statsManagerGetCollection()}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_ac14faa536f4864c13eb67c8d962a1330} 
+function stats\+Manager\+Get\+Collection (\begin{DoxyParamCaption}\item[{}]{repo\+Info}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_ac8e7865525f283adff7b25ff9f321f03}{collections}}, and \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a895eb4fe2b6f27040ad6a79cae8ac367}{Stats\+Collection}}.
+
+\Hypertarget{database_2dist_2index_8node_8cjs_8js_a9f204fd8e2e941e9818b6f5236c18873}\index{index.node.cjs.js@{index.node.cjs.js}!statsManagerGetOrCreateReporter@{statsManagerGetOrCreateReporter}}
+\index{statsManagerGetOrCreateReporter@{statsManagerGetOrCreateReporter}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{statsManagerGetOrCreateReporter()}{statsManagerGetOrCreateReporter()}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_a9f204fd8e2e941e9818b6f5236c18873} 
+function stats\+Manager\+Get\+Or\+Create\+Reporter (\begin{DoxyParamCaption}\item[{}]{repo\+Info}{, }\item[{}]{creator\+Function}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_af37fcce01e1e10b086f0179b5dde6141}{reporters}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{database_2dist_2index_8node_8cjs_8js_a7b225fcb720e4d5ed2bbf60e28a25e6d}\index{index.node.cjs.js@{index.node.cjs.js}!app@{app}}
+\index{app@{app}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{app}{app}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_a7b225fcb720e4d5ed2bbf60e28a25e6d} 
+var app = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}@\mbox{\hyperlink{_0dfirebase_2database-compat_2dist_2index_8js_a4f1ae2e0d595a01da793594dc4c89f03}{firebase}}/app\textquotesingle{})}
+
+\Hypertarget{database_2dist_2index_8node_8cjs_8js_a842d76db76cd8d7cca86a5172ad8fc22}\index{index.node.cjs.js@{index.node.cjs.js}!APP\_CHECK\_TOKEN\_PARAM@{APP\_CHECK\_TOKEN\_PARAM}}
+\index{APP\_CHECK\_TOKEN\_PARAM@{APP\_CHECK\_TOKEN\_PARAM}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{APP\_CHECK\_TOKEN\_PARAM}{APP\_CHECK\_TOKEN\_PARAM}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_a842d76db76cd8d7cca86a5172ad8fc22} 
+var APP\+\_\+\+CHECK\+\_\+\+TOKEN\+\_\+\+PARAM = \textquotesingle{}ac\textquotesingle{}}
+
+\Hypertarget{database_2dist_2index_8node_8cjs_8js_a5c5b32771f3a317fd7feac6e374ddad0}\index{index.node.cjs.js@{index.node.cjs.js}!APPLICATION\_ID\_PARAM@{APPLICATION\_ID\_PARAM}}
+\index{APPLICATION\_ID\_PARAM@{APPLICATION\_ID\_PARAM}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{APPLICATION\_ID\_PARAM}{APPLICATION\_ID\_PARAM}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_a5c5b32771f3a317fd7feac6e374ddad0} 
+var APPLICATION\+\_\+\+ID\+\_\+\+PARAM = \textquotesingle{}\mbox{\hyperlink{ordered-map_8min_8js_ab2752257551c1a01e010ceba5d7ec200}{p}}\textquotesingle{}}
+
+\Hypertarget{database_2dist_2index_8node_8cjs_8js_aa0b0be998d27c727d1df0be4d8c174a0}\index{index.node.cjs.js@{index.node.cjs.js}!beingCrawled@{beingCrawled}}
+\index{beingCrawled@{beingCrawled}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{beingCrawled}{beingCrawled}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_aa0b0be998d27c727d1df0be4d8c174a0} 
+var being\+Crawled}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ ()\ \{}
+\DoxyCodeLine{\ \ \ \ var\ userAgent\ =\ (typeof\ \mbox{\hyperlink{forge_8all_8min_8js_a77335ab2a82353d4a02f9ba062031c46}{window}}\ ===\ \textcolor{stringliteral}{'object'}\ \&\&}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{forge_8all_8min_8js_a77335ab2a82353d4a02f9ba062031c46}{window}}[\textcolor{stringliteral}{'navigator'}]\ \&\&}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{forge_8all_8min_8js_a77335ab2a82353d4a02f9ba062031c46}{window}}[\textcolor{stringliteral}{'navigator'}][\textcolor{stringliteral}{'userAgent'}])\ ||}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{''};}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ (userAgent.search(/googlebot|google\ webmaster\ tools|bingbot|yahoo!\ slurp|baiduspider|yandexbot|duckduckbot/\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}})\ >=\ 0);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\begin{DoxyReturn}{Returns}
+\{boolean\} true if we think we\textquotesingle{}re currently being crawled. 
+\end{DoxyReturn}
+\Hypertarget{database_2dist_2index_8node_8cjs_8js_ac8c2f91e0f8128b7e28d0fa532ab4706}\index{index.node.cjs.js@{index.node.cjs.js}!buildLogMessage\_@{buildLogMessage\_}}
+\index{buildLogMessage\_@{buildLogMessage\_}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{buildLogMessage\_}{buildLogMessage\_}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_ac8c2f91e0f8128b7e28d0fa532ab4706} 
+var build\+Log\+Message\+\_\+}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ ()\ \{}
+\DoxyCodeLine{\ \ \ \ var\ varArgs\ =\ [];}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{for}\ (var\ \_i\ =\ 0;\ \_i\ <\ arguments.length;\ \_i++)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ varArgs[\_i]\ =\ arguments[\_i];}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ var\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}\ =\ \textcolor{stringliteral}{''};}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{for}\ (var\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ =\ 0;\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ <\ varArgs.length;\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}++)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ var\ arg\ =\ varArgs[\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}];}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{src_2util_2minimal_8js_a325c4e317c38d8497130ebce7670be2f}{Array}}.isArray(arg)\ ||}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ (arg\ \&\&}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ typeof\ arg\ ===\ \textcolor{stringliteral}{'object'}\ \&\&}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ typeof\ arg.length\ ===\ \textcolor{stringliteral}{'number'}))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}\ +=\ \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_ac8c2f91e0f8128b7e28d0fa532ab4706}{buildLogMessage\_}}.apply(\textcolor{keyword}{null},\ arg);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (typeof\ arg\ ===\ \textcolor{stringliteral}{'object'})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}\ +=\ \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}}.stringify(arg);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}\ +=\ arg;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}\ +=\ \textcolor{charliteral}{'\ '};}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{database_2dist_2index_8node_8cjs_8js_ac8e7865525f283adff7b25ff9f321f03}\index{index.node.cjs.js@{index.node.cjs.js}!collections@{collections}}
+\index{collections@{collections}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{collections}{collections}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_ac8e7865525f283adff7b25ff9f321f03} 
+var collections = \{\}}
+
+@license Copyright 2017 Google LLC
+
+Licensed under the Apache License, Version 2.\+0 (the "{}\+License"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+\href{http://www.apache.org/licenses/LICENSE-2.0}{\texttt{ http\+://www.\+apache.\+org/licenses/\+LICENSE-\/2.\+0}}
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "{}\+AS IS"{} BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. \Hypertarget{database_2dist_2index_8node_8cjs_8js_a78e02835532c727b17e487ef2bc267ed}\index{index.node.cjs.js@{index.node.cjs.js}!component@{component}}
+\index{component@{component}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{component}{component}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_a78e02835532c727b17e487ef2bc267ed} 
+var component = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}@\mbox{\hyperlink{_0dfirebase_2database-compat_2dist_2index_8js_a4f1ae2e0d595a01da793594dc4c89f03}{firebase}}/component\textquotesingle{})}
+
+\Hypertarget{database_2dist_2index_8node_8cjs_8js_a7418a9da786c93cf7de941e7c78dc6a8}\index{index.node.cjs.js@{index.node.cjs.js}!createStoragefor@{createStoragefor}}
+\index{createStoragefor@{createStoragefor}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{createStoragefor}{createStoragefor}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_a7418a9da786c93cf7de941e7c78dc6a8} 
+var create\+Storagefor}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ (domStorageName)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (typeof\ \mbox{\hyperlink{forge_8all_8min_8js_a77335ab2a82353d4a02f9ba062031c46}{window}}\ !==\ \textcolor{stringliteral}{'undefined'}\ \&\&}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ typeof\ \mbox{\hyperlink{forge_8all_8min_8js_a77335ab2a82353d4a02f9ba062031c46}{window}}[domStorageName]\ !==\ \textcolor{stringliteral}{'undefined'})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ var\ domStorage\ =\ \mbox{\hyperlink{forge_8all_8min_8js_a77335ab2a82353d4a02f9ba062031c46}{window}}[domStorageName];}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ domStorage.setItem(\textcolor{stringliteral}{'firebase:sentinel'},\ \textcolor{stringliteral}{'cache'});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ domStorage.removeItem(\textcolor{stringliteral}{'firebase:sentinel'});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a6bc7f8282e258fbe180bdc0984012815}{DOMStorageWrapper}}(domStorage);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{catch}\ (\mbox{\hyperlink{firestore__admin__v1__proto__api_8js_a08a4415e9d594ff960030b921d42b91e}{e}})\ \{\ \}}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_afc562819dd3c6dd5f10bd8336b90eec2}{MemoryStorage}}();}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+@license Copyright 2017 Google LLC
+
+Licensed under the Apache License, Version 2.\+0 (the "{}\+License"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+\href{http://www.apache.org/licenses/LICENSE-2.0}{\texttt{ http\+://www.\+apache.\+org/licenses/\+LICENSE-\/2.\+0}}
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "{}\+AS IS"{} BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. Helper to create a \doxylink{class_d_o_m_storage_wrapper}{DOMStorage\+Wrapper} or else fall back to \doxylink{class_memory_storage}{Memory\+Storage}. TODO\+: Once \doxylink{class_memory_storage}{Memory\+Storage} and \doxylink{class_d_o_m_storage_wrapper}{DOMStorage\+Wrapper} have a shared interface this method annotation should change to reflect this type
+
+
+\begin{DoxyParams}{Parameters}
+{\em dom\+Storage\+Name} & -\/ Name of the underlying storage object (e.\+g. \textquotesingle{}local\+Storage\textquotesingle{} or \textquotesingle{}session\+Storage\textquotesingle{}). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Turning off type information until a common interface is defined. 
+\end{DoxyReturn}
+\Hypertarget{database_2dist_2index_8node_8cjs_8js_a6bc7f8282e258fbe180bdc0984012815}\index{index.node.cjs.js@{index.node.cjs.js}!DOMStorageWrapper@{DOMStorageWrapper}}
+\index{DOMStorageWrapper@{DOMStorageWrapper}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{DOMStorageWrapper}{DOMStorageWrapper}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_a6bc7f8282e258fbe180bdc0984012815} 
+var DOMStorage\+Wrapper}
+
+@license Copyright 2017 Google LLC
+
+Licensed under the Apache License, Version 2.\+0 (the "{}\+License"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+\href{http://www.apache.org/licenses/LICENSE-2.0}{\texttt{ http\+://www.\+apache.\+org/licenses/\+LICENSE-\/2.\+0}}
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "{}\+AS IS"{} BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. Wraps a DOM \doxylink{class_storage}{Storage} object and\+:
+\begin{DoxyItemize}
+\item automatically encode objects as JSON strings before storing them to allow us to store arbitrary types.
+\item prefixes names with "{}firebase\+:"{} to avoid collisions with app data.
+\end{DoxyItemize}
+
+We automatically (see storage.\+js) create two such wrappers, one for session\+Storage, and one for local\+Storage. \Hypertarget{database_2dist_2index_8node_8cjs_8js_a31117d31190a0ecfe81a74a2cb067439}\index{index.node.cjs.js@{index.node.cjs.js}!doubleToIEEE754String@{doubleToIEEE754String}}
+\index{doubleToIEEE754String@{doubleToIEEE754String}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{doubleToIEEE754String}{doubleToIEEE754String}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_a31117d31190a0ecfe81a74a2cb067439} 
+var double\+To\+IEEE754\+String}
+
+Borrowed from \href{http://hg.secondlife.com/llsd/src/tip/js/typedarray.js}{\texttt{ http\+://hg.\+secondlife.\+com/llsd/src/tip/js/typedarray.\+js}} (MIT License) I made one modification at the end and removed the NaN / Infinity handling (since it seemed broken \mbox{[}caused an overflow\mbox{]} and we don\textquotesingle{}t need it). See MJL comments. 
+\begin{DoxyParams}{Parameters}
+{\em v} & -\/ \doxylink{class_a}{A} double \\
+\hline
+\end{DoxyParams}
+\Hypertarget{database_2dist_2index_8node_8cjs_8js_a007ac80bbbc7f9788c1467da5bf42e02}\index{index.node.cjs.js@{index.node.cjs.js}!enableLogging\$1@{enableLogging\$1}}
+\index{enableLogging\$1@{enableLogging\$1}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{enableLogging\$1}{enableLogging\$1}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_a007ac80bbbc7f9788c1467da5bf42e02} 
+var enable\+Logging\$1}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ (logger\_,\ persistent)\ \{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}}.assert(!persistent\ ||\ logger\_\ ===\ \textcolor{keyword}{true}\ ||\ logger\_\ ===\ \textcolor{keyword}{false},\ \textcolor{stringliteral}{"{}Can't\ turn\ on\ custom\ loggers\ persistently."{}});}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (logger\_\ ===\ \textcolor{keyword}{true})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a57d340ce140aa5d03645510ddda31036}{logClient}}.logLevel\ =\ \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_aee1a758aa8a4ee3f7a341bf1075f2824}{logger\$1}}.LogLevel.VERBOSE;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_acc69707810d1669872f8199f16a0da20}{logger}}\ =\ \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a57d340ce140aa5d03645510ddda31036}{logClient}}.log.bind(\mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a57d340ce140aa5d03645510ddda31036}{logClient}});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (persistent)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_ab30ceed4689bf8f0288313456785eb73}{SessionStorage}}.set(\textcolor{stringliteral}{'logging\_enabled'},\ \textcolor{keyword}{true});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (typeof\ logger\_\ ===\ \textcolor{stringliteral}{'function'})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_acc69707810d1669872f8199f16a0da20}{logger}}\ =\ logger\_;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_acc69707810d1669872f8199f16a0da20}{logger}}\ =\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_ab30ceed4689bf8f0288313456785eb73}{SessionStorage}}.remove(\textcolor{stringliteral}{'logging\_enabled'});}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+The implementation of Firebase.\+enable\+Logging (defined here to break dependencies) 
+\begin{DoxyParams}{Parameters}
+{\em logger\+\_\+} & -\/ \doxylink{class_a}{A} flag to turn on logging, or a custom logger \\
+\hline
+{\em persistent} & -\/ Whether or not to persist logging settings across refreshes \\
+\hline
+\end{DoxyParams}
+\Hypertarget{database_2dist_2index_8node_8cjs_8js_afaa7db0d6208d21f727c716fa3962b44}\index{index.node.cjs.js@{index.node.cjs.js}!error@{error}}
+\index{error@{error}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{error}{error}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_afaa7db0d6208d21f727c716fa3962b44} 
+var error}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ ()\ \{}
+\DoxyCodeLine{\ \ \ \ var\ varArgs\ =\ [];}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{for}\ (var\ \_i\ =\ 0;\ \_i\ <\ arguments.length;\ \_i++)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ varArgs[\_i]\ =\ arguments[\_i];}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ var\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}\ =\ \textcolor{stringliteral}{'FIREBASE\ INTERNAL\ ERROR:\ '}\ +\ \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_ac8c2f91e0f8128b7e28d0fa532ab4706}{buildLogMessage\_}}.apply(\textcolor{keywordtype}{void}\ 0,\ \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a38931f84edf8c628155994f6be598a46}{tslib}}.\_\_spreadArray([],\ \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a38931f84edf8c628155994f6be598a46}{tslib}}.\_\_read(varArgs),\ \textcolor{keyword}{false}));}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a57d340ce140aa5d03645510ddda31036}{logClient}}.error(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{database_2dist_2index_8node_8cjs_8js_ac21dd9464541428e7ddb0079cffd7f5c}\index{index.node.cjs.js@{index.node.cjs.js}!exceptionGuard@{exceptionGuard}}
+\index{exceptionGuard@{exceptionGuard}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{exceptionGuard}{exceptionGuard}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_ac21dd9464541428e7ddb0079cffd7f5c} 
+var exception\+Guard}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ (\mbox{\hyperlink{writer_8js_a10238cf619a9073c096c996342cd720a}{fn}})\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{writer_8js_a10238cf619a9073c096c996342cd720a}{fn}}();}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{catch}\ (\mbox{\hyperlink{firestore__admin__v1__proto__api_8js_a08a4415e9d594ff960030b921d42b91e}{e}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ setTimeout(\textcolor{keyword}{function}\ ()\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ var\ stack\ =\ \mbox{\hyperlink{firestore__admin__v1__proto__api_8js_a08a4415e9d594ff960030b921d42b91e}{e}}.stack\ ||\ \textcolor{stringliteral}{''};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_ad8c5c796d017ca2e3db7513c25558fbc}{warn}}(\textcolor{stringliteral}{'Exception\ was\ thrown\ by\ user\ callback.'},\ stack);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \mbox{\hyperlink{firestore__admin__v1__proto__api_8js_a08a4415e9d594ff960030b921d42b91e}{e}};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \},\ Math.floor(0));}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Helper to run some code but catch any exceptions and re-\/throw them later. Useful for preventing user callbacks from breaking internal code.
+
+Re-\/throwing the exception from a set\+Timeout is a little evil, but it\textquotesingle{}s very convenient (we don\textquotesingle{}t have to try to figure out when is a safe point to re-\/throw it), and the behavior seems reasonable\+:
+
+
+\begin{DoxyItemize}
+\item If you aren\textquotesingle{}t pausing on exceptions, you get an error in the console with the correct stack trace.
+\item If you\textquotesingle{}re pausing on all exceptions, the debugger will pause on your exception and then again when we rethrow it.
+\item If you\textquotesingle{}re only pausing on uncaught exceptions, the debugger will only pause on us re-\/throwing it.
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em fn} & -\/ The code to guard. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{database_2dist_2index_8node_8cjs_8js_a5fe92fa03066560e0df5f330544ca825}\index{index.node.cjs.js@{index.node.cjs.js}!executeWhenDOMReady@{executeWhenDOMReady}}
+\index{executeWhenDOMReady@{executeWhenDOMReady}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{executeWhenDOMReady}{executeWhenDOMReady}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_a5fe92fa03066560e0df5f330544ca825} 
+var execute\+When\+DOMReady}
+
+\Hypertarget{database_2dist_2index_8node_8cjs_8js_acc3b191bb2652b439f122d17aa70b612}\index{index.node.cjs.js@{index.node.cjs.js}!fatal@{fatal}}
+\index{fatal@{fatal}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{fatal}{fatal}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_acc3b191bb2652b439f122d17aa70b612} 
+var fatal}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ ()\ \{}
+\DoxyCodeLine{\ \ \ \ var\ varArgs\ =\ [];}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{for}\ (var\ \_i\ =\ 0;\ \_i\ <\ arguments.length;\ \_i++)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ varArgs[\_i]\ =\ arguments[\_i];}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ var\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}\ =\ \textcolor{stringliteral}{"{}FIREBASE\ FATAL\ ERROR:\ "{}}.concat(\mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_ac8c2f91e0f8128b7e28d0fa532ab4706}{buildLogMessage\_}}.apply(\textcolor{keywordtype}{void}\ 0,\ \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a38931f84edf8c628155994f6be598a46}{tslib}}.\_\_spreadArray([],\ \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a38931f84edf8c628155994f6be598a46}{tslib}}.\_\_read(varArgs),\ \textcolor{keyword}{false})));}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a57d340ce140aa5d03645510ddda31036}{logClient}}.error(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}});}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ Error(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{database_2dist_2index_8node_8cjs_8js_a8a095ffaf53a23f259b5fc81e5f8d706}\index{index.node.cjs.js@{index.node.cjs.js}!firstLog\_@{firstLog\_}}
+\index{firstLog\_@{firstLog\_}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{firstLog\_}{firstLog\_}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_a8a095ffaf53a23f259b5fc81e5f8d706} 
+var first\+Log\+\_\+ = true}
+
+Flag to check for log availability on first log message \Hypertarget{database_2dist_2index_8node_8cjs_8js_af0a748775bc2e98b70afba643d11359c}\index{index.node.cjs.js@{index.node.cjs.js}!FORGE\_DOMAIN\_RE@{FORGE\_DOMAIN\_RE}}
+\index{FORGE\_DOMAIN\_RE@{FORGE\_DOMAIN\_RE}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{FORGE\_DOMAIN\_RE}{FORGE\_DOMAIN\_RE}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_af0a748775bc2e98b70afba643d11359c} 
+var FORGE\+\_\+\+DOMAIN\+\_\+\+RE = /(\mbox{\hyperlink{_0dfirebase_2database-compat_2dist_2index_8js_a4f1ae2e0d595a01da793594dc4c89f03}{console\textbackslash{}.\+firebase}}\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{_0dfirebase_2database-compat_2dist_2index_8js_a4f1ae2e0d595a01da793594dc4c89f03}{firebase}}-\/console-\/\textbackslash{}\mbox{\hyperlink{ordered-map_8min_8js_a9721a992655f700bdc2e91ba68b71e26}{w}}+\textbackslash{}.corp\texorpdfstring{$\vert$}{|}firebase\textbackslash{}.\+corp)\textbackslash{}.google\textbackslash{}.\+com/}
+
+\Hypertarget{database_2dist_2index_8node_8cjs_8js_ad1bd9c6a3ac4a8b29c45b2417544fe7b}\index{index.node.cjs.js@{index.node.cjs.js}!FORGE\_REF@{FORGE\_REF}}
+\index{FORGE\_REF@{FORGE\_REF}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{FORGE\_REF}{FORGE\_REF}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_ad1bd9c6a3ac4a8b29c45b2417544fe7b} 
+var FORGE\+\_\+\+REF = \textquotesingle{}\mbox{\hyperlink{uuidv1_8min_8js_a9cf09a2972472098a4c689fd988f4dfc}{f}}\textquotesingle{}}
+
+\Hypertarget{database_2dist_2index_8node_8cjs_8js_a9e81860bb620d62e91941c713b77bee8}\index{index.node.cjs.js@{index.node.cjs.js}!INTEGER\_32\_MAX@{INTEGER\_32\_MAX}}
+\index{INTEGER\_32\_MAX@{INTEGER\_32\_MAX}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{INTEGER\_32\_MAX}{INTEGER\_32\_MAX}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_a9e81860bb620d62e91941c713b77bee8} 
+var INTEGER\+\_\+32\+\_\+\+MAX = 2147483647}
+
+For use in keys, the maximum possible 32-\/bit integer. \Hypertarget{database_2dist_2index_8node_8cjs_8js_af666b8d5786a7a8ba19015a946546bac}\index{index.node.cjs.js@{index.node.cjs.js}!INTEGER\_32\_MIN@{INTEGER\_32\_MIN}}
+\index{INTEGER\_32\_MIN@{INTEGER\_32\_MIN}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{INTEGER\_32\_MIN}{INTEGER\_32\_MIN}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_af666b8d5786a7a8ba19015a946546bac} 
+var INTEGER\+\_\+32\+\_\+\+MIN = -\/2147483648}
+
+For use in keys, the minimum possible 32-\/bit integer. \Hypertarget{database_2dist_2index_8node_8cjs_8js_a3dc59aab33584184c45fd3144dd04658}\index{index.node.cjs.js@{index.node.cjs.js}!INTEGER\_REGEXP\_@{INTEGER\_REGEXP\_}}
+\index{INTEGER\_REGEXP\_@{INTEGER\_REGEXP\_}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{INTEGER\_REGEXP\_}{INTEGER\_REGEXP\_}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_a3dc59aab33584184c45fd3144dd04658} 
+var INTEGER\+\_\+\+REGEXP\+\_\+ = new Reg\+Exp(\textquotesingle{}\texorpdfstring{$^\wedge$}{\string^}-\/?(0\texorpdfstring{$\ast$}{*})\textbackslash{}\textbackslash{}\mbox{\hyperlink{uuid_8min_8js_aeb337d295abaddb5ec3cb34cc2e2bbc9}{d}}\{1,10\}\$\textquotesingle{})}
+
+Used to test for integer-\/looking strings \Hypertarget{database_2dist_2index_8node_8cjs_8js_ac8936c8599a28a7e72e01fbf63e8238c}\index{index.node.cjs.js@{index.node.cjs.js}!isChromeExtensionContentScript@{isChromeExtensionContentScript}}
+\index{isChromeExtensionContentScript@{isChromeExtensionContentScript}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{isChromeExtensionContentScript}{isChromeExtensionContentScript}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_ac8936c8599a28a7e72e01fbf63e8238c} 
+var is\+Chrome\+Extension\+Content\+Script}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ ()\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ !!(typeof\ \mbox{\hyperlink{forge_8all_8min_8js_a77335ab2a82353d4a02f9ba062031c46}{window}}\ ===\ \textcolor{stringliteral}{'object'}\ \&\&}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{forge_8all_8min_8js_a77335ab2a82353d4a02f9ba062031c46}{window}}[\textcolor{stringliteral}{'chrome'}]\ \&\&}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{forge_8all_8min_8js_a77335ab2a82353d4a02f9ba062031c46}{window}}[\textcolor{stringliteral}{'chrome'}][\textcolor{stringliteral}{'extension'}]\ \&\&}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ !/\string^chrome/.test(\mbox{\hyperlink{forge_8all_8min_8js_a77335ab2a82353d4a02f9ba062031c46}{window}}.location.href));}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Used to detect if we\textquotesingle{}re in a Chrome content script (which executes in an isolated environment where long-\/polling doesn\textquotesingle{}t work). \Hypertarget{database_2dist_2index_8node_8cjs_8js_a1f333720d64b654adf492f13b2bb65ca}\index{index.node.cjs.js@{index.node.cjs.js}!isInvalidJSONNumber@{isInvalidJSONNumber}}
+\index{isInvalidJSONNumber@{isInvalidJSONNumber}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{isInvalidJSONNumber}{isInvalidJSONNumber}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_a1f333720d64b654adf492f13b2bb65ca} 
+var is\+Invalid\+JSONNumber}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ (\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}})\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ (typeof\ \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}\ ===\ \textcolor{stringliteral}{'number'}\ \&\&}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ (\mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}\ !==\ \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}\ ||\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}\ ===\ Number.POSITIVE\_INFINITY\ ||}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}\ ===\ Number.NEGATIVE\_INFINITY));}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Returns true if data is NaN, or +/-\/ Infinity. \Hypertarget{database_2dist_2index_8node_8cjs_8js_a846d617250ce108b21d10f74b2c0b08d}\index{index.node.cjs.js@{index.node.cjs.js}!isWindowsStoreApp@{isWindowsStoreApp}}
+\index{isWindowsStoreApp@{isWindowsStoreApp}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{isWindowsStoreApp}{isWindowsStoreApp}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_a846d617250ce108b21d10f74b2c0b08d} 
+var is\+Windows\+Store\+App}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ ()\ \{}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ typeof\ Windows\ ===\ \textcolor{stringliteral}{'object'}\ \&\&\ typeof\ Windows.UI\ ===\ \textcolor{stringliteral}{'object'};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Used to detect if we\textquotesingle{}re in a Windows 8 Store app. \Hypertarget{database_2dist_2index_8node_8cjs_8js_a321fa6cc81e1109026cb93eb9ae12c9d}\index{index.node.cjs.js@{index.node.cjs.js}!LAST\_SESSION\_PARAM@{LAST\_SESSION\_PARAM}}
+\index{LAST\_SESSION\_PARAM@{LAST\_SESSION\_PARAM}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{LAST\_SESSION\_PARAM}{LAST\_SESSION\_PARAM}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_a321fa6cc81e1109026cb93eb9ae12c9d} 
+var LAST\+\_\+\+SESSION\+\_\+\+PARAM = \textquotesingle{}ls\textquotesingle{}}
+
+\Hypertarget{database_2dist_2index_8node_8cjs_8js_aefe23c2cbd8b153a63929a8306f43c1d}\index{index.node.cjs.js@{index.node.cjs.js}!log@{log}}
+\index{log@{log}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{log}{log}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_aefe23c2cbd8b153a63929a8306f43c1d} 
+var log}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ ()\ \{}
+\DoxyCodeLine{\ \ \ \ var\ varArgs\ =\ [];}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{for}\ (var\ \_i\ =\ 0;\ \_i\ <\ arguments.length;\ \_i++)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ varArgs[\_i]\ =\ arguments[\_i];}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a8a095ffaf53a23f259b5fc81e5f8d706}{firstLog\_}}\ ===\ \textcolor{keyword}{true})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a8a095ffaf53a23f259b5fc81e5f8d706}{firstLog\_}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_acc69707810d1669872f8199f16a0da20}{logger}}\ ===\ \textcolor{keyword}{null}\ \&\&\ \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_ab30ceed4689bf8f0288313456785eb73}{SessionStorage}}.get(\textcolor{stringliteral}{'logging\_enabled'})\ ===\ \textcolor{keyword}{true})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a007ac80bbbc7f9788c1467da5bf42e02}{enableLogging\$1}}(\textcolor{keyword}{true});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_acc69707810d1669872f8199f16a0da20}{logger}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ var\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}\ =\ \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_ac8c2f91e0f8128b7e28d0fa532ab4706}{buildLogMessage\_}}.apply(\textcolor{keyword}{null},\ varArgs);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_acc69707810d1669872f8199f16a0da20}{logger}}(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}});}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{database_2dist_2index_8node_8cjs_8js_a57d340ce140aa5d03645510ddda31036}\index{index.node.cjs.js@{index.node.cjs.js}!logClient@{logClient}}
+\index{logClient@{logClient}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{logClient}{logClient}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_a57d340ce140aa5d03645510ddda31036} 
+var log\+Client = new logger\$1.\+Logger(\textquotesingle{}@\mbox{\hyperlink{_0dfirebase_2database-compat_2dist_2index_8js_a4f1ae2e0d595a01da793594dc4c89f03}{firebase}}/\mbox{\hyperlink{_0dfirebase_2database-compat_2dist_2index_8js_a7d2d4a94c06389308b8c8b273f66f009}{database}}\textquotesingle{})}
+
+@license Copyright 2017 Google LLC
+
+Licensed under the Apache License, Version 2.\+0 (the "{}\+License"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+\href{http://www.apache.org/licenses/LICENSE-2.0}{\texttt{ http\+://www.\+apache.\+org/licenses/\+LICENSE-\/2.\+0}}
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "{}\+AS IS"{} BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. \Hypertarget{database_2dist_2index_8node_8cjs_8js_acc69707810d1669872f8199f16a0da20}\index{index.node.cjs.js@{index.node.cjs.js}!logger@{logger}}
+\index{logger@{logger}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{logger}{logger}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_acc69707810d1669872f8199f16a0da20} 
+var logger = null}
+
+Use this for all debug messages in Firebase. \Hypertarget{database_2dist_2index_8node_8cjs_8js_aee1a758aa8a4ee3f7a341bf1075f2824}\index{index.node.cjs.js@{index.node.cjs.js}!logger\$1@{logger\$1}}
+\index{logger\$1@{logger\$1}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{logger\$1}{logger\$1}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_aee1a758aa8a4ee3f7a341bf1075f2824} 
+var logger\$1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}@\mbox{\hyperlink{_0dfirebase_2database-compat_2dist_2index_8js_a4f1ae2e0d595a01da793594dc4c89f03}{firebase}}/\mbox{\hyperlink{_0dfirebase_2database-compat_2dist_2index_8js_acc69707810d1669872f8199f16a0da20}{logger}}\textquotesingle{})}
+
+\Hypertarget{database_2dist_2index_8node_8cjs_8js_ada96f0ac97fa75e290468bef39e09756}\index{index.node.cjs.js@{index.node.cjs.js}!logWrapper@{logWrapper}}
+\index{logWrapper@{logWrapper}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{logWrapper}{logWrapper}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_ada96f0ac97fa75e290468bef39e09756} 
+var log\+Wrapper}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ (\mbox{\hyperlink{bin_2concurrently_8js_a574c2775e74c5015b26f28e8e7e8d21e}{prefix}})\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{function}\ ()\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ var\ varArgs\ =\ [];}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (var\ \_i\ =\ 0;\ \_i\ <\ arguments.length;\ \_i++)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ varArgs[\_i]\ =\ arguments[\_i];}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_aefe23c2cbd8b153a63929a8306f43c1d}{log}}.apply(\textcolor{keywordtype}{void}\ 0,\ \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a38931f84edf8c628155994f6be598a46}{tslib}}.\_\_spreadArray([\mbox{\hyperlink{bin_2concurrently_8js_a574c2775e74c5015b26f28e8e7e8d21e}{prefix}}],\ \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a38931f84edf8c628155994f6be598a46}{tslib}}.\_\_read(varArgs),\ \textcolor{keyword}{false}));}
+\DoxyCodeLine{\ \ \ \ \};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{database_2dist_2index_8node_8cjs_8js_a910957698872c8ac691e68a34af3c63b}\index{index.node.cjs.js@{index.node.cjs.js}!LONG\_POLLING@{LONG\_POLLING}}
+\index{LONG\_POLLING@{LONG\_POLLING}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{LONG\_POLLING}{LONG\_POLLING}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_a910957698872c8ac691e68a34af3c63b} 
+var LONG\+\_\+\+POLLING = \textquotesingle{}long\+\_\+polling\textquotesingle{}}
+
+\Hypertarget{database_2dist_2index_8node_8cjs_8js_a44f66860a5730df110168b216c765581}\index{index.node.cjs.js@{index.node.cjs.js}!LUIDGenerator@{LUIDGenerator}}
+\index{LUIDGenerator@{LUIDGenerator}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{LUIDGenerator}{LUIDGenerator}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_a44f66860a5730df110168b216c765581} 
+var LUIDGenerator}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ (\textcolor{keyword}{function}\ ()\ \{}
+\DoxyCodeLine{\ \ \ \ var\ \textcolor{keywordtype}{id}\ =\ 1;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{function}\ ()\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keywordtype}{id}++;}
+\DoxyCodeLine{\ \ \ \ \};}
+\DoxyCodeLine{\})()}
+
+\end{DoxyCode}
+Returns a locally-\/unique ID (generated by just incrementing up from 0 each time its called). \Hypertarget{database_2dist_2index_8node_8cjs_8js_afb7396e6fb38516b5f543a1b9569c5f3}\index{index.node.cjs.js@{index.node.cjs.js}!MAX\_NAME@{MAX\_NAME}}
+\index{MAX\_NAME@{MAX\_NAME}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{MAX\_NAME}{MAX\_NAME}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_afb7396e6fb38516b5f543a1b9569c5f3} 
+var MAX\+\_\+\+NAME = \textquotesingle{}\mbox{[}MAX\+\_\+\+NAME\mbox{]}\textquotesingle{}}
+
+Maximum key name. Invalid for actual data, used as a marker to sort above any valid names \Hypertarget{database_2dist_2index_8node_8cjs_8js_afc562819dd3c6dd5f10bd8336b90eec2}\index{index.node.cjs.js@{index.node.cjs.js}!MemoryStorage@{MemoryStorage}}
+\index{MemoryStorage@{MemoryStorage}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{MemoryStorage}{MemoryStorage}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_afc562819dd3c6dd5f10bd8336b90eec2} 
+var Memory\+Storage}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ (\textcolor{keyword}{function}\ ()\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{function}\ \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_afc562819dd3c6dd5f10bd8336b90eec2}{MemoryStorage}}()\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ this.cache\_\ =\ \{\};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ this.isInMemoryStorage\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{class_memory_storage}{MemoryStorage}}.prototype.\mbox{\hyperlink{class_memory_storage_aee58f39b9d2a28c6b964ff0456b5766d}{set}}\ =\ \textcolor{keyword}{function}\ (key,\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}\ ==\ \textcolor{keyword}{null})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ this.cache\_[key];}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ this.cache\_[key]\ =\ \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \};}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{class_memory_storage}{MemoryStorage}}.prototype.\mbox{\hyperlink{class_memory_storage_a5187de44e57b41e9d6d6e044d4115a9a}{get}}\ =\ \textcolor{keyword}{function}\ (key)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}}.contains(\textcolor{keyword}{this}.cache\_,\ key))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ this.cache\_[key];}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\ \ \ \ \};}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{class_memory_storage}{MemoryStorage}}.prototype.\mbox{\hyperlink{class_memory_storage_aff9bb0db47e4616eabaab0e5b0b00383}{remove}}\ =\ \textcolor{keyword}{function}\ (key)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ this.cache\_[key];}
+\DoxyCodeLine{\ \ \ \ \};}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_afc562819dd3c6dd5f10bd8336b90eec2}{MemoryStorage}};}
+\DoxyCodeLine{\}())}
+
+\end{DoxyCode}
+@license Copyright 2017 Google LLC
+
+Licensed under the Apache License, Version 2.\+0 (the "{}\+License"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+\href{http://www.apache.org/licenses/LICENSE-2.0}{\texttt{ http\+://www.\+apache.\+org/licenses/\+LICENSE-\/2.\+0}}
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "{}\+AS IS"{} BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. An in-\/memory storage implementation that matches the API of \doxylink{class_d_o_m_storage_wrapper}{DOMStorage\+Wrapper} (TODO\+: create interface for both to implement). \Hypertarget{database_2dist_2index_8node_8cjs_8js_ac2a89fe8520f327dc68f4c712eeb9e83}\index{index.node.cjs.js@{index.node.cjs.js}!MIN\_NAME@{MIN\_NAME}}
+\index{MIN\_NAME@{MIN\_NAME}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{MIN\_NAME}{MIN\_NAME}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_ac2a89fe8520f327dc68f4c712eeb9e83} 
+var MIN\+\_\+\+NAME = \textquotesingle{}\mbox{[}MIN\+\_\+\+NAME\mbox{]}\textquotesingle{}}
+
+Minimum key name. Invalid for actual data, used as a marker to sort before any valid names \Hypertarget{database_2dist_2index_8node_8cjs_8js_a97bb272363f589e30592399281157781}\index{index.node.cjs.js@{index.node.cjs.js}!nameCompare@{nameCompare}}
+\index{nameCompare@{nameCompare}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{nameCompare}{nameCompare}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_a97bb272363f589e30592399281157781} 
+var name\+Compare}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ (\mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}},\ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}})\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}\ ===\ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}\ ===\ \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_ac2a89fe8520f327dc68f4c712eeb9e83}{MIN\_NAME}}\ ||\ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}\ ===\ \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_afb7396e6fb38516b5f543a1b9569c5f3}{MAX\_NAME}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ -\/1;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}\ ===\ \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_ac2a89fe8520f327dc68f4c712eeb9e83}{MIN\_NAME}}\ ||\ \mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}\ ===\ \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_afb7396e6fb38516b5f543a1b9569c5f3}{MAX\_NAME}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 1;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ var\ aAsInt\ =\ \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a4849d300aa5877d14c31c8e40c92a277}{tryParseInt}}(\mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}),\ bAsInt\ =\ \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a4849d300aa5877d14c31c8e40c92a277}{tryParseInt}}(\mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (aAsInt\ !==\ \textcolor{keyword}{null})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (bAsInt\ !==\ \textcolor{keyword}{null})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ aAsInt\ -\/\ bAsInt\ ===\ 0\ ?\ \mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}.length\ -\/\ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}.length\ :\ aAsInt\ -\/\ bAsInt;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ -\/1;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (bAsInt\ !==\ \textcolor{keyword}{null})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 1;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}\ <\ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}\ ?\ -\/1\ :\ 1;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Compares valid Firebase key names, plus min and max name \Hypertarget{database_2dist_2index_8node_8cjs_8js_a2058260f62b62c21fd2cc745c92ce65b}\index{index.node.cjs.js@{index.node.cjs.js}!ObjectToUniqueKey@{ObjectToUniqueKey}}
+\index{ObjectToUniqueKey@{ObjectToUniqueKey}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{ObjectToUniqueKey}{ObjectToUniqueKey}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_a2058260f62b62c21fd2cc745c92ce65b} 
+var Object\+To\+Unique\+Key}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ (\mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}})\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (typeof\ \mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}\ !==\ \textcolor{stringliteral}{'object'}\ ||\ \mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}\ ===\ \textcolor{keyword}{null})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}}.stringify(\mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}});}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ var\ \mbox{\hyperlink{__base_assign_8js_a87dd2006b34e1d50c301938be11fd6fa}{keys}}\ =\ [];}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{for}\ (var\ \mbox{\hyperlink{ordered-map_8min_8js_aee3ae2d5bdb3d18f52a8134a79a88d14}{k}}\ in\ \mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{__base_assign_8js_a87dd2006b34e1d50c301938be11fd6fa}{keys}}.push(\mbox{\hyperlink{ordered-map_8min_8js_aee3ae2d5bdb3d18f52a8134a79a88d14}{k}});}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{__base_assign_8js_a87dd2006b34e1d50c301938be11fd6fa}{keys}}.sort();}
+\DoxyCodeLine{\ \ \ \ var\ key\ =\ \textcolor{charliteral}{'\{'};}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{for}\ (var\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ =\ 0;\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ <\ \mbox{\hyperlink{__base_assign_8js_a87dd2006b34e1d50c301938be11fd6fa}{keys}}.length;\ \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}++)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}\ !==\ 0)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ key\ +=\ \textcolor{charliteral}{','};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ key\ +=\ \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}}.stringify(\mbox{\hyperlink{__base_assign_8js_a87dd2006b34e1d50c301938be11fd6fa}{keys}}[\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}]);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ key\ +=\ \textcolor{charliteral}{':'};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ key\ +=\ \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a2058260f62b62c21fd2cc745c92ce65b}{ObjectToUniqueKey}}(\mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}[\mbox{\hyperlink{__base_assign_8js_a87dd2006b34e1d50c301938be11fd6fa}{keys}}[\mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}]]);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ key\ +=\ \textcolor{charliteral}{'\}'};}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ key;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{database_2dist_2index_8node_8cjs_8js_a7446ace52835fe322e65a12d8b62b28c}\index{index.node.cjs.js@{index.node.cjs.js}!PersistentStorage@{PersistentStorage}}
+\index{PersistentStorage@{PersistentStorage}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{PersistentStorage}{PersistentStorage}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_a7446ace52835fe322e65a12d8b62b28c} 
+var Persistent\+Storage = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7418a9da786c93cf7de941e7c78dc6a8}{create\+Storagefor}}(\textquotesingle{}local\+Storage\textquotesingle{})}
+
+\doxylink{class_a}{A} storage object that lasts across sessions \Hypertarget{database_2dist_2index_8node_8cjs_8js_a91f6f90952c9eba26572fb7e94738192}\index{index.node.cjs.js@{index.node.cjs.js}!PROTOCOL\_VERSION@{PROTOCOL\_VERSION}}
+\index{PROTOCOL\_VERSION@{PROTOCOL\_VERSION}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{PROTOCOL\_VERSION}{PROTOCOL\_VERSION}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_a91f6f90952c9eba26572fb7e94738192} 
+var PROTOCOL\+\_\+\+VERSION = \textquotesingle{}5\textquotesingle{}}
+
+@license Copyright 2017 Google LLC
+
+Licensed under the Apache License, Version 2.\+0 (the "{}\+License"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+\href{http://www.apache.org/licenses/LICENSE-2.0}{\texttt{ http\+://www.\+apache.\+org/licenses/\+LICENSE-\/2.\+0}}
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "{}\+AS IS"{} BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. \Hypertarget{database_2dist_2index_8node_8cjs_8js_a53d5e70ea43e400627e040d801fa69cb}\index{index.node.cjs.js@{index.node.cjs.js}!REFERER\_PARAM@{REFERER\_PARAM}}
+\index{REFERER\_PARAM@{REFERER\_PARAM}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{REFERER\_PARAM}{REFERER\_PARAM}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_a53d5e70ea43e400627e040d801fa69cb} 
+var REFERER\+\_\+\+PARAM = \textquotesingle{}\mbox{\hyperlink{uuid_8min_8js_aaa5fef39529cdffdfa257202bb4fda9f}{r}}\textquotesingle{}}
+
+\Hypertarget{database_2dist_2index_8node_8cjs_8js_a61a542da1a291102827a24d941d907c9}\index{index.node.cjs.js@{index.node.cjs.js}!RepoInfo@{RepoInfo}}
+\index{RepoInfo@{RepoInfo}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{RepoInfo}{RepoInfo}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_a61a542da1a291102827a24d941d907c9} 
+var Repo\+Info}
+
+@license Copyright 2017 Google LLC
+
+Licensed under the Apache License, Version 2.\+0 (the "{}\+License"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+\href{http://www.apache.org/licenses/LICENSE-2.0}{\texttt{ http\+://www.\+apache.\+org/licenses/\+LICENSE-\/2.\+0}}
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "{}\+AS IS"{} BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. \doxylink{class_a}{A} class that holds metadata about a Repo object \Hypertarget{database_2dist_2index_8node_8cjs_8js_af37fcce01e1e10b086f0179b5dde6141}\index{index.node.cjs.js@{index.node.cjs.js}!reporters@{reporters}}
+\index{reporters@{reporters}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{reporters}{reporters}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_af37fcce01e1e10b086f0179b5dde6141} 
+var reporters = \{\}}
+
+\Hypertarget{database_2dist_2index_8node_8cjs_8js_aeff74edf852062820742eaeb726a36e2}\index{index.node.cjs.js@{index.node.cjs.js}!requireKey@{requireKey}}
+\index{requireKey@{requireKey}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{requireKey}{requireKey}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_aeff74edf852062820742eaeb726a36e2} 
+var require\+Key}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ (key,\ \mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}})\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}\ \&\&\ key\ in\ \mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}[key];}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ Error(\textcolor{stringliteral}{'Missing\ required\ key\ ('}\ +\ key\ +\ \textcolor{stringliteral}{')\ in\ object:\ '}\ +\ \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}}.stringify(\mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}));}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{database_2dist_2index_8node_8cjs_8js_afc028ba4f9caba4ee1b5c94d4fed7180}\index{index.node.cjs.js@{index.node.cjs.js}!SDK\_VERSION@{SDK\_VERSION}}
+\index{SDK\_VERSION@{SDK\_VERSION}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{SDK\_VERSION}{SDK\_VERSION}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_afc028ba4f9caba4ee1b5c94d4fed7180} 
+var SDK\+\_\+\+VERSION = \textquotesingle{}\textquotesingle{}}
+
+@license Copyright 2019 Google LLC
+
+Licensed under the Apache License, Version 2.\+0 (the "{}\+License"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+\href{http://www.apache.org/licenses/LICENSE-2.0}{\texttt{ http\+://www.\+apache.\+org/licenses/\+LICENSE-\/2.\+0}}
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "{}\+AS IS"{} BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. The semver (www.\+semver.\+org) version of the SDK. \Hypertarget{database_2dist_2index_8node_8cjs_8js_ab30ceed4689bf8f0288313456785eb73}\index{index.node.cjs.js@{index.node.cjs.js}!SessionStorage@{SessionStorage}}
+\index{SessionStorage@{SessionStorage}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{SessionStorage}{SessionStorage}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_ab30ceed4689bf8f0288313456785eb73} 
+var Session\+Storage = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7418a9da786c93cf7de941e7c78dc6a8}{create\+Storagefor}}(\textquotesingle{}session\+Storage\textquotesingle{})}
+
+\doxylink{class_a}{A} storage object that only lasts one session \Hypertarget{database_2dist_2index_8node_8cjs_8js_adb90c631ce8d70f14399f330582f915d}\index{index.node.cjs.js@{index.node.cjs.js}!setTimeoutNonBlocking@{setTimeoutNonBlocking}}
+\index{setTimeoutNonBlocking@{setTimeoutNonBlocking}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{setTimeoutNonBlocking}{setTimeoutNonBlocking}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_adb90c631ce8d70f14399f330582f915d} 
+var set\+Timeout\+Non\+Blocking}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ (\mbox{\hyperlink{writer_8js_a10238cf619a9073c096c996342cd720a}{fn}},\ time)\ \{}
+\DoxyCodeLine{\ \ \ \ var\ \mbox{\hyperlink{rxjs_2dist_2cjs_2internal_2operators_2timeout_8js_a56cd1f2498714e800f2da45ee2fd56b7}{timeout}}\ =\ setTimeout(\mbox{\hyperlink{writer_8js_a10238cf619a9073c096c996342cd720a}{fn}},\ time);}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (typeof\ \mbox{\hyperlink{rxjs_2dist_2cjs_2internal_2operators_2timeout_8js_a56cd1f2498714e800f2da45ee2fd56b7}{timeout}}\ ===\ \textcolor{stringliteral}{'number'}\ \&\&}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ typeof\ Deno\ !==\ \textcolor{stringliteral}{'undefined'}\ \&\&}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ Deno[\textcolor{stringliteral}{'unrefTimer'}])\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ Deno.unrefTimer(\mbox{\hyperlink{rxjs_2dist_2cjs_2internal_2operators_2timeout_8js_a56cd1f2498714e800f2da45ee2fd56b7}{timeout}});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (typeof\ \mbox{\hyperlink{rxjs_2dist_2cjs_2internal_2operators_2timeout_8js_a56cd1f2498714e800f2da45ee2fd56b7}{timeout}}\ ===\ \textcolor{stringliteral}{'object'}\ \&\&\ \mbox{\hyperlink{rxjs_2dist_2cjs_2internal_2operators_2timeout_8js_a56cd1f2498714e800f2da45ee2fd56b7}{timeout}}[\textcolor{stringliteral}{'unref'}])\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{rxjs_2dist_2cjs_2internal_2operators_2timeout_8js_a56cd1f2498714e800f2da45ee2fd56b7}{timeout}}[\textcolor{stringliteral}{'unref'}]();}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{rxjs_2dist_2cjs_2internal_2operators_2timeout_8js_a56cd1f2498714e800f2da45ee2fd56b7}{timeout}};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Same as set\+Timeout() except on Node.\+JS it will /not/ prevent the process from exiting.
+
+It is removed with clear\+Timeout() as normal.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fn} & -\/ Function to run. \\
+\hline
+{\em time} & -\/ Milliseconds to wait before running. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The set\+Timeout() return value. 
+\end{DoxyReturn}
+\Hypertarget{database_2dist_2index_8node_8cjs_8js_a8304dcbc5c1f5d02ec4395f6aeab7675}\index{index.node.cjs.js@{index.node.cjs.js}!sha1@{sha1}}
+\index{sha1@{sha1}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{sha1}{sha1}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_a8304dcbc5c1f5d02ec4395f6aeab7675} 
+var sha1}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ (\mbox{\hyperlink{json-bigint_2lib_2stringify_8js_abd4075a8f329b0ccafd81359c952a9df}{str}})\ \{}
+\DoxyCodeLine{\ \ \ \ var\ utf8Bytes\ =\ \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}}.stringToByteArray(\mbox{\hyperlink{json-bigint_2lib_2stringify_8js_abd4075a8f329b0ccafd81359c952a9df}{str}});}
+\DoxyCodeLine{\ \ \ \ var\ \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a8304dcbc5c1f5d02ec4395f6aeab7675}{sha1}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}}.Sha1();}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a8304dcbc5c1f5d02ec4395f6aeab7675}{sha1}}.update(utf8Bytes);}
+\DoxyCodeLine{\ \ \ \ var\ sha1Bytes\ =\ \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a8304dcbc5c1f5d02ec4395f6aeab7675}{sha1}}.digest();}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}}.base64.encodeByteArray(sha1Bytes);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\doxylink{class_sha1}{Sha1} hash of the input string 
+\begin{DoxyParams}{Parameters}
+{\em str} & -\/ The string to hash \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{!string\} The resulting hash 
+\end{DoxyReturn}
+\Hypertarget{database_2dist_2index_8node_8cjs_8js_a439bfe45c47260099daec5d475035ab0}\index{index.node.cjs.js@{index.node.cjs.js}!splitStringBySize@{splitStringBySize}}
+\index{splitStringBySize@{splitStringBySize}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{splitStringBySize}{splitStringBySize}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_a439bfe45c47260099daec5d475035ab0} 
+var split\+String\+By\+Size}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ (\mbox{\hyperlink{json-bigint_2lib_2stringify_8js_abd4075a8f329b0ccafd81359c952a9df}{str}},\ segsize)\ \{}
+\DoxyCodeLine{\ \ \ \ var\ len\ =\ \mbox{\hyperlink{json-bigint_2lib_2stringify_8js_abd4075a8f329b0ccafd81359c952a9df}{str}}.length;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (len\ <=\ segsize)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ [\mbox{\hyperlink{json-bigint_2lib_2stringify_8js_abd4075a8f329b0ccafd81359c952a9df}{str}}];}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ var\ dataSegs\ =\ [];}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{for}\ (var\ \mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}\ =\ 0;\ \mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}\ <\ len;\ \mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}\ +=\ segsize)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}\ +\ segsize\ >\ len)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ dataSegs.push(\mbox{\hyperlink{json-bigint_2lib_2stringify_8js_abd4075a8f329b0ccafd81359c952a9df}{str}}.substring(\mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}},\ len));}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ dataSegs.push(\mbox{\hyperlink{json-bigint_2lib_2stringify_8js_abd4075a8f329b0ccafd81359c952a9df}{str}}.substring(\mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}},\ \mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}\ +\ segsize));}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ dataSegs;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Splits a string into a number of smaller segments of maximum size 
+\begin{DoxyParams}{Parameters}
+{\em str} & -\/ The string \\
+\hline
+{\em segsize} & -\/ The maximum number of chars in the string. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The string, split into appropriately-\/sized chunks 
+\end{DoxyReturn}
+\Hypertarget{database_2dist_2index_8node_8cjs_8js_a895eb4fe2b6f27040ad6a79cae8ac367}\index{index.node.cjs.js@{index.node.cjs.js}!StatsCollection@{StatsCollection}}
+\index{StatsCollection@{StatsCollection}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{StatsCollection}{StatsCollection}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_a895eb4fe2b6f27040ad6a79cae8ac367} 
+var Stats\+Collection}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ (\textcolor{keyword}{function}\ ()\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{function}\ \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a895eb4fe2b6f27040ad6a79cae8ac367}{StatsCollection}}()\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ this.counters\_\ =\ \{\};}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{class_stats_collection}{StatsCollection}}.prototype.\mbox{\hyperlink{class_stats_collection_a088435663a1f707f96864dd53df9f622}{incrementCounter}}\ =\ \textcolor{keyword}{function}\ (\mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}},\ amount)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (amount\ ===\ \textcolor{keywordtype}{void}\ 0)\ \{\ amount\ =\ 1;\ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}}.contains(\textcolor{keyword}{this}.counters\_,\ \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ this.counters\_[\mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}]\ =\ 0;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ this.counters\_[\mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}]\ +=\ amount;}
+\DoxyCodeLine{\ \ \ \ \};}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{class_stats_collection}{StatsCollection}}.prototype.\mbox{\hyperlink{class_stats_collection_a25651c9c962480e704c82708a3846580}{get}}\ =\ \textcolor{keyword}{function}\ ()\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}}.deepCopy(this.counters\_);}
+\DoxyCodeLine{\ \ \ \ \};}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a895eb4fe2b6f27040ad6a79cae8ac367}{StatsCollection}};}
+\DoxyCodeLine{\}())}
+
+\end{DoxyCode}
+@license Copyright 2017 Google LLC
+
+Licensed under the Apache License, Version 2.\+0 (the "{}\+License"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+\href{http://www.apache.org/licenses/LICENSE-2.0}{\texttt{ http\+://www.\+apache.\+org/licenses/\+LICENSE-\/2.\+0}}
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "{}\+AS IS"{} BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. Tracks a collection of stats. \Hypertarget{database_2dist_2index_8node_8cjs_8js_ae2475e10618961c050dcba04e8c42331}\index{index.node.cjs.js@{index.node.cjs.js}!strict@{strict}}
+\index{strict@{strict}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+
+\Hypertarget{database_2dist_2index_8node_8cjs_8js_a633a364f69464a365c6ef2b1fa3dbec2}\index{index.node.cjs.js@{index.node.cjs.js}!stringCompare@{stringCompare}}
+\index{stringCompare@{stringCompare}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{stringCompare}{stringCompare}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_a633a364f69464a365c6ef2b1fa3dbec2} 
+var string\+Compare}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ (\mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}},\ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}})\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}\ ===\ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{ordered-map_8min_8js_aa4d4888597588a84fd5b1184d00c91f3}{a}}\ <\ \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ -\/1;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 1;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\begin{DoxyReturn}{Returns}
+\{!number\} comparison result. 
+\end{DoxyReturn}
+\Hypertarget{database_2dist_2index_8node_8cjs_8js_adafdae3b24ddefcf8ee4a76c580adc96}\index{index.node.cjs.js@{index.node.cjs.js}!TRANSPORT\_SESSION\_PARAM@{TRANSPORT\_SESSION\_PARAM}}
+\index{TRANSPORT\_SESSION\_PARAM@{TRANSPORT\_SESSION\_PARAM}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{TRANSPORT\_SESSION\_PARAM}{TRANSPORT\_SESSION\_PARAM}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_adafdae3b24ddefcf8ee4a76c580adc96} 
+var TRANSPORT\+\_\+\+SESSION\+\_\+\+PARAM = \textquotesingle{}\mbox{\hyperlink{ordered-map_8min_8js_ad9a7d92cb87932d25187fdec3ba1b621}{s}}\textquotesingle{}}
+
+\Hypertarget{database_2dist_2index_8node_8cjs_8js_a4849d300aa5877d14c31c8e40c92a277}\index{index.node.cjs.js@{index.node.cjs.js}!tryParseInt@{tryParseInt}}
+\index{tryParseInt@{tryParseInt}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{tryParseInt}{tryParseInt}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_a4849d300aa5877d14c31c8e40c92a277} 
+var try\+Parse\+Int}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ (\mbox{\hyperlink{json-bigint_2lib_2stringify_8js_abd4075a8f329b0ccafd81359c952a9df}{str}})\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a3dc59aab33584184c45fd3144dd04658}{INTEGER\_REGEXP\_}}.test(\mbox{\hyperlink{json-bigint_2lib_2stringify_8js_abd4075a8f329b0ccafd81359c952a9df}{str}}))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ var\ intVal\ =\ Number(\mbox{\hyperlink{json-bigint_2lib_2stringify_8js_abd4075a8f329b0ccafd81359c952a9df}{str}});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (intVal\ >=\ \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_af666b8d5786a7a8ba19015a946546bac}{INTEGER\_32\_MIN}}\ \&\&\ intVal\ <=\ \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a9e81860bb620d62e91941c713b77bee8}{INTEGER\_32\_MAX}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ intVal;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+If the string contains a 32-\/bit integer, return it. Else return null. \Hypertarget{database_2dist_2index_8node_8cjs_8js_a38931f84edf8c628155994f6be598a46}\index{index.node.cjs.js@{index.node.cjs.js}!tslib@{tslib}}
+\index{tslib@{tslib}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{tslib}{tslib}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_a38931f84edf8c628155994f6be598a46} 
+var tslib = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}tslib\textquotesingle{})}
+
+\Hypertarget{database_2dist_2index_8node_8cjs_8js_a8f5b2e09d5197e9d28f6032dff542d44}\index{index.node.cjs.js@{index.node.cjs.js}!util@{util}}
+\index{util@{util}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{util}{util}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_a8f5b2e09d5197e9d28f6032dff542d44} 
+var util = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}@\mbox{\hyperlink{_0dfirebase_2database-compat_2dist_2index_8js_a4f1ae2e0d595a01da793594dc4c89f03}{firebase}}/util\textquotesingle{})}
+
+\Hypertarget{database_2dist_2index_8node_8cjs_8js_a4417b154eb1c06516936ab07ca3b1ed8}\index{index.node.cjs.js@{index.node.cjs.js}!VERSION\_PARAM@{VERSION\_PARAM}}
+\index{VERSION\_PARAM@{VERSION\_PARAM}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{VERSION\_PARAM}{VERSION\_PARAM}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_a4417b154eb1c06516936ab07ca3b1ed8} 
+var VERSION\+\_\+\+PARAM = \textquotesingle{}\mbox{\hyperlink{ordered-map_8min_8js_a207400f40ed647015069564fa40946e1}{v}}\textquotesingle{}}
+
+\Hypertarget{database_2dist_2index_8node_8cjs_8js_ad8c5c796d017ca2e3db7513c25558fbc}\index{index.node.cjs.js@{index.node.cjs.js}!warn@{warn}}
+\index{warn@{warn}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{warn}{warn}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_ad8c5c796d017ca2e3db7513c25558fbc} 
+var warn}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ ()\ \{}
+\DoxyCodeLine{\ \ \ \ var\ varArgs\ =\ [];}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{for}\ (var\ \_i\ =\ 0;\ \_i\ <\ arguments.length;\ \_i++)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ varArgs[\_i]\ =\ arguments[\_i];}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ var\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}}\ =\ \textcolor{stringliteral}{'FIREBASE\ WARNING:\ '}\ +\ \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_ac8c2f91e0f8128b7e28d0fa532ab4706}{buildLogMessage\_}}.apply(\textcolor{keywordtype}{void}\ 0,\ \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a38931f84edf8c628155994f6be598a46}{tslib}}.\_\_spreadArray([],\ \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a38931f84edf8c628155994f6be598a46}{tslib}}.\_\_read(varArgs),\ \textcolor{keyword}{false}));}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_a57d340ce140aa5d03645510ddda31036}{logClient}}.warn(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{database_2dist_2index_8node_8cjs_8js_a2eac21d6d645bb2a3fcf44d929c60d53}\index{index.node.cjs.js@{index.node.cjs.js}!warnIfPageIsSecure@{warnIfPageIsSecure}}
+\index{warnIfPageIsSecure@{warnIfPageIsSecure}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{warnIfPageIsSecure}{warnIfPageIsSecure}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_a2eac21d6d645bb2a3fcf44d929c60d53} 
+var warn\+If\+Page\+Is\+Secure}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ ()\ \{}
+\DoxyCodeLine{\ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (typeof\ \mbox{\hyperlink{forge_8all_8min_8js_a77335ab2a82353d4a02f9ba062031c46}{window}}\ !==\ \textcolor{stringliteral}{'undefined'}\ \&\&}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{forge_8all_8min_8js_a77335ab2a82353d4a02f9ba062031c46}{window}}.location\ \&\&}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{forge_8all_8min_8js_a77335ab2a82353d4a02f9ba062031c46}{window}}.location.protocol\ \&\&}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{forge_8all_8min_8js_a77335ab2a82353d4a02f9ba062031c46}{window}}.location.protocol.indexOf(\textcolor{stringliteral}{'https:'})\ !==\ -\/1)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{database_2dist_2index_8node_8cjs_8js_ad8c5c796d017ca2e3db7513c25558fbc}{warn}}(\textcolor{stringliteral}{'Insecure\ Firebase\ access\ from\ a\ secure\ page.\ '}\ +}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'Please\ use\ https\ in\ calls\ to\ new\ Firebase().'});}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Logs a warning if the containing page uses https. Called when a call to new Firebase does not use https. \Hypertarget{database_2dist_2index_8node_8cjs_8js_ac6029bcd1a1d2ecdff9b88206d2f0a72}\index{index.node.cjs.js@{index.node.cjs.js}!WEBSOCKET@{WEBSOCKET}}
+\index{WEBSOCKET@{WEBSOCKET}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{WEBSOCKET}{WEBSOCKET}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_ac6029bcd1a1d2ecdff9b88206d2f0a72} 
+var WEBSOCKET = \textquotesingle{}\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_adbdf4dbc0734d27590fca9f60ad422ea}{websocket}}\textquotesingle{}}
+
+\Hypertarget{database_2dist_2index_8node_8cjs_8js_a335d737ceb235a64cba3291ebeb1cea4}\index{index.node.cjs.js@{index.node.cjs.js}!Websocket@{Websocket}}
+\index{Websocket@{Websocket}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{Websocket}{Websocket}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_a335d737ceb235a64cba3291ebeb1cea4} 
+var Websocket = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}faye-\/\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_adbdf4dbc0734d27590fca9f60ad422ea}{websocket}}\textquotesingle{})}
+
+\Hypertarget{database_2dist_2index_8node_8cjs_8js_a4fe0f2d968bfaf1740987f4e9ba83d80}\index{index.node.cjs.js@{index.node.cjs.js}!Websocket\_\_default@{Websocket\_\_default}}
+\index{Websocket\_\_default@{Websocket\_\_default}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{Websocket\_\_default}{Websocket\_\_default}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_a4fe0f2d968bfaf1740987f4e9ba83d80} 
+var Websocket\+\_\+\+\_\+default = \mbox{\hyperlink{_0dfirebase_2database-compat_2dist_2index_8js_a09fc983e0ada80de3cbce41b17ff601f}{\+\_\+interop\+Default\+Legacy}}(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a335d737ceb235a64cba3291ebeb1cea4}{Websocket}})}
+
+\Hypertarget{database_2dist_2index_8node_8cjs_8js_aa4dfcbdc710f1b0206331259491940b1}\index{index.node.cjs.js@{index.node.cjs.js}!WEBSOCKET\_KEEPALIVE\_INTERVAL@{WEBSOCKET\_KEEPALIVE\_INTERVAL}}
+\index{WEBSOCKET\_KEEPALIVE\_INTERVAL@{WEBSOCKET\_KEEPALIVE\_INTERVAL}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{WEBSOCKET\_KEEPALIVE\_INTERVAL}{WEBSOCKET\_KEEPALIVE\_INTERVAL}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_aa4dfcbdc710f1b0206331259491940b1} 
+var WEBSOCKET\+\_\+\+KEEPALIVE\+\_\+\+INTERVAL = 45000}
+
+\Hypertarget{database_2dist_2index_8node_8cjs_8js_a283d1ef5a90e0fb13e82ad1b59c50152}\index{index.node.cjs.js@{index.node.cjs.js}!WEBSOCKET\_MAX\_FRAME\_SIZE@{WEBSOCKET\_MAX\_FRAME\_SIZE}}
+\index{WEBSOCKET\_MAX\_FRAME\_SIZE@{WEBSOCKET\_MAX\_FRAME\_SIZE}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{WEBSOCKET\_MAX\_FRAME\_SIZE}{WEBSOCKET\_MAX\_FRAME\_SIZE}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_a283d1ef5a90e0fb13e82ad1b59c50152} 
+var WEBSOCKET\+\_\+\+MAX\+\_\+\+FRAME\+\_\+\+SIZE = 16384}
+
+@license Copyright 2017 Google LLC
+
+Licensed under the Apache License, Version 2.\+0 (the "{}\+License"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+\href{http://www.apache.org/licenses/LICENSE-2.0}{\texttt{ http\+://www.\+apache.\+org/licenses/\+LICENSE-\/2.\+0}}
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "{}\+AS IS"{} BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. \Hypertarget{database_2dist_2index_8node_8cjs_8js_a7ad224b5d871c7da3eef0993aa36ae38}\index{index.node.cjs.js@{index.node.cjs.js}!WebSocketImpl@{WebSocketImpl}}
+\index{WebSocketImpl@{WebSocketImpl}!index.node.cjs.js@{index.node.cjs.js}}
+\doxysubsubsection{\texorpdfstring{WebSocketImpl}{WebSocketImpl}}
+{\footnotesize\ttfamily \label{database_2dist_2index_8node_8cjs_8js_a7ad224b5d871c7da3eef0993aa36ae38} 
+var Web\+Socket\+Impl = null}
+

@@ -1,0 +1,16 @@
+<map id="Http2Transport::handleDisconnect" name="Http2Transport::handleDisconnect">
+<area shape="rect" id="Node000001" title=" " alt="" coords="965,70,1185,96"/>
+<area shape="rect" id="Node000002" href="$class_http2_transport.html#a1808a554996a91c906f712ce183e2ca7" title=" " alt="" coords="237,66,418,92"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="949,85,418,82,418,77,949,80"/>
+<area shape="rect" id="Node000003" href="$class_http2_transport.html#a619d3c32fc540ff0a63dd3232723c447" title=" " alt="" coords="5,72,181,97"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="949,96,803,106,623,114,426,115,228,107,171,100,172,95,229,102,426,110,623,108,803,101,949,91"/>
+<area shape="rect" id="Node000004" href="$class_http2_transport.html#abce3cbb9b5d1c42336a2f46f92aeb7e5" title=" " alt="" coords="705,13,917,38"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="997,69,873,42,874,37,998,64"/>
+<area shape="rect" id="Node000005" href="$class_http2_transport.html#afc6fd7defde2b7e2e498bc65c7f88cc6" title=" " alt="" coords="474,5,657,46"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="690,37,658,37,658,32,690,32"/>
+<area shape="poly" id="edge7_Node000005_Node000002" title=" " alt="" coords="459,52,389,68,388,63,458,47"/>
+<area shape="poly" id="edge8_Node000005_Node000004" title=" " alt="" coords="673,14,705,14,705,19,673,19"/>
+<area shape="rect" id="Node000006" href="$class_http2_transport.html#ae7e1069ab432aed081023ae7eece7451" title=" " alt="" coords="229,16,426,41"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="459,30,426,30,426,25,459,24"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="257,48,151,73,150,68,255,43"/>
+</map>

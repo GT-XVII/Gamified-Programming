@@ -1,0 +1,84 @@
+\doxysection{backend/node\+\_\+modules/lodash/\+\_\+create\+Compounder.js File Reference}
+\hypertarget{__create_compounder_8js}{}\label{__create_compounder_8js}\index{backend/node\_modules/lodash/\_createCompounder.js@{backend/node\_modules/lodash/\_createCompounder.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{__create_compounder_8js_a3a0fc5d217bfeb12dcac105a9ed7b714}{create\+Compounder}} (\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a622460feeccdab6d8f307936fc6b36fb}{callback}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{__create_compounder_8js_a5f6ea9f53d223f734375b84fd62cd730}{array\+Reduce}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\+\_\+array\+Reduce\textquotesingle{})
+\item 
+var \mbox{\hyperlink{__create_compounder_8js_afbf29805ed59c07d5a678ae112e50cdf}{deburr}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./deburr\textquotesingle{})
+\item 
+var \mbox{\hyperlink{__create_compounder_8js_a063186572f7d799b5acbf1936a7be49d}{words}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./words\textquotesingle{})
+\item 
+var \mbox{\hyperlink{__create_compounder_8js_a140a0e3ac7212b99c89e23ee2469ff71}{rs\+Apos}} = "{}\mbox{[}\textquotesingle{}\textbackslash{}u2019\mbox{]}"{}
+\item 
+var \mbox{\hyperlink{__create_compounder_8js_ab5e88a184ee73e9cd83c6f8770feedf1}{re\+Apos}} = Reg\+Exp(\mbox{\hyperlink{lodash_8camelcase_2index_8js_a140a0e3ac7212b99c89e23ee2469ff71}{rs\+Apos}}, \textquotesingle{}\mbox{\hyperlink{ordered-map_8min_8js_a103df269476e78897c9c4c6cb8f4eb06}{g}}\textquotesingle{})
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{__create_compounder_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} = \mbox{\hyperlink{camel_case_8js_a3eaf8006f17bfffb346b54858ab8a703}{create\+Compounder}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{__create_compounder_8js_a3a0fc5d217bfeb12dcac105a9ed7b714}\index{\_createCompounder.js@{\_createCompounder.js}!createCompounder@{createCompounder}}
+\index{createCompounder@{createCompounder}!\_createCompounder.js@{\_createCompounder.js}}
+\doxysubsubsection{\texorpdfstring{createCompounder()}{createCompounder()}}
+{\footnotesize\ttfamily \label{__create_compounder_8js_a3a0fc5d217bfeb12dcac105a9ed7b714} 
+function create\+Compounder (\begin{DoxyParamCaption}\item[{}]{callback}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Creates a function like {\ttfamily \+\_\+.\+camel\+Case}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Function\}} & callback The function to combine each word. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Function\} Returns the new compounder function. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{__create_compounder_8js_a5f6ea9f53d223f734375b84fd62cd730}{array\+Reduce}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a622460feeccdab6d8f307936fc6b36fb}{callback}}, \mbox{\hyperlink{__create_compounder_8js_afbf29805ed59c07d5a678ae112e50cdf}{deburr}}, \mbox{\hyperlink{__create_compounder_8js_ab5e88a184ee73e9cd83c6f8770feedf1}{re\+Apos}}, \mbox{\hyperlink{formats_8js_afd83a7a4c1a27011426e0e517bddbfbc}{replace}}, \mbox{\hyperlink{reader_8js_a5c10456fb38514f2fe2b2da9323924ac}{string}}, and \mbox{\hyperlink{__create_compounder_8js_a063186572f7d799b5acbf1936a7be49d}{words}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{__create_compounder_8js_a5f6ea9f53d223f734375b84fd62cd730}\index{\_createCompounder.js@{\_createCompounder.js}!arrayReduce@{arrayReduce}}
+\index{arrayReduce@{arrayReduce}!\_createCompounder.js@{\_createCompounder.js}}
+\doxysubsubsection{\texorpdfstring{arrayReduce}{arrayReduce}}
+{\footnotesize\ttfamily \label{__create_compounder_8js_a5f6ea9f53d223f734375b84fd62cd730} 
+var array\+Reduce = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./\+\_\+array\+Reduce\textquotesingle{})}
+
+\Hypertarget{__create_compounder_8js_afbf29805ed59c07d5a678ae112e50cdf}\index{\_createCompounder.js@{\_createCompounder.js}!deburr@{deburr}}
+\index{deburr@{deburr}!\_createCompounder.js@{\_createCompounder.js}}
+\doxysubsubsection{\texorpdfstring{deburr}{deburr}}
+{\footnotesize\ttfamily \label{__create_compounder_8js_afbf29805ed59c07d5a678ae112e50cdf} 
+var deburr = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./deburr\textquotesingle{})}
+
+\Hypertarget{__create_compounder_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\index{\_createCompounder.js@{\_createCompounder.js}!exports@{exports}}
+\index{exports@{exports}!\_createCompounder.js@{\_createCompounder.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \label{__create_compounder_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports = \mbox{\hyperlink{camel_case_8js_a3eaf8006f17bfffb346b54858ab8a703}{create\+Compounder}}}
+
+\Hypertarget{__create_compounder_8js_ab5e88a184ee73e9cd83c6f8770feedf1}\index{\_createCompounder.js@{\_createCompounder.js}!reApos@{reApos}}
+\index{reApos@{reApos}!\_createCompounder.js@{\_createCompounder.js}}
+\doxysubsubsection{\texorpdfstring{reApos}{reApos}}
+{\footnotesize\ttfamily \label{__create_compounder_8js_ab5e88a184ee73e9cd83c6f8770feedf1} 
+var re\+Apos = Reg\+Exp(\mbox{\hyperlink{lodash_8camelcase_2index_8js_a140a0e3ac7212b99c89e23ee2469ff71}{rs\+Apos}}, \textquotesingle{}\mbox{\hyperlink{ordered-map_8min_8js_a103df269476e78897c9c4c6cb8f4eb06}{g}}\textquotesingle{})}
+
+Used to match apostrophes. \Hypertarget{__create_compounder_8js_a140a0e3ac7212b99c89e23ee2469ff71}\index{\_createCompounder.js@{\_createCompounder.js}!rsApos@{rsApos}}
+\index{rsApos@{rsApos}!\_createCompounder.js@{\_createCompounder.js}}
+\doxysubsubsection{\texorpdfstring{rsApos}{rsApos}}
+{\footnotesize\ttfamily \label{__create_compounder_8js_a140a0e3ac7212b99c89e23ee2469ff71} 
+var rs\+Apos = "{}\mbox{[}\textquotesingle{}\textbackslash{}u2019\mbox{]}"{}}
+
+Used to compose unicode capture groups. \Hypertarget{__create_compounder_8js_a063186572f7d799b5acbf1936a7be49d}\index{\_createCompounder.js@{\_createCompounder.js}!words@{words}}
+\index{words@{words}!\_createCompounder.js@{\_createCompounder.js}}
+\doxysubsubsection{\texorpdfstring{words}{words}}
+{\footnotesize\ttfamily \label{__create_compounder_8js_a063186572f7d799b5acbf1936a7be49d} 
+var words = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./words\textquotesingle{})}
+

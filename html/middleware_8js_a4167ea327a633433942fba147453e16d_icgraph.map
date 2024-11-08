@@ -1,0 +1,8 @@
+<map id="commandMiddlewareFactory" name="commandMiddlewareFactory">
+<area shape="rect" id="Node000001" title=" " alt="" coords="520,29,708,55"/>
+<area shape="rect" id="Node000002" href="$class_command_instance.html#aed24e36eaa75bb884f304a52979c8aa5" title=" " alt="" coords="267,29,472,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="505,45,472,45,472,40,505,40"/>
+<area shape="poly" id="edge3_Node000002_Node000002" title=" " alt="" coords="412,17,398,11,369,8,343,10,329,15,326,20,333,27,329,31,321,21,326,11,342,5,369,3,400,5,415,13"/>
+<area shape="rect" id="Node000003" href="$class_command_instance.html#ab60baf8b3c1a34e47c3f996f5821366b" title=" " alt="" coords="5,29,219,55"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="251,45,219,45,219,40,251,40"/>
+</map>

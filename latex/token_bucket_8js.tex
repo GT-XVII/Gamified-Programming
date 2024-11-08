@@ -1,0 +1,75 @@
+\doxysection{backend/node\+\_\+modules/limiter/lib/token\+Bucket.js File Reference}
+\hypertarget{token_bucket_8js}{}\label{token_bucket_8js}\index{backend/node\_modules/limiter/lib/tokenBucket.js@{backend/node\_modules/limiter/lib/tokenBucket.js}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{token_bucket_8js_aeb8afa6e04ad7321404fe79eafffc5c5}{Token\+Bucket}}
+\item 
+\mbox{\hyperlink{limiter_2index_8js_a0ae764a73b4233e6b97bb1a264b30c2b}{Token\+Bucket}} \mbox{\hyperlink{token_bucket_8js_a72de445959470bdc38833e4c388eb596}{prototype}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{token_bucket_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} = \mbox{\hyperlink{limiter_2index_8js_a0ae764a73b4233e6b97bb1a264b30c2b}{Token\+Bucket}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{token_bucket_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\index{tokenBucket.js@{tokenBucket.js}!exports@{exports}}
+\index{exports@{exports}!tokenBucket.js@{tokenBucket.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \label{token_bucket_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports = \mbox{\hyperlink{limiter_2index_8js_a0ae764a73b4233e6b97bb1a264b30c2b}{Token\+Bucket}}}
+
+\Hypertarget{token_bucket_8js_a72de445959470bdc38833e4c388eb596}\index{tokenBucket.js@{tokenBucket.js}!prototype@{prototype}}
+\index{prototype@{prototype}!tokenBucket.js@{tokenBucket.js}}
+\doxysubsubsection{\texorpdfstring{prototype}{prototype}}
+{\footnotesize\ttfamily \label{token_bucket_8js_a72de445959470bdc38833e4c388eb596} 
+\mbox{\hyperlink{limiter_2index_8js_a0ae764a73b4233e6b97bb1a264b30c2b}{Token\+Bucket}} prototype}
+
+\Hypertarget{token_bucket_8js_aeb8afa6e04ad7321404fe79eafffc5c5}\index{tokenBucket.js@{tokenBucket.js}!TokenBucket@{TokenBucket}}
+\index{TokenBucket@{TokenBucket}!tokenBucket.js@{tokenBucket.js}}
+\doxysubsubsection{\texorpdfstring{TokenBucket}{TokenBucket}}
+{\footnotesize\ttfamily \label{token_bucket_8js_aeb8afa6e04ad7321404fe79eafffc5c5} 
+var Token\+Bucket}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(bucketSize,\ tokensPerInterval,\ \mbox{\hyperlink{rxjs_2dist_2cjs_2index_8js_af0b145a3cd1c67ae14a83aa1f274a4c8}{interval}},\ parentBucket)\ \{}
+\DoxyCodeLine{\ \ this.bucketSize\ =\ bucketSize;}
+\DoxyCodeLine{\ \ this.tokensPerInterval\ =\ tokensPerInterval;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (typeof\ \mbox{\hyperlink{rxjs_2dist_2cjs_2index_8js_af0b145a3cd1c67ae14a83aa1f274a4c8}{interval}}\ ===\ \textcolor{stringliteral}{'string'})\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{switch}\ (\mbox{\hyperlink{rxjs_2dist_2cjs_2index_8js_af0b145a3cd1c67ae14a83aa1f274a4c8}{interval}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'sec'}:\ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'second'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ this.\mbox{\hyperlink{rxjs_2dist_2cjs_2index_8js_af0b145a3cd1c67ae14a83aa1f274a4c8}{interval}}\ =\ 1000;\ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'min'}:\ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'minute'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ this.\mbox{\hyperlink{rxjs_2dist_2cjs_2index_8js_af0b145a3cd1c67ae14a83aa1f274a4c8}{interval}}\ =\ 1000\ *\ 60;\ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'hr'}:\ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'hour'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ this.\mbox{\hyperlink{rxjs_2dist_2cjs_2index_8js_af0b145a3cd1c67ae14a83aa1f274a4c8}{interval}}\ =\ 1000\ *\ 60\ *\ 60;\ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'day'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ this.\mbox{\hyperlink{rxjs_2dist_2cjs_2index_8js_af0b145a3cd1c67ae14a83aa1f274a4c8}{interval}}\ =\ 1000\ *\ 60\ *\ 60\ *\ 24;\ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\ \ \ \ \ \ \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ Error(\textcolor{stringliteral}{'Invaid\ interval\ '}\ +\ \mbox{\hyperlink{rxjs_2dist_2cjs_2index_8js_af0b145a3cd1c67ae14a83aa1f274a4c8}{interval}});}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\ \ \ \ this.\mbox{\hyperlink{rxjs_2dist_2cjs_2index_8js_af0b145a3cd1c67ae14a83aa1f274a4c8}{interval}}\ =\ \mbox{\hyperlink{rxjs_2dist_2cjs_2index_8js_af0b145a3cd1c67ae14a83aa1f274a4c8}{interval}};}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ this.parentBucket\ =\ parentBucket;}
+\DoxyCodeLine{\ \ this.content\ =\ 0;}
+\DoxyCodeLine{\ \ this.lastDrip\ =\ +\textcolor{keyword}{new}\ Date();}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\doxylink{class_a}{A} hierarchical token bucket for rate limiting. See \href{http://en.wikipedia.org/wiki/Token_bucket}{\texttt{ http\+://en.\+wikipedia.\+org/wiki/\+Token\+\_\+bucket}} for more information. \begin{DoxyAuthor}{Author}
+John Hurliman \href{mailto:jhurliman@cull.tv}{\texttt{ jhurliman@cull.\+tv}}
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Number\}} & bucket\+Size Maximum number of tokens to hold in the bucket. Also known as the burst rate. \\
+\hline
+{\em \{\+Number\}} & tokens\+Per\+Interval Number of tokens to drip into the bucket over the course of one interval. \\
+\hline
+{\em \{\+String\texorpdfstring{$\vert$}{|}\+Number\}} & interval The interval length in milliseconds, or as one of the following strings\+: \textquotesingle{}second\textquotesingle{}, \textquotesingle{}minute\textquotesingle{}, \textquotesingle{}hour\textquotesingle{}, day\textquotesingle{}. \\
+\hline
+{\em \{\+Token\+Bucket\}} & parent\+Bucket Optional. \doxylink{class_a}{A} token bucket that will act as the parent of this bucket. \\
+\hline
+\end{DoxyParams}

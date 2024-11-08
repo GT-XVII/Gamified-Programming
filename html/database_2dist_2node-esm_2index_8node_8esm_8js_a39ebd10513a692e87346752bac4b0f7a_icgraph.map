@@ -1,0 +1,16 @@
+<map id="syncPointViewForQuery" name="syncPointViewForQuery">
+<area shape="rect" id="Node000001" title=" " alt="" coords="1217,69,1379,95"/>
+<area shape="rect" id="Node000002" href="$database_2dist_2node-esm_2index_8node_8esm_8js.html#ae81d24b77fbf1f658f497b7d50b20915" title=" " alt="" coords="970,40,1169,66"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1201,72,1169,68,1170,63,1202,67"/>
+<area shape="rect" id="Node000003" href="$database_2dist_2node-esm_2index_8node_8esm_8js.html#ac30f8210bf2c55731a208e32cd43851c" title=" " alt="" coords="5,40,208,66"/>
+<area shape="poly" id="edge8_Node000001_Node000003" title=" " alt="" coords="1202,93,1020,106,809,113,554,113,449,108,344,97,171,69,172,64,344,92,449,103,554,107,809,107,1019,101,1201,88"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="987,39,921,30,735,14,589,8,443,13,256,30,175,42,174,37,255,25,442,8,589,3,735,8,922,25,988,34"/>
+<area shape="rect" id="Node000004" href="$database_2dist_2node-esm_2index_8node_8esm_8js.html#ae1d9310673b9a93a1006c5726434f36e" title=" " alt="" coords="693,40,922,66"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="954,55,922,55,922,50,954,50"/>
+<area shape="rect" id="Node000005" href="$database_2dist_2node-esm_2index_8node_8esm_8js.html#af415f93c982d1b9ca302b4c90a376681" title=" " alt="" coords="466,32,645,73"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="678,64,646,64,646,59,678,59"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="661,41,693,41,693,46,661,46"/>
+<area shape="rect" id="Node000006" href="$database_2dist_2node-esm_2index_8node_8esm_8js.html#ac957847a92d114946d6af72fba6a737a" title=" " alt="" coords="256,40,418,66"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="451,55,419,55,419,50,451,50"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="240,55,208,55,208,50,240,50"/>
+</map>

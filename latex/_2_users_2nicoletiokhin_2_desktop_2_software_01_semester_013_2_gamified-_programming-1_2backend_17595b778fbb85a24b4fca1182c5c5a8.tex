@@ -1,0 +1,41 @@
+\doxysection{/\+Users/nicoletiokhin/\+Desktop/\+Software Semester 3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/@google-\/cloud/firestore/build/src/bulk-\/writer.\+js}
+\hypertarget{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_17595b778fbb85a24b4fca1182c5c5a8}{}\label{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_17595b778fbb85a24b4fca1182c5c5a8}Create a document with the provided data. This single operation will fail if a document exists at its location.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{\+Document\+Reference\}} & document\+Ref \doxylink{class_a}{A} reference to the document to be created. \\
+\hline
+{\em \{\+T\}} & data The object to serialize as the document. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \{\+Error\}} & If the provided input is not a valid \doxylink{class_firestore}{Firestore} document. \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+\{Promise$<$\+Write\+Result$>$\} \doxylink{class_a}{A} promise that resolves with the result of the write. If the write fails, the promise is rejected with a \mbox{[}\doxylink{class_bulk_writer_error}{Bulk\+Writer\+Error}\mbox{]}{\ttfamily \doxylink{class_bulk_writer_error}{Bulk\+Writer\+Error}}.
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{let\ bulkWriter\ =\ \mbox{\hyperlink{firestore-namespace_8js_a6c18541a3018cee632d7e797bb983f36}{firestore}}.bulkWriter();}
+\DoxyCodeLine{let\ documentRef\ =\ \mbox{\hyperlink{firestore-namespace_8js_a6c18541a3018cee632d7e797bb983f36}{firestore}}.collection(\textcolor{stringliteral}{'col'}).doc();}
+\DoxyCodeLine{}
+\DoxyCodeLine{bulkWriter}
+\DoxyCodeLine{\ .create(documentRef,\ \{foo:\ \textcolor{stringliteral}{'bar'}\})}
+\DoxyCodeLine{\ .\mbox{\hyperlink{pledge_8js_a492a4eb4b80e71a1bb4761df42875565}{then}}(\mbox{\hyperlink{lodash_2core_8js_a348c112a244660a2f280cda892658c24}{result}}\ =>\ \{}
+\DoxyCodeLine{\ \ \ console.log(\textcolor{stringliteral}{'Successfully\ executed\ write\ at:\ '},\ \mbox{\hyperlink{lodash_2core_8js_a348c112a244660a2f280cda892658c24}{result}});}
+\DoxyCodeLine{\ \})}
+\DoxyCodeLine{\ .\textcolor{keywordflow}{catch}(err\ =>\ \{}
+\DoxyCodeLine{\ \ \ console.log(\textcolor{stringliteral}{'Write\ failed\ with:\ '},\ err);}
+\DoxyCodeLine{\ \});}
+\DoxyCodeLine{\});}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyCodeInclude}{0}
+
+\end{DoxyCodeInclude}
+ Semester 3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/@google\doxylink{bulk-writer_8js}{-\/cloud/firestore/build/src/bulk-\/writer.\+js} 

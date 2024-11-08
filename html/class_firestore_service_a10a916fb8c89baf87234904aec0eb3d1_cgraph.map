@@ -1,0 +1,11 @@
+<map id="FirestoreService::initializeDatabase" name="FirestoreService::initializeDatabase">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,177,96"/>
+<area shape="rect" id="Node000002" href="$class_firestore_service.html#adc0c75e630d39f53137541d81a5dbf02" title=" " alt="" coords="236,5,381,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="170,52,242,33,243,38,171,57"/>
+<area shape="rect" id="Node000003" href="$class_firestore_service.html#a40eb37dc05b573e8cb6692b0f3a8ac66" title=" " alt="" coords="225,55,392,96"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="177,73,209,73,209,78,177,78"/>
+<area shape="rect" id="Node000004" href="$firestore-internal_8js.html#a1d5834579d54e01e4ad329b1e955501f" title=" " alt="" coords="264,120,353,146"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="171,94,249,115,248,120,170,99"/>
+<area shape="rect" id="Node000005" href="$__stream__duplex_8js.html#a472985ef50ed84466f5fce48a490c29b" title=" " alt="" coords="440,120,500,146"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="354,130,424,130,424,136,354,136"/>
+</map>

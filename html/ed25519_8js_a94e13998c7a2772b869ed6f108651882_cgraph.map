@@ -1,0 +1,9 @@
+<map id="pack25519" name="pack25519">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,90,80"/>
+<area shape="rect" id="Node000002" href="$ed25519_8js.html#abba694648c8153b77664063c31ebb6b5" title=" " alt="" coords="138,5,212,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="82,52,124,35,126,40,84,56"/>
+<area shape="rect" id="Node000003" href="$ed25519_8js.html#ab65e99c4cef2469ef19143555bd7c321" title=" " alt="" coords="156,55,194,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="90,65,140,65,140,70,90,70"/>
+<area shape="rect" id="Node000004" href="$ed25519_8js.html#a01a5ebbc6692285962adf61bd7e33153" title=" " alt="" coords="138,104,212,130"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="84,79,126,95,124,100,82,83"/>
+</map>

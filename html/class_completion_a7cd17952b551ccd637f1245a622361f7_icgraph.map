@@ -1,0 +1,15 @@
+<map id="Completion::getPreviousArgChoices" name="Completion::getPreviousArgChoices">
+<area shape="rect" id="Node000001" title=" " alt="" coords="1233,23,1417,64"/>
+<area shape="rect" id="Node000002" href="$class_completion.html#a980ffe6c8ade3025e2c9348a60f7d2c1" title=" " alt="" coords="733,23,949,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1217,43,1185,42,997,42,949,43,949,38,997,37,1185,37,1217,37"/>
+<area shape="rect" id="Node000006" href="$class_completion.html#aae44203d393b0dd2f13f6e41ff5111b4" title=" " alt="" coords="997,51,1185,92"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="1218,59,1186,63,1185,58,1217,54"/>
+<area shape="rect" id="Node000003" href="$class_completion.html#a55e9252e701314caf31902b5e4c6dc2b" title=" " alt="" coords="485,31,685,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="718,46,686,46,686,41,718,41"/>
+<area shape="rect" id="Node000004" href="$class_completion.html#aa80a1b3f28f97a6bde2448eaec6109e3" title=" " alt="" coords="233,5,437,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="469,34,437,31,438,26,470,29"/>
+<area shape="rect" id="Node000005" href="$class_completion.html#a7df06648cd89dced877c9d335610167b" title=" " alt="" coords="5,31,185,56"/>
+<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="469,46,185,46,185,41,469,41"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="217,33,186,37,185,31,217,28"/>
+<area shape="poly" id="edge7_Node000006_Node000002" title=" " alt="" coords="981,62,949,58,949,53,981,57"/>
+</map>

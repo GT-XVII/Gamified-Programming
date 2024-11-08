@@ -1,0 +1,114 @@
+\doxysection{Page\+Descriptor Class Reference}
+\hypertarget{class_page_descriptor}{}\label{class_page_descriptor}\index{PageDescriptor@{PageDescriptor}}
+
+
+Collaboration diagram for Page\+Descriptor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=163pt]{class_page_descriptor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_page_descriptor_af06d9ab51b20c9464fea8bd2e28ef5b4}{constructor}} (request\+Page\+Token\+Field, response\+Page\+Token\+Field, resource\+Field)
+\item 
+\mbox{\hyperlink{class_page_descriptor_a6c046bf521b19b46ff5b0ddca3c5ed52}{create\+Stream}} (api\+Call, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}}, options)
+\item 
+\mbox{\hyperlink{class_page_descriptor_a3c2afeda19cc8a1e1272c4efb8c7c64c}{async\+Iterate}} (api\+Call, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}}, options)
+\item 
+\mbox{\hyperlink{class_page_descriptor_a06cda2599af70718cb161a1d5d14412f}{create\+Iterator}} (api\+Call, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}}, options)
+\item 
+\mbox{\hyperlink{class_page_descriptor_a3594b6ad96adb408b49b6af2c61a8a4d}{get\+Api\+Caller}} (settings)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_a}{A} descriptor for methods that support pagination. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_page_descriptor_a3c2afeda19cc8a1e1272c4efb8c7c64c}\index{PageDescriptor@{PageDescriptor}!asyncIterate@{asyncIterate}}
+\index{asyncIterate@{asyncIterate}!PageDescriptor@{PageDescriptor}}
+\doxysubsubsection{\texorpdfstring{asyncIterate()}{asyncIterate()}}
+{\footnotesize\ttfamily \label{class_page_descriptor_a3c2afeda19cc8a1e1272c4efb8c7c64c} 
+Page\+Descriptor\+::async\+Iterate (\begin{DoxyParamCaption}\item[{}]{api\+Call}{, }\item[{}]{request}{, }\item[{}]{options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create an async iterable which can be recursively called for data on-\/demand. 
+
+References \mbox{\hyperlink{class_page_descriptor_a06cda2599af70718cb161a1d5d14412f}{create\+Iterator()}}, and \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_page_descriptor_a3c2afeda19cc8a1e1272c4efb8c7c64c_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_page_descriptor_af06d9ab51b20c9464fea8bd2e28ef5b4}\index{PageDescriptor@{PageDescriptor}!constructor@{constructor}}
+\index{constructor@{constructor}!PageDescriptor@{PageDescriptor}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_page_descriptor_af06d9ab51b20c9464fea8bd2e28ef5b4} 
+Page\+Descriptor\+::constructor (\begin{DoxyParamCaption}\item[{}]{request\+Page\+Token\+Field}{, }\item[{}]{response\+Page\+Token\+Field}{, }\item[{}]{resource\+Field}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_page_descriptor_a06cda2599af70718cb161a1d5d14412f}\index{PageDescriptor@{PageDescriptor}!createIterator@{createIterator}}
+\index{createIterator@{createIterator}!PageDescriptor@{PageDescriptor}}
+\doxysubsubsection{\texorpdfstring{createIterator()}{createIterator()}}
+{\footnotesize\ttfamily \label{class_page_descriptor_a06cda2599af70718cb161a1d5d14412f} 
+Page\+Descriptor\+::create\+Iterator (\begin{DoxyParamCaption}\item[{}]{api\+Call}{, }\item[{}]{request}{, }\item[{}]{options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{src_2util_2minimal_8js_a325c4e317c38d8497130ebce7670be2f}{Array}}, \mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}}, \mbox{\hyperlink{retry__operation_8js_a4d79ab97589329675bfbccd3b9086807}{attempts}}, \mbox{\hyperlink{pledge_8js_abf6a3c9d69bed4b518ad706279009f51}{done}}, \mbox{\hyperlink{page_descriptor_8js_a83d6ebff726013faf12af2db6f74047e}{max\+Attempts\+Empty\+Response}}, \mbox{\hyperlink{protobufjs_2dist_2protobuf_8js_adc8497f1b8fa9c7bee4a53c25c244a66}{next()}}, \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}, \mbox{\hyperlink{__get_tag_8js_abace523389c17bce1848e3a427871700}{Promise}}, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}}, \mbox{\hyperlink{lodash_2core_8js_a348c112a244660a2f280cda892658c24}{result}}, \mbox{\hyperlink{__base_get_tag_8js_a9223501a4f1d046befc3fb8f0bf5c1e4}{Symbol}}, \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_page_descriptor_a06cda2599af70718cb161a1d5d14412f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_page_descriptor_a06cda2599af70718cb161a1d5d14412f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_page_descriptor_a6c046bf521b19b46ff5b0ddca3c5ed52}\index{PageDescriptor@{PageDescriptor}!createStream@{createStream}}
+\index{createStream@{createStream}!PageDescriptor@{PageDescriptor}}
+\doxysubsubsection{\texorpdfstring{createStream()}{createStream()}}
+{\footnotesize\ttfamily \label{class_page_descriptor_a6c046bf521b19b46ff5b0ddca3c5ed52} 
+Page\+Descriptor\+::create\+Stream (\begin{DoxyParamCaption}\item[{}]{api\+Call}{, }\item[{}]{request}{, }\item[{}]{options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Creates a new object Stream which emits the resource on \textquotesingle{}data\textquotesingle{} event. 
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a622460feeccdab6d8f307936fc6b36fb}{callback}}, \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}, \mbox{\hyperlink{protobufjs_2dist_2protobuf_8js_adc8497f1b8fa9c7bee4a53c25c244a66}{next()}}, \mbox{\hyperlink{streaming_retry_request_8js_adfab432c3cde545db21ffd40d115cef7}{object\+Mode}}, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2build_2esm_2src_2nodejs-common_2util_8js_a5e81a74b5b19c1557ba165296dc2d3da}{request}}, \mbox{\hyperlink{rxjs_8umd_8js_a5008ba0c81d22f889926a449c993ac53}{set\+Immediate}}, \mbox{\hyperlink{debug_2src_2node_8js_a822bf74d422c61e6caa292f739dc4786}{stream}}, and \mbox{\hyperlink{page_descriptor_8js_a4bf84a2dbc80e17d37c6591ece0577c1}{stream\+\_\+1}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_page_descriptor_a6c046bf521b19b46ff5b0ddca3c5ed52_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_page_descriptor_a3594b6ad96adb408b49b6af2c61a8a4d}\index{PageDescriptor@{PageDescriptor}!getApiCaller@{getApiCaller}}
+\index{getApiCaller@{getApiCaller}!PageDescriptor@{PageDescriptor}}
+\doxysubsubsection{\texorpdfstring{getApiCaller()}{getApiCaller()}}
+{\footnotesize\ttfamily \label{class_page_descriptor_a3594b6ad96adb408b49b6af2c61a8a4d} 
+Page\+Descriptor\+::get\+Api\+Caller (\begin{DoxyParamCaption}\item[{}]{settings}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{page_descriptor_8js_ad30d5997959e49e3154dfabaec49334a}{normal\+Api\+Caller\+\_\+1}}, and \mbox{\hyperlink{page_descriptor_8js_a95882eee6f5ebb18b5ceb741c85b91a6}{paged\+Api\+Caller\+\_\+1}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/google-\/gax/build/src/pagination\+Calls/\mbox{\hyperlink{page_descriptor_8js}{page\+Descriptor.\+js}}\end{DoxyCompactItemize}

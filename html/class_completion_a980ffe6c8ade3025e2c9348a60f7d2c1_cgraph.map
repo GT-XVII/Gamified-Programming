@@ -1,0 +1,8 @@
+<map id="Completion::choicesFromOptionsCompletions" name="Completion::choicesFromOptionsCompletions">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,221,46"/>
+<area shape="rect" id="Node000002" href="$class_completion.html#a7cd17952b551ccd637f1245a622361f7" title=" " alt="" coords="505,5,689,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="221,20,269,19,457,19,489,20,489,25,457,24,269,24,221,25"/>
+<area shape="rect" id="Node000003" href="$class_completion.html#aae44203d393b0dd2f13f6e41ff5111b4" title=" " alt="" coords="269,33,457,74"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="222,35,254,39,253,44,221,40"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="457,40,489,36,490,41,458,45"/>
+</map>

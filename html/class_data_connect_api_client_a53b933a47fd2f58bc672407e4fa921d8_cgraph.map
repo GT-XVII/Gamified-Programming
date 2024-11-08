@@ -1,0 +1,11 @@
+<map id="DataConnectApiClient::executeGraphql" name="DataConnectApiClient::executeGraphql">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,39,157,79"/>
+<area shape="rect" id="Node000002" href="$class_data_connect_api_client.html#a2e7cbe482b8f1ffe1ee8ef75506cd5d2" title=" " alt="" coords="205,39,363,79"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="157,56,189,56,189,62,157,62"/>
+<area shape="rect" id="Node000003" href="$class_data_connect_api_client.html#a0b97542412973c4cbf7a630eb35a7f34" title=" " alt="" coords="411,5,562,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="363,43,395,38,396,43,364,49"/>
+<area shape="rect" id="Node000005" href="$class_data_connect_api_client.html#a558ef3c6d29677922ed90628e8f8d57f" title=" " alt="" coords="411,71,562,111"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="364,69,396,74,395,79,363,74"/>
+<area shape="rect" id="Node000004" href="$class_data_connect_api_client.html#a17876d2a6daec7d321a8bea9899afb12" title=" " alt="" coords="610,5,762,46"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="563,23,595,23,595,28,563,28"/>
+</map>

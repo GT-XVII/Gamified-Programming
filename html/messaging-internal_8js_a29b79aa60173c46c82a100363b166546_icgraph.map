@@ -1,0 +1,9 @@
+<map id="validateLightSettings" name="validateLightSettings">
+<area shape="rect" id="Node000001" title=" " alt="" coords="593,5,736,31"/>
+<area shape="rect" id="Node000002" href="$messaging-internal_8js.html#a3b61e1a85ade49661f80d53df12e4033" title=" " alt="" coords="369,5,545,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="578,21,546,21,546,16,578,16"/>
+<area shape="rect" id="Node000003" href="$messaging-internal_8js.html#ae05aa3d8b2a7b49229af4d4c5b2f1908" title=" " alt="" coords="173,5,321,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="353,21,321,21,321,16,353,16"/>
+<area shape="rect" id="Node000004" href="$messaging-internal_8js.html#abe99780056f7051fc28be1dbf6b4ea70" title=" " alt="" coords="5,5,125,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="157,21,125,21,125,16,157,16"/>
+</map>

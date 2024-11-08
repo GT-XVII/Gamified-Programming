@@ -1,0 +1,237 @@
+\doxysection{Agent Class Reference}
+\hypertarget{class_agent}{}\label{class_agent}\index{Agent@{Agent}}
+
+
+Inheritance diagram for Agent\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{class_agent__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Agent\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{class_agent__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_agent_a1e0bb7a0e8815def452a599844ceb370}{constructor}} (opts)
+\item 
+\mbox{\hyperlink{class_agent_a26bb977675a27dcba9edb734ae6ec739}{is\+Secure\+Endpoint}} (options)
+\item 
+\mbox{\hyperlink{class_agent_a230890f954dcf967365980d454058f5c}{increment\+Sockets}} (\mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}})
+\item 
+\mbox{\hyperlink{class_agent_a2847b51318050b3f376fde524aab50ca}{decrement\+Sockets}} (\mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}, socket)
+\item 
+\mbox{\hyperlink{class_agent_af48288ba1cfe366e50f0120ff4735459}{get\+Name}} (options)
+\item 
+\mbox{\hyperlink{class_agent_af626e756c45908b57847c4b302998238}{create\+Socket}} (\mbox{\hyperlink{agent-base_2dist_2helpers_8js_a960c3c3c7bce40c2aa54b029b3dbb9c8}{req}}, options, cb)
+\item 
+\mbox{\hyperlink{class_agent_a7fc0fa8fe16bab996d44fcbf45496128}{create\+Connection}} ()
+\item 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} \mbox{\hyperlink{class_agent_ae036b42ac53e836918ca74ef3c59fcb4}{default\+Port}} ()
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a0e055d5e5250182755177897e8d99f7c}{set}} \mbox{\hyperlink{class_agent_ab64c11411511d39b718ad3fce7617410}{default\+Port}} (\mbox{\hyperlink{ordered-map_8min_8js_a207400f40ed647015069564fa40946e1}{v}})
+\item 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} \mbox{\hyperlink{class_agent_a5b81ec44701572ea6214d11b08ee5745}{protocol}} ()
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a0e055d5e5250182755177897e8d99f7c}{set}} \mbox{\hyperlink{class_agent_a062e27d3e2c6d8c0678ae0ec04ef11b9}{protocol}} (\mbox{\hyperlink{ordered-map_8min_8js_a207400f40ed647015069564fa40946e1}{v}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_agent_a1e0bb7a0e8815def452a599844ceb370}\index{Agent@{Agent}!constructor@{constructor}}
+\index{constructor@{constructor}!Agent@{Agent}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_agent_a1e0bb7a0e8815def452a599844ceb370} 
+Agent\+::constructor (\begin{DoxyParamCaption}\item[{}]{opts}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{agent-base_2dist_2index_8js_ae5ec622f2e0e3cef7d9ce28e1d4d1206}{INTERNAL}}.
+
+\Hypertarget{class_agent_a7fc0fa8fe16bab996d44fcbf45496128}\index{Agent@{Agent}!createConnection@{createConnection}}
+\index{createConnection@{createConnection}!Agent@{Agent}}
+\doxysubsubsection{\texorpdfstring{createConnection()}{createConnection()}}
+{\footnotesize\ttfamily \label{class_agent_a7fc0fa8fe16bab996d44fcbf45496128} 
+Agent\+::create\+Connection (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{agent-base_2dist_2index_8js_ae5ec622f2e0e3cef7d9ce28e1d4d1206}{INTERNAL}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}.
+
+\Hypertarget{class_agent_af626e756c45908b57847c4b302998238}\index{Agent@{Agent}!createSocket@{createSocket}}
+\index{createSocket@{createSocket}!Agent@{Agent}}
+\doxysubsubsection{\texorpdfstring{createSocket()}{createSocket()}}
+{\footnotesize\ttfamily \label{class_agent_af626e756c45908b57847c4b302998238} 
+Agent\+::create\+Socket (\begin{DoxyParamCaption}\item[{}]{req}{, }\item[{}]{options}{, }\item[{}]{cb}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{cjs_2internal_2operators_2connect_8js_ac090844dde4bb03e7cb30b907e52ce18}{connect}}, \mbox{\hyperlink{class_agent_a2847b51318050b3f376fde524aab50ca}{decrement\+Sockets()}}, \mbox{\hyperlink{class_agent_af48288ba1cfe366e50f0120ff4735459}{get\+Name()}}, \mbox{\hyperlink{agent-base_2dist_2index_8js_a84cec47a61a1218c482b5de1674f8c17}{http}}, \mbox{\hyperlink{class_agent_a230890f954dcf967365980d454058f5c}{increment\+Sockets()}}, \mbox{\hyperlink{agent-base_2dist_2index_8js_ae5ec622f2e0e3cef7d9ce28e1d4d1206}{INTERNAL}}, \mbox{\hyperlink{http-proxy-agent_2node__modules_2agent-base_2dist_2src_2index_8js_a31916feb9b95e851ad47a6478abe6aa3}{is\+Secure\+Endpoint()}}, \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}, \mbox{\hyperlink{__get_tag_8js_abace523389c17bce1848e3a427871700}{Promise}}, and \mbox{\hyperlink{agent-base_2dist_2helpers_8js_a960c3c3c7bce40c2aa54b029b3dbb9c8}{req}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_agent_af626e756c45908b57847c4b302998238_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_agent_a2847b51318050b3f376fde524aab50ca}\index{Agent@{Agent}!decrementSockets@{decrementSockets}}
+\index{decrementSockets@{decrementSockets}!Agent@{Agent}}
+\doxysubsubsection{\texorpdfstring{decrementSockets()}{decrementSockets()}}
+{\footnotesize\ttfamily \label{class_agent_a2847b51318050b3f376fde524aab50ca} 
+Agent\+::decrement\+Sockets (\begin{DoxyParamCaption}\item[{}]{name}{, }\item[{}]{socket}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{cookie_2index_8js_a0ac000318c33f03e412baff8df5b2513}{index}}, and \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_agent_a2847b51318050b3f376fde524aab50ca_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_agent_ae036b42ac53e836918ca74ef3c59fcb4}\index{Agent@{Agent}!defaultPort@{defaultPort}}
+\index{defaultPort@{defaultPort}!Agent@{Agent}}
+\doxysubsubsection{\texorpdfstring{defaultPort()}{defaultPort()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_agent_ae036b42ac53e836918ca74ef3c59fcb4} 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} Agent\+::default\+Port (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{class_agent_ae036b42ac53e836918ca74ef3c59fcb4}{default\+Port()}}, \mbox{\hyperlink{agent-base_2dist_2index_8js_ae5ec622f2e0e3cef7d9ce28e1d4d1206}{INTERNAL}}, and \mbox{\hyperlink{class_agent_a5b81ec44701572ea6214d11b08ee5745}{protocol()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_agent_ae036b42ac53e836918ca74ef3c59fcb4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{class_agent_ae036b42ac53e836918ca74ef3c59fcb4_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_agent_ab64c11411511d39b718ad3fce7617410}\index{Agent@{Agent}!defaultPort@{defaultPort}}
+\index{defaultPort@{defaultPort}!Agent@{Agent}}
+\doxysubsubsection{\texorpdfstring{defaultPort()}{defaultPort()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_agent_ab64c11411511d39b718ad3fce7617410} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a0e055d5e5250182755177897e8d99f7c}{set}} Agent\+::default\+Port (\begin{DoxyParamCaption}\item[{}]{v}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{agent-base_2dist_2index_8js_ae5ec622f2e0e3cef7d9ce28e1d4d1206}{INTERNAL}}, and \mbox{\hyperlink{ordered-map_8min_8js_a207400f40ed647015069564fa40946e1}{v}}.
+
+\Hypertarget{class_agent_af48288ba1cfe366e50f0120ff4735459}\index{Agent@{Agent}!getName@{getName}}
+\index{getName@{getName}!Agent@{Agent}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily \label{class_agent_af48288ba1cfe366e50f0120ff4735459} 
+Agent\+::get\+Name (\begin{DoxyParamCaption}\item[{}]{options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{agent-base_2dist_2index_8js_a7b7d6e01483d2ef5ed667022b9893b8c}{https\+\_\+1}}, and \mbox{\hyperlink{http-proxy-agent_2node__modules_2agent-base_2dist_2src_2index_8js_a31916feb9b95e851ad47a6478abe6aa3}{is\+Secure\+Endpoint()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{class_agent_af48288ba1cfe366e50f0120ff4735459_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{class_agent_af48288ba1cfe366e50f0120ff4735459_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_agent_a230890f954dcf967365980d454058f5c}\index{Agent@{Agent}!incrementSockets@{incrementSockets}}
+\index{incrementSockets@{incrementSockets}!Agent@{Agent}}
+\doxysubsubsection{\texorpdfstring{incrementSockets()}{incrementSockets()}}
+{\footnotesize\ttfamily \label{class_agent_a230890f954dcf967365980d454058f5c} 
+Agent\+::increment\+Sockets (\begin{DoxyParamCaption}\item[{}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}, \mbox{\hyperlink{agent-base_2dist_2index_8js_ae13111a77351cc6bf302612aa5d97d08}{net}}, and \mbox{\hyperlink{is-stream_2index_8js_ac8dca21fa013a97d16bb9a1a8a41de0b}{writable}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{class_agent_a230890f954dcf967365980d454058f5c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_agent_a26bb977675a27dcba9edb734ae6ec739}\index{Agent@{Agent}!isSecureEndpoint@{isSecureEndpoint}}
+\index{isSecureEndpoint@{isSecureEndpoint}!Agent@{Agent}}
+\doxysubsubsection{\texorpdfstring{isSecureEndpoint()}{isSecureEndpoint()}}
+{\footnotesize\ttfamily \label{class_agent_a26bb977675a27dcba9edb734ae6ec739} 
+Agent\+::is\+Secure\+Endpoint (\begin{DoxyParamCaption}\item[{}]{options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Determine whether this is an {\ttfamily http} or {\ttfamily https} request. 
+
+References \mbox{\hyperlink{uuid_8min_8js_ae5e71a2600e8891c54854be157cc6626}{l}}.
+
+\Hypertarget{class_agent_a5b81ec44701572ea6214d11b08ee5745}\index{Agent@{Agent}!protocol@{protocol}}
+\index{protocol@{protocol}!Agent@{Agent}}
+\doxysubsubsection{\texorpdfstring{protocol()}{protocol()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_agent_a5b81ec44701572ea6214d11b08ee5745} 
+\mbox{\hyperlink{response_8js_a10d7f5ef6343bd4575249458cf93dd3e}{get}} Agent\+::protocol (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{agent-base_2dist_2index_8js_ae5ec622f2e0e3cef7d9ce28e1d4d1206}{INTERNAL}}, \mbox{\hyperlink{http-proxy-agent_2node__modules_2agent-base_2dist_2src_2index_8js_a31916feb9b95e851ad47a6478abe6aa3}{is\+Secure\+Endpoint()}}, and \mbox{\hyperlink{class_agent_a5b81ec44701572ea6214d11b08ee5745}{protocol()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=291pt]{class_agent_a5b81ec44701572ea6214d11b08ee5745_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=293pt]{class_agent_a5b81ec44701572ea6214d11b08ee5745_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_agent_a062e27d3e2c6d8c0678ae0ec04ef11b9}\index{Agent@{Agent}!protocol@{protocol}}
+\index{protocol@{protocol}!Agent@{Agent}}
+\doxysubsubsection{\texorpdfstring{protocol()}{protocol()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_agent_a062e27d3e2c6d8c0678ae0ec04ef11b9} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a0e055d5e5250182755177897e8d99f7c}{set}} Agent\+::protocol (\begin{DoxyParamCaption}\item[{}]{v}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+References \mbox{\hyperlink{agent-base_2dist_2index_8js_ae5ec622f2e0e3cef7d9ce28e1d4d1206}{INTERNAL}}, and \mbox{\hyperlink{ordered-map_8min_8js_a207400f40ed647015069564fa40946e1}{v}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/agent-\/base/dist/\mbox{\hyperlink{agent-base_2dist_2index_8js}{index.\+js}}\end{DoxyCompactItemize}

@@ -1,0 +1,287 @@
+\doxysection{backend/node\+\_\+modules/protobufjs/src/message.js File Reference}
+\hypertarget{protobufjs_2src_2message_8js}{}\label{protobufjs_2src_2message_8js}\index{backend/node\_modules/protobufjs/src/message.js@{backend/node\_modules/protobufjs/src/message.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{protobufjs_2src_2message_8js_a769c6394269d60ac98f8e5e6633fd934}{Message}} (properties)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{protobufjs_2src_2message_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} \mbox{\hyperlink{protobufjs_2src_2message_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2b999b964c05992f7c4361df3fcb3017}{Message}}
+\item 
+var \mbox{\hyperlink{protobufjs_2src_2message_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./util/minimal"{})
+\end{DoxyCompactItemize}
+\begin{Indent}\textbf{ Message\#\$type}\par
+{\em \doxylink{class_reference}{Reference} to the reflected type.
+
+@type \{Type\} @readonly }\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2b999b964c05992f7c4361df3fcb3017}{Message}} \mbox{\hyperlink{protobufjs_2src_2message_8js_a4826b5abffdd7db008232d8c6abca5b1}{create}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2b999b964c05992f7c4361df3fcb3017}{Message}} \mbox{\hyperlink{protobufjs_2src_2message_8js_ad51a2908cf76ae738a592e0e7938815e}{encode}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2b999b964c05992f7c4361df3fcb3017}{Message}} \mbox{\hyperlink{protobufjs_2src_2message_8js_a7a9b3f067c4546424f6850da476a013b}{encode\+Delimited}}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Message.\+decode}\par
+{\em Decodes a message of this type.
+
+@function 
+\begin{DoxyParams}{Parameters}
+{\em \{\+Reader\texorpdfstring{$\vert$}{|}\+Uint8\+Array\}} & reader Reader or buffer to decode \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{T\} Decoded message @template T extends Message$<$\+T$>$ @this Constructor$<$\+T$>$ 
+\end{DoxyReturn}
+}\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2b999b964c05992f7c4361df3fcb3017}{Message}} \mbox{\hyperlink{protobufjs_2src_2message_8js_ac4f7cf28084c67d6b1e7eed7613fdef2}{decode}}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Message.\+decode\+Delimited}\par
+{\em Decodes a message of this type preceeded by its length as a varint.
+
+@function 
+\begin{DoxyParams}{Parameters}
+{\em \{\+Reader\texorpdfstring{$\vert$}{|}\+Uint8\+Array\}} & reader Reader or buffer to decode \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{T\} Decoded message @template T extends Message$<$\+T$>$ @this Constructor$<$\+T$>$ 
+\end{DoxyReturn}
+}\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2b999b964c05992f7c4361df3fcb3017}{Message}} \mbox{\hyperlink{protobufjs_2src_2message_8js_a2cc95691d7225aa0ed77a6c81675aea3}{decode\+Delimited}}
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Message.\+verify}\par
+{\em Verifies a message of this type.
+
+@function 
+\begin{DoxyParams}{Parameters}
+{\em \{\+Object.$<$string,\texorpdfstring{$\ast$}{*}$>$\}} & message Plain object to verify \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{string\texorpdfstring{$\vert$}{|}null\} {\ttfamily null} if valid, otherwise the reason why it is not 
+\end{DoxyReturn}
+}\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2b999b964c05992f7c4361df3fcb3017}{Message}} \mbox{\hyperlink{protobufjs_2src_2message_8js_a7c285d0f7dc59418cdb927c5ad28db35}{verify}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2b999b964c05992f7c4361df3fcb3017}{Message}} \mbox{\hyperlink{protobufjs_2src_2message_8js_a420f5388d9f6b2311bd8dfb618212a19}{from\+Object}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2b999b964c05992f7c4361df3fcb3017}{Message}} \mbox{\hyperlink{protobufjs_2src_2message_8js_a4cbfa80df81d79d7348975a3de9a59d6}{to\+Object}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2b999b964c05992f7c4361df3fcb3017}{Message}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} \mbox{\hyperlink{protobufjs_2src_2message_8js_af30da088a006804c7bbeeb16c879d59f}{to\+JSON}}
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{protobufjs_2src_2message_8js_a769c6394269d60ac98f8e5e6633fd934}\index{message.js@{message.js}!Message@{Message}}
+\index{Message@{Message}!message.js@{message.js}}
+\doxysubsubsection{\texorpdfstring{Message()}{Message()}}
+{\footnotesize\ttfamily \label{protobufjs_2src_2message_8js_a769c6394269d60ac98f8e5e6633fd934} 
+function Message (\begin{DoxyParamCaption}\item[{}]{properties}{}\end{DoxyParamCaption})}
+
+Constructs a new message instance. @classdesc Abstract runtime message. @constructor 
+\begin{DoxyParams}{Parameters}
+{\em \{\+Properties$<$\+T$>$\}} & \mbox{[}properties\mbox{]} Properties to set @template T extends object = object \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}, and \mbox{\hyperlink{__base_assign_8js_a87dd2006b34e1d50c301938be11fd6fa}{keys}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{protobufjs_2src_2message_8js_a4826b5abffdd7db008232d8c6abca5b1}\index{message.js@{message.js}!create@{create}}
+\index{create@{create}!message.js@{message.js}}
+\doxysubsubsection{\texorpdfstring{create}{create}}
+{\footnotesize\ttfamily \label{protobufjs_2src_2message_8js_a4826b5abffdd7db008232d8c6abca5b1} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2b999b964c05992f7c4361df3fcb3017}{Message}} create}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{protobufjs_2src_2message_8js_a4826b5abffdd7db008232d8c6abca5b1}{create}}(properties)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ this.\$type.create(properties);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Creates a new message of this type using the specified properties. 
+\begin{DoxyParams}{Parameters}
+{\em \{\+Object.$<$string,\texorpdfstring{$\ast$}{*}$>$\}} & \mbox{[}properties\mbox{]} Properties to set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Message$<$\+T$>$\} Message instance @template T extends Message$<$\+T$>$ @this Constructor$<$\+T$>$ 
+\end{DoxyReturn}
+\Hypertarget{protobufjs_2src_2message_8js_ac4f7cf28084c67d6b1e7eed7613fdef2}\index{message.js@{message.js}!decode@{decode}}
+\index{decode@{decode}!message.js@{message.js}}
+\doxysubsubsection{\texorpdfstring{decode}{decode}}
+{\footnotesize\ttfamily \label{protobufjs_2src_2message_8js_ac4f7cf28084c67d6b1e7eed7613fdef2} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2b999b964c05992f7c4361df3fcb3017}{Message}} decode}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{protobufjs_2src_2message_8js_ac4f7cf28084c67d6b1e7eed7613fdef2}{decode}}(reader)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ this.\$type.decode(reader);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{protobufjs_2src_2message_8js_a2cc95691d7225aa0ed77a6c81675aea3}\index{message.js@{message.js}!decodeDelimited@{decodeDelimited}}
+\index{decodeDelimited@{decodeDelimited}!message.js@{message.js}}
+\doxysubsubsection{\texorpdfstring{decodeDelimited}{decodeDelimited}}
+{\footnotesize\ttfamily \label{protobufjs_2src_2message_8js_a2cc95691d7225aa0ed77a6c81675aea3} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2b999b964c05992f7c4361df3fcb3017}{Message}} decode\+Delimited}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{protobufjs_2src_2message_8js_a2cc95691d7225aa0ed77a6c81675aea3}{decodeDelimited}}(reader)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ this.\$type.decodeDelimited(reader);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{protobufjs_2src_2message_8js_ad51a2908cf76ae738a592e0e7938815e}\index{message.js@{message.js}!encode@{encode}}
+\index{encode@{encode}!message.js@{message.js}}
+\doxysubsubsection{\texorpdfstring{encode}{encode}}
+{\footnotesize\ttfamily \label{protobufjs_2src_2message_8js_ad51a2908cf76ae738a592e0e7938815e} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2b999b964c05992f7c4361df3fcb3017}{Message}} encode}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{protobufjs_2src_2message_8js_ad51a2908cf76ae738a592e0e7938815e}{encode}}(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}},\ writer)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ this.\$type.encode(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}},\ writer);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Encodes a message of this type. 
+\begin{DoxyParams}{Parameters}
+{\em \{\+T\texorpdfstring{$\vert$}{|}\+Object.$<$string,\texorpdfstring{$\ast$}{*}$>$\}} & message Message to encode \\
+\hline
+{\em \{\+Writer\}} & \mbox{[}writer\mbox{]} Writer to use \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Writer\} Writer @template T extends Message$<$\+T$>$ @this Constructor$<$\+T$>$ 
+\end{DoxyReturn}
+\Hypertarget{protobufjs_2src_2message_8js_a7a9b3f067c4546424f6850da476a013b}\index{message.js@{message.js}!encodeDelimited@{encodeDelimited}}
+\index{encodeDelimited@{encodeDelimited}!message.js@{message.js}}
+\doxysubsubsection{\texorpdfstring{encodeDelimited}{encodeDelimited}}
+{\footnotesize\ttfamily \label{protobufjs_2src_2message_8js_a7a9b3f067c4546424f6850da476a013b} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2b999b964c05992f7c4361df3fcb3017}{Message}} encode\+Delimited}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{protobufjs_2src_2message_8js_a7a9b3f067c4546424f6850da476a013b}{encodeDelimited}}(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}},\ writer)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ this.\$type.encodeDelimited(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}},\ writer);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Encodes a message of this type preceeded by its length as a varint. 
+\begin{DoxyParams}{Parameters}
+{\em \{\+T\texorpdfstring{$\vert$}{|}\+Object.$<$string,\texorpdfstring{$\ast$}{*}$>$\}} & message Message to encode \\
+\hline
+{\em \{\+Writer\}} & \mbox{[}writer\mbox{]} Writer to use \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Writer\} Writer @template T extends Message$<$\+T$>$ @this Constructor$<$\+T$>$ 
+\end{DoxyReturn}
+\Hypertarget{protobufjs_2src_2message_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}\index{message.js@{message.js}!exports@{exports}}
+\index{exports@{exports}!message.js@{message.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \label{protobufjs_2src_2message_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a84770557f73663cbea2a9e12e7d45257}{module}} exports = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2b999b964c05992f7c4361df3fcb3017}{Message}}}
+
+\Hypertarget{protobufjs_2src_2message_8js_a420f5388d9f6b2311bd8dfb618212a19}\index{message.js@{message.js}!fromObject@{fromObject}}
+\index{fromObject@{fromObject}!message.js@{message.js}}
+\doxysubsubsection{\texorpdfstring{fromObject}{fromObject}}
+{\footnotesize\ttfamily \label{protobufjs_2src_2message_8js_a420f5388d9f6b2311bd8dfb618212a19} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2b999b964c05992f7c4361df3fcb3017}{Message}} from\+Object}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{protobufjs_2src_2message_8js_a420f5388d9f6b2311bd8dfb618212a19}{fromObject}}(\textcolor{keywordtype}{object})\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ this.\$type.fromObject(\textcolor{keywordtype}{object});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Creates a new message of this type from a plain object. Also converts values to their respective internal types. 
+\begin{DoxyParams}{Parameters}
+{\em \{\+Object.$<$string,\texorpdfstring{$\ast$}{*}$>$\}} & object Plain object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{T\} Message instance @template T extends Message$<$\+T$>$ @this Constructor$<$\+T$>$ 
+\end{DoxyReturn}
+\Hypertarget{protobufjs_2src_2message_8js_ae2475e10618961c050dcba04e8c42331}\index{message.js@{message.js}!strict@{strict}}
+\index{strict@{strict}!message.js@{message.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{protobufjs_2src_2message_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+
+\Hypertarget{protobufjs_2src_2message_8js_af30da088a006804c7bbeeb16c879d59f}\index{message.js@{message.js}!toJSON@{toJSON}}
+\index{toJSON@{toJSON}!message.js@{message.js}}
+\doxysubsubsection{\texorpdfstring{toJSON}{toJSON}}
+{\footnotesize\ttfamily \label{protobufjs_2src_2message_8js_af30da088a006804c7bbeeb16c879d59f} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2b999b964c05992f7c4361df3fcb3017}{Message}} \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af72db6499f8cf0582958ab32fc3c7032}{prototype}} to\+JSON}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{protobufjs_2src_2message_8js_af30da088a006804c7bbeeb16c879d59f}{toJSON}}()\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ this.\$type.toObject(\textcolor{keyword}{this},\ \mbox{\hyperlink{protobufjs_2src_2message_8js_a8f5b2e09d5197e9d28f6032dff542d44}{util}}.toJSONOptions);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Converts this message to JSON. \begin{DoxyReturn}{Returns}
+\{Object.\texorpdfstring{$<$}{<}string,\texorpdfstring{$\ast$}{*}\texorpdfstring{$>$}{>}\} JSON object 
+\end{DoxyReturn}
+\Hypertarget{protobufjs_2src_2message_8js_a4cbfa80df81d79d7348975a3de9a59d6}\index{message.js@{message.js}!toObject@{toObject}}
+\index{toObject@{toObject}!message.js@{message.js}}
+\doxysubsubsection{\texorpdfstring{toObject}{toObject}}
+{\footnotesize\ttfamily \label{protobufjs_2src_2message_8js_a4cbfa80df81d79d7348975a3de9a59d6} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2b999b964c05992f7c4361df3fcb3017}{Message}} to\+Object}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{protobufjs_2src_2message_8js_a4cbfa80df81d79d7348975a3de9a59d6}{toObject}}(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}},\ options)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ this.\$type.toObject(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}},\ options);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Creates a plain object from a message of this type. Also converts values to other types if specified. 
+\begin{DoxyParams}{Parameters}
+{\em \{\+T\}} & message Message instance \\
+\hline
+{\em \{\+IConversion\+Options\}} & \mbox{[}options\mbox{]} Conversion options \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Object.\texorpdfstring{$<$}{<}string,\texorpdfstring{$\ast$}{*}\texorpdfstring{$>$}{>}\} Plain object @template T extends Message$<$\+T$>$ @this Constructor$<$\+T$>$ 
+\end{DoxyReturn}
+\Hypertarget{protobufjs_2src_2message_8js_a8f5b2e09d5197e9d28f6032dff542d44}\index{message.js@{message.js}!util@{util}}
+\index{util@{util}!message.js@{message.js}}
+\doxysubsubsection{\texorpdfstring{util}{util}}
+{\footnotesize\ttfamily \label{protobufjs_2src_2message_8js_a8f5b2e09d5197e9d28f6032dff542d44} 
+var util = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}./util/minimal"{})}
+
+\Hypertarget{protobufjs_2src_2message_8js_a7c285d0f7dc59418cdb927c5ad28db35}\index{message.js@{message.js}!verify@{verify}}
+\index{verify@{verify}!message.js@{message.js}}
+\doxysubsubsection{\texorpdfstring{verify}{verify}}
+{\footnotesize\ttfamily \label{protobufjs_2src_2message_8js_a7c285d0f7dc59418cdb927c5ad28db35} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2b999b964c05992f7c4361df3fcb3017}{Message}} verify}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}\ \mbox{\hyperlink{protobufjs_2src_2message_8js_a7c285d0f7dc59418cdb927c5ad28db35}{verify}}(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}})\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ this.\$type.verify(\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_ad031ac2c2bcd5e0fe9c6b67fc309acd4}{message}});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}

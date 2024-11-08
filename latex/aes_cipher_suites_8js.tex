@@ -1,0 +1,269 @@
+\doxysection{backend/node\+\_\+modules/node-\/forge/lib/aes\+Cipher\+Suites.js File Reference}
+\hypertarget{aes_cipher_suites_8js}{}\label{aes_cipher_suites_8js}\index{backend/node\_modules/node-\/forge/lib/aesCipherSuites.js@{backend/node\_modules/node-\/forge/lib/aesCipherSuites.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{aes_cipher_suites_8js_a770527991c33d0abf61fd3311ccce6ff}{init\+Connection\+State}} (\mbox{\hyperlink{asynckit_2lib_2state_8js_a7e1b0ba367facd663d59372bd204ea01}{state}}, \mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}, sp)
+\item 
+function \mbox{\hyperlink{aes_cipher_suites_8js_abb3fb560c31af89d376956fee64c7a71}{encrypt\+\_\+aes\+\_\+cbc\+\_\+sha1}} (record, \mbox{\hyperlink{ordered-map_8min_8js_ad9a7d92cb87932d25187fdec3ba1b621}{s}})
+\item 
+function \mbox{\hyperlink{aes_cipher_suites_8js_abd7c4c18ce009b4dd57441ed74fdad0b}{encrypt\+\_\+aes\+\_\+cbc\+\_\+sha1\+\_\+padding}} (block\+Size, input, \mbox{\hyperlink{browser_2runtime_2decrypt_8js_afaaeea0da230d94865a0b9c048831b1e}{decrypt}})
+\item 
+function \mbox{\hyperlink{aes_cipher_suites_8js_ad1d89a6cac047f554de6f803a7fcd7c6}{decrypt\+\_\+aes\+\_\+cbc\+\_\+sha1\+\_\+padding}} (block\+Size, output, \mbox{\hyperlink{browser_2runtime_2decrypt_8js_afaaeea0da230d94865a0b9c048831b1e}{decrypt}})
+\item 
+function \mbox{\hyperlink{aes_cipher_suites_8js_ae74b1bbb0a351e2243871aed4ec71bb5}{decrypt\+\_\+aes\+\_\+cbc\+\_\+sha1}} (record, \mbox{\hyperlink{ordered-map_8min_8js_ad9a7d92cb87932d25187fdec3ba1b621}{s}})
+\item 
+function \mbox{\hyperlink{aes_cipher_suites_8js_a28b4d204cf6dc8ae15d902b88259b986}{compare\+Macs}} (key, mac1, mac2)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{aes_cipher_suites_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./forge\textquotesingle{})
+\item 
+var \mbox{\hyperlink{aes_cipher_suites_8js_a47139662462fb0125c5a417df00a7c88}{tls}} = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{module.\+exports}} = forge.\+tls
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} \mbox{\hyperlink{aes_cipher_suites_8js_ab4a285c2c83f2aacba1d56ae4e33ec6e}{Cipher\+Suites}} \mbox{[}\textquotesingle{}TLS\+\_\+\+RSA\+\_\+\+WITH\+\_\+\+AES\+\_\+128\+\_\+\+CBC\+\_\+\+SHA\textquotesingle{}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{aes_cipher_suites_8js_a28b4d204cf6dc8ae15d902b88259b986}\index{aesCipherSuites.js@{aesCipherSuites.js}!compareMacs@{compareMacs}}
+\index{compareMacs@{compareMacs}!aesCipherSuites.js@{aesCipherSuites.js}}
+\doxysubsubsection{\texorpdfstring{compareMacs()}{compareMacs()}}
+{\footnotesize\ttfamily \label{aes_cipher_suites_8js_a28b4d204cf6dc8ae15d902b88259b986} 
+function compare\+Macs (\begin{DoxyParamCaption}\item[{}]{key}{, }\item[{}]{mac1}{, }\item[{}]{mac2}{}\end{DoxyParamCaption})}
+
+Safely compare two MACs. This function will compare two MACs in a way that protects against timing attacks.
+
+TODO\+: Expose elsewhere as a utility API.
+
+See\+: \href{https://www.nccgroup.trust/us/about-us/newsroom-and-events/blog/2011/february/double-hmac-verification/}{\texttt{ https\+://www.\+nccgroup.\+trust/us/about-\/us/newsroom-\/and-\/events/blog/2011/february/double-\/hmac-\/verification/}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & the MAC key to use. \\
+\hline
+{\em mac1} & as a binary-\/encoded string of bytes. \\
+\hline
+{\em mac2} & as a binary-\/encoded string of bytes.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the MACs are the same, false if not. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{aes_cipher_suites_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}, and \mbox{\hyperlink{hmac_8js_a01268bca9c8ec878cbb5712204e3533e}{hmac}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{aes_cipher_suites_8js_a28b4d204cf6dc8ae15d902b88259b986_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{aes_cipher_suites_8js_ae74b1bbb0a351e2243871aed4ec71bb5}\index{aesCipherSuites.js@{aesCipherSuites.js}!decrypt\_aes\_cbc\_sha1@{decrypt\_aes\_cbc\_sha1}}
+\index{decrypt\_aes\_cbc\_sha1@{decrypt\_aes\_cbc\_sha1}!aesCipherSuites.js@{aesCipherSuites.js}}
+\doxysubsubsection{\texorpdfstring{decrypt\_aes\_cbc\_sha1()}{decrypt\_aes\_cbc\_sha1()}}
+{\footnotesize\ttfamily \label{aes_cipher_suites_8js_ae74b1bbb0a351e2243871aed4ec71bb5} 
+function decrypt\+\_\+aes\+\_\+cbc\+\_\+sha1 (\begin{DoxyParamCaption}\item[{}]{record}{, }\item[{}]{s}{}\end{DoxyParamCaption})}
+
+Decrypts a TLSCipher\+Text record into a TLSCompressed record using AES in CBC mode.
+
+
+\begin{DoxyParams}{Parameters}
+{\em record} & the TLSCipher\+Text record to decrypt. \\
+\hline
+{\em s} & the Connection\+State to use.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true on success, false on failure. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{cipher_modes_8js_ad3529e6b62fffcc9799ee186212e4b5a}{cipher}}, \mbox{\hyperlink{aes_cipher_suites_8js_a28b4d204cf6dc8ae15d902b88259b986}{compare\+Macs()}}, \mbox{\hyperlink{aes_cipher_suites_8js_ad1d89a6cac047f554de6f803a7fcd7c6}{decrypt\+\_\+aes\+\_\+cbc\+\_\+sha1\+\_\+padding()}}, \mbox{\hyperlink{aes_cipher_suites_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}, \mbox{\hyperlink{ordered-map_8min_8js_ad9a7d92cb87932d25187fdec3ba1b621}{s}}, and \mbox{\hyperlink{aes_cipher_suites_8js_a47139662462fb0125c5a417df00a7c88}{tls}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{aes_cipher_suites_8js_ae74b1bbb0a351e2243871aed4ec71bb5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{aes_cipher_suites_8js_ae74b1bbb0a351e2243871aed4ec71bb5_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{aes_cipher_suites_8js_ad1d89a6cac047f554de6f803a7fcd7c6}\index{aesCipherSuites.js@{aesCipherSuites.js}!decrypt\_aes\_cbc\_sha1\_padding@{decrypt\_aes\_cbc\_sha1\_padding}}
+\index{decrypt\_aes\_cbc\_sha1\_padding@{decrypt\_aes\_cbc\_sha1\_padding}!aesCipherSuites.js@{aesCipherSuites.js}}
+\doxysubsubsection{\texorpdfstring{decrypt\_aes\_cbc\_sha1\_padding()}{decrypt\_aes\_cbc\_sha1\_padding()}}
+{\footnotesize\ttfamily \label{aes_cipher_suites_8js_ad1d89a6cac047f554de6f803a7fcd7c6} 
+function decrypt\+\_\+aes\+\_\+cbc\+\_\+sha1\+\_\+padding (\begin{DoxyParamCaption}\item[{}]{block\+Size}{, }\item[{}]{output}{, }\item[{}]{decrypt}{}\end{DoxyParamCaption})}
+
+Handles padding for aes\+\_\+cbc\+\_\+sha1 in decrypt mode.
+
+
+\begin{DoxyParams}{Parameters}
+{\em block\+Size} & the block size. \\
+\hline
+{\em output} & the output buffer. \\
+\hline
+{\em decrypt} & true in decrypt mode, false in encrypt mode.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true on success, false on failure. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{browser_2runtime_2decrypt_8js_afaaeea0da230d94865a0b9c048831b1e}{decrypt}}, and \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{aes_cipher_suites_8js_ad1d89a6cac047f554de6f803a7fcd7c6_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{aes_cipher_suites_8js_abb3fb560c31af89d376956fee64c7a71}\index{aesCipherSuites.js@{aesCipherSuites.js}!encrypt\_aes\_cbc\_sha1@{encrypt\_aes\_cbc\_sha1}}
+\index{encrypt\_aes\_cbc\_sha1@{encrypt\_aes\_cbc\_sha1}!aesCipherSuites.js@{aesCipherSuites.js}}
+\doxysubsubsection{\texorpdfstring{encrypt\_aes\_cbc\_sha1()}{encrypt\_aes\_cbc\_sha1()}}
+{\footnotesize\ttfamily \label{aes_cipher_suites_8js_abb3fb560c31af89d376956fee64c7a71} 
+function encrypt\+\_\+aes\+\_\+cbc\+\_\+sha1 (\begin{DoxyParamCaption}\item[{}]{record}{, }\item[{}]{s}{}\end{DoxyParamCaption})}
+
+Encrypts the TLSCompressed record into a TLSCipher\+Text record using AES in CBC mode.
+
+
+\begin{DoxyParams}{Parameters}
+{\em record} & the TLSCompressed record to encrypt. \\
+\hline
+{\em s} & the Connection\+State to use.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true on success, false on failure. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{cipher_modes_8js_ad3529e6b62fffcc9799ee186212e4b5a}{cipher}}, \mbox{\hyperlink{aes_cipher_suites_8js_abd7c4c18ce009b4dd57441ed74fdad0b}{encrypt\+\_\+aes\+\_\+cbc\+\_\+sha1\+\_\+padding()}}, \mbox{\hyperlink{aes_cipher_suites_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}, \mbox{\hyperlink{ordered-map_8min_8js_ad9a7d92cb87932d25187fdec3ba1b621}{s}}, and \mbox{\hyperlink{aes_cipher_suites_8js_a47139662462fb0125c5a417df00a7c88}{tls}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{aes_cipher_suites_8js_abb3fb560c31af89d376956fee64c7a71_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{aes_cipher_suites_8js_abb3fb560c31af89d376956fee64c7a71_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{aes_cipher_suites_8js_abd7c4c18ce009b4dd57441ed74fdad0b}\index{aesCipherSuites.js@{aesCipherSuites.js}!encrypt\_aes\_cbc\_sha1\_padding@{encrypt\_aes\_cbc\_sha1\_padding}}
+\index{encrypt\_aes\_cbc\_sha1\_padding@{encrypt\_aes\_cbc\_sha1\_padding}!aesCipherSuites.js@{aesCipherSuites.js}}
+\doxysubsubsection{\texorpdfstring{encrypt\_aes\_cbc\_sha1\_padding()}{encrypt\_aes\_cbc\_sha1\_padding()}}
+{\footnotesize\ttfamily \label{aes_cipher_suites_8js_abd7c4c18ce009b4dd57441ed74fdad0b} 
+function encrypt\+\_\+aes\+\_\+cbc\+\_\+sha1\+\_\+padding (\begin{DoxyParamCaption}\item[{}]{block\+Size}{, }\item[{}]{input}{, }\item[{}]{decrypt}{}\end{DoxyParamCaption})}
+
+Handles padding for aes\+\_\+cbc\+\_\+sha1 in encrypt mode.
+
+
+\begin{DoxyParams}{Parameters}
+{\em block\+Size} & the block size. \\
+\hline
+{\em input} & the input buffer. \\
+\hline
+{\em decrypt} & true in decrypt mode, false in encrypt mode.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true on success, false on failure. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{browser_2runtime_2decrypt_8js_afaaeea0da230d94865a0b9c048831b1e}{decrypt}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{aes_cipher_suites_8js_abd7c4c18ce009b4dd57441ed74fdad0b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{aes_cipher_suites_8js_a770527991c33d0abf61fd3311ccce6ff}\index{aesCipherSuites.js@{aesCipherSuites.js}!initConnectionState@{initConnectionState}}
+\index{initConnectionState@{initConnectionState}!aesCipherSuites.js@{aesCipherSuites.js}}
+\doxysubsubsection{\texorpdfstring{initConnectionState()}{initConnectionState()}}
+{\footnotesize\ttfamily \label{aes_cipher_suites_8js_a770527991c33d0abf61fd3311ccce6ff} 
+function init\+Connection\+State (\begin{DoxyParamCaption}\item[{}]{state}{, }\item[{}]{c}{, }\item[{}]{sp}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{ordered-map_8min_8js_abce695e0af988ece0826d9ad59b8160d}{c}}, \mbox{\hyperlink{cipher_modes_8js_ad3529e6b62fffcc9799ee186212e4b5a}{cipher}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_af46081dcabb4da1ee7ca00228506bcb7}{client}}, \mbox{\hyperlink{aes_cipher_suites_8js_ae74b1bbb0a351e2243871aed4ec71bb5}{decrypt\+\_\+aes\+\_\+cbc\+\_\+sha1()}}, \mbox{\hyperlink{aes_cipher_suites_8js_abb3fb560c31af89d376956fee64c7a71}{encrypt\+\_\+aes\+\_\+cbc\+\_\+sha1()}}, \mbox{\hyperlink{aes_cipher_suites_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}{forge}}, \mbox{\hyperlink{agent-base_2node__modules_2debug_2src_2node_8js_a1dc0aa163de2e7161fbb52b60824b4c6}{init}}, \mbox{\hyperlink{asynckit_2lib_2state_8js_a7e1b0ba367facd663d59372bd204ea01}{state()}}, and \mbox{\hyperlink{aes_cipher_suites_8js_a47139662462fb0125c5a417df00a7c88}{tls}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{aes_cipher_suites_8js_a770527991c33d0abf61fd3311ccce6ff_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{aes_cipher_suites_8js_ab4a285c2c83f2aacba1d56ae4e33ec6e}\index{aesCipherSuites.js@{aesCipherSuites.js}!CipherSuites@{CipherSuites}}
+\index{CipherSuites@{CipherSuites}!aesCipherSuites.js@{aesCipherSuites.js}}
+\doxysubsubsection{\texorpdfstring{CipherSuites}{CipherSuites}}
+{\footnotesize\ttfamily \label{aes_cipher_suites_8js_ab4a285c2c83f2aacba1d56ae4e33ec6e} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a47139662462fb0125c5a417df00a7c88}{tls}} Cipher\+Suites}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ id:\ [0x00,\ 0x2f],}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}:\ \textcolor{stringliteral}{'TLS\_RSA\_WITH\_AES\_128\_CBC\_SHA'},}
+\DoxyCodeLine{\ \ initSecurityParameters:\ \textcolor{keyword}{function}(sp)\ \{}
+\DoxyCodeLine{\ \ \ \ sp.bulk\_cipher\_algorithm\ =\ \mbox{\hyperlink{aes_cipher_suites_8js_a47139662462fb0125c5a417df00a7c88}{tls}}.BulkCipherAlgorithm.aes;}
+\DoxyCodeLine{\ \ \ \ sp.cipher\_type\ =\ \mbox{\hyperlink{aes_cipher_suites_8js_a47139662462fb0125c5a417df00a7c88}{tls}}.CipherType.block;}
+\DoxyCodeLine{\ \ \ \ sp.enc\_key\_length\ =\ 16;}
+\DoxyCodeLine{\ \ \ \ sp.block\_length\ =\ 16;}
+\DoxyCodeLine{\ \ \ \ sp.fixed\_iv\_length\ =\ 16;}
+\DoxyCodeLine{\ \ \ \ sp.record\_iv\_length\ =\ 16;}
+\DoxyCodeLine{\ \ \ \ sp.mac\_algorithm\ =\ \mbox{\hyperlink{aes_cipher_suites_8js_a47139662462fb0125c5a417df00a7c88}{tls}}.MACAlgorithm.hmac\_sha1;}
+\DoxyCodeLine{\ \ \ \ sp.mac\_length\ =\ 20;}
+\DoxyCodeLine{\ \ \ \ sp.mac\_key\_length\ =\ 20;}
+\DoxyCodeLine{\ \ \},}
+\DoxyCodeLine{\ \ \mbox{\hyperlink{aes_cipher_suites_8js_a770527991c33d0abf61fd3311ccce6ff}{initConnectionState}}:\ \mbox{\hyperlink{aes_cipher_suites_8js_a770527991c33d0abf61fd3311ccce6ff}{initConnectionState}}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Supported cipher suites. \Hypertarget{aes_cipher_suites_8js_ab4dbef01e35b8e6d06087c0542ba9e2c}\index{aesCipherSuites.js@{aesCipherSuites.js}!forge@{forge}}
+\index{forge@{forge}!aesCipherSuites.js@{aesCipherSuites.js}}
+\doxysubsubsection{\texorpdfstring{forge}{forge}}
+{\footnotesize\ttfamily \label{aes_cipher_suites_8js_ab4dbef01e35b8e6d06087c0542ba9e2c} 
+var forge = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}./forge\textquotesingle{})}
+
+\doxylink{class_a}{A} Javascript implementation of AES Cipher Suites for TLS.
+
+\begin{DoxyAuthor}{Author}
+Dave Longley
+\end{DoxyAuthor}
+Copyright (c) 2009-\/2015 Digital Bazaar, Inc. \Hypertarget{aes_cipher_suites_8js_a47139662462fb0125c5a417df00a7c88}\index{aesCipherSuites.js@{aesCipherSuites.js}!tls@{tls}}
+\index{tls@{tls}!aesCipherSuites.js@{aesCipherSuites.js}}
+\doxysubsubsection{\texorpdfstring{tls}{tls}}
+{\footnotesize\ttfamily \label{aes_cipher_suites_8js_a47139662462fb0125c5a417df00a7c88} 
+var tls = \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{module.\+exports}} = forge.\+tls}
+

@@ -1,0 +1,94 @@
+\doxysection{backend/node\+\_\+modules/@grpc/grpc-\/js/build/src/backoff-\/timeout.js File Reference}
+\hypertarget{backoff-timeout_8js}{}\label{backoff-timeout_8js}\index{backend/node\_modules/"@grpc/grpc-\/js/build/src/backoff-\/timeout.js@{backend/node\_modules/"@grpc/grpc-\/js/build/src/backoff-\/timeout.js}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_backoff_timeout}{Backoff\+Timeout}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{backoff-timeout_8js_a8b7d55e424a88c0859a76ebc36bd0d06}{uniform\+Random}} (\mbox{\hyperlink{lodash_2core_8js_a3175572c0a46eb462efa50b61e0423c9}{min}}, \mbox{\hyperlink{implementation_8js_a2af6481e8d02218064702cc796ef97ef}{max}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{backoff-timeout_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{backoff-timeout_8js_a20764527cfc14dca940439f31912c6a7}{Backoff\+Timeout}} = void 0
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{backoff-timeout_8js_a6bf2802b4a8ac21b1aa965a2d6ed747d}{INITIAL\+\_\+\+BACKOFF\+\_\+\+MS}} = 1000
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{backoff-timeout_8js_afa96282a03d8af93ee61f32f048cbf75}{BACKOFF\+\_\+\+MULTIPLIER}} = 1.\+6
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{backoff-timeout_8js_a7c8a2434d4f784e45a849dd193ec84a9}{MAX\+\_\+\+BACKOFF\+\_\+\+MS}} = 120000
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{backoff-timeout_8js_a27d2e0b1d810e1190b205c0b02945b02}{BACKOFF\+\_\+\+JITTER}} = 0.\+2
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{backoff-timeout_8js_a8b7d55e424a88c0859a76ebc36bd0d06}\index{backoff-\/timeout.js@{backoff-\/timeout.js}!uniformRandom@{uniformRandom}}
+\index{uniformRandom@{uniformRandom}!backoff-\/timeout.js@{backoff-\/timeout.js}}
+\doxysubsubsection{\texorpdfstring{uniformRandom()}{uniformRandom()}}
+{\footnotesize\ttfamily \label{backoff-timeout_8js_a8b7d55e424a88c0859a76ebc36bd0d06} 
+function uniform\+Random (\begin{DoxyParamCaption}\item[{}]{min}{, }\item[{}]{max}{}\end{DoxyParamCaption})}
+
+Get a number uniformly at random in the range \mbox{[}min, max) 
+\begin{DoxyParams}{Parameters}
+{\em min} & \\
+\hline
+{\em max} & \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{implementation_8js_a2af6481e8d02218064702cc796ef97ef}{max}}, and \mbox{\hyperlink{lodash_2core_8js_a3175572c0a46eb462efa50b61e0423c9}{min}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{backoff-timeout_8js_a8b7d55e424a88c0859a76ebc36bd0d06_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{backoff-timeout_8js_a27d2e0b1d810e1190b205c0b02945b02}\index{backoff-\/timeout.js@{backoff-\/timeout.js}!BACKOFF\_JITTER@{BACKOFF\_JITTER}}
+\index{BACKOFF\_JITTER@{BACKOFF\_JITTER}!backoff-\/timeout.js@{backoff-\/timeout.js}}
+\doxysubsubsection{\texorpdfstring{BACKOFF\_JITTER}{BACKOFF\_JITTER}}
+{\footnotesize\ttfamily \label{backoff-timeout_8js_a27d2e0b1d810e1190b205c0b02945b02} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} BACKOFF\+\_\+\+JITTER = 0.\+2}
+
+\Hypertarget{backoff-timeout_8js_afa96282a03d8af93ee61f32f048cbf75}\index{backoff-\/timeout.js@{backoff-\/timeout.js}!BACKOFF\_MULTIPLIER@{BACKOFF\_MULTIPLIER}}
+\index{BACKOFF\_MULTIPLIER@{BACKOFF\_MULTIPLIER}!backoff-\/timeout.js@{backoff-\/timeout.js}}
+\doxysubsubsection{\texorpdfstring{BACKOFF\_MULTIPLIER}{BACKOFF\_MULTIPLIER}}
+{\footnotesize\ttfamily \label{backoff-timeout_8js_afa96282a03d8af93ee61f32f048cbf75} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} BACKOFF\+\_\+\+MULTIPLIER = 1.\+6}
+
+\Hypertarget{backoff-timeout_8js_a20764527cfc14dca940439f31912c6a7}\index{backoff-\/timeout.js@{backoff-\/timeout.js}!BackoffTimeout@{BackoffTimeout}}
+\index{BackoffTimeout@{BackoffTimeout}!backoff-\/timeout.js@{backoff-\/timeout.js}}
+\doxysubsubsection{\texorpdfstring{BackoffTimeout}{BackoffTimeout}}
+{\footnotesize\ttfamily \label{backoff-timeout_8js_a20764527cfc14dca940439f31912c6a7} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} Backoff\+Timeout = void 0}
+
+\Hypertarget{backoff-timeout_8js_a6bf2802b4a8ac21b1aa965a2d6ed747d}\index{backoff-\/timeout.js@{backoff-\/timeout.js}!INITIAL\_BACKOFF\_MS@{INITIAL\_BACKOFF\_MS}}
+\index{INITIAL\_BACKOFF\_MS@{INITIAL\_BACKOFF\_MS}!backoff-\/timeout.js@{backoff-\/timeout.js}}
+\doxysubsubsection{\texorpdfstring{INITIAL\_BACKOFF\_MS}{INITIAL\_BACKOFF\_MS}}
+{\footnotesize\ttfamily \label{backoff-timeout_8js_a6bf2802b4a8ac21b1aa965a2d6ed747d} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} INITIAL\+\_\+\+BACKOFF\+\_\+\+MS = 1000}
+
+\Hypertarget{backoff-timeout_8js_a7c8a2434d4f784e45a849dd193ec84a9}\index{backoff-\/timeout.js@{backoff-\/timeout.js}!MAX\_BACKOFF\_MS@{MAX\_BACKOFF\_MS}}
+\index{MAX\_BACKOFF\_MS@{MAX\_BACKOFF\_MS}!backoff-\/timeout.js@{backoff-\/timeout.js}}
+\doxysubsubsection{\texorpdfstring{MAX\_BACKOFF\_MS}{MAX\_BACKOFF\_MS}}
+{\footnotesize\ttfamily \label{backoff-timeout_8js_a7c8a2434d4f784e45a849dd193ec84a9} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} MAX\+\_\+\+BACKOFF\+\_\+\+MS = 120000}
+
+\Hypertarget{backoff-timeout_8js_ae2475e10618961c050dcba04e8c42331}\index{backoff-\/timeout.js@{backoff-\/timeout.js}!strict@{strict}}
+\index{strict@{strict}!backoff-\/timeout.js@{backoff-\/timeout.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{backoff-timeout_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+

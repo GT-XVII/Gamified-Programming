@@ -1,0 +1,340 @@
+\doxysection{backend/node\+\_\+modules/@grpc/proto-\/loader/build/bin/proto-\/loader-\/gen-\/types.js File Reference}
+\hypertarget{proto-loader-gen-types_8js}{}\label{proto-loader-gen-types_8js}\index{backend/node\_modules/"@grpc/proto-\/loader/build/bin/proto-\/loader-\/gen-\/types.js@{backend/node\_modules/"@grpc/proto-\/loader/build/bin/proto-\/loader-\/gen-\/types.js}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_text_formatter}{Text\+Formatter}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{proto-loader-gen-types_8js_a027752ae00ceca073292cd7b69a3b257}{compare\+Name}} (x, \mbox{\hyperlink{agent-base_2node__modules_2ms_2index_8js_a0b31909b1cae9ed1db6ff042057fce60}{y}})
+\item 
+function \mbox{\hyperlink{proto-loader-gen-types_8js_add870a3a6b6070c98366d1a8eb1cefdd}{is\+Namespace\+Base}} (\mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}})
+\item 
+function \mbox{\hyperlink{proto-loader-gen-types_8js_af9635fb427e87af0942c8c7c297475c5}{strip\+Leading\+Period}} (\mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}})
+\item 
+function \mbox{\hyperlink{proto-loader-gen-types_8js_af49f2403291997467f8fe0ebb19be074}{get\+Import\+Path}} (to)
+\item 
+function \mbox{\hyperlink{proto-loader-gen-types_8js_a3251469101d4e519110ccb6c4f6b8c9e}{get\+Path}} (to)
+\item 
+function \mbox{\hyperlink{proto-loader-gen-types_8js_a9d3d725dd8425a79217e8eff187da748}{get\+Path\+To\+Root}} (from)
+\item 
+function \mbox{\hyperlink{proto-loader-gen-types_8js_a9d1a34be2fb733ccacdf998450c109eb}{get\+Relative\+Import\+Path}} (from, to)
+\item 
+function \mbox{\hyperlink{proto-loader-gen-types_8js_ae20b948944f30244583cac0629af139d}{get\+Type\+Interface\+Name}} (\mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type}})
+\item 
+function \mbox{\hyperlink{proto-loader-gen-types_8js_a9528546dbc161447ab6921596117da01}{get\+Import\+Line}} (dependency, from, options)
+\item 
+function \mbox{\hyperlink{proto-loader-gen-types_8js_aa83b764e0922730eb324bfa24560fc5b}{get\+Child\+Messages\+And\+Enums}} (namespace)
+\item 
+function \mbox{\hyperlink{proto-loader-gen-types_8js_aa63353dc272e5dbeba360a2a9264f51a}{format\+Comment}} (formatter, comment, options)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{proto-loader-gen-types_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{proto-loader-gen-types_8js_a2e47e1f004220675d0fa39b8255bd78f}{fs}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}fs"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{proto-loader-gen-types_8js_a1fdc7709faf62dce60620fb3f9d3453c}{path}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}path"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{proto-loader-gen-types_8js_a93e8b6f8390b66c5315aa2677381cdd6}{Protobuf}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}protobufjs"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{proto-loader-gen-types_8js_ad733adac447ee26e6037fb4cb9604970}{yargs}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}yargs"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{proto-loader-gen-types_8js_a20ed57d9fa2e09f6625d0626929148fd}{camel\+Case}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}lodash.\+camelcase"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{proto-loader-gen-types_8js_a6af3fa6e24c6a46faf4552f3a2ad8783}{util\+\_\+1}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../src/util"{})
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{proto-loader-gen-types_8js_a485a705a5d4c85e6b267dbcb54ea7ab2}{template\+Str}} = "{}\%s"{}
+\item 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} \mbox{\hyperlink{proto-loader-gen-types_8js_a723c30f3d5e105cd5a684044a21fafc9}{use\+Name\+Fmter}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{proto-loader-gen-types_8js_a027752ae00ceca073292cd7b69a3b257}\index{proto-\/loader-\/gen-\/types.js@{proto-\/loader-\/gen-\/types.js}!compareName@{compareName}}
+\index{compareName@{compareName}!proto-\/loader-\/gen-\/types.js@{proto-\/loader-\/gen-\/types.js}}
+\doxysubsubsection{\texorpdfstring{compareName()}{compareName()}}
+{\footnotesize\ttfamily \label{proto-loader-gen-types_8js_a027752ae00ceca073292cd7b69a3b257} 
+function compare\+Name (\begin{DoxyParamCaption}\item[{}]{x}{, }\item[{}]{y}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{agent-base_2node__modules_2ms_2index_8js_a0b31909b1cae9ed1db6ff042057fce60}{y}}.
+
+\Hypertarget{proto-loader-gen-types_8js_aa63353dc272e5dbeba360a2a9264f51a}\index{proto-\/loader-\/gen-\/types.js@{proto-\/loader-\/gen-\/types.js}!formatComment@{formatComment}}
+\index{formatComment@{formatComment}!proto-\/loader-\/gen-\/types.js@{proto-\/loader-\/gen-\/types.js}}
+\doxysubsubsection{\texorpdfstring{formatComment()}{formatComment()}}
+{\footnotesize\ttfamily \label{proto-loader-gen-types_8js_aa63353dc272e5dbeba360a2a9264f51a} 
+function format\+Comment (\begin{DoxyParamCaption}\item[{}]{formatter}{, }\item[{}]{comment}{, }\item[{}]{options}{}\end{DoxyParamCaption})}
+
+This is a list of methods that are exist in the generic \doxylink{class_client}{Client} class in the g\+RPC libraries. Type\+Script has a problem with methods in subclasses with the same names as methods in the superclass, but with mismatched APIs. So, we avoid generating methods with these names in the service client interfaces. We always generate two service client methods per service method\+: one camel cased, and one with the original casing. So we will still generate one service client method for any conflicting name.
+
+Technically, at runtime conflicting name in the service client method actually shadows the original method, but Type\+Script does not have a good way to represent that. So this change is not 100\% accurate, but it gets the generated code to compile.
+
+This is just a list of the methods in the \doxylink{class_client}{Client} class definitions in \href{mailto:grpc@1.24.11}{\texttt{ grpc@1.\+24.\+11}} and @grpc/grpc-\/js@1.\+4.\+0.\Hypertarget{proto-loader-gen-types_8js_aa83b764e0922730eb324bfa24560fc5b}\index{proto-\/loader-\/gen-\/types.js@{proto-\/loader-\/gen-\/types.js}!getChildMessagesAndEnums@{getChildMessagesAndEnums}}
+\index{getChildMessagesAndEnums@{getChildMessagesAndEnums}!proto-\/loader-\/gen-\/types.js@{proto-\/loader-\/gen-\/types.js}}
+\doxysubsubsection{\texorpdfstring{getChildMessagesAndEnums()}{getChildMessagesAndEnums()}}
+{\footnotesize\ttfamily \label{proto-loader-gen-types_8js_aa83b764e0922730eb324bfa24560fc5b} 
+function get\+Child\+Messages\+And\+Enums (\begin{DoxyParamCaption}\item[{}]{namespace}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{proto-loader-gen-types_8js_aa83b764e0922730eb324bfa24560fc5b}{get\+Child\+Messages\+And\+Enums()}}, \mbox{\hyperlink{proto-loader-gen-types_8js_add870a3a6b6070c98366d1a8eb1cefdd}{is\+Namespace\+Base()}}, \mbox{\hyperlink{cjs_2internal_2observable_2of_8js_afd9e33601da8812842c6288b48c17f0a}{of}}, and \mbox{\hyperlink{proto-loader-gen-types_8js_a93e8b6f8390b66c5315aa2677381cdd6}{Protobuf}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{proto-loader-gen-types_8js_aa83b764e0922730eb324bfa24560fc5b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{proto-loader-gen-types_8js_aa83b764e0922730eb324bfa24560fc5b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{proto-loader-gen-types_8js_a9528546dbc161447ab6921596117da01}\index{proto-\/loader-\/gen-\/types.js@{proto-\/loader-\/gen-\/types.js}!getImportLine@{getImportLine}}
+\index{getImportLine@{getImportLine}!proto-\/loader-\/gen-\/types.js@{proto-\/loader-\/gen-\/types.js}}
+\doxysubsubsection{\texorpdfstring{getImportLine()}{getImportLine()}}
+{\footnotesize\ttfamily \label{proto-loader-gen-types_8js_a9528546dbc161447ab6921596117da01} 
+function get\+Import\+Line (\begin{DoxyParamCaption}\item[{}]{dependency}{, }\item[{}]{from}{, }\item[{}]{options}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a03bc482fa981a581f65949fe1cc450a5}{Client}}, \mbox{\hyperlink{proto-loader-gen-types_8js_af49f2403291997467f8fe0ebb19be074}{get\+Import\+Path()}}, \mbox{\hyperlink{proto-loader-gen-types_8js_a9d1a34be2fb733ccacdf998450c109eb}{get\+Relative\+Import\+Path()}}, \mbox{\hyperlink{proto-loader-gen-types_8js_ae20b948944f30244583cac0629af139d}{get\+Type\+Interface\+Name()}}, \mbox{\hyperlink{proto-loader-gen-types_8js_a93e8b6f8390b66c5315aa2677381cdd6}{Protobuf}}, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type}}, \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}, and \mbox{\hyperlink{proto-loader-gen-types_8js_a723c30f3d5e105cd5a684044a21fafc9}{use\+Name\+Fmter}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{proto-loader-gen-types_8js_a9528546dbc161447ab6921596117da01_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{proto-loader-gen-types_8js_af49f2403291997467f8fe0ebb19be074}\index{proto-\/loader-\/gen-\/types.js@{proto-\/loader-\/gen-\/types.js}!getImportPath@{getImportPath}}
+\index{getImportPath@{getImportPath}!proto-\/loader-\/gen-\/types.js@{proto-\/loader-\/gen-\/types.js}}
+\doxysubsubsection{\texorpdfstring{getImportPath()}{getImportPath()}}
+{\footnotesize\ttfamily \label{proto-loader-gen-types_8js_af49f2403291997467f8fe0ebb19be074} 
+function get\+Import\+Path (\begin{DoxyParamCaption}\item[{}]{to}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{ordered-map_8min_8js_a103df269476e78897c9c4c6cb8f4eb06}{g}}, \mbox{\hyperlink{proto-loader-gen-types_8js_af49f2403291997467f8fe0ebb19be074}{get\+Import\+Path()}}, \mbox{\hyperlink{proto-loader-gen-types_8js_a93e8b6f8390b66c5315aa2677381cdd6}{Protobuf}}, and \mbox{\hyperlink{proto-loader-gen-types_8js_af9635fb427e87af0942c8c7c297475c5}{strip\+Leading\+Period()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{proto-loader-gen-types_8js_af49f2403291997467f8fe0ebb19be074_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{proto-loader-gen-types_8js_af49f2403291997467f8fe0ebb19be074_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{proto-loader-gen-types_8js_a3251469101d4e519110ccb6c4f6b8c9e}\index{proto-\/loader-\/gen-\/types.js@{proto-\/loader-\/gen-\/types.js}!getPath@{getPath}}
+\index{getPath@{getPath}!proto-\/loader-\/gen-\/types.js@{proto-\/loader-\/gen-\/types.js}}
+\doxysubsubsection{\texorpdfstring{getPath()}{getPath()}}
+{\footnotesize\ttfamily \label{proto-loader-gen-types_8js_a3251469101d4e519110ccb6c4f6b8c9e} 
+function get\+Path (\begin{DoxyParamCaption}\item[{}]{to}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{ordered-map_8min_8js_a103df269476e78897c9c4c6cb8f4eb06}{g}}, and \mbox{\hyperlink{proto-loader-gen-types_8js_af9635fb427e87af0942c8c7c297475c5}{strip\+Leading\+Period()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{proto-loader-gen-types_8js_a3251469101d4e519110ccb6c4f6b8c9e_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{proto-loader-gen-types_8js_a9d3d725dd8425a79217e8eff187da748}\index{proto-\/loader-\/gen-\/types.js@{proto-\/loader-\/gen-\/types.js}!getPathToRoot@{getPathToRoot}}
+\index{getPathToRoot@{getPathToRoot}!proto-\/loader-\/gen-\/types.js@{proto-\/loader-\/gen-\/types.js}}
+\doxysubsubsection{\texorpdfstring{getPathToRoot()}{getPathToRoot()}}
+{\footnotesize\ttfamily \label{proto-loader-gen-types_8js_a9d3d725dd8425a79217e8eff187da748} 
+function get\+Path\+To\+Root (\begin{DoxyParamCaption}\item[{}]{from}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}, \mbox{\hyperlink{proto-loader-gen-types_8js_a1fdc7709faf62dce60620fb3f9d3453c}{path}}, and \mbox{\hyperlink{proto-loader-gen-types_8js_af9635fb427e87af0942c8c7c297475c5}{strip\+Leading\+Period()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{proto-loader-gen-types_8js_a9d3d725dd8425a79217e8eff187da748_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{proto-loader-gen-types_8js_a9d3d725dd8425a79217e8eff187da748_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{proto-loader-gen-types_8js_a9d1a34be2fb733ccacdf998450c109eb}\index{proto-\/loader-\/gen-\/types.js@{proto-\/loader-\/gen-\/types.js}!getRelativeImportPath@{getRelativeImportPath}}
+\index{getRelativeImportPath@{getRelativeImportPath}!proto-\/loader-\/gen-\/types.js@{proto-\/loader-\/gen-\/types.js}}
+\doxysubsubsection{\texorpdfstring{getRelativeImportPath()}{getRelativeImportPath()}}
+{\footnotesize\ttfamily \label{proto-loader-gen-types_8js_a9d1a34be2fb733ccacdf998450c109eb} 
+function get\+Relative\+Import\+Path (\begin{DoxyParamCaption}\item[{}]{from}{, }\item[{}]{to}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{proto-loader-gen-types_8js_af49f2403291997467f8fe0ebb19be074}{get\+Import\+Path()}}, and \mbox{\hyperlink{proto-loader-gen-types_8js_a9d3d725dd8425a79217e8eff187da748}{get\+Path\+To\+Root()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{proto-loader-gen-types_8js_a9d1a34be2fb733ccacdf998450c109eb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=305pt]{proto-loader-gen-types_8js_a9d1a34be2fb733ccacdf998450c109eb_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{proto-loader-gen-types_8js_ae20b948944f30244583cac0629af139d}\index{proto-\/loader-\/gen-\/types.js@{proto-\/loader-\/gen-\/types.js}!getTypeInterfaceName@{getTypeInterfaceName}}
+\index{getTypeInterfaceName@{getTypeInterfaceName}!proto-\/loader-\/gen-\/types.js@{proto-\/loader-\/gen-\/types.js}}
+\doxysubsubsection{\texorpdfstring{getTypeInterfaceName()}{getTypeInterfaceName()}}
+{\footnotesize\ttfamily \label{proto-loader-gen-types_8js_ae20b948944f30244583cac0629af139d} 
+function get\+Type\+Interface\+Name (\begin{DoxyParamCaption}\item[{}]{type}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{ordered-map_8min_8js_a103df269476e78897c9c4c6cb8f4eb06}{g}}, and \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{proto-loader-gen-types_8js_ae20b948944f30244583cac0629af139d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{proto-loader-gen-types_8js_add870a3a6b6070c98366d1a8eb1cefdd}\index{proto-\/loader-\/gen-\/types.js@{proto-\/loader-\/gen-\/types.js}!isNamespaceBase@{isNamespaceBase}}
+\index{isNamespaceBase@{isNamespaceBase}!proto-\/loader-\/gen-\/types.js@{proto-\/loader-\/gen-\/types.js}}
+\doxysubsubsection{\texorpdfstring{isNamespaceBase()}{isNamespaceBase()}}
+{\footnotesize\ttfamily \label{proto-loader-gen-types_8js_add870a3a6b6070c98366d1a8eb1cefdd} 
+function is\+Namespace\+Base (\begin{DoxyParamCaption}\item[{}]{obj}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{src_2util_2minimal_8js_a325c4e317c38d8497130ebce7670be2f}{Array}}, and \mbox{\hyperlink{cookie_2index_8js_ac85f51e536810be6a6a54622efd4fe89}{obj}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{proto-loader-gen-types_8js_add870a3a6b6070c98366d1a8eb1cefdd_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{proto-loader-gen-types_8js_af9635fb427e87af0942c8c7c297475c5}\index{proto-\/loader-\/gen-\/types.js@{proto-\/loader-\/gen-\/types.js}!stripLeadingPeriod@{stripLeadingPeriod}}
+\index{stripLeadingPeriod@{stripLeadingPeriod}!proto-\/loader-\/gen-\/types.js@{proto-\/loader-\/gen-\/types.js}}
+\doxysubsubsection{\texorpdfstring{stripLeadingPeriod()}{stripLeadingPeriod()}}
+{\footnotesize\ttfamily \label{proto-loader-gen-types_8js_af9635fb427e87af0942c8c7c297475c5} 
+function strip\+Leading\+Period (\begin{DoxyParamCaption}\item[{}]{name}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{database-compat_2dist_2index_8esm2017_8js_a065dce940aaa83aab96e001e5f46d129}{name}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{proto-loader-gen-types_8js_af9635fb427e87af0942c8c7c297475c5_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{proto-loader-gen-types_8js_a20ed57d9fa2e09f6625d0626929148fd}\index{proto-\/loader-\/gen-\/types.js@{proto-\/loader-\/gen-\/types.js}!camelCase@{camelCase}}
+\index{camelCase@{camelCase}!proto-\/loader-\/gen-\/types.js@{proto-\/loader-\/gen-\/types.js}}
+\doxysubsubsection{\texorpdfstring{camelCase}{camelCase}}
+{\footnotesize\ttfamily \label{proto-loader-gen-types_8js_a20ed57d9fa2e09f6625d0626929148fd} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} camel\+Case = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}lodash.\+camelcase"{})}
+
+\Hypertarget{proto-loader-gen-types_8js_a2e47e1f004220675d0fa39b8255bd78f}\index{proto-\/loader-\/gen-\/types.js@{proto-\/loader-\/gen-\/types.js}!fs@{fs}}
+\index{fs@{fs}!proto-\/loader-\/gen-\/types.js@{proto-\/loader-\/gen-\/types.js}}
+\doxysubsubsection{\texorpdfstring{fs}{fs}}
+{\footnotesize\ttfamily \label{proto-loader-gen-types_8js_a2e47e1f004220675d0fa39b8255bd78f} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} fs = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}fs"{})}
+
+\Hypertarget{proto-loader-gen-types_8js_a1fdc7709faf62dce60620fb3f9d3453c}\index{proto-\/loader-\/gen-\/types.js@{proto-\/loader-\/gen-\/types.js}!path@{path}}
+\index{path@{path}!proto-\/loader-\/gen-\/types.js@{proto-\/loader-\/gen-\/types.js}}
+\doxysubsubsection{\texorpdfstring{path}{path}}
+{\footnotesize\ttfamily \label{proto-loader-gen-types_8js_a1fdc7709faf62dce60620fb3f9d3453c} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} path = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}path"{})}
+
+\Hypertarget{proto-loader-gen-types_8js_a93e8b6f8390b66c5315aa2677381cdd6}\index{proto-\/loader-\/gen-\/types.js@{proto-\/loader-\/gen-\/types.js}!Protobuf@{Protobuf}}
+\index{Protobuf@{Protobuf}!proto-\/loader-\/gen-\/types.js@{proto-\/loader-\/gen-\/types.js}}
+\doxysubsubsection{\texorpdfstring{Protobuf}{Protobuf}}
+{\footnotesize\ttfamily \label{proto-loader-gen-types_8js_a93e8b6f8390b66c5315aa2677381cdd6} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} Protobuf = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}protobufjs"{})}
+
+\Hypertarget{proto-loader-gen-types_8js_ae2475e10618961c050dcba04e8c42331}\index{proto-\/loader-\/gen-\/types.js@{proto-\/loader-\/gen-\/types.js}!strict@{strict}}
+\index{strict@{strict}!proto-\/loader-\/gen-\/types.js@{proto-\/loader-\/gen-\/types.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{proto-loader-gen-types_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+
+\Hypertarget{proto-loader-gen-types_8js_a485a705a5d4c85e6b267dbcb54ea7ab2}\index{proto-\/loader-\/gen-\/types.js@{proto-\/loader-\/gen-\/types.js}!templateStr@{templateStr}}
+\index{templateStr@{templateStr}!proto-\/loader-\/gen-\/types.js@{proto-\/loader-\/gen-\/types.js}}
+\doxysubsubsection{\texorpdfstring{templateStr}{templateStr}}
+{\footnotesize\ttfamily \label{proto-loader-gen-types_8js_a485a705a5d4c85e6b267dbcb54ea7ab2} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} template\+Str = "{}\%s"{}}
+
+\Hypertarget{proto-loader-gen-types_8js_a723c30f3d5e105cd5a684044a21fafc9}\index{proto-\/loader-\/gen-\/types.js@{proto-\/loader-\/gen-\/types.js}!useNameFmter@{useNameFmter}}
+\index{useNameFmter@{useNameFmter}!proto-\/loader-\/gen-\/types.js@{proto-\/loader-\/gen-\/types.js}}
+\doxysubsubsection{\texorpdfstring{useNameFmter}{useNameFmter}}
+{\footnotesize\ttfamily \label{proto-loader-gen-types_8js_a723c30f3d5e105cd5a684044a21fafc9} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} use\+Name\+Fmter}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ (\{\ outputTemplate,\ inputTemplate\ \})\ =>\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (outputTemplate\ ===\ inputTemplate)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ Error(\textcolor{stringliteral}{'inputTemplate\ and\ outputTemplate\ must\ differ'});}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ outputName:\ (\mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}})\ =>\ outputTemplate.replace(\mbox{\hyperlink{proto-loader-gen-types_8js_a485a705a5d4c85e6b267dbcb54ea7ab2}{templateStr}},\ \mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ inputName:\ (\mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}})\ =>\ inputTemplate.replace(\mbox{\hyperlink{proto-loader-gen-types_8js_a485a705a5d4c85e6b267dbcb54ea7ab2}{templateStr}},\ \mbox{\hyperlink{uuid_8min_8js_afc984c4f6c68ce30a0af99006f5f8d27}{n}})}
+\DoxyCodeLine{\ \ \ \ \};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{proto-loader-gen-types_8js_a6af3fa6e24c6a46faf4552f3a2ad8783}\index{proto-\/loader-\/gen-\/types.js@{proto-\/loader-\/gen-\/types.js}!util\_1@{util\_1}}
+\index{util\_1@{util\_1}!proto-\/loader-\/gen-\/types.js@{proto-\/loader-\/gen-\/types.js}}
+\doxysubsubsection{\texorpdfstring{util\_1}{util\_1}}
+{\footnotesize\ttfamily \label{proto-loader-gen-types_8js_a6af3fa6e24c6a46faf4552f3a2ad8783} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} util\+\_\+1 = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}../src/util"{})}
+
+\Hypertarget{proto-loader-gen-types_8js_ad733adac447ee26e6037fb4cb9604970}\index{proto-\/loader-\/gen-\/types.js@{proto-\/loader-\/gen-\/types.js}!yargs@{yargs}}
+\index{yargs@{yargs}!proto-\/loader-\/gen-\/types.js@{proto-\/loader-\/gen-\/types.js}}
+\doxysubsubsection{\texorpdfstring{yargs}{yargs}}
+{\footnotesize\ttfamily \label{proto-loader-gen-types_8js_ad733adac447ee26e6037fb4cb9604970} 
+\mbox{\hyperlink{node__modules_2_0dgrpc_2grpc-js_2build_2src_2server_8js_a92b303b76a3f942ea819498907d5e83c}{const}} yargs = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}("{}yargs"{})}
+

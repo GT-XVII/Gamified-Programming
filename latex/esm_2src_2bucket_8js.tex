@@ -1,0 +1,124 @@
+\doxysection{backend/node\+\_\+modules/@google-\/cloud/storage/build/esm/src/bucket.js File Reference}
+\hypertarget{esm_2src_2bucket_8js}{}\label{esm_2src_2bucket_8js}\index{backend/node\_modules/"@google-\/cloud/storage/build/esm/src/bucket.js@{backend/node\_modules/"@google-\/cloud/storage/build/esm/src/bucket.js}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_bucket}{Bucket}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{esm_2src_2bucket_8js_a59be084da8908b7d77ff34b25cd84488}{import}} \{ \mbox{\hyperlink{class_service_object}{Service\+Object}}, \mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}}, \} from \textquotesingle{}./nodejs-\/\mbox{\hyperlink{protobufjs_2src_2index_8js_a984c90d43d52f5428a8b14b1cbc71f06}{common}}/\mbox{\hyperlink{esm_2src_2file_8js_a73ffb0a3b9f028910adc01ac31153d46}{index.\+js}}\textquotesingle{}
+\item 
+\mbox{\hyperlink{component_2dist_2esm_2index_8esm2017_8js_a953be46b94f595d839e88a6d3d270309}{import}} \texorpdfstring{$\ast$}{*}as fs from \mbox{\hyperlink{esm_2src_2bucket_8js_a1710bb6371efa5ce2815ce1944a956e1}{fs}}
+\item 
+\mbox{\hyperlink{component_2dist_2esm_2index_8esm2017_8js_a953be46b94f595d839e88a6d3d270309}{import}} mime from \mbox{\hyperlink{esm_2src_2bucket_8js_a94e4176722a8d25b35af7777107cf7ee}{mime}}
+\item 
+\mbox{\hyperlink{component_2dist_2esm_2index_8esm2017_8js_a953be46b94f595d839e88a6d3d270309}{import}} \texorpdfstring{$\ast$}{*}as path from \mbox{\hyperlink{esm_2src_2bucket_8js_a413c8bc133e31c6efb2f21ea918cb5ca}{path}}
+\item 
+\mbox{\hyperlink{component_2dist_2esm_2index_8esm2017_8js_a953be46b94f595d839e88a6d3d270309}{import}} \mbox{\hyperlink{p-limit_2index_8js_ac2669ad7cdb9fa68467c461d8de68593}{p\+Limit}} from \mbox{\hyperlink{ordered-map_8min_8js_ab2752257551c1a01e010ceba5d7ec200}{p}} \mbox{\hyperlink{esm_2src_2bucket_8js_a855d9d33127d4a1b6d60693ff91e7f8b}{limit}}
+\item 
+\mbox{\hyperlink{component_2dist_2esm_2index_8esm2017_8js_a953be46b94f595d839e88a6d3d270309}{import}} Async\+Retry from \mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{esm_2src_2bucket_8js_a451094c82c509e4de33de7f8df781a35}{retry}} = retry
+\item 
+var export \mbox{\hyperlink{esm_2src_2bucket_8js_a75472e7abc207275859dde7d6fa9b314}{Bucket\+Action\+To\+HTTPMethod}}
+\item 
+var export \mbox{\hyperlink{esm_2src_2bucket_8js_a647447ed4cd99bad030879158a95377f}{Available\+Service\+Object\+Methods}}
+\item 
+var export \mbox{\hyperlink{esm_2src_2bucket_8js_a4bd501e9ecdcd54be4be6548481418b3}{Bucket\+Exception\+Messages}}
+\end{DoxyCompactItemize}
+\begin{Indent}\textbf{ module\+:@google-\/cloud/storage.Bucket}\par
+{\em \doxylink{class_reference}{Reference} to the {\ttfamily \doxylink{class_bucket}{Bucket}} class.
+
+\begin{DoxySeeAlso}{See also}
+\doxylink{class_bucket}{Bucket} 
+\end{DoxySeeAlso}
+}\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{esm_2src_2bucket_8js_a53e3d934dacf8d42785ab59e8f8453c2}{Bucket}}
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{esm_2src_2bucket_8js_a647447ed4cd99bad030879158a95377f}\index{bucket.js@{bucket.js}!AvailableServiceObjectMethods@{AvailableServiceObjectMethods}}
+\index{AvailableServiceObjectMethods@{AvailableServiceObjectMethods}!bucket.js@{bucket.js}}
+\doxysubsubsection{\texorpdfstring{AvailableServiceObjectMethods}{AvailableServiceObjectMethods}}
+{\footnotesize\ttfamily \label{esm_2src_2bucket_8js_a647447ed4cd99bad030879158a95377f} 
+Available\+Service\+Object\+Methods\mbox{[}Available\+Service\+Object\+Methods\mbox{[}"{}delete"{}\mbox{]}=1\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{cjs_2src_2bucket_8js_afee69240ef9710c73b4bef336feab8d5}{AvailableServiceObjectMethods}}[\mbox{\hyperlink{cjs_2src_2bucket_8js_afee69240ef9710c73b4bef336feab8d5}{AvailableServiceObjectMethods}}[\textcolor{stringliteral}{"{}setMetadata"{}}]\ =\ 0]\ =\ \textcolor{stringliteral}{"{}setMetadata"{}}}
+
+\end{DoxyCode}
+\Hypertarget{esm_2src_2bucket_8js_a53e3d934dacf8d42785ab59e8f8453c2}\index{bucket.js@{bucket.js}!Bucket@{Bucket}}
+\index{Bucket@{Bucket}!bucket.js@{bucket.js}}
+\doxysubsubsection{\texorpdfstring{Bucket}{Bucket}}
+{\footnotesize\ttfamily \label{esm_2src_2bucket_8js_a53e3d934dacf8d42785ab59e8f8453c2} 
+Bucket}
+
+\Hypertarget{esm_2src_2bucket_8js_a75472e7abc207275859dde7d6fa9b314}\index{bucket.js@{bucket.js}!BucketActionToHTTPMethod@{BucketActionToHTTPMethod}}
+\index{BucketActionToHTTPMethod@{BucketActionToHTTPMethod}!bucket.js@{bucket.js}}
+\doxysubsubsection{\texorpdfstring{BucketActionToHTTPMethod}{BucketActionToHTTPMethod}}
+{\footnotesize\ttfamily \label{esm_2src_2bucket_8js_a75472e7abc207275859dde7d6fa9b314} 
+function Bucket\+Action\+To\+HTTPMethod}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{cjs_2src_2bucket_8js_a75472e7abc207275859dde7d6fa9b314}{BucketActionToHTTPMethod}}[\textcolor{stringliteral}{"{}list"{}}]\ =\ \textcolor{stringliteral}{"{}GET"{}}}
+
+\end{DoxyCode}
+\Hypertarget{esm_2src_2bucket_8js_a4bd501e9ecdcd54be4be6548481418b3}\index{bucket.js@{bucket.js}!BucketExceptionMessages@{BucketExceptionMessages}}
+\index{BucketExceptionMessages@{BucketExceptionMessages}!bucket.js@{bucket.js}}
+\doxysubsubsection{\texorpdfstring{BucketExceptionMessages}{BucketExceptionMessages}}
+{\footnotesize\ttfamily \label{esm_2src_2bucket_8js_a4bd501e9ecdcd54be4be6548481418b3} 
+Bucket\+Exception\+Messages\mbox{[}"{}SUPPLY\+\_\+\+NOTIFICATION\+\_\+\+ID"{}\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{cjs_2src_2bucket_8js_a187b30671b8b6c9fa8996f5d93d904e8}{BucketExceptionMessages}}[\textcolor{stringliteral}{"{}PROVIDE\_SOURCE\_FILE"{}}]\ =\ \textcolor{stringliteral}{"{}You\ must\ provide\ at\ least\ one\ source\ file."{}}}
+
+\end{DoxyCode}
+\Hypertarget{esm_2src_2bucket_8js_a1710bb6371efa5ce2815ce1944a956e1}\index{bucket.js@{bucket.js}!fs@{fs}}
+\index{fs@{fs}!bucket.js@{bucket.js}}
+\doxysubsubsection{\texorpdfstring{fs}{fs}}
+{\footnotesize\ttfamily \label{esm_2src_2bucket_8js_a1710bb6371efa5ce2815ce1944a956e1} 
+\mbox{\hyperlink{component_2dist_2esm_2index_8esm2017_8js_a953be46b94f595d839e88a6d3d270309}{import}}\texorpdfstring{$\ast$}{*} as fs from fs}
+
+\Hypertarget{esm_2src_2bucket_8js_a59be084da8908b7d77ff34b25cd84488}\index{bucket.js@{bucket.js}!import@{import}}
+\index{import@{import}!bucket.js@{bucket.js}}
+\doxysubsubsection{\texorpdfstring{import}{import}}
+{\footnotesize\ttfamily \label{esm_2src_2bucket_8js_a59be084da8908b7d77ff34b25cd84488} 
+import \{ \mbox{\hyperlink{class_service_object}{Service\+Object}}, \mbox{\hyperlink{component_2dist_2index_8cjs_8js_a9728071b77e49ad7a603ddbaf4ba72bf}{util}}, \} from \textquotesingle{}./nodejs-\/\mbox{\hyperlink{protobufjs_2src_2index_8js_a984c90d43d52f5428a8b14b1cbc71f06}{common}}/\mbox{\hyperlink{esm_2src_2file_8js_a73ffb0a3b9f028910adc01ac31153d46}{index.\+js}}\textquotesingle{}}
+
+\Hypertarget{esm_2src_2bucket_8js_a855d9d33127d4a1b6d60693ff91e7f8b}\index{bucket.js@{bucket.js}!limit@{limit}}
+\index{limit@{limit}!bucket.js@{bucket.js}}
+\doxysubsubsection{\texorpdfstring{limit}{limit}}
+{\footnotesize\ttfamily \label{esm_2src_2bucket_8js_a855d9d33127d4a1b6d60693ff91e7f8b} 
+\mbox{\hyperlink{component_2dist_2esm_2index_8esm2017_8js_a953be46b94f595d839e88a6d3d270309}{import}} \mbox{\hyperlink{p-limit_2index_8js_ac2669ad7cdb9fa68467c461d8de68593}{p\+Limit}} from \mbox{\hyperlink{ordered-map_8min_8js_ab2752257551c1a01e010ceba5d7ec200}{p}} limit}
+
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_2_users_2nicoletiokhin_2_desktop_2_software_01_semester_013_2_gamified-_programming-1_2backend_70488b1677f72ca18913bb3f798c4315}{/\+Users/nicoletiokhin/\+Desktop/\+Software Semester 3/\+Gamified-\/\+Programming-\/1/backend/node\+\_\+modules/@google-\/cloud/firestore/build/src/reference/vector-\/query-\/snapshot.\+js}}.\end{Desc}
+\Hypertarget{esm_2src_2bucket_8js_a94e4176722a8d25b35af7777107cf7ee}\index{bucket.js@{bucket.js}!mime@{mime}}
+\index{mime@{mime}!bucket.js@{bucket.js}}
+\doxysubsubsection{\texorpdfstring{mime}{mime}}
+{\footnotesize\ttfamily \label{esm_2src_2bucket_8js_a94e4176722a8d25b35af7777107cf7ee} 
+\mbox{\hyperlink{component_2dist_2esm_2index_8esm2017_8js_a953be46b94f595d839e88a6d3d270309}{import}} mime from mime}
+
+\Hypertarget{esm_2src_2bucket_8js_a413c8bc133e31c6efb2f21ea918cb5ca}\index{bucket.js@{bucket.js}!path@{path}}
+\index{path@{path}!bucket.js@{bucket.js}}
+\doxysubsubsection{\texorpdfstring{path}{path}}
+{\footnotesize\ttfamily \label{esm_2src_2bucket_8js_a413c8bc133e31c6efb2f21ea918cb5ca} 
+\mbox{\hyperlink{component_2dist_2esm_2index_8esm2017_8js_a953be46b94f595d839e88a6d3d270309}{import}}\texorpdfstring{$\ast$}{*} as path from path}
+
+\Hypertarget{esm_2src_2bucket_8js_a451094c82c509e4de33de7f8df781a35}\index{bucket.js@{bucket.js}!retry@{retry}}
+\index{retry@{retry}!bucket.js@{bucket.js}}
+\doxysubsubsection{\texorpdfstring{retry}{retry}}
+{\footnotesize\ttfamily \label{esm_2src_2bucket_8js_a451094c82c509e4de33de7f8df781a35} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} retry = retry}
+
+on transient errors. When set to null, the call will not retry. 

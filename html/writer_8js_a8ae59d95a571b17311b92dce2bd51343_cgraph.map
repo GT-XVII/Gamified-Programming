@@ -1,0 +1,18 @@
+<map id="Writer" name="Writer">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,61,80"/>
+<area shape="rect" id="Node000002" href="$writer_8js.html#a7988acb4c69d8bb23c6d54b7850f3c64" title=" " alt="" coords="109,5,158,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="60,52,93,35,96,39,62,56"/>
+<area shape="rect" id="Node000003" href="$writer_8js.html#ae87b2ec0dea8fd97337667bb3f32d8f6" title=" " alt="" coords="114,55,153,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="61,65,99,65,99,70,61,70"/>
+<area shape="rect" id="Node000008" href="$tail_8js.html#a9a4cfd6ab9ea8bfd1cd3e3490b8466f5" title=" " alt="" coords="114,104,153,130"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="62,79,102,98,99,103,60,83"/>
+<area shape="rect" id="Node000004" href="$protobufjs_2dist_2protobuf_8js.html#adc8497f1b8fa9c7bee4a53c25c244a66" title=" " alt="" coords="206,55,252,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="153,65,191,65,191,70,153,70"/>
+<area shape="rect" id="Node000005" href="$protobufjs_2dist_2protobuf_8js.html#a74d7fa31d45064974a0c297422d3c0c5" title=" " alt="" coords="535,31,638,56"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="252,63,519,45,519,51,253,69"/>
+<area shape="rect" id="Node000006" href="$protobufjs_2dist_2protobuf_8js.html#afd366b4e60dba7acb371422d6dddcc64" title=" " alt="" coords="300,80,487,106"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="253,68,291,74,291,80,253,74"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="446,77,519,58,520,63,447,82"/>
+<area shape="rect" id="Node000007" href="$_doc_type_reader_8js.html#a14b5fcc27a4889161d94c35f6a630cea" title=" " alt="" coords="542,80,630,106"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="487,90,527,90,527,96,487,96"/>
+</map>

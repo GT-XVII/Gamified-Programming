@@ -1,0 +1,7 @@
+<map id="ClientPool::opCount" name="ClientPool::opCount">
+<area shape="rect" id="Node000001" title=" " alt="" coords="197,31,335,56"/>
+<area shape="rect" id="Node000002" href="$class_client_pool.html#a4bfa858223bf3ab230fea95918c80e89" title=" " alt="" coords="11,5,143,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,35,143,30,143,24,182,30"/>
+<area shape="rect" id="Node000003" href="$class_client_pool.html#a8ede42b9ab8c869b4f0f7ed6945452f3" title=" " alt="" coords="5,55,149,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="182,57,149,61,149,56,181,52"/>
+</map>

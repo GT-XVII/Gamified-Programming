@@ -1,0 +1,118 @@
+\doxysection{Aggregate\+Field Class Reference}
+\hypertarget{class_aggregate_field}{}\label{class_aggregate_field}\index{AggregateField@{AggregateField}}
+
+
+Collaboration diagram for Aggregate\+Field\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=153pt]{class_aggregate_field__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_aggregate_field_a4adf6635493d9bb13556293a92cf9fbb}{constructor}} (aggregate\+Type, field)
+\item 
+\mbox{\hyperlink{class_aggregate_field_acc963798e918772ec1b1bd21660d04fa}{is\+Equal}} (other)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_aggregate_field_a6ed4e5f86313b7ac96e2bbb36654a278}{count}} ()
+\item 
+static \mbox{\hyperlink{class_aggregate_field_a634c3806abb2a1b2a671c424329a43a4}{average}} (field)
+\item 
+static \mbox{\hyperlink{class_aggregate_field_ac1b410aa82f56827b6a7550d387b50b7}{sum}} (field)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents an aggregation that can be performed by \doxylink{class_firestore}{Firestore}. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_aggregate_field_a634c3806abb2a1b2a671c424329a43a4}\index{AggregateField@{AggregateField}!average@{average}}
+\index{average@{average}!AggregateField@{AggregateField}}
+\doxysubsubsection{\texorpdfstring{average()}{average()}}
+{\footnotesize\ttfamily \label{class_aggregate_field_a634c3806abb2a1b2a671c424329a43a4} 
+static Aggregate\+Field\+::average (\begin{DoxyParamCaption}\item[{}]{field}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Create an \doxylink{class_aggregate_field}{Aggregate\+Field} object that can be used to compute the average of a specified field over a range of documents in the result set of a query. 
+\begin{DoxyParams}{Parameters}
+{\em field} & Specifies the field to average across the result set. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{aggregate_8js_a0250b6a641e8484d4e9bf1f5c606189a}{Aggregate\+Field}}.
+
+\Hypertarget{class_aggregate_field_a4adf6635493d9bb13556293a92cf9fbb}\index{AggregateField@{AggregateField}!constructor@{constructor}}
+\index{constructor@{constructor}!AggregateField@{AggregateField}}
+\doxysubsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily \label{class_aggregate_field_a4adf6635493d9bb13556293a92cf9fbb} 
+Aggregate\+Field\+::constructor (\begin{DoxyParamCaption}\item[{}]{aggregate\+Type}{, }\item[{}]{field}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new Aggregate\+Field$<$\+T$>$ 
+\begin{DoxyParams}{Parameters}
+{\em aggregate\+Type} & Specifies the type of aggregation operation to perform. \\
+\hline
+{\em field} & Optionally specifies the field that is aggregated. \\
+\hline
+\end{DoxyParams}
+\doxylink{class_a}{A} type string to uniquely identify instances of this class.
+
+References \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type}}.
+
+\Hypertarget{class_aggregate_field_a6ed4e5f86313b7ac96e2bbb36654a278}\index{AggregateField@{AggregateField}!count@{count}}
+\index{count@{count}!AggregateField@{AggregateField}}
+\doxysubsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily \label{class_aggregate_field_a6ed4e5f86313b7ac96e2bbb36654a278} 
+static Aggregate\+Field\+::count (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Create an \doxylink{class_aggregate_field}{Aggregate\+Field} object that can be used to compute the count of documents in the result set of a query. 
+
+References \mbox{\hyperlink{aggregate_8js_a0250b6a641e8484d4e9bf1f5c606189a}{Aggregate\+Field}}.
+
+\Hypertarget{class_aggregate_field_acc963798e918772ec1b1bd21660d04fa}\index{AggregateField@{AggregateField}!isEqual@{isEqual}}
+\index{isEqual@{isEqual}!AggregateField@{AggregateField}}
+\doxysubsubsection{\texorpdfstring{isEqual()}{isEqual()}}
+{\footnotesize\ttfamily \label{class_aggregate_field_acc963798e918772ec1b1bd21660d04fa} 
+Aggregate\+Field\+::is\+Equal (\begin{DoxyParamCaption}\item[{}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Compares this object with the given object for equality.
+
+This object is considered "{}equal"{} to the other object if and only if {\ttfamily other} performs the same kind of aggregation on the same field (if any).
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The object to compare to this object for equality. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if this object is "{}equal"{} to the given object, as defined above, or {\ttfamily false} otherwise. 
+\end{DoxyReturn}
+
+
+References \mbox{\hyperlink{aggregate_8js_a705fe9bf53f002be551bde47cc3a6069}{path\+\_\+1}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}.
+
+\Hypertarget{class_aggregate_field_ac1b410aa82f56827b6a7550d387b50b7}\index{AggregateField@{AggregateField}!sum@{sum}}
+\index{sum@{sum}!AggregateField@{AggregateField}}
+\doxysubsubsection{\texorpdfstring{sum()}{sum()}}
+{\footnotesize\ttfamily \label{class_aggregate_field_ac1b410aa82f56827b6a7550d387b50b7} 
+static Aggregate\+Field\+::sum (\begin{DoxyParamCaption}\item[{}]{field}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Create an \doxylink{class_aggregate_field}{Aggregate\+Field} object that can be used to compute the sum of a specified field over a range of documents in the result set of a query. 
+\begin{DoxyParams}{Parameters}
+{\em field} & Specifies the field to sum across the result set. \\
+\hline
+\end{DoxyParams}
+
+
+References \mbox{\hyperlink{aggregate_8js_a0250b6a641e8484d4e9bf1f5c606189a}{Aggregate\+Field}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+backend/node\+\_\+modules/@google-\/cloud/firestore/build/src/\mbox{\hyperlink{aggregate_8js}{aggregate.\+js}}\end{DoxyCompactItemize}

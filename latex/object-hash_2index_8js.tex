@@ -1,0 +1,306 @@
+\doxysection{backend/node\+\_\+modules/object-\/hash/index.js File Reference}
+\hypertarget{object-hash_2index_8js}{}\label{object-hash_2index_8js}\index{backend/node\_modules/object-\/hash/index.js@{backend/node\_modules/object-\/hash/index.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{object-hash_2index_8js_a535689ff0d247337af6b997d484615b7}{object\+Hash}} (\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}}, options)
+\item 
+function \mbox{\hyperlink{object-hash_2index_8js_a50f79e5b7b877b7412ea8bc678a4136c}{apply\+Defaults}} (\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}}, source\+Options)
+\item 
+function \mbox{\hyperlink{object-hash_2index_8js_a5b31e6b4d7982c6f42b6d9748e22dcc2}{is\+Native\+Function}} (\mbox{\hyperlink{uuidv1_8min_8js_a9cf09a2972472098a4c689fd988f4dfc}{f}})
+\item 
+function \mbox{\hyperlink{object-hash_2index_8js_ac4f99a1f15108a263d0a32d39ff2966f}{hash}} (\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}}, options)
+\item 
+function \mbox{\hyperlink{object-hash_2index_8js_aaa2b9ac9bf7605a107b2084c39975f53}{type\+Hasher}} (options, write\+To, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}})
+\item 
+function \mbox{\hyperlink{object-hash_2index_8js_ab3ac3e614e73860e47d77064f4207198}{Pass\+Through}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} \mbox{\hyperlink{object-hash_2index_8js_ae2475e10618961c050dcba04e8c42331}{strict}}
+\item 
+var \mbox{\hyperlink{object-hash_2index_8js_a3eca37c9aac9a17870baa116339724e3}{crypto}} = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}crypto\textquotesingle{})
+\item 
+\mbox{\hyperlink{object-hash_2index_8js_af2836014938e5fb6078778620cb19081}{exports}} = module.\+exports = \mbox{\hyperlink{fallback_8js_a7a2c4529feef6497d9bbe8130334a9ad}{object\+Hash}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{object-hash_2index_8js_acb26749b7e01de367b298e8394f6fbdc}{sha1}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{object-hash_2index_8js_aeda9a9055510aeefdf072619f8e1de47}{keys}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{object-hash_2index_8js_ab91a467c56b6f82aba34303dcdf3bf81}{MD5}}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{object-hash_2index_8js_af5fae89aeaa816021dd8cf9ff72f4356}{keys\+MD5}}
+\item 
+var \mbox{\hyperlink{object-hash_2index_8js_a879cece9b4b8c5bb50472ada03e48b99}{hashes}} = crypto.\+get\+Hashes ? crypto.\+get\+Hashes().\mbox{\hyperlink{express_2lib_2router_2index_8js_acab0c09ac73e7a3c85a21fa773e9b8b0}{slice}}() \+: \mbox{[}\textquotesingle{}\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a86e184a184e03e47b460100f5bc03c0b}{sha1}}\textquotesingle{}, \textquotesingle{}\mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2uuid_2dist_2esm-browser_2md5_8js_a310ea9a406ea8c943c0e540b5f0a6fed}{md5}}\textquotesingle{}\mbox{]}
+\item 
+var \mbox{\hyperlink{object-hash_2index_8js_a89a39885d6416bf32ef38078612633b5}{encodings}} = \mbox{[}\textquotesingle{}\mbox{\hyperlink{cjs_2internal_2operators_2buffer_8js_a838d54b935df11eff7928ba8da636891}{buffer}}\textquotesingle{}, \textquotesingle{}\mbox{\hyperlink{conversions_8js_ad69b853a65b1b99def2b5b90d9bd63e9}{hex}}\textquotesingle{}, \textquotesingle{}\mbox{\hyperlink{node-forge_2lib_2util_8js_aa5dc99428648b9dc3ee403ffb2319c8c}{binary}}\textquotesingle{}, \textquotesingle{}\mbox{\hyperlink{util_2dist_2index_8cjs_8js_a9ff01f6fde00861281ba5efcec6c267d}{base64}}\textquotesingle{}\mbox{]}
+\item 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} \mbox{\hyperlink{object-hash_2index_8js_a7d3c8c86ce58d9fce992a5b2b25f65eb}{write\+To\+Stream}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{object-hash_2index_8js_a50f79e5b7b877b7412ea8bc678a4136c}\index{index.js@{index.js}!applyDefaults@{applyDefaults}}
+\index{applyDefaults@{applyDefaults}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{applyDefaults()}{applyDefaults()}}
+{\footnotesize\ttfamily \label{object-hash_2index_8js_a50f79e5b7b877b7412ea8bc678a4136c} 
+function apply\+Defaults (\begin{DoxyParamCaption}\item[{}]{object}{, }\item[{}]{source\+Options}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{iconv-lite_2lib_2index_8js_a031734e7c79247e480f81e571586932d}{encodings}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a5df37b7f02e5cdc7d9412b7f872b8e01}{false}}, \mbox{\hyperlink{object-hash_2index_8js_a879cece9b4b8c5bb50472ada03e48b99}{hashes}}, \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{object-hash_2index_8js_a50f79e5b7b877b7412ea8bc678a4136c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{object-hash_2index_8js_ac4f99a1f15108a263d0a32d39ff2966f}\index{index.js@{index.js}!hash@{hash}}
+\index{hash@{hash}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{hash()}{hash()}}
+{\footnotesize\ttfamily \label{object-hash_2index_8js_ac4f99a1f15108a263d0a32d39ff2966f} 
+function hash (\begin{DoxyParamCaption}\item[{}]{object}{, }\item[{}]{options}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a34083d02677ea6acceb641fa647bc25a}{buf}}, \mbox{\hyperlink{cookie-signature_2index_8js_a3eca37c9aac9a17870baa116339724e3}{crypto}}, \mbox{\hyperlink{node-fetch_2lib_2index_8js_a1d450fb1c40da71e99d49a2d08c6b475}{Pass\+Through}}, \mbox{\hyperlink{object-hash_2index_8js_aaa2b9ac9bf7605a107b2084c39975f53}{type\+Hasher()}}, and \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{object-hash_2index_8js_ac4f99a1f15108a263d0a32d39ff2966f_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{object-hash_2index_8js_a5b31e6b4d7982c6f42b6d9748e22dcc2}\index{index.js@{index.js}!isNativeFunction@{isNativeFunction}}
+\index{isNativeFunction@{isNativeFunction}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{isNativeFunction()}{isNativeFunction()}}
+{\footnotesize\ttfamily \label{object-hash_2index_8js_a5b31e6b4d7982c6f42b6d9748e22dcc2} 
+function is\+Native\+Function (\begin{DoxyParamCaption}\item[{}]{f}{}\end{DoxyParamCaption})}
+
+Check if the given function is a native function 
+
+References \mbox{\hyperlink{form_8js_ab63a7754967c678e14c9ece9cf96be37}{\$}}, \mbox{\hyperlink{prime_8worker_8min_8js_a8593eae3c208f00c7bcb61ff51ff8ac7}{exp}}, \mbox{\hyperlink{uuidv1_8min_8js_a9cf09a2972472098a4c689fd988f4dfc}{f}}, \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}, \mbox{\hyperlink{ordered-map_8min_8js_ad9a7d92cb87932d25187fdec3ba1b621}{s}}, and \mbox{\hyperlink{ordered-map_8min_8js_a9721a992655f700bdc2e91ba68b71e26}{w}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{object-hash_2index_8js_a5b31e6b4d7982c6f42b6d9748e22dcc2_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{object-hash_2index_8js_a535689ff0d247337af6b997d484615b7}\index{index.js@{index.js}!objectHash@{objectHash}}
+\index{objectHash@{objectHash}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{objectHash()}{objectHash()}}
+{\footnotesize\ttfamily \label{object-hash_2index_8js_a535689ff0d247337af6b997d484615b7} 
+function object\+Hash (\begin{DoxyParamCaption}\item[{}]{object}{, }\item[{}]{options}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{object-hash_2index_8js_a50f79e5b7b877b7412ea8bc678a4136c}{apply\+Defaults()}}, and \mbox{\hyperlink{pbe_8js_a4e8eeb941272ccb92c8911eb60686dd3}{hash()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{object-hash_2index_8js_a535689ff0d247337af6b997d484615b7_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{object-hash_2index_8js_ab3ac3e614e73860e47d77064f4207198}\index{index.js@{index.js}!PassThrough@{PassThrough}}
+\index{PassThrough@{PassThrough}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{PassThrough()}{PassThrough()}}
+{\footnotesize\ttfamily \label{object-hash_2index_8js_ab3ac3e614e73860e47d77064f4207198} 
+function Pass\+Through (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{abort-controller_8umd_8js_ac0431efac4d7c393d1e70b86115cb93f}{b}}, \mbox{\hyperlink{_0dprotobufjs_2float_2bench_2index_8js_a34083d02677ea6acceb641fa647bc25a}{buf}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2eb0ae9087079e95bc67981f6c61288b}{end}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a99dd3b4c246dbde846b5228e734d9341}{read}}, and \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a355f75ff9c8abb4bda3db7af40f2ee4a}{write}}.
+
+\Hypertarget{object-hash_2index_8js_aaa2b9ac9bf7605a107b2084c39975f53}\index{index.js@{index.js}!typeHasher@{typeHasher}}
+\index{typeHasher@{typeHasher}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{typeHasher()}{typeHasher()}}
+{\footnotesize\ttfamily \label{object-hash_2index_8js_aaa2b9ac9bf7605a107b2084c39975f53} 
+function type\+Hasher (\begin{DoxyParamCaption}\item[{}]{options}{, }\item[{}]{write\+To}{, }\item[{}]{context}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{form__data_8js_a01a7119891521521b943d655de0b6d9f}{\+\_\+error}}, \mbox{\hyperlink{src_2util_2minimal_8js_a325c4e317c38d8497130ebce7670be2f}{Array}}, \mbox{\hyperlink{reader_8js_ad60c2f39674fd4c5aca2b1e58b4ca3b5}{bool}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a2f035fcf2afcfd1521c26d73d7d9de31}{context}}, \mbox{\hyperlink{express_2lib_2router_2route_8js_a81bce405da2b763dd41f7e9f84bf4e97}{dispatch}}, \mbox{\hyperlink{index_8es_8js_a0c141df65fb873bae7cc4e4d17ce4297}{entries}}, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a4abaedaa5078f55d753a41e28ef4b9a1}{file}}, \mbox{\hyperlink{writer_8js_a10238cf619a9073c096c996342cd720a}{fn}}, \mbox{\hyperlink{ipaddr_8min_8js_a7e98b8a17c0aad30ba64d47b74e2a6c1}{i}}, \mbox{\hyperlink{object-hash_2index_8js_a5b31e6b4d7982c6f42b6d9748e22dcc2}{is\+Native\+Function()}}, \mbox{\hyperlink{__base_assign_8js_a87dd2006b34e1d50c301938be11fd6fa}{keys}}, \mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a7fdcf4c82c9946bf2b0b80829a7ab230}{length}}, \mbox{\hyperlink{bytes_2index_8js_a48e18769649a3ca5bab0fafdec44cb15}{map}}, \mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}}, \mbox{\hyperlink{node-fetch_2lib_2index_8js_a1d450fb1c40da71e99d49a2d08c6b475}{Pass\+Through}}, \mbox{\hyperlink{json-bigint_2lib_2stringify_8js_abd4075a8f329b0ccafd81359c952a9df}{str()}}, \mbox{\hyperlink{reader_8js_a5c10456fb38514f2fe2b2da9323924ac}{string}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a7234a4e8129e261e2c517e09a337bf6a}{to\+String}}, \mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2mime_2cli_8js_a2807c8a03bea7dd9d4118326348f457e}{type}}, \mbox{\hyperlink{object-hash_2index_8js_aaa2b9ac9bf7605a107b2084c39975f53}{type\+Hasher()}}, \mbox{\hyperlink{__clone_array_buffer_8js_a23efaf497399fa716c3e05b817cb7d0c}{Uint8\+Array}}, \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_acf0a8b41f00a22e21672c8b3768a0618}{url}}, \mbox{\hyperlink{get-intrinsic_2index_8js_aacce635d68067370c70caa2381ea1040}{value}}, and \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a355f75ff9c8abb4bda3db7af40f2ee4a}{write}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{object-hash_2index_8js_aaa2b9ac9bf7605a107b2084c39975f53_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=219pt]{object-hash_2index_8js_aaa2b9ac9bf7605a107b2084c39975f53_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{object-hash_2index_8js_a3eca37c9aac9a17870baa116339724e3}\index{index.js@{index.js}!crypto@{crypto}}
+\index{crypto@{crypto}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{crypto}{crypto}}
+{\footnotesize\ttfamily \label{object-hash_2index_8js_a3eca37c9aac9a17870baa116339724e3} 
+var crypto = \mbox{\hyperlink{__stream__duplex_8js_a472985ef50ed84466f5fce48a490c29b}{require}}(\textquotesingle{}crypto\textquotesingle{})}
+
+\Hypertarget{object-hash_2index_8js_a89a39885d6416bf32ef38078612633b5}\index{index.js@{index.js}!encodings@{encodings}}
+\index{encodings@{encodings}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{encodings}{encodings}}
+{\footnotesize\ttfamily \label{object-hash_2index_8js_a89a39885d6416bf32ef38078612633b5} 
+var encodings = \mbox{[}\textquotesingle{}\mbox{\hyperlink{cjs_2internal_2operators_2buffer_8js_a838d54b935df11eff7928ba8da636891}{buffer}}\textquotesingle{}, \textquotesingle{}\mbox{\hyperlink{conversions_8js_ad69b853a65b1b99def2b5b90d9bd63e9}{hex}}\textquotesingle{}, \textquotesingle{}\mbox{\hyperlink{node-forge_2lib_2util_8js_aa5dc99428648b9dc3ee403ffb2319c8c}{binary}}\textquotesingle{}, \textquotesingle{}\mbox{\hyperlink{util_2dist_2index_8cjs_8js_a9ff01f6fde00861281ba5efcec6c267d}{base64}}\textquotesingle{}\mbox{]}}
+
+\Hypertarget{object-hash_2index_8js_af2836014938e5fb6078778620cb19081}\index{index.js@{index.js}!exports@{exports}}
+\index{exports@{exports}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \label{object-hash_2index_8js_af2836014938e5fb6078778620cb19081} 
+exports = module.\+exports = \mbox{\hyperlink{fallback_8js_a7a2c4529feef6497d9bbe8130334a9ad}{object\+Hash}}}
+
+Exported function
+
+Options\+:
+
+
+\begin{DoxyItemize}
+\item {\ttfamily algorithm} hash algo to be used by this instance\+: \texorpdfstring{$\ast$}{*}\textquotesingle{}sha1\textquotesingle{}, \textquotesingle{}md5\textquotesingle{}
+\item {\ttfamily exclude\+Values} \{true\texorpdfstring{$\vert$}{|}\texorpdfstring{$\ast$}{*}false\} hash object keys, values ignored
+\item {\ttfamily encoding} hash encoding, supports \textquotesingle{}buffer\textquotesingle{}, \textquotesingle{}\texorpdfstring{$\ast$}{*}hex\textquotesingle{}, \textquotesingle{}binary\textquotesingle{}, \textquotesingle{}base64\textquotesingle{}
+\item {\ttfamily ignore\+Unknown} \{true\texorpdfstring{$\vert$}{|}\texorpdfstring{$\ast$}{*}false\} ignore unknown object types
+\item {\ttfamily replacer} optional function that replaces values before hashing
+\item {\ttfamily respect\+Function\+Properties} \{\texorpdfstring{$\ast$}{*}true\texorpdfstring{$\vert$}{|}false\} consider function properties when hashing
+\item {\ttfamily respect\+Function\+Names} \{\texorpdfstring{$\ast$}{*}true\texorpdfstring{$\vert$}{|}false\} consider \textquotesingle{}name\textquotesingle{} property of functions for hashing
+\item {\ttfamily respect\+Type} \{\texorpdfstring{$\ast$}{*}true\texorpdfstring{$\vert$}{|}false\} Respect special properties (prototype, constructor) when hashing to distinguish between types
+\item {\ttfamily unordered\+Arrays} \{true\texorpdfstring{$\vert$}{|}\texorpdfstring{$\ast$}{*}false\} Sort all arrays before hashing
+\item {\ttfamily unordered\+Sets} \{\texorpdfstring{$\ast$}{*}true\texorpdfstring{$\vert$}{|}false\} Sort {\ttfamily Set} and {\ttfamily Map} instances before hashing
+\item = default
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{object\}} & object value to hash \\
+\hline
+{\em \{object\}} & options hashing options \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{string\} hash value @api public 
+\end{DoxyReturn}
+\Hypertarget{object-hash_2index_8js_a879cece9b4b8c5bb50472ada03e48b99}\index{index.js@{index.js}!hashes@{hashes}}
+\index{hashes@{hashes}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{hashes}{hashes}}
+{\footnotesize\ttfamily \label{object-hash_2index_8js_a879cece9b4b8c5bb50472ada03e48b99} 
+var hashes = crypto.\+get\+Hashes ? crypto.\+get\+Hashes().\mbox{\hyperlink{express_2lib_2router_2index_8js_acab0c09ac73e7a3c85a21fa773e9b8b0}{slice}}() \+: \mbox{[}\textquotesingle{}\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_a86e184a184e03e47b460100f5bc03c0b}{sha1}}\textquotesingle{}, \textquotesingle{}\mbox{\hyperlink{_0dgoogle-cloud_2storage_2node__modules_2uuid_2dist_2esm-browser_2md5_8js_a310ea9a406ea8c943c0e540b5f0a6fed}{md5}}\textquotesingle{}\mbox{]}}
+
+\Hypertarget{object-hash_2index_8js_aeda9a9055510aeefdf072619f8e1de47}\index{index.js@{index.js}!keys@{keys}}
+\index{keys@{keys}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{keys}{keys}}
+{\footnotesize\ttfamily \label{object-hash_2index_8js_aeda9a9055510aeefdf072619f8e1de47} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} keys}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}})\{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{fallback_8js_a7a2c4529feef6497d9bbe8130334a9ad}{objectHash}}(\textcolor{keywordtype}{object},\ \{excludeValues:\ \textcolor{keyword}{true},\ algorithm:\ \textcolor{stringliteral}{'sha1'},\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aace6cbf6b92481670f8b8421548f7584}{encoding}}:\ \textcolor{stringliteral}{'hex'}\});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{object-hash_2index_8js_af5fae89aeaa816021dd8cf9ff72f4356}\index{index.js@{index.js}!keysMD5@{keysMD5}}
+\index{keysMD5@{keysMD5}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{keysMD5}{keysMD5}}
+{\footnotesize\ttfamily \label{object-hash_2index_8js_af5fae89aeaa816021dd8cf9ff72f4356} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} keys\+MD5}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}})\{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{fallback_8js_a7a2c4529feef6497d9bbe8130334a9ad}{objectHash}}(\textcolor{keywordtype}{object},\ \{algorithm:\ \textcolor{stringliteral}{'md5'},\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aace6cbf6b92481670f8b8421548f7584}{encoding}}:\ \textcolor{stringliteral}{'hex'},\ excludeValues:\ \textcolor{keyword}{true}\});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{object-hash_2index_8js_ab91a467c56b6f82aba34303dcdf3bf81}\index{index.js@{index.js}!MD5@{MD5}}
+\index{MD5@{MD5}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{MD5}{MD5}}
+{\footnotesize\ttfamily \label{object-hash_2index_8js_ab91a467c56b6f82aba34303dcdf3bf81} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} MD5}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}})\{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{fallback_8js_a7a2c4529feef6497d9bbe8130334a9ad}{objectHash}}(\textcolor{keywordtype}{object},\ \{algorithm:\ \textcolor{stringliteral}{'md5'},\ \mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aace6cbf6b92481670f8b8421548f7584}{encoding}}:\ \textcolor{stringliteral}{'hex'}\});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{object-hash_2index_8js_acb26749b7e01de367b298e8394f6fbdc}\index{index.js@{index.js}!sha1@{sha1}}
+\index{sha1@{sha1}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{sha1}{sha1}}
+{\footnotesize\ttfamily \label{object-hash_2index_8js_acb26749b7e01de367b298e8394f6fbdc} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} sha1}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}})\{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{fallback_8js_a7a2c4529feef6497d9bbe8130334a9ad}{objectHash}}(\textcolor{keywordtype}{object});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Exported sugar methods
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{object\}} & object value to hash \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{string\} hash value @api public 
+\end{DoxyReturn}
+\Hypertarget{object-hash_2index_8js_ae2475e10618961c050dcba04e8c42331}\index{index.js@{index.js}!strict@{strict}}
+\index{strict@{strict}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{strict}{strict}}
+{\footnotesize\ttfamily \label{object-hash_2index_8js_ae2475e10618961c050dcba04e8c42331} 
+\mbox{\hyperlink{application_8js_a8192500ed5d08ae60d3778b54729bd51}{use}} strict}
+
+\Hypertarget{object-hash_2index_8js_a7d3c8c86ce58d9fce992a5b2b25f65eb}\index{index.js@{index.js}!writeToStream@{writeToStream}}
+\index{writeToStream@{writeToStream}!index.js@{index.js}}
+\doxysubsubsection{\texorpdfstring{writeToStream}{writeToStream}}
+{\footnotesize\ttfamily \label{object-hash_2index_8js_a7d3c8c86ce58d9fce992a5b2b25f65eb} 
+\mbox{\hyperlink{database-compat_2dist_2index_8standalone_8js_aa4072ba4b6b56b0fb6f4801f17ab2b34}{exports}} write\+To\+Stream}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{keyword}{function}(\mbox{\hyperlink{jsonwebtoken_2node__modules_2jwa_2index_8js_a1fc9da95906c4663ba86181e6ff7f9fa}{object}},\ options,\ \mbox{\hyperlink{debug_2src_2node_8js_a822bf74d422c61e6caa292f739dc4786}{stream}})\ \{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{if}\ (typeof\ \mbox{\hyperlink{debug_2src_2node_8js_a822bf74d422c61e6caa292f739dc4786}{stream}}\ ===\ \textcolor{stringliteral}{'undefined'})\ \{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{debug_2src_2node_8js_a822bf74d422c61e6caa292f739dc4786}{stream}}\ =\ options;}
+\DoxyCodeLine{\ \ \ \ options\ =\ \{\};}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ options\ =\ \mbox{\hyperlink{object-hash_2index_8js_a50f79e5b7b877b7412ea8bc678a4136c}{applyDefaults}}(\textcolor{keywordtype}{object},\ options);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{object-hash_2index_8js_aaa2b9ac9bf7605a107b2084c39975f53}{typeHasher}}(options,\ \mbox{\hyperlink{debug_2src_2node_8js_a822bf74d422c61e6caa292f739dc4786}{stream}}).dispatch(\textcolor{keywordtype}{object});}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+Expose streaming API
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{object\}} & object Value to serialize \\
+\hline
+{\em \{object\}} & options Options, as for \doxylink{pbe_8js_a4e8eeb941272ccb92c8911eb60686dd3}{hash()} \\
+\hline
+{\em \{object\}} & stream \doxylink{class_a}{A} stream to write the serializiation to @api public \\
+\hline
+\end{DoxyParams}

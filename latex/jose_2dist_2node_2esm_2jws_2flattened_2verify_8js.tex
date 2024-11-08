@@ -1,0 +1,42 @@
+\doxysection{backend/node\+\_\+modules/jose/dist/node/esm/jws/flattened/verify.js File Reference}
+\hypertarget{jose_2dist_2node_2esm_2jws_2flattened_2verify_8js}{}\label{jose_2dist_2node_2esm_2jws_2flattened_2verify_8js}\index{backend/node\_modules/jose/dist/node/esm/jws/flattened/verify.js@{backend/node\_modules/jose/dist/node/esm/jws/flattened/verify.js}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+function \mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} \mbox{\hyperlink{jose_2dist_2node_2esm_2jws_2flattened_2verify_8js_aa7795bba55c3aa941e38dc85ce08d314}{flattened\+Verify}} (\mbox{\hyperlink{jwtaccess_8js_a3877814942bfa89ef869ee7db0482845}{jws}}, key, options)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{jose_2dist_2node_2esm_2jws_2flattened_2verify_8js_a59be084da8908b7d77ff34b25cd84488}{import}} \{ \mbox{\hyperlink{util_2dist_2index_8cjs_8js_a80b796b0a4bd15bbafa042eda7857b70}{decode}} as \mbox{\hyperlink{jose_2dist_2browser_2index_8js_aca17f042e0909acd28ea29497c3011e5}{base64url}} \} from \textquotesingle{}../../runtime/\mbox{\hyperlink{esm_2src_2file_8js_a73ffb0a3b9f028910adc01ac31153d46}{base64url.\+js}}\textquotesingle{}
+\item 
+\mbox{\hyperlink{component_2dist_2esm_2index_8esm2017_8js_a953be46b94f595d839e88a6d3d270309}{import}} \mbox{\hyperlink{jose_2dist_2browser_2runtime_2verify_8js_aef27cf90f7f5269ad7122f8f7f14c457}{verify}} from runtime \mbox{\hyperlink{jose_2dist_2browser_2runtime_2verify_8js_aef27cf90f7f5269ad7122f8f7f14c457}{verify}} \mbox{\hyperlink{jose_2dist_2node_2esm_2jws_2flattened_2verify_8js_ac1d1a2e860606bfd14562c71619b254b}{js}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{jose_2dist_2node_2esm_2jws_2flattened_2verify_8js_aa7795bba55c3aa941e38dc85ce08d314}\index{verify.js@{verify.js}!flattenedVerify@{flattenedVerify}}
+\index{flattenedVerify@{flattenedVerify}!verify.js@{verify.js}}
+\doxysubsubsection{\texorpdfstring{flattenedVerify()}{flattenedVerify()}}
+{\footnotesize\ttfamily \label{jose_2dist_2node_2esm_2jws_2flattened_2verify_8js_aa7795bba55c3aa941e38dc85ce08d314} 
+function \mbox{\hyperlink{util_2dist_2index_8cjs_8js_af516a86cc3f563f4c12f98f31f1e2e57}{async}} flattened\+Verify (\begin{DoxyParamCaption}\item[{}]{jws}{, }\item[{}]{key}{, }\item[{}]{options}{}\end{DoxyParamCaption})}
+
+
+
+References \mbox{\hyperlink{logger_2dist_2esm_2index_8esm5_8js_a0adf123df8967a14b5bdd9ff3bbe2d0c}{\+\_\+a}}, \mbox{\hyperlink{cipher_8js_a92f800b4fe48ec339baf687c1acf8ec6}{algorithms}}, \mbox{\hyperlink{_0dprotobufjs_2base64_2index_8js_a8de07c85b339a37a7668929dac4342a7}{b64}}, \mbox{\hyperlink{jose_2dist_2browser_2index_8js_aca17f042e0909acd28ea29497c3011e5}{base64url}}, \mbox{\hyperlink{browser_2lib_2check__key__type_8js_a82dc03bdbeb5708689e774b54cb1258f}{check\+Key\+Type}}, \mbox{\hyperlink{node_2cjs_2lib_2buffer__utils_8js_af776a17274b57c50f3e7b020e1fcd88e}{concat}}, \mbox{\hyperlink{_0dprotobufjs_2utf8_2tests_2index_8js_a606a87425a3a6c440c6fdcbfb72c9b68}{data}}, \mbox{\hyperlink{dbcs-codec_8js_ad3d625998d0232650afb4cf3c50dc9f1}{decoder}}, \mbox{\hyperlink{dbcs-codec_8js_a2e3d2e577cc69881c4ec00c7b8005e35}{encoder}}, \mbox{\hyperlink{browser_2lib_2is__disjoint_8js_a646b4adabaa50b9fb47d9857d36b095d}{is\+Disjoint}}, \mbox{\hyperlink{_0dgoogle-cloud_2firestore_2build_2src_2util_8js_abf86e241701120aea6dfd247bfc055cd}{is\+Object}}, \mbox{\hyperlink{jose_2dist_2node_2cjs_2util_2errors_8js_ad44a2cbd0643114639e4e2a596339dcc}{JOSEAlg\+Not\+Allowed}}, \mbox{\hyperlink{json-bigint_2lib_2stringify_8js_aec316efdeb7b2e5358b7d50869858da1}{JSON}}, \mbox{\hyperlink{jwtaccess_8js_a3877814942bfa89ef869ee7db0482845}{jws}}, \mbox{\hyperlink{jose_2dist_2node_2cjs_2util_2errors_8js_a5bd0bb3ceaec8f1632491891511cb9aa}{JWSInvalid}}, \mbox{\hyperlink{jose_2dist_2node_2cjs_2util_2errors_8js_ab7fbe8a23f6984dd4f6d59971771d14b}{JWSSignature\+Verification\+Failed}}, \mbox{\hyperlink{__get_tag_8js_aa38772edcc6ff00766e19b36ce8073a8}{Map}}, \mbox{\hyperlink{lodash_2core_8js_a348c112a244660a2f280cda892658c24}{result}}, \mbox{\hyperlink{util_2dist_2index_8cjs_8js_a49c27936a5413e9cfe35de3e98a0d4d7}{signature}}, \mbox{\hyperlink{get-intrinsic_2index_8js_ae6aa4817f0f49345b718ea6b4abae197}{undefined}}, \mbox{\hyperlink{browser_2lib_2validate__algorithms_8js_a858892d0dd6231ace053384140ea5f3d}{validate\+Algorithms}}, \mbox{\hyperlink{browser_2lib_2validate__crit_8js_ae9d46eb9450c36fbef9dd81e34dff5e0}{validate\+Crit}}, and \mbox{\hyperlink{jose_2dist_2browser_2runtime_2verify_8js_aef27cf90f7f5269ad7122f8f7f14c457}{verify}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{jose_2dist_2node_2esm_2jws_2flattened_2verify_8js_a59be084da8908b7d77ff34b25cd84488}\index{verify.js@{verify.js}!import@{import}}
+\index{import@{import}!verify.js@{verify.js}}
+\doxysubsubsection{\texorpdfstring{import}{import}}
+{\footnotesize\ttfamily \label{jose_2dist_2node_2esm_2jws_2flattened_2verify_8js_a59be084da8908b7d77ff34b25cd84488} 
+import \{ \mbox{\hyperlink{util_2dist_2index_8cjs_8js_a80b796b0a4bd15bbafa042eda7857b70}{decode}} as \mbox{\hyperlink{jose_2dist_2browser_2index_8js_aca17f042e0909acd28ea29497c3011e5}{base64url}} \} from \textquotesingle{}../../runtime/\mbox{\hyperlink{esm_2src_2file_8js_a73ffb0a3b9f028910adc01ac31153d46}{base64url.\+js}}\textquotesingle{}}
+
+\Hypertarget{jose_2dist_2node_2esm_2jws_2flattened_2verify_8js_ac1d1a2e860606bfd14562c71619b254b}\index{verify.js@{verify.js}!js@{js}}
+\index{js@{js}!verify.js@{verify.js}}
+\doxysubsubsection{\texorpdfstring{js}{js}}
+{\footnotesize\ttfamily \label{jose_2dist_2node_2esm_2jws_2flattened_2verify_8js_ac1d1a2e860606bfd14562c71619b254b} 
+\mbox{\hyperlink{component_2dist_2esm_2index_8esm2017_8js_a953be46b94f595d839e88a6d3d270309}{import}} \mbox{\hyperlink{browser_2lib_2validate__algorithms_8js_a858892d0dd6231ace053384140ea5f3d}{validate\+Algorithms}} from lib validate\+\_\+algorithms js}
+

@@ -1,0 +1,15 @@
+<map id="BaseExternalAccountClient::requestAsync" name="BaseExternalAccountClient::requestAsync">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,71,187,111"/>
+<area shape="poly" id="edge7_Node000001_Node000001" title=" " alt="" coords="53,71,51,61,58,52,73,46,96,44,121,46,136,53,133,58,119,52,96,49,74,51,61,56,56,62,58,69"/>
+<area shape="rect" id="Node000002" href="$class_base_external_account_client.html#a8caad074ecc8066c195db462a1632828" title=" " alt="" coords="235,13,416,54"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="179,68,226,56,227,61,180,73"/>
+<area shape="rect" id="Node000005" href="$class_base_external_account_client.html#a7cbb6f741d620990412edb466f7c3e57" title=" " alt="" coords="693,71,879,111"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="187,88,678,88,678,94,187,94"/>
+<area shape="rect" id="Node000006" href="$cjs_2internal_2ajax_2ajax_8js.html#a45744f6308afbbcefdd2479b2c4bd5c5" title=" " alt="" coords="261,129,390,154"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="187,108,249,122,248,127,186,114"/>
+<area shape="rect" id="Node000003" href="$class_base_external_account_client.html#ad0804062ac1325329b9f76ac603ac74c" title=" " alt="" coords="464,13,645,54"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="416,31,449,31,449,36,416,36"/>
+<area shape="rect" id="Node000004" href="$class_base_external_account_client.html#ada53ec42a80860f6e777d00cd501e20d" title=" " alt="" coords="695,5,877,46"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="646,28,679,27,680,32,646,33"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="640,52,687,64,686,69,639,57"/>
+</map>
