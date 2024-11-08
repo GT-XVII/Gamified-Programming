@@ -1,9 +1,0 @@
-<map id="ReplaySubject::next" name="ReplaySubject::next">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,145,56"/>
-<area shape="rect" id="Node000002" href="$class_replay_subject.html#aa78dc18b4ba03a0e56ef16eb4da0dfd0" title=" " alt="" coords="193,5,371,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,32,177,28,178,34,145,38"/>
-<area shape="rect" id="Node000003" href="$event-target-shim_8js.html#a0a94f0d223a31d755d48ed03a64873ab" title=" " alt="" coords="242,55,322,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="145,49,227,58,226,64,145,54"/>
-<area shape="rect" id="Node000004" href="$event-target-shim_8js.html#a6b2fd9b8f5131cd07c19f9ff4b2b3666" title=" " alt="" coords="419,55,457,80"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="322,65,404,65,404,70,322,70"/>
-</map>

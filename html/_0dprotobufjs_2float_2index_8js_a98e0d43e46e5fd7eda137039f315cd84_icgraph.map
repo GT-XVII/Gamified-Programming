@@ -1,8 +1,0 @@
-<map id="writeUintBE" name="writeUintBE">
-<area shape="rect" id="Node000001" title=" " alt="" coords="117,43,208,68"/>
-<area shape="rect" id="Node000002" href="$_0dprotobufjs_2float_2index_8js.html#a5939ae380dc9524f05aed59589d20383" title=" " alt="" coords="6,5,68,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="102,40,67,30,69,25,103,35"/>
-<area shape="rect" id="Node000003" href="$protobufjs_2dist_2light_2protobuf_8js.html#ad8544724c289e628d9b1b4b5d59f1c38" title=" " alt="" coords="5,79,69,104"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="102,76,70,85,68,80,101,70"/>
-<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="58,66,50,60,37,57,24,59,18,64,16,70,20,77,15,79,11,70,13,61,22,54,37,52,53,55,61,61"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="QueueScheduler" name="QueueScheduler">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,275,112,341"/>
-<area shape="rect" id="Node000002" href="$class_async_scheduler.html" title=" " alt="" coords="6,140,112,227"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="61,242,61,275,56,275,56,242"/>
-<area shape="rect" id="Node000003" href="$class_scheduler.html" title=" " alt="" coords="10,5,107,92"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="61,107,61,140,56,140,56,107"/>
-</map>

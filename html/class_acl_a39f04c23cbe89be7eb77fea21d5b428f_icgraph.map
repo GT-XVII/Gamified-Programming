@@ -1,9 +1,0 @@
-<map id="Acl::makeAclObject_" name="Acl::makeAclObject_">
-<area shape="rect" id="Node000001" title=" " alt="" coords="141,55,285,80"/>
-<area shape="rect" id="Node000002" href="$class_acl.html#a144043280ae90ddbfcfb24a1c4b07f61" title=" " alt="" coords="14,5,84,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="153,52,83,31,85,26,154,47"/>
-<area shape="rect" id="Node000003" href="$class_acl.html#a953be0b9b3aac18edba208ce676087ed" title=" " alt="" coords="16,55,82,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="125,70,83,70,83,65,125,65"/>
-<area shape="rect" id="Node000004" href="$class_acl.html#affdc480364c3f63c7976aa44068add42" title=" " alt="" coords="5,104,93,130"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="154,88,94,106,92,101,152,83"/>
-</map>

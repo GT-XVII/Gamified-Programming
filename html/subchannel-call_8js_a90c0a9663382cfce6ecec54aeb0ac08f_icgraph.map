@@ -1,8 +1,0 @@
-<map id="mapHttpStatusCode" name="mapHttpStatusCode">
-<area shape="rect" id="Node000001" title=" " alt="" coords="390,13,530,38"/>
-<area shape="rect" id="Node000002" href="$class_http2_subchannel_call.html#a4e662060d7da85f955a859ea983cd3c5" title=" " alt="" coords="5,5,150,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="374,25,342,24,198,24,150,26,150,20,198,19,342,19,374,20"/>
-<area shape="rect" id="Node000003" href="$class_http2_subchannel_call.html#a8e3adddf6f5615e0b159fedeff3cb0f8" title=" " alt="" coords="198,33,342,74"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="375,41,343,46,342,40,374,36"/>
-<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="182,44,149,39,150,34,183,38"/>
-</map>

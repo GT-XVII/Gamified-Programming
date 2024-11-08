@@ -1,8 +1,0 @@
-<map id="emitCloseNT" name="emitCloseNT">
-<area shape="rect" id="Node000001" title=" " alt="" coords="315,5,413,31"/>
-<area shape="rect" id="Node000002" href="$destroy_8js.html#ac33c2219af656169d6b17b688b11aea7" title=" " alt="" coords="5,5,70,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="300,21,70,21,70,16,300,16"/>
-<area shape="rect" id="Node000003" href="$destroy_8js.html#ac7f848d43457c79fc4ce912222a9435a" title=" " alt="" coords="118,31,267,56"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="300,30,268,35,267,30,299,25"/>
-<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="102,31,70,26,71,21,103,26"/>
-</map>

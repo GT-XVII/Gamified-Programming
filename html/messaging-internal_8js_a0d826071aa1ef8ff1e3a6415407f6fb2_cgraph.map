@@ -1,7 +1,0 @@
-<map id="validateAps" name="validateAps">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,95,56"/>
-<area shape="rect" id="Node000002" href="$messaging-internal_8js.html#a176c46b1e0af63d10e280155a6e7daed" title=" " alt="" coords="148,5,264,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,34,132,27,133,33,96,39"/>
-<area shape="rect" id="Node000003" href="$messaging-internal_8js.html#aba6bb6d0ee8e15f10c6b046ca4ec007f" title=" " alt="" coords="143,55,269,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="96,48,128,53,127,58,95,53"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="OAuth2Client::revokeCredentialsAsync" name="OAuth2Client::revokeCredentialsAsync">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,218,46"/>
-<area shape="rect" id="Node000002" href="$class_o_auth2_client.html#a945b0fa9844b2e6e46823a9c97373b33" title=" " alt="" coords="266,13,447,38"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="218,23,250,23,250,28,218,28"/>
-<area shape="rect" id="Node000003" href="$class_o_auth2_client.html#ab2e9a5e4690f8f623f2e38add698d66f" title=" " alt="" coords="495,13,727,38"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="448,23,479,23,479,28,448,28"/>
-</map>

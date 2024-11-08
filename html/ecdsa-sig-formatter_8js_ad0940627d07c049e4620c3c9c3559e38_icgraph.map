@@ -1,7 +1,0 @@
-<map id="signatureAsBuffer" name="signatureAsBuffer">
-<area shape="rect" id="Node000001" title=" " alt="" coords="135,31,260,56"/>
-<area shape="rect" id="Node000002" href="$ecdsa-sig-formatter_8js.html#a75e0aa4333310d79127bd6c67131757f" title=" " alt="" coords="5,5,87,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,33,87,28,87,22,120,28"/>
-<area shape="rect" id="Node000003" href="$ecdsa-sig-formatter_8js.html#a0e27b7d90509144bf057a413bf76f164" title=" " alt="" coords="6,55,86,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="120,59,87,64,86,59,119,53"/>
-</map>

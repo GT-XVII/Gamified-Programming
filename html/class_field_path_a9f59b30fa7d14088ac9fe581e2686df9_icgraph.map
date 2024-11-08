@@ -1,9 +1,0 @@
-<map id="FieldPath::documentId" name="FieldPath::documentId">
-<area shape="rect" id="Node000001" title=" " alt="" coords="541,5,694,31"/>
-<area shape="rect" id="Node000002" href="$class_query.html#af6e6d18efa573299b98a985d7f932957" title=" " alt="" coords="333,5,493,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="526,21,494,21,494,16,526,16"/>
-<area shape="rect" id="Node000003" href="$class_query.html#ad276548bb1ec2829e457a6b01b15957e" title=" " alt="" coords="153,5,285,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="318,21,286,21,286,16,318,16"/>
-<area shape="rect" id="Node000004" href="$class_query.html#a09b549eea59e9d2d0d81b07b1b34bb77" title=" " alt="" coords="5,5,105,31"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="137,21,105,21,105,16,137,16"/>
-</map>

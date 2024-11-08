@@ -1,7 +1,0 @@
-<map id="DatabaseService::scheduleTokenRefresh" name="DatabaseService::scheduleTokenRefresh">
-<area shape="rect" id="Node000001" title=" " alt="" coords="483,5,664,46"/>
-<area shape="rect" id="Node000002" href="$class_database_service.html#aca74b0f89c4cc546f47f6be9d62ba817" title=" " alt="" coords="257,5,435,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="468,28,435,28,435,23,468,23"/>
-<area shape="rect" id="Node000003" href="$class_database_service.html#a0ccf145f437ff4fbd9b45ce137c209a9" title=" " alt="" coords="5,13,209,38"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="241,28,209,28,209,23,241,23"/>
-</map>

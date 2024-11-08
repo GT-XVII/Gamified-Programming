@@ -1,7 +1,0 @@
-<map id="GrpcClient::createStub" name="GrpcClient::createStub">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,160,56"/>
-<area shape="rect" id="Node000002" href="$class_grpc_client.html#adb03abf334213fe4d6a3c7f66976aac4" title=" " alt="" coords="208,5,411,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,32,192,29,192,34,160,38"/>
-<area shape="rect" id="Node000003" href="$parse_int_8js.html#a04ee837a5f7721fcb0ea2d152162ef92" title=" " alt="" coords="275,55,344,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="160,49,260,60,259,65,159,54"/>
-</map>

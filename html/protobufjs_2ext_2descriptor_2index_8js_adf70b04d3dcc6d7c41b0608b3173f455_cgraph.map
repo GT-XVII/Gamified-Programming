@@ -1,9 +1,0 @@
-<map id="fromDescriptorOptions" name="fromDescriptorOptions">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,158,56"/>
-<area shape="rect" id="Node000002" href="$protobufjs_2ext_2descriptor_2index_8js.html#af609941cdebbb544c1be1d63dddab6f3" title=" " alt="" coords="206,31,293,56"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="158,41,190,41,190,46,158,46"/>
-<area shape="rect" id="Node000003" href="$json-bigint_2lib_2stringify_8js.html#abd4075a8f329b0ccafd81359c952a9df" title=" " alt="" coords="341,5,379,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="293,31,325,23,326,29,294,36"/>
-<area shape="rect" id="Node000004" href="$ed25519_8js.html#a91b180d4aa37a81e516896ad77d1837c" title=" " alt="" coords="341,55,379,80"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="294,50,326,58,325,63,293,56"/>
-</map>

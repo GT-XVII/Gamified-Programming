@@ -1,9 +1,0 @@
-<map id="QueryUtil::_getResponse" name="QueryUtil::_getResponse">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,174,56"/>
-<area shape="rect" id="Node000002" href="$class_query_util.html#a974d66ec9d49d52b6d29c69946fed756" title=" " alt="" coords="222,5,353,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="174,30,206,26,206,31,175,35"/>
-<area shape="rect" id="Node000004" href="$reject_8js.html#a94bc21104657e301a8ec194b529feaed" title=" " alt="" coords="261,55,314,80"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="174,51,246,60,245,65,174,56"/>
-<area shape="rect" id="Node000003" href="$database-compat_2dist_2index_8standalone_8js.html#ad061d61e10918d5b27e272593239c0e7" title=" " alt="" coords="401,5,439,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="353,16,385,16,385,21,353,21"/>
-</map>

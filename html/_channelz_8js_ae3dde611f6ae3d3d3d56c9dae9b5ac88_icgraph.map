@@ -1,7 +1,0 @@
-<map id="getServerMessage" name="getServerMessage">
-<area shape="rect" id="Node000001" title=" " alt="" coords="141,31,271,56"/>
-<area shape="rect" id="Node000002" href="$_channelz_8js.html#a700bf019dba8101f12e5277b651d9e5b" title=" " alt="" coords="9,5,89,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,33,89,27,90,22,125,28"/>
-<area shape="rect" id="Node000003" href="$_channelz_8js.html#ae0bdb42ae1e7f559831f064c7c1dd227" title=" " alt="" coords="5,55,93,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="125,59,93,63,93,58,125,53"/>
-</map>

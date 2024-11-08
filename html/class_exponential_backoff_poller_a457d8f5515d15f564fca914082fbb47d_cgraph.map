@@ -1,9 +1,0 @@
-<map id="ExponentialBackoffPoller::repoll" name="ExponentialBackoffPoller::repoll">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,71,173,111"/>
-<area shape="rect" id="Node000002" href="$class_exponential_backoff_poller.html#ae3ae5ec8e96bfdae7397e076d347930d" title=" " alt="" coords="221,5,388,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="157,68,219,49,221,54,159,73"/>
-<area shape="rect" id="Node000003" href="$class_exponential_backoff_poller.html#a799f46710cf42c90382da5e8b5adefb8" title=" " alt="" coords="221,71,388,111"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="173,88,205,88,205,94,173,94"/>
-<area shape="rect" id="Node000004" href="$reject_8js.html#a94bc21104657e301a8ec194b529feaed" title=" " alt="" coords="278,136,331,161"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="168,109,263,135,262,140,167,114"/>
-</map>

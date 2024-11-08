@@ -1,7 +1,0 @@
-<map id="InterceptingCall::start" name="InterceptingCall::start">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,46,152,72"/>
-<area shape="rect" id="Node000002" href="$class_intercepting_call.html#acd4699b501c5883d06ad22895b71f042" title=" " alt="" coords="200,5,366,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,44,184,39,184,44,153,50"/>
-<area shape="rect" id="Node000003" href="$class_intercepting_call.html#a77a79973b649d60acc8c1e856544fdfa" title=" " alt="" coords="200,71,366,111"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="152,68,184,73,184,78,152,73"/>
-</map>

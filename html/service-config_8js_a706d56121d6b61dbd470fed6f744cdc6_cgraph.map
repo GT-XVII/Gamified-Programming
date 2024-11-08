@@ -1,7 +1,0 @@
-<map id="validateName" name="validateName">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,107,56"/>
-<area shape="rect" id="Node000002" href="$verifier_8js.html#a499da133dea4d1a4ef64e31667ec221a" title=" " alt="" coords="155,5,213,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,31,139,24,140,30,108,36"/>
-<area shape="rect" id="Node000003" href="$unset_8js.html#a0fdf4126f4ac73e5b0e8d785ff9e82a7" title=" " alt="" coords="157,55,210,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="108,50,142,57,141,62,107,56"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="StreamProxy::statusMetadataHelper" name="StreamProxy::statusMetadataHelper">
-<area shape="rect" id="Node000001" title=" " alt="" coords="243,27,438,68"/>
-<area shape="rect" id="Node000002" href="$class_stream_proxy.html#a27016556aae3c3c78631d12207105697" title=" " alt="" coords="5,5,195,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="227,36,195,32,196,27,228,31"/>
-<area shape="rect" id="Node000003" href="$class_stream_proxy.html#a2c214d140520db88e1a217db91b98a86" title=" " alt="" coords="5,55,195,96"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="228,63,196,67,195,62,227,58"/>
-</map>

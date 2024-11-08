@@ -1,7 +1,0 @@
-<map id="FirebaseMessagingRequestHandler::invokeHttpRequestHandlerForSendResponse" name="FirebaseMessagingRequestHandler::invokeHttpRequestHandlerForSendResponse">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,237,87"/>
-<area shape="rect" id="Node000002" href="$class_firebase_messaging_request_handler.html#a527d816c0df73a58225957bac130fe66" title=" " alt="" coords="314,5,504,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="237,43,298,36,298,41,237,48"/>
-<area shape="rect" id="Node000003" href="$class_firebase_messaging_request_handler.html#a086940079e50278f08ca57167efd27e2" title=" " alt="" coords="285,71,533,111"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="237,69,269,73,269,78,237,75"/>
-</map>

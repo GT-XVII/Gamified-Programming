@@ -1,7 +1,0 @@
-<map id="MultiFactorInfo" name="MultiFactorInfo">
-<area shape="rect" id="Node000001" title=" " alt="" coords="61,5,237,133"/>
-<area shape="rect" id="Node000002" href="$class_phone_multi_factor_info.html" title=" " alt="" coords="5,181,140,288"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,147,99,182,94,180,111,145"/>
-<area shape="rect" id="Node000003" href="$class_totp_multi_factor_info.html" title=" " alt="" coords="165,181,287,288"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="187,145,204,180,199,182,182,147"/>
-</map>

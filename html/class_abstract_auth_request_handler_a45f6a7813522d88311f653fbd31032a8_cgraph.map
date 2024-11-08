@@ -1,9 +1,0 @@
-<map id="AbstractAuthRequestHandler::getAccountInfoByPhoneNumber" name="AbstractAuthRequestHandler::getAccountInfoByPhoneNumber">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,39,222,79"/>
-<area shape="rect" id="Node000002" href="$class_abstract_auth_request_handler.html#a1b97dfef2398a9288bf81602fe39b658" title=" " alt="" coords="270,5,461,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="222,42,253,38,254,43,223,47"/>
-<area shape="rect" id="Node000003" href="$class_abstract_auth_request_handler.html#abf30656b06e1a602299f7ecfbc596eee" title=" " alt="" coords="270,71,461,111"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="223,70,254,74,253,79,222,75"/>
-<area shape="rect" id="Node000004" href="$class_abstract_auth_request_handler.html#af30d61f8671a4ae40296adc4e2133cd1" title=" " alt="" coords="509,71,700,111"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="462,88,493,88,493,94,462,94"/>
-</map>

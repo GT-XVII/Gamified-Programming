@@ -1,9 +1,0 @@
-<map id="GeoPoint::latitude" name="GeoPoint::latitude">
-<area shape="rect" id="Node000001" title=" " alt="" coords="202,55,327,80"/>
-<area shape="rect" id="Node000002" href="$class_geo_point.html#a1a69220bf8c31551fcb207dddf8feee7" title=" " alt="" coords="5,5,154,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="198,53,130,34,131,29,200,48"/>
-<area shape="rect" id="Node000003" href="$class_geo_point.html#abcd26d23856d27911b982050499b408e" title=" " alt="" coords="16,55,143,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="186,70,143,70,143,65,186,65"/>
-<area shape="rect" id="Node000004" href="$class_geo_point.html#a003e93b6fad362160f051d5414065d8f" title=" " alt="" coords="17,104,142,130"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="200,87,131,106,130,101,198,82"/>
-</map>

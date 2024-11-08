@@ -1,7 +1,0 @@
-<map id="InstanceId::app" name="InstanceId::app">
-<area shape="rect" id="Node000001" title=" " alt="" coords="240,31,351,56"/>
-<area shape="rect" id="Node000002" href="$class_instance_id.html#a5f554cba459d42f7d05f1164001146ba" title=" " alt="" coords="21,5,176,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="224,37,176,31,177,26,225,32"/>
-<area shape="rect" id="Node000003" href="$class_instance_id.html#ad43db30ec831b4e7e32d966756fe1019" title=" " alt="" coords="5,55,192,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="225,55,193,59,192,53,224,49"/>
-</map>

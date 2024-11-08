@@ -1,5 +1,0 @@
-<map id="PickFirstLoadBalancer::onSubchannelStateUpdate" name="PickFirstLoadBalancer::onSubchannelStateUpdate">
-<area shape="rect" id="Node000001" title=" " alt="" coords="206,5,390,46"/>
-<area shape="rect" id="Node000002" href="$class_pick_first_load_balancer.html#a795b17565d132429aa4c4f1ca091f3a5" title=" " alt="" coords="5,5,158,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="190,28,158,28,158,23,190,23"/>
-</map>

@@ -1,9 +1,0 @@
-<map id="TransportManager::constructor" name="TransportManager::constructor">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,46,205,72"/>
-<area shape="rect" id="Node000002" href="$class_transport_manager.html#a702cd82a6fab9c35dd166120d1a89951" title=" " alt="" coords="253,46,473,72"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="205,56,237,56,237,62,205,62"/>
-<area shape="rect" id="Node000003" href="$class_transport_manager.html#a4717c74140b2b59497eeeb21245d68db" title=" " alt="" coords="521,5,678,46"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="458,43,505,36,506,42,459,48"/>
-<area shape="rect" id="Node000004" href="$class_web_socket_connection.html#a60edc7f46f096c5fb18569abc1599011" title=" " alt="" coords="522,71,677,111"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="463,70,507,76,507,81,462,75"/>
-</map>

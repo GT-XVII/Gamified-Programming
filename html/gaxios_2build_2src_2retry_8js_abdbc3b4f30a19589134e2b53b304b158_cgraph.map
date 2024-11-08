@@ -1,8 +1,0 @@
-<map id="getRetryConfig" name="getRetryConfig">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,115,31"/>
-<area shape="rect" id="Node000002" href="$gaxios_2build_2src_2retry_8js.html#a17fda8080289b16378ee6d08830aefe0" title=" " alt="" coords="351,5,428,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,16,335,16,335,21,115,21"/>
-<area shape="rect" id="Node000003" href="$gaxios_2build_2src_2retry_8js.html#a56a79a788853bb1f34413ba6faadc189" title=" " alt="" coords="163,31,303,56"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="116,24,148,28,147,34,115,29"/>
-<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="303,29,335,24,336,29,304,35"/>
-</map>

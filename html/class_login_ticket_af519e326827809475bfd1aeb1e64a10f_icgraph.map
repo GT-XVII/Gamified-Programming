@@ -1,7 +1,0 @@
-<map id="LoginTicket::getPayload" name="LoginTicket::getPayload">
-<area shape="rect" id="Node000001" title=" " alt="" coords="224,31,385,56"/>
-<area shape="rect" id="Node000002" href="$class_login_ticket.html#a1bf31f9ac54fb834d69aec2bbedf24e4" title=" " alt="" coords="5,5,176,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="208,35,176,31,176,26,208,29"/>
-<area shape="rect" id="Node000003" href="$class_login_ticket.html#aa870cdc0f3d9f54f1dd61c4fba9f89e7" title=" " alt="" coords="14,55,167,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="208,57,168,62,167,56,208,52"/>
-</map>

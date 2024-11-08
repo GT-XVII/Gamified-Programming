@@ -1,7 +1,0 @@
-<map id="Connection::onSecondaryConnectionLost_" name="Connection::onSecondaryConnectionLost_">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,243,46"/>
-<area shape="rect" id="Node000002" href="$class_connection.html#ae6b64fd2a4364f4e72221c50139392ee" title=" " alt="" coords="291,13,417,38"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="243,23,276,23,276,28,243,28"/>
-<area shape="rect" id="Node000003" href="$class_connection.html#ac7ecc4496de98a6d47fe45d0ff7e25fb" title=" " alt="" coords="465,13,671,38"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="418,23,449,23,449,28,418,28"/>
-</map>

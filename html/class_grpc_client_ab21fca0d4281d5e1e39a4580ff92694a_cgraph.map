@@ -1,9 +1,0 @@
-<map id="GrpcClient::loadProto" name="GrpcClient::loadProto">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,152,56"/>
-<area shape="rect" id="Node000002" href="$class_grpc_client.html#a2e38254218306a66fbf7ef33e65a69e1" title=" " alt="" coords="200,5,376,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,32,184,28,185,33,152,37"/>
-<area shape="rect" id="Node000003" href="$class_grpc_client.html#aa44bd961b499d5e5f0af8325e5c969c7" title=" " alt="" coords="200,55,376,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="152,49,184,53,184,58,152,55"/>
-<area shape="rect" id="Node000004" href="$class_grpc_client.html#abd6ea5c3dd7a869148c4aedc35244399" title=" " alt="" coords="424,55,605,80"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="376,65,409,65,409,70,376,70"/>
-</map>

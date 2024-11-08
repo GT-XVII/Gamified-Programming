@@ -1,7 +1,0 @@
-<map id="LogTimings::mapCloseEventToTimingInfo" name="LogTimings::mapCloseEventToTimingInfo">
-<area shape="rect" id="Node000001" title=" " alt="" coords="402,5,591,46"/>
-<area shape="rect" id="Node000002" href="$class_log_timings.html#a9efc1c462de22d064e2f08676836ca09" title=" " alt="" coords="188,5,354,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="386,28,354,28,354,23,386,23"/>
-<area shape="rect" id="Node000003" href="$class_log_timings.html#ae704d20e6fd36a16d3f0f8784c78186d" title=" " alt="" coords="5,13,140,38"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="172,28,140,28,140,23,172,23"/>
-</map>

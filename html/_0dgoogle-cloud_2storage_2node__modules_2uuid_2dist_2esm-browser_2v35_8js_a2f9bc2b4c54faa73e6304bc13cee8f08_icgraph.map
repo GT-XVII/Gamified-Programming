@@ -1,9 +1,0 @@
-<map id="stringToBytes" name="stringToBytes">
-<area shape="rect" id="Node000001" title=" " alt="" coords="121,55,222,80"/>
-<area shape="rect" id="Node000002" href="$_0dgoogle-cloud_2storage_2node__modules_2uuid_2dist_2v35_8js.html#a5c4d75fdb11e38e97373844dc7502bc3" title=" " alt="" coords="5,5,73,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,51,72,33,74,28,121,46"/>
-<area shape="rect" id="Node000003" href="$_0dgoogle-cloud_2storage_2node__modules_2uuid_2dist_2esm-browser_2v35_8js.html#a4083711a9fba2b7664198cfa93d0c7d0" title=" " alt="" coords="9,55,69,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="105,70,70,70,70,65,105,65"/>
-<area shape="rect" id="Node000004" href="$gaxios_2node__modules_2uuid_2dist_2commonjs-browser_2v35_8js.html#ae96b1e7a96f496bf253630d6b83a6427" title=" " alt="" coords="18,104,60,130"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="122,89,62,112,60,107,120,84"/>
-</map>

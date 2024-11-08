@@ -1,8 +1,0 @@
-<map id="genTypePartial" name="genTypePartial">
-<area shape="rect" id="Node000001" title=" " alt="" coords="121,43,228,68"/>
-<area shape="rect" id="Node000002" href="$encoder_8js.html#afa447f809948b922ef10fc9903dd513a" title=" " alt="" coords="5,5,73,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="110,41,72,30,74,25,111,35"/>
-<area shape="rect" id="Node000003" href="$protobufjs_2dist_2light_2protobuf_8js.html#ad8544724c289e628d9b1b4b5d59f1c38" title=" " alt="" coords="7,79,71,104"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="110,75,72,86,71,81,108,70"/>
-<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="61,66,54,60,39,57,25,59,18,64,16,70,20,77,15,79,11,70,14,61,23,54,39,52,56,55,65,61"/>
-</map>

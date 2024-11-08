@@ -1,7 +1,0 @@
-<map id="InternalChannel::close" name="InternalChannel::close">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,13,157,38"/>
-<area shape="rect" id="Node000002" href="$class_internal_channel.html#a54ac2751c03dfdbb9465533aa1427f9a" title=" " alt="" coords="205,13,395,38"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="157,23,189,23,189,28,157,28"/>
-<area shape="rect" id="Node000003" href="$class_internal_channel.html#ab4df6ddf99bc10bfebcc6aed920ea75d" title=" " alt="" coords="443,5,679,46"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="396,23,428,23,428,28,396,28"/>
-</map>

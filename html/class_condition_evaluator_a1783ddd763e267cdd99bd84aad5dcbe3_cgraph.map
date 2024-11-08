@@ -1,9 +1,0 @@
-<map id="ConditionEvaluator::evaluateCustomSignalCondition" name="ConditionEvaluator::evaluateCustomSignalCondition">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,47,221,88"/>
-<area shape="rect" id="Node000002" href="$condition-evaluator-internal_8js.html#a20e779426ffc65bea92778568d9d1a5b" title=" " alt="" coords="295,5,420,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="217,44,279,31,280,36,218,49"/>
-<area shape="rect" id="Node000003" href="$condition-evaluator-internal_8js.html#a1789d93c21bd8ec51c2bcb9896179c8f" title=" " alt="" coords="269,55,446,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="221,65,253,65,253,70,221,70"/>
-<area shape="rect" id="Node000004" href="$condition-evaluator-internal_8js.html#ae52251696b36067306cc41472f776e84" title=" " alt="" coords="301,104,414,130"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="218,86,287,100,286,105,217,91"/>
-</map>

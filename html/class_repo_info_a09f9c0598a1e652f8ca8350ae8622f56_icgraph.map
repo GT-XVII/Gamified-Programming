@@ -1,9 +1,0 @@
-<map id="RepoInfo::host" name="RepoInfo::host">
-<area shape="rect" id="Node000001" title=" " alt="" coords="383,31,490,56"/>
-<area shape="rect" id="Node000002" href="$class_repo_info.html#a026fb4bf7b6cc5fe3e6cb5e11e21c16d" title=" " alt="" coords="184,5,332,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="367,36,331,31,332,26,368,31"/>
-<area shape="rect" id="Node000003" href="$class_repo_info.html#a8f7a91b5850acceec071cde1f6f18f8c" title=" " alt="" coords="181,55,335,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="368,55,336,60,335,54,367,50"/>
-<area shape="rect" id="Node000004" href="$class_repo_info.html#a880511f34e65e8edbe02b2b35adab3b8" title=" " alt="" coords="5,55,133,80"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="165,70,133,70,133,65,165,65"/>
-</map>

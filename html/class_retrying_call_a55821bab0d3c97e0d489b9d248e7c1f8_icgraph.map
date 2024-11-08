@@ -1,7 +1,0 @@
-<map id="RetryingCall::getNextBufferIndex" name="RetryingCall::getNextBufferIndex">
-<area shape="rect" id="Node000001" title=" " alt="" coords="236,27,418,68"/>
-<area shape="rect" id="Node000002" href="$class_retrying_call.html#ae5c235172c7bc518aa753e11c9c9cedc" title=" " alt="" coords="18,5,175,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="220,37,175,31,175,25,221,31"/>
-<area shape="rect" id="Node000003" href="$class_retrying_call.html#ae4762e1ee29d331e21ac08c2bc775b2d" title=" " alt="" coords="5,55,188,96"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="221,63,189,67,188,62,220,58"/>
-</map>

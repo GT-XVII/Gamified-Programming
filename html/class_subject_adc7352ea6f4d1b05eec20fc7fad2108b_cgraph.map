@@ -1,9 +1,0 @@
-<map id="Subject::next" name="Subject::next">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,104,56"/>
-<area shape="rect" id="Node000002" href="$class_subject.html#a4dd8a2f1dd3d167303cc774dde27c2cb" title=" " alt="" coords="152,5,313,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,34,136,29,137,35,105,39"/>
-<area shape="rect" id="Node000003" href="$event-target-shim_8js.html#a0a94f0d223a31d755d48ed03a64873ab" title=" " alt="" coords="193,55,272,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="105,47,178,57,177,63,104,53"/>
-<area shape="rect" id="Node000004" href="$event-target-shim_8js.html#a6b2fd9b8f5131cd07c19f9ff4b2b3666" title=" " alt="" coords="361,55,399,80"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="273,65,346,65,346,70,273,70"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="jwsVerify" name="jwsVerify">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,81,56"/>
-<area shape="rect" id="Node000002" href="$jsonwebtoken_2node__modules_2jws_2lib_2verify-stream_8js.html#a73f38c466241121b9d1dbf01481b2c35" title=" " alt="" coords="129,5,284,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="81,35,113,30,114,35,82,40"/>
-<area shape="rect" id="Node000003" href="$jsonwebtoken_2node__modules_2jws_2lib_2verify-stream_8js.html#a3d8b74a826f00a7026442dcf65b3bd04" title=" " alt="" coords="140,55,273,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="82,46,125,53,124,58,81,52"/>
-</map>

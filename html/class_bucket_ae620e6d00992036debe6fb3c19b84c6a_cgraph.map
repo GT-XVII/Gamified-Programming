@@ -1,7 +1,0 @@
-<map id="Bucket::combine" name="Bucket::combine">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,42,125,68"/>
-<area shape="rect" id="Node000002" href="$class_bucket.html#aaaad3edeb09fdc61bad9c33a115e580c" title=" " alt="" coords="173,5,343,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,43,157,38,158,44,125,49"/>
-<area shape="rect" id="Node000003" href="$parse_int_8js.html#a04ee837a5f7721fcb0ea2d152162ef92" title=" " alt="" coords="224,70,292,96"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="125,61,209,73,208,79,125,66"/>
-</map>

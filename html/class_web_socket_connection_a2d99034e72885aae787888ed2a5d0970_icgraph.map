@@ -1,9 +1,0 @@
-<map id="WebSocketConnection::handleNewFrameCount_" name="WebSocketConnection::handleNewFrameCount_">
-<area shape="rect" id="Node000001" title=" " alt="" coords="615,5,789,46"/>
-<area shape="rect" id="Node000002" href="$class_web_socket_connection.html#a01da1bb64e1575532ae898330d4b5cf0" title=" " alt="" coords="413,5,567,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="600,28,568,28,568,23,600,23"/>
-<area shape="rect" id="Node000003" href="$class_web_socket_connection.html#acc3592d125b69a4a6dcffadb93297514" title=" " alt="" coords="208,5,365,46"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="398,28,365,28,365,23,398,23"/>
-<area shape="rect" id="Node000004" href="$class_web_socket_connection.html#add81628b34e5be211b09e9d11895dded" title=" " alt="" coords="5,5,160,46"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="192,28,160,28,160,23,192,23"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="readFileAsync" name="readFileAsync">
-<area shape="rect" id="Node000001" title=" " alt="" coords="424,13,528,38"/>
-<area shape="rect" id="Node000002" href="$class_grpc_client.html#aa93e23773500ea9975a829c267a1dedf" title=" " alt="" coords="208,5,376,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="408,28,377,28,377,23,408,23"/>
-<area shape="rect" id="Node000003" href="$class_grpc_client.html#a3cd1abc273e1a43b76fd8cb35551c4e4" title=" " alt="" coords="5,13,160,38"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="192,28,160,28,160,23,192,23"/>
-</map>

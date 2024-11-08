@@ -1,9 +1,0 @@
-<map id="DataConnectApiClient::executeGraphqlHelper" name="DataConnectApiClient::executeGraphqlHelper">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,39,164,79"/>
-<area shape="rect" id="Node000002" href="$class_data_connect_api_client.html#a0b97542412973c4cbf7a630eb35a7f34" title=" " alt="" coords="212,5,363,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="163,43,196,38,197,43,164,49"/>
-<area shape="rect" id="Node000004" href="$class_data_connect_api_client.html#a558ef3c6d29677922ed90628e8f8d57f" title=" " alt="" coords="212,71,363,111"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="164,69,197,74,196,79,163,74"/>
-<area shape="rect" id="Node000003" href="$class_data_connect_api_client.html#a17876d2a6daec7d321a8bea9899afb12" title=" " alt="" coords="411,5,562,46"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="364,23,396,23,396,28,364,28"/>
-</map>

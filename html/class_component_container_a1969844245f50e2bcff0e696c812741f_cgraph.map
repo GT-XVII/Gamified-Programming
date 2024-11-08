@@ -1,8 +1,0 @@
-<map id="ComponentContainer::addOrOverwriteComponent" name="ComponentContainer::addOrOverwriteComponent">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,35,193,75"/>
-<area shape="rect" id="Node000002" href="$class_component_container.html#a2d5b4b4b16c2332b5406455763e37d28" title=" " alt="" coords="241,5,385,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="193,39,225,35,226,40,193,45"/>
-<area shape="rect" id="Node000003" href="$class_component_container.html#a90b02e1bc56e0d9a56cb339081085e5e" title=" " alt="" coords="433,35,577,75"/>
-<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="193,54,241,55,385,55,417,54,418,60,385,60,241,60,193,60"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="386,34,418,39,417,44,385,39"/>
-</map>

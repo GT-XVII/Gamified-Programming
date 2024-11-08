@@ -1,7 +1,0 @@
-<map id="CommandInstance::postProcessPositionals" name="CommandInstance::postProcessPositionals">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,23,218,64"/>
-<area shape="rect" id="Node000002" href="$class_command_instance.html#a7556ec1e0034b71bf7e61796b9bb725a" title=" " alt="" coords="266,5,471,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="218,30,250,27,250,32,218,36"/>
-<area shape="rect" id="Node000003" href="$class_command_instance.html#a8b400c33f9b198d377f5b819a24fce5f" title=" " alt="" coords="266,55,471,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="218,51,250,54,250,59,218,56"/>
-</map>

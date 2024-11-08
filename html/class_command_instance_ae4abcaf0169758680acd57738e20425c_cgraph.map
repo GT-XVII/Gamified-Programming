@@ -1,9 +1,0 @@
-<map id="CommandInstance::runDefaultBuilderOn" name="CommandInstance::runDefaultBuilderOn">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,47,205,88"/>
-<area shape="rect" id="Node000002" href="$yargs_2build_2lib_2command_8js.html#a98d3b7447314e693e929e282c0feb8e5" title=" " alt="" coords="271,5,454,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="205,46,276,32,277,37,206,51"/>
-<area shape="rect" id="Node000003" href="$yargs_2build_2lib_2command_8js.html#aa2fa63da9381f8065363dabcca80f722" title=" " alt="" coords="269,55,456,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="205,65,254,65,254,70,205,70"/>
-<area shape="rect" id="Node000004" href="$class_command_instance.html#aa6499dc620d2f88e31ded4474d420ece" title=" " alt="" coords="253,104,472,145"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="200,86,254,98,252,103,199,91"/>
-</map>

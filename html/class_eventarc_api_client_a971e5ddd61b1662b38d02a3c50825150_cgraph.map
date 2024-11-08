@@ -1,9 +1,0 @@
-<map id="EventarcApiClient::publishToEventarcApi" name="EventarcApiClient::publishToEventarcApi">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,39,153,79"/>
-<area shape="rect" id="Node000002" href="$class_eventarc_api_client.html#a577807fdbcb056e2db141e2215b43476" title=" " alt="" coords="201,5,335,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,43,185,37,186,43,153,49"/>
-<area shape="rect" id="Node000003" href="$class_eventarc_api_client.html#a9eda3458f8c133d1556484da8ec0abb5" title=" " alt="" coords="201,71,335,111"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="153,69,186,74,185,80,152,74"/>
-<area shape="rect" id="Node000004" href="$class_eventarc_api_client.html#aa37d8ac8000c4d6115179cb17bd3a950" title=" " alt="" coords="383,71,517,111"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="336,88,368,88,368,94,336,94"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="FirebaseTokenGenerator::createCustomToken" name="FirebaseTokenGenerator::createCustomToken">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,39,169,79"/>
-<area shape="rect" id="Node000002" href="$class_firebase_token_generator.html#a74e75a251bfb3a87b61e848999ac5ad8" title=" " alt="" coords="222,5,386,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="169,44,206,38,207,43,170,49"/>
-<area shape="rect" id="Node000003" href="$class_firebase_token_generator.html#a8289113f2a44acb313b0d2e9007ab6f9" title=" " alt="" coords="217,71,391,111"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="170,68,201,73,201,78,169,74"/>
-</map>

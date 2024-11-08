@@ -1,9 +1,0 @@
-<map id="Tenant::validate" name="Tenant::validate">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,119,80"/>
-<area shape="rect" id="Node000002" href="$class_tenant.html#ac02cea5a879d142b3c83c8613546d533" title=" " alt="" coords="167,5,341,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,51,186,33,187,38,116,57"/>
-<area shape="rect" id="Node000003" href="$class_tenant.html#a7c8a73f4f866a781d7fd7e4ac05a0233" title=" " alt="" coords="168,55,340,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="119,65,153,65,153,70,119,70"/>
-<area shape="rect" id="Node000004" href="$class_tenant.html#ab2fa07687e096ec7925960a4f1fd6824" title=" " alt="" coords="172,104,336,130"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="116,78,187,97,186,102,114,84"/>
-</map>

@@ -1,9 +1,0 @@
-<map id="Y18N::_enqueueWrite" name="Y18N::_enqueueWrite">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,154,31"/>
-<area shape="rect" id="Node000002" href="$class_y18_n.html#aa5417be2e7dd54503bf83a5f3c25b7ee" title=" " alt="" coords="202,5,385,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="154,16,186,16,186,21,154,21"/>
-<area shape="rect" id="Node000003" href="$class_y18_n.html#ad9b994a9e619643e5e31711931bb32a6" title=" " alt="" coords="433,5,603,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="385,16,418,16,418,21,385,21"/>
-<area shape="rect" id="Node000004" href="$class_y18_n.html#a6faa7f75774c689b9ff915987b6e6498" title=" " alt="" coords="651,5,805,31"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="604,16,636,16,636,21,604,21"/>
-</map>

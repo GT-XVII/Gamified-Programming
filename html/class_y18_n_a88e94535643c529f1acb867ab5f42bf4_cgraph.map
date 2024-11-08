@@ -1,9 +1,0 @@
-<map id="Y18N::updateLocale" name="Y18N::updateLocale">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,145,31"/>
-<area shape="rect" id="Node000002" href="$class_y18_n.html#a4d751bdd244d793b3cf12f748dc7ba9c" title=" " alt="" coords="193,5,346,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,16,177,16,177,21,145,21"/>
-<area shape="rect" id="Node000003" href="$class_y18_n.html#ad9b994a9e619643e5e31711931bb32a6" title=" " alt="" coords="394,5,564,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="347,16,378,16,378,21,347,21"/>
-<area shape="rect" id="Node000004" href="$class_y18_n.html#a6faa7f75774c689b9ff915987b6e6498" title=" " alt="" coords="612,5,766,31"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="565,16,597,16,597,21,565,21"/>
-</map>

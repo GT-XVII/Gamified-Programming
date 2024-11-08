@@ -1,7 +1,0 @@
-<map id="Channel::constructor" name="Channel::constructor">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,148,56"/>
-<area shape="rect" id="Node000002" href="$class_channel.html#a23ba41f6acf82eb528a388bbc8127c96" title=" " alt="" coords="196,5,323,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,31,180,26,181,32,148,36"/>
-<area shape="rect" id="Node000003" href="$class_channel.html#a20bd0edec1c8fb66acdf6eb07bc293b6" title=" " alt="" coords="205,55,314,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="148,50,190,56,189,61,148,55"/>
-</map>

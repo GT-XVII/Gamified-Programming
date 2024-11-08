@@ -1,7 +1,0 @@
-<map id="require" name="require">
-<area shape="rect" id="Node000001" title=" " alt="" coords="153,31,213,56"/>
-<area shape="rect" id="Node000002" href="$__stream__writable_8js.html#a91b066cc8b5cb25cea7d142b68a85b8d" title=" " alt="" coords="21,5,89,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="137,37,89,28,90,22,138,32"/>
-<area shape="rect" id="Node000003" href="$__stream__writable_8js.html#a1286249ae5960fa2323a680d896f57f7" title=" " alt="" coords="5,55,105,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="138,55,106,61,105,55,137,49"/>
-</map>

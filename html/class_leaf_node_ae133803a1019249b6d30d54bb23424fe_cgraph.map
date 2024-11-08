@@ -1,9 +1,0 @@
-<map id="LeafNode::val" name="LeafNode::val">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,108,80"/>
-<area shape="rect" id="Node000002" href="$class_leaf_node.html#aa8f9dfc725c14f389ed60d01c928396c" title=" " alt="" coords="156,5,300,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,51,165,33,167,38,105,57"/>
-<area shape="rect" id="Node000003" href="$class_leaf_node.html#a84eae83d25ded7e218e0586e0a99fba5" title=" " alt="" coords="160,55,296,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="108,65,145,65,145,70,108,70"/>
-<area shape="rect" id="Node000004" href="$class_leaf_node.html#a329f6764978a529e323548d9e088c3ee" title=" " alt="" coords="161,104,294,130"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="105,78,167,97,165,102,103,84"/>
-</map>

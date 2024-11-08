@@ -1,7 +1,0 @@
-<map id="validateAndroidNotification" name="validateAndroidNotification">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,182,31"/>
-<area shape="rect" id="Node000002" href="$messaging-internal_8js.html#a29b79aa60173c46c82a100363b166546" title=" " alt="" coords="230,5,372,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="182,16,214,16,214,21,182,21"/>
-<area shape="rect" id="Node000003" href="$parse_int_8js.html#a04ee837a5f7721fcb0ea2d152162ef92" title=" " alt="" coords="420,5,488,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="373,16,404,16,404,21,373,21"/>
-</map>

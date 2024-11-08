@@ -1,9 +1,0 @@
-<map id="ResolvingCall::runDeadlineTimer" name="ResolvingCall::runDeadlineTimer">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,27,185,68"/>
-<area shape="rect" id="Node000002" href="$after_8js.html#af2ab2a2839e4f09255953c1a4212e149" title=" " alt="" coords="297,5,344,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="185,33,281,20,282,26,185,38"/>
-<area shape="rect" id="Node000003" href="$class_resolving_call.html#aaaef85b1fd37cd2e725a307a8f677de7" title=" " alt="" coords="233,55,408,96"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="185,56,217,60,217,65,185,61"/>
-<area shape="rect" id="Node000004" href="$class_resolving_call.html#a319362e900db5d5f57666f00aedc64d3" title=" " alt="" coords="456,63,640,88"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="408,73,440,73,440,78,408,78"/>
-</map>

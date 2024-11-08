@@ -1,9 +1,0 @@
-<map id="RecursiveDelete::deleteRef" name="RecursiveDelete::deleteRef">
-<area shape="rect" id="Node000001" title=" " alt="" coords="446,29,628,55"/>
-<area shape="rect" id="Node000002" href="$class_recursive_delete.html#a32515a4a97517b5e0bcabde1a05ed1c2" title=" " alt="" coords="198,29,398,55"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="430,54,398,54,398,48,430,48"/>
-<area shape="poly" id="edge2_Node000002_Node000001" title=" " alt="" coords="413,31,445,31,445,36,413,36"/>
-<area shape="poly" id="edge4_Node000002_Node000002" title=" " alt="" coords="336,17,323,10,298,8,275,10,262,15,259,20,265,27,261,31,254,21,258,11,273,5,298,3,325,5,339,12"/>
-<area shape="rect" id="Node000003" href="$class_recursive_delete.html#ae89653e44bf7560aed73e678ef273ba4" title=" " alt="" coords="5,29,150,55"/>
-<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="182,45,150,45,150,40,182,40"/>
-</map>

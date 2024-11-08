@@ -1,7 +1,0 @@
-<map id="ProjectManagement::createAndroidApp" name="ProjectManagement::createAndroidApp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,151,46"/>
-<area shape="rect" id="Node000002" href="$class_project_management.html#aea660f0a95507fc149b80e1fcf1d0ad3" title=" " alt="" coords="199,5,344,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="151,23,183,23,183,28,151,28"/>
-<area shape="rect" id="Node000003" href="$class_project_management.html#ae9b5cfe7ce7bb00772ed1cd167a2a6fe" title=" " alt="" coords="392,5,537,46"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="344,23,376,23,376,28,344,28"/>
-</map>

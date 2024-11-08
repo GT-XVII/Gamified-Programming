@@ -1,7 +1,0 @@
-<map id="decrypt_aes_cbc_sha1_padding" name="decrypt_aes_cbc_sha1_padding">
-<area shape="rect" id="Node000001" title=" " alt="" coords="392,5,547,46"/>
-<area shape="rect" id="Node000002" href="$aes_cipher_suites_8js.html#ae74b1bbb0a351e2243871aed4ec71bb5" title=" " alt="" coords="189,13,344,38"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="377,28,345,28,345,23,377,23"/>
-<area shape="rect" id="Node000003" href="$aes_cipher_suites_8js.html#a770527991c33d0abf61fd3311ccce6ff" title=" " alt="" coords="5,13,141,38"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="173,28,141,28,141,23,173,23"/>
-</map>

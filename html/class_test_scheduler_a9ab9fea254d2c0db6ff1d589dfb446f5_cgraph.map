@@ -1,9 +1,0 @@
-<map id="TestScheduler::createAnimator" name="TestScheduler::createAnimator">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,206,56"/>
-<area shape="rect" id="Node000002" href="$class_test_scheduler.html#a683335e7f3a07d0f3759a016a596a60c" title=" " alt="" coords="254,5,444,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="206,30,238,27,238,32,206,36"/>
-<area shape="rect" id="Node000003" href="$class_scheduler.html#a48911ecd33b4711af8fe7a09dd7dbdf7" title=" " alt="" coords="279,55,418,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="206,51,264,56,263,62,206,56"/>
-<area shape="rect" id="Node000004" href="$asynckit_2lib_2state_8js.html#a7e1b0ba367facd663d59372bd204ea01" title=" " alt="" coords="492,55,542,80"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="419,65,476,65,476,70,419,70"/>
-</map>

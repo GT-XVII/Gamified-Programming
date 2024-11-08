@@ -1,8 +1,0 @@
-<map id="processing" name="processing">
-<area shape="rect" id="Node000001" title=" " alt="" coords="199,55,283,80"/>
-<area shape="rect" id="Node000002" href="$class_path_template.html#a28eb648e2668519060164692fb06db67" title=" " alt="" coords="5,5,151,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="183,53,122,34,123,29,185,48"/>
-<area shape="rect" id="Node000003" href="$tr46_2index_8js.html#aa2c95ede1086c783089cbe9db7edfbe3" title=" " alt="" coords="29,55,127,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="183,79,127,78,127,73,183,73"/>
-<area shape="poly" id="edge3_Node000003_Node000001" title=" " alt="" coords="143,56,198,57,198,62,143,61"/>
-</map>

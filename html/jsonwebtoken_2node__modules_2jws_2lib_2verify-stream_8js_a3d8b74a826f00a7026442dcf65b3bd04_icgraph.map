@@ -1,7 +1,0 @@
-<map id="signatureFromJWS" name="signatureFromJWS">
-<area shape="rect" id="Node000001" title=" " alt="" coords="140,31,273,56"/>
-<area shape="rect" id="Node000002" href="$jsonwebtoken_2node__modules_2jws_2lib_2verify-stream_8js.html#a8b5fc06ddd3d75433612502fb1bf5537" title=" " alt="" coords="5,5,92,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,33,91,28,92,22,124,28"/>
-<area shape="rect" id="Node000003" href="$jsonwebtoken_2node__modules_2jws_2lib_2verify-stream_8js.html#a6c4a7880932d45cddada578f81469ce4" title=" " alt="" coords="11,55,86,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="125,59,87,64,86,59,124,53"/>
-</map>

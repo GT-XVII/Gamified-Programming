@@ -1,7 +1,0 @@
-<map id="constructSettings" name="constructSettings">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,129,56"/>
-<area shape="rect" id="Node000002" href="$gax_8js.html#a2877da89fc269170b6ed5d90f7ab0ad5" title=" " alt="" coords="190,5,298,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,32,175,25,176,31,130,37"/>
-<area shape="rect" id="Node000003" href="$gax_8js.html#a1115df89f164e4673b33ece967b9d3da" title=" " alt="" coords="177,55,311,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="130,49,162,54,161,59,129,55"/>
-</map>

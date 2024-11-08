@@ -1,7 +1,0 @@
-<map id="TraceStateImpl::_clone" name="TraceStateImpl::_clone">
-<area shape="rect" id="Node000001" title=" " alt="" coords="204,31,360,56"/>
-<area shape="rect" id="Node000002" href="$class_trace_state_impl.html#a4052102c24fead78c06dbbf3e07541ff" title=" " alt="" coords="12,5,149,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="188,34,149,29,149,24,189,29"/>
-<area shape="rect" id="Node000003" href="$class_trace_state_impl.html#a6ae6f7fdd425f41ebc6a6b0c0e0ee32c" title=" " alt="" coords="5,55,156,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="188,57,156,61,156,56,188,52"/>
-</map>

@@ -1,9 +1,0 @@
-<map id="Tenant::multiFactorConfig" name="Tenant::multiFactorConfig">
-<area shape="rect" id="Node000001" title=" " alt="" coords="399,31,570,56"/>
-<area shape="rect" id="Node000002" href="$class_tenant.html#aa7a478b6bfb33f89f46322774c7eb30e" title=" " alt="" coords="236,5,351,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="383,33,351,28,352,23,384,27"/>
-<area shape="rect" id="Node000003" href="$class_tenant.html#a3d58178dfa09339be5d6b02019121c17" title=" " alt="" coords="237,55,350,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="384,59,351,63,350,58,383,54"/>
-<area shape="rect" id="Node000004" href="$class_tenant.html#a09ed6353ddf632a9460f8225ac7cb705" title=" " alt="" coords="5,55,188,80"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="221,70,188,70,188,65,221,65"/>
-</map>

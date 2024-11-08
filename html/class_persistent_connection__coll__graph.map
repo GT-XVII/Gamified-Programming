@@ -1,7 +1,0 @@
-<map id="PersistentConnection" name="PersistentConnection">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,323,210,669"/>
-<area shape="rect" id="Node000002" href="$class_server_actions.html" title=" " alt="" coords="24,5,192,275"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="93,290,93,323,87,323,87,290"/>
-<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="110,290,110,323,105,323,105,290"/>
-<area shape="poly" id="edge3_Node000001_Node000002" title=" " alt="" coords="128,290,128,323,123,323,123,290"/>
-</map>

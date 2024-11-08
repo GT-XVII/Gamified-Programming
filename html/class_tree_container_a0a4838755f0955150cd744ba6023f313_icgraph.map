@@ -1,9 +1,0 @@
-<map id="TreeContainer::H" name="TreeContainer::H">
-<area shape="rect" id="Node000001" title=" " alt="" coords="259,70,380,96"/>
-<area shape="rect" id="Node000002" href="$class_tree_container.html#a258a7645a9c3bbc5661d1d3ab060c24d" title=" " alt="" coords="12,5,204,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="254,68,185,49,186,44,255,63"/>
-<area shape="rect" id="Node000003" href="$class_ordered_map.html#a251157a3c2438827a60dfaf314c793c5" title=" " alt="" coords="47,70,169,96"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="243,86,169,86,169,80,243,80"/>
-<area shape="rect" id="Node000004" href="$class_ordered_map.html#a4de638aab669367deb9b355f372b46ec" title=" " alt="" coords="5,120,211,145"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="247,103,167,121,166,116,246,97"/>
-</map>

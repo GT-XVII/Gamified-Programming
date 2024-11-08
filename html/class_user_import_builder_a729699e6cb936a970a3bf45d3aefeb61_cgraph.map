@@ -1,9 +1,0 @@
-<map id="UserImportBuilder::populateOptions" name="UserImportBuilder::populateOptions">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,23,140,64"/>
-<area shape="rect" id="Node000002" href="$user-import-builder_8js.html#a29f1039068eaecd439a324f7475261f2" title=" " alt="" coords="188,5,301,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,31,172,26,172,31,141,36"/>
-<area shape="rect" id="Node000004" href="$pbe_8js.html#a4e8eeb941272ccb92c8911eb60686dd3" title=" " alt="" coords="220,55,269,80"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="141,50,205,59,204,65,140,56"/>
-<area shape="rect" id="Node000003" href="$parse_int_8js.html#a04ee837a5f7721fcb0ea2d152162ef92" title=" " alt="" coords="349,5,417,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="301,16,333,16,333,21,301,21"/>
-</map>

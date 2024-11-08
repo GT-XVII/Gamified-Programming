@@ -1,7 +1,0 @@
-<map id="BaseAuth::verifySessionCookie" name="BaseAuth::verifySessionCookie">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,13,212,38"/>
-<area shape="rect" id="Node000002" href="$class_base_auth.html#a079d88955148093104ed169d6660683c" title=" " alt="" coords="260,5,479,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="212,23,244,23,244,28,212,28"/>
-<area shape="rect" id="Node000003" href="$class_base_auth.html#a003d5c71fc6fa22f3fa19cbe4fb9b695" title=" " alt="" coords="527,13,659,38"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="479,23,512,23,512,28,479,28"/>
-</map>

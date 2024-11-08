@@ -1,7 +1,0 @@
-<map id="Transaction::runTransactionOnce" name="Transaction::runTransactionOnce">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,220,56"/>
-<area shape="rect" id="Node000002" href="$class_transaction.html#add8876a174063d8b868ade65c229d5fc" title=" " alt="" coords="269,5,409,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="219,29,253,25,253,30,220,34"/>
-<area shape="rect" id="Node000003" href="$class_transaction.html#a0a7823b021b7437a14641395c7cfc14e" title=" " alt="" coords="268,55,410,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="220,52,252,56,252,61,219,58"/>
-</map>

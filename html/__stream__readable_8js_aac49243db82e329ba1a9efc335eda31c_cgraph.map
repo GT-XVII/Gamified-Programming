@@ -1,8 +1,0 @@
-<map id="emitReadable" name="emitReadable">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,107,56"/>
-<area shape="rect" id="Node000002" href="$__stream__readable_8js.html#ae820049d9412a1a3d8427ca5515ef9cb" title=" " alt="" coords="155,5,263,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="106,33,139,27,140,32,107,38"/>
-<area shape="rect" id="Node000003" href="$asynckit_2lib_2state_8js.html#a7e1b0ba367facd663d59372bd204ea01" title=" " alt="" coords="311,31,361,56"/>
-<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="107,41,296,41,296,46,107,46"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="264,26,296,33,295,38,263,32"/>
-</map>

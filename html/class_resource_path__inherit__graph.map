@@ -1,7 +1,0 @@
-<map id="ResourcePath" name="ResourcePath">
-<area shape="rect" id="Node000001" title=" " alt="" coords="9,404,182,613"/>
-<area shape="rect" id="Node000003" href="$class_qualified_resource_path.html" title=" " alt="" coords="5,661,185,910"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="98,628,98,661,93,661,93,628"/>
-<area shape="rect" id="Node000002" href="$class_path.html" title=" " alt="" coords="47,5,144,356"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="98,371,98,404,93,404,93,371"/>
-</map>

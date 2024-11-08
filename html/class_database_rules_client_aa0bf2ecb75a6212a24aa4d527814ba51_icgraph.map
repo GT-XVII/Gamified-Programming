@@ -1,9 +1,0 @@
-<map id="DatabaseRulesClient::handleError" name="DatabaseRulesClient::handleError">
-<area shape="rect" id="Node000001" title=" " alt="" coords="199,71,344,111"/>
-<area shape="rect" id="Node000002" href="$class_database_rules_client.html#a03097963d0b5ffab4a0441b06366e024" title=" " alt="" coords="5,5,151,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,68,139,49,141,44,196,63"/>
-<area shape="rect" id="Node000003" href="$class_database_rules_client.html#a66cf8927416770765b0c86996b876085" title=" " alt="" coords="5,71,151,111"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="183,94,151,94,151,88,183,88"/>
-<area shape="rect" id="Node000004" href="$class_database_rules_client.html#a1d221f4449564d1c9022c55c18fbf646" title=" " alt="" coords="5,136,151,177"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="196,119,141,138,139,133,194,114"/>
-</map>

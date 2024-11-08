@@ -1,8 +1,0 @@
-<map id="getInterceptingCall" name="getInterceptingCall">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,136,56"/>
-<area shape="rect" id="Node000002" href="$client-interceptors_8js.html#a5100d1ab8616368435783a01fa2ce907" title=" " alt="" coords="184,5,356,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="136,33,168,28,169,34,137,38"/>
-<area shape="rect" id="Node000003" href="$client-interceptors_8js.html#a48777573594e3f0f5cd2f20a35a1c073" title=" " alt="" coords="404,31,466,56"/>
-<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="136,41,389,41,389,46,136,46"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="357,29,389,34,388,39,356,34"/>
-</map>

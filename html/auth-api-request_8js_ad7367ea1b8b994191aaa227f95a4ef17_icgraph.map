@@ -1,7 +1,0 @@
-<map id="validateProviderUserInfo" name="validateProviderUserInfo">
-<area shape="rect" id="Node000001" title=" " alt="" coords="470,13,634,38"/>
-<area shape="rect" id="Node000002" href="$auth-api-request_8js.html#ac8caaea7feda3c8a35e2c952cd12b50b" title=" " alt="" coords="245,13,422,38"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="455,28,422,28,422,23,455,23"/>
-<area shape="rect" id="Node000003" href="$class_abstract_auth_request_handler.html#ac5a3aefa17ee40d5af6b4646d061002e" title=" " alt="" coords="5,5,197,46"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="229,28,197,28,197,23,229,23"/>
-</map>

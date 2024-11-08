@@ -1,7 +1,0 @@
-<map id="streamer" name="streamer">
-<area shape="rect" id="Node000001" title=" " alt="" coords="333,5,405,31"/>
-<area shape="rect" id="Node000002" href="$streamify_8js.html#aa9ca4e1a39db467e459593e73818e4e4" title=" " alt="" coords="144,5,285,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="317,21,286,21,286,16,317,16"/>
-<area shape="rect" id="Node000003" href="$streamify_8js.html#ab1cb0c4f0f57fc8620a234fd854be36b" title=" " alt="" coords="5,5,96,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="128,21,96,21,96,16,128,16"/>
-</map>

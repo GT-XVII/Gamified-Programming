@@ -1,9 +1,0 @@
-<map id="RoundRobinLoadBalancer::calculateAndUpdateState" name="RoundRobinLoadBalancer::calculateAndUpdateState">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,39,183,79"/>
-<area shape="rect" id="Node000002" href="$class_round_robin_load_balancer.html#a2165c62c11b091042f684496be8efb9b" title=" " alt="" coords="231,5,403,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="183,43,215,38,216,43,183,48"/>
-<area shape="rect" id="Node000004" href="$class_round_robin_load_balancer.html#a1f1642b1f3e827785918105fe06d9555" title=" " alt="" coords="231,71,403,111"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="183,69,216,74,215,79,183,74"/>
-<area shape="rect" id="Node000003" href="$asynckit_2lib_2state_8js.html#a7e1b0ba367facd663d59372bd204ea01" title=" " alt="" coords="451,13,501,38"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="403,23,435,23,435,28,403,28"/>
-</map>

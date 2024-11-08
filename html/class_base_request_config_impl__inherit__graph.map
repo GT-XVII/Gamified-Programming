@@ -1,7 +1,0 @@
-<map id="BaseRequestConfigImpl" name="BaseRequestConfigImpl">
-<area shape="rect" id="Node000001" title=" " alt="" coords="94,5,247,234"/>
-<area shape="rect" id="Node000002" href="$class_http2_request_config_impl.html" title=" " alt="" coords="5,282,160,389"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="121,249,107,284,102,282,116,247"/>
-<area shape="rect" id="Node000003" href="$class_http_request_config_impl.html" title=" " alt="" coords="184,282,336,389"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="226,247,241,282,236,284,221,249"/>
-</map>

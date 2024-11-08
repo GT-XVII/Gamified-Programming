@@ -1,7 +1,0 @@
-<map id="CommandInstance::parseAndUpdateUsage" name="CommandInstance::parseAndUpdateUsage">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,39,200,79"/>
-<area shape="rect" id="Node000002" href="$class_command_instance.html#aa6499dc620d2f88e31ded4474d420ece" title=" " alt="" coords="254,5,473,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="200,44,238,39,239,44,201,49"/>
-<area shape="rect" id="Node000003" href="$class_command_instance.html#a126afb770bb6731de81e9d3870b9fdc4" title=" " alt="" coords="248,71,479,111"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="201,68,233,72,232,78,200,74"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="BaseSubchannelWrapper::setHealthy" name="BaseSubchannelWrapper::setHealthy">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,173,46"/>
-<area shape="rect" id="Node000002" href="$class_base_subchannel_wrapper.html#ab73faf551234e315c278f329f0ab38ee" title=" " alt="" coords="221,5,388,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="173,23,205,23,205,28,173,28"/>
-<area shape="rect" id="Node000003" href="$class_base_subchannel_wrapper.html#a71667b1c4848eb44a30e1caf87514902" title=" " alt="" coords="436,5,603,46"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="388,23,420,23,420,28,388,28"/>
-</map>

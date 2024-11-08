@@ -1,7 +1,0 @@
-<map id="getDefaultConfigSelector" name="getDefaultConfigSelector">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,173,31"/>
-<area shape="rect" id="Node000002" href="$resolving-load-balancer_8js.html#acedea4c9265d65984b3eb013a5efe5ea" title=" " alt="" coords="221,5,354,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="173,16,205,16,205,21,173,21"/>
-<area shape="rect" id="Node000003" href="$resolving-load-balancer_8js.html#a1b7febee13dff8906304492fcd722a04" title=" " alt="" coords="402,5,532,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="355,16,386,16,386,21,355,21"/>
-</map>

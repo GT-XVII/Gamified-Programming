@@ -1,7 +1,0 @@
-<map id="retry" name="retry">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,53,56"/>
-<area shape="rect" id="Node000002" href="$reject_8js.html#a94bc21104657e301a8ec194b529feaed" title=" " alt="" coords="101,5,154,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="52,35,85,26,86,31,54,40"/>
-<area shape="rect" id="Node000003" href="$_0dprotobufjs_2float_2bench_2index_8js.html#a05ab1b1fd0e164bf57674844a0f2e628" title=" " alt="" coords="108,55,147,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="54,47,93,57,92,62,52,52"/>
-</map>

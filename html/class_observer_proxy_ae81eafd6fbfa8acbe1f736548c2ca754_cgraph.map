@@ -1,7 +1,0 @@
-<map id="ObserverProxy::next" name="ObserverProxy::next">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,147,31"/>
-<area shape="rect" id="Node000002" href="$class_observer_proxy.html#a0876975e95bbf81e5b358fddc0ddeedc" title=" " alt="" coords="195,5,409,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,16,179,16,179,21,147,21"/>
-<area shape="rect" id="Node000003" href="$class_observer_proxy.html#a52f8267ee9553d4ae337eaa47cd5c64a" title=" " alt="" coords="457,5,625,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="409,16,441,16,441,21,409,21"/>
-</map>

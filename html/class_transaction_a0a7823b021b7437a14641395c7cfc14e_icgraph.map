@@ -1,7 +1,0 @@
-<map id="Transaction::rollback" name="Transaction::rollback">
-<area shape="rect" id="Node000001" title=" " alt="" coords="499,5,641,31"/>
-<area shape="rect" id="Node000002" href="$class_transaction.html#a56987b722d59c6219af8567b288a6c73" title=" " alt="" coords="237,5,451,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="484,21,452,21,452,16,484,16"/>
-<area shape="rect" id="Node000003" href="$class_transaction.html#a4f222939dd40e6007415b81227cc3606" title=" " alt="" coords="5,5,189,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="221,21,189,21,189,16,221,16"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="decodeChunk" name="decodeChunk">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,107,56"/>
-<area shape="rect" id="Node000002" href="$chunk_8js.html#a49c71f4b8e247d1267a25b3f04caef18" title=" " alt="" coords="155,5,211,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,31,139,24,140,29,108,36"/>
-<area shape="rect" id="Node000003" href="$asynckit_2lib_2state_8js.html#a7e1b0ba367facd663d59372bd204ea01" title=" " alt="" coords="158,55,208,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="108,51,143,57,142,63,107,56"/>
-</map>

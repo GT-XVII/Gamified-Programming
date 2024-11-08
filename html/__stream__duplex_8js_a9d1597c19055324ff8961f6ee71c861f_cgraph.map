@@ -1,7 +1,0 @@
-<map id="Duplex" name="Duplex">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,68,31"/>
-<area shape="rect" id="Node000002" href="$__stream__duplex_8js.html#a93a5f943310981de493295cacabe72f2" title=" " alt="" coords="116,5,172,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="68,16,100,16,100,21,68,21"/>
-<area shape="rect" id="Node000003" href="$__stream__duplex_8js.html#a2ef75529b1a1a9bfa639dc001255ccee" title=" " alt="" coords="220,5,296,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="172,16,205,16,205,21,172,21"/>
-</map>

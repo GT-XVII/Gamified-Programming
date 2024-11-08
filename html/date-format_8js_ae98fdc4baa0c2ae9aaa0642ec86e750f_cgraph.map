@@ -1,7 +1,0 @@
-<map id="getWeekOfMonth" name="getWeekOfMonth">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,128,31"/>
-<area shape="rect" id="Node000002" href="$date-format_8js.html#a1df2b498c79913eca3f8db39794d7a1e" title=" " alt="" coords="176,5,270,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,16,160,16,160,21,128,21"/>
-<area shape="rect" id="Node000003" href="$date-format_8js.html#abbcde37551d8ca573e554585c06122ac" title=" " alt="" coords="318,5,395,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="270,16,303,16,303,21,270,21"/>
-</map>

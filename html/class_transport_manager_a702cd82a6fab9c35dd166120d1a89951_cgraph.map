@@ -1,7 +1,0 @@
-<map id="TransportManager::initTransports_" name="TransportManager::initTransports_">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,46,226,72"/>
-<area shape="rect" id="Node000002" href="$class_transport_manager.html#a4717c74140b2b59497eeeb21245d68db" title=" " alt="" coords="274,5,431,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="211,43,258,36,259,42,212,48"/>
-<area shape="rect" id="Node000003" href="$class_web_socket_connection.html#a60edc7f46f096c5fb18569abc1599011" title=" " alt="" coords="275,71,430,111"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="216,70,260,76,259,81,215,75"/>
-</map>

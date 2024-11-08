@@ -1,7 +1,0 @@
-<map id="tasksEmulatorUrl" name="tasksEmulatorUrl">
-<area shape="rect" id="Node000001" title=" " alt="" coords="185,46,307,72"/>
-<area shape="rect" id="Node000002" href="$class_functions_api_client.html#a972618d7e36fbdd1496c181d44e4897d" title=" " alt="" coords="5,5,137,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="169,47,136,41,137,36,170,42"/>
-<area shape="rect" id="Node000003" href="$class_functions_api_client.html#ab4d6fe00c3fcdc93c7f874844f9fdebf" title=" " alt="" coords="5,71,137,111"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="170,76,137,82,136,76,169,70"/>
-</map>

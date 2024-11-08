@@ -1,7 +1,0 @@
-<map id="ObserverProxy::error" name="ObserverProxy::error">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,148,31"/>
-<area shape="rect" id="Node000002" href="$class_observer_proxy.html#a0876975e95bbf81e5b358fddc0ddeedc" title=" " alt="" coords="196,5,410,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,16,180,16,180,21,148,21"/>
-<area shape="rect" id="Node000003" href="$class_observer_proxy.html#a52f8267ee9553d4ae337eaa47cd5c64a" title=" " alt="" coords="458,5,626,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="410,16,442,16,442,21,410,21"/>
-</map>

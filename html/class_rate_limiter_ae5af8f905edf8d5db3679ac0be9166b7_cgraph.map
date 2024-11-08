@@ -1,8 +1,0 @@
-<map id="RateLimiter::getNextRequestDelayMs" name="RateLimiter::getNextRequestDelayMs">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,197,46"/>
-<area shape="rect" id="Node000002" href="$class_rate_limiter.html#a5572a9a5c0d7c12b9fa7398101c22b2e" title=" " alt="" coords="455,13,655,38"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="197,23,439,23,439,28,197,28"/>
-<area shape="rect" id="Node000003" href="$class_rate_limiter.html#a8fd4a04f1a622ec9dfaec5db9b48dca2" title=" " alt="" coords="245,38,407,64"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="197,34,230,38,229,43,197,39"/>
-<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="407,39,439,36,440,41,407,45"/>
-</map>

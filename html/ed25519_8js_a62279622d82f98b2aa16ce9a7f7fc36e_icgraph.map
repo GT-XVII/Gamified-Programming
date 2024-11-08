@@ -1,9 +1,0 @@
-<map id="scalarbase" name="scalarbase">
-<area shape="rect" id="Node000001" title=" " alt="" coords="191,55,275,80"/>
-<area shape="rect" id="Node000002" href="$ed25519_8js.html#a2a4c197b9a0bd2dcd50bdbb04b10d8a8" title=" " alt="" coords="30,5,118,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="175,52,117,34,119,29,177,47"/>
-<area shape="rect" id="Node000003" href="$ed25519_8js.html#a63d249ca43e44ee064f26b0f23362954" title=" " alt="" coords="5,55,143,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="175,70,143,70,143,65,175,65"/>
-<area shape="rect" id="Node000004" href="$ed25519_8js.html#ad665ff72b771075af33785babb5f79e1" title=" " alt="" coords="12,104,136,130"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="177,88,119,106,117,101,175,83"/>
-</map>

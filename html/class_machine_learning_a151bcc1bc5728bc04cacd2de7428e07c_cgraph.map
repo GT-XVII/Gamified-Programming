@@ -1,7 +1,0 @@
-<map id="MachineLearning::publishModel" name="MachineLearning::publishModel">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,174,46"/>
-<area shape="rect" id="Node000002" href="$class_machine_learning.html#a24d07d64ab2d4e8f755a7bd44acfffea" title=" " alt="" coords="222,5,410,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="174,23,206,23,206,28,174,28"/>
-<area shape="rect" id="Node000003" href="$asynckit_2lib_2state_8js.html#a7e1b0ba367facd663d59372bd204ea01" title=" " alt="" coords="458,13,508,38"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="411,23,442,23,442,28,411,28"/>
-</map>

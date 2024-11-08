@@ -1,7 +1,0 @@
-<map id="VirtualTimeScheduler" name="VirtualTimeScheduler">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,275,140,361"/>
-<area shape="rect" id="Node000002" href="$class_async_scheduler.html" title=" " alt="" coords="20,140,126,227"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="75,242,75,275,70,275,70,242"/>
-<area shape="rect" id="Node000003" href="$class_scheduler.html" title=" " alt="" coords="24,5,121,92"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="75,107,75,140,70,140,70,107"/>
-</map>

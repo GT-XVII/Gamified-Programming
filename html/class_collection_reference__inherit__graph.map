@@ -1,7 +1,0 @@
-<map id="CollectionReference" name="CollectionReference">
-<area shape="rect" id="Node000001" title=" " alt="" coords="123,608,252,1020"/>
-<area shape="rect" id="Node000002" href="$class_query.html" title=" " alt="" coords="5,5,199,560"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,574,157,607,152,608,147,575"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="223,249,323,316"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="268,331,223,608,218,607,263,330"/>
-</map>

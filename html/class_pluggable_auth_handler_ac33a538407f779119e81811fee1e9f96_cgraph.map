@@ -1,7 +1,0 @@
-<map id="PluggableAuthHandler::retrieveResponseFromExecutable" name="PluggableAuthHandler::retrieveResponseFromExecutable">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,23,232,64"/>
-<area shape="rect" id="Node000002" href="$verifier_8js.html#a499da133dea4d1a4ef64e31667ec221a" title=" " alt="" coords="280,5,338,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="232,26,264,21,265,27,233,31"/>
-<area shape="rect" id="Node000003" href="$reject_8js.html#a94bc21104657e301a8ec194b529feaed" title=" " alt="" coords="282,55,336,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="233,55,267,60,266,65,232,61"/>
-</map>

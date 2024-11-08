@@ -1,7 +1,0 @@
-<map id="isSpanContext" name="isSpanContext">
-<area shape="rect" id="Node000001" title=" " alt="" coords="445,5,552,31"/>
-<area shape="rect" id="Node000002" href="$class_noop_tracer.html#a9b44552520c64c1848b6799bcf9b6b3e" title=" " alt="" coords="244,5,397,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="429,21,397,21,397,16,429,16"/>
-<area shape="rect" id="Node000003" href="$class_noop_tracer.html#a3ea4ed1ab8aa040e23916768d26281cb" title=" " alt="" coords="5,5,196,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="228,21,196,21,196,16,228,16"/>
-</map>

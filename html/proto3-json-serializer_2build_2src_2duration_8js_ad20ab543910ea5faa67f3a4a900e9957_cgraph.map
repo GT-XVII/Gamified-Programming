@@ -1,7 +1,0 @@
-<map id="googleProtobufDurationFromProto3JSON" name="googleProtobufDurationFromProto3JSON">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,23,193,64"/>
-<area shape="rect" id="Node000002" href="$pad_end_8js.html#acd4ca233b4afd1ebf9db5f28c2cfe51f" title=" " alt="" coords="242,5,308,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="193,27,226,22,227,28,193,33"/>
-<area shape="rect" id="Node000003" href="$parse_int_8js.html#a04ee837a5f7721fcb0ea2d152162ef92" title=" " alt="" coords="241,55,309,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="193,54,225,58,225,63,193,59"/>
-</map>

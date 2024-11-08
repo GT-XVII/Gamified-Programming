@@ -1,8 +1,0 @@
-<map id="bnpToRadix" name="bnpToRadix">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,96,31"/>
-<area shape="rect" id="Node000002" href="$jsbn_8js.html#a025a821f4bee34c1d7292f2fe6754861" title=" " alt="" coords="234,5,272,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,16,218,16,218,21,96,21"/>
-<area shape="rect" id="Node000003" href="$jsbn_8js.html#a078fb207d92b3b735cf179a972e48278" title=" " alt="" coords="144,31,186,56"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="97,26,129,33,128,38,95,31"/>
-<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="186,35,218,25,220,30,187,40"/>
-</map>

@@ -1,5 +1,0 @@
-<map id="securedInputFromJWS" name="securedInputFromJWS">
-<area shape="rect" id="Node000001" title=" " alt="" coords="129,5,284,31"/>
-<area shape="rect" id="Node000002" href="$jsonwebtoken_2node__modules_2jws_2lib_2verify-stream_8js.html#a6c4a7880932d45cddada578f81469ce4" title=" " alt="" coords="5,5,81,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="113,21,81,21,81,16,113,16"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="DnsResolver::startResolution" name="DnsResolver::startResolution">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,35,199,60"/>
-<area shape="rect" id="Node000002" href="$class_dns_resolver.html#a4d737ad085850fa9daa5f3577e841e59" title=" " alt="" coords="274,5,440,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="199,34,258,27,258,32,199,39"/>
-<area shape="rect" id="Node000003" href="$class_dns_resolver.html#a016b3122b08d68ffb784c50d8be49593" title=" " alt="" coords="247,55,467,96"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="199,55,231,59,231,64,199,61"/>
-</map>

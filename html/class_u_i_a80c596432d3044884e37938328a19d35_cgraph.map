@@ -1,7 +1,0 @@
-<map id="UI::rowToString" name="UI::rowToString">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,118,56"/>
-<area shape="rect" id="Node000002" href="$cliui_2build_2lib_2index_8js.html#a86a32baf0314887f7c87dd06dd9c25f3" title=" " alt="" coords="166,5,246,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="118,31,150,25,151,31,118,36"/>
-<area shape="rect" id="Node000003" href="$json-bigint_2lib_2stringify_8js.html#abd4075a8f329b0ccafd81359c952a9df" title=" " alt="" coords="187,55,225,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="118,50,171,59,171,64,118,55"/>
-</map>

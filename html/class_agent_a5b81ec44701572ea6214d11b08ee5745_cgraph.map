@@ -1,6 +1,0 @@
-<map id="Agent::protocol" name="Agent::protocol">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,115,55"/>
-<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="32,30,27,21,30,11,41,5,60,3,80,5,91,12,88,16,78,10,60,8,43,10,34,15,32,20,37,28"/>
-<area shape="rect" id="Node000002" href="$http-proxy-agent_2node__modules_2agent-base_2dist_2src_2index_8js.html#a31916feb9b95e851ad47a6478abe6aa3" title=" " alt="" coords="163,29,286,55"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,40,147,40,147,45,115,45"/>
-</map>

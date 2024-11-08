@@ -1,7 +1,0 @@
-<map id="PersistentConnection::tryAppCheck" name="PersistentConnection::tryAppCheck">
-<area shape="rect" id="Node000001" title=" " alt="" coords="219,35,365,75"/>
-<area shape="rect" id="Node000002" href="$class_persistent_connection.html#a150e9b01636e01efc21ba2d49742a22d" title=" " alt="" coords="5,5,171,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="203,45,171,40,172,35,204,40"/>
-<area shape="rect" id="Node000003" href="$database_2dist_2index_8cjs_8js.html#ac69ddb47af237199c1de6d2f276dabab" title=" " alt="" coords="38,70,138,96"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="204,70,139,79,138,74,203,64"/>
-</map>

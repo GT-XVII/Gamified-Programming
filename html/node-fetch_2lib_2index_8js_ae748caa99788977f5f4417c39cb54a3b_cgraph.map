@@ -1,9 +1,0 @@
-<map id="getNodeRequestOptions" name="getNodeRequestOptions">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,170,56"/>
-<area shape="rect" id="Node000002" href="$node-fetch_2lib_2index_8js.html#aef9ecfddbe33bc17f414323d70639d3a" title=" " alt="" coords="218,5,421,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="170,32,202,28,202,34,171,37"/>
-<area shape="rect" id="Node000003" href="$node-fetch_2lib_2index_8js.html#a4c433b985c4a7a65e3a843c98bf0e58f" title=" " alt="" coords="269,55,370,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="171,49,253,58,253,63,170,55"/>
-<area shape="rect" id="Node000004" href="$node-fetch_2lib_2index_8js.html#afe45e85080dbad2f5b8cbee0337428ce" title=" " alt="" coords="469,55,526,80"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="371,65,454,65,454,70,371,70"/>
-</map>

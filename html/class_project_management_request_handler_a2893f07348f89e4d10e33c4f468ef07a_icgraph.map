@@ -1,7 +1,0 @@
-<map id="ProjectManagementRequestHandler::pollRemoteOperationWithExponentialBackoff" name="ProjectManagementRequestHandler::pollRemoteOperationWithExponentialBackoff">
-<area shape="rect" id="Node000001" title=" " alt="" coords="240,31,436,87"/>
-<area shape="rect" id="Node000002" href="$class_project_management_request_handler.html#a70ae896c748763891e27f708185d06d4" title=" " alt="" coords="5,5,192,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="224,46,192,41,193,36,225,41"/>
-<area shape="rect" id="Node000003" href="$class_project_management_request_handler.html#a9beb38a03ea195fbfe23c5625f15cbfc" title=" " alt="" coords="5,71,192,111"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="225,77,193,81,192,76,224,72"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="parseIPv4" name="parseIPv4">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,86,31"/>
-<area shape="rect" id="Node000002" href="$url-state-machine_8js.html#afa601f10e35b3a6c97acb17405bcbd51" title=" " alt="" coords="134,5,260,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="86,16,118,16,118,21,86,21"/>
-<area shape="rect" id="Node000003" href="$parse_int_8js.html#a04ee837a5f7721fcb0ea2d152162ef92" title=" " alt="" coords="308,5,376,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="260,16,292,16,292,21,260,21"/>
-</map>

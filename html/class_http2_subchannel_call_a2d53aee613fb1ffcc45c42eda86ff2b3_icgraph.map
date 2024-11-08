@@ -1,7 +1,0 @@
-<map id="Http2SubchannelCall::cancelWithStatus" name="Http2SubchannelCall::cancelWithStatus">
-<area shape="rect" id="Node000001" title=" " alt="" coords="237,39,381,79"/>
-<area shape="rect" id="Node000002" href="$class_http2_subchannel_call.html#a4e662060d7da85f955a859ea983cd3c5" title=" " alt="" coords="25,5,169,46"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="221,48,169,40,170,34,222,43"/>
-<area shape="rect" id="Node000003" href="$class_http2_subchannel_call.html#aa89acb416a3ba6d0141060d7c5bab4db" title=" " alt="" coords="5,71,189,111"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="222,75,189,80,189,74,221,70"/>
-</map>

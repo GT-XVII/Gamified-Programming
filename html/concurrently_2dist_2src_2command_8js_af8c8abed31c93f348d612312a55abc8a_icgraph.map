@@ -1,7 +1,0 @@
-<map id="pipeTo" name="pipeTo">
-<area shape="rect" id="Node000001" title=" " alt="" coords="239,31,298,56"/>
-<area shape="rect" id="Node000002" href="$class_command.html#a6a9d37a3bfd52de9988bb255fe0a9aa3" title=" " alt="" coords="5,5,191,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="223,40,188,34,189,29,224,34"/>
-<area shape="rect" id="Node000003" href="$class_command.html#a6e2eefe05cafc191965ae4284e15e27a" title=" " alt="" coords="40,55,156,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="224,52,157,62,156,57,223,47"/>
-</map>
