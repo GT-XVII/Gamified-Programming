@@ -18,6 +18,14 @@ export const Navigation: React.FC<NavigationProps> = ({ onLogin, onRegister, isL
           className="overflow-hidden p-2 my-auto text-[color:var(--sds-color-text-brand-on-brand)] bg-transparent hover:text-red-400 transition-colors duration-200 focus:outline-none focus:border-none border-none">
           Blog
         </button>
+        {/* **Start Quiz Button - Only shows if user is logged in** */}
+        {isLoggedIn && (
+          <button 
+            onClick={() => window.location.href = '/game'} 
+            className="overflow-hidden p-2 my-auto text-[color:var(--sds-color-text-brand-on-brand)] bg-transparent hover:text-red-400 transition-colors duration-200 focus:outline-none focus:border-none border-none">
+            Start Quiz
+          </button>
+        )}
           {!isLoggedIn ? (
             <>
             <button onClick={onLogin} className="overflow-hidden p-2 my-auto text-[color:var(--sds-color-text-brand-on-brand)] bg-transparent hover:text-red-400 transition-colors duration-200 focus:outline-none focus:border-none border-none">
