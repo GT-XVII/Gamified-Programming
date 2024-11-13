@@ -1,0 +1,83 @@
+/* Quiz container styles */
+.quiz-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .quiz-title {
+    font-size: 1.8em;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  /* Quiz task styles */
+  .quiz-task {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #ffffff;
+  }
+  
+  .quiz-task h3 {
+    font-size: 1.2em;
+    margin-bottom: 0.5rem;
+    color: #444;
+  }
+  
+  /* Answer form styles */
+  .quiz-answer-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .quiz-answer-form input {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+  }
+  
+  .quiz-answer-form button {
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1em;
+    color: #fff;
+    background-color: #646cff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .quiz-answer-form button:hover {
+    background-color: #535bcf;
+  }
+  
+  .feedback {
+    margin-top: 0.5rem;
+    font-size: 0.9em;
+    color: green;
+  }
+  
+  /* Responsive design for mobile */
+  @media (max-width: 768px) {
+    .quiz-container {
+      padding: 1rem;
+    }
+    .quiz-task {
+      padding: 0.5rem;
+    }
+    .quiz-answer-form button {
+      width: 100%;
+    }
+  }
+  

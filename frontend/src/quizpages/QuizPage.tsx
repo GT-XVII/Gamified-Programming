@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import QuizTask from './quizcomponents/QuizTask';
+import './QuizPage.css';
+
 
 const QuizPage: React.FC = () => {
   const [tasks, setTasks] = useState([]);
