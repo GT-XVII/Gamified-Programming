@@ -1,0 +1,50 @@
+// sends the user’s answer to the /check_answer endpoint and displays whether the answer is correct
+
+import React, { useState } from 'react';
+
+interface AnswerFormProps {
+  task: {
+    description: string;
+    quiz: {
+      type: string;
+      solutions?: string[];
+      solution?: string;
+    };
+  };
+}
+
+const QuizAnswerForm: React.FC<AnswerFormProps> = ({ task }) => {
+  const [input, setInput] = useState('');
+  const [feedback, setFeedback] = useState('');
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    fetch('/check_answer', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        task_description: task.description,
+        user_input: input,
+      }),
+    })
+      .then(response => response.json())
+      .then(data => setFeedback(data.message))
+      .catch(error => setFeedback('Error checking answer.'));
+  };
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <input
+        type="text"
+        value={input}
+        onChange={e => setInput(e.target.value)}
+        placeholder="Enter your answer"
+      />
+      <button type="submit">Submit Answer</button>
+      {feedback && <p>{feedback}</p>}
+    </form>
+  );
+};
+
+export default QuizAnswerForm;
