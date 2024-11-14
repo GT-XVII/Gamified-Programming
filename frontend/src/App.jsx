@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
 import './output.css';
 import Landing from './pages/LandingPage.tsx';
-import QuizPage from '../../backend/quizpages/QuizPage.tsx';
+import QuizPage from '../quizpages/QuizPage';
+
 
 
 
@@ -13,7 +14,7 @@ function App() {
       <div>
         <Routes>
           <Route path="/" element={<Landing />} />
-          <Route path="/quiz" element={<QuizPage />} /> 
+          <Route path="/quiz/:topic" element={<QuizPage />} />  
         </Routes>
       </div>
     </Router>

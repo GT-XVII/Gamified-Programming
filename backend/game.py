@@ -14,8 +14,10 @@ from game_logic.game_python.loader import Loader
 from game_logic.game_python.content_work import ContentWork
 from game_logic.game_python.quiz_logic import QuizLogic
 
-# Initialize Flask app
+from flask_cors import CORS
+
 app = Flask(__name__)
+CORS(app)  # This will allow all origins
 
 
 # Initialize the loader
