@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Generate Doxygen Docs",
+        "type": "shell",
+        "command": "doxygen Doxyfile",
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": [],
+        "detail": "Generates documentation with Doxygen"
+      },
+      {
+        "label": "Open Doxygen Docs in Browser",
+        "type": "shell",
+        "command": "open docs/html/index.html", 
+        "dependsOn": "Generate Doxygen Docs",
+        "problemMatcher": [],
+        "detail": "Opens the generated documentation in the browser"
+      }
+    ]
+  }
+  

@@ -16,6 +16,7 @@ from game_logic.game_python.quiz_logic import QuizLogic
 # Initialize Flask app
 app = Flask(__name__)
 
+
 # Initialize the loader
 loader = Loader()
 content_work = None
