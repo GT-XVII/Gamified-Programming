@@ -9,7 +9,7 @@ game_logic_path = "/Users/nicoletiokhin/Desktop/Software Semester 3/Gamified-Pro
 sys.path.append(game_logic_path)
 
 # Now try importing the Loader class
-from game_python.loader import Loader 
+from game_logic.game_python import loader
 from game_logic.game_python.content_work import ContentWork
 from game_logic.game_python.quiz_logic import QuizLogic
 
