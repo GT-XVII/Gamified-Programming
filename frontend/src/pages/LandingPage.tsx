@@ -1,5 +1,5 @@
-// landing.tsx
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { LoginForm } from './components/LoginForm';
 import { RegisterForm } from './components/RegisterForm';
 import { Navigation } from './components/Navigation';
@@ -7,36 +7,37 @@ import { Hero } from './components/Hero';
 import { CourseCard } from './components/CourseCard';
 
 const courseData = [
-  { title: 'Booleans', description: 'Some descriptive text about booleans', imageSrc: '/Boolean.png', progress: 0, totalSteps: 20 },
-  { title: 'Strings', description: 'Some descriptive text about Strings', imageSrc: '/Strings.png', progress: 0, totalSteps: 20 },
-  { title: 'Numbers', description: 'Some descriptive text about Numbers', imageSrc: '/Numbers.png', progress: 0, totalSteps: 20 },
-  { title: 'Lists', description: 'Some descriptive text about Lists', imageSrc: '/Array.png', progress: 0, totalSteps: 20 }
+  { id: 'booleans', title: 'Booleans', description: 'Some descriptive text about booleans', imageSrc: '/Boolean.png', progress: 0, totalSteps: 20 },
+  { id: 'strings', title: 'Strings', description: 'Some descriptive text about Strings', imageSrc: '/Strings.png', progress: 0, totalSteps: 20 },
+  { id: 'zahlen', title: 'Numbers', description: 'Some descriptive text about Numbers', imageSrc: '/Numbers.png', progress: 0, totalSteps: 20 },
+  { id: 'listen', title: 'Lists', description: 'Some descriptive text about Lists', imageSrc: '/Array.png', progress: 0, totalSteps: 20 }
 ];
 
 const LandingPage: React.FC = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [isLoginOpen, setIsLoginOpen] = useState(false);
   const [isRegisterOpen, setIsRegisterOpen] = useState(false);
+  const navigate = useNavigate();
 
   const handleLogin = () => setIsLoginOpen(true);
   const handleRegister = () => setIsRegisterOpen(true);
-
   const closeModals = () => {
     setIsLoginOpen(false);
     setIsRegisterOpen(false);
   };
 
-  // Close modal on outside click
-  const handleOutsideClick = (e: MouseEvent) => {
-    const target = e.target as HTMLElement;
-    if (target.classList.contains('modal-overlay')) {
-      closeModals();
-    }
+  const handleCourseClick = (courseId: string) => {
+    navigate(`/quiz/${courseId}`);
   };
 
   useEffect(() => {
-    document.addEventListener('mousedown', handleOutsideClick);
-    return () => document.removeEventListener('mousedown', handleOutsideClick);
+    document.addEventListener('mousedown', (e) => {
+      const target = e.target as HTMLElement;
+      if (target.classList.contains('modal-overlay')) {
+        closeModals();
+      }
+    });
+    return () => document.removeEventListener('mousedown', closeModals);
   }, []);
 
   return (
@@ -45,15 +46,17 @@ const LandingPage: React.FC = () => {
       <Hero />
       <section className="mt-24 w-full">
         <div className="grid grid-cols-2 gap-4 w-full">
-          {courseData.map((course, index) => (
-            <div key={index} className="w-full p-4 rounded-lg">
+          {courseData.map((course) => (
+            <div 
+              key={course.id} 
+              className="w-full p-4 rounded-lg" 
+              onClick={() => handleCourseClick(course.id)}
+            >
               <CourseCard {...course} />
             </div>
           ))}
         </div>
       </section>
-
-      {/* Login Modal */}
       {isLoginOpen && !isLoggedIn && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center modal-overlay">
           <div className="bg-white p-6 rounded-lg w-[400px] relative">
@@ -64,8 +67,6 @@ const LandingPage: React.FC = () => {
           </div>
         </div>
       )}
-
-      {/* Register Modal */}
       {isRegisterOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center modal-overlay">
           <div className="bg-white p-6 rounded-lg w-[400px] relative">

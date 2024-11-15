@@ -8,6 +8,7 @@ import QuizPage from '../quizpages/QuizPage';
 
 
 
+
 function App() {
   return (
     <Router>
