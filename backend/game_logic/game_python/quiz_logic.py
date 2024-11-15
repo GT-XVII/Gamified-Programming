@@ -1,47 +1,32 @@
 from typing import Dict, List, Union
 
-# class handles displaying quizzes and checking answers
 class QuizLogic:
     def __init__(self, tasks: List[Dict[str, Union[str, Dict]]]):
         self.tasks = tasks
-    
-    # go through each task and display it
-    def process_tasks(self) -> None:
-        # For each task print the task’s description and difficulty level
-        # Then, it call _present_quiz to show the quiz question and get the user’s answer
-        for task in self.tasks:
-            print(f"Task: {task['description']} (Difficulty: {task['difficulty']})")
-            self._present_quiz(task['quiz'])
 
-    # show the quiz question to the user and take their answer
-    def _present_quiz(self, quiz: Dict[str, Union[str, List[str]]]) -> None:
-        # check the type of quiz
-        # Fill-out Quiz: show template (code with blanks where the user needs to fill in the answers)
+    def process_tasks(self) -> List[Dict[str, Union[str, List[str]]]]:
+        # Converts tasks to a simplified format for frontend display
+        return [{"description": task['description'], "difficulty": task['difficulty'], "quiz": task['quiz']} for task in self.tasks]
+
+    def _check_fillout_answer(self, user_inputs: List[str], solutions: List[str]) -> str:
+     if user_inputs == solutions:
+        return "Correct!"
+     else:
+        return f"Incorrect. The correct answers are: {solutions}"
+
+
+        quiz = task.get('quiz')
         if quiz['type'] == 'fillout-quiz':
-            print("Complete the code :")
-            print(quiz['template'])
-            #  save user answer as user_input
-            user_input = input("Your answer: ")
-            # calls _check_fillout_answer to check if the user’s answer is correct by comparing it with the correct answers (quiz['solutions'])
-            self._check_fillout_answer(user_input, quiz['solutions'])
-        # Coding Quiz: Prompt the user to enter the full code answer
-        # Check via using _check_coding_answer
+            return self._check_fillout_answer(user_input, quiz['solutions'])
         elif quiz['type'] == 'coding-quiz':
-            user_input = input("Enter the complete code solution: ")
-            self._check_coding_answer(user_input, quiz['solution'])
-
-    # !!! needs to be modified to save wrong answers 
-    def _check_fillout_answer(self, user_input: str, solutions: List[str]) -> None:
-        # compare user_input with the list of correct solutions
-        if user_input in solutions:
-            print("Correct!")
+            return self._check_coding_answer(user_input, quiz['solution'])
         else:
-            print("Incorrect. Try again.")
+            return "Unknown quiz type."
 
-    # !!! needs to be modified to save wrong answers 
-    def _check_coding_answer(self, user_input: str, solution: str) -> None:
-        # compare user_input to the correct solution
-        if user_input == solution:
-            print("Correct!")
-        else:
-            print("Incorrect. The correct answer is:", solution)
+    def _check_fillout_answer(self, user_input: str, solutions: List[str]) -> str:
+        # Check if user input matches any solution
+        return "Correct!" if user_input in solutions else "Incorrect. Try again."
+
+    def _check_coding_answer(self, user_input: str, solution: str) -> str:
+        # Compare user input to the correct solution
+        return "Correct!" if user_input == solution else f"Incorrect. The correct answer is: {solution}"

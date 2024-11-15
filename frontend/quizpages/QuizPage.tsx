@@ -12,21 +12,42 @@ type Task = {
 const QuizPage: React.FC = () => {
   const { topic } = useParams<{ topic: string }>();
   const [tasks, setTasks] = useState<Task[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState('');
 
   useEffect(() => {
+    setLoading(true);
+    setError('');
+
     fetch(`http://127.0.0.1:5000/load_data/${topic}.json`)
-      .then(response => response.json())
-      .then(data => setTasks(data.tasks))
-      .catch(error => console.error('Error loading quiz:', error));
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Failed to load quiz data');
+        }
+        return response.json();
+      })
+      .then(data => {
+        setTasks(data.tasks || []); // Default to empty array if no tasks
+        setLoading(false);
+      })
+      .catch(error => {
+        console.error('Error loading quiz:', error);
+        setError('Could not load quiz data. Please try again later.');
+        setLoading(false);
+      });
   }, [topic]);
 
   return (
     <div>
       <h1>Quiz on {topic}</h1>
-      {tasks.length > 0 ? (
+      {loading ? (
+        <p>Loading tasks...</p>
+      ) : error ? (
+        <p>{error}</p>
+      ) : tasks.length > 0 ? (
         tasks.map((task, index) => <QuizTask key={index} task={task} />)
       ) : (
-        <p>Loading tasks...</p>
+        <p>No tasks available for this topic.</p>
       )}
     </div>
   );
