@@ -17,15 +17,17 @@ interface AnswerFormProps {
 const QuizAnswerForm: React.FC<AnswerFormProps> = ({ task, userInputs }) => {
   const [input, setInput] = useState(''); // Used for coding-quiz
   const [feedback, setFeedback] = useState('');
+  const [forceRender, setForceRender] = useState(0); // Dummy state to force re-render
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
     // Determine what to send based on the quiz type
-    const inputToSend =
-      userInputs && userInputs.length > 0
-        ? userInputs.join(' ') // Join userInputs for fillout-quiz
-        : input; // Use single input for coding-quiz
+    const inputToSend = userInputs && userInputs.length > 0
+      ? userInputs.join(' ') // Join userInputs for fillout-quiz
+      : input; // Use single input for coding-quiz
+
+    console.log("Submitting:", { task_description: task.description, user_input: inputToSend }); // Debugging log
 
     fetch('http://127.0.0.1:5000/check_answer', {
       method: 'POST',
@@ -35,10 +37,25 @@ const QuizAnswerForm: React.FC<AnswerFormProps> = ({ task, userInputs }) => {
         user_input: inputToSend,
       }),
     })
-      .then((response) => response.json())
-      .then((data) => setFeedback(data.message))
-      .catch((error) => setFeedback('Error checking answer.'));
+      .then((response) => {
+        if (!response.ok) throw new Error('Network response was not ok');
+        return response.json();
+      })
+      .then((data) => {
+        console.log("Feedback message received:", data.message); // Debugging log
+        setFeedback(data.message); // Set the feedback state
+        setForceRender((prev) => prev + 1); // Trigger a re-render
+      })
+      .catch((error) => {
+        console.error('Error checking answer:', error);
+        setFeedback('Error checking answer.');
+      });
   };
+
+  // Check feedback after a short delay to confirm if it updates
+  setTimeout(() => {
+    console.log("Feedback after delay:", feedback);
+  }, 1000);
 
   return (
     <form onSubmit={handleSubmit}>
@@ -54,7 +71,11 @@ const QuizAnswerForm: React.FC<AnswerFormProps> = ({ task, userInputs }) => {
         </div>
       )}
       <button type="submit">Submit Answer</button>
-      {feedback && <p>{feedback}</p>}
+      
+      {/* Display feedback in a div instead of a conditional p tag for testing */}
+      <div style={{ border: "1px solid black", padding: "5px", color: feedback.includes("Incorrect") ? "red" : "green" }}>
+        {feedback}
+      </div>
     </form>
   );
 };

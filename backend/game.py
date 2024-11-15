@@ -12,8 +12,11 @@ from game_logic.game_python.loader import Loader
 from game_logic.game_python.content_work import ContentWork
 from game_logic.game_python.quiz_logic import QuizLogic
 
+from flask_cors import CORS
+
 app = Flask(__name__)
-CORS(app)  # Enable CORS for all origins
+CORS(app)
+
 
 # Initialize the loader and content worker
 loader = Loader()
@@ -59,16 +62,16 @@ def check_answer():
         quiz_logic = QuizLogic([task])
         if quiz['type'] == 'fillout-quiz':
             # Pass the list of inputs to `_check_fillout_answer`
-            feedback = quiz_logic._check_fillout_answer(user_inputs, quiz['solutions'])
+            feedback = quiz_logic._check_fillout_answer(user_input, quiz['solutions'])
         elif quiz['type'] == 'coding-quiz':
             # Single answer check for coding-quiz
-            feedback = quiz_logic._check_coding_answer(user_inputs, quiz['solution'])  # Still treat as single input
+            feedback = quiz_logic._check_coding_answer(user_input, quiz['solution'])  # Still treat as single input
         else:
             feedback = "Unsupported quiz type."
 
         return jsonify({
             'message': feedback,
-            'user_input': user_inputs
+            'user_input': user_input
         })
     else:
         return jsonify({
