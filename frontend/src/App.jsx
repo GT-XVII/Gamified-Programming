@@ -4,6 +4,8 @@ import './App.css';
 import './output.css';
 import Landing from './pages/LandingPage.tsx';
 import QuizPage from '../quizpages/QuizPage';
+import ContentPage from "../content/ContentPage";
+
 
 
 
@@ -16,6 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/quiz/:topic" element={<QuizPage />} />  
+          <Route path="/content/:courseId" element={<ContentPage />} />
         </Routes>
       </div>
     </Router>
