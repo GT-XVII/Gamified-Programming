@@ -27,7 +27,7 @@ const LandingPage: React.FC = () => {
   };
 
   const handleCourseClick = (courseId: string) => {
-    navigate(`/quiz/${courseId}`);
+    navigate(`/content/${courseId}`);
   };
 
   useEffect(() => {

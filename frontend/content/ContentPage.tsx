@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import ImageDisplay from "../src/pages/components/ImageDisplay";
 import "./ContentPage.css";
 
@@ -26,8 +26,10 @@ interface ContentSection {
 
 const ContentPage: React.FC = () => {
   const { courseId } = useParams<{ courseId: string }>();
+  const navigate = useNavigate();
   const [content, setContent] = useState<ContentSection[] | null>(null);
 
+  // Fetch content based on courseId
   useEffect(() => {
     const fetchContent = async () => {
       try {
@@ -51,47 +53,37 @@ const ContentPage: React.FC = () => {
     fetchContent();
   }, [courseId]);
 
+  // Recursive rendering function
   const renderContent = (section: ContentSection): React.ReactNode => {
     if (!section || !section.type) {
-      console.error("Invalid section:", section);
+      console.error("Invalid or missing section:", section);
       return null;
     }
 
-    const { type, content } = section;
-
-    if (!content && type !== "break" && type !== "img") {
-      console.warn(`Content is null or undefined for section type: ${type}`);
-      return null;
-    }
+    const { type, content, elements, src, id } = section;
 
     switch (type) {
       case "span":
-        if (typeof content === "string") {
-          return <p>{content}</p>;
-        }
         if (Array.isArray(content)) {
           return (
-            <p>
-              {content.map((sub, i) => {
-                if (sub.type === "inline-code") {
-                  return (
-                    <code key={i} className="inline-code">
-                      {sub.content}
-                    </code>
-                  );
-                }
-                return <span key={i}>{sub.content}</span>;
-              })}
-            </p>
+            <span>
+              {content.map((subContent, index) =>
+                renderContent(subContent as ContentSection)
+              )}
+            </span>
           );
         }
+        if (typeof content === "string") {
+          return <span>{content}</span>;
+        }
+        console.warn("Unsupported span content:", content);
         return null;
 
       case "img":
-        if (section.src) {
+        if (src) {
           return (
             <div className="image-container">
-              <ImageDisplay src={section.src} />
+              <ImageDisplay src={src} />
             </div>
           );
         }
@@ -99,24 +91,16 @@ const ContentPage: React.FC = () => {
         return null;
 
       case "ul":
-        if (section.elements) {
+        if (Array.isArray(elements)) {
           return (
             <ul className="content-list">
-              {section.elements.map((element, i) => (
-                <li key={i}>
-                  {element.type === "link" ? (
-                    <a href={element.url} className="content-link">
-                      {element.content}
-                    </a>
-                  ) : (
-                    element.content
-                  )}
-                </li>
+              {elements.map((element, i) => (
+                <li key={i}>{renderContent(element as ContentSection)}</li>
               ))}
             </ul>
           );
         }
-        console.warn("List elements are missing.");
+        console.warn("List elements are missing or invalid.");
         return null;
 
       case "code":
@@ -148,9 +132,9 @@ const ContentPage: React.FC = () => {
         return <br />;
 
       case "anchor":
-        if (content && typeof content === "object") {
+        if (id && content) {
           return (
-            <div id={section.id} className="anchor-section">
+            <div id={id} className="content-anchor">
               {renderContent(content as ContentSection)}
             </div>
           );
@@ -158,36 +142,55 @@ const ContentPage: React.FC = () => {
         console.warn("Anchor content is missing or invalid.");
         return null;
 
+      case "important-block":
       case "example-block":
-        if (typeof content === "string") {
-          return <div className="example-block">{content}</div>;
+        if (Array.isArray(content)) {
+          return (
+            <div className={`${type}`}>
+              {content.map((subContent, index) => (
+                <div key={index}>{renderContent(subContent as ContentSection)}</div>
+              ))}
+            </div>
+          );
         }
-        console.warn("Example block content is missing or invalid.");
+        console.warn(`${type} content is missing or invalid.`);
         return null;
 
-      case "important-block":
-        if (typeof content === "string") {
-          return <div className="important-block">{content}</div>;
+      case "link":
+        if (typeof section.url === "string" && typeof section.content === "string") {
+          return (
+            <a href={section.url} className="content-link">
+              {section.content}
+            </a>
+          );
         }
-        console.warn("Important block content is missing or invalid.");
+        console.warn("Link content or URL is missing.");
         return null;
 
       default:
-        console.error("Unsupported section type:", type);
+        console.warn("Unsupported section type:", type);
         return null;
     }
+  };
+
+  const handleQuizRedirect = () => {
+    navigate(`/quiz/${courseId}`);
   };
 
   return (
     <div className="content-page">
       <h1 className="content-title">{courseId}</h1>
       <div className="content-body">
-        {content?.map((section, index) => (
-          <div key={index} className="content-section">
-            {renderContent(section)}
-          </div>
-        ))}
+        {content &&
+          content.map((section, index) => (
+            <div key={index} className="content-section">
+              {renderContent(section)}
+            </div>
+          ))}
       </div>
+      <button className="quiz-button" onClick={handleQuizRedirect}>
+        Go to Quiz
+      </button>
     </div>
   );
 };
