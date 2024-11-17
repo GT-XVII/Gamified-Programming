@@ -1,13 +1,11 @@
-import React from 'react';
+import React from "react";
 
-// component will receive a src (the image URL) 
 interface ImageDisplayProps {
   src: string;
 }
 
-// Render the image
 const ImageDisplay: React.FC<ImageDisplayProps> = ({ src }) => (
-  <img src={src} />
+  <img src={src} alt="Content Image" className="content-image" />
 );
 
 export default ImageDisplay;

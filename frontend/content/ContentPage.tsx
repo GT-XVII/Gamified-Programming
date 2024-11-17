@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import ImageDisplay from "../src/pages/components/ImageDisplay";
 import "./ContentPage.css";
 
 interface InlineContent {
   type: string;
   content: string;
+  url?: string;
 }
 
 interface NestedContentSection {
@@ -19,6 +21,7 @@ interface ContentSection {
   src?: string;
   elements?: InlineContent[];
   id?: string;
+  url?: string;
 }
 
 const ContentPage: React.FC = () => {
@@ -32,8 +35,6 @@ const ContentPage: React.FC = () => {
           `http://127.0.0.1:5000/load_data/${courseId}.json`
         );
         const data = await response.json();
-
-        console.log("Fetched content:", data.content);
 
         if (Array.isArray(data.content)) {
           setContent(data.content as ContentSection[]);
@@ -51,114 +52,137 @@ const ContentPage: React.FC = () => {
   }, [courseId]);
 
   const renderContent = (section: ContentSection): React.ReactNode => {
-    if (!section.content) return null;
+    if (!section || !section.type) {
+      console.error("Invalid section:", section);
+      return null;
+    }
 
-    switch (section.type) {
+    const { type, content } = section;
+
+    if (!content && type !== "break" && type !== "img") {
+      console.warn(`Content is null or undefined for section type: ${type}`);
+      return null;
+    }
+
+    switch (type) {
       case "span":
-        if (typeof section.content === "string") {
-          return <p>{section.content}</p>;
+        if (typeof content === "string") {
+          return <p>{content}</p>;
         }
-        if (Array.isArray(section.content)) {
+        if (Array.isArray(content)) {
           return (
             <p>
-              {section.content.map((sub, i) =>
-                sub.type === "inline-code" ? (
-                  <code key={i} className="inline-code">
-                    {sub.content}
-                  </code>
-                ) : (
-                  <span key={i}>{sub.content}</span>
-                )
-              )}
+              {content.map((sub, i) => {
+                if (sub.type === "inline-code") {
+                  return (
+                    <code key={i} className="inline-code">
+                      {sub.content}
+                    </code>
+                  );
+                }
+                return <span key={i}>{sub.content}</span>;
+              })}
             </p>
           );
         }
         return null;
 
       case "img":
-        return (
-          <div className="image-container">
-            <img src={section.src} alt="" className="content-image" />
-          </div>
-        );
+        if (section.src) {
+          return (
+            <div className="image-container">
+              <ImageDisplay src={section.src} />
+            </div>
+          );
+        }
+        console.warn("Image source (src) is missing.");
+        return null;
 
       case "ul":
         if (section.elements) {
           return (
             <ul className="content-list">
               {section.elements.map((element, i) => (
-                <li key={i}>{element.content}</li>
+                <li key={i}>
+                  {element.type === "link" ? (
+                    <a href={element.url} className="content-link">
+                      {element.content}
+                    </a>
+                  ) : (
+                    element.content
+                  )}
+                </li>
               ))}
             </ul>
           );
         }
+        console.warn("List elements are missing.");
         return null;
 
       case "code":
-        if (typeof section.content === "string") {
+        if (typeof content === "string") {
           return (
             <pre className="code-block">
-              <code>{section.content}</code>
+              <code>{content}</code>
             </pre>
           );
         }
+        console.warn("Code content is missing or invalid.");
         return null;
 
       case "h3":
-        if (typeof section.content === "string") {
-          return <h3 className="content-heading">{section.content}</h3>;
+        if (typeof content === "string") {
+          return <h3 className="content-heading">{content}</h3>;
         }
+        console.warn("Heading content is missing or invalid.");
         return null;
 
-      case "example-block":
-        if (typeof section.content === "string") {
-          return (
-            <div className="example-block">
-              <p>{section.content}</p>
-            </div>
-          );
+      case "h4":
+        if (typeof content === "string") {
+          return <h4 className="content-subheading">{content}</h4>;
         }
-        return null;
-
-      case "important-block":
-        if (typeof section.content === "string") {
-          return (
-            <div className="important-block">
-              <strong>{section.content}</strong>
-            </div>
-          );
-        }
-        return null;
-
-      case "anchor":
-        if (typeof section.content === "object" && "type" in section.content) {
-          return (
-            <div id={section.id} className="content-anchor">
-              {renderContent(section.content as ContentSection)}
-            </div>
-          );
-        }
-        console.error("Invalid content for anchor:", section.content);
+        console.warn("Subheading content is missing or invalid.");
         return null;
 
       case "break":
         return <br />;
 
+      case "anchor":
+        if (content && typeof content === "object") {
+          return (
+            <div id={section.id} className="anchor-section">
+              {renderContent(content as ContentSection)}
+            </div>
+          );
+        }
+        console.warn("Anchor content is missing or invalid.");
+        return null;
+
+      case "example-block":
+        if (typeof content === "string") {
+          return <div className="example-block">{content}</div>;
+        }
+        console.warn("Example block content is missing or invalid.");
+        return null;
+
+      case "important-block":
+        if (typeof content === "string") {
+          return <div className="important-block">{content}</div>;
+        }
+        console.warn("Important block content is missing or invalid.");
+        return null;
+
       default:
-        console.error("Unsupported section type:", section.type);
+        console.error("Unsupported section type:", type);
         return null;
     }
   };
-
-  if (content === null) {
-    return <p>Loading content...</p>;
-  }
 
   return (
     <div className="content-page">
       <h1 className="content-title">{courseId}</h1>
       <div className="content-body">
-        {content.map((section, index) => (
+        {content?.map((section, index) => (
           <div key={index} className="content-section">
             {renderContent(section)}
           </div>
