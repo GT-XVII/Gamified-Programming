@@ -3,8 +3,8 @@ import sys
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 
-# Absolute path to the 'game_logic' folder
-game_logic_path = "/Users/nicoletiokhin/Desktop/Software Semester 3/Gamified-Programming-1/game_logic"
+# Dynamic path to the 'game_logic' folder
+game_logic_path = os.path.join(os.path.dirname(__file__), "game_logic")
 sys.path.append(game_logic_path)
 
 # Import necessary classes
@@ -78,5 +78,8 @@ def check_answer():
             'message': 'Task not found.'
         }), 404
 if __name__ == '__main__':
-    print("Running Flask server...")
-    app.run(debug=True)
+    def run_server():
+        print("Starting Flask server...")
+        app.run(host='0.0.0.0', port=5050)
+    
+    run_server()

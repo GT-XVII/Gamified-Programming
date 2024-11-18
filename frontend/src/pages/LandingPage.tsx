@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { LoginForm } from './components/LoginForm';
-import { RegisterForm } from './components/RegisterForm';
-import { Navigation } from './components/Navigation';
-import { Hero } from './components/Hero';
-import { CourseCard } from './components/CourseCard';
+import { LoginForm } from './LandingPageComponents/LoginForm';
+import { RegisterForm } from './LandingPageComponents/RegisterForm';
+import { Navigation } from './LandingPageComponents/Navigation';
+import { Hero } from './LandingPageComponents/Hero';
+import { CourseCard } from './LandingPageComponents/CourseCard';
 
 const courseData = [
   { id: 'booleans', title: 'Booleans', description: 'Some descriptive text about booleans', imageSrc: '/Boolean.png', progress: 0, totalSteps: 20 },

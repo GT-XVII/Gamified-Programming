@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import QuizTask from "./quizcomponents/QuizTask";
+import QuizTask from "./QuizComponents/QuizTask.tsx";
 import "./QuizPage.css";
 
 type Task = {
@@ -19,7 +19,7 @@ const QuizPage: React.FC = () => {
     setLoading(true);
     setError("");
 
-    fetch(`http://127.0.0.1:5000/load_data/${topic}.json`)
+    fetch(`http://127.0.0.1:5050/load_data/${topic}.json`)
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to load quiz data");

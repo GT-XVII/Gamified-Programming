@@ -25,7 +25,7 @@ const QuizAnswerForm: React.FC<AnswerFormProps> = ({ task, userInputs }) => {
       ? userInputs.join(" ")
       : input;
 
-    fetch("http://127.0.0.1:5000/check_answer", {
+    fetch("http://127.0.0.1:5050/check_answer", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
