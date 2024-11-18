@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import ImageDisplay from "../src/pages/components/ImageDisplay";
+import ImageDisplay from "../pages/LandingPageComponents/ImageDisplay";
 import "./ContentPage.css";
 
 interface InlineContent {
@@ -34,7 +34,7 @@ const ContentPage: React.FC = () => {
     const fetchContent = async () => {
       try {
         const response = await fetch(
-          `http://127.0.0.1:5000/load_data/${courseId}.json`
+          `http://127.0.0.1:5050/load_data/${courseId}.json`
         );
         const data = await response.json();
 

@@ -13,7 +13,7 @@ class Loader:
 
     def load_json(self, filename: str) -> None:
         # get the full path to the file
-        filepath = os.path.join('/Users/nicoletiokhin/Desktop/Software Semester 3/Gamified-Programming-1/backend/game_logic/json_files', filename)
+        filepath = os.path.join(os.path.dirname(__file__), "..", "json_files", filename)        
         # open json file and store in data 
         with open(filepath, 'r', encoding='utf-8') as file:
             data = json.load(file)

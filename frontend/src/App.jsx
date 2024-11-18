@@ -3,13 +3,8 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
 import './output.css';
 import Landing from './pages/LandingPage.tsx';
-import QuizPage from '../quizpages/QuizPage';
-import ContentPage from "../content/ContentPage";
-
-
-
-
-
+import QuizPage from './pages/QuizPage.tsx';
+import ContentPage from "./pages/ContentPage.tsx";
 
 function App() {
   return (
