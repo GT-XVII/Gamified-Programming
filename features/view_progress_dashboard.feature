@@ -16,3 +16,4 @@ Feature: Viewing Progress Dashboard
     When the user navigates to the progress dashboard
     Then the system displays a message "No progress available"
     And prompts the user to complete a quiz
+    
