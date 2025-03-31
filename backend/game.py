@@ -2,6 +2,10 @@ import os
 import sys
 from flask import Flask, jsonify, request
 from flask_cors import CORS
+from routes import app 
+
+if __name__ == "__main__":
+    app.run(debug=True)
 
 # Dynamic path to the 'game_logic' folder
 game_logic_path = os.path.join(os.path.dirname(__file__), "game_logic")
@@ -82,4 +86,4 @@ if __name__ == '__main__':
         print("Starting Flask server...")
         app.run(host='0.0.0.0', port=5050)
     
-    run_server()
+    run_server() 
