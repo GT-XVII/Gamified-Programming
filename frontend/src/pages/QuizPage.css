@@ -68,18 +68,7 @@
   color: green;
 }
 
-/* Responsive design for mobile */
-@media (max-width: 768px) {
-  .quiz-container {
-    padding: 1rem;
-  }
-  .quiz-task {
-    padding: 0.5rem;
-  }
-  .quiz-answer-form button {
-    width: 100%;
-  }
-}
+/* Try Again button */
 .try-again-button {
   background-color: #ff9800;
   color: white;
@@ -95,7 +84,14 @@
   background-color: #e68900;
 }
 
-form button {
+/* Slideshow navigation buttons */
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.navigation-buttons button {
   background-color: #0074d9;
   color: white;
   border: none;
@@ -103,8 +99,35 @@ form button {
   cursor: pointer;
   border-radius: 5px;
   font-size: 1rem;
+  transition: background-color 0.3s;
 }
 
-form button:hover {
+.navigation-buttons button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.navigation-buttons button:hover:not(:disabled) {
   background-color: #005bb5;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+  .quiz-container {
+    padding: 1rem;
+  }
+  .quiz-task {
+    padding: 0.5rem;
+  }
+  .quiz-answer-form button {
+    width: 100%;
+  }
+}
+
+h1 {
+  color: black;
+}
+
+p {
+  color: black;
 }
