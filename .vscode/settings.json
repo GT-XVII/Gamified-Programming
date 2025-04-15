@@ -1,0 +1,4 @@
+{
+     "python.analysis.extraPaths": ["./", "./game_logic", "./backend"],
+  "python.defaultInterpreterPath": "venv/bin/python"
+}
