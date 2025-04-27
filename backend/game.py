@@ -1,13 +1,21 @@
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 from supabase import create_client, Client
-from dotenv import load_dotenv  # Not needed if you're passing values directly
+from dotenv import load_dotenv
+import os
 
-# Directly assign your Supabase URL and Key
-SUPABASE_URL = 'https://ipgtewpoorcnqsybtcjw.supabase.co'  
-SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlwZ3Rld3Bvb3JjbnFzeWJ0Y2p3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDQzNzUzNjIsImV4cCI6MjA1OTk1MTM2Mn0.zrKRfYwHFuzmhz69Eo09FD2G9EfkpQAMfm0k3Q-32NY'  
+# Load environment variables from the .env file
+load_dotenv()
 
-# Initialize Supabase Client
+# Get the Supabase URL and Key from environment variables
+SUPABASE_URL = os.getenv("SUPABASE_URL")
+SUPABASE_KEY = os.getenv("SUPABASE_KEY")
+
+# Check if the environment variables are loaded correctly (optional)
+if not SUPABASE_URL or not SUPABASE_KEY:
+    raise ValueError("Supabase URL or Key is missing from the environment variables")
+
+# Initialize the Supabase client
 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 
 # Initialize Flask app
@@ -92,4 +100,4 @@ def get_results(firebase_uid):
     ])
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5050, debug=True)3
+    app.run(host='0.0.0.0', port=5050, debug=True)
