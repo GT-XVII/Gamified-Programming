@@ -11,6 +11,7 @@ sys.path.append(game_logic_path)
 from game_logic.game_python.loader import Loader
 from game_logic.game_python.content_work import ContentWork
 from game_logic.game_python.quiz_logic import QuizLogic
+from game_logic.game_python.game_state import GameState
 
 from flask_cors import CORS
 
@@ -83,3 +84,20 @@ if __name__ == '__main__':
         app.run(host='0.0.0.0', port=5050)
     
     run_server()
+
+
+@app.route('/game_state', methods=['GET', 'POST'])
+def game_state():
+    # Access the Singleton instance
+    game_state_manager = GameState()
+
+    if request.method == 'POST':
+        # Update the game state
+        data = request.json
+        game_state_manager.set_game_state(data)
+        return jsonify({"message": "Game state updated!"})
+
+    elif request.method == 'GET':
+        # Return the current game state
+        state = game_state_manager.get_game_state()
+        return jsonify({"state": state})
