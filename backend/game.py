@@ -1,3 +1,14 @@
+import os
+import sys
+
+# Path to game_logic folder
+game_logic_path = os.path.join(os.path.dirname(__file__), "game_logic")
+sys.path.append(game_logic_path)
+
+# Import game logic classes
+from game_logic.game_python.loader import Loader
+from game_logic.game_python.content_work import ContentWork
+from game_logic.game_python.quiz_logic import QuizLogic
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 from supabase import create_client, Client
@@ -13,6 +24,9 @@ supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 # Initialize Flask app
 app = Flask(__name__)
 CORS(app)
+
+loader = Loader()
+content_work = None
 
 @app.route('/')
 def home():
@@ -91,5 +105,49 @@ def get_results(firebase_uid):
         for r in results
     ])
 
+@app.route('/load_data/<filename>', methods=['GET'])
+def load_data(filename):
+    loader.load_json(filename)
+    content = loader.get_content()
+    tasks = loader.get_tasks()
+    quiz_logic = QuizLogic(tasks)
+
+    if content:
+        global content_work
+        content_work = ContentWork(content)
+        content_work.process_content()
+
+    return jsonify({
+        'message': f"Data from {filename} loaded successfully.",
+        'content': content,
+        'tasks': quiz_logic.process_tasks()
+    })
+
+@app.route('/check_answer', methods=['POST'])
+def check_answer():
+    data = request.json
+    task_description = data.get("task_description")
+    user_input = data.get("user_input")
+
+    tasks = loader.get_tasks()
+    task = next((t for t in tasks if t['description'] == task_description), None)
+    
+    if task:
+        quiz = task.get('quiz')
+        quiz_logic = QuizLogic([task])
+        if quiz['type'] == 'fillout-quiz':
+            feedback = quiz_logic._check_fillout_answer(user_input, quiz['solutions'])
+        elif quiz['type'] == 'coding-quiz':
+            feedback = quiz_logic._check_coding_answer(user_input, quiz['solution'])
+        else:
+            feedback = "Unsupported quiz type."
+
+        return jsonify({
+            'message': feedback,
+            'user_input': user_input
+        })
+    else:
+        return jsonify({'message': 'Task not found.'}), 404
+    
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5050, debug=True)
