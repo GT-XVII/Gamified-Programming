@@ -3,6 +3,7 @@
 // sends the user’s answer to the /check_answer endpoint and displays whether the answer is correct
 
 import React, { useState } from "react";
+const backendUrl = import.meta.env.VITE_BACKEND_URL;
 
 interface AnswerFormProps {
   task: {
@@ -21,7 +22,7 @@ const QuizAnswerForm: React.FC<AnswerFormProps> = ({ task }) => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    fetch("http://127.0.0.1:5000/check_answer", {
+    fetch(`${backendUrl}/check_answer`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({

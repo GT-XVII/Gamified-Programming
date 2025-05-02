@@ -3,6 +3,8 @@ import { useParams, useNavigate } from "react-router-dom";
 import ImageDisplay from "../pages/LandingPageComponents/ImageDisplay";
 import "./ContentPage.css";
 
+const backendUrl = import.meta.env.VITE_BACKEND_URL;
+
 interface InlineContent {
   type: string;
   content: string;
@@ -29,13 +31,10 @@ const ContentPage: React.FC = () => {
   const navigate = useNavigate();
   const [content, setContent] = useState<ContentSection[] | null>(null);
 
-  // Fetch content based on courseId
   useEffect(() => {
     const fetchContent = async () => {
       try {
-        const response = await fetch(
-          `http://127.0.0.1:5050/load_data/${courseId}.json`
-        );
+        const response = await fetch(`${backendUrl}/load_data/${courseId}.json`);
         const data = await response.json();
 
         if (Array.isArray(data.content)) {
@@ -50,10 +49,11 @@ const ContentPage: React.FC = () => {
       }
     };
 
-    fetchContent();
+    if (courseId) {
+      fetchContent();
+    }
   }, [courseId]);
 
-  // Recursive rendering function
   const renderContent = (section: ContentSection): React.ReactNode => {
     if (!section || !section.type) {
       console.error("Invalid or missing section:", section);
