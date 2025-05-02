@@ -35,7 +35,7 @@ const QuizTask: React.FC<TaskProps> = ({ task }) => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const userInput = inputs.join(" ");
-    fetch("http://127.0.0.1:5000/check_answer", {
+    fetch("http://127.0.0.1:5050/check_answer", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
