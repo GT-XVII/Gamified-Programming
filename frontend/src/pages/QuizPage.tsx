@@ -3,6 +3,8 @@ import { useParams } from "react-router-dom";
 import QuizTask from "./quizcomponents/QuizTask";
 import "./QuizPage.css";
 
+const backendUrl = import.meta.env.VITE_BACKEND_URL;
+
 type Task = {
   description: string;
   difficulty: string;
@@ -25,7 +27,7 @@ const QuizPage: React.FC = () => {
     try {
       setLoading(true);
       setError("");
-      const response = await fetch(`http://127.0.0.1:5050/load_data/${topic}.json`);
+      const response = await fetch(`${backendUrl}/load_data/${topic}.json`);
       if (!response.ok) {
         throw new Error("Failed to load quiz data");
       }
