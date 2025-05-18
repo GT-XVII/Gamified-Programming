@@ -221,6 +221,8 @@
     ],
     "tasks": [
         {
+            "id": "zahlen01",
+            "filename": "zahlen.json",
             "description": "Gegeben sind zwei Variablen a und b vom Typ int. Gib das Produkt der beiden Zahlen aus.",
             "difficulty": "easy",
             "quiz": {
@@ -229,6 +231,8 @@
             }
         },
         {
+            "id": "zahlen02",
+            "filename": "zahlen.json",
             "description": "Gegeben sind zwei Variablen a und b vom Typ int. Gib das Produkt der beiden Zahlen aus.",
             "difficulty": "easy",
             "quiz": {
@@ -240,6 +244,8 @@
             }
         },
         {
+            "id": "zahlen03",
+            "filename": "zahlen.json",
             "description": "Gegeben sind zwei Variablen a und b vom Typ int. Gib das Produkt der beiden Zahlen aus.",
             "difficulty": "easy",
             "quiz": {
@@ -248,6 +254,8 @@
             }
         },
         {
+            "id": "zahlen04",
+            "filename": "zahlen.json",
             "description": "Gegeben sind zwei Variablen a und b vom Typ int. Gib das Produkt der beiden Zahlen aus.",
             "difficulty": "easy",
             "quiz": {

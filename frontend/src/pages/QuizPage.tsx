@@ -22,19 +22,20 @@ const QuizPage: React.FC = () => {
   const [tasks, setTasks] = useState<Task[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
-  const [currentTaskIndex, setCurrentTaskIndex] = useState(0);
+  const [currentTask, setCurrentTask] = useState<Task | null>(null);
 
   const fetchQuizData = async () => {
     try {
       setLoading(true);
       setError("");
-      const response = await fetch(`${backendUrl}/load_data/${topic}.json`);
+      const firebase_uid = localStorage.getItem("firebase_uid");
+      const response = await fetch(`${backendUrl}/start_quiz/${topic}.json/${firebase_uid}`);
       if (!response.ok) {
         throw new Error("Failed to load quiz data");
       }
       const data = await response.json();
       setTasks(data.tasks || []);
-      setCurrentTaskIndex(0); // Reset to the first task
+      setCurrentTask(data.next_task || data.tasks[0]);
     } catch (err) {
       console.error("Error loading quiz data:", err);
       setError("Could not load quiz data. Please try again later.");
@@ -47,18 +48,6 @@ const QuizPage: React.FC = () => {
     fetchQuizData();
   }, [topic]);
 
-  const handleNextTask = () => {
-    if (currentTaskIndex < tasks.length - 1) {
-      setCurrentTaskIndex((prevIndex) => prevIndex + 1);
-    }
-  };
-
-  const handlePreviousTask = () => {
-    if (currentTaskIndex > 0) {
-      setCurrentTaskIndex((prevIndex) => prevIndex - 1);
-    }
-  };
-
   const handleTryAgain = () => {
     fetchQuizData();
   };
@@ -70,23 +59,9 @@ const QuizPage: React.FC = () => {
         <p>Loading tasks...</p>
       ) : error ? (
         <p>{error}</p>
-      ) : tasks.length > 0 ? (
+      ) : tasks.length > 0 && currentTask ? (
         <div className="quiz-slideshow">
-          <QuizTask task={tasks[currentTaskIndex]} filename={`${topic}.json`} />
-          <div className="navigation-buttons">
-            <button onClick={handlePreviousTask} disabled={currentTaskIndex === 0}>
-              Previous
-            </button>
-            <button
-              onClick={handleNextTask}
-              disabled={currentTaskIndex === tasks.length - 1}
-            >
-              Next
-            </button>
-          </div>
-          <p>
-            Task {currentTaskIndex + 1} of {tasks.length}
-          </p>
+          <QuizTask key={currentTask.id} task={currentTask} filename={`${topic}.json`} setTask={setCurrentTask} />
           <button className="try-again-button" onClick={handleTryAgain}>
             Try Again
           </button>

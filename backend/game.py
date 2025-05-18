@@ -153,7 +153,7 @@ def check_answer():
         # Save progress and update score if correct
         if result["correct"]:
             firebase_uid = data.get("firebase_uid")
-            quiz_id = data.get("quiz_type")  # still coming in from frontend under quiz_type
+            quiz_id = data.get("filename")  # still coming in from frontend under quiz_type
             print("firebase_uid:", firebase_uid)
             print("quiz_id:", quiz_id)
             if not firebase_uid or not quiz_id:
@@ -198,6 +198,31 @@ def check_answer():
     else:
         return jsonify({'message': 'Task not found.'}), 404
     
+
+# New route: /start_quiz/<filename>/<firebase_uid>
+@app.route('/start_quiz/<filename>/<firebase_uid>', methods=['GET'])
+def start_quiz(filename, firebase_uid):
+    loader.load_json(filename)
+
+    user_res = supabase.table("users").select("id").eq("firebase_uid", firebase_uid).execute()
+    if not user_res.data:
+        return jsonify({"error": "User not found"}), 404
+    user_id = user_res.data[0]["id"]
+
+    results_res = supabase.table("quiz_progress").select("task_id").eq("user_id", user_id).eq("quiz_id", filename).execute()
+    completed_tasks = [r["task_id"] for r in results_res.data]
+    print("Completed tasks for user:", completed_tasks)
+    print("All loader task IDs:", [t["id"] for t in loader.get_tasks()])
+
+    next_task = loader.get_next_uncompleted_task(completed_tasks)
+
+    return jsonify({
+        "message": f"Data from {filename} loaded successfully.",
+        "content": loader.get_content(),
+        "tasks": loader.get_tasks(),
+        "next_task": next_task
+    })
+
 if __name__ == '__main__':
     print("Registered routes:")
     for rule in app.url_map.iter_rules():

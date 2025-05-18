@@ -2,7 +2,7 @@
 // Depending on the task type (e.g., "fillout-quiz" or "coding-quiz"), it displays different input forms.
 
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import QuizAnswerForm from "./QuizAnswerForm";
 import { getAuth } from "firebase/auth";
 const backendUrl = import.meta.env.VITE_BACKEND_URL;
@@ -19,19 +19,25 @@ interface TaskProps {
     };
   };
   filename: string;
+  setTask: (task: any) => void;
 }
 
-const QuizTask: React.FC<TaskProps> = ({ task, filename }) => {
+const QuizTask: React.FC<TaskProps> = ({ task, filename, setTask }) => {
   const currentUser = getAuth().currentUser;
   const firebase_uid = currentUser?.uid || "";
 
   const [feedback, setFeedback] = useState(""); // Always declared unconditionally
+  const [correctAnswered, setCorrectAnswered] = useState(false);
 
   // Always initialize variables/hooks, even if not used for certain types
   const templateParts = task.quiz.template ? task.quiz.template.split(/§{2,3}/) : [];
   const [inputs, setInputs] = useState<string[]>(
     task.quiz.template ? new Array(templateParts.length - 1).fill("") : []
   );
+
+  useEffect(() => {
+    console.log("Rendering task ID:", task.id);
+  }, [task]);
 
   const handleInputChange = (index: number, value: string) => {
     const newInputs = [...inputs];
@@ -69,6 +75,9 @@ const QuizTask: React.FC<TaskProps> = ({ task, filename }) => {
           setFeedback(data.message || "Something went wrong.");
         } else {
           setFeedback(data.message);
+          if (data.correct) {
+            setCorrectAnswered(true);
+          }
         }
       })
       .catch((error) => {
@@ -103,7 +112,7 @@ const QuizTask: React.FC<TaskProps> = ({ task, filename }) => {
       );
     } else if (task.quiz.type === "coding-quiz") {
       // Render coding-quiz
-      return <QuizAnswerForm task={task} />;
+      return <QuizAnswerForm task={task} filename={filename} onCorrectAnswer={() => setCorrectAnswered(true)} />;
     } else {
       // Render fallback for unknown types
       return <p>Unknown quiz type</p>;
@@ -115,6 +124,23 @@ const QuizTask: React.FC<TaskProps> = ({ task, filename }) => {
       <h3>{task.description}</h3>
       {renderQuizContent()}
       {feedback && <p className="feedback">{feedback}</p>}
+      {correctAnswered && (
+        <button
+          onClick={async () => {
+            const res = await fetch(`${backendUrl}/start_quiz/${filename}/${firebase_uid}`);
+            const next = await res.json();
+            if (next.next_task) {
+              setTask(next.next_task);
+              setFeedback("");
+              setCorrectAnswered(false);
+            } else {
+              setFeedback("Quiz complete!");
+            }
+          }}
+        >
+          Next Question
+        </button>
+      )}
     </div>
   );
 };

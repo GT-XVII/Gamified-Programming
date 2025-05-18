@@ -31,3 +31,10 @@ class Loader:
     def get_tasks(self) -> List[Dict[str, Union[str, List]]]:
     # return the loaded tasks data
         return self.tasks
+
+    def get_next_uncompleted_task(self, user_results: List[str]) -> Union[Dict, None]:
+        # Returns the first task not in the completed list
+        for task in self.tasks:
+            if task.get("id") not in user_results:
+                return task
+        return None
