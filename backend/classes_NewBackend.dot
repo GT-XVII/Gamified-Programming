@@ -1,0 +1,7 @@
+digraph "classes_NewBackend" {
+rankdir=BT
+charset="utf-8"
+"game_logic.game_python.content_work.ContentWork" [color="black", fontcolor="black", label=<{ContentWork|content : List[Dict[str, Union[str, List]]]<br ALIGN="LEFT"/>|process_content(): None<br ALIGN="LEFT"/>}>, shape="record", style="solid"];
+"game_logic.game_python.loader.Loader" [color="black", fontcolor="black", label=<{Loader|content : list<br ALIGN="LEFT"/>tasks : list<br ALIGN="LEFT"/>|get_content(): List[Dict[str, Union[str, List]]]<br ALIGN="LEFT"/>get_tasks(): List[Dict[str, Union[str, List]]]<br ALIGN="LEFT"/>load_json(filename: str): None<br ALIGN="LEFT"/>}>, shape="record", style="solid"];
+"game_logic.game_python.quiz_logic.QuizLogic" [color="black", fontcolor="black", label=<{QuizLogic|evaluator<br ALIGN="LEFT"/>tasks : List[Dict[str, Union[str, Dict]]]<br ALIGN="LEFT"/>|evaluate_quiz(task, user_input: str): str<br ALIGN="LEFT"/>process_tasks(): List[Dict[str, Union[str, List[str]]]]<br ALIGN="LEFT"/>}>, shape="record", style="solid"];
+}

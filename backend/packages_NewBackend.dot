@@ -1,0 +1,12 @@
+digraph "packages_NewBackend" {
+rankdir=BT
+charset="utf-8"
+"game" [color="black", label=<game>, shape="box", style="solid"];
+"game_logic.game_python" [color="black", label=<game_logic.game_python>, shape="box", style="solid"];
+"game_logic.game_python.content_work" [color="black", label=<game_logic.game_python.content_work>, shape="box", style="solid"];
+"game_logic.game_python.loader" [color="black", label=<game_logic.game_python.loader>, shape="box", style="solid"];
+"game_logic.game_python.quiz_logic" [color="black", label=<game_logic.game_python.quiz_logic>, shape="box", style="solid"];
+"game" -> "game_logic.game_python.content_work" [arrowhead="open", arrowtail="none"];
+"game" -> "game_logic.game_python.loader" [arrowhead="open", arrowtail="none"];
+"game" -> "game_logic.game_python.quiz_logic" [arrowhead="open", arrowtail="none"];
+}
