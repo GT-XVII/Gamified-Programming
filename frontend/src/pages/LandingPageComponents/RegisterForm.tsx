@@ -17,8 +17,29 @@ export const RegisterForm: React.FC<RegisterFormProps> = ({ onRegisterSuccess })
 
     try {
       await createUserWithEmailAndPassword(auth, email, password);
+
+      const user = auth.currentUser;
+      if (!user) throw new Error("No user found after registration.");
+
+      const response = await fetch("http://127.0.0.1:5050/create_user", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          firebase_uid: user.uid,
+          email: user.email,
+          username: user.email?.split("@")[0] || "new_user"
+        })
+      });
+
+      if (!response.ok) {
+        const resText = await response.text();
+        console.error("Supabase user creation failed:", resText);
+        throw new Error("Failed to create Supabase user.");
+      }
+
       onRegisterSuccess();
     } catch (err) {
+      console.error(err);
       setError("Failed to register. Please try again.");
     }
   };

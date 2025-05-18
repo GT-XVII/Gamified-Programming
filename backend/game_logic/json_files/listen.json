@@ -1,6 +1,7 @@
 {
     "type": "document",
     "title": "Listen",
+    "quiz_type": "arrays",
     "content": [
         {
             "type": "img",

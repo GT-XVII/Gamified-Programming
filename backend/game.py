@@ -9,7 +9,7 @@ sys.path.append(game_logic_path)
 from game_logic.game_python.loader import Loader
 from game_logic.game_python.content_work import ContentWork
 from game_logic.game_python.quiz_logic import QuizLogic
-from flask import Flask, jsonify, request
+from flask import Flask, request, jsonify
 from flask_cors import CORS
 from supabase import create_client, Client
 from dotenv import load_dotenv  # Not needed if you're passing values directly
@@ -23,7 +23,7 @@ supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 
 # Initialize Flask app
 app = Flask(__name__)
-CORS(app)
+CORS(app, supports_credentials=True)
 
 loader = Loader()
 content_work = None
@@ -35,11 +35,14 @@ def home():
 @app.route('/create_user', methods=['POST'])
 def create_user():
     data = request.json
+    print("Received data:", data)
     firebase_uid = data.get("firebase_uid")
     username = data.get("username")
     email = data.get("email")
 
     # Ensure required data is present
+    print("firebase_uid:", firebase_uid)
+    print("quiz_id:", quiz_id)
     if not firebase_uid or not username or not email:
         return jsonify({"error": "Missing required fields"}), 400
 
@@ -81,7 +84,7 @@ def save_result():
         "score": data["score"],
         "total_questions": data["total_questions"]
     }
-    res = supabase.table("quiz_results").insert(result).execute()
+    res = supabase.table("quiz_progress").insert(result).execute()
 
     if res.error is not None:
         return jsonify({"error": "Failed to save quiz result"}), 500
@@ -97,7 +100,7 @@ def get_results(firebase_uid):
     user = user_response.data[0]
 
     # Fetch quiz results for user
-    results_response = supabase.table("quiz_results").select("*").eq("user_id", user["id"]).execute()
+    results_response = supabase.table("quiz_progress").select("*").eq("user_id", user["id"]).execute()
     results = results_response.data
 
     return jsonify([
@@ -126,21 +129,67 @@ def load_data(filename):
 @app.route('/check_answer', methods=['POST'])
 def check_answer():
     data = request.json
-    task_description = data.get("task_description")
+    filename = data.get("filename")
+    if not filename:
+        return jsonify({"error": "Missing filename"}), 400
+    loader.load_json(filename)
     user_input = data.get("user_input")
-
+    task_id = data.get("task_id")
     tasks = loader.get_tasks()
-    task = next((t for t in tasks if t['description'] == task_description), None)
+    print("Available tasks:")
+    for t in tasks:
+        print("-", t.get("description"))
+    print("Looking for task_id:", task_id)
+    task = next((t for t in tasks if str(t.get("id")) == task_id), None)
+    
     
     if task:
         quiz = task.get('quiz')
         quiz_logic = QuizLogic([task])
-        if quiz['type'] == 'fillout-quiz':
-            feedback = quiz_logic._check_fillout_answer(user_input, quiz['solutions'])
-        elif quiz['type'] == 'coding-quiz':
-            feedback = quiz_logic._check_coding_answer(user_input, quiz['solution'])
-        else:
-            feedback = "Unsupported quiz type."
+        result = quiz_logic.check_answer(task, user_input)
+        print("Answer result:", result)
+        feedback = result["feedback"]
+
+        # Save progress and update score if correct
+        if result["correct"]:
+            firebase_uid = data.get("firebase_uid")
+            quiz_id = data.get("quiz_type")  # still coming in from frontend under quiz_type
+            print("firebase_uid:", firebase_uid)
+            print("quiz_id:", quiz_id)
+            if not firebase_uid or not quiz_id:
+                return jsonify({"error": "Missing firebase_uid or quiz_id"}), 400
+
+            user_res = supabase.table("users").select("*").eq("firebase_uid", firebase_uid).execute()
+            if not user_res.data:
+                return jsonify({"error": "User not found"}), 404
+            user = user_res.data[0]
+
+            print(f"Correct answer by user {firebase_uid} on task {task_id}")
+
+            # Save progress using upsert to resolve conflicts on (user_id, quiz_id, task_id)
+            try:
+                payload = {
+                    "user_id": user["id"],
+                    "task_id": task_id,
+                    "is_correct": True,
+                    "quiz_id": quiz_id
+                }
+                print("Payload sent to Supabase quiz_progress:", payload)
+                try:
+                    response = supabase.rpc("upsert_quiz_progress", {
+                        "p_user_id": user["id"],
+                        "p_quiz_id": quiz_id,
+                        "p_task_id": task_id,
+                        "p_is_correct": True
+                    }).execute()
+                    print("RPC response:", response)
+                except Exception as e:
+                    print("RPC error:", e)
+                    return jsonify({"error": "Failed to save quiz progress", "details": str(e)}), 500
+            except Exception as e:
+                print("Error saving quiz_progress:", e)
+                return jsonify({"error": "Failed to save quiz progress"}), 500
+
 
         return jsonify({
             'message': feedback,
@@ -150,4 +199,7 @@ def check_answer():
         return jsonify({'message': 'Task not found.'}), 404
     
 if __name__ == '__main__':
+    print("Registered routes:")
+    for rule in app.url_map.iter_rules():
+        print(rule)
     app.run(host='0.0.0.0', port=5050, debug=True)

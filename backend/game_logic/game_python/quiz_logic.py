@@ -5,28 +5,24 @@ class QuizLogic:
         self.tasks = tasks
 
     def process_tasks(self) -> List[Dict[str, Union[str, List[str]]]]:
-        # Converts tasks to a simplified format for frontend display
-        return [{"description": task['description'], "difficulty": task['difficulty'], "quiz": task['quiz']} for task in self.tasks]
+        return [{"id": task['id'], "description": task['description'], "difficulty": task['difficulty'], "quiz": task['quiz']} for task in self.tasks]
 
-    def _check_fillout_answer(self, user_inputs: List[str], solutions: List[str]) -> str:
-     if user_inputs == solutions:
-        return "Correct!"
-     else:
-        return f"Incorrect. The correct answers are: {solutions}"
-
-
+    def check_answer(self, task: Dict, user_input: Union[str, List[str]]) -> Dict[str, Union[str, bool]]:
         quiz = task.get('quiz')
+        feedback = "Unsupported quiz type."
+        correct = False
+
         if quiz['type'] == 'fillout-quiz':
-            return self._check_fillout_answer(user_input, quiz['solutions'])
+            correct = user_input in quiz['solutions']
+            feedback = "Correct!" if correct else f"Incorrect. The correct answers are: {quiz['solutions']}"
         elif quiz['type'] == 'coding-quiz':
-            return self._check_coding_answer(user_input, quiz['solution'])
-        else:
-            return "Unknown quiz type."
+            correct = user_input == quiz['solution']
+            feedback = "Correct!" if correct else f"Incorrect. The correct answer is: {quiz['solution']}"
+        elif quiz['type'] == 'mcq':
+            correct = user_input == quiz['correct_option']
+            feedback = "Correct!" if correct else f"Incorrect. Correct answer: {quiz['correct_option']}"
+        elif quiz['type'] == 'reorder':
+            correct = user_input == quiz['correct_order']
+            feedback = "Correct!" if correct else "Incorrect. Try again."
 
-    def _check_fillout_answer(self, user_input: str, solutions: List[str]) -> str:
-        # Check if user input matches any solution
-        return "Correct!" if user_input in solutions else "Incorrect. Try again."
-
-    def _check_coding_answer(self, user_input: str, solution: str) -> str:
-        # Compare user input to the correct solution
-        return "Correct!" if user_input == solution else f"Incorrect. The correct answer is: {solution}"
+        return {"correct": correct, "feedback": feedback}

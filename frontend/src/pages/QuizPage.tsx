@@ -6,6 +6,7 @@ import "./QuizPage.css";
 const backendUrl = import.meta.env.VITE_BACKEND_URL;
 
 type Task = {
+  id: string;
   description: string;
   difficulty: string;
   quiz: {
@@ -71,7 +72,7 @@ const QuizPage: React.FC = () => {
         <p>{error}</p>
       ) : tasks.length > 0 ? (
         <div className="quiz-slideshow">
-          <QuizTask task={tasks[currentTaskIndex]} />
+          <QuizTask task={tasks[currentTaskIndex]} filename={`${topic}.json`} />
           <div className="navigation-buttons">
             <button onClick={handlePreviousTask} disabled={currentTaskIndex === 0}>
               Previous

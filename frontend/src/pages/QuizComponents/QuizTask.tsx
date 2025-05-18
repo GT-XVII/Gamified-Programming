@@ -4,10 +4,12 @@
 
 import React, { useState } from "react";
 import QuizAnswerForm from "./QuizAnswerForm";
+import { getAuth } from "firebase/auth";
 const backendUrl = import.meta.env.VITE_BACKEND_URL;
 
 interface TaskProps {
   task: {
+    id: string;
     description: string;
     quiz: {
       type: string;
@@ -16,9 +18,13 @@ interface TaskProps {
       solution?: string;
     };
   };
+  filename: string;
 }
 
-const QuizTask: React.FC<TaskProps> = ({ task }) => {
+const QuizTask: React.FC<TaskProps> = ({ task, filename }) => {
+  const currentUser = getAuth().currentUser;
+  const firebase_uid = currentUser?.uid || "";
+
   const [feedback, setFeedback] = useState(""); // Always declared unconditionally
 
   // Always initialize variables/hooks, even if not used for certain types
@@ -36,18 +42,37 @@ const QuizTask: React.FC<TaskProps> = ({ task }) => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const userInput = inputs.join(" ");
+    
+    console.log("Sending payload:", {
+      task_id: task.id,
+      user_input: userInput,
+      quiz_type: task.quiz.type,
+      firebase_uid: firebase_uid,
+      filename: filename
+    });
+
     fetch(`${backendUrl}/check_answer`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        task_description: task.description,
+        task_id: task.id,
         user_input: userInput,
+        quiz_type: task.quiz.type,
+        firebase_uid: firebase_uid,
+        filename: filename
       }),
     })
-      .then((response) => response.json())
-      .then((data) => setFeedback(data.message))
+      .then(async (response) => {
+        const data = await response.json();
+        if (!response.ok) {
+          console.error("Backend error:", data);
+          setFeedback(data.message || "Something went wrong.");
+        } else {
+          setFeedback(data.message);
+        }
+      })
       .catch((error) => {
-        console.error("Error checking answer:", error);
+        console.error("Network error:", error);
         setFeedback("Error checking answer.");
       });
   };
