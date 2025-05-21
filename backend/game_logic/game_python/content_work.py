@@ -23,30 +23,35 @@ class ContentWork:
                 self._display_code(section['content'])
 
     def _display_text(self, content: Union[str, List[Dict[str, Union[str, List]]]]) -> None:
-        # If the content is just text, print it
+        # If the content is just text, would display plain text
         if isinstance(content, str):
-            print(content)
-        # If content is a list (meaning more complex), goe through each item in the list
-          # If the item is span, just print it 
+            # would display plain text
+            pass
+        # If content is a list (meaning more complex), go through each item in the list
+          # If the item is span, just display it 
           # If the item is code, adds backticks (``) to look like code.
         elif isinstance(content, list):
             for item in content:
                 if item['type'] == 'span':
-                    print(item['content'], end='')
+                    # would display inline span text
+                    pass
                 elif item['type'] == 'inline-code':
-                    print(f"`{item['content']}`", end='')
-            print()
+                    # would display inline code like: `item['content']`
+                    pass
+            # would end line here after inline content
+            pass
 
     # Show the link to image !!! when connecting the ui should show image 
     def _display_image(self, src: str) -> None:
-        print(f"[Image: {src}]")
+        # would display image link
+        pass
 
     def _display_list(self, elements: List[Dict[str, str]]) -> None:
-        # go through each item in elements and print it with a - in front
+        # go through each item in elements and would display list item with a - in front
         for element in elements:
-            print(f"- {element['content']}")
+            # would display list item
+            pass
 
     def _display_code(self, code: str) -> None:
-        # print "Code:" and then the actual code
-        # !!! when connecting to ui should be formated like a fancy code block 
-        print(f"Code:\n{code}")
+        # would display code block
+        pass

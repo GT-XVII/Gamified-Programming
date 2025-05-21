@@ -40,10 +40,8 @@ export const CourseCard: React.FC<CourseCardProps> = ({
   // Fetches progress for the course
   const fetchProgress = async () => {
     try {
-      console.log(`Fetching progress for courseId: ${courseId} with UID: ${firebaseUid}`);
       if (!firebaseUid) return; // prevent invalid request
       const response = await axios.get(`${backendUrl}/course_progress/${firebaseUid}`);
-      console.log("Raw response data for", courseId, ":", response.data);
       const data = response.data;
       if (!data || typeof data !== 'object') {
         setProgress(0);
@@ -51,7 +49,6 @@ export const CourseCard: React.FC<CourseCardProps> = ({
       }
       const completed = data[courseId] ?? 0;
       setProgress(completed);
-      console.log(`Course ID: ${courseId}, Completed tasks: ${completed}`);
       // Previous logic using is_correct:
       // if (data) {
       //   setProgress(data.correct);
@@ -74,6 +71,8 @@ export const CourseCard: React.FC<CourseCardProps> = ({
     fetchData();
   }, [firebaseUid, courseId]);
 
+  const progressRatio = progress !== null ? progress / totalSteps : 0;
+
   return (
     <article className="flex flex-col max-md:ml-0 max-md:w-full">
       <div className="flex overflow-hidden flex-col py-5 mx-auto w-full rounded-3xl border border-solid bg-zinc-900 border-zinc-900 max-md:mt-4 max-md:max-w-full">
@@ -85,11 +84,22 @@ export const CourseCard: React.FC<CourseCardProps> = ({
               </div>
               <div className="flex flex-col ml-5 max-md:ml-0 max-md:w-full">
                 <div className="flex flex-col mt-2 max-md:mt-10">
-                  <div className="flex flex-col min-h-[14px]">
-                    <div className="flex w-full bg-purple-200 rounded-lg min-h-[4px]">
+                  <div className="flex flex-col mt-2">
+                    <div className="flex w-full rounded-lg min-h-[4px] overflow-hidden">
                       <div
-                        className="bg-gradient-to-r from-orange-400 to-pink-400 rounded-lg"
-                        style={{ width: progress !== null ? `${(progress / totalSteps) * 100}%` : '0%' }}
+                        className="h-1 flex-shrink-0 flex-grow-0 z-10"
+                        style={{
+                          backgroundColor: '#f87171',
+                          width: progress !== null ? `${(progress / totalSteps) * 100}%` : '0%',
+                          minWidth: progress && progress > 0 ? '4px' : '0'
+                        }}
+                      />
+                      <div
+                        className="bg-white h-1 flex-grow z-0"
+                        style={{
+                          width: progress !== null ? `${100 - (progress / totalSteps) * 100}%` : '100%',
+                          minWidth: progress !== null && progress < totalSteps ? '4px' : '0'
+                        }}
                       />
                     </div>
                   </div>
