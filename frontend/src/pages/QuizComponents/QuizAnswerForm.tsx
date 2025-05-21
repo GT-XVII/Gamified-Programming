@@ -9,8 +9,6 @@ interface AnswerFormProps {
     description: string;
     quiz: {
       type: string;
-      solutions?: string[];
-      solution?: string;
     };
   };
   filename: string;

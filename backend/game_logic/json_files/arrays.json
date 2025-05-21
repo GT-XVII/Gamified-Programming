@@ -466,7 +466,7 @@
     "tasks": [
         {
             "id": "listen01",
-            "filename": "listen.json",
+            "filename": "arrays.json",
             "description": "Das Programm soll die Liste ausgeben.",
             "difficulty": "easy",
             "quiz": {
@@ -480,7 +480,7 @@
         },
         {
             "id": "listen02",
-            "filename": "listen.json",
+            "filename": "arrays.json",
             "description": "Gib eine Liste aus, das die folgenden Elemente in angegebener Reihenfogle enthält: True, 0.45 ,\"Gabriel\"",
             "difficulty": "easy",
             "quiz": {
@@ -490,7 +490,7 @@
         },
         {
             "id": "listen03",
-            "filename": "listen.json",
+            "filename": "arrays.json",
             "description": "Gegeben ist eine Liste liste. Das Programm soll das letzte Element der Liste ausgeben.",
             "difficulty": "easy",
             "quiz": {
@@ -503,7 +503,7 @@
         },
         {
             "id": "listen04",
-            "filename": "listen.json",
+            "filename": "arrays.json",
             "description": "Das Programm soll eine Liste ausgeben, die vier mal die 1 als Element hat.",
             "difficulty": "easy",
             "quiz": {
@@ -516,7 +516,7 @@
         },
         {
             "id": "listen05",
-            "filename": "listen.json",
+            "filename": "arrays.json",
             "description": "Gegeben sind zwei Listen l1 und l2. Füge l2 l1 an und gib das Resultat aus.",
             "difficulty": "easy",
             "quiz": {
@@ -526,7 +526,7 @@
         },
         {
             "id": "listen06",
-            "filename": "listen.json",
+            "filename": "arrays.json",
             "description": "Gegeben ist eine Liste liste. Gib Die Liste in umgedrehter Reihenfolge aus.",
             "difficulty": "medium",
             "quiz": {
@@ -536,7 +536,7 @@
         },
         {
             "id": "listen07",
-            "filename": "listen.json",
+            "filename": "arrays.json",
             "description": "Gegeben ist eine Liste liste und eine Zahl n. Gib True aus, falls n in liste vorkommt, andernfalls False.",
             "difficulty": "medium",
             "quiz": {
@@ -546,7 +546,7 @@
         },
         {
             "id": "listen08",
-            "filename": "listen.json",
+            "filename": "arrays.json",
             "description": "Gegeben ist eine Liste liste und ein String s. Entferne das erste Element von liste und füge als letztes Element s an. Gib schließlich liste aus.",
             "difficulty": "medium",
             "quiz": {
@@ -556,7 +556,7 @@
         },
         {
             "id": "listen09",
-            "filename": "listen.json",
+            "filename": "arrays.json",
             "description": "Gegeben ist eine Liste zahlen. Gib die Summe des Minimums und des Maximums von zahlen aus.",
             "difficulty": "medium",
             "quiz": {
@@ -566,7 +566,7 @@
         },
         {
             "id": "listen10",
-            "filename": "listen.json",
+            "filename": "arrays.json",
             "description": "Gegeben sind zwei Integer-Listen l1 und l2. Gib die sortierte Konkatenation der beiden Listen aus.",
             "difficulty": "medium",
             "quiz": {

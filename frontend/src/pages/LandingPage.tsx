@@ -5,19 +5,33 @@ import { RegisterForm } from './LandingPageComponents/RegisterForm';
 import { Navigation } from './LandingPageComponents/Navigation';
 import { Hero } from './LandingPageComponents/Hero';
 import { CourseCard } from './LandingPageComponents/CourseCard';
+import { getAuth } from 'firebase/auth';
+const backendUrl = import.meta.env.VITE_BACKEND_URL;
 
 const courseData = [
-  { id: 'booleans', title: 'Booleans', description: 'Some descriptive text about booleans', imageSrc: '/Boolean.png', progress: 0, totalSteps: 20 },
-  { id: 'strings', title: 'Strings', description: 'Some descriptive text about Strings', imageSrc: '/Strings.png', progress: 0, totalSteps: 20 },
-  { id: 'zahlen', title: 'Numbers', description: 'Some descriptive text about Numbers', imageSrc: '/Numbers.png', progress: 0, totalSteps: 20 },
-  { id: 'listen', title: 'Lists', description: 'Some descriptive text about Lists', imageSrc: '/Array.png', progress: 0, totalSteps: 20 }
+  { id: 'booleans', title: 'Booleans', description: 'Some descriptive text about booleans', imageSrc: '/Boolean.png', totalSteps: 4 },
+  { id: 'strings', title: 'Strings', description: 'Some descriptive text about Strings', imageSrc: '/Strings.png', totalSteps: 5 },
+  { id: 'integers', title: 'Integers', description: 'Some descriptive text about Integers', imageSrc: '/Numbers.png', totalSteps: 4 },
+  { id: 'arrays', title: 'Arrays', description: 'Some descriptive text about Arrays', imageSrc: '/Array.png', totalSteps: 10 }
 ];
 
 const LandingPage: React.FC = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [isLoginOpen, setIsLoginOpen] = useState(false);
   const [isRegisterOpen, setIsRegisterOpen] = useState(false);
+  const [firebaseUid, setFirebaseUid] = useState<string | null>(null);
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const auth = getAuth();
+    const unsubscribe = auth.onAuthStateChanged((user) => {
+      if (user) {
+        setFirebaseUid(user.uid);
+      }
+    });
+    return () => unsubscribe();
+  }, []);
+
 
   const handleLogin = () => setIsLoginOpen(true);
   const handleRegister = () => setIsRegisterOpen(true);
@@ -30,15 +44,15 @@ const LandingPage: React.FC = () => {
     navigate(`/content/${courseId}`);
   };
 
-  useEffect(() => {
-    document.addEventListener('mousedown', (e) => {
-      const target = e.target as HTMLElement;
-      if (target.classList.contains('modal-overlay')) {
-        closeModals();
-      }
-    });
-    return () => document.removeEventListener('mousedown', closeModals);
-  }, []);
+useEffect(() => {
+  document.addEventListener('mousedown', (e) => {
+    const target = e.target as HTMLElement;
+    if (target.classList.contains('modal-overlay')) {
+      closeModals();
+    }
+  });
+  return () => document.removeEventListener('mousedown', closeModals);
+}, []);
 
   return (
     <main className="w-full">
@@ -52,7 +66,14 @@ const LandingPage: React.FC = () => {
               className="w-full p-4 rounded-lg" 
               onClick={() => handleCourseClick(course.id)}
             >
-              <CourseCard {...course} />
+              <CourseCard
+                title={course.title}
+                description={course.description}
+                imageSrc={course.imageSrc}
+                courseId={course.id}
+                firebaseUid={firebaseUid || ''}
+                totalSteps={course.totalSteps || 0}
+              />
             </div>
           ))}
         </div>
