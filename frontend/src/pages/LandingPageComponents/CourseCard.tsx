@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+const backendUrl = import.meta.env.VITE_BACKEND_URL;
 
 /**
  * Props for the CourseCard component.
@@ -6,14 +8,16 @@ import React from 'react';
  * @property {string} title - The title of the course.
  * @property {string} description - A brief description of the course.
  * @property {string} imageSrc - The source URL for the course image.
- * @property {number} progress - The current progress of the course.
+ * @property {string} courseId - The ID of the course.
+ * @property {string} firebaseUid - The Firebase user ID.
  * @property {number} totalSteps - The total number of steps in the course.
  */
 interface CourseCardProps {
   title: string;
   description: string;
   imageSrc: string;
-  progress: number;
+  courseId: string;
+  firebaseUid: string;
   totalSteps: number;
 }
 
@@ -27,9 +31,48 @@ export const CourseCard: React.FC<CourseCardProps> = ({
   title,
   description,
   imageSrc,
-  progress,
+  courseId,
+  firebaseUid,
   totalSteps
 }) => {
+  const [progress, setProgress] = useState<number | null>(null);
+
+  // Fetches progress for the course
+  const fetchProgress = async () => {
+    try {
+      if (!firebaseUid) return; // prevent invalid request
+      const response = await axios.get(`${backendUrl}/course_progress/${firebaseUid}`);
+      const data = response.data;
+      if (!data || typeof data !== 'object') {
+        setProgress(0);
+        return;
+      }
+      const completed = data[courseId] ?? 0;
+      setProgress(completed);
+      // Previous logic using is_correct:
+      // if (data) {
+      //   setProgress(data.correct);
+      //   setTotalSteps(data.total);
+      // }
+    } catch (error) {
+      console.error("Failed to fetch course progress", error);
+    }
+  };
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        if (!firebaseUid) return;
+        await fetchProgress();
+      } catch (error) {
+        console.error("Error fetching course data:", error);
+      }
+    };
+    fetchData();
+  }, [firebaseUid, courseId]);
+
+  const progressRatio = progress !== null ? progress / totalSteps : 0;
+
   return (
     <article className="flex flex-col max-md:ml-0 max-md:w-full">
       <div className="flex overflow-hidden flex-col py-5 mx-auto w-full rounded-3xl border border-solid bg-zinc-900 border-zinc-900 max-md:mt-4 max-md:max-w-full">
@@ -41,11 +84,29 @@ export const CourseCard: React.FC<CourseCardProps> = ({
               </div>
               <div className="flex flex-col ml-5 max-md:ml-0 max-md:w-full">
                 <div className="flex flex-col mt-2 max-md:mt-10">
-                  <div className="flex flex-col min-h-[14px]">
-                    <div className="flex w-full bg-purple-200 rounded-lg min-h-[4px]" />
+                  <div className="flex flex-col mt-2">
+                    <div className="flex w-full rounded-lg min-h-[4px] overflow-hidden">
+                      <div
+                        className="h-1 flex-shrink-0 flex-grow-0 z-10"
+                        style={{
+                          backgroundColor: '#f87171',
+                          width: progress !== null ? `${(progress / totalSteps) * 100}%` : '0%',
+                          minWidth: progress && progress > 0 ? '4px' : '0'
+                        }}
+                      />
+                      <div
+                        className="bg-white h-1 flex-grow z-0"
+                        style={{
+                          width: progress !== null ? `${100 - (progress / totalSteps) * 100}%` : '100%',
+                          minWidth: progress !== null && progress < totalSteps ? '4px' : '0'
+                        }}
+                      />
+                    </div>
                   </div>
                   <div className="mt-2 text-xs tracking-normal leading-tight text-white font-[number:var(--sds-typography-subheading-font-weight)]">
-                    Progress {progress}/{totalSteps}
+                    {progress !== null
+                      ? `Progress ${progress}/${totalSteps}`
+                      : 'Loading progress...'}
                   </div>
                 </div>
               </div>

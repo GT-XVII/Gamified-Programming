@@ -22,7 +22,6 @@ class Loader:
         # set to data['tasks'], or an empty list if tasks is missing
         self.tasks = data.get('tasks', [])
         # sensible or not ? 
-        print(f"Successfully Loaded data from {filename}")
 
     def get_content(self) -> List[Dict[str, Union[str, List]]]:
     # return the loaded content data

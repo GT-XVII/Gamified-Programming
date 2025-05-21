@@ -61,7 +61,7 @@ const QuizTask: React.FC<TaskProps> = ({ task, filename, setTask }) => {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        task_id: task.id,
+        quiz_task_id: task.id,
         user_input: userInput,
         quiz_type: task.quiz.type,
         firebase_uid: firebase_uid,
