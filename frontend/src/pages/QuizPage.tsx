@@ -1,3 +1,4 @@
+/// <reference types="vite/client" />
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import QuizTask from "./quizcomponents/QuizTask";
