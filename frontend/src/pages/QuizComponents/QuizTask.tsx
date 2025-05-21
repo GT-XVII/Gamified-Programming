@@ -1,10 +1,7 @@
-// displays individual quiz tasks and accepts user inputs
-// Depending on the task type (e.g., "fillout-quiz" or "coding-quiz"), it displays different input forms.
-
-
 import React, { useState, useEffect } from "react";
 import QuizAnswerForm from "./QuizAnswerForm";
 import { getAuth } from "firebase/auth";
+
 const backendUrl = import.meta.env.VITE_BACKEND_URL;
 
 interface TaskProps {
@@ -16,27 +13,25 @@ interface TaskProps {
       template?: string;
       solutions?: string[];
       solution?: string;
+      correct_option?: string;
+      correct_order?: string[];
     };
   };
   filename: string;
-  setTask: (task: any) => void;
+  onCorrectAnswer?: () => void; // ✅ NEW PROP
 }
 
-const QuizTask: React.FC<TaskProps> = ({ task, filename, setTask }) => {
+const QuizTask: React.FC<TaskProps> = ({ task, filename, onCorrectAnswer }) => {
   const currentUser = getAuth().currentUser;
   const firebase_uid = currentUser?.uid || "";
 
-  const [feedback, setFeedback] = useState(""); // Always declared unconditionally
-  const [correctAnswered, setCorrectAnswered] = useState(false);
-
-  // Always initialize variables/hooks, even if not used for certain types
+  const [feedback, setFeedback] = useState("");
+  const [inputs, setInputs] = useState<string[]>([]);
   const templateParts = task.quiz.template ? task.quiz.template.split(/§{2,3}/) : [];
-  const [inputs, setInputs] = useState<string[]>(
-    task.quiz.template ? new Array(templateParts.length - 1).fill("") : []
-  );
 
   useEffect(() => {
-    console.log("Rendering task ID:", task.id);
+    setInputs(task.quiz.template ? new Array(templateParts.length - 1).fill("") : []);
+    setFeedback("");
   }, [task]);
 
   const handleInputChange = (index: number, value: string) => {
@@ -48,14 +43,6 @@ const QuizTask: React.FC<TaskProps> = ({ task, filename, setTask }) => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const userInput = inputs.join(" ");
-    
-    console.log("Sending payload:", {
-      task_id: task.id,
-      user_input: userInput,
-      quiz_type: task.quiz.type,
-      firebase_uid: firebase_uid,
-      filename: filename
-    });
 
     fetch(`${backendUrl}/check_answer`, {
       method: "POST",
@@ -64,19 +51,18 @@ const QuizTask: React.FC<TaskProps> = ({ task, filename, setTask }) => {
         task_id: task.id,
         user_input: userInput,
         quiz_type: task.quiz.type,
-        firebase_uid: firebase_uid,
-        filename: filename
+        firebase_uid,
+        filename
       }),
     })
       .then(async (response) => {
         const data = await response.json();
         if (!response.ok) {
-          console.error("Backend error:", data);
           setFeedback(data.message || "Something went wrong.");
         } else {
           setFeedback(data.message);
-          if (data.correct) {
-            setCorrectAnswered(true);
+          if (data.correct && onCorrectAnswer) {
+            onCorrectAnswer(); 
           }
         }
       })
@@ -88,7 +74,6 @@ const QuizTask: React.FC<TaskProps> = ({ task, filename, setTask }) => {
 
   const renderQuizContent = () => {
     if (task.quiz.type === "fillout-quiz" && task.quiz.template) {
-      // Render fillout-quiz
       return (
         <form onSubmit={handleSubmit}>
           <p>
@@ -111,10 +96,14 @@ const QuizTask: React.FC<TaskProps> = ({ task, filename, setTask }) => {
         </form>
       );
     } else if (task.quiz.type === "coding-quiz") {
-      // Render coding-quiz
-      return <QuizAnswerForm task={task} filename={filename} onCorrectAnswer={() => setCorrectAnswered(true)} />;
+      return (
+        <QuizAnswerForm
+          task={task}
+          filename={filename}
+          onCorrectAnswer={onCorrectAnswer} // Pass down
+        />
+      );
     } else {
-      // Render fallback for unknown types
       return <p>Unknown quiz type</p>;
     }
   };
@@ -124,23 +113,6 @@ const QuizTask: React.FC<TaskProps> = ({ task, filename, setTask }) => {
       <h3>{task.description}</h3>
       {renderQuizContent()}
       {feedback && <p className="feedback">{feedback}</p>}
-      {correctAnswered && (
-        <button
-          onClick={async () => {
-            const res = await fetch(`${backendUrl}/start_quiz/${filename}/${firebase_uid}`);
-            const next = await res.json();
-            if (next.next_task) {
-              setTask(next.next_task);
-              setFeedback("");
-              setCorrectAnswered(false);
-            } else {
-              setFeedback("Quiz complete!");
-            }
-          }}
-        >
-          Next Question
-        </button>
-      )}
     </div>
   );
 };
