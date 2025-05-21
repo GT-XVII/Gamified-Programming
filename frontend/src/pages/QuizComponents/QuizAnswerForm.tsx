@@ -1,12 +1,11 @@
 // sends the user’s answer to the /check_answer endpoint and displays whether the answer is correct
 
-// sends the user’s answer to the /check_answer endpoint and displays whether the answer is correct
-
 import React, { useState } from "react";
 const backendUrl = import.meta.env.VITE_BACKEND_URL;
 
 interface AnswerFormProps {
   task: {
+    id: string;
     description: string;
     quiz: {
       type: string;
@@ -14,9 +13,11 @@ interface AnswerFormProps {
       solution?: string;
     };
   };
+  filename: string;
+  onCorrectAnswer?: () => void;
 }
 
-const QuizAnswerForm: React.FC<AnswerFormProps> = ({ task }) => {
+const QuizAnswerForm: React.FC<AnswerFormProps> = ({ task, filename, onCorrectAnswer }) => {
   const [input, setInput] = useState("");
   const [feedback, setFeedback] = useState("");
 
@@ -26,12 +27,20 @@ const QuizAnswerForm: React.FC<AnswerFormProps> = ({ task }) => {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        task_description: task.description,
+        task_id: task.id,
         user_input: input,
+        quiz_type: task.quiz.type,
+        firebase_uid: localStorage.getItem("firebase_uid"),
+        filename: filename
       }),
     })
       .then((response) => response.json())
-      .then((data) => setFeedback(data.message))
+      .then((data) => {
+        setFeedback(data.message);
+        if (data.correct && onCorrectAnswer) {
+          onCorrectAnswer();
+        }
+      })
       .catch((error) => {
         console.error("Error checking answer:", error);
         setFeedback("Error checking answer.");

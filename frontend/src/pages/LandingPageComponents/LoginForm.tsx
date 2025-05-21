@@ -16,7 +16,8 @@ export const LoginForm: React.FC<LoginFormProps> = ({ onLoginSuccess }) => {
     const password = (e.target as any).password.value;
 
     try {
-      await signInWithEmailAndPassword(auth, email, password);
+      const userCredential = await signInWithEmailAndPassword(auth, email, password);
+      localStorage.setItem("firebase_uid", userCredential.user.uid);
       onLoginSuccess();
     } catch (err) {
       setError("Invalid credentials");

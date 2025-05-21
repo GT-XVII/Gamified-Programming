@@ -1,6 +1,7 @@
 {
     "type": "document",
     "title": "Booleans",
+    "quiz_type": "booleans",
     "content": [
         {
             "type": "img",
@@ -458,6 +459,7 @@
     ],
     "tasks": [
         {
+            "id": "bool01",
             "description": "Gegeben sind zwei Zahlen a und b. Das Programm soll True ausgeben, falls a kleiner gleich b gilt, ansonsten False.",
             "difficulty": "easy",
             "quiz": {
@@ -469,6 +471,7 @@
             }
         },
         {
+            "id": "bool02",
             "description": "Gegeben sind zwei Booleans a und b. Das Programm soll True ausgeben, falls a True und b False ist, ansonsten False.",
             "difficulty": "easy",
             "quiz": {
@@ -477,6 +480,7 @@
             }
         },
         {
+            "id": "bool03",
             "description": "Gegeben sind zwei Booleans a und b. Gib das Ergebnis von a XOR b aus. (a XOR b ist True, falls entweder a oder b True ist. Jedoch nicht beide)",
             "difficulty": "medium",
             "quiz": {
@@ -485,6 +489,7 @@
             }
         },
         {
+            "id": "bool04",
             "description": "Ersetze die Lücken so, dass die Ausgabe immer True ist.",
             "difficulty": "medium",
             "quiz": {

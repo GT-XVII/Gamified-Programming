@@ -1,6 +1,7 @@
 {
     "type": "document",
     "title": "Strings",
+    "quiz_type": "strings",
     "content": [
         {
             "type": "img",
@@ -508,6 +509,8 @@
     ],
     "tasks": [
         {
+            "id": "strings01",
+            "filename": "strings.json",
             "description": "Gegeben sind zwei Strings a und b. Gib die Verkettung von a und b aus, wobei a an vorderer Stelle sein soll.",
             "difficulty": "easy",
             "quiz": {
@@ -516,6 +519,8 @@
             }
         },
         {
+            "id": "strings02",
+            "filename": "strings.json",
             "description": "Das Programm soll die Länge des angegeben Strings ausgeben.",
             "difficulty": "easy",
             "quiz": {
@@ -527,6 +532,8 @@
             }
         },
         {
+            "id": "strings03",
+            "filename": "strings.json",
             "description": "Gegeben sei ein String name. Das Programm soll in der Konsole folgenden Satz ausgeben: \"Der Name hat x Zeichen\", wobei x die Anzahl der Zeichen von name ist.",
             "difficulty": "medium",
             "quiz": {
@@ -535,6 +542,8 @@
             }
         },
         {
+            "id": "strings04",
+            "filename": "strings.json",
             "description": "Gegeben sei der String s mit len(s) > 2. Gib das vorletzte Zeichen von s aus.",
             "difficulty": "medium",
             "quiz": {
@@ -543,6 +552,8 @@
             }
         },
         {
+            "id": "strings05",
+            "filename": "strings.json",
             "description": "Gegeben sei ein String s und ein Buchstabe a . Gib aus, wie oft a in s enthalten ist. ",
             "difficulty": "hard",
             "quiz": {
